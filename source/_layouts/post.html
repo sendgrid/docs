@@ -3,8 +3,11 @@ layout: default
 single: true
 ---
 
-<div>
-<article class="hentry" role="article">
+{% if page.sidebar == false %}
+<article class="hentry span12" role="article">
+{% else %}
+<article class="hentry span9" role="article">
+{% endif %}
   {% include article.html %}
   <footer>
     <p class="meta">
@@ -15,25 +18,29 @@ single: true
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
-    <p class="meta">
+    {% if site.disqus_short_name and page.comments == true %}
+    <section>
+      <h1>Comments</h1>
+      <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+    </section>
+    {% endif %}
+    <ul class="pager">
       {% if page.previous.url %}
-        <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+      <li class="previous"><a class="basic-alignment left"
+        href="{{page.previous.url}}" title="Previous Post:
+        {{page.previous.title}}">&laquo; {{page.previous.title}}</a></li>
       {% endif %}
+      <li><a href="/blog/archives">Blog Archives</a></li>
       {% if page.next.url %}
-        <a class="basic-alignment right" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+      <li class="next"><a class="basic-alignment right" href="{{page.next.url}}"
+        title="Next Post: {{page.next.title}}">{{page.next.title}}
+        &raquo;</a></li>
       {% endif %}
-    </p>
+    </ul>
   </footer>
 </article>
-{% if site.disqus_short_name and page.comments == true %}
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  </section>
-{% endif %}
-</div>
 {% unless page.sidebar == false %}
-<aside class="sidebar">
+<aside class="sidebar-nav span3">
   {% if site.post_asides.size %}
     {% include_array post_asides %}
   {% else %}

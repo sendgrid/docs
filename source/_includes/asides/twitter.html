@@ -1,15 +1,15 @@
 {% if site.twitter_user %}
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
+<section class="well">
+  <ul id="tweets" class="nav">
+    <li class="nav-header">Latest Tweets</li>
     <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
-    $.domReady(function(){
+    $(document).ready(function(){
       getTwitterFeed("{{site.twitter_user}}", {{site.twitter_tweet_count}}, {{site.twitter_show_replies}});
     });
   </script>
-  <script src="{{ root_url }}/javascripts/twitter.js" type="text/javascript"> </script>
+  <script src="{{ root_url }}/javascripts/asides/twitter.js" type="text/javascript"> </script>
   {% if site.twitter_follow_button %}
     <a href="http://twitter.com/{{ site.twitter_user }}" class="twitter-follow-button" data-show-count="{{ site.twitter_show_follower_count }}">Follow @{{ site.twitter_user }}</a>
   {% else %}

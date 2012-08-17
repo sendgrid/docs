@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2012-08-17T11:51:51-06:00</updated>
+  <updated>2012-08-17T14:29:47-06:00</updated>
   <id>http://yoursite.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -1608,7 +1608,7 @@ Displayed here are the aggregate results of the spam  filtering applied to all m
 Displays the number of messages sent to &#8220;trap accounts&#8221;.  Trap              accounts are accounts maintained by Windows Live Hotmail  that don&#8217;t solicit any mail.              Thus any messages sent to trap accounts are very likely to  be spam.              Well-behaved senders will hit very few such accounts because  they&#8217;re generally              sending to people who give them their address and because  they collect and              process their NDRs. Spammers have a much harder time  avoiding them              because, in general, they can&#8217;t and don&#8217;t do either of those  good practices.</p>
 
 <p><strong>RCPT</strong><br/>
-This is the number of RCPT commands sent by the IP during  the time period in              question. RCPT commands are part of the SMTP protocol used to send mail, specifically that which  specifies              one&#8217;s intent to send mail to the provided recipient. That  is, the command              &#8220;RCPT TO:<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x40;&#104;&#111;&#116;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#101;&#120;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#104;&#111;&#116;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>&#8221; requests Windows Live  Hotmail&#8217;s servers to respond              with whether it will accept mail for example@hotmail.com,  information which is              invaluable to spammers trying to compile recipient lists for  future              spamming. For reference, more than a third of IPs sending  mail to Windows Live Hotmail              keep the fraction of RCPT commands that don&#8217;t result in  message recipients              under 10% and that is a good benchmark to             measure against.</p>
+This is the number of RCPT commands sent by the IP during  the time period in              question. RCPT commands are part of the SMTP protocol used to send mail, specifically that which  specifies              one&#8217;s intent to send mail to the provided recipient. That  is, the command              &#8220;RCPT TO:<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#x65;&#64;&#104;&#111;&#116;&#109;&#x61;&#105;&#108;&#46;&#x63;&#111;&#109;">&#101;&#x78;&#x61;&#x6d;&#112;&#108;&#101;&#64;&#104;&#x6f;&#116;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;</a>&#8221; requests Windows Live  Hotmail&#8217;s servers to respond              with whether it will accept mail for example@hotmail.com,  information which is              invaluable to spammers trying to compile recipient lists for  future              spamming. For reference, more than a third of IPs sending  mail to Windows Live Hotmail              keep the fraction of RCPT commands that don&#8217;t result in  message recipients              under 10% and that is a good benchmark to             measure against.</p>
 
 <p><strong>Blocked</strong></p>
 

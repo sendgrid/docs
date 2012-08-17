@@ -2,10 +2,13 @@
 layout: default
 ---
 
-<div>
-<article role="article">
+{% if page.sidebar == false %}
+<article role="article" class="span12">
+{% else %}
+<article role="article" class="span9">
+{% endif %}
   {% if page.title %}
-  <header>
+  <header class="page-header">
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
   </header>
@@ -21,18 +24,17 @@ layout: default
       {% unless page.sharing == false %}
         {% include post/sharing.html %}
       {% endunless %}
+      {% if site.disqus_short_name and page.comments == true %}
+      <section>
+        <h1>Comments</h1>
+        <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
+      </section>
+      {% endif %}
     </footer>
   {% endunless %}
 </article>
-{% if site.disqus_short_name and page.comments == true %}
-  <section>
-    <h1>Comments</h1>
-    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  </section>
-{% endif %}
-</div>
 {% unless page.sidebar == false %}
-<aside class="sidebar">
+<aside class="sidebar-nav span3">
   {% if site.page_asides.size %}
     {% include_array page_asides %}
   {% else %}

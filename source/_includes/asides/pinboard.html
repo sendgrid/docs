@@ -1,7 +1,7 @@
 {% if site.pinboard_user %}
-<section>
+<section class="well">
   <h1>My Pinboard</h1>
-  <ul id="pinboard_linkroll">Fetching linkroll...</ul>
+  <ul id="pinboard_linkroll" class="nav">Fetching linkroll...</ul>
   <p><a href="http://pinboard.in/u:{{ site.pinboard_user }}">My Pinboard Bookmarks &raquo;</a></p>
 </section>
 <script type="text/javascript">
@@ -12,7 +12,7 @@
     var pinboardInit = document.createElement('script');
     pinboardInit.type = 'text/javascript';
     pinboardInit.async = true;
-    pinboardInit.src = '{{ root_url }}/javascripts/pinboard.js';
+    pinboardInit.src = '{{ root_url }}/javascripts/asides/pinboard.js';
     document.getElementsByTagName('head')[0].appendChild(pinboardInit);
   })();
 </script>
