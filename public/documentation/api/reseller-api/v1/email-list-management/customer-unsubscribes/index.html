@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customer Unsubscribes - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Customer Unsubscribes Jul 27th, 2011 Retrieve Unsubscribes Note that you can use either the days parameter or the start_date and end_date parameter &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v1/email-list-management/customer-unsubscribes/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Customer Unsubscribes</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:04:46-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <h2>Retrieve Unsubscribes</h2>
+
+<p>Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>        account
+</code></pre>
+
+<p>The customer we are retrieving unsubscribes</p>
+
+<pre><code>        from
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>get</em></p>
+
+<p>This will allow you to retrieve the</p>
+
+<pre><code>        unsubscribes for the specified customer
+</code></pre>
+
+<p>date</p>
+
+<p>No</p>
+
+<p>Must be set to 1</p>
+
+<p>Retrieves the timestamps, it will return a</p>
+
+<pre><code>        date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>unsubscribes</em></p>
+
+<p>Allows you to access unsubscribe functionality</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=get&amp;date;=1</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>            email1@domain.com
+            2009-06-10 12:40:30
+
+
+            email2@domain2.com
+            2009-06-10 12:40:30
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=get&amp;date;=1</code></p>
+
+<h4>Return</h4>
+
+<p><code>[{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}] </code></p>
+
+<h2>Delete Unsubscribes</h2>
+
+<p>Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>        account
+</code></pre>
+
+<p>The customer we are retrieving unsubscribes</p>
+
+<pre><code>        from
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>delete</em></p>
+
+<p>This will allow you to delete an unsubscribe</p>
+
+<pre><code>        record for the specified customer
+</code></pre>
+
+<p>email</p>
+
+<p>No</p>
+
+<p>Must be an unsubscribe record</p>
+
+<p>You must specify the unsubscribe record to</p>
+
+<pre><code>        remove
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=delete&amp;email;=unsubscribe@sample.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        Email does not exist
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=delete&amp;email;=unsubscribe@sample.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"Email does not exist"}</code></p>
+
+<h2>Add Unsubscribes</h2>
+
+<p>Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>        account
+</code></pre>
+
+<p>The customer we are retrieving unsubscribes</p>
+
+<pre><code>        from
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>add</em></p>
+
+<p>This will allow you to add an unsubscribe</p>
+
+<pre><code>        record for the specified customer
+</code></pre>
+
+<p>email</p>
+
+<p>No</p>
+
+<p>Must be an unsubscribe record</p>
+
+<p>You must specify the unsubscribe record to</p>
+
+<pre><code>        add
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=add&amp;email;=unsubscribe@sample.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        Email already exists
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=unsubscribes&amp;user;=customer@example.com&amp;task;=add&amp;email;=unsubscribe@sample.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"Email already exists"}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:04:46-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v1/email-list-management/customer-unsubscribes/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v1/email-list-management/customer-unsubscribes/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

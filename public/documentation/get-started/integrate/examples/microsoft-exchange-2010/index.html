@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Microsoft Exchange 2010 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Microsoft Exchange 2010 Jul 18th, 2012 If your organization is using Microsoft&#8217;s Exchange 2010 for email services, this document outlines the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-exchange-2010/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Microsoft Exchange 2010</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-18T11:06:22-06:00" pubdate data-updated="true">Jul 18<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>If your organization is using Microsoft&#8217;s Exchange 2010 for email services, this document outlines the basics required in order to use SendGrid for SMTP. This requires the configuration of send connector in the Exchange Management Console.</p>
+
+<blockquote><p><strong>WARNING >> </strong>This documentation assumes that you already have a working installation of Exchange 2010 that is configured for client access and is able to send messages to the public internet. <strong>If you do not configure this connector correctly it may result in the unintended delivery of messages through your SendGrid account, resulting in the consumption of account credits.</strong></p>
+
+<p><strong>TIP >> </strong><a href="http://technet.microsoft.com/en-us/library/aa998662.aspx">For more information regarding Send Connectors, check out this swank TechNet documentation on the subject</a>.</p></blockquote>
+
+<p>The actual configuration of a new send connector is rather straight forward. It is the associated configurations that you may require in order to properly control access to the connector that may be complicated. Let&#8217;s start, however, with just sending email through SendGrid:</p>
+
+<ol>
+<li><p>Login to your Exchange server or a server that has the Exchange Management Console installed for administrative purposes.</p></li>
+<li><p>Go to <strong>Start > All Programs > Microsoft Exchange Server 2010</strong> and click on the <strong>Exchange Management Console</strong> item.</p></li>
+<li><p>Roll open the <strong>Organization Configuration</strong> list and select <strong>Hub Transport</strong>.</p></li>
+<li><p>Click on <strong>New Send Connector</strong> in the Actions sidebar.</p></li>
+</ol>
+
+
+<blockquote><p><strong>NOTE >> </strong>By default, Exchange comes configured on installation to have a generic Send Connector called Default. This is configured to provide SMTP services to route messages to the internet. It&#8217;s Address Space is notated as generic in the form of an asterisk &#8220;*&#8221;.</p></blockquote>
+
+<p><img src="http://docs.sendgrid.com/wp-content/uploads/2012/07/Screen-Shot-2012-07-03-at-11.11.47-AM-300x262.png" alt="" /></p>
+
+<ol>
+<li><p>Name the Send Connector whatever you like and select Internet for the Intended Use pull-down. This allows for the integration with an authenticated SmartHost and adds the default send permissions required by Exchange 2010 to route messages through an external host that is not a part of the domain forest.</p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>Click Add and specify the allowed address space to which the connector can send messages. If you want to send to anyone on the internet, then you would insert an &#8221;<em>&#8221; in the Address field. If you want to send only to a specific domain, enter that domain. If you want to allow all sub-domains you can check the box, but I prefer to notate that literally like so: </em>.SAMPLEDOMAIN.COM. Insert a high cost (100 is the top, so choose wisely) so that the connector is not used inadvertantly.</p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>On the Network Settings page, select the <strong>Route mail through the following smart hosts</strong> item.</p></li>
+<li><p>Click <strong>Add</strong>.</p></li>
+<li><p>Select the <strong>Fully qualified domain name (FQDN)</strong> item, and enter: <em>smtp.sendgrid.net</em></p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>In the <strong>Configure smart host authentication settings</strong> page, select the <strong>Basic Authentication</strong> option and check the <strong>Basic Authentication over TLS</strong> checkbox, then <strong><em>enter your SendGrid username and password</em></strong>.</p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>If you only have one Exchange server, it should automatically appear. If you want to use another server(s) in your domain click Add to locate the servers you want to allocate to this connector.</p></li>
+<li><p>Click <strong>Next</strong>.</p></li>
+<li><p>Verify your settings and, when satisfied, click <strong>New</strong>.</p></li>
+<li><p>If the configuration completes correctly, you will receive positive notification. You can then click on <strong>Finish</strong>.</p></li>
+</ol>
+
+
+<p>Once you have completed installation of the connector, you will need to configure your server(s) to allow limited access to the new send connector. That kind of configuration detail is beyond the scope of this document. If you are not familiar with the more esoteric inner working of Exchange, you may want to engage an Exchange consultant to assist you in the configuration process.</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-18T11:06:22-06:00" pubdate data-updated="true">Jul 18<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-exchange-2010/index.html" data-via="" data-counturl="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-exchange-2010/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

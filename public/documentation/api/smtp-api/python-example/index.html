@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Python Example - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Python Example Jun 27th, 2011 SmtpApiHeader.py ` !/usr/bin/python Version 1.0 Last Updated 6/22/2009 import json
+import re
+import textwrap class &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/smtp-api/python-example/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Python Example</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-27T06:04:31-06:00" pubdate data-updated="true">Jun 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <h2>SmtpApiHeader.py</h2>
+
+<p>`</p>
+
+<h1>!/usr/bin/python</h1>
+
+<h1>Version 1.0</h1>
+
+<h1>Last Updated 6/22/2009</h1>
+
+<p>import json
+import re
+import textwrap</p>
+
+<p>class SmtpApiHeader:</p>
+
+<pre><code>def __init__(self):
+    self.data = {}
+
+def addTo(self, to):
+    if not self.data.has_key('to'):
+        self.data['to'] = []
+    if type(to) is str:
+        self.data['to'] += [to]
+    else:
+        self.data['to'] += to
+
+def addSubVal(self, var, val):
+    if not self.data.has_key('sub'):
+        self.data['sub'] = {}
+    if type(val) is str:
+        self.data['sub'][var] = [val]
+    else:
+        self.data['sub'][var] = val    
+
+def setUniqueArgs(self, val):
+    if type(val) is dict:
+        self.data['unique_args'] = val
+
+def setCategory(self, cat):
+
+    self.data['category'] = cat
+
+def addFilterSetting(self, fltr, setting, val):
+    if not self.data.has_key('filters'):
+        self.data['filters'] = {}
+    if not self.data['filters'].has_key(fltr):
+        self.data['filters'][fltr] = {}
+    if not self.data['filters'][fltr].has_key('settings'):
+            self.data['filters'][fltr]['settings'] = {}
+    self.data['filters'][fltr]['settings'][setting] = val
+
+def asJSON(self):
+    j = json.dumps(self.data)
+    return re.compile('(["\]}])([,:])(["\[{])').sub('\1\2 \3', j)
+
+def as_string(self):
+    j = self.asJSON()
+    str = 'X-SMTPAPI: %s' % textwrap.fill(j, subsequent_indent = '  ', width = 72)
+    return str
+</code></pre>
+
+<p>`</p>
+
+<h2>Example Python Usage</h2>
+
+<p>`</p>
+
+<h1>!/usr/bin/python</h1>
+
+<p>import SmtpApiHeader
+import json</p>
+
+<p>hdr = SmtpApiHeader.SmtpApiHeader()
+receiver = [&#8216;kyle@somewhere.com&#8217;,&#8217;bob@someplace.net&#8217;,&#8217;someguy@googlemailz.coms&#8217;]
+times = [&#8216;1pm&#8217;, &#8216;2pm&#8217;, &#8216;3pm&#8217;]
+names = [&#8216;kyle&#8217;, &#8216;bob&#8217;, &#8216;someguy&#8217;]</p>
+
+<p>hdr.addTo(receiver)
+hdr.addSubVal(&#8216;-time-&#8216;, times)
+hdr.addSubVal(&#8216;-name-&#8216;, names)
+hdr.addFilterSetting(&#8216;subscriptiontrack&#8217;, &#8216;enable&#8217;, 1)
+hdr.addFilterSetting(&#8216;twitter&#8217;, &#8216;enable&#8217;, 1)
+hdr.setUniqueArgs({&#8216;test&#8217;:1, &#8216;foo&#8217;:2})
+a = hdr.asJSON()
+a = hdr.as_string()
+print a
+`</p>
+
+<h2>Full Python Email Usage</h2>
+
+<p>  This python program will build a multi-part MIME message demonstrating all of the portions of the SMTP API protocol and send it through sendgrid.</p>
+
+<p>  Python already has built in libraries to send and receive emails. This example uses:</p>
+
+<ul>
+<li><p><a href="http://docs.python.org/library/smtplib.html">smtplib</a></p></li>
+<li><p><a href="http://docs.python.org/library/email.html#module-email">email</a></p></li>
+</ul>
+
+
+<p>`</p>
+
+<h1>!/usr/bin/python</h1>
+
+<p>import SmtpApiHeader
+import json
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.header import Header</p>
+
+<p>hdr = SmtpApiHeader.SmtpApiHeader()</p>
+
+<h1>The list of addresses this message will be sent to</h1>
+
+<p>receiver = [&#8216;isaac@example&#8217;, &#8216;tim@example&#8217;, &#8216;jose@example&#8217;]</p>
+
+<h1>The times they are to be sent</h1>
+
+<p>times = [&#8216;1pm&#8217;, &#8216;2pm&#8217;, &#8216;3pm&#8217;]</p>
+
+<h1>The proper names to be used</h1>
+
+<p>names = [&#8216;Isaac&#8217;, &#8216;Tim&#8217;, &#8216;Jose&#8217;]</p>
+
+<h1>Set all of the above variables</h1>
+
+<p>hdr.addTo(receiver)
+hdr.addSubVal(&#8216;-time-&#8216;, times)
+hdr.addSubVal(&#8216;-name-&#8216;, names)</p>
+
+<h1>Specify that this is an initial contact message</h1>
+
+<p>hdr.setCategory(&#8220;initial&#8221;)</p>
+
+<h1>Enable a text footer and set it</h1>
+
+<p>hdr.addFilterSetting(&#8216;footer&#8217;, &#8216;enable&#8217;, 1)
+hdr.addFilterSetting(&#8216;footer&#8217;, &#8220;text/plain&#8221;, &#8220;Thank you for your business&#8221;)</p>
+
+<h1>fromEmail is your email</h1>
+
+<h1>toEmail is recipient&#8217;s email address</h1>
+
+<h1>For multiple recipient e-mails, the &#8216;toEmail&#8217; address is irrelivant</h1>
+
+<p>fromEmail =  &#8216;you@yourdomain.com&#8217;
+toEmail = &#8216;doesntmatter@nowhere.com&#8217;</p>
+
+<h1>Create message container - the correct MIME type is multipart/alternative.</h1>
+
+<p>msg = MIMEMultipart(&#8216;alternative&#8217;)
+msg[&#8216;Subject&#8217;] = &#8220;Contact Response for  at &#8221;
+msg[&#8216;From&#8217;] = fromEmail
+msg[&#8216;To&#8217;] = toEmail
+msg[&#8220;X-SMTPAPI&#8221;] = hdr.asJSON()</p>
+
+<h1>Create the body of the message (a plain-text and an HTML version).</h1>
+
+<h1>text is your plain-text email</h1>
+
+<h1>html is your html version of the email</h1>
+
+<h1>if the reciever is able to view html emails then only the html</h1>
+
+<h1>email will be displayed</h1>
+
+<p>text = &#8220;Hi -name-!\nHow are you?\n&#8221;
+html = &#8220;&#8221;&#8220;\</p>
+
+<p>Hi! -name-</p>
+
+<pre><code>   How are you?  
+</code></pre>
+
+<p>&#8221;&#8221;&#8221;</p>
+
+<h1>Record the MIME types of both parts - text/plain and text/html.</h1>
+
+<p>part1 = MIMEText(text, &#8216;plain&#8217;)
+part2 = MIMEText(html, &#8216;html&#8217;)</p>
+
+<h1>Attach parts into message container.</h1>
+
+<p>msg.attach(part1)
+msg.attach(part2)</p>
+
+<h1>Login credentials</h1>
+
+<p>username = &#8216;yourlogin@sendgrid.net&#8217;
+password = &#8216;yourpassword&#8217;</p>
+
+<h1>Open a connection to the SendGrid mail server</h1>
+
+<p>s = smtplib.SMTP(&#8216;smtp.sendgrid.net&#8217;)</p>
+
+<h1>Authenticate</h1>
+
+<p>s.login(username, password)</p>
+
+<h1>sendmail function takes 3 arguments: sender&#8217;s address, recipient&#8217;s address</h1>
+
+<h1>and message to send - here it is sent as one string.</h1>
+
+<p>s.sendmail(fromEmail, toEmail, msg.as_string())</p>
+
+<p>s.quit()
+`</p>
+
+<h2>Related Content</h2>
+
+<ul>
+<li><p><a href="/documentation/api/smtp-api/">SMTP API</a></p></li>
+<li><p><a href="/documentation/get-started/integrate/examples/python-email-example-using-smtp/">Integration: Python Email Example Using SMTP</a></p></li>
+</ul>
+
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-27T06:04:31-06:00" pubdate data-updated="true">Jun 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/smtp-api/python-example/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/smtp-api/python-example/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

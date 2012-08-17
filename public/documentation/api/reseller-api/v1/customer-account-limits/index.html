@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customer Account Limits - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Customer Account Limits Jul 27th, 2011 Throttle your customer when you need them to send only a specific amount of emails at a specified interval. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v1/customer-account-limits/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Customer Account Limits</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:11:55-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>Throttle your customer when you need them to send only a specific amount of emails at a specified interval.</p>
+
+<h2>Retrieve</h2>
+
+<p>Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>retrieve</em></p>
+
+<p>Retrieve account limits</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer who will have their account</p>
+
+<pre><code>        limits retrieved
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=retrieve</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>            0
+            2000
+            2011-02-21
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=retrieve</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>[{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}]</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>No Limit</h2>
+
+<p>Obtain a complete list of all customer.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>none</em></p>
+
+<p>Remove account limits</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer who will have their account</p>
+
+<pre><code>        limits removed
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>limit</em></p>
+
+<p>Allows you to access limit functionality</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=none</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=none</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Recurring Reset</h2>
+
+<p>A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>recurring</em></p>
+
+<p>The task required to set the recurring reset</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer you will be applying a recurring</p>
+
+<pre><code>        reset to
+</code></pre>
+
+<p>credits</p>
+
+<p>Yes</p>
+
+<p>Must be an integer and greater than 0</p>
+
+<p>The number of credits the customer will be</p>
+
+<pre><code>        reset to
+</code></pre>
+
+<p>period</p>
+
+<p>Yes</p>
+
+<p>Must be either daily, weekly, or monthly</p>
+
+<p>How often you want SendGrid to reset your</p>
+
+<pre><code>        customers credits
+</code></pre>
+
+<p>startdate</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format</p>
+
+<p>The date you want to start resetting the</p>
+
+<pre><code>        customers credits
+</code></pre>
+
+<p>enddate</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format</p>
+
+<p>The date you want to stop resetting the</p>
+
+<pre><code>        customers credits
+</code></pre>
+
+<p>initial_credits</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>The number of credits you initially want the</p>
+
+<pre><code>        account reset to. If this is not set, the credits will be reset using
+        the credits parameter
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>limit</em></p>
+
+<p>Allows you to access account limit</p>
+
+<pre><code>        functionality
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=recurring&amp;credits;=200&amp;period;=daily</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=recurring&amp;credits;=200&amp;period;=daily</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Total Credits</h2>
+
+<p>Set a subusers credits to a specified amount.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>total</em></p>
+
+<p>Set the credits to the specified amount</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer who will have their credits</p>
+
+<pre><code>        updated
+</code></pre>
+
+<p>credits</p>
+
+<p>Yes</p>
+
+<p>Must be an integer and greater than 0</p>
+
+<p>The total number of credits the customer will</p>
+
+<pre><code>        be reset to
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>limit</em></p>
+
+<p>Allows you to access account limit</p>
+
+<pre><code>        functionality
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=total&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=total&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Increment Credits</h2>
+
+<p>Increment a subusers credits by a specified amount.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>increment</em></p>
+
+<p>Increment the credits by the specified amount</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer who will have their credits</p>
+
+<pre><code>        incremented
+</code></pre>
+
+<p>credits</p>
+
+<p>Yes</p>
+
+<p>Must be an integer and greater than 0</p>
+
+<p>The total number of credits the customer will</p>
+
+<pre><code>        be incremented by
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>limit</em></p>
+
+<p>Allows you to access account limit</p>
+
+<pre><code>        functionality
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=increment&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=increment&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Decrement Credits</h2>
+
+<p>Decrement a subusers credits by a specified amount.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>increment</em></p>
+
+<p>Decrement the credits by the specified amount</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your account</p>
+
+<p>The customer who will have their credits</p>
+
+<pre><code>        decremented
+</code></pre>
+
+<p>credits</p>
+
+<p>Yes</p>
+
+<p>Must be an integer and greater than 0</p>
+
+<p>The total number of credits the customer will</p>
+
+<pre><code>        be decremented by
+</code></pre>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>limit</em></p>
+
+<p>Allows you to access account limit</p>
+
+<pre><code>        functionality
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=decrement&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        success
+    `
+</code></pre>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>        error
+
+            ...
+            ... error messages ...
+            ...
+
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api;_key=secureSecret&amp;method;=limit&amp;user;=customer@example.com&amp;task;=decrement&amp;credits;=200</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:11:55-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v1/customer-account-limits/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v1/customer-account-limits/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

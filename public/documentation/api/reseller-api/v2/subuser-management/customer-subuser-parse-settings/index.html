@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customer Subuser Parse Settings - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Customer Subuser Parse Settings Jul 22nd, 2011 Get Current Settings Parameter Required Requirements Description task Yes Must be set to get Retrieve &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v2/subuser-management/customer-subuser-parse-settings/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Customer Subuser Parse Settings</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-22T02:28:43-06:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2011</time></p>
+  </header>
+  
+  <h2>Get Current Settings</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>get</em></p>
+
+<p>Retrieve Parse settings</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under</p>
+
+<pre><code>    your account
+</code></pre>
+
+<p>The customer subuser who we will update</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=parse&amp;task;=get&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    www.example.com
+    www.mydomain.com/parse.php
+    1
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Empty Set</h4>
+
+<p>&#8220;</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;task;=get&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}</code></p>
+
+<h4>Return - Empty Set</h4>
+
+<p><code>{"parse":[]}</code></p>
+
+<h2>Create New Entry</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>set</em></p>
+
+<p>Set Parse settings</p>
+
+<p>hostname</p>
+
+<p>Yes</p>
+
+<p>No more than 255 characters</p>
+
+<p>Hostname we will use with your email</p>
+
+<p>url</p>
+
+<p>Yes</p>
+
+<p>The parse destination</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under</p>
+
+<pre><code>    your account
+</code></pre>
+
+<p>The customer subuser who we will update</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;url;=www.mydomain.com/parse.php&amp;spam;_check=1&amp;method;=parse&amp;task;=set&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    success
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>  error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;url;=www.mydomain.com/parse.php&amp;spam;_check=1&amp;method;=parse&amp;task;=set&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Edit Entry</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>update</em></p>
+
+<p>Set Parse settings</p>
+
+<p>hostname</p>
+
+<p>Yes</p>
+
+<p>No more than 255 characters</p>
+
+<p>Hostname entry you want to update</p>
+
+<p>url</p>
+
+<p>Yes</p>
+
+<p>The parse destination</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under</p>
+
+<pre><code>    your account
+</code></pre>
+
+<p>The customer subuser who we will update</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;url;=www.mydomain.com/parse.php&amp;spam;_check=1&amp;method;=parse&amp;task;=update&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    success
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>  error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;url;=www.mydomain.com/parse.php&amp;spam;_check=1&amp;method;=parse&amp;task;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h2>Delete Entry</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>delete</em></p>
+
+<p>Set Parse settings</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under</p>
+
+<pre><code>    your account
+</code></pre>
+
+<p>The customer subuser who we will update</p>
+
+<p>hostname</p>
+
+<p>Yes</p>
+
+<p>Must be the hostname you wish to delete.</p>
+
+<p>The host name you will remove for your</p>
+
+<pre><code>    customer subuser
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;task;=delete&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    success
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>  error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;hostname;=www.example.com&amp;task;=delete&amp;method;=parse&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-22T02:28:43-06:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v2/subuser-management/customer-subuser-parse-settings/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v2/subuser-management/customer-subuser-parse-settings/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

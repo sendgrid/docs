@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Mail - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Mail Apr 25th, 2011 This module allows you to send email. send Send email. Parameters Parameter
+Required
+Requirements
+Description to Yes Must be a &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/web-api/mail/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Mail</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-25T07:06:17-06:00" pubdate data-updated="true">Apr 25<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>This module allows you to send email.</p>
+
+<h2>send</h2>
+
+<p>Send email.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>to</p>
+
+<p>Yes</p>
+
+<p>Must be a valid email address</p>
+
+<p>This can also be passed in as an array, to send to multiple locations</p>
+
+<p>toname</p>
+
+<p>No</p>
+
+<p>Must be a string. If <em>to</em> parameter is an array, <em>toname</em> must be an array with the exact number of array elements as the <em>to</em> field</p>
+
+<p>Give a name to the recipient</p>
+
+<p>x-smtpapi</p>
+
+<p>No</p>
+
+<p>Must be in valid JSON format</p>
+
+<p>Please review <a href="/documentation/api/smtp-api/">SMPTAPI</a> to view documentation on what you can do with the JSON headers</p>
+
+<p>subject</p>
+
+<p>Yes</p>
+
+<p>Must be a valid string</p>
+
+<p>The subject of your email</p>
+
+<p>text and/or html</p>
+
+<p>Yes</p>
+
+<p>Must include one or both parameters</p>
+
+<p>The actual content of your email message. It can be sent as either plain text or HTML for the user to display</p>
+
+<p>from</p>
+
+<p>Yes</p>
+
+<p>Must be a valid email address from your domain</p>
+
+<p>This is where the email will appear to originate from for your recipient</p>
+
+<p>bcc</p>
+
+<p>No</p>
+
+<p>Must be a valid email address</p>
+
+<p>This can also be passed in as an array of email addresses for multiple recipients</p>
+
+<p>fromname</p>
+
+<p>No</p>
+
+<p>Must a valid string</p>
+
+<p>This is name appended to the from email field. IE - Your name or company name</p>
+
+<p>replyto</p>
+
+<p>No</p>
+
+<p>Must be a valid email address</p>
+
+<p>Append a reply-to field to your email message</p>
+
+<p>date</p>
+
+<p>No</p>
+
+<p>Must be a valid <a href="http://www.faqs.org/rfcs/rfc2822">RFC 2822 formatted date</a></p>
+
+<p>Specify the date header of your email. One example: &#8220;Thu, 21 Dec 2000 16:01:07 +0200&#8221;. PHP developers can use: <em>date(&#8216;r&#8217;);</em></p>
+
+<p>files</p>
+
+<p>No</p>
+
+<p>Must be less than 7MB</p>
+
+<p>Files to be attached. The file contents must be part of the multipart HTTP POST.
+Ex: files[file1.doc]=<file contents>&files;[file2.pdf]=<file contents></p>
+
+<p><a href="http://docs.sendgrid.com/documentation/get-started/integrate/examples/php-example-using-the-web-api/">Example Code</a></p>
+
+<p>headers</p>
+
+<p>No</p>
+
+<p>Must be in valid JSON format</p>
+
+<p>A collection of key/value pairs in JSON format. Each key represents a header name and the value the header value. Ex: {&#8220;X-Accept-Language&#8221;: &#8220;en&#8221;, &#8220;X-Mailer&#8221;: &#8220;MyApp&#8221;}</p>
+
+<h3>Response</h3>
+
+<ul>
+<li><p><a href="/documentation/api/web-api/#responsessuccess">Success</a></p></li>
+<li><p><a href="/documentation/api/web-api/#responseserror">Error</a></p></li>
+</ul>
+
+
+<h3>Examples</h3>
+
+<ul>
+<li><p>Send to one email recipient
+`</p>
+
+<h1>curl -d &#8216;to=destination@example.com&toname;=Destination&subject;=Example Subject&text;=testingtextbody&from;=info@domain.com&api;<em>user=sendgridUsername&api;</em>key=sendgridPassword&#8217; https://sendgrid.com/api/mail.send.json</h1>
+
+<p><code>
+</code>
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api;_key=secureSecret&to;=destination@example.com&toname;=Destination&subject;=Example%20Subject&text;=testingtextbody&from;=info@domain.com
+`</p></li>
+<li><p>Send to multiple email recipients
+`</p>
+
+<h1>curl -d &#8216;to[]=destination@example.com&toname;[]=Destination&to;[]=destination2@example.com&toname;[]=Destination2&subject;=Example Subject&text;=testingtextbody&from;=info@domain.com&api;<em>user=sendgridUsername&api;</em>key=sendgridPassword&#8217; https://sendgrid.com/api/mail.send.json</h1>
+
+<p><code>
+</code>https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api;_key=secureSecret&to;[]=destination@example.com&toname;[]=Destination&to;[]=destination2@example.com&toname;[]=Destination2&subject;=Example%20Subject&text;=testingtextbody&from;=info@domain.com`</p></li>
+<li><p>Send a test attachment
+<code>
+curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="**testing html body**" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
+</code></p></li>
+<li><p><a href="/documentation/get-started/integrate/examples/php-example-using-the-web-api/">PHP Examples</a></p></li>
+</ul>
+
+
+<h3>Raw HTTP Dump</h3>
+
+<p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
+
+<p><code>
+POST /api/mail.send.json HTTP/1.1</code></p>
+
+<p>`Host: sendgrid.com</p>
+
+<p>Accept: <em>/</em></p>
+
+<p>Content-Length: 999</p>
+
+<p>Expect: 100-continue</p>
+
+<p>Content-Type: multipart/form-data; boundary=&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-400f182a9360</p>
+
+<p>HTTP/1.1 100 Continue</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;api_user&#8221;</p>
+
+<p>YOURUSERNAME</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;api_key&#8221;</p>
+
+<p>YOURKEY</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;to&#8221;</p>
+
+<p>someone@somewhere.com</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;subject&#8221;</p>
+
+<p>test of file sends</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;html&#8221;</p>
+
+<p>the HTML</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;text&#8221;</p>
+
+<p>the plain text</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;from&#8221;</p>
+
+<p>example@sendgrid.com</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360</p>
+
+<p>Content-Disposition: form-data; name=&#8221;files[myfile]&#8221;; filename=&#8221;myfile&#8221;</p>
+
+<p>Content-Type: application/octet-stream</p>
+
+<p>file with stuff in it</p>
+
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;400f182a9360&#8211;</p>
+
+<p>HTTP/1.1 200 OK</p>
+
+<p>Server: nginx/0.7.65</p>
+
+<p>Date: Fri, 03 Jun 2011 22:30:58 GMT</p>
+
+<p>Content-Type: application/json</p>
+
+<p>Transfer-Encoding: chunked</p>
+
+<p>Connection: keep-alive</p>
+
+<p>`</p>
+
+<p><code>{"message":"success"}
+</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-25T07:06:17-06:00" pubdate data-updated="true">Apr 25<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/web-api/mail/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/web-api/mail/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

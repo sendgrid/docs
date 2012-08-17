@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Symfony Example Using SMTP - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Symfony Example Using SMTP Mar 25th, 2011 Symfony uses SwiftMailer to send email, the details of which you can find on the Symfony site. To get &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/get-started/integrate/examples/symfony-example-using-smtp/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Symfony Example Using SMTP</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-25T09:44:48-06:00" pubdate data-updated="true">Mar 25<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>Symfony uses SwiftMailer to send email, the <a href="http://www.symfony-project.org/gentle-introduction/1_4/en/11-Emails">details of which you can find on the Symfony site</a>.</p>
+
+<p>To get started you need to modify factories.yml and add the following:
+<code>
+mailer:
+class: sfMailer
+param:
+logging: %SF_LOGGING_ENABLED%
+charset: %SF_CHARSET%
+delivery_strategy: realtime
+transport:
+class: Swift_SmtpTransport
+param:
+host: smtp.sendgrid.net
+port: 587
+encryption: ~
+username: sendgridusername
+password: sendgridpassword
+</code></p>
+
+<p>After that you should be able to send emails. The following shows an example:
+<code>
+$message = Swift_Message::newInstance()
+-&gt;setFrom('from@example.com')
+-&gt;setTo('to@example.com')
+-&gt;setSubject('Subject')
+-&gt;setBody('Body');
+$this-&gt;getMailer()-&gt;send($message);
+</code></p>
+
+<h3>Another Option</h3>
+
+<p>If you want more flexibility, we&#8217;ve created a class that allows you to use partials to define the content of the emails. To do so please add the create a class on <strong>lib/myEmail.class.php</strong>.</p>
+
+<p><code>
+</code></p>
+
+<p>`class myEmail
+{
+/<em>*
+* Library to facilitate email messages being sent out, sendMail deprecated in symfony 1.2
+*
+* @param string $partial - Array with html and text partials ie array(&#8216;text&#8217;=>&#8217;textPartial&#8217;, &#8216;html&#8217;=>&#8217;htmlPartial&#8217;)
+* @param array $parameters - Array we will pass into the partials
+* @param string $mailFrom - Email source
+* @param string $mailTo - Email destination
+* @param string $subject - The subject of the email message
+* @param array $sgHeaders - What we will be placing in the SMTPAPI header. Must be null or a non-empty array
+* @param array $attachments - Email contains the attachments
+</em>/
+public static function sendEmail($partials, $parameters, $mailFrom, $mailTo, $subject, $sgHeaders = null, $attachments = null)
+{
+// verify we have username/password to send out emails - IMPORTANT
+if (!sfconfig::has(&#8216;app_sendgrid_username&#8217;) or !sfconfig::has(&#8216;app_sendgrid_password&#8217;))
+{
+throw new sfException(&#8216;SMTP username/password is required to send email out&#8217;);
+}
+$text = null;
+$html = null;
+if (is_array($partials))
+{
+// load libraries
+sfContext::getInstance()->getConfiguration()->loadHelpers(&#8216;Partial&#8217;);
+if (isset($partials[&#8216;text&#8217;]))
+{
+$text = get_partial($partials[&#8216;text&#8217;], $parameters);
+}
+if (isset($partials[&#8216;html&#8217;]))
+{
+$html = get_partial($partials[&#8216;html&#8217;], $parameters);
+}
+}
+if ($text === null &amp;&amp; $html === null)
+{
+throw new sfException(&#8216;A text and/or HTML partial must be given&#8217;);
+}</p>
+
+<p>try
+{
+/<em>
+* Load connection for mailer
+</em>/
+$connection = Swift_SmtpTransport::newInstance(&#8216;smtp.sendgrid.net&#8217;, 465, &#8216;ssl&#8217;)
+->setUsername(sfconfig::get(&#8216;app_sendgrid_username&#8217;))
+->setPassword(sfconfig::get(&#8216;app_sendgrid_password&#8217;));</p>
+
+<p>// setup connection/content
+$mailer = Swift_Mailer::newInstance($connection);
+$message = Swift_Message::newInstance()->setSubject($subject)->setTo($mailTo);</p>
+
+<p>if ($text &amp;&amp; $html)
+{
+$message->setBody($html, &#8216;text/html&#8217;);
+$message->addPart($text, &#8216;text/plain&#8217;);
+}
+else if ($text)
+{
+$message->setBody($text, &#8216;text/plain&#8217;);
+}
+else
+{
+$message->setBody($html, &#8216;text/html&#8217;);
+}</p>
+
+<p>// if contains SMTPAPI header add it
+if (null !== $sgHeaders)
+{
+$message->getHeaders()->addTextHeader(&#8216;X-SMTPAPI&#8217;, json_encode($sgHeaders));
+}</p>
+
+<p>// update the from address line to include an actual name
+if (is_array($mailFrom) and count($mailFrom) == 2)
+{
+$mailFrom = array($mailFrom[&#8216;email&#8217;] => $mailFrom[&#8216;name&#8217;]);
+}</p>
+
+<p>// add attachments to email
+if ($attachments !== null and is_array($attachments))
+{
+foreach ($attachments as $attachment)
+{
+$attach = Swift_Attachment::fromPath($attachment[&#8216;file&#8217;], $attachment[&#8216;mime&#8217;])->setFilename($attachment[&#8216;filename&#8217;]);
+$message->attach($attach);
+}
+}</p>
+
+<p>// Send
+$message->setFrom($mailFrom);
+$mailer->send($message);
+}
+catch (Exception $e)
+{
+throw new sfException(&#8216;Error sending email out - &#8217; . $e->getMessage());
+}
+}
+}
+`</p>
+
+<p>Then configure your credentials on <strong>apps/frontend/app.yml</strong>
+<code>
+prod:
+sendgrid:
+username: sendgridusername
+password: sendgridpassword
+</code></p>
+
+<p>Now can put your partials in a module such as <strong>apps/frontend/modules/mail</strong>. For example, to send a registration email in both text and HTML, we would have the following structure
+<code>
+apps/
+frontend/
+modules/
+mail/
+_registrationHTML.php
+_registrationTEXT.php
+</code></p>
+
+<p>Add this to <strong>apps/frontend/modules/mail/_registrationTEXT.php</strong>
+<code>
+Dear ,
+Thank you for registering. Please go to http://domain.com to finish your registration.
+</code></p>
+
+<p>Add this to <strong>apps/frontend/modules/mail/_registrationHTML.php</strong>
+<code>
+Dear ,
+Thank you for registering. Please go to [here](http://domain.com) to finish your registration.
+</code></p>
+
+<p>You are not ready to send the registration email you can do it as follows
+<code>
+myEmail::sendEmail(array('text'=&gt;'mail/registrationTEXT', 'html'=&gt;'mail/registrationHTML'), array('name'=&gt;'Recipient Name'), 'youremail@domain.com', 'recipient@example.com', 'Registration Information');
+</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-03-25T09:44:48-06:00" pubdate data-updated="true">Mar 25<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/get-started/integrate/examples/symfony-example-using-smtp/index.html" data-via="" data-counturl="http://yoursite.com/documentation/get-started/integrate/examples/symfony-example-using-smtp/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

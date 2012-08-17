@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Introduction To Multiple User Credentials - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Introduction to Multiple User Credentials May 21st, 2012 MultiAuth, or Multiple Authentication, is a feature that allows administrators to create &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/account-dashboard/introduction-to-multiple-user-credentials/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Introduction to Multiple User Credentials</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-21T03:31:57-06:00" pubdate data-updated="true">May 21<span>st</span>, 2012</time></p>
+  </header>
+  
+  <p>MultiAuth, or Multiple Authentication, is a feature that allows administrators to create and manage additional user access to SendGrid features and allow the ability to send messages without sharing access to the master account credentials. This functionality is implemented in code, examples of which can be seen below in this document, or by using the web interface, details of which can be found in the <a href="http://docs.sendgrid.com/documentation/account-dashboard/introduction-to-multiple-user-credentials/using-the-multiple-user-credentials-dashboard/">Using the Multiple User Credentials Dashboard</a> document.</p>
+
+<blockquote><p><strong>WARNING >> </strong>Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username.</p></blockquote>
+
+<p>As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:</p>
+
+<ul>
+<li><p><strong>Email</strong> - enabling this right allows the designated credentials to send email through the account</p></li>
+<li><p><strong>API</strong> - enabling access to this function allows the designated credentials to utilize all of SendGrid&#8217;s APIs, with exception to any API call that sends email</p></li>
+<li><p><strong>Web</strong> - enables access to the web dashboard allows the specified credentials to administer the account using the web-based console.</p></li>
+</ul>
+
+
+<blockquote><p><strong>NOTE >> </strong>Future updates to Multiple User Credentials will allow for more granular control over access rights granted to the specified credentials. At this time, granting access to one of the three available features is granting full access to that feature, with the following exceptions:</p>
+
+<ul>
+<li><p>In order to allow credentials to send mail via mean of an API call, you must also allow them Email access</p></li>
+<li><p>Granting credentials access to Email will allow them to use the API calls that send messages</p></li>
+<li><p>Granting access to Web will allow credentials to create newsletters, but they cannot send them unless they are also granted Email rights</p></li>
+<li><p>Only the Master Account can create, modify, or delete Subusers and Credentials</p></li>
+</ul>
+</blockquote>
+
+<p>**>> <a href="http://docs.sendgrid.com/documentation/account-dashboard/introduction-to-multiple-user-credentials/using-the-multiple-user-credentials-dashboard/">Start using the Dashboard</a></p>
+
+<blockquote><blockquote><p><a href="http://docs.sendgrid.com/documentation/api/using-the-multiple-user-credentials-api/">Start using the API</a>**</p></blockquote></blockquote>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-21T03:31:57-06:00" pubdate data-updated="true">May 21<span>st</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/account-dashboard/introduction-to-multiple-user-credentials/index.html" data-via="" data-counturl="http://yoursite.com/documentation/account-dashboard/introduction-to-multiple-user-credentials/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

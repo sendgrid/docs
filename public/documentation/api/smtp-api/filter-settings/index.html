@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Filter Settings - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Filter Settings Jun 28th, 2011 Following are the filters that can be specified in the filters section of the X-SMTPAPI header. All filter and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/smtp-api/filter-settings/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Filter Settings</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-28T08:43:10-06:00" pubdate data-updated="true">Jun 28<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>Following are the filters that can be specified in the <strong>filters</strong> section of the X-SMTPAPI header. All filter and setting names must be lowercase.
+Please note, that if a filter is not specified in the X-SMTPAPI header, it will default to the setting of the app in the &#8220;Apps&#8221; tab on the website (either Enabled or Disabled).
+<em>For more information on the utility of these apps, please check out the <a href="/documentation/apps/">Apps</a> section.</em></p>
+
+<p><strong>Filter - &#8216;gravatar&#8217;:</strong> Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p><strong>Filter - &#8216;clicktrack&#8217;:</strong> Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p><strong>Filter - &#8216;subscriptiontrack&#8217;:</strong> Inserts a subscription management link at the bottom of the text and html bodies. Custom text is set in the settings, with the subscription management link being substituted into the text either as ‘% %’ for plain text bodies, and as a link where the text in between the ‘%’ and ‘%’ is the link text.</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>text/html</p>
+
+<p><html>&#8230;%Here%&#8230;</html></p>
+
+<p>String for HTML body. Example: &#8220;Unsubscribe &lt;%Here%>&#8221;, where &#8220;Here&#8221; would be linked.</p>
+
+<p>text/plain</p>
+
+<p>&#8230;&lt;% %>&#8230;</p>
+
+<p>String for text body. Example: Unsubscribe Here: &lt;% %></p>
+
+<p>replace</p>
+
+<p>string</p>
+
+<p>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]</p>
+
+<p>url</p>
+
+<p>http://www.example.com/landing.html</p>
+
+<p>To go to your own subscription management landing page, instead of our default page.</p>
+
+<p>landing</p>
+
+<p><HTML>&#8230;</HTML></p>
+
+<p>To make a custom subscription management landing page, still hosted on our server.</p>
+
+<p><strong>Filter - &#8216;opentrack&#8217;:</strong> Inserts an <img> tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p><strong>Filter - &#8216;footer&#8217;:</strong> Inserts a footer at the bottom of the text and html bodies</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>text/html</p>
+
+<p><html>&#8230;</html></p>
+
+<p>String containing html body</p>
+
+<p>text/plain</p>
+
+<p>string</p>
+
+<p>String containing text body</p>
+
+<p><strong>Filter - &#8216;spamcheck&#8217;:</strong> Tests message with SpamAssassin to determine if it is spam, and drop it if it is</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>maxscore</p>
+
+<p>-10.0 to 10.0</p>
+
+<p>Score after which the message will be dropped (default is 5.0)</p>
+
+<p>url</p>
+
+<p>http://www.example.com/spam_post.php</p>
+
+<p>an optional url to post the email and a copy of the report to</p>
+
+<p><strong>Filter - &#8216;ganalytics&#8217;:</strong> Re-writes links to integrate with Google Analytics</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>utm_source</p>
+
+<p>string</p>
+
+<p>Value for the utm_source field</p>
+
+<p>utm_medium</p>
+
+<p>string</p>
+
+<p>Value for the utm_medium field</p>
+
+<p>utm_term</p>
+
+<p>string</p>
+
+<p>Value for the utm_term field</p>
+
+<p>utm_content</p>
+
+<p>string</p>
+
+<p>Value for the utm_content field</p>
+
+<p>utm_campaign</p>
+
+<p>string</p>
+
+<p>Value for the utm_campaign field</p>
+
+<p><strong>Filter - &#8216;domainkeys&#8217;:</strong> Allows you to specify the domain to use to sign messages with Domain Keys. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/domain-keys/">details on Domain Keys.</a></p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>domain</p>
+
+<p>www.example.com</p>
+
+<p>The domain to sign messages as</p>
+
+<p>sender</p>
+
+<p>0|1</p>
+
+<p>1 - Insert a Sender header if the domain specified does not match the From address. 0 - never insert a Sender header</p>
+
+<p><strong>Filter - &#8216;dkim&#8217;:</strong> Allows you to specify the domain to use to sign messages with DKIM certification. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/dkim/">details on DKIM.</a></p>
+
+<p>Parameter
+Description
+Example</p>
+
+<p>domain</p>
+
+<p>The domain you would like your DKIM certification signed with</p>
+
+<p>example.com</p>
+
+<p>use_from</p>
+
+<p>If enabled, the domain in the From: header of the email will be used to sign your DKIM</p>
+
+<p>0|1</p>
+
+<p><strong>Filter - &#8216;template&#8217;:</strong> Wraps a template around your email content. Useful for sending out newsletters and other nicely formatted messages</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+<p>text/html</p>
+
+<p><html>&#8230;&#8230;</html></p>
+
+<p>String containing html content for the template (must contain tag)</p>
+
+<p><strong>Filter - &#8216;bcc&#8217;:</strong> sends a BCC copy of the email created in this transaction to the address specified</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>email</p>
+
+<p>name@domain.com</p>
+
+<p>email address destination for the bcc message</p>
+
+<p><strong>Filter - &#8216;forwardspam&#8217;:</strong> Allows for a copy of spam reports to be forwarded to an email address</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>email</p>
+
+<p>name@domain.com</p>
+
+<p>email address destination for the bcc message</p>
+
+<p><strong>Filter - &#8216;bypass_list_management&#8217;:</strong> Some e-mails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.</p>
+
+<p>Parameter Name
+Parameter Value
+Parameter Description</p>
+
+<p>enable</p>
+
+<p>0|1</p>
+
+<p>Disable or enable this App</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-28T08:43:10-06:00" pubdate data-updated="true">Jun 28<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/smtp-api/filter-settings/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/smtp-api/filter-settings/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
