@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>IP Management - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="IP Management Sep 13th, 2011 List Obtain a complete list of all IP&#8217;s and which are free, taken or available. Parameters Parameter
+Required &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/preflight/ip-management/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">IP Management</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-13T06:33:44-06:00" pubdate data-updated="true">Sep 13<span>th</span>, 2011</time></p>
+  </header>
+  
+  <h2>List</h2>
+
+<p>Obtain a complete list of all IP&#8217;s and which are free, taken or available.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements</p>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be set to either ( all / free / taken / available )</p>
+
+<p>Here is a brief explanation of each option available for the list parameter:</p>
+
+<p>all</p>
+
+<pre><code>All IP addresses available to reseller, regardless of whether or not the IP is taken by a subuser
+</code></pre>
+
+<p>free</p>
+
+<pre><code>All free IP addresses for the reseller. If a subuser is using an IP, it will not show up on this list
+</code></pre>
+
+<p>taken</p>
+
+<pre><code>All taken IP addresses for the reseller. Only IP addresses that taken by subusers will show up on this list
+</code></pre>
+
+<p>available</p>
+
+<pre><code>All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated _and_ is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.ip.xml?api_user=username&amp;api;_key=secureSecret&amp;list;=all</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<p>  255.255.255.250
+  255.255.255.251
+  255.255.255.252</p>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.ip.xml?api_user=username&amp;api;_key=secureSecret&amp;list;=all</code></p>
+
+<h4>Return</h4>
+
+<p><code>[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}]</code></p>
+
+<h2>Subuser IP Usage</h2>
+
+<p>If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements</p>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>list</em></p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Subuser must be registered under your account</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.sendip.xml?api_user=username&amp;api;_key=secureSecret&amp;task;=list&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<p>  o1.sendgrid.net</p>
+
+<pre><code>255.255.255.250
+255.255.255.251
+255.255.255.252
+255.255.255.253
+255.255.255.254
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<p>  User does not exist</p>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.sendip.json?api_user=username&amp;api;_key=secureSecret&amp;task;=list&amp;user;=example@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"error":{"code":400,"message":"User does not exist"}}</code></p>
+
+<h2>Subuser IP Assignment</h2>
+
+<p>You need to assign at least ONE IP to your subuser.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements</p>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>append</em></p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Subuser must be registered under your account</p>
+
+<p>set</p>
+
+<p>Yes</p>
+
+<p>Must be either:
+<strong>none</strong>: Remove all ips.
+<strong>all</strong>: Apply all possible ips to subuser.
+<strong>specify</strong>: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)</p>
+
+<p>ip[]</p>
+
+<p>No</p>
+
+<p>If the <em>set</em> parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&ip;[]=255.255.255.1 ]</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.sendip.xml?api_user=username&amp;api;_key=secureSecret&amp;task;=append&amp;set;=specify&amp;user;=example@example.com&amp;ip;[]=255.255.255.250&amp;ip;[]=255.255.255.251</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<p>  success</p>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/user.sendip.json?api_user=username&amp;api;_key=secureSecret&amp;task;=append&amp;set;=specify&amp;user;=example@example.com&amp;ip;[]=255.255.255.250&amp;ip;[]=255.255.255.251</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-13T06:33:44-06:00" pubdate data-updated="true">Sep 13<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/preflight/ip-management/index.html" data-via="" data-counturl="http://yoursite.com/preflight/ip-management/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

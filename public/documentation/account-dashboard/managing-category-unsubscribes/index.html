@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Managing Category Unsubscribes - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Managing Category Unsubscribes Jul 16th, 2012 Categories are a powerful feature of SendGrid&#8217;s email services, allowing you to customize the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/account-dashboard/managing-category-unsubscribes/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Managing Category Unsubscribes</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-16T05:51:00-06:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>Categories are a powerful feature of SendGrid&#8217;s email services, allowing you to customize the data included in your messages. This customization can be tailored to your needs and/or wants, a typical use being to identify a specific distribution of newsletter by category. Specific to the Category Unsubscribes feature, you manage your settings through your account dashboard.</p>
+
+<h2>Understanding Unsubscribeable Categories</h2>
+
+<p>The primary purpose of the Managing Categories user interface is to control which categories are considered &#8220;unsubscribeable&#8221; and what the public-facing, user-friendly name of that category is. What does &#8220;unsubscribeable&#8221; mean? When you define a category as unsubscribeable you are allowing recipients to control whether or not they continue to receive messages that are sent associated with that category. From the user perspective, this means that if they don&#8217;t like getting the <em>Frilly Hats of Middle Earth</em> catalog any more, they can remove their email address from that mailing list.</p>
+
+<blockquote><p><strong>WARNING >> </strong>In order to set categories as unsubscribeable, you need to activate the Subscription Tracking feature in your account.</p></blockquote>
+
+<h2>What Makes This Important?</h2>
+
+<p>Some organizations send one to their mailing list that they want to allow their customers the option to receive. In cases like this, the basic functionality of the Subscription Tracking app is generally sufficient. However, in cases where an organization offers a number of newsletters to their customers, the need arises to offer better control over subscriptions to customers. Category Unsubscribes enables this functionality.</p>
+
+<p>When you enable categories as unsubscribeable, the friendly name that you assign to each category is displayed on a page that the user is redirected to when they click on the unsubscribe link in your message. On that page, users can uncheck the boxes for the categories they are subscribed to, removing their subscription to that particular category. As you can see below, out of the ten listed categories, only one is not set as unsubscribeable, while the rest are.</p>
+
+<p><img src="http://docs.sendgrid.com/wp-content/uploads/2012/07/Screen-Shot-2012-07-16-at-9.18.24-AM.png" alt="" /></p>
+
+<blockquote><p><strong>NOTE >> </strong>The Display Name is only used for this function and must be created for each category that is set to unsubscribeable. If you do not set a display name, the category name is displayed instead.</p>
+
+<p><strong>WARNING >> </strong>If you disable the Unsubscribeable option for a category, the Display Name is removed permanently. You will need to recreate the name if you re-enable the feature.</p></blockquote>
+
+<h2>Using The Manage Categories Page</h2>
+
+<p>Use of this page is quite straightforward. The following list of features describes each feature for your reference:</p>
+
+<ul>
+<li><p><strong>Show [10-100] Entries:</strong> Select the number of categories you would like to see on each page. Options are from 10 to 100.</p></li>
+<li><p><strong>Search:</strong> Search for categories if you have a large number of them. This is a live search feature, so your matching items are shown immediately, and cleared as you delete. Search terms try to match both Category Name and Display Name items.</p></li>
+<li><p><strong>Category Name:</strong> This column shows the list of category names you have created.</p></li>
+<li><p><strong>Display Name:</strong> This column shows the friendly name associated with the category. You can only edit this field if the Unsubscribeable option is active for the category.</p></li>
+<li><p><strong>Unsubscribeable:</strong> This column lets you toggle the Unsubscribeable feature on or off.</p></li>
+<li><p><strong>The Page Tabs:</strong> The buttons at the bottom of the table allow you to jump around the list quickly so you can find what you are looking for.</p></li>
+</ul>
+
+
+<blockquote><p><strong>TIP >> </strong>You can click on the table headers to sort the list data. We like to give you options!</p>
+
+<p><strong>NOTE >> </strong>If you have more than 1,000 categories, please contact support for assistance in managing them.</p></blockquote>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-16T05:51:00-06:00" pubdate data-updated="true">Jul 16<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/account-dashboard/managing-category-unsubscribes/index.html" data-via="" data-counturl="http://yoursite.com/documentation/account-dashboard/managing-category-unsubscribes/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

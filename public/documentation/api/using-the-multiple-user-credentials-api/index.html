@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Multiple User Credentials API - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Multiple User Credentials API Jun 12th, 2012 The permissions for each set of credentials is added using a simple JSON structure. There are three key &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/using-the-multiple-user-credentials-api/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Multiple User Credentials API</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-12T10:29:53-06:00" pubdate data-updated="true">Jun 12<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>The permissions for each set of credentials is added using a simple JSON structure. There are three key names, email for access to SMTP, api for programmatic access, and web for administration. The values are either 0 for off or 1 for on. There are some limitations to the access, however.</p>
+
+<ul>
+<li><p>Granting access to the APIs but not to sending mail will block the credentials from being able to use APIs to send messages.</p></li>
+<li><p>Granting access rights cannot exceed the rights level that is associated with the primary account holder. In other words, a set of credentials cannot do more than the primary account holder.</p></li>
+</ul>
+
+
+<p>The following example allows the specified username/password to log into the dashboard, but <em>not</em> send email or have access to any of the APIs:</p>
+
+<p><code>{"email": 0, "web": 1, "api": 0}</code></p>
+
+<blockquote><p><strong>TIP >> </strong>Values are integers and should only be simple integers and, as such, should not be double quoted.</p></blockquote>
+
+<h1>Parameters And Values</h1>
+
+<p>The following parameters, their potential values, and notes on their use are important to using the examples in our <a href="http://docs.sendgrid.com/documentation/get-started/configuring-your-account/introduction-to-multiple-user-credentials/using-the-multiple-user-credentials-api/">Multiple User Credentials API reference</a>.</p>
+
+<p>Parameter
+Value
+Notes</p>
+
+<p>api_user</p>
+
+<p>alphanumeric</p>
+
+<p>The primary account holder’s user ID creating the new account</p>
+
+<p>api_key</p>
+
+<p>alphanumeric</p>
+
+<p>The primary account holder’s password</p>
+
+<p>username</p>
+
+<p>alphanumeric</p>
+
+<p>Enter a username for the new account</p>
+
+<p>password</p>
+
+<p>alphanumeric</p>
+
+<p>Enter a password for the new account</p>
+
+<p>email</p>
+
+<p>0/1</p>
+
+<p>0 = off, 1 = on</p>
+
+<p>api</p>
+
+<p>0/1</p>
+
+<p>0 = off, 1 = on</p>
+
+<p>web</p>
+
+<p>0/1</p>
+
+<p>0 = off, 1 = on</p>
+
+<blockquote><p><strong>NOTE >> </strong>The JSON code samples displayed on this page includes extra whitespace to make it more readable.</p></blockquote>
+
+<h2>Adding New Credentials</h2>
+
+<p>To add a new set of credentials to your account, the following syntax is required in a JSON string:</p>
+
+<p><code>/api/credentials/add.json?username=name&amp;password;=password&amp;permissions;=JSON</code></p>
+
+<p>Depending on what you send out, you&#8217;ll get one of the following return codes:</p>
+
+<p><code>{"message": "success"} on success {"error": "error reason"} on failure</code></p>
+
+<p>If you use curl, your string may look something like this:</p>
+
+<p><code>curl -d "api_user=MASTERACCOUNTUSERNAME&amp;api;_key=MASTERACCOUNTPASSWORD&amp;username;=NEWUSERNAME&amp;password;=NEWPASSWORD&amp;permissions;=%7B%22email%22%3A0,%22web%22%3A1%7D""https://sendgrid.com/api/credentials/add.json"</code></p>
+
+<p>Notice in this example that we&#8217;re passing the master account credentials in the API call as MASTERACCOUNTUSERNAME and MASTERACCOUNTPASSWORD. NEWUSERNAME and NEWPASSWORD are the new credentials you wish to add, and the &#8216;permissions&#8217; attribute is an html-encoded representation of the following JSON:</p>
+
+<p><code>{"email": 0, "web": 1}</code></p>
+
+<blockquote><p><strong>WARNING >> </strong>Excluding a parameter is the same as granting access rights. In other words, if you do not specify email, web or api at all, the new credentials will have access to all three. If you do not want the credentials to have access to email, web, or api, you <em>must explicitly set those parameter options to zeroes</em>.</p></blockquote>
+
+<h2>Editing Existing Credentials</h2>
+
+<p>You can edit an account you have already created, like so:</p>
+
+<p><code>/api/credentials/edit.json?username=name&amp;password;=password&amp;permissions;=JSON</code></p>
+
+<p>In order to locate the account, you must specify the USERNAME parameter. You don&#8217;t have to specify the PASSWORD parameter unless you are going to change the specified user&#8217;s password. If you do not specify any additional parameters (i.e., email, web, api), then no permissions will be changed. This behavior allows you to change passwords without having to lookup the current applied permissions.</p>
+
+<p>Depending on what you send out, you&#8217;ll get one of the following return codes:</p>
+
+<p><code>{"message": "success"} on success {"error": "error reason"} on failure</code></p>
+
+<p>To use curl to modify the existing account, your string may look like this:</p>
+
+<p><code>curl -d "api_user=MASTERACCOUNTUSERNAME&amp;api;_key=MASTERACCOUNTPASSWORD&amp;username;=OLDUSERNAME&amp;password;=NEWPASSWORD&amp;permissions;=%7B%22email%22%3A1,%22web%22%3A0%7D""https://sendgrid.com/api/credentials/add.json"</code></p>
+
+<p>Now, in this example that we&#8217;re passing the master account credentials in the API call as MASTERACCOUNTUSERNAME and MASTERACCOUNTPASSWORD. The OLDUSERNAME value is simply to find the previous credentials, and cannot be changed. NEWPASSWORD is the new password you&#8217;d like to set, and the &#8216;permissions&#8217; attribute is an html-encoded representation of the following JSON:</p>
+
+<p><code>{"email": 1 , "web": 0}</code></p>
+
+<h2>Fetching Existing Credentials</h2>
+
+<p>On occasion, you may find it beneficial to have a list of credentials and their associated permissions you have in your account displayed so that you might peruse the contents. In order to do so, you would pass the following:</p>
+
+<p><code>/api/credentials/get.json?username=name</code></p>
+
+<pre><code>        Parameters
+        Notes
+</code></pre>
+
+<p>username</p>
+
+<p>credential username, <strong>optional</strong></p>
+
+<p>If a username is supplied, it returns the JSON permissions for that user in a manner something like this:</p>
+
+<p><code>{"id": 4, "name": "johnsmith", permissions:{"email": 0, "api": 1}}</code></p>
+
+<p>If, on the other hand, no username is supplied, the request returns a JSON list for all credentials for your account, like this:</p>
+
+<p><code>[{"id": 4, "name": "johnsmith", permissions:{"email": 0, "api": 1}}, {"id": 15, "name": "joewrigley", permissions:{"web": 1, "api": 0}}]</code></p>
+
+<p>If it fails, however, you will see this:</p>
+
+<p><code>{"error" : "error reason"}</code></p>
+
+<p>Example using CURL:</p>
+
+<p><code>curl -d "api_user=MASTERACCOUNTUSERNAME&amp;api;_key=MASTERACCOUNTPASSWORD" "https://sendgrid.com/api/credentials/get.json"</code></p>
+
+<p>In this example we&#8217;re passing the master account credentials in the API call as MASTERACCOUNTUSERNAME and MASTERACCOUNTPASSWORD. Since we are not passing the &#8216;username&#8217; parameter, a JSON list of any existing credentials will be returned, similar to the documentation above, like so:</p>
+
+<p><code>curl -d "api_user=MASTERACCOUNTUSERNAME&amp;api;_key=MASTERACCOUNTPASSWORD&amp;username;=johnsmith""https://sendgrid.com/api/credentials/get.json"</code></p>
+
+<p>Finally, in this example we&#8217;re passing the master account credentials in the API call as MASTERACCOUNTUSERNAME and MASTERACCOUNTPASSWORD. By including the &#8216;username&#8217; parameter, we can retrieve the corresponding JSON permissions.</p>
+
+<h2>Removing Credentials</h2>
+
+<p>Finally, someone may be moving up the corporate ladder, and no longer require credentials, at which point you would want to remove their account so as to prevent potential misuse. To do that, you would pass the following:</p>
+
+<p><code>/api/credentials/remove.json?username=name</code></p>
+
+<pre><code>        Parameters
+        Notes
+</code></pre>
+
+<p>username</p>
+
+<p>Provided for lookup, <strong>required</strong></p>
+
+<p><code>{"message":"success"} on success {"error":"error reason"} on failure</code></p>
+
+<p>Example using CURL:</p>
+
+<p><code>curl -d "api_user=MASTERACCOUNTUSERNAME&amp;api;_key=MASTERACCOUNTPASSWORD&amp;username;=johnsmith""https://sendgrid.com/api/credentials/remove.json"</code></p>
+
+<p>This example illustrates that we&#8217;re passing the master account credentials in the API call as MASTERACCOUNTUSERNAME and MASTERACCOUNTPASSWORD. If the lookup for &#8216;johnsmith&#8217; succeeds, the credentials <strong>will be removed from the system <em>immediately</em></strong>.</p>
+
+<blockquote><p><strong>NOTE >> </strong>There is no plan at this time to allow for the selection of multiple usernames or the application of a wildcard to remove more than one or all credentials for an account. You should use the &#8216;get&#8217; API call to retrieve a list of your credential usernames and iterate that loop to remove each one individually.</p></blockquote>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-12T10:29:53-06:00" pubdate data-updated="true">Jun 12<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/using-the-multiple-user-credentials-api/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/using-the-multiple-user-credentials-api/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

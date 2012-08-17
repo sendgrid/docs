@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Microsoft IIS 7.5 - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Microsoft IIS 7.5 Jun 5th, 2012 This document outlines the configuration of Microsoft’s IIS web server software version 7.5 for use with SendGrid. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-iis-7-5/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Microsoft IIS 7.5</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-05T06:49:36-06:00" pubdate data-updated="true">Jun 5<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>This document outlines the configuration of Microsoft’s IIS web server software version 7.5 for use with SendGrid. The process outlined here also assumes that you’ve already coded your application as an outbound relay using the SMTP standard port 25.</p>
+
+<blockquote><p><strong>NOTE >> </strong>This document is specifically written for success using Windows Server 2008 R2 running IIS version 7.5 and you are using ASP.NET scripting technology for sending email. Only basic authentication is supported in this document. If you require the use of SSL/TLS, then you will need to configure those elements separately.</p></blockquote>
+
+<h2>IIS 7.5 Configuration</h2>
+
+<p>Before you get going, you’ll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.</p>
+
+<ol>
+<li><p>Open IIS 7.0/7.5 Manager in Windows</p></li>
+<li><p>Click on your site (see image below, noting that your configuration will look different), and the main configuration options page will be displayed to the right</p></li>
+<li><p>Double-click on the “SMTP E-mail” under the ASP.NET section (to get the below screen)</p></li>
+<li><p>In the email address field: type the email address that will be the “sender”</p></li>
+<li><p>Click on the “Deliver e-mail to SMTP server” radio button if not already enabled</p></li>
+<li><p>In the SMTP Server field: type localhost</p></li>
+<li><p>In the Port field: type 25</p></li>
+<li><p>In Authentication Settings click the “Not required” option.</p></li>
+<li><p>On the right side “Actions” pane: click Apply</p></li>
+</ol>
+
+
+<p><img src="http://docs.sendgrid.com/wp-content/uploads/2012/06/iis_mgr_site.png" alt="" /></p>
+
+<blockquote><p><strong>TIP >> </strong>If you want to configure additional security to the localhost IIS 6.0 server you would set it here and match the same authentication in the IIS 6.0 GUI.</p></blockquote>
+
+<h2>Enable SMTP Service:</h2>
+
+<ol>
+<li><p>Go to Start > All Programs > Administrative Tools > Server Manager</p></li>
+<li><p>Click on the Features item in the navigation pane</p></li>
+<li><p>Click the Add Features link to start the wizard</p></li>
+<li><p>Scroll down the list to the SMTP Server, and check the box. The Required Role Services dialog will appear, listing all of the dependencies that the SMTP server depends on to operate. Click Add Require Role Services.</p></li>
+<li><p>Click Next twice</p></li>
+<li><p>Review the list of available IIS Role Services and check any that you would like to add</p></li>
+<li><p>Click Next then click Install</p></li>
+</ol>
+
+
+<p>Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.</p>
+
+<h2>Configure IIS 6.0 to Relay Outbound Email to SendGrid</h2>
+
+<ol>
+<li><p>Go to Start > All Programs > Administrative Tools > IIS 6.0 Manager</p></li>
+<li><p>Right click on the SMTP Virtual Server #1 and select the Properties option</p></li>
+<li><p>Click the box to enable logging section to assist you in configuring the server</p></li>
+<li><p>Click on Properties and check the box to activate Use Local Time For File Naming And Rollover option</p></li>
+<li><p>Click on the Advanced tab and check the following items: Date, Time, Client IP Address, User Name, Service Name, Server Name, Server IP Address, Server Port, Method, Protocol Status, Bytes Sent, Protocol Version, and Host.</p></li>
+<li><p>Click OK</p></li>
+<li><p>Click on the Access tab the click the Relay button in the Relay Restrictions section</p></li>
+<li><p>Click Add, enter 127.0.0.1, and click OK. The IP will appear in the list with Access Granted</p></li>
+<li><p>Click OK Only The List Below radio button and enter 127.0.0.1 in the IP address field.</p></li>
+<li><p>Click on OK to return to the Access tab as shown in the previous screenshots.</p></li>
+<li><p>Select the Delivery tab and click the Outbound Security button</p></li>
+<li><p>Click on Basic Authentication where the Username will be your SendGrid.com username and the password will be your SendGrid.com password</p></li>
+<li><p>Click OK</p></li>
+<li><p>Click the Advanced button</p></li>
+<li><p>In the Smart host field: enter smtp.sendgrid.net</p></li>
+<li><p>Click on OK twice and you can close the IIS 6.0 admin MMC</p></li>
+</ol>
+
+
+<h2>Testing Your New Configuration</h2>
+
+<p>First, let&#8217;s test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:</p>
+
+<p><code>telnet localhost 25</code></p>
+
+<p>Now, with telnet running, enter the following commands just as you see them, pressing ENTER for each new line (if configured correctly, the server won&#8217;t do anything until you enter the period):</p>
+
+<p><code>
+EHLO yourdomain.com
+MAIL FROM: test@yourdomain.com
+RCPT TO: recipient@anotherdomain.com
+DATA
+This is a test email for SendGrid operations.
+.
+</code></p>
+
+<p>The <strong>EHLO</strong> command with your domain inserted tells the mail server which domain it will be sending from. The <strong>MAIL FROM:</strong> command is a standard MIME entry for that inserts the email address of the sender. The <strong>RCPT TO:</strong> command tells the server to which address to send the message. The <strong>DATA</strong> command tells the server that the next incoming information is the body of the message. Finally, after the data is entered, the period (.) tells the server you are done. When you press Enter, it will send the message. It&#8217;s quite nice to have servers to handle all this mess, isn&#8217;t it!</p>
+
+<p>If these manually entered commands work, then you should have the following success code returned:</p>
+
+<p><code>250….Queued mail for delivery</code></p>
+
+<p>You can also test using the logging feature we had you activate earlier. You can view the logs by navigating to and opening the IIS 6.0 7.5 log files with a text editor. It will probably be under the C:\Windows\System32\LogFiles directory unless you changed the log file location during installation.</p>
+
+<p>Notice, highlighted in blue below, that the server sent an email and that it went through various OutboundConnectionCommand and Outbound ConnectionResponse steps.  These along with the information of the various stages of EHLO, AUTH, MAIL, RCPT, DATA and quit that the email was sent successfully.</p>
+
+<p>Finally, you can confirm that your configuration is working by logging into our site. Login into our web portal using your SendGrid credentials. On the main Dashboard tab you will see a list of messages that were recently sent through our service. This number should increment by one each time you either use telnet to send an email or you use a ASP.NET test script.</p>
+
+<blockquote><p><strong>TIP >> </strong>You might want to send a couple test emails in order to watch this number increase.</p></blockquote>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-05T06:49:36-06:00" pubdate data-updated="true">Jun 5<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-iis-7-5/index.html" data-via="" data-counturl="http://yoursite.com/documentation/get-started/integrate/examples/microsoft-iis-7-5/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

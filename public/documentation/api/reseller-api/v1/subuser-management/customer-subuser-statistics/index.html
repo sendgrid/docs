@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customer Subuser Statistics - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Customer Subuser Statistics Jul 27th, 2011 Retrieve Customer Subuser Statistics Note that you can use either the days parameter or the start_date &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-statistics/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Customer Subuser Statistics</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:54:45-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <h2>Retrieve Customer Subuser Statistics</h2>
+
+<p>Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under
+your account</p>
+
+<p>The customer subuser we are retrieving
+statistics from</p>
+
+<p>days</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>Number of days in the past to include
+statistics (includes today)</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be
+before the end_date parameter</p>
+
+<p>The start date to look up statistics</p>
+
+<p>end_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be after
+the start_date parameter</p>
+
+<p>The end date to look up statistics</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>    2009-06-20
+    12342
+    12
+    10223
+    9992
+    5
+
+
+    2009-06-21
+    32342
+    10
+    14323
+    10995
+    7
+
+
+    2009-06-22
+    52342
+    11
+    19223
+    12992
+    2
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>[{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}]</code></p>
+
+<h2>Retrieve Aggregates</h2>
+
+<p>Retrieve all-time totals for your customer subuser</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under
+your account</p>
+
+<p>The subuser we are retrieving statistics from</p>
+
+<p>aggregate</p>
+
+<p>Yes</p>
+
+<p>Must be set to 1</p>
+
+<p>This is used to let us know that you are
+interested in all time totals</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;;user=example@example.com&amp;aggregate;=1</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>  12342
+  12
+  10223
+  9992
+  5
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;aggregate;=1</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5}</code></p>
+
+<h2>Category List</h2>
+
+<p>Retrieve a list of all the categories used in your customer subusers account.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>The value must be set to <em>true</em></p>
+
+<p>This will allow you to retrieve a list of all
+categories used in your customer subusers account.</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Subuser must be registered under your account</p>
+
+<p>The subuser we are retrieving category
+statistics from</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;list;=true</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>  categoryA
+  categoryB
+  categoryC
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;list;=true</code></p>
+
+<h4>Return</h4>
+
+<p><code>[{"category":"categoryA","category":"categoryB","category":"categoryC"}]</code></p>
+
+<h2>Category Statistics</h2>
+
+<p>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</p>
+
+<p>Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>category</p>
+
+<p>Yes</p>
+
+<p>Must be an existing category that has
+statistics. You can pass in an array of categories</p>
+
+<p>The category you will specify to retrieve
+detailed stats</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer subuser must be registered under you</p>
+
+<p>The customer subuser we are retrieving
+statistics from</p>
+
+<p>days</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>Number of days in the past to include
+statistics (Includes today)</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be
+before the end_date parameter</p>
+
+<p>The start date to look up statistics</p>
+
+<p>end_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be
+after the start_date parameter</p>
+
+<p>The end date to look up statistics</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;=categoryA</code></p>
+
+<h4>Command - Using an array of categories</h4>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;[]=categoryA&amp;category;[]=categoryB</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>    2009-06-20
+    categoryA
+    12342
+    12
+    10223
+    9992
+    5
+
+
+    2009-06-21
+    categoryB
+    32342
+    10
+    14323
+    10995
+    7
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;=categoryA</code></p>
+
+<h4>Command - Using an array of categories</h4>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=stats&amp;user;=example@example.com&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;[]=categoryA&amp;category;[]=categoryB</code></p>
+
+<h4>Return</h4>
+
+<p><code>[{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}]</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:54:45-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-statistics/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-statistics/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

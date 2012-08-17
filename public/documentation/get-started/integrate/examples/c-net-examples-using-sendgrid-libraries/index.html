@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>C# .NET Examples using SendGrid Libraries - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="C# .NET Examples Using SendGrid Libraries May 7th, 2012 So, you are developing in C# using .NET frameworks and would like to integrate SendGrid. We &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/get-started/integrate/examples/c-net-examples-using-sendgrid-libraries/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">C# .NET Examples Using SendGrid Libraries</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-07T12:35:57-06:00" pubdate data-updated="true">May 7<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>So, you are developing in C# using .NET frameworks and would like to integrate SendGrid. We&#8217;ve got you covered. First, though, you need to grab out libraries in order for these samples to work. You can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.</p>
+
+<p>Of course, if we have our say, then using NuGet is far preferred over the manual method, since it handles a lot of the legwork for you. To install using the NuGet PM, open the package manager console and enter the following:</p>
+
+<p><code>PM&gt; Install-Package Sendgrid</code></p>
+
+<p>Once you have the SendGrid libraries properly referenced in your project, you can include calls to them in your code. This first example shows the basic structure of the code required to call the SendGrid libraries and send email, as can be found in the programs.cs file in the examples directory:</p>
+
+<p>`
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Text;
+using SendGridMail;
+using SendGridMail.Transport;</p>
+
+<p>namespace Example
+{</p>
+
+<pre><code>class Program
+{
+    // this code is used for the SMTPAPI examples
+    static void Main(string[] args)
+    {
+        var username = "sgrid_username";
+        var password = "sgrid_password";
+        var from = "bar@domain.com";
+        var to = new List
+                     {
+                         "foo@domain.com",
+                         "raz@domain.com"
+                     };
+
+        //initialize the SMTPAPI example class
+        var smtpapi = new SMTPAPI(username, password, from, to);
+        var restapi = new WEBAPI(username, password, from, to);
+
+        //use this section to test out our Web and SMTP examples!
+        smtpapi.SimpleHTMLEmail();
+
+        Console.WriteLine("Done!");
+        Console.ReadLine();
+    }
+}
+</code></pre>
+
+<p>}
+`</p>
+
+<p>In order to send a simple HTML email using the SendGrid SMTP API, use this code sample:</p>
+
+<p>`
+public void SimpleHTMLEmail()</p>
+
+<pre><code>    {
+        //create a new message object
+        var message = SendGrid.GetInstance();
+
+        //set the message recipients
+        foreach(string recipient in _to)
+        {
+            message.AddTo(recipient);
+        }
+
+        //set the sender
+        message.From = new MailAddress(_from);
+
+        //set the message body
+        message.Html = "
+</code></pre>
+
+<p>Hello</p>
+
+<p>World</p>
+
+<p>&#8221;;</p>
+
+<pre><code>        //set the message subject
+        message.Subject = "Hello World HTML Test";
+
+        //create an instance of the SMTP transport mechanism
+        var transportInstance = SMTP.GetInstance(new NetworkCredential(_username, _password));
+
+        //send the mail
+        transportInstance.Deliver(message);
+    }
+</code></pre>
+
+<p>`</p>
+
+<blockquote><p><strong>NOTE >> </strong>
+There are two calls you can make to the AddTo function. One injects addresses into the standard MIME TO: field, and that&#8217;s done (as in the above code sample) like so:</p></blockquote>
+
+<p><code>message.AddTo(sampleListName(){"foo@bar.com"});</code></p>
+
+<p>Using the X-SMTPAPI header makes this process a little cleaner and causes the message to appear as if it were sent directly to the recipient, as opposed to lots and lots of recipients. In order to inject addresses into into the X-SMTPAPI header, make the call like so:</p>
+
+<p><code>message.Header.AddTo(sampleListName(){"foo@bar.com"});</code></p>
+
+<p>If you would prefer to send a simple HTML message using the SendGrid Web API, use this code:</p>
+
+<p>`
+public void SimpleHTMLEmail()</p>
+
+<pre><code>    {
+        //create a new message object
+        var message = SendGrid.GetInstance();
+
+        //set the message recipients
+        foreach (string recipient in _to)
+        {
+            message.AddTo(recipient);
+        }
+
+        //set the sender
+        message.From = new MailAddress(_from);
+
+        //set the message body
+        message.Html = "
+</code></pre>
+
+<p>Hello</p>
+
+<p>World</p>
+
+<p>&#8221;;</p>
+
+<pre><code>        //set the message subject
+        message.Subject = "Hello World HTML Test";
+
+        //create an instance of the Web transport mechanism
+        var transportInstance = Web.GetInstance(new NetworkCredential(_username, _password));
+
+        //send the mail
+        transportInstance.Deliver(message);
+    }
+</code></pre>
+
+<p>`</p>
+
+<p>The following is a code sample that allows you to add substitution values to your messages. This is a powerful feature that makes it significantly easier to generate personalized email messages:</p>
+
+<p>`
+public void AddSubstitutionValues()</p>
+
+<pre><code>    {
+        //create a new message object
+        var message = SendGrid.GetInstance();
+
+        //set the message recipients
+        foreach (string recipient in _to)
+        {
+            message.AddTo(recipient);
+        }
+
+        //set the sender
+        message.From = new MailAddress(_from);
+
+        //set the message body
+        message.Text = "Hi %name%! Pleased to meet you!";
+
+        //set the message subject
+        message.Subject = "Testing Substitution Values";
+
+        //This replacement key must exist in the message body
+        var replacementKey = "%name%";
+
+        //There should be one value for each recipient in the To list
+        var substitutionValues = new List {"Mr Foo", "Mrs Raz"};
+
+        message.AddSubVal(replacementKey, substitutionValues);
+
+        //create an instance of the SMTP transport mechanism
+        var transportInstance = SMTP.GetInstance(new NetworkCredential(_username, _password));
+
+        //enable bypass list management
+        message.EnableBypassListManagement();
+
+        //send the mail
+        transportInstance.Deliver(message);
+    }
+</code></pre>
+
+<p>`</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-07T12:35:57-06:00" pubdate data-updated="true">May 7<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/get-started/integrate/examples/c-net-examples-using-sendgrid-libraries/index.html" data-via="" data-counturl="http://yoursite.com/documentation/get-started/integrate/examples/c-net-examples-using-sendgrid-libraries/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Email - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Email May 15th, 2011 This module allows you to manage entries in your Recipient Lists. add Add one or more emails to a Recipient List. Parameters &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/newsletter-api/lists/email/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Email</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-15T12:12:13-06:00" pubdate data-updated="true">May 15<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>This module allows you to manage entries in your Recipient Lists.</p>
+
+<h2>add</h2>
+
+<p>Add one or more emails to a Recipient List.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>  Parameter
+  Required
+  Requirements
+  Description
+</code></pre>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be an existing Recipient List.</p>
+
+<p>The list which you are adding email addresses too.</p>
+
+<p>data</p>
+
+<p>Yes</p>
+
+<p>Must be a valid JSON string matching the required format.  Limited to a 1000 entries maximum.</p>
+
+<p>Specify the name, email address, and additional fields to add to the specified Recipient List.</p>
+
+<h3>Response</h3>
+
+<p>Success: (X records inserted)
+<code>{"inserted": X}</code></p>
+
+<p>Failure:</p>
+
+<p>Error
+Cause</p>
+
+<p><code>{"error": "bad_list does not exist"}</code></p>
+
+<p>The list you specified cannot be found.</p>
+
+<p><code>{"error": "error in data: missing email field"}</code></p>
+
+<p>Your JSON string does not contain an &#8220;email&#8221; field</p>
+
+<p><code>{"error": "error in data: missing name field"}</code></p>
+
+<p>Your JSON string does not contain a &#8220;name&#8221; field</p>
+
+<p><code>{"error": "error in data: : is not a valid json string"}</code></p>
+
+<p>Your JSON string is not formed correctly</p>
+
+<h3>Examples</h3>
+
+<p>Example JSON format:
+<code>{"email":"address@example.com","name":"name","other_field":"value"}</code></p>
+
+<p>Add an email recipient to a list:
+`</p>
+
+<h1>curl -d &#8216;api_user=username&api;_key=password&list;=my_list&data;={&#8220;email&#8221;:&#8221;address@domain.com&#8221;,&#8221;name&#8221;:&#8221;contactName&#8221;}&#8217; https://sendgrid.com/api/newsletter/lists/email/add.json</h1>
+
+<p>`</p>
+
+<p>Add an email recipient with multiple data fields:
+<code>#curl -d 'api_user=username&amp;api;_key=password&amp;list;=my_list&amp;data;={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json</code></p>
+
+<p>Add multiple email recipients to a list:
+`</p>
+
+<h1>curl -d &#8216;api_user=username&api;_key=password&list;=my_list&data;[]={&#8220;email&#8221;:&#8221;address1@domain.com&#8221;,&#8221;name&#8221;:&#8221;contactName1&#8221;}&data;[]={&#8220;email&#8221;:&#8221;address2@domain.com&#8221;,&#8221;name&#8221;:&#8221;contactName2&#8221;}&#8217; https://sendgrid.com/api/newsletter/lists/email/add.json</h1>
+
+<p>`</p>
+
+<h2>get</h2>
+
+<p>Get the email addresses and associated fields for a Recipient List.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>  Parameter
+  Required
+  Requirements
+  Description
+</code></pre>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be an existing Recipient List.</p>
+
+<p>The list you are searching.</p>
+
+<p>email</p>
+
+<p>No</p>
+
+<p>Must be an email address or list of addresses.</p>
+
+<p>Optional email addresses to search for in the Recipient List.</p>
+
+<h2>delete</h2>
+
+<p>Remove one or more emails from a Recipient List.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>  Parameter
+  Required
+  Requirements
+  Description
+</code></pre>
+
+<p>list</p>
+
+<p>Yes</p>
+
+<p>Must be an existing Recipient List.</p>
+
+<p>The list which you are removing email addresses from.</p>
+
+<p>email</p>
+
+<p>Yes</p>
+
+<p>Must be an email or emails in the Recipient List.</p>
+
+<p>Specify the email address or email addresses you wish to remove from the specified Recipient List.</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-15T12:12:13-06:00" pubdate data-updated="true">May 15<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/newsletter-api/lists/email/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/newsletter-api/lists/email/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

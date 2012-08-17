@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>What is Throttling? - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="So, you tried to send a bunch of email, and when you checked your Event API or your Email Activity page, you see a number of messages are marked as “ &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/blog/2011/06/21/what-is-throttling/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">What Is Throttling?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-21T02:37:59-06:00" pubdate data-updated="true">Jun 21<span>st</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So, you tried to send a bunch of email, and when you checked your <a href="/documentation/api/event-api/">Event API</a> or your <a href="/documentation/delivery-metrics/email-activity/">Email Activity</a> page, you see a number of messages are marked as “Deferred” instead of “Delivered”. Or maybe you’re looking at your <a href="/documentation/delivery-metrics/email-lists/">Email Reports</a>, and noticing a lot of addresses in your Soft <a href="http://sendgrid.com/bounces">Bounces</a>, but not many in your Hard Bounces.
+What? Why aren’t your recipients currently in awe at the glory of your amazing message?</p>
+
+<p>First of all, rest assured that our system is designed with throttling (also known as &#8216;deferral&#8217;; these terms mean the same thing in the email world, and may be used interchangeably) in mind. We continue to attempt to send messages for up to 72 hours until the message is delivered. Normally, it takes between a few minutes to a few hours until the message is delivered.</p>
+
+<p>But what is throttling? Well, it’s when a receiving server refuses a message, but with a specific explanation that tells our server it’s only a temporary refusal. They usually say things like “user is receiving mail at too great a rate right now, please try again later”, or “user’s mailbox is over quota”.
+One important thing to note is that these errors are almost always a <strong>400</strong> class of error.</p>
+
+<h3>What can cause a deferral? A number of things:</h3>
+
+<ul>
+<li><p>The receiving server doesn’t recognize your IP, and is afraid you’re sending spam.
+<em>This is why <a href="/documentation/get-started/sending-practices-limitations/warming-up-your-ip-address/">warming up</a> is so important, so they know who you are.</em></p></li>
+<li><p>The receiving server doesn’t have any open ports to receive email.</p></li>
+<li><p>The recipient’s mailbox is full.</p></li>
+<li><p>Some recipients have marked your mail as spam, but not enough for the server to block you. Instead, they will refuse to receive more until they see what the rest of your current recipients do.</p></li>
+</ul>
+
+
+<p>What happens if it’s continuously deferred for 72 hours? Well, that generally means it’s an issue like the account being inactive, having a full mailbox, or some other legitimate problem with the recipient. When we are unable to deliver a message after this time period, we convert these deferrals (also known as Soft Bounces on the Email Reports) to “Hard Bounces”. When an address is hard bounced either due to this, or because we got a different class of error (such as “this user does not exist”), we add this address to the Hard Bounce email list.</p>
+
+<p>What this means is that even if you send a message through us for that user, we will not even try to deliver to that address, because we know it’s no longer good. Continuing to try to send to a known bad address will harm your reputation with the receiver, so we prevent that. However, if you continue to try to send, and we intercept it, your reputation with us goes down, as noted on your Dashboard <a href="http://sendgrid.com/account/overview">Account Overview</a>.</p>
+
+<h3>To recap:</h3>
+
+<p>Deferrals, aka Throttling, aka Soft Bounces are a normal part of email delivery, one SendGrid knows how to handle.
+There are a number of mundane reasons that can cause a deferral.
+If a message stays throttled, it will be added to the Hard Bounce Email Report.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-21T02:37:59-06:00" pubdate data-updated="true">Jun 21<span>st</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/delivery-terms/'>Delivery Terms</a>, <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/blog/2011/06/21/what-is-throttling/" data-via="" data-counturl="http://yoursite.com/blog/2011/06/21/what-is-throttling/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/06/02/spf-records-voila-validation-verisimilitude/" title="Previous Post: SPF Records">&laquo; SPF Records</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/" title="Next Post: SPF Records:  Don't have more than 10 DNS lookups!">SPF Records:  Don't have more than 10 DNS lookups! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

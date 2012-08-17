@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Filter / Apps - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Filter / Apps Jul 21st, 2011 List List all of the available apps. Note: The name entry is used in all the other API calls to identify a app. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v2/filter-apps/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Filter / Apps</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-21T03:29:28-06:00" pubdate data-updated="true">Jul 21<span>st</span>, 2011</time></p>
+  </header>
+  
+  <h2>List</h2>
+
+<p>List all of the available apps.</p>
+
+<p>Note: The <em>name</em> entry is used in all the other API calls to identify a app.</p>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>getavailable</em></p>
+
+<p>Retrieve Available Apps</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>    account
+</code></pre>
+
+<p>The customer who we will update</p>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>apps</em></p>
+
+<p>Allows you to access apps functionality</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;task;=getavailable&amp;method;=apps&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        twitter
+        Twitter
+        This plugin allows you to send an email message to twitter
+        0
+
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api;_key=secureSecret&amp;task;=getavailable&amp;method;=apps&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>[{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... ]</code></p>
+
+<h2>Activate App</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>activate</em></p>
+
+<p>Retrieve Available Apps</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>    account
+</code></pre>
+
+<p>The customer who we will update</p>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>apps</em></p>
+
+<p>Allows you to access apps functionality</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=activate&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    success
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=activate&amp;user;=customer@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h2>Deactivate App</h2>
+
+<pre><code>    Parameter
+    Required
+    Requirements
+    Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>deactivate</em></p>
+
+<p>Retrieve Available Apps</p>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer must be registered under your</p>
+
+<pre><code>    account
+</code></pre>
+
+<p>The customer who we will update</p>
+
+<p>method</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>apps</em></p>
+
+<p>Allows you to access apps functionality</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=deactivate&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    success
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=deactivate&amp;user;=customer@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"message":"success"}</code></p>
+
+<h2>Customize App</h2>
+
+<p>These API calls require that settings are passed using POST.</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=setup&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    field_value
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>  error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Empty</h4>
+
+<p>This is returned if that filter has no settings or is not enabled.</p>
+
+<p>&#8220;</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;method;=apps&amp;task;=setup&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success","settings":{"field_name":"field_value”}}</code></p>
+
+<h4>Return - Empty</h4>
+
+<p>This is returned if that filter has no settings or is not enabled.</p>
+
+<p><code>{"settings":null} </code></p>
+
+<h2>Get Current Settings</h2>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;task;=getsettings&amp;user;=customer@example.com&amp;method;=apps</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>    field_value
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>  error
+
+    ...
+    ... error messages ...
+    ...
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Empty</h4>
+
+<p>This is returned if that filter has no settings or is not enabled.</p>
+
+<p>&#8220;</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api;_key=secureSecret&amp;name;=twitter&amp;task;=getsettings&amp;user;=customer@example.com&amp;method;=apps</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"message":"success","settings":{"field_name":"field_value”}}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+<h4>Return - Empty</h4>
+
+<p>This is returned if that filter has no settings or is not enabled.</p>
+
+<p><code>{"settings":null}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-21T03:29:28-06:00" pubdate data-updated="true">Jul 21<span>st</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v2/filter-apps/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v2/filter-apps/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

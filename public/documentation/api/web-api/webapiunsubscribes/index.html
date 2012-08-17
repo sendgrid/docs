@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Unsubscribes - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Unsubscribes Jun 29th, 2011 This module allows you to retrieve, delete and add entries in the Unsubscribes list. get Retrieve a list of Unsubscribes &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/web-api/webapiunsubscribes/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Unsubscribes</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-29T10:31:50-06:00" pubdate data-updated="true">Jun 29<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>This module allows you to retrieve, delete and add entries in the Unsubscribes list.</p>
+
+<h2>get</h2>
+
+<p>Retrieve a list of Unsubscribes with addresses and optionally with dates.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>            Parameter
+
+
+            Required
+
+
+            Requirements
+
+
+            Description
+
+
+
+
+
+
+
+            date
+
+
+
+
+            No
+
+
+
+
+            Must be set to 1
+
+
+
+
+            Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
+
+
+
+
+
+
+
+
+            days
+
+
+
+
+            No
+
+
+
+
+            If specified, must be an integer greater than 0
+
+
+
+
+            Number of days in the past for which to retrieve unsubscribes (includes today)
+
+
+
+
+
+
+
+
+            start_date
+
+
+
+
+            No
+
+
+
+
+            Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
+
+
+
+
+            The start of the date range for which to retrieve unsubscribes. 
+
+
+
+
+
+
+
+
+            end_date
+
+
+
+
+            No
+
+
+
+
+            Date must be in YYYY-MM-DD format and be later than the start_date parameter.
+
+
+
+
+            The end of the date range for which to retrieve unsubscribes.
+</code></pre>
+
+<p>limit</p>
+
+<p>No</p>
+
+<p>some integer</p>
+
+<p>Optional field to limit the number of results returned.</p>
+
+<p>offset</p>
+
+<p>No</p>
+
+<p>some integer</p>
+
+<p>optional beginning point in the list to retrieve from.</p>
+
+<p>email</p>
+
+<p>No</p>
+
+<p>email address eg testing@example.com</p>
+
+<p>optional email addresses to search for.</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>
+https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;date;=1
+</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<p>email1@domain.com
+2009-06-10 12:40:30</p>
+
+<p>email2@domain2.com
+2009-06-10 12:40:30</p>
+
+<p>`</p>
+
+<h3>NOTE:</h3>
+
+<p><code>tags will not populate unless date is set</code></p>
+
+<h2>delete</h2>
+
+<p>Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be before the end_date parameter</p>
+
+<p>Optional date to start retrieving for.</p>
+
+<p>end_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-mm-dd format and be after the start_date parameter</p>
+
+<p>Optional date to end retrieving for.</p>
+
+<p>email</p>
+
+<p>No</p>
+
+<p>Must be a valid user account email</p>
+
+<p>Unsubscribed email address to remove</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>
+https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;email;=emailToDelete@domain.com
+</code></p>
+
+<h3>Return-Success</h3>
+
+<p>`</p>
+
+<p>success</p>
+
+<p>`</p>
+
+<h3>Return-Error</h3>
+
+<p>`</p>
+
+<p>Email does not exist</p>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>
+https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;email;=emailToDelete@domain.com
+</code></p>
+
+<h3>Return-Sucess</h3>
+
+<p><code>
+{"message":"success"}
+</code></p>
+
+<h3>Return-Error</h3>
+
+<p><code>
+{"message":"error","errors":[..."error messages"...]}
+</code></p>
+
+<h2>add</h2>
+
+<p>Add email addresses to the Unsubscribe list.</p>
+
+<h3>Parameters</h3>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>email</p>
+
+<p>Yes</p>
+
+<p>Must be a valid email address</p>
+
+<p>Email address to add to unsubscribe list</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&amp;api;_key=secureSecret&amp;email;=email2@domain.com</code></p>
+
+<h3>Return - Success</h3>
+
+<p>`</p>
+
+<p>success</p>
+
+<p>`</p>
+
+<h3>Return - Error</h3>
+
+<p>`</p>
+
+<p>Email does not exist</p>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&amp;api;_key=secureSecret&amp;email;=email2@domain.com</code></p>
+
+<h3>Return - Success</h3>
+
+<p><code>{"message":"success"}</code></p>
+
+<h3>Return - Error</h3>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-06-29T10:31:50-06:00" pubdate data-updated="true">Jun 29<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/web-api/webapiunsubscribes/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/web-api/webapiunsubscribes/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Python Examples Using SendGrid Libraries - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Python Examples Using SendGrid Libraries May 8th, 2012 Python is a hot language and you would like to use it to integrate with SendGrid. Nice move, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/get-started/integrate/examples/python-examples-using-sendgrid-libraries/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Python Examples Using SendGrid Libraries</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-08T05:36:09-06:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>Python is a hot language and you would like to use it to integrate with SendGrid. Nice move, since we&#8217;ve got a nice set of dev tools for you. Before you get started, you will need to grab our libraries in order for these samples to work. You can <a href="https://github.com/sendgrid/sendgrid-python.git">download the SendGrid Python libraries directly from our Github repository</a> or clone the files, like so:</p>
+
+<p><code>git clone git@github.com:sendgrid/sendgrid-python.git</code></p>
+
+<p>If you use PyPI to grab the package and keep them updated automatically. We prefer Pypi, so either <a href="http://pypi.python.org/pypi">install PyPI now</a> or, if you already have it, do this:</p>
+
+<p><code>easy_install sendgrid-python</code></p>
+
+<p>Now that the libraries are installed, you can call them from within your environment. The plan is as follows:</p>
+
+<pre><code>1. Create a SendGrid transport instance
+2. Create a SendGrid Mail object and set its data
+3. Send the message(s) using SMTP or Web transport
+</code></pre>
+
+<h2>Mail Usage</h2>
+
+<p>First, let&#8217;s look at the most basic code required. This sample is calling the Web transport on the last line.</p>
+
+<p>`
+import sendgrid</p>
+
+<p>s = sendgrid.Sendgrid(&#8216;username&#8217;, &#8216;password&#8217;, secure=True)
+message = sendgrid.Message(&#8220;from@mydomain.com&#8221;, &#8220;subject&#8221;, &#8220;plain body&#8221;, &#8221;<strong>Html here</strong>&#8221;)
+message.add_to(&#8220;someone@example.com&#8221;, &#8220;John Doe&#8221;)</p>
+
+<p>s.web.send(message)
+`</p>
+
+<p>&#8230;or that last line can call the SMTP transport:</p>
+
+<p><code>
+s.smtp.send(message)</code></p>
+
+<p>Modify the appropriate parts of the code, and you should be able to send a message. Once you&#8217;ve verified that, you can use a range of different parameters and APIs we have put at your disposal to make your application use SendGrid the way you want.</p>
+
+<p><em><strong>INSIDER TIP: Unique Arguments are a lot more powerful than they might appear. Use them in conjunction with Categories to generate a huge amount of useful data.</strong></em></p>
+
+<h3>Using Categories</h3>
+
+<p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name:</p>
+
+<p><strong><em>NOTE: there is a maximum of 10 categories per email</em></strong></p>
+
+<p><code>
+message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "**Html here**")
+message.add_category(["Category 1", "Category 2"])</code></p>
+
+<h3>Using Attachments</h3>
+
+<p><strong><em>NOTE: File attachments are limited to 7 MB per file:</em></strong></p>
+
+<p><code>
+message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "**Html here**")
+message.add_attachment("file1.doc", "/path/to/file.doc").add_attachment("file2.nfo", "File 2 content")</code></p>
+
+<h3>Using Substitutions</h3>
+
+<p>Substitutions can be used to customize multi-recipient emails, and tailor them for the user:</p>
+
+<p>`
+message = sendgrid.Message(&#8220;from@mydomain.com&#8221;, &#8220;subject&#8221;, &#8220;Hello %name%, your code is %code%&#8221;, &#8221;<strong>Hello %name%, your code is %code%</strong>&#8221;)
+message.add_to(</p>
+
+<pre><code>{
+    'example1@example.com': {'%name%': 'Name 1', '%code%': 'Code 1'},
+    'example2@example.com': {'%name%': 'Name 2', '%code%': 'Code 2'},
+}
+</code></pre>
+
+<p>)`</p>
+
+<h3>Using Sections</h3>
+
+<p>Sections can be used to further customize messages for the end users. A section is only useful in conjunction with a substition value:</p>
+
+<p>`
+message = sendgrid.Message(&#8220;from@mydomain.com&#8221;, &#8220;subject&#8221;, &#8220;Hello %name%, you work at %place%&#8221;,</p>
+
+<pre><code>"**Hello %name%, you work at %place%**")
+</code></pre>
+
+<p>message.add_to(</p>
+
+<pre><code>{
+    'example1@example.com': {'%name%': 'Name 1', '%place%': '%home%'},
+    'example2@example.com': {'%name%': 'Name 2', '%place%': '%office%'},
+}
+</code></pre>
+
+<p>).set_sections({&#8220;%office%&#8221;: &#8220;an office&#8221;, &#8220;%home%&#8221;: &#8220;your house&#8221;})`</p>
+
+<h3>Using Unique Arguments</h3>
+
+<p>Unique Arguments are used for tracking purposes:</p>
+
+<p><code>
+message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "**Html here**")
+message.add_unique_argument("Customer", "Someone")</code></p>
+
+<h3>Using Filter Settings</h3>
+
+<p>Filter Settings are used to enable and disable apps, and to pass parameters to those apps:</p>
+
+<p>`
+message = sendgrid.Message(&#8220;from@mydomain.com&#8221;, &#8220;subject&#8221;, &#8220;plain body&#8221;, &#8221;<strong>Html here</strong>&#8221;)
+message.add_filter_setting(&#8220;footer&#8221;, &#8220;text/plain&#8221;, &#8220;Here is a plain text footer&#8221;)
+message.add_filter_setting(&#8220;footer&#8221;, &#8220;text/html&#8221;, &#8221;</p>
+
+<p>Here is an HTML footer</p>
+
+<p>&#8221;)`</p>
+
+<h3>Using Headers</h3>
+
+<p>Custom headers can be added as necessary:</p>
+
+<p><code>
+message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "**Html here**")
+message.add_header("X-Mailer", "MyApp")</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-08T05:36:09-06:00" pubdate data-updated="true">May 8<span>th</span>, 2012</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/get-started/integrate/examples/python-examples-using-sendgrid-libraries/index.html" data-via="" data-counturl="http://yoursite.com/documentation/get-started/integrate/examples/python-examples-using-sendgrid-libraries/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

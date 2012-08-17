@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Web API - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Web API Apr 12th, 2011 SendGrid offers a Web API that allows customers to retrieve information about their account such as statistics, bounces, spam &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/web-api/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Web API</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-12T07:13:57-06:00" pubdate data-updated="true">Apr 12<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>SendGrid offers a Web API that allows customers to retrieve information about their account such as statistics, bounces, spam reports, unsubscribes, and other information. This API is not a RESTful API since in most calls both GET and POST HTTP verbs can be used interchangeably.</p>
+
+<blockquote><p><strong>WARNING >> </strong>When sending to a large number of recipients using the Web and/or Newsletter API, you must be aware of a hard limit of 1,000 addresses per line.</p></blockquote>
+
+<h2>URL Format</h2>
+
+<p>The following is the format for the API requests:</p>
+
+<p><code>
+https://sendgrid.com/api/..
+</code></p>
+
+<ul>
+<li><p><strong>MODULE</strong> - The module to interact with. We support multiple modules such as <em>bounces</em>, <em>profile</em>, <em>stats</em>, and many others.</p></li>
+<li><p><strong>ACTION</strong> - Each module supports multiple actions such as <em>add</em>, <em>get</em>, and <em>delete</em>. See our list of <a href="http://docs.sendgrid.com/documentation/api/web-api/#modulesactions">modules and actions</a>.</p></li>
+<li><p><strong>FORMAT</strong> - This determines the response format. It can be either <em>json</em> for a JSON response or <em>xml</em> for an XML response.</p></li>
+</ul>
+
+
+<h2>HTTP Return codes</h2>
+
+<ul>
+<li><p><strong><em>2XX</em></strong> - The API call was successful.</p></li>
+<li><p><strong><em>4XX</em></strong> - The API call had an error in the parameters. The error will be encoded in the body of the response.</p></li>
+<li><p><strong><em>5XX</em></strong> - The API call was unsuccessful. You should retry later.</p></li>
+</ul>
+
+
+<h2>Responses</h2>
+
+<p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
+
+<h2>Errors</h2>
+
+<ul>
+<li>XML
+`</li>
+</ul>
+
+
+<p>  error</p>
+
+<pre><code>...
+... error messages ...
+...
+</code></pre>
+
+<p>`</p>
+
+<ul>
+<li>JSON
+<code>
+{"message":"error","errors":[..."error messages"...]}
+</code></li>
+</ul>
+
+
+<h2>Success</h2>
+
+<ul>
+<li>XML
+`</li>
+</ul>
+
+
+<p>success</p>
+
+<p>`</p>
+
+<ul>
+<li>JSON
+<code>
+{"message":"success"}
+</code></li>
+</ul>
+
+
+<h2>Authentication</h2>
+
+<p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.</p>
+
+<ul>
+<li><p><strong><em>api_user</em></strong> - This is the same credential used for your SMTP settings, and for logging into the website.</p></li>
+<li><p><strong><em>api_key</em></strong> - This is the same password to authenticate over SMTP, and for logging into the website.</p></li>
+</ul>
+
+
+<h2>Modules</h2>
+
+<p>The following is a list of all of our available modules and the available actions for each module.</p>
+
+<h2>Bounces</h2>
+
+<p>This module allows you to retrieve and delete email addresses that have bounced from emails that you&#8217;ve delivered.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapibounces/#get">get</a></p>
+
+<p>/api/bounces.get.</p>
+
+<p>Retrieve a list of bounces.</p>
+
+<p><a href="/documentation/api/web-api/webapibounces/#delete">delete</a></p>
+
+<p>/api/bounces.delete.</p>
+
+<p>Remove an email address from your bounce list.</p>
+
+<h2>Blocks</h2>
+
+<p>This module allows you to retrieve and delete email addresses that were blocked by their ISP. These emails are not suppressed and are just for information.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapiblocks/#get">get</a></p>
+
+<p>/api/blocks.get.</p>
+
+<p>Retrieve a list of blocked email addresses.</p>
+
+<p><a href="/documentation/api/web-api/webapiblocks/#delete">delete</a></p>
+
+<p>/api/blocks.delete.</p>
+
+<p>Remove an email address from your block list.</p>
+
+<h2>Email Parse</h2>
+
+<p>This module allows you to add, edit, or delete your email parse settings.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapiparse/#get">get</a></p>
+
+<p>/api/parse.get.</p>
+
+<p>Retrieve email parse settings.</p>
+
+<p><a href="/documentation/api/web-api/webapiparse/#set">set</a></p>
+
+<p>/api/parse.set.</p>
+
+<p>Set email parse settings.</p>
+
+<p><a href="/documentation/api/web-api/webapiparse/#edit">edit</a></p>
+
+<p>/api/parse.edit.</p>
+
+<p>Edit existing email parse settings.</p>
+
+<p><a href="/documentation/api/web-api/webapiparse/#delete">delete</a></p>
+
+<p>/api/parse.delete.</p>
+
+<p>Delete email parse settings.</p>
+
+<h2>Filters</h2>
+
+<p>This module allows you to view your available Apps, edit their settings, as well as enable and disable them. For a list of all the apps and parameters accesible with the Web API you can check the <a href="/documentation/api/web-api/filtersettings/">Filter Settings</a> page.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapifilters/#getavailable">get</a></p>
+
+<p>/api/filter.getavailable.</p>
+
+<p>Get a list of available Apps.</p>
+
+<p><a href="/documentation/api/web-api/webapifilters/#activate">activate</a></p>
+
+<p>/api/filter.activate.</p>
+
+<p>Activate one or more Apps.</p>
+
+<p><a href="/documentation/api/web-api/webapifilters/#deactivate">deactivate</a></p>
+
+<p>/api/filter.deactivate.</p>
+
+<p>Deactivate one or more Apps.</p>
+
+<p><a href="/documentation/api/web-api/webapifilters/#setup">setup</a></p>
+
+<p>/api/filter.setup.</p>
+
+<p>Change the settings in an App.</p>
+
+<p><a href="/documentation/api/web-api/webapifilters/#getsettings">getsettings</a></p>
+
+<p>/api/filter.getsettings.</p>
+
+<p>View the settings for an App.</p>
+
+<h2>Invalid Emails</h2>
+
+<p>This module allows you to retrieve and delete email addresses that you&#8217;ve sent to that are invalid email addresses.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapiinvalidemails/#get">get</a></p>
+
+<p>/api/invalidemails.get.</p>
+
+<p>Retrieve a list of email addresses that are invalid.</p>
+
+<p><a href="/documentation/api/web-api/webapiinvalidemails/#delete">delete</a></p>
+
+<p>/api/invalidemails.delete.</p>
+
+<p>Remove an email address from your invalid list.</p>
+
+<h2>Mail</h2>
+
+<p>This module allows you to send email.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/mail/#send">send</a></p>
+
+<p>/api/mail.send.</p>
+
+<p>Send email.</p>
+
+<h2>Profile</h2>
+
+<p>This module allows you to retrieve and update your profile information such as credentials and email address.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapiprofile/#get">get</a></p>
+
+<p>/api/profile.get.</p>
+
+<p>Get profile information.</p>
+
+<p><a href="/documentation/api/web-api/webapiprofile/#set">set</a></p>
+
+<p>/api/profile.set.</p>
+
+<p>Selectively update multiple profile fields.</p>
+
+<p><a href="/documentation/api/web-api/webapiprofile/#setusername">setUsername</a></p>
+
+<p>/api/profile.setUsername.</p>
+
+<p>Update account username.</p>
+
+<p><a href="/documentation/api/web-api/webapiprofile/#setpassword">setPassword</a></p>
+
+<p>/api/profile.setPassword.</p>
+
+<p>Update account password.</p>
+
+<p><a href="/documentation/api/web-api/webapiprofile/#setemail">setEmail</a></p>
+
+<p>/api/profile.setEmail.</p>
+
+<p>Update contact email address.</p>
+
+<h2>Spam Reports</h2>
+
+<p>This module allows you to retrieve and delete email addresses that have marked your emails as SPAM.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapispamreports/#get">get</a></p>
+
+<p>/api/spamreports.get.</p>
+
+<p>Retrieve a list of email addresses that are spam reports.</p>
+
+<p><a href="/documentation/api/web-api/webapispamreports/#delete">delete</a></p>
+
+<p>/api/spamreports.delete.</p>
+
+<p>Remove an email address from your spam report list.</p>
+
+<h2>Stats</h2>
+
+<p>This module allows you to retrieve statistical data on a range of metrics including requests, bounces, spam reports, categories, and others.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapistatistics/#get">get</a></p>
+
+<p>/api/stats.get.</p>
+
+<p>Retrieves statistics on multiple metrics.</p>
+
+<h2>Unsubscribes</h2>
+
+<p>This module allows you to add, retrieve and delete email addresses that were unsubscribed from your emails.</p>
+
+<p>Action
+URL
+Description</p>
+
+<p><a href="/documentation/api/web-api/webapiunsubscribes/#add">add</a></p>
+
+<p>/api/unsubscribes.add.</p>
+
+<p>Add an email to your unsubscribe list.</p>
+
+<p><a href="/documentation/api/web-api/webapiunsubscribes/#get">get</a></p>
+
+<p>/api/unsubscribes.get.</p>
+
+<p>Retrieve a list of unsubscribed email addresses.</p>
+
+<p><a href="/documentation/api/web-api/webapiunsubscribes/#delete">delete</a></p>
+
+<p>/api/unsubscribes.delete.</p>
+
+<p>Remove an email address from your unsubscribe list.</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-04-12T07:13:57-06:00" pubdate data-updated="true">Apr 12<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/web-api/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/web-api/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

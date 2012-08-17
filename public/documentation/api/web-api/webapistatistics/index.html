@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Statistics - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Statistics Aug 3rd, 2011 Retrieve Statistics Note that you can use either the days parameter or the start_date and end_date parameter.
+If provided &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/web-api/webapistatistics/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Statistics</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-03T08:30:04-06:00" pubdate data-updated="true">Aug 3<span>rd</span>, 2011</time></p>
+  </header>
+  
+  <h2>Retrieve Statistics</h2>
+
+<h3></h3>
+
+<p>Note that you can use either the days parameter or the start_date and end_date parameter.
+<em>If provided with no parameters the current day&#8217;s statistics are returned instead.</em></p>
+
+<h2>Parameters</h2>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>days</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>Number of days in the past to include statistics (Includes today)</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-MM-DD format and be before the end_date parameter</p>
+
+<p>The start date to look up statistics</p>
+
+<p>end_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-MM-DD format and be after the start_date parameter</p>
+
+<p>The end date to look up statistics</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;days;=2</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<pre><code>2009-06-20
+12342
+12
+10223
+9992
+5
+3
+6
+7
+
+
+2009-06-21
+32342
+10
+14323
+10995
+7
+3
+9
+4
+
+
+2009-06-22
+52342
+11
+19223
+12992
+2
+5
+2
+8
+</code></pre>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;days;=2</code></p>
+
+<h3>Return</h3>
+
+<p><code>
+[{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
+</code></p>
+
+<h2>Retrieve Aggregates</h2>
+
+<h3>Retrieve all-time totals for your subusers</h3>
+
+<h2>Parameters</h2>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>aggregate</p>
+
+<p>Yes</p>
+
+<p>Must be set to 1</p>
+
+<p>This is used to indicate you are interested in all time totals</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;aggregate;=1</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<pre><code>12342
+12
+10223
+9992
+5
+5
+2
+8
+</code></pre>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;aggregate;=1</code></p>
+
+<h3>Return</h3>
+
+<p><code>{"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}</code></p>
+
+<h2>Category List</h2>
+
+<h3>Retrieve a list of all the categories used in your account.</h3>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;list;=true</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<p>  categoryA
+  categoryB
+  categoryC</p>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;list;=true</code></p>
+
+<h3>Return</h3>
+
+<p><code>[{"category":"categoryA"},{"category":"categoryB"},{"category":"categoryC"}]</code></p>
+
+<h2>Category Statistics</h2>
+
+<h3>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</h3>
+
+<h3><em>Note that you can use either the days parameter or the start_date and end_date parameter.</em></h3>
+
+<h2>Parameters</h2>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>category</p>
+
+<p>Yes</p>
+
+<p>Must be an existing category that has statistics.</p>
+
+<p>The category you will specify to retrieve detailed stats</p>
+
+<p>days</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>Number of days in the past to include statistics (Includes today)</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-MM-DD format and be before the end_date parameter</p>
+
+<p>The start date to look up statistics</p>
+
+<p>end_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-MM-DD format and be after the start_date parameter</p>
+
+<p>The end date to look up statistics</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;=categoryA</code></p>
+
+<h3>Command - Using an array of categories</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;[]=categoryA&amp;category;[]=categoryB</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<pre><code>2009-06-20
+categoryA
+12342
+12
+10223
+9992
+5
+
+
+2009-06-21
+categoryB
+32342
+10
+14323
+10995
+7
+</code></pre>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;=categoryA</code></p>
+
+<h3>Command - Using an array of categories</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;start;_date=2009-06-20&amp;end;_date=2009-06-22&amp;category;[]=categoryA&amp;category;[]=categoryB</code></p>
+
+<h3>Return</h3>
+
+<p><code>[{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":7},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":4,"unique_opens":1,"blocked":6}]</code></p>
+
+<h2>All Time Category Totals</h2>
+
+<h3>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</h3>
+
+<h3><em>Note that you can use either the days parameter or the start_date and end_date parameter.</em></h3>
+
+<h2>Parameters</h2>
+
+<p>Parameter
+Required
+Requirements
+Description</p>
+
+<p>category</p>
+
+<p>Yes</p>
+
+<p>Must be set to 1</p>
+
+<p>This is used to indicate you are interested in all time totals</p>
+
+<p>category</p>
+
+<p>Yes</p>
+
+<p>Must be an existing category that has statistics.</p>
+
+<p>The category you will specify to retrieve detailed stats</p>
+
+<p>days</p>
+
+<p>No</p>
+
+<p>Must be an integer greater than 0</p>
+
+<p>Number of days in the past to include statistics (Includes today)</p>
+
+<p>start_date</p>
+
+<p>No</p>
+
+<p>Date must be in YYYY-MM-DD format and be before the end_date parameter</p>
+
+<p>The start date to look up statistics</p>
+
+<h2>XML</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;category;=categoryA&amp;aggregate;=1</code></p>
+
+<h3>Command - Using an array of categories</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;category;[]=categoryA&amp;category;[]=categoryB&amp;aggregate;=1</code></p>
+
+<h3>Return</h3>
+
+<p>`</p>
+
+<pre><code>categoryA
+12342
+12
+10223
+9992
+5
+5
+2
+8
+</code></pre>
+
+<p>`</p>
+
+<h2>JSON</h2>
+
+<h3>Command</h3>
+
+<p><code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api;_key=secureSecret&amp;category;=categoryA&amp;aggregate;=1</code></p>
+
+<h3>Return</h3>
+
+<p><code>[{"name":"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}]</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-08-03T08:30:04-06:00" pubdate data-updated="true">Aug 3<span>rd</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/web-api/webapistatistics/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/web-api/webapistatistics/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

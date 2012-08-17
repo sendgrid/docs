@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Account Overview - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Account Overview Jul 27th, 2011 View general account information regarding your customers, including billing cycle, current billing cycle, credit &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v1/account-overview/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Account Overview</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:49:30-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.</p>
+
+<h3>Parameters</h3>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>task</p>
+
+<p>Yes</p>
+
+<p>Must be set to <em>overview</em>.</p>
+
+<p>The task that allows us to present the customers</p>
+
+<pre><code>        information.
+</code></pre>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Customer that is registered under your account.</p>
+
+<p>The customer</p>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api;_key=secureSecret&amp;task;=overview&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p>`</p>
+
+<pre><code>        100
+        50000
+        Silver Package
+        50000
+        100000
+        0
+        50000
+        2010-08-30
+        2010-09-29
+        2010-09-30
+</code></pre>
+
+<p>`</p>
+
+<h4>Return - Error</h4>
+
+<p>`</p>
+
+<pre><code>    error
+
+
+        ... error messages ...
+
+        ...
+</code></pre>
+
+<p>`</p>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api;_key=secureSecret&amp;task;=overview&amp;user;=customer@example.com</code></p>
+
+<h4>Return - Success</h4>
+
+<p><code>{"reputation":100,"requests":500000,"package":"Silver
+Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"}</code></p>
+
+<h4>Return - Error</h4>
+
+<p><code>{"message":"error","errors":[..."error messages"...]}</code></p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T01:49:30-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v1/account-overview/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v1/account-overview/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

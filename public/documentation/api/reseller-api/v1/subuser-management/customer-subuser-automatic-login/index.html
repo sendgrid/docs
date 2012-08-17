@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Customer Subuser Automatic Login - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Customer Subuser Automatic Login Jul 27th, 2011 Allow customer subusers to manage their account from your website using an iframe to our site. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-automatic-login/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Customer Subuser Automatic Login</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T02:19:30-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time></p>
+  </header>
+  
+  <p>Allow customer subusers to manage their account from your website using an iframe to our site.</p>
+
+<h2>Initial API Call</h2>
+
+<h3>Parameters</h3>
+
+<p>In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login yourcustomer subuser.</p>
+
+<pre><code>        Parameter
+        Required
+        Requirements
+        Description
+</code></pre>
+
+<p>user</p>
+
+<p>Yes</p>
+
+<p>Must be set in email format</p>
+
+<p>This is the customer subuser you will attempt</p>
+
+<pre><code>        to automatically login
+</code></pre>
+
+<p>password</p>
+
+<p>No</p>
+
+<p>Your customer subuser password.</p>
+
+<p>Authenticate the customer subuser with this</p>
+
+<pre><code>        API call.
+</code></pre>
+
+<h3>XML API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api;_key=secureSecret&amp;method;=geturl&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p>`</p>
+
+<pre><code>        al_username=username&amp;al;_subuser_name=example@example.com&amp;al;_hash=b478ab36ebc306990dd283b1c341898e
+    `
+</code></pre>
+
+<h3>JSON API Request</h3>
+
+<p><code>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api;_key=secureSecret&amp;method;=geturl&amp;user;=example@example.com</code></p>
+
+<h4>Return</h4>
+
+<p><code>{"params":"al_username=username&amp;al;_subuser_name=example@example.com&amp;al;_hash=aa39649af578679d3a90d2cc43245d56"}</code></p>
+
+<h2>iFrame Usage</h2>
+
+<p>Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.</p>
+
+<p>&#8220;</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-07-27T02:19:30-06:00" pubdate data-updated="true">Jul 27<span>th</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-automatic-login/index.html" data-via="" data-counturl="http://yoursite.com/documentation/api/reseller-api/v1/subuser-management/customer-subuser-automatic-login/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

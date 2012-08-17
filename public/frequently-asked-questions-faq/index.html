@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Frequently Asked Questions (FAQ) - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="Frequently Asked Questions (FAQ) May 31st, 2011 This page contains questions (and their answers) new users typically have about SendGrid. What is &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yoursite.com/frequently-asked-questions-faq/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:yoursite.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">Frequently Asked Questions (FAQ)</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-31T09:24:24-06:00" pubdate data-updated="true">May 31<span>st</span>, 2011</time></p>
+  </header>
+  
+  <p><em>This page contains questions (and their answers) new users typically have about SendGrid.</em></p>
+
+<h2>What is SendGrid?</h2>
+
+<p>SendGrid is the ultimate email solution for companies large and small alike.</p>
+
+<h2>What is your pricing? How does your pricing work?</h2>
+
+<p>We offer a number of different pricing schemes related to how much email you send and how you need to send it. Plans are broken down according to email volume, deliverability features, integration options, and reporting capabilities. A full breakdown of our pricing, along with each plans features and functionality, can be found on the <a href="http://sendgrid.com/pricing.html">SendGrid Pricing Page</a>.</p>
+
+<h2>How can I test your service?</h2>
+
+<p>The best way to test out SendGrid is to register for a Free Account and start sending emails! A Free Account allows you to send up to 200 emails per day. To signup for a Free Account, visit the <a href="http://sendgrid.com/user/signup">SendGrid Free Account Signup Page</a>.</p>
+
+<h2>How scalable is your infrastructure (receiving and delivering)? Can you provide some statistics?</h2>
+
+<p>Our infrastructure is as scalable as you need it to be. We have customers sending everywhere from 5 emails per day to 5,000,000 emails per day.</p>
+
+<h2>How do I get started?</h2>
+
+<p>The best way to get started with SendGrid is to visit the <a href="http://sendgrid.com/pricing.html">SendGrid Pricing Page</a> to find out what plan you need. Once you&#8217;ve signed up, you&#8217;ll want to refer to the <a href="http://docs.sendgrid.com/documentation/get-started/">SendGrid Getting Started Guide</a> to get everything setup and properly configured.</p>
+
+<h2>Can I send from multiple FROM addresses or different domains?</h2>
+
+<p>Yes, you can send email from different FROM addresses.</p>
+
+<p>Be aware that you will want to turn off Domain Keys if you are sending from domains different from the domain provisioned with SendGrid as the foreign domains will cause Domain Keys to fail. To fix this, you can add a Sender header, however this will cause an &#8216;on behalf of&#8217; message to be shown in some mail readers. More information about Domain Keys and SendGrid can be found here. Alternatively you can use the SMTP API to override the domain in the Domain Keys filter. The SMTP API Filter Settings page describes the filters that can be specified in the &#8216;filters&#8217; section of the X-SMTPAPI header.</p>
+
+<h2>Help! I can&#8217;t find my SMTP username and password</h2>
+
+<p>Your SMTP username and password is the same username and password you provided when you signed up for SendGrid. We use the same set of credentials for website access and SMTP authentication.</p>
+
+<h2>Help! &#8220;On Behalf Of&#8221; is being added to my email address</h2>
+
+<p>When spoofing a From: address, you often encounter &#8220;On Behalf Of&#8221; added to the message envelope in Hotmail and Outlook. This is due to the signing domain of Domainkeys not matching the domain in the From: header.</p>
+
+<p><a href="http://support.sendgrid.com/entries/98008-how-to-eliminate-the-on-behalf-of-message">Read This Forum Post For More Information About Eliminating &#8220;On Behalf Of&#8221;</a></p>
+
+<h2>What is the Whitelabel Wizard and why should I configure it?</h2>
+
+<p>Silver plans and higher accounts come with a dedicated IP and whitelabel capability. The dedicated IP helps you maintain your sending reputation independent of any other users on our system and whitelabeling gives you the ability to use a subdomain you choose for click/open tracking. Both of these features together improve your chances of staying off blacklists as you no longer are sharing IPs or domains with other users.</p>
+
+<p>Please visit the <a href="http://sendgrid.com/whitelabel/wizard">Whitelabel Wizard</a> to complete the setup of your account and dedicated IP addresses.</p>
+
+<h2>How do I cancel my account?</h2>
+
+<p>You may cancel your account at any time by navigating to the Account Settings section of your Dashboard, and clicking on &#8220;Cancel your account&#8221; or by navigating directly to the <a href="https://sendgrid.com/account/cancel">SendGrid Account Cancellation Page</a>.</p>
+
+<h2>About Internet Standards</h2>
+
+<p>For standards like SPF and DKIM / DomainKeys, whether they improve deliverability or bypass filters is entirely at the discretion of the validating receivers. It is expected that messages from a sender with a good reputation would be subject to less scrutiny by the receiver&#8217;s filters. [1] In other words, omitting these standards usually doesn&#8217;t hurt, but providing them can only help deliverability.</p>
+
+<p>Some other things to consider:</p>
+
+<ul>
+<li><p>DKIM is an internet standards track standard and obsoletes DomainKeys</p></li>
+<li><p>If you turn off DomainKeys we&#8217;ll still sign the email with DKIM which is not affected by the on behalf of issue, and is designed for the type of third-party signing we do</p></li>
+<li><p>An SPF record is invalid if it requires more than 10 DNS lookups</p></li>
+<li><p>An SPF record is invalid if you have more than one SPF record for a given domain. In this case you will want to merge the additional SPF records into one SPF record</p></li>
+</ul>
+
+
+<p>[1] <a href="http://www.dkim.org/info/dkim-faq.html#related">DKIM Frequently Asked Questions</a></p>
+
+<h2>How can I use SMTPAPI Unique Args to Track Individual Emails?</h2>
+
+<p>You can use our SMTPAPI to insert one or more unique identifiers into your emails. This unique identifier is echoed back on the Event API and in our Email Activity feature and can be used to track individual emails going through our system.</p>
+
+<p>The following X-SMTPAPI header is an example of adding a unique argument with a key of &#8220;id&#8221; and a value of 42:</p>
+
+<p><strong>X-SMTPAPI: {&#8220;unique_args&#8221; : {&#8220;id&#8221; : 42}}</strong></p>
+
+<h2>Getting Started: Configuring Sendmail</h2>
+
+<p>To set up Sendmail for use with SendGrid you need to add or modify the following settings in the Sendmail configuration (replacing &lt;> and &lt;> with your SendGrid username and password):</p>
+
+<p>1. Set the authorization credentials in <em>/etc/mail/access</em>:</p>
+
+<ul>
+<li><strong>AuthInfo:smtp.sendgrid.net &#8220;U:&lt;>&#8221; &#8220;P:&lt;>&#8221; &#8220;M:PLAIN&#8221;</strong></li>
+</ul>
+
+
+<p>2. Define the Smart Host in <em>/etc/mail/sendmail.mc</em>:</p>
+
+<ul>
+<li><p><strong>define(<code>SMART_HOST',</code>smtp.sendgrid.net&#8217;)</strong></p></li>
+<li><p><strong>FEATURE(`access_db&#8217;)</strong></p></li>
+</ul>
+
+
+<p>3. Update <em>sendmail.cf</em> and <em>access.db</em> files:</p>
+
+<ul>
+<li><p><strong>$ cd /etc/mail</strong></p></li>
+<li><p><strong>$ m4 sendmail.mc >sendmail.cf</strong></p></li>
+<li><p><strong>$ makemap hash access </strong></p></li>
+<li><p>Restart sendmail</p></li>
+<li><p><strong><strong>$ /etc/init.d/sendmail restart</strong></strong></p></li>
+</ul>
+
+
+<h2>How long does it take to provision a new account?</h2>
+
+<p>The account provisioning process can take a varying amount of time, as SendGrid’s provisioning team must review your account information before approving your request. The process can commonly take anywhere from 2-4 hours. To help expedite the process please be sure to provide as detailed and accurate information as you can, and when possible sign up with a contact email under the domain you are registering.</p>
+
+<h2>How do I configure my SMTP servers to use SendGrid?</h2>
+
+<p>Just change you’re SMTP server settings to point to SendGrid:</p>
+
+<ul>
+<li><p><strong>server: smtp.sendgrid.net</strong></p></li>
+<li><p><strong>port: 25, 465, or 587</strong></p></li>
+<li><p><strong>username: yourSendGrid@username.com</strong></p></li>
+<li><p><strong>yourSendGridPassword</strong></p></li>
+</ul>
+
+
+<p><em>*Note that some servers or hosting providers may block port 25, if so, use 587.</em></p>
+
+<h2>Does SendGrid manage my email lists?</h2>
+
+<p>When sending via SMTP relay, SMTP API, or Web API, Sendgrid does not maintain or manage a recipient list. What SendGrid can manage are Unsubscription lists, Bounce lists, and other similar lists. These lists are email addresses to which you do not wish to send email because it has been established through unsubcriptions or bounce messages that emails to this address cannot or should not be delivered.</p>
+
+<p>It should also be noted that when using the SendGrid Newsletter App you can upload and maintain email lists through the Newsletter interface. Recipient lists can be imported via csv format either from direct upload, or by specifying a remote URL. Once uploaded these lists can be maintained, and used to deliver recipient specific customized emails to addresses on the list.</p>
+
+<h2>Help! My emails are going into spam folders</h2>
+
+<p>This issue can be caused by  a number of different reasons. Please read the respective information below depending on what kind of account you have.</p>
+
+<p><strong>Silver &amp; Higher Users</strong>: First and foremost, make sure your Whitelabeling is setup correctly. You have your own IP and, thus, your own reputation, so it is very important to have Whitelabeling setup correctly. Some Email Service Providers (ESPs) will place emails from senders they&#8217;ve never encountered before in Spam automatically and wait for their users to confirm they are not spam. Ask all your recipients to check their spam folders for messages and, if they find emails in spam folders, to mark them as not spam. You may also want to check the content of your emails using a spam checker. One of our favorite tools is SpamAssassin.</p>
+
+<p><strong>Bronze &amp; Lower Users</strong>: Some Email Service Providers (ESPs) will place emails from senders they&#8217;ve never encountered before in Spam automatically and wait for their users to confirm they are not spam. Ask all your recipients to check their spam folders for messages and, if they find emails in spam folders, to mark them as not spam. You may also want to check the content of your emails using a spam checker. One of our favorite tools is SpamAssassin.</p>
+
+<h2>Can I send as many emails as I want on my new IP?</h2>
+
+<p>SendGrid does not limit the amount of email we will accept for a new customer. However, recipient servers often “throttle” new IP addresses. That means that a recipient mail server may only accept a certain number of emails from a new IP per day or even hour. The amount of email accepted can vary greatly based on recipient domain and other factors.</p>
+
+<p>It is always a good idea to “warm up” a new IP address. This means sending a smaller volume than your original target volume at first and slowly increasing your sending rates to the destination volume. Again “throttling” limits can vary, but a good rule of thumb is to start with 10% of your target volume and increasing to 100% over 20-30 days.</p>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-31T09:24:24-06:00" pubdate data-updated="true">May 31<span>st</span>, 2011</time>
+        
+      </p>
+      
+        <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://yoursite.com/frequently-asked-questions-faq/index.html" data-via="" data-counturl="http://yoursite.com/frequently-asked-questions-faq/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
