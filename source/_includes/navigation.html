@@ -1,15 +1,33 @@
-<ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
-  <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  {% if site.subscribe_email %}
-    <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
-  {% endif %}
-</ul>
-  {% if site.simple_search %}
-<form action="{{ site.simple_search }}" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  {% endif %}
-{% include custom/navigation.html %}
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <a class="brand" href="{{ root_url }}/">{{ site.title }}</a>
+
+      <div class="nav-collapse">
+        {% include custom/navigation.html %}
+
+        <ul class="nav pull-right" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
+          <li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+          {% if site.subscribe_email %}
+            <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
+          {% endif %}
+        </ul>
+
+        {% if site.simple_search %}
+          <form class="pull-right navbar-search" action="{{ site.simple_search }}" method="get">
+            <fieldset role="search">
+              <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
+              <input class="search-query" type="text" name="q" results="0" placeholder="Search"/>
+            </fieldset>
+          </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

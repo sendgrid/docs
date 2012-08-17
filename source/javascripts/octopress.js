@@ -1,46 +1,6 @@
-function getNav() {
-  var mobileNav = $('nav[role=navigation] fieldset[role=search]').after('<fieldset class="mobile-nav"></fieldset>').next().append('<select></select>');
-  mobileNav.children('select').append('<option value="">Navigate&hellip;</option>');
-  $('ul[role=main-navigation]').addClass('main-navigation');
-  $('ul.main-navigation a').each(function(link) {
-    mobileNav.children('select').append('<option value="'+link.href+'">&raquo; '+link.text+'</option>');
-  });
-  $('ul.subscription a').each(function(link) {
-    mobileNav.children('select').append('<option value="'+link.href+'">&raquo; '+link.text+'</option>');
-  });
-  mobileNav.children('select').bind('change', function(event) {
-    if (event.target.value) { window.location.href = event.target.value; }
-  });
-}
-
-function addSidebarToggler() {
-  if(!$('body').hasClass('sidebar-footer')) {
-    $('#content').append('<span class="toggle-sidebar"></span>');
-    $('.toggle-sidebar').bind('click', function(e) {
-      e.preventDefault();
-      if ($('body').hasClass('collapse-sidebar')) {
-        $('body').removeClass('collapse-sidebar');
-      } else {
-        $('body').addClass('collapse-sidebar');
-      }
-    });
-  }
-  var sections = $('aside.sidebar > section');
-  if (sections.length > 1) {
-    sections.each(function(section, index){
-      if ((sections.length >= 3) && index % 3 === 0) {
-        $(section).addClass("first");
-      }
-      var count = ((index +1) % 2) ? "odd" : "even";
-      $(section).addClass(count);
-    });
-  }
-  if (sections.length >= 3){ $('aside.sidebar').addClass('thirds'); }
-}
-
 function testFeatures() {
   var features = ['maskImage'];
-  $(features).map(function(feature) {
+  $(features).map(function(index, feature) {
     if (Modernizr.testAllProps(feature)) {
       $('html').addClass(feature);
     } else {
@@ -56,7 +16,7 @@ function testFeatures() {
 
 function addCodeLineNumbers() {
   if (navigator.appName === 'Microsoft Internet Explorer') { return; }
-  $('div.gist-highlight').each(function(code) {
+  $('div.gist-highlight').each(function(index, code) {
     var tableStart = '<table><tbody><tr><td class="gutter">',
         lineNumbers = '<pre class="line-numbers">',
         tableMiddle = '</pre></td><td class="code">',
@@ -73,7 +33,7 @@ function addCodeLineNumbers() {
 function flashVideoFallback(){
   var flashplayerlocation = "/assets/jwplayer/player.swf",
       flashplayerskin = "/assets/jwplayer/glow/glow.xml";
-  $('video').each(function(video){
+  $('video').each(function(index, video){
     video = $(video);
     if (!Modernizr.video.h264 && swfobject.getFlashPlayerVersion() || window.location.hash.indexOf("flash-test") !== -1){
       video.children('source[src$=mp4]').first().map(function(source){
@@ -93,14 +53,14 @@ function flashVideoFallback(){
 }
 
 function wrapFlashVideos() {
-  $('object').each(function(object) {
+  $('object').each(function(index, object) {
     object = $(object);
     if ( $('param[name=movie]', object).length ) {
       var wrapper = object.before('<div class="flash-video"><div>').previous();
       $(wrapper).children().append(object);
     }
   });
-  $('iframe[src*=vimeo],iframe[src*=youtube]').each(function(iframe) {
+  $('iframe[src*=vimeo],iframe[src*=youtube]').each(function(index, iframe) {
     iframe = $(iframe);
     var wrapper = iframe.before('<div class="flash-video"><div>').previous();
     $(wrapper).children().append(iframe);
@@ -116,13 +76,11 @@ function renderDeliciousLinks(items) {
   $('#delicious').html(output);
 }
 
-$.domReady(function() {
+$(document).ready(function() {
   testFeatures();
   wrapFlashVideos();
   flashVideoFallback();
   addCodeLineNumbers();
-  getNav();
-  addSidebarToggler();
 });
 
 // iOS scaling bug fix
