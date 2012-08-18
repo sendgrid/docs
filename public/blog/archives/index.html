@@ -9,10 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="Blog Archive 2011 Valid Passwords
-Oct 06 2011 Billing Error Code
-Jul 27 2011 posted in Billing How To: Eliminate the On Behalf Of Message
-Jun 27 &hellip;">
+  <meta name="description" content=" Blog Archive Recent Posts ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -27,21 +24,120 @@ Jun 27 &hellip;">
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
   <style type="text/css">
-    body {
-      padding-bottom: 40px;
-    }
-    h1 {
-      margin-bottom: 15px;
-    }
-    img {
-      max-width: 100%;
-    }
-    .sharing, .meta, .pager {
-      margin: 20px 0px 20px 0px;
-    }
-    .page-footer p {
-      text-align: center;
-    }
+
+body {
+	background: url(images/nav-bg.jpg) top repeat-x white
+}
+
+#header {
+	height: 58px;
+	padding-top: 20px;
+}
+
+#menu {
+	margin-left: -25px;
+	overflow: hidden;
+	height: 59px;
+}
+
+#menu li {
+	list-style-type: none;
+	float: left;
+}
+
+#main-menu > :first-child > a {
+	background: url(images/top-menu-elements.png) 0 -125px;
+	border: 0;
+}
+
+#main-menu > li > a:hover {
+	background: url(images/nav-glow.png) 0px 4px;
+	background-repeat: no-repeat;
+	border: 0;
+	border-bottom-color: transparent;
+}
+
+#main-menu > :first-child > a:hover {
+	color:black;
+	background: url(images/top-menu-elements.png) 0 -125px;
+	border: 0;
+	text-shadow: 0;
+}
+
+#main-menu a, #main-menu a:visited {
+	color: #333;
+	display: block;
+	float: left;
+	font-size: 1.1em;
+	font-weight: bold;
+	height: 23px;
+	padding: 19px 24px 16px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #3A99D2;
+	text-transform: uppercase;
+	text-align: center;
+	border:0;
+	border-radius: 0;
+}
+
+#logo a
+{
+	float: left;
+	margin-top: -8px;
+	position: relative;
+}
+
+/* Responsive menu stuff */
+#header-wrap .navbar-inner { 
+	min-height:0;
+	background: none;
+	border: 0;
+	box-shadow: 0 0 0;
+	padding:0;
+}
+
+#header-wrap .btn-navbar { 
+	float:none;
+	margin-top:13px;
+}
+
+.navbar-search .search-query { background-color: white; }
+
+
+.footer-links {
+	background: #F4F8FD;
+	border-top: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+	line-height:20px;
+	padding-bottom:20px;
+}
+
+.footer-links h4 {
+	padding-bottom:10px;
+}
+
+.footer-links .container {
+	padding-top:20px;
+}
+
+.footer-links a {
+	text-decoration: underline;
+	font-size:;
+}
+
+#bottom-footer a { color: #CCC; margin-right: 20px; }
+
+#bottom-footer {
+	color:#CCC;
+	background: url(images/footer-bg.gif);
+	border-top: 1px solid #EEE;
+	height: 30px;
+	font-size: 12px;
+	padding-top: 12px;
+	margin-bottom: -30px;
+}
+
   </style>
   <script src="/javascripts/libs/jquery.js"></script>
   <script src="/javascripts/libs/modernizr-2.0.js"></script>
@@ -54,43 +150,43 @@ Jun 27 &hellip;">
 </head>
 
 <body   >
-  <nav role="navigation"><div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-
-      <a class="brand" href="/">My Octopress Blog</a>
-
-      <div class="nav-collapse">
-        <ul class="nav">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-</ul>
-
-
-        <ul class="nav pull-right" data-subscription="rss">
-          <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-          
-        </ul>
-
-        
-          <form class="pull-right navbar-search" action="http://google.com/search" method="get">
-            <fieldset role="search">
-              <input type="hidden" name="q" value="site:yoursite.com" />
-              <input class="search-query" type="text" name="q" results="0" placeholder="Search"/>
-            </fieldset>
-          </form>
-        
-      </div>
-    </div>
-  </div>
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		     <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+		       <fieldset role="search">
+		         <input type="hidden" name="q" value="site:yoursite.com" />
+		         <input class="search-query" type="text" name="q" results="0" placeholder="Search"/>
+		       </fieldset>
+		     </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/pricing.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
 </div>
-</nav>
-  <div class="container">
+
+
+
+
+
+
+	
+</div>
+
+  <div class="main-container container">  
     <div class="row-fluid">
       
 <article role="article" class="span9">
@@ -103,245 +199,6 @@ Jun 27 &hellip;">
   
   
 
-
-  
-  <h1>2011</h1>
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a></h2>
-<time datetime="2011-10-06T02:44:10-06:00" pubdate><span class='month'>Oct</span> <span class='day'>06</span> <span class='year'>2011</span></time>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a></h2>
-<time datetime="2011-07-27T04:51:59-06:00" pubdate><span class='month'>Jul</span> <span class='day'>27</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/billing/'>Billing</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a></h2>
-<time datetime="2011-06-27T09:56:46-06:00" pubdate><span class='month'>Jun</span> <span class='day'>27</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/delivery-terms/'>Delivery Terms</a>, <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a>, <a class='category' href='/blog/categories/tips-amp-tricks/'>Tips &amp; Tricks</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don&#8217;t have more than 10 DNS lookups!</a></h2>
-<time datetime="2011-06-27T09:44:01-06:00" pubdate><span class='month'>Jun</span> <span class='day'>27</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/tips-amp-tricks/'>Tips &amp; Tricks</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a></h2>
-<time datetime="2011-06-21T02:37:59-06:00" pubdate><span class='month'>Jun</span> <span class='day'>21</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/delivery-terms/'>Delivery Terms</a>, <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/06/02/spf-records-voila-validation-verisimilitude/">SPF Records</a></h2>
-<time datetime="2011-06-02T05:55:36-06:00" pubdate><span class='month'>Jun</span> <span class='day'>02</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/msn-problem-alerts/">MSN Problem Alerts</a></h2>
-<time datetime="2011-05-25T09:54:40-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a>, <a class='category' href='/blog/categories/reseller/'>Reseller</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/internet-standards-and-deliverability/">Internet Standards and Deliverability</a></h2>
-<time datetime="2011-05-25T09:44:47-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/mailscanner-has-detected-a-possible-fraud-attempt/">MailScanner has detected a possible fraud attempt</a></h2>
-<time datetime="2011-05-25T09:25:54-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/discrepancies-between-requests-and-deliveries/">Discrepancies between Requests and Deliveries</a></h2>
-<time datetime="2011-05-25T09:04:07-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/reputations-how-do-they-work/">Reputations&#8230;How do they work?</a></h2>
-<time datetime="2011-05-25T08:50:05-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/25/help-my-emails-arent-being-delivered/">Help! My emails aren&#8217;t being delivered! </a></h2>
-<time datetime="2011-05-25T08:36:40-06:00" pubdate><span class='month'>May</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/24/can-i-send-from-multiple-from-addresses-or-different-domains/">Can I send from multiple FROM addresses or different domains?</a></h2>
-<time datetime="2011-05-24T11:15:57-06:00" pubdate><span class='month'>May</span> <span class='day'>24</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/apps/'>Apps</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/05/13/how-to-import-csv-files-to-the-newsletter-app/">How To: Import CSV files to the Newsletter App</a></h2>
-<time datetime="2011-05-13T07:38:47-06:00" pubdate><span class='month'>May</span> <span class='day'>13</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/apps/'>Apps</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
-
-<article>
-  <div class="well">
-
-<h2><a href="/blog/2011/04/25/email-deliverability-and-monitoring/">Email deliverability and monitoring</a></h2>
-<time datetime="2011-04-25T07:28:09-06:00" pubdate><span class='month'>Apr</span> <span class='day'>25</span> <span class='year'>2011</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/email-deliverability/'>Email Deliverability</a></span>
-</footer>
-
-</div>
-
-</article>
-
-
   
 </article>
 
@@ -350,26 +207,6 @@ Jun 27 &hellip;">
     <section class="well">
   <ul id="recent_posts" class="nav nav-list">
     <li class="nav-header">Recent Posts</li>
-    
-      <li class="post">
-        <a href="/blog/2011/10/06/valid-passwords/">Valid Passwords</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/07/27/billing-error-code/">Billing Error Code</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/06/27/how-to-eliminate-the-on-behalf-of-message/">How To: Eliminate the On Behalf Of Message</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/06/27/spf-records-dont-have-more-than-10-dns-lookups/">SPF Records:  Don't have more than 10 DNS lookups!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/06/21/what-is-throttling/">What is Throttling?</a>
-      </li>
     
   </ul>
 </section>
@@ -385,14 +222,64 @@ Jun 27 &hellip;">
 
     </div>
   </div>
-  <footer role="contentinfo" class="page-footer"><hr>
-<p>
-  Copyright &copy; 2012 - Your Name -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+	<footer role="contentinfo" class="page-footer"><div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="images/facebook.gif"></a>
 
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="bottom-footer">
+<div class="container">
+	<div class="row">
+		<div class="span5">
+        	<p>&copy; SendGrid 2012</p>
+		</div>
+
+		<div class="span7">
+			<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+			<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+			<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+			<p class="pull-right"><a href="#">Back to top</a></p>
+		</div>
+	</div>
+</div> <!-- /container -->
 </footer>
-  
+	
 
 
 
