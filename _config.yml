@@ -2,10 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://docs.sendgrid.com
+title: SendGrid Documentation - Email Delivery. Simplified.
+author: SendGrid
 simple_search: http://google.com/search
 description:
 
