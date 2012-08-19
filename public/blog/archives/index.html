@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archive Recent Posts ">
+  <meta name="description" content=" Recent Posts Blog Archive ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -26,7 +26,7 @@
   <style type="text/css">
 
 body {
-	background: url(images/nav-bg.jpg) top repeat-x white
+	background: url(/images/nav-bg.jpg) top repeat-x white
 }
 
 #header {
@@ -46,12 +46,12 @@ body {
 }
 
 #main-menu > :first-child > a {
-	background: url(images/top-menu-elements.png) 0 -125px;
+	background: url(/images/top-menu-elements.png) 0 -125px;
 	border: 0;
 }
 
 #main-menu > li > a:hover {
-	background: url(images/nav-glow.png) 0px 4px;
+	background: url(/images/nav-glow.png) 0px 4px;
 	background-repeat: no-repeat;
 	border: 0;
 	border-bottom-color: transparent;
@@ -59,7 +59,7 @@ body {
 
 #main-menu > :first-child > a:hover {
 	color:black;
-	background: url(images/top-menu-elements.png) 0 -125px;
+	background: url(/images/top-menu-elements.png) 0 -125px;
 	border: 0;
 	text-shadow: 0;
 }
@@ -130,12 +130,33 @@ body {
 
 #bottom-footer {
 	color:#CCC;
-	background: url(images/footer-bg.gif);
+	background: url(/images/footer-bg.gif);
 	border-top: 1px solid #EEE;
 	height: 30px;
 	font-size: 12px;
 	padding-top: 12px;
 	margin-bottom: -30px;
+}
+
+html, body {height: 100%;}
+
+.main-container {min-height: 100%;}
+
+#content {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
 }
 
   </style>
@@ -150,6 +171,8 @@ body {
 </head>
 
 <body   >
+
+  <div class="main-container container">  
   <div class="container" id="header-wrap">
 	<div class="row" id="header">
 		<div id="logo">
@@ -186,9 +209,25 @@ body {
 	
 </div>
 
-  <div class="main-container container">  
-    <div class="row-fluid">
+    <div class="row-fluid" id="content">
       
+<aside class="sidebar-nav span3">
+    <section class="well">
+  <ul id="recent_posts" class="nav nav-list">
+    <li class="nav-header">Recent Posts</li>
+    
+  </ul>
+</section>
+
+
+
+
+
+
+</aside>
+
+
+
 <article role="article" class="span9">
 
   
@@ -202,27 +241,11 @@ body {
   
 </article>
 
-<aside class="sidebar-nav span3">
-  
-    <section class="well">
-  <ul id="recent_posts" class="nav nav-list">
-    <li class="nav-header">Recent Posts</li>
-    
-  </ul>
-</section>
-
-
-
-
-
-
-  
-</aside>
-
 
     </div>
   </div>
-	<footer role="contentinfo" class="page-footer"><div class="container-fluid footer-links">
+	<div id="footer">
+	<div class="container-fluid footer-links">
 	<div class="container">
 		<div class="row">
 			<div class="span2">
@@ -251,34 +274,36 @@ body {
 			</div>
 			<div class="span2">
 				<h4>Connect With Us!</h4>
-				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="images/rss.gif"></a> 
-		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="images/twitter.gif"></a> 
-		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="images/facebook.gif"></a>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
 
 			</div>
 		</div>
 	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
 </div>
 
-<footer id="bottom-footer">
-<div class="container">
-	<div class="row">
-		<div class="span5">
-        	<p>&copy; SendGrid 2012</p>
-		</div>
-
-		<div class="span7">
-			<a href="http://sendgrid.com/tos.html">Terms of Service</a>
-
-			<a href="http://sendgrid.com/tos.html">Email Policy</a>
-
-			<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
-
-			<p class="pull-right"><a href="#">Back to top</a></p>
-		</div>
-	</div>
-</div> <!-- /container -->
-</footer>
 	
 
 

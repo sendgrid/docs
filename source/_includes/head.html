@@ -25,7 +25,7 @@
   <style type="text/css">
 
 body {
-	background: url(images/nav-bg.jpg) top repeat-x white
+	background: url(/images/nav-bg.jpg) top repeat-x white
 }
 
 #header {
@@ -45,12 +45,12 @@ body {
 }
 
 #main-menu > :first-child > a {
-	background: url(images/top-menu-elements.png) 0 -125px;
+	background: url(/images/top-menu-elements.png) 0 -125px;
 	border: 0;
 }
 
 #main-menu > li > a:hover {
-	background: url(images/nav-glow.png) 0px 4px;
+	background: url(/images/nav-glow.png) 0px 4px;
 	background-repeat: no-repeat;
 	border: 0;
 	border-bottom-color: transparent;
@@ -58,7 +58,7 @@ body {
 
 #main-menu > :first-child > a:hover {
 	color:black;
-	background: url(images/top-menu-elements.png) 0 -125px;
+	background: url(/images/top-menu-elements.png) 0 -125px;
 	border: 0;
 	text-shadow: 0;
 }
@@ -129,12 +129,33 @@ body {
 
 #bottom-footer {
 	color:#CCC;
-	background: url(images/footer-bg.gif);
+	background: url(/images/footer-bg.gif);
 	border-top: 1px solid #EEE;
 	height: 30px;
 	font-size: 12px;
 	padding-top: 12px;
 	margin-bottom: -30px;
+}
+
+html, body {height: 100%;}
+
+.main-container {min-height: 100%;}
+
+#content {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -150px; /* negative value of footer height */
+	height: 150px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
 }
 
   </style>
