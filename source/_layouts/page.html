@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% unless page.sidebar == false %}
+<aside class="sidebar-nav span3">
+    {% include_array default_asides %}
+</aside>
+{% endunless %}
+
 {% if page.sidebar == false %}
 <article role="article" class="span12">
 {% else %}
@@ -33,12 +39,4 @@ layout: default
     </footer>
   {% endunless %}
 </article>
-{% unless page.sidebar == false %}
-<aside class="sidebar-nav span3">
-  {% if site.page_asides.size %}
-    {% include_array page_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
-{% endunless %}
+
