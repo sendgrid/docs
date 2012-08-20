@@ -1,0 +1,12 @@
+{% if site.navigation %}
+
+<div class="well sidebar-nav">
+  <ul class="nav nav-list">
+    <li class="nav-header">Sidebar</li>
+	{% for post in site.posts reverse %}
+		<li>{{ page.title }}</li>
+	{% endfor %}
+  </ul>
+</div>
+
+{% endif %}
