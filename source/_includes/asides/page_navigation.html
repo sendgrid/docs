@@ -2,9 +2,13 @@
 
 <div class="well sidebar-nav">
   <ul class="nav nav-list">
-    <li class="nav-header">Sidebar</li>
-	{% for page in site.navigation reverse %}
-		<li><a href="{{page.url}}">{{ page.title }}</a></li>
+    <li class="nav-header">Documentation</li>
+	{% for nav in site.navigation reverse %}
+		{% assign active = nil %}
+    	{% if page.url == nav.url %}
+      		{% assign active = 'active' %}
+    	{% endif %}
+		<li class="{{ active }}"><a href="{{nav.url}}">{{ nav.title }}</a></li>
 	{% endfor %}
   </ul>
 </div>
