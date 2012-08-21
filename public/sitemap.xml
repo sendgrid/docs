@@ -2,10 +2,14 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://docs.sendgrid.com/blog/archives/</loc>
-        <lastmod>2012-08-19T13:35:16-06:00</lastmod>
+        <lastmod>2012-08-21T12:25:09-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/</loc>
-        <lastmod>2012-08-19T13:35:16-06:00</lastmod>
+        <lastmod>2012-08-21T12:25:09-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/test/testing.html</loc>
+        <lastmod>2012-08-21T12:25:09-06:00</lastmod>
     </url>
 </urlset>
