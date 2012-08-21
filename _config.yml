@@ -42,6 +42,10 @@ excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of 
 
 titlecase: true       # Converts page and post titles to titlecase
 
+# this is just a placeholder list for breadcrumbs so we have something to iterate over.
+# think of it this way: the number of indices in this array is the number of breadcrumb levels to be shown.
+breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/page_navigation.html]
