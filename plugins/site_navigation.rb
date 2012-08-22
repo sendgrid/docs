@@ -12,63 +12,44 @@ module Jekyll
 
   class NavTree < Jekyll::Generator
     def generate(site)
-      output=''
-    
-      @root_node = Tree::TreeNode.new("/", "Root")
-            
-      site.pages.each do |page|
-        split = (page.dir + page.url).split('/')
-        prev_node = nil 
-        
-        split.each do |chunk|
-          if chunk == "" 
-            next
-          end
+      dirs = ['file1', 'dir1/file2', 'dir1/subdir1/file3',  'dir1/subdir1/file5']
+      tree = {}
 
-          # name needs to be unique - the path to this node so far
-          if prev_node != nil
-            path = ""
-            
-            prev_node.parentage.reverse.each do |parent|
-              path += parent.name
-            end
-            
-            puts path
-            name = path + chunk
-            puts name
-          else
-            name = chunk
-          end 
-
-          exists = @root_node.find{ |node| node.name == name }
-                  
-          if exists
-            puts exists.name + " -- already exists"
-            prev_node = exists
-            next
-          end
-
-          node = Tree::TreeNode.new(name, chunk)
-
-          if prev_node != nil
-            prev_node << node
-            
-            if chunk.index('.') != nil
-              #we've reached a leaf
-              prev_node = nil
-            end
-          else
-            @root_node << node
-          end
-
-          prev_node = node
+      dirs.each do |path|
+        current  = tree
+        path.split("/").inject("") do |sub_path,dir|
+          sub_path = File.join(sub_path, dir)
+          current[sub_path] ||= {}
+          current  = current[sub_path]
+          sub_path
         end
+      end
 
+      def print_tree(prefix, node)
+        puts "#{prefix}<ul>"
+        node.each_pair do |path, subtree| 
+          puts "#{prefix}  <li>[#{path[1..-1]}] #{File.basename(path)}</li>"    
+          print_tree(prefix + "  ", subtree) unless subtree.empty?
+        end
+        puts "#{prefix}</ul>"
+      end
+
+
+      
+      def files_first_traverse(prefix, node = {})
+        puts "#{prefix}<ul>" 
+        node_list = node.sort
+        node_list.each do |base, subtree|
+          puts "#{prefix}  <li>#{base}</li>" if subtree.empty?
+        end
+        node_list.each do |base, subtree|
+          next if subtree.empty?
+          puts "#{prefix}  <li>#{base}</li>"
+          files_first_traverse(prefix + '  ', subtree)
+        end
+        puts '#{prefix}</ul>'
       end
       
-      puts @root_node.print_tree
-      
-      site.config["navigation"] = output
-    end
+      files_first_traverse "", tree
   end
 end
