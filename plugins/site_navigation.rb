@@ -10,42 +10,11 @@ module Jekyll
     attr_reader :dir
   end
 
-  class NavTree < Liquid::Tag
-    def initialize(tag_name, text, tokens)
-      super
-    end
-
-    def expand_node(node)
-      if node.name != "/"
-        output = '<li><a href="'+node.content+'">'+ node.content+'</a></li>'
-      else
-        output =''
-      end 
-      puts output
-      
-      
-      
-      if node.has_children?
-        if node.name != "/"
-          output+='<ul class="nav nav-list">'
-        end
-        
-        node.children.each do |child|
-          output += expand_node(child)
-        end
-        
-        if node.name != "/"
-          output+='</ul>'
-        end
-      end
-      output
-    end
-
-    def render(context)
-      site = context.registers[:site]
+  class NavTree < Jekyll::Generator
+    def generate(site)
       output=''
     
-      root_node = Tree::TreeNode.new("/", "Root")
+      @root_node = Tree::TreeNode.new("/", "Root")
             
       site.pages.each do |page|
         split = (page.dir + page.url).split('/')
@@ -55,16 +24,31 @@ module Jekyll
           if chunk == "" 
             next
           end
-          
-          exists = root_node.find{ |node| node.name == chunk }
-          
+
+          # name needs to be unique - the path to this node so far
+          if prev_node != nil
+            path = ""
+            
+            prev_node.parentage.reverse.each do |parent|
+              path += parent.name
+            end
+            
+            puts path
+            name = path + chunk
+            puts name
+          else
+            name = chunk
+          end 
+
+          exists = @root_node.find{ |node| node.name == name }
+                  
           if exists
-            # node already exists, move along
+            puts exists.name + " -- already exists"
             prev_node = exists
             next
           end
 
-          node = Tree::TreeNode.new(page.dir + page.url, chunk)
+          node = Tree::TreeNode.new(name, chunk)
 
           if prev_node != nil
             prev_node << node
@@ -74,29 +58,17 @@ module Jekyll
               prev_node = nil
             end
           else
-            root_node << node
+            @root_node << node
           end
 
           prev_node = node
         end
-        puts root_node.print_tree
+
       end
-
-      test = root_node.each { |node| puts node.inspect }
       
-      #output = expand_node(root_node)
-      #puts output
-
-      #site.pages.each do |page|
-      #  if page.data['title'] && page.data['navigation']['show'] != false
-      #    output += '<li><a href="'+page.dir+page.url+'">'+(page.data['title'] || page.url) +'</a></li>'
-      #  end
-      #end
-
-      output
+      puts @root_node.print_tree
+      
+      site.config["navigation"] = output
     end
   end
-
 end
-
-Liquid::Template.register_tag('nav_tree', Jekyll::NavTree)
