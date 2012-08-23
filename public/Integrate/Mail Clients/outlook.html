@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Outlook - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <title>Outlook 2007 - SendGrid Documentation - Email Delivery. Simplified.</title>
   <meta name="author" content="SendGrid">
 
   
@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 <br/>
 
@@ -87,11 +87,54 @@
 
   
   <header class="page-header">
-    <h1 class="entry-title">Outlook</h1>
+    <h1 class="entry-title">Outlook 2007</h1>
     
   </header>
   
-  
+  <p>These instructions will walk you through how to add an SMTP server to an existing Outlook setup, but you can also add these settings at the account creation stage.<p>
+
+<p>First, go to: &#8216;Tools&#8217; > &#8216;Account Settings&#8217;</p>
+
+<p><img class="alignnone size-full wp-image-1886" title="Tools_Acctsettings" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/Tools_Acctsettings.png" alt="" width="826" height="625" />
+</p>
+<p>The &#8216;Account Settings&#8217; window should appear as below; please select the account you receive e-mail through and click the &#8216;Change&#8217; button.</p>
+
+<p><img class="alignnone size-full wp-image-1890" title="AcctSetEmAccts" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/AcctSetEmAccts.png" alt="" width="613" height="499" /><br style="clear: left;" /></p>
+<p>
+The following &#8216;Change E-mail Account&#8217; window will appear.
+This setting (in the red rectangle below) needs to be set for our SMTP address.</p>
+<p>
+<img class="alignnone size-full wp-image-1892" title="IntMail_Settings" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/IntMail3_Settings.png" alt="" width="624" height="468" />
+</p>
+<p>After you are finished, click the &#8216;More Settings&#8217; button.
+The following &#8216;Internet E-mail Settings&#8217; window will appear.
+Click on the  &#8217;Outgoing Server&#8217; tab and input the settings shown (username and password are your SendGrid credentials). 
+</p>
+<p><img class="alignnone size-full wp-image-1895" title="IntMail_Settings_2" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/IntMail_Settings_2.png" alt="" width="392" height="432" />
+</p>
+<p>Next, click on the &#8216;Advanced&#8217; tab and enter the information as shown below.
+(Keep in mind you can also use port 25 with no security or 587 with TLS security.)
+</p>
+<p><img class="alignnone size-full wp-image-1898" title="IntMail_Settings_3" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/IntMail_Settings_3.png" alt="" width="392" height="432" />
+</p>
+<p>Click &#8216;OK&#8217; and you should return to the &#8216;Change E-mail Account&#8217; window.
+Click the &#8216;Test Account Settings&#8217; to verify you are able to receive and send mail successfully.
+</p>
+<p><img class="alignnone size-full wp-image-1903" title="TestSettings" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/TestSettings.png" alt="" width="624" height="468" />
+</p>
+<p>You should see the results below; if you do not, verify your settings are correct.
+Click the &#8216;Close&#8217; button.
+</p>
+<p><img class="alignnone size-full wp-image-1905" title="CloseTest" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/CloseTest.png" alt="" width="489" height="243" />
+</p>
+<p>Click &#8216;Next&#8217; and then &#8216;Finish&#8217; to complete the setup.
+</p>
+<p><img class="alignnone size-full wp-image-1907" title="WizFinish" src="http://docs.sendgrid.com/wp-content/uploads/2011/07/WizFinish.png" alt="" width="634" height="478" />
+</p>
+<p>You are all set to send mail through us.
+</p>
+<p><span class="label label-info">Info</span> Unfortunately, there is not an easy way to add SMTP API headers to a message in Outlook 2007.</p>
+
   
     <footer>
       

@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 <br/>
 
@@ -91,7 +91,50 @@
     
   </header>
   
-  
+  <p>To send email using Thunderbird you will have to modify your outgoing server settings in Thunderbird accordingly. Additionally you can modify settings in Thunderbird that will allow you to include an <a href="/documentation/api/smtp-api/">SMTP API</a> header in your emails if you wish to leverage <a href="/documentation/delivery-metrics/categories/">categories</a> or other features of the SMTP API when sending mail via the Thunderbird client.</p> 
+
+<h2>Start by going to: &#8216;Tools&#8217; -> &#8216;Account Settings&#8217;</h3>
+
+<p><img src="/images/thunderbird_1.png" alt="" title="thunderbird_add" width="680" height="500"/>
+</p>
+<h2>The Settings that need to be entered include:</h3>
+<ul>
+<li><strong>Description - </strong> SendGrid Connection</li>
+<li><strong>Server Name - </strong> smtp.sendgrid.net</li>
+<li><strong>Port - </strong> 465</li>
+<li><strong>Connection security - </strong> SSL/TLS</li>
+<li><strong>Authentication method - </strong> Normal password</li>
+<li><strong>User Name - </strong> sendgrid_username</li>
+</ul>
+
+<p><img src="/images/thunderbird_2.png" alt="" title="thunderbird_settings" width="359" height="313" class="aligncenter size-full wp-image-1778" /></p>
+
+<h2>Incorporating SMTP API headers requires the following.</h3>
+<ul>
+<li>Select Tools | Options (Win) or Thunderbird | Preferences (Mac) from the menu in Thunderbird.</li>
+<li>Open the “Advanced” category.</li>
+<li>Go to the “General” tab.</li>
+<li>Click “Config Editor”. </li>
+</ul>
+
+<p><img src="/images/thunderbird_3.png" alt="" title="thunderbird_advanced" width="613" height="460"/>
+</p>
+<ul>
+<li>Enter &#8220;mail.compose.other.header&#8221; under “Filter:”</li>
+<li>Double-click mail.compose.other.header.</li>
+<li>Enter “X-SMTPAPI”</li>
+<li>Click OK.</li>
+<li>Close the configuration editor and preferences dialog.</li>
+</ul>
+
+<p><img src="/images/thunderbird_4.png" alt="" title="thunderbird_header" width="680" height="159"/>
+</p>
+<ul>
+<li>Restart Thunderbird</li>
+<li>Create a mail message and just like you would add a CC or BCC to your email, click the drop down option that will now allow you to add a header of the type “X-SMTPAPI” in addition to “To”</li>
+</ul>
+
+<p><img src="/images/thunderbird_5.png" alt="" title="thunderbird_compose" width="595" height="445"/></p>
   
     <footer>
       
