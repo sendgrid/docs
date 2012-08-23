@@ -99,7 +99,6 @@ body {
 
 .footer-links a {
 	text-decoration: underline;
-	font-size:;
 }
 
 #bottom-footer a { color: #CCC; margin-right: 20px; }
@@ -111,7 +110,6 @@ body {
 	height: 30px;
 	font-size: 12px;
 	padding-top: 12px;
-	margin-bottom: -30px;
 }
 
 html, body {height: 100%;}
@@ -119,11 +117,12 @@ html, body {height: 100%;}
 .main-container {min-height: 100%;}
 
 #content {overflow:auto;
-	padding-bottom: 210px;}  /* must be same height as the footer */
+	padding-bottom: 212px;}  /* must be same height as the footer */
 
 #footer {position: relative;
-	margin-top: -210px; /* negative value of footer height */
-	height: 210px;
+	line-height:15px;
+	margin-top: -212px; /* negative value of footer height */
+	height: 212px;
 	clear:both;} 
 
 /*Opera Fix*/
