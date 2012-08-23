@@ -1,6 +1,107 @@
 ---
 layout: page
-title: Gmail
+title: Gmail / Google Apps
 navigation:
   show: true
 ---
+
+<p>To send email using Google Mail you will have to modify your outgoing server settings in the Mail Settings accordingly. This article will walk you through how to add an SMTP server to an Google Apps account, but you can also follow these steps to add an SMTP server to a general Gmail account.
+</p>
+
+<p><span class="label label-important">Important</span> If you use Gmail and do NOT have a Google Apps for Business or Google Apps for Education account,  Gmail cannot be configured to use an external SMTP relay unless it is configured to work with an existing email server.</p>
+
+<p><em>If you use Google Apps for Business or Education</em>, then your only option is to configure an external SMTP route. This means that all of your outgoing email would be sent through SendGrid.
+</p>
+
+<p>Google Apps allows users to define their own outbound SMTP relay configuration in their Gmail accounts. This still requires that you have a separate Mail Transfer Agent (MTA) configured to use SendGrid's SMTP servers and you have accounts configured on that server through which people can send messages intended to consume credits.</p>
+
+<h2>Adding SMTP Settings</h2>
+<strong>When making your decision, please know that Google applies the following limits:</strong>
+<table class="table">
+<tbody>
+<tr>
+<th>Limit type</th>
+<th><strong>Description</strong></th>
+<th><strong>Value</strong></th>
+</tr>
+<tr>
+<td>Messages per day</td>
+<td>Daily sending limit*</td>
+<td>2000</td>
+</tr>
+<tr>
+<td>Messages auto-forwarded</td>
+<td>Messages automatically forwarded from another account; not included in the daily sending limit</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>Auto-forward <a href="http://mail.google.com/support/bin/answer.py?answer=6579">mail filters</a></td>
+<td>Account filters that automatically forward mail</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Recipients per message</td>
+<td>Addresses in the <em>To, Cc,</em> and <em>Bcc</em> fields of a single email*</td>
+<td>2000 (500 external)</td>
+</tr>
+<tr>
+<td>Recipients per message (sent via SMTP by POP/IMAP users)</td>
+<td>Addresses in the <em>To, Cc,</em> and <em>Bcc</em> fields of a single email*</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Total recipients per day</td>
+<td>Individual addresses count in every mail sent; 5 emails sent to 10 addresses count as 50 recipients*</td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>External recipients per day</td>
+<td>Email addresses outside your primary domain. Includes domain aliases and alternate domains.</td>
+<td>3000</td>
+</tr>
+<tr>
+<td>Unique recipients per day</td>
+<td>Individual addresses count once a day; 5 emails sent to 10 addresses count as 10 unique recipients*</td>
+<td>3000 (2000 external)</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Enabling External SMTP Servers</h2>
+<p>If you're using Google Apps, you have to enable your domain to allow users to send to an external SMTP server. This setting is located under Settings > Email and requires administrator rights to enable. 
+</p>
+<ul>
+	<li>If you want <strong>all</strong> outgoing mail from your domain to go through SendGrid, add <em>smtp.sendgrid.net</em> to the <strong>Outbound Gateway</strong> setting field. If you choose to do this, this is the only step, and you're done! What happens with this option defined is that all outgoing mail is sent to the gateway server instead of using Google's SMTP servers. </li>
+	<li>If you only want to send some email through SendGrid, check the box in the <strong>Outbound Relay</strong> setting. What this does is allow users to configure their own SMTP server when adding a Send As account. This does not enable an administrator feature. This allows individual users to setup individual accounts that are external to the domain.</li>
+</ul>
+
+<p><span class="label label-info">Info</span> The Outbound Relay option is an administrative control that is only available in Google Apps accounts. Gmail-only users are able to use this feature without administrative management.
+</p>
+<p><img title="Google Apps Email Settings" src="/images/gmail_1.png" alt="Where to set google apps to allow external smtp settings. Outbound gateway forces all email through an external SMTP server. Outbound relay allows a user to set up an alternate SMTP server." width="922" height="690" />
+</p>
+<p><span class="label label-info">Info</span> For the purposes of this guide, we will assume the <strong>Outbound relay</strong> setting was checked, and the Outbound gateway was left blank.
+</p>
+<h2>Adding an Alias</h2>
+<p>
+Once the Outbound relay setting has been turned on, you need to login to the account you want to send from, and go to <a href="https://mail.google.com/mail/#settings/accounts">Mail Settings &gt; Accounts</a>, and select "Add another email address you own". Here, you will put in the address you wish to be sending from. You can also specify the reply-to address here. If you do not, any replies to messages sent under this alias will go to the alias' account.
+</p>
+<p><span class="label label-info">Info</span> Creating a Send Mail As account does not deliver mail sent to that address into your Gmail inbox. You either need to configure that account to forward all or select mail to your Gmail address or use Gmail's POP3 mail checking functionality, located conveniently below the Send Mail As feature.
+</p>
+<p><img src="/images/gmail_2.png" alt="Where to add another send-from address in google accounts" width="1156" height="570"/>
+</p>
+<p>The next step will ask you whether you want to use your default SMTP settings, or the other domain. Select the other domain (second radio button), and put in the following details:
+<ul>
+	<li><strong>SMTP Server:</strong> smtp.sendgrid.net</li>
+	<li><strong>Port:</strong> Leave this option to the default of 587.</li>
+	<li><strong>Username:</strong> SendGrid account username</li>
+	<li><strong>Password:</strong> SendGrid account password</li>
+	<li><strong>Encryption:</strong> Either option is acceptable.</li>
+</ul>
+</p>
+<p><img class="clear" src="/images/gmail_3.png" width="620" height="560"/>
+</p>
+<h2>Sending as the Alias</h2>
+<p>
+As you're sending a message, you should now see a <strong>From:</strong> field as a dropdown. If you select the Alias you've set up with the SendGrid SMTP, it will be sent through our servers, with all apps applied as needed.</p>
+<p>
+<img class="clear" src="/images/gmail_4.png" width="463" height="400"/></p>

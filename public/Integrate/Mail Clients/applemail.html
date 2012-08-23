@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=active><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=active><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 <br/>
 
@@ -91,7 +91,37 @@
     
   </header>
   
-  
+  <p>These instructions show how to add an SMTP server to an existing Mail account, but you can also add these settings at the account creation stage.</p>
+
+<h2>Adding SMTP settings</h2>
+
+<p>Go to Mail -> Preferences (⌘,). On the account you want to edit, click the dropdown that says <b>Outgoing Mail Server (SMTP):</b>, and select <b>Edit SMTP Server List&#8230;</b>.</p>
+
+<p><img src="/images/apple_mail_1.png" alt="Mail, Preferences, Outgoing Mail Server (SMTP) dropdown, Edit SMTP Server List" title="Edit SMTP Server List" width="550" height="567"/></p>
+
+<p>Next click the <strong>+</strong> under the list of SMTP servers, and add a new one.</p>
+<p><img src="/images/apple_mail_2.png" alt="The plus button to click to add an SMTP server" title="Add SMTP Server" width="550" height="567"/></p>
+
+<p>Then enter the server details:
+<ul class="regular">
+	<li><b>Server Name:</b> smtp.sendgrid.net</li>
+	<li><b>Description:</b> SendGrid</li>
+	<li><b>Ports:</b> Use default ports</li>
+	<li><b>Encryption:</b>Use Secure Sockets Layer (SSL)</li>
+	<li><b>Authentication:</b> Password</li>
+	<li><b>User Name:</b> SendGrid account username</li>
+	<li><b>Password:</b> SendGrid account password</li>
+</ul>
+</p>
+
+<p><img src="/images/apple_mail_3.png" alt="Settings for Mail to use SendGrid SMTP" title="SendGrid SMTP server settings" width="484" height="489"/></p>
+
+<p>When writing a message, there is a dropdown beneath the Subject field, where you can define the outgoing server you wish to use. This way, you can send individual messages to your regular SMTP, and the messages you need to send through SendGrid can go through us. Please note that when you select this, it will be remembered until you change the selection.</p>
+<p><img src="/images/apple_mail_4.png" alt="The dropdown menu to select the SMTP server to use for this send." title="SMTP server dropdown" width="396" height="263" /></p>
+
+<p><span class="label label-info">Info</span> Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail.</p>
+
+<p><span class="label label-info">Info</span> Mail sometimes attaches images in a way that in compatible with other email readers, but this is <a href="http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/">correctible</a>.</p>
   
     <footer>
       
