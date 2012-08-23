@@ -20,8 +20,9 @@ li { line-height:22px; }
 #menu li {
 	list-style-type: none;
 	float: left;
-	line-height:18px;
 }
+
+.nav-list li { line-height:18px; }
 
 #main-menu > :first-child > a {
 	background: url(/images/top-menu-elements.png) 0 -125px;
