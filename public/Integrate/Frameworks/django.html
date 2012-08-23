@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <title>Django - SendGrid Documentation - Email Delivery. Simplified.</title>
   <meta name="author" content="SendGrid">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://docs.sendgrid.com/blog/archives">
+  <link rel="canonical" href="http://docs.sendgrid.com/Integrate/Frameworks/django.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/macmail.html">Mac Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=active><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/macmail.html">Mac Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 
 </aside>
@@ -86,12 +86,33 @@
 
   
   <header class="page-header">
-    <h1 class="entry-title">Blog Archive</h1>
+    <h1 class="entry-title">Django</h1>
     
   </header>
   
-  
+  <p>
+There is more detailed information about <a href="https://docs.djangoproject.com/en/dev/topics/email/">sending email with Django</a> on the Django project website.
+</p>
 
+<p>
+First start by adding the following to <strong>settings.py:</strong>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">EMAIL_HOST</span> <span class="o">=</span> <span class="s">&#39;smtp.sendgrid.net&#39;</span>
+</span><span class='line'><span class="n">EMAIL_HOST_USER</span> <span class="o">=</span> <span class="s">&#39;sendgrid_username&#39;</span>
+</span><span class='line'><span class="n">EMAIL_HOST_PASSWORD</span> <span class="o">=</span> <span class="s">&#39;sendgrid_password&#39;</span>
+</span><span class='line'><span class="n">EMAIL_PORT</span> <span class="o">=</span> <span class="mi">587</span>
+</span><span class='line'><span class="n">EMAIL_USE_TLS</span> <span class="o">=</span> <span class="bp">True</span>
+</span></code></pre></td></tr></table></div></figure>
+Then to send email you can do the following:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.core.mail</span> <span class="kn">import</span> <span class="n">send_mail</span>
+</span><span class='line'><span class="n">send_mail</span><span class="p">(</span><span class="s">&#39;Subject here&#39;</span><span class="p">,</span> <span class="s">&#39;Here is the message.&#39;</span><span class="p">,</span> <span class="s">&#39;from@example.com&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;to@example.com&#39;</span><span class="p">],</span> <span class="n">fail_silently</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       

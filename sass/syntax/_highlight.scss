@@ -3,7 +3,7 @@
   .line-numbers {
     text-align: right;
     font-size: 13px;
-    line-height: 1.45em;
+
     @if $solarized == light {
       background: lighten($base03, 1) $noise-bg !important;
       border-right: 1px solid darken($base02, 2) !important;
@@ -104,7 +104,6 @@ pre {
   @include border-radius(.4em);
   @extend .mono;
   border: 1px solid $pre-border;
-  line-height: 1.45em;
   font-size: 13px;
   margin-bottom: 2.1em;
   padding: .8em 1em;
@@ -143,7 +142,6 @@ p, li {
   display: block;
   padding: .8em !important;
   overflow-x: auto;
-  line-height: 1.45em;
   background: $base03 $noise-bg !important;
   color: $base1 !important;
   span { color: $base1 !important; }
