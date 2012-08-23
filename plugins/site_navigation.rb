@@ -32,6 +32,7 @@ module Jekyll
         end
       end
 
+      puts "generating nav tree for #{@page_url}"
       files_first_traverse "", tree
     end
 	  

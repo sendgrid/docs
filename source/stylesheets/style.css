@@ -1,0 +1,140 @@
+body {
+	background: url(/images/nav-bg.jpg) top repeat-x white;
+	font-size:15px;
+	line-height:22px;
+}
+
+#header {
+	height: 58px;
+	padding-top: 20px;
+}
+
+#menu {
+	margin-left: -25px;
+	overflow: hidden;
+	height: 59px;
+}
+
+#menu li {
+	list-style-type: none;
+	float: left;
+}
+
+#main-menu > :first-child > a {
+	background: url(/images/top-menu-elements.png) 0 -125px;
+	border: 0;
+}
+
+#main-menu > li > a:hover {
+	background: url(/images/nav-glow.png) 0px 4px;
+	background-repeat: no-repeat;
+	border: 0;
+	border-bottom-color: transparent;
+}
+
+#main-menu > :first-child > a:hover {
+	color:black;
+	background: url(/images/top-menu-elements.png) 0 -125px;
+	border: 0;
+	text-shadow: 0;
+}
+
+#main-menu a, #main-menu a:visited {
+	color: #333;
+	display: block;
+	float: left;
+	font-weight: bold;
+	height: 23px;
+	padding: 19px 24px 16px 24px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #3A99D2;
+	text-transform: uppercase;
+	text-align: center;
+	border:0;
+	border-radius: 0;
+}
+
+#logo a
+{
+	float: left;
+	margin-top: -8px;
+	position: relative;
+}
+
+/* Responsive menu stuff */
+#header-wrap .navbar-inner { 
+	min-height:0;
+	background: none;
+	border: 0;
+	box-shadow: 0 0 0;
+	padding:0;
+}
+
+#header-wrap .btn-navbar { 
+	float:none;
+	margin-top:13px;
+}
+
+.navbar-search .search-query { 
+	background-color: white; 
+}
+
+
+.footer-links {
+	background: #F4F8FD;
+	border-top: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+	line-height:20px;
+	padding-bottom:20px;
+}
+
+.footer-links h4 {
+	padding-bottom:10px;
+}
+
+.footer-links .container {
+	padding-top:20px;
+}
+
+.footer-links a {
+	text-decoration: underline;
+	font-size:;
+}
+
+#bottom-footer a { color: #CCC; margin-right: 20px; }
+
+#bottom-footer {
+	color:#CCC;
+	background: url(/images/footer-bg.gif);
+	border-top: 1px solid #EEE;
+	height: 30px;
+	font-size: 12px;
+	padding-top: 12px;
+	margin-bottom: -30px;
+}
+
+html, body {height: 100%;}
+
+.main-container {min-height: 100%;}
+
+#content {overflow:auto;
+	padding-bottom: 210px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -210px; /* negative value of footer height */
+	height: 210px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+.sidebar-nav { border-right: 1px solid #ddd; font-size: 15px; }
+
+.callout > a { color: rgb(240, 132, 2); }
