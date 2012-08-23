@@ -9,7 +9,7 @@
   <meta name="author" content="SendGrid">
 
   
-  <meta name="description" content="Docs Home Overview Integrate Integrate/Frameworks CakePHP CodeIgniter Django Node.js Ruby on Rails Symfony Integrate/Mail Clients Gmail Mac Mail &hellip;">
+  <meta name="description" content="Docs Home Overview Integrate Integrate/Frameworks CakePHP CodeIgniter Django Node.js Ruby on Rails Symfony Integrate/Mail Clients Apple Mail Gmail &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/macmail.html">Mac Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=active><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 
 </aside>
@@ -90,7 +90,18 @@
     
   </header>
   
-  
+  <p>Adding SendGrid as a SMTP relay for ssmtp is  easy. Edit <strong>/etc/ssmtp/ssmtp.conf</strong> and add the following:
+	
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mailhub=smtp.sendgrid.net:587
+</span><span class='line'>AuthUser=sendgridusername
+</span><span class='line'>AuthPass=sendgridpassword
+</span><span class='line'>UseSTARTTLS=YES</span></code></pre></td></tr></table></div></figure>
+
+Then restart ssmtp. All set!
   
     <footer>
       
