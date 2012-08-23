@@ -90,7 +90,286 @@
     
   </header>
   
-  
+  <p>
+Symfony uses SwiftMailer to send email, read more about <a href="http://www.symfony-project.org/gentle-introduction/1_4/en/11-Emails">sending emails from Symfony</a>.
+</p>
+
+To get started you need to modify factories.yml and add the following:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mailer:
+</span><span class='line'>class: sfMailer
+</span><span class='line'>param:
+</span><span class='line'>logging: %SF_LOGGING_ENABLED%
+</span><span class='line'>charset: %SF_CHARSET%
+</span><span class='line'>delivery_strategy: realtime
+</span><span class='line'>transport:
+</span><span class='line'>class: Swift_SmtpTransport
+</span><span class='line'>param:
+</span><span class='line'>host: smtp.sendgrid.net
+</span><span class='line'>port: 587
+</span><span class='line'>encryption: ~
+</span><span class='line'>username: sendgridusername
+</span><span class='line'>password: sendgridpassword</span></code></pre></td></tr></table></div></figure>
+
+After that you should be able to send emails. The following shows an example:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?</span> <span class="nx">php</span><span class="o">&gt;</span>
+</span><span class='line'><span class="nv">$message</span> <span class="o">=</span> <span class="nx">Swift_Message</span><span class="o">::</span><span class="na">newInstance</span><span class="p">()</span>
+</span><span class='line'>  <span class="o">-&gt;</span><span class="na">setFrom</span><span class="p">(</span><span class="s1">&#39;from@example.com&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">-&gt;</span><span class="na">setTo</span><span class="p">(</span><span class="s1">&#39;to@example.com&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">-&gt;</span><span class="na">setSubject</span><span class="p">(</span><span class="s1">&#39;Subject&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">-&gt;</span><span class="na">setBody</span><span class="p">(</span><span class="s1">&#39;Body&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getMailer</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="nv">$message</span><span class="p">);</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+<h3>Another Option</h3>
+If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as <strong>lib/myEmail.class.php</strong>.
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">myEmail</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="sd">/**</span>
+</span><span class='line'><span class="sd">     * Library to facilitate email messages being sent out, sendMail deprecated in symfony 1.2</span>
+</span><span class='line'><span class="sd">     *</span>
+</span><span class='line'><span class="sd">     * @param string $partial - Array with html and text partials ie array(&#39;text&#39;=&gt;&#39;textPartial&#39;, &#39;html&#39;=&gt;&#39;htmlPartial&#39;)</span>
+</span><span class='line'><span class="sd">     * @param array $parameters - Array we will pass into the partials</span>
+</span><span class='line'><span class="sd">     * @param string $mailFrom - Email source</span>
+</span><span class='line'><span class="sd">     * @param string $mailTo - Email destination</span>
+</span><span class='line'><span class="sd">     * @param string $subject - The subject of the email message</span>
+</span><span class='line'><span class="sd">     * @param array $sgHeaders - What we will be placing in the SMTPAPI header. Must be null or a non-empty array</span>
+</span><span class='line'><span class="sd">     * @param array $attachments - Email contains the attachments</span>
+</span><span class='line'><span class="sd">     */</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="nf">sendEmail</span><span class="p">(</span><span class="nv">$partials</span><span class="p">,</span> <span class="nv">$parameters</span><span class="p">,</span> <span class="nv">$mailFrom</span><span class="p">,</span> <span class="nv">$mailTo</span><span class="p">,</span> <span class="nv">$subject</span><span class="p">,</span> <span class="nv">$sgHeaders</span> <span class="o">=</span> <span class="k">null</span><span class="p">,</span> <span class="nv">$attachments</span> <span class="o">=</span> <span class="k">null</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// verify we have username/password to send out emails - IMPORTANT</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">sfconfig</span><span class="o">::</span><span class="na">has</span><span class="p">(</span><span class="s1">&#39;app_sendgrid_username&#39;</span><span class="p">)</span> <span class="k">or</span> <span class="o">!</span><span class="nx">sfconfig</span><span class="o">::</span><span class="na">has</span><span class="p">(</span><span class="s1">&#39;app_sendgrid_password&#39;</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nx">sfException</span><span class="p">(</span><span class="s1">&#39;SMTP username/password is required to send email out&#39;</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="nv">$text</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span>
+</span><span class='line'>        <span class="nv">$html</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$partials</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>            <span class="c1">// load libraries</span>
+</span><span class='line'>            <span class="nx">sfContext</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getConfiguration</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">loadHelpers</span><span class="p">(</span><span class="s1">&#39;Partial&#39;</span><span class="p">);</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$partials</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$text</span> <span class="o">=</span> <span class="nx">get_partial</span><span class="p">(</span><span class="nv">$partials</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">],</span> <span class="nv">$parameters</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$partials</span><span class="p">[</span><span class="s1">&#39;html&#39;</span><span class="p">]))</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$html</span> <span class="o">=</span> <span class="nx">get_partial</span><span class="p">(</span><span class="nv">$partials</span><span class="p">[</span><span class="s1">&#39;html&#39;</span><span class="p">],</span> <span class="nv">$parameters</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="nv">$text</span> <span class="o">===</span> <span class="k">null</span> <span class="o">&amp;&amp;</span> <span class="nv">$html</span> <span class="o">===</span> <span class="k">null</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nx">sfException</span><span class="p">(</span><span class="s1">&#39;A text and/or HTML partial must be given&#39;</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>            <span class="cm">/*</span>
+</span><span class='line'><span class="cm">             * Load connection for mailer</span>
+</span><span class='line'><span class="cm">             */</span>
+</span><span class='line'>            <span class="nv">$connection</span> <span class="o">=</span> <span class="nx">Swift_SmtpTransport</span><span class="o">::</span><span class="na">newInstance</span><span class="p">(</span><span class="s1">&#39;smtp.sendgrid.net&#39;</span><span class="p">,</span> <span class="mi">465</span><span class="p">,</span> <span class="s1">&#39;ssl&#39;</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">setUsername</span><span class="p">(</span><span class="nx">sfconfig</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;app_sendgrid_username&#39;</span><span class="p">))</span><span class="o">-&gt;</span><span class="na">setPassword</span><span class="p">(</span><span class="nx">sfconfig</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;app_sendgrid_password&#39;</span><span class="p">));</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// setup connection/content</span>
+</span><span class='line'>            <span class="nv">$mailer</span>  <span class="o">=</span> <span class="nx">Swift_Mailer</span><span class="o">::</span><span class="na">newInstance</span><span class="p">(</span><span class="nv">$connection</span><span class="p">);</span>
+</span><span class='line'>            <span class="nv">$message</span> <span class="o">=</span> <span class="nx">Swift_Message</span><span class="o">::</span><span class="na">newInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">setSubject</span><span class="p">(</span><span class="nv">$subject</span><span class="p">)</span><span class="o">-&gt;</span><span class="na">setTo</span><span class="p">(</span><span class="nv">$mailTo</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nv">$text</span> <span class="o">&amp;&amp;</span> <span class="nv">$html</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">setBody</span><span class="p">(</span><span class="nv">$html</span><span class="p">,</span> <span class="s1">&#39;text/html&#39;</span><span class="p">);</span>
+</span><span class='line'>                <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">addPart</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$text</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">setBody</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">setBody</span><span class="p">(</span><span class="nv">$html</span><span class="p">,</span> <span class="s1">&#39;text/html&#39;</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// if contains SMTPAPI header add it</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="k">null</span> <span class="o">!==</span> <span class="nv">$sgHeaders</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">getHeaders</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">addTextHeader</span><span class="p">(</span><span class="s1">&#39;X-SMTPAPI&#39;</span><span class="p">,</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$sgHeaders</span><span class="p">));</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// update the from address line to include an actual name</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$mailFrom</span><span class="p">)</span> <span class="k">and</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$mailFrom</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="nv">$mailFrom</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+</span><span class='line'>                    <span class="nv">$mailFrom</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nv">$mailFrom</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</span><span class='line'>                <span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// add attachments to email</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="nv">$attachments</span> <span class="o">!==</span> <span class="k">null</span> <span class="k">and</span> <span class="nb">is_array</span><span class="p">(</span><span class="nv">$attachments</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>                <span class="k">foreach</span> <span class="p">(</span><span class="nv">$attachments</span> <span class="k">as</span> <span class="nv">$attachment</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                    <span class="nv">$attach</span> <span class="o">=</span> <span class="nx">Swift_Attachment</span><span class="o">::</span><span class="na">fromPath</span><span class="p">(</span><span class="nv">$attachment</span><span class="p">[</span><span class="s1">&#39;file&#39;</span><span class="p">],</span> <span class="nv">$attachment</span><span class="p">[</span><span class="s1">&#39;mime&#39;</span><span class="p">])</span><span class="o">-&gt;</span><span class="na">setFilename</span><span class="p">(</span><span class="nv">$attachment</span><span class="p">[</span><span class="s1">&#39;filename&#39;</span><span class="p">]);</span>
+</span><span class='line'>                    <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">attach</span><span class="p">(</span><span class="nv">$attach</span><span class="p">);</span>
+</span><span class='line'>                <span class="p">}</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="c1">// Send</span>
+</span><span class='line'>            <span class="nv">$message</span><span class="o">-&gt;</span><span class="na">setFrom</span><span class="p">(</span><span class="nv">$mailFrom</span><span class="p">);</span>
+</span><span class='line'>            <span class="nv">$mailer</span><span class="o">-&gt;</span><span class="na">send</span><span class="p">(</span><span class="nv">$message</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="k">catch</span> <span class="p">(</span><span class="nx">Exception</span> <span class="nv">$e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nx">sfException</span><span class="p">(</span><span class="s1">&#39;Error sending email out - &#39;</span> <span class="o">.</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">());</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+Then configure your credentials on <strong>apps/frontend/app.yml</strong>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">prod:</span>
+</span><span class='line'><span class="x">sendgrid:</span>
+</span><span class='line'><span class="x">username: sendgridusername</span>
+</span><span class='line'><span class="x">password: sendgridpassword</span>
+</span></code></pre></td></tr></table></div></figure>
+
+Now can put your partials in a module such as <strong>apps/frontend/modules/mail</strong>. For example, to send a registration email in both text and HTML, we would have the following structure
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">apps/</span>
+</span><span class='line'><span class="x">frontend/</span>
+</span><span class='line'><span class="x">modules/</span>
+</span><span class='line'><span class="x">mail/</span>
+</span><span class='line'><span class="x">_registrationHTML.php</span>
+</span><span class='line'><span class="x">_registrationTEXT.php</span>
+</span></code></pre></td></tr></table></div></figure>
+
+Add this to <strong>apps/frontend/modules/mail/_registrationTEXT.php</strong>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">Dear &lt;!--?php echo $name ?--&gt;,</span>
+</span><span class='line'><span class="x">Thank you for registering. Please go to http://domain.com to finish your registration.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+Add this to <strong>apps/frontend/modules/mail/_registrationHTML.php</strong>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">Dear &lt;!--?php echo $name ?--&gt;,</span>
+</span><span class='line'><span class="x">Thank you for registering. Please go to &lt;a href=&quot;http://domain.com&quot;&gt;here&lt;/a&gt; to finish your registration.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+And send the message as follow:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="nx">myEmail</span><span class="o">::</span><span class="na">sendEmail</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;mail/registrationTEXT&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;mail/registrationHTML&#39;</span><span class="p">),</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;Recipient Name&#39;</span><span class="p">),</span> <span class="s1">&#39;youremail@domain.com&#39;</span><span class="p">,</span> <span class="s1">&#39;recipient@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;Registration Information&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       

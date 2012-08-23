@@ -90,7 +90,57 @@
     
   </header>
   
-  
+  To send email over SMTP using Node.js the <a href="https://github.com/Marak/node_mailer">node_mailer</a> library is a good option. To install node_mailer, use <a href="http://npmjs.org/">npm</a>. 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ npm install mailer</span></code></pre></td></tr></table></div></figure>
+
+Then create a file called <strong>mail.js</strong>:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">email</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;mailer&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">sgusername</span> <span class="o">=</span> <span class="s1">&#39;sendgrid_username&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">sgpassword</span> <span class="o">=</span> <span class="s1">&#39;sendgrid_password&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">host</span> <span class="o">:</span> <span class="s2">&quot;smtp.sendgrid.net&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">port</span> <span class="o">:</span> <span class="s2">&quot;587&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">domain</span> <span class="o">:</span> <span class="s2">&quot;yourdomain.com&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">to</span> <span class="o">:</span> <span class="s2">&quot;recipient@domain.com&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">from</span> <span class="o">:</span> <span class="s2">&quot;yourname@yourdomain.com&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">subject</span> <span class="o">:</span> <span class="s2">&quot;This is a subject&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">body</span><span class="o">:</span> <span class="s2">&quot;Hello, this is a test body&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">authentication</span> <span class="o">:</span> <span class="s2">&quot;login&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">username</span> <span class="o">:</span> <span class="nx">sgusername</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">password</span> <span class="o">:</span> <span class="nx">sgpassword</span>
+</span><span class='line'>  <span class="p">},</span>
+</span><span class='line'>  <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">result</span><span class="p">){</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+</span><span class='line'>      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+To execute mail.js run the following
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">$</span> <span class="nx">node</span> <span class="nx">mail</span><span class="p">.</span><span class="nx">js</span>
+</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       
