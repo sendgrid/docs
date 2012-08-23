@@ -9,7 +9,7 @@
   <meta name="author" content="SendGrid">
 
   
-  <meta name="description" content="Docs Home Overview Integrate Integrate/Frameworks CakePHP CodeIgniter Django Node.js Ruby on Rails Symfony Integrate/Mail Clients Gmail Mac Mail &hellip;">
+  <meta name="description" content="Docs Home Overview Integrate Integrate/Frameworks CakePHP CodeIgniter Django Node.js Ruby on Rails Symfony Integrate/Mail Clients Apple Mail Gmail &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,7 +75,7 @@
       
 <aside class="sidebar-nav span3">
     <ul class="nav nav-list">
-  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/macmail.html">Mac Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=active><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=active><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">SSMTP</a></li>	 	  </ul>	  </ul> </ul>
 </ul>
 
 </aside>
@@ -90,7 +90,113 @@
     
   </header>
   
-  
+  <p>
+<span class="label label-warning">Warning</span>
+Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release.
+</p>
+
+<p>
+The following configuration file, which can be found at <strong>/etc/exim4/update-exim4.conf.conf</strong>, was pulled from Ubuntu Server 10.4 and is for example purposes only:<br><br>
+</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">dc_eximconfig_configtype</span><span class="o">=</span><span class="s1">&#39;smarthost&#39;</span>
+</span><span class='line'><span class="nv">dc_other_hostnames</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span><span class='line'><span class="nv">dc_local_interfaces</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span>
+</span><span class='line'><span class="nv">dc_readhost</span><span class="o">=</span><span class="s1">&#39;your.server.name&#39;</span>
+</span><span class='line'><span class="nv">dc_relay_domains</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span><span class='line'><span class="nv">dc_minimaldns</span><span class="o">=</span><span class="s1">&#39;false&#39;</span>
+</span><span class='line'><span class="nv">dc_relay_nets</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+</span><span class='line'><span class="nv">dc_smarthost</span><span class="o">=</span><span class="s1">&#39;smtp.sendgrid.net::587&#39;</span>
+</span><span class='line'><span class="nv">CFILEMODE</span><span class="o">=</span><span class="s1">&#39;644&#39;</span>
+</span><span class='line'><span class="nv">dc_use_split_config</span><span class="o">=</span><span class="s1">&#39;false&#39;</span>
+</span><span class='line'><span class="nv">dc_hide_mailname</span><span class="o">=</span><span class="s1">&#39;true&#39;</span>
+</span><span class='line'><span class="nv">dc_mailname_in_oh</span><span class="o">=</span><span class="s1">&#39;true&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+Enable TLS support in <strong>/etc/exim4/exim4.conf.localmacros</strong>.
+<br/>
+<span class="label label-info">Info</span> If this file does not exist, you will need to create it.:
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">MAIN_TLS_ENABLE</span> <span class="o">=</span> 1
+</span></code></pre></td></tr></table></div></figure>
+Enter credentials that will allow Exim to access SendGrid in <strong>/etc/exim4/passwd.client</strong>:
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>*:sendgridusername:sendgridpassword
+</span></code></pre></td></tr></table></div></figure>
+
+Once you have completed and saved all changes to Exim&#8217;s configuration files, you will need to restart it to activate those changes: 
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/exim4 restart
+</span></code></pre></td></tr></table></div></figure>
+
+<h2>cPanel</h2>
+If you are using cPanel with Exim and want to relay your email through SendGrid, go to <strong>Main > Service Configuration > Exim Configuration Editor</strong>, click on the Advanced Editor button, and enter the following:
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>begin authenticators
+</span><span class='line'>
+</span><span class='line'>sendgrid_login:
+</span><span class='line'>  <span class="nv">driver</span> <span class="o">=</span> plaintext
+</span><span class='line'>  <span class="nv">public_name</span> <span class="o">=</span> LOGIN
+</span><span class='line'>  <span class="nv">client_send</span> <span class="o">=</span> : username@example.com : YourSendgridPassword
+</span></code></pre></td></tr></table></div></figure>
+<span class="label label-info">Info</span> Only include &#8220;begin authenticators&#8221; if it&#8217;s not already in the configuration.
+<br/>
+Add a route in the <strong>Router Configuration</strong> Box:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>send_via_sendgrid:
+</span><span class='line'>  <span class="nv">driver</span> <span class="o">=</span> manualroute
+</span><span class='line'>  <span class="nv">domains</span> <span class="o">=</span> ! +local_domains
+</span><span class='line'>  <span class="nv">transport</span> <span class="o">=</span> sendgrid_smtp
+</span><span class='line'>  <span class="nv">route_list</span> <span class="o">=</span> <span class="s2">&quot;* smtp.sendgrid.net::587 byname&quot;</span>
+</span><span class='line'>  <span class="nv">host_find_failed</span> <span class="o">=</span> defer
+</span><span class='line'>  no_more
+</span></code></pre></td></tr></table></div></figure>
+
+Add a transport to the <strong>Transport Configuration</strong> Box:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>sendgrid_smtp:
+</span><span class='line'>  <span class="nv">driver</span> <span class="o">=</span> smtp
+</span><span class='line'>  <span class="nv">hosts</span> <span class="o">=</span> smtp.sendgrid.net
+</span><span class='line'>  <span class="nv">hosts_require_auth</span> <span class="o">=</span> smtp.sendgrid.net
+</span><span class='line'>  <span class="nv">hosts_require_tls</span> <span class="o">=</span> smtp.sendgrid.net
+</span></code></pre></td></tr></table></div></figure>
+
+Once you have completed and saved all changes to Exim&#8217;s configuration files, you will need to restart it to activate those changes: 
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/exim4 restart
+</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       
