@@ -56,20 +56,22 @@ module Jekyll
       
       node_list.each do |base, subtree|
         next if subtree.empty?
+          show_link = true
           href = base
           name = base[1..-1]
           if name.index('.') != nil
             name = @dirs[name]["title"] || name
           else
-            href = href + "/index.html"
+            show_link = false
           end
           
-          li_class = ""
-          if href == @page_url 
-            li_class = "active"
+          if show_link
+            link = "<a href=\"#{href}\">#{name}</a>"
+          else
+            link = "#{name}"
           end
           
-          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{href}\">#{name}</a></li>"
+          output += "#{prefix}	 <li>#{link}</li>"
           output += files_first_traverse(prefix + '	 ', subtree)
         end
       
