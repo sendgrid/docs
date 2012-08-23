@@ -2,14 +2,78 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://docs.sendgrid.com/blog/archives/</loc>
-        <lastmod>2012-08-23T11:19:34-06:00</lastmod>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/</loc>
-        <lastmod>2012-08-23T11:19:34-06:00</lastmod>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/cakephp.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/codeigniter.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/django.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/nodejs.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/rubyonrails.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Frameworks/symfony.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Clients/macmail.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Clients/thunderbird.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/exim.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/iis75.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/postfix.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/qmail.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/sendmail.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Integrate/Mail Servers/ssmtp.html</loc>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/overview.html</loc>
-        <lastmod>2012-08-23T11:19:34-06:00</lastmod>
+        <lastmod>2012-08-23T12:25:23-06:00</lastmod>
     </url>
 </urlset>
