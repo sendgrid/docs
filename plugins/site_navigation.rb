@@ -6,18 +6,24 @@ module Jekyll
 	
 	class NavTree < Jekyll::Generator
     def generate(site)
-      dirs = Array.new
+      dirs = {}
       tree = {}
 
       site.pages.each do |page|
-        # add more metadata, e.g. page title
         # exclude all pages that are hidden in front-matter
-        dirs.push({:path => page.dir + page.url, :title => page.title, :data => page.data})
+        if page.data["navigation"]["show"] != false
+          relative = page.dir[1..-1] ||""
+          path = relative + page.url
+          puts path
+          path = path.index('/')==0 ? path[1..-1] : path
+          puts path
+          dirs[path] = page.data
+        end
       end
-
-      dirs.each do |path|
+      dirs.each do |path, data|
         current	 = tree
         path.split("/").inject("") do |sub_path,dir|
+          puts sub_path
           sub_path = File.join(sub_path, dir)
           current[sub_path] ||= {}
           current	 = current[sub_path]
@@ -27,15 +33,6 @@ module Jekyll
 
       site.config["navigation"] = files_first_traverse "", tree
     end
-	
-    def print_tree(prefix, node)
-      puts "#{prefix}<ul class=\"nav nav-list\">"
-      node.each_pair do |path, subtree| 
-        puts "#{prefix}	 <li>[#{path[1..-1]}] #{File.basename(path)}</li>"		
-        print_tree(prefix + "	 ", subtree) unless subtree.empty?
-      end
-      puts "#{prefix}</ul>"
-    end
 	  
     def files_first_traverse(prefix, node = {})
       output = ""
@@ -43,12 +40,14 @@ module Jekyll
       node_list = node.sort
       
       node_list.each do |base, subtree|
-        output += "#{prefix}	 <li>#{base}</li>" if subtree.empty?
+          name = base[1..-1]
+          output += "#{prefix}	 <li><a href=>#{name}</a></li>" if subtree.empty?
       end
       
       node_list.each do |base, subtree|
         next if subtree.empty?
-          output += "#{prefix}	 <li>#{base}</li>"
+          name = base[1..-1]
+          output += "#{prefix}	 <li><a href=>#{name}</a></li>"
           output += files_first_traverse(prefix + '	 ', subtree)
         end
       
