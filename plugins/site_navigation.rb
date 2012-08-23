@@ -4,8 +4,11 @@ module Jekyll
 		attr_reader :dir
 	end
 	
-	class NavTree < Jekyll::Generator
-    def generate(site)
+	class NavTree < Liquid::Tag
+    def render(context)
+      site = context.registers[:site]
+      @page_url = context.environments.first["page"]["url"]
+      
       @dirs = {}
       tree = {}
 
@@ -15,7 +18,6 @@ module Jekyll
           relative = page.dir[1..-1] ||""
           path = relative + page.url
           path = path.index('/')==0 ? path[1..-1] : path
-          puts path
           @dirs[path] = page.data
         end
       end
@@ -23,7 +25,6 @@ module Jekyll
         current	 = tree
         path.split("/").inject("") do |sub_path,dir|
           sub_path = File.join(sub_path, dir)
-          puts sub_path
           
           current[sub_path] ||= {}
           current	 = current[sub_path]
@@ -31,7 +32,7 @@ module Jekyll
         end
       end
 
-      site.config["navigation"] = files_first_traverse "", tree
+      files_first_traverse "", tree
     end
 	  
     def files_first_traverse(prefix, node = {})
@@ -44,7 +45,13 @@ module Jekyll
           if name.index('.') != nil
             name = @dirs[name]["title"] || name
           end
-          output += "#{prefix}	 <li><a href=\"#{base}\">#{name}</a></li>" if subtree.empty?
+          
+          li_class = ""
+          if base == @page_url 
+            li_class = "active"
+          end
+          
+          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{base}\">#{name}</a></li>" if subtree.empty?
       end
       
       node_list.each do |base, subtree|
@@ -56,7 +63,13 @@ module Jekyll
           else
             href = href + "/index.html"
           end
-          output += "#{prefix}	 <li><a href=\"#{href}\">#{name}</a></li>"
+          
+          li_class = ""
+          if href == @page_url 
+            li_class = "active"
+          end
+          
+          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{href}\">#{name}</a></li>"
           output += files_first_traverse(prefix + '	 ', subtree)
         end
       
@@ -65,3 +78,5 @@ module Jekyll
       end
     end
 end
+
+Liquid::Template.register_tag("navigation", Jekyll::NavTree)
