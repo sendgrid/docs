@@ -10,7 +10,9 @@ module Jekyll
       tree = {}
 
       site.pages.each do |page|
-        dirs.push(page.dir + page.url)
+        # add more metadata, e.g. page title
+        # exclude all pages that are hidden in front-matter
+        dirs.push({:path => page.dir + page.url, :title => page.title, :data => page.data})
       end
 
       dirs.each do |path|
@@ -34,7 +36,6 @@ module Jekyll
       end
       puts "#{prefix}</ul>"
     end
-	
 	  
     def files_first_traverse(prefix, node = {})
       output = ""
@@ -54,6 +55,5 @@ module Jekyll
         output += "#{prefix} </ul>"
         output
       end
-
     end
 end
