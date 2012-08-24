@@ -1,0 +1,243 @@
+---
+layout: page
+title: Inbound Parse
+navigation:
+  show: true
+---
+
+<p>SendGrid can parse the attachments and contents from incoming emails. Application examples include receiving uploads and posting blog articles via email.</p>
+
+<p>The parse API will POST the parsed email to a URL configured you specify. SendGrid automatically queues and retries any POSTs that respond with a 5XX status error. Additionally, we retry errors when we encounter 4XX status responses to prevent data loss for customers that have misconfigured their website or POST URL. </p>
+
+<p><span class="label label-info">Info</span><blockquote> If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p></blockquote>
+
+<p>In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response and then it is removed from our send queue. If we do <strong>not</strong> get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.</p>
+
+<h2>Setup</h2>
+<p>The following steps are required to begin parsing email:</p>
+
+<ul class="regular">
+	<li>Point the MX Record of the Domain/Hostname or Subdomain to <strong>mx.sendgrid.net</strong></li>
+	<li>Associate the Domain/Hostname and the URL in the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a></li>
+</ul>
+
+<h2>Parameters</h2>
+
+<p>The following parameters will be included in the POST to your callback URL.</p>
+
+<table class="table table-striped table-bordered">
+<tbody>
+<tr>
+<th>headers</th>
+<td>The raw headers of the email.</td>
+</tr>
+<tr>
+<th>text</th>
+<td>Text body of email. If not set, email did not have a text body.</td>
+</tr>
+<tr>
+<th>html</th>
+<td>HTML body of email. If not set, email did not have an HTML body.</td>
+</tr>
+<tr>
+<th>from</th>
+<td>Email sender, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>to</th>
+<td>Email recipient field, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>cc</th>
+<td>Email cc field, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>subject</th>
+<td>Email Subject.</td>
+</tr>
+<tr>
+<th>dkim</th>
+<td>A JSON string containing the verification results of any dkim and domain keys signatures in the message.</td>
+</tr>
+<tr>
+<th>SPF</th>
+<td>The results of the Sender Policy Framework verification of the message sender and receiving IP address.</td>
+</tr>
+<tr>
+<th>envelope</th>
+<td>A JSON string containing the SMTP envelope. This will have two variables: <em>to</em>, which is an array of recipients, and <em>from</em>, which is the return path for the message.</td>
+</tr>
+<tr>
+<th>charsets</th>
+<td>A JSON string containing the character sets of the fields extracted from the message.</td>
+</tr>
+<tr>
+<th>spam_score</th>
+<td>Spam Assassin's rating for whether or not this is spam.</td>
+</tr>
+<tr>
+<th>spam_report</th>
+<td>Spam Assassin's spam report.</td>
+</tr>
+<tr>
+<th>attachments</th>
+<td>Number of attachments included in email.</td>
+</tr>
+<tr>
+<th>attachmentX</th>
+<td>These are file upload names, where N is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. TNEF files (winmail.dat) will be extracted and have any attachments posted.</td>
+</tr>
+</tbody>
+</table>
+
+<p><span class="label label-info">Info</span><blockquote>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
+
+<a name="characterSetsAndHeaderDecoding"></a>
+<h2>Character Sets and Header Decoding</h2>
+<p>If you will be receiving email which is not in ASCII only format, you will want to read this section.</p>
+
+<p>Messages, and their headers, can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.</p>
+
+<p>The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:</p>
+
+``` ruby
+[charsets] => {"to":"UTF-8","cc":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"iso-8859-1"}
+```
+
+<p>This shows that all headers should be treated as UTF-8, and the text body is latin1.</p>
+
+<a name="examples"></a>
+<h3>Examples</h3>
+<p>In this example, we want to parse all emails at <em>address</em>@sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.</p>
+
+<p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
+
+```
+Hostname: email.sendgrid.biz 
+```
+
+```
+URL: http://sendgrid.com/email.php
+```
+
+To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at http://sendgrid.com/email.php:
+
+``` php
+<?php
+$fh = fopen('/tmp/parse.log', 'a+');
+if ( $fh )
+{
+	fwrite($fh, print_r($_POST, true) . print_r($_FILES, true));
+	foreach ($_FILES as $key => $file)
+	{
+		move_uploaded_file($file['tmp_name'], "/tmp/".$file['name']);
+	}
+	fclose($fh);
+}
+?>
+```
+
+<span class="label label-warning">Warning</span> <blockquote>If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above..
+``` php
+<?php
+$fh = fopen('/tmp/parse.log', 'a+');
+?>
+```
+should be changed to...
+``` php
+<?php
+$fh = fopen('~/parse.log', 'a+');
+?>
+```
+</blockquote>
+
+After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):
+
+``` javascript
+Array
+(
+    [headers] => Received: by 127.0.0.1 with SMTP id DOtNAzsAwq Fri, 03 Feb 2012 12:51:06 -0600 (CST)
+Received: from mail-gy0-f181.google.com (mail-gy0-f181.google.com [209.85.160.181]) by mx2.sendgrid.net (Postfix) with ESMTPS id E07CC17878AC for <test@sendgrid.biz>; Fri,  3 Feb 2012 12:51:05 -0600 (CST)
+Received: by ghrr17 with SMTP id r17so1997707ghr.12 for <test@sendgrid.biz>; Fri, 03 Feb 2012 10:51:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma; h=from:to:subject:date:message-id:mime-version:content-type:x-mailer :thread-index:content-language; bh=Diq7TmSRGYuzQQrI1FhjQn2jOEjmaWl2Q7JXX6o1530=; b=fh2jhziuUJ0ofS35KxwelswTs+/T+aqbR6r36IwAiUxiWaF4I6/vVcSLdBm9YRS/d1 KFgeRGOkyAZMc/Kjnpby8+vuGZVxSOgyySn1Chp2pzseLiUSfRWJaMSFRnDEeZkBdNhg V2lYrMzPZEACrvN80zMTz8YijcRWWsfpt7w2c=
+Received: by 10.236.161.197 with SMTP id w45mr12978550yhk.96.1328295065532; Fri, 03 Feb 2012 10:51:05 -0800 (PST)
+Received: from BRADSTOUFFERPC (206-124-12-82.static.forethought.net. [206.124.12.82]) by mx.google.com with ESMTPS id k16sm15044155ani.5.2012.02.03.10.51.03 (version=TLSv1/SSLv3 cipher=OTHER); Fri, 03 Feb 2012 10:51:04 -0800 (PST)
+From: \"Sendgrid Test 2\" <send.grid.test@gmail.com>
+To: <test@sendgrid.biz>
+Subject: Attachments...
+Date: Fri, 3 Feb 2012 11:50:56 -0700
+Message-ID: <4f2c2c98.1007650a.68f6.ffff9ed6@mx.google.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary=\"----=_NextPart_000_00EB_01CCE26A.183F8AD0\"
+X-Mailer: Microsoft Office Outlook 12.0
+Thread-Index: AczipML4AAHYEmdvTw6Jlw1ScYatfg==
+Content-Language: en-us
+
+    [attachments] => 1
+    [dkim] => {@gmail.com : fail (body has been altered)}
+    [subject] => Attachments...
+    [to] => <test@sendgrid.biz>
+    [attachment-info] => {\"attachment1\":{\"filename\":\"Upload.csv\",\"name\":\"Upload.csv\",\"type\":\"application/vnd.ms-excel\"}}
+    [html] => <html xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" xmlns:m=\"http://schemas.microsoft.com/office/2004/12/omml\" xmlns=\"http://www.w3.org/TR/REC-html40\"><head><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=us-ascii\"><meta name=Generator content=\"Microsoft Word 12 (filtered medium)\"><style><!--
+/* Font Definitions */
+@font-face
+ {font-family:\"Cambria Math\";
+ panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+ {font-family:Calibri;
+ panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+ {margin:0in;
+ margin-bottom:.0001pt;
+ font-size:11.0pt;
+ font-family:\"Calibri\",\"sans-serif\";}
+a:link, span.MsoHyperlink
+ {mso-style-priority:99;
+ color:blue;
+ text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+ {mso-style-priority:99;
+ color:purple;
+ text-decoration:underline;}
+span.EmailStyle17
+ {mso-style-type:personal-compose;
+ font-family:\"Calibri\",\"sans-serif\";
+ color:windowtext;}
+.MsoChpDefault
+ {mso-style-type:export-only;}
+@page WordSection1
+ {size:8.5in 11.0in;
+ margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+ {page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=\"edit\" spidmax=\"1026\" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=\"edit\">
+<o:idmap v:ext=\"edit\" data=\"1\" />
+</o:shapelayout></xml><![endif]--></head><body lang=EN-US link=blue vlink=purple><div class=WordSection1><p class=MsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
+    [from] => \"Sendgrid Test 2\" <send.grid.test@gmail.com>
+    [text] =>  
+
+
+    [envelope] => {\"to\":[\"test@sendgrid.biz\"],\"from\":\"send.grid.test@gmail.com\"}
+    [charsets] => {\"to\":\"UTF-8\",\"html\":\"us-ascii\",\"subject\":\"UTF-8\",\"from\":\"UTF-8\",\"text\":\"us-ascii\"}
+    [SPF] => pass
+)
+```
+
+If you have an attachment, there will be a 2nd array, as follows:
+```
+Array
+(
+    [attachment1] => Array
+        (
+            [name] => Upload.csv
+            [type] => text/csv
+            [tmp_name] => /tmp/phpo34iHI
+            [error] => 0
+            [size] => 76
+        )
+)
+```

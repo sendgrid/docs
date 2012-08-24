@@ -63,6 +63,11 @@ module Jekyll
           if name.index('.') != nil
             name = @dirs[name]["title"] || name
           else
+            separator = name.rindex('/')
+            if separator != nil
+              name = name[separator+1..-1]
+            end
+            
             show_link = false
           end
           
