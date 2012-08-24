@@ -1,6 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://docs.sendgrid.com/API Reference/libraries.html</loc>
+        <lastmod>2012-08-23T19:11:31-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/apps.html</loc>
+        <lastmod>2012-08-23T21:30:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/overview.html</loc>
+        <lastmod>2012-08-23T21:21:22-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/section_tags.html</loc>
+        <lastmod>2012-08-23T21:18:03-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/substitution_tags.html</loc>
+        <lastmod>2012-08-23T21:17:44-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/unique_arguments.html</loc>
+        <lastmod>2012-08-23T21:17:20-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://docs.sendgrid.com/blog/archives/</loc>
         <lastmod>2012-08-23T14:09:01-06:00</lastmod>
     </url>
