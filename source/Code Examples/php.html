@@ -1,0 +1,217 @@
+---
+layout: page
+title: PHP
+navigation:
+  show: true
+---
+
+<p>This library allows you to quickly and easily send emails through SendGrid using PHP.</p>
+<p><span class="label label-warning">Warning</span> SendGrid requires the use of PHP 5.3 or higher.</p>
+
+<h2>How To Install The Libraries</h2>
+```
+git clone git://github.com/sendgrid/sendgrid-php.git
+```
+
+<h2>SendGrid APIs</h2>
+<p>SendGrid provides two methods of sending email: the Web API, and SMTP API. SendGrid recommends using the SMTP API for sending emails. For an explanation of the benefits of each, refer to http://docs.sendgrid.com/documentation/get-started/integrate/examples/smtp-vs-rest/.</p>
+
+<p>This library implements a common interface to make it very easy to use either API.</p>
+<h2>Mail Pre-Usage</h2>
+<p>Before we begin using the library, its important to understand a few things about the library architecture. First, the SendGrid Mail object is the means of setting mail data. In general, data can be set in following three ways for most elements:</p>
+<ul>
+	<li><strong>set</strong> - reset the data, and initialize it to the given element. This will destroy previous data.</li>
+	<li><strong>set (List)</strong> - for array based elements, we provide a way of passing the entire array in at once. This will also destroy previous data.</li>
+	<li><strong>add</strong> - append data to the list of elements.</li>
+</ul>
+<p>Sending an email is as simple as:</p>
+<ol class="regular">
+	<li>Creating a SendGrid Instance</li>
+	<li>Creating a SendGrid Mail object, and setting its data</li>
+	<li>Sending the mail using either SMTP API or Web API.</li>
+</ol>
+<h2>Mail Usage</h2>
+<p>To begin using this library, you must first include it in your code, like so:</p>
+
+``` php
+<?php
+include 'path/to/sendgrid-php/SendGrid_loader.php';
+?>
+```
+
+
+<p>Then, initialize the SendGrid object with your SendGrid credentials:</p>
+
+``` php
+<?php
+$sendgrid = new SendGrid('username', 'password');
+?>
+```
+
+
+<p>Create a new SendGrid Mail object and add your message details, as follows:</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+setFrom('me@bar.com')->
+
+setSubject('Subject goes here')->
+
+setText('Hello World!')->
+
+setHtml('<strong>Hello World!</strong>');
+?>
+```
+
+
+<p>Finally, send it using the API of your choice of SMTP like so:</p>
+
+``` php
+<?php
+$sendgrid->
+smtp->
+send($mail);
+?>
+```
+
+<p>Or you can send it using the Web API like so:</p>
+
+``` php
+<?php
+$sendgrid->
+web->
+send($mail);
+?>
+```
+
+<h3>Using Categories</h3>
+<p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name.</p>
+<p><span class="label label-info">Info</span> There is a maximum of 10 categories per email.</p>
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+...
+addCategory("Category 1")->
+
+addCategory("Category 2");
+?>
+```
+
+<h3>Using Attachments</h3>
+<p>Attachments are currently file based only, with future plans for an in memory implementation as well.
+</p>
+<p><span class="label label-info">Info</span> File attachments are limited to 7 MB per file.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+...
+addAttachment("../path/to/file.txt");
+?>
+```
+
+<h3>Using Substitutions</h3>
+<p>Substitutions can be used to customize multi-recipient emails, and tailor them for the user.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('john@somewhere.com')->
+
+addTo("harry@somewhere.com")->
+
+addTo("Bob@somewhere.com")->
+
+...
+setHtml("Hey %name%, we've seen that you've been gone for a while")->
+
+addSubstitution("%name%", array("John", "Harry", "Bob"));
+?>
+```
+
+<h3>Using Sections</h3>
+<p>Sections can be used to further customize messages for the end users. A section is only useful in conjunction with a substition value.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('john@somewhere.com')->
+
+addTo("harry@somewhere.com")->
+
+addTo("Bob@somewhere.com")->
+
+...
+setHtml("Hey %name%, you work at %place%")->
+
+addSubstitution("%name%", array("John", "Harry", "Bob"))->
+
+addSubstitution("%place%", array("%office%", "%office%", "%home%"))->
+
+addSection("%office%", "an office")->
+
+addSection("%home%", "your house");
+?>
+```
+
+<h3>Using Unique Arguments</h3>
+<p>Unique Arguments can be used for tracking purposes and developing data for unique statistical analysis.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+...
+addUniqueArgument("Customer", "Someone")->
+
+addUniqueArgument("location", "Somewhere");
+?>
+```
+
+<h3>Using Filter Settings</h3>
+<p>Filter Settings are used to enable and disable apps, and to pass parameters to those apps.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+...
+addFilterSetting("gravatar", "enable", 1)->
+
+addFilterSetting("footer", "enable", 1)->
+
+addFilterSetting("footer", "text/plain", "Here is a plain text footer")->
+
+addFilterSetting("footer", "text/html", "Here is an HTML footer");
+
+?>
+```
+<h3>Using Headers</h3>
+<p>Headers can be used to add existing sendgrid functionality (such as for categories or filters), or custom headers can be added as necessary.</p>
+
+``` php
+<?php
+$mail = new SendGrid\Mail();
+$mail->
+addTo('foo@bar.com')->
+
+...
+addHeader("category", "My New Category");
+?>
+```
