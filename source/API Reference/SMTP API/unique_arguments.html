@@ -1,0 +1,25 @@
+---
+layout: page
+title: Unique Arguments
+navigation:
+  show: true
+---
+
+<p>The SMTP API JSON string you to attach an unlimited number of unique arguments to your email. The arguments are used only for tracking. They can be retrieved through the <a href="/documentation/api/event-api/">Event API</a> or the <a href="/documentation/delivery-metrics/email-activity/">Email Activity</a> page.</p> 
+
+<p>These arguments can be added using a JSON string like this:</p>
+
+``` javascript
+{"unique_args": {"customerAccountNumber": "55555", "activationAttempt": "1"}}
+```
+
+<p>These arguments can then be seen in posts from the SendGrid Event API. The contents of one of these posts would look something like this:</p>
+
+``` ruby
+    [email] => ben@sendgrid.com
+    [test_param] => test_value
+    [2nd_param] => 2nd_value
+    [event] => processed
+```
+
+<p>Unique Arguments will also be shown in the Email Activity tab of your account.</p>

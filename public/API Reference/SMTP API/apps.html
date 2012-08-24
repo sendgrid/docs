@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Apps (Filters) - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview API Reference API Libraries API Reference/SMTP API Apps (Filters) SMTP API Overview Section Tags Substitution Tags Unique &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/API Reference/SMTP API/apps.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/pricing.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+</div>
+
+    <div class="row-fluid" id="content">
+      
+<aside class="sidebar-nav span3">
+    <ul class="nav nav-list">
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>API Reference</li>	 <ul class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	 <li>API Reference/SMTP API</li>	 	 <ul class="nav nav-list">	 	 	 <li class=active><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/overview.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul>	  </ul>	 <li>Code Examples</li>	 <ul class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	  </ul>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Integrate/Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Integrate/Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Integrate/Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul>	 	 <li>Integrate/Open Source Apps</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul>	  </ul> </ul>
+</ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  
+  <header class="page-header">
+    <h1 class="entry-title">Apps (Filters)</h1>
+    
+  </header>
+  
+  <p>Following are the apps that can be specified in the filters section of the X-SMTPAPI header. All filters and setting names must be lowercase.</p>
+
+<p>Please note that if a filter is not specified as being either disabled or enabled in the X-SMTPAPI header, it will default to the state of the app in the &#8220;Apps&#8221; tab on the website.</p>
+
+<p><span class="label label-warning">Warning</span> If you&#8217;re enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App</a>. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a template designed but disabled, you can&#8217;t just enable it via the API; you need to define the template in the API call itself.</p>
+
+<p>For more information on the utility of these apps, please check out the <a href="/documentation/apps/">Apps</a> section.</p>
+
+<h3>Filter - &#8216;gravatar&#8217;:</h3> 
+<p>Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;clicktrack&#8217;:</h3> 
+
+<p>Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;subscriptiontrack&#8217;:</h3> 
+
+<p>Inserts a subscription management link at the bottom of the text and html bodies. Custom text is set in the settings, with the subscription management link being substituted into the text either as ‘% %’ for plain text bodies, and as a link where the text in between the ‘%’ and ‘%’ is the link text.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>text/html</td>
+<td>&lt;html&gt;&#8230;%Here%&#8230;&lt;/html&gt;</td>
+<td>String for HTML body. Example: &#8220;Unsubscribe &lt;%Here%&gt;&#8221;, where &#8220;Here&#8221; would be linked.</td>
+</tr>
+<tr>
+<td>text/plain</td>
+<td>&#8230;&lt;% %&gt;&#8230;</td>
+<td>String for text body. Example: Unsubscribe Here: &lt;% %&gt;</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>string</td>
+<td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]</td>
+</tr>
+<tr>
+<td>url</td>
+<td>http://www.example.com/landing.html</td>
+<td>To go to your own subscription management landing page, instead of our default page.</td>
+</tr>
+<tr>
+<td>landing</td>
+<td>&lt;HTML&gt;&#8230;&lt;/HTML&gt;</td>
+<td>To make a custom subscription management landing page, still hosted on our server.</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;opentrack&#8217;:</h3> 
+
+<p>Inserts an &lt;img&gt; tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;footer&#8217;:</h3> 
+
+<p>Inserts a footer at the bottom of the text and HTML bodies.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>text/html</td>
+<td>&lt;html&gt;&#8230;&lt;/html&gt;</td>
+<td>String containing html body</td>
+</tr>
+<tr>
+<td>text/plain</td>
+<td>string</td>
+<td>String containing text body</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;spamcheck&#8217;:</h3> 
+
+<p>Tests message with SpamAssassin to determine if it is spam, and drop it if it is.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>maxscore</td>
+<td>-10.0 to 10.0</td>
+<td>Score after which the message will be dropped (default is 5.0)</td>
+</tr>
+<tr>
+<td>url</td>
+<td>http://www.example.com/spam_post.php</td>
+<td>an optional url to post the email and a copy of the report to</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;ganalytics&#8217;:</h3> 
+
+<p>Re-writes links to integrate with Google Analytics.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>utm_source</td>
+<td>string</td>
+<td>Value for the utm_source field</td>
+</tr>
+<tr>
+<td>utm_medium</td>
+<td>string</td>
+<td>Value for the utm_medium field</td>
+</tr>
+<tr>
+<td>utm_term</td>
+<td>string</td>
+<td>Value for the utm_term field</td>
+</tr>
+<tr>
+<td>utm_content</td>
+<td>string</td>
+<td>Value for the utm_content field</td>
+</tr>
+<tr>
+<td>utm_campaign</td>
+<td>string</td>
+<td>Value for the utm_campaign field</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;domainkeys&#8217;:</h3> 
+
+<p>Allows you to specify the domain to use to sign messages with Domain Keys. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/domain-keys/">details on Domain Keys.</a></p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>domain</td>
+<td>www.example.com</td>
+<td>The domain to sign messages as</td>
+</tr>
+<tr>
+<td>sender</td>
+<td>0|1</td>
+<td>1 - Insert a Sender header if the domain specified does not match the From address. 0 - never insert a Sender header</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;dkim&#8217;:</h3> 
+
+<p>Allows you to specify the domain to use to sign messages with DKIM certification. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/dkim/">details on DKIM.</a></p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>domain</td>
+<td>The domain you would like your DKIM certification signed with</td>
+<td>example.com</td>
+</tr>
+<tr>
+<td>use_from</td>
+<td>If enabled, the domain in the From: header of the email will be used to sign your DKIM</td>
+<td>0|1</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;template&#8217;:</h3> 
+<p>Wraps a template around your email content. Useful for sending out newsletters and other nicely formatted messages.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+<tr>
+<td>text/html</td>
+<td>&lt;html&gt;&#8230;&#8230;&lt;/html&gt;</td>
+<td>String containing html content for the template (must contain tag)</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;bcc&#8217;:</h3> 
+
+<p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>email</td>
+<td>name@domain.com</td>
+<td>email address destination for the bcc message</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;forwardspam&#8217;:</h3> 
+<p>Allows for a copy of spam reports to be forwarded to an email address.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>email</td>
+<td>name@domain.com</td>
+<td>email address destination for the bcc message</td>
+</tr>
+</tbody>
+</table>
+
+<h3>Filter - &#8216;bypass_list_management&#8217;:</h3> 
+
+<p>Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.</p>
+
+<table class="table table-striped">
+<tbody>
+<tr>
+<th>Parameter Name</th>
+<th>Parameter Value</th>
+<th>Parameter Description</th>
+</tr>
+<tr>
+<td>enable</td>
+<td>0|1</td>
+<td>Disable or enable this App</td>
+</tr>
+</tbody>
+</table>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>

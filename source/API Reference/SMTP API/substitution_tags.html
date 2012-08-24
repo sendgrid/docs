@@ -1,0 +1,96 @@
+---
+layout: page
+title: Substitution Tags
+navigation:
+  show: true
+---
+
+<p>Substitution tags allow you to easily generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API you can specify substitution values for each recipient like a first name, that will then be inserted into an opening greeting like: "Dear -fistName-" where each recipient sees -firstName- replaced with their first name. </p>
+
+<p>These values can also be used in more complex scenarios, for example instead of a first name you could also use a customerID and replace that value in a custom URL to take that customer to a page specific to them: </p>
+
+``` html
+<a href="sendgrid.com/customerOffer?id=-customerID-">Claim your offer!</a>
+```
+
+<p>where an ID specific to the customer is appended into the link in place of -customerID-. </p>
+<p>You may also use substitution tags in the subject lines of your emails.</p>
+
+<p><span class="label label-info">Info</span> How you format your replacement tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense.</p>
+
+<p><span class="label label-warning">Warning</span> Do not use spaces inside your substitution values, e.g. %first name%</p>
+
+<h3>Substitution Tag Example</h3>
+
+Email HTML content:
+``` html
+<html>
+  <head></head>
+  <body>
+    <p>Hello -name-,<br>
+       Thank you for your interest in our products. I have set up an appointment
+             to call you at -time- EST to discuss your needs in more detail. If you would 
+             like to reschedule this call please visit the following link: 
+             <a href="sendgrid.com/reschedule?id=-customerID-">reschedule</a>
+ 
+                Regards,
+ 
+                -salesContact-
+                -contactPhoneNumber-<br>
+    </p>
+  </body>
+</html>
+```
+
+<p>An accompanying SMTP API JSON header might look something like this:</p>
+
+``` javascript
+{
+    "to": [
+        "john.doe@gmail.com",
+        "jane.doe@hotmail.com"
+    ],
+    "sub": {
+        "-name-": [
+            "John",
+            "Jane"
+        ],
+        "-customerID-": [
+            "1234",
+            "5678"
+        ],
+        "-salesContact-": [
+            "Jared",
+            "Ben"
+        ],
+        "-contactPhoneNumber-": [
+            "555.555.5555",
+            "777.777.7777"
+        ],
+        "-time-": [
+            "3:00pm",
+            "5:15pm"
+        ]
+    }
+}
+```
+
+<p>The final email for John would look like this:</p>
+``` html
+<html>
+  <head></head>
+  <body>
+    <p>Hello John,<br>
+       Thank you for your interest in our products. I have set up an appointment
+             to call you at 3:00pm EST to discuss your needs in more detail. If you would 
+             like to reschedule this call please visit the following link: 
+             <a href="sendgrid.com/reschedule?id=1234">reschedule</a>
+ 
+                Regards,
+ 
+                Jared
+                555.555.5555<br>
+    </p>
+  </body>
+</html>
+```
