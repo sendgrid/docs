@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Inbound Parse - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview API Reference API Libraries SMTP API Apps (Filters) Categories SMTP API Overview Section Tags Substitution Tags Unique Arguments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Webhooks/parse.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/pricing.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+</div>
+
+    <div class="row-fluid" id="content">
+      
+<aside class="sidebar-nav span3">
+    <ul class="nav nav-list">
+  <ul class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	 <li>API Reference</li>	 <ul class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	 <li>SMTP API</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/overview.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul>	 	 <li>Webhooks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=active><a href="/API Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul>	  </ul>	 <li>Code Examples</li>	 <ul class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	  </ul>	 <li>Integrate</li>	 <ul class="nav nav-list">	 	 <li>Frameworks</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul>	 	 <li>Mail Clients</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul>	 	 <li>Mail Servers</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul>	 	 <li>Open Source Apps</li>	 	 <ul class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul>	  </ul> </ul>
+</ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  
+  <header class="page-header">
+    <h1 class="entry-title">Inbound Parse</h1>
+    
+  </header>
+  
+  <p>SendGrid can parse the attachments and contents from incoming emails. Application examples include receiving uploads and posting blog articles via email.</p>
+
+<p>The parse API will POST the parsed email to a URL configured you specify. SendGrid automatically queues and retries any POSTs that respond with a 5XX status error. Additionally, we retry errors when we encounter 4XX status responses to prevent data loss for customers that have misconfigured their website or POST URL. </p>
+
+<p><span class="label label-info">Info</span><blockquote> If you don&#8217;t want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p></blockquote>
+
+<p>In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response and then it is removed from our send queue. If we do <strong>not</strong> get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.</p>
+
+<h2>Setup</h2>
+<p>The following steps are required to begin parsing email:</p>
+
+<ul class="regular">
+	<li>Point the MX Record of the Domain/Hostname or Subdomain to <strong>mx.sendgrid.net</strong></li>
+	<li>Associate the Domain/Hostname and the URL in the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a></li>
+</ul>
+
+<h2>Parameters</h2>
+
+<p>The following parameters will be included in the POST to your callback URL.</p>
+
+<table class="table table-striped table-bordered">
+<tbody>
+<tr>
+<th>headers</th>
+<td>The raw headers of the email.</td>
+</tr>
+<tr>
+<th>text</th>
+<td>Text body of email. If not set, email did not have a text body.</td>
+</tr>
+<tr>
+<th>html</th>
+<td>HTML body of email. If not set, email did not have an HTML body.</td>
+</tr>
+<tr>
+<th>from</th>
+<td>Email sender, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>to</th>
+<td>Email recipient field, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>cc</th>
+<td>Email cc field, as taken from the message headers.</td>
+</tr>
+<tr>
+<th>subject</th>
+<td>Email Subject.</td>
+</tr>
+<tr>
+<th>dkim</th>
+<td>A JSON string containing the verification results of any dkim and domain keys signatures in the message.</td>
+</tr>
+<tr>
+<th>SPF</th>
+<td>The results of the Sender Policy Framework verification of the message sender and receiving IP address.</td>
+</tr>
+<tr>
+<th>envelope</th>
+<td>A JSON string containing the SMTP envelope. This will have two variables: <em>to</em>, which is an array of recipients, and <em>from</em>, which is the return path for the message.</td>
+</tr>
+<tr>
+<th>charsets</th>
+<td>A JSON string containing the character sets of the fields extracted from the message.</td>
+</tr>
+<tr>
+<th>spam_score</th>
+<td>Spam Assassin&#8217;s rating for whether or not this is spam.</td>
+</tr>
+<tr>
+<th>spam_report</th>
+<td>Spam Assassin&#8217;s spam report.</td>
+</tr>
+<tr>
+<th>attachments</th>
+<td>Number of attachments included in email.</td>
+</tr>
+<tr>
+<th>attachmentX</th>
+<td>These are file upload names, where N is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. TNEF files (winmail.dat) will be extracted and have any attachments posted.</td>
+</tr>
+</tbody>
+</table>
+
+<p><span class="label label-info">Info</span><blockquote>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
+
+<a name="characterSetsAndHeaderDecoding"></a>
+<h2>Character Sets and Header Decoding</h2>
+<p>If you will be receiving email which is not in ASCII only format, you will want to read this section.</p>
+
+<p>Messages, and their headers, can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.</p>
+
+<p>The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="n">charsets</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s2">&quot;to&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;cc&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;subject&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;from&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;text&quot;</span><span class="ss">:&quot;iso-8859-1&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+<p>This shows that all headers should be treated as UTF-8, and the text body is latin1.</p>
+
+<a name="examples"></a>
+<h3>Examples</h3>
+<p>In this example, we want to parse all emails at <em>address</em>@sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.</p>
+
+<p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Hostname</span><span class="p">:</span> <span class="n">email</span><span class="o">.</span><span class="n">sendgrid</span><span class="o">.</span><span class="n">biz</span>
+</span></code></pre></td></tr></table></div></figure>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">URL</span><span class="p">:</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">sendgrid</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">email</span><span class="o">.</span><span class="n">php</span>
+</span></code></pre></td></tr></table></div></figure>
+
+To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at http://sendgrid.com/email.php:
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="nv">$fh</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s1">&#39;/tmp/parse.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span> <span class="nv">$fh</span> <span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>	<span class="nb">fwrite</span><span class="p">(</span><span class="nv">$fh</span><span class="p">,</span> <span class="nb">print_r</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">,</span> <span class="k">true</span><span class="p">)</span> <span class="o">.</span> <span class="nb">print_r</span><span class="p">(</span><span class="nv">$_FILES</span><span class="p">,</span> <span class="k">true</span><span class="p">));</span>
+</span><span class='line'>	<span class="k">foreach</span> <span class="p">(</span><span class="nv">$_FILES</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$file</span><span class="p">)</span>
+</span><span class='line'>	<span class="p">{</span>
+</span><span class='line'>		<span class="nb">move_uploaded_file</span><span class="p">(</span><span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;tmp_name&#39;</span><span class="p">],</span> <span class="s2">&quot;/tmp/&quot;</span><span class="o">.</span><span class="nv">$file</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]);</span>
+</span><span class='line'>	<span class="p">}</span>
+</span><span class='line'>	<span class="nb">fclose</span><span class="p">(</span><span class="nv">$fh</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+
+<span class="label label-warning">Warning</span> <blockquote>If you are using a hosting service, you don&#8217;t have direct access to the server&#8217;s file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above..
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="nv">$fh</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s1">&#39;/tmp/parse.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+should be changed to&#8230;
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="nv">$fh</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s1">&#39;~/parse.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
+</span></code></pre></td></tr></table></div></figure>
+</blockquote>
+
+After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">Array</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>    <span class="p">[</span><span class="nx">headers</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">Received</span><span class="o">:</span> <span class="nx">by</span> <span class="mf">127.0</span><span class="p">.</span><span class="mf">0.1</span> <span class="kd">with</span> <span class="nx">SMTP</span> <span class="nx">id</span> <span class="nx">DOtNAzsAwq</span> <span class="nx">Fri</span><span class="p">,</span> <span class="mi">03</span> <span class="nx">Feb</span> <span class="mi">2012</span> <span class="mi">12</span><span class="o">:</span><span class="mi">51</span><span class="o">:</span><span class="mi">06</span> <span class="o">-</span><span class="mi">0600</span> <span class="p">(</span><span class="nx">CST</span><span class="p">)</span>
+</span><span class='line'><span class="nx">Received</span><span class="o">:</span> <span class="nx">from</span> <span class="nx">mail</span><span class="o">-</span><span class="nx">gy0</span><span class="o">-</span><span class="nx">f181</span><span class="p">.</span><span class="nx">google</span><span class="p">.</span><span class="nx">com</span> <span class="p">(</span><span class="nx">mail</span><span class="o">-</span><span class="nx">gy0</span><span class="o">-</span><span class="nx">f181</span><span class="p">.</span><span class="nx">google</span><span class="p">.</span><span class="nx">com</span> <span class="p">[</span><span class="mf">209.85</span><span class="p">.</span><span class="mf">160.181</span><span class="p">])</span> <span class="nx">by</span> <span class="nx">mx2</span><span class="p">.</span><span class="nx">sendgrid</span><span class="p">.</span><span class="nx">net</span> <span class="p">(</span><span class="nx">Postfix</span><span class="p">)</span> <span class="kd">with</span> <span class="nx">ESMTPS</span> <span class="nx">id</span> <span class="nx">E07CC17878AC</span> <span class="k">for</span> <span class="o">&lt;</span><span class="nx">test</span><span class="err">@</span><span class="nx">sendgrid</span><span class="p">.</span><span class="nx">biz</span><span class="o">&gt;</span><span class="p">;</span> <span class="nx">Fri</span><span class="p">,</span>  <span class="mi">3</span> <span class="nx">Feb</span> <span class="mi">2012</span> <span class="mi">12</span><span class="o">:</span><span class="mi">51</span><span class="o">:</span><span class="mi">05</span> <span class="o">-</span><span class="mi">0600</span> <span class="p">(</span><span class="nx">CST</span><span class="p">)</span>
+</span><span class='line'><span class="nx">Received</span><span class="o">:</span> <span class="nx">by</span> <span class="nx">ghrr17</span> <span class="kd">with</span> <span class="nx">SMTP</span> <span class="nx">id</span> <span class="nx">r17so1997707ghr</span><span class="p">.</span><span class="mi">12</span> <span class="k">for</span> <span class="o">&lt;</span><span class="nx">test</span><span class="err">@</span><span class="nx">sendgrid</span><span class="p">.</span><span class="nx">biz</span><span class="o">&gt;</span><span class="p">;</span> <span class="nx">Fri</span><span class="p">,</span> <span class="mi">03</span> <span class="nx">Feb</span> <span class="mi">2012</span> <span class="mi">10</span><span class="o">:</span><span class="mi">51</span><span class="o">:</span><span class="mi">05</span> <span class="o">-</span><span class="mi">0800</span> <span class="p">(</span><span class="nx">PST</span><span class="p">)</span>
+</span><span class='line'><span class="nx">DKIM</span><span class="o">-</span><span class="nx">Signature</span><span class="o">:</span> <span class="nx">v</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nx">a</span><span class="o">=</span><span class="nx">rsa</span><span class="o">-</span><span class="nx">sha256</span><span class="p">;</span> <span class="nx">c</span><span class="o">=</span><span class="nx">relaxed</span><span class="o">/</span><span class="nx">relaxed</span><span class="p">;</span> <span class="nx">d</span><span class="o">=</span><span class="nx">gmail</span><span class="p">.</span><span class="nx">com</span><span class="p">;</span> <span class="nx">s</span><span class="o">=</span><span class="nx">gamma</span><span class="p">;</span> <span class="nx">h</span><span class="o">=</span><span class="nx">from</span><span class="o">:</span><span class="nx">to</span><span class="o">:</span><span class="nx">subject</span><span class="o">:</span><span class="nx">date</span><span class="o">:</span><span class="nx">message</span><span class="o">-</span><span class="nx">id</span><span class="o">:</span><span class="nx">mime</span><span class="o">-</span><span class="nx">version</span><span class="o">:</span><span class="nx">content</span><span class="o">-</span><span class="nx">type</span><span class="o">:</span><span class="nx">x</span><span class="o">-</span><span class="nx">mailer</span> <span class="o">:</span><span class="nx">thread</span><span class="o">-</span><span class="nx">index</span><span class="o">:</span><span class="nx">content</span><span class="o">-</span><span class="nx">language</span><span class="p">;</span> <span class="nx">bh</span><span class="o">=</span><span class="nx">Diq7TmSRGYuzQQrI1FhjQn2jOEjmaWl2Q7JXX6o1530</span><span class="o">=</span><span class="p">;</span> <span class="nx">b</span><span class="o">=</span><span class="nx">fh2jhziuUJ0ofS35KxwelswTs</span><span class="o">+</span><span class="err">/T+aqbR6r36IwAiUxiWaF4I6/vVcSLdBm9YRS/d1 KFgeRGOkyAZMc/Kjnpby8+vuGZVxSOgyySn1Chp2pzseLiUSfRWJaMSFRnDEeZkBdNhg V2lYrMzPZEACrvN80zMTz8YijcRWWsfpt7w2c=</span>
+</span><span class='line'><span class="nx">Received</span><span class="o">:</span> <span class="nx">by</span> <span class="mf">10.236</span><span class="p">.</span><span class="mf">161.197</span> <span class="kd">with</span> <span class="nx">SMTP</span> <span class="nx">id</span> <span class="nx">w45mr12978550yhk</span><span class="p">.</span><span class="mf">96.1328295065532</span><span class="p">;</span> <span class="nx">Fri</span><span class="p">,</span> <span class="mi">03</span> <span class="nx">Feb</span> <span class="mi">2012</span> <span class="mi">10</span><span class="o">:</span><span class="mi">51</span><span class="o">:</span><span class="mi">05</span> <span class="o">-</span><span class="mi">0800</span> <span class="p">(</span><span class="nx">PST</span><span class="p">)</span>
+</span><span class='line'><span class="nx">Received</span><span class="o">:</span> <span class="nx">from</span> <span class="nx">BRADSTOUFFERPC</span> <span class="p">(</span><span class="mi">206</span><span class="o">-</span><span class="mi">124</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">82</span><span class="p">.</span><span class="kr">static</span><span class="p">.</span><span class="nx">forethought</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span> <span class="p">[</span><span class="mf">206.124</span><span class="p">.</span><span class="mf">12.82</span><span class="p">])</span> <span class="nx">by</span> <span class="nx">mx</span><span class="p">.</span><span class="nx">google</span><span class="p">.</span><span class="nx">com</span> <span class="kd">with</span> <span class="nx">ESMTPS</span> <span class="nx">id</span> <span class="nx">k16sm15044155ani</span><span class="p">.</span><span class="mf">5.2012</span><span class="p">.</span><span class="mf">02.03</span><span class="p">.</span><span class="mf">10.51</span><span class="p">.</span><span class="mi">03</span> <span class="p">(</span><span class="nx">version</span><span class="o">=</span><span class="nx">TLSv1</span><span class="o">/</span><span class="nx">SSLv3</span> <span class="nx">cipher</span><span class="o">=</span><span class="nx">OTHER</span><span class="p">);</span> <span class="nx">Fri</span><span class="p">,</span> <span class="mi">03</span> <span class="nx">Feb</span> <span class="mi">2012</span> <span class="mi">10</span><span class="o">:</span><span class="mi">51</span><span class="o">:</span><span class="mi">04</span> <span class="o">-</span><span class="mi">0800</span> <span class="p">(</span><span class="nx">PST</span><span class="p">)</span>
+</span><span class='line'><span class="nx">From</span><span class="o">:</span> <span class="err">\</span><span class="s2">&quot;Sendgrid Test 2\&quot; &lt;send.grid.test@gmail.com&gt;</span>
+</span><span class='line'><span class="s2">To: &lt;test@sendgrid.biz&gt;</span>
+</span><span class='line'><span class="s2">Subject: Attachments...</span>
+</span><span class='line'><span class="s2">Date: Fri, 3 Feb 2012 11:50:56 -0700</span>
+</span><span class='line'><span class="s2">Message-ID: &lt;4f2c2c98.1007650a.68f6.ffff9ed6@mx.google.com&gt;</span>
+</span><span class='line'><span class="s2">MIME-Version: 1.0</span>
+</span><span class='line'><span class="s2">Content-Type: multipart/mixed; boundary=\&quot;----=_NextPart_000_00EB_01CCE26A.183F8AD0\&quot;</span>
+</span><span class='line'><span class="s2">X-Mailer: Microsoft Office Outlook 12.0</span>
+</span><span class='line'><span class="s2">Thread-Index: AczipML4AAHYEmdvTw6Jlw1ScYatfg==</span>
+</span><span class='line'><span class="s2">Content-Language: en-us</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">    [attachments] =&gt; 1</span>
+</span><span class='line'><span class="s2">    [dkim] =&gt; {@gmail.com : fail (body has been altered)}</span>
+</span><span class='line'><span class="s2">    [subject] =&gt; Attachments...</span>
+</span><span class='line'><span class="s2">    [to] =&gt; &lt;test@sendgrid.biz&gt;</span>
+</span><span class='line'><span class="s2">    [attachment-info] =&gt; {\&quot;attachment1\&quot;:{\&quot;filename\&quot;:\&quot;Upload.csv\&quot;,\&quot;name\&quot;:\&quot;Upload.csv\&quot;,\&quot;type\&quot;:\&quot;application/vnd.ms-excel\&quot;}}</span>
+</span><span class='line'><span class="s2">    [html] =&gt; &lt;html xmlns:v=\&quot;urn:schemas-microsoft-com:vml\&quot; xmlns:o=\&quot;urn:schemas-microsoft-com:office:office\&quot; xmlns:w=\&quot;urn:schemas-microsoft-com:office:word\&quot; xmlns:m=\&quot;http://schemas.microsoft.com/office/2004/12/omml\&quot; xmlns=\&quot;http://www.w3.org/TR/REC-html40\&quot;&gt;&lt;head&gt;&lt;META HTTP-EQUIV=\&quot;Content-Type\&quot; CONTENT=\&quot;text/html; charset=us-ascii\&quot;&gt;&lt;meta name=Generator content=\&quot;Microsoft Word 12 (filtered medium)\&quot;&gt;&lt;style&gt;&lt;!--</span>
+</span><span class='line'><span class="s2">/* Font Definitions */</span>
+</span><span class='line'><span class="s2">@font-face</span>
+</span><span class='line'><span class="s2"> {font-family:\&quot;Cambria Math\&quot;;</span>
+</span><span class='line'><span class="s2"> panose-1:2 4 5 3 5 4 6 3 2 4;}</span>
+</span><span class='line'><span class="s2">@font-face</span>
+</span><span class='line'><span class="s2"> {font-family:Calibri;</span>
+</span><span class='line'><span class="s2"> panose-1:2 15 5 2 2 2 4 3 2 4;}</span>
+</span><span class='line'><span class="s2">/* Style Definitions */</span>
+</span><span class='line'><span class="s2">p.MsoNormal, li.MsoNormal, div.MsoNormal</span>
+</span><span class='line'><span class="s2"> {margin:0in;</span>
+</span><span class='line'><span class="s2"> margin-bottom:.0001pt;</span>
+</span><span class='line'><span class="s2"> font-size:11.0pt;</span>
+</span><span class='line'><span class="s2"> font-family:\&quot;Calibri\&quot;,\&quot;sans-serif\&quot;;}</span>
+</span><span class='line'><span class="s2">a:link, span.MsoHyperlink</span>
+</span><span class='line'><span class="s2"> {mso-style-priority:99;</span>
+</span><span class='line'><span class="s2"> color:blue;</span>
+</span><span class='line'><span class="s2"> text-decoration:underline;}</span>
+</span><span class='line'><span class="s2">a:visited, span.MsoHyperlinkFollowed</span>
+</span><span class='line'><span class="s2"> {mso-style-priority:99;</span>
+</span><span class='line'><span class="s2"> color:purple;</span>
+</span><span class='line'><span class="s2"> text-decoration:underline;}</span>
+</span><span class='line'><span class="s2">span.EmailStyle17</span>
+</span><span class='line'><span class="s2"> {mso-style-type:personal-compose;</span>
+</span><span class='line'><span class="s2"> font-family:\&quot;Calibri\&quot;,\&quot;sans-serif\&quot;;</span>
+</span><span class='line'><span class="s2"> color:windowtext;}</span>
+</span><span class='line'><span class="s2">.MsoChpDefault</span>
+</span><span class='line'><span class="s2"> {mso-style-type:export-only;}</span>
+</span><span class='line'><span class="s2">@page WordSection1</span>
+</span><span class='line'><span class="s2"> {size:8.5in 11.0in;</span>
+</span><span class='line'><span class="s2"> margin:1.0in 1.0in 1.0in 1.0in;}</span>
+</span><span class='line'><span class="s2">div.WordSection1</span>
+</span><span class='line'><span class="s2"> {page:WordSection1;}</span>
+</span><span class='line'><span class="s2">--&gt;&lt;/style&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;</span>
+</span><span class='line'><span class="s2">&lt;o:shapedefaults v:ext=\&quot;edit\&quot; spidmax=\&quot;1026\&quot; /&gt;</span>
+</span><span class='line'><span class="s2">&lt;/xml&gt;&lt;![endif]--&gt;&lt;!--[if gte mso 9]&gt;&lt;xml&gt;</span>
+</span><span class='line'><span class="s2">&lt;o:shapelayout v:ext=\&quot;edit\&quot;&gt;</span>
+</span><span class='line'><span class="s2">&lt;o:idmap v:ext=\&quot;edit\&quot; data=\&quot;1\&quot; /&gt;</span>
+</span><span class='line'><span class="s2">&lt;/o:shapelayout&gt;&lt;/xml&gt;&lt;![endif]--&gt;&lt;/head&gt;&lt;body lang=EN-US link=blue vlink=purple&gt;&lt;div class=WordSection1&gt;&lt;p class=MsoNormal&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</span>
+</span><span class='line'><span class="s2">    [from] =&gt; \&quot;Sendgrid Test 2\&quot; &lt;send.grid.test@gmail.com&gt;</span>
+</span><span class='line'><span class="s2">    [text] =&gt;  </span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="s2">    [envelope] =&gt; {\&quot;to\&quot;:[\&quot;test@sendgrid.biz\&quot;],\&quot;from\&quot;:\&quot;send.grid.test@gmail.com\&quot;}</span>
+</span><span class='line'><span class="s2">    [charsets] =&gt; {\&quot;to\&quot;:\&quot;UTF-8\&quot;,\&quot;html\&quot;:\&quot;us-ascii\&quot;,\&quot;subject\&quot;:\&quot;UTF-8\&quot;,\&quot;from\&quot;:\&quot;UTF-8\&quot;,\&quot;text\&quot;:\&quot;us-ascii\&quot;</span><span class="p">}</span>
+</span><span class='line'>    <span class="p">[</span><span class="nx">SPF</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">pass</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+If you have an attachment, there will be a 2nd array, as follows:
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">Array</span>
+</span><span class='line'><span class="p">(</span>
+</span><span class='line'>    <span class="p">[</span><span class="nx">attachment1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nb">Array</span>
+</span><span class='line'>        <span class="p">(</span>
+</span><span class='line'>            <span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">Upload</span><span class="p">.</span><span class="nx">csv</span>
+</span><span class='line'>            <span class="p">[</span><span class="nx">type</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">text</span><span class="o">/</span><span class="nx">csv</span>
+</span><span class='line'>            <span class="p">[</span><span class="nx">tmp_name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="err">/tmp/phpo34iHI</span>
+</span><span class='line'>            <span class="p">[</span><span class="nx">error</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+</span><span class='line'>            <span class="p">[</span><span class="nx">size</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">76</span>
+</span><span class='line'>        <span class="p">)</span>
+</span><span class='line'><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>

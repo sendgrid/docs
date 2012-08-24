@@ -6,7 +6,11 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/apps.html</loc>
-        <lastmod>2012-08-23T21:30:49-06:00</lastmod>
+        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/SMTP API/categories.html</loc>
+        <lastmod>2012-08-23T23:12:51-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/overview.html</loc>
@@ -25,6 +29,14 @@
         <lastmod>2012-08-23T21:17:20-06:00</lastmod>
     </url>
     <url>
+        <loc>http://docs.sendgrid.com/API Reference/Webhooks/event.html</loc>
+        <lastmod>2012-08-24T12:14:46-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
+        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://docs.sendgrid.com/blog/archives/</loc>
         <lastmod>2012-08-23T14:09:01-06:00</lastmod>
     </url>
@@ -38,11 +50,11 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/nodejs.html</loc>
-        <lastmod>2012-08-23T18:43:55-06:00</lastmod>
+        <lastmod>2012-08-24T12:30:33-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/perl.html</loc>
-        <lastmod>2012-08-23T18:46:20-06:00</lastmod>
+        <lastmod>2012-08-24T12:39:43-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/php.html</loc>
@@ -50,7 +62,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/python.html</loc>
-        <lastmod>2012-08-23T18:57:18-06:00</lastmod>
+        <lastmod>2012-08-24T12:25:16-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/ruby.html</loc>
@@ -90,7 +102,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
-        <lastmod>2012-08-23T15:14:19-06:00</lastmod>
+        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
