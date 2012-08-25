@@ -56,29 +56,38 @@ module Jekyll
       end
       
       node_list.each do |base, subtree|
+
         next if subtree.empty?
+          #can we sort the subtree and bring index.html to the top?
+          
           show_link = true
           href = base
           name = base[1..-1]
           if name.index('.') != nil
+            is_parent = false
             name = @dirs[name]["title"] || name
           else
-            separator = name.rindex('/')
-            if separator != nil
-              name = name[separator+1..-1]
-            end
-            
-            show_link = false
+            is_parent = true
+            href = base + '/index.html'
+            #name = @dirs[name]["title"] || name
           end
           
-          if show_link
-            link = "<a href=\"#{href}\">#{name}</a>"
+          li_class = ""
+          if href == @page_url 
+            li_class = "active"
+          end
+          
+          if is_parent
+            li = "<li class=\"nav-header\"><a href=\"#{href}\">#{name}</a></li>"
           else
-            link = "#{name}"
+            li = "<li class=\"#{li_class}\"><a href=\"#{href}\">#{name}</a></li>"
           end
           
-          output += "#{prefix}	 <li>#{link}</li>"
+          output += "#{prefix}	#{li}"
+          
+          #only recurse if the parent is selected. If a leaf is selected 
           output += files_first_traverse(prefix + '	 ', subtree)
+
         end
       
         output += "#{prefix} </ul>"
