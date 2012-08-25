@@ -56,9 +56,7 @@ module Jekyll
       end
       
       node_list.each do |base, subtree|
-
         next if subtree.empty?
-          #can we sort the subtree and bring index.html to the top?
           
           show_link = true
           href = base
@@ -69,8 +67,11 @@ module Jekyll
           else
             is_parent = true
             href = base + '/index.html'
-            #name = @dirs[name]["title"] || name
+            if name.index('/')
+              name = name[name.rindex('/')+1..-1]
+            end
           end
+          
           
           li_class = ""
           if href == @page_url 
