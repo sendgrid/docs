@@ -24,6 +24,8 @@ li { line-height:22px; }
 
 .nav-list li { line-height:18px; }
 
+.sidebar-nav .nav-header { font-size:15px}
+
 #main-menu > :first-child > a {
 	background: url(/images/top-menu-elements.png) 0 -125px;
 	border: 0;
