@@ -2,230 +2,238 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/libraries.html</loc>
-        <lastmod>2012-08-23T19:11:31-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/apps.html</loc>
-        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/categories.html</loc>
-        <lastmod>2012-08-23T23:12:51-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/overview.html</loc>
-        <lastmod>2012-08-23T21:21:22-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/section_tags.html</loc>
-        <lastmod>2012-08-23T21:18:03-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/substitution_tags.html</loc>
-        <lastmod>2012-08-23T21:17:44-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/unique_arguments.html</loc>
-        <lastmod>2012-08-23T21:17:20-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/event.html</loc>
-        <lastmod>2012-08-24T12:14:46-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
-        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Workshop/</loc>
+        <lastmod>2012-08-24T18:08:58-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/address_whitelisting.html</loc>
-        <lastmod>2012-08-24T14:26:39-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/bcc.html</loc>
-        <lastmod>2012-08-24T14:27:30-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/bypass_list_management.html</loc>
-        <lastmod>2012-08-24T14:25:41-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/click_tracking.html</loc>
-        <lastmod>2012-08-24T14:24:53-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/dkim.html</loc>
-        <lastmod>2012-08-24T14:50:15-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/domain_keys.html</loc>
-        <lastmod>2012-08-24T14:29:26-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/email_templates.html</loc>
-        <lastmod>2012-08-24T14:30:21-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/event_notification.html</loc>
-        <lastmod>2012-08-24T14:32:03-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/footer.html</loc>
-        <lastmod>2012-08-24T14:35:38-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/forward_spam.html</loc>
-        <lastmod>2012-08-24T14:52:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/google_analytics.html</loc>
-        <lastmod>2012-08-24T14:34:27-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/gravatar.html</loc>
-        <lastmod>2012-08-24T14:36:45-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/open_tracking.html</loc>
-        <lastmod>2012-08-24T14:40:03-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/overview.html</loc>
-        <lastmod>2012-08-24T14:05:42-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/return_path_seedlist.html</loc>
-        <lastmod>2012-08-24T14:41:21-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/spam_checker.html</loc>
-        <lastmod>2012-08-24T14:43:25-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/subscription_tracking.html</loc>
-        <lastmod>2012-08-24T14:45:34-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/blog/archives/</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/csharp.html</loc>
-        <lastmod>2012-08-23T18:30:20-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/java.html</loc>
-        <lastmod>2012-08-23T18:37:28-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/nodejs.html</loc>
-        <lastmod>2012-08-24T12:30:33-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/perl.html</loc>
-        <lastmod>2012-08-24T12:39:43-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/php.html</loc>
-        <lastmod>2012-08-23T18:55:18-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/python.html</loc>
-        <lastmod>2012-08-24T12:25:16-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/ruby.html</loc>
-        <lastmod>2012-08-23T19:03:00-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Delivery Metrics/</loc>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/cakephp.html</loc>
-        <lastmod>2012-08-23T17:12:44-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/codeigniter.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/django.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/nodejs.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/rubyonrails.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/symfony.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/applemail.html</loc>
-        <lastmod>2012-08-23T14:38:26-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
-        <lastmod>2012-08-24T11:42:07-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
-        <lastmod>2012-08-23T14:46:00-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/thunderbird.html</loc>
-        <lastmod>2012-08-23T15:40:28-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/exim.html</loc>
-        <lastmod>2012-08-23T14:15:16-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/iis75.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/postfix.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/qmail.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/sendmail.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/ssmtp.html</loc>
-        <lastmod>2012-08-23T17:43:11-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/drupal.html</loc>
-        <lastmod>2012-08-23T18:13:38-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/joomla.html</loc>
-        <lastmod>2012-08-23T18:04:40-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/magento.html</loc>
-        <lastmod>2012-08-23T18:09:37-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/phpbb.html</loc>
-        <lastmod>2012-08-23T18:09:27-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/wordpress.html</loc>
-        <lastmod>2012-08-23T18:16:33-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/overview.html</loc>
-        <lastmod>2012-08-23T14:09:01-06:00</lastmod>
+        <lastmod>2012-08-24T18:00:56-06:00</lastmod>
     </url>
 </urlset>

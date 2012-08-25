@@ -7,13 +7,13 @@ navigation:
 
 <p>The Spam Checker app,is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter can provide notification when emails are detected that exceed a predefined spam threshold.</p>
 
-<img src="/images/spam_checker.png" alt="Spam Checker App Image" title="Spam Checker" />
+<p><img src="/images/spam_checker.png" alt="Spam Checker App Image" title="Spam Checker" /></p>
 
 <p>We use SpamAssassin to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value you wish. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
 </p>
 
-<strong>Settings:</strong>
-<table>
+<h2>Settings</h2>
+<table class="table table-bordered table-striped">
 <tr>
 <th>Name</th>
 <th>Required</th>
@@ -34,7 +34,7 @@ navigation:
 <p>The HTTP POST request that you receive at the designated URL will contain parameters with details about the spam checker event. If the URL is not specified, this HTTP POST request will simply not occur.</p> 
 
 <h2>Parameters:</h2>
-<table>
+<table class="table table-bordered table-striped">
 <tr>
 <th>Name</th>
 <th>Description</th>
