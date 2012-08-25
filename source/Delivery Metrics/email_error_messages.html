@@ -1,0 +1,37 @@
+<p>When you send an email, it must be accepted by the recipients mail server before anything else happens. These mail servers will always respond with numerical error messages to tell you the reason a particular mail server handled the message the way it did. Different mail servers use different phrasing for error messages, but the numeric codes are always the same. </p>
+
+<p>On the <a href="http://sendgrid.com/logs/index">Email Activity</a> page, you can expand specific events to see the messages returned by the receiving mail server. Remember you can filter by specific email addresses by using the search field provided. You may also filter your search to only populate specific event types such as Requests, Bounces, Deferrals and Drops.</p>
+
+<p><img src="/images/email_error_messages.png" alt="" /></p>
+
+<p>You can also use the <a href="http://sendgrid.com/bounces/">Email Lists</a> to view the messages returned for the specific event categories listed there.</p>
+
+<p>Listed below are some examples of messages you are likely to see, along with a brief description of what caused the error to be returned.</p>
+
+ <h2>200's</h2>
+<ul>
+ <li>250 – Requested action taken and completed. This message is your friend.</li>
+ <li>251 – The recipient is not local to the server, but the server will accept and forward the message.</li>
+ <li>252 – The recipient cannot be VRFYed, but the server accepts the message and attempts delivery.</li>
+</ul>
+ <h2>400's</h2>
+<ul>
+ <li>421 – The service is not available and the connection will be closed.</li>
+ <li>450 – The requested command failed because the user’s mailbox was unavailable.</li>
+ <li>451 – The command has been aborted due to a server error on the recipient side.</li>
+ <li>452 – The command has been aborted because the server has insufficient system storage.</li>
+</ul>
+ <h2>500's</h2>
+<ul>
+ <li>500 – The server could not recognize the command due to a syntax error.</li>
+ <li>501 – A syntax error was encountered in command arguments.</li>
+ <li>502 – This command is not implemented.</li>
+ <li>503 – The server has encountered a bad sequence of commands.</li>
+ <li>504 – A command parameter is not implemented.</li>
+ <li>550 – The requested command failed because the user’s mailbox was unavailable</li>
+ <li>551 – The recipient is not local to the mail server.</li>
+ <li>552 – The action was aborted due to storage capacity allowances.</li>
+ <li>553 – The command was aborted because the mailbox name is invalid.</li>
+ <li>554 – The transaction failed, often for reasons unknown.</li>
+</ul>
+<p> The messages you see may vary from domain to domain, so be sure to read the error reasons in addition to referencing this list.</p>
