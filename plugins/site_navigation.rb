@@ -38,7 +38,7 @@ module Jekyll
 	  
     def files_first_traverse(prefix, node = {})
       output = ""
-      output += "#{prefix}<ul class=\"nav nav-list\">" 
+      output += "#{prefix}<ul id=\"nav-menu\" class=\"nav nav-list\">" 
       node_list = node.sort
       
       node_list.each do |base, subtree|
@@ -79,16 +79,18 @@ module Jekyll
           end
           
           if is_parent
-            li = "<li class=\"nav-header\"><a href=\"#{href}\">#{name}</a></li>"
+            li = "<li class=\"collapsibleListOpen\"><div class=\"subtree-name\">#{name}</div>"
           else
             li = "<li class=\"#{li_class}\"><a href=\"#{href}\">#{name}</a></li>"
           end
           
           output += "#{prefix}	#{li}"
           
-          #only recurse if the parent is selected. If a leaf is selected 
           output += files_first_traverse(prefix + '	 ', subtree)
 
+          if is_parent
+            output+= "</li>"
+          end
         end
       
         output += "#{prefix} </ul>"

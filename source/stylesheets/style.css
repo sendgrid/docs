@@ -145,3 +145,31 @@ body:before {
 .callout > a { color: rgb(240, 132, 2); }
 
 .label, .badge { font-size: 15px; }
+
+.navbar-search .search-icon {
+position: absolute;
+top: 0;
+right: 2px;
+display: block;
+width: 26px;
+height: 26px;
+cursor: pointer;
+}
+
+li.collapsibleListOpen{
+	padding: 3px 15px;
+	background: url('/images/minus.gif') no-repeat 0px 5px;
+	cursor: pointer;
+	padding-left: 17px;
+}
+
+.nav-menu .subtree-name: { padding: 3px 15px; }
+.subtree-name:hover{ background-color: #EEE; }
+.subtree-name:hover{ background-color: #EEE; }
+
+li.collapsibleListClosed{
+	padding: 3px 15px;
+	background: url('/images/plus.gif') no-repeat 0px 5px;
+	cursor: pointer;
+	padding-left: 17px;
+}
