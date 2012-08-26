@@ -140,7 +140,7 @@ body:before {
 	margin-top:-32767px;/
 }
 
-.sidebar-nav { border-right: 1px solid #ddd; font-size: 15px; }
+.sidebar-nav > #nav-menu { border-right: 1px solid #ddd; font-size: 15px; }
 
 .callout > a { color: rgb(240, 132, 2); }
 
