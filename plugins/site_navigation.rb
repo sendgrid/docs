@@ -72,14 +72,19 @@ module Jekyll
             end
           end
           
-          
           li_class = ""
+          
+          if @page_url.index(base)
+            list_class = "collapsibleListClosed"
+          end
+          
           if href == @page_url 
+
             li_class = "active"
           end
           
           if is_parent
-            li = "<li class=\"collapsibleListOpen\"><div class=\"subtree-name\">#{name}</div>"
+            li = "<li class=\"#{list_class}\"><div class=\"subtree-name\">#{name}</div>"
           else
             li = "<li class=\"#{li_class}\"><a href=\"#{href}\">#{name}</a></li>"
           end
