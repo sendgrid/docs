@@ -1,3 +1,5 @@
+require 'digest/md5'
+
 module Jekyll
 	# Add accessor for directory
 	class Page
@@ -78,13 +80,14 @@ module Jekyll
             list_class = "collapsibleListClosed"
           end
           
-          if href == @page_url 
-
+          if href == @page_url
             li_class = "active"
           end
           
           if is_parent
-            li = "<li class=\"#{list_class}\"><div class=\"subtree-name\">#{name}</div>"
+            id = Digest::MD5.hexdigest(base);
+
+            li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{name}</div>"
           else
             li = "<li class=\"#{li_class}\"><a href=\"#{href}\">#{name}</a></li>"
           end

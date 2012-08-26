@@ -1,5 +1,38 @@
+var saveTreeState = function(){
+	parent_nodes = $('.sidebar-nav .parent'); 
+
+	parent_nodes.each(function(i){		
+		open = $(this).hasClass('collapsibleListOpen');
+		$.jStorage.set($(this).attr('id'), open)
+	}); 
+}
+
+var loadTreeState = function(){
+	parent_nodes = $('.sidebar-nav .parent'); 
+
+	parent_nodes.each(function(i){		
+		node = $(this);
+		open = $.jStorage.get(node.attr('id'))
+
+		console.log(open);
+
+		// the toggle flips between states on load, so need to set them to the opposite
+		if (open){ 
+			console.log(node);
+			node.addClass('collapsibleListClosed');
+		}
+		else {
+			node.addClass('collapsibleListOpen');
+		}
+		
+	});
+}
+
 $(function() {
+	loadTreeState();
 	CollapsibleLists.applyTo(document.getElementById('nav-menu'));
+	
+	$('.collapsibleListOpen, .collapsibleListClosed').click(saveTreeState);
 	
     var navigation_offset_top = $('#nav-menu').offset().top;
 	var navigation_offset_left = $('#nav-menu').offset().left;
@@ -8,7 +41,7 @@ $(function() {
 	$(window).resize(function() {
 		navigation_offset_top = $('#nav-menu').offset().top;
 		navigation_offset_left = $('#nav-menu').offset().left;
-	 	navigation_width = $('#nav-menu').width();
+		navigation_width = $('#nav-menu').width();
 	});
 
 // our function that decides weather the navigation bar should have "fixed" css position or not.
