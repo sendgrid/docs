@@ -28,10 +28,10 @@ $(function() {
     };
 
     // run our function on load
-    sticky_navigation();
+    //sticky_navigation();
 
     // and run it again every time you scroll
     $(window).scroll(function() {
-         sticky_navigation();
+         //sticky_navigation();
     });
 });
