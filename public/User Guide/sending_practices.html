@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Sending Practices and Limitations - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview	API Reference API Libraries SMTP API Apps (Filters) Categories SMTP API Overview Section Tags Substitution Tags Unique Arguments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/User Guide/sending_practices.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/collapse.min.js"></script>
+  <script src="/javascripts/libs/jstorage.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+    <div class="row-fluid" id="content">
+      
+<aside class="sidebar-nav span3">
+    <ul id="nav-menu" class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	<li id="node-4ebc1e8463894c1f21bb0813fefe58dc" class="parent "><div class="subtree-name">API Reference</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	<li id="node-fa3589f70c8f5e335b3cb659bbe92020" class="parent "><div class="subtree-name">SMTP API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/index.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul></li>	 	<li id="node-2344b07f02628dc1eb8c9c591148c41f" class="parent "><div class="subtree-name">Webhooks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=><a href="/API Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-2fb05db87da3429460f69395c2678dcc" class="parent "><div class="subtree-name">API Workshop</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Workshop/index.html">API Workshop</a></li>	  </ul></li>	<li id="node-38b334e8c44bd2248734bd286ac5216a" class="parent "><div class="subtree-name">Apps</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Apps/address_whitelisting.html">Address Whitelisting</a></li>	 	 <li class=><a href="/Apps/bcc.html">BCC</a></li>	 	 <li class=><a href="/Apps/bypass_list_management.html">Bypass List Management</a></li>	 	 <li class=><a href="/Apps/click_tracking.html">Click Tracking</a></li>	 	 <li class=><a href="/Apps/dkim.html">DKIM</a></li>	 	 <li class=><a href="/Apps/domain_keys.html">Domain Keys</a></li>	 	 <li class=><a href="/Apps/email_templates.html">Email Templates</a></li>	 	 <li class=><a href="/Apps/event_notification.html">Event Notification</a></li>	 	 <li class=><a href="/Apps/footer.html">Footer</a></li>	 	 <li class=><a href="/Apps/forward_spam.html">Forward Spam</a></li>	 	 <li class=><a href="/Apps/google_analytics.html">Google Analytics</a></li>	 	 <li class=><a href="/Apps/gravatar.html">Gravatar</a></li>	 	 <li class=><a href="/Apps/index.html">Apps Overview</a></li>	 	 <li class=><a href="/Apps/open_tracking.html">Open Tracking</a></li>	 	 <li class=><a href="/Apps/return_path_seedlist.html">Return Path Seedlist</a></li>	 	 <li class=><a href="/Apps/spam_checker.html">Spam Checker</a></li>	 	 <li class=><a href="/Apps/subscription_tracking.html">Subscription Tracking</a></li>	  </ul></li>	<li id="node-b37c06ad4007a0f98fca75eeb0dbb3ca" class="parent "><div class="subtree-name">Code Examples</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	  </ul></li>	<li id="node-88682ba11f4657bc781dab389076dbaa" class="parent "><div class="subtree-name">Delivery Metrics</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Delivery Metrics/alerts.html">Alerts</a></li>	 	 <li class=><a href="/Delivery Metrics/categories.html">Categories</a></li>	 	 <li class=><a href="/Delivery Metrics/email_activity.html">Email Activity</a></li>	 	 <li class=><a href="/Delivery Metrics/email_error_messages.html">Email Error Messages</a></li>	 	 <li class=><a href="/Delivery Metrics/email_reports.html">Email Reports</a></li>	 	 <li class=><a href="/Delivery Metrics/index.html">Delivery Metrics</a></li>	  </ul></li>	<li id="node-2e85a09ef64e25ecd00fd36505c363bd" class="parent "><div class="subtree-name">Integrate</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Integrate/index.html">Integrate with SendGrid</a></li>	 	<li id="node-de77d58abe13de22cdbb8979bdcea918" class="parent "><div class="subtree-name">Frameworks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul></li>	 	<li id="node-56eedf923766ab032efeece2ea8e762a" class="parent "><div class="subtree-name">Mail Clients</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul></li>	 	<li id="node-ce98818760e307d986b75da117584908" class="parent "><div class="subtree-name">Mail Servers</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul></li>	 	<li id="node-56586b0511e1c223ed10016de929a8ed" class="parent "><div class="subtree-name">Open Source Apps</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-d7eeb8982bc2493631b06a9fde6e1b6d" class="parent collapsibleListClosed"><div class="subtree-name">User Guide</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/User Guide/billing.html">Billing and Account Changes</a></li>	 	 <li class=><a href="/User Guide/multiple_credentials.html">Multiple User Credentials</a></li>	 	 <li class=active><a href="/User Guide/sending_practices.html">Sending Practices and Limitations</a></li>	 	 <li class=><a href="/User Guide/smtp_ports.html">SMTP Ports</a></li>	 	 <li class=><a href="/User Guide/warming_up.html">Warming Up an IP Address</a></li>	 	 <li class=><a href="/User Guide/whitelabel_wizard.html">Whitelabel Wizard</a></li>	  </ul></li> </ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  <ul class="breadcrumb"><li><a href="/">Documentation</a><span class="divider">/</span></li><li><a href="/User Guide/">User Guide</a><span class="divider">/</span></li><li>Sending Practices and Limitations</li></ul>
+  
+  <header class="page-header">
+    <h1 class="entry-title">Sending Practices and Limitations</h1>
+    
+  </header>
+  
+  <p>As you begin to use your SendGrid account there are some important things to remember. For example, Lite and Free packages have limitations in the amount of email that can be sent each day. Free accounts are simply limited to 200 emails per day, but the <a href="/documentation/get-started/sending-practices-limitations/lite-limitations/">equation</a> for Lite packages is bit more complex.</p>
+
+<p>Additionally, there are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice referred to as throttling. <a href="/docs/email-deliverability/what-is-throttling/">Throttling</a> in terms of email means that a recipient mail server has accepted all the mail it is willing to accept from your IP for a certain period of time.</p>
+
+<p>If you have a Silver or higher package, you may want to read how to warm up your IP address to avoid having your outbound messaging throttled. <a href="http://docs.sendgrid.com/documentation/get-started/sending-practices-limitations/warming-up-your-ip-address/">We&#8217;ve got a great page on warming up your IP just for that</a>!
+</p>
+
+<h2>Lite Plan Volume Restrictions</h2>
+
+<p>Our Lite package has a bandwidth restriction to keep spammers from abusing our system. For the first 7 days you will be limited to 1,000 emails per day. After the 7th day we look into how many emails you have sent, how many days your account has been active, and check your reputation status. As the value of each of these parameters increases, your volume limitations will decrease.</p>
+
+<p>As you achieve each guideline after the 7-day period, your account limit will be raised incrementally. You must achieve all guidelines in one row before you can achieve any guideline on the next row. The below table lists the limitation factors, and how they affect your total.</p>
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Account Age</th>
+<th>Email Requests</th>
+<th>Send Reputation</th>
+<th>Daily Send Limit</th>
+</tr>
+<tr>
+<td>0 days</td>
+<td>&#8211;</td>
+<td>&#8211;</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>7 days
+<em>Adds 3,000</em></td>
+<td>50,000
+<em>Adds 3,000</em></td>
+<td>80%
+<em>Adds 3,000</em></td>
+<td>10,000</td>
+</tr>
+<tr>
+<td>14 days
+<em>Adds 30,000</em></td>
+<td>500,000
+<em>Adds 30,000</em></td>
+<td>90%
+<em>Adds 30,000</em></td>
+<td>100,000</td>
+</tr>
+<tr>
+<td>28 days
+<em>Adds 300,000</em></td>
+<td>5,000,000
+<em>Adds 300,000</em></td>
+<td>95%
+<em>Adds 300,000</em></td>
+<td>1,000,000</td>
+</tr>
+</tbody>
+</table>
+<p>For example:</p>
+<ul>
+	<li>If you have a 10 day old account (+3,000), have sent 10,000 messages (+0), and have a reputation of 91% (+3,000), you would have a Daily Send Limit of 7,000.</li>
+	<li>If you have a 15 day old account, have sent 49,000 messages, and have a reputation of 99%, you would have a Daily Send Limit of 7,000, because you can&#8217;t achieve the 14-day guideline until you achieve the 50,000-messages guideline.</li>
+</ul>
+
+<p>Please note that if your reputation declines, your limit will decrease accordingly. All these values are checked overnight, so they won&#8217;t update the moment you reach the next increment of any given parameter.</p>
+
+<h2>Peer Initiated Invitation Requirements</h2>
+
+<p>A peer-initiated invitation system can help your subscribers spread the word about your service and grow your user base—if done well. An aggressive invitation system can backfire, and your invitations will be filtered or blocked. SendGrid customers who implement a peer-initiated invitation system must abide by the following requirements:</p>
+
+<ul>
+	<li><strong>Never allow your subscribers to send invitations to their entire address book. </strong>Address books contain old, stale addresses that ISPs use as spam traps. A spam trap is an address that doesn’t send mail, and marks the mail it does receive as spam. If your invitations hit spam traps, your subsequent messages will be filtered by ISPs. To prevent this, design your invitation system so that your inviter must deliberately select each individual invitee.</li>
+	<li><strong>Limit the number of invitations each customer can send to encourage selective, quality invitations. </strong>When your customers are careful to invite only those who they think will appreciate your service, you reduce the risk of invitees reporting the invitations as spam. If enough people report your invitations as spam, your invitations will be blocked or filtered—not what you intended.</li>
+	<li><strong>Clearly display the inviter’s name or email address</strong>, so the invitee knows who sent the invitation. (Peer-initiated invitations are most effective when the invitee knows and trusts the inviter.)</li>
+	<li><strong>The invitation messages’ From address must reflect your brand.</strong> Don’t use the inviter’s email address for the invitation’s From address.</li>
+	<li><strong>Clearly express the purpose of the invitation. </strong>Recipients must understand what they are being invited to.</li>
+	<li><strong>After the initial invitation, don’t send more than one follow-up</strong> (reminder) email to invitees that didn’t respond to the first invitation.</li>
+</ul>
+
+<blockquote><span class="label label-info">Info</span> You increase the odds of your invitations reaching the recipient when you structure your systems and processes to send the right message, to the right person, at the right time, with the right frequency. If you don’t, your messages will be marked as spam and your marketing results will suffer.</blockquote>
+
+SendGrid also strongly recommends:<br>
+
+<ul>
+	<li>Ensure your invitation is relevant and valued by the recipient.</li>
+	<li>Let your inviters add a personal text-only message to their invitation. (No URLs, as they may be used to exploit or infect the invitee.)</li>
+	<li>Include a conspicuous, functioning opt-out link—it’s better for the recipient to remove themselves from future mailings than to report your message as spam.</li>
+	<li>Beware of offering invitation incentives to your subscribers. Incentives may encourage them to invite people who aren’t likely to want your service, and this could lead to backlash.</li>
+	<li>Monitor your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don’t want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.</li>
+	<li>Typos happen. Pre-screen the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct, and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).</li>
+</ul>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>

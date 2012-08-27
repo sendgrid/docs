@@ -14,11 +14,8 @@ var loadTreeState = function(){
 		node = $(this);
 		open = $.jStorage.get(node.attr('id'))
 
-		console.log(open);
-
 		// the toggle flips between states on load, so need to set them to the opposite
 		if (open){ 
-			console.log(node);
 			node.addClass('collapsibleListClosed');
 		}
 		else {
