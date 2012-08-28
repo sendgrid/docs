@@ -1,0 +1,335 @@
+---
+layout: page
+title: Profile
+navigation:
+  show: true
+---
+
+<h2>View your Sendgrid Profile</h2>
+
+<h2>Parameters</h2>
+<h3>There are no extra parameters required to view your profile information.</h3>
+<a name="get"></a>
+
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=secureSecret
+```
+
+<h3>Return</h3>
+```
+
+<users>
+  <user>
+    <username>sampleuser@example.com</username>
+    <email>sampleemail@example.com</email>
+    <active>true</active>
+    <first_name>john</first_name>
+    <last_name>doe</last_name>
+    <address>555 any street</address>
+    <city>any city</city>
+    <state>CA</state>
+    <zip>91234</zip>
+    <country>US</country>
+    <phone>555-555-5555</phone>
+    <website>example.com</website>
+  </user>
+</users>
+
+```
+
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.get.json?api_user=youremail@domain.com&api_key=secureSecret
+```
+
+<h3>Return</h3>
+```
+
+{"username":"sampleuser@example.com","email":"sampleemail@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+
+```
+
+<h2>Update Profile</h2>
+<h3>Parameters</h3>
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>first_name</td>
+<td>No</td>
+<td>Your first name</td>
+</tr>
+<tr>
+<td>last_name</td>
+<td>No</td>
+<td>Your last name</td>
+</tr>
+<tr>
+<td>address</td>
+<td>No</td>
+<td>Company address</td>
+</tr>
+<tr>
+<td>city</td>
+<td>No</td>
+<td>City where your company is located</td>
+</tr>
+<tr>
+<td>state</td>
+<td>No</td>
+<td>State where your company is located</td>
+</tr>
+<tr>
+<td>country</td>
+<td>No</td>
+<td>Country where your company is located</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>No</td>
+<td>Zipcode where your company is located</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>No</td>
+<td>Valid phone number where we can reach you</td>
+</tr>
+<tr>
+<td>website</td>
+<td>No</td>
+<td>Your company's website</td>
+</tr>
+</table>
+<p></p<
+
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
+```
+<h3>Return - Success</h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+```
+
+<h3>Return - Error</h3>
+```
+
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+
+<a name="set"></a>
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
+```
+<h3>Return - Success</h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
+<p>
+</p>
+<a name="setpassword"></a>
+<h2>Reset Password</h2>
+<h3>Parameters</h3>
+<h3>You can selectively update your profile without other information being modified.</h3>
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Requirements</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>password</td>
+<td>Yes</td>
+<td>Must be at least 6 characters</td>
+<td>Your new password</td>
+</tr>
+<tr>
+<td>confirm_password</td>
+<td>Yes</td>
+<td>Must match password parameter and be at least 6 characters long</td>
+<td>Confrim new password</td>
+</tr>
+<tr>
+</table>
+
+<h2>XML<h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
+```
+<h3>Return - Success</h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+<p>Return - Error</p>
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
+```
+<h3>Return - Success</h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
+<p>
+</p>
+<a name="setusername"></a>
+<h2>Update username</h2>
+<h3>Parameters</h3>
+<h3>Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.</h3>
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Requirements</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>username</td>
+<td>Yes</td>
+<td>Must not exceed 100 characters. The username cannot be already taken or contain the SendGrid.com domain</td>
+<td>This is the new username we will be authenticating with our SMTP servers and our website. Changes take effect immediately</td>
+</table>
+<p>
+</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
+```
+<h3>Return - Success</H3>
+```
+
+<result>
+  <message>success</message>
+</result>
+<p>Return - Error</p>
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+<p>
+</p>
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
+```
+<h2>Return - Success</h2>
+```
+{"message":"success"}
+```
+<h2>Return - Error</h2>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
+<p>
+</p>
+<p>
+</p>
+<a name="setemail"></a>
+<h2>Update Contact Email Address</h2>
+<h3>Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.</h3>
+<table class="table table-bordered table-striped">
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Requirements</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>email</td>
+<td>Yes</td>
+<td>Must be in email format and not more than 100 characters</td>
+<td>This is the new email address we will be contacting you with. Changes take effect immediately</td>
+</table>
+<p>
+</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
+```
+<h3>Return - Success</h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+<p>Return - Error</p>
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+</code?
+<p>
+</p>
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
+```
+<h3>Return - Success</h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
