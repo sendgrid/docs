@@ -9,7 +9,7 @@ navigation:
 
 <p>There are two ways to send email using SendGrid, through our SMTP relay or through our web API.
 
-<p>SMTP is usually the fastest way to get started since only 3 changes are needed. These SMTP changes include changing the username and password to your SendGrid credentials, and changing the server host name to <strong>smtp.sendgrid.net</strong>. The ports supported are 25 for TLS/plain connections, 465 for SSL connections, and 587 for TLS/plain connections. We recommend to use <strong>port 587</strong> to avoid rate limits set by some hosting companies.</p>
+<p>SMTP is usually the fastest way to get started since only 3 changes are needed. These SMTP changes include changing the username and password to your SendGrid credentials, and changing the server host name to <strong>smtp.sendgrid.net</strong>. The ports supported are 25 for TLS/plain connections, 465 for SSL connections, and 587 for TLS/plain connections. We recommend using <strong>port 587</strong> to avoid rate limits set by some hosting companies.</p>
 
 <h2>Receive Email From Your Application</h2>
 <p>Though SendGrid does store messages or provide mailboxes, SendGrid can parse the email bodies and attachments from incoming emails and post them to your web application.  Application examples include posting blog articles via email or processing email replies.  For details on how to integrate your application to start receiving emails please refer to our <a href="/documentation/api/parse-api/">Parse API</a>.
@@ -18,7 +18,7 @@ navigation:
 
 <p>The best method to send email through SendGrid is to set up a local mail server, such as Postfix, that queues all email from your application, and then relays the messages through SendGrid as a smart host. This will have the least latency from your application’s perspective, and has the added benefit of handing your email off to a server that is fault tolerant. If something goes wrong with internet connectivity between your servers and ours, a local mail server can gracefully handle queuing and resending the email, as opposed to having to build that intelligence into your sending application. Local mail servers also have advantages at high volume of being able to use some of the more complex parts of the SMTP protocol, such as connection reuse and pipelining. With these techniques a mail server will be able to send significantly more traffic in a given time than if you have individual scripts making connections for each message.</p>
 
-<p>However, many people want to use SendGrid for the purpose of getting away from the need to have a local mail server. At that point, SendGrid’s recommendation to use SMTP is based on the large number of libraries and documentation available for that protocol. SendGrid is a big believer in open standards, and for sending email SMTP is the standard.</p>
+<p>However, many people want to use SendGrid for the purpose of getting away from the need to have a local mail server. At that point, our recommendation is to use SMTP is based on the large number of libraries and documentation available for that protocol.</p>
 
 <p>On the other hand, there are some cases where the web API has some advantages: </p>
 
