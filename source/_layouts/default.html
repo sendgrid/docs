@@ -4,7 +4,11 @@
 
   <div class="main-container container">  
   {% include header.html %}
+	{% if page.fluid == false %}
+    <div class="row" id="content">
+	{% else %}
     <div class="row-fluid" id="content">
+	{% endif %}
       {{ content | expand_urls: root_url }}
     </div>
   </div>

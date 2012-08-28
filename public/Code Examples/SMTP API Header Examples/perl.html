@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Perl - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview	API Reference API Libraries SMTP API Apps (Filters) Categories SMTP API Overview Section Tags Substitution Tags Unique Arguments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/Code Examples/SMTP API Header Examples/perl.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/collapse.min.js"></script>
+  <script src="/javascripts/libs/jstorage.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+	
+    <div class="row-fluid" id="content">
+	
+      
+<aside class="sidebar-nav span3">
+    <ul id="nav-menu" class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	<li id="node-4ebc1e8463894c1f21bb0813fefe58dc" class="parent "><div class="subtree-name">API Reference</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	<li id="node-fa3589f70c8f5e335b3cb659bbe92020" class="parent "><div class="subtree-name">SMTP API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/index.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul></li>	 	<li id="node-2344b07f02628dc1eb8c9c591148c41f" class="parent "><div class="subtree-name">Webhooks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=><a href="/API Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-2fb05db87da3429460f69395c2678dcc" class="parent "><div class="subtree-name">API Workshop</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Workshop/index.html">API Workshop</a></li>	  </ul></li>	<li id="node-38b334e8c44bd2248734bd286ac5216a" class="parent "><div class="subtree-name">Apps</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Apps/address_whitelisting.html">Address Whitelisting</a></li>	 	 <li class=><a href="/Apps/bcc.html">BCC</a></li>	 	 <li class=><a href="/Apps/bypass_list_management.html">Bypass List Management</a></li>	 	 <li class=><a href="/Apps/click_tracking.html">Click Tracking</a></li>	 	 <li class=><a href="/Apps/dkim.html">DKIM</a></li>	 	 <li class=><a href="/Apps/domain_keys.html">Domain Keys</a></li>	 	 <li class=><a href="/Apps/email_templates.html">Email Templates</a></li>	 	 <li class=><a href="/Apps/event_notification.html">Event Notification</a></li>	 	 <li class=><a href="/Apps/footer.html">Footer</a></li>	 	 <li class=><a href="/Apps/forward_spam.html">Forward Spam</a></li>	 	 <li class=><a href="/Apps/google_analytics.html">Google Analytics</a></li>	 	 <li class=><a href="/Apps/gravatar.html">Gravatar</a></li>	 	 <li class=><a href="/Apps/index.html">Apps Overview</a></li>	 	 <li class=><a href="/Apps/open_tracking.html">Open Tracking</a></li>	 	 <li class=><a href="/Apps/return_path_seedlist.html">Return Path Seedlist</a></li>	 	 <li class=><a href="/Apps/spam_checker.html">Spam Checker</a></li>	 	 <li class=><a href="/Apps/subscription_tracking.html">Subscription Tracking</a></li>	  </ul></li>	<li id="node-b37c06ad4007a0f98fca75eeb0dbb3ca" class="parent collapsibleListClosed"><div class="subtree-name">Code Examples</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	 	<li id="node-bf75fa0aaadabb89be80f00ca0258363" class="parent collapsibleListClosed"><div class="subtree-name">SMTP API Header Examples</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=active><a href="/Code Examples/SMTP API Header Examples/perl.html">Perl</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/php.html">PHP</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/python.html">Python</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/ruby.html">Ruby</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-88682ba11f4657bc781dab389076dbaa" class="parent "><div class="subtree-name">Delivery Metrics</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Delivery Metrics/alerts.html">Alerts</a></li>	 	 <li class=><a href="/Delivery Metrics/categories.html">Categories</a></li>	 	 <li class=><a href="/Delivery Metrics/email_activity.html">Email Activity</a></li>	 	 <li class=><a href="/Delivery Metrics/email_error_messages.html">Email Error Messages</a></li>	 	 <li class=><a href="/Delivery Metrics/email_reports.html">Email Reports</a></li>	 	 <li class=><a href="/Delivery Metrics/index.html">Delivery Metrics</a></li>	  </ul></li>	<li id="node-2e85a09ef64e25ecd00fd36505c363bd" class="parent "><div class="subtree-name">Integrate</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Integrate/index.html">Integrate with SendGrid</a></li>	 	<li id="node-de77d58abe13de22cdbb8979bdcea918" class="parent "><div class="subtree-name">Frameworks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul></li>	 	<li id="node-56eedf923766ab032efeece2ea8e762a" class="parent "><div class="subtree-name">Mail Clients</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul></li>	 	<li id="node-ce98818760e307d986b75da117584908" class="parent "><div class="subtree-name">Mail Servers</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul></li>	 	<li id="node-56586b0511e1c223ed10016de929a8ed" class="parent "><div class="subtree-name">Open Source Apps</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-d7eeb8982bc2493631b06a9fde6e1b6d" class="parent "><div class="subtree-name">User Guide</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/User Guide/billing.html">Billing and Account Changes</a></li>	 	 <li class=><a href="/User Guide/multiple_credentials.html">Multiple User Credentials</a></li>	 	 <li class=><a href="/User Guide/sending_practices.html">Sending Practices and Limitations</a></li>	 	 <li class=><a href="/User Guide/smtp_ports.html">SMTP Ports</a></li>	 	 <li class=><a href="/User Guide/warming_up.html">Warming Up an IP Address</a></li>	 	 <li class=><a href="/User Guide/whitelabel_wizard.html">Whitelabel Wizard</a></li>	  </ul></li> </ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  <ul class="breadcrumb"><li><a href="/">Documentation</a><span class="divider">/</span></li><li><a href="/Code Examples/">Code Examples</a><span class="divider">/</span></li><li><a href="/Code Examples/SMTP API Header Examples/">SMTP API Header Examples</a><span class="divider">/</span></li><li>Perl</li></ul>
+  
+  <header class="page-header">
+    <h1 class="entry-title">Perl</h1>
+    
+  </header>
+  
+  <h2>SmtpApiHeader.pm</h2>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="c1">#!/usr/bin/perl</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Version 1.0</span>
+</span><span class='line'><span class="c1"># Last Updated 6/22/2009</span>
+</span><span class='line'><span class="k">use</span> <span class="n">strict</span><span class="p">;</span>
+</span><span class='line'><span class="nb">package</span> <span class="n">SmtpApiHeader</span><span class="p">;</span>
+</span><span class='line'><span class="k">use</span> <span class="n">JSON</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">new</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">@a</span> <span class="o">=</span> <span class="p">();</span>
+</span><span class='line'>  <span class="nv">$self</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&#39;data&#39;</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="p">}};</span>
+</span><span class='line'>  <span class="nb">bless</span><span class="p">(</span><span class="nv">$self</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nv">$self</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">addTo</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">@to</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+</span><span class='line'>  <span class="nb">push</span><span class="p">(</span><span class="nv">@</span><span class="p">{</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">to</span><span class="p">}},</span> <span class="nv">@to</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">addSubVal</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$var</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">@val</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">sub</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$var</span><span class="p">}))</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">sub</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$var</span><span class="p">}</span> <span class="o">=</span> <span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nb">push</span><span class="p">(</span><span class="nv">@</span><span class="p">{</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">sub</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$var</span><span class="p">}},</span> <span class="nv">@val</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">setUniqueArgs</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$val</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="nb">ref</span><span class="p">(</span><span class="nv">$val</span><span class="p">)</span> <span class="ow">eq</span> <span class="s">&#39;HASH&#39;</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">unique_args</span><span class="p">}</span> <span class="o">=</span> <span class="nv">$val</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">setCategory</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$cat</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">category</span><span class="p">}</span> <span class="o">=</span> <span class="nv">$cat</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">addFilterSetting</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$filter</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$setting</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$val</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">filters</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$filter</span><span class="p">}))</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">filters</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$filter</span><span class="p">}</span> <span class="o">=</span> <span class="p">{};</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">filters</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$filter</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">settings</span><span class="p">}))</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">filters</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$filter</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">settings</span><span class="p">}</span> <span class="o">=</span> <span class="p">{};</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">filters</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$filter</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">settings</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="nv">$setting</span><span class="p">}</span> <span class="o">=</span> <span class="nv">$val</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">asJSON</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$json</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">;</span>
+</span><span class='line'>  <span class="nv">$json</span><span class="o">-&gt;</span><span class="n">space_before</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>  <span class="nv">$json</span><span class="o">-&gt;</span><span class="n">space_after</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nv">$json</span><span class="o">-&gt;</span><span class="n">encode</span><span class="p">(</span><span class="nv">$self</span><span class="o">-&gt;</span><span class="p">{</span><span class="n">data</span><span class="p">});</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">sub </span><span class="nf">as_string</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$json</span> <span class="o">=</span> <span class="nv">$self</span><span class="o">-&gt;</span><span class="n">asJSON</span><span class="p">;</span>
+</span><span class='line'>  <span class="nv">$json</span> <span class="o">=~</span> <span class="sr">s/(.{1,72})(\s)/$1\n   /g</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">my</span> <span class="nv">$str</span> <span class="o">=</span> <span class="s">&quot;X-SMTPAPI: $json&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">return</span> <span class="nv">$str</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+<h2>Example Perl Usage</h2>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'><span class="c1">#!/usr/bin/perl</span>
+</span><span class='line'><span class="k">use</span> <span class="n">SmtpApiHeader</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">@receiver</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;kyle&#39;</span><span class="p">,</span><span class="s">&#39;bob&#39;</span><span class="p">,</span><span class="s">&#39;someguy&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">$hdr</span> <span class="o">=</span> <span class="n">SmtpApiHeader</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">$time</span> <span class="o">=</span> <span class="s">&#39;1pm&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$name</span> <span class="o">=</span> <span class="s">&#39;kyle&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addFilterSetting</span><span class="p">(</span><span class="s">&#39;subscriptiontrack&#39;</span><span class="p">,</span> <span class="s">&#39;enable&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addFilterSetting</span><span class="p">(</span><span class="s">&#39;twitter&#39;</span><span class="p">,</span> <span class="s">&#39;enable&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addTo</span><span class="p">(</span><span class="nv">@receiver</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addTo</span><span class="p">(</span><span class="s">&#39;kyle2&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addSubVal</span><span class="p">(</span><span class="s">&#39;-time-&#39;</span><span class="p">,</span> <span class="nv">$time</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addSubVal</span><span class="p">(</span><span class="s">&#39;-name-&#39;</span><span class="p">,</span> <span class="nv">$time</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">setUniqueArgs</span><span class="p">({</span><span class="s">&#39;test&#39;</span><span class="o">=&gt;</span><span class="mi">1</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="o">=&gt;</span><span class="mi">2</span><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">print</span> <span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">as_string</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">print</span> <span class="s">&quot;\n&quot;</span><span class="p">;</span>
+</span><span class='line'> <span class="sr">&lt;/code&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;h2&gt;</span><span class="n">Full</span> <span class="n">Perl</span> <span class="n">Example</span><span class="sr">&lt;/h2&gt;</span>
+</span><span class='line'> <span class="sr">&lt;p&gt;</span><span class="n">The</span> <span class="n">following</span> <span class="n">code</span> <span class="n">builds</span> <span class="n">a</span> <span class="n">MIME</span> <span class="n">mail</span> <span class="n">message</span> <span class="n">demonstrating</span> <span class="n">all</span> <span class="n">the</span> <span class="n">portions</span> <span class="n">of</span> <span class="n">the</span> <span class="n">SMTP</span> <span class="n">API</span> <span class="n">protocol</span><span class="o">.</span> <span class="n">To</span> <span class="k">use</span> <span class="n">this</span> <span class="n">example</span><span class="p">,</span> <span class="n">you</span> <span class="n">will</span> <span class="n">need</span> <span class="n">to</span> <span class="n">have</span> <span class="n">the</span> <span class="n">following</span> <span class="n">perl</span> <span class="n">modules</span> <span class="n">installed:</span><span class="sr">&lt;/p&gt;</span>
+</span><span class='line'> <span class="o">&lt;</span><span class="n">ul</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;regular&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="sr">&lt;li&gt;</span><span class="nn">MIME::</span><span class="n">Entity</span><span class="sr">&lt;/li&gt;</span>
+</span><span class='line'>    <span class="sr">&lt;li&gt;</span><span class="nn">Authen::</span><span class="n">SASL</span><span class="sr">&lt;/li&gt;</span>
+</span><span class='line'>    <span class="sr">&lt;li&gt;</span><span class="n">JSON</span><span class="sr">&lt;/li&gt;</span>
+</span><span class='line'> <span class="sr">&lt;/ul&gt;</span>
+</span><span class='line'> <span class="sr">&lt;code&gt;</span>
+</span><span class='line'><span class="c1">#!/usr/bin/perl</span>
+</span><span class='line'><span class="k">use</span> <span class="n">strict</span><span class="p">;</span>
+</span><span class='line'><span class="k">use</span> <span class="n">SmtpApiHeader</span><span class="p">;</span>
+</span><span class='line'><span class="k">use</span> <span class="nn">MIME::</span><span class="n">Entity</span><span class="p">;</span>
+</span><span class='line'><span class="k">use</span> <span class="nn">Net::</span><span class="n">SMTP</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">$hdr</span> <span class="o">=</span> <span class="n">SmtpApiHeader</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># The list of addresses this message will be sent to</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">@toList</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;isaac@example&#39;</span><span class="p">,</span> <span class="s">&#39;tim@example&#39;</span><span class="p">,</span> <span class="s">&#39;jose@example&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># The names of the recipients</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">@nameList</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;Isaac&#39;</span><span class="p">,</span> <span class="s">&#39;Tim&#39;</span><span class="p">,</span> <span class="s">&#39;Jose&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Another subsitution variable</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">@timeList</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;4pm&#39;</span><span class="p">,</span> <span class="s">&#39;1pm&#39;</span><span class="p">,</span> <span class="s">&#39;2pm&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Set all of the above variables</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addTo</span><span class="p">(</span><span class="nv">@toList</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addSubVal</span><span class="p">(</span><span class="s">&#39;-name-&#39;</span><span class="p">,</span> <span class="nv">@nameList</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addSubVal</span><span class="p">(</span><span class="s">&#39;-time-&#39;</span><span class="p">,</span> <span class="nv">@timeList</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Specify that this is an initial contact message</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">setCategory</span><span class="p">(</span><span class="s">&quot;initial&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Enable a text footer and set it</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addFilterSetting</span><span class="p">(</span><span class="s">&#39;footer&#39;</span><span class="p">,</span> <span class="s">&#39;enable&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">addFilterSetting</span><span class="p">(</span><span class="s">&#39;footer&#39;</span><span class="p">,</span> <span class="s">&quot;text/plain&quot;</span><span class="p">,</span> <span class="s">&quot;Thank you for your business&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">$from</span> <span class="o">=</span> <span class="s">&#39;you@yourdomain.com&#39;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># For multiple recipient e-mails, the &#39;to&#39; address is irrelivant</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$to</span> <span class="o">=</span> <span class="s">&#39;doesntmatter@nowhere.com&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$plain</span> <span class="o">=</span> <span class="s">&lt;&lt;EOM;</span>
+</span><span class='line'><span class="s">Hello -name-,</span>
+</span><span class='line'><span class="s"> </span>
+</span><span class='line'><span class="s">Thank you for your interest in our products. We have set up an appointment</span>
+</span><span class='line'><span class="s">to call you at -time- EST to discuss your needs in more detail.</span>
+</span><span class='line'><span class="s"> </span>
+</span><span class='line'><span class="s">Regards,</span>
+</span><span class='line'><span class="s">Fred</span>
+</span><span class='line'><span class="s">EOM</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">my</span> <span class="nv">$html</span> <span class="o">=</span> <span class="s">&lt;&lt;EOM;</span>
+</span><span class='line'><span class="s">&lt;html&gt;</span>
+</span><span class='line'><span class="s"> &lt;head&gt;&lt;/head&gt;</span>
+</span><span class='line'><span class="s"> &lt;body&gt;</span>
+</span><span class='line'><span class="s">  &lt;p&gt;Hello -name-,&lt;br /&gt;</span>
+</span><span class='line'><span class="s">   Thank you for your interest in our products. We have set up an appointment&lt;br /&gt;</span>
+</span><span class='line'><span class="s">   to call you at -time- EST to discuss your needs in more detail.&lt;br /&gt;</span>
+</span><span class='line'><span class="s"> </span>
+</span><span class='line'><span class="s">    Regards,&lt;br /&gt;</span>
+</span><span class='line'><span class="s">    Fred&lt;br /&gt;</span>
+</span><span class='line'><span class="s">  &lt;/p&gt;</span>
+</span><span class='line'><span class="s"> &lt;/body&gt;</span>
+</span><span class='line'><span class="s">&lt;/html&gt;</span>
+</span><span class='line'><span class="s">EOM</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Create the MIME message that will be sent. Check out MIME::Entity on CPAN for more details</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$mime</span> <span class="o">=</span> <span class="nn">MIME::</span><span class="n">Entity</span><span class="o">-&gt;</span><span class="n">build</span><span class="p">(</span><span class="n">Type</span>  <span class="o">=&gt;</span> <span class="s">&#39;multipart/alternative&#39;</span> <span class="p">,</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Encoding</span> <span class="o">=&gt;</span> <span class="s">&#39;-SUGGEST&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="n">From</span> <span class="o">=&gt;</span> <span class="nv">$from</span><span class="p">,</span>
+</span><span class='line'><span class="n">To</span> <span class="o">=&gt;</span> <span class="nv">$to</span><span class="p">,</span>
+</span><span class='line'><span class="n">Subject</span> <span class="o">=&gt;</span> <span class="s">&#39;Contact Response for &lt;name&gt; at &lt;time&gt;&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Add the header</span>
+</span><span class='line'><span class="nv">$mime</span><span class="o">-&gt;</span><span class="n">head</span><span class="o">-&gt;</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;X-SMTPAPI&quot;</span><span class="p">,</span> <span class="nv">$hdr</span><span class="o">-&gt;</span><span class="n">asJSON</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Add body</span>
+</span><span class='line'><span class="nv">$mime</span><span class="o">-&gt;</span><span class="n">attach</span><span class="p">(</span><span class="n">Type</span> <span class="o">=&gt;</span> <span class="s">&#39;text/plain&#39;</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Encoding</span> <span class="o">=&gt;</span><span class="s">&#39;-SUGGEST&#39;</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Data</span> <span class="o">=&gt;</span> <span class="nv">$plain</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$mime</span><span class="o">-&gt;</span><span class="n">attach</span><span class="p">(</span><span class="n">Type</span> <span class="o">=&gt;</span> <span class="s">&#39;text/html&#39;</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Encoding</span> <span class="o">=&gt;</span><span class="s">&#39;-SUGGEST&#39;</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Data</span> <span class="o">=&gt;</span> <span class="nv">$html</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Login credentials</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$username</span> <span class="o">=</span> <span class="s">&#39;yourlogin@sendgrid.net&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$password</span> <span class="o">=</span> <span class="s">&quot;yourpassword&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Open a connection to the SendGrid mail server</span>
+</span><span class='line'><span class="k">my</span> <span class="nv">$smtp</span> <span class="o">=</span> <span class="nn">Net::</span><span class="n">SMTP</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">(</span><span class="s">&#39;smtp.sendgrid.net&#39;</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Port</span><span class="o">=&gt;</span> <span class="mi">25</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Timeout</span> <span class="o">=&gt;</span> <span class="mi">20</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">Hello</span> <span class="o">=&gt;</span> <span class="s">&quot;yourdomain.com&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Authenticate</span>
+</span><span class='line'><span class="nv">$smtp</span><span class="o">-&gt;</span><span class="n">auth</span><span class="p">(</span><span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Send the rest of the SMTP stuff to the server</span>
+</span><span class='line'><span class="nv">$smtp</span><span class="o">-&gt;</span><span class="n">mail</span><span class="p">(</span><span class="nv">$from</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$smtp</span><span class="o">-&gt;</span><span class="n">to</span><span class="p">(</span><span class="nv">$to</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$smtp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">(</span><span class="nv">$mime</span><span class="o">-&gt;</span><span class="n">stringify</span><span class="p">);</span>
+</span><span class='line'><span class="nv">$smtp</span><span class="o">-&gt;</span><span class="n">quit</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>
