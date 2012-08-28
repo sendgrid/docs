@@ -1,0 +1,131 @@
+This module allows you to retrieve and delete entries in the Spam Reports list.
+
+<a name="get"></a>
+<h2>get</h2>
+Retrieve a list of spam reports with addresses and response codes, optionally with dates.
+<h3>Parameters</h3>
+<table>
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Requirements</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>date</td>
+<td>No</td>
+<td>Must be set to 1</td>
+<td>Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+</tr>
+<tr>
+<td>days</td>
+<td>No</td>
+<td>If specified, must be an integer greater than 0</td>
+<td>Number of days in the past for which to retrieve spam reports (includes today)</td>
+</tr>
+<tr>
+<td>start_date</td>
+<td>No</td>
+<td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
+<td>The start of the date range for which to retrieve spam reports.</td>
+</tr>
+<tr>
+<td>end_date</td>
+<td>No</td>
+<td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
+<td>The end of the date range for which to retrieve spam reports.</td>
+</tr>
+   <tr> 
+      <td>limit</td> 
+      <td>No</td> 
+      <td>some integer</td> 
+      <td>Optional field to limit the number of results returned.</td> 
+    </tr> 
+    <tr> 
+      <td>offset</td> 
+      <td>No</td> 
+      <td>some integer</td> 
+      <td>optional beginning point in the list to retrieve from.</td> 
+    </tr> 
+    <tr> 
+      <td>email</td> 
+      <td>No</td> 
+      <td>email address eg testing@example.com</td> 
+      <td>optional email addresses to search for.</td> 
+    </tr> 
+</tbody>
+</table>
+<h2>XML</h2>
+<h3>Command</h3>
+<code>
+https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+</code>
+<h3>Return</h3>
+<code>
+
+
+email1@domain.com
+5.1.1
+host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
+2009-06-10 12:40:30
+
+
+email2@domain2.com
+5.1.1
+host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
+2009-08-01 10:16:30
+
+</code>
+<h3>NOTE:</h3>
+<code> tags will not populate unless date is set</code>
+<a name="delete"></a>
+<h2>delete</h2>
+Delete an address from the Spam Reports list.
+<h3>Parameters</h3>
+<table>
+<tbody>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Requirements</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>email</td>
+<td>Yes</td>
+<td>Must be a valid user account email</td>
+<td>Email spam reports address to remove</td>
+</tr>
+</tbody>
+</table>
+<h2>XML</h2>
+<h3>Command</h3>
+<code>
+https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+</code>
+<h3>Return-Sucess</h3>
+<code>
+
+success
+
+</code>
+<h3>Return-Error</h3>
+<code>
+
+Email does not exist
+
+</code>
+<h2>JSON</h2>
+<h3>Command</h3>
+<code>
+https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+</code>
+<h3>Return-Sucess</h3>
+<code>
+{"message":"success"}
+</code>
+<h3>Return-Error</h3>
+<code>
+{"message":"error","errors":[..."error messages"...]}
+</code>

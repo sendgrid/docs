@@ -1,0 +1,383 @@
+---
+layout: page
+title: Filter Settings
+navigation:
+  show: true
+---
+
+<p>For a more detailed description of each of the Apps below, please visit the <a href="/documentation/apps">Apps</a> page.</p>
+
+<h2>Address Whitelist</h2> [API App Name:  "addresswhitelist"]
+
+<blockquote><span class="label label-info">Info</span> When using this call, you must define all emails &amp; domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call.</blockquote>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>list</td>
+<td>A list of email addresses or domains.</td>
+<td>Ex: list[]=support@example.com&list[]=sale@example.com}</td>
+</tr>
+</table>
+
+
+
+<h2>BCC "Blind Carbon Copy"</h2> [API app name: "bcc"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>bcc</td>
+<td>An email address to be the BCC recipient.</td>
+<td>email@example.com</td>
+</tr>
+</table>
+
+<h2>Click Tracking</h2> [API app name: "clicktrack"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>enable_text</td>
+<td>Enable click tracking in plain text emails.</td>
+<td>0|1</td>
+</tr>
+</table>
+
+
+<h2>Domain Keys</h2> [API app name:"domainkeys"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<td>domain</td>
+<td>The domain to sign messages as</td>
+<td>example.com</td>
+</tr>
+<td>sender</td>
+<td>1 to insert a sender header if the domain specified does not match the from address
+0 to never insert a Sender header</td>
+<td>0|1</td>
+</tr>
+<td>use_from</td>
+<td>1 to use the domain in the From address of the email for signing. If this is set, the domain setting must not be set. If the domain setting is present it will overwrite the use_from setting.
+0 to use the domain setting.</td>
+<td>0|1</td>
+</tr>
+</table>
+
+<h2>DKIM</h2> [API app name:"dkim"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<td>domain</td>
+<td>The domain you would like your DKIM certification signed with</td>
+<td>example.com</td>
+</tr>
+<td>use_from</td>
+<td>If enabled, the domain in the From: header of the email will be used to sign your DKIM</td>
+<td>0|1</td>
+</tr>
+</table>
+
+<h2>Email Templates</h2> [API app name:"template"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<td>text_html</td>
+<td>A string that holds the template html body</td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
+</tr>
+</table>
+
+<h2>Event Notification</h2> [API app name:"eventnotify"]
+
+<blockquote class="note"><strong>NOTE &gt;&gt; </strong>All fields are required for each call.</blockquote>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>processed</td>
+<td>Notify when email is processed</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>dropped</td>
+<td>Notify when email is dropped</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>deferred</td>
+<td>Notify when email is deferred</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>delivered</td>
+<td>Notify when email is delivered</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>bounce</td>
+<td>Notify when email is bounced</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>click</td>
+<td>Notify when email is clicked</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Notify when email is opened</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>unsubscribe</td>
+<td>Notify when email is unsubscribed</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>spamreport</td>
+<td>Notify when email is marked as spam</td>
+<td>0|1</td>
+</tr>
+<tr>
+<td>url</td>
+<td>The post notification url to post these event messages to</td>
+<td>url=http://yourPostNotificationUrl.example.com</td>
+</tr>
+</table>
+
+
+<h2>Footer</h2> [API app name:"footer"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>text_html</td>
+<td>String that holds the html body</td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
+</tr>
+<tr>
+<td>text_plain</td>
+<td>String that holds the text body</td>
+<td>Content</td>
+</tr>
+</table>
+
+
+<h2>Google Analytics</h2> [API app name:"ganalytics"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>utm_source</td>
+<td>Name of the referrer source</td>
+<td>Google, SomeDomain.com, or NewsletterA</td>
+</tr>
+<tr>
+<td>utm_medium</td>
+<td>Name of the marketing medium</td>
+<td>Email, Affiliate, or MobileApp</td>
+</tr>
+<tr>
+<td>utm_campaign</td>
+<td>Name of the campaign</td>
+<td>Quarter1, FallShoeSale</td>
+</tr>
+<tr>
+<td>utm_term</td>
+<td>Identify paid keywords</td>
+<td>Poultry, Health</td>
+</tr>
+<tr>
+<td>utm_content</td>
+<td>Use to differentiate ads</td>
+<td>PageA, PageB</td>
+</tr>
+</table>
+
+
+<h2>Gravatar</h2> [API app name:"gravatar"]
+
+<table class="table table-bordered table-striped">
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>None</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table>
+
+
+
+<h2>Open Tracking</h2> [API app name:"opentrack"]
+
+<table class="table table-bordered table-striped">
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>None</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table>
+
+
+
+<h2>Return Path Seedlist</h2> [API app name:"seedlist"]
+
+<table class="table table-bordered table-striped">
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>seedlist_option</td>
+<td></td>
+<td></td>
+</tr>
+</tr>
+<td>frequency</td>
+<td>The number of times per day the Seedlist should be used</td>
+<td> </td>
+</tr>
+<tr>
+<td>keyword_frequency</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>keywords</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>type</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>list</td>
+<td>The addresses in the Seedlist</td>
+<td>www.example.com/mylist.csv</td>
+</tr>
+</table>
+
+
+
+<h2>SPAM Filter Checker</h2> [API app name:"spamcheck"]
+
+<table class="table table-bordered table-striped">
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>maxscore</td>
+<td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam</td>
+<td>www.example.com/spamcheck.php</td>
+</tr>
+</table>
+
+
+
+<h2>Subscription Tracking</h2> [API app name:"subscriptiontrack"]
+
+<table class="table table-bordered table-striped">
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>text/html</td>
+<td>String for the HTML e-mail body</td>
+<td>If you would like to unsubscribe and stop receiving these emails &#38;lt;% click here %&#38;gt;</td>
+</tr>
+<tr>
+<td>text/plain</td>
+<td>String for the plain text e-mail body</td>
+<td>If you would like to unsubscribe and stop receiving these emails click here: <% %>.</td>
+</tr>
+<tr>
+<td>url</td>
+<td>a URL the customer will be redirected to on clicking the subscription management link</td>
+<td>www.example.com/UnsubscribeLandingPage</td>
+</tr>
+<tr>
+<td>landing</td>
+<td>HTML content for a landing page that will be displayed by SendGrid</td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link</td>
+<td>[unsubscribe_tag]</td>
+</tr>
+</table>
+
+
+<h2>Twitter</h2> [API app name:"twitter"]
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>username</td>
+<td>Your Twitter username</td>
+<td>username</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Your Twitter password</td>
+<td>password</td>
+</tr>
+</table>

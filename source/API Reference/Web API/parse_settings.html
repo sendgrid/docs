@@ -1,0 +1,177 @@
+---
+layout: page
+title: Parse Webhook Settings
+navigation:
+  show: true
+---
+
+<a name="get"></a>
+<h2>Get Current Settings</h2>
+<p>Pull down the settings already configured for parsing incoming email.</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
+```
+<h3>Return - Success</h3>
+```
+
+<parse>
+  <entry>
+    <hostname>www.example.com</hostname>
+    <url>www.mydomain.com/parse.php</url>
+    <spam_check>1</spam_check>
+  </entry>
+</parse>
+
+```
+<h3>Return - Empty Set</h3>
+```
+<parse></parse>  
+```
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
+```
+<h3>Return - Success</h3>
+```
+{"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}
+```
+<h3>Return - Empty Set</h3>
+```
+{"parse":[]}
+```
+<br>
+
+</br>
+<a name="set"></a>
+<h2>Set New Entry</h2>
+<p>Specify the hostname and url for parsing incoming emails.</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+```
+
+<h3>Return - Success<h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+
+```
+<br></br>
+<h3>Return - Error</h3>
+```
+
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+```
+<h3>Return - Success </h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
+<br>
+
+</br>
+<a name="edit"></a>
+<h2>Edit Entry</h2>
+<p>Edit your existing settings for parsing incoming emails.</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+```
+<h3>Return - Success</h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+
+```
+<h3>Return - Error</h3>
+```
+
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+```
+<h3>Return - Success</h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
+<br>
+
+</br>
+<a name="delete"></a>
+<h2>Delete Entry</h2>
+<p>Delete the existing settings for parsing incoming emails.</p>
+<h2>XML</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+```
+<h3>Return - Success</h3>
+```
+
+<result>
+  <message>success</message>
+</result>
+Return - Error
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+
+```
+<h2>JSON</h2>
+<h3>Command</h3>
+```
+https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+```
+<h3>Return - Success</h3>
+```
+{"message":"success"}
+```
+<h3>Return - Error</h3>
+```
+{"message":"error","errors":[..."error messages"...]}
+```
