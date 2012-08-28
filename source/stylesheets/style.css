@@ -6,6 +6,8 @@ body {
 
 li { line-height:22px; }
 
+blockquote { background-color: #FFFFED; }
+
 #header {
 	height: 58px;
 	padding-top: 20px;
