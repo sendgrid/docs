@@ -1,0 +1,224 @@
+---
+layout: page
+title: Sender Address
+navigation:
+  show: true
+---
+
+<p>This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Newsletter feature.</p>
+
+<hr/>
+
+<a name="add"></a>
+<h2>add</h2>
+<p>Create a new Address.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Identity</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Create an Address named this.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the name to be used for this Address.</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Yes</td>
+      <td>Email address format, complying with <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a></td>
+      <td>Specify the email address to be used for this Address.</td>
+    </tr>
+    <tr>
+      <td>replyto</td>
+      <td>No</td>
+      <td>Email address format, complying with <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a></td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the <em>email</em> parameter.</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the physical address to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the city to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>state</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the state code to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the zip code to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>Specify the country code to be used for this Address.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="edit"></a>
+<h2>edit</h2>
+<p>Edit an existing Address.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Address.</td>
+      <td>The Address you wish to edit.</td>
+    </tr>
+    <tr>
+      <td>newidentity</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new name to be used for this Address.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new name to be used for this Address.</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Yes</td>
+      <td>Email address format, complying with <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a></td>
+      <td>Specify the email address to be used for this Address.</td>
+    </tr>
+    <tr>
+      <td>replyto</td>
+      <td>No</td>
+      <td>Email address format, complying with <a href="http://tools.ietf.org/html/rfc5322">RFC 5322</a></td>
+      <td>Specify an email address to be used in the Reply-To field. If not defined, will default to the <em>email</em> parameter.</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new physical address to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new city to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>state</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new state code to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new zip code to be used for this Address.</td>
+    </tr>
+    </tr>
+    <tr>
+      <td>country</td>
+      <td>No</td>
+      <td>None</td>
+      <td>Specify the new country code to be used for this Address.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="get"></a>
+<h2>get</h2>
+<p>Retrieve information associated with a particular Address.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Address.</td>
+      <td>Retrieve contents of the specified Address.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="list"></a>
+<h2>list</h2>
+<p>List all Addresses on your account, or check if a particular Address exists.</p>
+
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>identity</td>
+      <td>No</td>
+      <td>Must be an existing Address.</td>
+      <td>Check for this particular Identity. (To list all Addresses on your account exclude this parameter)</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="delete"></a>
+<h2>delete</h2>
+<p>Remove an Address from your account.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Address.</td>
+      <td>Remove the specified Address from your account.</td>
+    </tr>
+  </table>

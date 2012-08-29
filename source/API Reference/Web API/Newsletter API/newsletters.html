@@ -1,0 +1,171 @@
+---
+layout: page
+title: Newsletters
+navigation:
+  show: true
+---
+
+<p>This endpoint allows you to add, view, or remove newsletters.</p>
+
+<hr/>
+
+<a name="add"></a>
+
+<h2>add</h2>
+<p>Create a new Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The Identity that will be used for the Newsletter being created.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The name that will be used for the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>subject</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The subject that will be used for the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>text</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The text portion of the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>html</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The html portion of the Newsletter being created.</td>
+    </tr>
+  </table>
+
+<a name="edit"></a>
+
+<hr/>
+
+<h2>edit</h2>
+<p>Edit an existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The name of the Newsletter being updated.</td>
+    </tr>
+<tr>
+    <tr>
+      <td>newname</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new name for the Newsletter being edited.</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The new Identity for the Newsletter being edited.</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new subject that will be used for the Newsletter being edited.</td>
+    </tr>
+<tr>
+      <td>text</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new text portion of the Newsletter being edited.</td>
+    </tr>
+<tr>
+      <td>html</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new html portion of the Newsletter being edited.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="get"></a>
+<h2>get</h2>
+<p>Retrieve the contents of an existing Newsletter.</p>
+
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Retrieve the content of an existing Newsletter.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="list"></a>
+<h2>list</h2>
+<p>Retrieve a list of all existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>No</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Search to see if a specific Newsletter exists rather than a list of all Newsletters.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="delete"></a>
+<h2>delete</h2>
+<p>Remove an existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Remove the Newsletter with this name.</td>
+    </tr>
+  </table>
