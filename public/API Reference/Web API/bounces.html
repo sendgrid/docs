@@ -197,13 +197,51 @@
     </tr> 
 	</tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
 
+ <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+      <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
-
-<h3>Return</h3>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/bounces.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
+      <h3>Response</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span>
+</span><span class='line'>   <span class="nx">bounces</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>       <span class="nx">bounce</span><span class="o">:</span><span class="p">[</span>
+</span><span class='line'>           <span class="p">{</span>
+</span><span class='line'>               <span class="nx">email</span><span class="o">:</span><span class="s1">&#39;email1@domain.com&#39;</span><span class="p">,</span>
+</span><span class='line'>               <span class="nx">status</span><span class="o">:</span><span class="s1">&#39;5.1.1&#39;</span><span class="p">,</span>
+</span><span class='line'>               <span class="nx">reason</span><span class="o">:</span><span class="s1">&#39;host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com&#39;</span><span class="p">,</span>
+</span><span class='line'>               <span class="nx">created</span><span class="o">:</span><span class="s1">&#39;2009-06-10 12:40:30&#39;</span>
+</span><span class='line'>           <span class="p">}</span>
+</span><span class='line'>           <span class="p">...</span>
+</span><span class='line'>       <span class="p">]</span>
+</span><span class='line'>   <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="get-xml">
+      <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1</span>
+</span></code></pre></td></tr></table></div></figure>
+      <h3>Response</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -233,12 +271,15 @@
 </span><span class='line'>  <span class="nt">&lt;/bounce&gt;</span>
 </span><span class='line'><span class="nt">&lt;/bounces&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<blockquote><span class="label label-info">Info</span> <code><created></code> tags will not populate unless date is set</blockquote>
+    </div>
+  </div>
+
+<hr/>
 
 <a name="delete"></a>
 <h2>delete</h2>
-Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
-
+<p>Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
+</p>
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -274,12 +315,32 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 <tr></tr>
 </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+ <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+      <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
+</span></code></pre></td></tr></table></div></figure> 
+	<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
-<h3>Response: Success</h3>
+	<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="delete-xml">
+      <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span>
+</span></code></pre></td></tr></table></div></figure>
+	<h3>Response: Success</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -287,7 +348,7 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 </span><span class='line'>  success
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4> 
+	  <h3>Response: Error</h3> 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -295,59 +356,67 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<h2>JSON</h2>
-<h3>Command</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
-</span></code></pre></td></tr></table></div></figure> 
-<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-<h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
-</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
+<hr/>
 
  <a name="count"></a> 
   <h2>Count </h2> 
- 
-   
- 
+
   <table class="table table-bordered table-striped"> 
     <tr> 
-      <td class="tdMainHeader">Parameter</td> 
-      <td class="tdMainHeader">Required</td> 
-      <td class="tdMainHeader">Requirements</td> 
-      <td class="tdMainHeader">Description</td> 
+      <td>Parameter</td> 
+      <td>Required</td> 
+      <td>Requirements</td> 
+      <td>Description</td> 
     </tr> 
     <tr> 
-      <td class="tdEven">start_date</td> 
-      <td class="tdEven">No</td> 
-      <td class="tdOdd">Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
-      <td class="tdEven">Optional date to start counting from.</td> 
+      <td>start_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
+      <td>Optional date to start counting from.</td> 
     </tr> 
       <tr> 
-      <td class="tdOdd">end_date</td> 
-      <td class="tdOdd">No</td> 
-      <td class="tdOdd">Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
-      <td class="tdOdd">Optional date to end counting from.</td> 
+      <td>end_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
+      <td>Optional date to end counting from.</td> 
     </tr> 
     <tr> 
-      <td class="tdEven">type</td> 
-      <td class="tdEven">No</td> 
-      <td class="tdEven">hard or soft</td> 
-      <td class="tdEven">choose the type of bounce to search for.</td> 
+      <td>type</td> 
+      <td>No</td> 
+      <td>hard or soft</td> 
+      <td>choose the type of bounce to search for.</td> 
     </tr> 
   </table> 
  
-  <h3>XML</h3> 
- 
-  <h4>Command</h4> 
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#count-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#count-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="count-json">
+      <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
+</span></code></pre></td></tr></table></div></figure> 
+	<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;count&quot;</span><span class="o">:</span><span class="s2">&quot;4&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+	<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="count-xml">
+      <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&amp;api_key=secureSecret</span>
 </span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4> 
+	<h3>Response: Success</h3>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -355,7 +424,7 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 </span><span class='line'>  <span class="nt">&lt;count&gt;</span>4<span class="nt">&lt;/count&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4> 
+	  <h4>Response: Error</h4> 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -363,26 +432,8 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
- 
-  <h3>JSON</h3> 
- 
-  <h4>Command</h4> 
- 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/bounces.count.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret
-</span></code></pre></td></tr></table></div></figure>
- 
-  <h4>Return - Success</h4> 
- 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;count&quot;</span><span class="o">:</span><span class="s2">&quot;4&quot;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
- 
-  <h4>Return - Error</h4> 
- 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
-</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
   
     <footer>
       

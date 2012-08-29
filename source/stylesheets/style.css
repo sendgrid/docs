@@ -18,8 +18,12 @@ blockquote { background-color: #FFFFED; }
 	margin-top: -20px;
 	border-top: 0px;
 	margin-bottom: 10px;
+	background: url(/images/subtle_dots.png);
 }
 
+.nav-tabs > .active > a {
+	background: url(/images/subtle_dots.png);	
+}
 
 #header {
 	height: 58px;
