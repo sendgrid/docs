@@ -34,6 +34,7 @@
   <script src="/javascripts/menu.js"></script>
   <script src="/javascripts/libs/modernizr-2.0.js"></script>
   <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/libs/bootstrap-tabs.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
   
@@ -97,8 +98,6 @@
   <h2>get</h2>Retrieve a list of Blocks with addresses and response codes, optionally
   with dates.
 
-  <h3>Parameters</h3>
-
   <table class="table table-bordered table-striped">
     <tbody>
       <tr>
@@ -156,33 +155,88 @@
     </tbody>
   </table>
 
-  <h2>XML</h2>
-
- <h3>Command</h3>
-
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+      <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1&lt;/code&gt;</span></code></pre></td></tr></table></div></figure>
-
-  <h3>Return</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1&lt;/code&gt;</span></code></pre></td></tr></table></div></figure> 
+      <h3>Response</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com 5.1.1 host [127.0.0.1] said: 550 5.1.1 unknown
-</span><span class='line'>or illegal user: email1@domain.com 2009-06-10 12:40:30 email2@domain2.com 5.1.1 host
-</span><span class='line'>[127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com 2009-08-01
-</span><span class='line'>10:16:30</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="nx">blocks</span><span class="o">:</span><span class="p">{</span>
+</span><span class='line'>        <span class="nx">block</span><span class="o">:</span><span class="p">[</span>
+</span><span class='line'>            <span class="p">{</span>
+</span><span class='line'>                <span class="nx">email</span><span class="o">:</span><span class="s1">&#39;email1@domain.com&#39;</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">status</span><span class="o">:</span><span class="s1">&#39;5.1.1&#39;</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">reason</span><span class="o">:</span><span class="s1">&#39;host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com&#39;</span><span class="p">,</span>
+</span><span class='line'>                <span class="nx">created</span><span class="o">:</span><span class="s1">&#39;2009-06-10 12:40:30&#39;</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>            <span class="p">...</span>
+</span><span class='line'>        <span class="p">]</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="get-xml">
+      <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;amp;api_key=secureSecret&amp;amp;date=1&lt;/code&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+      <h3>Response</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;blocks&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;block&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;email&gt;</span>email1@domain.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;status&gt;</span>5.1.1<span class="nt">&lt;/status&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;reason&gt;</span>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com<span class="nt">&lt;/reason&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;created&gt;</span>2009-06-10 12:40:30<span class="nt">&lt;/created&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/block&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;block&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;email&gt;</span>email2@domain2.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;status&gt;</span>5.1.1<span class="nt">&lt;/status&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;reason&gt;</span>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com<span class="nt">&lt;/reason&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;created&gt;</span>2009-08-01 10:16:30<span class="nt">&lt;/created&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/block&gt;</span>
+</span><span class='line'><span class="nt">&lt;/blocks&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
 
-  <h3>NOTE:</h3>
-  &#8220;`
-  tags will not populate unless date is set
-  &#8220;`
-   &nbsp; <a name=
+<hr class="docs-separator"/>
+
+<a name=
   "delete" id="delete"></a>
 
   <h2>delete</h2>Delete an address from the Block list.
-
-  <h3>Parameters</h3>
 
   <table class="table table-bordered table-striped">
     <tbody>
@@ -205,41 +259,52 @@
 
         <td>Email block address to remove</td>
       </tr>
-
-      <tr>
-        <td></td>
-      </tr>
     </tbody>
   </table>
 
-  <h2>XML</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+          <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
+</span></code></pre></td></tr></table></div></figure>
 
-  <h3>Command</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
-
-  <h3>Response: Success</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>success</span></code></pre></td></tr></table></div></figure>
-
-  <h3>Response: Error</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Email does not exist</span></code></pre></td></tr></table></div></figure>
-
-  <h2>JSON</h2>
-
-  <h3>Command</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
-
-  <h3>Response: Success</h3>
+          <h3>Response: Success</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
-  <h3>Response: Error</h3>
+          <h3>Response: Error</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span>
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;count&gt;</span>4<span class="nt">&lt;/count&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
   
     <footer>
       

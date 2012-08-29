@@ -34,6 +34,7 @@
   <script src="/javascripts/menu.js"></script>
   <script src="/javascripts/libs/modernizr-2.0.js"></script>
   <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/libs/bootstrap-tabs.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
   
@@ -97,7 +98,7 @@
 <a name="get"></a>
 <h2>get</h2>
 <p>Retrieve a list of bounces with addresses and response codes, optionally with dates.</p>
-<h3>Parameters</h3>
+
 <table class="table table-bordered table-striped">
 	<tbody>
 		<tr>
@@ -237,7 +238,7 @@
 <a name="delete"></a>
 <h2>delete</h2>
 Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
-<h3>Parameters</h3>
+
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -280,14 +281,18 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>success
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  success
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<h3>Response: Error</h3>
+  <h4>Return - Error</h4> 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
-</span><span class='line'>Email does not exist
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 <h2>JSON</h2>
@@ -307,7 +312,7 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
  <a name="count"></a> 
   <h2>Count </h2> 
  
-  <h3>Parameters</h3> 
+   
  
   <table class="table table-bordered table-striped"> 
     <tr> 
