@@ -192,11 +192,17 @@
 	</tbody>
 </table>
 
-<h2>XML</h2>
-<h3>Command</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
-<h3>Return</h3>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
+
+    <h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -207,6 +213,29 @@
 </span><span class='line'>
 </span><span class='line'>email2@domain2.com
 </span><span class='line'>2009-06-10 12:40:30</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+  <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
+
+		<h3>Response</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com
+</span><span class='line'>2009-06-10 12:40:30
+</span><span class='line'>
+</span><span class='line'>email2@domain2.com
+</span><span class='line'>2009-06-10 12:40:30</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+</div>
+
+<hr/>
 
 <a name="delete"></a>
 <h2>delete</h2>
@@ -255,18 +284,41 @@
     </tr>
   </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="delete-json">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+  <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span>
+</span></code></pre></td></tr></table></div></figure>
+
 <h3>Response: Success</h3>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result&gt;
-</span><span class='line'>  success
-</span><span class='line'>&lt;result&gt;</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="o">&lt;</span><span class="nx">result</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="nx">success</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">result</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Error</h3>
 
@@ -279,19 +331,11 @@
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<h2>JSON</h2>
-<h3>Command</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
-</span></code></pre></td></tr></table></div></figure>
-<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-<h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
-</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
+
+<hr/>
+
 <a name="add"></a>
 <h2>add</h2>
 <p>Add email addresses to the Unsubscribe list.</p>
@@ -312,11 +356,34 @@
     </tr>
   </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="add-json">
+     <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=email2@domain.com
+</span></code></pre></td></tr></table></div></figure>
+
+<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+  <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&amp;api_key=secureSecret&amp;email=email2@domain.com</span>
 </span></code></pre></td></tr></table></div></figure>
+
 <h3>Response: Success</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -333,19 +400,10 @@
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<h2>JSON</h2>
-<h3>Command</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=email2@domain.com
-</span></code></pre></td></tr></table></div></figure>
-<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-<h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
-</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+</div>
+
   
     <footer>
       
