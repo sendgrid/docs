@@ -10,7 +10,7 @@ navigation:
 <a name="get"></a>
 <h2>get</h2>
 <p>Retrieve a list of bounces with addresses and response codes, optionally with dates.</p>
-<h3>Parameters</h3>
+
 <table class="table table-bordered table-striped">
 	<tbody>
 		<tr>
@@ -138,7 +138,7 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
 <a name="delete"></a>
 <h2>delete</h2>
 Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
-<h3>Parameters</h3>
+
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -181,12 +181,14 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_ke
 ```
 <h3>Response: Success</h3>
 ``` xml
-success
+<result>
+  success
+</result>
 ```
-<h3>Response: Error</h3>
+  <h4>Return - Error</h4> 
 ``` xml
 <result>
-Email does not exist
+  <message>error: reason</message>
 </result>
 ```
 <h2>JSON</h2>
@@ -206,7 +208,7 @@ https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_k
  <a name="count"></a> 
   <h2>Count </h2> 
  
-  <h3>Parameters</h3> 
+   
  
   <table class="table table-bordered table-striped"> 
     <tr> 
