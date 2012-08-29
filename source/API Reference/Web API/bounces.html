@@ -109,14 +109,40 @@ navigation:
     </tr> 
 	</tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
 
+ <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+      <h3>Call</h3>
+```
+https://sendgrid.com/api/bounces.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
+```
+      <h3>Response</h3>
+``` javascript
+{
+   bounces:{
+       bounce:[
+           {
+               email:'email1@domain.com',
+               status:'5.1.1',
+               reason:'host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com',
+               created:'2009-06-10 12:40:30'
+           }
+           ...
+       ]
+   }
+}
+```
+    </div>
+    <div class="tab-pane" id="get-xml">
+      <h3>Call</h3>
 ```
 https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
 ```
-
-<h3>Return</h3>
+      <h3>Response</h3>
 ``` xml
 <bounces>
   <bounce>
@@ -133,12 +159,15 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
   </bounce>
 </bounces>
 ```
-<blockquote><span class="label label-info">Info</span> <code><created></code> tags will not populate unless date is set</blockquote>
+    </div>
+  </div>
+
+<hr/>
 
 <a name="delete"></a>
 <h2>delete</h2>
-Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
-
+<p>Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
+</p>
 <table class="table table-bordered table-striped">
 <tbody>
 <tr>
@@ -174,104 +203,114 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 <tr></tr>
 </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+ <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+      <h3>Call</h3>
+```
+https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+``` 
+	<h3>Response: Success</h3>
+``` javascript
+{"message":"success"}
+```
+	<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+    </div>
+    <div class="tab-pane" id="delete-xml">
+      <h3>Call</h3>
 ```
 https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
 ```
-<h3>Response: Success</h3>
+	<h3>Response: Success</h3>
 ``` xml
 <result>
   success
 </result>
 ```
-  <h4>Return - Error</h4> 
+	  <h3>Response: Error</h3> 
 ``` xml
 <result>
   <message>error: reason</message>
 </result>
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-``` 
-<h3>Response: Success</h3>
-``` javascript
-{"message":"success"}
-```
-<h3>Response: Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+    </div>
+  </div>
+
+<hr/>
 
  <a name="count"></a> 
   <h2>Count </h2> 
- 
-   
- 
+
   <table class="table table-bordered table-striped"> 
     <tr> 
-      <td class="tdMainHeader">Parameter</td> 
-      <td class="tdMainHeader">Required</td> 
-      <td class="tdMainHeader">Requirements</td> 
-      <td class="tdMainHeader">Description</td> 
+      <td>Parameter</td> 
+      <td>Required</td> 
+      <td>Requirements</td> 
+      <td>Description</td> 
     </tr> 
     <tr> 
-      <td class="tdEven">start_date</td> 
-      <td class="tdEven">No</td> 
-      <td class="tdOdd">Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
-      <td class="tdEven">Optional date to start counting from.</td> 
+      <td>start_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
+      <td>Optional date to start counting from.</td> 
     </tr> 
       <tr> 
-      <td class="tdOdd">end_date</td> 
-      <td class="tdOdd">No</td> 
-      <td class="tdOdd">Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
-      <td class="tdOdd">Optional date to end counting from.</td> 
+      <td>end_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
+      <td>Optional date to end counting from.</td> 
     </tr> 
     <tr> 
-      <td class="tdEven">type</td> 
-      <td class="tdEven">No</td> 
-      <td class="tdEven">hard or soft</td> 
-      <td class="tdEven">choose the type of bounce to search for.</td> 
+      <td>type</td> 
+      <td>No</td> 
+      <td>hard or soft</td> 
+      <td>choose the type of bounce to search for.</td> 
     </tr> 
   </table> 
  
-  <h3>XML</h3> 
- 
-  <h4>Command</h4> 
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#count-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#count-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="count-json">
+      <h3>Call</h3>
+```
+https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+``` 
+	<h3>Response: Success</h3>
+``` javascript
+{"count":"4"}
+```
+	<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+    </div>
+    <div class="tab-pane" id="count-xml">
+      <h3>Call</h3>
 ```
 https://sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&api_key=secureSecret
 ```
-  <h4>Return - Success</h4> 
+	<h3>Response: Success</h3>
+
 ``` xml
 <result>
   <count>4</count>
 </result>
 ```
-  <h4>Return - Error</h4> 
+	  <h4>Response: Error</h4> 
 ``` xml
 <result>
   <message>error: reason</message>
 </result>
 ```
- 
-  <h3>JSON</h3> 
- 
-  <h4>Command</h4> 
- 
-```
-https://sendgrid.com/api/bounces.count.json?api_user=youremail@domain.com&api_key=secureSecret
-```
- 
-  <h4>Return - Success</h4> 
- 
-``` javascript
-{"count":"4"}
-```
- 
-  <h4>Return - Error</h4> 
- 
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+    </div>
+  </div>
