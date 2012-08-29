@@ -1,0 +1,82 @@
+---
+layout: page
+title: Schedule
+navigation:
+  show: true
+---
+
+<p>This endpoint allows you to add, view, or remove scheduled delivery events for Newsletters.</p>
+
+<blockquote><span class="label label-info">Info</span> If you wish to send a newsletter immediately, leave off the <strong>at</strong> and <strong>after</strong> parameters.</blockquote>
+
+<hr/>
+
+<a name="add"></a>
+<h2>add</h2>
+<p>Schedule a delivery time for an existing Newsletter.</p>
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter.</td>
+      <td>Newsletter to schedule delivery for. (If Newsletter should be sent now, include no additional parameters.)</td>
+    </tr>
+    <tr>
+      <td>at</td>
+      <td>No</td>
+      <td>Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)</td>
+      <td>Date / Time to schedule newsletter Delivery.</td>
+    </tr>
+    <tr>
+      <td>after</td>
+      <td>No</td>
+      <td>Must be a positive integer.</td>
+      <td>Number of minutes until delivery should occur.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="get"></a>
+<h2>get</h2>
+<p>Retrieve the scheduled delivery time for an existing Newsletter.</p>
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter.</td>
+      <td>Retrieve the delivery time scheduled for this Newsletter.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="delete"></a>
+<h2>delete</h2>
+<p>Cancel a scheduled send for a Newsletter.</p>
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Remove the scheduled delivery time from an existing Newsletter.</td>
+    </tr>
+  </table>
