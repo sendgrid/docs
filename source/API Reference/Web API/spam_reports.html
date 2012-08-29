@@ -9,10 +9,7 @@ navigation:
 
 <a name="get" id="get"></a>
 
- <h2>get</h2>Retrieve a list of spam reports with addresses and response codes,
- optionally with dates.
-
- 
+ <h2>get</h2>
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -101,12 +98,19 @@ navigation:
      </tr>
    </tbody>
  </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
 ```
-https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
 ```
-<h3>Return</h3>
+
+     <h3>Response</h3>
 ```
 email1@domain.com
 5.1.1
@@ -119,12 +123,36 @@ host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
 2009-08-01 10:16:30
 ```
 
+
+  </div>
+  <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+```
+
+		<h3>Response</h3>
+```
+email1@domain.com
+5.1.1
+host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
+2009-06-10 12:40:30
+
+email2@domain2.com
+5.1.1
+host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
+2009-08-01 10:16:30
+```
+  </div>
+</div>
+
+<hr/>
+
   <a name="delete" id="delete"></a>
 
   <h2>delete</h2>
 
   <p>Delete an address from the Spam Reports list.</p>
-
   
 
   <table class="table table-bordered table-striped">
@@ -150,9 +178,30 @@ host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
       </tr>
     </tbody>
   </table>
-</body>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="delete-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+```
+
+<h3>Response: Success</h3>
+``` javascript
+{"message":"success"}
+```
+<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+  </div>
+  <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
 ```
@@ -168,18 +217,6 @@ https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&ap
   <message>Email does not exist</message>
 </result>
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
 
-https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-
-```
-<h3>Response: Success</h3>
-``` javascript
-{"message":"success"}
-```
-<h3>Response: Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+  </div>
+</div>
