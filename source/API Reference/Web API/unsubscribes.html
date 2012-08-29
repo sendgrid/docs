@@ -104,12 +104,18 @@ navigation:
 	</tbody>
 </table>
 
-<h2>XML</h2>
-<h3>Command</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
 ```
-https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
 ```
-<h3>Return</h3>
+
+    <h3>Response</h3>
 ```
 email1@domain.com
 2009-06-10 12:40:30
@@ -117,6 +123,27 @@ email1@domain.com
 email2@domain2.com
 2009-06-10 12:40:30
 ```
+
+  </div>
+  <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+```
+
+		<h3>Response</h3>
+```
+email1@domain.com
+2009-06-10 12:40:30
+
+email2@domain2.com
+2009-06-10 12:40:30
+```
+
+  </div>
+</div>
+
+<hr/>
 
 <a name="delete"></a>
 <h2>delete</h2>
@@ -165,11 +192,33 @@ email2@domain2.com
     </tr>
   </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="delete-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+```
+<h3>Response: Success</h3>
+``` javascript
+{"message":"success"}
+```
+<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+  </div>
+  <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
 ```
+
 <h3>Response: Success</h3>
 
 ```
@@ -187,19 +236,11 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&a
 </result>
 ```
 
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
-<h3>Response: Success</h3>
-``` javascript
-{"message":"success"}
-```
-<h3>Response: Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+  </div>
+</div>
+
+<hr/>
+
 <a name="add"></a>
 <h2>add</h2>
 <p>Add email addresses to the Unsubscribe list.</p>
@@ -220,11 +261,34 @@ https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&
     </tr>
   </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="add-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
+```
+
+<h3>Response: Success</h3>
+``` javascript
+{"message":"success"}
+```
+<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+  </div>
+  <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
 ```
+
 <h3>Response: Success</h3>
 ``` xml
 <result>
@@ -237,16 +301,6 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&ap
   <message>Email does not exist</message>
 </result>
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
-```
-<h3>Response: Success</h3>
-``` javascript
-{"message":"success"}
-```
-<h3>Response: Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+
+  </div>
+</div>
