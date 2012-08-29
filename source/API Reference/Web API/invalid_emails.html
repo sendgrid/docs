@@ -105,12 +105,47 @@ navigation:
 	</tbody>
 </table>
 
-<h2>XML</h2>
-<h3>Command</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
 ```
 https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
 ```
-<h3>Return</h3>
+
+     <h3>Response</h3>
+
+``` javascript
+{
+    invalidemails:{
+        invalidemail:[
+            {
+                email:'email1@domain.com',
+                status:'5.1.1',
+            reason:'host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com',
+                created:'2009-06-10 12:40:30'
+            },
+            {
+                email:'email2@domain2.com',
+                status:'5.1.1',
+            reason:'host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com',
+                created:'2009-08-01 10:16:30'
+            }
+        ]
+    }
+}
+```
+  </div>
+  <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+```
+
+		<h3>Response</h3>
 ``` xml
 <invalidemails>
   <invalidemail>
@@ -127,10 +162,11 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
   </invalidemail>
 </invalidemails>
 ```
-<h3>NOTE:</h3>
-```
-<created> tags will not populate unless date is set
-```
+
+  </div>
+</div>
+
+<hr/>
 
 <a name="delete"></a>
 <h2>delete</h2>
@@ -153,33 +189,18 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
 <tr></tr>
 </tbody>
 </table>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="delete-json">
+     <h3>Call</h3>
 ```
-https://sendgrid.com/api/invalidemails.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+https://sendgrid.com/api/invalidemails.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
 ```
 
-<h3>Response: Success</h3>
-
-```
-<result>
-  success
-<result>
-```
-
-<h3>Response: Error</h3>
-
-</result>
-``` xml
-<result>
-  Email does not exist
-</result>
-```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/invalidemails.delete.jsonapi_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
 <h3>Response: Success</h3>
 ``` javascript
 {"message":"success"}
@@ -188,3 +209,26 @@ https://sendgrid.com/api/invalidemails.delete.jsonapi_user=youremail@domain.com&
 ``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
+
+
+  </div>
+  <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/invalidemails.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+```
+		<h3>Response: Success</h3>
+```
+<result>
+  success
+<result>
+```
+
+<h3>Response: Error</h3>
+``` xml
+<result>
+  Email does not exist
+</result>
+```
+  </div>
+</div>

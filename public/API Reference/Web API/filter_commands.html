@@ -99,13 +99,28 @@
 <p><em>Note: The name entry is used in all the other API calls to identify a app.</em>
 For a list of all the apps and parameters accesible with the Web API you can check the <a href="/documentation/api/web-api/filtersettings/">Filter Settings</a> page.</p>
 
-<h3>XML</h3>
-<p>Command</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#getavailable-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#getavailable-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="getavailable-json">
+          <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&api_key=secureSecret</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com&api_key=secureSecret</span></code></pre></td></tr></table></div></figure>
+<h3>Response</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;twitter&quot;</span><span class="p">,</span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="s2">&quot;Twitter&quot;</span><span class="p">,</span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;This plugin allows you to send an email message to twitter&quot;</span><span class="p">,</span><span class="s2">&quot;activated&quot;</span><span class="o">:</span><span class="kc">false</span><span class="p">},</span> <span class="p">...</span> <span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
 
+    </div>
+    <div class="tab-pane" id="getavailable-xml">
+        <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&amp;api_key=secureSecret</span>
+</span></code></pre></td></tr></table></div></figure>
 
-<strong>Return - Success</strong>
+<h3>Response</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -125,26 +140,36 @@ For a list of all the apps and parameters accesible with the Web API you can che
 </span><span class='line'>  ...
 </span><span class='line'><span class="nt">&lt;/filters&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<h3>JSON</h3>
-<p>Command</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret
-</span></code></pre></td></tr></table></div></figure>
-<strong>Return - Success</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;name&quot;</span><span class="o">:</span><span class="s2">&quot;twitter&quot;</span><span class="p">,</span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="s2">&quot;Twitter&quot;</span><span class="p">,</span><span class="s2">&quot;description&quot;</span><span class="o">:</span><span class="s2">&quot;This plugin allows you to send an email message to twitter&quot;</span><span class="p">,</span><span class="s2">&quot;activated&quot;</span><span class="o">:</span><span class="kc">false</span><span class="p">},</span> <span class="p">...</span> <span class="p">]</span>
-</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
+<hr/>
 
 <a name="activate"></a>
 
 <h2>Activate App</h2>
-<h3>XML</h3>
-<p>Command</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="activate-json">
+        <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>name=twitter
+</span></code></pre></td></tr></table></div></figure>
+		<h3>Response</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+  </div>
+  <div class="tab-pane" id="activate-xml">
+        <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/filter.activate.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;name=twitter</span>
 </span></code></pre></td></tr></table></div></figure>
-
-<strong>Return - Success</strong>
+		<h3>Response</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -152,27 +177,37 @@ For a list of all the apps and parameters accesible with the Web API you can che
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-<h3>JSON</h3>
-<p>Command</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>name=twitter
-</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
 
-<strong>Return</strong>
+<hr/>
+
+<a name="deactivate"></a>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="deactivate-json">
+     <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>name=twitter
+</span></code></pre></td></tr></table></div></figure>
+     <h3>Response</h3>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<a name="deactivate"></a>
-
-<h2>Deactivate App</h2>
-<h3>XML</h3>
-<p>Command</p>
+  </div>
+  <div class="tab-pane" id="deactivate-xml">
+        <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/filter.deactivate.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;name=twitter</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<strong>Return - Success</strong>
+		<h3>Response</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -181,16 +216,13 @@ For a list of all the apps and parameters accesible with the Web API you can che
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<h3>JSON</h3>
-<p>Command</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>name=twitter
-</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
 
-<strong>Return</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+
+<h2>Deactivate App</h2>
+
+<hr/>
 
 <a name="setup"></a>
 
@@ -266,16 +298,44 @@ For a list of all the apps and parameters accesible with the Web API you can che
 </span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
 
+<hr/>
+
 <a name="getsettings"></a>
 <h2>Get Settings</h2>
-<h3>XML</h3>
-<p>Command</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#getsettings-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#getsettings-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="getsettings-json">
+     <h3>Call</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">https://sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;name=twitter</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;name=twitter</span>
+</span></code></pre></td></tr></table></div></figure>
+	<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">,</span><span class="s2">&quot;settings&quot;</span><span class="o">:</span><span class="p">{</span><span class="s2">&quot;field_name&quot;</span><span class="o">:</span><span class="err">&quot;</span><span class="nx">field_value</span><span class="err">”</span><span class="p">}}</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<strong>Return - Success</strong>
+	<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
 
+	<h3>Response: Empty</h3>
+<em>*This is returned if that filter has no settings or is not enabled.</em>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;settings&quot;</span><span class="o">:</span><span class="kc">null</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+  </div>
+  <div class="tab-pane" id="getsettings-xml">
+        <h3>Call</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;name=twitter</span>
+</span></code></pre></td></tr></table></div></figure>
+		<h3>Response: Success</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -285,47 +345,27 @@ For a list of all the apps and parameters accesible with the Web API you can che
 </span><span class='line'>    ...
 </span><span class='line'><span class="nt">&lt;/filter&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
-
-<strong>Return - Error</strong>
+      <h3>Response: Error</h3>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>``` xml
-</span><span class='line'><span class="nt">&lt;result&gt;</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>error<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>... error messages ...<span class="nt">&lt;/message&gt;</span>
 </span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<h3>Return - Empty</h3>
+<h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;filter&gt;&lt;/filter&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-<h3>JSON</h3>
-<p>Command</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>name=twitter
-</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
 
-<strong>Return - Success</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">,</span><span class="s2">&quot;settings&quot;</span><span class="o">:</span><span class="p">{</span><span class="s2">&quot;field_name&quot;</span><span class="o">:</span><span class="err">&quot;</span><span class="nx">field_value</span><span class="err">”</span><span class="p">}}</span>
-</span></code></pre></td></tr></table></div></figure>
 
-<strong>Return - Error</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-<strong>Return - Empty</strong>
-<em>*This is returned if that filter has no settings or is not enabled.</em>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;settings&quot;</span><span class="o">:</span><span class="kc">null</span><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
 
   
     <footer>

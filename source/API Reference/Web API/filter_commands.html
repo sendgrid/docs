@@ -11,14 +11,29 @@ navigation:
 <p><em>Note: The name entry is used in all the other API calls to identify a app.</em>
 For a list of all the apps and parameters accesible with the Web API you can check the <a href="/documentation/api/web-api/filtersettings/">Filter Settings</a> page.</p>
 
-<h3>XML</h3>
-<p>Command</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#getavailable-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#getavailable-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="getavailable-json">
+          <h3>Call</h3>
+```
+https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com&api_key=secureSecret
+```
+<h3>Response</h3>
+``` javascript
+[{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... ]
+```
+
+    </div>
+    <div class="tab-pane" id="getavailable-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&api_key=secureSecret
 ```
 
-
-<strong>Return - Success</strong>
+<h3>Response</h3>
 ``` xml
 <filters>
   <filter>
@@ -30,69 +45,85 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&a
   ...
 </filters>
 ```
-<h3>JSON</h3>
-<p>Command</p>
-```
-https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com&api_key=secureSecret
-```
-<strong>Return - Success</strong>
-``` javascript
-[{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... ]
-```
+    </div>
+  </div>
+
+<hr/>
 
 <a name="activate"></a>
 
 <h2>Activate App</h2>
-<h3>XML</h3>
-<p>Command</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="activate-json">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
+```
+		<h3>Response</h3>
+``` javascript
+{"message":"success"}
+```
+  </div>
+  <div class="tab-pane" id="activate-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/filter.activate.xml?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 ```
-
-<strong>Return - Success</strong>
+		<h3>Response</h3>
 ``` xml
 <result>
   <message>success</message>
 </result>
+```
+  </div>
+</div>
 
-```
-<h3>JSON</h3>
-<p>Command</p>
-```
-https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
-```
+<hr/>
 
-<strong>Return</strong>
+<a name="deactivate"></a>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="deactivate-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
+```
+     <h3>Response</h3>
+
 ``` javascript
 {"message":"success"}
 ```
 
-<a name="deactivate"></a>
-
-<h2>Deactivate App</h2>
-<h3>XML</h3>
-<p>Command</p>
+  </div>
+  <div class="tab-pane" id="deactivate-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/filter.deactivate.xml?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 ```
 
-<strong>Return - Success</strong>
+		<h3>Response</h3>
 ``` xml
 <result>
   <message>success</message>
 </result>
 ```
 
-<h3>JSON</h3>
-<p>Command</p>
-```
-https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
-```
+  </div>
+</div>
 
-<strong>Return</strong>
-``` javascript
-{"message":"success"}
-```
+
+<h2>Deactivate App</h2>
+
+<hr/>
 
 <a name="setup"></a>
 
@@ -136,58 +167,65 @@ print_r($response);
 ?>
 ```
 
+<hr/>
+
 <a name="getsettings"></a>
 <h2>Get Settings</h2>
-<h3>XML</h3>
-<p>Command</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#getsettings-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#getsettings-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="getsettings-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
+```
+	<h3>Response: Success</h3>
+``` javascript
+{"message":"success","settings":{"field_name":"field_value”}}
+```
+
+	<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+	<h3>Response: Empty</h3>
+<em>*This is returned if that filter has no settings or is not enabled.</em>
+``` javascript
+{"settings":null}
+```
+
+  </div>
+  <div class="tab-pane" id="getsettings-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 ```
-
-<strong>Return - Success</strong>
-
+		<h3>Response: Success</h3>
 ``` xml
 <filter>
     <field_name>field_value</field_name>
     ...
 </filter>
 ```
-
-<strong>Return - Error</strong>
-```
-
+      <h3>Response: Error</h3>
 ``` xml
 <result>
   <message>error</message>
   <message>... error messages ...</message>
 </result>
-
 ```
 
-<h3>Return - Empty</h3>
+<h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
 ``` xml
 <filter></filter>
 ```
 
-<h3>JSON</h3>
-<p>Command</p>
-```
-https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
-```
+  </div>
+</div>
 
-<strong>Return - Success</strong>
-``` javascript
-{"message":"success","settings":{"field_name":"field_value”}}
-```
 
-<strong>Return - Error</strong>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
-
-<strong>Return - Empty</strong>
-<em>*This is returned if that filter has no settings or is not enabled.</em>
-``` javascript
-{"settings":null}
-```
