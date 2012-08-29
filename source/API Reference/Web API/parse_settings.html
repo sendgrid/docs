@@ -6,14 +6,34 @@ navigation:
 ---
 
 <a name="get"></a>
-<h2>Get Current Settings</h2>
+<h2>get</h2>
 <p>Pull down the settings already configured for parsing incoming email.</p>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="get-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
+``` 
+<h3>Response: Success</h3>
+``` javascript
+{"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}
+```
+<h3>Response: Empty</h3>
+``` javascript
+{"parse":[]}
+```
+  </div>
+  <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
 ```
-<h3>Return - Success</h3>
+<h3>Response: Success</h3>
 ``` xml
 <parse>
   <entry>
@@ -23,41 +43,54 @@ https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=sec
   </entry>
 </parse>
 ```
-<h3>Return - Empty Set</h3>
+<h3>Response: Empty</h3>
 ```
 <parse></parse>  
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
-``` 
-<h3>Return - Success</h3>
-``` javascript
-{"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}
-```
-<h3>Return - Empty Set</h3>
-``` javascript
-{"parse":[]}
-```
+
+  </div>
+</div>
+
+<hr/>
 
 <a name="set"></a>
-<h2>Set New Entry</h2>
+<h2>set</h2>
 <p>Specify the hostname and url for parsing incoming emails.</p>
-<h2>XML</h2>
-<h3>Command</h3>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="set-json">
+     <h3>Call</h3>
+```
+https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+```
+<h3>Response: Success </h3>
+``` javascript
+{"message":"success"}
+```
+<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+  </div>
+  <div class="tab-pane" id="set-xml">
+        <h3>Call</h3>
 ```
 https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
 ```
 
-<h3>Return - Success<h3>
+<h3>Response: Success<h3>
 ``` xml
 <result>
   <message>success</message>
 </result>
 
 ```
-<h3>Return - Error</h3>
+<h3>Response: Error</h3>
 ``` xml
 <result>
   <message>error</message>
@@ -68,75 +101,53 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
   </errors>
 </result>
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
-<h3>Return - Success </h3>
-``` javascript
-{"message":"success"}
-```
-<h3>Return - Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
+
+
+  </div>
+</div>
+
+<hr/>
+
 <a name="edit"></a>
 <h2>Edit Entry</h2>
 <p>Edit your existing settings for parsing incoming emails.</p>
-<h2>XML</h2>
-<h3>Command</h3>
-```
-https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
-<h3>Return - Success</h3>
-```
 
-<result>
-  <message>success</message>
-</result>
-
-```
-<h3>Return - Error</h3>
-``` xml
-<result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
-</result>
-```
-
-<h2>JSON</h2>
-<h3>Command</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="edit-json">
+     <h3>Call</h3>
 ```
 https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
 ```
-<h3>Return - Success</h3>
+
+	<h3>Response: Success</h3>
 ``` javascript
 {"message":"success"}
 ```
-<h3>Return - Error</h3>
+<h3>Response: Error</h3>
 ``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
-<a name="delete"></a>
-<h2>Delete Entry</h2>
-<p>Delete the existing settings for parsing incoming emails.</p>
-<h2>XML</h2>
-<h3>Command</h3>
+
+  </div>
+  <div class="tab-pane" id="edit-xml">
+        <h3>Call</h3>
 ```
-https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
 ```
-<h3>Return - Success</h3>
-``` xml
+
+<h3>Response: Success</h3>
+```
+
 <result>
   <message>success</message>
 </result>
+
 ```
-<h3>Return - Error</h3>
+<h3>Response: Error</h3>
 ``` xml
 <result>
   <message>error</message>
@@ -147,16 +158,60 @@ https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=
   </errors>
 </result>
 ```
-<h2>JSON</h2>
-<h3>Command</h3>
+
+  </div>
+</div>
+
+<hr/>
+
+<a name="delete"></a>
+<h2>Delete Entry</h2>
+<p>Delete the existing settings for parsing incoming emails.</p>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="activate-json">
+     <h3>Call</h3>
+
 ```
 https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
 ```
-<h3>Return - Success</h3>
+
+<h3>Response: Success</h3>
 ``` javascript
 {"message":"success"}
 ```
-<h3>Return - Error</h3>
+<h3>Response: Error</h3>
 ``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
+
+  </div>
+  <div class="tab-pane" id="activate-xml">
+        <h3>Call</h3>
+```
+https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+```
+
+<h3>Response: Success</h3>
+``` xml
+<result>
+  <message>success</message>
+</result>
+```
+<h3>Response: Error</h3>
+``` xml
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+```
+  </div>
+</div>

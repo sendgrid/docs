@@ -163,17 +163,51 @@ navigation:
    </tbody>
  </table>
 
- <h3>XML Response: Success</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#mail-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#mail-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="mail-json">
+	        <h3>Call: Send to One Recipient</h3>
+```
+https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+```
 
+	<h3>Call: Send to Multiple Recipients
+``` bash
+https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+```
+
+	<h3>Response: Success</h3>
+``` javascript
+{"message":"success"}
+```
+<h3>Response: Error</h3>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```
+
+
+  </div>
+  <div class="tab-pane" id="mail-xml">
+        <h3>Call: Send to One Recipient</h3>
+```
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+```
+
+		<h3>Call: Send to Multiple Recipients
+``` bash
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+```
+		<h3>Response: Success</h3>
 ``` xml
 <result>
   success
 <result>
 ```
 
-<h3>XML Response: Error</h3>
-
-</result>
+<h3>Response: Error</h3>
 ``` xml
   <result>
     <message>error</message>
@@ -183,35 +217,28 @@ navigation:
     </errors>
   </result>
 ```
-<h3>JSON Response:Success</h3>
-``` javascript
-{"message":"success"}
-```
-<h3>JSON Response: Error</h3>
-``` javascript
-{"message":"error","errors":[..."error messages"...]}
-```
 
- <h3>Examples</h3>
+
+  </div>
+</div>
+
+<hr/>
+
+<h3>cURL Examples</h3>
+
 <p>Send to one email recipient</p>
 ``` bash
 $ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
-```
-``` bash
-https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
 ```
 <p>Send to multiple email recipients</p>
 ``` bash
 $ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
 ```
-``` bash
-https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
-```
 <p>Send a test attachment</p>
 ``` bash
 $ curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="<strong>testing html body</strong>" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
 ```
-<p><a href="/documentation/get-started/integrate/examples/php-example-using-the-web-api/">PHP Examples</a></p>
+<hr/>
 	
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
