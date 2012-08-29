@@ -1,41 +1,71 @@
+---
+layout: page
+title: Statistics
+navigation:
+  show: true
+---
+
 <h2>Retrieve Statistics</h2>
-<h3>&nbsp;<br>Note that you can use either the days parameter or the start_date and end_date parameter. 
-<em>If provided with no parameters the current day's statistics are returned instead.</em><br>&nbsp;</h3>
+
+<blockquote><span class="label label-warning">Warning</span> You can specify either the days parameter or the start_date and end_date
+parameters. If provided with no parameters, the current day's statistics are returned.</blockquote>
+
 <h2>Parameters</h2>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>days</td>
-<td>No</td>
-<td>Must be an integer greater than 0</td>
-<td>Number of days in the past to include statistics (Includes today)</td>
-</tr>
-<tr>
-<td>start_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-<td>The start date to look up statistics</td>
-</tr>
-<tr>
-<td>end_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
-<td>The end date to look up statistics</td>
-</tr>
-<tr></tr>
-</tbody>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+
+      <th>Required</th>
+
+      <th>Requirements</th>
+
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>days</td>
+
+      <td>No</td>
+
+      <td>Must be an integer greater than 0</td>
+
+      <td>Number of days in the past to include statistics (Includes today)</td>
+    </tr>
+
+    <tr>
+      <td>start_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
+
+      <td>The start date to look up statistics</td>
+    </tr>
+
+    <tr>
+      <td>end_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
+
+      <td>The end date to look up statistics</td>
+    </tr>
+
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2
+```
 <h3>Return</h3>
-<code>
+``` xml
 <stats>
   <day>
     <date>2009-06-20</date>
@@ -71,41 +101,54 @@
     <blocked>8</blocked>
   </day>
 </stats>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2
+```
 <h3>Return</h3>
-<code>
+``` javascript
 [{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
-</code>
-<p>
-</p>
+```
+
 <h2>Retrieve Aggregates</h2>
 <h3>Retrieve all-time totals for your subusers</h3>
 <h2>Parameters</h2>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>aggregate</td>
-<td>Yes</td>
-<td>Must be set to 1</td>
-<td>This is used to indicate you are interested in all time totals</td>
-</tr>
-<tr></tr>
-</tbody>
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+
+      <th>Required</th>
+
+      <th>Requirements</th>
+
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>aggregate</td>
+
+      <td>Yes</td>
+
+      <td>Must be set to 1</td>
+
+      <td>This is used to indicate you are interested in all time totals</td>
+    </tr>
+
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&aggregate=1</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&aggregate=1
+```
 <h3>Return</h3>
-<code>
+``` xml
 <stats>
     <requests>12342</requests>
     <bounces>12</bounces>
@@ -116,12 +159,16 @@
     <unique_opens>2</unique_opens>
     <blocked>8</blocked>
 </stats>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&aggregate=1</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&aggregate=1
+```
 <h3>Return</h3>
-<code>{"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}</code>
+``` javascript
+{"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}
+```
 <p>
 </p>
 <h2>Category List</h2>
@@ -129,68 +176,106 @@
 
 <h2>XML</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&list=true</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&list=true
+```
 <h3>Return</h3>
-<code>
+``` xml
 <categories>
   <category>categoryA</category>
   <category>categoryB</category>
   <category>categoryC</category>
 </categories>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true
+```
 <h3>Return</h3>
-<code>[{"category":"categoryA"},{"category":"categoryB"},{"category":"categoryC"}]</code>
-<p>
-</p>
+``` javascript
+[{"category":"categoryA"},{"category":"categoryB"},{"category":"categoryC"}]
+```
 <h2>Category Statistics</h2>
-<h3>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</h3>
-<h3><em>Note that you can use either the days parameter or the start_date and end_date parameter.</em></h3>
+
+<h3>Retrieve statistics broken down by category. If the category does not exist, there
+will be an empty result set.</h3>
+
+<blockquote><span class="label label-info">Info</span> Note that you can use either the days parameter or the start_date and end_date
+parameter.</blockquote>
+
 <h2>Parameters</h2>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>category</td>
-<td>Yes</td>
-<td>Must be an existing category that has statistics.</td>
-<td>The category you will specify to retrieve detailed stats</td>
-</tr>
-<tr>
-<td>days</td>
-<td>No</td>
-<td>Must be an integer greater than 0</td>
-<td>Number of days in the past to include statistics (Includes today)</td>
-</tr>
-<tr>
-<td>start_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-<td>The start date to look up statistics</td>
-</tr>
-<tr>
-<td>end_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
-<td>The end date to look up statistics</td>
-</tr>
-<tr></tr>
-</tbody>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+
+      <th>Required</th>
+
+      <th>Requirements</th>
+
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>category</td>
+
+      <td>Yes</td>
+
+      <td>Must be an existing category that has statistics.</td>
+
+      <td>The category you will specify to retrieve detailed stats</td>
+    </tr>
+
+    <tr>
+      <td>days</td>
+
+      <td>No</td>
+
+      <td>Must be an integer greater than 0</td>
+
+      <td>Number of days in the past to include statistics (Includes today)</td>
+    </tr>
+
+    <tr>
+      <td>start_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
+
+      <td>The start date to look up statistics</td>
+    </tr>
+
+    <tr>
+      <td>end_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
+
+      <td>The end date to look up statistics</td>
+    </tr>
+
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
+
 <h2>XML</h2>
+
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+```
 <h3>Command - Using an array of categories</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+```
 <h3>Return</h3>
-<code>
+``` xml
 <stats>
   <day>
     <date>2009-06-20</date>
@@ -211,62 +296,101 @@
     <spamreports>7</spamreports>
   </day>
 </stats>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+```
 <h3>Command - Using an array of categories</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+```
 <h3>Return</h3>
-<code>[{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":7},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":4,"unique_opens":1,"blocked":6}]</code>
-<p>
-</p>
+``` javascript
+[{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":7},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":4,"unique_opens":1,"blocked":6}]
+```
+
 <h2>All Time Category Totals</h2>
-<h3>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</h3>
-<h3><em>Note that you can use either the days parameter or the start_date and end_date parameter.</em></h3>
+
+<h3>Retrieve statistics broken down by category. If the category does not exist, there
+will be an empty result set.</h3>
+
+<h3><em>Note that you can use either the days parameter or the start_date and end_date
+parameter.</em></h3>
+
 <h2>Parameters</h2>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>category</td>
-<td>Yes</td>
-<td>Must be set to 1</td>
-<td>This is used to indicate you are interested in all time totals</td>
-</tr>
-<tr>
-<td>category</td>
-<td>Yes</td>
-<td>Must be an existing category that has statistics.</td>
-<td>The category you will specify to retrieve detailed stats</td>
-</tr>
-<tr>
-<td>days</td>
-<td>No</td>
-<td>Must be an integer greater than 0</td>
-<td>Number of days in the past to include statistics (Includes today)</td>
-</tr>
-<tr>
-<td>start_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-<td>The start date to look up statistics</td>
-</tr>
-<tr></tr>
-</tbody>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+
+      <th>Required</th>
+
+      <th>Requirements</th>
+
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>category</td>
+
+      <td>Yes</td>
+
+      <td>Must be set to 1</td>
+
+      <td>This is used to indicate you are interested in all time totals</td>
+    </tr>
+
+    <tr>
+      <td>category</td>
+
+      <td>Yes</td>
+
+      <td>Must be an existing category that has statistics.</td>
+
+      <td>The category you will specify to retrieve detailed stats</td>
+    </tr>
+
+    <tr>
+      <td>days</td>
+
+      <td>No</td>
+
+      <td>Must be an integer greater than 0</td>
+
+      <td>Number of days in the past to include statistics (Includes today)</td>
+    </tr>
+
+    <tr>
+      <td>start_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
+
+      <td>The start date to look up statistics</td>
+    </tr>
+
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
 </table>
+
 <h2>XML</h2>
+
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&category=categoryA&aggregate=1</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&category=categoryA&aggregate=1
+```
 <h3>Command - Using an array of categories</h3>
-<code>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&category[]=categoryA&category[]=categoryB&aggregate=1</code>
+```
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&category[]=categoryA&category[]=categoryB&aggregate=1
+```
 <h3>Return</h3>
-<code>
+``` xml
 <stats>
   <category>
     <name>categoryA</name>
@@ -280,9 +404,13 @@
     <blocked>8</blocked>
   </category>
 </stats>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&category=categoryA&aggregate=1</code>
+```
+https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&category=categoryA&aggregate=1
+```
 <h3>Return</h3>
-<code>[{"name":"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}]</code>
+``` javascript
+[{"name":"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":8}]
+```

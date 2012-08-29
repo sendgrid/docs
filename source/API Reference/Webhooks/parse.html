@@ -16,7 +16,7 @@ navigation:
 <h2>Setup</h2>
 <p>The following steps are required to begin parsing email:</p>
 
-<ul class="regular">
+<ul>
 	<li>Point the MX Record of the Domain/Hostname or Subdomain to <strong>mx.sendgrid.net</strong></li>
 	<li>Associate the Domain/Hostname and the URL in the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a></li>
 </ul>
@@ -26,69 +26,107 @@ navigation:
 <p>The following parameters will be included in the POST to your callback URL.</p>
 
 <table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>headers</th>
-<td>The raw headers of the email.</td>
-</tr>
-<tr>
-<th>text</th>
-<td>Text body of email. If not set, email did not have a text body.</td>
-</tr>
-<tr>
-<th>html</th>
-<td>HTML body of email. If not set, email did not have an HTML body.</td>
-</tr>
-<tr>
-<th>from</th>
-<td>Email sender, as taken from the message headers.</td>
-</tr>
-<tr>
-<th>to</th>
-<td>Email recipient field, as taken from the message headers.</td>
-</tr>
-<tr>
-<th>cc</th>
-<td>Email cc field, as taken from the message headers.</td>
-</tr>
-<tr>
-<th>subject</th>
-<td>Email Subject.</td>
-</tr>
-<tr>
-<th>dkim</th>
-<td>A JSON string containing the verification results of any dkim and domain keys signatures in the message.</td>
-</tr>
-<tr>
-<th>SPF</th>
-<td>The results of the Sender Policy Framework verification of the message sender and receiving IP address.</td>
-</tr>
-<tr>
-<th>envelope</th>
-<td>A JSON string containing the SMTP envelope. This will have two variables: <em>to</em>, which is an array of recipients, and <em>from</em>, which is the return path for the message.</td>
-</tr>
-<tr>
-<th>charsets</th>
-<td>A JSON string containing the character sets of the fields extracted from the message.</td>
-</tr>
-<tr>
-<th>spam_score</th>
-<td>Spam Assassin's rating for whether or not this is spam.</td>
-</tr>
-<tr>
-<th>spam_report</th>
-<td>Spam Assassin's spam report.</td>
-</tr>
-<tr>
-<th>attachments</th>
-<td>Number of attachments included in email.</td>
-</tr>
-<tr>
-<th>attachmentX</th>
-<td>These are file upload names, where N is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. TNEF files (winmail.dat) will be extracted and have any attachments posted.</td>
-</tr>
-</tbody>
-</table>
+   <tbody>
+     <tr>
+       <th>headers</th>
+
+       <td>The raw headers of the email.</td>
+     </tr>
+
+     <tr>
+       <th>text</th>
+
+       <td>Text body of email. If not set, email did not have a text body.</td>
+     </tr>
+
+     <tr>
+       <th>html</th>
+
+       <td>HTML body of email. If not set, email did not have an HTML body.</td>
+     </tr>
+
+     <tr>
+       <th>from</th>
+
+       <td>Email sender, as taken from the message headers.</td>
+     </tr>
+
+     <tr>
+       <th>to</th>
+
+       <td>Email recipient field, as taken from the message headers.</td>
+     </tr>
+
+     <tr>
+       <th>cc</th>
+
+       <td>Email cc field, as taken from the message headers.</td>
+     </tr>
+
+     <tr>
+       <th>subject</th>
+
+       <td>Email Subject.</td>
+     </tr>
+
+     <tr>
+       <th>dkim</th>
+
+       <td>A JSON string containing the verification results of any dkim and domain keys
+       signatures in the message.</td>
+     </tr>
+
+     <tr>
+       <th>SPF</th>
+
+       <td>The results of the Sender Policy Framework verification of the message sender
+       and receiving IP address.</td>
+     </tr>
+
+     <tr>
+       <th>envelope</th>
+
+       <td>A JSON string containing the SMTP envelope. This will have two variables:
+       <em>to</em>, which is an array of recipients, and <em>from</em>, which is the
+       return path for the message.</td>
+     </tr>
+
+     <tr>
+       <th>charsets</th>
+
+       <td>A JSON string containing the character sets of the fields extracted from the
+       message.</td>
+     </tr>
+
+     <tr>
+       <th>spam_score</th>
+
+       <td>Spam Assassin's rating for whether or not this is spam.</td>
+     </tr>
+
+     <tr>
+       <th>spam_report</th>
+
+       <td>Spam Assassin's spam report.</td>
+     </tr>
+
+     <tr>
+       <th>attachments</th>
+
+       <td>Number of attachments included in email.</td>
+     </tr>
+
+     <tr>
+       <th>attachmentX</th>
+
+       <td>These are file upload names, where N is the total number of attachments. For
+       example, if the number of attachments is 0, there will be no attachment files. If
+       the number of attachments is 3, parameters attachment1, attachment2, and
+       attachment3 will have file uploads. TNEF files (winmail.dat) will be extracted
+       and have any attachments posted.</td>
+     </tr>
+   </tbody>
+ </table>
 
 <p><span class="label label-info">Info</span><blockquote>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
 

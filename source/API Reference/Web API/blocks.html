@@ -73,7 +73,7 @@ navigation:
 
  <h3>Command</h3>
 
- ```
+```
 https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1</code>
 ```
 
@@ -131,9 +131,15 @@ or illegal user: email1@domain.com 2009-06-10 12:40:30 email2@domain2.com 5.1.1 
 https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 ```
 
-  <h3>Return-Sucess</h3><code>success</code>
+  <h3>Response: Success</h3>
+```
+success
+```
 
-  <h3>Return-Error</h3><code>Email does not exist</code>
+  <h3>Response: Error</h3>
+```
+Email does not exist
+```
 
   <h2>JSON</h2>
 
@@ -142,11 +148,11 @@ https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api
 https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 ```
 
-  <h3>Return-Sucess</h3>
-```
+  <h3>Response: Success</h3>
+``` javascript
 {"message":"success"}
 ```
-  <h3>Return-Error</h3>
-```
+  <h3>Response: Error</h3>
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```

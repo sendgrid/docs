@@ -14,8 +14,7 @@ navigation:
 https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
 ```
 <h3>Return - Success</h3>
-```
-
+``` xml
 <parse>
   <entry>
     <hostname>www.example.com</hostname>
@@ -23,7 +22,6 @@ https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=sec
     <spam_check>1</spam_check>
   </entry>
 </parse>
-
 ```
 <h3>Return - Empty Set</h3>
 ```
@@ -33,18 +31,16 @@ https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=sec
 <h3>Command</h3>
 ```
 https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
-```
+``` 
 <h3>Return - Success</h3>
-```
+``` javascript
 {"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}
 ```
 <h3>Return - Empty Set</h3>
-```
+``` javascript
 {"parse":[]}
 ```
-<br>
 
-</br>
 <a name="set"></a>
 <h2>Set New Entry</h2>
 <p>Specify the hostname and url for parsing incoming emails.</p>
@@ -55,17 +51,14 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
 ```
 
 <h3>Return - Success<h3>
-```
-
+``` xml
 <result>
   <message>success</message>
 </result>
 
 ```
-<br></br>
 <h3>Return - Error</h3>
-```
-
+``` xml
 <result>
   <message>error</message>
   <errors>
@@ -74,7 +67,6 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
     ...
   </errors>
 </result>
-
 ```
 <h2>JSON</h2>
 <h3>Command</h3>
@@ -82,16 +74,13 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
 https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
 ```
 <h3>Return - Success </h3>
-```
+``` javascript
 {"message":"success"}
 ```
 <h3>Return - Error</h3>
-```
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
-<br>
-
-</br>
 <a name="edit"></a>
 <h2>Edit Entry</h2>
 <p>Edit your existing settings for parsing incoming emails.</p>
@@ -109,8 +98,7 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
 
 ```
 <h3>Return - Error</h3>
-```
-
+``` xml
 <result>
   <message>error</message>
   <errors>
@@ -119,24 +107,21 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
     ...
   </errors>
 </result>
-
 ```
+
 <h2>JSON</h2>
 <h3>Command</h3>
 ```
 https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
 ```
 <h3>Return - Success</h3>
-```
+``` javascript
 {"message":"success"}
 ```
 <h3>Return - Error</h3>
-```
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
-<br>
-
-</br>
 <a name="delete"></a>
 <h2>Delete Entry</h2>
 <p>Delete the existing settings for parsing incoming emails.</p>
@@ -146,12 +131,13 @@ https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=se
 https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
 ```
 <h3>Return - Success</h3>
-```
-
+``` xml
 <result>
   <message>success</message>
 </result>
-Return - Error
+```
+<h3>Return - Error</h3>
+``` xml
 <result>
   <message>error</message>
   <errors>
@@ -160,7 +146,6 @@ Return - Error
     ...
   </errors>
 </result>
-
 ```
 <h2>JSON</h2>
 <h3>Command</h3>
@@ -168,10 +153,10 @@ Return - Error
 https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
 ```
 <h3>Return - Success</h3>
-```
+``` javascript
 {"message":"success"}
 ```
 <h3>Return - Error</h3>
-```
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
