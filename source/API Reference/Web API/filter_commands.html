@@ -17,10 +17,9 @@ For a list of all the apps and parameters accesible with the Web API you can che
 https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&api_key=secureSecret
 ```
 
-```
-<strong>Return - Success</strong>
-```
 
+<strong>Return - Success</strong>
+``` xml
 <filters>
   <filter>
     <name>twitter</name>
@@ -37,7 +36,7 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&a
 https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com&api_key=secureSecret
 ```
 <strong>Return - Success</strong>
-```
+``` javascript
 [{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... ]
 ```
 
@@ -51,14 +50,12 @@ https://sendgrid.com/api/filter.activate.xml?api_user=youremail@domain.com&api_k
 ```
 
 <strong>Return - Success</strong>
-```
-
+``` xml
 <result>
   <message>success</message>
 </result>
 
 ```
-
 <h3>JSON</h3>
 <p>Command</p>
 ```
@@ -66,7 +63,7 @@ https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com&api_
 ```
 
 <strong>Return</strong>
-```
+``` javascript
 {"message":"success"}
 ```
 
@@ -80,12 +77,10 @@ https://sendgrid.com/api/filter.deactivate.xml?api_user=youremail@domain.com&api
 ```
 
 <strong>Return - Success</strong>
-```
-
+``` xml
 <result>
   <message>success</message>
 </result>
-
 ```
 
 <h3>JSON</h3>
@@ -95,7 +90,7 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com&ap
 ```
 
 <strong>Return</strong>
-```
+``` javascript
 {"message":"success"}
 ```
 
@@ -105,7 +100,7 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com&ap
 <p>These API calls require that settings are passed using POST.</p>
 <h3>PHP curl</h3>
 <p>Code Example</p>
-```
+``` php
 <?php
  
 $url = 'sendgrid.com';
@@ -150,18 +145,18 @@ https://sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&ap
 ```
 
 <strong>Return - Success</strong>
-```
 
+``` xml
 <filter>
     <field_name>field_value</field_name>
     ...
 </filter>
-
 ```
 
 <strong>Return - Error</strong>
 ```
 
+``` xml
 <result>
   <message>error</message>
   <message>... error messages ...</message>
@@ -171,7 +166,7 @@ https://sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&ap
 
 <h3>Return - Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-```
+``` xml
 <filter></filter>
 ```
 
@@ -182,17 +177,17 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&a
 ```
 
 <strong>Return - Success</strong>
-```
+``` javascript
 {"message":"success","settings":{"field_name":"field_value”}}
 ```
 
 <strong>Return - Error</strong>
-```
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
 
 <strong>Return - Empty</strong>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-```
+``` javascript
 {"settings":null}
 ```

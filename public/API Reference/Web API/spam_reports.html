@@ -1,131 +1,382 @@
-This module allows you to retrieve and delete entries in the Spam Reports list.
 
-<a name="get"></a>
-<h2>get</h2>
-Retrieve a list of spam reports with addresses and response codes, optionally with dates.
-<h3>Parameters</h3>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>date</td>
-<td>No</td>
-<td>Must be set to 1</td>
-<td>Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-</tr>
-<tr>
-<td>days</td>
-<td>No</td>
-<td>If specified, must be an integer greater than 0</td>
-<td>Number of days in the past for which to retrieve spam reports (includes today)</td>
-</tr>
-<tr>
-<td>start_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.</td>
-<td>The start of the date range for which to retrieve spam reports.</td>
-</tr>
-<tr>
-<td>end_date</td>
-<td>No</td>
-<td>Date must be in YYYY-MM-DD format and be later than the start_date parameter.</td>
-<td>The end of the date range for which to retrieve spam reports.</td>
-</tr>
-   <tr> 
-      <td>limit</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>Optional field to limit the number of results returned.</td> 
-    </tr> 
-    <tr> 
-      <td>offset</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>optional beginning point in the list to retrieve from.</td> 
-    </tr> 
-    <tr> 
-      <td>email</td> 
-      <td>No</td> 
-      <td>email address eg testing@example.com</td> 
-      <td>optional email addresses to search for.</td> 
-    </tr> 
-</tbody>
-</table>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Spam Reports - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview	API Reference API Libraries SMTP API Apps (Filters) Categories SMTP API Overview Section Tags Substitution Tags Unique Arguments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Web API/spam_reports.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/collapse.min.js"></script>
+  <script src="/javascripts/libs/jstorage.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+	
+    <div class="row-fluid" id="content">
+	
+      
+<aside class="sidebar-nav span3">
+    <ul id="nav-menu" class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	<li id="node-4ebc1e8463894c1f21bb0813fefe58dc" class="parent collapsibleListClosed"><div class="subtree-name">API Reference</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	<li id="node-fa3589f70c8f5e335b3cb659bbe92020" class="parent "><div class="subtree-name">SMTP API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/index.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul></li>	 	<li id="node-e6df1071f16ae333a0035dfba4e75675" class="parent collapsibleListClosed"><div class="subtree-name">Web API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Web API/blocks.html">Blocks</a></li>	 	 	 <li class=><a href="/API Reference/Web API/bounces.html">Bounces</a></li>	 	 	 <li class=><a href="/API Reference/Web API/filter_commands.html">Filter Commands</a></li>	 	 	 <li class=><a href="/API Reference/Web API/filter_settings.html">Filter Settings</a></li>	 	 	 <li class=><a href="/API Reference/Web API/invalid_emails.html">Invalid Emails</a></li>	 	 	 <li class=><a href="/API Reference/Web API/mail.html">Mail</a></li>	 	 	 <li class=><a href="/API Reference/Web API/multiple_credentials.html">Multiple Credentials</a></li>	 	 	 <li class=><a href="/API Reference/Web API/parse_settings.html">Parse Webhook Settings</a></li>	 	 	 <li class=><a href="/API Reference/Web API/profile.html">Profile</a></li>	 	 	 <li class=active><a href="/API Reference/Web API/spam_reports.html">Spam Reports</a></li>	 	 	 <li class=><a href="/API Reference/Web API/statistics.html">Statistics</a></li>	 	 	 <li class=><a href="/API Reference/Web API/unsubscribes.html">Unsubscribes</a></li>	 	  </ul></li>	 	<li id="node-2344b07f02628dc1eb8c9c591148c41f" class="parent "><div class="subtree-name">Webhooks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=><a href="/API Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-2fb05db87da3429460f69395c2678dcc" class="parent "><div class="subtree-name">API Workshop</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Workshop/index.html">API Workshop</a></li>	  </ul></li>	<li id="node-38b334e8c44bd2248734bd286ac5216a" class="parent "><div class="subtree-name">Apps</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Apps/address_whitelisting.html">Address Whitelisting</a></li>	 	 <li class=><a href="/Apps/bcc.html">BCC</a></li>	 	 <li class=><a href="/Apps/bypass_list_management.html">Bypass List Management</a></li>	 	 <li class=><a href="/Apps/click_tracking.html">Click Tracking</a></li>	 	 <li class=><a href="/Apps/dkim.html">DKIM</a></li>	 	 <li class=><a href="/Apps/domain_keys.html">Domain Keys</a></li>	 	 <li class=><a href="/Apps/email_templates.html">Email Templates</a></li>	 	 <li class=><a href="/Apps/event_notification.html">Event Notification</a></li>	 	 <li class=><a href="/Apps/footer.html">Footer</a></li>	 	 <li class=><a href="/Apps/forward_spam.html">Forward Spam</a></li>	 	 <li class=><a href="/Apps/google_analytics.html">Google Analytics</a></li>	 	 <li class=><a href="/Apps/gravatar.html">Gravatar</a></li>	 	 <li class=><a href="/Apps/index.html">Apps Overview</a></li>	 	 <li class=><a href="/Apps/open_tracking.html">Open Tracking</a></li>	 	 <li class=><a href="/Apps/return_path_seedlist.html">Return Path Seedlist</a></li>	 	 <li class=><a href="/Apps/spam_checker.html">Spam Checker</a></li>	 	 <li class=><a href="/Apps/subscription_tracking.html">Subscription Tracking</a></li>	  </ul></li>	<li id="node-b37c06ad4007a0f98fca75eeb0dbb3ca" class="parent "><div class="subtree-name">Code Examples</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	 	<li id="node-bf75fa0aaadabb89be80f00ca0258363" class="parent "><div class="subtree-name">SMTP API Header Examples</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/perl.html">Perl</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/php.html">PHP</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/python.html">Python / Django</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/ruby.html">Ruby</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-88682ba11f4657bc781dab389076dbaa" class="parent "><div class="subtree-name">Delivery Metrics</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Delivery Metrics/alerts.html">Alerts</a></li>	 	 <li class=><a href="/Delivery Metrics/categories.html">Categories</a></li>	 	 <li class=><a href="/Delivery Metrics/email_activity.html">Email Activity</a></li>	 	 <li class=><a href="/Delivery Metrics/email_error_messages.html">Email Error Messages</a></li>	 	 <li class=><a href="/Delivery Metrics/email_reports.html">Email Reports</a></li>	 	 <li class=><a href="/Delivery Metrics/index.html">Delivery Metrics</a></li>	  </ul></li>	<li id="node-2e85a09ef64e25ecd00fd36505c363bd" class="parent "><div class="subtree-name">Integrate</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Integrate/index.html">Integrate with SendGrid</a></li>	 	<li id="node-de77d58abe13de22cdbb8979bdcea918" class="parent "><div class="subtree-name">Frameworks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul></li>	 	<li id="node-56eedf923766ab032efeece2ea8e762a" class="parent "><div class="subtree-name">Mail Clients</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul></li>	 	<li id="node-ce98818760e307d986b75da117584908" class="parent "><div class="subtree-name">Mail Servers</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul></li>	 	<li id="node-56586b0511e1c223ed10016de929a8ed" class="parent "><div class="subtree-name">Open Source Apps</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-d7eeb8982bc2493631b06a9fde6e1b6d" class="parent "><div class="subtree-name">User Guide</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/User Guide/billing.html">Billing and Account Changes</a></li>	 	 <li class=><a href="/User Guide/multiple_credentials.html">Multiple User Credentials</a></li>	 	 <li class=><a href="/User Guide/sending_practices.html">Sending Practices and Limitations</a></li>	 	 <li class=><a href="/User Guide/smtp_ports.html">SMTP Ports</a></li>	 	 <li class=><a href="/User Guide/warming_up.html">Warming Up an IP Address</a></li>	 	 <li class=><a href="/User Guide/whitelabel_wizard.html">Whitelabel Wizard</a></li>	  </ul></li> </ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  <ul class="breadcrumb"><li><a href="/">Documentation</a><span class="divider">/</span></li><li><a href="/API Reference/">API Reference</a><span class="divider">/</span></li><li><a href="/API Reference/Web API/">Web API</a><span class="divider">/</span></li><li>Spam Reports</li></ul>
+  
+  <header class="page-header">
+    <h1 class="entry-title">Spam Reports</h1>
+    
+  </header>
+  
+  <p>Retrieve and delete entries in the Spam Reports list.</p>
+
+<a name="get" id="get"></a>
+
+ <h2>get</h2>Retrieve a list of spam reports with addresses and response codes,
+ optionally with dates.
+
+ <h3>Parameters</h3>
+
+ <table class="table table-bordered table-striped">
+   <tbody>
+     <tr>
+       <th>Parameter</th>
+
+       <th>Required</th>
+
+       <th>Requirements</th>
+
+       <th>Description</th>
+     </tr>
+
+     <tr>
+       <td>date</td>
+
+       <td>No</td>
+
+       <td>Must be set to 1</td>
+
+       <td>Retrieve the timestamp of the spam report records. It will return a date in a
+       MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
+     </tr>
+
+     <tr>
+       <td>days</td>
+
+       <td>No</td>
+
+       <td>If specified, must be an integer greater than 0</td>
+
+       <td>Number of days in the past for which to retrieve spam reports (includes
+       today)</td>
+     </tr>
+
+     <tr>
+       <td>start_date</td>
+
+       <td>No</td>
+
+       <td>Date must be in YYYY-MM-DD format and be earlier than the end_date
+       parameter.</td>
+
+       <td>The start of the date range for which to retrieve spam reports.</td>
+     </tr>
+
+     <tr>
+       <td>end_date</td>
+
+       <td>No</td>
+
+       <td>Date must be in YYYY-MM-DD format and be later than the start_date
+       parameter.</td>
+
+       <td>The end of the date range for which to retrieve spam reports.</td>
+     </tr>
+
+     <tr>
+       <td>limit</td>
+
+       <td>No</td>
+
+       <td>some integer</td>
+
+       <td>Optional field to limit the number of results returned.</td>
+     </tr>
+
+     <tr>
+       <td>offset</td>
+
+       <td>No</td>
+
+       <td>some integer</td>
+
+       <td>optional beginning point in the list to retrieve from.</td>
+     </tr>
+
+     <tr>
+       <td>email</td>
+
+       <td>No</td>
+
+       <td>email address eg testing@example.com</td>
+
+       <td>optional email addresses to search for.</td>
+     </tr>
+   </tbody>
+ </table>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>
-https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-</code>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
 <h3>Return</h3>
-<code>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com
+</span><span class='line'>5.1.1
+</span><span class='line'>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
+</span><span class='line'>2009-06-10 12:40:30
+</span><span class='line'>
+</span><span class='line'>email2@domain2.com
+</span><span class='line'>5.1.1
+</span><span class='line'>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
+</span><span class='line'>2009-08-01 10:16:30</span></code></pre></td></tr></table></div></figure>
 
+  <a name="delete" id="delete"></a>
 
-email1@domain.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
-2009-06-10 12:40:30
+  <h2>delete</h2>
 
+  <p>Delete an address from the Spam Reports list.</p>
 
-email2@domain2.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
-2009-08-01 10:16:30
+  <h3>Parameters</h3>
 
-</code>
-<h3>NOTE:</h3>
-<code> tags will not populate unless date is set</code>
-<a name="delete"></a>
-<h2>delete</h2>
-Delete an address from the Spam Reports list.
-<h3>Parameters</h3>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>email</td>
-<td>Yes</td>
-<td>Must be a valid user account email</td>
-<td>Email spam reports address to remove</td>
-</tr>
-</tbody>
-</table>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>Parameter</th>
+
+        <th>Required</th>
+
+        <th>Requirements</th>
+
+        <th>Description</th>
+      </tr>
+
+      <tr>
+        <td>email</td>
+
+        <td>Yes</td>
+
+        <td>Must be a valid user account email</td>
+
+        <td>Email spam reports address to remove</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>
-https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-</code>
-<h3>Return-Sucess</h3>
-<code>
-
-success
-
-</code>
-<h3>Return-Error</h3>
-<code>
-
-Email does not exist
-
-</code>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>
-https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-</code>
-<h3>Return-Sucess</h3>
-<code>
-{"message":"success"}
-</code>
-<h3>Return-Error</h3>
-<code>
-{"message":"error","errors":[..."error messages"...]}
-</code>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=emailToDelete@domain.com
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>

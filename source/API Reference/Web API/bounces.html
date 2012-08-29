@@ -5,7 +5,7 @@ navigation:
   show: true
 ---
 
-<p>This module allows you to retrieve and delete entries in the Bounces list.</p>
+<p>This endpoint allows you to retrieve and delete entries in the Bounces list.</p>
 
 <a name="get"></a>
 <h2>get</h2>
@@ -117,7 +117,7 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
 ```
 
 <h3>Return</h3>
-<code>
+``` xml
 <bounces>
   <bounce>
     <email>email1@domain.com</email>
@@ -131,9 +131,9 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
     <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
     <created>2009-08-01 10:16:30</created>
   </bounce>
-</bounces></code>
-<h3>NOTE:</h3>
-<code><created> tags will not populate unless date is set</code>
+</bounces>
+```
+<blockquote><span class="label label-info">Info</span> <code><created></code> tags will not populate unless date is set</blockquote>
 
 <a name="delete"></a>
 <h2>delete</h2>
@@ -179,33 +179,27 @@ Delete an address from the Bounce list.  Please note that if no parameters are s
 ```
 https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
 ```
-<result>
-<h3>Return-Sucess</h3>
-</result>
-<code>
-<result>
+<h3>Response: Success</h3>
+``` xml
 success
-</result>
-</code>
-<result>
-<h3>Return-Error</h3>
-</result>
-<code>
+```
+<h3>Response: Error</h3>
+``` xml
 <result>
 Email does not exist
 </result>
-</code>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
 ```
 https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
-<h3>Return-Sucess</h3>
-```
+``` 
+<h3>Response: Success</h3>
+``` javascript
 {"message":"success"}
 ```
-<h3>Return-Error</h3>
-```
+<h3>Response: Error</h3>
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```
 
@@ -244,19 +238,17 @@ https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_k
   <h3>XML</h3> 
  
   <h4>Command</h4> 
-    <code>https://sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&api_key=secureSecret</code> 
- 
-  <h4>Return - Success</h4> 
- 
 ```
+https://sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&api_key=secureSecret
+```
+  <h4>Return - Success</h4> 
+``` xml
 <result>
   <count>4</count>
 </result>
 ```
- 
   <h4>Return - Error</h4> 
- 
-```
+``` xml
 <result>
   <message>error: reason</message>
 </result>
@@ -266,18 +258,18 @@ https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_k
  
   <h4>Command</h4> 
  
-    ```
-	https://sendgrid.com/api/bounces.count.json?api_user=youremail@domain.com&api_key=secureSecret
-	```
+```
+https://sendgrid.com/api/bounces.count.json?api_user=youremail@domain.com&api_key=secureSecret
+```
  
   <h4>Return - Success</h4> 
  
-  ```
+``` javascript
 {"count":"4"}
 ```
  
   <h4>Return - Error</h4> 
  
-  ```
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
 ```

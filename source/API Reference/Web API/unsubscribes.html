@@ -1,10 +1,17 @@
-This module allows you to retrieve, delete and add entries in the Unsubscribes list.
+---
+layout: page
+title: Unsubscribes
+navigation:
+  show: true
+---
+
+<p>Retrieve, delete and add entries in the Unsubscribes list.</p>
 
 <a name="get"></a>
 <h2>get</h2>
-Retrieve a list of Unsubscribes with addresses and optionally with dates.
+<p>Retrieve a list of Unsubscribes with addresses and optionally with dates.</p>
 <h3>Parameters</h3>
-<table>
+<table class="table table-bordered table-striped">
 	<tbody>
 		<tr>
 			<th>
@@ -99,124 +106,147 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 
 <h2>XML</h2>
 <h3>Command</h3>
-<code>
+```
 https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-</code>
+```
 <h3>Return</h3>
-<code>
-
-
+```
 email1@domain.com
 2009-06-10 12:40:30
 
-
 email2@domain2.com
 2009-06-10 12:40:30
+```
 
-</code>
-<h3>NOTE:</h3>
-<code> tags will not populate unless date is set</code>
 <a name="delete"></a>
 <h2>delete</h2>
-Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.
+<p>Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.</p>
 <h3>Parameters</h3>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-    <tr> 
-      <td>start_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
-      <td>Optional date to start retrieving for.</td>   
-    </tr> 
-      <tr> 
-      <td>end_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
-      <td>Optional date to end retrieving for.</td> 
-    </tr> 
-<tr>
-<td>email</td>
-<td>No</td>
-<td>Must be a valid user account email</td>
-<td>Unsubscribed email address to remove</td>
-</tr>
-</tbody>
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+
+      <th>Required</th>
+
+      <th>Requirements</th>
+
+      <th>Description</th>
+    </tr>
+
+    <tr>
+      <td>start_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
+
+      <td>Optional date to start retrieving for.</td>
+    </tr>
+
+    <tr>
+      <td>end_date</td>
+
+      <td>No</td>
+
+      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
+
+      <td>Optional date to end retrieving for.</td>
+    </tr>
+
+    <tr>
+      <td>email</td>
+
+      <td>No</td>
+
+      <td>Must be a valid user account email</td>
+
+      <td>Unsubscribed email address to remove</td>
+    </tr>
+  </tbody>
 </table>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>
+```
 https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-</code>
-<h3>Return-Success</h3>
-<code>
+```
+<h3>Response: Success</h3>
 
-success
+```
+<result>
+  success
+<result>
+```
 
-</code>
-<h3>Return-Error</h3>
-<code>
+<h3>Response: Error</h3>
 
-Email does not exist
+</result>
+``` xml
+<result>
+  Email does not exist
+</result>
+```
 
-</code>
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>
+```
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-</code>
-<h3>Return-Sucess</h3>
-<code>
+```
+<h3>Response: Success</h3>
+``` javascript
 {"message":"success"}
-</code>
-<h3>Return-Error</h3>
-<code>
+```
+<h3>Response: Error</h3>
+``` javascript
 {"message":"error","errors":[..."error messages"...]}
-</code>
+```
 <a name="add"></a>
 <h2>add</h2>
-Add email addresses to the Unsubscribe list.
+<p>Add email addresses to the Unsubscribe list.</p>
 <h3>Parameters</h3>
-<table>
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>email</td>
-<td>Yes</td>
-<td>Must be a valid email address</td>
-<td>Email address to add to unsubscribe list</td>
-</tr>
-</tbody>
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>Yes</td>
+      <td>Must be a valid email address</td>
+      <td>Email address to add to unsubscribe list</td>
+    </tr>
+  </tbody>
 </table>
 <h2>XML</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com</code>
-<h3>Return - Success</h3>
-<code>
-
-success
-
-</code>
-<h3>Return - Error</h3>
-<code>
-
-Email does not exist
-
-</code>
+```
+https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
+```
+<h3>Response: Success</h3>
+``` xml
+<result>
+  <message>success</message>
+</result>
+```
+<h3>Response: Error</h3>
+``` xml
+<result>
+  <message>Email does not exist</message>
+</result>
+```
 <h2>JSON</h2>
 <h3>Command</h3>
-<code>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com</code>
+```
+https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
+```
 <h3>Return - Success</h3>
-<code>{"message":"success"}</code>
+``` javascript
+{"message":"success"}
+```
 <h3>Return - Error</h3>
-<code>{"message":"error","errors":[..."error messages"...]}</code>
+``` javascript
+{"message":"error","errors":[..."error messages"...]}
+```

@@ -30,15 +30,15 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/blocks.html</loc>
-        <lastmod>2012-08-28T10:22:08-06:00</lastmod>
+        <lastmod>2012-08-28T18:12:31-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/bounces.html</loc>
-        <lastmod>2012-08-28T10:26:11-06:00</lastmod>
+        <lastmod>2012-08-28T18:12:31-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/filter_commands.html</loc>
-        <lastmod>2012-08-28T14:04:22-06:00</lastmod>
+        <lastmod>2012-08-28T17:54:32-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/filter_settings.html</loc>
@@ -46,23 +46,35 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/invalid_emails.html</loc>
-        <lastmod>2012-08-28T10:38:02-06:00</lastmod>
+        <lastmod>2012-08-28T18:17:24-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/mail.html</loc>
-        <lastmod>2012-08-28T13:54:19-06:00</lastmod>
+        <lastmod>2012-08-28T18:18:47-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/multiple_credentials.html</loc>
-        <lastmod>2012-08-28T13:54:13-06:00</lastmod>
+        <lastmod>2012-08-28T18:20:02-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/parse_settings.html</loc>
-        <lastmod>2012-08-28T14:08:42-06:00</lastmod>
+        <lastmod>2012-08-28T18:24:55-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/profile.html</loc>
-        <lastmod>2012-08-28T14:13:41-06:00</lastmod>
+        <lastmod>2012-08-28T18:30:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/Web API/spam_reports.html</loc>
+        <lastmod>2012-08-28T18:36:45-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/Web API/statistics.html</loc>
+        <lastmod>2012-08-28T18:50:28-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/API Reference/Web API/unsubscribes.html</loc>
+        <lastmod>2012-08-28T19:12:53-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/event.html</loc>
@@ -70,7 +82,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
-        <lastmod>2012-08-27T21:32:38-06:00</lastmod>
+        <lastmod>2012-08-28T18:22:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Workshop/</loc>
