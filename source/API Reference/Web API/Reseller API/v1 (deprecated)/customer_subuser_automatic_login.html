@@ -1,0 +1,53 @@
+---
+layout: page
+title: Customer Subuser Automatic Login
+navigation:
+   show: true
+---
+<p>Allow customer subusers to manage their account from your website using an iframe to our site.</p>
+<hr/><a name="initialAPICall"></a>
+<h2>Initial API Call</h2>
+<p>In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login yourcustomer subuser.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Must be set in email format</td>
+    <td>This is the customer subuser you will attempt
+			to automatically login</td>
+  </tr>
+  <tr>
+    <td>password</td>
+    <td>No</td>
+    <td>Your customer subuser password.</td>
+    <td>Authenticate the customer subuser with this
+			API call.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=geturl&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=geturl&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
+```
+<hr/><a name="iFrameUsage"></a>
+<h2>iFrame Usage</h2>
+<p>Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.</p>
+```
+iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
+```

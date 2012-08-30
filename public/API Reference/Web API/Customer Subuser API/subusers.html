@@ -1,0 +1,1192 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Subusers - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home Overview	API Reference API Libraries SMTP API Apps (Filters) Categories SMTP API Overview Section Tags Substitution Tags Unique Arguments &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Web API/Customer Subuser API/subusers.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/collapse.min.js"></script>
+  <script src="/javascripts/libs/jstorage.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/libs/bootstrap-tabs.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+	
+    <div class="row-fluid" id="content">
+	
+      
+<aside class="sidebar-nav span3">
+    <ul id="nav-menu" class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	 <li class=><a href="/overview.html">Overview</a></li>	<li id="node-4ebc1e8463894c1f21bb0813fefe58dc" class="parent collapsibleListClosed"><div class="subtree-name">API Reference</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Reference/libraries.html">API Libraries</a></li>	 	<li id="node-fa3589f70c8f5e335b3cb659bbe92020" class="parent "><div class="subtree-name">SMTP API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/SMTP API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/index.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API Reference/SMTP API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul></li>	 	<li id="node-e6df1071f16ae333a0035dfba4e75675" class="parent collapsibleListClosed"><div class="subtree-name">Web API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Web API/blocks.html">Blocks</a></li>	 	 	 <li class=><a href="/API Reference/Web API/bounces.html">Bounces</a></li>	 	 	 <li class=><a href="/API Reference/Web API/filter_commands.html">Filter Commands</a></li>	 	 	 <li class=><a href="/API Reference/Web API/filter_settings.html">Filter Settings</a></li>	 	 	 <li class=><a href="/API Reference/Web API/invalid_emails.html">Invalid Emails</a></li>	 	 	 <li class=><a href="/API Reference/Web API/mail.html">Mail</a></li>	 	 	 <li class=><a href="/API Reference/Web API/multiple_credentials.html">Multiple Credentials</a></li>	 	 	 <li class=><a href="/API Reference/Web API/parse_settings.html">Parse Webhook Settings</a></li>	 	 	 <li class=><a href="/API Reference/Web API/profile.html">Profile</a></li>	 	 	 <li class=><a href="/API Reference/Web API/spam_reports.html">Spam Reports</a></li>	 	 	 <li class=><a href="/API Reference/Web API/statistics.html">Statistics</a></li>	 	 	 <li class=><a href="/API Reference/Web API/unsubscribes.html">Unsubscribes</a></li>	 	 	<li id="node-956bf6c8dce38f740ac5e4258a23599e" class="parent collapsibleListClosed"><div class="subtree-name">Customer Subuser API</div>	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/account_limits.html">Account Limits</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/apps.html">Apps</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/authenticate_a_subuser.html">Authenticate a Subuser</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/automatic_login.html">Automatic Login</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/event_notification_url.html">Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/invalid_emails.html">Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/ip_management.html">IP Management</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/monitor_records.html">Monitor Records</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/parse_settings.html">Parse Settings</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/statistics.html">Statistics</a></li>	 	 	 	 <li class=active><a href="/API Reference/Web API/Customer Subuser API/subusers.html">Subusers</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/whitelabel.html">Whitelabel</a></li>	 	 	 	<li id="node-9b595643927e757c2d2e52a94277c6c7" class="parent "><div class="subtree-name">v1 (deprecated)</div>	 	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/automatic_login.html">Automatic Login</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/event_notification_url.html">Event Notification URL</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/invalid_emails.html">Invalid Emails</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/subuser_bounces.html">Subuser Bounces</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/subuser_spam_reports.html">Subuser Spam Reports</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Customer Subuser API/v1 (deprecated)/subuser_unsubscribes.html">Subuser Unsubscribes</a></li>	 	 	 	  </ul></li>	 	 	  </ul></li>	 	 	<li id="node-024401a5a2cdd65a04ea5067842921b1" class="parent "><div class="subtree-name">Newsletter API</div>	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/emails.html">Emails</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/lists.html">Lists</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/newsletters.html">Newsletters</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/recipients.html">Recipients</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/schedule.html">Schedule</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Newsletter API/sender_address.html">Sender Address</a></li>	 	 	  </ul></li>	 	 	<li id="node-584623693ed7cfad7aaff9a0ab3493c0" class="parent "><div class="subtree-name">Reseller API</div>	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/account_overview.html">Account Overview</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/apps.html">Apps</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/authenticate_a_customer.html">Authenticate a Customer</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/authenticate_a_customer_subuser.html">Authenticate a Customer Subuser</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/automatic_login.html">Automatic Login</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/billing.html">Billing</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/billing_retrieving_as_you_go_usage.html">Retrieving As-You-Go Usage</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/billing_retrieving_end_users_invoices_usage.html">Retrieving Invoice Usage</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_account_limits.html">Customer Account Limits</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_bounces.html">Customer Bounces</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_invalid_emails.html">Customer Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_management.html">Customer Management</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_spam_reports.html">Customer Spam Reports</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_statistics.html">Customer Statistics</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_account_limits.html">Customer Subuser Account Limits</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_apps.html">Customer Subuser Apps</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_automatic_login.html">Customer Subuser Automatic Login</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_bounces.html">Customer Subuser Bounces</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_event_notification_url.html">Customer Subuser Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_invalid_emails.html">Customer Subuser Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_monitor_outgoing_email.html">Customer Subuser Monitor Outgoing Email</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_parse_settings.html">Customer Subuser Parse Settings</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_spam_reports.html">Customer Subuser Spam Reports</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_statistics.html">Customer Subuser Statistics</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_subuser_unsubscribes.html">Customer Subuser Unsubscribes</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/customer_unsubscribes.html">Customer Unsubscribes</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/event_notification_url.html">Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/invoice_retrieval.html">Invoice Retrieval</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/ip_management.html">IP Management</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/monitor_records.html">Monitor Records</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/parse_settings.html">Parse Settings</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/pending_account_changes.html">Pending Account Changes</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/subuser_management.html">Subuser Management</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/view_available_packages.html">View Available Packages</a></li>	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/whitelabel.html">Whitelabel</a></li>	 	 	 	<li id="node-9ac79a8e6c4fb3ba735b113683dd55e9" class="parent "><div class="subtree-name">v1 (deprecated)</div>	 	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/account_overview.html">Account Overview</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/apps.html">Apps</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/authenticate_a_customer.html">Authenticate a Customer</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/authenticate_a_customer_subuser.html">Authenticate a Customer Subuser</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/automatic_login.html">Automatic Login</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/billing.html">Billing</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/billing_retrieving_as_you_go_usage.html">Retrieving As-You-Go Usage</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/billing_retrieving_end_users_invoices_usage.html">Retrieving End User Invoice</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_account_limits.html">Customer Account Limits</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_invalid_emails.html">Customer Invalid Emails</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_management.html">Customer Management</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_spam_reports.html">Customer Spam Reports</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_statistics.html">Customer Statistics</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_account_limits.html">Customer Subuser Account Limits</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_apps_filters.html">Customer Subuser Apps</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_automatic_login.html">Customer Subuser Automatic Login</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_bounces.html">Customer Subuser Bounces</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_event_notification_url.html">Customer Subuser Event Notification URL</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_invalid_emails.html">Customer Subuser Invalid Emails</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_monitor_outgoing_email.html">Customer Subuser Monitor Outgoing Email</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_parse_settings.html">Customer Subuser Parse Settings</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_spam_reports.html">Customer Subuser Spam Reports</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_statistics.html">Customer Subuser Statistics</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_subuser_unsubscribes.html">Customer Subuser Unsubscribes</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/customer_unsubscribes.html">Customer Unsubscribes</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/event_notification_url.html">API Reference/Web API/Reseller API/v1 (deprecated)/event_notification_url.html</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/invoice_retrieval.html">Invoice Retrieval</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/ip_management.html">IP Management</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/monitor_records.html">Monitor Records</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/parse_settings.html">Parse Settings</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/pending_account_changes.html">Pending Account Changes</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/subuser_management.html">Subuser Management</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/view_available_packages.html">View Available Packages</a></li>	 	 	 	 	 <li class=><a href="/API Reference/Web API/Reseller API/v1 (deprecated)/whitelabel.html">Whitelabel</a></li>	 	 	 	  </ul></li>	 	 	  </ul></li>	 	  </ul></li>	 	<li id="node-2344b07f02628dc1eb8c9c591148c41f" class="parent "><div class="subtree-name">Webhooks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=><a href="/API Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-2fb05db87da3429460f69395c2678dcc" class="parent "><div class="subtree-name">API Workshop</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API Workshop/index.html">API Workshop</a></li>	  </ul></li>	<li id="node-38b334e8c44bd2248734bd286ac5216a" class="parent "><div class="subtree-name">Apps</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Apps/address_whitelisting.html">Address Whitelisting</a></li>	 	 <li class=><a href="/Apps/bcc.html">BCC</a></li>	 	 <li class=><a href="/Apps/bypass_list_management.html">Bypass List Management</a></li>	 	 <li class=><a href="/Apps/click_tracking.html">Click Tracking</a></li>	 	 <li class=><a href="/Apps/dkim.html">DKIM</a></li>	 	 <li class=><a href="/Apps/domain_keys.html">Domain Keys</a></li>	 	 <li class=><a href="/Apps/email_templates.html">Email Templates</a></li>	 	 <li class=><a href="/Apps/event_notification.html">Event Notification</a></li>	 	 <li class=><a href="/Apps/footer.html">Footer</a></li>	 	 <li class=><a href="/Apps/forward_spam.html">Forward Spam</a></li>	 	 <li class=><a href="/Apps/google_analytics.html">Google Analytics</a></li>	 	 <li class=><a href="/Apps/gravatar.html">Gravatar</a></li>	 	 <li class=><a href="/Apps/index.html">Apps Overview</a></li>	 	 <li class=><a href="/Apps/open_tracking.html">Open Tracking</a></li>	 	 <li class=><a href="/Apps/return_path_seedlist.html">Return Path Seedlist</a></li>	 	 <li class=><a href="/Apps/spam_checker.html">Spam Checker</a></li>	 	 <li class=><a href="/Apps/subscription_tracking.html">Subscription Tracking</a></li>	  </ul></li>	<li id="node-b37c06ad4007a0f98fca75eeb0dbb3ca" class="parent "><div class="subtree-name">Code Examples</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Code Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code Examples/ruby.html">Ruby</a></li>	 	<li id="node-bf75fa0aaadabb89be80f00ca0258363" class="parent "><div class="subtree-name">SMTP API Header Examples</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/perl.html">Perl</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/php.html">PHP</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/python.html">Python / Django</a></li>	 	 	 <li class=><a href="/Code Examples/SMTP API Header Examples/ruby.html">Ruby</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-88682ba11f4657bc781dab389076dbaa" class="parent "><div class="subtree-name">Delivery Metrics</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Delivery Metrics/alerts.html">Alerts</a></li>	 	 <li class=><a href="/Delivery Metrics/categories.html">Categories</a></li>	 	 <li class=><a href="/Delivery Metrics/email_activity.html">Email Activity</a></li>	 	 <li class=><a href="/Delivery Metrics/email_error_messages.html">Email Error Messages</a></li>	 	 <li class=><a href="/Delivery Metrics/email_reports.html">Email Reports</a></li>	 	 <li class=><a href="/Delivery Metrics/index.html">Delivery Metrics</a></li>	  </ul></li>	<li id="node-2e85a09ef64e25ecd00fd36505c363bd" class="parent "><div class="subtree-name">Integrate</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Integrate/index.html">Integrate with SendGrid</a></li>	 	<li id="node-de77d58abe13de22cdbb8979bdcea918" class="parent "><div class="subtree-name">Frameworks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul></li>	 	<li id="node-56eedf923766ab032efeece2ea8e762a" class="parent "><div class="subtree-name">Mail Clients</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul></li>	 	<li id="node-ce98818760e307d986b75da117584908" class="parent "><div class="subtree-name">Mail Servers</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail Servers/ssmtp.html">ssmtp</a></li>	 	  </ul></li>	 	<li id="node-56586b0511e1c223ed10016de929a8ed" class="parent "><div class="subtree-name">Open Source Apps</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open Source Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open Source Apps/wordpress.html">WordPress</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-d7eeb8982bc2493631b06a9fde6e1b6d" class="parent "><div class="subtree-name">User Guide</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/User Guide/billing.html">Billing and Account Changes</a></li>	 	 <li class=><a href="/User Guide/multiple_credentials.html">Multiple User Credentials</a></li>	 	 <li class=><a href="/User Guide/sending_practices.html">Sending Practices and Limitations</a></li>	 	 <li class=><a href="/User Guide/smtp_ports.html">SMTP Ports</a></li>	 	 <li class=><a href="/User Guide/warming_up.html">Warming Up an IP Address</a></li>	 	 <li class=><a href="/User Guide/whitelabel_wizard.html">Whitelabel Wizard</a></li>	  </ul></li> </ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  <ul class="breadcrumb"><li><a href="/">Documentation</a><span class="divider">/</span></li><li><a href="/API Reference/">API Reference</a><span class="divider">/</span></li><li><a href="/API Reference/Web API/">Web API</a><span class="divider">/</span></li><li><a href="/API Reference/Web API/Customer Subuser API/">Customer Subuser API</a><span class="divider">/</span></li><li>Subusers</li></ul>
+  
+  <header class="page-header">
+    <h1 class="entry-title">Subusers</h1>
+    
+  </header>
+  
+  <div>
+  These are actions that directly affect your subuser. We provide access via XML and JSON.<hr/><a name="createSubuser"></a>
+  <p><strong><em>The Merry Tipster says:</em></strong>
+    Note that the parameters used to identify the user may appear to be at odds with itself. In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</p>
+  <p><em><strong>NOTE:</strong></em>
+    Due to updates to our API, you are no longer required to use only the email address form of the username for either the USERNAME or USER parameters. You can now use either the email address or username form.</p>
+  <h2>Create a Subuser</h2>
+  <table class="table table-bordered table-striped"><tbody>
+      <tr>
+        <th>Parameter</th>
+        <th>Required</th>
+        <th>Requirements</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td>Yes</td>
+        <td>No more than 64 characters</td>
+        <td>The subusers new username</td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td>Yes</td>
+        <td>Must be at least 6 characters</td>
+        <td>New password of subuser</td>
+      </tr>
+      <tr>
+        <td>confirm_password</td>
+        <td>Yes</td>
+        <td>Must match password parameter, must be at least 6 characters</td>
+        <td>Confirm new password</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>Yes</td>
+        <td>Must be in email format, no more than 64 characters</td>
+        <td>Email address of new subuser</td>
+      </tr>
+      <tr>
+        <td>first_name</td>
+        <td>Yes</td>
+        <td>No more than 50 characters</td>
+        <td>First name of new subuser</td>
+      </tr>
+      <tr>
+        <td>last_name</td>
+        <td>Yes</td>
+        <td>No more than 50 characters</td>
+        <td>Last name of new subuser</td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td>Yes</td>
+        <td>No more than 100 characters</td>
+        <td>Address of new subuser</td>
+      </tr>
+      <tr>
+        <td>city</td>
+        <td>Yes</td>
+        <td>No more than 100 characters</td>
+        <td>City of new subuser</td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td>Yes</td>
+        <td>No more than 100 characters</td>
+        <td>State of new subuser</td>
+      </tr>
+      <tr>
+        <td>zip</td>
+        <td>Yes</td>
+        <td>No more than 50 characters</td>
+        <td>Zip of new subuser. This field is not validated for correct value. It&#8217;s up to developer to check for valid zip code.</td>
+      </tr>
+      <tr>
+        <td>country</td>
+        <td>Yes</td>
+        <td>No more than 100 characters</td>
+        <td>Country of new subuser</td>
+      </tr>
+      <tr>
+        <td>phone</td>
+        <td>Yes</td>
+        <td>No more than 50 characters</td>
+        <td>Phone number of new subuser</td>
+      </tr>
+      <tr>
+        <td>website</td>
+        <td>Yes</td>
+        <td>No more than 255 characters</td>
+        <td>Website of new subuser</td>
+      </tr>
+      <tr>
+        <td>company</td>
+        <td>Yes</td>
+        <td>No more than 255 characters</td>
+        <td>Company of new subuser</td>
+      </tr>
+      <tr>
+        <td>mail_domain</td>
+        <td>No</td>
+        <td>A mail domain must already be setup with SendGrid, please contact <a href="mailto:support@sendgrid.com">support@sendgrid.com</a> to have one setup</td>
+        <td>Mail domain of new subuser</td>
+      </tr>
+    </tbody></table>
+  <h3>XML API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>success
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>error
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>... error messages ...
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;success&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+  <hr/><a name="retrieveSubusers"></a>
+  <h1>Retrieve Subusers</h1>
+  Obtain a complete list of all subusers.
+  <table class="table table-bordered table-striped"><tbody>
+      <tr>
+        <th>Parameter</th>
+        <th>Required</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>task</td>
+        <td>Yes</td>
+        <td>Must be set to <strong>get</strong> in order to retrieve user information</td>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td>No</td>
+        <td>Search filter, subuser that is registered under you</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>No</td>
+        <td>Search filter, email address subuser was registered with</td>
+      </tr>
+      <tr>
+        <td>active</td>
+        <td>No</td>
+        <td>Search filter, whether or not the subuser is currently active</td>
+      </tr>
+      <tr>
+        <td>first_name</td>
+        <td>No</td>
+        <td>Search filter, first name of subuser</td>
+      </tr>
+      <tr>
+        <td>last_name</td>
+        <td>No</td>
+        <td>Search filter, last name of subuser</td>
+      </tr>
+      <tr>
+        <td>address</td>
+        <td>No</td>
+        <td>Search filter, address of subuser</td>
+      </tr>
+      <tr>
+        <td>city</td>
+        <td>No</td>
+        <td>Search filter, city of subuser</td>
+      </tr>
+      <tr>
+        <td>state</td>
+        <td>No</td>
+        <td>Search filter, state of subuser</td>
+      </tr>
+      <tr>
+        <td>country</td>
+        <td>No</td>
+        <td>Search filter, country of subuser</td>
+      </tr>
+      <tr>
+        <td>zip</td>
+        <td>No</td>
+        <td>Search filter, zipcode of subuser</td>
+      </tr>
+      <tr>
+        <td>phone</td>
+        <td>No</td>
+        <td>Search filter, phone number of subuser</td>
+      </tr>
+      <tr>
+        <td>website</td>
+        <td>No</td>
+        <td>Search filter, website of subuser</td>
+      </tr>
+      <tr>
+        <td>company</td>
+        <td>No</td>
+        <td>Search filter, company of subuser</td>
+      </tr>
+    </tbody></table>
+  <h3>XML API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>user1
+</span><span class='line'>example1@example.com
+</span><span class='line'>true
+</span><span class='line'>john
+</span><span class='line'>doe
+</span><span class='line'>  &lt;address&gt;555 any street&lt;/address&gt;any city
+</span><span class='line'>CA
+</span><span class='line'>91234
+</span><span class='line'>US
+</span><span class='line'>
+</span><span class='line'>555-555-5555 example.com
+</span><span class='line'>
+</span><span class='line'>user2
+</span><span class='line'>example2@example.com
+</span><span class='line'>false
+</span><span class='line'>jane
+</span><span class='line'>doe
+</span><span class='line'>  &lt;address&gt;555 any street&lt;/address&gt;any city
+</span><span class='line'>CA
+</span><span class='line'>91234
+</span><span class='line'>US
+</span><span class='line'>
+</span><span class='line'>555-555-5555 example.com
+</span><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge</span></code></pre></td></tr></table></div></figure>
+  <h4>Return</h4>
+  &#8220;`
+{&#8220;username&#8221;:&#8221;username&#8221;,&#8221;email&#8221;:&#8221;example1@example.com&#8221;,&#8221;active&#8221;:&#8221;true&#8221;,&#8221;first_name&#8221;:&#8221;john&#8221;,&#8221;last_name&#8221;:&#8221;doe&#8221;,&#8221;address&#8221;:&#8221;555 any street&#8221;,&#8221;city&#8221;:&#8221;any city&#8221;,&#8221;state&#8221;:&#8221;CA&#8221;,&#8221;zip&#8221;:&#8221;91234&#8221;,&#8221;country&#8221;:&#8221;US&#8221;,&#8221;phone&#8221;:&#8221;555-555-5555&#8221;,&#8221;website&#8221;:&#8221;example.com&#8221;},{&#8220;username&#8221;:&#8221;username&#8221;,&#8221;email&#8221;:&#8221;example2@example.com&#8221;,&#8221;active&#8221;:&#8221;false&#8221;,&#8221;first_name&#8221;:&#8221;jane&#8221;,&#8221;last_name&#8221;:&#8221;doe&#8221;,&#8221;address&#8221;:&#8221;555 any street&#8221;,&#8221;city&#8221;:&#8221;any city&#8221;,&#8221;state&#8221;:&#8221;CA&#8221;,&#8221;zip&#8221;:&#8221;91234&#8221;,&#8221;country&#8221;:&#8221;US&#8221;,&#8221;phone&#8221;:&#8221;555-555-5555&#8221;,&#8221;website&#8221;:&#8221;example.com&#8221;}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="enableSubuser"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Enable a Subuser&lt;/h2&gt;
+</span><span class='line'>  Enable a subuser so they may start sending out emails again. This call will not enable website access. To &lt;a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableWebsiteSubuser"&gt;enable website access&lt;/a&gt;.
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Requirements&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be in email format&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;The subuser you are planning to enabling&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+   
+
+success
+
+ 
+  <h4>Return - Error</h4>
+   
+
+User not found
+
+ 
+  <h3>JSON API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;User not found&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="disableSubuser"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Disable a Subuser&lt;/h2&gt;
+</span><span class='line'>  This prevents them from sending out emails with SendGrid.
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Requirements&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be in email format&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;The subuser you are planning to disabling&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+   
+
+success
+
+ 
+  <h4>Return - Error</h4>
+   
+
+User not found
+
+ 
+  <h3>JSON API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;User not found&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="enableWebsiteSubuser"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Enable Website Access To A Subuser&lt;/h2&gt;
+</span><span class='line'>  Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser from sending out emails. To &lt;a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableSubuser"&gt;enable a subuser&lt;/a&gt;.
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Requirements&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be in email format&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;The subuser you are planning to grant website access&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+   
+
+success
+
+ 
+  <h4>Return - Error</h4>
+   
+
+User not found
+
+ 
+  <h3>JSON API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;User not found&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="disableWebsiteSubuser"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Disable Website Access To A Subuser&lt;/h2&gt;
+</span><span class='line'>  Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending out emails. To &lt;a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#disableSubuser"&gt;disable a subuser&lt;/a&gt;.
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Requirements&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be in email format&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;The subuser you are planning to disallow website access&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+   
+
+success
+
+ 
+  <h4>Return - Error</h4>
+   
+
+User not found
+
+ 
+  <h3>JSON API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;User not found&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="updateSubuserProfile"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Update Subuser Profile&lt;/h2&gt;
+</span><span class='line'>  Allows you to update your subusers profile information
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;task&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be set to &lt;strong&gt;set&lt;/strong&gt; in order to update profile information&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Subuser that is registered under you&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;first_name&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;First name of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;last_name&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Last name of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;address&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Address of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;city&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;City of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;state&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;State of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;country&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Country of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;zip&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Zipcode of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;phone&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Phone number of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;website&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Website of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;company&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;No&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Company of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+   
+
+success
+
+ 
+  <h4>Return - Error</h4>
+   
+
+error
+
+&#8230;
+&#8230; error messages &#8230;
+&#8230;
+
+ 
+  <h3>JSON API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="updateSubuserPassword"&gt;&lt;/a&gt;
+</span><span class='line'>  &lt;h2&gt;Update Subuser Password&lt;/h2&gt;
+</span><span class='line'>  Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
+</span><span class='line'>  &lt;table class="table table-bordered table-striped"&gt;&lt;tbody&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;th&gt;Parameter&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Required&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Requirements&lt;/th&gt;
+</span><span class='line'>        &lt;th&gt;Description&lt;/th&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;user&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Subuser must be registered under you&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;The subuser you are planning to reset the password&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;password&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must be at least 6 characters&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;New password of subuser&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>      &lt;tr&gt;
+</span><span class='line'>        &lt;td&gt;confirm_password&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Yes&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Must match password parameter and be at least 6 characters&lt;/td&gt;
+</span><span class='line'>        &lt;td&gt;Confirm new password&lt;/td&gt;
+</span><span class='line'>      &lt;/tr&gt;
+</span><span class='line'>    &lt;/tbody&gt;&lt;/table&gt;
+</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  &#8220;`
+    success
+ 
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>error
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>... error messages ...
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;success&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+  <hr/><a name="updateSubuserUsername"></a>
+  <h2>Update Subuser Username</h2>
+  Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
+  <table class="table table-bordered table-striped"><tbody>
+      <tr>
+        <th>Parameter</th>
+        <th>Required</th>
+        <th>Requirements</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>task</td>
+        <td>Yes</td>
+        <td>Must be set to<strong>setUsername</strong>
+        </td>
+        <td>This will let us know you want to update your subusers username. This is the new username your subuser will be authenticating with our SMTP servers <em>and</em> to access the website. This update takes effect immediately</td>
+      </tr>
+      <tr>
+        <td>user</td>
+        <td>Yes</td>
+        <td>Subuser must be registered under your account</td>
+        <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+        <td>username</td>
+        <td>Yes</td>
+        <td>Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name</td>
+        <td>This is the new username we will be authenticating with our SMTP servers <em>and</em> to access our site. This update takes effect immediately</td>
+      </tr>
+    </tbody></table>
+  <h3>XML API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>success
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>error
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>... error messages ...
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;success&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+  <hr/><a name="updateSubuserEmailAddress"></a>
+  <h2>Update Subuser Email Address</h2>
+  This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
+  <table class="table table-bordered table-striped"><tbody>
+      <tr>
+        <th>Parameter</th>
+        <th>Required</th>
+        <th>Requirements</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>task</td>
+        <td>Yes</td>
+        <td>Must be set to <strong>setEmail</strong>
+        </td>
+        <td>This will let us know you want to update your subusers email address. This update takes effect immediately</td>
+      </tr>
+      <tr>
+        <td>user</td>
+        <td>Yes</td>
+        <td>Subuser must be registered under your account</td>
+        <td>The user we will be updating their username for</td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>Yes</td>
+        <td>Must be in email format, not more than 100 characters</td>
+        <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
+      </tr>
+    </tbody></table>
+  <h3>XML API Request</h3>
+  &#8220;`
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>success
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>   
+</span><span class='line'>
+</span><span class='line'>error
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>... error messages ...
+</span><span class='line'>...
+</span><span class='line'>
+</span><span class='line'> 
+</span><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
+</span><span class='line'>  ```
+</span><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  &#8220;`
+&#8221;message&#8221;:&#8221;success&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
+</span><span class='line'>  ```
+</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</div>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>
