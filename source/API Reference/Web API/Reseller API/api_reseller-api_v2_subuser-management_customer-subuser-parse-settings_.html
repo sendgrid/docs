@@ -1,0 +1,241 @@
+---
+layout: page
+title: 
+navigation:
+show: true
+---
+<hr/><a name="getCurrentSettings"></a>
+<h2>Get Current Settings</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>get</em>
+    </td>
+    <td>Retrieve Parse settings</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+		your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+```
+<h4>Return - Empty Set</h4>
+```
+parse></parse
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+```
+<h4>Return - Empty Set</h4>
+```
+"parse":[]
+```
+<hr/><a name="createNewEntry"></a>
+<h2>Create New Entry</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>set</em>
+    </td>
+    <td>Set Parse settings</td>
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td>Yes</td>
+    <td>No more than 255 characters</td>
+    <td>Hostname we will use with your email</td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td>Yes</td>
+    <td></td>
+    <td>The parse destination</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+		your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+  <result><message>success</message></result
+```
+<h4>Return - Error</h4>
+```
+  <result><message>error</message><errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+    </errors></result
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"message":"success"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="editEntry"></a>
+<h2>Edit Entry</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>update</em>
+    </td>
+    <td>Set Parse settings</td>
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td>Yes</td>
+    <td>No more than 255 characters</td>
+    <td>Hostname entry you want to update</td>
+  </tr>
+  <tr>
+    <td>url</td>
+    <td>Yes</td>
+    <td></td>
+    <td>The parse destination</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+		your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+  <result><message>success</message></result
+```
+<h4>Return - Error</h4>
+```
+  <result><message>error</message><errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+    </errors></result
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"message":"success"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="deleteEntry"></a>
+<h2>Delete Entry</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>delete</em>
+    </td>
+    <td>Set Parse settings</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+		your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+  <tr>
+    <td>hostname</td>
+    <td>Yes</td>
+    <td>Must be the hostname you wish to delete.</td>
+    <td>The host name you will remove for your
+		customer subuser</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+  <result><message>success</message></result
+```
+<h4>Return - Error</h4>
+```
+  <result><message>error</message><errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+    </errors></result
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"message":"success"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```

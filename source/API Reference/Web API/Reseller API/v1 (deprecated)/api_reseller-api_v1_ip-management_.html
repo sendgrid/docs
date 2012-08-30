@@ -1,0 +1,249 @@
+---
+layout: page
+title: 
+navigation:
+show: true
+---
+<hr/><a name="all"></a>
+<h2>All</h2>
+<p>View all IPs under your account.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>all</em>.</td>
+    <td>Retrieve all IPs available for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>system</td>
+    <td>No</td>
+    <td>Must be set to
+      <em>true</em>.</td>
+    <td>Include IPs assigned by SendGrid.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=al
+```
+<h4>Return</h4>
+```
+  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=al
+```
+<h4>Return - Success</h4>
+```
+"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="free"></a>
+<h2>Free</h2>
+<p>A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>free</em>.</td>
+    <td>Retrieve all free IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=fre
+```
+<h4>Return</h4>
+```
+  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=fre
+```
+<h4>Return - Success</h4>
+```
+"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="taken"></a>
+<h2>Taken</h2>
+<p>A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>taken</em>.</td>
+    <td>Retrieve all taken IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=take
+```
+<h4>Return</h4>
+```
+  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=take
+```
+<h4>Return - Success</h4>
+```
+"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="available"></a>
+<h2>Available</h2>
+<p>A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user
+  <em>but</em>
+  that user is inactive or that is not linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>available</em>.</td>
+    <td>Retrieve all available IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=availabl
+```
+<h4>Return</h4>
+```
+  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=availabl
+```
+<h4>Return - Success</h4>
+```
+"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<hr/><a name="usage"></a>
+<h2>Usage</h2>
+<p>The current breakdown of users who are using your IPs.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>usage</em>.</td>
+    <td>Retrieve all IPs in use broken down by user.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>No</td>
+    <td>Can be a complete or part of a username.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>group</td>
+    <td>No</td>
+    <td>Can be a complete or part of a group name.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>system</td>
+    <td>No</td>
+    <td>Must be set to
+      <em>true</em>.</td>
+    <td>Include IPs assigned by SendGrid.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co
+```
+<h4>Return</h4>
+```
+  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co
+```
+<h4>Return - Success</h4>
+```
+{"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```

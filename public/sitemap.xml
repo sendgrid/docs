@@ -37,6 +37,161 @@
         <lastmod>2012-08-28T21:24:26-06:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_account-limits_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_authenticate-a-subuser_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_filter-apps_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_ip-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_monitor-records_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_parse-settings_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_statistics_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_subuser-invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_subusers_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/api_customer-subuser-api_customer-api_whitelabel_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:50-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_email-list-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_email-list-management_invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_email-list-management_subuser-bounces_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_email-list-management_subuser-spam-reports_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_email-list-management_subusers-unsubscribes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Customer Subuser
+            API/v1
+            (deprecated)/api_customer-subuser-api_customer-subuser-api-v1_event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:51-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/filter_commands.html</loc>
         <lastmod>2012-08-29T11:03:39-06:00</lastmod>
     </url>
@@ -81,7 +236,7 @@
             http://docs.sendgrid.com/API Reference/Web API/Newsletter
             API/sender_address.html
         </loc>
-        <lastmod>2012-08-29T16:19:13-06:00</lastmod>
+        <lastmod>2012-08-29T16:55:03-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/parse_settings.html</loc>
@@ -90,6 +245,524 @@
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/profile.html</loc>
         <lastmod>2012-08-29T12:28:49-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_account-overview_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_authenticate-a-customer_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_customer-account-limits_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_customer-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_customer-statistics_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:57-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_email-list-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_email-list-management_customer-bounces_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_email-list-management_customer-invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_email-list-management_customer-spam-reports_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_email-list-management_customer-unsubscribes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_filter-apps_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:58-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_invoice-retrieval_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_ip-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_monitor-records_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_parse-settings_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_pending-account-changes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_reseller-billing_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_reseller-billing_retrieving-as-you-go-usage_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_reseller-billing_retrieving-end-users-invoices-usage_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:59-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_authenticate-a-customer-subuser_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-account-limits_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-apps-filters_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-bounces_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:00-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-monitor-outgoing-email_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-parse-settings_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-spam-reports_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-statistics_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_subuser-management_customer-subuser-unsubscribes_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_view-available-packages_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller
+            API/api_reseller-api_v2_whitelabel_.html
+        </loc>
+        <lastmod>2012-08-30T14:46:01-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_account-overview_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_authenticate-a-customer_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_customer-account-limits_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_customer-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_customer-statistics_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:52-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_distributor-billing_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_distributor-billing_retrieving-as-you-go-usage_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_distributor-billing_retrieving-end-users-invoices-usage_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_email-list-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_email-list-management_customer-bounces_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_email-list-management_customer-invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_email-list-management_customer-spam-reports_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:53-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_email-list-management_customer-unsubscribes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_filter-apps_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_invoice-retrieval_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_ip-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_monitor-records_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_parse-settings_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_pending-account-changes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:54-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_authenticate-a-customer-subuser_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-account-limits_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-apps-filters_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-automatic-login_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-bounces_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-event-notification-url_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:55-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-invalid-emails_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-monitor-outgoing-email_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-parse-settings_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-spam-reports_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-statistics_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_subuser-management_customer-subuser-unsubscribes_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_view-available-packages_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://docs.sendgrid.com/API Reference/Web API/Reseller API/v1
+            (deprecated)/api_reseller-api_v1_whitelabel_.html
+        </loc>
+        <lastmod>2012-08-30T14:45:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/spam_reports.html</loc>
