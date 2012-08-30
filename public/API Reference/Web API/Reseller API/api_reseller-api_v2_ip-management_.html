@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Liquid error: undefined method `[]' for nil:NilClass Liquid error: undefined method `[]' for nil:NilClass All
+View all IPs under your account. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Web API/Reseller API/api_reseller-api_v2_ip-management_.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  
+  <link href="/stylesheets/sprites.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/syntax/syntax.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/libs/jquery.js"></script>
+  <script src="/javascripts/collapse.min.js"></script>
+  <script src="/javascripts/libs/jstorage.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script src="/javascripts/libs/modernizr-2.0.js"></script>
+  <script src="/javascripts/libs/bootstrap.js"></script>
+  <script src="/javascripts/libs/bootstrap-tabs.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="http://sendgrid.com/blog"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://sendgrid.com/features.html">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+	
+    <div class="row-fluid" id="content">
+	
+      
+<aside class="sidebar-nav span3">
+    Liquid error: undefined method `[]' for nil:NilClass
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  Liquid error: undefined method `[]' for nil:NilClass
+  
+  <hr/><a name="all"></a>
+<h2>All</h2>
+<p>View all IPs under your account.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>all</em>.</td>
+    <td>Retrieve all IPs available for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>system</td>
+    <td>No</td>
+    <td>Must be set to
+      <em>true</em>.</td>
+    <td>Include IPs assigned by SendGrid.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=al</span></code></pre></td></tr></table></div></figure>
+<h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;ips&gt;&lt;ip&gt;255.255.255.0&lt;/ip&gt;&lt;ip&gt;255.255.254.0&lt;/ip&gt;&lt;ip&gt;255.255.253.0&lt;/ip&gt;&lt;ip&gt;255.255.252.0&lt;/ip&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+<h3>JSON API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=al</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Success</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Error</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+<hr/><a name="free"></a>
+<h2>Free</h2>
+<p>A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Parameter</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>free</em>.</td>
+    <td>Retrieve all free IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=fre</span></code></pre></td></tr></table></div></figure>
+<h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;ips&gt;&lt;ip&gt;255.255.255.0&lt;/ip&gt;&lt;ip&gt;255.255.254.0&lt;/ip&gt;&lt;ip&gt;255.255.253.0&lt;/ip&gt;&lt;ip&gt;255.255.252.0&lt;/ip&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+<h3>JSON API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=fre</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Success</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Error</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+<hr/><a name="taken"></a>
+<h2>Taken</h2>
+<p>A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Parameter</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>taken</em>.</td>
+    <td>Retrieve all taken IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=take</span></code></pre></td></tr></table></div></figure>
+<h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;ips&gt;&lt;ip&gt;255.255.255.0&lt;/ip&gt;&lt;ip&gt;255.255.254.0&lt;/ip&gt;&lt;ip&gt;255.255.253.0&lt;/ip&gt;&lt;ip&gt;255.255.252.0&lt;/ip&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+<h3>JSON API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=take</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Success</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Error</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+<hr/><a name="available"></a>
+<h2>Available</h2>
+<p>A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user
+  <em>but</em>
+  that user is inactive or that is not linked to an IP grouping.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Parameter</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>available</em>.</td>
+    <td>Retrieve all available IPs for your account.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=availabl</span></code></pre></td></tr></table></div></figure>
+<h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;ips&gt;&lt;ip&gt;255.255.255.0&lt;/ip&gt;&lt;ip&gt;255.255.254.0&lt;/ip&gt;&lt;ip&gt;255.255.253.0&lt;/ip&gt;&lt;ip&gt;255.255.252.0&lt;/ip&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+<h3>JSON API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=availabl</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Success</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Error</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+<hr/><a name="usage"></a>
+<h2>Usage</h2>
+<p>The current breakdown of users who are using your IPs.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Parameter</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>usage</em>.</td>
+    <td>Retrieve all IPs in use broken down by user.</td>
+  </tr>
+  <tr>
+    <td>ip</td>
+    <td>No</td>
+    <td>Can be a complete or partial IP address.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>No</td>
+    <td>Can be a complete or part of a username.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>group</td>
+    <td>No</td>
+    <td>Can be a complete or part of a group name.</td>
+    <td>Filter your search results.</td>
+  </tr>
+  <tr>
+    <td>system</td>
+    <td>No</td>
+    <td>Must be set to
+      <em>true</em>.</td>
+    <td>Include IPs assigned by SendGrid.</td>
+  </tr>
+</table><h3>XML API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co</span></code></pre></td></tr></table></div></figure>
+<h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;ips&gt;&lt;entry&gt;&lt;ip&gt;255.255.253.0&lt;/ip&gt;&lt;user&gt;user4@example.com&lt;/user&gt;&lt;/entry&gt;&lt;entry&gt;&lt;ip&gt;255.255.254.0&lt;/ip&gt;&lt;user&gt;user4@example.com&lt;/user&gt;&lt;/entry&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+<h3>JSON API Request</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Success</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}</span></code></pre></td></tr></table></div></figure>
+<h4>Return - Error</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="http://docs.sendgrid.com/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+	        	<p>&copy; SendGrid 2012</p>
+			</div>
+
+			<div class="span7">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+
+				<p class="pull-right"><a href="#">Back to top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>

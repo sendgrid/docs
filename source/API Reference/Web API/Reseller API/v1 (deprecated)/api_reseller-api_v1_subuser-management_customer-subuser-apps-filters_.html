@@ -1,0 +1,208 @@
+---
+layout: page
+title: 
+navigation:
+show: true
+---
+<hr/><a name="list"></a>
+<h2>List</h2>
+<p>List all of the available apps.</p>
+<p>Note: The
+  <em>name</em>
+  entry is used in all the other API calls to identify a app.</p>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>getavailable</em>
+    </td>
+    <td>Retrieve Available Apps</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+			your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+filters><filter><name>twitter</name><title>Twitter</title>
+      <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
+    ...
+  </filters
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+```
+<hr/><a name="activateApp"></a>
+<h2>Activate App</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>activate</em>
+    </td>
+    <td>Retrieve Available Apps</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+			your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+result><message>success</message></result
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"message":"success"
+```
+<hr/><a name="deactivateApp"></a>
+<h2>Deactivate App</h2>
+<table class="table table-bordered table-striped">
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>task</td>
+    <td>Yes</td>
+    <td>Must be set to
+      <em>deactivate</em>
+    </td>
+    <td>Retrieve Available Apps</td>
+  </tr>
+  <tr>
+    <td>user</td>
+    <td>Yes</td>
+    <td>Customer subuser must be registered under
+			your account</td>
+    <td>The customer subuser who we will update</td>
+  </tr>
+</table><h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+result><message>success</message></result
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+```
+<h4>Return</h4>
+```
+"message":"success"
+```
+<hr/><a name="customizeApp"></a>
+<h2>Customize App</h2>
+<p>These API calls require that settings are passed using POST.</p>
+<h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+filter><field_name>field_value</field_name>
+    ...
+  </filter
+```
+<h4>Return - Error</h4>
+```
+result><message>error</message><message>... error messages ...</message></result
+```
+<h4>Return - Empty</h4>
+<p>This is returned if that filter has no settings or is not enabled.</p>
+```
+filter></filter
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+```
+<h4>Return - Success</h4>
+```
+"message":"success","settings":{"field_name":"field_value”}
+```
+<h4>Return - Empty</h4>
+<p>This is returned if that filter has no settings or is not enabled.</p>
+```
+"settings":null}
+
+```
+<hr/><a name="getCurrentSettings"></a>
+<h2>Get Current Settings</h2>
+<h3>XML API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+```
+<h4>Return - Success</h4>
+```
+filter><field_name>field_value</field_name>
+    ...
+  </filter
+```
+<h4>Return - Error</h4>
+```
+result><message>error</message><message>... error messages ...</message></result
+```
+<h4>Return - Empty</h4>
+<p>This is returned if that filter has no settings or is not
+enabled.</p>
+```
+filter></filter
+```
+<h3>JSON API Request</h3>
+```
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+```
+<h4>Return - Success</h4>
+```
+"message":"success","settings":{"field_name":"field_value”}
+```
+<h4>Return - Error</h4>
+```
+"message":"error","errors":[..."error messages"...]
+```
+<h4>Return - Empty</h4>
+<p>This is returned if that filter has no settings or is not enabled.</p>
+```
+"settings":null
+```
