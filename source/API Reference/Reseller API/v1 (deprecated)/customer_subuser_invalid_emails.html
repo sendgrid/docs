@@ -37,31 +37,22 @@ navigation:
     <td>Retrieves the timestamps, it will return a
 			date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&method=invalidemails&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&method=invalidemails&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="deleteInvalidEmails"></a>
 <h2>Delete Invalid Emails</h2>
@@ -96,15 +87,9 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
     <td>Must be a invalid email</td>
     <td>You must specify the invalid emails to remove</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -114,11 +99,9 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

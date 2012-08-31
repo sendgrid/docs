@@ -55,31 +55,22 @@ navigation:
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.co
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.co
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="retrieveAggregates"></a>
 <h2>Retrieve Aggregates</h2>
@@ -113,31 +104,22 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;aggregate=
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&aggregate=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;aggregate=
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&aggregate=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="categoryList"></a>
 <h2>Category List</h2>
@@ -173,31 +155,22 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;list=tru
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&list=tru
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;list=tru
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&list=tru
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"category":"categoryA","category":"categoryB","category":"categoryC"}
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="categoryStatistics"></a>
 <h2>Category Statistics</h2>
@@ -257,33 +230,25 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}

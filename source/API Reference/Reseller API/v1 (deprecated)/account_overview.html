@@ -26,15 +26,9 @@ navigation:
       <td>Customer that is registered under your account.</td>
       <td>The customer</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+  </tbody></table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=overview&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><overview><reputation>100</reputation><requests>50000</requests><package>Silver Package</package><credits_allowed>50000</credits_allowed><credits_used>100000</credits_used><credits_remain>0</credits_remain><credits_overage>50000</credits_overage><billing_start_date>2010-08-30</billing_start_date><billing_end_date>2010-09-29</billing_end_date><billing_process_date>2010-09-30</billing_process_date></overview></result>
@@ -46,11 +40,9 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=s
       ...
     </errors></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=overview&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
