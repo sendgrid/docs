@@ -136,7 +136,7 @@
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
@@ -146,7 +146,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
@@ -194,7 +194,7 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=example@example.com&amp;task=delete&amp;email=bounce@example.co
@@ -208,7 +208,7 @@ result><message>success</message></result>
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=example@example.com&amp;task=delete&amp;email=bounce@example.co

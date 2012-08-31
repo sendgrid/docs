@@ -136,7 +136,7 @@ date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
@@ -145,7 +145,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
@@ -195,7 +195,7 @@ remove</td>
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
@@ -207,7 +207,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
@@ -260,7 +260,7 @@ add</td>
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
@@ -272,7 +272,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <result><message>Email already exists</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co

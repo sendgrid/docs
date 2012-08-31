@@ -140,7 +140,7 @@
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=
@@ -149,7 +149,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=
@@ -206,7 +206,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com
@@ -218,7 +218,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane active" id="-xml">
+  <div class="tab-pane" id="-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com
