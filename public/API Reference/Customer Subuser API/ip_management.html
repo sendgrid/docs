@@ -93,8 +93,7 @@
     
   </header>
   
-  <div>
-  <p>List</p>
+    <p>List</p>
   Obtain a complete list of all IP&#8217;s and which are free, taken or available.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -120,28 +119,27 @@
     <dd>All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated<em>and</em> is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone</dd>
   </dl>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+	  <div class="tab-pane active" id="list-json">
+	     <h3>Call</h3>
+	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=al</span></code></pre></td></tr></table></div></figure>
+	  <h3>Response</h3>
+	<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}</span></code></pre></td></tr></table></div></figure>
+	</div>
+  <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=al</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
-{% codeblock %}    <ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip></ips
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;ips>&lt;ip>255.255.255.250&lt;/ip>&lt;ip>255.255.255.251&lt;/ip>&lt;ip>255.255.255.252&lt;/ip>&lt;/ips></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
-{% endcodeblock %}
-  <h3>Response</h3>
-{% codeblock %}
-{&#8220;ip&#8221;:&#8221;255.255.255.250&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.251&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.252&#8221;}
-{% endcodeblock %}
+
 </div>
 <hr/><a name="userUsage"></a>
 <h2>Subuser IP Usage</h2>
@@ -164,34 +162,31 @@ If your account has more than one IP address, you can manage what IPs your subus
       <td>Subuser must be registered under your account</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#usage-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#usage-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="usage-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=list&user=example@example.co</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-{% codeblock %}  <sendips><ocluster>o1.sendgrid.net</ocluster><ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip><ip>255.255.255.253</ip><ip>255.255.255.254</ip></ips></sendips
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;sendips>&lt;ocluster>o1.sendgrid.net&lt;/ocluster>&lt;ips>&lt;ip>255.255.255.250&lt;/ip>&lt;ip>255.255.255.251&lt;/ip>&lt;ip>255.255.255.252&lt;/ip>&lt;ip>255.255.255.253&lt;/ip>&lt;ip>255.255.255.254&lt;/ip>&lt;/ips>&lt;/sendips></span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>User does not exist</message></result>
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="usage-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=list&user=example@example.co</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-{% codeblock %}
-&#8220;success&#8221;:&#8221;success&#8221;,&#8221;outboundcluster&#8221;:&#8221;o1.sendgrid.net&#8221;,&#8221;ips&#8221;:[{&#8220;ip&#8221;:&#8221;255.255.255.250&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.251&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.251&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.252&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.253&#8221;},{&#8220;ip&#8221;:&#8221;255.255.255.254&#8221;}]
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-{% codeblock %}
-&#8220;error&#8221;:{&#8220;code&#8221;:400,&#8221;message&#8221;:&#8221;User does not exist&#8221;}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"error":{"code":400,"message":"User does not exist"}</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
 <a name="userAssignment"></a>
@@ -225,42 +220,44 @@ You need to assign at least ONE IP to your subuser.
     <tr>
       <td>ip[]</td>
       <td>No</td>
-      <td>If the <em>set</em> parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&amp;ip[]=255.255.255.1 ]</td>
+      <td>If the <em>set</em> parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&ip[]=255.255.255.1 ]</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#subuser-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#subuser-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="subuser-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.25</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
-      &#8230;
-      <error>&#8230; error messages &#8230;</error>
-      &#8230;
-    </errors></result>
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
+</span><span class='line'>      ...
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
+</span><span class='line'>      ...
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="subuser-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.25</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-{% codeblock %}
-&#8220;message&#8221;:&#8221;success&#8221;
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-{% codeblock %}
-&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</div>
+</div>
 
   
     <footer>

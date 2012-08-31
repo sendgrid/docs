@@ -94,7 +94,8 @@
   </header>
   
   Allow subusers to manage their account from your website using an iframe to our site.
-<hr/><a name="initialAPICall"></a>
+
+<a name="initialAPICall"></a>
 <h2>Initial API Call</h2>
 In order to login your subuser, you need to contact our web API to retrieve the unique URL to automatically login your subuser. Then display the generated URL to automatically login your subuser.
 <table class="table table-bordered table-striped"><tbody>
@@ -117,34 +118,33 @@ In order to login your subuser, you need to contact our web API to retrieve the 
       <td>Authenticate the subuser with this API call.</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#auto-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#auto-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="auto-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.geturl.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.geturl.xml?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
 <h3>Response</h3>
-{% codeblock %}  <params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;params>&lt;params>al_username=username&al_subuser_name=example@example.com&al_hash=b478ab36ebc306990dd283b1c341898e&lt;/params>&lt;/params></span></code></pre></td></tr></table></div></figure>
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="auto-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/apiv2/customer.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.geturl.json?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
 <h3>Response</h3>
-{% codeblock %}
-&#8220;params&#8221;:&#8221;al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56&#8221;
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"params":"al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
+<hr/>
 <a name="iFrameUsage"></a>
 <h2>iFrame Usage</h2>
 Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
-{% codeblock %}  <iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
-{% endcodeblock %}
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56">&lt;/iframe></span></code></pre></td></tr></table></div></figure>
 
   
     <footer>
