@@ -4,7 +4,7 @@ title: Customer Subuser Apps
 navigation:
    show: true
 ---
-<hr/><a name="list"></a>
+<a name="list"></a>
 <h2>List</h2>
 <p>List all of the available apps.</p>
 <p>Note: The
@@ -33,14 +33,14 @@ navigation:
     <td>The customer subuser who we will update</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filters><filter><name>twitter</name><title>Twitter</title>
@@ -49,16 +49,18 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
   </filters
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="activateApp"></a>
 <h2>Activate App</h2>
 <table class="table table-bordered table-striped">
@@ -84,29 +86,31 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
     <td>The customer subuser who we will update</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="activate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="deactivateApp"></a>
 <h2>Deactivate App</h2>
 <table class="table table-bordered table-striped">
@@ -132,41 +136,43 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
     <td>The customer subuser who we will update</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="deactivate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="customizeApp"></a>
 <h2>Customize App</h2>
 <p>These API calls require that settings are passed using POST.</p>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#customize-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#customize-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="customize-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
@@ -183,13 +189,13 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-filter></filter
+<filter></filter>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="customize-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -199,20 +205,21 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
 "settings":null}
-
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#settings-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#settings-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="settings-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
@@ -229,13 +236,13 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-filter></filter
+<filter></filter>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="settings-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -250,3 +257,4 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
 {% codeblock %}
 "settings":null
 {% endcodeblock %}
+</div></div>
