@@ -93,8 +93,7 @@
     
   </header>
   
-  <div>
-  <p><span>Authenticate a subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.</span></p>
+    <p><span>Authenticate a subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.</span></p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -113,14 +112,25 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#auth-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#auth-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+	  <div class="tab-pane active" id="auth-jason">
+	     <h3>Call</h3>
+	  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
+	  <h3>Response: Success</h3>
+	  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+	  <h3>Response: Error</h3>
+	  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+	</div>
+  <div class="tab-pane" id="auth-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -144,18 +154,8 @@
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
-  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
-  <h3>Response: Success</h3>
-  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-  <h3>Response: Error</h3>
-  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-</div>
 
+</div>
   
     <footer>
       

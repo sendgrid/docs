@@ -4,7 +4,7 @@ title: Subusers
 navigation:
    show: true
 ---
-<div>
+
   These are actions that directly affect your subuser. We provide access via XML and JSON.<hr/><a name="createSubuser"></a>
   <p><strong><em>The Merry Tipster says:</em></strong>
     Note that the parameters used to identify the user may appear to be at odds with itself. In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</p>
@@ -110,11 +110,11 @@ navigation:
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
@@ -136,7 +136,7 @@ error
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
@@ -149,6 +149,8 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secur
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="retrieveSubusers"></a>
   <p>Retrieve Subusers</p>
   Obtain a complete list of all subusers.
@@ -275,6 +277,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
   {% codeblock %}
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="enableSubuser"></a>
   <h2>Enable a Subuser</h2>
   Enable a subuser so they may start sending out emails again. This call will not enable website access. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableWebsiteSubuser">enable website access</a>.
@@ -328,6 +332,8 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=se
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="disableSubuser"></a>
   <h2>Disable a Subuser</h2>
   This prevents them from sending out emails with SendGrid.
@@ -381,6 +387,8 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=s
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="enableWebsiteSubuser"></a>
   <h2>Enable Website Access To A Subuser</h2>
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser from sending out emails. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableSubuser">enable a subuser</a>.
@@ -434,6 +442,8 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;ap
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="disableWebsiteSubuser"></a>
   <h2>Disable Website Access To A Subuser</h2>
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending out emails. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#disableSubuser">disable a subuser</a>.
@@ -487,6 +497,8 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;a
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="updateSubuserProfile"></a>
   <h2>Update Subuser Profile</h2>
   Allows you to update your subusers profile information
@@ -597,6 +609,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="updateSubuserPassword"></a>
   <h2>Update Subuser Password</h2>
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
@@ -664,6 +678,8 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="updateSubuserUsername"></a>
   <h2>Update Subuser Username</h2>
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
@@ -734,6 +750,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="updateSubuserEmailAddress"></a>
   <h2>Update Subuser Email Address</h2>
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
@@ -804,4 +822,5 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=se
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div>
 </div>

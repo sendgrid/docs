@@ -4,7 +4,7 @@ title: Invalid Emails
 navigation:
    show: true
 ---
-<div>
+
   <hr/><a name="retrieveInvalidEmails"></a>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -34,23 +34,31 @@ navigation:
         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
     </tbody></table>
-  <h3>XML</h3>
-  <h4>Command</h4>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+	  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="get-xml">
+	     <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.invalidemails.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/user.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock %}    <invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
+  {% codeblock %}    <invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails>
 {% endcodeblock %}
-  <h3>JSON</h3>
-  <h4>Command</h4>
+</div>
+<div class="tab-pane active" id="get-json">
+   <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/user.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 {"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="deleteInvalidEmails"></a>
   <h2>Delete Invalid Emails</h2>
   Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
@@ -82,10 +90,15 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=s
         <td>You must specify the invalid emails to remove</td>
       </tr>
     </tbody></table>
-  <h3>XML</h3>
-  <h4>Command</h4>
+	<ul class="nav nav-tabs">
+	  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+	  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="delete-xml">
+	     <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.invalidemails.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.co
+https://sendgrid.com/api/user.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
@@ -93,12 +106,12 @@ https://sendgrid.com/api/user.invalidemails.xml?api_user=username&amp;api_key=se
   <h3>Response: Error</h3>
   {% codeblock %}    <result><message>Email does not exist</message></result>
 {% endcodeblock %}
-  <h3>JSON</h3>
-  <h4>Command</h4>
+<h3>JSON Request</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.co
+https://sendgrid.com/api/user.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
-  <h3>Response: Success</h3>
+<div class="tab-pane active" id="delete-json">
+   <h3>Call</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
@@ -106,4 +119,5 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=s
   {% codeblock %}
 "message":"Email does not exist"
 {% endcodeblock %}
+</div>
 </div>

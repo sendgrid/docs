@@ -4,7 +4,7 @@ title: Parse Settings
 navigation:
    show: true
 ---
-<div>
+
   <hr/><a name="getCurrentSettings"></a>
   <h2>Get Current Settings</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -29,11 +29,11 @@ navigation:
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&task=get&user=example@example.co
@@ -46,7 +46,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSe
 parse></parse
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&task=get&user=example@example.co
@@ -59,6 +59,8 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
 {% codeblock %}
 "parse":[]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="createNewEntry"></a>
   <h2>Create New Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -95,11 +97,11 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.co
@@ -115,7 +117,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSe
       </errors></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.co
@@ -128,6 +130,8 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="editEntry"></a>
   <h2>Edit Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -164,11 +168,11 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="edit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.co
@@ -184,7 +188,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSe
       </errors></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.co
@@ -197,6 +201,8 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="deleteEntry"></a>
   <h2>Delete Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -227,11 +233,11 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#data-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#data-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="data-xml">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&user=example@example.co
@@ -247,7 +253,7 @@ https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSe
       </errors></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="data-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&user=example@example.co
@@ -260,4 +266,5 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div>
 </div>

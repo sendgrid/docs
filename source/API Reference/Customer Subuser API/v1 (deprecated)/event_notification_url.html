@@ -4,7 +4,7 @@ title: Event Notification URL
 navigation:
    show: true
 ---
-<div>
+
   <hr/><a name="retrieve"></a>
   <h2>Retrieve</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -30,29 +30,31 @@ navigation:
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co
+https://sendgrid.com/api/user.eventposturl.xml?api_user=username&api_key=secureSecret&task=get&user=example@example.co
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co
+https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secureSecret&task=get&user=example@example.co
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 {"url":"http:\/\/www.SubUserPostUrlHere.com"}
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="updateSetURL"></a>
   <h2>Update / Set URL</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -84,28 +86,30 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=se
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.co
+https://sendgrid.com/api/user.eventposturl.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}    <result><message>success</message></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.co
+https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="delete"></a>
   <h2>Delete</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -131,26 +135,27 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=se
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.co
+https://sendgrid.com/api/user.eventposturl.xml?api_user=username&api_key=secureSecret&task=delete&user=example@example.com
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}    <result><message>success</message></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.co
+https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secureSecret&task=delete&user=example@example.com
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
+</div>
 </div>
