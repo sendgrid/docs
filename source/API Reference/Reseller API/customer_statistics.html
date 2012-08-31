@@ -64,7 +64,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
+{% codeblock %}
+{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
 {% endcodeblock %}
 <hr/><a name="retrieveAggregates"></a>
 <h2>Retrieve Aggregates</h2>
@@ -108,7 +109,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;aggregate=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
+{% codeblock %}
+"requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
 {% endcodeblock %}
 <hr/><a name="categoryList"></a>
 <h2>Category List</h2>
@@ -154,7 +156,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;list=tru
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"category":"categoryA","category":"categoryB","category":"categoryC"}
+{% codeblock %}
+{"category":"categoryA","category":"categoryB","category":"categoryC"}
 {% endcodeblock %}
 <hr/><a name="categoryStatistics"></a>
 <h2>Category Statistics</h2>
@@ -230,5 +233,6 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
+{% codeblock %}
+{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
 {% endcodeblock %}

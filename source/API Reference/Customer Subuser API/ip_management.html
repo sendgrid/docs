@@ -40,7 +40,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
 {% endcodeblock %}
   <h4>Return</h4>
-{% codeblock %}{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
+{% codeblock %}
+{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
 {% endcodeblock %}
 </div>
 <p><hr/><a name="userUsage"></a></p>
@@ -76,10 +77,12 @@ If your account has more than one IP address, you can manage what IPs your subus
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
+{% codeblock %}
+"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"error":{"code":400,"message":"User does not exist"}
+{% codeblock %}
+"error":{"code":400,"message":"User does not exist"}
 {% endcodeblock %}
 <p><hr/><a name="userAssignment"></a></p>
 <h2>Subuser IP Assignment</h2>
@@ -131,8 +134,10 @@ You need to assign at least ONE IP to your subuser.
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

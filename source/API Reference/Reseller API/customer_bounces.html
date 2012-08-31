@@ -58,7 +58,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{% codeblock %}
+{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
 <hr/><a name="deleteBounces"></a>
@@ -114,8 +115,10 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=bounces&amp;user=customer@example.com&amp;task=delete&amp;email=bounce@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"Email does not exist"
+{% codeblock %}
+"message":"Email does not exist"
 {% endcodeblock %}

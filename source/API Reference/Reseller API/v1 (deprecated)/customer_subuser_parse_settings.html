@@ -32,19 +32,23 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+{% codeblock %}
+parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
 <h4>Return - Empty Set</h4>
-{% codeblock %}parse></parse
+{% codeblock %}
+parse></parse
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+{% codeblock %}
+"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
 {% endcodeblock %}
 <h4>Return - Empty Set</h4>
-{% codeblock %}"parse":[]
+{% codeblock %}
+"parse":[]
 {% endcodeblock %}
 <hr/><a name="createNewEntry"></a>
 <h2>Create New Entry</h2>
@@ -86,10 +90,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><errors>
+{% codeblock %}
+result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
@@ -99,10 +105,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="editEntry"></a>
 <h2>Edit Entry</h2>
@@ -144,10 +152,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><errors>
+{% codeblock %}
+result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
@@ -157,10 +167,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="deleteEntry"></a>
 <h2>Delete Entry</h2>
@@ -197,10 +209,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><errors>
+{% codeblock %}
+result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
@@ -210,8 +224,10 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

@@ -132,10 +132,12 @@ error
   {% codeblock %}https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="retrieveSubusers"></a>
   <p>Retrieve Subusers</p>
@@ -250,7 +252,8 @@ US
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h4>Return</h4>
-  {% codeblock %}{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+  {% codeblock %}
+{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
   <hr/><a name="enableSubuser"></a>
   <h2>Enable a Subuser</h2>
@@ -288,10 +291,12 @@ User not found
   {% codeblock %}https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"User not found"
+  {% codeblock %}
+"message":"User not found"
 {% endcodeblock %}
   <hr/><a name="disableSubuser"></a>
   <h2>Disable a Subuser</h2>
@@ -329,10 +334,12 @@ User not found
   {% codeblock %}https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"User not found"
+  {% codeblock %}
+"message":"User not found"
 {% endcodeblock %}
   <hr/><a name="enableWebsiteSubuser"></a>
   <h2>Enable Website Access To A Subuser</h2>
@@ -370,10 +377,12 @@ User not found
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"User not found"
+  {% codeblock %}
+"message":"User not found"
 {% endcodeblock %}
   <hr/><a name="disableWebsiteSubuser"></a>
   <h2>Disable Website Access To A Subuser</h2>
@@ -411,10 +420,12 @@ User not found
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"User not found"
+  {% codeblock %}
+"message":"User not found"
 {% endcodeblock %}
   <hr/><a name="updateSubuserProfile"></a>
   <h2>Update Subuser Profile</h2>
@@ -509,10 +520,12 @@ error
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="updateSubuserPassword"></a>
   <h2>Update Subuser Password</h2>
@@ -564,10 +577,12 @@ error
   {% codeblock %}https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="updateSubuserUsername"></a>
   <h2>Update Subuser Username</h2>
@@ -622,10 +637,12 @@ error
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="updateSubuserEmailAddress"></a>
   <h2>Update Subuser Email Address</h2>
@@ -680,9 +697,11 @@ error
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>
