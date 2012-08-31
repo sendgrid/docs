@@ -28,24 +28,24 @@ navigation:
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
-<h4>Return - Empty Set</h4>
+<h3>Response: Empty</h3>
 {% codeblock %}
 parse></parse
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
 {% endcodeblock %}
-<h4>Return - Empty Set</h4>
+<h3>Response: Empty</h3>
 {% codeblock %}
 "parse":[]
 {% endcodeblock %}
@@ -85,27 +85,27 @@ parse></parse
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -145,27 +145,27 @@ parse></parse
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -200,27 +200,27 @@ parse></parse
     <td>The host name you will remove for your
 		customer subuser</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

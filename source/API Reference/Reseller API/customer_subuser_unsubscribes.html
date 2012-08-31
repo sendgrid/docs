@@ -42,16 +42,16 @@ navigation:
     <td>Retrieves the timestamps, it will return a
 		date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
@@ -90,23 +90,23 @@ navigation:
     <td>You must specify the unsubscribe record to
 		remove</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"Email does not exist"
 {% endcodeblock %}
@@ -144,23 +144,23 @@ navigation:
     <td>You must specify the unsubscribe record to
 		add</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>Email already exists</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"Email already exists"
 {% endcodeblock %}

@@ -31,14 +31,14 @@ navigation:
     <td>Must be either upgrade, downgrade, close.
 			Optional search parameter.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -46,14 +46,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=lis
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 {"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -77,14 +77,14 @@ result><message>error</message><errors>
     <td>Yes</td>
     <td>Must be an User under your account.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -92,14 +92,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -143,14 +143,14 @@ result><message>error</message><errors>
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -158,14 +158,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -209,14 +209,14 @@ result><message>error</message><errors>
 			to does not require an IP or whitelabel, you may place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -224,14 +224,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -263,14 +263,14 @@ are incurred, a invoice with zero amount due is generated.</p>
     <td>Define an ip group you will place the user
 			into once the customers account is closed.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -278,14 +278,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -329,14 +329,14 @@ result><message>error</message><errors>
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -344,14 +344,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -395,14 +395,14 @@ result><message>error</message><errors>
 			does not require an IP or whitelabel, you must place them in an IP
 			group.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -410,14 +410,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -450,14 +450,14 @@ invoice with zero amount due is generated.</p>
     <td>Define an ip group you will place the user
 			into once the customers account is closed.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 result><message>error</message><errors>
       ...
@@ -465,14 +465,14 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

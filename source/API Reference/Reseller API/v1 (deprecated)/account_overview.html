@@ -26,28 +26,28 @@ navigation:
       <td>Customer that is registered under your account.</td>
       <td>The customer</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><overview><reputation>100</reputation><requests>50000</requests><package>Silver Package</package><credits_allowed>50000</credits_allowed><credits_used>100000</credits_used><credits_remain>0</credits_remain><credits_overage>50000</credits_overage><billing_start_date>2010-08-30</billing_start_date><billing_end_date>2010-09-29</billing_end_date><billing_process_date>2010-09-30</billing_process_date></overview></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.account.json?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "reputation":100,"requests":500000,"package":"Silver
 Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

@@ -47,16 +47,16 @@ before the end_date parameter</td>
 the start_date parameter</td>
       <td>The end date to look up statistics</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
 {% endcodeblock %}
@@ -84,16 +84,16 @@ your account</td>
       <td>This is used to let us know that you are
 interested in all time totals</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;;user=example@example.com&amp;aggregate=
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;aggregate=
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
 {% endcodeblock %}
@@ -123,16 +123,16 @@ categories used in your customer subusers account.</td>
       <td>The subuser we are retrieving category
 statistics from</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;list=tru
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;list=tru
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"category":"categoryA","category":"categoryB","category":"categoryC"}
 {% endcodeblock %}
@@ -188,22 +188,22 @@ before the end_date parameter</td>
 after the start_date parameter</td>
       <td>The end date to look up statistics</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
 {% endcodeblock %}
 <h4>Command - Using an array of categories</h4>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
 {% endcodeblock %}

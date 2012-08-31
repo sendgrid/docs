@@ -35,16 +35,16 @@ navigation:
         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/api/user.spamreports.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
   {% codeblock %}    <spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
   {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
@@ -79,23 +79,23 @@ navigation:
         <td>You must specify the spam reports to remove</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/api/user.spamreports.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=spamreport@domain.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}    <result><message>Email does not exist</message></result>
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=spamreport@domain.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"Email does not exist"
 {% endcodeblock %}

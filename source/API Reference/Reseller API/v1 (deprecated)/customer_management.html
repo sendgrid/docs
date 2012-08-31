@@ -149,27 +149,27 @@ navigation:
 			is different from today (or when you execute this API call), you can
 			specify the first billing anniversary date</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -193,27 +193,27 @@ navigation:
 			account.</td>
     <td>The customers username you wish to delete.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -309,18 +309,18 @@ navigation:
       <em>profile</em>
     </td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
@@ -349,23 +349,23 @@ navigation:
     </td>
     <td>The customer you are planning to enabling</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -393,23 +393,23 @@ navigation:
     </td>
     <td>The customer you are planning to disabling</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -440,23 +440,23 @@ navigation:
     <td>The customer you are planning to grant
 			website access</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -487,23 +487,23 @@ navigation:
     <td>The customer you are planning to disallow
 			website access</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -586,27 +586,27 @@ navigation:
     <td>No</td>
     <td>Company of customer</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -648,27 +648,27 @@ navigation:
     </td>
     <td>Allows you to access password functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -718,27 +718,27 @@ navigation:
     </td>
     <td>Allows you to access profile functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -784,27 +784,27 @@ navigation:
     </td>
     <td>Allows you to access password functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
