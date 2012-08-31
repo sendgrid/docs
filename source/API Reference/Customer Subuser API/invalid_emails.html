@@ -4,7 +4,7 @@ title: Invalid Emails
 navigation:
    show: true
 ---
-<p><hr/><a name="retrieveInvalidEmails"></a></p>
+<hr/><a name="retrieveInvalidEmails"></a>
 <h2>Retrieve Invalid Emails</h2>
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -32,14 +32,24 @@ navigation:
       <td>Must be set to 1</td>
       <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
     </tr>
-  </tbody></table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
+  </tbody></table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -74,8 +84,15 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
       <td>Must be a invalid email</td>
       <td>You must specify the invalid emails to remove</td>
     </tr>
-  </tbody></table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co
+  </tbody></table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -83,8 +100,11 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 <h3>Response: Error</h3>
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

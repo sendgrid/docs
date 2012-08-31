@@ -95,13 +95,19 @@
   
   <p>List all packages available to your account.</p>
 <p>There are no extra parameters required for this call</p>
-<h3>XML API Request</h3>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.packages.xml?api_user=username&amp;api_key=secureSecre</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;packages>&lt;package>&lt;name>Basic Package&lt;/name>&lt;price>9.95&lt;/price>&lt;description>Basic Package description&lt;/description>&lt;credits>10000&lt;/credits>&lt;overage>0.001&lt;/overage>&lt;has_reseller>false&lt;/has_reseller>&lt;has_ip>false&lt;/has_ip>&lt;distributor_price>50&lt;/distributor_price>&lt;/package>&lt;package>&lt;name>Silver Package&lt;/name>&lt;price>79.95&lt;/price>&lt;description>Silver Package Description&lt;/description>&lt;credits>50000&lt;/credits>&lt;overage>0.001&lt;/overage>&lt;has_reseller>false&lt;/has_reseller>&lt;has_ip>false&lt;/has_ip>&lt;distributor_price>50&lt;/distributor_price>&lt;/package>&lt;/packages>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -112,15 +118,17 @@
 </span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
 </span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.packages.json?api_user=username&amp;api_key=secureSecre</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"name":"Basic Package","price":9.95,"description":"Basic Package description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver Package","price":79.95,"description":"Silver Package description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"name":"Basic Package","price":9.95,"description":"Basic Package description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver Package","price":79.95,"description":"Silver Package description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 
   
     <footer>

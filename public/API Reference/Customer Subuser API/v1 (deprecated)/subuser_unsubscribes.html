@@ -129,19 +129,27 @@
         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;unsubscribes>&lt;unsubscribe>&lt;email>email1@domain.com&lt;/email>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/unsubscribe>&lt;unsubscribe>&lt;email>email2@domain2.com&lt;/email>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/unsubscribe>&lt;/unsubscribes</span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 </span><span class='line'> </span></code></pre></td></tr></table></div></figure>
   <hr/><a name="deleteUnsubscribes"></a>
   <h2>Delete Unsubscribes</h2>
@@ -174,24 +182,32 @@
         <td>You must specify the unsubscribe record to remove</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="addUnsubscribes"></a>
   <h2>Add Unsubscribes</h2>
   Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
@@ -223,24 +239,32 @@
         <td>You must specify the unsubscribe record to add</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email already exists&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email already exists"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email already exists"</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

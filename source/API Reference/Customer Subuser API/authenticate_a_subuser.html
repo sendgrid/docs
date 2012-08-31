@@ -23,8 +23,15 @@ navigation:
         <td>Password the subuser submitted.</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
@@ -40,8 +47,11 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}

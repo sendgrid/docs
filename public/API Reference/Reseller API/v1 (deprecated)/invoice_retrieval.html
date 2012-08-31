@@ -123,19 +123,32 @@
 			deferred, canceled. This is used to specify what kind of invoice you
 			would like returned.</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/billing.list.xml?api_user=username&amp;api_key=secureSecret&amp;status=pai</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>invoices>&lt;invoice>&lt;number>2010010001&lt;/number>&lt;/invoice>&lt;invoice>&lt;number>2010010002&lt;/number>&lt;/invoice>&lt;/invoices</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/billing.list.json?api_user=username&amp;api_key=secureSecret&amp;status=pai</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"number":"2010010001"},{"number":"2010010002"}</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="retrieveInvoices"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/billing.list.xml?api_user=username&amp;api_key=secureSecret&amp;status=pai
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+invoices><invoice><number>2010010001</number></invoice><invoice><number>2010010002</number></invoice></invoices
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/billing.list.json?api_user=username&amp;api_key=secureSecret&amp;status=pai
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+{&#8220;number&#8221;:&#8221;2010010001&#8221;},{&#8220;number&#8221;:&#8221;2010010002&#8221;}
+  </div>
+</div>
+<a name="retrieveInvoices"></a>
 <h2>Retrieve Invoices</h2>
 <p>Return an array of invoices.</p>
 <table class="table table-bordered table-striped">
@@ -164,18 +177,30 @@
 			deferred, canceled. This is used to specify what kind of invoice you
 			would like returned.</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/billing.get.xml?api_user=username&amp;api_key=secureSecret&amp;status=pai</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>invoices>&lt;invoice>&lt;number>2010010001&lt;/number>&lt;package>Basic Package&lt;/package>&lt;credits>10000000&lt;/credits>&lt;date_invoiced>2010-01-01 00:00:00&lt;/date_invoiced>&lt;status>Paid&lt;/status>&lt;amount>100&lt;/amount>&lt;additional_charges>0&lt;/additional_charges>&lt;overage>10&lt;/overage>&lt;type>Recurring Bill&lt;/type>&lt;prorated>0&lt;/prorated>&lt;start_date>2009-12-01&lt;/start_date>&lt;end_date>2009-12-31&lt;/end_date>&lt;final_amount>110&lt;/final_amount>&lt;/invoice>&lt;/invoices</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/billing.get.json?api_user=username&amp;api_key=secureSecret&amp;status=pai</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"number":"2010010001","package":"Basic Package","credits":10000000,"date_invoiced":"2010-01-01 00:00:00","status":"Paid","amount":100,"additional_charges":0,"overage":10,"type":"Recurring Bill","prorated":0,"start_date":"2009-12-01","end_date":"2009-12-31","final_amount":110}</span></code></pre></td></tr></table></div></figure>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/billing.get.xml?api_user=username&amp;api_key=secureSecret&amp;status=pai
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+invoices><invoice><number>2010010001</number><package>Basic Package</package><credits>10000000</credits><date_invoiced>2010-01-01 00:00:00</date_invoiced><status>Paid</status><amount>100</amount><additional_charges>0</additional_charges><overage>10</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2009-12-01</start_date><end_date>2009-12-31</end_date><final_amount>110</final_amount></invoice></invoices
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/billing.get.json?api_user=username&amp;api_key=secureSecret&amp;status=pai
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+{&#8220;number&#8221;:&#8221;2010010001&#8221;,&#8221;package&#8221;:&#8221;Basic Package&#8221;,&#8221;credits&#8221;:10000000,&#8221;date_invoiced&#8221;:&#8221;2010-01-01 00:00:00&#8221;,&#8221;status&#8221;:&#8221;Paid&#8221;,&#8221;amount&#8221;:100,&#8221;additional_charges&#8221;:0,&#8221;overage&#8221;:10,&#8221;type&#8221;:&#8221;Recurring Bill&#8221;,&#8221;prorated&#8221;:0,&#8221;start_date&#8221;:&#8221;2009-12-01&#8221;,&#8221;end_date&#8221;:&#8221;2009-12-31&#8221;,&#8221;final_amount&#8221;:110}
+{% endcodeblock %}
 
   
     <footer>

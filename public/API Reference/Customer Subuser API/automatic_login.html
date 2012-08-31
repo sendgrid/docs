@@ -116,23 +116,35 @@ In order to login your subuser, you need to contact our web API to retrieve the 
       <td>Your subuser password.</td>
       <td>Authenticate the subuser with this API call.</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.geturl.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;params>&lt;params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e&lt;/params>&lt;/params</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="iFrameUsage"></a>
+  </tbody></table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.geturl.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}  <params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+&#8220;params&#8221;:&#8221;al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56&#8221;
+  </div>
+</div>
+<a name="iFrameUsage"></a>
 <h2>iFrame Usage</h2>
 Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56">&lt;/iframe</span></code></pre></td></tr></table></div></figure>
+{% codeblock %}  <iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
+{% endcodeblock %}
 
   
     <footer>

@@ -14,7 +14,8 @@ CakePHP comes with an email library that already supports SMTP. <a href="http://
 
 <p>
 In <strong>app/views/layouts/</strong> you need to define the layout of your text and HTML emails:
-{% codeblock %}email/
+{% codeblock %}
+email/
 html/
 default.ctp
 text/
@@ -32,7 +33,8 @@ and in <strong>app/views/layouts/email/html/default.ctp</strong> add:
 {% endcodeblock %}
 
 Then create the template for your emails. In this example we created templates for a registration email with the following structure:
-{% codeblock %}app/
+{% codeblock %}
+app/
 views/
 elements/
 email/

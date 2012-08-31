@@ -22,8 +22,15 @@ navigation:
     <td>Yes</td>
     <td>Must be the invoice number you received from SendGrid.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.billing.xml?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.xml?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <usage><number>2010010001</number><invoices><invoice><number>201001000100</number><credits>123456</credits><date_invoiced>2010-09-01 00:00:00</date_invoiced><status>Unpaid</status><amount>1001</amount><overage>6.95</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user4@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>1007.95</final_amount></invoice><invoice><number>201001000200</number><credits>1333</credits><date_invoiced>2010-09-05 00:00:00</date_invoiced><status>Unpaid</status><amount>13.95</amount><overage>0</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user5@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>13.95</final_amount></invoice></invoices></usage
@@ -35,8 +42,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.billing.json?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.billing.json?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}

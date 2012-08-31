@@ -170,7 +170,8 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="mail-json">
 	        <h3>Call: Send to One Recipient</h3>
-{% codeblock %}https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+{% codeblock %}
+https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 
 	<h3>Call: Send to Multiple Recipients
@@ -191,7 +192,8 @@ https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=se
   </div>
   <div class="tab-pane" id="mail-xml">
         <h3>Call: Send to One Recipient</h3>
-{% codeblock %}https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+{% codeblock %}
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 
 		<h3>Call: Send to Multiple Recipients
@@ -236,15 +238,18 @@ $ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@e
 {% codeblock lang:bash %}
 $ curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="<strong>testing html body</strong>" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
 {% endcodeblock %}
-<hr/>
+
+
 	
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
 
-{% codeblock %}POST /api/mail.send.json HTTP/1.1
+{% codeblock %}
+POST /api/mail.send.json HTTP/1.1
 {% endcodeblock %}
 
-{% codeblock %}Host: sendgrid.com
+{% codeblock %}
+Host: sendgrid.com
 
 Accept: */*
 
@@ -322,5 +327,6 @@ Connection: keep-alive
 
 {% endcodeblock %}
 
-{% codeblock %}{"message":"success"}
+{% codeblock %}
+{"message":"success"}
 {% endcodeblock %}

@@ -9,7 +9,8 @@ Symfony uses SwiftMailer to send email, read more about <a href="http://www.symf
 </p>
 
 To get started you need to modify factories.yml and add the following:
-{% codeblock %}mailer:
+{% codeblock %}
+mailer:
 class: sfMailer
 param:
 logging: %SF_LOGGING_ENABLED%
@@ -131,14 +132,16 @@ class myEmail
 {% endcodeblock %}
 
 Then configure your credentials on <strong>apps/frontend/app.yml</strong>
-{% codeblock %}prod:
+{% codeblock %}
+prod:
 sendgrid:
 username: sendgridusername
 password: sendgridpassword
 {% endcodeblock %}
 
 Now can put your partials in a module such as <strong>apps/frontend/modules/mail</strong>. For example, to send a registration email in both text and HTML, we would have the following structure
-{% codeblock %}apps/
+{% codeblock %}
+apps/
 frontend/
 modules/
 mail/

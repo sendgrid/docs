@@ -50,21 +50,32 @@ navigation:
     </td>
     <td>Allows you to access unsubscribe functionality</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
-{% endcodeblock %}
-<hr/><a name="deleteUnsubscribes"></a>
+  </div>
+</div>
+<a name="deleteUnsubscribes"></a>
 <h2>Delete Unsubscribes</h2>
 <p>Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.</p>
 <table class="table table-bordered table-striped">
@@ -98,8 +109,15 @@ navigation:
     <td>You must specify the unsubscribe record to
 		remove</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -107,8 +125,11 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -117,8 +138,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"Email does not exist"
-{% endcodeblock %}
-<hr/><a name="addUnsubscribes"></a>
+  </div>
+</div>
+<a name="addUnsubscribes"></a>
 <h2>Add Unsubscribes</h2>
 <p>Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.</p>
 <table class="table table-bordered table-striped">
@@ -152,8 +174,15 @@ navigation:
     <td>You must specify the unsubscribe record to
 		add</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -161,8 +190,11 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}  <result><message>Email already exists</message></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=add&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

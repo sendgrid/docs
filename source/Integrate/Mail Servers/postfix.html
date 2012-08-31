@@ -9,7 +9,8 @@ navigation:
 
 Find your Postfix config file, typically <strong>/etc/postfix/main.cf</strong>, and add the following:
 
-{% codeblock %}smtp_sasl_auth_enable = yes 
+{% codeblock %}
+smtp_sasl_auth_enable = yes 
 smtp_sasl_password_maps = static:yourSendgridUsername:yourSendgridPassword 
 smtp_sasl_security_options = noanonymous 
 smtp_tls_security_level = may
