@@ -9,9 +9,8 @@ navigation:
 <p><span class="label label-warning">Warning</span> SendGrid requires the use of PHP 5.3 or higher.</p>
 
 <h2>How To Install The Libraries</h2>
-```
-git clone git://github.com/sendgrid/sendgrid-php.git
-```
+{% codeblock %}git clone git://github.com/sendgrid/sendgrid-php.git
+{% endcodeblock %}
 
 <h2>SendGrid APIs</h2>
 <p>SendGrid provides two methods of sending email: the Web API, and SMTP API. SendGrid recommends using the SMTP API for sending emails. For an explanation of the benefits of each, refer to http://docs.sendgrid.com/documentation/get-started/integrate/examples/smtp-vs-rest/.</p>
@@ -33,25 +32,25 @@ git clone git://github.com/sendgrid/sendgrid-php.git
 <h2>Mail Usage</h2>
 <p>To begin using this library, you must first include it in your code, like so:</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 include 'path/to/sendgrid-php/SendGrid_loader.php';
 ?>
-```
+{% endcodeblock %}
 
 
 <p>Then, initialize the SendGrid object with your SendGrid credentials:</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $sendgrid = new SendGrid('username', 'password');
 ?>
-```
+{% endcodeblock %}
 
 
 <p>Create a new SendGrid Mail object and add your message details, as follows:</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -65,33 +64,33 @@ setText('Hello World!')->
 
 setHtml('<strong>Hello World!</strong>');
 ?>
-```
+{% endcodeblock %}
 
 
 <p>Finally, send it using the API of your choice of SMTP like so:</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $sendgrid->
 smtp->
 send($mail);
 ?>
-```
+{% endcodeblock %}
 
 <p>Or you can send it using the Web API like so:</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $sendgrid->
 web->
 send($mail);
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Categories</h3>
 <p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name.</p>
 <p><span class="label label-info">Info</span> There is a maximum of 10 categories per email.</p>
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -102,14 +101,14 @@ addCategory("Category 1")->
 
 addCategory("Category 2");
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Attachments</h3>
 <p>Attachments are currently file based only, with future plans for an in memory implementation as well.
 </p>
 <p><span class="label label-info">Info</span> File attachments are limited to 7 MB per file.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -118,12 +117,12 @@ addTo('foo@bar.com')->
 ...
 addAttachment("../path/to/file.txt");
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Substitutions</h3>
 <p>Substitutions can be used to customize multi-recipient emails, and tailor them for the user.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -138,12 +137,12 @@ setHtml("Hey %name%, we've seen that you've been gone for a while")->
 
 addSubstitution("%name%", array("John", "Harry", "Bob"));
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Sections</h3>
 <p>Sections can be used to further customize messages for the end users. A section is only useful in conjunction with a substition value.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -164,12 +163,12 @@ addSection("%office%", "an office")->
 
 addSection("%home%", "your house");
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Unique Arguments</h3>
 <p>Unique Arguments can be used for tracking purposes and developing data for unique statistical analysis.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -180,12 +179,12 @@ addUniqueArgument("Customer", "Someone")->
 
 addUniqueArgument("location", "Somewhere");
 ?>
-```
+{% endcodeblock %}
 
 <h3>Using Filter Settings</h3>
 <p>Filter Settings are used to enable and disable apps, and to pass parameters to those apps.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -201,11 +200,11 @@ addFilterSetting("footer", "text/plain", "Here is a plain text footer")->
 addFilterSetting("footer", "text/html", "Here is an HTML footer");
 
 ?>
-```
+{% endcodeblock %}
 <h3>Using Headers</h3>
 <p>Headers can be used to add existing sendgrid functionality (such as for categories or filters), or custom headers can be added as necessary.</p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
 $mail->
@@ -214,4 +213,4 @@ addTo('foo@bar.com')->
 ...
 addHeader("category", "My New Category");
 ?>
-```
+{% endcodeblock %}

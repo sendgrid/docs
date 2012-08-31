@@ -7,9 +7,9 @@ navigation:
 
 <p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 X-SMTPAPI: {"category" : "newuser"}
-```
+{% endcodeblock %}
 <p>In this case, the header is telling the processing routine to assign this email the <a href="/documentation/delivery-metrics/categories/">category</a> of "newuser".</p>
 
 <h2>The X-SMTPAPI Header</h2>
@@ -19,49 +19,49 @@ X-SMTPAPI: {"category" : "newuser"}
 <p>
 	To: An array of addresses to send the message to.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"to": ["Ben Golden <ben@sendgrid.com>", "Joe Scharf <joe@sendgrid.com>"]}
-```
+{% endcodeblock %}
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/substitution-tags/">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"sub":{"%name%": ["Ben", "Joe"], "%role%": ["%sellerSection%", "%buyerSection%"]}}
-```
+{% endcodeblock %}
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/section-tags/">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"section":{"%sellerSection%": "Seller information for: %name%", "%buyerSection%": "Buyer information for: %name%"}}
-```
+{% endcodeblock %}
 
 <p>
 	<a href="/documentation/delivery-metrics/categories/">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"category": [“category1”,”category2”]}
-```
+{% endcodeblock %}
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/unique-arguments/">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"unique_args": {"orderNumber": "12345", "eventID": "6789"}}
-```
+{% endcodeblock %}
 
 <p>
 	<a href="/documentation/api/smtp-api/filter-settings/">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 {"filters": {"footer": {"settings": {"enable":1,"text/plain": "Thank you for
 your business"}}}}
-```
+{% endcodeblock %}
 
 All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this:
 
-``` javascript
+{% codeblock lang:javascript %}
 X-SMTPAPI: {
     "to": [
         "ben@sendgrid.com",
@@ -95,13 +95,13 @@ X-SMTPAPI: {
         }
     }
 }
-```
+{% endcodeblock %}
 
 <p>The above example is formatted for readability. Headers must be wrapped to keep the line length under 72. By RFC 821 no line can be longer than 1,000, so if you are going to generate this string yourself it is a good idea to make sure that you wrap it.</p>
 
 <p>Here is a full example of generating the above JSON header in a Perl script:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 
 #!/usr/bin/perl
 use strict;
@@ -122,7 +122,7 @@ my $js = $json->encode($header);
 $js =~ s/(.{1,72})(\s)/$1\n   /g;
 my $hdr = "X-SMTPAPI: $js";
 print "$hdr\n";
-```
+{% endcodeblock %}
 
 <h2>Requirements and Limitations</h2>
 

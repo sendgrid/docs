@@ -115,17 +115,17 @@ In <strong>app/views/layouts/</strong> you need to define the layout of your tex
 </span><span class='line'>default.ctp</span></code></pre></td></tr></table></div></figure>
 
 In <strong>app/views/layouts/email/text/default.ctp</strong> add:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;!--?php echo $content_for_layout; ?--&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 and in <strong>app/views/layouts/email/html/default.ctp</strong> add:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;!--?php echo $content_for_layout; ?--&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
 Then create the template for your emails. In this example we created templates for a registration email with the following structure:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -133,37 +133,36 @@ Then create the template for your emails. In this example we created templates f
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">app/</span>
-</span><span class='line'><span class="x">views/</span>
-</span><span class='line'><span class="x">elements/</span>
-</span><span class='line'><span class="x">email/</span>
-</span><span class='line'><span class="x">text/</span>
-</span><span class='line'><span class="x">registration.ctp</span>
-</span><span class='line'><span class="x">html/</span>
-</span><span class='line'><span class="x">registration.ctp</span>
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>app/
+</span><span class='line'>views/
+</span><span class='line'>elements/
+</span><span class='line'>email/
+</span><span class='line'>text/
+</span><span class='line'>registration.ctp
+</span><span class='line'>html/
+</span><span class='line'>registration.ctp</span></code></pre></td></tr></table></div></figure>
 
 In <strong>app/views/elements/email/text/registration.ctp</strong> add:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">Dear &lt;!--?php echo $name ?--&gt;,</span>
 </span><span class='line'><span class="x">Thank you for registering. Please go to http://domain.com to finish your registration.</span>
 </span></code></pre></td></tr></table></div></figure>
 
 and in <strong>app/views/layouts/email/html/default.ctp</strong> add:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">Dear &lt;!--?php echo $name ?--&gt;,</span>
 </span><span class='line'><span class="x">Thank you for registering. Please go to &lt;a href=&quot;http://domain.com&quot;&gt;here&lt;/a&gt; to finish your registration.</span>
 </span></code></pre></td></tr></table></div></figure>
 
 In your controller enable the email component:<br><br>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">&lt;!--?php var $components = array(&#39;Email&#39;); ?--&gt; </span>
 </span></code></pre></td></tr></table></div></figure>
 
 Then anywhere in your controller you can do something like the following to send an email:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

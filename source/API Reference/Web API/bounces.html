@@ -117,11 +117,10 @@ navigation:
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/bounces.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
       <h3>Response</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {
    bounces:{
        bounce:[
@@ -135,15 +134,14 @@ https://sendgrid.com/api/bounces.get.json?api_user=youremail@domain.com&api_key=
        ]
    }
 }
-```
+{% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
       <h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <bounces>
   <bounce>
     <email>email1@domain.com</email>
@@ -158,7 +156,7 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
     <created>2009-08-01 10:16:30</created>
   </bounce>
 </bounces>
-```
+{% endcodeblock %}
     </div>
   </div>
 
@@ -211,35 +209,33 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-``` 
+{% codeblock %}https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %} 
 	<h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 	<h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 	<h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   success
-</result>
-```
+</result>>
+{% endcodeblock %}
 	  <h3>Response: Error</h3> 
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error: reason</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
     </div>
   </div>
 
@@ -282,35 +278,33 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_ke
   <div class="tab-content">
     <div class="tab-pane active" id="count-json">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-``` 
+{% codeblock %}https://sendgrid.com/api/bounces.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %} 
 	<h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"count":"4"}
-```
+{% endcodeblock %}
 	<h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
     </div>
     <div class="tab-pane" id="count-xml">
       <h3>Call</h3>
-```
-https://sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&api_key=secureSecret
-```
+{% codeblock %}https://sendgrid.com/api/bounces.count.xml?api_user=youremail@domain.com&api_key=secureSecret
+{% endcodeblock %}
 	<h3>Response: Success</h3>
 
-``` xml
+{% codeblock lang:xml %}
 <result>
   <count>4</count>
-</result>
-```
+</result>>
+{% endcodeblock %}
 	  <h4>Response: Error</h4> 
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error: reason</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
     </div>
   </div>

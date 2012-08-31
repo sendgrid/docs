@@ -110,9 +110,8 @@ navigation:
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -130,17 +129,14 @@ error
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+  {% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <hr/><a name="retrieveSubusers"></a>
   <h1>Retrieve Subusers</h1>
   Obtain a complete list of all subusers.
@@ -222,9 +218,8 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secur
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return</h4>
    
 
@@ -252,13 +247,11 @@ US
 
 555-555-5555 example.com
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
-```
+  {% codeblock %}{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+{% endcodeblock %}
   <hr/><a name="enableSubuser"></a>
   <h2>Enable a Subuser</h2>
   Enable a subuser so they may start sending out emails again. This call will not enable website access. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableWebsiteSubuser">enable website access</a>.
@@ -277,9 +270,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -293,17 +285,14 @@ User not found
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"User not found"
-```
+  {% codeblock %}"message":"User not found"
+{% endcodeblock %}
   <hr/><a name="disableSubuser"></a>
   <h2>Disable a Subuser</h2>
   This prevents them from sending out emails with SendGrid.
@@ -322,9 +311,8 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=se
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -338,17 +326,14 @@ User not found
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"User not found"
-```
+  {% codeblock %}"message":"User not found"
+{% endcodeblock %}
   <hr/><a name="enableWebsiteSubuser"></a>
   <h2>Enable Website Access To A Subuser</h2>
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser from sending out emails. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#enableSubuser">enable a subuser</a>.
@@ -367,9 +352,8 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=s
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -383,17 +367,14 @@ User not found
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"User not found"
-```
+  {% codeblock %}"message":"User not found"
+{% endcodeblock %}
   <hr/><a name="disableWebsiteSubuser"></a>
   <h2>Disable Website Access To A Subuser</h2>
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending out emails. To <a href="http://sendgrid.com/documentation/display/subuser/manage/method/api/task/Users/version/v2#disableSubuser">disable a subuser</a>.
@@ -412,9 +393,8 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;ap
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -428,17 +408,14 @@ User not found
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"User not found"
-```
+  {% codeblock %}"message":"User not found"
+{% endcodeblock %}
   <hr/><a name="updateSubuserProfile"></a>
   <h2>Update Subuser Profile</h2>
   Allows you to update your subusers profile information
@@ -510,9 +487,8 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;a
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -530,17 +506,14 @@ error
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+  {% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <hr/><a name="updateSubuserPassword"></a>
   <h2>Update Subuser Password</h2>
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
@@ -571,14 +544,12 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-    success
+  {% codeblock %}    success
  
-```
+{% endcodeblock %}
   <h4>Return - Error</h4>
    
 
@@ -590,17 +561,14 @@ error
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+  {% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <hr/><a name="updateSubuserUsername"></a>
   <h2>Update Subuser Username</h2>
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
@@ -632,9 +600,8 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -652,17 +619,14 @@ error
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+  {% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <hr/><a name="updateSubuserEmailAddress"></a>
   <h2>Update Subuser Email Address</h2>
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
@@ -694,9 +658,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=s
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
    
 
@@ -714,15 +677,12 @@ error
 
  
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
-```
+  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"message":"success"
-```
+  {% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+  {% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 </div>

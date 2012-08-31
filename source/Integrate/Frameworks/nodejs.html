@@ -6,12 +6,11 @@ navigation:
 ---
 
 To send email over SMTP using Node.js the <a href="https://github.com/Marak/node_mailer">node_mailer</a> library is a good option. To install node_mailer, use <a href="http://npmjs.org/">npm</a>. 
-```
-$ npm install mailer
-```
+{% codeblock %}$ npm install mailer
+{% endcodeblock %}
 
 Then create a file called <strong>mail.js</strong>:
-``` javascript
+{% codeblock lang:javascript %}
 var email = require("mailer");
 var sgusername = 'sendgrid_username';
 var sgpassword = 'sendgrid_password';
@@ -32,9 +31,8 @@ email.send({
       console.log(err);
     }
 });
-```
+{% endcodeblock %}
 
 To execute mail.js run the following
-```
-$ node mail.js
-```
+{% codeblock %}$ node mail.js
+{% endcodeblock %}

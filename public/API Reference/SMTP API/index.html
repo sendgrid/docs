@@ -95,7 +95,7 @@
   
   <p>SendGrid&#8217;s SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">X</span><span class="o">-</span><span class="nx">SMTPAPI</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;category&quot;</span> <span class="o">:</span> <span class="s2">&quot;newuser&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <p>In this case, the header is telling the processing routine to assign this email the <a href="/documentation/delivery-metrics/categories/">category</a> of &#8220;newuser&#8221;.</p>
@@ -107,42 +107,42 @@
 <p>
 	To: An array of addresses to send the message to.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;to&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Ben Golden &lt;ben@sendgrid.com&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;Joe Scharf &lt;joe@sendgrid.com&gt;&quot;</span><span class="p">]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/substitution-tags/">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the &#8220;To&#8221; section of the JSON string.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;sub&quot;</span><span class="o">:</span><span class="p">{</span><span class="s2">&quot;%name%&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;Ben&quot;</span><span class="p">,</span> <span class="s2">&quot;Joe&quot;</span><span class="p">],</span> <span class="s2">&quot;%role%&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;%sellerSection%&quot;</span><span class="p">,</span> <span class="s2">&quot;%buyerSection%&quot;</span><span class="p">]}}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/section-tags/">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;section&quot;</span><span class="o">:</span><span class="p">{</span><span class="s2">&quot;%sellerSection%&quot;</span><span class="o">:</span> <span class="s2">&quot;Seller information for: %name%&quot;</span><span class="p">,</span> <span class="s2">&quot;%buyerSection%&quot;</span><span class="o">:</span> <span class="s2">&quot;Buyer information for: %name%&quot;</span><span class="p">}}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>
 	<a href="/documentation/delivery-metrics/categories/">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;category&quot;</span><span class="o">:</span> <span class="p">[</span><span class="err">“</span><span class="nx">category1</span><span class="err">”</span><span class="p">,</span><span class="err">”</span><span class="nx">category2</span><span class="err">”</span><span class="p">]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>
 	<a href="/documentation/api/smtp-api/developers-guide/unique-arguments/">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;unique_args&quot;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;orderNumber&quot;</span><span class="o">:</span> <span class="s2">&quot;12345&quot;</span><span class="p">,</span> <span class="s2">&quot;eventID&quot;</span><span class="o">:</span> <span class="s2">&quot;6789&quot;</span><span class="p">}}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>
 	<a href="/documentation/api/smtp-api/filter-settings/">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;filters&quot;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;footer&quot;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;settings&quot;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;enable&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;text/plain&quot;</span><span class="o">:</span> <span class="s2">&quot;Thank you for</span>
 </span><span class='line'><span class="s2">your business&quot;</span><span class="p">}}}}</span>
@@ -150,7 +150,7 @@
 
 All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -222,7 +222,7 @@ All of the above examples can then be combined into one larger JSON string place
 
 <p>Here is a full example of generating the above JSON header in a Perl script:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

@@ -9,16 +9,16 @@ navigation:
 
 <p>The format of the SMTP section key has the form:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 { "section" : { "-sectionName1-" : "section 1 text", "sectionName2" : "section 2 text" } }
-```
+{% endcodeblock %}
 
 <p>Typical usage is to have a tag in the body of your email that references a per user substitution tag. This user tag will contain a reference to a section tag. Section text may contain references to per recipient substitution variables.</p>
 
 <h3>Section Tag Example</h3>
 
 Message body:
-``` html
+{% codeblock lang:html %}
 <html>
  <body>
    Hi -name-,<br>
@@ -26,7 +26,7 @@ Message body:
       -body-
  </body>
 </html>
-```
+{% endcodeblock %}
 
 <p>An accompanying SMTPAPI JSON header might look something like this:</p>
 
@@ -51,10 +51,10 @@ Message body:
         "-bodyMale-": "Check out this tie -name-!"
     }
 }
-```
+{% endcodeblock %}
 
 The final email for Alice would look like this:
-``` html
+{% codeblock lang:html %}
 <html>
  <body>
    Hi Alice,<br>
@@ -62,4 +62,4 @@ The final email for Alice would look like this:
       Check out this dress Alice!
  </body>
 </html>
-```
+{% endcodeblock %}

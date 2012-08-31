@@ -170,53 +170,51 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="mail-json">
 	        <h3>Call: Send to One Recipient</h3>
-```
-https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
 
 	<h3>Call: Send to Multiple Recipients
-``` bash
+{% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
-```
+{% endcodeblock %}
 
 	<h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="mail-xml">
         <h3>Call: Send to One Recipient</h3>
-```
-https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
 
 		<h3>Call: Send to Multiple Recipients
-``` bash
+{% codeblock lang:bash %}
 https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example%20Subject&text=testingtextbody&from=info@domain.com
-```
+{% endcodeblock %}
 		<h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   success
 <result>
-```
+{% endcodeblock %}
 
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
   <result>
     <message>error</message>
     <errors>
       <error>...</error>
       ...
     </errors>
-  </result>
-```
+  </result>>
+{% endcodeblock %}
 
 
   </div>
@@ -227,28 +225,26 @@ https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=sec
 <h3>cURL Examples</h3>
 
 <p>Send to one email recipient</p>
-``` bash
+{% codeblock lang:bash %}
 $ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
-```
+{% endcodeblock %}
 <p>Send to multiple email recipients</p>
-``` bash
+{% codeblock lang:bash %}
 $ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
-```
+{% endcodeblock %}
 <p>Send a test attachment</p>
-``` bash
+{% codeblock lang:bash %}
 $ curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="<strong>testing html body</strong>" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
-```
+{% endcodeblock %}
 <hr/>
 	
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
 
-```
-POST /api/mail.send.json HTTP/1.1
-```
+{% codeblock %}POST /api/mail.send.json HTTP/1.1
+{% endcodeblock %}
 
-```
-Host: sendgrid.com
+{% codeblock %}Host: sendgrid.com
 
 Accept: */*
 
@@ -324,8 +320,7 @@ Transfer-Encoding: chunked
 
 Connection: keep-alive
 
-```
+{% endcodeblock %}
 
-```
-{"message":"success"}
-```
+{% codeblock %}{"message":"success"}
+{% endcodeblock %}

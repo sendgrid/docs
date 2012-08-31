@@ -17,24 +17,22 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.get.json?api_user=youremail@domain.com&api_key=secureSecret
-```
+{% codeblock %}https://sendgrid.com/api/profile.get.json?api_user=youremail@domain.com&api_key=secureSecret
+{% endcodeblock %}
      <h3>Response</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"username":"sampleuser@example.com","email":"sampleemail@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=secureSecret
-```
+{% codeblock %}https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=secureSecret
+{% endcodeblock %}
 
 		<h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <users>
   <user>
     <username>sampleuser@example.com</username>
@@ -51,7 +49,7 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
     <website>example.com</website>
   </user>
 </users>
-```
+{% endcodeblock %}
   </div>
 </div>
 
@@ -150,33 +148,31 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
-```
+{% codeblock %}https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
-```
+{% codeblock %}https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error</message>
   <errors>
@@ -184,8 +180,8 @@ https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=s
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
   </div>
 </div>
 
@@ -236,43 +232,40 @@ https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=s
 <div class="tab-content">
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
-```
+{% codeblock %}https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
+{% endcodeblock %}
 
 	<h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="reset-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
-```
+{% codeblock %}https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 <h3>Response: Error</h3>
-```
-<result>
+{% codeblock %}<result>
   <message>error</message>
   <errors>
     ...
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>
@@ -317,41 +310,38 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
 <div class="tab-content">
   <div class="tab-pane active" id="setusername-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
   </div>
   <div class="tab-pane" id="setusername-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
+{% endcodeblock %}
 <h3>Response: Success</H3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 <h3>Response: Error</h3>
-```
-<result>
+{% codeblock %}<result>
   <message>error</message>
   <errors>
     ...
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>
@@ -395,37 +385,35 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.co
 <div class="tab-content">
   <div class="tab-pane active" id="setemail-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="setemail-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <message>success</message>
-```
+{% endcodeblock %}
 <p>Response: Error</p>
-``` xml
+{% codeblock lang:xml %}
   <message>error</message>
   <errors>
     ...
     <error>... error messages ...</error>
     ...
   </errors>
-```
+{% endcodeblock %}
   </div>
 </div>

@@ -14,7 +14,7 @@ This Rails example shows how to send an email for user signups. You can also che
 </p>
 
 In <strong>config/environment.rb</strong> specify ActionMailer defaults
-``` ruby
+{% codeblock lang:ruby %}
 ActionMailer::Base.smtp_settings = {
   :user_name => "sendgridusername",
   :password => "sendgridpassword",
@@ -24,10 +24,10 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain,
   :enable_starttls_auto => true
 }
-```
+{% endcodeblock %}
 
 Create your notification model in <strong>app/models/notifier.rb</strong>
-``` ruby
+{% codeblock lang:ruby %}
 class Notifier < ActionMailer::Base
   default :from => "any_from_address@example.com"
   
@@ -37,10 +37,10 @@ class Notifier < ActionMailer::Base
     :subject => "Thanks for signing up" )
   end
 end
-```
+{% endcodeblock %}
 
 In the controller in <strong>app/controllers/users_controller.rb</strong> add
-``` ruby
+{% codeblock lang:ruby %}
 class UsersController < ApplicationController
   def create
     # Create the user from params
@@ -54,4 +54,4 @@ class UsersController < ApplicationController
     end
   end
 end
-```
+{% endcodeblock %}

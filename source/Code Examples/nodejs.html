@@ -7,13 +7,12 @@ navigation:
 
 <p>If you are using Node.js and would like to send email through SendGrid, use the SendGrid nodejs module.</p>
 
-```
-npm install sendgrid-nodejs
-```
+{% codeblock %}npm install sendgrid-nodejs
+{% endcodeblock %}
 
 <p>Once you have the module installed, it can be as simple as the following code snippet, modified to your specifics, of course:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 var SendGrid = require('sendgrid').SendGrid;
 var sendgrid = new SendGrid(user, key);
 sendgrid.send({
@@ -26,7 +25,7 @@ sendgrid.send({
     console.log(message);
   }
 });
-```
+{% endcodeblock %}
 
 <h3>Digging In Deeper</h3>
 <p>Email is the object that will help you easily prepare your message to be sent.</p>
@@ -35,16 +34,16 @@ sendgrid.send({
 
 <p>To get started create an Email object:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 var Email = require('sendgrid').Email;
 var email = new Email(optionalParams);
-```
+{% endcodeblock %}
 
 <p>You can pass in as many or as few optionalParams as you want, as the email object has methods for manipulating all of the data.</p>
 
 <p>Here is how the parameters are structured:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 var optionalParams = {
   to: [],
   from: '',
@@ -67,34 +66,34 @@ var optionalParams = {
   file_data: {},
   headers: {}
 };
-```
+{% endcodeblock %}
 
 <p>And here is a sample for using it:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 var email = new Email({
   to: 'walks.it.in@sample.com',
   from: 'arsenal@sample.com',
   subject: 'What was Wenger thinking sending Walcott on that early?',
   text: 'Did you see that ludicrous display last night?'
 });
-```
+{% endcodeblock %}
 
 <h3>Setting data</h3>
 <p>Here is an example of all of the functions available on the email object. The comments to the right show the current state of the variables as the functions are called.</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 var email = new Email({
   to: 'denim@sample.com',
   from: 'roy@sample.com',
   subject: 'Listen',
   text: 'Have you tried turning it off and on again'
 });
-```
+{% endcodeblock %}
 
 <p>The following examples update the 'x-smtpapi' headers:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 /* To Addresses */
 email.addTo('moo@cow.com');       // to = ['moo@cow.com']
 email.addTo(['solid@snake.com',
@@ -113,27 +112,27 @@ email.addSubVal('keep', 'safe');   // sub = {keep: ['secret', 'safe']}
 email.setSection({'-charge-': 'This ship is useless.'}); // section = {'-charge-': 'This ship is useless.'}
 email.addSection({'-bomber-': 'Only for sad vikings.'}); // section = {'-charge-': 'This ship is useless.','-bomber-': 'Only for sad vikings.'}
 email.setSection({'-beam-': 'The best is for first'});   // section = {'-beam-': 'The best is for first'}
-```
+{% endcodeblock %}
 
 <p>Setting unique arguments allows you to get more mojo out of your statistics:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.setUniqueArgs({cow: 'chicken'}); // unique_args = {cow: 'chicken'}
 email.addUniqueArgs({cat: 'dog'});     // unique_args = {cow: 'chicken', cat: 'dog'}
 email.setUniqueArgs({dad: 'proud'});   // unique_args = {dad: 'proud'}
-```
+{% endcodeblock %}
 
 <p>You can set categories with the following:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.setCategory('tactics');        // category = ['tactics']
 email.addCategory('advanced');       // category = ['tactics', 'advanced']
 email.setCategory('snowball-fight'); // category = ['snowball-fight']
-```
+{% endcodeblock %}
 
 <p>You can set a filter using an object literal:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.setFilterSetting({
   'footer': {
     'setting': {
@@ -142,40 +141,40 @@ email.setFilterSetting({
     }
   }
 });
-```
+{% endcodeblock %}
 
 <p>Alternatively, you can add filter settings one at a time.
 </p>
-``` javascript
+{% codeblock lang:javascript %}
 email.addFilterSetting('footer', 'enable', 1);
 email.addFilterSetting('footer', 'text/html', '<strong>boo</strong>');
-```
+{% endcodeblock %}
 
 <p>You can add files as attachments directly from content stored in memory, like so:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.addFile({
   filename: 'secret.txt',
   content:  new Buffer('You will never know....')
 });
-```
+{% endcodeblock %}
 
 <p>Alternately, you can include files from a remote URL and will attempt to determine the file type based on the filename:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.addFile({
   filename: 'icon.jpg',
   url: 'http://i.imgur.com/2fDh8.jpg'
 });
-```
+{% endcodeblock %}
 
 <p>Finally, you can add file from a path on the server's local filesystem, also attempting to determine the filetype via the filename:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 email.addFile({
   path: '../files/resume.txt'
 });
-```
+{% endcodeblock %}
 
 <h3>Testing Your Code</h3>
 <p>Tests located in the <em>test/lib</em> folder can be ran as-is and should all pass if your code is valid. Tests that are located in the <em>test/intergration</em> folder require valid SendGrid account credentials inserted into <em>test/test.setup</em> in order to run.</p>
@@ -184,11 +183,9 @@ email.addFile({
 
 <p>When you're ready, you can run your tests with this command:</p>
 
-```
-make test
-```
+{% codeblock %}make test
+{% endcodeblock %}
 
 <p>You can run individual tests:</p>
-```
-mocha /path/to/test.test.js
-```
+{% codeblock %}mocha /path/to/test.test.js
+{% endcodeblock %}

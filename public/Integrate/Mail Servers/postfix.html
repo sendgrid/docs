@@ -113,7 +113,7 @@ Find your Postfix config file, typically <strong>/etc/postfix/main.cf</strong>, 
 </span><span class='line'>relayhost = [smtp.sendgrid.net]:587</span></code></pre></td></tr></table></div></figure>
 
 Make sure to restart Postfix:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/postfix restart
 </span></code></pre></td></tr></table></div></figure>
 
@@ -121,12 +121,12 @@ Make sure to restart Postfix:
 
 Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>apt-get install libsasl2-modules
 </span></code></pre></td></tr></table></div></figure>
 
 Or using a yum (i.e., RedHat, Fedora, CentOS):
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>yum install cyrus-sasl-plain
 </span></code></pre></td></tr></table></div></figure>
   

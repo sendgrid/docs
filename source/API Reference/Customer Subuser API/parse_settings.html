@@ -29,29 +29,23 @@ navigation:
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&task=get&user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-    <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
-```
+{% codeblock %}    <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+{% endcodeblock %}
   <h4>Return - Empty Set</h4>
-  ```
-parse></parse
-```
+{% codeblock %}parse></parse
+{% endcodeblock %}
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&task=get&user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
-```
+{% codeblock %}"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+{% endcodeblock %}
   <h4>Return - Empty Set</h4>
-  ```
-"parse":[]
-```
+{% codeblock %}"parse":[]
+{% endcodeblock %}
   <h1><hr/><a name="createNewEntry"></a></h1>
   <h2>Create New Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -88,33 +82,27 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=sec
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=set&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-    <result><message>success</message></result
-```
+{% codeblock %}    <result><message>success</message></result>
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-    <result><message>error</message><errors>
+{% codeblock %}    <result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
-      </errors></result
-```
+      </errors></result>
+{% endcodeblock %}
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=set&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.co
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <h1><hr/><a name="editEntry"></a></h1>
   <h2>Edit Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -151,33 +139,27 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=sec
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=update&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-    <result><message>success</message></result
-```
+{% codeblock %}    <result><message>success</message></result>
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-    <result><message>error</message><errors>
+{% codeblock %}    <result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
-      </errors></result
-```
+      </errors></result>
+{% endcodeblock %}
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;task=parse&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.co
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   <h1><hr/><a name="deleteEntry"></a></h1>
   <h2>Delete Entry</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -208,31 +190,25 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=sec
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&user=example@example.co
+{% endcodeblock %}
   <h4>Return - Success</h4>
-  ```
-    <result><message>success</message></result
-```
+{% codeblock %}    <result><message>success</message></result>
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-    <result><message>error</message><errors>
+{% codeblock %}    <result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
-      </errors></result
-```
+      </errors></result>
+{% endcodeblock %}
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/apiv2/customer.parse.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;user=example@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&user=example@example.co
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
   <h4>Return - Error</h4>
-  ```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 </div>

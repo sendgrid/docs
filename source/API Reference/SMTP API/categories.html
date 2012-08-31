@@ -27,7 +27,7 @@ navigation:
 <h2>Example</h2>
 <p>You can use SendGrid's <a href="/documentation/api/smtp-api/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 X-SMTPAPI: {"category": "Example Category"}
-```
+{% endcodeblock %}
 <p>In this example, SendGrid would associate statistics for the email containing that header with the category <strong>Example Category</strong>.</p>

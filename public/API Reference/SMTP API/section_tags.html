@@ -97,91 +97,60 @@
 
 <p>The format of the SMTP section key has the form:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span> <span class="s2">&quot;section&quot;</span> <span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;-sectionName1-&quot;</span> <span class="o">:</span> <span class="s2">&quot;section 1 text&quot;</span><span class="p">,</span> <span class="s2">&quot;sectionName2&quot;</span> <span class="o">:</span> <span class="s2">&quot;section 2 text&quot;</span> <span class="p">}</span> <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+{% codeblock lang:javascript %}
+{ &#8220;section&#8221; : { &#8220;-sectionName1-&#8221; : &#8220;section 1 text&#8221;, &#8220;sectionName2&#8221; : &#8220;section 2 text&#8221; } }
+{% endcodeblock %}
 
 <p>Typical usage is to have a tag in the body of your email that references a per user substitution tag. This user tag will contain a reference to a section tag. Section text may contain references to per recipient substitution variables.</p>
 
 <h3>Section Tag Example</h3>
 
 Message body:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'> <span class="nt">&lt;body&gt;</span>
-</span><span class='line'>   Hi -name-,<span class="nt">&lt;br&gt;</span>
-</span><span class='line'>      We thought you might be interested in this special offer.
-</span><span class='line'>      -body-
-</span><span class='line'> <span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+{% codeblock lang:html %}
+<html>
+ <body>
+   Hi -name-,<br>
+      We thought you might be interested in this special offer. 
+      -body-
+ </body>
+</html>
+{% endcodeblock %}
 
 <p>An accompanying SMTPAPI JSON header might look something like this:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="s2">&quot;to&quot;</span><span class="o">:</span> <span class="p">[</span>
-</span><span class='line'>        <span class="s2">&quot;alice@example.com&quot;</span><span class="p">,</span>
-</span><span class='line'>        <span class="s2">&quot;joe@example.com&quot;</span>
-</span><span class='line'>    <span class="p">],</span>
-</span><span class='line'>    <span class="s2">&quot;sub&quot;</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="s2">&quot;-body-&quot;</span><span class="o">:</span> <span class="p">[</span>
-</span><span class='line'>            <span class="s2">&quot;-bodyFemale-&quot;</span><span class="p">,</span>
-</span><span class='line'>            <span class="s2">&quot;-bodyMale-&quot;</span>
-</span><span class='line'>        <span class="p">],</span>
-</span><span class='line'>        <span class="s2">&quot;-name-&quot;</span><span class="o">:</span> <span class="p">[</span>
-</span><span class='line'>            <span class="s2">&quot;Alice&quot;</span><span class="p">,</span>
-</span><span class='line'>            <span class="s2">&quot;Joe&quot;</span>
-</span><span class='line'>        <span class="p">]</span>
-</span><span class='line'>    <span class="p">},</span>
-</span><span class='line'>    <span class="s2">&quot;section&quot;</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="s2">&quot;-bodyFemale-&quot;</span><span class="o">:</span> <span class="s2">&quot;Check out this dress -name-!&quot;</span><span class="p">,</span>
-</span><span class='line'>        <span class="s2">&quot;-bodyMale-&quot;</span><span class="o">:</span> <span class="s2">&quot;Check out this tie -name-!&quot;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
+&#8220;`javascript
+{
+    &#8220;to&#8221;: [
+        &#8220;alice@example.com&#8221;,
+        &#8220;joe@example.com&#8221;
+    ],
+    &#8220;sub&#8221;: {
+        &#8220;-body-&#8220;: [
+            &#8220;-bodyFemale-&#8220;,
+            &#8220;-bodyMale-&#8221;
+        ],
+        &#8220;-name-&#8220;: [
+            &#8220;Alice&#8221;,
+            &#8220;Joe&#8221;
+        ]
+    },
+    &#8220;section&#8221;: {
+        &#8220;-bodyFemale-&#8220;: &#8220;Check out this dress -name-!&#8221;,
+        &#8220;-bodyMale-&#8220;: &#8220;Check out this tie -name-!&#8221;
+    }
+}
+{% endcodeblock %}
 
 The final email for Alice would look like this:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;html&gt;</span>
-</span><span class='line'> <span class="nt">&lt;body&gt;</span>
-</span><span class='line'>   Hi Alice,<span class="nt">&lt;br&gt;</span>
-</span><span class='line'>      We thought you might be interested in this special offer.
-</span><span class='line'>      Check out this dress Alice!
-</span><span class='line'> <span class="nt">&lt;/body&gt;</span>
-</span><span class='line'><span class="nt">&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+{% codeblock lang:html %}
+<html>
+ <body>
+   Hi Alice,<br>
+      We thought you might be interested in this special offer. 
+      Check out this dress Alice!
+ </body>
+</html>
+{% endcodeblock %}
   
     <footer>
       

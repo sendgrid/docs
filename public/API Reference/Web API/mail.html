@@ -262,16 +262,16 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com</span></code></pre></td></tr></table></div></figure>
 
 	<h3>Call: Send to Multiple Recipients
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>https://sendgrid.com/api/mail.send.json?api_user<span class="o">=</span>youremail@domain.com&amp;api_key<span class="o">=</span>secureSecret&amp;to<span class="o">[]=</span>destination@example.com&amp;toname<span class="o">[]=</span>Destination&amp;to<span class="o">[]=</span>destination2@example.com&amp;toname<span class="o">[]=</span>Destination2&amp;subject<span class="o">=</span>Example%20Subject&amp;text<span class="o">=</span>testingtextbody&amp;from<span class="o">=</span>info@domain.com
 </span></code></pre></td></tr></table></div></figure>
 
 	<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -279,16 +279,15 @@
   </div>
   <div class="tab-pane" id="mail-xml">
         <h3>Call: Send to One Recipient</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;to=destination@example.com&amp;toname=Destination&amp;subject=Example%20Subject&amp;text=testingtextbody&amp;from=info@domain.com</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Example%20Subject&text=testingtextbody&from=info@domain.com</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Call: Send to Multiple Recipients
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>https://sendgrid.com/api/mail.send.xml?api_user<span class="o">=</span>youremail@domain.com&amp;api_key<span class="o">=</span>secureSecret&amp;to<span class="o">[]=</span>destination@example.com&amp;toname<span class="o">[]=</span>Destination&amp;to<span class="o">[]=</span>destination2@example.com&amp;toname<span class="o">[]=</span>Destination2&amp;subject<span class="o">=</span>Example%20Subject&amp;text<span class="o">=</span>testingtextbody&amp;from<span class="o">=</span>info@domain.com
 </span></code></pre></td></tr></table></div></figure>
 		<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
@@ -297,7 +296,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -310,7 +309,7 @@
 </span><span class='line'>      <span class="nt">&lt;error&gt;</span>...<span class="nt">&lt;/error&gt;</span>
 </span><span class='line'>      ...
 </span><span class='line'>    <span class="nt">&lt;/errors&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;/result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -322,15 +321,15 @@
 <h3>cURL Examples</h3>
 
 <p>Send to one email recipient</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -d <span class="s1">&#39;to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=sendgridUsername&amp;api_key=sendgridPassword&#39;</span> https://sendgrid.com/api/mail.send.json
 </span></code></pre></td></tr></table></div></figure>
 <p>Send to multiple email recipients</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -d <span class="s1">&#39;to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=sendgridUsername&amp;api_key=sendgridPassword&#39;</span> https://sendgrid.com/api/mail.send.json
 </span></code></pre></td></tr></table></div></figure>
 <p>Send a test attachment</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -F <span class="nv">to</span><span class="o">=</span>recipient@domain.com -F <span class="nv">toname</span><span class="o">=</span><span class="nb">test</span> -F <span class="nv">subject</span><span class="o">=</span><span class="s2">&quot;Example Subject&quot;</span> -F <span class="nv">text</span><span class="o">=</span><span class="s2">&quot;testing text body&quot;</span> --form-string <span class="nv">html</span><span class="o">=</span><span class="s2">&quot;&lt;strong&gt;testing html body&lt;/strong&gt;&quot;</span> -F <span class="nv">from</span><span class="o">=</span><span class="nb">test</span>@yourdomain.com -F <span class="nv">api_user</span><span class="o">=</span>sendgridUsername -F <span class="nv">api_key</span><span class="o">=</span>sendgridPassword -F files<span class="o">[</span>attachment.gz<span class="o">]=</span>@f.php.gz https://sendgrid.com/api/mail.send.json
 </span></code></pre></td></tr></table></div></figure>
 <hr/>
@@ -338,11 +337,10 @@
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>POST /api/mail.send.json HTTP/1.1
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>POST /api/mail.send.json HTTP/1.1</span></code></pre></td></tr></table></div></figure>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -417,7 +415,7 @@
 <span class='line-number'>73</span>
 <span class='line-number'>74</span>
 <span class='line-number'>75</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>Host: sendgrid.com
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host: sendgrid.com
 </span><span class='line'>
 </span><span class='line'>Accept: */*
 </span><span class='line'>
@@ -425,55 +423,55 @@
 </span><span class='line'>
 </span><span class='line'>Expect: 100-continue
 </span><span class='line'>
-</span><span class='line'>Content-Type: multipart/form-data; <span class="nv">boundary</span><span class="o">=</span>----------------------------400f182a9360
+</span><span class='line'>Content-Type: multipart/form-data; boundary=----------------------------400f182a9360
 </span><span class='line'>
 </span><span class='line'>HTTP/1.1 100 Continue
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;api_user&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="api_user"
 </span><span class='line'>
 </span><span class='line'>YOURUSERNAME
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;api_key&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="api_key"
 </span><span class='line'>
 </span><span class='line'>YOURKEY
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;to&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="to"
 </span><span class='line'>
 </span><span class='line'>someone@somewhere.com
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;subject&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="subject"
 </span><span class='line'>
-</span><span class='line'><span class="nb">test </span>of file sends
+</span><span class='line'>test of file sends
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;html&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="html"
 </span><span class='line'>
 </span><span class='line'>the HTML
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;text&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="text"
 </span><span class='line'>
 </span><span class='line'>the plain text
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;from&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="from"
 </span><span class='line'>
 </span><span class='line'>example@sendgrid.com
 </span><span class='line'>
 </span><span class='line'>------------------------------400f182a9360
 </span><span class='line'>
-</span><span class='line'>Content-Disposition: form-data; <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;files[myfile]&quot;</span>; <span class="nv">filename</span><span class="o">=</span><span class="s2">&quot;myfile&quot;</span>
+</span><span class='line'>Content-Disposition: form-data; name="files[myfile]"; filename="myfile"
 </span><span class='line'>
 </span><span class='line'>Content-Type: application/octet-stream
 </span><span class='line'>
@@ -491,12 +489,10 @@
 </span><span class='line'>
 </span><span class='line'>Transfer-Encoding: chunked
 </span><span class='line'>
-</span><span class='line'>Connection: keep-alive
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>Connection: keep-alive</span></code></pre></td></tr></table></div></figure>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">{</span><span class="s2">&quot;message&quot;</span>:<span class="s2">&quot;success&quot;</span><span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       

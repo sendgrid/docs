@@ -290,35 +290,34 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 
   </div>

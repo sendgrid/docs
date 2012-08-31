@@ -108,7 +108,7 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.get.json?api_user=youremail@domain.com&api_key=secureSecret</span></code></pre></td></tr></table></div></figure>
      <h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;username&quot;</span><span class="o">:</span><span class="s2">&quot;sampleuser@example.com&quot;</span><span class="p">,</span><span class="s2">&quot;email&quot;</span><span class="o">:</span><span class="s2">&quot;sampleemail@example.com&quot;</span><span class="p">,</span><span class="s2">&quot;active&quot;</span><span class="o">:</span><span class="s2">&quot;true&quot;</span><span class="p">,</span><span class="s2">&quot;first_name&quot;</span><span class="o">:</span><span class="s2">&quot;john&quot;</span><span class="p">,</span><span class="s2">&quot;last_name&quot;</span><span class="o">:</span><span class="s2">&quot;doe&quot;</span><span class="p">,</span><span class="s2">&quot;address&quot;</span><span class="o">:</span><span class="s2">&quot;555 any street&quot;</span><span class="p">,</span><span class="s2">&quot;city&quot;</span><span class="o">:</span><span class="s2">&quot;any city&quot;</span><span class="p">,</span><span class="s2">&quot;state&quot;</span><span class="o">:</span><span class="s2">&quot;CA&quot;</span><span class="p">,</span><span class="s2">&quot;zip&quot;</span><span class="o">:</span><span class="s2">&quot;91234&quot;</span><span class="p">,</span><span class="s2">&quot;country&quot;</span><span class="o">:</span><span class="s2">&quot;US&quot;</span><span class="p">,</span><span class="s2">&quot;phone&quot;</span><span class="o">:</span><span class="s2">&quot;555-555-5555&quot;</span><span class="p">,</span><span class="s2">&quot;website&quot;</span><span class="o">:</span><span class="s2">&quot;example.com&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -116,12 +116,11 @@
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=secureSecret</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -252,35 +251,33 @@
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>first_name=newFirstName<span class="err">&amp;</span>last_name=<span class="err">&amp;</span>newLastName
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;first_name=newFirstName&amp;last_name=&amp;newLastName</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -295,7 +292,7 @@
 </span><span class='line'>    <span class="nt">&lt;error&gt;</span>... error messages ...<span class="nt">&lt;/error&gt;</span>
 </span><span class='line'>    ...
 </span><span class='line'>  <span class="nt">&lt;/errors&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
@@ -347,36 +344,34 @@
 <div class="tab-content">
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>password=newPasword<span class="err">&amp;</span>confirm_password=newPassword
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword</span></code></pre></td></tr></table></div></figure>
 
 	<h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="reset-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;password=newPasword&amp;confirm_password=newPassword</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=secureSecret&password=newPasword&confirm_password=newPassword</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -384,15 +379,14 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;errors&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>
+</span><span class='line'>  &lt;message>error&lt;/message>
+</span><span class='line'>  &lt;errors>
 </span><span class='line'>    ...
-</span><span class='line'>    <span class="nt">&lt;error&gt;</span>... error messages ...<span class="nt">&lt;/error&gt;</span>
+</span><span class='line'>    &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>    ...
-</span><span class='line'>  <span class="nt">&lt;/errors&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>  &lt;/errors>
+</span><span class='line'>&lt;/result>></span></code></pre></td></tr></table></div></figure>
 
   </div>
 </div>
@@ -437,34 +431,32 @@
 <div class="tab-content">
   <div class="tab-pane active" id="setusername-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>username=yournewusername@domain.com
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
   </div>
   <div class="tab-pane" id="setusername-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&amp;api_key=secureSecret&amp;username=yournewusername@domain.com</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</H3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -472,15 +464,14 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;errors&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>
+</span><span class='line'>  &lt;message>error&lt;/message>
+</span><span class='line'>  &lt;errors>
 </span><span class='line'>    ...
-</span><span class='line'>    <span class="nt">&lt;error&gt;</span>... error messages ...<span class="nt">&lt;/error&gt;</span>
+</span><span class='line'>    &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>    ...
-</span><span class='line'>  <span class="nt">&lt;/errors&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>  &lt;/errors>
+</span><span class='line'>&lt;/result>></span></code></pre></td></tr></table></div></figure>
 
   </div>
 </div>
@@ -524,31 +515,29 @@
 <div class="tab-content">
   <div class="tab-pane active" id="setemail-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>email=yournewemail@domain.com
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="setemail-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&amp;api_key=secureSecret&amp;email=yournewemail@domain.com</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 <p>Response: Error</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

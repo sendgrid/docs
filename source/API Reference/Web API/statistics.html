@@ -73,11 +73,10 @@ parameters. If provided with no parameters, the current day's statistics are ret
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2
+{% endcodeblock %}
      <h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <stats>
   <day>
     <date>2009-06-20</date>
@@ -113,20 +112,19 @@ https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=se
     <blocked>8</blocked>
   </day>
 </stats>
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2
+{% endcodeblock %}
 
 	<h3>Response</h3>
-``` javascript
+{% codeblock lang:javascript %}
 [{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
-```
+{% endcodeblock %}
 
   </div>
 </div>
@@ -143,31 +141,29 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 <div class="tab-content">
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true
+{% endcodeblock %}
      <h3>Response</h3>
-``` javascript
+{% codeblock lang:javascript %}
 [{"category":"categoryA"},{"category":"categoryB"},{"category":"categoryC"}]
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
 
-```
-https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&list=true
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&list=true
+{% endcodeblock %}
 
 		<h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <categories>
   <category>categoryA</category>
   <category>categoryB</category>
   <category>categoryC</category>
 </categories>
-```
+{% endcodeblock %}
 
   </div>
 </div>
@@ -254,34 +250,30 @@ will be an empty result set.</h3>
 <div class="tab-content">
   <div class="tab-pane active" id="category-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+{% endcodeblock %}
 <h3>Call - Using an array of categories</h3>
 
-```
-https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
 
      <h3>Response</h3>
-``` javascript
+{% codeblock lang:javascript %}
 [{"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":7},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":4,"unique_opens":1,"blocked":6}]
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="category-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+{% endcodeblock %}
 
 		<h3>Call - Using an array of categories</h3>
-```
-https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-```
+{% codeblock %}https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
 
 		<h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <stats>
   <day>
     <date>2009-06-20</date>
@@ -302,7 +294,7 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
     <spamreports>7</spamreports>
   </day>
 </stats>
-```
+{% endcodeblock %}
 
   </div>
 </div>

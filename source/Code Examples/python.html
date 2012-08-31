@@ -13,7 +13,7 @@ Python has built in libraries to send and receive emails. This example uses:
 	<li><a href="http://docs.python.org/library/email.html#module-email">email</a></li>
 </ul>
 
-``` python
+{% codeblock lang:python %}
 #! /usr/bin/python
  
 import smtplib
@@ -71,4 +71,4 @@ s.login(username, password)
 s.sendmail(fromEmail, toEmail, msg.as_string())
  
 s.quit()
-```
+{% endcodeblock %}

@@ -113,40 +113,39 @@
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
-  &#8220;`
-    <result><message>error</message><errors>
-        &#8230;
-        <error>
-          &#8230; 
-    error messages 
-    &#8230;
-        </error>
-        &#8230;
-      </errors></result
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
-</span><span class='line'>  ```
-</span><span class='line'>https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
   <h4>Return - Success</h4>
-  &#8220;`
-&#8221;message&#8221;:&#8221;success&#8221;
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
+</span><span class='line'>        ...
+</span><span class='line'>        &lt;error>
+</span><span class='line'>          ... 
+</span><span class='line'>    error messages 
+</span><span class='line'>    ...
+</span><span class='line'>        &lt;/error>
+</span><span class='line'>        ...
+</span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
+  <h3>JSON API Request</h3>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

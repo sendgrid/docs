@@ -28,21 +28,17 @@ navigation:
     </td>
   </tr>
 </table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+{% endcodeblock %}
 <h4>Return</h4>
-```
-  <whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
-```
+{% codeblock %}  <whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+{% endcodeblock %}
 <h4>Return</h4>
-```
-{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}
-```
+{% codeblock %}{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}
+{% endcodeblock %}
 <hr/><a name="append"></a>
 <h2>Append</h2>
 <table class="table table-bordered table-striped">
@@ -77,30 +73,24 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     </td>
   </tr>
 </table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}

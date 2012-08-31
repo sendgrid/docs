@@ -106,13 +106,11 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
      <h3>Response</h3>
-```
-email1@domain.com
+{% codeblock %}email1@domain.com
 5.1.1
 host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
 2009-06-10 12:40:30
@@ -121,19 +119,17 @@ email2@domain2.com
 5.1.1
 host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
 2009-08-01 10:16:30
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
 		<h3>Response</h3>
-```
-email1@domain.com
+{% codeblock %}email1@domain.com
 5.1.1
 host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
 2009-06-10 12:40:30
@@ -142,7 +138,7 @@ email2@domain2.com
 5.1.1
 host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
 2009-08-01 10:16:30
-```
+{% endcodeblock %}
   </div>
 </div>
 
@@ -186,37 +182,35 @@ host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>Email does not exist</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>

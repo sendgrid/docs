@@ -9,9 +9,9 @@ navigation:
 
 <p>These values can also be used in more complex scenarios, for example instead of a first name you could also use a customerID and replace that value in a custom URL to take that customer to a page specific to them: </p>
 
-``` html
+{% codeblock lang:html %}
 <a href="sendgrid.com/customerOffer?id=-customerID-">Claim your offer!</a>
-```
+{% endcodeblock %}
 
 <p>where an ID specific to the customer is appended into the link in place of -customerID-. </p>
 <p>You may also use substitution tags in the subject lines of your emails.</p>
@@ -23,7 +23,7 @@ navigation:
 <h3>Substitution Tag Example</h3>
 
 Email HTML content:
-``` html
+{% codeblock lang:html %}
 <html>
   <head></head>
   <body>
@@ -40,11 +40,11 @@ Email HTML content:
     </p>
   </body>
 </html>
-```
+{% endcodeblock %}
 
 <p>An accompanying SMTP API JSON header might look something like this:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 {
     "to": [
         "john.doe@gmail.com",
@@ -73,10 +73,10 @@ Email HTML content:
         ]
     }
 }
-```
+{% endcodeblock %}
 
 <p>The final email for John would look like this:</p>
-``` html
+{% codeblock lang:html %}
 <html>
   <head></head>
   <body>
@@ -93,4 +93,4 @@ Email HTML content:
     </p>
   </body>
 </html>
-```
+{% endcodeblock %}

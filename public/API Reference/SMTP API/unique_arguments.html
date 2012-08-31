@@ -97,20 +97,20 @@
 
 <p>These arguments can be added using a JSON string like this:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;unique_args&quot;</span><span class="o">:</span> <span class="p">{</span><span class="s2">&quot;customerAccountNumber&quot;</span><span class="o">:</span> <span class="s2">&quot;55555&quot;</span><span class="p">,</span> <span class="s2">&quot;activationAttempt&quot;</span><span class="o">:</span> <span class="s2">&quot;1&quot;</span><span class="p">}}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>These arguments can then be seen in posts from the SendGrid Event API. The contents of one of these posts would look something like this:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="n">email</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">ben</span><span class="vi">@sendgrid</span><span class="o">.</span><span class="n">com</span>
-</span><span class='line'><span class="o">[</span><span class="n">test_param</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">test_value</span>
-</span><span class='line'><span class="o">[</span><span class="mi">2</span><span class="n">nd_param</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="n">nd_value</span>
-</span><span class='line'><span class="o">[</span><span class="n">event</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">processed</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'>    <span class="o">[</span><span class="n">email</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">ben</span><span class="vi">@sendgrid</span><span class="o">.</span><span class="n">com</span>
+</span><span class='line'>    <span class="o">[</span><span class="n">test_param</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">test_value</span>
+</span><span class='line'>    <span class="o">[</span><span class="mi">2</span><span class="n">nd_param</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="mi">2</span><span class="n">nd_value</span>
+</span><span class='line'>    <span class="o">[</span><span class="n">event</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="n">processed</span>
 </span></code></pre></td></tr></table></div></figure>
 
 <p>Unique Arguments will also be shown in the Email Activity tab of your account.</p>

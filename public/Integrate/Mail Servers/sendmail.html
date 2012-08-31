@@ -96,7 +96,7 @@
   <p><span class="label label-warning">Warning</span> Sendmail requires libsasl in order to properly send authentication requests to SendGrid servers. The saslauthd server daemon is not required unless you plan to receive authentication requests to the same server. <a href="http://www.sendmail.com/sm/open_source/tips/compiling_sendmail/#SASL">For more information on configuring sendmail for SASL support, check the official documentation</a>.</p>
 
 Set the authorization credentials in <strong>/etc/mail/access</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>AuthInfo:smtp.sendgrid.net <span class="s2">&quot;U:yourUserName&quot;</span> <span class="s2">&quot;P:yourPassword&quot;</span> <span class="s2">&quot;M:PLAIN&quot;</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -104,7 +104,7 @@ Define the Smart Host in <strong>/etc/mail/sendmail.mc</strong>
 You should add these lines just after the commented 
 &#8220;#dnl define(&#8216;SMART_HOST&#8217;, &#8216;smtp.your.provider&#8217;)dnl&#8221; line in the file
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -116,7 +116,7 @@ You should add these lines just after the commented
 
 Update sendmail.cf and access.db files
 (You will need to run these commands as &#8216;su&#8217; or &#8216;root&#8217;)
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span><span class="nb">cd</span> /etc/mail
@@ -125,12 +125,12 @@ Update sendmail.cf and access.db files
 </span></code></pre></td></tr></table></div></figure>
 
 On older distros, you can run restart sendmail like so:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/sendmail restart
 </span></code></pre></td></tr></table></div></figure>
 
 If, however, you&#8217;re using a newer version, do the following to restart:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>service sendmail restart
 </span></code></pre></td></tr></table></div></figure>
   

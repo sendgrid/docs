@@ -102,7 +102,7 @@ Versions of Exim prior to the current major release are considered obsolete. If 
 The following configuration file, which can be found at <strong>/etc/exim4/update-exim4.conf.conf</strong>, was pulled from Ubuntu Server 10.4 and is for example purposes only:
 </p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -132,25 +132,25 @@ Enable TLS support in <strong>/etc/exim4/exim4.conf.localmacros</strong>.
 <br/>
 <span class="label label-info">Info</span> If this file does not exist, you will need to create it.:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">MAIN_TLS_ENABLE</span> <span class="o">=</span> 1
 </span></code></pre></td></tr></table></div></figure>
 Enter credentials that will allow Exim to access SendGrid in <strong>/etc/exim4/passwd.client</strong>:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>*:sendgridusername:sendgridpassword
 </span></code></pre></td></tr></table></div></figure>
 
 Once you have completed and saved all changes to Exim&#8217;s configuration files, you will need to restart it to activate those changes: 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/exim4 restart
 </span></code></pre></td></tr></table></div></figure>
 
 <h2>cPanel</h2>
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to <strong>Main > Service Configuration > Exim Configuration Editor</strong>, click on the Advanced Editor button, and enter the following:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -166,7 +166,7 @@ If you are using cPanel with Exim and want to relay your email through SendGrid,
 <span class="label label-info">Info</span> Only include &#8220;begin authenticators&#8221; if it&#8217;s not already in the configuration.
 <br/>
 Add a route in the <strong>Router Configuration</strong> Box:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -183,7 +183,7 @@ Add a route in the <strong>Router Configuration</strong> Box:
 </span></code></pre></td></tr></table></div></figure>
 
 Add a transport to the <strong>Transport Configuration</strong> Box:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -197,7 +197,7 @@ Add a transport to the <strong>Transport Configuration</strong> Box:
 
 Once you have completed and saved all changes to Exim&#8217;s configuration files, you will need to restart it to activate those changes: 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>/etc/init.d/exim4 restart
 </span></code></pre></td></tr></table></div></figure>
   
