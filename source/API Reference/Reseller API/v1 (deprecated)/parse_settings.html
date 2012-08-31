@@ -4,7 +4,7 @@ title: Parse Settings
 navigation:
    show: true
 ---
-<hr/><a name="getCurrentSettings"></a>
+<a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -53,7 +53,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=se
 {% codeblock %}  <parse></parse
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=customer@example.co
@@ -133,7 +133,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=customer@example.co
@@ -213,7 +213,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=customer@example.co
@@ -288,7 +288,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=customer@example.co

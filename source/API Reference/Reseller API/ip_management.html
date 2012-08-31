@@ -4,7 +4,7 @@ title: IP Management
 navigation:
    show: true
 ---
-<hr/><a name="all"></a>
+<a name="all"></a>
 <h2>All</h2>
 <p>View all IPs under your account.</p>
 <table class="table table-bordered table-striped">
@@ -35,23 +35,23 @@ navigation:
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=al
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&api_key=secureSecret&task=all
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=al
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecret&task=all
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -60,6 +60,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -87,23 +88,23 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
     <td>Filter your search results.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#free-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#free-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="free-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=fre
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&api_key=secureSecret&task=free
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="free-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=fre
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecret&task=free
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -112,6 +113,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -139,23 +141,23 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
     <td>Filter your search results.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#taken-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#taken-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="taken-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=take
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&api_key=secureSecret&task=taken
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="taken-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=take
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecret&task=taken
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -164,6 +166,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -193,23 +196,23 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
     <td>Filter your search results.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#available-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#available-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="available-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=availabl
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&api_key=secureSecret&task=available
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
+{% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="available-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=availabl
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecret&task=available
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -218,6 +221,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -264,23 +268,23 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#usage-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#usage-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="usage-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co
+https://sendgrid.com/apiv2/reseller.ip.xml?api_user=username&api_key=secureSecret&task=usage&user=example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
+{% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="usage-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secureSecret&amp;task=usage&amp;user=example.co
+https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecret&task=usage&user=example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -290,3 +294,4 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&amp;api_key=secure
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

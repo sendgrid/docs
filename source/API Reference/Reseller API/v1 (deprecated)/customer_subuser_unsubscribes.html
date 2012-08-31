@@ -4,7 +4,7 @@ title: Customer Subuser Unsubscribes
 navigation:
    show: true
 ---
-<hr/><a name="retrieveUnsubscribes"></a>
+<a name="retrieveUnsubscribes"></a>
 <h2>Retrieve Unsubscribes</h2>
 Note that you can use
 <em>either</em>
@@ -56,7 +56,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
@@ -119,7 +119,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
@@ -185,7 +185,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 {% codeblock %}  <result><message>Email already exists</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
