@@ -4,7 +4,7 @@ title: Authenticate a Subuser
 navigation:
    show: true
 ---
-<div>
+
   <p><span>Authenticate a subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.</span></p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -24,14 +24,28 @@ navigation:
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#auth-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#auth-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+	  <div class="tab-pane active" id="auth-jason">
+	     <h3>Call</h3>
+	  {% codeblock %}
+	https://sendgrid.com/apiv2/customer.auth.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor
+	{% endcodeblock %}
+	  <h3>Response: Success</h3>
+	  {% codeblock %}
+	"message":"success"
+	{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	  {% codeblock %}
+	"message":"error","errors":[..."error messages"...]
+	{% endcodeblock %}
+	</div>
+  <div class="tab-pane" id="auth-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
+https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
@@ -48,17 +62,5 @@ https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&amp;api_key=secur
       </errors></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpasswor
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-  {% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-  {% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+
 </div>
