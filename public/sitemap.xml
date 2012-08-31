@@ -120,7 +120,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Newsletter API/recipients.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-31T11:02:25-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Newsletter API/schedule.html</loc>
@@ -132,69 +132,65 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/account_overview.html</loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T10:55:10-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/apps.html</loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:24:49-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/authenticate_a_customer.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:00:07-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/authenticate_a_customer_subuser.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:00:37-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/automatic_login.html</loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://docs.sendgrid.com/API Reference/Reseller API/billing.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-31T11:01:30-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/billing_retrieving_as_you_go_usage.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:04:02-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/billing_retrieving_end_users_invoices_usage.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:04:48-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/customer_account_limits.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:25:50-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/customer_bounces.html</loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:13:29-06:00</lastmod>
     </url>
     <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller
             API/customer_invalid_emails.html
         </loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:16:30-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/customer_management.html</loc>
-        <lastmod>2012-08-31T10:08:41-06:00</lastmod>
+        <lastmod>2012-08-31T11:23:07-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/customer_spam_reports.html</loc>
