@@ -124,29 +124,23 @@ Note: The
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;filters&gt;&lt;filter&gt;&lt;name&gt;twitter&lt;/name&gt;&lt;title&gt;Twitter&lt;/title&gt;
-</span><span class='line'>        &lt;description&gt;This plugin allows you to send an email message to twitter&lt;/description&gt;&lt;activated&gt;0&lt;/activated&gt;&lt;/filter&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;filters>&lt;filter>&lt;name>twitter&lt;/name>&lt;title>Twitter&lt;/title>
+</span><span class='line'>        &lt;description>This plugin allows you to send an email message to twitter&lt;/description>&lt;activated>0&lt;/activated>&lt;/filter>
 </span><span class='line'>      ...
 </span><span class='line'>    &lt;/filters</span></code></pre></td></tr></table></div></figure>
   <h3>JSON API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... </span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... </span></code></pre></td></tr></table></div></figure>
   <hr/><a name="activateApp"></a>
   <h2>Activate App</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -172,23 +166,17 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secu
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
   <h3>JSON API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="deactivateApp"></a>
   <h2>Deactivate App</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -214,109 +202,81 @@ https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secu
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
   <h3>JSON API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="customizeApp"></a>
   <h2>Customize App</h2>
   These API calls require that settings are passed using POST.
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;filter&gt;&lt;field_name&gt;field_value&lt;/field_name&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;filter>&lt;field_name>field_value&lt;/field_name>
 </span><span class='line'>      ...
 </span><span class='line'>    &lt;/filter</span></code></pre></td></tr></table></div></figure>
   <h4>Return - Error</h4>
-  &#8220;`
-    <result><message>error</message><message>&#8230; error messages &#8230;</message></result
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Empty&lt;/h4&gt;
-</span><span class='line'>  This is returned if that filter has no settings or is not enabled.
-</span><span class='line'>  ```
-</span><span class='line'>filter&gt;&lt;/filter</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;message>... error messages ...&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Empty</h4>
+  This is returned if that filter has no settings or is not enabled.
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;/filter</span></code></pre></td></tr></table></div></figure>
   <h3>JSON API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Success&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>"message":"success","settings":{"field_name":"field_value”}</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Empty</h4>
-  This is returned if that filter has no settings or is not enabled.
-  &#8220;`
-&#8221;settings&#8221;:null}
- 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;hr/&gt;&lt;a name="getCurrentSettings"&gt;&lt;/a&gt;
-</span><span class='line'>  &lt;h2&gt;Get Current Settings&lt;/h2&gt;
-</span><span class='line'>  &lt;h3&gt;XML API Request&lt;/h3&gt;
-</span><span class='line'>  ```
-</span><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h4>Return - Success</h4>
-  &#8220;`
-    <filter><field_name>field_value</field_name>
-      &#8230;
-    </filter
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;message&gt;... error messages ...&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success","settings":{"field_name":"field_value”}</span></code></pre></td></tr></table></div></figure>
   <h4>Return - Empty</h4>
   This is returned if that filter has no settings or is not enabled.
-  &#8220;`
-filter></filter
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h3&gt;JSON API Request&lt;/h3&gt;
-</span><span class='line'>  ```
-</span><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"settings":null}
+</span><span class='line'> </span></code></pre></td></tr></table></div></figure>
+  <hr/><a name="getCurrentSettings"></a>
+  <h2>Get Current Settings</h2>
+  <h3>XML API Request</h3>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h4>Return - Success</h4>
-  &#8220;`
-&#8221;message&#8221;:&#8221;success&#8221;,&#8221;settings&#8221;:{&#8220;field_name&#8221;:&#8221;field_value”}
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return - Error&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;filter>&lt;field_name>field_value&lt;/field_name>
+</span><span class='line'>      ...
+</span><span class='line'>    &lt;/filter</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;message>... error messages ...&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
   <h4>Return - Empty</h4>
   This is returned if that filter has no settings or is not enabled.
-  &#8220;`
-&#8221;settings&#8221;:null
-&#8220;`
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;/filter</span></code></pre></td></tr></table></div></figure>
+  <h3>JSON API Request</h3>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Success</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success","settings":{"field_name":"field_value”}</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Error</h4>
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+  <h4>Return - Empty</h4>
+  This is returned if that filter has no settings or is not enabled.
+  <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"settings":null</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

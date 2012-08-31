@@ -111,34 +111,30 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
     <h3>Response</h3>
-```
-email1@domain.com
+{% codeblock %}email1@domain.com
 2009-06-10 12:40:30
 
 email2@domain2.com
 2009-06-10 12:40:30
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
 		<h3>Response</h3>
-```
-email1@domain.com
+{% codeblock %}email1@domain.com
 2009-06-10 12:40:30
 
 email2@domain2.com
 2009-06-10 12:40:30
-```
+{% endcodeblock %}
 
   </div>
 </div>
@@ -200,41 +196,38 @@ email2@domain2.com
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
 
-```
-<result>
+{% codeblock %}<result>
   success
 <result>
-```
+{% endcodeblock %}
 
 <h3>Response: Error</h3>
 
-</result>
-``` xml
+</result>>
+{% codeblock lang:xml %}
 <result>
   Email does not exist
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>
@@ -269,38 +262,36 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&a
 <div class="tab-content">
   <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>Email does not exist</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>

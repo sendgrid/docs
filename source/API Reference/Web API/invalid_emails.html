@@ -112,13 +112,12 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
      <h3>Response</h3>
 
-``` javascript
+{% codeblock lang:javascript %}
 {
     invalidemails:{
         invalidemail:[
@@ -137,16 +136,15 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
         ]
     }
 }
-```
+{% endcodeblock %}
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
-```
+{% codeblock %}https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+{% endcodeblock %}
 
 		<h3>Response</h3>
-``` xml
+{% codeblock lang:xml %}
 <invalidemails>
   <invalidemail>
     <email>email1@domain.com</email>
@@ -161,7 +159,7 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
     <created>2009-08-01 10:16:30</created>
   </invalidemail>
 </invalidemails>
-```
+{% endcodeblock %}
 
   </div>
 </div>
@@ -197,38 +195,35 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
 <div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/invalidemails.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/invalidemails.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
 
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/invalidemails.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
-```
+{% codeblock %}https://sendgrid.com/api/invalidemails.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+{% endcodeblock %}
 		<h3>Response: Success</h3>
-```
-<result>
+{% codeblock %}<result>
   success
 <result>
-```
+{% endcodeblock %}
 
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   Email does not exist
-</result>
-```
+</result>>
+{% endcodeblock %}
   </div>
 </div>

@@ -7,7 +7,7 @@ navigation:
 
 <p>This example shows how to send email plain text and HTML email using Ruby. The gem <a href="https://github.com/mikel/mail">Mail</a> is required.</p>
 
-``` ruby
+{% codeblock lang:ruby %}
 require 'mail'
 Mail.defaults do
   delivery_method :smtp, { :address   => "smtp.sendgrid.net",
@@ -31,9 +31,9 @@ mail = Mail.deliver do
     body '<b>Hello world in HTML</b>'
   end
 end
-```
+{% endcodeblock %}
 
 To install the <a href="https://github.com/mikel/mail">Mail</a> gem please note that you need the OpenSSL library installed, then run the following:
-``` bash
+{% codeblock lang:bash %}
 gem install mail
-```
+{% endcodeblock %}

@@ -9,17 +9,17 @@ navigation:
 
 <p>These arguments can be added using a JSON string like this:</p>
 
-``` javascript
+{% codeblock lang:javascript %}
 {"unique_args": {"customerAccountNumber": "55555", "activationAttempt": "1"}}
-```
+{% endcodeblock %}
 
 <p>These arguments can then be seen in posts from the SendGrid Event API. The contents of one of these posts would look something like this:</p>
 
-``` ruby
+{% codeblock lang:ruby %}
     [email] => ben@sendgrid.com
     [test_param] => test_value
     [2nd_param] => 2nd_value
     [event] => processed
-```
+{% endcodeblock %}
 
 <p>Unique Arguments will also be shown in the Email Activity tab of your account.</p>

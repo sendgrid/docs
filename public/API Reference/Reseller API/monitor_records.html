@@ -147,18 +147,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000</span></code></pre></td></tr></table></div></figure>
@@ -225,18 +225,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5</span></code></pre></td></tr></table></div></figure>
@@ -285,18 +285,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=delete&amp;name=recordToDelet</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=delete&amp;name=recordToDelet</span></code></pre></td></tr></table></div></figure>
@@ -337,7 +337,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=lis</span></code></pre></td></tr></table></div></figure>
 <h4>Return</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;monitors&gt;&lt;monitor&gt;&lt;name&gt;sampleNameA&lt;/name&gt;&lt;email&gt;example@example.com&lt;/email&gt;&lt;frequency&gt;1000&lt;/frequency&gt;&lt;users&gt;&lt;/users&gt;&lt;/monitor&gt;&lt;monitor&gt;&lt;name&gt;sampleNameB&lt;/name&gt;&lt;email&gt;example@example.com&lt;/email&gt;&lt;frequency&gt;10000&lt;/frequency&gt;&lt;users&gt;&lt;user&gt;user1@example.com&lt;/user&gt;&lt;user&gt;user2@example.com&lt;/user&gt;&lt;/users&gt;&lt;/monitor&gt;&lt;/monitors</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;monitors>&lt;monitor>&lt;name>sampleNameA&lt;/name>&lt;email>example@example.com&lt;/email>&lt;frequency>1000&lt;/frequency>&lt;users>&lt;/users>&lt;/monitor>&lt;monitor>&lt;name>sampleNameB&lt;/name>&lt;email>example@example.com&lt;/email>&lt;frequency>10000&lt;/frequency>&lt;users>&lt;user>user1@example.com&lt;/user>&lt;user>user2@example.com&lt;/user>&lt;/users>&lt;/monitor>&lt;/monitors</span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=lis</span></code></pre></td></tr></table></div></figure>
@@ -389,18 +389,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
@@ -449,18 +449,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=detach&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=detach&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>

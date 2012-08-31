@@ -11,8 +11,7 @@ navigation:
 
 <p>In general, you will need to add the following to <strong>/var/qmail/control/smtproutes</strong>, but you should verify the actual path and file you need to update.</p>
 
-```
-:smtp.sendgrid.net:587 username password
-```
+{% codeblock %}:smtp.sendgrid.net:587 username password
+{% endcodeblock %}
 
 As with all configuration changes, make sure to restart qmail.

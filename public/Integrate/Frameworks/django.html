@@ -99,7 +99,7 @@ There is more detailed information about <a href="https://docs.djangoproject.com
 
 <p>
 First start by adding the following to <strong>settings.py:</strong>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -111,7 +111,7 @@ First start by adding the following to <strong>settings.py:</strong>
 </span><span class='line'><span class="n">EMAIL_USE_TLS</span> <span class="o">=</span> <span class="bp">True</span>
 </span></code></pre></td></tr></table></div></figure>
 Then to send email you can do the following:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">from</span> <span class="nn">django.core.mail</span> <span class="kn">import</span> <span class="n">send_mail</span>
 </span><span class='line'><span class="n">send_mail</span><span class="p">(</span><span class="s">&#39;Subject here&#39;</span><span class="p">,</span> <span class="s">&#39;Here is the message.&#39;</span><span class="p">,</span> <span class="s">&#39;from@example.com&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;to@example.com&#39;</span><span class="p">],</span> <span class="n">fail_silently</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>

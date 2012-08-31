@@ -140,7 +140,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
 <h4>Return</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>invalidemails&gt;&lt;invalidemail&gt;&lt;email&gt;isaac@hotmail.comm&lt;/email&gt;&lt;reason&gt;Mail domain mentioned in email address is unknown&lt;/reason&gt;&lt;created&gt;2009-06-10 12:40:30&lt;/created&gt;&lt;/invalidemail&gt;&lt;invalidemail&gt;&lt;email&gt;isaac@hotmail&lt;/email&gt;&lt;reason&gt;Bad Syntax&lt;/reason&gt;&lt;created&gt;2009-06-10 12:40:30&lt;/created&gt;&lt;/invalidemail&gt;&lt;invalidemail&gt;&lt;email&gt;isaac@example.com&lt;/email&gt;&lt;reason&gt;Known bad domain&lt;/reason&gt;&lt;created&gt;2009-06-10 12:40:30&lt;/created&gt;&lt;/invalidemail&gt;&lt;/invalidemails</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>invalidemails>&lt;invalidemail>&lt;email>isaac@hotmail.comm&lt;/email>&lt;reason>Mail domain mentioned in email address is unknown&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@hotmail&lt;/email>&lt;reason>Bad Syntax&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@example.com&lt;/email>&lt;reason>Known bad domain&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;/invalidemails</span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
@@ -194,10 +194,10 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result&gt;&lt;message&gt;Email does not exist&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>Email does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=customer@example.com&amp;task=delete&amp;email=invalidemail@example.com</span></code></pre></td></tr></table></div></figure>

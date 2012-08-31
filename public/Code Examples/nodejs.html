@@ -100,7 +100,7 @@
 
 <p>Once you have the module installed, it can be as simple as the following code snippet, modified to your specifics, of course:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -133,7 +133,7 @@
 
 <p>To get started create an Email object:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">Email</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;sendgrid&#39;</span><span class="p">).</span><span class="nx">Email</span><span class="p">;</span>
 </span><span class='line'><span class="kd">var</span> <span class="nx">email</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Email</span><span class="p">(</span><span class="nx">optionalParams</span><span class="p">);</span>
@@ -143,7 +143,7 @@
 
 <p>Here is how the parameters are structured:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -191,7 +191,7 @@
 
 <p>And here is a sample for using it:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -208,7 +208,7 @@
 <h3>Setting data</h3>
 <p>Here is an example of all of the functions available on the email object. The comments to the right show the current state of the variables as the functions are called.</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -224,7 +224,7 @@
 
 <p>The following examples update the &#8216;x-smtpapi&#8217; headers:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -264,7 +264,7 @@
 
 <p>Setting unique arguments allows you to get more mojo out of your statistics:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">setUniqueArgs</span><span class="p">({</span><span class="nx">cow</span><span class="o">:</span> <span class="s1">&#39;chicken&#39;</span><span class="p">});</span> <span class="c1">// unique_args = {cow: &#39;chicken&#39;}</span>
@@ -274,7 +274,7 @@
 
 <p>You can set categories with the following:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">setCategory</span><span class="p">(</span><span class="s1">&#39;tactics&#39;</span><span class="p">);</span>        <span class="c1">// category = [&#39;tactics&#39;]</span>
@@ -284,7 +284,7 @@
 
 <p>You can set a filter using an object literal:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -304,7 +304,7 @@
 
 <p>Alternatively, you can add filter settings one at a time.
 </p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">addFilterSetting</span><span class="p">(</span><span class="s1">&#39;footer&#39;</span><span class="p">,</span> <span class="s1">&#39;enable&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
 </span><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">addFilterSetting</span><span class="p">(</span><span class="s1">&#39;footer&#39;</span><span class="p">,</span> <span class="s1">&#39;text/html&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;strong&gt;boo&lt;/strong&gt;&#39;</span><span class="p">);</span>
@@ -312,7 +312,7 @@
 
 <p>You can add files as attachments directly from content stored in memory, like so:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -324,7 +324,7 @@
 
 <p>Alternately, you can include files from a remote URL and will attempt to determine the file type based on the filename:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -336,7 +336,7 @@
 
 <p>Finally, you can add file from a path on the server&#8217;s local filesystem, also attempting to determine the filetype via the filename:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">email</span><span class="p">.</span><span class="nx">addFile</span><span class="p">({</span>
@@ -351,14 +351,12 @@
 
 <p>When you&#8217;re ready, you can run your tests with this command:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">make</span> <span class="nx">test</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make test</span></code></pre></td></tr></table></div></figure>
 
 <p>You can run individual tests:</p>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">mocha</span> <span class="o">/</span><span class="nx">path</span><span class="o">/</span><span class="nx">to</span><span class="o">/</span><span class="nx">test</span><span class="p">.</span><span class="nx">test</span><span class="p">.</span><span class="nx">js</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>mocha /path/to/test.test.js</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       

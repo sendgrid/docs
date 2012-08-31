@@ -8,13 +8,13 @@ navigation:
 <p>To use SendGrid in your C# project, you can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.
 </p>
 
-``` 
+{% codeblock %}
 PM> Install-Package Sendgrid 
-```
+{% endcodeblock %}
 <p>
 Once you have the SendGrid libraries properly referenced in your project, you can include calls to them in your code. This first example shows the basic structure of the code required to call the SendGrid libraries and send email, as can be found in the program.cs file in the examples directory:</p>
 
-``` csharp
+{% codeblock lang:csharp %}
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,11 +52,11 @@ namespace Example
         }
     }
 }
-```
+{% endcodeblock %}
 
 <p>In order to send a simple HTML email using the SendGrid SMTP API, use this code sample:
 </p>
-``` csharp
+{% codeblock lang:csharp %}
 public void SimpleHTMLEmail()
         {
             //create a new message object
@@ -83,23 +83,23 @@ public void SimpleHTMLEmail()
             //send the mail
             transportInstance.Deliver(message);
         }
-```
+{% endcodeblock %}
 
 <p><span class="label label-info">Info</span> There are two calls you can make to the AddTo function. One injects addresses into the standard MIME TO: field, and that's done (as in the above code sample) like so:</p>
 
-``` csharp
+{% codeblock lang:csharp %}
 message.AddTo(sampleListName(){"foo@bar.com"});
-```
+{% endcodeblock %}
 
 <p>Using the X-SMTPAPI header makes this process a little cleaner and causes the message to appear as if it were sent directly to the recipient, as opposed to lots and lots of recipients. In order to inject addresses into into the X-SMTPAPI header, make the call like so:</p>
 
-``` csharp
+{% codeblock lang:csharp %}
 message.Header.AddTo(sampleListName(){"foo@bar.com"});
-```
+{% endcodeblock %}
 
 <p>If you would prefer to send a simple HTML message using the SendGrid Web API, use this code:
 </p>
-``` csharp
+{% codeblock lang:csharp %}
 public void SimpleHTMLEmail()
         {
             //create a new message object
@@ -126,11 +126,11 @@ public void SimpleHTMLEmail()
             //send the mail
             transportInstance.Deliver(message);
         }
-```
+{% endcodeblock %}
 
 <p>The following is a code sample that allows you to add substitution values to your messages. This is a powerful feature that makes it significantly easier to generate personalized email messages:</p>
 
-``` csharp
+{% codeblock lang:csharp %}
 public void AddSubstitutionValues()
         {
             //create a new message object
@@ -168,4 +168,4 @@ public void AddSubstitutionValues()
             //send the mail
             transportInstance.Deliver(message);
         }
-```
+{% endcodeblock %}

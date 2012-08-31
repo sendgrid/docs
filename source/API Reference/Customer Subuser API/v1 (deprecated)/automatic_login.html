@@ -30,25 +30,20 @@ navigation:
       </tr>
     </tbody></table>
   <h3>XML API Request</h3>
-  ```
-https://sendgrid.com/api/user.geturl.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/api/user.geturl.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-    <params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
-```
+  {% codeblock %}    <params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
+{% endcodeblock %}
   <h3>JSON API Request</h3>
-  ```
-https://sendgrid.com/api/user.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
-```
+  {% codeblock %}https://sendgrid.com/api/user.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+{% endcodeblock %}
   <h4>Return</h4>
-  ```
-"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
-```
+  {% codeblock %}"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
+{% endcodeblock %}
   <hr/><a name="iFrameUsage"></a>
   <h2>iFrame Usage</h2>
   Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
-  ```
-iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
-```
+  {% codeblock %}iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
+{% endcodeblock %}
 </div>

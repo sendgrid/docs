@@ -226,7 +226,7 @@
 
 <p>The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="n">charsets</span><span class="o">]</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s2">&quot;to&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;cc&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;subject&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;from&quot;</span><span class="ss">:&quot;UTF-8&quot;</span><span class="p">,</span><span class="s2">&quot;text&quot;</span><span class="ss">:&quot;iso-8859-1&quot;</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -238,17 +238,15 @@
 
 <p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Hostname</span><span class="p">:</span> <span class="n">email</span><span class="o">.</span><span class="n">sendgrid</span><span class="o">.</span><span class="n">biz</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Hostname: email.sendgrid.biz</span></code></pre></td></tr></table></div></figure>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">URL</span><span class="p">:</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">sendgrid</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">email</span><span class="o">.</span><span class="n">php</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>URL: http://sendgrid.com/email.php</span></code></pre></td></tr></table></div></figure>
 
 To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at http://sendgrid.com/email.php:
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -275,7 +273,7 @@ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created 
 </span></code></pre></td></tr></table></div></figure>
 
 <span class="label label-warning">Warning</span> <blockquote>If you are using a hosting service, you don&#8217;t have direct access to the server&#8217;s file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above..
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
@@ -283,7 +281,7 @@ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created 
 </span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
 should be changed to&#8230;
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
@@ -294,7 +292,7 @@ should be changed to&#8230;
 
 After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -439,7 +437,7 @@ After receiving the email, the file /tmp/parse.log will contain the following (n
 </span></code></pre></td></tr></table></div></figure>
 
 If you have an attachment, there will be a 2nd array, as follows:
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -450,18 +448,17 @@ If you have an attachment, there will be a 2nd array, as follows:
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nb">Array</span>
-</span><span class='line'><span class="p">(</span>
-</span><span class='line'>    <span class="p">[</span><span class="nx">attachment1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nb">Array</span>
-</span><span class='line'>        <span class="p">(</span>
-</span><span class='line'>            <span class="p">[</span><span class="nx">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">Upload</span><span class="p">.</span><span class="nx">csv</span>
-</span><span class='line'>            <span class="p">[</span><span class="nx">type</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="nx">text</span><span class="o">/</span><span class="nx">csv</span>
-</span><span class='line'>            <span class="p">[</span><span class="nx">tmp_name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="err">/tmp/phpo34iHI</span>
-</span><span class='line'>            <span class="p">[</span><span class="nx">error</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
-</span><span class='line'>            <span class="p">[</span><span class="nx">size</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">76</span>
-</span><span class='line'>        <span class="p">)</span>
-</span><span class='line'><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Array
+</span><span class='line'>(
+</span><span class='line'>    [attachment1] => Array
+</span><span class='line'>        (
+</span><span class='line'>            [name] => Upload.csv
+</span><span class='line'>            [type] => text/csv
+</span><span class='line'>            [tmp_name] => /tmp/phpo34iHI
+</span><span class='line'>            [error] => 0
+</span><span class='line'>            [size] => 76
+</span><span class='line'>        )
+</span><span class='line'>)</span></code></pre></td></tr></table></div></figure>
   
     <footer>
       

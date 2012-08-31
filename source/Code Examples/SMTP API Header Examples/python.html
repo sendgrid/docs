@@ -7,7 +7,7 @@ navigation:
 
 <h2>SmtpApiHeader.py</h2>
 
-``` python
+{% codeblock lang:python %}
 #!/usr/bin/python
 # Version 1.0
 # Last Updated 6/22/2009
@@ -61,11 +61,11 @@ class SmtpApiHeader:
         j = self.asJSON()
         str = 'X-SMTPAPI: %s' % textwrap.fill(j, subsequent_indent = '  ', width = 72)
         return str
-```
+{% endcodeblock %}
 
   <h2>Example Python Usage</h2>
 
-``` python
+{% codeblock lang:python %}
 #!/usr/bin/python
 import SmtpApiHeader
 import json
@@ -84,22 +84,22 @@ hdr.setUniqueArgs({'test':1, 'foo':2})
 a = hdr.asJSON()
 a = hdr.as_string()
 print a
-```
+{% endcodeblock %}
 
 <h2>Using SmtpApiHeader.py with Django</h2>
 
 <p>First start by adding the following to <strong>settings.py</strong>.</p>
 
-``` python
+{% codeblock lang:python %}
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'sendgrid_username'
 EMAIL_HOST_PASSWORD = 'sendgrid_password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-```
+{% endcodeblock %}
 
 <p>Then to send email using SMTPAPI, you can do the following:</p>
-``` python
+{% codeblock lang:python %}
 from django.core import mail
 connection=mail.get_connection()
 connection.open()
@@ -107,10 +107,10 @@ connection.open()
 email = mail.EmailMessage('Subject here', 'Here is the message.', 'testing@sendgrid.net', ['sendgrid@hotmail.com'], headers={"X-SMTPAPI": "{\"to\": [ \"firstaddress@domain1.com\",\"secondaddress@domain2.com\" ], \"category\": \"DJANGOTEST\"}"}, connection=connection)
 
 email.send()
-```
+{% endcodeblock %}
 <p>Then use the SmtpApiHeader, like in the example below:</p>
 
-``` python
+{% codeblock lang:python %}
 import SmtpApiHeader
 import json
 from django.core.mail import EmailMultiAlternatives
@@ -165,4 +165,4 @@ html = """\
 msg = EmailMultiAlternatives(subject, text_content, fromEmail, [toEmail], headers={"X-SMTPAPI": hdr.asJSON()})
 msg.attach_alternative(html, "text/html")
 msg.send()
-```
+{% endcodeblock %}

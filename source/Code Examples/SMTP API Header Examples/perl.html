@@ -6,7 +6,7 @@ navigation:
 ---
 
 <h2>SmtpApiHeader.pm</h2>
-``` perl
+{% codeblock lang:perl %}
 #!/usr/bin/perl
 
 # Version 1.0
@@ -95,10 +95,10 @@ sub as_string
   my $str = "X-SMTPAPI: $json";
   return $str;
 }
-```
+{% endcodeblock %}
 
 <h2>Example Perl Usage</h2>
-``` perl
+{% codeblock lang:perl %}
 #!/usr/bin/perl
 use SmtpApiHeader;
  
@@ -228,4 +228,4 @@ $smtp->mail($from);
 $smtp->to($to);
 $smtp->data($mime->stringify);
 $smtp->quit();
-```
+{% endcodeblock %}

@@ -121,18 +121,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;overview&gt;&lt;reputation&gt;100&lt;/reputation&gt;&lt;requests&gt;50000&lt;/requests&gt;&lt;package&gt;Silver Package&lt;/package&gt;&lt;credits_allowed&gt;50000&lt;/credits_allowed&gt;&lt;credits_used&gt;100000&lt;/credits_used&gt;&lt;credits_remain&gt;0&lt;/credits_remain&gt;&lt;credits_overage&gt;50000&lt;/credits_overage&gt;&lt;billing_start_date&gt;2010-08-30&lt;/billing_start_date&gt;&lt;billing_end_date&gt;2010-09-29&lt;/billing_end_date&gt;&lt;billing_process_date&gt;2010-09-30&lt;/billing_process_date&gt;&lt;/overview&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;overview>&lt;reputation>100&lt;/reputation>&lt;requests>50000&lt;/requests>&lt;package>Silver Package&lt;/package>&lt;credits_allowed>50000&lt;/credits_allowed>&lt;credits_used>100000&lt;/credits_used>&lt;credits_remain>0&lt;/credits_remain>&lt;credits_overage>50000&lt;/credits_overage>&lt;billing_start_date>2010-08-30&lt;/billing_start_date>&lt;billing_end_date>2010-09-29&lt;/billing_end_date>&lt;billing_process_date>2010-09-30&lt;/billing_process_date>&lt;/overview>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>

@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require "nokogiri"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -377,3 +378,70 @@ task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
 end
+
+desc "Rewrite all github style backtick code blocks with more explicit codeblocks"
+task :codeblocks do
+  htmlfiles = File.join("**", "source", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  
+  files.each do |htmlfile|
+    next if htmlfile == '.' or htmlfile == '..'
+    puts "Converting code blocks: " + htmlfile
+    file = File.open(htmlfile)   
+    
+    contents = file.read
+    
+    output = "";
+    
+    i=0
+    contents.each_line do |line|
+      if line.index('```')
+        if i % 2 == 0
+          puts 'found one: ' + line
+          line = line.gsub(/(```)\s(.*)/,'{% codeblock lang:\2 %}')
+          puts 'now: ' + line 
+        else
+          puts 'found one: ' + line
+          line = line.gsub(/(```)/,"{% endcodeblock %}")
+          puts 'now: ' + line 
+        end
+        i=i+1      
+      end
+      output = output + line
+    end
+    
+    file = File.new(htmlfile,"w")
+    file.write(output)
+  end
+end
+
+desc "Rewrite all source files with HTML Beautifier."
+task :beautify do
+  htmlfiles = File.join("**", "source", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  
+  files.each do |htmlfile|
+    next if htmlfile == '.' or htmlfile == '..'
+    puts "HTML Beautifying: " + htmlfile
+    file = File.open(htmlfile)
+
+    contents = file.read
+  
+    html = Nokogiri::HTML::DocumentFragment.parse(contents).to_html
+   
+    #pipe it to the htmlbeautifier, which is non-destructive
+    output = IO.popen("htmlbeautifier", "w+") do |pipe| 
+      pipe.puts html 
+      pipe.close_write 
+      pipe.read 
+    end
+    
+    file = File.new(htmlfile,"w")
+    file.write(html)
+  end
+end
+

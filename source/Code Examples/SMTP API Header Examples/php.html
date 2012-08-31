@@ -9,7 +9,7 @@ navigation:
 
 <blockquote><span class="label label-info">Info</span> SendGrid requires the use of PHP 5.3 or higher.</blockquote>
 
-``` php
+{% codeblock lang:php %}
 <?php
 
 # Version 1.0
@@ -89,11 +89,11 @@ class SmtpApiHeader
 }
 
 ?>
-```
+{% endcodeblock %}
 
 <h2>Example PHP Usage</h2>
 
-``` php
+{% codeblock lang:php %}
 <?php
 
 include 'SmtpApiHeader.php';
@@ -131,4 +131,4 @@ echo $hdr->as_string();
 echo "\n";
 
 ?>
-```
+{% endcodeblock %}

@@ -12,7 +12,7 @@ navigation:
 <span class="label label-info">Info</span> It is important to use the correct end of lines using "crlf" => "\r\n" and "newline" => "\r\n".
 </p>
 
-``` php
+{% codeblock lang:php %}
 <?php
 $this->load->library('email');
 
@@ -36,4 +36,4 @@ $this->email->send();
 
 echo $this->email->print_debugger();
 ?>
-```
+{% endcodeblock %}

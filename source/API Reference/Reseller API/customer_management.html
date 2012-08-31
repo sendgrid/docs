@@ -149,33 +149,27 @@ is different from today (or when you execute this API call), you can
 specify the first billing anniversary date</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 <hr/><a name="deleteCustomer"></a>
 <h2>Delete a Customer</h2>
 Remove a customer from your account. This is
@@ -199,33 +193,27 @@ account.</td>
       <td>The customers username you wish to delete.</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 <hr/><a name="retrieveCustomers"></a>
 <h1>Retrieve Customers</h1>
 Obtain a complete list of all customers.
@@ -319,27 +307,23 @@ currently active</td>
       </td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+{% endcodeblock %}
 <h4>Return</h4>
-```
-  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
+{% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
-```
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+{% endcodeblock %}
 <h4>Return</h4>
-```
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555
+{% codeblock %}{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555
 any street","city":"any
 city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555
 any street","city":"any
 city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
-```
+{% endcodeblock %}
 <hr/><a name="enableCustomer"></a>
 <h2>Enable a Customer</h2>
 Enable a customer so they may start sending out emails again. This call will not enable website access. To
@@ -366,29 +350,23 @@ Enable a customer so they may start sending out emails again. This call will not
       <td>The customer you are planning to enabling</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>User not found</message></result
-```
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"User not found"
-```
+{% codeblock %}"message":"User not found"
+{% endcodeblock %}
 <hr/><a name="disableCustomer"></a>
 <h2>Disable a Customer</h2>
 This prevents them from sending out emails with SendGrid.
@@ -414,29 +392,23 @@ This prevents them from sending out emails with SendGrid.
       <td>The customer you are planning to disabling</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>User not found</message></result
-```
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"User not found"
-```
+{% codeblock %}"message":"User not found"
+{% endcodeblock %}
 <hr/><a name="enableWebsiteCustomer"></a>
 <h2>Enable Website Access To A Customer</h2>
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails. To
@@ -465,29 +437,23 @@ access</td>
 access</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>User not found</message></result
-```
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"User not found"
-```
+{% codeblock %}"message":"User not found"
+{% endcodeblock %}
 <hr/><a name="disableWebsiteCustomer"></a>
 <h2>Disable Website Access To A Customer</h2>
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
@@ -516,29 +482,23 @@ website access</td>
 website access</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>User not found</message></result
-```
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"User not found"
-```
+{% codeblock %}"message":"User not found"
+{% endcodeblock %}
 <hr/><a name="updateCustomerProfile"></a>
 <h2>Update Customer Profile</h2>
 Allows you to update your customers profile information
@@ -619,33 +579,27 @@ to update profile information</td>
       <td>Company of customer</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 <hr/><a name="updateCustomerPassword"></a>
 <h2>Update Customer Password</h2>
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
@@ -685,33 +639,27 @@ password</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 <hr/><a name="updateCustomerUsername"></a>
 <h2>Update Customer Username</h2>
 Note that your customer account username is used to login to our SMTP server
@@ -764,33 +712,27 @@ This update takes effect immediately</td>
       <td>Allows you to access profile functionality</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
 <hr/><a name="updateCustomerEmailAddress"></a>
 <h2>Update Customer Email Address</h2>
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
@@ -833,30 +775,24 @@ contacting customer. This update takes effect immediately</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table><h3>XML API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-  <result><message>success</message></result
-```
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-  <result><message>error</message><errors>
+{% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result
-```
+    </errors></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
-```
+{% codeblock %}https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"error","errors":[..."error messages"...]
-```
+{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}

@@ -23,6 +23,9 @@ module Jekyll
           @dirs[path] = page.data
         end
       end
+      
+      #can we sort the dirs by some sort of weight value?
+      
       @dirs.each do |path, data|
         current	 = tree
         path.split("/").inject("") do |sub_path,dir|

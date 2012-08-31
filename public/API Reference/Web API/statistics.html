@@ -164,7 +164,7 @@ parameters. If provided with no parameters, the current day&#8217;s statistics a
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2</span></code></pre></td></tr></table></div></figure>
      <h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -240,12 +240,11 @@ parameters. If provided with no parameters, the current day&#8217;s statistics a
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>days=2
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2</span></code></pre></td></tr></table></div></figure>
 
 	<h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="s2">&quot;2009-06-20&quot;</span><span class="p">,</span><span class="s2">&quot;requests&quot;</span><span class="o">:</span><span class="mi">12342</span><span class="p">,</span><span class="s2">&quot;bounces&quot;</span><span class="o">:</span><span class="mi">12</span><span class="p">,</span><span class="s2">&quot;clicks&quot;</span><span class="o">:</span><span class="mi">10223</span><span class="p">,</span><span class="s2">&quot;opens&quot;</span><span class="o">:</span><span class="mi">9992</span><span class="p">,</span><span class="s2">&quot;spamreports&quot;</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;unique_clicks&quot;</span><span class="o">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;unique_opens&quot;</span><span class="o">:</span><span class="mi">6</span><span class="p">,</span><span class="s2">&quot;blocked&quot;</span><span class="o">:</span><span class="mi">7</span><span class="p">},{</span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="s2">&quot;2009-06-21&quot;</span><span class="p">,</span><span class="s2">&quot;requests&quot;</span><span class="o">:</span><span class="mi">32342</span><span class="p">,</span><span class="s2">&quot;bounces&quot;</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span><span class="s2">&quot;clicks&quot;</span><span class="o">:</span><span class="mi">14323</span><span class="p">,</span><span class="s2">&quot;opens&quot;</span><span class="o">:</span><span class="mi">10995</span><span class="p">,</span><span class="s2">&quot;spamreports&quot;</span><span class="o">:</span><span class="mi">7</span><span class="p">,</span><span class="s2">&quot;unique_clicks&quot;</span><span class="o">:</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;unique_opens&quot;</span><span class="o">:</span><span class="mi">9</span><span class="p">,</span><span class="s2">&quot;blocked&quot;</span><span class="o">:</span><span class="mi">4</span><span class="p">},{</span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="s2">&quot;2009-06-22&quot;</span><span class="p">,</span><span class="s2">&quot;requests&quot;</span><span class="o">:</span><span class="mi">52342</span><span class="p">,</span><span class="s2">&quot;bounces&quot;</span><span class="o">:</span><span class="mi">11</span><span class="p">,</span><span class="s2">&quot;clicks&quot;</span><span class="o">:</span><span class="mi">19223</span><span class="p">,</span><span class="s2">&quot;opens&quot;</span><span class="o">:</span><span class="mi">12992</span><span class="p">,</span><span class="s2">&quot;spamreports&quot;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;unique_clicks&quot;</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;unique_opens&quot;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;blocked&quot;</span><span class="o">:</span><span class="mi">8</span><span class="p">}]</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -264,11 +263,10 @@ parameters. If provided with no parameters, the current day&#8217;s statistics a
 <div class="tab-content">
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;list=true</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true</span></code></pre></td></tr></table></div></figure>
      <h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="s2">&quot;categoryA&quot;</span><span class="p">},{</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="s2">&quot;categoryB&quot;</span><span class="p">},{</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="s2">&quot;categoryC&quot;</span><span class="p">}]</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -277,12 +275,11 @@ parameters. If provided with no parameters, the current day&#8217;s statistics a
   <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;list=true</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&list=true</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -379,34 +376,30 @@ will be an empty result set.</h3>
 <div class="tab-content">
   <div class="tab-pane active" id="category-json">
      <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>start_date=2009-06-20<span class="err">&amp;</span>end_date=2009-06-22<span class="err">&amp;</span>category=categoryA
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</span></code></pre></td></tr></table></div></figure>
 <h3>Call - Using an array of categories</h3>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>start_date=2009-06-20<span class="err">&amp;</span>end_date=2009-06-22<span class="err">&amp;</span>category[]=categoryA<span class="err">&amp;</span>category[]=categoryB
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</span></code></pre></td></tr></table></div></figure>
 
      <h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="s2">&quot;2009-06-20&quot;</span><span class="p">,</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="p">,</span><span class="s2">&quot;categoryA&quot;</span><span class="p">,</span><span class="s2">&quot;requests&quot;</span><span class="o">:</span><span class="mi">12342</span><span class="p">,</span><span class="s2">&quot;bounces&quot;</span><span class="o">:</span><span class="mi">12</span><span class="p">,</span><span class="s2">&quot;clicks&quot;</span><span class="o">:</span><span class="mi">10223</span><span class="p">,</span><span class="s2">&quot;opens&quot;</span><span class="o">:</span><span class="mi">9992</span><span class="p">,</span><span class="s2">&quot;spamreports&quot;</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;unique_clicks&quot;</span><span class="o">:</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;unique_opens&quot;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;blocked&quot;</span><span class="o">:</span><span class="mi">7</span><span class="p">},{</span><span class="s2">&quot;date&quot;</span><span class="o">:</span><span class="s2">&quot;2009-06-21&quot;</span><span class="p">,,</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="p">,</span><span class="s2">&quot;categoryB&quot;</span><span class="p">,</span><span class="s2">&quot;requests&quot;</span><span class="o">:</span><span class="mi">32342</span><span class="p">,</span><span class="s2">&quot;bounces&quot;</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span><span class="s2">&quot;clicks&quot;</span><span class="o">:</span><span class="mi">14323</span><span class="p">,</span><span class="s2">&quot;opens&quot;</span><span class="o">:</span><span class="mi">10995</span><span class="p">,</span><span class="s2">&quot;spamreports&quot;</span><span class="o">:</span><span class="mi">7</span><span class="p">,</span><span class="s2">&quot;unique_clicks&quot;</span><span class="o">:</span><span class="mi">4</span><span class="p">,</span><span class="s2">&quot;unique_opens&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;blocked&quot;</span><span class="o">:</span><span class="mi">6</span><span class="p">}]</span>
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="category-xml">
         <h3>Call</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=categoryA</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Call - Using an array of categories</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">https</span><span class="o">:</span><span class="c1">//sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=categoryB</span>
-</span></code></pre></td></tr></table></div></figure>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

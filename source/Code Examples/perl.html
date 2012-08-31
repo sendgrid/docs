@@ -11,7 +11,7 @@ The following code builds a MIME mail message demonstrating all the portions of 
 	<li><a href="http://search.cpan.org/perldoc?Authen::SASL">Authen::SASL</a></li>
 </ul>
 
-``` perl
+{% codeblock lang:perl %}
 #!/usr/bin/perl
  
 use strict;
@@ -76,4 +76,4 @@ $smtp->mail($from);
 $smtp->to($to);
 $smtp->data($mime->stringify);
 $smtp->quit();
-```
+{% endcodeblock %}

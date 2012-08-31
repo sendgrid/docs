@@ -123,18 +123,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut</span></code></pre></td></tr></table></div></figure>

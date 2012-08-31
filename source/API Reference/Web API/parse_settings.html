@@ -16,25 +16,23 @@ navigation:
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
-``` 
+{% codeblock %}https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
+{% endcodeblock %} 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]}
-```
+{% endcodeblock %}
 <h3>Response: Empty</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"parse":[]}
-```
+{% endcodeblock %}
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
-```
+{% codeblock %}https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
+{% endcodeblock %}
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <parse>
   <entry>
     <hostname>www.example.com</hostname>
@@ -42,11 +40,10 @@ https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=sec
     <spam_check>1</spam_check>
   </entry>
 </parse>
-```
+{% endcodeblock %}
 <h3>Response: Empty</h3>
-```
-<parse></parse>  
-```
+{% codeblock %}<parse></parse>  
+{% endcodeblock %}
 
   </div>
 </div>
@@ -64,34 +61,32 @@ https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=sec
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
+{% codeblock %}https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+{% endcodeblock %}
 <h3>Response: Success </h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
+{% codeblock %}https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+{% endcodeblock %}
 
 <h3>Response: Success<h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
+</result>>
 
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error</message>
   <errors>
@@ -99,8 +94,8 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
 
   </div>
@@ -119,36 +114,33 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
 <div class="tab-content">
   <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
+{% codeblock %}https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+{% endcodeblock %}
 
 	<h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
-```
+{% codeblock %}https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php@spam_check=1
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-```
-
+{% codeblock %}
 <result>
   <message>success</message>
-</result>
+</result>>
 
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error</message>
   <errors>
@@ -156,8 +148,8 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
 
   </div>
 </div>
@@ -176,34 +168,32 @@ https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=sec
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
 
-```
-https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
-```
+{% codeblock %}https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"success"}
-```
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` javascript
+{% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
-```
+{% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-```
-https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
-```
+{% codeblock %}https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+{% endcodeblock %}
 
 <h3>Response: Success</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>
-```
+</result>>
+{% endcodeblock %}
 <h3>Response: Error</h3>
-``` xml
+{% codeblock lang:xml %}
 <result>
   <message>error</message>
   <errors>
@@ -211,7 +201,7 @@ https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=
     <error>... error messages ...</error>
     ...
   </errors>
-</result>
-```
+</result>>
+{% endcodeblock %}
   </div>
 </div>

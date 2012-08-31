@@ -100,18 +100,18 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.packages.xml?api_user=username&amp;api_key=secureSecre</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result&gt;&lt;packages&gt;&lt;package&gt;&lt;name&gt;Basic Package&lt;/name&gt;&lt;price&gt;9.95&lt;/price&gt;&lt;description&gt;Basic Package description&lt;/description&gt;&lt;credits&gt;10000&lt;/credits&gt;&lt;overage&gt;0.001&lt;/overage&gt;&lt;has_reseller&gt;false&lt;/has_reseller&gt;&lt;has_ip&gt;false&lt;/has_ip&gt;&lt;distributor_price&gt;50&lt;/distributor_price&gt;&lt;/package&gt;&lt;package&gt;&lt;name&gt;Silver Package&lt;/name&gt;&lt;price&gt;79.95&lt;/price&gt;&lt;description&gt;Silver Package Description&lt;/description&gt;&lt;credits&gt;50000&lt;/credits&gt;&lt;overage&gt;0.001&lt;/overage&gt;&lt;has_reseller&gt;false&lt;/has_reseller&gt;&lt;has_ip&gt;false&lt;/has_ip&gt;&lt;distributor_price&gt;50&lt;/distributor_price&gt;&lt;/package&gt;&lt;/packages&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;packages>&lt;package>&lt;name>Basic Package&lt;/name>&lt;price>9.95&lt;/price>&lt;description>Basic Package description&lt;/description>&lt;credits>10000&lt;/credits>&lt;overage>0.001&lt;/overage>&lt;has_reseller>false&lt;/has_reseller>&lt;has_ip>false&lt;/has_ip>&lt;distributor_price>50&lt;/distributor_price>&lt;/package>&lt;package>&lt;name>Silver Package&lt;/name>&lt;price>79.95&lt;/price>&lt;description>Silver Package Description&lt;/description>&lt;credits>50000&lt;/credits>&lt;overage>0.001&lt;/overage>&lt;has_reseller>false&lt;/has_reseller>&lt;has_ip>false&lt;/has_ip>&lt;distributor_price>50&lt;/distributor_price>&lt;/package>&lt;/packages>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.packages.json?api_user=username&amp;api_key=secureSecre</span></code></pre></td></tr></table></div></figure>

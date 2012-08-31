@@ -47,21 +47,17 @@ navigation:
 			functionality</td>
   </tr>
 </table><h3>XML API Request</h3>
-```
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
-```
+{% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
+{% endcodeblock %}
 <h4>Return</h4>
-```
-spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
-```
+{% codeblock %}spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
-```
+{% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
+{% endcodeblock %}
 <h4>Return</h4>
-```
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
-```
+{% codeblock %}{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+{% endcodeblock %}
 <hr/><a name="deleteSpamReports"></a>
 <h2>Delete Spam Reports</h2>
 <p>Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.</p>
@@ -105,26 +101,20 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
 			functionality</td>
   </tr>
 </table><h3>XML API Request</h3>
-```
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
-```
+{% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-result><message>success</message></result
-```
+{% codeblock %}result><message>success</message></result>
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-result><message>Email does not exist</message></result
-```
+{% codeblock %}result><message>Email does not exist</message></result>
+{% endcodeblock %}
 <h3>JSON API Request</h3>
-```
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
-```
+{% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
+{% endcodeblock %}
 <h4>Return - Success</h4>
-```
-"message":"success"
-```
+{% codeblock %}"message":"success"
+{% endcodeblock %}
 <h4>Return - Error</h4>
-```
-"message":"Email does not exist"
-```
+{% codeblock %}"message":"Email does not exist"
+{% endcodeblock %}

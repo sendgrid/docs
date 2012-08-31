@@ -120,23 +120,17 @@
     <dd>All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated<em>and</em> is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone</dd>
   </dl>
   <h3>XML API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>    &lt;ips&gt;&lt;ip&gt;255.255.255.250&lt;/ip&gt;&lt;ip&gt;255.255.255.251&lt;/ip&gt;&lt;ip&gt;255.255.255.252&lt;/ip&gt;&lt;/ips</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al</span></code></pre></td></tr></table></div></figure>
+  <h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;ips>&lt;ip>255.255.255.250&lt;/ip>&lt;ip>255.255.255.251&lt;/ip>&lt;ip>255.255.255.252&lt;/ip>&lt;/ips</span></code></pre></td></tr></table></div></figure>
   <h3>JSON API Request</h3>
-  &#8220;`
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;h4&gt;Return&lt;/h4&gt;
-</span><span class='line'>  ```
-</span><span class='line'>{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al</span></code></pre></td></tr></table></div></figure>
+  <h4>Return</h4>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}</span></code></pre></td></tr></table></div></figure>
 </div>
 <h1><hr/><a name="userUsage"></a></h1>
 <h2>Subuser IP Usage</h2>
@@ -163,10 +157,10 @@ If your account has more than one IP address, you can manage what IPs your subus
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;sendips&gt;&lt;ocluster&gt;o1.sendgrid.net&lt;/ocluster&gt;&lt;ips&gt;&lt;ip&gt;255.255.255.250&lt;/ip&gt;&lt;ip&gt;255.255.255.251&lt;/ip&gt;&lt;ip&gt;255.255.255.252&lt;/ip&gt;&lt;ip&gt;255.255.255.253&lt;/ip&gt;&lt;ip&gt;255.255.255.254&lt;/ip&gt;&lt;/ips&gt;&lt;/sendips</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;sendips>&lt;ocluster>o1.sendgrid.net&lt;/ocluster>&lt;ips>&lt;ip>255.255.255.250&lt;/ip>&lt;ip>255.255.255.251&lt;/ip>&lt;ip>255.255.255.252&lt;/ip>&lt;ip>255.255.255.253&lt;/ip>&lt;ip>255.255.255.254&lt;/ip>&lt;/ips>&lt;/sendips</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;User does not exist&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
@@ -214,18 +208,18 @@ You need to assign at least ONE IP to your subuser.
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25</span></code></pre></td></tr></table></div></figure>
 <h4>Return - Success</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;success&lt;/message&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h4>Return - Error</h4>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  &lt;result&gt;&lt;message&gt;error&lt;/message&gt;&lt;errors&gt;
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
 </span><span class='line'>      ...
-</span><span class='line'>      &lt;error&gt;... error messages ...&lt;/error&gt;
+</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors&gt;&lt;/result</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
 <h3>JSON API Request</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25</span></code></pre></td></tr></table></div></figure>
