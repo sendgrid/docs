@@ -4,7 +4,7 @@ title: Subuser Spam Reports
 navigation:
    show: true
 ---
-<div>
+
   <hr/><a name="retrieveSpamReports"></a>
   <h2>Retrieve Spam Reports</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -36,28 +36,30 @@ navigation:
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.spamreports.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/user.spamreports.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock %}    <spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
+  {% codeblock %}    <spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/user.spamreports.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
+  </div>
+</div>
   <hr/><a name="deleteSpamReports"></a>
   <h2>Delete Spam Reports</h2>
   Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
@@ -90,14 +92,14 @@ https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=sec
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.spamreports.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=spamreport@domain.co
+https://sendgrid.com/api/user.spamreports.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=spamreport@domain.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
@@ -106,10 +108,10 @@ https://sendgrid.com/api/user.spamreports.xml?api_user=username&amp;api_key=secu
   {% codeblock %}    <result><message>Email does not exist</message></result>
 {% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=spamreport@domain.co
+https://sendgrid.com/api/user.spamreports.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=spamreport@domain.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -119,4 +121,5 @@ https://sendgrid.com/api/user.spamreports.json?api_user=username&amp;api_key=sec
   {% codeblock %}
 "message":"Email does not exist"
 {% endcodeblock %}
+</div>
 </div>
