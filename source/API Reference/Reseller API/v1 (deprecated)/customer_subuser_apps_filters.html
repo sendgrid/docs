@@ -32,15 +32,9 @@ navigation:
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -49,17 +43,14 @@ filters><filter><name>twitter</name><title>Twitter</title>
     ...
   </filters
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="activateApp"></a>
 <h2>Activate App</h2>
@@ -85,31 +76,22 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="deactivateApp"></a>
 <h2>Deactivate App</h2>
@@ -135,44 +117,29 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="customizeApp"></a>
 <h2>Customize App</h2>
 <p>These API calls require that settings are passed using POST.</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+<h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -189,11 +156,9 @@ result><message>error</message><message>... error messages ...</message></result
 {% codeblock %}
 filter></filter
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -204,20 +169,13 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;ap
 {% codeblock %}
 "settings":null}
 
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+<h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -235,11 +193,9 @@ enabled.</p>
 {% codeblock %}
 filter></filter
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

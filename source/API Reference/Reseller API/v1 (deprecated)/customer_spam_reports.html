@@ -46,31 +46,22 @@ navigation:
     <td>Allows you to access spam reports
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=get&amp;date=
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="deleteSpamReports"></a>
 <h2>Delete Spam Reports</h2>
@@ -114,15 +105,9 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
     <td>Allows you to access spam reports
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -132,11 +117,9 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=spamreports&amp;user=customer@example.com&amp;task=delete&amp;email=spamreport@domain.co
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

@@ -38,30 +38,21 @@ navigation:
     <td>Allows you to access post event url
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=customer@example.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=customer@example.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"url":"http:\/\/www.SubUserPostUrlHere.com"}
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="updateSetURL"></a>
 <h2>Update / Set URL</h2>
@@ -103,30 +94,21 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
     <td>Allows you to access post event url
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=customer@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=customer@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
-  </div>
-</div>
+{% endcodeblock %}
 <hr/>
 <a name="delete"></a>
 <h2>Delete</h2>
@@ -162,24 +144,16 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=s
     <td>Allows you to access post event url
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+</table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.com&amp;method=eventpostur
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}

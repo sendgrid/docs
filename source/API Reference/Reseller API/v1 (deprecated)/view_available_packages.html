@@ -6,15 +6,9 @@ navigation:
 ---
 <p>List all packages available to your account.</p>
 <p>There are no extra parameters required for this call</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane" id="-xml">
-     <h3>Call</h3>
+<h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.packages.xml?api_user=username&amp;api_key=secureSecre
+https://sendgrid.com/api/distributor.packages.xml?api_user=username&api_key=secureSecre
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -28,11 +22,9 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="-json">
-     <h3>Call</h3>
+<h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.packages.json?api_user=username&amp;api_key=secureSecre
+https://sendgrid.com/api/distributor.packages.json?api_user=username&api_key=secureSecre
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
