@@ -5,7 +5,7 @@ navigation:
    show: true
 ---
 <p>Throttle your customer when you need them to send only a specific amount of emails at a specified interval.</p>
-<hr/><a name="retrieve"></a>
+<a name="retrieve"></a>
 <h2>Retrieve</h2>
 <p>Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.</p>
 <table class="table table-bordered table-striped">
@@ -31,14 +31,14 @@ navigation:
 		limits retrieved</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=retriev
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
@@ -51,10 +51,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=retrieve
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -65,6 +65,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 "message":"error","errors":[..."error messages"...]
   </div>
 </div>
+<hr/>
 <a name="noLimit"></a>
 <h2>No Limit</h2>
 <p>Obtain a complete list of all customer.</p>
@@ -99,14 +100,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access limit functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -119,10 +120,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -204,14 +205,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 		functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="reset-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -224,10 +225,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -236,8 +237,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="totalCredits"></a>
 <h2>Total Credits</h2>
 <p>Set a subusers credits to a specified amount.</p>
@@ -280,14 +283,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 			functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#total-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#total-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="total-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -300,10 +303,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="total-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -314,6 +317,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 "message":"error","errors":[..."error messages"...]
   </div>
 </div>
+<hr/>
 <a name="incrementCredits"></a>
 <h2>Increment Credits</h2>
 <p>Increment a subusers credits by a specified amount.</p>
@@ -356,14 +360,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 			functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#increment-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#increment-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="increment-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -376,10 +380,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="increment-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -388,8 +392,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="decrementCredits"></a>
 <h2>Decrement Credits</h2>
 <p>Decrement a subusers credits by a specified amount.</p>
@@ -432,14 +438,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 		functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#decrement-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#decrement-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="decrement-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -452,10 +458,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="decrement-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -465,3 +471,5 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div>
+</div>
