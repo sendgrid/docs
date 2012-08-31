@@ -116,13 +116,19 @@
 		account.</td>
     <td>The customer</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;overview>&lt;reputation>100&lt;/reputation>&lt;requests>50000&lt;/requests>&lt;package>Silver Package&lt;/package>&lt;credits_allowed>50000&lt;/credits_allowed>&lt;credits_used>100000&lt;/credits_used>&lt;credits_remain>0&lt;/credits_remain>&lt;credits_overage>50000&lt;/credits_overage>&lt;billing_start_date>2010-08-30&lt;/billing_start_date>&lt;billing_end_date>2010-09-29&lt;/billing_end_date>&lt;billing_process_date>2010-09-30&lt;/billing_process_date>&lt;/overview>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -133,15 +139,17 @@
 </span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
 </span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=overview&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 
   
     <footer>

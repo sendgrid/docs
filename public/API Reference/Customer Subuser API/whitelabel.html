@@ -110,18 +110,26 @@
         </td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;whitelabels>&lt;whitelabel>&lt;mail_domain>email.sendgrid.com&lt;/mail_domain>&lt;url_domain>email.sendgrid.com&lt;/url_domain>&lt;/whitelabel>&lt;whitelabel>&lt;mail_domain>email.example.com&lt;/mail_domain>&lt;url_domain>email.example.com&lt;/url_domain>&lt;/whitelabel>&lt;/whitelabels</span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="append"></a>
   <h2>Append</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -147,13 +155,19 @@
         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;user=example@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -164,15 +178,17 @@
 </span><span class='line'>        &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;user=example@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

@@ -114,7 +114,8 @@ x-smtpapi={"unique_args":{"userid":"1123","template":"welcome"}}
 
 <p>Either of those emails will generate the following HTTP POST request to your application when the email is opened:
 </p>
-{% codeblock %}email=emailrecipient@domain.com&event=open&userid=1123&template=welcome
+{% codeblock %}
+email=emailrecipient@domain.com&event=open&userid=1123&template=welcome
 {% endcodeblock %}
 
 <h2>Categories</h2>
@@ -132,7 +133,8 @@ x-smtpapi={"unique_args":{"userid":"1123","template":"welcome"},"category":"user
 
 <p>Either of those emails will generate the following HTTP POST request to your application when the email is opened:</p>
 
-{% codeblock %}email=emailrecipient@domain.com&event=open&userid=1123&template=welcome&category=user_signup
+{% codeblock %}
+email=emailrecipient@domain.com&event=open&userid=1123&template=welcome&category=user_signup
 {% endcodeblock %}
 
 <blockquote><span class="label label-info">Info</span> If you apply multiple categories to any of your outgoing messages, the returned data will be in the form of an array.</blockquote>
@@ -371,7 +373,8 @@ $fh = fopen('~/dump.log', 'a+');
 <h2>Sample POST</h2>
 <p>The following is a sample HTTP POST request when recipient <em>test@domain.com</em> opens an email, having <em>arg2</em> as a custom parameter and category <em>testing</em>.  </p>
 
-{% codeblock %}POST /myurl.php HTTP/1.1 User-agent: Mozilla/5.0 (compatible; U; AnyEvent-HTTP/2.03;
+{% codeblock %}
+POST /myurl.php HTTP/1.1 User-agent: Mozilla/5.0 (compatible; U; AnyEvent-HTTP/2.03;
 +http://software.schmorp.de/pkg/AnyEvent) Connection: close Te Content-type: application/x-www-form-urlencoded Te: trailers Content-length: 72 Referer: http://mydomain.com/myurl.php Host: mydomain.com arg2=2&email=test@domain.com&arg1=1&category=testing&event=open
 {% endcodeblock %}
 

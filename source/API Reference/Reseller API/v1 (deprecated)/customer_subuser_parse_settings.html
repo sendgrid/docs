@@ -28,8 +28,15 @@ navigation:
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=example@example.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -39,8 +46,11 @@ parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php
 {% codeblock %}
 parse></parse
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=example@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -49,8 +59,9 @@ parse></parse
 <h3>Response: Empty</h3>
 {% codeblock %}
 "parse":[]
-{% endcodeblock %}
-<hr/><a name="createNewEntry"></a>
+  </div>
+</div>
+<a name="createNewEntry"></a>
 <h2>Create New Entry</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -86,8 +97,15 @@ parse></parse
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -101,8 +119,11 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -111,8 +132,9 @@ result><message>error</message><errors>
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="editEntry"></a>
+  </div>
+</div>
+<a name="editEntry"></a>
 <h2>Edit Entry</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -148,8 +170,15 @@ result><message>error</message><errors>
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=example@example.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -163,8 +192,11 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=example@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -173,8 +205,9 @@ result><message>error</message><errors>
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="deleteEntry"></a>
+  </div>
+</div>
+<a name="deleteEntry"></a>
 <h2>Delete Entry</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -205,8 +238,15 @@ result><message>error</message><errors>
     <td>The host name you will remove for your
 			customer subuser</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -220,8 +260,11 @@ result><message>error</message><errors>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=example@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}

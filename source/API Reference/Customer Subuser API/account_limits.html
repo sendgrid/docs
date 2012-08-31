@@ -8,7 +8,7 @@ navigation:
   <p><span>Throttle your subuser when you need them to send only a specific amount of emails at a specified interval.</span></p>
   <hr/><a name="retrieve"></a>
   <h2>Retrieve</h2>
-  Retrieve account limits for a specific subuser. If the API call response is empty that means the subuser has the limits removed.
+<p>  Retrieve account limits for a specific subuser. If the API call response is empty that means the subuser has the limits removed.</p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -30,8 +30,30 @@ navigation:
         <td>The subuser who will have their account limits retrieved</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#limit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#limit-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+
+  <div class="tab-pane active" id="limit-json">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+{% codeblock %}
+
+{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
+{% endcodeblock %}
+  <h3>Response: Error</h3>
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
+  <div class="tab-pane" id="limit-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
@@ -43,21 +65,10 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-
-{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
   <hr/><a name="noLimit"></a>
   <h2>No Limit</h2>
-  Obtain a complete list of all subuser.
+  <p>Obtain a complete list of all subusers.</p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -79,8 +90,29 @@ navigation:
         <td>The subuser who will have their account limits removed</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=non
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+	  <div class="tab-pane active" id="list-json">
+	     <h3>Call</h3>
+	{% codeblock %}
+	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=none
+	{% endcodeblock %}
+	  <h3>Response: Success</h3>
+	{% codeblock %}
+	"message":"success"
+	{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	{% codeblock %}
+	"message":"error","errors":[..."error messages"...]
+	{% endcodeblock %}
+	  </div>
+  <div class="tab-pane" id="list-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=none
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <result><message>success</message></result>
@@ -92,17 +124,9 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=non
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
+
+</div>
   <hr/><a name="recurringReset"></a>
   <h2>Recurring Reset</h2>
   A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
@@ -157,8 +181,30 @@ navigation:
         <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=recurring&credits=200&period=dail
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+
+  <div class="tab-pane" id="reset-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=recurring&credits=200&period=daily
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+{% codeblock %}
+"message":"success"
+{% endcodeblock %}
+  <h3>Response: Error</h3>
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane" id="reset-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <message><result>success</result>></message
@@ -170,17 +216,9 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=recurring&credits=200&period=dail
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
+</div>
+
   <hr/><a name="totalCredits"></a>
   <h2>Total Credits</h2>
   Set a subusers credits to a specified amount.
@@ -211,8 +249,29 @@ navigation:
         <td>The total number of credits the subuser will be reset to</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=total&credits=20
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#total-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#total-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+	  <div class="tab-pane active" id="total-json">
+	     <h3>Call</h3>
+	{% codeblock %}
+	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=total&credits=20
+	{% endcodeblock %}
+	  <h3>Response: Success</h3>
+	{% codeblock %}
+	"message":"success"
+	{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	{% codeblock %}
+	"message":"error","errors":[..."error messages"...]
+	{% endcodeblock %}
+  </div>
+  <div class="tab-pane" id="total-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <result><message>success</message></result>
@@ -224,17 +283,9 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=total&credits=20
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
+
+</div>
   <hr/><a name="incrementCredits"></a>
   <h2>Increment Credits</h2>
   Increment a subusers credits by a specified amount.
@@ -265,8 +316,29 @@ navigation:
         <td>The total number of credits the subuser will be incremented by</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=increment&credits=20
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#increment-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#increment-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+	  <div class="tab-pane active" id="increment-json">
+	     <h3>Call</h3>
+	{% codeblock %}
+	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=increment&credits=20
+	{% endcodeblock %}
+	  <h3>Response: Success</h3>
+	{% codeblock %}
+	"message":"success"
+	{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	{% codeblock %}
+	"message":"error","errors":[..."error messages"...]
+	{% endcodeblock %}
+	  </div>
+	  <div class="tab-pane" id="increment-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <result><message>success</message></result>
@@ -278,17 +350,8 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=increment&credits=20
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
+</div>
   <hr/><a name="decrementCredits"></a>
   <h2>Decrement Credits</h2>
   Decrement a subusers credits by a specified amount.
@@ -319,8 +382,29 @@ navigation:
         <td>The total number of credits the subuser will be decremented by</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=20
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#decrement-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#decrement-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+	  <div class="tab-pane active" id="decrement-json">
+	     <h3>Call</h3>
+	{% codeblock %}
+	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=200
+	{% endcodeblock %}
+	  <h3>Response: Success</h3>
+	{% codeblock %}
+	"message":"success"
+	{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	{% codeblock %}
+	"message":"error","errors":[..."error messages"...]
+	{% endcodeblock %}
+	  </div>
+  <div class="tab-pane" id="decrement-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=200
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock %}    <result><message>success</message><result></result>></result>
@@ -332,15 +416,6 @@ navigation:
         ...
       </errors></result>
 {% endcodeblock %}
-  <h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=20
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
+    </div>
+
 </div>

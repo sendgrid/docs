@@ -238,33 +238,42 @@
 			is different from today (or when you execute this API call), you can
 			specify the first billing anniversary date</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="deleteCustomer"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="deleteCustomer"></a>
 <h2>Delete a Customer</h2>
 <p>Remove a customer from your account. This is
   <strong>not</strong>
@@ -284,33 +293,42 @@
 			account.</td>
     <td>The customers username you wish to delete.</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="retrieveCustomers"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="retrieveCustomers"></a>
 <p>Retrieve Customers</p>
 <p>Obtain a complete list of all customers.</p>
 <table class="table table-bordered table-striped">
@@ -402,23 +420,33 @@
       <em>profile</em>
     </td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;users>&lt;user>&lt;username>user1&lt;/username>&lt;email>example1@example.com&lt;/email>&lt;active>true&lt;/active>&lt;first_name>john&lt;/first_name>&lt;last_name>doe&lt;/last_name>&lt;address>555 any street&lt;/address>
-</span><span class='line'>      &lt;city>any city&lt;/city>&lt;state>CA&lt;/state>&lt;zip>91234&lt;/zip>&lt;country>US&lt;/country>&lt;phone>555-555-5555&lt;/phone>&lt;website>example.com&lt;/website>&lt;/user>&lt;user>&lt;username>user2&lt;/username>&lt;email>example2@example.com&lt;/email>&lt;active>false&lt;/active>&lt;first_name>jane&lt;/first_name>&lt;last_name>doe&lt;/last_name>&lt;address>555 any street&lt;/address>
-</span><span class='line'>      &lt;city>any city&lt;/city>&lt;state>CA&lt;/state>&lt;zip>91234&lt;/zip>&lt;country>US&lt;/country>&lt;phone>555-555-5555&lt;/phone>&lt;website>example.com&lt;/website>&lt;/user>&lt;/users</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="enableCustomer"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
+      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
+      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+{&#8220;username&#8221;:&#8221;username&#8221;,&#8221;email&#8221;:&#8221;example1@example.com&#8221;,&#8221;active&#8221;:&#8221;true&#8221;,&#8221;first_name&#8221;:&#8221;john&#8221;,&#8221;last_name&#8221;:&#8221;doe&#8221;,&#8221;address&#8221;:&#8221;555 any street&#8221;,&#8221;city&#8221;:&#8221;any city&#8221;,&#8221;state&#8221;:&#8221;CA&#8221;,&#8221;zip&#8221;:&#8221;91234&#8221;,&#8221;country&#8221;:&#8221;US&#8221;,&#8221;phone&#8221;:&#8221;555-555-5555&#8221;,&#8221;website&#8221;:&#8221;example.com&#8221;},{&#8220;username&#8221;:&#8221;username&#8221;,&#8221;email&#8221;:&#8221;example2@example.com&#8221;,&#8221;active&#8221;:&#8221;false&#8221;,&#8221;first_name&#8221;:&#8221;jane&#8221;,&#8221;last_name&#8221;:&#8221;doe&#8221;,&#8221;address&#8221;:&#8221;555 any street&#8221;,&#8221;city&#8221;:&#8221;any city&#8221;,&#8221;state&#8221;:&#8221;CA&#8221;,&#8221;zip&#8221;:&#8221;91234&#8221;,&#8221;country&#8221;:&#8221;US&#8221;,&#8221;phone&#8221;:&#8221;555-555-5555&#8221;,&#8221;website&#8221;:&#8221;example.com&#8221;}
+  </div>
+</div>
+<a name="enableCustomer"></a>
 <h2>Enable a Customer</h2>
 <p>Enable a customer so they may start sending out emails again. This call will not enable website access. To
   <a href="#enableWebsiteCustomer">enable website access</a>.</p>
@@ -443,25 +471,38 @@
     </td>
     <td>The customer you are planning to enabling</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User not found&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="disableCustomer"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;User not found&#8221;
+  </div>
+</div>
+<a name="disableCustomer"></a>
 <h2>Disable a Customer</h2>
 <p>This prevents them from sending out emails with SendGrid.</p>
 <table class="table table-bordered table-striped">
@@ -485,25 +526,38 @@
     </td>
     <td>The customer you are planning to disabling</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User not found&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="enableWebsiteCustomer"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;User not found&#8221;
+  </div>
+</div>
+<a name="enableWebsiteCustomer"></a>
 <h2>Enable Website Access To A Customer</h2>
 <p>Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails. To
   <a href="#enableCustomer">enable a customer</a>.</p>
@@ -530,25 +584,38 @@
     <td>The customer you are planning to grant
 			website access</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User not found&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="disableWebsiteCustomer"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;User not found&#8221;
+  </div>
+</div>
+<a name="disableWebsiteCustomer"></a>
 <h2>Disable Website Access To A Customer</h2>
 <p>Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
   <a href="#disableCustomer">disable a customer</a>.</p>
@@ -575,25 +642,38 @@
     <td>The customer you are planning to disallow
 			website access</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>User not found&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="updateCustomerProfile"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>User not found</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;User not found&#8221;
+  </div>
+</div>
+<a name="updateCustomerProfile"></a>
 <h2>Update Customer Profile</h2>
 <p>Allows you to update your customers profile information</p>
 <table class="table table-bordered table-striped">
@@ -672,33 +752,42 @@
     <td>No</td>
     <td>Company of customer</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="updateCustomerPassword"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="updateCustomerPassword"></a>
 <h2>Update Customer Password</h2>
 <p>Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.</p>
 <table class="table table-bordered table-striped">
@@ -736,33 +825,42 @@
     </td>
     <td>Allows you to access password functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="updateCustomerUsername"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="updateCustomerUsername"></a>
 <h2>Update Customer Username</h2>
 <p>Note that your customer account username is used to login to our SMTP server
   <em>and</em>
@@ -808,33 +906,42 @@
     </td>
     <td>Allows you to access profile functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="updateCustomerEmailAddress"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="updateCustomerEmailAddress"></a>
 <h2>Update Customer Email Address</h2>
 <p>This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.</p>
 <table class="table table-bordered table-striped">
@@ -876,32 +983,40 @@
     </td>
     <td>Allows you to access password functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+{% endcodeblock %}
 
   
     <footer>

@@ -109,8 +109,15 @@ navigation:
         <td>Mail domain of new subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -128,8 +135,11 @@ error
 ...
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -219,8 +229,15 @@ error
         <td>Search filter, company of subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response</h3>
    
@@ -248,8 +265,11 @@ CA
 US
 
 555-555-5555 example.com
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock %}
@@ -272,8 +292,15 @@ US
         <td>The subuser you are planning to enabling</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -287,8 +314,11 @@ success
 User not found
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -315,8 +345,15 @@ User not found
         <td>The subuser you are planning to disabling</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -330,8 +367,11 @@ success
 User not found
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -358,8 +398,15 @@ User not found
         <td>The subuser you are planning to grant website access</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -373,8 +420,11 @@ success
 User not found
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -401,8 +451,15 @@ User not found
         <td>The subuser you are planning to disallow website access</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -416,8 +473,11 @@ success
 User not found
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -497,8 +557,15 @@ User not found
         <td>Company of subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -516,8 +583,11 @@ error
 ...
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -556,8 +626,15 @@ error
         <td>Confirm new password</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    success
@@ -573,8 +650,11 @@ error
 ...
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -614,8 +694,15 @@ error
         <td>This is the new username we will be authenticating with our SMTP servers <em>and</em> to access our site. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -633,8 +720,11 @@ error
 ...
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -674,8 +764,15 @@ error
         <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <h3>XML Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
    
@@ -693,8 +790,11 @@ error
 ...
 
  
-  <h3>JSON Request</h3>
-  {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
+    </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}

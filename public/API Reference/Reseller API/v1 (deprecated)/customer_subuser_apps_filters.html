@@ -121,25 +121,35 @@
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>filters>&lt;filter>&lt;name>twitter&lt;/name>&lt;title>Twitter&lt;/title>
-</span><span class='line'>      &lt;description>This plugin allows you to send an email message to twitter&lt;/description>&lt;activated>0&lt;/activated>&lt;/filter>
-</span><span class='line'>    ...
-</span><span class='line'>  &lt;/filters</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... </span></code></pre></td></tr></table></div></figure>
-<hr/><a name="activateApp"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+filters><filter><name>twitter</name><title>Twitter</title>
+      <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
+    &#8230;
+  </filters
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+{&#8220;name&#8221;:&#8221;twitter&#8221;,&#8221;title&#8221;:&#8221;Twitter&#8221;,&#8221;description&#8221;:&#8221;This plugin allows you to send an email message to twitter&#8221;,&#8221;activated&#8221;:false}, &#8230; 
+  </div>
+</div>
+<a name="activateApp"></a>
 <h2>Activate App</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -163,19 +173,32 @@
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="deactivateApp"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+  </div>
+</div>
+<a name="deactivateApp"></a>
 <h2>Deactivate App</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -199,83 +222,123 @@
 			your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="customizeApp"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+result><message>success</message></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+  </div>
+</div>
+<a name="customizeApp"></a>
 <h2>Customize App</h2>
 <p>These API calls require that settings are passed using POST.</p>
-<h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;field_name>field_value&lt;/field_name>
-</span><span class='line'>    ...
-</span><span class='line'>  &lt;/filter</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>error&lt;/message>&lt;message>... error messages ...&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+filter><field_name>field_value</field_name>
+    &#8230;
+  </filter
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+result><message>error</message><message>&#8230; error messages &#8230;</message></result>
+{% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;/filter</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success","settings":{"field_name":"field_value”}</span></code></pre></td></tr></table></div></figure>
+{% codeblock %}
+filter></filter
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=example@example.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;,&#8221;settings&#8221;:{&#8220;field_name&#8221;:&#8221;field_value”}
+{% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"settings":null}
-</span><span class='line'></span></code></pre></td></tr></table></div></figure>
-<hr/><a name="getCurrentSettings"></a>
+{% codeblock %}
+&#8220;settings&#8221;:null}
+
+  </div>
+</div>
+<a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
-<h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;field_name>field_value&lt;/field_name>
-</span><span class='line'>    ...
-</span><span class='line'>  &lt;/filter</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>result>&lt;message>error&lt;/message>&lt;message>... error messages ...&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+filter><field_name>field_value</field_name>
+    &#8230;
+  </filter
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+result><message>error</message><message>&#8230; error messages &#8230;</message></result>
+{% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not
 enabled.</p>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>filter>&lt;/filter</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success","settings":{"field_name":"field_value”}</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+{% codeblock %}
+filter></filter
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.com&amp;method=app
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;,&#8221;settings&#8221;:{&#8220;field_name&#8221;:&#8221;field_value”}
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+{% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"settings":null</span></code></pre></td></tr></table></div></figure>
+{% codeblock %}
+&#8220;settings&#8221;:null
+{% endcodeblock %}
 
   
     <footer>

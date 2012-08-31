@@ -116,19 +116,31 @@
       <em>whitelabel</em>
     </td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;whitelabels>&lt;whitelabel>&lt;mail_domain>email.sendgrid.com&lt;/mail_domain>&lt;url_domain>email.sendgrid.com&lt;/url_domain>&lt;/whitelabel>&lt;whitelabel>&lt;mail_domain>email.example.com&lt;/mail_domain>&lt;url_domain>email.example.com&lt;/url_domain>&lt;/whitelabel>&lt;/whitelabels</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="append"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}  <whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+{% endcodeblock %}
+<h3>Response</h3>
+{% codeblock %}
+{&#8220;mail_domain&#8221;:&#8221;email.sendgrid.com&#8221;,&#8221;url_domain&#8221;:&#8221;email.sendgrid.com&#8221;},{&#8220;mail_domain&#8221;:&#8221;email.example.com&#8221;,&#8221;url_domain&#8221;:&#8221;email.example.com&#8221;}
+  </div>
+</div>
+<a name="append"></a>
 <h2>Append</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -161,32 +173,40 @@
       <em>whitelabel</em>
     </td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+{% endcodeblock %}
 
   
     <footer>

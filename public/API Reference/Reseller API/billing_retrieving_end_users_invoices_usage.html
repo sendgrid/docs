@@ -111,13 +111,19 @@
     <td>Yes</td>
     <td>Must be the invoice number you received from SendGrid.</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.billing.xml?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
+<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;usage>&lt;number>2010010001&lt;/number>&lt;invoices>&lt;invoice>&lt;number>201001000100&lt;/number>&lt;credits>123456&lt;/credits>&lt;date_invoiced>2010-09-01 00:00:00&lt;/date_invoiced>&lt;status>Unpaid&lt;/status>&lt;amount>1001&lt;/amount>&lt;overage>6.95&lt;/overage>&lt;type>Recurring Bill&lt;/type>&lt;prorated>0&lt;/prorated>&lt;start_date>2010-08-01&lt;/start_date>&lt;end_date>2010-08-31&lt;/end_date>&lt;username>user4@example.com&lt;/username>&lt;package>Example Package&lt;/package>&lt;additional_charges>0&lt;/additional_charges>&lt;final_amount>1007.95&lt;/final_amount>&lt;/invoice>&lt;invoice>&lt;number>201001000200&lt;/number>&lt;credits>1333&lt;/credits>&lt;date_invoiced>2010-09-05 00:00:00&lt;/date_invoiced>&lt;status>Unpaid&lt;/status>&lt;amount>13.95&lt;/amount>&lt;overage>0&lt;/overage>&lt;type>Recurring Bill&lt;/type>&lt;prorated>0&lt;/prorated>&lt;start_date>2010-08-01&lt;/start_date>&lt;end_date>2010-08-31&lt;/end_date>&lt;username>user5@example.com&lt;/username>&lt;package>Example Package&lt;/package>&lt;additional_charges>0&lt;/additional_charges>&lt;final_amount>13.95&lt;/final_amount>&lt;/invoice>&lt;/invoices>&lt;/usage</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -128,10 +134,12 @@
 </span><span class='line'>      &lt;error>... error messages ...&lt;/error>
 </span><span class='line'>      ...
 </span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.billing.json?api_user=username&amp;api_key=secureSecret&amp;number=2010010001&amp;task=usag</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
+<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -140,7 +148,7 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"number":"2010010001","invoices":
+</pre></td><td class='code'><pre><code class=''><span class='line'>"number":"2010010001","invoices":
 </span><span class='line'>[{"number":"201001000100","credits":"123456","date_invoiced":"2010-09-01
 </span><span class='line'>00:00:00","status":"Unpaid","amount":1001,"overage":6.95,"type":"Recurring
 </span><span class='line'>Bill","prorated":0,"start_date":"2010-08-01","end_date":"2010-08-31","username":"user4@example.com","package":"Example
@@ -148,9 +156,9 @@
 </span><span class='line'>00:00:00","status":"Unpaid","amount":13.95,"overage":0,"type":"Recurring
 </span><span class='line'>Bill","prorated":0,"start_date":"2010-08-01","end_date":"2010-08-31","username":"user5@example.com","package":"Example
 </span><span class='line'>Package","additional_charges":0,"final_amount":13.95}]</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 
   
     <footer>

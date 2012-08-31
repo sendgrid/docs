@@ -332,7 +332,8 @@
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>curl -F <span class="nv">to</span><span class="o">=</span>recipient@domain.com -F <span class="nv">toname</span><span class="o">=</span><span class="nb">test</span> -F <span class="nv">subject</span><span class="o">=</span><span class="s2">&quot;Example Subject&quot;</span> -F <span class="nv">text</span><span class="o">=</span><span class="s2">&quot;testing text body&quot;</span> --form-string <span class="nv">html</span><span class="o">=</span><span class="s2">&quot;&lt;strong&gt;testing html body&lt;/strong&gt;&quot;</span> -F <span class="nv">from</span><span class="o">=</span><span class="nb">test</span>@yourdomain.com -F <span class="nv">api_user</span><span class="o">=</span>sendgridUsername -F <span class="nv">api_key</span><span class="o">=</span>sendgridPassword -F files<span class="o">[</span>attachment.gz<span class="o">]=</span>@f.php.gz https://sendgrid.com/api/mail.send.json
 </span></code></pre></td></tr></table></div></figure>
-<hr/>
+
+
 	
 <h3>Raw HTTP Dump</h3>
 <p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>

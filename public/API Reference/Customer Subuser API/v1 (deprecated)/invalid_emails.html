@@ -127,16 +127,16 @@
   <h4>Command</h4>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.invalidemails.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;invalidemails>&lt;invalidemail>&lt;email>isaac@hotmail.comm&lt;/email>&lt;reason>Mail domain mentioned in email address is unknown&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@hotmail&lt;/email>&lt;reason>Bad Syntax&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@example.com&lt;/email>&lt;reason>Known bad domain&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;/invalidemails</span></code></pre></td></tr></table></div></figure>
   <h3>JSON</h3>
   <h4>Command</h4>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="deleteInvalidEmails"></a>
   <h2>Delete Invalid Emails</h2>
   Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
@@ -172,22 +172,22 @@
   <h4>Command</h4>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.invalidemails.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
   <h3>JSON</h3>
   <h4>Command</h4>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.invalidemails.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-  <h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+  <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

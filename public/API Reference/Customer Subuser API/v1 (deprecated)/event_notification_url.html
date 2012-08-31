@@ -118,18 +118,26 @@
         <td>The username of the subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>url>http://www.SubUserPostUrlHere.com&lt;/url</span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+</pre></td><td class='code'><pre><code class=''><span class='line'>url>http://www.SubUserPostUrlHere.com&lt;/url</span></code></pre></td></tr></table></div></figure>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"url":"http:\/\/www.SubUserPostUrlHere.com"}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"url":"http:\/\/www.SubUserPostUrlHere.com"}</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="updateSetURL"></a>
   <h2>Update / Set URL</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -160,18 +168,26 @@
         <td>This is the new event notification URL</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <hr/><a name="delete"></a>
   <h2>Delete</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -196,18 +212,26 @@
         <td>The name of the subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-  <h3>JSON API Request</h3>
+    </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.eventposturl.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
-  <h4>Return</h4>
+  <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
 </div>
 
   

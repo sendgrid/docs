@@ -119,33 +119,42 @@
     <td>The customer who will have their account
 		limits retrieved</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;credits>&lt;credit>0&lt;/credit>&lt;credit_remain>2000&lt;/credit_remain>&lt;last_reset>2011-02-21&lt;/last_reset>&lt;/credits</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>
-</span><span class='line'>      ...
-</span><span class='line'>      &lt;error>... error messages ...&lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="noLimit"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors>
+      &#8230;
+      <error>&#8230; error messages &#8230;</error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=retriev
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+{&#8220;credit&#8221;:&#8221;0&#8221;,&#8221;credit_remain&#8221;:&#8221;2000&#8221;,&#8221;last_reset&#8221;:&#8221;2011-02-21&#8221;}
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="noLimit"></a>
 <h2>No Limit</h2>
 <p>Obtain a complete list of all customer.</p>
 <table class="table table-bordered table-striped">
@@ -178,33 +187,42 @@
     </td>
     <td>Allows you to access limit functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>&lt;error>
-</span><span class='line'>        ... error messages ...
-</span><span class='line'>      &lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="recurringReset"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors><error>
+        &#8230; error messages &#8230;
+      </error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=non
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="recurringReset"></a>
 <h2>Recurring Reset</h2>
 <p>A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.</p>
 <table class="table table-bordered table-striped">
@@ -274,33 +292,42 @@
     <td>Allows you to access account limit
 		functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>&lt;error>
-</span><span class='line'>        ... error messages ...
-</span><span class='line'>      &lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="totalCredits"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors><error>
+        &#8230; error messages &#8230;
+      </error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=recurring&amp;credits=200&amp;period=dail
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="totalCredits"></a>
 <h2>Total Credits</h2>
 <p>Set a subusers credits to a specified amount.</p>
 <table class="table table-bordered table-striped">
@@ -341,33 +368,42 @@
     <td>Allows you to access account limit
 			functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>&lt;error>
-</span><span class='line'>        ... error messages ...
-</span><span class='line'>      &lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="incrementCredits"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors><error>
+        &#8230; error messages &#8230;
+      </error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=total&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="incrementCredits"></a>
 <h2>Increment Credits</h2>
 <p>Increment a subusers credits by a specified amount.</p>
 <table class="table table-bordered table-striped">
@@ -408,33 +444,42 @@
     <td>Allows you to access account limit
 			functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>&lt;error>
-</span><span class='line'>        ... error messages ...
-</span><span class='line'>      &lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
-<hr/><a name="decrementCredits"></a>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors><error>
+        &#8230; error messages &#8230;
+      </error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=increment&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+  </div>
+</div>
+<a name="decrementCredits"></a>
 <h2>Decrement Credits</h2>
 <p>Decrement a subusers credits by a specified amount.</p>
 <table class="table table-bordered table-striped">
@@ -475,32 +520,40 @@
     <td>Allows you to access account limit
 		functionality</td>
   </tr>
-</table><h3>XML API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>error&lt;/message>&lt;errors>&lt;error>
-</span><span class='line'>        ... error messages ...
-</span><span class='line'>      &lt;/error>
-</span><span class='line'>      ...
-</span><span class='line'>    &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}  <result><message>success</message></result>
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}  <result><message>error</message><errors><error>
+        &#8230; error messages &#8230;
+      </error>
+      &#8230;
+    </errors></result>
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=limit&amp;user=customer@example.com&amp;task=decrement&amp;credits=20
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;success&#8221;
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock %}
+&#8220;message&#8221;:&#8221;error&#8221;,&#8221;errors&#8221;:[&#8230;&#8221;error messages&#8221;&#8230;]
+{% endcodeblock %}
 
   
     <footer>

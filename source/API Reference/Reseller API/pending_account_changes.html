@@ -31,8 +31,15 @@ navigation:
     <td>Must be either upgrade, downgrade, close.
 		Optional search parameter.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
@@ -44,8 +51,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=lis
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -54,8 +64,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="deletePendingChanges"></a>
+  </div>
+</div>
+<a name="deletePendingChanges"></a>
 <h2>Delete Pending Changes</h2>
 <p>Cancel/Revert a pending change.</p>
 <table class="table table-bordered table-striped">
@@ -75,8 +86,15 @@ navigation:
     <td>Yes</td>
     <td>Must be an User under your account.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -88,8 +106,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -98,8 +119,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="immediateUpgrade"></a>
+  </div>
+</div>
+<a name="immediateUpgrade"></a>
 <h2>Immediate Upgrade</h2>
 <p>Once an upgrade happens, an invoice is generated for that user. If it's a free user to a paid account, the full price for that upgrade will be created. If it's in between billing periods, a prorated discount will be applied to the invoice.</p>
 <table class="table table-bordered table-striped">
@@ -139,8 +161,15 @@ navigation:
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -152,8 +181,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h4>Return - Success'); ?></h4>
 {% codeblock %}
@@ -162,8 +194,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="immediateDowngrade"></a>
+  </div>
+</div>
+<a name="immediateDowngrade"></a>
 <h2>Immediate Downgrade</h2>
 <p>Once a downgrade happens, an invoice is generated for that user. Free customers are not allowed to downgrade.</p>
 <table class="table table-bordered table-striped">
@@ -203,8 +236,15 @@ navigation:
 		to does not require an IP or whitelabel, you may place them in an IP
 		group.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -216,8 +256,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -226,8 +269,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="immediateClose"></a>
+  </div>
+</div>
+<a name="immediateClose"></a>
 <h2>Immediate Close</h2>
 <p>Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.</p>
 <table class="table table-bordered table-striped">
@@ -253,8 +297,15 @@ navigation:
     <td>Define an ip group you will place the user
 		into once the customers account is closed.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -266,8 +317,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -276,8 +330,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="scheduledUpgrade"></a>
+  </div>
+</div>
+<a name="scheduledUpgrade"></a>
 <h2>Scheduled Upgrade</h2>
 <p>Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.</p>
 <table class="table table-bordered table-striped">
@@ -317,8 +372,15 @@ navigation:
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -330,8 +392,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -340,8 +405,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="scheduledDowngrade"></a>
+  </div>
+</div>
+<a name="scheduledDowngrade"></a>
 <h2>Scheduled Downgrade</h2>
 <p>Apply a downgrade at the end of the user's billing cycle. Once a downgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.</p>
 <table class="table table-bordered table-striped">
@@ -381,8 +447,15 @@ navigation:
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -394,8 +467,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -404,8 +480,9 @@ navigation:
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-{% endcodeblock %}
-<hr/><a name="scheduledClose"></a>
+  </div>
+</div>
+<a name="scheduledClose"></a>
 <h2>Scheduled Close</h2>
 <p>Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.</p>
 <table class="table table-bordered table-striped">
@@ -431,8 +508,15 @@ navigation:
     <td>Define an ip group you will place the user
 		into once the customers account is closed.</td>
   </tr>
-</table><h3>XML Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+</table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -444,8 +528,11 @@ navigation:
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON Request</h3>
-{% codeblock %}https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+  </div>
+  <div class="tab-pane" id="-xml">
+     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}

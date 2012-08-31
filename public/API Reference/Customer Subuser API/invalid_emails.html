@@ -93,7 +93,7 @@
     
   </header>
   
-  <p><hr/><a name="retrieveInvalidEmails"></a></p>
+  <hr/><a name="retrieveInvalidEmails"></a>
 <h2>Retrieve Invalid Emails</h2>
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -121,18 +121,26 @@
       <td>Must be set to 1</td>
       <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
+<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;invalidemails>&lt;invalidemail>&lt;email>isaac@hotmail.comm&lt;/email>&lt;reason>Mail domain mentioned in email address is unknown&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@hotmail&lt;/email>&lt;reason>Bad Syntax&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;invalidemail>&lt;email>isaac@example.com&lt;/email>&lt;reason>Known bad domain&lt;/reason>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/invalidemail>&lt;/invalidemails</span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=</span></code></pre></td></tr></table></div></figure>
-<h4>Return</h4>
+<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}</span></code></pre></td></tr></table></div></figure>
 <hr/><a name="deleteInvalidEmails"></a>
 <h2>Delete Invalid Emails</h2>
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
@@ -162,24 +170,32 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
       <td>Must be a invalid email</td>
       <td>You must specify the invalid emails to remove</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><ul class="nav nav-tabs">
+  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.invalidemails.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
-<h3>JSON API Request</h3>
+  </div>
+  <div class="tab-pane active" id="-xml">
+     <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
-<h4>Return - Error</h4>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Error</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
 
   
     <footer>
