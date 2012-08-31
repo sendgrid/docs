@@ -41,13 +41,15 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
+{% codeblock %}
+invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+{% codeblock %}
+{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 <hr/><a name="deleteInvalidEmails"></a>
 <h2>Delete Invalid Emails</h2>
@@ -86,17 +88,21 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>Email does not exist</message></result>
+{% codeblock %}
+result><message>Email does not exist</message></result>
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=invalidemails&amp;user=example@example.com&amp;task=delete&amp;email=invalidemail@example.com
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"Email does not exist"
+{% codeblock %}
+"message":"Email does not exist"
 {% endcodeblock %}

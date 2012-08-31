@@ -42,7 +42,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+{% codeblock %}
+{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 <hr/><a name="deleteInvalidEmails"></a>
 <h2>Delete Invalid Emails</h2>
@@ -86,8 +87,10 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 {% codeblock %}https://sendgrid.com/apiv2/customer.invalidemails.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=invalidemail@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"Email does not exist"
+{% codeblock %}
+"message":"Email does not exist"
 {% endcodeblock %}

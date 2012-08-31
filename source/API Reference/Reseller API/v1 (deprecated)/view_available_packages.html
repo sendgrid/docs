@@ -10,10 +10,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.packages.xml?api_user=username&amp;api_key=secureSecre
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><packages><package><name>Basic Package</name><price>9.95</price><description>Basic Package description</description><credits>10000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package><package><name>Silver Package</name><price>79.95</price><description>Silver Package Description</description><credits>50000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package></packages></result>
+{% codeblock %}
+result><packages><package><name>Basic Package</name><price>9.95</price><description>Basic Package description</description><credits>10000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package><package><name>Silver Package</name><price>79.95</price><description>Silver Package Description</description><credits>50000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package></packages></result>
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><errors>
+{% codeblock %}
+result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
@@ -23,8 +25,10 @@ navigation:
 {% codeblock %}https://sendgrid.com/api/distributor.packages.json?api_user=username&amp;api_key=secureSecre
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}{"name":"Basic Package","price":9.95,"description":"Basic Package description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver Package","price":79.95,"description":"Silver Package description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}
+{% codeblock %}
+{"name":"Basic Package","price":9.95,"description":"Basic Package description","credits":10000,"overage":0.001,"has_reseller":false,"has_ip":false,"distributor_price":50},{"name":"Silver Package","price":79.95,"description":"Silver Package description","credits":50000,"overage":0.001,"has_reseller":false,"has_ip":true}
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

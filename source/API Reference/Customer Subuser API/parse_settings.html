@@ -35,16 +35,19 @@ navigation:
 {% codeblock %}    <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
   <h4>Return - Empty Set</h4>
-{% codeblock %}parse></parse
+{% codeblock %}
+parse></parse
 {% endcodeblock %}
   <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&task=get&user=example@example.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+{% codeblock %}
+"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
 {% endcodeblock %}
   <h4>Return - Empty Set</h4>
-{% codeblock %}"parse":[]
+{% codeblock %}
+"parse":[]
 {% endcodeblock %}
   <p><hr/><a name="createNewEntry"></a></p>
   <h2>Create New Entry</h2>
@@ -98,10 +101,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.co
 {% endcodeblock %}
   <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <p><hr/><a name="editEntry"></a></p>
   <h2>Edit Entry</h2>
@@ -155,10 +160,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=parse&user=example@example.co
 {% endcodeblock %}
   <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <p><hr/><a name="deleteEntry"></a></p>
   <h2>Delete Entry</h2>
@@ -206,9 +213,11 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&user=example@example.co
 {% endcodeblock %}
   <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>

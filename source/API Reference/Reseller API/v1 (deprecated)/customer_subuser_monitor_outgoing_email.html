@@ -64,10 +64,12 @@ account</td>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="edit"></a>
 <h2>Edit Monitor Record</h2>
@@ -130,10 +132,12 @@ sample to</td>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="delete"></a>
 <h2>Delete Monitor Record</h2>
@@ -178,10 +182,12 @@ record</td>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=delete&amp;name=recordToDelet
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="list"></a>
 <h2>List All Monitor Records</h2>
@@ -211,7 +217,8 @@ List all available monitor records a reseller has.
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=lis
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
+{% codeblock %}
+{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
 {% endcodeblock %}
 <hr/><a name="append"></a>
 <h2>Append A Customer Subuser To A Monitor Record</h2>
@@ -263,10 +270,12 @@ appending</td>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/><a name="detach"></a>
 <h2>Detach A Monitor Record From A Customer Subuser</h2>
@@ -312,8 +321,10 @@ monitor record from</td>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=detach&amp;user=example@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

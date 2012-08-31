@@ -31,7 +31,8 @@ navigation:
   {% codeblock %}https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=lis
 {% endcodeblock %}
   <h4>Return</h4>
-  {% codeblock %}{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}
+  {% codeblock %}
+{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}
 {% endcodeblock %}
   <hr/><a name="append"></a>
   <h2>Append</h2>
@@ -75,9 +76,11 @@ navigation:
   {% codeblock %}https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;user=example@example.com&amp;mail_domain=email.sendgrid.co
 {% endcodeblock %}
   <h4>Return - Success</h4>
-  {% codeblock %}"message":"success"
+  {% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-  {% codeblock %}"message":"error","errors":[..."error messages"...]
+  {% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>

@@ -47,10 +47,13 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
+{% codeblock %}
+
+{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="noLimit"></a>
   <h2>No Limit</h2>
@@ -93,10 +96,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=non
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="recurringReset"></a>
   <h2>Recurring Reset</h2>
@@ -169,10 +174,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=recurring&credits=200&period=dail
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="totalCredits"></a>
   <h2>Total Credits</h2>
@@ -221,10 +228,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=total&credits=20
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="incrementCredits"></a>
   <h2>Increment Credits</h2>
@@ -273,10 +282,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <hr/><a name="decrementCredits"></a>
   <h2>Decrement Credits</h2>
@@ -325,9 +336,11 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=20
 {% endcodeblock %}
   <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
   <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>

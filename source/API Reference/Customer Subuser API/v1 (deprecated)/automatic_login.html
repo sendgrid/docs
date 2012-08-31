@@ -39,11 +39,13 @@ navigation:
   {% codeblock %}https://sendgrid.com/api/user.geturl.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
   <h4>Return</h4>
-  {% codeblock %}"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
+  {% codeblock %}
+"params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 {% endcodeblock %}
   <hr/><a name="iFrameUsage"></a>
   <h2>iFrame Usage</h2>
   Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
-  {% codeblock %}iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
+  {% codeblock %}
+iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe
 {% endcodeblock %}
 </div>

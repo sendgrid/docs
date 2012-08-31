@@ -52,7 +52,8 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{% codeblock %}
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
 <hr/><a name="deleteUnsubscribes"></a>
@@ -102,10 +103,12 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"Email does not exist"
+{% codeblock %}
+"message":"Email does not exist"
 {% endcodeblock %}
 <hr/><a name="addUnsubscribes"></a>
 <h2>Add Unsubscribes</h2>
@@ -154,8 +157,10 @@ navigation:
 {% codeblock %}https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"Email already exists"
+{% codeblock %}
+"message":"Email already exists"
 {% endcodeblock %}

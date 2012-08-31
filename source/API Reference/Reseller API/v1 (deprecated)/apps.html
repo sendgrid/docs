@@ -45,7 +45,8 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}filters><filter><name>twitter</name><title>Twitter</title>
+{% codeblock %}
+filters><filter><name>twitter</name><title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
     ...
   </filters
@@ -54,7 +55,8 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+{% codeblock %}
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
 <hr/><a name="activateApp"></a>
 <h2>Activate App</h2>
@@ -92,13 +94,15 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <hr/><a name="deactivateApp"></a>
 <h2>Deactivate App</h2>
@@ -136,13 +140,15 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}result><message>success</message></result>
+{% codeblock %}
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return</h4>
-{% codeblock %}"message":"success"
+{% codeblock %}
+"message":"success"
 {% endcodeblock %}
 <hr/><a name="customizeApp"></a>
 <h2>Customize App</h2>
@@ -151,26 +157,31 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}filter><field_name>field_value</field_name>
+{% codeblock %}
+filter><field_name>field_value</field_name>
     ...
   </filter
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><message>... error messages ...</message></result>
+{% codeblock %}
+result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}filter></filter
+{% codeblock %}
+filter></filter
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.co
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success","settings":{"field_name":"field_value”}
+{% codeblock %}
+"message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}"settings":null}
+{% codeblock %}
+"settings":null}
 
 {% endcodeblock %}
 <hr/><a name="getCurrentSettings"></a>
@@ -179,27 +190,33 @@ to identify a app.</p>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}filter><field_name>field_value</field_name>
+{% codeblock %}
+filter><field_name>field_value</field_name>
     ...
   </filter
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}result><message>error</message><message>... error messages ...</message></result>
+{% codeblock %}
+result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}filter></filter
+{% codeblock %}
+filter></filter
 {% endcodeblock %}
 <h3>JSON API Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
 {% endcodeblock %}
 <h4>Return - Success</h4>
-{% codeblock %}"message":"success","settings":{"field_name":"field_value”}
+{% codeblock %}
+"message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
 <h4>Return - Error</h4>
-{% codeblock %}"message":"error","errors":[..."error messages"...]
+{% codeblock %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}"settings":null
+{% codeblock %}
+"settings":null
 {% endcodeblock %}
