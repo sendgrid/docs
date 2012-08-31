@@ -149,14 +149,14 @@ is different from today (or when you execute this API call), you can
 specify the first billing anniversary date</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-555&amp;free_user=tru
+https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -169,10 +169,10 @@ https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&amp;api_key=secure
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.add.json?api_user=username&amp;api_key=secureSecret&amp;username=newcustomer@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=newcustomer@example.com&amp;country=US&amp;phone=555-55
+https://sendgrid.com/apiv2/reseller.add.json?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -181,8 +181,10 @@ https://sendgrid.com/apiv2/reseller.add.json?api_user=username&amp;api_key=secur
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="deleteCustomer"></a>
 <h2>Delete a Customer</h2>
 Remove a customer from your account. This is
@@ -206,14 +208,14 @@ account.</td>
       <td>The customers username you wish to delete.</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&api_key=secureSecret&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -226,10 +228,10 @@ https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&api_key=secureSecret&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -238,6 +240,7 @@ https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <a name="retrieveCustomers"></a>
@@ -333,25 +336,25 @@ currently active</td>
       </td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=ge
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
-      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
+      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=ge
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=get
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -360,8 +363,10 @@ any street","city":"any
 city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555
 any street","city":"any
 city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="enableCustomer"></a>
 <h2>Enable a Customer</h2>
 Enable a customer so they may start sending out emails again. This call will not enable website access. To
@@ -388,14 +393,14 @@ Enable a customer so they may start sending out emails again. This call will not
       <td>The customer you are planning to enabling</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#enable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#enable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -404,10 +409,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=enable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=enable&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -415,9 +420,11 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-"message":"User not found"
+"message":"User not found"
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="disableCustomer"></a>
 <h2>Disable a Customer</h2>
 This prevents them from sending out emails with SendGrid.
@@ -443,14 +450,14 @@ This prevents them from sending out emails with SendGrid.
       <td>The customer you are planning to disabling</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#disable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#disable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=disable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -459,10 +466,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=disabl
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -470,7 +477,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-"message":"User not found"
+"message":"User not found"
+{% endcodeblock %}
   </div>
 </div>
 <a name="enableWebsiteCustomer"></a>
@@ -501,14 +509,14 @@ access</td>
 access</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#website-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#website-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="website-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -517,10 +525,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="website-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_enable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -529,8 +537,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="disableWebsiteCustomer"></a>
 <h2>Disable Website Access To A Customer</h2>
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
@@ -559,14 +569,14 @@ website access</td>
 website access</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#unwebsite-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#unwebsite-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="unwebsite-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=website_disable&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=website_disable&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -575,10 +585,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 {% codeblock %}  <result><message>User not found</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="unwebsite-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=website_disabl
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=website_disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -587,8 +597,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"User not found"
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="updateCustomerProfile"></a>
 <h2>Update Customer Profile</h2>
 Allows you to update your customers profile information
@@ -669,14 +681,14 @@ to update profile information</td>
       <td>Company of customer</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#update-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#update-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="update-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -689,10 +701,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="update-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=set&amp;user=customer@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -701,8 +713,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="updateCustomerPassword"></a>
 <h2>Update Customer Password</h2>
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
@@ -742,14 +756,14 @@ password</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#password-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#password-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="password-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -762,10 +776,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="password-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=password&amp;user=customer@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -774,8 +788,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="updateCustomerUsername"></a>
 <h2>Update Customer Username</h2>
 Note that your customer account username is used to login to our SMTP server
@@ -828,14 +844,14 @@ This update takes effect immediately</td>
       <td>Allows you to access profile functionality</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#name-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#name-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="name-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -848,10 +864,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="name-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setUsername&amp;user=customer@example.com&amp;username=newcustomer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -859,9 +875,11 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
+<hr/>
 <a name="updateCustomerEmailAddress"></a>
 <h2>Update Customer Email Address</h2>
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
@@ -904,14 +922,14 @@ contacting customer. This update takes effect immediately</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#email-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#email-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="email-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -924,10 +942,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="email-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=profile&amp;task=setEmail&amp;user=customer@example.com&amp;email=newcustomer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -937,3 +955,5 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div>
+</div>
