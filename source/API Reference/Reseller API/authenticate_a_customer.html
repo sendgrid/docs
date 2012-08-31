@@ -30,14 +30,14 @@ navigation:
 		access authentication functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#auth-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#auth-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="auth-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&user=customer@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -50,10 +50,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="auth-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;user=customer@example.com&amp;password=theirsubmittedpassword&amp;method=aut
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&user=customer@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -63,3 +63,5 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div>
+</div>

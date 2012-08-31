@@ -93,8 +93,7 @@
     
   </header>
   
-  <div>
-  <hr/><a name="retrieveUnsubscribes"></a>
+    <hr/><a name="retrieveUnsubscribes"></a>
   <h2>Retrieve Unsubscribes</h2>
   Note that you can use
   <em>either</em>
@@ -130,27 +129,29 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;unsubscribes>&lt;unsubscribe>&lt;email>email1@domain.com&lt;/email>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/unsubscribe>&lt;unsubscribe>&lt;email>email2@domain2.com&lt;/email>&lt;created>2009-06-10 12:40:30&lt;/created>&lt;/unsubscribe>&lt;/unsubscribes</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=get&amp;date=</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 </span><span class='line'> </span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
   <hr/><a name="deleteUnsubscribes"></a>
   <h2>Delete Unsubscribes</h2>
   Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
@@ -183,14 +184,14 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -198,16 +199,18 @@
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email does not exist&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&api_key=secureSecret&user=example@example.com&task=delete&email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email does not exist"</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
   <hr/><a name="addUnsubscribes"></a>
   <h2>Add Unsubscribes</h2>
   Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
@@ -240,14 +243,14 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="add-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=add&email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -255,10 +258,10 @@
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>Email already exists&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/user.unsubscribes.json?api_user=username&api_key=secureSecret&user=example@example.com&task=add&email=unsubscribe@sample.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
@@ -266,7 +269,7 @@
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"Email already exists"</span></code></pre></td></tr></table></div></figure>
 </div>
-
+</div>
   
     <footer>
       

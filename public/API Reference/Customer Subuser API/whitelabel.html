@@ -93,8 +93,7 @@
     
   </header>
   
-  <div>
-  With the whitelabel API calls you will be able to retrieve whitelabel settings related to your account.
+    With the whitelabel API calls you will be able to retrieve whitelabel settings related to your account.
   <hr/><a name="list"></a>
   <h2>List</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -111,25 +110,27 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&api_key=secureSecret&task=lis</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;whitelabels>&lt;whitelabel>&lt;mail_domain>email.sendgrid.com&lt;/mail_domain>&lt;url_domain>email.sendgrid.com&lt;/url_domain>&lt;/whitelabel>&lt;whitelabel>&lt;mail_domain>email.example.com&lt;/mail_domain>&lt;url_domain>email.example.com&lt;/url_domain>&lt;/whitelabel>&lt;/whitelabels</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&api_key=secureSecret&task=lis</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
   <hr/><a name="append"></a>
   <h2>Append</h2>
   <table class="table table-bordered table-striped"><tbody>
@@ -156,14 +157,14 @@
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#append-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#append-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;user=example@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.xml?api_user=username&api_key=secureSecret&task=append&user=example@example.com&mail_domain=email.sendgrid.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -179,10 +180,10 @@
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="append-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;user=example@example.com&amp;mail_domain=email.sendgrid.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.whitelabel.json?api_user=username&api_key=secureSecret&task=append&user=example@example.com&mail_domain=email.sendgrid.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
@@ -190,7 +191,7 @@
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 </div>
-
+</div>
   
     <footer>
       

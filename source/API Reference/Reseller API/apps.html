@@ -4,7 +4,7 @@ title: Apps
 navigation:
    show: true
 ---
-<hr/><a name="list"></a>
+<a name="list"></a>
 <h2>List</h2>
 <p>List all of the available apps.</p>
 <p>Note: The
@@ -41,30 +41,31 @@ navigation:
     <td>Allows you to access apps functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filters><filter><name>twitter</name><title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
     ...
-  </filters
+  </filters>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;method=apps&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+{% endcodeblock %}
   </div>
 </div>
 <a name="activateApp"></a>
@@ -100,23 +101,23 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access apps functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="activate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -156,41 +157,42 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access apps functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="deactivate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=customer@example.co
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 "message":"success"
+{% endcodeblock %}
   </div>
 </div>
 <a name="customizeApp"></a>
 <h2>Customize App</h2>
 <p>These API calls require that settings are passed using POST.</p>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#customize-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#customize-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="customize-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
@@ -210,10 +212,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 filter></filter
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="customize-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -223,20 +225,20 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
 "settings":null}
-
+{% endcodeblock %}
   </div>
 </div>
 <a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#settings-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#settings-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="settings-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=customer@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
@@ -253,13 +255,13 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-filter></filter
+<filter></filter>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="settings-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=customer@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -274,3 +276,5 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "settings":null
 {% endcodeblock %}
+</div>
+</div>

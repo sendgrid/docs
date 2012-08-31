@@ -93,8 +93,7 @@
     
   </header>
   
-  <div>
-  Receive a sample of an outgoing message by a specific subuser.
+    Receive a sample of an outgoing message by a specific subuser.
 
 The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a subuser. Multiple subuser can be appended to a single monitor record.
   <hr/><a name="createMonitorRecord"></a>
@@ -134,14 +133,14 @@ The first step is to create a Monitor Record. Once the monitor record has been c
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=create&name=myMonitor&email=example@example.com&frequency=1000</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -157,16 +156,18 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&amp;api_key=secureSecret&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secureSecret&task=create&name=myMonitor&email=example@example.com&frequency=1000</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</div>
+</div>
   <hr/><a name="edit"></a>
   <h2>Edit Monitor Record</h2>
   Make modifications to an existing Monitor record.
@@ -210,14 +211,14 @@ The first step is to create a Monitor Record. Once the monitor record has been c
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -233,16 +234,18 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&amp;api_key=secureSecret&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secureSecret&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</div>
+</div>
   <hr/><a name="delete"></a>
   <h2>Delete Monitor Record</h2>
   Deleting a monitor record will remove it from SendGrid&#8217;s system. <strong>Make sure no users are currently using the monitor record when removing, or removal will fail.</strong>
@@ -268,14 +271,14 @@ The first step is to create a Monitor Record. Once the monitor record has been c
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;name=recordToDelet</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=delete&name=recordToDelet</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -291,16 +294,18 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;name=recordToDelet</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secureSecret&task=delete&name=recordToDelet</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</div>
+</div>
   <hr/><a name="list"></a>
   <h2>List All Monitor Records</h2>
   List all available monitor records a reseller has.
@@ -320,25 +325,27 @@ The first step is to create a Monitor Record. Once the monitor record has been c
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#listrecords-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#listrecords-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="listrecords-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=lis</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;monitors>&lt;monitor>&lt;name>sampleNameA&lt;/name>&lt;email>example@example.com&lt;/email>&lt;frequency>1000&lt;/frequency>&lt;users>&lt;/users>&lt;/monitor>&lt;monitor>&lt;name>sampleNameB&lt;/name>&lt;email>example@example.com&lt;/email>&lt;frequency>10000&lt;/frequency>&lt;users>&lt;user>user1@example.com&lt;/user>&lt;user>user2@example.com&lt;/user>&lt;/users>&lt;/monitor>&lt;/monitors</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="listrecords-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&amp;api_key=secureSecret&amp;task=lis</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secureSecret&task=lis</span></code></pre></td></tr></table></div></figure>
   <h3>Response</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}</span></code></pre></td></tr></table></div></figure>
+</div>
+</div>
   <hr/><a name="append"></a>
   <h2>Append A Subuser To A Monitor Record</h2>
   Append a monitor record to a existing record onto a subuser.
@@ -374,10 +381,10 @@ The first step is to create a Monitor Record. Once the monitor record has been c
   <li><a href="#-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;name=myMonitor&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=append&name=myMonitor&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -393,16 +400,18 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="append-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;name=myMonitor&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=append&name=myMonitor&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+  </div>
+</div>
   <hr/><a name="detach"></a>
   <h2>Detach A Monitor Record From A Subuser</h2>
   Detach a subuser from a monitor record.
@@ -428,14 +437,14 @@ The first step is to create a Monitor Record. Once the monitor record has been c
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#detach-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#detach-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="detach-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&amp;api_key=secureSecret&amp;task=detach&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secureSecret&task=detach&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>&lt;result>&lt;message>success&lt;/message>&lt;/result></span></code></pre></td></tr></table></div></figure>
@@ -451,10 +460,10 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 </span><span class='line'>        ...
 </span><span class='line'>      &lt;/errors>&lt;/result></span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="detach-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&amp;api_key=secureSecret&amp;task=detach&amp;user=example@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secureSecret&task=detach&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
@@ -462,7 +471,7 @@ The first step is to create a Monitor Record. Once the monitor record has been c
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
 </div>
-
+</div>
   
     <footer>
       
