@@ -54,14 +54,14 @@ navigation:
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -74,10 +74,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=create&amp;name=myMonitor&amp;email=example@example.com&amp;frequency=1000
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -86,6 +86,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -142,14 +143,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -162,10 +163,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=edit&amp;name=myMonitor&amp;new_name=updatedMonitor&amp;new_email=example@example.com&amp;new_frequency=5
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -174,6 +175,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -212,14 +214,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=delete&amp;name=recordToDelet
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -232,10 +234,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=delete&amp;name=recordToDelet
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -244,6 +246,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -274,27 +277,28 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=lis
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=lis
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
+{% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=lis
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -339,14 +343,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#append-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#append-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=append&name=myMonitor&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -359,10 +363,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="append-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=append&amp;name=myMonitor&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=append&name=myMonitor&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -371,7 +375,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
-  </div>
+ {% endcodeblock %}
+ </div>
 </div>
 <hr/>
 <a name="detach"></a>
@@ -409,14 +414,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access monitor functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#detach-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#detach-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="detach-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=detach&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=detach&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -429,10 +434,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="detach-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=monitor&amp;task=detach&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=detach&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -442,3 +447,4 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

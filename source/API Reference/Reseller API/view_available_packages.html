@@ -7,14 +7,14 @@ navigation:
 <p>List all packages available to your account.</p>
 <p>There are no extra parameters required for this call</p>
 <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.xml?api_user=username&amp;api_key=secureSecre
+https://sendgrid.com/apiv2/reseller.packages.xml?api_user=username&api_key=secureSecre
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><packages><package><name>Basic Package</name><price>9.95</price><description>Basic Package description</description><credits>10000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package><package><name>Silver Package</name><price>79.95</price><description>Silver Package Description</description><credits>50000</credits><overage>0.001</overage><has_reseller>false</has_reseller><has_ip>false</has_ip><distributor_price>50</distributor_price></package></packages></result>
@@ -27,10 +27,10 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=username&amp;api_key=s
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.packages.json?api_user=username&amp;api_key=secureSecre
+https://sendgrid.com/apiv2/reseller.packages.json?api_user=username&api_key=secureSecre
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -40,3 +40,4 @@ https://sendgrid.com/apiv2/reseller.packages.json?api_user=username&amp;api_key=
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

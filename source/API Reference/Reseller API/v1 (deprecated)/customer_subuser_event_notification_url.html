@@ -4,7 +4,7 @@ title: Customer Subuser Event Notification URL
 navigation:
    show: true
 ---
-<hr/><a name="retrieve"></a>
+<a name="retrieve"></a>
 <h2>Retrieve</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -44,7 +44,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.com&amp;method=eventpostur
@@ -101,7 +101,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
@@ -152,7 +152,7 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api
 result><message>success</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="-json">
      <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.com&amp;method=eventpostur

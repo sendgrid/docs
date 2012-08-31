@@ -28,27 +28,28 @@ navigation:
     </td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=whitelabel&task=list
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
+{% codeblock %}  <whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=lis
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=whitelabel&task=list
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -86,14 +87,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     </td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#append-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#append-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.co=m
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -106,10 +107,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="append-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;method=whitelabel&amp;task=append&amp;user=customer@example.com&amp;mail_domain=email.sendgrid.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -119,3 +120,4 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

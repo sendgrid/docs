@@ -32,14 +32,14 @@ navigation:
 		Optional search parameter.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#users-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#users-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="users-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=lis
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secureSecret&task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
@@ -52,10 +52,10 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="users-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=lis
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secureSecret&task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -64,6 +64,7 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -88,14 +89,14 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=s
     <td>Must be an User under your account.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -108,10 +109,10 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -120,6 +121,7 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -164,14 +166,14 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&amp;api_key=s
 		group.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#upgrade-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#upgrade-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="upgrade-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -184,10 +186,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="upgrade-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h4>Return - Success'); ?></h4>
 {% codeblock %}
@@ -196,6 +198,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -240,14 +243,14 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 		group.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#downgrade-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#downgrade-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="downgrade-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -260,10 +263,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="downgrade-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -272,6 +275,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -302,14 +306,14 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 		into once the customers account is closed.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#close-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#close-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="close-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -322,10 +326,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="close-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=immediate_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -334,6 +338,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -378,14 +383,14 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 		group.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#sched-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#sched-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="sched-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -398,10 +403,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="sched-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_upgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -410,6 +415,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -454,14 +460,14 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 		group.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#scheddown-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#scheddown-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="scheddown-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -474,10 +480,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="scheddown-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_downgrade&amp;package=Basic Package&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -486,6 +492,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -516,14 +523,14 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 		into once the customers account is closed.</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#schedclose-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#schedclose-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="schedclose-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -536,10 +543,10 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&amp;api_key=se
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="schedclose-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=secureSecret&amp;task=scheduled_close&amp;user=customer@example.com&amp;ip_group[]=Reseller Grou
+https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -549,3 +556,4 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&amp;api_key=s
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

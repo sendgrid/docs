@@ -4,7 +4,7 @@ title: Parse Settings
 navigation:
    show: true
 ---
-<hr/><a name="getCurrentSettings"></a>
+<a name="getCurrentSettings"></a>
 <h2>Get Current Settings</h2>
 <table class="table table-bordered table-striped">
   <tr>
@@ -37,27 +37,27 @@ navigation:
     <td>Allows you to access parse functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;method=parse&amp;task=get&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=parse&task=get&method=parse&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+{% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>
 {% endcodeblock %}
 <h3>Response: Empty</h3>
 {% codeblock %}
-parse></parse
+<parse></parse>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=get&method=parse&user=customer@example.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -66,6 +66,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Empty</h3>
 {% codeblock %}
 "parse":[]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -114,14 +115,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access parse functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -134,10 +135,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=set&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -146,6 +147,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -194,14 +196,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access parse functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=update&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -214,10 +216,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;url=www.mydomain.com/parse.php&amp;spam_check=1&amp;method=parse&amp;task=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -226,6 +228,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -269,14 +272,14 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
     <td>Allows you to access parse functionality</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -289,10 +292,10 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&amp;api_key=sec
     </errors></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=secureSecret&amp;hostname=www.example.com&amp;task=delete&amp;method=parse&amp;user=customer@example.co
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
@@ -302,3 +305,4 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&amp;api_key=se
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+</div></div>

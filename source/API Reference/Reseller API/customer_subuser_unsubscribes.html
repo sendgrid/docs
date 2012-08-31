@@ -4,7 +4,7 @@ title: Customer Subuser Unsubscribes
 navigation:
    show: true
 ---
-<hr/><a name="retrieveUnsubscribes"></a>
+<a name="retrieveUnsubscribes"></a>
 <h2>Retrieve Unsubscribes</h2>
 <p>Note that you can use
   <em>either</em>
@@ -43,28 +43,28 @@ navigation:
 		date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
-
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -103,14 +103,14 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
 		remove</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -119,10 +119,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
 {% codeblock %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=delete&amp;email=unsubscribe@sample.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -131,6 +131,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
 <h3>Response: Error</h3>
 {% codeblock %}
 "message":"Email does not exist"
+{% endcodeblock %}
   </div>
 </div>
 <hr/>
@@ -169,14 +170,14 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
 		add</td>
   </tr>
 </table><ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="add-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -185,10 +186,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
 {% codeblock %}  <result><message>Email already exists</message></result>
 {% endcodeblock %}
   </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;method=unsubscribes&amp;user=example@example.com&amp;task=add&amp;email=unsubscribe@sample.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.co
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -198,3 +199,4 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api
 {% codeblock %}
 "message":"Email already exists"
 {% endcodeblock %}
+</div></div>
