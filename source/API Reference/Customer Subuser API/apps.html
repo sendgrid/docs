@@ -34,19 +34,19 @@ Note: The
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <filters><filter><name>twitter</name><title>Twitter</title>
         <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
       ...
     </filters
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;task=getavailable&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
@@ -74,16 +74,16 @@ Note: The
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=activate&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
@@ -111,31 +111,31 @@ Note: The
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <result><message>success</message></result>
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=deactivate&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
   <hr/><a name="customizeApp"></a>
   <h2>Customize App</h2>
   These API calls require that settings are passed using POST.
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <filter><field_name>field_value</field_name>
       ...
     </filter
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}    <result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
   <h4>Return - Empty</h4>
@@ -143,10 +143,10 @@ Note: The
   {% codeblock %}
 filter></filter
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=setup&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
@@ -158,15 +158,15 @@ filter></filter
 {% endcodeblock %}
   <hr/><a name="getCurrentSettings"></a>
   <h2>Get Current Settings</h2>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    <filter><field_name>field_value</field_name>
       ...
     </filter
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}    <result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
   <h4>Return - Empty</h4>
@@ -174,14 +174,14 @@ filter></filter
   {% codeblock %}
 filter></filter
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.apps.json?api_user=username&amp;api_key=secureSecret&amp;name=twitter&amp;task=getsettings&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

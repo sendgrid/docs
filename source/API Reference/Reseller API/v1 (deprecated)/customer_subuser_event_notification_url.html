@@ -29,17 +29,17 @@ navigation:
 			your account</td>
     <td>The username of the customer subuser</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=get&amp;user=example@example.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 {"url":"http:\/\/www.SubUserPostUrlHere.com"}
 {% endcodeblock %}
@@ -74,17 +74,17 @@ url>http://www.SubUserPostUrlHere.com</url
     <td>The notification URL</td>
     <td>This is the new event notification URL</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
@@ -113,17 +113,17 @@ result><message>success</message></result>
 			your account</td>
     <td>The name of the customer subuser</td>
   </tr>
-</table><h3>XML API Request</h3>
+</table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;task=delete&amp;user=example@example.com&amp;method=eventpostur
 {% endcodeblock %}
-<h4>Return</h4>
+<h3>Response</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}

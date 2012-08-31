@@ -30,16 +30,16 @@ navigation:
     <dt>available</dt>
     <dd>All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated<em>and</em> is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone</dd>
   </dl>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
 {% codeblock %}    <ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip></ips
 {% endcodeblock %}
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&amp;api_key=secureSecret&amp;list=al
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
 {% codeblock %}
 {"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
 {% endcodeblock %}
@@ -67,20 +67,20 @@ If your account has more than one IP address, you can manage what IPs your subus
   </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <sendips><ocluster>o1.sendgrid.net</ocluster><ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip><ip>255.255.255.253</ip><ip>255.255.255.254</ip></ips></sendips
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>User does not exist</message></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=list&amp;user=example@example.co
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "error":{"code":400,"message":"User does not exist"}
 {% endcodeblock %}
@@ -117,27 +117,27 @@ You need to assign at least ONE IP to your subuser.
       <td>No</td>
       <td>If the <em>set</em> parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&amp;ip[]=255.255.255.1 ]</td>
     </tr>
-  </tbody></table><h3>XML API Request</h3>
+  </tbody></table><h3>XML Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
     </errors></result>
 {% endcodeblock %}
-<h3>JSON API Request</h3>
+<h3>JSON Request</h3>
 {% codeblock %}https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&amp;api_key=secureSecret&amp;task=append&amp;set=specify&amp;user=example@example.com&amp;ip[]=255.255.255.250&amp;ip[]=255.255.255.25
 {% endcodeblock %}
-<h4>Return - Success</h4>
+<h3>Response: Success</h3>
 {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-<h4>Return - Error</h4>
+<h3>Response: Error</h3>
 {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

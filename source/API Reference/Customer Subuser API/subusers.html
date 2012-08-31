@@ -109,16 +109,16 @@ navigation:
         <td>Mail domain of new subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.add.xml?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 error
@@ -128,14 +128,14 @@ error
 ...
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.add.json?api_user=username&amp;api_key=secureSecret&amp;username=example@example.com&amp;website=example.com&amp;password=samplepassword&amp;confirm_password=samplepassword&amp;first_name=fname&amp;last_name=lname&amp;address=555%20anystreet&amp;city=any%20city&amp;state=CA&amp;zip=91234&amp;email=example@example.com&amp;country=US&amp;phone=555-55
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -219,10 +219,10 @@ error
         <td>Search filter, company of subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
    
 
 user1
@@ -248,10 +248,10 @@ CA
 US
 
 555-555-5555 example.com
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return</h4>
+  <h3>Response</h3>
   {% codeblock %}
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
@@ -272,29 +272,29 @@ US
         <td>The subuser you are planning to enabling</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 User not found
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -315,29 +315,29 @@ User not found
         <td>The subuser you are planning to disabling</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 User not found
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -358,29 +358,29 @@ User not found
         <td>The subuser you are planning to grant website access</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 User not found
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -401,29 +401,29 @@ User not found
         <td>The subuser you are planning to disallow website access</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 User not found
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&amp;api_key=secureSecret&amp;task=ge
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"User not found"
 {% endcodeblock %}
@@ -497,16 +497,16 @@ User not found
         <td>Company of subuser</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 error
@@ -516,14 +516,14 @@ error
 ...
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=set&amp;user=example@example.com&amp;first_name=newFirstName&amp;last_name=&amp;newLastNam
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -556,14 +556,14 @@ error
         <td>Confirm new password</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.password.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}    success
  
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 error
@@ -573,14 +573,14 @@ error
 ...
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.password.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=newPasword&amp;confirm_password=newPasswor
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -614,16 +614,16 @@ error
         <td>This is the new username we will be authenticating with our SMTP servers <em>and</em> to access our site. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 error
@@ -633,14 +633,14 @@ error
 ...
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.json?api_user=username&amp;api_key=secureSecret&amp;task=setUsername&amp;user=example@example.com&amp;username=newexample@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
@@ -674,16 +674,16 @@ error
         <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <h3>XML API Request</h3>
+  <h3>XML Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
    
 
 success
 
  
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
    
 
 error
@@ -693,14 +693,14 @@ error
 ...
 
  
-  <h3>JSON API Request</h3>
+  <h3>JSON Request</h3>
   {% codeblock %}https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&amp;api_key=secureSecret&amp;task=setEmail&amp;user=example@example.com&amp;email=newexample@example.co
 {% endcodeblock %}
-  <h4>Return - Success</h4>
+  <h3>Response: Success</h3>
   {% codeblock %}
 "message":"success"
 {% endcodeblock %}
-  <h4>Return - Error</h4>
+  <h3>Response: Error</h3>
   {% codeblock %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
