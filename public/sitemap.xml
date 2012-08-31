@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/account_limits.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/apps.html</loc>
@@ -13,7 +13,7 @@
             http://docs.sendgrid.com/API Reference/Customer Subuser
             API/authenticate_a_subuser.html
         </loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>
@@ -31,11 +31,11 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/invalid_emails.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/ip_management.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>
@@ -46,15 +46,15 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/parse_settings.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/statistics.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-31T08:49:38-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Customer Subuser API/subusers.html</loc>
-        <lastmod>2012-08-30T20:48:05-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:29-06:00</lastmod>
     </url>
     <url>
         <loc>
@@ -194,7 +194,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/customer_management.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:52-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/customer_spam_reports.html</loc>
@@ -284,7 +284,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/event_notification_url.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/invoice_retrieval.html</loc>
@@ -307,7 +307,7 @@
             http://docs.sendgrid.com/API Reference/Reseller
             API/pending_account_changes.html
         </loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/subuser_management.html</loc>
@@ -385,7 +385,7 @@
             http://docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_management.html
         </loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:03:52-06:00</lastmod>
     </url>
     <url>
         <loc>
@@ -561,7 +561,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/apps.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/categories.html</loc>
@@ -569,11 +569,11 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/section_tags.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-31T08:50:19-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/substitution_tags.html</loc>
@@ -597,7 +597,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/filter_settings.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/invalid_emails.html</loc>
@@ -605,7 +605,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/mail.html</loc>
-        <lastmod>2012-08-30T20:49:30-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/multiple_credentials.html</loc>
@@ -689,7 +689,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/gravatar.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Apps/</loc>
@@ -821,7 +821,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
@@ -897,7 +897,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/User Guide/warming_up.html</loc>
-        <lastmod>2012-08-30T20:38:52-06:00</lastmod>
+        <lastmod>2012-08-30T21:01:22-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/User Guide/whitelabel_wizard.html</loc>

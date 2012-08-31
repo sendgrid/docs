@@ -31,7 +31,7 @@ function Pinboard_Linkroll() {
     document.getElementById(linkroll).innerHTML = lines.join("\n");
   }
   this.cook = function(v) {
-    return v.replace('<', '&lt;').replace('>', '&gt>');
+    return v.replace('<', '<').replace('>', '&gt>');
   }
 
   this.format_item = function(it) {
