@@ -557,7 +557,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/categories.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:54:25-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/</loc>
@@ -569,7 +569,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/substitution_tags.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:54:51-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/SMTP API/unique_arguments.html</loc>
@@ -629,7 +629,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:55:45-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Workshop/</loc>
@@ -709,7 +709,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/csharp.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:55:54-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/java.html</loc>
@@ -717,7 +717,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/nodejs.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:56:28-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/perl.html</loc>
@@ -725,7 +725,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/php.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:57:14-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/python.html</loc>
@@ -781,11 +781,11 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/cakephp.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:57:24-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/codeigniter.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:57:36-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/django.html</loc>
@@ -797,7 +797,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/rubyonrails.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:57:44-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Frameworks/symfony.html</loc>
@@ -809,15 +809,15 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/applemail.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:58:01-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:58:31-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T16:58:47-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Clients/thunderbird.html</loc>
@@ -825,15 +825,15 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/exim.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T17:00:04-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/iis75.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T17:00:17-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/postfix.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T17:00:35-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/qmail.html</loc>
@@ -841,7 +841,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/sendmail.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T17:01:20-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Mail Servers/ssmtp.html</loc>
@@ -873,7 +873,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/User Guide/billing.html</loc>
-        <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+        <lastmod>2012-09-04T17:00:46-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/User Guide/multiple_credentials.html</loc>
