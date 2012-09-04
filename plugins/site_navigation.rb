@@ -1,4 +1,5 @@
 require 'digest/md5'
+require 'open-uri'
 
 module Jekyll
 	# Add accessor for directory
@@ -57,7 +58,7 @@ module Jekyll
             li_class = "active"
           end
           
-          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{base}\">#{name}</a></li>" if subtree.empty?
+          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{name}</a></li>" if subtree.empty?
       end
       
       node_list.each do |base, subtree|
@@ -92,7 +93,7 @@ module Jekyll
 
             li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{name}</div>"
           else
-            li = "<li class=\"#{li_class}\"><a href=\"#{href}\">#{name}</a></li>"
+            li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{name}</a></li>"
           end
           
           output += "#{prefix}	#{li}"
