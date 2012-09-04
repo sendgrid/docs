@@ -176,13 +176,13 @@ if ( $fh )
 ?>
 {% endcodeblock %}
 
-<span class="label label-warning">Warning</span> <blockquote>If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above..
+<blockquote><span class="label label-warning">Warning</span> If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above:
 {% codeblock lang:php %}
 <?php
 $fh = fopen('/tmp/parse.log', 'a+');
 ?>
 {% endcodeblock %}
-should be changed to...
+<p>should be changed to...</p>
 {% codeblock lang:php %}
 <?php
 $fh = fopen('~/parse.log', 'a+');
@@ -190,7 +190,7 @@ $fh = fopen('~/parse.log', 'a+');
 {% endcodeblock %}
 </blockquote>
 
-After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):
+<p>After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):</p>
 
 {% codeblock lang:javascript %}
 Array

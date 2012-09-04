@@ -8,7 +8,7 @@ navigation:
 
 <p>Updating the Postfix configuration to use SendGrid as a relay host is easy. For more advanced configuration scenarios, you'll need to refer to the Postfix documentation.</p>
 
-Find your Postfix config file, typically <strong>/etc/postfix/main.cf</strong>, and add the following:
+<p>Find your Postfix config file, typically <strong>/etc/postfix/main.cf</strong>, and add the following:</p>
 
 {% codeblock %}
 smtp_sasl_auth_enable = yes 
@@ -25,9 +25,9 @@ Make sure to restart Postfix:
 $ /etc/init.d/postfix restart
 {% endcodeblock %}
 
-<span class="label label-info">Info</span> If you are getting <strong><em>no mechanism available</em></strong> error messages it generally indicates that you are missing some SASL authentication libraries.
+<blockquote><span class="label label-info">Info</span> If you are getting <strong><em>no mechanism available</em></strong> error messages it generally indicates that you are missing some SASL authentication libraries.</blockquote>
 
-Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
+<p>Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):</p>
 
 {% codeblock lang:bash %}
 $ apt-get install libsasl2-modules

@@ -7,7 +7,7 @@ navigation:
 ---
 
 <p>This library allows you to quickly and easily send emails through SendGrid using PHP.</p>
-<p><span class="label label-warning">Warning</span> SendGrid requires the use of PHP 5.3 or higher.</p>
+<blockquote><span class="label label-warning">Warning</span> SendGrid requires the use of PHP 5.3 or higher.</blockquote>
 
 <h2>How To Install The Libraries</h2>
 {% codeblock %}
@@ -91,7 +91,7 @@ send($mail);
 
 <h3>Using Categories</h3>
 <p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name.</p>
-<p><span class="label label-info">Info</span> There is a maximum of 10 categories per email.</p>
+<blockquote><span class="label label-info">Info</span> There is a maximum of 10 categories per email.</blockquote>
 {% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
@@ -108,7 +108,7 @@ addCategory("Category 2");
 <h3>Using Attachments</h3>
 <p>Attachments are currently file based only, with future plans for an in memory implementation as well.
 </p>
-<p><span class="label label-info">Info</span> File attachments are limited to 7 MB per file.</p>
+<blockquote><span class="label label-info">Info</span> File attachments are limited to 7 MB per file.</blockquote>
 
 {% codeblock lang:php %}
 <?php

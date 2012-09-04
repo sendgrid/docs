@@ -9,7 +9,7 @@ navigation:
 <p>To send email using Google Mail you will have to modify your outgoing server settings in the Mail Settings accordingly. This article will walk you through how to add an SMTP server to an Google Apps account, but you can also follow these steps to add an SMTP server to a general Gmail account.
 </p>
 
-<p><span class="label label-important">Important</span> If you use Gmail and do NOT have a Google Apps for Business or Google Apps for Education account,  Gmail cannot be configured to use an external SMTP relay unless it is configured to work with an existing email server.</p>
+<blockquote><span class="label label-important">Important</span> If you use Gmail and do NOT have a Google Apps for Business or Google Apps for Education account,  Gmail cannot be configured to use an external SMTP relay unless it is configured to work with an existing email server.</blockquote>
 
 <p><em>If you use Google Apps for Business or Education</em>, then your only option is to configure an external SMTP route. This means that all of your outgoing email would be sent through SendGrid.
 </p>
@@ -76,18 +76,18 @@ navigation:
 	<li>If you only want to send some email through SendGrid, check the box in the <strong>Outbound Relay</strong> setting. What this does is allow users to configure their own SMTP server when adding a Send As account. This does not enable an administrator feature. This allows individual users to setup individual accounts that are external to the domain.</li>
 </ul>
 
-<p><span class="label label-info">Info</span> The Outbound Relay option is an administrative control that is only available in Google Apps accounts. Gmail-only users are able to use this feature without administrative management.
-</p>
+<blockquote><span class="label label-info">Info</span> The Outbound Relay option is an administrative control that is only available in Google Apps accounts. Gmail-only users are able to use this feature without administrative management.
+</blockquote>
 <p><img title="Google Apps Email Settings" src="/images/gmail_1.png" alt="Where to set google apps to allow external smtp settings. Outbound gateway forces all email through an external SMTP server. Outbound relay allows a user to set up an alternate SMTP server." width="922" height="690" />
 </p>
-<p><span class="label label-info">Info</span> For the purposes of this guide, we will assume the <strong>Outbound relay</strong> setting was checked, and the Outbound gateway was left blank.
-</p>
+<blockquote><span class="label label-info">Info</span> For the purposes of this guide, we will assume the <strong>Outbound relay</strong> setting was checked, and the Outbound gateway was left blank.
+</blockquote>
 <h2>Adding an Alias</h2>
 <p>
 Once the Outbound relay setting has been turned on, you need to login to the account you want to send from, and go to <a href="https://mail.google.com/mail/#settings/accounts">Mail Settings > Accounts</a>, and select "Add another email address you own". Here, you will put in the address you wish to be sending from. You can also specify the reply-to address here. If you do not, any replies to messages sent under this alias will go to the alias' account.
 </p>
-<p><span class="label label-info">Info</span> Creating a Send Mail As account does not deliver mail sent to that address into your Gmail inbox. You either need to configure that account to forward all or select mail to your Gmail address or use Gmail's POP3 mail checking functionality, located conveniently below the Send Mail As feature.
-</p>
+<blockquote><span class="label label-info">Info</span> Creating a Send Mail As account does not deliver mail sent to that address into your Gmail inbox. You either need to configure that account to forward all or select mail to your Gmail address or use Gmail's POP3 mail checking functionality, located conveniently below the Send Mail As feature.
+</blockquote>
 <p><img src="/images/gmail_2.png" alt="Where to add another send-from address in google accounts" width="1156" height="570"/>
 </p>
 <p>The next step will ask you whether you want to use your default SMTP settings, or the other domain. Select the other domain (second radio button), and put in the following details:

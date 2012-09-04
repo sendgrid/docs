@@ -272,7 +272,7 @@ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created 
 </span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
 
-<span class="label label-warning">Warning</span> <blockquote>If you are using a hosting service, you don&#8217;t have direct access to the server&#8217;s file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above..
+<blockquote><span class="label label-warning">Warning</span> If you are using a hosting service, you don&#8217;t have direct access to the server&#8217;s file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above:
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -280,7 +280,7 @@ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created 
 </span><span class='line'><span class="nv">$fh</span> <span class="o">=</span> <span class="nb">fopen</span><span class="p">(</span><span class="s1">&#39;/tmp/parse.log&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">);</span>
 </span><span class='line'><span class="cp">?&gt;</span><span class="x"></span>
 </span></code></pre></td></tr></table></div></figure>
-should be changed to&#8230;
+<p>should be changed to&#8230;</p>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -290,7 +290,7 @@ should be changed to&#8230;
 </span></code></pre></td></tr></table></div></figure>
 </blockquote>
 
-After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):
+<p>After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
