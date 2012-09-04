@@ -1,5 +1,6 @@
 ---
 layout: page
+weight: 0
 title: Inbound Parse
 navigation:
   show: true
@@ -9,7 +10,7 @@ navigation:
 
 <p>The parse API will POST the parsed email to a URL configured you specify. SendGrid automatically queues and retries any POSTs that respond with a 5XX status error. Additionally, we retry errors when we encounter 4XX status responses to prevent data loss for customers that have misconfigured their website or POST URL. </p>
 
-<p><span class="label label-info">Info</span><blockquote> If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p></blockquote>
+<blockquote><span class="label label-info">Info</span> If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p></blockquote>
 
 <p>In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response and then it is removed from our send queue. If we do <strong>not</strong> get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.</p>
 
@@ -128,7 +129,7 @@ navigation:
    </tbody>
  </table>
 
-<p><span class="label label-info">Info</span><blockquote>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
+<blockquote><span class="label label-info">Info</span>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
 
 <a name="characterSetsAndHeaderDecoding"></a>
 <h2>Character Sets and Header Decoding</h2>

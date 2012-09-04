@@ -1,5 +1,6 @@
 ---
 layout: page
+weight: 0
 title: Apps (Filters)
 navigation:
   show: true
@@ -11,7 +12,7 @@ navigation:
 
 <blockquote><span class="label label-warning">Warning</span> If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App</a>. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a template designed but disabled, you can't just enable it via the API; you need to define the template in the API call itself.</blockquote>
 
-<p>For more information on the utility of these apps, please check out the <a href="/documentation/apps/">Apps</a> section.</p>
+<p>For more information on the utility of these apps, please check out the <a href="/apps/">Apps</a> section.</p>
 
 <h3>Filter - 'gravatar':</h3> 
 <p>Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</p>
@@ -231,7 +232,7 @@ navigation:
 
 <h3>Filter - 'domainkeys':</h3> 
 
-<p>Allows you to specify the domain to use to sign messages with Domain Keys. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/domain-keys/">details on Domain Keys.</a></p>
+<p>Allows you to specify the domain to use to sign messages with Domain Keys. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="/apps/domain_keys.html">details on Domain Keys.</a></p>
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -262,7 +263,7 @@ navigation:
 
 <h3>Filter - 'dkim':</h3> 
 
-<p>Allows you to specify the domain to use to sign messages with DKIM certification. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="http://docs.sendgrid.com/documentation/apps/dkim/">details on DKIM.</a></p>
+<p>Allows you to specify the domain to use to sign messages with DKIM certification. This domain should match the domain in the From address of your e-mail. For more info, check out these <a href="/apps/dkim.html">details on DKIM.</a></p>
 
 <table class="table table-striped table-bordered">
 <tbody>

@@ -1,14 +1,15 @@
 ---
 layout: page
+weight: 0
 title: Whitelabel Wizard
 navigation:
   show: true
 ---
 
-<blockquote>
-   <span class="label label-info">Info</span> This feature is available to customers
-   with Silver, Gold, or Platinum accounts.
- </blockquote>
+
+   <blockquote><span class="label label-info">Info</span> This feature is available to customers
+   with Silver, Gold, or Platinum accounts.</blockquote>
+ 
 
  <p>Depending on the set of Apps you have chosen, SendGrid can alter or add links to
  emails. This includes unsubscribe links, click tracking, and open tracking. In
@@ -16,26 +17,25 @@ navigation:
  servers can verify the authenticity of emails. These links and headers reference the
  sendgrid.me or sendgrid.com domain.</p>
 
- <blockquote>
-   <span class="label label-warning">Warning</span> SendGrid does not host domains. Do
+ 
+   <blockquote><span class="label label-warning">Warning</span> SendGrid does not host domains. Do
    not attempt to transfer a domain to SendGrid. If you have already registered a
    domain, then you have a registrar, and it is likely the hosting company you have your
-   website on.
- </blockquote>
-
- <blockquote>
-   <span class="label label-warning">Warning</span> Any changes you make to DNS can
+   website on.</blockquote>
+ 
+ 
+   <blockquote><span class="label label-warning">Warning</span> Any changes you make to DNS can
    immediately affect your clients ability to reach your resources. We cannot take any
    responsibility for any changes you make to DNS, so please be very careful. If you
-   have any questions, please contact our support team.
- </blockquote>
+   have any questions, please contact our support team.</blockquote>
+ 
 
- <blockquote>
-   <span class="label label-info">Info</span> When in doubt, contact your DNS registrar
+ 
+   <blockquote><span class="label label-info">Info</span> When in doubt, contact your DNS registrar
    or web hosting service's technical support department. All information in this
    document complies with the DNS standards, but some registrars and web hosting
-   providers handle things differently.
- </blockquote>
+   providers handle things differently.</blockquote>
+ 
 
  <p>SendGrid allows companies to customize the domain that appears, a process called
  Whitelabeling. SendGrid does this using a subdomain for your domain. For example, if
@@ -48,11 +48,11 @@ navigation:
  need to add to your DNS entries. Below are links to some hosting and domain name
  registrars that you might be using.</p>
 
- <blockquote>
-   <span class="label label-warning">Warning</span> The hosting company 1&amp;1 does not
+ 
+   <blockquote><span class="label label-warning">Warning</span> The hosting company 1&1 does not
    support TXT records, so SPF cannot be specified and therefore is not supported by
-   SendGrid.
- </blockquote>
+   SendGrid.</blockquote>
+ 
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -93,26 +93,26 @@ navigation:
    </tbody>
  </table>
 
- <blockquote>
-   <span class="label label-warning">Warning</span> It is critical that you select a
+ 
+   <blockquote><span class="label label-warning">Warning</span> It is critical that you select a
    subdomain that does not already exist. MAIL is a common subdomain. If you do not have
-   access to your domain registrar, check with your service administrator.
- </blockquote>
+   access to your domain registrar, check with your service administrator.</blockquote>
+ 
 
  <h2>Whitelabel Wizard</h2>
 
  <p>Our Whitelabel Wizard makes it easier to setup your Whitelabel by walking you
  through the necessary steps and verifying your settings along the way. You can access
- the Whitelabel Wizard by navigating to the &acirc;&euro;&oelig;Developers&acirc;&euro;
- menu and choosing &acirc;&euro;&oelig;Whitelabel&acirc;&euro;</p>
+ the Whitelabel Wizard by navigating to the "Developers"
+ menu and choosing "Whitelabel"</p>
 
  <p><img src="/images/whitelabel_1.jpg" alt="" title="sg_wlwiz_start" width="730"
  height="179" /></p>
 
- <blockquote>
-   <span class="label label-info">Info</span> The Whitelabel Wizard provides you with
-   your static IP address
- </blockquote>
+ 
+   <blockquote><span class="label label-info">Info</span> The Whitelabel Wizard provides you with
+   your static IP address</blockquote>
+ 
 
  <h3>DNS Records</h3>
 
@@ -163,17 +163,16 @@ navigation:
    </tbody>
  </table>
 
-<blockquote>
-   <span class="label label-info">Info</span> If you already have an SPF record, you can simply add
-   include:sendgrid.net to this entry. Make sure to add it BEFORE the
-   &acirc;&euro;&oelig;all&acirc;&euro; mechanism as
-   &acirc;&euro;&oelig;all&acirc;&euro; always matches and typically goes at the end of
-   the SPF record.
- </blockquote>
 
-<strong>Underscore Problems?</strong> If your DNS server does not allow
+<blockquote><span class="label label-info">Info</span> If you already have an SPF record, you can simply add
+   include:sendgrid.net to this entry. Make sure to add it BEFORE the
+   "all" mechanism as "all" always matches and typically goes at the end of
+   the SPF record.</blockquote>
+ 
+
+<strong>Underscore Problems?</strong> <p>If your DNS server does not allow
  underscores in CNAMES you will have problems adding the smtpapi._domainkey CNAME
- records. If that is the case please create the following TXT records instead:
+ records. If that is the case please create the following TXT records instead:</p>
 
  <table class="table table-bordered table-striped">
    <tbody>

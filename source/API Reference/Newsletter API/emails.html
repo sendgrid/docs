@@ -1,5 +1,6 @@
 ---
 layout: page
+weight: 0
 title: Emails
 navigation:
   show: true
@@ -36,10 +37,10 @@ navigation:
 
 <h3>Response</h3>
 
-Success: (X records inserted)
-<code>{"inserted": X}</code>
+<p>Success: (X records inserted)</p>
+{% codeblock %}{"inserted": X}{% endcodeblock %}
 
-Failure:
+<p>Failure:</p>
 <table class="table table-bordered table-striped">
   <tbody>
     <tr>
@@ -49,25 +50,25 @@ Failure:
     </tr>
 
     <tr>
-      <td><code>{"error": "bad_list does not exist"}</code></td>
+      <td>{% codeblock %}{"error": "bad_list does not exist"}{% endcodeblock %}</td>
 
       <td>The list you specified cannot be found.</td>
     </tr>
 
     <tr>
-      <td><code>{"error": "error in data: missing email field"}</code></td>
+      <td>{% codeblock %}{"error": "error in data: missing email field"}{% endcodeblock %}</td>
 
       <td>Your JSON string does not contain an "email" field</td>
     </tr>
 
     <tr>
-      <td><code>{"error": "error in data: missing name field"}</code></td>
+      <td>{% codeblock %}{"error": "error in data: missing name field"}{% endcodeblock %}</td>
 
       <td>Your JSON string does not contain a "name" field</td>
     </tr>
 
     <tr>
-      <td><code>{"error": "error in data: : is not a valid json string"}</code></td>
+      <td>{% codeblock %}{"error": "error in data: : is not a valid json string"}{% endcodeblock %}</td>
 
       <td>Your JSON string is not formed correctly</td>
     </tr>
@@ -75,21 +76,21 @@ Failure:
 </table>
 <h3>Examples</h3>
 
-Example JSON format:
-<code>{"email":"address@example.com","name":"name","other_field":"value"}</code>
+<p>Example JSON format:</p>
+{% codeblock %}{"email":"address@example.com","name":"name","other_field":"value"}{% endcodeblock %}
 
-Add an email recipient to a list:
-<code>
+<p>Add an email recipient to a list:</p>
+{% codeblock %}
 #curl -d 'api_user=username&api_key=password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
-</code>
+{% endcodeblock %}
 
-Add an email recipient with multiple data fields:
-<code>#curl -d 'api_user=username&api_key=password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json</code>
+<p>Add an email recipient with multiple data fields:</p>
+{% codeblock %}#curl -d 'api_user=username&api_key=password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
-Add multiple email recipients to a list:
-<code>
+<p>Add multiple email recipients to a list:</p>
+{% codeblock %}
 #curl -d 'api_user=username&api_key=password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
-</code>
+{% endcodeblock %}
 
 <hr/>
 

@@ -1,5 +1,6 @@
 ---
 layout: page
+weight: 0
 title: Authenticate a Customer Subuser
 navigation:
    show: true
@@ -30,7 +31,7 @@ navigation:
   <div class="tab-pane" id="auth-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpassword&amp;method=aut
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <result><message>success</message></result>
@@ -46,7 +47,7 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&amp;api_
   <div class="tab-pane active" id="auth-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&amp;api_key=secureSecret&amp;user=example@example.com&amp;password=theirsubmittedpassword&amp;method=aut
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
