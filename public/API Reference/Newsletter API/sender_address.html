@@ -168,6 +168,49 @@
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="add-json">
+          <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929%20Pearl%20Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+
+          <h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929%20Pearl%20Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
+
 <hr/>
 
 <a name="edit"></a>
@@ -247,6 +290,48 @@
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="edit-json">
+          <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929%20Pearl%20Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+
+          <h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="edit-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929%20Pearl%20Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
 <hr/>
 
 <a name="get"></a>
@@ -267,6 +352,65 @@
       <td>Retrieve contents of the specified Address.</td>
     </tr>
   </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+		          <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+
+          <h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;city&quot;</span><span class="o">:</span> <span class="s2">&quot;Boulder&quot;</span><span class="p">,</span> <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;zip&quot;</span><span class="o">:</span> <span class="s2">&quot;80302&quot;</span><span class="p">,</span> <span class="s2">&quot;replyto&quot;</span><span class="o">:</span> <span class="s2">&quot;Email Address&quot;</span><span class="p">,</span> <span class="s2">&quot;country&quot;</span><span class="o">:</span> <span class="s2">&quot;US&quot;</span><span class="p">,</span> <span class="s2">&quot;state&quot;</span><span class="o">:</span> <span class="s2">&quot;CO&quot;</span><span class="p">,</span> <span class="s2">&quot;address&quot;</span><span class="o">:</span> <span class="s2">&quot;929 Pearl Street ste 200 &quot;</span><span class="p">,</span> <span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;example@sendgrid.com&quot;</span><span class="p">,</span> <span class="s2">&quot;identity&quot;</span><span class="o">:</span> <span class="s2">&quot;Sender_Address &quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;identity&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;city&gt;</span>Boulder<span class="nt">&lt;/city&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;name&gt;</span>Example Name<span class="nt">&lt;/name&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;zip&gt;</span>80302<span class="nt">&lt;/zip&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;replyto&gt;</span>example@sendgrid.com<span class="nt">&lt;/replyto&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;country&gt;</span>US<span class="nt">&lt;/country&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;state&gt;</span>CO<span class="nt">&lt;/state&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;address&gt;</span>929 Pearl Street ste 200 <span class="nt">&lt;/address&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;email&gt;</span>example@sendgrid.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;identity&gt;</span>Sender_Address <span class="nt">&lt;/identity&gt;</span>
+</span><span class='line'><span class="nt">&lt;/identity&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
 
 <hr/>
 
@@ -290,6 +434,53 @@
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#list-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="list-json">
+          <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+
+          <h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;identity&quot;</span><span class="o">:</span> <span class="s2">&quot;Sender_Address4&quot;</span><span class="p">}]</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="list-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;identities&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;identity&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;identity&gt;</span>Sender_Address4<span class="nt">&lt;/identity&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/identity&gt;</span>
+</span><span class='line'><span class="nt">&lt;/identities&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
+
 <hr/>
 
 <a name="delete"></a>
@@ -310,6 +501,49 @@
       <td>Remove the specified Address from your account.</td>
     </tr>
   </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+          <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+
+          <h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span> <span class="s2">&quot;success&quot;</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;error&quot;</span><span class="p">,</span><span class="s2">&quot;errors&quot;</span><span class="o">:</span><span class="p">[...</span><span class="s2">&quot;error messages&quot;</span><span class="p">...]}</span>
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+    <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword</span></code></pre></td></tr></table></div></figure>
+<h3>Response: Success</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+          <h3>Response: Error</h3>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span></code></pre></td></tr></table></div></figure>
+    </div>
+  </div>
+
   
     <footer>
       
