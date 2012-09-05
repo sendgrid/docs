@@ -1,3 +1,5 @@
+require 'open-uri'
+
 module Jekyll
 	# Add accessor for directory
 	class Page
@@ -37,7 +39,7 @@ module Jekyll
               link = "/"
               i = 1
               while i <= index
-                link += "#{levels[i]}/"
+                link += "#{URI::encode levels[i]}/"
                 i+=1
               end
               output += "<li><a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a><span class=\"divider\">/</span></li>"

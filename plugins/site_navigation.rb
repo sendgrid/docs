@@ -25,7 +25,6 @@ module Jekyll
         end
       end
       
-      #can we sort the dirs by some sort of weight value?
       array = []
       @nodes.each do |path, data|
         array.push(:path => path, :weight => data["weight"], :title => data["title"])
