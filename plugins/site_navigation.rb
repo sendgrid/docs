@@ -12,7 +12,7 @@ module Jekyll
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
       
-      @dirs = {}
+      @nodes = {}
       tree = {}
 
       site.pages.each do |page|
@@ -21,15 +21,21 @@ module Jekyll
           relative = page.dir[1..-1] ||""
           path = relative + page.url
           path = path.index('/')==0 ? path[1..-1] : path
-          @dirs[path] = page.data
+          @nodes[path] = page.data
         end
       end
       
       #can we sort the dirs by some sort of weight value?
+      array = []
+      @nodes.each do |path, data|
+        array.push(:path => path, :weight => data["weight"], :title => data["title"])
+      end
       
-      @dirs.each do |path, data|
+      array = array.sort_by {|h| [-(h[:weight]||0), h[:path] ]}
+      
+      array.each do |node|
         current	 = tree
-        path.split("/").inject("") do |sub_path,dir|
+        node[:path].split("/").inject("") do |sub_path,dir|
           sub_path = File.join(sub_path, dir)
           
           current[sub_path] ||= {}
@@ -42,15 +48,17 @@ module Jekyll
       files_first_traverse "", tree
     end
 	  
-    def files_first_traverse(prefix, node = {})
+    def files_first_traverse(prefix, nodes = {})
       output = ""
       output += "#{prefix}<ul id=\"nav-menu\" class=\"nav nav-list\">" 
-      node_list = node.sort
+      #node_list = node.sort
       
-      node_list.each do |base, subtree|
+      nodes.each do |base, subtree|
+          puts base
+          
           name = base[1..-1]
           if name.index('.') != nil
-            name = @dirs[name]["title"] || name
+            name = @nodes[name]["title"] || name
           end
           
           li_class = ""
@@ -61,7 +69,7 @@ module Jekyll
           output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{name}</a></li>" if subtree.empty?
       end
       
-      node_list.each do |base, subtree|
+      nodes.each do |base, subtree|
         next if subtree.empty?
           
           show_link = true
@@ -69,7 +77,7 @@ module Jekyll
           name = base[1..-1]
           if name.index('.') != nil
             is_parent = false
-            name = @dirs[name]["title"] || name
+            name = @nodes[name]["title"] || name
           else
             is_parent = true
             href = base + '/index.html'
