@@ -35,49 +35,52 @@ navigation:
     </tr>
   </table>
 
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="add-json">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"inserted": 1}
+{% endcodeblock %}
+	<h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="add-xml">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+	<h3>Response: Success</h3>
+
+{% codeblock lang:xml %}
+<result>
+  <inserted>1</inserted>
+</result>
+{% endcodeblock %}
+	  <h4>Response: Error</h4> 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
+
 <h3>Response</h3>
 
 <p>Success: (X records inserted)</p>
 {% codeblock %}{"inserted": X}{% endcodeblock %}
 
-<p>Failure:</p>
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Error</th>
-
-      <th>Cause</th>
-    </tr>
-
-    <tr>
-      <td>{% codeblock %}{"error": "bad_list does not exist"}{% endcodeblock %}</td>
-
-      <td>The list you specified cannot be found.</td>
-    </tr>
-
-    <tr>
-      <td>{% codeblock %}{"error": "error in data: missing email field"}{% endcodeblock %}</td>
-
-      <td>Your JSON string does not contain an "email" field</td>
-    </tr>
-
-    <tr>
-      <td>{% codeblock %}{"error": "error in data: missing name field"}{% endcodeblock %}</td>
-
-      <td>Your JSON string does not contain a "name" field</td>
-    </tr>
-
-    <tr>
-      <td>{% codeblock %}{"error": "error in data: : is not a valid json string"}{% endcodeblock %}</td>
-
-      <td>Your JSON string is not formed correctly</td>
-    </tr>
-  </tbody>
-</table>
 <h3>Examples</h3>
-
-<p>Example JSON format:</p>
-{% codeblock %}{"email":"address@example.com","name":"name","other_field":"value"}{% endcodeblock %}
 
 <p>Add an email recipient to a list:</p>
 {% codeblock %}
@@ -120,6 +123,50 @@ navigation:
     </tr>
   </table>
 
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+[{"email": "dominic.may@sendgrid.com", "name": ""}]
+{% endcodeblock %}
+	<h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="get-xml">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+	<h3>Response: Success</h3>
+
+{% codeblock lang:xml %}
+<emails>
+  <email>
+    <email>dominic.may@sendgrid.com</email>
+    <name>
+    </name>
+  </email>
+</emails>
+{% endcodeblock %}
+	  <h4>Response: Error</h4> 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
+
 <hr/>
 
 <a name="delete"></a>
@@ -147,3 +194,43 @@ navigation:
       <td>Specify the email address or email addresses you wish to remove from the specified Recipient List.</td>
     </tr>
   </table>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %} 
+	<h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"removed": 1}
+{% endcodeblock %}
+	<h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="delete-xml">
+      <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=example%40gmail.com&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+	<h3>Response: Success</h3>
+
+{% codeblock lang:xml %}
+<result>
+  <removed>1</removed>
+</result>
+{% endcodeblock %}
+	  <h4>Response: Error</h4> 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
