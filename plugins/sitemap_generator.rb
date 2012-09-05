@@ -161,7 +161,7 @@ module Jekyll
     # Returns last_modified_date of index page
     def fill_pages(site, urlset)
       site.pages.each do |page|
-        if !excluded?(page.name)
+        if !excluded?(page.name) && page.data["navigation"]["show"] != false
           path = page.full_path_to_source
           if File.exists?(path)
             url = fill_url(site, page)

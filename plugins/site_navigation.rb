@@ -30,13 +30,12 @@ module Jekyll
         array.push(:path => path, :weight => data["weight"], :title => data["title"])
       end
       
-      array = array.sort_by {|h| [-(h[:weight]||0), h[:path] ]}
+      sorted_nodes = array.sort_by {|h| [-(h[:weight]||0), h[:path] ]}
       
-      array.each do |node|
+      sorted_nodes.each do |node|
         current	 = tree
         node[:path].split("/").inject("") do |sub_path,dir|
           sub_path = File.join(sub_path, dir)
-          
           current[sub_path] ||= {}
           current	 = current[sub_path]
           sub_path
@@ -50,11 +49,8 @@ module Jekyll
     def files_first_traverse(prefix, nodes = {})
       output = ""
       output += "#{prefix}<ul id=\"nav-menu\" class=\"nav nav-list\">" 
-      #node_list = node.sort
       
       nodes.each do |base, subtree|
-          puts base
-          
           name = base[1..-1]
           if name.index('.') != nil
             name = @nodes[name]["title"] || name
