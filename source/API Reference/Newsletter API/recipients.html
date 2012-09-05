@@ -50,37 +50,46 @@ navigation:
   </tbody>
 </table>
 
-<hr/>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="add-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test2&list=test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
 
-<a name="edit" id="edit"></a>
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&list=test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
 
-<h2>edit</h2>
-<p>Rename a Recipient List.</p>
-
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
-
-    <tr>
-      <td>list</td>
-      <td>Yes</td>
-      <td>Must be an existing Recipient List.</td>
-      <td>This is the name of the Recipient List to be renamed.</td>
-    </tr>
-
-    <tr>
-      <td>newlist</td>
-      <td>Yes</td>
-      <td>None</td>
-      <td>Specify the new name for the Recipient List.</td>
-    </tr>
-  </tbody>
-</table>
 
 <hr/>
 
@@ -108,6 +117,49 @@ navigation:
   </tbody>
 </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+[{"list": "Training Contacts"}] 
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<lists>
+  <list>
+    <list>Training Contacts</list>
+  </list>
+</lists>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
+
+
 <hr/>
 
 <a name="delete" id="delete"></a>
@@ -132,3 +184,43 @@ navigation:
     </tr>
   </tbody>
 </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&api_user=Sgusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&api_user=Sgusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>>
+{% endcodeblock %}
+    </div>
+  </div>
