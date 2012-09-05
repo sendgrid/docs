@@ -42,6 +42,8 @@ blockquote { background-color: #FFFFED; }
 
 .nav-list li { line-height:18px; }
 
+.nav-list > .active > a { text-shadow: 0 1px 0 rgba(255, 143, 0, .5); }
+
 .sidebar-nav .nav-header { font-size:15px}
 
 #main-menu > :first-child > a {
