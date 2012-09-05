@@ -42,6 +42,11 @@ module Jekyll
                 link += "#{URI::encode levels[i]}/"
                 i+=1
               end
+              
+              if !link.index('.')
+                link = link + 'index.html'
+              end
+              
               output += "<li><a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a><span class=\"divider\">/</span></li>"
           end
         end
