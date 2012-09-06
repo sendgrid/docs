@@ -1,0 +1,12 @@
+js_destination: '/js/'
+
+files: [
+  'source/javascripts/libs/jquery.js',
+  'source/javascripts/collapse.min.js',
+  'source/javascripts/libs/jstorage.js',
+  'source/javascripts/menu.js',
+  'source/javascripts/libs/modernizr-2.0.js',
+  'source/javascripts/libs/bootstrap.js',
+  'source/javascripts/libs/bootstrap-tabs.js',
+  'source/javascripts/octopress.js'
+]
