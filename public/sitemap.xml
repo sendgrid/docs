@@ -858,15 +858,19 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Newsletter/create_manage.html</loc>
-        <lastmod>2012-09-06T14:09:11-06:00</lastmod>
+        <lastmod>2012-09-06T15:48:51-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Newsletter/dashboard.html</loc>
-        <lastmod>2012-09-06T14:01:48-06:00</lastmod>
+        <lastmod>2012-09-06T15:47:12-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Newsletter/recipients.html</loc>
-        <lastmod>2012-09-06T14:09:21-06:00</lastmod>
+        <lastmod>2012-09-06T14:14:06-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Newsletter/sender_address.html</loc>
+        <lastmod>2012-09-06T14:09:37-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/overview.html</loc>
