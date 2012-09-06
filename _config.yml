@@ -30,6 +30,8 @@ root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
+css_destination: stylesheets
+js_destination: javascripts
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
