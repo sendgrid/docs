@@ -80,19 +80,7 @@ https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&api_key=s
 {% endcodeblock %} 
       <h3>Response</h3>
 {% codeblock lang:javascript %}
-{
-    blocks:{
-        block:[
-            {
-                email:'email1@domain.com',
-                status:'5.1.1',
-                reason:'host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com',
-                created:'2009-06-10 12:40:30'
-            }
-            ...
-        ]
-    }
-}
+[{"status": "4.0.0", "created": "2012-09-02 00:12:12", "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)", "email": "example@juno.com"},{"status": "4.0.0", "created": "2012-09-02 00:21:29", "reason": "Connection timed out", "email": "example2@band.la"},{"status": "4.0.0", "created": "2012-09-02 00:25:33", "reason": "Unable to resolve MX record for exampledomain.com: nxdomain", "email": "example3@exampledomain.com"}]
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -180,13 +168,13 @@ https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&api_key
 {% codeblock lang:xml %}
 <result>
   <count>4</count>
-</result>>
+@nodes
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
 <result>
   <message>error: reason</message>
-</result>>
+@nodes
 {% endcodeblock %}
     </div>
   </div>

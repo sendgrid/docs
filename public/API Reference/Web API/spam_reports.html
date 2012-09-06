@@ -200,7 +200,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -209,15 +209,22 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com
-</span><span class='line'>5.1.1
-</span><span class='line'>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
-</span><span class='line'>2009-06-10 12:40:30
-</span><span class='line'>
-</span><span class='line'>email2@domain2.com
-</span><span class='line'>5.1.1
-</span><span class='line'>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
-</span><span class='line'>2009-08-01 10:16:30</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;spamreports&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;spamreport&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ip&gt;</span>174.36.80.219<span class="nt">&lt;/ip&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;email&gt;</span>example@aol.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;created&gt;</span>2009-12-06 15:45:08<span class="nt">&lt;/created&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/spamreport&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;spamreport&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;ip&gt;</span>74.63.202.105<span class="nt">&lt;/ip&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;email&gt;</span>example2@yahoo.com<span class="nt">&lt;/email&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;created&gt;</span>2009-12-08 07:43:01<span class="nt">&lt;/created&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;/spamreport&gt;</span>
+</span><span class='line'><span class="nt">&lt;/spamreports&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
 
