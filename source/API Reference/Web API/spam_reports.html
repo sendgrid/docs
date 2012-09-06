@@ -112,18 +112,10 @@ https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_
 {% endcodeblock %}
 
      <h3>Response</h3>
-{% codeblock %}
-email1@domain.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
-2009-06-10 12:40:30
+{% codeblock lang:javascript %}
+[{"ip": "174.36.80.219", "email": "example@aol.com", "created": "2009-12-06 15:45:08"},{"ip": "74.63.202.105", "email": "example2@yahoo.com", "created": "2009-12-08 07:43:01"}]
 
-email2@domain2.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
-2009-08-01 10:16:30
 {% endcodeblock %}
-
 
   </div>
   <div class="tab-pane" id="get-xml">
@@ -133,16 +125,19 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_k
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock %}
-email1@domain.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com
-2009-06-10 12:40:30
-
-email2@domain2.com
-5.1.1
-host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com
-2009-08-01 10:16:30
+{% codeblock lang:xml %}
+<spamreports>
+  <spamreport>
+    <ip>174.36.80.219</ip>
+    <email>example@aol.com</email>
+    <created>2009-12-06 15:45:08</created>
+  </spamreport>
+  <spamreport>
+    <ip>74.63.202.105</ip>
+    <email>example2@yahoo.com</email>
+    <created>2009-12-08 07:43:01</created>
+  </spamreport>
+</spamreports>
 {% endcodeblock %}
   </div>
 </div>
@@ -210,13 +205,13 @@ https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&ap
 {% codeblock lang:xml %}
 <result>
   <message>success</message>
-</result>>
+@nodes
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:xml %}
 <result>
   <message>Email does not exist</message>
-</result>>
+@nodes
 {% endcodeblock %}
 
   </div>
