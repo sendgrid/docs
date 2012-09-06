@@ -570,7 +570,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/blocks.html</loc>
-        <lastmod>2012-09-06T13:35:49-06:00</lastmod>
+        <lastmod>2012-09-06T13:35:56-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/bounces.html</loc>
@@ -855,6 +855,18 @@
     <url>
         <loc>http://docs.sendgrid.com/Integrate/Open Source Apps/wordpress.html</loc>
         <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Newsletter/create_manage.html</loc>
+        <lastmod>2012-09-06T14:09:11-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Newsletter/dashboard.html</loc>
+        <lastmod>2012-09-06T14:01:48-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Newsletter/recipients.html</loc>
+        <lastmod>2012-09-06T14:09:21-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/overview.html</loc>
