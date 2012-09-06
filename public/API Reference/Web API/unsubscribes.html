@@ -20,7 +20,7 @@
   
   <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Web API/unsubscribes.html">
   <link href="/favicon.png" rel="icon">
-  <link href="/css/201209051855.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/css/201209061157.min.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -194,22 +194,16 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
 
     <h3>Response</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com
-</span><span class='line'>2009-06-10 12:40:30
-</span><span class='line'>
-</span><span class='line'>email2@domain2.com
-</span><span class='line'>2009-06-10 12:40:30</span></code></pre></td></tr></table></div></figure>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">[{</span><span class="s2">&quot;email&quot;</span><span class="o">:</span> <span class="s2">&quot;brandon.west@sendgrid.com&quot;</span><span class="p">,</span> <span class="s2">&quot;created&quot;</span><span class="o">:</span> <span class="s2">&quot;2012-09-06 14:03:18&quot;</span><span class="p">}]</span>
+</span></code></pre></td></tr></table></div></figure>
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>date=1
+</span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -217,11 +211,13 @@
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>email1@domain.com
-</span><span class='line'>2009-06-10 12:40:30
-</span><span class='line'>
-</span><span class='line'>email2@domain2.com
-</span><span class='line'>2009-06-10 12:40:30</span></code></pre></td></tr></table></div></figure>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;unsubscribes>
+</span><span class='line'>  &lt;unsubscribe>
+</span><span class='line'>    &lt;email>brandon.west@sendgrid.com&lt;/email>
+</span><span class='line'>    &lt;created>2012-09-06 14:03:18&lt;/created>
+</span><span class='line'>  &lt;/unsubscribe>
+</span><span class='line'>&lt;/unsubscribes></span></code></pre></td></tr></table></div></figure>
 
   </div>
 </div>
@@ -311,13 +307,13 @@
 
 <h3>Response: Error</h3>
 
-</result>>
+@nodes
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  Email does not exist
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span><span class='line'>@nodes
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
@@ -377,7 +373,7 @@
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span><span class='line'>@nodes
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -385,7 +381,7 @@
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
 </span><span class='line'>  <span class="nt">&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'><span class="nt">&lt;/result&gt;</span>&gt;
+</span><span class='line'>@nodes
 </span></code></pre></td></tr></table></div></figure>
 
   </div>
@@ -453,8 +449,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="span5">
-				<p>Version </p>
-	        	<p>&copy; SendGrid 2012</p>
+				<p>Docs Version 0.1.0 &copy; SendGrid 2012</p>
 			</div>
 
 			<div class="span7">
