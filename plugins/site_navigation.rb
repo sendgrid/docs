@@ -7,11 +7,12 @@ module Jekyll
 		attr_reader :dir
 	end
 	
+
+	
 	class NavTree < Liquid::Tag
     def render(context)
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
-      
       @nodes = {}
       tree = {}
 
@@ -25,6 +26,7 @@ module Jekyll
         end
       end
       
+      #let's sort the pages by weight
       array = []
       @nodes.each do |path, data|
         array.push(:path => path, :weight => data["weight"], :title => data["title"])
