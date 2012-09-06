@@ -7,14 +7,14 @@ module Jekyll
 		attr_reader :dir
 	end
 	
-
-	
 	class NavTree < Liquid::Tag
     def render(context)
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
+      @weights = site.config['folder_weights']
       @nodes = {}
       tree = {}
+      sorted_tree = {}
 
       site.pages.each do |page|
         # exclude all pages that are hidden in front-matter
@@ -37,6 +37,8 @@ module Jekyll
       sorted_nodes.each do |node|
         current	 = tree
         node[:path].split("/").inject("") do |sub_path,dir|
+
+          
           sub_path = File.join(sub_path, dir)
           current[sub_path] ||= {}
           current	 = current[sub_path]
@@ -44,32 +46,49 @@ module Jekyll
         end
       end
 
+      tree.each do |base, subtree|
+        weight = @weights[base]? @weights[base] : 0
+        tree[base] = {"weight" => weight, "subtree" => subtree}
+      end
+      
+      tree_array = []
+      
+      tree.each do |key, value|
+        tree_array.push(:base => key, :weight => value["weight"], :subtree => value["subtree"])
+      end
+      
+      sorted_tree = tree_array.sort_by {|node| [ -(node[:weight]), node[:base] ]}
+      
       puts "generating nav tree for #{@page_url}"
-      files_first_traverse "", tree
+      files_first_traverse "", sorted_tree
     end
 	  
-    def files_first_traverse(prefix, nodes = {})
+    def files_first_traverse(prefix, nodes = [])
       output = ""
       output += "#{prefix}<ul id=\"nav-menu\" class=\"nav nav-list\">" 
       
-      nodes.each do |base, subtree|
+      nodes.each do |node|
+          base = node[:base]
+          subtree = node[:subtree]
+          
           name = base[1..-1]
           if name.index('.') != nil
             name = @nodes[name]["title"] || name
           end
-          
+                       
           li_class = ""
           if base == @page_url 
             li_class = "active"
           end
-          
+
           output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{name}</a></li>" if subtree.empty?
       end
-      
-      nodes.each do |base, subtree|
+
+      nodes.each do |node|
+        base = node[:base]
+        subtree = node[:subtree]
+        
         next if subtree.empty?
-          
-          show_link = true
           href = base
           name = base[1..-1]
           if name.index('.') != nil
@@ -94,22 +113,27 @@ module Jekyll
           end
           
           if is_parent
-            id = Digest::MD5.hexdigest(base);
+            id = Digest::MD5.hexdigest(base)
 
             li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{name}</div>"
           else
             li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{name}</a></li>"
           end
-          
+
           output += "#{prefix}	#{li}"
           
-          output += files_first_traverse(prefix + '	 ', subtree)
+          subtree_array = []
+          subtree.each do |base, subtree|
+            subtree_array.push(:base => base, :subtree => subtree)
+          end
+          
+          output += files_first_traverse(prefix + '	 ', subtree_array)
 
           if is_parent
             output+= "</li>"
           end
         end
-      
+
         output += "#{prefix} </ul>"
         output
       end

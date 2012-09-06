@@ -7,6 +7,7 @@ title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 simple_search: http://google.com/search
 description:
+version: 0.1.0
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -100,3 +101,19 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# ----------------------- #
+#    SendGrid Settings    #
+# ----------------------- #
+
+folder_weights:
+ "/index.html": 110
+ "/overview.html": 105
+ "/User Guide": 100
+ "/Integrate": 90
+ "/Code Examples": 80
+ "/Delivery Metrics": 70
+ "/Newsletter": 60
+ "/Apps": 55
+ "/API Reference": 50
+ "/API Workshop": 40
