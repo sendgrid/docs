@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[SendGrid Documentation - Email Delivery. Simplified.]]></title>
+  <link href="http://docs.sendgrid.com/atom.xml" rel="self"/>
+  <link href="http://docs.sendgrid.com/"/>
+  <updated>2012-09-07T12:25:07-06:00</updated>
+  <id>http://docs.sendgrid.com/</id>
+  <author>
+    <name><![CDATA[SendGrid]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
