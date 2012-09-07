@@ -1,0 +1,323 @@
+---
+layout: page
+weight: 100
+title: Web API Overview
+navigation:
+  show: true
+---
+
+SendGrid offers a Web API that allows customers to retrieve information about their account such as statistics, bounces, spam reports, unsubscribes, and other information. This API is not a RESTful API since in most calls both GET and POST HTTP verbs can be used interchangeably.<br>
+
+<blockquote class="warn"><strong>WARNING &gt;&gt; </strong>When sending to a large number of recipients using the Web and/or Newsletter API, you must be aware of a hard limit of 1,000 addresses per line.
+</blockquote>
+<h2>URL Format</h2>
+The following is the format for the API requests:<br><br>
+<code>
+https://sendgrid.com/api/<MODULE>.<ACTION>.<FORMAT>
+</code>
+<ul class="regular">
+	<li><strong>MODULE</strong> - The module to interact with. We support multiple modules such as <em>bounces</em>, <em>profile</em>, <em>stats</em>, and many others.</li>
+	<li><strong>ACTION</strong> - Each module supports multiple actions such as <em>add</em>, <em>get</em>, and <em>delete</em>. See our list of <a href="http://docs.sendgrid.com/documentation/api/web-api/#modulesactions">modules and actions</a>.</li>
+	<li><strong>FORMAT</strong> - This determines the response format. It can be either <em>json</em> for a JSON response or <em>xml</em> for an XML response.</li>
+</ul>
+
+<a name="httpreturncodes"></a>
+<h2>HTTP Return codes</h2>
+<ul class="regular">
+	<li><strong><em>2XX</em></strong> - The API call was successful.</li>
+	<li><strong><em>4XX</em></strong> - The API call had an error in the parameters. The error will be encoded in the body of the response.</li>
+	<li><strong><em>5XX</em></strong> - The API call was unsuccessful. You should retry later.</li>
+</ul>
+<a name="responses"></a>
+<h2>Responses</h2>
+The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.<br><br>
+<a name="responseserror"></a>
+<h2>Errors</h2>
+<ul class="regular">
+	<li>XML
+<code>
+<result>
+  <message>error</message>
+  <errors>
+    ...
+    <error>... error messages ...</error>
+    ...
+  </errors>
+</result>
+</code>
+</li>
+	<li>JSON
+<code lang="javascript">
+{"message":"error","errors":[..."error messages"...]}
+</code></li>
+</ul>
+<a name="responsessuccess"></a>
+<h2>Success</h2>
+<ul class="regular">
+	<li>XML
+<code>
+<result>
+success
+</result>
+</code>
+</li>
+	<li>JSON
+<code lang="javascript">
+{"message":"success"}
+</code></li>
+</ul>
+<a name="authentication"></a>
+<h2>Authentication</h2>
+Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.
+<ul class="regular">
+	<li><strong><em>api_user</em></strong> - This is the same credential used for your SMTP settings, and for logging into the website.</li>
+	<li><strong><em>api_key</em></strong> - This is the same password to authenticate over SMTP, and for logging into the website.</li>
+</ul>
+<a name="modulesactions"></a>
+<h2>Modules</h2>
+<p>The following is a list of all of our available modules and the available actions for each module.</p>
+<h2>Bounces</h2>
+This module allows you to retrieve and delete email addresses that have bounced from emails that you've delivered.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapibounces/#get">get</a></td>
+<td>/api/bounces.get.<format></td>
+<td>Retrieve a list of bounces.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapibounces/#delete">delete</a></td>
+<td>/api/bounces.delete.<format></td>
+<td>Remove an email address from your bounce list.</td>
+</tr>
+</tbody>
+</table>
+<h2>Blocks</h2>
+This module allows you to retrieve and delete email addresses that were blocked by their ISP. These emails are not suppressed and are just for information.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiblocks/#get">get</a></td>
+<td>/api/blocks.get.<format></td>
+<td>Retrieve a list of blocked email addresses.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiblocks/#delete">delete</a></td>
+<td>/api/blocks.delete.<format></td>
+<td>Remove an email address from your block list.</td>
+</tr>
+</tbody>
+</table>
+<h2>Email Parse</h2>
+This module allows you to add, edit, or delete your email parse settings.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiparse/#get">get</a></td>
+<td>/api/parse.get.<format></td>
+<td>Retrieve email parse settings.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiparse/#set">set</a></td>
+<td>/api/parse.set.<format></td>
+<td>Set email parse settings.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiparse/#edit">edit</a></td>
+<td>/api/parse.edit.<format></td>
+<td>Edit existing email parse settings.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiparse/#delete">delete</a></td>
+<td>/api/parse.delete.<format></td>
+<td>Delete email parse settings.</td>
+</tr>
+</tbody>
+</table>
+<h2>Filters</h2>
+This module allows you to view your available Apps, edit their settings, as well as enable and disable them. For a list of all the apps and parameters accesible with the Web API you can check the <a href="/documentation/api/web-api/filtersettings/">Filter Settings</a> page.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapifilters/#getavailable">get</a></td>
+<td>/api/filter.getavailable.<format></td>
+<td>Get a list of available Apps.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapifilters/#activate">activate</a></td>
+<td>/api/filter.activate.<format></td>
+<td>Activate one or more Apps.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapifilters/#deactivate">deactivate</a></td>
+<td>/api/filter.deactivate.<format></td>
+<td>Deactivate one or more Apps.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapifilters/#setup">setup</a></td>
+<td>/api/filter.setup.<format></td>
+<td>Change the settings in an App.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapifilters/#getsettings">getsettings</a></td>
+<td>/api/filter.getsettings.<format></td>
+<td>View the settings for an App.</td>
+</tr>
+</tbody>
+</table>
+<h2>Invalid Emails</h2>
+This module allows you to retrieve and delete email addresses that you've sent to that are invalid email addresses.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiinvalidemails/#get">get</a></td>
+<td>/api/invalidemails.get.<format></td>
+<td>Retrieve a list of email addresses that are invalid.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiinvalidemails/#delete">delete</a></td>
+<td>/api/invalidemails.delete.<format></td>
+<td>Remove an email address from your invalid list.</td>
+</tr>
+</tbody>
+</table>
+<h2>Mail</h2>
+This module allows you to send email.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/mail/#send">send</a></td>
+<td>/api/mail.send.<format></td>
+<td>Send email.</td>
+</tr>
+</tbody>
+</table>
+<h2>Profile</h2>
+This module allows you to retrieve and update your profile information such as credentials and email address.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiprofile/#get">get</a></td>
+<td>/api/profile.get.<format></td>
+<td>Get profile information.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiprofile/#set">set</a></td>
+<td>/api/profile.set.<format></td>
+<td>Selectively update multiple profile fields.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiprofile/#setusername">setUsername</a></td>
+<td>/api/profile.setUsername.<format></td>
+<td>Update account username.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiprofile/#setpassword">setPassword</a></td>
+<td>/api/profile.setPassword.<format></td>
+<td>Update account password.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiprofile/#setemail">setEmail</a></td>
+<td>/api/profile.setEmail.<format></td>
+<td>Update contact email address.</td>
+</tr>
+</tbody>
+</table>
+<h2>Spam Reports</h2>
+This module allows you to retrieve and delete email addresses that have marked your emails as SPAM.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapispamreports/#get">get</a></td>
+<td>/api/spamreports.get.<format></td>
+<td>Retrieve a list of email addresses that are spam reports.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapispamreports/#delete">delete</a></td>
+<td>/api/spamreports.delete.<format></td>
+<td>Remove an email address from your spam report list.</td>
+</tr>
+</tbody>
+</table>
+<h2>Stats</h2>
+This module allows you to retrieve statistical data on a range of metrics including requests, bounces, spam reports, categories, and others.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapistatistics/#get">get</a></td>
+<td>/api/stats.get.<format></td>
+<td>Retrieves statistics on multiple metrics.</td>
+</tr>
+</tbody>
+</table>
+<h2>Unsubscribes</h2>
+This module allows you to add, retrieve and delete email addresses that were unsubscribed from your emails.
+<table>
+<tbody>
+<tr>
+<th>Action</th>
+<th>URL</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiunsubscribes/#add">add</a></td>
+<td>/api/unsubscribes.add.<format></td>
+<td>Add an email to your unsubscribe list.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiunsubscribes/#get">get</a></td>
+<td>/api/unsubscribes.get.<format></td>
+<td>Retrieve a list of unsubscribed email addresses.</td>
+</tr>
+<tr>
+<td><a href="/documentation/api/web-api/webapiunsubscribes/#delete">delete</a></td>
+<td>/api/unsubscribes.delete.<format></td>
+<td>Remove an email address from your unsubscribe list.</td>
+</tr>
+</tbody>
+</table>
