@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Delivery Metrics Index - SendGrid Documentation - Email Delivery. Simplified.</title>
+  <meta name="author" content="SendGrid">
+
+  
+  <meta name="description" content="Docs Home	User Guide SendGrid Overview Billing and Account Changes Multiple User Credentials Sending Practices and Limitations SMTP Ports Warming Up &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://docs.sendgrid.com/Delivery Metrics">
+  <link href="/favicon.png" rel="icon">
+  <link href="/css/201209071216.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  
+  <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  
+  
+  <script async src="/js/201208282019.min.js"></script>
+  <link href="/atom.xml" rel="alternate" title="SendGrid Documentation - Email Delivery. Simplified." type="application/atom+xml">
+  
+  
+
+</head>
+
+<body   >
+
+  <div class="main-container container">  
+  <div class="container" id="header-wrap">
+	<div class="row" id="header">
+		<div id="logo">
+			<a href="/"><img src="/images/sendgrid-logo.png"/></a>
+		</div>
+		
+		  <form class="pull-right navbar-search" action="http://google.com/search" method="get">
+			<input type="hidden" name="q" value="site:docs.sendgrid.com" />
+			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+	      </form>
+		
+	</div>
+	<div class="row menu">
+	<ul id="main-menu" class="nav nav-tabs">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home">
+			<a href="/">Docs Home</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="/API Workshop/index.html">API Workshop</a>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom">
+			<a href="http://community.sendgrid.com/sendgrid">Community</a>
+		</li>
+	</ul>
+</div>
+</div>
+
+	
+    <div class="row-fluid" id="content">
+	
+      
+<aside class="sidebar-nav span3">
+    <ul id="nav-menu" class="nav nav-list">	 <li class=><a href="/index.html">Docs Home</a></li>	<li id="node-d7eeb8982bc2493631b06a9fde6e1b6d" class="parent "><div class="subtree-name">User Guide</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/User%20Guide/index.html">SendGrid Overview</a></li>	 	 <li class=><a href="/User%20Guide/billing.html">Billing and Account Changes</a></li>	 	 <li class=><a href="/User%20Guide/multiple_credentials.html">Multiple User Credentials</a></li>	 	 <li class=><a href="/User%20Guide/sending_practices.html">Sending Practices and Limitations</a></li>	 	 <li class=><a href="/User%20Guide/smtp_ports.html">SMTP Ports</a></li>	 	 <li class=><a href="/User%20Guide/warming_up.html">Warming Up an IP Address</a></li>	 	 <li class=><a href="/User%20Guide/whitelabel_wizard.html">Whitelabel Wizard</a></li>	  </ul></li>	<li id="node-2e85a09ef64e25ecd00fd36505c363bd" class="parent "><div class="subtree-name">Integrate</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Integrate/index.html">Integrate with SendGrid</a></li>	 	<li id="node-de77d58abe13de22cdbb8979bdcea918" class="parent "><div class="subtree-name">Frameworks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Frameworks/index.html">Frameworks Index</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/cakephp.html">CakePHP</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/codeigniter.html">CodeIgniter</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/django.html">Django</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/nodejs.html">Node.js</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/rubyonrails.html">Ruby on Rails</a></li>	 	 	 <li class=><a href="/Integrate/Frameworks/symfony.html">Symfony</a></li>	 	  </ul></li>	 	<li id="node-56eedf923766ab032efeece2ea8e762a" class="parent "><div class="subtree-name">Mail Clients</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail%20Clients/index.html">Mail Clients Index</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Clients/applemail.html">Apple Mail</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Clients/gmail.html">Gmail / Google Apps</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Clients/outlook.html">Outlook 2007</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Clients/thunderbird.html">Thunderbird</a></li>	 	  </ul></li>	 	<li id="node-ce98818760e307d986b75da117584908" class="parent "><div class="subtree-name">Mail Servers</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Mail%20Servers/index.html">Mail Servers Index</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/exim.html">Exim</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/iis75.html">Microsoft IIS 7.5</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/postfix.html">Postfix</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/qmail.html">Qmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/sendmail.html">Sendmail</a></li>	 	 	 <li class=><a href="/Integrate/Mail%20Servers/ssmtp.html">ssmtp</a></li>	 	  </ul></li>	 	<li id="node-56586b0511e1c223ed10016de929a8ed" class="parent "><div class="subtree-name">Open Source Apps</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/index.html">Open Source Apps Index</a></li>	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/drupal.html">Drupal</a></li>	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/joomla.html">Joomla</a></li>	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/magento.html">Magento</a></li>	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/phpbb.html">phpBB</a></li>	 	 	 <li class=><a href="/Integrate/Open%20Source%20Apps/wordpress.html">WordPress</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-b37c06ad4007a0f98fca75eeb0dbb3ca" class="parent "><div class="subtree-name">Code Examples</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Code%20Examples/index.html">Code Examples Index</a></li>	 	 <li class=><a href="/Code%20Examples/csharp.html">C#</a></li>	 	 <li class=><a href="/Code%20Examples/java.html">Java</a></li>	 	 <li class=><a href="/Code%20Examples/nodejs.html">Node.js</a></li>	 	 <li class=><a href="/Code%20Examples/perl.html">Perl</a></li>	 	 <li class=><a href="/Code%20Examples/php.html">PHP</a></li>	 	 <li class=><a href="/Code%20Examples/python.html">Python</a></li>	 	 <li class=><a href="/Code%20Examples/ruby.html">Ruby</a></li>	 	<li id="node-bf75fa0aaadabb89be80f00ca0258363" class="parent "><div class="subtree-name">SMTP API Header Examples</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/Code%20Examples/SMTP%20API%20Header%20Examples/index.html">SMTP API Examples Index</a></li>	 	 	 <li class=><a href="/Code%20Examples/SMTP%20API%20Header%20Examples/perl.html">Perl</a></li>	 	 	 <li class=><a href="/Code%20Examples/SMTP%20API%20Header%20Examples/php.html">PHP</a></li>	 	 	 <li class=><a href="/Code%20Examples/SMTP%20API%20Header%20Examples/python.html">Python / Django</a></li>	 	 	 <li class=><a href="/Code%20Examples/SMTP%20API%20Header%20Examples/ruby.html">Ruby</a></li>	 	  </ul></li>	  </ul></li>	<li id="node-88682ba11f4657bc781dab389076dbaa" class="parent collapsibleListClosed"><div class="subtree-name">Delivery Metrics</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=active><a href="/Delivery%20Metrics/index.html">Delivery Metrics Index</a></li>	 	 <li class=><a href="/Delivery%20Metrics/alerts.html">Alerts</a></li>	 	 <li class=><a href="/Delivery%20Metrics/categories.html">Categories</a></li>	 	 <li class=><a href="/Delivery%20Metrics/email_activity.html">Email Activity</a></li>	 	 <li class=><a href="/Delivery%20Metrics/email_error_messages.html">Email Error Messages</a></li>	 	 <li class=><a href="/Delivery%20Metrics/email_reports.html">Email Reports</a></li>	  </ul></li>	<li id="node-2779a17bb762f9fe334b406f0724f71c" class="parent "><div class="subtree-name">Newsletters</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Newsletters/index.html">About Newsletters</a></li>	 	 <li class=><a href="/Newsletters/create_manage.html">Create and Manage Newsletters</a></li>	 	 <li class=><a href="/Newsletters/dashboard.html">Dashboard</a></li>	 	 <li class=><a href="/Newsletters/recipients.html">Create and Manage Recipients</a></li>	 	 <li class=><a href="/Newsletters/sender_address.html">Create and Manage Sender Addresses</a></li>	  </ul></li>	<li id="node-38b334e8c44bd2248734bd286ac5216a" class="parent "><div class="subtree-name">Apps</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/Apps/address_whitelisting.html">Address Whitelisting</a></li>	 	 <li class=><a href="/Apps/bcc.html">BCC</a></li>	 	 <li class=><a href="/Apps/bypass_list_management.html">Bypass List Management</a></li>	 	 <li class=><a href="/Apps/click_tracking.html">Click Tracking</a></li>	 	 <li class=><a href="/Apps/dkim.html">DKIM</a></li>	 	 <li class=><a href="/Apps/domain_keys.html">Domain Keys</a></li>	 	 <li class=><a href="/Apps/email_templates.html">Email Templates</a></li>	 	 <li class=><a href="/Apps/event_notification.html">Event Notification</a></li>	 	 <li class=><a href="/Apps/footer.html">Footer</a></li>	 	 <li class=><a href="/Apps/forward_spam.html">Forward Spam</a></li>	 	 <li class=><a href="/Apps/google_analytics.html">Google Analytics</a></li>	 	 <li class=><a href="/Apps/gravatar.html">Gravatar</a></li>	 	 <li class=><a href="/Apps/index.html">Apps Index</a></li>	 	 <li class=><a href="/Apps/open_tracking.html">Open Tracking</a></li>	 	 <li class=><a href="/Apps/return_path_seedlist.html">Return Path Seedlist</a></li>	 	 <li class=><a href="/Apps/spam_checker.html">Spam Checker</a></li>	 	 <li class=><a href="/Apps/subscription_tracking.html">Subscription Tracking</a></li>	  </ul></li>	<li id="node-4ebc1e8463894c1f21bb0813fefe58dc" class="parent "><div class="subtree-name">API Reference</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API%20Reference/index.html">API Reference Index</a></li>	 	 <li class=><a href="/API%20Reference/libraries.html">API Libraries</a></li>	 	<li id="node-2286ccbf1a6f24d1dcfa5cecef68ae65" class="parent "><div class="subtree-name">Customer Subuser API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/account_limits.html">Account Limits</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/apps.html">Apps</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/authenticate_a_subuser.html">Authenticate a Subuser</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/automatic_login.html">Automatic Login</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/event_notification_url.html">Event Notification URL</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/invalid_emails.html">Invalid Emails</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/ip_management.html">IP Management</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/monitor_records.html">Monitor Records</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/parse_settings.html">Parse Settings</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/statistics.html">Statistics</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/subusers.html">Subusers</a></li>	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/whitelabel.html">Whitelabel</a></li>	 	 	<li id="node-7ff3e0f413613432922e1082576db8de" class="parent "><div class="subtree-name">v1 (deprecated)</div>	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/index.html">Customer Subuser API v1 (deprecated)</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/automatic_login.html">Automatic Login</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/event_notification_url.html">Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/invalid_emails.html">Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/subuser_bounces.html">Subuser Bounces</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/subuser_spam_reports.html">Subuser Spam Reports</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Customer%20Subuser%20API/v1%20(deprecated)/subuser_unsubscribes.html">Subuser Unsubscribes</a></li>	 	 	  </ul></li>	 	  </ul></li>	 	<li id="node-49b5c02c0693761d1c0a25861b616bdc" class="parent "><div class="subtree-name">Newsletter API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/index.html">Newsletter API Overview</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/emails.html">Emails</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/lists.html">Lists</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/newsletters.html">Newsletters</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/recipients.html">Recipients</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/schedule.html">Schedule</a></li>	 	 	 <li class=><a href="/API%20Reference/Newsletter%20API/sender_address.html">Sender Address</a></li>	 	  </ul></li>	 	<li id="node-fa3589f70c8f5e335b3cb659bbe92020" class="parent "><div class="subtree-name">SMTP API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/index.html">SMTP API Overview</a></li>	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/apps.html">Apps (Filters)</a></li>	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/categories.html">Categories</a></li>	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/section_tags.html">Section Tags</a></li>	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/substitution_tags.html">Substitution Tags</a></li>	 	 	 <li class=><a href="/API%20Reference/SMTP%20API/unique_arguments.html">Unique Arguments</a></li>	 	  </ul></li>	 	<li id="node-e6df1071f16ae333a0035dfba4e75675" class="parent "><div class="subtree-name">Web API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/Web%20API/index.html">Web API Overview</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/blocks.html">Blocks</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/bounces.html">Bounces</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/filter_commands.html">Filter Commands</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/filter_settings.html">Filter Settings</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/invalid_emails.html">Invalid Emails</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/mail.html">Mail</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/multiple_credentials.html">Multiple Credentials</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/parse_settings.html">Parse Webhook Settings</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/profile.html">Profile</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/spam_reports.html">Spam Reports</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/statistics.html">Statistics</a></li>	 	 	 <li class=><a href="/API%20Reference/Web%20API/unsubscribes.html">Unsubscribes</a></li>	 	  </ul></li>	 	<li id="node-2344b07f02628dc1eb8c9c591148c41f" class="parent "><div class="subtree-name">Webhooks</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/Webhooks/index.html">Webhooks Overview</a></li>	 	 	 <li class=><a href="/API%20Reference/Webhooks/event.html">Event</a></li>	 	 	 <li class=><a href="/API%20Reference/Webhooks/parse.html">Inbound Parse</a></li>	 	  </ul></li>	 	<li id="node-23030407bcc6b3fbcc77816bf74b7850" class="parent "><div class="subtree-name">Reseller API</div>	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/account_overview.html">Account Overview</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/apps.html">Apps</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/authenticate_a_customer.html">Authenticate a Customer</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/authenticate_a_customer_subuser.html">Authenticate a Customer Subuser</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/automatic_login.html">Automatic Login</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/billing_retrieving_as_you_go_usage.html">Retrieving As-You-Go Usage</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/billing_retrieving_end_users_invoices_usage.html">Retrieving Invoice Usage</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_account_limits.html">Customer Account Limits</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_bounces.html">Customer Bounces</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_invalid_emails.html">Customer Invalid Emails</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_management.html">Customer Management</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_spam_reports.html">Customer Spam Reports</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_statistics.html">Customer Statistics</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_account_limits.html">Customer Subuser Account Limits</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_apps.html">Customer Subuser Apps</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_automatic_login.html">Customer Subuser Automatic Login</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_bounces.html">Customer Subuser Bounces</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_event_notification_url.html">Customer Subuser Event Notification URL</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_invalid_emails.html">Customer Subuser Invalid Emails</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_monitor_outgoing_email.html">Customer Subuser Monitor Outgoing Email</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_parse_settings.html">Customer Subuser Parse Settingsf</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_spam_reports.html">Customer Subuser Spam Reports</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_statistics.html">Customer Subuser Statistics</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_subuser_unsubscribes.html">Customer Subuser Unsubscribes</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/customer_unsubscribes.html">Customer Unsubscribes</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/event_notification_url.html">Event Notification URL</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/invoice_retrieval.html">Invoice Retrieval</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/ip_management.html">IP Management</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/monitor_records.html">Monitor Records</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/parse_settings.html">Parse Settings</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/pending_account_changes.html">Pending Account Changes</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/view_available_packages.html">View Available Packages</a></li>	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/whitelabel.html">Whitelabel</a></li>	 	 	<li id="node-700510961b5e85692a8968821dc41878" class="parent "><div class="subtree-name">v1 (deprecated)</div>	 	 	 <ul id="nav-menu" class="nav nav-list">	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/account_overview.html">Account Overview</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/apps.html">Apps</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/authenticate_a_customer.html">Authenticate a Customer</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/authenticate_a_customer_subuser.html">Authenticate a Customer Subuser</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/automatic_login.html">Automatic Login</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/billing.html">Billing</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/billing_retrieving_as_you_go_usage.html">Retrieving As-You-Go Usage</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/billing_retrieving_end_users_invoices_usage.html">Retrieving End User Invoice</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_account_limits.html">Customer Account Limits</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_invalid_emails.html">Customer Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_management.html">Customer Management</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_spam_reports.html">Customer Spam Reports</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_statistics.html">Customer Statistics</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_account_limits.html">Customer Subuser Account Limits</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_apps_filters.html">Customer Subuser Apps</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_automatic_login.html">Customer Subuser Automatic Login</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_bounces.html">Customer Subuser Bounces</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_event_notification_url.html">Customer Subuser Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_invalid_emails.html">Customer Subuser Invalid Emails</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_monitor_outgoing_email.html">Customer Subuser Monitor Outgoing Email</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_parse_settings.html">Customer Subuser Parse Settings</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_spam_reports.html">Customer Subuser Spam Reports</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_statistics.html">Customer Subuser Statistics</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_subuser_unsubscribes.html">Customer Subuser Unsubscribes</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/customer_unsubscribes.html">Customer Unsubscribes</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/event_notification_url.html">Event Notification URL</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/invoice_retrieval.html">Invoice Retrieval</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/ip_management.html">IP Management</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/monitor_records.html">Monitor Records</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/parse_settings.html">Parse Settings</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/pending_account_changes.html">Pending Account Changes</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/view_available_packages.html">View Available Packages</a></li>	 	 	 	 <li class=><a href="/API%20Reference/Reseller%20API/v1%20(deprecated)/whitelabel.html">Whitelabel</a></li>	 	 	  </ul></li>	 	  </ul></li>	  </ul></li>	<li id="node-2fb05db87da3429460f69395c2678dcc" class="parent "><div class="subtree-name">API Workshop</div>	 <ul id="nav-menu" class="nav nav-list">	 	 <li class=><a href="/API%20Workshop/index.html">API Workshop</a></li>	  </ul></li> </ul>
+<br/>
+
+</aside>
+
+
+
+<article role="article" class="span9">
+
+  <ul class="breadcrumb"><li><a href="/">Documentation</a><span class="divider">/</span></li><li><a href="/Delivery%20Metrics/index.html">Delivery Metrics</a><span class="divider">/</span></li><li>Delivery Metrics Index</li></ul>
+  
+  <header class="page-header">
+    <h1 class="entry-title">Delivery Metrics Index</h1>
+    
+  </header>
+  
+  <p>SendGrid offers statistics a number of different metrics to report on what is happening with your messages. </p>
+
+<p><img class="clear" src="/images/delivery_metrics.png" alt=""/></p>
+
+<h2>Metrics</h2>
+
+<h3>Requests</h3>
+<p>A request is an email sent and is reported in your SendGrid dashboard every time our servers get a request from your application or server to send an email to one of your customers.</p>
+
+<h3>Delivered</h3>
+<p>A delivery is recorded when a request to send an email results in an email being delivered to the end recipient. However, delivered does not necessarily mean that your email is in the recipient’s inbox. Delivered means the message was accepted by the receiving server, but they does not necessarily mean the message reached the inbox.</p>
+
+<blockquote><span class="label label-info">Info</span> If an email is indicated as delivered you can be certain that it was not deferred by the ISP.</blockquote>
+
+<h3>Clicks & Unique Clicks</h3>
+<p>The “Clicks” statistic is the total number of times your users have clicked on the various links within your emails. “Unique clicks” represents the number of unique individuals that have clicked the links in your emails. This requires that the Click Tracking app be enabled.</p>
+
+<h3>Opens & Unique Opens</h3>
+<p>SendGrid inserts a small, transparent image into all messages that are being tracked for Opens. When the client application loads images, it pulls the image data from SendGrid servers and registers an Open event. Not all email clients load images by default. Microsoft&#8217;s Outlook, Apple&#8217;s Mail.app, Mozilla&#8217;s Thunderbird, and Google&#8217;s Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and even clicked on a link, and it will never be counted as opened. This requires that the Open Tracking app be enabled.</p>
+
+<h3>Unsubscribes</h3>
+<p>In order to maintain compliance with <a title="CAN-SPAM" href="http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business">CAN-SPAM laws</a>, any email that is sent in bulk to a mass audience must include a subscription management link. SendGrid provides a “Subscription Tracking” app that automatically adds this link to your emails. When someone clicks that link within their email, they are added to your “unsubscribe” list. Any recipients that are added to this list will be excluded from future mailings.</p>
+
+<p>It&#8217;s no surprise that sending messages to addresses that have explicitly unsubscribed from any of your email messages is detrimental to your reputation as a sender. While this functionally only applies to one-to-many message formats (i.e., newsletters) and not to transactional email messages, make sure to include subscription management functionality in your marketing newsletters and other mass messaging.</p>
+
+<p><img src="/images/delivery_metrics_apps.png" alt="" width="685" height="88"></p>
+
+<blockquote><span class="label label-info">Info</span> you can enable Click, Open, and Subscription Tracking in the <a href="http://sendgrid.com/app/">Apps</a> section of your SendGrid account.</blockquote>
+
+<h3>Bounces & Repeat Bounces</h3>
+<p>A <strong>bounce</strong> occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled email address, a nonexistent email address, or a full recipient inbox. A <strong>repeat bounce</strong> is when an address has bounced, then bounced a second time and logged to the Bounce List, but you ask us to send to it again. Our system does not attempt to deliver the message, because the system &#8216;knows&#8217; that address is bad. This shows up on the Email Activity tab as a <strong>drop</strong> with the reason &#8220;bounced address&#8221;, and as a &#8220;repeat bounce&#8221; on the Statistics tab.</p>
+<p><a href="http://sendgrid.com/bounces">View your Bounces</a></p>
+
+<h3>Hard Bounce</h3>
+<p>This type of <strong>bounce</strong> occurs when the receiving server returns a 500-class error, communicating no additional attempts to deliver to that server or email address are needed. An common reason for a hard bounce is “no mailbox for user.”</p>
+
+<h3>Soft Bounce</h3>
+<p>A <strong>soft bounce</strong> results from an e-mail message that gets as far as the recipient’s mail server, but is returned as temporarily undeliverable before it gets to the intended recipient. This type of bounce might occur as a result of a full recipient inbox, or due to throttling.</p>
+
+<h3>Spam reports & repeat spam reports</h3>
+<p>If a recipient of your email feels that they received it in error, or simply did not wish to get the email from you, they may click the “report spam” or “junk” button. <strong>Spam reports</strong> can negatively affect your reputation and deliverability, so it is very important to make sure you send to people who really want your messages. You should always include a clear, easy way to opt out of future messages from your organization, by way of a subscription management link. Finally, a clear and fair initial opt-in process will mitigate potential spam reports down the road. </p>
+<p><a title="Spam Reports" href="http://sendgrid.com/spamReports">View your Spam Reports</a></p>
+
+<h3>Invalid email</h3>
+<p>An <strong>invalid email</strong> occurs when you attempt to send to an email address that is formatted in a manner that does not meet internet email format standards. Examples include addresses without the “@” sign, addresses that include certain special characters, or spaces in an address. This response comes from our own server, since an invalid email is impossible to even attempt to send to its [non-existent] destination.</p> <p><a title="Invalid Emails" href="http://sendgrid.com/invalidEmail">View your list of Invalid Emails</a></p>
+
+<h3>Blocks</h3>
+<p>If you receive a block notification, this means that the IP address from which you are sending has been placed on a black list of some sort. ISPs and organizations work from various blacklists, some of which are reputable and valid. In the event that you are placed on a blacklist, SendGrid will contact the ISP in question on your behalf and submit your IP for removal, once we’ve determined that your email are in fact legitimate and appropriate.</p> <p><a href="http://sendgrid.com/blocks">View your list of Blocks</a></p>
+
+<h3>Deferrals</h3>
+<p>A deferral occurs when an ISP is for some reason not ready to accept email from your IP address. Instead of blocking or bouncing the message, the ISP will defer receiving the message and wait for the email to be resent. An ISP may do this because it does not recognize the IP from which a message originates; or it could just be that their system is operating in such a way that they cannot accept the email at that specific time. If, upon your resending, the ISP determines that it is ready to trust you as a sender or their system operations are back to normal, the email will be accepted as normal. SendGrid will retry delivery of a deferred email on behalf of our customers for 72 hours from the time of the first deferral, after which time the email address is placed on the Hard Bounce list. If you have built your own email solution, you will want to build this intelligence into your code in order to avoid having to retry deliveries manually.</p>
+
+<h3>Drops</h3>
+<p>In certain cases, SendGrid will “Drop” a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the &#8220;Delete&#8221; button.</p>
+
+<blockquote><span class="label label-info">Info</span> For a detailed list of common error messages, please visit our <a href="/Delivery%20Metrics/email_error_messages.html">Email Error Messages</a> page.</blockquote>
+
+<blockquote><span class="label label-info">Info</span> All of the metrics we track for you are available from our web interface or through our <a href="/API%20Reference/Webhooks//event.html">Event API</a>.</blockquote>
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+      
+    </footer>
+  
+</article>
+
+
+    </div>
+  </div>
+	<div id="footer">
+	<div class="container-fluid footer-links">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<h4>Sales</h4>
+				<a href="http://sendgrid.com/pricing/">Pricing</a><br/>
+				<a href="http://sendgrid.com/features/">Features</a>
+			</div>
+			<div class="span2">
+				<h4>Support</h4>
+				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
+				<a href="/">Documentation</a><br/>
+				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
+			</div>
+			<div class="span2">
+				<h4>Community</h4>
+				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
+				<a href="http://community.sendgrid.com/">Forum</a>
+			</div>
+			<div class="span2">
+				<h4>Company</h4>
+				<a href="http://http://sendgrid.com/about.html">About</a><br/>
+				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
+				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
+				<a href="http://sendgrid.com/press.html">Press</a><br/>
+				<a href="http://sendgrid.com/contact.html">Contact Us</a>
+			</div>
+			<div class="span2">
+				<h4>Connect With Us!</h4>
+				<a href="http://blog.sendgrid.com/feed/"><img alt="RSS" title="Feed" src="/images/rss.gif"></a> 
+		          <a href="http://twitter.com/SendGrid"><img alt="Twitter" title="Twitter" src="/images/twitter.gif"></a> 
+		          <a href="http://www.facebook.com/SendGrid"><img alt="Facebook" title="Facebook" src="/images/facebook.gif"></a>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<footer id="bottom-footer">
+	<div class="container">
+		<div class="row">
+			<div class="span5">
+				<p>Docs Version 0.1.3 &nbsp;&nbsp; &copy; SendGrid 2012</p>
+			</div>
+			<div class="span6">
+				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
+				<a href="http://sendgrid.com/tos.html">Email Policy</a>
+				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
+			</div>
+			<div class="span1">
+				<p class="pull-right"><a href="#">&#8593; Top</a></p>
+			</div>
+		</div>
+	</div> <!-- /container -->
+	</footer>
+</div>
+
+	<!-- 
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+-->
+</body>
+</html>
