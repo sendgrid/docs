@@ -108,7 +108,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/</loc>
-        <lastmod>2012-09-06T21:23:33-06:00</lastmod>
+        <lastmod>2012-09-07T10:32:48-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/libraries.html</loc>
@@ -120,7 +120,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Newsletter API/</loc>
-        <lastmod>2012-09-06T21:43:50-06:00</lastmod>
+        <lastmod>2012-09-07T12:00:44-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Newsletter API/lists.html</loc>
@@ -293,10 +293,6 @@
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/event_notification_url.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://docs.sendgrid.com/API Reference/Reseller API/</loc>
-        <lastmod>2012-09-06T21:23:49-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Reseller API/invoice_retrieval.html</loc>
@@ -501,10 +497,6 @@
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://docs.sendgrid.com/API Reference/Reseller API/v1 (deprecated)/</loc>
-        <lastmod>2012-09-06T21:39:31-06:00</lastmod>
-    </url>
-    <url>
         <loc>
             http://docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/invoice_retrieval.html
@@ -606,7 +598,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/</loc>
-        <lastmod>2012-09-06T21:39:35-06:00</lastmod>
+        <lastmod>2012-09-07T12:00:37-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Web API/invalid_emails.html</loc>
@@ -646,7 +638,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/</loc>
-        <lastmod>2012-09-06T21:39:42-06:00</lastmod>
+        <lastmod>2012-09-07T12:06:38-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
@@ -914,7 +906,7 @@
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Newsletters/dashboard.html</loc>
-        <lastmod>2012-09-06T21:42:25-06:00</lastmod>
+        <lastmod>2012-09-07T10:56:28-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Newsletters/</loc>
