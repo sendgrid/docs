@@ -3,5 +3,4 @@ files: [
   'source/stylesheets/style.css',
   'source/stylesheets/sprites.css',
   'source/stylesheets/syntax/syntax.css'
-  
 ]

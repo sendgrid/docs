@@ -1,0 +1,44 @@
+---
+layout: page
+weight: 100
+title: API Reference Index
+navigation:
+  show: true
+---
+
+<h3>Send Email</h3>
+
+<p>There are three different technical concepts you should know about SendGrid related to sending email:</p>
+
+<h4>SMTP</h4>
+	<p>This is a protocol rather than an API. SMTP is widely supported by applications and is usually the fastest way to integrate with SendGrid. <a href="/Integrate/index.html">Learn how to integrate using SMTP</a>.</p>
+
+<h4>Web Email API</h4>
+<p>If SMTP is not used, we also offer a simple <a href="/API Reference/Web Api/mail.html">Web API mail method</a> to send email. </p>
+
+<h4>SMTPAPI</h4>
+<p>This is an API that allows you to tag your emails to get detailed statistics on each tag, send multiple customized emails in one request via mail merge, and configure each app on a per email basis. This is done by passing a JSON string in the X-SMTPAPI header if using SMTP or in the x-smtpapi HTTP parameter if using the web API. <a href="/API Reference/SMTP Api/index.html">Using the SMTP API</a></p>
+
+<h3>Configure Service or Retrieve Information</h3>
+<p>SendGrid has a Web API that allows customers to retrieve information about their account such as statistics, bounces, spam reports, unsubscribes, and other information. In addition, the Web API allows customers to create sub-accounts and control the settings of these accounts for an OEM setup. See the <a href="/API Reference/Web Api/index.html">list of Web API calls</a>.</p>
+
+<h3>Receive Email</h3>
+<p>SendGrid can parse the email bodies and attachments from incoming emails and post them to your web application. For details on how to integrate your application to start receiving emails please refer to our <a href="/Webhooks/parse.html">Parse Webhook</a>. Application examples include:</p>
+<ul>
+	<li>Posting blog articles via email</li>
+	<li>Processing email replies in a mailing list</li>
+	<li>Allowing users to upload pictures to their profile via email</li>
+	<li>Submit support requests via email</li>
+</ul>
+
+<h3>Real-time Event Notification Webhook</h3>
+
+<p>SendGrid can send real-time notifications about events that happen on the SendGrid system to a URL. These events include clicks, opens, unsubscribe, bounces, and many others. These events include more data than what SendGrid records and allow customers to customize their own reporting. What makes this API even more powerful is the ability to include user-defined parameters in each event. Through our SMTP API, customers can embed unique parameters in each email they send. These parameters are then passed to each event notification so your application can associate these events with your customers. Read more about the <a href="/Webhooks/event.html">Event Webhook</a>. Examples of applications include:</p>
+
+<ul>
+	<li>Associate a spam report with a specific campaign and user in your application</li>
+	<li>Know real-time when a user has clicked on a confirmation email</li>
+	<li>Get the specific link clicked on an email</li>
+	<li>Get the browser version used by a customer</li>
+	<li>Know the specific MTA response for a customer</li>
+</ul>
