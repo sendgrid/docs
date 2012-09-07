@@ -125,3 +125,36 @@
 	width: 63px;
 	height: 63px;
 }
+
+
+.framework-icon {
+    background: url('/images/framework_icon_sprites.png') no-repeat top left;
+	display:block;
+}
+
+.framework-iconapple-mail { background-position: 0 0; width: 72px; height: 72px; } 
+.framework-iconcake{ background-position: 0 -122px; width: 72px; height: 72px; } 
+.framework-iconcodeigniter{ background-position: 0 -244px; width: 72px; height: 72px; } 
+.framework-icondjango{ background-position: 0 -366px; width: 72px; height: 72px; } 
+.framework-icondrupal{ background-position: 0 -488px; width: 72px; height: 72px; } 
+.framework-iconexim{ background-position: 0 -610px; width: 72px; height: 72px; } 
+.framework-icongmail{ background-position: 0 -732px; width: 72px; height: 72px; } 
+.framework-iconjava{ background-position: 0 -854px; width: 72px; height: 72px; } 
+.framework-iconjoomla{ background-position: 0 -976px; width: 72px; height: 72px; } 
+.framework-iconmagento{ background-position: 0 -1098px; width: 72px; height: 72px; } 
+.framework-iconmicrosoft{ background-position: 0 -1220px; width: 72px; height: 72px; } 
+.framework-iconms-net{ background-position: 0 -1342px; width: 72px; height: 72px; } 
+.framework-iconnodejs{ background-position: 0 -1464px; width: 72px; height: 72px; } 
+.framework-iconoutlook{ background-position: 0 -1586px; width: 72px; height: 72px; } 
+.framework-iconperl{ background-position: 0 -1708px; width: 72px; height: 72px; } 
+.framework-iconphp{ background-position: 0 -1830px; width: 72px; height: 72px; } 
+.framework-iconpostfix{ background-position: -122px 0; width: 72px; height: 72px; } 
+.framework-iconpython{ background-position: -122px -122px; width: 72px; height: 72px; } 
+.framework-iconqmail{ background-position: -122px -244px; width: 72px; height: 72px; } 
+.framework-iconror{ background-position: -122px -366px; width: 72px; height: 72px; } 
+.framework-iconruby{ background-position: -122px -488px; width: 72px; height: 72px; } 
+.framework-iconsendmail{ background-position: -122px -610px; width: 72px; height: 72px; } 
+.framework-iconssmtp{ background-position: -122px -732px; width: 72px; height: 72px; } 
+.framework-iconsymfony{ background-position: -122px -854px; width: 72px; height: 72px; } 
+.framework-iconthunderbird{ background-position: -122px -976px; width: 72px; height: 72px; } 
+.framework-iconwordpress{ background-position: -122px -1098px; width: 72px; height: 72px; } 
