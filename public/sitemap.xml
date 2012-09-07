@@ -701,6 +701,10 @@
         <lastmod>2012-09-06T16:33:30-06:00</lastmod>
     </url>
     <url>
+        <loc>http://docs.sendgrid.com/Code Examples/</loc>
+        <lastmod>2012-09-06T20:57:44-06:00</lastmod>
+    </url>
+    <url>
         <loc>http://docs.sendgrid.com/Code Examples/java.html</loc>
         <lastmod>2012-09-04T13:03:29-06:00</lastmod>
     </url>
@@ -723,6 +727,10 @@
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/ruby.html</loc>
         <lastmod>2012-09-04T13:03:29-06:00</lastmod>
+    </url>
+    <url>
+        <loc>http://docs.sendgrid.com/Code Examples/SMTP API Header Examples/</loc>
+        <lastmod>2012-09-06T20:58:19-06:00</lastmod>
     </url>
     <url>
         <loc>http://docs.sendgrid.com/Code Examples/SMTP API Header Examples/perl.html</loc>
