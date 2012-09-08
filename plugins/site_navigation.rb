@@ -73,15 +73,21 @@ module Jekyll
           
           name = base[1..-1]
           if name.index('.') != nil
-            name = @nodes[name]["title"] || name
-          end
-                       
+            icon_name = @nodes[name]["icon"]
+            name = @nodes[name]["title"]
+          end     
+                  
           li_class = ""
           if base == @page_url 
             li_class = "active"
+            if icon_name
+              icon_name = icon_name + " icon-white"
+            end
           end
 
-          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{name}</a></li>" if subtree.empty?
+          icon_html = "<i class=\"#{icon_name}\"></i> " unless icon_name.nil?
+
+          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{icon_html}#{name}</a></li>" if subtree.empty?
       end
 
       nodes.each do |node|
@@ -93,7 +99,7 @@ module Jekyll
           name = base[1..-1]
           if name.index('.') != nil
             is_parent = false
-            name = @nodes[name]["title"] || name
+            name = @nodes[name]["title"]
           else
             is_parent = true
             href = base + '/index.html'
@@ -117,7 +123,14 @@ module Jekyll
 
             li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{name}</div>"
           else
-            li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{name}</a></li>"
+            icon_name = @nodes[name]["icon"]
+            
+            if icon_name && li_class=="active"
+              icon_name = icon_name + " icon-white"
+            end
+            
+            icon_html = icon_name.nil? ? "<i class=#{icon_name}></i> " : "" 
+            li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{icon_html}#{name}</a></li>"
           end
 
           output += "#{prefix}	#{li}"
