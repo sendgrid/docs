@@ -55,6 +55,11 @@ blockquote { background-color: #FFFFED; }
 
 .nav-list > .active > a { text-shadow: 0 1px 0 rgba(255, 143, 0, .5); }
 
+.nav-list [class^="icon-"] {
+margin-right: 2px;
+margin-top: 2px;
+}
+
 .sidebar-nav .nav-header { font-size:15px}
 
 #main-menu > :first-child > a {
