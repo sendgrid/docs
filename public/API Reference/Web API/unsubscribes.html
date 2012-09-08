@@ -20,7 +20,7 @@
   
   <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Web API/unsubscribes.html">
   <link href="/favicon.png" rel="icon">
-  <link href="/css/201209081138.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/css/201209081140.min.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -90,10 +90,9 @@
 <h2>get</h2>
 <p>Retrieve a list of Unsubscribes with addresses and optionally with dates.</p>
 
-<table class="table table-bordered table-striped">
-	<tbody>
-		<tr>
-			<th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>
 				Parameter
 			</th>
 			<th>
@@ -106,8 +105,8 @@
 				Description
 			</th>
 		</tr>
-		<tr>
-			<td>
+<tr>
+<td>
 				date
 			</td>
 			<td>
@@ -120,8 +119,8 @@
 				Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
 			</td>
 		</tr>
-		<tr>
-			<td>
+<tr>
+<td>
 				days
 			</td>
 			<td>
@@ -134,8 +133,8 @@
 				Number of days in the past for which to retrieve unsubscribes (includes today)
 			</td>
 		</tr>
-		<tr>
-			<td>
+<tr>
+<td>
 				start_date
 			</td>
 			<td>
@@ -148,8 +147,8 @@
 				The start of the date range for which to retrieve unsubscribes. 
 			</td>
 		</tr>
-		<tr>
-			<td>
+<tr>
+<td>
 				end_date
 			</td>
 			<td>
@@ -162,36 +161,32 @@
 				The end of the date range for which to retrieve unsubscribes.
 			</td>
 		</tr>
-      <tr> 
-      <td>limit</td> 
+<tr>
+<td>limit</td> 
       <td>No</td> 
       <td>some integer</td> 
       <td>Optional field to limit the number of results returned.</td> 
-    </tr> 
-    <tr> 
-      <td>offset</td> 
+    </tr>
+<tr>
+<td>offset</td> 
       <td>No</td> 
       <td>some integer</td> 
       <td>optional beginning point in the list to retrieve from.</td> 
-    </tr> 
-    <tr> 
-      <td>email</td> 
+    </tr>
+<tr>
+<td>email</td> 
       <td>No</td> 
       <td>email address eg testing@example.com</td> 
       <td>optional email addresses to search for.</td> 
-    </tr> 
-	</tbody>
-</table>
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    </tr>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
   <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
+</ul><div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1</span></code></pre></td></tr></table></div></figure>
 
     <h3>Response</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -202,36 +197,23 @@
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com<span class="err">&amp;</span>api_key=secureSecret<span class="err">&amp;</span>date=1
+</pre></td><td class='code'><pre><code class='xml'><span class='line'>https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com<span class="ni">&amp;amp;</span>api_key=secureSecret<span class="ni">&amp;amp;</span>date=1
 </span></code></pre></td></tr></table></div></figure>
 
 		<h3>Response</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;unsubscribes>
-</span><span class='line'>  &lt;unsubscribe>
-</span><span class='line'>    &lt;email>brandon.west@sendgrid.com&lt;/email>
-</span><span class='line'>    &lt;created>2012-09-06 14:03:18&lt;/created>
-</span><span class='line'>  &lt;/unsubscribe>
-</span><span class='line'>&lt;/unsubscribes></span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;unsubscribes>&lt;unsubscribe>&lt;email>brandon.west@sendgrid.com&lt;/email>&lt;created>2012-09-06 14:03:18&lt;/created>&lt;/unsubscribe>&lt;/unsubscribes></span></code></pre></td></tr></table></div></figure>
 
   </div>
 </div>
 
-<hr/>
-
-<a name="delete"></a>
+<hr><a name="delete"></a>
 <h2>delete</h2>
 <p>Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
 
       <th>Required</th>
 
@@ -239,9 +221,8 @@
 
       <th>Description</th>
     </tr>
-
-    <tr>
-      <td>start_date</td>
+<tr>
+<td>start_date</td>
 
       <td>No</td>
 
@@ -249,9 +230,8 @@
 
       <td>Optional date to start retrieving for.</td>
     </tr>
-
-    <tr>
-      <td>end_date</td>
+<tr>
+<td>end_date</td>
 
       <td>No</td>
 
@@ -259,9 +239,8 @@
 
       <td>Optional date to end retrieving for.</td>
     </tr>
-
-    <tr>
-      <td>email</td>
+<tr>
+<td>email</td>
 
       <td>No</td>
 
@@ -269,18 +248,14 @@
 
       <td>Unsubscribed email address to remove</td>
     </tr>
-  </tbody>
-</table>
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
   <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
+</ul><div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
 <h3>Response: Success</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="p">{</span><span class="s2">&quot;message&quot;</span><span class="o">:</span><span class="s2">&quot;success&quot;</span><span class="p">}</span>
@@ -294,7 +269,7 @@
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
 
@@ -316,41 +291,35 @@
 </span><span class='line'>@nodes
 </span></code></pre></td></tr></table></div></figure>
 
-  </div>
+  </result></result></result>
+</div>
 </div>
 
-<hr/>
-
-<a name="add"></a>
+<hr><a name="add"></a>
 <h2>add</h2>
 <p>Add email addresses to the Unsubscribe list.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
     </tr>
-    <tr>
-      <td>email</td>
+<tr>
+<td>email</td>
       <td>Yes</td>
       <td>Must be a valid email address</td>
       <td>Email address to add to unsubscribe list</td>
     </tr>
-  </tbody>
-</table>
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
   <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
+</ul><div class="tab-content">
   <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&amp;api_key=secureSecret&amp;email=email2@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -365,28 +334,24 @@
   <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&api_key=secureSecret&email=email2@domain.com</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&amp;api_key=secureSecret&amp;email=email2@domain.com</span></code></pre></td></tr></table></div></figure>
 
 <h3>Response: Success</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'>@nodes
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 <h3>Response: Error</h3>
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
-</span><span class='line'>@nodes
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;&lt;message&gt;</span>Email does not exist<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
 
-  </div>
+  </result></result>
 </div>
-
+</div>
   
     <footer>
       
@@ -449,7 +414,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="span5">
-				<p>Docs Version 0.1.4 &nbsp;&nbsp; &copy; SendGrid 2012</p>
+				<p>Docs Version 0.1.5 &nbsp;&nbsp; &copy; SendGrid 2012</p>
 			</div>
 			<div class="span6">
 				<a href="http://sendgrid.com/tos.html">Terms of Service</a>

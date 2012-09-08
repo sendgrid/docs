@@ -20,7 +20,7 @@
   
   <link rel="canonical" href="http://docs.sendgrid.com/API Reference/Customer Subuser API/subusers.html">
   <link href="/favicon.png" rel="icon">
-  <link href="/css/201209081138.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/css/201209081140.min.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   
   <link href="/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -86,10 +86,9 @@
   
     <p>These are actions that directly affect your subuser. We provide access via XML and JSON.</p>
 <a name="createSubuser"></a>
-  <p><strong><em>The Merry Tipster says:</em></strong>
-    Note that the parameters used to identify the user may appear to be at odds with itself. In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</p>
-  <p><em><strong>NOTE:</strong></em>
-    Due to updates to our API, you are no longer required to use only the email address form of the username for either the USERNAME or USER parameters. You can now use either the email address or username form.</p>
+  <blockquote><span class="label label-info">Info</span>
+   In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</blockquote>
+
   <h2>Create a Subuser</h2>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -199,32 +198,32 @@
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
-   
-
-error
-
-&#8230;
-&#8230; error messages &#8230;
-&#8230;
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="create-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"error","errors":[..."error messages"...]}</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
   <hr/><a name="retrieveSubusers"></a>
@@ -308,11 +307,11 @@ error
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
@@ -343,7 +342,7 @@ US
 
 555-555-5555 example.com
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
@@ -371,20 +370,18 @@ US
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#enable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#enable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -392,13 +389,13 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
@@ -422,20 +419,18 @@ User not found
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#disable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#disable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -443,13 +438,13 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
@@ -474,20 +469,18 @@ User not found
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#enablewebsite-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#enablewebsite-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="enablewebsite-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -495,13 +488,13 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="enablewebsite-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_key=secureSecret&user=example@example.co</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
@@ -525,20 +518,18 @@ User not found
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#disablewebsite-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#disablewebsite-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="disablewebsite-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -546,13 +537,13 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="disablewebsite-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_key=secureSecret&task=ge</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>"message":"User not found"</span></code></pre></td></tr></table></div></figure>
@@ -629,41 +620,41 @@ User not found
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateprofile-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateprofile-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateprofile-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
-   
-
-error
-
-&#8230;
-&#8230; error messages &#8230;
-&#8230;
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateprofile-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"error","errors":[..."error messages"...]}</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
   <hr/><a name="updateSubuserPassword"></a>
@@ -696,11 +687,11 @@ error
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserPassword-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserPassword-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserPassword-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
@@ -709,27 +700,20 @@ error
 <span class='line-number'>2</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>success
 </span><span class='line'> </span></code></pre></td></tr></table></div></figure>
-  <h3>Response: Error</h3>
-   
-
-error
-
-&#8230;
-&#8230; error messages &#8230;
-&#8230;
-
- 
+<result>
+  <message>error: reason</message>
+</result>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserPassword-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"error","errors":[..."error messages"...]}</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
   <hr/><a name="updateSubuserUsername"></a>
@@ -763,41 +747,41 @@ error
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserUsername-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserUsername-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserUsername-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
-   
-
-error
-
-&#8230;
-&#8230; error messages &#8230;
-&#8230;
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserUsername-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"error","errors":[..."error messages"...]}</span></code></pre></td></tr></table></div></figure>
   </div>
 </div>
   <hr/><a name="updateSubuserEmailAddress"></a>
@@ -831,41 +815,41 @@ error
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserEmailAddress-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserEmailAddress-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserEmailAddress-xml">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>success<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
-   
-
-error
-
-&#8230;
-&#8230; error messages &#8230;
-&#8230;
-
- 
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='xml'><span class='line'><span class="nt">&lt;result&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;message&gt;</span>error: reason<span class="nt">&lt;/message&gt;</span>
+</span><span class='line'><span class="nt">&lt;/result&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserEmailAddress-json">
      <h3>Call</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.co</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Success</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"success"</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"success"}</span></code></pre></td></tr></table></div></figure>
   <h3>Response: Error</h3>
   <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>"message":"error","errors":[..."error messages"...]</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>{"message":"error","errors":[..."error messages"...]}</span></code></pre></td></tr></table></div></figure>
 </div>
 </div>
 
@@ -931,7 +915,7 @@ error
 	<div class="container">
 		<div class="row">
 			<div class="span5">
-				<p>Docs Version 0.1.4 &nbsp;&nbsp; &copy; SendGrid 2012</p>
+				<p>Docs Version 0.1.5 &nbsp;&nbsp; &copy; SendGrid 2012</p>
 			</div>
 			<div class="span6">
 				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
