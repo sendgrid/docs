@@ -13,52 +13,44 @@ navigation:
 <h2>add</h2>
 <p>Create a new Recipient List.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
     </tr>
-
-    <tr>
-      <td>list</td>
+<tr>
+<td>list</td>
       <td>Yes</td>
       <td>None</td>
       <td>Create a Recipient List with this name.</td>
     </tr>
-
-    <tr>
-      <td>name</td>
+<tr>
+<td>name</td>
       <td>No</td>
       <td>None</td>
       <td>Specify the column name for the 'name' associated with email addresses.</td>
     </tr>
-
-    <tr>
-      <td><em>columnname</em></td>
+<tr>
+<td><em>columnname</em></td>
       <td>No</td>
       <td>None</td>
       <td>
         Specify additional column names. The format needs to be
         <pre>
-&columnname=columnname
+&amp;columnname=columnname
 </pre>[<em>columnname</em>] will be the replacement tag.
       </td>
     </tr>
-  </tbody>
-</table>
-
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
     <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=SGusername&api_key=SGpasword
+http://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=SGusername&amp;api_key=SGpasword
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -73,65 +65,54 @@ http://sendgrid.com/api/newsletter/lists/add.json?list=test789&api_user=SGuserna
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/add.xml?list=test789&api_user=SGusername&api_key=SGpasword
+http://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=SGusername&amp;api_key=SGpasword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>success</message>
-</result>
+<result><message>success</message></result>
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>error: reason</message>
-@nodes
+<result><message>error: reason</message>
+</result>
 {% endcodeblock %}
-    </div>
+    </result>
+</div>
   </div>
 
 
 <a name="edit" id="edit"></a>
 
-<hr/>
-
-<h2>edit</h2>
+<hr><h2>edit</h2>
 <p>Rename a Recipient List.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
     </tr>
-
-    <tr>
-      <td>list</td>
+<tr>
+<td>list</td>
       <td>Yes</td>
       <td>Must be an existing Recipient List.</td>
       <td>This is the name of the Recipient List to be renamed.</td>
     </tr>
-
-    <tr>
-      <td>newlist</td>
+<tr>
+<td>newlist</td>
       <td>Yes</td>
       <td>None</td>
       <td>Specify the new name for the Recipient List.</td>
     </tr>
-  </tbody>
-</table>
-
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
     <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=test567&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -146,58 +127,48 @@ http://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&newlist=test567
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&newlist=test567&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test567&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>success</message>
-</result>
+<result><message>success</message></result>
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>error: reason</message>
-@nodes
+<result><message>error: reason</message>
+</result>
 {% endcodeblock %}
-    </div>
+    </result>
+</div>
   </div>
 
-<hr/>
-
-<a name="get" id="get"></a>
+<hr><a name="get" id="get"></a>
 
 <h2>get</h2>
 <p>List all Recipient Lists on your account, or check if a particular List exists.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
     </tr>
-
-    <tr>
-      <td>list</td>
+<tr>
+<td>list</td>
       <td>No</td>
       <td>None</td>
       <td>Check for this particular list. (To list all Recipient Lists on your account
       exclude this parameter)</td>
     </tr>
-  </tbody>
-</table>
-
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
     <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -212,60 +183,48 @@ http://sendgrid.com/api/newsletter/lists/get.json?list=test&api_user=SGusername&
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/get.xml?list=test&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<lists>
-  <list>
-    <list>test</list>
-  </list>
-</lists>
+<lists><list><list>test</list></list></lists>
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>error: reason</message>
-@nodes
+<result><message>error: reason</message>
+</result>
 {% endcodeblock %}
-    </div>
+    </result>
+</div>
   </div>
 
 
-<hr/>
-
-<a name="delete" id="delete"></a>
+<hr><a name="delete" id="delete"></a>
 
 <h2>delete</h2>
 <p>Remove a Recipient List from your account.</p>
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
+<table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
     </tr>
-
-    <tr>
-      <td>list</td>
+<tr>
+<td>list</td>
       <td>Yes</td>
       <td>Must be an existing Recipient List.</td>
       <td>Remove this Recipient List.</td>
     </tr>
-  </tbody>
-</table>
-
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
     <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -280,19 +239,17 @@ http://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&api_user=SGus
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
-http://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&api_user=SGusername&api_key=SGpassword
+http://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>success</message>
-</result>
+<result><message>success</message></result>
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>error: reason</message>
-@nodes
+<result><message>error: reason</message>
+</result>
 {% endcodeblock %}
-    </div>
+    </result>
+</div>
   </div>

@@ -87,7 +87,7 @@
       <p>Subuser Statistics</p>
     <a name="retrieveStatistics"></a>
     <h2>Retrieve Subuser Statistics</h2>
-    Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.
+    <p>Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
           <td>Parameter</td>
@@ -121,81 +121,58 @@
         </tr>
       </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#stats-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#stats-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="stats-xml">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&method=stats&user=example@example.com</span></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>	<span class="nt">&lt;stats&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;day&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;date&gt;</span>2009-06-20<span class="nt">&lt;/date&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;requests&gt;</span>12342<span class="nt">&lt;/requests&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;bounces&gt;</span>12<span class="nt">&lt;/bounces&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;clicks&gt;</span>10223<span class="nt">&lt;/clicks&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;opens&gt;</span>9992<span class="nt">&lt;/opens&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;spamreports&gt;</span>5<span class="nt">&lt;/spamreports&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;/day&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;day&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;date&gt;</span>2009-06-21<span class="nt">&lt;/date&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;requests&gt;</span>32342<span class="nt">&lt;/requests&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;bounces&gt;</span>10<span class="nt">&lt;/bounces&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;clicks&gt;</span>14323<span class="nt">&lt;/clicks&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;opens&gt;</span>10995<span class="nt">&lt;/opens&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;spamreports&gt;</span>7<span class="nt">&lt;/spamreports&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;/day&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;day&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;date&gt;</span>2009-06-22<span class="nt">&lt;/date&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;requests&gt;</span>52342<span class="nt">&lt;/requests&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;bounces&gt;</span>11<span class="nt">&lt;/bounces&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;clicks&gt;</span>19223<span class="nt">&lt;/clicks&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;opens&gt;</span>12992<span class="nt">&lt;/opens&gt;</span>
-</span><span class='line'>	        <span class="nt">&lt;spamreports&gt;</span>2<span class="nt">&lt;/spamreports&gt;</span>
-</span><span class='line'>	      <span class="nt">&lt;/day&gt;</span>
-</span><span class='line'>	    <span class="nt">&lt;/stats&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:xml %}
+	<stats>
+	      <day>
+	        <date>2009-06-20</date>
+	        <requests>12342</requests>
+	        <bounces>12</bounces>
+	        <clicks>10223</clicks>
+	        <opens>9992</opens>
+	        <spamreports>5</spamreports>
+	      </day>
+	      <day>
+	        <date>2009-06-21</date>
+	        <requests>32342</requests>
+	        <bounces>10</bounces>
+	        <clicks>14323</clicks>
+	        <opens>10995</opens>
+	        <spamreports>7</spamreports>
+	      </day>
+	      <day>
+	        <date>2009-06-22</date>
+	        <requests>52342</requests>
+	        <bounces>11</bounces>
+	        <clicks>19223</clicks>
+	        <opens>12992</opens>
+	        <spamreports>2</spamreports>
+	      </day>
+	    </stats>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="-json">
+  <div class="tab-pane active" id="stats-json">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&method=stats&user=example@example.com</span></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:javascript %}
+[{&#8220;date&#8221;:&#8221;2009-06-20&#8221;,&#8221;requests&#8221;:12342,&#8221;bounces&#8221;:12,&#8221;clicks&#8221;:10223,&#8221;opens&#8221;:9992,&#8221;spamreports&#8221;:5},{&#8220;date&#8221;:&#8221;2009-06-21&#8221;,&#8221;requests&#8221;:32342,&#8221;bounces&#8221;:10,&#8221;clicks&#8221;:14323,&#8221;opens&#8221;:10995,&#8221;spamreports&#8221;:7},{&#8220;date&#8221;:&#8221;2009-06-22&#8221;,&#8221;requests&#8221;:52342,&#8221;bounces&#8221;:11,&#8221;clicks&#8221;:19223,&#8221;opens&#8221;:12992,&#8221;spamreports&#8221;:2}]
+{% endcodeblock %}
   </div>
 </div><a name="retrieveAggregates"></a>
     <h2>Retrieve Aggregates</h2>
-    Retrieve all-time totals for your subuser
+    <p>Retrieve all-time totals for your subuser</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
           <td>Parameter</td>
@@ -217,30 +194,40 @@
         </tr>
       </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#agg-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#agg-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="agg-xml">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&aggregate=1
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:xml %}
+	<stats>
+	      <requests>12342</requests>
+	      <bounces>12</bounces>
+	      <clicks>10223</clicks>
+	      <opens>9992</opens>
+	      <spamreports>5</spamreports>
+	</stats>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="-json">
+  <div class="tab-pane active" id="agg-json">
      <h3>Call</h3>
     <h4>Command</h4>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&aggregate=1
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:javascript %}
+{&#8220;requests&#8221;:12342,&#8221;bounces&#8221;:12,&#8221;clicks&#8221;:10223,&#8221;opens&#8221;:9992,&#8221;spamreports&#8221;:5}
+{% endcodeblock %}
   </div>
 </div><a name="categoryList"></a>
     <h2>Category List</h2>
-    Retrieve a list of all the categories used in your subusers account.
+    <p>Retrieve a list of all the categories used in your subusers account.</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
           <td>Parameter</td>
@@ -263,32 +250,40 @@
         </tr>
       </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#cat-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#cat-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="cat-xml">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&list=true
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:xml %}
+	<categories>
+	      <category>categoryA</category>
+	      <category>categoryB</category>
+	      <category>categoryC</category>
+	</categories>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="-json">
+  <div class="tab-pane active" id="cat-json">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&list=true
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:javascript %}
+[{&#8220;category&#8221;:&#8221;categoryA&#8221;,&#8221;category&#8221;:&#8221;categoryB&#8221;,&#8221;category&#8221;:&#8221;categoryC&#8221;}]
+{% endcodeblock %}
   </div>
 </div><a name="categoryStatistics"></a>
     <h2>Category Statistics</h2>
-    Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
+<p>    Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
 Note that you can use 
-    <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.
+    <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
           <td>Parameter</td>
@@ -328,29 +323,55 @@ Note that you can use 
         </tr>
       </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#catstats-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#catstats-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="catstats-xml">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
-    <h4>Command - Using an array of categories</h4>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+{% endcodeblock %}
+    <h4>Call - Using an array of categories</h4>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:xml %}
+	<stats>
+	      <day>
+	        <date>2009-06-20</date>
+	        <category>categoryA</category>
+	        <requests>12342</requests>
+	        <bounces>12</bounces>
+	        <clicks>10223</clicks>
+	        <opens>9992</opens>
+	        <spamreports>5</spamreports>
+	      </day>
+	      <day>
+	        <date>2009-06-21</date>
+	        <category>categoryB</category>
+	        <requests>32342</requests>
+	        <bounces>10</bounces>
+	        <clicks>14323</clicks>
+	        <opens>10995</opens>
+	        <spamreports>7</spamreports>
+	      </day>
+	</stats>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane active" id="-json">
+  <div class="tab-pane active" id="catstats-json">
      <h3>Call</h3>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
-    <h4>Command - Using an array of categories</h4>
-    <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+    <h4>Call - Using an array of categories</h4>
+    {% codeblock %}
+https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+{% endcodeblock %}
     <h3>Response</h3>
-    <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='xml'><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
+    {% codeblock lang:javascript %}
+[{&#8220;date&#8221;:&#8221;2009-06-20&#8221;,&#8221;category&#8221;:,&#8221;categoryA&#8221;,&#8221;requests&#8221;:12342,&#8221;bounces&#8221;:12,&#8221;clicks&#8221;:10223,&#8221;opens&#8221;:9992,&#8221;spamreports&#8221;:5},{&#8220;date&#8221;:&#8221;2009-06-21&#8221;,,&#8221;category&#8221;:,&#8221;categoryB&#8221;,&#8221;requests&#8221;:32342,&#8221;bounces&#8221;:10,&#8221;clicks&#8221;:14323,&#8221;opens&#8221;:10995,&#8221;spamreports&#8221;:7}]
+{% endcodeblock %}
   </div>
 
   
