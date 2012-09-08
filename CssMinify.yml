@@ -2,5 +2,5 @@ files: [
   'source/stylesheets/bootstrap.css',
   'source/stylesheets/style.css',
   'source/stylesheets/sprites.css',
-  'source/stylesheets/syntax/syntax.css'
+  'source/stylesheets/syntax.css'
 ]

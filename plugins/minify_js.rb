@@ -48,7 +48,7 @@ module Jekyll
 
     def minify_js(js_files, output_file, source)
       js_files = js_files.join(' ')
-      juice_cmd = "juicer merge -i -f #{js_files} -o #{output_file} -d #{source}"
+      juice_cmd = "juicer merge -s -f #{js_files} -o #{output_file} -d #{source}"
       puts juice_cmd
       system(juice_cmd)
     end
