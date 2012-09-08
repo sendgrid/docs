@@ -11,10 +11,9 @@ navigation:
   <h2>get</h2>Retrieve a list of Blocks with addresses and response codes, optionally
   with dates.
 
-  <table class="table table-bordered table-striped">
-    <tbody>
-      <tr>
-        <th>Parameter</th>
+  <table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
 
         <th>Required</th>
 
@@ -22,9 +21,8 @@ navigation:
 
         <th>Description</th>
       </tr>
-
-      <tr>
-        <td>date</td>
+<tr>
+<td>date</td>
 
         <td>No</td>
 
@@ -33,9 +31,8 @@ navigation:
         <td>Retrieve the timestamp of the Block records. It will return a date in a MySQL
         timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
-
-      <tr>
-        <td>days</td>
+<tr>
+<td>days</td>
 
         <td>No</td>
 
@@ -43,9 +40,8 @@ navigation:
 
         <td>Number of days in the past for which to retrieve blocks (includes today)</td>
       </tr>
-
-      <tr>
-        <td>start_date</td>
+<tr>
+<td>start_date</td>
 
         <td>No</td>
 
@@ -54,9 +50,8 @@ navigation:
 
         <td>The start of the date range for which to retrieve blocks.</td>
       </tr>
-
-      <tr>
-        <td>end_date</td>
+<tr>
+<td>end_date</td>
 
         <td>No</td>
 
@@ -65,18 +60,14 @@ navigation:
 
         <td>The end of the date range for which to retrieve blocks.</td>
       </tr>
-    </tbody>
-  </table>
-
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
     <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1</code>
+https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %} 
       <h3>Response</h3>
 {% codeblock lang:javascript %}
@@ -86,39 +77,22 @@ https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&api_key=s
     <div class="tab-pane" id="get-xml">
       <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
       <h3>Response</h3>
 {% codeblock lang:xml %}
-<blocks>
-  <block>
-    <email>email1@domain.com</email>
-    <status>5.1.1</status>
-    <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
-    <created>2009-06-10 12:40:30</created>
-  </block>
-  <block>
-    <email>email2@domain2.com</email>
-    <status>5.1.1</status>
-    <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
-    <created>2009-08-01 10:16:30</created>
-  </block>
-</blocks>
+<blocks><block><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></block><block><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-08-01 10:16:30</created></block></blocks>
 {% endcodeblock %}
     </div>
   </div>
 
-<hr class="docs-separator"/>
-
-<a name=
-  "delete" id="delete"></a>
+<hr class="docs-separator"><a name="delete" id="delete"></a>
 
   <h2>delete</h2>Delete an address from the Block list.
 
-  <table class="table table-bordered table-striped">
-    <tbody>
-      <tr>
-        <th>Parameter</th>
+  <table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
 
         <th>Required</th>
 
@@ -126,9 +100,8 @@ https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&api_key=se
 
         <th>Description</th>
       </tr>
-
-      <tr>
-        <td>email</td>
+<tr>
+<td>email</td>
 
         <td>Yes</td>
 
@@ -136,18 +109,14 @@ https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&api_key=se
 
         <td>Email block address to remove</td>
       </tr>
-    </tbody>
-  </table>
-
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
     <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
-  <div class="tab-content">
+  </ul><div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -162,19 +131,18 @@ https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&api_ke
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<result>
-  <count>4</count>
+<result><count>4</count>
 @nodes
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>error: reason</message>
-@nodes
+<result><message>error: reason</message>
+</result>
 {% endcodeblock %}
-    </div>
+    </result></result>
+</div>
   </div>

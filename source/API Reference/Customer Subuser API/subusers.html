@@ -8,10 +8,9 @@ navigation:
 
   <p>These are actions that directly affect your subuser. We provide access via XML and JSON.</p>
 <a name="createSubuser"></a>
-  <p><strong><em>The Merry Tipster says:</em></strong>
-    Note that the parameters used to identify the user may appear to be at odds with itself. In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</p>
-  <p><em><strong>NOTE:</strong></em>
-    Due to updates to our API, you are no longer required to use only the email address form of the username for either the USERNAME or USER parameters. You can now use either the email address or username form.</p>
+  <blockquote><span class="label label-info">Info</span>
+   In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</blockquote>
+
   <h2>Create a Subuser</h2>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -122,34 +121,30 @@ navigation:
 https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
   <h3>Response: Error</h3>
-   
-
-error
-
-...
-... error messages ...
-...
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane" id="create-xml">
+  <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
   </div>
 </div>
@@ -234,11 +229,11 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=ge
@@ -270,7 +265,7 @@ US
 
 555-555-5555 example.com
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=ge
@@ -300,21 +295,19 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#enable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#enable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -322,14 +315,14 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -355,21 +348,19 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#disable-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#disable-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -377,14 +368,14 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -411,21 +402,19 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#enablewebsite-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#enablewebsite-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="enablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -433,14 +422,14 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="enablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_key=secureSecret&user=example@example.co
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -466,21 +455,19 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#disablewebsite-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#disablewebsite-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="disablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+<result>
+  <message>success</message>
+</result>
   <h3>Response: Error</h3>
    
 
@@ -488,14 +475,14 @@ User not found
 
  
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="disablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -574,44 +561,40 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateprofile-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateprofile-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateprofile-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
   <h3>Response: Error</h3>
-   
-
-error
-
-...
-... error messages ...
-...
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateprofile-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
   </div>
 </div>
@@ -645,11 +628,11 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserPassword-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserPassword-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserPassword-xml">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
@@ -658,29 +641,22 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secur
   {% codeblock %}    success
  
 {% endcodeblock %}
-  <h3>Response: Error</h3>
-   
-
-error
-
-...
-... error messages ...
-...
-
- 
+<result>
+  <message>error: reason</message>
+</result>
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserPassword-json">
      <h3>Call</h3>
   {% codeblock %}
 https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
   </div>
 </div>
@@ -715,44 +691,40 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserUsername-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserUsername-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserUsername-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.co
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
   <h3>Response: Error</h3>
-   
-
-error
-
-...
-... error messages ...
-...
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserUsername-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.co
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
   </div>
 </div>
@@ -787,44 +759,40 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
       </tr>
     </tbody></table>
   <ul class="nav nav-tabs">
-  <li class="active"><a href="#-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#-xml" data-toggle="tab">XML</a></li>
+  <li class="active"><a href="#updateSubuserEmailAddress-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#updateSubuserEmailAddress-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane" id="updateSubuserEmailAddress-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.co
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-   
-
-success
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
   <h3>Response: Error</h3>
-   
-
-error
-
-...
-... error messages ...
-...
-
- 
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
     </div>
-  <div class="tab-pane" id="-xml">
+  <div class="tab-pane active" id="updateSubuserEmailAddress-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.co
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
 </div>
 </div>
