@@ -12,10 +12,9 @@ navigation:
 
  <h2>get</h2>
 
- <table class="table table-bordered table-striped">
-   <tbody>
-     <tr>
-       <th>Parameter</th>
+ <table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
 
        <th>Required</th>
 
@@ -23,9 +22,8 @@ navigation:
 
        <th>Description</th>
      </tr>
-
-     <tr>
-       <td>date</td>
+<tr>
+<td>date</td>
 
        <td>No</td>
 
@@ -34,9 +32,8 @@ navigation:
        <td>Retrieve the timestamp of the spam report records. It will return a date in a
        MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
      </tr>
-
-     <tr>
-       <td>days</td>
+<tr>
+<td>days</td>
 
        <td>No</td>
 
@@ -45,9 +42,8 @@ navigation:
        <td>Number of days in the past for which to retrieve spam reports (includes
        today)</td>
      </tr>
-
-     <tr>
-       <td>start_date</td>
+<tr>
+<td>start_date</td>
 
        <td>No</td>
 
@@ -56,9 +52,8 @@ navigation:
 
        <td>The start of the date range for which to retrieve spam reports.</td>
      </tr>
-
-     <tr>
-       <td>end_date</td>
+<tr>
+<td>end_date</td>
 
        <td>No</td>
 
@@ -67,9 +62,8 @@ navigation:
 
        <td>The end of the date range for which to retrieve spam reports.</td>
      </tr>
-
-     <tr>
-       <td>limit</td>
+<tr>
+<td>limit</td>
 
        <td>No</td>
 
@@ -77,9 +71,8 @@ navigation:
 
        <td>Optional field to limit the number of results returned.</td>
      </tr>
-
-     <tr>
-       <td>offset</td>
+<tr>
+<td>offset</td>
 
        <td>No</td>
 
@@ -87,9 +80,8 @@ navigation:
 
        <td>optional beginning point in the list to retrieve from.</td>
      </tr>
-
-     <tr>
-       <td>email</td>
+<tr>
+<td>email</td>
 
        <td>No</td>
 
@@ -97,18 +89,14 @@ navigation:
 
        <td>optional email addresses to search for.</td>
      </tr>
-   </tbody>
- </table>
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
   <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
+</ul><div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_key=secureSecret&date=1
+https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
 
      <h3>Response</h3>
@@ -121,40 +109,26 @@ https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&api_
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_key=secureSecret&date=1
+https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
 
 		<h3>Response</h3>
 {% codeblock lang:xml %}
-<spamreports>
-  <spamreport>
-    <ip>174.36.80.219</ip>
-    <email>example@aol.com</email>
-    <created>2009-12-06 15:45:08</created>
-  </spamreport>
-  <spamreport>
-    <ip>74.63.202.105</ip>
-    <email>example2@yahoo.com</email>
-    <created>2009-12-08 07:43:01</created>
-  </spamreport>
-</spamreports>
+<spamreports><spamreport><ip>174.36.80.219</ip><email>example@aol.com</email><created>2009-12-06 15:45:08</created></spamreport><spamreport><ip>74.63.202.105</ip><email>example2@yahoo.com</email><created>2009-12-08 07:43:01</created></spamreport></spamreports>
 {% endcodeblock %}
   </div>
 </div>
 
-<hr/>
-
-  <a name="delete" id="delete"></a>
+<hr><a name="delete" id="delete"></a>
 
   <h2>delete</h2>
 
   <p>Delete an address from the Spam Reports list.</p>
   
 
-  <table class="table table-bordered table-striped">
-    <tbody>
-      <tr>
-        <th>Parameter</th>
+  <table class="table table-bordered table-striped"><tbody>
+<tr>
+<th>Parameter</th>
 
         <th>Required</th>
 
@@ -162,9 +136,8 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_k
 
         <th>Description</th>
       </tr>
-
-      <tr>
-        <td>email</td>
+<tr>
+<td>email</td>
 
         <td>Yes</td>
 
@@ -172,18 +145,14 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&api_k
 
         <td>Email spam reports address to remove</td>
       </tr>
-    </tbody>
-  </table>
-
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+</tbody></table><ul class="nav nav-tabs">
+<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
   <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
-<div class="tab-content">
+</ul><div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
@@ -199,20 +168,19 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&a
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&email=emailToDelete@domain.com
+https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>success</message>
-@nodes
+<result><message>success</message>
+</result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-<result>
-  <message>Email does not exist</message>
-@nodes
+<result><message>Email does not exist</message>
+</result>
 {% endcodeblock %}
 
-  </div>
+  </result></result>
+</div>
 </div>
