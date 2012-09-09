@@ -34,7 +34,10 @@ module Jekyll
       FileUtils.mkdir_p(output_dir)
       
       minify_css(files_to_minify, output_file, site.source, site)
-      site.static_files << CssMinifyFile.new(site, site.source, config['css_destination'], $minified_css_filename)
+      
+      #add to the static files collection so they won't be cleaned up after site generation
+      site.static_files << CssMinifyFile.new(site, site.source, config['css_destination'], $minified_css_filename + '.min.css')
+      site.static_files << CssMinifyFile.new(site, site.source, config['css_destination'], $minified_embedded_css_filename + '-embed.min.css')
     end
 
     # read the css dir for the css files to compile
@@ -78,8 +81,8 @@ module Jekyll
     def self.get_config
       if @config == nil
         @config = {
-          'css_source' => 'css', # relative to the route
-          'css_destination' => '/css' # relative to site.config['destination']
+          'css_source' => 'stylesheets', # relative to the route
+          'css_destination' => '/stylesheets' # relative to site.config['destination']
         }
         config = YAML.load_file('CssMinify.yml') rescue nil
         if config.is_a?(Hash)
