@@ -147,7 +147,7 @@ margin-top: 2px;
 
 #bottom-footer {
 	color:#CCC;
-	background: url(/images/footer-bg.gif?embed=true);
+	background: url(/images/footer-bg.png?embed=true);
 	border-top: 1px solid #EEE;
 	height: 30px;
 	font-size: 12px;
@@ -194,7 +194,7 @@ cursor: pointer;
 
 li.collapsibleListOpen{
 	padding: 3px 15px;
-	background: url('/images/minus.gif?embed=true') no-repeat 0px 5px;
+	background: url('/images/minus.png?embed=true') no-repeat 0px 5px;
 	cursor: pointer;
 	padding-left: 17px;
 }
@@ -205,7 +205,7 @@ li.collapsibleListOpen{
 
 li.collapsibleListClosed{
 	padding: 3px 15px;
-	background: url('/images/plus.gif?embed=true') no-repeat 0px 5px;
+	background: url('/images/plus.png?embed=true') no-repeat 0px 5px;
 	cursor: pointer;
 	padding-left: 17px;
 }
