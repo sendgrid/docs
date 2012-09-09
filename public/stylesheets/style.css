@@ -194,7 +194,7 @@ cursor: pointer;
 
 li.collapsibleListOpen{
 	padding: 3px 15px;
-	background: url('/images/minus.gif') no-repeat 0px 5px;
+	background: url('/images/minus.gif?embed=true') no-repeat 0px 5px;
 	cursor: pointer;
 	padding-left: 17px;
 }
@@ -205,7 +205,7 @@ li.collapsibleListOpen{
 
 li.collapsibleListClosed{
 	padding: 3px 15px;
-	background: url('/images/plus.gif') no-repeat 0px 5px;
+	background: url('/images/plus.gif?embed=true') no-repeat 0px 5px;
 	cursor: pointer;
 	padding-left: 17px;
 }
