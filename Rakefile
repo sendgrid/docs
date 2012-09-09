@@ -448,5 +448,5 @@ end
 desc "gzip assets and deploy to s3 bucket with correct encoding header"
 task :gzip_deploy do
   s3_bucket = "sg-docs"
-  ok_failed system("./gzip_deploy.sh #{s3_bucket}")
+  ok_failed system("bash ./gzip_deploy.sh #{s3_bucket}")
 end

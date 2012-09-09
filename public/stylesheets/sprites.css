@@ -1,41 +1,41 @@
 .icon-1 {
-	background: url('/images/docs_icon_sprites.png') no-repeat 0px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat 0px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-2 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -63px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -63px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-3 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -126px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -126px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-4 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -189px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -189px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-5 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -252px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -252px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-6 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -315px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -315px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-7 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -378px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -378px 0px;
 	width: 63px;
 	height: 63px;
 }
@@ -43,92 +43,92 @@
 --
 
 .icon-8 {
-	background: url('/images/docs_icon_sprites.png') no-repeat 0px 0px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat 0px 0px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-9 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -63px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -63px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-10 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -126px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -126px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-11 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -189px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -189px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-12 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -252px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -252px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-13 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -315px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -315px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-14 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -378px -63px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -378px -63px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-15 {
-	background: url('/images/docs_icon_sprites.png') no-repeat 0px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat 0px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-16 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -63px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -63px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-17 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -126px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -126px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-18 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -189px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -189px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-19 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -252px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -252px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-20 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -315px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -315px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 .icon-21 {
-	background: url('/images/docs_icon_sprites.png') no-repeat -378px -126px;
+	background: url('/images/docs_icon_sprites.png?embed=true') no-repeat -378px -126px;
 	width: 63px;
 	height: 63px;
 }
 
 
 .framework-icon {
-    background: url('/images/framework_icon_sprites.png') no-repeat top left;
+    background: url('/images/framework_icon_sprites.png?embed=true') no-repeat top left;
 	display:block;
 }
 
