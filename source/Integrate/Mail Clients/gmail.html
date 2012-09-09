@@ -78,7 +78,7 @@ navigation:
 
 <blockquote><span class="label label-info">Info</span> The Outbound Relay option is an administrative control that is only available in Google Apps accounts. Gmail-only users are able to use this feature without administrative management.
 </blockquote>
-<p><img title="Google Apps Email Settings" src="/images/gmail_1.png" alt="Where to set google apps to allow external smtp settings. Outbound gateway forces all email through an external SMTP server. Outbound relay allows a user to set up an alternate SMTP server." width="922" height="690" />
+<p><img title="Google Apps Email Settings" src="{{ root_url }}/images/gmail_1.png" alt="Where to set google apps to allow external smtp settings. Outbound gateway forces all email through an external SMTP server. Outbound relay allows a user to set up an alternate SMTP server." width="922" height="690" />
 </p>
 <blockquote><span class="label label-info">Info</span> For the purposes of this guide, we will assume the <strong>Outbound relay</strong> setting was checked, and the Outbound gateway was left blank.
 </blockquote>
@@ -88,7 +88,7 @@ Once the Outbound relay setting has been turned on, you need to login to the acc
 </p>
 <blockquote><span class="label label-info">Info</span> Creating a Send Mail As account does not deliver mail sent to that address into your Gmail inbox. You either need to configure that account to forward all or select mail to your Gmail address or use Gmail's POP3 mail checking functionality, located conveniently below the Send Mail As feature.
 </blockquote>
-<p><img src="/images/gmail_2.png" alt="Where to add another send-from address in google accounts" width="1156" height="570"/>
+<p><img src="{{ root_url }}/images/gmail_2.png" alt="Where to add another send-from address in google accounts" width="1156" height="570"/>
 </p>
 <p>The next step will ask you whether you want to use your default SMTP settings, or the other domain. Select the other domain (second radio button), and put in the following details:
 <ul>
@@ -99,10 +99,10 @@ Once the Outbound relay setting has been turned on, you need to login to the acc
 	<li><strong>Encryption:</strong> Either option is acceptable.</li>
 </ul>
 </p>
-<p><img class="clear" src="/images/gmail_3.png" width="620" height="560"/>
+<p><img class="clear" src="{{ root_url }}/images/gmail_3.png" width="620" height="560"/>
 </p>
 <h2>Sending as the Alias</h2>
 <p>
 As you're sending a message, you should now see a <strong>From:</strong> field as a dropdown. If you select the Alias you've set up with the SendGrid SMTP, it will be sent through our servers, with all apps applied as needed.</p>
 <p>
-<img class="clear" src="/images/gmail_4.png" width="463" height="400"/></p>
+<img class="clear" src="{{ root_url }}/images/gmail_4.png" width="463" height="400"/></p>

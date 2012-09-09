@@ -11,7 +11,7 @@ navigation:
 {% codeblock lang:javascript %}
 X-SMTPAPI: {"category" : "newuser"}
 {% endcodeblock %}
-<p>In this case, the header is telling the processing routine to assign this email the <a href="/Delivery%20Metrics/categories.html">category</a> of "newuser".</p>
+<p>In this case, the header is telling the processing routine to assign this email the <a href="{{ root_url }}/Delivery%20Metrics/categories.html">category</a> of "newuser".</p>
 
 <h2>The X-SMTPAPI Header</h2>
 
@@ -25,35 +25,35 @@ X-SMTPAPI: {"category" : "newuser"}
 {% endcodeblock %}
 
 <p>
-	<a href="/API%20Reference/SMTP%20API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
+	<a href="{{ root_url }}/API%20Reference/SMTP%20API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
 </p>
 {% codeblock lang:javascript %}
 {"sub":{"%name%": ["Ben", "Joe"], "%role%": ["%sellerSection%", "%buyerSection%"]}}
 {% endcodeblock %}
 
 <p>
-	<a href="/API%20Reference/SMTP%20API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+	<a href="{{ root_url }}/API%20Reference/SMTP%20API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
 </p>
 {% codeblock lang:javascript %}
 {"section":{"%sellerSection%": "Seller information for: %name%", "%buyerSection%": "Buyer information for: %name%"}}
 {% endcodeblock %}
 
 <p>
-	<a href="/Delivery%20Metrics/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
+	<a href="{{ root_url }}/Delivery%20Metrics/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
 </p>
 {% codeblock lang:javascript %}
 {"category": [“category1”,”category2”]}
 {% endcodeblock %}
 
 <p>
-	<a href="/API%20Reference/SMTP%20API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
+	<a href="{{ root_url }}/API%20Reference/SMTP%20API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
 </p>
 {% codeblock lang:javascript %}
 {"unique_args": {"orderNumber": "12345", "eventID": "6789"}}
 {% endcodeblock %}
 
 <p>
-	<a href="/API%20Reference/SMTP%20API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
+	<a href="{{ root_url }}/API%20Reference/SMTP%20API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:javascript %}
 {"filters": {"footer": {"settings": {"enable":1,"text/plain": "Thank you for
