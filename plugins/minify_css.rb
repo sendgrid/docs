@@ -63,7 +63,9 @@ module Jekyll
       
       #let's open that file and replace all the paths so they're relative to site.root
       contents = File.read(min_file)
-      replaced = contents.gsub(/url\('\//, "url\('\/" + site.config["root"])
+      replaced = contents.gsub(/url\('\//, "url('" + site.config["root"])
+      replaced = replaced.gsub(/url\(\//, "url(" + site.config["root"])
+      
       File.open(min_file, "w") {|file| file.puts replaced}
       
       juice_cmd = "juicer merge -f #{css_files} -o #{embed_file} -d #{source} --embed-images data_uri"
@@ -72,8 +74,8 @@ module Jekyll
       
       #better do it for the embed version as well for files that didn't embed due to size, etc
       contents = File.read(embed_file)
-      replaced = contents.gsub(/url\('\//, "url\('\/" + site.config["root"])
-      
+      replaced = contents.gsub(/url\('\//, "url('" + site.config["root"])
+      replaced = replaced.gsub(/url\(\//, "url(" + site.config["root"])
       File.open(embed_file, "w") {|file| file.puts replaced}
     end
 
