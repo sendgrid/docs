@@ -3,9 +3,9 @@
 {% assign previous="" %}
 
  {% if num_parts == "0" or num_parts == "-1" %}
-  <li><a href="/">Home</a> </li>
+  <li><a href="{{ root_url }}/index.html">Home</a> </li>
  {% else %}
-  <li><a href="/">Home</a> <span class="divider">/</span> </li>
+  <li><a href="{{ root_url }}/index.html">Home</a> <span class="divider">/</span> </li>
 
   {% for unused in site.breadcrumb_list limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:" …" | remove:"…"}}{% endcapture %}
@@ -17,16 +17,3 @@
   {% endfor %}
  {% endif %}
 </ul>
-
-<!-->
-{% assign b = " " %}
-{% capture b %}{{site.base_dir}}{% endcapture %}
-<ul class="breadcrumb">
-  <li><a href="{{site.base_dir}}/">Home</a> </li>
-{% for p in page.categories %}
-  <span class="divider">/</span>
-  <li><a href="{{b}}/{{p}}">{{p}}</a></li>
-{% capture b %}{{b}}/{{p}}{% endcapture %}
-{%endfor%}
-</ul>
--->

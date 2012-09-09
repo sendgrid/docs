@@ -48,7 +48,7 @@ module Jekyll
 
     def minify_css(css_files, output_file, source)
       css_files = css_files.join(' ')
-      juice_cmd = "juicer merge -f #{css_files} -o #{output_file} -d #{source}"
+      juice_cmd = "juicer merge -f #{css_files} -o #{output_file} -d #{source} --embed-images data_uri"
       puts juice_cmd
       system(juice_cmd)
     end
