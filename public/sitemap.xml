@@ -1,1029 +1,909 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/account_limits.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/account_limits.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser API/apps.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/apps.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
+            docs.sendgrid.com/API Reference/Customer Subuser
             API/authenticate_a_subuser.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/automatic_login.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/automatic_login.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
+            docs.sendgrid.com/API Reference/Customer Subuser
             API/event_notification_url.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/invalid_emails.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/invalid_emails.html</loc>
         <lastmod>2012-09-06T21:37:44-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/ip_management.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/ip_management.html</loc>
         <lastmod>2012-09-06T21:37:45-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/monitor_records.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/monitor_records.html</loc>
         <lastmod>2012-09-06T21:37:47-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/parse_settings.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/parse_settings.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/statistics.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/statistics.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/subusers.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/subusers.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/automatic_login.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/automatic_login.html
         </loc>
         <lastmod>2012-09-06T21:37:55-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/event_notification_url.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/event_notification_url.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/v1 (deprecated)/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/invalid_emails.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/invalid_emails.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/subuser_bounces.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/subuser_bounces.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/subuser_spam_reports.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/subuser_spam_reports.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/v1 (deprecated)/subuser_unsubscribes.html
+            docs.sendgrid.com/API Reference/Customer Subuser API/v1
+            (deprecated)/subuser_unsubscribes.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Customer Subuser
-            API/whitelabel.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Customer Subuser API/whitelabel.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/</loc>
+        <loc>docs.sendgrid.com/API Reference/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/libraries.html</loc>
+        <loc>docs.sendgrid.com/API Reference/libraries.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/emails.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/emails.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/lists.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/lists.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/newsletters.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/newsletters.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/recipients.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/recipients.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Newsletter API/schedule.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/schedule.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Newsletter
-            API/sender_address.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Newsletter API/sender_address.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/account_overview.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/account_overview.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/apps.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/apps.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/authenticate_a_customer.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/authenticate_a_customer.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/authenticate_a_customer_subuser.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/automatic_login.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/automatic_login.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/billing_retrieving_as_you_go_usage.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/billing_retrieving_end_users_invoices_usage.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_account_limits.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_account_limits.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_bounces.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_invalid_emails.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_management.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_spam_reports.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_statistics.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_bounces.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_invalid_emails.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_management.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_spam_reports.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_statistics.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_account_limits.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_subuser_apps.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_subuser_apps.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_automatic_login.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_subuser_bounces.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_subuser_bounces.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_event_notification_url.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_invalid_emails.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_monitor_outgoing_email.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
+            docs.sendgrid.com/API Reference/Reseller
             API/customer_subuser_parse_settings.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_subuser_spam_reports.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_subuser_spam_reports.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_subuser_statistics.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_subuser_unsubscribes.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/customer_unsubscribes.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/event_notification_url.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/invoice_retrieval.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/ip_management.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/monitor_records.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/parse_settings.html</loc>
+        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
+    </url>
+    <url>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/pending_account_changes.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_subuser_statistics.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_subuser_unsubscribes.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/customer_unsubscribes.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/event_notification_url.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/invoice_retrieval.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/ip_management.html</loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/monitor_records.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/parse_settings.html</loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/pending_account_changes.html
-        </loc>
-        <lastmod>2012-09-06T21:42:24-06:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/account_overview.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
-            (deprecated)/apps.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/v1 (deprecated)/apps.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/authenticate_a_customer.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/authenticate_a_customer_subuser.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/automatic_login.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
-            (deprecated)/billing.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/v1 (deprecated)/billing.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/billing_retrieving_as_you_go_usage.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/billing_retrieving_end_users_invoices_usage.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_account_limits.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_invalid_emails.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_management.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_spam_reports.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_statistics.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_account_limits.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_apps_filters.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_automatic_login.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_bounces.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_event_notification_url.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_invalid_emails.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_monitor_outgoing_email.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_parse_settings.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_spam_reports.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_statistics.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_subuser_unsubscribes.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/customer_unsubscribes.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/event_notification_url.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/invoice_retrieval.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
-            (deprecated)/ip_management.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/v1 (deprecated)/ip_management.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/monitor_records.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/parse_settings.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/pending_account_changes.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
         <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
+            docs.sendgrid.com/API Reference/Reseller API/v1
             (deprecated)/view_available_packages.html
         </loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/v1
-            (deprecated)/whitelabel.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/v1 (deprecated)/whitelabel.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Reseller
-            API/view_available_packages.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/view_available_packages.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Reseller API/whitelabel.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Reseller API/whitelabel.html</loc>
         <lastmod>2012-09-06T21:42:24-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/apps.html</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/apps.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/categories.html</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/categories.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/section_tags.html</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/section_tags.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/substitution_tags.html</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/substitution_tags.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/SMTP API/unique_arguments.html</loc>
+        <loc>docs.sendgrid.com/API Reference/SMTP API/unique_arguments.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/blocks.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/blocks.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/bounces.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/bounces.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/filter_commands.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/filter_commands.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/filter_settings.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/filter_settings.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/invalid_emails.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/invalid_emails.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/mail.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/mail.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//API Reference/Web
-            API/multiple_credentials.html
-        </loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/multiple_credentials.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/parse_settings.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/parse_settings.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/profile.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/profile.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/spam_reports.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/spam_reports.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/statistics.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/statistics.html</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Web API/unsubscribes.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Web API/unsubscribes.html</loc>
         <lastmod>2012-09-08T16:05:39-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Webhooks/event.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Webhooks/event.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Webhooks/</loc>
+        <loc>docs.sendgrid.com/API Reference/Webhooks/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Reference/Webhooks/parse.html</loc>
+        <loc>docs.sendgrid.com/API Reference/Webhooks/parse.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//API Workshop/</loc>
+        <loc>docs.sendgrid.com/API Workshop/</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/address_whitelisting.html</loc>
+        <loc>docs.sendgrid.com/Apps/address_whitelisting.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/bcc.html</loc>
+        <loc>docs.sendgrid.com/Apps/bcc.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/bypass_list_management.html</loc>
+        <loc>docs.sendgrid.com/Apps/bypass_list_management.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/click_tracking.html</loc>
+        <loc>docs.sendgrid.com/Apps/click_tracking.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/dkim.html</loc>
+        <loc>docs.sendgrid.com/Apps/dkim.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/domain_keys.html</loc>
+        <loc>docs.sendgrid.com/Apps/domain_keys.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/email_templates.html</loc>
+        <loc>docs.sendgrid.com/Apps/email_templates.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/event_notification.html</loc>
+        <loc>docs.sendgrid.com/Apps/event_notification.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/footer.html</loc>
+        <loc>docs.sendgrid.com/Apps/footer.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/forward_spam.html</loc>
+        <loc>docs.sendgrid.com/Apps/forward_spam.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/google_analytics.html</loc>
+        <loc>docs.sendgrid.com/Apps/google_analytics.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/gravatar.html</loc>
+        <loc>docs.sendgrid.com/Apps/gravatar.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/</loc>
+        <loc>docs.sendgrid.com/Apps/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/open_tracking.html</loc>
+        <loc>docs.sendgrid.com/Apps/open_tracking.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/return_path_seedlist.html</loc>
+        <loc>docs.sendgrid.com/Apps/return_path_seedlist.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/spam_checker.html</loc>
+        <loc>docs.sendgrid.com/Apps/spam_checker.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Apps/subscription_tracking.html</loc>
+        <loc>docs.sendgrid.com/Apps/subscription_tracking.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/csharp.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/csharp.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/</loc>
+        <loc>docs.sendgrid.com/Code Examples/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/java.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/java.html</loc>
         <lastmod>2012-09-06T21:24:20-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/nodejs.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/nodejs.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/perl.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/perl.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/php.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/php.html</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/python.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/python.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/ruby.html</loc>
+        <loc>docs.sendgrid.com/Code Examples/ruby.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Code Examples/SMTP API Header Examples/</loc>
+        <loc>docs.sendgrid.com/Code Examples/SMTP API Header Examples/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//Code Examples/SMTP API Header
-            Examples/perl.html
-        </loc>
+        <loc>docs.sendgrid.com/Code Examples/SMTP API Header Examples/perl.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//Code Examples/SMTP API Header
-            Examples/php.html
-        </loc>
+        <loc>docs.sendgrid.com/Code Examples/SMTP API Header Examples/php.html</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//Code Examples/SMTP API Header
-            Examples/python.html
-        </loc>
+        <loc>docs.sendgrid.com/Code Examples/SMTP API Header Examples/python.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://s3.amazonaws.com/sg-docs//Code Examples/SMTP API Header
-            Examples/ruby.html
-        </loc>
+        <loc>docs.sendgrid.com/Code Examples/SMTP API Header Examples/ruby.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/alerts.html</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/alerts.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/categories.html</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/categories.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/email_activity.html</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/email_activity.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/email_error_messages.html</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/email_error_messages.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/email_reports.html</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/email_reports.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Delivery Metrics/</loc>
+        <loc>docs.sendgrid.com/Delivery Metrics/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//</loc>
+        <loc>docs.sendgrid.com/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/cakephp.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/cakephp.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/codeigniter.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/codeigniter.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/django.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/django.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/nodejs.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/nodejs.html</loc>
         <lastmod>2012-09-06T21:24:26-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/rubyonrails.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/rubyonrails.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Frameworks/symfony.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Frameworks/symfony.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/</loc>
+        <loc>docs.sendgrid.com/Integrate/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Clients/applemail.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Clients/applemail.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Clients/gmail.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Clients/gmail.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Clients/</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Clients/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Clients/outlook.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Clients/outlook.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Clients/thunderbird.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Clients/thunderbird.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/exim.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/exim.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/iis75.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/iis75.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/postfix.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/postfix.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/qmail.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/qmail.html</loc>
         <lastmod>2012-09-06T21:24:33-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/sendmail.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/sendmail.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Mail Servers/ssmtp.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Mail Servers/ssmtp.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/drupal.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/drupal.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/</loc>
         <lastmod>2012-09-07T12:16:21-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/joomla.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/joomla.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/magento.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/magento.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/phpbb.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/phpbb.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Integrate/Open Source Apps/wordpress.html</loc>
+        <loc>docs.sendgrid.com/Integrate/Open Source Apps/wordpress.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Newsletters/create_manage.html</loc>
+        <loc>docs.sendgrid.com/Newsletters/create_manage.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Newsletters/dashboard.html</loc>
+        <loc>docs.sendgrid.com/Newsletters/dashboard.html</loc>
         <lastmod>2012-09-07T12:16:23-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Newsletters/</loc>
+        <loc>docs.sendgrid.com/Newsletters/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Newsletters/recipients.html</loc>
+        <loc>docs.sendgrid.com/Newsletters/recipients.html</loc>
         <lastmod>2012-09-07T12:16:23-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//Newsletters/sender_address.html</loc>
+        <loc>docs.sendgrid.com/Newsletters/sender_address.html</loc>
         <lastmod>2012-09-07T12:16:23-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/billing.html</loc>
+        <loc>docs.sendgrid.com/User Guide/billing.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/</loc>
+        <loc>docs.sendgrid.com/User Guide/</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/multiple_credentials.html</loc>
+        <loc>docs.sendgrid.com/User Guide/multiple_credentials.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/sending_practices.html</loc>
+        <loc>docs.sendgrid.com/User Guide/sending_practices.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/smtp_ports.html</loc>
+        <loc>docs.sendgrid.com/User Guide/smtp_ports.html</loc>
         <lastmod>2012-09-06T21:24:35-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/warming_up.html</loc>
+        <loc>docs.sendgrid.com/User Guide/warming_up.html</loc>
         <lastmod>2012-09-06T21:42:25-06:00</lastmod>
     </url>
     <url>
-        <loc>http://s3.amazonaws.com/sg-docs//User Guide/whitelabel_wizard.html</loc>
+        <loc>docs.sendgrid.com/User Guide/whitelabel_wizard.html</loc>
         <lastmod>2012-09-09T12:52:32-06:00</lastmod>
     </url>
 </urlset>
