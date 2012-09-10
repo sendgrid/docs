@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://docs.sendgrid.com
+url: http://s3.amazonaws.com/sg-docs/
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 simple_search: http://google.com/search
