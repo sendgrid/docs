@@ -5,14 +5,7 @@ body {
 }
 
 #content img {
-	background-color: #D1E3E9;
-	padding: 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 5px 5px 5px #CACACA;
-	-webkit-box-shadow: 5px 5px 5px #CACACA;
-	box-shadow: 5px 5px 5px #CACACA;
+	border-bottom: 2px solid #CCC;
 }
 
 li { line-height:22px; }
