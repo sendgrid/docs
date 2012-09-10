@@ -11,7 +11,7 @@
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:" …" | remove:"…"}}{% endcapture %}
    {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
-   <li><a href="{{previous}}">{{ first_word }}</a> <span class="divider">/</span> </li>
+   <li><a href="{{previous}}/index.html">{{ first_word }}</a> <span class="divider">/</span> </li>
 
    {% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
   {% endfor %}
