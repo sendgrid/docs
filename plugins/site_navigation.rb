@@ -85,9 +85,9 @@ module Jekyll
             end
           end
 
-          icon_html = "<i class=\"#{icon_name}\"></i> " unless icon_name.nil?
+          icon_html = "<i class=\"#{icon_name}\"></i>" unless icon_name.nil?
 
-          output += "#{prefix}	 <li class=#{li_class}><a href=\"#{URI::encode base}\">#{icon_html}#{name}</a></li>" if subtree.empty?
+          output += "#{prefix}<li class=#{li_class}><a href=\"#{URI::encode base}\">#{icon_html}#{name}</a></li>" if subtree.empty?
       end
 
       nodes.each do |node|
@@ -129,7 +129,7 @@ module Jekyll
               icon_name = icon_name + " icon-white"
             end
             
-            icon_html = icon_name.nil? ? "<i class=#{icon_name}></i> " : "" 
+            icon_html = icon_name.nil? ? "<i class=#{icon_name}></i>" : "" 
             li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{icon_html}#{name}</a></li>"
           end
 

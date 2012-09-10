@@ -25,7 +25,7 @@ module Jekyll
       
       output='<ul class="breadcrumb">'
       
-      output+='<li><a href="/">Documentation</a><span class="divider">/</span></li>'
+      output+='<li><a href="/index.html">Documentation</a><span class="divider">/</span></li>'
       
       levels = @page_url.split('/') #break up url into different levels
       levels.each_with_index do |level, index|
