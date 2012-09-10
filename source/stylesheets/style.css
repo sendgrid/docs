@@ -4,10 +4,6 @@ body {
 	line-height:22px;
 }
 
-.pre-code ::selection, html .gist .gist-file .gist-syntax .gist-highlight pre ::selection, .highlight code ::selection {
-	background: #E7E7E7;
-}
-
 #content img {
 	border-bottom: 2px solid #CCC;
 }
