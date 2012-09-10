@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[SendGrid Documentation - Email Delivery. Simplified.]]></title>
-  <link href="docs.sendgrid.com/atom.xml" rel="self"/>
-  <link href="docs.sendgrid.com/"/>
-  <updated>2012-09-10T12:55:22-06:00</updated>
-  <id>docs.sendgrid.com/</id>
+  <link href="http://s3.amazonaws.com/sg-docs//atom.xml" rel="self"/>
+  <link href="http://s3.amazonaws.com/sg-docs//"/>
+  <updated>2012-09-10T13:07:34-06:00</updated>
+  <id>http://s3.amazonaws.com/sg-docs//</id>
   <author>
     <name><![CDATA[SendGrid]]></name>
     
