@@ -8,6 +8,10 @@ find public/ -iname '*.css' -exec gzip {} \;
 find public/ -iname '*.gz' -exec rename 's/\.gz$//i' {} +
 
 # sync gzipped files
-s3cmd sync --progress --acl-public --add-header 'Content-Encoding:gzip' public/ s3://$1/ --exclude '*.*' --include '*.html' --include '*.js' --include '*.css'
+s3cmd sync --progress --acl-public --add-header 'Content-Encoding:gzip' public/ s3://$1/ --exclude '*.*' --include '*.html'
+
+# sync gzipped files and add expires header
+s3cmd sync --progress --acl-public --add-header 'Content-Encoding:gzip' --add-header "$2" public/ s3://$1/ --exclude '*.*' --include '*.js' --include '*.css'
+
 # sync non gzipped files
 s3cmd sync --progress --acl-public public/ s3://$1/ --exclude '*.sh' --exclude '*.html' --exclude '*.js' --exclude '*.css'
