@@ -14,6 +14,7 @@ body {
 
 #content img {
 	border-bottom: 2px solid #CCC;
+	border-top: 2px solid #CCC;
 }
 
 li { line-height:22px; }
