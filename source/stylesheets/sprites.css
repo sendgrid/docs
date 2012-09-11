@@ -158,3 +158,12 @@
 .framework-iconsymfony{ background-position: -122px -854px; width: 72px; height: 72px; } 
 .framework-iconthunderbird{ background-position: -122px -976px; width: 72px; height: 72px; } 
 .framework-iconwordpress{ background-position: -122px -1098px; width: 72px; height: 72px; } 
+
+.social-media-icon {
+    background: url('/images/social-media-sprites.png?embed=true') no-repeat top left;
+	display:inline-block;
+}
+
+.sprite-facebook{ background-position: 0 0; width: 35px; height: 32px; } 
+.sprite-rss{ background-position: 0 -82px; width: 32px; height: 32px; } 
+.sprite-twitter{ background-position: 0 -164px; width: 32px; height: 32px; } 

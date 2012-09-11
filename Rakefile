@@ -2,7 +2,8 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 require "nokogiri"
-
+require "time"
+require "shellwords"
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "user@domain.com"
@@ -448,5 +449,7 @@ end
 desc "gzip assets and deploy to s3 bucket with correct encoding header"
 task :gzip_deploy do
   s3_bucket = "sg-docs"
-  ok_failed system("bash ./gzip_deploy.sh #{s3_bucket}")
+  time_string = (Time.now + (4*7*24*60*60)).httpdate
+  expires = Shellwords.escape("Expires:" + time_string)
+  ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")
 end
