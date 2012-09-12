@@ -418,34 +418,6 @@ task :codeblocks do
   end
 end
 
-desc "Rewrite all source files with HTML Beautifier."
-task :beautify do
-  htmlfiles = File.join("**", "source", "**", "*.html")
-  
-  #don't mess with the jekyll stuff
-  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
-  
-  files.each do |htmlfile|
-    next if htmlfile == '.' or htmlfile == '..'
-    puts "HTML Beautifying: " + htmlfile
-    file = File.open(htmlfile)
-
-    contents = file.read
-  
-    html = Nokogiri::HTML::DocumentFragment.parse(contents).to_html
-   
-    #pipe it to the htmlbeautifier, which is non-destructive
-    output = IO.popen("htmlbeautifier", "w+") do |pipe| 
-      pipe.puts html 
-      pipe.close_write 
-      pipe.read 
-    end
-    
-    file = File.new(htmlfile,"w")
-    file.write(html)
-  end
-end
-
 desc "gzip assets and deploy to s3 bucket with correct encoding header"
 task :gzip_deploy do
   s3_bucket = "sg-docs"

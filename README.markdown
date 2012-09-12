@@ -15,7 +15,7 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 * To rebuild the site: <code>rake generate</code>
 
-* To deploy the site to an s3 bucket (requires s3tools configured with AWS key and secret, and bucket name specified in _config.yml): <code>rake gzip_deploy</code>. This gzips all the content and pushes to an s3 bucket with the correct Content-Encoding header, as well as adding Expires header info for .js and .css pages.
+* To deploy the site to an s3 bucket (requires s3tools configured with AWS key and secret, and bucket name specified in \_config.yml): <code>rake gzip\_deploy</code>. This gzips all the content and pushes to an s3 bucket with the correct Content-Encoding header, as well as adding Expires header info for .js and .css pages.
 
 ## Config
 
@@ -50,7 +50,7 @@ Pages have a block of YAML at the top that sets a few options. They are pretty s
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
 ## JS and CSS, etc
-JavaScript and CSS are minified and combined using Juicer. Image files referenced in CSS files are embedded as data-uri information. 
+JavaScript and CSS are minified and combined using Juicer. The files to be packaged and their orders are specified in JsMinify.yml and CssMinify.yml respectively. Image files referenced in CSS files are embedded as data-uri information, assuming they are not too large. 
 
 ## License
 (The MIT License)
