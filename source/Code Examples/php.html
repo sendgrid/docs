@@ -55,15 +55,11 @@ $sendgrid = new SendGrid('username', 'password');
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-setFrom('me@bar.com')->
-
-setSubject('Subject goes here')->
-
-setText('Hello World!')->
-
-setHtml('<strong>Hello World!</strong>');
+  addTo('foo@bar.com')->
+  setFrom('me@bar.com')-> 
+  setSubject('Subject goes here')->
+  setText('Hello World!')->
+  setHtml('<strong>Hello World!</strong>');
 ?>
 {% endcodeblock %}
 
@@ -74,7 +70,7 @@ setHtml('<strong>Hello World!</strong>');
 <?php
 $sendgrid->
 smtp->
-send($mail);
+  send($mail);
 ?>
 {% endcodeblock %}
 
@@ -84,7 +80,7 @@ send($mail);
 <?php
 $sendgrid->
 web->
-send($mail);
+  send($mail);
 ?>
 {% endcodeblock %}
 
@@ -95,12 +91,10 @@ send($mail);
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-...
-addCategory("Category 1")->
-
-addCategory("Category 2");
+  addTo('foo@bar.com')->
+  ...
+  addCategory("Category 1")->
+  addCategory("Category 2");
 ?>
 {% endcodeblock %}
 
@@ -113,10 +107,9 @@ addCategory("Category 2");
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-...
-addAttachment("../path/to/file.txt");
+  addTo('foo@bar.com')->
+  ...
+  addAttachment("../path/to/file.txt");
 ?>
 {% endcodeblock %}
 
@@ -127,16 +120,12 @@ addAttachment("../path/to/file.txt");
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('john@somewhere.com')->
-
-addTo("harry@somewhere.com")->
-
-addTo("Bob@somewhere.com")->
-
+  addTo('john@somewhere.com')->
+  addTo("harry@somewhere.com")->
+  addTo("Bob@somewhere.com")->
 ...
 setHtml("Hey %name%, we've seen that you've been gone for a while")->
-
-addSubstitution("%name%", array("John", "Harry", "Bob"));
+  addSubstitution("%name%", array("John", "Harry", "Bob"));
 ?>
 {% endcodeblock %}
 
@@ -147,22 +136,15 @@ addSubstitution("%name%", array("John", "Harry", "Bob"));
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('john@somewhere.com')->
-
-addTo("harry@somewhere.com")->
-
-addTo("Bob@somewhere.com")->
-
-...
-setHtml("Hey %name%, you work at %place%")->
-
-addSubstitution("%name%", array("John", "Harry", "Bob"))->
-
-addSubstitution("%place%", array("%office%", "%office%", "%home%"))->
-
-addSection("%office%", "an office")->
-
-addSection("%home%", "your house");
+  addTo('john@somewhere.com')->
+  addTo("harry@somewhere.com")->
+  addTo("Bob@somewhere.com")->
+  ...
+  setHtml("Hey %name%, you work at %place%")->
+  addSubstitution("%name%", array("John", "Harry", "Bob"))->
+  addSubstitution("%place%", array("%office%", "%office%", "%home%"))->
+  addSection("%office%", "an office")->
+  addSection("%home%", "your house");
 ?>
 {% endcodeblock %}
 
@@ -173,12 +155,10 @@ addSection("%home%", "your house");
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-...
-addUniqueArgument("Customer", "Someone")->
-
-addUniqueArgument("location", "Somewhere");
+  addTo('foo@bar.com')->
+  ...
+  addUniqueArgument("Customer", "Someone")->
+  addUniqueArgument("location", "Somewhere");
 ?>
 {% endcodeblock %}
 
@@ -189,17 +169,12 @@ addUniqueArgument("location", "Somewhere");
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-...
-addFilterSetting("gravatar", "enable", 1)->
-
-addFilterSetting("footer", "enable", 1)->
-
-addFilterSetting("footer", "text/plain", "Here is a plain text footer")->
-
-addFilterSetting("footer", "text/html", "Here is an HTML footer");
-
+  addTo('foo@bar.com')->
+  ...
+  addFilterSetting("gravatar", "enable", 1)->
+  addFilterSetting("footer", "enable", 1)->
+  addFilterSetting("footer", "text/plain", "Here is a plain text footer")->
+  addFilterSetting("footer", "text/html", "Here is an HTML footer");
 ?>
 {% endcodeblock %}
 <h3>Using Headers</h3>
@@ -209,9 +184,8 @@ addFilterSetting("footer", "text/html", "Here is an HTML footer");
 <?php
 $mail = new SendGrid\Mail();
 $mail->
-addTo('foo@bar.com')->
-
-...
-addHeader("category", "My New Category");
+  addTo('foo@bar.com')->
+  ...
+  addHeader("category", "My New Category");
 ?>
 {% endcodeblock %}
