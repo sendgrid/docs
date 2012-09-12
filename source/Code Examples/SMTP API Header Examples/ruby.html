@@ -94,7 +94,7 @@ hdr.addTo('kyle2')
 hdr.addSubVal('-time-', time)
 hdr.addSubVal('-name-', name)
 hdr.addFilterSetting('subscriptiontrack', 'enable', 1)
-hdr.addFilterSetting('twitter', 'enable', 1)
+hdr.addFilterSetting('twitter', 'enable', 1) #please check the apps available for your current package at www.sendgrid.com/pricing.html
 hdr.setUniqueArgs({'test' => 1, 'foo' =>2})
 a = hdr.asJSON()
 a = hdr.as_string()

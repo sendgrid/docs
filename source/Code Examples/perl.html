@@ -58,7 +58,15 @@ $mime->attach(Type => 'text/plain',
 $mime->attach(Type => 'text/html',
             Encoding =>'-SUGGEST',
             Data => $html);
- 
+
+# attach a file
+my $my_file_txt = 'example.txt';
+
+$mime->attach ( Path      => $my_file_txt,
+                   Type      => 'text/txt',
+                   Encoding  => 'base64'
+) or die "Error adding !\n";
+
 # Login credentials
 my $username = 'yourlogin@sendgrid.net';
 my $password = "yourpassword";
