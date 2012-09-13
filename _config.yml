@@ -5,7 +5,6 @@
 url: http://s3.amazonaws.com/sg-docs/ #docs.sendgrid.com
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
-simple_search: http://google.com/search
 description:
 version: 0.2.0
 
@@ -26,7 +25,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: / #http://s3.amazonaws.com/sg-docs/ #/
+root: http://s3.amazonaws.com/sg-docs/ #/
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
