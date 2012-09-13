@@ -26,7 +26,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: http://s3.amazonaws.com/sg-docs/ #/
+root: / #http://s3.amazonaws.com/sg-docs/ #/
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public
@@ -62,6 +62,13 @@ page_asides: [asides/page_navigation.html]
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+
+# indextank settings
+indextank_index: docs
+indextank_api_url: http://:hebusehyrara@buzebe.api.indexden.com
+
+# these values are applied as regular expressions 
+# indextank_excludes: [index.html, 404.html, ^/secret/]
 
 # Github repositories
 github_user:
