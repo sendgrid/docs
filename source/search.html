@@ -1,7 +1,6 @@
 ---
 layout: page
 icon: icon-search
-weight: 100
 title: Search
 navigation: 
   show: true
@@ -9,7 +8,7 @@ navigation:
 
 <form class="form-search" id="search">
   <input class="input-large search-query" type="text" id="page-query" name="query"/>
-  <input type="hidden" id="root" name="root" value="{{ root }}">
+  <input type="hidden" id="root" name="root" value="{{ site.root }}">
   <input class="btn" type="submit"/>
 </form>
 
