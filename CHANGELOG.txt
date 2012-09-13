@@ -1,0 +1,360 @@
+Merge branch 'release/0.2.0' into develop
+
+version bump
+
+remove public folder, add to .gitignore
+
+small readme update
+
+remove the htmlbeautifier rake task because running it now would break all the codeblocks (ask me how I know)
+
+fix some minor codeblock formatting, add note re: the smtp-api enable app code
+
+add attachment code to perl example
+
+fix links on api reference index
+
+fix link on overview
+
+minor fixes
+
+Merge branch 'release/0.1.9' into develop
+
+version bump
+
+readme update
+
+readme update
+
+defer javascript loading
+
+gzip_deploy rake task now adds Expires headers to js and css
+
+missing assets
+
+make icons on homepage clickable
+
+logo and social media icons now css-based for embedding to reduce http requests
+
+Merge branch 'release/0.1.8' into develop
+
+version bump
+
+prep for another release with minor css fixes
+
+fix the code selection color
+
+fix breadcrumbs for real
+
+few minor css fixes, breadcrumb fixes
+
+remove the image padding and shadow for now as it was adding horizontal scroll to some pages with large images. Replaced with bottom border on images.
+
+remove extra space for tree nodes that have icons
+
+Merge branch 'release/0.1.7' into develop
+
+version bump
+
+can now be deployed to amazon s3 with ease
+
+css image paths now respect site.root when juicer is run
+
+trying to get paths relative to site.root in css files
+
+optimize pngs, convert gifs to pngs
+
+everything is now set for deploy to s3 with the gzip_deploy task
+
+add rake task that manually gzips assets and syncs them to s3, with the correct content-type and encoding header metadata
+
+atom.xml and sitemap.xml
+
+Merge branch 'release/0.1.6' into develop
+
+version bump
+
+fix customer subuser / subusers page
+
+fix customer subuser stats page
+
+Merge branch 'release/0.1.5' into develop
+
+version bump to 0.1.5
+
+add public/css... for now
+
+fix icon top margin so icons are centered
+
+Merge branch 'feature/icons' into develop
+
+reorganized a few files
+
+can now specify icons for pages in the YAML front-matter... also fixed a couple other small things
+
+fix overview link
+
+Merge branch 'release/0.1.4'
+
+still cleaning up... really need to split source and public repos
+
+fix conflict
+
+prep for merge
+
+fix it up!
+
+regenerate site
+
+add release public files
+
+version bump
+
+release files generated
+
+new css
+
+Merge branch 'release/0.1.3' into develop
+
+trying to fix merge issues
+
+done
+
+merge issues
+
+final content
+
+getting ready for release
+
+all index.html pages done!
+
+add box shadow to images
+
+add background to article images
+
+add a bunch of unformatted index.html pages
+
+more index pages
+
+lots of new index.html pages for subfolders
+
+very minor formatting fix
+
+fix footer weirdness
+
+Merge branch 'release/0.1.2' into develop
+
+fix atom.xml merge conflict
+
+update version
+
+fix the merge problem on the footer
+
+merge conflicts
+
+finish up newsletter pages
+
+formatting of newsletter pages
+
+initial content for newsletter pages
+
+add blocks JSON response
+
+add spam report responses
+
+fix unsubscribe response
+
+new generated files
+
+Merge branch 'release/0.1.1'
+
+minor version bump, add version to footer
+
+js and css minifying!
+
+add version number to footer
+
+Merge branch 'release/v0.1.0' into develop
+
+Merge branch 'release/v0.1.0'
+
+bump up the version number in _config.yml
+
+folders are now sorted by weight in defined in _config.yml
+
+bunch of theme source files were not in the repo
+
+add calls and responses to recipients page... and removed the edit method cuz it does not exist
+
+add calls and responses to schedule.html
+
+find and replace </result>> with </result>
+
+add calls and responses to sender_address.html
+
+add calls and responses to a newsletter api / lists.html
+
+add calls and responses to a couple newsletter API pages
+
+exclude hidden pages from sitemap
+
+URI encode links in breadcrumbs
+
+nav tree now respects the weight value in the YAML front matter
+
+scaffolding for newsletter pages, convert overview to html
+
+more minor formatting
+
+minor formatting fix
+
+invalid html on 4 blockquotes
+
+change logo href
+
+docs logo! woo
+
+fix a few broken links
+
+hrefs are now URI encoded
+
+all label spans are now contained in blockquotes
+
+small global formatting changes, updated all internal links
+
+fix a few minor issues with tabs
+
+last of the reseller pages!
+
+few more reseller pages fixed
+
+few more reseller pages fixed
+
+few more reseller pages fixed
+
+few more subuser pages fixed
+
+few more subuser pages fixed
+
+few more subuser pages fixed
+
+fixing tabs layout
+
+fixing tabs layout
+
+more consistency fixes in global formatting
+
+another minor global formatting issue
+
+fix a few minor formatting issues
+
+added two rake tasks: beautify, which pretty prints all the html (non-destructive unlike html tidy); and codeblocks, which I used to convert from the fussy ``` syntax to the {% codeblock %} syntax; then I ran these tasks on all the source files
+
+move subuser, reseller, newsletter APIs up a level
+
+all reseller and subuser pages are now named properly and have YAML titles
+
+add cleaned up customer subuser and reseller api pages
+
+add basic newsletter API pages, lacking API call and response examples
+
+all web API ref pages should now have XML/JSON tabs
+
+update spam reports page
+
+update a lot of web api pages
+
+add background pattern to tabbed areas
+
+clean up all web api docs, add bootstrap-tabs, some style tweaks
+
+lots more web api pages
+
+added a bunch of web api docs
+
+add django info to smtap api python example
+
+add highlight to blockquotes
+
+a few new docs, got API workshop working again
+
+added a few more pages
+
+tree state is now persistant thanks to localstorage
+
+somehow did not have the .themes/sendgrid/source folder in the repo... #fail
+
+add root node to breadcrumbs
+
+floaty menu
+
+parents of the current node will now be expanded on load
+
+zomg collapsing menu
+
+subdirs show relative paths again
+
+small nav tree tweaks
+
+add all delivery metrics subpages
+
+add all delivery metrics subpages
+
+apps pages done
+
+placeholder files for all apps
+
+nav tree only shows folder names, not paths
+
+SMTP api pages
+
+added code example pages
+
+added open source apps pages
+
+thunderbird page
+
+add missing pages
+
+fix menu line height
+
+mail server integration pages
+
+fix small typo in symfony page
+
+all framework SMTP relay examples done
+
+all framework SMTP relay examples done
+
+add a bunch of files, fix code block line height
+
+fix the footer positioning
+
+index.html improvements
+
+remove links from nodes that don't have extension
+
+switch from jekyll generate to liquid tag that is computed for each page, allowing the nav menu to reflect the active page
+
+nav generator now respects title metadata and auto-adds link to ./index.html for directory-level nodes
+
+remove the root node from the menu output
+
+directory tree now working
+
+directory tree now working
+
+about to scrap the nav tree and redo it
+
+about to scrap the nav tree and redo it
+
+tree generation mostly working...
+
+active page now shows in navigation
+
+fix footer pos
+
+index page done
+
+add missing theme files to repo
+
