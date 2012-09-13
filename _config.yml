@@ -5,9 +5,8 @@
 url: http://s3.amazonaws.com/sg-docs/ #docs.sendgrid.com
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
-simple_search: http://google.com/search
 description:
-version: 0.2.0
+version: 0.2.1
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -62,6 +61,13 @@ page_asides: [asides/page_navigation.html]
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+
+# indextank settings
+indextank_index: docs
+indextank_api_url: http://:hebusehyrara@buzebe.api.indexden.com
+
+# these values are applied as regular expressions 
+# indextank_excludes: [index.html, 404.html, ^/secret/]
 
 # Github repositories
 github_user:
