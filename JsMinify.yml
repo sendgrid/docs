@@ -1,12 +1,17 @@
 js_destination: '/js/'
 
 files: [
-  'source/javascripts/libs/jquery.js',
+  'source/javascripts/jquery-1.8.0.min.js',
+  #'source/javascripts/jquery-ui-1.8.23.custom.min.js',
   'source/javascripts/collapse.min.js',
   'source/javascripts/libs/jstorage.js',
   'source/javascripts/menu.js',
   'source/javascripts/libs/modernizr-2.0.js',
   'source/javascripts/libs/bootstrap.js',
   'source/javascripts/libs/bootstrap-tabs.js',
+  #'source/javascripts/jquery.indextank.ize.js',
+  #'source/javascripts/jquery.indextank.autocomplete.js',
+  'source/javascripts/search.js',
   'source/javascripts/octopress.js'
 ]
+

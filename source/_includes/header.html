@@ -2,9 +2,8 @@
 	<div class="row" id="header">
 		<a href="{{ root_url }}/index.html"><span id="logo"></span></a>
 		{% if site.simple_search %}
-		  <form class="pull-right navbar-search" action="{{ site.simple_search }}" method="get">
-			<input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-			<input class="search-query span3"name="q" results="0" placeholder="Search"/a>
+		  <form class="pull-right navbar-search" action="{{ root }}/search.html" method="get">
+			<input input id="query" class="search-query span3" name="q" results="0" placeholder="Search"/a>
 	      </form>
 		{% endif %}
 	</div>
