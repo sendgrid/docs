@@ -35,7 +35,7 @@ You can write pages in markdown, HTML, or HAML. They all get converted to HTML w
 
 Pages have a block of YAML at the top that sets a few options. They are pretty self explanatory; here's an example
 
-<code>
+```
 	---
 	layout: page
 	weight: 0
@@ -45,7 +45,7 @@ Pages have a block of YAML at the top that sets a few options. They are pretty s
 	navigation:
 	  show: true
 	---
-</code>
+```
 
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
