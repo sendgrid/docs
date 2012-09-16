@@ -12,7 +12,7 @@
 		}
 	
 	  	$('form#search').submit(function() {
-
+			$('.bar-indicator').show();
         	search($('input#page-query').val());
       		return false;
 		});
