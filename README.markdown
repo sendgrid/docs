@@ -35,7 +35,7 @@ You can write pages in markdown, HTML, or HAML. They all get converted to HTML w
 
 Pages have a block of YAML at the top that sets a few options. They are pretty self explanatory; here's an example
 
-<code>
+```
 	---
 	layout: page
 	weight: 0
@@ -45,12 +45,12 @@ Pages have a block of YAML at the top that sets a few options. They are pretty s
 	navigation:
 	  show: true
 	---
-</code>
+```
 
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
 ## JS and CSS, etc
-JavaScript and CSS are minified and combined using Juicer. The files to be packaged and their orders are specified in JsMinify.yml and CssMinify.yml respectively. Image files referenced in CSS files are embedded as data-uri information, assuming they are not too large. 
+JavaScript and CSS are minified and combined using Juicer. The files to be packaged and their orders are specified in <code>JsMinify.yml</code> and <code>CssMinify.yml</code>. Image files referenced in CSS files are embedded as data-uri information, assuming they are not too large. 
 
 ## License
 (The MIT License)
