@@ -1,0 +1,131 @@
+---
+layout: page
+weight: 0
+title: Categories
+navigation:
+  show: true
+---
+
+<p>This module allows you to create and manage categories within your Newsletters.
+</p>
+
+<a name="create"></a>
+<h2>create</h2>
+<p>Create a new Category.</p>
+
+<h3>Parameters</h3>
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description.</th>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The name that will be used for the Category being created.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="add"></a>
+<h2>add</h2>
+<p>Assign a Category to an existing Newsletter.</p>
+<h3>Parameters</h3>
+<table>
+  <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>Yes</td>
+      <td>Must be an existing Category.</td>
+      <td>The Category that will be added to the newsletter.</td>
+    </tr>
+<tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>The Newsletter to which the categories will be added.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="remove"></a>
+<h2>remove</h2>
+<p>Remove specific categories, or all categories from a Newsletter.\</p>
+<h3>Parameters</h3>
+<table>
+ <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>The Newsletter that will have Category(ies) deleted from it.</td>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>No</td>
+      <td>Must be an existing category currently added to the Newsletter</td>
+      <td>Remove the Category with this name. If the category is not specified. all categories will be deleted from the Newsletter.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="listcategories"></a>
+<h2>listcategories</h2>
+<p>List all the categories that have been added to an existing newsletter</p>
+
+<h3>Parameters</h3>
+
+<table>
+ <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>The Newsletter for which categories will be listed.</td>
+    </tr>
+  </table>
+
+<hr/>
+
+<a name="list"></a>
+<h2>list</h2>
+<p>Check a Newsletter for a specific category.</p>
+<h3>Parameters</h3>
+
+<table>
+ <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>No</td>
+      <td>Must be an existing Category</td>
+      <td>Search to see if a specific Category exists rather than a list of all Categories.</td>
+    </tr>
+  </table>
+
+
