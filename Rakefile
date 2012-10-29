@@ -420,7 +420,7 @@ end
 
 desc "gzip assets and deploy to s3 bucket with correct encoding header"
 task :gzip_deploy do
-  s3_bucket = site.s3_bucket
+  s3_bucket = "sg-docs" #site.s3_bucket
   time_string = (Time.now + (4*7*24*60*60)).httpdate
   expires = Shellwords.escape("Expires:" + time_string)
   ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")

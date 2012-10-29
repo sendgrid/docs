@@ -6,6 +6,63 @@ navigation:
   show: true
 ---
 
+<p>We'll start with a simple example using the built-in .NET SMTP libraries to send a message. After that example, you can find more complete instructions that use the SendGrid C# library.</p>
+
+<h2>Using .NET's Built-in SMTP Library</h2>
+
+<p>This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. This example uses:</p>
+<ul>
+	<li><a href="http://msdn.microsoft.com/en-us/library/system.net.mail.aspx" target="_blank">.NET mail</a></li>
+</ul>
+{% codeblock lang:csharp %}
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Net.Mail;
+using System.Net.Mime;
+ 
+namespace SmtpMail
+{
+    class Program
+    {		
+        static void Main()
+        {
+            try
+            {
+                MailMessage mailMsg = new MailMessage();
+				
+                // To
+                mailMsg.To.Add(new MailAddress("to@example.com", "To Name"));
+ 
+                // From
+                mailMsg.From = new MailAddress("from@example.com", "From Name");
+ 
+                // Subject and multipart/alternative Body
+                mailMsg.Subject = "subject";
+                string text = "text body";
+                string html = @"<p>html body</p>";
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+				
+                // Init SmtpClient and send
+                SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("username@domain.com", "yourpassword");
+                smtpClient.Credentials = credentials;
+ 
+                smtpClient.Send(mailMsg);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+ 
+        }
+    }
+}
+{% endcodeblock %}
+
+<h2>Using the SendGrid C# Library</h2>
+
 <p>To use SendGrid in your C# project, you can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.
 </p>
 
