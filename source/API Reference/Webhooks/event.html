@@ -371,13 +371,6 @@ $fh = fopen('~/dump.log', 'a+');
 </tr>
 </tbody>
 </table>
-<h2>Sample POST</h2>
-<p>The following is a sample HTTP POST request when recipient <em>test@domain.com</em> opens an email, having <em>arg2</em> as a custom parameter and category <em>testing</em>.  </p>
-
-{% codeblock %}
-POST /myurl.php HTTP/1.1 User-agent: Mozilla/5.0 (compatible; U; AnyEvent-HTTP/2.03;
-+http://software.schmorp.de/pkg/AnyEvent) Connection: close Te Content-type: application/x-www-form-urlencoded Te: trailers Content-length: 72 Referer: http://mydomain.com/myurl.php Host: mydomain.com arg2=2&email=test@domain.com&arg1=1&category=testing&event=open
-{% endcodeblock %}
 
 <h2>Troubleshooting</h2>
 <p>Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at increasing intervals for up to three days after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines. Also, you can try a test POST yourself from a terminal by running the following command. This will give you the full response your server is returning including the HTTP headers.</p>
