@@ -6,7 +6,7 @@ url: http://s3.amazonaws.com/sg-docs/ #docs.sendgrid.com
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 description:
-version: 1.0.0
+version: 1.0.1
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -106,7 +106,8 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-12399264-1
+
 
 # Facebook Like
 facebook_like: false
