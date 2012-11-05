@@ -23,7 +23,7 @@ navigation:
 <p>SendGrid has a Web API that allows customers to retrieve information about their account such as statistics, bounces, spam reports, unsubscribes, and other information. In addition, the Web API allows customers to create sub-accounts and control the settings of these accounts for an OEM setup. See the <a href="{{ root_url }}/API Reference/Web API/index.html">list of Web API calls</a>.</p>
 
 <h3>Receive Email</h3>
-<p>SendGrid can parse the email bodies and attachments from incoming emails and post them to your web application. For details on how to integrate your application to start receiving emails please refer to our <a href="{{ root_url }}/Webhooks/parse.html">Parse Webhook</a>. Application examples include:</p>
+<p>SendGrid can parse the email bodies and attachments from incoming emails and post them to your web application. For details on how to integrate your application to start receiving emails please refer to our <a href="{{ root_url }}/API Reference/Webhooks/parse.html">Parse Webhook</a>. Application examples include:</p>
 <ul>
 	<li>Posting blog articles via email</li>
 	<li>Processing email replies in a mailing list</li>
@@ -33,7 +33,7 @@ navigation:
 
 <h3>Real-time Event Notification Webhook</h3>
 
-<p>SendGrid can send real-time notifications about events that happen on the SendGrid system to a URL. These events include clicks, opens, unsubscribe, bounces, and many others. These events include more data than what SendGrid records and allow customers to customize their own reporting. What makes this API even more powerful is the ability to include user-defined parameters in each event. Through our SMTP API, customers can embed unique parameters in each email they send. These parameters are then passed to each event notification so your application can associate these events with your customers. Read more about the <a href="{{ root_url }}/Webhooks/event.html">Event Webhook</a>. Examples of applications include:</p>
+<p>SendGrid can send real-time notifications about events that happen on the SendGrid system to a URL. These events include clicks, opens, unsubscribe, bounces, and many others. These events include more data than what SendGrid records and allow customers to customize their own reporting. What makes this API even more powerful is the ability to include user-defined parameters in each event. Through our SMTP API, customers can embed unique parameters in each email they send. These parameters are then passed to each event notification so your application can associate these events with your customers. Read more about the <a href="{{ root_url }}/API Reference/Webhooks/event.html">Event Webhook</a>. Examples of applications include:</p>
 
 <ul>
 	<li>Associate a spam report with a specific campaign and user in your application</li>
