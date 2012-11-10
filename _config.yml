@@ -25,7 +25,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: http://www.sendgrid.com/docs/ #/
+root: / #http://www.sendgrid.com/docs/ #/
 s3_bucket: sg-docs
 permalink: /blog/:year/:month/:day/:title/
 source: source
@@ -106,7 +106,8 @@ disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-12399264-1
+
 
 # Facebook Like
 facebook_like: false
