@@ -47,15 +47,15 @@ navigation:
     </tr>
 <tr>
       <td>html</td>
-      <td>Yes</td>
-      <td>None</td>
+      <td>No</td>
+      <td>If the <code>type</code> parameter is set to "html" this parameter is required.</td>
       <td>The html portion of the Newsletter Variation being added.</td>
     </tr>
 <tr>
       <td>type</td>
       <td>Yes</td>
-      <td>text/html</td>
-      <td>The Variation type.</td>
+      <td>Value must be either "text" or "html".</td>
+      <td>The Variation type, either plain text, or multipart-alternative text and html.</td>
     </tr>
 <tr>
       <td>identity_name</td>
@@ -282,14 +282,14 @@ Schedule a send time and percentage for your variations.
  <tr>
       <td>delay</td>
       <td>No</td>
-      <td>Must be an existing Variation</td>
-      <td>An optional list of names's to check for.</td>
+      <td>Must be numeric.</td>
+      <td>The number of units specified by <code>delay_type</code> by which to delay the send.</td>
     </tr>
  <tr>
       <td>delay_type</td>
       <td>No</td>
-      <td>Must be an existing Variation</td>
-      <td>An optional list of names's to check for.</td>
+      <td>"minutes", "hours", or "days"</td>
+      <td>The units used to specify the <code>delay</code></td>
     </tr>
  <tr>
       <td>date</td>
