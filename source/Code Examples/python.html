@@ -149,11 +149,11 @@ message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject",
     "<p>HTML body</p>")
 {% endcodeblock %}
 
-<p>To add a Reply-To address, you can call the message.set<em>replyto() method:</p>
+<p>To add a Reply-To address, you can call the message.set<em>replyto()</em> method:</p>
 {% codeblock lang:python %}
 message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject", "plaintext body",
     "<p>HTML body</p>")
-message.set</em>replyto("reply@mydomain.com")
+message.setreplyto("reply@mydomain.com")
 {% endcodeblock %}
 <p>Note: Reply-To requires v0.1.3 or higher</p>
 
