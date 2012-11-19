@@ -75,7 +75,7 @@ margin-top: 2px;
 
 .sidebar-nav .nav-header { font-size:15px}
 
-#main-menu > :first-child > a {
+#main-menu .active a {
 	background: url(/images/top-menu-elements.png?embed=true) 0 -125px;
 	border: 0;
 }
@@ -87,7 +87,7 @@ margin-top: 2px;
 	border-bottom-color: transparent;
 }
 
-#main-menu > :first-child > a:hover {
+#main-menu .active a:hover {
 	color:black;
 	background: url(/images/top-menu-elements.png?embed=true) 0 -125px;
 	border: 0;

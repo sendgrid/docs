@@ -29,13 +29,53 @@ navigation:
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#create-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="create-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/create.json?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="create-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/create.xml?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
 <hr/>
 
 <a name="add"></a>
 <h2>add</h2>
 <p>Assign a Category to an existing Newsletter.</p>
 <h3>Parameters</h3>
-<table>
+<table class="table table-bordered table-striped">
   <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -56,13 +96,54 @@ navigation:
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="add-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/add.json?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/add.xml?&api_user=USERNAME&api_key=PASSWORD&category=CATEGORY&name=NEWSLETTER
+
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
 <hr/>
 
 <a name="remove"></a>
 <h2>remove</h2>
 <p>Remove specific categories, or all categories from a Newsletter.\</p>
 <h3>Parameters</h3>
-<table>
+<table class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -83,37 +164,55 @@ navigation:
     </tr>
   </table>
 
-<hr/>
 
-<a name="listcategories"></a>
-<h2>listcategories</h2>
-<p>List all the categories that have been added to an existing newsletter</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#remove-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#remove-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="remove-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/remove.json?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
 
-<h3>Parameters</h3>
-
-<table>
- <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
- <tr>
-      <td>name</td>
-      <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>The Newsletter for which categories will be listed.</td>
-    </tr>
-  </table>
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="remove-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/remove.xml?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
 
 <hr/>
 
 <a name="list"></a>
 <h2>list</h2>
-<p>Check a Newsletter for a specific category.</p>
+<p>List all categories.</p>
 <h3>Parameters</h3>
 
-<table>
+<table class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -128,4 +227,48 @@ navigation:
     </tr>
   </table>
 
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#list-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="list-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/list.json?api_user=USERNAME&api_key=PASSWORD
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+[{"category": "CATEGORY"},{"category": "CATEGORY2"}]%   
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="list-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/list.xml?api_user=USERNAME&api_key=PASSWORD
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<categories>
+  <category>
+    <category>CATEGORY</category>
+  </category>
+  <category>
+    <category>CATEGORY2</category>
+  </category>
+</categories>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
 
