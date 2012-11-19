@@ -43,12 +43,11 @@ navigation:
 https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=retriev
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock %}
-
+{% codeblock lang:json %}
 {"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock %}
+{% codeblock lang:json %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   <div class="tab-pane" id="limit-xml">
@@ -60,7 +59,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 {% codeblock %}    <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock %}    <result><message>error</message><errors>
+{% codeblock lang:xml %}
+    <result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
@@ -102,11 +102,11 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=none
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	{% codeblock %}
+	{% codeblock lang:json %}
 	"message":"success"
 	{% endcodeblock %}
 	  <h3>Response: Error</h3>
-	{% codeblock %}
+	{% codeblock lang:json %}
 	"message":"error","errors":[..."error messages"...]
 	{% endcodeblock %}
 	  </div>
@@ -116,10 +116,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=none
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock %}    <result><message>success</message></result>
+{% codeblock lang:xml %}    <result><message>success</message></result>
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock %}    <result><message>error</message><errors>
+{% codeblock lang:xml %}    <result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
