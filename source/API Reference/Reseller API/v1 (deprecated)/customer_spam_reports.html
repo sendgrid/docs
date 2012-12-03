@@ -49,19 +49,19 @@ navigation:
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
+spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 <hr/>
 <a name="deleteSpamReports"></a>
@@ -108,25 +108,25 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.co
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-result><message>Email does not exist</message></result>
+result><message>Email does not exist</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.co
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}
+"message":"Email does not exist"
 {% endcodeblock %}

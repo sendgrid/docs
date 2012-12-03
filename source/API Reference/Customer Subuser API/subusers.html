@@ -118,7 +118,7 @@ navigation:
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}
@@ -136,14 +136,14 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecr
   <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555%20anystreet&city=any%20city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock %}
-{"message":"success"}
+  {% codeblock lang:javascript %}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}
+  {% codeblock lang:javascript %}
 {"message":"error","errors":[..."error messages"...]}
 {% endcodeblock %}
   </div>
@@ -236,7 +236,7 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=get
 {% endcodeblock %}
   <h3>Response</h3>
    
@@ -268,11 +268,11 @@ US
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=get
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock %}
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+  {% codeblock lang:javascript %}
+{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
   </div>
 </div>
@@ -302,7 +302,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
   <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.co
+https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 <result>
@@ -318,15 +318,15 @@ User not found
   <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.co
+https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock %}
-{"message":"success"}
+  {% codeblock lang:javascript %}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}
-"message":"User not found"
+  {% codeblock lang:javascript %}
+"message":"User not found"
 {% endcodeblock %}
   </div>
 </div>
@@ -355,7 +355,7 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
   <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
 <result>
@@ -371,15 +371,15 @@ User not found
   <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}
-"message":"User not found"
+  {% codeblock lang:javascript %}
+"message":"User not found"
 {% endcodeblock %}
   </div>
 </div>
@@ -409,7 +409,7 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
   <div class="tab-pane" id="enablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.co
+https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 <result>
@@ -425,15 +425,15 @@ User not found
   <div class="tab-pane active" id="enablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_key=secureSecret&user=example@example.co
+https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}
-"message":"User not found"
+  {% codeblock lang:javascript %}
+"message":"User not found"
 {% endcodeblock %}
   </div>
 </div>
@@ -462,7 +462,7 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
   <div class="tab-pane" id="disablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
 <result>
@@ -478,15 +478,15 @@ User not found
   <div class="tab-pane active" id="disablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_key=secureSecret&task=ge
+https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_key=secureSecret&task=ge
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}
-"message":"User not found"
+  {% codeblock lang:javascript %}
+"message":"User not found"
 {% endcodeblock %}
   </div>
 </div>
@@ -568,7 +568,7 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
   <div class="tab-pane" id="updateprofile-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}
@@ -586,11 +586,11 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="updateprofile-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -635,11 +635,11 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
   <div class="tab-pane" id="updateSubuserPassword-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}    success
- 
+ 
 {% endcodeblock %}
 <result>
   <message>error: reason</message>
@@ -648,11 +648,11 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secur
   <div class="tab-pane active" id="updateSubuserPassword-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -720,7 +720,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
@@ -788,7 +788,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
-{"message":"success"}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}

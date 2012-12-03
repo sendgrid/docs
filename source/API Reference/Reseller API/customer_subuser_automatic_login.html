@@ -38,20 +38,20 @@ navigation:
   <div class="tab-pane" id="call-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=geturl&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=geturl&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <params><params>al_username=username&al_subuser_name=example@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
+{% codeblock lang:xml %}  <params><params>al_username=username&al_subuser_name=example@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="call-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=geturl&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=geturl&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"params":"al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+{% codeblock lang:javascript %}
+"params":"al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 {% endcodeblock %}
   </div>
 </div>

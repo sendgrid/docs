@@ -56,11 +56,11 @@ navigation:
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -68,19 +68,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="edit"></a>
@@ -137,11 +137,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -149,19 +149,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="delete"></a>
@@ -200,11 +200,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -212,19 +212,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="list"></a>
@@ -255,19 +255,19 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=lis
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=monitor&task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
+monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=lis
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=lis
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
+{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
 {% endcodeblock %}
 <hr/>
 <a name="append"></a>
@@ -316,7 +316,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -324,19 +324,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=append&name=myMonitor&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="detach"></a>
@@ -379,7 +379,7 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -387,17 +387,17 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=monitor&task=detach&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

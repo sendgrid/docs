@@ -46,20 +46,20 @@ navigation:
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports>
+{% codeblock lang:xml %}  <spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+{% codeblock lang:javascript %}
+{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
   </div>
 </div>
@@ -108,10 +108,10 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>Email does not exist</message></result>
+{% codeblock lang:xml %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -120,11 +120,11 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}
+"message":"Email does not exist"
 {% endcodeblock %}
 </div></div>

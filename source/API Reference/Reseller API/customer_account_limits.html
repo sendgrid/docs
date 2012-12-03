@@ -39,17 +39,17 @@ navigation:
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=retriev
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=retriev
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
+{% codeblock lang:xml %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits/>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -58,12 +58,12 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=retrieve
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
+{% codeblock lang:javascript %}
+{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   </div>
 </div>
@@ -109,31 +109,31 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors><error>
+{% codeblock lang:xml %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=non
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   </div>
 </div>
@@ -219,28 +219,28 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors><error>
+{% codeblock lang:xml %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   </div>
 </div>
@@ -294,31 +294,31 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="total-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors><error>
+{% codeblock lang:xml %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="total-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=total&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   </div>
 </div>
@@ -372,31 +372,31 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="increment-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors><error>
+{% codeblock lang:xml %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="increment-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=increment&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
   </div>
 </div>
@@ -450,31 +450,31 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="decrement-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors><error>
+{% codeblock lang:xml %}  <result><message>error</message><errors><error>
         ... error messages ...
       </error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="decrement-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=limit&user=customer@example.com&task=decrement&credits=20
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>
 </div>

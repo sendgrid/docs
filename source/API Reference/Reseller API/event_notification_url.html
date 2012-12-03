@@ -47,21 +47,21 @@ navigation:
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-url>http://www.SubUserPostUrlHere.com></url
+{% codeblock lang:xml %}
+<url>http://www.SubUserPostUrlHere.com></url>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-{"url":"http:\/\/www.SubUserPostUrlHere.com"}
+{% codeblock lang:javascript %}
+{"url":"http:\/\/www.SubUserPostUrlHere.com"}
 {% endcodeblock %}
   </div>
 </div>
@@ -114,10 +114,10 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="set-json">
@@ -126,8 +126,8 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
   </div>
 </div>
@@ -174,19 +174,19 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
+https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 </div></div>

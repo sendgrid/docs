@@ -34,11 +34,11 @@ navigation:
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secureSecret&task=lis
+https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secureSecret&task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
+result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -46,19 +46,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secureSecret&task=lis
+https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secureSecret&task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
+{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="deletePendingChanges"></a>
@@ -87,7 +87,7 @@ https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -95,19 +95,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="immediateUpgrade"></a>
@@ -152,11 +152,11 @@ https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secu
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -164,19 +164,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="immediateDowngrade"></a>
@@ -221,11 +221,11 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -233,19 +233,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="immediateClose"></a>
@@ -278,11 +278,11 @@ are incurred, a invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -290,19 +290,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="scheduledUpgrade"></a>
@@ -347,11 +347,11 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -359,19 +359,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="scheduledDowngrade"></a>
@@ -416,11 +416,11 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -428,19 +428,19 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="scheduledClose"></a>
@@ -474,11 +474,11 @@ invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -486,17 +486,17 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
