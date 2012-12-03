@@ -29,30 +29,30 @@ navigation:
   <li><a href="#auth-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-	  <div class="tab-pane active" id="auth-jason">
+	  <div class="tab-pane active" id="auth-json">
 	     <h3>Call</h3>
 	  {% codeblock %}
-	https://sendgrid.com/apiv2/customer.auth.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor
+	https://sendgrid.com/apiv2/customer.auth.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock %}
-	"message":"success"
+	  {% codeblock lang:javascript %}
+	"message":"success"
 	{% endcodeblock %}
 	  <h3>Response: Error</h3>
-	  {% codeblock %}
-	"message":"error","errors":[..."error messages"...]
+	  {% codeblock lang:javascript %}
+	"message":"error","errors":[..."error messages"...]
 	{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="auth-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor
+https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock %}    <result><message>success</message></result>
+  {% codeblock lang:xml %}    <result><message>success</message></result>
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock %}    <result><message>error</message><errors>
+  {% codeblock lang:xml %}    <result><message>error</message><errors>
         ...
         <error>
           ... 
@@ -60,7 +60,7 @@ https://sendgrid.com/apiv2/customer.auth.xml?api_user=username&api_key=secureSec
     ...
         </error>
         ...
-      </errors></result>
+      </errors></result>
 {% endcodeblock %}
     </div>
 

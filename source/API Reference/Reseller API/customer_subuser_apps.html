@@ -41,23 +41,23 @@ navigation:
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <filters><filter><name>twitter</name><title>Twitter</title>
+{% codeblock lang:xml %}  <filters><filter><name>twitter</name><title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
     ...
-  </filters
+  </filters
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&task=getavailable&method=apps&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+{% codeblock lang:javascript %}
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
   </div>
 </div>
@@ -94,20 +94,20 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
   <div class="tab-pane" id="activate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
   </div>
 </div>
@@ -144,20 +144,20 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
   <div class="tab-pane" id="deactivate-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
   </div>
 </div>
@@ -173,19 +173,19 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
   <div class="tab-pane" id="customize-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
     ...
-  </filter
+  </filter>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
@@ -196,11 +196,11 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
   <div class="tab-pane active" id="customize-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=setup&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success","settings":{"field_name":"field_value”}
+{% codeblock lang:javascript %}
+"message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
@@ -220,42 +220,42 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
   <div class="tab-pane" id="settings-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}  <filter><field_name>field_value</field_name>
     ...
-  </filter
+  </filter>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-<filter></filter>
+<filter></filter>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="settings-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success","settings":{"field_name":"field_value”}
+{% codeblock lang:javascript %}
+"message":"success","settings":{"field_name":"field_value”}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-"settings":null
+"settings":null
 {% endcodeblock %}
 </div></div>
