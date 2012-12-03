@@ -51,19 +51,19 @@ navigation:
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}  <bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>
+{% codeblock lang:xml %}  <bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=get&date=
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
+{% codeblock lang:javascript %}
 {"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
   </div>
@@ -109,26 +109,26 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=delete&email=bounce@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>Email does not exist</message></result>
+{% codeblock lang:xml %}  <result><message>Email does not exist</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=delete&email=bounce@example.co
+https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}
+"message":"Email does not exist"
 {% endcodeblock %}
 </div></div>

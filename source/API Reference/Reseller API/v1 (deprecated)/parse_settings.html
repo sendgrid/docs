@@ -42,10 +42,10 @@ navigation:
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=parse&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
+{% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock %}  <parse></parse
+{% codeblock %}  <parse></parse
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -53,11 +53,11 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
 {% endcodeblock %}
 <h3>Response: Empty</h3>
 {% codeblock %}
-"parse":[]
+"parse":[]
 {% endcodeblock %}
 <hr/>
 <a name="createNewEntry"></a>
@@ -109,26 +109,26 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="editEntry"></a>
@@ -180,26 +180,26 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
 <a name="deleteEntry"></a>
@@ -246,24 +246,24 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

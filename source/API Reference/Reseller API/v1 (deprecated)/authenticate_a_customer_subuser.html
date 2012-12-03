@@ -25,11 +25,11 @@ navigation:
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -37,17 +37,17 @@ result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
+https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&user=example@example.com&password=theirsubmittedpassword&method=aut
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}

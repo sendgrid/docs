@@ -53,20 +53,20 @@ navigation:
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
-unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
+unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=get&date=
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
-
+
 {% endcodeblock %}
 <hr/>
 <a name="deleteUnsubscribes"></a>
@@ -105,27 +105,27 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.co
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-result><message>Email does not exist</message></result>
+result><message>Email does not exist</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.co
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}
+"message":"Email does not exist"
 {% endcodeblock %}
 <hr/>
 <a name="addUnsubscribes"></a>
@@ -164,25 +164,25 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.co
+https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
-result><message>success</message></result>
+result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
-result><message>Email already exists</message></result>
+result><message>Email already exists</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.co
+https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"Email already exists"
+{% codeblock lang:javascript %}
+"message":"Email already exists"
 {% endcodeblock %}
