@@ -39,20 +39,20 @@ navigation:
 	  <div class="tab-pane active" id="list-json">
 	     <h3>Call</h3>
 	{% codeblock %}
-	https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=al
+	https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=all
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	{% codeblock %}
-	{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
+	{% codeblock lang:javascript %}
+	{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
 	{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=al
+https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=all
 {% endcodeblock %}
   <h3>Response</h3>
-{% codeblock %}    <ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip></ips>
+{% codeblock lang:xml %}    <ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip></ips>
 {% endcodeblock %}
     </div>
 
@@ -85,27 +85,27 @@ If your account has more than one IP address, you can manage what IPs your subus
   <div class="tab-pane" id="usage-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=list&user=example@example.co
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=list&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <sendips><ocluster>o1.sendgrid.net</ocluster><ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip><ip>255.255.255.253</ip><ip>255.255.255.254</ip></ips></sendips>
+{% codeblock lang:xml %}  <sendips><ocluster>o1.sendgrid.net</ocluster><ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip><ip>255.255.255.253</ip><ip>255.255.255.254</ip></ips></sendips>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>User does not exist</message></result>
+{% codeblock lang:xml %}  <result><message>User does not exist</message></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="usage-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=list&user=example@example.co
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=list&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
+{% codeblock lang:javascript %}
+"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"error":{"code":400,"message":"User does not exist"}
+{% codeblock lang:javascript %}
+"error":{"code":400,"message":"User does not exist"}
 {% endcodeblock %}
   </div>
 </div>
@@ -151,31 +151,31 @@ You need to assign at least ONE IP to your subuser.
   <div class="tab-pane" id="subuser-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.25
+https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}  <result><message>success</message></result>
+{% codeblock lang:xml %}  <result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}  <result><message>error</message><errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+    </errors></result>
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="subuser-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.25
+https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock %}
-"message":"success"
+{% codeblock lang:javascript %}
+"message":"success"
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 </div>
 </div>
