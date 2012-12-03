@@ -149,7 +149,7 @@ message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject",
     "<p>HTML body</p>")
 {% endcodeblock %}
 
-<p>To add a Reply-To address, you can call the message.set<em>replyto()</em> method:</p>
+<p>To add a Reply-To address, you can call the message.setreplyto() method:</p>
 {% codeblock lang:python %}
 message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject", "plaintext body",
     "<p>HTML body</p>")
@@ -159,13 +159,13 @@ message.setreplyto("reply@mydomain.com")
 
 <h3>Adding Recipients</h3>
 
-<p>Using the message.add<em>to() method, you can add recipient email address (optionally with names), but you can also add CC/BCC recipient addresses (without names) using message.add</em>cc() and message.add_bcc().</p>
+<p>Using the message.addto() method, you can add recipient email address (optionally with names), but you can also add CC/BCC recipient addresses (without names) using message.add_cc() and message.add_bcc().</p>
 
 <p>Note: Only the SMTP API supports CC at this time, though we have code and hooks in place for the Web API implementation of this library for future use.</p>
 
 <p>Both the Web API and SMTP API support BCC.</p>
 
-<p>The message.add<em>cc() and message.add</em>bcc() calls support passing a single address, or a list of addresses, as shown in the examples below.</p>
+<p>The message.add_cc() and message.add_bcc() calls support passing a single address, or a list of addresses, as shown in the examples below.</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "message subject", "plaintext message body",
@@ -211,13 +211,13 @@ s.web.send(message)
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
-message.add<em>attachment("output</em>filename.doc", "/path/to/input_filename.doc")
+message.add_attachment("output_filename.doc", "/path/to/input_filename.doc")
 {% endcodeblock %}
 
 <p>You can chain several file attachments together, provided you follow the restrictions of 7MB per file and a total size of 20MB or less per message.</p>
 
 {% codeblock lang:python %}
-message.add<em>attachment("output</em>file1.txt", "/path/to/file1.txt").add<em>attachment("output</em>file2.txt", "/path/to/file2.txt")
+message.add_attachment("output_file1.txt", "/path/to/file1.txt").add_attachment("output_file2.txt", "/path/to/file2.txt")
 {% endcodeblock %}
 
 <p>A common problem with file attachments is that the second parameter does not exist as a file, in which case the library will attach a 0-byte blank file. Here's a simple check to assist you:</p>
@@ -259,7 +259,7 @@ message.add_category(["Category 1", "Category 2"])
 
 <h3>Using Unique Arguments</h3>
 
-<p>Unique Arguments are used for tracking purposes on the message, and can be seen in the Email Activity screen on your account dashboard or through the Event API. Use the message.add<em>unique</em>argument() method, which takes two parameters, a key and a value. To pass multiple keys/values, use message.add<em>unique</em>arguments() (note the plural method name) and pass a dictionary of key/value pairs. More information can be found here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/unique-arguments/</p>
+<p>Unique Arguments are used for tracking purposes on the message, and can be seen in the Email Activity screen on your account dashboard or through the Event API. Use the message.add_unique_argument() method, which takes two parameters, a key and a value. To pass multiple keys/values, use message.add_unique_arguments() (note the plural method name) and pass a dictionary of key/value pairs. More information can be found here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/unique-arguments/</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -267,7 +267,7 @@ message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Htm
 message.add_unique_argument("Customer", "Someone")
 {% endcodeblock %}
 
-<p>Alternately, you can pass a dict parameter and add multiple arguments using message.add<em>unique</em>arguments() like this:</p>
+<p>Alternately, you can pass a dict parameter and add multiple arguments using message.add_unique_arguments() like this:</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -291,18 +291,18 @@ message.add_to(
 
 <h3>Using Sections</h3>
 
-<p>Used in conjunction with Substitutions, Sections can be used to further customize messages for the end users, and acts like a second tier of substitution data. You can use message.set<em>section() to add a single section, or a pluralized message.set</em>sections() method to add several sections. You can read more about using Sections here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/section-tags/</p>
+<p>Used in conjunction with Substitutions, Sections can be used to further customize messages for the end users, and acts like a second tier of substitution data. You can use message.set_section() to add a single section, or a pluralized message.set_sections() method to add several sections. You can read more about using Sections here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/section-tags/</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "Hello %name%, you work at %place%",
     "<b>Hello %name%, you work at %place%</b>")
-message.add<em>to(
+message.add_to(
     {
         'example1@example.com': {'%name%': 'Name 1', '%place%': '%home%'},
         'example2@example.com': {'%name%': 'Name 2', '%place%': '%office%'},
         'example3@example.com': {'%name%': 'Name 3', '%place%': '%office%'},
     }
-).set</em>sections({"%office%": "an office", "%home%": "your house"})
+).set_sections({"%office%": "an office", "%home%": "your house"})
 {% endcodeblock %}
 
 <h3>Using Custom Headers</h3>
@@ -321,6 +321,6 @@ Here's an example of passing content to the 'footer' app:</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
-message.add<em>filter</em>setting("footer", "text/plain", "Here is a plain text footer")
-message.add<em>filter</em>setting("footer", "text/html", "<p style='color:red;'>Here is an HTML footer</p>")
+message.add_filter_setting("footer", "text/plain", "Here is a plain text footer")
+message.add_filter_setting("footer", "text/html", "<p style='color:red;'>Here is an HTML footer</p>")
 {% endcodeblock %}
