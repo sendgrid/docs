@@ -36,7 +36,6 @@ navigation:
   <li><a href="#limit-xml" data-toggle="tab">XML</a></li>
 </ul>
 <div class="tab-content">
-
   <div class="tab-pane active" id="limit-json">
      <h3>Call</h3>
 {% codeblock %}
@@ -50,6 +49,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% codeblock lang:javascript %}
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
+  </div>
   <div class="tab-pane" id="limit-xml">
      <h3>Call</h3>
 {% codeblock lang:xml %}
@@ -67,9 +67,10 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
       </errors></result>
 {% endcodeblock %}
     </div>
+</div>
   <hr/><a name="noLimit"></a>
   <h2>No Limit</h2>
-  <p>Obtain a complete list of all subusers.</p>
+  <p>Remove the limit for a subuser.</p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
