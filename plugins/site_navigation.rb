@@ -108,6 +108,8 @@ module Jekyll
             end
           end
           
+          name.gsub!(/_/,' ')
+          
           li_class = ""
           
           if @page_url.index(base)
