@@ -1,0 +1,34 @@
+---
+layout: page
+weight: 0
+title: Categories
+navigation:
+  show: true
+---
+
+<p>Categories help organize your email analytics by enabling you to tag emails by type.</p>
+
+<p>Just as you can view the statistics on all your activity under the '<a href="{{ root_url }}/Delivery_Metrics/">Statistics</a>' tab, you can go a step further and view the statistics on a particular category.</p>
+
+<p>The events that can be associated with category include:</p>
+<ul>
+	<li>Emails sent</li>
+	<li>Clicks</li>
+	<li>Opens</li>
+	<li>Bounces</li>
+	<li>Spam Reports</li>
+	<li>Unsubscribes</li>
+</ul>
+<p>The actual statistics included vary depending upon the set of enabled <a href="{{ root_url }}/Apps/">Apps</a>. Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated App is enabled.</p>
+
+<blockquote><span class="label label-info">Info</span> Currently, there is no limit to the number of categories you can track, but there is a limit of ten (10) categories that can be applied to each email you send.</blockquote>
+
+<blockquote><span class="label label-info">Info</span> Categories should be used to group messages together. If you need to attach unique data or identifiers to a message, use Unique Arguments instead.</blockquote>
+
+<h2>Example</h2>
+<p>You can use SendGrid's <a href="{{ root_url }}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
+
+{% codeblock lang:javascript %}
+X-SMTPAPI: {"category": "Example Category"}
+{% endcodeblock %}
+<p>In this example, SendGrid would associate statistics for the email containing that header with the category <strong>Example Category</strong>.</p>

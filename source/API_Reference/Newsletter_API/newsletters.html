@@ -1,0 +1,393 @@
+---
+layout: page
+weight: 0
+title: Newsletters
+navigation:
+  show: true
+---
+
+<p>This endpoint allows you to add, view, or remove newsletters.</p>
+
+<a name="add"></a>
+
+<h2>add</h2>
+<p>Create a new Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The Identity that will be used for the Newsletter being created.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The name that will be used for the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>subject</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The subject that will be used for the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>text</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The text portion of the Newsletter being created.</td>
+    </tr>
+<tr>
+      <td>html</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The html portion of the Newsletter being created.</td>
+    </tr>
+  </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#create-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="create-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/add.json?identity=Sender_Address&name=SendGridv1_(deprecated)NLv1_(deprecated)Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etestv1_(deprecated)htmlv1_(deprecated)body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="create-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGridv1_(deprecated)NLv1_(deprecated)Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etestv1_(deprecated)htmlv1_(deprecated)body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
+<a name="edit"></a>
+
+<hr/>
+
+<h2>edit</h2>
+<p>Edit an existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The name of the Newsletter being updated.</td>
+    </tr>
+<tr>
+    <tr>
+      <td>newname</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new name for the Newsletter being edited.</td>
+    </tr>
+    <tr>
+    <tr>
+      <td>identity</td>
+      <td>Yes</td>
+      <td>Must be an existing Identity</td>
+      <td>The new Identity for the Newsletter being edited.</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new subject that will be used for the Newsletter being edited.</td>
+    </tr>
+<tr>
+      <td>text</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new text portion of the Newsletter being edited.</td>
+    </tr>
+<tr>
+      <td>html</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The new html portion of the Newsletter being edited.</td>
+    </tr>
+  </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="edit-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/edit.json?identity=Sender_Address&name=SendGridv1_(deprecated)Editv1_(deprecated)NLv1_(deprecated)Test&newname=newv1_(deprecated)namev1_(deprecated)test&subject=testv1_(deprecated)subject&text=testv1_(deprecated)text&html=%3Chtml%3E%3Cp%3ETestv1_(deprecated)htmlv1_(deprecated)text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="edit-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGridv1_(deprecated)Editv1_(deprecated)NLv1_(deprecated)Test&newname=newv1_(deprecated)namev1_(deprecated)test&subject=testv1_(deprecated)subject&text=testv1_(deprecated)text&html=%3Chtml%3E%3Cp%3ETestv1_(deprecated)htmlv1_(deprecated)text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+<a name="get"></a>
+<h2>get</h2>
+<p>Retrieve the contents of an existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Retrieve the content of an existing Newsletter.</td>
+    </tr>
+  </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="get-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/get.json?name=SendGridv1_(deprecated)NLv1_(deprecated)Test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"can_edit": true, "name": "SendGrid NL Test", "text": null, "newsletter_id": 38074, "total_recipients": 1, "html": null, "type": "html", "date_schedule": null, "identity": "d22de3a53fac1abef944c80c19032c2c", "subject": null}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="get-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/get.xml?name=SendGridv1_(deprecated)NLv1_(deprecated)Test&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<newsletter>
+  <can_edit>True</can_edit>
+  <name>SendGrid NL Test</name>
+  <text/>
+  <newsletter_id>38074</newsletter_id>
+  <total_recipients>1</total_recipients>
+  <html/>
+  <type>html</type>
+  <date_schedule/>
+  <identity>d22de3a53fac1abef944c80c19032c2c</identity>
+  <subject/>
+</newsletter>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+<a name="list"></a>
+<h2>list</h2>
+<p>Retrieve a list of all existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>No</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Search to see if a specific Newsletter exists rather than a list of all Newsletters.</td>
+    </tr>
+  </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#list-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="list-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/list.json?&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+[{"name": "Just Testing", "newsletter_id": 560308},{"name": "LSRC", "newsletter_id": 560869},{"name": "LSRC test", "newsletter_id": 560908},{"name": "Test", "newsletter_id": 38074}]
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="list-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/list.xml?&api_user=SGusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<newsletters>
+  <newsletter>
+    <name>Just Testing</name>
+    <newsletter_id>560308</newsletter_id>
+  </newsletter>
+  <newsletter>
+    <name>LSRC</name>
+    <newsletter_id>560869</newsletter_id>
+  </newsletter>
+  <newsletter>
+    <name>LSRC test</name>
+    <newsletter_id>560908</newsletter_id>
+  </newsletter>
+  <newsletter>
+    <name>Test</name>
+    <newsletter_id>38074</newsletter_id>
+  </newsletter>
+</newsletters>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+<a name="delete"></a>
+<h2>delete</h2>
+<p>Remove an existing Newsletter.</p>
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Newsletter</td>
+      <td>Remove the Newsletter with this name.</td>
+    </tr>
+  </table>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
+    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="delete-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/delete.json?name=SendGridv1_(deprecated)NLv1_(deprecated)Test1&api_user=Sgusername&api_key=SGpassword
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message": "success"}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="delete-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/delete.xml?name=SendGridv1_(deprecated)NLv1_(deprecated)Test1&api_user=Sgusername&api_key=SGpassword
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>success</message>
+</result>
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}
+<result>
+  <message>error: reason</message>
+</result>
+{% endcodeblock %}
+    </div>
+  </div>

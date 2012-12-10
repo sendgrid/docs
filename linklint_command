@@ -1,0 +1,5 @@
+-host  sendgrid.com/docs
+-root  public
+-doc   linklint_logs
+-index index.html index.cgi
+/@
