@@ -6,7 +6,7 @@ url: http://www.sendgrid.com/docs
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 description:
-version: 1.0.3
+version: 1.0.4
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
