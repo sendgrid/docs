@@ -1,0 +1,333 @@
+---
+layout: page
+weight: 0
+title: Mail
+navigation:
+  show: true
+---
+
+<p>This endpoint allows you to send email.</p>
+
+<a name="send" id="send"></a>
+
+ <h2>send</h2>
+
+ <p>Send email.</p>
+
+ 
+
+ <table class="table table-bordered table-striped">
+   <tbody>
+     <tr>
+       <th>Parameter</th>
+
+       <th>Required</th>
+
+       <th>Requirements</th>
+
+       <th>Description</th>
+     </tr>
+
+     <tr>
+       <td>to</td>
+
+       <td>Yes</td>
+
+       <td>Must be a valid email address</td>
+
+       <td>This can also be passed in as an array, to send to multiple locations</td>
+     </tr>
+
+     <tr>
+       <td>toname</td>
+
+       <td>No</td>
+
+       <td>Must be a string. If <em>to</em> parameter is an array, <em>toname</em> must
+       be an array with the exact number of array elements as the <em>to</em> field</td>
+
+       <td>Give a name to the recipient</td>
+     </tr>
+
+     <tr>
+       <td>x-smtpapi</td>
+
+       <td>No</td>
+
+       <td>Must be in valid JSON format</td>
+
+       <td>Please review the <a href="{{ root_url }}/API_Reference/SMTP_API/index.html">SMTP API</a> to view
+       documentation on what you can do with the JSON headers</td>
+     </tr>
+
+     <tr>
+       <td>subject</td>
+
+       <td>Yes</td>
+
+       <td>Must be a valid string</td>
+
+       <td>The subject of your email</td>
+     </tr>
+
+     <tr>
+       <td>text and/or html</td>
+
+       <td>Yes</td>
+
+       <td>Must include one or both parameters</td>
+
+       <td>The actual content of your email message. It can be sent as either plain text
+       or HTML for the user to display</td>
+     </tr>
+
+     <tr>
+       <td>from</td>
+
+       <td>Yes</td>
+
+       <td>Must be a valid email address from your domain</td>
+
+       <td>This is where the email will appear to originate from for your recipient</td>
+     </tr>
+
+     <tr>
+       <td>bcc</td>
+
+       <td>No</td>
+
+       <td>Must be a valid email address</td>
+
+       <td>This can also be passed in as an array of email addresses for multiple
+       recipients</td>
+     </tr>
+
+     <tr>
+       <td>fromname</td>
+
+       <td>No</td>
+
+       <td>Must a valid string</td>
+
+       <td>This is name appended to the from email field. IE - Your name or company
+       name</td>
+     </tr>
+
+     <tr>
+       <td>replyto</td>
+
+       <td>No</td>
+
+       <td>Must be a valid email address</td>
+
+       <td>Append a reply-to field to your email message</td>
+     </tr>
+
+     <tr>
+       <td>date</td>
+
+       <td>No</td>
+
+       <td>Must be a valid <a href="http://www.faqs.org/rfcs/rfc2822" target=
+       "_blank">RFC 2822 formatted date</a></td>
+
+       <td>Specify the date header of your email. One example: "Thu, 21 Dec 2000
+       16:01:07 +0200". PHP developers can use: <em>date('r');</em></td>
+     </tr>
+
+     <tr>
+       <td>files</td>
+
+       <td>No</td>
+
+       <td>Must be less than 7MB</td>
+
+       <td>Files to be attached. The file contents must be part of the multipart HTTP
+       POST. Ex: files[file1.doc]=<file contents>&files[file2.pdf]=<file
+       contents><br />
+       <a href=
+       "http://docs.sendgrid.com/documentation/get-started/integrate/examples/php-example-using-the-web-api/"
+       title="PHP Example Using The Web API">Example Code</a></td>
+     </tr>
+
+     <tr>
+       <td>headers</td>
+
+       <td>No</td>
+
+       <td>Must be in valid JSON format</td>
+
+       <td>A collection of key/value pairs in JSON format. Each key represents a header
+       name and the value the header value. Ex: {"X-Accept-Language": "en", "X-Mailer":
+       "MyApp"}</td>
+     </tr>
+   </tbody>
+ </table>
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#mail-json" data-toggle="tab">JSON</a></li>
+  <li><a href="#mail-xml" data-toggle="tab">XML</a></li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="mail-json">
+	        <h3>Call: Send to One Recipient</h3>
+{% codeblock %}
+https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
+
+	<h3>Call: Send to Multiple Recipients
+{% codeblock lang:bash %}
+https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
+
+	<h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{"message":"success"}
+{% endcodeblock %}
+<h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+{"message":"error","errors":[..."error messages"...]}
+{% endcodeblock %}
+
+
+  </div>
+  <div class="tab-pane" id="mail-xml">
+        <h3>Call: Send to One Recipient</h3>
+{% codeblock %}
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
+
+		<h3>Call: Send to Multiple Recipients
+{% codeblock lang:bash %}
+https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+{% endcodeblock %}
+		<h3>Response: Success</h3>
+{% codeblock lang:xml %}
+<result>
+  success
+<result>
+{% endcodeblock %}
+
+<h3>Response: Error</h3>
+{% codeblock lang:xml %}
+  <result>
+    <message>error</message>
+    <errors>
+      <error>...</error>
+      ...
+    </errors>
+  @nodes
+{% endcodeblock %}
+
+
+  </div>
+</div>
+
+<hr/>
+
+<h3>cURL Examples</h3>
+
+<p>Send to one email recipient</p>
+{% codeblock lang:bash %}
+$ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
+{% endcodeblock %}
+<p>Send to multiple email recipients</p>
+{% codeblock lang:bash %}
+$ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
+{% endcodeblock %}
+<p>Send a test attachment</p>
+{% codeblock lang:bash %}
+$ curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="<strong>testing html body</strong>" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
+{% endcodeblock %}
+
+
+	
+<h3>Raw HTTP Dump</h3>
+<p>The following is a dump of the HTTP data sent to our server to generate an email via our web API.</p>
+
+{% codeblock %}
+POST /api/mail.send.json HTTP/1.1
+{% endcodeblock %}
+
+{% codeblock %}
+Host: sendgrid.com
+
+Accept: */*
+
+Content-Length: 999
+
+Expect: 100-continue
+
+Content-Type: multipart/form-data; boundary=----------------------------400f182a9360
+
+HTTP/1.1 100 Continue
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="api_user"
+
+YOURUSERNAME
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="api_key"
+
+YOURKEY
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="to"
+
+someone@somewhere.com
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="subject"
+
+test of file sends
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="html"
+
+the HTML
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="text"
+
+the plain text
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="from"
+
+example@sendgrid.com
+
+------------------------------400f182a9360
+
+Content-Disposition: form-data; name="files[myfile]"; filename="myfile"
+
+Content-Type: application/octet-stream
+
+file with stuff in it
+
+------------------------------400f182a9360--
+
+HTTP/1.1 200 OK
+
+Server: nginx/0.7.65
+
+Date: Fri, 03 Jun 2011 22:30:58 GMT
+
+Content-Type: application/json
+
+Transfer-Encoding: chunked
+
+Connection: keep-alive
+
+{% endcodeblock %}
+
+{% codeblock %}
+{"message":"success"}
+{% endcodeblock %}
