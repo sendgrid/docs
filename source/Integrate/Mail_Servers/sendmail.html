@@ -18,10 +18,10 @@ You should add these lines just after the commented
 "#dnl define('SMART_HOST', 'smtp.your.provider')dnl" line in the file</p>
 
 {% codeblock lang:bash %}
-define('SMART_HOST', 'smtp.sendgrid.net')dnl
-FEATURE('access_db')dnl
-define('RELAY_MAILER_ARGS', 'TCP $h 587')dnl
-define('ESMTP_MAILER_ARGS', 'TCP $h 587')dnl
+define(`SMART_HOST', `smtp.sendgrid.net')dnl
+FEATURE(`access_db')dnl
+define(`RELAY_MAILER_ARGS', `TCP $h 587')dnl
+define(`ESMTP_MAILER_ARGS', `TCP $h 587')dnl
 {% endcodeblock %}
 
 <p>Update sendmail.cf and access.db files</p>
