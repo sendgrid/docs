@@ -11,7 +11,7 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 ## Important Things to Know
 
-* This repo currently has both the source and some generated files. The source files are in  /source, and the generated files are in /public. They get overwritten or wiped out when the site is rebuilt. I will be removing the generated files from the site soon and adding the /public folder to .gitignore
+* The source files are in  /source, and the generated files will be created in /public. They get overwritten or wiped out when the site is rebuilt.
 
 * To rebuild the site: <code>rake generate</code>
 
