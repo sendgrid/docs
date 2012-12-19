@@ -1,3 +1,4 @@
+_config.yml
 .bundle
 .DS_Store
 .sass-cache
@@ -8,7 +9,6 @@ sass.old
 source.old
 source/_stash
 source/stylesheets/screen.css
-_config.yml
 vendor
 node_modules
 public
