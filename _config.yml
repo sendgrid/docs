@@ -118,10 +118,10 @@ facebook_like: false
 
 folder_weights:
  "/index.html": 110
- "/User Guide": 100
+ "/User_Guide": 100
  "/Integrate": 90
- "/Code Examples": 80
- "/Delivery Metrics": 70
+ "/Code_Examples": 80
+ "/Delivery_Metrics": 70
  "/Newsletters": 60
  "/Apps": 55
  "/API Reference": 50
