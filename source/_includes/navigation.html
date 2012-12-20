@@ -1,13 +1,13 @@
 <div class="row menu">
 	<ul id="main-menu" class="nav nav-tabs">
-		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home active">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home {% if page.title != 'API Workshop' %} active {% endif %}">
 			<a href="{{ root_url }}/index.html">Docs Home</a>
 		</li>
-		<li class="menu-item menu-item-type-custom menu-item-object-custom">
-			<a href="{{ root_url }}/api_workshop.html">API Workshop</a>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home {% if page.title == 'API Workshop' %} active {% endif %}">
+			<a href="{{ root_url }}/api_workshop.html"><span style="position:relative;left:-12px;">API Workshop</span></a>
 		</li>
 		<li class="menu-item menu-item-type-custom menu-item-object-custom">
-			<a href="http://community.sendgrid.com/sendgrid">Community</a>
+			<a href="http://community.sendgrid.com/sendgrid"><span style="position:relative;left:-12px;">Community</span></a>
 		</li>
 	</ul>
 </div>

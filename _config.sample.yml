@@ -1,8 +1,10 @@
+# Copy this to _config.yml and adjust accordingly.
+
 # ----------------------- #
 #      Main Configs       #
 # ----------------------- #
 
-url: http://www.sendgrid.com/docs
+url: http://sendgrid.com/docs
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 description:
@@ -25,7 +27,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: http://www.sendgrid.com/docs/ #/
+root: / #http://www.sendgrid.com/docs/ #/
 s3_bucket: sg-docs
 permalink: /blog/:year/:month/:day/:title/
 source: source
@@ -64,7 +66,7 @@ page_asides: [asides/page_navigation.html]
 # ----------------------- #
 
 # indextank settings
-indextank_index: docs #docs_dev #docs
+indextank_index: docs_dev #docs
 indextank_api_url: http://:hebusehyrara@buzebe.api.indexden.com
 
 # these values are applied as regular expressions 
@@ -118,10 +120,10 @@ facebook_like: false
 
 folder_weights:
  "/index.html": 110
- "/User Guide": 100
+ "/User_Guide": 100
  "/Integrate": 90
- "/Code Examples": 80
- "/Delivery Metrics": 70
+ "/Code_Examples": 80
+ "/Delivery_Metrics": 70
  "/Newsletters": 60
  "/Apps": 55
  "/API Reference": 50

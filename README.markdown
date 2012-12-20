@@ -5,6 +5,7 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 ## Setup
 
 * Clone the repo. Run <code>bundle install</code>.
+* Copy _config.sample.yml to _config.yml
 * Set your root (if you're running locally it'll just be /) in _config.yml
 * Run rake preview
 * Browse to localhost:4000
