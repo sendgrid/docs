@@ -1,22 +1,12 @@
 //just a quick example, in no way pretty code.
- 
 //if we load the page and there's a query specified (from the header search input), execute that query immediately
 
   $(document).ready(function() {
-	q = getParameterByName("q");
-   	if($('#search').length) {
-		if (q!=""){
-			$('input#page-query').val(q);
-			$('.bar-indicator').show();
-			search($('input#page-query').val());
-		}
-	
 	  	$('form#search').submit(function() {
 			$('.bar-indicator').show();
         	search($('input#page-query').val());
       		return false;
 		});
-	} 
   });
 
   function search(query) {
@@ -26,7 +16,7 @@
 		root = $('#root').val().slice(0, -1);
 		
 		if(data.matches == 0) {
-			$('div#results').append('<h2>No Results Found for ' + query + '</h2>');
+			$('div#results').append('<h2>No Results Found</h2>');
 		} else {
 			$('div#results').append('<h2>Search Results <span class="badge">' + data.matches + '</span></h2><hr/>');
 		}
@@ -42,15 +32,3 @@
     	});
     });
   }
-
-function getParameterByName(name)
-{
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
-}
