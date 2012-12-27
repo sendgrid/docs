@@ -2,10 +2,26 @@
 //if we load the page and there's a query specified (from the header search input), execute that query immediately
 
   $(document).ready(function() {
-	  	$('form#search').submit(function() {
+	q = $.jStorage.get('search_query');
+   	if($('#search').length) {
+		if (q!=""){
+			$('input#page-query').val(q);
+			$('.bar-indicator').show();
+			search($('input#page-query').val());
+		}
+	
+	   $('form#search').submit(function() {
 			$('.bar-indicator').show();
         	search($('input#page-query').val());
       		return false;
+		});
+	} 
+	
+	$('form#header-search').submit(function() {
+        	query = $('input#query').val()
+			$.jStorage.set('search_query', query);
+			document.location.href = "search.html"
+			return false;
 		});
   });
 
