@@ -78,6 +78,17 @@ parameters. If provided with no parameters, the current day's statistics are ret
 https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2
 {% endcodeblock %}
      <h3>Response</h3>
+{% codeblock lang:javascript %}
+[{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
+{% endcodeblock %}
+  </div>
+  <div class="tab-pane" id="activate-xml">
+        <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2
+{% endcodeblock %}
+
+     <h3>Response</h3>
 {% codeblock lang:xml %}
 <stats>
   <day>
@@ -115,20 +126,6 @@ https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=se
   </day>
 </stats>
 {% endcodeblock %}
-
-
-  </div>
-  <div class="tab-pane" id="activate-xml">
-        <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=secureSecret&days=2
-{% endcodeblock %}
-
-	<h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
-{% endcodeblock %}
-
   </div>
 </div>
 
