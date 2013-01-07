@@ -18,9 +18,13 @@
 	} 
 	
 	$('form#header-search').submit(function() {
-        	query = $('input#query').val()
+        	query = $('input#query').val();
 			$.jStorage.set('search_query', query);
-			document.location.href = "search.html"
+			
+			//this is kinda hacky but let's infer the root from the home button
+			var root = $('.menu-item > a')[0].href.replace('/index.html','');
+			
+			document.location.href = root + "/search.html";
 			return false;
 		});
   });
