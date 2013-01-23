@@ -143,11 +143,22 @@ navigation:
        <td>Must be less than 7MB</td>
 
        <td>Files to be attached. The file contents must be part of the multipart HTTP
-       POST. Ex: files[file1.doc]=<file contents>&files[file2.pdf]=<file
+       POST. Ex: files[file1.jpg]=<file contents>&files[file2.pdf]=<file
        contents><br />
        <a href=
        "http://docs.sendgrid.com/documentation/get-started/integrate/examples/php-example-using-the-web-api/"
        title="PHP Example Using The Web API">Example Code</a></td>
+     </tr>
+
+     <tr>
+       <td>content</td>
+
+       <td>No</td>
+
+       <td>Required for sending inline images</td>
+
+       <td>Content IDs of the files to be used as inline images. Content IDs should match the cid's used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML <code>&lt;img src="cid:ii_139db99fdb5c3704"&gt;</code>
+	
      </tr>
 
      <tr>
@@ -216,7 +227,7 @@ https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=sec
       <error>...</error>
       ...
     </errors>
-  @nodes
+ </result>
 {% endcodeblock %}
 
 
