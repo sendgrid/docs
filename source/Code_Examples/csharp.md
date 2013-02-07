@@ -3,17 +3,29 @@ layout: page
 weight: 0
 title: C#
 navigation:
-show: true
+    show: true
 ---
 
 We'll start with a simple example using the built-in .NET SMTP libraries to send a message. After that example, you can find more complete instructions that use the SendGrid C# library.</p>
 
 ##Using .NET's Built-in SMTP Library
 
+If you are using ASP.NET, you can specify SMTP settings in web.config.
+
+```xml
+<system.net>
+  <mailSettings>
+    <smtp from="test@domain.com">
+      <network host="smtp.sendgrid.net" password="password" userName="username" port="587" />
+    </smtp>
+  </mailSettings>
+</system.net>
+```
+
 This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. 
 This example uses:
-(http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)[.NET
-mail]
+[.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
+
 
 ```csharp
 using System;
