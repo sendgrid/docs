@@ -43,7 +43,11 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
+{
+  "credit":"0",
+  "credit_remain":"2000",
+  "last_reset":"2011-02-21"
+}
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
@@ -56,15 +60,21 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=retrieve
 {% endcodeblock lang:xml %}
   <h3>Response: Success</h3>
-{% codeblock %}    <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits>
+{% codeblock %}
+<credits>
+  <credit>0</credit>
+  <credit_remain>2000</credit_remain>
+  <last_reset>2011-02-21</last_reset>
+</credits>
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:xml %}
-    <result><message>error</message><errors>
-        ...
-        <error>... error messages ...</error>
-        ...
-      </errors></result>
+<result>
+  <message>error</message>
+  <errors>
+    <error>... error messages ...</error>
+  </errors>
+</result>
 {% endcodeblock %}
     </div>
 </div>
@@ -99,20 +109,22 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 <div class="tab-content">
 	  <div class="tab-pane active" id="list-json">
 	     <h3>Call</h3>
-	{% codeblock lang:javascript %}
-	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=none
-	{% endcodeblock %}
-	  <h3>Response: Success</h3>
-	{% codeblock lang:javascript %}
-	"message":"success"
-	{% endcodeblock %}
-	  <h3>Response: Error</h3>
-	{% codeblock lang:javascript %}
-	"message":"error","errors":[..."error messages"...]
-	{% endcodeblock %}
-	  </div>
-  <div class="tab-pane" id="list-xml">
-     <h3>Call</h3>
+{% codeblock %}
+https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=none
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+{% codeblock lang:javascript %}
+{
+  "message":"success"
+}
+{% endcodeblock %}
+  <h3>Response: Error</h3>
+{% codeblock lang:javascript %}
+"message":"error","errors":[..."error messages"...]
+{% endcodeblock %}
+  </div>
+ <div class="tab-pane" id="list-xml">
+    <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=none
 {% endcodeblock %}
@@ -196,7 +208,9 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{
+  "message":"success"
+}
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
