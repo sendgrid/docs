@@ -1,4 +1,6 @@
+.rvmrc
 _config.yml
+_config.deploy.yml
 .bundle
 .DS_Store
 .sass-cache
