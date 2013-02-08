@@ -1,5 +1,6 @@
 .rvmrc
 _config.yml
+_config.dev.yml
 _config.deploy.yml
 .bundle
 .DS_Store
