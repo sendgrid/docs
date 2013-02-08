@@ -21,7 +21,9 @@ navigation:
 </ul>
 <p>The actual statistics included vary depending upon the set of enabled <a href="{{ root_url }}/Apps/">Apps</a>. Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated App is enabled.</p>
 
-<blockquote><span class="label label-info">Info</span> Currently, there is no limit to the number of categories you can track, but there is a limit of ten (10) categories that can be applied to each email you send.</blockquote>
+<blockquote><span class="label label-warning">Warning</span> Categories must be in 7bit encoding using the US-ASCII character set.</span></blockquote>
+
+<blockquote><span class="label label-info">Info</span> Currently, there is no limit to the number of categories you can track.</blockquote>
 
 <blockquote><span class="label label-info">Info</span> Categories should be used to group messages together. If you need to attach unique data or identifiers to a message, use Unique Arguments instead.</blockquote>
 
@@ -32,3 +34,17 @@ navigation:
 X-SMTPAPI: {"category": "Example Category"}
 {% endcodeblock %}
 <p>In this example, SendGrid would associate statistics for the email containing that header with the category <strong>Example Category</strong>.</p>
+
+<p>You can assign multiple categories per message, up to 10:</p>
+
+{% codeblock lang:javascript %}
+{"category":
+  [
+    "dogs",
+    "animals",
+    "pets",
+    "mammals"
+  ]
+}
+{% endcodeblock %}
+
