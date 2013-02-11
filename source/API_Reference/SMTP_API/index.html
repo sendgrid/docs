@@ -13,7 +13,7 @@ X-SMTPAPI: {"category" : "newuser"}
 {% endcodeblock %}
 <p>In this case, the header is telling the processing routine to assign this email the <a href="{{ root_url }}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
 
-<h2>The X-SMTPAPI Header</h2>
+{% anchor The X-SMTPAPI Header %}
 
 <p>The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. This header can be added to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message's transcation.</p>
 
@@ -125,7 +125,7 @@ $js =~ s/(.{1,72})(\s)/$1\n   /g;
 my $hdr = "X-SMTPAPI: $js";
 print "$hdr\n";
 {% endcodeblock %}
-<h2>Requirements and Limitations</h2>
+{% anchor Requirements and Limitations %}
 
 <p>When setting filters via SMTPAPI, all filter names and setting names must be lowercase.</p>
 

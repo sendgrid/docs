@@ -5,8 +5,8 @@ title: Apps
 navigation:
    show: true
 ---
-<a name="list"></a>
-<h2>List</h2>
+
+{% anchor List %}
 <p>List all of the available apps.</p>
 <p>Note: The
   <em>name</em>
@@ -61,8 +61,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
-<a name="activateApp"></a>
-<h2>Activate App</h2>
+
+{% anchor Activate App %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -110,8 +110,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"success"
 {% endcodeblock %}
 <hr/>
-<a name="deactivateApp"></a>
-<h2>Deactivate App</h2>
+
+{% anchor Deactivate App %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -159,8 +159,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"success"
 {% endcodeblock %}
 <hr/>
-<a name="customizeApp"></a>
-<h2>Customize App</h2>
+
+{% anchor Customize App %}
 <p>These API calls require that settings are passed using POST.</p>
 <h3>XML Call</h3>
 {% codeblock %}
@@ -196,8 +196,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 
 {% endcodeblock %}
 <hr/>
-<a name="getCurrentSettings"></a>
-<h2>Get Current Settings</h2>
+
+{% anchor Get Current Settings %}
 <h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=customer@example.com&method=app

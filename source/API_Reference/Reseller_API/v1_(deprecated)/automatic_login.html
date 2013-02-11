@@ -6,8 +6,8 @@ navigation:
    show: true
 ---
 <p>Allow customers to manage their account from your website using an iframe to our site.</p>
-<hr/><a name="initialAPICall"></a>
-<h2>Initial API Call</h2>
+<hr/>
+{% anchor Initial API Call %}
 <p>In order to login your customer, you need to contact our web API to retrieve the unique URL to automatically login your customer. Then display the generated URL to automatically login your customer.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -55,8 +55,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "params":"al_username=username&al_subuser_name=customer@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 {% endcodeblock %}
 <hr/>
-<a name="iFrameUsage"></a>
-<h2>iFrame Usage</h2>
+
+{% anchor iFrame Usage %}
 <p>Using the parameters returned from the Initial API Call, you can
 construct the iFrame URL as shown below.</p>
 {% codeblock %}

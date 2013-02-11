@@ -7,8 +7,8 @@ navigation:
 ---
 
   <p><span>Throttle your subuser when you need them to send only a specific amount of emails at a specified interval.</span></p>
-  <a name="retrieve"></a>
-  <h2>Retrieve</h2>
+  
+  {% anchor Retrieve %}
 <p>  Retrieve account limits for a specific subuser. If the API call response is empty that means the subuser has the limits removed.</p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -78,8 +78,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 {% endcodeblock %}
     </div>
 </div>
-  <hr/><a name="noLimit"></a>
-  <h2>No Limit</h2>
+  <hr/>
+  {% anchor No Limit %}
   <p>Remove the limit for a subuser.</p>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -141,8 +141,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
     </div>
 
 </div>
-  <hr/><a name="recurringReset"></a>
-  <h2>Recurring Reset</h2>
+  <hr/>
+  {% anchor Recurring Reset %}
   A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -235,8 +235,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
     </div>
 </div>
 
-  <hr/><a name="totalCredits"></a>
-  <h2>Total Credits</h2>
+  <hr/>
+  {% anchor Total Credits %}
   Set a subusers credits to a specified amount.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -302,8 +302,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
     </div>
 
 </div>
-  <hr/><a name="incrementCredits"></a>
-  <h2>Increment Credits</h2>
+  <hr/>
+  {% anchor Increment Credits %}
   Increment a subusers credits by a specified amount.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -368,8 +368,8 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 {% endcodeblock %}
     </div>
 </div>
-  <hr/><a name="decrementCredits"></a>
-  <h2>Decrement Credits</h2>
+  <hr/>
+  {% anchor Decrement Credits %}
   Decrement a subusers credits by a specified amount.
   <table class="table table-bordered table-striped"><tbody>
       <tr>

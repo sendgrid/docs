@@ -13,6 +13,15 @@ body {
 .result a.title { text-decoration:underline; }
 .result small { color:#093; }
 
+.anchor { margin-left:-14px; }
+
+.anchor-icon i{
+  display: none;
+  margin-top: 7px;
+  left: -3px;
+  position: relative;
+}
+
 #logo {
 	margin-top:-10px;
 	display:inline-block;
