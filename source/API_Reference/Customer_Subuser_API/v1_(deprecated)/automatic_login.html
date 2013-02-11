@@ -7,8 +7,8 @@ navigation:
 ---
 <div>
   <p>Allow subusers to manage their account from your website using an iframe to our site.</p>
-  <a name="initialAPICall"></a>
-  <h2>Initial API Call</h2>
+  
+  {% anchor Initial API Call %}
   In order to login your subuser, you need to contact our web API to retrieve the unique URL to automatically login your subuser. Then display the generated URL to automatically login your subuser.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -55,8 +55,8 @@ https://sendgrid.com/api/user.geturl.json?api_user=username&api_key=secureSecret
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="iFrameUsage"></a>
-  <h2>iFrame Usage</h2>
+  <hr/>
+  {% anchor iFrame Usage %}
   Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.
   {% codeblock %}
 iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"></iframe>

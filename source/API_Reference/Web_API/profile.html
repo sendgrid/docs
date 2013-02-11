@@ -9,7 +9,7 @@ navigation:
 <p>View your SendGrid Profile</p>
 
 <h3>There are no extra parameters required to view your profile information.</h3>
-<a name="get"></a>
+
 
 <ul class="nav nav-tabs">
   <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
@@ -58,7 +58,7 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
 
 <hr/>
 
-<h2>set</h2>
+{% anchor set %}
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -192,8 +192,8 @@ https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=s
 
 <hr/>
 
-<a name="setpassword"></a>
-<h2>setPassword</h2>
+
+{% anchor setPassword %}
 
   <table class="table table-bordered table-striped">
     <tbody>
@@ -280,9 +280,9 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
 
 <hr/>
 
-<a name="setusername" id="setusername"></a>
 
- <h2>setUsername</h2> 
+
+ {% anchor setUsername %} 
 <blockquote><span class="label label-warning">Warning</span> Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.</blockquote>
 
  <table class="table table-bordered table-striped">
@@ -359,8 +359,8 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.co
 
 <hr/>
 
-<a name="setemail" id="setemail"></a>
-<h2>setEmail</h2>
+
+{% anchor setEmail %}
 
 <blockquote><span class="label label-info">Info</span> Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.</blockquote>
 

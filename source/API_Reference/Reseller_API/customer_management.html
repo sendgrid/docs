@@ -6,7 +6,7 @@ navigation:
    show: true
 ---
 These are actions that directly affect your customer. We provide access via XML and JSON.
-<h2>Create a Customer</h2>
+{% anchor Create a Customer %}
 <table class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
@@ -186,8 +186,8 @@ https://sendgrid.com/apiv2/reseller.add.json?api_user=username&api_key=secureSec
   </div>
 </div>
 <hr/>
-<a name="deleteCustomer"></a>
-<h2>Delete a Customer</h2>
+
+{% anchor Delete a Customer %}
 Remove a customer from your account. This is
 <strong>not</strong>
 the same as disabling a customer on our system. However, the removed
@@ -245,7 +245,7 @@ https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="retrieveCustomers"></a>
+
 <p>Retrieve Customers</p>
 Obtain a complete list of all customers.
 <table class="table table-bordered table-striped"><tbody>
@@ -369,8 +369,8 @@ city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website"
   </div>
 </div>
 <hr/>
-<a name="enableCustomer"></a>
-<h2>Enable a Customer</h2>
+
+{% anchor Enable a Customer %}
 Enable a customer so they may start sending out emails again. This call will not enable website access. To
 <a href="#enableWebsiteCustomer">enable website access</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -427,8 +427,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="disableCustomer"></a>
-<h2>Disable a Customer</h2>
+
+{% anchor Disable a Customer %}
 This prevents them from sending out emails with SendGrid.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -484,8 +484,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="enableWebsiteCustomer"></a>
-<h2>Enable Website Access To A Customer</h2>
+
+{% anchor Enable Website Access To A Customer %}
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails. To
 <a href="#enableCustomer">enable a customer</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -544,8 +544,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="disableWebsiteCustomer"></a>
-<h2>Disable Website Access To A Customer</h2>
+
+{% anchor Disable Website Access To A Customer %}
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
 <a href="#disableCustomer">disable a customer</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -604,8 +604,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="updateCustomerProfile"></a>
-<h2>Update Customer Profile</h2>
+
+{% anchor Update Customer Profile %}
 Allows you to update your customers profile information
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -720,8 +720,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="updateCustomerPassword"></a>
-<h2>Update Customer Password</h2>
+
+{% anchor Update Customer Password %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -795,8 +795,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="updateCustomerUsername"></a>
-<h2>Update Customer Username</h2>
+
+{% anchor Update Customer Username %}
 Note that your customer account username is used to login to our SMTP server
 <em>and</em>
 the website and changes take effect immediately.
@@ -883,8 +883,8 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
   </div>
 </div>
 <hr/>
-<a name="updateCustomerEmailAddress"></a>
-<h2>Update Customer Email Address</h2>
+
+{% anchor Update Customer Email Address %}
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 <table class="table table-bordered table-striped"><tbody>
     <tr>

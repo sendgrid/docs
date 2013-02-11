@@ -9,8 +9,8 @@ navigation:
   <p>Receive a sample of an outgoing message by a specific subuser.</p>
 
 <p>The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a subuser. Multiple subuser can be appended to a single monitor record.</p>
-  <a name="createMonitorRecord"></a>
-  <h2>Create Monitor Record</h2>
+  
+  {% anchor Create Monitor Record %}
   Obtain a complete list of all subuser.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -81,8 +81,8 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secur
 {% endcodeblock %}
 </div>
 </div>
-  <hr/><a name="edit"></a>
-  <h2>Edit Monitor Record</h2>
+  <hr/>
+  {% anchor Edit Monitor Record %}
   Make modifications to an existing Monitor record.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -159,8 +159,8 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secur
 {% endcodeblock %}
 </div>
 </div>
-  <hr/><a name="delete"></a>
-  <h2>Delete Monitor Record</h2>
+  <hr/>
+  {% anchor Delete Monitor Record %}
   Deleting a monitor record will remove it from SendGrid's system. <strong>Make sure no users are currently using the monitor record when removing, or removal will fail.</strong>
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -219,8 +219,8 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secur
 {% endcodeblock %}
 </div>
 </div>
-  <hr/><a name="list"></a>
-  <h2>List All Monitor Records</h2>
+  <hr/>
+  {% anchor List All Monitor Records %}
   List all available monitor records a reseller has.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -262,8 +262,8 @@ https://sendgrid.com/apiv2/customer.monitor.json?api_user=username&api_key=secur
 {% endcodeblock %}
 </div>
 </div>
-  <hr/><a name="append"></a>
-  <h2>Append A Subuser To A Monitor Record</h2>
+  <hr/>
+  {% anchor Append A Subuser To A Monitor Record %}
   Append a monitor record to a existing record onto a subuser.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -328,8 +328,8 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=username&api_key=secure
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="detach"></a>
-  <h2>Detach A Monitor Record From A Subuser</h2>
+  <hr/>
+  {% anchor Detach A Monitor Record From A Subuser %}
   Detach a subuser from a monitor record.
   <table class="table table-bordered table-striped"><tbody>
       <tr>

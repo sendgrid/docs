@@ -5,8 +5,8 @@ title: Customer Statistics
 navigation:
    show: true
 ---
-<a name="retrieveStatistics"></a>
-<h2>Retrieve Customer Statistics</h2>
+
+{% anchor Retrieve Customer Statistics %}
 <p>Note that you can use
   <em>either</em>
   the days parameter
@@ -73,8 +73,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
 {% endcodeblock %}
 <hr/>
-<a name="retrieveAggregates"></a>
-<h2>Retrieve Aggregates</h2>
+
+{% anchor Retrieve Aggregates %}
 <p>Retrieve all-time totals for your customer</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -122,8 +122,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
 {% endcodeblock %}
 <hr/>
-<a name="categoryList"></a>
-<h2>Category List</h2>
+
+{% anchor Category List %}
 <p>Retrieve a list of all the categories used in your customers account.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -173,8 +173,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {"category":"categoryA","category":"categoryB","category":"categoryC"}
 {% endcodeblock %}
 <hr/>
-<a name="categoryStatistics"></a>
-<h2>Category Statistics</h2>
+
+{% anchor Category Statistics %}
 <p>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</p>
 <p>Note that you can use
   <em>either</em>

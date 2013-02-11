@@ -7,11 +7,11 @@ navigation:
 ---
 
   <p>These are actions that directly affect your subuser. We provide access via XML and JSON.</p>
-<a name="createSubuser"></a>
+
   <blockquote><span class="label label-info">Info</span>
    In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</blockquote>
 
-  <h2>Create a Subuser</h2>
+  {% anchor Create a Subuser %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -148,8 +148,8 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="retrieveSubusers"></a>
-  <h2>Retrieve Subusers</h2>
+  <hr/>
+  {% anchor Retrieve Subusers %}
   Obtain a complete list of all subusers.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -283,8 +283,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="enableSubuser"></a>
-  <h2>Enable a Subuser</h2>
+  <hr/>
+  {% anchor Enable a Subuser %}
   Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
   <table class="table table-bordered table-striped"><tbody>
@@ -339,8 +339,8 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="disableSubuser"></a>
-  <h2>Disable a Subuser</h2>
+  <hr/>
+  {% anchor Disable a Subuser %}
   This prevents them from sending out emails with SendGrid.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -394,8 +394,8 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="enableWebsiteSubuser"></a>
-  <h2>Enable Website Access To A Subuser</h2>
+  <hr/>
+  {% anchor Enable Website Access To A Subuser %}
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails. 
 
   <table class="table table-bordered table-striped"><tbody>
@@ -450,8 +450,8 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="disableWebsiteSubuser"></a>
-  <h2>Disable Website Access To A Subuser</h2>
+  <hr/>
+  {% anchor Disable Website Access To A Subuser %}
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails. 
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -505,8 +505,8 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserProfile"></a>
-  <h2>Update Subuser Profile</h2>
+  <hr/>
+  {% anchor Update Subuser Profile %}
   Allows you to update your subusers profile information
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -613,8 +613,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserPassword"></a>
-  <h2>Update Subuser Password</h2>
+  <hr/>
+  {% anchor Update Subuser Password %}
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -680,8 +680,8 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserUsername"></a>
-  <h2>Update Subuser Username</h2>
+  <hr/>
+  {% anchor Update Subuser Username %}
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -748,8 +748,8 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserEmailAddress"></a>
-  <h2>Update Subuser Email Address</h2>
+  <hr/>
+  {% anchor Update Subuser Email Address %}
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
   <table class="table table-bordered table-striped"><tbody>
       <tr>

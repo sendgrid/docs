@@ -8,16 +8,16 @@ navigation:
 
 <p>This library allows you to quickly and easily send emails through SendGrid using PHP.</p>
 
-<h2>How To Install The Libraries</h2>
+{% anchor How To Install The Libraries %}
 {% codeblock %}
 git clone git://github.com/sendgrid/sendgrid-php.git
 {% endcodeblock %}
 
-<h2>SendGrid APIs</h2>
+{% anchor SendGrid APIs %}
 <p>SendGrid provides two methods of sending email: the Web API, and SMTP API. SendGrid recommends using the SMTP API for sending emails. For an explanation of the benefits of each, refer to the <a href="/Integrate/index.html">integration page</a>.</p>
 
 <p>This library implements a common interface to make it very easy to use either API.</p>
-<h2>Mail Pre-Usage</h2>
+{% anchor Mail Pre-Usage %}
 <p>Before we begin using the library, its important to understand a few things about the library architecture. First, the SendGrid Mail object is the means of setting mail data. In general, data can be set in following three ways for most elements:</p>
 <ul>
 	<li><strong>set</strong> - reset the data, and initialize it to the given element. This will destroy previous data.</li>
@@ -30,7 +30,7 @@ git clone git://github.com/sendgrid/sendgrid-php.git
 	<li>Creating a SendGrid Mail object, and setting its data</li>
 	<li>Sending the mail using either SMTP API or Web API.</li>
 </ol>
-<h2>Mail Usage</h2>
+{% anchor Mail Usage %}
 <p>To begin using this library, you must first include it in your code, like so:</p>
 
 {% codeblock lang:php %}

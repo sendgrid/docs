@@ -36,9 +36,9 @@
 		root = $('#root').val().slice(0, -1);
 		
 		if(data.matches == 0) {
-			$('div#results').append('<h2>No Results Found</h2>');
+			$('div#results').append('{% anchor No Results Found %}');
 		} else {
-			$('div#results').append('<h2>Search Results <span class="badge">' + data.matches + '</span></h2><hr/>');
+			$('div#results').append('{% anchor Search Results <span class="badge">' + data.matches + '</span> %}<hr/>');
 		}
 		
 		$('.bar-indicator').hide();

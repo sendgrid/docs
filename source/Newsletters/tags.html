@@ -8,7 +8,7 @@ navigation:
 
 <p>There are a few special tags you can add to the body of your newsletter. </p>
 
-<h2>[weblink]</h2>
+{% anchor [weblink] %}
 
 <p>Place the <code>[weblink]</code> tag in the body to provide a link to a hosted 
 	copy of the email content. The tag is replaced with the URL, so to create a link, use the following HTML:</p>
@@ -19,7 +19,7 @@ navigation:
 
 <hr/>
 
-<h2>[unsubscribe]</h2>
+{% anchor [unsubscribe] %}
 
 <p>Place the <code>[unsubscribe]</code> tag in the body to provide an unsubscribe link. The tag is replaced with the URL, so to create a link, use the following HTML:</p>
 	
@@ -29,7 +29,7 @@ navigation:
 
 <hr/>
 
-<h2>Sender Address Tags</h2>
+{% anchor Sender Address Tags %}
 
 <p>There are several tags you can use to embed sender address information in your email body. Available tags are 
 	<code>[%from_name%]</code>, <code>[%address%]</code>, <code>[%city%]</code>, <code>[%state%]</code>, and <code>[%zip%]</code>.</p>

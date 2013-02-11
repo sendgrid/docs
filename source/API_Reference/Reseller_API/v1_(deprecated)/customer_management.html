@@ -6,8 +6,8 @@ navigation:
    show: true
 ---
 <p>These are actions that directly affect your customer. We provide access via XML and JSON.</p>
-<hr/><a name="createCustomer"></a>
-<h2>Create a Customer</h2>
+<hr/>
+{% anchor Create a Customer %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -177,8 +177,8 @@ https://sendgrid.com/api/distributor.add.json?api_user=username&api_key=secureSe
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
-<a name="deleteCustomer"></a>
-<h2>Delete a Customer</h2>
+
+{% anchor Delete a Customer %}
 <p>Remove a customer from your account. This is
   <strong>not</strong>
   the same as disabling a customer on our system. However, the removed user will still be stored within the system so that you cannot re-register a new user with this new username.</p>
@@ -224,7 +224,7 @@ https://sendgrid.com/api/distributor.delete.json?api_user=username&api_key=secur
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
-<a name="retrieveCustomers"></a>
+
 <p>Retrieve Customers</p>
 <p>Obtain a complete list of all customers.</p>
 <table class="table table-bordered table-striped">
@@ -334,8 +334,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
 <hr/>
-<a name="enableCustomer"></a>
-<h2>Enable a Customer</h2>
+
+{% anchor Enable a Customer %}
 <p>Enable a customer so they may start sending out emails again. This call will not enable website access. To
   <a href="#enableWebsiteCustomer">enable website access</a>.</p>
 <table class="table table-bordered table-striped">
@@ -382,8 +382,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"User not found"
 {% endcodeblock %}
 <hr/>
-<a name="disableCustomer"></a>
-<h2>Disable a Customer</h2>
+
+{% anchor Disable a Customer %}
 <p>This prevents them from sending out emails with SendGrid.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -429,8 +429,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"User not found"
 {% endcodeblock %}
 <hr/>
-<a name="enableWebsiteCustomer"></a>
-<h2>Enable Website Access To A Customer</h2>
+
+{% anchor Enable Website Access To A Customer %}
 <p>Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails. To
   <a href="#enableCustomer">enable a customer</a>.</p>
 <table class="table table-bordered table-striped">
@@ -479,8 +479,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"User not found"
 {% endcodeblock %}
 <hr/>
-<a name="disableWebsiteCustomer"></a>
-<h2>Disable Website Access To A Customer</h2>
+
+{% anchor Disable Website Access To A Customer %}
 <p>Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
   <a href="#disableCustomer">disable a customer</a>.</p>
 <table class="table table-bordered table-striped">
@@ -529,8 +529,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"User not found"
 {% endcodeblock %}
 <hr/>
-<a name="updateCustomerProfile"></a>
-<h2>Update Customer Profile</h2>
+
+{% anchor Update Customer Profile %}
 <p>Allows you to update your customers profile information</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -635,8 +635,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
-<a name="updateCustomerPassword"></a>
-<h2>Update Customer Password</h2>
+
+{% anchor Update Customer Password %}
 <p>Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -700,8 +700,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
-<a name="updateCustomerUsername"></a>
-<h2>Update Customer Username</h2>
+
+{% anchor Update Customer Username %}
 <p>Note that your customer account username is used to login to our SMTP server
   <em>and</em>
   the website and changes take effect immediately.</p>
@@ -773,8 +773,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 "message":"error","errors":[..."error messages"...]
 {% endcodeblock %}
 <hr/>
-<a name="updateCustomerEmailAddress"></a>
-<h2>Update Customer Email Address</h2>
+
+{% anchor Update Customer Email Address %}
 <p>This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.</p>
 <table class="table table-bordered table-striped">
   <tr>
