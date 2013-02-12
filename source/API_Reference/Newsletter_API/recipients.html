@@ -50,12 +50,17 @@ http://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -64,16 +69,20 @@ http://sendgrid.com/api/newsletter/recipients/add.json?name=SendGrid%20NL%20Test
 http://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2&list=test&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
-</result>>
+   <message>error: reason</message>
+</result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -116,12 +125,19 @@ http://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=SGuser
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-[{"list": "Training Contacts"}] 
+{% codeblock lang:javascript %}[
+  {
+    "list": "Training Contacts"
+  }
+]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -130,18 +146,22 @@ http://sendgrid.com/api/newsletter/recipients/get.json?name=test&api_user=SGuser
 http://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <lists>
-  <list>
-    <list>Training Contacts</list>
-  </list>
+   <list>
+      <list>Training Contacts</list>
+   </list>
 </lists>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
-</result>>
+   <message>error: reason</message>
+</result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -192,12 +212,17 @@ http://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=t
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
@@ -206,16 +231,20 @@ http://sendgrid.com/api/newsletter/delete.json?name=SendGrid%20NL%20Test1&list=t
 http://sendgrid.com/api/newsletter/delete.xml?name=SendGrid%20NL%20Test1&list=test&api_user=Sgusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
-</result>>
+   <message>error: reason</message>
+</result>
+
 {% endcodeblock %}
     </div>
   </div>

@@ -91,12 +91,17 @@ http://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&na
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -105,16 +110,20 @@ http://sendgrid.com/api/newsletter/identity/add.json?identity=Sender_Address1&na
 http://sendgrid.com/api/newsletter/identity/add.xml?identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929v1_(deprecated)Pearlv1_(deprecated)Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -211,12 +220,17 @@ http://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&n
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="edit-xml">
@@ -225,16 +239,20 @@ http://sendgrid.com/api/newsletter/identity/edit.json?identity=Sender_Address2&n
 http://sendgrid.com/api/newsletter/identity/edit.xml?identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929v1_(deprecated)Pearlv1_(deprecated)Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -272,12 +290,25 @@ http://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"city": "Boulder", "name": "Name", "zip": "80302", "replyto": "Email Address", "country": "US", "state": "CO", "address": "929 Pearl Street ste 200 ", "email": "example@sendgrid.com", "identity": "Sender_Address "}
+{% codeblock lang:javascript %}{
+  "city": "Boulder",
+  "name": "Name",
+  "zip": "80302",
+  "replyto": "Email Address",
+  "country": "US",
+  "state": "CO",
+  "address": "929 Pearl Street ste 200 ",
+  "email": "example@sendgrid.com",
+  "identity": "Sender_Address "
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -286,24 +317,28 @@ http://sendgrid.com/api/newsletter/identity/get.json?identity=Sender_Address&api
 http://sendgrid.com/api/newsletter/identity/get.xml?identity=Sender_Address&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <identity>
-  <city>Boulder</city>
-  <name>Example Name</name>
-  <zip>80302</zip>
-  <replyto>example@sendgrid.com</replyto>
-  <country>US</country>
-  <state>CO</state>
-  <address>929 Pearl Street ste 200 </address>
-  <email>example@sendgrid.com</email>
-  <identity>Sender_Address </identity>
+   <city>Boulder</city>
+   <name>Example Name</name>
+   <zip>80302</zip>
+   <replyto>example@sendgrid.com</replyto>
+   <country>US</country>
+   <state>CO</state>
+   <address>929 Pearl Street ste 200 </address>
+   <email>example@sendgrid.com</email>
+   <identity>Sender_Address </identity>
 </identity>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -343,12 +378,19 @@ http://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&a
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-[{"identity": "Sender_Address4"}]
+{% codeblock lang:javascript %}[
+  {
+    "identity": "Sender_Address4"
+  }
+]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="list-xml">
@@ -357,18 +399,22 @@ http://sendgrid.com/api/newsletter/identity/list.json?identity=Sender_Address4&a
 http://sendgrid.com/api/newsletter/identity/list.xml?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <identities>
-  <identity>
-    <identity>Sender_Address4</identity>
-  </identity>
+   <identity>
+      <identity>Sender_Address4</identity>
+   </identity>
 </identities>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -407,12 +453,17 @@ http://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
@@ -421,16 +472,20 @@ http://sendgrid.com/api/newsletter/identity/delete.json?identity=Sender_Address4
 http://sendgrid.com/api/newsletter/identity/delete.xml?identity=Sender_Address4&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>

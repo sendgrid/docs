@@ -120,12 +120,14 @@ result><message>Email does not exist</message></result>
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}{
+  "message": "Email does not exist"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -179,10 +181,12 @@ result><message>Email already exists</message></result>
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"Email already exists"
+{% codeblock lang:javascript %}{
+  "message": "Email already exists"
+}
 {% endcodeblock %}

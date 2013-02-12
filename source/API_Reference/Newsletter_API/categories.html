@@ -41,12 +41,17 @@ http://sendgrid.com/api/newsletter/category/create.json?api_user=USERNAME&api_ke
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="create-xml">
@@ -55,16 +60,20 @@ http://sendgrid.com/api/newsletter/category/create.json?api_user=USERNAME&api_ke
 http://sendgrid.com/api/newsletter/category/create.xml?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -108,12 +117,17 @@ http://sendgrid.com/api/newsletter/category/add.json?api_user=USERNAME&api_key=P
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -123,16 +137,20 @@ http://sendgrid.com/api/newsletter/category/add.xml?&api_user=USERNAME&api_key=P
 
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -177,12 +195,17 @@ http://sendgrid.com/api/newsletter/category/remove.json?api_user=USERNAME&api_ke
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="remove-xml">
@@ -191,16 +214,20 @@ http://sendgrid.com/api/newsletter/category/remove.json?api_user=USERNAME&api_ke
 http://sendgrid.com/api/newsletter/category/remove.xml?api_user=USERNAME&api_key=PASSWORD&category=CATEGORY&name=NEWSLETTER
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -239,12 +266,22 @@ http://sendgrid.com/api/newsletter/category/list.json?api_user=USERNAME&api_key=
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-[{"category": "CATEGORY"},{"category": "CATEGORY2"}]%   
+{% codeblock lang:javascript %}[
+  {
+    "category": "CATEGORY"
+  },
+  {
+    "category": "CATEGORY2"
+  }
+]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="list-xml">
@@ -253,21 +290,25 @@ http://sendgrid.com/api/newsletter/category/list.json?api_user=USERNAME&api_key=
 http://sendgrid.com/api/newsletter/category/list.xml?api_user=USERNAME&api_key=PASSWORD
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <categories>
-  <category>
-    <category>CATEGORY</category>
-  </category>
-  <category>
-    <category>CATEGORY2</category>
-  </category>
+   <category>
+      <category>CATEGORY</category>
+   </category>
+   <category>
+      <category>CATEGORY2</category>
+   </category>
 </categories>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>

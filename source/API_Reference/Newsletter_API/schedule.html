@@ -52,12 +52,17 @@ http://sendgrid.com/sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -66,16 +71,20 @@ http://sendgrid.com/sendgrid.com/api/newsletter/schedule/add.json?name=test&at=2
 http://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05v1_(deprecated)18%3A35%3A00&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
-</result>>
+   <message>error: reason</message>
+</result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -112,12 +121,17 @@ http://sendgrid.com/api/newsletter/schedule/get.json?name=SendGridv1_(deprecated
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"date": "2012-09-05 21:22:02"}
+{% codeblock lang:javascript %}{
+  "date": "2012-09-05 21:22:02"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -126,18 +140,22 @@ http://sendgrid.com/api/newsletter/schedule/get.json?name=SendGridv1_(deprecated
 http://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGridv1_(deprecated)NLv1_(deprecated)Test2&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <scheduled>
-  <date>
+   <date>
     2012-09-05 21:22:02
   </date>
 </scheduled>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -175,12 +193,17 @@ sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=SGusername&a
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
@@ -189,16 +212,20 @@ sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=SGusername&a
 sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
-</result>>
+   <message>error: reason</message>
+</result>
+
 {% endcodeblock %}
     </div>
   </div>
