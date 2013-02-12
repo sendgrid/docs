@@ -144,7 +144,12 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -279,7 +284,7 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock lang:javascript %}
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+[{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}]
 {% endcodeblock %}
   </div>
 </div>
@@ -335,7 +340,7 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"User not found"
+{"message":"User not found"}
 {% endcodeblock %}
   </div>
 </div>
@@ -390,7 +395,7 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"User not found"
+{"message":"User not found"}
 {% endcodeblock %}
   </div>
 </div>
@@ -446,7 +451,7 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"User not found"
+{"message":"User not found"}
 {% endcodeblock %}
   </div>
 </div>
@@ -501,7 +506,7 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"User not found"
+{"message":"User not found"}
 {% endcodeblock %}
   </div>
 </div>
@@ -609,7 +614,12 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -676,7 +686,12 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -744,7 +759,12 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -812,7 +832,12 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div>
 </div>

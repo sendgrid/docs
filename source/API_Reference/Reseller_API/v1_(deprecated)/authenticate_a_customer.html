@@ -39,12 +39,13 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secure
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -52,9 +53,14 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}

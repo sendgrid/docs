@@ -9,7 +9,7 @@ navigation:
 <p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:</p>
 
 {% codeblock lang:javascript %}
-X-SMTPAPI: {"category" : "newuser"}
+{"category" : "newuser"}
 {% endcodeblock %}
 <p>In this case, the header is telling the processing routine to assign this email the <a href="{{ root_url }}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
 
@@ -43,7 +43,7 @@ X-SMTPAPI: {"category" : "newuser"}
 	<a href="{{ root_url }}/Delivery_Metrics/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
 </p>
 {% codeblock lang:javascript %}
-{"category": [“category1”,”category2”]}
+{"category": ["category1","category2"]}
 {% endcodeblock %}
 
 <p>
@@ -57,14 +57,13 @@ X-SMTPAPI: {"category" : "newuser"}
 	<a href="{{ root_url }}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:javascript %}
-{"filters": {"footer": {"settings": {"enable":1,"text/plain": "Thank you for
-your business"}}}}
+{"filters": {"footer": {"settings": [{"enable":1,"text/plain": "Thank you for your business"}]}}}
 {% endcodeblock %}
 
 All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this:
 
 {% codeblock lang:javascript %}
-X-SMTPAPI: {
+{
     "to": [
         "ben@sendgrid.com",
         "joe@sendgrid.com"
@@ -103,7 +102,7 @@ X-SMTPAPI: {
 
 <p>Here is a full example of generating the above JSON header in a Perl script:</p>
 
-{% codeblock lang:javascript %}
+{% codeblock lang:perl %}
 
 #!/usr/bin/perl
 use strict;

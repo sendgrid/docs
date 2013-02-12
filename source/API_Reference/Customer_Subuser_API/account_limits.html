@@ -51,7 +51,12 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="limit-xml">
@@ -114,13 +119,16 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{
-  "message":"success"
-}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
  <div class="tab-pane" id="list-xml">
@@ -208,13 +216,16 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{
-  "message":"success"
-}
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="reset-xml">
@@ -277,11 +288,16 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
 	{% codeblock lang:javascript %}
-	"message":"success"
+	{"message":"success"}
 	{% endcodeblock %}
 	  <h3>Response: Error</h3>
 	{% codeblock lang:javascript %}
-	"message":"error","errors":[..."error messages"...]
+	{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 	{% endcodeblock %}
   </div>
   <div class="tab-pane" id="total-xml">
@@ -344,11 +360,16 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
 	{% codeblock lang:javascript %}
-	"message":"success"
+	{"message":"success"}
 	{% endcodeblock %}
 	  <h3>Response: Error</h3>
 	{% codeblock lang:javascript %}
-	"message":"error","errors":[..."error messages"...]
+	{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 	{% endcodeblock %}
 	  </div>
 	  <div class="tab-pane" id="increment-xml">
@@ -409,12 +430,17 @@ https://sendgrid.com/apiv2/customer.limit.xml?api_user=username&api_key=secureSe
 	https://sendgrid.com/apiv2/customer.limit.json?api_user=username&api_key=secureSecret&user=example@example.com&task=decrement&credits=200
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	{% codeblock lang:javascript  %}
-	"message":"success"
-	{% endcodeblock %}
+	{% codeblock lang:javascript %}
+{"message":"success"}
+{% endcodeblock %}
 	  <h3>Response: Error</h3>
 	{% codeblock lang:javascript  %}
-	"message":"error","errors":[..."error messages"...]
+	{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 	{% endcodeblock %}
 	  </div>
   <div class="tab-pane" id="decrement-xml">

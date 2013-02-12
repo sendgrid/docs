@@ -56,7 +56,7 @@ https://sendgrid.com/api/user.spamreports.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock lang:javascript %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+[{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
   </div>
 </div>
@@ -115,11 +115,11 @@ https://sendgrid.com/api/user.spamreports.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"Email does not exist"
+{"message":"Email does not exist"}
 {% endcodeblock %}
 </div>
 </div>

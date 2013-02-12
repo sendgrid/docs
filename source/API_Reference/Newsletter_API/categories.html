@@ -46,7 +46,12 @@ http://sendgrid.com/api/newsletter/category/create.json?api_user=USERNAME&api_ke
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="create-xml">
@@ -113,7 +118,12 @@ http://sendgrid.com/api/newsletter/category/add.json?api_user=USERNAME&api_key=P
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -182,7 +192,12 @@ http://sendgrid.com/api/newsletter/category/remove.json?api_user=USERNAME&api_ke
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="remove-xml">
@@ -240,11 +255,16 @@ http://sendgrid.com/api/newsletter/category/list.json?api_user=USERNAME&api_key=
 
           <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-[{"category": "CATEGORY"},{"category": "CATEGORY2"}]%   
+[{"category": "CATEGORY"},{"category": "CATEGORY2"}]   
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="list-xml">

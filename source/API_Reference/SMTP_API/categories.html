@@ -31,7 +31,7 @@ navigation:
 <p>You can use SendGrid's <a href="{{ root_url }}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
 
 {% codeblock lang:javascript %}
-X-SMTPAPI: {"category": "Example Category"}
+{"category": "Example Category"}
 {% endcodeblock %}
 <p>In this example, SendGrid would associate statistics for the email containing that header with the category <strong>Example Category</strong>.</p>
 

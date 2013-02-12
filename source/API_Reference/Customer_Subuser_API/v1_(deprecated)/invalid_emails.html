@@ -56,7 +56,7 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock lang:javascript %}
-{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+[{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}]
 {% endcodeblock %}
   </div>
 </div>
@@ -114,11 +114,11 @@ https://sendgrid.com/api/user.invalidemails.json?api_user=username&api_key=secur
 <div class="tab-pane active" id="delete-json">
    <h3>Call</h3>
   {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock lang:javascript %}
-"message":"Email does not exist"
+{"message":"Email does not exist"}
 {% endcodeblock %}
 </div>
 </div>
