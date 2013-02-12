@@ -100,9 +100,18 @@ https://sendgrid.com/api/spamreports.get.json?api_user=youremail@domain.com&amp;
 {% endcodeblock %}
 
      <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"ip": "174.36.80.219", "email": "example@aol.com", "created": "2009-12-06 15:45:08"},{"ip": "74.63.202.105", "email": "example2@yahoo.com", "created": "2009-12-08 07:43:01"}]
-
+{% codeblock lang:javascript %}[
+  {
+    "ip": "174.36.80.219",
+    "email": "example@aol.com",
+    "created": "2009-12-06 15:45:08"
+  },
+  {
+    "ip": "74.63.202.105",
+    "email": "example2@yahoo.com",
+    "created": "2009-12-08 07:43:01"
+  }
+]
 {% endcodeblock %}
 
   </div>
@@ -113,8 +122,21 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&amp;a
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
-<spamreports><spamreport><ip>174.36.80.219</ip><email>example@aol.com</email><created>2009-12-06 15:45:08</created></spamreport><spamreport><ip>74.63.202.105</ip><email>example2@yahoo.com</email><created>2009-12-08 07:43:01</created></spamreport></spamreports>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<spamreports>
+   <spamreport>
+      <ip>174.36.80.219</ip>
+      <email>example@aol.com</email>
+      <created>2009-12-06 15:45:08</created>
+   </spamreport>
+   <spamreport>
+      <ip>74.63.202.105</ip>
+      <email>example2@yahoo.com</email>
+      <created>2009-12-08 07:43:01</created>
+   </spamreport>
+</spamreports>
+
 {% endcodeblock %}
   </div>
 </div>
@@ -156,12 +178,17 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&a
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
   </div>
@@ -171,14 +198,20 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=youremail@domain.com&a
 https://sendgrid.com/api/spamreports.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>Email does not exist</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email does not exist</message>
 </result>
+
 {% endcodeblock %}
 
   </result></result>

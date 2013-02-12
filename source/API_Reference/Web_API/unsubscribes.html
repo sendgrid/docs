@@ -112,15 +112,18 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&amp
 {% endcodeblock %}
 
     <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"email": "brandon.west@sendgrid.com", "created": "2012-09-06 14:03:18"}]
+{% codeblock lang:javascript %}[
+  {
+    "email": "brandon.west@sendgrid.com",
+    "created": "2012-09-06 14:03:18"
+  }
+]
 {% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 {% codeblock lang:xml %}
-https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
 
 		<h3>Response</h3>
@@ -182,12 +185,17 @@ https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
   </div>
@@ -208,10 +216,13 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&a
 <h3>Response: Error</h3>
 
 @nodes
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
   Email does not exist
 @nodes
+</result>
+
 {% endcodeblock %}
 
   </result></result></result>
@@ -246,12 +257,17 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&a
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
   </div>
@@ -262,14 +278,20 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&am
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>Email does not exist</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email does not exist</message>
 </result>
+
 {% endcodeblock %}
 
   </result></result>

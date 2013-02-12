@@ -44,12 +44,17 @@ navigation:
 http://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"inserted": 1}
+{% codeblock lang:javascript %}{
+  "inserted": 1
+}
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="add-xml">
@@ -59,16 +64,20 @@ http://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22emai
 {% endcodeblock %}
 	<h3>Response: Success</h3>
 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <inserted>1</inserted>
+   <inserted>1</inserted>
 </result>
+
 {% endcodeblock %}
 	  <h4>Response: Error</h4> 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -132,12 +141,20 @@ http://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22emai
 http://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-[{"email": "dominic.may@sendgrid.com", "name": ""}]
+{% codeblock lang:javascript %}[
+  {
+    "email": "dominic.may@sendgrid.com",
+    "name": ""
+  }
+]
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -147,20 +164,24 @@ http://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=SGuser
 {% endcodeblock %}
 	<h3>Response: Success</h3>
 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <emails>
-  <email>
-    <email>dominic.may@sendgrid.com</email>
-    <name>
+   <email>
+      <email>dominic.may@sendgrid.com</email>
+      <name>
     </name>
-  </email>
+   </email>
 </emails>
+
 {% endcodeblock %}
 	  <h4>Response: Error</h4> 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -204,12 +225,17 @@ http://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=SGuser
 http://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=SGusername&api_key=SGpassword
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"removed": 1}
+{% codeblock lang:javascript %}{
+  "removed": 1
+}
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="delete-xml">
@@ -219,16 +245,20 @@ http://sendgrid.com/api/newsletter/lists/email/delete.xml?list=Test&email=exampl
 {% endcodeblock %}
 	<h3>Response: Success</h3>
 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <removed>1</removed>
+   <removed>1</removed>
 </result>
+
 {% endcodeblock %}
 	  <h4>Response: Error</h4> 
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   </div>

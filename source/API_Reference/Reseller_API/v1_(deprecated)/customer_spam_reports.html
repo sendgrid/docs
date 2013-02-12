@@ -123,10 +123,12 @@ result><message>Email does not exist</message></result>
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}{
+  "message": "Email does not exist"
+}
 {% endcodeblock %}

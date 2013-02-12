@@ -48,34 +48,33 @@ Email HTML content:
 
 <p>An accompanying SMTP API JSON header might look something like this:</p>
 
-{% codeblock lang:javascript %}
-{
-    "to": [
-        "john.doe@gmail.com",
-        "jane.doe@hotmail.com"
+{% codeblock lang:javascript %}{
+  "to": [
+    "john.doe@gmail.com",
+    "jane.doe@hotmail.com"
+  ],
+  "sub": {
+    "-name-": [
+      "John",
+      "Jane"
     ],
-    "sub": {
-        "-name-": [
-            "John",
-            "Jane"
-        ],
-        "-customerID-": [
-            "1234",
-            "5678"
-        ],
-        "-salesContact-": [
-            "Jared",
-            "Ben"
-        ],
-        "-contactPhoneNumber-": [
-            "555.555.5555",
-            "777.777.7777"
-        ],
-        "-time-": [
-            "3:00pm",
-            "5:15pm"
-        ]
-    }
+    "-customerID-": [
+      "1234",
+      "5678"
+    ],
+    "-salesContact-": [
+      "Jared",
+      "Ben"
+    ],
+    "-contactPhoneNumber-": [
+      "555.555.5555",
+      "777.777.7777"
+    ],
+    "-time-": [
+      "3:00pm",
+      "5:15pm"
+    ]
+  }
 }
 {% endcodeblock %}
 
