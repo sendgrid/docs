@@ -56,11 +56,16 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -109,11 +114,16 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -162,11 +172,16 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -217,11 +232,16 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
+[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -289,10 +309,15 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}
+[{"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div></div>

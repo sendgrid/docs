@@ -65,7 +65,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
+{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":"false"}
 {% endcodeblock %}
   </div>
 </div>
@@ -123,7 +123,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   </div>
 </div>
@@ -181,7 +181,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
   </div>
 </div>
@@ -224,12 +224,12 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success","settings":{"field_name":"field_value”}
+{"message":"success","settings":[{"field_name":"field_value”}]}
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock lang:javascript %}
-"settings":null}
+{"settings":null}
 {% endcodeblock %}
   </div>
 </div>
@@ -275,7 +275,12 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>

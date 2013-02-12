@@ -41,12 +41,13 @@ https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secur
 result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -58,7 +59,12 @@ https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -90,12 +96,13 @@ https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -103,11 +110,16 @@ https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -159,12 +171,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -172,11 +185,16 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -228,12 +246,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -241,11 +260,16 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -285,12 +309,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -298,11 +323,16 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -354,12 +384,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -367,11 +398,16 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -423,12 +459,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -436,11 +473,16 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 <hr/>
 
@@ -481,12 +523,13 @@ https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secur
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock %}
-result><message>error</message><errors>
-      ...
+{% codeblock lang:xml %}
+<result>
+  <message>error</message>
+  <errors>
       <error>... error messages ...</error>
-      ...
-    </errors></result>
+   </errors>
+</result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
@@ -494,9 +537,14 @@ https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secu
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}

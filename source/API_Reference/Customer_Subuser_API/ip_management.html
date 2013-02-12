@@ -43,7 +43,7 @@ navigation:
 	{% endcodeblock %}
 	  <h3>Response</h3>
 	{% codeblock lang:javascript %}
-	{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
+	[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}]
 	{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="list-xml">
@@ -101,11 +101,11 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
+{"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"error":{"code":400,"message":"User does not exist"}
+{"error":{"code":400,"message":"User does not exist"}}
 {% endcodeblock %}
   </div>
 </div>
@@ -171,11 +171,16 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secure
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div>
 </div>

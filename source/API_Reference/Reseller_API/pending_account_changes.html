@@ -60,11 +60,16 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
+[{"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}]
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -117,11 +122,16 @@ https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -194,11 +204,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h4>Return - Success'); ?></h4>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -271,11 +286,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -334,11 +354,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -411,11 +436,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -488,11 +518,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -551,10 +586,15 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"message":"success"
+{"message":"success"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div></div>

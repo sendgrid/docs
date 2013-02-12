@@ -56,11 +56,16 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secur
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
-"reputation":100,"requests":500000,"package":"Silver Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credits_overage":50000,"billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"
+{"reputation":"100","requests":"500000","package":"Silver Package","credits_allowed":"50000","credits_used":"100000","credits_remain":0,"credits_overage":"50000","billing_start_date":"2010-08-30","billing_end_date":"2010-09-29","billing_process_date":"2010-09-30"}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div>
 </div>
