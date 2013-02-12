@@ -8,7 +8,7 @@ navigation:
 
 We'll start with a simple example using the built-in .NET SMTP libraries to send a message. After that example, you can find more complete instructions that use the SendGrid C# library.</p>
 
-##Using .NET's Built-in SMTP Library
+{% anchor Using .NET's Built-in SMTP Library %}
 
 If you are using ASP.NET, you can specify SMTP settings in web.config.
 
@@ -74,7 +74,7 @@ namespace SmtpMail
 }
 ```
 
-#Using the SendGrid C# Library
+{% anchor Using the SendGrid C# Library %}
 
 To use SendGrid in your C# project, you can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.
 
@@ -125,7 +125,7 @@ myMessage.Html = "<p>Hello World!</p>";
 myMessage.Text = "Hello World plain text!";
 ```
 
-##How to: Send an Email
+{% anchor How to: Send an Email %}
 
 After creating an email message, you can send it using either SMTP or the Web API provided by SendGrid. For details about the benefits and drawbacks of each API, see [SMTP vs. Web API](http://sendgrid.com/docs/Integrate/) in the SendGrid documentation.
 
@@ -199,7 +199,7 @@ myMessage.Header.AddTo(recipients);
 myMessage.AddTo("brandon@example.com");
 ```
 
-##How to: Add an Attachment
+{% anchor How to: Add an Attachment %}
 
 Attachments can be added to a message by calling the **AddAttachment** method and specifying the name and path of the file you want to attach, or by passing a stream. You can include multiple attachments by calling this method once for each file you wish to attach. The following example demonstrates adding an attachment to a message:
 
