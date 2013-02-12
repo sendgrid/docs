@@ -49,8 +49,10 @@ navigation:
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=secureSecret&task=get&user=example@example.co
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:xml %}
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <url>http://www.SubUserPostUrlHere.com</url>
+
 {% endcodeblock %}
     </div>
 
@@ -95,9 +97,10 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=s
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}
-	{"message":"success"}
-	{% endcodeblock %}
+	  {% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
@@ -105,7 +108,12 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=s
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:xml %}    <result><message>success</message></result>
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
     </div>
 </div>
@@ -143,9 +151,10 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=s
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=username&api_key=secureSecret&task=delete&user=example@example.co
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}
-	{"message":"success"}
-	{% endcodeblock %}
+	  {% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -153,7 +162,12 @@ https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=s
 https://sendgrid.com/apiv2/customer.eventposturl.xml?api_user=username&api_key=secureSecret&task=delete&user=example@example.co
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:xml %}    <result><message>success</message></result>
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
     </div>
 

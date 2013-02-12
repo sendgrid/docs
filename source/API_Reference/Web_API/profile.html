@@ -22,8 +22,20 @@ navigation:
 https://sendgrid.com/api/profile.get.json?api_user=youremail@domain.com&api_key=secureSecret
 {% endcodeblock %}
      <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"username":"sampleuser@example.com","email":"sampleemail@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+{% codeblock lang:javascript %}{
+  "username": "sampleuser@example.com",
+  "email": "sampleemail@example.com",
+  "active": "true",
+  "first_name": "john",
+  "last_name": "doe",
+  "address": "555 any street",
+  "city": "any city",
+  "state": "CA",
+  "zip": "91234",
+  "country": "US",
+  "phone": "555-555-5555",
+  "website": "example.com"
+}
 {% endcodeblock %}
 
 
@@ -35,23 +47,25 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <users>
-  <user>
-    <username>sampleuser@example.com</username>
-    <email>sampleemail@example.com</email>
-    <active>true</active>
-    <first_name>john</first_name>
-    <last_name>doe</last_name>
-    <address>555 any street</address>
-    <city>any city</city>
-    <state>CA</state>
-    <zip>91234</zip>
-    <country>US</country>
-    <phone>555-555-5555</phone>
-    <website>example.com</website>
-  </user>
+   <user>
+      <username>sampleuser@example.com</username>
+      <email>sampleemail@example.com</email>
+      <active>true</active>
+      <first_name>john</first_name>
+      <last_name>doe</last_name>
+      <address>555 any street</address>
+      <city>any city</city>
+      <state>CA</state>
+      <zip>91234</zip>
+      <country>US</country>
+      <phone>555-555-5555</phone>
+      <website>example.com</website>
+   </user>
 </users>
+
 {% endcodeblock %}
   </div>
 </div>
@@ -155,16 +169,16 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
 https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 
@@ -175,22 +189,27 @@ https://sendgrid.com/api/profile.set.json?api_user=youremail@domain.com&api_key=
 https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=secureSecret&first_name=newFirstName&last_name=&newLastName
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
-@nodes
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+   @nodes
+</result>
+
 {% endcodeblock %}
   </div>
 </div>
@@ -247,16 +266,16 @@ https://sendgrid.com/api/password.set.json?api_user=youremail@domain.com&api_key
 {% endcodeblock %}
 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 
@@ -268,10 +287,12 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -333,16 +354,16 @@ https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.c
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
   </div>
@@ -352,10 +373,12 @@ https://sendgrid.com/api/profile.setUsername.json?api_user=yourusername@domain.c
 https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.com&api_key=secureSecret&username=yournewusername@domain.com
 {% endcodeblock %}
 <h3>Response: Success</H3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock %}
@@ -416,16 +439,16 @@ https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com&
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 
@@ -436,17 +459,16 @@ https://sendgrid.com/api/profile.setEmail.json?api_user=yourusername@domain.com&
 https://sendgrid.com/api/profile.setEmail.xml?api_user=yourusername@domain.com&api_key=secureSecret&email=yournewemail@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <message>success</message>
+
 {% endcodeblock %}
 <p>Response: Error</p>
-{% codeblock lang:xml %}
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<message>error</message>
+
 {% endcodeblock %}
   </div>
 </div>

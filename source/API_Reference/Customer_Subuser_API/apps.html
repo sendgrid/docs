@@ -46,9 +46,13 @@ Note: The
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=username&api_key=secureSecret&task=getavailable&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock lang:javascript %}
-	{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false} 
-	{% endcodeblock %}
+	  {% codeblock lang:javascript %}{
+  "name": "twitter",
+  "title": "Twitter",
+  "description": "This plugin allows you to send an email message to twitter",
+  "activated": false
+}
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -104,8 +108,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=username&api_key=secureSecret&name=twitter&task=activate&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}
-{"message":"success"}
+	  {% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 	</div>
   <div class="tab-pane" id="activate-xml">
@@ -154,9 +159,10 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=username&api_key=secureSecret&name=twitter&task=deactivate&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}
-	{"message":"success"}
-	{% endcodeblock %}
+	  {% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="deactivate-xml">
      <h3>Call</h3>
@@ -164,7 +170,12 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSecret&name=twitter&task=deactivate&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:xml %}    <result><message>success</message></result>
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
     </div>
 </div>
@@ -197,12 +208,22 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSecret&name=twitter&task=setup&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:xml %}    <filter><field_name>field_value</field_name>
-      ...
-    </filter>
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<filter>
+   <field_name>field_value</field_name>
+   ...
+</filter>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:xml %}    <result><message>error</message><message>... error messages ...</message></result>
+  {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <message>... error messages ...</message>
+</result>
+
 {% endcodeblock %}
   <h4>Return - Empty</h4>
   This is returned if that filter has no settings or is not enabled.
@@ -225,23 +246,29 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock lang:javascript %}
-	{"message":"success","settings":[{"field_name":"field_value"}]}
-	{% endcodeblock %}
-	  <h3>Response: Error</h3>
-	  {% codeblock lang:javascript %}
-	{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+	  {% codeblock lang:javascript %}{
+  "message": "success",
+  "settings": [
+    {
+      "field_name": "field_value"
+    }
+  ]
 }
-	{% endcodeblock %}
+{% endcodeblock %}
+	  <h3>Response: Error</h3>
+	  {% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
 	  <h4>Return - Empty</h4>
 	  This is returned if that filter has no settings or is not enabled.
-	  {% codeblock lang:javascript %}
-	{"settings":null}
-	{% endcodeblock %}
+	  {% codeblock lang:javascript %}{
+  "settings": null
+}
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="settings-xml">
      <h3>Call</h3>

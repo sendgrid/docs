@@ -58,14 +58,25 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="create-json">
@@ -74,16 +85,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
   </div>
@@ -144,14 +155,25 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="edit-json">
@@ -160,16 +182,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
   </div>
@@ -212,14 +234,25 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelet
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -228,16 +261,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=monitor&task=delete&name=recordToDelete
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
   </div>
@@ -272,7 +305,26 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=list
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<monitors>
+   <monitor>
+      <name>sampleNameA</name>
+      <email>example@example.com</email>
+      <frequency>1000</frequency>
+      <users/>
+   </monitor>
+   <monitor>
+      <name>sampleNameB</name>
+      <email>example@example.com</email>
+      <frequency>10000</frequency>
+      <users>
+         <user>user1@example.com</user>
+         <user>user2@example.com</user>
+      </users>
+   </monitor>
+</monitors>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="list-json">
@@ -281,8 +333,25 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=monitor&task=lis
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}]
+{% codeblock lang:javascript %}[
+  {
+    "name": "sampleNameA",
+    "email": "example@example.com",
+    "frequency": "1000",
+    "users": [
+
+    ]
+  },
+  {
+    "name": "sampleNameB",
+    "email": "example@example.com",
+    "frequency": "10000",
+    "users": [
+      "user1@example.com",
+      "user2@example.com"
+    ]
+  }
+]
 {% endcodeblock %}
   </div>
 </div>
@@ -331,14 +400,25 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=append&name=myMonitor&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="append-json">
@@ -347,16 +427,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=append&name=myMonitor&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
   </div>
@@ -400,14 +480,25 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=monitor&task=detach&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="detach-json">
@@ -416,16 +507,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=monitor&task=detach&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 </div></div>

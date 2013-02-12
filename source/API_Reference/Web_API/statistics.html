@@ -78,42 +78,44 @@ parameters. If provided with no parameters, the current day's statistics are ret
 https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&days=2
 {% endcodeblock %}
      <h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <stats>
-  <day>
-    <date>2009-06-20</date>
-    <requests>12342</requests>
-    <bounces>12</bounces>
-    <clicks>10223</clicks>
-    <opens>9992</opens>
-    <spamreports>5</spamreports>
-    <unique_clicks>3</unique_clicks>
-    <unique_opens>6</unique_opens>
-    <blocked>7</blocked>
-  </day>
-  <day>
-    <date>2009-06-21</date>
-    <requests>32342</requests>
-    <bounces>10</bounces>
-    <clicks>14323</clicks>
-    <opens>10995</opens>
-    <spamreports>7</spamreports>
-    <unique_clicks>3</unique_clicks>
-    <unique_opens>9</unique_opens>
-    <blocked>4</blocked>
-  </day>
-  <day>
-    <date>2009-06-22</date>
-    <requests>52342</requests>
-    <bounces>11</bounces>
-    <clicks>19223</clicks>
-    <opens>12992</opens>
-    <spamreports>2</spamreports>
-    <unique_clicks>5</unique_clicks>
-    <unique_opens>2</unique_opens>
-    <blocked>8</blocked>
-  </day>
+   <day>
+      <date>2009-06-20</date>
+      <requests>12342</requests>
+      <bounces>12</bounces>
+      <clicks>10223</clicks>
+      <opens>9992</opens>
+      <spamreports>5</spamreports>
+      <unique_clicks>3</unique_clicks>
+      <unique_opens>6</unique_opens>
+      <blocked>7</blocked>
+   </day>
+   <day>
+      <date>2009-06-21</date>
+      <requests>32342</requests>
+      <bounces>10</bounces>
+      <clicks>14323</clicks>
+      <opens>10995</opens>
+      <spamreports>7</spamreports>
+      <unique_clicks>3</unique_clicks>
+      <unique_opens>9</unique_opens>
+      <blocked>4</blocked>
+   </day>
+   <day>
+      <date>2009-06-22</date>
+      <requests>52342</requests>
+      <bounces>11</bounces>
+      <clicks>19223</clicks>
+      <opens>12992</opens>
+      <spamreports>2</spamreports>
+      <unique_clicks>5</unique_clicks>
+      <unique_opens>2</unique_opens>
+      <blocked>8</blocked>
+   </day>
 </stats>
+
 {% endcodeblock %}
 
 
@@ -125,8 +127,41 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 {% endcodeblock %}
 
 	<h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":3,"unique_opens":6,"blocked":7},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":3,"unique_opens":9,"blocked":4},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2,"unique_clicks":5,"unique_opens":2,"blocked":8}]
+{% codeblock lang:javascript %}[
+  {
+    "date": "2009-06-20",
+    "requests": 12342,
+    "bounces": 12,
+    "clicks": 10223,
+    "opens": 9992,
+    "spamreports": 5,
+    "unique_clicks": 3,
+    "unique_opens": 6,
+    "blocked": 7
+  },
+  {
+    "date": "2009-06-21",
+    "requests": 32342,
+    "bounces": 10,
+    "clicks": 14323,
+    "opens": 10995,
+    "spamreports": 7,
+    "unique_clicks": 3,
+    "unique_opens": 9,
+    "blocked": 4
+  },
+  {
+    "date": "2009-06-22",
+    "requests": 52342,
+    "bounces": 11,
+    "clicks": 19223,
+    "opens": 12992,
+    "spamreports": 2,
+    "unique_clicks": 5,
+    "unique_opens": 2,
+    "blocked": 8
+  }
+]
 {% endcodeblock %}
 
   </div>
@@ -148,8 +183,17 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=secureSecret&list=true
 {% endcodeblock %}
      <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"category":"categoryA"},{"category":"categoryB"},{"category":"categoryC"}]
+{% codeblock lang:javascript %}[
+  {
+    "category": "categoryA"
+  },
+  {
+    "category": "categoryB"
+  },
+  {
+    "category": "categoryC"
+  }
+]
 {% endcodeblock %}
 
 
@@ -162,12 +206,14 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <categories>
-  <category>categoryA</category>
-  <category>categoryB</category>
-  <category>categoryC</category>
+   <category>categoryA</category>
+   <category>categoryB</category>
+   <category>categoryC</category>
 </categories>
+
 {% endcodeblock %}
 
   </div>
@@ -265,8 +311,32 @@ https://sendgrid.com/api/stats.get.json?api_user=youremail@domain.com&api_key=se
 {% endcodeblock %}
 
      <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"date":"2009-06-20","category":"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5,"unique_clicks":5,"unique_opens":2,"blocked":7},{"date":"2009-06-21","category":"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7,"unique_clicks":4,"unique_opens":1,"blocked":6}]
+{% codeblock lang:javascript %}[
+  {
+    "date": "2009-06-20",
+    "category": "categoryA",
+    "requests": 12342,
+    "bounces": 12,
+    "clicks": 10223,
+    "opens": 9992,
+    "spamreports": 5,
+    "unique_clicks": 5,
+    "unique_opens": 2,
+    "blocked": 7
+  },
+  {
+    "date": "2009-06-21",
+    "category": "categoryB",
+    "requests": 32342,
+    "bounces": 10,
+    "clicks": 14323,
+    "opens": 10995,
+    "spamreports": 7,
+    "unique_clicks": 4,
+    "unique_opens": 1,
+    "blocked": 6
+  }
+]
 {% endcodeblock %}
 
   </div>
@@ -282,27 +352,29 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <stats>
-  <day>
-    <date>2009-06-20</date>
-    <category>categoryA</category>
-    <requests>12342</requests>
-    <bounces>12</bounces>
-    <clicks>10223</clicks>
-    <opens>9992</opens>
-    <spamreports>5</spamreports>
-  </day>
-  <day>
-    <date>2009-06-21</date>
-    <category>categoryB</category>
-    <requests>32342</requests>
-    <bounces>10</bounces>
-    <clicks>14323</clicks>
-    <opens>10995</opens>
-    <spamreports>7</spamreports>
-  </day>
+   <day>
+      <date>2009-06-20</date>
+      <category>categoryA</category>
+      <requests>12342</requests>
+      <bounces>12</bounces>
+      <clicks>10223</clicks>
+      <opens>9992</opens>
+      <spamreports>5</spamreports>
+   </day>
+   <day>
+      <date>2009-06-21</date>
+      <category>categoryB</category>
+      <requests>32342</requests>
+      <bounces>10</bounces>
+      <clicks>14323</clicks>
+      <opens>10995</opens>
+      <spamreports>7</spamreports>
+   </day>
 </stats>
+
 {% endcodeblock %}
 
   </div>

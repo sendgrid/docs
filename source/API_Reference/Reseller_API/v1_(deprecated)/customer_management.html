@@ -155,30 +155,41 @@ navigation:
 https://sendgrid.com/api/distributor.add.xml?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.add.json?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <hr/>
@@ -207,30 +218,41 @@ https://sendgrid.com/api/distributor.add.json?api_user=username&api_key=secureSe
 https://sendgrid.com/api/distributor.delete.xml?api_user=username&api_key=secureSecret&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.delete.json?api_user=username&api_key=secureSecret&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <hr/>
@@ -374,22 +396,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"User not found"}
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -421,22 +455,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"User not found"}
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -471,22 +517,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"User not found"}
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -521,22 +579,34 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=website_disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=website_disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"User not found"}
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -623,30 +693,41 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <hr/>
@@ -693,30 +774,41 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <hr/>
@@ -771,30 +863,41 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <hr/>
@@ -845,29 +948,40 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 https://sendgrid.com/api/distributor.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}

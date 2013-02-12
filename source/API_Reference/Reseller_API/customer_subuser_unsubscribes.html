@@ -54,7 +54,19 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<unsubscribes>
+   <unsubscribe>
+      <email>email1@domain.com</email>
+      <created>2009-06-10 12:40:30</created>
+   </unsubscribe>
+   <unsubscribe>
+      <email>email2@domain2.com</email>
+      <created>2009-06-10 12:40:30</created>
+   </unsubscribe>
+</unsubscribes>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -63,8 +75,16 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{% codeblock lang:javascript %}[
+  {
+    "email": "email1@domain.com",
+    "created": "2009-06-01 19:41:39"
+  },
+  {
+    "email": "email2@domain2.com",
+    "created": "2009-06-01 19:41:39"
+  }
+]
 {% endcodeblock %}
   </div>
 </div>
@@ -114,10 +134,20 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>Email does not exist</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email does not exist</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -126,12 +156,14 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"Email does not exist"}
+{% codeblock lang:javascript %}{
+  "message": "Email does not exist"
+}
 {% endcodeblock %}
   </div>
 </div>
@@ -181,10 +213,20 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>Email already exists</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email already exists</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="add-json">
@@ -193,11 +235,13 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"Email already exists"}
+{% codeblock lang:javascript %}{
+  "message": "Email already exists"
+}
 {% endcodeblock %}
 </div></div>

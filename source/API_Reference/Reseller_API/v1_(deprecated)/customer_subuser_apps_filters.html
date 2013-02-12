@@ -90,8 +90,9 @@ result><message>success</message></result>
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -131,8 +132,9 @@ result><message>success</message></result>
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <hr/>
 
@@ -164,6 +166,7 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 "message":"success","settings":{"field_name":"field_value”}
+
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
@@ -201,14 +204,14 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 "message":"success","settings":{"field_name":"field_value”}
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 <h4>Return - Empty</h4>

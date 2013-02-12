@@ -70,8 +70,26 @@ navigation:
 https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %} 
       <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"status": "4.0.0", "created": "2012-09-02 00:12:12", "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)", "email": "example@juno.com"},{"status": "4.0.0", "created": "2012-09-02 00:21:29", "reason": "Connection timed out", "email": "example2@band.la"},{"status": "4.0.0", "created": "2012-09-02 00:25:33", "reason": "Unable to resolve MX record for exampledomain.com: nxdomain", "email": "example3@exampledomain.com"}]
+{% codeblock lang:javascript %}[
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:12:12",
+    "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
+    "email": "example@juno.com"
+  },
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:21:29",
+    "reason": "Connection timed out",
+    "email": "example2@band.la"
+  },
+  {
+    "status": "4.0.0",
+    "created": "2012-09-02 00:25:33",
+    "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
+    "email": "example3@exampledomain.com"
+  }
+]
 {% endcodeblock %}
     </div>
     <div class="tab-pane" id="get-xml">
@@ -80,8 +98,23 @@ https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_k
 https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
       <h3>Response</h3>
-{% codeblock lang:xml %}
-<blocks><block><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></block><block><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-08-01 10:16:30</created></block></blocks>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<blocks>
+   <block>
+      <email>email1@domain.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <created>2009-06-10 12:40:30</created>
+   </block>
+   <block>
+      <email>email2@domain2.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <created>2009-08-01 10:16:30</created>
+   </block>
+</blocks>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -120,16 +153,16 @@ https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;ap
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
     </div>
@@ -139,14 +172,21 @@ https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;ap
 https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><count>4</count>
-@nodes
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <count>4</count>
+   @nodes
+</result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>error: reason</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </result></result>
 </div>
