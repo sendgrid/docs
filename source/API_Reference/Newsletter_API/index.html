@@ -42,24 +42,25 @@ navigation:
 {% anchor Errors %}
 <ul>
 	<li>XML
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
 </result>
+
 {% endcodeblock %}
 </li>
 	<li>JSON
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 </li>
@@ -69,15 +70,18 @@ navigation:
 <h3>Success</h3>
 <ul>
 	<li>XML
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
 success
 </result>
+
 {% endcodeblock %}
 </li>
 	<li>JSON
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 </li>
 </ul>

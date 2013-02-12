@@ -23,8 +23,14 @@ For a list of all the apps and parameters accesible with the Web API you can che
 https://sendgrid.com/api/filter.getavailable.json?api_user=youremail@domain.com&api_key=secureSecret
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}]
+{% codeblock lang:javascript %}[
+  {
+    "name": "twitter",
+    "title": "Twitter",
+    "description": "This plugin allows you to send an email message to twitter",
+    "activated": false
+  }
+]
 {% endcodeblock %}
 
     </div>
@@ -35,16 +41,18 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&a
 {% endcodeblock %}
 
 <h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <filters>
-  <filter>
-    <name>twitter</name>
-    <title>Twitter</title>
-    <description>This plugin allows you to send an email message to twitter</description>
-    <activated>0</activated>
-  </filter>
-  ...
+   <filter>
+      <name>twitter</name>
+      <title>Twitter</title>
+      <description>This plugin allows you to send an email message to twitter</description>
+      <activated>0</activated>
+   </filter>
+   ...
 </filters>
+
 {% endcodeblock %}
     </div>
   </div>
@@ -66,8 +74,9 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&a
 https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 {% endcodeblock %}
 		<h3>Response</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="activate-xml">
@@ -76,10 +85,12 @@ https://sendgrid.com/api/filter.activate.json?api_user=youremail@domain.com&api_
 https://sendgrid.com/api/filter.activate.xml?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 {% endcodeblock %}
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   </div>
 </div>
@@ -100,8 +111,9 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=youremail@domain.com&ap
 {% endcodeblock %}
      <h3>Response</h3>
 
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 
   </div>
@@ -112,10 +124,12 @@ https://sendgrid.com/api/filter.deactivate.xml?api_user=youremail@domain.com&api
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 
   </div>
@@ -186,22 +200,23 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&a
 	<h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 {"message":"success","settings":[{"field_name":"field_value”}]}
+
 {% endcodeblock %}
 
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
 
 	<h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:javascript %}
-{"settings":null}
+{% codeblock lang:javascript %}{
+  "settings": null
+}
 {% endcodeblock %}
 
   </div>
@@ -211,24 +226,30 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=youremail@domain.com&a
 https://sendgrid.com/api/filter.getsettings.xml?api_user=youremail@domain.com&api_key=secureSecret&name=twitter
 {% endcodeblock %}
 		<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <filter>
-    <field_name>field_value</field_name>
-    ...
+   <field_name>field_value</field_name>
+   ...
 </filter>
+
 {% endcodeblock %}
       <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error</message>
-  <message>... error messages ...</message>
+   <message>error</message>
+   <message>... error messages ...</message>
 </result>
+
 {% endcodeblock %}
 
 <h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:xml %}
-<filter></filter>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<filter/>
+
 {% endcodeblock %}
 
   </div>

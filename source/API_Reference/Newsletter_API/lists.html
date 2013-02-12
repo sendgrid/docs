@@ -54,16 +54,16 @@ http://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=SGus
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
     </div>
@@ -73,13 +73,20 @@ http://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=SGus
 http://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=SGusername&amp;api_key=SGpasword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>error: reason</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </result>
 </div>
@@ -121,16 +128,16 @@ http://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=tes
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
     </div>
@@ -140,13 +147,20 @@ http://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=tes
 http://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test567&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>error: reason</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </result>
 </div>
@@ -182,16 +196,18 @@ http://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=SGusern
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-[{"list": "test"}]
+{% codeblock lang:javascript %}[
+  {
+    "list": "test"
+  }
+]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
     </div>
@@ -201,13 +217,22 @@ http://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=SGusern
 http://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<lists><list><list>test</list></list></lists>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<lists>
+   <list>
+      <list>test</list>
+   </list>
+</lists>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>error: reason</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </result>
 </div>
@@ -243,16 +268,16 @@ http://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message": "success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{
-    "message": "error",
-    "errors": [
-        "...error messages..."
-    ]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
 }
 {% endcodeblock %}
     </div>
@@ -262,13 +287,20 @@ http://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=
 http://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=SGusername&amp;api_key=SGpassword
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>error: reason</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </result>
 </div>
