@@ -6,8 +6,8 @@ navigation:
    show: true
 ---
 <p>Allow customer subusers to manage their account from your website using an iframe to our site.</p>
-<a name="initialAPICall"></a>
-<h2>Initial API Call</h2>
+
+{% anchor Initial API Call %}
 <p>In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login your customer subuser.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -41,7 +41,12 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=secureSecret&method=geturl&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <params><params>al_username=username&al_subuser_name=example@example.com&al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<params>
+   <params>al_username=username=example@example.com=b478ab36ebc306990dd283b1c341898e</params>
+</params>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="call-json">
@@ -50,14 +55,15 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key=secureSecret&method=geturl&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"params":"al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+{% codeblock lang:javascript %}{
+  "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="iFrameUsage"></a>
-<h2>iFrame Usage</h2>
+
+{% anchor iFrame Usage %}
 <p>Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below.</p>
 {% codeblock %}
 <iframe src="https://sendgrid.com/account?al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"></iframe>

@@ -27,19 +27,19 @@ navigation:
 
 <blockquote><span class="label label-info">Info</span> Categories should be used to group messages together. If you need to attach unique data or identifiers to a message, use Unique Arguments instead.</blockquote>
 
-<h2>Example</h2>
+{% anchor Example %}
 <p>You can use SendGrid's <a href="{{ root_url }}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
 
-{% codeblock lang:javascript %}
-X-SMTPAPI: {"category": "Example Category"}
+{% codeblock lang:javascript %}{
+  "category": "Example Category"
+}
 {% endcodeblock %}
 <p>In this example, SendGrid would associate statistics for the email containing that header with the category <strong>Example Category</strong>.</p>
 
 <p>You can assign multiple categories per message, up to 10:</p>
 
-{% codeblock lang:javascript %}
-{"category":
-  [
+{% codeblock lang:javascript %}{
+  "category": [
     "dogs",
     "animals",
     "pets",

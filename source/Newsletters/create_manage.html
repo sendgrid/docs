@@ -6,16 +6,16 @@ navigation:
   show: true
 ---
 
-<h2>Create Newsletter</h2>
+{% anchor Create Newsletter %}
 
 <p>This section walks you through the four stages of configuring a newsletter. You will:</p>
 
 <ul>
-<li><a href="#step1">Setup</a></li>
-	<li><a href="#step2">Select Recipients</a></li>
-	<li><a href="#step3">Design</a></li>
-	<li><a href="#step4">Review &amp; Schedule</a></li>
-</ul><a name="step1"></a><h2>STEP 1: Setup</h2>
+<li>Setup</li>
+	<li>Select Recipients</li>
+	<li>Design</li>
+	<li>Review &amp; Schedule</li>
+</ul>{% anchor STEP 1: Setup %}
 <p>First define the name of the newsletter, what category or categories it will use for statistical purposes, and which identity you will use to send the newsletter.</p>
 
 <ul>
@@ -32,10 +32,10 @@ navigation:
 <blockquote>
 <span class="label label-info">Info</span> While it's up to you what criteria you will use to determine success, our personal favorite is Clicks. This speaks to how many people not only opened your newsletter, but were compelled enough by the content to click, as well.</blockquote>
 
-<a name="step2"></a><h2>STEP 2: Select Recipients</h2>
+{% anchor STEP 2: Select Recipients %}
 <p>Here you select who you want to receive your newsletter. You can either select a list of recipients you have already inserted into your account or create a new list.</p>
 
-<a name="step3"></a><h2>STEP 3: Design</h2>
+{% anchor STEP 3: Design %}
 <p>Text newsletter design is quite straightforward, but if you chose HTML there are some tips that will help you. The graphical editor is very capable, as you can see in the image below.</p>
 
 <p><img src="{{ root_url }}/images/newsletter_create_1.png" title="The WYSIWYG newsletter editor"></p>
@@ -92,9 +92,9 @@ navigation:
 <blockquote>
 <span class="label label-info">Info</span> Editing HTML source is easy. Just click on the Source Mode tab at the top of the editor. There are buttons that let you insert simple styling code as well as buttons that will insert code for links to viewing the message on the web, subscription management, and to add the Footer module.</blockquote>
 
-<a name="step4"></a><h2>STEP 4: Review &amp; Schedule</h2>
+{% anchor STEP 4: Review &amp; Schedule %}
 
-<p>Now that you're done with all of the other components of creating a Newsletter, you are ready to review everything and schedule it for sending. In a nutshell, which is precisely what this page is, you will see how many recipients have been selected and what split there is if you selected Split Testing. If you have selected a Split Test you will have the ability to determine if the winner is chosen "auto-magically" by different winning criteria or by manual selection. You can also choose when your winner will be sent after it's "auto-magically" chosen. You also have the ability to view a preview of your newsletter or the variations as well as links to the text versions and the ability to send a test to just about anyone you like. Pretty sweet huh?</p>
+<p>Now that you're done with all of the other components of creating a Newsletter, you are ready to review everything and schedule it for sending. In a nutshell, which is precisely what this page is, you will see how many recipients have been selected, what split there is if you selected Split Testing, a preview of your newsletter or variations as well as links to the text versions, and the ability to send a test to just about anyone you like.</p>
 
 <p>If all is good, then you are ready to schedule your newsletter. Your options for scheduling are:</p>
 
@@ -107,7 +107,7 @@ navigation:
 <strong>Save As Draft</strong> - Just like email, hold on to it and let it cool a bit before sending it out.</li>
 </ul><p>The only thing you have remaining to do is click the big blue Finish button!</p>
 
-<h2>Manage Newsletters</h2>
+{% anchor Manage Newsletters %}
 
 <h3>Overview</h3>
 
@@ -162,3 +162,6 @@ navigation:
 
 <h3>Pause/Resume/Stop Sending</h3>
 <p>Manages the newsletter sending status by pausing, resuming or even stopping the sending process.</p>
+
+<h3>Share</h3>
+<p>Share allows you to publish the newsletter title to Twitter and Facebook. The tool will pre-fill the status update with the newsletter email subject and a short URL for a webpage where we saved the newsletter content. All you need to do is Save, and all your friends and followers can see the Newsletter without receiving the email - by clicking the link.</p>

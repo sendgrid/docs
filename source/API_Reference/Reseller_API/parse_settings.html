@@ -5,8 +5,8 @@ title: Parse Settings
 navigation:
    show: true
 ---
-<a name="getCurrentSettings"></a>
-<h2>Get Current Settings</h2>
+
+{% anchor Get Current Settings %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -48,11 +48,22 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=parse&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<parse>
+   <entry>
+      <hostname>www.example.com</hostname>
+      <url>www.mydomain.com/parse.php</url>
+      <spam_check>1</spam_check>
+   </entry>
+</parse>
+
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock lang:xml %}
-<parse></parse>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<parse/>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -61,18 +72,28 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=get&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
+{% codeblock lang:javascript %}{
+  "parse": [
+    {
+      "hostname": "www.example.com",
+      "url": "www.mydomain.com/parse.php",
+      "spam_check": 1
+    }
+  ]
+}
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock lang:javascript %}
-"parse":[]
+{% codeblock lang:javascript %}{
+  "parse": [
+
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="createNewEntry"></a>
-<h2>Create New Entry</h2>
+
+{% anchor Create New Entry %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -126,14 +147,25 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="create-json">
@@ -142,18 +174,23 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="editEntry"></a>
-<h2>Edit Entry</h2>
+
+{% anchor Edit Entry %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -207,14 +244,25 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="edit-json">
@@ -223,18 +271,23 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="deleteEntry"></a>
-<h2>Delete Entry</h2>
+
+{% anchor Delete Entry %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -283,14 +336,25 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -299,11 +363,16 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 </div></div>

@@ -14,7 +14,7 @@ navigation:
 
 <hr/>
 
-<h2>URL Format</h2>
+{% anchor URL Format %}
 <p>The following is the syntax for making Newsletter API requests:</p>
 
 <code>
@@ -28,57 +28,66 @@ navigation:
 	
 </ul>
 <hr/>
-<a name="httpreturncodes"></a>
-<h2>HTTP Return codes</h2>
+
+{% anchor HTTP Return codes %}
 <ul>
 	<li><strong>2XX</strong> - The API call was successful.</li>
 	<li><strong>4XX</strong> - The API call had an error in the parameters. The error will be encoded in the body of the response.</li>
 	<li><strong>5XX</strong> - The API call was unsuccessful. You should retry later.</li>
 </ul>
-<a name="responses"></a>
-<h2>Responses</h2>
+
+{% anchor Responses %}
 <p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
-<a name="responseserror"></a>
-<h2>Errors</h2>
+
+{% anchor Errors %}
 <ul>
 	<li>XML
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
 </result>
+
 {% endcodeblock %}
 </li>
 	<li>JSON
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 </li>
 </ul>
 
-<a name="responsessuccess"></a>
+
 <h3>Success</h3>
 <ul>
 	<li>XML
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
 success
 </result>
+
 {% endcodeblock %}
 </li>
 	<li>JSON
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 </li>
 </ul>
 <hr/>
-<a name="authentication"></a>
-<h2>Authentication</h2>
+
+{% anchor Authentication %}
 <p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.</p>
 <ul>
 	<li><strong>api_user</strong> - This is the same credential used for your SMTP settings, and for logging into the website.</li>

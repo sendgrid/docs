@@ -5,8 +5,8 @@ title: Event Notification URL
 navigation:
    show: true
 ---
-<a name="retrieve"></a>
-<h2>Retrieve</h2>
+
+{% anchor Retrieve %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -50,8 +50,10 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}
-<url>http://www.SubUserPostUrlHere.com></url>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<url>http://www.SubUserPostUrlHere.com&gt;</url>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -60,14 +62,15 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=get&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"url":"http:\/\/www.SubUserPostUrlHere.com"}
+{% codeblock lang:javascript %}{
+  "url": "http://www.SubUserPostUrlHere.com"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="updateSetURL"></a>
-<h2>Update / Set URL</h2>
+
+{% anchor Update / Set URL %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -117,7 +120,12 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="set-json">
@@ -126,14 +134,15 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="delete"></a>
-<h2>Delete</h2>
+
+{% anchor Delete %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -177,7 +186,12 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventposturl
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -186,7 +200,8 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com&method=eventpostur
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 </div></div>

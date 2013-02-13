@@ -6,7 +6,7 @@ navigation:
    show: true
 ---
 These are actions that directly affect your customer. We provide access via XML and JSON.
-<h2>Create a Customer</h2>
+{% anchor Create a Customer %}
 <table class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
@@ -160,14 +160,25 @@ specify the first billing anniversary date</td>
 https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="create-json">
@@ -176,18 +187,23 @@ https://sendgrid.com/apiv2/reseller.add.xml?api_user=username&api_key=secureSecr
 https://sendgrid.com/apiv2/reseller.add.json?api_user=username&api_key=secureSecret&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="deleteCustomer"></a>
-<h2>Delete a Customer</h2>
+
+{% anchor Delete a Customer %}
 Remove a customer from your account. This is
 <strong>not</strong>
 the same as disabling a customer on our system. However, the removed
@@ -219,14 +235,25 @@ account.</td>
 https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&api_key=secureSecret&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="delete-json">
@@ -235,17 +262,22 @@ https://sendgrid.com/apiv2/reseller.delete.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.delete.json?api_user=username&api_key=secureSecret&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="retrieveCustomers"></a>
+
 <p>Retrieve Customers</p>
 Obtain a complete list of all customers.
 <table class="table table-bordered table-striped"><tbody>
@@ -348,9 +380,39 @@ currently active</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=ge
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
-      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
-      <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<users>
+   <user>
+      <username>user1</username>
+      <email>example1@example.com</email>
+      <active>true</active>
+      <first_name>john</first_name>
+      <last_name>doe</last_name>
+      <address>555 any street</address>
+      <city>any city</city>
+      <state>CA</state>
+      <zip>91234</zip>
+      <country>US</country>
+      <phone>555-555-5555</phone>
+      <website>example.com</website>
+   </user>
+   <user>
+      <username>user2</username>
+      <email>example2@example.com</email>
+      <active>false</active>
+      <first_name>jane</first_name>
+      <last_name>doe</last_name>
+      <address>555 any street</address>
+      <city>any city</city>
+      <state>CA</state>
+      <zip>91234</zip>
+      <country>US</country>
+      <phone>555-555-5555</phone>
+      <website>example.com</website>
+   </user>
+</users>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -359,18 +421,42 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=get
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555
-any street","city":"any
-city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555
-any street","city":"any
-city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+{% codeblock lang:javascript %}[
+  {
+    "username": "username",
+    "email": "example1@example.com",
+    "active": "true",
+    "first_name": "john",
+    "last_name": "doe",
+    "address": "555 any street",
+    "city": "any city",
+    "state": "CA",
+    "zip": "91234",
+    "country": "US",
+    "phone": "555-555-5555",
+    "website": "example.com"
+  },
+  {
+    "username": "username",
+    "email": "example2@example.com",
+    "active": "false",
+    "first_name": "jane",
+    "last_name": "doe",
+    "address": "555 any street",
+    "city": "any city",
+    "state": "CA",
+    "zip": "91234",
+    "country": "US",
+    "phone": "555-555-5555",
+    "website": "example.com"
+  }
+]
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="enableCustomer"></a>
-<h2>Enable a Customer</h2>
+
+{% anchor Enable a Customer %}
 Enable a customer so they may start sending out emails again. This call will not enable website access. To
 <a href="#enableWebsiteCustomer">enable website access</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -405,10 +491,20 @@ Enable a customer so they may start sending out emails again. This call will not
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="enable-json">
@@ -417,18 +513,20 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"User not found"
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="disableCustomer"></a>
-<h2>Disable a Customer</h2>
+
+{% anchor Disable a Customer %}
 This prevents them from sending out emails with SendGrid.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -462,10 +560,20 @@ This prevents them from sending out emails with SendGrid.
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="disable-json">
@@ -474,18 +582,20 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"User not found"
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="enableWebsiteCustomer"></a>
-<h2>Enable Website Access To A Customer</h2>
+
+{% anchor Enable Website Access To A Customer %}
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails. To
 <a href="#enableCustomer">enable a customer</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -522,10 +632,20 @@ access</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="website-json">
@@ -534,18 +654,20 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"User not found"
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="disableWebsiteCustomer"></a>
-<h2>Disable Website Access To A Customer</h2>
+
+{% anchor Disable Website Access To A Customer %}
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails. To
 <a href="#disableCustomer">disable a customer</a>.
 <table class="table table-bordered table-striped"><tbody>
@@ -582,10 +704,20 @@ website access</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=website_disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User not found</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User not found</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="unwebsite-json">
@@ -594,18 +726,20 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=website_disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"User not found"
+{% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="updateCustomerProfile"></a>
-<h2>Update Customer Profile</h2>
+
+{% anchor Update Customer Profile %}
 Allows you to update your customers profile information
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -694,14 +828,25 @@ to update profile information</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="update-json">
@@ -710,18 +855,23 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="updateCustomerPassword"></a>
-<h2>Update Customer Password</h2>
+
+{% anchor Update Customer Password %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -769,14 +919,25 @@ password</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="password-json">
@@ -785,18 +946,23 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="updateCustomerUsername"></a>
-<h2>Update Customer Username</h2>
+
+{% anchor Update Customer Username %}
 Note that your customer account username is used to login to our SMTP server
 <em>and</em>
 the website and changes take effect immediately.
@@ -857,14 +1023,25 @@ This update takes effect immediately</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="name-json">
@@ -873,18 +1050,23 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="updateCustomerEmailAddress"></a>
-<h2>Update Customer Email Address</h2>
+
+{% anchor Update Customer Email Address %}
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -935,14 +1117,25 @@ contacting customer. This update takes effect immediately</td>
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="email-json">
@@ -951,12 +1144,17 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 </div>
 </div>

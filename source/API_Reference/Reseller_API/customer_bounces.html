@@ -5,7 +5,7 @@ title: Customer Bounces
 navigation:
    show: true
 ---
-<h2>Retrieve Bounces</h2>
+{% anchor Retrieve Bounces %}
 <p>Note that you can use
   <em>either</em>
   the days parameter
@@ -60,7 +60,23 @@ navigation:
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=bounces&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:xml %}  <bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<bounces>
+   <bounce>
+      <email>email1@domain.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <created>2009-06-10 12:40:30</created>
+   </bounce>
+   <bounce>
+      <email>email2@domain2.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <created>2009-06-10 12:40:30</created>
+   </bounce>
+</bounces>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="get-json">
@@ -69,14 +85,26 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=bounces&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{% codeblock lang:javascript %}[
+  {
+    "email": "email1@domain.com",
+    "status": "5.1.1",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com",
+    "created": "2009-06-01 19:41:39"
+  },
+  {
+    "email": "email2@domain2.com",
+    "status": "5.1.1",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com",
+    "created": "2009-06-01 19:41:39"
+  }
+]
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="deleteBounces"></a>
-<h2>Delete Bounces</h2>
+
+{% anchor Delete Bounces %}
 <p>Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -126,10 +154,20 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureSecret&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>Email does not exist</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email does not exist</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane" id="delete-json">
@@ -138,12 +176,14 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secureSecret&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}{
+  "message": "Email does not exist"
+}
 {% endcodeblock %}
 </div>
 </div>

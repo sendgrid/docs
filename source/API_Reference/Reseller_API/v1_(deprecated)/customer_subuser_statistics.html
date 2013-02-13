@@ -5,8 +5,8 @@ title: Customer Subuser Statistics
 navigation:
    show: true
 ---
-<a name="retrieveStatistics"></a>
-<h2>Retrieve Customer Subuser Statistics</h2>
+
+{% anchor Retrieve Customer Subuser Statistics %}
 Note that you can use
 <em>either</em>
 the days parameter
@@ -64,8 +64,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
 {% endcodeblock %}
 <hr/>
-<a name="retrieveAggregates"></a>
-<h2>Retrieve Aggregates</h2>
+
+{% anchor Retrieve Aggregates %}
 Retrieve all-time totals for your customer subuser
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -104,8 +104,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
 {% endcodeblock %}
 <hr/>
-<a name="categoryList"></a>
-<h2>Category List</h2>
+
+{% anchor Category List %}
 Retrieve a list of all the categories used in your customer subusers account.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -146,8 +146,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 {"category":"categoryA","category":"categoryB","category":"categoryC"}
 {% endcodeblock %}
 <hr/>
-<a name="categoryStatistics"></a>
-<h2>Category Statistics</h2>
+
+{% anchor Category Statistics %}
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
 Note that you can use
