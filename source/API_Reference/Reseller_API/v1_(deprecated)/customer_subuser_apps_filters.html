@@ -5,8 +5,8 @@ title: Customer Subuser Apps
 navigation:
    show: true
 ---
-<a name="list"></a>
-<h2>List</h2>
+
+{% anchor List %}
 <p>List all of the available apps.</p>
 <p>Note: The
   <em>name</em>
@@ -53,8 +53,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
 <hr/>
-<a name="activateApp"></a>
-<h2>Activate App</h2>
+
+{% anchor Activate App %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -90,12 +90,13 @@ result><message>success</message></result>
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=activate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <hr/>
-<a name="deactivateApp"></a>
-<h2>Deactivate App</h2>
+
+{% anchor Deactivate App %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -131,12 +132,13 @@ result><message>success</message></result>
 https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_key=secureSecret&name=twitter&method=apps&task=deactivate&user=example@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <hr/>
-<a name="customizeApp"></a>
-<h2>Customize App</h2>
+
+{% anchor Customize App %}
 <p>These API calls require that settings are passed using POST.</p>
 <h3>XML Call</h3>
 {% codeblock %}
@@ -164,6 +166,7 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 "message":"success","settings":{"field_name":"field_value”}
+
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
@@ -172,8 +175,8 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 
 {% endcodeblock %}
 <hr/>
-<a name="getCurrentSettings"></a>
-<h2>Get Current Settings</h2>
+
+{% anchor Get Current Settings %}
 <h3>XML Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=username&api_key=secureSecret&name=twitter&task=getsettings&user=example@example.com&method=app
@@ -201,10 +204,15 @@ https://sendgrid.com/api/distributor.manageSubuser.json?api_user=username&api_ke
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}
 "message":"success","settings":{"field_name":"field_value”}
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>

@@ -10,8 +10,12 @@ navigation:
 
 <p>These arguments can be added using a JSON string like this:</p>
 
-{% codeblock lang:javascript %}
-{"unique_args": {"customerAccountNumber": "55555", "activationAttempt": "1"}}
+{% codeblock lang:javascript %}{
+  "unique_args": {
+    "customerAccountNumber": "55555",
+    "activationAttempt": "1"
+  }
+}
 {% endcodeblock %}
 
 <p>These arguments can then be seen in posts from the SendGrid Event API. The contents of one of these posts would look something like this:</p>

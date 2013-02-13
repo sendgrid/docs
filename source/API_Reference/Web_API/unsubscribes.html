@@ -8,8 +8,8 @@ navigation:
 
 <p>Retrieve, delete and add entries in the Unsubscribes list.</p>
 
-<a name="get"></a>
-<h2>get</h2>
+
+{% anchor get %}
 <p>Retrieve a list of Unsubscribes with addresses and optionally with dates.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -112,15 +112,18 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=youremail@domain.com&amp
 {% endcodeblock %}
 
     <h3>Response</h3>
-{% codeblock lang:javascript %}
-[{"email": "brandon.west@sendgrid.com", "created": "2012-09-06 14:03:18"}]
+{% codeblock lang:javascript %}[
+  {
+    "email": "brandon.west@sendgrid.com",
+    "created": "2012-09-06 14:03:18"
+  }
+]
 {% endcodeblock %}
 
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 {% codeblock lang:xml %}
-https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
 {% endcodeblock %}
 
 		<h3>Response</h3>
@@ -131,8 +134,8 @@ https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;
   </div>
 </div>
 
-<hr><a name="delete"></a>
-<h2>delete</h2>
+<hr>
+{% anchor delete %}
 <p>Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -182,12 +185,17 @@ https://sendgrid.com/api/unsubscribes.get.xml?api_user=youremail@domain.com&amp;
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
   </div>
@@ -208,18 +216,21 @@ https://sendgrid.com/api/unsubscribes.delete.xml?api_user=youremail@domain.com&a
 <h3>Response: Error</h3>
 
 @nodes
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
   Email does not exist
 @nodes
+</result>
+
 {% endcodeblock %}
 
   </result></result></result>
 </div>
 </div>
 
-<hr><a name="add"></a>
-<h2>add</h2>
+<hr>
+{% anchor add %}
 <p>Add email addresses to the Unsubscribe list.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -246,12 +257,17 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=youremail%40domain.com&a
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
   </div>
@@ -262,14 +278,20 @@ https://sendgrid.com/api/unsubscribes.add.xml?api_user=youremail%40domain.com&am
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}
-<result><message>success</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}
-<result><message>Email does not exist</message>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>Email does not exist</message>
 </result>
+
 {% endcodeblock %}
 
   </result></result>

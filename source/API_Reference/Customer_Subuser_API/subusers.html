@@ -7,11 +7,11 @@ navigation:
 ---
 
   <p>These are actions that directly affect your subuser. We provide access via XML and JSON.</p>
-<a name="createSubuser"></a>
+
   <blockquote><span class="label label-info">Info</span>
    In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</blockquote>
 
-  <h2>Create a Subuser</h2>
+  {% anchor Create a Subuser %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -121,16 +121,20 @@ navigation:
 https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="create-json">
@@ -139,17 +143,22 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecr
 https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}
-{"message":"success"}
+  {% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+  {% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="retrieveSubusers"></a>
-  <h2>Retrieve Subusers</h2>
+  <hr/>
+  {% anchor Retrieve Subusers %}
   Obtain a complete list of all subusers.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -239,37 +248,39 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecrett
 {% endcodeblock %}
   <h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <users>
-  <user>
-	<username>username</username>
-	<email>example1@example.com</email>
-	<active>true</active>
-	<first_name>john</first_name>
-	<last_name>doe</last_name>
-	<address>555 any street</address>
-	<city>any city</city>
-	<state>CA</state>
-	<zip>91234</zip>
-	<country>US</country>
-	<phone>555-555-5555</phone>
-	<website>example.com</website>
-  </user>
-  <user>
-	<username>username</username>
-	<email>example2@example.com</email>
-	<active>false</active>
-	<first_name>jane</first_name>
-	<last_name>doe</last_name>
-	<address>555 any street</address>
-	<city>any city</city>
-	<state>CA</state>
-	<zip>91234</zip>
-	<country>US</country>
-	<phone>555-555-5555</phone>
-	<website>example.com</website>
-  </user>
+   <user>
+      <username>username</username>
+      <email>example1@example.com</email>
+      <active>true</active>
+      <first_name>john</first_name>
+      <last_name>doe</last_name>
+      <address>555 any street</address>
+      <city>any city</city>
+      <state>CA</state>
+      <zip>91234</zip>
+      <country>US</country>
+      <phone>555-555-5555</phone>
+      <website>example.com</website>
+   </user>
+   <user>
+      <username>username</username>
+      <email>example2@example.com</email>
+      <active>false</active>
+      <first_name>jane</first_name>
+      <last_name>doe</last_name>
+      <address>555 any street</address>
+      <city>any city</city>
+      <state>CA</state>
+      <zip>91234</zip>
+      <country>US</country>
+      <phone>555-555-5555</phone>
+      <website>example.com</website>
+   </user>
 </users>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="get-json">
@@ -278,13 +289,41 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecrett
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:javascript %}
-{"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
+  {% codeblock lang:javascript %}[
+  {
+    "username": "username",
+    "email": "example1@example.com",
+    "active": "true",
+    "first_name": "john",
+    "last_name": "doe",
+    "address": "555 any street",
+    "city": "any city",
+    "state": "CA",
+    "zip": "91234",
+    "country": "US",
+    "phone": "555-555-5555",
+    "website": "example.com"
+  },
+  {
+    "username": "username",
+    "email": "example2@example.com",
+    "active": "false",
+    "first_name": "jane",
+    "last_name": "doe",
+    "address": "555 any street",
+    "city": "any city",
+    "state": "CA",
+    "zip": "91234",
+    "country": "US",
+    "phone": "555-555-5555",
+    "website": "example.com"
+  }
+]
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="enableSubuser"></a>
-  <h2>Enable a Subuser</h2>
+  <hr/>
+  {% anchor Enable a Subuser %}
   Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
   <table class="table table-bordered table-striped"><tbody>
@@ -312,16 +351,20 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="enable-json">
@@ -330,17 +373,19 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}
-{"message":"success"}
+  {% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}
-"message":"User not found"
+  {% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="disableSubuser"></a>
-  <h2>Disable a Subuser</h2>
+  <hr/>
+  {% anchor Disable a Subuser %}
   This prevents them from sending out emails with SendGrid.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -367,16 +412,20 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
 https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="disable-json">
@@ -389,13 +438,14 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}
-"message":"User not found"
+  {% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="enableWebsiteSubuser"></a>
-  <h2>Enable Website Access To A Subuser</h2>
+  <hr/>
+  {% anchor Enable Website Access To A Subuser %}
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails. 
 
   <table class="table table-bordered table-striped"><tbody>
@@ -423,16 +473,20 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
 https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
 </div>
   <div class="tab-pane active" id="enablewebsite-json">
@@ -445,13 +499,14 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}
-"message":"User not found"
+  {% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="disableWebsiteSubuser"></a>
-  <h2>Disable Website Access To A Subuser</h2>
+  <hr/>
+  {% anchor Disable Website Access To A Subuser %}
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails. 
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -478,16 +533,20 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
 https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
 </div>
   <div class="tab-pane active" id="disablewebsite-json">
@@ -500,13 +559,14 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}
-"message":"User not found"
+  {% codeblock lang:javascript %}{
+  "message": "User not found"
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserProfile"></a>
-  <h2>Update Subuser Profile</h2>
+  <hr/>
+  {% anchor Update Subuser Profile %}
   Allows you to update your subusers profile information
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -586,16 +646,20 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="updateprofile-json">
@@ -609,12 +673,17 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserPassword"></a>
-  <h2>Update Subuser Password</h2>
+  <hr/>
+  {% anchor Update Subuser Password %}
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -653,16 +722,20 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="updateSubuserPassword-json">
@@ -676,12 +749,17 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserUsername"></a>
-  <h2>Update Subuser Username</h2>
+  <hr/>
+  {% anchor Update Subuser Username %}
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -721,16 +799,20 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="updateSubuserUsername-json">
@@ -744,12 +826,17 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
   </div>
 </div>
-  <hr/><a name="updateSubuserEmailAddress"></a>
-  <h2>Update Subuser Email Address</h2>
+  <hr/>
+  {% anchor Update Subuser Email Address %}
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -789,16 +876,20 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
 https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>success</message>
+   <message>success</message>
 </result>
+
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
-  <message>error: reason</message>
+   <message>error: reason</message>
 </result>
+
 {% endcodeblock %}
     </div>
   <div class="tab-pane active" id="updateSubuserEmailAddress-json">
@@ -812,7 +903,12 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
 {% endcodeblock %}
   <h3>Response: Error</h3>
   {% codeblock %}
-{"message":"error","errors":[..."error messages"...]}
+{
+    "message": "error",
+    "errors": [
+        "...error messages..."
+    ]
+}
 {% endcodeblock %}
 </div>
 </div>

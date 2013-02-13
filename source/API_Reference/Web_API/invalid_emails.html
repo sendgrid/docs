@@ -8,7 +8,7 @@ navigation:
 
 <p>This endpoint allows you to retrieve and delete entries in the Invalid Emails list.</p>
 
-<h2>get</h2>
+{% anchor get %}
 
 <p>Retrieve a list of invalid emails with addresses and response codes, optionally with dates.</p>
 
@@ -119,18 +119,17 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
 
      <h3>Response</h3>
 
-{% codeblock lang:javascript %}
-[
-    {
-        "reason": "Known bad domain",
-        "created": "2011-06-06 16:11:57",
-        "email": "test@example.com"
-    },
-    {
-        "reason": "Invalid address",
-        "created": "2012-08-17 11:04:38",
-        "email": "brandon"
-    }
+{% codeblock lang:javascript %}[
+  {
+    "reason": "Known bad domain",
+    "created": "2011-06-06 16:11:57",
+    "email": "test@example.com"
+  },
+  {
+    "reason": "Invalid address",
+    "created": "2012-08-17 11:04:38",
+    "email": "brandon"
+  }
 ]
 {% endcodeblock %}
   </div>
@@ -141,19 +140,21 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <invalidemails>
-  <invalidemail>
-    <reason>Known bad domain</reason>
-    <created>2011-06-06 16:11:57</created>
-    <email>test@example.com</email>
-  </invalidemail>
-  <invalidemail>
-    <reason>Invalid address</reason>
-    <created>2012-08-17 11:04:38</created>
-    <email>brandon</email>
-  </invalidemail>
+   <invalidemail>
+      <reason>Known bad domain</reason>
+      <created>2011-06-06 16:11:57</created>
+      <email>test@example.com</email>
+   </invalidemail>
+   <invalidemail>
+      <reason>Invalid address</reason>
+      <created>2012-08-17 11:04:38</created>
+      <email>brandon</email>
+   </invalidemail>
 </invalidemails>
+
 {% endcodeblock %}
 
   </div>
@@ -161,8 +162,8 @@ https://sendgrid.com/api/invalidemails.get.xml?api_user=youremail@domain.com&api
 
 <hr/>
 
-<a name="delete"></a>
-<h2>delete</h2>
+
+{% anchor delete %}
 <p>Delete an address from the Invalid Email list.</p>
 
 <table class="table table-bordered table-striped">
@@ -195,12 +196,17 @@ https://sendgrid.com/api/invalidemails.delete.json?api_user=youremail@domain.com
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-{"message":"success"}
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-{"message":"error","errors":[..."error messages"...]}
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 
 
@@ -218,10 +224,13 @@ https://sendgrid.com/api/invalidemails.delete.xml?api_user=youremail@domain.com&
 {% endcodeblock %}
 
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
 <result>
   Email does not exist
 @nodes
+</result>
+
 {% endcodeblock %}
   </div>
 </div>

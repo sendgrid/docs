@@ -5,8 +5,8 @@ title: Customer Invalid Emails
 navigation:
    show: true
 ---
-<a name="retrieveInvalidEmails"></a>
-<h2>Retrieve Invalid Emails</h2>
+
+{% anchor Retrieve Invalid Emails %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -64,8 +64,8 @@ https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secur
 {"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 <hr/>
-<a name="deleteInvalidEmails"></a>
-<h2>Delete Invalid Emails</h2>
+
+{% anchor Delete Invalid Emails %}
 <p>Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -123,10 +123,12 @@ result><message>Email does not exist</message></result>
 https://sendgrid.com/api/distributor.manage.json?api_user=username&api_key=secureSecret&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"Email does not exist"
+{% codeblock lang:javascript %}{
+  "message": "Email does not exist"
+}
 {% endcodeblock %}

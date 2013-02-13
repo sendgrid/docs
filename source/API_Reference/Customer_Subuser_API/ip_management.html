@@ -42,9 +42,18 @@ navigation:
 	https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=all
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	{% codeblock lang:javascript %}
-	{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"}
-	{% endcodeblock %}
+	{% codeblock lang:javascript %}[
+  {
+    "ip": "255.255.255.250"
+  },
+  {
+    "ip": "255.255.255.251"
+  },
+  {
+    "ip": "255.255.255.252"
+  }
+]
+{% endcodeblock %}
 	</div>
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -52,13 +61,20 @@ navigation:
 https://sendgrid.com/apiv2/customer.ip.xml?api_user=username&api_key=secureSecret&list=all
 {% endcodeblock %}
   <h3>Response</h3>
-{% codeblock lang:xml %}    <ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip></ips>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ips>
+   <ip>255.255.255.250</ip>
+   <ip>255.255.255.251</ip>
+   <ip>255.255.255.252</ip>
+</ips>
+
 {% endcodeblock %}
     </div>
 
 </div>
-<hr/><a name="userUsage"></a>
-<h2>Subuser IP Usage</h2>
+<hr/>
+{% anchor Subuser IP Usage %}
 If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -88,10 +104,27 @@ If your account has more than one IP address, you can manage what IPs your subus
 https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=list&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <sendips><ocluster>o1.sendgrid.net</ocluster><ips><ip>255.255.255.250</ip><ip>255.255.255.251</ip><ip>255.255.255.252</ip><ip>255.255.255.253</ip><ip>255.255.255.254</ip></ips></sendips>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<sendips>
+   <ocluster>o1.sendgrid.net</ocluster>
+   <ips>
+      <ip>255.255.255.250</ip>
+      <ip>255.255.255.251</ip>
+      <ip>255.255.255.252</ip>
+      <ip>255.255.255.253</ip>
+      <ip>255.255.255.254</ip>
+   </ips>
+</sendips>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>User does not exist</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>User does not exist</message>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="usage-json">
@@ -100,18 +133,44 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=list&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"success":"success","outboundcluster":"o1.sendgrid.net","ips":[{"ip":"255.255.255.250"},{"ip":"255.255.255.251"},{"ip":"255.255.255.251"},{"ip":"255.255.255.252"},{"ip":"255.255.255.253"},{"ip":"255.255.255.254"}]
+{% codeblock lang:javascript %}{
+  "success": "success",
+  "outboundcluster": "o1.sendgrid.net",
+  "ips": [
+    {
+      "ip": "255.255.255.250"
+    },
+    {
+      "ip": "255.255.255.251"
+    },
+    {
+      "ip": "255.255.255.251"
+    },
+    {
+      "ip": "255.255.255.252"
+    },
+    {
+      "ip": "255.255.255.253"
+    },
+    {
+      "ip": "255.255.255.254"
+    }
+  ]
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"error":{"code":400,"message":"User does not exist"}
+{% codeblock lang:javascript %}{
+  "error": {
+    "code": 400,
+    "message": "User does not exist"
+  }
+}
 {% endcodeblock %}
   </div>
 </div>
 <hr/>
-<a name="userAssignment"></a>
-<h2>Subuser IP Assignment</h2>
+
+{% anchor Subuser IP Assignment %}
 You need to assign at least ONE IP to your subuser.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -154,14 +213,25 @@ You need to assign at least ONE IP to your subuser.
 https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:xml %}  <result><message>success</message></result>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:xml %}  <result><message>error</message><errors>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error</message>
+   <errors>
       ...
       <error>... error messages ...</error>
       ...
-    </errors></result>
+   </errors>
+</result>
+
 {% endcodeblock %}
   </div>
   <div class="tab-pane active" id="subuser-json">
@@ -170,12 +240,17 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=username&api_key=secureS
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=username&api_key=secureSecret&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
-"message":"success"
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}
-"message":"error","errors":[..."error messages"...]
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
 {% endcodeblock %}
 </div>
 </div>
