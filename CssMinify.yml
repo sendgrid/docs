@@ -1,6 +1,7 @@
 files: [
   'source/stylesheets/bootstrap.css',
   'source/stylesheets/style.css',
+  'source/stylesheets/icomoon.css',
   'source/stylesheets/sprites.css',
   'source/stylesheets/syntax.css'
 ]
