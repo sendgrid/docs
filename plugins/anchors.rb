@@ -17,7 +17,7 @@ module Jekyll
 
       #should refactor this to allow wrapping tag to be passed in
       output = "<h2 class=\"anchor-wrap\"><a name=\"#{safeContent}\" class=\"anchor\" href=\"##{safeContent}\">"
-      output += '<span class="anchor-icon"><i class="icon-share"></i></span></a>'
+      output += '<span class="anchor-icon"><i class="icon-link"></i></span></a>'
       output += content
       output += '</h2>'
 

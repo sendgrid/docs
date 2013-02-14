@@ -1,57 +1,145 @@
-<div id="footer">
-	<div class="container-fluid footer-links">
-	<div class="container">
-		<div class="row">
-			<div class="span2">
-				<h4>Sales</h4>
-				<a href="http://sendgrid.com/pricing.html">Pricing</a><br/>
-				<a href="http://sendgrid.com/features.html">Features</a>
-			</div>
-			<div class="span2">
-				<h4>Support</h4>
-				<a href="http://support.sendgrid.com/">Contact Support</a><br/>
-				<a href="{{ root_url }}/">Documentation</a><br/>
-				<a href="http://sendgrid.com/contact/reportSpam">Report Spam</a>
-			</div>
-			<div class="span2">
-				<h4>Community</h4>
-				<a href="http://twitter.com/sendgrid/">Twitter</a><br/>
-				<a href="http://community.sendgrid.com/">Forum</a>
-			</div>
-			<div class="span2">
-				<h4>Company</h4>
-				<a href="http://sendgrid.com/about.html">About</a><br/>
-				<a href="http://sendgrid.com/team.html">Our Team</a><br/>
-				<a href="http://sendgrid.com/jobs.html">Jobs</a><br/>
-				<a href="http://sendgrid.com/press.html">Press</a><br/>
-				<a href="http://sendgrid.com/contact.html">Contact Us</a>
-			</div>
-			<div class="span2">
-				<h4>Connect With Us!</h4>
-				<a href="http://blog.sendgrid.com/feed/"><span class="social-media-icon sprite-rss"></span></a> 
-		        <a href="http://twitter.com/SendGrid"><span class="social-media-icon sprite-twitter"></span></a> 
-		        <a href="http://www.facebook.com/SendGrid"><span class="social-media-icon sprite-facebook"></span></a>
-
-			</div>
-		</div>
-	</div>
-	</div>
-
-	<footer id="bottom-footer">
-	<div class="container">
-		<div class="row">
-			<div class="span5">
-				<p>Docs Version {{ site.version }} &nbsp;&nbsp; &copy; SendGrid {{ site.time | date: "%Y" }}</p>
-			</div>
-			<div class="span6">
-				<a href="http://sendgrid.com/tos.html">Terms of Service</a>
-				<a href="http://sendgrid.com/tos.html">Email Policy</a>
-				<a href="http://sendgrid.com/tos.html">Privacy Policy</a>
-			</div>
-			<div class="span1">
-				<p class="pull-right"><a href="#">&#8593; Top</a></p>
-			</div>
-		</div>
-	</div> <!-- /container -->
-	</footer>
+<div id='footer'>
+  <div id='footer-top'>
+    <div class='container'>
+      <div class='row'>
+        <div class='span2'>
+          <ul>
+            <li class='heading'>
+              Sales
+            </li>
+            <li>
+              <a href="http://sendgrid.com/pricing.html" id="footer-pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/solutions.html" id="footer-solutions">Solutions</a>
+            </li>
+          </ul>
+        </div>
+        <div class='span2'>
+          <ul>
+            <li class='heading'>
+              Support
+            </li>
+            <li>
+              <a href="http://support.sendgrid.com" id="footer-support">Contact Support</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/docs/" id="footer-docs">Documentation</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/report_spam.html" id="footer-report-spam">Report Spam</a>
+            </li>
+          </ul>
+        </div>
+        <div class='span2'>
+          <ul>
+            <li class='heading'>
+              Community
+            </li>
+            <li>
+              <a href="http://blog.sendgrid.com" id="footer-blog">Blog</a>
+            </li>
+            <li>
+              <a href="http://twitter.com/SendGrid" id="footer-twitter-left" target="_blank">Twitter</a>
+            </li>
+            <li>
+              <a href="http://github.com/sendgrid" id="footer-github">GitHub</a>
+            </li>
+            <li>
+              <a href="http://support.sendgrid.com/forums" id="footer-forum">Forum</a>
+            </li>
+          </ul>
+        </div>
+        <div class='span2'>
+          <ul>
+            <li class='heading'>
+              Company
+            </li>
+            <li>
+              <a href="http://sendgrid.com/about.html" id="footer-about">About</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/team.html" id="footer-team">Our Team</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/careers.html" id="footer-careers">Careers</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/contact.html" id="footer-contact-us">Contact Us</a>
+            </li>
+            <li>
+              <a href="http://community.sendgrid.com/sendgrid" id="footer-get-satisfaction">Get Satisfaction</a>
+            </li>
+            <li>
+              <a href="http://sendgrid.com/press.html" id="footer-press">Press</a>
+            </li>
+          </ul>
+        </div>
+        <div class='span2'>
+          <ul>
+            <li class='heading'>
+              Follow Us
+            </li>
+            <li>
+              <a href='http://twitter.com/sendgrid' id='footer-twitter' target='_blank'>
+                <i class='icon-twitter'></i>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href='http://us.linkedin.com/company/sendgrid' id='footer-linkedin' target='_blank'>
+                <i class='icon-linkedin'></i>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href='http://facebook.com/SendGrid' id='footer-facebook' target='_blank'>
+                <i class='icon-facebook'></i>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href='http://plus.google.com/114253033480473803566' id='footer-google-plus' target='_blank'>
+                <i class='icon-google-plus'></i>
+                Google+
+              </a>
+            </li>
+            <li>
+              <a href='http://feeds.feedburner.com/sendgrid/CDXr' id='footer-rss' target='_blank'>
+                <i class='icon-rss'></i>
+                Feed
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class='span12'>
+          <ul>
+            <li>
+              Docs Version {{ site.version }} 
+            </li>
+            <li>
+               &copy; SendGrid {{ site.time | date: "%Y" }}          </li>
+            <li>/</li>
+            <li>
+              <a href="http://sendgrid.com/tos.html" id="footer-tos">Terms of Service</a>
+            </li>
+            <li>/</li>
+            <li>
+              <a href="http://sendgrid.com/email_policy.html" id="footer-email-policy">Email Policy</a>
+            </li>
+            <li>/</li>
+            <li>
+              <a href="http://sendgrid.com/privacy.html" id="footer-privacy-policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>			
+      </div>
+    </div>
+  </div> <!-- /container -->
 </div>
