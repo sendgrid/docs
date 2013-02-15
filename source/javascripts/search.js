@@ -22,7 +22,7 @@
 			$.jStorage.set('search_query', query);
 			
 			//this is kinda hacky but let's infer the root from the home button
-			var root = $('.menu-item > a')[0].href.replace('/index.html','');
+			var root = $('.nav-link > a')[0].href.replace('/index.html','');
 			
 			document.location.href = root + "/search.html";
 			return false;
