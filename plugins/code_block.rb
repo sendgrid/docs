@@ -43,6 +43,7 @@
 #
 require './plugins/pygments_code'
 require './plugins/raw'
+require 'digest/md5'
 
 module Jekyll
 
@@ -80,7 +81,16 @@ module Jekyll
     def render(context)
       output = super
       code = super
-      source = "<figure class='code'>"
+
+      digest = Digest::MD5.hexdigest code
+
+      source = '<figure class="code-buttons">'
+      source += '<ul class="nav nav-tabs">'
+      source += '<li class="pull-right">'
+      source += "<a class='copycode btn-mini' id='copy_#{digest}'>"
+      source += '<i class="icon-file"></i> Copy</a></li></ul></figure>'
+      source += "<textarea id='code_#{digest}' class='hidden'>#{code}</textarea>";
+      source += "<figure class='code'>"
       source += @caption if @caption
       if @filetype
         source += " #{highlight(code, @filetype)}</figure>"
