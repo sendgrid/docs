@@ -53,6 +53,16 @@ blockquote { background-color: #FFFFED; }
   margin-bottom: -19px;
 }
 
+.code-buttons > .nav-tabs > li > .copycode {
+  padding-top:2px;
+  padding-bottom:2px;
+  border:1px solid #EEE;
+}
+
+.code-buttons > .nav-tabs > li {
+  background-color:white;
+} 
+
 .hover { 
   border-color: #eee #eee #ddd;
   text-decoration: none;
