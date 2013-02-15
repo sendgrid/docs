@@ -48,6 +48,17 @@ hr.docs-separator {
 
 blockquote { background-color: #FFFFED; }
 
+.code-buttons {
+  margin-top:0;
+  margin-bottom: -19px;
+}
+
+.hover { 
+  border-color: #eee #eee #ddd;
+  text-decoration: none;
+  background-color: #eee;
+}
+
 .tab-content {
 	padding: 10px;
 	border: 1px solid #DDD;
