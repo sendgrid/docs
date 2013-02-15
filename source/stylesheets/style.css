@@ -19,11 +19,17 @@ color: black;
 line-height: 26px;
 }
 
-.anchor-icon i{
-  display: none;
+.anchor-icon {
+  display: inline-block;
+  width:14px;
+}
+
+.anchor-icon i {
   left: -3px;
   position: relative;
 }
+
+.icon-link { display:none; }
 
 #logo {
 	margin-top:-10px;
