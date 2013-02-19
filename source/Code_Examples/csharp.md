@@ -12,7 +12,7 @@ We'll start with a simple example using the built-in .NET SMTP libraries to send
 
 If you are using ASP.NET, you can specify SMTP settings in web.config.
 
-```xml
+{% codeblock lang:xml %}
 <system.net>
   <mailSettings>
     <smtp from="test@domain.com">
@@ -20,14 +20,14 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
     </smtp>
   </mailSettings>
 </system.net>
-```
+{% endcodeblock %}
 
 This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. 
 This example uses:
 [.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
 
 
-```csharp
+{% codeblock lang:csharp %}
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -72,15 +72,15 @@ namespace SmtpMail
     }
   }
 }
-```
+{% endcodeblock %}
 
 {% anchor Using the SendGrid C# Library %}
 
 To use SendGrid in your C# project, you can either <a href="https://github.com/sendgrid/sendgrid-csharp.git">download the SendGrid C# .NET libraries directly from our Github repository</a> or, if you have the NuGet package manager installed, you can grab them automatically.
 
-```
+{% codeblock %}
 PM> Install-Package SendGrid 
-```
+{% endcodeblock %}
 
 The SendGrid library depends on [RestSharp](https://github.com/restsharp/RestSharp). NuGet will handle this dependency automatically, otherwise you will need to add it manually. 
 
@@ -88,12 +88,12 @@ Once you have the SendGrid libraries properly referenced in your project, you ca
 For a sample implementation, check the [Example](https://github.com/sendgrid/sendgrid-csharp/tree/master/SendGrid/Example) folder.
 
 Add the following namespaces to use the library:
-```csharp
+{% codeblock lang:csharp %}
 using System.Net;
 using System.Net.Mail;
 using SendGridMail;
 using SendGridMail.Transport;
-```
+{% endcodeblock %}
 
 ##How to: Create an email
 
@@ -101,7 +101,7 @@ Use the static **SendGrid.GetInstance** method to create an email message that i
 
 The following example demonstrates how to create an email object and populate it:
 
-```csharp
+{% codeblock lang:csharp %}
 // Create the email object first, then add the properties.
 var myMessage = SendGrid.GetInstance();
 
@@ -123,7 +123,7 @@ myMessage.Subject = "Testing the SendGrid Library";
 //Add the HTML and Text bodies
 myMessage.Html = "<p>Hello World!</p>";
 myMessage.Text = "Hello World plain text!";
-```
+{% endcodeblock %}
 
 {% anchor How to: Send an Email %}
 
@@ -131,18 +131,18 @@ After creating an email message, you can send it using either SMTP or the Web AP
 
 Sending email with either protocol requires that you supply your SendGrid account credentials (username and password). The following code demonstrates how to wrap your credentials in a **NetworkCredential** object:
 
-```csharp
+{% codeblock lang:csharp %}
 // Create network credentials to access your SendGrid account.
 var username = "your_sendgrid_username";
 var pswd = "your_sendgrid_password";
 
 var credentials = new NetworkCredential(username, pswd);
-```
+{% endcodeblock %}
 To send an email message, use the **Deliver** method on either the **SMTP** class, which uses the SMTP protocol, or the **Web** transport class, which calls the SendGrid Web API. The following examples show how to send a message using both SMTP and the Web API.
 
 
 ###SMTP
-```csharp
+{% codeblock lang:csharp %}
 // Create the email object first, then add the properties.
 SendGrid myMessage = SendGrid.GetInstance();
 myMessage.AddTo("anna@example.com");
@@ -158,10 +158,10 @@ var transportSMTP = SMTP.GetInstance(credentials);
 
 // Send the email.
 transportSMTP.Deliver(myMessage);
-```
+{% endcodeblock %}
 
 ###Web API
-```csharp
+{% codeblock lang:csharp %}
 // Create the email object first, then add the properties.
 SendGrid myMessage = SendGrid.GenerateInstance();
 myMessage.AddTo("anna@example.com");
@@ -177,7 +177,7 @@ var transportWeb = Web.GetInstance(credentials);
 
 // Send the email.
 transportWeb.Deliver(myMessage);
-```
+{% endcodeblock %}
 
 ###Adding Recipients to the X-SMTPAPI Header
 
@@ -185,7 +185,7 @@ If you want to use the X-SMTPAPI header to specify recipients so that
 each recipient gets an individually message without the other recipients
 being shown, use the message.Header.AddTo() method as shown below:
 
-```csharp
+{% codeblock lang:csharp %}
 var recipients = new List<string>();
 
 //You could loop through your dataset here and add each recipient, up to 1000 recipients per message
@@ -197,13 +197,13 @@ myMessage.Header.AddTo(recipients);
 
 //Even though we added recipients to the Header, the envelope must also have a valid recipient
 myMessage.AddTo("brandon@example.com");
-```
+{% endcodeblock %}
 
 {% anchor How to: Add an Attachment %}
 
 Attachments can be added to a message by calling the **AddAttachment** method and specifying the name and path of the file you want to attach, or by passing a stream. You can include multiple attachments by calling this method once for each file you wish to attach. The following example demonstrates adding an attachment to a message:
 
-```csharp
+{% codeblock lang:csharp %}
 SendGrid myMessage = SendGrid.GenerateInstance();
 myMessage.AddTo("anna@example.com");
 myMessage.From = new MailAddress("john@example.com", "John Smith");
@@ -211,7 +211,7 @@ myMessage.Subject = "Testing the SendGrid Library";
 myMessage.Text = "Hello World!";
 
 myMessage.AddAttachment(@"C:\file1.txt");
-```
+{% endcodeblock %}
 
 ##How to: Use filters to enable footers, tracking, and analytics
 
@@ -222,7 +222,7 @@ Filters can be applied to **SendGrid** email messages using methods implemented 
 The following examples demonstrate the footer and click tracking filters:
 
 ###Footer
-```csharp
+{% codeblock lang:csharp %}
 // Create the email object first, then add the properties.
 SendGrid myMessage = SendGrid.GetInstance();
 myMessage.AddTo("anna@example.com");
@@ -233,10 +233,10 @@ myMessage.Text = "Hello World!";
 myMessage.InitializeFilters();
 // Add a footer to the message.
 myMessage.EnableFooter("PLAIN TEXT FOOTER", "<p><em>HTML FOOTER</em></p>");
-```
+{% endcodeblock %}
 
 ###Click tracking
-```csharp
+{% codeblock lang:csharp %}
 // Create the email object first, then add the properties.
 SendGrid myMessage = SendGrid.GetInstance();
 myMessage.AddTo("anna@example.com");
@@ -249,4 +249,4 @@ myMessage.InitializeFilters();
 // true indicates that links in plain text portions of the email 
 // should also be overwritten for link tracking purposes. 
 myMessage.EnableClickTracking(true);
-```
+{% endcodeblock %}
