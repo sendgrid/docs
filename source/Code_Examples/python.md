@@ -6,17 +6,16 @@ navigation:
   show: true
 ---
 
-<p>We'll start with a simple example using the built-in Python SMTP libraries to send a message. 
-	After that example, you can find more complete instructions that use the SendGrid Python library.</p>
+We'll start with a simple example using the built-in Python SMTP libraries to send a message. 
+After that example, you can find more complete instructions that use the SendGrid Python library.
 
-<h3>Using Python's SMTP Library</h3>
+{% anchor Using Python's SMTP Library %}
 
-<p>This Python program will build a multi-part MIME email and send it through SendGrid. Python has built in libraries to send and receive emails. This example uses:
-</p>
-<ul>
-	<li><a href="http://docs.python.org/library/smtplib.html">smtplib</a></li>
-	<li><a href="http://docs.python.org/library/email.html#module-email">email</a></li>
-</ul>
+This Python program will build a multi-part MIME email and send it through SendGrid. 
+Python has built in libraries to send and receive emails. This example uses:
+
+* [smtplib](http://docs.python.org/library/smtplib.html)
+* [email](http://docs.python.org/library/email.html#module-email)
 
 {% codeblock lang:python %}
 #! /usr/bin/python
@@ -46,9 +45,9 @@ html = """\n
 <html>
   <head></head>
   <body>
-    <p>Hi!<br>
+    Hi!<br>
        How are you?<br>
-    </p>
+    
   </body>
 </html>
 """
@@ -77,48 +76,50 @@ s.sendmail(fromEmail, toEmail, msg.as_string())
  
 s.quit()
 {% endcodeblock %}
-<hr/>
+***
 
 {% anchor Using the SendGrid Python Library %}
 
-<p>This library allows you to quickly and easily send emails through SendGrid using Python.</p>
+This library allows you to quickly and easily send emails through SendGrid using Python.
 
-<h3>License</h3>
+###License
 
-<p>Licensed under the MIT License.</p>
+Licensed under the MIT License.
 
-<h3>Install</h3>
+###Install
 
-<p>Using Github:</p>
+Using Github:
 
 {% codeblock %}
 git clone git@github.com:sendgrid/sendgrid-python.git
 {% endcodeblock %}
 
-<p>Using PyPI:</p>
+Using PyPI:
 
 {% codeblock %}
 easy_install sendgrid
 {% endcodeblock %}
 
-<h3>SendGrid APIs</h3>
+###SendGrid APIs
 
-<p>SendGrid provides two methods of sending email: the Web API, and SMTP API. SendGrid recommends using the SMTP API for sending emails, but the Web API has less communication overhead. For an explanation of the benefits of each, refer to http://docs.sendgrid.com/documentation/get-started/integrate/examples/smtp-vs-rest/.</p>
+SendGrid provides two methods of sending email: the Web API, and SMTP
+API. SendGrid recommends using the SMTP API for sending emails, but the
+Web API has less communication overhead. Read more about [SMTP vs Web
+API]({{ root_url }}/Integrate/index.html).
 
-<p>This library implements a common interface to make it very easy to use either API.</p>
+This library implements a common interface to make it very easy to use either API.
 
-<h3>Mail Pre-Usage</h3>
+###Mail Pre-Usage
 
-<p>Before we begin using the library, its important to understand a few things about the library architecture:</p>
+Before we begin using the library, its important to understand a few things about the library architecture:
 
-<ul>
-<li>Sending an email is as simple as :
-<ol><li>Creating a SendGrid Instance</li>
-<li>Creating a SendGrid Mail object, and setting its data</li>
-<li>Sending the mail using either SMTP API or Web API</li></ol></li>
-</ul>
+Sending an email is as simple as :
+* Creating a SendGrid Instance
+* Creating a SendGrid Mail object, and setting its data
+* Sending the mail using either SMTP API or Web API
 
-<h3>Mail Usage</h3>
+
+###Mail Usage
 
 {% codeblock lang:python %}
 import sendgrid
@@ -128,7 +129,7 @@ s = sendgrid.Sendgrid('username', 'password', secure=True)
 
 # make a message object
 message = sendgrid.Message("from@mydomain.com", "message subject", "plaintext message body",
-    "<p>HTML message body</p>")
+    "HTML message body")
 # add a recipient
 message.add_to("someone@example.com", "John Doe")
 
@@ -136,40 +137,40 @@ message.add_to("someone@example.com", "John Doe")
 s.web.send(message)
 {% endcodeblock %}
 
-<p>Or change the last line to use the SMTP API instead:</p>
+Or change the last line to use the SMTP API instead:
 
-{% codeblock lang:python %}</p>
+{% codeblock lang:python %}
 # use the SMTP API to send your message
 s.smtp.send(message)
 {% endcodeblock %}
 
-<p>To add a 'name' to the From address, you can pass the first parameter to sendgrid.Message() as a tuple:</p>
+To add a 'name' to the From address, you can pass the first parameter to sendgrid.Message() as a tuple:
 {% codeblock lang:python %}
 message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject", "plaintext body",
-    "<p>HTML body</p>")
+    "HTML body")
 {% endcodeblock %}
 
-<p>To add a Reply-To address, you can call the message.setreplyto() method:</p>
+To add a Reply-To address, you can call the message.setreplyto() method:
 {% codeblock lang:python %}
 message = sendgrid.Message(("from@mydomain.com","My Domain"), "message subject", "plaintext body",
-    "<p>HTML body</p>")
+    "HTML body")
 message.setreplyto("reply@mydomain.com")
 {% endcodeblock %}
-<p>Note: Reply-To requires v0.1.3 or higher</p>
+Note: Reply-To requires v0.1.3 or higher
 
-<h3>Adding Recipients</h3>
+###Adding Recipients
 
-<p>Using the message.addto() method, you can add recipient email address (optionally with names), but you can also add CC/BCC recipient addresses (without names) using message.add_cc() and message.add_bcc().</p>
+Using the message.addto() method, you can add recipient email address (optionally with names), but you can also add CC/BCC recipient addresses (without names) using message.add_cc() and message.add_bcc().
 
-<p>Note: Only the SMTP API supports CC at this time, though we have code and hooks in place for the Web API implementation of this library for future use.</p>
+Note: Only the SMTP API supports CC at this time, though we have code and hooks in place for the Web API implementation of this library for future use.
 
-<p>Both the Web API and SMTP API support BCC.</p>
+Both the Web API and SMTP API support BCC.
 
-<p>The message.add_cc() and message.add_bcc() calls support passing a single address, or a list of addresses, as shown in the examples below.</p>
+The message.add_cc() and message.add_bcc() calls support passing a single address, or a list of addresses, as shown in the examples below.
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "message subject", "plaintext message body",
-    "<p>HTML message body</p>")
+    "HTML message body")
 
 # add a To: recipient with a name
 message.add_to("someone1@example.com", "John Doe")
@@ -203,67 +204,71 @@ s.smtp.send(message)
 s.web.send(message)
 {% endcodeblock %}
 
-<p>Note: Using CC/BCC with SMTP API requires v0.1.3 or higher</p>
+Note: Using CC/BCC with SMTP API requires v0.1.3 or higher
 
-<h3>Using Attachments</h3>
+###Using Attachments
 
-<p>Attaching files to your message uses the message.add_attachment() method. This method takes two parameters, the intended name of the attachment you want your recipients to see, and the full file system path to the file. Note: File attachments are limited to 7 MB per file, and your total message size must be under 20MB.</p>
+Attaching files to your message uses the message.add_attachment() method. This method takes two parameters, the intended name of the attachment you want your recipients to see, and the full file system path to the file. Note: File attachments are limited to 7 MB per file, and your total message size must be under 20MB.
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
 message.add_attachment("output_filename.doc", "/path/to/input_filename.doc")
 {% endcodeblock %}
 
-<p>You can chain several file attachments together, provided you follow the restrictions of 7MB per file and a total size of 20MB or less per message.</p>
+You can chain several file attachments together, provided you follow the restrictions of 7MB per file and a total size of 20MB or less per message.
 
 {% codeblock lang:python %}
 message.add_attachment("output_file1.txt", "/path/to/file1.txt").add_attachment("output_file2.txt", "/path/to/file2.txt")
 {% endcodeblock %}
 
-<p>A common problem with file attachments is that the second parameter does not exist as a file, in which case the library will attach a 0-byte blank file. Here's a simple check to assist you:</p>
+A common problem with file attachments is that the second parameter does not exist as a file, in which case the library will attach a 0-byte blank file. Here's a simple check to assist you:
 
 {% codeblock lang:python %}
 import sendgrid
 import os
 
 s = sendgrid.Sendgrid('username', 'password', secure=True)
-message = sendgrid.Message("from@mydomain.com", "message subject", "plaintext message body", "<p>HTML message body</p>")
+message = sendgrid.Message("from@mydomain.com", "message subject", "plaintext message body", "HTML message body")
 message.add_to("someone@example.com", "John Doe")
 if os.path.isfile("/path/to/file1.txt"):
     message.add_attachment("file.txt", "/path/to/file1.txt")
 s.web.send(message)
 {% endcodeblock %}
 
-<p>An optional third parameter can be passed to the message.add_attachment() call which lets you specify a Content-ID header for each file. The Content-ID is used to reference attached files (typically images) within the HTML message. For example:</p>
+An optional third parameter can be passed to the message.add_attachment() call which lets you specify a Content-ID header for each file. The Content-ID is used to reference attached files (typically images) within the HTML message. For example:
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "message subject",
     "I have attached my picture, I hope you like it",
-    "<p>Here is my inline picture<br><img src=\"cid:picture1\"><br>I hope you like it.</p>")
+    "Here is my inline picture<br><img src=\"cid:picture1\"><br>I hope you like it.")
 message.add_to("someone@example.com", "John Doe")
 
 message.add_attachment("my_picture.png", "/path/to/my_picture.png", "picture1")
 s.web.send(message)
 {% endcodeblock %}
 
-<h3>Using Categories</h3>
+###Using Categories
 
-<p>You can mark messages with optional categories to give better visibility to email statistics (opens, clicks, etc.). You can add up to 10 categories per email message. You can read more about Categories here: http://docs.sendgrid.com/documentation/delivery-metrics/categories/</p>
+You can mark messages with optional categories to give better
+visibility to email statistics (opens, clicks, etc.). You can add up to
+10 categories per email message. Read more about [Categories]({{ root_url }}//Delivery_Metrics/categories.html).
 
-<p>To add categories to your message, use the message.add_category() method and pass a list of one or more category names. SendGrid will begin tracking statistics with these category names if the category name is new, or aggregate statistics for existing category names.</p>
+To add categories to your message, use the message.add_category() method and pass a list of one or more category names. SendGrid will begin tracking statistics with these category names if the category name is new, or aggregate statistics for existing category names.
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
 message.add_category(["Category 1", "Category 2"])
 {% endcodeblock %}
 
-<h3>Using Unique Arguments</h3>
+###Using Unique Arguments
 
-<p>Unique Arguments are used for tracking purposes on the message, and
+Unique Arguments are used for tracking purposes on the message, and
 can be seen in the Email Activity screen on your account dashboard or
 through the Event API. Use the message.add_unique_argument() method,
 which takes two parameters, a key and a value. To pass multiple
-keys/values, use message.set_unique_arguments() (note the plural method name) and pass a dictionary of key/value pairs. More information can be found here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/unique-arguments/</p>
+keys/values, use message.set_unique_arguments() (note the plural method
+name) and pass a dictionary of key/value pairs. More about [Unique
+Arguments]({{ root_url }}/API_Reference/SMTP_API/unique_arguments.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -271,7 +276,7 @@ message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Htm
 message.add_unique_argument("Customer", "Someone")
 {% endcodeblock %}
 
-<p>Alternately, you can pass a dict parameter and add multiple arguments using message.add_unique_arguments() like this:</p>
+Alternately, you can pass a dict parameter and add multiple arguments using message.add_unique_arguments() like this:
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -279,9 +284,13 @@ message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Htm
 message.set_unique_arguments({"customerAccountNumber": "55555", "activationAttempt": "1"})
 {% endcodeblock %}
 
-<h3>Using Substitutions</h3>
+###Using Substitutions
 
-<p>SendGrid also allows you to send multi-recipient messages with unique information per recipient. This is commonly used for sending unique URLs or codes to a list of recipients in a single batch. You simply expand the data you pass to the message.add_to() method like the example below. You can read more about Substitutions here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/substitution-tags/</p>
+SendGrid also allows you to send multi-recipient messages with unique
+information per recipient. This is commonly used for sending unique URLs
+or codes to a list of recipients in a single batch. You simply expand
+the data you pass to the message.add_to() method like the example below.
+Read more about [Substitutions]({{ root_url }}/API_Reference/SMTP_API/substitution_tags.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "Hello %name%, your code is %code%", "<b>Hello %name%, your code is %code%</b>")
@@ -293,9 +302,13 @@ message.add_to(
 )
 {% endcodeblock %}
 
-<h3>Using Sections</h3>
+###Using Sections
 
-<p>Used in conjunction with Substitutions, Sections can be used to further customize messages for the end users, and acts like a second tier of substitution data. You can use message.set_section() to add a single section, or a pluralized message.set_sections() method to add several sections. You can read more about using Sections here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/section-tags/</p>
+Used in conjunction with Substitutions, Sections can be used to
+further customize messages for the end users, and acts like a second
+tier of substitution data. You can use message.set_section() to add a
+single section, or a pluralized message.set_sections() method to add
+several sections. More about [Sections]({{ root_url }}/API_Reference/SMTP_API/section_tags.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "Hello %name%, you work at %place%",
@@ -309,22 +322,22 @@ message.add_to(
 ).set_sections({"%office%": "an office", "%home%": "your house"})
 {% endcodeblock %}
 
-<h3>Using Custom Headers</h3>
+###Using Custom Headers
 
-<p>Custom SMTP headers can be added as necessary using the message.add_header() method.</p>
+Custom SMTP headers can be added as necessary using the message.add_header() method.
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
 message.add_header("X-Mailer", "MyApp")
 {% endcodeblock %}
 
-<h3>Using Filter Settings</h3>
+###Using Filter Settings
 
-<p>Filter Settings are used to enable and disable apps, and to pass parameters to those apps. You can read more here: http://docs.sendgrid.com/documentation/api/smtp-api/filter-settings/
-Here's an example of passing content to the 'footer' app:</p>
+[Filter Settings]({{ root_url }}/API_Reference/SMTP_API/apps.html) are used to enable and disable apps, and to pass
+parameters to those apps.Here's an example of passing content to the 'footer' app:
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
 message.add_filter_setting("footer", "text/plain", "Here is a plain text footer")
-message.add_filter_setting("footer", "text/html", "<p style='color:red;'>Here is an HTML footer</p>")
+message.add_filter_setting("footer", "text/html", "<p style='color:red;'>Here is an HTML footer")
 {% endcodeblock %}

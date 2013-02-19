@@ -9,7 +9,7 @@ navigation:
 This example uses cURL with PHP through our web API to send an email. We
 recommend using the [SendGrid PHP Library]({{ root_url }}/Code_Examples/php.html) if possible.
 
-```php
+{% codeblock lang:php %}
 <?php $url = 'http://sendgrid.com/';
 $user = 'USERNAME';
 $pass = 'PASSWORD'; 
@@ -43,12 +43,12 @@ curl_close($session);
  
 // print everything out
 print_r($response);
-```
+{% endcodeblock %}
 
 ##An Email Sent Using the SMTPAPI Header
 
 This example takes the previous example a step further by adding our SMTPAPI header to set a category and send out to multiple recipients.  The category is called test_category, and the email will go out to both example1@sendgrid.com and example2@sendgrid.com.  The normal to address, example3@sendgrid.com, will not receive an email.
-```php
+{% codeblock lang:php %}
 <?php 
 $url = 'http://sendgrid.com/';
 $user = 'USERNAME';
@@ -94,13 +94,13 @@ curl_close($session);
 // print everything out
 print_r($response);
 
-```
+{% endcodeblock %}
 
 ##An Email Sent Including a File Attachment
 
 This example adds the additional attachment parameter to attach a file called myfile.  This example assumes the file is in the same directory as your code otherwise you need to specify the full path of the file in the $filePath variable.
 
-```php
+{% codeblock lang:php %}
 
 <?php 
 $url = 'http://sendgrid.com/';
@@ -145,4 +145,4 @@ curl_close($session);
 // print everything out
 print_r($response);
 
-```
+{% endcodeblock %}
