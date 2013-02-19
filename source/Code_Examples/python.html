@@ -259,7 +259,11 @@ message.add_category(["Category 1", "Category 2"])
 
 <h3>Using Unique Arguments</h3>
 
-<p>Unique Arguments are used for tracking purposes on the message, and can be seen in the Email Activity screen on your account dashboard or through the Event API. Use the message.add_unique_argument() method, which takes two parameters, a key and a value. To pass multiple keys/values, use message.add_unique_arguments() (note the plural method name) and pass a dictionary of key/value pairs. More information can be found here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/unique-arguments/</p>
+<p>Unique Arguments are used for tracking purposes on the message, and
+can be seen in the Email Activity screen on your account dashboard or
+through the Event API. Use the message.add_unique_argument() method,
+which takes two parameters, a key and a value. To pass multiple
+keys/values, use message.set_unique_arguments() (note the plural method name) and pass a dictionary of key/value pairs. More information can be found here: http://docs.sendgrid.com/documentation/api/smtp-api/developers-guide/unique-arguments/</p>
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -272,7 +276,7 @@ message.add_unique_argument("Customer", "Someone")
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
 # set multiple unique arguments for a message
-message.add_unique_arguments({"customerAccountNumber": "55555", "activationAttempt": "1"})
+message.set_unique_arguments({"customerAccountNumber": "55555", "activationAttempt": "1"})
 {% endcodeblock %}
 
 <h3>Using Substitutions</h3>
