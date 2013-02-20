@@ -34,6 +34,10 @@ navigation:
 <p>When writing a message, there is a dropdown beneath the Subject field, where you can define the outgoing server you wish to use. This way, you can send individual messages to your regular SMTP, and the messages you need to send through SendGrid can go through us. Please note that when you select this, it will be remembered until you change the selection.</p>
 <p><img src="{{ root_url }}/images/apple_mail_4.png" alt="The dropdown menu to select the SMTP server to use for this send." title="SMTP server dropdown" width="396" height="263" /></p>
 
-<blockquote><span class="label label-info">Info</span> Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail.</blockquote>
+{% info %}
+Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail.
+{% endinfo %}
 
-<blockquote><span class="label label-info">Info</span> Mail sometimes attaches images in a way that in compatible with other email readers, but this is <a href="http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/">correctible</a>.</blockquote>
+{% info %}
+Mail sometimes attaches images in a way that in compatible with other email readers, but this is <a href="http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/">correctible</a>.
+{% endinfo %}

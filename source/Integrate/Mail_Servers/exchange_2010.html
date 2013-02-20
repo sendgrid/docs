@@ -8,9 +8,13 @@ navigation:
 
 <p>If your organization is using Microsoft's Exchange 2010 for email services, this document outlines the basics required in order to use SendGrid for SMTP. This requires the configuration of a send connector in the Exchange Management Console.</p>
 
-<blockquote><span class="label label-warning">Warning</span> This documentation assumes that you already have a working installation of Exchange 2010 that is configured for client access and is able to send messages to the public internet. <strong>If you do not configure this connector correctly it may result in the unintended delivery of messages through your SendGrid account, resulting in the consumption of account credits.</strong></blockquote>
+{% warning %}
+This documentation assumes that you already have a working installation of Exchange 2010 that is configured for client access and is able to send messages to the public internet. <strong>If you do not configure this connector correctly it may result in the unintended delivery of messages through your SendGrid account, resulting in the consumption of account credits.</strong>
+{% endwarning %}
 
-<blockquote><span class="label label-info">Info</span> <a href="http://technet.microsoft.com/en-us/library/aa998662.aspx" target="_blank">For more information regarding Send Connectors, check out this swank TechNet documentation on the subject</a>.</blockquote>
+{% info %}
+<a href="http://technet.microsoft.com/en-us/library/aa998662.aspx" target="_blank">For more information regarding Send Connectors, check out this swank TechNet documentation on the subject</a>.
+{% endinfo %}
 
 <p>The  configuration of a new send connector is straight forward. It is the associated configurations that you may require in order to properly control access to the connector that may be complicated. Let's start with just sending email through SendGrid:</p>
 
@@ -20,7 +24,9 @@ navigation:
 	<li>Roll open the <strong>Organization Configuration</strong> list and select <strong>Hub Transport</strong>.</li>
 	<li>Click on <strong>New Send Connector</strong> in the Actions sidebar.</li>
 
-<blockquote><span class="label label-info">Info</span> By default, Exchange comes configured on installation to have a generic Send Connector called Default. This is configured to provide SMTP services to route messages to the internet. Its Address Space is notated as generic in the form of an asterisk "*".</blockquote>
+{% info %}
+By default, Exchange comes configured on installation to have a generic Send Connector called Default. This is configured to provide SMTP services to route messages to the internet. Its Address Space is notated as generic in the form of an asterisk "*".
+{% endinfo %}
 
 	<li>Name the Send Connector whatever you like and select Internet for the Intended Use pull-down. This allows for the integration with an authenticated SmartHost and adds the default send permissions required by Exchange 2010 to route messages through an external host that is not a part of the domain forest.</li>
 	<li>Click <strong>Next</strong>.</li>

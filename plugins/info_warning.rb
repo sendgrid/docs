@@ -2,12 +2,12 @@ module Jekyll
   class InfoBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
       super
-      @markup = markup
     end
 
     def render(context)
+      contents = super
       source = '<blockquote><span class="label label-info">Info</span> '
-      source += @markup
+      source += contents
       source += '</blockquote>'
       
       source
@@ -17,12 +17,12 @@ module Jekyll
   class WarningBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
       super
-      @markup = markup
     end
 
     def render(context)
+      contents = super
       source = '<blockquote><span class="label label-warning">Warning</span> '
-      source += @markup
+      source += contents
       source += '</blockquote>'
 
       source

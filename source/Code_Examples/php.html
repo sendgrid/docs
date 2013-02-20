@@ -86,7 +86,9 @@ web->
 
 <h3>Using Categories</h3>
 <p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name.</p>
-<blockquote><span class="label label-info">Info</span> There is a maximum of 10 categories per email.</blockquote>
+{% info %}
+There is a maximum of 10 categories per email.
+{% endinfo %}
 {% codeblock lang:php %}
 <?php
 $mail = new SendGrid\Mail();
@@ -101,7 +103,9 @@ $mail->
 <h3>Using Attachments</h3>
 <p>Attachments are currently file based only, with future plans for an in memory implementation as well.
 </p>
-<blockquote><span class="label label-info">Info</span> File attachments are limited to 7 MB per file.</blockquote>
+{% info %}
+File attachments are limited to 7 MB per file.
+{% endinfo %}
 
 {% codeblock lang:php %}
 <?php
