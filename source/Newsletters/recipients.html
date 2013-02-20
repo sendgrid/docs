@@ -23,6 +23,7 @@ name,email
 "SG Support","support@sendgrid.com"
 "Sales Team","sales@sendgrid.com"
 {% endcodeblock %}
+<p> Sendgrid supports Unicode (UTF-8), ASCII, and extended ASCII characters. When importing your list into Sendgrid, make sure that the characters are all encoded as UTF-8 in order to prevent syntax errors from occurring.</p>
 
 <h4>Add Recipients Manually</h4>
 <p>Manual additions can be done following the same guidelines as the "Upload List" above. You need to fill the "Name" and "Email" columns and define extra columns manually if necessary. You can also click "Add Rows" and "Add Columns" in order to expand your manually generated list as needed. Click "Save" to save the recipients.</p>
@@ -88,7 +89,7 @@ This lets you update your list by adding bulk contacts (using the same steps as 
 <p>This page shows you delivery stats for this list, by default, this displays stats for all newsletters sent to this list. You can view, print, or download this information to excel. You can also select subsets of stats for this list, i.e. stats for just one newsletter sent to this list.</p>
 
 <h3>Download to Excel</h3>
-<p>Allows you to export the stats into an XLS file which you can save on your local machine.</p>
+<p>Allows you to export the stats into an XLS file which you can save locally.</p>
 
 <h3>Print View</h3>
 <p>Displays the newsletters graph and tabular analytics in a convenient printable format.</p>
@@ -114,12 +115,13 @@ This lets you update your list by adding bulk contacts (using the same steps as 
 	<li>Spam Reports</li>
 </ul>
 
-<p>The default selection is "Unsubscribe". In order to view other types of recipients, you may select the desired type and click on "View".</p>
+<p>The default category is "Unsubscribe". In order to view other unsubscribe categories you can use the drop down menu to select other categories.</p>
 
-<p>For the "Unsubscribed Emails" category you may take the following actions:</p>
+<p>You can take the following actions depending on which category you want to make changes to:</p>
 <ul>
-	<li>Resubscribe (you may now send Newsletters to these addresses again)</li>
-	<li>Delete</li> (permanently remove the entries from the list).
+	<li>Resubscribe (you can select which addresses to resubscribe to your list).</li>
+	<li>Resubscribe All (you can resubscribe all the emails to a list by a category).
+	<li>Upload (you can upload a new list of resubscribes or unsubscribes to a your list).</li>
 </ul>
 
 <h3>Subscription Widget</h3>
