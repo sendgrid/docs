@@ -1,32 +1,34 @@
 module Jekyll
-  class InfoTag < Liquid::Tag
+  class InfoBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      @markup = markup
       super
+      @markup = markup
     end
 
     def render(context)
-      output = super
       source = '<blockquote><span class="label label-info">Info</span> '
       source += @markup
       source += '</blockquote>'
+      
+      source
     end
   end
 
-  class WarningTag < Liquid::Tag
+  class WarningBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      @markup = markup
       super
+      @markup = markup
     end
 
     def render(context)
-      output = super
       source = '<blockquote><span class="label label-warning">Warning</span> '
       source += @markup
       source += '</blockquote>'
+
+      source
     end
   end
 end
 
-Liquid::Template.register_tag('warning', Jekyll::WarningTag)
-Liquid::Template.register_tag('info', Jekyll::InfoTag)
+Liquid::Template.register_tag('warning', Jekyll::WarningBlock)
+Liquid::Template.register_tag('info', Jekyll::InfoBlock)
