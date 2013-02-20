@@ -12,7 +12,7 @@
 #     <p>Wheeee!</p>
 #     <footer>
 #     <strong>Bobby Willis</strong><cite><a href="http://google.com/search?q=pants">The Search For Bobby's Pants</a>
-#   </blockquote>
+#   %}
 #
 require './plugins/titlecase.rb'
 
@@ -71,7 +71,7 @@ module Jekyll
       else
         "#{quote}<footer>#{author}</footer>"
       end
-      "<blockquote>#{blockquote}</blockquote>"
+      "<blockquote>#{blockquote}%}"
     end
 
     def paragraphize(input)

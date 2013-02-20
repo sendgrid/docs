@@ -314,7 +314,9 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
 
 
  {% anchor setUsername %} 
-<blockquote><span class="label label-warning">Warning</span> Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.</blockquote>
+{% warning %}
+Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
+{% endwarning %}
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -400,7 +402,9 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.co
 
 {% anchor setEmail %}
 
-<blockquote><span class="label label-info">Info</span> Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.</blockquote>
+{% info %}
+Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.
+{% endinfo %}
 
 <table class="table table-bordered table-striped">
   <tbody>

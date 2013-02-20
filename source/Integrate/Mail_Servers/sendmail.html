@@ -6,7 +6,9 @@ navigation:
   show: true
 ---
 
-<blockquote><span class="label label-warning">Warning</span> Sendmail requires libsasl in order to properly send authentication requests to SendGrid servers. The saslauthd server daemon is not required unless you plan to receive authentication requests to the same server. <a href="http://www.sendmail.com/sm/open_source/tips/compiling_sendmail/#SASL">For more information on configuring sendmail for SASL support, check the official documentation</a>.</blockquote>
+{% warning %}
+Sendmail requires libsasl in order to properly send authentication requests to SendGrid servers. The saslauthd server daemon is not required unless you plan to receive authentication requests to the same server. <a href="http://www.sendmail.com/sm/open_source/tips/compiling_sendmail/#SASL">For more information on configuring sendmail for SASL support, check the official documentation</a>.
+{% endwarning %}
 
 <p>Set the authorization credentials in <strong>/etc/mail/access</strong></p>
 {% codeblock lang:bash %}
