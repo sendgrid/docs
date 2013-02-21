@@ -9,7 +9,9 @@ navigation:
 We'll start with a simple example using the built-in Python SMTP libraries to send a message. 
 After that example, you can find more complete instructions that use the SendGrid Python library.
 
-{% anchor Using Python's SMTP Library %}
+{% anchor h2 %}
+Using Python's SMTP Library 
+{% endanchor %}
 
 This Python program will build a multi-part MIME email and send it through SendGrid. 
 Python has built in libraries to send and receive emails. This example uses:
@@ -78,7 +80,9 @@ s.quit()
 {% endcodeblock %}
 ***
 
-{% anchor Using the SendGrid Python Library %}
+{% anchor h2 %}
+Using the SendGrid Python Library 
+{% endanchor %}
 
 This library allows you to quickly and easily send emails through SendGrid using Python.
 

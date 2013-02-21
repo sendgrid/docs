@@ -6,7 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor What is a Reconfirmation Campaign? %}
+{% anchor h2 %}
+What is a Reconfirmation Campaign? 
+{% endanchor %}
 
 In order to maximize your email deliverability it is important to keep
 your address list current and clean. A reconfirmation email, otherwise
@@ -15,7 +17,9 @@ your business (which can increase your inbound marketing), effectively
 cleans your lists with minimal impact to your deliverability, and
 prevents inadvertently spamming your clients.
 
-{% anchor Why Reconfirm? %}
+{% anchor h2 %}
+Why Reconfirm? 
+{% endanchor %}
 
 As you opt-in your recipients, the email addresses provided to you
 initially may become obsolete. These addresses might become abandoned
@@ -32,7 +36,9 @@ These emails remind your recipients of your services they once opted
 in, and politely ask for the recipient's permission to continue sending 
 emails. 
 
-{% anchor How to Reconfirm %}
+{% anchor h2 %}
+How to Reconfirm 
+{% endanchor %}
 
 Send an email with two links: one link to re-opt in the recipient, 
 and the other link to opt-out the recipient. If they do not 
@@ -55,7 +61,9 @@ unengaged recipients to mark your emails as spam. Email service
 providers discourage this type of sending because of these results. 
 Keep in mind, the older the list, the bigger the headache it will be to clean.
 
-{% anchor How Often Should We Reconfirm? %}
+{% anchor h2 %}
+How Often Should We Reconfirm? 
+{% endanchor %}
 
 We recommend sending re opt-in messages to recipients if you haven't 
 corresponded with or otherwise interacted with via email in over **3 
