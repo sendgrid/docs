@@ -18,6 +18,7 @@ module Jekyll
       create_storage_dir()
       load_last_timestamp()
       
+      @run = config['indextank']
       @excludes = config['indextank_excludes'] || []
 
       api = IndexTank::Client.new(config['indextank_api_url'])
@@ -25,9 +26,10 @@ module Jekyll
     end
 
     # Index all pages except pages matching any value in config['indextank_excludes']
-    # The main content from each page is extracted and indexed at indextank.com
+    # The main content from each page is extracted and indexed at indexden.com
     # The doc_id of each indextank document will be the absolute url to the resource without domain name 
     def generate(site)
+      return if @run != true
       puts 'Indexing pages...'
     
       # gather pages and posts

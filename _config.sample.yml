@@ -66,6 +66,7 @@ page_asides: [asides/page_navigation.html]
 # ----------------------- #
 
 # indextank settings
+indextank: false
 indextank_index: docs_dev #docs
 indextank_api_url: http://:hebusehyrara@buzebe.api.indexden.com
 
