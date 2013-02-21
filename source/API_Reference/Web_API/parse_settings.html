@@ -12,10 +12,9 @@ get
 {% endanchor %}
 <p>Pull down the settings already configured for parsing incoming email.</p>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
@@ -74,10 +73,9 @@ set
 {% endanchor %}
 <p>Specify the hostname and url for parsing incoming emails.</p>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs set %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
@@ -140,10 +138,9 @@ Edit Entry
 {% endanchor %}
 <p>Edit your existing settings for parsing incoming emails.</p>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs edit %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
@@ -205,10 +202,9 @@ Delete Entry
 {% endanchor %}
 <p>Delete the existing settings for parsing incoming emails.</p>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs activate %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>

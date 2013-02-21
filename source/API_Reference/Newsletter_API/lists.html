@@ -45,10 +45,9 @@ add
 </pre>[<em>columnname</em>] will be the replacement tag.
       </td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs add %}
+<div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -121,10 +120,9 @@ edit
       <td>None</td>
       <td>Specify the new name for the Recipient List.</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs edit %}
+<div class="tab-content">
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -191,10 +189,9 @@ get
       <td>Check for this particular list. (To list all Recipient Lists on your account
       exclude this parameter)</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs get %}
+<div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -265,10 +262,9 @@ delete
       <td>Must be an existing Recipient List.</td>
       <td>Remove this Recipient List.</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs delete %}
+<div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
 {% codeblock %}

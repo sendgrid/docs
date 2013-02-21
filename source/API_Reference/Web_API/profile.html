@@ -11,10 +11,9 @@ navigation:
 <h3>There are no extra parameters required to view your profile information.</h3>
 
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
@@ -160,10 +159,9 @@ set
    </tbody>
  </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs set %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
@@ -258,10 +256,9 @@ setPassword
   </table>
 </body>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs reset %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
@@ -350,10 +347,9 @@ Please note, your account username is used to login to our SMTP server and the w
    </tbody>
  </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#setusername-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#setusername-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs setusername %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="setusername-json">
      <h3>Call</h3>
@@ -439,10 +435,9 @@ Please note, we send out a confirmation email to the new email account in order 
   </tbody>
 </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#setemail-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#setemail-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs setemail %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="setemail-json">
      <h3>Call</h3>

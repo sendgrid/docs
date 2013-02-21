@@ -35,10 +35,9 @@ List
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs list %}
+
 <div class="tab-content">
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -102,10 +101,9 @@ Activate App
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs activate %}
+
 <div class="tab-content">
   <div class="tab-pane" id="activate-xml">
      <h3>Call</h3>
@@ -160,10 +158,9 @@ Deactivate App
 		your account</td>
     <td>The customer subuser who we will update</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs deactivate %}
+
 <div class="tab-content">
   <div class="tab-pane" id="deactivate-xml">
      <h3>Call</h3>
@@ -197,10 +194,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 Customize App 
 {% endanchor %}
 <p>These API calls require that settings are passed using POST.</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#customize-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#customize-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs customize %}
+
 <div class="tab-content">
   <div class="tab-pane" id="customize-xml">
      <h3>Call</h3>
@@ -253,10 +249,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#settings-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#settings-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs settings %}
+
 <div class="tab-content">
   <div class="tab-pane" id="settings-xml">
      <h3>Call</h3>
