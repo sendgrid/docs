@@ -4,7 +4,8 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 ## Setup
 
-* Clone the repo. Run <code>bundle install</code>.
+* Clone the repo. Run `>bundle install`.
+* Run `rake check_dependencies:development` and make sure you've got everything.
 * Copy _config.sample.yml to _config.yml
 * Set your root (if you're running locally it'll just be /) in _config.yml
 * Run rake preview
@@ -51,6 +52,9 @@ Pages have a block of YAML at the top that sets a few options. They are pretty s
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
 ## JS and CSS, etc
+Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:
+> You need Java installed and available on your PATH. During gem installation, Juicer will download and install YUI Compressor, Closure Compiler, JsLint and Rhino for you.
+
 JavaScript and CSS are minified and combined using Juicer. The files to be packaged and their orders are specified in <code>JsMinify.yml</code> and <code>CssMinify.yml</code>. Image files referenced in CSS files are embedded as data-uri information, assuming they are not too large. 
 
 ## License
