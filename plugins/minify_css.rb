@@ -59,7 +59,9 @@ module Jekyll
       css_files = css_files.join(' ')
       juice_cmd = "juicer merge -f #{css_files} -o #{min_file} -d #{source} "
       puts juice_cmd
-      system(juice_cmd)
+      if system(juice_cmd) == false 
+        raise 'Juicer failed while minifying CSS without images embedded.'
+      end
       
       #let's open that file and replace all the paths so they're relative to site.root
       contents = File.read(min_file)
@@ -70,8 +72,10 @@ module Jekyll
       
       juice_cmd = "juicer merge -f #{css_files} -o #{embed_file} -d #{source} --embed-images data_uri"
       puts juice_cmd
-      system(juice_cmd)
-      
+      if system(juice_cmd) == false 
+        raise 'Juicer failed while minifying CSS with images embedded.'
+      end
+
       #better do it for the embed version as well for files that didn't embed due to size, etc
       contents = File.read(embed_file)
       replaced = contents.gsub(/url\('\//, "url('" + site.config["root"])
