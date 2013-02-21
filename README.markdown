@@ -4,7 +4,7 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 ## Setup
 
-* Clone the repo. Run `>bundle install`.
+* Clone the repo. Run `bundle install`.
 * Run `rake check_dependencies:development` and make sure you've got everything.
 * Copy _config.sample.yml to _config.yml
 * Set your root (if you're running locally it'll just be /) in _config.yml
