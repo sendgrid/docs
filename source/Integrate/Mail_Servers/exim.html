@@ -6,8 +6,9 @@ navigation:
   show: true
 ---
 
-<blockquote>
-<span class="label label-warning">Warning</span> Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release. %}
+{% warning %}
+ Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release. 
+{% endwarning %{
 
 <p>
 The following configuration file, which can be found at <strong>/etc/exim4/update-exim4.conf.conf</strong>, was pulled from Ubuntu Server 10.4 and is for example purposes only:
@@ -49,7 +50,9 @@ MAIN_TLS_ENABLE = 1
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
 
-{% anchor cPanel %}
+{% anchor h2 %}
+cPanel 
+{% endanchor %}
 <p>If you are using cPanel with Exim and want to relay your email through SendGrid, go to <strong>Main > Service Configuration > Exim Configuration Editor</strong>, click on the Advanced Editor button, and enter the following:</p>
 
 {% codeblock lang:bash %}

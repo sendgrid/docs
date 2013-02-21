@@ -6,13 +6,19 @@ navigation:
   show: true
 ---
 
-{% anchor Create Recipients %}
+{% anchor h2 %}
+Create Recipients 
+{% endanchor %}
 
-<h3>Step 1 — Create New List</h3>
+{% anchor h3 %}
+Step 1 — Create New List
+{% endanchor %}
 
 <p>You will need to decide on a name for the list in order to identify it later. To create the list, click on "Continue".</p>
 
-<h3>Step 2 — Add Recipients</h3>
+{% anchor h3 %}
+Step 2 — Add Recipients
+{% endanchor %}
 
 <p>Here you will add recipients to your list. You can choose one of three following methods:</p>
 <h4>Upload List</h4>
@@ -39,13 +45,19 @@ You must include a connection protocol in the URL i.e. http:// or ftp://
 Note: you need to click the "Check" link to see the preview of the list and re-arrange columns
 {% endinfo %}
 
-<h3>Step 3 — Verify New List</h3>
+{% anchor h3 %}
+Step 3 — Verify New List
+{% endanchor %}
 
 <p>Here you can see email addresses uploaded from the previous step and you can batch-delete the ones you don't need.
 Verify - will just save the list and redirect to My Recipient Lists.</p>
 
-{% anchor Manage Recipients %}
-<h3>Overview</h3>
+{% anchor h2 %}
+Manage Recipients 
+{% endanchor %}
+{% anchor h3 %}
+Overview
+{% endanchor %}
 <p>Here you can see your previously created recipient lists with the following information:</p>
 <ul>
 	<li>List name</li>
@@ -56,13 +68,19 @@ Verify - will just save the list and redirect to My Recipient Lists.</p>
 
 <p>You can filter the recipient lists by name, using the search form at the top of the page.</p>
 
-<h3>Edit List</h3>
+{% anchor h3 %}
+Edit List
+{% endanchor %}
 <p>Here you can see all the contacts in your recipient list and manage them (delete entries, delete groups of entries, or edit values of entries).</p>
 
-<h3>Update List</h3>
+{% anchor h3 %}
+Update List
+{% endanchor %}
 This lets you update your list by adding bulk contacts (using the same steps as creating a new list).
 
-<h3>Batch Actions</h3>
+{% anchor h3 %}
+Batch Actions
+{% endanchor %}
 <p>The available batch actions for a list are:</p>
 <ul>
 	<li>Copy emails from the current list to a selected list</li>
@@ -91,13 +109,19 @@ This lets you update your list by adding bulk contacts (using the same steps as 
 If you try to copy or move emails that already exist at the target destination, this operation will fail for those emails.
 {% endinfo %}
 
-<h3>Stats</h3>
+{% anchor h3 %}
+Stats
+{% endanchor %}
 <p>This page shows you delivery stats for this list, by default, this displays stats for all newsletters sent to this list. You can view, print, or download this information to excel. You can also select subsets of stats for this list, i.e. stats for just one newsletter sent to this list.</p>
 
-<h3>Download to Excel</h3>
+{% anchor h3 %}
+Download to Excel
+{% endanchor %}
 <p>Allows you to export the stats into an XLS file which you can save locally.</p>
 
-<h3>Print View</h3>
+{% anchor h3 %}
+Print View
+{% endanchor %}
 <p>Displays the newsletters graph and tabular analytics in a convenient printable format.</p>
 
 <p>Export</p>
@@ -111,7 +135,9 @@ If you try to copy or move emails that already exist at the target destination, 
 	<li>Spam Reports</li>
 </ul>
 
-<h3>Manage Unsubscribes</h3>
+{% anchor h3 %}
+Manage Unsubscribes
+{% endanchor %}
 <p>In this page you may see various types of recipients:</p>
 <ul>
 	<li>Bounced Emails</li>
@@ -130,13 +156,17 @@ If you try to copy or move emails that already exist at the target destination, 
 	<li>Upload (you can upload a new list of resubscribes or unsubscribes to a your list).</li>
 </ul>
 
-<h3>Subscription Widget</h3>
+{% anchor h3 %}
+Subscription Widget
+{% endanchor %}
 <li>This form enables your visitors to subscribe to your newsletter directly from your website.</li>
 
 <h4>Generate Subscription Widget embedded code</h4>
 <p>On the “Manage Recipients Lists” page, you can click on the “Subscription Widget” link under a certain list. This will open a pop-up where you will have to input the domain where the widget will be used. The domain is mandatory because it will be used to validate the request for adding the recipient into the SendGrid database. Once the domain is filled in, you can click on Generate Widget Code button.</p>
 
-<h3>Use the embedded code</h3>
+{% anchor h3 %}
+Use the embedded code
+{% endanchor %}
 Once the embedded code is generated, you may use it in your website. This JavaScript code will generate a basic subscription form which can be styled using CSS. The following classes are available for customization:
 <ul>
 	<li>SG_widget_form_label - for input labels</li>

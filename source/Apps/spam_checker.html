@@ -13,7 +13,9 @@ navigation:
 <p>We use SpamAssassin to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value you wish. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
 </p>
 
-{% anchor Settings %}
+{% anchor h2 %}
+Settings 
+{% endanchor %}
 <table class="table table-bordered table-striped">
 <tr>
 <th>Name</th>
@@ -32,7 +34,9 @@ navigation:
 </tr>
 </table><p>The HTTP POST request that you receive at the designated URL will contain parameters with details about the spam checker event. If the URL is not specified, this HTTP POST request will simply not occur.</p> 
 
-{% anchor Parameters: %}
+{% anchor h2 %}
+Parameters: 
+{% endanchor %}
 <table class="table table-bordered table-striped">
 <tr>
 <th>Name</th>
@@ -46,15 +50,21 @@ navigation:
 <td>report</td>
 <td>The detailed SpamAssassin report describing why the email was designated as spam.</td>
 </tr>
-</table>{% anchor Example POST: %}
+</table>{% anchor h2 %}
+Example POST: 
+{% endanchor %}
 
-<h3>Headers</h3>
+{% anchor h3 %}
+Headers
+{% endanchor %}
 {% codeblock %}
 Content-Type: multipart/form-data; boundary=xYzZY 
 User-Agent: SendGrid 1.0 
 Version: HTTP/1.1 
 {% endcodeblock %}
-<h3>Parameters</h3>
+{% anchor h3 %}
+Parameters
+{% endanchor %}
 {% codeblock %}
 email: Date: Tue, 12 June 2012 11:59:34 PST From: Hip Recall Claim Center <hiprecallclaimcenter> Subject: Thousands of Hip Implants Recalled Due to Failure! To: Undisclosed Recipient <mail> X-BID: 11117965 22049 MIME-Version: 1.0 Content-Type: text/html Content-Transfer-Encoding: 7bit Message-ID:  <center> <p>Please click "Not Spam" above if delivered to spam folder</p> <br><br><div align="center"> <a href="http://xgwi112oswingv1_(deprecated).v1_(deprecated)com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9MSZybj1jdXBp"> Hip Implants Recalled Due to Failure, Info and Compensation Here!...Click Here<br><img border="0" src="http://xgwi112oswingv1_(deprecated).v1_(deprecated)com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9YSZybj1taXh1d2V6YQ"></a> <br><a href="http://xgwi112oswingv1_(deprecated).v1_(deprecated)com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9MiZybj13YWo"> <img border="0" src="http://xgwi112oswing.com/?dWlkPTEwMDAxJmNpZD0yMjA0OSZsaWQ9YiZybj13dWs"></a> <br>
 </div> </center> 
