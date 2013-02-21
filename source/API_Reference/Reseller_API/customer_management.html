@@ -151,10 +151,9 @@ can use is 3/28/11)</td>
 is different from today (or when you execute this API call), you can
 specify the first billing anniversary date</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs create %}
+
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
@@ -228,10 +227,9 @@ This is the same thing as closing out a customers account at the end of their bi
 account.</td>
       <td>The customers username you wish to delete.</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -373,10 +371,9 @@ currently active</td>
         <em>profile</em>
       </td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -486,10 +483,9 @@ Enable a customer so they may start sending out emails again. This call will not
       </td>
       <td>The customer you are planning to enabling</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#enable-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#enable-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs enable %}
+
 <div class="tab-content">
   <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
@@ -557,10 +553,9 @@ This prevents them from sending out emails with SendGrid.
       </td>
       <td>The customer you are planning to disabling</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#disable-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#disable-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs disable %}
+
 <div class="tab-content">
   <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
@@ -631,10 +626,9 @@ access</td>
       <td>The customer you are planning to grant website
 access</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#website-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#website-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs website %}
+
 <div class="tab-content">
   <div class="tab-pane" id="website-xml">
      <h3>Call</h3>
@@ -705,10 +699,9 @@ website access</td>
       <td>The customer you are planning to disallow
 website access</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#unwebsite-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#unwebsite-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs unwebsite %}
+
 <div class="tab-content">
   <div class="tab-pane" id="unwebsite-xml">
      <h3>Call</h3>
@@ -831,10 +824,9 @@ to update profile information</td>
       <td>No</td>
       <td>Company of customer</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#update-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#update-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs update %}
+
 <div class="tab-content">
   <div class="tab-pane" id="update-xml">
      <h3>Call</h3>
@@ -924,10 +916,9 @@ password</td>
       </td>
       <td>Allows you to access password functionality</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#password-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#password-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs password %}
+
 <div class="tab-content">
   <div class="tab-pane" id="password-xml">
      <h3>Call</h3>
@@ -1030,10 +1021,9 @@ This update takes effect immediately</td>
       </td>
       <td>Allows you to access profile functionality</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#name-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#name-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs name %}
+
 <div class="tab-content">
   <div class="tab-pane" id="name-xml">
      <h3>Call</h3>
@@ -1126,10 +1116,9 @@ contacting customer. This update takes effect immediately</td>
       </td>
       <td>Allows you to access password functionality</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#email-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#email-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs email %}
+
 <div class="tab-content">
   <div class="tab-pane" id="email-xml">
      <h3>Call</h3>

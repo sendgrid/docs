@@ -37,10 +37,9 @@ Retrieve Spam Reports
         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -115,10 +114,9 @@ Delete Spam Reports
         <td>You must specify the spam reports to remove</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

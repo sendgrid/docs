@@ -103,10 +103,9 @@ get
       <td>email address eg testing@example.com</td> 
       <td>optional email addresses to search for.</td> 
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs get %}
+<div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
@@ -179,10 +178,9 @@ delete
 
       <td>Unsubscribed email address to remove</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs delete %}
+<div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
@@ -252,10 +250,9 @@ add
       <td>Must be a valid email address</td>
       <td>Email address to add to unsubscribe list</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-</ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs add %}
+<div class="tab-content">
   <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
 {% codeblock %}

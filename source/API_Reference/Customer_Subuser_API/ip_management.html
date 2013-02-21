@@ -31,10 +31,9 @@ navigation:
     <dt>available</dt>
     <dd>All available IP addresses for the reseller including all free IP addresses. If a subuser is deactivated<em>and</em> is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone</dd>
   </dl>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs list %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="list-json">
 	     <h3>Call</h3>
@@ -95,10 +94,9 @@ If your account has more than one IP address, you can manage what IPs your subus
       <td>Yes</td>
       <td>Subuser must be registered under your account</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#usage-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#usage-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs usage %}
+
 <div class="tab-content">
   <div class="tab-pane" id="usage-xml">
      <h3>Call</h3>
@@ -206,10 +204,9 @@ You need to assign at least ONE IP to your subuser.
       <td>No</td>
       <td>If the <em>set</em> parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0&ip[]=255.255.255.1 ]</td>
     </tr>
-  </tbody></table><ul class="nav nav-tabs">
-  <li class="active"><a href="#subuser-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#subuser-xml" data-toggle="tab">XML</a></li>
-</ul>
+  </tbody></table>
+{% xmljsontabs subuser %}
+
 <div class="tab-content">
   <div class="tab-pane" id="subuser-xml">
      <h3>Call</h3>

@@ -36,10 +36,9 @@ limits removed.</p>
     <td>The customer subuser who will have their
 		account limits retrieved</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -118,10 +117,9 @@ No Limit
     <td>The customer subuser who will have their
 		account limits removed</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#subuser-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#subuser-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs subuser %}
+
 <div class="tab-content">
   <div class="tab-pane" id="subuser-xml">
      <h3>Call</h3>
@@ -235,10 +233,9 @@ Recurring Reset
 		account reset to. If this is not set, the credits will be reset using
 		the credits parameter</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs reset %}
+
 <div class="tab-content">
   <div class="tab-pane" id="reset-xml">
      <h3>Call</h3>
@@ -323,10 +320,9 @@ Total Credits
     <td>The total number of credits the customer
 		subuser will be reset to</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#total-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#total-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs total %}
+
 <div class="tab-content">
   <div class="tab-pane" id="total-xml">
      <h3>Call</h3>
@@ -411,10 +407,9 @@ Increment Credits
     <td>The total number of credits the customer
 		subuser will be incremented by</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#increment-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#increment-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs increment %}
+
 <div class="tab-content">
   <div class="tab-pane" id="increment-xml">
      <h3>Call</h3>
@@ -499,10 +494,9 @@ Decrement Credits
     <td>The total number of credits the customer
 		subuser will be decremented by</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#decrement-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#decrement-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs decrement %}
+
 <div class="tab-content">
   <div class="tab-pane" id="decrement-xml">
      <h3>Call</h3>

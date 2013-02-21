@@ -34,10 +34,9 @@ List Pending Changes
     <td>Must be either upgrade, downgrade, close.
 		Optional search parameter.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#users-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#users-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs users %}
+
 <div class="tab-content">
   <div class="tab-pane" id="users-xml">
      <h3>Call</h3>
@@ -159,10 +158,9 @@ Delete Pending Changes
     <td>Yes</td>
     <td>Must be an User under your account.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -254,10 +252,9 @@ Immediate Upgrade
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#upgrade-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#upgrade-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs upgrade %}
+
 <div class="tab-content">
   <div class="tab-pane" id="upgrade-xml">
      <h3>Call</h3>
@@ -349,10 +346,9 @@ Immediate Downgrade
 		to does not require an IP or whitelabel, you may place them in an IP
 		group.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#downgrade-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#downgrade-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs downgrade %}
+
 <div class="tab-content">
   <div class="tab-pane" id="downgrade-xml">
      <h3>Call</h3>
@@ -430,10 +426,9 @@ Immediate Close
     <td>Define an ip group you will place the user
 		into once the customers account is closed.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#close-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#close-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs close %}
+
 <div class="tab-content">
   <div class="tab-pane" id="close-xml">
      <h3>Call</h3>
@@ -525,10 +520,9 @@ Scheduled Upgrade
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#sched-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#sched-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs sched %}
+
 <div class="tab-content">
   <div class="tab-pane" id="sched-xml">
      <h3>Call</h3>
@@ -620,10 +614,9 @@ Scheduled Downgrade
 		does not require an IP or whitelabel, you must place them in an IP
 		group.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#scheddown-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#scheddown-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs scheddown %}
+
 <div class="tab-content">
   <div class="tab-pane" id="scheddown-xml">
      <h3>Call</h3>
@@ -701,10 +694,9 @@ Scheduled Close
     <td>Define an ip group you will place the user
 		into once the customers account is closed.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#schedclose-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#schedclose-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs schedclose %}
+
 <div class="tab-content">
   <div class="tab-pane" id="schedclose-xml">
      <h3>Call</h3>

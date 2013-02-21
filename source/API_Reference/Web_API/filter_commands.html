@@ -14,10 +14,9 @@ Get Available
 <p><em>Note: The name entry is used in all the other API calls to identify a app.</em>
 For a list of all the apps and parameters accesible with the Web API you can check the <a href="{{ root_url }}/API_Reference/Web_API/filter_settings.html">Filter Settings</a> page.</p>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#getavailable-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#getavailable-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs getavailable %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="getavailable-json">
           <h3>Call</h3>
@@ -67,10 +66,9 @@ https://sendgrid.com/api/filter.getavailable.xml?api_user=youremail@domain.com&a
 Activate App 
 {% endanchor %}
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs activate %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
         <h3>Call</h3>
@@ -103,10 +101,9 @@ https://sendgrid.com/api/filter.activate.xml?api_user=youremail@domain.com&api_k
 
 
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs deactivate %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
@@ -197,10 +194,9 @@ print_r($response);
 Get Settings 
 {% endanchor %}
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#getsettings-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#getsettings-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs getsettings %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="getsettings-json">
      <h3>Call</h3>

@@ -49,10 +49,9 @@ Create Monitor Record
 		account</td>
     <td>The frequency of emails to be sent out</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs create %}
+
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
@@ -148,10 +147,9 @@ Edit Monitor Record
     <td>Must be an integer and greater than 0</td>
     <td>The new frequency of emails to be sent out</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs edit %}
+
 <div class="tab-content">
   <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
@@ -229,10 +227,9 @@ Delete Monitor Record
     <td>The unique name to identify this monitor
 			record</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -302,10 +299,9 @@ List All Monitor Records
     </td>
     <td>The task required to list all monitor records</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs list %}
+
 <div class="tab-content">
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -399,10 +395,9 @@ Append A Customer Subuser To A Monitor Record
     <td>The name of the monitor record we will be
 		appending</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#append-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#append-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs append %}
+
 <div class="tab-content">
   <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
@@ -481,10 +476,9 @@ Detach A Monitor Record From A Customer Subuser
     <td>The customer subuser we will detach the
 		monitor record from</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#detach-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#detach-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs detach %}
+
 <div class="tab-content">
   <div class="tab-pane" id="detach-xml">
      <h3>Call</h3>

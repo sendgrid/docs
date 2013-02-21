@@ -37,10 +37,9 @@ Note: The
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs list %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="list-json">
 	     <h3>Call</h3>
@@ -101,10 +100,9 @@ Activate App
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs activate %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="activate-json">
 	     <h3>Call</h3>
@@ -154,10 +152,9 @@ Deactivate App
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#deactivate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#deactivate-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs deactivate %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="deactivate-json">
 	     <h3>Call</h3>
@@ -190,10 +187,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
 Customize App 
 {% endanchor %}
   These API calls require that settings are passed using POST.
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#customize-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#customize-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs customize %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="customize-json">
 	     <h3>Call</h3>
@@ -245,10 +241,9 @@ https://sendgrid.com/apiv2/customer.apps.xml?api_user=username&api_key=secureSec
   {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#settings-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#settings-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs settings %}
+
 <div class="tab-content">
 	  <div class="tab-pane active" id="settings-json">
 	     <h3>Call</h3>
