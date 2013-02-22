@@ -3,5 +3,6 @@ files: [
   'source/stylesheets/style.css',
   'source/stylesheets/icomoon.css',
   'source/stylesheets/sprites.css',
-  'source/stylesheets/syntax.css'
+  'source/stylesheets/syntax.css',
+  'source/stylesheets/print.css'
 ]
