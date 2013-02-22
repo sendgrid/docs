@@ -23,14 +23,14 @@
   <![endif]-->
 
   <!--[if !IE]>-->
-    <link href="{{ root_url }}{% minified_embedded_css_file %}" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="{{ root_url }}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
   <!--<![endif]-->
 
   {% unless page.responsive == false %}
-  <link href="{{ root_url }}/stylesheets/bootstrap/responsive.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="{{ root_url }}/stylesheets/bootstrap/responsive.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endunless %}
   {% if page.responsive == false %}
-  <link href="{{ root_url }}/stylesheets/width1170.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="{{ root_url }}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endif %}
 <script type="text/javascript">
 
