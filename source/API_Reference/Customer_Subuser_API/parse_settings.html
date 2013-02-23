@@ -7,7 +7,9 @@ navigation:
 ---
 
   
-  {% anchor Get Current Settings %}
+  {% anchor h2 %}
+Get Current Settings 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -29,10 +31,9 @@ navigation:
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -84,7 +85,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
   </div>
 </div>
   <hr/>
-  {% anchor Create New Entry %}
+  {% anchor h2 %}
+Create New Entry 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -118,10 +121,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs create %}
+
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
@@ -171,7 +173,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
   </div>
 </div>
   <hr/>
-  {% anchor Edit Entry %}
+  {% anchor h2 %}
+Edit Entry 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -205,10 +209,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
         <td>The subuser who we will update</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs edit %}
+
 <div class="tab-content">
   <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
@@ -258,7 +261,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
   </div>
 </div>
   <hr/>
-  {% anchor Delete Entry %}
+  {% anchor h2 %}
+Delete Entry 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -286,10 +291,9 @@ https://sendgrid.com/apiv2/customer.parse.json?api_user=username&api_key=secureS
         <td>The host name you will remove for your subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#data-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#data-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs data %}
+
 <div class="tab-content">
   <div class="tab-pane" id="data-xml">
      <h3>Call</h3>

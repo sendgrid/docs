@@ -10,7 +10,9 @@ navigation:
 
 
 
- {% anchor get %}
+ {% anchor h2 %}
+get 
+{% endanchor %}
 
  <table class="table table-bordered table-striped"><tbody>
 <tr>
@@ -89,10 +91,9 @@ navigation:
 
        <td>optional email addresses to search for.</td>
      </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs get %}
+<div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
@@ -143,7 +144,9 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&amp;a
 
 <hr>
 
-  {% anchor delete %}
+  {% anchor h2 %}
+delete 
+{% endanchor %}
 
   <p>Delete an address from the Spam Reports list.</p>
   
@@ -167,10 +170,9 @@ https://sendgrid.com/api/spamreports.get.xml?api_user=youremail@domain.com&amp;a
 
         <td>Email spam reports address to remove</td>
       </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs delete %}
+<div class="tab-content">
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}

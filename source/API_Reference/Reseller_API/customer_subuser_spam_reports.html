@@ -6,7 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor Retrieve Spam Reports %}
+{% anchor h2 %}
+Retrieve Spam Reports 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -38,10 +40,9 @@ navigation:
     <td>Retrieves the timestamps, it will return a
 		date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -85,7 +86,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Delete Spam Reports %}
+{% anchor h2 %}
+Delete Spam Reports 
+{% endanchor %}
 <p>Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -117,10 +120,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>Must be a spam reports</td>
     <td>You must specify the spam reports to remove</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

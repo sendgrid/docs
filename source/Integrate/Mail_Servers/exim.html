@@ -6,10 +6,9 @@ navigation:
   show: true
 ---
 
-<blockquote>
-<span class="label label-warning">Warning</span>
-Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release.
-</blockquote>
+{% warning %}
+ Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release. 
+{% endwarning %}
 
 <p>
 The following configuration file, which can be found at <strong>/etc/exim4/update-exim4.conf.conf</strong>, was pulled from Ubuntu Server 10.4 and is for example purposes only:
@@ -32,7 +31,9 @@ dc_mailname_in_oh='true'
 
 <p>Enable TLS support in <strong>/etc/exim4/exim4.conf.localmacros</strong>.</p>
 <br/>
-<blockquote><span class="label label-info">Info</span> If this file does not exist, you will need to create it:</blockquote>
+{% info %}
+If this file does not exist, you will need to create it:
+{% endinfo %}
 
 {% codeblock lang:bash %}
 MAIN_TLS_ENABLE = 1
@@ -49,7 +50,9 @@ MAIN_TLS_ENABLE = 1
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
 
-{% anchor cPanel %}
+{% anchor h2 %}
+cPanel 
+{% endanchor %}
 <p>If you are using cPanel with Exim and want to relay your email through SendGrid, go to <strong>Main > Service Configuration > Exim Configuration Editor</strong>, click on the Advanced Editor button, and enter the following:</p>
 
 {% codeblock lang:bash %}
@@ -60,7 +63,9 @@ sendgrid_login:
   public_name = LOGIN
   client_send = : username@example.com : YourSendGridPassword
 {% endcodeblock %}
-<blockquote><span class="label label-info">Info</span> Only include "begin authenticators" if it's not already in the configuration.</blockquote>
+{% info %}
+Only include "begin authenticators" if it's not already in the configuration.
+{% endinfo %}
 
 <p>Add a route in the <strong>Router Configuration</strong> Box:</p>
 {% codeblock lang:bash %}

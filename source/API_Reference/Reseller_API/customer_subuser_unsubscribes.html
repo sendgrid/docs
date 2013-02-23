@@ -6,7 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor Retrieve Unsubscribes %}
+{% anchor h2 %}
+Retrieve Unsubscribes 
+{% endanchor %}
 <p>Note that you can use
   <em>either</em>
   the days parameter
@@ -43,10 +45,9 @@ navigation:
     <td>Retrieves the timestamps, it will return a
 		date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -90,7 +91,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 </div>
 <hr/>
 
-{% anchor Delete Unsubscribes %}
+{% anchor h2 %}
+Delete Unsubscribes 
+{% endanchor %}
 <p>Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -123,10 +126,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
     <td>You must specify the unsubscribe record to
 		remove</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -169,7 +171,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Add Unsubscribes %}
+{% anchor h2 %}
+Add Unsubscribes 
+{% endanchor %}
 <p>Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -202,10 +206,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>You must specify the unsubscribe record to
 		add</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs add %}
+
 <div class="tab-content">
   <div class="tab-pane" id="add-xml">
      <h3>Call</h3>

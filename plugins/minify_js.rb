@@ -50,7 +50,9 @@ module Jekyll
       js_files = js_files.join(' ')
       juice_cmd = "juicer merge -s -f #{js_files} -o #{output_file} -d #{source}"
       puts juice_cmd
-      system(juice_cmd)
+      if system(juice_cmd) == false 
+        raise 'Juicer failed while minifying javascript.'
+      end
     end
 
     # Load configuration from JsMinify.yml

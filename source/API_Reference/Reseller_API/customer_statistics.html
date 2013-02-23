@@ -5,7 +5,9 @@ title: Customer Statistics
 navigation:
    show: true
 ---
-{% anchor Retrieve Customer Statistics %}
+{% anchor h2 %}
+Retrieve Customer Statistics 
+{% endanchor %}
 <p>Note that you can use
   <em>either</em>
   the days parameter
@@ -55,10 +57,9 @@ navigation:
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -134,7 +135,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Retrieve Aggregates %}
+{% anchor h2 %}
+Retrieve Aggregates 
+{% endanchor %}
 <p>Retrieve all-time totals for your customer</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -165,10 +168,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#agg-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#agg-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs agg %}
+
 <div class="tab-content">
   <div class="tab-pane" id="agg-xml">
      <h3>Call</h3>
@@ -206,7 +208,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Category List %}
+{% anchor h2 %}
+Category List 
+{% endanchor %}
 <p>Retrieve a list of all the categories used in your customers account.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -239,10 +243,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#cat-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#cat-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs cat %}
+
 <div class="tab-content">
   <div class="tab-pane" id="cat-xml">
      <h3>Call</h3>
@@ -274,7 +277,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Category Statistics %}
+{% anchor h2 %}
+Category Statistics 
+{% endanchor %}
 <p>Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.</p>
 <p>Note that you can use
   <em>either</em>
@@ -331,10 +336,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     </td>
     <td>Allows you to access stats functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#catstat-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#catstat-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs catstat %}
+
 <div class="tab-content">
   <div class="tab-pane" id="catstat-xml">
      <h3>Call</h3>

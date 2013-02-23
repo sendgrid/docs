@@ -10,7 +10,9 @@ navigation:
 
 
 
-{% anchor add %}
+{% anchor h2 %}
+add 
+{% endanchor %}
 <p>Create a new Recipient List.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -43,10 +45,9 @@ navigation:
 </pre>[<em>columnname</em>] will be the replacement tag.
       </td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs add %}
+<div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -95,7 +96,9 @@ http://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=SGuse
 
 
 
-<hr>{% anchor edit %}
+<hr>{% anchor h2 %}
+edit 
+{% endanchor %}
 <p>Rename a Recipient List.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -117,10 +120,9 @@ http://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=SGuse
       <td>None</td>
       <td>Specify the new name for the Recipient List.</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs edit %}
+<div class="tab-content">
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -168,7 +170,9 @@ http://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test
 
 <hr>
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 <p>List all Recipient Lists on your account, or check if a particular List exists.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -185,10 +189,9 @@ http://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test
       <td>Check for this particular list. (To list all Recipient Lists on your account
       exclude this parameter)</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs get %}
+<div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
 {% codeblock %}
@@ -241,7 +244,9 @@ http://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=SGuserna
 
 <hr>
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 <p>Remove a Recipient List from your account.</p>
 
 <table class="table table-bordered table-striped"><tbody>
@@ -257,10 +262,9 @@ http://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=SGuserna
       <td>Must be an existing Recipient List.</td>
       <td>Remove this Recipient List.</td>
     </tr>
-</tbody></table><ul class="nav nav-tabs">
-<li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul><div class="tab-content">
+</tbody></table>
+{% xmljsontabs delete %}
+<div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
 {% codeblock %}

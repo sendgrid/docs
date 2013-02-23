@@ -10,7 +10,9 @@ navigation:
 
 <p>Please note that if a filter is not specified as being either disabled or enabled in the X-SMTPAPI header, it will default to the state of the app in the "Apps" tab on the website.</p>
 
-<blockquote><span class="label label-warning">Warning</span> If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App</a>. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a template designed but disabled, you can't just enable it via the API; you need to define the template in the API call itself.</blockquote>
+{% warning %}
+If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a template designed but disabled, you can't just enable it via the API; you need to define the template in the API call itself.
+{% endwarning %}
 
 <p>For more information on the utility of these apps, please check out the <a href="{{ root_url }}/apps/">Apps</a> section.</p>
 

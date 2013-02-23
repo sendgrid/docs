@@ -11,10 +11,9 @@ navigation:
 <h3>There are no extra parameters required to view your profile information.</h3>
 
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
@@ -72,7 +71,9 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
 
 <hr/>
 
-{% anchor set %}
+{% anchor h2 %}
+set 
+{% endanchor %}
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -158,10 +159,9 @@ https://sendgrid.com/api/profile.get.xml?api_user=youremail@domain.com&api_key=s
    </tbody>
  </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs set %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
@@ -217,7 +217,9 @@ https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=s
 <hr/>
 
 
-{% anchor setPassword %}
+{% anchor h2 %}
+setPassword 
+{% endanchor %}
 
   <table class="table table-bordered table-striped">
     <tbody>
@@ -254,10 +256,9 @@ https://sendgrid.com/api/profile.set.xml?api_user=youremail@domain.com&api_key=s
   </table>
 </body>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs reset %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
@@ -313,8 +314,12 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
 
 
 
- {% anchor setUsername %} 
-<blockquote><span class="label label-warning">Warning</span> Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.</blockquote>
+ {% anchor h2 %}
+setUsername 
+{% endanchor %} 
+{% warning %}
+Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
+{% endwarning %}
 
  <table class="table table-bordered table-striped">
    <tbody>
@@ -342,10 +347,9 @@ https://sendgrid.com/api/password.set.xml?api_user=youremail@domain.com&api_key=
    </tbody>
  </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#setusername-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#setusername-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs setusername %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="setusername-json">
      <h3>Call</h3>
@@ -398,9 +402,13 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.co
 <hr/>
 
 
-{% anchor setEmail %}
+{% anchor h2 %}
+setEmail 
+{% endanchor %}
 
-<blockquote><span class="label label-info">Info</span> Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.</blockquote>
+{% info %}
+Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.
+{% endinfo %}
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -427,10 +435,9 @@ https://sendgrid.com/api/profile.setUsername.xml?api_user=yourusername@domain.co
   </tbody>
 </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#setemail-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#setemail-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs setemail %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="setemail-json">
      <h3>Call</h3>

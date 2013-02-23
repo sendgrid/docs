@@ -10,7 +10,9 @@ navigation:
 This Rails example shows how to send an email for user signups. You can also checkout <a href="https://github.com/stephenb/sendgrid">this Ruby gem</a> for more advanced features.
 </p>
 
-<blockquote><span class="label label-info">Info</span> This example is specific to ActionMailer. You can use any SMTP library that is compatible with Rails, but the configuration may be slightly different.</blockquote>
+{% info %}
+This example is specific to ActionMailer. You can use any SMTP library that is compatible with Rails, but the configuration may be slightly different.
+{% endinfo %}
 
 In <strong>config/environment.rb</strong> specify ActionMailer defaults
 {% codeblock lang:ruby %}

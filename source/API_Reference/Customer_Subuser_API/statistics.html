@@ -8,7 +8,9 @@ navigation:
 
     <p>Subuser Statistics</p>
     
-    {% anchor Retrieve Subuser Statistics %}
+    {% anchor h2 %}
+Retrieve Subuser Statistics 
+{% endanchor %}
     <p>Note that you can use <em>either</em> the days parameter <em>or</em> the start_date and end_date parameter.</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
@@ -42,10 +44,9 @@ navigation:
           <td>The end date to look up statistics</td>
         </tr>
       </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#stats-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#stats-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs stats %}
+
 <div class="tab-content">
   <div class="tab-pane" id="stats-xml">
      <h3>Call</h3>
@@ -119,7 +120,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   </div>
 </div>
-    {% anchor Retrieve Aggregates %}
+    {% anchor h2 %}
+Retrieve Aggregates 
+{% endanchor %}
     <p>Retrieve all-time totals for your subuser</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
@@ -141,10 +144,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureS
           <td>This is used to let us know that you are interested in all time totals</td>
         </tr>
       </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#agg-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#agg-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs agg %}
+
 <div class="tab-content">
   <div class="tab-pane" id="agg-xml">
      <h3>Call</h3>
@@ -181,7 +183,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   </div>
 </div>
-    {% anchor Category List %}
+    {% anchor h2 %}
+Category List 
+{% endanchor %}
     <p>Retrieve a list of all the categories used in your subusers account.</p>
     <table class="table table-bordered table-striped"><tbody>
         <tr>
@@ -204,10 +208,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureS
           <td>The subuser we are retrieving category statistics from</td>
         </tr>
       </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#cat-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#cat-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs cat %}
+
 <div class="tab-content">
   <div class="tab-pane" id="cat-xml">
      <h3>Call</h3>
@@ -239,7 +242,9 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureS
 {% endcodeblock %}
   </div>
 </div>
-    {% anchor Category Statistics %}
+    {% anchor h2 %}
+Category Statistics 
+{% endanchor %}
 <p>    Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 
 Note that you can use 
@@ -282,10 +287,9 @@ Note that you can use 
           <td>The end date to look up statistics</td>
         </tr>
       </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#catstats-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#catstats-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs catstats %}
+
 <div class="tab-content">
   <div class="tab-pane" id="catstats-xml">
      <h3>Call</h3>

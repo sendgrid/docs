@@ -6,12 +6,17 @@ navigation:
   show: true
 ---
 
-{% anchor Retrieve Statistics %}
+{% anchor h2 %}
+Retrieve Statistics 
+{% endanchor %}
 
-<blockquote><span class="label label-info">Info</span> You can specify either the days parameter or the start_date and end_date
-parameters. If provided with no parameters, the current day's statistics are returned.</blockquote>
+{% info %}
+You can specify either the days parameter or the start_date and end_date parameters. If provided with no parameters, the current day's statistics are returned.
+{% endinfo %}
 
-{% anchor Parameters %}
+{% anchor h2 %}
+Parameters 
+{% endanchor %}
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -67,10 +72,9 @@ parameters. If provided with no parameters, the current day's statistics are ret
   </tbody>
 </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#activate-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#activate-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs activate %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
@@ -169,13 +173,14 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 
 <hr/>
 
-{% anchor Category List %}
+{% anchor h2 %}
+Category List 
+{% endanchor %}
 <h3>Retrieve a list of all the categories used in your account.</h3>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs list %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
@@ -221,14 +226,20 @@ https://sendgrid.com/api/stats.get.xml?api_user=youremail@domain.com&api_key=sec
 
 <hr/>
 
-{% anchor Category Statistics %}
+{% anchor h2 %}
+Category Statistics 
+{% endanchor %}
 
 <h3>Retrieve statistics broken down by category. If the category does not exist, there
 will be an empty result set.</h3>
 
-<blockquote><span class="label label-info">Info</span> Note that you can use either the days parameter or the start_date and end_date parameter.</blockquote>
+{% info %}
+Note that you can use either the days parameter or the start_date and end_date parameter.
+{% endinfo %}
 
-{% anchor Parameters %}
+{% anchor h2 %}
+Parameters 
+{% endanchor %}
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -294,10 +305,9 @@ will be an empty result set.</h3>
   </tbody>
 </table>
 
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#category-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#category-xml" data-toggle="tab">XML</a></li>
-</ul>
+
+{% xmljsontabs category %}
+
 <div class="tab-content">
   <div class="tab-pane active" id="category-json">
      <h3>Call</h3>

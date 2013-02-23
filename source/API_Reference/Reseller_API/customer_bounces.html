@@ -5,7 +5,9 @@ title: Customer Bounces
 navigation:
    show: true
 ---
-{% anchor Retrieve Bounces %}
+{% anchor h2 %}
+Retrieve Bounces 
+{% endanchor %}
 <p>Note that you can use
   <em>either</em>
   the days parameter
@@ -49,10 +51,9 @@ navigation:
     </td>
     <td>Allows you to access bounces functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -104,7 +105,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Delete Bounces %}
+{% anchor h2 %}
+Delete Bounces 
+{% endanchor %}
 <p>Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -143,10 +146,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     </td>
     <td>Allows you to access bounces functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

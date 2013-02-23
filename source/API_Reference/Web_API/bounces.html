@@ -9,7 +9,9 @@ navigation:
 <p>This endpoint allows you to retrieve and delete entries in the Bounces list.</p>
 
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 <p>Retrieve a list of bounces with addresses and response codes, optionally with dates.</p>
 
 <table class="table table-bordered table-striped">
@@ -111,10 +113,9 @@ navigation:
 	</tbody>
 </table>
 
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
+ 
+{% xmljsontabs get %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
@@ -192,7 +193,9 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
 <hr/>
 
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 <p>Delete an address from the Bounce list.  Please note that if no parameters are specified the ENTIRE list will be deleted.
 </p>
 <table class="table table-bordered table-striped">
@@ -231,10 +234,9 @@ https://sendgrid.com/api/bounces.get.xml?api_user=youremail@domain.com&api_key=s
 </tbody>
 </table>
 
- <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
+ 
+{% xmljsontabs delete %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
       <h3>Call</h3>
@@ -280,7 +282,9 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_ke
 <hr/>
 
   
-  {% anchor Count  %} 
+  {% anchor h2 %}
+Count  
+{% endanchor %} 
 
   <table class="table table-bordered table-striped"> 
     <tr> 
@@ -309,10 +313,9 @@ https://sendgrid.com/api/bounces.delete.xml?api_user=youremail@domain.com&api_ke
     </tr> 
   </table> 
  
-<ul class="nav nav-tabs">
-    <li class="active"><a href="#count-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#count-xml" data-toggle="tab">XML</a></li>
-  </ul>
+
+{% xmljsontabs count %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="count-json">
       <h3>Call</h3>

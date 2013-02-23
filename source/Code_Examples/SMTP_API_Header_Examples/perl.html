@@ -6,7 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor SmtpApiHeader.pm %}
+{% anchor h2 %}
+SmtpApiHeader.pm 
+{% endanchor %}
 {% codeblock lang:perl %}
 #!/usr/bin/perl
 
@@ -98,7 +100,9 @@ sub as_string
 }
 {% endcodeblock %}
 
-{% anchor Example Perl Usage %}
+{% anchor h2 %}
+Example Perl Usage 
+{% endanchor %}
 {% codeblock lang:perl %}
 #!/usr/bin/perl
 use SmtpApiHeader;
@@ -125,7 +129,9 @@ print $hdr->as_string;
 print "\n";
  </code>
 
-{% anchor Full Perl Example %}
+{% anchor h2 %}
+Full Perl Example 
+{% endanchor %}
  <p>The following code builds a MIME mail message demonstrating all the portions of the SMTP API protocol. To use this example, you will need to have the following perl modules installed:</p>
  <ul class="regular">
     <li>MIME::Entity</li>

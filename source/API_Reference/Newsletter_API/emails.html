@@ -9,7 +9,9 @@ navigation:
 <p>This endpoint allows you to manage entries in your Recipient Lists.</p>
 
 
-{% anchor add %}
+{% anchor h2 %}
+add 
+{% endanchor %}
 <p>Add one or more emails to a Recipient List.</p>
 
 <table class="table table-bordered table-striped">
@@ -33,10 +35,9 @@ navigation:
     </tr>
   </table>
 
-<ul class="nav nav-tabs">
-    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul>
+
+{% xmljsontabs add %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
       <h3>Call</h3>
@@ -105,7 +106,9 @@ http://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22emai
 <hr/>
 
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 
 <p>Get the email addresses and associated fields for a Recipient List.</p>
 
@@ -130,10 +133,9 @@ http://sendgrid.com/api/newsletter/lists/email/add.xml?list=Test&data=%7B%22emai
     </tr>
   </table>
 
-<ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
+
+{% xmljsontabs get %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
@@ -189,7 +191,9 @@ http://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=SGuser
 <hr/>
 
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 
 <p>Remove one or more emails from a Recipient List.</p>
 
@@ -214,10 +218,9 @@ http://sendgrid.com/api/newsletter/lists/email/get.xml?list=Test&api_user=SGuser
     </tr>
   </table>
 
-<ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
+
+{% xmljsontabs delete %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
       <h3>Call</h3>

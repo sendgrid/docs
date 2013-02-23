@@ -8,10 +8,13 @@ navigation:
 
   <p>These are actions that directly affect your subuser. We provide access via XML and JSON.</p>
 
-  <blockquote><span class="label label-info">Info</span>
-   In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.</blockquote>
+{% info %}
+In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.
+{% endinfo %}
 
-  {% anchor Create a Subuser %}
+  {% anchor h2 %}
+Create a Subuser 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -110,10 +113,9 @@ navigation:
         <td>Mail domain of new subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs create %}
+
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
@@ -158,7 +160,9 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
   </div>
 </div>
   <hr/>
-  {% anchor Retrieve Subusers %}
+  {% anchor h2 %}
+Retrieve Subusers 
+{% endanchor %}
   Obtain a complete list of all subusers.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -237,10 +241,9 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSec
         <td>Search filter, company of subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -323,7 +326,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
   </div>
 </div>
   <hr/>
-  {% anchor Enable a Subuser %}
+  {% anchor h2 %}
+Enable a Subuser 
+{% endanchor %}
   Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
   <table class="table table-bordered table-striped"><tbody>
@@ -340,10 +345,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
         <td>The subuser you are planning to enabling</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#enable-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#enable-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs enable %}
+
 <div class="tab-content">
   <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
@@ -385,7 +389,9 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
   </div>
 </div>
   <hr/>
-  {% anchor Disable a Subuser %}
+  {% anchor h2 %}
+Disable a Subuser 
+{% endanchor %}
   This prevents them from sending out emails with SendGrid.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -401,10 +407,9 @@ https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secure
         <td>The subuser you are planning to disabling</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#disable-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#disable-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs disable %}
+
 <div class="tab-content">
   <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
@@ -445,7 +450,9 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
   </div>
 </div>
   <hr/>
-  {% anchor Enable Website Access To A Subuser %}
+  {% anchor h2 %}
+Enable Website Access To A Subuser 
+{% endanchor %}
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails. 
 
   <table class="table table-bordered table-striped"><tbody>
@@ -462,10 +469,9 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secur
         <td>The subuser you are planning to grant website access</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#enablewebsite-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#enablewebsite-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs enablewebsite %}
+
 <div class="tab-content">
   <div class="tab-pane" id="enablewebsite-xml">
      <h3>Call</h3>
@@ -506,7 +512,9 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
   </div>
 </div>
   <hr/>
-  {% anchor Disable Website Access To A Subuser %}
+  {% anchor h2 %}
+Disable Website Access To A Subuser 
+{% endanchor %}
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails. 
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -522,10 +530,9 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_ke
         <td>The subuser you are planning to disallow website access</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#disablewebsite-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#disablewebsite-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs disablewebsite %}
+
 <div class="tab-content">
   <div class="tab-pane" id="disablewebsite-xml">
      <h3>Call</h3>
@@ -566,7 +573,9 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
   </div>
 </div>
   <hr/>
-  {% anchor Update Subuser Profile %}
+  {% anchor h2 %}
+Update Subuser Profile 
+{% endanchor %}
   Allows you to update your subusers profile information
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -635,10 +644,9 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_k
         <td>Company of subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#updateprofile-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#updateprofile-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs updateprofile %}
+
 <div class="tab-content">
   <div class="tab-pane" id="updateprofile-xml">
      <h3>Call</h3>
@@ -683,7 +691,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
   </div>
 </div>
   <hr/>
-  {% anchor Update Subuser Password %}
+  {% anchor h2 %}
+Update Subuser Password 
+{% endanchor %}
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -711,10 +721,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
         <td>Confirm new password</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#updateSubuserPassword-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#updateSubuserPassword-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs updateSubuserPassword %}
+
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserPassword-xml">
      <h3>Call</h3>
@@ -759,7 +768,9 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
   </div>
 </div>
   <hr/>
-  {% anchor Update Subuser Username %}
+  {% anchor h2 %}
+Update Subuser Username 
+{% endanchor %}
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -788,10 +799,9 @@ https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secu
         <td>This is the new username we will be authenticating with our SMTP servers <em>and</em> to access our site. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#updateSubuserUsername-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#updateSubuserUsername-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs updateSubuserUsername %}
+
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserUsername-xml">
      <h3>Call</h3>
@@ -836,7 +846,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
   </div>
 </div>
   <hr/>
-  {% anchor Update Subuser Email Address %}
+  {% anchor h2 %}
+Update Subuser Email Address 
+{% endanchor %}
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
   <table class="table table-bordered table-striped"><tbody>
       <tr>
@@ -865,10 +877,9 @@ https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secur
         <td>This is the new email address we will use for contacting subuser. This update takes effect immediately</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#updateSubuserEmailAddress-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#updateSubuserEmailAddress-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs updateSubuserEmailAddress %}
+
 <div class="tab-content">
   <div class="tab-pane" id="updateSubuserEmailAddress-xml">
      <h3>Call</h3>
