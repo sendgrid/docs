@@ -7,7 +7,9 @@ navigation:
 ---
 
   
-  {% anchor Retrieve %}
+  {% anchor h2 %}
+Retrieve 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -30,10 +32,9 @@ navigation:
         <td>The username of the subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -60,7 +61,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secure
   </div>
 </div>
   <hr/>
-  {% anchor Update / Set URL %}
+  {% anchor h2 %}
+Update / Set URL 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -89,10 +92,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secure
         <td>This is the new event notification URL</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs set %}
+
 <div class="tab-content">
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
@@ -121,7 +123,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secure
   </div>
 </div>
   <hr/>
-  {% anchor Delete %}
+  {% anchor h2 %}
+Delete 
+{% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
@@ -144,10 +148,9 @@ https://sendgrid.com/api/user.eventposturl.json?api_user=username&api_key=secure
         <td>The name of the subuser</td>
       </tr>
     </tbody></table>
-  <ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+  
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

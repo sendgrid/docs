@@ -6,7 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor Retrieve %}
+{% anchor h2 %}
+Retrieve 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -30,10 +32,9 @@ navigation:
 		your account</td>
     <td>The username of the customer subuser</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -61,7 +62,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Update / Set URL %}
+{% anchor h2 %}
+Update / Set URL 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -91,10 +94,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>The notification URL</td>
     <td>This is the new event notification URL</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#update-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#update-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs update %}
+
 <div class="tab-content">
   <div class="tab-pane" id="update-xml">
      <h3>Call</h3>
@@ -124,7 +126,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Delete %}
+{% anchor h2 %}
+Delete 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -148,10 +152,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 		your account</td>
     <td>The name of the customer subuser</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

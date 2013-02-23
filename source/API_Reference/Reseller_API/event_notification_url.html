@@ -6,7 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor Retrieve %}
+{% anchor h2 %}
+Retrieve 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -39,10 +41,9 @@ navigation:
     <td>Allows you to access post event url
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -70,7 +71,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Update / Set URL %}
+{% anchor h2 %}
+Update / Set URL 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -109,10 +112,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access post event url
 		functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#set-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#set-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs set %}
+
 <div class="tab-content">
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
@@ -142,7 +144,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Delete %}
+{% anchor h2 %}
+Delete 
+{% endanchor %}
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -175,10 +179,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access post event url
 		functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>

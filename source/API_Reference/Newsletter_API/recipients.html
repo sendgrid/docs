@@ -10,7 +10,9 @@ navigation:
 
 
 
-{% anchor add %}
+{% anchor h2 %}
+add 
+{% endanchor %}
 <p>Assign a List to a Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -38,10 +40,9 @@ navigation:
   </tbody>
 </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs add %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
@@ -92,7 +93,9 @@ http://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2
 
 
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 <p>Get all lists assigned to a particular newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -113,10 +116,9 @@ http://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2
   </tbody>
 </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs get %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
@@ -171,7 +173,9 @@ http://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=SGusern
 
 
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 <p>Remove assigned lists from newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -200,10 +204,9 @@ http://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=SGusern
   </tbody>
 </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs delete %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>

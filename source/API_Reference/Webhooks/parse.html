@@ -10,11 +10,15 @@ navigation:
 
 <p>The parse API will POST the parsed email to a URL configured you specify. SendGrid automatically queues and retries any POSTs that respond with a 5XX status error. Additionally, we retry errors when we encounter 4XX status responses to prevent data loss for customers that have misconfigured their website or POST URL. </p>
 
-<blockquote><span class="label label-info">Info</span> If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p></blockquote>
+{% info %}
+If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p>
+{% endinfo %}
 
 <p>In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response and then it is removed from our send queue. If we do <strong>not</strong> get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.</p>
 
-{% anchor Setup %}
+{% anchor h2 %}
+Setup 
+{% endanchor %}
 <p>The following steps are required to begin parsing email:</p>
 
 <ul>
@@ -22,7 +26,9 @@ navigation:
 	<li>Associate the Domain/Hostname and the URL in the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a></li>
 </ul>
 
-{% anchor Parameters %}
+{% anchor h2 %}
+Parameters 
+{% endanchor %}
 
 <p>The following parameters will be included in the POST to your callback URL.</p>
 
@@ -129,10 +135,13 @@ navigation:
    </tbody>
  </table>
 
-<blockquote><span class="label label-info">Info</span>The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.</blockquote></p>
+{% info %}
+The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies either dramatically limit the size and/or type of attachments, or even block them altogether.
+{% endinfo %}
 
-
-{% anchor Character Sets and Header Decoding %}
+{% anchor h2 %}
+Character Sets and Header Decoding 
+{% endanchor %}
 <p>If you will be receiving email which is not in ASCII only format, you will want to read this section.</p>
 
 <p>Messages, and their headers, can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.</p>
@@ -146,7 +155,9 @@ navigation:
 <p>This shows that all headers should be treated as UTF-8, and the text body is latin1.</p>
 
 
-<h3>Examples</h3>
+{% anchor h3 %}
+Examples
+{% endanchor %}
 <p>In this example, we want to parse all emails at <em>address</em>@sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.</p>
 
 <p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
@@ -176,7 +187,9 @@ if ( $fh )
 ?>
 {% endcodeblock %}
 
-<blockquote><span class="label label-warning">Warning</span> If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above:
+{% warning %}
+If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the parse log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above: 
+{% endwarning %}
 {% codeblock lang:php %}
 <?php
 $fh = fopen('/tmp/parse.log', 'a+');
@@ -188,7 +201,6 @@ $fh = fopen('/tmp/parse.log', 'a+');
 $fh = fopen('~/parse.log', 'a+');
 ?>
 {% endcodeblock %}
-</blockquote>
 
 <p>After receiving the email, the file /tmp/parse.log will contain the following (note that the contents depend upon what parameters you have enabled, also note that the formatting of the data you receive may differ slightly):</p>
 

@@ -7,7 +7,9 @@ navigation:
 ---
 <p>Retrieve your invoice information.</p>
 <hr/>
-{% anchor Retrieve Invoice Numbers %}
+{% anchor h2 %}
+Retrieve Invoice Numbers 
+{% endanchor %}
 <p>Return an array of invoice numbers to your account.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -35,10 +37,9 @@ navigation:
 		deferred, canceled. This is used to specify what kind of invoice you
 		would like returned.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -78,7 +79,9 @@ https://sendgrid.com/api/billing.list.json?api_user=username&api_key=secureSecre
 </div>
 <hr/>
 
-{% anchor Retrieve Invoices %}
+{% anchor h2 %}
+Retrieve Invoices 
+{% endanchor %}
 <p>Return an array of invoices.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -106,10 +109,9 @@ https://sendgrid.com/api/billing.list.json?api_user=username&api_key=secureSecre
 		deferred, canceled. This is used to specify what kind of invoice you
 		would like returned.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#invoices-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#invoices-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs invoices %}
+
 <div class="tab-content">
   <div class="tab-pane" id="invoices-xml">
      <h3>Call</h3>

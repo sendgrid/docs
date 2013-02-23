@@ -6,7 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor All %}
+{% anchor h2 %}
+All 
+{% endanchor %}
 <p>View all IPs under your account.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -35,10 +37,9 @@ navigation:
       <em>true</em>.</td>
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -96,7 +97,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 </div>
 <hr/>
 
-{% anchor Free %}
+{% anchor h2 %}
+Free 
+{% endanchor %}
 <p>A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -118,10 +121,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
     <td>Can be a complete or partial IP address.</td>
     <td>Filter your search results.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#free-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#free-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs free %}
+
 <div class="tab-content">
   <div class="tab-pane" id="free-xml">
      <h3>Call</h3>
@@ -179,7 +181,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 </div>
 <hr/>
 
-{% anchor Taken %}
+{% anchor h2 %}
+Taken 
+{% endanchor %}
 <p>A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -201,10 +205,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
     <td>Can be a complete or partial IP address.</td>
     <td>Filter your search results.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#taken-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#taken-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs taken %}
+
 <div class="tab-content">
   <div class="tab-pane" id="taken-xml">
      <h3>Call</h3>
@@ -262,7 +265,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 </div>
 <hr/>
 
-{% anchor Available %}
+{% anchor h2 %}
+Available 
+{% endanchor %}
 <p>A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user
   <em>but</em>
   that user is inactive or that is not linked to an IP grouping.</p>
@@ -286,10 +291,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
     <td>Can be a complete or partial IP address.</td>
     <td>Filter your search results.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#available-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#available-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs available %}
+
 <div class="tab-content">
   <div class="tab-pane" id="available-xml">
      <h3>Call</h3>
@@ -347,7 +351,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
 </div>
 <hr/>
 
-{% anchor Usage %}
+{% anchor h2 %}
+Usage 
+{% endanchor %}
 <p>The current breakdown of users who are using your IPs.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -388,10 +394,9 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=username&api_key=secureSecr
       <em>true</em>.</td>
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#usage-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#usage-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs usage %}
+
 <div class="tab-content">
   <div class="tab-pane" id="usage-xml">
      <h3>Call</h3>

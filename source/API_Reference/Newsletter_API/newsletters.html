@@ -10,7 +10,9 @@ navigation:
 
 
 
-{% anchor add %}
+{% anchor h2 %}
+add 
+{% endanchor %}
 <p>Create a new Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -52,10 +54,9 @@ navigation:
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs create %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="create-json">
           <h3>Call</h3>
@@ -105,7 +106,9 @@ http://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid
 
 <hr/>
 
-{% anchor edit %}
+{% anchor h2 %}
+edit 
+{% endanchor %}
 <p>Edit an existing Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -154,10 +157,9 @@ http://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs edit %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
@@ -206,7 +208,9 @@ http://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGri
 <hr/>
 
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 <p>Retrieve the contents of an existing Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -224,10 +228,9 @@ http://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGri
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs get %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
@@ -294,7 +297,9 @@ http://sendgrid.com/api/newsletter/get.xml?name=SendGridv1_(deprecated)NLv1_(dep
 <hr/>
 
 
-{% anchor list %}
+{% anchor h2 %}
+list 
+{% endanchor %}
 <p>Retrieve a list of all existing Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -312,10 +317,9 @@ http://sendgrid.com/api/newsletter/get.xml?name=SendGridv1_(deprecated)NLv1_(dep
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs list %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="list-json">
           <h3>Call</h3>
@@ -394,7 +398,9 @@ http://sendgrid.com/api/newsletter/list.xml?&api_user=SGusername&api_key=SGpassw
 <hr/>
 
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 <p>Remove an existing Newsletter.</p>
 
 <table class="table table-bordered table-striped">
@@ -412,10 +418,9 @@ http://sendgrid.com/api/newsletter/list.xml?&api_user=SGusername&api_key=SGpassw
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs delete %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>

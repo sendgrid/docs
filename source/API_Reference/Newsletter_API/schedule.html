@@ -8,10 +8,14 @@ navigation:
 
 <p>This endpoint allows you to add, view, or remove scheduled delivery events for Newsletters.</p>
 
-<blockquote><span class="label label-info">Info</span> If you wish to send a newsletter immediately, leave off the <strong>at</strong> and <strong>after</strong> parameters.</blockquote>
+{% info %}
+If you wish to send a newsletter immediately, leave off the <strong>at</strong> and <strong>after</strong> parameters.
+{% endinfo %}
 
 
-{% anchor add %}
+{% anchor h2 %}
+add 
+{% endanchor %}
 <p>Schedule a delivery time for an existing Newsletter.</p>
 <table class="table table-bordered table-striped">
     <tr>
@@ -40,10 +44,9 @@ navigation:
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#add-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#add-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs add %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
@@ -92,7 +95,9 @@ http://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05v1_(d
 <hr/>
 
 
-{% anchor get %}
+{% anchor h2 %}
+get 
+{% endanchor %}
 <p>Retrieve the scheduled delivery time for an existing Newsletter.</p>
 <table class="table table-bordered table-striped">
     <tr>
@@ -109,10 +114,9 @@ http://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05v1_(d
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs get %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
@@ -164,7 +168,9 @@ http://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGridv1_(deprecated)
 <hr/>
 
 
-{% anchor delete %}
+{% anchor h2 %}
+delete 
+{% endanchor %}
 <p>Cancel a scheduled send for a Newsletter.</p>
 <table class="table table-bordered table-striped">
     <tr>
@@ -181,10 +187,9 @@ http://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGridv1_(deprecated)
     </tr>
   </table>
 
-  <ul class="nav nav-tabs">
-    <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-    <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-  </ul>
+  
+{% xmljsontabs delete %}
+
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>

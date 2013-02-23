@@ -7,7 +7,9 @@ navigation:
 ---
 <p>Throttle your customer when you need them to send only a specific amount of emails at a specified interval.</p>
 
-{% anchor Retrieve %}
+{% anchor h2 %}
+Retrieve 
+{% endanchor %}
 <p>Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -31,10 +33,9 @@ navigation:
     <td>The customer who will have their account
 		limits retrieved</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#get-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#get-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs get %}
+
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
@@ -89,7 +90,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor No Limit %}
+{% anchor h2 %}
+No Limit 
+{% endanchor %}
 <p>Obtain a complete list of all customer.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -121,10 +124,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     </td>
     <td>Allows you to access limit functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs list %}
+
 <div class="tab-content">
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -176,7 +178,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Recurring Reset %}
+{% anchor h2 %}
+Recurring Reset 
+{% endanchor %}
 <p>A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -245,10 +249,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access account limit
 		functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#reset-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#reset-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs reset %}
+
 <div class="tab-content">
   <div class="tab-pane" id="reset-xml">
      <h3>Call</h3>
@@ -300,7 +303,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Total Credits %}
+{% anchor h2 %}
+Total Credits 
+{% endanchor %}
 <p>Set a subusers credits to a specified amount.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -340,10 +345,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access account limit
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#total-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#total-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs total %}
+
 <div class="tab-content">
   <div class="tab-pane" id="total-xml">
      <h3>Call</h3>
@@ -395,7 +399,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Increment Credits %}
+{% anchor h2 %}
+Increment Credits 
+{% endanchor %}
 <p>Increment a subusers credits by a specified amount.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -435,10 +441,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access account limit
 			functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#increment-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#increment-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs increment %}
+
 <div class="tab-content">
   <div class="tab-pane" id="increment-xml">
      <h3>Call</h3>
@@ -490,7 +495,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
 </div>
 <hr/>
 
-{% anchor Decrement Credits %}
+{% anchor h2 %}
+Decrement Credits 
+{% endanchor %}
 <p>Decrement a subusers credits by a specified amount.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -530,10 +537,9 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=username&api_key=secure
     <td>Allows you to access account limit
 		functionality</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#decrement-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#decrement-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs decrement %}
+
 <div class="tab-content">
   <div class="tab-pane" id="decrement-xml">
      <h3>Call</h3>

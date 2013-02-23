@@ -25,7 +25,9 @@ Make sure to restart Postfix:
 $ /etc/init.d/postfix restart
 {% endcodeblock %}
 
-<blockquote><span class="label label-info">Info</span> If you are getting <strong><em>no mechanism available</em></strong> error messages it generally indicates that you are missing some SASL authentication libraries.</blockquote>
+{% info %}
+If you are getting <strong><em>no mechanism available</em></strong> error messages it generally indicates that you are missing some SASL authentication libraries.
+{% endinfo %}
 
 <p>Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):</p>
 

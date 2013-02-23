@@ -40,7 +40,9 @@ $this->getMailer()->send($message);
 ?>
 {% endcodeblock %}
 
-<h3>Another Option</h3>
+{% anchor h3 %}
+Another Option
+{% endanchor %}
 If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as <strong>lib/myEmail.class.php</strong>.
 
 {% codeblock lang:php %}

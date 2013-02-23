@@ -8,7 +8,9 @@ navigation:
 <p>Receive a sample of an outgoing message by a specific customer subuser.</p>
 <p>The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer subuser. Multiple customer subuser can be appended to a single monitor record.</p>
 
-{% anchor Create Monitor Record %}
+{% anchor h2 %}
+Create Monitor Record 
+{% endanchor %}
 <p>Obtain a complete list of all customer subuser.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -47,10 +49,9 @@ navigation:
 		account</td>
     <td>The frequency of emails to be sent out</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#create-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#create-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs create %}
+
 <div class="tab-content">
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
@@ -101,7 +102,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Edit Monitor Record %}
+{% anchor h2 %}
+Edit Monitor Record 
+{% endanchor %}
 <p>Make modifications to an existing Monitor record.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -144,10 +147,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>Must be an integer and greater than 0</td>
     <td>The new frequency of emails to be sent out</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#edit-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#edit-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs edit %}
+
 <div class="tab-content">
   <div class="tab-pane" id="edit-xml">
      <h3>Call</h3>
@@ -198,7 +200,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Delete Monitor Record %}
+{% anchor h2 %}
+Delete Monitor Record 
+{% endanchor %}
 <p>Deleting a monitor record will remove it from SendGrid's system.
   <strong>Make sure no users are currently using the monitor record when removing, or removal will fail.</strong></p>
 <table class="table table-bordered table-striped">
@@ -223,10 +227,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>The unique name to identify this monitor
 			record</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#delete-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#delete-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs delete %}
+
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
@@ -277,7 +280,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor List All Monitor Records %}
+{% anchor h2 %}
+List All Monitor Records 
+{% endanchor %}
 <p>List all available monitor records a reseller has.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -294,10 +299,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     </td>
     <td>The task required to list all monitor records</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#list-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#list-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs list %}
+
 <div class="tab-content">
   <div class="tab-pane" id="list-xml">
      <h3>Call</h3>
@@ -357,7 +361,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
 </div>
 <hr/>
 
-{% anchor Append A Customer Subuser To A Monitor Record %}
+{% anchor h2 %}
+Append A Customer Subuser To A Monitor Record 
+{% endanchor %}
 <p>Append a monitor record to a existing record onto a customer subuser.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -389,10 +395,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=username&api_key
     <td>The name of the monitor record we will be
 		appending</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#append-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#append-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs append %}
+
 <div class="tab-content">
   <div class="tab-pane" id="append-xml">
      <h3>Call</h3>
@@ -443,7 +448,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
 </div>
 <hr/>
 
-{% anchor Detach A Monitor Record From A Customer Subuser %}
+{% anchor h2 %}
+Detach A Monitor Record From A Customer Subuser 
+{% endanchor %}
 <p>Detach a customer subuser from a monitor record.</p>
 <table class="table table-bordered table-striped">
   <tr>
@@ -469,10 +476,9 @@ https://sendgrid.com/apiv2/reseller.manageSubuser.xml?api_user=username&api_key=
     <td>The customer subuser we will detach the
 		monitor record from</td>
   </tr>
-</table><ul class="nav nav-tabs">
-  <li class="active"><a href="#detach-json" data-toggle="tab">JSON</a></li>
-  <li><a href="#detach-xml" data-toggle="tab">XML</a></li>
-</ul>
+</table>
+{% xmljsontabs detach %}
+
 <div class="tab-content">
   <div class="tab-pane" id="detach-xml">
      <h3>Call</h3>

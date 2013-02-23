@@ -30,10 +30,14 @@ sendgrid.send({
 
 {% endcodeblock %}
 
-<h3>Digging In Deeper</h3>
+{% anchor h3 %}
+Digging In Deeper
+{% endanchor %}
 <p>Email is the object that will help you easily prepare your message to be sent.</p>
 
-<blockquote><span class="label label-info">Info</span> Anything that is available in the Email constructor is available for use in both the sendgrid.send and sendgrid.smtp functions.</blockquote>
+{% info %}
+Anything that is available in the Email constructor is available for use in both the sendgrid.send and sendgrid.smtp functions.
+{% endinfo %}
 
 <p>To get started create an Email object:</p>
 
@@ -85,7 +89,9 @@ var email = new Email({
 
 {% endcodeblock %}
 
-<h3>Setting data</h3>
+{% anchor h3 %}
+Setting data
+{% endanchor %}
 <p>Here is an example of all of the functions available on the email object. The comments to the right show the current state of the variables as the functions are called.</p>
 
 {% codeblock lang:javascript %}
@@ -191,10 +197,14 @@ email.addFile({
 
 {% endcodeblock %}
 
-<h3>Testing Your Code</h3>
+{% anchor h3 %}
+Testing Your Code
+{% endanchor %}
 <p>Tests located in the <em>test/lib</em> folder can be ran as-is and should all pass if your code is valid. Tests that are located in the <em>test/intergration</em> folder require valid SendGrid account credentials inserted into <em>test/test.setup</em> in order to run.</p>
 
-<blockquote><span class="label label-info">Info</span> Running tests requires a valid SendGrid account and will consume credits.</blockquote>
+{% info %}
+Running tests requires a valid SendGrid account and will consume credits.
+{% endinfo %}
 
 <p>When you're ready, you can run your tests with this command:</p>
 
