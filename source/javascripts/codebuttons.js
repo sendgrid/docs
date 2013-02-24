@@ -15,13 +15,13 @@ initZclip = function(e) {
   var options = {
       path: path + 'ZeroClipboard.swf',
       copy: function(){
-        $('.copycode').html('<i class="icon-file"></i> Copy');
+        $('.copycode').html('<i class="icon-file"> </i> Copy');
         var element = $('#' + this.id.replace('copy_','code_')); 
         var text = element.text(); 
         return text; 
       },
       afterCopy:function(){
-        $(this).html('<i class="icon-check"></i> Copied');
+        $(this).html('<i class="icon-check"> </i> Copied');
       }
     }
 
