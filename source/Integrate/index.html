@@ -10,20 +10,31 @@ navigation:
 Send Email From Your Application {% endanchor %}
 
 <p>SendGrid provides two ways to send email: through our SMTP relay or 
-through our <a href="{{ root_url }}/API_Reference/Web_API/index.html">web API</a>. We recommend using SMTP in most cases based on the large number of libraries 
-and documentation available for that protocol.</p>
+through our <a href="{{root_url}}/API_Reference/Web_API/index.html">web API</a>.</p>
+
+{% info %}
+We recommend using SMTP in most cases based on the large number of libraries 
+and documentation available for that protocol.
+{% endinfo %}
 
 {% anchor h3 %}
 SMTP
 {% endanchor %}
 
 <p>SMTP is the fastest way to get started since it requires only minimal
-changes: Change your SMTP username and password to your 
-SendGrid credentials, and change the server host name to 
-<strong>smtp.sendgrid.net</strong>. SendGrid supports ports 25 for TLS/plain 
-connections, 465 for SSL connections, and 587 for TLS/plain connections.
+changes: 
+
+<ul>
+  <li>Change your SMTP username and password to your SendGrid credentials</li>
+  <li>Set the server host name to <strong>smtp.sendgrid.net</strong></li> 
+  <li>Use ports 25 or 587 for TLS/plain connections and port 465 for SSL
+  connections</li>
+</ul>
+
+{% info %}
 For most users we suggest <strong>port 587</strong> to avoid rate limits set by some 
-hosting companies.</p>
+hosting companies.
+{% endinfo %}
 
 <p>SendGrid extends SMTP with the X-SMTPAPI header, giving you more
 control over how SendGrid sends your email. See the <a href="{{ root_url }}/API_Reference/SMTP_API/index.html">SMTP API</a> documentation for
@@ -33,10 +44,10 @@ more information.</p>
 Web API
 {% endanchor %}
 
-<p>In some cases the <a href="{{ root_url }}/API_Reference/Web_API/index.html">web API</a> has some advantages over SMTP: </p>
+<p>In some cases the <a href="{{ root_url }}/API_Reference/Web_API/index.html">web API</a> has advantages over SMTP: </p>
 
 <ul>
-  <li>If your ISP blocks all output mail ports and your 
+  <li>If your ISP blocks all outbound mail ports and your 
   only option is HTTP.</li>
 
   <li>If there is high latency between your site and ours, the web API
@@ -48,6 +59,17 @@ Web API
   <li>If you build a library to send email, developing 
   against a web API provides quicker development.</li>
 </ul>
+
+{% anchor h2 %}
+Receive Email From Your Application 
+{% endanchor %}
+<p>Though SendGrid does not store messages or provide mailboxes,
+the <a href="{{ root_url }}/API_Reference/Webhooks/parse.html">Inbound Parse
+  Webhook</a> parses the email bodies and attachments from incoming emails
+and posts them to your web application.</p> 
+
+<p>Examples include posting blog articles via email or processing email
+replies.</p>
 
 {% anchor h2 %} 
 Power Users and High Volume Senders 
@@ -67,12 +89,3 @@ more complex parts of the SMTP protocol, such as connection reuse and
 pipelining. With these techniques a mail server sends significantly more
 traffic in a given time than if you have individual scripts connecting for each message.</p>
 
-{% anchor h2 %}
-Receive Email From Your Application 
-{% endanchor %}
-<p>Though SendGrid does not store messages or provide mailboxes,
-SendGrid parses the email bodies and attachments from incoming emails
-and posts them to your web application. Examples include posting blog articles via 
-email or processing email replies. For details on how to integrate your 
-application to start receiving emails please refer to our 
-<a href="{{ root_url }}/API_Reference/Webhooks/parse.html">Inbound Parse Webhook</a>.
