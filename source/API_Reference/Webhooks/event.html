@@ -31,7 +31,6 @@ http(s)://username:password@domain/foo.php
 If you wish to receive encrypted posts, we require that your callback URL support SSL v2.
 {% endwarning %}
 
-<p>To setup the even
 {% anchor h2 %}
 Requests 
 {% endanchor %}
@@ -43,11 +42,11 @@ Requests
 If your email traffic generates lots of events, the incoming amount of data
 can easily overload a web server if not configured properly for scalability. 
 To reduce the number of requests to your server, enable the batched events option.
-
-<p>Keep in mind that even with batched events enabled, your servers can potentially see a
+<br/><br/>
+Keep in mind that even with batched events enabled, your servers can potentially see a
 large number of POSTs from the webhook as we POST batches from multiple
 servers. You can load test your endpoints with <a
-  href="http://loader.io">loader.io</a> for free.</p>
+  href="http://loader.io">loader.io</a> for free.
 {% endwarning %}
 
 {% anchor h2 %}
@@ -119,8 +118,6 @@ Event Types
 </tr>
 </tbody>
 </table>
-
-Invalid SMTPAPI header
 
 <p>The following image shows where events can be generated as email is being processed: </p>
 <p><img title="Event Flow" src="{{ root_url }}/images/event_1.png" alt="" width="690" height="349" /></p>
