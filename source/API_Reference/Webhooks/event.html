@@ -40,14 +40,14 @@ Requests
 <p>SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. This means that if you use batched events these events will drop due to 24 hours before the queue can max out. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.</p>
 
 {% warning %}
-If your email traffic and configuration generate many events, the incoming amount of data
+If your email traffic generates lots of events, the incoming amount of data
 can easily overload a web server if not configured properly for scalability. 
 To reduce the number of requests to your server, enable the batched events option.
 
-Keep in mind that even with batched events enabled, your servers can potentially see a
+<p>Keep in mind that even with batched events enabled, your servers can potentially see a
 large number of POSTs from the webhook as we POST batches from multiple
 servers. You can load test your endpoints with <a
-  href="http://loader.io">loader.io</a> for free.
+  href="http://loader.io">loader.io</a> for free.</p>
 {% endwarning %}
 
 {% anchor h2 %}
@@ -66,7 +66,28 @@ Event Types
 </tr>
 <tr>
 <td>Dropped</td>
-<td>Recipient exists in one or more of your Suppression Lists: Bounces, Spam Reports, Unsubscribes.</td>
+<td>You may see the following drop reasons:
+  <ul>
+    <li>
+      Invalid SMTPAPI header
+    </li>
+    <li>
+     Spam Content (if spam checker app enabled)
+    </li>
+    <li>
+     Unsubscribed Address
+    </li>
+    <li>
+     Bounced Address
+    </li>
+    <li>
+     Spam Reporting Address
+    </li>
+    <li>
+     Invalid
+    </li>
+  </ul>
+</td>
 </tr>
 <tr>
 <td>Delivered</td>
@@ -98,6 +119,8 @@ Event Types
 </tr>
 </tbody>
 </table>
+
+Invalid SMTPAPI header
 
 <p>The following image shows where events can be generated as email is being processed: </p>
 <p><img title="Event Flow" src="{{ root_url }}/images/event_1.png" alt="" width="690" height="349" /></p>
