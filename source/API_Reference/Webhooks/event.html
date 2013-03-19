@@ -40,7 +40,14 @@ Requests
 <p>SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. This means that if you use batched events these events will drop due to 24 hours before the queue can max out. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.</p>
 
 {% warning %}
-If your email traffic and configuration generate many events, the incoming amount of data can easily overload a web server if not configured properly for scalability. To reduce the number of requests to your server, enable the batched events option.
+If your email traffic and configuration generate many events, the incoming amount of data
+can easily overload a web server if not configured properly for scalability. 
+To reduce the number of requests to your server, enable the batched events option.
+
+Keep in mind that even with batched events enabled, your servers can potentially see a
+large number of POSTs from the webhook as we POST batches from multiple
+servers. You can load test your endpoints with <a
+  href="http://loader.io">loader.io</a> for free.
 {% endwarning %}
 
 {% anchor h2 %}
