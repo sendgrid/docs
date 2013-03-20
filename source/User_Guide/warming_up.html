@@ -11,27 +11,41 @@ navigation:
 {% anchor h2 %}
 What does it actually mean to "warm up" an IP address? 
 {% endanchor %}
-<p>IP warming is a gradual process that happens over time, with the goal of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or “cold” (ie, recently dormant) IP address, they will take notice of it and immediately begin evaluating the traffic coming from that IP. Since volume is perhaps the most telling factor in the eyes of ISP SPAM filters, it is best to begin sending low to moderate volume (e.g., up to 1 million emails/month), eventually working your way up to larger volumes (e.g., over 1 million emails/month). This gives the “powers that be” a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.</p>
+<p>IP warming is a gradual process that happens over time, with the goal
+of establishing a reputation as a legitimate email sender in the eyes of
+ISPs (Internet Service Providers). When an ISP observes email suddenly
+coming from a new or "cold" (ie, recently dormant) IP address, they will
+take notice of it and immediately begin evaluating the traffic coming
+from that IP. Since volume is perhaps the most telling factor in the
+eyes of ISP SPAM filters, it is best to begin sending low to moderate
+volume (e.g., up to 1 million emails/month), eventually working your way
+up to larger volumes (e.g., over 1 million emails/month). This gives the
+receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.</p>
 
 <p>It should be noted that taking this gradual, ramping approach does not guarantee smooth sailing for ever more. It remains important to follow other email <a href="http://blog.sendgrid.com/10-tips-to-keep-email-out-of-the-spam-folder">best practices</a> – send acceptable content that your users want to get, maintain quality lists and send your email on a consistent basis.</p>
 
 {% anchor h2 %}
 Does my IP need to be warmed up? And if so, why? 
 {% endanchor %}
-<p>If you are sending email from a new or “cold” IP address, the various ISPs have no basis from which to assign you a sending reputation. Since this reputation will eventually determine whether or not your emails will get past their SPAM filters, it’s obviously pretty darn important. In the case that your are sending a very low volume (e.g., < 10,000 emails/month) of email, you will likely stay off the ISPs’ radars for the most part. However, if you are exceeding this approximate threshold, you should make the warmup process a priority in order to start off on the right foot. We suggest that a warmup period is useful regardless of volume.</p>
+<p>If you are sending email from a new or cold" IP address, the various
+ISPs have no basis from which to assign you a sending reputation. Since
+this reputation will eventually determine whether or not your emails
+will get past their SPAM filters, it's obviously pretty darn important.
+In the case that your are sending a very low volume (e.g., &lt; 10,000
+emails/month) of email, you will likely stay off the ISPs' radars for the most part. However, if you are exceeding this approximate threshold, you should make the warmup process a priority in order to start off on the right foot. We suggest that a warmup period is useful regardless of volume.</p>
 
-<p>Often times, the history of your IP is also an important determinant of an ISPs initial evaluation. Here are a few tools you can use to check the reputation of any IP: Return Path's <a href="https://senderscore.org">SenderScore.org</a> and Cisco's IronPort <a href="http://www.senderbase.org">SenderBase.org</a></p>
+<p>Often times, the history of your IP is also an important determinant of an ISPs initial evaluation. Here are a few tools you can use to check the reputation of any IP: Return Path's <a href="https://senderscore.org">SenderScore.org</a> and Cisco's IronPort <a href="http://www.senderbase.org">SenderBase.org</a></p>
 
 {% anchor h2 %}
 How does one go about warming up an IP? What does it entail in terms of volume, time frame, etc? 
 {% endanchor %}
-<p>The first time you send email from a fresh IP, ISP SPAM filters have to make a quick decision. Unfortunately, in this case they don’t have enough information to make an educated decision. Therefore, you have to give them something to work with – just not too much and not too quickly!
+<p>The first time you send email from a fresh IP, ISP SPAM filters have to make a quick decision. Unfortunately, in this case they don't have enough information to make an educated decision. Therefore, you have to give them something to work with – just not too much and not too quickly!
 </p>
 
-<p>Below are a few suggested “schedules” for ramping up your sending:</p>
+<p>Below are a few suggested schedules for ramping up your sending:</p>
 
 {% anchor h3 %}
-For newsletters & marketing campaigns
+For newsletters &amp; marketing campaigns
 {% endanchor %}
 
 <h4>Conservative Approach:</h4>
@@ -61,6 +75,11 @@ For transactional email
 {% anchor h2 %}
 4. What does SendGrid do to prepare its IPs for their customers? 
 {% endanchor %}
-<p>We are constantly working on different approaches to allow our customers to begin sending the email volume that their business demands as soon as possible. We take the first step of evaluating the history and cleanliness of the IPs that we put into our inventory – if a block doesn’t meet our standards, we send them back. Once we’ve determined that our IPs have an acceptable pre-existing reputation, we then distribute those with the highest reputations first. This gives those with lesser reputations some time to cool off a bit and get ready for future assignment. We will continue to innovate in this space, because we see it as an important piece of our overall service offering.</p>
+<p>We are constantly working on different approaches to allow our
+customers to begin sending the email volume that their business demands
+as soon as possible. We take the first step of evaluating the history
+and cleanliness of the IPs that we put into our inventory – if a block
+doesn't meet our standards, we send them back. Once we've determined that our IPs have an acceptable pre-existing reputation, we then distribute those with the highest reputations first. This gives those with lesser reputations some time to cool off a bit and get ready for future assignment. We will continue to innovate in this space, because we see it as an important piece of our overall service offering.</p>
 
-<p>You might be thinking, “why haven’t I encountered this whole warmup issue at other ESPs?” The answer is simple: many of them, especially those focused on marketing email tools, do not offer dedicated IP addresses to their customers. Most often, ESPs simply place everyone on a shared cluster by default. While it may be less cost effective and more technically complicated, we think it is important to empower our users by allowing them to earn their own reputation on their own IP.</p>
+<p>You might be thinking, "why haven't I encountered this whole warmup
+issue at other ESPs?" The answer is simple: many of them, especially those focused on marketing email tools, do not offer dedicated IP addresses to their customers. Most often, ESPs simply place everyone on a shared cluster by default. While it may be less cost effective and more technically complicated, we think it is important to empower our users by allowing them to earn their own reputation on their own IP.</p>

@@ -22,7 +22,7 @@ Requests
 {% anchor h3 %}
 Delivered
 {% endanchor %}
-<p>A delivery is recorded when a request to send an email results in an email being delivered to the end recipient. However, delivered does not necessarily mean that your email is in the recipient’s inbox. Delivered means the message was accepted by the receiving server, but they does not necessarily mean the message reached the inbox.</p>
+<p>A delivery is recorded when a request to send an email results in an email being delivered to the end recipient. However, delivered does not necessarily mean that your email is in the recipient's inbox. Delivered means the message was accepted by the receiving server, but they does not necessarily mean the message reached the inbox.</p>
 
 {% info %} 
 If an email is indicated as delivered you can be certain that it was not deferred by the ISP.
@@ -31,7 +31,7 @@ If an email is indicated as delivered you can be certain that it was not deferre
 {% anchor h3 %}
 Clicks &amp; Unique Clicks
 {% endanchor %}
-<p>The “Clicks” statistic is the total number of times your users have clicked on the various links within your emails. “Unique clicks” represents the number of unique individuals that have clicked the links in your emails. This requires that the Click Tracking app be enabled.</p>
+<p>The "Clicks" statistic is the total number of times your users have clicked on the various links within your emails. "Unique clicks" represents the number of unique individuals that have clicked the links in your emails. This requires that the Click Tracking app be enabled.</p>
 
 {% anchor h3 %}
 Opens &amp; Unique Opens
@@ -41,7 +41,7 @@ Opens &amp; Unique Opens
 {% anchor h3 %}
 Unsubscribes
 {% endanchor %}
-<p>In order to maintain compliance with <a title="CAN-SPAM" href="http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business">CAN-SPAM laws</a>, any email that is sent in bulk to a mass audience must include a subscription management link. SendGrid provides a “Subscription Tracking” app that automatically adds this link to your emails. When someone clicks that link within their email, they are added to your “unsubscribe” list. Any recipients that are added to this list will be excluded from future mailings.</p>
+<p>In order to maintain compliance with <a title="CAN-SPAM" href="http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business">CAN-SPAM laws</a>, any email that is sent in bulk to a mass audience must include a subscription management link. SendGrid provides a "Subscription Tracking" app that automatically adds this link to your emails. When someone clicks that link within their email, they are added to your "unsubscribe" list. Any recipients that are added to this list will be excluded from future mailings.</p>
 
 <p>It's no surprise that sending messages to addresses that have explicitly unsubscribed from any of your email messages is detrimental to your reputation as a sender. While this functionally only applies to one-to-many message formats (i.e., newsletters) and not to transactional email messages, make sure to include subscription management functionality in your marketing newsletters and other mass messaging.</p>
 
@@ -62,23 +62,23 @@ Bounces &amp; Repeat Bounces
 {% anchor h3 %}
 Hard Bounce
 {% endanchor %}
-<p>This type of <strong>bounce</strong> occurs when the receiving server returns a 500-class error, communicating no additional attempts to deliver to that server or email address are needed. An common reason for a hard bounce is “no mailbox for user.”</p>
+<p>This type of <strong>bounce</strong> occurs when the receiving server returns a 500-class error, communicating no additional attempts to deliver to that server or email address are needed. An common reason for a hard bounce is "no mailbox for user."</p>
 
 {% anchor h3 %}
 Spam reports &amp; repeat spam reports
 {% endanchor %}
-<p>If a recipient of your email feels that they received it in error, or simply did not wish to get the email from you, they may click the “report spam” or “junk” button. <strong>Spam reports</strong> can negatively affect your reputation and deliverability, so it is very important to make sure you send to people who really want your messages. You should always include a clear, easy way to opt out of future messages from your organization, by way of a subscription management link. Finally, a clear and fair initial opt-in process will mitigate potential spam reports down the road. </p>
+<p>If a recipient of your email feels that they received it in error, or simply did not wish to get the email from you, they may click the "report spam" or "junk" button. <strong>Spam reports</strong> can negatively affect your reputation and deliverability, so it is very important to make sure you send to people who really want your messages. You should always include a clear, easy way to opt out of future messages from your organization, by way of a subscription management link. Finally, a clear and fair initial opt-in process will mitigate potential spam reports down the road.  <strong>Repeat Spam reports</strong> are the number of messages that were sent to addresses that had reported mail as spam, and were therefore dropped. Think of the number more as "number of emails suppressed because the address reported email as spam". </p>
 <p><a title="Spam Reports" href="http://sendgrid.com/spamReports">View your Spam Reports</a></p>
 
 {% anchor h3 %}
 Invalid email
 {% endanchor %}
-<p>An <strong>invalid email</strong> occurs when you attempt to send to an email address that is formatted in a manner that does not meet internet email format standards. Examples include addresses without the “@” sign, addresses that include certain special characters, or spaces in an address. This response comes from our own server, since an invalid email is impossible to even attempt to send to its [non-existent] destination.</p> <p><a title="Invalid Emails" href="http://sendgrid.com/invalidEmail">View your list of Invalid Emails</a></p>
+<p>An <strong>invalid email</strong> occurs when you attempt to send to an email address that is formatted in a manner that does not meet internet email format standards. Examples include addresses without the "@" sign, addresses that include certain special characters, or spaces in an address. This response comes from our own server, since an invalid email is impossible to even attempt to send to its [non-existent] destination.</p> <p><a title="Invalid Emails" href="http://sendgrid.com/invalidEmail">View your list of Invalid Emails</a></p>
 
 {% anchor h3 %}
 Blocks
 {% endanchor %}
-<p>If you receive a block notification, this means that the IP address from which you are sending has been placed on a black list of some sort. ISPs and organizations work from various blacklists, some of which are reputable and valid. In the event that you are placed on a blacklist, SendGrid will contact the ISP in question on your behalf and submit your IP for removal, once we’ve determined that your email are in fact legitimate and appropriate.</p> <p><a href="http://sendgrid.com/blocks">View your list of Blocks</a></p>
+<p>If you receive a block notification, this means that the IP address from which you are sending has been placed on a black list of some sort. ISPs and organizations work from various blacklists, some of which are reputable and valid. In the event that you are placed on a blacklist, SendGrid will contact the ISP in question on your behalf and submit your IP for removal, once we've determined that your email are in fact legitimate and appropriate.</p> <p><a href="http://sendgrid.com/blocks">View your list of Blocks</a></p>
 
 {% anchor h3 %}
 Deferrals
@@ -88,7 +88,7 @@ Deferrals
 {% anchor h3 %}
 Drops
 {% endanchor %}
-<p>In certain cases, SendGrid will “Drop” a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
+<p>In certain cases, SendGrid will "Drop" a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
 
 {% info %}
  For a detailed list of common error messages, please visit our <a href="{{ root_url }}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.

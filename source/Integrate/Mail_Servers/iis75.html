@@ -14,18 +14,18 @@ This document was written using Windows Server 2008 R2 running IIS version 7.5 a
 IIS 7.5 Configuration 
 {% endanchor %}
 
-<p>Before you get going, you’ll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.</p>
+<p>Before you get going, you'll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.</p>
 
 <ol>
 	<li>Open IIS 7.0/7.5 Manager in Windows</li>
 	<li>Click on your site (see image below, noting that your configuration will look different), and the main configuration options page will be displayed to the right</li>
-	<li>Double-click on the “SMTP E-mail” under the ASP.NET section (to get the below screen)</li>
-	<li>In the email address field: type the email address that will be the “sender”</li>
-	<li>Click on the “Deliver e-mail to SMTP server” radio button if not already enabled</li>
+	<li>Double-click on the "SMTP E-mail" under the ASP.NET section (to get the below screen)</li>
+	<li>In the email address field: type the email address that will be the "sender"</li>
+	<li>Click on the "Deliver e-mail to SMTP server" radio button if not already enabled</li>
 	<li>In the SMTP Server field: type localhost</li>
 	<li>In the Port field: type 25</li>
-	<li>In Authentication Settings click the “Not required” option.</li>
-	<li>On the right side “Actions” pane: click Apply</li>
+	<li>In Authentication Settings click the "Not required" option.</li>
+	<li>On the right side "Actions" pane: click Apply</li>
 </ol>
 
 <center><img src="{{ root_url }}/images/iis_mgr_site.png" width="593" height="489"></center>
