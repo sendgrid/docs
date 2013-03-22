@@ -114,6 +114,7 @@ connection.open()
 email = mail.EmailMessage('Subject here', 'Here is the message.', 'testing@sendgrid.net', ['sendgrid@hotmail.com'], headers={"X-SMTPAPI": "{\"to\": [ \"firstaddress@domain1.com\",\"secondaddress@domain2.com\" ], \"category\": \"DJANGOTEST\"}"}, connection=connection)
 
 email.send()
+connection.close()
 {% endcodeblock %}
 <p>Then use the SmtpApiHeader, like in the example below:</p>
 
