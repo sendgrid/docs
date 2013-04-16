@@ -50,6 +50,40 @@ Pages have a block of YAML at the top that sets a few options. They are pretty s
 
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
+### Custom Liquid Tags
+There are some custom plugins (look in the `plugins` folger) that define new liquid blocks for use in pages.
+
+You can create anchor tags that will have named anchors generated for them automatically with links on hover. 
+The parameter is the wrapping element to use.
+
+```
+{% anchor h2 %} 
+Some Anchor Text
+{% endanchor %}
+```
+
+Similarly you can create info and warning blocks:
+
+```
+{% info %}
+Some info for a breakout block.
+{% endinfo %}
+
+{% warning %}
+...And a warning breakout.
+{% endwarning %}
+```
+
+If you are working on API reference docs, you can generate XML and JSON nav tabs with a liquid tag like so:
+
+```
+{% xmljsontabs foo %}
+```
+
+where `foo` is a string unique to the page, e.g. a method name.
+
+Generating containers and content via liquid tag is in the works.
+
 ## JS and CSS, etc
 Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:
 > You need Java installed and available on your PATH. During gem installation, Juicer will download and install YUI Compressor, Closure Compiler, JsLint and Rhino for you.
