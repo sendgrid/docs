@@ -1,3 +1,11 @@
+var navFadeIn = function(){
+  $('.sidebar-nav').fadeTo(200, 1);
+}
+
+var navFadeOut = function(){
+  $('.sidebar-nav').fadeTo(200, .3);
+}
+
 var saveTreeState = function(){
 	parent_nodes = $('.sidebar-nav .parent'); 
 
@@ -26,6 +34,7 @@ var loadTreeState = function(){
 }
 
 $(function() {
+  $('.sidebar-nav').hover(navFadeIn, navFadeOut);
 	loadTreeState();
 	if($('#nav-menu').length) {
 		CollapsibleLists.applyTo(document.getElementById('nav-menu'));
