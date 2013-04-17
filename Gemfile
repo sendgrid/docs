@@ -15,9 +15,9 @@ group :development do
   gem 'liquid', '~> 2.3.0'
 end
 
+gem 'capistrano'
+gem 's3-static-site'
 gem 'sinatra', '~> 1.3.2'
 gem 'nokogiri'
 gem 'juicer'
 gem 'indextank'
-gem 'prawn'
-gem 'pdfkit'
