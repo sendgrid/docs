@@ -3,6 +3,10 @@ body {
 	line-height:24px;
 }
 
+p {
+	margin:12px 0;
+}
+
 article {
   max-width:725px;
 }
