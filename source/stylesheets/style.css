@@ -47,10 +47,10 @@ line-height: 26px;
 }
 
 #content img {
-	border-bottom: 2px solid #CCC;
-	border-top: 2px solid #CCC;
-	padding-top:5px;
-	padding-bottom:5px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding-top:12px;
+	padding-bottom:12px;
 }
 
 li { line-height:24px; }
@@ -225,7 +225,7 @@ li.collapsibleListClosed{
 }
 
 .page-header {
-padding-bottom: 12px;
-margin: 12px 0;
-border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  margin: 12px 0;
+  border-bottom: 1px solid #ddd;
 }
