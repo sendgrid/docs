@@ -217,3 +217,15 @@ li.collapsibleListClosed{
 	cursor: pointer;
 	padding-left: 17px;
 }
+
+.breadcrumb { 
+  font-size: 15px;
+  padding: 3px 10px;
+  margin: 0 0 12px;
+}
+
+.page-header {
+padding-bottom: 12px;
+margin: 12px 0;
+border-bottom: 1px solid #eee;
+}
