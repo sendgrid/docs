@@ -32,23 +32,24 @@
   {% if page.responsive == false %}
   <link href="{{ root_url }}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endif %}
-<script type="text/javascript">
+  
+  <script type="text/javascript">
 
- // Add a script element as a child of the body
- function downloadJSAtOnload() {
- var element = document.createElement("script");
- element.src = "{{ root_url }}{% minified_js_file %}";
- document.body.appendChild(element);
- }
+   // Add a script element as a child of the body
+   function downloadJSAtOnload() {
+   var element = document.createElement("script");
+   element.src = "{{ root_url }}{% minified_js_file %}";
+   document.body.appendChild(element);
+   }
 
- // Check for browser support of event handling capability
- if (window.addEventListener)
- window.addEventListener("load", downloadJSAtOnload, false);
- else if (window.attachEvent)
- window.attachEvent("onload", downloadJSAtOnload);
- else window.onload = downloadJSAtOnload;
+   // Check for browser support of event handling capability
+   if (window.addEventListener)
+   window.addEventListener("load", downloadJSAtOnload, false);
+   else if (window.attachEvent)
+   window.attachEvent("onload", downloadJSAtOnload);
+   else window.onload = downloadJSAtOnload;
 
-</script>
+  </script>
 
   <link href="{{ root_url }}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   {% include custom/head.html %}
