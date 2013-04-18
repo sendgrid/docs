@@ -183,7 +183,7 @@ body:before {
 	margin-top:-32767px;/
 }
 
-.sidebar-nav > #nav-menu { border-right: 1px solid #ddd; font-size: 17px; line-height:21px; }
+.sidebar-nav > #nav-menu { border-right: 1px solid #ddd; font-size: 18px; line-height:21px; }
 
 .callout > a { color: rgb(240, 132, 2); }
 .callout > h2 { font-size: 18px; }

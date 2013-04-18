@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% unless page.sidebar == false %}
-<aside class="sidebar-nav span3">
+<aside class="sidebar-nav span4">
     {% include_array default_asides %}
 </aside>
 {% endunless %}
@@ -12,8 +12,8 @@ layout: default
 <section class="span12">{% breadcrumbs %}</section>
 <article role="article" class="span12">
 {% else %}
-<section class="span9">{% breadcrumbs %}</section>
-<article role="article" class="span9">
+<section class="span8">{% breadcrumbs %}</section>
+<article role="article" class="span8">
 {% endif %}
     {% if page.title and page.showTitle != false %}
   <header class="page-header">
