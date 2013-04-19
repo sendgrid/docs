@@ -14,6 +14,16 @@ navigation:
 Metrics 
 {% endanchor %}
 
+{% info %}
+ Most of the metrics we track for you are available from our web
+interface or through our <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a>. We are working on
+adding the new beta statistics.
+{% endinfo %}
+
+{% info %}
+ For a detailed list of common error messages, please visit our <a href="{{ root_url }}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
+{% endinfo %}
+
 {% anchor h3 %}
 Requests
 {% endanchor %}
@@ -88,10 +98,82 @@ Drops
 {% endanchor %}
 <p>In certain cases, SendGrid will "Drop" a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
 
-{% info %}
- For a detailed list of common error messages, please visit our <a href="{{ root_url }}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
-{% endinfo %}
+{% anchor h2 %}
+Advanced Statistics
+{% endanchor %}
 
 {% info %}
- All of the metrics we track for you are available from our web interface or through our <a href="{{ root_url }}/API_Reference/Webhooks/event.html">Event API</a>.
+These stats are in beta. Data may be delayed by up to 10 hours. The top
+of these reports will indicate the last time the data was updated.
+{% endinfo %}
+
+{% anchor h3 %}
+ISP
+{% endanchor %}
+
+<p>The <a href="http://sendgrid.com/statistics/isp">ISP report</a> highlights how your mail performs across all the major
+ISPs, such as Hotmail, Yahoo, Gmail, etc.</p>
+
+{% anchor h3 %}
+Geography
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/geo">The geographical
+  report</a> shows a map of where your emails are being opened and
+clicked around the world.</p>
+
+{% anchor h3 %}
+Device
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/devices">The device
+  report</a> breaks down which devices are most frequently being used to
+open your mail. </p>
+
+<p>Available devices:</p>
+
+<table class="table table-striped">
+  <tr>
+    <th>Device</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Desktop</td>
+    <td>Email software on desktop computer I.E. Outlook, Sparrow, or
+      Apple Mail.</td>
+  </tr>
+  <tr>
+    <td>WebMail</td>
+    <td>A web-based email client I.E. Yahoo, Google, AOL, or
+      Outlook.com.</td>
+  </tr>
+  <tr>
+    <td>Phone</td>
+    <td>A smart phone; IPhone, Android, Blackberry, etc.</td>
+  </tr>
+  <tr>
+    <td>Tablet</td>
+    <td>A tablet computer: IPad, android based tablet, etc.</td>
+  </tr>
+  <tr>
+    <td>Other</td>
+    <td>An unrecognized Device.</td>
+  </tr> 
+</table>
+
+{% anchor h3 %}
+Browser
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/browsers">The browser
+  report</a> shows which browsers are most frequently clicking links in
+your mail.</p>
+
+{% info %}
+There are similarities between Device and Browser statistics and are
+working on ways to consolidate the data. The current reasoning for two
+separate reports is that in some cases an open from a device can result
+with a click from a browser that represents the device (e.g. Open on an
+Iphone -> Click on an Iphone), in other cases an open from one device
+can result in a click from a different browser (e.g. an Open on a desktop computer -> Click on FireFox).  
 {% endinfo %}
