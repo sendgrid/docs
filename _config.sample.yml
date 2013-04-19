@@ -8,7 +8,7 @@ url: http://sendgrid.com/docs
 title: SendGrid Documentation - Email Delivery. Simplified.
 author: SendGrid
 description:
-version: 1.0.4
+version: DEV
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -27,7 +27,7 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: / #http://www.sendgrid.com/docs/ #/
+root: /
 s3_bucket: sg-docs
 permalink: /blog/:year/:month/:day/:title/
 source: source
@@ -129,3 +129,4 @@ folder_weights:
  "/Apps": 55
  "/API Reference": 50
  "/API Workshop": 40
+
