@@ -8,7 +8,7 @@ navigation:
 
 <p>Categories help organize your email analytics by enabling you to tag emails by type.</p>
 
-<p>Just as you can view the statistics on all your activity under the '<a href="{{ root_url }}/Delivery_Metrics/">Statistics</a>' tab, you can go a step further and view the statistics on a particular category.</p>
+<p>Just as you can view the statistics on all your activity under the '<a href="{{root_url}}/Delivery_Metrics/">Statistics</a>' tab, you can go a step further and view the statistics on a particular category.</p>
 
 <p>The events that can be associated with category include:</p>
 <ul>
@@ -19,7 +19,7 @@ navigation:
 	<li>Spam Reports</li>
 	<li>Unsubscribes</li>
 </ul>
-<p>The actual statistics included vary depending upon the set of enabled <a href="{{ root_url }}/Apps/">Apps</a>. Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated App is enabled.</p>
+<p>The actual statistics included vary depending upon the set of enabled <a href="{{root_url}}/Apps/">Apps</a>. Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated App is enabled.</p>
 
 {% warning %}
 Categories must be in 7bit encoding using the US-ASCII character set. 
@@ -36,7 +36,7 @@ Categories should be used to group messages together. If you need to attach uniq
 {% anchor h2 %}
 Example 
 {% endanchor %}
-<p>You can use SendGrid's <a href="{{ root_url }}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
+<p>You can use SendGrid's <a href="{{root_url}}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
 
 {% codeblock lang:javascript %}{
   "category": "Example Category"

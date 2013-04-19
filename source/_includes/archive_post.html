@@ -1,7 +1,7 @@
 <div class="well">
 {% capture category %}{{ post.categories | size }}{% endcapture %}
 {% anchor h2 %}
-<a href="{{ root_url }}{{ post.url }}">{{post.title}}</a> 
+<a href="{{root_url}}{{ post.url }}">{{post.title}}</a> 
 {% endanchor %}
 <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
 {% if category != '0' %}
