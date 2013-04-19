@@ -16,21 +16,21 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="{{ root_url }}/images/favicon.ico" rel="icon">
+  <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
   <!--[if lt IE 8]>
-    <link href="{{ root_url }}{% minified_css_file %}" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="{{root_url}}{% minified_css_file %}" media="screen, projection" rel="stylesheet" type="text/css">
   <![endif]-->
 
   <!--[if !IE]>-->
-    <link href="{{ root_url }}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
+    <link href="{{root_url}}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
   <!--<![endif]-->
 
   {% unless page.responsive == false %}
-  <link href="{{ root_url }}/stylesheets/bootstrap/responsive.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+  <link href="{{root_url}}/stylesheets/bootstrap/responsive.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endunless %}
   {% if page.responsive == false %}
-  <link href="{{ root_url }}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
+  <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endif %}
   
   <script type="text/javascript">
@@ -38,7 +38,7 @@
    // Add a script element as a child of the body
    function downloadJSAtOnload() {
    var element = document.createElement("script");
-   element.src = "{{ root_url }}{% minified_js_file %}";
+   element.src = "{{root_url}}{% minified_js_file %}";
    document.body.appendChild(element);
    }
 
@@ -51,7 +51,7 @@
 
   </script>
 
-  <link href="{{ root_url }}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
   {% include custom/head.html %}
   {% include google_analytics.html %}
 </head>
