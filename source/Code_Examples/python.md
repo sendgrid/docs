@@ -109,7 +109,7 @@ easy_install sendgrid
 SendGrid provides two methods of sending email: the Web API, and SMTP
 API. SendGrid recommends using the SMTP API for sending emails, but the
 Web API has less communication overhead. Read more about [SMTP vs Web
-API]({{ root_url }}/Integrate/index.html).
+API]({{root_url}}/Integrate/index.html).
 
 This library implements a common interface to make it very easy to use either API.
 
@@ -255,7 +255,7 @@ s.web.send(message)
 
 You can mark messages with optional categories to give better
 visibility to email statistics (opens, clicks, etc.). You can add up to
-10 categories per email message. Read more about [Categories]({{ root_url }}//Delivery_Metrics/categories.html).
+10 categories per email message. Read more about [Categories]({{root_url}}//Delivery_Metrics/categories.html).
 
 To add categories to your message, use the message.add_category() method and pass a list of one or more category names. SendGrid will begin tracking statistics with these category names if the category name is new, or aggregate statistics for existing category names.
 
@@ -272,7 +272,7 @@ through the Event API. Use the message.add_unique_argument() method,
 which takes two parameters, a key and a value. To pass multiple
 keys/values, use message.set_unique_arguments() (note the plural method
 name) and pass a dictionary of key/value pairs. More about [Unique
-Arguments]({{ root_url }}/API_Reference/SMTP_API/unique_arguments.html).
+Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "plain body", "<b>Html here</b>")
@@ -294,7 +294,7 @@ SendGrid also allows you to send multi-recipient messages with unique
 information per recipient. This is commonly used for sending unique URLs
 or codes to a list of recipients in a single batch. You simply expand
 the data you pass to the message.add_to() method like the example below.
-Read more about [Substitutions]({{ root_url }}/API_Reference/SMTP_API/substitution_tags.html).
+Read more about [Substitutions]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "Hello %name%, your code is %code%", "<b>Hello %name%, your code is %code%</b>")
@@ -312,7 +312,7 @@ Used in conjunction with Substitutions, Sections can be used to
 further customize messages for the end users, and acts like a second
 tier of substitution data. You can use message.set_section() to add a
 single section, or a pluralized message.set_sections() method to add
-several sections. More about [Sections]({{ root_url }}/API_Reference/SMTP_API/section_tags.html).
+several sections. More about [Sections]({{root_url}}/API_Reference/SMTP_API/section_tags.html).
 
 {% codeblock lang:python %}
 message = sendgrid.Message("from@mydomain.com", "subject", "Hello %name%, you work at %place%",
@@ -337,7 +337,7 @@ message.add_header("X-Mailer", "MyApp")
 
 ###Using Filter Settings
 
-[Filter Settings]({{ root_url }}/API_Reference/SMTP_API/apps.html) are used to enable and disable apps, and to pass
+[Filter Settings]({{root_url}}/API_Reference/SMTP_API/apps.html) are used to enable and disable apps, and to pass
 parameters to those apps.Here's an example of passing content to the 'footer' app:
 
 {% codeblock lang:python %}
