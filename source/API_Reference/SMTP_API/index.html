@@ -12,7 +12,7 @@ navigation:
   "category": "newuser"
 }
 {% endcodeblock %}
-<p>In this case, the header is telling the processing routine to assign this email the <a href="{{ root_url }}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
+<p>In this case, the header is telling the processing routine to assign this email the <a href="{{root_url}}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
 
 {% anchor h2 %}
 The X-SMTPAPI Header 
@@ -33,7 +33,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{ root_url }}/API_Reference/SMTP_API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
+	<a href="{{root_url}}/API_Reference/SMTP_API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
 </p>
 {% codeblock lang:javascript %}{
   "sub": {
@@ -50,7 +50,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{ root_url }}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+	<a href="{{root_url}}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
 </p>
 {% codeblock lang:javascript %}{
   "section": {
@@ -61,7 +61,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{ root_url }}/Delivery_Metrics/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
+	<a href="{{root_url}}/Delivery_Metrics/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
 </p>
 {% codeblock lang:javascript %}{
   "category": [
@@ -72,7 +72,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{ root_url }}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
+	<a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
 </p>
 {% codeblock lang:javascript %}{
   "unique_args": {
@@ -83,7 +83,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{ root_url }}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
+	<a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:javascript %}{
   "filters": {

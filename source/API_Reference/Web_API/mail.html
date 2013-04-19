@@ -40,7 +40,7 @@ send
        <td>This can also be passed in as an array, to send to multiple
          locations. Note that recipients passed in this parameter will
        be visible as part of the message. If you wish to hide the
-       recipients, use the TO parameter in the  <a href="{{ root_url }}/API_Reference/SMTP_API/index.html">x-smtpapi</a> header.</td>
+       recipients, use the TO parameter in the  <a href="{{root_url}}/API_Reference/SMTP_API/index.html">x-smtpapi</a> header.</td>
      </tr>
 
      <tr>
@@ -61,7 +61,7 @@ send
 
        <td>Must be in valid JSON format</td>
 
-       <td>Please review the <a href="{{ root_url }}/API_Reference/SMTP_API/index.html">SMTP API</a> to view
+       <td>Please review the <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> to view
        documentation on what you can do with the JSON headers</td>
      </tr>
 
@@ -150,9 +150,8 @@ send
        <td>Files to be attached. The file contents must be part of the multipart HTTP
        POST. Ex: files[file1.jpg]=<file contents>&files[file2.pdf]=<file
        contents><br />
-       <a href=
-       "http://docs.sendgrid.com/documentation/get-started/integrate/examples/php-example-using-the-web-api/"
-       title="PHP Example Using The Web API">Example Code</a></td>
+       <a href="{{root_url}}/Code_Examples/php.html#-Using-Attachments"
+       title="">Example Code (PHP)</a></td>
      </tr>
 
      <tr>
@@ -171,7 +170,7 @@ send
 
        <td>No</td>
 
-       <td>Must be in valid JSON format</td>
+       <td>Must be in valid JSON format without integers</td>
 
        <td>A collection of key/value pairs in JSON format. Each key represents a header
        name and the value the header value. Ex: {"X-Accept-Language": "en", "X-Mailer":

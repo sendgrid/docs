@@ -8,11 +8,21 @@ navigation:
 
 <p>SendGrid offers statistics a number of different metrics to report on what is happening with your messages. </p>
 
-<p><img class="clear" src="{{ root_url }}/images/delivery_metrics.png" alt=""></p>
+<p><img class="clear" src="{{root_url}}/images/delivery_metrics.png" alt=""></p>
 
 {% anchor h2 %}
 Metrics 
 {% endanchor %}
+
+{% info %}
+ Most of the metrics we track for you are available from our web
+interface or through our <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a>. We are working on
+adding the new beta statistics.
+{% endinfo %}
+
+{% info %}
+ For a detailed list of common error messages, please visit our <a href="{{root_url}}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
+{% endinfo %}
 
 {% anchor h3 %}
 Requests
@@ -31,12 +41,12 @@ If an email is indicated as delivered you can be certain that it was not deferre
 {% anchor h3 %}
 Clicks &amp; Unique Clicks
 {% endanchor %}
-<p>The "Clicks" statistic is the total number of times your users have clicked on the various links within your emails. "Unique clicks" represents the number of unique individuals that have clicked the links in your emails. This requires that the Click Tracking app be enabled.</p>
+<p>The “Clicks” percentage is the total number of times your users have clicked on the various links within your emails, divided by the total number of Delivered messages.  The “Unique clicks” percentage is the number of unique individuals that have clicked the links in your emails, divided by the total number of Delivered messages. This requires that the Click Tracking app be enabled.</p>
 
 {% anchor h3 %}
 Opens &amp; Unique Opens
 {% endanchor %}
-<p>SendGrid inserts a small, transparent image into all messages that are being tracked for Opens. When the client application loads images, it pulls the image data from SendGrid servers and registers an Open event. Not all email clients load images by default. Microsoft's Outlook, Apple's Mail.app, Mozilla's Thunderbird, and Google's Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and even clicked on a link, and it will never be counted as opened. This requires that the Open Tracking app be enabled.</p>
+<p>SendGrid inserts a small, transparent image into all messages that are being tracked for Opens. When the client application loads images, it pulls the image data from SendGrid servers and registers an Open event. Not all email clients load images by default. Microsoft's Outlook, Apple's Mail.app, Mozilla's Thunderbird, and Google's Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and even clicked on a link, and it will never be counted as opened. The "Opens" percentage is the total number of times your users opened your emails, divided by the total number of Delivered messages.  The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages. This requires that the Open Tracking app be enabled.</p>
 
 {% anchor h3 %}
 Unsubscribes
@@ -45,13 +55,11 @@ Unsubscribes
 
 <p>It's no surprise that sending messages to addresses that have explicitly unsubscribed from any of your email messages is detrimental to your reputation as a sender. While this functionally only applies to one-to-many message formats (i.e., newsletters) and not to transactional email messages, make sure to include subscription management functionality in your marketing newsletters and other mass messaging.</p>
 
-<p><img src="{{ root_url }}/images/delivery_metrics_apps.png" alt="" width="685" height="88"></p>
+<p><img src="{{root_url}}/images/delivery_metrics_apps.png" alt="" width="685" height="88"></p>
 
 {% info %}
  you can enable Click, Open, and Subscription Tracking in the <a href="http://sendgrid.com/app/">Apps</a> section of your SendGrid account.
 {% endinfo %}
-{% xmljsontabs  %}
-
 
 {% anchor h3 %}
 Bounces &amp; Repeat Bounces
@@ -90,13 +98,82 @@ Drops
 {% endanchor %}
 <p>In certain cases, SendGrid will "Drop" a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
 
-{% info %}
- For a detailed list of common error messages, please visit our <a href="{{ root_url }}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
-{% endinfo %}
-{% xmljsontabs  %}
-
+{% anchor h2 %}
+Advanced Statistics
+{% endanchor %}
 
 {% info %}
- All of the metrics we track for you are available from our web interface or through our <a href="{{ root_url }}/API_Reference/Webhooks/event.html">Event API</a>.
+These stats are in beta. Data may be delayed by up to 10 hours. The top
+of these reports will indicate the last time the data was updated.
 {% endinfo %}
-{% xmljsontabs  %}
+
+{% anchor h3 %}
+ISP
+{% endanchor %}
+
+<p>The <a href="http://sendgrid.com/statistics/isp">ISP report</a> highlights how your mail performs across all the major
+ISPs, such as Hotmail, Yahoo, Gmail, etc.</p>
+
+{% anchor h3 %}
+Geography
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/geo">The geographical
+  report</a> shows a map of where your emails are being opened and
+clicked around the world.</p>
+
+{% anchor h3 %}
+Device
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/devices">The device
+  report</a> breaks down which devices are most frequently being used to
+open your mail. </p>
+
+<p>Available devices:</p>
+
+<table class="table table-striped">
+  <tr>
+    <th>Device</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Desktop</td>
+    <td>Email software on desktop computer I.E. Outlook, Sparrow, or
+      Apple Mail.</td>
+  </tr>
+  <tr>
+    <td>WebMail</td>
+    <td>A web-based email client I.E. Yahoo, Google, AOL, or
+      Outlook.com.</td>
+  </tr>
+  <tr>
+    <td>Phone</td>
+    <td>A smart phone; IPhone, Android, Blackberry, etc.</td>
+  </tr>
+  <tr>
+    <td>Tablet</td>
+    <td>A tablet computer: IPad, android based tablet, etc.</td>
+  </tr>
+  <tr>
+    <td>Other</td>
+    <td>An unrecognized Device.</td>
+  </tr> 
+</table>
+
+{% anchor h3 %}
+Browser
+{% endanchor %}
+
+<p><a href="http://sendgrid.com/statistics/browsers">The browser
+  report</a> shows which browsers are most frequently clicking links in
+your mail.</p>
+
+{% info %}
+There are similarities between Device and Browser statistics and are
+working on ways to consolidate the data. The current reasoning for two
+separate reports is that in some cases an open from a device can result
+with a click from a browser that represents the device (e.g. Open on an
+Iphone -> Click on an Iphone), in other cases an open from one device
+can result in a click from a different browser (e.g. an Open on a desktop computer -> Click on FireFox).  
+{% endinfo %}

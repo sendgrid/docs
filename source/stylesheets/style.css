@@ -1,6 +1,14 @@
 body {
-	font-size:15px;
-	line-height:22px;
+	font-size:18px;
+	line-height:24px;
+}
+
+p {
+	margin:12px 0;
+}
+
+article {
+  max-width:725px;
 }
 
 .bar-indicator { 
@@ -39,13 +47,13 @@ line-height: 26px;
 }
 
 #content img {
-	border-bottom: 2px solid #CCC;
-	border-top: 2px solid #CCC;
-	padding-top:5px;
-	padding-bottom:5px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding-top:12px;
+	padding-bottom:12px;
 }
 
-li { line-height:22px; }
+li { line-height:24px; }
 
 hr.docs-separator {
 	margin: 40px 0 39px;
@@ -101,7 +109,7 @@ blockquote { background-color: #FFFFED; }
 #nav .nav > li > a { text-shadow: none; }
 #nav .btn-navbar { color: #000; padding: 1px 10px; }
 
-.nav-list li { line-height:18px; }
+.nav-list li { line-height:20px; }
 
 .nav-list > .active > a { text-shadow: 0 1px 0 rgba(255, 143, 0, .5); }
 
@@ -111,7 +119,6 @@ margin-top: 2px;
 }
 
 .sidebar-nav .nav-header { font-size:15px}
-
 
 #logo a
 {
@@ -176,9 +183,10 @@ body:before {
 	margin-top:-32767px;/
 }
 
-.sidebar-nav > #nav-menu { border-right: 1px solid #ddd; font-size: 15px; }
+.sidebar-nav > #nav-menu { border-right: 1px solid #ddd; font-size: 18px; line-height:21px; }
 
 .callout > a { color: rgb(240, 132, 2); }
+.callout > h2 { font-size: 18px; }
 
 .label, .badge { font-size: 15px; }
 
@@ -208,4 +216,16 @@ li.collapsibleListClosed{
 	background: url('/images/plus.png?embed=true') no-repeat 0px 5px;
 	cursor: pointer;
 	padding-left: 17px;
+}
+
+.breadcrumb { 
+  font-size: 15px;
+  padding: 3px 10px;
+  margin: 0 0 12px;
+}
+
+.page-header {
+  padding-bottom: 12px;
+  margin: 12px 0;
+  border-bottom: 1px solid #ddd;
 }

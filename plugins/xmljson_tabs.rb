@@ -13,10 +13,10 @@ module Jekyll
       <<-HTML
         <ul class="nav nav-tabs">
             <li class="active">
-                <a href="##{@methodname}-json" data-toggle="tab">JSON</a>
+                <a name="#{@methodname}-json" href="##{@methodname}-json" data-toggle="tab">JSON</a>
             </li>
             <li>
-                <a href="##{@methodname}-xml" data-toggle="tab">XML</a>
+                <a name="#{@methodname}-xml" href="##{@methodname}-xml" data-toggle="tab">XML</a>
             </li>
         </ul>
       HTML
