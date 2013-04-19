@@ -6,7 +6,7 @@ navigation:
    show: true
 ---
 
-  {% anchor h2 %}
+{% anchor h2 %}
 Retrieve Unsubscribes 
 {% endanchor %}
   Note that you can use
@@ -70,7 +70,7 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureS
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
+https://sendgrid.com/api/user.unsubscribes.json?api_user=username&api_key=secureSecret&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock lang:javascript %}[
