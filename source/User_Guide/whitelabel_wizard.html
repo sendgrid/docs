@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-   {% info %}
+{% info %}
 This feature is available to customers with Silver, Gold, or Platinum accounts.
 {% endinfo %}
 
@@ -17,16 +17,16 @@ This feature is available to customers with Silver, Gold, or Platinum accounts.
  sendgrid.me or sendgrid.com domain.</p>
 
  
-   {% warning %}
+{% info %}
 SendGrid does not host domains. Do not attempt to transfer a domain to SendGrid. If you have already registered a domain, then you have a registrar, and it is likely the hosting company you have your website on.
+{% endinfo %}
+ 
+ 
+{% warning %}
+Any changes you make to DNS can immediately affect your client's ability to reach your resources. We cannot take any responsibility for any changes you make to DNS, so please be very careful. If you have any questions, please contact our support team.
 {% endwarning %}
  
- 
-   {% warning %}
-Any changes you make to DNS can immediately affect your clients ability to reach your resources. We cannot take any responsibility for any changes you make to DNS, so please be very careful. If you have any questions, please contact our support team.
-{% endwarning %}
- 
-   {% info %}
+{% info %}
 When in doubt, contact your DNS registrar or web hosting service's technical support department. All information in this document complies with the DNS standards, but some registrars and web hosting providers handle things differently.
 {% endinfo %}
  
@@ -42,9 +42,9 @@ When in doubt, contact your DNS registrar or web hosting service's technical sup
  registrars that you might be using.</p>
 
  
-   {% warning %}
+{% info %}
 The hosting company 1&1 does not support TXT records, so SPF cannot be specified and therefore is not supported by SendGrid.
-{% endwarning %}
+{% endinfo %}
  
 
  <table class="table table-bordered table-striped">
@@ -52,13 +52,16 @@ The hosting company 1&1 does not support TXT records, so SPF cannot be specified
      <tr>
        <td>GoDaddy</td>
 
-       <td><a href=
-       "http://support.godaddy.com/help/4597/setup-dns-using-cpanel">Configure DNS using
-       CPanel</a> <a href=
-       "http://support.godaddy.com/help/198/setting-up-dns-with-your-parallels-plesk-panel-9-server-and-domain-with-us">
-       Configure DNS using Plesk Panel 9</a> <a href=
+       <td><a href="http://support.godaddy.com/help/4597/setup-dns-using-cpanel">Configure DNS using
+       CPanel</a>
+       <br/> 
+       <a href="http://support.godaddy.com/help/198/setting-up-dns-with-your-parallels-plesk-panel-9-server-and-domain-with-us">
+       Configure DNS using Plesk Panel 9</a> 
+       <br/>
+       <a href=
        "http://support.godaddy.com/help/6891/setting-up-dns-with-your-parallels-plesk-panel-10-server-and-domain-with-us">
-       Configure DNS using Plesk Panel 10</a> <a href=
+       Configure DNS using Plesk Panel 10</a> 
+     <br/><a href=
        "http://screencast.com/t/tip4j5ce6b">-Watch a video!-</a></td>
      </tr>
 
@@ -87,12 +90,12 @@ The hosting company 1&1 does not support TXT records, so SPF cannot be specified
  </table>
 
  
-   {% warning %}
+{% warning %}
 It is critical that you select a subdomain that does not already exist. MAIL is a common subdomain. If you do not have access to your domain registrar, check with your service administrator.
 {% endwarning %}
  
 
- {% anchor h2 %}
+{% anchor h2 %}
 Whitelabel Wizard 
 {% endanchor %}
 
@@ -105,8 +108,8 @@ Whitelabel Wizard
  height="179" /></p>
 
  
-   {% info %}
-The Whitelabel Wizard provides you with your static IP address
+{% info %}
+The Whitelabel Wizard provides you with your static IP address.
 {% endinfo %}
  
 
@@ -205,7 +208,7 @@ If you already have an SPF record, you can simply add include:sendgrid.net to th
 k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
 {% endcodeblock %}
 
- {% anchor h2 %}
+{% anchor h2 %}
 Dedicated IP Setup 
 {% endanchor %}
 
