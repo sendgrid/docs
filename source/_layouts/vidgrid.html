@@ -1,19 +1,8 @@
 ---
-layout: default
+layout: vidgridlayout
 ---
-
-{% unless page.sidebar == false %}
-<aside class="sidebar-nav span3">
-    {% include_array default_asides %}
-</aside>
-{% endunless %}
-
-{% if page.sidebar == false %}
-<article role="article" class="span12">
-{% else %}
-<article role="article" class="span9">
-{% endif %}
-  {% breadcrumbs %}
+{% breadcrumbs %}
+<article class="span9">
   {% if page.title and page.showTitle != false %}
   <header class="page-header">
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>

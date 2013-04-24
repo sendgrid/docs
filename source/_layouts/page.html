@@ -3,18 +3,19 @@ layout: default
 ---
 
 {% unless page.sidebar == false %}
-<aside class="sidebar-nav span3">
+<aside class="sidebar-nav span4">
     {% include_array default_asides %}
 </aside>
 {% endunless %}
 
 {% if page.sidebar == false %}
+<section class="span12">{% breadcrumbs %}</section>
 <article role="article" class="span12">
 {% else %}
-<article role="article" class="span9">
+<section class="span8">{% breadcrumbs %}</section>
+<article role="article" class="span8">
 {% endif %}
-  {% breadcrumbs %}
-  {% if page.title and page.showTitle != false %}
+    {% if page.title and page.showTitle != false %}
   <header class="page-header">
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
     {% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
