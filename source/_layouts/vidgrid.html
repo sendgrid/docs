@@ -1,8 +1,7 @@
 ---
-layout: vidgridlayout
+layout: default
 ---
-{% breadcrumbs %}
-<article class="span9">
+<div class="container span12">
   {% if page.title and page.showTitle != false %}
   <header class="page-header">
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
@@ -28,4 +27,4 @@ layout: vidgridlayout
       {% endif %}
     </footer>
   {% endunless %}
-</article>
+</div>
