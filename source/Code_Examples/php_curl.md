@@ -7,7 +7,7 @@ navigation:
 ---
 
 This example uses cURL with PHP through our web API to send an email. We
-recommend using the [SendGrid PHP Library]({{ root_url }}/Code_Examples/php.html) if possible.
+recommend using the [SendGrid PHP Library]({{root_url}}/Code_Examples/php.html) if possible.
 
 {% codeblock lang:php %}
 <?php $url = 'http://sendgrid.com/';
