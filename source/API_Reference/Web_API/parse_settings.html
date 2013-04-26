@@ -10,8 +10,32 @@ navigation:
 {% anchor h2 %}
 get 
 {% endanchor %}
-<p>Pull down the settings already configured for parsing incoming email.</p>
+<p>Retrieve settings already configured for parsing incoming email.</p>
 
+<h3>Parameters</h3>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>api_user</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid Username</td>
+    </tr>
+    <tr>
+      <td>api_key</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid password</td>
+    </tr>
+  </tbody>
+</table>
 
 {% xmljsontabs get %}
 
@@ -73,6 +97,48 @@ set
 {% endanchor %}
 <p>Specify the hostname and url for parsing incoming emails.</p>
 
+<h3>Parameters</h3>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>api_user</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid Username</td>
+    </tr>
+    <tr>
+      <td>api_key</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid password</td>
+    </tr>
+    <tr>
+      <td>hostname</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>The callback URL to which Parse Webhook payloads will be POSTed.</td>
+    </tr>
+    <tr>
+      <td>spam_check</td>
+      <td>No</td>
+      <td>0 or 1</td>
+      <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
+    </tr>
+  </tbody>
+</table>
 
 {% xmljsontabs set %}
 
@@ -138,6 +204,49 @@ Edit Entry
 {% endanchor %}
 <p>Edit your existing settings for parsing incoming emails.</p>
 
+<h3>Parameters</h3>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>api_user</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid Username</td>
+    </tr>
+    <tr>
+      <td>api_key</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid password</td>
+    </tr>
+    <tr>
+      <td>hostname</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>The callback URL to which Parse Webhook payloads will be POSTed.</td>
+    </tr>
+    <tr>
+      <td>spam_check</td>
+      <td>No</td>
+      <td>0 or 1</td>
+      <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
+    </tr>
+  </tbody>
+</table>
+
 
 {% xmljsontabs edit %}
 
@@ -202,11 +311,41 @@ Delete Entry
 {% endanchor %}
 <p>Delete the existing settings for parsing incoming emails.</p>
 
+<h3>Parameters</h3>
 
-{% xmljsontabs activate %}
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>api_user</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid Username</td>
+    </tr>
+    <tr>
+      <td>api_key</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>SendGrid password</td>
+    </tr>
+    <tr>
+      <td>hostname</td>
+      <td>Yes</td>
+      <td>alphanumeric</td>
+      <td>The hostname (domain or subdomain) for which you would like to delete Parse Webhook settings.</td>
+    </tr>
+  </tbody>
+</table>
+
+{% xmljsontabs delete %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
+  <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 
 {% codeblock %}
@@ -228,7 +367,7 @@ https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="activate-xml">
+  <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
 https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
