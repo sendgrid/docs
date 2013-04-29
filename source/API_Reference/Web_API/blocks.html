@@ -62,13 +62,26 @@ get
 
         <td>The end of the date range for which to retrieve blocks.</td>
       </tr>
+       <tr> 
+      <td>limit</td> 
+      <td>No</td> 
+      <td>some integer</td> 
+      <td>Optional field to limit the number of results returned.</td> 
+    </tr> 
+    <tr> 
+      <td>offset</td> 
+      <td>No</td> 
+      <td>some integer</td> 
+      <td>optional beginning point in the list to retrieve from.</td> 
+    </tr> 
+
 </tbody></table>
 {% xmljsontabs get %}
 <div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
+https://sendgrid.com/api/blocks.get.json?api_user=SGusername&amp;api_key=SGpassword&amp;date=1
 {% endcodeblock %} 
       <h3>Response</h3>
 {% codeblock lang:javascript %}[
@@ -96,7 +109,7 @@ https://sendgrid.com/api/blocks.get.json?api_user=youremail@domain.com&amp;api_k
     <div class="tab-pane" id="get-xml">
       <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.get.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;date=1
+https://sendgrid.com/api/blocks.get.xml?api_user=SGusername&amp;api_key=SGpassword&amp;date=1
 {% endcodeblock %}
       <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -151,7 +164,7 @@ delete
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
+https://sendgrid.com/api/blocks.delete.json?api_user=SGusername&amp;api_key=SGpassword&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
@@ -171,7 +184,7 @@ https://sendgrid.com/api/blocks.delete.json?api_user=youremail@domain.com&amp;ap
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/blocks.delete.xml?api_user=youremail@domain.com&amp;api_key=secureSecret&amp;email=emailToDelete@domain.com
+https://sendgrid.com/api/blocks.delete.xml?api_user=SGusername&amp;api_key=SGpassword&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
