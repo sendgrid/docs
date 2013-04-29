@@ -261,11 +261,23 @@ $ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject
 {% codeblock lang:bash %}
 $ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
 {% endcodeblock %}
-<p>Send a test attachment</p>
+<p>Send a test with attachment</p>
 {% codeblock lang:bash %}
-$ curl -F to=recipient@domain.com -F toname=test -F subject="Example Subject" -F text="testing text body" --form-string html="<strong>testing html body</strong>" -F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword -F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
+$ curl https://sendgrid.com/api/mail.send.json \
+-F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
+-F text="testing text body" --form-string html="<strong>testing html body</strong>" \
+-F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword \
+-F files[attachment.gz]=@f.php.gz https://sendgrid.com/api/mail.send.json
 {% endcodeblock %}
-
+<p><span class="label label-info">Note</span> To ensure that it uploads from a local file, use <@filename>.</p> 
+<p>Send a test specifying the file content type by appending ';type=<mime type>' to the file name</p>
+{% codeblock lang:bash %}
+$ curl https://sendgrid.com/api/mail.send.json \
+-F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
+-F text="testing text body" --form-string html="<strong>testing html body</strong>" \
+-F from=test@yourdomain.com -F api_user=sendgridUsername -F api_key=sendgridPassword \
+-F files[attachment.pdf]=@attachment.pdf;type=application/pdf
+{% endcodeblock %}
 
 	
 <h3>Raw HTTP Dump</h3>
