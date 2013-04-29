@@ -41,9 +41,18 @@
 	padding-bottom: 3px;
 }
 
-/*@media (min-width: 768px) and (max-width: 1088px){
+@media (min-width: 768px) and (max-width: 1088px){
 	.accordion-heading {
 		height: auto;
 		font-size: medium;
+	}
+	/*#vidgrid-row {
+		margin-left: 20px;
+	}*/
+}
+
+/*@media (min-width: 768px) and (max-width: 979px){
+	.row {
+		margin-left: 20px;
 	}
 }*/
