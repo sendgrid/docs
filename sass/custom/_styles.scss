@@ -1,2 +1,9 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+li.official {
+	list-style-type: none;
+	background: url(/images/favicon.ico) left center no-repeat;
+	padding: 0 24px;
+	margin-left: -20px;
+}
