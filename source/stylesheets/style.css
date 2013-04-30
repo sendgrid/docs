@@ -209,3 +209,10 @@ li.collapsibleListClosed{
 	cursor: pointer;
 	padding-left: 17px;
 }
+
+li.official {
+	list-style-type: none;
+	background: url(/images/favicon.ico) left center no-repeat;
+	padding: 0 24px;
+	margin-left: -20px;
+}
