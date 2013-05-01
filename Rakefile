@@ -427,32 +427,3 @@ task :gzip_deploy do
   ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")
 end
 
-
-##############
-# Other      #
-##############
-
-desc "Generate a PDF version of the documentation"
-task :generate_pdf do
-  htmlfiles = File.join("**", "public", "**", "*.html")
-  
-  #make sure output folder exists
-  FileUtils.mkdir_p("pdf")
-
-  Dir.glob htmlfiles do |htmlfile|
-    puts "Writing PDF for #{htmlfile}"
-    
-    file = File.open(htmlfile)
-    html = file.read
-    file.close
-
-    output_path = htmlfile.sub('public/','pdf/').sub('.html','.pdf')
-
-    #make sure output subfolder exists
-    FileUtils.mkdir_p(File.dirname(output_path))
-
-    kit = PDFKit.new(html, :page_size => 'Letter')
-    pdf = kit.to_file(output_path)
-    
-  end
-end
