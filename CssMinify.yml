@@ -4,5 +4,6 @@ files: [
   'source/stylesheets/icomoon.css',
   'source/stylesheets/sprites.css',
   'source/stylesheets/syntax.css',
-  'source/stylesheets/print.css'
+  'source/stylesheets/print.css',
+  'source/stylesheets/vidgrid.css'
 ]
