@@ -46,13 +46,11 @@
 		height: auto;
 		font-size: medium;
 	}
-	/*#vidgrid-row {
-		margin-left: 20px;
-	}*/
 }
 
-/*@media (min-width: 768px) and (max-width: 979px){
-	.row {
+@media (min-width: 980px) and (max-width: 1200px){
+	.vidgrid-row{
 		margin-left: 20px;
+		width: 960px;
 	}
-}*/
+}
