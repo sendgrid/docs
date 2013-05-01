@@ -427,3 +427,13 @@ task :gzip_deploy do
   ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")
 end
 
+desc "run linklint and fail if errors found"
+task :linklint do
+  puts "Running linklint"
+  puts `./linklint-2.3.5 @linklint_command`
+  
+  
+  if File.exist?("linklint_logs/error.txt")
+    fail "Linklint found broken links or missing files!"
+  end
+end
