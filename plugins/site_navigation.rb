@@ -125,9 +125,6 @@ module Jekyll
             id = Digest::MD5.hexdigest(base)
              
             icon_name = @folder_icons[base]
-            if icon_name && li_class=="active"
-              icon_name = icon_name + " icon-white"
-            end
             
             icon_html = icon_name.nil? ? "" : "<i class=\"#{icon_name}\"></i>" 
             li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{icon_html}#{name}</div>"
