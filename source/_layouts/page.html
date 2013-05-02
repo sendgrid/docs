@@ -11,12 +11,12 @@ layout: default
 {% if page.sidebar == false %}
   {% unless page.breadcrumbs == false %}
     <section class="span12">{% breadcrumbs %}</section>
-  {% endif %}
+  {% endunless %}
 <article role="article" class="span12">
 {% else %}
   {% unless page.breadcrumbs == false %}
     <section class="span8">{% breadcrumbs %}</section>
-  {% endif %}
+  {% endunless %}
 <article role="article" class="span8">
 {% endif %}
     {% if page.title and page.showTitle != false %}
