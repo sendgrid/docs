@@ -11,7 +11,6 @@ files: [
   'source/javascripts/libs/modernizr-2.0.js',
   'source/javascripts/libs/bootstrap.js',
   'source/javascripts/search.js',
-  'source/javascripts/octopress.js',
-  'source/javascripts/vidgrid.js'
+  'source/javascripts/octopress.js'
 ]
 
