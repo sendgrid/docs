@@ -130,3 +130,5 @@ folder_weights:
  "/API Reference": 50
  "/API Workshop": 40
 
+folder_icons:
+ "/User_Guide": "icon-book"
