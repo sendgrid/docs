@@ -127,8 +127,8 @@ folder_weights:
  "/Delivery_Metrics": 70
  "/Newsletters": 60
  "/Apps": 55
- "/API Reference": 50
- "/API Workshop": 40
+ "/API_Reference": 50
+ "/API_Workshop": 40
 
 folder_icons:
- "/VidGrid": "icon-film"
+  "/VidGrid": "icon-film"
