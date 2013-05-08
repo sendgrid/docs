@@ -11,7 +11,8 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
-      @weights = site.config['folder_weights']
+      @folder_weights = site.config['folder_weights']
+      @folder_icons = site.config['folder_icons']
       @nodes = {}
       tree = {}
       sorted_tree = {}
@@ -47,8 +48,8 @@ module Jekyll
       end
 
       tree.each do |base, subtree|
-        weight = @weights[base]? @weights[base] : 0
-        tree[base] = {"weight" => weight, "subtree" => subtree}
+        folder_weight = @folder_weights[base]? @folder_weights[base] : 0
+        tree[base] = {"weight" => folder_weight, "subtree" => subtree}
       end
       
       tree_array = []
@@ -122,8 +123,11 @@ module Jekyll
           
           if is_parent
             id = Digest::MD5.hexdigest(base)
-
-            li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{name}</div>"
+             
+            icon_name = @folder_icons[base]
+            
+            icon_html = icon_name.nil? ? "" : "<i class=\"#{icon_name}\"></i>" 
+            li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{icon_html}#{name}</div>"
           else
             icon_name = @nodes[name]["icon"]
             
@@ -131,7 +135,7 @@ module Jekyll
               icon_name = icon_name + " icon-white"
             end
             
-            icon_html = icon_name.nil? ? "<i class=#{icon_name}></i>" : "" 
+            icon_html = icon_name.nil? ? "<i class=\"#{icon_name}\"></i>" : "" 
             li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{icon_html}#{name}</a></li>"
           end
 

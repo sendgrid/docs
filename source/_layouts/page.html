@@ -9,10 +9,14 @@ layout: default
 {% endunless %}
 
 {% if page.sidebar == false %}
-<section class="span12">{% breadcrumbs %}</section>
+  {% unless page.breadcrumbs == false %}
+    <section class="span12">{% breadcrumbs %}</section>
+  {% endunless %}
 <article role="article" class="span12">
 {% else %}
-<section class="span8">{% breadcrumbs %}</section>
+  {% unless page.breadcrumbs == false %}
+    <section class="span8">{% breadcrumbs %}</section>
+  {% endunless %}
 <article role="article" class="span8">
 {% endif %}
     {% if page.title and page.showTitle != false %}

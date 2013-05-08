@@ -22,7 +22,10 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 ## Config
 
-The only config variables you should need to know about are <code>root</code>, which is the root from which all links are calculated, and the <code>folder_weights</code> hash, which specifies the order that the folders should be displayed in the nav tree. Higher weights mean higher display priority (higher in the tree).
+The config is defined in `_config.yml`.
+
+The only config variables you should need to know about are <code>root</code>, which is the root from which all links are calculated, and the <code>folder_weights</code> hash, which specifies the order that the folders should be displayed in the nav tree. Higher weights mean higher display priority (higher in the tree). You can also specify icons for folders with the
+<code>folder_icons</code> hash.
 
 There's also a <code>version</code> number in the config, which is displayed on the site footer.
 
