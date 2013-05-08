@@ -2,11 +2,14 @@
   <div class='container-fluid'>
     <div class='row-fluid'>
       <ul class='nav' id='nav-links'>
-        <li class="nav-link {% if page.title != 'API Workshop' %} current-page-item {% endif %}">
+        <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
           <a href="{{root_url}}/index.html">Docs Home</a>
         </li>
-        <li class="nav-link {% if page.title == 'API Workshop' %} current-page-item {% endif %}">
+        <li class="nav-link {% if page.title contains 'Workshop' %} current-page-item {% endif %}">
           <a href="{{root_url}}/api_workshop.html">API Workshop</a>
+        </li>
+        <li class="nav-link {% if page.url contains 'VidGrid' %} current-page-item {% endif %}">
+          <a href="{{root_url}}/VidGrid/index.html">VidGrid</a>
         </li>
         <li class="nav-link">
           <a href="http://community.sendgrid.com/sendgrid">Community</a>

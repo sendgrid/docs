@@ -229,3 +229,28 @@ li.collapsibleListClosed{
   margin: 12px 0;
   border-bottom: 1px solid #ddd;
 }
+
+li.official {
+	list-style-type: none;
+	background: url(/images/favicon.ico) left center no-repeat;
+	padding: 0 24px;
+	margin-left: -20px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
