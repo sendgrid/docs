@@ -36,7 +36,7 @@ List Pending Changes
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secureSecret&task=lis
+https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -55,7 +55,7 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secureSecret&task=lis
+https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -94,7 +94,7 @@ Delete Pending Changes
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
+https://sendgrid.com/api/distributor.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -113,7 +113,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.pending.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
+https://sendgrid.com/api/distributor.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -173,7 +173,7 @@ Immediate Upgrade
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -192,7 +192,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -252,7 +252,7 @@ Immediate Downgrade
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -271,7 +271,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -319,7 +319,7 @@ are incurred, a invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -338,7 +338,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -398,7 +398,7 @@ Scheduled Upgrade
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -417,7 +417,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -477,7 +477,7 @@ Scheduled Downgrade
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -496,7 +496,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -545,7 +545,7 @@ invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.xml?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -564,7 +564,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/distributor.account.json?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+https://sendgrid.com/api/distributor.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
