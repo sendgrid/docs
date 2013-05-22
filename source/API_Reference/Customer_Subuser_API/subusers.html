@@ -120,7 +120,7 @@ Create a Subuser
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -142,7 +142,7 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=username&api_key=secureSecr
   <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.json?api_user=username&api_key=secureSecret&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock lang:javascript %}{
@@ -248,7 +248,7 @@ Retrieve Subusers
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=get
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
 {% endcodeblock %}
   <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -289,7 +289,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=get
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
 {% endcodeblock %}
   <h3>Response</h3>
   {% codeblock lang:javascript %}[
@@ -352,7 +352,7 @@ Enable a Subuser
   <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -374,7 +374,7 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=username&api_key=secureS
   <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.enable.json?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock lang:javascript %}{
@@ -414,7 +414,7 @@ Disable a Subuser
   <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secureSecret
+https://sendgrid.com/apiv2/customer.disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -436,7 +436,7 @@ https://sendgrid.com/apiv2/customer.disable.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.disable.json?api_user=username&api_key=secureSecret
+https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -476,7 +476,7 @@ Enable Website Access To A Subuser
   <div class="tab-pane" id="enablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -498,7 +498,7 @@ https://sendgrid.com/apiv2/customer.website_enable.xml?api_user=username&api_key
   <div class="tab-pane active" id="enablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_enable.json?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -537,7 +537,7 @@ Disable Website Access To A Subuser
   <div class="tab-pane" id="disablewebsite-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_key=secureSecret
+https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -559,7 +559,7 @@ https://sendgrid.com/apiv2/customer.website_disable.xml?api_user=username&api_ke
   <div class="tab-pane active" id="disablewebsite-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.website_disable.json?api_user=username&api_key=secureSecret
+https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -651,7 +651,7 @@ Update Subuser Profile
   <div class="tab-pane" id="updateprofile-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -673,7 +673,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="updateprofile-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -728,7 +728,7 @@ Update Subuser Password
   <div class="tab-pane" id="updateSubuserPassword-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -750,7 +750,7 @@ https://sendgrid.com/apiv2/customer.password.xml?api_user=username&api_key=secur
   <div class="tab-pane active" id="updateSubuserPassword-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.password.json?api_user=username&api_key=secureSecret&user=example@example.com&password=newPasword&confirm_password=newPasswor
+https://sendgrid.com/apiv2/customer.password.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -806,7 +806,7 @@ Update Subuser Username
   <div class="tab-pane" id="updateSubuserUsername-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -828,7 +828,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="updateSubuserUsername-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.json?api_user=username&api_key=secureSecret&task=setUsername&user=example@example.com&username=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
@@ -884,7 +884,7 @@ Update Subuser Email Address
   <div class="tab-pane" id="updateSubuserEmailAddress-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -906,7 +906,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="updateSubuserEmailAddress-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.profile.xml?api_user=username&api_key=secureSecret&task=setEmail&user=example@example.com&email=newexample@example.com
+https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock %}
