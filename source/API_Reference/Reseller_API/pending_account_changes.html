@@ -41,7 +41,7 @@ List Pending Changes
   <div class="tab-pane" id="users-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secureSecret&task=list
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -92,7 +92,7 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="users-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secureSecret&task=list
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}[
@@ -165,7 +165,7 @@ Delete Pending Changes
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -192,7 +192,7 @@ https://sendgrid.com/apiv2/reseller.pending.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.pending.json?api_user=username&api_key=secureSecret&task=delete&user=customer@example.com
+https://sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -259,7 +259,7 @@ Immediate Upgrade
   <div class="tab-pane" id="upgrade-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -286,7 +286,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="upgrade-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h4>Return - Success'); ?></h4>
 {% codeblock lang:javascript %}{
@@ -353,7 +353,7 @@ Immediate Downgrade
   <div class="tab-pane" id="downgrade-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -380,7 +380,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="downgrade-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -433,7 +433,7 @@ Immediate Close
   <div class="tab-pane" id="close-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -460,7 +460,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="close-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -527,7 +527,7 @@ Scheduled Upgrade
   <div class="tab-pane" id="sched-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -554,7 +554,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="sched-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -621,7 +621,7 @@ Scheduled Downgrade
   <div class="tab-pane" id="scheddown-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -648,7 +648,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="scheddown-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -701,7 +701,7 @@ Scheduled Close
   <div class="tab-pane" id="schedclose-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -728,7 +728,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=username&api_key=secure
   <div class="tab-pane active" id="schedclose-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.account.json?api_user=username&api_key=secureSecret&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
+https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
