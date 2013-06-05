@@ -186,12 +186,12 @@ send
   <div class="tab-pane active" id="mail-json">
 	        <h3>Call: Send to One Recipient</h3>
 {% codeblock %}
-https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 
 	<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
-https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+https://sendgrid.com/api/mail.send.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 
 	<h3>Response: Success</h3>
@@ -213,12 +213,12 @@ https://sendgrid.com/api/mail.send.json?api_user=youremail@domain.com&api_key=se
   <div class="tab-pane" id="mail-xml">
         <h3>Call: Send to One Recipient</h3>
 {% codeblock %}
-https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 
 		<h3>Call: Send to Multiple Recipients
 {% codeblock lang:bash %}
-https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=secureSecret&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
+https://sendgrid.com/api/mail.send.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Examplev1_(deprecated)Subject&text=testingtextbody&from=info@domain.com
 {% endcodeblock %}
 		<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -255,11 +255,11 @@ https://sendgrid.com/api/mail.send.xml?api_user=youremail@domain.com&api_key=sec
 
 <p>Send to one email recipient</p>
 {% codeblock lang:bash %}
-$ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
+$ curl -d 'to=destination@example.com&toname=Destination&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password' https://sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 <p>Send to multiple email recipients</p>
 {% codeblock lang:bash %}
-$ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=sendgridUsername&api_key=sendgridPassword' https://sendgrid.com/api/mail.send.json
+$ curl -d 'to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example Subject&text=testingtextbody&from=info@domain.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password' https://sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 <p>Send a test with attachment</p>
 {% codeblock lang:bash %}
