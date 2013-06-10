@@ -14,17 +14,16 @@ navigation:
 {% anchor h2 %}
 URL Format 
 {% endanchor %}
-<p>The following is the syntax for making Newsletter API requests:</p>
+<p>The following is the syntax for making Web API requests:</p>
 
 <code>
-	https://sendgrid.com/api/newsletter/[action].[format]
+	https://sendgrid.com/api/[module].[action].[format]
 </code>
 
 <ul>
-	<li><strong>[action]</strong> - Each module supports multiple actions such as add, get, and delete.</li>
-	
+  <li><strong>[module]</strong> - The API endpoint to call, e.g. blocks.</li>
+  <li><strong>[action]</strong> - Each module supports multiple actions such as add, get, and delete.</li>
 	<li><strong>[format]</strong> - This determines the response format. It can be either json for a JSON response or xml for an XML response.</li>
-	
 </ul>
 <hr/>
 
