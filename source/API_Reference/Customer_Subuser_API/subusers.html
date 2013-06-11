@@ -12,7 +12,7 @@ navigation:
 In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username.
 {% endinfo %}
 
-  {% anchor h2 %}
+{% anchor h2 %}
 Create a Subuser 
 {% endanchor %}
   <table class="table table-bordered table-striped"><tbody>
@@ -120,7 +120,7 @@ Create a Subuser
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -142,7 +142,7 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
   <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
   {% codeblock %}
-https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555v1_(deprecated)anystreet&city=anyv1_(deprecated)city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-55
+https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
 {% endcodeblock %}
   <h3>Response: Success</h3>
   {% codeblock lang:javascript %}{
@@ -160,7 +160,72 @@ https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api
   </div>
 </div>
   <hr/>
-  {% anchor h2 %}
+{% anchor h2 %}
+Delete a Subuser 
+{% endanchor %}
+  <table class="table table-bordered table-striped"><tbody>
+      <tr>
+        <th>Parameter</th>
+        <th>Required</th>
+        <th>Requirements</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>user</td>
+        <td>Yes</td>
+        <td>Must be a valid subuser name.</td>
+        <td>The subuser to delete.</td>
+      </tr>
+  </table>
+{% xmljsontabs delete %}
+
+<div class="tab-content">
+  <div class="tab-pane" id="delete-xml">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+  <h3>Response: Error</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  <div class="tab-pane active" id="delete-json">
+     <h3>Call</h3>
+  {% codeblock %}
+https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
+{% endcodeblock %}
+  <h3>Response: Success</h3>
+  {% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
+  <h3>Response: Error</h3>
+  {% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
 Retrieve Subusers 
 {% endanchor %}
   Obtain a complete list of all subusers.
