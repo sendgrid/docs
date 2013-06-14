@@ -7,7 +7,7 @@ navigation:
 ---
 
 <p>This module allows you to add new Variations to your drafted
-Newsletters. These Variations can be used in A/B testing (also sometimes
+Marketing Emails. These Variations can be used in A/B testing (also sometimes
 called split testing).</p>
 
 <hr/>
@@ -28,8 +28,8 @@ add
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter in draft mode.</td>
-      <td>The name of the Newsletter you are adding Variations to.</td>
+      <td>Must be an existing Marketing Email in draft mode.</td>
+      <td>The name of the Marketing Email you are adding Variations to.</td>
     </tr>
     <tr>
       <td>variation</td>
@@ -47,13 +47,13 @@ add
       <td>text</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The text portion of the Newsletter Variation being added.</td>
+      <td>The text portion of the Marketing Email Variation being added.</td>
     </tr>
 <tr>
       <td>html</td>
       <td>No</td>
       <td>If the <code>type</code> parameter is set to "html" this parameter is required.</td>
-      <td>The html portion of the Newsletter Variation being added.</td>
+      <td>The html portion of the Marketing Email Variation being added.</td>
     </tr>
 <tr>
       <td>type</td>
@@ -64,8 +64,8 @@ add
 <tr>
       <td>identity_name</td>
       <td>No</td>
-      <td>Must be an existing Newsletter Identity</td>
-      <td>Identity name that is needed if the Newsletter name does not already exist.  Will be used to create a parent Newsletter.</td>
+      <td>Must be an existing Marketing Email Identity</td>
+      <td>Identity name that is needed if the Marketing Email name does not already exist.  Will be used to create a parent Marketing Email.</td>
     </tr>
   </table>
 
@@ -134,8 +134,8 @@ Edit an existing Variation.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter with Variations added to it.</td>
-      <td>The name of the Newsletter you are editing Variations on.</td>
+      <td>Must be an existing Marketing Email with Variations added to it.</td>
+      <td>The name of the Marketing Email you are editing Variations on.</td>
     </tr>
 <tr>
       <td>variation</td>
@@ -159,13 +159,13 @@ Edit an existing Variation.
       <td>text</td>
       <td>No</td>
       <td>None</td>
-      <td>The new text portion of the Newsletter Variation.</td>
+      <td>The new text portion of the Marketing Email Variation.</td>
     </tr>
 <tr>
       <td>html</td>
       <td>No</td>
       <td>None</td>
-      <td>The new html portion of the Newsletter Variation.</td>
+      <td>The new html portion of the Marketing Email Variation.</td>
     </tr>
 <tr>
       <td>type</td>
@@ -241,8 +241,8 @@ Retrieve the contents of an existing Variation.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>The name of the Newsletter with existing Variations added to it.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>The name of the Marketing Email with existing Variations added to it.</td>
     </tr>
  <tr>
       <td>variation</td>
@@ -315,8 +315,8 @@ Cancels a current Variation send that is in progress.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>The name of the Newsletter you wish to cancel, this cancels added Variations.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>The name of the Marketing Email you wish to cancel, this cancels added Variations.</td>
     </tr>
   </table>
 
@@ -388,8 +388,8 @@ Delete the contents of an existing Variation.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>The name of the Newsletter with existing Variations added to it.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>The name of the Marketing Email with existing Variations added to it.</td>
     </tr>
  <tr>
       <td>variation</td>
@@ -454,7 +454,7 @@ http://sendgrid.com/api/newsletter/variations/delete.xml?api_user=your_sendgrid_
 {% anchor h2 %}
 list 
 {% endanchor %}
-Retrieve a list of all Variations attached to a Newsletter.
+Retrieve a list of all Variations attached to a Marketing Email.
 <br></br>
 
 <table class="table table-bordered table-striped">
@@ -467,7 +467,7 @@ Retrieve a list of all Variations attached to a Newsletter.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
+      <td>Must be an existing Marketing Email</td>
       <td>The newsletter for which to list variations.</td>
     </tr>
  <tr>
@@ -546,8 +546,8 @@ Select the Variation you would like to send.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Select the Newsletter you're picking the winner of.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Select the Marketing Email you're picking the winner of.</td>
     </tr>
  <tr>
       <td>variation</td>
@@ -625,8 +625,8 @@ Schedule a send time and percentage for your variations.
  <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Select the Newsletter you'de like to schedule Variation testing on.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Select the Marketing Email you'de like to schedule Variation testing on.</td>
     </tr>
  <tr>
       <td>percent</td>
