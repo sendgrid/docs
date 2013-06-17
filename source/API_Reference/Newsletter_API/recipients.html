@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-<p>This module allows you to manage which lists are assigned to newsletters.</p>
+<p>This module allows you to manage which lists are assigned tomarketing email.</p>
 
 
 
@@ -28,14 +28,14 @@ add
       <td>list</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The name of the list to assign to the newsletter.</td>
+      <td>The name of the list to assign to themarketing email</td>
     </tr>
 
     <tr>
       <td>name</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The name of the newsletter.</td>
+      <td>The name of themarketing email</td>
     </tr>
   </tbody>
 </table>
@@ -96,7 +96,7 @@ http://sendgrid.com/api/newsletter/recipients/add.xml?name=SendGrid%20NL%20Test2
 {% anchor h2 %}
 get 
 {% endanchor %}
-<p>Get all lists assigned to a particular newsletter.</p>
+<p>Get all lists assigned to a particularmarketing email</p>
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -111,7 +111,7 @@ get
       <td>name</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The name of the newsletter for which to retrieve lists.</td>
+      <td>The name of themarketing emailfor which to retrieve lists.</td>
     </tr>
   </tbody>
 </table>
@@ -176,7 +176,7 @@ http://sendgrid.com/api/newsletter/recipients/get.xml?name=test&api_user=your_se
 {% anchor h2 %}
 delete 
 {% endanchor %}
-<p>Remove assigned lists from newsletter.</p>
+<p>Remove assigned lists frommarketing email</p>
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -190,15 +190,15 @@ delete
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing newsletter.</td>
-      <td>To newsletter from which the list will be unassigned.</td>
+      <td>Must be an existingmarketing email</td>
+      <td>Tomarketing emailfrom which the list will be unassigned.</td>
     </tr>
 
     <tr>
       <td>list</td>
       <td>Yes</td>
       <td>Must be an existing Recipient List.</td>
-      <td>Remove this list from the newsletter.</td>
+      <td>Remove this list from themarketing email</td>
     </tr>
 
   </tbody>
