@@ -1,0 +1,225 @@
+---
+layout: page
+weight: 0
+title: Create and Manage Marketing Emails
+navigation:
+  show: true
+---
+
+{% anchor h2 %}
+Create Marketing Email 
+{% endanchor %}
+
+<p>This section walks you through the four stages of configuring a marketing email. You will:</p>
+
+<ul>
+<li>Setup</li>
+	<li>Select Recipients</li>
+	<li>Design</li>
+	<li>Review &amp; Schedule</li>
+</ul>{% anchor h2 %}
+STEP 1: Setup 
+{% endanchor %}
+<p>First define the name of the marketing email, what category or categories it will use for statistical purposes, and which identity you will use to send the marketing email.</p>
+
+<ul>
+<li>
+<strong>Marketing Email Title - </strong>This name is for you and internal organization. Name it whatever you think it useful.</li>
+        <li>
+<strong>Pick a Sender Address - </strong>In order to comply with the CAN-SPAM Act, you must have a valid Sender Address. Links are provided to create and manage your Sender Addresses, but if you have not created one yet, you will be taken to the appropriate page.</li>
+	<li>
+<strong>Category - </strong>Select a category to help classify the marketing email for your statistics. If you need a new one, just click the Add A New Category button under the list.</li>
+	<li>
+<strong>Send Method - </strong> If you want to send a regular marketing email, leave it on Send The Same Marketing Email To All Recipients. If, however, you want to perform split testing, select the second option.</li>
+</ul><p><strong><em>Split Testing</em></strong> introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list.</p>
+
+{% info %}
+ While it's up to you what criteria you will use to determine success, our personal favorite is Clicks. This speaks to how many people not only opened your marketing email, but were compelled enough by the content to click, as well.
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+{% anchor h2 %}
+STEP 2: Select Recipients 
+{% endanchor %}
+<p>Here you select who you want to receive your marketing email. You can either select a list of recipients you have already inserted into your account or create a new list.</p>
+
+{% anchor h2 %}
+STEP 3: Design 
+{% endanchor %}
+<p>Text marketing email design is quite straightforward, but if you chose HTML there are some tips that will help you. The graphical editor is very capable, as you can see in the image below.</p>
+
+<p><img src="{{root_url}}/images/newsletter_create_1.png" title="The WYSIWYG marketing email editor"></p>
+
+<p>There are three distinct areas of the graphical editor, Modules on the left, the editor itself in the center, and the Style/Library section to the right. In Design Mode, you drag and drop Modules from the bin to the left and into the Editor. This functionality makes it easier and quicker to create attractive marketing emails.</p>
+
+{% info %}
+ Only the Style or Library tool can be displayed at one time and the Style tool is shown by default. If you want to access your previously uploaded images, click on the Library icon located underneath the Style tool and it will slide into view. 
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+<p>It is in the Editor that you can now define the content for your marketing email. You can insert all manner or modules in any order you deem appropriate. You can also use all of your substitution tags in either the visual or source mode editors. If you drag in a module that includes text, you can style that text in the Module Editor. You can also add links or just insert pre-formatted HTML.</p> 
+
+{% info %}
+ If you selected to send a Split Test, the only difference in the editor that you will see is the addition of the Add Variation button, selector, and trash can. You will note that your first variation is called Variation #1. Believe me, we were proud as parents the day we came up with that creative freight train! Once you have edited your first variation, click Add Variation to create a new one. You will be asked if you want to start with a clean slate or clone another variation.
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+<p>Adding a module causes the Module Editor to appear, allowing you to set the display parameters, upload an image, configure the Hot Button feature for the module. The available modules are:</p>
+
+<ul class="regular">
+<li>
+<strong>Header Image</strong> - Drag this back in just in case you accidentally deleted the one we insert automatically for you.</li>
+	<li>
+<strong>Header</strong> - Adds a section header or title to your marketing email.</li>
+	<li>
+<strong>Divider</strong> - Adds a simple horizontal rule.</li>
+	<li>
+<strong>Social Buttons</strong> - Adds a block of social sharing buttons. In order for the icons to appear, you must insert the link to profile page you want to point to. The RSS module will accept any valid HTTP address, but if you want it to work, you must point it to the RSS or Atom feed directly.</li>
+	<li>
+<strong>Image + Text</strong> - This applies to Text + Image, as well. This module adds both a text field and image, allowing the text to flow around the text as needed.</li>
+
+{% info %}
+ If you drag in an IMAGE+TEXT or TEXT+IMAGE module and decide later that you wanted the other, do not despair. Simply click on the image and drag it to the other side. The text will automatically reflow. Slick, eh?
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+	<li>
+<strong>Image</strong> - Adds an image. This one is good for larger or featured images.</li>
+	<li>
+<strong>Image / Text</strong> - This applies to the Text / Image module, as well. This module inserts a block of text with an image either above or below. The text is not set to reflow around the image in this module.</li>
+
+{% info %}
+ You can resize images by dragging their edges or corners. If you resize from the corner, it will change the size proportionally.
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+	<li>
+<strong>Text</strong> - As implied, this just adds a block of text. Clean. Simple. Good.</li>
+</ul>{% info %}
+ So, you want to add a Library image to a new module, but that darned Module Editor keeps popping up!? No problem. Just close the editor, then drag the image from your library over to the new module. A drop area will appear and, Voila! ...That's it. Just Voila!
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+{% info %}
+ All modules include the Style tab that gives you access to defining the overall colors and bordering for each module. For example, if you wanted to send a note to your subscribers that included some important information in the third of five paragraphs, insert the important paragraph as a separate Text module and change it's background color. It will stand out or, as the designers say, pop!
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+<p>Once you have added modules, you can edit them in place or move them around. You will know that a module is selected when the dashed line appears around it. The selection indicator moves as you move your mouse pointer, so all you have to do is point at what you want to edit. Once you have selected a module, you will note that it has a bar across the top and some icons, as indicated below.</p>
+
+<p><img src="{{root_url}}/images/newsletter_create_2.png"></p>
+
+<p>Point at the bar and your mouse pointer changes icons to a 4-way arrow. This indicates that you can drag that module into a new position. The other modules will move around as you drag to make room. The three icons to the far right let you open the Module Editor, duplicate the module, and remove the module.</p>
+
+{% info %}
+ Editing HTML source is easy. Just click on the Source Mode tab at the top of the editor. There are buttons that let you insert simple styling code as well as buttons that will insert code for links to viewing the message on the web, subscription management, and to add the Footer module.
+{% endinfo %}
+{% xmljsontabs  %}
+
+
+{% anchor h2 %}
+STEP 4: Review &amp; Schedule 
+{% endanchor %}
+
+<p>Now that you're done with all of the other components of creating a Marketing Email, you are ready to review everything and schedule it for sending. In a nutshell, which is precisely what this page is, you will see how many recipients have been selected, what split there is if you selected Split Testing, a preview of your marketing email or variations as well as links to the text versions, and the ability to send a test to just about anyone you like.</p>
+
+<p>If all is good, then you are ready to schedule your marketing email. Your options for scheduling are:</p>
+
+<ul>
+<li>
+<strong>Send Now</strong> - Really just what it sounds like. On a technical note, it is actually "scheduled" for the current time and date, but that's quite nerdy.</li>
+	<li>
+<strong>Schedule</strong> - Here you select a date and time on which to actually send if that time is not right now. Fortunately for time travel, you cannot elect to send it to the past.</li>
+	<li>
+<strong>Save As Draft</strong> - Just like email, hold on to it and let it cool a bit before sending it out.</li>
+</ul><p>The only thing you have remaining to do is click the big blue Finish button!</p>
+
+{% anchor h2 %}
+Manage Marketing Emails 
+{% endanchor %}
+
+{% anchor h3 %}
+Overview
+{% endanchor %}
+
+<p>Here you can see a list of your previously created marketing emails with the following information:</p>
+
+<ul>
+<li>Marketing Email title</li>
+	<li>Recipients (total number of Recipients in assigned Recipient Lists)</li>
+	<li>Opens (numeric and percentage)</li>
+	<li>Clicks (numeric and percentage)</li>
+</ul>{% anchor h3 %}
+Status
+{% endanchor %}
+
+<p>Marketing Email status can have multiple values:</p>
+
+<h4>Simple Marketing Email</h4>
+<ul>
+<li>Draft (the date when the marketing email was created)</li>
+	<li>Scheduled (the scheduled date from Step 4)</li>
+	<li>Sending (current date and time)</li>
+	<li>Paused (the date when the sending process was paused)</li>
+	<li>Sent (the date when the sending process was finished)</li>
+</ul><h4>Split Testing:</h4>
+<ul>
+<li>Draft (the date when the marketing email was created)</li>
+	<li>Scheduled (the scheduled date from Step 4)</li>
+	<li>Sending Tests (current date and time)</li>
+	<li>Paused (the date when the sending process was paused)</li>
+	<li>Split Testing (the date when all variations were sent)</li>
+	<li>Sent (the date when the sending process was finished)</li>
+</ul>{% anchor h3 %}
+Clone
+{% endanchor %}
+
+<p>Clone creates a duplicate of the marketing email with the same characteristics as the old one, except the Name, which gets a [Clone] suffix, so that it can be found easier. The title can later be modified by editing the marketing email.</p>
+
+{% anchor h3 %}
+View
+{% endanchor %}
+
+<p>View redirects to the last accessed step in the marketing email wizard. If the marketing email is a draft, it can be edited via any steps in the wizard.</p>
+
+{% anchor h3 %}
+Stats
+{% endanchor %}
+<p>Stats displays analytics for sent marketing emails. If the marketing email was split tested, the chart will show a column containing each variation including the winning variation (if it was already picked). You can check or uncheck which variation should be displayed on the chart (all variations are selected by default), in order to compare the graphs.</p>
+
+{% anchor h3 %}
+Stats Listing
+{% endanchor %}
+<p>Stats analytics in tabular view, both raw numbers and percentages are displayed.</p>
+
+{% anchor h3 %}
+Download to Excel
+{% endanchor %}
+<p>Export statistics data into an XLS file saved on your local computer.</p>
+
+{% anchor h3 %}
+Print View
+{% endanchor %}
+<p>Displays the marketing emails graph and tabular analytics in a convenient printable format.</p>
+
+{% anchor h3 %}
+Delete Marketing Email
+{% endanchor %}
+<p>Deletes the marketing email.</p>
+
+{% anchor h3 %}
+Pause/Resume/Stop Sending
+{% endanchor %}
+<p>Manages the marketing email sending status by pausing, resuming or even stopping the sending process.</p>
+
+{% anchor h3 %}
+Share
+{% endanchor %}
+<p>Share allows you to publish the marketing email title to Twitter and Facebook. The tool will pre-fill the status update with the marketing email email subject and a short URL for a webpage where we saved the marketing email content. All you need to do is Save, and all your friends and followers can see the Marketing Email without receiving the email - by clicking the link.</p>
