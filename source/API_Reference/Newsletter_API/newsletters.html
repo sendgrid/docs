@@ -1,19 +1,17 @@
 ---
 layout: page
 weight: 0
-title: Newsletters
+title: Marketing Emails
 navigation:
   show: true
 ---
 
-<p>This endpoint allows you to add, view, or remove newsletters.</p>
-
-
+<p>This endpoint allows you to add, view, or remove marketing emails.</p>
 
 {% anchor h2 %}
 add 
 {% endanchor %}
-<p>Create a new Newsletter.</p>
+<p>Create a new Marketing Email.</p>
 
 <table class="table table-bordered table-striped">
     <tr>
@@ -26,31 +24,31 @@ add
       <td>identity</td>
       <td>Yes</td>
       <td>Must be an existing Identity</td>
-      <td>The Identity that will be used for the Newsletter being created.</td>
+      <td>The Identity that will be used for the Marketing Email being created.</td>
     </tr>
     <tr>
       <td>name</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The name that will be used for the Newsletter being created.</td>
+      <td>The name that will be used for the Marketing Email being created.</td>
     </tr>
 <tr>
       <td>subject</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The subject that will be used for the Newsletter being created.</td>
+      <td>The subject that will be used for the Marketing Email being created.</td>
     </tr>
 <tr>
       <td>text</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The text portion of the Newsletter being created.</td>
+      <td>The text portion of the Marketing Email being created.</td>
     </tr>
 <tr>
       <td>html</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The html portion of the Newsletter being created.</td>
+      <td>The html portion of the Marketing Email being created.</td>
     </tr>
   </table>
 
@@ -109,7 +107,7 @@ http://sendgrid.com/api/newsletter/add.xml?identity=Sender_Address&name=SendGrid
 {% anchor h2 %}
 edit 
 {% endanchor %}
-<p>Edit an existing Newsletter.</p>
+<p>Edit an existing Marketing Email.</p>
 
 <table class="table table-bordered table-striped">
     <tr>
@@ -121,39 +119,39 @@ edit
       <td>name</td>
       <td>Yes</td>
       <td>Must be an existing Identity</td>
-      <td>The name of the Newsletter being updated.</td>
+      <td>The name of the Marketing Email being updated.</td>
     </tr>
 <tr>
     <tr>
       <td>newname</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The new name for the Newsletter being edited.</td>
+      <td>The new name for the Marketing Email being edited.</td>
     </tr>
     <tr>
     <tr>
       <td>identity</td>
       <td>Yes</td>
       <td>Must be an existing Identity</td>
-      <td>The new Identity for the Newsletter being edited.</td>
+      <td>The new Identity for the Marketing Email being edited.</td>
     </tr>
     <tr>
       <td>subject</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The new subject that will be used for the Newsletter being edited.</td>
+      <td>The new subject that will be used for the Marketing Email being edited.</td>
     </tr>
 <tr>
       <td>text</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The new text portion of the Newsletter being edited.</td>
+      <td>The new text portion of the Marketing Email being edited.</td>
     </tr>
 <tr>
       <td>html</td>
       <td>Yes</td>
       <td>None</td>
-      <td>The new html portion of the Newsletter being edited.</td>
+      <td>The new html portion of the Marketing Email being edited.</td>
     </tr>
   </table>
 
@@ -211,7 +209,7 @@ http://sendgrid.com/api/newsletter/edit.xml?identity=Sender_Address&name=SendGri
 {% anchor h2 %}
 get 
 {% endanchor %}
-<p>Retrieve the contents of an existing Newsletter.</p>
+<p>Retrieve the contents of an existing Marketing Email.</p>
 
 <table class="table table-bordered table-striped">
     <tr>
@@ -223,8 +221,8 @@ get
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Retrieve the content of an existing Newsletter.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Retrieve the content of an existing Marketing Email.</td>
     </tr>
   </table>
 
@@ -300,7 +298,7 @@ http://sendgrid.com/api/newsletter/get.xml?name=SendGridv1_(deprecated)NLv1_(dep
 {% anchor h2 %}
 list 
 {% endanchor %}
-<p>Retrieve a list of all existing Newsletter.</p>
+<p>Retrieve a list of all existing Marketing Email.</p>
 
 <table class="table table-bordered table-striped">
     <tr>
@@ -312,8 +310,8 @@ list
     <tr>
       <td>name</td>
       <td>No</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Search to see if a specific Newsletter exists rather than a list of all Newsletters.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.</td>
     </tr>
   </table>
 
@@ -401,7 +399,7 @@ http://sendgrid.com/api/newsletter/list.xml?&api_user=your_sendgrid_username&api
 {% anchor h2 %}
 delete 
 {% endanchor %}
-<p>Remove an existing Newsletter.</p>
+<p>Remove an existing Marketing Email.</p>
 
 <table class="table table-bordered table-striped">
     <tr>
@@ -413,8 +411,8 @@ delete
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Remove the Newsletter with this name.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Remove the Marketing Email with this name.</td>
     </tr>
   </table>
 

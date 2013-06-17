@@ -6,17 +6,17 @@ navigation:
   show: true
 ---
 
-<p>This endpoint allows you to add, view, or remove scheduled delivery events for Newsletters.</p>
+<p>This endpoint allows you to add, view, or remove scheduled delivery events for Marketing Emails.</p>
 
 {% info %}
-If you wish to send a newsletter immediately, leave off the <strong>at</strong> and <strong>after</strong> parameters.
+If you wish to send amarketing emailimmediately, leave off the <strong>at</strong> and <strong>after</strong> parameters.
 {% endinfo %}
 
 
 {% anchor h2 %}
 add 
 {% endanchor %}
-<p>Schedule a delivery time for an existing Newsletter.</p>
+<p>Schedule a delivery time for an existing Marketing Email.</p>
 <table class="table table-bordered table-striped">
     <tr>
       <th>Parameter</th>
@@ -27,14 +27,14 @@ add
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter.</td>
-      <td>Newsletter to schedule delivery for. (If Newsletter should be sent now, include no additional parameters.)</td>
+      <td>Must be an existing Marketing Email.</td>
+      <td>Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)</td>
     </tr>
     <tr>
       <td>at</td>
       <td>No</td>
       <td>Date / Time must be provided in ISO 8601 format (YYYY-MM-DD HH:MM:SS+-HH:MM)</td>
-      <td>Date / Time to schedule newsletter Delivery.</td>
+      <td>Date / Time to schedulemarketing emailDelivery.</td>
     </tr>
     <tr>
       <td>after</td>
@@ -98,7 +98,7 @@ http://sendgrid.com/api/newsletter/schedule/add.xml?name=test&at=2012-09-05v1_(d
 {% anchor h2 %}
 get 
 {% endanchor %}
-<p>Retrieve the scheduled delivery time for an existing Newsletter.</p>
+<p>Retrieve the scheduled delivery time for an existing Marketing Email.</p>
 <table class="table table-bordered table-striped">
     <tr>
       <th>Parameter</th>
@@ -109,8 +109,8 @@ get
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter.</td>
-      <td>Retrieve the delivery time scheduled for this Newsletter.</td>
+      <td>Must be an existing Marketing Email.</td>
+      <td>Retrieve the delivery time scheduled for this Marketing Email.</td>
     </tr>
   </table>
 
@@ -171,7 +171,7 @@ http://sendgrid.com/api/newsletter/schedule/get.xml?name=SendGridv1_(deprecated)
 {% anchor h2 %}
 delete 
 {% endanchor %}
-<p>Cancel a scheduled send for a Newsletter.</p>
+<p>Cancel a scheduled send for a Marketing Email.</p>
 <table class="table table-bordered table-striped">
     <tr>
       <th>Parameter</th>
@@ -182,8 +182,8 @@ delete
     <tr>
       <td>name</td>
       <td>Yes</td>
-      <td>Must be an existing Newsletter</td>
-      <td>Remove the scheduled delivery time from an existing Newsletter.</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>Remove the scheduled delivery time from an existing Marketing Email.</td>
     </tr>
   </table>
 
