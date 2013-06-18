@@ -7,7 +7,7 @@ navigation:
 ---
 
 <p>
-This Rails example shows how to send an email for user signups. You can also checkout <a href="https://github.com/stephenb/sendgrid">this Ruby gem</a> for more advanced features.
+This Rails example shows how to send an email for user signups. You can also checkout <a href='https://github.com/stephenb/sendgrid'>this Ruby gem</a> for more advanced features.
 </p>
 
 {% info %}
@@ -17,10 +17,10 @@ This example is specific to ActionMailer. You can use any SMTP library that is c
 In <strong>config/environment.rb</strong> specify ActionMailer defaults
 {% codeblock lang:ruby %}
 ActionMailer::Base.smtp_settings = {
-  :user_name => "sendgridusername",
-  :password => "sendgridpassword",
-  :domain => "yourdomain.com",
-  :address => "smtp.sendgrid.net",
+  :user_name => 'sendgridusername',
+  :password => 'sendgridpassword',
+  :domain => 'yourdomain.com',
+  :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
@@ -31,19 +31,19 @@ ActionMailer::Base.smtp_settings = {
 As a best practice, you should not store your credentials directly in
 the source but should instead store them in configuration files or
 environment variables. See this tutorial on <a
-  href="http://railsapps.github.io/rails-environment-variables.html">environment
+  href='http://railsapps.github.io/rails-environment-variables.html'>environment
   variables in rails</a>.
 {% endwarning %}
 
 Create your notification model in <strong>app/models/notifier.rb</strong>
 {% codeblock lang:ruby %}
 class Notifier < ActionMailer::Base
-  default :from => "any_from_address@example.com"
+  default :from => 'any_from_address@example.com'
   
   # send a signup email to the user, pass in the user object that contains the user's email address
   def signup_email(user)
     mail( :to => user.email,
-    :subject => "Thanks for signing up" )
+    :subject => 'Thanks for signing up' )
   end
 end
 {% endcodeblock %}
@@ -57,9 +57,9 @@ class UsersController < ApplicationController
     if @user.save
       # Deliver the signup_email
       Notifier.signup_email(@user).deliver
-      redirect_to(@user, :notice => "User created")
+      redirect_to(@user, :notice => 'User created')
     else
-      render :action => "new"
+      render :action => 'new'
     end
   end
 end
