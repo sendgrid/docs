@@ -51,7 +51,7 @@ Retrieve Subuser Statistics
   <div class="tab-pane" id="stats-xml">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -88,7 +88,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSe
   <div class="tab-pane active" id="stats-json">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com
+https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:javascript %}[
@@ -151,7 +151,7 @@ Retrieve Aggregates
   <div class="tab-pane" id="agg-xml">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&aggregate=1
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -170,7 +170,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSe
      <h3>Call</h3>
     <h4>Command</h4>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&aggregate=1
+https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:javascript %}{
@@ -215,7 +215,7 @@ Category List
   <div class="tab-pane" id="cat-xml">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&list=true
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -231,7 +231,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSe
   <div class="tab-pane active" id="cat-json">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&list=true
+https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:javascript %}[
@@ -294,11 +294,11 @@ Note that you can use 
   <div class="tab-pane" id="catstats-xml">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
 {% endcodeblock %}
     <h4>Call - Using an array of categories</h4>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -329,11 +329,11 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=username&api_key=secureSe
   <div class="tab-pane active" id="catstats-json">
      <h3>Call</h3>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
+https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
 {% endcodeblock %}
     <h4>Call - Using an array of categories</h4>
     {% codeblock %}
-https://sendgrid.com/apiv2/customer.stats.json?api_user=username&api_key=secureSecret&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
+https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
 {% endcodeblock %}
     <h3>Response</h3>
     {% codeblock lang:javascript %}[

@@ -6,7 +6,7 @@ navigation:
     show: true
 ---
 
-We'll start with a simple example using the built-in .NET SMTP libraries to send a message. After that example, you can find more complete instructions that use the SendGrid C# library.</p>
+We'll start with a simple example using the built-in .NET SMTP libraries to send a message. After that example, you can find more complete instructions that use the SendGrid C# library.
 
 {% anchor h2 %}
 Using .NET's Built-in SMTP Library 

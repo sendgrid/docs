@@ -1,0 +1,319 @@
+---
+layout: page
+weight: 0
+title: Categories
+navigation:
+  show: true
+---
+
+<p>This module allows you to create and manage categories within your Marketing Emails.
+</p>
+
+
+{% anchor h2 %}
+create 
+{% endanchor %}
+<p>Create a new Category.</p>
+
+
+<table class="table table-bordered table-striped">
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description.</th>
+    </tr>
+    <tr>
+      <td>category</td>
+      <td>Yes</td>
+      <td>None</td>
+      <td>The name that will be used for the Category being created.</td>
+    </tr>
+  </table>
+
+  
+{% xmljsontabs create %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="create-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="create-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/create.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+
+{% anchor h2 %}
+add 
+{% endanchor %}
+<p>Assign a Category to an existing Marketing Email.</p>
+
+<table class="table table-bordered table-striped">
+  <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>Yes</td>
+      <td>Must be an existing Category.</td>
+      <td>The Category that will be added to the marketing email.</td>
+    </tr>
+<tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>The Marketing Email to which the categories will be added.</td>
+    </tr>
+  </table>
+
+  
+{% xmljsontabs add %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="add-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="add-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/add.xml?&api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+
+{% anchor h2 %}
+remove 
+{% endanchor %}
+<p>Remove specific categories, or all categories from a Marketing Email.\</p>
+
+<table class="table table-bordered table-striped">
+ <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>Must be an existing Marketing Email</td>
+      <td>The Marketing Email that will have Category(ies) deleted from it.</td>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>No</td>
+      <td>Must be an existing category currently added to the Marketing Email</td>
+      <td>Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.</td>
+    </tr>
+  </table>
+
+
+  
+{% xmljsontabs remove %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="remove-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}{
+  "message": "success"
+}
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="remove-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/remove.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  </div>
+
+<hr/>
+
+
+{% anchor h2 %}
+list 
+{% endanchor %}
+<p>List all categories.</p>
+
+
+<table class="table table-bordered table-striped">
+ <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Requirements</th>
+      <th>Description</th>
+    </tr>
+ <tr>
+      <td>category</td>
+      <td>No</td>
+      <td>Must be an existing Category</td>
+      <td>Search to see if a specific Category exists rather than a list of all Categories.</td>
+    </tr>
+  </table>
+
+  
+{% xmljsontabs list %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="list-json">
+          <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
+          <h3>Response: Success</h3>
+{% codeblock lang:javascript %}[
+  {
+    "category": "CATEGORY"
+  },
+  {
+    "category": "CATEGORY2"
+  }
+]
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:javascript %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="list-xml">
+        <h3>Call</h3>
+{% codeblock %}
+http://sendgrid.com/api/newsletter/category/list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+<h3>Response: Success</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<categories>
+   <category>
+      <category>CATEGORY</category>
+   </category>
+   <category>
+      <category>CATEGORY2</category>
+   </category>
+</categories>
+
+{% endcodeblock %}
+          <h3>Response: Error</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  </div>
+

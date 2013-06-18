@@ -2,6 +2,6 @@
 -root  public
 -doc   linklint_logs
 -index index.html index.cgi
--skip /Newsletters/tags.html
+-skip /Marketing_Emails/tags.html
 -quiet
 /@

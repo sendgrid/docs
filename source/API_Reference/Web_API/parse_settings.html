@@ -12,7 +12,7 @@ get
 {% endanchor %}
 <p>Retrieve settings already configured for parsing incoming email.</p>
 
-<h3>Parameters</h3>
+
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -43,7 +43,7 @@ get
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=secureSecret
+https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 <h3>Response: Success</h3>
 {% codeblock lang:javascript %}{
@@ -67,7 +67,7 @@ https://sendgrid.com/api/parse.get.json?api_user=youremail@domain.com&api_key=se
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.get.xml?api_user=youremail@domain.com&api_key=secureSecret
+https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -97,7 +97,7 @@ set
 {% endanchor %}
 <p>Specify the hostname and url for parsing incoming emails.</p>
 
-<h3>Parameters</h3>
+
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -146,7 +146,7 @@ set
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
+https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
 <h3>Response: Success </h3>
 {% codeblock lang:javascript %}{
@@ -166,7 +166,7 @@ https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=se
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
+https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
 
 <h3>Response: Success<h3>
@@ -204,7 +204,7 @@ Edit Entry
 {% endanchor %}
 <p>Edit your existing settings for parsing incoming emails.</p>
 
-<h3>Parameters</h3>
+
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -254,7 +254,7 @@ Edit Entry
   <div class="tab-pane active" id="edit-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
+https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
 
 	<h3>Response: Success</h3>
@@ -275,7 +275,7 @@ https://sendgrid.com/api/parse.set.json?api_user=youremail@domain.com&api_key=se
   <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.set.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
+https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
@@ -311,7 +311,7 @@ Delete Entry
 {% endanchor %}
 <p>Delete the existing settings for parsing incoming emails.</p>
 
-<h3>Parameters</h3>
+
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -349,7 +349,7 @@ Delete Entry
      <h3>Call</h3>
 
 {% codeblock %}
-https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
@@ -370,7 +370,7 @@ https://sendgrid.com/api/parse.delete.json?api_user=youremail@domain.com&api_key
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/api/parse.delete.xml?api_user=youremail@domain.com&api_key=secureSecret&hostname=www.example.com
+https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
