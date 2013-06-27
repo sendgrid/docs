@@ -6,17 +6,10 @@ navigation:
   show: true
 ---
 
-Using SendGrid’s Inbound Parse API and Windows Mobile Services to Share Data Between a Azure Hosted Web App and an iOS App
+{% anchor h2 %}
+Point and Click Setup in Windows Azure
+{% endanchor %}
 
-Quick Links:
-
-* [Point and Click Setup in Windows Azure](#point)
-* [Connect to the SendGrid Inbound Parse API](#connect)
-* [Prepare the Code to Run on Windows Azure](#prepare)
-* [Add a Backend Using Windows Mobile Services](#add)
-* [Connect Windows Azure Mobile Services to iOS](#connect_windows)
-
-# <a id="point"></a>Point and Click Setup in Windows Azure
 You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We’ll get to all three of these in this tutorial.
 
 To start, create a SendGrid account from the management portal: 
@@ -41,7 +34,9 @@ Now, we’ll create a Windows Azure Website:
 
 That’s it! You now have a website running on Azure. Now let’s create something cool.
 
-# <a id="connect"></a>Connect to the SendGrid Inbound Parse API
+{% anchor h2 %}
+Connect to the SendGrid Inbound Parse API
+{% endanchor %}
 
 SendGrid can both send and receive email for your domain name. The playlist app uses incoming mail, which means setting up DNS at your domain registrar or host. The process to do this is going to be different depending on who controls your DNS. This tutorial will walk through the Azure and SendGrid part of this process, but you may need to ask for help on changing DNS in your system.
 
@@ -84,7 +79,9 @@ While we’re waiting for DNS to be ready, we can prepare your SendGrid Incoming
 
 Once the DNS has propagated, you’ll be able to receive email to any email address @playlist.example.com. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
-# <a id="prepare"></a>Prepare the Code to Run on Windows Azure
+{% anchor h2 %}
+Prepare the Code to Run on Windows Azure
+{% endanchor%}
 
 Before we can put the code in place, we need to prepare our source control system, which will be Git in our case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
 Now set up your repository within the Windows Azure interface:
@@ -153,7 +150,9 @@ One last thing, we need to update the receiving email address:
 
 With your changes pushed to Azure, you can restart the server from the button at the bottom of the web server’s dashboard. Then click the browse button within the same menu to see your website live. At this point people can send in their song requests, assuming DNS has propagated.
 
-# <a id="add"></a>Add a Backend Using Windows Mobile Services
+{% anchor h2 %}
+Add a Backend Using Windows Mobile Services
+{% endanchor %}
 
 Windows Azure can also run a backend-as-a-service for your app, which allows you to store data, authenticate users, send push notifications and do other common mobile tasks. This backend can also be used for non-mobile applications.
 
@@ -199,7 +198,9 @@ Add your changes via .git and push to Azure.
 
 Now your website, mobile service and SendGrid account are all in harmony on Windows Azure. You could stop here, but to see the real power of Mobile Services, you’ll want to create a native mobile application.
 
-# <a id="connect_windows"></a>Connect Windows Azure Mobile Services to iOS
+{% anchor h2 %}
+Connect Windows Azure Mobile Services to iOS
+{% endanchor %}
 
 The Windows Azure Mobile Services SDK simplifies the process of standing up a backend for your app in Windows Azure.   The Windows Azure team also has SDKs for Android, HTML, Windows Store and Windows Phone, but we’re going to stick to iOS here.
 
