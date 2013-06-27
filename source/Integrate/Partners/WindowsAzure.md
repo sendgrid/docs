@@ -176,9 +176,9 @@ Now you need to add a table to the database:
 
 In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
 
-{%codeblock lang:html}
+{%codeblock lang:html%}
 <script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
-{%endcodeblock}
+{%endcodeblock%}
 
 ![Mobile Services]({{root_url}}/images/azure_13.png) 
 
@@ -188,7 +188,7 @@ In the js/app.js file, after the “$(“#queue”).append …” line, add the 
 var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
 var item = { request: data.name, song: data.track, user: data.user };
 client.getTable("playlist_songs").insert(item);
-{%endcodeblock}
+{%endcodeblock%}
 
 Now, to allow for your app to have access to the DB, your URL to the cross origin resource sharing (cors) setting.
 
@@ -231,7 +231,7 @@ items = [results mutableCopy];
 // Let the caller know that we finished
 completion();
 }];
-{%endcodeblock}
+{%endcodeblock%}
 ![Code]({{root_url}}/images/azure_18.png) 
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
 {%codeblock lang:objc}
@@ -278,7 +278,7 @@ itemText.text = @"";
 label.text = [item objectForKey:@"text"];
 with this line:
 label.text = [item objectForKey:@"request"];
-{%endcodeblock}
+{%endcodeblock%}
 
 Now let’s make some adjustments to the interface:
 
