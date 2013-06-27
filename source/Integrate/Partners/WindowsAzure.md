@@ -184,7 +184,7 @@ In your index.html file add the following code near the closing body tag to add 
 
 In the js/app.js file, after the “$(“#queue”).append …” line, add the following code:
 
-{%codeblock lang:javascript}
+{%codeblock lang:javascript%}
 var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
 var item = { request: data.name, song: data.track, user: data.user };
 client.getTable("playlist_songs").insert(item);
@@ -220,7 +220,7 @@ Now you’ll want to edit the sample app you downloaded from Windows Azure:
 ![Credentials]({{root_url}}/images/azure_17.png) 
 3.	Update the function refreshDataOnSuccess in QSTodoService.m to return all from the queue. Remove the existing code there and replace it with:
 
-{%codeblock lang:objc}
+{%codeblock lang:objc%}
 // Return all song request titles from the table
 // items: An NSArray of the records that matched your query.
 // totalCount: The total count of items in all pages of the query, not just those returned in the current page. This value is set to -1, unless you explicitly request the total count in your request. For more info, see Return data in pages.
@@ -234,7 +234,7 @@ completion();
 {%endcodeblock%}
 ![Code]({{root_url}}/images/azure_18.png) 
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
-{%codeblock lang:objc}
+{%codeblock lang:objc%}
 // Populate the parameters for the Sendgrid Web API Call
 // Find more details about the [Web API here](http://sendgrid.com/docs/API_Reference/Web_API/index.html).
 NSString *username = @"<Your SendGrid Username>";
