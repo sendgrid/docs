@@ -15,7 +15,9 @@ You can control a website, mobile backend and SendGrid all from within the Windo
 To start, create a SendGrid account from the management portal: 
 
 1.	Click NEW at the bottom left
+<br/>
 ![Click New]({{root_url}}/images/azure_1.png)
+<br/>
 2.	Click STORE to load up the list of Add-ons
 3.	Find SendGrid in the list and click it
 ![Find SendGrid]({{root_url}}/images/azure_2.png)
