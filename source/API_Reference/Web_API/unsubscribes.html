@@ -98,7 +98,7 @@ get
       <td>optional beginning point in the list to retrieve from.</td> 
     </tr>
 <tr>
-<td>email</td> 
+>email</td> 
       <td>No</td> 
       <td>email address eg testing@example.com</td> 
       <td>optional email addresses to search for.</td> 
@@ -138,6 +138,7 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 <hr>
 {% anchor h2 %}
 delete 
+				Number of days in the past for which to retrieve unsubscribes (includes today)
 {% endanchor %}
 <p>Delete an address from the Unsubscribe list.  Please note that if no parameters are provided the ENTIRE list will be removed.</p>
 
@@ -150,24 +151,6 @@ delete
       <th>Requirements</th>
 
       <th>Description</th>
-    </tr>
-<tr>
-<td>start_date</td>
-
-      <td>No</td>
-
-      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-
-      <td>Optional date to start retrieving for.</td>
-    </tr>
-<tr>
-<td>end_date</td>
-
-      <td>No</td>
-
-      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-
-      <td>Optional date to end retrieving for.</td>
     </tr>
 <tr>
 <td>email</td>
