@@ -32,4 +32,16 @@ $(function() {
 	
 		$('.collapsibleListOpen, .collapsibleListClosed').click(saveTreeState);	
 	}
+
+	$.ajax({
+		url: "https://sendgrid.com/user/checkLogin",
+		method: "GET",
+		success: function (data) {
+			if(data.logged_in === true){
+				$("#user-state").html('<a href="https://sendgrid.com/account/overview">Your Account</a>');
+			}
+		},
+		dataType: "jsonp"
+	});
+
 });
