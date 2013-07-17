@@ -59,6 +59,7 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 <hr/>
 
 <h3>Filter - 'subscriptiontrack':</h3> 
+<td>Disable or enable this App</td>
 
 <p>Inserts a subscription management link at the bottom of the text and html bodies. Custom text is set in the settings, with the subscription management link being substituted into the text either as '% %' for plain text bodies, and as a link where the text in between the '%' and '%' is the link text.</p>
 
@@ -73,21 +74,6 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 <td>enable</td>
 <td>0|1</td>
 <td>Disable or enable this App</td>
-</tr>
-<tr>
-<td>text/html</td>
-<td><html>...%Here%...</html></td>
-<td>String for HTML body. Example: "Unsubscribe <%Here%>", where "Here" would be linked.</td>
-</tr>
-<tr>
-<td>text/plain</td>
-<td>...<% %>...</td>
-<td>String for text body. Example: Unsubscribe Here: <% %></td>
-</tr>
-<tr>
-<td>replace</td>
-<td>string</td>
-<td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]</td>
 </tr>
 <tr>
 <td>landing</td>
