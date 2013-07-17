@@ -1,3 +1,5 @@
+#Submit all pull requests to the develop branch
+
 The develop branch is now continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
 
 # SendGrid Documentation
