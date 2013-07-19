@@ -17,7 +17,6 @@ end
 
 gem 'capistrano'
 gem 's3-static-site'
-gem 'sinatra', '~> 1.3.2'
 gem 'nokogiri'
 gem 'juicer'
 gem 'indextank'
