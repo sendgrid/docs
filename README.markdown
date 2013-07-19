@@ -20,8 +20,6 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 * To rebuild the site: <code>rake generate</code>
 
-* To deploy the site to an s3 bucket (requires s3tools configured with AWS key and secret, and bucket name specified in \_config.yml): <code>rake gzip\_deploy</code>. This gzips all the content and pushes to an s3 bucket with the correct Content-Encoding header, as well as adding Expires header info for .js and .css pages.
-
 ## Config
 
 The config is defined in `_config.yml`.
