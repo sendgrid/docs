@@ -10,17 +10,12 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
-      
       @dirs = {}
 
       site.pages.each do |page|
-        # exclude all pages that are hidden in front-matter
-        if page.data["navigation"]["show"] != false
-          relative = page.dir[1..-1] ||""
-          path = relative + page.url
-          path = path.index('/')==0 ? path[1..-1] : path
-          @dirs[path] = page.data
-        end
+        path = page.url
+        path = path.index('/')==0 ? path[1..-1] : path
+        @dirs[path] = page.data
       end
       
       output='<ul class="breadcrumb">'
@@ -32,9 +27,13 @@ module Jekyll
         unless level.empty?
           if index == levels.size-1 || 
              (level == levels[levels.size-2] && levels[levels.size-1].to_i > 0)
+            puts "okay"
             path = @page_url[1..-1]
-            path = @dirs[path]["title"] || path
-            output += "<li>#{path}</li>" unless level.to_i > 0
+            puts @dirs[path]
+            if  @dirs[path]["navigation"]["show"] == true
+              path = @dirs[path]["title"] || path
+              output += "<li>#{path}</li>" unless level.to_i > 0
+            end
           else
               link = "/"
               i = 1
