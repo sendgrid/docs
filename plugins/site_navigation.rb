@@ -20,8 +20,7 @@ module Jekyll
       site.pages.each do |page|
         # exclude all pages that are hidden in front-matter
         if page.data["navigation"]["show"] != false
-          relative = page.dir[1..-1] ||""
-          path = relative + page.url
+          path = page.url
           path = path.index('/')==0 ? path[1..-1] : path
           @nodes[path] = page.data
         end
