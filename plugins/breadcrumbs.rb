@@ -27,9 +27,7 @@ module Jekyll
         unless level.empty?
           if index == levels.size-1 || 
              (level == levels[levels.size-2] && levels[levels.size-1].to_i > 0)
-            puts "okay"
             path = @page_url[1..-1]
-            puts @dirs[path]
             if  @dirs[path]["navigation"]["show"] == true
               path = @dirs[path]["title"] || path
               output += "<li>#{path}</li>" unless level.to_i > 0
