@@ -56,7 +56,7 @@ Create/Configure Your Engine Yard Instance
 {% endanchor %}
 
 <ol>
-<li>Create a new application. Confirm the language is PHP. Engine Yard requires your Git repository to be hosted elsewhere. You can deploy using <a href="http://github.com/sendgrid/sendgrid-engine-yard">our sample app (on GitHub)</a> or your own.
+<li>Create a new application. Confirm the language is PHP. Engine Yard requires your Git repository to be hosted elsewhere. You can deploy using <a href="http://github.com/sendgrid/sendgrid-engine-yard-php">our sample app (on GitHub)</a> or your own.
 
 <p><img alt="Creating an Engine Yard Application" src="{{root_url}}/images/engineyard_1_create.png" /></p></li>
 <li>Next, create a new environment for your application. If you're using our sample app, ensure your database is set to MySQL.
