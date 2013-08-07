@@ -41,10 +41,17 @@ module Jekyll
               end
               
               if !link.index('.')
-                link = link + 'index.html'
-              end
+                
+                path = Pathname.new(site.source + link + 'index.html')
+                if path.exist?
+                  link = link + 'index.html'
+                else
+                  link = ""
+                end
+               end
               
-              output += "<li><a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a><span class=\"divider\">/</span></li>"
+              inner = link.length > 0 ? "<a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a>" : "#{level.gsub(/_/, ' ')}"
+              output += "<li>#{inner}<span class=\"divider\">/</span></li>"
           end
         end
       end
