@@ -126,6 +126,7 @@ Event Types
 <p><img title="Event Flow" src="{{root_url}}/images/event_1.png" alt="" width="690" height="349" /></p>
 
 {% anchor h2 %}
+</tbody>
 Default Parameters
 {% endanchor %}
 
@@ -145,9 +146,18 @@ Default Parameters
 <td>Email address of the intended recipient</td>
 </tr>
 <tr>
+  <td>useragent</td>
+  <td>The user agent responsible for the event, e.g. "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36"</td>
+</tr>
+<tr>
+  <td>ip</td>
+  <td>The IP Address where the event originated.</td>
+</tr>
+<tr>
   <td>sg_event_id</td>
   <td>A unique id for the event. This is a 23 byte string.</td>
 </tr>
+
 </tbody>
 </table>
 
