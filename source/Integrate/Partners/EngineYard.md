@@ -51,14 +51,21 @@ Create/Configure Your Engine Yard Instance
 <li>Select SendGrid. Once on the setup page, chose the environment you wish to add SendGrid.
 
 <p><img alt="Select an Environment to Add SendGrid" src="{{root_url}}/images/engineyard_4_environmentselect.png" /></p></li>
-<li>Once you've added SendGrid to your environment, return to the Environment's dashboard. SendGrid should now be in the Add-ons Section, take note of the Keys/Variables (they may initially be hidden).</li>
-<li>Under Application Instances, find your application instance, and click SSH. This will launch your SSH client. (For this to work, you must have provided Engine Yard with your public key, _before_ booting the instance, if you have not already, provide Engine Yard with your Public Key, edit your environment to include it, and hit apply.)</li>
-<li>Now you must edit your environment variables, they're stored in a shared file. To edit them: <code>vi /data/YOUR_APP_NAME/shared/config/.env</code> add the lines:
-{% codeblock %}
-SENDGRID_USERNAME: yoursendgridusername
-SENDGRID_PASSWORD: yoursendgridpass
-{% endcodeblock %}</li>
-<li>Add the <a href="https://rubygems.org/gems/dotenv-rails">dotenv-rails</a> gem to utilize the .env configuration and run <code>bundle install</code>, push your changes via git and then deploy from Engine Yard.</li>
+<li>Configure ActionMailer as follows:
+{% codeblock lang:php %}
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.smtp_settings = {
+     :authentication => :plain,
+     :address => "smtp.sendgrid.net",
+     :port => 587,
+     :domain => EY::Config.get('base', 'domain_name'),
+     :user_name => EY::Config.get(:sendgrid, 'SENDGRID_USERNAME'),
+     :password => EY::Config.get(:sendgrid, 'SENDGRID_PASSWORD')
+}
+{% endcodeblock %}
+</li>
 <li>Now you are ready to start sending emails from your app using SendGrid!</li>
 <li>If you are implementing our <a href="https://github.com/sendgrid/sendgrid-engine-yard-ruby">sample app</a>, which receives emails, you will need to setup your <a href="http://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse settings</a>.</li>
 </ol>
