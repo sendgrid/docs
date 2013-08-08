@@ -12,7 +12,63 @@ navigation:
 {% anchor h2 %}
 Deploying a Ruby App With SendGrid and Engine Yard
 {% endanchor %}
-_Coming Soon_
+
+{% anchor h3 %}
+Create/Modify Your Code for Engine Yard
+{% endanchor %}
+
+If you are using Ruby without a framework, please utilize [these instructions](http://sendgrid.com/docs/Code_Examples/ruby.html).
+
+For email sending only, you can [utilize Action Mailer](http://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html), or for more advanced functionality, you can use this [Ruby gem](https://github.com/stephenb/sendgrid).
+
+We have a [sample app on Github](https://github.com/sendgrid/sendgrid-engine-yard-ruby) that demonstrates sending an email via SendGrid using ActionMailer and receiving an email using our <a href="http://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse</a> webhook. 
+</ol>
+
+{% anchor h3 %}
+Create/Configure Your Engine Yard Instance
+{% endanchor %}
+
+<ol>
+<li>Create a git repository or utilize our <a href="https://github.com/sendgrid/sendgrid-engine-yard-ruby">sample app</a>.</li>
+<li>Create a new Engine Yard Cloud app, making sure you choose Ruby.</li>
+<li>Configure the application.
+	
+<p><img alt="Configure the application" src="{{root_url}}/images/engineyard_7_create_application.png" /></p>
+</li>
+<li>Next you will setup your Git deploy keys.</li>
+<li>Now, create your app's environment. I changed the Runtime to <code>Ruby</code> and the Database stack to <code>MySQL 5.5.x</code> for use with our sample app.</li>
+<li>Setup your environment and click boot this configuration.
+	
+<p><img alt="Setup your environment" src="{{root_url}}/images/engineyard_8_environment.png" /></p>
+</li>
+
+<li>Scroll to the bottom, and click new Add-on.
+	
+<p><img alt="New Add-on" src="{{root_url}}/images/engineyard_3_addon.png" /></p>
+
+<li>Select SendGrid. If this is your first time adding SendGrid to this account, you'll need to setup SendGrid. Follow the prompts and select your plan.
+<ul><li>After configuring SendGrid, you'll need to go through the process of adding a new Add-on once again, in your environment, select "New Add-on"</li></ul></li>
+<li>Select SendGrid. Once on the setup page, chose the environment you wish to add SendGrid.
+
+<p><img alt="Select an Environment to Add SendGrid" src="{{root_url}}/images/engineyard_4_environmentselect.png" /></p></li>
+<li>Configure ActionMailer as follows:
+{% codeblock lang:php %}
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.perform_deliveries = true
+config.action_mailer.raise_delivery_errors = true
+config.action_mailer.smtp_settings = {
+     :authentication => :plain,
+     :address => "smtp.sendgrid.net",
+     :port => 587,
+     :domain => EY::Config.get('base', 'domain_name'),
+     :user_name => EY::Config.get(:sendgrid, 'SENDGRID_USERNAME'),
+     :password => EY::Config.get(:sendgrid, 'SENDGRID_PASSWORD')
+}
+{% endcodeblock %}
+</li>
+<li>Now you are ready to start sending emails from your app using SendGrid!</li>
+<li>If you are implementing our <a href="https://github.com/sendgrid/sendgrid-engine-yard-ruby">sample app</a>, which receives emails, you will need to setup your <a href="http://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse settings</a>.</li>
+</ol>
 
 {% anchor h2 %}
 Deploying a PHP App With SendGrid and Engine Yard
@@ -67,12 +123,12 @@ Create/Configure Your Engine Yard Instance
 <li>In the Add-ons section of the environment, click "New Add-on"
 
 <p><img alt="New Add-on" src="{{root_url}}/images/engineyard_3_addon.png" /></p></li>
-<li>Select SendGrid. If this is your first time adding SendGrid to this account, you'll need to Setup SendGrid. Follow the prompts and select your plan.
+<li>Select SendGrid. If this is your first time adding SendGrid to this account, you'll need to setup SendGrid. Follow the prompts and select your plan.
 <ul><li>After configuring SendGrid, you'll need to go through the process of adding a new Add-on once again, in your environment, select "New Add-on"</li></ul></li>
 <li>Select SendGrid. Once on the setup page, chose the environment you wish to add SendGrid.
 
 <p><img alt="Select an Environment to Add SendGrid" src="{{root_url}}/images/engineyard_4_environmentselect.png" /></p></li>
-<li>Once you've added SendGrid to you environment, return to the Environment's dashboard. SendGrid should now be in the Add-ons Section, take note of the Keys/Variables (they may initially be hidden).</li>
+<li>Once you've added SendGrid to your environment, return to the Environment's dashboard. SendGrid should now be in the Add-ons Section, take note of the Keys/Variables (they may initially be hidden).</li>
 <li>Under Application Instances, find your application instance, and click SSH. This will launch your SSH client. (For this to work, you must have provided Engine Yard with your public key, _before_ booting the instance, if you have not already, provide Engine Yard with your Public Key, edit your environment to include it, and hit apply.)</li>
 <li>Now you must edit your environment variables, they're stored in a shared file. To edit them: <code>nano /data/YOUR_APP_NAME/shared/config/env.custom</code> add the lines:
 {% codeblock %}
