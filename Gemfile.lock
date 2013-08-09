@@ -18,7 +18,7 @@ GEM
       fast-stemmer (>= 1.0.0)
     cmdparse (2.0.5)
     colorator (0.1)
-    commander (4.1.3)
+    commander (4.1.4)
       highline (~> 1.6.11)
     compass (0.12.2)
       chunky_png (~> 1.2)
@@ -85,7 +85,7 @@ GEM
       haml
       mime-types
     safe_yaml (0.7.1)
-    sass (3.2.9)
+    sass (3.2.10)
     stringex (1.4.0)
     syntax (1.0.0)
     uuidtools (2.1.4)
