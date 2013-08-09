@@ -33,7 +33,10 @@ module Jekyll
       puts 'Indexing pages...'
     
       # gather pages and posts
-      items = site.pages.dup.concat(site.posts)
+      #items = site.pages.dup.concat(site.posts)
+      
+      #we only need pages
+      items = site.pages
 
       # only process files that will be converted to .html and only non excluded files 
       items = items.find_all {|i| i.output_ext == '.html' && ! @excludes.any? {|s| (i.absolute_url =~ Regexp.new(s)) != nil } } 
@@ -50,14 +53,14 @@ module Jekyll
         sleep 0.5
       end
       
-      items.each do |item|              
+      items.each do |item|
         page_text = extract_text(site,item)
 
-        @index.document(item.absolute_url).add({ 
+        @index.document(item.url).add({ 
           :text => page_text,
           :title => item.data['title'] || item.name 
         })
-        puts 'Indexed ' << item.absolute_url
+        puts 'Indexed ' << item.url
       end
       
       @last_indexed = Time.now
