@@ -52,7 +52,7 @@ Create/Configure Your Engine Yard Instance
 
 <p><img alt="Select an Environment to Add SendGrid" src="{{root_url}}/images/engineyard_4_environmentselect.png" /></p></li>
 <li>Configure ActionMailer as follows:
-{% codeblock lang:php %}
+{% codeblock lang:ruby %}
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = true

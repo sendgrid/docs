@@ -62,8 +62,7 @@ hr.docs-separator {
 blockquote { background-color: #FFFFED; }
 
 .code-buttons {
-  margin-top:0;
-  margin-bottom: -19px;
+  margin: 0 40px -19px;
 }
 
 .code-buttons > .nav-tabs > li > .copycode {
@@ -75,6 +74,10 @@ blockquote { background-color: #FFFFED; }
 .code-buttons > .nav-tabs > li {
   background-color:white;
 } 
+
+figure.code {
+	margin: 0 40px 1.5em;
+}
 
 .hover { 
   border-color: #eee #eee #ddd;
