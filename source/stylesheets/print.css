@@ -24,4 +24,6 @@
 
   table, h1, h2, blockquote { clear:both; page-break-inside:avoid; }
   table * { clear:both; page-break-after:avoid; page-break-before:avoid; }
+
+  #footer-iframe { display: none; }
 }
