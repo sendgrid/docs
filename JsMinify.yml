@@ -4,7 +4,7 @@ files: [
   'source/javascripts/jquery-1.8.0.min.js',
   'source/javascripts/collapse.min.js',
   'source/javascripts/libs/jstorage.js',
-  'source/javascripts/libs/jquery.zclip.min.js',
+  'source/javascripts/libs/ZeroClipboard.js',
   'source/javascripts/menu.js',
   'source/javascripts/anchors.js',
   'source/javascripts/codebuttons.js',
