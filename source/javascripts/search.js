@@ -30,7 +30,7 @@
   });
 
   function search(query) {
-    var result = $.getJSON('http://buzebe.api.indexden.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
+    var result = $.getJSON('http://agupam.api.indexden.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
         $('div#results').empty();
 		
 		root = $('#root').val().slice(0, -1);
