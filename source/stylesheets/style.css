@@ -279,6 +279,7 @@ li.official {
 
 @media (min-width: 767px) {
 	.sidebar-nav {
+		height: auto;
 		background: transparent;
 		margin: 0;
 		border: none;
@@ -291,8 +292,6 @@ li.official {
 	}
 	.sidebar-nav:before {
 		content: "";
-		top: 0;
-		left: 0;
 	}
 	.sidebar-nav #nav-menu {
 		display: block;
