@@ -85,6 +85,14 @@ figure.code {
   background-color: #eee;
 }
 
+.no-flash figure.code {
+	margin-top: 1.5em;
+}
+
+.no-flash .copycode {
+	display: none;
+}
+
 .tab-content {
 	padding: 10px;
 	border: 1px solid #DDD;
