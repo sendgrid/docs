@@ -25,8 +25,6 @@ $(function() {
     });
 
     zclip.on('complete', function ( client, args ) {
-      document.yayCompleteClient = client;
-      document.yayCompleteArgs = args;
 
       $(this).html('<i class="icon-check"> </i> Copied');
     });
