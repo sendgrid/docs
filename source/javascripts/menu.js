@@ -44,10 +44,4 @@ $(function() {
 		dataType: "jsonp"
 	});
 
-	$(".sidebar-nav").click(function (e) {
-		if(e.target == this){
-			$(this).toggleClass("shown");
-		}
-	});
-
 });
