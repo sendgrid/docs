@@ -25,7 +25,9 @@ Examples:
 
 
 
-<h2>Temporary Failures - “If at first you don’t succeed..."</h2>
+{% anchor h2 %}
+Temporary Failures - “If at first you don’t succeed..."
+{% endanchor %}
 <p>A 400-style message is usually returned when some sort of transient error is encountered during the message transaction. These types of responses are usually not a cause for alarm as most of these will iron themselves out given a little time.</p>
 
 {% anchor h2 %}
@@ -83,8 +85,9 @@ Examples:
 <p><strong><em>What to do with this response</em></strong>:We’ll continue to retry deferred messages for up to 72 hours for a response like this. Just keep your eyes peeled to see if the response to our retry attempts change.</p>
 
 
-
-<h2>Hard Failures - "Return to Sender..."</h2>
+{% anchor h2 %}
+Hard Failures - "Return to Sender..."
+{% endanchor %}
 <p>A Hard, or Immediate, failure is anything that gets 500-style message as the result of trying to hand off a message. This typically indicates that some sort of permanent error occurred, this can range from systemic errors on the far-end server that just flat out prevents mail from coming in, all the way to policy-related blocks pertaining to content or other such factors. The examples below will give a taste of some of the myriad reasons a 500-style NDR(non-delivery response) can get returned for.</p>
 
 {% anchor h2 %}
@@ -124,7 +127,7 @@ Examples:
 <ul>
 <li>552 5.2.2 This message is larger than the current system limit or the recipient's mailbox is full. Create a shorter message body or remove attachments and try sending it again.</li>
 </ul>
-<p><strong><em>What to do with this response</em></strong><em>:</em>It’s at your discretion if you want to try re-sending, but there's a pretty good chance that it's a defunct address. We don't resend messages with this error code, so refer to the human readable portion for more guidance.</p>
+<p><strong><em>What to do with this response</em></strong><em>:</em> It’s at your discretion if you want to try re-sending, but there's a pretty good chance that it's a defunct address. We don't resend messages with this error code, so refer to the human readable portion for more guidance.</p>
 
 {% anchor h2 %}
 553 
@@ -139,7 +142,7 @@ Examples:
 <li>553 Invalid/inactive user.</li>
 </ul>
 </ul>
-<p><strong><em>What to do with this response</em></strong><strong><em>:</em></strong>Don’t retry sending to this address, it’s fairly likely that it’s a bogus or mistyped address.</p>
+<p><strong><em>What to do with this response</em></strong><strong><em>:</em></strong> Don’t retry sending to this address, it’s fairly likely that it’s a bogus or mistyped address.</p>
 
 {% anchor h2 %}
 554 
