@@ -79,10 +79,18 @@ figure.code {
 	margin: 0 40px 1.5em;
 }
 
-.hover { 
+.copycode.hover { 
   border-color: #eee #eee #ddd;
   text-decoration: none;
   background-color: #eee;
+}
+
+.no-flash figure.code {
+	margin-top: 1.5em;
+}
+
+.no-flash .copycode {
+	display: none;
 }
 
 .tab-content {
