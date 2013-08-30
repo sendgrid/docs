@@ -20,7 +20,7 @@ module Jekyll
       
       output='<ul class="breadcrumb">'
       
-      output+='<li><a href="/index.html">Documentation</a><span class="divider">/</span></li>'
+      output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a><span class="divider">/</span></li>'
       
       levels = @page_url.split('/') #break up url into different levels
       levels.each_with_index do |level, index|
@@ -30,7 +30,7 @@ module Jekyll
             path = @page_url[1..-1]
             if  @dirs[path]["navigation"]["show"] == true
               path = @dirs[path]["title"] || path
-              output += "<li>#{path}</li>" unless level.to_i > 0
+              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\"><span itemprop=\"title\">#{path}</span><meta itemprop=\"url\" content=\"#{@page_url}\" /></li>" unless level.to_i > 0
             end
           else
               link = "/"
@@ -50,8 +50,8 @@ module Jekyll
                 end
                end
               
-              inner = link.length > 0 ? "<a href=\"#{link}\">#{level.gsub(/_/, ' ')}</a>" : "#{level.gsub(/_/, ' ')}"
-              output += "<li>#{inner}<span class=\"divider\">/</span></li>"
+              inner = link.length > 0 ? "<a href=\"#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
+              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">/</span></li>"
           end
         end
       end
