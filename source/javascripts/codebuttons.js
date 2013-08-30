@@ -18,7 +18,7 @@ $(function() {
     }else{
       var codeId = $(this).attr("id").replace('expand_','');
       var codeblockWrapper = $('#wrapper_' + codeId);
-      codeblockWrapper.addClass('expanded');
+      codeblockWrapper.addClass('expanded').css("height", codeblockWrapper.height());
 
       var overlay = $('<div id="overlay"></div>');
       overlay.appendTo(document.body);
@@ -40,6 +40,7 @@ $(function() {
         $("#overlay .expandcode").removeClass('btn-danger');
         $("#overlay .expandcode").html('<i class="icon-fullscreen"> </i> Fullscreen');
         overlay.children().appendTo(codeblockWrapper);
+        codeblockWrapper.css("height", "");
         $(document.body).css("overflow", "auto");
         overlay.remove();
       });
