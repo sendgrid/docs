@@ -96,7 +96,7 @@ module Jekyll
           </li>
           <li class="pull-right">
             <a class="expandcode code-button btn-mini" id="expand_#{digest}">
-              <i class="icon-fullscreen"></i> Expand
+              <i class="icon-fullscreen"></i> Fullscreen
             </a>
           </li>
         </ul>
