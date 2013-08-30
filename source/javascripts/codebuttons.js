@@ -40,4 +40,48 @@ $(function() {
   }else{
     $("body").addClass("no-flash");
   }
+
+  $(".expandcode").click(function() {
+    var codeId = $(this).attr("id").replace('expand_','');
+    var codeblock = $('#wrapper_' + codeId + " figure.code").clone();
+    codeblock.addClass('expanded');
+
+    var overlay = $('<div id="overlay"></div>');
+    overlay.appendTo(document.body);
+
+    codeblock.appendTo(document.body);
+
+    //prevent the body from scrolling
+    $(document.body).css("overflow", "hidden");
+
+    innerblock = codeblock.find('.highlight');
+    innerblock.css("overflow", "scroll"); 
+    innerblock.css("height", $(window).height() - 100 + "px");
+    innerblock.css("width", $(window).width() - 80 + "px");
+    
+    //move all of this into a css class and toggle it
+    //append a button that closes the window
+    button = $('<a class="close-btn btn btn-large btn-danger"><i class="icon-remove"></i> Close</a>');
+    button.css("float","right");
+    button.css("position","fixed");
+    button.css("top","20px");
+    button.css("right","40px");
+    innerblock.append(button);
+
+    button.click(function() {
+      $(document.body).css("overflow", "auto");
+      $('#overlay').remove();
+      
+      var codeblock = $(this).closest("figure.code")
+      codeblock.removeClass('expanded');
+      codeblock.css("width","auto");
+
+      innerblock = codeblock.find('.highlight');
+      innerblock.css("width","auto");
+      innerblock.css("height","auto");
+      innerblock.css("overflow", "auto"); 
+      
+      codeblock.remove();
+    });
+  });
 });
