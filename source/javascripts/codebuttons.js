@@ -43,11 +43,13 @@ $(function() {
 
   $(".expandcode").click(function() {
     var codeId = $(this).attr("id").replace('expand_','');
-    var codeblock = $('#wrapper_' + codeId + " figure.code")
+    var codeblock = $('#wrapper_' + codeId + " figure.code").clone();
     codeblock.addClass('expanded');
 
     var overlay = $('<div id="overlay"></div>');
     overlay.appendTo(document.body);
+
+    codeblock.appendTo(document.body);
 
     //prevent the body from scrolling
     $(document.body).css("overflow", "hidden");
@@ -79,7 +81,7 @@ $(function() {
       innerblock.css("height","auto");
       innerblock.css("overflow", "auto"); 
       
-      $(this).remove();
+      codeblock.remove();
     });
   });
 });
