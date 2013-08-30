@@ -27,7 +27,7 @@ The config is defined in `_config.yml`.
 The only config variables you should need to know about are <code>root</code>, which is the root from which all links are calculated, and the <code>folder_weights</code> hash, which specifies the order that the folders should be displayed in the nav tree. Higher weights mean higher display priority (higher in the tree). You can also specify icons for folders with the
 <code>folder_icons</code> hash.
 
-There's also a <code>version</code> number in the config, which is displayed on the site footer.
+There's also a <code>version</code> number in the config.
 
 ### The Nav Tree
 
@@ -86,8 +86,6 @@ If you are working on API reference docs, you can generate XML and JSON nav tabs
 ```
 
 where `foo` is a string unique to the page, e.g. a method name.
-
-Generating containers and content via liquid tag is in the works.
 
 ## JS and CSS, etc
 Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:
