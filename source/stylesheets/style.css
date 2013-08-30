@@ -69,22 +69,19 @@ blockquote { background-color: #FFFFED; }
   padding-top:2px;
   padding-bottom:2px;
   border:1px solid #EEE;
+  background-color: #fff;
 }
 
-.code-buttons > .nav-tabs > li {
-  background-color:white;
-} 
+.code-buttons > .nav-tabs > li .code-button:hover, .code-buttons > .nav-tabs > li .code-button.hover { 
+  cursor: pointer;
+  background-color: #eee;
+}
+
 
 figure.code {
 	margin: 0 40px 1.5em;
 }
 
-.code-button:hover { 
-  cursor: pointer;
-}
-.code-button.hover { 
-  cursor: pointer;
-}
 
 .no-flash figure.code {
 	margin-top: 1.5em;
@@ -277,6 +274,10 @@ li.official {
     overflow: auto;
     background-color: rgba(0,0,0,.7);
     z-index: 10000;
+}
+
+#overlay .code-buttons {
+	margin-top: 20px;
 }
 
 figure.code.expanded {
