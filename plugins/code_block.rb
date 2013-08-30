@@ -86,20 +86,23 @@ module Jekyll
 
       
     source = <<HTML
-    <div class="code-buttons">
-      <ul class="nav nav-tabs">
-        <li class="pull-right">
-          <a class="copycode code-button btn-mini" id="copy_#{digest}">
-          <i class="icon-file"></i> Copy</a>
-        </li>
-        <li class="pull-right">
-          <a class="expandcode code-button btn-mini" id="expand_#{digest}">
-          <i class="icon-fullscreen"></i> Expand</a></li>
-      </ul>
-    </div>
-    <div id="wrapper_#{digest}">
-    <figure class="code">
-    #{@caption}
+    <div class="code-wrapper" id="wrapper_#{digest}">
+      <div class="code-buttons">
+        <ul class="nav nav-tabs">
+          <li class="pull-right">
+            <a class="copycode code-button btn-mini" id="copy_#{digest}">
+              <i class="icon-file"></i> Copy
+            </a>
+          </li>
+          <li class="pull-right">
+            <a class="expandcode code-button btn-mini" id="expand_#{digest}">
+              <i class="icon-fullscreen"></i> Expand
+            </a>
+          </li>
+        </ul>
+      </div>
+      <figure class="code" id="code_#{digest}">
+      #{@caption}
 HTML
 
       if @filetype
