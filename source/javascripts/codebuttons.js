@@ -43,25 +43,20 @@ $(function() {
 
   $(".expandcode").click(function() {
     var codeId = $(this).attr("id").replace('expand_','');
-    var codeblock = $('#code_' + codeId).clone();
+    var codeblock = $('#wrapper_' + codeId + " figure.code")
     codeblock.addClass('expanded');
 
-    codeblock.appendTo(document.body);
-
-    var overlay = $('<div id="overlay"> </div>');
+    var overlay = $('<div id="overlay"></div>');
     overlay.appendTo(document.body);
 
     //prevent the body from scrolling
     $(document.body).css("overflow", "hidden");
 
     innerblock = codeblock.find('.highlight');
+    innerblock.css("overflow", "scroll"); 
     innerblock.css("height", $(window).height() - 100 + "px");
     innerblock.css("width", $(window).width() - 80 + "px");
-
-    codeblock.css("width", $(window).width() - 80 + "px");
-
-    innerblock.css("overflow", "scroll"); 
-
+    
     //move all of this into a css class and toggle it
     //append a button that closes the window
     button = $('<a class="close-btn btn btn-large btn-danger"><i class="icon-remove"></i> Close</a>');
@@ -70,13 +65,20 @@ $(function() {
     button.css("top","20px");
     button.css("right","40px");
     innerblock.append(button);
+
     button.click(function() {
       $(document.body).css("overflow", "auto");
       $('#overlay').remove();
       
-      var code = $(this).closest("figure.code")
-      code.removeClass('expanded');
-      code.css("width","auto");
+      var codeblock = $(this).closest("figure.code")
+      codeblock.removeClass('expanded');
+      codeblock.css("width","auto");
+
+      innerblock = codeblock.find('.highlight');
+      innerblock.css("width","auto");
+      innerblock.css("height","auto");
+      innerblock.css("overflow", "auto"); 
+      
       $(this).remove();
     });
   });
