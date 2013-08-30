@@ -289,7 +289,6 @@ li.official {
 	.sidebar-nav {
 		height: auto;
 		background: transparent;
-		margin: 0;
 		border: none;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
@@ -304,4 +303,17 @@ li.official {
 	.sidebar-nav #nav-menu {
 		display: block;
 	}
+
+}
+
+@media (min-width: 980px) {
+  .sidebar-nav {
+    margin-left:40px;
+    width:280px;
+  }
+}
+
+@media (max-width: 767px){
+  body { padding:0 !important;}
+  #content { padding:20px }
 }
