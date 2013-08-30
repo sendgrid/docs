@@ -54,6 +54,13 @@ $(function() {
     ZeroClipboard.destroy();
     glueClipboards();
   });
+
+  // Fullscreen Code If Requested
+  var match = document.location.hash.match(/#(wrapper|code)(_\w{32})-full(screen)?/);
+  if(match){
+    $(window).scrollTop($('#wrapper' + match[2]).offset().top);
+    $('#wrapper' + match[2] + ' .expandcode').click();
+  }
 });
 
 function glueClipboards () {
