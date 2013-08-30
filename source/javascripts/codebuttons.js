@@ -25,7 +25,8 @@ $(function() {
 
       codeblockWrapper.children().appendTo(overlay);
 
-      $(this).html('<i class="icon-fullscreen"> </i> Close');
+      $("#overlay .expandcode").addClass('btn-danger');
+      $(this).html('<i class="icon-remove icon-white"> </i> Close');
 
       //prevent the body from scrolling
       $(document.body).css("overflow", "hidden");
@@ -36,8 +37,8 @@ $(function() {
         var codeId = overlay.children(".code").attr("id").replace('code_','');
         var codeblockWrapper = $('#wrapper_' + codeId);
 
+        $("#overlay .expandcode").removeClass('btn-danger');
         $("#overlay .expandcode").html('<i class="icon-fullscreen"> </i> Fullscreen');
-        
         overlay.children().appendTo(codeblockWrapper);
         $(document.body).css("overflow", "auto");
         overlay.remove();
