@@ -66,7 +66,7 @@ blockquote { background-color: #FFFFED; }
   margin: 0 40px -19px;
 }
 
-.code-buttons > .nav-tabs > li > .copycode {
+.code-buttons > .nav-tabs > li > .code-button {
   padding-top:2px;
   padding-bottom:2px;
   border:1px solid #EEE;
@@ -80,10 +80,11 @@ figure.code {
 	margin: 0 40px 1.5em;
 }
 
-.copycode.hover { 
-  border-color: #eee #eee #ddd;
-  text-decoration: none;
-  background-color: #eee;
+.code-button:hover { 
+  cursor: pointer;
+}
+.code-button.hover { 
+  cursor: pointer;
 }
 
 .no-flash figure.code {
@@ -266,6 +267,29 @@ li.official {
 	background: url(/images/favicon.ico) left center no-repeat;
 	padding: 0 24px;
 	margin-left: -20px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 10000;
+}
+
+figure.code.expanded {
+ position: fixed;
+ top:0;
+ left:0;
+ padding:60px 40px 40px 40px;
+ margin: 0;
+ z-index:100000;
 }
 
 .video-container {
