@@ -1,4 +1,5 @@
 body {
+	padding: 0 !important;
 	font-size:18px;
 	line-height:24px;
 }
@@ -167,7 +168,7 @@ margin-top: 2px;
 }
 
 #content {
-  padding-top: 25px;
+  padding: 20px;
   overflow: auto;
 }
 
@@ -285,7 +286,7 @@ li.official {
 	height: 100%;
 }
 
-@media (min-width: 767px) {
+@media screen and (min-width: 767px) {
 	.sidebar-nav {
 		height: auto;
 		background: transparent;
@@ -303,17 +304,14 @@ li.official {
 	.sidebar-nav #nav-menu {
 		display: block;
 	}
-
+	#content {
+		padding: 25px 0 0 0;
+	}
 }
 
-@media (min-width: 980px) {
+@media screen and (min-width: 980px) {
   .sidebar-nav {
     margin-left:40px;
     width:280px;
   }
-}
-
-@media (max-width: 767px){
-  body { padding:0 !important;}
-  #content { padding:20px }
 }
