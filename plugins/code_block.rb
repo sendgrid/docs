@@ -84,22 +84,30 @@ module Jekyll
 
       digest = Digest::MD5.hexdigest code
 
-      source = '<div class="code-buttons">'
-      source += '<ul class="nav nav-tabs">'
-      source += '<li class="pull-right">'
-      source += '<a class="copycode code-button btn-mini" id="copy_' + digest + '">'
-      source += '<i class="icon-file"></i> Copy</a></li>'
-      source += '<li class="pull-right">'
-      source += '<a class="expandcode code-button btn-mini" id="expand_' + digest + '">'
-      source += '<i class="icon-fullscreen"></i> Expand</a></li>'      
-      source += '</ul></div>'
-      source += '<figure class="code" id="code_' + digest + '">'
-      source += @caption if @caption
+      
+    source = <<HTML
+    <div class="code-buttons">
+      <ul class="nav nav-tabs">
+        <li class="pull-right">
+          <a class="copycode code-button btn-mini" id="copy_#{digest}">
+          <i class="icon-file"></i> Copy</a>
+        </li>
+        <li class="pull-right">
+          <a class="expandcode code-button btn-mini" id="expand_#{digest}">
+          <i class="icon-fullscreen"></i> Expand</a></li>
+      </ul>
+    </div>
+    <div id="wrapper_#{digest}">
+    <figure class="code">
+    #{@caption}
+HTML
+
       if @filetype
         source += " #{highlight(code, @filetype)}</figure>"
       else
         source += "#{tableize_code(code.lstrip.rstrip.gsub(/</,'&lt;'))}</figure>"
       end
+      source += "</div>"
       source = safe_wrap(source)
       source = context['pygments_prefix'] + source if context['pygments_prefix']
       source = source + context['pygments_suffix'] if context['pygments_suffix']
