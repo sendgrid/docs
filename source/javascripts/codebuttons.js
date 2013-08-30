@@ -1,26 +1,16 @@
-var hasFlash = false;
-try {
-  var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-  if(fo) hasFlash = true;
-}catch(e){
-  if(navigator.mimeTypes ["application/x-shockwave-flash"] !== undefined) hasFlash = true;
-}
-
 $(function() {
-  if(hasFlash){
-    $("body").addClass("flash");
-    //this is kinda hacky but let's infer the root from the home button
-    var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
-        path = root + '/flash/ZeroClipboard.swf';
 
-    // Default ZeroClipboard to the root of the Docs
-    ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
+  $("body").addClass("flash");
+  
+  //this is kinda hacky but let's infer the root from the home button
+  var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
+      path = root + '/flash/ZeroClipboard.swf';
 
-    // Initialize all zClipboards
-    glueClipboards();
-  }else{
-    $("body").addClass("no-flash");
-  }
+  // Default ZeroClipboard to the root of the Docs
+  ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
+
+  // Initialize all zClipboards
+  glueClipboards();
 
   $(".expandcode").click(function() {
     if($("#overlay").length){
@@ -65,6 +55,7 @@ $(function() {
 });
 
 function glueClipboards () {
+  if($("body").hasClass("flash")){
       $(".copycode").each(function () {
 
       var zclip = new ZeroClipboard($(this));
@@ -84,5 +75,9 @@ function glueClipboards () {
       zclip.on('complete', function ( client, args ) {
         $(this).html('<i class="icon-check"> </i> Copied');
       });
+      zclip.on('noflash', function ( client, args ) {
+        $("body").removeClass("flash").addClass("no-flash");
+      });
     });
+  }
 }
