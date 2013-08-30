@@ -87,8 +87,12 @@ module Jekyll
       source = '<div class="code-buttons">'
       source += '<ul class="nav nav-tabs">'
       source += '<li class="pull-right">'
-      source += '<a class="copycode btn-mini" id="copy_' + digest + '">'
-      source += '<i class="icon-file"></i> Copy</a></li></ul></div>'
+      source += '<a class="copycode code-button btn-mini" id="copy_' + digest + '">'
+      source += '<i class="icon-file"></i> Copy</a></li>'
+      source += '<li class="pull-right">'
+      source += '<a class="expandcode code-button btn-mini" id="expand_' + digest + '">'
+      source += '<i class="icon-fullscreen"></i> Expand</a></li>'      
+      source += '</ul></div>'
       source += '<figure class="code" id="code_' + digest + '">'
       source += @caption if @caption
       if @filetype
