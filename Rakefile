@@ -375,6 +375,10 @@ task :list do
   puts "(type rake -T for more detail)\n\n"
 end
 
+#####################
+# Added by SendGrid #
+#####################
+
 desc "Rewrite all github style backtick code blocks with more explicit codeblocks"
 task :codeblocks do
   htmlfiles = File.join("**", "source", "**", "*.html")
@@ -413,21 +417,55 @@ task :codeblocks do
   end
 end
 
-desc "gzip assets and deploy to s3 bucket with correct encoding header"
-task :gzip_deploy do
-  s3_bucket = "sg-docs" #site.s3_bucket
-  time_string = (Time.now + (4*7*24*60*60)).httpdate
-  expires = Shellwords.escape("Expires:" + time_string)
-  ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")
-end
-
 desc "run linklint and fail if errors found"
 task :linklint do
   puts "Running linklint"
   puts `./linklint-2.3.5 @linklint_command`
   
-  
   if File.exist?("linklint_logs/error.txt")
     fail "Linklint found broken links or missing files!"
+  end
+end
+
+desc "DESTRUCTIVE TASK: pretty-print XML and JSON codeblocks and htmlt ables and identify invalid blocks"
+task :pretty_print do
+  htmlfiles = File.join("**", "source", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  
+  files.each do |htmlfile|
+    #Validate JSON
+    contents.gsub!(/({%\s?codeblock lang:javascript\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
+      begin
+        json = JSON.parse($2)
+        valid = true
+      rescue
+        puts "\n--------\ninvalid JSON or non-JSON javascript block in #{html_file}: #{$2}\n--------\n)"
+        valid = false
+      end
+      if valid
+        "\n{% codeblock lang:javascript %}" + "\n" + JSON.pretty_generate(json) + "\n" + "{% endcodeblock %}\n"
+      else
+        "\n{% codeblock lang:javascript %}" + "\n" + $2 + "\n" + "{% endcodeblock %}\n"
+      end
+    end
+
+    #Pretty print the XML
+    contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
+      begin
+        xml = Nokogiri.XML($2, nil, "UTF-8")
+      rescue
+        puts "\n--------\ninvalid XML block in #{html_file}: #{$2}\n--------\n)"
+        next
+      end
+      "\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
+    end
+    
+    #this is destructive
+    FileUtils.rm_f(output_path)
+    file = File.new(html)
+    file.write(contents)
+    file.close
   end
 end
