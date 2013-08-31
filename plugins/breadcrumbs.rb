@@ -20,7 +20,7 @@ module Jekyll
       
       output='<ul class="breadcrumb">'
       
-      output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a><span class="divider">/</span></li>'
+      output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a><span class="divider">&gt;</span></li>'
       
       levels = @page_url.split('/') #break up url into different levels
       levels.each_with_index do |level, index|
@@ -51,7 +51,7 @@ module Jekyll
                end
               
               inner = link.length > 0 ? "<a href=\"#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
-              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">/</span></li>"
+              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">&gt;</span></li>"
           end
         end
       end
