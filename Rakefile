@@ -2,6 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 require "nokogiri"
+require "nokogiri-pretty"
 require "time"
 require "shellwords"
 
@@ -435,13 +436,17 @@ task :pretty_print do
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
   
   files.each do |htmlfile|
+    file = File.open(htmlfile)
+    contents = file.read
+    file.close
+
     #Validate JSON
     contents.gsub!(/({%\s?codeblock lang:javascript\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       begin
         json = JSON.parse($2)
         valid = true
       rescue
-        puts "\n--------\ninvalid JSON or non-JSON javascript block in #{html_file}: #{$2}\n--------\n)"
+        puts "\n--------\ninvalid JSON or non-JSON javascript block in #{htmlfile}: #{$2}\n--------\n)"
         valid = false
       end
       if valid
@@ -456,15 +461,15 @@ task :pretty_print do
       begin
         xml = Nokogiri.XML($2, nil, "UTF-8")
       rescue
-        puts "\n--------\ninvalid XML block in #{html_file}: #{$2}\n--------\n)"
+        puts "\n--------\ninvalid XML block in #{htmlfile}: #{$2}\n--------\n"
         next
       end
       "\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
     end
     
     #this is destructive
-    FileUtils.rm_f(output_path)
-    file = File.new(html)
+    FileUtils.rm_f(htmlfile)
+    file = File.new(htmlfile, "w+")
     file.write(contents)
     file.close
   end
