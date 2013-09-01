@@ -5,6 +5,7 @@ require "nokogiri"
 require "nokogiri-pretty"
 require "time"
 require "shellwords"
+require "json"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -428,49 +429,73 @@ task :linklint do
   end
 end
 
-desc "DESTRUCTIVE TASK: pretty-print XML and JSON codeblocks and htmlt ables and identify invalid blocks"
-task :pretty_print do
+desc "DESTRUCTIVE TASK: parse XML and JSON codeblocks and identify invalid blocks"
+task :validate_json_xml do
   htmlfiles = File.join("**", "source", "**", "*.html")
   
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
   
+  json_invalid = 0
+  json_valid =0
+  xml_invalid = 0
+  xml_valid = 0
+
   files.each do |htmlfile|
+    if htmlfile.scan("nodejs").length > 0
+      next
+    end
     file = File.open(htmlfile)
     contents = file.read
     file.close
 
     #Validate JSON
     contents.gsub!(/({%\s?codeblock lang:javascript\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
-      begin
-        json = JSON.parse($2)
-        valid = true
-      rescue
-        puts "\n--------\ninvalid JSON or non-JSON javascript block in #{htmlfile}: #{$2}\n--------\n)"
-        valid = false
-      end
-      if valid
-        "\n{% codeblock lang:javascript %}" + "\n" + JSON.pretty_generate(json) + "\n" + "{% endcodeblock %}\n"
+      is_json = ($2).to_s.is_json?
+      json = is_json ? JSON.parse($2) : $2
+      
+      if is_json
+        json_valid += 1
+        #"\n{% codeblock lang:javascript %}" + "\n" + JSON.pretty_generate(json) + "\n" + "{% endcodeblock %}\n"
       else
-        "\n{% codeblock lang:javascript %}" + "\n" + $2 + "\n" + "{% endcodeblock %}\n"
+        puts "invalid JSON in #{htmlfile}: #{$2}\n"
+        json_invalid += 1
+        #"\n{% codeblock lang:javascript %}" + "\n" + $2 + "\n" + "{% endcodeblock %}\n"
       end
     end
 
-    #Pretty print the XML
+    #Validate the XML
     contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       begin
-        xml = Nokogiri.XML($2, nil, "UTF-8")
+        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
       rescue
-        puts "\n--------\ninvalid XML block in #{htmlfile}: #{$2}\n--------\n"
+        xml_invalid += 1
+        puts "invalid XML in #{htmlfile}: #{$2}\n"
         next
       end
-      "\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
+      xml_valid += 1
+      #"\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
     end
-    
+
     #this is destructive
-    FileUtils.rm_f(htmlfile)
-    file = File.new(htmlfile, "w+")
-    file.write(contents)
-    file.close
+    #FileUtils.rm_f(htmlfile)
+    #file = File.new(htmlfile, "w+")
+    #file.write(contents)
+    #file.close
+  end
+
+  puts "      Valid JSON blocks: #{json_valid}"
+  puts "Invalid/non-JSON blocks: #{json_invalid}"
+  puts "       Valid XML blocks: #{xml_valid}"
+  puts "     Invalid XML blocks: #{xml_invalid}"
+end
+
+class String
+  def is_json?
+    begin
+      !!JSON.parse(self)
+    rescue
+      false
+    end
   end
 end
