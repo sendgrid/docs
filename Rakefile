@@ -429,7 +429,7 @@ task :linklint do
   end
 end
 
-desc "DESTRUCTIVE TASK: parse XML and JSON codeblocks and identify invalid blocks"
+desc "parse XML and JSON codeblocks and identify invalid blocks"
 task :validate_json_xml do
   htmlfiles = File.join("**", "source", "**", "*.html")
   
