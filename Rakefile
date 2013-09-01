@@ -442,6 +442,7 @@ task :validate_json_xml do
   xml_valid = 0
 
   files.each do |htmlfile|
+    #hacky. we should read excluded files from a config somewhere
     if htmlfile.scan("nodejs").length > 0
       next
     end
@@ -476,12 +477,6 @@ task :validate_json_xml do
       xml_valid += 1
       #"\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
     end
-
-    #this is destructive
-    #FileUtils.rm_f(htmlfile)
-    #file = File.new(htmlfile, "w+")
-    #file.write(contents)
-    #file.close
   end
 
   puts "      Valid JSON blocks: #{json_valid}"
