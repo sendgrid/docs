@@ -73,7 +73,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "name": "twitter",
   "title": "Twitter",
   "description": "This plugin allows you to send an email message to twitter",
@@ -141,7 +141,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -206,7 +206,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -263,13 +263,13 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
+{% codeblock lang:json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
 
 {% endcodeblock %}
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "settings": null
 }
 {% endcodeblock %}
@@ -323,12 +323,12 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}
+{% codeblock lang:json %}
 "message":"success","settings":{"field_name":"field_value"}
 
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

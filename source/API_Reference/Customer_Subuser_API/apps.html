@@ -47,7 +47,7 @@ Note: The
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "name": "twitter",
   "title": "Twitter",
   "description": "This plugin allows you to send an email message to twitter",
@@ -110,7 +110,7 @@ Activate App
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -162,7 +162,7 @@ Deactivate App
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -197,12 +197,12 @@ Customize App
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock lang:javascript%}
+	  {% codeblock lang:json%}
 	{"message":"success","settings":[{"field_name":"field_value"}]}
 	{% endcodeblock %}
 	  <h4>Return - Empty</h4>
 	  This is returned if that filter has no settings or is not enabled.
-	  {% codeblock lang:javascript%}
+	  {% codeblock lang:json%}
 	"settings":null
 	{% endcodeblock %}
 	</div>
@@ -251,7 +251,7 @@ Get Current Settings
 	https://sendgrid.com/apiv2/customer.apps.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "success",
   "settings": [
     {
@@ -261,7 +261,7 @@ Get Current Settings
 }
 {% endcodeblock %}
 	  <h3>Response: Error</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -270,7 +270,7 @@ Get Current Settings
 {% endcodeblock %}
 	  <h4>Return - Empty</h4>
 	  This is returned if that filter has no settings or is not enabled.
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "settings": null
 }
 {% endcodeblock %}

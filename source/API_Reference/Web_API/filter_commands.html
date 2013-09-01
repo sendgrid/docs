@@ -24,7 +24,7 @@ For a list of all the apps and parameters accesible with the Web API you can che
 https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "name": "twitter",
     "title": "Twitter",
@@ -76,7 +76,7 @@ Activate App
 https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
 		<h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -112,7 +112,7 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
 {% endcodeblock %}
      <h3>Response</h3>
 
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -204,13 +204,13 @@ Get Settings
 https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
 {% endcodeblock %}
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}
+{% codeblock lang:json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
 
 {% endcodeblock %}
 
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -220,7 +220,7 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
 
 	<h3>Response: Empty</h3>
 <em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "settings": null
 }
 {% endcodeblock %}

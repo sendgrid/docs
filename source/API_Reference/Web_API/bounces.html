@@ -123,7 +123,7 @@ get
 https://sendgrid.com/api/bounces.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
 {% endcodeblock %}
       <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "status": "4.0.0",
     "created": "2011-09-16 22:02:19",
@@ -244,12 +244,12 @@ delete
 https://sendgrid.com/api/bounces.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "Email does not exist"
 }
 {% endcodeblock %}
@@ -323,12 +323,12 @@ Count
 https://sendgrid.com/api/bounces.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "count": "4"
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

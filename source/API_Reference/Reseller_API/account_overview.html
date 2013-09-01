@@ -76,7 +76,7 @@ https://sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "reputation": "100",
   "requests": "500000",
   "package": "Silver Package",
@@ -90,7 +90,7 @@ https://sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
