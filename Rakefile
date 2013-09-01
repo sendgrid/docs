@@ -480,6 +480,10 @@ task :validate_json_xml do
   puts "Invalid/non-JSON blocks: #{json_invalid}"
   puts "       Valid XML blocks: #{xml_valid}"
   puts "     Invalid XML blocks: #{xml_invalid}"
+
+  if xml_invalid + json_invalid > 0
+    fail "#{json_invalid} invalid JSON and #{xml_invalid} invalid XML block(s) found."
+  end
 end
 
 class String
