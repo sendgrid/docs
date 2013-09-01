@@ -40,7 +40,7 @@ Retrieve
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript%}
+	  {% codeblock lang:json%}
 	{"url":"http:\/\/www.SubUserPostUrlHere.com"}
 	{% endcodeblock %}
 	</div>
@@ -99,7 +99,7 @@ Update / Set URL
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
@@ -154,7 +154,7 @@ Delete
 	https://sendgrid.com/apiv2/customer.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	  {% codeblock lang:javascript %}{
+	  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}

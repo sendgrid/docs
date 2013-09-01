@@ -84,7 +84,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "email": "email1@domain.com",
     "created": "2009-06-01 19:41:39"
@@ -166,12 +166,12 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "Email does not exist"
 }
 {% endcodeblock %}
@@ -246,12 +246,12 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "Email already exists"
 }
 {% endcodeblock %}
