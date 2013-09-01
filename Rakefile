@@ -2,8 +2,10 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 require "nokogiri"
+require "nokogiri-pretty"
 require "time"
 require "shellwords"
+require "json"
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -375,6 +377,10 @@ task :list do
   puts "(type rake -T for more detail)\n\n"
 end
 
+#####################
+# Added by SendGrid #
+#####################
+
 desc "Rewrite all github style backtick code blocks with more explicit codeblocks"
 task :codeblocks do
   htmlfiles = File.join("**", "source", "**", "*.html")
@@ -413,21 +419,79 @@ task :codeblocks do
   end
 end
 
-desc "gzip assets and deploy to s3 bucket with correct encoding header"
-task :gzip_deploy do
-  s3_bucket = "sg-docs" #site.s3_bucket
-  time_string = (Time.now + (4*7*24*60*60)).httpdate
-  expires = Shellwords.escape("Expires:" + time_string)
-  ok_failed system("bash ./gzip_deploy.sh #{s3_bucket} #{expires}")
-end
-
 desc "run linklint and fail if errors found"
 task :linklint do
   puts "Running linklint"
   puts `./linklint-2.3.5 @linklint_command`
   
-  
   if File.exist?("linklint_logs/error.txt")
     fail "Linklint found broken links or missing files!"
+  end
+end
+
+desc "parse XML and JSON codeblocks and identify invalid blocks"
+task :validate_json_xml do
+  htmlfiles = File.join("**", "source", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  
+  json_invalid = 0
+  json_valid =0
+  xml_invalid = 0
+  xml_valid = 0
+
+  files.each do |htmlfile|
+    #hacky. we should read excluded files from a config somewhere
+    if htmlfile.scan("nodejs").length > 0
+      next
+    end
+    file = File.open(htmlfile)
+    contents = file.read
+    file.close
+
+    #Validate JSON
+    contents.gsub!(/({%\s?codeblock lang:json\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
+      is_json = ($2.strip).to_s.is_json?
+      json = is_json ? JSON.parse($2.strip) : $2
+      
+      if is_json
+        json_valid += 1
+      else
+        puts "\n--------\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n"
+        json_invalid += 1
+      end
+    end
+
+    #Validate the XML
+    contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
+      begin
+        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
+      rescue
+        xml_invalid += 1
+        puts "\n--------\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n"
+        next
+      end
+      xml_valid += 1
+    end
+  end
+
+  puts "      Valid JSON blocks: #{json_valid}"
+  puts "Invalid/non-JSON blocks: #{json_invalid}"
+  puts "       Valid XML blocks: #{xml_valid}"
+  puts "     Invalid XML blocks: #{xml_invalid}"
+
+  if xml_invalid + json_invalid > 0
+    fail "#{json_invalid} invalid JSON and #{xml_invalid} invalid XML block(s) found."
+  end
+end
+
+class String
+  def is_json?
+    begin
+      !!JSON.parse(self)
+    rescue
+      false
+    end
   end
 end

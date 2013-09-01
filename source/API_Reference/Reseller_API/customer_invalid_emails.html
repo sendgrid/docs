@@ -87,7 +87,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=1
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "email": "isaac@hotmail.comm",
     "reason": "Mail domain mentioned in email address is unknown",
@@ -184,12 +184,12 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=delete&email=invalidemail@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "Email does not exist"
 }
 {% endcodeblock %}

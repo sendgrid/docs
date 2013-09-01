@@ -18,5 +18,6 @@ end
 gem 'capistrano'
 gem 's3-static-site'
 gem 'nokogiri'
+gem 'nokogiri-pretty'
 gem 'juicer'
 gem 'indextank'

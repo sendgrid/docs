@@ -145,12 +145,12 @@ https://sendgrid.com/apiv2/customer.add.xml?api_user=your_sendgrid_username&api_
 https://sendgrid.com/apiv2/customer.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -208,12 +208,12 @@ https://sendgrid.com/apiv2/customer.delete.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/customer.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -357,7 +357,7 @@ https://sendgrid.com/apiv2/customer.profile.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.profile.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:javascript %}[
+  {% codeblock lang:json %}[
   {
     "username": "username",
     "email": "example1@example.com",
@@ -442,12 +442,12 @@ https://sendgrid.com/apiv2/customer.enable.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/customer.enable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "User not found"
 }
 {% endcodeblock %}
@@ -508,7 +508,7 @@ https://sendgrid.com/apiv2/customer.disable.json?api_user=your_sendgrid_username
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "User not found"
 }
 {% endcodeblock %}
@@ -570,7 +570,7 @@ https://sendgrid.com/apiv2/customer.website_enable.json?api_user=your_sendgrid_u
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "User not found"
 }
 {% endcodeblock %}
@@ -631,7 +631,7 @@ https://sendgrid.com/apiv2/customer.website_disable.json?api_user=your_sendgrid_
 {"message":"success"}
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "User not found"
 }
 {% endcodeblock %}

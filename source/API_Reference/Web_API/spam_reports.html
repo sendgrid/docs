@@ -101,7 +101,7 @@ https://sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&am
 {% endcodeblock %}
 
      <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "174.36.80.219",
     "email": "example@aol.com",
@@ -180,12 +180,12 @@ https://sendgrid.com/api/spamreports.delete.json?api_user=your_sendgrid_username
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

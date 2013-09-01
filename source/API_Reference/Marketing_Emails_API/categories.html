@@ -42,12 +42,12 @@ https://sendgrid.com/api/newsletter/category/create.json?api_user=your_sendgrid_
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -119,12 +119,12 @@ https://sendgrid.com/api/newsletter/category/add.json?api_user=your_sendgrid_use
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -198,12 +198,12 @@ https://sendgrid.com/api/newsletter/category/remove.json?api_user=your_sendgrid_
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -270,7 +270,7 @@ https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_us
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "category": "CATEGORY"
   },
@@ -280,7 +280,7 @@ https://sendgrid.com/api/newsletter/category/list.json?api_user=your_sendgrid_us
 ]
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
