@@ -106,6 +106,7 @@ module Jekyll
 HTML
 
       if @filetype
+        @filetype = @filetype == "json" ? "javascript" : @filetype
         source += " #{highlight(code, @filetype)}</figure>"
       else
         source += "#{tableize_code(code.lstrip.rstrip.gsub(/</,'&lt;'))}</figure>"
