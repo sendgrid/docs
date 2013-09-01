@@ -209,7 +209,7 @@ body:before {
 }
 .sidebar-nav:before {
 	display: block;
-	padding: 10px;
+	padding: 0px;
 	cursor: pointer;
 	content: "Menu";
 	font-size: 15px;
@@ -270,7 +270,7 @@ li.collapsibleListClosed{
 
 .page-header {
   padding-bottom: 12px;
-  margin: 12px 0;
+  margin: 0 0;
   border-bottom: 1px solid #ddd;
 }
 
