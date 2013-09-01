@@ -93,7 +93,7 @@ https://sendgrid.com/apiv2/reseller.billing.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "number": "2010010001",
   "invoices": [
     {
@@ -132,7 +132,7 @@ https://sendgrid.com/apiv2/reseller.billing.json?api_user=your_sendgrid_username
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

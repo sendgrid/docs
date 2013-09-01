@@ -38,7 +38,7 @@ Example
 {% endanchor %}
 <p>You can use SendGrid's <a href="{{root_url}}/API_Reference/SMTP_API/">SMTPAPI</a> to add these categories to your email. The following should be added to the email's header:</p>
 
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "category": "Example Category"
 }
 {% endcodeblock %}
@@ -46,7 +46,7 @@ Example
 
 <p>You can assign multiple categories per message, up to 10:</p>
 
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "category": [
     "dogs",
     "animals",

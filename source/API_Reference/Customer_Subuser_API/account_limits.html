@@ -43,14 +43,14 @@ Retrieve
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "credit": "0",
   "credit_remain": "2000",
   "last_reset": "2011-02-21"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -112,12 +112,12 @@ No Limit
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -221,12 +221,12 @@ Recurring Reset
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
   <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -301,16 +301,16 @@ Total Credits
 <div class="tab-content">
 	  <div class="tab-pane active" id="total-json">
 	     <h3>Call</h3>
-{% codeblock lang:javascript %}
+{% codeblock lang:json %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
 	  <h3>Response: Success</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 	  <h3>Response: Error</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -379,16 +379,16 @@ Increment Credits
 <div class="tab-content">
 	  <div class="tab-pane active" id="increment-json">
 	     <h3>Call</h3>
-{% codeblock lang:javascript %}
+{% codeblock lang:json %}
 https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
 	  <h3>Response: Success</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 	  <h3>Response: Error</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -466,12 +466,12 @@ Decrement Credits
 	https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 	  <h3>Response: Error</h3>
-	{% codeblock lang:javascript %}{
+	{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

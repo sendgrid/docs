@@ -104,7 +104,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "date": "2009-06-20",
     "requests": 12342,
@@ -196,7 +196,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "requests": 12342,
   "bounces": 12,
   "clicks": 10223,
@@ -269,7 +269,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "category": "categoryC"
 }
 {% endcodeblock %}
@@ -385,7 +385,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
 {% endcodeblock %}
 <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "date": "2009-06-20",
     "category": "categoryA",

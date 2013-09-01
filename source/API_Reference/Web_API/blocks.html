@@ -84,7 +84,7 @@ get
 https://sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %} 
       <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "status": "4.0.0",
     "created": "2012-09-02 00:12:12",
@@ -168,12 +168,12 @@ https://sendgrid.com/api/blocks.delete.json?api_user=your_sendgrid_username&amp;
 {% endcodeblock %}
 
           <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
           <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

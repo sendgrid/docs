@@ -45,12 +45,12 @@ add
 https://sendgrid.com/api/newsletter/lists/email/add.json?list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "inserted": 1
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -143,7 +143,7 @@ get
 https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "email": "dominic.may@sendgrid.com",
     "name": ""
@@ -151,7 +151,7 @@ https://sendgrid.com/api/newsletter/lists/email/get.json?list=Test&api_user=your
 ]
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -228,12 +228,12 @@ delete
 https://sendgrid.com/api/newsletter/lists/email/delete.json?list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 	<h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "removed": 1
 }
 {% endcodeblock %}
 	<h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

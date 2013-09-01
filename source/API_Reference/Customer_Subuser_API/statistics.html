@@ -91,7 +91,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
 {% endcodeblock %}
     <h3>Response</h3>
-    {% codeblock lang:javascript %}[
+    {% codeblock lang:json %}[
   {
     "date": "2009-06-20",
     "requests": 12342,
@@ -173,7 +173,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
 {% endcodeblock %}
     <h3>Response</h3>
-    {% codeblock lang:javascript %}{
+    {% codeblock lang:json %}{
   "requests": "12342",
   "bounces": "12",
   "clicks": "10223",
@@ -234,7 +234,7 @@ https://sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&ap
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
 {% endcodeblock %}
     <h3>Response</h3>
-    {% codeblock lang:javascript %}[
+    {% codeblock lang:json %}[
   {
     "category": "categoryC"
   }
@@ -336,7 +336,7 @@ https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
 {% endcodeblock %}
     <h3>Response</h3>
-    {% codeblock lang:javascript %}[
+    {% codeblock lang:json %}[
   {
     "date": "2009-06-20",
     "category": "categoryA",

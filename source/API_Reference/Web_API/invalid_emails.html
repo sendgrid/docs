@@ -120,7 +120,7 @@ https://sendgrid.com/api/invalidemails.get.json?api_user=your_sendgrid_username&
 
      <h3>Response</h3>
 
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "reason": "Known bad domain",
     "created": "2011-06-06 16:11:57",
@@ -198,12 +198,12 @@ https://sendgrid.com/api/invalidemails.delete.json?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

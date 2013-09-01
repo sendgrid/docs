@@ -113,7 +113,7 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
 {% endcodeblock %}
 
     <h3>Response</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "email": "brandon.west@sendgrid.com",
     "created": "2012-09-06 14:03:18"
@@ -169,12 +169,12 @@ delete
 https://sendgrid.com/api/unsubscribes.delete.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -242,12 +242,12 @@ https://sendgrid.com/api/unsubscribes.add.json?api_user=your_sendgrid_username&a
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

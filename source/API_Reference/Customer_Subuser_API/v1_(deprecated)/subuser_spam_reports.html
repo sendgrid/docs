@@ -68,7 +68,7 @@ https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&ap
 https://sendgrid.com/api/user.spamreports.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:javascript %}[
+  {% codeblock lang:json %}[
   {
     "email": "email1@domain.com",
     "created": "2009-06-01 19:41:39"
@@ -146,12 +146,12 @@ https://sendgrid.com/api/user.spamreports.xml?api_user=your_sendgrid_username&ap
 https://sendgrid.com/api/user.spamreports.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "Email does not exist"
 }
 {% endcodeblock %}
