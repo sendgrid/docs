@@ -429,7 +429,7 @@ task :linklint do
   end
 end
 
-desc "parse XML and JSON codeblocks and identify invalid blocks"
+desc "gparse XML and JSON codeblocks and identify invalid blocks"
 task :validate_json_xml do
   htmlfiles = File.join("**", "source", "**", "*.html")
   
@@ -452,16 +452,14 @@ task :validate_json_xml do
 
     #Validate JSON
     contents.gsub!(/({%\s?codeblock lang:javascript\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
-      is_json = ($2).to_s.is_json?
-      json = is_json ? JSON.parse($2) : $2
+      is_json = ($2.strip).to_s.is_json?
+      json = is_json ? JSON.parse($2.strip) : $2
       
       if is_json
         json_valid += 1
-        #"\n{% codeblock lang:javascript %}" + "\n" + JSON.pretty_generate(json) + "\n" + "{% endcodeblock %}\n"
       else
-        puts "invalid JSON in #{htmlfile}: #{$2}\n"
+        puts "\n--------\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n"
         json_invalid += 1
-        #"\n{% codeblock lang:javascript %}" + "\n" + $2 + "\n" + "{% endcodeblock %}\n"
       end
     end
 
@@ -471,11 +469,10 @@ task :validate_json_xml do
         xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
       rescue
         xml_invalid += 1
-        puts "invalid XML in #{htmlfile}: #{$2}\n"
+        puts "\n--------\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n"
         next
       end
       xml_valid += 1
-      #"\n{% codeblock lang:xml %}" + "\n" + xml.human + "\n" + "{% endcodeblock %}\n"
     end
   end
 
