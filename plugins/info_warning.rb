@@ -6,9 +6,9 @@ module Jekyll
 
     def render(context)
       contents = super
-      source = '<blockquote><span class="label label-info">Info</span> '
+      source = '<div class="callout callout-info">'
       source += contents
-      source += '</blockquote>'
+      source += '</div>'
       
       source
     end
@@ -21,9 +21,9 @@ module Jekyll
 
     def render(context)
       contents = super
-      source = '<blockquote><span class="label label-warning">Warning</span> '
+      source = '<div class="callout callout-warning">'
       source += contents
-      source += '</blockquote>'
+      source += '</div>'
 
       source
     end
