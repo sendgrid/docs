@@ -64,7 +64,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "255.255.255.250"
   },
@@ -86,7 +86,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -148,7 +148,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "255.255.255.250"
   },
@@ -170,7 +170,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -232,7 +232,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "255.255.255.250"
   },
@@ -254,7 +254,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -318,7 +318,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "255.255.255.250"
   },
@@ -340,7 +340,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -425,7 +425,7 @@ https://sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_k
 https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "ip": "255.255.253.0",
     "user": "user4@example.com"
@@ -437,7 +437,7 @@ https://sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

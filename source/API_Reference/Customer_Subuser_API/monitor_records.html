@@ -84,12 +84,12 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -179,12 +179,12 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -256,12 +256,12 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -328,7 +328,7 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
 {% endcodeblock %}
   <h3>Response</h3>
-  {% codeblock lang:javascript %}[
+  {% codeblock lang:json %}[
   {
     "name": "sampleNameA",
     "email": "example@example.com",
@@ -419,12 +419,12 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -496,12 +496,12 @@ https://sendgrid.com/apiv2/customer.monitor.xml?api_user=your_sendgrid_username&
 https://sendgrid.com/apiv2/customer.monitor.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com
 {% endcodeblock %}
   <h3>Response: Success</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
   <h3>Response: Error</h3>
-  {% codeblock lang:javascript %}{
+  {% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

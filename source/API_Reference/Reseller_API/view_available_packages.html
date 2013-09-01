@@ -65,7 +65,7 @@ https://sendgrid.com/apiv2/reseller.packages.xml?api_user=your_sendgrid_username
 https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}[
+{% codeblock lang:json %}[
   {
     "name": "Basic Package",
     "price": 9.95,
@@ -88,7 +88,7 @@ https://sendgrid.com/apiv2/reseller.packages.json?api_user=your_sendgrid_usernam
 ]
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

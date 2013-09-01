@@ -41,7 +41,7 @@ navigation:
 	https://sendgrid.com/apiv2/customer.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all
 	{% endcodeblock %}
 	  <h3>Response</h3>
-	{% codeblock lang:javascript %}[
+	{% codeblock lang:json %}[
   {
     "ip": "255.255.255.250"
   },
@@ -133,7 +133,7 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "success": "success",
   "outboundcluster": "o1.sendgrid.net",
   "ips": [
@@ -159,7 +159,7 @@ https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "error": {
     "code": 400,
     "message": "User does not exist"
@@ -241,12 +241,12 @@ https://sendgrid.com/apiv2/customer.sendip.xml?api_user=your_sendgrid_username&a
 https://sendgrid.com/apiv2/customer.sendip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255
 {% endcodeblock %}
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."

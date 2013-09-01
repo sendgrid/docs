@@ -46,7 +46,7 @@ get
 https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
 {% endcodeblock %} 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "parse": [
     {
       "hostname": "www.example.com",
@@ -57,7 +57,7 @@ https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=
 }
 {% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "parse": [
 
   ]
@@ -149,12 +149,12 @@ set
 https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
 {% endcodeblock %}
 <h3>Response: Success </h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
@@ -242,12 +242,12 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
 {% endcodeblock %}
 
 <h3>Response: Success</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "success"
 }
 {% endcodeblock %}
 <h3>Response: Error</h3>
-{% codeblock lang:javascript %}{
+{% codeblock lang:json %}{
   "message": "error",
   "errors": [
     "...error messages..."
