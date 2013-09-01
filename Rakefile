@@ -451,7 +451,7 @@ task :validate_json_xml do
     file.close
 
     #Validate JSON
-    contents.gsub!(/({%\s?codeblock lang:javascript\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
+    contents.gsub!(/({%\s?codeblock lang:json\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       is_json = ($2.strip).to_s.is_json?
       json = is_json ? JSON.parse($2.strip) : $2
       
