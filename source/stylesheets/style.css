@@ -263,9 +263,9 @@ li.collapsibleListClosed{
 }
 
 .breadcrumb { 
-  font-size: 15px;
-  padding: 3px 10px;
-  margin: 0 0 12px;
+  font-size: 13px;
+  padding: 0px 5px;
+  margin: 0 0 10px;
 }
 
 .page-header {
