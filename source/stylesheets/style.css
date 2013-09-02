@@ -98,13 +98,14 @@ figure.code {
 	margin: 0 40px 1.5em;
 }
 
-
-.no-flash figure.code {
-	margin-top: 1.5em;
-}
-
-.no-flash .copycode {
-	display: none;
+#copy-prompt {
+	position: absolute;
+	color: #fff;
+	background-color: rgba(0,0,0,.6);
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 15px;
+	margin-top: 20px;
 }
 
 .tab-content {
