@@ -9,21 +9,27 @@ navigation:
 Available to Silver and higher packages or to our free demo accounts. 
 {% endinfo %}
 
-<p>SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. A common use of this data is to collect information about how specific mail campaigns or categories of mailings are progressing. Using Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings. </p>
+<p>SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that
+occur as SendGrid processes your email. A common use of this data is to collect information about how specific 
+mail campaigns or categories of mailings are progressing. Using Unique Arguments and Category parameters, 
+you can insert dynamic data that will help build a sharp, clear image of your mailings. </p>
 
 {% info %}
-If you'd like to see how one of our customers uses the Event Webhook, check out <a href="http://sendgrid.com/blog/leveraging-sendgrids-event-api/">Leveraging SendGrid's Event API</a>.
+If you'd like to see how one of our customers uses the Event Webhook, check out 
+<a href="http://sendgrid.com/blog/leveraging-sendgrids-event-api/">Leveraging SendGrid's Event API</a>.
 {% endinfo %}
 
 {% anchor h2 %}
 Setup 
 {% endanchor %}
-<p>To setup the Event Webhook, login and go to the <a href="http://sendgrid.com/app">apps page</a>, click on Show Disabled Apps, click the Event Notification app, and click on settings. Check the boxes next to the type of events you want posted to your web server, then enter in the URL you have setup to receive POSTs from our servers when an event occurs.</p>
-
-<p>If you'd like to receive batched events, check the "Batch event notifications" checkbox to enable the feature, then click the save button. This will not, however, turn on the function. To do that, return to the Apps page and click on enable on the Event Notification app.</p>
+<p>To setup the Event Webhook, login and go to the <a href="http://sendgrid.com/app">apps page</a>, 
+click on Show Disabled Apps, click the Event Notification app, and click on settings. Check the boxes next to the 
+type of events you want posted to your web server, then enter in the URL you have setup to receive POSTs from our 
+servers when an event occurs.</p>
 
 {% info %}
-We support basic HTTP authentication in our Event API. Those who wish to implement can provide credentials in the post event url field on the app settings page.  Below is an example of the post url with authentication included. 
+We support basic HTTP authentication in our Event API. Those who wish to implement can provide credentials 
+in the post event url field on the app settings page. Below is an example of the post url with authentication included. 
 {% endinfo %}
 
 {% codeblock lang:html %}
@@ -37,18 +43,52 @@ If you wish to receive encrypted posts, we require that your callback URL suppor
 {% anchor h2 %}
 Requests 
 {% endanchor %}
-<p>You have the option to receive a <strong>HTTP POST</strong> request for each event or to receive a batch of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options. </p>
+<p>You will receive a <strong>HTTP POST</strong> containing a JSON array of multiple events in one request after a 
+very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options. </p>
 
-<p>SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. This means that if you use batched events these events will drop due to 24 hours before the queue can max out. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.</p>
+{% info %}
+Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first.
+{% endinfo %}
+
+{% anchor h3 %}
+Event POST Example
+{% endanchor %}
+
+{% codeblock lang:json %}
+[
+    {
+        "email": "john.doe@sendgrid.com",
+        "timestamp": 1337197600,
+        "smtp-id": "<4FB4041F.6080505@sendgrid.com>",
+        "event": "processed"
+    },
+    {
+        "email": "john.doe@sendgrid.com",
+        "timestamp": 1337966815,
+        "smtp-id": "<4FBFC0DD.5040601@sendgrid.com>",
+        "category": "newuser",
+        "event": "clicked"
+    },
+    {
+        "email": "john.doe@sendgrid.com",
+        "timestamp": 1337969592,
+        "smtp-id": "<20120525181309.C1A9B40405B3@Example-Mac.local>",
+        "event": "processed"
+    }
+]
+{% endcodeblock %}
+
+<p>You can test your endpoint by clicking the "Test Your Integration" button in the Event 
+
+<p>SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. 
+If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours.
+The maximum number of deferred POSTs in the retry queue is 100,000. 
+If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. 
+Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.</p>
 
 {% warning %}
-If your email traffic generates lots of events, the incoming amount of data
-can easily overload a web server if not configured properly for scalability. 
-To reduce the number of requests to your server, enable the batched events option.
-<br/><br/>
-Keep in mind that even with batched events enabled, your servers can potentially see a
-large number of POSTs from the webhook as we POST batches from multiple
-servers. You can load test your endpoints with <a
+If your email traffic generates lots of events, the incoming data
+can easily overload a web server if not configured properly. You can load test your endpoints with <a
   href="http://loader.io">loader.io</a> for free.
 {% endwarning %}
 
@@ -163,7 +203,11 @@ Default Parameters
 {% anchor h2 %}
 Unique Arguments and Categories 
 {% endanchor %}
-<p>Events generated by SendGrid can also include unique arguments. To define and receive custom parameters in your URL the <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> must be used when sending emails using the <em>unique_args</em> argument. For example, if you have an application and want to receive custom parameters such as the user id and the email template name, include the following in your SMTP headers as X-SMTPAPI or as the xsmtpapi parameter of your Web API call: </p>
+<p>Events generated by SendGrid can also include unique arguments. To define and receive custom parameters in your URL 
+the <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> must be used when sending emails using 
+the <em>unique_args</em> argument. For example, if you have an application and want to receive custom parameters such 
+as the user id and the email template name, include the following in your SMTP headers as X-SMTPAPI or as the 
+xsmtpapi parameter of your Web API call: </p>
 
 {% codeblock lang:json %}{
   "unique_args": {
@@ -173,16 +217,12 @@ Unique Arguments and Categories
 }
 {% endcodeblock %} 
 
-<p>Either of those emails will generate the following HTTP POST request to your application when the email is opened:
-</p>
-{% codeblock %}
-email=emailrecipient@domain.com&event=open&userid=1123&template=welcome
-{% endcodeblock %}
-
 {% anchor h2 %}
 Categories 
 {% endanchor %}
-<p>If a <a href="{{root_url}}/Delivery_Metrics/categories.html">category</a> is used over the SMTP API to get detailed statistics for <em>user signups</em> in addition to custom parameter, include the following in your SMTP headers as X-SMTPAPI or as the xsmtpapi parameter of your Web API call:</p>
+<p>If a <a href="{{root_url}}/Delivery_Metrics/categories.html">category</a> is used over the SMTP API to get detailed
+statistics for <em>user signups</em> in addition to custom parameter, include the following in your SMTP headers as
+X-SMTPAPI or as the xsmtpapi parameter of your Web API call:</p>
 
 {% codeblock lang:json %}{
   "unique_args": {
@@ -193,33 +233,8 @@ Categories
 }
 {% endcodeblock %}
 
-<p>Either of those emails will generate the following HTTP POST request to your application when the email is opened:</p>
-
-{% codeblock %}
-email=emailrecipient@domain.com&event=open&userid=1123&template=welcome&category=user_signup
-{% endcodeblock %}
-
 {% info %}
 If you apply multiple categories to any of your outgoing messages, the returned data will be in the form of an array.
-{% endinfo %}
-
-{% anchor h2 %}
-Batched Events 
-{% endanchor %}
-<p>Batched event POSTs have a content-type header of <em>application/json</em>, and contain exactly one JSON string per line, with each line representing one event. Please note that currently the POST headers define this post as <em>application/json</em>, though it's not; each line is a valid JSON string, but the overall POST body is not. For example: </p>
-
-{% codeblock lang:json %}
-{"email":"foo@bar.com","timestamp":1322000095,"unique_arg":"my unique arg","event":"delivered"}
-{"email":"foo@bar.com","timestamp":1322000096,"unique_arg":"my unique arg","event":"open"}
-
-{% endcodeblock %}
-
-{% info %}
-Batched events currently post every 1 second, or when the batch size reaches 1MB (one megabyte), whichever occurs first.
-{% endinfo %}
-
-{% info %}
-Batching your events is recommended to reduce server load and reduce the number of open connections.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -239,43 +254,16 @@ fclose($fh);
 ?> ok
 {% endcodeblock %}
 
-If you're <strong>not batching</strong>, the code would look like:
-{% codeblock lang:php %}
-<?php
-$fh = fopen('/tmp/dump.log', 'a+');
-if ( $fh )
-{
-// Dump parameters
-fwrite($fh, print_r($_POST, true));
-fclose($fh);
-}
-?> ok
-{% endcodeblock %}
-
-{% info %}
-If you are using a hosting service, you don't have direct access to the server's file system. In that case, you need to modify the path for the dump log to be somewhere you <em>do</em> have access to. In most cases, the second line in the code above... 
-{% endinfo %}
-{% codeblock lang:php %}
-<?php
-$fh = fopen('/tmp/dump.log', 'a+');
-?>
-{% endcodeblock %}
-
-should be changed to... 
-{% codeblock lang:php %}
-<?php
-$fh = fopen('~/dump.log', 'a+');
-?>
-{% endcodeblock %}
-
 {% anchor h2 %}
 Parameter Details 
 {% endanchor %}
-<p>The following shows each type of event that can be posted along with the specific parameters that go along with the event.
+<p>The following shows each type of event that can be posted along with the specific parameters that go along with the
+event.
 </p>
 
 {% info %}
-You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you.
+You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg
+is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -469,7 +457,15 @@ Unsubscribe
 {% anchor h2 %}
 Troubleshooting 
 {% endanchor %}
-<p>Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at increasing intervals for up to three days after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines. Also, you can try a test POST yourself from a terminal by running the following command. This will give you the full response your server is returning including the HTTP headers.</p>
+<p>Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our
+server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at
+increasing intervals for up to 24 hours after the event occurs. Make sure you are not blocking our IPs that are trying 
+to POST to your server. Our IPs change often since we constantly add more machines.</p>
+
+<p>You can use the "Test Your Integration" button on the Event Notifications settings page to send simulated events to
+your callback URL. You can also send a POST from a shell using cURL. This will give you the full
+response your server is returning including the HTTP headers.</p>
+
 {% codeblock lang:bash %}
-curl -i -d 'email=test@gmail.com&arg2=2&arg1=1&category=testing&event=processed'
+curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"smtp-id":"<4FBFC0DD.5040601@sendgrid.com>","category":"newuser","event":"clicked"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
 {% endcodeblock %}
