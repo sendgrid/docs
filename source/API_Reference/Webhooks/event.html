@@ -86,7 +86,8 @@ Event POST Example
 ]
 {% endcodeblock %}
 
-<p>You can test your endpoint by clicking the "Test Your Integration" button in the Event 
+<p>You can test your endpoint by clicking the "Test Your Integration" button on the setup screen. SendGrid will send
+a simulated POST of events to your callback url.</p>
 
 <p>SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. 
 If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours.
