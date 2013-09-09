@@ -22,6 +22,13 @@ If you'd like to see how one of our customers uses the Event Webhook, check out
 {% anchor h2 %}
 Setup 
 {% endanchor %}
+
+{% warning %}
+If you enabled the Event Webhook prior to September 6, 2013 you will see a dropdown allowing you to select
+Version 1, 2 or 3 of the webhook. Version 3 is the recommended option. You can read about the older versions
+on the <a href="{{root_url}}/API_Reference/Webhooks/event_deprecated.html">Event Webhook (deprecated)</a> page. 
+{% endwarning %}
+
 <p>To setup the Event Webhook, login and go to the <a href="http://sendgrid.com/app">apps page</a>, 
 click on Show Disabled Apps, click the Event Notification app, and click on settings. Check the boxes next to the 
 type of events you want posted to your web server, then enter in the URL you have setup to receive POSTs from our 
