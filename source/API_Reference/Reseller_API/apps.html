@@ -324,8 +324,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}
-"message":"success","settings":{"field_name":"field_value"}
-
+{"message":"success","settings":[{"field_name":"field_value"}]}
 {% endcodeblock %}
 <h3>Response: Error</h3>
 {% codeblock lang:json %}{
@@ -338,7 +337,7 @@ https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&
 <h4>Return - Empty</h4>
 <p>This is returned if that filter has no settings or is not enabled.</p>
 {% codeblock %}
-"settings":null
+{"settings":null}
 {% endcodeblock %}
 </div>
 </div>
