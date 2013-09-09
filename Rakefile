@@ -458,7 +458,7 @@ task :validate_json_xml do
       if is_json
         json_valid += 1
       else
-        puts "\n--------\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n"
+        puts "\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n--------------------------"
         json_invalid += 1
       end
     end
@@ -469,7 +469,7 @@ task :validate_json_xml do
         xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
       rescue
         xml_invalid += 1
-        puts "\n--------\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n"
+        puts "\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n---------------------------"
         next
       end
       xml_valid += 1
