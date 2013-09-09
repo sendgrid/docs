@@ -124,11 +124,12 @@ https://sendgrid.com/api/unsubscribes.get.json?api_user=your_sendgrid_username&a
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock lang:xml %}
+{% codeblock %}
+https://sendgrid.com/api/unsubscribes.get.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1
 {% endcodeblock %}
 
 		<h3>Response</h3>
-{% codeblock %}
+{% codeblock lang:xml %}
 <unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
 {% endcodeblock %}
 
