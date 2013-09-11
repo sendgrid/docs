@@ -18,18 +18,16 @@ npm install sendgrid
 <p>Once you have the module installed, it can be as simple as the following code snippet, modified to your specifics, of course:</p>
 
 {% codeblock lang:javascript %}
-var sendgrid  = require('sendgrid')(user, key);
+var sendgrid  = require('sendgrid')(api_user, api_key);
 sendgrid.send({
-  to: 'example@example.com',
-  from: 'other@example.com',
-  subject: 'Hello World',
-  text: 'My first email through SendGrid'
-}, function(success, message) {
-  if (!success) {
-    console.log(message);
-  }
+  to:       'example@example.com',
+  from:     'other@example.com',
+  subject:  'Hello World',
+  text:     'My first email through SendGrid.'
+}, function(err, json) {
+  if (err) { return console.error(err); }
+  console.log(json);
 });
-
 {% endcodeblock %}
 
 {% anchor h3 %}
