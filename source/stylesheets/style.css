@@ -270,6 +270,17 @@ li.collapsibleListClosed{
   margin: 0 0 10px;
 }
 
+.breadcrumb ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.breadcrumb .edit-link {
+	float: right;
+}
+
+
 .page-header {
   margin: 10px 0;
   border-bottom: 1px solid #ddd;
