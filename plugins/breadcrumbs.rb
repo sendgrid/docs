@@ -48,7 +48,7 @@ module Jekyll
                 else
                   link = ""
                 end
-               end
+              end
               
               inner = link.length > 0 ? "<a href=\"#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
               output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">&gt;</span></li>"
