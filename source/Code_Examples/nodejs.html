@@ -6,16 +6,8 @@ navigation:
   show: true
 ---
 
-<p>If you are using Node.js and would like to send email through SendGrid, use the SendGrid nodejs module.
-Full documentation for this module can be found on <a 
-href="http://github.com/sendgrid/sendgrid-nodejs">github</a>. 
-</p>
-
-{% codeblock %}
-npm install sendgrid
-{% endcodeblock %}
-
-<p>Once you have the module installed, it can be as simple as the following code snippet, modified to your specifics, of course:</p>
+<p>If you are using Node.js and would like to send email through SendGrid, use the SendGrid nodejs module. Full documentation for this module can be found on <a 
+href="http://github.com/sendgrid/sendgrid-nodejs">github</a>.</p>
 
 {% codeblock lang:javascript %}
 var sendgrid  = require('sendgrid')(api_user, api_key);
@@ -31,8 +23,21 @@ sendgrid.send({
 {% endcodeblock %}
 
 {% anchor h3 %}
-Digging In Deeper
+Installation
 {% endanchor %}
+
+<p>Detailed instructions for installing are available at the <a href="https://github.com/sendgrid/sendgrid-nodejs#installation">sendgrid-nodejs installation instructions</a>.</p>
+
+{% codeblock %}
+npm install sendgrid
+{% endcodeblock %}
+
+{% anchor h3 %}
+Usage
+{% endanchor %}
+
+<p>For the most up to date usage examples, visit the <a href="https://github.com/sendgrid/sendgrid-nodejs#usage">sendgrid-nodejs library usage instructions</a>.</p>
+
 <p>Email is the object that will help you easily prepare your message to be sent.</p>
 
 {% info %}
@@ -195,24 +200,4 @@ email.addFile({
   path: '../files/resume.txt'
 });
 
-{% endcodeblock %}
-
-{% anchor h3 %}
-Testing Your Code
-{% endanchor %}
-<p>Tests located in the <em>test/lib</em> folder can be ran as-is and should all pass if your code is valid. Tests that are located in the <em>test/intergration</em> folder require valid SendGrid account credentials inserted into <em>test/test.setup</em> in order to run.</p>
-
-{% info %}
-Running tests requires a valid SendGrid account and will consume credits.
-{% endinfo %}
-
-<p>When you're ready, you can run your tests with this command:</p>
-
-{% codeblock %}
-make test
-{% endcodeblock %}
-
-<p>You can run individual tests:</p>
-{% codeblock %}
-mocha /path/to/test.test.js
 {% endcodeblock %}
