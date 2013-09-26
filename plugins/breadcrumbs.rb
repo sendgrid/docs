@@ -9,16 +9,17 @@ module Jekyll
 	class BreadCrumbs < Liquid::Tag
     def render(context)
       site = context.registers[:site]
+      page = context.registers[:page]
       @page_url = context.environments.first["page"]["url"]
       @dirs = {}
 
-      site.pages.each do |page|
-        path = page.url
+      site.pages.each do |site_page|
+        path = site_page.url
         path = path.index('/')==0 ? path[1..-1] : path
-        @dirs[path] = page.data
+        @dirs[path] = site_page.data
       end
       
-      output='<ul class="breadcrumb">'
+      output='<div class="breadcrumb clearfix"><ul>'
       
       output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a><span class="divider">&gt;</span></li>'
       
@@ -48,7 +49,7 @@ module Jekyll
                 else
                   link = ""
                 end
-               end
+              end
               
               inner = link.length > 0 ? "<a href=\"#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
               output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">&gt;</span></li>"
@@ -56,7 +57,8 @@ module Jekyll
         end
       end
       
-      output += "</ul>"
+      output += "</ul> <a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><i class=\"icon-edit\"></i> Edit</a>"
+      output += "</div>"
       puts "generating breadcrumbs for #{@page_url}"
       output
     end
