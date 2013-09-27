@@ -20,9 +20,23 @@ For a list of all the apps and parameters accesible with the Web API you can che
   <div class="tab-content">
     <div class="tab-pane active" id="getavailable-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.getavailable.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock lang:json %}[
   {
@@ -37,9 +51,23 @@ https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_usernam
     </div>
     <div class="tab-pane" id="getavailable-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.getavailable.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 
 <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -72,9 +100,23 @@ Activate App
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.activate.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
 		<h3>Response</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -83,9 +125,23 @@ https://sendgrid.com/api/filter.activate.json?api_user=your_sendgrid_username&ap
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.activate.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
 		<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -107,9 +163,23 @@ https://sendgrid.com/api/filter.activate.xml?api_user=your_sendgrid_username&api
 <div class="tab-content">
   <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.deactivate.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
      <h3>Response</h3>
 
 {% codeblock lang:json %}{
@@ -120,9 +190,23 @@ https://sendgrid.com/api/filter.deactivate.json?api_user=your_sendgrid_username&
   </div>
   <div class="tab-pane" id="deactivate-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.deactivate.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.deactivate.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
 
 		<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -200,9 +284,23 @@ Get Settings
 <div class="tab-content">
   <div class="tab-pane active" id="getsettings-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.getsettings.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
@@ -228,9 +326,23 @@ https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username
   </div>
   <div class="tab-pane" id="getsettings-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/filter.getsettings.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
+          </td>
+        </tr>
+      </table>
+
 		<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 

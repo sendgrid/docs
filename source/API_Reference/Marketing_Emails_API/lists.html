@@ -50,9 +50,23 @@ add
 <div class="tab-content">
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/add.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -70,9 +84,23 @@ https://sendgrid.com/api/newsletter/lists/add.json?list=test789&amp;api_user=you
     </div>
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/add.xml?list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/add.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test789&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -125,9 +153,23 @@ edit
 <div class="tab-content">
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/edit.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -145,9 +187,23 @@ https://sendgrid.com/api/newsletter/lists/edit.json?list=test7890&amp;newlist=te
     </div>
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/edit.xml?list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/edit.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test7890&amp;newlist=test567&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -194,9 +250,23 @@ get
 <div class="tab-content">
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}[
@@ -216,9 +286,23 @@ https://sendgrid.com/api/newsletter/lists/get.json?list=test&amp;api_user=your_s
     </div>
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/get.xml?list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -267,9 +351,23 @@ delete
 <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/delete.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 
           <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -287,9 +385,23 @@ https://sendgrid.com/api/newsletter/lists/delete.json?list=test5678&amp;api_user
     </div>
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/newsletter/lists/delete.xml?list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/newsletter/lists/delete.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">list=test5678&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
