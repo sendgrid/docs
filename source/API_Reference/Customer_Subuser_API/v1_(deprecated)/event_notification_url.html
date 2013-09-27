@@ -38,9 +38,23 @@ Retrieve
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -50,9 +64,23 @@ https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:json %}{
   "url": "http://www.SubUserPostUrlHere.com"
@@ -98,9 +126,23 @@ Update / Set URL
 <div class="tab-content">
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -112,9 +154,23 @@ https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:json %}{
   "message": "success"
@@ -154,9 +210,23 @@ Delete
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -168,9 +238,23 @@ https://sendgrid.com/api/user.eventposturl.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.eventposturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.eventposturl.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:json %}{
   "message": "success"

@@ -43,9 +43,23 @@ Retrieve Invoice Numbers
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/billing.list.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -62,9 +76,23 @@ https://sendgrid.com/api/billing.list.xml?api_user=your_sendgrid_username&api_ke
   </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/billing.list.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/billing.list.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock lang:json %}[
   {
@@ -115,9 +143,23 @@ Retrieve Invoices
 <div class="tab-content">
   <div class="tab-pane" id="invoices-xml">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/billing.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -143,9 +185,23 @@ https://sendgrid.com/api/billing.get.xml?api_user=your_sendgrid_username&api_key
   </div>
   <div class="tab-pane active" id="invoices-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/billing.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/billing.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock lang:json %}{
   "number": "2010010001",
