@@ -42,9 +42,23 @@ get
 <div class="tab-content">
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %} 
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+ 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "parse": [
@@ -66,9 +80,23 @@ https://sendgrid.com/api/parse.get.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -145,9 +173,23 @@ set
 <div class="tab-content">
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.set.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success </h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -165,9 +207,23 @@ https://sendgrid.com/api/parse.set.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.set.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.set.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1</code>
+          </td>
+        </tr>
+      </table>
+
 
 <h3>Response: Success<h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -237,9 +293,23 @@ Delete Entry
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.delete.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com</code>
+          </td>
+        </tr>
+      </table>
+
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -258,9 +328,23 @@ https://sendgrid.com/api/parse.delete.json?api_user=your_sendgrid_username&api_k
   </div>
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/parse.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/parse.delete.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com</code>
+          </td>
+        </tr>
+      </table>
+
 
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>

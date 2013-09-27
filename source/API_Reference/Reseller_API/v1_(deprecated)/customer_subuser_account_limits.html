@@ -35,9 +35,23 @@ Retrieve
 			account limits retrieved</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
 {% endcodeblock %}
@@ -53,9 +67,23 @@ https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 {"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
@@ -98,9 +126,23 @@ No Limit
 			account limits removed</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -117,9 +159,23 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -199,9 +255,23 @@ Recurring Reset
 			the credits parameter</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -218,9 +288,23 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -271,9 +355,23 @@ Total Credits
 			subuser will be reset to</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -290,9 +388,23 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -343,9 +455,23 @@ Increment Credits
 			subuser will be incremented by</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -362,9 +488,23 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -415,9 +555,23 @@ Decrement Credits
 			subuser will be decremented by</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -434,9 +588,23 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manageSubuser.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manageSubuser.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"

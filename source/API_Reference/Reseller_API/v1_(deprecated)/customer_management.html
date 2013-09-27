@@ -153,9 +153,23 @@ Create a Customer
 			specify the first billing anniversary date</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.add.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -178,9 +192,23 @@ https://sendgrid.com/api/distributor.add.xml?api_user=your_sendgrid_username&api
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.add.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -218,9 +246,23 @@ Delete a Customer
     <td>The customers username you wish to delete.</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.delete.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -243,9 +285,23 @@ https://sendgrid.com/api/distributor.delete.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.delete.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -353,18 +409,46 @@ https://sendgrid.com/api/distributor.delete.json?api_user=your_sendgrid_username
     </td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock %}
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
@@ -397,9 +481,23 @@ Enable a Customer
     <td>The customer you are planning to enabling</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -417,9 +515,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -458,9 +570,23 @@ Disable a Customer
     <td>The customer you are planning to disabling</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -478,9 +604,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -521,9 +661,23 @@ Enable Website Access To A Customer
 			website access</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -541,9 +695,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -584,9 +752,23 @@ Disable Website Access To A Customer
 			website access</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -604,9 +786,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -700,9 +896,23 @@ Update Customer Profile
     <td>Company of customer</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -725,9 +935,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -783,9 +1007,23 @@ Update Customer Password
     <td>Allows you to access password functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -808,9 +1046,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -874,9 +1126,23 @@ Update Customer Username
     <td>Allows you to access profile functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -899,9 +1165,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
@@ -961,9 +1241,23 @@ Update Customer Email Address
     <td>Allows you to access password functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -986,9 +1280,23 @@ https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"

@@ -38,9 +38,23 @@ Initial API Call
 <div class="tab-content">
   <div class="tab-pane" id="call-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.geturl.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -52,9 +66,23 @@ https://sendgrid.com/api/user.geturl.xml?api_user=your_sendgrid_username&api_key
     </div>
   <div class="tab-pane active" id="call-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.geturl.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.geturl.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:json %}{
   "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"

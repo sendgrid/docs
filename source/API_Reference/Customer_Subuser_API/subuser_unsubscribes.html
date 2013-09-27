@@ -48,9 +48,23 @@ Retrieve Unsubscribes
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -69,9 +83,23 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response</h3>
   {% codeblock lang:json %}[
   {
@@ -125,9 +153,23 @@ Delete Unsubscribes
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response: Success</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -147,9 +189,23 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response: Success</h3>
   {% codeblock lang:json %}{
   "message": "success"
@@ -201,9 +257,23 @@ Add Unsubscribes
 <div class="tab-content">
   <div class="tab-pane" id="add-xml">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response: Success</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -223,9 +293,23 @@ https://sendgrid.com/api/user.unsubscribes.xml?api_user=your_sendgrid_username&a
     </div>
   <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
-  {% codeblock %}
-https://sendgrid.com/api/user.unsubscribes.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com
-{% endcodeblock %}
+        <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/user.unsubscribes.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com</code>
+          </td>
+        </tr>
+      </table>
+
   <h3>Response: Success</h3>
   {% codeblock lang:json %}{
   "message": "success"

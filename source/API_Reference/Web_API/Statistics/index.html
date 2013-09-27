@@ -78,9 +78,23 @@ Parameters
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2</code>
+          </td>
+        </tr>
+      </table>
+
      <h3>Response</h3>
 {% codeblock lang:json %}[
   {
@@ -121,9 +135,23 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2</code>
+          </td>
+        </tr>
+      </table>
+
 
 	<h3>Response</h3>
 	{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -182,9 +210,23 @@ Category List
 <div class="tab-content">
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true</code>
+          </td>
+        </tr>
+      </table>
+
      <h3>Response</h3>
 {% codeblock lang:json %}[
   {
@@ -204,9 +246,23 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
   <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
 
-{% codeblock %}
-https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true</code>
+          </td>
+        </tr>
+      </table>
+
 
 		<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -309,14 +365,42 @@ Parameters
 <div class="tab-content">
   <div class="tab-pane active" id="category-json">
      <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Call - Using an array of categories</h3>
 
-{% codeblock %}
-https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
+          </td>
+        </tr>
+      </table>
+
 
      <h3>Response</h3>
 {% codeblock lang:json %}[
@@ -350,14 +434,42 @@ https://sendgrid.com/api/stats.get.json?api_user=your_sendgrid_username&api_key=
   </div>
   <div class="tab-pane" id="category-xml">
         <h3>Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
+          </td>
+        </tr>
+      </table>
+
 
 		<h3>Call - Using an array of categories</h3>
-{% codeblock %}
-https://sendgrid.com/api/stats.get.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/stats.get.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
+          </td>
+        </tr>
+      </table>
+
 
 		<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
