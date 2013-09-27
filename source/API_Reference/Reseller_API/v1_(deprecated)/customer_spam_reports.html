@@ -50,17 +50,45 @@ Retrieve Spam Reports
 			functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock %}
 spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response</h3>
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
@@ -111,9 +139,23 @@ Delete Spam Reports
 			functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.xml
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock %}
 result><message>success</message></result>
@@ -123,9 +165,23 @@ result><message>success</message></result>
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-{% codeblock %}
-https://sendgrid.com/api/distributor.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com
-{% endcodeblock %}
+      <table class="table table-bordered">
+        <tr>
+          <td>POST</td>
+          <td>
+            <code>
+              https://sendgrid.com/api/distributor.manage.json
+            </code>
+          </td>
+        </tr>
+        <tr>
+           <td>POST Data</td>
+           <td>
+            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com</code>
+          </td>
+        </tr>
+      </table>
+
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
   "message": "success"
