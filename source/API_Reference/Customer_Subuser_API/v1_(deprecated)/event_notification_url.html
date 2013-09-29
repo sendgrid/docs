@@ -38,22 +38,10 @@ Retrieve
 <div class="tab-content">
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.xml{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -64,22 +52,10 @@ Retrieve
     </div>
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.json{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:json %}{
@@ -126,22 +102,10 @@ Update / Set URL
 <div class="tab-content">
   <div class="tab-pane" id="set-xml">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.xml{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -154,22 +118,10 @@ Update / Set URL
     </div>
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.json{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:json %}{
@@ -210,22 +162,10 @@ Delete
 <div class="tab-content">
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.xml{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -238,22 +178,10 @@ Delete
     </div>
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
-        <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/user.eventposturl.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com</code>
-          </td>
-        </tr>
-      </table>
+        {% requestblock %}
+          {% requesturl POST %}https://sendgrid.com/api/user.eventposturl.json{% endrequesturl %}
+          {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com{% endrequestdata %}
+        {% endrequestblock %}
 
   <h3>Response</h3>
   {% codeblock lang:json %}{

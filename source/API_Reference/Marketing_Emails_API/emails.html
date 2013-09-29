@@ -41,22 +41,10 @@ add
   <div class="tab-content">
     <div class="tab-pane active" id="add-json">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/add.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/add.json{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
  
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -74,22 +62,10 @@ add
     </div>
     <div class="tab-pane" id="add-xml">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/add.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/add.xml{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 
@@ -167,22 +143,10 @@ get
   <div class="tab-content">
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/get.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/get.json{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
  
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}[
@@ -203,22 +167,10 @@ get
     </div>
     <div class="tab-pane" id="get-xml">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/get.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/get.xml{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 
@@ -280,22 +232,10 @@ delete
   <div class="tab-content">
     <div class="tab-pane active" id="delete-json">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/delete.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/delete.json{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
  
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -313,22 +253,10 @@ delete
     </div>
     <div class="tab-pane" id="delete-xml">
       <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/newsletter/lists/email/delete.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/delete.xml{% endrequesturl %}
+        {% requestdata Data POST %}list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 

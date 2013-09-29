@@ -78,22 +78,10 @@ Parameters
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
      <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2{% endrequestdata %}
+      {% endrequestblock %}
 
      <h3>Response</h3>
 {% codeblock lang:json %}[
@@ -135,22 +123,10 @@ Parameters
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2{% endrequestdata %}
+      {% endrequestblock %}
 
 
 	<h3>Response</h3>
@@ -210,22 +186,10 @@ Category List
 <div class="tab-content">
   <div class="tab-pane active" id="list-json">
      <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true{% endrequestdata %}
+      {% endrequestblock %}
 
      <h3>Response</h3>
 {% codeblock lang:json %}[
@@ -246,22 +210,13 @@ Category List
   <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
 
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.xml{% endrequesturl %}
+
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true{% endrequestdata %}
+
+      {% endrequestblock %}
 
 
 		<h3>Response</h3>
@@ -365,41 +320,20 @@ Parameters
 <div class="tab-content">
   <div class="tab-pane active" id="category-json">
      <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Call - Using an array of categories</h3>
 
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.json{% endrequesturl %}
+
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB{% endrequestdata %}
+
+      {% endrequestblock %}
 
 
      <h3>Response</h3>
@@ -434,41 +368,17 @@ Parameters
   </div>
   <div class="tab-pane" id="category-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA{% endrequestdata %}
+      {% endrequestblock %}
 
 
 		<h3>Call - Using an array of categories</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/stats.get.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/stats.get.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB{% endrequestdata %}
+      {% endrequestblock %}
 
 
 		<h3>Response</h3>
