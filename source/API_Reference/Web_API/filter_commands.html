@@ -20,22 +20,10 @@ For a list of all the apps and parameters accesible with the Web API you can che
   <div class="tab-content">
     <div class="tab-pane active" id="getavailable-json">
           <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.getavailable.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.getavailable.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock lang:json %}[
@@ -51,22 +39,10 @@ For a list of all the apps and parameters accesible with the Web API you can che
     </div>
     <div class="tab-pane" id="getavailable-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.getavailable.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.getavailable.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
 
 
 <h3>Response</h3>
@@ -100,22 +76,10 @@ Activate App
 <div class="tab-content">
   <div class="tab-pane active" id="activate-json">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.activate.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.activate.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
 		<h3>Response</h3>
 {% codeblock lang:json %}{
@@ -125,22 +89,10 @@ Activate App
   </div>
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.activate.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.activate.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
 		<h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -163,22 +115,10 @@ Activate App
 <div class="tab-content">
   <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.deactivate.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
      <h3>Response</h3>
 
@@ -190,22 +130,10 @@ Activate App
   </div>
   <div class="tab-pane" id="deactivate-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.deactivate.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
 
 		<h3>Response</h3>
@@ -284,22 +212,10 @@ Get Settings
 <div class="tab-content">
   <div class="tab-pane active" id="getsettings-json">
      <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.getsettings.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.getsettings.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}
@@ -326,22 +242,10 @@ Get Settings
   </div>
   <div class="tab-pane" id="getsettings-xml">
         <h3>Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/filter.getsettings.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.getsettings.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+      {% endrequestblock %}
 
 		<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
