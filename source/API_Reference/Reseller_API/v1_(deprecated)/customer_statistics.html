@@ -59,44 +59,20 @@ Retrieve Customer Statistics
     <td>Allows you to access stats functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
 stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manageSubuser.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
@@ -138,44 +114,20 @@ Retrieve Aggregates
     <td>Allows you to access stats functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate={% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
 stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate={% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
@@ -219,44 +171,20 @@ Category List
     <td>Allows you to access stats functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
 categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
@@ -324,80 +252,32 @@ Category Statistics
     <td>Allows you to access stats functionality</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category{% endrequestdata %}
+      {% endrequestblock %}
 
 <h4>Command - Using an array of categories</h4>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
 stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category{% endrequestdata %}
+      {% endrequestblock %}
 
 <h4>Command - Using an array of categories</h4>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.manage.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}

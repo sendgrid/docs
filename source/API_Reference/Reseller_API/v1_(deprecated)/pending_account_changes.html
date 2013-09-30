@@ -35,22 +35,10 @@ List Pending Changes
 			Optional search parameter.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.pending.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -68,22 +56,10 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.pending.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -121,22 +97,10 @@ Delete Pending Changes
     <td>Must be an User under your account.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.pending.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -154,22 +118,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.pending.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -228,22 +180,10 @@ Immediate Upgrade
 			group.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -261,22 +201,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -335,22 +263,10 @@ Immediate Downgrade
 			group.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -368,22 +284,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -430,22 +334,10 @@ are incurred, a invoice with zero amount due is generated.</p>
 			into once the customers account is closed.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -463,22 +355,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -537,22 +417,10 @@ Scheduled Upgrade
 			group.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -570,22 +438,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -644,22 +500,10 @@ Scheduled Downgrade
 			group.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -677,22 +521,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -740,22 +572,10 @@ invoice with zero amount due is generated.</p>
 			into once the customers account is closed.</td>
   </tr>
 </table><h3>XML Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.xml
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock %}
@@ -773,22 +593,10 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      <table class="table table-bordered">
-        <tr>
-          <td>POST</td>
-          <td>
-            <code>
-              https://sendgrid.com/api/distributor.account.json
-            </code>
-          </td>
-        </tr>
-        <tr>
-           <td>POST Data</td>
-           <td>
-            <code class="wrap">api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou</code>
-          </td>
-        </tr>
-      </table>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
+      {% endrequestblock %}
 
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
