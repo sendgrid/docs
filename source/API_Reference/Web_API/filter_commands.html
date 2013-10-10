@@ -21,18 +21,19 @@ For a list of all the apps and parameters accesible with the Web API you can che
     <div class="tab-pane active" id="getavailable-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.getavailable.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+        {% requesturl GET %}https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
       {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock lang:json %}[
+  ...
   {
-    "name": "twitter",
-    "title": "Twitter",
-    "description": "This plugin allows you to send an email message to twitter",
-    "activated": false
-  }
+      "name": "bcc",
+      "title": "BCC",
+      "description": "Automatically BCC an address for every e-mail sent.",
+      "activated": false
+  },
+  ...
 ]
 {% endcodeblock %}
 
@@ -40,8 +41,7 @@ For a list of all the apps and parameters accesible with the Web API you can che
     <div class="tab-pane" id="getavailable-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.getavailable.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+        {% requesturl GET %}https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
       {% endrequestblock %}
 
 
@@ -49,12 +49,13 @@ For a list of all the apps and parameters accesible with the Web API you can che
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filters>
-   <filter>
-      <name>twitter</name>
-      <title>Twitter</title>
-      <description>This plugin allows you to send an email message to twitter</description>
+  ...
+  <filter>
+      <name>bcc</name>
+      <title>BCC</title>
+      <description>Automatically BCC an address for every e-mail sent.</description>
       <activated>0</activated>
-   </filter>
+  </filter>
    ...
 </filters>
 
@@ -70,6 +71,7 @@ For a list of all the apps and parameters accesible with the Web API you can che
 Activate App 
 {% endanchor %}
 
+<p>Activate an app.</p>
 
 {% xmljsontabs activate %}
 
@@ -78,7 +80,7 @@ Activate App
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.activate.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
 		<h3>Response</h3>
@@ -91,7 +93,7 @@ Activate App
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.activate.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
 		<h3>Response</h3>
@@ -109,6 +111,11 @@ Activate App
 
 
 
+{% anchor h2 %}
+Deactivate App 
+{% endanchor %}
+
+<p>Deactivate an app.</p>
 
 {% xmljsontabs deactivate %}
 
@@ -117,7 +124,7 @@ Activate App
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
      <h3>Response</h3>
@@ -132,11 +139,11 @@ Activate App
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
 
-		<h3>Response</h3>
+    <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
@@ -148,11 +155,6 @@ Activate App
   </div>
 </div>
 
-
-{% anchor h2 %}
-Deactivate App 
-{% endanchor %}
-
 <hr/>
 
 
@@ -160,52 +162,55 @@ Deactivate App
 {% anchor h2 %}
 Setup App 
 {% endanchor %}
-<p>These API calls require that settings are passed using POST.</p>
-<h3>PHP curl</h3>
-<p>Code Example</p>
-{% codeblock lang:php %}
-<?php
- 
-$url = 'sendgrid.com';
-$user = 'username';
-$pass = 'password';
 
-$params = array(
-  'api_user' => $user,
-  'api_key' => $pass,
-  'name' => 'twitter',
-  'username' => 'twitterusername',
-  'password' => 'twitterpassword',
-);
+<p>Change application settings.</p>
 
-$request = $url.'/api/filter.setup.xml';
+{% xmljsontabs setup %}
 
-// Generate curl request
-$session = curl_init($request);
-// Tell curl to use HTTP POST
-curl_setopt ($session, CURLOPT_POST, true);
-// Tell curl that this is the body of the POST
-curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
-// Tell curl not to return headers, but do return the response
-curl_setopt($session, CURLOPT_HEADER, false);
-curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
- 
-// obtain response
-$response = curl_exec($session);
-curl_close($session);
- 
-// print everything out
-print_r($response);
-?>
+<div class="tab-content">
+  <div class="tab-pane active" id="setup-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
 {% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="setup-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
 
 <hr/>
 
 
 {% anchor h2 %}
-Get Settings 
+Get App Settings 
 {% endanchor %}
 
+<p>Get the Settings Of An App</p>
 
 {% xmljsontabs getsettings %}
 
@@ -213,13 +218,12 @@ Get Settings
   <div class="tab-pane active" id="getsettings-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.getsettings.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requesturl GET %}https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
       {% endrequestblock %}
 
 	<h3>Response: Success</h3>
 {% codeblock lang:json %}
-{"message":"success","settings":[{"field_name":"field_value"}]}
+{"message":"success","settings":[{"bcc":"nick@sendgrid.com"}]}
 
 {% endcodeblock %}
 
@@ -243,16 +247,14 @@ Get Settings
   <div class="tab-pane" id="getsettings-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.getsettings.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter{% endrequestdata %}
+        {% requesturl GET %}https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
       {% endrequestblock %}
 
 		<h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter>
-   <field_name>field_value</field_name>
-   ...
+   <email>nick@sendgrid.com</email>
 </filter>
 
 {% endcodeblock %}
