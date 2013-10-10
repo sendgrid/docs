@@ -11,7 +11,9 @@ visit the <a href="{{root_url}}/Apps">Apps</a> page.</p>
 
 {% anchor h2 %}
 Address Whitelist 
-{% endanchor %} [API App Name:  "addresswhitelist"]
+{% endanchor %}
+
+<p><em>API App Name - <code>addresswhitelist</code></em></p>
 
 {% info %}
 When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call.
@@ -26,7 +28,7 @@ When using this call, you must define all emails & domains here. Using this call
 <tr>
 <td>list</td>
 <td>A list of email addresses or domains.</td>
-<td>Ex: list[]=support@example.com&list[]=sale@example.com}</td>
+<td>list[]=support@example.com&list[]=sale@example.com</td>
 </tr>
 </table>
 
@@ -34,7 +36,9 @@ When using this call, you must define all emails & domains here. Using this call
 
 {% anchor h2 %}
 BCC "Blind Carbon Copy" 
-{% endanchor %} [API app name: "bcc"]
+{% endanchor %}
+
+<p><em>API App Name - <code>bcc</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -53,7 +57,9 @@ BCC "Blind Carbon Copy"
 
 {% anchor h2 %}
 Click Tracking 
-{% endanchor %} [API app name: "clicktrack"]
+{% endanchor %}
+
+<p><em>API App Name - <code>clicktrack</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -64,7 +70,7 @@ Click Tracking
 <tr>
 <td>enable_text</td>
 <td>Enable click tracking in plain text emails.</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 </table>
 
@@ -72,7 +78,9 @@ Click Tracking
 
 {% anchor h2 %}
 Domain Keys 
-{% endanchor %} [API app name:"domainkeys"]
+{% endanchor %}
+
+<p><em>API App Name - <code>domainkeys</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -89,7 +97,7 @@ Domain Keys
 <td>sender</td>
 <td>1 to insert a sender header if the domain specified does not match the from address
 0 to never insert a Sender header</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 
 </table>
@@ -98,7 +106,9 @@ Domain Keys
 
 {% anchor h2 %}
 DKIM 
-{% endanchor %} [API app name:"dkim"]
+{% endanchor %}
+
+<p><em>API App Name - <code>dkim</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -106,13 +116,14 @@ DKIM
 <th>Description</th>
 <th>Example</th>
 </tr>
+<tr>
 <td>domain</td>
 <td>The domain you would like your DKIM certification signed with</td>
 <td>example.com</td>
 </tr>
 <td>use_from</td>
 <td>If enabled, the domain in the From: header of the email will be used to sign your DKIM</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 </table>
 
@@ -120,7 +131,9 @@ DKIM
 
 {% anchor h2 %}
 Email Templates 
-{% endanchor %} [API app name:"template"]
+{% endanchor %}
+
+<p><em>API App Name - <code>template</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -128,9 +141,10 @@ Email Templates
 <th>Description</th>
 <th>Example</th>
 </tr>
+<tr>
 <td>text_html</td>
 <td>A string that holds the template html body</td>
-<td><html>Content</html></td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
 </tr>
 </table>
 
@@ -138,7 +152,9 @@ Email Templates
 
 {% anchor h2 %}
 Event Notification 
-{% endanchor %} [API app name:"eventnotify"]
+{% endanchor %}
+
+<p><em>API App Name - <code>eventnotify</code></em></p>
 
 {% info %}
 All fields are required for each call.
@@ -153,52 +169,52 @@ All fields are required for each call.
 <tr>
 <td>processed</td>
 <td>Notify when email is processed</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>dropped</td>
 <td>Notify when email is dropped</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>deferred</td>
 <td>Notify when email is deferred</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>delivered</td>
 <td>Notify when email is delivered</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>bounce</td>
 <td>Notify when email is bounced</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>click</td>
 <td>Notify when email is clicked</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>open</td>
 <td>Notify when email is opened</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>unsubscribe</td>
 <td>Notify when email is unsubscribed</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>spamreport</td>
 <td>Notify when email is marked as spam</td>
-<td>0|1</td>
+<td>1</td>
 </tr>
 <tr>
 <td>url</td>
 <td>The post notification url to post these event messages to</td>
-<td>url=http://yourPostNotificationUrl.example.com</td>
+<td>http://yourPostNotificationUrl.example.com</td>
 </tr>
 </table>
 
@@ -206,7 +222,9 @@ All fields are required for each call.
 
 {% anchor h2 %}
 Footer 
-{% endanchor %} [API app name:"footer"]
+{% endanchor %}
+
+<p><em>API App Name - <code>footer</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -217,7 +235,7 @@ Footer
 <tr>
 <td>text/html</td>
 <td>String that holds the html body</td>
-<td><html>Content</html></td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
 </tr>
 <tr>
 <td>text/plain</td>
@@ -230,7 +248,9 @@ Footer
 
 {% anchor h2 %}
 Google Analytics 
-{% endanchor %} [API app name:"ganalytics"]
+{% endanchor %}
+
+<p><em>API App Name - <code>ganalytics</code></em></p>
 
 <table class="table table-bordered table-striped">
 <tr>
@@ -241,27 +261,27 @@ Google Analytics
 <tr>
 <td>utm_source</td>
 <td>Name of the referrer source</td>
-<td>Google, SomeDomain.com, or Marketing EmailA</td>
+<td>Transactional Email</td>
 </tr>
 <tr>
 <td>utm_medium</td>
 <td>Name of the marketing medium</td>
-<td>Email, Affiliate, or MobileApp</td>
+<td>email</td>
 </tr>
 <tr>
 <td>utm_campaign</td>
 <td>Name of the campaign</td>
-<td>Quarter1, FallShoeSale</td>
+<td>Redesigned Transaction </td>
 </tr>
 <tr>
 <td>utm_term</td>
 <td>Identify paid keywords</td>
-<td>Poultry, Health</td>
+<td>Health</td>
 </tr>
 <tr>
 <td>utm_content</td>
 <td>Use to differentiate ads</td>
-<td>PageA, PageB</td>
+<td>PageB</td>
 </tr>
 </table>
 
@@ -269,9 +289,12 @@ Google Analytics
 
 {% anchor h2 %}
 Gravatar 
-{% endanchor %} [API app name:"gravatar"]
+{% endanchor %}
+
+<p><em>API App Name - <code>gravatar</code></em></p>
 
 <table class="table table-bordered table-striped">
+<tr>
 <th>Parameter</th>
 <th>Description</th>
 <th>Example</th>
@@ -287,9 +310,12 @@ Gravatar
 
 {% anchor h2 %}
 Open Tracking 
-{% endanchor %} [API app name:"opentrack"]
+{% endanchor %}
+
+<p><em>API App Name - <code>opentrack</code></em></p>
 
 <table class="table table-bordered table-striped">
+<tr>
 <th>Parameter</th>
 <th>Description</th>
 <th>Example</th>
@@ -305,9 +331,12 @@ Open Tracking
 
 {% anchor h2 %}
 Return Path Seedlist 
-{% endanchor %} [API app name:"seedlist"]
+{% endanchor %}
+
+<p><em>API App Name - <code>seedlist</code></em></p>
 
 <table class="table table-bordered table-striped">
+<tr>
 <th>Parameter</th>
 <th>Description</th>
 <th>Example</th>
@@ -348,9 +377,12 @@ Return Path Seedlist
 
 {% anchor h2 %}
 SPAM Filter Checker 
-{% endanchor %} [API app name:"spamcheck"]
+{% endanchor %}
+
+<p><em>API App Name - <code>spamcheck</code></em></p>
 
 <table class="table table-bordered table-striped">
+<tr>
 <th>Parameter</th>
 <th>Description</th>
 <th>Example</th>
@@ -371,9 +403,12 @@ SPAM Filter Checker
 
 {% anchor h2 %}
 Subscription Tracking 
-{% endanchor %} [API app name:"subscriptiontrack"]
+{% endanchor %}
+
+<p><em>API App Name - <code>subscriptiontrack</code></em></p>
 
 <table class="table table-bordered table-striped">
+<tr>
 <th>Parameter</th>
 <th>Description</th>
 <th>Example</th>
@@ -381,7 +416,7 @@ Subscription Tracking
 <tr>
 <td>text/html</td>
 <td>String for the HTML e-mail body</td>
-<td>If you would like to unsubscribe and stop receiving these emails &#38;lt;% click here %&#38;gt;</td>
+<td>If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;</td>
 </tr>
 <tr>
 <td>text/plain</td>
@@ -396,35 +431,11 @@ Subscription Tracking
 <tr>
 <td>landing</td>
 <td>HTML content for a landing page that will be displayed by SendGrid</td>
-<td><html>Content</html></td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
 </tr>
 <tr>
 <td>replace</td>
 <td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link</td>
 <td>[unsubscribe_tag]</td>
-</tr>
-</table>
-
-<hr/>
-
-{% anchor h2 %}
-Twitter 
-{% endanchor %} [API app name:"twitter"]
-
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>username</td>
-<td>Your Twitter username</td>
-<td>username</td>
-</tr>
-<tr>
-<td>password</td>
-<td>Your Twitter password</td>
-<td>password</td>
 </tr>
 </table>
