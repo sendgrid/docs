@@ -3,7 +3,9 @@
 module Jekyll
   class AnchorBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      @tag = markup
+      attributes = markup.split
+      @tag = attributes[0]
+      @name = attributes[1] || false
       super
     end
 
@@ -13,8 +15,13 @@ module Jekyll
       # pipe param through liquid to make additional replacements possible
       content = Liquid::Template.parse(contents).render context
 
-      #strip out special chars and replace spaces with hyphens
-      safeContent = content.rstrip.gsub(/[^\w\s]/,'').gsub(/[\s]/,'-')
+      # if the anchor has a defined name, use that, otherwise make one up
+      if @name
+        safeContent = @name
+      else
+        #strip out special chars and replace spaces with hyphens
+        safeContent = content.rstrip.gsub(/[^\w\s]/,'').gsub(/[\s]/,'-')
+      end
 
       #should refactor this to allow wrapping tag to be passed in
       output = "<#{@tag} class=\"anchor-wrap\"><a name=\"#{safeContent}\" class=\"anchor\" href=\"##{safeContent}\">"
@@ -24,7 +31,7 @@ module Jekyll
 
       output
     end
-	end
+  end
 end
 
 Liquid::Template.register_tag("anchor", Jekyll::AnchorBlock)
