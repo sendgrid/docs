@@ -17,7 +17,9 @@ If you're enabling an App, also called a filter, via SMTPAPI, you are required t
 <p>For more information on the utility of these apps, please check out
 the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
-<h3>Filter - 'gravatar':</h3> 
+{% anchor h3 gravatar %}
+Filter: <code>gravatar</code>
+{% endanchor %} 
 <p>Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</p>
 
 <table class="table table-striped table-bordered">
@@ -37,7 +39,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'clicktrack':</h3> 
+{% anchor h3 clicktrack %}
+Filter: <code>clicktrack</code>
+{% endanchor %} 
 
 <p>Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
 
@@ -58,7 +62,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'subscriptiontrack':</h3> 
+{% anchor h3 subscriptiontrack %}
+Filter: <code>subscriptiontrack</code>
+{% endanchor %} 
 <p>Inserts a subscription management link at the bottom of the text and html bodies.</p>
 
 <table class="table table-striped table-bordered">
@@ -78,7 +84,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'opentrack':</h3> 
+{% anchor h3 opentrack %}
+Filter: <code>opentrack</code>
+{% endanchor %} 
 
 <p>Inserts an <code><img></code> tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened.</p>
 
@@ -99,7 +107,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'footer':</h3> 
+{% anchor h3 footer %}
+Filter: <code>footer</code>
+{% endanchor %} 
 
 <p>Inserts a footer at the bottom of the text and HTML bodies.</p>
 
@@ -130,7 +140,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'spamcheck':</h3> 
+{% anchor h3 spamcheck %}
+Filter: <code>spamcheck</code>
+{% endanchor %} 
 
 <p>Tests message with SpamAssassin to determine if it is spam, and drop it if it is.</p>
 
@@ -161,7 +173,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'ganalytics':</h3> 
+{% anchor h3 ganalytics %}
+Filter: <code>ganalytics</code>
+{% endanchor %} 
 
 <p>Re-writes links to integrate with Google Analytics.</p>
 
@@ -207,7 +221,9 @@ the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 <hr/>
 
-<h3>Filter - 'domainkeys':</h3> 
+{% anchor h3 domainkeys %}
+Filter: <code>domainkeys</code>
+{% endanchor %} 
 
 <p>Allows you to specify the domain to use to sign messages with Domain
 Keys. This domain should match the domain in the From address of your
@@ -240,7 +256,9 @@ e-mail. For more info, check out these <a href="{{root_url}}/Apps/domain_keys.ht
 
 <hr/>
 
-<h3>Filter - 'dkim':</h3> 
+{% anchor h3 dkim %}
+Filter: <code>dkim</code>
+{% endanchor %} 
 
 <p>Allows you to specify the domain to use to sign messages with DKIM
 certification. This domain should match the domain in the From address
@@ -268,7 +286,9 @@ of your e-mail. For more info, check out these <a href="{{root_url}}/Apps/dkim.h
 
 <hr/>
 
-<h3>Filter - 'template':</h3> 
+{% anchor h3 template %}
+Filter: <code>template</code>
+{% endanchor %} 
 <p>Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.</p>
 
 <table class="table table-striped table-bordered">
@@ -293,7 +313,9 @@ of your e-mail. For more info, check out these <a href="{{root_url}}/Apps/dkim.h
 
 <hr/>
 
-<h3>Filter - 'bcc':</h3> 
+{% anchor h3 bcc %}
+Filter: <code>bcc</code>
+{% endanchor %} 
 
 <p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
 
@@ -314,7 +336,9 @@ of your e-mail. For more info, check out these <a href="{{root_url}}/Apps/dkim.h
 
 <hr/>
 
-<h3>Filter - 'forwardspam':</h3> 
+{% anchor h3 forwardspam %}
+Filter: <code>forwardspam</code>
+{% endanchor %} 
 <p>Allows for a copy of spam reports to be forwarded to an email address.</p>
 
 <table class="table table-striped table-bordered">
@@ -334,7 +358,9 @@ of your e-mail. For more info, check out these <a href="{{root_url}}/Apps/dkim.h
 
 <hr/>
 
-<h3>Filter - 'bypass_list_management':</h3> 
+{% anchor h3 bypass_list_management %}
+Filter: <code>bypass_list_management</code>
+{% endanchor %} 
 
 <p>Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.</p>
 
