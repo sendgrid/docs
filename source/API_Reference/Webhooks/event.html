@@ -489,6 +489,30 @@ Unsubscribe
 </table>
 
 {% anchor h2 %}
+Marketing Email Unsubscribes
+{% endanchor %}
+<p>For emails sent through our Marketing Email tool, unsubscribes look like the following example:</p>
+
+{% codeblock lang:json %}
+[
+    {
+        "email": "nick@sendgrid.com",
+        "timestamp": 1380822437,
+        "newsletter": {
+            "newsletter_user_list_id": "10557865",
+            "newsletter_id": "1943530",
+            "newsletter_send_id": "2308608"
+        },
+        "category": [
+            "Tests",
+            "Newsletter"
+        ],
+        "event": "unsubscribe"
+    }
+]
+{% endcodeblock %}
+
+{% anchor h2 %}
 Troubleshooting 
 {% endanchor %}
 <p>Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our
