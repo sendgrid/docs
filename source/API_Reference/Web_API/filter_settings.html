@@ -157,7 +157,7 @@ Event Notification
 <p><em>API App Name - <code>eventnotify</code></em></p>
 
 {% info %}
-All fields are required for each call.
+All fields except version are required for each call, <em>unless you are updating the version, in which case only version is required</em>.
 {% endinfo %}
 
 <table class="table table-bordered table-striped">
@@ -169,7 +169,7 @@ All fields are required for each call.
 <tr>
 <td>processed</td>
 <td>Notify when email is processed</td>
-<td>1</td>
+<td>0</td>
 </tr>
 <tr>
 <td>dropped</td>
@@ -214,7 +214,12 @@ All fields are required for each call.
 <tr>
 <td>url</td>
 <td>The post notification url to post these event messages to</td>
-<td>http://yourPostNotificationUrl.example.com</td>
+<td>https://notificationurl.example.com/event</td>
+</tr>
+<tr>
+<td>version</td>
+<td>The version of the Event API you wish to use. (1-3) <em>Note: You can only downgrade to a version you had in the past.</em></td>
+<td>3</td>
 </tr>
 </table>
 
