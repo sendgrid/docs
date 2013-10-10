@@ -55,7 +55,8 @@ Requests
 very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options. </p>
 
 {% info %}
-Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first.
+Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first. 
+This is per server, so the webhook URL may receive tens of posts per second.
 {% endinfo %}
 
 {% anchor h3 %}
