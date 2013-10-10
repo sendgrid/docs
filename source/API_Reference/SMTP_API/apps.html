@@ -37,6 +37,19 @@ Filter: <code>gravatar</code>
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "gravatar" : {
+      "settings" : {
+      "enable" : 1
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 clicktrack %}
@@ -59,6 +72,19 @@ Filter: <code>clicktrack</code>
 </tr>
 </tbody>
 </table>
+
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "clicktrack" : {
+      "settings" : {
+        "enable" : 1
+      }
+    }
+  }
+}
+{% endcodeblock %}
 
 <hr/>
 
@@ -105,6 +131,19 @@ Filter: <code>opentrack</code>
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "opentrack" : {
+      "settings" : {
+        "enable" : 1
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 footer %}
@@ -138,6 +177,21 @@ Filter: <code>footer</code>
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "footer" : {
+      "settings" : {
+        "enable" : 1,
+        "text/html" : "<p>Thanks,<br />The SendGrid Team<p>",
+        "text/plain" : "Thanks,\n The SendGrid Team"
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 spamcheck %}
@@ -170,6 +224,21 @@ Filter: <code>spamcheck</code>
 </tr>
 </tbody>
 </table>
+
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "spamcheck" : {
+      "settings" : {
+        "enable" : 1,
+        "maxscore" : 3.5,
+        "url" : "http://example.com/compliance"
+      }
+    }
+  }
+}
+{% endcodeblock %}
 
 <hr/>
 
@@ -219,6 +288,23 @@ Filter: <code>ganalytics</code>
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "ganalytics" : {
+      "settings" : {
+        "enable" : 1,
+        "utm_source" : "Transactional Email",
+        "utm_medium" : "email",
+        "utm_content" : "Reset Your Password",
+        "utm_campaign" : "Redesigned Transactional Messaging"
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 domainkeys %}
@@ -254,6 +340,21 @@ e-mail. For more info, check out these <a href="{{root_url}}/Apps/domain_keys.ht
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "domainkeys" : {
+      "settings" : {
+        "enable" : 1,
+        "domain" : "example.com",
+        "sender" : 1
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 dkim %}
@@ -284,6 +385,21 @@ of your e-mail. For more info, check out these <a href="{{root_url}}/Apps/dkim.h
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "dkim" : {
+      "settings" : {
+        "domain" : "example.com",
+        "use_from" : false
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
+
 <hr/>
 
 {% anchor h3 template %}
@@ -310,6 +426,20 @@ Filter: <code>template</code>
 </tr>
 </tbody>
 </table>
+
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "template" : {
+      "settings" : {
+        "enable" : 1,
+        "text/html" : "<html><head></head><body bgcolor='pink'><div style='width:200px' bgcolor='#FFF'><% body %></div></body></html>"
+      }
+    }
+  }
+}
+{% endcodeblock %}
 
 <hr/>
 
@@ -339,6 +469,19 @@ Filter: <code>bcc</code>
 </tbody>
 </table>
 
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "bcc" : {
+      "settings" : {
+        "enable" : 1,
+        "email" : "you@example.com"
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 forwardspam %}
@@ -366,6 +509,20 @@ Filter: <code>forwardspam</code>
 </tbody>
 </table>
 
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "forwardspam" : {
+      "settings" : {
+        "enable" : 1,
+        "email" : "you@example.com"
+      }
+    }
+  }
+}
+{% endcodeblock %}
+
+
 <hr/>
 
 {% anchor h3 bypass_list_management %}
@@ -388,3 +545,15 @@ Filter: <code>bypass_list_management</code>
 </tr>
 </tbody>
 </table>
+
+{% codeblock lang:json %}
+{
+  "filters" : {
+    "bypass_list_management" : {
+      "settings" : {
+        "enable" : 1
+      }
+    }
+  }
+}
+{% endcodeblock %}
