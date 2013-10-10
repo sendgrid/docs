@@ -121,6 +121,7 @@ module Jekyll
       output.gsub!(/^\s*(.+)\s*$/, '\1')
 
       if @type == "Data"
+        output.gsub!('&amp;', '&')
         output.gsub!(/([^&=]+)=([^&=]+)/, '<span class="data-key">\1</span>=<span class="data-value">\2</span>')
       elsif @type == "Headers"
         output.gsub!(/^([^:]+):(.+)$/m, '<span class="data-key">\1</span>:<span class="data-value">\2</span><br />')
