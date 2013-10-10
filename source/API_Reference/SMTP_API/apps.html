@@ -144,7 +144,7 @@ Filter: <code>footer</code>
 Filter: <code>spamcheck</code>
 {% endanchor %} 
 
-<p>Tests message with SpamAssassin to determine if it is spam, and drop it if it is.</p>
+<p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -161,12 +161,12 @@ Filter: <code>spamcheck</code>
 <tr>
 <td>maxscore</td>
 <td>-10.0 to 10.0</td>
-<td>Score after which the message will be dropped (default is 5.0)</td>
+<td>Score after which the message will be dropped (default is 5.0, higher scores indicate higher likelihood of spam)</td>
 </tr>
 <tr>
 <td>url</td>
-<td>http://www.example.com/spam_post.php</td>
-<td>an optional url to post the email and a copy of the report to</td>
+<td>url</td>
+<td>an optional url to POST the email and a copy of the report to</td>
 </tr>
 </tbody>
 </table>
