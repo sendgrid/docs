@@ -214,3 +214,86 @@ delete
 
 </div>
   </div>
+
+{% anchor h2 %}
+Count  
+{% endanchor %} 
+
+  <table class="table table-bordered table-striped"> 
+    <tr> 
+      <td>Parameter</td> 
+      <td>Required</td> 
+      <td>Requirements</td> 
+      <td>Description</td> 
+    </tr> 
+    <tr> 
+      <td>start_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
+      <td>Optional date to start counting from.</td> 
+    </tr> 
+      <tr> 
+      <td>end_date</td> 
+      <td>No</td> 
+      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
+      <td>Optional date to end counting from.</td> 
+    </tr> 
+    <tr> 
+      <td>type</td> 
+      <td>No</td> 
+      <td>hard or soft</td> 
+      <td>choose the type of bounce to search for.</td> 
+    </tr> 
+  </table> 
+ 
+
+{% xmljsontabs count %}
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="count-json">
+      <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/blocks.count.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+ 
+	<h3>Response: Success</h3>
+{% codeblock lang:json %}{
+  "count": "4"
+}
+{% endcodeblock %}
+	<h3>Response: Error</h3>
+{% codeblock lang:json %}{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+{% endcodeblock %}
+    </div>
+    <div class="tab-pane" id="count-xml">
+      <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/blocks.count.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+      {% endrequestblock %}
+
+	<h3>Response: Success</h3>
+
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <count>4</count>
+</result>
+
+{% endcodeblock %}
+	  <h4>Response: Error</h4> 
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+
+{% endcodeblock %}
+    </div>
+  </div>
