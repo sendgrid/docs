@@ -30,3 +30,19 @@ navigation:
 {% endcodeblock %}
 
 <p>Unique Arguments will also be shown in the Email Activity tab of your account.</p>
+
+<p>To apply different unique arguments to individual emails, you may use <a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">substitution tags</a>. An example of this would look like:</p>
+
+{% codeblock lang:json %}
+{
+  "sub" : {
+    "-account_number-" : [
+      "314159",
+      "271828"
+    ]
+  },
+  "unique_args" : {
+  	"customerAccountNumber" : "-account_number-"
+  }
+}
+{% endcodeblock %}
