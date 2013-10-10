@@ -65,6 +65,9 @@ $(function() {
           $(this).trigger("close");
         }
       });
+
+      var eventInfo = ['_trackEvent', 'Code Block', 'Expand', codeId];
+      _gaq.push(eventInfo);
     }
     ZeroClipboard.destroy();
     glueClipboards();
@@ -138,6 +141,9 @@ function glueClipboards () {
             $(window).off("copyCode");
           }
         });
+
+        var eventInfo = ['_trackEvent', 'Code Block', 'Copy', codeId];
+        _gaq.push(eventInfo);
 
       });
       document.flashFreeClipboard = true;
