@@ -123,6 +123,10 @@ code.wrap, code.requestdata {
 	margin: 10px 0;
 }
 
+.request-block code {
+	display: inline-block;
+}
+
 .request-block .requestdata {
 	color: black;
 }
