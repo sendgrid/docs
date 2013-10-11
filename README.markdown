@@ -6,7 +6,7 @@ The develop branch is continuously deployed to a preview site. [View dev site](h
 
 _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
 
-# Submit all pull requests to the develop branch
+**Submit all pull requests to the develop branch**
 
 ## Setup
 
