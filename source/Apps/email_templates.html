@@ -15,3 +15,9 @@ Settings
 {% endanchor %}
 
 <p>Use the embedded, full-featured HTML editor to create a template that your emails will be wrapped in. Be sure to include a  tag to place the content of your email.</p>
+
+{% warning %}
+Everything outside of the HTML template will be discarded. Keep this in
+mind if you are trying to add CSS or other content not contained in the
+template.
+{% endwarning %}
