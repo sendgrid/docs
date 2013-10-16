@@ -30,10 +30,12 @@ You can read about the older versions on the
 <a href="{{root_url}}/API_Reference/Webhooks/event_deprecated.html">Event Webhook (deprecated)</a> page. 
 {% endwarning %}
 
-<p>To setup the Event Webhook, login and go to the <a href="http://sendgrid.com/app">apps page</a>, 
+<p>To setup the Event Webhook via our web interface, login and go to the <a href="http://sendgrid.com/app">apps page</a>, 
 click on Show Disabled Apps, click the Event Notification app, and click on settings. Check the boxes next to the 
 type of events you want posted to your web server, then enter in the URL you have setup to receive POSTs from our 
 servers when an event occurs.</p>
+
+<p>The Event Webhook may also be setup by using our <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification">Filter Settings Endpoint</a>.</p>
 
 {% info %}
 We support basic HTTP authentication in our Event API. Those who wish to implement can provide credentials 
