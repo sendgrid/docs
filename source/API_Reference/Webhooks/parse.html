@@ -14,7 +14,7 @@ Available to Silver and higher packages or to our free demo accounts.
 <p>The parse API will POST the parsed email to a URL configured you specify. SendGrid automatically queues and retries any POSTs that respond with a 5XX status error. Additionally, we retry errors when we encounter 4XX status responses to prevent data loss for customers that have misconfigured their website or POST URL. </p>
 
 {% info %}
-If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.</p>
+If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.
 {% endinfo %}
 
 <p>In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response and then it is removed from our send queue. If we do <strong>not</strong> get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.</p>
@@ -33,7 +33,7 @@ Setup
 <p>The following parameters will be included in the POST to your callback URL.</p>
 
 {% info %}
-The request that will be sent to the HTTP endpoint will be enconded as multipart/form-data.</p>
+The request that will be sent to the HTTP endpoint will be enconded as multipart/form-data.
 {% endinfo %}
 
 <table class="table table-striped table-bordered">
