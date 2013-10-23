@@ -517,6 +517,21 @@ Filter: <code>subscriptiontrack</code>
 </tbody>
 </table>
 
+<h4>Example X-SMTPAPI Header Value</h4>
+{% codeblock lang:json %}
+{
+    "filters": {
+        "subscriptiontrack": {
+            "settings": {
+                "text/html": "If you would like to unsubscribe and stop receiving these emails <% click here %>.",
+                "text/plain": "If you would like to unsubscribe and stop receiving these emails click here: <% %>.",
+                "enable": 1
+            }
+        }
+    }
+}
+{% endcodeblock %}
+
 <hr/>
 
 {% anchor h3 template %}
