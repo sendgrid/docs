@@ -18,7 +18,7 @@ navigation:
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -45,7 +45,7 @@ navigation:
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -171,7 +171,7 @@ set
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.set.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.set.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName{% endrequestdata %}
       {% endrequestblock %}
 
@@ -193,7 +193,7 @@ set
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.set.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.set.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName{% endrequestdata %}
       {% endrequestblock %}
 
@@ -272,7 +272,7 @@ setPassword
   <div class="tab-pane active" id="reset-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/password.set.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/password.set.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword{% endrequestdata %}
       {% endrequestblock %}
 
@@ -295,7 +295,7 @@ setPassword
   <div class="tab-pane" id="reset-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/password.set.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/password.set.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword{% endrequestdata %}
       {% endrequestblock %}
 
@@ -367,7 +367,7 @@ Please note, your account username is used to login to our SMTP server and the w
   <div class="tab-pane active" id="setusername-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.setUsername.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.setUsername.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -389,7 +389,7 @@ Please note, your account username is used to login to our SMTP server and the w
   <div class="tab-pane" id="setusername-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.setUsername.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.setUsername.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -459,7 +459,7 @@ Please note, we send out a confirmation email to the new email account in order 
   <div class="tab-pane active" id="setemail-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.setEmail.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.setEmail.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -482,7 +482,7 @@ Please note, we send out a confirmation email to the new email account in order 
   <div class="tab-pane" id="setemail-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/profile.setEmail.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/profile.setEmail.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com{% endrequestdata %}
       {% endrequestblock %}
 

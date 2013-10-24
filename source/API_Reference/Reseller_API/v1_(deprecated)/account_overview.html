@@ -29,7 +29,7 @@ navigation:
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -68,7 +68,7 @@ navigation:
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com{% endrequestdata %}
       {% endrequestblock %}
 

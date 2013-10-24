@@ -42,7 +42,7 @@ add
     <div class="tab-pane active" id="add-json">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/add.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/add.json{% endrequesturl %}
         {% requestdata Data POST %}list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
  
@@ -63,7 +63,7 @@ add
     <div class="tab-pane" id="add-xml">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/add.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/add.xml{% endrequesturl %}
         {% requestdata Data POST %}list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -96,15 +96,15 @@ add
 
 <p>Add an email recipient to a list:</p>
 {% codeblock %}
-#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"address@domain.com","name":"contactName"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 <p>Add an email recipient with multiple data fields:</p>
-{% codeblock %}#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
+{% codeblock %}#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
 <p>Add multiple email recipients to a list:</p>
 {% codeblock %}
-#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://sendgrid.com/api/newsletter/lists/email/add.json
+#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 <hr/>
@@ -144,7 +144,7 @@ get
     <div class="tab-pane active" id="get-json">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/get.json{% endrequesturl %}
         {% requestdata Data POST %}list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
  
@@ -168,7 +168,7 @@ get
     <div class="tab-pane" id="get-xml">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/get.xml{% endrequesturl %}
         {% requestdata Data POST %}list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -233,7 +233,7 @@ delete
     <div class="tab-pane active" id="delete-json">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/delete.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/delete.json{% endrequesturl %}
         {% requestdata Data POST %}list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
  
@@ -254,7 +254,7 @@ delete
     <div class="tab-pane" id="delete-xml">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/lists/email/delete.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/lists/email/delete.xml{% endrequesturl %}
         {% requestdata Data POST %}list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 

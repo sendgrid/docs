@@ -36,7 +36,7 @@ List Pending Changes
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis{% endrequestdata %}
       {% endrequestblock %}
 
@@ -57,7 +57,7 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=lis{% endrequestdata %}
       {% endrequestblock %}
 
@@ -98,7 +98,7 @@ Delete Pending Changes
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -119,7 +119,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.pending.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -181,7 +181,7 @@ Immediate Upgrade
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -202,7 +202,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -264,7 +264,7 @@ Immediate Downgrade
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -285,7 +285,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -335,7 +335,7 @@ are incurred, a invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -356,7 +356,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -418,7 +418,7 @@ Scheduled Upgrade
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -439,7 +439,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -501,7 +501,7 @@ Scheduled Downgrade
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -522,7 +522,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -573,7 +573,7 @@ invoice with zero amount due is generated.</p>
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 
@@ -594,7 +594,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.account.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou{% endrequestdata %}
       {% endrequestblock %}
 

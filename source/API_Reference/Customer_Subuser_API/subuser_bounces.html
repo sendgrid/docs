@@ -51,7 +51,7 @@ Retrieve Bounces
      <h3>Call</h3>
         {% requestblock %}
 
-        {% requesturl POST %}https://sendgrid.com/api/user.bounces.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.xml{% endrequesturl %}
 
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date={% endrequestdata %}
 
@@ -80,7 +80,7 @@ Retrieve Bounces
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.bounces.json{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.json{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1{% endrequestdata %}
         {% endrequestblock %}
 
@@ -142,7 +142,7 @@ Delete Bounces
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.bounces.xml{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.xml{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com{% endrequestdata %}
         {% endrequestblock %}
 
@@ -166,7 +166,7 @@ Delete Bounces
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.bounces.json{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.json{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=bounce@example.com{% endrequestdata %}
         {% endrequestblock %}
 
