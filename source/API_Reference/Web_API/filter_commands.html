@@ -21,7 +21,7 @@ For a list of all the apps and parameters accesible with the Web API you can che
     <div class="tab-pane active" id="getavailable-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl GET %}https://sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
+        {% requesturl GET %}https://api.sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
       {% endrequestblock %}
 
 <h3>Response</h3>
@@ -41,7 +41,7 @@ For a list of all the apps and parameters accesible with the Web API you can che
     <div class="tab-pane" id="getavailable-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl GET %}https://sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
+        {% requesturl GET %}https://api.sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
       {% endrequestblock %}
 
 
@@ -79,7 +79,7 @@ Activate App
   <div class="tab-pane active" id="activate-json">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.activate.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.activate.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
@@ -92,7 +92,7 @@ Activate App
   <div class="tab-pane" id="activate-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.activate.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.activate.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
@@ -123,7 +123,7 @@ Deactivate App
   <div class="tab-pane active" id="deactivate-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.deactivate.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
@@ -138,7 +138,7 @@ Deactivate App
   <div class="tab-pane" id="deactivate-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.deactivate.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.deactivate.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
       {% endrequestblock %}
 
@@ -171,7 +171,7 @@ Setup App
   <div class="tab-pane active" id="setup-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.setup.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -186,7 +186,7 @@ Setup App
   <div class="tab-pane" id="setup-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/filter.setup.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -218,7 +218,7 @@ Get App Settings
   <div class="tab-pane active" id="getsettings-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl GET %}https://sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
+        {% requesturl GET %}https://api.sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
       {% endrequestblock %}
 
 	<h3>Response: Success</h3>
@@ -253,7 +253,7 @@ Get App Settings
   <div class="tab-pane" id="getsettings-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl GET %}https://sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
+        {% requesturl GET %}https://api.sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
       {% endrequestblock %}
 
 		<h3>Response: Success</h3>

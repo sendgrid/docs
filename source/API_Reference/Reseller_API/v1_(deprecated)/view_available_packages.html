@@ -9,7 +9,7 @@ navigation:
 <p>There are no extra parameters required for this call</p>
 <h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.packages.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.packages.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -30,7 +30,7 @@ result><packages><package><name>Basic Package</name><price>9.95</price><descript
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.packages.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.packages.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 

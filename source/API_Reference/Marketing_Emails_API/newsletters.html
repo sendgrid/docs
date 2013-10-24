@@ -59,7 +59,7 @@ add
     <div class="tab-pane active" id="create-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/add.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/add.json{% endrequesturl %}
         {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -81,7 +81,7 @@ add
     <div class="tab-pane" id="create-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/add.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/add.xml{% endrequesturl %}
         {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -166,7 +166,7 @@ edit
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/edit.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/edit.json{% endrequesturl %}
         {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -188,7 +188,7 @@ edit
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/edit.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/edit.xml{% endrequesturl %}
         {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -241,7 +241,7 @@ get
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/get.json{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -272,7 +272,7 @@ get
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/get.xml{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -334,7 +334,7 @@ list
     <div class="tab-pane active" id="list-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/list.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/list.json{% endrequesturl %}
         {% requestdata Data POST %}&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -371,7 +371,7 @@ list
     <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/list.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/list.xml{% endrequesturl %}
         {% requestdata Data POST %}&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -439,7 +439,7 @@ delete
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/delete.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/delete.json{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -461,7 +461,7 @@ delete
     <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/delete.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/delete.xml{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 

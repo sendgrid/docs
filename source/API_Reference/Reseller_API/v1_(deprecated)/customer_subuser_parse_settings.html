@@ -33,7 +33,7 @@ Get Current Settings
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -47,7 +47,7 @@ parse></parse
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -100,7 +100,7 @@ Create New Entry
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -121,7 +121,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -179,7 +179,7 @@ Edit Entry
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -200,7 +200,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -253,7 +253,7 @@ Delete Entry
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -274,7 +274,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 

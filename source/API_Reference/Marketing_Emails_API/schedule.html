@@ -51,7 +51,7 @@ add
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/add.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/add.json{% endrequesturl %}
         {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -73,7 +73,7 @@ add
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/add.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/add.xml{% endrequesturl %}
         {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -125,7 +125,7 @@ get
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/get.json{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -147,7 +147,7 @@ get
     <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/schedule/get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/get.xml{% endrequesturl %}
         {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 

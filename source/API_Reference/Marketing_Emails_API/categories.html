@@ -38,7 +38,7 @@ create
     <div class="tab-pane active" id="create-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/create.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/create.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY{% endrequestdata %}
       {% endrequestblock %}
 
@@ -60,7 +60,7 @@ create
     <div class="tab-pane" id="create-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/create.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/create.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY{% endrequestdata %}
       {% endrequestblock %}
 
@@ -119,7 +119,7 @@ add
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/add.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/add.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER{% endrequestdata %}
       {% endrequestblock %}
 
@@ -141,7 +141,7 @@ add
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/add.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/add.xml{% endrequesturl %}
         {% requestdata Data POST %}&api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER{% endrequestdata %}
       {% endrequestblock %}
 
@@ -201,7 +201,7 @@ remove
     <div class="tab-pane active" id="remove-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/remove.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/remove.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER{% endrequestdata %}
       {% endrequestblock %}
 
@@ -223,7 +223,7 @@ remove
     <div class="tab-pane" id="remove-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/remove.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/remove.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER{% endrequestdata %}
       {% endrequestblock %}
 
@@ -277,7 +277,7 @@ list
     <div class="tab-pane active" id="list-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/list.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/list.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -304,7 +304,7 @@ list
     <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/category/list.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/category/list.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 

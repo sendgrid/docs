@@ -52,7 +52,7 @@ account</td>
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000{% endrequestdata %}
       {% endrequestblock %}
 
@@ -79,7 +79,7 @@ account</td>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000{% endrequestdata %}
       {% endrequestblock %}
 
@@ -145,7 +145,7 @@ sample to</td>
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5{% endrequestdata %}
       {% endrequestblock %}
 
@@ -172,7 +172,7 @@ sample to</td>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5{% endrequestdata %}
       {% endrequestblock %}
 
@@ -220,7 +220,7 @@ record</td>
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet{% endrequestdata %}
       {% endrequestblock %}
 
@@ -247,7 +247,7 @@ record</td>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet{% endrequestdata %}
       {% endrequestblock %}
 
@@ -287,7 +287,7 @@ List all available monitor records a reseller has.
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis{% endrequestdata %}
       {% endrequestblock %}
 
@@ -296,7 +296,7 @@ List all available monitor records a reseller has.
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis{% endrequestdata %}
       {% endrequestblock %}
 
@@ -342,7 +342,7 @@ appending</td>
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -369,7 +369,7 @@ appending</td>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -418,7 +418,7 @@ monitor record from</td>
     </tr>
   </tbody></table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -445,7 +445,7 @@ monitor record from</td>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com{% endrequestdata %}
       {% endrequestblock %}
 

@@ -35,7 +35,7 @@ Retrieve
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retriev{% endrequestdata %}
       {% endrequestblock %}
 
@@ -62,7 +62,7 @@ Retrieve
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retriev{% endrequestdata %}
       {% endrequestblock %}
 
@@ -116,7 +116,7 @@ No Limit
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=non{% endrequestdata %}
       {% endrequestblock %}
 
@@ -137,7 +137,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=non{% endrequestdata %}
       {% endrequestblock %}
 
@@ -229,7 +229,7 @@ Recurring Reset
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail{% endrequestdata %}
       {% endrequestblock %}
 
@@ -250,7 +250,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=recurring&credits=200&period=dail{% endrequestdata %}
       {% endrequestblock %}
 
@@ -313,7 +313,7 @@ Total Credits
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=total&credits=20{% endrequestdata %}
       {% endrequestblock %}
 
@@ -334,7 +334,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=total&credits=20{% endrequestdata %}
       {% endrequestblock %}
 
@@ -397,7 +397,7 @@ Increment Credits
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=increment&credits=20{% endrequestdata %}
       {% endrequestblock %}
 
@@ -418,7 +418,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=increment&credits=20{% endrequestdata %}
       {% endrequestblock %}
 
@@ -481,7 +481,7 @@ Decrement Credits
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=decrement&credits=20{% endrequestdata %}
       {% endrequestblock %}
 
@@ -502,7 +502,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=decrement&credits=20{% endrequestdata %}
       {% endrequestblock %}
 

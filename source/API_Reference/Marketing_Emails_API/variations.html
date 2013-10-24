@@ -75,7 +75,7 @@ add
     <div class="tab-pane active" id="add-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/add.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/add.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
       {% endrequestblock %}
 
@@ -97,7 +97,7 @@ add
     <div class="tab-pane" id="add-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/add.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/add.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
       {% endrequestblock %}
 
@@ -185,7 +185,7 @@ Edit an existing Variation.
     <div class="tab-pane active" id="edit-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/edit.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/edit.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
       {% endrequestblock %}
 
@@ -207,7 +207,7 @@ Edit an existing Variation.
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/edit.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/edit.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
       {% endrequestblock %}
 
@@ -266,7 +266,7 @@ Retrieve the contents of an existing Variation.
     <div class="tab-pane active" id="get-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name{% endrequestdata %}
       {% endrequestblock %}
 
@@ -287,7 +287,7 @@ Retrieve the contents of an existing Variation.
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name{% endrequestdata %}
       {% endrequestblock %}
 
@@ -336,7 +336,7 @@ Cancels a current Variation send that is in progress.
     <div class="tab-pane active" id="cancel-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/cancel.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/cancel.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft{% endrequestdata %}
       {% endrequestblock %}
 
@@ -358,7 +358,7 @@ Cancels a current Variation send that is in progress.
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/cancel.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/cancel.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft{% endrequestdata %}
       {% endrequestblock %}
 
@@ -420,7 +420,7 @@ Delete the contents of an existing Variation.
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/delete.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/delete.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete{% endrequestdata %}
       {% endrequestblock %}
 
@@ -442,7 +442,7 @@ Delete the contents of an existing Variation.
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/delete.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/delete.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete{% endrequestdata %}
       {% endrequestblock %}
 
@@ -502,7 +502,7 @@ Retrieve a list of all Variations attached to a Marketing Email.
     <div class="tab-pane active" id="list-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/list.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/list.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find{% endrequestdata %}
       {% endrequestblock %}
 
@@ -524,7 +524,7 @@ Retrieve a list of all Variations attached to a Marketing Email.
     <div class="tab-pane" id="list-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/list.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/list.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find{% endrequestdata %}
       {% endrequestblock %}
 
@@ -585,7 +585,7 @@ Select the Variation you would like to send.
     <div class="tab-pane active" id="delete-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/pickwinner.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/pickwinner.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins{% endrequestdata %}
       {% endrequestblock %}
 
@@ -607,7 +607,7 @@ Select the Variation you would like to send.
     <div class="tab-pane" id="edit-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/pickwinner.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/pickwinner.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins{% endrequestdata %}
       {% endrequestblock %}
 
@@ -692,7 +692,7 @@ Schedule a send time and percentage for your variations.
     <div class="tab-pane active" id="schedule-json">
           <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/schedule.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/schedule.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50{% endrequestdata %}
       {% endrequestblock %}
 
@@ -714,7 +714,7 @@ Schedule a send time and percentage for your variations.
     <div class="tab-pane" id="schedule-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/newsletter/variations/schedule.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/schedule.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50{% endrequestdata %}
       {% endrequestblock %}
 
