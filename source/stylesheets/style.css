@@ -395,3 +395,10 @@ figure.code.expanded {
     width:280px;
   }
 }
+
+@media screen, projection, print and (min-width: 1200px) {
+	.home-list.row-fluid [class*="span"]:nth-child(3n+1) {
+		margin-left: 0;
+	}
+}
+
