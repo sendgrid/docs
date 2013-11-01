@@ -12,7 +12,7 @@ module Jekyll
       raise ArgumentError.new 'Missing indextank_api_url.' unless config['indextank_api_url']
       raise ArgumentError.new 'Missing indextank_index.' unless config['indextank_index']
       
-      @storage_dir = File.join(self.home_dir, '.jekyll_indextank')
+      @storage_dir = File.join(Dir.pwd, '.jekyll_indextank')
       @last_indexed_file = File.join(@storage_dir, 'last_index')
       
       create_storage_dir()
