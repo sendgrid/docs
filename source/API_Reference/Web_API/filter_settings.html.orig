@@ -1,0 +1,827 @@
+---
+layout: page
+weight: 0
+title: Filter Settings
+navigation:
+  show: true
+---
+
+<p>For a more detailed description of each of the Apps below, please
+visit the <a href="{{root_url}}/Apps">Apps</a> page.</p>
+
+<p>All calls to change filter settings are made to the <a href="{{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App">filter.setup endpoint.</a></p>
+
+{% anchor h2 %}
+Address Whitelist 
+{% endanchor %}
+
+<p><em>API App Name - <code>addresswhitelist</code></em></p>
+
+{% info %}
+When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call.
+{% endinfo %}
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>list</td>
+<td>A list of email addresses or domains.</td>
+<td>list[]=support@example.com&list[]=sales@example.com</td>
+</tr>
+</table>
+
+{% xmljsontabs addresswhitelist %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="addresswhitelist-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="addresswhitelist-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+BCC "Blind Carbon Copy" 
+{% endanchor %}
+
+<p><em>API App Name - <code>bcc</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>bcc</td>
+<td>An email address to be the BCC recipient.</td>
+<td>email@example.com</td>
+</tr>
+</table>
+
+{% xmljsontabs bcc %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="bcc-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="bcc-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Click Tracking 
+{% endanchor %}
+
+<p><em>API App Name - <code>clicktrack</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>enable_text</td>
+<td>Enable click tracking in plain text emails.</td>
+<td>1</td>
+</tr>
+</table>
+
+{% xmljsontabs clicktrack %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="clicktrack-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="clicktrack-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Domain Keys 
+{% endanchor %}
+
+<p><em>API App Name - <code>domainkeys</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>domain</td>
+<td>The domain to sign messages as</td>
+<td>example.com</td>
+</tr>
+<tr>
+<td>sender</td>
+<td>1 to insert a sender header if the domain specified does not match the from address
+0 to never insert a Sender header</td>
+<td>1</td>
+</tr>
+
+</table>
+
+{% xmljsontabs domainkeys %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="domainkeys-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="domainkeys-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+DKIM 
+{% endanchor %}
+
+<p><em>API App Name - <code>dkim</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>domain</td>
+<td>The domain you would like your DKIM certification signed with</td>
+<td>example.com</td>
+</tr>
+<td>use_from</td>
+<td>If enabled, the domain in the From: header of the email will be used to sign your DKIM</td>
+<td>1</td>
+</tr>
+</table>
+
+{% xmljsontabs dkim %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="dkim-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="dkim-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Email Templates 
+{% endanchor %}
+
+<p><em>API App Name - <code>template</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>text_html</td>
+<td>A string that holds the template html body</td>
+<td>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body bgcolor=&#39;pink&#39;&gt;&lt;div style=&#39;width:200px&#39; bgcolor=&#39;#FFF&#39;&gt;&lt;% body %&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</td>
+</tr>
+</table>
+
+{% xmljsontabs template %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="template-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="template-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Event Notification 
+{% endanchor %}
+
+<p><em>API App Name - <code>eventnotify</code></em></p>
+
+{% info %}
+All fields except version are required for each call, <em>unless you are updating the version, in which case all fields are required</em>.
+{% endinfo %}
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>processed</td>
+<td>Notify when email is processed</td>
+<td>0</td>
+</tr>
+<tr>
+<td>dropped</td>
+<td>Notify when email is dropped</td>
+<td>1</td>
+</tr>
+<tr>
+<td>deferred</td>
+<td>Notify when email is deferred</td>
+<td>1</td>
+</tr>
+<tr>
+<td>delivered</td>
+<td>Notify when email is delivered</td>
+<td>1</td>
+</tr>
+<tr>
+<td>bounce</td>
+<td>Notify when email is bounced</td>
+<td>1</td>
+</tr>
+<tr>
+<td>click</td>
+<td>Notify when email is clicked</td>
+<td>1</td>
+</tr>
+<tr>
+<td>open</td>
+<td>Notify when email is opened</td>
+<td>1</td>
+</tr>
+<tr>
+<td>unsubscribe</td>
+<td>Notify when email is unsubscribed</td>
+<td>1</td>
+</tr>
+<tr>
+<td>spamreport</td>
+<td>Notify when email is marked as spam</td>
+<td>1</td>
+</tr>
+<tr>
+<td>url</td>
+<td>The post notification url to post these event messages to</td>
+<td>https://notificationurl.example.com/event</td>
+</tr>
+<tr>
+<td>version</td>
+<td>The version of the Event API you wish to use. (1-3)</td>
+<td>3</td>
+</tr>
+</table>
+
+{% xmljsontabs eventnotify %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="eventnotify-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="eventnotify-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Footer 
+{% endanchor %}
+
+<p><em>API App Name - <code>footer</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>text/html</td>
+<td>String that holds the html body</td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
+</tr>
+<tr>
+<td>text/plain</td>
+<td>String that holds the text body</td>
+<td>Content</td>
+</tr>
+</table>
+
+{% xmljsontabs footer %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="footer-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="footer-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Google Analytics 
+{% endanchor %}
+
+<p><em>API App Name - <code>ganalytics</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>utm_source</td>
+<td>Name of the referrer source</td>
+<td>Transactional Email</td>
+</tr>
+<tr>
+<td>utm_medium</td>
+<td>Name of the marketing medium</td>
+<td>email</td>
+</tr>
+<tr>
+<td>utm_campaign</td>
+<td>Name of the campaign</td>
+<td>Redesigned Transaction </td>
+</tr>
+<tr>
+<td>utm_term</td>
+<td>Identify paid keywords</td>
+<td>Health</td>
+</tr>
+<tr>
+<td>utm_content</td>
+<td>Use to differentiate ads</td>
+<td>PageB</td>
+</tr>
+</table>
+
+{% xmljsontabs ganalytics %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="ganalytics-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="ganalytics-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Gravatar 
+{% endanchor %}
+
+<p><em>API App Name - <code>gravatar</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>None</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table>
+
+<hr/>
+
+{% anchor h2 %}
+Open Tracking 
+{% endanchor %}
+
+<p><em>API App Name - <code>opentrack</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>None</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+</table>
+
+<hr/>
+
+{% anchor h2 %}
+<<<<<<< HEAD
+Spam Filter Checker 
+=======
+SPAM Filter Checker 
+>>>>>>> develop
+{% endanchor %}
+
+<p><em>API App Name - <code>spamcheck</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>maxscore</td>
+<td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam</td>
+<td>https://www.example.com/spamcheck.php</td>
+</tr>
+</table>
+
+{% xmljsontabs spamcheck %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="spamcheck-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="spamcheck-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+
+<hr/>
+
+{% anchor h2 %}
+Subscription Tracking 
+{% endanchor %}
+
+<p><em>API App Name - <code>subscriptiontrack</code></em></p>
+
+<table class="table table-bordered table-striped">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>text/html</td>
+<td>String for the HTML e-mail body</td>
+<td>If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;</td>
+</tr>
+<tr>
+<td>text/plain</td>
+<td>String for the plain text e-mail body</td>
+<td>If you would like to unsubscribe and stop receiving these emails click here: <% %>.</td>
+</tr>
+<tr>
+<td>url</td>
+<td>a URL the customer will be redirected to on clicking the subscription management link</td>
+<td>http://www.example.com/UnsubscribeLandingPage</td>
+</tr>
+<tr>
+<td>landing</td>
+<td>HTML content for a landing page that will be displayed by SendGrid</td>
+<td>&lt;html&gt;Content&lt;/html&gt;</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link</td>
+<td>[unsubscribe_tag]</td>
+</tr>
+</table>
+<<<<<<< HEAD
+
+{% xmljsontabs subscriptiontrack %}
+
+<div class="tab-content">
+  <div class="tab-pane active" id="subscriptiontrack-json">
+     <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D{% endrequestdata %}
+      {% endrequestblock %}
+
+     <h3>Response</h3>
+
+{% codeblock lang:json %}{
+  "message": "success"
+}
+{% endcodeblock %}
+
+  </div>
+  <div class="tab-pane" id="subscriptiontrack-xml">
+        <h3>Call</h3>
+      {% requestblock %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
+        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D{% endrequestdata %}
+      {% endrequestblock %}
+
+
+    <h3>Response</h3>
+{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>success</message>
+</result>
+
+{% endcodeblock %}
+
+  </div>
+</div>
+=======
+>>>>>>> develop

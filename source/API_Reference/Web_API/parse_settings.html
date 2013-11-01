@@ -43,7 +43,7 @@ get
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/parse.get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
  
@@ -69,7 +69,7 @@ get
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/parse.get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
       {% endrequestblock %}
 
@@ -150,7 +150,7 @@ set
   <div class="tab-pane active" id="set-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/parse.set.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.set.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
       {% endrequestblock %}
 
@@ -172,7 +172,7 @@ set
   <div class="tab-pane" id="set-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/parse.set.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.set.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
       {% endrequestblock %}
 
@@ -247,7 +247,7 @@ Delete Entry
 
       {% requestblock %}
 
-        {% requesturl POST %}https://sendgrid.com/api/parse.delete.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.delete.json{% endrequesturl %}
 
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
 
@@ -272,7 +272,7 @@ Delete Entry
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/parse.delete.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/parse.delete.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
       {% endrequestblock %}
 

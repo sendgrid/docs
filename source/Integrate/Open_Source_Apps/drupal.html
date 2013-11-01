@@ -6,8 +6,18 @@ navigation:
   show: true
 ---
 
-<p>To use SendGrid with <a title="Drupal" href="http://drupal.org/">Drupal</a>, use the <a title="SMTP Authentication Support" href="http://drupal.org/project/smtp">SMTP Authentication Support module</a>. Install a version of this module that is compatible with your version of Drupal.
+To send emails from Drupal using SendGrid, you may use the SMTP Authentication Support module
+or the Swift Mailer module depending on your needs.
+
+{% anchor h2 %}
+Using the SMTP Authentication Support Module
+{% endanchor %}
+
+<p>To use SendGrid with <a title="Drupal" href="http://drupal.org/">Drupal</a>, 
+use the <a title="SMTP Authentication Support" href="http://drupal.org/project/smtp">SMTP Authentication Support module</a>.
+Install a version of this module that is compatible with your version of Drupal.
 </p>
+
 <p><img title="SMTP Module" src="{{root_url}}/images/drupal_1.png" alt="" width="673" height="100"></p>
 
 <p>Open your modules page, find the SMTP module, and configure it with the following settings:</p>
@@ -23,3 +33,15 @@ navigation:
 	<li>
 <strong>Password</strong> - SendGrid Password</li>
 </ul><p><img title="SMTP Module Configuration" src="{{root_url}}/images/drupal_2.png" alt="" width="665" height="914"></p>
+
+{% anchor h2 %}
+Using the Swift Mailer Module
+{% endanchor %}
+
+<p> To use the <a title="Swift Mailer Module" href="http://drupal.org/project/swiftmailer">Swift Mailer module</a>,
+install a version of this module that is compatible with your version of Drupal.
+</p>
+
+<p>Configuration for this module is largely the same as above.</p>
+
+<p><img title="SMTP Module Configuration" src="{{root_url}}/images/drupal_3.png" alt=""></p>

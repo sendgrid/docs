@@ -40,7 +40,7 @@ Retrieve
   <div class="tab-pane active" id="limit-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
+https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -61,7 +61,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
   <div class="tab-pane" id="limit-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 {% endcodeblock %}
   <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -109,7 +109,7 @@ No Limit
 	  <div class="tab-pane active" id="list-json">
 	     <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
+https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -128,7 +128,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
  <div class="tab-pane" id="list-xml">
     <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -218,7 +218,7 @@ Recurring Reset
   <div class="tab-pane" id="reset-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
+https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -237,7 +237,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
   <div class="tab-pane" id="reset-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -302,7 +302,7 @@ Total Credits
 	  <div class="tab-pane active" id="total-json">
 	     <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
+https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
 	  <h3>Response: Success</h3>
 	{% codeblock lang:json %}{
@@ -321,7 +321,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
   <div class="tab-pane" id="total-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -380,7 +380,7 @@ Increment Credits
 	  <div class="tab-pane active" id="increment-json">
 	     <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
+https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
 {% endcodeblock %}
 	  <h3>Response: Success</h3>
 	{% codeblock lang:json %}{
@@ -399,7 +399,7 @@ https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&a
 	  <div class="tab-pane" id="increment-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -463,7 +463,7 @@ Decrement Credits
 	  <div class="tab-pane active" id="decrement-json">
 	     <h3>Call</h3>
 	{% codeblock %}
-	https://sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
+	https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 	{% endcodeblock %}
 	  <h3>Response: Success</h3>
 	{% codeblock lang:json %}{
@@ -482,7 +482,7 @@ Decrement Credits
   <div class="tab-pane" id="decrement-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
+https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
 {% endcodeblock %}
   <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
