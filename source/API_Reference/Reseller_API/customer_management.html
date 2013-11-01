@@ -158,7 +158,7 @@ specify the first billing anniversary date</td>
   <div class="tab-pane" id="create-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
+https://api.sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -185,7 +185,7 @@ https://sendgrid.com/apiv2/reseller.add.xml?api_user=your_sendgrid_username&api_
   <div class="tab-pane active" id="create-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
+https://api.sendgrid.com/apiv2/reseller.add.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -234,7 +234,7 @@ account.</td>
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -261,7 +261,7 @@ https://sendgrid.com/apiv2/reseller.delete.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.delete.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -378,7 +378,7 @@ currently active</td>
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -419,7 +419,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:json %}[
@@ -490,7 +490,7 @@ Enable a customer so they may start sending out emails again. This call will not
   <div class="tab-pane" id="enable-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -512,7 +512,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="enable-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -560,7 +560,7 @@ This prevents them from sending out emails with SendGrid.
   <div class="tab-pane" id="disable-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -582,7 +582,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="disable-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -632,7 +632,7 @@ access</td>
   <div class="tab-pane" id="website-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -654,7 +654,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="website-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -704,7 +704,7 @@ website access</td>
   <div class="tab-pane" id="unwebsite-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -726,7 +726,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="unwebsite-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disabl
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -829,7 +829,7 @@ to update profile information</td>
   <div class="tab-pane" id="update-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -856,7 +856,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="update-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -921,7 +921,7 @@ password</td>
   <div class="tab-pane" id="password-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -948,7 +948,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="password-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -1026,7 +1026,7 @@ This update takes effect immediately</td>
   <div class="tab-pane" id="name-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1053,7 +1053,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="name-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{
@@ -1121,7 +1121,7 @@ contacting customer. This update takes effect immediately</td>
   <div class="tab-pane" id="email-xml">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1148,7 +1148,7 @@ https://sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&a
   <div class="tab-pane active" id="email-json">
      <h3>Call</h3>
 {% codeblock %}
-https://sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:json %}{

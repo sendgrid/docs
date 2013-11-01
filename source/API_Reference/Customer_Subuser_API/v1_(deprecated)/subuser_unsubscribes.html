@@ -49,7 +49,7 @@ Retrieve Unsubscribes
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date={% endrequestdata %}
         {% endrequestblock %}
 
@@ -72,7 +72,7 @@ Retrieve Unsubscribes
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date={% endrequestdata %}
         {% endrequestblock %}
 
@@ -130,7 +130,7 @@ Delete Unsubscribes
   <div class="tab-pane" id="delete-xml">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com{% endrequestdata %}
         {% endrequestblock %}
 
@@ -154,7 +154,7 @@ Delete Unsubscribes
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.json{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.json{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com{% endrequestdata %}
         {% endrequestblock %}
 
@@ -210,7 +210,7 @@ Add Unsubscribes
   <div class="tab-pane" id="add-xml">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com{% endrequestdata %}
         {% endrequestblock %}
 
@@ -234,7 +234,7 @@ Add Unsubscribes
   <div class="tab-pane active" id="add-json">
      <h3>Call</h3>
         {% requestblock %}
-          {% requesturl POST %}https://sendgrid.com/api/user.unsubscribes.json{% endrequesturl %}
+          {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.json{% endrequesturl %}
           {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com{% endrequestdata %}
         {% endrequestblock %}
 

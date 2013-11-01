@@ -115,7 +115,7 @@ get
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/invalidemails.get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
       {% endrequestblock %}
 
@@ -139,7 +139,7 @@ get
   <div class="tab-pane" id="get-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/invalidemails.get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
       {% endrequestblock %}
 
@@ -198,7 +198,7 @@ delete
   <div class="tab-pane active" id="delete-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/invalidemails.delete.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.delete.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -222,7 +222,7 @@ delete
   <div class="tab-pane" id="delete-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/invalidemails.delete.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.delete.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
       {% endrequestblock %}
 

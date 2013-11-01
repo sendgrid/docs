@@ -60,11 +60,11 @@ public class SimpleMail {
         Properties props = new Properties();
         props.put("mail.transport.protocol", "smtp");
         props.put("mail.smtp.host", SMTP_HOST_NAME);
-        props.put("mail.smtp.port", 587);
+        props.put("mail.smtp.port", "587");
         props.put("mail.smtp.auth", "true");
  
         Authenticator auth = new SMTPAuthenticator();
-        Session mailSession = Session.getDefaultInstance(props, auth);
+        Session mailSession = Session.getInstance(props, auth);
         // uncomment for debugging infos to stdout
         // mailSession.setDebug(true);
         Transport transport = mailSession.getTransport();

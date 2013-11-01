@@ -39,7 +39,7 @@ Retrieve Invoice Numbers
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.list.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -49,7 +49,7 @@ invoices><invoice><number>2010010001</number></invoice><invoice><number>20100100
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.list.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -91,7 +91,7 @@ Retrieve Invoices
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -101,7 +101,7 @@ invoices><invoice><number>2010010001</number><package>Basic Package</package><cr
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 

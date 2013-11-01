@@ -44,7 +44,7 @@ Retrieve Invoice Numbers
   <div class="tab-pane" id="get-xml">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.list.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -65,7 +65,7 @@ Retrieve Invoice Numbers
   <div class="tab-pane active" id="get-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.list.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -120,7 +120,7 @@ Retrieve Invoices
   <div class="tab-pane" id="invoices-xml">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.get.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 
@@ -150,7 +150,7 @@ Retrieve Invoices
   <div class="tab-pane active" id="invoices-json">
      <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/billing.get.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
       {% endrequestblock %}
 

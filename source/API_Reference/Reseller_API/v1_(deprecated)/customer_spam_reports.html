@@ -51,7 +51,7 @@ Retrieve Spam Reports
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date={% endrequestdata %}
       {% endrequestblock %}
 
@@ -61,7 +61,7 @@ spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:4
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date={% endrequestdata %}
       {% endrequestblock %}
 
@@ -116,7 +116,7 @@ Delete Spam Reports
   </tr>
 </table><h3>XML Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -130,7 +130,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/distributor.manage.json{% endrequesturl %}
+        {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com{% endrequestdata %}
       {% endrequestblock %}
 
