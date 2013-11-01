@@ -34,10 +34,10 @@ When using this call, you must define all emails & domains here. Using this call
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs addresswhitelist %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="addresswhitelist-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -52,10 +52,10 @@ When using this call, you must define all emails & domains here. Using this call
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="addresswhitelist-xml">
         <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
+        {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com{% endrequestdata %}
       {% endrequestblock %}
 
@@ -93,10 +93,10 @@ BCC "Blind Carbon Copy"
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs bcc %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="bcc-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -111,7 +111,7 @@ BCC "Blind Carbon Copy"
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="bcc-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -152,10 +152,10 @@ Click Tracking
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs clicktrack %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="clicktrack-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -170,7 +170,7 @@ Click Tracking
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="clicktrack-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -218,10 +218,10 @@ Domain Keys
 
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs domainkeys %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="domainkeys-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -236,7 +236,7 @@ Domain Keys
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="domainkeys-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -281,10 +281,10 @@ DKIM
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs dkim %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="dkim-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -299,7 +299,7 @@ DKIM
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="dkim-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -340,10 +340,10 @@ Email Templates
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs template %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="template-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -358,7 +358,7 @@ Email Templates
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="template-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -453,10 +453,10 @@ All fields except version are required for each call, <em>unless you are updatin
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs eventnotify %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="eventnotify-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -471,7 +471,7 @@ All fields except version are required for each call, <em>unless you are updatin
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="eventnotify-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -517,10 +517,10 @@ Footer
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs footer %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="footer-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -535,7 +535,7 @@ Footer
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="footer-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -596,10 +596,10 @@ Google Analytics
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs ganalytics %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="ganalytics-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -614,7 +614,7 @@ Google Analytics
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="ganalytics-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -702,10 +702,10 @@ Spam Filter Checker
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs spamcheck %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="spamcheck-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -720,7 +720,7 @@ Spam Filter Checker
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="spamcheck-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
@@ -781,10 +781,10 @@ Subscription Tracking
 </tr>
 </table>
 
-{% xmljsontabs setup %}
+{% xmljsontabs subscriptiontrack %}
 
 <div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
+  <div class="tab-pane active" id="subscriptiontrack-json">
      <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.json{% endrequesturl %}
@@ -799,7 +799,7 @@ Subscription Tracking
 {% endcodeblock %}
 
   </div>
-  <div class="tab-pane" id="setup-xml">
+  <div class="tab-pane" id="subscriptiontrack-xml">
         <h3>Call</h3>
       {% requestblock %}
         {% requesturl POST %}https://sendgrid.com/api/filter.setup.xml{% endrequesturl %}
