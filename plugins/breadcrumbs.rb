@@ -31,7 +31,7 @@ module Jekyll
             path = @page_url[1..-1]
             if  @dirs[path]["navigation"]["show"] == true
               path = @dirs[path]["title"] || path
-              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\"><span itemprop=\"title\">#{path}</span><meta itemprop=\"url\" content=\"#{@page_url}\" /></li>" unless level.to_i > 0
+              output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\"><span itemprop=\"title\">#{path}</span><meta itemprop=\"url\" content=\"#{site.config['url']}#{@page_url}\" /></li>" unless level.to_i > 0
             end
           else
               link = "/"
