@@ -6,10 +6,19 @@
 <!-- SendGrid Docs Version {{ site.version }} -->
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  {% if page.seo.title and page.seo.override %}
+    <title>{{ page.seo.title }}</title>
+  {% else %}
+    {% capture title %}{% if page.seo.title %}{{ page.seo.title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
+    <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
+  {% endif %}
   <meta name="author" content="{{ site.author }}">
 
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  {% if page.seo.description %}
+    <meta name="description" content="{{ page.seo.description }}">
+  {% else %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  {% endif %}
 
   <link rel="canonical" href="{{root_url}}{{page.url}}"/>
 
