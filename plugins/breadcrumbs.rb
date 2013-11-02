@@ -10,7 +10,6 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       page = context.registers[:page]
-
       @page_url = context.environments.first["page"]["url"]
       @dirs = {}
 
@@ -22,7 +21,7 @@ module Jekyll
       
       output='<div class="breadcrumb clearfix"><ul>'
       
-      output+="<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\"><a href=\"#{site.config['url']}/index.html\" itemprop=\"url\"><span itemprop=\"title\">Documentation</span></a><span class=\"divider\">&gt;</span></li>"
+      output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a><span class="divider">&gt;</span></li>'
       
       levels = @page_url.split('/') #break up url into different levels
       levels.each_with_index do |level, index|
@@ -52,7 +51,7 @@ module Jekyll
                 end
               end
               
-              inner = link.length > 0 ? "<a href=\"#{site.config['url']}#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
+              inner = link.length > 0 ? "<a href=\"#{link}\" itemprop=\"url\"><span itemprop=\"title\">#{level.gsub(/_/, ' ')}</span></a>" : "#{level.gsub(/_/, ' ')}"
               output += "<li itemscope itemtype=\"http://data-vocabulary.org/Breadcrumb\">#{inner}<span class=\"divider\">&gt;</span></li>"
           end
         end
