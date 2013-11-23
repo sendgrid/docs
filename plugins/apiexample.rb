@@ -54,12 +54,15 @@ module Jekyll
       url = Liquid::Template.parse("{{ url }}").render context
       data = Liquid::Template.parse("{{ data }}").render context
 
+      request_url = request_type.upcase != "GET" ? "#{url}.#{@format}" : "#{url}.#{@format}?#{data}"
+      requestdata_block = request_type.upcase != "GET" ? "{% requestdata data #{request_type} %}#{data}{% endrequestdata %}" : ""
+
       output = <<-HTML
         <div class="tab-pane #{active}" id="#{identifier}-#{@format}">
           <h3>Call</h3>
           {% requestblock %}
-            {% requesturl #{request_type} %}#{url}.#{@format}{% endrequesturl %}
-            {% requestdata data #{request_type} %}#{data}{% endrequestdata %}
+            {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
+            #{requestdata_block}
           {% endrequestblock %}
 
           <h3>Response</h3>
