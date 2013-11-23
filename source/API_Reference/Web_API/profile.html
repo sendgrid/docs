@@ -10,20 +10,8 @@ navigation:
 
 <h3>There are no extra parameters required to view your profile information.</h3>
 
-
-
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-{% codeblock lang:json %}
+{% apiexample get GET https://api.sendgrid.com/api/profile.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
 [{
   "username": "sampleuser@example.com",
   "email": "sampleemail@example.com",
@@ -38,20 +26,9 @@ navigation:
   "phone": "555-555-5555",
   "website": "example.com"
 }]
-{% endcodeblock %}
-
-
-  </div>
-  <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <users>
    <user>
@@ -69,11 +46,9 @@ navigation:
       <website>example.com</website>
    </user>
 </users>
+  {% endresponse %}
 
-{% endcodeblock %}
-  </div>
-</div>
-
+{% endapiexample%}
 <hr/>
 
 {% anchor h2 %}
@@ -164,51 +139,30 @@ set
    </tbody>
  </table>
 
-
-{% xmljsontabs set %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="set-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.set.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample set POST https://api.sendgrid.com/api/profile.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="set-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.set.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error</message>
    <errors>
@@ -216,15 +170,11 @@ set
       <error>... error messages ...</error>
       ...
    </errors>
-   @nodes
 </result>
-
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+{% endapiexample %} 
 
 <hr/>
-
 
 {% anchor h2 %}
 setPassword 
@@ -265,69 +215,44 @@ setPassword
   </table>
 </body>
 
-
-{% xmljsontabs reset %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="reset-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/password.set.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword{% endrequestdata %}
-      {% endrequestblock %}
-
-
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample reset POST https://api.sendgrid.com/api/password.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="reset-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/password.set.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock %}
+<!-- error -->
 <result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
-@nodes
-{% endcodeblock %}
-
-  </div>
-</div>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+  {% endresponse %}
+{% endapiexample %} 
 
 <hr/>
 
-
-
- {% anchor h2 %}
+{% anchor h2 %}
 setUsername 
 {% endanchor %} 
 {% warning %}
@@ -360,64 +285,42 @@ Please note, your account username is used to login to our SMTP server and the w
    </tbody>
  </table>
 
-
-{% xmljsontabs setusername %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="setusername-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.setUsername.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample setusername POST https://api.sendgrid.com/api/profile.setUsername api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="setusername-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.setUsername.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com{% endrequestdata %}
-      {% endrequestblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<h3>Response: Success</H3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock %}
+<!-- error -->
 <result>
-  <message>error</message>
-  <errors>
-    ...
-    <error>... error messages ...</error>
-    ...
-  </errors>
-@nodes
-{% endcodeblock %}
-
-  </div>
-</div>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+  {% endresponse %}
+{% endapiexample %} 
 
 <hr/>
-
 
 {% anchor h2 %}
 setEmail 
@@ -452,51 +355,37 @@ Please note, we send out a confirmation email to the new email account in order 
   </tbody>
 </table>
 
-
-{% xmljsontabs setemail %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="setemail-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.setEmail.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample setemail POST https://api.sendgrid.com/api/profile.setEmail api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="setemail-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/profile.setEmail.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com{% endrequestdata %}
-      {% endrequestblock %}
+<!-- success -->
+<result>
+   <message>success</message>
+</result>
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<message>success</message>
-
-{% endcodeblock %}
-<p>Response: Error</p>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<message>error</message>
-
-{% endcodeblock %}
-  </div>
-</div>
+<!-- error -->
+<result>
+   <message>error</message>
+   <errors>
+      ...
+      <error>... error messages ...</error>
+      ...
+   </errors>
+</result>
+  {% endresponse %}
+{% endapiexample %} 
