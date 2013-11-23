@@ -14,18 +14,9 @@ Get Available
 <p><em>Note: The name entry is used in all the other API calls to identify a app.</em>
 For a list of all the apps and parameters accesible with the Web API you can check the <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Filter Settings</a> page.</p>
 
-  
-{% xmljsontabs getavailable %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="getavailable-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/filter.getavailable.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
-      {% endrequestblock %}
-
-<h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample getavailable GET https://api.sendgrid.com/api/filter.getavailable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+[
   ...
   {
       "name": "bcc",
@@ -35,19 +26,9 @@ For a list of all the apps and parameters accesible with the Web API you can che
   },
   ...
 ]
-{% endcodeblock %}
+  {% endresponse %}
 
-    </div>
-    <div class="tab-pane" id="getavailable-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/filter.getavailable.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
-      {% endrequestblock %}
-
-
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% response xml %}
 <filters>
   ...
   <filter>
@@ -59,13 +40,10 @@ For a list of all the apps and parameters accesible with the Web API you can che
    ...
 </filters>
 
-{% endcodeblock %}
-    </div>
-  </div>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
-
-
 
 {% anchor h2 %}
 Activate App 
@@ -73,43 +51,22 @@ Activate App
 
 <p>Activate an app.</p>
 
-{% xmljsontabs activate %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.activate.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
-      {% endrequestblock %}
-
-		<h3>Response</h3>
-{% codeblock lang:json %}{
+{% apiexample activate POST https://api.sendgrid.com/api/filter.activate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="activate-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.activate.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
-      {% endrequestblock %}
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
-
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
-
-
 
 {% anchor h2 %}
 Deactivate App 
@@ -117,47 +74,22 @@ Deactivate App
 
 <p>Deactivate an app.</p>
 
-{% xmljsontabs deactivate %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="deactivate-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.deactivate.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-
-{% codeblock lang:json %}{
+{% apiexample deactivate POST https://api.sendgrid.com/api/filter.deactivate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="deactivate-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.deactivate.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequestdata %}
-      {% endrequestblock %}
-
-
-    <h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
-
-{% endcodeblock %}
-
-  </div>
-</div>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
-
-
 
 {% anchor h2 %}
 Setup App 
@@ -165,46 +97,25 @@ Setup App
 
 <p>Change application settings. Applications and their settings can be found in the <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Filter Settings documentation</a>.</p>
 
-{% xmljsontabs setup %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="setup-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.setup.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-
-{% codeblock lang:json %}{
+{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
+  {% endresponse %}
 
-  </div>
-  <div class="tab-pane" id="setup-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/filter.setup.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-    <h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-  </div>
-</div>
+{% xmljsontabs setup %}
 
 <hr/>
-
 
 {% anchor h2 %}
 Get App Settings 
@@ -212,17 +123,8 @@ Get App Settings
 
 <p>Get the Settings Of An App</p>
 
-{% xmljsontabs getsettings %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="getsettings-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/filter.getsettings.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
-      {% endrequestblock %}
-
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}
+{% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
+  {% response json %}
 {
   "message": "success",
   "settings": [
@@ -231,58 +133,35 @@ Get App Settings
     }
   ]
 }
-{% endcodeblock %}
 
-	<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
 
-	<h3>Response: Empty</h3>
-<em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:json %}{
+//empty - This is returned if that filter has no settings or is not enabled.<
+{
   "settings": null
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="getsettings-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/filter.getsettings.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc{% endrequesturl %}
-      {% endrequestblock %}
-
-		<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <filter>
    <email>nick@sendgrid.com</email>
 </filter>
 
-{% endcodeblock %}
-      <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error</message>
    <message>... error messages ...</message>
 </result>
 
-{% endcodeblock %}
-
-<h3>Response: Empty</h3>
-<em>*This is returned if that filter has no settings or is not enabled.</em>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- empty -->
 <filter/>
-
-{% endcodeblock %}
-
-  </div>
-</div>
-
-
+  {% endresponse %}
+{% endapiexample %}
