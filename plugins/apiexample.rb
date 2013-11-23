@@ -23,7 +23,6 @@ module Jekyll
     end
 
     def render_all(list, context)
-      puts @http_method
       context['identifier'] = @identifier
       context['request_type'] = @request_type
       context['url'] = @url
@@ -66,9 +65,7 @@ module Jekyll
           {% endrequestblock %}
 
           <h3>Response</h3>
-          {% codeblock lang:#{@format} %}
-#{output}
-          {% endcodeblock %}
+          {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
         </div>
       HTML
       
