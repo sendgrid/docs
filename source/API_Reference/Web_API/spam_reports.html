@@ -8,9 +8,7 @@ navigation:
 
 <p>Retrieve and delete entries in the Spam Reports list.</p>
 
-
-
- {% anchor h2 %}
+{% anchor h2 %}
 get 
 {% endanchor %}
 
@@ -92,18 +90,10 @@ get
        <td>optional email addresses to search for.</td>
      </tr>
 </tbody></table>
-{% xmljsontabs get %}
-<div class="tab-content">
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/spamreports.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
 
-
-     <h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample get GET https://api.sendgrid.com/api/spamreports.get api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1 %}
+  {% response json %}
+[
   {
     "ip": "174.36.80.219",
     "email": "example@aol.com",
@@ -115,19 +105,9 @@ get
     "created": "2009-12-08 07:43:01"
   }
 ]
-{% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/spamreports.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <spamreports>
    <spamreport>
@@ -141,21 +121,19 @@ get
       <created>2009-12-08 07:43:01</created>
    </spamreport>
 </spamreports>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-</div>
 
 <hr>
 
-  {% anchor h2 %}
+{% anchor h2 %}
 delete 
 {% endanchor %}
 
-  <p>Delete an address from the Spam Reports list.</p>
-  
+<p>Delete an address from the Spam Reports list.</p>
 
-  <table class="table table-bordered table-striped"><tbody>
+<table class="table table-bordered table-striped"><tbody>
 <tr>
 <th>Parameter</th>
 
@@ -175,55 +153,34 @@ delete
         <td>Email spam reports address to remove</td>
       </tr>
 </tbody></table>
-{% xmljsontabs delete %}
-<div class="tab-content">
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/spamreports.delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
 
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/spamreports.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/spamreports.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>Email does not exist</message>
 </result>
 
-{% endcodeblock %}
-
-  </result></result>
-</div>
-</div>
+  {% endresponse %}
+{% endapiexample %}
