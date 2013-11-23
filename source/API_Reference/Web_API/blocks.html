@@ -8,10 +8,10 @@ navigation:
 
 <p>This endpoint allows you to retrieve and delete entries in the Blocks list.</p>
 
-  {% anchor h2 %}
+{% anchor h2 %}
 get 
-{% endanchor %}Retrieve a list of Blocks with addresses and response codes, optionally
-  with dates.
+{% endanchor %}
+Retrieve a list of Blocks with addresses and response codes, optionally with dates.
 
   <table class="table table-bordered table-striped"><tbody>
 <tr>
@@ -76,66 +76,44 @@ get
     </tr> 
 
 </tbody></table>
-{% xmljsontabs get %}
-<div class="tab-content">
-    <div class="tab-pane active" id="get-json">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
- 
-      <h3>Response</h3>
-{% codeblock lang:json %}[
-  {
-    "status": "4.0.0",
-    "created": "2012-09-02 00:12:12",
-    "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
-    "email": "example@juno.com"
-  },
-  {
-    "status": "4.0.0",
-    "created": "2012-09-02 00:21:29",
-    "reason": "Connection timed out",
-    "email": "example2@band.la"
-  },
-  {
-    "status": "4.0.0",
-    "created": "2012-09-02 00:25:33",
-    "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
-    "email": "example3@exampledomain.com"
-  }
-]
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="get-xml">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-      <h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<blocks>
-   <block>
-      <email>email1@domain.com</email>
-      <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
-      <created>2009-06-10 12:40:30</created>
-   </block>
-   <block>
-      <email>email2@domain2.com</email>
-      <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
-      <created>2009-08-01 10:16:30</created>
-   </block>
-</blocks>
-
-{% endcodeblock %}
-    </div>
-  </div>
+{% apiexample get GET https://api.sendgrid.com/api/blocks.get api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1 %}
+  {% response json %}
+    {
+      "status": "4.0.0",
+      "created": "2012-09-02 00:12:12",
+      "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
+      "email": "example@juno.com"
+    },
+    {
+      "status": "4.0.0",
+      "created": "2012-09-02 00:21:29",
+      "reason": "Connection timed out",
+      "email": "example2@band.la"
+    },
+    {
+      "status": "4.0.0",
+      "created": "2012-09-02 00:25:33",
+      "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
+      "email": "example3@exampledomain.com"
+    }
+  {% endresponse %}
+  {% response xml %}
+    <blocks>
+       <block>
+          <email>email1@domain.com</email>
+          <status>5.1.1</status>
+          <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+          <created>2009-06-10 12:40:30</created>
+       </block>
+       <block>
+          <email>email2@domain2.com</email>
+          <status>5.1.1</status>
+          <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+          <created>2009-08-01 10:16:30</created>
+       </block>
+    </blocks>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr class="docs-separator">
 
@@ -253,8 +231,8 @@ Count
     <div class="tab-pane active" id="count-json">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.count.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+        {% requesturl GET %}https://api.sendgrid.com/api/blocks.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
+      
       {% endrequestblock %}
  
 	<h3>Response: Success</h3>
@@ -274,8 +252,7 @@ Count
     <div class="tab-pane" id="count-xml">
       <h3>Call</h3>
       {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.count.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
+        {% requesturl GET %}https://api.sendgrid.com/api/blocks.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
       {% endrequestblock %}
 
 	<h3>Response: Success</h3>
