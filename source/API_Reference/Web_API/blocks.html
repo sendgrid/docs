@@ -117,11 +117,11 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
 <hr class="docs-separator">
 
-  {% anchor h2 %}
+{% anchor h2 %}
 delete 
 {% endanchor %}Delete an address from the Block list.
 
-  <table class="table table-bordered table-striped"><tbody>
+<table class="table table-bordered table-striped"><tbody>
 <tr>
 <th>Parameter</th>
 
@@ -141,60 +141,40 @@ delete
         <td>Email block address to remove</td>
       </tr>
 </tbody></table>
-{% xmljsontabs delete %}
-<div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
 
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/blocks.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com%}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/blocks.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% endresponse %}
+  {% response xml %}
+<!-- Success -->
 <result>
    <count>4</count>
    @nodes
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- Error -->
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-</div>
-  </div>
+<hr class="docs-separator">
 
 {% anchor h2 %}
-Count  
+count  
 {% endanchor %} 
 
   <table class="table table-bordered table-striped"> 
@@ -225,52 +205,31 @@ Count
   </table> 
  
 
-{% xmljsontabs count %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="count-json">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/blocks.count.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
-      
-      {% endrequestblock %}
- 
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample count GET https://api.sendgrid.com/api/blocks.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "count": "4"
 }
-{% endcodeblock %}
-	<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="count-xml">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl GET %}https://api.sendgrid.com/api/blocks.count.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequesturl %}
-      {% endrequestblock %}
-
-	<h3>Response: Success</h3>
-
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- success -->
 <result>
    <count>4</count>
 </result>
 
-{% endcodeblock %}
-	  <h4>Response: Error</h4> 
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error: reason</message>
 </result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+  {% endresponse %}
+{% endapiexample%}
