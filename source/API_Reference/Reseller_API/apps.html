@@ -44,16 +44,17 @@ List
     <td>Allows you to access apps functionality</td>
   </tr>
 </table>
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com %}
+  {% response json %}
+{
+  "name": "twitter",
+  "title": "Twitter",
+  "description": "This plugin allows you to send an email message to twitter",
+  "activated": "false"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filters>
    <filter>
@@ -64,24 +65,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
    </filter>
    ...
 </filters>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "name": "twitter",
-  "title": "Twitter",
-  "description": "This plugin allows you to send an email message to twitter",
-  "activated": "false"
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -118,35 +104,21 @@ Activate App
     <td>Allows you to access apps functionality</td>
   </tr>
 </table>
-{% xmljsontabs activate %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="activate-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="activate-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -183,35 +155,21 @@ Deactivate App
     <td>Allows you to access apps functionality</td>
   </tr>
 </table>
-{% xmljsontabs deactivate %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="deactivate-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="deactivate-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -219,25 +177,20 @@ Customize App
 {% endanchor %}
 <p>These API calls require that settings are passed using POST.</p>
 
-{% xmljsontabs customize %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="customize-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com %}
+  {% response json %}
+{"message":"success","settings":[{"field_name":"field_value"}]}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter>
    <field_name>field_value</field_name>
    ...
 </filter>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -247,59 +200,37 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-<h4>Return - Empty</h4>
-<p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<filter/>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="customize-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}
-{"message":"success","settings":[{"field_name":"field_value"}]}
-
-{% endcodeblock %}
-<h4>Return - Empty</h4>
-<p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock lang:json %}{
-  "settings": null
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
 
-{% xmljsontabs settings %}
+{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app %}
+  {% response json %}
+{"message":"success","settings":[{"field_name":"field_value"}]}
 
-<div class="tab-content">
-  <div class="tab-pane" id="settings-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <filter>
    <field_name>field_value</field_name>
    ...
 </filter>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -309,35 +240,6 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-<h4>Return - Empty</h4>
-<p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}
-<filter></filter>
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="settings-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}
-{"message":"success","settings":[{"field_name":"field_value"}]}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-<h4>Return - Empty</h4>
-<p>This is returned if that filter has no settings or is not enabled.</p>
-{% codeblock %}
-{"settings":null}
-{% endcodeblock %}
-</div>
-</div>

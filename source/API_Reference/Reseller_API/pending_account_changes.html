@@ -35,16 +35,48 @@ List Pending Changes
 		Optional search parameter.</td>
   </tr>
 </table>
-{% xmljsontabs users %}
+{% apiexample users POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
+  {% response json %}
+[
+  {
+    "username": "user4",
+    "type": "Account Upgrade",
+    "current": "Main Reseller - Silver Package",
+    "update": "Main Reseller - Gold Package",
+    "ip_groups": [
 
-<div class="tab-content">
-  <div class="tab-pane" id="users-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+    ],
+    "ips": [
+      "255.255.255.0",
+      "255.255.254.0"
+    ],
+    "date": "2010-09-30"
+  },
+  {
+    "username": "user5",
+    "type": "Account Downgrade",
+    "current": "Main Reseller - Gold Package",
+    "update": "Main Reseller - Basic Package",
+    "ip_groups": [
+      "Reseller Group"
+    ],
+    "ips": [
+
+    ],
+    "date": "2010-10-07"
+  }
+]
+
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <pending>
@@ -74,9 +106,8 @@ https://api.sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_usern
    </pending>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -86,55 +117,9 @@ https://api.sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="users-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
-  {
-    "username": "user4",
-    "type": "Account Upgrade",
-    "current": "Main Reseller - Silver Package",
-    "update": "Main Reseller - Gold Package",
-    "ip_groups": [
-
-    ],
-    "ips": [
-      "255.255.255.0",
-      "255.255.254.0"
-    ],
-    "date": "2010-09-30"
-  },
-  {
-    "username": "user5",
-    "type": "Account Downgrade",
-    "current": "Main Reseller - Gold Package",
-    "update": "Main Reseller - Basic Package",
-    "ip_groups": [
-      "Reseller Group"
-    ],
-    "ips": [
-
-    ],
-    "date": "2010-10-07"
-  }
-]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -159,24 +144,29 @@ Delete Pending Changes
     <td>Must be an User under your account.</td>
   </tr>
 </table>
-{% xmljsontabs delete %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -186,29 +176,9 @@ https://api.sendgrid.com/apiv2/reseller.pending.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.pending.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -253,24 +223,24 @@ Immediate Upgrade
 		group.</td>
   </tr>
 </table>
-{% xmljsontabs upgrade %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="upgrade-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -280,29 +250,9 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="upgrade-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h4>Return - Success'); ?></h4>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -347,24 +297,29 @@ Immediate Downgrade
 		group.</td>
   </tr>
 </table>
-{% xmljsontabs downgrade %}
+{% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="downgrade-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -374,29 +329,9 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="downgrade-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -427,24 +362,29 @@ Immediate Close
 		into once the customers account is closed.</td>
   </tr>
 </table>
-{% xmljsontabs close %}
+{% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="close-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -454,29 +394,9 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="close-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -521,24 +441,29 @@ Scheduled Upgrade
 		group.</td>
   </tr>
 </table>
-{% xmljsontabs sched %}
+{% apiexample sched POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="sched-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -548,29 +473,9 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="sched-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -615,24 +520,29 @@ Scheduled Downgrade
 		group.</td>
   </tr>
 </table>
-{% xmljsontabs scheddown %}
+{% apiexample scheddown POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="scheddown-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -642,29 +552,9 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="scheddown-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -695,24 +585,29 @@ Scheduled Close
 		into once the customers account is closed.</td>
   </tr>
 </table>
-{% xmljsontabs schedclose %}
+{% apiexample schedclose POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="schedclose-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -722,25 +617,5 @@ https://api.sendgrid.com/apiv2/reseller.account.xml?api_user=your_sendgrid_usern
       ...
    </errors>
 </result>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="schedclose-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.account.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-</div></div>
+  {% endresponse %}
+{% endapiexample %}
