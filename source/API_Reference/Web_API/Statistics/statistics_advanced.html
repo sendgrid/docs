@@ -127,18 +127,8 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
 </table>
 
 
-{% xmljsontabs activate %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.getAdvanced.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-{% codeblock lang:json %}
+{% apiexample activate POST https://api.sendgrid.com/api/stats.getAdvanced api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global %}
+  {% response json %}
 [
   {
     "delivered": 41,
@@ -159,19 +149,9 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
     "open": 3
   }
 ]
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="activate-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.getAdvanced.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global{% endrequestdata %}
-      {% endrequestblock %}
-
-
-	<h3>Response</h3>
-	{% codeblock lang:xml %}
-  <?xml version='1.0' encoding='UTF-8'?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version='1.0' encoding='UTF-8'?>
   <stats>
     <day>
       <delivered>41</delivered>
@@ -192,7 +172,5 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
       <open>3</open>
     </day>
   </stats>
-  {% endcodeblock %}
-
-  </div>
-</div>
+  {% endresponse %}
+{% endapiexample %}

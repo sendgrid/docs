@@ -177,54 +177,27 @@ send
  </table>
 
 
-{% xmljsontabs mail %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="mail-json">
-	        <h3>Call: Send to One Recipient</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/mail.send.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-	<h3>Call: Send to Multiple Recipients</h3>
+{% apiexample mail POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com %}
+  {% response json %}
+<h3>Call: Send to Multiple Recipients</h3>
     {% requestblock %}
       {% requesturl POST %}https://api.sendgrid.com/api/mail.send.json{% endrequesturl %}
       {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
-    {% endrequestblock %}
-
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+    {% endrequestblock %}//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-
-
-  </div>
-  <div class="tab-pane" id="mail-xml">
-      <h3>Call: Send to One Recipient</h3>
-    {% requestblock %}
-      {% requesturl POST %}https://api.sendgrid.com/api/mail.send.xml{% endrequesturl %}
-      {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
-    {% endrequestblock %}
-
-
-		<h3>Call: Send to Multiple Recipients</h3>
-    {% requestblock %}
-      {% requesturl POST %}https://api.sendgrid.com/api/mail.send.xml{% endrequesturl %}
-      {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com{% endrequestdata %}
-    {% endrequestblock %}
-		<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    success
@@ -232,10 +205,8 @@ send
 </result>
 </result>
 
-{% endcodeblock %}
-
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -245,12 +216,9 @@ send
    </errors>
    @nodes
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-
-  </div>
-</div>
 
 <hr/>
 
