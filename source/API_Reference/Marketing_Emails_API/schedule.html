@@ -45,56 +45,37 @@ add
   </table>
 
   
-{% xmljsontabs add %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="add-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/add.json{% endrequesturl %}
-        {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample add POST https://api.sendgrid.com/api/newsletter/schedule/add name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="add-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/add.xml{% endrequesturl %}
-        {% requestdata Data POST %}name=test&at=2012-09-05_18%3A35%3A00&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 <hr/>
 
@@ -119,58 +100,39 @@ get
   </table>
 
   
-{% xmljsontabs get %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/get.json{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample get POST https://api.sendgrid.com/api/newsletter/schedule/get name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "date": "2012-09-05 21:22:02"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/schedule/get.xml{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <scheduled>
    <date>
     2012-09-05 21:22:02
   </date>
 </scheduled>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 
 <hr/>

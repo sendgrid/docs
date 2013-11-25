@@ -69,56 +69,37 @@ add
     </tr>
   </table>
 
-{% xmljsontabs add %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="add-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/add.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample add POST https://api.sendgrid.com/api/newsletter/variations/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="add-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/add.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 <hr/>
 
@@ -179,56 +160,37 @@ Edit an existing Variation.
     </tr>
   </table>
 
-{% xmljsontabs edit %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="edit-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/edit.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample edit POST https://api.sendgrid.com/api/newsletter/variations/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/edit.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 
 <hr/>
@@ -260,51 +222,29 @@ Retrieve the contents of an existing Variation.
     </tr>
   </table>
 
-{% xmljsontabs get %}
+{% apiexample get POST https://api.sendgrid.com/api/newsletter/variations/get api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name %}
+  {% response json %}
+//success
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}
-
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name{% endrequestdata %}
-      {% endrequestblock %}
+  {% endresponse %}
+  {% response xml %}
+<!-- error -->
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 <hr/>
 
@@ -330,58 +270,38 @@ Cancels a current Variation send that is in progress.
     </tr>
   </table>
 
-{% xmljsontabs cancel %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="cancel-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/cancel.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample cancel POST https://api.sendgrid.com/api/newsletter/variations/cancel api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
- <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/cancel.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+  {% endresponse %}
+  {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}
+<!-- error -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 <hr/>
 
@@ -414,58 +334,38 @@ Delete the contents of an existing Variation.
   </table>
 
 
-{% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/newsletter/variations/delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
- <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+  {% endresponse %}
+  {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}
+<!-- error -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 <hr/>
 
@@ -496,58 +396,38 @@ Retrieve a list of all Variations attached to a Marketing Email.
     </tr>
   </table>
 
-{% xmljsontabs list %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="list-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/list.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/variations/list api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
- <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="list-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/list.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+  {% endresponse %}
+  {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}
+<!-- error -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 
 <hr/>
@@ -579,58 +459,38 @@ Select the Variation you would like to send.
     </tr>
   </table>
 
-{% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/pickwinner.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/newsletter/variations/pickwinner api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
- <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/pickwinner.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+  {% endresponse %}
+  {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}
+<!-- error -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
 
 <hr/>
@@ -686,56 +546,36 @@ Schedule a send time and percentage for your variations.
     </tr>
   </table>
 
-  {% xmljsontabs schedule %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="schedule-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/schedule.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+  {% apiexample schedule POST https://api.sendgrid.com/api/newsletter/variations/schedule api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50 %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
- <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="schedule-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/variations/schedule.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}
+  {% endresponse %}
+  {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}
+<!-- error -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
 
