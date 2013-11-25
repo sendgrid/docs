@@ -38,33 +38,9 @@ All
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table>
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<ips>
-   <ip>255.255.255.0</ip>
-   <ip>255.255.254.0</ip>
-   <ip>255.255.253.0</ip>
-   <ip>255.255.252.0</ip>
-</ips>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
+  {% response json %}
+[
   {
     "ip": "255.255.255.250"
   },
@@ -84,17 +60,27 @@ https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&
     "ip": "255.255.255.254"
   }
 ]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ips>
+   <ip>255.255.255.0</ip>
+   <ip>255.255.254.0</ip>
+   <ip>255.255.253.0</ip>
+   <ip>255.255.252.0</ip>
+</ips>
+  {% endresponse %}
+{% endapiexample %}
+
 <hr/>
 
 {% anchor h2 %}
@@ -122,33 +108,9 @@ Free
     <td>Filter your search results.</td>
   </tr>
 </table>
-{% xmljsontabs free %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="free-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<ips>
-   <ip>255.255.255.0</ip>
-   <ip>255.255.254.0</ip>
-   <ip>255.255.253.0</ip>
-   <ip>255.255.252.0</ip>
-</ips>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="free-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
+{% apiexample free POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free %}
+  {% response json %}
+[
   {
     "ip": "255.255.255.250"
   },
@@ -168,17 +130,27 @@ https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&
     "ip": "255.255.255.254"
   }
 ]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ips>
+   <ip>255.255.255.0</ip>
+   <ip>255.255.254.0</ip>
+   <ip>255.255.253.0</ip>
+   <ip>255.255.252.0</ip>
+</ips>
+  {% endresponse %}
+{% endapiexample %}
+
 <hr/>
 
 {% anchor h2 %}
@@ -206,33 +178,9 @@ Taken
     <td>Filter your search results.</td>
   </tr>
 </table>
-{% xmljsontabs taken %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="taken-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<ips>
-   <ip>255.255.255.0</ip>
-   <ip>255.255.254.0</ip>
-   <ip>255.255.253.0</ip>
-   <ip>255.255.252.0</ip>
-</ips>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="taken-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
+{% apiexample taken POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken %}
+  {% response json %}
+[
   {
     "ip": "255.255.255.250"
   },
@@ -252,17 +200,27 @@ https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&
     "ip": "255.255.255.254"
   }
 ]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ips>
+   <ip>255.255.255.0</ip>
+   <ip>255.255.254.0</ip>
+   <ip>255.255.253.0</ip>
+   <ip>255.255.252.0</ip>
+</ips>
+  {% endresponse %}
+{% endapiexample %}
+
 <hr/>
 
 {% anchor h2 %}
@@ -292,33 +250,9 @@ Available
     <td>Filter your search results.</td>
   </tr>
 </table>
-{% xmljsontabs available %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="available-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<ips>
-   <ip>255.255.255.0</ip>
-   <ip>255.255.254.0</ip>
-   <ip>255.255.253.0</ip>
-   <ip>255.255.252.0</ip>
-</ips>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="available-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
+{% apiexample available POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available %}
+  {% response json %}
+[
   {
     "ip": "255.255.255.250"
   },
@@ -338,17 +272,27 @@ https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&
     "ip": "255.255.255.254"
   }
 ]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ips>
+   <ip>255.255.255.0</ip>
+   <ip>255.255.254.0</ip>
+   <ip>255.255.253.0</ip>
+   <ip>255.255.252.0</ip>
+</ips>
+  {% endresponse %}
+{% endapiexample %}
+
 <hr/>
 
 {% anchor h2 %}
@@ -395,16 +339,29 @@ Usage
     <td>Include IPs assigned by SendGrid.</td>
   </tr>
 </table>
-{% xmljsontabs usage %}
+{% apiexample usage POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com %}
+  {% response json %}
+[
+  {
+    "ip": "255.255.253.0",
+    "user": "user4@example.com"
+  },
+  {
+    "ip": "255.255.254.0",
+    "user": "user4@example.com"
+  }
+]
 
-<div class="tab-content">
-  <div class="tab-pane" id="usage-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <ips>
    <entry>
@@ -416,32 +373,5 @@ https://api.sendgrid.com/apiv2/reseller.ip.xml?api_user=your_sendgrid_username&a
       <user>user4@example.com</user>
    </entry>
 </ips>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="usage-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.ip.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}[
-  {
-    "ip": "255.255.253.0",
-    "user": "user4@example.com"
-  },
-  {
-    "ip": "255.255.254.0",
-    "user": "user4@example.com"
-  }
-]
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-</div></div>
+  {% endresponse %}
+{% endapiexample %}

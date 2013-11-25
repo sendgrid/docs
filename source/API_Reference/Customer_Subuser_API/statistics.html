@@ -45,16 +45,37 @@ Retrieve Subuser Statistics
         </tr>
       </tbody></table>
   
-{% xmljsontabs stats %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="stats-xml">
-     <h3>Call</h3>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
+  {% response json %}
+[
+  {
+    "date": "2009-06-20",
+    "requests": 12342,
+    "bounces": 12,
+    "clicks": 10223,
+    "opens": 9992,
+    "spamreports": 5
+  },
+  {
+    "date": "2009-06-21",
+    "requests": 32342,
+    "bounces": 10,
+    "clicks": 14323,
+    "opens": 10995,
+    "spamreports": 7
+  },
+  {
+    "date": "2009-06-22",
+    "requests": 52342,
+    "bounces": 11,
+    "clicks": 19223,
+    "opens": 12992,
+    "spamreports": 2
+  }
+]
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <stats>
    <day>
@@ -82,44 +103,9 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
       <spamreports>2</spamreports>
    </day>
 </stats>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="stats-json">
-     <h3>Call</h3>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:json %}[
-  {
-    "date": "2009-06-20",
-    "requests": 12342,
-    "bounces": 12,
-    "clicks": 10223,
-    "opens": 9992,
-    "spamreports": 5
-  },
-  {
-    "date": "2009-06-21",
-    "requests": 32342,
-    "bounces": 10,
-    "clicks": 14323,
-    "opens": 10995,
-    "spamreports": 7
-  },
-  {
-    "date": "2009-06-22",
-    "requests": 52342,
-    "bounces": 11,
-    "clicks": 19223,
-    "opens": 12992,
-    "spamreports": 2
-  }
-]
-{% endcodeblock %}
-  </div>
-</div>
     {% anchor h2 %}
 Retrieve Aggregates 
 {% endanchor %}
@@ -145,16 +131,18 @@ Retrieve Aggregates
         </tr>
       </tbody></table>
   
-{% xmljsontabs agg %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="agg-xml">
-     <h3>Call</h3>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 %}
+  {% response json %}
+{
+  "requests": "12342",
+  "bounces": "12",
+  "clicks": "10223",
+  "opens": "9992",
+  "spamreports": "5"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <stats>
    <requests>12342</requests>
@@ -163,26 +151,9 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
    <opens>9992</opens>
    <spamreports>5</spamreports>
 </stats>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="agg-json">
-     <h3>Call</h3>
-    <h4>Command</h4>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:json %}{
-  "requests": "12342",
-  "bounces": "12",
-  "clicks": "10223",
-  "opens": "9992",
-  "spamreports": "5"
-}
-{% endcodeblock %}
-  </div>
-</div>
     {% anchor h2 %}
 Category List 
 {% endanchor %}
@@ -209,39 +180,25 @@ Category List
         </tr>
       </tbody></table>
   
-{% xmljsontabs cat %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="cat-xml">
-     <h3>Call</h3>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true %}
+  {% response json %}
+[
+  {
+    "category": "categoryC"
+  }
+]
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
    <category>categoryC</category>
 </categories>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  <div class="tab-pane active" id="cat-json">
-     <h3>Call</h3>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true
-{% endcodeblock %}
-    <h3>Response</h3>
-    {% codeblock lang:json %}[
-  {
-    "category": "categoryC"
-  }
-]
-{% endcodeblock %}
-  </div>
-</div>
     {% anchor h2 %}
 Category Statistics 
 {% endanchor %}

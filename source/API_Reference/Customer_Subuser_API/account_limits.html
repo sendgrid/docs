@@ -34,37 +34,24 @@ Retrieve
       </tr>
     </tbody></table>
   
-{% xmljsontabs limit %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="limit-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample limit POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve %}
+  {% response json %}
+{
   "credit": "0",
   "credit_remain": "2000",
   "last_reset": "2011-02-21"
 }
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="limit-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -72,10 +59,9 @@ https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_usernam
       <error>... error messages ...</error>
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-</div>
   <hr/>
   {% anchor h2 %}
 No Limit 
@@ -103,43 +89,29 @@ No Limit
       </tr>
     </tbody></table>
   
-{% xmljsontabs list %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="list-json">
-	     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample list POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
- <div class="tab-pane" id="list-xml">
-    <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=none
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -149,11 +121,9 @@ https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_usernam
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-
-</div>
   <hr/>
   {% anchor h2 %}
 Recurring Reset 
@@ -211,44 +181,29 @@ Recurring Reset
       </tr>
     </tbody></table>
   
-{% xmljsontabs reset %}
-
-<div class="tab-content">
-
-  <div class="tab-pane" id="reset-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample reset POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="reset-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=recurring&credits=200&period=daily
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <message>
    <result>success@nodes</result>
 </message>
 
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -258,10 +213,9 @@ https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_usernam
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-</div>
 
   <hr/>
   {% anchor h2 %}
@@ -296,51 +250,36 @@ Total Credits
       </tr>
     </tbody></table>
   
-{% xmljsontabs total %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="total-json">
-	     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
-{% endcodeblock %}
-	  <h3>Response: Success</h3>
-	{% codeblock lang:json %}{
+{% apiexample total POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200 %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-	  <h3>Response: Error</h3>
-	{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="total-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=total&credits=200
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock %}    <result><message>error</message><errors>
+<!-- error -->
+<result><message>error</message><errors>
         ...
         <error>... error messages ...</error>
         ...
       </errors></result>
-{% endcodeblock %}
-    </div>
+  {% endresponse %}
+{% endapiexample %}
 
-</div>
   <hr/>
   {% anchor h2 %}
 Increment Credits 
@@ -374,43 +313,29 @@ Increment Credits
       </tr>
     </tbody></table>
   
-{% xmljsontabs increment %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="increment-json">
-	     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20
-{% endcodeblock %}
-	  <h3>Response: Success</h3>
-	{% codeblock lang:json %}{
+{% apiexample increment POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=20 %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-	  <h3>Response: Error</h3>
-	{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-	  </div>
-	  <div class="tab-pane" id="increment-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=increment&credits=200
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -420,10 +345,9 @@ https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_usernam
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-</div>
   <hr/>
   {% anchor h2 %}
 Decrement Credits 
@@ -457,44 +381,30 @@ Decrement Credits
       </tr>
     </tbody></table>
   
-{% xmljsontabs decrement %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="decrement-json">
-	     <h3>Call</h3>
-	{% codeblock %}
-	https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
-	{% endcodeblock %}
-	  <h3>Response: Success</h3>
-	{% codeblock lang:json %}{
+{% apiexample decrement POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200 %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-	  <h3>Response: Error</h3>
-	{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-	  </div>
-  <div class="tab-pane" id="decrement-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=decrement&credits=200
-{% endcodeblock %}
-  <h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
    <result>@nodes</result>
 </result>
 
-{% endcodeblock %}
-  <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -504,8 +414,6 @@ https://api.sendgrid.com/apiv2/customer.limit.xml?api_user=your_sendgrid_usernam
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-
-</div>

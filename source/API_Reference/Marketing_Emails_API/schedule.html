@@ -158,49 +158,33 @@ delete
   </table>
 
   
-{% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
-{% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.json?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST sendgrid.com/api/newsletter/schedule/delete name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-{% codeblock %}
-sendgrid.com/api/newsletter/schedule/delete.xml?name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error: reason</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-    </div>
-  </div>
