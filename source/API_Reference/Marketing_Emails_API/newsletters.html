@@ -71,10 +71,7 @@ add
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+"error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 }
 {% endcodeblock %}
     </div>
@@ -96,15 +93,13 @@ add
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
 
 {% endcodeblock %}
     </div>
   </div>
-
-
 
 <hr/>
 
@@ -178,10 +173,7 @@ edit
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 }
 {% endcodeblock %}
     </div>
@@ -203,9 +195,9 @@ edit
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
 
 {% endcodeblock %}
     </div>
@@ -262,10 +254,7 @@ get
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 }
 {% endcodeblock %}
     </div>
@@ -296,9 +285,9 @@ get
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
 
 {% endcodeblock %}
     </div>
@@ -361,10 +350,7 @@ list
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 }
 {% endcodeblock %}
     </div>
@@ -401,9 +387,9 @@ list
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
 
 {% endcodeblock %}
     </div>
@@ -451,10 +437,7 @@ delete
 {% endcodeblock %}
           <h3>Response: Error</h3>
 {% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 }
 {% endcodeblock %}
     </div>
@@ -476,9 +459,9 @@ delete
           <h3>Response: Error</h3>
 {% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
 
 {% endcodeblock %}
     </div>
