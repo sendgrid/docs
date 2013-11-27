@@ -84,24 +84,39 @@ Example Ruby Usage
 {% endanchor %}
 
 {% codeblock lang:ruby %}
-#!/usr/bin/ruby
-require 'SmtpApiHeader.rb'
+require './SmtpApiHeader.rb'
+require 'mail'
  
+Mail.defaults do
+  delivery_method :smtp, { :address   => 'smtp.sendgrid.net',
+                           :port      => 587,
+                           :domain    => 'sendgrid.com',
+                           :user_name => 'yourSendGridUsername', 
+                           :password  => 'yourSendGridPassword',
+                           :authentication => 'plain',
+                           :enable_starttls_auto => true }
+end
+      
 hdr = SmtpApiHeader.new
  
-receiver = ['kyle','bob','someguy']
-time = '1pm'
-name = 'kyle'
+receiver = ['recipient1@domain.com', 'recipient2@domain.com']
  
 hdr.addTo(receiver)
-hdr.addTo('kyle2')
-hdr.addSubVal('-time-', time)
-hdr.addSubVal('-name-', name)
-hdr.addFilterSetting('subscriptiontrack', 'enable', 1)
-hdr.addFilterSetting('twitter', 'enable', 1) #please check the apps available for your current package at www.sendgrid.com/pricing.html
 hdr.setUniqueArgs({'test' => 1, 'foo' =>2})
-a = hdr.asJSON()
-a = hdr.as_string()
-print a
-print "\n"
+hdr.setCategory('yourCategory')
+
+mail = Mail.deliver do
+  header['X-SMTPAPI'] =  hdr.asJSON()
+  to 'willnotdeliver@domain.com' # When using SMTPAPI's 'to' parameter, this address will not get delivered to
+  from 'yourEmailAddress@domain.com'
+  subject 'Ruby Example using X-SMTPAPI header'
+  text_part do
+    body 'You would put your content here, but I am going to say: Hello world!'
+  end
+  html_part do
+    content_type 'text/html; charset=UTF-8'
+    body '<b>Hello world!</b><br>Glad to have you here!'
+  end
+end
+
 {% endcodeblock %}
