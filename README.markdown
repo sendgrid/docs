@@ -99,8 +99,7 @@ Some info for a breakout block.
 If you are working on API reference docs, you can generate XML and JSON nav tabs and the corresponding example calls and responses like so:
 
 ```
-{% apiexample identifier GET http://some.endpoint.url
-var1=stuff&var2=junk
+{% apiexample identifier GET http://some.endpoint.url var1=stuff&var2=junk %}
   {% response json %}
 { "foo": "bar" }
   {% endresponse %}
