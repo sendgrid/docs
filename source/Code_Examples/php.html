@@ -43,7 +43,7 @@ Mail Usage
 
 {% codeblock lang:php %}
 <?php
-include 'path/to/sendgrid-php/SendGrid_loader.php';
+include 'path/to/sendgrid-php/lib/SendGrid.php';
 ?>
 {% endcodeblock %}
 
@@ -61,7 +61,7 @@ $sendgrid = new SendGrid('username', 'password');
 
 {% codeblock lang:php %}
 <?php
-$mail = new SendGrid\Mail();
+$mail = new SendGrid\Email();
 $mail->
   addTo('foo@bar.com')->
   setFrom('me@bar.com')-> 
