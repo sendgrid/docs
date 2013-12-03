@@ -225,6 +225,18 @@ Retrieve the contents of an existing Variation.
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/variations/get api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name %}
   {% response json %}
 //success
+{
+    "name": "existing_variation_name",
+    "timezone_id": null,
+    "text": null,
+    "is_winner": 0,
+    "nl_type": 2,
+    "html": null,
+    "schedule_status": 3,
+    "type": "html",
+    "id": 2256144,
+    "subject": "variation_subject"
+}
 
 //error
 {
@@ -235,6 +247,19 @@ Retrieve the contents of an existing Variation.
 }
   {% endresponse %}
   {% response xml %}
+<?xml version='1.0' encoding='UTF-8'?><variation>
+  <name>existing_variation_name</name>
+  <timezone_id/>
+  <text/>
+  <is_winner>0</is_winner>
+  <nl_type>2</nl_type>
+  <html/>
+  <schedule_status>3</schedule_status>
+  <type>html</type>
+  <id>2256144</id>
+  <subject>variation_subject</subject>
+</variation>
+
 <!-- error -->
 
 <?xml version="1.0" encoding="ISO-8859-1"?>
