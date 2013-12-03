@@ -51,6 +51,17 @@ Note: The
   "activated": false
 }
   {% endresponse %}
+  {% response xml %}
+<filters>
+  <filter>
+    <name>twitter</name>
+    <title>Twitter</title>
+    <description>This plugin allows you to send an email message to twitter</description>
+    <activated>0</activated>
+  </filter>
+</filters>
+  {% endresponse %}
+
 {% endapiexample %}
 
   <hr/>
@@ -85,6 +96,12 @@ Activate App
 {
   "message": "success"
 }
+  {% endresponse %}
+
+  {% response xml %}
+<result>
+  <message>success</message>
+</result>
   {% endresponse %}
 {% endapiexample %}
 
