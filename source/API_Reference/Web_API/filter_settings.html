@@ -401,7 +401,7 @@ Google Analytics
 </tr>
 </table>
 
-{% apiexample footer POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
+{% apiexample googleanalytics POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
   {% response json %}
 {
   "message": "success"
@@ -453,52 +453,6 @@ Open Tracking
 <td>None</td>
 <td>N/A</td>
 <td>N/A</td>
-</tr>
-</table>
-
-<hr/>
-
-{% anchor h2 %}
-Return Path Seedlist 
-{% endanchor %}
-
-<p><em>API App Name - <code>seedlist</code></em></p>
-
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>seedlist_option</td>
-<td></td>
-<td></td>
-</tr>
-</tr>
-<td>frequency</td>
-<td>The number of times per day the Seedlist should be used</td>
-<td> </td>
-</tr>
-<tr>
-<td>keyword_frequency</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>keywords</td>
-<td> </td>
-<td> </td>
-</tr>
-<tr>
-<td>type</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>list</td>
-<td>The addresses in the Seedlist</td>
-<td>www.example.com/mylist.csv</td>
 </tr>
 </table>
 
