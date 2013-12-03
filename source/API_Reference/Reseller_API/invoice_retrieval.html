@@ -38,18 +38,19 @@ Retrieve Invoice Numbers
 		would like returned.</td>
   </tr>
 </table>
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample get POST https://api.sendgrid.com/api/billing.list api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
+  {% response json %}
+[
+  {
+    "number": "2010010001"
+  },
+  {
+    "number": "2010010002"
+  }
+]
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <invoices>
    <invoice>
@@ -59,28 +60,9 @@ Retrieve Invoice Numbers
       <number>2010010002</number>
    </invoice>
 </invoices>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/billing.list.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response</h3>
-{% codeblock lang:json %}[
-  {
-    "number": "2010010001"
-  },
-  {
-    "number": "2010010002"
-  }
-]
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -114,18 +96,26 @@ Retrieve Invoices
 		would like returned.</td>
   </tr>
 </table>
-{% xmljsontabs invoices %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="invoices-xml">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+{% apiexample invoices POST https://api.sendgrid.com/api/billing.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
+  {% response json %}
+{
+  "number": "2010010001",
+  "package": "Basic Package",
+  "credits": 10000000,
+  "date_invoiced": "2010-01-01 00:00:00",
+  "status": "Paid",
+  "amount": 100,
+  "additional_charges": 0,
+  "overage": 10,
+  "type": "Recurring Bill",
+  "prorated": 0,
+  "start_date": "2009-12-01",
+  "end_date": "2009-12-31",
+  "final_amount": 110
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <invoices>
    <invoice>
@@ -144,31 +134,5 @@ Retrieve Invoices
       <final_amount>110</final_amount>
    </invoice>
 </invoices>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="invoices-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/billing.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "number": "2010010001",
-  "package": "Basic Package",
-  "credits": 10000000,
-  "date_invoiced": "2010-01-01 00:00:00",
-  "status": "Paid",
-  "amount": 100,
-  "additional_charges": 0,
-  "overage": 10,
-  "type": "Recurring Bill",
-  "prorated": 0,
-  "start_date": "2009-12-01",
-  "end_date": "2009-12-31",
-  "final_amount": 110
-}
-{% endcodeblock %}
-</div></div>
+  {% endresponse %}
+{% endapiexample %}

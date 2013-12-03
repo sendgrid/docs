@@ -108,21 +108,9 @@ get
 	</tbody>
 </table>
 
-
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-
-     <h3>Response</h3>
-
-{% codeblock lang:json %}[
+{% apiexample get GET https://api.sendgrid.com/api/invalidemails.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
+  {% response json %}
+[
   {
     "reason": "Known bad domain",
     "created": "2011-06-06 16:11:57",
@@ -134,19 +122,9 @@ get
     "email": "brandon"
   }
 ]
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
-      {% endrequestblock %}
+  {% endresponse %}
 
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% response xml %}
 <invalidemails>
    <invalidemail>
       <reason>Known bad domain</reason>
@@ -159,11 +137,9 @@ get
       <email>brandon</email>
    </invalidemail>
 </invalidemails>
+  {% endresponse %}
 
-{% endcodeblock %}
-
-  </div>
-</div>
+{% endapiexample %}
 
 <hr/>
 
@@ -192,55 +168,34 @@ delete
 </table>
 
 
-{% xmljsontabs delete %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/invalidemails.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
 
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/invalidemails.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-		<h3>Response: Success</h3>
-{% codeblock %}
+<!-- success -->
 <result>
   success
 <result>
-{% endcodeblock %}
 
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
   Email does not exist
-@nodes
 </result>
+  {% endresponse %}
 
-{% endcodeblock %}
-  </div>
-</div>
+{% endapiexample %}

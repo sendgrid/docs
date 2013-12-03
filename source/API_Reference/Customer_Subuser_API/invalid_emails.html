@@ -36,16 +36,9 @@ Retrieve Invalid Emails
       <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
     </tr>
   </tbody></table>
-{% xmljsontabs get %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="get-json">
-	     <h3>Call</h3>
-	{% codeblock %}
-	https://api.sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
-	{% endcodeblock %}
-	<h3>Response</h3>
-	{% codeblock lang:json %}[
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 %}
+  {% response json %}
+[
   {
     "email": "isaac@hotmail.comm",
     "reason": "Mail domain mentioned in email address is unknown",
@@ -62,15 +55,9 @@ Retrieve Invalid Emails
     "created": "2009-06-01 19:41:39"
   }
 ]
-{% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <invalidemails>
    <invalidemail>
@@ -89,10 +76,9 @@ https://api.sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
 </invalidemails>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 {% anchor h2 %}
 Delete Invalid Emails 
@@ -125,46 +111,30 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
       <td>You must specify the invalid emails to remove</td>
     </tr>
   </tbody></table>
-{% xmljsontabs delete %}
-
-<div class="tab-content">
-	  <div class="tab-pane active" id="delete-json">
-	     <h3>Call</h3>
-	{% codeblock %}
-	https://api.sendgrid.com/apiv2/customer.invalidemails.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
-	{% endcodeblock %}
-	<h3>Response: Success</h3>
-	{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com %}
+  {% response json %}
+{
   "message": "success"
 }
-{% endcodeblock %}
-	<h3>Response: Error</h3>
-	{% codeblock lang:json %}{
+
+//error
+{
   "message": "Email does not exist"
 }
-{% endcodeblock %}
-	</div>
-  <div class="tab-pane" id="delete-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.invalidemails.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>Email does not exist</message>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-
-</div>

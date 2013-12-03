@@ -96,13 +96,23 @@ Some info for a breakout block.
 {% endwarning %}
 ```
 
-If you are working on API reference docs, you can generate XML and JSON nav tabs with a liquid tag like so:
+If you are working on API reference docs, you can generate XML and JSON nav tabs and the corresponding example calls and responses like so:
 
 ```
-{% xmljsontabs foo %}
+{% apiexample identifier GET http://some.endpoint.url var1=stuff&var2=junk %}
+  {% response json %}
+{ "foo": "bar" }
+  {% endresponse %}
+
+  {% response xml %}
+<foo>bar</foo>
+  {% endresponse %}
+{% endapiexample %}
 ```
 
-where `foo` is a string unique to the page, e.g. a method name.
+The parameters for the `apiexample` block are: unique identifier, HTTP
+method, the url (excluding .json or .xml extension), and the data
+payload in querystring format.
 
 ## JS and CSS, etc
 Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:

@@ -12,8 +12,6 @@ get
 {% endanchor %}
 <p>Retrieve settings already configured for parsing incoming email.</p>
 
-
-
 <table class="table table-bordered table-striped">
   <tbody>
     <tr>
@@ -37,18 +35,10 @@ get
   </tbody>
 </table>
 
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
- 
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample get GET https://api.sendgrid.com/api/parse.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "parse": [
     {
       "hostname": "www.example.com",
@@ -57,25 +47,18 @@ get
     }
   ]
 }
-{% endcodeblock %}
-<h3>Response: Empty</h3>
-{% codeblock lang:json %}{
+
+//empty
+{
   "parse": [
 
   ]
 }
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <parse>
    <entry>
       <hostname>www.example.com</hostname>
@@ -84,24 +67,17 @@ get
    </entry>
 </parse>
 
-{% endcodeblock %}
-<h3>Response: Empty</h3>
-{% codeblock %}
-<parse></parse>  
-{% endcodeblock %}
-
-  </div>
-</div>
+<!-- empty -->
+<parse></parse> 
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
-
 
 {% anchor h2 %}
 set 
 {% endanchor %}
 <p>Specify the hostname and url for parsing incoming emails.</p>
-
-
 
 <table class="table table-bordered table-striped">
   <tbody>
@@ -144,50 +120,30 @@ set
   </tbody>
 </table>
 
-{% xmljsontabs set %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="set-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.set.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
-      {% endrequestblock %}
-
-<h3>Response: Success </h3>
-{% codeblock lang:json %}{
+{% apiexample set POST https://api.sendgrid.com/api/parse.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="set-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.set.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success<h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error</message>
    <errors>
@@ -195,14 +151,10 @@ set
       <error>... error messages ...</error>
       ...
    </errors>
-   @nodes
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-
-  </div>
-</div>
 
 <hr/>
 {% anchor h2 %}
@@ -239,55 +191,30 @@ Delete Entry
   </tbody>
 </table>
 
-{% xmljsontabs delete %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-
-      {% requestblock %}
-
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.delete.json{% endrequesturl %}
-
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
-
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/parse.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/parse.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error</message>
    <errors>
@@ -295,9 +222,6 @@ Delete Entry
       <error>... error messages ...</error>
       ...
    </errors>
-   @nodes
 </result>
-
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+{% endapiexample %}

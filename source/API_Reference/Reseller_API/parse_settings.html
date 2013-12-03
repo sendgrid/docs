@@ -40,40 +40,9 @@ Get Current Settings
     <td>Allows you to access parse functionality</td>
   </tr>
 </table>
-{% xmljsontabs get %}
-
-<div class="tab-content">
-  <div class="tab-pane" id="get-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<parse>
-   <entry>
-      <hostname>www.example.com</hostname>
-      <url>www.mydomain.com/parse.php</url>
-      <spam_check>1</spam_check>
-   </entry>
-</parse>
-
-{% endcodeblock %}
-<h3>Response: Empty</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<parse/>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com %}
+  {% response json %}
+{
   "parse": [
     {
       "hostname": "www.example.com",
@@ -82,16 +51,30 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
     }
   ]
 }
-{% endcodeblock %}
 <h3>Response: Empty</h3>
-{% codeblock lang:json %}{
+{
   "parse": [
 
   ]
 }
-{% endcodeblock %}
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<parse>
+   <entry>
+      <hostname>www.example.com</hostname>
+      <url>www.mydomain.com/parse.php</url>
+      <spam_check>1</spam_check>
+   </entry>
+</parse>
+<h3>Response: Empty</h3>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<parse/>
+  {% endresponse %}
+{% endapiexample %}
+
 <hr/>
 
 {% anchor h2 %}
@@ -140,24 +123,29 @@ Create New Entry
     <td>Allows you to access parse functionality</td>
   </tr>
 </table>
-{% xmljsontabs create %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="create-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -167,29 +155,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="create-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -238,24 +206,29 @@ Edit Entry
     <td>Allows you to access parse functionality</td>
   </tr>
 </table>
-{% xmljsontabs edit %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="edit-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -265,29 +238,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
       ...
    </errors>
 </result>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="edit-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-  </div>
-</div>
 <hr/>
 
 {% anchor h2 %}
@@ -331,24 +284,29 @@ Delete Entry
     <td>Allows you to access parse functionality</td>
   </tr>
 </table>
-{% xmljsontabs delete %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com %}
+  {% response json %}
+{
+  "message": "success"
+}
 
-<div class="tab-content">
-  <div class="tab-pane" id="delete-xml">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>error</message>
@@ -358,25 +316,5 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
       ...
    </errors>
 </result>
-
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-{% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
-{% endcodeblock %}
-<h3>Response</h3>
-{% codeblock lang:json %}{
-  "message": "success"
-}
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-</div></div>
+  {% endresponse %}
+{% endapiexample %}
