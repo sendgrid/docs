@@ -75,6 +75,8 @@ By default `<title>` tags follow the template `{Page Title} {Site Title}`. Howev
 ### Custom Liquid Tags
 There are some custom plugins (look in the `plugins` folger) that define new liquid blocks for use in pages.
 
+#### Anchors
+
 You can create anchor tags that will have named anchors generated for them automatically with links on hover. 
 The parameter is the wrapping element to use.
 
@@ -83,6 +85,7 @@ The parameter is the wrapping element to use.
 Some Anchor Text
 {% endanchor %}
 ```
+#### Info blocks
 
 Similarly you can create info and warning blocks:
 
@@ -95,6 +98,8 @@ Some info for a breakout block.
 ...And a warning breakout.
 {% endwarning %}
 ```
+
+#### API Examples
 
 If you are working on API reference docs, you can generate XML and JSON nav tabs and the corresponding example calls and responses like so:
 
