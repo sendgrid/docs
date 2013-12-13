@@ -31,7 +31,7 @@ Now, we’ll create a Windows Azure Website:
 1.	Click NEW at the bottom left
 2.	Click Website, then Quick Create
 ![Click]({{root_url}}/images/azure_4.png)
-3.	Set the URL, such as website.azurewebsites.net
+3.	Set the URL, such as `website.azurewebsites.net`
 4.	Click Create Web Site on the bottom right
 
 That’s it! You now have a website running on Azure. Now let’s create something cool.
@@ -74,12 +74,12 @@ While we’re waiting for DNS to be ready, we can prepare your SendGrid Incoming
 ![Click]({{root_url}}/images/azure_8.png)
 5.	Fill in the values you’ve used for your hostname and URL. For example:
 	
-	* Hostname: playlist.example.com
+	* Hostname: `playlist.example.com`
 	
-	* URL: http://website.azurewebsites.net/email
+	* URL: `http://website.azurewebsites.net/email`
 6.	Click “Add host & URL”
 
-Once the DNS has propagated, you’ll be able to receive email to any email address @playlist.example.com. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
+Once the DNS has propagated, you’ll be able to receive email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
 {% anchor h2 %}
 Prepare the Code to Run on Windows Azure
@@ -91,7 +91,7 @@ Now set up your repository within the Windows Azure interface:
 1.	Click the website name from your all items list
 2.	Under quick glance, click "Set up deployment from source control"
 3.	Choose "Local Git repository"
-4.	Copy the Git URL to your clipboard--you will need it later, and it should look similar to https://username@subdomain.scm.azurewebsites.net/playlist.git
+4.	Copy the Git URL to your clipboard--you will need it later, and it should look similar to `https://username@subdomain.scm.azurewebsites.net/playlist.git`
 
 Now, we need to set some environment variables, so we don’t expose these credentials in our code. First, to find these credentials.
 
@@ -109,44 +109,44 @@ With the credentials in hand, it’s time to add them as environment variables w
 1.	Click your web site from the all items list, then click Configure
 2.	Under “app settings” set the following KEY VALUE pairs
 
-	* SENDGRID_USER = username
+	* `SENDGRID_USER = username`
 
-	* SENDGRID_PASS = password
+	* `SENDGRID_PASS = password`
 
-	* DOMAIN = playlist.example.com
+	* `DOMAIN = playlist.example.com`
 
-	* RDIO_KEY = your_key
+	* `RDIO_KEY = your_key`
 
-	* RDIO_SECRET = your_secret
+	* `RDIO_SECRET = your_secret`
 
-	* XHR_POLLING_ONLY = 1
+	* `XHR_POLLING_ONLY = 1`
 3.	Click SAVE at the bottom
 
 With source control and environment variables set, it’s time to download the code that makes this app run. Then we’ll upload that code to our Azure account.
 
 Open up your command line on your local machine and prepare it for code:
 
-1.	Create a local folder to house the code (e.g. mkdir playlist)
+1.	Create a local folder to house the code (e.g. `mkdir playlist`)
 2.	Clone the code into that directory by executing this command:
-git clone git://github.com/theycallmeswift/playlist.sendgriddemos.com.git
-3.	cd playlist.sendgriddemos.com
-4.	git remote add azure git_url
+`git clone git://github.com/theycallmeswift/playlist.sendgriddemos.com.git`
+3.	`cd playlist.sendgriddemos.com`
+4.	`git remote add azure git_url`
 
 	* This is the long URL you saved from Windows Azure after 
 setting up source control.
-5.	git push azure master
+5.	`git push azure master`
 	
 	* This is the command that pushes this code to Azure cloud
 
 One last thing, we need to update the receiving email address:
 
-1.	Open up public/index.html
-2.	Change the email in index.html (line 25) to the email address you want to use. Something like play@playlist.example.com
-3.	git add .
+1.	Open up `public/index.html`
+2.	Change the email in `index.html` (line 25) to the email address you want to use. Something like `play@playlist.example.com`
+3.	`git add .`
 
 	* This adds the modified file for upload
-4.	git commit -m "Updating email address"
-5.	git push azure master
+4.	`git commit -m "Updating email address"`
+5.	`git push azure master`
 	
 	* Again, this pushes it to Azure cloud
 
@@ -184,7 +184,7 @@ In your index.html file add the following code near the closing body tag to add 
 
 ![Mobile Services]({{root_url}}/images/azure_13.png) 
 
-In the js/app.js file, after the “$(“#queue”).append …” line, add the following code:
+In the `js/app.js` file, after the `$("#queue").append…` line, add the following code:
 
 {%codeblock lang:javascript%}
 var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
@@ -196,7 +196,7 @@ Now, to allow for your app to have access to the DB, your URL to the cross origi
 
 ![cors]({{root_url}}/images/azure_14.png) 
 
-Add your changes via .git and push to Azure.
+Add your changes via git and push to Azure.
 
 Now your website, mobile service and SendGrid account are all in harmony on Windows Azure. You could stop here, but to see the real power of Mobile Services, you’ll want to create a native mobile application.
 
@@ -218,9 +218,9 @@ To create a native iPhone app, you’ll need to have XCode installed on a Mac. I
 Now you’ll want to edit the sample app you downloaded from Windows Azure:
 
 1.	Expand the files on your computer and open the project file using XCode.
-2.	Update the credentials and table name in QSTodoService.m with those that you used when you created your mobile service.
+2.	Update the credentials and table name in `QSTodoService.m` with those that you used when you created your mobile service.
 ![Credentials]({{root_url}}/images/azure_17.png) 
-3.	Update the function refreshDataOnSuccess in QSTodoService.m to return all from the queue. Remove the existing code there and replace it with:
+3.	Update the function refreshDataOnSuccess in `QSTodoService.m` to return all from the queue. Remove the existing code there and replace it with:
 
 {%codeblock lang:objc%}
 // Return all song request titles from the table
