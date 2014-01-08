@@ -1,0 +1,53 @@
+---
+layout: page
+weight: 0
+title: Node.js
+navigation:
+  show: true
+---
+
+<p>In this example, we want to parse all emails at <em>address</em>@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse . We will be using Node and the Express framework.</p>
+
+<p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
+
+{% codeblock %}
+Hostname: email.sendgrid.biz
+{% endcodeblock %}
+
+{% codeblock %}
+URL: http://sendgrid.biz/parse
+{% endcodeblock %}
+
+To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code::
+{% codeblock lang:javascript %}
+
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app)
+
+/****** CONFIGURE EXPRESS ******/
+app.configure(function(){
+        app.set('port', process.env.PORT || 3000);
+        app.set('views', __dirname + '/views');
+        app.use(express.logger('dev'));
+        app.use(express.bodyParser());
+        app.use(express.methodOverride());
+        app.use(app.router);
+        app.use( express.static(__dirname + '/public') );
+});
+
+app.post('/parse', function (req, res) {
+        var from = req.body.from;
+	   var text = req.body.text;
+	   var subject = req.body.subject
+         var num_attachments = req.body.attachments
+}
+
+
+server.listen(app.get('port'), function(){
+  console.log("Express server listening on port %d in %s mode", app.get('port'), app.settings.env);
+});
+
+
+{% endcodeblock %}
+
