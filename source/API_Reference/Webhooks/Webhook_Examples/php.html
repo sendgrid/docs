@@ -1,0 +1,38 @@
+---
+layout: page
+weight: 0
+title: PHP
+navigation:
+  show: true
+---
+
+<p>In this example, we want to parse all emails at <em>address</em>@email.sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.</p>
+
+<p>Given this scenario, the following are the parameters you would set at the <a href="http://sendgrid.com/developer/reply">Parse API settings page</a>:</p>
+
+{% codeblock %}
+Hostname: email.sendgrid.biz
+{% endcodeblock %}
+
+{% codeblock %}
+URL: http://sendgrid.com/email.php
+{% endcodeblock %}
+
+To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at http://sendgrid.com/email.php:
+{% codeblock lang:php %}
+<?php
+$to = $_POST["to"];
+$from = $_POST["from"];
+$body = $_POST["text"];
+$subject = $_POST["subject"];
+$num_attachments = $_POST["attachments"];
+
+if($num_attachments){
+   $uploadName = "attachment1";
+   for($x =0; $x<$num_attachments; $x++) {
+      move_uploaded_file ($_FILES[$uploadName] ['tmp_name'],"./uploads/{$_FILES[$uploadName] ['name']}");
+      $uploadName++;
+   }
+}
+?>
+{% endcodeblock %}
