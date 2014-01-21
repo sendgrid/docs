@@ -131,28 +131,42 @@ get
 delete 
 {% endanchor %}
 
-<p>Delete an address from the Spam Reports list.</p>
+<p>Delete an address from the Spam Reports list. Please note that this call requires one of the following arguments: email, start_date/end_date, or delete_all.</p>
 
-<table class="table table-bordered table-striped"><tbody>
-<tr>
-<th>Parameter</th>
-
-        <th>Required</th>
-
-        <th>Requirements</th>
-
-        <th>Description</th>
-      </tr>
-<tr>
-<td>email</td>
-
-        <td>Yes</td>
-
-        <td>Must be a valid user account email</td>
-
-        <td>Email spam reports address to remove</td>
-      </tr>
-</tbody></table>
+<table class="table table-bordered table-striped">
+<tbody>
+  <tr>
+    <th>Parameter</th>
+    <th>Required</th>
+    <th>Requirements</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>No</td>
+    <td>Must be a valid email on the list.</td>
+    <td>Email address to remove.</td>
+  </tr>
+  <tr> 
+    <td>start_date</td> 
+    <td>No</td> 
+    <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td> 
+    <td>Date to start deleting from.</td> 
+  </tr> 
+  <tr> 
+    <td>end_date</td> 
+    <td>No</td> 
+    <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td> 
+    <td>Date to end deleting from.</td> 
+  </tr> 
+  <tr>
+    <td>delete_all</td>
+    <td>No</td>
+    <td>1</td>
+    <td>Required to fully wipe the list. Use with caution.</td>
+  </tr>
+</tbody>
+</table>
 
 {% apiexample delete POST https://api.sendgrid.com/api/spamreports.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com %}
   {% response json %}
