@@ -21,6 +21,11 @@ If you would like to customize your links, create a CNAME that points to sendgri
 {% anchor h2 %}
 API Settings 
 {% endanchor %}
+
+<p>
+	Subscription tracking requires either <code>text/html</code> and <code>text/plain</code> OR <code>replace</code>. If <code>replace</code> is included, <code>text/html</code> and <code>text/plain</code> will not be honored.
+</p>
+
 <table class="table table-bordered table-striped"><tbody>
 <tr>
 <th>App Name</th>
@@ -37,25 +42,19 @@ API Settings
 <tr>
 <td></td>
 <td>text/html</td>
-<td>YES</td>
+<td>YES*</td>
 <td>String for the HTML e-mail body</td>
 </tr>
 <tr>
 <td></td>
 <td>text/plain</td>
-<td>YES</td>
+<td>YES*</td>
 <td>String for the plain text e-mail body</td>
 </tr>
 <tr>
 <td></td>
-<td>landing</td>
-<td>YES</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
 <td>replace</td>
-<td>No</td>
+<td>YES*</td>
 <td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link, e.g. [unsubscribe_tag]</td>
 </tr>
 </tbody></table>
