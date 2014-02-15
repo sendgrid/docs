@@ -103,6 +103,6 @@ As a best practice, you should not store your credentials directly in
 the source but should instead store them in configuration files or
 environment variables. See this tutorial on <a
   href='http://railsapps.github.io/rails-environment-variables.html'>environment
-  variables in rails</a>.
+  variables in Rails</a>.
 {% endwarning %}
 
