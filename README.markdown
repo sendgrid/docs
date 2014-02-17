@@ -44,15 +44,15 @@ You can write pages in markdown, HTML, or HAML. They all get converted to HTML w
 Pages have a block of YAML at the top that sets a few options. They are pretty self explanatory; here's an example
 
 ```
-	---
-	layout: page
-	weight: 0
-	title: Docs Home
-	icon: icon-home
-	showTitle: false
-	navigation:
-	  show: true
-	---
+---
+layout: page
+weight: 0
+title: Docs Home
+icon: icon-home
+showTitle: false
+navigation:
+  show: true
+---
 ```
 
 Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
@@ -61,13 +61,13 @@ Weights are same as the folder weights - the higher numbers move higher up the t
 Various fields pertinent to SEO can be controlled through the YAML frontmatter. Here's an example:
 
 ```
-	---
-	seo:
-	  title: Really Great Documentation - SendGrid Documentation | SendGrid
-	  override: true
-	  description: This is some really great documentation! I hope you like it!
-	  canonical: http://sendgrid.com/docs/really-great-docs
-	---
+---
+seo:
+  title: Really Great Documentation - SendGrid Documentation | SendGrid
+  override: true
+  description: This is some really great documentation! I hope you like it!
+  canonical: http://sendgrid.com/docs/really-great-docs
+---
 ```
 
 By default `<title>` tags follow the template `{Page Title} {Site Title}`. However the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title tage `{seo["title"]}`. `description` and `canonical` change their respective tags.
