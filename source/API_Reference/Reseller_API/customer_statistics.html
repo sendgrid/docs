@@ -58,9 +58,11 @@ Retrieve Customer Statistics
     <td>Allows you to access stats functionality</td>
   </tr>
 </table>
-<p>To retrive statistics for the Marketing Emails application you can use <a href="#-Category-Statistics"> Category Statistics </a> with 
+<p>To retrive statistics for the Marketing Emails application you can use 
+  <a href="#-Category-Statistics"> Category Statistics </a> with 
   <em>category=Newsletter</em>
-  parameter. </p>  
+  parameter. 
+</p>  
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
   {% response json %}
 [
