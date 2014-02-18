@@ -560,7 +560,8 @@ access</td>
 
 //error
 {
-  "message": "User not found"
+  "code": 400,
+  "message": "User does not exist"
 }
   {% endresponse %}
   {% response xml %}
@@ -573,9 +574,10 @@ access</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -617,7 +619,8 @@ website access</td>
 
 //error
 {
-  "message": "User not found"
+  "code": 400,
+  "message": "User does not exist"
 }
   {% endresponse %}
   {% response xml %}
@@ -630,9 +633,10 @@ website access</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -713,13 +717,8 @@ to update profile information</td>
       <td>No</td>
       <td>Website of customer</td>
     </tr>
-    <tr>
-      <td>company</td>
-      <td>No</td>
-      <td>Company of customer</td>
-    </tr>
   </tbody></table>
-{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam %}
+{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=newLastName %}
   {% response json %}
 {
   "message": "success"
@@ -727,10 +726,10 @@ to update profile information</td>
 
 //error
 {
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error": {
+    "code": 400,
+    "message": "... error message ..."
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -743,14 +742,10 @@ to update profile information</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
+<error>
+  <code>400</code>
+  <message>... error message ...</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -796,7 +791,7 @@ password</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table>
-{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor %}
+{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
   "message": "success"
@@ -804,10 +799,10 @@ password</td>
 
 //error
 {
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error": {
+    "code": 400,
+    "message": "Missing ... parameter"
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -820,14 +815,10 @@ password</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
+<error>
+  <code>400</code>
+  <message>Missing ... parameter</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
