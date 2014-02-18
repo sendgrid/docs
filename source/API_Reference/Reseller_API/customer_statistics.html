@@ -58,6 +58,11 @@ Retrieve Customer Statistics
     <td>Allows you to access stats functionality</td>
   </tr>
 </table>
+<p>To retrive statistics for the Marketing Emails application you can use 
+  <a href="#-Category-Statistics"> Category Statistics </a> with 
+  <em>category=Newsletter</em>
+  parameter. 
+</p>  
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
   {% response json %}
 [
@@ -137,7 +142,7 @@ Retrieve Aggregates
     <td>Yes</td>
     <td>Customer must be registered under your
 		account</td>
-    <td>The subuser we are retrieving statistics from</td>
+    <td>The customer we are retrieving statistics from</td>
   </tr>
   <tr>
     <td>aggregate</td>
@@ -155,7 +160,7 @@ Retrieve Aggregates
     <td>Allows you to access stats functionality</td>
   </tr>
 </table>
-{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate= %}
+{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
   {% response json %}
 {
   "requests": 12342,
@@ -203,8 +208,8 @@ Category List
   <tr>
     <td>user</td>
     <td>Yes</td>
-    <td>Subuser must be registered under your account</td>
-    <td>The subuser we are retrieving category
+    <td>Customer must be registered under your account</td>
+    <td>The customer we are retrieving category
 		statistics from</td>
   </tr>
   <tr>
@@ -216,11 +221,14 @@ Category List
     <td>Allows you to access stats functionality</td>
   </tr>
 </table>
-{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru %}
+{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
   {% response json %}
-{
-  "category": "categoryC"
-}
+[
+  {"category":"categoryA"},
+  {"category":"categoryB"},
+  {"category":"categoryC"}
+]
+
   {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
