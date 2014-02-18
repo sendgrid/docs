@@ -12,7 +12,7 @@ Retrieve Customer Statistics
   <em>either</em>
   the days parameter
   <em>or</em>
-  the start_date and end_date parameter.</p>
+  the <code>start_date</code> and <code>end_date</code> parameter.</p>
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -60,7 +60,7 @@ Retrieve Customer Statistics
 </table>
 <p>To retrive statistics for the Marketing Emails application you can use 
   <a href="#-Category-Statistics"> Category Statistics </a> with 
-  <em>category=Newsletter</em>
+  <code>category=Newsletter</code>
   parameter. 
 </p>  
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
