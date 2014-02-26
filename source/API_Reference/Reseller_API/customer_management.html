@@ -278,12 +278,6 @@ under you</td>
 registered with</td>
     </tr>
     <tr>
-      <td>active</td>
-      <td>No</td>
-      <td>Search filter, whether or not the customer is
-currently active</td>
-    </tr>
-    <tr>
       <td>first_name</td>
       <td>No</td>
       <td>Search filter, first name of customer</td>
@@ -327,11 +321,6 @@ currently active</td>
       <td>website</td>
       <td>No</td>
       <td>Search filter, website of customer</td>
-    </tr>
-    <tr>
-      <td>company</td>
-      <td>No</td>
-      <td>Search filter, company of customer</td>
     </tr>
     <tr>
       <td>method</td>
@@ -542,7 +531,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to grant website
 access</td>
     </tr>
@@ -601,7 +590,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to disallow
 website access</td>
     </tr>
@@ -863,8 +852,7 @@ website. This update takes effect immediately</td>
     <tr>
       <td>username</td>
       <td>Yes</td>
-      <td>Must be in email format, not more than 100
-characters, cannot be already taken and cannot contain SendGrid.com in
+      <td>No more than 64 characters, cannot be already taken and cannot contain SendGrid.com in
 the domain name</td>
       <td>This is the new username we will be
 authenticating with our SMTP servers
