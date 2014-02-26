@@ -427,7 +427,7 @@ Enable a customer so they may start sending out emails again. This call will not
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to enabling</td>
     </tr>
     <tr>
@@ -447,7 +447,10 @@ Enable a customer so they may start sending out emails again. This call will not
 
 //error
 {
-  "message": "User not found"
+  "error": {
+    "code": 400,
+    "message": "User does not exist",
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -460,9 +463,10 @@ Enable a customer so they may start sending out emails again. This call will not
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -482,7 +486,7 @@ This prevents them from sending out emails with SendGrid.
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to disabling</td>
     </tr>
     <tr>
