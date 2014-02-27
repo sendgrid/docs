@@ -56,9 +56,15 @@ module Jekyll
       items.each do |item|
         page_text = extract_text(site,item)
 
+        begin
+          keywords = item.data['seo']['keywords'].join(" ")
+        rescue
+          keywords = ""
+        end
+
         @index.document(item.url).add({ 
           :text => page_text,
-          :keywords => item.data['keywords'] || "",
+          :keywords => keywords,
           :title => item.data['title'] || item.name 
         })
         puts 'Indexed ' << item.url
