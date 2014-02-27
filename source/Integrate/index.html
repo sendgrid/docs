@@ -12,19 +12,39 @@ navigation:
 Send Email From Your Application {% endanchor %}
 
 <p>SendGrid provides two ways to send email: through our SMTP relay or 
-through our <a href="{{root_url}}/API_Reference/Web_API/index.html">web API</a>.</p>
+through our <a href="{{root_url}}/API_Reference/Web_API/index.html">Web API</a>.</p>
 
 {% info %}
-We recommend using SMTP in most cases based on the large number of libraries 
-and documentation available for that protocol.
+<p><strong>SendGrid provides our users with <a href="{{root_url}}/Integrate/libraries.html">client libraries</a> in many langauges, this is the preferred way to integrate with SendGrid.</strong></p>
+
+<p>If you choose to use SendGrid without a client library, the Web API is reccomended in most cases as it is faster,  provides some benefit with encoding, and tends to be easier to use. SMTP provides many features by default, but is harder to setup.</p>
 {% endinfo %}
+
+{% anchor h3 %}
+Web API
+{% endanchor %}
+
+<p>The <a href="{{root_url}}/API_Reference/Web_API/index.html">Web API</a> has some advantages over SMTP:</p>
+
+<ul>
+  <li>If your ISP blocks all outbound mail ports and your 
+  only option is HTTP.</li>
+
+  <li>If there is high latency between your site and ours, the Web API
+  might be quicker since it does not require as many messages between the client
+  and server.</li>
+
+  <li>If you do not control the application environment and cannot install and configure an SMTP library.</li>
+
+  <li>If you build a library to send email, developing 
+  against a web API provides quicker development.</li>
+</ul>
 
 {% anchor h3 %}
 SMTP
 {% endanchor %}
 
-<p>SMTP is the fastest way to get started since it requires only minimal
-changes: 
+<p>If you are integrating SendGrid with an existing application, setting up the application to use our SMTP relay is easiest, as it only requires modifying SMTP configuration.
 
 <ul>
   <li>Change your SMTP username and password to your SendGrid credentials</li>
@@ -50,25 +70,6 @@ more information.</p>
 Customers should utilize SMTPAPI if this is an option. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 recipients for each message.
 {% endinfo %}
 
-{% anchor h3 %}
-Web API
-{% endanchor %}
-
-<p>In some cases the <a href="{{root_url}}/API_Reference/Web_API/index.html">web API</a> has advantages over SMTP: </p>
-
-<ul>
-  <li>If your ISP blocks all outbound mail ports and your 
-  only option is HTTP.</li>
-
-  <li>If there is high latency between your site and ours, the web API
-  might be quicker since it does not require as many messages between the client
-  and server.</li>
-
-  <li>If you do not control the application environment and cannot install and configure an SMTP library.</li>
-
-  <li>If you build a library to send email, developing 
-  against a web API provides quicker development.</li>
-</ul>
 
 {% anchor h2 %}
 Receive Email From Your Application 
