@@ -108,13 +108,15 @@ zip code.</td>
       <td>package</td>
       <td>Yes</td>
       <td>No more than 255 characters</td>
-      <td>Name of the Package to assign to customer</td>
+      <td>Name of the Package to assign to customer. You can view the available package
+        <a href="/API_Reference/Reseller_API/view_available_packages.html">here</a>.
+      </td>
     </tr>
     <tr>
       <td>whitelabel</td>
       <td>Yes</td>
       <td>No more than 255 characters</td>
-      <td>The domain name for whitelabel</td>
+      <td>The domain name for whitelabel. The default one is <em>sendgrid.me</em></td>
     </tr>
     <tr>
       <td>ip_group[]</td>
@@ -152,7 +154,7 @@ is different from today (or when you execute this API call), you can
 specify the first billing anniversary date</td>
     </tr>
   </tbody></table>
-{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=true&company=company&whitelabel=sendgrid.me %}
   {% response json %}
 {
   "message": "success"
@@ -194,9 +196,7 @@ Delete a Customer
 {% endanchor %}
 Remove a customer from your account. This is
 <strong>not</strong>
-the same as disabling a customer on our system. However, the removed
-user will still be stored within the system so that you cannot re-register a new user with this new username.
-
+the same as disabling a customer on our system.
 This is the same thing as closing out a customers account at the end of their billing cycle.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -221,10 +221,10 @@ account.</td>
 
 //error
 {
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error": {
+    "code": 400,
+    "message": "User does not exist",
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -237,20 +237,19 @@ account.</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
 <hr/>
 
-<p>Retrieve Customers</p>
+{% anchor h2 %}
+Retrieve Customers
+{% endanchor %}
+
 Obtain a complete list of all customers.
 <table class="table table-bordered table-striped"><tbody>
     <tr>
@@ -277,12 +276,6 @@ under you</td>
       <td>No</td>
       <td>Search filter, email address customer was
 registered with</td>
-    </tr>
-    <tr>
-      <td>active</td>
-      <td>No</td>
-      <td>Search filter, whether or not the customer is
-currently active</td>
     </tr>
     <tr>
       <td>first_name</td>
@@ -330,11 +323,6 @@ currently active</td>
       <td>Search filter, website of customer</td>
     </tr>
     <tr>
-      <td>company</td>
-      <td>No</td>
-      <td>Search filter, company of customer</td>
-    </tr>
-    <tr>
       <td>method</td>
       <td>Yes</td>
       <td>Must be set to
@@ -342,7 +330,7 @@ currently active</td>
       </td>
     </tr>
   </tbody></table>
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=ge %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get %}
   {% response json %}
 [
   {
@@ -428,7 +416,7 @@ Enable a customer so they may start sending out emails again. This call will not
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to enabling</td>
     </tr>
     <tr>
@@ -448,7 +436,10 @@ Enable a customer so they may start sending out emails again. This call will not
 
 //error
 {
-  "message": "User not found"
+  "error": {
+    "code": 400,
+    "message": "User does not exist",
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -461,9 +452,10 @@ Enable a customer so they may start sending out emails again. This call will not
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -481,9 +473,9 @@ This prevents them from sending out emails with SendGrid.
       <th>Description</th>
     </tr>
     <tr>
-      <td>username</td>
+      <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to disabling</td>
     </tr>
     <tr>
@@ -503,22 +495,23 @@ This prevents them from sending out emails with SendGrid.
 
 //error
 {
-  "message": "User not found"
+  "error": {
+    "code": 400,
+    "message": "User does not exist",
+  }
 }
   {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
-   <message>success</message>
+  <message>success</message>
 </result>
-
 <!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -538,7 +531,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to grant website
 access</td>
     </tr>
@@ -560,7 +553,8 @@ access</td>
 
 //error
 {
-  "message": "User not found"
+  "code": 400,
+  "message": "User does not exist"
 }
   {% endresponse %}
   {% response xml %}
@@ -573,9 +567,10 @@ access</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -595,7 +590,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
     <tr>
       <td>user</td>
       <td>Yes</td>
-      <td>Must be in email format</td>
+      <td>Must be a customer registered under your account.</td>
       <td>The customer you are planning to disallow
 website access</td>
     </tr>
@@ -617,7 +612,8 @@ website access</td>
 
 //error
 {
-  "message": "User not found"
+  "code": 400,
+  "message": "User does not exist"
 }
   {% endresponse %}
   {% response xml %}
@@ -630,9 +626,10 @@ website access</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>User not found</message>
-</result>
+<error>
+  <code>400</code>
+  <message>User does not exist</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -713,13 +710,8 @@ to update profile information</td>
       <td>No</td>
       <td>Website of customer</td>
     </tr>
-    <tr>
-      <td>company</td>
-      <td>No</td>
-      <td>Company of customer</td>
-    </tr>
   </tbody></table>
-{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam %}
+{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=newLastName %}
   {% response json %}
 {
   "message": "success"
@@ -727,10 +719,10 @@ to update profile information</td>
 
 //error
 {
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error": {
+    "code": 400,
+    "message": "... error message ..."
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -743,14 +735,10 @@ to update profile information</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
+<error>
+  <code>400</code>
+  <message>... error message ...</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -796,7 +784,7 @@ password</td>
       <td>Allows you to access password functionality</td>
     </tr>
   </tbody></table>
-{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor %}
+{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
   "message": "success"
@@ -804,10 +792,10 @@ password</td>
 
 //error
 {
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
+  "error": {
+    "code": 400,
+    "message": "Missing ... parameter"
+  }
 }
   {% endresponse %}
   {% response xml %}
@@ -820,14 +808,10 @@ password</td>
 <!-- error -->
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
+<error>
+  <code>400</code>
+  <message>Missing ... parameter</message>
+</error>
   {% endresponse %}
 {% endapiexample %}
 
@@ -868,8 +852,7 @@ website. This update takes effect immediately</td>
     <tr>
       <td>username</td>
       <td>Yes</td>
-      <td>Must be in email format, not more than 100
-characters, cannot be already taken and cannot contain SendGrid.com in
+      <td>No more than 64 characters, cannot be already taken and cannot contain SendGrid.com in
 the domain name</td>
       <td>This is the new username we will be
 authenticating with our SMTP servers
