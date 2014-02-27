@@ -10,175 +10,155 @@ navigation:
 We reccomend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation.
 {% endgithub %}
 
-{% codeblock lang:php %}
-$sendgrid = new SendGrid('username', 'password');
-$email    = new SendGrid\Email();
-$email->addTo('foo@bar.com')->
-       addTo('dude@bar.com')->
-       setFrom('me@bar.com')->
-       setSubject('Subject goes here')->
-       setText('Hello World!')->
-       setHtml('<strong>Hello World!</strong>');
-
-$sendgrid->web->send($email);
-{% endcodeblock %}
-
-{% anchor h3 %}
-Installation
+{% anchor h2 %}
+Using PHP with cURL
 {% endanchor %}
 
-<p>Detailed instructions for installing are available at the <a href="https://github.com/sendgrid/sendgrid-php#installation">sendgrid-php installation instructions</a>.</p>
+If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API.
 
-{% codeblock lang:php %}
-require 'vendor/autoload.php';
-SendGrid::register_autoloader();
-{% endcodeblock %}
-
-{% anchor h3 %}
-Usage
-{% endanchor %}
-
-<p>For the most up to date usage examples, visit the <a href="https://github.com/sendgrid/sendgrid-php#usage">sendgrid-php library usage instructions</a>.</p>
-
-<p>Email is the object that will help you easily prepare your message to be sent.</p>
-
-<p>To get started create an Email object and add your message details.</p>
-
-{% codeblock lang:php %}
-$mail = new SendGrid\Email();
-$mail->addTo('foo@bar.com')->
-       setFrom('me@bar.com')->
-       setSubject('Subject goes here')->
-       setText('Hello World!')->
-       setHtml('<strong>Hello World!</strong>');
-{% endcodeblock %}
-
-<p>You can pass in as many or as few optionalParams as you want, as the email object has methods for manipulating all of the data.</p>
-
-{% anchor h3 %}
-Categories
-{% endanchor %}
-<p>Categories are used to group email statistics provided by SendGrid. To use a category, simply set the category name.</p>
-{% info %}
-There is a maximum of 10 categories per email.
-{% endinfo %}
 {% codeblock lang:php %}
 <?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('foo@bar.com')->
-  ...
-  addCategory("Category 1")->
-  addCategory("Category 2");
+
+$url = 'https://api.sendgrid.com/';
+$user = 'USERNAME';
+$pass = 'PASSWORD'; 
+ 
+$params = array(
+    'api_user'  => $user,
+    'api_key'   => $pass,
+    'to'        => 'example3@sendgrid.com',
+    'subject'   => 'testing from curl',
+    'html'      => 'testing body',
+    'text'      => 'testing body',
+    'from'      => 'example@sendgrid.com',
+  );
+ 
+ 
+$request =  $url.'api/mail.send.json';
+ 
+// Generate curl request
+$session = curl_init($request);
+// Tell curl to use HTTP POST
+curl_setopt ($session, CURLOPT_POST, true);
+// Tell curl that this is the body of the POST
+curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+// Tell curl not to return headers, but do return the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+ 
+// obtain response
+$response = curl_exec($session);
+curl_close($session);
+ 
+// print everything out
+print_r($response);
+
 ?>
 {% endcodeblock %}
 
-{% anchor h3 %}
-Attachments
-{% endanchor %}
-<p>Attachments are currently file based only, with future plans for an in memory implementation as well.
+<h2>An Email Sent Using the SMTPAPI Header</h2>
+
+<p>This example takes the previous example a step further by adding our SMTPAPI header to set a category and send out to multiple recipients.  The category is called test_category, and the email will go out to both example1@sendgrid.com and example2@sendgrid.com.  The normal to address, example3@sendgrid.com, will not receive an email.
 </p>
-{% info %}
-Total file attachments are limited to ~20 MB (the total message size can not exceed 20 MB).
-{% endinfo %}
 
 {% codeblock lang:php %}
 <?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('foo@bar.com')->
-  ...
-  addAttachment("../path/to/file.txt");
+
+$url = 'https://api.sendgrid.com/';
+$user = 'USERNAME';
+$pass = 'PASSWORD';
+ 
+$json_string = array(
+ 
+  'to' => array(
+    'example1@sendgrid.com', 'example2@sendgrid.com'
+  ),
+  'category' => 'test_category'
+);
+ 
+ 
+$params = array(
+    'api_user'  => $user,
+    'api_key'   => $pass,
+    'x-smtpapi' => json_encode($json_string),
+    'to'        => 'example3@sendgrid.com',
+    'subject'   => 'testing from curl',
+    'html'      => 'testing body',
+    'text'      => 'testing body',
+    'from'      => 'example@sendgrid.com',
+  );
+ 
+ 
+$request =  $url.'api/mail.send.json';
+ 
+// Generate curl request
+$session = curl_init($request);
+// Tell curl to use HTTP POST
+curl_setopt ($session, CURLOPT_POST, true);
+// Tell curl that this is the body of the POST
+curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+// Tell curl not to return headers, but do return the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+ 
+// obtain response
+$response = curl_exec($session);
+curl_close($session);
+ 
+// print everything out
+print_r($response);
+
 ?>
 {% endcodeblock %}
 
-{% warning %}
-setBcc is not supported with attachments. This is by design. Instead use multiple addTos. Each user will receive their own personalized email with that setup, and receive the attachment correctly.</p>
-{% endwarning %}
+<h2>An Email Sent Including a File Attachment</h2>
 
-{% anchor h3 %}
-Substitutions
-{% endanchor %}
-<p>Substitutions can be used to customize multi-recipient emails, and tailor them for the user.</p>
+<p>This example adds the additional attachment parameter to attach a file called myfile.  This example assumes the file is in the same directory as your code otherwise you need to specify the full path of the file in the $filePath variable.</p>
 
 {% codeblock lang:php %}
 <?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('john@somewhere.com')->
-  addTo("harry@somewhere.com")->
-  addTo("Bob@somewhere.com")->
-...
-setHtml("Hey %name%, we've seen that you've been gone for a while")->
-  addSubstitution("%name%", array("John", "Harry", "Bob"));
-?>
-{% endcodeblock %}
 
-{% anchor h3 %}
-Sections
-{% endanchor %}
-<p>Sections can be used to further customize messages for the end users. A section is only useful in conjunction with a substition value.</p>
+$url = 'https://api.sendgrid.com/';
+$user = 'USERNAME';
+$pass = 'PASSWORD';
 
-{% codeblock lang:php %}
-<?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('john@somewhere.com')->
-  addTo("harry@somewhere.com")->
-  addTo("Bob@somewhere.com")->
-  ...
-  setHtml("Hey %name%, you work at %place%")->
-  addSubstitution("%name%", array("John", "Harry", "Bob"))->
-  addSubstitution("%place%", array("%office%", "%office%", "%home%"))->
-  addSection("%office%", "an office")->
-  addSection("%home%", "your house");
-?>
-{% endcodeblock %}
+$fileName = 'myfile';
+$filePath = dirname(__FILE__);
 
-{% anchor h3 %}
-Unique Arguments
-{% endanchor %}
-<p>Unique Arguments can be used for tracking purposes and developing data for unique statistical analysis.</p>
+$params = array(
+    'api_user'  => $user,
+    'api_key'   => $pass,
+    'to'        => 'example@sendgrid.com',
+    'subject'   => 'test of file sends',
+    'html'      => '<p> the HTML </p>',
+    'text'      => 'the plain text',
+    'from'      => 'example@sendgrid.com',
+    'files['.$fileName.']' => '@'.$filePath.'/'.$fileName
+  );
 
-{% codeblock lang:php %}
-<?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('foo@bar.com')->
-  ...
-  addUniqueArgument("Customer", "Someone")->
-  addUniqueArgument("location", "Somewhere");
-?>
-{% endcodeblock %}
+print_r($params);
 
-{% anchor h3 %}
-Using Filter Settings
-{% endanchor %}
-<p>Filter Settings are used to enable and disable apps, and to pass parameters to those apps.</p>
+$request =  $url.'api/mail.send.json';
 
-{% codeblock lang:php %}
-<?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('foo@bar.com')->
-  ...
-  addFilterSetting("gravatar", "enable", 1)->
-  addFilterSetting("footer", "enable", 1)->
-  addFilterSetting("footer", "text/plain", "Here is a plain text footer")->
-  addFilterSetting("footer", "text/html", "Here is an HTML footer");
-?>
-{% endcodeblock %}
-{% anchor h3 %}
-Headers
-{% endanchor %}
-<p>Headers can be used to add existing sendgrid functionality (such as for categories or filters), or custom headers can be added as necessary.</p>
+// Generate curl request
+$session = curl_init($request);
 
-{% codeblock lang:php %}
-<?php
-$mail = new SendGrid\Email();
-$mail->
-  addTo('foo@bar.com')->
-  ...
-  addHeader("category", "My New Category");
+// Tell curl to use HTTP POST
+curl_setopt ($session, CURLOPT_POST, true);
+
+// Tell curl that this is the body of the POST
+curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+
+// Tell curl not to return headers, but do return the response
+curl_setopt($session, CURLOPT_HEADER, false);
+curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+// obtain response
+$response = curl_exec($session);
+curl_close($session);
+
+// print everything out
+print_r($response);
+
 ?>
 {% endcodeblock %}
