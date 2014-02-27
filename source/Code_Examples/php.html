@@ -6,8 +6,9 @@ navigation:
   show: true
 ---
 
-<p>If you are using PHP and would like to send email through SendGrid, use the SendGrid PHP module. Full documentation for this module can be found on <a
-href="http://github.com/sendgrid/sendgrid-php">github</a>.</p>
+{% github sendgrid/sendgrid-php#usage %}
+We reccomend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation.
+{% endgithub %}
 
 {% codeblock lang:php %}
 $sendgrid = new SendGrid('username', 'password');
