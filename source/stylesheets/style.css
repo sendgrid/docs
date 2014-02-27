@@ -151,6 +151,14 @@ code.wrap, code.requestdata {
 	background: url(/images/subtle_dots.png?embed=true);	
 }
 
+body.logged-out .logged-in, body.logged-in .logged-out { 
+	display: none;
+}
+
+body.logged-out .logged-out, body.logged-in .logged-in { 
+	display: block;
+}
+
 #header-top { min-height: 78px; background-color: #262729; border-top: 1px solid #000; }
 
 #header-top > .container-fluid { min-height:78px; }

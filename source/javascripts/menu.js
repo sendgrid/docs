@@ -38,7 +38,8 @@ $(function() {
 		method: "GET",
 		success: function (data) {
 			if(data.logged_in === true){
-				$("#user-state").html('<a href="https://sendgrid.com/account/overview">Your Account</a>');
+				$("body").removeClass("logged-out");
+				$("body").addClass("logged-in");
 			}
 		},
 		dataType: "jsonp"
