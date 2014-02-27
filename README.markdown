@@ -13,7 +13,7 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 * Clone the repo. Run `bundle install`.
 * Copy _config.sample.yml to _config.yml
 * Set your root (if you're running locally it'll just be /) in _config.yml
-* Run rake preview
+* Run bundle exec rake preview
 * Browse to localhost:4000
 
 ## Important Things to Know
