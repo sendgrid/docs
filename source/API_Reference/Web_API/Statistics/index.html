@@ -86,77 +86,83 @@ Parameters
 {% apiexample activate POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 %}
   {% response json %}
 [
-  {
-    "date": "2009-06-20",
-    "requests": 12342,
-    "bounces": 12,
-    "clicks": 10223,
-    "opens": 9992,
-    "spamreports": 5,
-    "unique_clicks": 3,
-    "unique_opens": 6,
-    "blocked": 7
-  },
-  {
-    "date": "2009-06-21",
-    "requests": 32342,
-    "bounces": 10,
-    "clicks": 14323,
-    "opens": 10995,
-    "spamreports": 7,
-    "unique_clicks": 3,
-    "unique_opens": 9,
-    "blocked": 4
-  },
-  {
-    "date": "2009-06-22",
-    "requests": 52342,
-    "bounces": 11,
-    "clicks": 19223,
-    "opens": 12992,
-    "spamreports": 2,
-    "unique_clicks": 5,
-    "unique_opens": 2,
-    "blocked": 8
-  }
+   {
+      "date": "2014-02-26",
+      "delivered": 314,
+      "unsubscribes": 1,
+      "invalid_email": 5,
+      "bounces": 9,
+      "repeat_unsubscribes": 2,
+      "unique_clicks": 65,
+      "blocked": 3,
+      "spam_drop": 5,
+      "repeat_bounces": 8,
+      "repeat_spamreports": 9,
+      "requests": 350,
+      "spamreports": 1,
+      "clicks": 78,
+      "opens": 80,
+      "unique_opens": 70
+   },
+   {
+      "date": "2014-02-27",
+      "delivered": 271,
+      "unsubscribes": 8,
+      "invalid_email": 2,
+      "bounces": 8,
+      "repeat_unsubscribes": 1,
+      "unique_clicks": 82,
+      "blocked": 8,
+      "spam_drop": 4,
+      "repeat_bounces": 5,
+      "repeat_spamreports": 9,
+      "requests": 308,
+      "spamreports": 0,
+      "clicks": 103,
+      "opens": 90,
+      "unique_opens": 83
+   }
 ]
   {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <stats>
-   <day>
-      <date>2009-06-20</date>
-      <requests>12342</requests>
-      <bounces>12</bounces>
-      <clicks>10223</clicks>
-      <opens>9992</opens>
-      <spamreports>5</spamreports>
-      <unique_clicks>3</unique_clicks>
-      <unique_opens>6</unique_opens>
-      <blocked>7</blocked>
+  <day>
+      <date>2014-02-26</date>
+      <delivered>314</delivered>
+      <unsubscribes>1</unsubscribes>
+      <invalid_email>5</invalid_email>
+      <bounces>9</bounces>
+      <repeat_unsubscribes>2</repeat_unsubscribes>
+      <unique_clicks>65</unique_clicks>
+      <blocked>3</blocked>
+      <spam_drop>5</spam_drop>
+      <repeat_bounces>8</repeat_bounces>
+      <repeat_spamreports>9</repeat_spamreports>
+      <requests>350</requests>
+      <spamreports>1</spamreports>
+      <clicks>78</clicks>
+      <opens>80</opens>
+      <unique_opens>70</unique_opens>
    </day>
    <day>
-      <date>2009-06-21</date>
-      <requests>32342</requests>
-      <bounces>10</bounces>
-      <clicks>14323</clicks>
-      <opens>10995</opens>
-      <spamreports>7</spamreports>
-      <unique_clicks>3</unique_clicks>
-      <unique_opens>9</unique_opens>
-      <blocked>4</blocked>
-   </day>
-   <day>
-      <date>2009-06-22</date>
-      <requests>52342</requests>
-      <bounces>11</bounces>
-      <clicks>19223</clicks>
-      <opens>12992</opens>
-      <spamreports>2</spamreports>
-      <unique_clicks>5</unique_clicks>
-      <unique_opens>2</unique_opens>
+      <date>2014-02-27</date>
+      <delivered>271</delivered>
+      <unsubscribes>8</unsubscribes>
+      <invalid_email>2</invalid_email>
+      <bounces>8</bounces>
+      <repeat_unsubscribes>1</repeat_unsubscribes>
+      <unique_clicks>82</unique_clicks>
       <blocked>8</blocked>
+      <spam_drop>4</spam_drop>
+      <repeat_bounces>5</repeat_bounces>
+      <repeat_spamreports>9</repeat_spamreports>
+      <requests>308</requests>
+      <spamreports>0</spamreports>
+      <clicks>103</clicks>
+      <opens>90</opens>
+      <unique_opens>83</unique_opens>
    </day>
 </stats>
   {% endresponse %}
