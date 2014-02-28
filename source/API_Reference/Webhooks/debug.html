@@ -58,7 +58,7 @@ Hook Debug only buffers 10 events at a time, we don't keep historical events or 
 {% anchor h2 %}
 ngrok
 {% endanchor %}
-<p><a href="https://ngrok.com/">ngrok</a> will be absorbing the LocalTunnel project and offers a selection of newer features that you might find useful when debugging your webhooks.</p>
+<p><a href="https://ngrok.com/">ngrok</a> is a tool for creating a local tunnel to your machine, it makes testing webhooks locally extremely easy.</p>
 
 <p>Start by <a href="https://ngrok.com/dashboard">signing up</a> so you can use all the features available. In particular, the ability to use custom subdomains. This will remove the need to ammend your webhook settings each time you run ngrok.</p>
 
@@ -71,7 +71,7 @@ Setup
 $ ngrok 3000
 {% endcodeblock %}
 
-<p>This would open up a connection to port 3000 on your local machine, at a URL like http://3a4bfceb.ngrok.com</p>
+<p>This would open up a connection to port 3000 on your local machine, at a URL like <code>http://3a4bfceb.ngrok.com</code>. you may then put this URL as your the URL for your Parse Webhook or Event Webhook.</p>
 
 <p>Rather than having to change this every time you restart ngrok, specify the subdomain flag:</p>
 
@@ -79,7 +79,7 @@ $ ngrok 3000
 $ ngrok -subdomain=myappname 3000
 {% endcodeblock %}
 
-<p>This will open up port 3000 and make it accessible at http://myappname.ngrok.com</p>
+<p>This will open up port 3000 and make it accessible at <code>http://myappname.ngrok.com</code>.</p>
 
 {% anchor h3 %}
 Seeing what's happening
@@ -92,44 +92,8 @@ More information
 <p>For more information on what you can do with ngrok, <a href="https://ngrok.com/usage">check out their documentation</a>.</p>
 
 {% anchor h2 %}
-LocalTunnel
+Runscope
 {% endanchor %}
+<p><a href="https://runscope.com">Runscope</a> is a tool for debugging APIs. It acts as a proxy, collecting all data sent to it and passes it on to another point. You may then, later, review what was sent to the API you're debugging.</p>
 
-{% info %}
-LocalTunnel is no longer actively maintained. If you have issues with running it switch to ngrok as an alternative.
-{% endinfo %}
-
-<p><a href="http://progrium.com/localtunnel/">LocalTunnel</a> is a service built by <a href="http://progrium.com/blog">Jeff Lindsay</a>. It opens up a tunnel to a specified port on your local machine/dev environment and generates a unique URL for accessing it.</p>
-
-<p>You would use this to route Event Notification POSTs and Inbound Parse POSTs directly to your local machine for consumption in your app.</p>
-
-{% anchor h3 %}
-Setup
-{% endanchor %}
-<p>Start by installing LocalTunnel on your machine via <a href="http://rubygems.org/">RubyGems</a></p>
-{% codeblock lang:html %}
-$ gem install localtunnel
-{% endcodeblock %}
-
-<p>The first time you run LocalTunnel, you'll need to pass a location of a public key for security reasons, you can do that with the following command:<p>
-
-{% codeblock lang:html %}
-$ localtunnel -k ~/.ssh/id_rsa.pub 8080
-{% endcodeblock %}
-
-<p>This will open up port 8080 to the outside world via a unique URL. The next time you run LocalTunnel you will not need to pass the public key option. Simply pass a port to LocalTunnel:</p>
-
-{% codeblock lang:html %}
-$ localtunnel 8080
-{% endcodeblock %}
-
-<p>This will return a URL that looks something like this:</p>
-{% codeblock lang:html %}
-http://8bv2.localtunnel.com
-{% endcodeblock %}
-
-<p>This is the URL that you would then enter into your Event Notification app or Inbound Parse settings. Once you have this set up, real time notifications will be passed directly through to your development environment without the need to deploy to a server to test your integrations.</p>
-
-
-
-
+<p>This can be extrordinarily helpful when debugging webhooks, and <a href="https://www.runscope.com/provider-guide/troubleshooting-webhooks">Runscope has a tutorial on how to do this</a>.</p>
