@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Customer TimeZone
+title: Customer Subuser TimeZone
 navigation:
    show: true
 ---
@@ -34,7 +34,7 @@ List TimeZones
     <td>This will allow you to retrieve the timezones</td>
   </tr>
 </table>
-{% apiexample list GET https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
+{% apiexample list GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
   {% response json %}
 [
   {
@@ -89,7 +89,7 @@ List TimeZones
 {% anchor h2 %}
 Get TimeZone 
 {% endanchor %}
-<p>This API call will return the timezone currently set for your customer.</p>
+<p>This API call will return the timezone currently set for your customer subuser.</p>
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -100,8 +100,8 @@ Get TimeZone
   <tr>
     <td>user</td>
     <td>Yes</td>
-    <td>Customer must be registered under your account</td>
-    <td>The customer we are retrieving timezone</td>
+    <td>Customer subuser must be registered under your account</td>
+    <td>The customer subuser we are retrieving timezone</td>
   </tr>
   <tr>
     <td>method</td>
@@ -117,10 +117,10 @@ Get TimeZone
     <td>Must be set to 
       <em>get</em>
     </td>
-    <td>This will allow you to retrieve the timezone for your customer</td>
+    <td>This will allow you to retrieve the timezone for your customer subuser</td>
   </tr>
 </table>
-{% apiexample get GET https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer@example.com %} 
+{% apiexample get GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer_subuser@example.com %} 
   {% response json %}
 {
   "name":"Central Time, US & Canada",
@@ -163,7 +163,7 @@ Get TimeZone
 {% anchor h2 %}
 Edit TimeZone 
 {% endanchor %}
-<p>This API call will allow you to set timezone for your customer</p>
+<p>This API call will allow you to set timezone for your customer subuser</p>
 <table class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
@@ -174,8 +174,8 @@ Edit TimeZone
   <tr>
     <td>user</td>
     <td>Yes</td>
-    <td>Customer must be registered under your account</td>
-    <td>The customer we are edit the timezone</td>
+    <td>Customer subuser must be registered under your account</td>
+    <td>The customer subuser we are edit the timezone</td>
   </tr>
   <tr>
     <td>method</td>
@@ -191,7 +191,7 @@ Edit TimeZone
     <td>Must be set to 
       <em>set</em>
     </td>
-    <td>This will allow you to set the timezone for your customer</td>
+    <td>This will allow you to set the timezone for your customer subuser</td>
   </tr>
   <tr>
     <td>timezone</td>
@@ -203,7 +203,7 @@ Edit TimeZone
     </td>
   </tr>
 </table>
-{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer@example.com&timezone=America/Los_Angeles %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer_subuser@example.com&timezone=America/Los_Angeles %}
   {% response json %}
 {
   "message":"success"
