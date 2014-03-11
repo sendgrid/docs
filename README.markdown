@@ -11,14 +11,14 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 ## Setup
 
 * Clone the repo. Run `bundle install`.
-* Copy _config.sample.yml to _config.yml
-* Set your root (if you're running locally it'll just be /) in _config.yml
-* Run bundle exec rake preview
-* Browse to localhost:4000
+* Copy `_config.sample.yml` to `_config.yml`
+* Set your root (if you're running locally it'll just be `/`) in `_config.yml`
+* Run `bundle exec rake preview`
+* Browse to `localhost:4000`
 
 ## Important Things to Know
 
-* The source files are in  /source, and the generated files will be created in /public. They get overwritten or wiped out when the site is rebuilt.
+* The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
 * To rebuild the site: <code>rake generate</code>
 
