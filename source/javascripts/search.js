@@ -32,7 +32,7 @@
   function search(query) {
   	var relativeRoot = $('.nav-link > a')[0].pathname.replace('/index.html','');
   	var simulatedSearchUrl = relativeRoot + '/search.html?q=' + encodeURIComponent(query);
-  	_gaq.push(['_set','page',simulatedSearchUrl]);
+  	//_gaq.push(['_set','page',simulatedSearchUrl]);
   	
     var result = $.getJSON('http://agupam.api.indexden.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
         $('div#results').empty();
