@@ -1,0 +1,29 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sendgrid/docs",
+  "authors": [
+    ""
+  ],
+  "description": "SendGrid's Documentation",
+  "keywords": [
+    "sendgrid",
+    "docs",
+    "documentation",
+    "jekyll"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "source/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery-ui": "~1.10.4"
+  }
+}
