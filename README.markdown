@@ -10,7 +10,11 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 
 ## Setup
 
-* Clone the repo. Run `bundle install`.
+* Clone the repo.
+* Run `npm install` to get bower.
+* Run `bower install` to install client-side dependencies (jQuery,
+  bootstrap)
+* Run `bundle install` to install required rubygems.
 * Copy `_config.sample.yml` to `_config.yml`
 * Set your root (if you're running locally it'll just be `/`) in `_config.yml`
 * Run `bundle exec rake preview`
