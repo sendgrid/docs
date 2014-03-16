@@ -1,5 +1,5 @@
 files: [
-  'source/stylesheets/bootstrap.css',
+  'source/bower_components/bootstrap/dist/css/bootstrap.min.css',
   'source/stylesheets/style.css',
   'source/stylesheets/icomoon.css',
   'source/stylesheets/sprites.css',
