@@ -2,6 +2,7 @@ body {
 	padding: 0 !important;
 	font-size:18px;
 	line-height:24px;
+  background-color: rgb(247,247,247);
 }
 
 p {
@@ -42,8 +43,8 @@ line-height: 26px;
 #logo {
 	margin-top:18px;
 	display:inline-block;
-	width:160px;
-	height:45px;
+	width:120px;
+	height:33px;
 	background: url(/images/sendgrid-logo.png?embed=true);
 }
 
@@ -171,20 +172,52 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 	background: url(/images/subtle_dots.png?embed=true);	
 }
 
-#header-top { min-height: 78px; background-color: #262729; border-top: 1px solid #000; }
+#header-top { 
+  height: 28px; 
+  border-bottom: 1px solid #000;
+  background-color: rgb(30,36,47);
+  padding-right:30px;
+}
 
-#header-top > .container-fluid { min-height:78px; }
+#nav { 
+  min-height: 68px; 
+  background-color: rgb(47,54,70); 
+  border-bottom: 4px solid #287abe; 
+  margin-bottom: 0; 
+}
 
-#header-search { margin-top:26px; }
-
-#nav { min-height: 35px; background-color: #1b1c1e; border-top: 1px solid #000; border-bottom: 2px solid #287abe; margin-bottom: 0; }
 #nav ul { list-style-type: none; }
-#nav .nav-link { height: 35px;}
-#nav .nav-link a { padding: 12px 22px 9px 22px; line-height: 14px;  color: #fff; text-transform: uppercase; font-size: 11px; border-bottom: 2px solid #287abe; }
-.current-page-item { background-color: #287abe; }
-#nav .nav-link a:hover { text-decoration: none; background-color: #15456d; }
+#nav .nav-link { height: 68px;}
+#nav .nav-link a { 
+  padding: 29px 10px 25px 10px; 
+  line-height: 14px; 
+  color: #fff; 
+  text-transform: uppercase; 
+  font-size: 11px; 
+}
+
+#nav .nav-link a:hover { text-decoration: none; background-color: rgb(47,54,70); }
 #nav .nav > li > a { text-shadow: none; }
 #nav .btn-navbar { color: #000; padding: 1px 10px; }
+
+#nav .navbar { border-radius:0; }
+
+#nav .btn {
+  border-radius:15px;
+  width: 140px;
+  display: inline-block;
+  border:0px;
+  margin-top:17px;
+  margin-right:7px;
+}
+
+.navbar-buttons { margin-right:30px }
+
+#nav .btn-primary:hover { background-color:rgb(0,112,205) }
+#nav .btn-success:hover { background-color:rgb(72,142,136) }
+
+.btn-primary { background-color: rgb(0,112,205); }
+.btn-success { background-color: rgb(72,142,136); }
 
 .nav-list li { line-height:20px; }
 
@@ -234,7 +267,6 @@ margin-top: 2px;
 }
 
 #content {
-  padding: 20px;
   overflow: auto;
 }
 
@@ -403,9 +435,6 @@ figure.code.expanded {
 	}
 	.sidebar-nav #nav-menu {
 		display: block;
-	}
-	#content {
-		padding: 25px 0 0 0;
 	}
 }
 
