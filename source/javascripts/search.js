@@ -17,8 +17,8 @@
 		});
 	} 
 	
-	$('form#header-search').submit(function() {
-        	query = $('input#query').val();
+	$('form.navbar-search').submit(function() {
+      query = $('input#query').val();
 			$.jStorage.set('search_query', query);
 			
 			//this is kinda hacky but let's infer the root from the home button
