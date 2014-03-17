@@ -2,6 +2,7 @@ js_destination: '/js/'
 
 files: [
   'source/bower_components/jquery/dist/jquery.min.js',
+  'source/javascripts/fonts.js',
   'source/javascripts/collapse.min.js',
   'source/javascripts/libs/jstorage.js',
   'source/javascripts/libs/ZeroClipboard.js',
