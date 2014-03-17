@@ -3,21 +3,21 @@ layout: default
 ---
 
 {% unless page.sidebar == false %}
-<aside class="sidebar-nav col-md-4">
     {% include_array default_asides %}
-</aside>
 {% endunless %}
 
 {% if page.sidebar == false %}
+<div class="col-md-12 content-wrapper">
   {% unless page.breadcrumbs == false %}
-    <section class="col-md-12">{% breadcrumbs %}</section>
+    <section>{% breadcrumbs %}</section>
   {% endunless %}
-<article role="article" class="col-md-12">
+  <article role="article">
 {% else %}
+<div class="col-md-9 content-wrapper">
   {% unless page.breadcrumbs == false %}
-    <section class="col-md-8">{% breadcrumbs %}</section>
+    <section>{% breadcrumbs %}</section>
   {% endunless %}
-<article role="article" class="col-md-8">
+<article role="article">
 {% endif %}
     {% if page.title and page.showTitle != false %}
   <header class="page-header">
@@ -26,4 +26,4 @@ layout: default
   {% endif %}
   {{ content }}
 </article>
-
+</div>
