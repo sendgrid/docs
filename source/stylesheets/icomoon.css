@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?41mdlr');
-	src:url('/fonts/icomoon.eot?#iefix41mdlr') format('embedded-opentype'),
-		url('/fonts/icomoon.woff?41mdlr') format('woff'),
-		url('/fonts/icomoon.ttf?41mdlr') format('truetype'),
-		url('/fonts/icomoon.svg?41mdlr#icomoon') format('svg');
+	src:url('/fonts/icomoon.eot?-iggskm');
+	src:url('/fonts/icomoon.eot?#iefix-iggskm') format('embedded-opentype'),
+		url('/fonts/icomoon.woff?-iggskm') format('woff'),
+		url('/fonts/icomoon.ttf?-iggskm') format('truetype'),
+		url('/fonts/icomoon.svg?-iggskm#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -32,6 +32,9 @@
 .icon-vidgrid:before {
 	content: "\e602";
 }
+.icon-readblog:before {
+	content: "\e603";
+}
 .icon-askcommunity2:before {
 	content: "\e604";
 }
@@ -55,9 +58,6 @@
 }
 .icon-append:before {
 	content: "\e60b";
-}
-.icon-open:before {
-	content: "\e60c";
 }
 .icon-close:before {
 	content: "\e60d";
@@ -167,12 +167,18 @@
 .icon-jooomla:before {
 	content: "\e630";
 }
-.icon-magento:before {
+.icon-magnito:before {
 	content: "\e631";
 }
 .icon-wordpress:before {
 	content: "\e632";
 }
-.icon-edit:before {
-	content: "\e603";
+.icon-open:before {
+	content: "\e60c";
+}
+.icon-open2:before {
+	content: "\e633";
+}
+.icon-search:before {
+	content: "\e634";
 }
