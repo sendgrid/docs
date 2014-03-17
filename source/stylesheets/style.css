@@ -173,11 +173,6 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 	border: 1px solid #DDD;
 	margin-top: -19px;
 	margin-bottom: 10px;
-	background: url(/images/subtle_dots.png?embed=true);
-}
-
-.nav-tabs > .active > a {
-	background: url(/images/subtle_dots.png?embed=true);	
 }
 
 #header-top { 
@@ -221,14 +216,11 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 
 .navbar-buttons { margin-right:30px }
 
-#nav .btn-primary:hover { background-color:rgb(0,112,205) }
-#nav .btn-success:hover { background-color:rgb(72,142,136) }
-
 .btn-primary { background-color: rgb(0,112,205); }
 .btn-success { background-color: rgb(72,142,136); }
 
 .nav-list [class^="icon-"] {
-margin-right: 2px;
+margin-right: 9px;
 margin-top: 2px;
 }
 
@@ -260,7 +252,7 @@ margin-top: 2px;
 
 #search {
   background-color: rgb(30,36,47);
-  padding:30px;
+  padding:30px 16px;
   float:none;
 }
 
@@ -297,27 +289,61 @@ body:before {
 
 .label, .badge { font-size: 15px; }
 
-.nav-menu .subtree-name: { padding: 3px 15px; }
-.subtree-name:hover{ background-color: #EEE; }
-.subtree-name:hover{ background-color: #EEE; }
+.subtree-name:hover{ background-color: transparent; text-decoration: underline; }
+.nav>li>a:hover  { background-color: transparent; text-decoration: underline; }
 
-.nav-list li {
-  border-top:1px solid rgb(27,28,30);
-  background-color: rgb(30,36,47);
-};
-
-.nav-list  li.collapsibleListOpen{
-	padding: 3px 15px;
-	background:rgb(53,61,78) url('/images/minus.png?embed=true') no-repeat 0px 5px;
+#nav-menu li.collapsibleListOpen{
+  background:rgb(53,61,78) url('/images/minus.png?embed=true') no-repeat 16px 16px;
 	cursor: pointer;
-	padding-left: 17px;
 }
 
-.nav-list li.collapsibleListClosed{
-	padding: 3px 15px;
-	background: rgb(47, 54, 70) url('/images/plus.png?embed=true') no-repeat 0px 5px;
+#nav-menu li.collapsibleListClosed{
+  background: rgb(47, 54, 70) url('/images/plus.png?embed=true') no-repeat 16px 16px;
 	cursor: pointer;
-	padding-left: 17px;
+}
+
+#nav-menu li {
+  border-top:1px solid rgb(27,28,30);
+  background-color: rgb(30,36,47);
+}
+
+#nav-menu li.active {
+  background-color: rgb(0,112,205);
+}
+
+.subtree-name {
+  padding:12px 15px;
+  color: #eee;
+  font-family: "Proxima N W15 Light", Helvetica, Arial, sans-serif;
+}
+
+#nav-menu .subtree-name+ul li {
+  border:0px;
+}
+
+.subtree-name+ul {
+  padding-left:40px;
+  background-color: rgb(30,36,47);
+}
+
+
+#nav-menu .subtree-name+ul li.collapsibleListClosed {
+  background-color: rgb(30,36,47);
+}
+
+#nav-menu .subtree-name+ul li.collapsibleListOpen {
+  background-color: rgb(30,36,47);
+}
+
+.parent .subtree-name {
+  padding-left:40px;
+}
+
+.nav>li>a {
+  font-family: "Proxima N W15 Light", Helvetica, Arial, sans-serif;
+  padding:12px 15px;
+  color: #eee;
+  font-size: 12pt;
 }
 
 .breadcrumb { 
@@ -411,7 +437,7 @@ figure.code.expanded {
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .content-wrapper {
     top:-80px;
   }
