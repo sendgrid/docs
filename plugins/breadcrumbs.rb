@@ -57,7 +57,7 @@ module Jekyll
         end
       end
       
-      output += "<li class=\"pull-right\"><a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> Edit</a></li>
+      output += "<span class=\"pull-right\"><a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> Edit</a></span>
       </ul>"
       output += "</div>"
       puts "generating breadcrumbs for #{@page_url}"
