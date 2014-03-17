@@ -60,12 +60,12 @@ module Jekyll
       sorted_tree = tree_array.sort_by {|node| [ -(node[:weight]), node[:base] ]}
       
       puts "generating nav tree for #{@page_url}"
-      files_first_traverse "", sorted_tree, false
+      files_first_traverse "", sorted_tree, 0
     end
 	  
-    def files_first_traverse(prefix, nodes = [], is_subtree)
+    def files_first_traverse(prefix, nodes = [], depth=0)
       output = ""
-      if !is_subtree
+      if depth == 0
         id = 'id="nav-menu"'
       end
       output += "#{prefix}<ul #{id} class=\"nav nav-list\">" 
@@ -147,8 +147,9 @@ module Jekyll
           subtree.each do |base, subtree|
             subtree_array.push(:base => base, :subtree => subtree)
           end
-          
-          output += files_first_traverse(prefix + '	 ', subtree_array, true)
+         
+          depth = depth + 1 
+          output += files_first_traverse(prefix + '	 ', subtree_array, depth)
 
           if is_parent
             output+= "</li>"
