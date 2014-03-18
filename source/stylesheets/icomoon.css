@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?-iei29j');
-	src:url('/fonts/icomoon.eot?#iefix-iei29j') format('embedded-opentype'),
-		url('/fonts/icomoon.woff?-iei29j') format('woff'),
-		url('/fonts/icomoon.ttf?-iei29j') format('truetype'),
-		url('/fonts/icomoon.svg?-iei29j#icomoon') format('svg');
+	src:url('/fonts/icomoon.eot?fjsqvo');
+	src:url('/fonts/icomoon.eot?#iefixfjsqvo') format('embedded-opentype'),
+		url('/fonts/icomoon.woff?fjsqvo') format('woff'),
+		url('/fonts/icomoon.ttf?fjsqvo') format('truetype'),
+		url('/fonts/icomoon.svg?fjsqvo#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -50,13 +50,13 @@
 .icon-codeexamples:before {
 	content: "\e608";
 }
-.icon-whitelable:before {
+.icon-whitelabel:before {
 	content: "\e609";
 }
 .icon-apiworkshop_v2:before {
 	content: "\e60a";
 }
-.icon-append:before {
+.icon-link:before {
 	content: "\e60b";
 }
 .icon-close:before {
@@ -92,46 +92,46 @@
 .icon-integrate:before {
 	content: "\e617";
 }
-.icon-codeex-apple:before {
+.icon-apple:before {
 	content: "\e618";
 }
-.icon-codeex-java:before {
+.icon-java:before {
 	content: "\e619";
 }
-.icon-codeex-nodejs:before {
+.icon-nodejs:before {
 	content: "\e61a";
 }
-.icon-codeex-pearl:before {
+.icon-perl:before {
 	content: "\e61b";
 }
-.icon-codeex-php:before {
+.icon-php:before {
 	content: "\e61c";
 }
-.icon-codeex-python:before {
+.icon-python:before {
 	content: "\e61d";
 }
-.icon-codeex-ruby:before {
+.icon-ruby:before {
 	content: "\e61e";
 }
-.icon-codeex-net:before {
+.icon-net:before {
 	content: "\e61f";
 }
-.icon-codeex-cakephp:before {
+.icon-cakephp:before {
 	content: "\e620";
 }
-.icon-codeex-codeigniter:before {
+.icon-codeigniter:before {
 	content: "\e621";
 }
-.icon-codeex-django:before {
+.icon-django:before {
 	content: "\e622";
 }
-.icon-codeex-rubyonrails:before {
+.icon-rubyonrails:before {
 	content: "\e623";
 }
-.icon-codeex-symphony:before {
+.icon-symfony:before {
 	content: "\e624";
 }
-.icon-codeex-zendphp:before {
+.icon-zendphp:before {
 	content: "\e625";
 }
 .icon-outlook:before {
@@ -164,10 +164,10 @@
 .icon-drupal:before {
 	content: "\e62f";
 }
-.icon-jooomla:before {
+.icon-joomla:before {
 	content: "\e630";
 }
-.icon-magnito:before {
+.icon-magento:before {
 	content: "\e631";
 }
 .icon-wordpress:before {
@@ -184,4 +184,7 @@
 }
 .icon-edit:before {
 	content: "\e635";
+}
+.icon-list:before {
+	content: "\e636";
 }
