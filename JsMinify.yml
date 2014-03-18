@@ -11,7 +11,7 @@ files: [
   'source/javascripts/codebuttons.js',
   'source/bower_components/modernizr/modernizr.js',
   'source/bower_components/bootstrap/dist/js/bootstrap.min.js',
-  'source/javascript/libs/ZeroClipboard.min.js',
+  'source/javascripts/libs/ZeroClipboard.js',
   'source/javascripts/search.js',
   'source/javascripts/octopress.js'
 ]

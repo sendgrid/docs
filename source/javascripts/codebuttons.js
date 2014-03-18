@@ -15,12 +15,12 @@ $(function() {
     $("body").addClass("flash");
     //this is kinda hacky but let's infer the root from the home button
     var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
-        path = root + '/bower_components/zeroclipboard/ZeroClipboard.swf';
+        path = root + '/flash/ZeroClipboard.swf';
 
     console.log(root);
 
     // Default ZeroClipboard to the root of the Docs
-    ZeroClipboard.config({ swfPath: path, moviePath: path, hoverClass: 'hover' });
+    ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
 
     // Initialize all zClipboards
     glueClipboards();
@@ -69,7 +69,7 @@ $(function() {
       });
 
       var eventInfo = ['_trackEvent', 'Code Block', 'Expand', codeId];
-      _gaq.push(eventInfo);
+      //_gaq.push(eventInfo);
     }
     ZeroClipboard.destroy();
     glueClipboards();
@@ -145,7 +145,7 @@ function glueClipboards () {
         });
 
         var eventInfo = ['_trackEvent', 'Code Block', 'Copy', codeId];
-        _gaq.push(eventInfo);
+        //_gaq.push(eventInfo);
 
       });
       document.flashFreeClipboard = true;
