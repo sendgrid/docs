@@ -254,7 +254,7 @@ margin-top: 2px;
 	margin-top:13px;
 }
 
-#search {
+#sidebar-search {
   background-color: rgb(30,36,47);
   padding:30px 16px;
   float:none;
@@ -264,8 +264,8 @@ margin-top: 2px;
 	background-color: white; 
 }
 
-#search input { border-radius:0px; }
-#search .btn { border-radius:0px; }
+#sidebar-search  input { border-radius:0px; }
+#sidebar-search  .btn { border-radius:0px; }
 
 #footer-iframe {
   width: 100%;

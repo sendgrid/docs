@@ -17,8 +17,10 @@ $(function() {
     var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
         path = root + '/bower_components/zeroclipboard/ZeroClipboard.swf';
 
+    console.log(root);
+
     // Default ZeroClipboard to the root of the Docs
-    ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
+    ZeroClipboard.config({ swfPath: path, moviePath: path, hoverClass: 'hover' });
 
     // Initialize all zClipboards
     glueClipboards();
