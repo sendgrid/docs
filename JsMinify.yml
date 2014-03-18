@@ -5,13 +5,13 @@ files: [
   'source/javascripts/fonts.js',
   'source/javascripts/collapse.min.js',
   'source/bower_components/jstorage/jstorage.min.js',
-  'source/bower_components/zeroclipboard/ZeroClipboard.min.js',
   'source/javascripts/menu.js',
   'source/javascripts/analytics.js',
   'source/javascripts/anchors.js',
   'source/javascripts/codebuttons.js',
   'source/bower_components/modernizr/modernizr.js',
   'source/bower_components/bootstrap/dist/js/bootstrap.min.js',
+  'source/bower_components/zeroclipboard/ZeroClipboard.min.js',
   'source/javascripts/search.js',
   'source/javascripts/octopress.js'
 ]
