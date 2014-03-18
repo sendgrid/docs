@@ -15,7 +15,7 @@ $(function() {
     $("body").addClass("flash");
     //this is kinda hacky but let's infer the root from the home button
     var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
-        path = root + '/flash/ZeroClipboard.swf';
+        path = root + '/bower_components/zeroclipboard/ZeroClipboard.swf';
 
     // Default ZeroClipboard to the root of the Docs
     ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
