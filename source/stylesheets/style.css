@@ -99,21 +99,25 @@ border-color: #dFb5b4;
 
 
 .code-buttons {
-  margin: 0 40px -19px;
+  margin: 0 40px;
 }
 
+.code-buttons > .nav-tabs { border-bottom: 0px }
+
 .code-buttons > .nav-tabs > li > .code-button {
-  padding-top:2px;
+  padding-top:5px;
   padding-bottom:2px;
   border:1px solid #EEE;
-  background-color: #fff;
+  background-color:white;
+  font-size:12px;
+  color: rgb(0,112,205);
+
 }
 
 .code-buttons > .nav-tabs > li .code-button:hover, .code-buttons > .nav-tabs > li .code-button.hover { 
   cursor: pointer;
   background-color: #eee;
 }
-
 
 figure.code {
 	margin: 0 40px 1.5em;
@@ -417,35 +421,8 @@ figure.code.expanded {
 	height: 100%;
 }
 
-@media screen and (min-width: 767px) {
-	.sidebar-nav {
-		height: auto;
-		background: transparent;
-		border: none;
-		-webkit-border-radius: 0;
-		-moz-border-radius: 0;
-		border-radius: 0;
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-	}
-	.sidebar-nav:before {
-		content: "";
-	}
-	.sidebar-nav #nav-menu {
-		display: block;
-	}
-}
-
 @media (min-width: 992px) {
   .content-wrapper {
     top:-80px;
   }
 }
-
-@media screen, projection, print and (min-width: 1200px) {
-	.home-list.row-fluid [class*="span"]:nth-child(3n+1) {
-		margin-left: 0;
-	}
-}
-
