@@ -1,11 +1,16 @@
 <div class="navbar navbar-static-top" id="nav">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3">
+      <div class="navbar-header col-md-3">
         <a href="http://www.sendgrid.com"><span id="logo"></span></a>
+        <button type="button" class="navbar-toggle"
+          data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-list collapsed-icon"></span>
+        </button>
       </div>
-      <div>
-        <ul class='nav navbar-nav' id='nav-links'>
+      <div class="collapse navbar-collapse col-sm-4" id="navbar">
+        <ul class="nav navbar-nav" id="nav-links">
           <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
             <a href="{{root_url}}/index.html">Docs Home</a>
           </li>
@@ -18,9 +23,14 @@
           <li class="nav-link">
             <a href="http://support.sendgrid.com/">Support</a>
           </li>
+          <li class="nav-link visible-xs">
+            <button class="btn btn-primary btn-block">Contact Us</button>
+            <button class="btn btn-success  btn-blocklogged-out">Sign Up</button>
+            <button class="btn  btn-block logged-out">Sign In</button>
+          </li>
         </ul>
       </div>
-      <div class="pull-right navbar-buttons">
+      <div class="pull-right navbar-buttons hidden-xs">
         <button class="btn btn-primary">Contact Us</button>
         <button class="btn btn-success logged-out">Sign Up</button>
       </div>
