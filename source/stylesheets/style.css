@@ -196,10 +196,10 @@ body.logged-out .logged-out, body.logged-in .logged-in {
   line-height: 14px; 
   color: #fff; 
   text-transform: uppercase; 
-  font-size: 11px; 
+  font-size: 13px; 
 }
 
-#nav .nav-link a:hover { text-decoration: none; background-color: rgb(47,54,70); }
+#nav .nav-link a:hover { text-decoration: underline; background-color: rgb(47,54,70); }
 #nav .nav > li > a { text-shadow: none; }
 #nav .btn-navbar { color: #000; padding: 1px 10px; }
 
@@ -267,7 +267,7 @@ margin-top: 2px;
   width: 100%;
   height: 248px;
   border: 0;
-  margin-bottom: -6px;
+  margin-bottom: -8px;
   margin-top: 10px;
 }
 
