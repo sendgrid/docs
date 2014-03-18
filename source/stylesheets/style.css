@@ -260,7 +260,7 @@ margin-top: 2px;
 	margin-top:13px;
 }
 
-#sidebar-search {
+.navbar-search {
   background-color: rgb(30,36,47);
   padding:30px 16px;
   float:none;
@@ -270,8 +270,8 @@ margin-top: 2px;
 	background-color: white; 
 }
 
-#sidebar-search  input { border-radius:0px; }
-#sidebar-search  .btn { border-radius:0px; }
+.navbar-search  input { border-radius:0px; }
+.navbar-search  .btn { border-radius:0px; }
 
 #footer-iframe {
   width: 100%;
@@ -431,10 +431,24 @@ figure.code.expanded {
 	height: 100%;
 }
 
+#sidebar-header {
+  background-color: rgb(30, 36, 47);
+  color: white;
+}
+
+#sidebar-header h3 {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.navbar-collapse {
+  border-top: 0px;
+}
+
 @media (max-width: 768px) {
   .nav-link { text-align:center; }
   #nav { border-bottom: 0px; }
-  .navbar-header { border-bottom: 4px solid rgb(0,112,205); }
+  #nav .navbar-header { border-bottom: 4px solid rgb(0,112,205); }
   #navbar { background-color: rgb(30,36,47); }
   #nav .nav-link a {
     padding: 12px 15px;
