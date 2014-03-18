@@ -398,6 +398,10 @@ li.official {
 	margin-top: 20px;
 }
 
+pre code {
+  white-space: pre;
+}
+
 figure.code.expanded {
  position: fixed;
  top:0;
