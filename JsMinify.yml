@@ -5,7 +5,7 @@ files: [
   'source/javascripts/fonts.js',
   'source/javascripts/collapse.min.js',
   'source/javascripts/libs/jstorage.js',
-  'source/javascripts/libs/ZeroClipboard.js',
+  'source/bower_components/zeroclipboard/ZeroClipboard.min.js',
   'source/javascripts/menu.js',
   'source/javascripts/analytics.js',
   'source/javascripts/anchors.js',
