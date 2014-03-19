@@ -441,11 +441,12 @@ figure.code.expanded {
   margin-top: 20px;
 }
 
-.navbar-collapse {
+#sidebar {
   border-top: 0px;
+  max-height: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav-link { text-align:center; }
   #nav { border-bottom: 0px; }
   #nav .navbar-header { border-bottom: 4px solid rgb(0,112,205); }
