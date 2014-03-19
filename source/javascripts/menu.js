@@ -1,5 +1,5 @@
 var saveTreeState = function(){
-	parent_nodes = $('.sidebar-nav .parent'); 
+	parent_nodes = $('#nav-menu  .parent'); 
 
 	parent_nodes.each(function(i){		
 		open = $(this).hasClass('collapsibleListOpen');
@@ -8,7 +8,7 @@ var saveTreeState = function(){
 }
 
 var loadTreeState = function(){
-	parent_nodes = $('.sidebar-nav .parent'); 
+	parent_nodes = $('#nav-menu .parent'); 
 
 	parent_nodes.each(function(i){		
 		node = $(this);
@@ -45,7 +45,7 @@ $(function() {
 		dataType: "jsonp"
 	});
 
-	$(".sidebar-nav").click(function (e) {
+	$('#nav-menu').click(function (e) {
 		if(e.target == this){
 			$(this).toggleClass("shown");
 		}
