@@ -434,6 +434,7 @@ figure.code.expanded {
 #sidebar-header {
   background-color: rgb(30, 36, 47);
   color: white;
+  padding: 0px 18px;
 }
 
 #sidebar-header h3 {
