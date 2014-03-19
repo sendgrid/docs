@@ -226,12 +226,60 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 
 .navbar-buttons { margin-right:30px }
 
-.btn-primary { background-color: rgb(0,112,205); }
-.btn-success { background-color: rgb(72,142,136); }
-
 .nav-list [class^="icon-"] {
-margin-right: 9px;
-margin-top: 2px;
+  margin-right: 9px;
+  margin-top: 2px;
+}
+
+.home-list a:hover {
+  text-decoration:none;
+}
+
+.panel [class^="icon-"] {
+  font-size:36px;
+}
+
+.panel-highlight {
+  color: rgb(127, 228, 228);
+}
+
+.panel {
+  text-align:center;
+  padding-top:50px;
+  height:190px;
+  vertical-align:middle;
+  font-family: "Proxima N W15 Light";
+  cursor: pointer;
+}
+
+.panel h3 {
+  color: rgb(0,112,205)
+}
+
+.panel:hover p {
+  display:block;
+}
+
+.panel p {
+  display:none;
+}
+
+.panel:hover [class^="icon-"] {
+  display:none;
+}
+
+.panel:hover h3 {
+  color:white;
+  margin:0px;
+}
+
+.panel:hover {
+  text-align:left;
+  padding:15px;
+  color:white;
+  background-color: rgb(0,112,205);
+  font-size: 14px;
+  text-decoration:none;
 }
 
 .sidebar-nav .nav-header { font-size:15px}
