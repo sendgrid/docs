@@ -470,9 +470,6 @@ figure.code.expanded {
 }
 
 @media (min-width: 992px) {
-  .content-wrapper {
-    top:-80px;
-  }
   .container {
     width: 970px;
   }
