@@ -67,7 +67,7 @@ $(function() {
       });
 
       var eventInfo = ['_trackEvent', 'Code Block', 'Expand', codeId];
-      _gaq.push(eventInfo);
+      gaPushEvent(eventInfo);
     }
     ZeroClipboard.destroy();
     glueClipboards();
@@ -143,7 +143,7 @@ function glueClipboards () {
         });
 
         var eventInfo = ['_trackEvent', 'Code Block', 'Copy', codeId];
-        _gaq.push(eventInfo);
+        gaPushEvent(eventInfo);
 
       });
       document.flashFreeClipboard = true;
