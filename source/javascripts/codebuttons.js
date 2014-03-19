@@ -17,8 +17,6 @@ $(function() {
     var root = $('.nav-link:eq(0) > a').attr('href').replace('/index.html',''),
         path = root + '/flash/ZeroClipboard.swf';
 
-    console.log(root);
-
     // Default ZeroClipboard to the root of the Docs
     ZeroClipboard.setDefaults({ moviePath: path, hoverClass: 'hover' });
 
@@ -69,7 +67,7 @@ $(function() {
       });
 
       var eventInfo = ['_trackEvent', 'Code Block', 'Expand', codeId];
-      //_gaq.push(eventInfo);
+      gaPushEvent(eventInfo);
     }
     ZeroClipboard.destroy();
     glueClipboards();
@@ -145,7 +143,7 @@ function glueClipboards () {
         });
 
         var eventInfo = ['_trackEvent', 'Code Block', 'Copy', codeId];
-        //_gaq.push(eventInfo);
+        gaPushEvent(eventInfo);
 
       });
       document.flashFreeClipboard = true;
