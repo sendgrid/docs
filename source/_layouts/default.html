@@ -4,7 +4,7 @@
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} class="{{ body_classes }}">
 
   {% include header.html %}
-  <div class="container span12">
+  <div class="container-fluid">
     <div class="row" id="content">
       {{ content | expand_urls: root_url }}
     </div>

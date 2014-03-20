@@ -91,7 +91,7 @@ module Jekyll
         <ul class="nav nav-tabs">
           <li class="pull-right">
             <a class="copycode code-button btn-mini" id="copy_#{digest}">
-              <i class="icon-file"></i> Copy
+              <i class="icon-copy"></i> Copy
             </a>
           </li>
           <li class="pull-right">

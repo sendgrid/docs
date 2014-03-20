@@ -1,32 +1,39 @@
-<div class='navbar' id='nav'>
-  <div class='container-fluid'>
-    <div class='row-fluid'>
-      <ul class='nav' id='nav-links'>
-        <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
-          <a href="{{root_url}}/index.html">Docs Home</a>
-        </li>
-        <li class="nav-link {% if page.title contains 'Workshop' %} current-page-item {% endif %}">
-          <a href="{{root_url}}/api_workshop.html">API Workshop</a>
-        </li>
-        <li class="nav-link {% if page.url contains 'VidGrid' %} current-page-item {% endif %}">
-          <a href="{{root_url}}/VidGrid/index.html">VidGrid</a>
-        </li>
-        <li class="nav-link">
-          <a href="http://community.sendgrid.com/sendgrid">Community</a>
-        </li>
-        <li class="nav-link logged-out">
-          <a href="http://sendgrid.com/marketing/request-demo">Contact Sales</a>
-        </li>
-        <li class="nav-link logged-out">
-          <a href="http://sendgrid.com/account/overview">Login</a>
-        </li>
-        <li class="nav-link logged-out">
-          <a href="https://sendgrid.com/user/signup">Sign Up for SendGrid</a>
-        </li>
-        <li class="nav-link logged-in" id="user-state">
-          <a href="http://sendgrid.com/account/overview">Your Account</a>
-        </li>
-      </ul>
+<div class="navbar navbar-static-top" id="nav">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header col-md-3">
+        <a href="http://www.sendgrid.com"><span id="logo"></span></a>
+        <button type="button" class="navbar-toggle"
+          data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-list collapsed-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse col-sm-4" id="navbar">
+        <ul class="nav navbar-nav" id="nav-links">
+          <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/index.html">Docs Home</a>
+          </li>
+          <li class="nav-link {% if page.title contains 'Workshop' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/api_workshop.html">API Workshop</a>
+          </li>
+          <li class="nav-link {% if page.url contains 'VidGrid' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/VidGrid/index.html">VidGrid</a>
+          </li>
+          <li class="nav-link">
+            <a href="http://support.sendgrid.com/">Support</a>
+          </li>
+          <li class="nav-link visible-xs">
+            <button class="btn btn-primary btn-block">Contact Us</button>
+            <button class="btn btn-success  btn-blocklogged-out">Sign Up</button>
+            <button class="btn btn-default btn-block logged-out">Sign In</button>
+          </li>
+        </ul>
+      </div>
+      <div class="pull-right navbar-buttons hidden-xs">
+        <button class="btn btn-primary">Contact Us</button>
+        <button class="btn btn-success logged-out">Sign Up</button>
+      </div>
     </div>
   </div>
 </div>

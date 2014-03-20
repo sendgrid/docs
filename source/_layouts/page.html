@@ -3,27 +3,27 @@ layout: default
 ---
 
 {% unless page.sidebar == false %}
-<aside class="sidebar-nav span4">
     {% include_array default_asides %}
-</aside>
 {% endunless %}
 
 {% if page.sidebar == false %}
+<div class="col-md-12 content-wrapper">
   {% unless page.breadcrumbs == false %}
-    <section class="span12">{% breadcrumbs %}</section>
+    <section>{% breadcrumbs %}</section>
   {% endunless %}
-<article role="article" class="span12">
+  <article role="article">
 {% else %}
+<div class="col-md-9 col-sm-9 content-wrapper">
   {% unless page.breadcrumbs == false %}
-    <section class="span8">{% breadcrumbs %}</section>
+    <section>{% breadcrumbs %}</section>
   {% endunless %}
-<article role="article" class="span8">
+<article role="article">
 {% endif %}
     {% if page.title and page.showTitle != false %}
   <header class="page-header">
     <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
   </header>
   {% endif %}
-  {{ content | pretty_print }}
+  {{ content }}
 </article>
-
+</div>
