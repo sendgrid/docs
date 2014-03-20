@@ -330,7 +330,6 @@ body.logged-out .logged-out, body.logged-in .logged-in {
   height: 248px;
   border: 0;
   margin-bottom: -8px;
-  margin-top: 10px;
 }
 
 #content {
