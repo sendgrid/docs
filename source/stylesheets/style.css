@@ -13,6 +13,10 @@ article {
   max-width:725px;
 }
 
+.content-wrapper {
+  padding-left:40px;
+}
+
 b, strong {
   font-family: "Proxima N W15 Smbd";
 }
