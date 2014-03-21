@@ -32,14 +32,21 @@
 
   <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
-  <!--[if !IE]>-->
-    <link href="{{root_url}}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
-  <!--<![endif]-->
+{% css_asset_tag global %}
+- /source/_assets/stylesheets/bootstrap.less
+- /source/_assets/stylesheets/style.css
+- /source/_assets/stylesheets/icomoon.css
+- /source/_assets/stylesheets/syntax.css
+- /source/_assets/stylesheets/print.css
+- /source/_assets/stylesheets/vidgrid.css
+{% endcss_asset_tag %}
+
+<!--
   <link href="{{root_url}}/stylesheets/fonts.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% if page.responsive == false %}
   <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endif %}
-  
+-->
   <script type="text/javascript">
 
    // Add a script element as a child of the body
