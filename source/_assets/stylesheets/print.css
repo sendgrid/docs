@@ -18,6 +18,8 @@
   .tab-content { background: none; }
   .tab-content > .tab-pane { display: block; }
 
+  .breadcrumb { display: none; }
+
   .code { -webkit-margin-start: 0; -webkit-margin-end: 0; font-size:11px; }
   .highlight code { background: red; background-image:none; }
   .gutter { display:none }
