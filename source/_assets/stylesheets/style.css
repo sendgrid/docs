@@ -404,6 +404,23 @@ body:before {
 
 #nav-menu li.active {
   background-color: rgb(0,112,205);
+  margin-left: -40px;
+  padding-left: 40px;
+}
+
+#nav-menu li ul li.active {
+  margin-left: -80px;
+  padding-left: 80px;
+}
+
+#nav-menu li ul li ul li.active {
+  margin-left: -120px;
+  padding-left: 120px;
+}
+
+#nav-menu li ul li ul li ul li.active {
+  margin-left: -160px;
+  padding-left: 160px;
 }
 
 .subtree-name {
