@@ -159,8 +159,9 @@ code.wrap, code.requestdata {
 }
 
 .request-block code {
-	display: inline-block;
+  display: inline-block;
   white-space: normal;
+  word-break: break-word;
 }
 
 .request-block .requestdata {
