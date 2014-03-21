@@ -48,6 +48,9 @@ GEM
       maruku (~> 0.5)
       pygments.rb (~> 0.5.0)
       safe_yaml (~> 0.7.0)
+    jekyll-asset-pipeline (0.1.2)
+      jekyll (>= 0.10.0)
+      liquid (>= 1.9.0)
     json (1.8.0)
     juicer (1.0.21)
       cmdparse
@@ -103,6 +106,7 @@ DEPENDENCIES
   haml (~> 3.1.7)
   indextank
   jekyll (~> 1.0.3)
+  jekyll-asset-pipeline
   juicer
   liquid (~> 2.3.0)
   nokogiri
