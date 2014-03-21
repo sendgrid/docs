@@ -18,9 +18,7 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email:
-# RSS feeds can list your email address if you like
-email:
+
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -47,11 +45,12 @@ breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/page_navigation.html]
 
-# Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
-# and add an array with the asides you want to use.
-blog_index_asides: [asides/page_navigation.html]
-post_asides: [asides/page_navigation.html]
-page_asides: [asides/page_navigation.html]
+asset_pipeline:
+  bundle: true            # Default = true
+  compress: true          # Default = true
+  output_path: assets     # Default = assets
+  display_path: nil       # Default = nil
+  gzip: false             # Default = false
 
 # ----------------------- #
 #   3rd Party Settings    #
