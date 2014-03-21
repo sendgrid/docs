@@ -279,8 +279,15 @@ article .nav-tabs li a {
   height:190px;
   vertical-align:middle;
   font-family: "Proxima N W15 Light";
-  cursor: pointer;
-  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.panel:hover a {
+  color:white;
+  padding: 15px;
+  margin: -15px;
+  display: block;
+  height: 210px;
 }
 
 .panel h3 {
