@@ -13,6 +13,10 @@ article {
   max-width:725px;
 }
 
+table {
+  background-color: white;
+}
+
 .content-wrapper {
   padding-left:40px;
   padding-right:40px;
@@ -78,7 +82,6 @@ hr.docs-separator {
 	margin: 40px 0 39px;
 }
 
-
 .callout-info {
   background-color: #f0f7fd;
   border-color: #d0e3f0;
@@ -105,7 +108,6 @@ border-color: #dFb5b4;
 	margin: 25px 0 0 0;
 	font-weight: bold;
 }
-
 
 .code-buttons {
   margin: 0 40px;
@@ -153,12 +155,12 @@ code.wrap, code.requestdata {
 }
 
 .request-block {
-	background: #FFF url(/images/noise.png?embed=true);
 	margin: 10px 0;
 }
 
 .request-block code {
 	display: inline-block;
+  white-space: normal;
 }
 
 .request-block .requestdata {
@@ -184,8 +186,14 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 .tab-content {
 	padding: 10px;
 	border: 1px solid #DDD;
-	margin-top: -19px;
 	margin-bottom: 10px;
+  border-top:0px;
+  background-color:white;
+}
+
+article .nav-tabs li a {
+  border-bottom:0px;
+  color: #555;
 }
 
 #header-top { 
