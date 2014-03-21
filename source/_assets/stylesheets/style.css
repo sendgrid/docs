@@ -66,6 +66,10 @@ line-height: 26px;
 
 .icon-link { display:none; }
 
+.anchor-wrap:hover .anchor-icon i {
+	display: inline-block;
+}
+
 #logo {
 	margin-top:18px;
 	display:inline-block;
