@@ -14,11 +14,12 @@ group :development do
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
   gem 'jekyll-asset-pipeline'
+  gem 'therubyracer'
+  gem 'less'
 end
 
 gem 'capistrano'
 gem 's3-static-site'
 gem 'nokogiri'
 gem 'nokogiri-pretty'
-gem 'juicer'
 gem 'indextank'

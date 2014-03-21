@@ -33,12 +33,12 @@
   <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
 {% css_asset_tag global %}
-- /source/_assets/stylesheets/bootstrap.less
-- /source/_assets/stylesheets/style.css
-- /source/_assets/stylesheets/icomoon.css
-- /source/_assets/stylesheets/syntax.css
-- /source/_assets/stylesheets/print.css
-- /source/_assets/stylesheets/vidgrid.css
+- /_assets/stylesheets/bootstrap.less
+- /_assets/stylesheets/style.css
+- /_assets/stylesheets/icomoon.css
+- /_assets/stylesheets/syntax.css
+- /_assets/stylesheets/print.css
+- /_assets/stylesheets/vidgrid.css
 {% endcss_asset_tag %}
 
 <!--
@@ -47,21 +47,38 @@
   <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
   {% endif %}
 -->
+
+{% javascript_asset_tag global %}
+-  /_assets/bower_components/jquery/dist/jquery.min.js
+-  /_assets/javascripts/fonts.js
+-  /_assets/javascripts/collapse.min.js
+-  /_assets/bower_components/jstorage/jstorage.min.js
+-  /_assets/javascripts/menu.js
+-  /_assets/javascripts/analytics.js
+-  /_assets/javascripts/anchors.js
+-  /_assets/javascripts/codebuttons.js
+-  /_assets/bower_components/modernizr/modernizr.js
+-  /_assets/bower_components/bootstrap/dist/js/bootstrap.min.js
+-  /_assets/javascripts/libs/ZeroClipboard.js
+-  /_assets/javascripts/search.js
+-  /_assets/javascripts/octopress.js
+{% endjavascript_asset_tag %}
+
   <script type="text/javascript">
 
    // Add a script element as a child of the body
-   function downloadJSAtOnload() {
-   var element = document.createElement("script");
-   element.src = "{{root_url}}{% minified_js_file %}";
-   document.body.appendChild(element);
+   //function downloadJSAtOnload() {
+   //var element = document.createElement("script");
+   //element.src = "";
+   //document.body.appendChild(element);
    }
 
    // Check for browser support of event handling capability
-   if (window.addEventListener)
-   window.addEventListener("load", downloadJSAtOnload, false);
-   else if (window.attachEvent)
-   window.attachEvent("onload", downloadJSAtOnload);
-   else window.onload = downloadJSAtOnload;
+   //if (window.addEventListener)
+   //window.addEventListener("load", downloadJSAtOnload, false);
+   //else if (window.attachEvent)
+   //window.attachEvent("onload", downloadJSAtOnload);
+   //else window.onload = downloadJSAtOnload;
 
   </script>
 
