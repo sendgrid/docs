@@ -259,6 +259,7 @@ body.logged-out .logged-out, body.logged-in .logged-in {
   vertical-align:middle;
   font-family: "Proxima N W15 Light";
   cursor: pointer;
+  border: 1px solid #e0e0e0;
 }
 
 .panel h3 {
@@ -444,9 +445,9 @@ body:before {
   float: right;
 }
 
-
 .page-header {
-  margin: 10px 0;
+  margin: 0 0 30px 0;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ddd;
 }
 
