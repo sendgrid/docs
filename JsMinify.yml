@@ -7,7 +7,6 @@ files: [
   'source/bower_components/jstorage/jstorage.min.js',
   'source/javascripts/menu.js',
   'source/javascripts/analytics.js',
-  'source/javascripts/anchors.js',
   'source/javascripts/codebuttons.js',
   'source/bower_components/modernizr/modernizr.js',
   'source/bower_components/bootstrap/dist/js/bootstrap.min.js',
