@@ -16,6 +16,7 @@ group :development do
   gem 'jekyll-asset-pipeline'
   gem 'therubyracer'
   gem 'less'
+  gem 'yui-compressor'
 end
 
 gem 'capistrano'

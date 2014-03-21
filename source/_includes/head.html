@@ -34,6 +34,7 @@
 
 {% css_asset_tag global %}
 - /_assets/stylesheets/bootstrap.less
+- /_assets/stylesheets/fonts.css
 - /_assets/stylesheets/style.css
 - /_assets/stylesheets/icomoon.css
 - /_assets/stylesheets/syntax.css
@@ -41,14 +42,9 @@
 - /_assets/stylesheets/vidgrid.css
 {% endcss_asset_tag %}
 
-<!--
-  <link href="{{root_url}}/stylesheets/fonts.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% if page.responsive == false %}
-  <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% endif %}
--->
+  <script type="text/javascript">
 
-{% javascript_asset_tag global %}
+   filename = "{% javascript_asset_tag global %}
 -  /_assets/bower_components/jquery/dist/jquery.min.js
 -  /_assets/javascripts/fonts.js
 -  /_assets/javascripts/collapse.min.js
@@ -62,23 +58,21 @@
 -  /_assets/javascripts/libs/ZeroClipboard.js
 -  /_assets/javascripts/search.js
 -  /_assets/javascripts/octopress.js
-{% endjavascript_asset_tag %}
-
-  <script type="text/javascript">
+{% endjavascript_asset_tag %}"
 
    // Add a script element as a child of the body
-   //function downloadJSAtOnload() {
-   //var element = document.createElement("script");
-   //element.src = "";
-   //document.body.appendChild(element);
+   function downloadJSAtOnload() {
+   var element = document.createElement("script");
+   element.src = filename;
+   document.body.appendChild(element);
    }
 
    // Check for browser support of event handling capability
-   //if (window.addEventListener)
-   //window.addEventListener("load", downloadJSAtOnload, false);
-   //else if (window.attachEvent)
-   //window.attachEvent("onload", downloadJSAtOnload);
-   //else window.onload = downloadJSAtOnload;
+   if (window.addEventListener)
+   window.addEventListener("load", downloadJSAtOnload, false);
+   else if (window.attachEvent)
+   window.attachEvent("onload", downloadJSAtOnload);
+   else window.onload = downloadJSAtOnload;
 
   </script>
 
