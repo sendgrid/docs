@@ -13,11 +13,14 @@ group :development do
   gem 'rb-fsevent', '~> 0.9'
   gem 'stringex', '~> 1.4.0'
   gem 'liquid', '~> 2.3.0'
+  gem 'jekyll-asset-pipeline'
+  gem 'therubyracer'
+  gem 'less'
+  gem 'yui-compressor'
 end
 
 gem 'capistrano'
 gem 's3-static-site'
 gem 'nokogiri'
 gem 'nokogiri-pretty'
-gem 'juicer'
 gem 'indextank'

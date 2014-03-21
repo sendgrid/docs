@@ -14,8 +14,6 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 * `npm install` to install build tools.
 * `bower install` to install client-side dependencies (jQuery,
   bootstrap)
-* `lessc source/stylesheets/bootstrap.less >
-  source/stylesheets/bootstrap.css` to build the custom bootstrap file.
 * `bundle install` to install required rubygems.
 * `_config.sample.yml` to `_config.yml`
 * Set your root (if you're running locally it'll just be `/`) in `_config.yml`
@@ -126,10 +124,9 @@ method, the url (excluding .json or .xml extension), and the data
 payload in querystring format.
 
 ## JS and CSS, etc
-Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:
-> You need Java installed and available on your PATH. During gem installation, Juicer will download and install YUI Compressor, Closure Compiler, JsLint and Rhino for you.
 
-JavaScript and CSS are minified and combined using Juicer. The files to be packaged and their orders are specified in <code>JsMinify.yml</code> and <code>CssMinify.yml</code>. Image files referenced in CSS files are embedded as data-uri information, assuming they are not too large. 
+JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
+via `_plugins/jekyll_asset_pipeline.rb`.
 
 ## License
 (The MIT License)

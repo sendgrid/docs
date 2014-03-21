@@ -32,24 +32,38 @@
 
   <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
-  <!--[if lt IE 8]>
-    <link href="{{root_url}}{% minified_css_file %}" media="screen, projection" rel="stylesheet" type="text/css">
-  <![endif]-->
+{% css_asset_tag global %}
+- /_assets/stylesheets/bootstrap.less
+- /_assets/stylesheets/fonts.css
+- /_assets/stylesheets/style.css
+- /_assets/stylesheets/icomoon.css
+- /_assets/stylesheets/syntax.css
+- /_assets/stylesheets/print.css
+- /_assets/stylesheets/vidgrid.css
+{% endcss_asset_tag %}
 
-  <!--[if !IE]>-->
-    <link href="{{root_url}}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
-  <!--<![endif]-->
-  <link href="{{root_url}}/stylesheets/fonts.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% if page.responsive == false %}
-  <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% endif %}
-  
   <script type="text/javascript">
+
+   filename = "{% javascript_asset_tag global %}
+-  /_assets/bower_components/jquery/dist/jquery.min.js
+-  /_assets/javascripts/fonts.js
+-  /_assets/javascripts/collapse.min.js
+-  /_assets/bower_components/jstorage/jstorage.min.js
+-  /_assets/javascripts/menu.js
+-  /_assets/javascripts/analytics.js
+-  /_assets/javascripts/anchors.js
+-  /_assets/javascripts/codebuttons.js
+-  /_assets/bower_components/modernizr/modernizr.js
+-  /_assets/bower_components/bootstrap/dist/js/bootstrap.min.js
+-  /_assets/javascripts/libs/ZeroClipboard.js
+-  /_assets/javascripts/search.js
+-  /_assets/javascripts/octopress.js
+{% endjavascript_asset_tag %}"
 
    // Add a script element as a child of the body
    function downloadJSAtOnload() {
    var element = document.createElement("script");
-   element.src = "{{root_url}}{% minified_js_file %}";
+   element.src = filename;
    document.body.appendChild(element);
    }
 
