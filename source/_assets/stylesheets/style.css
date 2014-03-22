@@ -66,6 +66,10 @@ line-height: 26px;
 
 .icon-link { display:none; }
 
+.anchor-wrap:hover .anchor-icon i {
+	display: inline-block;
+}
+
 #logo {
 	margin-top:18px;
 	display:inline-block;
@@ -275,15 +279,8 @@ article .nav-tabs li a {
   height:190px;
   vertical-align:middle;
   font-family: "Proxima N W15 Light";
-  overflow: hidden;
-}
-
-.panel:hover a {
-  color:white;
-  padding: 15px;
-  margin: -15px;
-  display: block;
-  height: 210px;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
 }
 
 .panel h3 {
@@ -400,6 +397,23 @@ body:before {
 
 #nav-menu li.active {
   background-color: rgb(0,112,205);
+  margin-left: -40px;
+  padding-left: 40px;
+}
+
+#nav-menu li ul li.active {
+  margin-left: -80px;
+  padding-left: 80px;
+}
+
+#nav-menu li ul li ul li.active {
+  margin-left: -120px;
+  padding-left: 120px;
+}
+
+#nav-menu li ul li ul li ul li.active {
+  margin-left: -160px;
+  padding-left: 160px;
 }
 
 .subtree-name {
@@ -437,25 +451,24 @@ body:before {
   font-size: 12pt;
 }
 
-.breadcrumb { 
+.breadcrumb-pane { 
   font-size: 13px;
+}
+
+.breadcrumb {
+  float: left;
   padding: 20px 0px 0px 0px;
   margin: 0 0 10px;
 }
 
-.breadcrumb ul {
-	margin: 0;
-	padding: 0;
-	float: left;
+.breadcrumb-pane .edit-link {
+  margin-top: 21px;
+  float: right;
 }
-
-.breadcrumb .edit-link {
-	float: right;
-}
-
 
 .page-header {
-  margin: 10px 0;
+  margin: 0 0 30px 0;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ddd;
 }
 

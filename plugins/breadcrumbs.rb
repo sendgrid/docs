@@ -19,7 +19,7 @@ module Jekyll
         @dirs[path] = site_page.data
       end
       
-      output='<div class="clearfix"><ul class="breadcrumb">'
+      output='<div class="breadcrumb-pane clearfix"><ul class="breadcrumb">'
       
       output+='<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/index.html" itemprop="url"><span itemprop="title">Documentation</span></a></li>'
       
@@ -57,8 +57,8 @@ module Jekyll
         end
       end
       
-      output += "<span class=\"pull-right\"><a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> Edit</a></span>
-      </ul>"
+      output += "</ul>"
+      output += "<a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> Edit</a>"
       output += "</div>"
       puts "generating breadcrumbs for #{@page_url}"
       output
