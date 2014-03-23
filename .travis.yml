@@ -12,6 +12,9 @@ install:
   - bower install
   - bundle install
 
+before_script:
+  - cp _config.sample.yml _config.yml
+
 script:
   - bundle exec rake generate
 
