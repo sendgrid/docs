@@ -13,6 +13,6 @@ install:
   - bundle install
 
 script:
-  - rake generate
+  - bundle exec rake generate
 
 #add after_script to deploy to s3
