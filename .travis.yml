@@ -1,0 +1,21 @@
+node_js:
+- '0.10'
+branches:
+  only:
+  - develop
+install:
+- npm install
+- bower install
+- bundle install
+before_script:
+- cp _config.sample.yml _config.yml
+script:
+- bundle exec rake generate
+- bundle exec rake linklint
+after_success:
+- bundle exec cap deploy
+env:
+  global:
+  - secure: f6Xi8/jXfnWpCOP9T5f+nscg5tzlQ6+YLjI+mur2nGT+An4SbFS/LehoH1Q2jM6mI4jLxK/4TTBr+sWKgw3UzQ9ziTfCkV4fHxgQ8Aw4QWiLg0BNoLnYlYbDFK2uSgKuSYRoYSZ1OAZzmn+d/MuEfQDn/vbQwqqPgGufwbOALvE=
+  - secure: JOPq/76SiOqA42M+UqwnNVbjKaqHnTmEhwQyuf0Fy8zje7jDSLKc5C8NRLXxo0qWNFJ1KSJPaWuvDh1QPO2c50sbdpHyguLt3FkmshH9jhjCOLkXO0OaG9E3g+WrNiGqZ+iRrz/R031MvVBWGUhCtFquR+/odfcTDo/d0oS50Gk=
+  - secure: l2bW5V1zeA9VW5UT5OQGQYl3UeSrS8pX2Cq0n/KuCc5pyEu84uPpQUpWdtCSIkwz9xRk+xAO+VyJCI5S5FYMcQGEOQAJV/puqDwhV3klksTaHLzjygCRpFmKpYPj/5t9mYBmbITBakskhgtM0U0Jjxw8w3bpGfRqRjOTAzS3RB4=
