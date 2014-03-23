@@ -1,5 +1,7 @@
 # SendGrid Documentation
 
+[![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
+
 This site is based on Octopress, which is in turn based on Jekyll, with a dash of Twitter Bootstrap added.
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
