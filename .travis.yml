@@ -17,5 +17,6 @@ before_script:
 
 script:
   - bundle exec rake generate
+  - rake linklint
 
 #add after_script to deploy to s3
