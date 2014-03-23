@@ -1,0 +1,18 @@
+node_js:
+  - "0.10"
+
+# whitelist
+branches:
+  only:
+    - travis
+    - develop
+
+install:
+  - npm install
+  - bower install
+  - bundle install
+
+script:
+  - rake generate
+
+#add after_script to deploy to s3
