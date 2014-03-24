@@ -17,11 +17,6 @@ table {
   background-color: white;
 }
 
-small { 
-  font-family: "Proxima N W15 Light",
-  font-size:13px;
-}
-
 .content-wrapper {
   padding-left:40px;
   padding-right:40px;
@@ -219,6 +214,11 @@ article .nav-tabs li a {
 
 #header-top a {
   color: white;
+}
+
+#header-top small {
+  font-family: "Proxima N W15 Light",
+  font-size:12px;
 }
 
 #nav { 
