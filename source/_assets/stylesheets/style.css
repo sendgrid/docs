@@ -216,9 +216,16 @@ article .nav-tabs li a {
   color: white;
 }
 
-#header-top small {
+#header-top .login-link {
   font-family: "Proxima N W15 Light";
-  font-size:12px;
+  text-align: right;
+  font-size: 12px;
+}
+
+#header-top .login-link a {
+  position: relative;
+  top: 2px;
+  right: -5px;
 }
 
 #nav { 
