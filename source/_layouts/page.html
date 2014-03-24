@@ -25,5 +25,22 @@ layout: default
   </header>
   {% endif %}
   {{ content }}
+  {% if page.hideFeedback != true %}
+  <div class="feedback">
+    <span class="prompt">Was this helpful?</span>
+    <a class="feedback-element feedback-positive" href="#">
+      <img src="{{root_url}}/images/encircled-plus.png" alt="+" />
+      Yes
+    </a>
+    <a class="feedback-element feedback-negative" href="#">
+      <img src="{{root_url}}/images/encircled-minus.png" alt="-" />
+      No
+    </a>
+    <a class="feedback-element feedback-more" href="mailto:community@sendgrid.com?subject={{ "[docs-feedback] " | append: page.title | uri_escape }}&body=Hello!%0AI%20have%20some%20feedback%20regarding%20your%20documentation%3A%0A%0A%0A%0A{{ append: site.url | append: page.url | uri_escape }}">
+      <img src="{{root_url}}/images/feedback.png" alt="" />
+      Feedback
+    </a>
+  </div>
+  {% endif %}
 </article>
 </div>

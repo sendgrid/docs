@@ -43,4 +43,26 @@ jQuery(function ($) {
 		gaPushEvent(eventInfo);
 	});
 
+	$(".feedback-positive, .feedback-negative").on("click keypress", function (e) {
+		e.preventDefault();
+
+		var feedbackType = $(this).hasClass("feedback-positive");
+		var eventLabel = feedbackType ? "Good" : "Bad";
+		var eventValue = Number(feedbackType)*10;
+		var eventInfo = ['_trackEvent', 'Feedback', 'Vote', eventLabel, eventValue];
+
+		gaPushEvent(eventInfo);
+
+		$(this).closest(".feedback").text("Thanks for providing feedback!");
+	});
+
+	$(".feedback-more").on("click keypress", function () {
+
+		var eventInfo = ['_trackEvent', 'Feedback', 'More', 'Click'];
+
+		gaPushEvent(eventInfo);
+
+		$(this).closest(".feedback").text("Thanks for providing feedback!");
+	});
+
 });
