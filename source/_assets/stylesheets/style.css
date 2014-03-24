@@ -398,6 +398,10 @@ body:before {
 	cursor: pointer;
 }
 
+#nav-menu li.collapsibleListClosed > ul {
+  display: none;
+}
+
 #nav-menu li {
   border-top:1px solid rgb(27,28,30);
   background-color: rgb(30,36,47);

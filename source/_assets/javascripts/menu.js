@@ -1,5 +1,6 @@
 $(function() {
 	if($('#nav-menu').length) {
+		$(".collapsibleListOpen, .collapsibleListClosed").toggleClass("collapsibleListOpen collapsibleListClosed");
 		CollapsibleLists.applyTo(document.getElementById('nav-menu'));
 	}
 

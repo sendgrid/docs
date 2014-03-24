@@ -116,6 +116,8 @@ module Jekyll
           li_class = ""
           
           if @page_url.index(base)
+            list_class = "collapsibleListOpen"
+          else
             list_class = "collapsibleListClosed"
           end
           
