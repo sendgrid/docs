@@ -19,3 +19,7 @@ env:
   - secure: f6Xi8/jXfnWpCOP9T5f+nscg5tzlQ6+YLjI+mur2nGT+An4SbFS/LehoH1Q2jM6mI4jLxK/4TTBr+sWKgw3UzQ9ziTfCkV4fHxgQ8Aw4QWiLg0BNoLnYlYbDFK2uSgKuSYRoYSZ1OAZzmn+d/MuEfQDn/vbQwqqPgGufwbOALvE=
   - secure: JOPq/76SiOqA42M+UqwnNVbjKaqHnTmEhwQyuf0Fy8zje7jDSLKc5C8NRLXxo0qWNFJ1KSJPaWuvDh1QPO2c50sbdpHyguLt3FkmshH9jhjCOLkXO0OaG9E3g+WrNiGqZ+iRrz/R031MvVBWGUhCtFquR+/odfcTDo/d0oS50Gk=
   - secure: l2bW5V1zeA9VW5UT5OQGQYl3UeSrS8pX2Cq0n/KuCc5pyEu84uPpQUpWdtCSIkwz9xRk+xAO+VyJCI5S5FYMcQGEOQAJV/puqDwhV3klksTaHLzjygCRpFmKpYPj/5t9mYBmbITBakskhgtM0U0Jjxw8w3bpGfRqRjOTAzS3RB4=
+notifications:
+  hipchat:
+    rooms:
+      secure: cJXYjLMixfUEqezAtLMeiSEm85Ma3QlOnH7kt+AnxDkbVatJ+tPleWD+9pNcQc4lHeQKiA2v5mEb/de2agWZ311IduxAVMnXqgxv3w4+ZWe/h/25MlEgQ0U37g55Q1oezIK9PE8UtnHCZngwig978J2lFS+Ubn9BzQkGIrs+x7Q=
