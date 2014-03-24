@@ -17,7 +17,7 @@ function gaPushEvent (eventInfo) {
 
 	if(typeof ga === "function") {
 		ga('send', gauEventInfo);
-	} else if (_gaq) {
+	} else if (typeof _gaq === "object" || typeof _gaq === "array") {
 		_gaq.push(eventInfo);
 	}
 }
