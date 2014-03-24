@@ -69,15 +69,15 @@ indextank_index:  docs #set this to the index name you set on indexden.com
 # ----------------------- #
 
 folder_weights:
- "/index.html": 110
- "/User_Guide": 100
- "/Integrate": 90
- "/Code_Examples": 80
+ "/index.html": 120
+ "/API_Reference": 110
+ "/Integrate": 110
+ "/Code_Examples": 100
+ "/User_Guide": 90
+ "/Marketing_Emails": 80
  "/Delivery_Metrics": 70
- "/Marketing_Emails": 60
- "/Apps": 55
- "/API_Reference": 50
- "/API_Workshop": 40
+ "/Apps": 60
+ "/API_Workshop": 50
 
 folder_icons:
   "/VidGrid": "icon-vidgrid"
