@@ -76,5 +76,7 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-  {% include google_analytics.html %}
+  {% if site.version != "DEV" %}
+    {% include google_analytics.html %}
+  {% endif %}
 </head>
