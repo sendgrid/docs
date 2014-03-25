@@ -70,7 +70,7 @@ line-height: 26px;
 	display:inline-block;
 	width:120px;
 	height:33px;
-	background: url(../images/sendgrid-logo.png?embed=true);
+	background: url(../images/sendgrid-logo.png?embed=true) no-repeat;
 }
 
 #content img {
