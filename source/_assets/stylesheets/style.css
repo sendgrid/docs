@@ -37,7 +37,7 @@ b, strong {
 .bar-indicator { 
 	width: 220px;
 	height: 20px;
-	background: url(/images/bar-indicator.gif);
+	background: url(../images/bar-indicator.gif);
 }
 
 .result a.title { text-decoration:underline; }
@@ -70,7 +70,7 @@ line-height: 26px;
 	display:inline-block;
 	width:120px;
 	height:33px;
-	background: url(/images/sendgrid-logo.png?embed=true);
+	background: url(../images/sendgrid-logo.png?embed=true);
 }
 
 #content img {
@@ -396,12 +396,12 @@ body:before {
 .nav>li>a:hover  { background-color: transparent; text-decoration: underline; }
 
 #nav-menu li.collapsibleListOpen{
-  background:rgb(53,61,78) url('/images/minus.png?embed=true') no-repeat 16px 16px;
+  background:rgb(53,61,78) url('../images/minus.png?embed=true') no-repeat 16px 16px;
 	cursor: pointer;
 }
 
 #nav-menu li.collapsibleListClosed{
-  background: rgb(47, 54, 70) url('/images/plus.png?embed=true') no-repeat 16px 16px;
+  background: rgb(47, 54, 70) url('../images/plus.png?embed=true') no-repeat 16px 16px;
 	cursor: pointer;
 }
 
@@ -493,7 +493,7 @@ body:before {
 
 li.official {
 	list-style-type: none;
-	background: url(/images/favicon.ico) left center no-repeat;
+	background: url(../images/favicon.ico) left center no-repeat;
 	padding: 0 24px;
 	margin-left: -20px;
 }
