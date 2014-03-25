@@ -53,5 +53,19 @@ module JekyllAssetPipeline
       "#{@path}/#{@filename}"
     end
   end
+
+  class CssTagTemplate < JekyllAssetPipeline::Template
+    def self.filetype
+      '.css'
+    end
+
+    def self.priority
+      -1
+    end
+
+    def html
+      "#{@path}/#{@filename}"
+    end
+  end
 end
 
