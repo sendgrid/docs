@@ -12,7 +12,7 @@
     <span class="divider">/</span>
   </li>
 
-  {% for unused in site.breadcrumb_list limit:num_parts %}
+  {% for unused in site.data.breadcrumbs.breadcrumb_list limit:num_parts %}
    {% capture first_word %}{{ url_parts | truncatewords:1 | remove:" …" | remove:"…"}}{% endcapture %}
    {% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
 
