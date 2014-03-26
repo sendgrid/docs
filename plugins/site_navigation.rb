@@ -11,8 +11,8 @@ module Jekyll
     def render(context)
       site = context.registers[:site]
       @page_url = context.environments.first["page"]["url"]
-      @folder_weights = site.config['folder_weights']
-      @folder_icons = site.config['folder_icons']
+      @folder_weights = site.data['folder_weights']
+      @folder_icons = site.data['folder_icons']["icons"]
       @nodes = {}
       tree = {}
       sorted_tree = {}

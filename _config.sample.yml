@@ -8,7 +8,6 @@ url: http://sendgrid.com/docs
 title: SendGrid Documentation | SendGrid
 author: SendGrid
 description:
-version: DEV
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -37,9 +36,6 @@ pygments: false # default python pygments have been replaced by pygments.rb
 
 titlecase: true       # Converts page and post titles to titlecase
 
-# this is just a placeholder list for breadcrumbs so we have something to iterate over.
-# think of it this way: the number of indices in this array is the number of breadcrumb levels to be shown.
-breadcrumb_list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -64,20 +60,3 @@ indextank_index:  docs #set this to the index name you set on indexden.com
 # these values are applied as regular expressions 
 # indextank_excludes: [index.html, 404.html, ^/secret/]
 
-# ----------------------- #
-#    SendGrid Settings    #
-# ----------------------- #
-
-folder_weights:
- "/index.html": 120
- "/API_Reference": 110
- "/Integrate": 110
- "/Code_Examples": 100
- "/User_Guide": 90
- "/Marketing_Emails": 80
- "/Delivery_Metrics": 70
- "/Apps": 60
- "/API_Workshop": 50
-
-folder_icons:
-  "/VidGrid": "icon-vidgrid"
