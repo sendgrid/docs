@@ -9,7 +9,7 @@ install:
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- echo "version: travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID" > 'source/_data/version.yml'
+- echo "version: 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'" > 'source/_data/version.yml'
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
