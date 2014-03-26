@@ -4,7 +4,7 @@ branches:
   only:
   - develop
 before_install:
-  - echo "version: https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER" > '$TRAVIS_BUILD_DIR/source/_data/version.yml'
+  - echo "version: https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER" > './source/_data/version.yml'
 install:
 - npm install
 - bower install
