@@ -1,3 +1,29 @@
+function gtmEvent() {
+	if(typeof arguments[0] === "object"){
+		var customEvent = arguments[0];
+		customEvent.event = 'customEvent';
+	}
+
+	if(typeof arguments[0] === "string"){
+		var customEvent = {
+			event: 'customEvent',
+			'eventCategory' : arguments[0],
+			'eventAction' : arguments[1],
+			'eventLabel' : typeof arguments[2] !== "undefined" ? arguments[2] : "",
+			'eventValue' : typeof arguments[3] !== "undefined" ? arguments[3] : ""
+		};
+		if (arguments[4] && typeof arguments[4] === "object" && typeof arguments[4].nonInteraction !== "undefined") {
+				customEvent.nonInteraction = arguments[4].nonInteraction;
+		}
+	}
+
+	if(customEvent){
+		var processed = dataLayer.push(customEvent);
+		if (customEvent.debug || (arguments[4] && typeof arguments[4] === "object" && typeof arguments[4].debug)) {
+			console.debug("Custom Event Processed?", !processed, customEvent);
+		}
+	}
+}
 
 function gaPushEvent (eventInfo) {
 	var gauEventInfo = {
@@ -15,7 +41,9 @@ function gaPushEvent (eventInfo) {
 		gauEventInfo['nonInteraction'] = Number(eventInfo[4]);
 	}
 
-	if(typeof ga === "function") {
+	if (typeof dataLayer === "object" || typeof dataLayer === "array") {
+		gtmEvent(gauEventInfo);	
+	} else if(typeof ga === "function") {
 		ga('send', gauEventInfo);
 	} else if (typeof _gaq === "object" || typeof _gaq === "array") {
 		_gaq.push(eventInfo);
