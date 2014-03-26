@@ -8,7 +8,6 @@ url: http://sendgrid.com/docs
 title: SendGrid Documentation | SendGrid
 author: SendGrid
 description:
-version: DEV
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
