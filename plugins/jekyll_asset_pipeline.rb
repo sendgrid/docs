@@ -1,7 +1,7 @@
-require 'jekyll_asset_pipeline'
+require 'japr'
 
-module JekyllAssetPipeline
-  class LessConverter < JekyllAssetPipeline::Converter
+module JAPR
+  class LessConverter < JAPR::Converter
     require 'less'
 
     def self.filetype
@@ -14,7 +14,7 @@ module JekyllAssetPipeline
     end
   end
 
-  class CssCompressor < JekyllAssetPipeline::Compressor
+  class CssCompressor < JAPR::Compressor
     require 'yui/compressor'
 
     def self.filetype
@@ -26,7 +26,7 @@ module JekyllAssetPipeline
     end
   end
 
-  class JavaScriptCompressor < JekyllAssetPipeline::Compressor
+  class JavaScriptCompressor < JAPR::Compressor
     require 'yui/compressor'
 
     def self.filetype
@@ -40,7 +40,7 @@ module JekyllAssetPipeline
 
   #hack the gem to have the JS asset tag output the filepath and not a
   #tag, so we can defer loading.
-  class JavaScriptTagTemplate < JekyllAssetPipeline::Template
+  class JavaScriptTagTemplate < JAPR::Template
     def self.filetype
       '.js'
     end
@@ -50,11 +50,11 @@ module JekyllAssetPipeline
     end
 
     def html
-      "#{@path}/#{@filename}"
+      @path + '/' + @filename
     end
   end
 
-  class CssTagTemplate < JekyllAssetPipeline::Template
+  class CssTagTemplate < JAPR::Template
     def self.filetype
       '.css'
     end
@@ -64,7 +64,7 @@ module JekyllAssetPipeline
     end
 
     def html
-      "#{@path}/#{@filename}"
+      @path + '/' + @filename
     end
   end
 end
