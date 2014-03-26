@@ -3,13 +3,14 @@ node_js:
 branches:
   only:
   - develop
+before_install:
+- echo "version: travis build:$TRAVIS_BUILD_NUMBER" > 'source/_data/version.yml'
 install:
 - npm install
 - bower install
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- echo "version: travis build:$TRAVIS_BUILD_NUMBER" > 'source/_data/version.yml'
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
