@@ -594,6 +594,10 @@ figure.code.expanded {
   max-height: none;
 }
 
+.live-doc form {
+  display: none;
+}
+
 
 @media (max-width: 767px) {
   .nav-link { text-align:center; }
