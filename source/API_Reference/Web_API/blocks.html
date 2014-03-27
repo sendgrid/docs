@@ -12,10 +12,10 @@ navigation:
 get 
 {% endanchor %}
 Retrieve a list of Blocks with addresses and response codes, optionally with dates.
-
-  <table class="table table-bordered table-striped"><tbody>
-<tr>
-<th>Parameter</th>
+  <table class="table table-bordered table-striped">
+  <tbody>
+      <tr>
+        <th>Parameter</th>
 
         <th>Required</th>
 
@@ -23,8 +23,9 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
         <th>Description</th>
       </tr>
-<tr>
-<td>date</td>
+
+      <tr>
+        <td>date</td>
 
         <td>No</td>
 
@@ -33,8 +34,9 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
         <td>Retrieve the timestamp of the Block records. It will return a date in a MySQL
         timestamp format - YYYY-MM-DD HH:MM:SS</td>
       </tr>
-<tr>
-<td>days</td>
+
+      <tr>
+        <td>days</td>
 
         <td>No</td>
 
@@ -42,8 +44,9 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
         <td>Number of days in the past for which to retrieve blocks (includes today)</td>
       </tr>
-<tr>
-<td>start_date</td>
+
+      <tr>
+        <td>start_date</td>
 
         <td>No</td>
 
@@ -52,8 +55,9 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
         <td>The start of the date range for which to retrieve blocks.</td>
       </tr>
-<tr>
-<td>end_date</td>
+
+      <tr>
+        <td>end_date</td>
 
         <td>No</td>
 
@@ -62,20 +66,29 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
         <td>The end of the date range for which to retrieve blocks.</td>
       </tr>
-       <tr> 
-      <td>limit</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>Optional field to limit the number of results returned.</td> 
-    </tr> 
-    <tr> 
-      <td>offset</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>optional beginning point in the list to retrieve from.</td> 
-    </tr> 
 
-</tbody></table>
+      <tr>
+        <td>limit</td>
+
+        <td>No</td>
+
+        <td>some integer</td>
+
+        <td>Optional field to limit the number of results returned.</td>
+      </tr>
+
+      <tr>
+        <td>offset</td>
+
+        <td>No</td>
+
+        <td>some integer</td>
+
+        <td>optional beginning point in the list to retrieve from.</td>
+      </tr>
+    </tbody>
+  </table>
+
 {% apiexample get GET https://api.sendgrid.com/api/blocks.get api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1 %}
   {% response json %}
 {
@@ -121,9 +134,10 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 delete 
 {% endanchor %}Delete an address from the Block list.
 
-<table class="table table-bordered table-striped"><tbody>
-<tr>
-<th>Parameter</th>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th>Parameter</th>
 
         <th>Required</th>
 
@@ -131,8 +145,9 @@ delete
 
         <th>Description</th>
       </tr>
-<tr>
-<td>email</td>
+
+      <tr>
+        <td>email</td>
 
         <td>Yes</td>
 
@@ -140,7 +155,8 @@ delete
 
         <td>Email block address to remove</td>
       </tr>
-</tbody></table>
+    </tbody>
+  </table>
 
 {% apiexample delete POST https://api.sendgrid.com/api/blocks.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com%}
   {% response json %}
