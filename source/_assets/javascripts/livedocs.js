@@ -99,7 +99,7 @@ $(function () {
 		var method = $(this).find("tr:eq(0)>td:eq(0)").text();
 		var url = $(this).find("tr:eq(0)>td:eq(1)").text();
 		if (method == "GET"){
-      var data = $.deparam($(this).find("tr:eq(0)>td:eq(1)").text());
+      var data = $.deparam(url.substr(url.indexOf('?')+1,url.length));
     } else {
       var data = $.deparam($(this).find("tr:eq(1)>td:eq(1)").text());
     }
