@@ -103,12 +103,12 @@ $(function () {
     } else {
       var data = $.deparam($(this).find("tr:eq(1)>td:eq(1)").text());
     }
-		var $form = $('<form action="' + url + '" method="' + method + '"></form>').appendTo($block);
+		var $form = $('<form class="well" action="' + url + '" method="' + method + '"></form>').appendTo($block);
 		$.each(data, function ( value, key ) {
       var key = key.replace(/^\s*(.+)\s*$/g, "$1");
       var value = value.replace(/^\s*(.+)\s*$/g, "$1");
-			$form.append('<label><span>' + value + '</span> <input type="text" name="' + value + '" value="' + key + '"></label>');
+			$form.append('<div class="form-group"><label><span>' + value + '</span> <input type="text" class="form-control" name="' + value + '" value="' + key + '"></label></div>');
 		});
-    $form.append('<button type="submit">Make Request</button>');
+    $form.append('<button class="btn" type="submit">Make Request</button>');
 	});
 });
