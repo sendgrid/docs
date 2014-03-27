@@ -1,5 +1,6 @@
 require 'rack'
 require 'htmlentities'
+require 'uri'
 
 module Jekyll
   class LiveDocTag < Liquid::Tag
@@ -30,9 +31,16 @@ module Jekyll
         inputs = inputs + '</input></div>'
       end
 
+      uri = URI.parse(@url);
+      if !uri.nil?
+        base_url = uri.scheme + "://" + uri.host + uri.path
+      end
+
       #wondering what this syntax is? google "here document"
       output=<<-HTML
       <div class="live-doc">
+        <input type="hidden" class="method" value="#{@method}"/>
+        <input type="hidden" class="url" value="#{base_url}"/>
         <button class="btn btn-primary tryit">Try It</button>
         <form role="form" class="well">
           #{inputs}
