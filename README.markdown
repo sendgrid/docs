@@ -1,6 +1,7 @@
 # SendGrid Documentation
 
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
+[![Dependency Status](https://gemnasium.com/sendgrid/docs.svg)](https://gemnasium.com/sendgrid/docs)
 
 This site is based on Octopress, which is in turn based on Jekyll, with a dash of Twitter Bootstrap added.
 
