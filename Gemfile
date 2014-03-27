@@ -11,6 +11,7 @@ gem 'redcarpet', '~> 2.3.0'
 gem 'safe_yaml', '~> 1.0'
 gem 'toml', '~> 0.1.0'
 gem 'rubypants'
+gem 'htmlentities'
 
 group :development do
   gem 'rake', '~> 10.1.1'
