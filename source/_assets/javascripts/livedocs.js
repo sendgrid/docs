@@ -98,7 +98,11 @@ $(function () {
 		var $block = $(this).parent(".live-doc");
 		var method = $(this).find("tr:eq(0)>td:eq(0)").text();
 		var url = $(this).find("tr:eq(0)>td:eq(1)").text();
-		var data = $.deparam($(this).find("tr:eq(1)>td:eq(1)").text());
+		if (method == "GET"){
+      var data = $.deparam($(this).find("tr:eq(0)>td:eq(1)").text());
+    } else {
+      var data = $.deparam($(this).find("tr:eq(1)>td:eq(1)").text());
+    }
 		var $form = $('<form action="' + url + '" method="' + method + '"></form>').appendTo($block);
 		$.each(data, function ( value, key ) {
       var key = key.replace(/^\s*(.+)\s*$/g, "$1");
