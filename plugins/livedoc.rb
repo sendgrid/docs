@@ -25,9 +25,9 @@ module Jekyll
           value = ""
         end
 
-        inputs = inputs + '<div class="form-group"><label><span>' + key + '</span>'
+        inputs = inputs + '<div class="form-group"><label>' + key + '</label>'
         inputs = inputs + '<input type="text" class="form-control" name="' + key + '" + value="' + value + '">'
-        inputs = inputs + '</input></label></div>'
+        inputs = inputs + '</input></div>'
       end
 
       #wondering what this syntax is? google "here document"
