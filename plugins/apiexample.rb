@@ -63,7 +63,9 @@ module Jekyll
             {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
             #{requestdata_block}
           {% endrequestblock %}
-
+          
+          {% livedoc #{request_type} #{request_url} #{data} %}
+          
           <h3>Response</h3>
           {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
         </div>
