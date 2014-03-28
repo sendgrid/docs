@@ -80,9 +80,11 @@ $(function () {
     live_call.find('.call').text(call);
 
     if (method != "GET") {
-      live_call.find('.hidden').removeClass("hidden");
+      live_call.find('.request-data').removeClass("hidden");
       live_call.find('.data').text(data);
     }
+
+    live_call.show();
 
     $.ajax({
       type: method,
@@ -90,10 +92,15 @@ $(function () {
       data: data
     })
     .done(function(response) {
-      alert(response);
+      live_call.find('.body').text(response);
+      live_call.find('.response-body').removeClass('hidden');
+
+      live_call.find('.headers').text(response.getAllResponseHeaders());
+      live_call.find('.response-headers').removeClass('hidden');
     })
-    .error(function(response) {
-      //console.log(response);
+    .fail(function(response, statusText, error) {
+      live_call.find('.body').text(statusText);
+      live_call.find('.response-body').removeClass('hidden');
     });
   });
 });

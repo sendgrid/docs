@@ -45,17 +45,27 @@ module Jekyll
                 <code class="call"></code>
               </td>
             </tr>
-            <tr class="hidden">
+            <tr class="request-data hidden">
               <td>Data</td>
               <td>
                 <code class="data"></code>
               </td>
             </tr>
+            <tr class="response-headers hidden">
+              <td>Response Headers</td>
+              <td>
+                <code class="headers"></code>
+              </td>
+            </tr>
+            <tr class="response-body hidden">
+              <td>Response Body</td>
+              <td>
+                <code class="body"></code>
+              </td>
+            </tr>
           </tbody>
           </table>
         </div>
-        <div class="live-header"></div>
-        <div class="live-body"></div>
       </div>
       HTML
 
