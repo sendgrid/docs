@@ -33,10 +33,10 @@ $(function () {
       form_table.append(form_field);
     });
 
-    form.append('<button type="input" class="btn btn-default form-control">Make Request</button>');
+    form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
     form.append('<hr/>'); 
-    button = '<button class="pull-right btn btn-default tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
- 
+    button = '<button class="pull-right btn btn-success tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
+    button += '<button class="pull-right btn btn-danger cancel" id="cancel-'+identifier+'">Cancel</button>'
     params_table.after(livedoc);
     params_table.prevAll('.anchor-wrap').first().append(button);
   });
@@ -46,22 +46,54 @@ $(function () {
     identifier = id.substr(id.indexOf('-')+1, id.length);
     $('#parameters-' + identifier).hide();
     $('#apiexample-' + identifier).hide();
-    $('#livedoc-' + identifier + ' form').slideDown();
+    $('#livedoc-' + identifier).show();
+    $(this).next('.cancel').show();
+    $(this).hide();
+  });
+
+  $('.cancel').click(function(){ 
+    id = $(this).attr('id');
+    identifier = id.substr(id.indexOf('-')+1, id.length);
+    $('#livedoc-' + identifier).hide();
+    $('#parameters-' + identifier).show();
+    $('#apiexample-' + identifier).show();
+    $(this).prev('.tryit').show();
+    $(this).hide();
   });
 
   $('.live-doc form').submit(function(e){
     e.preventDefault();
 
     url = $(this).parent().find('.url').val();
-    method = $(this).parent().find('.method').val();
+    method = $(this).parent().find('.method').val().toUpperCase().trim();
+    data = $(this).serialize();
+    format = "json"; //TODO
+
+    if (method=="GET") {
+      call = url + "." + format + "?" + data
+    } else {
+      call = url + "." + format
+    }
+
+    live_call = $(this).nextAll('.live-call');
+    live_call.find('.method').text(method);
+    live_call.find('.call').text(call);
+
+    if (method != "GET") {
+      live_call.find('.hidden').removeClass("hidden");
+      live_call.find('.data').text(data);
+    }
 
     $.ajax({
       type: method,
       url: url,
-      data: $(this).serialize(),
+      data: data
     })
     .done(function(response) {
       alert(response);
+    })
+    .error(function(response) {
+      //console.log(response);
     });
   });
 });

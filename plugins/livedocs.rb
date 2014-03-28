@@ -36,6 +36,26 @@ module Jekyll
             <tbody>
           </table>
         </form>
+        <div class="live-call">
+          <table class="table table-bordered request-block">
+          <tbody>
+            <tr>
+              <td class="method"></td>
+              <td>
+                <code class="call"></code>
+              </td>
+            </tr>
+            <tr class="hidden">
+              <td>Data</td>
+              <td>
+                <code class="data"></code>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+        <div class="live-header"></div>
+        <div class="live-body"></div>
       </div>
       HTML
 
