@@ -2,6 +2,7 @@ $(function () {
   $('.live-doc').each(function(){
     parent_id = $(this).parent().attr('id');
     form = $(this).find('form');
+    form_table = $(this).find('form>table');
     identifier = parent_id.substr(0,parent_id.indexOf('-'));
     params_table = $('#parameters-' + identifier);
 
@@ -14,12 +15,17 @@ $(function () {
       requirements = $(data[2]).text();
       description = $(data[3]).text();
 
-      form_field = '<div class="form-group">';
-      form_field = form_field + '<label>' + name + '</label>'
-      form_field = form_field + '<input type="text" class="form-control" name="' + name + '">'
-      form_field = form_field + '</div>'
+      status_class = required == "true" ? "has-error" : "";
+      input_class = required == "true" ? "required" : "";
 
-      form.append(form_field); 
+      form_field = "<tr><td>" + name + "</td>";
+      form_field = form_field + '<td><input type="text" class="' + status_class + '" name="' + name + '">'
+      form_field = form_field + '</td>';
+      form_field = form_field + "<td>" + requirements + "</td>";
+      form_field = form_field + "<td>" + description + "</td>";
+      form_field = form_field + "</tr>";
+
+      form_table.append(form_field); 
     });
 
     form.append('<button type="input" class="btn btn-default">Make Request</button>');
@@ -34,9 +40,6 @@ $(function () {
 
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val();
-
-    console.log(url);
-    console.log(method);
 
     $.ajax({
       type: method,

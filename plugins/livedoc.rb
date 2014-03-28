@@ -25,6 +25,16 @@ module Jekyll
         <input type="hidden" class="url" value="#{base_url}"/>
         <button class="btn btn-primary tryit">Try It</button>
         <form role="form" class="well">
+          <table>
+            <tbody>
+              <tr>
+                <th>Parameter</th>
+                <th>Value</th>
+                <th>Requirements</th>
+                <th>Description</th>
+              </tr>
+            <tbody>
+          </table>
         </form>
       </div>
       HTML
