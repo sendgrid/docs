@@ -9,7 +9,7 @@ module Jekyll
     def render(context)
       output = super
       output = <<-HTML
-      <table id="parameters-#{@identifier}" class="table table-bordered table-striped">
+      <table id="parameters-#{@identifier.strip}" class="table table-bordered table-striped">
         <tbody>
           <tr>
             <th>Parameter</th>
