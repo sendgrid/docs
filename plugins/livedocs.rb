@@ -6,8 +6,9 @@ module Jekyll
   class LiveDocTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
       parameters = markup.split(" ")
-      @method = parameters[0].upcase
-      @url = parameters[1]
+      @identifier = parameters[0]
+      @method = parameters[1].upcase
+      @url = parameters[2]
 
       super
     end
@@ -20,12 +21,11 @@ module Jekyll
 
       #wondering what this syntax is? google "here document"
       output=<<-HTML
-      <div class="live-doc">
+      <div class="live-doc" id="livedoc-#{@identifier}">
         <input type="hidden" class="method" value="#{@method}"/>
         <input type="hidden" class="url" value="#{base_url}"/>
-        <button class="btn btn-primary tryit">Try It</button>
-        <form role="form" class="well">
-          <table>
+        <form role="form" class="live-form">
+          <table class="table table-bordered table-striped live-params">
             <tbody>
               <tr>
                 <th>Parameter</th>

@@ -1,10 +1,11 @@
 $(function () {
   $('.live-doc').each(function(){
-    parent_id = $(this).parent().attr('id');
+    livedoc = $(this);
     form = $(this).find('form');
     form_table = $(this).find('form>table');
-    identifier = parent_id.substr(0,parent_id.indexOf('-'));
-    params_table = $('#parameters-' + identifier);
+    params_table = $(this).prev('table');
+    params_id = params_table.attr('id');
+    identifier = params_id.substr(params_id.indexOf('-')+1, params_id.length);
 
     rows = params_table.find('tr').slice(1); //throw out the header row
 
@@ -19,20 +20,33 @@ $(function () {
       input_class = required == "true" ? "required" : "";
 
       form_field = "<tr><td>" + name + "</td>";
-      form_field = form_field + '<td><input type="text" class="' + status_class + '" name="' + name + '">'
-      form_field = form_field + '</td>';
-      form_field = form_field + "<td>" + requirements + "</td>";
-      form_field = form_field + "<td>" + description + "</td>";
-      form_field = form_field + "</tr>";
+      form_field += '<td><input type="text" class="input-sm ' + status_class + '" name="' + name + '"'
+      if (required=="true") {
+        form_field += ' placeholder="required"';
+      }
+      form_field += '/>';
+      form_field += '</td>';
+      form_field += "<td>" + requirements + "</td>";
+      form_field += "<td>" + description + "</td>";
+      form_field += "</tr>";
 
-      form_table.append(form_field); 
+      form_table.append(form_field);
     });
 
-    form.append('<button type="input" class="btn btn-default">Make Request</button>');
+    form.append('<button type="input" class="btn btn-default form-control">Make Request</button>');
+    form.append('<hr/>'); 
+    button = '<button class="pull-right btn btn-default tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
+ 
+    params_table.after(livedoc);
+    params_table.prevAll('.anchor-wrap').first().append(button);
   });
 
   $('.tryit').click(function(){ 
-    $(this).next('form').show();
+    id = $(this).attr('id');
+    identifier = id.substr(id.indexOf('-')+1, id.length);
+    $('#parameters-' + identifier).hide();
+    $('#apiexample-' + identifier).hide();
+    $('#livedoc-' + identifier + ' form').slideDown();
   });
 
   $('.live-doc form').submit(function(e){

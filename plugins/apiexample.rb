@@ -13,9 +13,13 @@ module Jekyll
     def render(context)
       output = super
       output = <<-HTML
-        {% xmljsontabs #{@identifier}%}
-        <div class="tab-content">
-        #{output}
+        {% livedoc #{@identifier} #{@request_type} #{@url} #{@data} %}
+        
+        <div class="api-example" id="apiexample-#{@identifier}">
+          {% xmljsontabs #{@identifier}%}
+          <div class="tab-content">
+          #{output}
+          </div>
         </div>
       HTML
 
@@ -63,8 +67,6 @@ module Jekyll
             {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
             #{requestdata_block}
           {% endrequestblock %}
-          
-          {% livedoc #{request_type} #{request_url} #{data} %}
           
           <h3>Response</h3>
           {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
