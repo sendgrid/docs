@@ -35,10 +35,10 @@ $(function () {
 
     form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
     form.append('<hr/>'); 
-    button = '<button class="pull-right btn btn-success tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
-    button += '<button class="pull-right btn btn-danger cancel" id="cancel-'+identifier+'">Cancel</button>'
+    button = '<div><button class="btn btn-success tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
+    button += '<button class="btn btn-danger cancel" id="cancel-'+identifier+'">Cancel</button></div>'
     params_table.after(livedoc);
-    params_table.prevAll('.anchor-wrap').first().append(button);
+    params_table.before(button);
   });
 
   $('.tryit').click(function(){ 
@@ -59,6 +59,19 @@ $(function () {
     $('#apiexample-' + identifier).show();
     $(this).prev('.tryit').show();
     $(this).hide();
+  });
+
+  $('.clear-request').click(function(){
+    $(this).closest('.live-call').find('.body').text("");
+    $(this).closest('.live-call').find('.response-body').addClass('hidden');
+    $(this).closest('.live-call').find('.response-headers').addClass('hidden');
+    $(this).closest('.live-call').find('.request-data').addClass('hidden');
+    $(this).closest('.live-call').find('.data').text("");
+    $(this).closest('.live-call').find('.headers').text("");
+    $(this).closest('.live-call').find('.call').text("");
+    $(this).closest('.live-call').find('.method').text("");
+
+    $(this).closest('.live-call').hide();
   });
 
   $('.live-doc form').submit(function(e){
