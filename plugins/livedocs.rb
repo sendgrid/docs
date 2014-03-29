@@ -54,7 +54,7 @@ module Jekyll
             <tr class="response-headers hidden">
               <td>Response Headers</td>
               <td>
-                <code class="headers"></code>
+                <pre class="headers"></pre>
               </td>
             </tr>
             <tr class="response-body hidden">

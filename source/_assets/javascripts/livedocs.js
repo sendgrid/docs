@@ -11,10 +11,10 @@ $(function () {
 
     rows.each(function(){
       data = $(this).children('td');
-      name = $(data[0]).text();
-      required = $(data[1]).text();
-      requirements = $(data[2]).text();
-      description = $(data[3]).text();
+      name = $(data[0]).text().trim();
+      required = $(data[1]).text().trim();
+      requirements = $(data[2]).text().trim();
+      description = $(data[3]).text().trim();
 
       status_class = required == "true" ? "has-error" : "";
       input_class = required == "true" ? "required" : "";
@@ -91,11 +91,11 @@ $(function () {
       url: url,
       data: data
     })
-    .done(function(response) {
+    .done(function(response, statusText, jqXHR) {
       live_call.find('.body').text(response);
       live_call.find('.response-body').removeClass('hidden');
 
-      live_call.find('.headers').text(response.getAllResponseHeaders());
+      live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
       live_call.find('.response-headers').removeClass('hidden');
     })
     .fail(function(response, statusText, error) {
