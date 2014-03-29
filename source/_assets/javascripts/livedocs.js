@@ -66,7 +66,7 @@ $(function () {
 
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val().toUpperCase().trim();
-    data = $(this).serialize();
+    data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, '');
     format = "json"; //TODO
 
     if (method=="GET") {
