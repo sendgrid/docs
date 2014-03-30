@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-<p>View your SendGrid Profile</p>
-
-<h3>There are no extra parameters required to view your profile information.</h3>
+{% anchor h2 %}
+get 
+{% endanchor %}
 
 {% apiexample get GET https://api.sendgrid.com/api/profile.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}

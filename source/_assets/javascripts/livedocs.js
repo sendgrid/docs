@@ -77,9 +77,24 @@ var getCredentials = function(){
 
 var getResponseFormat = function(){ return responseFormat.toLowerCase(); };
 
+function validateRequired(form) {
+  var valid = true;
+  $(form).find('input.required').each(function () {
+    if ($(this).val()) {
+      $(this).css('border-color','inherit');
+      return true;
+    }
+
+    $(this).css('border','1px solid red');
+    valid = false;
+  });
+
+  return valid;
+}
+
 $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
-  var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}} </td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
+  var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
   var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}"><span class="icon-apiworkshop_v2"></span> Try It</button>';
 
@@ -131,7 +146,9 @@ $(function () {
 
   $('.live-doc form').submit(function (e) {
     e.preventDefault();
-    //TODO validate that all required inputs have values
+
+    var valid = validateRequired(this);
+    if (!valid) return;
 
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val().toUpperCase().trim();
