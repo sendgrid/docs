@@ -1,83 +1,108 @@
-$(function () {
-  $('.live-doc').each(function(){
-    livedoc = $(this);
-    form = $(this).find('form');
-    form_table = $(this).find('form>table');
+var clear_results = function (form) {
+  form = $(form);
+  form.find('.body').text("");
+  form.find('.response-body').addClass('hidden');
+  form.find('.response-headers').addClass('hidden');
+  form.find('.request-data').addClass('hidden');
+  form.find('.data').text("");
+  form.find('.headers').text("");
+  form.find('.call').text("");
+  form.find('.method').text("");
 
-    //can't assume that a call requires params so this isn't gonna work everywhere
-    params_table = $(this).prev('table');
-    params_id = params_table.attr('id');
-    
-    identifier = params_id.substr(params_id.indexOf('-')+1, params_id.length);
+  form.hide();
+};
 
-    rows = params_table.find('tr').slice(1); //throw out the header row
-
-    rows.each(function(){
-      data = $(this).children('td');
-      name = $(data[0]).text().trim();
-      required = $(data[1]).text().trim();
-      requirements = $(data[2]).text().trim();
-      description = $(data[3]).text().trim();
-
-      status_class = required == "true" ? "has-error" : "";
-      input_class = required == "true" ? "required" : "";
-
-      form_field = "<tr><td>" + name + "</td>";
-      form_field += '<td><input type="text" class="input-sm ' + status_class + '" name="' + name + '"'
-      if (required=="true") {
-        form_field += ' placeholder="required"';
-      }
-      form_field += '/>';
-      form_field += '</td>';
-      form_field += "<td>" + requirements + "</td>";
-      form_field += "<td>" + description + "</td>";
-      form_field += "</tr>";
-
-      form_table.append(form_field);
-    });
-
-    form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
-    form.append('<hr/>'); 
-    button = '<div><button class="btn btn-success tryit" id="tryit-'+identifier+'"><span class="icon-apiworkshop_v2"></span> Try It</button>'
-    button += '<button class="btn btn-danger cancel" id="cancel-'+identifier+'">Cancel</button></div>'
-    params_table.after(livedoc);
-    params_table.before(button);
-  });
-
-  $('.tryit').click(function(){ 
-    id = $(this).attr('id');
-    identifier = id.substr(id.indexOf('-')+1, id.length);
+function toggle_livedoc(identifier, show) {
+  console.log(identifier);
+  console.log(show);
+  if (show) {
     $('#parameters-' + identifier).hide();
     $('#apiexample-' + identifier).hide();
     $('#livedoc-' + identifier).show();
-    $(this).next('.cancel').show();
-    $(this).hide();
-  });
-
-  $('.cancel').click(function(){ 
-    id = $(this).attr('id');
-    identifier = id.substr(id.indexOf('-')+1, id.length);
-    $('#livedoc-' + identifier).hide();
+    $('#cancel-' + identifier).show();
+    $('#tryit-' + identifier).hide();
+  }
+  else {
     $('#parameters-' + identifier).show();
     $('#apiexample-' + identifier).show();
-    $(this).prev('.tryit').show();
-    $(this).hide();
+    $('#livedoc-' + identifier).hide();
+    $('#cancel-' + identifier).hide();
+    $('#tryit-' + identifier).show();
+  }
+}
+
+function getParamHtml(data) {
+  var required = $(data[1]).text().trim().toLowerCase() == "true" || $(data[1]).text().trim().toLowerCase() == "yes";
+
+  var param = {
+    name: $(data[0]).text().trim(),
+    required: required,
+    requirements: $(data[2]).text().trim(),
+    description: $(data[3]).text().trim(),
+    class: required == true ? "required" : ""
+  };
+
+  return $.render.form_field_template(param);
+}
+
+$(function () {
+  //using jsrender for templates https://github.com/BorisMoore/jsrender
+  var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}} </td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
+  var buttons_template = '<div><button class="btn btn-success tryit" id="tryit-{{>identifier}}"><span class="icon-apiworkshop_v2"></span> Try It</button><button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button></div>';
+
+  $.templates({
+    form_field_template: form_field_template,
+    buttons_template: buttons_template
   });
 
-  $('.clear-request').click(function(){
-    $(this).closest('.live-call').find('.body').text("");
-    $(this).closest('.live-call').find('.response-body').addClass('hidden');
-    $(this).closest('.live-call').find('.response-headers').addClass('hidden');
-    $(this).closest('.live-call').find('.request-data').addClass('hidden');
-    $(this).closest('.live-call').find('.data').text("");
-    $(this).closest('.live-call').find('.headers').text("");
-    $(this).closest('.live-call').find('.call').text("");
-    $(this).closest('.live-call').find('.method').text("");
+  $('.live-doc').each(function () {
+    var livedoc = $(this);
+    var form = $(this).find('form');
+    var form_table = $(this).find('form>table');
 
-    $(this).closest('.live-call').hide();
+    var id = $(this).attr('id');
+    var identifier = id.substr(id.indexOf('-') + 1, id.length);
+
+    var params_table = $('#parameters-' + identifier);
+    var rows = params_table.find('tr').slice(1); //throw out the header row
+
+    var form_fields_html = "";
+    rows.each(function () {
+      form_fields_html += getParamHtml($(this).children('td'));
+    });
+    form_table.append(form_fields_html);
+
+    if (rows.length == 0) {
+      form_table.append('<tr><td colspan="4">No Parameters Needed</td></tr>');
+    }
+
+    form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
+
+    var button_html = $.render.buttons_template({ identifier: identifier });
+
+    //not all calls require parameters so need to change these hooks
+    params_table.after(livedoc);
+    params_table.before(button_html);
   });
 
-  $('.live-doc form').submit(function(e){
+  $('.tryit').click(function () {
+    console.log('click!');
+    var id = $(this).attr('id');
+    var identifier = id.substr(id.indexOf('-') + 1, id.length);
+    toggle_livedoc(identifier, true);
+  });
+
+  $('.cancel').click(function () {
+    var id = $(this).attr('id');
+    var identifier = id.substr(id.indexOf('-') + 1, id.length);
+    toggle_livedoc(identifier, false);
+  });
+
+  $('.clear-request').click(function () {
+    clear_results($(this).closest('.live-call'));
+  });
+
+  $('.live-doc form').submit(function (e) {
     e.preventDefault();
 
     //TODO validate that all required inputs have values
@@ -89,7 +114,7 @@ $(function () {
     data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, '');
     format = "json"; //TODO
 
-    if (method=="GET") {
+    if (method == "GET") {
       call = url + "." + format + "?" + data
     } else {
       call = url + "." + format
@@ -112,19 +137,19 @@ $(function () {
       url: url,
       data: data
     })
-    .done(function(response, statusText, jqXHR) {
-      live_call.find('.body').text(response);
-      live_call.find('.response-body').removeClass('hidden');
+      .done(function (response, statusText, jqXHR) {
+        live_call.find('.body').text(response);
+        live_call.find('.response-body').removeClass('hidden');
 
-      live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
-      live_call.find('.response-headers').removeClass('hidden');
-    })
-    .fail(function(response, statusText, error) {
-      live_call.find('.body').text(statusText);
-      live_call.find('.response-body').removeClass('hidden');
-    })
-    .always(function(){
-      live_call.find(".bar-indicator").hide();
-    });;
+        live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
+        live_call.find('.response-headers').removeClass('hidden');
+      })
+      .fail(function (response, statusText) {
+        live_call.find('.body').text(statusText);
+        live_call.find('.response-body').removeClass('hidden');
+      })
+      .always(function () {
+        live_call.find(".bar-indicator").hide();
+      });
   });
 });
