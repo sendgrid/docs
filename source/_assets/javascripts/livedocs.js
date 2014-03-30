@@ -120,7 +120,8 @@ $(function () {
     clear_results($(this).closest('.live-call'));
   });
 
-  $('#save-credentials').click(function () {
+  $('#credentials').submit(function (e) {
+    e.preventDefault();
     username = $('#username').val();
     password = $('#password').val();
     responseFormat = $('#response-format').val();
@@ -150,13 +151,14 @@ $(function () {
 
     if (method != "GET") {
       live_call.find('.request-data').removeClass("hidden");
-      live_call.find('.data').text("api_user=" + username + "&api_key=XXXXXXXX&" + decodeURIComponent(data));
+      live_call.find('.data').text(("api_user=" + username + "&api_key=XXXXXXXX&" + decodeURIComponent(data)).replace(/&$/, ''));
     }
 
     live_call.find(".bar-indicator").show();
     live_call.show();
 
     data = 'api_user=' + username + '&api_key=' + password + data;
+    data = data.replace(/&$/, '');
 
     $.ajax({
       type: method,
