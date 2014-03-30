@@ -1,3 +1,7 @@
+var username = '';
+var password = '';
+var responseFormat = '';
+
 var clear_results = function (form) {
   form = $(form);
   form.find('.body').text("");
@@ -12,7 +16,7 @@ var clear_results = function (form) {
   form.hide();
 };
 
-function toggle_livedoc(identifier, show) {
+var toggle_livedoc = function (identifier, show) {
   if (show) {
     $('#parameters-' + identifier).hide();
     $('#apiexample-' + identifier).hide();
@@ -29,7 +33,7 @@ function toggle_livedoc(identifier, show) {
   }
 }
 
-function getParamHtml(data) {
+var getParamHtml = function(data) {
   var required = $(data[1]).text().trim().toLowerCase() == "true" || $(data[1]).text().trim().toLowerCase() == "yes";
 
   var param = {
@@ -43,13 +47,13 @@ function getParamHtml(data) {
   return $.render.form_field_template(param);
 }
 
-function addButtons(identifier, livedoc) {
+var addButtons = function (identifier, livedoc) {
   var tryit_html = $.render.tryit_button({ identifier: identifier });
   var cancel_html = $.render.cancel_button({ identifier: identifier });
   livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html);
 }
 
-function getFormFieldHtml(identifier) {
+var getFormFieldHtml = function (identifier) {
   var params_table = $('#parameters-' + identifier);
   var rows = params_table.find('tr').slice(1); //throw out the header row
 
@@ -61,9 +65,17 @@ function getFormFieldHtml(identifier) {
   if (rows.length == 0) {
     form_fields_html += '<tr><td colspan="4">No Parameters Needed</td></tr>';
   }
-  
+
   return form_fields_html;
 }
+
+var getCredentials = function(){
+  if(username.length == 0 || password.length == 0) {
+    $('#credentialsModal').modal();
+  }
+}
+
+var getResponseFormat = function(){ return responseFormat.toLowerCase(); };
 
 $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
@@ -92,6 +104,7 @@ $(function () {
   });
 
   $('.tryit').click(function () {
+    getCredentials();
     var id = $(this).attr('id');
     var identifier = id.substr(id.indexOf('-') + 1, id.length);
     toggle_livedoc(identifier, true);
@@ -107,20 +120,26 @@ $(function () {
     clear_results($(this).closest('.live-call'));
   });
 
+  $('#save-credentials').click(function () {
+    username = $('#username').val();
+    password = $('#password').val();
+    responseFormat = $('#response-format').val();
+
+    $('#credentialsModal').modal('hide');
+  });
+
   $('.live-doc form').submit(function (e) {
     e.preventDefault();
-
     //TODO validate that all required inputs have values
-
-    //TODO check that the user has set username/password and json/xml response
 
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val().toUpperCase().trim();
     data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
-    format = "json"; //TODO
+    creds = "api_user=" + username + "&api_key=" + password;
+    format = getResponseFormat();
 
     if (method == "GET") {
-      call = url + "." + format + "?" + data
+      call = (url + "." + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, '');
     } else {
       call = url + "." + format
     }
@@ -131,11 +150,13 @@ $(function () {
 
     if (method != "GET") {
       live_call.find('.request-data').removeClass("hidden");
-      live_call.find('.data').text(decodeURIComponent(data));
+      live_call.find('.data').text("api_user=" + username + "&api_key=XXXXXXXX&" + decodeURIComponent(data));
     }
 
     live_call.find(".bar-indicator").show();
     live_call.show();
+
+    data = 'api_user=' + username + '&api_key=' + password + data;
 
     $.ajax({
       type: method,
