@@ -4,7 +4,7 @@ $(function () {
     form = $(this).find('form');
     form_table = $(this).find('form>table');
 
-    //can't assume that a call requires params so this isn't gonna work
+    //can't assume that a call requires params so this isn't gonna work everywhere
     params_table = $(this).prev('table');
     params_id = params_table.attr('id');
     
@@ -104,9 +104,8 @@ $(function () {
       live_call.find('.data').text(data);
     }
 
+    live_call.find(".bar-indicator").show();
     live_call.show();
-
-    //TODO show a loading indicator 
 
     $.ajax({
       type: method,
@@ -123,6 +122,9 @@ $(function () {
     .fail(function(response, statusText, error) {
       live_call.find('.body').text(statusText);
       live_call.find('.response-body').removeClass('hidden');
-    });
+    })
+    .always(function(){
+      live_call.find(".bar-indicator").hide();
+    });;
   });
 });

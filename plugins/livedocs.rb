@@ -37,6 +37,7 @@ module Jekyll
           </table>
         </form>
         <div class="live-call">
+          <div class="bar-indicator" style="display:none;"></div>          
           <table class="table table-bordered request-block">
           <tbody>
             <tr>
