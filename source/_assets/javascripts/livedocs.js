@@ -3,8 +3,11 @@ $(function () {
     livedoc = $(this);
     form = $(this).find('form');
     form_table = $(this).find('form>table');
+
+    //can't assume that a call requires params so this isn't gonna work
     params_table = $(this).prev('table');
     params_id = params_table.attr('id');
+    
     identifier = params_id.substr(params_id.indexOf('-')+1, params_id.length);
 
     rows = params_table.find('tr').slice(1); //throw out the header row
@@ -77,6 +80,10 @@ $(function () {
   $('.live-doc form').submit(function(e){
     e.preventDefault();
 
+    //TODO validate that all required inputs have values
+
+    //TODO check that the user has set username/password and json/xml response
+
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val().toUpperCase().trim();
     data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, '');
@@ -98,6 +105,8 @@ $(function () {
     }
 
     live_call.show();
+
+    //TODO show a loading indicator 
 
     $.ajax({
       type: method,
