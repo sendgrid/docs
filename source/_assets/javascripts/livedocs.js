@@ -13,8 +13,6 @@ var clear_results = function (form) {
 };
 
 function toggle_livedoc(identifier, show) {
-  console.log(identifier);
-  console.log(show);
   if (show) {
     $('#parameters-' + identifier).hide();
     $('#apiexample-' + identifier).hide();
@@ -48,11 +46,13 @@ function getParamHtml(data) {
 $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}} </td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
-  var buttons_template = '<div><button class="btn btn-success tryit" id="tryit-{{>identifier}}"><span class="icon-apiworkshop_v2"></span> Try It</button><button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button></div>';
+  var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
+  var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}"><span class="icon-apiworkshop_v2"></span> Try It</button>';
 
   $.templates({
     form_field_template: form_field_template,
-    buttons_template: buttons_template
+    cancel_button: cancel_button,
+    tryit_button: tryit_button
   });
 
   $('.live-doc').each(function () {
@@ -62,6 +62,10 @@ $(function () {
 
     var id = $(this).attr('id');
     var identifier = id.substr(id.indexOf('-') + 1, id.length);
+
+    var tryit_html = $.render.tryit_button({ identifier: identifier });
+    var cancel_html = $.render.cancel_button({ identifier: identifier });
+    livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html);
 
     var params_table = $('#parameters-' + identifier);
     var rows = params_table.find('tr').slice(1); //throw out the header row
@@ -77,16 +81,9 @@ $(function () {
     }
 
     form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
-
-    var button_html = $.render.buttons_template({ identifier: identifier });
-
-    //not all calls require parameters so need to change these hooks
-    params_table.after(livedoc);
-    params_table.before(button_html);
   });
 
   $('.tryit').click(function () {
-    console.log('click!');
     var id = $(this).attr('id');
     var identifier = id.substr(id.indexOf('-') + 1, id.length);
     toggle_livedoc(identifier, true);
@@ -111,7 +108,7 @@ $(function () {
 
     url = $(this).parent().find('.url').val();
     method = $(this).parent().find('.method').val().toUpperCase().trim();
-    data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, '');
+    data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
     format = "json"; //TODO
 
     if (method == "GET") {
@@ -126,7 +123,7 @@ $(function () {
 
     if (method != "GET") {
       live_call.find('.request-data').removeClass("hidden");
-      live_call.find('.data').text(data);
+      live_call.find('.data').text(decodeURIComponent(data));
     }
 
     live_call.find(".bar-indicator").show();

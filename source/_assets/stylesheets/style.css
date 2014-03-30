@@ -597,6 +597,9 @@ figure.code.expanded {
   display: none;
 }
 
+.tryit, .cancel {
+  margin:5px 0;
+}
 
 @media (max-width: 767px) {
   .nav-link { text-align:center; }
