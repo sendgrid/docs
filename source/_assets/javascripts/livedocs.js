@@ -43,6 +43,28 @@ function getParamHtml(data) {
   return $.render.form_field_template(param);
 }
 
+function addButtons(identifier, livedoc) {
+  var tryit_html = $.render.tryit_button({ identifier: identifier });
+  var cancel_html = $.render.cancel_button({ identifier: identifier });
+  livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html);
+}
+
+function getFormFieldHtml(identifier) {
+  var params_table = $('#parameters-' + identifier);
+  var rows = params_table.find('tr').slice(1); //throw out the header row
+
+  var form_fields_html = "";
+  rows.each(function () {
+    form_fields_html += getParamHtml($(this).children('td'));
+  });
+
+  if (rows.length == 0) {
+    form_fields_html += '<tr><td colspan="4">No Parameters Needed</td></tr>';
+  }
+  
+  return form_fields_html;
+}
+
 $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}} </td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
@@ -63,22 +85,8 @@ $(function () {
     var id = $(this).attr('id');
     var identifier = id.substr(id.indexOf('-') + 1, id.length);
 
-    var tryit_html = $.render.tryit_button({ identifier: identifier });
-    var cancel_html = $.render.cancel_button({ identifier: identifier });
-    livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html);
-
-    var params_table = $('#parameters-' + identifier);
-    var rows = params_table.find('tr').slice(1); //throw out the header row
-
-    var form_fields_html = "";
-    rows.each(function () {
-      form_fields_html += getParamHtml($(this).children('td'));
-    });
-    form_table.append(form_fields_html);
-
-    if (rows.length == 0) {
-      form_table.append('<tr><td colspan="4">No Parameters Needed</td></tr>');
-    }
+    addButtons(identifier, livedoc);
+    form_table.append(getFormFieldHtml(identifier));
 
     form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
   });
