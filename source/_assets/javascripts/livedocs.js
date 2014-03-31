@@ -204,10 +204,11 @@ $(function () {
 
         live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
         live_call.find('.response-headers').removeClass('hidden');
+
+        live_call.find('.status').text(jqXHR.status + ' - ' + jqXHR.statusText);
+        live_call.find('.response-status').removeClass('hidden');
       })
       .fail(function (jqXHR, statusText, errorThrown) {
-        console.log(errorThrown); //Forbidden
-        console.log(jqXHR.status); //403
         live_call.find('.status').text(jqXHR.status + " - " + errorThrown);
         live_call.find('.response-status').removeClass('hidden');
 
