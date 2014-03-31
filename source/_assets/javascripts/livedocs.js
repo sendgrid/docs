@@ -92,6 +92,17 @@ function validateRequired(form) {
   return valid;
 }
 
+function prettyPrintResponse(response, format) {
+  if (format == ".json") {
+    object = JSON.parse(response);
+    response = JSON.stringify(object, null, 2);
+  }
+
+  if (format == ".xml") {
+    response = formatXml(response);
+  }
+  return response;
+}
 $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
@@ -185,17 +196,7 @@ $(function () {
       data: data
     })
       .done(function (response, statusText, jqXHR) {
-        if(format==".json") {
-          object = JSON.parse(response);
-          response = JSON.stringify(object,null,2);
-        }
-        
-        if(format==".xml") {
-          response = formatXml(response);
-        }
-
-        console.log(response);
-
+        response = prettyPrintResponse(response, format);
         live_call.find('.body').text(response);
         hljs.highlightBlock(live_call.find('.body')[0]);
         live_call.find('.response-body').removeClass('hidden');
@@ -203,8 +204,13 @@ $(function () {
         live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
         live_call.find('.response-headers').removeClass('hidden');
       })
-      .fail(function (response, statusText) {
-        live_call.find('.body').text(statusText);
+      .fail(function (jqXHR, statusText, errorThrown) {
+        console.log(errorThrown); //Forbidden
+        console.log(jqXHR.status); //403
+        
+        response = prettyPrintResponse(jqXHR.responseText, format);
+        live_call.find('.body').text(response);
+        hljs.highlightBlock(live_call.find('.body')[0]);
         live_call.find('.response-body').removeClass('hidden');
       })
       .always(function () {
