@@ -8,11 +8,12 @@ var clear_results = function (form) {
   form.find('.response-body').addClass('hidden');
   form.find('.response-headers').addClass('hidden');
   form.find('.request-data').addClass('hidden');
+  form.find('.response-status').addClass('hidden');
   form.find('.data').text("");
   form.find('.headers').text("");
   form.find('.call').text("");
   form.find('.method').text("");
-
+  form.find('.status').text("");
   form.hide();
 };
 
@@ -207,7 +208,9 @@ $(function () {
       .fail(function (jqXHR, statusText, errorThrown) {
         console.log(errorThrown); //Forbidden
         console.log(jqXHR.status); //403
-        
+        live_call.find('.status').text(jqXHR.status + " - " + errorThrown);
+        live_call.find('.response-status').removeClass('hidden');
+
         response = prettyPrintResponse(jqXHR.responseText, format);
         live_call.find('.body').text(response);
         hljs.highlightBlock(live_call.find('.body')[0]);

@@ -52,6 +52,12 @@ module Jekyll
                 <code class="data"></code>
               </td>
             </tr>
+            <tr class="response-status hidden">
+              <td>Response Status</td>
+              <td>
+                <pre class="status"></pre>
+              </td>
+            </tr>
             <tr class="response-headers hidden">
               <td>Response Headers</td>
               <td>
