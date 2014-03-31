@@ -61,7 +61,7 @@ module Jekyll
             <tr class="response-body hidden">
               <td>Response Body</td>
               <td>
-                <code class="body"></code>
+                <pre class="body"></pre>
               </td>
             </tr>
           </tbody>

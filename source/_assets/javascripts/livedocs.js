@@ -185,7 +185,19 @@ $(function () {
       data: data
     })
       .done(function (response, statusText, jqXHR) {
+        if(format==".json") {
+          object = JSON.parse(response);
+          response = JSON.stringify(object,null,2);
+        }
+        
+        if(format==".xml") {
+          response = formatXml(response);
+        }
+
+        console.log(response);
+
         live_call.find('.body').text(response);
+        hljs.highlightBlock(live_call.find('.body')[0]);
         live_call.find('.response-body').removeClass('hidden');
 
         live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
