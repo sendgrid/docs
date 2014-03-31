@@ -154,12 +154,12 @@ $(function () {
     method = $(this).parent().find('.method').val().toUpperCase().trim();
     data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
     creds = "api_user=" + username + "&api_key=" + password;
-    format = getResponseFormat();
+    format = "." + getResponseFormat();
 
     if (method == "GET") {
-      call = (url + "." + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, '');
+      call = (url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, '');
     } else {
-      call = url + "." + format
+      call = url + format
     }
 
     live_call = $(this).nextAll('.live-call');
@@ -174,12 +174,14 @@ $(function () {
     live_call.find(".bar-indicator").show();
     live_call.show();
 
-    data = 'api_user=' + username + '&api_key=' + password + data;
+    console.log(data);
+
+    data = 'api_user=' + username + '&api_key=' + password + "&" + data;
     data = data.replace(/&$/, '');
 
     $.ajax({
       type: method,
-      url: url,
+      url: url + format,
       data: data
     })
       .done(function (response, statusText, jqXHR) {
