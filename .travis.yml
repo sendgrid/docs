@@ -2,9 +2,10 @@ node_js:
 - '0.10'
 branches:
   only:
-  - develop
+    - master
+    - develop
 before_install:
-  - ./.version.sh
+  - sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'version: https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER' > 'source/_data/version.yml'; fi" 
 install:
 - npm install
 - bower install
