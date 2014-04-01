@@ -95,6 +95,7 @@ function validateRequired(form) {
 }
 
 function prettyPrintResponse(response, format) {
+  console.log(response);
   if (format == ".json") {
     object = JSON.parse(response);
     response = JSON.stringify(object, null, 2);
@@ -202,7 +203,8 @@ $(function () {
     $.ajax({
       type: method,
       url: url + format,
-      data: data
+      data: data,
+      dataType: 'text'
     })
       .done(function (response, statusText, jqXHR) {
         response = prettyPrintResponse(response, format);
@@ -222,6 +224,7 @@ $(function () {
 
         response = prettyPrintResponse(jqXHR.responseText, format);
         live_call.find('.body').text(response);
+
         hljs.highlightBlock(live_call.find('.body')[0]);
         live_call.find('.response-body').removeClass('hidden');
       })
