@@ -53,7 +53,7 @@ asset_pipeline:
 # ----------------------- #
 
 # indextank settings
-indextank: false #set this to true if you want to build the index
+indextank: <%=ENV["RUN_INDEX"]%>  #set this to true if you want to build the index
 indextank_api_url: http://:example@example.api.indexden.com #get an index URL at indexden.com
 indextank_index:  docs #set this to the index name you set on indexden.com
 
