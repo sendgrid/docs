@@ -1,7 +1,3 @@
-var username = '';
-var password = '';
-var responseFormat = '';
-
 var clear_results = function (form) {
   form = $(form);
   form.find('.body').text("");
@@ -72,12 +68,12 @@ var getFormFieldHtml = function (identifier) {
 }
 
 var getCredentials = function(){
-  if(username.length == 0 || password.length == 0) {
+  if(!$.cookie('username') || !$.cookie('username')) {
     $('#credentialsModal').modal();
   }
 }
 
-var getResponseFormat = function(){ return responseFormat.toLowerCase(); };
+var getResponseFormat = function(){ return $.cookie('responseFormat').toLowerCase(); };
 
 function validateRequired(form) {
   var valid = true;
@@ -107,6 +103,10 @@ function prettyPrintResponse(response, format) {
   return response;
 }
 $(function () {
+  var username = $.cookie('username');
+  var password = $.cookie('password');
+  var responseFormat = $.cookie('responseFormat');
+
   //using jsrender for templates https://github.com/BorisMoore/jsrender
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
@@ -148,7 +148,7 @@ $(function () {
   });
 
   $('.settings').click(function () {
-    getCredentials();
+    $('#credentialsModal').modal();
   });
 
   $('.clear-request').click(function () {
@@ -160,6 +160,10 @@ $(function () {
     username = $('#username').val();
     password = $('#password').val();
     responseFormat = $('#response-format').val();
+
+    $.cookie('username', username);
+    $.cookie('password', password);
+    $.cookie('responseFormat', responseFormat);
 
     $('#credentialsModal').modal('hide');
   });
@@ -194,8 +198,6 @@ $(function () {
 
     live_call.find(".bar-indicator").show();
     live_call.show();
-
-    console.log(data);
 
     data = 'api_user=' + username + '&api_key=' + password + "&" + data;
     data = data.replace(/&$/, '');
