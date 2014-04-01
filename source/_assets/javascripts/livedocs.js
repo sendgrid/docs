@@ -51,7 +51,8 @@ var getParamHtml = function(data) {
 var addButtons = function (identifier, livedoc) {
   var tryit_html = $.render.tryit_button({ identifier: identifier });
   var cancel_html = $.render.cancel_button({ identifier: identifier });
-  livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html);
+  var settings_html = $.render.settings_button({ identifier: identifier });
+  livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html + settings_html);
 }
 
 var getFormFieldHtml = function (identifier) {
@@ -108,12 +109,14 @@ $(function () {
   //using jsrender for templates https://github.com/BorisMoore/jsrender
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
-  var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}"><span class="icon-apiworkshop_v2"></span> Try It</button>';
+  var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}">Try It</button>';
+  var settings_button = '<button class="btn btn-default settings" id="settings-{{>identifier}}">Settings</button>';
 
   $.templates({
     form_field_template: form_field_template,
     cancel_button: cancel_button,
-    tryit_button: tryit_button
+    tryit_button: tryit_button,
+    settings_button: settings_button
   });
 
   $('.live-doc').each(function () {
@@ -143,6 +146,10 @@ $(function () {
     toggle_livedoc(identifier, false);
   });
 
+  $('.settings').click(function () {
+    getCredentials();
+  });
+
   $('.clear-request').click(function () {
     clear_results($(this).closest('.live-call'));
   });
@@ -156,6 +163,7 @@ $(function () {
     $('#credentialsModal').modal('hide');
   });
 
+  //this function needs to broken down and composed into smaller functions
   $('.live-doc form').submit(function (e) {
     e.preventDefault();
 
