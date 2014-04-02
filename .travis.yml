@@ -5,16 +5,14 @@ branches:
   - master
   - develop
 before_install:
-- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER'
-  > 'source/_data/version.yml' ; fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER' > 'source/_data/version.yml' ; fi"
 install:
 - npm install
 - bower install
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'indextank:true' >> _config.yml;
-  fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'indextank:true' >> _config.yml; fi"
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
@@ -33,5 +31,4 @@ notifications:
     rooms:
       secure: 9QZg+DRly4m0S22eL9QJAY2Tfo2e0OCiDqiWs/Q14dx7MgqJ+p6Zo9T0nUwRTGw3O5m2kahrHtW1ulG2NUP6hOHWdEHWXHUUFZhEvhfT5P9ZzjecYLFhKrr6tG0ZS/Iz8TyndNBzT4eXbP2hoPigWfxda0XmSne+ioWalYBsvY8=
     template:
-    - 'https://travis-ci.org/%{repository}/builds/%{build_id} %{build_number} (%{branch}
-      - %{commit} : %{author}): %{message}'
+    - 'https://travis-ci.org/%{repository}/builds/%{build_id} %{build_number} (%{branch} - %{commit} : %{author}): %{message}'
