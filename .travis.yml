@@ -19,6 +19,7 @@ script:
 - bundle exec rake linklint
 after_success:
 - bundle exec cap deploy
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then bundle exec rake invalidate_cloudfront; fi"
 env:
   global:
   - secure: f6Xi8/jXfnWpCOP9T5f+nscg5tzlQ6+YLjI+mur2nGT+An4SbFS/LehoH1Q2jM6mI4jLxK/4TTBr+sWKgw3UzQ9ziTfCkV4fHxgQ8Aw4QWiLg0BNoLnYlYbDFK2uSgKuSYRoYSZ1OAZzmn+d/MuEfQDn/vbQwqqPgGufwbOALvE=
@@ -29,6 +30,7 @@ env:
   - secure: LexCBKluHnq/xnV0aLuZ9FZdkPttv5jy4hBXQgqxW+EULdougCFW9rP+2cYzBw8b6FFHrAHr3oro+4EcVo88PoTS1NqvlxrSb/+rzlXEGNLLZ2I3astRJRLjiNnAe95zGBJ7fpM9bRLnVBGyTe+jbiKZR5yrgDi3j2MmvKIwAAM=
   - secure: gbeutlnclE1yXF9yTXc1U1z1kGoUCf8ln/0FJj7ZrePV4MpyRrOnIDij+LWXSn6swJrUZcQfCb+W0MvFRfs8nOrHv5weCZuFFLRwkTIwAfPTyEnrhEXADDIhskWMUakgobFqpB6q6LsNrRbe2DzTXGQKYOklanAzdo8rq2pJsaY=
   - secure: kCKux3znRN/CTyzwPArfojCluqhFCQLYgBM1sLwxHrNJ3eYJmq4DmolC53hpcDUT5YZPgnSSpgXa8DPe5QWiMHEkBxZM3Jn2ZbnU3Mktsh05Wbla+0bTwVV7OpFdm2q31isEMJDCE8dbAt8t5ur6NASLdz5+IB7HdXQqIrLU9lc=
+  - secure: Nq7A1ttcxvkdINEYXjdIHzrHte6Hb3HQDymuxgKKd0P5mpTHnO2T8bTS5hBoKSe8bOnW+dytAGo1cVI0LGaPEqvzXSXX4Lnq8yW/f95no29Qfi4dlKPC/sD4WXdurCXA4/CYuENnGmBFd7AxtZiENuXEWn+CccoEXG7lWlmRlu0=
 notifications:
   hipchat:
     rooms:
