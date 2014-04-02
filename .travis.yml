@@ -4,8 +4,9 @@ branches:
   only:
     - master
     - develop
+    - travis
 before_install:
-  - sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'version: https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER' > './source/_data/version.yml'; fi" 
+  - sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'hello'; fi" 
 install:
 - npm install
 - bower install
