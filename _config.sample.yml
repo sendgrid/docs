@@ -45,7 +45,7 @@ asset_pipeline:
   bundle: true            # Default = true
   compress: true          # Default = true
   output_path: assets     # Default = assets
-  display_path: nil       # Default = nil
+  display_path: assets    # Default = nil
   gzip: false             # Default = false
 
 # ----------------------- #
