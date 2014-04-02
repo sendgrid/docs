@@ -430,8 +430,6 @@ task :invalidate_cloudfront do
   public_files.delete_if{|f| File.directory?(f) }
   public_files.each{|f| cleaned_files.push '/' + f}
 
-  puts cleaned_files
-
   invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], ENV["CF_DISTRIBUTION_ID"])
   
   puts invalidator.invalidate(public_files) 
