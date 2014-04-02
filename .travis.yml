@@ -12,7 +12,7 @@ install:
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'indextank:true' >> _config.yml; fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then ruby set_prod_config.rb; fi"
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
