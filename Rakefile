@@ -424,7 +424,7 @@ end
 desc "invalidate all files in /public on cloudfront"
 task :invalidate_cloudfront do
   Dir.chdir('public')
-  public_files = Dir.glob("**/*")
+  public_files = Dir.glob("**/*.html")
   
   cleaned_files = Array.new
   public_files.delete_if{|f| File.directory?(f) }
