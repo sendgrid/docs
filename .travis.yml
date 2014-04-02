@@ -6,7 +6,7 @@ branches:
     - develop
     - travis
 before_install:
-  - sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'hello'; fi" 
+  - sh -c "if [ '$TRAVIS_BRANCH' == 'travis' ]; then echo 'hello'; fi" 
 install:
 - npm install
 - bower install
