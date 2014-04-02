@@ -5,13 +5,14 @@ branches:
     - master
     - develop
 before_install:
-  - sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'version: https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER' > './source/_data/version.yml'; fi" 
+- sh -c "if [ '$TRAVIS_BRANCH' != 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER' > 'source/_data/version.yml' ; fi" 
 install:
 - npm install
 - bower install
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'indextank:true' >> _config.yml; fi"
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
