@@ -6,7 +6,7 @@ require "nokogiri-pretty"
 require "time"
 require "shellwords"
 require "json"
-require "cloudfront-invalidator"
+require "simple-cloudfront-invalidator"
 require "cgi"
 
 ## -- Rsync Deploy config -- ##
@@ -431,12 +431,10 @@ task :invalidate_cloudfront do
   public_files.each{|f| cleaned_files.push '/' + f}
 
   puts cleaned_files
-  invalidator = CloudfrontInvalidator.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], ENV["CF_DISTRIBUTION_ID"])
+
+  invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], ENV["CF_DISTRIBUTION_ID"])
   
-  invalidator.invalidate(public_files) do |status,time|   # Block is optional.
-    invalidator.list                              # Or invalidator.list_detail
-    puts "Complete after < #{time.to_f.ceil} seconds." if status == "Complete"
-  end
+  puts invalidator.invalidate(public_files) 
 end
 
 desc "run linklint and fail if errors found"
