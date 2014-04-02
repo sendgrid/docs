@@ -1,6 +1,6 @@
 require 'yaml'
   config = YAML.load_file('_config.yml')
-  config['root'] = '/docs'
+  config['root'] = 'http://sendgrid.com/docs'
   config['indextank'] = true
 
   File.open('_config.yml','w') do |f| 
