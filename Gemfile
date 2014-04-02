@@ -24,7 +24,7 @@ group :development do
   gem 'yui-compressor'
 end
 
-gem 'capistrano'
+gem 'capistrano', '~> 2.15'
 gem 's3-static-site'
 gem 'nokogiri'
 gem 'nokogiri-pretty'
