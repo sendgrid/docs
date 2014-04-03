@@ -7,17 +7,12 @@
 url: http://sendgrid.com/docs
 title: SendGrid Documentation | SendGrid
 author: SendGrid
-description:
+description: SendGrid Documentation
 
-# Default date format is "ordinal" (resulting in "July 22nd 2007")
-# You can customize the format as defined in
-# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
-# Additionally, %o will give you the ordinal representation of the day
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -36,7 +31,6 @@ pygments: false # default python pygments have been replaced by pygments.rb
 
 titlecase: true       # Converts page and post titles to titlecase
 
-
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/page_navigation.html]
@@ -45,7 +39,7 @@ asset_pipeline:
   bundle: true            # Default = true
   compress: true          # Default = true
   output_path: assets     # Default = assets
-  display_path: nil       # Default = nil
+  display_path: assets    # Default = nil
   gzip: false             # Default = false
 
 # ----------------------- #
@@ -53,7 +47,7 @@ asset_pipeline:
 # ----------------------- #
 
 # indextank settings
-indextank: false #set this to true if you want to build the index
+#set this to true if you want to build the index
 indextank_api_url: http://:example@example.api.indexden.com #get an index URL at indexden.com
 indextank_index:  docs #set this to the index name you set on indexden.com
 

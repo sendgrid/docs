@@ -2,28 +2,39 @@ node_js:
 - '0.10'
 branches:
   only:
+  - master
   - develop
 before_install:
-  - ./.version.sh
+- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_NUMBER'
+  > 'source/_data/version.yml' ; fi"
 install:
 - npm install
 - bower install
 - bundle install
 before_script:
 - cp _config.sample.yml _config.yml
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then ruby set_prod_config.rb; fi"
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
 after_success:
 - bundle exec cap deploy
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then bundle exec rake invalidate_cloudfront; fi"
 env:
   global:
   - secure: f6Xi8/jXfnWpCOP9T5f+nscg5tzlQ6+YLjI+mur2nGT+An4SbFS/LehoH1Q2jM6mI4jLxK/4TTBr+sWKgw3UzQ9ziTfCkV4fHxgQ8Aw4QWiLg0BNoLnYlYbDFK2uSgKuSYRoYSZ1OAZzmn+d/MuEfQDn/vbQwqqPgGufwbOALvE=
   - secure: JOPq/76SiOqA42M+UqwnNVbjKaqHnTmEhwQyuf0Fy8zje7jDSLKc5C8NRLXxo0qWNFJ1KSJPaWuvDh1QPO2c50sbdpHyguLt3FkmshH9jhjCOLkXO0OaG9E3g+WrNiGqZ+iRrz/R031MvVBWGUhCtFquR+/odfcTDo/d0oS50Gk=
   - secure: l2bW5V1zeA9VW5UT5OQGQYl3UeSrS8pX2Cq0n/KuCc5pyEu84uPpQUpWdtCSIkwz9xRk+xAO+VyJCI5S5FYMcQGEOQAJV/puqDwhV3klksTaHLzjygCRpFmKpYPj/5t9mYBmbITBakskhgtM0U0Jjxw8w3bpGfRqRjOTAzS3RB4=
+  - secure: CQ+PYDS2uWc/g+LfABW812Ur+jhX00hOzJj3TYm+vT2tYhVfQC/6WhdLdIoqhGmTyb+3vHyX2abr4p+1q5ou4uOw7VmaX33uvTxKRhQ/+aOPAam91jZ2LmGNeGQ5macGWYFH2H7hQiI0FEz9vG4GBxVKnJD5IwAEqag95jp0qfw=
+  - secure: 0hTizSjrO8wdwfaXCRqPQfjGplG8yk5quLGhNRjUx1VxngMvrN7mAGAeLWsfi2usCCEb5cEoc+0Ud6FmcYfHL1jUgLMN/+QQI5HSjrzhsQ35QQZ/C22uTTmNuMkwJ2PE2VvJIV9ioVL1bcBtYzTuzrhzG60lnBZJARLpMQYAGcY=
+  - secure: LexCBKluHnq/xnV0aLuZ9FZdkPttv5jy4hBXQgqxW+EULdougCFW9rP+2cYzBw8b6FFHrAHr3oro+4EcVo88PoTS1NqvlxrSb/+rzlXEGNLLZ2I3astRJRLjiNnAe95zGBJ7fpM9bRLnVBGyTe+jbiKZR5yrgDi3j2MmvKIwAAM=
+  - secure: gbeutlnclE1yXF9yTXc1U1z1kGoUCf8ln/0FJj7ZrePV4MpyRrOnIDij+LWXSn6swJrUZcQfCb+W0MvFRfs8nOrHv5weCZuFFLRwkTIwAfPTyEnrhEXADDIhskWMUakgobFqpB6q6LsNrRbe2DzTXGQKYOklanAzdo8rq2pJsaY=
+  - secure: kCKux3znRN/CTyzwPArfojCluqhFCQLYgBM1sLwxHrNJ3eYJmq4DmolC53hpcDUT5YZPgnSSpgXa8DPe5QWiMHEkBxZM3Jn2ZbnU3Mktsh05Wbla+0bTwVV7OpFdm2q31isEMJDCE8dbAt8t5ur6NASLdz5+IB7HdXQqIrLU9lc=
+  - secure: Nq7A1ttcxvkdINEYXjdIHzrHte6Hb3HQDymuxgKKd0P5mpTHnO2T8bTS5hBoKSe8bOnW+dytAGo1cVI0LGaPEqvzXSXX4Lnq8yW/f95no29Qfi4dlKPC/sD4WXdurCXA4/CYuENnGmBFd7AxtZiENuXEWn+CccoEXG7lWlmRlu0=
 notifications:
   hipchat:
     rooms:
       secure: 9QZg+DRly4m0S22eL9QJAY2Tfo2e0OCiDqiWs/Q14dx7MgqJ+p6Zo9T0nUwRTGw3O5m2kahrHtW1ulG2NUP6hOHWdEHWXHUUFZhEvhfT5P9ZzjecYLFhKrr6tG0ZS/Iz8TyndNBzT4eXbP2hoPigWfxda0XmSne+ioWalYBsvY8=
     template:
-      - 'https://travis-ci.org/%{repository}/builds/%{build_id} %{build_number} (%{branch} - %{commit} : %{author}): %{message}'
+    - 'https://travis-ci.org/%{repository}/builds/%{build_id} %{build_number} (%{branch}
+      - %{commit} : %{author}): %{message}'

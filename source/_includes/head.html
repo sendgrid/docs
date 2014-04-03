@@ -3,7 +3,7 @@
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 
-<!-- SendGrid Docs Version {{ site.data.version.version }} -->
+<!-- SendGrid Docs Version {{ site.data.version }} -->
 <head>
   <meta charset="utf-8">
   {% if page.seo.title and page.seo.override %}
@@ -83,7 +83,7 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-  {% if site.version != "DEV" %}
+  {% if !site.version.contains "https" %}
     {% include google_analytics.html %}
   {% else %}
   <script>
