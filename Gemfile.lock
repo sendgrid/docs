@@ -28,7 +28,7 @@ GEM
     haml (4.0.5)
       tilt
     highline (1.6.21)
-    i18n (0.6.9)
+    htmlentities (4.3.1)
     indextank (1.0.13)
       faraday_middleware (>= 0.9.0)
       yajl-ruby (>= 0.7.7)

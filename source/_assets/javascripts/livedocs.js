@@ -38,7 +38,7 @@ var getParamHtml = function(data) {
     required: required,
     requirements: $(data[2]).text().trim(),
     description: $(data[3]).text().trim(),
-    class: required == true ? "required" : ""
+    input_class: required == true ? "required" : ""
   };
 
   return $.render.form_field_template(param);
@@ -108,7 +108,7 @@ $(function () {
   var responseFormat = $.cookie('responseFormat');
 
   //using jsrender for templates https://github.com/BorisMoore/jsrender
-  var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
+  var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>input_class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
   var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}">Try It</button>';
   var settings_button = '<button class="btn btn-default settings" id="settings-{{>identifier}}">Settings</button>';
