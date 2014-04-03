@@ -42,7 +42,7 @@
         $('div#results').empty();
 		
     root = $('#root').val();
-    last_char = root.substr(id.length - 1);
+    last_char = root.substr(root.length - 1);
 		if (last_char == "/")
       root = root.slice(0, -1);
 		
