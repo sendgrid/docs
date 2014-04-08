@@ -8,7 +8,6 @@ navigation:
 
 <p>Retrieve, delete and add entries in the Unsubscribes list.</p>
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -104,41 +103,25 @@ get
       <td>optional email addresses to search for.</td> 
     </tr>
 </tbody></table>
-{% xmljsontabs get %}
-<div class="tab-content">
-  <div class="tab-pane active" id="get-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
 
-
-    <h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample get GET https://api.sendgrid.com/api/unsubscribes.get api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1 %}
+  {% response json %}
+[
   {
     "email": "brandon.west@sendgrid.com",
     "created": "2012-09-06 14:03:18"
   }
 ]
-{% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}
-<unsubscribes><unsubscribe><email>brandon.west@sendgrid.com</email><created>2012-09-06 14:03:18</created></unsubscribe></unsubscribes>
-{% endcodeblock %}
-
-  </div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<unsubscribes>
+  <unsubscribe>
+    <email>brandon.west@sendgrid.com</email>
+    <created>2012-09-06 14:03:18</created>
+  </unsubscribe>
+</unsubscribes>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr>
 {% anchor h2 %}
@@ -166,61 +149,37 @@ delete
       <td>Unsubscribed email address to remove</td>
     </tr>
 </tbody></table>
-{% xmljsontabs delete %}
-<div class="tab-content">
-  <div class="tab-pane active" id="delete-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
 
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/unsubscribes.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-
-{% codeblock %}
+<!-- success -->
 <result>
-  success
-<result>
-{% endcodeblock %}
-
-<h3>Response: Error</h3>
-
-@nodes
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-  Email does not exist
-@nodes
+   <message>success</message>
 </result>
 
-{% endcodeblock %}
+<!-- error -->
+<result>
+   <message>Email does not exist</message>
+</result>
+  {% endresponse %}
 
-  </result></result></result>
-</div>
-</div>
+{% endapiexample %}
 
 <hr>
 {% anchor h2 %}
@@ -242,56 +201,34 @@ add
       <td>Email address to add to unsubscribe list</td>
     </tr>
 </tbody></table>
-{% xmljsontabs add %}
-<div class="tab-content">
-  <div class="tab-pane active" id="add-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.add.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com{% endrequestdata %}
-      {% endrequestblock %}
 
-
-<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample add POST https://api.sendgrid.com/api/unsubscribes.add api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-  </div>
-  <div class="tab-pane" id="add-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/unsubscribes.add.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- success -->
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-<h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>Email does not exist</message>
 </result>
+  {% endresponse %}
 
-{% endcodeblock %}
-
-  </result></result>
-</div>
-</div>
+{% endapiexample %}

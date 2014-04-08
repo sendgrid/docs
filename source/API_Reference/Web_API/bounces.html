@@ -113,19 +113,9 @@ get
 	</tbody>
 </table>
 
- 
-{% xmljsontabs get %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-      <h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample get GET https://api.sendgrid.com/api/bounces.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
+  {% response json %}
+[
   {
     "status": "4.0.0",
     "created": "2011-09-16 22:02:19",
@@ -163,17 +153,9 @@ get
     "email": "test@brandonmwest.com"
   }
 ]
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="get-xml">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1{% endrequestdata %}
-      {% endrequestblock %}
-
-      <h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <bounces>
    <bounce>
@@ -189,13 +171,10 @@ get
       <created>2009-08-01 10:16:30</created>
    </bounce>
 </bounces>
-
-{% endcodeblock %}
-    </div>
-  </div>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
-
 
 {% anchor h2 %}
 delete 
@@ -238,58 +217,35 @@ delete
 </tbody>
 </table>
 
- 
-{% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.delete.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
- 
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/bounces.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-	<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "Email does not exist"
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="delete-xml">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com{% endrequestdata %}
-      {% endrequestblock %}
-
-	<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- success -->
 <result>
   success
 @nodes
 </result>
 
-{% endcodeblock %}
-	  <h3>Response: Error</h3> 
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error: reason</message>
 </result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
 
-  
 {% anchor h2 %}
 Count  
 {% endanchor %} 
@@ -321,54 +277,32 @@ Count
     </tr> 
   </table> 
  
-
-{% xmljsontabs count %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="count-json">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.count.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
- 
-	<h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample count GET https://api.sendgrid.com/api/bounces.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "count": "4"
 }
-{% endcodeblock %}
-	<h3>Response: Error</h3>
-{% codeblock lang:json %}{
+
+//error
+{
   "message": "error",
   "errors": [
     "...error messages..."
   ]
 }
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="count-xml">
-      <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/bounces.count.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
+  {% endresponse %}
 
-	<h3>Response: Success</h3>
-
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- success -->
 <result>
    <count>4</count>
 </result>
 
-{% endcodeblock %}
-	  <h4>Response: Error</h4> 
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
+<!-- error -->
 <result>
    <message>error: reason</message>
 </result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+  {% endresponse %}
+{% endapiexample %}

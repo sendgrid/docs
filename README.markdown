@@ -75,6 +75,8 @@ By default `<title>` tags follow the template `{Page Title} {Site Title}`. Howev
 ### Custom Liquid Tags
 There are some custom plugins (look in the `plugins` folger) that define new liquid blocks for use in pages.
 
+#### Anchors
+
 You can create anchor tags that will have named anchors generated for them automatically with links on hover. 
 The parameter is the wrapping element to use.
 
@@ -83,6 +85,7 @@ The parameter is the wrapping element to use.
 Some Anchor Text
 {% endanchor %}
 ```
+#### Info blocks
 
 Similarly you can create info and warning blocks:
 
@@ -96,13 +99,25 @@ Some info for a breakout block.
 {% endwarning %}
 ```
 
-If you are working on API reference docs, you can generate XML and JSON nav tabs with a liquid tag like so:
+#### API Examples
+
+If you are working on API reference docs, you can generate XML and JSON nav tabs and the corresponding example calls and responses like so:
 
 ```
-{% xmljsontabs foo %}
+{% apiexample identifier GET http://some.endpoint.url var1=stuff&var2=junk %}
+  {% response json %}
+{ "foo": "bar" }
+  {% endresponse %}
+
+  {% response xml %}
+<foo>bar</foo>
+  {% endresponse %}
+{% endapiexample %}
 ```
 
-where `foo` is a string unique to the page, e.g. a method name.
+The parameters for the `apiexample` block are: unique identifier, HTTP
+method, the url (excluding .json or .xml extension), and the data
+payload in querystring format.
 
 ## JS and CSS, etc
 Make sure you have juicer and it's dependencies installed. This should be handled by bundler, but if you run into issues, read this note from the juicer gem docs:

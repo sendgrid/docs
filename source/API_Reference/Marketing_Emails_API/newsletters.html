@@ -53,57 +53,33 @@ add
   </table>
 
   
-{% xmljsontabs create %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="create-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/add.json{% endrequesturl %}
-        {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="create-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/add.xml{% endrequesturl %}
-        {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+"error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
-
-{% endcodeblock %}
-    </div>
-  </div>
-
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
+  {% endresponse %}
+{% endapiexample %}
 
 
 <hr/>
@@ -160,56 +136,32 @@ edit
   </table>
 
   
-{% xmljsontabs edit %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="edit-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/edit.json{% endrequesturl %}
-        {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample edit POST https://api.sendgrid.com/api/newsletter/edit identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="edit-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/edit.xml{% endrequesturl %}
-        {% requestdata Data POST %}identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error{
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
 
@@ -235,19 +187,10 @@ get
   </table>
 
   
-{% xmljsontabs get %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="get-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/get.json{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "can_edit": true,
   "name": "SendGrid NL Test",
   "text": null,
@@ -259,25 +202,14 @@ get
   "identity": "d22de3a53fac1abef944c80c19032c2c",
   "subject": null
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="get-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/get.xml{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <newsletter>
    <can_edit>True</can_edit>
@@ -292,17 +224,14 @@ get
    <subject/>
 </newsletter>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
 
@@ -328,19 +257,10 @@ list
   </table>
 
   
-{% xmljsontabs list %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="list-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/list.json{% endrequesturl %}
-        {% requestdata Data POST %}&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}[
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+[
   {
     "name": "Just Testing",
     "newsletter_id": 560308
@@ -358,25 +278,14 @@ list
     "newsletter_id": 38074
   }
 ]
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="list-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/list.xml{% endrequesturl %}
-        {% requestdata Data POST %}&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
+//error
+{
+ "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <newsletters>
    <newsletter>
@@ -397,17 +306,14 @@ list
    </newsletter>
 </newsletters>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
+  {% endresponse %}
+{% endapiexample %}
 
 <hr/>
 
@@ -433,53 +339,30 @@ delete
   </table>
 
   
-{% xmljsontabs delete %}
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="delete-json">
-          <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/delete.json{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
-
-
-          <h3>Response: Success</h3>
-{% codeblock lang:json %}{
+{% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
   "message": "success"
 }
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:json %}{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-{% endcodeblock %}
-    </div>
-    <div class="tab-pane" id="delete-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/newsletter/delete.xml{% endrequesturl %}
-        {% requestdata Data POST %}name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password{% endrequestdata %}
-      {% endrequestblock %}
 
-<h3>Response: Success</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+//error
+{
+  "error":"error in [parameter]: [parameter] is required" (where [parameter] is from above)
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-{% endcodeblock %}
-          <h3>Response: Error</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<result>
-   <message>error: reason</message>
-</result>
-
-{% endcodeblock %}
-    </div>
-  </div>
+<errors>
+  <error>error in [parameter]: [parameter] is required</error> (where [parameter] is from above)
+</errors>
+  {% endresponse %}
+{% endapiexample %}

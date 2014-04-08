@@ -73,18 +73,9 @@ Parameters
 </table>
 
 
-{% xmljsontabs activate %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="activate-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample activate POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 %}
+  {% response json %}
+[
   {
     "date": "2009-06-20",
     "requests": 12342,
@@ -119,18 +110,9 @@ Parameters
     "blocked": 8
   }
 ]
-{% endcodeblock %}
-  </div>
-  <div class="tab-pane" id="activate-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2{% endrequestdata %}
-      {% endrequestblock %}
-
-
-	<h3>Response</h3>
-	{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <stats>
    <day>
@@ -167,11 +149,9 @@ Parameters
       <blocked>8</blocked>
    </day>
 </stats>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-  </div>
-</div>
 
 <hr/>
 
@@ -181,18 +161,9 @@ Category List
 <h3>Retrieve a list of all the categories used in your account.</h3>
 
 
-{% xmljsontabs list %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="list-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true{% endrequestdata %}
-      {% endrequestblock %}
-
-     <h3>Response</h3>
-{% codeblock lang:json %}[
+{% apiexample list POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true %}
+  {% response json %}
+[
   {
     "category": "categoryA"
   },
@@ -203,35 +174,18 @@ Category List
     "category": "categoryC"
   }
 ]
-{% endcodeblock %}
-
-
-  </div>
-  <div class="tab-pane" id="list-xml">
-        <h3>Call</h3>
-
-      {% requestblock %}
-
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.xml{% endrequesturl %}
-
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true{% endrequestdata %}
-
-      {% endrequestblock %}
-
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
    <category>categoryC</category>
 </categories>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-  </div>
-</div>
 
 <hr/>
 
@@ -315,16 +269,8 @@ Parameters
 </table>
 
 
-{% xmljsontabs category %}
-
-<div class="tab-content">
-  <div class="tab-pane active" id="category-json">
-     <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.json{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA{% endrequestdata %}
-      {% endrequestblock %}
-
+{% apiexample category POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA %}
+  {% response json %}
 <h3>Call - Using an array of categories</h3>
 
       {% requestblock %}
@@ -334,10 +280,7 @@ Parameters
         {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB{% endrequestdata %}
 
       {% endrequestblock %}
-
-
-     <h3>Response</h3>
-{% codeblock lang:json %}[
+[
   {
     "date": "2009-06-20",
     "category": "categoryA",
@@ -363,26 +306,9 @@ Parameters
     "blocked": 6
   }
 ]
-{% endcodeblock %}
-
-  </div>
-  <div class="tab-pane" id="category-xml">
-        <h3>Call</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category=categoryA{% endrequestdata %}
-      {% endrequestblock %}
-
-
-		<h3>Call - Using an array of categories</h3>
-      {% requestblock %}
-        {% requesturl POST %}https://api.sendgrid.com/api/stats.get.xml{% endrequesturl %}
-        {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=categoryB{% endrequestdata %}
-      {% endrequestblock %}
-
-
-		<h3>Response</h3>
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <stats>
    <day>
@@ -404,8 +330,6 @@ Parameters
       <spamreports>7</spamreports>
    </day>
 </stats>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
-
-  </div>
-</div>

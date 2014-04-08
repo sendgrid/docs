@@ -23,7 +23,6 @@ module Jekyll
         safeContent = content.rstrip.gsub(/[^\w\s]/,'').gsub(/[\s]/,'-')
       end
 
-      #should refactor this to allow wrapping tag to be passed in
       output = "<#{@tag} class=\"anchor-wrap\"><a name=\"#{safeContent}\" class=\"anchor\" href=\"##{safeContent}\">"
       output += '<span class="anchor-icon"><i class="icon-link"></i></span></a>'
       output += content.strip
