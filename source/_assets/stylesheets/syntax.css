@@ -128,7 +128,7 @@ overflow:scroll;
 overflow-y:hidden;
 display:block;
 overflow-x:auto;
-background:#fff;
+background-color:#fff;
 color:#222!important;
 padding:.8em!important;
 }
@@ -226,7 +226,7 @@ width:100%;
 
 .highlight,.gist-highlight {
 margin-bottom:1.8em;
-background:#fff;
+background-color:#fff;
 overflow-y:hidden;
 overflow-x:auto;
 }
@@ -244,7 +244,7 @@ padding:0;
 }
 
 .highlight code {
-background:#000;
+background-color:#fff;
 }
 
 figure.code {
