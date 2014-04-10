@@ -1,10 +1,14 @@
 ---
 layout: page
-weight: 0
+weight: 10
 title: PHP
 navigation:
   show: true
 ---
+
+{% anchor h2 %}
+Parse Webhook
+{% endanchor %}
 
 <p>In this example, we want to parse all emails at <em>address</em>@email.sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.</p>
 
@@ -28,11 +32,11 @@ $subject = $_POST["subject"];
 $num_attachments = $_POST["attachments"];
 
 if($num_attachments){
-   $uploadName = "attachment1";
-   for($x =0; $x<$num_attachments; $x++) {
-      move_uploaded_file ($_FILES[$uploadName] ['tmp_name'],"./uploads/{$_FILES[$uploadName] ['name']}");
-      $uploadName++;
-   }
+  for($i = 1; $i <= $num_attachments; $i++) {
+    $attachment = $_FILES['attachment' + $i];
+	// $attachment will have all the parameters expected in a the PHP $_FILES object
+	// http://www.php.net/manual/en/features.file-upload.post-method.php#example-369
+  }
 }
 ?>
 {% endcodeblock %}

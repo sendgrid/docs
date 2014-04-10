@@ -41,7 +41,10 @@
     var result = $.getJSON('http://agupam.api.indexden.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
         $('div#results').empty();
 		
-		root = $('#root').val().slice(0, -1);
+    root = $('#root').val();
+    last_char = root.substr(root.length - 1);
+		if (last_char == "/")
+      root = root.slice(0, -1);
 		
 		if(data.matches == 0) {
 			$('div#results').append('<h2>No Results Found</h2>');
