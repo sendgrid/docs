@@ -9,6 +9,7 @@ width:100%;
 .highlight .line-numbers,html .gist .gist-file .gist-syntax .gist-highlight .line-numbers {
 text-align:right;
 font-size:13px;
+background:#eee;
 border-right:1px solid #e9e9e9!important;
 -webkit-box-shadow:#fff -1px 0 inset;
 -moz-box-shadow:#fff -1px 0 inset;
@@ -53,6 +54,7 @@ background:#fff!important;
 html .gist .gist-file .gist-meta {
 color:#999;
 font-size:.7em!important;
+background:#eee;
 border:1px solid #e1e1e1!important;
 border-top:1px solid #fff!important;
 line-height:1.5em;
@@ -72,6 +74,7 @@ top:7px;
 }
 
 pre {
+background:#fff;
 -webkit-border-radius:.4em;
 -moz-border-radius:.4em;
 -ms-border-radius:.4em;
@@ -125,6 +128,7 @@ overflow:scroll;
 overflow-y:hidden;
 display:block;
 overflow-x:auto;
+background:#fff;
 color:#222!important;
 padding:.8em!important;
 }
