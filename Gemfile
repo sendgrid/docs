@@ -1,5 +1,6 @@
 source "http://rubygems.org"
 
+gem 'rake'
 gem 'jekyll', '~> 1.5.1'
 gem 'rubypants'
 gem 'rdiscount'
