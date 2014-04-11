@@ -298,7 +298,8 @@ article .nav-tabs li a {
 }
 
 .panel h3 {
-  color: rgb(0,112,205)
+  color: rgb(0,112,205);
+  font-family: "Proxima N W15 Light";
 }
 
 .panel:hover p {
