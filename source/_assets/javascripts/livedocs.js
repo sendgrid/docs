@@ -48,7 +48,7 @@ var addButtons = function (identifier, livedoc) {
   var tryit_html = $.render.tryit_button({ identifier: identifier });
   var cancel_html = $.render.cancel_button({ identifier: identifier });
   var settings_html = $.render.settings_button({ identifier: identifier });
-  livedoc.prevAll('.anchor-wrap').first().after(tryit_html + cancel_html + settings_html);
+  livedoc.prevAll('.anchor-wrap').first().after('<div>' + tryit_html + cancel_html + settings_html + '</div>');
 }
 
 var getFormFieldHtml = function (identifier) {
@@ -131,7 +131,7 @@ $(function () {
     addButtons(identifier, livedoc);
     form_table.append(getFormFieldHtml(identifier));
 
-    form.append('<button type="input" class="btn btn-primary form-control">Make Request</button>');
+    form.append('<div class="text-center"><button type="input" class="btn btn-primary">Make Request</button></div>');
   });
 
   $('.tryit').click(function () {

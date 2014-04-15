@@ -72,7 +72,9 @@ module Jekyll
             </tr>
           </tbody>
           </table>
-          <button type="input" class="clear-request btn btn-warning form-control">Clear</button>
+          <div class="text-center">
+            <button type="input" class="clear-request btn btn-warning">Clear</button>
+          </div>
         </div>
       </div>
       HTML

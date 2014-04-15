@@ -26,6 +26,11 @@ b, strong {
   font-family: "Proxima N W15 Smbd";
 }
 
+.btn {
+  padding-left:20px;
+  padding-right:20px;
+}
+
 .nopadding {
   padding:0px;
 }
@@ -599,7 +604,11 @@ figure.code.expanded {
 }
 
 .tryit, .cancel {
-  margin:5px 0;
+  margin: 5px 10px 5px 0px;
+}
+
+.cancel-request {
+  width:131px;
 }
 
 @media (max-width: 767px) {
