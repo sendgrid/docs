@@ -83,7 +83,7 @@ function validateRequired(form) {
       return true;
     }
 
-    $(this).css('border','1px solid red');
+    $(this).css('border','2px solid red');
     valid = false;
   });
 
