@@ -18,7 +18,7 @@ add
 <p>Create a new Variation.</p>
 
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -109,7 +109,7 @@ edit
 Edit an existing Variation.
 <br></br>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
   <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -201,7 +201,7 @@ get
 Retrieve the contents of an existing Variation.
 <br></br>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -280,7 +280,7 @@ Cancels a current Variation send that is in progress.
 <br></br>
 
 
-<table class="table table-bordered table-striped">
+<table id="parameters-cancel" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -337,7 +337,7 @@ Delete the contents of an existing Variation.
 <br></br>
 
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -400,7 +400,7 @@ list
 Retrieve a list of all Variations attached to a Marketing Email.
 <br></br>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -463,7 +463,7 @@ pickwinner
 Select the Variation you would like to send.
 <br></br>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-pickwinner" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -484,7 +484,7 @@ Select the Variation you would like to send.
     </tr>
   </table>
 
-{% apiexample delete POST https://api.sendgrid.com/api/newsletter/variations/pickwinner api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins %}
+{% apiexample pickwinner POST https://api.sendgrid.com/api/newsletter/variations/pickwinner api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins %}
   {% response json %}
 //success
 {
@@ -526,7 +526,7 @@ schedule
 Schedule a send time and percentage for your variations.
 <br></br>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-schedule" class="table table-bordered table-striped">
  <tr>
       <th>Parameter</th>
       <th>Required</th>
