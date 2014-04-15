@@ -83,9 +83,8 @@ module Jekyll
       code = super
 
       digest = Digest::MD5.hexdigest code
-
       
-    source = <<HTML
+    source = <<-HTML
     <div class="code-wrapper" id="wrapper_#{digest}">
       <div class="code-buttons">
         <ul class="nav nav-tabs">
@@ -103,7 +102,7 @@ module Jekyll
       </div>
       <figure class="code" id="code_#{digest}">
       #{@caption}
-HTML
+    HTML
 
       if @filetype
         @filetype = @filetype == "json" ? "javascript" : @filetype

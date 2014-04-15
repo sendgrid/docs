@@ -7,6 +7,8 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
 
+The master branch is continuously deployed to production.
+
 _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
 
 **Submit all pull requests to the develop branch**
