@@ -51,6 +51,10 @@ Activate App
 
 <p>Activate an app.</p>
 
+{% parameters activate %}
+{% parameter name true '' 'The name of the app to activate.' %} 
+{% endparameters %}
+
 {% apiexample activate POST https://api.sendgrid.com/api/filter.activate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
@@ -73,6 +77,10 @@ Deactivate App
 {% endanchor %}
 
 <p>Deactivate an app.</p>
+
+{% parameters deactivate %}
+{% parameter name true '' 'The name of the app to deactivate.' %} 
+{% endparameters %}
 
 {% apiexample deactivate POST https://api.sendgrid.com/api/filter.deactivate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
@@ -97,7 +105,9 @@ Setup App
 
 <p>Change application settings. Applications and their settings can be found in the <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Filter Settings documentation</a>.</p>
 
-{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com %}
+{% apiexample setup POST https://api.sendgrid.com/api/filter.setup
+api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com
+false %}
   {% response json %}
 {
   "message": "success"
@@ -120,6 +130,12 @@ Get App Settings
 {% endanchor %}
 
 <p>Get the Settings Of An App</p>
+
+{% parameters getsettings %}
+{% parameter name true '' 'The name of the app for which to retrieve
+settings.' %} 
+{% endparameters %}
+
 
 {% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
