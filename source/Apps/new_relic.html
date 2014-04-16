@@ -1,0 +1,63 @@
+---
+layout: page
+weight: 0
+title: SendGrid for New Relic
+navigation:
+  show: true
+---
+
+<p> Access your email statistics via the New Relic Dashboard. </p>
+
+<p><img title="docs_apps_nr_0212_tcr" src="{{root_url}}/images/new_relic.png"></p>
+
+<p>
+  In less than five minutes your stats should be sent to  your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the app enabled.
+</p>
+
+<hr/>
+
+{% anchor h2 %}
+Settings 
+{% endanchor %}
+
+<p>
+  If you would like get your statistics in the New Relic Dashboard, you need to provide us your New Relic license key.
+</p>
+<p>
+  This can be found by accessing the SendGrid's Plugin page on New Relic. Or from the Account Settings Page.
+</p>
+<p>
+  <img title="docs_apps_nr_0212_tcr" src="{{root_url}}/images/newrelic-settings.png">
+</p>
+<p>
+  In the New Relic app settings you can enable the statistics for your subusers.
+</p>
+{% warning %}
+You will receive statistics only for 100 subusers
+{% endwarning %}
+
+<p>
+  After you have entered your settings and saved them, enable the app.
+</p>
+
+<hr/>
+<p>
+  You can setup your app through our <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html#-Sendgrid-for-New-Relic">API</a>.
+</p>
+<hr/>
+
+{% anchor h2 %}
+New Relic Dashboard
+{% endanchor %}
+<p>
+  Go on New Relic site and there you will find the SendGrid extension on the left menu.
+  After clicking on 'SendGrid' extension, a SendGrid instance will be displayed and if you activated the subuser options under it will be the stats for subusers.
+<p>
+  <img title="docs_apps_nr_0212_tcr" src="{{root_url}}/images/newrelic-dashboard1.png">
+</p>
+<p>
+  Click on one of the instances and there you will see the statistics in three categories: Deliveries, Engagement and Compliance. Also on the right side you can see metrics in percentages.
+</p>
+<p>
+  <img title="docs_apps_nr_0212_tcr" src="{{root_url}}/images/newrelic-dashboard2.png">
+</p>
