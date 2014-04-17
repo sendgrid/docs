@@ -102,9 +102,14 @@ function prettyPrintResponse(response, format) {
   }
   return response;
 }
+
 $(function () {
   var username = $.cookie('username');
   var password = $.cookie('password');
+
+  $('#username').val(username);
+  $('#password').val(password);
+
   var responseFormat = $.cookie('responseFormat');
 
   //using jsrender for templates https://github.com/BorisMoore/jsrender
