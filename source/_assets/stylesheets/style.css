@@ -258,7 +258,6 @@ article .nav-tabs li a {
 
 #nav .btn {
   border-radius:15px;
-  width: 100px;
   border:0px;
   margin-top:17px;
   margin-right:7px;
@@ -609,6 +608,14 @@ figure.code.expanded {
 
 .clear-request {
   width:131px;
+}
+
+.btn {
+  border-radius:15px;
+}
+
+.hljs {
+  max-width:624px;
 }
 
 @media (max-width: 767px) {
