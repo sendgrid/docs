@@ -11,19 +11,6 @@
     settings_button: settings_button
   });
 
-  $('#credentials').submit(function (e) {
-    e.preventDefault();
-    username = $('#username').val();
-    password = $('#password').val();
-    responseFormat = $('#response-format').val();
-
-    $.cookie('username', username);
-    $.cookie('password', password);
-    $.cookie('responseFormat', responseFormat);
-
-    $('#credentialsModal').modal('hide');
-  });
-
   // Create the defaults once
   var pluginName = 'livedocs',
     defaults = {};
@@ -54,6 +41,19 @@
       form.append('<div class="text-center"><button type="input" class="btn btn-primary">Make Request</button></div>');
 
       //TODO these event listeners shouldn't be wired up for all elements each time we instantiate the plugin
+      $('#credentials').submit(function (e) {
+        e.preventDefault();
+        username = $('#username').val();
+        password = $('#password').val();
+        responseFormat = $('#response-format').val();
+
+        $.cookie('username', username);
+        $.cookie('password', password);
+        $.cookie('responseFormat', responseFormat);
+
+        $('#credentialsModal').modal('hide');
+      });
+
       $('.tryit').click(function () {
         Livedocs.getCredentials();
         var id = $(this).attr('id');
@@ -77,6 +77,9 @@
 
       form.submit(function (e) {
         e.preventDefault();
+
+        username = $.cookie('username');
+        password = $.cookie('password');
 
         var valid = Livedocs.validateRequired(this);
         if (!valid) return;
