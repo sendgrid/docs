@@ -265,5 +265,8 @@
 })( jQuery, window, document );
 
 $(function () {
+  $('#username').val($.cookie('username'));
+  $('#password').val($.cookie('password'));
+
   $('.live-doc').livedocs();
 });
