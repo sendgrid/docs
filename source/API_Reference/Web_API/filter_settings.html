@@ -494,3 +494,44 @@ Subscription Tracking
 </result>
   {% endresponse %}
 {% endapiexample %}
+
+<hr/>
+
+{% anchor h2 %}
+SendGrid for New Relic
+{% endanchor %}
+
+<p><em>API App Name - <code>newrelic</code></em></p>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>license_key</td>
+      <td>YES</td>
+      <td>Can be found in New Relic Settings page</td>
+    </tr>
+    <tr>
+      <td>enable_subusers</td>
+      <td>YES</td>
+      <td>false to disable, true to enable</td>
+    </tr>
+  </tbody>
+</table>
+
+{% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
+  {% response json %}
+{
+  "message":"success"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<message>success</message>
+  {% endresponse %}
+{% endapiexample %}
