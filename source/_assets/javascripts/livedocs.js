@@ -11,11 +11,11 @@
     settings_button: settings_button
   });
 
-  // Create the defaults once
   var pluginName = 'livedocs',
     defaults = {};
 
-  // The actual plugin constructor
+  //there are currently no options but some things probably should be
+  //so leaving the scaffolding up
   function Livedocs( element, options ) {
     this.element = element;
 
