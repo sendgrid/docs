@@ -240,7 +240,6 @@
     }
 
     Livedocs.prettyPrintResponse = function(response, format) {
-      console.log(response);
       if (format == ".json") {
         object = JSON.parse(response);
         response = JSON.stringify(object, null, 2);
