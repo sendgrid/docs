@@ -1,3 +1,9 @@
+//this depends on formatXml.js and parseQuerystring.js
+//TODO formalize this dependency
+
+//based on the jquery plugin lightweight boilerplate
+//http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns-2/
+
 ;(function ( $, window, document, undefined ) {
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>input_class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
@@ -91,18 +97,20 @@
         format = "." + Livedocs.getResponseFormat();
 
         if (method == "GET") {
-          call = (url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, '');
+          call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
         } else {
           call = url + format
         }
 
         live_call = $(this).nextAll('.live-call');
         live_call.find('.method').text(method);
-        live_call.find('.call').text(call);
+        live_call.find('.call').html(call);
 
         if (method != "GET") {
           live_call.find('.request-data').removeClass("hidden");
-          live_call.find('.data').text(("api_user=" + username + "&api_key=XXXXXXXX&" + decodeURIComponent(data)).replace(/&$/, ''));
+          data_pretty = ("api_user=" + username + "&api_key=XXXXXXXX&" + decodeURIComponent(data)).replace(/&$/, '');
+          data_pretty = parseQuerystring(data_pretty);
+          live_call.find('.data').html(data_pretty);
         }
 
         live_call.find(".bar-indicator").show();

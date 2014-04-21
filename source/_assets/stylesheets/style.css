@@ -177,11 +177,11 @@ code.wrap, code.requestdata {
 	color: black;
 }
 
-.request-block .requestdata .data-key {
+.data-key {
 	color: #2aa198;
 }
 
-.request-block .requestdata .data-value {
+.data-value {
 	color: #859900;
 }
 
