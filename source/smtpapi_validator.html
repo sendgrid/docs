@@ -11,46 +11,7 @@ navigation:
 <div id="successAlert" class="alert alert-success"></div>
 <div id="failAlert" class="alert alert-danger"></div>
 <br>
-<textarea id="headers" class="form-control" rows="5" placeholder="Paste your X-SMTPAPI header. Make sure is valid JSON."></textarea>
+<textarea id="smtpapi_headers" class="form-control" rows="5" placeholder="Paste your X-SMTPAPI header. Make sure is valid JSON."></textarea>
 <br>
-<button id="check" type="button" class="btn btn-primary">Check Headers</button>
-<script type="text/javascript" src="validator.js"></script>
-<script>
+<button id="validate_headers" type="button" class="btn btn-primary">Check Headers</button>
 
-  // Setup
-  var validator = require('smtpapivalidator');
-  var successAlert = document.getElementById("successAlert");
-  var failAlert = document.getElementById("failAlert");
-  successAlert.style.display = failAlert.style.display = "none";
-
-  // Perfom check
-  document.getElementById("check").onclick = function (e) {
-    successAlert.style.display = failAlert.style.display = "none";
-    successAlert.innerHTML = failAlert.innerHTML = "";
-    var textArea = document.getElementById("headers");
-    if (textArea.value.length === 0) {
-      return;
-    }
-    var headers;
-    try {
-      headers = JSON.parse(textArea.value);
-    } catch (e) {
-      failAlert.style.display = "block";
-      failAlert.innerHTML = "Invalid JSON.";
-      return;
-    }
-    var errors = validator(headers);
-    if (errors.length === 0) {
-      successAlert.style.display = "block";
-      successAlert.innerHTML = "Valid X-SMTPAPI Header";
-      return;
-    } else {
-      failAlert.innerHTML = "Errors:<br/>"
-      for (var i = 0, len = errors.length; i < len; i++) {
-        failAlert.innerHTML += i + 1 + ". " + errors[i].property.slice(9) + " - " + errors[i].message + ".<br/>";
-      }
-      failAlert.style.display = "block";
-      return;
-    }
-  }
-</script>

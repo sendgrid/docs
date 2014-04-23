@@ -2665,3 +2665,47 @@ function isNullOrUndefined(arg) {
 }
 
 },{"punycode":7,"querystring":10}]},{},[])
+
+//code for wiring up smtpapi_validator
+$(function() {
+  if ($('#smtpapi_headers').length == 0)
+    return;
+
+  // Setup
+  var validator = require('smtpapivalidator');
+  var successAlert = document.getElementById("successAlert");
+  var failAlert = document.getElementById("failAlert");
+  successAlert.style.display = failAlert.style.display = "none";
+
+  // Perfom check
+  document.getElementById("validate_headers").onclick = function (e) {
+    successAlert.style.display = failAlert.style.display = "none";
+    successAlert.innerHTML = failAlert.innerHTML = "";
+    var textArea = document.getElementById("smtpapi_headers");
+    if (textArea.value.length === 0) {
+      return;
+    }
+    var headers;
+    try {
+      headers = JSON.parse(textArea.value);
+    } catch (e) {
+      failAlert.style.display = "block";
+      failAlert.innerHTML = "Invalid JSON.";
+      return;
+    }
+    var errors = validator(headers);
+    if (errors.length === 0) {
+      successAlert.style.display = "block";
+      successAlert.innerHTML = "Valid X-SMTPAPI Header";
+      return;
+    } else {
+      failAlert.innerHTML = "Errors:<br/>"
+      for (var i = 0, len = errors.length; i < len; i++) {
+        failAlert.innerHTML += i + 1 + ". " + errors[i].property.slice(9) + " - " + errors[i].message + ".<br/>";
+      }
+      failAlert.style.display = "block";
+      return;
+    }
+  }
+});
+
