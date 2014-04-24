@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-<p>View your SendGrid Profile</p>
-
-<h3>There are no extra parameters required to view your profile information.</h3>
+{% anchor h2 %}
+get 
+{% endanchor %}
 
 {% apiexample get GET https://api.sendgrid.com/api/profile.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -55,7 +55,7 @@ navigation:
 set 
 {% endanchor %}
 
- <table class="table table-bordered table-striped">
+ <table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
      <tr>
        <th>Parameter</th>
@@ -180,7 +180,7 @@ set
 setPassword 
 {% endanchor %}
 
-  <table class="table table-bordered table-striped">
+  <table id="parameters-reset" class="table table-bordered table-striped">
     <tbody>
       <tr>
         <th>Parameter</th>
@@ -259,7 +259,7 @@ setUsername
 Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
 {% endwarning %}
 
- <table class="table table-bordered table-striped">
+ <table id="parameters-setusername" class="table table-bordered table-striped">
    <tbody>
      <tr>
        <th>Parameter</th>
@@ -330,7 +330,7 @@ setEmail
 Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.
 {% endinfo %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-setemail" class="table table-bordered table-striped">
   <tbody>
     <tr>
       <th>Parameter</th>

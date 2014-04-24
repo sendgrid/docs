@@ -14,7 +14,7 @@ send
 
 <p>Send email.</p>
 
- <table class="table table-bordered table-striped">
+ <table id="parameters-send" class="table table-bordered table-striped">
    <tbody>
      <tr>
        <th>Parameter</th>
@@ -211,7 +211,7 @@ send
 
 
 <h3>Call: Send to Multiple Recipients</h3>
-{% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com %}
+{% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
 //success
 {

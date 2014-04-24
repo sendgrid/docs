@@ -19,7 +19,7 @@ List all of the available appgs.
 Note: The
   <em>name</em>
   entry is used in all the other API calls to identify a app.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-list" class="table table-bordered table-striped"><tbody>
       <tr>
         <td>Parameter</td>
         <td>Required</td>
@@ -68,7 +68,7 @@ Note: The
   {% anchor h2 %}
 Activate App 
 {% endanchor %}
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-activate" class="table table-bordered table-striped"><tbody>
       <tr>
         <td>Parameter</td>
         <td>Required</td>
@@ -109,7 +109,7 @@ Activate App
   {% anchor h2 %}
 Deactivate App 
 {% endanchor %}
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-deactivate" class="table table-bordered table-striped"><tbody>
       <tr>
         <td>Parameter</td>
         <td>Required</td>
@@ -153,7 +153,7 @@ Customize App
 {% endanchor %}
   These API calls require that settings are passed using POST.
   
-{% apiexample customize POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=setup&user=example@example.com %}
+{% apiexample customize POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&task=setup&email=email example.com false %}
   {% response json %}
 	{"message":"success","settings":[{"field_name":"field_value"}]}
   
@@ -186,7 +186,12 @@ Customize App
 Get Current Settings 
 {% endanchor %}
   
-{% apiexample settings POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com %}
+{% parameters settings %}
+{% parameter name true '' 'The app for which to retrieve settings.' %}
+{% parameter task true '' 'getsettings' %}
+{% endparameters %}
+
+{% apiexample settings POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&task=getsettings %}
   {% response json %}
 {
   "message": "success",

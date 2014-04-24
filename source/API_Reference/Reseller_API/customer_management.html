@@ -9,7 +9,7 @@ These are actions that directly affect your customer. We provide access via XML 
 {% anchor h2 %}
 Create a Customer 
 {% endanchor %}
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-create" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -198,7 +198,7 @@ Remove a customer from your account. This is
 <strong>not</strong>
 the same as disabling a customer on our system.
 This is the same thing as closing out a customers account at the end of their billing cycle.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-delete" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -251,7 +251,7 @@ Retrieve Customers
 {% endanchor %}
 
 Obtain a complete list of all customers.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-get" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -406,7 +406,7 @@ Enable a Customer
 {% endanchor %}
 Enable a customer so they may start sending out emails again. This call will not enable website access.
 
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-enable" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -465,7 +465,7 @@ Enable a customer so they may start sending out emails again. This call will not
 Disable a Customer 
 {% endanchor %}
 This prevents them from sending out emails with SendGrid.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-disable" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -521,7 +521,7 @@ This prevents them from sending out emails with SendGrid.
 Enable Website Access To A Customer 
 {% endanchor %}
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-website" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -580,7 +580,7 @@ access</td>
 Disable Website Access To A Customer 
 {% endanchor %}
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-unwebsite" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -639,7 +639,7 @@ website access</td>
 Update Customer Profile 
 {% endanchor %}
 Allows you to update your customers profile information
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-update" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -748,7 +748,7 @@ to update profile information</td>
 Update Customer Password 
 {% endanchor %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-password" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -823,7 +823,7 @@ Update Customer Username
 Note that your customer account username is used to login to our SMTP server
 <em>and</em>
 the website and changes take effect immediately.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-name" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -910,7 +910,7 @@ This update takes effect immediately</td>
 Update Customer Email Address 
 {% endanchor %}
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
-<table class="table table-bordered table-striped"><tbody>
+<table id="parameters-email" class="table table-bordered table-striped"><tbody>
     <tr>
       <th>Parameter</th>
       <th>Required</th>
