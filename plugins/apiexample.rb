@@ -7,15 +7,28 @@ module Jekyll
       @url = attributes[2]
       @data = attributes[3]
 
+      if attributes[4]
+        @show_livedoc = attributes[4]
+      end
+
       super
     end
 
     def render(context)
       output = super
+
+      livedoc = ""
+      if @show_livedoc != "false"
+        livedoc = "{% livedoc #{@identifier} #{@request_type} #{@url} #{@data} %}"
+      end
+
       output = <<-HTML
-        {% xmljsontabs #{@identifier}%}
-        <div class="tab-content">
-        #{output}
+        #{livedoc}
+        <div class="api-example" id="apiexample-#{@identifier}">
+          {% xmljsontabs #{@identifier}%}
+          <div class="tab-content">
+          #{output}
+          </div>
         </div>
       HTML
 
@@ -63,7 +76,7 @@ module Jekyll
             {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
             #{requestdata_block}
           {% endrequestblock %}
-
+          
           <h3>Response</h3>
           {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
         </div>

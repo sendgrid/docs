@@ -21,18 +21,10 @@ Address Whitelist
 When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call.
 {% endinfo %}
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>list</td>
-<td>A list of email addresses or domains.</td>
-<td>list[]=support@example.com&list[]=sales@example.com</td>
-</tr>
-</table>
+{% parameters addresswhitelist %}
+{% parameter name yes 'addresswhitelist' 'The name of the app for which to apply settings.' %}
+{% parameter list no 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
+{% endparameters %}
 
 {% apiexample addresswhitelist POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
   {% response json %}
@@ -59,18 +51,10 @@ BCC "Blind Carbon Copy"
 
 <p><em>API App Name - <code>bcc</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>bcc</td>
-<td>An email address to be the BCC recipient.</td>
-<td>email@example.com</td>
-</tr>
-</table>
+{% parameters bcc %}
+{% parameter name yes 'bcc' 'The name of the app for which to apply settings.' %}
+{% parameter bcc yes 'An email address to be the BCC recipient.' 'email@example.com' %}
+{% endparameters %}
 
 {% apiexample bcc POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com %}
   {% response json%}
@@ -94,18 +78,10 @@ Click Tracking
 
 <p><em>API App Name - <code>clicktrack</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>enable_text</td>
-<td>Enable click tracking in plain text emails.</td>
-<td>1</td>
-</tr>
-</table>
+{% parameters clicktrack %}
+{% parameter name yes 'clicktrack' 'The name of the app for which to apply settings.' %}
+{% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
+{% endparameters %}
 
 {% apiexample clicktrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1 %}
   {% response json %}
@@ -128,25 +104,11 @@ Domain Keys
 
 <p><em>API App Name - <code>domainkeys</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>domain</td>
-<td>The domain to sign messages as</td>
-<td>example.com</td>
-</tr>
-<tr>
-<td>sender</td>
-<td>1 to insert a sender header if the domain specified does not match the from address
-0 to never insert a Sender header</td>
-<td>1</td>
-</tr>
-
-</table>
+{% parameters domainkeys %}
+{% parameter name yes 'domainkeys' 'The name of the app for which to apply settings.' %}
+{% parameter domain yes 'The domain to sign messages as.' 'example.com' %}
+{% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
+{% endparameters %}
 
 {% apiexample domainkeys POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
   {% response json %}
@@ -169,22 +131,11 @@ DKIM
 
 <p><em>API App Name - <code>dkim</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>domain</td>
-<td>The domain you would like your DKIM certification signed with</td>
-<td>example.com</td>
-</tr>
-<td>use_from</td>
-<td>If enabled, the domain in the From: header of the email will be used to sign your DKIM</td>
-<td>1</td>
-</tr>
-</table>
+{% parameters dkim %}
+{% parameter name yes 'dkim' 'The name of the app for which to apply settings.' %}
+{% parameter domain yes 'The domain to sign messages as.' 'example.com' %}
+{% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
+{% endparameters %}
 
 {% apiexample dkim POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
   {% response json %}
@@ -207,18 +158,10 @@ Email Templates
 
 <p><em>API App Name - <code>template</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>text_html</td>
-<td>A string that holds the template html body</td>
-<td>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body bgcolor=&#39;pink&#39;&gt;&lt;div style=&#39;width:200px&#39; bgcolor=&#39;#FFF&#39;&gt;&lt;% body %&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</td>
-</tr>
-</table>
+{% parameters template %}
+{% parameter name yes 'template' 'The name of the app for which to apply settings.' %}
+{% parameter text_html yes 'A string that holds the template html body.' '&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body bgcolor=&#39;pink&#39;&gt;&lt;div style=&#39;width:200px&#39; bgcolor=&#39;#FFF&#39;&gt;&lt;% body %&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;' %}
+{% endparameters %}
 
 {% apiexample template POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
   {% response json %}
@@ -245,64 +188,76 @@ Event Notification
 All fields except version are required for each call.
 {% endinfo %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-eventnotify" class="table table-bordered table-striped">
 <tr>
 <th>Parameter</th>
+<th>Required?</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 <tr>
 <td>processed</td>
+<td>Yes</td>
 <td>Notify when email is processed</td>
 <td>0</td>
 </tr>
 <tr>
 <td>dropped</td>
+<td>Yes</td>
 <td>Notify when email is dropped</td>
 <td>1</td>
 </tr>
 <tr>
 <td>deferred</td>
+<td>Yes</td>
 <td>Notify when email is deferred</td>
 <td>1</td>
 </tr>
 <tr>
 <td>delivered</td>
+<td>Yes</td>
 <td>Notify when email is delivered</td>
 <td>1</td>
 </tr>
 <tr>
 <td>bounce</td>
+<td>Yes</td>
 <td>Notify when email is bounced</td>
 <td>1</td>
 </tr>
 <tr>
 <td>click</td>
+<td>Yes</td>
 <td>Notify when email is clicked</td>
 <td>1</td>
 </tr>
 <tr>
 <td>open</td>
+<td>Yes</td>
 <td>Notify when email is opened</td>
 <td>1</td>
 </tr>
 <tr>
 <td>unsubscribe</td>
+<td>Yes</td>
 <td>Notify when email is unsubscribed</td>
 <td>1</td>
 </tr>
 <tr>
 <td>spamreport</td>
+<td>Yes</td>
 <td>Notify when email is marked as spam</td>
 <td>1</td>
 </tr>
 <tr>
 <td>url</td>
+<td>Yes</td>
 <td>The post notification url to post these event messages to</td>
 <td>https://notificationurl.example.com/event</td>
 </tr>
 <tr>
 <td>version</td>
+<td>No</td>
 <td>The version of the Event API you wish to use. (1-3)</td>
 <td>3</td>
 </tr>
@@ -329,19 +284,22 @@ Footer
 
 <p><em>API App Name - <code>footer</code></em></p>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-footer" class="table table-bordered table-striped">
 <tr>
 <th>Parameter</th>
+<th>Required?</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 <tr>
 <td>text/html</td>
+<td>No</td>
 <td>String that holds the html body</td>
 <td>&lt;html&gt;Content&lt;/html&gt;</td>
 </tr>
 <tr>
 <td>text/plain</td>
+<td>No</td>
 <td>String that holds the text body</td>
 <td>Content</td>
 </tr>
@@ -368,34 +326,40 @@ Google Analytics
 
 <p><em>API App Name - <code>ganalytics</code></em></p>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-googleanalytics" class="table table-bordered table-striped">
 <tr>
 <th>Parameter</th>
+<th>Required?</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 <tr>
 <td>utm_source</td>
+<td>No</td>
 <td>Name of the referrer source</td>
 <td>Transactional Email</td>
 </tr>
 <tr>
 <td>utm_medium</td>
+<td>No</td>
 <td>Name of the marketing medium</td>
 <td>email</td>
 </tr>
 <tr>
 <td>utm_campaign</td>
+<td>No</td>
 <td>Name of the campaign</td>
 <td>Redesigned Transaction </td>
 </tr>
 <tr>
 <td>utm_term</td>
+<td>No</td>
 <td>Identify paid keywords</td>
 <td>Health</td>
 </tr>
 <tr>
 <td>utm_content</td>
+<td>No</td>
 <td>Use to differentiate ads</td>
 <td>PageB</td>
 </tr>
@@ -422,19 +386,6 @@ Gravatar
 
 <p><em>API App Name - <code>gravatar</code></em></p>
 
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>None</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-</table>
-
 <hr/>
 
 {% anchor h2 %}
@@ -442,19 +393,6 @@ Open Tracking
 {% endanchor %}
 
 <p><em>API App Name - <code>opentrack</code></em></p>
-
-<table class="table table-bordered table-striped">
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>None</td>
-<td>N/A</td>
-<td>N/A</td>
-</tr>
-</table>
 
 <hr/>
 
@@ -464,19 +402,22 @@ SPAM Filter Checker
 
 <p><em>API App Name - <code>spamcheck</code></em></p>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-spamcheck" class="table table-bordered table-striped">
 <tr>
 <th>Parameter</th>
+<th>Required?</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 <tr>
 <td>maxscore</td>
+<td>Yes</td>
 <td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin</td>
 <td>1.2</td>
 </tr>
 <tr>
 <td>url</td>
+<td>Yes</td>
 <td>URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam</td>
 <td>https://www.example.com/spamcheck.php</td>
 </tr>
@@ -502,34 +443,40 @@ Subscription Tracking
 
 <p><em>API App Name - <code>subscriptiontrack</code></em></p>
 
-<table class="table table-bordered table-striped">
+<table id="parameters-subscriptiontrack" class="table table-bordered table-striped">
 <tr>
 <th>Parameter</th>
+<th>Required?</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 <tr>
 <td>text/html</td>
+<td>No</td>
 <td>String for the HTML e-mail body</td>
 <td>If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;</td>
 </tr>
 <tr>
 <td>text/plain</td>
+<td>No</td>
 <td>String for the plain text e-mail body</td>
 <td>If you would like to unsubscribe and stop receiving these emails click here: <% %>.</td>
 </tr>
 <tr>
 <td>url</td>
+<td>No</td>
 <td>a URL the customer will be redirected to on clicking the subscription management link</td>
 <td>http://www.example.com/UnsubscribeLandingPage</td>
 </tr>
 <tr>
 <td>landing</td>
+<td>No</td>
 <td>HTML content for a landing page that will be displayed by SendGrid</td>
 <td>&lt;html&gt;Content&lt;/html&gt;</td>
 </tr>
 <tr>
 <td>replace</td>
+<td>No</td>
 <td>a tag that can be added to the content that will be replaced by SendGrid with the subscription management link</td>
 <td>[unsubscribe_tag]</td>
 </tr>

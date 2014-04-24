@@ -13,7 +13,7 @@ List
 <p>Note: The
   <em>name</em>
   entry is used in all the other API calls to identify a app.</p>
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
     <th>Required</th>
@@ -73,7 +73,7 @@ List
 {% anchor h2 %}
 Activate App 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-activate" class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
     <th>Required</th>
@@ -124,7 +124,7 @@ Activate App
 {% anchor h2 %}
 Deactivate App 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-deactivate" class="table table-bordered table-striped">
   <tr>
     <th>Parameter</th>
     <th>Required</th>
@@ -177,7 +177,7 @@ Customize App
 {% endanchor %}
 <p>These API calls require that settings are passed using POST.</p>
 
-{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com %}
+{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user customer@example.com false %}
   {% response json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
   {% endresponse %}
@@ -209,7 +209,7 @@ Customize App
 Get Current Settings 
 {% endanchor %}
 
-{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app %}
+{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app false %}
   {% response json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
 

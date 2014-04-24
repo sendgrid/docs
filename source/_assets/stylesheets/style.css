@@ -26,6 +26,11 @@ b, strong {
   font-family: "Proxima N W15 Smbd";
 }
 
+.btn {
+  padding-left:20px;
+  padding-right:20px;
+}
+
 .nopadding {
   padding:0px;
 }
@@ -172,11 +177,11 @@ code.wrap, code.requestdata {
 	color: black;
 }
 
-.request-block .requestdata .data-key {
+.data-key {
 	color: #2aa198;
 }
 
-.request-block .requestdata .data-value {
+.data-value {
 	color: #859900;
 }
 
@@ -253,7 +258,6 @@ article .nav-tabs li a {
 
 #nav .btn {
   border-radius:15px;
-  width: 100px;
   border:0px;
   margin-top:17px;
   margin-right:7px;
@@ -594,6 +598,25 @@ figure.code.expanded {
   max-height: none;
 }
 
+.live-doc {
+  display: none;
+}
+
+.tryit, .cancel {
+  margin: 5px 10px 5px 0px;
+}
+
+.clear-request {
+  width:131px;
+}
+
+.btn {
+  border-radius:15px;
+}
+
+.hljs {
+  max-width:624px;
+}
 
 @media (max-width: 767px) {
   .nav-link { text-align:center; }
