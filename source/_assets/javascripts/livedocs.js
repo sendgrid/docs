@@ -53,9 +53,9 @@
         password = $('#password').val();
         responseFormat = $('#response-format').val();
 
-        $.cookie('username', username);
-        $.cookie('password', password);
-        $.cookie('responseFormat', responseFormat);
+        $.cookie('username', username, { secure:true });
+        $.cookie('password', password, { secure:true });
+        $.cookie('responseFormat', responseFormat, { secure:true });
 
         $('#credentialsModal').modal('hide');
       });
