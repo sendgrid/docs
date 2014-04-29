@@ -91,6 +91,9 @@
         if (!valid) return;
 
         url = $(this).parent().find('.url').val();
+        // Temporary fix to allow for CORS
+        // Revert, once OPS allows for CORS on sendgrid domains
+        url = url.replace("api.sendgrid.com", "sendgrid.com");
         method = $(this).parent().find('.method').val().toUpperCase().trim();
         data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
         creds = "api_user=" + username + "&api_key=" + password;
