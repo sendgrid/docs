@@ -14,13 +14,13 @@ install:
 - travis_retry bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then ruby set_prod_config.rb; fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ]; then ruby set_prod_config.rb; fi"
 script:
 - bundle exec rake generate
 - bundle exec rake linklint
 after_success:
 - bundle exec cap deploy
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then bundle exec rake invalidate_cloudfront; fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec rake invalidate_cloudfront; fi"
 env:
   global:
   - secure: f6Xi8/jXfnWpCOP9T5f+nscg5tzlQ6+YLjI+mur2nGT+An4SbFS/LehoH1Q2jM6mI4jLxK/4TTBr+sWKgw3UzQ9ziTfCkV4fHxgQ8Aw4QWiLg0BNoLnYlYbDFK2uSgKuSYRoYSZ1OAZzmn+d/MuEfQDn/vbQwqqPgGufwbOALvE=
