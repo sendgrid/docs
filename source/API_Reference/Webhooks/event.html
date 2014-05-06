@@ -24,13 +24,6 @@ If you'd like to see how one of our customers uses the Event Webhook, check out
 Setup
 {% endanchor %}
 
-{% warning %}
-If you enabled the Event Webhook prior to September 6, 2013 you will see a dropdown allowing you to select
-Version 1, 2 or 3 of the webhook. Version 3 is the recommended option and the only option available to new users.
-You can read about the older versions on the
-<a href="{{root_url}}/API_Reference/Webhooks/event_deprecated.html">Event Webhook (deprecated)</a> page.
-{% endwarning %}
-
 <p>To setup the Event Webhook via our web interface, login and go to the <a href="http://sendgrid.com/app">apps page</a>,
 click on Show Disabled Apps, click the Event Notification app, and click on settings. Check the boxes next to the
 type of events you want posted to your web server, then enter in the URL you have setup to receive POSTs from our
@@ -544,7 +537,3 @@ response your server is returning including the HTTP headers.</p>
 curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"category":"newuser","event":"click","url":"http://sendgrid.com"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
 {% endcodeblock %}
 
-{% anchor h2 %}
-Version Differences
-{% endanchor %}
-The primary difference between v2 and v3 of the Event Webhook is Version 3 deliverers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Further, v3 provides more data with certain events. The <a href="http://sendgrid.com/docs/API_Reference/Webhooks/event_deprecated.html ">previous version of the webhook's documentation</a> is still provided so you may compare.
