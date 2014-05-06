@@ -537,3 +537,7 @@ response your server is returning including the HTTP headers.</p>
 curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"category":"newuser","event":"click","url":"http://sendgrid.com"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
 {% endcodeblock %}
 
+{% anchor h2 %}
+Version Differences
+{% endanchor %}
+The primary difference between v2 (no longer available) and v3 of the Event Webhook is Version 3 deliverers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Further, v3 provides more data with certain events. The <a href="http://sendgrid.com/docs/API_Reference/Webhooks/event_deprecated.html ">previous version of the webhook's documentation</a> is still provided so you may compare.
