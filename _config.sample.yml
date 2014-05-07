@@ -27,7 +27,7 @@ css_destination: stylesheets
 js_destination: javascripts
 plugins: plugins
 markdown: rdiscount
-pygments: false # default python pygments have been replaced by pygments.rb
+highlighter: pygments # default python pygments have been replaced by pygments.rb
 
 titlecase: true       # Converts page and post titles to titlecase
 
