@@ -15,7 +15,7 @@ that the maximum attachment size depends on the size of the rest of the
 stuff in your message.
 
 Also keep in mind that the size of your file on disk or in memory may
-not be the same as the size of file once it is attached, as files must
+not be the same as the size of the file once it is attached, as files must
 be encoded as text to be sent. You can expect an increase in size of up
 to 30%.
 
