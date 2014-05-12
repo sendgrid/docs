@@ -36,7 +36,7 @@ layout: default
       <img src="{{root_url}}/images/encircled-minus.png" alt="-" />
       No
     </a>
-    <a class="feedback-element feedback-more" href="mailto:community@sendgrid.com?subject={{ "[docs-feedback] " | append: page.title | uri_escape }}&body=Hello!%0AI%20have%20some%20feedback%20regarding%20your%20documentation%3A%0A%0A%0A%0A{{ append: site.url | append: page.url | uri_escape }}">
+    <a class="feedback-element feedback-more" href="mailto:community@sendgrid.com?subject={{ "[docs-feedback] " | append: page.title | uri_escape }}&body=Hello!%0AI%20have%20some%20feedback%20regarding%20your%20documentation%3A%0A%0A%0A%0A{{ site.url | append: / |  append: page.url | uri_escape }}">
       <img src="{{root_url}}/images/feedback.png" alt="" />
       Feedback
     </a>
