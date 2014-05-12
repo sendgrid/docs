@@ -23,7 +23,7 @@ to 30%.
 Best Practices
 {% endanchor %}
 
-Atachments are in and of themselves potential risks when sending email.
+Attachments are in and of themselves potential risks when sending email.
 Email filters are more likely to prevent delivery of a message that has an attachment 
 due to the risk of viruses.
 
