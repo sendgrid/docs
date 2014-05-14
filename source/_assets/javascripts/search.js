@@ -38,7 +38,7 @@
 		'title': 'Search: ' + query
 	});
   	
-    var result = $.getJSON('https://agupam.api.indexden.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
+    var result = $.getJSON('https://86xw1.api.searchify.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?', function(data) {
         $('div#results').empty();
 		
     root = $('#root').val();
