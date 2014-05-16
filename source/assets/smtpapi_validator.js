@@ -2697,6 +2697,7 @@ $(function() {
     if (errors.length === 0) {
       successAlert.style.display = "block";
       successAlert.innerHTML = "Valid X-SMTPAPI Header";
+      textArea.value = JSON.stringify(headers, undefined, 4);
       return;
     } else {
       failAlert.innerHTML = "Errors:<br/>"
