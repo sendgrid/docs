@@ -22,15 +22,15 @@ module Jekyll
         livedoc = "{% livedoc #{@identifier} #{@request_type} #{@url} #{@data} %}"
       end
 
-      output = <<-HTML
-        #{livedoc}
-        <div class="api-example" id="apiexample-#{@identifier}">
-          {% xmljsontabs #{@identifier}%}
-          <div class="tab-content">
-          #{output}
-          </div>
-        </div>
-      HTML
+      output = <<HTML
+#{livedoc}
+<div class="api-example" id="apiexample-#{@identifier}">
+  {% xmljsontabs #{@identifier}%}
+  <div class="tab-content">
+  #{output}
+  </div>
+</div>
+HTML
 
       return Liquid::Template.parse(output).render context
     end
@@ -69,18 +69,18 @@ module Jekyll
       request_url = request_type.upcase != "GET" ? "#{url}.#{@format}" : "#{url}.#{@format}?#{data}"
       requestdata_block = request_type.upcase != "GET" ? "{% requestdata data #{request_type} %}#{data}{% endrequestdata %}" : ""
 
-      output = <<-HTML
-        <div class="tab-pane #{active}" id="#{identifier}-#{@format}">
-          <h3>Call</h3>
-          {% requestblock %}
-            {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
-            #{requestdata_block}
-          {% endrequestblock %}
-          
-          <h3>Response</h3>
-          {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
-        </div>
-      HTML
+      output = <<HTML
+<div class="tab-pane #{active}" id="#{identifier}-#{@format}">
+  <h3>Call</h3>
+  {% requestblock %}
+    {% requesturl #{request_type} %}#{request_url}{% endrequesturl %}
+    #{requestdata_block}
+  {% endrequestblock %}
+  
+  <h3>Response</h3>
+  {% codeblock lang:#{@format} %}#{output.strip}{% endcodeblock %}
+</div>
+HTML
       
       return Liquid::Template.parse(output).render context
     end
