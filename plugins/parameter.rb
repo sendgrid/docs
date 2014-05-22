@@ -11,14 +11,14 @@ module Jekyll
     end
 
     def render(context)
-      <<-HTML
-      <tr>
-        <td>#{@name}</td>
-        <td>#{@required}</td>
-        <td>#{@requirements}</td>
-        <td>#{@description}</td>
-      </tr>
-      HTML
+<<HTML
+<tr>
+  <td>#{@name}</td>
+  <td>#{@required}</td>
+  <td>#{@requirements}</td>
+  <td>#{@description}</td>
+</tr>
+HTML
     end
   end
 end
