@@ -59,11 +59,11 @@ module Jekyll
 
     def render(context)
       output = super
-      return <<-HTML
-        <table class="table table-bordered request-block">
-          #{output}
-        </table>
-      HTML
+      return <<HTML
+<table class="table table-bordered request-block">
+  #{output}
+</table>
+HTML
     end
   end
 
@@ -128,14 +128,18 @@ HTML
         output.gsub!(/^([^:]+):(.+)$/m, '<span class="data-key">\1</span>:<span class="data-value">\2</span><br />')
       end
 
-      return <<-HTML
-        <tr>
-          <td>#{@method} #{@type}</td>
-          <td>
-            <code class="requestdata requestdata-#{@type.downcase}">#{output}</code>
-          </td>
-        </tr>
-      HTML
+      return <<HTML
+<tr>
+  <td>#{@method} #{@type}</td>
+  <td>
+    <code class="requestdata requestdata-#{@type.downcase}">#{output}</code>
+  </td>
+</tr>
+HTML
+    end
+
+    def render_all(list, context)
+      super
     end
   end
 

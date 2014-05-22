@@ -19,9 +19,18 @@ request that contains a base64-encoded <code>username:password</code>
 string. Read more about [basic access
 authentication](http://en.wikipedia.org/wiki/Basic_access_authentication#Client_side).
 
-{% codeblock %}
+Example header:
+
+{% codeblock lang:http %}
 GET https://api.sendgrid.net/v3/resource HTTP/1.1
 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ===
+{% endcodeblock %}
+
+If you want to use the API via curl, it has support for base64-encoded
+authentication built-in. For example:
+
+{% codeblock %}
+curl -X POST -d '{"name":"example_name"}' -H "Content-Type: application/json" -u sendgrid_username https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -240,8 +249,7 @@ Request Body
 {% endanchor %}
 
 When submitting data to a resource via POST or PUT, you must
-submit your information in JSON. Failure to do so will result in a bad
-request error.
+submit your payload in JSON.
 
 Example
 {% codeblock lang:http %}
@@ -252,4 +260,143 @@ Content-Type: application/json
   "foo": "bar",
   "hello": "world",
 }
+{% endcodeblock %}
+
+{% anchor h2 %}
+Responses
+{% endanchor %}
+
+{% anchor h3 %} 
+Content-Type Header
+{% endanchor %}
+
+All responses are returned in JSON format. We specify this by setting
+the `Content-Type` header.
+
+Example
+{% codeblock lang:http %}
+GET https://api.sendgrid.net/v3/resource HTTP/1.1
+{% endcodeblock %}
+
+{% codeblock lang:json %}
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "foo": "bar",
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Status Codes
+{% endanchor %}
+
+Below is a table description of the various status codes we corrently
+support against resources.
+
+<table class="table table-bordered table-striped">
+<thead>
+  <tr>
+    <th>Status Code</th>
+    <th>Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>200</td><td>No error</td>
+  </tr>
+  <tr>
+    <td>201</td><td>Successfully created</td>
+  </tr>
+  <tr>
+    <td>204</td><td>Successfully deleted</td>
+  </tr>
+  <tr>
+    <td>400</td><td>Bad request</td>
+  </tr>
+  <tr>
+    <td>401</td><td>Requires authentication</td>
+  </tr>
+  <tr>
+    <td>500</td><td>Internal server error</td>
+  </tr>
+</tbody>
+</table>
+  
+{% anchor h3 %}
+Successful Requests
+{% endanchor %}
+
+Below is a general overview of what resource objects are returned on
+successful Web API requests.
+
+<table class="table table-bordered table-striped">
+<thead>
+  <tr>
+    <th>Verb</th><th>Resource object returned</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>GET</td><td>A single resource object or array of resource objects</td>
+  </tr>
+  <tr>
+    <td>PATCH</td><td>The updated resource object is returned</td>
+  </tr>
+  <tr>
+    <td>DELETE</td><td>No content is returned</td>
+  </tr>
+  <tr>
+    <td>POST</td><td>The newly created resource object is returned</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Failed Requests
+{% endanchor %}
+
+The general format guidelines are displayed with the accompanying status
+code is returned.
+
+Example
+
+{% codeblock lang:http %}
+GET https://api.sendgrid.net/v3/resource HTTP/1.1
+{% endcodeblock %}
+
+{% codeblock lang:http %}
+HTTP/1.1 400 BAD REQUEST
+Content-Type: application/json
+
+{
+    "errors": [
+      {"field": "identifier1", "message": "error message explained"},
+      {"field": "identifier2", "message": "error message explained"},
+      {"field": "identifier3", "message": "error message explained"},
+    ]
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Pagination
+{% endanchor %}
+
+When a request is made with pagination query, the following data is
+included in the header to allow for easy traversal of previous, current,
+first, and last page of the data set.
+
+Example
+
+{% codeblock lang:http %}
+GET https://api.sendgrid.com/v3/resource?limit=5&offset=0 HTTP/1.1
+{% endcodeblock %}
+
+{% codeblock lang:http %}
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+Link: <http://api.sendgrid.com/v3/resource?limit=5&offset=5>; rel="next"; title="2", 
+      <http://api.sendgrid.com/v3/resource?limit=5&offset=0>; rel="prev"; title="1", 
+      <http://api.sendgrid.com/v3/resource?limit=5&offset=10>; rel="last"; title="3", 
+      <http://api.sendgrid.com/v3/resource?limit=5&offset=0>; rel="first"; title="1"
 {% endcodeblock %}
