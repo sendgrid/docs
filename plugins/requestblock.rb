@@ -81,14 +81,14 @@ module Jekyll
     def render(context)
       output = super
       output.gsub!(/^\s*(.+)\s*$/, '\1')
-      return <<-HTML
-        <tr>
-          <td>#{@method}</td>
-          <td>
-            <code>#{output}</code>
-          </td>
-        </tr>
-      HTML
+      return <<HTML
+<tr>
+  <td>#{@method}</td>
+  <td>
+    <code>#{output}</code>
+  </td>
+</tr>
+HTML
     end
   end
 
