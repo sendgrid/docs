@@ -8,13 +8,14 @@ navigation:
 
 The Template Engine is the first feature available on SendGrid's new API
 architecture. As a result, interacting with the endpoints described here
-is different than the other existing APIs, so please read carefully!
+is different than the other existing endpoints, so please read 
+carefully!
 
 {% anchor h2 %}
 Authentication
 {% endanchor %}
 
-To authenticate, add an <code>Authentication</code> header to your API
+To authenticate, add an <code>Authorization</code> header to your API
 request that contains a base64-encoded <code>username:password</code>
 string. Read more about [basic access
 authentication](http://en.wikipedia.org/wiki/Basic_access_authentication#Client_side).
@@ -30,7 +31,7 @@ If you want to use the API via `curl`, it has support for base64-encoded
 authentication built-in. For example:
 
 {% codeblock lang:bash %}
-$curl -X POST -d '{"name":"example_name"}' -H "Content-Type: application/json" -u sendgrid_username https://api.sendgrid.com/v3/templates
+$curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name":"example_name"}' https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -49,10 +50,10 @@ Requests
 {% endanchor %}
 
 {% anchor h3 %}
-Authentication Header
+Authorization Header
 {% endanchor %}
 
-You must provide an authentication header as described in
+You must provide an authorization header as described in
 [Authentication](#-Authentication).
 
 {% anchor h3 %}
@@ -119,7 +120,6 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
-
 {% anchor h3 %}
 Rate Limits
 {% endanchor %}
@@ -130,20 +130,6 @@ per refresh period.
 Each Web API requests returns the following header information 
 regarding rate limits and number of requests left.
 
-<table class="table table-bordered table-striped">
-<tr ><th>Header</th>
-<th>Description</th>
-</tr>
-<tr><td>X-RateLimit-Remaining</td>
-<td>The number of requests available to make to this endpoint</td>
-</tr>
-<tr><td>X-RateLimit-Limit</td>
-<td>Total number of requests you are allowed to make to this endpoint</td>
-</tr>
-<tr><td>X-RateLimit-Reset</td>
-<td>When your credit allowance is to reset. Format is in a unix timestamp.</td>
-</tr>
-</table>
 
 Depending on the endpoint you are trying to reach, it will have a
 specific number of allowed requests per refresh period. Once this
