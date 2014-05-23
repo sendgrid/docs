@@ -19,7 +19,7 @@ module Jekyll
 
 
       output = <<HTML
-<div class="api-example" id="apiv3example-#{@identifier}">
+<div class="api-example panel" id="apiv3example-#{@identifier}">
   #{output}
 </div>
 HTML
@@ -53,7 +53,7 @@ HTML
       request_url = url
 
       output = <<HTML
-<div class="well">
+<div class="panel-body">
   <h3>Request</h3>
   {% codeblock lang:http %}#{request_type} #{request_url} HTTP/1.1{% endcodeblock %}
   #{data_block} 
