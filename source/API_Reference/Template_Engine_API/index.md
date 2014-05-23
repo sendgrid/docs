@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 100
+weight: 750
 title: Template Engine API (Beta)
 navigation:
   show: true
