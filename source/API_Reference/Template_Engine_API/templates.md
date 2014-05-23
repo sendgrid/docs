@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Templates
+weight: 100
 navigation:
   show: true
 ---

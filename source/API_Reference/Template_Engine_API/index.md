@@ -26,11 +26,11 @@ GET https://api.sendgrid.net/v3/resource HTTP/1.1
 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ===
 {% endcodeblock %}
 
-If you want to use the API via curl, it has support for base64-encoded
+If you want to use the API via `curl`, it has support for base64-encoded
 authentication built-in. For example:
 
-{% codeblock %}
-curl -X POST -d '{"name":"example_name"}' -H "Content-Type: application/json" -u sendgrid_username https://api.sendgrid.com/v3/templates
+{% codeblock lang:bash %}
+$curl -X POST -d '{"name":"example_name"}' -H "Content-Type: application/json" -u sendgrid_username https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -59,9 +59,9 @@ You must provide an authentication header as described in
 Accept Header
 {% endanchor %}
 
-The API provides JSON responses. This header is not currently required, 
-though it may be required in the future. If not set, the API will use
-application/json.
+The API provides JSON responses. The accept header is not currently
+required, though it may be required in the future. If not set, the 
+API will use `application/json`.
 
 {% codeblock lang:http %}
 GET https://api.sendgrid.net/v3/endpoint HTTP/1.1
@@ -75,35 +75,50 @@ HTTP Verbs
 Depending on the resource, we support the following HTTP verbs:
 
 <table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>Verb</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GET</td>
-      <td>Retrieve a resource or group of resouces</td>
-    </tr>
-    <tr>
-      <td>POST</td>
-      <td>Create a new resource</td>
-    </tr>
-    <tr>
-      <td>PUT</td>
-      <td>Update an existing resource</td>
-    </tr>
-    <tr>
-      <td>DELETE</td>
-      <td>Delete an existing resource</td>
-    </tr>
-    <tr>
-      <td>OPTIONS</td>
-      <td>View allowed verbs against a specific resources</td>
-    </tr>
-  </tbody>
+  <tr>
+    <th>Verb</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>Retrieve a resource or group of resouces</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>Create a new resource</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>Update an existing resource</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>Delete an existing resource</td>
+  </tr>
+  <tr>
+    <td>OPTIONS</td>
+    <td>View allowed verbs against a specific resources</td>
+  </tr>
 </table>
+
+{% anchor h3 %}
+Request Body
+{% endanchor %}
+
+When submitting data to a resource via `POST` or `PUT`, you must
+submit your payload in JSON.
+
+Example
+{% codeblock lang:http %}
+POST https://api.sendgrid.com/v3/credentials/ HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "foo": "bar",
+  "hello": "world",
+}
+{% endcodeblock %}
+
 
 {% anchor h3 %}
 Rate Limits
@@ -116,12 +131,9 @@ Each Web API requests returns the following header information
 regarding rate limits and number of requests left.
 
 <table class="table table-bordered table-striped">
-<thead>
 <tr ><th>Header</th>
 <th>Description</th>
 </tr>
-</thead>
-<tbody>
 <tr><td>X-RateLimit-Remaining</td>
 <td>The number of requests available to make to this endpoint</td>
 </tr>
@@ -131,7 +143,6 @@ regarding rate limits and number of requests left.
 <tr><td>X-RateLimit-Reset</td>
 <td>When your credit allowance is to reset. Format is in a unix timestamp.</td>
 </tr>
-</tbody>
 </table>
 
 Depending on the endpoint you are trying to reach, it will have a
@@ -161,8 +172,7 @@ When Limit is Reached
 {% endanchor %}
 
 You will no longer be able to make requests against that endpoint for
-the duration of that refresh period. All unauthenticated calls are rate
-limited at the IP level.
+the duration of that refresh period.
 
 Example Request
 {% codeblock lang:http %}
@@ -191,7 +201,7 @@ X-RateLimit-Reset: 1392815263
 Pagination
 {% endanchor %}
 
-Some GET resources allow for retrieval of information in batches. We
+Some `GET` resources allow for retrieval of information in batches. We
 will provide the query args in the resource documentation when available
 to consume.
 
@@ -212,21 +222,18 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
 {% endcodeblock %}
 
 <table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th>Parameter</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>limit</td>
-      <td>The number of records to return</td>
-    </tr>
-    <tr>
-      <td>offset</td>
-      <td>The number of records to skip</td>
-  </tbody>
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>limit</td>
+    <td>The number of records to return</td>
+  </tr>
+  <tr>
+    <td>offset</td>
+    <td>The number of records to skip</td>
+  </tr>
 </table>
 
 {% anchor h3 %}
@@ -237,29 +244,11 @@ Some resources allow you to search by a specific field. Other resources
 require you to append a parameter to the URI.
 
 In this example, we will display a paginated uri example, searching for
-resources where the email contains 'foo'.
+resources where the email contains `foo`.
 
 Example
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?email=foo&foo=bar HTTP/1.1
-{% endcodeblock %}
-
-{% anchor h3 %}
-Request Body
-{% endanchor %}
-
-When submitting data to a resource via POST or PUT, you must
-submit your payload in JSON.
-
-Example
-{% codeblock lang:http %}
-POST https://api.sendgrid.com/v3/credentials/ HTTP/1.1
-Content-Type: application/json
-
-{ 
-  "foo": "bar",
-  "hello": "world",
-}
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -270,7 +259,7 @@ Responses
 Content-Type Header
 {% endanchor %}
 
-All responses are returned in JSON format. We specify this by setting
+All responses are returned in JSON format. We specify this by sending
 the `Content-Type` header.
 
 Example
@@ -295,13 +284,10 @@ Below is a table description of the various status codes we corrently
 support against resources.
 
 <table class="table table-bordered table-striped">
-<thead>
   <tr>
     <th>Status Code</th>
     <th>Description</th>
   </tr>
-</thead>
-<tbody>
   <tr>
     <td>200</td><td>No error</td>
   </tr>
@@ -320,7 +306,6 @@ support against resources.
   <tr>
     <td>500</td><td>Internal server error</td>
   </tr>
-</tbody>
 </table>
   
 {% anchor h3 %}
@@ -331,12 +316,9 @@ Below is a general overview of what resource objects are returned on
 successful Web API requests.
 
 <table class="table table-bordered table-striped">
-<thead>
   <tr>
     <th>Verb</th><th>Resource object returned</th>
   </tr>
-</thead>
-<tbody>
   <tr>
     <td>GET</td><td>A single resource object or array of resource objects</td>
   </tr>

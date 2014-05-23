@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Versions
+weight: 90
 navigation:
   show: true
 ---
@@ -9,11 +10,11 @@ Each template can have multiple versions, with different subjects and
 content for each version.
 
 To retrieve all versions of a template, call the [template
-get]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-get)
+GET]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-GET)
 method. Versions are returned as nested resources of the template
 resource.
 
-To set which version is active, use the [template PATCH]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-get) method to set the
+To set which version is active, use the [template PATCH]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-PATCH) method to set the
 default_version_id of a template.
 
 {% anchor h2 %}
