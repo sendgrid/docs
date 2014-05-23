@@ -14,7 +14,7 @@ GET
 Retrieve all templates.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/templates %}
-{%  v3response %}
+{% v3response %}
 {
     "templates": [
         {
@@ -70,7 +70,7 @@ Create a template.
   {% parameter name true 'String with fewer than 100 characters' 'The name of the new template' %}
 {% endparameters %}
 
-{% apiv3example post POST https://api.sendgrid.com/v3/templates name=example_name%}
+{% apiv3example post POST https://api.sendgrid.com/v3/templates name=example_name %}
   {% v3response %}
 HTTP/1.1 201 OK
 
@@ -90,9 +90,10 @@ Edit a template.
 
 {% parameters patch %}
   {% parameter name true 'String with fewer than 100 characters' 'The name of the new template' %}
+  {% parameter default_version_id false 'An existing version id' 'The version of the template to set as active and use' %}
 {% endparameters %}
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/templates/:template_id name=new_example_name%}
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/templates/:template_id name=new_example_name&default_version_id=5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f %}
   {% v3response %}
 HTTP/1.1 201 OK
 

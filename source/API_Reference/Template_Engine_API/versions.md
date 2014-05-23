@@ -13,6 +13,9 @@ get]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-get)
 method. Versions are returned as nested resources of the template
 resource.
 
+To set which version is active, use the [template PATCH]({{root_url}}/API_Reference/Template_Engine_API/templates.html#-get) method to set the
+default_version_id of a template.
+
 {% anchor h2 %}
 GET
 {% endanchor %}
