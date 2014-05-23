@@ -1,5 +1,6 @@
 ---
 title: Template Engine Setup Guide
+weight: 50
 layout: page
 navigation:
   show: true
@@ -42,7 +43,7 @@ They can read more about how to integrate templates by checking out our <a href=
 Third Step: Replacement Tags
 {% endanchor %}
 
-You'll notice two replacement tags in the Template Engine Editor, <code><%subject%><code> and <code><%body%></code>. These both allow us to pass variable information through the template to your recipient. The tags hold the dynamic content that is being passed through our API.
+You'll notice two replacement tags in the Template Engine Editor, <code><%subject%></code> and <code><%body%></code>. These both allow us to pass variable information through the template to your recipient. The tags hold the dynamic content that is being passed through our API.
 </div>
 <div class="col-md-6">
   <img src="{{root_url}}/images/template_engine_4.png" class="img-responsive pull-left"/>
