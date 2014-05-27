@@ -21,7 +21,7 @@ script:
 - bundle exec rake linklint
 after_success:
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec cap deploy; fi"
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
+- sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ];
   then bundle exec rake invalidate_cloudfront; fi"
 env:
   global:
