@@ -112,12 +112,11 @@ When submitting data to a resource via `POST` or `PUT`, you must
 submit your payload in JSON.
 
 {% codeblock lang:http %}
-POST https://api.sendgrid.com/v3/credentials/ HTTP/1.1
+POST https://api.sendgrid.com/v3/templates/ HTTP/1.1
 Content-Type: application/json
 
-{ 
-  "foo": "bar",
-  "hello": "world",
+{
+  "name": "new template name"
 }
 {% endcodeblock %}
 
