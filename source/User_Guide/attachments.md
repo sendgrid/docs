@@ -1,5 +1,6 @@
 ---
 title: Sending Attachments
+weight: 70
 layout: page
 navigation:
   show: true

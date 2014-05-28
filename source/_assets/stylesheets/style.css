@@ -276,15 +276,15 @@ article .nav-tabs li a {
   text-decoration:none;
 }
 
-.panel [class^="icon-"] {
+.home-list .panel [class^="icon-"] {
   font-size:36px;
 }
 
-.panel-highlight {
+.home-list .panel-highlight {
   color: rgb(127, 228, 228);
 }
 
-.panel {
+.home-list .panel {
   text-align:center;
   padding-top:50px;
   height:190px;
@@ -293,7 +293,7 @@ article .nav-tabs li a {
   overflow: hidden;
 }
 
-.panel:hover a {
+.home-list .panel:hover a {
   color:white;
   padding: 15px;
   margin: -15px;
@@ -301,29 +301,29 @@ article .nav-tabs li a {
   height: 210px;
 }
 
-.panel h3 {
+.home-list .panel h3 {
   color: rgb(0,112,205);
   font-family: "Proxima N W15 Light";
 }
 
-.panel:hover p {
+.home-list .panel:hover p {
   display:block;
 }
 
-.panel p {
+.home-list .panel p {
   display:none;
 }
 
-.panel:hover [class^="icon-"] {
+.home-list .panel:hover [class^="icon-"] {
   display:none;
 }
 
-.panel:hover h3 {
+.home-list .panel:hover h3 {
   color:white;
   margin:0px;
 }
 
-.panel:hover {
+.home-list .panel:hover {
   text-align:left;
   padding:15px;
   color:white;
