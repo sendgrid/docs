@@ -5,7 +5,7 @@
 
 This site is based on Octopress, which is in turn based on Jekyll, with a dash of Twitter Bootstrap added.
 
-The develop branch is continuously deployed to a preview site. [View dev site](http://sg-docs.s3-website-us-east-1.amazonaws.com/)
+The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
 
 The master branch is continuously deployed to production.
 

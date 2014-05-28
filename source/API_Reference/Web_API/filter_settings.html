@@ -196,6 +196,12 @@ All fields except version are required for each call.
 <th>Example</th>
 </tr>
 <tr>
+  <td>name</td>
+  <td>Yes</td>
+  <td>eventnotify</td>
+  <td>The app for which to set or retrieve settings.</td>
+</tr>
+<tr>
 <td>processed</td>
 <td>Yes</td>
 <td>Notify when email is processed</td>
@@ -292,6 +298,13 @@ Footer
 <th>Example</th>
 </tr>
 <tr>
+  <td>name</td>
+  <td>Yes</td>
+  <td>footer</td>
+  <td>The app for which to set or retrieve settings.</td>
+</tr>
+
+<tr>
 <td>text/html</td>
 <td>No</td>
 <td>String that holds the html body</td>
@@ -332,6 +345,12 @@ Google Analytics
 <th>Required?</th>
 <th>Description</th>
 <th>Example</th>
+</tr>
+<tr>
+  <td>name</td>
+  <td>Yes</td>
+  <td>ganalytics</td>
+  <td>The app for which to set or retrieve settings.</td>
 </tr>
 <tr>
 <td>utm_source</td>
@@ -410,6 +429,12 @@ SPAM Filter Checker
 <th>Example</th>
 </tr>
 <tr>
+  <td>name</td>
+  <td>Yes</td>
+  <td>spamcheck</td>
+  <td>The app for which to set or retrieve settings.</td>
+</tr>
+<tr>
 <td>maxscore</td>
 <td>Yes</td>
 <td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin</td>
@@ -449,6 +474,12 @@ Subscription Tracking
 <th>Required?</th>
 <th>Description</th>
 <th>Example</th>
+</tr>
+<tr>
+  <td>name</td>
+  <td>Yes</td>
+  <td>subscriptiontrack</td>
+  <td>The app for which to set or retrieve settings.</td>
 </tr>
 <tr>
 <td>text/html</td>
@@ -505,6 +536,13 @@ SendGrid for New Relic
 
 <table class="table table-bordered table-striped">
   <tbody>
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>newrelic</td>
+      <td>The app for which to set or retrieve settings.</td>
+    </tr>
+
     <tr>
       <th>Parameter</th>
       <th>Required</th>
