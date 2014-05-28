@@ -1,15 +1,17 @@
 ---
 layout: page
 weight: 750
-title: Template Engine API 
+title: Template Engine API Overview
 navigation:
   show: true
 ---
 
+{% info %}
 The Template Engine is the first feature available on SendGrid's new API
 architecture. As a result, interacting with the endpoints described here
 is different than the other existing endpoints, so please read 
 carefully!
+{% endinfo %}
 
 {% anchor h2 %}
 Authentication
@@ -109,7 +111,6 @@ Request Body
 When submitting data to a resource via `POST` or `PUT`, you must
 submit your payload in JSON.
 
-Example
 {% codeblock lang:http %}
 POST https://api.sendgrid.com/v3/credentials/ HTTP/1.1
 Content-Type: application/json
@@ -202,7 +203,6 @@ In this example, we will display an example paginated example. In the
 resource documentation, we will only provide the bolded list of
 available parameters.
 
-Example
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
 {% endcodeblock %}
@@ -232,7 +232,6 @@ require you to append a parameter to the URI.
 In this example, we will display a paginated uri example, searching for
 resources where the email contains `foo`.
 
-Example
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?email=foo&foo=bar HTTP/1.1
 {% endcodeblock %}
@@ -248,7 +247,6 @@ Content-Type Header
 All responses are returned in JSON format. We specify this by sending
 the `Content-Type` header.
 
-Example
 {% codeblock lang:http %}
 GET https://api.sendgrid.net/v3/resource HTTP/1.1
 {% endcodeblock %}
@@ -326,8 +324,6 @@ Failed Requests
 The general format guidelines are displayed with the accompanying status
 code is returned.
 
-Example
-
 {% codeblock lang:http %}
 GET https://api.sendgrid.net/v3/resource HTTP/1.1
 {% endcodeblock %}
@@ -352,8 +348,6 @@ Pagination
 When a request is made with pagination query, the following data is
 included in the header to allow for easy traversal of previous, current,
 first, and last page of the data set.
-
-Example
 
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?limit=5&offset=0 HTTP/1.1
