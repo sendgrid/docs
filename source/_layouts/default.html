@@ -9,6 +9,8 @@
       {{ content | expand_urls: root_url }}
     </div>
   </div>
+  {% if page.footer != false %}
 	{% include footer.html %}
+  {% endif %}
 </body>
 </html>
