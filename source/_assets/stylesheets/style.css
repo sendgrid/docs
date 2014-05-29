@@ -618,6 +618,21 @@ figure.code.expanded {
   max-width:624px;
 }
 
+.iframe-container {
+  overflow:hidden;
+  height: 100%;
+}
+
+.iframe-container iframe {
+  height: calc(100% - 100px);
+  height: -o-calc(100% - 100px); /* opera */
+  height: -webkit-calc(100% - 100px); /* google, safari */
+  height: -moz-calc(100% - 100px); /* firefox */
+  overflow:auto; 
+  width:100%;
+  display:block;
+}
+
 @media (max-width: 767px) {
   .nav-link { text-align:center; }
   #nav { border-bottom: 0px; }
