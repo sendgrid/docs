@@ -5,7 +5,7 @@ navigation:
   show: true
 ---
 
-To use a Template Engine template when you send, enable the `template`
+To use a Template Engine template when you send, [using the SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html), enable the `template`
 filter and set the `template_id` to one of your Template Engine templates.
 
 Example
@@ -22,7 +22,8 @@ Example
 }
 {% endcodeblock %}
 
-You can use this JSON in the X-SMTPAPI header of an SMTP message, or in
+As this JSON is [part of the SMTPAPI]{{root_url}}/API_Reference/SMTP_API/index.html)
+you can use it in the X-SMTPAPI header of an SMTP message, or in
 the x-smtpapi parameter of a [mail.send API
 call]({{root_url}}/API_Reference/Web_API/mail.html).
 
@@ -32,3 +33,5 @@ content of your message will behave differently. The
 the value of the body provided in the API call or SMTP message.
 Similarly, the `<%subject%>` token in the template's subject content
 will be replaced.
+
+Further substitutions may be made using the [`sub`]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) and [`section`]({{root_url}}/API_Reference/SMTP_API/section_tags.html) parameters of the SMTP API. 
