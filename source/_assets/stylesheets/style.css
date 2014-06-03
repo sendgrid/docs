@@ -634,10 +634,7 @@ figure.code.expanded {
 }
 
 .iframe-container iframe {
-  height: calc(100% - 100px);
-  height: -o-calc(100% - 100px); /* opera */
-  height: -webkit-calc(100% - 100px); /* google, safari */
-  height: -moz-calc(100% - 100px); /* firefox */
+  height: 100%;
   overflow:auto; 
   width:100%;
   display:block;
