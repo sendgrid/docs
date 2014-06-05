@@ -158,6 +158,10 @@ Legacy Email Templates
 
 <p><em>API App Name - <code>template</code></em></p>
 
+{% warning %}
+This app is our original Email Template app, today we have a more full featured <a href="{{root_url}}/API_Reference/Template_Engine_API/index.html">Template Engine</a>, which supports multiple templates, versioning and more. Its settings, however, are controlled using a <a href="{{root_url}}/API_Reference/Template_Engine_API/index.html">separate API</a>.
+{% endwarning %}
+
 {% parameters template %}
 {% parameter name yes 'template' 'The name of the app for which to apply settings.' %}
 {% parameter text_html yes 'A string that holds the template html body.' '&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body bgcolor=&#39;pink&#39;&gt;&lt;div style=&#39;width:200px&#39; bgcolor=&#39;#FFF&#39;&gt;&lt;% body %&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;' %}

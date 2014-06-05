@@ -11,7 +11,7 @@ navigation:
 <p>Please note that if a filter is not specified as being either disabled or enabled in the X-SMTPAPI header, it will default to the state of the app in the "Apps" tab on the website.</p>
 
 {% warning %}
-If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a template designed but disabled, you can't just enable it via the API; you need to define the template in the API call itself.
+If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
 {% endwarning %}
 
 <p>For more information on the utility of these apps, please check out
@@ -606,6 +606,12 @@ This app is our new <a href="{{root_url}}/API_Reference/Template_Engine_API/inde
 {% anchor h3 template %}
 Filter: <code>template</code>
 {% endanchor %} 
+
+{% warning %}
+This app is our original Email Template app, today we have a more full featured <a href="#templates">Template Engine</a>, which supports multiple templates, versioning and more.
+{% endwarning %}
+
+
 <p>Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.</p>
 
 <table class="table table-striped table-bordered">
