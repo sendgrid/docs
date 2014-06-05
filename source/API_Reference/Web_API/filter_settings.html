@@ -152,11 +152,15 @@ DKIM
 
 <hr/>
 
-{% anchor h2 %}
-Email Templates 
+{% anchor h2 -Email-Templates %}
+Legacy Email Templates 
 {% endanchor %}
 
 <p><em>API App Name - <code>template</code></em></p>
+
+{% warning %}
+This app is our original Email Template app, today we have a more full featured <a href="{{root_url}}/API_Reference/Template_Engine_API/index.html">Template Engine</a>, which supports multiple templates, versioning and more. Its settings, however, are controlled using a <a href="{{root_url}}/API_Reference/Template_Engine_API/index.html">separate API</a>.
+{% endwarning %}
 
 {% parameters template %}
 {% parameter name yes 'template' 'The name of the app for which to apply settings.' %}
