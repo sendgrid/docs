@@ -229,7 +229,7 @@ module Jekyll
 
       lastmod = REXML::Element.new "lastmod"
       date = File.mtime(path)
-      latest_date = find_latest_date(date, site, page_or_post)
+      latest_date = find_best_date(date, site, page_or_post)
 
       if @last_modified_post_date == nil
         # This is a post
@@ -247,23 +247,30 @@ module Jekyll
       lastmod
     end
 
-    # Go through the page/post and any implemented layouts and get the latest
-    # modified date
+    # Go through the page/post and any implemented layouts and get the best
+    # modified date. If the post has a last_modified date, use that, otherwise
+    # use the computed latest modified date
     #
     # Returns formatted output of latest date of page/post and any used layouts
-    def find_latest_date(latest_date, site, page_or_post)
-      layouts = site.layouts
-      layout = layouts[page_or_post.data["layout"]]
-      while layout
-        path = layout.full_path_to_source
-        date = File.mtime(path)
+    def find_best_date(latest_date, site, page_or_post)
+      best_date = latest_date
 
-        latest_date = date if (date > latest_date)
+      if !page_or_post.data['last_modified']
+        layouts = site.layouts
+        layout = layouts[page_or_post.data["layout"]]
+        while layout
+          path = layout.full_path_to_source
+          date = File.mtime(path)
 
-        layout = layouts[layout.data["layout"]]
+          best_date = date if (date > best_date)
+
+          layout = layouts[layout.data["layout"]]
+        end
+      else
+        best_date = DateTime.parse(page_or_post.data['last_modified'])
       end
 
-      latest_date
+      best_date
     end
 
     # Which of the two dates is later
