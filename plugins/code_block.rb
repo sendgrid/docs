@@ -85,7 +85,9 @@ module Jekyll
       digest = Digest::MD5.hexdigest code
       
     source = <<HTML
-<div class="code-wrapper" id="wrapper_#{digest}">
+<div class="code-wrapper" id="wrapper_#{digest}" itemscope itemtype="http://schema.org/Code">
+  <meta itemscope="name" content="#{@title}">
+  <meta itemscope="programmingLangauge" content="#{@filetype}">
   <div class="code-buttons">
     <ul class="nav nav-tabs">
       <li class="pull-right">
