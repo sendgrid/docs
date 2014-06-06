@@ -24,7 +24,10 @@
 #     constants.
 #
 # Notes:
-#   * The last modified date is determined by the latest from the following:
+#   * The last modified date is determined by the last change of the file as
+#     determined by git, this uses and requires the last_modified plugin
+#     (called aaa_last_modified.rb). If that cannot be determined it is the
+#     latest from the following:
 #     system modified date of the page or post, system modified date of
 #     included layout, system modified date of included layout within that
 #     layout, ...
@@ -35,6 +38,7 @@
 #   - http://creativecommons.org/licenses/by/3.0/
 # 
 # Modified for Octopress by John W. Long
+# Modified for the SendGrid Docs by Nick Quinlan
 #
 require 'rexml/document'
 require 'fileutils'
