@@ -18,6 +18,7 @@ module LastModified
 		entity_source = source(post_or_page)
 		last_modified = `git log -1 --format="%ad" -- "#{entity_source}"`
 		last_modified.strip!
+		puts "#{post_or_page.path} last modified #{last_modified}" 
 		post_or_page.data["last_modified"] = last_modified
 	end
   end
