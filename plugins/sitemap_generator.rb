@@ -260,7 +260,10 @@ module Jekyll
 
       begin
         last_modified = DateTime.parse(page_or_post.data['last_modified'])
-      rescue
+        puts last_modified
+      rescue Exception => e
+        put "time parsing failed"
+        puts e.message  
         last_modified = nil
       end
 
