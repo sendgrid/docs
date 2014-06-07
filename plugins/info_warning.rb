@@ -31,15 +31,32 @@ module Jekyll
 
   class GithubBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      @path = markup
+      args = markup.split(/\s+/)
+      @path = args[0]
+      @lang = args[1]
+
+      info = @path.match(/^([\w\-.%]+?)\/([\w\-.%]+)(.+)$/)
+      @author = info[1]
+      @name = info[2]
       super
     end
 
     def render(context)
       contents = super
-      source = '<div class="callout callout-github">'
+      source = '<div class="callout callout-github" itemscope itemtype="http://schema.org/Code">'
       source += contents
-      source += '<p class="link"><a href="https://github.com/' + @path + '">View on Github &raquo;</a></p>'
+      if @name
+        source += '<meta itemprop="name" content="' + @name + '">'
+      end
+      if @author
+        source += '<meta itemprop="author" content="' + @author + '">'
+      end
+      if @lang
+        source += '<meta itemprop="programmingLanguage" content="' + @lang + '">'
+      end
+      url = 'https://github.com/' + @path
+      source += '<meta itemprop="codeRepository" content="' + url + '">'
+      source += '<p class="link"><a href="' + url + '">View on Github &raquo;</a></p>'
       source += '</div>'
       
       source
