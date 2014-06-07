@@ -257,12 +257,12 @@ module Jekyll
     # Returns formatted output of latest date of page/post and any used layouts
     def find_best_date(latest_date, site, page_or_post)
       best_date = latest_date
-	
-	  begin
-	  	last_modified = DateTime.parse(page_or_post.data['last_modified'])
+
+      begin
+        last_modified = DateTime.parse(page_or_post.data['last_modified'])
       rescue
         last_modified = nil
-	  end
+      end
 
       if !last_modified
         layouts = site.layouts
