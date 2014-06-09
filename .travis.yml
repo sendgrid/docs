@@ -6,7 +6,7 @@ branches:
   - master
   - develop
 before_install:
-- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/$TRAVIS_BUILD_ID'
+- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'
   > 'source/_data/version.yml' ; fi"
 install:
 - travis_retry npm install
