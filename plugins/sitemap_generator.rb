@@ -72,6 +72,12 @@ module Jekyll
     def location_on_server
       "#{site.config['url']}#{url}"
     end
+
+    def last_modified
+      entity_source = self.full_path_to_source
+      last_modified = `git log -1 --format="%ad" -- "#{entity_source}"`
+      last_modified.strip!
+    end
   end
 
   class Page
@@ -83,6 +89,12 @@ module Jekyll
 
     def location_on_server
       location = "#{site.config['url']}#{url}"
+    end
+
+    def last_modified
+      entity_source = self.full_path_to_source
+      last_modified = `git log -1 --format="%ad" -- "#{entity_source}"`
+      last_modified.strip!
     end
   end
 
@@ -259,7 +271,7 @@ module Jekyll
       best_date = latest_date
 
       begin
-        last_modified = DateTime.parse(page_or_post.data['last_modified'])
+        last_modified = DateTime.parse(page_or_post.last_modified)
         puts last_modified
       rescue Exception => e
         puts "time parsing failed"
