@@ -38,7 +38,6 @@ var headerSchema = {
           "items": {
             "type": "string"
           },
-          "uniqueItems": true,
           "minItems": 1
         }
       }
