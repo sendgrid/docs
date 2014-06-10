@@ -16,31 +16,11 @@ List
 
 List all of the available apps.
 
-Note: The
-  <em>name</em>
-  entry is used in all the other API calls to identify a app.
-  <table id="parameters-list" class="table table-bordered table-striped"><tbody>
-      <tr>
-        <td>Parameter</td>
-        <td>Required</td>
-        <td>Requirements</td>
-        <td>Description</td>
-      </tr>
-      <tr>
-        <td>task</td>
-        <td>Yes</td>
-        <td>Must be set to
-          <em>getavailable</em>
-        </td>
-        <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-        <td>user</td>
-        <td>Yes</td>
-        <td>Subuser must be registered under your account</td>
-        <td>The subuser who we will update</td>
-      </tr>
-    </tbody></table>
+{% parameters list %}
+{% parameter task Yes 'Must be set to <em>getavailable</em>' 'Retrieve available apps.' %}
+{% parameter user Yes 'Subuser must be registered under your account' 'The subuser who we will update' %}
+{% endparameters %}
+
   
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=example@example.com %}
   {% response json %}
@@ -62,34 +42,20 @@ Note: The
 </filters>
   {% endresponse %}
 
+Note: The <em>name</em> entry is used in all the other API calls to identify an app.
+
 {% endapiexample %}
 
-  <hr/>
-  {% anchor h2 %}
+<hr/>
+{% anchor h2 %}
 Activate App 
 {% endanchor %}
-  <table id="parameters-activate" class="table table-bordered table-striped"><tbody>
-      <tr>
-        <td>Parameter</td>
-        <td>Required</td>
-        <td>Requirements</td>
-        <td>Description</td>
-      </tr>
-      <tr>
-        <td>task</td>
-        <td>Yes</td>
-        <td>Must be set to
-          <em>activate</em>
-        </td>
-        <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-        <td>user</td>
-        <td>Yes</td>
-        <td>Subuser must be registered under your account</td>
-        <td>The subuser who we will update</td>
-      </tr>
-    </tbody></table>
+
+{% parameters activate %}
+{% parameter name Yes 'Must be a <a href="https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html">supported app</a>' 'The app to activate.' %}
+{% parameter task Yes 'Must be set to <em>activate</em>' 'Activate an app' %}
+{% parameter user Yes 'Subuser must be registered under your account' 'The subuser who we will update' %}
+{% endparameters %}
   
 {% apiexample activate POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=activate&user=example@example.com %}
   {% response json %}
@@ -105,32 +71,16 @@ Activate App
   {% endresponse %}
 {% endapiexample %}
 
-  <hr/>
-  {% anchor h2 %}
+<hr/>
+{% anchor h2 %}
 Deactivate App 
 {% endanchor %}
-  <table id="parameters-deactivate" class="table table-bordered table-striped"><tbody>
-      <tr>
-        <td>Parameter</td>
-        <td>Required</td>
-        <td>Requirements</td>
-        <td>Description</td>
-      </tr>
-      <tr>
-        <td>task</td>
-        <td>Yes</td>
-        <td>Must be set to
-          <em>deactivate</em>
-        </td>
-        <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-        <td>user</td>
-        <td>Yes</td>
-        <td>Subuser must be registered under your account</td>
-        <td>The subuser who we will update</td>
-      </tr>
-    </tbody></table>
+
+{% parameters deactivate %}
+{% parameter name Yes 'Must be a <a href="https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html">supported app</a>' 'The app to deactivate.' %}
+{% parameter task Yes 'Must be set to <em>deactivate</em>' 'Deactivate an app' %}
+{% parameter user Yes 'Subuser must be registered under your account' 'The subuser who we will update' %}
+{% endparameters %}
   
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=deactivate&user=example@example.com %}
   {% response json %}
@@ -147,8 +97,8 @@ Deactivate App
   {% endresponse %}
 {% endapiexample %}
 
-  <hr/>
-  {% anchor h2 %}
+<hr/>
+{% anchor h2 %}
 Customize App 
 {% endanchor %}
   These API calls require that settings are passed using POST.
@@ -181,17 +131,18 @@ Customize App
   {% endresponse %}
 {% endapiexample %}
 
-  <hr/>
-  {% anchor h2 %}
+<hr/>
+{% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
   
 {% parameters settings %}
-{% parameter name true '' 'The app for which to retrieve settings.' %}
-{% parameter task true '' 'getsettings' %}
+{% parameter name Yes 'Must be a <a href="https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html">supported app</a>' 'The app for which to retrieve settings.' %}
+{% parameter task Yes 'Must be set to <em>getsettings</em>' 'Retrieve the settings for the app' %}
+{% parameter user Yes 'Subuser must be registered under your account' 'The subuser who we will update' %}
 {% endparameters %}
 
-{% apiexample settings POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&task=getsettings %}
+{% apiexample settings POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&task=getsettings&user=example@example.com %}
   {% response json %}
 {
   "message": "success",
