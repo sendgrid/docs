@@ -162,15 +162,4 @@ Subscription Widget
 {% anchor h3 %}
 Use the embedded code
 {% endanchor %}
-Once the embedded code is generated, you may use it in your website. This JavaScript code will generate a basic subscription form which can be styled using CSS. The following classes are available for customization:
-<ul>
-	<li>SG_widget_form_label - for input labels</li>
-	<li>SG_widget_form_input - for inputs</li>
-	<li>SG_widget_form_submit - for submit button</li>
-	<li>SG_widget_form_error - for error messages</li>
-	<li>SG_widget_form_success - for success message</li>
-</ul>
-
-<p>The form will take all the custom fields defined in the list for which the widget was generated. Once you add a new field in the list, the widget will be updated (in real-time). The email and name fields are required.
-Note: There is a difference in how we submit the form, depending on browser support for cross-domain AJAX.
-For browsers which support cross-domain AJAX, the recipient will be added into the SendGrid database directly from your website, but for the browsers without this capability, we redirect the user to an internal page where he can submit the data, then forward that data to your website.</p>
+<p>Once the embed code is generated, you may use it on your website. By default the widget displays all fields used by the newsletter at the time of generation, you may modify that, by changing the HTML provided. The widget has a robust API that allows for advanced configuration and styling. The most current documentation for this widget may be found <a href="https://github.com/sendgrid/sendgrid-subscription-widget#readme">in its repository on Github</a>.</p>
