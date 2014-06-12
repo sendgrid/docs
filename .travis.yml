@@ -6,7 +6,8 @@ branches:
   - master
   - develop
 before_install:
-- sh -c "echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  > 'source/_data/version.yml' ;"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'staging https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  > 'source/_data/version.yml' ; fi"
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  > 'source/_data/version.yml' ; fi"
 install:
 - travis_retry npm install
 - travis_retry bower install
