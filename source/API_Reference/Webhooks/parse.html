@@ -104,7 +104,7 @@ The request that will be sent to the HTTP endpoint will be encoded as multipart/
        <th>envelope</th>
 
        <td>A JSON string containing the SMTP envelope. This will have two variables:
-       <em>to</em>, which is an array of recipients, and <em>from</em>, which is the
+       <em>to</em>, which is a single-element array containing the address that we recieved the email to, and <em>from</em>, which is the
        return path for the message.</td>
      </tr>
 
