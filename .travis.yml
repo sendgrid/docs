@@ -17,7 +17,7 @@ before_script:
 - sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
   then ruby set_prod_config.rb; fi"
 script:
-- bundle exec rake generate
+- bundle exec jekyll build
 - bundle exec rake linklint
 after_success:
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec cap deploy; fi"
