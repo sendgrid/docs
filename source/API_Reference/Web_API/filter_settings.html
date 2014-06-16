@@ -99,18 +99,18 @@ Click Tracking
 <hr/>
 
 {% anchor h2 %}
-Domain Keys 
+DKIM 
 {% endanchor %}
 
-<p><em>API App Name - <code>domainkeys</code></em></p>
+<p><em>API App Name - <code>dkim</code></em></p>
 
-{% parameters domainkeys %}
-{% parameter name yes 'domainkeys' 'The name of the app for which to apply settings.' %}
+{% parameters dkim %}
+{% parameter name yes 'dkim' 'The name of the app for which to apply settings.' %}
 {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}
-{% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
+{% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
 {% endparameters %}
 
-{% apiexample domainkeys POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
+{% apiexample dkim POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
   {% response json %}
 {
   "message": "success"
@@ -126,18 +126,18 @@ Domain Keys
 <hr/>
 
 {% anchor h2 %}
-DKIM 
+Domain Keys 
 {% endanchor %}
 
-<p><em>API App Name - <code>dkim</code></em></p>
+<p><em>API App Name - <code>domainkeys</code></em></p>
 
-{% parameters dkim %}
-{% parameter name yes 'dkim' 'The name of the app for which to apply settings.' %}
+{% parameters domainkeys %}
+{% parameter name yes 'domainkeys' 'The name of the app for which to apply settings.' %}
 {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}
-{% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
+{% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
 {% endparameters %}
 
-{% apiexample dkim POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
+{% apiexample domainkeys POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
   {% response json %}
 {
   "message": "success"
