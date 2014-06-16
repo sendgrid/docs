@@ -65,28 +65,6 @@ HTTP/1.1 201 OK
 {% endapiv3example %}
 
 {% anchor h2 %}
-POST
-{% endanchor %}
-Activate a version.
-
-{% apiv3example post POST https://api.sendgrid.com/v3/templates/:template_id/versions/:version_id/activate %}
-  {% v3response %}
-HTTP/1.1 200 OK
-
-{
-    "id": "8aefe0ee-f12b-4575-b5b7-c97e21cb36f3",
-    "template_id": "e3a61852-1acb-4b32-a1bc-b44b3814ab78",
-    "active": 1,
-    "name": "example_version_name",
-    "html_content": "<%body%>",
-    "plain_content": "<%body%>",
-    "subject": "<%subject%>",
-    "updated_at": "2014-06-12 11:33:00"
-}
-  {% endv3response %}
-{% endapiv3example %}
-
-{% anchor h2 %}
 PATCH
 {% endanchor %}
 Edit a version.
