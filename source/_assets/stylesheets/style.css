@@ -31,6 +31,10 @@ b, strong {
   font-family: "Proxima N W15 Smbd";
 }
 
+h3, .h3 {
+  font-weight: bold;
+}
+
 .btn {
   padding-left:20px;
   padding-right:20px;
