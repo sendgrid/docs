@@ -20,11 +20,12 @@ Retrieve all templates.
     "templates": [
         {
             "id": "e8ac01d5-a07a-4a71-b14c-4721136fe6aa",
-            "default_version_id": "",
             "name": "example template name",
             "versions": [
                 {
                     "id": "5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f",
+                    "template_id": "9c59c1fb-931a-40fc-a658-50f871f3e41c",
+                    "active": 1,
                     "name": "example version name",
                     "updated_at": "2014-03-19 18:56:33"
                 }
@@ -46,15 +47,20 @@ Retrieve a single template.
     "templates": [
         {
             "id": "e8ac01d5-a07a-4a71-b14c-4721136fe6aa",
-            "default_version_id": "",
             "name": "example template name",
             "versions": [
-                {
-                    "id": "5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f",
-                    "name": "example version name",
-                    "updated_at": "2014-03-19 18:56:33"
-                }
-            ]
+            {
+                "id": "de37d11b-082a-42c0-9884-c0c143015a47",
+                "user_id": 1234,
+                "template_id": "d51480ba-ca3f-465c-bc3e-ceb71d73c38d",
+                "active": 1,
+                "name": "example version",
+                "html_content": "<%body%><strong>Click to Reset</strong>",
+                "plain_content": "Click to Reset<%body%>",
+                "subject": "<%subject%>",
+                "updated_at": "2014-05-22 20:05:21"
+             }
+          ]
         }
     ]
 }
@@ -77,7 +83,6 @@ HTTP/1.1 201 OK
 
 {
     "id": "733ba07f-ead1-41fc-933a-3976baa23716",
-    "default_version_id": "",
     "name": "example_name",
     "versions": []
 }
@@ -91,16 +96,14 @@ Edit a template.
 
 {% parameters patch %}
   {% parameter name true 'String with fewer than 100 characters' 'The name of the new template' %}
-  {% parameter default_version_id false 'An existing version id' 'The version of the template to set as active and use' %}
 {% endparameters %}
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/templates/:template_id name=new_example_name&default_version_id=5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f %}
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/templates/:template_id name=new_example_name %}
   {% v3response %}
-HTTP/1.1 201 OK
+HTTP/1.1 200 OK
 
 {
     "id": "733ba07f-ead1-41fc-933a-3976baa23716",
-    "default_version_id": "",
     "name": "new_example_name",
     "versions": []
 }
