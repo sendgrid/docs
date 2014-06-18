@@ -25,23 +25,13 @@ layout: default
     <h1 class="entry-title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
   </header>
   {% endif %}
+
   {{ content }}
+
+  {% include livedocs_modal.html %}
+
   {% if page.hideFeedback != true %}
-  <div class="feedback">
-    <span class="prompt">Was this helpful?</span>
-    <a class="feedback-element feedback-positive" href="#">
-      <img src="{{root_url}}/images/encircled-plus.png" alt="+" />
-      Yes
-    </a>
-    <a class="feedback-element feedback-negative" href="#">
-      <img src="{{root_url}}/images/encircled-minus.png" alt="-" />
-      No
-    </a>
-    <a class="feedback-element feedback-more" href="mailto:community@sendgrid.com?subject={{ "[docs-feedback] " | append: page.title | uri_escape }}&body=Hello!%0AI%20have%20some%20feedback%20regarding%20your%20documentation%3A%0A%0A%0A%0A{{ site.url | append: / |  append: page.url | uri_escape }}">
-      <img src="{{root_url}}/images/feedback.png" alt="" />
-      Feedback
-    </a>
-  </div>
+    {% include feedback.html %}
   {% endif %}
 
   {% if page.last_modified %}
