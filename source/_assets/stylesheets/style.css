@@ -31,6 +31,10 @@ b, strong {
   font-family: "Proxima N W15 Smbd";
 }
 
+h3, .h3 {
+  font-weight: bold;
+}
+
 .btn {
   padding-left:20px;
   padding-right:20px;
@@ -378,7 +382,7 @@ article .nav-tabs li a {
 
 #footer-iframe {
   width: 100%;
-  height: 248px;
+  height: 591px;
   border: 0;
   margin-bottom: -8px;
 }
@@ -659,6 +663,10 @@ figure.code.expanded {
   #nav .btn {
     width: 80%;
     margin: 20px auto;
+  }
+
+  #footer-iframe {
+    height: 237px;
   }
 }
 

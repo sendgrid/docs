@@ -132,6 +132,7 @@ task :linklint do
 
   if File.exist?("linklint_logs/error.txt")
     fail "Linklint found broken links or missing files!"
+	puts File.read("linklint_logs/error.txt")
   end
 end
 
