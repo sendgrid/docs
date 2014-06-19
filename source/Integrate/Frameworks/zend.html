@@ -2,6 +2,9 @@
 layout: page
 weight: 0
 title: Zend
+seo:
+  title: Send Email with Zend & SendGrid
+  description: View instructions on how to easily send email with Zend using SendGrid, by setting up setting up Zen's mail module.
 navigation:
   show: true
 ---
@@ -20,8 +23,8 @@ $password =
 $config = array('ssl' => 'tls',
 'port' => '587',
 'auth' => 'login',
-'username' => $username,exampleusername
-'password' => $password);examplepassword
+'username' => $username,
+'password' => $password);
 
 $transport = new Zend_Mail_Transport_Smtp($smtpServer, $config);
 

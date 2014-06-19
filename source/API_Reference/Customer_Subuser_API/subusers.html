@@ -15,7 +15,7 @@ In both creating and searching for a subuser account, you are using the USERNAME
 {% anchor h2 %}
 Create a Subuser 
 {% endanchor %}
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-create" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -148,7 +148,7 @@ Create a Subuser
 {% anchor h2 %}
 Delete a Subuser 
 {% endanchor %}
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-delete" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -199,7 +199,7 @@ Delete a Subuser
 Retrieve Subusers 
 {% endanchor %}
   Obtain a complete list of all subusers.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-get" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -352,7 +352,7 @@ Enable a Subuser
 {% endanchor %}
   Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-enable" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -399,7 +399,7 @@ Enable a Subuser
 Disable a Subuser 
 {% endanchor %}
   This prevents them from sending out emails with SendGrid.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-disable" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -445,7 +445,7 @@ Enable Website Access To A Subuser
 {% endanchor %}
   Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails. 
 
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-enablewebsite" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -490,7 +490,7 @@ Enable Website Access To A Subuser
 Disable Website Access To A Subuser 
 {% endanchor %}
   Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails. 
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-disablewebsite" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -535,7 +535,7 @@ Disable Website Access To A Subuser
 Update Subuser Profile 
 {% endanchor %}
   Allows you to update your subusers profile information
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-updateprofile" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -636,7 +636,7 @@ Update Subuser Profile
 Update Subuser Password 
 {% endanchor %}
   Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-updateSubuserPassword" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -696,7 +696,7 @@ Update Subuser Password
 Update Subuser Username 
 {% endanchor %}
   Note that your subuser account username is used to login to our SMTP server <em>and</em> the website and changes take effect immediately.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-updateSubuserUsername" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>
@@ -757,7 +757,7 @@ Update Subuser Username
 Update Subuser Email Address 
 {% endanchor %}
   This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
-  <table class="table table-bordered table-striped"><tbody>
+  <table id="parameters-updateSubuserEmailAddress" class="table table-bordered table-striped"><tbody>
       <tr>
         <th>Parameter</th>
         <th>Required</th>

@@ -5,6 +5,7 @@ title: Docs Home
 icon: icon-home
 showTitle: false
 breadcrumbs: false
+hideFeedback: true
 navigation:
   show: true
 seo:
@@ -12,64 +13,92 @@ seo:
   description: Learn how to get started using SendGrid. Find out what SendGrid has to offer and how it can help solve your email deliverability problems.
 ---
 <header class="page-header"><h1>Getting Started With SendGrid</h1></header>
-<div class="row-fluid home-list">
-	<div class="span4 well callout">
-		<a href="{{root_url}}/User_Guide/index.html"><span class="icon-4 pull-right" alt="Overview Icon"></span></a>
-		<h3><a href="{{root_url}}/User_Guide/index.html">Overview</a></h3>
-		<p>
-			Find out more about what SendGrid does and how it can help solve your email deliverability problems.
-		</p>
-		<a href="{{root_url}}/User_Guide/index.html">What is SendGrid?</a>
+<div class="row home-list">
+	<div class="col-md-4">
+
+     <div class=" panel">
+     <a href="{{root_url}}/User_Guide/index.html">       <span
+            class="icon-overview" alt="Overview Icon"></span>
+        <h3>Overview</h3>
+        <p>
+          Find out more about what SendGrid does and how it can help
+          solve your email deliverability problems.
+        </p>
+        <p class="panel-highlight">What is SendGrid?</p>
+     </a>
+  </div>
+
 	</div>
-	<div class="span4 well callout">
-		<a href="{{root_url}}/Integrate/index.html"><span class="icon-1 pull-right"></span></a>
-		<h3><a href="{{root_url}}/Integrate/index.html">Integrate</a></h3>
-		<p>
-			Add email capability to your application, whether it's WordPress, Ruby on Rails, Drupal, Codeigniter, and more.
-		</p>
-		<a href="{{root_url}}/Integrate/index.html">Start Sending Email</a>
+	<div class="col-md-4">
+    <div class=" panel">
+     <a href="{{root_url}}/Integrate/index.html">
+     <span
+          class="icon-integrate"></span>
+      <h3>Integrate</h3>
+      <p>
+        Add email capability to your application, whether it's WordPress, Ruby on Rails, Drupal, Codeigniter, and more.
+
+        <p class="panel-highlight">Start Sending Email</p>
+      </p>
+   </a>
+    </div>
 	</div>
-	<div class="span4 well callout">
-		<a href="{{root_url}}/Code_Examples/index.html"<span class="icon-18 pull-right"></span></a>
-		<h3><a href="{{root_url}}/Code_Examples/index.html">Code Examples</a></h3>
-		<p>
-			Code for common use cases in a variety of languages to help you get going on your project.
-		</p>
-		<a href="{{root_url}}/Code_Examples/index.html">Show Me the Code</a>
+	<div class="col-md-4">
+    <div class=" panel">
+    <a href="{{root_url}}/Code_Examples/index.html">
+      <span class="icon-codeexamples"></span>
+      <h3>Code Examples</h3>
+      <p>
+        Code for common use cases in a variety of languages to help you get going on your project.
+        <p class="panel-highlight">Show Me the Code</p>
+      </p>
+    </a>
+    </div>
 	</div>
 </div>
 <header class="page-header"><h2>Reference</h2></header>
-<div class="row-fluid home-list">
-	<div class="span4 well callout">
-		<a href="{{root_url}}/API_Reference/SMTP_API/index.html"><span class="icon-2 pull-right"></span></a>
-		<h3><a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a></h3>
-		<p>
-			Learn how to use SendGrid's SMTP API to customize how your email is sent.
-		</p>
-		<a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API Reference</a>
+<div class="row home-list">
+  <div class="col-md-4">
+        <div class=" panel">
+                <a href="{{root_url}}/API_Reference/Web_API/index.html">
+
+        <span class="icon-webapi"></span>
+      <h3>Web API</h3>
+      <p>
+        Send email and interact with SendGrid over HTTP using the Web API.
+        <p class="panel-highlight">Web API Reference</p>
+      </p>
+          </a>
+
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class=" panel">
+          <a href="{{root_url}}/API_Reference/SMTP_API/index.html">
+
+      <span
+          class="icon-smtpapi"></span>
+      <h3>SMTP API</h3>
+      <p>
+        Learn how to use SendGrid's SMTP API to customize how your email is sent.
+        <p class="panel-highlight">SMTP API Reference</p>
+      </p>
+          </a>
+    </div>
 	</div>
-	<div class="span4 well callout">
-		<a href="{{root_url}}/API_Reference/Web_API/index.html"><span class="icon-6 pull-right"></span></a>
-		<h3><a href="{{root_url}}/API_Reference/Web_API/index.html">Web API</a></h3>
-		<p>
-			Send email and interact with SendGrid over HTTP using the Web API.
-		</p>
-		<a href="{{root_url}}/API_Reference/Web_API/index.html">Web API Reference</a>
-	</div>
-	<div class="span4 well callout">
-		<a href="{{root_url}}/API_Reference/Webhooks/index.html"><span class="icon-10 pull-right"></span></a>
-		<h3><a href="{{root_url}}/API_Reference/Webhooks/index.html">Webhooks</a></h3>
-		<p>
-			Send data back to your server, events from your sent mail and parsed inbound mail.
-		</p>
-		<a href="{{root_url}}/API_Reference/Webhooks/index.html">Webhooks Reference</a>
-	</div>
-	<div class="span4 well callout">
-		<a href="{{root_url}}/api_workshop.html"><span class="icon-14 pull-right"></span></a>
-		<h3><a href="{{root_url}}/api_workshop.html">API Workshop</a></h3>
-		<p>
-			Try out SendGrid's API directly from your browser.
-		</p>
-		<a href="{{root_url}}/api_workshop.html">Test Drive the API</a>
+	<div class="col-md-4">
+        <div class=" panel">
+          <a href="{{root_url}}/API_Reference/Webhooks/index.html">
+
+      <span
+          class="icon-webhooks"></span>
+      <h3>Webhooks</h3>
+      <p>
+        Send data back to your server, events from your sent mail and parsed inbound mail.
+       <p class="panel-highlight">Webhooks Reference</p>
+      </p>
+          </a>
+
+    </div>
 	</div>
 </div>

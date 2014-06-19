@@ -2,11 +2,21 @@
 layout: page
 weight: 0
 title: Mail
+seo:
+  title: Mail - Send Email Using HTTP - SendGrid Documentation | SendGrid
+  override: true
+  description: The mail send endpoint allows you to send email through SendGrid using a POST request. Find documentation and examples on how to use the endpoint.
 navigation:
   show: true
 ---
 
 <p>This endpoint allows you to send email.</p>
+
+{% info %}
+There are a number of <a href="{{root_url}}/Integrate/libraries.html">official SendGrid libraries</a> to allow for email sending through the Web API. We recommend using these if possible.
+
+<p class="link"><a href="{{root_url}}/Integrate/libraries.html">View List &raquo;</a></p>
+{% endinfo %}
 
 {% anchor h2 %}
 send 
@@ -14,7 +24,7 @@ send
 
 <p>Send email.</p>
 
- <table class="table table-bordered table-striped">
+ <table id="parameters-mail" class="table table-bordered table-striped">
    <tbody>
      <tr>
        <th>Parameter</th>
@@ -48,7 +58,7 @@ send
        <td>Must be a string. If <em>to</em> parameter is an array, <em>toname</em> must
        be an array with the exact number of array elements as the <em>to</em> field</td>
 
-       <td>Give a name to the recipient. This can also be passed as an array if the to aobve is an array. Example: toname[]=Alpha&toname[]=Beta.</td>
+       <td>Give a name to the recipient. This can also be passed as an array if the to above is an array. Example: toname[]=Alpha&toname[]=Beta.</td>
      </tr>
 
      <tr>
@@ -73,14 +83,23 @@ send
      </tr>
 
      <tr>
-       <td>text and/or html</td>
+       <td>text</td>
 
-       <td>Yes</td>
+       <td>No</td>
 
-       <td>Must include one or both parameters</td>
+       <td>API call must include at least one of the text or html parameters.</td>
 
-       <td>The actual content of your email message. It can be sent as either plain text
-       or HTML for the user to display</td>
+       <td>The plain text content of your email message.</td>
+     </tr>
+
+     <tr>
+       <td>html</td>
+
+       <td>No</td>
+
+       <td>API call must include at least one of the text or html parameters.</td>
+
+       <td>The HTML content of your email message.</td>
      </tr>
 
      <tr>
@@ -146,9 +165,7 @@ send
 
        <td>Files to be attached. The file contents must be part of the multipart HTTP
        POST. Ex: files[file1.jpg]=<file contents>&files[file2.pdf]=<file
-       contents><br />
-       <a href="{{root_url}}/Code_Examples/php.html#-Using-Attachments"
-       title="">Example Code (PHP)</a></td>
+       contents></td>
      </tr>
 
      <tr>
@@ -213,7 +230,7 @@ send
 
 
 <h3>Call: Send to Multiple Recipients</h3>
-{% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com %}
+{% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
 //success
 {

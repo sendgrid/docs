@@ -2,11 +2,18 @@
 layout: page
 weight: 0
 title: Postfix
+seo:
+  title: Integrate SendGrid with Postfix - SendGrid Documentation | SendGrid
+  description: Setup SendGrid as a Postfix relay host for better deliverability and advanced statistics on your email.
 navigation:
   show: true
 ---
 
 <p>Updating the Postfix configuration to use SendGrid as a relay host is easy. For more advanced configuration scenarios, you'll need to refer to the Postfix documentation.</p>
+
+{% warning %}
+Some implementations of Postfix only allow passwords to contain letters and numbers, meaning you may need to ensure your SendGrid password is only alphanumeric.
+{% endwarning %}
 
 <p>Find your Postfix config file, typically <strong>/etc/postfix/main.cf</strong>, and add the following:</p>
 

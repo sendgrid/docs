@@ -3,7 +3,7 @@
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 
-<!-- SendGrid Docs Version {{ site.version }} -->
+<!-- SendGrid Docs Version {{ site.data.version }} -->
 <head>
   <meta charset="utf-8">
   {% if page.seo.title and page.seo.override %}
@@ -20,11 +20,17 @@
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
   {% endif %}
 
-  {% capture canonical %}{% if page.seo.canonical %}{{ page.seo.canonical }}{% else %}{{root_url}}{{page.url}}{% endif %}{% endcapture %}
-  {% capture canonicalprotocolfree %}{{ canonical | remove_first:'http' }}{% endcapture %}
+  {% capture canonical %}{% if page.seo.canonical %}{{ page.seo.canonical }}{% else %}{{site.url}}{{page.url}}{% endif %}{% endcapture %}
+  {% comment %} ## This is an easy way to check if the canonical url has a protocol – it's only displayed if it does.  ## {% endcomment %}
+  {% capture canonicalprotocolfree %}{{ canonical | replace:'http','' }}{% endcapture %}
   {% if canonical and canonicalprotocolfree != canonical  %}
   <link rel="canonical" href="{{canonical}}"/>
   {% endif %}
+
+  {% if page.seo.robots %}
+    <meta name="robots" content="{{ page.seo.robots }}">
+  {% endif %}
+
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -32,27 +38,46 @@
 
   <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
-  <!--[if lt IE 8]>
-    <link href="{{root_url}}{% minified_css_file %}" media="screen, projection" rel="stylesheet" type="text/css">
-  <![endif]-->
+  <link href="{{root_url}}/{% css_asset_tag global %}
+- /_assets/stylesheets/bootstrap.less
+- /_assets/stylesheets/fonts.css
+- /_assets/stylesheets/style.css
+- /_assets/stylesheets/icomoon.css
+- /_assets/stylesheets/syntax.css
+- /_assets/stylesheets/print.css
+- /_assets/stylesheets/vidgrid.css
+- /_assets/stylesheets/livedocs.css
+- /_assets/bower_components/highlightjs/styles/default.css
+{% endcss_asset_tag %}" rel="stylesheet" type='text/css' />
 
-  <!--[if !IE]>-->
-    <link href="{{root_url}}{% minified_embedded_css_file %}" media="screen, projection, print" rel="stylesheet" type="text/css">
-  <!--<![endif]-->
-
-  {% unless page.responsive == false %}
-  <link href="{{root_url}}/stylesheets/bootstrap/responsive.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% endunless %}
-  {% if page.responsive == false %}
-  <link href="{{root_url}}/stylesheets/width1170.css" media="screen, projection, print" rel="stylesheet" type="text/css">
-  {% endif %}
-  
   <script type="text/javascript">
+
+  filename = "{{root_url}}/{% javascript_asset_tag global %}
+-  /_assets/bower_components/jquery/dist/jquery.min.js
+-  /_assets/javascripts/fonts.js
+-  /_assets/javascripts/collapse.min.js
+-  /_assets/bower_components/jstorage/jstorage.min.js
+-  /_assets/javascripts/menu.js
+-  /_assets/javascripts/analytics.js
+-  /_assets/javascripts/codebuttons.js
+-  /_assets/bower_components/modernizr/modernizr.js
+-  /_assets/bower_components/bootstrap/dist/js/bootstrap.min.js
+-  /_assets/javascripts/libs/ZeroClipboard.js
+-  /_assets/javascripts/search.js
+-  /_assets/bower_components/jsrender/jsrender.js
+-  /_assets/javascripts/livedocs.js
+-  /_assets/javascripts/feedback.js
+-  /_assets/javascripts/octopress.js
+-  /_assets/bower_components/highlightjs/highlight.pack.js
+-  /_assets/javascripts/formatXml.js
+-  /_assets/javascripts/parseQuerystring.js
+-  /_assets/bower_components/jquery-cookie/jquery.cookie.js
+{% endjavascript_asset_tag %}"
 
    // Add a script element as a child of the body
    function downloadJSAtOnload() {
    var element = document.createElement("script");
-   element.src = "{{root_url}}{% minified_js_file %}";
+   element.src = filename;
    document.body.appendChild(element);
    }
 
@@ -66,5 +91,14 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+  {% if site.data.version.contains "staging" %}
+  <script>
+    // faking this to get rid of errors
+	dataLayer = [];
+	ga = function () {};
+    _gaq = [];
+  </script>
+  {% else %}
   {% include google_analytics.html %}
+  {% endif %}
 </head>

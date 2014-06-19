@@ -2,6 +2,9 @@
 layout: page
 weight: 0
 title: Ruby on Rails
+seo:
+  title: Send Email with Ruby on Rails
+  description: View instructions on how to easily send email with Ruby on Rails using SendGrid, by setting up setting up ActionMailer or using a gem.
 navigation:
   show: true
 ---

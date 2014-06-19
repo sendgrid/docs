@@ -14,10 +14,19 @@ navigation:
 <meta name="language" content="en" />
 <meta name="robots" content="index, follow" />
     <title>SendGrid - Email Delivery. Simplified.</title>
-    
-        <script type="text/javascript" src="https://s3.amazonaws.com/static.sendgrid.com/js/torbit-insight.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://cdn.sendgrid.com/css/notFound.gz.css?r=1309887158" />
-    
+    <style>
+body { background:url(../images/bg.jpg?r=1351544517) repeat-x top #8ecafa; }
+#wrap { width:1030px; height:1000px; margin:0 auto; background:url(../images/postman.jpg?r=1351544517) center no-repeat; }
+#intro { width:700px; float:left; font-family:Helvetica,arial,sans-serif; color:#65b4df; letter-spacing:-4px; }
+h1 { font-size:85px; }
+h2 { font-size:50px; margin-top:-60px; *margin-top:0px }
+p { width:650px; font-size:25px; letter-spacing:-2px; margin-top:-30px; line-height:1.4; *margin-top: 0px; }
+a, a:visited { color:#65b4df; padding:3px; background:#fff69d; }
+a:hover { color:#418ab1; text-decoration:none; background:none; padding:3px; }
+#logo { width:242px; height:70px; float:right; }
+#logo img { border:none;  margin-top:60px; }
+#logo a, #logo a:hover, #logo a:visited { background:none; }
+    </style>
 </head>
 <body>
 <div id="wrap">
@@ -28,7 +37,7 @@ navigation:
 The page you are trying to access does not exist. 
 {% endanchor %}
 		
-		<form action="{{ site.root }}search.html" method="get">
+		<form action="{{root_url}}/search.html" method="get">
 			<p style="display:inline;">Try searching for what you are looking for: </p><input style="font-size:22px;" input name="q" results="0" placeholder="Search"/a>
 	      </form>
 
@@ -37,11 +46,11 @@ The page you are trying to access does not exist.
 		</p>
 		
 		<p>
-                  Otherwise, let's go back to the<a href="{{ site.root }}index.html">Home</a> page instead. If you believe you have reached this page by mistake, please contact us at <a href="mailto:help@sendgrid.com">help@sendgrid.com</a>
+                  Otherwise, let's go back to the<a href="{{root_url}}/index.html">Home</a> page instead. If you believe you have reached this page by mistake, please contact us at <a href="mailto:help@sendgrid.com">help@sendgrid.com</a>
                 </p>
 	</div>
 	<div id="logo">
-          <a href="/"><img alt="SendGrid" title="SendGrid" src="http://cdn1.sendgrid.com/images/sendgrid-logo.png?r=1333042939" /></a>        </div>
+    <a href="/"><img alt="SendGrid" title="SendGrid" src="{{root_url}}/images/sendgrid-logo.png"/></a>        </div>
 </div>
 </body>
 </html>

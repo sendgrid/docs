@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-<p>SendGrid offers statistics a number of different metrics to report on what is happening with your messages. </p>
+<p>SendGrid offers statistics on a number of different metrics to report on what is happening with your messages. </p>
 
-<p><img class="clear" src="{{root_url}}/images/delivery_metrics.png" alt=""></p>
+<p><img class="clear img-responsive" src="{{root_url}}/images/delivery_metrics.png" alt=""></p>
 
 {% anchor h2 %}
 Metrics 
@@ -32,7 +32,7 @@ Requests
 {% anchor h3 %}
 Delivered
 {% endanchor %}
-<p>A delivery is recorded when a request to send an email results in an email being delivered to the end recipient. However, delivered does not necessarily mean that your email is in the recipient's inbox. Delivered means the message was accepted by the receiving server, but they does not necessarily mean the message reached the inbox.</p>
+<p>A delivery is recorded when a request to send an email results in the delivery of that email to the end recipient. <strong>Delivered</strong> means the message was accepted by the receiving server, HOWEVER this does not necessarily mean that the message reached the recipient's inbox.</p>
 
 {% info %} 
 If an email is indicated as delivered you can be certain that it was not deferred by the ISP.
@@ -57,7 +57,7 @@ Unsubscribes
 {% endanchor %}
 <p>In order to maintain compliance with <a title="CAN-SPAM" href="http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business">CAN-SPAM laws</a>, any email that is sent in bulk to a mass audience must include a subscription management link. SendGrid provides a "Subscription Tracking" app that automatically adds this link to your emails. When someone clicks that link within their email, they are added to your "unsubscribe" list. Any recipients that are added to this list will be excluded from future mailings.</p>
 
-<p>It's no surprise that sending messages to addresses that have explicitly unsubscribed from any of your email messages is detrimental to your reputation as a sender. While this functionally only applies to one-to-many message formats (i.e., marketing emails) and not to transactional email messages, make sure to include subscription management functionality in your marketing marketing emails and other mass messaging.</p>
+<p>It's no surprise that sending messages to addresses that have explicitly unsubscribed from any of your email messages is detrimental to your reputation as a sender. While this functionally only applies to one-to-many message formats (i.e., marketing emails) and not to transactional email messages, make sure to include subscription management functionality in your marketing emails and other mass messaging.</p>
 
 <p><img src="{{root_url}}/images/delivery_metrics_apps.png" alt="" width="685" height="88"></p>
 
@@ -85,22 +85,23 @@ Spam reports &amp; repeat spam reports
 {% anchor h3 %}
 Invalid email
 {% endanchor %}
-<p>An <strong>invalid email</strong> occurs when you attempt to send to an email address that is formatted in a manner that does not meet internet email format standards. Examples include addresses without the "@" sign, addresses that include certain special characters, or spaces in an address. This response comes from our own server, since an invalid email is impossible to even attempt to send to its [non-existent] destination.</p> <p><a title="Invalid Emails" href="http://sendgrid.com/invalidEmail">View your list of Invalid Emails</a></p>
+<p>An <strong>invalid email</strong> occurs when you attempt to send email to an address that is formatted in a manner that does not meet internet email format standards. Examples include addresses without the "@" sign or addresses that include certain special characters and/or spaces. This response comes from our own server, since an invalid email is impossible to even attempt to send to its [non-existent] destination.</p> <p><a title="Invalid Emails" href="http://sendgrid.com/invalidEmail">View your list of Invalid Emails</a></p>
 
 {% anchor h3 %}
 Blocks
 {% endanchor %}
-<p>If you receive a block notification, this means that the IP address from which you are sending has been placed on a black list of some sort. ISPs and organizations work from various blacklists, some of which are reputable and valid. In the event that you are placed on a blacklist, SendGrid will contact the ISP in question on your behalf and submit your IP for removal, once we've determined that your email are in fact legitimate and appropriate.</p> <p><a href="http://sendgrid.com/blocks">View your list of Blocks</a></p>
+<p>If you receive a <strong>block</strong> notification, this means that the IP address from which you are sending has been placed on a black list of some sort. ISPs and organizations work from various blacklists, some of which are reputable and valid. In the event that you are placed on a blacklist, SendGrid will contact the ISP in question on your behalf and submit your IP for removal once we've determined that your emails are in fact legitimate and appropriate.</p> <p><a href="http://sendgrid.com/blocks">View your list of Blocks</a></p>
 
 {% anchor h3 %}
 Deferrals
 {% endanchor %}
-<p>A deferral occurs when an ISP is for some reason not ready to accept email from your IP address. Instead of blocking or bouncing the message, the ISP will defer receiving the message and wait for the email to be resent. An ISP may do this because it does not recognize the IP from which a message originates; or it could just be that their system is operating in such a way that they cannot accept the email at that specific time. If, upon your resending, the ISP determines that it is ready to trust you as a sender or their system operations are back to normal, the email will be accepted as normal. SendGrid will retry delivery of a deferred email on behalf of our customers for 72 hours from the time of the first deferral, after which time the email address is placed on the Hard Bounce list. If you have built your own email solution, you will want to build this intelligence into your code in order to avoid having to retry deliveries manually.</p>
+<p>A <strong>deferral</strong> occurs when an ISP is for some reason not ready to accept email from your IP address. Instead of blocking or bouncing the message, the ISP will defer receiving the message and wait for the email to be resent. An ISP may do this because it does not recognize the IP from which a message originates; or it could just be that their system is operating in such a way that they cannot accept the email at that specific time. If, upon your resending, the ISP determines that it is ready to trust you as a sender or their system operations are back to normal, the email will be accepted as normal. SendGrid will retry delivery of a deferred email on behalf of our customers for 72 hours from the time of the first deferral, after which time the email address is placed on the Hard Bounce list. If you have built your own email solution, you will want to build this intelligence into your code in order to avoid having to retry deliveries manually.</p>
 
 {% anchor h3 %}
 Drops
 {% endanchor %}
-<p>In certain cases, SendGrid will "Drop" a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of these lists, you can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
+<p>In certain cases, SendGrid will "Drop" a message to a specific email address in order to protect your sender reputation. SendGrid keeps <a href="http://sendgrid.com/bounces/">Email Lists</a> to track bounces, spam reports, and unsubscribes for each of our users. If a user sends a message to an email address that exists on one of these lists within their account, SendGrid will automatically drop the message (i.e., not send to the address). *Note: SendGrid users can always delete entries from these lists if an email address is erroneously placed on one or more of them. Users can accomplish this by mousing over the entry and clicking the "Delete" button.</p>
+
 
 {% anchor h2 %}
 Advanced Statistics
@@ -127,12 +128,12 @@ Geography
 clicked around the world.</p>
 
 {% anchor h3 %}
-Device
+CLients (Devices)
 {% endanchor %}
 
-<p><a href="http://sendgrid.com/statistics/devices">The device
-  report</a> breaks down which devices are most frequently being used to
-open your mail. </p>
+<p><a href="http://sendgrid.com/statistics/clients">The clients
+  report</a> breaks down which devices and clients are most frequently used to
+open the mail you send. </p>
 
 <p>Available devices:</p>
 
@@ -147,17 +148,17 @@ open your mail. </p>
       Apple Mail.</td>
   </tr>
   <tr>
-    <td>WebMail</td>
+    <td>Webmail</td>
     <td>A web-based email client I.E. Yahoo, Google, AOL, or
       Outlook.com.</td>
   </tr>
   <tr>
     <td>Phone</td>
-    <td>A smart phone; IPhone, Android, Blackberry, etc.</td>
+    <td>A smart phone; iPhone, Android, Blackberry, etc.</td>
   </tr>
   <tr>
     <td>Tablet</td>
-    <td>A tablet computer: IPad, android based tablet, etc.</td>
+    <td>A tablet computer: iPad, android based tablet, etc.</td>
   </tr>
   <tr>
     <td>Other</td>
@@ -174,7 +175,7 @@ Browser
 your mail.</p>
 
 {% info %}
-There are similarities between Device and Browser statistics and are
+There are similarities between Device and Browser statistics and we are
 working on ways to consolidate the data. The current reasoning for two
 separate reports is that in some cases an open from a device can result
 with a click from a browser that represents the device (e.g. Open on an

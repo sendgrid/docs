@@ -2,6 +2,9 @@
 layout: page
 weight: 0
 title: Django
+seo:
+  title: Send Email with Django & SendGrid
+  description: View instructions on how to easily send email with Django using SendGrid, by setting up setting up Django's built in mail library.
 navigation:
   show: true
 ---
@@ -25,3 +28,8 @@ Then to send email you can do the following:
 from django.core.mail import send_mail
 send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@example.com'], fail_silently=False)
 {% endcodeblock %}
+
+
+{% info %}
+You may also send emails with Django by using the <a href="https://github.com/elbuo8/sendgrid-django">sendgrid-django</a> library, which utilizes the <a href="{{ root_url }}/API_Reference/Web_API/index.html">Web API</a> instead of SMTP as the transport mechanism.
+{% endinfo %}

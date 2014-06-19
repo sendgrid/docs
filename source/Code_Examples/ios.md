@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 0
-title: IOS / Objective-C
+title: iOS (Objective-C)
 navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-objc#usage %}
-We reccomend using SendGrid Objective-C, our client library, <a href="https://github.com/sendgrid/sendgrid-objc">available on Github</a>, with full documentation.
+{% github sendgrid/sendgrid-objc#usage Objective-C %}
+We recommend using SendGrid Objective-C, our client library, <a href="https://github.com/sendgrid/sendgrid-objc">available on Github</a>, with full documentation.
 {% endgithub %}

@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-<p>The SMTP API JSON string you to attach an unlimited number of unique arguments to your email. The arguments are used only for tracking. They can be retrieved through the <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a> or the <a href="{{root_url}}/Delivery_Metrics/email_activity.html">Email Activity</a> page.</p> 
+<p>The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email. The arguments are used only for tracking. They can be retrieved through the <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a> or the <a href="{{root_url}}/Delivery_Metrics/email_activity.html">Email Activity</a> page.</p> 
 
 <p>These arguments can be added using a JSON string like this:</p>
 
@@ -22,10 +22,15 @@ navigation:
 
 {% codeblock lang:json %}
 {
-  "email" : "ben@sendgrid.com",
-  "test_param" : "test_value",
-  "2nd_param" : "2nd_value",
-  "event" : "processed"
+  "sg_message_id": "145cea24eb8.1c420.57425.filter-132.3382.5368192A3.0",
+  "New Argument 1": "New Value 1",
+  "event": "processed",
+  "New Argument 4": "New Value 4",
+  "email": "asantaig@gmail.com",
+  "smtp-id": "<145cea24eb8.1c420.57425@localhost.localdomain>",
+  "timestamp": 1399331116,
+  "New Argument 2": "New Value 2",
+  "New Argument 3": "New Value 3"
 }
 {% endcodeblock %}
 
