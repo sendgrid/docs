@@ -75,10 +75,6 @@ seo:
   title: Really Great Documentation - SendGrid Documentation | SendGrid
   override: true
   description: This is some really great documentation! I hope you like it!
-  keywords:
-    - cool
-    - awesome
-    - rockin
   canonical: http://sendgrid.com/docs/really-great-docs
 ---
 ```
