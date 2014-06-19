@@ -93,4 +93,6 @@ jQuery(function ($) {
 		$(this).closest(".feedback").text("Thanks for providing feedback!");
 	});
 
+	$("img[height=1][width=1]").hide();
+
 });
