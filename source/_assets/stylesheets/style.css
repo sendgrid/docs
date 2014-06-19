@@ -382,7 +382,7 @@ article .nav-tabs li a {
 
 #footer-iframe {
   width: 100%;
-  height: 591px;
+  height: 237px;
   border: 0;
   margin-bottom: -8px;
 }
@@ -666,7 +666,7 @@ figure.code.expanded {
   }
 
   #footer-iframe {
-    height: 237px;
+    height: 591px;
   }
 }
 
