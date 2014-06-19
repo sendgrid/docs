@@ -56,8 +56,15 @@ module Jekyll
       items.each do |item|
         page_text = extract_text(site,item)
 
+        begin
+          keywords = item.data['seo']['keywords'].join(" ")
+        rescue
+          keywords = ""
+        end
+
         @index.document(item.url).add({ 
           :text => page_text,
+          :keywords => keywords,
           :title => item.data['title'] || item.name 
         })
         puts 'Indexed ' << item.url
@@ -69,12 +76,12 @@ module Jekyll
       puts 'Indexing done'
     end
 
-    # render the items, parse the output and get all text inside <p> elements
+    # render the items, parse the output and get all text inside major elements
     def extract_text(site, page)
       page.render({}, site.site_payload)
       doc = Nokogiri::HTML(page.output)
-      paragraphs = doc.search('p').map {|e| e.text}
-      page_text = paragraphs.join(" ").gsub("\r"," ").gsub("\n"," ")
+      elements = doc.search('h1,h2,h3,h4,h5,h6,p,td').map {|e| e.text}
+      page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
     end
 
     def write_last_indexed

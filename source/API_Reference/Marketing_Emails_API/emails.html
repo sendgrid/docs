@@ -14,27 +14,10 @@ add
 {% endanchor %}
 <p>Add one or more emails to a Recipient List.</p>
 
-<table id="parameters-add" class="table table-bordered table-striped">
-    <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>list</td>
-      <td>Yes</td>
-      <td>Must be an existing Recipient List.</td>
-      <td>The list which you are adding email addresses too.</td>
-    </tr>
-    <tr>
-      <td>data</td>
-      <td>Yes</td>
-      <td>Must be a valid JSON string matching the required format.  Limited to a 1000 entries maximum.</td>
-      <td>Specify the name, email address, and additional fields to add to the specified Recipient List.</td>
-    </tr>
-  </table>
-
+{% parameters add%}
+{% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
+{% parameter data Yes 'Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.' 'Specify the name, email address, and additional fields to add to the specified Recipient List.' %}
+{% endparameters %}
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/email/add list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -88,29 +71,12 @@ get
 
 <p>Get the email addresses and associated fields for a Recipient List.</p>
 
-<table id="parameters-get" class="table table-bordered table-striped">
-    <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>list</td>
-      <td>Yes</td>
-      <td>Must be an existing Recipient List.</td>
-      <td>The list you are searching.</td>
-    </tr>
-    <tr>
-      <td>email</td>
-      <td>No</td>
-      <td>Must be an email address or list of addresses.</td>
-      <td>Optional email addresses to search for in the Recipient List.</td>
-    </tr>
-  </table>
+{% parameters get %}
+{% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
+{% parameter get No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}
+{% endparameters %}
 
-
-{% apiexample get POST https://api.sendgrid.com/api/newsletter/lists/email/get list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample get GET https://api.sendgrid.com/api/newsletter/lists/email/get list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
 [
@@ -149,6 +115,49 @@ get
 
 <hr/>
 
+{% anchor h2 %}
+count 
+{% endanchor %}
+
+<p>Retrieve the number of entries on a list.</p>
+
+{% parameters count %}
+{% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
+{% endparameters %}
+
+{% apiexample count GET https://api.sendgrid.com/api/newsletter/lists/email/count list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+  {% response json %}
+//success
+{
+  "count": 2
+}
+
+//error
+{
+  "message": "error",
+  "errors": [
+    "...error messages..."
+  ]
+}
+  {% endresponse %}
+  {% response xml %}
+<!-- success -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <count>2</count>
+</result>
+
+<!-- error -->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<result>
+   <message>error: reason</message>
+</result>
+  {% endresponse %}
+{% endapiexample %}
+
+<hr/>
 
 {% anchor h2 %}
 delete 
@@ -156,27 +165,10 @@ delete
 
 <p>Remove one or more emails from a Recipient List.</p>
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-    <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>list</td>
-      <td>Yes</td>
-      <td>Must be an existing Recipient List.</td>
-      <td>The list which you are removing email addresses from.</td>
-    </tr>
-    <tr>
-      <td>email</td>
-      <td>Yes</td>
-      <td>Must be an email or emails in the Recipient List.</td>
-      <td>Specify the email address or email addresses you wish to remove from the specified Recipient List.</td>
-    </tr>
-  </table>
-
+{% parameters delete %}
+{% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
+{% parameter email Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List.' %}
+{% endparameters %}
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/email/delete list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
