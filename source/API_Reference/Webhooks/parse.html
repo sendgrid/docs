@@ -134,6 +134,15 @@ The request that will be sent to the HTTP endpoint will be encoded as multipart/
      </tr>
 
      <tr>
+       <th>attachment-info</th>
+
+       <td>A JSON string containing the attachmentX (see below) keys with another 
+         JSON string as the value. This string will contain the keys <em>filename</em>, 
+         which is the name of the file and <em>type</em>, which is the 
+         <a href="http://en.wikipedia.org/wiki/Internet_media_type" target="_blank">media type</a> of the file.</td>
+     </tr>
+
+     <tr>
        <th>attachmentX</th>
 
        <td>These are file upload names, where N is the total number of attachments. For
