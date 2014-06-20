@@ -141,7 +141,7 @@ task :validate_json_xml do
   htmlfiles = File.join("**", "source", "**", "*.html")
   
   #don't mess with the jekyll stuff
-  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
   
   json_invalid = 0
   json_valid =0
