@@ -121,6 +121,11 @@ border-color: #dFb5b4;
   background: #f0f7fd url(../images/GitHub-Mark-64px.png?embed=true) 98% no-repeat no-repeat;
   margin-bottom: 20%;
 }
+.callout-github.affix {
+  top: -20px;
+  margin-bottom: 0;
+  z-index: 2000;
+}
 
 .callout-github .link {
 	margin: 25px 0 0 0;
