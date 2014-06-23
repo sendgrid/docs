@@ -19,6 +19,10 @@ module Jekyll
         base_url = uri.scheme + "://" + uri.host + uri.path
       end
 
+      #let's make a codeblock to hold our dynamic bash query
+      #add random content to ensure a unique ID hash for this codeblock
+      codeblock = Liquid::Template.parse("{% codeblock %}#{rand(10 ** 10)}{% endcodeblock %}").render();
+
       #wondering what this syntax is? google "here document"
       output=<<HTML
 <div class="live-doc" id="livedoc-#{@identifier}">
@@ -35,7 +39,11 @@ module Jekyll
         </tr>
       <tbody>
     </table>
+    <div class="curl-call">
+      #{codeblock}
+    </div>
   </form>
+
   <div class="live-call">
     <div class="bar-indicator" style="display:none;"></div>          
     <table class="table table-bordered request-block">
