@@ -107,11 +107,9 @@
         data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
 
         if (method == "GET") {
-          curl_string = data ? curl_string + "?" + creds + "&" + decodeURIComponent(data) : curl_string + "?" + creds;
-          call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
+         call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
         } else {
-          curl_string = data ? curl_string + " -d " + decodeURIComponent(creds + "&" + data).replace(/&/g, " -d ") : curl_string + " -d " + decodeURIComponent(creds).replace(/&/g, " -d ");
-          call = url + format;
+         call = url + format;
         }
 
         live_call = $(this).nextAll('.live-call');
@@ -229,6 +227,7 @@
       }
 
       curl_call.find('code').find('.line').html(hljs.highlightAuto(curl_string).value);
+      curl_call.find('.gutter').remove();
     }
 
     Livedocs.toggleLivedoc = function(identifier, show) {
