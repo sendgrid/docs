@@ -44,7 +44,7 @@
 
       Livedocs.addButtons(identifier, livedoc);
       form_table.append(Livedocs.getFormFieldHtml(identifier));
-      form.append('<div class="text-center"><button type="input" class="btn btn-primary">Make Request</button></div>');
+      form.append('<div class="text-center"><button type="submit" class="btn btn-primary request-button">Make Request</button><div style="width:5px;height:auto;display:inline-block;"></div><button type="submit" class="btn btn-primary curl">Copy as cURL</button></div>');
 
       //TODO these event listeners shouldn't be wired up for all elements each time we instantiate the plugin
       $('#credentials').submit(function (e) {
@@ -84,6 +84,8 @@
       form.submit(function (e) {
         e.preventDefault();
 
+        var btn = $(document.activeElement);        
+
         username = $.cookie('username');
         password = $.cookie('password');
 
@@ -91,19 +93,25 @@
         if (!valid) return;
 
         url = $(this).parent().find('.url').val();
+        method = $(this).parent().find('.method').val().toUpperCase().trim();
+        creds = "api_user=" + username + "&api_key=" + password;
+        format = "." + Livedocs.getResponseFormat();
+        var curl_string = "curl -X " + method + " " + url + format;
         // Temporary fix to allow for CORS
         // Revert, once OPS allows for CORS on sendgrid domains
         url = url.replace("api.sendgrid.com", "sendgrid.com");
-        method = $(this).parent().find('.method').val().toUpperCase().trim();
         data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
-        creds = "api_user=" + username + "&api_key=" + password;
-        format = "." + Livedocs.getResponseFormat();
 
         if (method == "GET") {
+          curl_string = data ? curl_string + "?" + creds + "&" + decodeURIComponent(data) : curl_string + "?" + creds;
           call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
         } else {
-          call = url + format
+          curl_string = data ? curl_string + " -d " + decodeURIComponent(creds + "&" + data).replace(/&/g, " -d ") : curl_string + " -d " + decodeURIComponent(creds).replace(/&/g, " -d ");
+          call = url + format;
         }
+
+        // TODO: Remove this
+        console.log(curl_string);
 
         live_call = $(this).nextAll('.live-call');
         live_call.find('.method').text(method);
@@ -116,18 +124,21 @@
           live_call.find('.data').html(data_pretty);
         }
 
-        live_call.find(".bar-indicator").show();
-        live_call.show();
-
         data = 'api_user=' + username + '&api_key=' + password + "&" + data;
         data = data.replace(/&$/, '');
 
-        $.ajax({
-          type: method,
-          url: url + format,
-          data: data,
-          dataType: 'text'
-        })
+        if (btn.hasClass("curl")) {
+          // TODO: zeroclipboard magic
+        } else {
+          live_call.find(".bar-indicator").show();
+          live_call.show();
+
+          $.ajax({
+            type: method,
+            url: url + format,
+            data: data,
+            dataType: 'text'
+          })
           .done(function (response, statusText, jqXHR) {
             response = Livedocs.prettyPrintResponse(response, format);
             live_call.find('.body').text(response);
@@ -154,6 +165,7 @@
           .always(function () {
             live_call.find(".bar-indicator").hide();
           });
+        }
       });
     }
   }; 
