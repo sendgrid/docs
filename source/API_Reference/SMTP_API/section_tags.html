@@ -34,10 +34,10 @@ Message body:
 </html>
 {% endcodeblock %}
 
-<p>An accompanying SMTPAPI JSON header might look something like this:</p>
+<p>An accompanying X-SMTPAPI JSON header body might look something like this:</p>
 
 {% codeblock lang:json %}
-X-SMTPAPI: {
+{
   "to": ["john@bar.com","jane@baz.com","bill@baz.com"],
   "sub": {
     "-intro-": ["-greetGuy-", "-greetGirl-", "-greetBoy-"],

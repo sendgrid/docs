@@ -31,8 +31,8 @@ the x-smtpapi parameter of a [mail.send API
 call]({{root_url}}/API_Reference/Web_API/mail.html).
 
 {% info %}
-Make sure that the version of the template you want to use is to active
-by specifying it as the default_version_id or by activating it in the
+Make sure that the version of the template you want to use is set to active
+by using the activate endpoint or by activating it in the
 UI.
 {% endinfo %}
 
