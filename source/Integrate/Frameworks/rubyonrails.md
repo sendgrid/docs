@@ -19,13 +19,13 @@ Let's generate a Mailer class. Mailer classes function as our
 controllers for email views.
 
 {% codeblock lang:bash %}
-$ rails generate mailer Notifier
+$ rails generate mailer UserNotifier
 {% endcodeblock %}
 
-Now we open up the mailer we've just generated, <code>app/mailers/notifier.rb</code> and add a mailer action that sends users a signup email.
+Now we open up the mailer we've just generated, <code>app/mailers/usernotifier.rb</code> and add a mailer action that sends users a signup email.
 
 {% codeblock lang:ruby %}
-class Notifier < ActionMailer::Base
+class UserNotifier < ActionMailer::Base
   default :from => 'any_from_address@example.com'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
@@ -37,7 +37,7 @@ class Notifier < ActionMailer::Base
 end
 {% endcodeblock %}
 
-Now we need a view that corresponds to our action and outputs HTML for our email. Create a file <code>app/views/notifier/send_signup_email.erb</code> as follows:
+Now we need a view that corresponds to our action and outputs HTML for our email. Create a file <code>app/views/Usernotifier/send_signup_email.erb</code> as follows:
 
 {% codeblock lang:html %}
 <!DOCTYPE html>
@@ -60,7 +60,7 @@ $ rails generate scaffold user name email login
 $ rake db:migrate
 {% endcodeblock %}
 
-Now in the controller for the user model <code>app/controllers/users_controller.rb</code>, add a call to Notifier.send_signup_email when a user is saved.
+Now in the controller for the user model <code>app/controllers/users_controller.rb</code>, add a call to UserNotifier.send_signup_email when a user is saved.
 
 {% codeblock lang:ruby %}
 class UsersController < ApplicationController
@@ -69,7 +69,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       # Deliver the signup email
-      Notifier.send_signup_email(@user).deliver
+      UserNotifier.send_signup_email(@user).deliver
       redirect_to(@user, :notice => 'User created')
     else
       render :action => 'new'
