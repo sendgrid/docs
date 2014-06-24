@@ -142,7 +142,6 @@ get
 <hr/>
 
 
-
 {% anchor h2 %}
 delete 
 {% endanchor %}
@@ -175,7 +174,7 @@ delete
 </table>
 
   
-{% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample delete POST https://api.sendgrid.com/api/newsletter/recipients/delete name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
 {
