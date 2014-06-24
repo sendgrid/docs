@@ -96,7 +96,7 @@ var jqxhr = $.getJSON( "example.json", function() {
         $('div#kb-results').append('<div class="result">\
             <p><a class="title" href="' + result.html_url + '">' + result.title + '</a><br/>\
         <a href="' + result.html_url + '"\><small>' + result.html_url + '</small></a><br/>\
-            ' + result.body.substring(0, 500) + '</p>\
+            ' + $(result.body.substring(0, 500)).text() + '</p>\
         <br/></div>')
       });
     })
