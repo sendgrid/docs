@@ -35,20 +35,6 @@ function search(query) {
     'title': 'Search: ' + query
   });
   
-var jqxhr = $.getJSON( "example.json", function() {
-  console.log( "success" );
-})
-  .done(function() {
-    console.log( "second success" );
-  })
-  .fail(function() {
-    console.log( "error" );
-  })
-  .always(function() {
-    console.log( "complete" );
-  });
- 
-
   var result = $.getJSON('https://86xw1.api.searchify.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?')
     .done(function(data){
       $('div#results').empty();
@@ -96,7 +82,7 @@ var jqxhr = $.getJSON( "example.json", function() {
         $('div#kb-results').append('<div class="result">\
             <p><a class="title" href="' + result.html_url + '">' + result.title + '</a><br/>\
         <a href="' + result.html_url + '"\><small>' + result.html_url + '</small></a><br/>\
-            ' + $(result.body.substring(0, 500)).text() + '</p>\
+            ' + $(result.body).text().substring(0,500) + '</p>\
         <br/></div>')
       });
     })
