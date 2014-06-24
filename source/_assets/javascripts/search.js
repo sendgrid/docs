@@ -74,15 +74,17 @@ function search(query) {
   var kb_result = $.getJSON('https://sendgrid.zendesk.com/api/v2/portal/search.json?query=' + encodeURIComponent(query))
     .done(function(data){
       $('div#kb-results').empty();
-      
-      if(data.results.length == 0) {
+     
+      data = $.grep(data.results, function(result){ return result.section_id!='200050018' } );
+
+      if(data.length == 0) {
         $('div#kb-results').append('<h2>No Knowledge Base Results Found</h2>');
         $('#kb-tab-badge').text('0');
       } else {
-        $('#kb-tab-badge').text(data.results.length);
+        $('#kb-tab-badge').text(data.length);
       }
     
-      $.each(data.results, function(index, result) {
+      $.each(data, function(index, result) {
         $('div#kb-results').append('<div class="result">\
             <p><a class="title" href="' + result.html_url + '">' + result.title + '</a><br/>\
         <a href="' + result.html_url + '"\><small>' + result.html_url + '</small></a><br/>\
