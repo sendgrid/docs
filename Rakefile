@@ -7,6 +7,7 @@ require "shellwords"
 require "json"
 require "simple-cloudfront-invalidator"
 require "cgi"
+require "indextank"
 
 public_dir      = "public"    # compiled site directory
 source_dir      = "source"    # source file directory
@@ -126,10 +127,7 @@ end
 
 desc "index the generated files"
 task :index do
-  raise ArgumentError.new 'Missing indextank_api_url.' unless config['indextank_api_url']
-  raise ArgumentError.new 'Missing indextank_index.' unless config['indextank_index']
-
-  htmlfiles = File.join("**", "source", "**", "*.html")
+  htmlfiles = File.join("**", "public", "**", "*.html")
   
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
@@ -150,11 +148,8 @@ task :index do
     @last_indexed = nil
   end
 
-  @run = config['indextank']
-  @excludes = config['indextank_excludes'] || []
-
-  api = IndexTank::Client.new(config['indextank_api_url'])
-  @index = api.indexes(config['indextank_index'])
+  api = IndexTank::Client.new(ENV["INDEXTANK_API_URL"])
+  @index = api.indexes(ENV["INDEXTANK_INDEX"])
 
   while not @index.running?
     # wait for the indextank index to get ready
@@ -162,16 +157,22 @@ task :index do
   end
 
   files.each do |htmlfile|
-    doc = Nokogiri::HTML(htmlfile)
+    puts htmlfile
+
+    doc = Nokogiri::HTML(File.open(htmlfile))
     elements = doc.search('h1,h2,h3,h4,h5,h6,p,td').map {|e| e.text}
     page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
 
-    @index.document(item.url).add({ 
-      :text => page_text,
-      :title => item.data['title'] || item.name 
-    })
-    puts 'Indexed ' << item.url
+    title = doc.at_css('title')
+    url = htmlfile.gsub('public','')
 
+    puts page_text
+
+    #@index.document(url).add({ 
+    #  :text => page_text,
+    #  :title => title 
+    #})
+    puts 'Indexed ' << htmlfile
   end
 
   @last_indexed = Time.now
