@@ -71,7 +71,15 @@ function search(query) {
       $('#indicator').hide();
     });
 
-  var kb_result = $.getJSON('https://sendgrid.zendesk.com/api/v2/portal/search.json?query=' + encodeURIComponent(query))
+
+  token = "222d9f6a86c97a5fe1d024dd258a2fc919fe7cc847900751bed9d64ce333510e";
+  var kb_result = 
+    $.ajax({
+      url: 'https://sendgrid.zendesk.com/api/v2/portal/search.json?query=' + encodeURIComponent(query),
+      headers: {
+        'Authorization': 'Bearer ' + token
+      }
+    })
     .done(function(data){
       $('div#kb-results').empty();
      
