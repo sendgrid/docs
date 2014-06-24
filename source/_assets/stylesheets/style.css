@@ -54,6 +54,14 @@ h3, .h3 {
 	background: url(../images/bar-indicator.gif);
 }
 
+.circle-indicator {
+  width: 16px;
+	height: 16px;
+	background: url(../images/circle-indicator.gif);
+  display: inline-block;
+  vertical-align:middle;
+}
+
 .result a.title { text-decoration:underline; }
 .result small { color:#093; }
 
