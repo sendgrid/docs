@@ -34,7 +34,9 @@ function search(query) {
     'page': simulatedSearchUrl,
     'title': 'Search: ' + query
   });
-  
+ 
+  $('.circle-indicator').show();
+
   var result = $.getJSON('https://86xw1.api.searchify.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?')
     .done(function(data){
       $('div#results').empty();
@@ -46,8 +48,9 @@ function search(query) {
       
       if(data.matches == 0) {
         $('div#results').append('<h2>No Documentation Results Found</h2>');
+        $('#docs-tab-badge').text('0');
       } else {
-        $('div#results').append('<h2><span class="badge">' + data.matches + '</span> Documentation Results Found</h2><hr/>');
+        $('#docs-tab-badge').text(data.matches);
       }
     
       $.each(data.results, function(index, result) {
@@ -74,8 +77,9 @@ function search(query) {
       
       if(data.results.length == 0) {
         $('div#kb-results').append('<h2>No Knowledge Base Results Found</h2>');
+        $('#kb-tab-badge').text('0');
       } else {
-        $('div#kb-results').append('<h2><span class="badge">' + data.results.length + '</span> Knowledge Base Results Found</h2><hr/>');
+        $('#kb-tab-badge').text(data.results.length);
       }
     
       $.each(data.results, function(index, result) {
