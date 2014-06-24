@@ -124,6 +124,66 @@ task :invalidate_cloudfront do
   puts invalidator.invalidate(public_files) 
 end
 
+desc "index the generated files"
+task :index do
+  raise ArgumentError.new 'Missing indextank_api_url.' unless config['indextank_api_url']
+  raise ArgumentError.new 'Missing indextank_index.' unless config['indextank_index']
+
+  htmlfiles = File.join("**", "source", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
+  
+  puts 'Indexing pages...'
+  @storage_dir = File.join(Dir.pwd, '.jekyll_indextank')
+  @last_indexed_file = File.join(@storage_dir, 'last_index')
+  
+  begin
+    Dir.mkdir(@storage_dir) unless File.exists?(@storage_dir)
+  rescue SystemCallError
+    puts 'WARNING: cannot create directory to store index timestamps.'
+  end
+  
+  begin
+    @last_indexed = File.open(@last_indexed_file, "rb") {|f| Marshal.load(f)}
+  rescue
+    @last_indexed = nil
+  end
+
+  @run = config['indextank']
+  @excludes = config['indextank_excludes'] || []
+
+  api = IndexTank::Client.new(config['indextank_api_url'])
+  @index = api.indexes(config['indextank_index'])
+
+  while not @index.running?
+    # wait for the indextank index to get ready
+    sleep 0.5
+  end
+
+  files.each do |htmlfile|
+    doc = Nokogiri::HTML(htmlfile)
+    elements = doc.search('h1,h2,h3,h4,h5,h6,p,td').map {|e| e.text}
+    page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
+
+    @index.document(item.url).add({ 
+      :text => page_text,
+      :title => item.data['title'] || item.name 
+    })
+    puts 'Indexed ' << item.url
+
+  end
+
+  @last_indexed = Time.now
+  begin
+    File.open(@last_indexed_file, 'w') {|f| Marshal.dump(@last_indexed, f)}
+  rescue
+    puts 'WARNING: cannot write indexed timestamps file.'
+  end
+  
+  puts 'Indexing done'
+end
+
 desc "run linklint and fail if errors found"
 task :linklint do
   puts "Running linklint"

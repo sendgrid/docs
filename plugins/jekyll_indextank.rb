@@ -26,7 +26,7 @@ module Jekyll
     end
 
     # Index all pages except pages matching any value in config['indextank_excludes']
-    # The main content from each page is extracted and indexed at indexden.com
+    # The main content from each page is extracted and indexed at searchify.com
     # The doc_id of each indextank document will be the absolute url to the resource without domain name 
     def generate(site)
       return if @run != true
