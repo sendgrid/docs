@@ -106,7 +106,7 @@
         format = "." + Livedocs.getResponseFormat();
         // Temporary fix to allow for CORS
         // Revert, once OPS allows for CORS on sendgrid domains
-        // url = url.replace("api.sendgrid.com", "sendgrid.com");
+        url = url.replace("api.sendgrid.com", "sendgrid.com");
         data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
 
         if (method == "GET") {
