@@ -160,18 +160,16 @@ task :index do
     puts htmlfile
 
     doc = Nokogiri::HTML(File.open(htmlfile))
-    elements = doc.search('article h1, article h2, article h3, article h4, article h5, article h6, article p, article td').map {|e| e.text}
+    elements = doc.search('article a, article h1, article h2, article h3, article h4, article h5, article h6, article p, article td').map {|e| e.text}
     page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
 
-    title = doc.at_css('title')
     url = htmlfile.gsub('public','')
-
     puts page_text
 
-    #@index.document(url).add({ 
-    #  :text => page_text,
-    #  :title => title 
-    #})
+    @index.document(url).add({ 
+      :text => page_text,
+      :title => doc.title 
+    })
     puts 'Indexed ' << htmlfile
   end
 
