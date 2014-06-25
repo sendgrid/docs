@@ -164,7 +164,6 @@ task :index do
     page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
 
     url = htmlfile.gsub('public','')
-    puts page_text
 
     @index.document(url).add({ 
       :text => page_text,
