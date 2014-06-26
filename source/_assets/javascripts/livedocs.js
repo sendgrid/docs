@@ -268,7 +268,11 @@
       form.hide();
     },
 
-    Livedocs.getResponseFormat = function(){ return $.cookie('responseFormat').toLowerCase(); },
+    Livedocs.getResponseFormat = function(){ 
+      if ($.cookie('responseFormat').length) {
+        return $.cookie('responseFormat').toLowerCase(); 
+      }
+    },
   
     Livedocs.validateRequired = function(form) {
       var valid = true;
