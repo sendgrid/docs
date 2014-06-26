@@ -541,16 +541,17 @@ SendGrid for New Relic
 <table class="table table-bordered table-striped">
   <tbody>
     <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+
+    <tr>
       <td>name</td>
       <td>Yes</td>
       <td>newrelic</td>
       <td>The app for which to set or retrieve settings.</td>
-    </tr>
-
-    <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Description</th>
     </tr>
     <tr>
       <td>license_key</td>
@@ -566,6 +567,50 @@ SendGrid for New Relic
 </table>
 
 {% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
+  {% response json %}
+{
+  "message":"success"
+}
+  {% endresponse %}
+  {% response xml %}
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<message>success</message>
+  {% endresponse %}
+{% endapiexample %}
+
+<hr/>
+
+{% anchor h2 %}
+Sendwithus
+{% endanchor %}
+
+<p><em>API App Name - <code>sendwithus</code></em></p>
+
+<table class="table table-bordered table-striped">
+  <tbody>
+    <tr>
+      <th>Parameter</th>
+      <th>Required</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+
+    <tr>
+      <td>name</td>
+      <td>Yes</td>
+      <td>sendwithus</td>
+      <td>The app for which to set or retrieve settings.</td>
+    </tr>
+    <tr>
+      <td>license_key</td>
+      <td>YES</td>
+      <td>Can be found in Sendwithus Settings page</td>
+    </tr>
+  </tbody>
+</table>
+
+{% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=sendwithus&license_key=1234567 %}
   {% response json %}
 {
   "message":"success"
