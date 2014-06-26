@@ -13,96 +13,15 @@ get
 {% endanchor %}
 <p>Retrieve a list of Unsubscribes with addresses and optionally with dates.</p>
 
-<table id="parameters-get" class="table table-bordered table-striped"><tbody>
-<tr>
-<th>
-				Parameter
-			</th>
-			<th>
-				Required
-			</th>
-			<th>
-				Requirements
-			</th>
-			<th>
-				Description
-			</th>
-		</tr>
-<tr>
-<td>
-				date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Must be set to 1
-			</td>
-			<td>
-				Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
-			</td>
-		</tr>
-<tr>
-<td>
-				days
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				If specified, must be an integer greater than 0
-			</td>
-			<td>
-				Number of days in the past for which to retrieve unsubscribes (includes today)
-			</td>
-		</tr>
-<tr>
-<td>
-				start_date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
-			</td>
-			<td>
-				The start of the date range for which to retrieve unsubscribes. 
-			</td>
-		</tr>
-<tr>
-<td>
-				end_date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Date must be in YYYY-MM-DD format and be later than the start_date parameter.
-			</td>
-			<td>
-				The end of the date range for which to retrieve unsubscribes.
-			</td>
-		</tr>
-<tr>
-<td>limit</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>Optional field to limit the number of results returned.</td> 
-    </tr>
-<tr>
-<td>offset</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>optional beginning point in the list to retrieve from.</td> 
-    </tr>
-<tr>
-  <td>email</td> 
-      <td>No</td> 
-      <td>email address eg testing@example.com</td> 
-      <td>optional email addresses to search for.</td> 
-    </tr>
-</tbody></table>
+{% parameters get %}
+{% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}
+{% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve unsubscribes (includes today).' %}
+{% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve unsubscribes.' %}
+{% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve unsubscribes.' %}
+{% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}
+{% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}
+{% parameter email No 'Email address eg testing@example.com.' 'Optional email addresses to search for.' %}
+{% endparameters %}
 
 {% apiexample get GET https://api.sendgrid.com/api/unsubscribes.get api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;date=1 %}
   {% response json %}
@@ -129,26 +48,9 @@ delete
 {% endanchor %}
 <p>Delete an address from the Unsubscribe list. Please note that if no parameters are provided or if empty parameters are provided the ENTIRE list will be removed.</p>
 
-<table id="parameters-delete" class="table table-bordered table-striped"><tbody>
-<tr>
-<th>Parameter</th>
-
-      <th>Required</th>
-
-      <th>Requirements</th>
-
-      <th>Description</th>
-    </tr>
-<tr>
-<td>email</td>
-
-      <td>No</td>
-
-      <td>Must be a valid user account email</td>
-
-      <td>Unsubscribed email address to remove</td>
-    </tr>
-</tbody></table>
+{% parameters delete %}
+{% parameter email No 'Must be a valid user account email.' 'Unsubscribed email address to remove.' %}
+{% endparameters %}
 
 {% apiexample delete POST https://api.sendgrid.com/api/unsubscribes.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com %}
   {% response json %}
@@ -187,20 +89,9 @@ add
 {% endanchor %}
 <p>Add email addresses to the Unsubscribe list.</p>
 
-<table id="parameters-add" class="table table-bordered table-striped"><tbody>
-<tr>
-<th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-    </tr>
-<tr>
-<td>email</td>
-      <td>Yes</td>
-      <td>Must be a valid email address</td>
-      <td>Email address to add to unsubscribe list</td>
-    </tr>
-</tbody></table>
+{% parameters add %}
+{% parameter email Yes 'Must be a valid email address.' 'Email address to add to unsubscribe list.' %}
+{% endparameters %}
 
 {% apiexample add POST https://api.sendgrid.com/api/unsubscribes.add api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com %}
   {% response json %}
