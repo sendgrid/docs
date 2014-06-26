@@ -269,7 +269,7 @@
     },
 
     Livedocs.getResponseFormat = function(){ 
-      if ($.cookie('responseFormat').length) {
+      if ($.cookie('responseFormat')) {
         return $.cookie('responseFormat').toLowerCase(); 
       }
     },
