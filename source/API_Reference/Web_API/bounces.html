@@ -15,104 +15,16 @@ get
 {% endanchor %}
 <p>Retrieve a list of bounces with addresses and response codes, optionally with dates.</p>
 
-<table id="parameters-get" class="table table-bordered table-striped">
-	<tbody>
-		<tr>
-			<th>
-				Parameter
-			</th>
-			<th>
-				Required
-			</th>
-			<th>
-				Requirements
-			</th>
-			<th>
-				Description
-			</th>
-		</tr>
-		<tr>
-			<td>
-				date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Must be set to 1
-			</td>
-			<td>
-				Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS
-			</td>
-		</tr>
-		<tr>
-			<td>
-				days
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				If specified, must be an integer greater than 0
-			</td>
-			<td>
-				Number of days in the past for which to retrieve bounces (includes today)
-			</td>
-		</tr>
-		<tr>
-			<td>
-				start_date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.
-			</td>
-			<td>
-				The start of the date range for which to retrieve bounces. 
-			</td>
-		</tr>
-		<tr>
-			<td>
-				end_date
-			</td>
-			<td>
-				No
-			</td>
-			<td>
-				Date must be in YYYY-MM-DD format and be later than the start_date parameter.
-			</td>
-			<td>
-				The end of the date range for which to retrieve bounces.
-			</td>
-		</tr>
- <tr> 
-      <td>limit</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>Optional field to limit the number of results returned.</td> 
-    </tr> 
-    <tr> 
-      <td>offset</td> 
-      <td>No</td> 
-      <td>some integer</td> 
-      <td>optional beginning point in the list to retrieve from.</td> 
-    </tr> 
-    <tr> 
-      <td>type</td> 
-      <td>No</td> 
-      <td>hard or soft</td> 
-      <td>choose the type of bounce to search for.</td> 
-    </tr> 
-    <tr> 
-      <td>email</td> 
-      <td>No</td> 
-      <td>email address eg testing@example.com</td> 
-      <td>optional email addresses to search for.</td> 
-    </tr> 
-	</tbody>
-</table>
+{% parameters get %}
+{% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}
+{% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve bounces (includes today).' %}
+{% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve bounces.' %}
+{% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve bounces.' %}
+{% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}
+{% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}
+{% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}
+{% parameter email No 'Email address eg testing@example.com.' 'Optional email addresses to search for.' %}
+{% endparameters %}
 
 {% apiexample get GET https://api.sendgrid.com/api/bounces.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
   {% response json %}
@@ -180,49 +92,15 @@ get
 {% anchor h2 %}
 delete 
 {% endanchor %}
-<p>Delete an address from the Bounce list. 
-</p>
-<table id="parameters-delete" class="table table-bordered table-striped">
-<tbody>
-<tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Requirements</th>
-<th>Description</th>
-</tr>
-    <tr> 
-      <td>start_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
-      <td>Optional date to start deleting from.</td> 
-    </tr> 
-      <tr> 
-      <td>end_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
-      <td>Optional date to end deleting from.</td> 
-    </tr> 
-    <tr> 
-      <td>type</td> 
-      <td>No</td> 
-      <td>hard or soft</td> 
-      <td>choose the type of bounce to be removed.</td> 
-    </tr> 
-<tr>
-<td>email</td>
-<td>No</td>
-<td>Must be a valid user account email</td>
-<td>Email bounce address to remove</td>
-</tr>
-<tr> 
-      <td>delete_all</td> 
-      <td>No</td> 
-      <td>value=1</td> 
-      <td>This will delete the bounce list and will not be retrievable</td> 
-    </tr>
+<p>Delete an address from the Bounce list.</p>
 
-</tbody>
-</table>
+{% parameters delete %}
+{% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}
+{% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}
+{% parameter type No 'Hard or soft.' 'Choose the type of bounce to be removed.' %}
+{% parameter email No 'Must be a valid user account email.' 'Email bounce address to remove.' %}
+{% parameter delete_all No 'Must me set to 1.' 'This will delete the bounce list and will not be retrievable.' %}
+{% endparameters %}
 
 {% apiexample delete POST https://api.sendgrid.com/api/bounces.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
@@ -257,32 +135,11 @@ delete
 Count  
 {% endanchor %} 
 
-  <table id="parameters-count" class="table table-bordered table-striped"> 
-    <tr> 
-      <td>Parameter</td> 
-      <td>Required</td> 
-      <td>Requirements</td> 
-      <td>Description</td> 
-    </tr> 
-    <tr> 
-      <td>start_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td> 
-      <td>Optional date to start counting from.</td> 
-    </tr> 
-      <tr> 
-      <td>end_date</td> 
-      <td>No</td> 
-      <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td> 
-      <td>Optional date to end counting from.</td> 
-    </tr> 
-    <tr> 
-      <td>type</td> 
-      <td>No</td> 
-      <td>hard or soft</td> 
-      <td>choose the type of bounce to search for.</td> 
-    </tr> 
-  </table> 
+{% parameters count %}
+{% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start counting from.' %}
+{% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end counting from.' %}
+{% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}
+{% endparameters %}
  
 {% apiexample count GET https://api.sendgrid.com/api/bounces.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
