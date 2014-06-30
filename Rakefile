@@ -157,9 +157,12 @@ task :index do
   end
 
   files.each do |htmlfile|
-    puts htmlfile
-
     doc = Nokogiri::HTML(File.open(htmlfile))
+    
+    #remove some elements we don't want to index
+    doc.search('article code, article code-button').remove
+
+    #we only want to index the contents of certain elements in the <article> tag
     elements = doc.search('article a, article h1, article h2, article h3, article h4, article h5, article h6, article p, article td').map {|e| e.text}
     page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
 
