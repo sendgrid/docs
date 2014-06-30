@@ -157,6 +157,7 @@ task :index do
   end
 
   files.each do |htmlfile|
+    next if htmlfile.include?("index.html")
     doc = Nokogiri::HTML(File.open(htmlfile))
     
     #remove some elements we don't want to index
