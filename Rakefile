@@ -7,6 +7,7 @@ require "shellwords"
 require "json"
 require "simple-cloudfront-invalidator"
 require "cgi"
+require "indextank"
 
 public_dir      = "public"    # compiled site directory
 source_dir      = "source"    # source file directory
@@ -122,6 +123,67 @@ task :invalidate_cloudfront do
   invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], cf_distro_id)
   
   puts invalidator.invalidate(public_files) 
+end
+
+desc "index the generated files"
+task :index do
+  htmlfiles = File.join("**", "public", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
+  
+  puts 'Indexing pages...'
+  @storage_dir = File.join(Dir.pwd, '.jekyll_indextank')
+  @last_indexed_file = File.join(@storage_dir, 'last_index')
+  
+  begin
+    Dir.mkdir(@storage_dir) unless File.exists?(@storage_dir)
+  rescue SystemCallError
+    puts 'WARNING: cannot create directory to store index timestamps.'
+  end
+  
+  begin
+    @last_indexed = File.open(@last_indexed_file, "rb") {|f| Marshal.load(f)}
+  rescue
+    @last_indexed = nil
+  end
+
+  api = IndexTank::Client.new(ENV["INDEXTANK_API_URL"])
+  @index = api.indexes(ENV["INDEXTANK_INDEX"])
+
+  while not @index.running?
+    # wait for the indextank index to get ready
+    sleep 0.5
+  end
+
+  files.each do |htmlfile|
+    next if htmlfile.include?("index.html")
+    doc = Nokogiri::HTML(File.open(htmlfile))
+    
+    #remove some elements we don't want to index
+    doc.search('article code, article code-button').remove
+
+    #we only want to index the contents of certain elements in the <article> tag
+    elements = doc.search('article a, article h1, article h2, article h3, article h4, article h5, article h6, article p, article td').map {|e| e.text}
+    page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
+
+    url = htmlfile.gsub('public','')
+
+    @index.document(url).add({ 
+      :text => page_text,
+      :title => doc.title 
+    })
+    puts 'Indexed ' << htmlfile
+  end
+
+  @last_indexed = Time.now
+  begin
+    File.open(@last_indexed_file, 'w') {|f| Marshal.dump(@last_indexed, f)}
+  rescue
+    puts 'WARNING: cannot write indexed timestamps file.'
+  end
+  
+  puts 'Indexing done'
 end
 
 desc "run linklint and fail if errors found"
