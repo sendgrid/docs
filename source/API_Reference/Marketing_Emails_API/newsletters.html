@@ -9,11 +9,11 @@ navigation:
 <p>This endpoint allows you to add, view, or remove marketing emails.</p>
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 <p>Create a new Marketing Email.</p>
 
-<table id="parameters-add" class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
     <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -52,7 +52,7 @@ add
     </tr>
   </table>
 
-  
+
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
@@ -85,7 +85,7 @@ add
 <hr/>
 
 {% anchor h2 %}
-edit 
+edit
 {% endanchor %}
 <p>Edit an existing Marketing Email.</p>
 
@@ -135,7 +135,7 @@ edit
     </tr>
   </table>
 
-  
+
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/edit identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
@@ -167,7 +167,7 @@ edit
 
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 <p>Retrieve the contents of an existing Marketing Email.</p>
 
@@ -186,7 +186,7 @@ get
     </tr>
   </table>
 
-  
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
@@ -237,7 +237,7 @@ get
 
 
 {% anchor h2 %}
-list 
+list
 {% endanchor %}
 <p>Retrieve a list of all existing Marketing Email.</p>
 
@@ -256,7 +256,7 @@ list
     </tr>
   </table>
 
-  
+
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
@@ -319,7 +319,7 @@ list
 
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 <p>Remove an existing Marketing Email.</p>
 
@@ -338,7 +338,7 @@ delete
     </tr>
   </table>
 
-  
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 //success
