@@ -27,14 +27,14 @@ List
   
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
-{
-      mail_domain:'email.sendgrid.com',
-      url_domain:'email.sendgrid.com'
+[{
+      "mail_domain":"email.sendgrid.com",
+      "url_domain":"email.sendgrid.com"
   },
   {
-      mail_domain:'email.example.com',
-      url_domain:'email.example.com'
-  }
+      "mail_domain":"email.example.com",
+      "url_domain":"email.example.com"
+  }]
   {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
