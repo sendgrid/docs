@@ -104,29 +104,21 @@ delete
 
 {% apiexample delete POST https://api.sendgrid.com/api/bounces.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "Email does not exist"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- success -->
+
 <result>
   success
 @nodes
 </result>
 
-<!-- error -->
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -143,30 +135,19 @@ Count
  
 {% apiexample count GET https://api.sendgrid.com/api/bounces.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "count": "4"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
 
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- success -->
+
 <result>
    <count>4</count>
 </result>
 
-<!-- error -->
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}

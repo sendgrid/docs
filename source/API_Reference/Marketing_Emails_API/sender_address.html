@@ -84,19 +84,12 @@ add
   
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/identity/add identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -104,13 +97,7 @@ add
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -199,19 +186,12 @@ edit
   
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/identity/edit identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -219,13 +199,7 @@ edit
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -255,7 +229,7 @@ get
   
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/identity/get identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "city": "Boulder",
   "name": "Name",
@@ -268,14 +242,7 @@ get
   "identity": "Sender_Address "
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -291,13 +258,7 @@ get
    <identity>Sender_Address </identity>
 </identity>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -329,21 +290,14 @@ list
   
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/identity/list identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 [
   {
     "identity": "Sender_Address4"
   }
 ]
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -351,15 +305,7 @@ list
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<identities>
-   <identity>
-      <identity>Sender_Address4</identity>
-   </identity>
-</identities>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -390,19 +336,12 @@ delete
   
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/identity/delete identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -410,12 +349,6 @@ delete
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

@@ -14,7 +14,7 @@ get
 
 {% apiexample get GET https://api.sendgrid.com/api/parse.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "parse": [
     {
@@ -25,17 +25,11 @@ get
   ]
 }
 
-//empty
-{
-  "parse": [
-
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <parse>
    <entry>
       <hostname>www.example.com</hostname>
@@ -44,9 +38,7 @@ get
    </entry>
 </parse>
 
-<!-- empty -->
-<parse></parse> 
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -87,37 +79,21 @@ set
 
 {% apiexample set POST https://api.sendgrid.com/api/parse.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
    <message>success</message>
 </result>
 
-<!-- error -->
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -146,35 +122,19 @@ Delete Entry
 
 {% apiexample delete POST https://api.sendgrid.com/api/parse.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
    <message>success</message>
 </result>
 
-<!-- error -->
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}

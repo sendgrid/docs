@@ -72,33 +72,22 @@ count
 
 {% apiexample count GET https://api.sendgrid.com/api/invalidemails.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "count": 2
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
 
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
   <count>2</count>
 <result>
 
-<!-- error -->
-<errors>
-  <error>Error message</error>
-</errors>
-  {% endresponse %}
+{% endresponse %}
 
 {% endapiexample %}
 
@@ -115,32 +104,21 @@ delete
 
 {% apiexample delete POST https://api.sendgrid.com/api/invalidemails.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
 
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
   success
 <result>
 
-<!-- error -->
-<result>
-  Email does not exist
-</result>
-  {% endresponse %}
+{% endresponse %}
 
 {% endapiexample %}

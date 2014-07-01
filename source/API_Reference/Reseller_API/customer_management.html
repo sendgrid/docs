@@ -160,14 +160,7 @@ specify the first billing anniversary date</td>
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -175,18 +168,7 @@ specify the first billing anniversary date</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -219,14 +201,7 @@ account.</td>
   "message": "success"
 }
 
-//error
-{
-  "error": {
-    "code": 400,
-    "message": "User does not exist",
-  }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -234,14 +209,7 @@ account.</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -434,14 +402,7 @@ Enable a customer so they may start sending out emails again. This call will not
   "message": "success"
 }
 
-//error
-{
-  "error": {
-    "code": 400,
-    "message": "User does not exist",
-  }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -449,14 +410,7 @@ Enable a customer so they may start sending out emails again. This call will not
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -493,26 +447,14 @@ This prevents them from sending out emails with SendGrid.
   "message": "success"
 }
 
-//error
-{
-  "error": {
-    "code": 400,
-    "message": "User does not exist",
-  }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
   <message>success</message>
 </result>
-<!-- error -->
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -551,12 +493,7 @@ access</td>
   "message": "success"
 }
 
-//error
-{
-  "code": 400,
-  "message": "User does not exist"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -564,14 +501,7 @@ access</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -610,12 +540,7 @@ website access</td>
   "message": "success"
 }
 
-//error
-{
-  "code": 400,
-  "message": "User does not exist"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -623,14 +548,7 @@ website access</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -717,14 +635,7 @@ to update profile information</td>
   "message": "success"
 }
 
-//error
-{
-  "error": {
-    "code": 400,
-    "message": "... error message ..."
-  }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -732,14 +643,7 @@ to update profile information</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>... error message ...</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -790,14 +694,7 @@ password</td>
   "message": "success"
 }
 
-//error
-{
-  "error": {
-    "code": 400,
-    "message": "Missing ... parameter"
-  }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -805,14 +702,7 @@ password</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>Missing ... parameter</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -875,14 +765,7 @@ This update takes effect immediately</td>
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -890,18 +773,7 @@ This update takes effect immediately</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -955,14 +827,7 @@ contacting customer. This update takes effect immediately</td>
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -970,17 +835,6 @@ contacting customer. This update takes effect immediately</td>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

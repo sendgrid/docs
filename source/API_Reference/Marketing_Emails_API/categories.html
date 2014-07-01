@@ -34,19 +34,12 @@ create
   
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/category/create api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -54,13 +47,7 @@ create
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -96,19 +83,12 @@ add
   
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/category/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -116,13 +96,7 @@ add
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -159,19 +133,12 @@ remove
   
 {% apiexample remove POST https://api.sendgrid.com/api/newsletter/category/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -179,13 +146,7 @@ remove
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 
@@ -216,7 +177,7 @@ list
   
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 [
   {
     "category": "CATEGORY"
@@ -226,14 +187,7 @@ list
   }
 ]
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -246,13 +200,7 @@ list
    </category>
 </categories>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 

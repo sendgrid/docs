@@ -107,8 +107,6 @@ Customize App
   {% response json %}
 	{"message":"success","settings":[{"field_name":"field_value"}]}
   
-  //empty response
-  {"settings":"null"}
   {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -118,17 +116,7 @@ Customize App
    ...
 </filter>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <message>... error messages ...</message>
-</result>
-
-<!-- empty response -->
-<filter></filter>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -153,25 +141,8 @@ Get Current Settings
   ]
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-
-//empty response
-{
-  "settings": "null"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
-<!-- error -->
-<result><message>error</message><message>... error messages ...</message></result>
-
-<!-- empty response -->
-<filter></filter>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

@@ -21,17 +21,12 @@ add
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/email/add list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "inserted": 1
 }
 
-//error
-{
-  "message": "error",
-  "error": "error message"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -78,7 +73,7 @@ get
 
 {% apiexample get GET https://api.sendgrid.com/api/newsletter/lists/email/get list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 [
   {
     "email": "dominic.may@sendgrid.com",
@@ -86,14 +81,7 @@ get
   }
 ]
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -105,12 +93,7 @@ get
    </email>
 </emails>
 
-<!-- error -->
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -127,34 +110,21 @@ count
 
 {% apiexample count GET https://api.sendgrid.com/api/newsletter/lists/email/count list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "count": 2
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
-<!-- success -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <count>2</count>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -172,33 +142,20 @@ delete
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/email/delete list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "removed": 1
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
-<!-- success -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <removed>1</removed>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

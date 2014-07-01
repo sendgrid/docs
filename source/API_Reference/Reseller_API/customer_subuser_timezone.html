@@ -129,15 +129,7 @@ Get Timezone
   "display":"GMT-06:00"
 }
 
-// error
-{
-  "error":
-    {
-      "code":400,
-      "message":"User does not exist"
-    }
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -148,14 +140,7 @@ Get Timezone
   <display>GMT-06:00</display>
 </timezone>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<error>
-  <code>400</code>
-  <message>User does not exist</message>
-</error>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -208,13 +193,7 @@ Edit Timezone
   "message":"success"
 }
 
-// error
-{
-  "message":"error",
-  "errors":["my_new_timezone not supported"]
-}
-
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -222,14 +201,5 @@ Edit Timezone
   <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-  <message>error</message>
-  <errors>
-    <error>my_new_timezone not supported</error>
-  </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}

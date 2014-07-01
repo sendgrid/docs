@@ -107,25 +107,15 @@ Delete Spam Reports
   "message": "success"
 }
 
-//error
-{
-  "message": "Email does not exist"
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
-<!-- success -->
+
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <result>
    <message>success</message>
 </result>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>Email does not exist</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

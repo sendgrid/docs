@@ -54,32 +54,21 @@ delete
 
 {% apiexample delete POST https://api.sendgrid.com/api/unsubscribes.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
    <message>success</message>
 </result>
 
-<!-- error -->
-<result>
-   <message>Email does not exist</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 
 {% endapiexample %}
 
@@ -95,31 +84,20 @@ add
 
 {% apiexample add POST https://api.sendgrid.com/api/unsubscribes.add api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=email2@domain.com %}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <result>
    <message>success</message>
 </result>
 
-<!-- error -->
-<result>
-   <message>Email does not exist</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 
 {% endapiexample %}

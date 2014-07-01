@@ -74,31 +74,20 @@ Delete an address from the Block list.
 
 {% apiexample delete POST https://api.sendgrid.com/api/blocks.delete api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;email=emailToDelete@domain.com%}
   {% response json %}
-//success
+
 {
   "message": "success"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
-<!-- Success -->
+
 <result>
    <count>4</count>
    @nodes
 </result>
 
-<!-- Error -->
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr class="docs-separator">
@@ -115,29 +104,18 @@ count
 
 {% apiexample count GET https://api.sendgrid.com/api/blocks.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
-//success
+
 {
   "count": "4"
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- success -->
+
 <result>
    <count>4</count>
 </result>
 
-<!-- error -->
-<result>
-   <message>error: reason</message>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample%}

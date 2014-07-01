@@ -145,34 +145,14 @@ Get App Settings
   ]
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-
-//empty - This is returned if that filter has no settings or is not enabled.<
-{
-  "settings": null
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- success -->
+
 <filter>
    <email>nick@sendgrid.com</email>
 </filter>
 
-<!-- error -->
-<result>
-   <message>error</message>
-   <message>... error messages ...</message>
-</result>
-
-<!-- empty -->
-<filter/>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}

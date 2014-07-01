@@ -64,14 +64,7 @@ navigation:
   ]
 }
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -113,17 +106,6 @@ navigation:
    </invoices>
 </usage>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 

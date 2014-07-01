@@ -162,18 +162,7 @@ Customize App
     ...
   </filter>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
 
 <hr/>
@@ -186,29 +175,11 @@ Get Current Settings
   {% response json %}
 {"message":"success","settings":[{"field_name":"field_value"}]}
 
-//error
-{
-  "message": "error",
-  "errors": [
-    "...error messages..."
-  ]
-}
-  {% endresponse %}
+{% endresponse %}
   {% response xml %}
  <filter><field_name>field_value</field_name>
     ...
   </filter>
 
-<!-- error -->
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>error</message>
-   <errors>
-      ...
-      <error>... error messages ...</error>
-      ...
-   </errors>
-</result>
-  {% endresponse %}
+{% endresponse %}
 {% endapiexample %}
