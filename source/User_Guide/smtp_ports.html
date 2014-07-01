@@ -13,3 +13,7 @@ navigation:
 
 <p>You can connect via unencrypted or TLS on ports 25, 2525, and 587.
 You can connect via SSL on port 465.</p>
+
+<p>Outbound connections for emails sent via SendGrid utilize opportunistic encryption using TLS. When we 
+deliver your message to its recipient we will attempt to negotiate a TLS connection with the recipient’s mail server.
+If successful, we send using TLS. If not, a plain connection is used.</p>
