@@ -32,7 +32,7 @@ List all of the available apps. {% parameters list %}
 <filters>
    <filter>
       <name>twitter</name>
-      <title markdown="1">
+      <title>
 Twitter
 </title>
       <description>This plugin allows you to send an email message to twitter</description>

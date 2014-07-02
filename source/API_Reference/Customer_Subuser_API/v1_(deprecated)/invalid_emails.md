@@ -39,8 +39,8 @@ navigation:
 
 {% xmljsontabs get %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane active" id="get-xml">
+<div class="tab-content">
+<div class="tab-pane active" id="get-xml">
 ### Call
 
 
@@ -85,7 +85,7 @@ navigation:
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="get-json">
+<div class="tab-pane active" id="get-json">
 ### Call
 
 
@@ -169,8 +169,8 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% xmljsontabs delete %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane active" id="delete-xml">
+<div class="tab-content">
+<div class="tab-pane active" id="delete-xml">
 ### Call
 
 
@@ -229,7 +229,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% endrequestblock %}
 
-<div markdown="1" class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 ### Call
 
 

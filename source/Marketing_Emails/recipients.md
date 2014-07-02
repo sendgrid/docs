@@ -162,7 +162,7 @@ You can take the following actions depending on which category you want to make 
 Subscription Widget 
 {% endanchor %}
 
-<li markdown="1">
+<li>
 This form enables your visitors to subscribe to your marketing email directly from your website.
 
 </li>

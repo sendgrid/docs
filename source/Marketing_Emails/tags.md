@@ -75,29 +75,29 @@ At SendGrid we are always trying to help our customers send marketing email more
 
 The total number of custom tags was computed based on:
 
-<li markdown="1">
+<li>
 The MAX size of the POST Request allowed by the WEBAPID (20480000 b = almost 20Mb)
 
 </li>
-<li markdown="1">
+<li>
 The MAX size of the content (characters) of each custom tag.
 
 </li>
-<li markdown="1">
+<li>
 Batch sending (of 1000 recipients per batch)
 
 </li>
 ### Tests Results
 
-<li markdown="1">
+<li>
 256 characters per content - total allowed custom tags: 75
 
 </li>
-<li markdown="1">
+<li>
 128 chars per content - total allowed custom tags: 140
 
 </li>
-<li markdown="1">
+<li>
 64 chars per content - total allowed custom tags: 250
 
 </li>

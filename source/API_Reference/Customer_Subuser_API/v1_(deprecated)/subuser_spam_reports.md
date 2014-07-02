@@ -43,8 +43,8 @@ Retrieve Spam Reports
 
 {% xmljsontabs get %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="get-xml">
+<div class="tab-content">
+<div class="tab-pane" id="get-xml">
 ### Call
 
 
@@ -82,7 +82,7 @@ Retrieve Spam Reports
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="get-json">
+<div class="tab-pane active" id="get-json">
 ### Call
 
 
@@ -159,8 +159,8 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 {% xmljsontabs delete %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="delete-xml">
+<div class="tab-content">
+<div class="tab-pane" id="delete-xml">
 ### Call
 
 
@@ -207,7 +207,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 ### Call
 
 

@@ -175,7 +175,7 @@ The message was refused because the mailbox name is either malformed or does not
 Examples: 
 {% endanchor %}
 
-<ul markdown="1">
+<ul>
 -   553 sorry, that domain isn't in my list of allowed rcpthosts (\#5.7.1)
 -   553 Invalid/inactive user.
 
@@ -194,7 +194,7 @@ The message failed. This response is a ‘default’ of sorts, but can be attrib
 Examples: 
 {% endanchor %}
 
-<ul markdown="1">
+<ul>
 -   554 5.7.1 - ERROR: Mail refused
 -   554 5.7.1 [P4] Message blocked due to spam content in the message.
 

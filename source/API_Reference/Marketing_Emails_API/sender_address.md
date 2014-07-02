@@ -196,7 +196,7 @@ Retrieve information associated with a particular Address.
    <replyto>example@sendgrid.com</replyto>
    <country>US</country>
    <state>CO</state>
-   <address markdown="1">
+   <address>
 929 Pearl Street ste 200
 
 </address>

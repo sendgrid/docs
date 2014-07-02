@@ -308,7 +308,7 @@ Obtain a complete list of all subusers.
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
+      <address>
 555 any street
 
 </address>
@@ -325,7 +325,7 @@ Obtain a complete list of all subusers.
       <active>false</active>
       <first_name>jane</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
+      <address>
 555 any street
 
 </address>

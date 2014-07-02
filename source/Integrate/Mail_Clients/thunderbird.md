@@ -8,13 +8,13 @@ navigation:
 
 To send email using Thunderbird you will have to modify your outgoing server settings in Thunderbird accordingly. Additionally you can modify settings in Thunderbird that will allow you to include an [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) header in your emails if you wish to leverage [categories]({{root_url}}/Delivery_Metrics/categories.html) or other features of the SMTP API when sending mail via the Thunderbird client.
 
-<h2 markdown="1">
+<h2>
 Start by going to: 'Tools' -\> 'Account Settings'
 
 </h3>
 ![]({{root_url}}/images/thunderbird_1.png "thunderbird_add")
 
-<h2 markdown="1">
+<h2>
 The Settings that need to be entered include:
 
 </h3>
@@ -27,7 +27,7 @@ The Settings that need to be entered include:
 
 ![]({{root_url}}/images/thunderbird_2.png "thunderbird_settings")
 
-<h2 markdown="1">
+<h2>
 Incorporating SMTP API headers requires the following.
 
 </h3>

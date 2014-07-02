@@ -44,8 +44,8 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 {% xmljsontabs get %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="get-xml">
+<div class="tab-content">
+<div class="tab-pane" id="get-xml">
 ### Call
 
 
@@ -87,7 +87,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="get-json">
+<div class="tab-pane active" id="get-json">
 ### Call
 
 
@@ -168,8 +168,8 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 {% xmljsontabs delete %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="delete-xml">
+<div class="tab-content">
+<div class="tab-pane" id="delete-xml">
 ### Call
 
 
@@ -216,7 +216,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 ### Call
 
 

@@ -68,7 +68,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 <filters>
    <filter>
       <name>twitter</name>
-      <title markdown="1">
+      <title>
 Twitter
 
 </title>

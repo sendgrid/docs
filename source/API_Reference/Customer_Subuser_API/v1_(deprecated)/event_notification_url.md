@@ -37,8 +37,8 @@ Retrieve
 
 {% xmljsontabs get %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="get-xml">
+<div class="tab-content">
+<div class="tab-pane" id="get-xml">
 ### Call
 
 
@@ -67,7 +67,7 @@ Retrieve
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="get-json">
+<div class="tab-pane active" id="get-json">
 ### Call
 
 
@@ -136,8 +136,8 @@ Update / Set URL
 
 {% xmljsontabs set %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="set-xml">
+<div class="tab-content">
+<div class="tab-pane" id="set-xml">
 ### Call
 
 
@@ -168,7 +168,7 @@ Update / Set URL
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="set-json">
+<div class="tab-pane active" id="set-json">
 ### Call
 
 
@@ -231,8 +231,8 @@ Delete
 
 {% xmljsontabs delete %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="delete-xml">
+<div class="tab-content">
+<div class="tab-pane" id="delete-xml">
 ### Call
 
 
@@ -263,7 +263,7 @@ Delete
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="delete-json">
+<div class="tab-pane active" id="delete-json">
 ### Call
 
 

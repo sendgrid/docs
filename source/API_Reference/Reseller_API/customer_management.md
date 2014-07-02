@@ -324,7 +324,7 @@ Obtain a complete list of all customers.
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
+      <address>
 555 any street
 </address>
       <city>any city</city>
@@ -340,7 +340,7 @@ Obtain a complete list of all customers.
       <active>false</active>
       <first_name>jane</first_name>
       <last_name>doe</last_name>
-      <address markdown="1">
+      <address>
 555 any street
 </address>
       <city>any city</city>

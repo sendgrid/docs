@@ -8,7 +8,7 @@ navigation:
    show: true
 ---
 
-<div markdown="1">
+<div>
 Allow subusers to manage their account from your website using an iframe to our site.
 
 
@@ -68,7 +68,7 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="call-json">
+<div class="tab-pane active" id="call-json">
 ### Call
 
 

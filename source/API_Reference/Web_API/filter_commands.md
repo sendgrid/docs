@@ -39,7 +39,7 @@ List all of the available apps.
    ...
    <filter>
       <name>bcc</name>
-      <title markdown="1">
+      <title>
 BCC
 
 </title>

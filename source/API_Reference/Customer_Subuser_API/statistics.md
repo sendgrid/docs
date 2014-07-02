@@ -273,8 +273,8 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 {% xmljsontabs catstats %}
 
-<div markdown="1" class="tab-content">
-<div markdown="1" class="tab-pane" id="catstats-xml">
+<div class="tab-content">
+<div class="tab-pane" id="catstats-xml">
 ### Call
 
 
@@ -323,7 +323,7 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 
 
 </div>
-<div markdown="1" class="tab-pane active" id="catstats-json">
+<div class="tab-pane active" id="catstats-json">
 ### Call
 
 
