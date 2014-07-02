@@ -1052,7 +1052,6 @@ Validator.prototype.addSubSchemaObject = function addSubSchemaArray(baseuri, sch
 }
 
 
-
 /**
  * Sets all the schemas of the Validator instance.
  * @param schemas
@@ -2252,7 +2251,6 @@ Url.prototype.parse = function(url, parseQueryString, slashesDenoteHost) {
     }
   }
 
-
   // chop off from the tail first.
   var hash = rest.indexOf('#');
   if (hash !== -1) {
@@ -2708,4 +2706,3 @@ $(function() {
     }
   }
 });
-

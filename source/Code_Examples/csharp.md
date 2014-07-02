@@ -32,7 +32,6 @@ This C# program will build a MIME email and send it through SendGrid.  .NET alre
 This example uses:
 [.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
 
-
 {% codeblock lang:csharp %}
 using System;
 using System.Collections.Generic;
