@@ -17,7 +17,8 @@ Add one or more emails to a Recipient List.
 {% parameters add%} 
   
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
-  {% parameter data Yes 'Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.' 'Specify the name, email address, and additional fields to add to the specified Recipient List.' %}{% endparameters %} 
+  {% parameter data Yes 'Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.' 'Specify the name, email address, and additional fields to add to the specified Recipient List.' %}
+{% endparameters %} 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/email/add list=Test&data=%7B%22email%22%3A%22example%40gmail.com%22%2C%22name%22%3A%22example%22%7D&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -60,7 +61,8 @@ Get the email addresses and associated fields for a Recipient List.
 {% parameters get %} 
   
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
-  {% parameter get No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}{% endparameters %} 
+  {% parameter get No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}
+{% endparameters %} 
 {% apiexample get GET https://api.sendgrid.com/api/newsletter/lists/email/get list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -93,7 +95,8 @@ Retrieve the number of entries on a list.
 
 {% parameters count %} 
   
-  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}{% endparameters %} 
+  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
+{% endparameters %} 
 {% apiexample count GET https://api.sendgrid.com/api/newsletter/lists/email/count list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -121,7 +124,8 @@ Remove one or more emails from a Recipient List.
 {% parameters delete %} 
   
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
-  {% parameter email Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List.' %}{% endparameters %} 
+  {% parameter email Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List.' %}
+{% endparameters %} 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/email/delete list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {

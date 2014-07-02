@@ -38,10 +38,6 @@ List all of the available apps.
    ...
    <filter>
       <name>bcc</name>
-      <title>
-BCC
-
-</title>
       <description>Automatically BCC an address for every e-mail sent.</description>
       <activated>0</activated>
    </filter>
@@ -61,7 +57,8 @@ Activate an app.
 
 {% parameters activate %} 
   
-  {% parameter name true '' 'The name of the app to activate.' %}{% endparameters %} 
+  {% parameter name true '' 'The name of the app to activate.' %}
+{% endparameters %} 
 {% apiexample activate POST https://api.sendgrid.com/api/filter.activate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
@@ -88,7 +85,8 @@ Deactivate an app.
 
 {% parameters deactivate %} 
   
-  {% parameter name true '' 'The name of the app to deactivate.' %}{% endparameters %} 
+  {% parameter name true '' 'The name of the app to deactivate.' %}
+{% endparameters %} 
 {% apiexample deactivate POST https://api.sendgrid.com/api/filter.deactivate api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
@@ -139,7 +137,8 @@ Get the Settings Of An App
 
 {% parameters getsettings %} 
   
-  {% parameter name true '' 'The name of the app for which to retrieve settings.' %}{% endparameters %} 
+  {% parameter name true '' 'The name of the app for which to retrieve settings.' %}
+{% endparameters %} 
 {% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {

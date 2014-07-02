@@ -19,7 +19,8 @@ get
   {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}  
   {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}  
   {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}  
-  {% parameter email No 'Email address eg testing@example.com' 'Optional email addresses to search for.' %}{% endparameters %} 
+  {% parameter email No 'Email address eg testing@example.com' 'Optional email addresses to search for.' %}
+{% endparameters %} 
 {% apiexample get GET https://api.sendgrid.com/api/spamreports.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
   {% response json %}
 [
@@ -65,7 +66,8 @@ Retrieve the count of Spam Reports.
 {% parameters count %} 
   
   {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve spam reports.' %}  
-  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}{% endparameters %} 
+  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}
+{% endparameters %} 
 {% apiexample count GET https://api.sendgrid.com/api/spamreports.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -96,7 +98,8 @@ Delete an address from the Spam Reports list.
   {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}  
   {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}  
   {% parameter email No 'Must be a valid user account email' 'Email spam reports address to remove.' %}  
-  {% parameter delete_all No 'value=1' 'This will delete the bounce list and will not be retrievable.' %}{% endparameters %} 
+  {% parameter delete_all No 'value=1' 'This will delete the bounce list and will not be retrievable.' %}
+{% endparameters %} 
 {% apiexample delete POST https://api.sendgrid.com/api/spamreports.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
 {
