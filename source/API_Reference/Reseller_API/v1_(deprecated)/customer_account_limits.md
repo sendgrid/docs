@@ -60,7 +60,6 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -72,9 +71,7 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -87,7 +84,6 @@ Retrieve account limits for a specific customer. If the API call response is emp
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -103,7 +99,6 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 ### Response: Success
 
-
 {% codeblock %}
 {"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
 {% endcodeblock %}
@@ -117,7 +112,6 @@ Retrieve account limits for a specific customer. If the API call response is emp
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -178,7 +172,6 @@ Obtain a complete list of all customer.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -195,7 +188,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -210,16 +202,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -229,7 +218,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -320,7 +308,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -337,7 +324,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -352,16 +338,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -371,7 +354,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -438,7 +420,6 @@ Set a subusers credits to a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -455,7 +436,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -470,16 +450,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -489,7 +466,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -556,7 +532,6 @@ Increment a subusers credits by a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -573,7 +548,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -588,16 +562,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -607,7 +578,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -674,7 +644,6 @@ Decrement a subusers credits by a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -691,7 +660,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -706,16 +674,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -725,4 +690,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

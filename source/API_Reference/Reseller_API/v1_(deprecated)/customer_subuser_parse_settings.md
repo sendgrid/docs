@@ -54,7 +54,6 @@ Get Current Settings
 
 ### Response: Success
 
-
 {% codeblock %}
 parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
@@ -63,9 +62,7 @@ parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php
 parse></parse
 {% endcodeblock %}
 
-
 ### Response: Empty
-
 
 {% codeblock %}
 "parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
@@ -75,9 +72,7 @@ parse></parse
 "parse":[]
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock %}
 result><message>success</message></result>
@@ -95,7 +90,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -110,16 +104,13 @@ result><message>success</message></result>
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -129,7 +120,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -191,7 +181,6 @@ Edit Entry
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -208,7 +197,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -223,16 +211,13 @@ result><message>success</message></result>
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -242,7 +227,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -298,7 +282,6 @@ Delete Entry
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -315,7 +298,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -330,16 +312,13 @@ result><message>success</message></result>
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -349,4 +328,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

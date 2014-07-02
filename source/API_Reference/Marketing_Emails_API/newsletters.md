@@ -57,7 +57,6 @@ Create a new Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -138,7 +137,6 @@ Retrieve the contents of an existing Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -198,7 +196,6 @@ Retrieve a list of all existing Marketing Email.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -272,7 +269,6 @@ Remove an existing Marketing Email.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}

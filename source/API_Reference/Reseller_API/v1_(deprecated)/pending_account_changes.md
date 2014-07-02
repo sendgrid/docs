@@ -63,7 +63,6 @@ Returns all of the users who have pending changes within your account.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><pending><user><username>user4</username><type>Account Upgrade</type><current>Main Reseller - Silver Package</current><update>Main Reseller - Gold Package</update><date>2010-09-30</date><ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip></ips><ip_groups></ip_groups></user><user><username>user5</username><type>Account Downgrade</type><current>Main Reseller - Gold Package</current><update>Main Reseller - Basic Package</update><date>2010-10-07</date><ips></ips><ip_groups><ip_group>Reseller Group</ip_group></ip_groups></user></pending></result>
 {% endcodeblock %}
@@ -80,7 +79,6 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -95,7 +93,6 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 
 ### Response: Success
 
-
 {% codeblock %}
 {"username":"user4","type":"Account Upgrade","current":"Main Reseller - Silver Package","update":"Main Reseller - Gold Package","ip_groups":[],"ips":["255.255.255.0","255.255.254.0"],"date":"2010-09-30"},{"username":"user5","type":"Account Downgrade","current":"Main Reseller - Gold Package","update":"Main Reseller - Basic Package","ip_groups":["Reseller Group"],"ips":[],"date":"2010-10-07"}
 {% endcodeblock %}
@@ -109,7 +106,6 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -159,7 +155,6 @@ Cancel/Revert a pending change.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -176,7 +171,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -191,16 +185,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -210,7 +201,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -275,7 +265,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -292,7 +281,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -307,16 +295,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -326,7 +311,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -391,7 +375,6 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -408,7 +391,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -423,16 +405,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -442,7 +421,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -497,7 +475,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -514,7 +491,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -529,16 +505,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -548,7 +521,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -613,7 +585,6 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -630,7 +601,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -645,16 +615,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -664,7 +631,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -729,7 +695,6 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -746,7 +711,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -761,16 +725,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -780,7 +741,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -835,7 +795,6 @@ Close or revert an account to a free user at the end of the user's billing cycle
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -852,7 +811,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -867,16 +825,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -886,4 +841,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

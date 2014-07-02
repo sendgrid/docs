@@ -38,14 +38,12 @@ Add one or more emails to a Recipient List.
 
 Add an email recipient to a list:
 
-
 {% codeblock %}
 #curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"address@domain.com","name":"contactName"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
 
 <p>Add an email recipient with multiple data fields:</p>
 {% codeblock %}#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
-
 
 Add multiple email recipients to a list:
 

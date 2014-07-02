@@ -53,7 +53,6 @@ Retrieve Spam Reports
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date= %}
   {% response json %}
 [
@@ -134,7 +133,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com %}
   {% response json %}

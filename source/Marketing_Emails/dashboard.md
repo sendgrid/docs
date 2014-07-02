@@ -93,4 +93,3 @@ There are also many different email stats available to you throughout SendGrid's
       <td>Invalid/Requests</td>
    </tr>
 </table>
-

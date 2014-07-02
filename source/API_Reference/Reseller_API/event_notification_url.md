@@ -46,7 +46,6 @@ Retrieve
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur %}
   {% response json %}
 {
@@ -109,7 +108,6 @@ Update / Set URL
    </tbody>
 </table>
 
-
 {% apiexample set POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
   {% response json %}
 {
@@ -167,7 +165,6 @@ Delete
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventposturl %}
   {% response json %}

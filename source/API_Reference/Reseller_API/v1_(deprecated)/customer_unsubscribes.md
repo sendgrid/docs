@@ -71,7 +71,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock %}
 unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
@@ -92,7 +91,6 @@ unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -150,7 +148,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -158,7 +155,6 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -174,23 +170,19 @@ result><message>Email does not exist</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -248,7 +240,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -256,7 +247,6 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email already exists</message></result>
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -272,20 +262,16 @@ result><message>Email already exists</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email already exists"
 }
 {% endcodeblock %}
-

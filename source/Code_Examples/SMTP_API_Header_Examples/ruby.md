@@ -14,7 +14,6 @@ SmtpApiHeader.rb
 
 This header is required for each example.
 
-
 {% codeblock lang:ruby %}
 #!/usr/bin/ruby
 # Version 1.0
@@ -123,4 +122,3 @@ mail = Mail.deliver do
 end
 
 {% endcodeblock %}
-

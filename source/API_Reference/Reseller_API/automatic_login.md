@@ -48,7 +48,6 @@ In order to login your customer, you need to contact our web API to retrieve the
    </tbody>
 </table>
 
-
 {% apiexample call POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com %}
   {% response json %}
 {

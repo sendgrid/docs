@@ -60,7 +60,6 @@ Retrieve Spam Reports
 
 ### Response
 
-
 {% codeblock %}
 spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
@@ -80,7 +79,6 @@ spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:4
 {% codeblock %}
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -138,7 +136,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -146,7 +143,6 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -162,20 +158,16 @@ result><message>Email does not exist</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-

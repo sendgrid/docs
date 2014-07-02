@@ -8,7 +8,6 @@ navigation:
 
 This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.
 
-
 {% codeblock lang:ruby %}
 require 'mail'
 Mail.defaults do
@@ -40,4 +39,3 @@ end
 {% codeblock lang:bash %}
 gem install mail
 {% endcodeblock %}
-

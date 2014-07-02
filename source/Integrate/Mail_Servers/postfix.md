@@ -17,7 +17,6 @@ Some implementations of Postfix only allow passwords to contain letters and numb
 
 Find your Postfix config file, typically **/etc/postfix/main.cf**, and add the following:
 
-
 {% codeblock %}
 smtp_sasl_auth_enable = yes 
 smtp_sasl_password_maps = static:yourSendGridUsername:yourSendGridPassword 
@@ -39,7 +38,6 @@ If you are getting ***no mechanism available*** error messages it generally indi
 
 Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
 
-
 {% codeblock lang:bash %}
 $ apt-get install libsasl2-modules
 {% endcodeblock %}
@@ -49,4 +47,3 @@ $ apt-get install libsasl2-modules
 {% codeblock lang:bash %}
 $ yum install cyrus-sasl-plain
 {% endcodeblock %}
-

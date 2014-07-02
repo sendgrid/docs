@@ -29,7 +29,6 @@ Retrieve invoices/usages from end users before your scheduled billing date.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren %}
   {% response json %}
 {

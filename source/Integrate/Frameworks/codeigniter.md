@@ -40,4 +40,3 @@ $this->email->send();
 echo $this->email->print_debugger();
 ?>
 {% endcodeblock %}
-

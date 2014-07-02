@@ -58,7 +58,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 ### Response: Success
 
-
 {% codeblock %}
 filters><filter><name>twitter</name><title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
@@ -81,7 +80,6 @@ filters><filter><name>twitter</name><title>Twitter</title>
 {% codeblock %}
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}, ... 
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -131,7 +129,6 @@ Activate App
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -154,7 +151,6 @@ result><message>success</message></result>
   "message": "success"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -204,7 +200,6 @@ Deactivate App
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -228,7 +223,6 @@ result><message>success</message></result>
 }
 {% endcodeblock %}
 
-
 * * * * *
 
 {% anchor h2 %}
@@ -251,7 +245,6 @@ These API calls require that settings are passed using POST.
 
 ### Response: Success
 
-
 {% codeblock %}
 filter><field_name>field_value</field_name>
     ...
@@ -262,11 +255,9 @@ filter><field_name>field_value</field_name>
 result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 {% codeblock %}
 filter></filter
@@ -296,11 +287,9 @@ filter></filter
 }
 {% endcodeblock %}
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 {% codeblock %}
 "settings":null}
@@ -331,11 +320,9 @@ filter><field_name>field_value</field_name>
   </filter
 {% endcodeblock %}
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 {% codeblock %}
 result><message>error</message><message>... error messages ...</message></result>
@@ -347,9 +334,7 @@ enabled.</p>
 filter></filter
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -361,7 +346,6 @@ filter></filter
   ]
 }
 {% endcodeblock %}
-
 
 #### Return - Empty
 

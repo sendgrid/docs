@@ -74,7 +74,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock %}
 stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
@@ -94,7 +93,6 @@ stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces
 {% codeblock %}
 {"date":"2009-06-20","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7},{"date":"2009-06-22","requests":52342,"bounces":11,"clicks":19223,"opens":12992,"spamreports":2}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -152,7 +150,6 @@ Retrieve all-time totals for your customer
 
 ### Response
 
-
 {% codeblock %}
 stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
@@ -172,7 +169,6 @@ stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><open
 {% codeblock %}
 "requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -233,7 +229,6 @@ Retrieve a list of all the categories used in your customers account.
 
 ### Response
 
-
 {% codeblock %}
 categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
@@ -253,7 +248,6 @@ categories><category>categoryA</category><category>categoryB</category><category
 {% codeblock %}
 {"category":"categoryA","category":"categoryB","category":"categoryC"}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -343,7 +337,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock %}
 stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
@@ -375,4 +368,3 @@ stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342<
 {% codeblock %}
 {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
 {% endcodeblock %}
-

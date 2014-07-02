@@ -45,7 +45,6 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 
 ### Response
 
-
 {% codeblock %}
 usage><invoices><invoice><number>201001000100</number><credits>123456</credits><date_invoiced>2010-09-01 00:00:00</date_invoiced><status>Unpaid</status><amount>1001</amount><overage>6.95</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user4@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>1007.95</final_amount></invoice></invoices></usage
 {% endcodeblock %}
@@ -68,4 +67,3 @@ usage><invoices><invoice><number>201001000100</number><credits>123456</credits><
 Bill","prorated":0,"start_date":"2010-08-01","end_date":"2010-08-31","username":"user4@example.com","package":"Example
 Package","additional_charges":0,"final_amount":1007.95}
 {% endcodeblock %}
-

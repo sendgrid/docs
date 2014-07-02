@@ -60,7 +60,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -81,7 +80,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 {% endcodeblock %}
 
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
@@ -97,7 +95,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 {% codeblock lang:json %}
 [
@@ -115,7 +112,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   }
 ]
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -174,7 +170,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -184,9 +179,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -196,7 +189,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="delete-json">
@@ -214,23 +206,19 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

@@ -49,7 +49,6 @@ Note that you can use *either* the days parameter *or* the start_date and en
    </tbody>
 </table>
 
-
 {% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 [
@@ -141,7 +140,6 @@ Retrieve all-time totals for your subuser
    </tbody>
 </table>
 
-
 {% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -197,7 +195,6 @@ Retrieve a list of all the categories used in your subusers account.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true %}
   {% response json %}
@@ -272,7 +269,6 @@ Retrieve statistics broken down by category. If the category does not exist, the
 <div class="tab-pane" id="catstats-xml">
 ### Call
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=categoryA
 {% endcodeblock %}
@@ -281,9 +277,7 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=categoryB
 {% endcodeblock %}
 
-
 ### Response
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -311,11 +305,9 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 
 {% endcodeblock %}
 
-
 </div>
 <div class="tab-pane active" id="catstats-json">
 ### Call
-
 
 {% codeblock %}
 https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=categoryA
@@ -325,9 +317,7 @@ https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_userna
 https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=categoryB
 {% endcodeblock %}
 
-
 ### Response
-
 
 {% codeblock lang:json %}
 [
@@ -351,6 +341,5 @@ https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_userna
   }
 ]
 {% endcodeblock %}
-
 
 </div>

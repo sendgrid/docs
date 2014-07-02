@@ -53,14 +53,12 @@ Retrieve
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <url>http://www.SubUserPostUrlHere.com</url>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="get-json">
@@ -78,13 +76,11 @@ Retrieve
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -142,7 +138,6 @@ Update / Set URL
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -151,7 +146,6 @@ Update / Set URL
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="set-json">
@@ -169,13 +163,11 @@ Update / Set URL
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -227,7 +219,6 @@ Delete
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -236,7 +227,6 @@ Delete
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="delete-json">
@@ -254,13 +244,11 @@ Delete
 
 ### Response
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

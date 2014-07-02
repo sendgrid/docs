@@ -43,7 +43,6 @@ This will return a list of all available timezones.
    </tbody>
 </table>
 
-
 {% apiexample list GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
   {% response json %}
 [
@@ -139,7 +138,6 @@ This API call will return the timezone currently set for your customer subuser.
    </tbody>
 </table>
 
-
 {% apiexample get GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer_subuser@example.com %}
   {% response json %}
 {
@@ -215,7 +213,6 @@ This API call will allow you to set timezone for your customer subuser
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer_subuser@example.com&timezone=America/Los_Angeles %}
   {% response json %}

@@ -46,7 +46,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= %}
   {% response json %}
 [
@@ -126,7 +125,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com %}
   {% response json %}

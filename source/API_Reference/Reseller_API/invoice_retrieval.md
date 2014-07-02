@@ -43,7 +43,6 @@ Return an array of invoice numbers to your account.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/billing.list api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}
 [
@@ -104,7 +103,6 @@ Return an array of invoices.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample invoices POST https://api.sendgrid.com/api/billing.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}

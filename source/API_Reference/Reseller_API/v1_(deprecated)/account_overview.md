@@ -47,7 +47,6 @@ View general account information regarding your customers, including billing cyc
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -68,9 +67,7 @@ View general account information regarding your customers, including billing cyc
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -87,7 +84,6 @@ View general account information regarding your customers, including billing cyc
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -101,7 +97,6 @@ View general account information regarding your customers, including billing cyc
 {% endrequestblock %}
 
 ### Response: Success
-
 
 {% codeblock %}
 "reputation":100,"requests":500000,"package":"Silver
@@ -117,4 +112,3 @@ Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credi
   ]
 }
 {% endcodeblock %}
-

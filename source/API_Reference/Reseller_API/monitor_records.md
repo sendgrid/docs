@@ -67,7 +67,6 @@ Obtain a complete list of all customer.
    </tbody>
 </table>
 
-
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
 {
@@ -147,7 +146,6 @@ Make modifications to an existing Monitor record.
    </tbody>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
   {% response json %}
 {
@@ -209,7 +207,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet %}
   {% response json %}
 {
@@ -264,7 +261,6 @@ List all available monitor records a reseller has.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample list POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis %}
   {% response json %}
@@ -363,7 +359,6 @@ Append a monitor record to a existing record onto a customer.
    </tbody>
 </table>
 
-
 {% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com %}
   {% response json %}
 {
@@ -424,7 +419,6 @@ Detach a customer from a monitor record.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample detach POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com %}
   {% response json %}

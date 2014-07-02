@@ -14,7 +14,6 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page](http://sendgrid.com/developer/reply):
 
-
 {% codeblock %}
 Hostname: email.sendgrid.biz
 {% endcodeblock %}
@@ -60,7 +59,6 @@ To use the Event Webhook, you must first [setup Event Notification]({{%20root_ur
 
 In this scenario, we assume you've set the Event Notification URL to go the endpoint `/event` on your server. Given this scenario the following code will allow you to process events:
 
-
 {% codeblock lang:javascript %}
 
 var express = require('express');
@@ -83,4 +81,3 @@ var server = app.listen(app.get('port'), function() {
   console.log('Listening on port %d', server.address().port);
 });
 {% endcodeblock %}
-

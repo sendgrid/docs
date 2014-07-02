@@ -83,7 +83,6 @@ Obtain a complete list of all customer.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -100,7 +99,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -115,16 +113,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -134,7 +129,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -213,7 +207,6 @@ Make modifications to an existing Monitor record.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -230,7 +223,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -245,16 +237,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -264,7 +253,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -325,7 +313,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -342,7 +329,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -357,16 +343,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -376,7 +359,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -431,7 +413,6 @@ List all available monitor records a reseller has.
 
 ### Response
 
-
 {% codeblock %}
 monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
 {% endcodeblock %}
@@ -451,7 +432,6 @@ monitors><monitor><name>sampleNameA</name><email>example@example.com</email><fre
 {% codeblock %}
 {"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -518,7 +498,6 @@ Append a monitor record to a existing record onto a customer.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -535,7 +514,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -550,16 +528,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -569,7 +544,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -630,7 +604,6 @@ Detach a customer from a monitor record.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -647,7 +620,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -662,16 +634,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -681,4 +650,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

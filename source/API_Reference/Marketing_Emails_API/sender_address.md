@@ -165,7 +165,6 @@ Retrieve information associated with a particular Address.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/identity/get identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -228,7 +227,6 @@ List all Addresses on your account, or check if a particular Address exists.
    </tbody>
 </table>
 
-
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/identity/list identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -273,7 +271,6 @@ Remove an Address from your account.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/identity/delete identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}

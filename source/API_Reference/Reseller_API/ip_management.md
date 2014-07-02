@@ -51,7 +51,6 @@ View all IPs under your account.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
   {% response json %}
 [
@@ -124,7 +123,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample free POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free %}
   {% response json %}
@@ -199,7 +197,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
    </tbody>
 </table>
 
-
 {% apiexample taken POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken %}
   {% response json %}
 [
@@ -272,7 +269,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample available POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available %}
   {% response json %}
@@ -368,7 +364,6 @@ The current breakdown of users who are using your IPs.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample usage POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com %}
   {% response json %}

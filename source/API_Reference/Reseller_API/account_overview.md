@@ -37,7 +37,6 @@ View general account information regarding your customers, including billing cyc
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com %}
   {% response json %}
 {

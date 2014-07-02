@@ -33,7 +33,6 @@ Create a new Category.
    </tbody>
 </table>
 
-
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/category/create api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY %}
   {% response json %}
 {
@@ -82,7 +81,6 @@ Assign a Category to an existing Marketing Email.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/category/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
@@ -133,7 +131,6 @@ Remove specific categories, or all categories from a Marketing Email.\\
    </tbody>
 </table>
 
-
 {% apiexample remove POST https://api.sendgrid.com/api/newsletter/category/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
 {
@@ -176,7 +173,6 @@ List all categories.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}

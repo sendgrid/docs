@@ -60,7 +60,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 ### Response: Success
 
-
 {% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
 {% endcodeblock %}
 <h3>Response: Error</h3>
@@ -76,7 +75,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -91,7 +89,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 ### Response: Success
 
-
 {% codeblock %}
 {"credit":"0","credit_remain":"2000","last_reset":"2011-02-21"}
 {% endcodeblock %}
@@ -105,7 +102,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -157,7 +153,6 @@ Obtain a complete list of all customer subuser.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -174,7 +169,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -189,16 +183,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -208,7 +199,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -290,7 +280,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -307,7 +296,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -322,16 +310,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -341,7 +326,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -397,7 +381,6 @@ Set a subusers credits to a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -414,7 +397,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -429,16 +411,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -448,7 +427,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -506,7 +484,6 @@ Increment a subusers credits by a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -523,7 +500,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -538,16 +514,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -557,7 +530,6 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -615,7 +587,6 @@ Decrement a subusers credits by a specified amount.
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -632,7 +603,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -647,16 +617,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -666,4 +633,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

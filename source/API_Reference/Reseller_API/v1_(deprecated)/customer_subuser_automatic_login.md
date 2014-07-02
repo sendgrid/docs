@@ -57,7 +57,6 @@ In order to login your customer subuser, you need to contact our web API to retr
 
 ### Response
 
-
 {% codeblock %}
 params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params>
 {% endcodeblock %}
@@ -77,7 +76,6 @@ params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;
 {% codeblock %}
 "params":"al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 {% endcodeblock %}
-
 
 * * * * *
 

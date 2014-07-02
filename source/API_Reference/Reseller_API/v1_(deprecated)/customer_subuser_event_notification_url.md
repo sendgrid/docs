@@ -54,7 +54,6 @@ Retrieve
 
 ### Response
 
-
 {% codeblock %}
 url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
@@ -74,7 +73,6 @@ url>http://www.SubUserPostUrlHere.com</url
 {% codeblock %}
 {"url":"http:\/\/www.SubUserPostUrlHere.com"}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -130,7 +128,6 @@ Update / Set URL
 
 ### Response
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -153,7 +150,6 @@ result><message>success</message></result>
   "message": "success"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -203,7 +199,6 @@ Delete
 
 ### Response
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -226,4 +221,3 @@ result><message>success</message></result>
   "message": "success"
 }
 {% endcodeblock %}
-

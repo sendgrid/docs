@@ -66,7 +66,6 @@ In order to login your customer, you need to contact our web API to retrieve the
 
 ### Response
 
-
 {% codeblock %}
 params><params>al_username=username&amp;al_subuser_name=customer@example.com&amp;al_hash=b478ab36ebc306990dd283b1c341898e</params></params
 {% endcodeblock %}
@@ -86,7 +85,6 @@ params><params>al_username=username&amp;al_subuser_name=customer@example.com&amp
 {% codeblock %}
 "params":"al_username=username&amp;al_subuser_name=customer@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 {% endcodeblock %}
-
 
 * * * * *
 

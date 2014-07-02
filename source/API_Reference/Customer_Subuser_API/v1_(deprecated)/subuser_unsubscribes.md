@@ -60,7 +60,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -76,7 +75,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 </unsubscribes>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="get-json">
@@ -94,7 +92,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock lang:json %}
 [
   {
@@ -107,7 +104,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   }
 ]
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -166,7 +162,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -176,9 +171,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -188,7 +181,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="delete-json">
@@ -206,23 +198,19 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -281,7 +269,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -291,9 +278,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -303,7 +288,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="add-json">
@@ -321,23 +305,19 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email already exists"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

@@ -63,7 +63,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 <div class="tab-pane" id="get-xml">
 ### Call
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
@@ -88,11 +87,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=get&amp;date=
@@ -115,7 +112,6 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
   }
 ]
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -177,7 +173,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=delete&amp;email=bounce@example.com
 {% endcodeblock %}
@@ -191,9 +186,7 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -204,11 +197,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 
 {% endcodeblock %}
 
-
 </div>
 <div class="tab-pane" id="delete-json">
 ### Call
-
 
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=delete&amp;email=bounce@example.com
@@ -221,16 +212,13 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

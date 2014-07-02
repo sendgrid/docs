@@ -29,9 +29,7 @@ return array(
 ?>
 {% endcodeblock %}
 
-
 You can use Laravel's Mail class just like you normally would, but all email will be sent through SendGrid!
-
 
 {% codeblock lang:php %}
 <?php
@@ -43,4 +41,3 @@ Mail::send('emails.demo', $data, function($message)
 
 ?>
 {% endcodeblock %}
-

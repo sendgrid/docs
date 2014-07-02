@@ -47,7 +47,6 @@ Returns all of the users who have pending changes within your account.
    </tbody>
 </table>
 
-
 {% apiexample users POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
 [
@@ -148,7 +147,6 @@ Cancel/Revert a pending change.
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com %}
   {% response json %}
 {
@@ -213,7 +211,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
@@ -283,7 +280,6 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
    </tbody>
 </table>
 
-
 {% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -338,7 +334,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
@@ -405,7 +400,6 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
    </tbody>
 </table>
 
-
 {% apiexample sched POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -471,7 +465,6 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
    </tbody>
 </table>
 
-
 {% apiexample scheddown POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -526,7 +519,6 @@ Close or revert an account to a free user at the end of the user's billing cycle
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample schedclose POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}

@@ -42,7 +42,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
   {% response json %}
 {
@@ -98,7 +97,6 @@ Obtain a complete list of all customer subuser.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
   {% response json %}
@@ -182,7 +180,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
    </tbody>
 </table>
 
-
 {% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
   {% response json %}
 {
@@ -240,7 +237,6 @@ Set a subusers credits to a specified amount.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample total POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
   {% response json %}
@@ -300,7 +296,6 @@ Increment a subusers credits by a specified amount.
    </tbody>
 </table>
 
-
 {% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
   {% response json %}
 {
@@ -358,7 +353,6 @@ Decrement a subusers credits by a specified amount.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}
   {% response json %}

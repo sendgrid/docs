@@ -67,7 +67,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 ### Response: Success
 
-
 {% codeblock %}
 <filters><filter><name>twitter</name><title>Twitter</title>
       <description>This plugin allows you to send an email message to twitter</description><activated>0</activated></filter>
@@ -147,7 +146,6 @@ Activate App
 
 ### Response: Success
 
-
 {% codeblock %}
 <result><message>success</message></result>
 {% endcodeblock %}
@@ -170,7 +168,6 @@ Activate App
   "message": "success"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -229,7 +226,6 @@ Deactivate App
 
 ### Response: Success
 
-
 {% codeblock %}
 <result><message>success</message></result>
 {% endcodeblock %}
@@ -253,7 +249,6 @@ Deactivate App
 }
 {% endcodeblock %}
 
-
 * * * * *
 
 {% anchor h2 %}
@@ -276,7 +271,6 @@ These API calls require that settings are passed using POST.
 
 ### Response: Success
 
-
 {% codeblock %}
 <filter><field_name>field_value</field_name>
     ...
@@ -287,11 +281,9 @@ These API calls require that settings are passed using POST.
 result><message>error</message><message>... error messages ...</message></result>
 {% endcodeblock %}
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 {% codeblock %}
 <filter></filter>
@@ -319,11 +311,9 @@ This is returned if that filter has no settings or is not enabled.
 }
 {% endcodeblock %}
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 {% codeblock %}
 "settings":null}
@@ -354,9 +344,7 @@ Get Current Settings
     </filter>
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock %}
 <result><message>error</message><message>... error messages ...</message></result>
@@ -367,9 +355,7 @@ Get Current Settings
 filter></filter
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -379,7 +365,6 @@ filter></filter
   }
 }
 {% endcodeblock %}
-
 
 #### Return - Empty
 

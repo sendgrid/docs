@@ -80,7 +80,6 @@ Testing Your New Configuration
 
 First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
 
-
 {% codeblock %}
 telnet localhost 25
 {% endcodeblock %}
@@ -95,7 +94,6 @@ DATA
 This is a test email for SendGrid operations.
 .
 {% endcodeblock %}
-
 
 The **EHLO** command with your domain inserted tells the mail server which domain it will be sending from. The **MAIL FROM:** command is a standard MIME entry for that inserts the email address of the sender. The **RCPT TO:** command tells the server to which address to send the message. The **DATA** command tells the server that the next incoming information is the body of the message. Finally, after the data is entered, the period (.) tells the server you are done. When you press Enter, it will send the message. It's quite nice to have servers to handle all this mess, isn't it!
 

@@ -55,7 +55,6 @@ navigation:
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -79,7 +78,6 @@ navigation:
 
 {% endcodeblock %}
 
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
@@ -95,7 +93,6 @@ navigation:
 {% endrequestblock %}
 
 ### Response
-
 
 {% codeblock lang:json %}
 [
@@ -116,7 +113,6 @@ navigation:
   }
 ]
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -175,7 +171,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -185,9 +180,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -197,7 +190,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Request
 
@@ -214,23 +206,19 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 <div class="tab-pane active" id="delete-json">
 ### Call
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

@@ -30,7 +30,6 @@ Settings
    </tbody>
 </table>
 
-
 {% warning %}
 Please note, enabling this App will also increase the amount of credits you use, as each email you send will also trigger an accompanying BCC email. 
 {% endwarning %}

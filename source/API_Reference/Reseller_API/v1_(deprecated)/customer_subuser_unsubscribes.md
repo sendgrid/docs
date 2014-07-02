@@ -56,7 +56,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -76,7 +75,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -128,7 +126,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -138,9 +135,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -150,7 +145,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -166,23 +160,19 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -234,7 +224,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -244,9 +233,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -256,7 +243,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -272,20 +258,16 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email already exists"
 }
 {% endcodeblock %}
-

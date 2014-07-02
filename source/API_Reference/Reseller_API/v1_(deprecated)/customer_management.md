@@ -163,7 +163,6 @@ Create a Customer
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -173,9 +172,7 @@ Create a Customer
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -191,7 +188,6 @@ Create a Customer
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -206,16 +202,13 @@ Create a Customer
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -225,7 +218,6 @@ Create a Customer
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -270,7 +262,6 @@ This is the same thing as closing out a customers account at the end of their bi
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -280,9 +271,7 @@ This is the same thing as closing out a customers account at the end of their bi
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -298,7 +287,6 @@ This is the same thing as closing out a customers account at the end of their bi
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -313,16 +301,13 @@ This is the same thing as closing out a customers account at the end of their bi
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -332,7 +317,6 @@ This is the same thing as closing out a customers account at the end of their bi
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -448,7 +432,6 @@ Obtain a complete list of all customers.
 
 ### Response
 
-
 {% codeblock %}  <users><user><username>user1</username><email>example1@example.com</email><active>true</active><first_name>john</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user><user><username>user2</username><email>example2@example.com</email><active>false</active><first_name>jane</first_name><last_name>doe</last_name><address>555 any street</address>
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
@@ -469,7 +452,6 @@ Obtain a complete list of all customers.
 {% codeblock %}
 {"username":"username","email":"example1@example.com","active":"true","first_name":"john","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"},{"username":"username","email":"example2@example.com","active":"false","first_name":"jane","last_name":"doe","address":"555 any street","city":"any city","state":"CA","zip":"91234","country":"US","phone":"555-555-5555","website":"example.com"}
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -521,7 +503,6 @@ Enable a customer so they may start sending out emails again. This call will not
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -531,9 +512,7 @@ Enable a customer so they may start sending out emails again. This call will not
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -543,7 +522,6 @@ Enable a customer so they may start sending out emails again. This call will not
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -559,23 +537,19 @@ Enable a customer so they may start sending out emails again. This call will not
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -627,7 +601,6 @@ This prevents them from sending out emails with SendGrid.
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -637,9 +610,7 @@ This prevents them from sending out emails with SendGrid.
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -649,7 +620,6 @@ This prevents them from sending out emails with SendGrid.
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -665,23 +635,19 @@ This prevents them from sending out emails with SendGrid.
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -733,7 +699,6 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -743,9 +708,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -755,7 +718,6 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -771,23 +733,19 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -839,7 +797,6 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -849,9 +806,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -861,7 +816,6 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -877,23 +831,19 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "User not found"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -1001,7 +951,6 @@ Allows you to update your customers profile information
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -1011,9 +960,7 @@ Allows you to update your customers profile information
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1029,7 +976,6 @@ Allows you to update your customers profile information
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -1044,16 +990,13 @@ Allows you to update your customers profile information
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -1063,7 +1006,6 @@ Allows you to update your customers profile information
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -1127,7 +1069,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -1137,9 +1078,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1155,7 +1094,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -1170,16 +1108,13 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -1189,7 +1124,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -1264,7 +1198,6 @@ Note that your customer account username is used to login to our SMTP server *an
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -1274,9 +1207,7 @@ Note that your customer account username is used to login to our SMTP server *an
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1292,7 +1223,6 @@ Note that your customer account username is used to login to our SMTP server *an
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -1307,16 +1237,13 @@ Note that your customer account username is used to login to our SMTP server *an
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -1326,7 +1253,6 @@ Note that your customer account username is used to login to our SMTP server *an
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -1393,7 +1319,6 @@ This is the contact email we use for your customers. Changes take place immediat
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -1403,9 +1328,7 @@ This is the contact email we use for your customers. Changes take place immediat
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -1421,7 +1344,6 @@ This is the contact email we use for your customers. Changes take place immediat
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -1436,16 +1358,13 @@ This is the contact email we use for your customers. Changes take place immediat
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -1455,4 +1374,3 @@ This is the contact email we use for your customers. Changes take place immediat
   ]
 }
 {% endcodeblock %}
-

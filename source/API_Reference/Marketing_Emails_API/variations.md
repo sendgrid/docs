@@ -75,7 +75,6 @@ Create a new Variation.
    </tbody>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/variations/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body %}
   {% response json %}
 {
@@ -154,7 +153,6 @@ Edit an existing Variation.
    </tbody>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/variations/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body %}
   {% response json %}
 {
@@ -202,7 +200,6 @@ Retrieve the contents of an existing Variation.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/variations/get api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name %}
   {% response json %}
@@ -263,7 +260,6 @@ Cancels a current Variation send that is in progress.
    </tbody>
 </table>
 
-
 {% apiexample cancel POST https://api.sendgrid.com/api/newsletter/variations/cancel api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft %}
   {% response json %}
 {
@@ -311,7 +307,6 @@ Delete the contents of an existing Variation.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/variations/delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete %}
   {% response json %}
@@ -361,7 +356,6 @@ Retrieve a list of all Variations attached to a Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/variations/list api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find %}
   {% response json %}
 {
@@ -409,7 +403,6 @@ Select the Variation you would like to send.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample pickwinner POST https://api.sendgrid.com/api/newsletter/variations/pickwinner api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins %}
   {% response json %}
@@ -489,7 +482,6 @@ Schedule a send time and percentage for your variations.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample schedule POST https://api.sendgrid.com/api/newsletter/variations/schedule api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50 %}
   {% response json %}

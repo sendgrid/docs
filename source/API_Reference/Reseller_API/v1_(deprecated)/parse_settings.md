@@ -63,16 +63,13 @@ Get Current Settings
 
 ### Response: Success
 
-
 {% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
 <h3>Response: Empty</h3>
 {% codeblock %}  <parse></parse
 {% endcodeblock %}
 
-
 ### Response: Empty
-
 
 {% codeblock %}
 "parse":[{"hostname":"www.example.com","url":"www.mydomain.com\/parse.php","spam_check":1}]
@@ -82,9 +79,7 @@ Get Current Settings
 "parse":[]
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -94,7 +89,6 @@ Get Current Settings
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -110,7 +104,6 @@ Get Current Settings
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -125,16 +118,13 @@ Get Current Settings
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -205,7 +195,6 @@ Edit Entry
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "error",
@@ -215,9 +204,7 @@ Edit Entry
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -227,7 +214,6 @@ Edit Entry
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -243,7 +229,6 @@ Edit Entry
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -258,16 +243,13 @@ Edit Entry
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -332,7 +314,6 @@ Delete Entry
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "error",
@@ -342,9 +323,7 @@ Delete Entry
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -354,7 +333,6 @@ Delete Entry
 </result>
 
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -370,7 +348,6 @@ Delete Entry
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -385,13 +362,10 @@ Delete Entry
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
-

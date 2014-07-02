@@ -169,22 +169,17 @@ Send email.
 
 Send to one email recipient
 
-
 {% codeblock lang:bash %}
 $ curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
-
 Send to multiple email recipients
-
 
 {% codeblock lang:bash %}
 $ curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
-
 Send a test with attachment
-
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
@@ -194,11 +189,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F files[attachment.gz]=@f.php.gz https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
-
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
-
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
@@ -208,11 +201,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F files[attachment.pdf]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
-
 ### Raw HTTP Dump
 
 The following is a dump of the HTTP data sent to our server to generate an email via our web API.
-
 
 {% codeblock %}
 POST /api/mail.send.json HTTP/1.1

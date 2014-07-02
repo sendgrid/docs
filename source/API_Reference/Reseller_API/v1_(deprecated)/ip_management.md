@@ -67,7 +67,6 @@ View all IPs under your account.
 
 ### Response
 
-
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -87,9 +86,7 @@ View all IPs under your account.
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -99,7 +96,6 @@ View all IPs under your account.
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -152,7 +148,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 
 ### Response
 
-
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -172,9 +167,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -184,7 +177,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -237,7 +229,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 
 ### Response
 
-
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -257,9 +248,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -269,7 +258,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -322,7 +310,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 
 ### Response
 
-
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -342,9 +329,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 "255.255.255.0","255.255.254.0","255.255.253.0","255.255.252.0"
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -354,7 +339,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -429,7 +413,6 @@ The current breakdown of users who are using your IPs.
 
 ### Response
 
-
 {% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
@@ -449,9 +432,7 @@ The current breakdown of users who are using your IPs.
 {"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -461,4 +442,3 @@ The current breakdown of users who are using your IPs.
   ]
 }
 {% endcodeblock %}
-

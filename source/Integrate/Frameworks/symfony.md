@@ -178,4 +178,3 @@ Thank you for registering. Please go to <a href="http://domain.com">here</a> to 
 myEmail::sendEmail(array('text'=>'mail/registrationTEXT', 'html'=>'mail/registrationHTML'), array('name'=>'Recipient Name'), 'youremail@domain.com', 'recipient@example.com', 'Registration Information');
 ?>
 {% endcodeblock %}
-

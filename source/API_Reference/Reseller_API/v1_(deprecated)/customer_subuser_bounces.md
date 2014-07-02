@@ -62,7 +62,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-
 {% codeblock %}
 bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces
 {% endcodeblock %}
@@ -83,7 +82,6 @@ bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>ho
 {"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -141,7 +139,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -149,7 +146,6 @@ result><message>success</message></result>
 {% codeblock %}
 result><message>Email does not exist</message></result>
 {% endcodeblock %}
-
 
 ### JSON Call
 
@@ -165,20 +161,16 @@ result><message>Email does not exist</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-

@@ -90,4 +90,3 @@ $this->Email->sendAs = 'both';
 $this->Email->send();
 ?>
 {% endcodeblock %}
-

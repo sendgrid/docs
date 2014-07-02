@@ -48,7 +48,6 @@ navigation:
 
 ### Response
 
-
 {% codeblock %}
 usage><number>2010010001</number><invoices><invoice><number>201001000100</number><credits>123456</credits><date_invoiced>2010-09-01 00:00:00</date_invoiced><status>Unpaid</status><amount>1001</amount><overage>6.95</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user4@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>1007.95</final_amount></invoice><invoice><number>201001000200</number><credits>1333</credits><date_invoiced>2010-09-05 00:00:00</date_invoiced><status>Unpaid</status><amount>13.95</amount><overage>0</overage><type>Recurring Bill</type><prorated>0</prorated><start_date>2010-08-01</start_date><end_date>2010-08-31</end_date><username>user5@example.com</username><package>Example Package</package><additional_charges>0</additional_charges><final_amount>13.95</final_amount></invoice></invoices></usage
 {% endcodeblock %}
@@ -65,7 +64,6 @@ usage><number>2010010001</number><invoices><invoice><number>201001000100</number
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -79,7 +77,6 @@ usage><number>2010010001</number><invoices><invoice><number>201001000100</number
 {% endrequestblock %}
 
 ### Response
-
 
 {% codeblock %}
 "number":"2010010001","invoices":
@@ -101,4 +98,3 @@ Package","additional_charges":0,"final_amount":13.95}]
   ]
 }
 {% endcodeblock %}
-

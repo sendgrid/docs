@@ -164,7 +164,6 @@ Retrieve all-time totals for your customer
    </tbody>
 </table>
 
-
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -233,7 +232,6 @@ Retrieve a list of all the categories used in your customers account.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
   {% response json %}
@@ -322,7 +320,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}

@@ -61,7 +61,6 @@ Settings
    </tbody>
 </table>
 
-
 {% anchor h2 %}
 Example 
 {% endanchor %}

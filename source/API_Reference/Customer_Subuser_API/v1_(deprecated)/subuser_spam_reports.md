@@ -59,7 +59,6 @@ Retrieve Spam Reports
 
 ### Response
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -75,7 +74,6 @@ Retrieve Spam Reports
 </spamreports>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="get-json">
@@ -93,7 +91,6 @@ Retrieve Spam Reports
 
 ### Response
 
-
 {% codeblock lang:json %}
 [
   {
@@ -106,7 +103,6 @@ Retrieve Spam Reports
   }
 ]
 {% endcodeblock %}
-
 
 </div>
 </div>
@@ -165,7 +161,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 ### Response: Success
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -175,9 +170,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -187,7 +180,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 </result>
 
 {% endcodeblock %}
-
 
 </div>
 <div class="tab-pane active" id="delete-json">
@@ -205,23 +197,19 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
 
 </div>
 </div>

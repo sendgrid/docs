@@ -66,7 +66,6 @@ Parameters:
    </tbody>
 </table>
 
-
 {% anchor h2 %}
 Example POST: 
 {% endanchor %}

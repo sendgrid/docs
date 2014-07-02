@@ -51,7 +51,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com %}
   {% response json %}
 {
@@ -123,7 +122,6 @@ Activate App
    </tbody>
 </table>
 
-
 {% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com %}
   {% response json %}
 {
@@ -182,7 +180,6 @@ Deactivate App
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com %}
   {% response json %}

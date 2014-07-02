@@ -55,7 +55,6 @@ Authenticate a customer on your website before displaying their account informat
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -72,7 +71,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -87,16 +85,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -106,4 +101,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

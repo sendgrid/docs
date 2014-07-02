@@ -58,7 +58,6 @@ List
 
 ### Response
 
-
 {% codeblock %}
 whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
 {% endcodeblock %}
@@ -78,7 +77,6 @@ whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain
 {% codeblock %}
 [{"mail_domain":"email.sendgrid.com","url_domain":"email.sendgrid.com"},{"mail_domain":"email.example.com","url_domain":"email.example.com"}]
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -138,7 +136,6 @@ Append
 
 ### Response: Success
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -155,7 +152,6 @@ result><message>success</message></result>
 
 {% endcodeblock %}
 
-
 ### JSON Call
 
 {% requestblock %}
@@ -170,16 +166,13 @@ result><message>success</message></result>
 
 ### Response: Success
 
-
 {% codeblock lang:json %}
 {
   "message": "success"
 }
 {% endcodeblock %}
 
-
 ### Response: Error
-
 
 {% codeblock lang:json %}
 {
@@ -189,4 +182,3 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-

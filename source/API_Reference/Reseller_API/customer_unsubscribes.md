@@ -55,7 +55,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date= %}
   {% response json %}
 [
@@ -128,7 +127,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com %}
   {% response json %}
 {
@@ -186,7 +184,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample add POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com %}
   {% response json %}

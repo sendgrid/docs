@@ -44,7 +44,6 @@ Retrieve Invalid Emails
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
@@ -130,7 +129,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com %}
   {% response json %}

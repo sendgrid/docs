@@ -52,7 +52,6 @@ Schedule a delivery time for an existing Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/schedule/add name=test&at=2013-12-20T11:55:00-05:00&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -96,7 +95,6 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/schedule/get name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -139,7 +137,6 @@ Cancel a scheduled send for a Marketing Email.
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/schedule/delete name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}

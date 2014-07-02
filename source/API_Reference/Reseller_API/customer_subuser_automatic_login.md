@@ -39,7 +39,6 @@ In order to login your customer subuser, you need to contact our web API to retr
    </tbody>
 </table>
 
-
 {% apiexample call POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com %}
   {% response json %}
 {

@@ -49,7 +49,6 @@ Notes: This API call allows SendGrid resellers to add a new set of credentials t
 
 ### XML API Request
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=add&amp;credential_name=reseller_customer_credential&amp;credential_password=reseller_customer_password
 {% endcodeblock %}
@@ -63,9 +62,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -86,9 +83,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=add&amp;credential_name=reseller_customer_credential&amp;credential_password=reseller_customer_password
 {% endcodeblock %}
 
-
 #### Return - Success
-
 
 {% codeblock lang:json %}
 {
@@ -96,9 +91,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 }
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:json %}
 {
@@ -108,7 +101,6 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
   ]
 }
 {% endcodeblock %}
-
 
 * * * * *
 
@@ -155,7 +147,6 @@ Notes: This API call allows SendGrid resellers to edit an already existing crede
 
 ### XML API Request
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=edit&amp;credential_name=reseller_customer_credential&amp;new_credential_password=reseller_customer_password
 {% endcodeblock %}
@@ -169,9 +160,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -187,9 +176,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
-
 ### JSON API Request
-
 
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=edit&amp;credential_name=reseller_customer_credential&amp;new_credential_password=reseller_customer_password
@@ -203,9 +190,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 }
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:json %}
 {
@@ -215,7 +200,6 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
   ]
 }
 {% endcodeblock %}
-
 
 </h4>
 
@@ -256,7 +240,6 @@ Notes: This API call allows SendGrid resellers to delete an existing credential 
 
 ### XML API Request
 
-
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=delete&amp;credential_name=reseller_customer_credential
 {% endcodeblock %}
@@ -270,9 +253,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -288,9 +269,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.xml?api_user=your_sendgrid_us
 
 {% endcodeblock %}
 
-
 ### JSON API Request
-
 
 {% codeblock %}
 https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=reseller_customer&amp;task=delete&amp;credential_name=reseller_customer_credential
@@ -304,9 +283,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 }
 {% endcodeblock %}
 
-
 #### Return - Error
-
 
 {% codeblock lang:json %}
 {
@@ -316,4 +293,3 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
   ]
 }
 {% endcodeblock %}
-

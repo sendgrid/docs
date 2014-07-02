@@ -12,7 +12,6 @@ Versions of Exim prior to the current major release are considered obsolete. If 
 
 The following configuration file, which can be found at **/etc/exim4/update-exim4.conf.conf**, was pulled from Ubuntu Server 10.4 and is for example purposes only:
 
-
 {% codeblock lang:bash %}
 dc_eximconfig_configtype='smarthost'
 dc_other_hostnames=''
@@ -28,7 +27,6 @@ dc_hide_mailname='true'
 dc_mailname_in_oh='true' 
 {% endcodeblock %}
 
-
 Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
   
@@ -41,17 +39,13 @@ If this file does not exist, you will need to create it:
 MAIN_TLS_ENABLE = 1
 {% endcodeblock %}
 
-
 Enter credentials that will allow Exim to access SendGrid in **/etc/exim4/passwd.client**:
-
 
 {% codeblock lang:bash %}
 *:sendgridusername:sendgridpassword
 {% endcodeblock %}
 
-
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
-
 
 {% codeblock lang:bash %}
 $ /etc/init.d/exim4 restart
@@ -63,7 +57,6 @@ cPanel
 {% endanchor %}
 
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following:
-
 
 {% codeblock lang:bash %}
 begin authenticators
@@ -81,7 +74,6 @@ Only include "begin authenticators" if it's not already in the configuration.
 
 Add a route in the **Router Configuration** Box:
 
-
 {% codeblock lang:bash %}
 send_via_sendgrid:
   driver = manualroute
@@ -92,9 +84,7 @@ send_via_sendgrid:
   no_more
 {% endcodeblock %}
 
-
 Add a transport to the **Transport Configuration** Box:
-
 
 {% codeblock lang:bash %}
 sendgrid_smtp:
@@ -104,11 +94,8 @@ sendgrid_smtp:
   hosts_require_tls = smtp.sendgrid.net
 {% endcodeblock %}
 
-
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
-
 
 {% codeblock lang:bash %}
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
-
