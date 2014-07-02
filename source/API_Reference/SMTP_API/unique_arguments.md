@@ -11,8 +11,6 @@ The SMTP API JSON string allows you to attach an unlimited number of unique argu
 These arguments can be added using a JSON string like this:
 
 
-
-
 {% codeblock lang:json %}
 {
   "unique_args": {
@@ -23,11 +21,7 @@ These arguments can be added using a JSON string like this:
 {% endcodeblock %}
 
 
-
-
 These arguments can then be seen in posts from the SendGrid Event Webhook. The contents of one of these POST would look something like this:
-
-
 
 
 {% codeblock lang:json %}
@@ -45,13 +39,9 @@ These arguments can then be seen in posts from the SendGrid Event Webhook. The c
 {% endcodeblock %}
 
 
-
-
 Unique Arguments will also be shown in the Email Activity tab of your account.
 
 To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). An example of this would look like:
-
-
 
 
 {% codeblock lang:json %}
@@ -67,6 +57,4 @@ To apply different unique arguments to individual emails, you may use [substitut
   }
 }
 {% endcodeblock %}
-
-
 

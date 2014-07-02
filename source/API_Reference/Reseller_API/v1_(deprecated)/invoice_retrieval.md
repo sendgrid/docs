@@ -12,7 +12,6 @@ Retrieve your invoice information.
 
 * * * * *
 
-
 {% anchor h2 %}
 Retrieve Invoice Numbers 
 {% endanchor %}
@@ -46,9 +45,7 @@ Return an array of invoice numbers to your account.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -61,7 +58,6 @@ Return an array of invoice numbers to your account.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -85,9 +81,7 @@ invoices><invoice><number>2010010001</number></invoice><invoice><number>20100100
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Invoices 
@@ -122,9 +116,7 @@ Return an array of invoices.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -137,7 +129,6 @@ Return an array of invoices.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -159,5 +150,4 @@ invoices><invoice><number>2010010001</number><package>Basic Package</package><cr
 {% codeblock %}
 {"number":"2010010001","package":"Basic Package","credits":10000000,"date_invoiced":"2010-01-01 00:00:00","status":"Paid","amount":100,"additional_charges":0,"overage":10,"type":"Recurring Bill","prorated":0,"start_date":"2009-12-01","end_date":"2009-12-31","final_amount":110}
 {% endcodeblock %}
-
 

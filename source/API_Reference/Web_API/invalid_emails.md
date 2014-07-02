@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Invalid Emails list.
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -38,7 +37,7 @@ Retrieve a list of invalid emails with addresses and response codes, optionally 
     "email": "brandon"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -60,7 +59,6 @@ Retrieve a list of invalid emails with addresses and response codes, optionally 
 
 * * * * *
 
-
 {% anchor h2 %}
 count 
 {% endanchor %}
@@ -76,7 +74,7 @@ Retrieve the count of invalid emails.
 {
   "count": 2
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -89,7 +87,6 @@ Retrieve the count of invalid emails.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -105,7 +102,7 @@ Delete an address from the Invalid Email list.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

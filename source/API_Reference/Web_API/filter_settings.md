@@ -10,13 +10,11 @@ For a more detailed description of each of the Apps below, please visit the [App
 
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)
 
-
 {% anchor h2 %}
 Address Whitelist 
 {% endanchor %}
 
 *API App Name - `addresswhitelist`*
-
 
 {% info %}
 When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call. 
@@ -30,7 +28,7 @@ When using this call, you must define all emails & domains here. Using this call
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -42,7 +40,6 @@ When using this call, you must define all emails & domains here. Using this call
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 BCC "Blind Carbon Copy" 
@@ -59,7 +56,7 @@ BCC "Blind Carbon Copy"
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -71,7 +68,6 @@ BCC "Blind Carbon Copy"
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Click Tracking 
@@ -88,7 +84,7 @@ Click Tracking
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -100,7 +96,6 @@ Click Tracking
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 DKIM 
@@ -118,7 +113,7 @@ DKIM
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -130,7 +125,6 @@ DKIM
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Domain Keys 
@@ -148,7 +142,7 @@ Domain Keys
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -161,13 +155,11 @@ Domain Keys
 
 * * * * *
 
-
 {% anchor h2 -Email-Templates %}
 Legacy Email Templates 
 {% endanchor %}
 
 *API App Name - `template`*
-
 
 {% warning %}
 This app is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Template_Engine_API/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Template_Engine_API/index.html). 
@@ -181,7 +173,7 @@ This app is our original Email Template app, today we have a more full featured 
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -194,13 +186,11 @@ This app is our original Email Template app, today we have a more full featured 
 
 * * * * *
 
-
 {% anchor h2 %}
 Event Notification 
 {% endanchor %}
 
 *API App Name - `eventnotify`*
-
 
 {% info %}
 All fields except version are required for each call. 
@@ -292,13 +282,12 @@ All fields except version are required for each call.
 </table>
 
 
-
 {% apiexample eventnotify POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -310,7 +299,6 @@ All fields except version are required for each call.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Footer 
@@ -350,13 +338,12 @@ Footer
 </table>
 
 
-
 {% apiexample footer POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -368,7 +355,6 @@ Footer
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Google Analytics 
@@ -426,13 +412,12 @@ Google Analytics
 </table>
 
 
-
 {% apiexample googleanalytics POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -445,7 +430,6 @@ Google Analytics
 
 * * * * *
 
-
 {% anchor h2 %}
 Gravatar 
 {% endanchor %}
@@ -454,7 +438,6 @@ Gravatar
 
 * * * * *
 
-
 {% anchor h2 %}
 Open Tracking 
 {% endanchor %}
@@ -462,7 +445,6 @@ Open Tracking
 *API App Name - `opentrack`*
 
 * * * * *
-
 
 {% anchor h2 %}
 SPAM Filter Checker 
@@ -502,13 +484,12 @@ SPAM Filter Checker
 </table>
 
 
-
 {% apiexample spamcheck POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -520,7 +501,6 @@ SPAM Filter Checker
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Subscription Tracking 
@@ -578,13 +558,12 @@ Subscription Tracking
 </table>
 
 
-
 {% apiexample subscriptiontrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -596,7 +575,6 @@ Subscription Tracking
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 SendGrid for New Relic 
@@ -631,13 +609,12 @@ SendGrid for New Relic
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -647,7 +624,6 @@ SendGrid for New Relic
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Sendwithus 
@@ -677,13 +653,12 @@ Sendwithus
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=sendwithus&license_key=1234567 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

@@ -11,7 +11,6 @@ navigation:
 
 This endpoint allows you to add, view, or remove scheduled delivery events for Marketing Emails.
 
-
 {% info %}
 If you wish to send a marketing email immediately, leave off the **at** and **after** parameters. 
 {% endinfo %}
@@ -54,13 +53,12 @@ Schedule a delivery time for an existing Marketing Email.
 </table>
 
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/schedule/add name=test&at=2013-12-20T11:55:00-05:00&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -72,7 +70,6 @@ Schedule a delivery time for an existing Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -100,13 +97,12 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/schedule/get name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "date": "2012-09-05 21:22:02"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -118,7 +114,6 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -146,13 +141,12 @@ Cancel a scheduled send for a Marketing Email.
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/schedule/delete name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

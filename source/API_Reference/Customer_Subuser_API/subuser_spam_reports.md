@@ -38,7 +38,6 @@ Retrieve Spam Reports
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= %}
   {% response json %}
 [
@@ -51,7 +50,7 @@ Retrieve Spam Reports
     "created": "2009-06-01 19:41:39"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -70,7 +69,6 @@ Retrieve Spam Reports
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Spam Reports 
@@ -105,13 +103,12 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

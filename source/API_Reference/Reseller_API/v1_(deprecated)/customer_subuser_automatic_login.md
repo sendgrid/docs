@@ -12,7 +12,6 @@ Allow customer subusers to manage their account from your website using an ifram
 
 * * * * *
 
-
 {% anchor h2 %}
 Initial API Call 
 {% endanchor %}
@@ -44,9 +43,7 @@ In order to login your customer subuser, you need to contact our web API to retr
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -59,7 +56,6 @@ In order to login your customer subuser, you need to contact our web API to retr
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -83,9 +79,7 @@ params><params>al_username=username&amp;al_subuser_name=example@example.com&amp;
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 iFrame Usage 

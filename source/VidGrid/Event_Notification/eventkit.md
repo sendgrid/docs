@@ -15,4 +15,3 @@ navigation:
 
 The EventKit is an open source app that our Support Incubator team built. This app allows you to easily setup our Event API on your server and provides a easy to use reporting system. Ron goes into detail on how to setup the [EventKit](http://sendgrid.github.io/eventkit/setup.html) on your server and demonstrates its basic and useful functionality.
 
-

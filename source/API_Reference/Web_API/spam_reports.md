@@ -8,7 +8,6 @@ navigation:
 
 Retrieve and delete entries in the Spam Reports list.
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -35,7 +34,7 @@ get
     "created": "2009-12-08 07:43:01"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -57,7 +56,6 @@ get
 
 * * * * *
 
-
 {% anchor h2 %}
 count 
 {% endanchor %}
@@ -73,7 +71,7 @@ Retrieve the count of Spam Reports.
 {
   "count": 2
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -86,7 +84,6 @@ Retrieve the count of Spam Reports.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -105,7 +102,7 @@ Delete an address from the Spam Reports list.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

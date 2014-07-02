@@ -14,7 +14,6 @@ In less than five minutes your stats should be sent to your New Relic Dashboard.
 
 * * * * *
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -32,7 +31,6 @@ This can be found by accessing the SendGrid's Plugin page on New Relic or from t
 
 In the New Relic app settings you can enable the statistics for your subusers.
 
-
 {% warning %}
 You will receive statistics only for 100 subusers 
 {% endwarning %}
@@ -40,7 +38,6 @@ You will receive statistics only for 100 subusers
 After you have entered your settings and saved them, enable the app.
 
 * * * * *
-
 
 {% anchor h2 %}
 New Relic Dashboard 

@@ -10,7 +10,6 @@ Retrieve your invoice information.
 
 * * * * *
 
-
 {% anchor h2 %}
 Retrieve Invoice Numbers 
 {% endanchor %}
@@ -45,7 +44,6 @@ Return an array of invoice numbers to your account.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/api/billing.list api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}
 [
@@ -56,7 +54,7 @@ Return an array of invoice numbers to your account.
     "number": "2010010002"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -73,7 +71,6 @@ Return an array of invoice numbers to your account.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Invoices 
@@ -109,7 +106,6 @@ Return an array of invoices.
 </table>
 
 
-
 {% apiexample invoices POST https://api.sendgrid.com/api/billing.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}
 {
@@ -127,7 +123,7 @@ Return an array of invoices.
   "end_date": "2009-12-31",
   "final_amount": 110
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

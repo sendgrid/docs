@@ -179,4 +179,3 @@ myEmail::sendEmail(array('text'=>'mail/registrationTEXT', 'html'=>'mail/registra
 ?>
 {% endcodeblock %}
 
-

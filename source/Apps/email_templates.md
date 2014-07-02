@@ -19,7 +19,6 @@ Settings
 
 Use the embedded, full-featured HTML editor to create a template that your emails will be wrapped in. Be sure to include a tag to place the content of your email.
 
-
 {% warning %}
 Everything outside of the HTML template will be discarded. Keep this in mind if you are trying to add CSS or other content not contained in the template. 
 {% endwarning %}
@@ -29,4 +28,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#template) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Email-Templates) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

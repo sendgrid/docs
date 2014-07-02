@@ -35,7 +35,6 @@ Retrieve invoices/usages from customers.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag %}
   {% response json %}
 {
@@ -75,7 +74,7 @@ Retrieve invoices/usages from customers.
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

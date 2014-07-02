@@ -11,7 +11,6 @@ Receive a sample of an outgoing message by a specific customer subuser. The firs
 
 * * * * *
 
-
 {% anchor h2 %}
 Create Monitor Record 
 {% endanchor %}
@@ -54,7 +53,6 @@ Obtain a complete list of all customer subuser.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -68,7 +66,6 @@ Obtain a complete list of all customer subuser.
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -79,10 +76,7 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -100,10 +94,7 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -118,8 +109,6 @@ Obtain a complete list of all customer subuser.
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -127,11 +116,7 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -144,10 +129,7 @@ Obtain a complete list of all customer subuser.
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Edit Monitor Record 
@@ -197,7 +179,6 @@ Make modifications to an existing Monitor record.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -211,7 +192,6 @@ Make modifications to an existing Monitor record.
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -222,10 +202,7 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -243,10 +220,7 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -261,8 +235,6 @@ Make modifications to an existing Monitor record.
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -270,11 +242,7 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -287,10 +255,7 @@ Make modifications to an existing Monitor record.
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Monitor Record 
@@ -322,7 +287,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -336,7 +300,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -347,10 +310,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -368,10 +328,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -386,8 +343,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -395,11 +350,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -412,10 +363,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 List All Monitor Records 
@@ -441,7 +389,6 @@ List all available monitor records a reseller has.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -453,7 +400,6 @@ List all available monitor records a reseller has.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
@@ -476,9 +422,7 @@ List all available monitor records a reseller has.
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Append A Customer Subuser To A Monitor Record 
@@ -516,7 +460,6 @@ Append a monitor record to a existing record onto a customer subuser.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -530,7 +473,6 @@ Append a monitor record to a existing record onto a customer subuser.
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -541,10 +483,7 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -562,10 +501,7 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -580,8 +516,6 @@ Append a monitor record to a existing record onto a customer subuser.
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -589,11 +523,7 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -606,10 +536,7 @@ Append a monitor record to a existing record onto a customer subuser.
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Detach A Monitor Record From A Customer Subuser 
@@ -641,7 +568,6 @@ Detach a customer subuser from a monitor record.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -655,7 +581,6 @@ Detach a customer subuser from a monitor record.
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -666,10 +591,7 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -687,10 +609,7 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -705,8 +624,6 @@ Detach a customer subuser from a monitor record.
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -714,11 +631,7 @@ Detach a customer subuser from a monitor record.
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -729,6 +642,4 @@ Detach a customer subuser from a monitor record.
   ]
 }
 {% endcodeblock %}
-
-
 

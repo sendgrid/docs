@@ -15,7 +15,6 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 Given this scenario, the following are the parameters you would set at the [Parse API settings page](http://sendgrid.com/developer/reply):
 
 
-
 {% codeblock %}
 Hostname: email.sendgrid.biz
 {% endcodeblock %}
@@ -130,9 +129,7 @@ public class ParseEmailObjectFilter : ActionFilterAttribute
       Spf = data["SPF"]
     };
 
-
     actionContext.ActionArguments["email"] = email;
-
 
     base.OnActionExecuting(actionContext);
   }
@@ -151,7 +148,6 @@ public class ParseEmailObjectFilter : ActionFilterAttribute
 </system.web>
 
 {% endcodeblock %}
-
 
  Add the following attributes to your method in the ApiController: 
 
@@ -181,5 +177,4 @@ public ActionResult Post()
   return new HttpStatusCodeResult(HttpStatusCode.OK);
 }
 {% endcodeblock %}
-
 

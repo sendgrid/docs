@@ -8,13 +8,11 @@ navigation:
 
 These examples require the [JSON Ruby Gem](http://json.rubyforge.org/).
 
-
 {% anchor h2 %}
 SmtpApiHeader.rb 
 {% endanchor %}
 
 This header is required for each example.
-
 
 
 {% codeblock lang:ruby %}
@@ -88,7 +86,6 @@ end
 Example Ruby Usage 
 {% endanchor %}
 
-
 {% codeblock lang:ruby %}
 require './SmtpApiHeader.rb'
 require 'mail'
@@ -126,5 +123,4 @@ mail = Mail.deliver do
 end
 
 {% endcodeblock %}
-
 

@@ -55,9 +55,7 @@ Retrieve Invalid Emails
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -70,7 +68,6 @@ Retrieve Invalid Emails
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -94,9 +91,7 @@ invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Invalid Emails 
@@ -147,9 +142,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -164,7 +157,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 ### Response: Success
 
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -174,9 +166,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -191,8 +181,6 @@ result><message>Email does not exist</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -200,11 +188,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -212,6 +196,4 @@ result><message>Email does not exist</message></result>
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
-
 

@@ -33,13 +33,12 @@ In order to login your subuser, you need to contact our web API to retrieve the 
    </tbody>
 </table>
 
-
 {% apiexample auto POST https://api.sendgrid.com/apiv2/customer.geturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
   "params": "al_username=username&al_subuser_name=example@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -51,7 +50,6 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 iFrame Usage 

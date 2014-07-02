@@ -48,7 +48,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 <div class="tab-pane" id="get-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.xml
@@ -60,7 +59,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -84,12 +82,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -102,8 +97,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
-
 
 
 {% codeblock lang:json %}
@@ -124,13 +117,10 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Bounces 
@@ -172,7 +162,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.bounces.xml
@@ -186,7 +175,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -197,10 +185,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -213,12 +198,9 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -233,8 +215,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -242,11 +222,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -256,8 +232,5 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
-

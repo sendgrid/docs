@@ -10,7 +10,6 @@ Retrieve pending update information for users that have scheduled upgrades to th
 
 * * * * *
 
-
 {% anchor h2 %}
 List Pending Changes 
 {% endanchor %}
@@ -49,7 +48,6 @@ Returns all of the users who have pending changes within your account.
 </table>
 
 
-
 {% apiexample users POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
 [
@@ -81,7 +79,7 @@ Returns all of the users who have pending changes within your account.
     "date": "2010-10-07"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -118,7 +116,6 @@ Returns all of the users who have pending changes within your account.
 
 * * * * *
 
-
 {% anchor h2 %}
 Delete Pending Changes 
 {% endanchor %}
@@ -152,13 +149,12 @@ Cancel/Revert a pending change.
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -170,7 +166,6 @@ Cancel/Revert a pending change.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Upgrade 
@@ -220,7 +215,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 </table>
 
 
-
 {% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -229,7 +223,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
     "...error messages..."
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -241,7 +235,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Downgrade 
@@ -291,13 +284,12 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 </table>
 
 
-
 {% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -309,7 +301,6 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Close 
@@ -349,13 +340,12 @@ Close or revert an account to a free user immediately. An invoice is generated f
 </table>
 
 
-
 {% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -367,7 +357,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Upgrade 
@@ -417,13 +406,12 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 </table>
 
 
-
 {% apiexample sched POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -435,7 +423,6 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Downgrade 
@@ -485,13 +472,12 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 </table>
 
 
-
 {% apiexample scheddown POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -503,7 +489,6 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Close 
@@ -543,13 +528,12 @@ Close or revert an account to a free user at the end of the user's billing cycle
 </table>
 
 
-
 {% apiexample schedclose POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

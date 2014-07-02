@@ -108,4 +108,3 @@ environment variables. See this tutorial on <a
   href='http://railsapps.github.io/rails-environment-variables.html'>environment
   variables in Rails</a>.
 {% endwarning %}
-

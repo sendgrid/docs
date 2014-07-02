@@ -14,4 +14,3 @@ navigation:
 ### Marketing Emails Overview
 
 Anisha takes a few minutes to provide a quick overview of the Marketing Email four step setup process. This is a great starting point providing the fundamentals that are covered in more detail in the other tech tips.
-

@@ -38,7 +38,6 @@ Retrieve Invalid Emails
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
@@ -58,7 +57,7 @@ Retrieve Invalid Emails
     "created": "2009-06-01 19:41:39"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -84,7 +83,6 @@ Retrieve Invalid Emails
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Invalid Emails 
@@ -119,13 +117,12 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

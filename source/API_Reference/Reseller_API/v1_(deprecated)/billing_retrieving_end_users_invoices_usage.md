@@ -34,9 +34,7 @@ navigation:
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -49,7 +47,6 @@ navigation:
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -69,10 +66,7 @@ usage><number>2010010001</number><invoices><invoice><number>201001000100</number
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -85,7 +79,6 @@ usage><number>2010010001</number><invoices><invoice><number>201001000100</number
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -108,6 +101,4 @@ Package","additional_charges":0,"final_amount":13.95}]
   ]
 }
 {% endcodeblock %}
-
-
 

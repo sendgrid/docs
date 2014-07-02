@@ -14,4 +14,3 @@ navigation:
 ### Configuring the Event Notification App
 
 The Event Notification App allows you to monitor all activity through your SendGrid account in real-time. Tom goes into detail on how to set this up using the Event Notification App in your account and adding the necessary files to your host server.
-

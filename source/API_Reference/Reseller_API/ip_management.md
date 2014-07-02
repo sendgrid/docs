@@ -52,7 +52,6 @@ View all IPs under your account.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
   {% response json %}
 [
@@ -75,7 +74,7 @@ View all IPs under your account.
     "ip": "255.255.255.254"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -90,7 +89,6 @@ View all IPs under your account.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Free 
@@ -128,7 +126,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 </table>
 
 
-
 {% apiexample free POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free %}
   {% response json %}
 [
@@ -151,7 +148,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
     "ip": "255.255.255.254"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -166,7 +163,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Taken 
@@ -204,7 +200,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 </table>
 
 
-
 {% apiexample taken POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken %}
   {% response json %}
 [
@@ -227,7 +222,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
     "ip": "255.255.255.254"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -242,7 +237,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Available 
@@ -280,7 +274,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 </table>
 
 
-
 {% apiexample available POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available %}
   {% response json %}
 [
@@ -303,7 +296,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
     "ip": "255.255.255.254"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -318,7 +311,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Usage 
@@ -378,7 +370,6 @@ The current breakdown of users who are using your IPs.
 </table>
 
 
-
 {% apiexample usage POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com %}
   {% response json %}
 [
@@ -391,7 +382,7 @@ The current breakdown of users who are using your IPs.
     "user": "user4@example.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

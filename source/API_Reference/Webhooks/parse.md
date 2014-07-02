@@ -18,13 +18,11 @@ SendGrid can parse the attachments and contents of incoming emails. Application 
 
 The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
 
-
 {% info %}
 If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request. 
 {% endinfo %}
 
 In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response. It is then removed from our send queue. If we do **not** get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.
-
 
 {% anchor h2 %}
 Setup 
@@ -36,7 +34,6 @@ The following steps are required to begin parsing email:
 -   Associate the Domain/Hostname and the URL in the [Parse API settings page](http://sendgrid.com/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
 
 The following parameters will be included in the POST to your callback URL.
-
 
 {% info %}
 The request that will be sent to the HTTP endpoint will be encoded as multipart/form-data. 
@@ -111,7 +108,6 @@ The request that will be sent to the HTTP endpoint will be encoded as multipart/
    </tbody>
 </table>
 
-
 {% info %}
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether. 
 {% endinfo %}
@@ -127,11 +123,9 @@ Messages and their headers can have character set data associated with them. In 
 The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:
 
 
-
 {% codeblock lang:ruby %}
 [charsets] => {"to":"UTF-8","cc":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"iso-8859-1"}
 {% endcodeblock %}
-
 
 
 This shows that all headers should be treated as UTF-8, and the text body is latin1.

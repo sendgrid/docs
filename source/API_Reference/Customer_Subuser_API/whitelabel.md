@@ -9,7 +9,6 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 * * * * *
 
-
 {% anchor h2 %}
 List 
 {% endanchor %}
@@ -28,7 +27,6 @@ List
    </tbody>
 </table>
 
-
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
 [
@@ -41,7 +39,7 @@ List
     "url_domain": "email.example.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -60,7 +58,6 @@ List
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Append 
@@ -90,13 +87,12 @@ Append
    </tbody>
 </table>
 
-
 {% apiexample append POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

@@ -12,7 +12,6 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 * * * * *
 
-
 {% anchor h2 %}
 List 
 {% endanchor %}
@@ -45,9 +44,7 @@ List
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -60,7 +57,6 @@ List
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -84,9 +80,7 @@ whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Append 
@@ -130,9 +124,7 @@ Append
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -145,7 +137,6 @@ Append
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -165,10 +156,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -183,8 +171,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -192,11 +178,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -207,6 +189,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

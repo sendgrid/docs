@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to manage entries in your Recipient Lists.
 
-
 {% anchor h2 %}
 add 
 {% endanchor %}
@@ -24,7 +23,7 @@ Add one or more emails to a Recipient List.
 {
   "inserted": 1
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -40,7 +39,6 @@ Add one or more emails to a Recipient List.
 Add an email recipient to a list:
 
 
-
 {% codeblock %}
 #curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"address@domain.com","name":"contactName"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json
 {% endcodeblock %}
@@ -49,13 +47,11 @@ Add an email recipient to a list:
 {% codeblock %}#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
 
 
-
 Add multiple email recipients to a list:
 
 {% codeblock %} \#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json {% endcodeblock %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -75,7 +71,7 @@ Get the email addresses and associated fields for a Recipient List.
     "name": ""
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -91,7 +87,6 @@ Get the email addresses and associated fields for a Recipient List.
 
 * * * * *
 
-
 {% anchor h2 %}
 count 
 {% endanchor %}
@@ -106,7 +101,7 @@ Retrieve the number of entries on a list.
 {
   "count": 2
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -118,7 +113,6 @@ Retrieve the number of entries on a list.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -135,7 +129,7 @@ Remove one or more emails from a Recipient List.
 {
   "removed": 1
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Marketing Email feature.
 
-
 {% anchor h2 %}
 add 
 {% endanchor %}
@@ -54,13 +53,12 @@ Create a new Address.
    </tr>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/identity/add identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -72,7 +70,6 @@ Create a new Address.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 edit 
@@ -125,13 +122,12 @@ Edit an existing Address.
    </tr>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/identity/edit identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -143,7 +139,6 @@ Edit an existing Address.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -171,7 +166,6 @@ Retrieve information associated with a particular Address.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/identity/get identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -185,7 +179,7 @@ Retrieve information associated with a particular Address.
   "email": "example@sendgrid.com",
   "identity": "Sender_Address "
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -208,7 +202,6 @@ Retrieve information associated with a particular Address.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 list 
@@ -236,7 +229,6 @@ List all Addresses on your account, or check if a particular Address exists.
 </table>
 
 
-
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/identity/list identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -244,7 +236,7 @@ List all Addresses on your account, or check if a particular Address exists.
     "identity": "Sender_Address4"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -256,7 +248,6 @@ List all Addresses on your account, or check if a particular Address exists.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -284,13 +275,12 @@ Remove an Address from your account.
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/identity/delete identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

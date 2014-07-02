@@ -67,7 +67,6 @@ Retrieve a single template.
 {% endv3response %}
 {% endapiv3example %}
 
-
 {% anchor h2 %}
 POST
 {% endanchor %}
@@ -120,4 +119,3 @@ Delete a template.
 HTTP/1.1 204 NO CONTENT (OK)
   {% endv3response %}
 {% endapiv3example %}
-

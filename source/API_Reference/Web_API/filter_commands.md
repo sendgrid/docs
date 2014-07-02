@@ -14,7 +14,6 @@ List all of the available apps.
 
 *Note: The name entry is used in all the other API calls to identify a app.* For a list of all the apps and parameters accesible with the Web API you can check the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page.
 
-
 {% apiexample getavailable GET https://api.sendgrid.com/api/filter.getavailable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -31,7 +30,7 @@ List all of the available apps.
     "...": "..."
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -54,7 +53,6 @@ BCC
 
 * * * * *
 
-
 {% anchor h2 %}
 Activate App 
 {% endanchor %}
@@ -69,7 +67,7 @@ Activate an app.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -81,7 +79,6 @@ Activate an app.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Deactivate App 
@@ -97,7 +94,7 @@ Deactivate an app.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -109,7 +106,6 @@ Deactivate an app.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Setup App 
@@ -117,13 +113,12 @@ Setup App
 
 Change application settings. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
 
-
 {% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com false %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -135,7 +130,6 @@ Change application settings. Applications and their settings can be found in the
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Get App Settings 
@@ -156,7 +150,7 @@ Get the Settings Of An App
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

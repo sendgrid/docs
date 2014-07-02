@@ -11,13 +11,11 @@ navigation:
 
 Updating the Postfix configuration to use SendGrid as a relay host is easy. For more advanced configuration scenarios, you'll need to refer to the Postfix documentation.
 
-
 {% warning %}
 Some implementations of Postfix only allow passwords to contain letters and numbers, meaning you may need to ensure your SendGrid password is only alphanumeric. 
 {% endwarning %}
 
 Find your Postfix config file, typically **/etc/postfix/main.cf**, and add the following:
-
 
 
 {% codeblock %}
@@ -42,7 +40,6 @@ If you are getting ***no mechanism available*** error messages it generally indi
 Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
 
 
-
 {% codeblock lang:bash %}
 $ apt-get install libsasl2-modules
 {% endcodeblock %}
@@ -52,5 +49,4 @@ $ apt-get install libsasl2-modules
 {% codeblock lang:bash %}
 $ yum install cyrus-sasl-plain
 {% endcodeblock %}
-
 

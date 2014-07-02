@@ -8,7 +8,6 @@ navigation:
 
 This module allows you to manage which lists are assigned to marketing email.
 
-
 {% anchor h2 %}
 add 
 {% endanchor %}
@@ -38,13 +37,12 @@ Assign a List to a Marketing Email.
    </tbody>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/recipients/add name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -56,7 +54,6 @@ Assign a List to a Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -81,7 +78,6 @@ Get all lists assigned to a particular marketing email
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/recipients/get name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -89,7 +85,7 @@ Get all lists assigned to a particular marketing email
     "list": "Training Contacts"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -103,7 +99,6 @@ Get all lists assigned to a particular marketing email
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -134,13 +129,12 @@ Remove assigned lists from marketing email
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/recipients/delete name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

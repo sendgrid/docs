@@ -8,7 +8,6 @@ navigation:
 
 Subuser Statistics
 
-
 {% anchor h2 %}
 Retrieve Subuser Statistics 
 {% endanchor %}
@@ -51,7 +50,6 @@ Note that you can use *either* the days parameter *or* the start_date and en
 </table>
 
 
-
 {% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 [
@@ -80,7 +78,7 @@ Note that you can use *either* the days parameter *or* the start_date and en
     "spamreports": 2
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -144,7 +142,6 @@ Retrieve all-time totals for your subuser
 </table>
 
 
-
 {% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -154,7 +151,7 @@ Retrieve all-time totals for your subuser
   "opens": "9992",
   "spamreports": "5"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -202,7 +199,6 @@ Retrieve a list of all the categories used in your subusers account.
 </table>
 
 
-
 {% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true %}
   {% response json %}
 [
@@ -210,7 +206,7 @@ Retrieve a list of all the categories used in your subusers account.
     "category": "categoryC"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -270,13 +266,11 @@ Retrieve statistics broken down by category. If the category does not exist, the
    </tbody>
 </table>
 
-
 {% xmljsontabs catstats %}
 
 <div class="tab-content">
 <div class="tab-pane" id="catstats-xml">
 ### Call
-
 
 
 {% codeblock %}
@@ -288,9 +282,7 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 {% endcodeblock %}
 
 
-
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -320,12 +312,9 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="catstats-json">
 ### Call
-
 
 
 {% codeblock %}
@@ -337,10 +326,7 @@ https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 
-
 ### Response
-
-
 
 
 {% codeblock lang:json %}
@@ -367,7 +353,4 @@ https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 
-
-
 </div>
-

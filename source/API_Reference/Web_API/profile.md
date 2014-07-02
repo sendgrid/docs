@@ -28,7 +28,7 @@ get
     "website": "example.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -55,7 +55,6 @@ get
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 set 
@@ -115,13 +114,12 @@ set
    </tbody>
 </table>
 
-
 {% apiexample set POST https://api.sendgrid.com/api/profile.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -133,7 +131,6 @@ set
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 setPassword 
@@ -161,13 +158,12 @@ setPassword
    </tbody>
 </table>
 
-
 {% apiexample reset POST https://api.sendgrid.com/api/password.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -179,7 +175,6 @@ setPassword
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 setUsername 
@@ -205,13 +200,12 @@ Please note, your account username is used to login to our SMTP server and the w
    </tbody>
 </table>
 
-
 {% apiexample setusername POST https://api.sendgrid.com/api/profile.setUsername api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -223,7 +217,6 @@ Please note, your account username is used to login to our SMTP server and the w
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 setEmail 
@@ -249,13 +242,12 @@ Please note, we send out a confirmation email to the new email account in order 
    </tbody>
 </table>
 
-
 {% apiexample setemail POST https://api.sendgrid.com/api/profile.setEmail api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

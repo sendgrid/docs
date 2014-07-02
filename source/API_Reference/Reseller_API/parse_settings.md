@@ -48,7 +48,6 @@ Get Current Settings
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com %}
   {% response json %}
 {
@@ -60,7 +59,7 @@ Get Current Settings
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -76,7 +75,6 @@ Get Current Settings
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Create New Entry 
@@ -132,13 +130,12 @@ Create New Entry
 </table>
 
 
-
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -150,7 +147,6 @@ Create New Entry
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Edit Entry 
@@ -206,13 +202,12 @@ Edit Entry
 </table>
 
 
-
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -224,7 +219,6 @@ Edit Entry
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Entry 
@@ -274,13 +268,12 @@ Delete Entry
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

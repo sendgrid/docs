@@ -8,7 +8,6 @@ navigation:
 
 MultiAuth, or Multiple Authentication, is a feature that allows administrators to create and manage additional user access to SendGrid features and allows the ability to send messages without sharing access to the master account credentials.
 
-
 {% info %}
 Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username. 
 {% endinfo %}
@@ -18,7 +17,6 @@ As the primary account holder, you can assign one of three rights to each set of
 -   **API** - enabling access to this function allows the designated credentials to utilize all of SendGrid's APIs, with exception to any API call that sends email
 -   **Web** - enables access to the web dashboard allows the specified credentials to administer the account using the web-based console.
 
-
 {% info %}
 Future updates to Multiple User Credentials will allow for more granular control over access rights granted to the specified credentials. At this time, granting access to one of the three available features is granting full access to that feature, with the following exceptions:
 
@@ -27,7 +25,6 @@ Future updates to Multiple User Credentials will allow for more granular control
 -   Granting access to Web will allow credentials to create marketing email, but they cannot send them unless they are also granted Email rights
 -   Only the Master Account can create, modify, or delete Subusers and Credentials
 
-
 {% endinfo %}
 
 {% anchor h2 %}
@@ -35,7 +32,6 @@ Using the Multiple Credentials Dashboard
 {% endanchor %}
 
 In order to access the interface you need to login to your master account and click on **Account Settings \> Manage Multiple User Credentials**. When you access MultiAuth's User Credentials management interface, you will see a list of any previously created credentials. As an example, if you have created any credentials using the Multiple User Credentials API, those user names will appear here and display their assigned permissions.
-
 
 {% info %}
 Credentials that have been granted access to the Web feature are not granted rights to access the Account Settings page. If they click on the link, they will receive a notification that their credentials do have have sufficient rights to do so. 
@@ -58,7 +54,6 @@ When creating a new set of credentials, follow these instructions:
 When you click **Create Credential**, you are returned to the User Credentials list page, where you will see the new credentials and their associated permissions. If you do not intend to create new credentials, you may click the **Cancel** button to cancel the action.
 
 If you need to edit a set of credentials, you can click the Edit icon, and you will be redirected to the settings page.
-
 
 {% info %}
 If you leave the password field empty then your modifications will only affect the permissions. 

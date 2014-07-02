@@ -24,7 +24,6 @@ Open your modules page, find the SMTP module, and configure it with the followin
 
 ![]({{root_url}}/images/drupal_2.png "SMTP Module Configuration")
 
-
 {% anchor h2 %}
 Using the Swift Mailer Module 
 {% endanchor %}

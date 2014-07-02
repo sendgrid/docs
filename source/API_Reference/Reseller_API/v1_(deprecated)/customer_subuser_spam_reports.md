@@ -46,9 +46,7 @@ Retrieve Spam Reports
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -61,7 +59,6 @@ Retrieve Spam Reports
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -85,9 +82,7 @@ spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:4
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Spam Reports 
@@ -129,9 +124,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -146,7 +139,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 ### Response: Success
 
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -156,9 +148,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -173,8 +163,6 @@ result><message>Email does not exist</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -182,11 +170,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -194,6 +178,4 @@ result><message>Email does not exist</message></result>
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
-
 

@@ -49,7 +49,6 @@ Enable SMTP Service:
 
 Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.
 
-
 {% anchor h2 %}
 Configure IIS 6.0 to Relay Outbound Email to SendGrid 
 {% endanchor %}
@@ -71,7 +70,6 @@ Configure IIS 6.0 to Relay Outbound Email to SendGrid
 15. In the Smart host field: enter smtp.sendgrid.net
 16. Click on OK twice and you can close the IIS 6.0 admin MMC
 
-
 {% anchor h2 %}
 Configure Domains 
 {% endanchor %}
@@ -81,7 +79,6 @@ Testing Your New Configuration
 {% endanchor %}
 
 First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
-
 
 
 {% codeblock %}
@@ -98,7 +95,6 @@ DATA
 This is a test email for SendGrid operations.
 .
 {% endcodeblock %}
-
 
 
 The **EHLO** command with your domain inserted tells the mail server which domain it will be sending from. The **MAIL FROM:** command is a standard MIME entry for that inserts the email address of the sender. The **RCPT TO:** command tells the server to which address to send the message. The **DATA** command tells the server that the next incoming information is the body of the message. Finally, after the data is entered, the period (.) tells the server you are done. When you press Enter, it will send the message. It's quite nice to have servers to handle all this mess, isn't it!

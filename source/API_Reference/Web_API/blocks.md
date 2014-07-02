@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Blocks list.
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -42,7 +41,7 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
     "email": "example3@exampledomain.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -66,7 +65,6 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 
 * * * * *
 
-
 {% anchor h2 %}
 delete 
 {% endanchor %}
@@ -78,7 +76,7 @@ Delete an address from the Block list. {% parameters delete %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -91,7 +89,6 @@ Delete an address from the Block list. {% parameters delete %}
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 count 
@@ -106,7 +103,7 @@ count
 {
   "count": "4"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

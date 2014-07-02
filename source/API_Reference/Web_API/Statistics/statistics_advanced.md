@@ -58,7 +58,6 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/stats.getAdvanced api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global %}
   {% response json %}
 [
@@ -81,7 +80,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
     "open": 3
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

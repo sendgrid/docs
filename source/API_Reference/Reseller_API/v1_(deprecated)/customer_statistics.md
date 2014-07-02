@@ -60,9 +60,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -75,7 +73,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -99,9 +96,7 @@ stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Aggregates 
@@ -143,9 +138,7 @@ Retrieve all-time totals for your customer
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -158,7 +151,6 @@ Retrieve all-time totals for your customer
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -182,9 +174,7 @@ stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><open
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Category List 
@@ -229,9 +219,7 @@ Retrieve a list of all the categories used in your customers account.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -244,7 +232,6 @@ Retrieve a list of all the categories used in your customers account.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -268,9 +255,7 @@ categories><category>categoryA</category><category>categoryB</category><category
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Category Statistics 
@@ -332,9 +317,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -348,7 +331,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 #### Command - Using an array of categories
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
@@ -360,7 +342,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -394,5 +375,4 @@ stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342<
 {% codeblock %}
 {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
 {% endcodeblock %}
-
 

@@ -14,4 +14,3 @@ navigation:
 ### Understanding Marketing Email Statistics
 
 After sending your Marketing Email watch this video by Keanon in order to understand how to interpret your statistics and delivery metrics.
-

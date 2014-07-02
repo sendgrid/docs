@@ -14,4 +14,3 @@ navigation:
 ### Template Engine
 
 Template Engine enables seamless collaboration between marketers, developers, and designers, allowing each to work within SendGrid's user interface to edit and create email templates for transactional emails. Learn how to empower your marketers to edit transactional emails, and let your developers focus on building.
-

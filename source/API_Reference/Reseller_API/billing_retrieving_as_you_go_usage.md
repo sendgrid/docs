@@ -30,7 +30,6 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren %}
   {% response json %}
 {
@@ -49,7 +48,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
   "additional_charges": 0,
   "final_amount": 1007.95
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

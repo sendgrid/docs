@@ -8,7 +8,6 @@ navigation:
 
 Throttle your customer subuser when you need them to send only a specific amount of emails at a specified interval.
 
-
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
@@ -44,7 +43,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
   {% response json %}
 {
@@ -52,7 +50,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
   "credit_remain": "2000",
   "last_reset": "2011-02-21"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -66,7 +64,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 No Limit 
@@ -103,13 +100,12 @@ Obtain a complete list of all customer subuser.
 </table>
 
 
-
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -121,7 +117,6 @@ Obtain a complete list of all customer subuser.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Recurring Reset 
@@ -188,13 +183,12 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 </table>
 
 
-
 {% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -206,7 +200,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Total Credits 
@@ -249,13 +242,12 @@ Set a subusers credits to a specified amount.
 </table>
 
 
-
 {% apiexample total POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -267,7 +259,6 @@ Set a subusers credits to a specified amount.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Increment Credits 
@@ -310,13 +301,12 @@ Increment a subusers credits by a specified amount.
 </table>
 
 
-
 {% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -328,7 +318,6 @@ Increment a subusers credits by a specified amount.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Decrement Credits 
@@ -371,13 +360,12 @@ Decrement a subusers credits by a specified amount.
 </table>
 
 
-
 {% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

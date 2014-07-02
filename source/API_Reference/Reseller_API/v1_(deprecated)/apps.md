@@ -53,9 +53,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -68,7 +66,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -136,9 +133,7 @@ Activate App
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -151,7 +146,6 @@ Activate App
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -178,10 +172,7 @@ Activate App
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Deactivate App 
@@ -224,9 +215,7 @@ Deactivate App
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -239,7 +228,6 @@ Deactivate App
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -266,10 +254,7 @@ Deactivate App
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Customize App 
@@ -278,7 +263,6 @@ Customize App
 These API calls require that settings are passed using POST.
 
 ### XML Call
-
 
 {% requestblock %}
 
@@ -293,7 +277,6 @@ These API calls require that settings are passed using POST.
 ### Response: Success
 
 
-
 {% codeblock %}
 <filter><field_name>field_value</field_name>
     ...
@@ -305,11 +288,9 @@ result><message>error</message><message>... error messages ...</message></result
 {% endcodeblock %}
 
 
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 
 {% codeblock %}
@@ -339,12 +320,9 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 
 
-
-
 #### Return - Empty
 
 This is returned if that filter has no settings or is not enabled.
-
 
 
 {% codeblock %}
@@ -352,7 +330,6 @@ This is returned if that filter has no settings or is not enabled.
 
 {% endcodeblock %}
 <hr/>
-
 
 {% anchor h2 %}
 Get Current Settings 
@@ -378,9 +355,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
 
 
 {% codeblock %}
@@ -393,10 +368,7 @@ filter></filter
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -407,8 +379,6 @@ filter></filter
   }
 }
 {% endcodeblock %}
-
-
 
 
 #### Return - Empty

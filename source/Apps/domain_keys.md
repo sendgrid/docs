@@ -14,7 +14,6 @@ The domain that is checked for the public key is based on one of two e-mail head
 
 By default, SendGrid signs all e-mail with Domain Keys to improve its deliverability, however for accounts that do not have Whitelabeling enabled the domain in the From field will not have the proper DNS record to authenticate the e-mail. Because of this SendGrid inserts a Sender header and the e-mail can then be properly authenticated.
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -41,7 +40,6 @@ Settings
    </tbody>
 </table>
 
-
 Some ISPs or e-mail clients (such as Hotmail or Outlook) will display a message with the Sender header reading "on behalf of" followed by the address that is in the Sender header. To remove this, do one of the following:
 
 1.Disable the Domain Keys filter in the filters section of your account
@@ -53,4 +51,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#domainkeys) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Domain-Keys) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

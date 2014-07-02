@@ -29,7 +29,6 @@ Retrieve a list of all credentials, or permissions for a specific credential.
    </tbody>
 </table>
 
-
 {% apiexample get GET https://api.sendgrid.com/api/credentials/get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -50,7 +49,7 @@ Retrieve a list of all credentials, or permissions for a specific credential.
     }
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -83,7 +82,6 @@ Retrieve a list of all credentials, or permissions for a specific credential.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Add 
@@ -120,13 +118,12 @@ This API call allows user to add a new set of credentials to their account.
    </tbody>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/credentials/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -170,13 +167,12 @@ Edit
    </tbody>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/api/credentials/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -188,7 +184,6 @@ Edit
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete 
@@ -211,13 +206,12 @@ Delete
    </tbody>
 </table>
 
-
 {% apiexample remove POST https://api.sendgrid.com/api/credentials/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

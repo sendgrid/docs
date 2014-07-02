@@ -6,15 +6,12 @@ Hello -name-,
 An accompanying SMTP API JSON header might look something like this:
 
 
-
 {% codeblock lang:html %}
 <a href="http://sendgrid.com/customerOffer?id=-customerID-">Claim your offer!</a>
 {% endcodeblock %}
 
 
-
 The final email for John would look like this:
-
 
 
 {% codeblock lang:html %}
@@ -35,5 +32,4 @@ The final email for John would look like this:
   </body>
 </html>
 {% endcodeblock %}
-
 

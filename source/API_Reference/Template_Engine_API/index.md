@@ -130,7 +130,6 @@ per refresh period.
 Each Web API requests returns the following header information 
 regarding rate limits and number of requests left.
 
-
 Depending on the endpoint you are trying to reach, it will have a
 specific number of allowed requests per refresh period. Once this
 threshold has been reached, we will return a status code 429 response.

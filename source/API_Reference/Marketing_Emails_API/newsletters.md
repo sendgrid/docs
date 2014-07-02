@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to add, view, or remove marketing emails.
 
-
 {% anchor h2 %}
 add 
 {% endanchor %}
@@ -59,13 +58,12 @@ Create a new Marketing Email.
 </table>
 
 
-
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -77,7 +75,6 @@ Create a new Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 edit 
@@ -98,13 +95,12 @@ Edit an existing Marketing Email.
    <td>The name of the Marketing Email being updated.</td>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/edit identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -116,7 +112,6 @@ Edit an existing Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -144,7 +139,6 @@ Retrieve the contents of an existing Marketing Email.
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -159,7 +153,7 @@ Retrieve the contents of an existing Marketing Email.
   "identity": "d22de3a53fac1abef944c80c19032c2c",
   "subject": null
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -179,7 +173,6 @@ Retrieve the contents of an existing Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 list 
@@ -207,7 +200,6 @@ Retrieve a list of all existing Marketing Email.
 </table>
 
 
-
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -228,7 +220,7 @@ Retrieve a list of all existing Marketing Email.
     "newsletter_id": 38074
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -256,7 +248,6 @@ Retrieve a list of all existing Marketing Email.
 
 * * * * *
 
-
 {% anchor h2 %}
 delete 
 {% endanchor %}
@@ -283,13 +274,12 @@ Remove an existing Marketing Email.
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

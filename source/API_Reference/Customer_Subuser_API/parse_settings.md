@@ -33,7 +33,6 @@ Get Current Settings
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com %}
   {% response json %}
 {
@@ -45,7 +44,7 @@ Get Current Settings
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -61,7 +60,6 @@ Get Current Settings
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Create New Entry 
@@ -102,13 +100,12 @@ Create New Entry
    </tbody>
 </table>
 
-
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -120,7 +117,6 @@ Create New Entry
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Edit Entry 
@@ -161,13 +157,12 @@ Edit Entry
    </tbody>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -179,7 +174,6 @@ Edit Entry
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Entry 
@@ -214,13 +208,12 @@ Delete Entry
    </tbody>
 </table>
 
-
 {% apiexample data POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

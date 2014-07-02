@@ -12,7 +12,6 @@ You can access this feature on the [Account Overview](http://sendgrid.com/accoun
 
 Following are the various Alert Types:
 
-
 {% anchor h2 %}
 Stats Notifications 
 {% endanchor %}
@@ -20,7 +19,6 @@ Stats Notifications
 An email containing your stats. If sent weekly, stats shown will be for the period of one week.
 
 * * * * *
-
 
 {% anchor h2 %}
 IP Blacklisted 
@@ -30,7 +28,6 @@ An email will be sent when your sent IP is being blacklisted.
 
 * * * * *
 
-
 {% anchor h2 %}
 Invalid DNS Setting (Whitelabel) 
 {% endanchor %}
@@ -38,7 +35,6 @@ Invalid DNS Setting (Whitelabel)
 This will check your Whitelabel wizard setting to see if the mail domain is matched with the IP and vice versa.
 
 * * * * *
-
 
 {% anchor h2 %}
 Reputation rate drops below X% 
@@ -48,7 +44,6 @@ You can enter a custom percentage value for your reputation rate. For example, y
 
 * * * * *
 
-
 {% anchor h2 %}
 Daily delivery rate drops below X% 
 {% endanchor %}
@@ -57,7 +52,6 @@ An email is sent when your rate of delivery drops below the specified percentage
 
 * * * * *
 
-
 {% anchor h2 %}
 Outbound mail queue exceeds X 
 {% endanchor %}
@@ -65,7 +59,6 @@ Outbound mail queue exceeds X
 This is the number of emails that are pending to be sent. If the queue exceeds a certain amount of emails, you can get notified by setting up this alert option.
 
 * * * * *
-
 
 {% anchor h2 %}
 IP filter status in Hotmail SNDS becomes Yellow or Red 
@@ -77,7 +70,6 @@ A yellow alert means that between 10% and 90% of the mail from an IP looks like 
 
 * * * * *
 
-
 {% anchor h2 %}
 Usage Limit 
 {% endanchor %}
@@ -85,7 +77,6 @@ Usage Limit
 Receive an alert when you have used the specified percentage of your email credits for the current billing period.
 
 * * * * *
-
 
 {% anchor h2 %}
 Service Notifications 

@@ -17,4 +17,3 @@ navigation:
 In this video, Anthony walks us through the creation of a subuser account that shares a Whitelable with its Parent account.
 
 </div>
-

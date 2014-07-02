@@ -8,7 +8,6 @@ navigation:
 
 This module allows you to create and manage categories within your Marketing Emails.
 
-
 {% anchor h2 %}
 create 
 {% endanchor %}
@@ -35,13 +34,12 @@ Create a new Category.
 </table>
 
 
-
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/category/create api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -53,7 +51,6 @@ Create a new Category.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 add 
@@ -87,13 +84,12 @@ Assign a Category to an existing Marketing Email.
 </table>
 
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/category/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -105,7 +101,6 @@ Assign a Category to an existing Marketing Email.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 remove 
@@ -139,13 +134,12 @@ Remove specific categories, or all categories from a Marketing Email.\\
 </table>
 
 
-
 {% apiexample remove POST https://api.sendgrid.com/api/newsletter/category/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -157,7 +151,6 @@ Remove specific categories, or all categories from a Marketing Email.\\
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 list 
@@ -185,7 +178,6 @@ List all categories.
 </table>
 
 
-
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -196,7 +188,7 @@ List all categories.
     "category": "CATEGORY2"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

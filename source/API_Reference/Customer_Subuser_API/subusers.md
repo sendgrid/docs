@@ -8,7 +8,6 @@ navigation:
 
 These are actions that directly affect your subuser. We provide access via XML and JSON.
 
-
 {% info %}
 In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username. 
 {% endinfo %}
@@ -118,13 +117,12 @@ Create a Subuser
    </tbody>
 </table>
 
-
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -136,7 +134,6 @@ Create a Subuser
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete a Subuser 
@@ -159,13 +156,12 @@ Delete a Subuser
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -177,7 +173,6 @@ Delete a Subuser
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Subusers 
@@ -264,7 +259,6 @@ Obtain a complete list of all subusers.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get %}
   {% response json %}
 [
@@ -297,7 +291,7 @@ Obtain a complete list of all subusers.
     "website": "example.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -343,7 +337,6 @@ Obtain a complete list of all subusers.
 
 * * * * *
 
-
 {% anchor h2 %}
 Enable a Subuser 
 {% endanchor %}
@@ -366,13 +359,12 @@ Enable a subuser so they may start sending out emails again. This call will not 
    </tbody>
 </table>
 
-
 {% apiexample enable POST https://api.sendgrid.com/apiv2/customer.enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -384,7 +376,6 @@ Enable a subuser so they may start sending out emails again. This call will not 
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Disable a Subuser 
@@ -408,13 +399,12 @@ This prevents them from sending out emails with SendGrid.
    </tbody>
 </table>
 
-
 {% apiexample disable POST https://api.sendgrid.com/apiv2/customer.disable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -426,7 +416,6 @@ This prevents them from sending out emails with SendGrid.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Enable Website Access To A Subuser 
@@ -450,13 +439,12 @@ Allow a subuser to login to the SendGrid.com website. This call will not enable 
    </tbody>
 </table>
 
-
 {% apiexample enablewebsite POST https://api.sendgrid.com/apiv2/customer.website_enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -468,7 +456,6 @@ Allow a subuser to login to the SendGrid.com website. This call will not enable 
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Disable Website Access To A Subuser 
@@ -492,13 +479,12 @@ Disallow a subuser to login to the SendGrid.com website. This call will not prev
    </tbody>
 </table>
 
-
 {% apiexample disablewebsite POST https://api.sendgrid.com/apiv2/customer.website_disable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -510,7 +496,6 @@ Disallow a subuser to login to the SendGrid.com website. This call will not prev
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Update Subuser Profile 
@@ -587,13 +572,12 @@ Allows you to update your subusers profile information
    </tbody>
 </table>
 
-
 {% apiexample updateprofile POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -605,7 +589,6 @@ Allows you to update your subusers profile information
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Update Subuser Password 
@@ -641,13 +624,12 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
    </tbody>
 </table>
 
-
 {% apiexample updateSubuserPassword POST https://api.sendgrid.com/apiv2/customer.password api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -659,7 +641,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Update Subuser Username 
@@ -695,13 +676,12 @@ Note that your subuser account username is used to login to our SMTP server *an
    </tbody>
 </table>
 
-
 {% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -713,7 +693,6 @@ Note that your subuser account username is used to login to our SMTP server *an
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Update Subuser Email Address 
@@ -749,13 +728,12 @@ This is the contact email we use for your subusers. Changes take place immediate
    </tbody>
 </table>
 
-
 {% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

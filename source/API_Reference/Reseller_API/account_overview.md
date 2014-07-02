@@ -38,7 +38,6 @@ View general account information regarding your customers, including billing cyc
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com %}
   {% response json %}
 {
@@ -53,7 +52,7 @@ View general account information regarding your customers, including billing cyc
   "billing_end_date": "2010-09-29",
   "billing_process_date": "2010-09-30"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

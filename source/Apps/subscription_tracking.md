@@ -16,7 +16,6 @@ You can customize the text attached to emails and customize the landing page. Th
 
 If you would like to customize your links, create a CNAME that points to sendgrid.net and fill out the Whitelabel setting (available for Silver accounts and higher) in your account.
 
-
 {% anchor h2 %}
 API Settings 
 {% endanchor %}
@@ -63,4 +62,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#subscriptiontrack) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Subscription-Tracking) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

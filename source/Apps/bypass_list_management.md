@@ -8,7 +8,6 @@ navigation:
 
 Some e-mails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.
 
-
 {% anchor h2 %}
 API Settings 
 {% endanchor %}
@@ -34,8 +33,6 @@ API Settings
    </tbody>
 </table>
 
-
 Settings may be changed through:
 
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#bypass_list_management) (on a per message basis)
-

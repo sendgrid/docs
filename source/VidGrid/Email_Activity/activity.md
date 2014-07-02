@@ -14,4 +14,3 @@ navigation:
 ### Email Activity
 
 In this video, Jayson demonstrates how to use the Email Activity tool effectively by giving some quick tips on what to look for when viewing the different event types. Use this feature to get details on the emails being sent through your account.
-

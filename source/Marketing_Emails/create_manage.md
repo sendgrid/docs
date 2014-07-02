@@ -17,7 +17,6 @@ This section walks you through the four stages of configuring a marketing email.
 -   Design
 -   Review & Schedule
 
-
 {% anchor h2 %}
 STEP 1: Setup 
 {% endanchor %}
@@ -31,7 +30,6 @@ First define the name of the marketing email, what category or categories it wil
 
 ***Split Testing*** introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list.
 
-
 {% info %}
 While it's up to you what criteria you will use to determine success, our personal favorite is Clicks. This speaks to how many people not only opened your marketing email, but were compelled enough by the content to click, as well. 
 {% endinfo %}
@@ -41,7 +39,6 @@ STEP 2: Select Recipients
 {% endanchor %}
 
 Here you select who you want to receive your marketing email. You can either select a list of recipients you have already inserted into your account or create a new list.
-
 
 {% anchor h2 %}
 STEP 3: Design 
@@ -53,13 +50,11 @@ Text marketing email design is quite straightforward, but if you chose HTML ther
 
 There are three distinct areas of the graphical editor, Modules on the left, the editor itself in the center, and the Style/Library section to the right. In Design Mode, you drag and drop Modules from the bin to the left and into the Editor. This functionality makes it easier and quicker to create attractive marketing emails.
 
-
 {% info %}
 Only the Style or Library tool can be displayed at one time and the Style tool is shown by default. If you want to access your previously uploaded images, click on the Library icon located underneath the Style tool and it will slide into view. 
 {% endinfo %}
 
 It is in the Editor that you can now define the content for your marketing email. You can insert all manner or modules in any order you deem appropriate. You can also use all of your substitution tags in either the visual or source mode editors. If you drag in a module that includes text, you can style that text in the Module Editor. You can also add links or just insert pre-formatted HTML.
-
 
 {% info %}
 If you selected to send a Split Test, the only difference in the editor that you will see is the addition of the Add Variation button, selector, and trash can. You will note that your first variation is called Variation \#1. Believe me, we were proud as parents the day we came up with that creative freight train! Once you have edited your first variation, click Add Variation to create a new one. You will be asked if you want to start with a clean slate or clone another variation. 
@@ -76,7 +71,6 @@ Adding a module causes the Module Editor to appear, allowing you to set the disp
 -   **Image / Text** - This applies to the Text / Image module, as well. This module inserts a block of text with an image either above or below. The text is not set to reflow around the image in this module.
 -   **Text** - As implied, this just adds a block of text. Clean. Simple. Good.
 
-
 {% info %}
 So, you want to add a Library image to a new module, but that darned Module Editor keeps popping up!? No problem. Just close the editor, then drag the image from your library over to the new module. A drop area will appear and, Voila! ...That's it. Just Voila! 
 {% endinfo %}
@@ -90,7 +84,6 @@ Once you have added modules, you can edit them in place or move them around. You
 ![]({{root_url}}/images/newsletter_create_2.png)
 
 Point at the bar and your mouse pointer changes icons to a 4-way arrow. This indicates that you can drag that module into a new position. The other modules will move around as you drag to make room. The three icons to the far right let you open the Module Editor, duplicate the module, and remove the module.
-
 
 {% info %}
 Editing HTML source is easy. Just click on the Source Mode tab at the top of the editor. There are buttons that let you insert simple styling code as well as buttons that will insert code for links to viewing the message on the web, subscription management, and to add the Footer module. 
@@ -110,7 +103,6 @@ If all is good, then you are ready to schedule your marketing email. Your option
 
 The only thing you have remaining to do is click the big blue Finish button!
 
-
 {% anchor h2 %}
 Manage Marketing Emails 
 {% endanchor %}
@@ -125,7 +117,6 @@ Here you can see a list of your previously created marketing emails with the fol
 -   Recipients (total number of Recipients in assigned Recipient Lists)
 -   Opens (numeric and percentage)
 -   Clicks (numeric and percentage)
-
 
 {% anchor h3 %}
 Status 
@@ -150,13 +141,11 @@ Marketing Email status can have multiple values:
 -   Split Testing (the date when all variations were sent)
 -   Sent (the date when the sending process was finished)
 
-
 {% anchor h3 %}
 Clone 
 {% endanchor %}
 
 Clone creates a duplicate of the marketing email with the same characteristics as the old one, except the Name, which gets a [Clone] suffix, so that it can be found easier. The title can later be modified by editing the marketing email.
-
 
 {% anchor h3 %}
 View 
@@ -164,13 +153,11 @@ View
 
 View redirects to the last accessed step in the marketing email wizard. If the marketing email is a draft, it can be edited via any steps in the wizard.
 
-
 {% anchor h3 %}
 Stats 
 {% endanchor %}
 
 Stats displays analytics for sent marketing emails. If the marketing email was split tested, the chart will show a column containing each variation including the winning variation (if it was already picked). You can check or uncheck which variation should be displayed on the chart (all variations are selected by default), in order to compare the graphs.
-
 
 {% anchor h3 %}
 Stats Listing 
@@ -178,13 +165,11 @@ Stats Listing
 
 Stats analytics in tabular view, both raw numbers and percentages are displayed.
 
-
 {% anchor h3 %}
 Download to Excel 
 {% endanchor %}
 
 Export statistics data into an XLS file saved on your local computer.
-
 
 {% anchor h3 %}
 Print View 
@@ -192,20 +177,17 @@ Print View
 
 Displays the marketing emails graph and tabular analytics in a convenient printable format.
 
-
 {% anchor h3 %}
 Delete Marketing Email 
 {% endanchor %}
 
 Deletes the marketing email.
 
-
 {% anchor h3 %}
 Pause/Resume/Stop Sending 
 {% endanchor %}
 
 Manages the marketing email sending status by pausing, resuming or even stopping the sending process.
-
 
 {% anchor h3 %}
 Share 

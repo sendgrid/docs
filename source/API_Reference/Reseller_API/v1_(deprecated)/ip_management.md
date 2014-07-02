@@ -53,9 +53,7 @@ View all IPs under your account.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -68,7 +66,6 @@ View all IPs under your account.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
@@ -91,10 +88,7 @@ View all IPs under your account.
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -107,10 +101,7 @@ View all IPs under your account.
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Free 
@@ -147,9 +138,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -162,7 +151,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
@@ -185,10 +173,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -201,10 +186,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Taken 
@@ -241,9 +223,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -256,7 +236,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
@@ -279,10 +258,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -295,10 +271,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Available 
@@ -335,9 +308,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -350,7 +321,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
@@ -373,10 +343,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -389,10 +356,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Usage 
@@ -451,9 +415,7 @@ The current breakdown of users who are using your IPs.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -466,7 +428,6 @@ The current breakdown of users who are using your IPs.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
@@ -489,10 +450,7 @@ The current breakdown of users who are using your IPs.
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -503,6 +461,4 @@ The current breakdown of users who are using your IPs.
   ]
 }
 {% endcodeblock %}
-
-
 

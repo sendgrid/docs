@@ -12,7 +12,6 @@ Throttle your customer subuser when you need them to send only a specific amount
 
 * * * * *
 
-
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
@@ -47,9 +46,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -62,7 +59,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}  <credits><credit>0</credit><credit_remain>2000</credit_remain><last_reset>2011-02-21</last_reset></credits
@@ -81,10 +77,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -97,7 +90,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -115,10 +107,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 No Limit 
@@ -154,9 +143,7 @@ Obtain a complete list of all customer subuser.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -169,7 +156,6 @@ Obtain a complete list of all customer subuser.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -189,10 +175,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -207,8 +190,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -216,11 +197,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -233,10 +210,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Recurring Reset 
@@ -302,9 +276,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -317,7 +289,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -337,10 +308,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -355,8 +323,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -364,11 +330,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -381,10 +343,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Total Credits 
@@ -424,9 +383,7 @@ Set a subusers credits to a specified amount.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -439,7 +396,6 @@ Set a subusers credits to a specified amount.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -459,10 +415,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -477,8 +430,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -486,11 +437,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -503,10 +450,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Increment Credits 
@@ -548,9 +492,7 @@ Increment a subusers credits by a specified amount.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -563,7 +505,6 @@ Increment a subusers credits by a specified amount.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -583,10 +524,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -601,8 +539,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -610,11 +546,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -627,10 +559,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Decrement Credits 
@@ -672,9 +601,7 @@ Decrement a subusers credits by a specified amount.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -687,7 +614,6 @@ Decrement a subusers credits by a specified amount.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -707,10 +633,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -725,8 +648,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -734,11 +655,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -749,6 +666,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

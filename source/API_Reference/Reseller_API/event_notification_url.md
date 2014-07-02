@@ -47,13 +47,12 @@ Retrieve
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur %}
   {% response json %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -63,7 +62,6 @@ Retrieve
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Update / Set URL 
@@ -112,13 +110,12 @@ Update / Set URL
 </table>
 
 
-
 {% apiexample set POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -130,7 +127,6 @@ Update / Set URL
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete 
@@ -173,13 +169,12 @@ Delete
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

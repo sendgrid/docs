@@ -47,7 +47,6 @@ Retrieve Spam Reports
 <div class="tab-pane" id="get-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.spamreports.xml
@@ -59,7 +58,6 @@ Retrieve Spam Reports
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -79,12 +77,9 @@ Retrieve Spam Reports
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -97,8 +92,6 @@ Retrieve Spam Reports
 {% endrequestblock %}
 
 ### Response
-
-
 
 
 {% codeblock lang:json %}
@@ -115,13 +108,10 @@ Retrieve Spam Reports
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Spam Reports 
@@ -163,7 +153,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.spamreports.xml
@@ -177,7 +166,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -188,10 +176,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -204,12 +189,9 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -224,8 +206,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -233,11 +213,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -247,8 +223,5 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
-

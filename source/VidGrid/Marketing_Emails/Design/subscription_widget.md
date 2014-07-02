@@ -14,4 +14,3 @@ navigation:
 ### Subscription Widget
 
 Don’t miss Kyle demonstrating how to setup the Subscription Widget. This is code that you can place on your webpage empowering individuals to sign up for your Marketing Email.
-

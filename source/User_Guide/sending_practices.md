@@ -15,7 +15,6 @@ Additionally, there are limitations to delivery rates imposed by recipient mail 
 
 If you have a Silver or higher package, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/User_Guide/warming_up.html).
 
-
 {% anchor h2 %}
 Lite Plan Volume Restrictions 
 {% endanchor %}

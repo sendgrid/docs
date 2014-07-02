@@ -50,7 +50,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 </table>
 
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com %}
   {% response json %}
 [
@@ -79,7 +78,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
     "spamreports": 2
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -115,7 +114,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-
 {% anchor h2 %}
 Retrieve Aggregates 
 {% endanchor %}
@@ -148,7 +146,6 @@ Retrieve all-time totals for your customer subuser
 </table>
 
 
-
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= %}
   {% response json %}
 {
@@ -158,7 +155,7 @@ Retrieve all-time totals for your customer subuser
   "opens": 9992,
   "spamreports": 5
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -174,7 +171,6 @@ Retrieve all-time totals for your customer subuser
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Category List 
@@ -211,13 +207,12 @@ Retrieve a list of all the categories used in your customer subusers account.
 </table>
 
 
-
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru %}
   {% response json %}
 {
   "category": "categoryC"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -231,7 +226,6 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Category Statistics 
@@ -285,7 +279,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 </table>
 
 
-
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
@@ -308,7 +301,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
     "spamreports": 7
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

@@ -10,13 +10,11 @@ Email is essentially computers talking to each other in simple codes to relay si
 
 **Please note:**This is only a small handful of the response codes that can be sent back. Every receiving mail server out there is unique, so the responses you see may differ from those below. Use the human-readable portion of the response code to get more info if you get stuck, or get in touch with our Support team!
 
-
 {% anchor h2 %}
 250 
 {% endanchor %}
 
 The best mail server response code you can get. When you see this, everything has gone according to plan! This response is what results in a 'Delivered' event within your Sendgrid stats, and indicates that the recipient server has accepted the message.
-
 
 {% anchor h3 %}
 Examples: 
@@ -28,20 +26,17 @@ Examples:
 
 ***What to do with this response****:* Nothing, all is well with the cosmos. If you want, you could always print it out and frame it. Do keep in mind that messages that contain things like "Queued mail for delivery" is still indicative of a successful handoff to the recipient server, but there may still be internal queueing on the far end.
 
-
 {% anchor h2 %}
 Temporary Failures - “If at first you don’t succeed..." 
 {% endanchor %}
 
 A 400-style message is usually returned when some sort of transient error is encountered during the message transaction. These types of responses are usually not a cause for alarm as most of these will iron themselves out given a little time.
 
-
 {% anchor h2 %}
 421 
 {% endanchor %}
 
 Messages are temporarily deferred because of recipient server policy reasons. Usually because of too many messages or connections in too short a timeframe.
-
 
 {% anchor h3 %}
 Examples: 
@@ -53,13 +48,11 @@ Examples:
 
 ***What to do with this response******:*** We’ll continue to retry deferred messages for up to 72 hours for a response like this, but you may consider temporarily easing off the throttle when sending messages to a domain that is returning this code, just so you don’t further delay your messages currently being tried.
 
-
 {% anchor h2 %}
 450 
 {% endanchor %}
 
 The message failed because the user's mailbox was unavailable, perhaps because it was locked or was not routable at the time.
-
 
 {% anchor h3 %}
 Examples: 
@@ -70,13 +63,11 @@ Examples:
 
 ***What to do with this response****:*We’ll continue to retry deferred messages for up to 72 hours for a response like this. Generally this is based on a large influx of messages that you send, or if you've sent at a rate that the recipient server deems worthy of slowing down.
 
-
 {% anchor h2 %}
 451 
 {% endanchor %}
 
 The message simply failed, usually due to a far-end server error. This is unlikely anything you’ve done, remember we’ll keep retrying for 72 hours, so just keep an eye on it.
-
 
 {% anchor h3 %}
 Examples: 
@@ -87,13 +78,11 @@ Examples:
 
 ***What to do with this response***: We’ll continue to retry deferred messages for up to 72 hours for a response like this. Just keep your eyes peeled to see if the response to our retry attempts change.
 
-
 {% anchor h2 %}
 452 
 {% endanchor %}
 
 The message has been deferred due to insufficient system storage. Not your fault, they'll probably accept the mail later on once there's more space.
-
 
 {% anchor h3 %}
 Examples: 
@@ -105,20 +94,17 @@ Examples:
 
 ***What to do with this response***:We’ll continue to retry deferred messages for up to 72 hours for a response like this. Just keep your eyes peeled to see if the response to our retry attempts change.
 
-
 {% anchor h2 %}
 Hard Failures - "Return to Sender..." 
 {% endanchor %}
 
 A Hard, or Immediate, failure is anything that gets 500-style message as the result of trying to hand off a message. This typically indicates that some sort of permanent error occurred, this can range from systemic errors on the far-end server that just flat out prevents mail from coming in, all the way to policy-related blocks pertaining to content or other such factors. The examples below will give a taste of some of the myriad reasons a 500-style NDR(non-delivery response) can get returned for.
 
-
 {% anchor h2 %}
 550 
 {% endanchor %}
 
 The user's mailbox was unavailable. Usually because it could not be found, or because of incoming policy reasons.
-
 
 {% anchor h3 %}
 Examples: 
@@ -130,13 +116,11 @@ Examples:
 
 ***What to do with this response***:It's probably a good idea to take addresses that throw this response off of your main list, as it's likely a bogus address or one that was mistyped.
 
-
 {% anchor h2 %}
 551 
 {% endanchor %}
 
 The intended mailbox does not exist on this recipient server. This response will sometimes include a forward address to try if the server knows where the intended mailbox is.
-
 
 {% anchor h3 %}
 Examples: 
@@ -147,13 +131,11 @@ Examples:
 
 ***What to do with this response***: Don’t bother re-sending, the recipient server does not recognize the recipient address as being one of it’s own. Keep any eye on the human readable portion of the response, as it may include a forwarding address.
 
-
 {% anchor h2 %}
 552 
 {% endanchor %}
 
 The intended mailbox has exceeded its storage limits.
-
 
 {% anchor h3 %}
 Examples: 
@@ -163,13 +145,11 @@ Examples:
 
 ***What to do with this response****:* It’s at your discretion if you want to try re-sending, but there's a pretty good chance that it's a defunct address. We don't resend messages with this error code, so refer to the human readable portion for more guidance.
 
-
 {% anchor h2 %}
 553 
 {% endanchor %}
 
 The message was refused because the mailbox name is either malformed or does not exist.
-
 
 {% anchor h3 %}
 Examples: 
@@ -182,13 +162,11 @@ Examples:
 </ul>
 ***What to do with this response******:*** Don’t retry sending to this address, it’s fairly likely that it’s a bogus or mistyped address.
 
-
 {% anchor h2 %}
 554 
 {% endanchor %}
 
 The message failed. This response is a ‘default’ of sorts, but can be attributed to anything from planetary alignment, tides of the moon or gypsy curses. Generally a very vague NDR, but refer to the human-readable portion of the message for further instruction.
-
 
 {% anchor h3 %}
 Examples: 
@@ -200,7 +178,6 @@ Examples:
 
 </ul>
 ***What to do with this response****:*Use the human readable portion of the message for further guidance, if you’re not sure what to do, just consider the address “bad” unless the recipient contacts you.
-
 
 {% anchor h2 %}
 Other 

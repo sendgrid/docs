@@ -14,7 +14,6 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 
 * * * * *
 
-
 {% anchor h2 %}
 Create Monitor Record 
 {% endanchor %}
@@ -70,9 +69,7 @@ Obtain a complete list of all customer.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -85,7 +82,6 @@ Obtain a complete list of all customer.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -105,10 +101,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -123,8 +116,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -132,11 +123,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -149,10 +136,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Edit Monitor Record 
@@ -215,9 +199,7 @@ Make modifications to an existing Monitor record.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -230,7 +212,6 @@ Make modifications to an existing Monitor record.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -250,10 +231,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -268,8 +246,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -277,11 +253,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -294,10 +266,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Monitor Record 
@@ -342,9 +311,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -357,7 +324,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -377,10 +343,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -395,8 +358,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -404,11 +365,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -421,10 +378,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 List All Monitor Records 
@@ -463,9 +417,7 @@ List all available monitor records a reseller has.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -478,7 +430,6 @@ List all available monitor records a reseller has.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -502,9 +453,7 @@ monitors><monitor><name>sampleNameA</name><email>example@example.com</email><fre
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Append A Customer To A Monitor Record 
@@ -555,9 +504,7 @@ Append a monitor record to a existing record onto a customer.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -570,7 +517,6 @@ Append a monitor record to a existing record onto a customer.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -590,10 +536,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -608,8 +551,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -617,11 +558,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -634,10 +571,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Detach A Monitor Record From A Customer 
@@ -682,9 +616,7 @@ Detach a customer from a monitor record.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -697,7 +629,6 @@ Detach a customer from a monitor record.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -717,10 +648,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -735,8 +663,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -744,11 +670,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -759,6 +681,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

@@ -56,11 +56,9 @@ print_r($response);
 {% endcodeblock %}
 
 
-
 ## An Email Sent Using the SMTPAPI Header
 
 This example takes the previous example a step further by adding our SMTPAPI header to set a category and send out to multiple recipients. The category is called test_category, and the email will go out to both example1@sendgrid.com and example2@sendgrid.com. The normal to address, example3@sendgrid.com, will not receive an email.
-
 
 
 {% codeblock lang:php %}
@@ -114,11 +112,9 @@ print_r($response);
 {% endcodeblock %}
 
 
-
 ## An Email Sent Including a File Attachment
 
 This example adds the additional attachment parameter to attach a file called myfile. This example assumes the file is in the same directory as your code otherwise you need to specify the full path of the file in the \$filePath variable.
-
 
 
 {% codeblock lang:php %}
@@ -168,5 +164,4 @@ print_r($response);
 
 ?>
 {% endcodeblock %}
-
 

@@ -16,7 +16,6 @@ Step 1 — Create New List
 
 You will need to decide on a name for the list in order to identify it later. To create the list, click on "Continue".
 
-
 {% anchor h3 %}
 Step 2 — Add Recipients 
 {% endanchor %}
@@ -52,7 +51,6 @@ Step 3 — Verify New List
 
 Here you can see email addresses uploaded from the previous step and you can batch-delete the ones you don't need. Verify - will just save the list and redirect to My Recipient Lists.
 
-
 {% anchor h2 %}
 Manage Recipients 
 {% endanchor %}
@@ -69,7 +67,6 @@ Here you can see your previously created recipient lists with the following info
 -   Click rate
 
 You can filter the recipient lists by name, using the search form at the top of the page.
-
 
 {% anchor h3 %}
 Update List 
@@ -100,7 +97,6 @@ The exact steps to follow in order to take the Delete actions are:
 -   Click "Delete".
 -   Confirm the action (OK or Cancel).
 
-
 {% info %}
 If you try to copy or move emails that already exist at the target destination, this operation will fail for those emails. 
 {% endinfo %}
@@ -111,13 +107,11 @@ Stats
 
 This page shows you delivery stats for this list, by default, this displays stats for all marketing email sent to this list. You can view, print, or download this information to excel. You can also select subsets of stats for this list, i.e. stats for just one marketing emailsent to this list.
 
-
 {% anchor h3 %}
 Download to Excel 
 {% endanchor %}
 
 Allows you to export the stats into an XLS file which you can save locally.
-
 
 {% anchor h3 %}
 Print View 
@@ -135,7 +129,6 @@ Allows you to export email addresses from the list based on type. This can be th
 -   Invalid Emails
 -   Unsubscribed Emails
 -   Spam Reports
-
 
 {% anchor h3 %}
 Manage Unsubscribes 
@@ -157,7 +150,6 @@ You can take the following actions depending on which category you want to make 
 -   Resubscribe All (you can resubscribe all the emails to a list by a category).
 -   Upload (you can upload a new list of resubscribes or unsubscribes to a your list).
 
-
 {% anchor h3 %}
 Subscription Widget 
 {% endanchor %}
@@ -169,7 +161,6 @@ This form enables your visitors to subscribe to your marketing email directly fr
 #### Generate Subscription Widget embedded code
 
 On the "Manage Recipients Lists" page, you can click on the "Subscription Widget" link under a certain list. This will open a pop-up where you will have to input the domain where the widget will be used. The domain is mandatory because it will be used to validate the request for adding the recipient into the SendGrid database. Once the domain is filled in, you can click on Generate Widget Code button.
-
 
 {% anchor h3 %}
 Use the embedded code 

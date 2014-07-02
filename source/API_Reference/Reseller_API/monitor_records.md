@@ -12,7 +12,6 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 
 * * * * *
 
-
 {% anchor h2 %}
 Create Monitor Record 
 {% endanchor %}
@@ -69,13 +68,12 @@ Obtain a complete list of all customer.
 </table>
 
 
-
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -87,7 +85,6 @@ Obtain a complete list of all customer.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Edit Monitor Record 
@@ -151,13 +148,12 @@ Make modifications to an existing Monitor record.
 </table>
 
 
-
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -169,7 +165,6 @@ Make modifications to an existing Monitor record.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Monitor Record 
@@ -215,13 +210,12 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 </table>
 
 
-
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -233,7 +227,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 List All Monitor Records 
@@ -273,7 +266,6 @@ List all available monitor records a reseller has.
 </table>
 
 
-
 {% apiexample list POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=lis %}
   {% response json %}
 [
@@ -295,7 +287,7 @@ List all available monitor records a reseller has.
     ]
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -321,7 +313,6 @@ List all available monitor records a reseller has.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Append A Customer To A Monitor Record 
@@ -373,13 +364,12 @@ Append a monitor record to a existing record onto a customer.
 </table>
 
 
-
 {% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -391,7 +381,6 @@ Append a monitor record to a existing record onto a customer.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Detach A Monitor Record From A Customer 
@@ -437,13 +426,12 @@ Detach a customer from a monitor record.
 </table>
 
 
-
 {% apiexample detach POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

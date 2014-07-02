@@ -57,13 +57,11 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 {% xmljsontabs get %}
 
 <div class="tab-content">
 <div class="tab-pane" id="get-xml">
 ### Call
-
 
 
 {% codeblock %}
@@ -91,12 +89,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 
 {% codeblock %}
@@ -122,13 +117,10 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Bounces 
@@ -179,13 +171,11 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
    </tbody>
 </table>
 
-
 {% xmljsontabs delete %}
 
 <div class="tab-content">
 <div class="tab-pane" id="delete-xml">
 ### Call
-
 
 
 {% codeblock %}
@@ -202,10 +192,7 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -218,12 +205,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane" id="delete-json">
 ### Call
-
 
 
 {% codeblock %}
@@ -238,11 +222,7 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -252,8 +232,5 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
-

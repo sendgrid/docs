@@ -14,7 +14,6 @@ For more information about using this app, please refer to [Google's URL Builder
 
 We default the settings to Google's recommendations. Anything you enter into those fields in the App Settings or via API will take precedence.
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -63,7 +62,6 @@ Settings
 </table>
 
 
-
 {% anchor h2 %}
 Example 
 {% endanchor %}
@@ -74,4 +72,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#ganalytics) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Google-Analytics) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

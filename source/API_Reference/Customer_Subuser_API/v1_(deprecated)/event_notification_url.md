@@ -41,7 +41,6 @@ Retrieve
 <div class="tab-pane" id="get-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
@@ -55,7 +54,6 @@ Retrieve
 ### Response
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -64,12 +62,9 @@ Retrieve
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -84,8 +79,6 @@ Retrieve
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
@@ -93,13 +86,10 @@ Retrieve
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Update / Set URL 
@@ -140,7 +130,6 @@ Update / Set URL
 <div class="tab-pane" id="set-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
@@ -154,7 +143,6 @@ Update / Set URL
 ### Response
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -165,12 +153,9 @@ Update / Set URL
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="set-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -185,8 +170,6 @@ Update / Set URL
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -194,13 +177,10 @@ Update / Set URL
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete 
@@ -235,7 +215,6 @@ Delete
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
@@ -249,7 +228,6 @@ Delete
 ### Response
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -260,12 +238,9 @@ Delete
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -280,8 +255,6 @@ Delete
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -289,8 +262,5 @@ Delete
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
-

@@ -58,9 +58,7 @@ Note that you can use *either* the days parameter *or* the `start_date` and `end
    </tbody>
 </table>
 
-
 To retrive statistics for the Marketing Emails application you can use [Category Statistics](#-Category-Statistics) with `category=Newsletter` parameter.
-
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
   {% response json %}
@@ -90,7 +88,7 @@ To retrive statistics for the Marketing Emails application you can use [Category
     "spamreports": 2
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -125,7 +123,6 @@ To retrive statistics for the Marketing Emails application you can use [Category
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Aggregates 
@@ -168,7 +165,6 @@ Retrieve all-time totals for your customer
 </table>
 
 
-
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -178,7 +174,7 @@ Retrieve all-time totals for your customer
   "opens": 9992,
   "spamreports": 5
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -194,7 +190,6 @@ Retrieve all-time totals for your customer
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Category List 
@@ -240,7 +235,6 @@ Retrieve a list of all the categories used in your customers account.
 </table>
 
 
-
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
   {% response json %}
 [
@@ -254,7 +248,7 @@ Retrieve a list of all the categories used in your customers account.
     "category": "categoryC"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -268,7 +262,6 @@ Retrieve a list of all the categories used in your customers account.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Category Statistics 
@@ -331,7 +324,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 </table>
 
 
-
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
@@ -354,7 +346,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
     "spamreports": 7
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

@@ -20,4 +20,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#footer) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Footer) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

@@ -12,7 +12,6 @@ Many ISPs authenticate e-mail using DKIM certification. DKIM works by having a c
 
 By default, SendGrid signs all e-mail with DKIM to improve its deliverability. For shared accounts such as Free or Bronze plans, this signature uses the sendgrid.me domain. For higher tier packages with whitelabeling setup a custom domain is used. In order for this custom domain to be correctly certified the appropriate public key MUST be present in the domain's DNS records. For more info on how this record is added go [here]({{root_url}}/User_Guide/whitelabel_wizard.html).
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -39,10 +38,8 @@ Settings
    </tbody>
 </table>
 
-
 Settings may be changed through:
 
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#dkim) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-DKIM) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

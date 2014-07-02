@@ -40,9 +40,7 @@ Get Current Settings
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -57,7 +55,6 @@ Get Current Settings
 ### Response: Success
 
 
-
 {% codeblock %}
 parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
@@ -67,9 +64,7 @@ parse></parse
 {% endcodeblock %}
 
 
-
 ### Response: Empty
-
 
 
 {% codeblock %}
@@ -81,9 +76,7 @@ parse></parse
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
 
 
 {% codeblock %}
@@ -103,10 +96,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -121,8 +111,6 @@ result><message>success</message></result>
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -130,11 +118,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -147,10 +131,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Edit Entry 
@@ -196,9 +177,7 @@ Edit Entry
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -211,7 +190,6 @@ Edit Entry
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -231,10 +209,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -249,8 +224,6 @@ result><message>success</message></result>
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -258,11 +231,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -275,10 +244,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Entry 
@@ -318,9 +284,7 @@ Delete Entry
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -333,7 +297,6 @@ Delete Entry
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -353,10 +316,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -371,8 +331,6 @@ result><message>success</message></result>
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -380,11 +338,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -395,6 +349,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

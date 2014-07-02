@@ -12,7 +12,6 @@ You can also add custom tags to your emails. Custom Tags can be created by going
 
 Be sure to use a tag name the corresponds with an actual column of data in your recipient list file. If not, the tag will not insert any data into the content of the email and the end user will see the custom tag. If you have created a new custom tag for a recipient list (one that has no column of data) then we will create a new column for you on your recipient list that you can backfill with the correct data so when using the custom tag actual data will be passed into the content of your email.
 
-
 {% anchor h2 %}
 [weblink] 
 {% endanchor %}
@@ -20,15 +19,12 @@ Be sure to use a tag name the corresponds with an actual column of data in your 
 Place the `[weblink]` tag in the body to provide a link to a hosted copy of the email content. The tag is replaced with the URL, so to create a link, use the following HTML:
 
 
-
 {% codeblock lang:html %}
 <a href="[weblink]">View this email in your browser</a>
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 [unsubscribe] 
@@ -37,15 +33,12 @@ Place the `[weblink]` tag in the body to provide a link to a hosted copy of the 
 Place the `[unsubscribe]` tag in the body to provide an unsubscribe link. The tag is replaced with the URL, so to create a link, use the following HTML:
 
 
-
 {% codeblock lang:html %}
 <a href="[unsubscribe]">Unsubscribe from these emails</a>
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Sender Address Tags 
@@ -54,16 +47,13 @@ Sender Address Tags
 There are several tags you can use to embed sender address information in your email body. Available tags are `[%from_name%]`, `[%address%]`, `[%city%]`, `[%state%]`, and `[%zip%]`.
 
 
-
 {% codeblock lang:html %}
 [%from_name%]
 [%address%], [%city%], [%state%], [%zip%]
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Custom Tag Sending Best Practices 

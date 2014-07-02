@@ -21,4 +21,3 @@ navigation:
 <button id="validate_headers" type="button" class="btn btn-primary">
 Check Headers
 </button>
-

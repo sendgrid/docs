@@ -16,7 +16,6 @@ This app is differs from our other apps, and may be found in a [different locati
 
 More documentation may be found with the [Template Engine API Reference]({{root_url}}/API_Reference/Template_Engine_API/index.html).
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -38,10 +37,8 @@ Settings
    </tbody>
 </table>
 
-
 Settings may be changed through:
 
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#templates) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Template_Engine_API/index.html) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/templates) (on an account wide basis)
-

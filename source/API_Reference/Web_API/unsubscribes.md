@@ -8,7 +8,6 @@ navigation:
 
 Retrieve, delete and add entries in the Unsubscribes list.
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -32,7 +31,7 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
     "created": "2012-09-06 14:03:18"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -48,7 +47,6 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 
 * * * * *
 
-
 {% anchor h2 %}
 delete 
 {% endanchor %}
@@ -63,7 +61,7 @@ Delete an address from the Unsubscribe list. Please note that if no parameters a
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -75,7 +73,6 @@ Delete an address from the Unsubscribe list. Please note that if no parameters a
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 add 
@@ -91,7 +88,7 @@ Add email addresses to the Unsubscribe list.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

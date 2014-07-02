@@ -8,7 +8,6 @@ navigation:
 
 The [Email Activity](http://sendgrid.com/logs/index) page allows you to view a real time log of all the email that has been sent on your account. These logs display all events (delivered, bounce, open, etc) and can be viewed by the most recent activity, or searched by email addresses.
 
-
 {% warning %}
 Email activity only shows a limited amount of recent data. In order to access data in real time, you may want to consider using our [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html "Event API"). 
 {% endwarning %}

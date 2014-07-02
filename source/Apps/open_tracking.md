@@ -12,7 +12,6 @@ The Open Tracking app adds an invisible image at the end of the email which can 
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -26,4 +25,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#opentrack) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Open-Tracking) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

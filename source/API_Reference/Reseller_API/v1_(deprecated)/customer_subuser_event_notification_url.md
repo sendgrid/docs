@@ -40,9 +40,7 @@ Retrieve
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -55,7 +53,6 @@ Retrieve
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -79,9 +76,7 @@ url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Update / Set URL 
@@ -121,9 +116,7 @@ Update / Set URL
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -136,7 +129,6 @@ Update / Set URL
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -163,10 +155,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete 
@@ -200,9 +189,7 @@ Delete
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -215,7 +202,6 @@ Delete
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -240,6 +226,4 @@ result><message>success</message></result>
   "message": "success"
 }
 {% endcodeblock %}
-
-
 

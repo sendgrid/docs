@@ -11,7 +11,6 @@ navigation:
 <div>
 Allow subusers to manage their account from your website using an iframe to our site.
 
-
 {% anchor h2 %}
 Initial API Call 
 {% endanchor %}
@@ -54,7 +53,6 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 ### Response
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -65,12 +63,9 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="call-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -85,8 +80,6 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 ### Response
 
 
-
-
 {% codeblock lang:json %}
 {
   "params": "al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
@@ -94,13 +87,10 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 iFrame Usage 
@@ -108,4 +98,3 @@ iFrame Usage
 Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} <iframe src="https://sendgrid.com/account?al_username=username&amp;al_subuser_name=example@example.com&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe> {% endcodeblock %}
 
 </div>
-

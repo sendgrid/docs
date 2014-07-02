@@ -10,7 +10,6 @@ The Address Whitelist App whitelists a specified e-mail address or domain for wh
 
 ![Address Whitelist App Image]({{root_url}}/images/address_whitelist.png "Address Whitelist")
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -32,11 +31,9 @@ Settings
    </tbody>
 </table>
 
-
 There is no practical limit to the number of domains you add in this way.
 
 Settings may be changed through:
 
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Address-Whitelist) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

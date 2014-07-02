@@ -8,7 +8,6 @@ navigation:
 
 Allow customers to manage their account from your website using an iframe to our site.
 
-
 {% anchor h2 %}
 Initial API Call 
 {% endanchor %}
@@ -50,13 +49,12 @@ In order to login your customer, you need to contact our web API to retrieve the
 </table>
 
 
-
 {% apiexample call POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=customer@example.com %}
   {% response json %}
 {
   "params": "al_username=username&al_subuser_name=customer@example.com&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -69,7 +67,6 @@ In order to login your customer, you need to contact our web API to retrieve the
 
 * * * * *
 
-
 {% anchor h2 %}
 iFrame Usage 
 {% endanchor %}
@@ -80,4 +77,3 @@ Using the parameters returned from the Initial API Call, you can construct the i
 
 </div>
 </div>
-

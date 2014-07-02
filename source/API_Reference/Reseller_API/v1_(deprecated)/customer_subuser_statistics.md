@@ -50,7 +50,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -62,7 +61,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
@@ -85,9 +83,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Retrieve Aggregates 
@@ -119,7 +115,6 @@ Retrieve all-time totals for your customer subuser
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -131,7 +126,6 @@ Retrieve all-time totals for your customer subuser
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
@@ -154,9 +148,7 @@ Retrieve all-time totals for your customer subuser
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Category List 
@@ -188,7 +180,6 @@ Retrieve a list of all the categories used in your customer subusers account.
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -200,7 +191,6 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
@@ -223,9 +213,7 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Category Statistics 
@@ -275,7 +263,6 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -288,7 +275,6 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 #### Command - Using an array of categories
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -300,7 +286,6 @@ Retrieve statistics broken down by category. If the category does not exist, the
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
@@ -333,5 +318,4 @@ Retrieve statistics broken down by category. If the category does not exist, the
 {% codeblock %}
 {"date":"2009-06-20","category":,"categoryA","requests":12342,"bounces":12,"clicks":10223,"opens":9992,"spamreports":5},{"date":"2009-06-21",,"category":,"categoryB","requests":32342,"bounces":10,"clicks":14323,"opens":10995,"spamreports":7}
 {% endcodeblock %}
-
 

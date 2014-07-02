@@ -18,7 +18,6 @@ A peer-initiated invitation system can help your subscribers spread the word abo
 -   **Clearly express the purpose of the invitation.**Recipients must understand what they are being invited to.
 -   **After the initial invitation, don't send more than one follow-up** (reminder) email to invitees that didn't respond to the first invitation.
 
-
 {% info %}
 You increase the odds of your invitations reaching the recipient when you structure your systems and processes to send the right message, to the right person, at the right time, with the right frequency. If you don't, your messages will be marked as spam and your marketing results will suffer. 
 {% endinfo %}
@@ -30,4 +29,3 @@ SendGrid also strongly recommends:
 -   Beware of offering invitation incentives to your subscribers. Incentives may encourage them to invite people who aren't likely to want your service, and this could lead to backlash.
 -   Monitor your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don't want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.
 -   Typos happen. Pre-screen the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct, and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).
-

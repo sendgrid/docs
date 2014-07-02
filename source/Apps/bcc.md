@@ -31,7 +31,6 @@ Settings
 </table>
 
 
-
 {% warning %}
 Please note, enabling this App will also increase the amount of credits you use, as each email you send will also trigger an accompanying BCC email. 
 {% endwarning %}
@@ -41,4 +40,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#bcc) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-BCC-Blind-Carbon-Copy) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

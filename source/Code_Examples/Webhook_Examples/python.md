@@ -15,7 +15,6 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 Given this scenario, the following are the parameters you would set at the [Parse API settings page](http://sendgrid.com/developer/reply):
 
 
-
 {% codeblock %}
 Hostname: email.sendgrid.biz
 {% endcodeblock %}
@@ -53,5 +52,4 @@ def sendgrid_parser():
 
   return "OK"
 {% endcodeblock %}
-
 

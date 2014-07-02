@@ -48,9 +48,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -63,7 +61,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -88,9 +85,7 @@ bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>ho
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Bounces 
@@ -132,9 +127,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -149,7 +142,6 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 ### Response: Success
 
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -159,9 +151,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -176,8 +166,6 @@ result><message>Email does not exist</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -185,11 +173,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -197,6 +181,4 @@ result><message>Email does not exist</message></result>
   "message": "Email does not exist"
 }
 {% endcodeblock %}
-
-
 

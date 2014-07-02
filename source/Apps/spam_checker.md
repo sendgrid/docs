@@ -15,7 +15,6 @@ We use SpamAssassin to process the spam checks for this filter. The default thre
 The Default Value for this App is 5, and can be ranged between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless of emails, where as 9 will only drop the spammiest of spam emails. 
 {% endwarning %}
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -42,9 +41,7 @@ Settings
    </tbody>
 </table>
 
-
 The HTTP POST request that you receive at the designated URL will contain parameters with details about the spam checker event. If the URL is not specified, this HTTP POST request will simply not occur.
-
 
 {% anchor h2 %}
 Parameters: 
@@ -70,7 +67,6 @@ Parameters:
 </table>
 
 
-
 {% anchor h2 %}
 Example POST: 
 {% endanchor %}
@@ -78,7 +74,6 @@ Example POST:
 {% anchor h3 %}
 Headers 
 {% endanchor %}
-
 
 {% codeblock %}
 Content-Type: multipart/form-data; boundary=xYzZY 
@@ -103,4 +98,3 @@ Settings may be changed through:
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#spamcheck) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-SPAM-Filter-Checker) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
-

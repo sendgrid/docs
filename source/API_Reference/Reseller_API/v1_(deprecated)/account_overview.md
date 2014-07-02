@@ -35,7 +35,6 @@ View general account information regarding your customers, including billing cyc
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
@@ -47,7 +46,6 @@ View general account information regarding your customers, including billing cyc
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock lang:xml %}
@@ -71,10 +69,7 @@ View general account information regarding your customers, including billing cyc
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -93,10 +88,7 @@ View general account information regarding your customers, including billing cyc
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -109,7 +101,6 @@ View general account information regarding your customers, including billing cyc
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -126,6 +117,4 @@ Package","credits_allowed":50000,"credits_used":100000,"credits_remain":0,"credi
   ]
 }
 {% endcodeblock %}
-
-
 

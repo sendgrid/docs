@@ -12,7 +12,6 @@ Enable the Sendwithus app via the [SendGrid Apps page](https://sendgrid.com/app)
 
 * * * * *
 
-
 {% anchor h2 %}
 Settings 
 {% endanchor %}
@@ -36,7 +35,6 @@ If you do not have any SendGrid Instances on Sendwithus, there are 2 options:
 ![]({{root_url}}/images/sendwithus_settings3.png)
 
 ​1. Create an SendGrid Instance using the the main account. This is done by creating a credential on SendGrid that will permit Sendwithus to interact with the SendGrid API.
-
 
 {% warning %}
 Caution: This will change the Event URL, Clicktracking, and Opentracking so that Sendwithus can keep track of deliverability. If you do not want these to change, please consider using the second option. 

@@ -14,4 +14,3 @@ navigation:
 ### A/B Split Testing
 
 You can create multiple versions of a Marketing Email that, based on recipient activity, will automatically determine the winning variation which will then send to the remaining recipients. Kayla provides simple instructions for all of the steps needed to take advantage of this advanced feature.
-

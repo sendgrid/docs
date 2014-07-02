@@ -44,7 +44,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -56,7 +55,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
@@ -80,9 +78,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Unsubscribes 
@@ -120,7 +116,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -134,7 +129,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -145,10 +139,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -161,10 +152,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -179,8 +167,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -188,11 +174,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -202,10 +184,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Add Unsubscribes 
@@ -243,7 +222,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
@@ -257,7 +235,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -268,10 +245,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -284,10 +258,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -302,8 +273,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -311,11 +280,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -323,6 +288,4 @@ Add unsubscribe email records to their account if they need to stop sending emai
   "message": "Email already exists"
 }
 {% endcodeblock %}
-
-
 

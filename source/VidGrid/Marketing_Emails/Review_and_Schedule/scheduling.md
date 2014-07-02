@@ -14,4 +14,3 @@ navigation:
 ### Scheduling Your Marketing Email
 
 Kayla’s tech tip shows you the options to schedule your Marketing Email for delivery. Use this feature to ensure that your Marketing Email always sends on time.
-

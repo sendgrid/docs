@@ -12,7 +12,6 @@ Allow customers to manage their account from your website using an iframe to our
 
 * * * * *
 
-
 {% anchor h2 %}
 Initial API Call 
 {% endanchor %}
@@ -53,9 +52,7 @@ In order to login your customer, you need to contact our web API to retrieve the
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -68,7 +65,6 @@ In order to login your customer, you need to contact our web API to retrieve the
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -92,9 +88,7 @@ params><params>al_username=username&amp;al_subuser_name=customer@example.com&amp
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 iFrame Usage 

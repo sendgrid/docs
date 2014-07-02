@@ -36,7 +36,6 @@ taken
 available
 :   All available IP addresses for the account including all free IP addresses. If a subuser is deactivated*and* is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone
 
-
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all %}
   {% response json %}
 [
@@ -50,7 +49,7 @@ available
     "ip": "255.255.255.252"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -64,7 +63,6 @@ available
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Subuser IP Usage 
@@ -90,7 +88,6 @@ If your account has more than one IP address, you can manage what IPs your subus
       </tr>
    </tbody>
 </table>
-
 
 {% apiexample usage POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com %}
   {% response json %}
@@ -118,7 +115,7 @@ If your account has more than one IP address, you can manage what IPs your subus
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -137,7 +134,6 @@ If your account has more than one IP address, you can manage what IPs your subus
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Subuser IP Assignment 
@@ -174,13 +170,12 @@ You need to assign at least ONE IP to your subuser.
    </tbody>
 </table>
 
-
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

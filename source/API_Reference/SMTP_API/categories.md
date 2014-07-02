@@ -21,7 +21,6 @@ The events that can be associated with category include:
 
 The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/Apps/). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated App is enabled.
 
-
 {% warning %}
 Categories must be in 7bit encoding using the US-ASCII character set. 
 {% endwarning %}
@@ -41,8 +40,6 @@ Example
 You can use SendGrid's [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
 
 
-
-
 {% codeblock lang:json %}
 {
   "category": "Example Category"
@@ -50,13 +47,9 @@ You can use SendGrid's [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/) to add th
 {% endcodeblock %}
 
 
-
-
 In this example, SendGrid would associate statistics for the email containing that header with the category **Example Category**.
 
 You can assign multiple categories per message, up to 10:
-
-
 
 
 {% codeblock lang:json %}
@@ -69,6 +62,4 @@ You can assign multiple categories per message, up to 10:
   ]
 }
 {% endcodeblock %}
-
-
 

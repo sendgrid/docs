@@ -28,13 +28,12 @@ Authenticate a subuser on your website before displaying their account informati
    </tbody>
 </table>
 
-
 {% apiexample auth POST https://api.sendgrid.com/apiv2/customer.auth api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

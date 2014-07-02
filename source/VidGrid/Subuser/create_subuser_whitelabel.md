@@ -17,4 +17,3 @@ navigation:
 In this video, Anthony walks us through the creation of a subuser that has its own Whitelable, separate from its Parent account's.
 
 </div>
-

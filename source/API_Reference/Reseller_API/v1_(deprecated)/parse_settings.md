@@ -49,9 +49,7 @@ Get Current Settings
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -66,7 +64,6 @@ Get Current Settings
 ### Response: Success
 
 
-
 {% codeblock %}  <parse><entry><hostname>www.example.com</hostname><url>www.mydomain.com/parse.php</url><spam_check>1</spam_check></entry></parse
 {% endcodeblock %}
 <h3>Response: Empty</h3>
@@ -74,9 +71,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
 ### Response: Empty
-
 
 
 {% codeblock %}
@@ -88,9 +83,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -103,10 +96,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -119,7 +109,6 @@ Get Current Settings
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -137,11 +126,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -151,10 +136,7 @@ Get Current Settings
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Edit Entry 
@@ -209,9 +191,7 @@ Edit Entry
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -226,8 +206,6 @@ Edit Entry
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "error",
@@ -238,10 +216,7 @@ Edit Entry
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -254,10 +229,7 @@ Edit Entry
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -270,7 +242,6 @@ Edit Entry
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -288,11 +259,7 @@ Edit Entry
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -302,10 +269,7 @@ Edit Entry
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Entry 
@@ -354,9 +318,7 @@ Delete Entry
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -371,8 +333,6 @@ Delete Entry
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "error",
@@ -383,10 +343,7 @@ Delete Entry
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -399,10 +356,7 @@ Delete Entry
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -415,7 +369,6 @@ Delete Entry
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -433,11 +386,7 @@ Delete Entry
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -445,6 +394,4 @@ Delete Entry
   "message": "success"
 }
 {% endcodeblock %}
-
-
 

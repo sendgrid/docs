@@ -25,7 +25,7 @@ List all of the available apps. {% parameters list %}
   "description": "This plugin allows you to send an email message to twitter",
   "activated": false
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -45,7 +45,6 @@ Note: The *name* entry is used in all the other API calls to identify an app. {%
 
 * * * * *
 
-
 {% anchor h2 %}
 Activate App 
 {% endanchor %}
@@ -59,7 +58,7 @@ Activate App
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -71,7 +70,6 @@ Activate App
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Deactivate App 
@@ -86,7 +84,7 @@ Deactivate App
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -98,7 +96,6 @@ Deactivate App
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Customize App 
@@ -114,7 +111,7 @@ These API calls require that settings are passed using POST.
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -127,7 +124,6 @@ These API calls require that settings are passed using POST.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Get Current Settings 
@@ -147,7 +143,7 @@ Get Current Settings
     }
   ]
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

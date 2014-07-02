@@ -57,9 +57,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -72,7 +70,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -97,9 +94,7 @@ unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12
 {% endcodeblock %}
 
 
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Unsubscribes 
@@ -141,9 +136,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -158,7 +151,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 ### Response: Success
 
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -168,9 +160,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -185,8 +175,6 @@ result><message>Email does not exist</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -194,11 +182,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -208,10 +192,7 @@ result><message>Email does not exist</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Add Unsubscribes 
@@ -253,9 +234,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -270,7 +249,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 ### Response: Success
 
 
-
 {% codeblock %}
 result><message>success</message></result>
 {% endcodeblock %}
@@ -280,9 +258,7 @@ result><message>Email already exists</message></result>
 {% endcodeblock %}
 
 
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -297,8 +273,6 @@ result><message>Email already exists</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -306,11 +280,7 @@ result><message>Email already exists</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -318,6 +288,4 @@ result><message>Email already exists</message></result>
   "message": "Email already exists"
 }
 {% endcodeblock %}
-
-
 

@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to manage and create Recipient Lists associated with the Marketing Email feature.
 
-
 {% anchor h2 %}
 add 
 {% endanchor %}
@@ -44,13 +43,12 @@ Create a new Recipient List.
    </tbody>
 </table>
 
-
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/add list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -62,7 +60,6 @@ Create a new Recipient List.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 edit 
@@ -93,13 +90,12 @@ Rename a Recipient List.
    </tbody>
 </table>
 
-
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/lists/edit list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -111,7 +107,6 @@ Rename a Recipient List.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 get 
@@ -136,7 +131,6 @@ List all Recipient Lists on your account, or check if a particular List exists.
    </tbody>
 </table>
 
-
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/lists/get list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -144,7 +138,7 @@ List all Recipient Lists on your account, or check if a particular List exists.
     "list": "test"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -158,7 +152,6 @@ List all Recipient Lists on your account, or check if a particular List exists.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 delete 
@@ -183,13 +176,12 @@ Remove a Recipient List from your account.
    </tbody>
 </table>
 
-
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/delete list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

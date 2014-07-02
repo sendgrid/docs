@@ -10,7 +10,6 @@ List all packages available to your account.
 
 There are no extra parameters required for this call
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.packages api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -34,7 +33,7 @@ There are no extra parameters required for this call
     "has_ip": true
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

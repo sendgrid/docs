@@ -31,9 +31,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -46,7 +44,6 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock %}
@@ -71,5 +68,4 @@ usage><invoices><invoice><number>201001000100</number><credits>123456</credits><
 Bill","prorated":0,"start_date":"2010-08-01","end_date":"2010-08-31","username":"user4@example.com","package":"Example
 Package","additional_charges":0,"final_amount":1007.95}
 {% endcodeblock %}
-
 

@@ -8,7 +8,6 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Bounces list.
 
-
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -65,7 +64,7 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
     "email": "test@brandonmwest.com"
   }
 ]
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -89,7 +88,6 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
 
 * * * * *
 
-
 {% anchor h2 %}
 delete 
 {% endanchor %}
@@ -108,7 +106,7 @@ Delete an address from the Bounce list.
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -118,7 +116,6 @@ Delete an address from the Bounce list.
 {% endapiexample %}
 
 * * * * *
-
 
 {% anchor h2 %}
 Count 
@@ -133,7 +130,7 @@ Count
 {
   "count": "4"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 

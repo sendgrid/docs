@@ -14,7 +14,6 @@ There are no extra parameters required for this call
 
 ### XML Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.packages.xml
@@ -26,7 +25,6 @@ There are no extra parameters required for this call
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -46,10 +44,7 @@ result><packages><package><name>Basic Package</name><price>9.95</price><descript
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -62,7 +57,6 @@ result><packages><package><name>Basic Package</name><price>9.95</price><descript
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -78,6 +72,4 @@ result><packages><package><name>Basic Package</name><price>9.95</price><descript
   ]
 }
 {% endcodeblock %}
-
-
 

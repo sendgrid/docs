@@ -12,7 +12,6 @@ Retrieve pending update information for users that have scheduled upgrades to th
 
 * * * * *
 
-
 {% anchor h2 %}
 List Pending Changes 
 {% endanchor %}
@@ -50,9 +49,7 @@ Returns all of the users who have pending changes within your account.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -65,7 +62,6 @@ Returns all of the users who have pending changes within your account.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -85,10 +81,7 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -101,7 +94,6 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -119,10 +111,7 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Delete Pending Changes 
@@ -156,9 +145,7 @@ Cancel/Revert a pending change.
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -171,7 +158,6 @@ Cancel/Revert a pending change.
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -191,10 +177,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -209,8 +192,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -218,11 +199,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -235,10 +212,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Upgrade 
@@ -287,9 +261,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -302,7 +274,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -322,10 +293,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -340,8 +308,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -349,11 +315,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -366,10 +328,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Downgrade 
@@ -418,9 +377,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -433,7 +390,6 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -453,10 +409,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -471,8 +424,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -480,11 +431,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -497,10 +444,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Immediate Close 
@@ -539,9 +483,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -554,7 +496,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -574,10 +515,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -592,8 +530,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -601,11 +537,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -618,10 +550,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Upgrade 
@@ -670,9 +599,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -685,7 +612,6 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -705,10 +631,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -723,8 +646,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -732,11 +653,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -749,10 +666,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Downgrade 
@@ -801,9 +715,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -816,7 +728,6 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -836,10 +747,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -854,8 +762,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -863,11 +769,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -880,10 +782,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 * * * * *
-
 
 {% anchor h2 %}
 Scheduled Close 
@@ -922,9 +821,7 @@ Close or revert an account to a free user at the end of the user's billing cycle
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -937,7 +834,6 @@ Close or revert an account to a free user at the end of the user's billing cycle
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -957,10 +853,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -975,8 +868,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -984,11 +875,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -999,6 +886,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

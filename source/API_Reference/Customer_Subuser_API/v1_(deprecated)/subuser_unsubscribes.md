@@ -48,7 +48,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 <div class="tab-pane" id="get-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml
@@ -60,7 +59,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
 
 
 {% codeblock lang:xml %}
@@ -80,12 +78,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="get-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -98,8 +93,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endrequestblock %}
 
 ### Response
-
-
 
 
 {% codeblock lang:json %}
@@ -116,13 +109,10 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Delete Unsubscribes 
@@ -164,7 +154,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 <div class="tab-pane" id="delete-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml
@@ -178,7 +167,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -189,10 +177,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -205,12 +190,9 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="delete-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -225,8 +207,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -234,11 +214,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -248,13 +224,10 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
 
 * * * * *
-
 
 {% anchor h2 %}
 Add Unsubscribes 
@@ -296,7 +269,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 <div class="tab-pane" id="add-xml">
 ### Call
 
-
 {% requestblock %}
 
   {% requesturl POST %}https://api.sendgrid.com/api/user.unsubscribes.xml
@@ -310,7 +282,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 ### Response: Success
 
 
-
 {% codeblock lang:xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -321,10 +292,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
 
 
 {% codeblock lang:xml %}
@@ -337,12 +305,9 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 </div>
 <div class="tab-pane active" id="add-json">
 ### Call
-
 
 {% requestblock %}
 
@@ -357,8 +322,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -366,11 +329,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -380,8 +339,5 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endcodeblock %}
 
 
-
-
 </div>
 </div>
-

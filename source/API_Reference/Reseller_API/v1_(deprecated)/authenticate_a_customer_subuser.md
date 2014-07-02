@@ -32,9 +32,7 @@ Authenticate a customer subuser on your website before displaying their account 
    </tbody>
 </table>
 
-
 ### XML Call
-
 
 {% requestblock %}
 
@@ -47,7 +45,6 @@ Authenticate a customer subuser on your website before displaying their account 
 {% endrequestblock %}
 
 ### Response: Success
-
 
 
 {% codeblock %}
@@ -67,10 +64,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### JSON Call
-
 
 {% requestblock %}
 
@@ -85,8 +79,6 @@ result><message>success</message></result>
 ### Response: Success
 
 
-
-
 {% codeblock lang:json %}
 {
   "message": "success"
@@ -94,11 +86,7 @@ result><message>success</message></result>
 {% endcodeblock %}
 
 
-
-
 ### Response: Error
-
-
 
 
 {% codeblock lang:json %}
@@ -109,6 +97,4 @@ result><message>success</message></result>
   ]
 }
 {% endcodeblock %}
-
-
 

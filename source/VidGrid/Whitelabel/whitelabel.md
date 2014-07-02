@@ -14,4 +14,3 @@ navigation:
 ### Whitelabel Wizard
 
 What is whitelabeling and why should you use it? Mohammed explains what this powerful feature is used for and quickly walks you through the 3 step whitelabeling process. The whitelabel feature is available on Silver packages and higher.
-

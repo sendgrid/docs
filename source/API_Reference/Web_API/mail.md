@@ -12,12 +12,10 @@ navigation:
 
 This endpoint allows you to send email.
 
-
 {% info %}
 There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API. We recommend using these if possible.
 
 [View List »]({{root_url}}/Integrate/libraries.html)
-
 
 {% endinfo %}
 
@@ -131,13 +129,12 @@ Send email.
    </tbody>
 </table>
 
-
 {% apiexample mail POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -150,13 +147,12 @@ Send email.
 
 ### Call: Send to Multiple Recipients
 
-
 {% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
 {
   "message": "success"
 }
-{% endresponse %}
+  {% endresponse %}
   {% response xml %}
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
@@ -174,15 +170,12 @@ Send email.
 Send to one email recipient
 
 
-
 {% codeblock lang:bash %}
 $ curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
 
-
 Send to multiple email recipients
-
 
 
 {% codeblock lang:bash %}
@@ -190,9 +183,7 @@ $ curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destin
 {% endcodeblock %}
 
 
-
 Send a test with attachment
-
 
 
 {% codeblock lang:bash %}
@@ -204,11 +195,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 {% endcodeblock %}
 
 
-
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
-
 
 
 {% codeblock lang:bash %}
@@ -220,11 +209,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 {% endcodeblock %}
 
 
-
 ### Raw HTTP Dump
 
 The following is a dump of the HTTP data sent to our server to generate an email via our web API.
-
 
 
 {% codeblock %}
