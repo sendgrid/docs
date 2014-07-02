@@ -31,13 +31,14 @@ layout: default
   {% if page.last_modified %}
     <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
   {% endif %}
+  {% if page.hideFeedback != true %}
+    {% include feedback.html %}
+  {% endif %}
 </div>
 </article>
 {% include livedocs_modal.html %}
 
-{% if page.hideFeedback != true %}
-  {% include feedback.html %}
-{% endif %}
+
 <meta itemprop="specialty" content="email">
 <meta itemprop="interactivityType" content="mixed">
 </div>
