@@ -1,4 +1,0 @@
-Hi!  
- How are you?  
-
-EOM \# attach the body of the email \$mime-\>attach(Type =\> 'text/plain', Encoding =\>'-SUGGEST', Data =\> \$text); \$mime-\>attach(Type =\> 'text/html', Encoding =\>'-SUGGEST', Data =\> \$html); \# attach a file my \$my_file_txt = 'example.txt'; \$mime-\>attach ( Path =\> \$my_file_txt, Type =\> 'text/txt', Encoding =\> 'base64' ) or die "Error adding !\\n"; \# Login credentials my \$username = 'yourlogin@sendgrid.net'; my \$password = "yourpassword"; \# Open a connection to the SendGrid mail server my \$smtp = Net::SMTP-\>new('smtp.sendgrid.net', Port=\> 587, Timeout =\> 20, Hello =\> "yourdomain.com"); \# Authenticate \$smtp-\>auth(\$username, \$password); \# Send the rest of the SMTP stuff to the server \$smtp-\>mail(\$from); \$smtp-\>to(\$to); \$smtp-\>data(\$mime-\>stringify); \$smtp-\>quit(); {% endcodeblock %}

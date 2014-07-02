@@ -73,7 +73,7 @@ Configure IIS 6.0 to Relay Outbound Email to SendGrid
 {% anchor h2 %}
 Configure Domains 
 {% endanchor %}
-At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](%20http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true). 
+At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true). 
 {% anchor h2 %}
 Testing Your New Configuration 
 {% endanchor %}
