@@ -130,7 +130,6 @@ per refresh period.
 Each Web API requests returns the following header information 
 regarding rate limits and number of requests left.
 
-
 Depending on the endpoint you are trying to reach, it will have a
 specific number of allowed requests per refresh period. Once this
 threshold has been reached, we will return a status code 429 response.
@@ -250,7 +249,7 @@ the `Content-Type` header.
 GET https://api.sendgrid.net/v3/resource HTTP/1.1
 {% endcodeblock %}
 
-{% codeblock lang:json %}
+{% codeblock lang:http %}
 HTTP/1.1 200 OK
 Content-Type: application/json
 

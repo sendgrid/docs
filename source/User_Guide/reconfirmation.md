@@ -74,4 +74,3 @@ recommendation of 3 months is only a suggestion.
 
 Ultimately, the more frequently you clean your address list, the less 
 likely you will be to have deliverability problems related to old lists.
-

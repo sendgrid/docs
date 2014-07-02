@@ -200,7 +200,7 @@ end
 
 desc "parse XML and JSON codeblocks and identify invalid blocks"
 task :validate_json_xml do
-  htmlfiles = File.join("**", "source", "**", "*.html")
+  htmlfiles = File.join("**", "source", "**", "*.{html,md}")
   
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
@@ -215,7 +215,7 @@ task :validate_json_xml do
     if htmlfile.scan("nodejs").length > 0
       next
     end
-    file = File.open(htmlfile)
+    file = File.open(htmlfile, "r:UTF-8")
     contents = file.read
     file.close
 
@@ -232,9 +232,34 @@ task :validate_json_xml do
       end
     end
 
+    contents.gsub!(/({%\s?response json\s?%})(.*?)({\%\s?endresponse\s?%})/m) do |match|
+      is_json = ($2.strip).to_s.is_json?
+      json = is_json ? JSON.parse($2.strip) : $2
+      
+      if is_json
+        json_valid += 1
+      else
+        puts "\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n--------------------------"
+        json_invalid += 1
+      end
+    end
+
     #Validate the XML
     contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       begin
+        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
+        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
+      rescue
+        xml_invalid += 1
+        puts "\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n---------------------------"
+        next
+      end
+      xml_valid += 1
+    end
+
+    contents.gsub!(/({%\s?response xml\s?%})(.*?)({\%\s?endreponse\s?%})/m) do |match|
+      begin
+        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
         xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
       rescue
         xml_invalid += 1

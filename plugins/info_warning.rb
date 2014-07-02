@@ -1,3 +1,5 @@
+require 'kramdown'
+
 module Jekyll
   class InfoBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
@@ -7,7 +9,7 @@ module Jekyll
     def render(context)
       contents = super
       source = '<div class="callout callout-info">'
-      source += contents
+      source += "#{Kramdown::Document.new(contents).to_html}"
       source += '</div>'
       
       source
@@ -22,7 +24,7 @@ module Jekyll
     def render(context)
       contents = super
       source = '<div class="callout callout-warning">'
-      source += contents
+      source += "#{Kramdown::Document.new(contents).to_html}"
       source += '</div>'
 
       source

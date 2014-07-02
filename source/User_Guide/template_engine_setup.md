@@ -71,4 +71,3 @@ Start Now!
 Start using our Template Engine now by creating your first Template!
 <a href="https://sendgrid.com/templates/new"><img src="{{root_url}}/images/template_engine_6.png" class="img-responsive center-block"/></a>
 </div>
-
