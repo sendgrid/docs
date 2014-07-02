@@ -34,7 +34,7 @@ HTTP/1.1 200 OK
     "html_content": "<%body%>",
     "plain_content": "<%body%>",
     "subject": "<%subject%>",
-    "updated_at": "2014-03-19 18:56:33"
+    "updated_at": 1393768621
 }
 {% endv3response %}
 {% endapiv3example %}
@@ -64,7 +64,7 @@ HTTP/1.1 201 OK
     "html_content": "<%body%>",
     "plain_content": "<%body%>",
     "subject": "<%subject%>",
-    "updated_at": "2014-03-19 18:56:33"
+    "updated_at": 1393768621
 }
   {% endv3response %}
 {% endapiv3example %}
@@ -86,7 +86,7 @@ HTTP/1.1 200 OK
     "html_content": "<%body%>",
     "plain_content": "<%body%>",
     "subject": "<%subject%>",
-    "updated_at": "2014-06-12 11:33:00"
+    "updated_at": 1396447021
 }
   {% endv3response %}
 {% endapiv3example %}
@@ -116,7 +116,7 @@ HTTP/1.1 200 OK
     "html_content": "<%body%>",
     "plain_content": "<%body%>",
     "subject": "<%subject%>",
-    "updated_at": "2014-03-19 18:56:33"
+    "updated_at": 1396447021
 }
 {% endv3response %}
 {% endapiv3example %}
