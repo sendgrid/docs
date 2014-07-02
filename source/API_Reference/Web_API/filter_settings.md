@@ -23,7 +23,8 @@ When using this call, you must define all emails & domains here. Using this call
   
   {% parameter name yes 'addresswhitelist' 'The name of the app for which to apply settings.' %}  
   {% parameter list no 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample addresswhitelist POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
   {% response json %}
 {
@@ -52,7 +53,8 @@ BCC "Blind Carbon Copy"
   
   {% parameter name yes 'bcc' 'The name of the app for which to apply settings.' %}  
   {% parameter bcc yes 'An email address to be the BCC recipient.' 'email@example.com' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample bcc POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com %}
   {% response json %}
 {
@@ -81,7 +83,8 @@ Click Tracking
   
   {% parameter name yes 'clicktrack' 'The name of the app for which to apply settings.' %}  
   {% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample clicktrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1 %}
   {% response json %}
 {
@@ -111,7 +114,8 @@ DKIM
   {% parameter name yes 'dkim' 'The name of the app for which to apply settings.' %}  
   {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
   {% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample dkim POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
   {% response json %}
 {
@@ -141,7 +145,8 @@ Domain Keys
   {% parameter name yes 'domainkeys' 'The name of the app for which to apply settings.' %}  
   {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
   {% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample domainkeys POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
   {% response json %}
 {
@@ -173,7 +178,8 @@ This app is our original Email Template app, today we have a more full featured 
   
   {% parameter name yes 'template' 'The name of the app for which to apply settings.' %}  
   {% parameter text_html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample template POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
   {% response json %}
 {

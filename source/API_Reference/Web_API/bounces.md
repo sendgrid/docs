@@ -24,7 +24,8 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
   {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}  
   {% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}  
   {% parameter email No 'Email address eg testing@example.com.' 'Optional email addresses to search for.' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample get GET https://api.sendgrid.com/api/bounces.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
   {% response json %}
 [
@@ -102,7 +103,8 @@ Delete an address from the Bounce list.
   {% parameter type No 'Hard or soft.' 'Choose the type of bounce to be removed.' %}  
   {% parameter email No 'Must be a valid user account email.' 'Email bounce address to remove.' %}  
   {% parameter delete_all No 'Must me set to 1.' 'This will delete the bounce list and will not be retrievable.' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample delete POST https://api.sendgrid.com/api/bounces.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
 {
@@ -127,7 +129,8 @@ Count
   {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start counting from.' %}  
   {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end counting from.' %}  
   {% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample count GET https://api.sendgrid.com/api/bounces.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {

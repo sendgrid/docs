@@ -23,7 +23,8 @@ Retrieve a list of invalid emails with addresses and response codes, optionally 
   {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}  
   {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}  
   {% parameter email No 'Email address eg testing@example.com' 'Optional email addresses to search for.' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample get GET https://api.sendgrid.com/api/invalidemails.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1 %}
   {% response json %}
 [
@@ -70,7 +71,8 @@ Retrieve the count of invalid emails.
   
   {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve invalid emails.' %}  
   {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve invalid emails.' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample count GET https://api.sendgrid.com/api/invalidemails.count api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -99,7 +101,8 @@ Delete an address from the Invalid Email list.
 {% parameters delete %} 
   
   {% parameter email Yes 'Must be a valid user account email' 'Email Invalid Email address to remove' %}
-{% endparameters %} 
+{% endparameters %}
+
 {% apiexample delete POST https://api.sendgrid.com/api/invalidemails.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
   {% response json %}
 {
