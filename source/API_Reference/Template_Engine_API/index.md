@@ -250,7 +250,7 @@ the `Content-Type` header.
 GET https://api.sendgrid.net/v3/resource HTTP/1.1
 {% endcodeblock %}
 
-{% codeblock lang:json %}
+{% codeblock lang:http %}
 HTTP/1.1 200 OK
 Content-Type: application/json
 
