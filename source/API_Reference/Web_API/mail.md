@@ -104,18 +104,14 @@ Send email.
          <td>No</td>
          <td>Must be less than 7MB</td>
          <td>
-            Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=
-            <file>
-               [file2.pdf]=
-               <file/>
-            </file>
+            Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf</td>
+      </tr>
             <tr>
                <td>content</td>
                <td>No</td>
                <td>Required for sending inline images</td>
                <td>
-                  Content IDs of the files to be used as inline images. Content IDs should match the cid's used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `
-                  <img src="cid:ii_139db99fdb5c3704">`</img>
+                  Content IDs of the files to be used as inline images. Content IDs should match the cid's used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `<img src="cid:ii_139db99fdb5c3704">`</td></tr>
                   <tr>
                      <td>headers</td>
                      <td>No</td>
