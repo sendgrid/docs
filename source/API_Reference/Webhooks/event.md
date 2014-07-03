@@ -292,4 +292,4 @@ curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgri
 {% anchor h2 %}
 Version Differences 
 {% endanchor %}
-The primary difference between v2 (no longer available) and v3 of the Event Webhook is Version 3 deliverers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Further, v3 provides more data with certain events. The [previous version of the webhook's documentation](http://sendgrid.com/docs/API_Reference/Webhooks/event_deprecated.html%20) is still provided so you may compare.
+The primary difference between v2 (no longer available) and v3 of the Event Webhook is Version 3 deliverers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Further, v3 provides more data with certain events. The [previous version of the webhook's documentation](http://sendgrid.com/docs/API_Reference/Webhooks/event_deprecated.html) is still provided so you may compare.
