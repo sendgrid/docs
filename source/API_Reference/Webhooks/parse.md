@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% info %}
-Available to Silver and higher packages or to our free demo accounts. 
+Available to Bronze and higher packages or to our free demo accounts. 
 {% endinfo %}
 
 {% info %}
