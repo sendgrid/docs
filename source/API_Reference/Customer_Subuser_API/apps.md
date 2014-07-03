@@ -29,8 +29,6 @@ List all of the available apps. {% parameters list %}
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filters>
    <filter>
       <name>twitter</name>
@@ -64,8 +62,6 @@ Activate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -92,8 +88,6 @@ Deactivate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -119,8 +113,6 @@ These API calls require that settings are passed using POST.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <field_name>field_value</field_name>
    ...
@@ -153,8 +145,6 @@ Get Current Settings
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <!-- error -->
 
 <result>

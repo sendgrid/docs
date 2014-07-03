@@ -12,7 +12,7 @@ Retrieve Customer Statistics
 
 Note that you can use *either* the days parameter *or* the `start_date` and `end_date` parameter.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -58,6 +58,7 @@ Note that you can use *either* the days parameter *or* the `start_date` and `end
    </tbody>
 </table>
 
+
 To retrive statistics for the Marketing Emails application you can use [Category Statistics](#-Category-Statistics) with `category=Newsletter` parameter.
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
@@ -90,8 +91,6 @@ To retrive statistics for the Marketing Emails application you can use [Category
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>
@@ -130,7 +129,7 @@ Retrieve Aggregates
 
 Retrieve all-time totals for your customer
 
-<table class="table table-bordered table-striped">
+<table id="parameters-agg" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -164,6 +163,7 @@ Retrieve all-time totals for your customer
    </tbody>
 </table>
 
+
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -175,8 +175,6 @@ Retrieve all-time totals for your customer
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <requests>12342</requests>
    <bounces>12</bounces>
@@ -196,7 +194,7 @@ Category List
 
 Retrieve a list of all the categories used in your customers account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-cat" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -233,6 +231,7 @@ Retrieve a list of all the categories used in your customers account.
    </tbody>
 </table>
 
+
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
   {% response json %}
 [
@@ -248,8 +247,6 @@ Retrieve a list of all the categories used in your customers account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -269,7 +266,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-catstat" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -321,6 +318,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
+
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
@@ -345,8 +343,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>

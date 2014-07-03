@@ -10,7 +10,7 @@ Allow subusers to manage their account from your website using an iframe to our 
 Initial API Call 
 {% endanchor %}
 In order to login your subuser, you need to contact our web API to retrieve the unique URL to automatically login your subuser. Then display the generated URL to automatically login your subuser.
-<table class="table table-bordered table-striped">
+<table id="parameters-auto" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -33,6 +33,7 @@ In order to login your subuser, you need to contact our web API to retrieve the 
    </tbody>
 </table>
 
+
 {% apiexample auto POST https://api.sendgrid.com/apiv2/customer.geturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
@@ -40,8 +41,6 @@ In order to login your subuser, you need to contact our web API to retrieve the 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <params>
    <params>al_username=username=example@example.com=b478ab36ebc306990dd283b1c341898e</params>
 </params>

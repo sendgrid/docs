@@ -30,8 +30,6 @@ get
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <users>
    <user>
       <username>sampleuser@example.com</username>
@@ -59,7 +57,7 @@ get
 {% anchor h2 %}
 set 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -114,6 +112,7 @@ set
    </tbody>
 </table>
 
+
 {% apiexample set POST https://api.sendgrid.com/api/profile.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&first_name=newFirstName&last_name=&newLastName %}
   {% response json %}
 {
@@ -121,8 +120,6 @@ set
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -135,7 +132,7 @@ set
 {% anchor h2 %}
 setPassword 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -158,6 +155,7 @@ setPassword
    </tbody>
 </table>
 
+
 {% apiexample reset POST https://api.sendgrid.com/api/password.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
@@ -165,8 +163,6 @@ setPassword
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -183,7 +179,7 @@ setUsername
 {% warning %}
 Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately. 
 {% endwarning %}
-<table class="table table-bordered table-striped">
+<table id="parameters-reset" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -200,6 +196,7 @@ Please note, your account username is used to login to our SMTP server and the w
    </tbody>
 </table>
 
+
 {% apiexample setusername POST https://api.sendgrid.com/api/profile.setUsername api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=yournewusername@domain.com %}
   {% response json %}
 {
@@ -207,8 +204,6 @@ Please note, your account username is used to login to our SMTP server and the w
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -225,7 +220,7 @@ setEmail
 {% info %}
 Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link. 
 {% endinfo %}
-<table class="table table-bordered table-striped">
+<table id="parameters-setusername" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -242,6 +237,7 @@ Please note, we send out a confirmation email to the new email account in order 
    </tbody>
 </table>
 
+
 {% apiexample setemail POST https://api.sendgrid.com/api/profile.setEmail api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=yournewemail@domain.com %}
   {% response json %}
 {
@@ -249,8 +245,6 @@ Please note, we send out a confirmation email to the new email account in order 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

@@ -32,8 +32,6 @@ When using this call, you must define all emails & domains here. Using this call
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -62,8 +60,6 @@ BCC "Blind Carbon Copy"
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -92,8 +88,6 @@ Click Tracking
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -123,8 +117,6 @@ DKIM
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -154,8 +146,6 @@ Domain Keys
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -187,8 +177,6 @@ This app is our original Email Template app, today we have a more full featured 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -208,7 +196,7 @@ Event Notification
 All fields except version are required for each call. 
 {% endinfo %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-addresswhitelist" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -293,6 +281,7 @@ All fields except version are required for each call.
    </tbody>
 </table>
 
+
 {% apiexample eventnotify POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3 %}
   {% response json %}
 {
@@ -300,8 +289,6 @@ All fields except version are required for each call.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -317,7 +304,7 @@ Footer
 
 *API App Name - `footer`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-bcc" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -348,6 +335,7 @@ Footer
    </tbody>
 </table>
 
+
 {% apiexample footer POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid %}
   {% response json %}
 {
@@ -355,8 +343,6 @@ Footer
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -372,7 +358,7 @@ Google Analytics
 
 *API App Name - `ganalytics`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-clicktrack" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -421,6 +407,7 @@ Google Analytics
    </tbody>
 </table>
 
+
 {% apiexample googleanalytics POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
   {% response json %}
 {
@@ -428,8 +415,6 @@ Google Analytics
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -461,7 +446,7 @@ SPAM Filter Checker
 
 *API App Name - `spamcheck`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-dkim" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -492,6 +477,7 @@ SPAM Filter Checker
    </tbody>
 </table>
 
+
 {% apiexample spamcheck POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
@@ -499,8 +485,6 @@ SPAM Filter Checker
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -516,7 +500,7 @@ Subscription Tracking
 
 *API App Name - `subscriptiontrack`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-domainkeys" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -565,6 +549,7 @@ Subscription Tracking
    </tbody>
 </table>
 
+
 {% apiexample subscriptiontrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D %}
   {% response json %}
 {
@@ -572,8 +557,6 @@ Subscription Tracking
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -589,7 +572,7 @@ SendGrid for New Relic
 
 *API App Name - `newrelic`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-template" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -616,6 +599,7 @@ SendGrid for New Relic
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
   {% response json %}
 {
@@ -623,8 +607,6 @@ SendGrid for New Relic
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <message>success</message>
 
   {% endresponse %}
@@ -638,7 +620,7 @@ Sendwithus
 
 *API App Name - `sendwithus`*
 
-<table class="table table-bordered table-striped">
+<table id="parameters-eventnotify" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -660,6 +642,7 @@ Sendwithus
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=sendwithus&license_key=1234567 %}
   {% response json %}
 {
@@ -667,8 +650,6 @@ Sendwithus
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <message>success</message>
 
   {% endresponse %}

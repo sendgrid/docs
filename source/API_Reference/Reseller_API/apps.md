@@ -14,7 +14,7 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -51,6 +51,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com %}
   {% response json %}
 {
@@ -61,8 +62,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filters>
    <filter>
       <name>twitter</name>
@@ -85,7 +84,7 @@ Twitter
 Activate App 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-activate" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -122,6 +121,7 @@ Activate App
    </tbody>
 </table>
 
+
 {% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com %}
   {% response json %}
 {
@@ -129,8 +129,6 @@ Activate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -144,7 +142,7 @@ Activate App
 Deactivate App 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-deactivate" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -181,6 +179,7 @@ Deactivate App
    </tbody>
 </table>
 
+
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com %}
   {% response json %}
 {
@@ -188,8 +187,6 @@ Deactivate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -217,8 +214,6 @@ These API calls require that settings are passed using POST.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <field_name>field_value</field_name>
    ...
@@ -245,8 +240,6 @@ Get Current Settings
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <field_name>field_value</field_name>
    ...

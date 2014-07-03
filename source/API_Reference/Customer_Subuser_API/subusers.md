@@ -16,7 +16,7 @@ In both creating and searching for a subuser account, you are using the USERNAME
 Create a Subuser 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -117,6 +117,7 @@ Create a Subuser
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555 %}
   {% response json %}
 {
@@ -124,8 +125,6 @@ Create a Subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -139,7 +138,7 @@ Create a Subuser
 Delete a Subuser 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -156,6 +155,7 @@ Delete a Subuser
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com %}
   {% response json %}
 {
@@ -163,8 +163,6 @@ Delete a Subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -179,7 +177,7 @@ Retrieve Subusers
 {% endanchor %}
 Obtain a complete list of all subusers.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -259,6 +257,7 @@ Obtain a complete list of all subusers.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get %}
   {% response json %}
 [
@@ -293,8 +292,6 @@ Obtain a complete list of all subusers.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <users>
    <user>
       <username>username</username>
@@ -342,7 +339,7 @@ Enable a Subuser
 {% endanchor %}
 Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-enable" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -359,6 +356,7 @@ Enable a subuser so they may start sending out emails again. This call will not 
    </tbody>
 </table>
 
+
 {% apiexample enable POST https://api.sendgrid.com/apiv2/customer.enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
@@ -366,8 +364,6 @@ Enable a subuser so they may start sending out emails again. This call will not 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -382,7 +378,7 @@ Disable a Subuser
 {% endanchor %}
 This prevents them from sending out emails with SendGrid.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-disable" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -399,6 +395,7 @@ This prevents them from sending out emails with SendGrid.
    </tbody>
 </table>
 
+
 {% apiexample disable POST https://api.sendgrid.com/apiv2/customer.disable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -406,8 +403,6 @@ This prevents them from sending out emails with SendGrid.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -422,7 +417,7 @@ Enable Website Access To A Subuser
 {% endanchor %}
 Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-enablewebsite" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -439,6 +434,7 @@ Allow a subuser to login to the SendGrid.com website. This call will not enable 
    </tbody>
 </table>
 
+
 {% apiexample enablewebsite POST https://api.sendgrid.com/apiv2/customer.website_enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 {
@@ -446,8 +442,6 @@ Allow a subuser to login to the SendGrid.com website. This call will not enable 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -462,7 +456,7 @@ Disable Website Access To A Subuser
 {% endanchor %}
 Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-disablewebsite" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -479,6 +473,7 @@ Disallow a subuser to login to the SendGrid.com website. This call will not prev
    </tbody>
 </table>
 
+
 {% apiexample disablewebsite POST https://api.sendgrid.com/apiv2/customer.website_disable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -486,8 +481,6 @@ Disallow a subuser to login to the SendGrid.com website. This call will not prev
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -502,7 +495,7 @@ Update Subuser Profile
 {% endanchor %}
 Allows you to update your subusers profile information
 
-<table class="table table-bordered table-striped">
+<table id="parameters-updateprofile" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -572,6 +565,7 @@ Allows you to update your subusers profile information
    </tbody>
 </table>
 
+
 {% apiexample updateprofile POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam %}
   {% response json %}
 {
@@ -579,8 +573,6 @@ Allows you to update your subusers profile information
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -595,7 +587,7 @@ Update Subuser Password
 {% endanchor %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-updateSubuserPassword" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -624,6 +616,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
    </tbody>
 </table>
 
+
 {% apiexample updateSubuserPassword POST https://api.sendgrid.com/apiv2/customer.password api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor %}
   {% response json %}
 {
@@ -631,8 +624,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -647,7 +638,7 @@ Update Subuser Username
 {% endanchor %}
 Note that your subuser account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-updateSubuserUsername" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -676,6 +667,7 @@ Note that your subuser account username is used to login to our SMTP server *an
    </tbody>
 </table>
 
+
 {% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com %}
   {% response json %}
 {
@@ -683,8 +675,6 @@ Note that your subuser account username is used to login to our SMTP server *an
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -699,7 +689,7 @@ Update Subuser Email Address
 {% endanchor %}
 This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-updateSubuserEmailAddress" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -728,6 +718,7 @@ This is the contact email we use for your subusers. Changes take place immediate
    </tbody>
 </table>
 
+
 {% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com %}
   {% response json %}
 {
@@ -735,8 +726,6 @@ This is the contact email we use for your subusers. Changes take place immediate
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

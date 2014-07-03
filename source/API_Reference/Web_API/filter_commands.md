@@ -32,8 +32,6 @@ List all of the available apps.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filters>
    ...
    <filter>
@@ -67,8 +65,6 @@ Activate an app.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -96,8 +92,6 @@ Deactivate an app.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -120,8 +114,6 @@ Change application settings. Applications and their settings can be found in the
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -154,8 +146,6 @@ Get the Settings Of An App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <email>nick@sendgrid.com</email>
 </filter>

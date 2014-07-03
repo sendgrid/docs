@@ -35,8 +35,6 @@ There are no extra parameters required for this call
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <packages>
       <package>

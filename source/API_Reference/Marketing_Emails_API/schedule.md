@@ -21,7 +21,7 @@ add
 
 Schedule a delivery time for an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -52,6 +52,7 @@ Schedule a delivery time for an existing Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/schedule/add name=test&at=2013-12-20T11:55:00-05:00&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -59,8 +60,6 @@ Schedule a delivery time for an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -76,7 +75,7 @@ get
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -95,6 +94,7 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/schedule/get name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -102,8 +102,6 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -119,7 +117,7 @@ delete
 
 Cancel a scheduled send for a Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -138,6 +136,7 @@ Cancel a scheduled send for a Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/schedule/delete name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -145,8 +144,6 @@ Cancel a scheduled send for a Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

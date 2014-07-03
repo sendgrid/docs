@@ -14,7 +14,7 @@ Retrieve Subuser Statistics
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-stats" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <td>Parameter</td>
@@ -49,6 +49,7 @@ Note that you can use *either* the days parameter *or* the start_date and en
    </tbody>
 </table>
 
+
 {% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
   {% response json %}
 [
@@ -79,8 +80,6 @@ Note that you can use *either* the days parameter *or* the start_date and en
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>
@@ -117,7 +116,7 @@ Retrieve Aggregates
 
 Retrieve all-time totals for your subuser
 
-<table class="table table-bordered table-striped">
+<table id="parameters-agg" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <td>Parameter</td>
@@ -140,6 +139,7 @@ Retrieve all-time totals for your subuser
    </tbody>
 </table>
 
+
 {% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 %}
   {% response json %}
 {
@@ -151,8 +151,6 @@ Retrieve all-time totals for your subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <requests>12342</requests>
    <bounces>12</bounces>
@@ -170,7 +168,7 @@ Category List
 
 Retrieve a list of all the categories used in your subusers account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-cat" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <td>Parameter</td>
@@ -196,6 +194,7 @@ Retrieve a list of all the categories used in your subusers account.
    </tbody>
 </table>
 
+
 {% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true %}
   {% response json %}
 [
@@ -205,8 +204,6 @@ Retrieve a list of all the categories used in your subusers account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -222,46 +219,7 @@ Category Statistics
 
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use  *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>Parameter</td>
-         <td>Required</td>
-         <td>Requirements</td>
-         <td>Description</td>
-      </tr>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
-         <td>The category you will specify to retrieve detailed stats</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under you</td>
-         <td>The subuser we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (Includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-   </tbody>
-</table>
+
 
 {% xmljsontabs catstats %}
 
@@ -280,8 +238,6 @@ https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_usernam
 ### Response
 
 {% codeblock lang:xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>

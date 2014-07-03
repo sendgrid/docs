@@ -14,7 +14,7 @@ add
 
 Assign a List to a Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -37,6 +37,7 @@ Assign a List to a Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/recipients/add name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -44,8 +45,6 @@ Assign a List to a Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -61,7 +60,7 @@ get
 
 Get all lists assigned to a particular marketing email
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -78,6 +77,7 @@ Get all lists assigned to a particular marketing email
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/recipients/get name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -87,8 +87,6 @@ Get all lists assigned to a particular marketing email
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <lists>
    <list>
       <list>Training Contacts</list>
@@ -106,7 +104,7 @@ delete
 
 Remove assigned lists from marketing email
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -129,6 +127,7 @@ Remove assigned lists from marketing email
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/recipients/delete name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -136,8 +135,6 @@ Remove assigned lists from marketing email
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

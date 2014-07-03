@@ -14,7 +14,7 @@ add
 
 Create a new Recipient List.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -43,6 +43,7 @@ Create a new Recipient List.
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/add list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -50,8 +51,6 @@ Create a new Recipient List.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -67,7 +66,7 @@ edit
 
 Rename a Recipient List.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -90,6 +89,7 @@ Rename a Recipient List.
    </tbody>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/lists/edit list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -97,8 +97,6 @@ Rename a Recipient List.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -114,7 +112,7 @@ get
 
 List all Recipient Lists on your account, or check if a particular List exists.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -131,6 +129,7 @@ List all Recipient Lists on your account, or check if a particular List exists.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/lists/get list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -140,8 +139,6 @@ List all Recipient Lists on your account, or check if a particular List exists.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <lists>
    <list>
       <list>test</list>
@@ -159,7 +156,7 @@ delete
 
 Remove a Recipient List from your account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -176,6 +173,7 @@ Remove a Recipient List from your account.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/delete list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -183,8 +181,6 @@ Remove a Recipient List from your account.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

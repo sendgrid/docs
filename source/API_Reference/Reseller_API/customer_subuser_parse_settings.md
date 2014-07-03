@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -37,6 +37,7 @@ Get Current Settings
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com %}
   {% response json %}
 {
@@ -50,8 +51,6 @@ Get Current Settings
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <parse>
    <entry>
       <hostname>www.example.com</hostname>
@@ -68,7 +67,7 @@ Get Current Settings
 {% anchor h2 %}
 Create New Entry 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -108,6 +107,7 @@ Create New Entry
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com %}
   {% response json %}
 {
@@ -115,8 +115,6 @@ Create New Entry
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -129,7 +127,7 @@ Create New Entry
 {% anchor h2 %}
 Edit Entry 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -169,6 +167,7 @@ Edit Entry
    </tbody>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com %}
   {% response json %}
 {
@@ -176,8 +175,6 @@ Edit Entry
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -190,7 +187,7 @@ Edit Entry
 {% anchor h2 %}
 Delete Entry 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -224,6 +221,7 @@ Delete Entry
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com %}
   {% response json %}
 {
@@ -231,8 +229,6 @@ Delete Entry
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

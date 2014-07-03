@@ -9,7 +9,7 @@ These are actions that directly affect your customer. We provide access via XML 
 {% anchor h2 %}
 Create a Customer 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -140,6 +140,7 @@ Create a Customer
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=true&company=company&whitelabel=sendgrid.me %}
   {% response json %}
 {
@@ -147,8 +148,6 @@ Create a Customer
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -162,7 +161,7 @@ Create a Customer
 Delete a Customer 
 {% endanchor %}
 Remove a customer from your account. This is **not** the same as disabling a customer on our system. This is the same thing as closing out a customers account at the end of their billing cycle.
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -179,6 +178,7 @@ Remove a customer from your account. This is **not** the same as disabling a cus
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com %}
   {% response json %}
 {
@@ -186,8 +186,6 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -201,7 +199,7 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 Retrieve Customers 
 {% endanchor %}
 Obtain a complete list of all customers.
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -276,6 +274,7 @@ Obtain a complete list of all customers.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=get %}
   {% response json %}
 [
@@ -310,8 +309,6 @@ Obtain a complete list of all customers.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <users>
    <user>
       <username>user1</username>
@@ -356,7 +353,7 @@ Obtain a complete list of all customers.
 Enable a Customer 
 {% endanchor %}
 Enable a customer so they may start sending out emails again. This call will not enable website access.
-<table class="table table-bordered table-striped">
+<table id="parameters-enable" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -379,6 +376,7 @@ Enable a customer so they may start sending out emails again. This call will not
    </tbody>
 </table>
 
+
 {% apiexample enable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com %}
   {% response json %}
 {
@@ -386,8 +384,6 @@ Enable a customer so they may start sending out emails again. This call will not
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -401,7 +397,7 @@ Enable a customer so they may start sending out emails again. This call will not
 Disable a Customer 
 {% endanchor %}
 This prevents them from sending out emails with SendGrid.
-<table class="table table-bordered table-striped">
+<table id="parameters-disable" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -424,6 +420,7 @@ This prevents them from sending out emails with SendGrid.
    </tbody>
 </table>
 
+
 {% apiexample disable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com %}
   {% response json %}
 {
@@ -431,8 +428,6 @@ This prevents them from sending out emails with SendGrid.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -446,7 +441,7 @@ This prevents them from sending out emails with SendGrid.
 Enable Website Access To A Customer 
 {% endanchor %}
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
-<table class="table table-bordered table-striped">
+<table id="parameters-website" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -469,6 +464,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
    </tbody>
 </table>
 
+
 {% apiexample website POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com %}
   {% response json %}
 {
@@ -476,8 +472,6 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -491,7 +485,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 Disable Website Access To A Customer 
 {% endanchor %}
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
-<table class="table table-bordered table-striped">
+<table id="parameters-unwebsite" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -514,6 +508,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
    </tbody>
 </table>
 
+
 {% apiexample unwebsite POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com %}
   {% response json %}
 {
@@ -521,8 +516,6 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -536,7 +529,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 Update Customer Profile 
 {% endanchor %}
 Allows you to update your customers profile information
-<table class="table table-bordered table-striped">
+<table id="parameters-update" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -606,6 +599,7 @@ Allows you to update your customers profile information
    </tbody>
 </table>
 
+
 {% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=newLastName %}
   {% response json %}
 {
@@ -613,8 +607,6 @@ Allows you to update your customers profile information
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -628,7 +620,7 @@ Allows you to update your customers profile information
 Update Customer Password 
 {% endanchor %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
-<table class="table table-bordered table-striped">
+<table id="parameters-password" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -663,6 +655,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
    </tbody>
 </table>
 
+
 {% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
@@ -670,8 +663,6 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -685,7 +676,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 Update Customer Username 
 {% endanchor %}
 Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
-<table class="table table-bordered table-striped">
+<table id="parameters-name" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -720,6 +711,7 @@ Note that your customer account username is used to login to our SMTP server *an
    </tbody>
 </table>
 
+
 {% apiexample name POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com %}
   {% response json %}
 {
@@ -727,8 +719,6 @@ Note that your customer account username is used to login to our SMTP server *an
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -742,7 +732,7 @@ Note that your customer account username is used to login to our SMTP server *an
 Update Customer Email Address 
 {% endanchor %}
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
-<table class="table table-bordered table-striped">
+<table id="parameters-email" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -777,6 +767,7 @@ This is the contact email we use for your customers. Changes take place immediat
    </tbody>
 </table>
 
+
 {% apiexample email POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com %}
   {% response json %}
 {
@@ -784,8 +775,6 @@ This is the contact email we use for your customers. Changes take place immediat
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

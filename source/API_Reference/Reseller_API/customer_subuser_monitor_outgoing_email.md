@@ -16,7 +16,7 @@ Create Monitor Record
 
 Obtain a complete list of all customer subuser.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -56,6 +56,7 @@ Obtain a complete list of all customer subuser.
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
 {
@@ -63,8 +64,6 @@ Obtain a complete list of all customer subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -80,7 +79,7 @@ Edit Monitor Record
 
 Make modifications to an existing Monitor record.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -126,6 +125,7 @@ Make modifications to an existing Monitor record.
    </tbody>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
   {% response json %}
 {
@@ -133,8 +133,6 @@ Make modifications to an existing Monitor record.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -150,7 +148,7 @@ Delete Monitor Record
 
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -178,6 +176,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=delete&name=recordToDelet %}
   {% response json %}
 {
@@ -185,8 +184,6 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -202,7 +199,7 @@ List All Monitor Records
 
 List all available monitor records a reseller has.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -223,6 +220,7 @@ List all available monitor records a reseller has.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample list POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=list %}
   {% response json %}
@@ -247,8 +245,6 @@ List all available monitor records a reseller has.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <monitors>
    <monitor>
       <name>sampleNameA</name>
@@ -278,7 +274,7 @@ Append A Customer Subuser To A Monitor Record
 
 Append a monitor record to a existing record onto a customer subuser.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-append" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -312,6 +308,7 @@ Append a monitor record to a existing record onto a customer subuser.
    </tbody>
 </table>
 
+
 {% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=example@example.com %}
   {% response json %}
 {
@@ -319,8 +316,6 @@ Append a monitor record to a existing record onto a customer subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -336,7 +331,7 @@ Detach A Monitor Record From A Customer Subuser
 
 Detach a customer subuser from a monitor record.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-detach" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -364,6 +359,7 @@ Detach a customer subuser from a monitor record.
    </tbody>
 </table>
 
+
 {% apiexample detach POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=example@example.com %}
   {% response json %}
 {
@@ -371,8 +367,6 @@ Detach a customer subuser from a monitor record.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

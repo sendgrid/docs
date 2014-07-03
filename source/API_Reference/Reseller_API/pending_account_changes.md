@@ -16,7 +16,7 @@ List Pending Changes
 
 Returns all of the users who have pending changes within your account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-users" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -46,6 +46,7 @@ Returns all of the users who have pending changes within your account.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample users POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
@@ -80,8 +81,6 @@ Returns all of the users who have pending changes within your account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <pending>
       <user>
@@ -121,7 +120,7 @@ Delete Pending Changes
 
 Cancel/Revert a pending change.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -147,6 +146,7 @@ Cancel/Revert a pending change.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.pending api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com %}
   {% response json %}
 {
@@ -154,8 +154,6 @@ Cancel/Revert a pending change.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -171,7 +169,7 @@ Immediate Upgrade
 
 Once an upgrade happens, an invoice is generated for that user. If it's a free user to a paid account, the full price for that upgrade will be created. If it's in between billing periods, a prorated discount will be applied to the invoice.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-upgrade" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -212,6 +210,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
    </tbody>
 </table>
 
+
 {% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -222,8 +221,6 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -239,7 +236,7 @@ Immediate Downgrade
 
 Once a downgrade happens, an invoice is generated for that user. Free customers are not allowed to downgrade.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-downgrade" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -280,6 +277,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
    </tbody>
 </table>
 
+
 {% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -287,8 +285,6 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -304,7 +300,7 @@ Immediate Close
 
 Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-close" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -335,6 +331,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
    </tbody>
 </table>
 
+
 {% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -342,8 +339,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -359,7 +354,7 @@ Scheduled Upgrade
 
 Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-sched" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -400,6 +395,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
    </tbody>
 </table>
 
+
 {% apiexample sched POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -407,8 +403,6 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -424,7 +418,7 @@ Scheduled Downgrade
 
 Apply a downgrade at the end of the user's billing cycle. Once a downgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-scheddown" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -465,6 +459,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
    </tbody>
 </table>
 
+
 {% apiexample scheddown POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -472,8 +467,6 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -489,7 +482,7 @@ Scheduled Close
 
 Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-schedclose" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -520,6 +513,7 @@ Close or revert an account to a free user at the end of the user's billing cycle
    </tbody>
 </table>
 
+
 {% apiexample schedclose POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
@@ -527,8 +521,6 @@ Close or revert an account to a free user at the end of the user's billing cycle
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

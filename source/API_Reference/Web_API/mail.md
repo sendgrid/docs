@@ -25,7 +25,7 @@ send
 
 Send email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-mail" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -129,6 +129,7 @@ Send email.
    </tbody>
 </table>
 
+
 {% apiexample mail POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to=destination@example.com&toname=Destination&subject=Example_Subject&text=testingtextbody&from=info@domain.com %}
   {% response json %}
 {
@@ -136,8 +137,6 @@ Send email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -154,8 +153,6 @@ Send email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

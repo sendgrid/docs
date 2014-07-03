@@ -12,7 +12,7 @@ List Timezones
 
 This will return a list of all available timezones.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -43,6 +43,7 @@ This will return a list of all available timezones.
    </tbody>
 </table>
 
+
 {% apiexample list GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
   {% response json %}
 [
@@ -67,8 +68,6 @@ This will return a list of all available timezones.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <timezones>
    <timezone>
       <display>GMT+02:00</display>
@@ -101,7 +100,7 @@ Get Timezone
 
 This API call will return the timezone currently set for your customer subuser.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -138,6 +137,7 @@ This API call will return the timezone currently set for your customer subuser.
    </tbody>
 </table>
 
+
 {% apiexample get GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer_subuser@example.com %}
   {% response json %}
 {
@@ -148,8 +148,6 @@ This API call will return the timezone currently set for your customer subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <timezone>
    <name>Central Time, US Canada</name>
    <offset>21600</offset>
@@ -168,7 +166,7 @@ Edit Timezone
 
 This API call will allow you to set timezone for your customer subuser
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -214,6 +212,7 @@ This API call will allow you to set timezone for your customer subuser
    </tbody>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer_subuser@example.com&timezone=America/Los_Angeles %}
   {% response json %}
 {
@@ -221,8 +220,6 @@ This API call will allow you to set timezone for your customer subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

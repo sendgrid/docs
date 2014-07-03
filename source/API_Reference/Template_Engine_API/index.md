@@ -78,31 +78,32 @@ HTTP Verbs
 Depending on the resource, we support the following HTTP verbs:
 
 <table class="table table-bordered table-striped">
-  <tr>
-    <th>Verb</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>Retrieve a resource or group of resouces</td>
-  </tr>
-  <tr>
-    <td>POST</td>
-    <td>Create a new resource</td>
-  </tr>
-  <tr>
-    <td>PUT</td>
-    <td>Update an existing resource</td>
-  </tr>
-  <tr>
-    <td>DELETE</td>
-    <td>Delete an existing resource</td>
-  </tr>
-  <tr>
-    <td>OPTIONS</td>
-    <td>View allowed verbs against a specific resources</td>
-  </tr>
+   <tr>
+      <th>Verb</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>GET</td>
+      <td>Retrieve a resource or group of resouces</td>
+   </tr>
+   <tr>
+      <td>POST</td>
+      <td>Create a new resource</td>
+   </tr>
+   <tr>
+      <td>PUT</td>
+      <td>Update an existing resource</td>
+   </tr>
+   <tr>
+      <td>DELETE</td>
+      <td>Delete an existing resource</td>
+   </tr>
+   <tr>
+      <td>OPTIONS</td>
+      <td>View allowed verbs against a specific resources</td>
+   </tr>
 </table>
+
 
 {% anchor h3 %}
 Request Body
@@ -206,19 +207,20 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
 {% endcodeblock %}
 
 <table class="table table-bordered table-striped">
-  <tr>
-    <th>Parameter</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>limit</td>
-    <td>The number of records to return</td>
-  </tr>
-  <tr>
-    <td>offset</td>
-    <td>The number of records to skip</td>
-  </tr>
+   <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>limit</td>
+      <td>The number of records to return</td>
+   </tr>
+   <tr>
+      <td>offset</td>
+      <td>The number of records to skip</td>
+   </tr>
 </table>
+
 
 {% anchor h3 %}
 Search & Parameters
@@ -266,29 +268,36 @@ Below is a table description of the various status codes we corrently
 support against resources.
 
 <table class="table table-bordered table-striped">
-  <tr>
-    <th>Status Code</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>200</td><td>No error</td>
-  </tr>
-  <tr>
-    <td>201</td><td>Successfully created</td>
-  </tr>
-  <tr>
-    <td>204</td><td>Successfully deleted</td>
-  </tr>
-  <tr>
-    <td>400</td><td>Bad request</td>
-  </tr>
-  <tr>
-    <td>401</td><td>Requires authentication</td>
-  </tr>
-  <tr>
-    <td>500</td><td>Internal server error</td>
-  </tr>
+   <tr>
+      <th>Status Code</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>200</td>
+      <td>No error</td>
+   </tr>
+   <tr>
+      <td>201</td>
+      <td>Successfully created</td>
+   </tr>
+   <tr>
+      <td>204</td>
+      <td>Successfully deleted</td>
+   </tr>
+   <tr>
+      <td>400</td>
+      <td>Bad request</td>
+   </tr>
+   <tr>
+      <td>401</td>
+      <td>Requires authentication</td>
+   </tr>
+   <tr>
+      <td>500</td>
+      <td>Internal server error</td>
+   </tr>
 </table>
+
   
 {% anchor h3 %}
 Successful Requests
@@ -298,22 +307,28 @@ Below is a general overview of what resource objects are returned on
 successful Web API requests.
 
 <table class="table table-bordered table-striped">
-  <tr>
-    <th>Verb</th><th>Resource object returned</th>
-  </tr>
-  <tr>
-    <td>GET</td><td>A single resource object or array of resource objects</td>
-  </tr>
-  <tr>
-    <td>PATCH</td><td>The updated resource object is returned</td>
-  </tr>
-  <tr>
-    <td>DELETE</td><td>No content is returned</td>
-  </tr>
-  <tr>
-    <td>POST</td><td>The newly created resource object is returned</td>
-  </tr>
+   <tr>
+      <th>Verb</th>
+      <th>Resource object returned</th>
+   </tr>
+   <tr>
+      <td>GET</td>
+      <td>A single resource object or array of resource objects</td>
+   </tr>
+   <tr>
+      <td>PATCH</td>
+      <td>The updated resource object is returned</td>
+   </tr>
+   <tr>
+      <td>DELETE</td>
+      <td>No content is returned</td>
+   </tr>
+   <tr>
+      <td>POST</td>
+      <td>The newly created resource object is returned</td>
+   </tr>
 </table>
+
 
 {% anchor h3 %}
 Failed Requests

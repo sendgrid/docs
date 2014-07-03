@@ -8,7 +8,7 @@ navigation:
 
 Authenticate a customer subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-auth" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -30,6 +30,7 @@ Authenticate a customer subuser on your website before displaying their account 
    </tbody>
 </table>
 
+
 {% apiexample auth POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=theirsubmittedpassword&method=auth %}
   {% response json %}
 {
@@ -37,8 +38,6 @@ Authenticate a customer subuser on your website before displaying their account 
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

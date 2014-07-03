@@ -12,7 +12,7 @@ All
 
 View all IPs under your account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -51,6 +51,7 @@ View all IPs under your account.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
   {% response json %}
 [
@@ -75,8 +76,6 @@ View all IPs under your account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <ip>255.255.255.0</ip>
    <ip>255.255.254.0</ip>
@@ -95,7 +94,7 @@ Free
 
 A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-free" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -124,6 +123,7 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
    </tbody>
 </table>
 
+
 {% apiexample free POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free %}
   {% response json %}
 [
@@ -148,8 +148,6 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <ip>255.255.255.0</ip>
    <ip>255.255.254.0</ip>
@@ -168,7 +166,7 @@ Taken
 
 A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-taken" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -197,6 +195,7 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
    </tbody>
 </table>
 
+
 {% apiexample taken POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken %}
   {% response json %}
 [
@@ -221,8 +220,6 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <ip>255.255.255.0</ip>
    <ip>255.255.254.0</ip>
@@ -241,7 +238,7 @@ Available
 
 A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-available" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -270,6 +267,7 @@ A listing of all available IPs under your account. An Available IP is any IP tha
    </tbody>
 </table>
 
+
 {% apiexample available POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available %}
   {% response json %}
 [
@@ -294,8 +292,6 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <ip>255.255.255.0</ip>
    <ip>255.255.254.0</ip>
@@ -314,7 +310,7 @@ Usage
 
 The current breakdown of users who are using your IPs.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-usage" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -365,6 +361,7 @@ The current breakdown of users who are using your IPs.
    </tbody>
 </table>
 
+
 {% apiexample usage POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com %}
   {% response json %}
 [
@@ -379,8 +376,6 @@ The current breakdown of users who are using your IPs.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <entry>
       <ip>255.255.253.0</ip>

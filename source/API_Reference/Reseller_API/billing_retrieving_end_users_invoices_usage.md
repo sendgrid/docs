@@ -8,7 +8,7 @@ navigation:
 
 Retrieve invoices/usages from customers.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -33,6 +33,7 @@ Retrieve invoices/usages from customers.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag %}
   {% response json %}
@@ -75,8 +76,6 @@ Retrieve invoices/usages from customers.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <usage>
    <number>2010010001</number>
    <invoices>

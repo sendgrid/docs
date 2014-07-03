@@ -14,7 +14,7 @@ create
 
 Create a new Category.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -33,6 +33,7 @@ Create a new Category.
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/category/create api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY %}
   {% response json %}
 {
@@ -40,8 +41,6 @@ Create a new Category.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -57,7 +56,7 @@ add
 
 Assign a Category to an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -82,6 +81,7 @@ Assign a Category to an existing Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/category/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
 {
@@ -89,8 +89,6 @@ Assign a Category to an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -106,7 +104,7 @@ remove
 
 Remove specific categories, or all categories from a Marketing Email.\\
 
-<table class="table table-bordered table-striped">
+<table id="parameters-remove" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -131,6 +129,7 @@ Remove specific categories, or all categories from a Marketing Email.\\
    </tbody>
 </table>
 
+
 {% apiexample remove POST https://api.sendgrid.com/api/newsletter/category/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
   {% response json %}
 {
@@ -138,8 +137,6 @@ Remove specific categories, or all categories from a Marketing Email.\\
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -155,7 +152,7 @@ list
 
 List all categories.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -174,6 +171,7 @@ List all categories.
    </tbody>
 </table>
 
+
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -186,8 +184,6 @@ List all categories.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>
       <category>CATEGORY</category>

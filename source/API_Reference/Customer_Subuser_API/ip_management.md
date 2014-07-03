@@ -10,7 +10,7 @@ List
 
 Obtain a complete list of all IP's and which are free, taken or available.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -24,6 +24,7 @@ Obtain a complete list of all IP's and which are free, taken or available.
       </tr>
    </tbody>
 </table>
+
 
 Here is a brief explanation of each option available for the list parameter:
 
@@ -51,8 +52,6 @@ available
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <ips>
    <ip>255.255.255.250</ip>
    <ip>255.255.255.251</ip>
@@ -69,7 +68,7 @@ Subuser IP Usage
 {% endanchor %}
 If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-usage" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -88,6 +87,7 @@ If your account has more than one IP address, you can manage what IPs your subus
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample usage POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com %}
   {% response json %}
@@ -117,8 +117,6 @@ If your account has more than one IP address, you can manage what IPs your subus
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <sendips>
    <ocluster>o1.sendgrid.net</ocluster>
    <ips>
@@ -140,7 +138,7 @@ Subuser IP Assignment
 {% endanchor %}
 You need to assign at least ONE IP to your subuser.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-subuser" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -170,6 +168,7 @@ You need to assign at least ONE IP to your subuser.
    </tbody>
 </table>
 
+
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 %}
   {% response json %}
 {
@@ -177,8 +176,6 @@ You need to assign at least ONE IP to your subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

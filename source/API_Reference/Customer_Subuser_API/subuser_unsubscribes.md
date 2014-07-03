@@ -10,7 +10,7 @@ navigation:
 Retrieve Unsubscribes 
 {% endanchor %}
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -39,6 +39,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= %}
   {% response json %}
 [
@@ -53,8 +54,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <unsubscribes>
    <unsubscribe>
       <email>email1@domain.com</email>
@@ -75,7 +74,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 Delete Unsubscribes 
 {% endanchor %}
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -104,6 +103,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=unsubscribe@sample.com %}
   {% response json %}
 {
@@ -111,8 +111,6 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -126,7 +124,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 Add Unsubscribes 
 {% endanchor %}
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -155,6 +153,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=add&email=unsubscribe@sample.com %}
   {% response json %}
 {
@@ -162,8 +161,6 @@ Add unsubscribe email records to their account if they need to stop sending emai
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

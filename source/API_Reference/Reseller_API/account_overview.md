@@ -8,7 +8,7 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -37,6 +37,7 @@ View general account information regarding your customers, including billing cyc
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com %}
   {% response json %}
 {
@@ -53,8 +54,6 @@ View general account information regarding your customers, including billing cyc
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <overview>
       <reputation>100</reputation>

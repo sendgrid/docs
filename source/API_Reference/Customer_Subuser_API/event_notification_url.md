@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-retrieve" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -32,6 +32,7 @@ Retrieve
    </tbody>
 </table>
 
+
 {% apiexample retrieve POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com %}
   {% response json %}
 {
@@ -39,8 +40,6 @@ Retrieve
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <url>http://www.SubUserPostUrlHere.com</url>
 
   {% endresponse %}
@@ -51,7 +50,7 @@ Retrieve
 {% anchor h2 %}
 Update / Set URL 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -80,6 +79,7 @@ Update / Set URL
    </tbody>
 </table>
 
+
 {% apiexample set POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co %}
   {% response json %}
 {
@@ -87,8 +87,6 @@ Update / Set URL
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -101,7 +99,7 @@ Update / Set URL
 {% anchor h2 %}
 Delete 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -124,6 +122,7 @@ Delete
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co %}
   {% response json %}
 {
@@ -131,8 +130,6 @@ Delete
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

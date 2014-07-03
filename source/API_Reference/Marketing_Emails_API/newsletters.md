@@ -14,7 +14,7 @@ add
 
 Create a new Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-create" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -57,6 +57,7 @@ Create a new Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -64,8 +65,6 @@ Create a new Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -81,7 +80,7 @@ edit
 
 Edit an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -94,6 +93,7 @@ Edit an existing Marketing Email.
    <td>The name of the Marketing Email being updated.</td>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/edit identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -101,8 +101,6 @@ Edit an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -118,7 +116,7 @@ get
 
 Retrieve the contents of an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -137,6 +135,7 @@ Retrieve the contents of an existing Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -153,8 +152,6 @@ Retrieve the contents of an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <newsletter>
    <can_edit>True</can_edit>
    <name>SendGrid NL Test</name>
@@ -178,7 +175,7 @@ list
 
 Retrieve a list of all existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -196,6 +193,7 @@ Retrieve a list of all existing Marketing Email.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -219,8 +217,6 @@ Retrieve a list of all existing Marketing Email.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <newsletters>
    <newsletter>
       <name>Just Testing</name>
@@ -251,7 +247,7 @@ delete
 
 Remove an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -270,6 +266,7 @@ Remove an existing Marketing Email.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -277,8 +274,6 @@ Remove an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

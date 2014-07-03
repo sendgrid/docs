@@ -25,8 +25,6 @@ Retrieve settings already configured for parsing incoming email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <parse>
    <entry>
       <hostname>www.example.com</hostname>
@@ -46,7 +44,7 @@ set
 
 Specify the hostname and url for parsing incoming emails.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -75,6 +73,7 @@ Specify the hostname and url for parsing incoming emails.
    </tbody>
 </table>
 
+
 {% apiexample set POST https://api.sendgrid.com/api/parse.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 %}
   {% response json %}
 {
@@ -82,8 +81,6 @@ Specify the hostname and url for parsing incoming emails.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -99,7 +96,7 @@ Delete Entry
 
 Delete the existing settings for parsing incoming emails.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-set" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -116,6 +113,7 @@ Delete the existing settings for parsing incoming emails.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/parse.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com %}
   {% response json %}
 {
@@ -123,8 +121,6 @@ Delete the existing settings for parsing incoming emails.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

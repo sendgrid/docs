@@ -12,7 +12,7 @@ Retrieve Customer Subuser Statistics
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -49,6 +49,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com %}
   {% response json %}
 [
@@ -79,8 +80,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>
@@ -119,7 +118,7 @@ Retrieve Aggregates
 
 Retrieve all-time totals for your customer subuser
 
-<table class="table table-bordered table-striped">
+<table id="parameters-agg" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -144,6 +143,7 @@ Retrieve all-time totals for your customer subuser
    </tbody>
 </table>
 
+
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= %}
   {% response json %}
 {
@@ -155,8 +155,6 @@ Retrieve all-time totals for your customer subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <requests>12342</requests>
    <bounces>12</bounces>
@@ -176,7 +174,7 @@ Category List
 
 Retrieve a list of all the categories used in your customer subusers account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-cat" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -204,6 +202,7 @@ Retrieve a list of all the categories used in your customer subusers account.
    </tbody>
 </table>
 
+
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru %}
   {% response json %}
 {
@@ -211,8 +210,6 @@ Retrieve a list of all the categories used in your customer subusers account.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -232,7 +229,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-catstat" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -275,6 +272,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
    </tbody>
 </table>
 
+
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
@@ -299,8 +297,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>

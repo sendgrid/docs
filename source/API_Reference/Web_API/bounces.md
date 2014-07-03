@@ -68,8 +68,6 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <bounces>
    <bounce>
       <email>email1@domain.com</email>
@@ -112,8 +110,6 @@ Delete an address from the Bounce list.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result> success @nodes </result>
 
   {% endresponse %}
@@ -138,8 +134,6 @@ Count
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
 </result>

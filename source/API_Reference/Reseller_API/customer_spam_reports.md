@@ -10,7 +10,7 @@ navigation:
 Retrieve Spam Reports 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -53,6 +53,7 @@ Retrieve Spam Reports
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date= %}
   {% response json %}
 [
@@ -67,8 +68,6 @@ Retrieve Spam Reports
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <spamreports>
    <spamreport>
       <email>email1@domain.com</email>
@@ -91,7 +90,7 @@ Delete Spam Reports
 
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -134,6 +133,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=delete&email=spamreport@domain.com %}
   {% response json %}
 {
@@ -141,8 +141,6 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

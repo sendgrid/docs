@@ -14,7 +14,7 @@ add
 
 Create a new Address.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -53,6 +53,7 @@ Create a new Address.
    </tr>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/identity/add identity=Sender_Address1&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Stree&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -60,8 +61,6 @@ Create a new Address.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -77,7 +76,7 @@ edit
 
 Edit an existing Address.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <tr>
       <th>Parameter</th>
       <th>Required</th>
@@ -122,6 +121,7 @@ Edit an existing Address.
    </tr>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/identity/edit identity=Sender_Address2&newidentity=Sender_Address3&name=Grant&email=grant.hull%40sendgrid.com&address=929_Pearl_Street&city=Boulder&state=Colorado&zip=80302&country=US&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -129,8 +129,6 @@ Edit an existing Address.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -146,7 +144,7 @@ get
 
 Retrieve information associated with a particular Address.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -165,6 +163,7 @@ Retrieve information associated with a particular Address.
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/identity/get identity=Sender_Address&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -180,8 +179,6 @@ Retrieve information associated with a particular Address.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <identity>
    <city>Boulder</city>
    <name>Example Name</name>
@@ -208,7 +205,7 @@ list
 
 List all Addresses on your account, or check if a particular Address exists.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-list" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -227,6 +224,7 @@ List all Addresses on your account, or check if a particular Address exists.
    </tbody>
 </table>
 
+
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/identity/list identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
@@ -236,8 +234,6 @@ List all Addresses on your account, or check if a particular Address exists.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -253,7 +249,7 @@ delete
 
 Remove an Address from your account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -272,6 +268,7 @@ Remove an Address from your account.
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/identity/delete identity=Sender_Address4&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
@@ -279,8 +276,6 @@ Remove an Address from your account.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

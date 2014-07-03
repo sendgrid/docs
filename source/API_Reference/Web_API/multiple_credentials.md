@@ -12,7 +12,7 @@ get
 
 Retrieve a list of all credentials, or permissions for a specific credential.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -28,6 +28,7 @@ Retrieve a list of all credentials, or permissions for a specific credential.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample get GET https://api.sendgrid.com/api/credentials/get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -51,8 +52,6 @@ Retrieve a list of all credentials, or permissions for a specific credential.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <credentials>
    <credential>
       <created_at>2013-01-21 16:52:01</created_at>
@@ -89,7 +88,7 @@ Add
 
 This API call allows user to add a new set of credentials to their account.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-add" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -118,6 +117,7 @@ This API call allows user to add a new set of credentials to their account.
    </tbody>
 </table>
 
+
 {% apiexample add POST https://api.sendgrid.com/api/credentials/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} %}
   {% response json %}
 {
@@ -125,8 +125,6 @@ This API call allows user to add a new set of credentials to their account.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
 </result>
@@ -138,7 +136,7 @@ This API call allows user to add a new set of credentials to their account.
 Edit 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-edit" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -167,6 +165,7 @@ Edit
    </tbody>
 </table>
 
+
 {% apiexample edit POST https://api.sendgrid.com/api/credentials/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} %}
   {% response json %}
 {
@@ -174,8 +173,6 @@ Edit
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
 </result>
@@ -189,7 +186,7 @@ Edit
 Delete 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-remove" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -206,6 +203,7 @@ Delete
    </tbody>
 </table>
 
+
 {% apiexample remove POST https://api.sendgrid.com/api/credentials/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name %}
   {% response json %}
 {
@@ -213,8 +211,6 @@ Delete
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
 </result>

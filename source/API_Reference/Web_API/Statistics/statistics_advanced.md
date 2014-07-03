@@ -10,7 +10,7 @@ Advanced Statistics methods provide metrics on the he browsers and devices that 
 Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -58,6 +58,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/api/stats.getAdvanced api_user=your_sendgrid_username&api_key=your_sendgrid_password&start_date=2013-01-01&end_date=2013-01-02&data_type=global %}
   {% response json %}
 [
@@ -82,8 +83,6 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <delivered>41</delivered>

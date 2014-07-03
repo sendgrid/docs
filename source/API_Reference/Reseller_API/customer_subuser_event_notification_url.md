@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -37,6 +37,7 @@ Retrieve
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventpostur %}
   {% response json %}
 {
@@ -44,8 +45,6 @@ Retrieve
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <url>http://www.SubUserPostUrlHere.com</url>
 
   {% endresponse %}
@@ -56,7 +55,7 @@ Retrieve
 {% anchor h2 %}
 Update / Set URL 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-update" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -90,6 +89,7 @@ Update / Set URL
    </tbody>
 </table>
 
+
 {% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur %}
   {% response json %}
 {
@@ -97,8 +97,6 @@ Update / Set URL
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -111,7 +109,7 @@ Update / Set URL
 {% anchor h2 %}
 Delete 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -139,6 +137,7 @@ Delete
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventpostur %}
   {% response json %}
 {
@@ -146,8 +145,6 @@ Delete
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

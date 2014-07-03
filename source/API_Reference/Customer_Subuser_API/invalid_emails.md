@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %}
 Retrieve Invalid Emails 
 {% endanchor %}
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -38,6 +38,7 @@ Retrieve Invalid Emails
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
@@ -59,8 +60,6 @@ Retrieve Invalid Emails
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <invalidemails>
    <invalidemail>
       <email>isaac@hotmail.comm</email>
@@ -88,7 +87,7 @@ Retrieve Invalid Emails
 Delete Invalid Emails 
 {% endanchor %}
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
-<table class="table table-bordered table-striped">
+<table id="parameters-delete" class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>Parameter</th>
@@ -117,6 +116,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
    </tbody>
 </table>
 
+
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com %}
   {% response json %}
 {
@@ -124,8 +124,6 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

@@ -14,7 +14,7 @@ Retrieve
 
 Retrieve account limits for a specific customer subuser. If the API call response is empty that means the customer subuser has the limits removed.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -42,6 +42,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
    </tbody>
 </table>
 
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
   {% response json %}
 {
@@ -51,8 +52,6 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <credits>
    <credit>0</credit>
    <credit_remain>2000</credit_remain>
@@ -70,7 +69,7 @@ No Limit
 
 Obtain a complete list of all customer subuser.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-subuser" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -98,6 +97,7 @@ Obtain a complete list of all customer subuser.
    </tbody>
 </table>
 
+
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
   {% response json %}
 {
@@ -105,8 +105,6 @@ Obtain a complete list of all customer subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -122,7 +120,7 @@ Recurring Reset
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-reset" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -180,6 +178,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
    </tbody>
 </table>
 
+
 {% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
   {% response json %}
 {
@@ -187,8 +186,6 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -204,7 +201,7 @@ Total Credits
 
 Set a subusers credits to a specified amount.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-total" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -238,6 +235,7 @@ Set a subusers credits to a specified amount.
    </tbody>
 </table>
 
+
 {% apiexample total POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
   {% response json %}
 {
@@ -245,8 +243,6 @@ Set a subusers credits to a specified amount.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -262,7 +258,7 @@ Increment Credits
 
 Increment a subusers credits by a specified amount.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-increment" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -296,6 +292,7 @@ Increment a subusers credits by a specified amount.
    </tbody>
 </table>
 
+
 {% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
   {% response json %}
 {
@@ -303,8 +300,6 @@ Increment a subusers credits by a specified amount.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -320,7 +315,7 @@ Decrement Credits
 
 Decrement a subusers credits by a specified amount.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-decrement" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -354,6 +349,7 @@ Decrement a subusers credits by a specified amount.
    </tbody>
 </table>
 
+
 {% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}
   {% response json %}
 {
@@ -361,8 +357,6 @@ Decrement a subusers credits by a specified amount.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

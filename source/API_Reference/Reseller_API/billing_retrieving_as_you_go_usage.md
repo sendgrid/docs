@@ -8,7 +8,7 @@ navigation:
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
-<table class="table table-bordered table-striped">
+<table id="parameters-get" class="table table-bordered table-striped">
    <thead>
       <tr>
          <th>Parameter</th>
@@ -28,6 +28,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
       </tr>
    </tbody>
 </table>
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=curren %}
   {% response json %}
@@ -49,8 +50,6 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <usage>
    <invoices>
       <invoice>
