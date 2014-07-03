@@ -16,7 +16,7 @@ Create a new Marketing Email.
 
 
 {% parameters create %}
- {% parameter 'identity' 'Yes' 'Must be an existing Identity' 'The Identity that will be used for the Marketing Email being created.' %}
+ {% parameter 'identity' 'Yes' 'Must be an existing Identity' 'The Identity (Sender Address) that will be used for the Marketing Email being created.' %}
  {% parameter 'name' 'Yes' 'None' 'The name that will be used for the Marketing Email being created.' %}
  {% parameter 'subject' 'Yes' 'None' 'The subject that will be used for the Marketing Email being created.' %}
  {% parameter 'text' 'Yes' 'None' 'The text portion of the Marketing Email being created.' %}
