@@ -34,8 +34,6 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <unsubscribes>
    <unsubscribe>
       <email>brandon.west@sendgrid.com</email>
@@ -65,8 +63,6 @@ Delete an address from the Unsubscribe list. Please note that if no parameters a
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -93,8 +89,6 @@ Add email addresses to the Unsubscribe list.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

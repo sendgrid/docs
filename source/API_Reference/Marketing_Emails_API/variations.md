@@ -16,64 +16,17 @@ add
 
 Create a new Variation.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email in draft mode.</td>
-         <td>The name of the Marketing Email you are adding Variations to.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the Variation you will be adding.</td>
-      </tr>
-      <tr>
-         <td>subject</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The subject that will be used for the Variation being created.</td>
-      </tr>
-      <tr>
-         <td>text</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The text portion of the Marketing Email Variation being added.</td>
-      </tr>
-      <tr>
-         <td>html</td>
-         <td>No</td>
-         <td>
-            If the
-            <code>type</code>
-            parameter is set to "html" this parameter is required.
-         </td>
-         <td>The html portion of the Marketing Email Variation being added.</td>
-      </tr>
-      <tr>
-         <td>type</td>
-         <td>Yes</td>
-         <td>Value must be either "text" or "html".</td>
-         <td>The Variation type, either plain text, or multipart-alternative text and html.</td>
-      </tr>
-      <tr>
-         <td>identity_name</td>
-         <td>No</td>
-         <td>Must be an existing Marketing Email Identity</td>
-         <td>Identity name that is needed if the Marketing Email name does not already exist. Will be used to create a parent Marketing Email.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email in draft mode.' 'The name of the Marketing Email you are adding Variations to.' %}
+ {% parameter 'variation' 'Yes' 'None' 'The name of the Variation you will be adding.' %}
+ {% parameter 'subject' 'Yes' 'None' 'The subject that will be used for the Variation being created.' %}
+ {% parameter 'text' 'Yes' 'None' 'The text portion of the Marketing Email Variation being added.' %}
+ {% parameter 'html' 'No' 'If the <code>type</code> parameter is set to "html" this parameter is required.' 'The html portion of the Marketing Email Variation being added.' %}
+ {% parameter 'type' 'Yes' 'Value must be either "text" or "html".' 'The Variation type, either plain text, or multipart-alternative text and html.' %}
+ {% parameter 'identity_name' 'No' 'Must be an existing Marketing Email Identity' 'Identity name that is needed if the Marketing Email name does not already exist. Will be used to create a parent Marketing Email.' %}
+{% endparameters %}
+
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/variations/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=variation_name&subject=variation_subject&html=variation_body %}
   {% response json %}
@@ -82,8 +35,6 @@ Create a new Variation.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -98,60 +49,17 @@ edit
 {% endanchor %}
 Edit an existing Variation.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email with Variations added to it.</td>
-         <td>The name of the Marketing Email you are editing Variations on.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>Yes</td>
-         <td>Must be an existing Variation</td>
-         <td>The name of the Variation you will be editing.</td>
-      </tr>
-      <tr>
-         <td>newvariation</td>
-         <td>No</td>
-         <td>None</td>
-         <td>The new name of the Variation.</td>
-      </tr>
-      <tr>
-         <td>subject</td>
-         <td>No</td>
-         <td>None</td>
-         <td>The new subject of the Variation.</td>
-      </tr>
-      <tr>
-         <td>text</td>
-         <td>No</td>
-         <td>None</td>
-         <td>The new text portion of the Marketing Email Variation.</td>
-      </tr>
-      <tr>
-         <td>html</td>
-         <td>No</td>
-         <td>None</td>
-         <td>The new html portion of the Marketing Email Variation.</td>
-      </tr>
-      <tr>
-         <td>type</td>
-         <td>No</td>
-         <td>text/html</td>
-         <td>The Variation type.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters edit %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email with Variations added to it.' 'The name of the Marketing Email you are editing Variations on.' %}
+ {% parameter 'variation' 'Yes' 'Must be an existing Variation' 'The name of the Variation you will be editing.' %}
+ {% parameter 'newvariation' 'No' 'None' 'The new name of the Variation.' %}
+ {% parameter 'subject' 'No' 'None' 'The new subject of the Variation.' %}
+ {% parameter 'text' 'No' 'None' 'The new text portion of the Marketing Email Variation.' %}
+ {% parameter 'html' 'No' 'None' 'The new html portion of the Marketing Email Variation.' %}
+ {% parameter 'type' 'No' 'text/html' 'The Variation type.' %}
+{% endparameters %}
+
 
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/variations/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&type=html&variation=existing_variation_name&newvariation=new_variation_name&subject=variation_subject&html=variation_body %}
   {% response json %}
@@ -160,8 +68,6 @@ Edit an existing Variation.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -176,30 +82,12 @@ get
 {% endanchor %}
 Retrieve the contents of an existing Variation.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The name of the Marketing Email with existing Variations added to it.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>Yes</td>
-         <td>Must be an existing Variation</td>
-         <td>The name of the Variation you would like the contents of.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The name of the Marketing Email with existing Variations added to it.' %}
+ {% parameter 'variation' 'Yes' 'Must be an existing Variation' 'The name of the Variation you would like the contents of.' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/variations/get api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=existing_variation_name %}
   {% response json %}
@@ -217,8 +105,6 @@ Retrieve the contents of an existing Variation.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <variation>
    <name>existing_variation_name</name>
    <timezone_id/>
@@ -241,24 +127,11 @@ cancel
 {% endanchor %}
 Cancels a current Variation send that is in progress.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The name of the Marketing Email you wish to cancel, this cancels added Variations.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters cancel %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The name of the Marketing Email you wish to cancel, this cancels added Variations.' %}
+{% endparameters %}
+
 
 {% apiexample cancel POST https://api.sendgrid.com/api/newsletter/variations/cancel api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft %}
   {% response json %}
@@ -267,8 +140,6 @@ Cancels a current Variation send that is in progress.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -283,30 +154,12 @@ delete
 {% endanchor %}
 Delete the contents of an existing Variation.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The name of the Marketing Email with existing Variations added to it.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>No</td>
-         <td>Must be an existing Variation</td>
-         <td>The name of the Variation you would like to delete.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The name of the Marketing Email with existing Variations added to it.' %}
+ {% parameter 'variation' 'No' 'Must be an existing Variation' 'The name of the Variation you would like to delete.' %}
+{% endparameters %}
+
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/variations/delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_delete %}
   {% response json %}
@@ -315,8 +168,6 @@ Delete the contents of an existing Variation.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -331,30 +182,12 @@ list
 {% endanchor %}
 Retrieve a list of all Variations attached to a Marketing Email.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The marketing email for which to list variations.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>No</td>
-         <td>Must be an existing Variation</td>
-         <td>An optional list of names to check for.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The marketing email for which to list variations.' %}
+ {% parameter 'variation' 'No' 'Must be an existing Variation' 'An optional list of names to check for.' %}
+{% endparameters %}
+
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/variations/list api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find %}
   {% response json %}
@@ -363,8 +196,6 @@ Retrieve a list of all Variations attached to a Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -379,30 +210,12 @@ pickwinner
 {% endanchor %}
 Select the Variation you would like to send.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Select the Marketing Email you're picking the winner of.</td>
-      </tr>
-      <tr>
-         <td>variation</td>
-         <td>Yes</td>
-         <td>Must be an existing Variation</td>
-         <td>The winning Variation.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters pickwinner %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'Select the Marketing Email you are picking the winner of.' %}
+ {% parameter 'variation' 'Yes' 'Must be an existing Variation' 'The winning Variation.' %}
+{% endparameters %}
+
 
 {% apiexample pickwinner POST https://api.sendgrid.com/api/newsletter/variations/pickwinner api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_that_wins %}
   {% response json %}
@@ -411,8 +224,6 @@ Select the Variation you would like to send.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -427,61 +238,16 @@ schedule
 {% endanchor %}
 Schedule a send time and percentage for your variations.   
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Select the Marketing Email you'de like to schedule Variation testing on.</td>
-      </tr>
-      <tr>
-         <td>percent</td>
-         <td>Yes</td>
-         <td>Must be a number 0-100</td>
-         <td>Percentage of the total recipients that will be emailed in the test.</td>
-      </tr>
-      <tr>
-         <td>delay</td>
-         <td>No</td>
-         <td>Must be numeric.</td>
-         <td>
-            The number of units specified by
-            <code>delay_type</code>
-            by which to delay the send.
-         </td>
-      </tr>
-      <tr>
-         <td>delay_type</td>
-         <td>No</td>
-         <td>"minutes", "hours", or "days"</td>
-         <td>
-            The units used to specify the
-            <code>delay</code>
-         </td>
-      </tr>
-      <tr>
-         <td>date</td>
-         <td>No</td>
-         <td>Date / Time must be provided in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+-HH:MM)</td>
-         <td>Date / Time to schedule marketing email Delivery.</td>
-      </tr>
-      <tr>
-         <td>timezone</td>
-         <td>No</td>
-         <td>Must be an existing Variation</td>
-         <td>An optional timezone of specific date (timezones are in the Olson Database name format).</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters schedule %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'Select the Marketing Email you would like to schedule Variation testing on.' %}
+ {% parameter 'percent' 'Yes' 'Must be a number 0-100' 'Percentage of the total recipients that will be emailed in the test.' %}
+ {% parameter 'delay' 'No' 'Must be numeric.' 'The number of units specified by <code>delay_type</code> by which to delay the send.' %}
+ {% parameter 'delay_type' 'No' '"minutes", "hours", or "days"' 'The units used to specify the <code>delay</code>' %}
+ {% parameter 'date' 'No' 'Date / Time must be provided in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+-HH:MM)' 'Date / Time to schedule marketing email Delivery.' %}
+ {% parameter 'timezone' 'No' 'Must be an existing Variation' 'An optional timezone of specific date (timezones are in the Olson Database name format).' %}
+{% endparameters %}
+
 
 {% apiexample schedule POST https://api.sendgrid.com/api/newsletter/variations/schedule api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&percent=50 %}
   {% response json %}
@@ -490,8 +256,6 @@ Schedule a send time and percentage for your variations.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

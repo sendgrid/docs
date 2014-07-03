@@ -14,42 +14,13 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>getavailable</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer who we will update</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>apps</em>
-         </td>
-         <td>Allows you to access apps functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>getavailable</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com %}
   {% response json %}
@@ -61,8 +32,6 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filters>
    <filter>
       <name>twitter</name>
@@ -85,42 +54,13 @@ Twitter
 Activate App 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>activate</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer who we will update</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>apps</em>
-         </td>
-         <td>Allows you to access apps functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters activate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>activate</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+{% endparameters %}
+
 
 {% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com %}
   {% response json %}
@@ -129,8 +69,6 @@ Activate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -144,42 +82,13 @@ Activate App
 Deactivate App 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>deactivate</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer who we will update</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>apps</em>
-         </td>
-         <td>Allows you to access apps functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters deactivate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>deactivate</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+{% endparameters %}
+
 
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com %}
   {% response json %}
@@ -188,8 +97,6 @@ Deactivate App
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -217,8 +124,6 @@ These API calls require that settings are passed using POST.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <field_name>field_value</field_name>
    ...
@@ -245,8 +150,6 @@ Get Current Settings
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <filter>
    <field_name>field_value</field_name>
    ...

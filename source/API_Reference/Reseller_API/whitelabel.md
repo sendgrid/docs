@@ -14,33 +14,12 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 List 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>list</em>
-         </td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>whitelabel</em>
-         </td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'list' 'Yes' 'Must be set to <em>list</em>' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>whitelabel</em>' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=list %}
   {% response json %}
@@ -56,8 +35,6 @@ List
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <whitelabels>
    <whitelabel>
       <mail_domain>email.sendgrid.com</mail_domain>
@@ -78,43 +55,14 @@ List
 Append 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>append</em>
-         </td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-      </tr>
-      <tr>
-         <td>mail_domain</td>
-         <td>Yes</td>
-         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>whitelabel</em>
-         </td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters append %}
+ {% parameter 'list' 'Yes' 'Must be set to <em>append</em>' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' %}
+ {% parameter 'mail_domain' 'Yes' 'Whitelabel mail_domain used to append a whitelabel record to a subuser' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>whitelabel</em>' %}
+{% endparameters %}
+
 
 {% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com=m %}
   {% response json %}
@@ -123,8 +71,6 @@ Append
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

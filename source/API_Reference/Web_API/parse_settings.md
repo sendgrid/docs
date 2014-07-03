@@ -25,8 +25,6 @@ Retrieve settings already configured for parsing incoming email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <parse>
    <entry>
       <hostname>www.example.com</hostname>
@@ -46,34 +44,13 @@ set
 
 Specify the hostname and url for parsing incoming emails.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The callback URL to which Parse Webhook payloads will be POSTed.</td>
-      </tr>
-      <tr>
-         <td>spam_check</td>
-         <td>No</td>
-         <td>0 or 1</td>
-         <td>If spam check is enabled, messages that look like spam will not be POSTed.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters set %}
+ {% parameter 'hostname' 'Yes' 'alphanumeric' 'The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.' %}
+ {% parameter 'url' 'Yes' 'alphanumeric' 'The callback URL to which Parse Webhook payloads will be POSTed.' %}
+ {% parameter 'spam_check' 'No' '0 or 1' 'If spam check is enabled, messages that look like spam will not be POSTed.' %}
+{% endparameters %}
+
 
 {% apiexample set POST https://api.sendgrid.com/api/parse.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1 %}
   {% response json %}
@@ -82,8 +59,6 @@ Specify the hostname and url for parsing incoming emails.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -99,22 +74,11 @@ Delete Entry
 
 Delete the existing settings for parsing incoming emails.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>alphanumeric</td>
-         <td>The hostname (domain or subdomain) for which you would like to delete Parse Webhook settings.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters set %}
+ {% parameter 'hostname' 'Yes' 'alphanumeric' 'The hostname (domain or subdomain) for which you would like to delete Parse Webhook settings.' %}
+{% endparameters %}
+
 
 {% apiexample delete POST https://api.sendgrid.com/api/parse.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com %}
   {% response json %}
@@ -123,8 +87,6 @@ Delete the existing settings for parsing incoming emails.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

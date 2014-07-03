@@ -45,8 +45,6 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <blocks>
    <block>
       <email>email1@domain.com</email>
@@ -82,8 +80,6 @@ Delete an address from the Block list. {% parameters delete %}
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
    @nodes
@@ -111,8 +107,6 @@ count
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>4</count>
 </result>

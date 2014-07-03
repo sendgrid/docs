@@ -12,36 +12,12 @@ List Timezones
 
 This will return a list of all available timezones.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>timezone</em>
-         </td>
-         <td>Allows you to access timezone functionality</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>list</em>
-         </td>
-         <td>This will allow you to retrieve the timezones</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>timezone</em>' 'Allows you to access timezone functionality' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>list</em>' 'This will allow you to retrieve the timezones' %}
+{% endparameters %}
+
 
 {% apiexample list GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
   {% response json %}
@@ -67,8 +43,6 @@ This will return a list of all available timezones.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <timezones>
    <timezone>
       <display>GMT+02:00</display>
@@ -101,42 +75,13 @@ Get Timezone
 
 This API call will return the timezone currently set for your customer subuser.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser for which we are retrieving timezone</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>timezone</em>
-         </td>
-         <td>Allows you to access timezone functionality</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>get</em>
-         </td>
-         <td>This will allow you to retrieve the timezone for your customer subuser</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser for which we are retrieving timezone' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>timezone</em>' 'Allows you to access timezone functionality' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the timezone for your customer subuser' %}
+{% endparameters %}
+
 
 {% apiexample get GET https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer_subuser@example.com %}
   {% response json %}
@@ -148,8 +93,6 @@ This API call will return the timezone currently set for your customer subuser.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <timezone>
    <name>Central Time, US Canada</name>
    <offset>21600</offset>
@@ -168,51 +111,14 @@ Edit Timezone
 
 This API call will allow you to set timezone for your customer subuser
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser for which we are edit the timezone</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>timezone</em>
-         </td>
-         <td>Allows you to access timezone functionality</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>set</em>
-         </td>
-         <td>This will allow you to set the timezone for your customer subuser</td>
-      </tr>
-      <tr>
-         <td>timezone</td>
-         <td>Yes</td>
-         <td>Must be an timezone. Ex: America/Los_Angeles</td>
-         <td>
-            This will be the new timezone from
-            <a href="#-List-Timezones">List Timezones</a>
-         </td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters edit %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser for which we are edit the timezone' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>timezone</em>' 'Allows you to access timezone functionality' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>set</em>' 'This will allow you to set the timezone for your customer subuser' %}
+ {% parameter 'timezone' 'Yes' 'Must be an timezone. Ex: America/Los_Angeles' 'This will be the new timezone from <a href="#-List-Timezones">List Timezones</a>' %}
+{% endparameters %}
+
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer_subuser@example.com&timezone=America/Los_Angeles %}
   {% response json %}
@@ -221,8 +127,6 @@ This API call will allow you to set timezone for your customer subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

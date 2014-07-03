@@ -12,51 +12,15 @@ Retrieve Customer Statistics
 
 Note that you can use *either* the days parameter *or* the `start_date` and `end_date` parameter.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>stats</em>
-         </td>
-         <td>Allows you to access stats functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving statistics from' %}
+ {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (includes today)' %}
+ {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
+ {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+{% endparameters %}
+
 
 To retrive statistics for the Marketing Emails application you can use [Category Statistics](#-Category-Statistics) with `category=Newsletter` parameter.
 
@@ -90,8 +54,6 @@ To retrive statistics for the Marketing Emails application you can use [Category
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>
@@ -130,39 +92,13 @@ Retrieve Aggregates
 
 Retrieve all-time totals for your customer
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>aggregate</td>
-         <td>Yes</td>
-         <td>Must be set to 1</td>
-         <td>This is used to let us know that you are interested in all time totals</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>stats</em>
-         </td>
-         <td>Allows you to access stats functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters agg %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving statistics from' %}
+ {% parameter 'aggregate' 'Yes' 'Must be set to 1' 'This is used to let us know that you are interested in all time totals' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+{% endparameters %}
+
 
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
   {% response json %}
@@ -175,8 +111,6 @@ Retrieve all-time totals for your customer
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <requests>12342</requests>
    <bounces>12</bounces>
@@ -196,42 +130,13 @@ Category List
 
 Retrieve a list of all the categories used in your customers account.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>
-            The value must be set to
-            <em>true</em>
-         </td>
-         <td>This will allow you to retrieve a list of all categories used in your customers account.</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving category statistics from</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>stats</em>
-         </td>
-         <td>Allows you to access stats functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters cat %}
+ {% parameter 'list' 'Yes' 'The value must be set to <em>true</em>' 'This will allow you to retrieve a list of all categories used in your customers account.' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving category statistics from' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+{% endparameters %}
+
 
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
   {% response json %}
@@ -248,8 +153,6 @@ Retrieve a list of all the categories used in your customers account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -269,57 +172,16 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
-         <td>The category you will specify to retrieve detailed stats</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under you</td>
-         <td>The customer we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (Includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>stats</em>
-         </td>
-         <td>Allows you to access stats functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters catstat %}
+ {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed stats' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under you' 'The customer we are retrieving statistics from' %}
+ {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (Includes today)' %}
+ {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
+ {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+{% endparameters %}
+
 
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
@@ -345,8 +207,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>

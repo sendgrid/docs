@@ -16,32 +16,13 @@ Retrieve Invoice Numbers
 
 Return an array of invoice numbers to your account.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.</td>
-      </tr>
-      <tr>
-         <td>status</td>
-         <td>No</td>
-         <td>Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'start_date' 'No' 'Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.' %}
+ {% parameter 'end_date' 'No' 'Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.' %}
+ {% parameter 'status' 'No' 'Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/api/billing.list api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}
@@ -55,8 +36,6 @@ Return an array of invoice numbers to your account.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <invoices>
    <invoice>
       <number>2010010001</number>
@@ -77,32 +56,13 @@ Retrieve Invoices
 
 Return an array of invoices.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.</td>
-      </tr>
-      <tr>
-         <td>status</td>
-         <td>No</td>
-         <td>Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters invoices %}
+ {% parameter 'start_date' 'No' 'Must be in YYYY-mm-dd format. This is the start date to begin your invoice search from.' %}
+ {% parameter 'end_date' 'No' 'Must be in YYYY-mm-dd format and also include a start_date in the API call. This is the end date you wish to end your invoice search from.' %}
+ {% parameter 'status' 'No' 'Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.' %}
+{% endparameters %}
+
 
 {% apiexample invoices POST https://api.sendgrid.com/api/billing.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}
@@ -123,8 +83,6 @@ Return an array of invoices.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <invoices>
    <invoice>
       <number>2010010001</number>

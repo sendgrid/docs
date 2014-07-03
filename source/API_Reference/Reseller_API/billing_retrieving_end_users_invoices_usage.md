@@ -8,31 +8,12 @@ navigation:
 
 Retrieve invoices/usages from customers.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>usage</em>
-            .
-         </td>
-      </tr>
-      <tr>
-         <td>number</td>
-         <td>Yes</td>
-         <td>Must be the invoice number you received from SendGrid.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>usage</em> .' %}
+ {% parameter 'number' 'Yes' 'Must be the invoice number you received from SendGrid.' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag %}
   {% response json %}
@@ -75,8 +56,6 @@ Retrieve invoices/usages from customers.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <usage>
    <number>2010010001</number>
    <invoices>

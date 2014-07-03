@@ -41,8 +41,6 @@ Retrieve a list of invalid emails with addresses and response codes, optionally 
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <invalidemails>
    <invalidemail>
       <reason>Known bad domain</reason>
@@ -80,8 +78,6 @@ Retrieve the count of invalid emails.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>2</count>
    <result> </result>
@@ -110,8 +106,6 @@ Delete an address from the Invalid Email list.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    success
    <result> </result>

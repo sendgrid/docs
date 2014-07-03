@@ -27,8 +27,6 @@ Add one or more emails to a Recipient List.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <inserted>1</inserted>
 </result>
@@ -75,8 +73,6 @@ Get the email addresses and associated fields for a Recipient List.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <emails>
    <email>
       <email>dominic.may@sendgrid.com</email>
@@ -107,8 +103,6 @@ Retrieve the number of entries on a list.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>2</count>
 </result>
@@ -137,8 +131,6 @@ Remove one or more emails from a Recipient List.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <removed>1</removed>
 </result>

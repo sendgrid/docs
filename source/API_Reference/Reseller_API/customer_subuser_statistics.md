@@ -12,42 +12,14 @@ Retrieve Customer Subuser Statistics
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving statistics from' %}
+ {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (includes today)' %}
+ {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
+ {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com %}
   {% response json %}
@@ -79,8 +51,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>
@@ -119,30 +89,12 @@ Retrieve Aggregates
 
 Retrieve all-time totals for your customer subuser
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The subuser we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>aggregate</td>
-         <td>Yes</td>
-         <td>Must be set to 1</td>
-         <td>This is used to let us know that you are interested in all time totals</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters agg %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The subuser we are retrieving statistics from' %}
+ {% parameter 'aggregate' 'Yes' 'Must be set to 1' 'This is used to let us know that you are interested in all time totals' %}
+{% endparameters %}
+
 
 {% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= %}
   {% response json %}
@@ -155,8 +107,6 @@ Retrieve all-time totals for your customer subuser
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <requests>12342</requests>
    <bounces>12</bounces>
@@ -176,33 +126,12 @@ Category List
 
 Retrieve a list of all the categories used in your customer subusers account.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>
-            The value must be set to
-            <em>true</em>
-         </td>
-         <td>This will allow you to retrieve a list of all categories used in your customer subusers account.</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The subuser we are retrieving category statistics from</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters cat %}
+ {% parameter 'list' 'Yes' 'The value must be set to <em>true</em>' 'This will allow you to retrieve a list of all categories used in your customer subusers account.' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving category statistics from' %}
+{% endparameters %}
+
 
 {% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru %}
   {% response json %}
@@ -211,8 +140,6 @@ Retrieve a list of all the categories used in your customer subusers account.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -232,48 +159,15 @@ Retrieve statistics broken down by category. If the category does not exist, the
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
-         <td>The category you will specify to retrieve detailed stats</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under you</td>
-         <td>The customer subuser we are retrieving statistics from</td>
-      </tr>
-      <tr>
-         <td>days</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>Number of days in the past to include statistics (Includes today)</td>
-      </tr>
-      <tr>
-         <td>start_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be before the end_date parameter</td>
-         <td>The start date to look up statistics</td>
-      </tr>
-      <tr>
-         <td>end_date</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format and be after the start_date parameter</td>
-         <td>The end date to look up statistics</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters catstat %}
+ {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed stats' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under you' 'The customer subuser we are retrieving statistics from' %}
+ {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (Includes today)' %}
+ {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
+ {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
+{% endparameters %}
+
 
 {% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
@@ -299,8 +193,6 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
    <day>
       <date>2009-06-20</date>

@@ -9,42 +9,13 @@ navigation:
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>get</em>
-         </td>
-         <td>This will allow you to retrieve the event notification url for the specified customer</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The username of the customer</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>eventposturl</em>
-         </td>
-         <td>Allows you to access post event url functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the event notification url for the specified customer' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The username of the customer' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>eventposturl</em>' 'Allows you to access post event url functionality' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur %}
   {% response json %}
@@ -53,8 +24,6 @@ Retrieve
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <url>http://www.SubUserPostUrlHere.com\&gt;</url>
 
   {% endresponse %}
@@ -65,48 +34,14 @@ Retrieve
 {% anchor h2 %}
 Update / Set URL 
 {% endanchor %}
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>set</em>
-         </td>
-         <td>This will allow you to retrieve the event notification url for the specified customer</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The name of the customer</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>The notification URL</td>
-         <td>This is the new event notification URL</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>eventposturl</em>
-         </td>
-         <td>Allows you to access post event url functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters set %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>set</em>' 'This will allow you to retrieve the event notification url for the specified customer' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The name of the customer' %}
+ {% parameter 'url' 'Yes' 'The notification URL' 'This is the new event notification URL' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>eventposturl</em>' 'Allows you to access post event url functionality' %}
+{% endparameters %}
+
 
 {% apiexample set POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
   {% response json %}
@@ -115,8 +50,6 @@ Update / Set URL
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -129,42 +62,13 @@ Update / Set URL
 {% anchor h2 %}
 Delete 
 {% endanchor %}
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>delete</em>
-         </td>
-         <td>This will allow you to delete the event notification url for the specified customer</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The name of the customer</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>eventposturl</em>
-         </td>
-         <td>Allows you to access post event url functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete the event notification url for the specified customer' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The name of the customer' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>eventposturl</em>' 'Allows you to access post event url functionality' %}
+{% endparameters %}
+
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventposturl %}
   {% response json %}
@@ -173,8 +77,6 @@ Delete
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

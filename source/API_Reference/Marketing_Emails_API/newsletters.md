@@ -14,48 +14,15 @@ add
 
 Create a new Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>identity</td>
-         <td>Yes</td>
-         <td>Must be an existing Identity</td>
-         <td>The Identity that will be used for the Marketing Email being created.</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name that will be used for the Marketing Email being created.</td>
-      </tr>
-      <tr>
-         <td>subject</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The subject that will be used for the Marketing Email being created.</td>
-      </tr>
-      <tr>
-         <td>text</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The text portion of the Marketing Email being created.</td>
-      </tr>
-      <tr>
-         <td>html</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The html portion of the Marketing Email being created.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters create %}
+ {% parameter 'identity' 'Yes' 'Must be an existing Identity' 'The Identity that will be used for the Marketing Email being created.' %}
+ {% parameter 'name' 'Yes' 'None' 'The name that will be used for the Marketing Email being created.' %}
+ {% parameter 'subject' 'Yes' 'None' 'The subject that will be used for the Marketing Email being created.' %}
+ {% parameter 'text' 'Yes' 'None' 'The text portion of the Marketing Email being created.' %}
+ {% parameter 'html' 'Yes' 'None' 'The html portion of the Marketing Email being created.' %}
+{% endparameters %}
+
 
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/add identity=Sender_Address&name=SendGrid_Test&subject=testsubject&text=testtextbody&html=%3Chtml%3E%3Cp%3Etest_html_body%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -64,8 +31,6 @@ Create a new Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -81,18 +46,10 @@ edit
 
 Edit an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <tr>
-      <th>Parameter</th>
-      <th>Required</th>
-      <th>Requirements</th>
-      <th>Description</th>
-   </tr>
-   <td>name</td>
-   <td>Yes</td>
-   <td>Must be an existing Identity</td>
-   <td>The name of the Marketing Email being updated.</td>
-</table>
+
+{% parameters edit %}
+{% endparameters %}
+
 
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/edit identity=Sender_Address&name=SendGrid_Edit_Test&newname=new_name_test&subject=test_subject&text=test_text&html=%3Chtml%3E%3Cp%3ETest_html_text%3C%2Fp%3E%3C%2Fhtml%3E&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -101,8 +58,6 @@ Edit an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
@@ -118,24 +73,11 @@ get
 
 Retrieve the contents of an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Retrieve the content of an existing Marketing Email.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'Retrieve the content of an existing Marketing Email.' %}
+{% endparameters %}
+
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/get name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -153,8 +95,6 @@ Retrieve the contents of an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <newsletter>
    <can_edit>True</can_edit>
    <name>SendGrid NL Test</name>
@@ -178,24 +118,11 @@ list
 
 Retrieve a list of all existing Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>No</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'name' 'No' 'Must be an existing Marketing Email' 'Search to see if a specific Marketing Email exists rather than a list of all Marketing Emails.' %}
+{% endparameters %}
+
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -219,8 +146,6 @@ Retrieve a list of all existing Marketing Email.
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <newsletters>
    <newsletter>
       <name>Just Testing</name>
@@ -251,24 +176,11 @@ delete
 
 Remove an existing Marketing Email.
 
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Remove the Marketing Email with this name.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'Remove the Marketing Email with this name.' %}
+{% endparameters %}
+
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/delete name=SendGrid_Test1&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -277,8 +189,6 @@ Remove an existing Marketing Email.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>

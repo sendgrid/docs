@@ -38,8 +38,6 @@ get
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <spamreports>
    <spamreport>
       <ip>174.36.80.219</ip>
@@ -77,8 +75,6 @@ Retrieve the count of Spam Reports.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <count>2</count>
    <result> </result>
@@ -110,8 +106,6 @@ Delete an address from the Spam Reports list.
 }
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <result>
    <message>success</message>
 </result>
