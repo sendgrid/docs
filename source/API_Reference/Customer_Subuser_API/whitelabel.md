@@ -12,20 +12,10 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 {% anchor h2 %}
 List 
 {% endanchor %}
-<table id="parameters-list" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *list*</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'task' 'Yes' 'Must be set to *list*' %}
+{% endparameters %}
 
 
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
@@ -61,30 +51,12 @@ List
 {% anchor h2 %}
 Append 
 {% endanchor %}
-<table id="parameters-append" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *append*</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-      </tr>
-      <tr>
-         <td>mail_domain</td>
-         <td>Yes</td>
-         <td>Whitelabel mail_domain used to append a whitelabel record to a subuser</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters append %}
+ {% parameter 'task' 'Yes' 'Must be set to *append*' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' %}
+ {% parameter 'mail_domain' 'Yes' 'Whitelabel mail_domain used to append a whitelabel record to a subuser' %}
+{% endparameters %}
 
 
 {% apiexample append POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com %}

@@ -14,33 +14,11 @@ Retrieve
 
 Retrieve account limits for a specific customer subuser. If the API call response is empty that means the customer subuser has the limits removed.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>retrieve</em>
-         </td>
-         <td>Retrieve account limits</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who will have their account limits retrieved</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>retrieve</em>' 'Retrieve account limits' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their account limits retrieved' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
@@ -69,33 +47,11 @@ No Limit
 
 Obtain a complete list of all customer subuser.
 
-<table id="parameters-subuser" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>none</em>
-         </td>
-         <td>Remove account limits</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who will have their account limits removed</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters subuser %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>none</em>' 'Remove account limits' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their account limits removed' %}
+{% endparameters %}
 
 
 {% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
@@ -120,63 +76,16 @@ Recurring Reset
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
-<table id="parameters-reset" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>recurring</em>
-         </td>
-         <td>The task required to set the recurring reset</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser you will be applying a recurring reset to</td>
-      </tr>
-      <tr>
-         <td>credits</td>
-         <td>Yes</td>
-         <td>Must be an integer and greater than 0</td>
-         <td>The number of credits the customer subuser will be reset to</td>
-      </tr>
-      <tr>
-         <td>period</td>
-         <td>Yes</td>
-         <td>Must be either daily, weekly, or monthly</td>
-         <td>How often you want SendGrid to reset your customer subusers credits</td>
-      </tr>
-      <tr>
-         <td>startdate</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format</td>
-         <td>The date you want to start resetting the customer subusers credits</td>
-      </tr>
-      <tr>
-         <td>enddate</td>
-         <td>No</td>
-         <td>Date must be in YYYY-mm-dd format</td>
-         <td>The date you want to stop resetting the customer subusers credits</td>
-      </tr>
-      <tr>
-         <td>initial_credits</td>
-         <td>No</td>
-         <td>Must be an integer greater than 0</td>
-         <td>The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters reset %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>recurring</em>' 'The task required to set the recurring reset' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser you will be applying a recurring reset to' %}
+ {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The number of credits the customer subuser will be reset to' %}
+ {% parameter 'period' 'Yes' 'Must be either daily, weekly, or monthly' 'How often you want SendGrid to reset your customer subusers credits' %}
+ {% parameter 'startdate' 'No' 'Date must be in YYYY-mm-dd format' 'The date you want to start resetting the customer subusers credits' %}
+ {% parameter 'enddate' 'No' 'Date must be in YYYY-mm-dd format' 'The date you want to stop resetting the customer subusers credits' %}
+ {% parameter 'initial_credits' 'No' 'Must be an integer greater than 0' 'The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter' %}
+{% endparameters %}
 
 
 {% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
@@ -201,39 +110,12 @@ Total Credits
 
 Set a subusers credits to a specified amount.
 
-<table id="parameters-total" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>total</em>
-         </td>
-         <td>Set the credits to the specified amount</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who will have their credits updated</td>
-      </tr>
-      <tr>
-         <td>credits</td>
-         <td>Yes</td>
-         <td>Must be an integer and greater than 0</td>
-         <td>The total number of credits the customer subuser will be reset to</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters total %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>total</em>' 'Set the credits to the specified amount' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits updated' %}
+ {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be reset to' %}
+{% endparameters %}
 
 
 {% apiexample total POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
@@ -258,39 +140,12 @@ Increment Credits
 
 Increment a subusers credits by a specified amount.
 
-<table id="parameters-increment" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>increment</em>
-         </td>
-         <td>Increment the credits by the specified amount</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who will have their credits incremented</td>
-      </tr>
-      <tr>
-         <td>credits</td>
-         <td>Yes</td>
-         <td>Must be an integer and greater than 0</td>
-         <td>The total number of credits the customer subuser will be incremented by</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters increment %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>increment</em>' 'Increment the credits by the specified amount' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits incremented' %}
+ {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be incremented by' %}
+{% endparameters %}
 
 
 {% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
@@ -315,39 +170,12 @@ Decrement Credits
 
 Decrement a subusers credits by a specified amount.
 
-<table id="parameters-decrement" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>increment</em>
-         </td>
-         <td>Decrement the credits by the specified amount</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who will have their credits decremented</td>
-      </tr>
-      <tr>
-         <td>credits</td>
-         <td>Yes</td>
-         <td>Must be an integer and greater than 0</td>
-         <td>The total number of credits the customer subuser will be decremented by</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters decrement %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>increment</em>' 'Decrement the credits by the specified amount' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits decremented' %}
+ {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be decremented by' %}
+{% endparameters %}
 
 
 {% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}

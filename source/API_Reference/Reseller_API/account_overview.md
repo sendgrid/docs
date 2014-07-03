@@ -8,34 +8,11 @@ navigation:
 
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>overview</em>
-            .
-         </td>
-         <td>The task that allows us to present the customers information.</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer that is registered under your account.</td>
-         <td>The customer</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>overview</em> .' 'The task that allows us to present the customers information.' %}
+ {% parameter 'user' 'Yes' 'Customer that is registered under your account.' 'The customer' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com %}

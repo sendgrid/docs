@@ -14,30 +14,11 @@ Initial API Call
 
 In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login your customer subuser.
 
-<table id="parameters-call" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Must be set in email format</td>
-         <td>This is the customer subuser you will attempt to automatically login</td>
-      </tr>
-      <tr>
-         <td>password</td>
-         <td>No</td>
-         <td>Your customer subuser password.</td>
-         <td>Authenticate the customer subuser with this API call.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters call %}
+ {% parameter 'user' 'Yes' 'Must be set in email format' 'This is the customer subuser you will attempt to automatically login' %}
+ {% parameter 'password' 'No' 'Your customer subuser password.' 'Authenticate the customer subuser with this API call.' %}
+{% endparameters %}
 
 
 {% apiexample call POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=geturl&user=example@example.com %}

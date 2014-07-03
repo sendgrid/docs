@@ -12,39 +12,12 @@ Retrieve Bounces
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser we are retrieving bounces from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>get</em>
-         </td>
-         <td>This will allow you to retrieve the bounces for the specified customer subuser</td>
-      </tr>
-      <tr>
-         <td>date</td>
-         <td>No</td>
-         <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving bounces from' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the bounces for the specified customer subuser' %}
+ {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= %}
@@ -91,39 +64,12 @@ Delete Bounces
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The subuser we are retrieving bounces from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>delete</em>
-         </td>
-         <td>This will allow you to delete the bounces for the specified user</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>Bounce email address you want to delete</td>
-         <td>You must specify the bounced email message to remove</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving bounces from' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete the bounces for the specified user' %}
+ {% parameter 'email' 'No' 'Bounce email address you want to delete' 'You must specify the bounced email message to remove' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com %}

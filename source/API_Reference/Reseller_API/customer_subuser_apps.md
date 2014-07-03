@@ -14,33 +14,11 @@ List all of the available apps.
 
 Note: The *name* entry is used in all the other API calls to identify a app.
 
-<table id="parameters-list" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>getavailable</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>getavailable</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample list POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com %}
@@ -75,33 +53,11 @@ Twitter
 Activate App 
 {% endanchor %}
 
-<table id="parameters-activate" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>activate</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters activate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>activate</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=example@example.com %}
@@ -124,33 +80,11 @@ Activate App
 Deactivate App 
 {% endanchor %}
 
-<table id="parameters-deactivate" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>deactivate</em>
-         </td>
-         <td>Retrieve Available Apps</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters deactivate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>deactivate</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=example@example.com %}

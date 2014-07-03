@@ -9,34 +9,12 @@ navigation:
 {% anchor h2 %}
 Retrieve Spam Reports 
 {% endanchor %}
-<table id="parameters-get" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The subuser we are retrieving spam reports from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the spam reports for the specified user</td>
-      </tr>
-      <tr>
-         <td>date</td>
-         <td>No</td>
-         <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving spam reports from' %}
+ {% parameter 'task' 'Yes' 'Must be set to *get*' 'This will allow you to retrieve the spam reports for the specified user' %}
+ {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= %}
@@ -73,34 +51,12 @@ Retrieve Spam Reports
 Delete Spam Reports 
 {% endanchor %}
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The subuser we are retrieving spam reports from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *delete*</td>
-         <td>This will allow you to delete a spam report for the specified user</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>Must be a spam reports</td>
-         <td>You must specify the spam reports to remove</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving spam reports from' %}
+ {% parameter 'task' 'Yes' 'Must be set to *delete*' 'This will allow you to delete a spam report for the specified user' %}
+ {% parameter 'email' 'No' 'Must be a spam reports' 'You must specify the spam reports to remove' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com %}
