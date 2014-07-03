@@ -14,34 +14,12 @@ add
 
 Create a new Recipient List.
 
-<table id="parameters-add" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>Create a Recipient List with this name.</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Specify the column name for the 'name' associated with email addresses.</td>
-      </tr>
-      <tr>
-         <td>*columnname*</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Specify additional column names. The format needs to be    =columnname[*columnname*] will be the replacement tag.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'list' 'Yes' 'None' 'Create a Recipient List with this name.' %}
+ {% parameter 'name' 'No' 'None' 'Specify the column name for the 'name' associated with email addresses.' %}
+ {% parameter '*columnname*' 'No' 'None' 'Specify additional column names. The format needs to be =columnname[*columnname*] will be the replacement tag.' %}
+{% endparameters %}
 
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/add list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -66,28 +44,11 @@ edit
 
 Rename a Recipient List.
 
-<table id="parameters-edit" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>This is the name of the Recipient List to be renamed.</td>
-      </tr>
-      <tr>
-         <td>newlist</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>Specify the new name for the Recipient List.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters edit %}
+ {% parameter 'list' 'Yes' 'Must be an existing Recipient List.' 'This is the name of the Recipient List to be renamed.' %}
+ {% parameter 'newlist' 'Yes' 'None' 'Specify the new name for the Recipient List.' %}
+{% endparameters %}
 
 
 {% apiexample edit POST https://api.sendgrid.com/api/newsletter/lists/edit list=test7890&newlist=test567&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -112,22 +73,10 @@ get
 
 List all Recipient Lists on your account, or check if a particular List exists.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>No</td>
-         <td>None</td>
-         <td>Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'list' 'No' 'None' 'Check for this particular list. (To list all Recipient Lists on your account exclude this parameter)' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/lists/get list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -156,22 +105,10 @@ delete
 
 Remove a Recipient List from your account.
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>Remove this Recipient List.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'list' 'Yes' 'Must be an existing Recipient List.' 'Remove this Recipient List.' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/delete list=test5678&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}

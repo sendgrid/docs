@@ -12,48 +12,13 @@ Retrieve Unsubscribes
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving unsubscribes from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>get</em>
-         </td>
-         <td>This will allow you to retrieve the unsubscribes for the specified customer</td>
-      </tr>
-      <tr>
-         <td>date</td>
-         <td>No</td>
-         <td>Must be set to 1</td>
-         <td>Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS</td>
-      </tr>
-      <tr>
-         <td>method</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>unsubscribes</em>
-         </td>
-         <td>Allows you to access unsubscribe functionality</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the unsubscribes for the specified customer' %}
+ {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>unsubscribes</em>' 'Allows you to access unsubscribe functionality' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date= %}
@@ -92,39 +57,12 @@ Delete Unsubscribes
 
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving unsubscribes from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>delete</em>
-         </td>
-         <td>This will allow you to delete an unsubscribe record for the specified customer</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>Must be an unsubscribe record</td>
-         <td>You must specify the unsubscribe record to remove</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete an unsubscribe record for the specified customer' %}
+ {% parameter 'email' 'No' 'Must be an unsubscribe record' 'You must specify the unsubscribe record to remove' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com %}
@@ -149,39 +87,12 @@ Add Unsubscribes
 
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
-<table id="parameters-add" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer must be registered under your account</td>
-         <td>The customer we are retrieving unsubscribes from</td>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>add</em>
-         </td>
-         <td>This will allow you to add an unsubscribe record for the specified customer</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>No</td>
-         <td>Must be an unsubscribe record</td>
-         <td>You must specify the unsubscribe record to add</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>add</em>' 'This will allow you to add an unsubscribe record for the specified customer' %}
+ {% parameter 'email' 'No' 'Must be an unsubscribe record' 'You must specify the unsubscribe record to add' %}
+{% endparameters %}
 
 
 {% apiexample add POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com %}

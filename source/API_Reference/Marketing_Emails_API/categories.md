@@ -14,24 +14,10 @@ create
 
 Create a new Category.
 
-<table id="parameters-create" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description.</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name that will be used for the Category being created.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters create %}
+ {% parameter 'category' 'Yes' 'None' 'The name that will be used for the Category being created.' %}
+{% endparameters %}
 
 
 {% apiexample create POST https://api.sendgrid.com/api/newsletter/category/create api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY %}
@@ -56,30 +42,11 @@ add
 
 Assign a Category to an existing Marketing Email.
 
-<table id="parameters-add" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>category</td>
-         <td>Yes</td>
-         <td>Must be an existing Category.</td>
-         <td>The Category that will be added to the marketing email.</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The Marketing Email to which the categories will be added.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'category' 'Yes' 'Must be an existing Category.' 'The Category that will be added to the marketing email.' %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The Marketing Email to which the categories will be added.' %}
+{% endparameters %}
 
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/category/add api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
@@ -104,30 +71,11 @@ remove
 
 Remove specific categories, or all categories from a Marketing Email.\\
 
-<table id="parameters-remove" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>The Marketing Email that will have Category(ies) deleted from it.</td>
-      </tr>
-      <tr>
-         <td>category</td>
-         <td>No</td>
-         <td>Must be an existing category currently added to the Marketing Email</td>
-         <td>Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters remove %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'The Marketing Email that will have Category(ies) deleted from it.' %}
+ {% parameter 'category' 'No' 'Must be an existing category currently added to the Marketing Email' 'Remove the Category with this name. If the category is not specified. all categories will be deleted from the Marketing Email.' %}
+{% endparameters %}
 
 
 {% apiexample remove POST https://api.sendgrid.com/api/newsletter/category/remove api_user=your_sendgrid_username&api_key=your_sendgrid_password&category=CATEGORY&name=NEWSLETTER %}
@@ -152,24 +100,10 @@ list
 
 List all categories.
 
-<table id="parameters-list" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>category</td>
-         <td>No</td>
-         <td>Must be an existing Category</td>
-         <td>Search to see if a specific Category exists rather than a list of all Categories.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters list %}
+ {% parameter 'category' 'No' 'Must be an existing Category' 'Search to see if a specific Category exists rather than a list of all Categories.' %}
+{% endparameters %}
 
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}

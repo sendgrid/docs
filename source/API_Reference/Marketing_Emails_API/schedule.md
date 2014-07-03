@@ -21,36 +21,12 @@ add
 
 Schedule a delivery time for an existing Marketing Email.
 
-<table id="parameters-add" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email.</td>
-         <td>Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)</td>
-      </tr>
-      <tr>
-         <td>at</td>
-         <td>No</td>
-         <td>Date / Time must be provided in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+-HH:MM)</td>
-         <td>Date / Time to schedule marketing email Delivery.</td>
-      </tr>
-      <tr>
-         <td>after</td>
-         <td>No</td>
-         <td>Must be a positive integer.</td>
-         <td>Number of minutes until delivery should occur.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email.' 'Marketing Email to schedule delivery for. (If Marketing Email should be sent now, include no additional parameters.)' %}
+ {% parameter 'at' 'No' 'Date / Time must be provided in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+-HH:MM)' 'Date / Time to schedule marketing email Delivery.' %}
+ {% parameter 'after' 'No' 'Must be a positive integer.' 'Number of minutes until delivery should occur.' %}
+{% endparameters %}
 
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/schedule/add name=test&at=2013-12-20T11:55:00-05:00&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -75,24 +51,10 @@ get
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email.</td>
-         <td>Retrieve the delivery time scheduled for this Marketing Email.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email.' 'Retrieve the delivery time scheduled for this Marketing Email.' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/schedule/get name=SendGrid_Test2&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -117,24 +79,10 @@ delete
 
 Cancel a scheduled send for a Marketing Email.
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing Marketing Email</td>
-         <td>Remove the scheduled delivery time from an existing Marketing Email.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'name' 'Yes' 'Must be an existing Marketing Email' 'Remove the scheduled delivery time from an existing Marketing Email.' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/schedule/delete name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}

@@ -15,40 +15,13 @@ Create Monitor Record
 {% endanchor %}
 Obtain a complete list of all subuser.
 
-<table id="parameters-create" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *create*</td>
-         <td>Create a monitor record</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Name must be unique. Can't be more than 255 characters</td>
-         <td>The unique name to identify this monitor record</td>
-      </tr>
-      <tr>
-         <td>email</td>
-         <td>Yes</td>
-         <td>Must be in email format</td>
-         <td>The email destination to send the email sample to</td>
-      </tr>
-      <tr>
-         <td>frequency</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The frequency of emails to be sent out</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters create %}
+ {% parameter 'task' 'Yes' 'Must be set to *create*' 'Create a monitor record' %}
+ {% parameter 'name' 'Yes' 'Name must be unique. Can not be more than 255 characters' 'The unique name to identify this monitor record' %}
+ {% parameter 'email' 'Yes' 'Must be in email format' 'The email destination to send the email sample to' %}
+ {% parameter 'frequency' 'Yes' 'Subuser must be registered under your account' 'The frequency of emails to be sent out' %}
+{% endparameters %}
 
 
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
@@ -72,46 +45,14 @@ Edit Monitor Record
 {% endanchor %}
 Make modifications to an existing Monitor record.
 
-<table id="parameters-edit" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *edit*</td>
-         <td>The task required to edit a monitor</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>The name of the previous monitor record</td>
-         <td>The monitor record we are going to edit</td>
-      </tr>
-      <tr>
-         <td>new_name</td>
-         <td>No</td>
-         <td>New name must be unique and can't be more than 255 characters</td>
-         <td>The new monitor record name</td>
-      </tr>
-      <tr>
-         <td>new_email</td>
-         <td>No</td>
-         <td>Must be in email format</td>
-         <td>The new email destination to send the email sample to</td>
-      </tr>
-      <tr>
-         <td>new_frequency</td>
-         <td>No</td>
-         <td>Must be an integer and greater than 0</td>
-         <td>The new frequency of emails to be sent out</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters edit %}
+ {% parameter 'task' 'Yes' 'Must be set to *edit*' 'The task required to edit a monitor' %}
+ {% parameter 'name' 'Yes' 'The name of the previous monitor record' 'The monitor record we are going to edit' %}
+ {% parameter 'new_name' 'No' 'New name must be unique and can not be more than 255 characters' 'The new monitor record name' %}
+ {% parameter 'new_email' 'No' 'Must be in email format' 'The new email destination to send the email sample to' %}
+ {% parameter 'new_frequency' 'No' 'Must be an integer and greater than 0' 'The new frequency of emails to be sent out' %}
+{% endparameters %}
 
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
@@ -135,28 +76,11 @@ Delete Monitor Record
 {% endanchor %}
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *delete*</td>
-         <td>The task required to remove a monitor</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be a monitor record to remove</td>
-         <td>The unique name to identify this monitor record</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'task' 'Yes' 'Must be set to *delete*' 'The task required to remove a monitor' %}
+ {% parameter 'name' 'Yes' 'Must be a monitor record to remove' 'The unique name to identify this monitor record' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&name=recordToDelete %}
@@ -180,22 +104,10 @@ List All Monitor Records
 {% endanchor %}
 List all available monitor records a reseller has.
 
-<table id="parameters-listrecords" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *list*</td>
-         <td>The task required to list all monitor records</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters listrecords %}
+ {% parameter 'task' 'Yes' 'Must be set to *list*' 'The task required to list all monitor records' %}
+{% endparameters %}
 
 
 {% apiexample listrecords POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
@@ -249,34 +161,12 @@ Append A Subuser To A Monitor Record
 {% endanchor %}
 Append a monitor record to a existing record onto a subuser.
 
-<table id="parameters-append" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *append*</td>
-         <td>The task required to append a monitor record to a subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The user we will append a monitor record to</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>No</td>
-         <td>Must be a valid monitor record</td>
-         <td>The name of the monitor record we will be appending</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters append %}
+ {% parameter 'task' 'Yes' 'Must be set to *append*' 'The task required to append a monitor record to a subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The user we will append a monitor record to' %}
+ {% parameter 'name' 'No' 'Must be a valid monitor record' 'The name of the monitor record we will be appending' %}
+{% endparameters %}
 
 
 {% apiexample append POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com %}
@@ -300,28 +190,11 @@ Detach A Monitor Record From A Subuser
 {% endanchor %}
 Detach a subuser from a monitor record.
 
-<table id="parameters-detach" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *detach*</td>
-         <td>The task required to detach a monitor record to a subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The subuser we will detach the monitor record from</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters detach %}
+ {% parameter 'task' 'Yes' 'Must be set to *detach*' 'The task required to detach a monitor record to a subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we will detach the monitor record from' %}
+{% endparameters %}
 
 
 {% apiexample detach POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com %}

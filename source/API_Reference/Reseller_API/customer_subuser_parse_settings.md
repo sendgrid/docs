@@ -9,33 +9,11 @@ navigation:
 {% anchor h2 %}
 Get Current Settings 
 {% endanchor %}
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>get</em>
-         </td>
-         <td>Retrieve Parse settings</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'Retrieve Parse settings' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=example@example.com %}
@@ -67,45 +45,13 @@ Get Current Settings
 {% anchor h2 %}
 Create New Entry 
 {% endanchor %}
-<table id="parameters-create" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>set</em>
-         </td>
-         <td>Set Parse settings</td>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>No more than 255 characters</td>
-         <td>Hostname we will use with your email</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td/>
-         <td>The parse destination</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters create %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>set</em>' 'Set Parse settings' %}
+ {% parameter 'hostname' 'Yes' 'No more than 255 characters' 'Hostname we will use with your email' %}
+ {% parameter 'url' 'Yes' 'The parse destination' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=example@example.com %}
@@ -127,45 +73,13 @@ Create New Entry
 {% anchor h2 %}
 Edit Entry 
 {% endanchor %}
-<table id="parameters-edit" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>update</em>
-         </td>
-         <td>Set Parse settings</td>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>No more than 255 characters</td>
-         <td>Hostname entry you want to update</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td/>
-         <td>The parse destination</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters edit %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>update</em>' 'Set Parse settings' %}
+ {% parameter 'hostname' 'Yes' 'No more than 255 characters' 'Hostname entry you want to update' %}
+ {% parameter 'url' 'Yes' 'The parse destination' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+{% endparameters %}
 
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=example@example.com %}
@@ -187,39 +101,12 @@ Edit Entry
 {% anchor h2 %}
 Delete Entry 
 {% endanchor %}
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>delete</em>
-         </td>
-         <td>Set Parse settings</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Customer subuser must be registered under your account</td>
-         <td>The customer subuser who we will update</td>
-      </tr>
-      <tr>
-         <td>hostname</td>
-         <td>Yes</td>
-         <td>Must be the hostname you wish to delete.</td>
-         <td>The host name you will remove for your customer subuser</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'Set Parse settings' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who we will update' %}
+ {% parameter 'hostname' 'Yes' 'Must be the hostname you wish to delete.' 'The host name you will remove for your customer subuser' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=example@example.com %}

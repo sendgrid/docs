@@ -12,44 +12,12 @@ All
 
 View all IPs under your account.
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>all</em>
-            .
-         </td>
-         <td>Retrieve all IPs available for your account.</td>
-      </tr>
-      <tr>
-         <td>ip</td>
-         <td>No</td>
-         <td>Can be a complete or partial IP address.</td>
-         <td>Filter your search results.</td>
-      </tr>
-      <tr>
-         <td>system</td>
-         <td>No</td>
-         <td>
-            Must be set to
-            <em>true</em>
-            .
-         </td>
-         <td>Include IPs assigned by SendGrid.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>all</em> .' 'Retrieve all IPs available for your account.' %}
+ {% parameter 'ip' 'No' 'Can be a complete or partial IP address.' 'Filter your search results.' %}
+ {% parameter 'system' 'No' 'Must be set to <em>true</em> .' 'Include IPs assigned by SendGrid.' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
@@ -94,34 +62,11 @@ Free
 
 A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
-<table id="parameters-free" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Parameter</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>free</em>
-            .
-         </td>
-         <td>Retrieve all free IPs for your account.</td>
-      </tr>
-      <tr>
-         <td>ip</td>
-         <td>No</td>
-         <td>Can be a complete or partial IP address.</td>
-         <td>Filter your search results.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters free %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>free</em> .' 'Retrieve all free IPs for your account.' %}
+ {% parameter 'ip' 'No' 'Can be a complete or partial IP address.' 'Filter your search results.' %}
+{% endparameters %}
 
 
 {% apiexample free POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=free %}
@@ -166,34 +111,11 @@ Taken
 
 A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
-<table id="parameters-taken" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Parameter</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>taken</em>
-            .
-         </td>
-         <td>Retrieve all taken IPs for your account.</td>
-      </tr>
-      <tr>
-         <td>ip</td>
-         <td>No</td>
-         <td>Can be a complete or partial IP address.</td>
-         <td>Filter your search results.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters taken %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>taken</em> .' 'Retrieve all taken IPs for your account.' %}
+ {% parameter 'ip' 'No' 'Can be a complete or partial IP address.' 'Filter your search results.' %}
+{% endparameters %}
 
 
 {% apiexample taken POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=taken %}
@@ -238,34 +160,11 @@ Available
 
 A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
-<table id="parameters-available" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Parameter</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>available</em>
-            .
-         </td>
-         <td>Retrieve all available IPs for your account.</td>
-      </tr>
-      <tr>
-         <td>ip</td>
-         <td>No</td>
-         <td>Can be a complete or partial IP address.</td>
-         <td>Filter your search results.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters available %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>available</em> .' 'Retrieve all available IPs for your account.' %}
+ {% parameter 'ip' 'No' 'Can be a complete or partial IP address.' 'Filter your search results.' %}
+{% endparameters %}
 
 
 {% apiexample available POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=available %}
@@ -310,56 +209,14 @@ Usage
 
 The current breakdown of users who are using your IPs.
 
-<table id="parameters-usage" class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Parameter</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>
-            Must be set to
-            <em>usage</em>
-            .
-         </td>
-         <td>Retrieve all IPs in use broken down by user.</td>
-      </tr>
-      <tr>
-         <td>ip</td>
-         <td>No</td>
-         <td>Can be a complete or partial IP address.</td>
-         <td>Filter your search results.</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>No</td>
-         <td>Can be a complete or part of a username.</td>
-         <td>Filter your search results.</td>
-      </tr>
-      <tr>
-         <td>group</td>
-         <td>No</td>
-         <td>Can be a complete or part of a group name.</td>
-         <td>Filter your search results.</td>
-      </tr>
-      <tr>
-         <td>system</td>
-         <td>No</td>
-         <td>
-            Must be set to
-            <em>true</em>
-            .
-         </td>
-         <td>Include IPs assigned by SendGrid.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters usage %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>usage</em> .' 'Retrieve all IPs in use broken down by user.' %}
+ {% parameter 'ip' 'No' 'Can be a complete or partial IP address.' 'Filter your search results.' %}
+ {% parameter 'user' 'No' 'Can be a complete or part of a username.' 'Filter your search results.' %}
+ {% parameter 'group' 'No' 'Can be a complete or part of a group name.' 'Filter your search results.' %}
+ {% parameter 'system' 'No' 'Must be set to <em>true</em> .' 'Include IPs assigned by SendGrid.' %}
+{% endparameters %}
 
 
 {% apiexample usage POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=usage&user=example.com %}

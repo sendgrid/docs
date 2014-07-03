@@ -9,28 +9,11 @@ navigation:
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
-<table id="parameters-retrieve" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The username of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters retrieve %}
+ {% parameter 'task' 'Yes' 'Must be set to *get*' 'This will allow you to retrieve the event notification url for the specified subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The username of the subuser' %}
+{% endparameters %}
 
 
 {% apiexample retrieve POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com %}
@@ -50,34 +33,12 @@ Retrieve
 {% anchor h2 %}
 Update / Set URL 
 {% endanchor %}
-<table id="parameters-set" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *set*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>The notification URL</td>
-         <td>This is the new event notification URL</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters set %}
+ {% parameter 'task' 'Yes' 'Must be set to *set*' 'This will allow you to retrieve the event notification url for the specified subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The name of the subuser' %}
+ {% parameter 'url' 'Yes' 'The notification URL' 'This is the new event notification URL' %}
+{% endparameters %}
 
 
 {% apiexample set POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co %}
@@ -99,28 +60,11 @@ Update / Set URL
 {% anchor h2 %}
 Delete 
 {% endanchor %}
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *delete*</td>
-         <td>This will allow you to delete the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'task' 'Yes' 'Must be set to *delete*' 'This will allow you to delete the event notification url for the specified subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The name of the subuser' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co %}

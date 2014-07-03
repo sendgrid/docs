@@ -14,28 +14,11 @@ add
 
 Assign a List to a Marketing Email.
 
-<table id="parameters-add" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the list to assign to the marketing email</td>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the marketing email</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters add %}
+ {% parameter 'list' 'Yes' 'None' 'The name of the list to assign to the marketing email' %}
+ {% parameter 'name' 'Yes' 'None' 'The name of the marketing email' %}
+{% endparameters %}
 
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/recipients/add name=SendGrid%20NL%20Test2&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -60,22 +43,10 @@ get
 
 Get all lists assigned to a particular marketing email
 
-<table id="parameters-get" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>None</td>
-         <td>The name of the marketing email for which to retrieve lists.</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters get %}
+ {% parameter 'name' 'Yes' 'None' 'The name of the marketing email for which to retrieve lists.' %}
+{% endparameters %}
 
 
 {% apiexample get POST https://api.sendgrid.com/api/newsletter/recipients/get name=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -104,28 +75,11 @@ delete
 
 Remove assigned lists from marketing email
 
-<table id="parameters-delete" class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>name</td>
-         <td>Yes</td>
-         <td>Must be an existing marketing email</td>
-         <td>To marketing email from which the list will be unassigned.</td>
-      </tr>
-      <tr>
-         <td>list</td>
-         <td>Yes</td>
-         <td>Must be an existing Recipient List.</td>
-         <td>Remove this list from the marketing email</td>
-      </tr>
-   </tbody>
-</table>
+
+{% parameters delete %}
+ {% parameter 'name' 'Yes' 'Must be an existing marketing email' 'To marketing email from which the list will be unassigned.' %}
+ {% parameter 'list' 'Yes' 'Must be an existing Recipient List.' 'Remove this list from the marketing email' %}
+{% endparameters %}
 
 
 {% apiexample delete POST https://api.sendgrid.com/api/newsletter/recipients/delete name=SendGrid%20NL%20Test1&list=test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
