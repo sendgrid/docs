@@ -93,10 +93,19 @@ function search(query) {
       }
     
       $.each(data, function(index, result) {
+        first_occurrence = $(result.body).text().toLowerCase().indexOf(query);
+        before_chars = (500-(query.length))/2;
+        start = first_occurrence - before_chars;
+        if (start < 0) {
+          start = 0;
+        }
+        end = start + (before_chars*2);
+        excerpt = $(result.body).text().substring(start, end).replace(query,'<strong>' + query + '</strong>');
+
         $('div#kb-results').append('<div class="result">\
             <p><a class="title" href="' + result.html_url + '">' + result.title + '</a><br/>\
         <a href="' + result.html_url + '"\><small>' + result.html_url + '</small></a><br/>\
-            ' + $(result.body).text().substring(0,500) + '</p>\
+            ' + excerpt + '</p>\
         <br/></div>')
       });
     })
