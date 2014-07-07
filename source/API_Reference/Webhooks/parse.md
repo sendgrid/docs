@@ -39,7 +39,74 @@ The following parameters will be included in the POST to your callback URL.
 The request that will be sent to the HTTP endpoint will be encoded as multipart/form-data. 
 {% endinfo %}
 
-
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>headers</th>
+         <td>The raw headers of the email.</td>
+      </tr>
+      <tr>
+         <th>text</th>
+         <td>Text body of email. If not set, email did not have a text body.</td>
+      </tr>
+      <tr>
+         <th>html</th>
+         <td>HTML body of email. If not set, email did not have an HTML body.</td>
+      </tr>
+      <tr>
+         <th>from</th>
+         <td>Email sender, as taken from the message headers.</td>
+      </tr>
+      <tr>
+         <th>to</th>
+         <td>Email recipient field, as taken from the message headers.</td>
+      </tr>
+      <tr>
+         <th>cc</th>
+         <td>Email cc field, as taken from the message headers.</td>
+      </tr>
+      <tr>
+         <th>subject</th>
+         <td>Email Subject.</td>
+      </tr>
+      <tr>
+         <th>dkim</th>
+         <td>A JSON string containing the verification results of any dkim and domain keys signatures in the message.</td>
+      </tr>
+      <tr>
+         <th>SPF</th>
+         <td>The results of the Sender Policy Framework verification of the message sender and receiving IP address.</td>
+      </tr>
+      <tr>
+         <th>envelope</th>
+         <td>A JSON string containing the SMTP envelope. This will have two variables: *to*, which is a single-element array containing the address that we recieved the email to, and *from*, which is the return path for the message.</td>
+      </tr>
+      <tr>
+         <th>charsets</th>
+         <td>A JSON string containing the character sets of the fields extracted from the message.</td>
+      </tr>
+      <tr>
+         <th>spam_score</th>
+         <td>Spam Assassin's rating for whether or not this is spam.</td>
+      </tr>
+      <tr>
+         <th>spam_report</th>
+         <td>Spam Assassin's spam report.</td>
+      </tr>
+      <tr>
+         <th>attachments</th>
+         <td>Number of attachments included in email.</td>
+      </tr>
+      <tr>
+         <th>attachment-info</th>
+         <td>A JSON string containing the attachmentX (see below) keys with another JSON string as the value. This string will contain the keys *filename*, which is the name of the file and *type*, which is the [media type](http://en.wikipedia.org/wiki/Internet_media_type) of the file.</td>
+      </tr>
+      <tr>
+         <th>attachmentX</th>
+         <td>These are file upload names, where N is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. Attachments provided with this parameter, are provided in the form of file uploads. TNEF files (winmail.dat) will be extracted and have any attachments posted.</td>
+      </tr>
+   </tbody>
+</table>
 
 {% info %}
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether. 
