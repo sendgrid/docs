@@ -56,6 +56,9 @@ Create a Subuser
 Delete a Subuser 
 {% endanchor %}
 
+{% warning %}
+This call will delete a subuser and will disable all tracked links on sent messages. Recipients will no longer be able to click existing tracked links and make it to the intended destination. This is irreversible, and should be used with extreme caution.
+{% endwarning %}
 
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Must be a valid subuser name.' 'The subuser to delete.' %}
