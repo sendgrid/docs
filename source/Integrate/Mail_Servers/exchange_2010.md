@@ -37,4 +37,6 @@ The configuration of a new send connector is straight forward. It is the associa
 17. Verify your settings and, when satisfied, click **New**.
 18. If the configuration completes correctly, you will receive positive notification. You can then click on **Finish**.
 
-Once you have completed installation of the connector, you will need to configure your server(s) to allow limited access to the new send connector. You can read more about [Send Connector permissions](http://technet.microsoft.com/en-us/library/aa998662(v=exchg.141).aspx).
+Once you have completed installation of the connector, you will need to configure your server(s) to allow limited access to the new send connector. You can read more about [Send Connector permissions][send-connector-permissions].
+
+[send-connector-permissions]: http://technet.microsoft.com/en-us/library/aa998662(v=exchg.141).aspx
