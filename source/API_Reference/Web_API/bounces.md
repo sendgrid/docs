@@ -100,7 +100,7 @@ Delete an address from the Bounce list.
   {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}  
   {% parameter type No 'Hard or soft.' 'Choose the type of bounce to be removed.' %}  
   {% parameter email No 'Must be a valid user account email.' 'Email bounce address to remove.' %}  
-  {% parameter delete_all No 'Must me set to 1.' 'This will delete the bounce list and will not be retrievable.' %}
+  {% parameter delete_all No 'Must be set to 1.' 'This will delete the bounce list and will not be retrievable.' %}
 {% endparameters %}
 
 {% apiexample delete POST https://api.sendgrid.com/api/bounces.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&email=emailToDelete@domain.com %}
