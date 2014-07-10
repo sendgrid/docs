@@ -60,7 +60,7 @@ Get the email addresses and associated fields for a Recipient List.
 {% parameters get %} 
   
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
-  {% parameter get No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}
+  {% parameter email No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}
 {% endparameters %}
 
 {% apiexample get GET https://api.sendgrid.com/api/newsletter/lists/email/get list=Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
