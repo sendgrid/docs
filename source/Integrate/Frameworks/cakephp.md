@@ -9,7 +9,7 @@ navigation:
   show: true
 ---
 
-CakePHP comes with an email library that already supports SMTP. [For more information check out the CakePHP documentation page](http://book.cakephp.org/view/1286/Sending-a-basic-message). This example shows how to send an email with both HTML and text bodies.
+CakePHP comes with an email library that already supports SMTP. [For more information check out the CakePHP documentation page](http://book.cakephp.org/2.0/en/core-utility-libraries/email.html#configuration). This example shows how to send an email with both HTML and text bodies.
 
 In **app/views/layouts/** you need to define the layout of your text and HTML emails: 
 

@@ -40,7 +40,7 @@ If you do not have any SendGrid Instances on Sendwithus, there are 2 options:
 Caution: This will change the Event URL, Clicktracking, and Opentracking so that Sendwithus can keep track of deliverability. If you do not want these to change, please consider using the second option. 
 {% endwarning %}
 
-​2. Create an SendGrid Instance using a subuser account. In order to use this option, you must have the ability to create subusers, (silver and higher accounts) and not have reached the subuser limit for your account. Using this option, all the Sendwithus settings will be created on the subuser account. Emails will be sent using the subuser account, thus to be able to see the email statistics, you must select the subuser account on the [Statistics Dashboard](https://sendgrid.com/statistics%20).
+​2. Create an SendGrid Instance using a subuser account. In order to use this option, you must have the ability to create subusers, (silver and higher accounts) and not have reached the subuser limit for your account. Using this option, all the Sendwithus settings will be created on the subuser account. Emails will be sent using the subuser account, thus to be able to see the email statistics, you must select the subuser account on the [Statistics Dashboard](https://sendgrid.com/statistics).
 
 In each case, the SendGrid Instance created will be set as the default on Sendwithus.
 
@@ -58,4 +58,4 @@ If you have one or more SendGrid Instances, you can select which will be used as
 
 ![]({{root_url}}/images/sendwithus_settings6.png)
 
-[Sendwithus Docs](https://www.sendwithus.com/docs%20)
+[Sendwithus Docs](https://www.sendwithus.com/docs)

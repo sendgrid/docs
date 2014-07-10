@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-These examples require the [JSON Ruby Gem](http://json.rubyforge.org/).
+These examples require the [JSON Ruby Library](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html).
 
 {% anchor h2 %}
 SmtpApiHeader.rb 

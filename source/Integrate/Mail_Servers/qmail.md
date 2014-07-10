@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-Qmail does not come with SMTP authentication functionality installed. Check out this [guide to forms of authentication and adding the netqmail TLS+SMTPauth patch.](http://www.differentpla.net/content/2004/03/installing-smtp-auth-with-qmail)
+Qmail does not come with SMTP authentication functionality installed. However you can add [the netqmail TLS+SMTPauth patch](http://notes.sagredo.eu/node/84).
 
-Alternately, you can [take a look at Fehcom's very complete description of authentication on mail servers](http://www.fehcom.de/qmail/smtpauth.html), or just jump down to the section about [configuring SMTPAUTH for qmail](http://www.fehcom.de/qmail/smtpauth.html##SETUP).
+Alternately, you can [take a look at Fehcom's very complete description of authentication on mail servers](http://www.fehcom.de/qmail/smtpauth.html), or just jump down to the section about [configuring SMTPAUTH for qmail](http://www.fehcom.de/qmail/smtpauth.html#SETUP).
 
 In general, you will need to add the following to **/var/qmail/control/smtproutes**, but you should verify the actual path and file you need to update.
 
