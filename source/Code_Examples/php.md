@@ -9,7 +9,7 @@ seo:
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, [available on Github](https://github.com/sendgrid/sendgrid-php), with full documentation. {% endgithub %} 
+{% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. {% endgithub %} 
 {% anchor h2 %}
 Using PHP with cURL 
 {% endanchor %}
