@@ -13,7 +13,7 @@ seo:
 <p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:</p>
 
 {% codeblock lang:json %}{
-  "category": "newuser"
+  "category": ["newuser"]
 }
 {% endcodeblock %}
 <p>In this case, the header is telling the processing routine to assign this email the <a href="{{root_url}}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
