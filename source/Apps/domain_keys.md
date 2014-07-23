@@ -12,7 +12,7 @@ The domain that is checked for the public key is based on one of two e-mail head
 
 ![Domain Keys App Image]({{root_url}}/images/domain_keys.png "Domain Keys")
 
-By default, SendGrid signs all e-mail with Domain Keys to improve its deliverability, however for accounts that do not have Whitelabeling enabled the domain in the From field will not have the proper DNS record to authenticate the e-mail. Because of this SendGrid inserts a Sender header and the e-mail can then be properly authenticated.
+DomainKeys is disabled by default, because SendGrid signs all e-mail with DKIM. However, it's still available to be enabled if you need it for a legacy mail receiver.
 
 {% anchor h2 %}
 Settings 
