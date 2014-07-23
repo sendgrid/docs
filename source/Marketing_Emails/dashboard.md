@@ -81,7 +81,7 @@ There are also many different email stats available to you throughout SendGrid's
       </tr>
       <tr>
          <td>Bounces</td>
-         td&gt;Bounces/Requests
+         <td>Bounces/Requests</td>
       </tr>
    </tbody>
    <tr>
