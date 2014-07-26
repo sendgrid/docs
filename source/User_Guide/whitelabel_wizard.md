@@ -94,7 +94,7 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
       <tr>
          <td>example.com.</td>
          <td>TXT</td>
-         <td>v=spf1 include:sendgrid.net \~all</td>
+         <td>v=spf1 include:sendgrid.net ~all</td>
       </tr>
       <tr>
          <td>smtpapi._domainkey.example.com.</td>
