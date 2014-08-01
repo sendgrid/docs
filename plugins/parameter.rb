@@ -1,3 +1,5 @@
+require 'kramdown'
+
 module Jekyll
   class ParameterTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
