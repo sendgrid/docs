@@ -27,7 +27,7 @@ Retrieve all templates.
                     "template_id": "9c59c1fb-931a-40fc-a658-50f871f3e41c",
                     "active": 1,
                     "name": "example version name",
-                    "updated_at": "2014-03-19 18:56:33"
+                    "updated_at": 1404309421
                 }
             ]
         }
@@ -58,7 +58,7 @@ Retrieve a single template.
                 "html_content": "<%body%><strong>Click to Reset</strong>",
                 "plain_content": "Click to Reset<%body%>",
                 "subject": "<%subject%>",
-                "updated_at": "2014-05-22 20:05:21"
+                "updated_at": 1399039021
              }
           ]
         }
