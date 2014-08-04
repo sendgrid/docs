@@ -34,7 +34,7 @@ Send email.
  {% parameter 'text' 'No' 'API call must include at least one of the text or html parameters.' 'The plain text content of your email message.' %}
  {% parameter 'html' 'No' 'API call must include at least one of the text or html parameters.' 'The HTML content of your email message.' %}
  {% parameter 'from' 'Yes' 'Must be a valid email address from your domain' 'This is where the email will appear to originate from for your recipient' %}
- {% parameter 'bcc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: bcc[]=a@mail.com[]=b@mail.com.' %}
+ {% parameter 'bcc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: bcc[]=a@mail.com&bcc[]=b@mail.com.' %}
  {% parameter 'fromname' 'No' 'Must a valid string' 'This is name appended to the from email field. IE - Your name or company name' %}
  {% parameter 'replyto' 'No' 'Must be a valid email address' 'Append a reply-to field to your email message' %}
  {% parameter 'date' 'No' 'Must be a valid [RFC 2822 formatted date](http://www.faqs.org/rfcs/rfc2822)' 'Specify the date header of your email. One example: "Thu, 21 Dec 2000 16:01:07 +0200". PHP developers can use: *date('r');*' %}
