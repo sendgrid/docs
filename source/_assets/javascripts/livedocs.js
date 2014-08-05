@@ -17,8 +17,23 @@
     settings_button: settings_button
   });
 
-  var pluginName = 'livedocs',
-    defaults = {};
+  var pluginName = 'livedocs', defaults = {};
+
+  var buildQueryString = function(form) {
+    var data = "";
+    form.serializeArray().forEach(function(obj) {
+      var k = obj.name, v = obj.value;
+		  if (v[0] === "[" && v.slice(-1) === "]") { // Array!
+			  var array = JSON.parse(v);
+				for(var i = 0, len = array.length; i < len; i++)
+				  data += k + "[]=" + (typeof(array[i]) !== "object" ? array[i] : JSON.stringify(array[i])) + "&";
+			} else {
+        if (v)
+				  data += k + "=" + v + "&";
+			}
+    });
+	  return data.slice(0, -1);
+  };
 
   //there are currently no options but some things probably should be
   //so leaving the scaffolding up
@@ -107,7 +122,7 @@
         // Temporary fix to allow for CORS
         // Revert, once OPS allows for CORS on sendgrid domains
         url = url.replace("api.sendgrid.com", "sendgrid.com");
-        data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
+        data = buildQueryString($(this));
 
         if (method == "GET") {
          call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
@@ -222,10 +237,8 @@
       method = livedoc.find('.method').val().toUpperCase().trim();
       creds = "api_user=" + username + "&api_key=XXXXXXXX";
       format = "." + Livedocs.getResponseFormat();
-      data = livedoc.find('form').serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
-
+      var data = buildQueryString(livedoc.find('form'));
       var curl_string = "curl -X " + method + " " + url + format;
-
       if (method == "GET") {
         curl_string = data ? curl_string + "?" + creds + "&" + decodeURIComponent(data) : curl_string + "?" + creds;
       } else {
