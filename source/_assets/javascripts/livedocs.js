@@ -68,7 +68,7 @@
         var identifier = id.substr(id.indexOf('-') + 1, id.length);
         Livedocs.toggleLivedoc(identifier, true);
       })
-      
+
       $('.cancel').click(function () {
         var id = $(this).attr('id');
         var identifier = id.substr(id.indexOf('-') + 1, id.length);
@@ -166,7 +166,7 @@
         });
       });
     }
-  }; 
+  };
 
     Livedocs.addButtons = function(identifier, livedoc) {
       var tryit_html = $.render.tryit_button({ identifier: identifier });
@@ -268,12 +268,13 @@
       form.hide();
     },
 
-    Livedocs.getResponseFormat = function(){ 
+    Livedocs.getResponseFormat = function(){
       if ($.cookie('responseFormat')) {
-        return $.cookie('responseFormat').toLowerCase(); 
+        return $.cookie('responseFormat').toLowerCase();
       }
+      return 'json'; // Avoid getting undefined if cookie wasn't set.
     },
-  
+
     Livedocs.validateRequired = function(form) {
       var valid = true;
       $(form).find('input.required').each(function () {
@@ -300,7 +301,7 @@
       }
       return response;
     }
-  
+
   // A really lightweight plugin wrapper around the constructor,
   // preventing against multiple instantiations
   $.fn[pluginName] = function ( options ) {
