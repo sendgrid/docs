@@ -1,3 +1,5 @@
+require 'kramdown'
+
 module Jekyll
   class Parameters < Liquid::Block
     def initialize(tag_name, markup, tokens)
@@ -21,8 +23,8 @@ module Jekyll
   </tbody>
 </table>
 HTML
-
-      return Liquid::Template.parse(output).render context
+      html = Kramdown::Document.new(output).to_html
+      return Liquid::Template.parse(html).render context
     end
   end
 end

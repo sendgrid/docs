@@ -1,3 +1,5 @@
+require 'kramdown'
+
 module Jekyll
   class ParameterTag < Liquid::Tag
     def initialize(tag_name, markup, tokens)
@@ -11,14 +13,17 @@ module Jekyll
     end
 
     def render(context)
-<<HTML
+output=<<HTML
 <tr>
-  <td>#{@name}</td>
-  <td>#{@required}</td>
-  <td>#{@requirements}</td>
-  <td>#{@description}</td>
+  <td markdown="span">#{@name}</td>
+  <td markdown="span">#{@required}</td>
+  <td markdown="span">#{@requirements}</td>
+  <td markdown="span">#{@description}</td>
 </tr>
 HTML
+
+      html = Kramdown::Document.new(output).to_html
+      return Liquid::Template.parse(html).render context
     end
   end
 end
