@@ -25,7 +25,7 @@ authentication](http://en.wikipedia.org/wiki/Basic_access_authentication#Client_
 Example header:
 
 {% codeblock lang:http %}
-GET https://api.sendgrid.net/v3/resource HTTP/1.1
+GET https://api.sendgrid.com/v3/resource HTTP/1.1
 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ===
 {% endcodeblock %}
 
@@ -42,7 +42,7 @@ Host
 
 The host for API requests is
 {% codeblock %}
-https://api.sendgrid.net/v3/
+https://api.sendgrid.com/v3/
 {% endcodeblock %}
 
 All requests must be made over HTTPS. HTTP is not supported.
@@ -67,7 +67,7 @@ required, though it may be required in the future. If not set, the
 API will use `application/json`.
 
 {% codeblock lang:http %}
-GET https://api.sendgrid.net/v3/endpoint HTTP/1.1
+GET https://api.sendgrid.com/v3/endpoint HTTP/1.1
 Accept: application/json
 {% endcodeblock %}
 
@@ -246,7 +246,7 @@ All responses are returned in JSON format. We specify this by sending
 the `Content-Type` header.
 
 {% codeblock lang:http %}
-GET https://api.sendgrid.net/v3/resource HTTP/1.1
+GET https://api.sendgrid.com/v3/resource HTTP/1.1
 {% endcodeblock %}
 
 {% codeblock lang:http %}
@@ -323,7 +323,7 @@ The general format guidelines are displayed with the accompanying status
 code is returned.
 
 {% codeblock lang:http %}
-GET https://api.sendgrid.net/v3/resource HTTP/1.1
+GET https://api.sendgrid.com/v3/resource HTTP/1.1
 {% endcodeblock %}
 
 {% codeblock lang:http %}
