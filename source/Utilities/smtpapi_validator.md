@@ -4,7 +4,7 @@ sidebar: true
 fluid: true
 responsive: true
 title: SMTP API Header Validator
-weight: 99
+weight: 80
 navigation:
   show: true
 ---
