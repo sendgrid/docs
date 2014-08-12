@@ -26,12 +26,12 @@ Categories must be in 7bit encoding using the US-ASCII character set.
 {% endwarning %}
 
 {% info %}
-Currently, there is no limit to the number of categories you can track. 
+Currently, there is no limit to the number of categories you can track. However, we reccomend *no more than ~100 total unique categories*, this will increase your ease of use in the Statistics area. Additionally, a high rate of unique categories on your account can negatively impact the rate at which we process the messages you send."
 {% endinfo %}
 
-{% info %}
-Categories should be used to group messages together. If you need to attach unique data or identifiers to a message, use Unique Arguments instead. 
-{% endinfo %}
+{% warning %}
+Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) instead. 
+{% endwarning %}
 
 {% anchor h2 %}
 Example 
