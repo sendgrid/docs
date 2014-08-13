@@ -12,6 +12,8 @@ This app is our new [Template Engine]({{root_url}}/API_Reference/Template_Engine
 
 This app seperates email templates and design from sending, allowing templates to be worked on through the SendGrid UI and then populated during mail sending.
 
+Please note that currently there is a limitation of 100 Templates and 100 Versions that can be created per account.
+
 This app is differs from our other apps, and may be found in a [different location](https://sendgrid.com/templates).
 
 More documentation may be found with the [Template Engine API Reference]({{root_url}}/API_Reference/Template_Engine_API/index.html).
