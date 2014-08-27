@@ -217,38 +217,6 @@ Close or revert an account to a free user immediately. An invoice is generated f
 * * * * *
 
 {% anchor h2 %}
-Scheduled Upgrade 
-{% endanchor %}
-
-Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
-
-
-{% parameters sched %}
- {% parameter 'task' 'Yes' 'Must be set to <em>scheduled_upgrade</em> .' %}
- {% parameter 'user' 'Yes' 'Must be an User under your account.' %}
- {% parameter 'package' 'Yes' 'The name of the package you will be upgrading the User to.' %}
- {% parameter 'ip[]' 'Maybe Yes' 'If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.' %}
- {% parameter 'ip_group[]' 'Maybe Yes' 'If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.' %}
-{% endparameters %}
-
-
-{% apiexample sched POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
-  {% response json %}
-{
-  "message": "success"
-}
-  {% endresponse %}
-  {% response xml %}
-<result>
-   <message>success</message>
-</result>
-
-  {% endresponse %}
-{% endapiexample %}
-
-* * * * *
-
-{% anchor h2 %}
 Scheduled Downgrade 
 {% endanchor %}
 
