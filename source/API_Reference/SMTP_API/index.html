@@ -65,7 +65,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined.
+	<a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined. Categories are intended for broader tracking, such as "newsletter" or "password_reset". 
 </p>
 {% codeblock lang:json %}{
   "category": [
@@ -76,7 +76,7 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction.
+	<a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction. Unique Args are intended for more detailed tracking, such as "newsletter_fall_sale_1_1_14" or "password_reset_user123456".
 </p>
 {% codeblock lang:json %}{
   "unique_args": {
