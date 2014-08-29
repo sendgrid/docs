@@ -1,0 +1,51 @@
+---
+layout: page
+weight: 1000
+title: Scheduling Parameters
+navigation:
+  show: true
+seo:
+  title: SMTP API, Advanced Email Features -  SendGrid Documentation | SendGrid 
+  override: true
+  description: The SMTP API gives you advanced control over emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and schedule your sends. 
+---
+
+<p>SendGrid's SMTP API allows developers to specify custom scheduling parameters. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The SendGrid Delayed Sending feature will allow a customer to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter.  When used, this parameter will allow SendGrid to begin processing a customer’s email requests. SendGrid will then queue those messages in our MTA and release them when the time stamp is exceeded.  This technique will provide the user a more efficient way to distribute large email requests and can improve overall mail delivery time performance. Once you send SendGrid a Delayed Send request, that email request cannot be cancelled and we currently only accept time stamps no greater than 24 hours in advance. 
+
+{% anchor h2 %}
+Send All
+{% endanchor %}	
+	
+To delay a send request for a large batch of emails you can use the following parameter that will allow you to send all your requests at approximately the same time. 
+	
+	The header is a JSON encoded list of instructions and options for that email. An example header with a time stamp looks like this:</p>
+
+{% codeblock lang:json %}
+{
+  "send_all": "1409348513"
+}
+
+{% endcodeblock %}
+<p>In this case, the header is telling the processing routine to queue and hold this email until the time parameter has exceeded.</p>
+
+
+{% anchor h2 %}
+Send Each At
+{% endanchor %}	
+	
+To delay a send request for individual recipients you can use the following parameter that will allow you to send your requests to your specified recipients at the specified time. 
+	
+	The header is a JSON encoded list of instructions and options for that email. An example header with a time stamp looks like this:</p>
+
+{% codeblock lang:json %}
+{
+	"to": [
+	    "<ben@example.com>",
+	    "john@example.com",
+	    "mike@example.com"
+      ],
+   "send_each_at": "1409348513,1409348514,1409348515"
+}
+
+{% endcodeblock %}
+<p>In this case, the header is telling the processing routine to queue and hold this email until the time parameter has exceeded and send the email to the specified recipients based on the specified time stamps.</p>
