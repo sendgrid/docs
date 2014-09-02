@@ -1,16 +1,13 @@
 ---
 layout: page
-weight: 750
-title: Template Engine API Overview
+weight: 950
+title: Web API v3 Overview
 navigation:
   show: true
 ---
 
 {% info %}
-The Template Engine is the first feature available on SendGrid's new API
-architecture. As a result, interacting with the endpoints described here
-is different than the other existing endpoints, so please read 
-carefully!
+Version 3 is SendGrid's new API architecture. Interacting with the endpoints in v3 is different than the other existing endpoints, so please read carefully!
 {% endinfo %}
 
 {% anchor h2 %}
