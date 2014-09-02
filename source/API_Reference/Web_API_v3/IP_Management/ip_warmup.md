@@ -6,16 +6,16 @@ navigation:
   show: true
 ---
 
-SendGrid can automatically warm up dedicated IP addresses by limiting the amount
+SendGrid can automatically warmup dedicated IP addresses by limiting the amount
 of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
 If you have warm IPs as well as new IPs that need warming, any mail beyond the hourly automatic warmup
 limit will overflow to your existing IPs.
 
-If there are no warm IPs, any requests made above the hourly maximum will overflow to our shared IP Warm Up clusters for sending. If your sending reputation is below 85, you will not be able to use
+If there are no warm IPs, any requests made above the hourly maximum will overflow to our shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use
 this pool.
 
-An IP in warm up will follow SendGrid's warm up policy schedule. 
+An IP in warmup will follow SendGrid's warmup policy schedule. 
 
 {% info %}
 IP Pools are available if you have dedicated IPs for your account.
@@ -43,7 +43,7 @@ HTTP/1.1 200 OK
 {% anchor h2 %}
 GET
 {% endanchor %}
-Get warm up status for a particular IP.
+Get warmup status for a particular IP.
 
 {% parameters get %}
   {% parameter ip true 'A valid IP address.' 'The IP address for which to retrieve status.' %}
@@ -63,10 +63,10 @@ HTTP/1.1 200 OK
 {% anchor h2 %}
 POST
 {% endanchor %}
-Add an IP to warm up.
+Add an IP to warmup.
 
 {% parameters post %}
-  {% parameter ip true 'A valid IP address.' 'The IP address to warm up.' %}
+  {% parameter ip true 'A valid IP address.' 'The IP address to warmup.' %}
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
@@ -75,10 +75,10 @@ Add an IP to warm up.
 {% anchor h2 %}
 DELETE
 {% endanchor %}
-Remove an IP from warm up.
+Remove an IP from warmup.
 
 {% parameters delete %}
-  {% parameter ip true 'A valid IP address.' 'The IP address to remove from warm up.' %}
+  {% parameter ip true 'A valid IP address.' 'The IP address to remove from warmup.' %}
 {% endparameters %}
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}

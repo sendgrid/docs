@@ -6,10 +6,13 @@ navigation:
   show: true
 ---
 
+The following schedule shows the hourly email limits that SendGrid will use to
+warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
+
 <table class="table table-striped table-bordered">
   <tr>
     <td>
-      Warm Up Limit
+      Warmup Age (Days)
     </td>
     <td>
       Hourly Email Limit
