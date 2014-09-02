@@ -6,15 +6,14 @@ navigation:
   show: true
 ---
 
-If a customer has warm IPs and new IPs that need warming, KAMTA will look to use exisitng warm IPs in case of an overflow, then overflow as needed. 
+SendGrid can automatically warm up dedicated IP addresses by limiting the amount
+of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
-If all IPs are in warmup and a pool it is OK to use the overflow IPs 
+If you have warm IPs as well as new IPs that need warming, any mail beyond the hourly automatic warmup
+limit will overflow to your existing IPs.
 
-If user has dedicated IPs NOT in the pool, it's still OK to use the overflow IPs
-
-If a user has no warm IPs and they make a request to warm a new IP, any requests made above the hourly maximum will overflow to our IP Warm Up Clusters for sending. These are similar to the shared IP pools used for Bronze and Marketing email users. 
-
-Users can't use the warm up cluster for their overflow traffic if their reputation score is below 85. We won't throttle their mail, and only will send the daily limit based on the warm up schedule. 
+If there are no warm IPs, any requests made above the hourly maximum will overflow to our shared IP Warm Up clusters for sending. If your sending reputation is below 85, you will not be able to use
+this pool.
 
 An IP in warm up will follow SendGrid's warm up policy schedule. 
 
@@ -23,68 +22,64 @@ IP Pools are available if you have dedicated IPs for your account.
 To add IPs to your account, please contact support.
 {% endinfo %}
 
-Get all IPs in Warm Up 
-Purpose: Get warm up status for all your IPs
+{% anchor h2 %}
+GET
+{% endanchor %}
+Get all IPs that are currently warming up.
 
-Verb: GET
+{% apiv3example get-all GET https://api.sendgrid.com/v3/ips/warmup %}
+  {% v3response %}
+HTTP/1.1 200 OK
 
-https://api.sendgrid.com/v3/ips/warmup
-Response: 200
+[
+  {
+    "ip": "0.0.0.0",
+    "start_date": 1409616000
+  }
+]
+  {% endv3response %}
+{% endapiv3example %}
 
-{
-ip: "000.000.000.000"
-start_date: 1407715200
-}
-Get Warm Up status for an IP
-Purpose: Get warm up status for a particular IP
+{% anchor h2 %}
+GET
+{% endanchor %}
+Get warm up status for a particular IP.
 
-Verb: GET
+{% parameters get %}
+  {% parameter ip true 'A valid IP address.' 'The IP address for which to retrieve status.' %}
+{% endparameters %}
 
-https://api.sendgrid.com/v3/ips/warmup/000.000.000.000
-Response: 200
-
-{
- ip: "000.000.000.000"
- start_date: 1406678400
-}
-Add IP to Warm Up 
-Purpose: Put IP into warm up 
-
-Verb: POST
-
-https://api.sendgrid.com/v3/ips/warmup
-Parameter:
-
-{
- ip: "000.000.000.000"
-}
- 
-
-Response: 200
+{% apiv3example get GET https://api.sendgrid.com/v3/ips/warmup/:ip_address %}
+  {% v3response %}
+HTTP/1.1 200 OK
 
 {
-true
+  "ip":"167.89.21.3",
+  "start_date":1409616000
 }
-Remove IP from Warm Up 
-Purpose: Remove an IP from warm up
+  {% endv3response %}
+{% endapiv3example %}
 
-Verb: DELETE
+{% anchor h2 %}
+POST
+{% endanchor %}
+Add an IP to warm up.
 
-https://api.sendgrid.com/v3/ips/warmup/000.000.000.000
-Response: 200
+{% parameters post %}
+  {% parameter ip true 'A valid IP address.' 'The IP address to warm up.' %}
+{% endparameters %}
 
-{
-true
-}
-Get Warm Up State and Pools for all IPs
-Purpose: Get the warm up states and pools for all your IPs
+{% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
+{% endapiv3example %}
 
-Verb: GET
+{% anchor h2 %}
+DELETE
+{% endanchor %}
+Remove an IP from warm up.
 
-https://api.sendgrid.com/v3/ips
-Response: 200
+{% parameters delete %}
+  {% parameter ip true 'A valid IP address.' 'The IP address to remove from warm up.' %}
+{% endparameters %}
 
-{
-.....
-}
-
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
+{% endapiv3example %} 

@@ -9,6 +9,15 @@ navigation:
 {% anchor h2 %}
 GET
 {% endanchor %}
+See a list of all IPs, including warm up status and pools.
+
+{% apiv3example get GET https://api.sendgrid.com/v3/ips %}
+
+{% endapiv3example %}
+
+{% anchor h2 %}
+GET
+{% endanchor %}
 See which pools an IP address belongs to.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/0.0.0.0 %}
