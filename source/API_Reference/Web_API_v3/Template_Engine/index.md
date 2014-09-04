@@ -2,7 +2,7 @@
 layout: page
 title: Template Engine Overview
 weight: 100
-alias: /API_Reference/Template_Engine_API/index.html
+alias: /API_Reference/Web_API_v3/Template_Engine/index.html
 navigation:
   show: true
 ---

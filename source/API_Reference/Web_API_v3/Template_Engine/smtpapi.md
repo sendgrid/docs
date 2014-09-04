@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using Template Engine with SMTP API
-alias: /API_Reference/Template_Engine_API/smtpapi.html
+alias: /API_Reference/Web_API_v3/Template_Engine/smtpapi.html
 navigation:
   show: true
 ---
