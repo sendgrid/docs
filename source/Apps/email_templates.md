@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% warning %}
-This documentation is for our original Email Templates, today we have a more full featured **[Template Engine]({{root_url}}/API_Reference/Template_Engine_API/index.html)**, which supports multiple templates, versioning and more. [Read More »]({{root_url}}/API_Reference/Template_Engine_API/index.html) 
+This documentation is for our original Email Templates, today we have a more full featured **[Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html)**, which supports multiple templates, versioning and more. [Read More »]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) 
 {% endwarning %}
 
 This app wraps an HTML template around your email content. This can be useful for sending out marketing email and/or other HTML formatted messages.

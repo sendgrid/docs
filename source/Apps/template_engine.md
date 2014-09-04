@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% info %}
-This app is our new [Template Engine]({{root_url}}/API_Reference/Template_Engine_API/index.html), that supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html). 
+This app is our new [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), that supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html). 
 {% endinfo %}
 
 This app seperates email templates and design from sending, allowing templates to be worked on through the SendGrid UI and then populated during mail sending.
@@ -18,7 +18,7 @@ There is currently a limit of 100 Templates and 100 Versions that may be created
 
 This app is differs from our other apps, and may be found in a [different location](https://sendgrid.com/templates).
 
-More documentation may be found with the [Template Engine API Reference]({{root_url}}/API_Reference/Template_Engine_API/index.html).
+More documentation may be found with the [Template Engine API Reference]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html).
 
 {% anchor h2 %}
 Settings 
@@ -44,5 +44,5 @@ Settings
 Settings may be changed through:
 
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#templates) (on a per message basis)
--   [Web API]({{root_url}}/API_Reference/Template_Engine_API/index.html) (on an account wide basis)
+-   [Web API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) (on an account wide basis)
 -   [Web Interface](https://sendgrid.com/templates) (on an account wide basis)

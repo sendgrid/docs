@@ -1,13 +1,13 @@
 ---
 layout: page
-weight: 950
-title: Web API v3 Overview
+weight: 755
+title: API v3 Overview
 navigation:
   show: true
 ---
 
 {% info %}
-Version 3 is SendGrid's new API architecture. Interacting with the endpoints in v3 is different than the other existing endpoints, so please read carefully!
+SendGrid's new API architecture features significant changes in behavior as compared to previous endpoints, so please read carefully!
 {% endinfo %}
 
 {% anchor h2 %}
