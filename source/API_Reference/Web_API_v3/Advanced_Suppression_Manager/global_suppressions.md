@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Supressions
+title: Global Supressions
 weight: 70
 navigation:
   show: true
