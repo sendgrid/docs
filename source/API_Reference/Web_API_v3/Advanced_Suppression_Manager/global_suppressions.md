@@ -30,7 +30,7 @@ HTTP/1.1 201
 GET
 {% endanchor %}
 
-See if an address is in the global suppressions group.
+Check if an address is in the global suppressions group.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/:email_address %}
 {% v3response %}

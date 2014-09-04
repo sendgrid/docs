@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 750
+weight: 755
 title: API v3 Overview
 navigation:
   show: true
