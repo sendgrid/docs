@@ -162,7 +162,7 @@ Legacy Email Templates
 *API App Name - `template`*
 
 {% warning %}
-This app is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Template_Engine_API/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Template_Engine_API/index.html). 
+This app is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html). 
 {% endwarning %}
 {% parameters template %} 
   
