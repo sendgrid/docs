@@ -2,6 +2,7 @@
 layout: page
 title: Templates
 weight: 100
+alias: /API_Reference/Template_Engine_API/templates.html
 navigation:
   show: true
 ---

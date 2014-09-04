@@ -2,6 +2,7 @@
 layout: page
 title: Versions
 weight: 90
+alias: /API_Reference/Template_Engine_API/versions.html
 navigation:
   show: true
 ---
