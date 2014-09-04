@@ -114,8 +114,8 @@ module Jekyll
           name.gsub!(/_/,' ')
           
           li_class = ""
-          
-          if @page_url.index(base)
+
+          if @page_url.index(base + '/')
             list_class = "collapsibleListOpen"
           else
             list_class = "collapsibleListClosed"
