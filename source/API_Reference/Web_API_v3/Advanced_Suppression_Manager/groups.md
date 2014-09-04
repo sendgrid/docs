@@ -13,7 +13,7 @@ GET
 {% endanchor %}
 Retrieve all suppression groups associated with your account. 
 
-{% apiv3example get-specific GET https://api.sendgrid.com/v3/asm/groups %}
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups %}
 {% v3response %}
 [
   {"id": 100, "name": "Newsletters", "description": "Our monthly newsletter.", "last_email_sent_at": "2014-09-04 01:34:43", "unsubscribes": 400},
