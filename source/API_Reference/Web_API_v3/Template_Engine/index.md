@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Templates Engine API Overview
+title: Template Engine Overview
 weight: 100
 alias: /API_Reference/Template_Engine_API/index.html
 navigation:
