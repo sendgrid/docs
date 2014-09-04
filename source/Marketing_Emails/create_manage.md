@@ -193,4 +193,3 @@ Manages the marketing email sending status by pausing, resuming or even stopping
 Share 
 {% endanchor %}
 
-Share allows you to publish the marketing email title to Twitter and Facebook. The tool will pre-fill the status update with the marketing email email subject and a short URL for a webpage where we saved the marketing email content. All you need to do is Save, and all your friends and followers can see the Marketing Email without receiving the email - by clicking the link.
