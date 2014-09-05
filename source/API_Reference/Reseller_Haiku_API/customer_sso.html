@@ -10,13 +10,13 @@ navigation:
 Single Sign On 
 {% endanchor %}
 
-Autologin a customer and allow them the change the settings of their account on our side.
+Autologin a customer and allow them to change the settings of their account on our side.
 
 Redirect the user to this url with the following parameters:
 
 {% parameters post %}
  {% parameter 'id' 'Yes' 'Id of the customer on our side' 'This value is returned in the <a href="customer_provision.html">Provision call </a> '%}
- {% parameter 'token' 'Yes' 'token = sha1(id + ':' + salt + ':' + timestamp)' 'Salt is a random generated field provided when onboarding with SendGrid'%}
+ {% parameter 'token' 'Yes' 'token = sha1(id : salt : timestamp)' 'Salt is a random generated field provided when onboarding with SendGrid'%}
  {% parameter 'timestamp' 'Yes' 'Must be the unix timestamp at the time of the request' '' %}
 {% endparameters %}
 
