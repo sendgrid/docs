@@ -189,7 +189,3 @@ Pause/Resume/Stop Sending
 
 Manages the marketing email sending status by pausing, resuming or even stopping the sending process.
 
-{% anchor h3 %}
-Share 
-{% endanchor %}
-
