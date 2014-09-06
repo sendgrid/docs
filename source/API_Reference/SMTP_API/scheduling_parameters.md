@@ -32,11 +32,11 @@ To delay a send request for individual recipients use `send_each_at` to send req
 
 {% codeblock lang:json %}
 {
-	"to": [
-	    "<ben@example.com>",
-	    "john@example.com",
-	    "mike@example.com"
-      ],
-   "send_each_at": "1409348513,1409348514,1409348515"
+  "to": [
+    "<ben@example.com>",
+    "john@example.com",
+    "mike@example.com"
+  ],
+  "send_each_at": "1409348513,1409348514,1409348515"
 }
 {% endcodeblock %}
