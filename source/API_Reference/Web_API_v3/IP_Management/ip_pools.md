@@ -35,7 +35,7 @@ If an IP pool is NOT specified for an email, it will use any IP available, inclu
 
 {% anchor h2 %}
 GET
-{% endanchor GET https://api.sendgrid.com/v3/ips/pools/ %}
+{% endanchor  %}
 List all IP pools.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/pools %}
@@ -49,22 +49,31 @@ POST
 {% endanchor %}
 Create an IP pool.
 
+{% info %}
+There is a limit of 10 IP pools per user.
+{% endinfo %}
+
 {% parameters post %}
   {% parameter name 'A string with a max length of 64 characters.' 'The name of the pool.' %}
 {% endparameters %}
 
-{% info %}
-There is a limit of 10 IP pools per user.
-{% endinfo %}
+{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools name=marketing%}
+{% v3response %}
+{"name":"marketing"}
+{% endv3response %}
+{% endapiv3example %}
 
 {% anchor h2 %}
 GET
 {% endanchor %}
 List the IPs in a specified pool.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/ips/pools/:pool_name %}
+{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/pools/:pool_name %}
 {% v3response %}
-_
+{
+  "ips":["167.89.21.3"],
+  "name":"new_test5"
+}
 {% endv3response %}
 {% endapiv3example %}
 
@@ -79,7 +88,7 @@ Update an IP pool's name
 
 {% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
 {% v3response %}
-_
+{"name":"new_pool_name"}
 {% endv3response %}
 {% endapiv3example %}
 

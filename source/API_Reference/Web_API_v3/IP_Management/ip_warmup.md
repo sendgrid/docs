@@ -70,6 +70,9 @@ Add an IP to warmup.
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
+{% v3response %}
+_
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
@@ -82,4 +85,7 @@ Remove an IP from warmup.
 {% endparameters %}
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
+{% v3response %}
+_
+{% endv3response %}
 {% endapiv3example %} 
