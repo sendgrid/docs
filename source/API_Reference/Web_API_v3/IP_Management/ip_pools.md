@@ -38,6 +38,12 @@ GET
 {% endanchor GET https://api.sendgrid.com/v3/ips/pools/ %}
 List all IP pools.
 
+{% apiv3example get GET https://api.sendgrid.com/v3/ips/pools %}
+{% v3response %}
+["marketing","transactional"]
+{% endv3response %}
+{% endapiv3example %}
+
 {% anchor h2 %}
 POST
 {% endanchor %}
@@ -57,6 +63,9 @@ GET
 List the IPs in a specified pool.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/pools/:pool_name %}
+{% v3response %}
+_
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
@@ -69,6 +78,9 @@ Update an IP pool's name
 {% endparameters %}
 
 {% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
+{% v3response %}
+_
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
