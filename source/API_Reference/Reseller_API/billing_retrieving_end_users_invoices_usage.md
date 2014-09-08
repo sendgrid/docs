@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Retrieving Invoice Usage
+title: Retrieving Invoice Usage (deprecated)
 navigation:
    show: true
 ---
@@ -15,7 +15,7 @@ Retrieve invoices/usages from customers.
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usag %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=usage %}
   {% response json %}
 {
   "number": "2010010001",
