@@ -12,7 +12,18 @@ GET
 See a list of all IPs, including warm up status and pools.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips %}
+{% v3response %}
+HTTP/1.1 200 OK
 
+[
+  {
+    "ip":"167.89.21.3",
+    "pools":["new_test5"],
+    "warmup":true,
+    "warmup_start_date":1409616000
+  }
+]
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
@@ -20,7 +31,7 @@ GET
 {% endanchor %}
 See which pools an IP address belongs to.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/ips/0.0.0.0 %}
+{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/0.0.0.0 %}
   {% v3response %}
 HTTP/1.1 200 OK
 
