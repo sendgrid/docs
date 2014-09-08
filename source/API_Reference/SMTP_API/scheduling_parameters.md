@@ -13,14 +13,14 @@ Once you send SendGrid a delayed send request, that email request cannot be canc
 {% endinfo %}
 
 {% anchor h2 %}
-Send All
+Send At
 {% endanchor %}	
 	
-To delay a send request for a large batch of emails use the `send_all` parameter which will all emails at approximately the same time. `send_all` is a UNIX timestamp encoded as a string.
+To delay a send request for a large batch of emails use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 {% codeblock lang:json %}
 {
-  "send_all": "1409348513"
+  "send_at": 1409348513
 }
 {% endcodeblock %}
 
@@ -28,7 +28,7 @@ To delay a send request for a large batch of emails use the `send_all` parameter
 Send Each At
 {% endanchor %}	
 	
-To delay a send request for individual recipients use `send_each_at` to send requests to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, separated by commas, encoded as a string. There must be one timestamp per email you wish to send.
+To delay a send request for individual recipients use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 {% codeblock lang:json %}
 {
@@ -37,6 +37,10 @@ To delay a send request for individual recipients use `send_each_at` to send req
     "john@example.com",
     "mike@example.com"
   ],
-  "send_each_at": "1409348513,1409348514,1409348515"
+  "send_each_at": [
+    1409348513,
+    1409348514,
+    1409348515
+  ]
 }
 {% endcodeblock %}
