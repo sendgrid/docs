@@ -30,26 +30,53 @@ To retrive statistics for the Marketing Emails application you can use [Category
   {
     "date": "2009-06-20",
     "requests": 12342,
+    "delivered": 0,
     "bounces": 12,
+    "repeat_bounces": 0,
+    "unsubscribes": 0,
+    "repeat_unsubscribes": 0,
     "clicks": 10223,
     "opens": 9992,
     "spamreports": 5
+    "repeat_spamreports": 0,
+    "invalid_email": 0,
+    "blocks": 0,
+    "unique_clicks": 0,
+    "unique_opens": 0
   },
   {
     "date": "2009-06-21",
     "requests": 32342,
+    "delivered": 0,
     "bounces": 10,
+    "repeat_bounces": 0,
+    "unsubscribes": 0,
+    "repeat_unsubscribes": 0,
     "clicks": 14323,
     "opens": 10995,
     "spamreports": 7
+    "repeat_spamreports": 0,
+    "invalid_email": 0,
+    "blocks": 0,
+    "unique_clicks": 0,
+    "unique_opens": 0
   },
   {
     "date": "2009-06-22",
     "requests": 52342,
+    "delivered": 0,
     "bounces": 11,
+    "repeat_bounces": 0,
+    "unsubscribes": 0,
+    "repeat_unsubscribes": 0,
     "clicks": 19223,
     "opens": 12992,
     "spamreports": 2
+    "repeat_spamreports": 0,
+    "invalid_email": 0,
+    "blocks": 0,
+    "unique_clicks": 0,
+    "unique_opens": 0
   }
 ]
   {% endresponse %}
@@ -58,26 +85,53 @@ To retrive statistics for the Marketing Emails application you can use [Category
    <day>
       <date>2009-06-20</date>
       <requests>12342</requests>
+      <delivered>9</delivered>
       <bounces>12</bounces>
+      <repeat_bounces>0</repeat_bounces>
+      <unsubscribes>0</unsubscribes>
+      <repeat_unsubscribes>0</repeat_unsubscribes>
       <clicks>10223</clicks>
       <opens>9992</opens>
       <spamreports>5</spamreports>
+      <repeat_spamreports>0</repeat_spamreports>
+      <invalid_email>0</invalid_email>
+      <blocks>0</blocks>
+      <unique_clicks>0</unique_clicks>
+      <unique_opens>0</unique_opens>
    </day>
    <day>
       <date>2009-06-21</date>
       <requests>32342</requests>
+      <delivered>9</delivered>
       <bounces>10</bounces>
+      <repeat_bounces>0</repeat_bounces>
+      <unsubscribes>0</unsubscribes>
+      <repeat_unsubscribes>0</repeat_unsubscribes>
       <clicks>14323</clicks>
       <opens>10995</opens>
       <spamreports>7</spamreports>
+      <repeat_spamreports>0</repeat_spamreports>
+      <invalid_email>0</invalid_email>
+      <blocks>0</blocks>
+      <unique_clicks>0</unique_clicks>
+      <unique_opens>0</unique_opens>
    </day>
    <day>
       <date>2009-06-22</date>
       <requests>52342</requests>
+      <delivered>9</delivered>
       <bounces>11</bounces>
+      <repeat_bounces>0</repeat_bounces>
+      <unsubscribes>0</unsubscribes>
+      <repeat_unsubscribes>0</repeat_unsubscribes>
       <clicks>19223</clicks>
       <opens>12992</opens>
       <spamreports>2</spamreports>
+      <repeat_spamreports>0</repeat_spamreports>
+      <invalid_email>0</invalid_email>
+      <blocks>0</blocks>
+      <unique_clicks>0</unique_clicks>
+      <unique_opens>0</unique_opens>
    </day>
 </stats>
 
@@ -104,19 +158,37 @@ Retrieve all-time totals for your customer
   {% response json %}
 {
   "requests": 12342,
+  "delivered": "10",
   "bounces": 12,
+  "repeat_bounces": "0",
+  "unsubscribes": "0",
+  "repeat_unsubscribes": "0",
   "clicks": 10223,
   "opens": 9992,
   "spamreports": 5
+  "repeat_spamreports": "0",
+  "invalid_email": "1",
+  "blocks": "0",
+  "unique_clicks": "0",
+  "unique_opens": "0"
 }
   {% endresponse %}
   {% response xml %}
 <stats>
    <requests>12342</requests>
+   <delivered>10</delivered>
    <bounces>12</bounces>
+   <repeat_bounces>0</repeat_bounces>
+   <unsubscribes>0</unsubscribes>
+   <repeat_unsubscribes>0</repeat_unsubscribes>
    <clicks>10223</clicks>
    <opens>9992</opens>
    <spamreports>5</spamreports>
+   <repeat_spamreports>0</repeat_spamreports>
+   <invalid_email>0</invalid_email>
+   <blocks>0</blocks>
+   <unique_clicks>0</unique_clicks>
+   <unique_opens>0</unique_opens>
 </stats>
 
   {% endresponse %}
@@ -187,44 +259,84 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% response json %}
 [
   {
-    "date": "2009-06-20",
-    "category": "categoryA",
-    "requests": 12342,
-    "bounces": 12,
-    "clicks": 10223,
-    "opens": 9992,
-    "spamreports": 5
+    "category": "CategoryA",
+    "delivered": 1,
+    "unsubscribes": 0,
+    "invalid_email": 0,
+    "bounces": 0,
+    "repeat_unsubscribes": 0,
+    "unique_clicks": 0,
+    "blocked": 0,
+    "spam_drop": 0,
+    "repeat_bounces": 0,
+    "repeat_spamreports": 0,
+    "date": "2014-09-09",
+    "requests": 1,
+    "spamreports": 0,
+    "clicks": 0,
+    "opens": 0,
+    "unique_opens": 0
   },
   {
-    "date": "2009-06-21",
-    "category": "categoryB",
-    "requests": 32342,
-    "bounces": 10,
-    "clicks": 14323,
-    "opens": 10995,
-    "spamreports": 7
+    "category": "CategoryB",
+    "delivered": 1,
+    "unsubscribes": 0,
+    "invalid_email": 0,
+    "bounces": 0,
+    "repeat_unsubscribes": 0,
+    "unique_clicks": 0,
+    "blocked": 0,
+    "spam_drop": 0,
+    "repeat_bounces": 0,
+    "repeat_spamreports": 0,
+    "date": "2014-09-08",
+    "requests": 1,
+    "spamreports": 0,
+    "clicks": 0,
+    "opens": 0,
+    "unique_opens": 0
   }
 ]
   {% endresponse %}
   {% response xml %}
 <stats>
    <day>
-      <date>2009-06-20</date>
-      <category>categoryA</category>
-      <requests>12342</requests>
-      <bounces>12</bounces>
-      <clicks>10223</clicks>
-      <opens>9992</opens>
-      <spamreports>5</spamreports>
+      <category>CategoryA</category>
+      <delivered>1</delivered>
+      <unsubscribes>0</unsubscribes>
+      <invalid_email>0</invalid_email>
+      <bounces>0</bounces>
+      <repeat_unsubscribes>0</repeat_unsubscribes>
+      <unique_clicks>0</unique_clicks>
+      <blocked>0</blocked>
+      <spam_drop>0</spam_drop>
+      <repeat_bounces>0</repeat_bounces>
+      <repeat_spamreports>0</repeat_spamreports>
+      <date>2014-09-09</date>
+      <requests>1</requests>
+      <spamreports>0</spamreports>
+      <clicks>0</clicks>
+      <opens>0</opens>
+      <unique_opens>0</unique_opens>
    </day>
    <day>
-      <date>2009-06-21</date>
-      <category>categoryB</category>
-      <requests>32342</requests>
-      <bounces>10</bounces>
-      <clicks>14323</clicks>
-      <opens>10995</opens>
-      <spamreports>7</spamreports>
+      <category>CategoryB</category>
+      <delivered>1</delivered>
+      <unsubscribes>0</unsubscribes>
+      <invalid_email>0</invalid_email>
+      <bounces>0</bounces>
+      <repeat_unsubscribes>0</repeat_unsubscribes>
+      <unique_clicks>0</unique_clicks>
+      <blocked>0</blocked>
+      <spam_drop>0</spam_drop>
+      <repeat_bounces>0</repeat_bounces>
+      <repeat_spamreports>0</repeat_spamreports>
+      <date>2014-09-08</date>
+      <requests>1</requests>
+      <spamreports>0</spamreports>
+      <clicks>0</clicks>
+      <opens>0</opens>
+      <unique_opens>0</unique_opens>
    </day>
 </stats>
 
