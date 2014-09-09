@@ -17,7 +17,7 @@ Retrieve all suppression groups associated with your account.
 {% v3response %}
 [
   {"id": 100, "name": "Newsletters", "description": "Our monthly newsletter.", "last_email_sent_at": "2014-09-04 01:34:43", "unsubscribes": 400},
-  {"id": 101, "name": "Password Resets", "description 2": "Emails sent when users forget their password.", "last_email_sent_at": "2012-11-06 09:37:33", "unsubscribes": 1}
+  {"id": 101, "name": "Alerts", "description 2": "Emails triggered by user-defined rules.", "last_email_sent_at": "2012-11-06 09:37:33", "unsubscribes": 1}
 ]
 {% endv3response %}
 {% endapiv3example %}
