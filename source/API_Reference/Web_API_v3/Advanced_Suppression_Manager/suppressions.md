@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Supressions
+title: Suppressions
 weight: 80
 navigation:
   show: true

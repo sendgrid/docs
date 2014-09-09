@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Groups are individual types of email you would like your users to be able to unsubscribe from, (e.g. Newsletters, Invoices, Password Resets)
+Groups are individual types of email you would like your users to be able to unsubscribe from, (e.g. Newsletters, Invoices, Alerts).
 
 {% anchor h2 %}
 GET
