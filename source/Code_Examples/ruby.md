@@ -6,36 +6,44 @@ navigation:
   show: true
 ---
 
-This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.
+This example shows how to send email plain text and HTML email using Ruby. To get started, install the official [SendGrid Ruby](https://github.com/sendgrid/sendgrid-ruby) gem.
 
+{% codeblock lang:bash %}
+gem install sendgrid-ruby
+{% endcodeblock %}
+
+Create a new client with your SendGrid Username and Password:
 {% codeblock lang:ruby %}
-require 'mail'
-Mail.defaults do
-  delivery_method :smtp, { :address   => "smtp.sendgrid.net",
-                           :port      => 587,
-                           :domain    => "yourdomain.com",
-                           :user_name => "yourusername@domain.com",
-                           :password  => "yourPassword",
-                           :authentication => 'plain',
-                           :enable_starttls_auto => true }
-end
+require 'sendgrid-ruby'
 
-mail = Mail.deliver do
-  to 'yourRecipient@domain.com'
-  from 'Your Name <name@domain.com>'
-  subject 'This is the subject of your email'
-  text_part do
-    body 'Hello world in text'
-  end
-  html_part do
-    content_type 'text/html; charset=UTF-8'
-    body '<b>Hello world in HTML</b>'
-  end
+# As a hash
+client = SendGrid::Client.new(api_user: 'SENDGRID_USERNAME', api_key: 'SENDGRID_PASSWORD')
+
+# Or as a block
+client = SendGrid::Client.new do |c|
+  c.api_user = 'SENDGRID_USERNAME'
+  c.api_key = 'SENDGRID_PASSWORD'
 end
 {% endcodeblock %}
 
- To install the [Mail](https://github.com/mikel/mail) gem please note that you need the OpenSSL library installed, then run the following: 
+Then; Create a new Mail object and send:
+{% codeblock lang:ruby %}
+mail = SendGrid::Mail.new do |m|
+  m.to = 'rbin@sendgrid.com'
+  m.from = 'taco@cat.limo'
+  m.subject = 'Hello world!'
+  m.text = 'I heard you like Pineapple.'
+    # OR
+  m.html = '<p>I heard you like Pineapple!</p>'  
+end
 
-{% codeblock lang:bash %}
-gem install mail
+puts client.send(mail) 
+# {"message":"success"}
+{% endcodeblock %}
+
+You can also create a Mail object with a hash:
+{% codeblock lang:ruby %}
+client.send(SendGrid::Mail.new(to: 'example@example.com', from: 'taco@cat.limo', subject: 'Hello world!', text: 'Hi there!', html: '<b>Hi there!</b>'))
+
+# {"message":"success"}
 {% endcodeblock %}
