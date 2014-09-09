@@ -24,27 +24,36 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com %}
   {% response json %}
-{
-  "name": "twitter",
-  "title": "Twitter",
-  "description": "This plugin allows you to send an email message to twitter",
-  "activated": "false"
-}
+[
+    {
+        "name": "gravatar",
+        "title": "Gravatar",
+        "description": "Appends your gravatar to each HTML email.",
+        "activated": false
+    },
+    {
+        "name": "clicktrack",
+        "title": "Click Tracking",
+        "description": "Overwrites every link to track every click in emails.",
+        "activated": false
+    }
+]
   {% endresponse %}
   {% response xml %}
-<filters>
-   <filter>
-      <name>twitter</name>
-      <title>
-Twitter
-
-</title>
-      <description>This plugin allows you to send an email message to twitter</description>
-      <activated>0</activated>
-   </filter>
-   ...
-</filters>
-
+<apps>
+    <app>
+        <name>gravatar</name>
+        <title>Gravatar</title>
+        <description>Appends your gravatar to each HTML email.</description>
+        <activated>0</activated>
+    </app>
+    <app>
+        <name>clicktrack</name>
+        <title>Click Tracking</title>
+        <description>Overwrites every link to track every click in emails.</description>
+        <activated>0</activated>
+    </app>
+</apps>
   {% endresponse %}
 {% endapiexample %}
 
@@ -59,10 +68,11 @@ Activate App
  {% parameter 'task' 'Yes' 'Must be set to <em>activate</em>' 'Retrieve Available Apps' %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+ {% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
 {% endparameters %}
 
 
-{% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com %}
+{% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=activate&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -72,7 +82,6 @@ Activate App
 <result>
    <message>success</message>
 </result>
-
   {% endresponse %}
 {% endapiexample %}
 
@@ -87,10 +96,11 @@ Deactivate App
  {% parameter 'task' 'Yes' 'Must be set to <em>deactivate</em>' 'Retrieve Available Apps' %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+{% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
 {% endparameters %}
 
 
-{% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com %}
+{% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=deactivate&user=customer@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -100,7 +110,6 @@ Deactivate App
 <result>
    <message>success</message>
 </result>
-
   {% endresponse %}
 {% endapiexample %}
 
@@ -112,23 +121,24 @@ Customize App
 
 These API calls require that settings are passed using POST.
 
-{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user customer@example.com false %}
+{% parameters deactivate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>setup</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+ {% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
+ {% parameter 'field_name' 'Yes' 'Must be set to <em>a setting field name</em>' 'The [fields]({{root_url}}/API_Reference/Web_API/filter_settings.html) required for each app to work properly' %}
+{% endparameters %}
+
+{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=setup&user=customer@example.com&licence_key=1234567&enable_subusers=true %}
   {% response json %}
 {
   "message": "success",
-  "settings": [
-    {
-      "field_name": "field_value"
-    }
-  ]
 }
   {% endresponse %}
   {% response xml %}
-<filter>
-   <field_name>field_value</field_name>
-   ...
-</filter>
-
+<result>
+   <message>success</message>
+</result>
   {% endresponse %}
 {% endapiexample %}
 
@@ -138,22 +148,24 @@ These API calls require that settings are passed using POST.
 Get Current Settings 
 {% endanchor %}
 
-{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=customer@example.com&method=app false %}
+{% parameters deactivate %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>getsettings</em>' 'Retrieve Available Apps' %}
+ {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer who we will update' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>apps</em>' 'Allows you to access apps functionality' %}
+ {% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
+{% endparameters %}
+
+{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&task=getsettings&user=customer@example.com&method=apps %}
   {% response json %}
 {
-  "message": "success",
-  "settings": [
-    {
-      "field_name": "field_value"
+    "settings": {
+        "field_name": "field_value"
     }
-  ]
 }
   {% endresponse %}
   {% response xml %}
-<filter>
+<app>
    <field_name>field_value</field_name>
-   ...
-</filter>
-
+</app>
   {% endresponse %}
 {% endapiexample %}

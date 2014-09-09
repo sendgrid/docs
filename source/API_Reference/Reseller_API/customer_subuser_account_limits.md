@@ -18,10 +18,11 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 {% parameters get %}
  {% parameter 'task' 'Yes' 'Must be set to <em>retrieve</em>' 'Retrieve account limits' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their account limits retrieved' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retrieve %}
   {% response json %}
 {
   "credit": "0",
@@ -54,7 +55,7 @@ Obtain a complete list of all customer subuser.
 {% endparameters %}
 
 
-{% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
+{% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
   {% response json %}
 {
   "message": "success"
@@ -88,7 +89,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endparameters %}
 
 
-{% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
+{% apiexample reset POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=daily %}
   {% response json %}
 {
   "message": "success"
@@ -118,7 +119,7 @@ Set a subusers credits to a specified amount.
 {% endparameters %}
 
 
-{% apiexample total POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
+{% apiexample total POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20 %}
   {% response json %}
 {
   "message": "success"
@@ -148,7 +149,7 @@ Increment a subusers credits by a specified amount.
 {% endparameters %}
 
 
-{% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
+{% apiexample increment POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20 %}
   {% response json %}
 {
   "message": "success"
@@ -178,7 +179,7 @@ Decrement a subusers credits by a specified amount.
 {% endparameters %}
 
 
-{% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}
+{% apiexample decrement POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20 %}
   {% response json %}
 {
   "message": "success"

@@ -16,7 +16,7 @@ Authenticate a customer on your website before displaying their account informat
 {% endparameters %}
 
 
-{% apiexample auth POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=aut %}
+{% apiexample auth POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=auth %}
   {% response json %}
 {
   "message": "success"
@@ -26,6 +26,5 @@ Authenticate a customer on your website before displaying their account informat
 <result>
    <message>success</message>
 </result>
-
   {% endresponse %}
 {% endapiexample %}
