@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IP Addresses
+title: IP Pooling
 weight: 100
 navigation:
   show: true
