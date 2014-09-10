@@ -49,6 +49,10 @@ Via Email Preferences, recipients can select which groups of email they
 would like to receive. With the Unsubscribe link, recipients will be added to
 the Global Suppression list once they've confirmed their choice.
 
+{% info %}
+Group Suppressions do not currently trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.
+{% endinfo %}
+
 {% anchor h2 %}
 Group Suppressions vs. Global Unsubscribes
 {% endanchor %}
