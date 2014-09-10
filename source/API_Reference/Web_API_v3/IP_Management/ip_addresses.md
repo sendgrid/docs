@@ -20,7 +20,7 @@ HTTP/1.1 200 OK
     "ip":"167.89.21.3",
     "pools":["new_test5"],
     "warmup":true,
-    "warmup_start_date":1409616000
+    "start_date":1409616000
   }
 ]
 {% endv3response %}
