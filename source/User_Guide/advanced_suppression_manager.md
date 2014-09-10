@@ -22,6 +22,34 @@ emails they want to receive by letting them opt out of messages from a
 certain group. This means getting the right messages to your recipient's inbox, resulting in a stronger relationship with your recipients and a better sending reputation.
 
 {% anchor h2 %}
+Defining an ASM Group When Sending
+{% endanchor %}
+
+To specify a group when sending an email, add the group's ID to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
+call]({{root_url}}/API_Reference/Web_API/mail.html). You may only
+specify one group per send.
+
+{% codeblock lang:json %}
+{
+  "asm_group_id": 1
+}
+{% endcodeblock %}
+
+You can find your group IDs by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-GET) of the groups resource.
+
+{% anchor h2 %}
+Unsubscribe and Email Preferences Links
+{% endanchor %}
+
+Emails that are sent with an ASM group specified with will have two links at
+the bottom of the email: an "Email Preferences" link, and an
+"Unsubscribe" link.
+
+Via Email Preferences, recipients can select which groups of email they
+would like to receive. With the Unsubscribe link, recipients will be added to
+the Global Suppression list once they've confirmed their choice.
+
+{% anchor h2 %}
 Group Suppressions vs. Global Unsubscribes
 {% endanchor %}
 
@@ -50,8 +78,5 @@ From here you can begin creating suppression groups to define the types
 of emails for which you would like your recipients to be able to opt
 out.
 
-And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) as well.
+And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/indexgi.html) as well.
 
-{% anchor h2 %}
-Unsubscribe Links and Email Preferences
-{% endanchor %}
