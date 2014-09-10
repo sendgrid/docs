@@ -39,6 +39,18 @@ You can manage your global unsubscribes via the UI under "Global Unsubscribes."
 Suppression Groups and Categories
 {% endanchor %}
 
-While both suppression groups and [categories]({{root_url}}/API_Reference/SMTP_API/categories.html) can represent types of email, they are used for different but complementary purposes. Categories are used to organize emails together for analytics, while suppression groups organize emails together for the purpose of allowing recipients to opt out of receiving those types of emails.
+While both suppression groups and [categories]({{root_url}}/API_Reference/gSMTP_API/categories.html) can represent types of email, they are used for different but complementary purposes. Categories are used to organize emails together for analytics, while suppression groups organize emails together for the purpose of allowing recipients to opt out of receiving those types of emails.
 
+{% anchor h2 %}
+Getting Started
+{% endanchor %}
 
+After logging in to your SendGrid account, click on the beta invitation banner at the top of the page Once in the beta SendGrid site, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
+
+From here you can begin creating suppression groups to define the types
+of emails for which you would like your recipients to be able to opt
+out.
+
+{% anchor h2 %}
+Unsubscribe Links and Email Preferences
+{% endanchor %}
