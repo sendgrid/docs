@@ -30,7 +30,7 @@ From here you can begin creating suppression groups to define the types
 of emails for which you would like your recipients to be able to opt
 out.
 
-And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/indexgi.html) for managing your groups and suppressions.
+And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) for managing your groups and suppressions.
 
 {% anchor h2 %}
 Defining an ASM Group When Sending
