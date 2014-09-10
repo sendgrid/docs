@@ -39,6 +39,6 @@ You can manage your global unsubscribes via the UI under "Global Unsubscribes."
 Suppression Groups and Categories
 {% endanchor %}
 
-While both suppression groups and [categories]({{root_url}}/SMTP_API/categories.html) can represent types of email, they are used for different but complementary purposes. Categories are used to organize emails together for analytics, while suppression groups organize emails together for the purpose of allowing recipients to opt out of receiving those types of emails.
+While both suppression groups and [categories]({{root_url}}/API_Reference/SMTP_API/categories.html) can represent types of email, they are used for different but complementary purposes. Categories are used to organize emails together for analytics, while suppression groups organize emails together for the purpose of allowing recipients to opt out of receiving those types of emails.
 
 
