@@ -44,12 +44,13 @@ While both suppression groups and [categories]({{root_url}}/API_Reference/SMTP_A
 {% anchor h2 %}
 Getting Started
 {% endanchor %}
-
 After logging in to your SendGrid account, click on the beta invitation banner at the top of the page Once in the beta SendGrid site, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
 
 From here you can begin creating suppression groups to define the types
 of emails for which you would like your recipients to be able to opt
 out.
+
+And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) as well.
 
 {% anchor h2 %}
 Unsubscribe Links and Email Preferences
