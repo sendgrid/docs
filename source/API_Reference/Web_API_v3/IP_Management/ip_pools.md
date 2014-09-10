@@ -3,7 +3,7 @@ layout: page
 title: IP Pools
 weight: 90
 navigation:
-  show: true
+  show: false
 ---
 
 {% info %}
