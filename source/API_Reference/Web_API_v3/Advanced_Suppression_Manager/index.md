@@ -18,7 +18,8 @@ notifications.
 You can also add [global suppressions]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html) to suppress a recipient from receiving all emails regardless of group.
 
 To specify a group when sending an email, add the group's ID to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
-call]({{root_url}}/API_Reference/Web_API/mail.html).
+call]({{root_url}}/API_Reference/Web_API/mail.html). You may only
+specify one group per send.
 
 {% codeblock lang:json %}
 {

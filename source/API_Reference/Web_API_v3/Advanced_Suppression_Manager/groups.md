@@ -39,6 +39,10 @@ POST
 {% endanchor %}
 Create a new suppression group.
 
+{% info %}
+There is a limit of 25 groups per user.
+{% endinfo %}
+
 {% parameters post %}
   {% parameter name true 'String, may not share its name with any other suppression group in your account.' 'The name of the new suppression group.' %}
   {% parameter description true 'String' 'A description of your suppression group (for your reference)' %}
@@ -85,6 +89,13 @@ HTTP/1.1 201 OK
 DELETE
 {% endanchor %}
 Delete a suppression group.
+
+{% info %}
+You can only delete groups that have not been used in the last 60 days.
+If a recipient uses the "one-click unsubscribe" option on an email
+associate with a deleted group, that recipient will be added to the
+global suppression list.
+{% endinfo %}
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/asm/groups/:group_id %}
   {% v3response %}
