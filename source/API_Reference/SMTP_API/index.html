@@ -102,6 +102,16 @@ The X-SMTPAPI Header
 }
 {% endcodeblock %}
 
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html">Scheduling Parameters</a>: A collection of attributes that can delay sending and allow for faster mail flow.
+</p>
+
+{% codeblock lang:json %}
+{
+  "send_at": 1409348513
+}
+{% endcodeblock %}
+
 All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this:
 
 {% codeblock lang:json %}{
@@ -137,7 +147,8 @@ All of the above examples can then be combined into one larger JSON string place
         "text/plain": "Thank you for your business"
       }
     }
-  }
+  },
+  "send_at": 1409348513
 }
 {% endcodeblock %}
 
