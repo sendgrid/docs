@@ -34,7 +34,7 @@ Second Step: Integrate With Your App
 {% endanchor %}
 
 Talk to your development team about integrating your new Template(s) with your application. 
-They can read more about how to integrate templates by checking out our <a href="{{root_url}}/API_Reference/Template_Engine_API/index.html">Template Engine API Reference docs</a>.
+They can read more about how to integrate templates by checking out our <a href="{{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html">Template Engine API Reference docs</a>.
 </div>
 </div>
 <div class="row">
