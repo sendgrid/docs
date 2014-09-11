@@ -35,7 +35,7 @@ If you are not already a CloudFlare customer, you have two options for setting u
 
 Unless you are comfortable changing your authoritative DNS provider, please follow the instructions for [getting CloudFlare up and running using a CNAME based configuration](https://support.cloudflare.com/hc/en-us/articles/200168706-How-do-I-do-CNAME-setup-).
 
-{% anchor h2 %}
+{% anchor h3 %}
 Configuring CloudFlare
 {% endanchor %}
 
@@ -88,15 +88,14 @@ Set the options as follows:
 
 *Name*: SendGrid (or whatever you like)
 
-*Origin Server Address*: yourcustomername.ct.sendgrid.net : 443 (Insert your customer name. Note the connection on the SSL port 443)
+*Origin Server Address*: yourcompanyname.ct.sendgrid.net : 443 (Insert your company name. Note the connection on the SSL port 443)
 
-*Domain Name*: e.customername.com (or whatever your whitelabel domain name is, from the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links that SendGrid creates in your emails).
+*Domain Name*: email.example.com (whitelabel domain name is, from the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links that SendGrid creates in your emails).
 
 Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid whitelabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
 
 Now configure your DNS provider with a CNAME record for email.example.com (e.g. your desired whitelabel domain) to global.prod.fastly.net.
 
-Now contact SendGrid support,
-and they'll validate the CDN settings and enable SSL click and open
+Now contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
 tracking.
 
