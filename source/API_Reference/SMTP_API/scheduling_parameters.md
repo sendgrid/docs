@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-SendGrid's [SMTPAPI]({{ root_url }}/API_Reference/SMTP_API/) allows developers to specify custom scheduling parameters. The SendGrid Delayed Sending feature will allow a customer to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter. This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages release them when the time stamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance.
+SendGrid's [SMTPAPI]({{ root_url }}/API_Reference/SMTP_API/) allows developers to specify custom scheduling parameters. The SendGrid Delayed Sending feature will allow a customer to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter. This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release them when the time stamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance.
 
 {% info %}
 Once you send SendGrid a delayed send request, that email request cannot be cancelled and we currently only accept time stamps no greater than 24 hours in advance.
@@ -28,7 +28,7 @@ To delay a send request for a large batch of emails use the `send_at` parameter 
 Send Each At
 {% endanchor %}	
 	
-To delay a send request for individual recipients use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
+To delay a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 {% codeblock lang:json %}
 {
