@@ -69,3 +69,34 @@ Now click on "I'm done with CNAME setup". Now contact SendGrid support,
 and they'll validate the CDN settings and enable SSL click and open
 tracking.
 
+{% anchor h2 %}
+Using Fastly
+{% endanchor %}
+
+[Sign up for Fastly](https://www.fastly.com/signup/) or login to your
+existing account.
+
+Click on the "Configure" button on the Dashboard. 
+ 
+![Fastly Dashboard]({{root_url}}/images/fastly1.png)
+
+Click New Service
+ 
+![CloudFlare Service]({{root_url}}/images/fastly2.png)
+
+Set the options as follows:
+
+*Name*: SendGrid (or whatever you like)
+
+*Origin Server Address*: yourcustomername.ct.sendgrid.net : 443 (Insert your customer name. Note the connection on the SSL port 443)
+
+*Domain Name*: e.customername.com (or whatever your whitelabel domain name is, from the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links that SendGrid creates in your emails).
+
+Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid whitelabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
+
+Now configure your DNS provider with a CNAME record for email.example.com (e.g. your desired whitelabel domain) to global.prod.fastly.net.
+
+Now contact SendGrid support,
+and they'll validate the CDN settings and enable SSL click and open
+tracking.
+
