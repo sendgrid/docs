@@ -132,7 +132,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       12
     </td>
     <td>
-      1000
+      1,000
     </td>
   </tr>
 
@@ -141,7 +141,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       13
     </td>
     <td>
-      1587
+      1,587
     </td>
   </tr>
 
@@ -150,7 +150,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       14
     </td>
     <td>
-      2222
+      2,222
     </td>
   </tr>
 
@@ -159,7 +159,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       15
     </td>
     <td>
-      3111
+      3,111
     </td>
   </tr>
 
@@ -168,7 +168,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       16
     </td>
     <td>
-      4356
+      4,356
     </td>
   </tr>
 
@@ -177,7 +177,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       17
     </td>
     <td>
-      6098
+      6,098
     </td>
   </tr>
 
@@ -186,7 +186,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       18
     </td>
     <td>
-      8583
+      8,583
     </td>
   </tr>
 
@@ -195,7 +195,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       19
     </td>
     <td>
-      11953
+      11,953
     </td>
   </tr>
 
@@ -204,7 +204,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       20
     </td>
     <td>
-      16734
+      16,734
     </td>
   </tr>
 
@@ -213,7 +213,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       21
     </td>
     <td>
-      23427
+      23,427
     </td>
   </tr>
 
@@ -222,7 +222,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       22
     </td>
     <td>
-      32798
+      32,798
     </td>
   </tr>
 
@@ -231,7 +231,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       23
     </td>
     <td>
-      45917
+      45,917
     </td>
   </tr>
 
@@ -240,7 +240,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       24
     </td>
     <td>
-      64284
+      64,284
     </td>
   </tr>
 
@@ -249,7 +249,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       25
     </td>
     <td>
-      89998
+      89,998
     </td>
   </tr>
 
@@ -258,7 +258,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       26
     </td>
     <td>
-      125997
+      125,997
     </td>
   </tr>
 
@@ -267,7 +267,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       27
     </td>
     <td>
-      176395
+      176,395
     </td>
   </tr>
 
@@ -276,7 +276,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       28
     </td>
     <td>
-      246953
+      246,953
     </td>
   </tr>
 
@@ -285,7 +285,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       29
     </td>
     <td>
-      345735
+      345,735
     </td>
   </tr>
 
@@ -294,7 +294,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       30
     </td>
     <td>
-      484029
+      484,029
     </td>
   </tr>
 
@@ -303,7 +303,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       31
     </td>
     <td>
-      677640
+      677,640
     </td>
   </tr>
 
@@ -312,7 +312,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       32
     </td>
     <td>
-      948696
+      948,696
     </td>
   </tr>
 
@@ -321,7 +321,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       33
     </td>
     <td>
-      1328175
+      1,328,175
     </td>
   </tr>
 
@@ -330,7 +330,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       34
     </td>
     <td>
-      1859444
+      1,859,444
     </td>
   </tr>
 
@@ -339,7 +339,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       35
     </td>
     <td>
-      2603222
+      2,603,222
     </td>
   </tr>
 
@@ -348,7 +348,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       36
     </td>
     <td>
-      3644511
+      3,644,511
     </td>
   </tr>
 
@@ -357,7 +357,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       37
     </td>
     <td>
-      5102316
+      5,102,316
     </td>
   </tr>
 
@@ -366,7 +366,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       38
     </td>
     <td>
-      7143242
+      7,143,242
     </td>
   </tr>
 
@@ -375,7 +375,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       39
     </td>
     <td>
-      10000539
+      10,000,539
     </td>
   </tr>
 
@@ -384,7 +384,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       40
     </td>
     <td>
-      14000754
+      14,000,754
     </td>
   </tr>
 
@@ -393,7 +393,7 @@ warmup your IP addresses when used with [IP warmup]({{root_url}}/API_Reference/W
       41
     </td>
     <td>
-      19601056
+      19,601,056
     </td>
   </tr>
 </table>
