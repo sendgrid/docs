@@ -61,11 +61,6 @@ public class Email
   public string SenderIp { get; set; }
 
   /// <summary>
-  /// Spam Assassin’s spam report.
-  /// </summary>
-  public string SpamReport { get; set; }
-
-  /// <summary>
   /// A JSON string containing the SMTP envelope. This will have two variables: to, which is an array of recipients, and from, which is the return path for the message.
   /// </summary>
   public string Envelope { get; set; }
@@ -81,11 +76,6 @@ public class Email
   public string Subject { get; set; }
 
   /// <summary>
-  /// Spam Assassin’s rating for whether or not this is spam.
-  /// </summary>
-  public double SpamScore { get; set; }
-
-  /// <summary>
   /// A JSON string containing the character sets of the fields extracted from the message.
   /// </summary>
   public string Charsets { get; set; }
@@ -97,82 +87,45 @@ public class Email
 }
 {% endcodeblock %}
 
- Then create this Filter Attribute: 
-
-{% codeblock lang:csharp %}
-public class ParseEmailObjectFilter : ActionFilterAttribute
-{
-  /// <summary>
-  /// Parses the raw form-data of the POST into a snazzy email
-  /// model, and then sets it in the arguments for the POST function
-  /// to read.
-  /// </summary>
-  /// <param name="actionContext">The HTTP action context of the POST.</param>
-  public override void OnActionExecuting(HttpActionContext actionContext)
-  {
-    var data = HttpContext.Current.Request.Form;
-    var email = new Email
-    {
-      Dkim = data["dkim"],
-      To = data["to"],
-      Html = data["html"],
-      From = data["from"],
-      Text = data["text"],
-      SenderIp = data["sender_ip"],
-      SpamReport = data["spam_report"],
-      Envelope = data["envelope"],
-      Attachments = int.Parse(data["attachments"]),
-      Subject = data["subject"],
-      SpamScore = double.Parse(data["spam_score"]),
-      Charsets = data["charsets"],
-      Spf = data["SPF"]
-    };
-
-    actionContext.ActionArguments["email"] = email;
-
-    base.OnActionExecuting(actionContext);
-  }
-}
-{% endcodeblock %}
-
- Then, set the following in web.config: 
-
-{% codeblock lang:xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<system.web>
-   <compilation debug="true" targetFramework="4.5"/>
-   <httpRuntime targetFramework="4.5" requestValidationMode="2.0"/>
-   <pages validateRequest="false"/>
-</system.web>
-
-{% endcodeblock %}
-
- Add the following attributes to your method in the ApiController: 
-
-{% codeblock lang:csharp %}
-[ValidateInput(false)]
-[ParseEmailObjectFilter]
-{% endcodeblock %}
-
- Finally to access the Email model, your ApiController Post method should look like this. 
+ To test this, we send an email to alex@email.sendgrid.biz, and put the following method in our ApiController. Note: Don't forget the attribute.
 
 {% codeblock lang:csharp %}
 // POST api/inbound
-[ValidateInput(false)]
-[ParseEmailObjectFilter]
-public ActionResult Post()
+[HttpPost]
+public async Task<HttpResponseMessage> Post()
 {
-  if (ActionContext == null || ActionContext.ActionArguments == null || ActionContext.ActionArguments["email"] == null || !ActionContext.ActionArguments.ContainsKey("email"))
-    return new HttpStatusCodeResult(HttpStatusCode.OK);
+	var root = HttpContext.Current.Server.MapPath("~/App_Data");
+	var provider = new MultipartFormDataStreamProvider(root);
+	await Request.Content.ReadAsMultipartAsync(provider);
 
-  var email = ActionContext.ActionArguments["email"] as Email;
-  if (email == null)
-    return new HttpStatusCodeResult(HttpStatusCode.OK);
+	var email = new Email
+	{
+		Dkim = provider.FormData.GetValues("dkim").FirstOrDefault(),
+		To = provider.FormData.GetValues("to").FirstOrDefault(),
+		Html = provider.FormData.GetValues("html").FirstOrDefault(),
+		From = provider.FormData.GetValues("from").FirstOrDefault(),
+		Text = provider.FormData.GetValues("text").FirstOrDefault(),
+		SenderIp = provider.FormData.GetValues("sender_ip").FirstOrDefault(),
+		Envelope = provider.FormData.GetValues("envelope").FirstOrDefault(),
+		Attachments = int.Parse(provider.FormData.GetValues("attachments").FirstOrDefault()),
+		Subject = provider.FormData.GetValues("subject").FirstOrDefault(),
+		Charsets = provider.FormData.GetValues("charsets").FirstOrDefault(),
+		Spf = provider.FormData.GetValues("spf").FirstOrDefault()
+	};
 
-  // We have email! Now lets do something cool!
+	// The email is now stored in the email variable
 
-  // Return a success
-  return new HttpStatusCodeResult(HttpStatusCode.OK);
+	return new HttpResponseMessage(HttpStatusCode.OK);
 }
+{% endcodeblock %}
+
+The above code used the following `using`'s
+
+{% codeblock lang:csharp %}
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Http;
 {% endcodeblock %}
