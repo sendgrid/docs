@@ -18,6 +18,12 @@ article {
   max-width:725px;
 }
 
+article img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 table {
   background-color: white;
 }
