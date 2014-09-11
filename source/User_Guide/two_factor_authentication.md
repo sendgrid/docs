@@ -21,6 +21,8 @@ how credentials are used to send email.
 
 * From the Multifactor Authentication page, enter your phone number, and click on “Send Text Message.”
 
+* Please note, for international phone numbers, enter your country-code too.  i.e.  +447812345678
+
 * Check your phone.  You will have received a test message with a 6-digit code.  Now enter it in the “Verify Authentication Code” window.
 
 ![Configure Multifactor Authentication]({{root_url}}/images/configure_multifactor.png)
