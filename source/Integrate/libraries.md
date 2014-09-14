@@ -119,6 +119,7 @@ PHP
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) *by SendGrid* - Official PHP wrapper to send emails through the SendGrid API
 -   [smtpapi-php](http://github.com/sendgrid/smtpapi-php) *by SendGrid*- Official PHP library to create SMTP API headers
 -   [sendgrid-openshift-php](https://github.com/sendgrid/openshift-sendgrid-php) *by SendGrid* - Official PHP wrapper for use with Red Hat OpenShift
+-   [sendgrid-report-php](https://github.com/fcosrno/sendgrid-report-php) *by Francisco Serrano* - PHP wrapper to view and manage SendGrid reports through the SendGrid API
 -   [SendGrid-PHP-Library](https://github.com/alonbendavid/SendGrid-PHP-Library) *by Alon Ben David* - PHP wrapper for the SendGrid API including Marketing Email API
 -   [messaging_sendgrid](http://github.com/josereyero/messaging_sendgrid) *by Jose Reyero* - Drupal 7 plugin that adds bulk messaging capabilities via SendGrid
 -   [codeigniter-sendgrid-newsletter](http://github.com/bold/codeigniter-sendgrid-newsletter) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Marketing Email API
