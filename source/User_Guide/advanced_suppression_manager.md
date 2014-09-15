@@ -24,11 +24,17 @@ certain group. This means getting the right messages to your recipient's inbox, 
 {% anchor h2 %}
 Getting Started
 {% endanchor %}
+
 After logging in to your SendGrid account, click on the beta invitation banner at the top of the page Once in the beta SendGrid site, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
 
 From here you can begin creating suppression groups to define the types
 of emails for which you would like your recipients to be able to opt
 out.
+
+{% info %}
+All of your groups will be visible on the Email Preferences page, along
+with the descriptions.
+{% endinfo %}
 
 And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) for managing your groups and suppressions.
 
@@ -46,7 +52,14 @@ specify one group per send.
 }
 {% endcodeblock %}
 
-You can find your group IDs by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-GET) of the groups resource.
+You can find your group IDs by looking at the Group ID column in the Advanced Suppression Manager UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-GET) of the groups resource.
+
+{% anchor h2 %}
+Active and Inactive Groups
+{% endanchor %}
+
+A group is active if email has been sent using that suppression group in
+the last 60 days. Active groups may not be deleted.
 
 {% anchor h2 %}
 Unsubscribe and Email Preferences Links
@@ -60,9 +73,16 @@ Via Email Preferences, recipients can select which groups of email they
 would like to receive. With the Unsubscribe link, recipients will be added to
 the Global Suppression list once they've confirmed their choice.
 
-{% info %}
-Group Suppressions do not currently trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.
-{% endinfo %}
+{% anchor h2 %}
+Email Preferences
+{% endanchor %}
+
+From the Email Preferences page, recipients will be able to see all your
+groups and their descriptions, and choose whether or not they want to
+receive those types of emails. The Email Preferences page looks like
+this:
+
+![Email Preferences]({{root_url}}/images/asm_user_guide1.png)
 
 {% anchor h2 %}
 Group Suppressions vs. Global Unsubscribes
@@ -77,6 +97,23 @@ when sending an email.
 When using ASM, a recipient clicking an unsubscribe link can choose which groups to unsubscribe from (group suppression) or may choose to opt out of all emails (global unsubscribe).
 
 You can manage your global unsubscribes via the UI under "Global Unsubscribes."
+
+{% info %}
+Group Suppressions do not currently trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.
+{% endinfo %}
+
+{% anchor h2 %}
+Uploading a CSV
+{% endanchor %}
+
+You can upload a CSV of email addresses that you would like to add to a
+suppression group.
+
+The CSV must meet the following criteria:
+- Email addresses must be in the first column of the CSV
+- The first row may be an optional header row
+- if there is more than one column in the CSV, the extra columns are ignored
+- Columns must comma-separated, without any formatting (e.g. quotation marks) around each of the cells.
 
 {% anchor h2 %}
 Suppression Groups and Categories
