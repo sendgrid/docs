@@ -44,7 +44,8 @@ Defining an ASM Group When Sending
 
 To specify a group when sending an email, add the group's ID to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
 call]({{root_url}}/API_Reference/Web_API/mail.html). You may only
-specify one group per send.
+specify one group per send, and you should wait one minute after
+creating the group before sending with it.
 
 {% codeblock lang:json %}
 {
