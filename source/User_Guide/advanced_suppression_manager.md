@@ -110,10 +110,14 @@ You can upload a CSV of email addresses that you would like to add to a
 suppression group.
 
 The CSV must meet the following criteria:
-- Email addresses must be in the first column of the CSV
-- The first row may be an optional header row
-- if there is more than one column in the CSV, the extra columns are ignored
-- Columns must comma-separated, without any formatting (e.g. quotation marks) around each of the cells.
+
+* Email addresses must be in the first column of the CSV
+
+*  The first row may be an optional header row
+
+*  If there is more than one column in the CSV, the extra columns are ignored
+
+*  Columns must comma-separated, without any formatting (e.g. quotation marks) around each of the cells.
 
 {% anchor h2 %}
 Suppression Groups and Categories
