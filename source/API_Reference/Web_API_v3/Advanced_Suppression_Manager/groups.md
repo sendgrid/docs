@@ -16,8 +16,20 @@ Retrieve all suppression groups associated with your account.
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups %}
 {% v3response %}
 [
-  {"id": 100, "name": "Newsletters", "description": "Our monthly newsletter.", "last_email_sent_at": "2014-09-04 01:34:43", "unsubscribes": 400},
-  {"id": 101, "name": "Alerts", "description 2": "Emails triggered by user-defined rules.", "last_email_sent_at": "2012-11-06 09:37:33", "unsubscribes": 1}
+  {
+    "id": 100,
+    "name": "Newsletters",
+    "description": "Our monthly newsletter.",
+    "last_email_sent_at": "2014-09-04 01:34:43",
+    "unsubscribes": 400
+  },
+  {
+    "id": 101,
+    "name": "Alerts",
+    "description 2": "Emails triggered by user-defined rules.",
+    "last_email_sent_at": "2012-11-06 09:37:33",
+    "unsubscribes": 1
+  }
 ]
 {% endv3response %}
 {% endapiv3example %}
@@ -30,7 +42,13 @@ Get information on a single suppression group.
 
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/asm/groups/:group_id %}
 {% v3response %}
-{"id": 100, "name": "Newsletters", "description": "Our monthly newsletter.", "last_email_sent_at": "2014-09-04 01:34:43", "unsubscribes": 400}
+{
+    "id": 100,
+    "name": "Newsletters",
+    "description": "Our monthly newsletter.",
+    "last_email_sent_at": "2014-09-04 01:34:43",
+    "unsubscribes": 400
+}
 {% endv3response %}
 {% endapiv3example %}
 

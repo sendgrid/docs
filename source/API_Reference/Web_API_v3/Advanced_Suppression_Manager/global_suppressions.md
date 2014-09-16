@@ -23,7 +23,7 @@ Add recipient emails to the global suppression group.
 {% v3response %}
 HTTP/1.1 201
 {"recipient_emails":["test1@example.com","test2@example.com"]}
-{% endv3response %}
+g{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
