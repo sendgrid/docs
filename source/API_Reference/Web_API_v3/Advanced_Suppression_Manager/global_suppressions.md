@@ -13,16 +13,16 @@ emails.
 POST
 {% endanchor %}
 
-Add a recipient email to the global suppression group.
+Add recipient emails to the global suppression group.
 
 {% parameters post %}
-  {% parameter recipient_emails true 'A valid email address.' 'The email to add to the global suppressions group.' %}
+ {% parameter recipient_emails true 'Array of valid email addresses.' 'The emails to add to the suppression group.' %}
 {% endparameters %}
 
-{% apiv3example post POST https://api.sendgrid.com/v3/asm/suppressions/global recipient_email="test1@example.com" %}
+{% apiv3example post POST https://api.sendgrid.com/v3/asm/suppressions/global recipient_emails=["test1@example.com", "test2@example.com"] %}
 {% v3response %}
 HTTP/1.1 201
-{"recipient_email":"test1@example.com"}
+{"recipient_emails":["test1@example.com","test2@example.com"]}
 {% endv3response %}
 {% endapiv3example %}
 
