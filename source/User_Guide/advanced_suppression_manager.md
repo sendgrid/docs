@@ -25,7 +25,7 @@ certain group. This means getting the right messages to your recipient's inbox, 
 Getting Started
 {% endanchor %}
 
-After logging in to your SendGrid account, click on the beta invitation banner at the top of the page Once in the beta SendGrid site, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
+After logging in to your SendGrid account, click on the beta invitation banner at the top of the page. Once in the beta SendGrid Customer Portal, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
 
 From here you can begin creating suppression groups to define the types
 of emails for which you would like your recipients to be able to opt
