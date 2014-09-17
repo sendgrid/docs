@@ -37,7 +37,7 @@ To retrive statistics for the Marketing Emails application you can use [Category
     "repeat_unsubscribes": 0,
     "clicks": 10223,
     "opens": 9992,
-    "spamreports": 5
+    "spamreports": 5,
     "repeat_spamreports": 0,
     "invalid_email": 0,
     "blocks": 0,
@@ -54,7 +54,7 @@ To retrive statistics for the Marketing Emails application you can use [Category
     "repeat_unsubscribes": 0,
     "clicks": 14323,
     "opens": 10995,
-    "spamreports": 7
+    "spamreports": 7,
     "repeat_spamreports": 0,
     "invalid_email": 0,
     "blocks": 0,
@@ -71,7 +71,7 @@ To retrive statistics for the Marketing Emails application you can use [Category
     "repeat_unsubscribes": 0,
     "clicks": 19223,
     "opens": 12992,
-    "spamreports": 2
+    "spamreports": 2,
     "repeat_spamreports": 0,
     "invalid_email": 0,
     "blocks": 0,
@@ -158,19 +158,19 @@ Retrieve all-time totals for your customer
   {% response json %}
 {
   "requests": 12342,
-  "delivered": "10",
+  "delivered": 10,
   "bounces": 12,
-  "repeat_bounces": "0",
-  "unsubscribes": "0",
-  "repeat_unsubscribes": "0",
+  "repeat_bounces": 0,
+  "unsubscribes": 0",
+  "repeat_unsubscribes": 0,
   "clicks": 10223,
   "opens": 9992,
-  "spamreports": 5
-  "repeat_spamreports": "0",
-  "invalid_email": "1",
-  "blocks": "0",
-  "unique_clicks": "0",
-  "unique_opens": "0"
+  "spamreports": 5,
+  "repeat_spamreports": 0,
+  "invalid_email": 1,
+  "blocks": 0,
+  "unique_clicks": 0,
+  "unique_opens": 0
 }
   {% endresponse %}
   {% response xml %}

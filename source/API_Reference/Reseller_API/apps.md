@@ -132,7 +132,7 @@ These API calls require that settings are passed using POST.
 {% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=setup&user=customer@example.com&licence_key=1234567&enable_subusers=true %}
   {% response json %}
 {
-  "message": "success",
+  "message": "success"
 }
   {% endresponse %}
   {% response xml %}
