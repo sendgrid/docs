@@ -99,7 +99,7 @@ The request that will be sent to the HTTP endpoint will be encoded as multipart/
       </tr>
       <tr>
          <th>attachment-info</th>
-         <td>A JSON string containing the attachmentX (see below) keys with another JSON string as the value. This string will contain the keys *filename*, which is the name of the file (if provided) and *type*, which is the [media type](http://en.wikipedia.org/wiki/Internet_media_type) of the file.</td>
+         <td>A JSON string containing the attachmentX (see below) keys with another JSON string as the value. This string will contain the keys *filename*, which is the name of the file (if it was provided) and *type*, which is the [media type](http://en.wikipedia.org/wiki/Internet_media_type) of the file.</td>
       </tr>
       <tr>
          <th>attachmentX</th>
