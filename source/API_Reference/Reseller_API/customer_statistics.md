@@ -161,7 +161,7 @@ Retrieve all-time totals for your customer
   "delivered": 10,
   "bounces": 12,
   "repeat_bounces": 0,
-  "unsubscribes": 0",
+  "unsubscribes": 0,
   "repeat_unsubscribes": 0,
   "clicks": 10223,
   "opens": 9992,
