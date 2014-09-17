@@ -18,8 +18,8 @@ Returns all of the users who have pending changes within your account.
 
 
 {% parameters users %}
- {% parameter 'task' 'Yes' 'Must be set to <em>list</em> .' %}
- {% parameter 'username' 'No' 'Optional search parameter.' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>list</em> .'%}
+ {% parameter 'username' 'No' 'Optional search parameter.' 'The customers new username.' %}
  {% parameter 'type' 'No' 'Must be either upgrade, downgrade, close. Optional search parameter.' %}
 {% endparameters %}
 
@@ -99,7 +99,7 @@ Cancel/Revert a pending change.
 
 {% parameters delete %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em> .' %}
- {% parameter 'user' 'Yes' 'Must be an User under your account.' %}
+ {% parameter 'user' 'Yes' 'Must be an User under your account.'  'The customers username you wish to delete.' %}
 {% endparameters %}
 
 
@@ -128,10 +128,10 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
 
 {% parameters upgrade %}
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_upgrade</em> .' %}
- {% parameter 'user' 'Yes' 'Must be an User under your account.' %}
+ {% parameter 'user' 'Yes' 'Must be an User under your account.' 'The customers username.' %}
  {% parameter 'package' 'Yes' 'The name of the package you will be upgrading the User to.' %}
- {% parameter 'ip[]' 'Maybe Yes' 'If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.' %}
- {% parameter 'ip_group[]' 'Maybe Yes' 'If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.' %}
+ {% parameter 'ip[]' 'No' 'If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.' %}
+ {% parameter 'ip_group[]' 'No' 'If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.' %}
 {% endparameters %}
 
 
@@ -163,10 +163,10 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 {% parameters downgrade %}
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_downgrade</em> .' %}
- {% parameter 'user' 'Yes' 'Must be an User under your account.' %}
+ {% parameter 'user' 'Yes' 'Must be an User under your account.' 'The customers username.' %}
  {% parameter 'package' 'Yes' 'The name of the package you will be downgrading the User to.' %}
- {% parameter 'ip[]' 'Optional' 'If the package you are downgrading your user requires a whitelabel and/or an unique IP, you may assign a free IP to this customer using your assigned IPs in suppliment from SendGrid.' %}
- {% parameter 'ip_group[]' 'Optional' 'If the package you are downgrading your user to does not require an IP or whitelabel, you may place them in an IP group.' %}
+ {% parameter 'ip[]' 'No' 'If the package you are downgrading your user requires a whitelabel and/or an unique IP, you may assign a free IP to this customer using your assigned IPs in suppliment from SendGrid.' %}
+ {% parameter 'ip_group[]' 'No' 'If the package you are downgrading your user to does not require an IP or whitelabel, you may place them in an IP group.' %}
 {% endparameters %}
 
 
