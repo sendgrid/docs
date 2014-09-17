@@ -3,7 +3,7 @@ title: Advanced Suppression Manager Guide
 weight: 50
 layout: page
 navigation:
-  show: false
+  show: true
 ---
 
 {% info %}
