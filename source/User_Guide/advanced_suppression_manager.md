@@ -1,5 +1,5 @@
 ---
-title: Advanced Suppression Manager Guide
+title: Advanced Suppression Manager
 weight: 50
 layout: page
 navigation:
