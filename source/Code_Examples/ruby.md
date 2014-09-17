@@ -6,6 +6,9 @@ navigation:
   show: true
 ---
 
+{% github sendgrid/sendgrid-ruby#usage PHP %} We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation. {% endgithub %} 
+
+
 This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.
 
 {% codeblock lang:ruby %}

@@ -9,13 +9,13 @@ navigation:
 Overview
 {% endanchor %}
 
-SendGrid supports SSL enabled click and open tracking. This feature is enabled automatically if you are using a shared IP address or have non-whitelabeled domain. To enable SSL click and open tracking for a whitelabeled domain, additional configuration for SSL keys is required.
+SendGrid supports SSL enabled click and open tracking. This feature is enabled automatically if you are using a shared IP address or have a non-whitelabeled domain. To enable SSL click and open tracking for a whitelabeled domain, additional configuration for SSL keys is required.
 
 {% anchor h2 %}
 Configuring SSL Certificates and Keys
 {% endanchor %}
 
-In order for click and open tracking to work over SSL, SendGrid needs to present a valid certificate that will be trusted by the email recipient's browser. For whitelabeled domains, SendGrid is not able to request and/or manage certificates, as it is not the owner of record for the domain.
+In order for click and open tracking to work over SSL, SendGrid needs to present a valid certificate that will be trusted by the email recipient's browser. For whitelabeled domains, SendGrid is not able to request and/or manage certificates, as it is not the record owner for the domain.
 
 To work around this restriction, you may use a CDN service, such as [CloudFlare](http://cloudflare.com) or [Fastly](http://fastly.com) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
 
@@ -65,7 +65,7 @@ Add a new CNAME entry that points your desired whitelabel domain to $customer.ct
 
 ![CloudFlare CNAME]({{root_url}}/images/cloudflare5.png)
 
-Now click on "I'm done with CNAME setup". Now contact SendGrid support,
+Now click on "I'm done with CNAME setup". Once done; contact SendGrid support,
 and they'll validate the CDN settings and enable SSL click and open
 tracking.
 
@@ -96,6 +96,6 @@ Fastly has a few different options for SSL termination. If you want to be able t
 
 Now configure your DNS provider with a CNAME record for email.example.com (e.g. your desired whitelabel domain) to global.prod.fastly.net.
 
-Now contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
+Finally; contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
 tracking.
 

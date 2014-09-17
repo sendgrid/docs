@@ -566,6 +566,11 @@ figure.code.expanded {
   font-size: 14px;
 }
 
+.feedback img {
+  display: auto;
+  height: auto;
+}
+
 .feedback-element {
   padding: 5px 10px 3px 3px;
   margin: 0 4px;
