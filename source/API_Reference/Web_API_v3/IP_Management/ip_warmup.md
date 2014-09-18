@@ -80,14 +80,8 @@ DELETE
 {% endanchor %}
 Remove an IP from warmup.
 
-{% parameters delete %}
-  {% parameter ip true 'A valid IP address.' 'The IP address to remove from warmup.' %}
-{% endparameters %}
-
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup/000.000.000.000 %}
 {% v3response %}
-  {% v3response %}
 HTTP/1.1 204 NO CONTENT (OK)
-  {% endv3response %}
 {% endv3response %}
 {% endapiv3example %} 
