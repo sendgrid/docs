@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 1000
-title: Whitelabel Wizard
+title: List Assist
 breadcrumbs: true
 navigation:
   show: true
