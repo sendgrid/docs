@@ -1,9 +1,8 @@
 ---
 layout: iframe
 title: Code Workshop
-icon: icon-apiworkshop_v2
 footer: false
-weight: 2
+weight: 100
 navigation:
   show: true 
 ---
