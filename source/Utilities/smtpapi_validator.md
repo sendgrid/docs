@@ -1,8 +1,5 @@
 ---
 layout: page
-sidebar: true
-fluid: true
-responsive: true
 title: SMTP API Header Validator
 weight: 80
 navigation:
