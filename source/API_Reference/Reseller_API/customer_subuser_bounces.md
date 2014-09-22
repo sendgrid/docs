@@ -15,10 +15,11 @@ Retrieve Bounces
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving bounces from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the bounces for the specified customer subuser' %}
  {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>bounces</em>' 'Allows you to access bounces functionality' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -67,10 +68,11 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
  {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving bounces from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete the bounces for the specified user' %}
  {% parameter 'email' 'No' 'Bounce email address you want to delete' 'You must specify the bounced email message to remove' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>bounces</em>' 'Allows you to access bounces functionality' %}
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com %}
   {% response json %}
 {
   "message": "success"
