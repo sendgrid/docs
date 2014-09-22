@@ -159,7 +159,8 @@ Get Current Settings
   {% response json %}
 {
     "settings": {
-        "field_name": "field_value"
+        "field_name": "field_value",
+        ...
     }
 }
   {% endresponse %}

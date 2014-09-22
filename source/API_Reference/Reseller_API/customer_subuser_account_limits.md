@@ -52,10 +52,11 @@ Obtain a complete list of all customer subuser.
 {% parameters subuser %}
  {% parameter 'task' 'Yes' 'Must be set to <em>none</em>' 'Remove account limits' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their account limits removed' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
 {% endparameters %}
 
 
-{% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non %}
+{% apiexample subuser POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=none %}
   {% response json %}
 {
   "message": "success"
@@ -72,7 +73,7 @@ Obtain a complete list of all customer subuser.
 * * * * *
 
 {% anchor h2 %}
-Recurring Reset 
+Set Recurring Limits
 {% endanchor %}
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
@@ -81,6 +82,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% parameters reset %}
  {% parameter 'task' 'Yes' 'Must be set to <em>recurring</em>' 'The task required to set the recurring reset' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser you will be applying a recurring reset to' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
  {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The number of credits the customer subuser will be reset to' %}
  {% parameter 'period' 'Yes' 'Must be either daily, weekly, or monthly' 'How often you want SendGrid to reset your customer subusers credits' %}
  {% parameter 'startdate' 'No' 'Date must be in YYYY-mm-dd format' 'The date you want to start resetting the customer subusers credits' %}
@@ -115,6 +117,7 @@ Set a subusers credits to a specified amount.
 {% parameters total %}
  {% parameter 'task' 'Yes' 'Must be set to <em>total</em>' 'Set the credits to the specified amount' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits updated' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
  {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be reset to' %}
 {% endparameters %}
 
@@ -145,6 +148,7 @@ Increment a subusers credits by a specified amount.
 {% parameters increment %}
  {% parameter 'task' 'Yes' 'Must be set to <em>increment</em>' 'Increment the credits by the specified amount' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits incremented' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
  {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be incremented by' %}
 {% endparameters %}
 
@@ -173,8 +177,9 @@ Decrement a subusers credits by a specified amount.
 
 
 {% parameters decrement %}
- {% parameter 'task' 'Yes' 'Must be set to <em>increment</em>' 'Decrement the credits by the specified amount' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>decrement</em>' 'Decrement the credits by the specified amount' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser who will have their credits decremented' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>limit</em>' 'Allows you to access limit functionality' %}
  {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the customer subuser will be decremented by' %}
 {% endparameters %}
 
