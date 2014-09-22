@@ -10,8 +10,6 @@ navigation:
 Retrieve Bounces 
 {% endanchor %}
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
-
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving bounces from' %}
