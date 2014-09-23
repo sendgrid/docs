@@ -15,10 +15,11 @@ Retrieve Invalid Emails
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving invalid emails from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the invalid emails for the specified customer subuser' %}
  {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid email functionality' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -73,10 +74,11 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving invalid emails from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete a invalid email for the specified customer subuser' %}
  {% parameter 'email' 'No' 'Must be a invalid email' 'You must specify the invalid emails to remove' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid email functionality' %}
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com %}
   {% response json %}
 {
   "message": "success"
