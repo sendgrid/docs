@@ -1,0 +1,35 @@
+---
+layout: page
+weight: 0
+title: Customer Provision
+navigation:
+   show: true
+---
+
+{% anchor h2 %}
+Provision 
+{% endanchor %}
+
+Create a SendGrid reseller customer account with a certain plan.
+
+
+{% parameters post %}
+ {% parameter 'partner_id' 'Yes' 'Must be an unique identifier from your side' 'This can be an application id, a user_id, or any other unique identifier of the SendGrid instance on your side'%}
+ {% parameter 'plan' 'Yes' 'Must be the plan that the user selected' 'Based on this the customer will receive their credits and permissions' %}
+ {% parameter 'email' 'No' 'Customer email' 'Used as contact information for our support team'%}
+{% endparameters %}
+
+{% apiv3example post POST https://sendgrid.com/reseller.php/plug/:partner_name/resources partner_id=customer_unique_id&plan=free&email=email%40example.com %}
+  {% v3response %}
+HTTP/1.1 200 OK
+
+{
+  "id": "371",
+  "config": 
+  {
+    "SENDGRID_USERNAME": "customer_unique_id@:partner_name.com",
+    "SENDGRID_PASSWORD": "tvdx1p3c"
+  }
+}
+  {% endv3response %}
+{% endapiv3example %}
