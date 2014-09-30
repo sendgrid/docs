@@ -119,6 +119,7 @@ PHP
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) *by SendGrid* - Official PHP wrapper to send emails through the SendGrid API
 -   [smtpapi-php](http://github.com/sendgrid/smtpapi-php) *by SendGrid*- Official PHP library to create SMTP API headers
 -   [sendgrid-openshift-php](https://github.com/sendgrid/openshift-sendgrid-php) *by SendGrid* - Official PHP wrapper for use with Red Hat OpenShift
+-   [sendgrid-report-php](https://github.com/fcosrno/sendgrid-report-php) *by Francisco Serrano* - PHP wrapper to view and manage SendGrid reports through the SendGrid API
 -   [SendGrid-PHP-Library](https://github.com/alonbendavid/SendGrid-PHP-Library) *by Alon Ben David* - PHP wrapper for the SendGrid API including Marketing Email API
 -   [messaging_sendgrid](http://github.com/josereyero/messaging_sendgrid) *by Jose Reyero* - Drupal 7 plugin that adds bulk messaging capabilities via SendGrid
 -   [codeigniter-sendgrid-newsletter](http://github.com/bold/codeigniter-sendgrid-newsletter) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Marketing Email API
@@ -147,7 +148,7 @@ Ruby
 -   [gatling_gun](http://github.com/okrb/gatling_gun) *by James Edward Gray II* - Simple wrapper over SendGrid's Marketing Email API.
 -   [sendgrid_api](http://github.com/markedmondson/sendgrid_api) *by Mark Edmondson* - Implements an ActionMailer that delivers through the SendGrid Web API.
 -   [sendgrid-ruby](https://github.com/SendGridJP/sendgrid-ruby) *by SendGridJP* - SendGrid rubygem for SendGrid Web API that aims the same functionality with official library.
--   [sendgrid_template_engine_ruby](https://github.com/awwa/sendgrid_template_engine_ruby) *by Wataru Sato* - Ruby wrapper for the SendGrid Template Engine API.
+-   [sendgrid4r](https://github.com/awwa/sendgrid4r) *by Wataru Sato* - Ruby wrapper for the SendGrid Web API v3.
 
 {% anchor h3 %}
 Titanium 

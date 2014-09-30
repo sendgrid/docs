@@ -21,7 +21,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -61,6 +61,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete an unsubscribe record for the specified customer' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>unsubscribes</em>' 'Allows you to access unsubscribe functionality' %}
  {% parameter 'email' 'No' 'Must be an unsubscribe record' 'You must specify the unsubscribe record to remove' %}
 {% endparameters %}
 
@@ -91,6 +92,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% parameters add %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>add</em>' 'This will allow you to add an unsubscribe record for the specified customer' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>unsubscribes</em>' 'Allows you to access unsubscribe functionality' %}
  {% parameter 'email' 'No' 'Must be an unsubscribe record' 'You must specify the unsubscribe record to add' %}
 {% endparameters %}
 
