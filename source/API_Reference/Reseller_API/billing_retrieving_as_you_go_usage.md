@@ -1,10 +1,14 @@
 ---
 layout: page
 weight: 0
-title: Retrieving As-You-Go Usage
+title: Retrieving As-You-Go Usage (deprecated)
 navigation:
    show: true
 ---
+
+{% warning %}
+This endpoint has been deprecated. Please do not use it in new development.
+{% endwarning %}
 
 Retrieve invoices/usages from end users before your scheduled billing date.
 
@@ -14,7 +18,7 @@ Retrieve invoices/usages from end users before your scheduled billing date.
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=current false %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.billing api_user=your_sendgrid_username&api_key=your_sendgrid_password&number=2010010001&task=current %}
   {% response json %}
 {
   "number": "201001000100",
