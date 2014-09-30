@@ -10,8 +10,6 @@ navigation:
 Retrieve Bounces 
 {% endanchor %}
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
-
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving bounces from' %}
@@ -21,7 +19,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -69,7 +67,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving bounces from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete the bounces for the specified user' %}
- {% parameter 'email' 'No' 'Bounce email address you want to delete' 'You must specify the bounced email message to remove' %}
+ {% parameter 'email' 'Yes' 'Bounce email address you want to delete' 'You must specify the bounced email message to remove' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>bounces</em>' 'Allows you to access bounces functionality' %}
 {% endparameters %}
 

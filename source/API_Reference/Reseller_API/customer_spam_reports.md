@@ -19,7 +19,7 @@ Retrieve Spam Reports
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=customer@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -59,7 +59,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving spam reports from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete a spam report for the specified user' %}
- {% parameter 'email' 'No' 'Must be a spam reports' 'You must specify the spam reports to remove' %}
+ {% parameter 'email' 'Yes' 'Must be a spam reports' 'You must specify the spam reports to remove' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>spamreports</em>' 'Allows you to access spam reports functionality' %}
 {% endparameters %}
 
