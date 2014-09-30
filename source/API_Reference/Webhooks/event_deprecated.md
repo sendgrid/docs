@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% warning %}
-V1 and V2 of this webhook are being deprecated. [Version 3]({{root_url}}/API_Reference/Webhooks/event.html) is the recommended option and the only option available to new users</a>. 
+V1 and V2 of this webhook are being deprecated. [Version 3]({{root_url}}/API_Reference/Webhooks/event.html) is the recommended option and the only option available to new users. 
 {% endwarning %}
 
 {% anchor h2 %}
