@@ -158,13 +158,14 @@ All of the above examples can then be combined into one larger JSON string place
 
 {% codeblock lang:perl %}
 
-#!/usr/bin/perl
+#!/usr/local/bin/perl -w
+
 use strict;
 use JSON;
 
-my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com],
-sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>; [ 'sellerSection', 'buyerSection' ] },
-section => { '%sellerSection%' =>; 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
+my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com'],
+sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>[ 'sellerSection', 'buyerSection' ] },
+section => { '%sellerSection%' => 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
 category => 'Orders',
 unique_args => { 'orderNumber' => '12345', 'eventID' => '6789' },
 filters => { 'footer' => {'settings' => {'text/plain' => "Thank you for your business"}}}};
