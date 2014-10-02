@@ -11,6 +11,10 @@ Multifactor authentication applies to website logins. It does not change
 how credentials are used to send email.
 {% endinfo %}
 
+{% info %}
+Two factor authentication does not currently support Multiple Users Credentials.
+{% endinfo %}
+
 * Log in to your SendGrid account like normal.
 
 * On the Account Overview page, click on Account Settings.
