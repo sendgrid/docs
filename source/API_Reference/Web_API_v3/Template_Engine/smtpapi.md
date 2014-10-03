@@ -19,7 +19,7 @@ Example
     "filters": {
         "templates": {
             "settings": {
-                "enabled": 1,
+                "enable": 1,
                 "template_id": "5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f"
             }
         }
@@ -93,7 +93,7 @@ using the SMTP API header:
   "filters": {
     "templates": {
       "settings": {
-        "enabled": 1,
+        "enable": 1,
         "template_id": "60414495-6787-441b-8b08-3979499bba7a"
       }
     }
