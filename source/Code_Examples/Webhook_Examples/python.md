@@ -22,12 +22,15 @@ Hostname: email.sendgrid.biz
 URL: http://sendgrid.biz/parse
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code: 
+  To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code: 
 
 {% codeblock lang:python %}
-@app.route('/parse', methods=('GET', 'POST'))
-def sendgrid_parser():
+from flask import Flask, request
+import simplejson
+app = Flask(__name__)
 
+@app.route('/parse', methods=['POST'])
+def sendgrid_parser():
   # Consume the entire email
   envelope = simplejson.loads(request.form.get('envelope'))
 
@@ -47,7 +50,11 @@ def sendgrid_parser():
     for num in range(1, (num_attachments + 1)):
       attachment = request.files.get(('attachment%d' % num))
       attachments.append(attachment.read())
-      // attachment will have all the parameters expected in a Flask file upload
+      # attachment will have all the parameters expected in a Flask file upload
 
   return "OK"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
 {% endcodeblock %}
