@@ -8,7 +8,7 @@ navigation:
 ---
 
 <div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-<meta itemprop="name" content="{{ page.title }}"><iframe width="420" height="315" src="//www.youtube.com/embed/zsWAOGr_ksQ" frameborder="0" allowfullscreen></iframe>
+<meta itemprop="name" content="{{ page.title }}"><iframe width="420" height="315" src="https://www.youtube.com/embed/zsWAOGr_ksQ" frameborder="0" allowfullscreen></iframe>
 
 </div>
 ### SendGrid and Sendwithus
