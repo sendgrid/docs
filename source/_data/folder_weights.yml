@@ -1,11 +1,10 @@
 ---
-/API_Reference: 90
-/API_Workshop: 40
-/Apps: 50
-/Code_Examples: 80
-/Delivery_Metrics: 60
-/Integrate: 90
-/Marketing_Emails: 70
-/User_Guide: 80
-/Utilities: 90
+/API_Reference: 80
+/Apps: 20
+/Code_Examples: 50
+/Delivery_Metrics: 30
+/Integrate: 70
+/Marketing_Emails: 40
+/User_Guide: 90
+/Utilities: 60
 /index.html: 100

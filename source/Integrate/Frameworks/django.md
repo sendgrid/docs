@@ -3,13 +3,13 @@ layout: page
 weight: 0
 title: Django
 seo:
-  title: Send Email with Django & SendGrid
+  title: Send SMTP Email with Django
   description: View instructions on how to easily send email with Django using SendGrid, by setting up setting up Django's built in mail library.
 navigation:
   show: true
 ---
 
-There is more detailed information about [sending email with Django](https://docs.djangoproject.com/en/dev/topics/email/) on the Django project website.
+There is more detailed information about sending email over SMTP with Django on the [Django project website](https://docs.djangoproject.com/en/dev/topics/email/).
 
 First start by adding the following to **settings.py:** 
 
