@@ -38,16 +38,28 @@ Add one or more emails to a Recipient List.
 
 Add an email recipient to a list:
 
-{% codeblock %}
-#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"address@domain.com","name":"contactName"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json
-{% endcodeblock %}
+{% codeblock %}curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json \
+     -d 'api_user=your_sendgrid_username' \
+     -d 'api_key=your_sendgrid_password' \
+     -d 'list=my_list' \
+     -d 'data={"email":"address@domain.com","name":"contactName"}'{% endcodeblock %}
 
-<p>Add an email recipient with multiple data fields:</p>
-{% codeblock %}#curl -d 'api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;list=my_list&amp;data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json{% endcodeblock %}
+Add an email recipient with multiple data fields:
+
+{% codeblock %}curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json \
+     -d 'api_user=your_sendgrid_username' \
+     -d 'api_key=your_sendgrid_password' \
+     -d 'list=my_list' \
+     -d 'data={"email":"grouch@trashcan.com","name":"Oscar","city":"New York","street":"123 Sesame St"}'{% endcodeblock %}
 
 Add multiple email recipients to a list:
 
-{% codeblock %} \#curl -d 'api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=my_list&data[]={"email":"address1@domain.com","name":"contactName1"}&data[]={"email":"address2@domain.com","name":"contactName2"}' https://api.sendgrid.com/api/newsletter/lists/email/add.json {% endcodeblock %}
+{% codeblock %}curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json \
+     -d 'api_user=your_sendgrid_username' \
+     -d 'api_key=your_sendgrid_password' \
+     -d 'list=my_list' \
+     -d 'data[]={"email":"address1@domain.com","name":"contactName1"}' \
+     -d 'data[]={"email":"address2@domain.com","name":"contactName2"}'{% endcodeblock %}
 
 * * * * *
 
