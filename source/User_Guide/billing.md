@@ -1,6 +1,8 @@
 ---
 layout: page
 weight: 0
+seo:
+  title: Billing and Account Changes
 title: Billing and Account Changes
 navigation:
   show: true

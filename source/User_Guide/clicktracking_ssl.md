@@ -1,6 +1,9 @@
 ---
-title: SSL Enabled Click and Open Tracking 
+seo:
+  title: Click and Open Tracking with SSL Enabled
+title: Click and Open Tracking with SSL Enabled
 layout: page
+weight: 0
 navigation:
   show: true
 ---

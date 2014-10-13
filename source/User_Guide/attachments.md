@@ -1,6 +1,8 @@
 ---
-title: Sending Attachments
-weight: 70
+seo:
+  title: Sending Attachments
+title: Attachments
+weight: 0
 layout: page
 navigation:
   show: true

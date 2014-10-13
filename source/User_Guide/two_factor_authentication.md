@@ -2,6 +2,8 @@
 layout: page
 weight: 0
 title: Two Factor Authentication
+seo:
+  title: Two Factor Authentication
 navigation:
   show: true
 ---

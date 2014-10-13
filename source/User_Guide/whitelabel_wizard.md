@@ -1,13 +1,15 @@
 ---
 layout: page
-weight: 60
+weight: 0
 title: Whitelabel Wizard
+seo:
+  title: Whitelabel Wizard
 navigation:
   show: true
 ---
 
 {% info %}
-This feature is available to customers with Silver, Gold, or Platinum accounts. 
+This feature is available to customers with Silver accounts and higher. 
 {% endinfo %}
 
 Depending on the set of Apps you have chosen, SendGrid can alter or add links to emails. This includes unsubscribe links, click tracking, and open tracking. In addition, SendGrid adds email headers that reference SendGrid's servers so remote servers can verify the authenticity of emails. These links and headers reference the sendgrid.me or sendgrid.com domain.

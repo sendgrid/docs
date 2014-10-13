@@ -1,6 +1,8 @@
 ---
 title: Template Engine Setup Guide
-weight: 50
+seo:
+  title: Template Engine Setup Guide
+weight: 0
 layout: page
 navigation:
   show: true
