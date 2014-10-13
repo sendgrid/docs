@@ -28,7 +28,7 @@ When in doubt, contact your DNS registrar or web hosting service's technical sup
 
 SendGrid allows companies to customize the domain that appears, a process called Whitelabeling. SendGrid does this using a subdomain for your domain. For example, if your domain is EXAMPLE.COM, you might use EMAIL.EXAMPLE.COM, where EMAIL is your sub-domain.
 
-Your first step is to choose a subdomain. Common examples are EMAIL, MAIL, CONTACT, NEWS, NEWSLETTER, but you can make it anything you like. Now you just need to run the Whitelabel Wizard from your account and the wizard will generate the DNS records you need to add to your DNS entries. Below are links to some hosting and domain name registrars that you might be using.
+Your first step is to choose a subdomain. Common examples are EMAIL, EM, MAIL, CONTACT, NEWS, NEWSLETTER, but you can make it anything you like. Now you just need to run the Whitelabel Wizard from your account and the wizard will generate the DNS records you need to add to your DNS entries. Below are links to some hosting and domain name registrars that you might be using.
 
 {% info %}
 The hosting company 1&1 does not support TXT records, so SPF cannot be specified and therefore is not supported by SendGrid. 
