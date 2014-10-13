@@ -34,6 +34,10 @@ Add one or more emails to a Recipient List.
   {% endresponse %}
 {% endapiexample %}
 
+{% info %}
+<code>email</code> and <code>name</code> are required and <em>must</em> be in the JSON string submitted in the data parameter. Further arbitrary keys may also be specified in the JSON string.
+{% endinfo %}
+
 ### Examples
 
 Add an email recipient to a list:
