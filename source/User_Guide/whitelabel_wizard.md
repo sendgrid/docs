@@ -1,7 +1,9 @@
 ---
 layout: page
-weight: 60
+weight: 0
 title: Whitelabel Wizard
+seo:
+  title: Whitelabel Wizard
 navigation:
   show: true
 ---

@@ -1,6 +1,8 @@
 ---
 layout: page
-weight: 80
+weight: 0
+seo:
+  title: Multiple User Credentials
 title: Multiple User Credentials
 navigation:
   show: true

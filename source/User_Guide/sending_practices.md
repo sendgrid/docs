@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Sending Practices and Limitations
 seo:
-  title: Sending Best Practices and & Limitations - User Guide
+  title: Sending Best Practices and Limitations
   description: A guide to sending practices and SendGrid Usage limits. Learn how to best use SendGrid today.
 navigation:
   show: true
