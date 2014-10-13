@@ -1,9 +1,9 @@
 ---
 layout: page
-weight: 95
+weight: 0
 title: SMTP Ports
 seo:
-  title: SMTP Ports - User Guide
+  title: SMTP Ports
   description: "You may connect with SendGrid over a variety of SMTP ports: unencrypted or with TLS on ports 25, 2525, and 587 and via SSL on port 465."
 navigation:
   show: true

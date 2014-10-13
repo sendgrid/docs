@@ -1,6 +1,8 @@
 ---
-title: Managing Unsubscribes 
-weight: 55
+seo:
+  title: Managing Unsubscribes
+title: Managing Unsubscribes
+weight: 0
 layout: page
 navigation:
   show: true

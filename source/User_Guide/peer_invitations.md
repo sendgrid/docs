@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Peer Initiated Invitation Guide
 seo:
-  title: Peer Initiated Invitation Requirements - User Guide
+  title: Peer Initiated Invitation Requirements
   description: A guide to inviting your users to invite their friends to try your product. Learn how to best use SendGrid today.
 navigation:
   show: true

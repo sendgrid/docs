@@ -1,6 +1,8 @@
 ---
+seo:
+  title: Advanced Suppression Manager
 title: Advanced Suppression Manager
-weight: 50
+weight: 0
 layout: page
 navigation:
   show: true

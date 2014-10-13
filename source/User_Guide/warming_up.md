@@ -1,7 +1,9 @@
 ---
 layout: page
-weight: 40
+weight: 0
 title: Warming Up an IP Address
+seo:
+  title: Warming Up an IP Address
 navigation:
   show: true
 ---

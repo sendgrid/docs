@@ -1,6 +1,8 @@
 ---
 layout: page
 weight: 0
+seo:
+  title: Reconfirmation Email Campaigns
 title: Reconfirmation Email Campaigns
 navigation:
   show: true

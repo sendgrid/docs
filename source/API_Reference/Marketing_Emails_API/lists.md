@@ -18,9 +18,7 @@ Create a new Recipient List.
 {% parameters add %}
  {% parameter 'list' 'Yes' 'None' 'Create a Recipient List with this name.' %}
  {% parameter 'name' 'No' 'None' 'Specify the column name for the 'name' associated with email addresses.' %}
- {% parameter '*columnname*' 'No' 'None' 'Specify additional column names. The format needs to be =columnname[*columnname*] will be the replacement tag.' %}
 {% endparameters %}
-
 
 {% apiexample add POST https://api.sendgrid.com/api/newsletter/lists/add list=test789&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -35,6 +33,10 @@ Create a new Recipient List.
 
   {% endresponse %}
 {% endapiexample %}
+
+{% info %}
+Additional columns may be added to a list at any time by specifying new column names when using the <a href="{{root_url}}/API_Reference/Marketing_Emails_API/emails.html#-add">Email Add Endpoint</a>.
+{% endinfo %}
 
 * * * * *
 
