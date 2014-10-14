@@ -19,7 +19,7 @@ The events that can be associated with category include:
 -   Spam Reports
 -   Unsubscribes
 
-The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/Apps/). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}Apps/subscription_tracking.html), [Clicks]({{root_url}}/Apps/click_tracking.html), and [Opens]({{root_url}}/Apps/open_tracking.html) require that the associated App is enabled. Check out the [Apps tab](https://sendgrid.com/app) to see which apps you have enabled.
+The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/Apps/). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}/Apps/subscription_tracking.html), [Clicks]({{root_url}}/Apps/click_tracking.html), and [Opens]({{root_url}}/Apps/open_tracking.html) require that the associated App is enabled. Check out the [Apps tab](https://sendgrid.com/app) to see which apps you have enabled.
 
 {% warning %}
 Categories must be in 7bit encoding using the US-ASCII character set. 
