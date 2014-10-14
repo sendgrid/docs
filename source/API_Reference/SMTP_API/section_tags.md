@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-Sections are an extension of [substitution values]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) that allow a user to specify large text blocks that will be mostly the same that can then be selected and customized on a per user basis. This is useful for sending dynamic content where a large section of the body will be similar across several users, as opposed to duplicating that text each time.
+Section tags are an extension of [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) that allow a user to specify text blocks that will be customized on a per user basis. This is useful for sending dynamic content where large portions of the body will be similar across several users, as opposed to duplicating that text each time.
 
-The format of the SMTP section key has the form:
+The format of the SMTP API section tag has the form:
 
 {% codeblock lang:json %}
 {
@@ -77,3 +77,17 @@ An accompanying X-SMTPAPI JSON header body might look something like this:
  </body>
 </html>
 {% endcodeblock %}
+
+ The final email for John would look like this: 
+
+{% codeblock lang:html %}
+<html>
+ <body>
+   Hi Mr. John,<br>
+   Thanks so much for joining us at our event!
+   Thanks,
+   The SendGrid Team
+ </body>
+</html>
+{% endcodeblock %}
+
