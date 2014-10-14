@@ -21,6 +21,15 @@ The format of the SMTP API section tag has the form:
 
 Typical usage is to have a tag in the body of your email that references a per user substitution tag. This user tag will contain a reference to a section tag. Section text may contain references to per recipient substitution variables.
 
+{% info %}
+How you format your section tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense.
+{% endinfo %}
+
+{% warning %}
+Do not use spaces inside your section tags, e.g. %first name%
+{% endwarning %}
+
+
 ### Section Tag Example
 
 Message body: 
