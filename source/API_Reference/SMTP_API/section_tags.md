@@ -8,6 +8,10 @@ navigation:
 
 Sections are an extension of [substitution values]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) that allow a user to specify large text blocks that will be mostly the same that can then be selected and customized on a per user basis. This is useful for sending dynamic content where a large section of the body will be similar across several users, as opposed to duplicating that text each time.
 
+{% info %}
+How you format your section tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense.
+{% endinfo %}
+
 The format of the SMTP section key has the form:
 
 {% codeblock lang:json %}
