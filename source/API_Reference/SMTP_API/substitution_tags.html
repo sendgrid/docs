@@ -6,16 +6,18 @@ navigation:
   show: true
 ---
 
-<p>Substitution tags allow you to easily generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API you can specify substitution values for each recipient like a first name, that will then be inserted into an opening greeting like: "Dear -firstName-" where each recipient sees -firstName- replaced with their first name. </p>
-
-<p>These values can also be used in more complex scenarios, for example instead of a first name you could also use a customerID and replace that value in a custom URL to take that customer to a page specific to them: </p>
+<p>Substitution tags allow you to easily generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API you can specify substitution values specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
 
 {% codeblock lang:html %}
-<a href="http://sendgrid.com/customerOffer?id=-customerID-">Claim your offer!</a>
+"Dear -firstName-" 
 {% endcodeblock %}
 
-<p>where an ID specific to the customer is appended into the link in place of -customerID-. </p>
-<p>You may also use substitution tags in the subject lines of your emails.</p>
+<p>These values can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
+
+<h4>A customer specific ID can replace -customerID- in the URL within your email</h4>
+{% codeblock lang:html %}
+<a href="http://example.com/customerOffer?id=-customerID-">Claim your offer!</a>
+{% endcodeblock %}
 
 {% info %}
 Substitution tags will work in the Subject line as well as the body of the email. 
@@ -40,7 +42,7 @@ Email HTML content:
        Thank you for your interest in our products. I have set up an appointment
              to call you at -time- EST to discuss your needs in more detail. If you would 
              like to reschedule this call please visit the following link: 
-             <a href="http://sendgrid.com/reschedule?id=-customerID-">reschedule</a>
+             <a href="http://example.com/reschedule?id=-customerID-">reschedule</a>
  
                 Regards,
  
@@ -83,7 +85,7 @@ Email HTML content:
 }
 {% endcodeblock %}
 
-<p>The final email for John would look like this:</p>
+<p>The resulting email for John would look like this:</p>
 {% codeblock lang:html %}
 <html>
   <head></head>
@@ -92,12 +94,32 @@ Email HTML content:
        Thank you for your interest in our products. I have set up an appointment
              to call you at 3:00pm EST to discuss your needs in more detail. If you would 
              like to reschedule this call please visit the following link: 
-             <a href="http://sendgrid.com/reschedule?id=1234">reschedule</a>
+             <a href="http://example.com/reschedule?id=1234">reschedule</a>
  
                 Regards,
  
                 Jared
                 555.555.5555<br>
+    </p>
+  </body>
+</html>
+{% endcodeblock %}
+
+<p>In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:</p>
+{% codeblock lang:html %}
+<html>
+  <head></head>
+  <body>
+    <p>Hello Jane,<br>
+       Thank you for your interest in our products. I have set up an appointment
+             to call you at 5:15pm EST to discuss your needs in more detail. If you would 
+             like to reschedule this call please visit the following link: 
+             <a href="http://example.com/reschedule?id=5678">reschedule</a>
+ 
+                Regards,
+ 
+                Jared
+                777.777.7777<br>
     </p>
   </body>
 </html>
