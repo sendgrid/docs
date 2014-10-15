@@ -14,13 +14,18 @@ These arguments can be added using a JSON string like this:
 {
   "unique_args": {
     "customerAccountNumber": "55555",
-    "activationAttempt": "1"
+    "activationAttempt": "1",
+    "New Argument 1": "New Value 1",
+    "New Argument 2": "New Value 2",
+    "New Argument 3": "New Value 3",
+    "New Argument 4": "New Value 4"
   }
 }
 {% endcodeblock %}
 
-These arguments can then be seen in posts from the SendGrid Event Webhook. The contents of one of these POST would look something like this:
+These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST would look something like this:
 
+<h4>Example Webhook Post Data</h4>
 {% codeblock lang:json %}
 {
   "sg_message_id": "145cea24eb8.1c420.57425.filter-132.3382.5368192A3.0",
@@ -31,11 +36,13 @@ These arguments can then be seen in posts from the SendGrid Event Webhook. The c
   "smtp-id": "<145cea24eb8.1c420.57425@localhost.localdomain>",
   "timestamp": 1399331116,
   "New Argument 2": "New Value 2",
-  "New Argument 3": "New Value 3"
+  "New Argument 3": "New Value 3",
+  "customerAccountNumber": "55555",
+  "activationAttempt": "1"
 }
 {% endcodeblock %}
 
-Unique Arguments will also be shown in the Email Activity tab of your account.
+Unique Arguments will also be shown in the [Email Activity tab](https://sendgrid.com/logs/index) of your account.
 
 To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). An example of this would look like:
 
