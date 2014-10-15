@@ -10,8 +10,9 @@ seo:
   description: The SMTP API gives you advanced control over emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and more. 
 ---
 
-<p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email. An example header looks like this:</p>
+<p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email.</p>
 
+<h4>An example X-SMTPAPI header</h4>
 {% codeblock lang:json %}{
   "category": "newuser"
 }
@@ -25,8 +26,7 @@ The X-SMTPAPI Header
 <p>The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. This header can be added to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message's transaction.</p>
 
 <p>
-	To: An array of addresses to send the message to, optionally including
-  the display name.
+	<b>To:</b> An array of addresses to send the message to, optionally including the display name. <em>See [limitations](#-Requirements-and-Limitations) below.</em>
 </p>
 {% codeblock lang:json %}{
   "to": [
@@ -187,14 +187,10 @@ Requirements and Limitations
 While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs at around 1,000 recipients, as this will better allow for the processing load to be distributed. Further, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
 {% endwarning %}
 
-<p>When setting filters via SMTPAPI, all filter names and setting names must be lowercase.</p>
-
 <p>If you use the multiple recipient functionality of the API, you must not send to multiple recipients with the SMTP protocol as well. Doing so can cause duplicates of the message to be sent.
 </p>
 
 <p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header for you on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. In addition, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
 
-<p>When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted on errors.</p>
-
-<p>For substitution tags, it is best to avoid characters that have special meaning in html, such as <,>, and &. These might end up encoded and will not be properly substituted.</p>
+<p>When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted on errors. More info: [Bounce Forwarding](https://support.sendgrid.com/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address) </p>
 
