@@ -20,7 +20,7 @@ Navigate to **Settings \> Email Settings** in the upper right corner of the Dash
 
 In order to set Email Marketer's outbound mail server to point to SendGrid, click the "Let me specify my own SMTP server details" bubble. From there, input the following authentication details:
 
--   **SMTP Hostname**: smtp.sendgrid.net
+-   **SMTP Hostname**: ssl://smtp.sendgrid.net or tls://smtp.sendgrid.net
 -   **SMTP Username**: [your SendGrid account's username]
 -   **SMTP Password**: [your SendGrid account's password]
 -   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{%20root_url}}/Integrate/index.html)]
