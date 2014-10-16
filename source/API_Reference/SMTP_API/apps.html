@@ -8,14 +8,16 @@ navigation:
 
 <p>Following are the apps that can be specified in the filters section of the X-SMTPAPI header. All filters and setting names must be lowercase.</p>
 
-<p>Please note that if a filter is not specified as being either disabled or enabled in the X-SMTPAPI header, it will default to the state of the app in the "Apps" tab on the website.</p>
+<h2>Tips:</h2>
 
-{% warning %}
-If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all the parameters for the App. If you have the App disabled on the web interface, our system will not pull the settings for the disabled app when you dynamically enable it. For instance, if you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
-{% endwarning %}
+<ul>
+  <li>If you're enabling an App, also called a filter, via SMTPAPI, you are required to define all of the parameters for that App.</li>
+  <li>App enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header</li>
+  <li>If you enable a disabled app, our system will not pull your settings for the disabled app. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.</li>
+  <li>All filter names and setting names must be lowercase.</li>
+</ul>
 
-<p>For more information on the utility of these apps, please check out
-the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
+<p>For more information on the utility of these apps, please check out the <a href="{{root_url}}/Apps/">Apps</a> section.</p>
 
 {% info %}
 Some Apps are not listed here, because they cannot be defined on a per-message basis. To update these other Apps, please refer to the
