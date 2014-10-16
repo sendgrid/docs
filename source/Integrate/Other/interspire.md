@@ -14,9 +14,7 @@ Interspire's [Email Marketer](http://www.interspire.com/emailmarketer/) is a po
 
 First things first, you'll need to log into your Email Marketer account. Once you've done that you can set the application's outbound mail server to point to SendGrid, allowing you to send the mail to us so we can send it to the end recipient.
 
-Navigate to **Settings \> Email Settings** in the upper right corner of the Dashboard. Once inside the Email Settings page you'll see the "Mail Server Details" header near the bottom of the page:
-
-![]({{root_url}}/images/interspire.png)
+Navigate to **Settings \> Email Settings** in the upper right corner of the Dashboard. Once inside the Email Settings page you'll see the "Mail Server Details" header near the bottom of the page.
 
 In order to set Email Marketer's outbound mail server to point to SendGrid, click the "Let me specify my own SMTP server details" bubble. From there, input the following authentication details:
 
