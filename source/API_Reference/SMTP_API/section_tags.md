@@ -21,6 +21,14 @@ The format of the SMTP API section tag has the form:
 
 Typical usage is to have a substitution tag in the body of your email that contains a reference to a section tag in it's value parameter.  Section tag values may also contain references to per recipient substitution variables. See [Section Tag Example Explained](#-Section-Tag-Example-Explained) below.
 
+{% info %}
+How you format your section tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense.
+{% endinfo %}
+
+{% warning %}
+Do not use spaces inside your section tags, e.g. %first name%
+{% endwarning %}
+
 {% anchor h2 %}
 Section Tag Example
 {% endanchor %}
@@ -67,7 +75,7 @@ An accompanying X-SMTPAPI JSON header body might look something like this:
 }
 {% endcodeblock %}
 
-The final email for Jane would look like this: 
+ The final email for Jane would look like this: 
 
 {% codeblock lang:html %}
 <html>
@@ -80,7 +88,7 @@ The final email for Jane would look like this:
 </html>
 {% endcodeblock %}
 
-The final email for John would look like this: 
+ The final email for John would look like this: 
 
 {% codeblock lang:html %}
 <html>
