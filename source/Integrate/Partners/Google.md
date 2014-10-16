@@ -12,9 +12,9 @@ Using Google’s App Engine or Compute Engine? Here are a few examples of how to
 App Engine Examples
 {% endanchor %}
 
-1.[Python](https://developers.google.com/appengine/docs/python/mail/sendgrid)
-2.[Java](https://developers.google.com/appengine/docs/java/mail/sendgrid)
-3.[PHP](https://developers.google.com/appengine/docs/php/mail/sendgrid)
+1. [Python](https://developers.google.com/appengine/docs/python/mail/sendgrid)
+2. [Java](https://developers.google.com/appengine/docs/java/mail/sendgrid)
+3. [PHP](https://developers.google.com/appengine/docs/php/mail/sendgrid)
 
 {% anchor h3 %}
 Compute Engine
