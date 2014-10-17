@@ -8,6 +8,14 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Blocks list.
 
+{% info %}
+You can live test these API endpoints with the "Try It" button for each endpoint on this page.
+{% endinfo %}
+
+{% warning %}
+<strong>"Try It" IS NOT A SANDBOX</strong><br />Using the "Try It" button makes live requests against your account.
+{% endwarning %}
+
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -95,8 +103,8 @@ count
 {% endanchor %}
 {% parameters count %} 
   
-  {% parameter start_date false 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start counting from.' %}  
-  {% parameter end_date false 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to start counting from.' %}  
+  {% parameter start_date false 'Date must be in YYYY-MM-DD format and be before the end_date parameter.' 'Optional date to start counting from.' %}  
+  {% parameter end_date false 'Date must be in YYYY-MM-DD format and be after the start_date parameter.' 'Optional date to start counting from.' %}  
   {% parameter type false 'hard or soft' 'The type of bounce to count.' %}
 {% endparameters %}
 
