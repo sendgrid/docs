@@ -26,7 +26,7 @@ Any changes you make to DNS can immediately affect your client's ability to reac
 When in doubt, contact your DNS registrar or web hosting service's technical support department. All information in this document complies with the DNS standards, but some registrars and web hosting providers handle things differently. 
 {% endinfo %}
 
-SendGrid allows companies to customize the domain that appears, a process called Whitelabeling. SendGrid does this using a subdomain for your domain. For example, if your domain is EXAMPLE.COM, you might use EMAIL.EXAMPLE.COM, where EMAIL is your sub-domain.
+SendGrid allows companies to customize the domain that appears, a process called Whitelabeling. SendGrid does this using a subdomain for your domain. For example, if your domain is EXAMPLE.COM, you might use EM.EXAMPLE.COM, where EM is your sub-domain.
 
 Your first step is to choose a subdomain. Common examples are EMAIL, EM, MAIL, CONTACT, NEWS, NEWSLETTER, but you can make it anything you like. Now you just need to run the Whitelabel Wizard from your account and the wizard will generate the DNS records you need to add to your DNS entries. Below are links to some hosting and domain name registrars that you might be using.
 
@@ -121,7 +121,7 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
          <th>value</th>
       </tr>
       <tr>
-         <td>email.example.com.</td>
+         <td>em.example.com.</td>
          <td>CNAME</td>
          <td>sendgrid.net.</td>
       </tr>
@@ -136,7 +136,7 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
          <td>dkim.sendgrid.net.</td>
       </tr>
       <tr>
-         <td>smtpapi._domainkey.email.example.com.</td>
+         <td>smtpapi._domainkey.em.example.com.</td>
          <td>CNAME</td>
          <td>dkim.sendgrid.net.</td>
       </tr>
@@ -163,7 +163,7 @@ If your DNS server does not allow underscores in CNAMES you will have problems a
          <td>See Below.</td>
       </tr>
       <tr>
-         <td>smtpapi._domainkey.email.example.com.</td>
+         <td>smtpapi._domainkey.em.example.com.</td>
          <td>TXT</td>
          <td>See Below.</td>
       </tr>
@@ -177,7 +177,7 @@ DomainKey Value:
 Dedicated IP Setup 
 {% endanchor %}
 
-SendGrid allows you to have your own dedicated IP address to help build your own reputation. These IPs need to be mapped to real names. SendGrid handles the mapping of an IP to a name, reverse DNS records (RDNS), and expects the mapping of the name to match the IP in the RDNS record. Please use the Whitelabel Wizard or contact support for the IPs and the names needed to be setup. In this case, an IP of 192.168.2.1 has been given the name o1.email.domain.com. SendGrid assigns the mapping of 192.168.2.1 to o1.email.example.com, and the following A record is needed to map o1.email.domain.com to 192.168.2.1:
+SendGrid allows you to have your own dedicated IP address to help build your own reputation. These IPs need to be mapped to real names. SendGrid handles the mapping of an IP to a name, reverse DNS records (RDNS), and expects the mapping of the name to match the IP in the RDNS record. Please use the Whitelabel Wizard or contact support for the IPs and the names needed to be setup. In this case, an IP of 192.168.2.1 has been given the name o1.em.domain.com. SendGrid assigns the mapping of 192.168.2.1 to o1.em.example.com, and the following A record is needed to map o1.em.domain.com to 192.168.2.1:
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -187,7 +187,7 @@ SendGrid allows you to have your own dedicated IP address to help build your own
          <th>value</th>
       </tr>
       <tr>
-         <td>o1.email.example.com.</td>
+         <td>o1.em.example.com.</td>
          <td>A</td>
          <td>192.168.2.1</td>
       </tr>
