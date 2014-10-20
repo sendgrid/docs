@@ -22,7 +22,6 @@ If you are using Ruby without a framework, please utilize [these instructions](h
 For email sending only, you can [utilize Action Mailer](http://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html), or for more advanced functionality, you can use this [Ruby gem](https://github.com/stephenb/sendgrid).
 
 We have a [sample app on Github](https://github.com/sendgrid/sendgrid-engine-yard-ruby) that demonstrates sending an email via SendGrid using ActionMailer and receiving an email using our <a href="http://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse</a> webhook. 
-</ol>
 
 {% anchor h3 %}
 Create/Configure Your Engine Yard Instance
