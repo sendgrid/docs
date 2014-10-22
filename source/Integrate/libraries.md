@@ -26,6 +26,7 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) - Official Perl library
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) - Official PHP library
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) - Official Python library
+-   [sendgrid-ruby](http://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
 -   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) - Official Titanium wrapper
 
 The following official libraries are mantained by SendGrid to create [SMTP API Headers]({{root_url}}/API_Reference/SMTP_API/index.html), they are included in the above official libraries.
@@ -36,6 +37,7 @@ The following official libraries are mantained by SendGrid to create [SMTP API H
 -   [smtpapi-nodejs](http://github.com/sendgrid/smtpapi-nodejs) - Official NodeJS SMTP API library
 -   [smtpapi-php](http://github.com/sendgrid/smtpapi-php) - Official PHP SMTP API library
 -   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) - Official Python SMTP API library
+-   [smtpapi-ruby](http://github.com/sendgrid/smtpapi-ruby) - Official Ruby SMTP API library
 
 {% info %}
 If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP 
