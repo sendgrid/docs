@@ -44,7 +44,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 
 Unique Arguments will also be shown in the [Email Activity tab](https://sendgrid.com/logs/index) of your account.
 
-To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). An example of this would look like:
+To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html). An example of this would look like:
 
 {% codeblock lang:json %}
 {
