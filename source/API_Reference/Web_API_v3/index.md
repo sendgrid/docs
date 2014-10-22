@@ -259,7 +259,7 @@ Content-Type: application/json
 Status Codes
 {% endanchor %}
 
-Below is a table description of the various status codes we corrently
+Below is a table description of the various status codes we currently
 support against resources.
 
 <table class="table table-bordered table-striped">
@@ -281,6 +281,9 @@ support against resources.
   </tr>
   <tr>
     <td>401</td><td>Requires authentication</td>
+  </tr>
+  <tr>
+    <td>429</td><td>Too Many Requests</td>
   </tr>
   <tr>
     <td>500</td><td>Internal server error</td>
