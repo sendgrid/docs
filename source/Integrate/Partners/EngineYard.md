@@ -23,7 +23,6 @@ For email sending only, you can [utilize Action Mailer](http://sendgrid.com/docs
 
 We have a [sample app on Github](https://github.com/sendgrid/sendgrid-engine-yard-ruby) that demonstrates sending an email via SendGrid using ActionMailer and receiving an email using our <a href="http://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse</a> webhook. 
 
-
 {% anchor h3 %}
 Create/Configure Your Engine Yard Instance
 {% endanchor %}
