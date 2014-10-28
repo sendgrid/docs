@@ -10,7 +10,7 @@ If you are using Microsoft’s cloud platform you can easily integrate with Send
 
 {% anchor h2 %}
 Code Examples
-{% anchor h2 %}
+{% endanchor %}
 
 1. [PHP](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-php-how-to-send-email/)
 2. [Node.js](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-nodejs-how-to-send-email/)
@@ -21,5 +21,5 @@ Code Examples
 
 {% anchor h2 %}
 Still have questions?
-{% anchor h2 %}
+{% endanchor %}
 Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here](https://sendgrid.com/blog/?s=Azure&submit=). 
