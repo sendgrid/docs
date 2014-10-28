@@ -15,6 +15,7 @@ App Engine Examples
 1. [Python](https://developers.google.com/appengine/docs/python/mail/sendgrid)
 2. [Java](https://developers.google.com/appengine/docs/java/mail/sendgrid)
 3. [PHP](https://developers.google.com/appengine/docs/php/mail/sendgrid)
+4. [Go](https://cloud.google.com/appengine/docs/go/mail/sendgrid)
 
 {% anchor h3 %}
 Compute Engine
