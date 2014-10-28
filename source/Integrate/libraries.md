@@ -53,6 +53,8 @@ Open source library contributions from the awesome SendGrid community.
 If you create a library, please let us know, by [adding your library to this page](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}). 
 {% endinfo %}
 
+-   [sendgrid-android](https://github.com/danysantiago/sendgrid-android) - The Android library for SendGrid by [DannySantiago](https://github.com/danysantiago)
+
 {% anchor h2 %}
 Web API Libraries 
 {% endanchor %}
