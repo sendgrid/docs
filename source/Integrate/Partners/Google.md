@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Using Google’s App Engine or Compute Engine? Here are a few examples of how to implement SendGrid to help improve deliverability and provide analytics for your project.
+Using Google’s App Engine or Compute Engine? Here are a few examples of how to implement SendGrid to help improve deliverability and provide analytics for your projects.
 
 {% anchor h2 %}
 App Engine Examples
@@ -16,7 +16,7 @@ App Engine Examples
 2. [Java](https://developers.google.com/appengine/docs/java/mail/sendgrid)
 3. [PHP](https://developers.google.com/appengine/docs/php/mail/sendgrid)
 
-{% anchor h3 %}
+{% anchor h2 %}
 Compute Engine
 {% endanchor %}
 
