@@ -13,7 +13,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         rgb(0,112,205);
+@brand-primary:         rgb(0,0,0);
 @brand-success:         rgb(72,142,136);
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -39,13 +39,13 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Proxima N W15 Reg", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  "Source Sans Pro", Helvetica, Arial, sans-serif;
+@font-family-serif:       "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-monospace:   "Source Code PRo", Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.15)); // ~16px
 @font-size-small:         ceil((@font-size-base * 0.75)); // ~10px
 
@@ -62,7 +62,7 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    "Proxima N W15 Smbd", Helvetica, Arial, sans-serif;
+@headings-font-family:    "PT Sans", Helvetica, Arial, sans-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
@@ -747,7 +747,7 @@
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-@breadcrumb-bg:                 #f5f5f5;
+@breadcrumb-bg:                 #ffffff;
 //** Breadcrumb text color
 @breadcrumb-color:              #ccc;
 //** Text color of current page in the breadcrumb
