@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'roboto_slablight';
+    src: url('RobotoSlab-Light-webfont.eot');
+    src: url('RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('RobotoSlab-Light-webfont.woff') format('woff'),
+         url('RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('RobotoSlab-Light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
