@@ -1,51 +1,26 @@
 ---
-layout: none
+layout: page
+weight: 0
+title: Uh Oh! - Error 404
+showTitle: false
+breadcrumbs: false
+hideFeedback: true
 navigation:
   show: false
 ---
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="title" content="Page Not Found" />
-<meta name="description" content="Scalable email delivery for transactional email" />
-<meta name="keywords" content="email, scalable, service, smtp, api, send, grid, transactional, deliverability, statistics, cloud" />
-<meta name="language" content="en" />
-<meta name="robots" content="index, follow" />
-    <title>SendGrid - Email Delivery. Simplified.</title>
-    <style>
-body { background:url(/images/error_bg.jpg) repeat-x top #8ecafa; }
-#wrap { width:1030px; height:1000px; margin:0 auto; background:url(/images/postman.jpg) center no-repeat; }
-#intro { width:700px; float:left; font-family:Helvetica,arial,sans-serif; color:#65b4df; letter-spacing:-4px; }
-h1 { font-size:85px; }
-h2 { font-size:50px; margin-top:-60px; *margin-top:0px }
-p { width:650px; font-size:25px; letter-spacing:-2px; margin-top:-30px; line-height:1.4; *margin-top: 0px; }
-a, a:visited { color:#65b4df; padding:3px; background:#fff69d; }
-a:hover { color:#418ab1; text-decoration:none; background:none; padding:3px; }
-#logo { width:242px; height:70px; float:right; }
-#logo img { border:none;  margin-top:60px; }
-#logo a, #logo a:hover, #logo a:visited { background:none; }
-    </style>
-</head>
-<body>
-<div id="wrap">
-	<div id="intro">
-		<h1>Uh-Oh! (Error 404)</h1>
-    <h2>The page you are trying to access does not exist.</h2>		
+<div id="errorwrap">
+
+    <h2>The page you are trying to access does not exist.</h2>
 		<form action="{{root_url}}/search.html" method="get">
-			<p style="display:inline;">Try searching for what you are looking for: </p><input style="font-size:22px;" input name="q" results="0" placeholder="Search"/a>
+			<p style="display:inline;">Try searching for what you are looking for: </p><input style="font-size:22px;" input name="q" results="0" placeholder="Search"/>
 	      </form>
 
 		<p>
 		<br/><br/>
 		</p>
 		
-		<p>Otherwise, let's go back to the<a href="{{root_url}}/index.html">Home</a> page instead. If you believe you have reached this page by mistake, please contact us at <a href="mailto:help@sendgrid.com">help@sendgrid.com</a>
-                </p>
-	</div>
-	<div id="logo">
-    <a href="/"><img alt="SendGrid" title="SendGrid" src="{{root_url}}/images/sendgrid-logo.png"/></a>        </div>
+		<p>
+            Otherwise, let's go back to the<a href="{{root_url}}/index.html">Home</a> page instead. If you believe you have reached this page by mistake, please contact us at <a href="mailto:help@sendgrid.com">help@sendgrid.com</a>
+        </p>
 </div>
-</body>
-</html>
