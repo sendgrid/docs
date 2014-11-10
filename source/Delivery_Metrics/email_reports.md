@@ -39,7 +39,7 @@ The Email Reports tab of the website allows you to view logs of all your bounced
 
 With the exception of the Block list, all emails listed on these lists will be dropped from any future attempts for delivery, this is because redelivering emails to these addresses will most likely be unsuccessful, and definitely negatively impact your Sender Reputation.
 
-You can also control the way bounces are dealt with for your account via a settings button available from the [Bounce List page](http://sendgrid.com/bounces).
+You can also control the way bounces are dealt with for your account via a settings button available from the [Bounce List page](https://sendgrid.com/bounces).
 
 ![]({{root_url}}/images/email_reports.png)
 

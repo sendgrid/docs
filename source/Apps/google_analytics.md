@@ -64,7 +64,7 @@ Settings
 {% anchor h2 %}
 Example 
 {% endanchor %}
-{% codeblock %} http://sendgrid.com/?utm_source=sendgrid&utm_medium=email&utm_term=variationC&utm_content=newsletter4&utm_campaign=flagshipproduct {% endcodeblock %}
+{% codeblock %} https://sendgrid.com/?utm_source=sendgrid&utm_medium=email&utm_term=variationC&utm_content=newsletter4&utm_campaign=flagshipproduct {% endcodeblock %}
 
 Settings may be changed through:
 

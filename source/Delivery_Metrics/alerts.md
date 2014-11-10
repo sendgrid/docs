@@ -8,7 +8,7 @@ navigation:
 
 SendGrid can send an email alert to you at a frequency you desire for several types of events.
 
-You can access this feature on the [Account Overview](http://sendgrid.com/account/overview) page when you login. Select the [Alert Settings](http://sendgrid.com/alerts) link to begin and then [Add New Alert](http://sendgrid.com/alerts/add) link to add a new Alert.
+You can access this feature on the [Account Overview](https://sendgrid.com/account/overview) page when you login. Select the [Alert Settings](https://sendgrid.com/alerts) link to begin and then [Add New Alert](https://sendgrid.com/alerts/add) link to add a new Alert.
 
 Following are the various Alert Types:
 

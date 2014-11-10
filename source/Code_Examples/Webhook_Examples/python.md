@@ -12,7 +12,7 @@ Parse Webhook
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse. In this example we wil be using Python the Flask framework.
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](http://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz

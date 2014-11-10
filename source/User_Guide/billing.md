@@ -8,7 +8,7 @@ navigation:
   show: true
 ---
 
-To view your account and billing information, first sign in to your account at [SendGrid.com](http://sendgrid.com). If you run into any billing issues, please contact our [Support department](http://support.sendgrid.com).
+To view your account and billing information, first sign in to your account at [SendGrid.com](https://sendgrid.com). If you run into any billing issues, please contact our [Support department](http://support.sendgrid.com).
 
 {% anchor h2 %}
 View Invoices / Billing History 

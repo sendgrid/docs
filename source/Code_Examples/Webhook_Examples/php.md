@@ -10,19 +10,19 @@ navigation:
 Parse Webhook 
 {% endanchor %}
 
-In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.com/email.php.
+In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to https://sendgrid.com/email.php.
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](http://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz
 {% endcodeblock %}
 
 {% codeblock %}
-URL: http://sendgrid.com/email.php
+URL: https://sendgrid.com/email.php
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at http://sendgrid.com/email.php: 
+ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at https://sendgrid.com/email.php: 
 
 {% codeblock lang:php %}
 <?php
