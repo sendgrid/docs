@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'pt_sans_narrowregular';
+    src: url('PTN57F-webfont.eot');
+    src: url('PTN57F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTN57F-webfont.woff') format('woff'),
+         url('PTN57F-webfont.ttf') format('truetype'),
+         url('PTN57F-webfont.svg#pt_sans_narrowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

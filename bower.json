@@ -1,13 +1,13 @@
 {
   "name": "docs",
   "version": "0.0.0",
-  "homepage": "https://github.com/sendgrid/docs",
+  "homepage": "https://github.com/coverify/vlang-docs",
   "authors": [
     ""
   ],
   "description": "SendGrid's Documentation",
   "keywords": [
-    "sendgrid",
+    "vlang",
     "docs",
     "documentation",
     "jekyll"

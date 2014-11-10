@@ -1,4 +1,4 @@
--host  sendgrid.com/docs
+-host  vlang.org/docs
 -root  public
 -doc   linklint_logs
 -index index.html index.cgi

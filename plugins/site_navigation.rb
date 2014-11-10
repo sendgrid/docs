@@ -77,15 +77,18 @@ module Jekyll
           name = base[1..-1]
           if name.index('.') != nil
             icon_name = @nodes[name]["icon"]
+            if icon_name != nil && icon_name[0..1] == "fa"
+              icon_name += " fa"
+            end
             name = @nodes[name]["title"]
           end     
                   
           li_class = ""
           if base == @page_url 
             li_class = "active"
-            if icon_name
-              icon_name = icon_name + " icon-white"
-            end
+            # if icon_name
+            #   icon_name = icon_name + " icon-white"
+            # end
           end
 
           icon_html = "<span class=\"#{icon_name}\"></span>" unless icon_name.nil?
@@ -116,9 +119,9 @@ module Jekyll
           li_class = ""
 
           if @page_url.index(base + '/')
-            list_class = "collapsibleListOpen"
+            list_class = "collapsibleListOpen fa fa-minus-square"
           else
-            list_class = "collapsibleListClosed"
+            list_class = "collapsibleListClosed fa fa-plus-square"
           end
           
           if href == @page_url
@@ -131,13 +134,17 @@ module Jekyll
             icon_name = @folder_icons[base]
             
             icon_html = icon_name.nil? ? "" : "<span class=\"#{icon_name}\"></span>" 
-            li = "<li id=\"node-#{id}\" class=\"parent #{list_class}\"><div class=\"subtree-name\">#{icon_html}#{name}</div>"
+            li = "<li id=\"node-#{id}\" class=\"parent subtree-name #{list_class}\"><span class=\"subtree-name-str\">#{icon_html}#{name}</span>"
           else
             icon_name = @nodes[name]["icon"]
-            
-            if icon_name && li_class=="active"
-              icon_name = icon_name + " icon-white"
+
+            if icon_name != nil && icon_name[0..1] == "fa"
+              icon_name += " fa"
             end
+            
+            # if icon_name && li_class=="active"
+            #   icon_name = icon_name + " icon-white"
+            # end
             
             icon_html = icon_name.nil? ? "<i class=\"#{icon_name}\"></i>" : "" 
             li = "<li class=\"#{li_class}\"><a href=\"#{URI::encode href}\">#{icon_html}#{name}</a></li>"
