@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sendgrid/docs.git"
+    "url": "git://github.com/coverify/vlang-docs.git"
   },
   "keywords": [
-    "sendgrid",
+    "vlang",
     "docs",
     "documentation",
     "jekyll"
@@ -23,6 +23,6 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sendgrid/docs/issues"
+    "url": "https://github.com/coverify/vlang-docs/issues"
   }
 }

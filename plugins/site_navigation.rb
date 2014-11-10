@@ -134,7 +134,7 @@ module Jekyll
             icon_name = @folder_icons[base]
             
             icon_html = icon_name.nil? ? "" : "<span class=\"#{icon_name}\"></span>" 
-            li = "<li id=\"node-#{id}\" class=\"parent subtree-name #{list_class}\">#{icon_html}#{name}"
+            li = "<li id=\"node-#{id}\" class=\"parent subtree-name #{list_class}\"><span class=\"subtree-name-str\">#{icon_html}#{name}</span>"
           else
             icon_name = @nodes[name]["icon"]
 

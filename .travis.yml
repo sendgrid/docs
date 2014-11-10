@@ -47,5 +47,5 @@ notifications:
     template:
     - '<a href="https://travis-ci.org/%{repository}/builds/%{build_id}">Docs Build
       %{build_number}</a> on branch <i>%{branch}</i> by %{author}: <strong>%{message}</strong>
-      <a href="https://github.com/sendgrid/docs/commits/%{commit}">View on GitHub</a>'
+      <a href="https://github.com/coverify/vlang-docs/commits/%{commit}">View on GitHub</a>'
     format: html
