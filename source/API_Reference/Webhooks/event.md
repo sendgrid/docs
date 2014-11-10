@@ -13,7 +13,7 @@ Available to Bronze and higher packages or to our free demo accounts.
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. Common uses of this data are to remove unsubscribes, react to spam reports, [determine unengaged recipients](https://sendgrid.com/blog/infer-engagement-with-the-event-api/), identify bounced email addresses or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
 {% info %}
-If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event API](https://.sendgrid.com/blog/leveraging-sendgrids-event-api/). 
+If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event API](https://sendgrid.com/blog/leveraging-sendgrids-event-api/). 
 {% endinfo %}
 
 {% info %}
