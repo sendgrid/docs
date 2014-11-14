@@ -22,11 +22,9 @@ _transactional_ and _marketing_.
 Then, when sending marketing emails, you may specify that the _marketing_ pool be used, so that your transactional emails maintain their own reputation.
 
 {% codeblock lang:json %}
-{
-  "ip_pool": [
-    "marketing"
-  ]
-}
+
+{"to": ["destination.com"],"ip_pool": "pool_name"}
+
 {% endcodeblock %}
 
 {% warning %}
