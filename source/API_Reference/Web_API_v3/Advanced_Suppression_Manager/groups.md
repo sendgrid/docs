@@ -86,8 +86,8 @@ PATCH
 Update a suppression group.
 
 {% parameters patch %}
-  {% parameter name false 'String, may not share its name with any other suppression group in your account.' 'The name of the new suppression group.' %}
-  {% parameter description false 'String' 'A description of your suppression group (for your reference)' %}
+  {% parameter name false 'String, may not share its name with any other suppression group in your account.' 'The name of the new suppression group. Limit of 30 charaters.' %}
+  {% parameter description false 'String' 'A description of your suppression group. Limit of 100 characters.' %}
 {% endparameters %}
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/asm/groups/:group_id name=Item+Suggestions&description=Suggestions+for+items+our+users+might+like. %}
@@ -118,5 +118,8 @@ global suppression list.
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/asm/groups/:group_id %}
   {% v3response %}
 HTTP/1.1 204 NO CONTENT (OK)
+  {% endv3response %}
+  {%v3response %}
+hTTP/1.1 5xx Error of Some Type
   {% endv3response %}
 {% endapiv3example %}
