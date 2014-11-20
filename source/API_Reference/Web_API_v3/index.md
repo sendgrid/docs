@@ -198,6 +198,10 @@ In this example, we will display an example paginated example. In the
 resource documentation, we will only provide the bolded list of
 available parameters.
 
+{% info %}
+When information is batched, a <a href="http://tools.ietf.org/html/rfc5988">Link Header</a> will be provided in the response.
+{% endinfo %}
+
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
 {% endcodeblock %}
@@ -216,6 +220,7 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
     <td>The number of records to skip</td>
   </tr>
 </table>
+
 
 {% anchor h3 %}
 Search & Parameters
