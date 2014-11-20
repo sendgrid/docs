@@ -134,8 +134,7 @@ Get the Settings Of An App
   {% parameter name true '' 'The name of the app for which to retrieve settings.' %}
 {% endparameters %}
 
-{% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings
-api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
+{% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
   "settings": [
