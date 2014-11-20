@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+{% warning %} This app is available to customers with [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing). {% endwarning %}
+
 Activating this App allows you to specify an email address to which spam reports are forwarded.
 
 ![]({{root_url}}/images/forward_spam.png "sgapp_forwardspam")
