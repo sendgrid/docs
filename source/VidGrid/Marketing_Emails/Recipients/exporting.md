@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 500
+weight: 0
 title: Exporting Your Recipient List
 breadcrumbs: true
 navigation:

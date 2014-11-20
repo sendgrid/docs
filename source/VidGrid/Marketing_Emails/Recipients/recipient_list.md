@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 500
+weight: 1
 title: Recipient Lists
 breadcrumbs: true
 navigation:
