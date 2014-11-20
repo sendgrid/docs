@@ -41,7 +41,7 @@ Receive Inbound Parse Data
 
 Before you can receive data through the Inbound Parse Webhook, you will need to follow the [instructions for making changes to your MX records]({{root_url}}/API_Reference/Webhooks/parse.html) in your DNS setup.
 
-Once that has been completed you can [setup your Inbound Parse](http://sendgrid.com/developer/reply). In this case, you need to add your RequestBin URL as the URL to POST to.
+Once that has been completed you can [setup your Inbound Parse](https://sendgrid.com/developer/reply). In this case, you need to add your RequestBin URL as the URL to POST to.
 
 {% anchor h3 %}
 Seeing the results 

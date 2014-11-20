@@ -25,7 +25,7 @@ Our 2012 study revealed that 79% of web applications rank transactional email as
 
 Because transactional email is so desired, you want to make sure that it consistently reaches your customers’ inboxes. In order to ensure strong email deliverability, rely on a trusted cloud-email service like SendGrid.
 
-SendGrid’s [transactional email platform](http://sendgrid.com/transactional-email) provides:
+SendGrid’s [transactional email platform](https://sendgrid.com/transactional-email) provides:
 
 * Robust email deliverability features: including authentication, reputation monitoring, dedicated IP addresses, and more
 * Easy Integration: through flexible web and SMTP APIs plus a simple SMTP relay set-up
@@ -34,4 +34,4 @@ SendGrid’s [transactional email platform](http://sendgrid.com/transactional-em
 
 Transactional email is an incredibly effective communication tool that can help drive revenue, reduce support costs, and build customer loyalty. As the most desired and expected form of email communication, transactional email can help grow your business and should be an integral component of any customer communication program.
 
-To learn more about how to maximize your transactional email program, read our free guide [Leveraging Transactional Email for Success](http://sendgrid.com/resources/what-is-transactional-email?mc=Direct&mcd=email_library).
+To learn more about how to maximize your transactional email program, read our free guide [Leveraging Transactional Email for Success](https://sendgrid.com/resources/what-is-transactional-email?mc=Direct&mcd=email_library).
