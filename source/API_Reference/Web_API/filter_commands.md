@@ -107,7 +107,7 @@ Setup App
 
 Change application settings. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
 
-{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com false %}
+{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=example@example.com false %}
   {% response json %}
 {
   "message": "success"
@@ -134,13 +134,13 @@ Get the Settings Of An App
   {% parameter name true '' 'The name of the app for which to retrieve settings.' %}
 {% endparameters %}
 
-{% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
+{% apiexample getsettings GET https://sendgrid.com/api/filter.getsettings
+api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
-  "message": "success",
   "settings": [
     {
-      "bcc": "nick@sendgrid.com"
+      "email": "example@example.com"
     }
   ]
 }
