@@ -444,22 +444,13 @@ Filter: <code>opentrack</code>
 <h4>Example X-SMTPAPI Header Value</h4>
 {% codeblock lang:json %}
 {
-    "filters": [
-        {
-            "clicktrack": {
-                "settings": {
-                    "enable": 1
-                }
-            }
-        },
-        {
-            "opentrack": {
-                "settings": {
-                    "enable": 1
-                }
-            }
-        }
-    ]
+  "filters" : {
+    "opentrack" : {
+      "settings" : {
+        "enable" : 1
+      }
+    }
+  }
 }
 {% endcodeblock %}
 
@@ -653,21 +644,6 @@ This app is our original Email Template app, today we have a more full featured 
       "settings" : {
         "enable" : 1,
         "text/html" : "<html><head></head><body bgcolor='pink'><div style='width:200px' bgcolor='#FFF'><% body %></div></body></html>"
-      }
-    }
-  }
-}
-{% endcodeblock %}
-
-(% info %)
-See below for the correct syntax when using 2 or more filters in a single header. This example shows how to turn off click and open tracking for an email. 
-(% endinfo %)
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "clicktrack" : {
-      "settings" : {
-        "enable" : 1
       }
     }
   }
