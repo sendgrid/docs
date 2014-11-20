@@ -12,7 +12,7 @@ Point and Click Setup in Windows Azure
 
 You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We’ll get to all three of these in this tutorial.
 
-To start, create a SendGrid account from the management portal: 
+To start, create a SendGrid account from the management portal:
 
 1.	Click NEW at the bottom left
 <br/>
@@ -73,9 +73,9 @@ While we’re waiting for DNS to be ready, we can prepare your SendGrid Incoming
 4.	Click “Parse Incoming Emails” on the right and you’ll see some fields to fill out
 ![Click]({{root_url}}/images/azure_8.png)
 5.	Fill in the values you’ve used for your hostname and URL. For example:
-	
+
 	* Hostname: `playlist.example.com`
-	
+
 	* URL: `http://website.azurewebsites.net/email`
 6.	Click “Add host & URL”
 
@@ -132,10 +132,10 @@ Open up your command line on your local machine and prepare it for code:
 3.	`cd playlist.sendgriddemos.com`
 4.	`git remote add azure git_url`
 
-	* This is the long URL you saved from Windows Azure after 
+	* This is the long URL you saved from Windows Azure after
 setting up source control.
 5.	`git push azure master`
-	
+
 	* This is the command that pushes this code to Azure cloud
 
 One last thing, we need to update the receiving email address:
@@ -147,7 +147,7 @@ One last thing, we need to update the receiving email address:
 	* This adds the modified file for upload
 4.	`git commit -m "Updating email address"`
 5.	`git push azure master`
-	
+
 	* Again, this pushes it to Azure cloud
 
 With your changes pushed to Azure, you can restart the server from the button at the bottom of the web server’s dashboard. Then click the browse button within the same menu to see your website live. At this point people can send in their song requests, assuming DNS has propagated.
@@ -162,11 +162,11 @@ Let’s enable Mobile Services from the Windows Azure interface:
 
 1.	Click New at the bottom left, select Mobile Service, then click Create
 2.	Choose a URL -- this is up to you, it will be internal to your app
-![Choose]({{root_url}}/images/azure_10.png) 
+![Choose]({{root_url}}/images/azure_10.png)
 3.	Click Next
 4.	Choose a Server Login Name and Password
 5.	Choose Configure Advanced Database Settings
-![Choose]({{root_url}}/images/azure_11.png) 
+![Choose]({{root_url}}/images/azure_11.png)
 6.	Click Next, then review and click Complete
 
 Now you need to add a table to the database:
@@ -174,7 +174,7 @@ Now you need to add a table to the database:
 1.	Click on the name of your mobile service to access its settings
 2.	Click Data then Add a Table
 3.	Choose a table name, update permissions and click Complete
-![Choose]({{root_url}}/images/azure_12.png) 
+![Choose]({{root_url}}/images/azure_12.png)
 
 In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
 
@@ -182,7 +182,7 @@ In your index.html file add the following code near the closing body tag to add 
 <script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
 {%endcodeblock%}
 
-![Mobile Services]({{root_url}}/images/azure_13.png) 
+![Mobile Services]({{root_url}}/images/azure_13.png)
 
 In the `js/app.js` file, after the `$("#queue").append…` line, add the following code:
 
@@ -194,7 +194,7 @@ client.getTable("playlist_songs").insert(item);
 
 Now, to allow for your app to have access to the DB, your URL to the cross origin resource sharing (cors) setting.
 
-![cors]({{root_url}}/images/azure_14.png) 
+![cors]({{root_url}}/images/azure_14.png)
 
 Add your changes via git and push to Azure.
 
@@ -211,7 +211,7 @@ We can download a pre-packaged mobile app from within the Windows Azure interfac
 1.	Click the name of your mobile service from the all items menu
 2.	You should see the quickstart tab. Click iOS then Create a new iOS app.
 3.	Click the download button to grab the source code.
-![Download]({{root_url}}/images/azure_15.png) 
+![Download]({{root_url}}/images/azure_15.png)
 
 To create a native iPhone app, you’ll need to have XCode installed on a Mac. It’s a big download (over 1 GB), so find something to do while you wait.
 
@@ -219,7 +219,7 @@ Now you’ll want to edit the sample app you downloaded from Windows Azure:
 
 1.	Expand the files on your computer and open the project file using XCode.
 2.	Update the credentials and table name in `QSTodoService.m` with those that you used when you created your mobile service.
-![Credentials]({{root_url}}/images/azure_17.png) 
+![Credentials]({{root_url}}/images/azure_17.png)
 3.	Update the function refreshDataOnSuccess in `QSTodoService.m` to return all from the queue. Remove the existing code there and replace it with:
 
 {%codeblock lang:objc%}
@@ -234,7 +234,7 @@ items = [results mutableCopy];
 completion();
 }];
 {%endcodeblock%}
-![Code]({{root_url}}/images/azure_18.png) 
+![Code]({{root_url}}/images/azure_18.png)
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
 {%codeblock lang:objc%}
 // Populate the parameters for the Sendgrid Web API Call
@@ -251,7 +251,7 @@ NSString *subject = [itemText.text stringByAddingPercentEscapesUsingEncoding:NSU
 
 // Generate the Web API call
 <<<<<<< HEAD:source/Integrate/Partners/Tutorials/WindowsAzure.md
-NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
+NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
 =======
 NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
 >>>>>>> f4202064a43620816d16671c073ad89d7e833dfa:source/Integrate/Partners/WindowsAzure.md
@@ -289,10 +289,10 @@ label.text = [item objectForKey:@"request"];
 Now let’s make some adjustments to the interface:
 
 1.	Click on the storyboard, then the text input field.
-![Click]({{root_url}}/images/azure_19.png) 
+![Click]({{root_url}}/images/azure_19.png)
 2.	On the right, change the placeholder text to read: “Enter your song request”
 3.	Next, double click on the button and rename it to “Send”. You will have to adjust the size of the text box and button by single clicking and adjusting.
-![Buttons]({{root_url}}/images/azure_20.png) 
+![Buttons]({{root_url}}/images/azure_20.png)
 
 Your project in XCode should look like the above screenshot. And when you run the iPhone app, you should be able to see requested songs and add your own songs to the shared playlist.
 
