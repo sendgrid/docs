@@ -11,36 +11,33 @@ layout: default
   {% unless page.breadcrumbs == false %}
     <section>{% breadcrumbs %}</section>
   {% endunless %}
-  <article role="article">
+  <article role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+
 {% else %}
 <div class="col-md-9 col-sm-9 content-wrapper">
   {% unless page.breadcrumbs == false %}
     <section>{% breadcrumbs %}</section>
   {% endunless %}
-<article role="article">
+<article role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
 {% endif %}
     {% if page.title and page.showTitle != false %}
   <header class="page-header">
-    <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    <h1 class="entry-title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
   </header>
   {% endif %}
+
   {{ content }}
-  {% if page.hideFeedback != true %}
-  <div class="feedback">
-    <span class="prompt">Was this helpful?</span>
-    <a class="feedback-element feedback-positive" href="#">
-      <img src="{{root_url}}/images/encircled-plus.png" alt="+" />
-      Yes
-    </a>
-    <a class="feedback-element feedback-negative" href="#">
-      <img src="{{root_url}}/images/encircled-minus.png" alt="-" />
-      No
-    </a>
-    <a class="feedback-element feedback-more" href="mailto:community@sendgrid.com?subject={{ "[docs-feedback] " | append: page.title | uri_escape }}&body=Hello!%0AI%20have%20some%20feedback%20regarding%20your%20documentation%3A%0A%0A%0A%0A{{ append: site.url | append: page.url | uri_escape }}">
-      <img src="{{root_url}}/images/feedback.png" alt="" />
-      Feedback
-    </a>
-  </div>
+
+  {% if page.last_modified %}
+    <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
   {% endif %}
+  {% if page.hideFeedback != true %}
+    {% include feedback.html %}
+  {% endif %}
+</div>
 </article>
+{% include livedocs_modal.html %}
+
+<meta itemprop="specialty" content="email">
+<meta itemprop="interactivityType" content="mixed">
 </div>

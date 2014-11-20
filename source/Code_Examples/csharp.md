@@ -6,7 +6,7 @@ navigation:
     show: true
 ---
 
-{% github sendgrid/sendgrid-csharp#how-to-create-an-email %}
+{% github sendgrid/sendgrid-csharp#how-to-create-an-email C# %}
 We recommend using SendGrid C#, our client library, <a href="https://github.com/sendgrid/sendgrid-csharp">available on Github</a>, with full documentation.
 {% endgithub %}
 
@@ -31,7 +31,6 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
 This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. 
 This example uses:
 [.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
-
 
 {% codeblock lang:csharp %}
 using System;

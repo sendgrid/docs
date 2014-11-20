@@ -1,7 +1,11 @@
 ---
 layout: page
-weight: 100
+weight: 900
 title: Web API Overview
+seo:
+  title: Web API - Email Sending & Stats - SendGrid Documentation | SendGrid 
+  override: true
+  description: The SendGrid Web API allows you to send email, get statistics, blocks, bounces, unsubscribes and change account settings in a semi-RESTful manner.
 navigation:
   show: true
 ---
@@ -15,8 +19,8 @@ Interactive Documentation
 {% endanchor %}
 
 <p>On API reference pages, you will see a "Try It" button for each method. Clicking this button
-will turn the parameters table into a form that you can that use to make actual API calls
-from the website. This functionality replaces the API Workshop.</p>
+will turn the parameters table into a form that you can use to make actual Web API calls
+from the website.</p>
 
 <p>In order to use this feature you will need a
 <a href="https://sendgrid.com/user/signup">free SendGrid account</a>. Please be aware that this
@@ -27,18 +31,28 @@ URL Format
 {% endanchor %}
 <p>The following is the syntax for making Web API requests:</p>
 
-<code>
-	https://api.sendgrid.com/api/[module].[action].[format]
-</code>
+<h4>Example WEB API URL</h4>
+<code>https://api.sendgrid.com/api/[module].[action].[format]</code>
+
 
 <ul>
   <li><strong>[module]</strong> - The API endpoint to call, e.g. blocks.</li>
   <li><strong>[action]</strong> - Each module supports multiple actions such as add, get, and delete.</li>
 	<li><strong>[format]</strong> - This determines the response format. It can be either json for a JSON response or xml for an XML response.</li>
 </ul>
+
+{% codeblock lang:html %}
+https://api.sendgrid.com/api/blocks.get.json
+{% endcodeblock %}
+
 <hr/>
 
+
 {% anchor h2 %}
+Responses 
+{% endanchor %}
+
+{% anchor h3 %}
 HTTP Return codes 
 {% endanchor %}
 <ul>
@@ -47,19 +61,15 @@ HTTP Return codes
 	<li><strong>5XX</strong> - The API call was unsuccessful. You should retry later.</li>
 </ul>
 
-{% anchor h2 %}
-Responses 
-{% endanchor %}
+
 <p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
 
-{% anchor h2 %}
+{% anchor h3 %}
 Errors 
 {% endanchor %}
 <ul>
 	<li>XML
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
+{% codeblock lang:xml %}<result>
    <message>error</message>
    <errors>
       ...
@@ -81,13 +91,12 @@ Errors
 </li>
 </ul>
 
-
-<h3>Success</h3>
+{% anchor h3 %}
+Success
+{% endanchor %}
 <ul>
 	<li>XML
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
+{% codeblock lang:xml %}<result>
 success
 </result>
 
@@ -111,7 +120,11 @@ Authentication
 	<li><strong>api_key</strong> - This is the same password to authenticate over SMTP, and for logging into the website.</li>
 </ul>
 
+<h4>Example API URL with user & pass parameters</h4>
+{% codeblock lang:html %}
+https://api.sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password
+{% endcodeblock %}
+
 <hr/>
 
 <p>For detailed information on the available Web API methods, select one from the tree on the left.</p>
-

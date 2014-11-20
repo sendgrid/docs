@@ -1,7 +1,10 @@
 ---
 layout: page
-weight: 100
+weight: 600
 title: Marketing Email API Overview
+seo:
+  title: Email Marketing API Overview
+  description: Send newsletters & other marketing emails to subscriber lists by an API. Take advantage of SendGrid's deliverability & developer focus to send email.
 navigation:
   show: true
 ---
@@ -50,9 +53,7 @@ Errors
 {% endanchor %}
 <ul>
 	<li>XML
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
+{% codeblock lang:xml %}<result>
    <message>error</message>
    <errors>
       ...
@@ -74,13 +75,10 @@ Errors
 </li>
 </ul>
 
-
 <h3>Success</h3>
 <ul>
 	<li>XML
-{% codeblock lang:xml %}<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
+{% codeblock lang:xml %}<result>
 success
 </result>
 
@@ -107,4 +105,3 @@ Authentication
 <hr/>
 
 <p>For detailed information on the available Marketing Email API methods, select one from the tree on the left.</p>
-

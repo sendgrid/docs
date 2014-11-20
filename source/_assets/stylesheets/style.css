@@ -1,8 +1,13 @@
+html {
+  height:100%;
+}
+
 body {
 	padding: 0 !important;
 	font-size:18px;
 	line-height:24px;
   background-color: rgb(247,247,247);
+  height:100%;
 }
 
 p {
@@ -11,6 +16,12 @@ p {
 
 article {
   max-width:725px;
+}
+
+article img {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 table {
@@ -24,6 +35,10 @@ table {
 
 b, strong {
   font-family: "Proxima N W15 Smbd";
+}
+
+h3, .h3 {
+  font-weight: bold;
 }
 
 .btn {
@@ -43,6 +58,14 @@ b, strong {
 	width: 220px;
 	height: 20px;
 	background: url(../images/bar-indicator.gif);
+}
+
+.circle-indicator {
+  width: 16px;
+	height: 16px;
+	background: url(../images/circle-indicator.gif);
+  display: inline-block;
+  vertical-align:middle;
 }
 
 .result a.title { text-decoration:underline; }
@@ -111,6 +134,11 @@ border-color: #dFb5b4;
   padding-right: 80px;
   background: #f0f7fd url(../images/GitHub-Mark-64px.png?embed=true) 98% no-repeat no-repeat;
   margin-bottom: 20%;
+}
+.callout-github.affix {
+  top: -20px;
+  margin-bottom: 0;
+  z-index: 2000;
 }
 
 .callout-github .link {
@@ -276,15 +304,15 @@ article .nav-tabs li a {
   text-decoration:none;
 }
 
-.panel [class^="icon-"] {
+.home-list .panel [class^="icon-"] {
   font-size:36px;
 }
 
-.panel-highlight {
+.home-list .panel-highlight {
   color: rgb(127, 228, 228);
 }
 
-.panel {
+.home-list .panel {
   text-align:center;
   padding-top:50px;
   height:190px;
@@ -293,7 +321,7 @@ article .nav-tabs li a {
   overflow: hidden;
 }
 
-.panel:hover a {
+.home-list .panel:hover a {
   color:white;
   padding: 15px;
   margin: -15px;
@@ -301,29 +329,29 @@ article .nav-tabs li a {
   height: 210px;
 }
 
-.panel h3 {
+.home-list .panel h3 {
   color: rgb(0,112,205);
   font-family: "Proxima N W15 Light";
 }
 
-.panel:hover p {
+.home-list .panel:hover p {
   display:block;
 }
 
-.panel p {
+.home-list .panel p {
   display:none;
 }
 
-.panel:hover [class^="icon-"] {
+.home-list .panel:hover [class^="icon-"] {
   display:none;
 }
 
-.panel:hover h3 {
+.home-list .panel:hover h3 {
   color:white;
   margin:0px;
 }
 
-.panel:hover {
+.home-list .panel:hover {
   text-align:left;
   padding:15px;
   color:white;
@@ -373,7 +401,7 @@ article .nav-tabs li a {
 
 #footer-iframe {
   width: 100%;
-  height: 248px;
+  height: 237px;
   border: 0;
   margin-bottom: -8px;
 }
@@ -538,6 +566,11 @@ figure.code.expanded {
   font-size: 14px;
 }
 
+.feedback img {
+  display: auto;
+  height: auto;
+}
+
 .feedback-element {
   padding: 5px 10px 3px 3px;
   margin: 0 4px;
@@ -606,6 +639,12 @@ figure.code.expanded {
   margin: 5px 10px 5px 0px;
 }
 
+.curl-call code {
+  display: inline-block;
+  white-space: normal;
+  word-break: break-word;
+}
+
 .clear-request {
   width:131px;
 }
@@ -616,6 +655,23 @@ figure.code.expanded {
 
 .hljs {
   max-width:624px;
+}
+
+.iframe-container {
+  overflow:hidden;
+  height: calc(100% - 100px);
+  height: -o-calc(100% - 100px); /* opera */
+  height: -webkit-calc(100% - 100px); /* google, safari */
+  height: -moz-calc(100% - 100px); /* firefox */
+  width: 100%;
+  position: absolute;
+}
+
+.iframe-container iframe {
+  height: 100%;
+  overflow:auto; 
+  width:100%;
+  display:block;
 }
 
 @media (max-width: 767px) {
@@ -637,6 +693,10 @@ figure.code.expanded {
   #nav .btn {
     width: 80%;
     margin: 20px auto;
+  }
+
+  #footer-iframe {
+    height: 591px;
   }
 }
 

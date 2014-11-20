@@ -1,6 +1,8 @@
 ---
 layout: page
 weight: 0
+seo:
+  title: Reconfirmation Email Campaigns
 title: Reconfirmation Email Campaigns
 navigation:
   show: true
@@ -74,4 +76,3 @@ recommendation of 3 months is only a suggestion.
 
 Ultimately, the more frequently you clean your address list, the less 
 likely you will be to have deliverability problems related to old lists.
-

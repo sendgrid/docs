@@ -17,8 +17,23 @@
     settings_button: settings_button
   });
 
-  var pluginName = 'livedocs',
-    defaults = {};
+  var pluginName = 'livedocs', defaults = {};
+
+  var buildQueryString = function(form) {
+    var data = "";
+    form.serializeArray().forEach(function(obj) {
+      var k = obj.name, v = obj.value;
+		  if (v[0] === "[" && v.slice(-1) === "]") { // Array!
+			  var array = JSON.parse(v);
+				for(var i = 0, len = array.length; i < len; i++)
+				  data += k + "[]=" + (typeof(array[i]) !== "object" ? array[i] : JSON.stringify(array[i])) + "&";
+			} else {
+        if (v)
+				  data += k + "=" + v + "&";
+			}
+    });
+	  return data.slice(0, -1);
+  };
 
   //there are currently no options but some things probably should be
   //so leaving the scaffolding up
@@ -44,7 +59,9 @@
 
       Livedocs.addButtons(identifier, livedoc);
       form_table.append(Livedocs.getFormFieldHtml(identifier));
-      form.append('<div class="text-center"><button type="input" class="btn btn-primary">Make Request</button></div>');
+      form.append('<div class="text-center"><button type="input" class="btn btn-primary request-button">Make Request</button></div>');
+
+      Livedocs.updateCurl(livedoc);
 
       //TODO these event listeners shouldn't be wired up for all elements each time we instantiate the plugin
       $('#credentials').submit(function (e) {
@@ -66,7 +83,7 @@
         var identifier = id.substr(id.indexOf('-') + 1, id.length);
         Livedocs.toggleLivedoc(identifier, true);
       })
-      
+
       $('.cancel').click(function () {
         var id = $(this).attr('id');
         var identifier = id.substr(id.indexOf('-') + 1, id.length);
@@ -79,6 +96,11 @@
 
       $('.clear-request').click(function () {
         Livedocs.clearResults($(this).closest('.live-call'));
+      });
+
+      $('#' + id + ' .live-form .live-params input').on("blur", function() {
+        livedoc = $(this).closest('.live-doc');
+        Livedocs.updateCurl(livedoc);
       });
 
       form.submit(function (e) {
@@ -95,14 +117,17 @@
         // Revert, once OPS allows for CORS on sendgrid domains
         url = url.replace("api.sendgrid.com", "sendgrid.com");
         method = $(this).parent().find('.method').val().toUpperCase().trim();
-        data = $(this).serialize().replace(/[^&]+=(?:&|$)/g, '').replace(/&$/, ''); //throw out empty params
         creds = "api_user=" + username + "&api_key=" + password;
         format = "." + Livedocs.getResponseFormat();
+        // Temporary fix to allow for CORS
+        // Revert, once OPS allows for CORS on sendgrid domains
+        url = url.replace("api.sendgrid.com", "sendgrid.com");
+        data = buildQueryString($(this));
 
         if (method == "GET") {
-          call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
+         call = parseQuerystring((url + format + "?api_user=" + username + "&api_key=XXXXXXXX&" + data).replace(/&$/, ''));
         } else {
-          call = url + format
+         call = url + format;
         }
 
         live_call = $(this).nextAll('.live-call');
@@ -116,11 +141,11 @@
           live_call.find('.data').html(data_pretty);
         }
 
-        live_call.find(".bar-indicator").show();
-        live_call.show();
-
         data = 'api_user=' + username + '&api_key=' + password + "&" + data;
         data = data.replace(/&$/, '');
+
+        live_call.find(".bar-indicator").show();
+        live_call.show();
 
         $.ajax({
           type: method,
@@ -128,35 +153,35 @@
           data: data,
           dataType: 'text'
         })
-          .done(function (response, statusText, jqXHR) {
-            response = Livedocs.prettyPrintResponse(response, format);
-            live_call.find('.body').text(response);
-            hljs.highlightBlock(live_call.find('.body')[0]);
-            live_call.find('.response-body').removeClass('hidden');
+        .done(function (response, statusText, jqXHR) {
+          response = Livedocs.prettyPrintResponse(response, format);
+          live_call.find('.body').text(response);
+          hljs.highlightBlock(live_call.find('.body')[0]);
+          live_call.find('.response-body').removeClass('hidden');
 
-            live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
-            hljs.highlightBlock(live_call.find('.headers')[0]);
-            live_call.find('.response-headers').removeClass('hidden');
+          live_call.find('.headers').text(jqXHR.getAllResponseHeaders());
+          hljs.highlightBlock(live_call.find('.headers')[0]);
+          live_call.find('.response-headers').removeClass('hidden');
 
-            live_call.find('.status').text(jqXHR.status + ' - ' + jqXHR.statusText);
-            live_call.find('.response-status').removeClass('hidden');
-          })
-          .fail(function (jqXHR, statusText, errorThrown) {
-            live_call.find('.status').text(jqXHR.status + " - " + errorThrown);
-            live_call.find('.response-status').removeClass('hidden');
+          live_call.find('.status').text(jqXHR.status + ' - ' + jqXHR.statusText);
+          live_call.find('.response-status').removeClass('hidden');
+        })
+        .fail(function (jqXHR, statusText, errorThrown) {
+          live_call.find('.status').text(jqXHR.status + " - " + errorThrown);
+          live_call.find('.response-status').removeClass('hidden');
 
-            response = Livedocs.prettyPrintResponse(jqXHR.responseText, format);
-            live_call.find('.body').text(response);
+          response = Livedocs.prettyPrintResponse(jqXHR.responseText, format);
+          live_call.find('.body').text(response);
 
-            hljs.highlightBlock(live_call.find('.body')[0]);
-            live_call.find('.response-body').removeClass('hidden');
-          })
-          .always(function () {
-            live_call.find(".bar-indicator").hide();
-          });
+          hljs.highlightBlock(live_call.find('.body')[0]);
+          live_call.find('.response-body').removeClass('hidden');
+        })
+        .always(function () {
+          live_call.find(".bar-indicator").hide();
+        });
       });
     }
-  }; 
+  };
 
     Livedocs.addButtons = function(identifier, livedoc) {
       var tryit_html = $.render.tryit_button({ identifier: identifier });
@@ -201,6 +226,29 @@
       }
     }
 
+    Livedocs.updateCurl = function(livedoc){
+      var curl_call = livedoc.find('.curl-call');
+      username = $.cookie('username');
+
+      url = livedoc.find('.url').val();
+      // Temporary fix to allow for CORS
+      // Revert, once OPS allows for CORS on sendgrid domains
+      url = url.replace("api.sendgrid.com", "sendgrid.com");
+      method = livedoc.find('.method').val().toUpperCase().trim();
+      creds = "api_user=" + username + "&api_key=XXXXXXXX";
+      format = "." + Livedocs.getResponseFormat();
+      var data = buildQueryString(livedoc.find('form'));
+      var curl_string = "curl -X " + method + " " + url + format;
+      if (method == "GET") {
+        curl_string = data ? curl_string + "?" + creds + "&" + decodeURIComponent(data) : curl_string + "?" + creds;
+      } else {
+        curl_string = data ? curl_string + " -d " + decodeURIComponent(creds + "&" + data).replace(/&/g, " -d ") : curl_string + " -d " + decodeURIComponent(creds).replace(/&/g, " -d ");
+      }
+
+      curl_call.find('code').find('.line').html(hljs.highlightAuto(curl_string).value);
+      curl_call.find('.gutter').remove();
+    }
+
     Livedocs.toggleLivedoc = function(identifier, show) {
       if (show) {
         $('#parameters-' + identifier).hide();
@@ -233,8 +281,13 @@
       form.hide();
     },
 
-    Livedocs.getResponseFormat = function(){ return $.cookie('responseFormat').toLowerCase(); },
-  
+    Livedocs.getResponseFormat = function(){
+      if ($.cookie('responseFormat')) {
+        return $.cookie('responseFormat').toLowerCase();
+      }
+      return 'json'; // Avoid getting undefined if cookie wasn't set.
+    },
+
     Livedocs.validateRequired = function(form) {
       var valid = true;
       $(form).find('input.required').each(function () {
@@ -261,7 +314,7 @@
       }
       return response;
     }
-  
+
   // A really lightweight plugin wrapper around the constructor,
   // preventing against multiple instantiations
   $.fn[pluginName] = function ( options ) {

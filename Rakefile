@@ -7,6 +7,7 @@ require "shellwords"
 require "json"
 require "simple-cloudfront-invalidator"
 require "cgi"
+require "indextank"
 
 public_dir      = "public"    # compiled site directory
 source_dir      = "source"    # source file directory
@@ -113,9 +114,76 @@ task :invalidate_cloudfront do
   public_files.delete_if{|f| File.directory?(f) }
   public_files.each{|f| cleaned_files.push '/' + f}
 
-  invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], ENV["CF_DISTRIBUTION_ID"])
+  if ENV["TRAVIS_BRANCH"] == "master"
+    cf_distro_id = ENV["PROD_CLOUDFRONT_DISTRO"]
+  else
+    cf_distro_id = ENV["DEV_CLOUDFRONT_DISTRO"]
+  end
+        
+  invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], cf_distro_id)
   
   puts invalidator.invalidate(public_files) 
+end
+
+desc "index the generated files"
+task :index do
+  htmlfiles = File.join("**", "public", "**", "*.html")
+  
+  #don't mess with the jekyll stuff
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
+  
+  puts 'Indexing pages...'
+  @storage_dir = File.join(Dir.pwd, '.jekyll_indextank')
+  @last_indexed_file = File.join(@storage_dir, 'last_index')
+  
+  begin
+    Dir.mkdir(@storage_dir) unless File.exists?(@storage_dir)
+  rescue SystemCallError
+    puts 'WARNING: cannot create directory to store index timestamps.'
+  end
+  
+  begin
+    @last_indexed = File.open(@last_indexed_file, "rb") {|f| Marshal.load(f)}
+  rescue
+    @last_indexed = nil
+  end
+
+  api = IndexTank::Client.new(ENV["INDEXTANK_API_URL"])
+  @index = api.indexes(ENV["INDEXTANK_INDEX"])
+
+  while not @index.running?
+    # wait for the indextank index to get ready
+    sleep 0.5
+  end
+
+  files.each do |htmlfile|
+    next if htmlfile.include?("index.html")
+    doc = Nokogiri::HTML(File.open(htmlfile))
+    
+    #remove some elements we don't want to index
+    doc.search('article code, article code-button').remove
+
+    #we only want to index the contents of certain elements in the <article> tag
+    elements = doc.search('article a, article h1, article h2, article h3, article h4, article h5, article h6, article p, article td').map {|e| e.text}
+    page_text = elements.join(" ").gsub("\r"," ").gsub("\n"," ")
+
+    url = htmlfile.gsub('public','')
+
+    @index.document(url).add({ 
+      :text => page_text,
+      :title => doc.title 
+    })
+    puts 'Indexed ' << htmlfile
+  end
+
+  @last_indexed = Time.now
+  begin
+    File.open(@last_indexed_file, 'w') {|f| Marshal.dump(@last_indexed, f)}
+  rescue
+    puts 'WARNING: cannot write indexed timestamps file.'
+  end
+  
+  puts 'Indexing done'
 end
 
 desc "run linklint and fail if errors found"
@@ -125,16 +193,17 @@ task :linklint do
   puts `./linklint-2.3.5 @linklint_command`
 
   if File.exist?("linklint_logs/error.txt")
+    puts File.read("linklint_logs/errorX.txt")
     fail "Linklint found broken links or missing files!"
   end
 end
 
 desc "parse XML and JSON codeblocks and identify invalid blocks"
 task :validate_json_xml do
-  htmlfiles = File.join("**", "source", "**", "*.html")
+  htmlfiles = File.join("**", "source", "**", "*.{html,md}")
   
   #don't mess with the jekyll stuff
-  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
+  files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
   
   json_invalid = 0
   json_valid =0
@@ -146,7 +215,7 @@ task :validate_json_xml do
     if htmlfile.scan("nodejs").length > 0
       next
     end
-    file = File.open(htmlfile)
+    file = File.open(htmlfile, "r:UTF-8")
     contents = file.read
     file.close
 
@@ -163,9 +232,34 @@ task :validate_json_xml do
       end
     end
 
+    contents.gsub!(/({%\s?response json\s?%})(.*?)({\%\s?endresponse\s?%})/m) do |match|
+      is_json = ($2.strip).to_s.is_json?
+      json = is_json ? JSON.parse($2.strip) : $2
+      
+      if is_json
+        json_valid += 1
+      else
+        puts "\nINVALID JSON in #{htmlfile}: \n#{$2.strip}\n--------------------------"
+        json_invalid += 1
+      end
+    end
+
     #Validate the XML
     contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       begin
+        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
+        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
+      rescue
+        xml_invalid += 1
+        puts "\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n---------------------------"
+        next
+      end
+      xml_valid += 1
+    end
+
+    contents.gsub!(/({%\s?response xml\s?%})(.*?)({\%\s?endreponse\s?%})/m) do |match|
+      begin
+        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
         xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
       rescue
         xml_invalid += 1

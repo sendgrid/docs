@@ -18,70 +18,13 @@ You can specify either the days parameter or the start_date and end_date paramet
 Parameters
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-  <tbody>
-    <tr>
-      <th>Parameter</th>
-
-      <th>Required</th>
-
-      <th>Requirements</th>
-
-      <th>Description</th>
-    </tr>
-
-    <tr>
-      <td>days</td>
-
-      <td>No</td>
-
-      <td>Must be an integer greater than 0</td>
-
-      <td>Number of days in the past to include statistics (Includes today)</td>
-    </tr>
-
-    <tr>
-      <td>start_date</td>
-
-      <td>No</td>
-
-      <td>Date must be in YYYY-MM-DD format and be before the end_date parameter</td>
-
-      <td>The start date to look up statistics</td>
-    </tr>
-
-    <tr>
-      <td>end_date</td>
-
-      <td>No</td>
-
-      <td>Date must be in YYYY-MM-DD format and be after the start_date parameter</td>
-
-      <td>The end date to look up statistics</td>
-    </tr>
-
-    <tr>
-      <td>aggregate</td>
-
-      <td>No</td>
-
-      <td>0 or 1</td>
-
-      <td>This is used to indicate you are interested in all-time totals</td>
-    </tr>
-
-    <tr>
-      <td>category</td>
-
-      <td>No</td>
-
-      <td>Must be an existing category, or an array of existing categories.</td>
-
-      <td>The category for which to retrieve detailed stats</td>
-    </tr>
-  </tbody>
-</table>
-
+{% parameters activate %}
+  {% parameter days false 'Must be an integer greater than 0 and less than 1096' 'Number of days in the past to include statistics (Includes today)' %}
+  {% parameter start_date false 'Date must be in YYYY-MM-DD format and be before the end_date parameter' 'The start date to look up statistics' %}
+  {% parameter end_date false 'Date must be in YYYY-MM-DD format and be after the start_date parameter' 'The end date to look up statistics' %}
+  {% parameter aggregate false '0 or 1' 'This is used to indicate you are interested in all-time totals' %}
+  {% parameter category false 'Must be an existing category, or an array of existing categories' 'The category for which to retrieve detailed stats' %}
+{% endparameters %}
 
 {% apiexample activate POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 %}
   {% response json %}
@@ -125,8 +68,6 @@ Parameters
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <stats>
   <day>
       <date>2014-02-26</date>
@@ -168,14 +109,12 @@ Parameters
   {% endresponse %}
 {% endapiexample %}
 
-
 <hr/>
 
 {% anchor h2 %}
 Category List
 {% endanchor %}
 <h3>Retrieve a list of all the categories used in your account.</h3>
-
 
 {% apiexample list POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true %}
   {% response json %}
@@ -192,8 +131,6 @@ Category List
 ]
   {% endresponse %}
   {% response xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
 <categories>
    <category>categoryA</category>
    <category>categoryB</category>
@@ -201,4 +138,3 @@ Category List
 </categories>
   {% endresponse %}
 {% endapiexample %}
-

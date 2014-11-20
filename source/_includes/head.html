@@ -26,6 +26,11 @@
   {% if canonical and canonicalprotocolfree != canonical  %}
   <link rel="canonical" href="{{canonical}}"/>
   {% endif %}
+
+  {% if page.seo.robots %}
+    <meta name="robots" content="{{ page.seo.robots }}">
+  {% endif %}
+
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -40,6 +45,7 @@
 - /_assets/stylesheets/icomoon.css
 - /_assets/stylesheets/syntax.css
 - /_assets/stylesheets/print.css
+- /_assets/stylesheets/error.css
 - /_assets/stylesheets/vidgrid.css
 - /_assets/stylesheets/livedocs.css
 - /_assets/bower_components/highlightjs/styles/default.css
@@ -61,6 +67,8 @@
 -  /_assets/javascripts/search.js
 -  /_assets/bower_components/jsrender/jsrender.js
 -  /_assets/javascripts/livedocs.js
+-  /_assets/javascripts/feedback.js
+-  /_assets/javascripts/callouts.js
 -  /_assets/javascripts/octopress.js
 -  /_assets/bower_components/highlightjs/highlight.pack.js
 -  /_assets/javascripts/formatXml.js
@@ -85,7 +93,7 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-  {% if site.data.version.contains "https" %}
+  {% if site.data.version.contains "staging" %}
   <script>
     // faking this to get rid of errors
 	dataLayer = [];

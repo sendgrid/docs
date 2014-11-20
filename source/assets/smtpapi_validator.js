@@ -38,7 +38,6 @@ var headerSchema = {
           "items": {
             "type": "string"
           },
-          "uniqueItems": true,
           "minItems": 1
         }
       }
@@ -1051,7 +1050,6 @@ Validator.prototype.addSubSchemaObject = function addSubSchemaArray(baseuri, sch
     this.addSubSchema(baseuri, schemas[p]);
   }
 }
-
 
 
 /**
@@ -2253,7 +2251,6 @@ Url.prototype.parse = function(url, parseQueryString, slashesDenoteHost) {
     }
   }
 
-
   // chop off from the tail first.
   var hash = rest.indexOf('#');
   if (hash !== -1) {
@@ -2697,6 +2694,7 @@ $(function() {
     if (errors.length === 0) {
       successAlert.style.display = "block";
       successAlert.innerHTML = "Valid X-SMTPAPI Header";
+      textArea.value = JSON.stringify(headers, undefined, 4);
       return;
     } else {
       failAlert.innerHTML = "Errors:<br/>"
@@ -2708,4 +2706,3 @@ $(function() {
     }
   }
 });
-

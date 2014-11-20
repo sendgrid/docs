@@ -133,7 +133,7 @@ color:#222!important;
 padding:.8em!important;
 }
 
-.pre-code span,html .gist .gist-file .gist-syntax .gist-highlight pre span,.highlight code span {
+.pre-code span,html .gist .gist-file .gist-syntax .gist-highlight pre span {
 color:#222!important;
 font-style:normal!important;
 font-weight:400!important;
