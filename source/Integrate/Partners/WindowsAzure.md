@@ -250,7 +250,7 @@ NSString *text = @"%20";
 NSString *subject = [itemText.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
 // Generate the Web API call
-NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
+NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
 
 // This writes the composed URL in the XCode console for debugging purposes
 NSLog(@"URL %@",url);
