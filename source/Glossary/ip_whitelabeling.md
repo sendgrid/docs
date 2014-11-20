@@ -38,4 +38,4 @@ As an example, if an email is sent from a non-whitelabeled account, Gmail will i
 
 IP whitelabeling is only available to customers with [Silver, Gold, or Platinum packages](https://sendgrid.com/transactional-email/pricing). If you want to improve your email deliverability as much as possible, we suggest upgrading your account so that you have a dedicated IP address that you can then whitelabel.
 
-[Contact SendGrid’s support team](https://sendgrid.zendesk.com/hc/en-us) today to learn more about IP whitelabeling, or watch our [Whitelabel Wizard video]({{root_url}}/VidGrid/Whitelabel/whitelabel.html) to learn about whitelabeling and why you should use it.
+[Contact SendGrid’s support team](https://sendgrid.zendesk.com/hc/en-us) today to learn more about IP whitelabeling, or watch our [Whitelabel Wizard video]({{root_url}}/VidGrid/whitelabel.html) to learn about whitelabeling and why you should use it.
