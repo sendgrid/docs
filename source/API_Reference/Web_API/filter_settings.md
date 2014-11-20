@@ -50,10 +50,10 @@ BCC "Blind Carbon Copy"
 {% parameters bcc %} 
   
   {% parameter name yes 'bcc' 'The name of the app for which to apply settings.' %}  
-  {% parameter bcc yes 'An email address to be the BCC recipient.' 'email@example.com' %}
+  {% parameter email yes 'An email address to be the BCC recipient.' 'email@example.com' %}
 {% endparameters %}
 
-{% apiexample bcc POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com %}
+{% apiexample bcc POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=email@example.com %}
   {% response json %}
 {
   "message": "success"
