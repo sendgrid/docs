@@ -120,6 +120,10 @@ global suppression list.
 HTTP/1.1 204 NO CONTENT (OK)
   {% endv3response %}
   {%v3response %}
-hTTP/1.1 5xx Error of Some Type
+HTTP/1.1 400
+
+{
+  "error":"refusing to delete active group: group has been sent to within the past 60 days"
+}
   {% endv3response %}
 {% endapiv3example %}
