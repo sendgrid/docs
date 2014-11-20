@@ -44,7 +44,7 @@ Some ISPs or e-mail clients (such as Hotmail or Outlook) will display a message 
 
 1.Disable the Domain Keys filter in the filters section of your account
 
-2.Upgrade to a package (Silver or higher) that provides [Whitelabel](http://sendgrid.com/whitelabel/) support and set up the Domain Keys record in your DNS
+2.Upgrade to a package (Silver or higher) that provides [Whitelabel](https://sendgrid.com/whitelabel/) support and set up the Domain Keys record in your DNS
 
 Settings may be changed through:
 

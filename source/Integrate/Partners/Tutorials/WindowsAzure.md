@@ -238,7 +238,7 @@ completion();
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
 {%codeblock lang:objc%}
 // Populate the parameters for the Sendgrid Web API Call
-// Find more details about the [Web API here](http://sendgrid.com/docs/API_Reference/Web_API/index.html).
+// Find more details about the [Web API here](https://sendgrid.com/docs/API_Reference/Web_API/index.html).
 NSString *username = @"<Your SendGrid Username>";
 NSString *apikey = @"<Your SendGrid Password>";
 NSString *to = @"<Email to Playlist Service from Appendix A>";
@@ -250,7 +250,7 @@ NSString *text = @"%20";
 NSString *subject = [itemText.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
 // Generate the Web API call
-NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
+NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
 
 // This writes the composed URL in the XCode console for debugging purposes
 NSLog(@"URL %@",url);
