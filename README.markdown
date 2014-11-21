@@ -16,15 +16,17 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 ## Setup
 
 * Clone the repo.
-* `npm install` to install build tools.
-* `bower install` to install client-side dependencies (jQuery,
-  bootstrap)
-* `bundle install` to install required rubygems.
-* `_config.sample.yml` to `_config.yml`
-* Set your root (if you're running locally it'll just be `/`) in `_config.yml`
-* `bundle exec rake preview`
-* Browse to `localhost:4000`
+* Bring up development environment with Vagrant
+		
+		$ vagrant up
+		
+* Browse to [http://localhost:4000](http://localhost:4000)
 
+## Testing
+
+		$ vagrant ssh
+		$ cd docs && bin/test
+		
 ## Important Things to Know
 
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
