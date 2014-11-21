@@ -6,7 +6,11 @@ navigation:
   show: true
 ---
 
-The Spam Checker app,is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter can provide notification when emails are detected that exceed a predefined spam threshold.
+{% info %}
+This App is only available to <a href="https://sendgrid.com/pricing">Silver accounts and higher</a>
+{% endinfo %}
+
+<p>The Spam Checker app,is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter can provide notification when emails are detected that exceed a predefined spam threshold.</p>
 
 ![Spam Checker App Image]({{root_url}}/images/spam_checker.png "Spam Checker")
 
