@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 10
 title: Debugging Webhooks
 navigation:
   show: true
