@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the  <a href="{{root_url}}/API_Reference/Customer_Subuser_API/event_notification_url.html"> Version 2 </a> Customer Subuser API Event Notification URL page.
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}

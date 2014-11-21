@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the  <a href="{{root_url}}/API_Reference/Customer_Subuser_API/invalid_emails.html"> Version 2 </a> Customer Subuser API Invalid Emails page.
+{% endwarning %}
+
 <table class="table table-bordered table-striped">
    <tbody>
       <tr>
