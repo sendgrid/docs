@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
- This feature is deprecated, please go to the [Version 3]({{root_url}}/API_Reference/Reseller_API/reseller_customer_subuser_api/customer_subuser__automatic_login.html) Reseller Customer Subuser Automatic Login page
+ This feature is deprecated, please go to the [Version 3]({{root_url}}/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html) Reseller Customer Subuser Automatic Login page
 {% endwarning %}
 
 Allow customer subusers to manage their account from your website using an iframe to our site.
