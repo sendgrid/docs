@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/automatic_login.html) Reseller Automatic Login page.
+{% endwarning %}
+
 Allow customers to manage their account from your website using an iframe to our site.
 
 * * * * *

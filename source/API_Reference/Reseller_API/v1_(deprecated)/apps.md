@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-"This feature is deprecated, please go to the v2 Reseller Apps page”. [Version 2]({{root_url}}/API_Reference/Reseller_API/apps.html)  
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/apps.html) Reseller Apps page.
 {% endwarning %}
 
 {% anchor h2 %}

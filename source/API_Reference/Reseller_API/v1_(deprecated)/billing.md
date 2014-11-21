@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+"This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/apps.html) Reseller Apps page”.
+{% endwarning %}
+
 You can retrieve invoices and usage data about your users through the website or via the Distributor API.
 
 Whenever you create an user under your account, they immediately begin their billing cycle from that day forward. The billing cycle is one month, and they will be invoiced the same day the account was created the following month.
