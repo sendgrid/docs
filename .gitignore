@@ -1,3 +1,4 @@
+.vagrant/
 .jekyll_indextank/
 .rvmrc
 _config.yml
