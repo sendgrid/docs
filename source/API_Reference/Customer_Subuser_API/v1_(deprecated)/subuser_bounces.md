@@ -8,6 +8,11 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the  <a href="{{root_url}}/API_Reference/Customer_Subuser_API/subuser_bounces.html"> Version 2 </a> Customer Subuser API Bounces page.
+{% endwarning %}
+
+
 {% anchor h2 %}
 Retrieve Bounces 
 {% endanchor %}
