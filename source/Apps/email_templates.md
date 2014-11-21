@@ -10,7 +10,7 @@ navigation:
 This documentation is for our original Email Templates, today we have a more full featured **[Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html)**, which supports multiple templates, versioning and more. [Read More »]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) 
 {% endwarning %}
 
-{% warning %} This app is available to customers with [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing). {% endwarning %}
+{% info %} This app is available to customers with [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing). {% info %}
 
 This app wraps an HTML template around your email content. This can be useful for sending out marketing email and/or other HTML formatted messages.
 
