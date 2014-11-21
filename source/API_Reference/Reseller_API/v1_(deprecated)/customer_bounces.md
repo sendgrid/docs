@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_bounces.html) Reseller Customer Bounces page.
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve Bounces 
 {% endanchor %}

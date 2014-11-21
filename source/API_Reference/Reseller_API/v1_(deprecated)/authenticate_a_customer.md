@@ -8,6 +8,12 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/authenticate_a_customer.html) Reseller Authenticate a Customer page.   
+{% endwarning %}
+
+
+
 Authenticate a customer on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.
 
 <table class="table table-bordered table-striped">

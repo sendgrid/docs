@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 1000
+weight: 0
 title: Whitelabel Wizard
 breadcrumbs: true
 navigation:

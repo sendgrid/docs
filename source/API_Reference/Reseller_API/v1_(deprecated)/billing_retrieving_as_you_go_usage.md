@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated.
+{% endwarning %}
+
 Retrieve invoices/usages from end users before your scheduled billing date.
 
 <table class="table table-bordered table-striped">

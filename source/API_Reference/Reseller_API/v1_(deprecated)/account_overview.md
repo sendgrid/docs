@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/account_overview.html) Reseller Account Overview page.   
+{% endwarning %}
+
 View general account information regarding your customers, including billing cycle, current billing cycle, credit usage, package, overage credits, etc.
 
 <table class="table table-bordered table-striped">
