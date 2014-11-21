@@ -1,0 +1,3 @@
+#!/bin/sh
+
+bundle exec jekyll serve --watch --port 4000 --detach
