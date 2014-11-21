@@ -32,7 +32,7 @@ GET
 
 Check if an address is in the global suppressions group.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/:email_address %}
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/global/:email_address %}
 {% v3response %}
 HTTP/1.1 200
 {
@@ -47,7 +47,7 @@ DELETE
 
 Delete a recipient email from the global suppressions group.
 
-{% apiv3example get DELETE https://api.sendgrid.com/v3/asm/groups/:group_name/suppressions/:email_address %}
+{% apiv3example get DELETE https://api.sendgrid.com/v3/asm/suppressions/global/:email_address %}
 {% v3response %}
 HTTP/1.1 204
 {% endv3response %}
