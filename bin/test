@@ -7,3 +7,5 @@ fi
 bundle exec jekyll build
 bundle exec rake linklint
 bundle exec rake validate_json_xml
+# we do single thread here because SG do throttle request
+check-links 'public' --max-threads 1
