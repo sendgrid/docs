@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Automatic IFrame Login
+title: Automatic iFrame Login
 navigation:
    show: true
 ---
@@ -14,26 +14,26 @@ In order to login your subuser, you need to contact our API to retrieve the uniq
 
 {% parameters geturl %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'This is the subuser to automatically login' %}
- {% parameter 'password' 'No' 'subuser password' 'Automatically [authenticate]({{root_url}}/API_Reference/Customer_Subuser_APi/authenticate_a_subuser.md) the subuser with this API call' %}
+ {% parameter 'password' 'No' 'subuser password' 'Automatically [authenticate]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) the subuser with this API call' %}
 {% endparameters %}
-
-{% info %}
-If you submit the password and we cannot authenticate the user, the params are returns with a <code>NULL</code> al_hash.
-{% endinfo %}
 
 {% apiexample geturl POST https://api.sendgrid.com/apiv2/customer.geturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 {
-  "params": "al_username=your_username&amp;al_subuser_name=subuser_username&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
+  "params": "al_username=your_sendgrid_username&al_subuser_name=subuser_username&al_hash=aa39649af578679d3a90d2cc43245d56"
 }
   {% endresponse %}
   {% response xml %}
 <params>
-   <params>al_username=your_username=subuser_username=aa39649af578679d3a90d2cc43245d56</params>
+   <params>al_username=your_sendgrid_username=subuser_username=aa39649af578679d3a90d2cc43245d56</params>
 </params>
 
   {% endresponse %}
 {% endapiexample %}
+
+{% info %}
+If you submit the password and we cannot authenticate the user, the params are returned with a <code>NULL</code> al_hash.
+{% endinfo %}
 
 * * * * *
 
