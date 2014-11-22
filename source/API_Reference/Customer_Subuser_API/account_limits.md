@@ -15,13 +15,13 @@ Retrieve
 Retrieve account limits for a specific subuser. If the API call response is empty that means the subuser has the limits removed.
 
 
-{% parameters limit %}
+{% parameters retrieve %}
  {% parameter 'task' 'Yes' 'Must be set to <code>retrieve</code>' 'Task to retrieve account limits' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser who will have their account limits retrieved' %}
 {% endparameters %}
 
 
-{% apiexample limit POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=retrieve %}
+{% apiexample retrieve POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=retrieve %}
   {% response json %}
 {
   "credit": "200",
@@ -48,13 +48,13 @@ No Limit
 Remove the limit for a subuser.
 
 
-{% parameters list %}
+{% parameters none %}
  {% parameter 'task' 'Yes' 'Must be set to <code>none</code>' 'Task to remove account limits' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser who will have their credit limits removed' %}
 {% endparameters %}
 
 
-{% apiexample list POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=none %}
+{% apiexample none POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=none %}
   {% response json %}
 {
   "message": "success"
@@ -76,7 +76,7 @@ Recurring Reset
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
 
-{% parameters reset %}
+{% parameters recurring %}
  {% parameter 'task' 'Yes' 'Must be set to <code>recurring<code>' 'Task to setup recurring credits' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser you will be applying a recurring credit limit to' %}
  {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The number of credits the subuser will be reset to' %}
@@ -87,16 +87,16 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% endparameters %}
 
 
-{% apiexample reset POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=recurring&credits=200&period=daily %}
+{% apiexample recurring POST https://api.sendgrid.com/apiv2/customer.limit api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=recurring&credits=200&period=daily %}
   {% response json %}
 {
   "message": "success"
 }
   {% endresponse %}
   {% response xml %}
-<message>
-   <result>success</result>
-</message>
+<result>
+   <message>success</message>
+</result>
 
   {% endresponse %}
 {% endapiexample %}
