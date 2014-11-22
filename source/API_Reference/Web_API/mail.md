@@ -35,8 +35,10 @@ Send email.
  {% parameter 'html' 'No' 'API call must include at least one of the text or html parameters.' 'The HTML content of your email message.' %}
  {% parameter 'from' 'Yes' 'Must be a valid email address from your domain' 'This is where the email will appear to originate from for your recipient' %}
  {% parameter 'cc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: cc[]=a@mail.com&cc[]=b@mail.com.' %}
+ {% parameter 'ccname' 'No' 'Must a valid email address' 'This is the name  appended to the cc email field. %}
  {% parameter 'bcc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: bcc[]=a@mail.com&bcc[]=b@mail.com.' %}
- {% parameter 'fromname' 'No' 'Must a valid string' 'This is name appended to the from email field. IE - Your name or company name' %}
+ {% parameter 'bccname' 'No' 'Must a valid email address' 'This is the name appended to the BCC email field. %}
+ {% parameter 'fromname' 'No' 'Must a valid string' 'This is the name appended to the from email field. IE - Your name or company name' %}
  {% parameter 'replyto' 'No' 'Must be a valid email address' 'Append a reply-to field to your email message' %}
  {% parameter 'date' 'No' 'Must be a valid [RFC 2822 formatted date](http://www.faqs.org/rfcs/rfc2822)' 'Specify the date header of your email. One example: "Thu, 21 Dec 2000 16:01:07 +0200". PHP developers can use: *date('r');*' %}
  {% parameter 'files' 'No' 'Must be less than 7MB' 'Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf' %}
