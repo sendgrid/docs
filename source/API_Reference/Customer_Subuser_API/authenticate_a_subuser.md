@@ -10,8 +10,8 @@ Authenticate a subuser on your website before displaying their account informati
 
 
 {% parameters auth %}
- {% parameter 'user' 'Yes' 'Subuser must be under your account' %}
- {% parameter 'password' 'Yes' 'Password the subuser is attempting' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'Username of subuser being authenticated' %}
+ {% parameter 'password' 'Yes' 'Valid subuser password' 'Password of subuser being authenticated' %}
 {% endparameters %}
 
 
