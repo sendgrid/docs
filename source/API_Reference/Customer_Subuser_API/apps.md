@@ -124,7 +124,7 @@ Deactivate an app on a subuser.
 * * * * *
 
 {% anchor h2 %}
-Customize App 
+Setup App 
 {% endanchor %}
 These API calls require that settings are passed using POST. 
 
@@ -138,7 +138,7 @@ Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.ht
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to setup the app on' %}
 {% endparameters %}
 
-{% apiexample customize POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&name=clicktrack&task=setup&enable_text=0 %}
+{% apiexample setup POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&name=clicktrack&task=setup&enable_text=0 %}
   {% response json %}
 {
   "message": "success"
