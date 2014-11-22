@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% info %}
-This App is only available to [Silver accounts and higher]({{root_url}}/pricing)
+This App is only available to [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing)
 {% endinfo %}
 
 This app is our new [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), that supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html). 
