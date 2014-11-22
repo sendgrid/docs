@@ -42,7 +42,9 @@ The host for API requests is
 https://api.sendgrid.com/v3/
 {% endcodeblock %}
 
-All requests must be made over HTTPS. HTTP is not supported.
+{% info %} 
+All requests must be made over HTTPS. HTTP is not supported. 
+{% endinfo %}
 
 {% anchor h2 %}
 Requests
@@ -59,7 +61,7 @@ You must provide an authorization header as described in
 Accept Header
 {% endanchor %}
 
-The API provides JSON responses. The accept header is not currently
+The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is not currently
 required, though it may be required in the future. If not set, the 
 API will use `application/json`.
 
