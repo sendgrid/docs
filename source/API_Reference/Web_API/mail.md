@@ -91,6 +91,22 @@ Send email.
   {% endresponse %}
 {% endapiexample %}
 
+### Call: Sending with a BCC and BCCname
+
+{% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+
+  {% endresponse %}
+{% endapiexample %}
+
 
 * * * * *
 
