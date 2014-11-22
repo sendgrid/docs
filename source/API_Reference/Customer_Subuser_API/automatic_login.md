@@ -24,7 +24,7 @@ If you submit the password and we cannot authenticate the user, the params are r
 {% apiexample geturl POST https://api.sendgrid.com/apiv2/customer.geturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 {
-  "params": "al_username=your_username&al_subuser_name=subuser_username&al_hash=aa39649af578679d3a90d2cc43245d56"
+  "params": "al_username=your_username&amp;al_subuser_name=subuser_username&amp;al_hash=aa39649af578679d3a90d2cc43245d56"
 }
   {% endresponse %}
   {% response xml %}
@@ -40,4 +40,4 @@ If you submit the password and we cannot authenticate the user, the params are r
 {% anchor h2 %}
 iFrame Usage 
 {% endanchor %}
-Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} <iframe src="https://sendgrid.com/account?al_username=your_username&al_subuser_name=subuser_username&al_hash=aa39649af578679d3a90d2cc43245d56"></iframe> {% endcodeblock %}
+Using the parameters returned from the Initial API Call, you can construct the iFrame URL as shown below. {% codeblock %} <iframe src="https://sendgrid.com/account?al_username=your_username&amp;al_subuser_name=subuser_username&amp;al_hash=aa39649af578679d3a90d2cc43245d56"></iframe> {% endcodeblock %}

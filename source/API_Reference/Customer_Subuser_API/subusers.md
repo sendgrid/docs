@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 600
 title: Subusers
 navigation:
    show: true
