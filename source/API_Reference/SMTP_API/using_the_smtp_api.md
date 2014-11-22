@@ -82,6 +82,8 @@ While there is a hard limit of 10,000 addresses that can be sent to in a multipl
 {% endwarning %}
 
 <p>When using the X-SMTPAPI to send to multiple recipients, you must not use the standard SMTP protocols "TO" field to send to multiple recipients as well. Doing so can generate duplicate messages to addresses listed in both. 
+
+For more information on this read <a href="http://tools.ietf.org/html/rfc821"> RFC 821 </a>.
 </p>
 
 <p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header for you on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. In addition, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
