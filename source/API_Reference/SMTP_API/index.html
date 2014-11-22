@@ -33,13 +33,50 @@ The X-SMTPAPI Header
 <em>See <a href="https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html#-Requirements-and-Limitations">Requirments and Limitations</a></em>
 
 <p>
-  <b>To:</b> An array of addresses to send the message to, optionally including the display name.
+  <a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:json %}{
-  "to": [
-    "<ben@example.com>",
-    "Joe Smith <joe@example.com>"
+  "filters": {
+    "footer": {
+      "settings":
+        {
+          "enable": 1,
+          "text/plain": "Thank you for your business"
+        }
+    }
+  }
+}
+{% endcodeblock %}
+
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined. Categories are intended for broader tracking, such as "newsletter" or "password_reset". 
+</p>
+{% codeblock lang:json %}{
+  "category": [
+    "category1",
+    "category2"
   ]
+}
+{% endcodeblock %}
+
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html">Scheduling Parameters</a>: A collection of attributes that can delay sending and allow for faster mail flow.
+</p>
+
+{% codeblock lang:json %}
+{
+  "send_at": 1409348513
+}
+{% endcodeblock %}
+
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+</p>
+{% codeblock lang:json %}{
+  "section": {
+    "%sellerSection%": "Seller information for: %name%",
+    "%buyerSection%": "Buyer information for: %name%"
+  }
 }
 {% endcodeblock %}
 
@@ -61,23 +98,12 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
-  <a href="{{root_url}}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+  <a href=" ">To:</a> An array of addresses to send the message to, optionally including the display name.
 </p>
 {% codeblock lang:json %}{
-  "section": {
-    "%sellerSection%": "Seller information for: %name%",
-    "%buyerSection%": "Buyer information for: %name%"
-  }
-}
-{% endcodeblock %}
-
-<p>
-  <a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined. Categories are intended for broader tracking, such as "newsletter" or "password_reset". 
-</p>
-{% codeblock lang:json %}{
-  "category": [
-    "category1",
-    "category2"
+  "to": [
+    "<ben@example.com>",
+    "Joe Smith <joe@example.com>"
   ]
 }
 {% endcodeblock %}
@@ -90,32 +116,6 @@ The X-SMTPAPI Header
     "orderNumber": "12345",
     "eventID": "6789"
   }
-}
-{% endcodeblock %}
-
-<p>
-  <a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
-</p>
-{% codeblock lang:json %}{
-  "filters": {
-    "footer": {
-      "settings":
-        {
-          "enable": 1,
-          "text/plain": "Thank you for your business"
-        }
-    }
-  }
-}
-{% endcodeblock %}
-
-<p>
-  <a href="{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html">Scheduling Parameters</a>: A collection of attributes that can delay sending and allow for faster mail flow.
-</p>
-
-{% codeblock lang:json %}
-{
-  "send_at": 1409348513
 }
 {% endcodeblock %}
 

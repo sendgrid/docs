@@ -81,7 +81,7 @@ Requirements and Limitations
 While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs at around 1,000 recipients, as this will better allow for the processing load to be distributed. Further, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
 {% endwarning %}
 
-<p>If you use the multiple recipient functionality of the API, you must not send to multiple recipients with the SMTP protocol as well. Doing so can cause duplicates of the message to be sent.
+<p>When using the X-SMTPAPI to send to multiple recipients, you must not use the standard SMTP protocols "TO" field to send to multiple recipients as well. Doing so can generate duplicate messages to addresses listed in both. 
 </p>
 
 <p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header for you on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. In addition, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
