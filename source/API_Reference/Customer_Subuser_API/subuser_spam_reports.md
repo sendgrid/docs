@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 200
 title: Subuser Spam Reports
 navigation:
    show: true

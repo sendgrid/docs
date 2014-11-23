@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 450
 title: Whitelabel
 navigation:
    show: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 0
 title: Event Notification URL
 navigation:
    show: true

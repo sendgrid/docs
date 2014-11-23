@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 500
+weight: 600
 title: Account Limits
 navigation:
    show: true

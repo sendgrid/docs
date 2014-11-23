@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 400
+weight: 550
 title: Apps
 navigation:
    show: true

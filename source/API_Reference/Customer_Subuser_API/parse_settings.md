@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 50
 title: Parse Settings
 navigation:
    show: true

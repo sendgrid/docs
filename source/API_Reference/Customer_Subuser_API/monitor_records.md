@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 400
 title: Monitor Records
 navigation:
    show: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 40
 title: Authenticate a Subuser
 navigation:
    show: true

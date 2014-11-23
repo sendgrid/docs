@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 30
 title: Automatic iFrame Login
 navigation:
    show: true

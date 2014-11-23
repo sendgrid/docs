@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 350
 title: Statistics
 navigation:
    show: true
