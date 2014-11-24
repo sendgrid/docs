@@ -58,7 +58,7 @@ module Jekyll
       end
       
       output += "</ul>"
-      output += "<a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> Edit</a>"
+      output += "<a class=\"edit-link\" href=\"https://github.com/sendgrid/docs/blob/develop/source/#{page['path']}\"><span class=\"icon-edit\"></span> View and Edit</a>"
       output += "</div>"
       puts "generating breadcrumbs for #{@page_url}"
       output
