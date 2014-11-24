@@ -14,6 +14,6 @@ navigation:
 </div>
 ### Creating a Subuser with its own Whitelabel
 
-In this video, Anthony walks us through the creation of a subuser that has its own Whitelable, separate from its Parent account's.
+In this video, Anthony walks us through the creation of a subuser that has its own Whitelabel, separate from its Parent account's.
 
 </div>
