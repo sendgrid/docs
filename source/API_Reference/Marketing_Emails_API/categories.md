@@ -94,10 +94,15 @@ Remove specific categories, or all categories from a Marketing Email.\\
 
 * * * * *
 
-{% anchor h2 %}
+{% anchor h2 %} 
 list 
 {% endanchor %}
 
-To pull a list of all your exisiting Categories or to look to see if a specific Category exists use our [General Statistics API](https://sendgrid.com/docs/API_Reference/Web_API/Statistics/index.html#-Category-List).
+List all categories.
 
-* * * * *
+{% parameters list %} {% parameter 'category[ ]' 'No' 'Must be an existing Category' 'Search to see if a specific Category exists rather than a list of all Categories.' %} 
+{% endparameters %}
+
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %} {% response json %} [ { "category": "CATEGORY" }, { "category": "CATEGORY2" } ] {% endresponse %} {% response xml %} CATEGORY CATEGORY2
+
+{% endresponse %} {% endapiexample %}
