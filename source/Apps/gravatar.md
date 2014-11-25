@@ -5,8 +5,11 @@ title: Gravatar
 navigation:
   show: true
 ---
+{% info %}
+This App is only available to [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing)
+{% endinfo %}
 
-This app inserts an <img> tag at the bottom of the HTML section of an e-mail to display the Gravatar associated with the e-mail sender. Gravatar (an abbreviation for globally recognized avatar) is a service for providing globally-unique avatars preselected by the user in question which are available to any application set to look for such avatars across the web.
+This app inserts an &lt;img/&gt; tag at the bottom of the HTML section of an e-mail to display the Gravatar associated with the e-mail sender. Gravatar (an abbreviation for globally recognized avatar) is a service for providing globally-unique avatars preselected by the user in question which are available to any application set to look for such avatars across the web.
 
 ![gravatar app]({{root_url}}/images/gravatar.png "gravatar app")
 

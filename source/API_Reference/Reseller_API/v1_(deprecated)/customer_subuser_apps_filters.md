@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+ This feature is deprecated, please go to the [Version 3]({{root_url}}/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html) Reseller Customer Subuser Apps page
+{% endwarning %}
+
 {% anchor h2 %}
 List 
 {% endanchor %}

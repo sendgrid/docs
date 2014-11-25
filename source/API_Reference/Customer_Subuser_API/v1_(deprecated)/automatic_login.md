@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+ This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Customer_Subuser_API/automatic_login.html) Customer Subuser API Automatic Login page 
+{% endwarning %}
+
 <div>
 Allow subusers to manage their account from your website using an iframe to our site.
 
