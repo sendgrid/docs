@@ -19,7 +19,7 @@ Create a new monitor record on the account.
  {% parameter task Yes 'Must be set to <code>create</code>' 'Task to create a monitor record' %}
  {% parameter name Yes 'Must be unique to account. Can not be more than 255 characters' 'Unique name to identify this monitor record' %}
  {% parameter email Yes 'Must be in email format' 'Email destination to send the sample to' %}
- {% parameter frequency Yes 'Must be an integer greater than 0' 'Interval of emails between samples' %}
+ {% parameter frequency Yes 'Unsigned integer' 'Interval of emails between samples' %}
 {% endparameters %}
 
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
@@ -48,7 +48,7 @@ Edit an existing Monitor record.
  {% parameter name Yes 'Existing monitor record name' 'The monitor record we are going to edit' %}
  {% parameter new_name No 'Must be unique to account. Can not be more than 255 characters' 'New monitor record name' %}
  {% parameter new_email No 'Must be in email format' 'The new email destination to send the email sample to' %}
- {% parameter new_frequency No 'Must be an integer greater than 0' 'The new intervals of emails between samples' %}
+ {% parameter new_frequency No 'Unsigned integer' 'The new intervals of emails between samples' %}
 {% endparameters %}
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=100 %}

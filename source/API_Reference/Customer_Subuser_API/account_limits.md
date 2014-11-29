@@ -79,11 +79,11 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
 {% parameters recurring %}
  {% parameter 'task' 'Yes' 'Must be set to <code>recurring<code>' 'Task to setup recurring credits' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser you will be applying a recurring credit limit to' %}
- {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The number of credits the subuser will be reset to' %}
+ {% parameter 'credits' 'Yes' 'Unsigned integer' 'The number of credits the subuser will be reset to' %}
  {% parameter 'period' 'Yes' 'Must be either daily, weekly, or monthly' 'How often you want SendGrid to reset the subuser credits' %}
  {% parameter 'startdate' 'No' 'Date must be in YYYY-mm-dd format' 'The date you want to start resetting the subuser credits' %}
  {% parameter 'enddate' 'No' 'Date must be in YYYY-mm-dd format' 'The date you want to stop resetting the subusers credits. After this date, credits will not be added to the account, but can still be consumed' %}
- {% parameter 'initial_credits' 'No' 'Must be an integer greater than 0' 'The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter. Useful when setting up a subuser with partially-consumed credits' %}
+ {% parameter 'initial_credits' 'No' 'Unsigned integer' 'The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter. Useful when setting up a subuser with partially-consumed credits' %}
 {% endparameters %}
 
 
@@ -112,7 +112,7 @@ Set a subusers credits to a specified amount.
 {% parameters total %}
  {% parameter 'task' 'Yes' 'Must be set to <code>total</code>' 'Task to set the credits to the specified amount' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser who will have their credits updated' %}
- {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the subuser will be set to' %}
+ {% parameter 'credits' 'Yes' 'Unsigned integer' 'The total number of credits the subuser will be set to' %}
 {% endparameters %}
 
 
@@ -141,7 +141,7 @@ Increment a subusers credits by a specified amount.
 {% parameters increment %}
  {% parameter 'task' 'Yes' 'Must be set to <code>increment</code>' 'Task to increment the credits by the specified amount' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser who will have their credits incremented' %}
- {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the subuser will be incremented by' %}
+ {% parameter 'credits' 'Yes' 'Unsigned integer' 'The total number of credits the subuser will be incremented by' %}
 {% endparameters %}
 
 
@@ -170,7 +170,7 @@ Decrement a subusers credits by a specified amount.
 {% parameters decrement %}
  {% parameter 'task' 'Yes' 'Must be set to <code>decrement</code>' 'Task to decrement the credits by the specified amount' %}
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser who will have their credits decremented' %}
- {% parameter 'credits' 'Yes' 'Must be an integer and greater than 0' 'The total number of credits the subuser will be decremented by' %}
+ {% parameter 'credits' 'Yes' 'Unsigned integer' 'The total number of credits the subuser will be decremented by' %}
 {% endparameters %}
 
 
