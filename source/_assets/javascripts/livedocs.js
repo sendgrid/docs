@@ -4,20 +4,21 @@
 //based on the jquery plugin lightweight boilerplate
 //http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns-2/
 
-;(function ( $, window, document, undefined ) {
+$(function() {
   $('#credentials').submit(function (e) {
     e.preventDefault();
     username = $('#username').val();
     password = $('#password').val();
     responseFormat = $('#response-format').val();
-
     $.cookie('username', username, { secure:true });
     $.cookie('password', password, { secure:true });
     $.cookie('responseFormat', responseFormat, { secure:true });
 
     $('#credentialsModal').modal('hide');
   });
+});
 
+;(function ( $, window, document, undefined ) {
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>input_class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
   var tryit_button = '<button class="btn btn-success tryit" id="tryit-{{>identifier}}">Try It</button>';
@@ -75,20 +76,6 @@
       form.append('<div class="text-center"><button type="input" class="btn btn-primary request-button">Make Request</button></div>');
 
       Livedocs.updateCurl(livedoc);
-
-      //TODO these event listeners shouldn't be wired up for all elements each time we instantiate the plugin
-      $('#credentials').submit(function (e) {
-        e.preventDefault();
-        username = $('#username').val();
-        password = $('#password').val();
-        responseFormat = $('#response-format').val();
-
-        $.cookie('username', username, { secure:true });
-        $.cookie('password', password, { secure:true });
-        $.cookie('responseFormat', responseFormat, { secure:true });
-
-        $('#credentialsModal').modal('hide');
-      });
 
       Livedocs.addEventHandlers(identifier,id);
 
