@@ -81,7 +81,7 @@ module Jekyll
     </tbody>
     </table>
     <div class="text-center">
-      <button type="input" class="clear-request btn btn-warning">Clear</button>
+      <button type="input" id="clear-request-#{@identifier}" class="clear-request btn btn-warning">Clear</button>
     </div>
   </div>
 </div>
