@@ -4,6 +4,20 @@
 //based on the jquery plugin lightweight boilerplate
 //http://www.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns-2/
 
+$(function() {
+  $('#credentials').submit(function (e) {
+    e.preventDefault();
+    username = $('#username').val();
+    password = $('#password').val();
+    responseFormat = $('#response-format').val();
+    $.cookie('username', username, { secure:true });
+    $.cookie('password', password, { secure:true });
+    $.cookie('responseFormat', responseFormat, { secure:true });
+
+    $('#credentialsModal').modal('hide');
+  });
+});
+
 ;(function ( $, window, document, undefined ) {
   var form_field_template = '<tr><td>{{>name}}</td><td><input type="text" class="{{>input_class}}" name="{{>name}}" {{if required}} placeholder="required" {{/if}}/></td><td>{{>requirements}}</td><td>{{>description}}</td></tr>';
   var cancel_button = '<button class="btn btn-danger cancel" id="cancel-{{>identifier}}">Cancel</button>';
@@ -63,45 +77,7 @@
 
       Livedocs.updateCurl(livedoc);
 
-      //TODO these event listeners shouldn't be wired up for all elements each time we instantiate the plugin
-      $('#credentials').submit(function (e) {
-        e.preventDefault();
-        username = $('#username').val();
-        password = $('#password').val();
-        responseFormat = $('#response-format').val();
-
-        $.cookie('username', username, { secure:true });
-        $.cookie('password', password, { secure:true });
-        $.cookie('responseFormat', responseFormat, { secure:true });
-
-        $('#credentialsModal').modal('hide');
-      });
-
-      $('.tryit').click(function () {
-        Livedocs.getCredentials();
-        var id = $(this).attr('id');
-        var identifier = id.substr(id.indexOf('-') + 1, id.length);
-        Livedocs.toggleLivedoc(identifier, true);
-      })
-
-      $('.cancel').click(function () {
-        var id = $(this).attr('id');
-        var identifier = id.substr(id.indexOf('-') + 1, id.length);
-        Livedocs.toggleLivedoc(identifier, false);
-      });
-
-      $('.settings').click(function () {
-        $('#credentialsModal').modal();
-      });
-
-      $('.clear-request').click(function () {
-        Livedocs.clearResults($(this).closest('.live-call'));
-      });
-
-      $('#' + id + ' .live-form .live-params input').on("blur", function() {
-        livedoc = $(this).closest('.live-doc');
-        Livedocs.updateCurl(livedoc);
-      });
+      Livedocs.addEventHandlers(identifier,id);
 
       form.submit(function (e) {
         e.preventDefault();
@@ -188,6 +164,34 @@
       var cancel_html = $.render.cancel_button({ identifier: identifier });
       var settings_html = $.render.settings_button({ identifier: identifier });
       livedoc.prevAll('.anchor-wrap').first().after('<div>' + tryit_html + cancel_html + settings_html + '</div>');
+    }
+
+    Livedocs.addEventHandlers = function(identifier, id) {
+      $('#' + id + ' .live-form .live-params input').on("blur", function() {
+        livedoc = $(this).closest('.live-doc');
+        Livedocs.updateCurl(livedoc);
+      });
+
+      $('#clear-request-' + identifier).click(function () {
+        Livedocs.clearResults($(this).closest('.live-call'));
+      });
+
+      $('#tryit-' + identifier).click(function () {
+        Livedocs.getCredentials();
+        var id = $(this).attr('id');
+        var identifier = id.substr(id.indexOf('-') + 1, id.length);
+        Livedocs.toggleLivedoc(identifier, true);
+      })
+
+      $('#cancel-' + identifier).click(function () {
+        var id = $(this).attr('id');
+        var identifier = id.substr(id.indexOf('-') + 1, id.length);
+        Livedocs.toggleLivedoc(identifier, false);
+      });
+
+      $('#settings-' + identifier).click(function () {
+        $('#credentialsModal').modal();
+      });
     }
 
     Livedocs.getFormFieldHtml = function(identifier) {
