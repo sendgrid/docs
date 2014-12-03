@@ -169,7 +169,7 @@ Append a monitor record to an existing record onto a customer subuser.
 
 {% parameters append %}
  {% parameter 'task' 'Yes' 'Must be set to <em>append</em>' 'The task required to append a monitor record to a customer subuser' %}
- {% parameter 'user' 'Yes' 'The customer subuser must be registered under your account' 'The user we will append a monitor record to' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The user we will append a monitor record to' %}
  {% parameter 'name' 'No' 'Must be a valid monitor record' 'The name of the monitor record we will be appending' %}
 {% endparameters %}
 
@@ -199,7 +199,7 @@ Detach a customer subuser from a monitor record.
 
 {% parameters detach %}
  {% parameter 'task' 'Yes' 'Must be set to <em>detach</em>' 'The task required to detach a monitor record to a customer subuser' %}
- {% parameter 'user' 'Yes' 'The customer subuser must be registered under your account' 'The customer subuser we will detach the monitor record from' %}
+ {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we will detach the monitor record from' %}
 {% endparameters %}
 
 
