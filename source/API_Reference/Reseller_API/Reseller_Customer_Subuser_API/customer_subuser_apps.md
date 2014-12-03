@@ -12,7 +12,7 @@ List
 
 List all of the available apps.
 
-Note: The *name* entry is used in all the other API calls to identify a app.
+Note: The *name* entry is used in all the other API calls to identify an app.
 
 
 {% parameters list %}
