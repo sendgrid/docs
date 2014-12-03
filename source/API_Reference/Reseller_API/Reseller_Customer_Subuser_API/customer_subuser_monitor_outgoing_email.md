@@ -8,13 +8,13 @@ navigation:
 
 Receive a sample of an outgoing message by a specific customer subuser.
 
-The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer subuser. Multiple customer subuser can be appended to a single monitor record.
+The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer subuser. Multiple customer subusers can be appended to a single monitor record.
 
 {% anchor h2 %}
 Create Monitor Record 
 {% endanchor %}
 
-Obtain a complete list of all customer subuser.
+Obtain a complete list of all customer subusers.
 
 
 {% parameters create %}
@@ -106,7 +106,7 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 List All Monitor Records 
 {% endanchor %}
 
-List all available monitor records a reseller has.
+List all available monitor records that a reseller has.
 
 
 {% parameters list %}
@@ -161,15 +161,15 @@ List all available monitor records a reseller has.
 * * * * *
 
 {% anchor h2 %}
-Append A Customer Subuser To A Monitor Record 
+Append a Customer Subuser To A Monitor Record 
 {% endanchor %}
 
-Append a monitor record to a existing record onto a customer subuser.
+Append a monitor record to an existing record onto a customer subuser.
 
 
 {% parameters append %}
  {% parameter 'task' 'Yes' 'Must be set to <em>append</em>' 'The task required to append a monitor record to a customer subuser' %}
- {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The user we will append a monitor record to' %}
+ {% parameter 'user' 'Yes' 'The customer subuser must be registered under your account' 'The user we will append a monitor record to' %}
  {% parameter 'name' 'No' 'Must be a valid monitor record' 'The name of the monitor record we will be appending' %}
 {% endparameters %}
 
@@ -199,7 +199,7 @@ Detach a customer subuser from a monitor record.
 
 {% parameters detach %}
  {% parameter 'task' 'Yes' 'Must be set to <em>detach</em>' 'The task required to detach a monitor record to a customer subuser' %}
- {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we will detach the monitor record from' %}
+ {% parameter 'user' 'Yes' 'The customer subuser must be registered under your account' 'The customer subuser we will detach the monitor record from' %}
 {% endparameters %}
 
 
