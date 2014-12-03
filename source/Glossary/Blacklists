@@ -32,26 +32,26 @@ Checking Your IP Address
 
 Here are two aggregation websites that anyone can use to check on the status of their IP:
 
-* http://multirbl.valli.org/
-* http://www.mxtoolbox.com/blacklists.aspx
+* [http://multirbl.valli.org/](http://multirbl.valli.org/)
+* [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx)
 
 Delisting Request Forms
 
 Below are links to the delisting forms used by the more popular external blacklisting services:
 
-* AOL
-* AT&T
-* Barracuda
-* Comcast
-* Google
-* HotMail
-* McAfee
-* Microsoft/Outlook
-* Mimecast
-* SpamCop
-* Spam Rats
-* Spamhaus
-* SURBL
-* Trend Micro
-* URIBL
-* Yahoo
+* [AOL](http://rbl.att.net/cgi-bin/rbl/block_admin.cgi)
+* [AT&T](http://postmaster.aol.com/SupportRequest.php)
+* [Barracuda](http://www.barracudacentral.org/rbl/removal-request)
+* [Comcast](http://postmaster.comcast.net/block-removal-request.html)
+* [Google](https://support.google.com/mail/contact/msgdelivery)
+* [HotMail](https://support.msn.com/eform.aspx?productKey=edfsmsbl&ct=eformts)
+* [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
+* [Microsoft/Outlook](https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts)
+* [Mimecast](http://www.mimecast.com/senderfeedback)
+* [SpamCop](http://www.spamcop.net/bl.shtml)
+* [Spam Rats](http://www.spamrats.com/removal.php)
+* [Spamhaus](http://www.spamhaus.org/lookup/)
+* [SURBL](http://www.surbl.org/surbl-analysis)
+* [Trend Micro](https://ers.trendmicro.com/reputations)
+* [URIBL](https://admin.uribl.com/)
+* [Yahoo](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
