@@ -7,7 +7,7 @@ navigation:
 seo:
   title: SMTP API, Advanced Email Features -  SendGrid Documentation | SendGrid 
   override: true
-  description: The SMTP API gives you advanced control over emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and more. 
+  description: The SMTP API gives you advanced control over the emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and more. 
 ---
 
 <p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email.</p>
@@ -33,7 +33,7 @@ The X-SMTPAPI Header
 <em>See <a href="https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html#-Requirements-and-Limitations">Requirments and Limitations</a></em>
 
 <p>
-  <a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
+  <a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings is already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:json %}{
   "filters": {
