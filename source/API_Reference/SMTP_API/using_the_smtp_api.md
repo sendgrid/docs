@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-You can add as many of the SMTP API methods to a single large JSON string that can be passed to SendGrid with your messages. To do this, add the JSON string to your message under a header named "X-SMTPAPI" like this:
+You can add as many of the SMTP API methods as you want to a single large JSON string, and pass that JSON string to SendGrid with your messages. To do this, add the JSON string to your message under a header named "X-SMTPAPI" like this:
 
 {% codeblock lang:json %}{
   "to": [
@@ -78,14 +78,14 @@ Requirements and Limitations
 {% endanchor %}
 
 {% warning %}
-While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs at around 1,000 recipients, as this will better allow for the processing load to be distributed. Further, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
+While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs to around 1,000 recipients, to better allow for the processing load to be distributed. Furthermore, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
 {% endwarning %}
 
-<p>When using the X-SMTPAPI to send to multiple recipients, you must not use the standard SMTP protocols "TO" field to send to multiple recipients as well. Doing so can generate duplicate messages to addresses listed in both. 
+<p>When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. 
 
-For more information on this read <a href="http://tools.ietf.org/html/rfc821"> RFC 821 </a>.
+For more information on this, read <a href="http://tools.ietf.org/html/rfc821"> RFC 821 </a>.
 </p>
 
-<p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header for you on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. In addition, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
+<p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. Additionally, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
 
-<p>When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted on errors. More info: <a href="https://support.sendgrid.com/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address"></a>Bounce Forwarding</a> </p>
+<p>When using the API, if our system encounters a parsing error the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors. More info: <a href="https://support.sendgrid.com/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address"></a>Bounce Forwarding</a> </p>
