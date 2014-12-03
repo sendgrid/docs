@@ -8,6 +8,11 @@ navigation:
    show: true
 ---
 
+{% warning %}
+  This feature is deprecated. Please go to the [Version 2]({{root_url}}/API_Reference/Customer_Subuser_API/subuser_spam_reports.html) Customer Subuser Spam Reports page 
+
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve Spam Reports 
 {% endanchor %}
