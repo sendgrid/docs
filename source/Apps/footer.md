@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+{% info %}
+This App is only available to <a href="https://sendgrid.com/pricing">Silver accounts and higher</a>
+{% endinfo %}
+
 The Footer App will insert a custom footer at the bottom of the text and HTML bodies.
 
 ![Footer App Image]({{root_url}}/images/footer.png "Footer")
