@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+{% info %}
+This App is only available to <a href="https://sendgrid.com/pricing">Silver accounts and higher</a>
+{% endinfo %}
+
 The Address Whitelist App whitelists a specified e-mail address or domain for which mail should never be suppressed. For example, you own the domain example.com, and one or more of your recipients use email@example.com addresses, by placing example.com in the Address Whitelist App, all bounces, blocks and unsubscribes logged for that domain will be ignored and sent to as if under normal sending conditions.
 
 ![Address Whitelist App Image]({{root_url}}/images/address_whitelist.png "Address Whitelist")
