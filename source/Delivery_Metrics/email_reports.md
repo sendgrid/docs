@@ -20,11 +20,11 @@ The Email Reports tab of the website allows you to view logs of all your bounced
       </tr>
       <tr>
          <td>Blocks</td>
-         <td>When your IP address has been added to a blacklist, has been blocked by an ISP or messaging organization, the effected email shows up on this list. Typically it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.</td>
+         <td>When your IP address has been added to a blacklist or has been blocked by an ISP or messaging organization, the effected email shows up on this list. Typically it is possible to have your IP address removed from a black list, and some lists automatically do this after a period of time.</td>
       </tr>
       <tr>
          <td>Spam Reports</td>
-         <td>If a person whom has received your email has reported that received email as spam, we are notified by the ISP and we place the email that originated the spam report here.</td>
+         <td>If a person who has received your email reports that email as spam, we are notified by the ISP and we add that email to a spam report.</td>
       </tr>
       <tr>
          <td>Invalid Emails</td>
@@ -32,14 +32,14 @@ The Email Reports tab of the website allows you to view logs of all your bounced
       </tr>
       <tr>
          <td>Unsubscribes</td>
-         <td>Note that any email on this list will not be delivered to by SendGrid in any future mailings.</td>
+         <td>Note that SendGrid will not attempt delivery to any email on this list in future mailings.</td>
       </tr>
    </tbody>
 </table>
 
-With the exception of the Block list, all emails listed on these lists will be dropped from any future attempts for delivery, this is because redelivering emails to these addresses will most likely be unsuccessful, and definitely negatively impact your Sender Reputation.
+With the exception of the Block list, any email contained in these lists will be dropped from any future attempts for delivery, because redelivering emails to these addresses will most likely be unsuccessful, and will definitely impact your Sender Reputation negatively. 
 
-You can also control the way bounces are dealt with for your account via a settings button available from the [Bounce List page](https://sendgrid.com/bounces).
+You can also control the way that bounces are dealt with for your account via a settings button available on the [Bounce List page](https://sendgrid.com/bounces).
 
 ![]({{root_url}}/images/email_reports.png)
 

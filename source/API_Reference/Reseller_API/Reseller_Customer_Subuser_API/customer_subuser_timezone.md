@@ -109,7 +109,7 @@ This API call will return the timezone currently set for your customer subuser.
 Edit Timezone 
 {% endanchor %}
 
-This API call will allow you to set timezone for your customer subuser
+This API call will allow you to set the timezone for your customer subuser
 
 
 {% parameters edit %}
