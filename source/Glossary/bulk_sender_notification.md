@@ -9,7 +9,6 @@ seo:
   override: true
   description: SendGrid will notify ISPs that you are going to send a high volume of email 
 ---
-Bulk Sender Notification
 
 Prevent your e-mails from being bulked! 
 
