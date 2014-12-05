@@ -85,7 +85,7 @@ Once the DNS has propagated, you’ll be able to receive email to any email addr
 Prepare the Code to Run on Windows Azure
 {% endanchor%}
 
-Before you can put the code in place, you need to prepare you source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
+Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
 Now set up your repository within the Windows Azure interface:
 
 1.	Click the website name from your all items list
@@ -136,7 +136,7 @@ Open up your command line on your local machine and prepare it for code:
 setting up source control.
 5.	`git push azure master`
 
-	* This is the command that pushes the code to the Azure cloud
+	* This is the command that pushes the code to Azure cloud
 
 One last thing, you need to update the receiving email address:
 
