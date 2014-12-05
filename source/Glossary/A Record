@@ -1,0 +1,9 @@
+"{% anchor h2%}
+A Record (Address)
+{% endanchor %}"
+
+What it should look like:
+o1.subdomain.yourdomain.com.  |  A  |  192.168.250.1
+ 
+What it does: 
+The A record is what links your dedicated IP address back to your chosen subdomain.  Creating this record will point traffic for o1.subdomain.yourdomain.com back to your dedicated IP, and vice versa.  You can create multiple A records for a domain with as many IP addresses as you wish, however you can only whitelabel one IP to one domain at a time.
