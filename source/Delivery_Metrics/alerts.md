@@ -50,6 +50,8 @@ Daily delivery rate drops below X%
 
 An email is sent when your rate of delivery drops below the specified percentage.
 
+See more information about [Daily delivery rates](https://support.sendgrid.com/hc/en-us/articles/203805163?flash_digest=97d89bf8df6b346d5db106a66931de6044788f99)
+
 * * * * *
 
 {% anchor h2 %}
