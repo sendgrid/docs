@@ -1,9 +1,11 @@
 ---
 layout: page
 weight: 0
-title: SendGrid for New Relic
+title: New Relic
 navigation:
   show: true
+seo:
+  title:  SendGrid for New Relic
 ---
 
 Access your email statistics via the New Relic Dashboard.
