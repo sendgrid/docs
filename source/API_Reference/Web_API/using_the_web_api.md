@@ -94,7 +94,7 @@ success
 {% anchor h2 %}
 Authentication 
 {% endanchor %}
-<p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.</p>
+<p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials will be the same as what you used for your SMTP authentication and/or website.</p>
 <ul>
 	<li><strong>api_user</strong> - This is the same credential used for your SMTP settings, and for logging into the website.</li>
 	<li><strong>api_key</strong> - This is the same password to authenticate over SMTP, and for logging into the website.</li>

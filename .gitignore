@@ -8,6 +8,7 @@ _config.deploy.yml
 .DS_Store
 .sass-cache
 .gist-cache
+.idea
 .pygments-cache
 _deploy
 sass.old

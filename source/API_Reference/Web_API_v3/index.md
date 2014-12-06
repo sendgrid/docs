@@ -126,7 +126,7 @@ Rate Limits
 All calls within the Web API are allotted a specific number of requests
 per refresh period.
 
-Each Web API requests returns the following header information 
+Each Web API request returns the following header information 
 regarding rate limits and number of requests left.
 
 Depending on the endpoint you are trying to reach, it will have a
@@ -228,7 +228,7 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
 Search & Parameters
 {% endanchor %}
 
-Some resources allow you to search by a specific field. Other resources
+Some resources allow for you to search by a specific field. Other resources
 require you to append a parameter to the URI.
 
 In this example, we will display a paginated uri example, searching for
@@ -326,7 +326,7 @@ successful Web API requests.
 Failed Requests
 {% endanchor %}
 
-The general format guidelines are displayed with the accompanying status
+The general format guidelines are displayed when the accompanying status
 code is returned.
 
 {% codeblock lang:http %}
@@ -350,7 +350,7 @@ Content-Type: application/json
 Pagination
 {% endanchor %}
 
-When a request is made with pagination query, the following data is
+When a request is made with a pagination query, the following data is
 included in the header to allow for easy traversal of previous, current,
 first, and last page of the data set.
 

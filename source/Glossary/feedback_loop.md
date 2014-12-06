@@ -2,7 +2,7 @@
 seo:
   title: Feedback Loop
   override: true
-  description: A feedback loop is the process by which an ISP forwards emails reported as spamfor immediate removal by the sender.
+  description: A feedback loop is the process by which an ISP forwards emails reported as spam for immediate removal by the sender.
 title: Feedback Loop
 layout: page
 weight: 1000

@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+{% info %}
+  These API requests are Account Wide settings, unlike the SMTP API which will change the status at the individual email message level.
+{% endinfo %}
+
 For a more detailed description of each of the Apps below, please visit the [Apps]({{root_url}}/Apps/) page.
 
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)

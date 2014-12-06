@@ -12,9 +12,9 @@ These are actions that directly affect your subuser. We provide access via XML a
 In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username. 
 {% endwarning %}
 
-(% info %)
+{% info %}
 For recommended steps when creating Subusers using the API, check out [this Sendgrid Knowledgebase article.](https://support.sendgrid.com/hc/en-us/articles/201750787)
-(% endinfo %)
+{% endinfo %}
 
 
 {% anchor h2 %}

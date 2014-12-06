@@ -12,7 +12,7 @@ Allow customer subusers to manage their account from your website using an ifram
 Initial API Call 
 {% endanchor %}
 
-In order to login your customer subuser, you need to contact our web API to retrieve the unique URL to automatically login your customer subuser. Then display the generated URL to automatically login your customer subuser.
+In order to login your customer subuser, you need to contact our web API to retrieve the unique URL, then display the generated URL to automatically log them in.
 
 
 {% parameters call %}

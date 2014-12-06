@@ -21,8 +21,6 @@ Transactional email is relationship content that “facilitates an already agree
 
 These emails typically contain information a user wants or needs and consequently have the highest open rates across all categories of email.
 
-Our 2012 study revealed that 79% of web applications rank transactional email as an important tool to acquire new customers. Almost 90% rely on it for their customer retention efforts and 71.5% believe it’s important to their overall marketing strategy.
-
 Because transactional email is so desired, you want to make sure that it consistently reaches your customers’ inboxes. In order to ensure strong email deliverability, rely on a trusted cloud-email service like SendGrid.
 
 SendGrid’s [transactional email platform](https://sendgrid.com/transactional-email) provides:
@@ -33,5 +31,10 @@ SendGrid’s [transactional email platform](https://sendgrid.com/transactional-e
 * Live Customer Support: 24/7 email, phone, and chat support
 
 Transactional email is an incredibly effective communication tool that can help drive revenue, reduce support costs, and build customer loyalty. As the most desired and expected form of email communication, transactional email can help grow your business and should be an integral component of any customer communication program.
+
+To make sure you're sending the most effective Transactional email, make sure you are building a good email with a good visual, concise content, and appropriate headers.
+
+Here are a few good "tools" you can use to get the most out of your Transactional email sending:
+A good visual email means the email shows up in a clear and appealing manner to the consumer.  Conscise content means the email is formatted clearly and there is a good ratio of text, hyperlinks, and pictures.  To check your code for these Transactional emails, use our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) or [API Reference Index](https://sendgrid.com/docs/API_Reference/index.html). The [SMTPAPI header](https://sendgrid.com/docs/API_Reference/SMTP_API/smtpapi_validator.html) will validate the header you've used for SMTP API, and the [SendGrid List Assist](https://sendgrid.com/blog/introducing-sendgrid-list-assist/) will help you update your email list to get the best deliverability.
 
 To learn more about how to maximize your transactional email program, read our free guide [Leveraging Transactional Email for Success](https://sendgrid.com/resources/what-is-transactional-email?mc=Direct&mcd=email_library).
