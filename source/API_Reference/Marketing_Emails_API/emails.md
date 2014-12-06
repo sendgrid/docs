@@ -137,10 +137,10 @@ Remove one or more emails from a Recipient List.
 {% parameters delete %} 
   
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
-  {% parameter email Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List.' %}
+  {% parameter email[] Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List. May list multiple addresses with multiple <code>email[]</code> parameters' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/email/delete list=Test&email=example%40gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample delete POST https://api.sendgrid.com/api/newsletter/lists/email/delete list=Test&email[]=example@gmail.com&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "removed": 1
