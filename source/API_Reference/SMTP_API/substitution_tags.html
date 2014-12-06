@@ -131,13 +131,18 @@ Email HTML content:
 Nested Substitutions
 {% endanchor %}
 
-You can have up to 4 nested substitutions 1->2->3->4->[text]
+You can have up to 4 nested substitutions. Any deeper nesting will result in the tag being printed in your email.
 
- sub->section->sub->section2->[sub 5] -- sub 5 will not be replaced even if defined 
+Example: **substitution1** replaced by **substitution2** replaced by **substitution3** replaced by **substitution4** replaced by **[substitution5]** - the email shows "[substitution5]"
+
+This works for [section tags]({{root_url}}/API_Reference/SMTP_API/section_tags.html) as well:
+
+Example: **substitution1** replaced by **section1** replaced by **substitution2** replaced by **section2** replaced by **[substitution5]** -- the email shows "[substitution5]"
  
  Please note:
- -Subs within sections work 
- -Sections within subs work 
- -Sections within sections work 
- 
+
+* Substitution tags within section tags work
+* Section tags within ubstitution tags work
+* Section tagss within section tags work
+* Section tags can only be added via substitution tags
 
