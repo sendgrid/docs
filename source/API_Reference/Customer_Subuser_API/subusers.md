@@ -1,47 +1,44 @@
 ---
 layout: page
 weight: 650
-title: Subusers
+title: Subuser Management
 navigation:
    show: true
 ---
 
-These are actions that directly affect your subuser. We provide access via XML and JSON.
+These commands allow the creation, management, and deletion of subusers.
 
 {% warning %}
-In both creating and searching for a subuser account, you are using the USERNAME parameter, while in all other cases you are using the USER parameter. When you are creating a subuser, there is no existing USER parameter to reference, so you are creating one. When you are searching for a subuser, you are authenticating to our servers with a valid username. 
+In both creating and searching for a subuser, use the <code>username</code> parameter. In other commands, use the <code>user</code> parameter. When creating a subuser, there is no existing <code>user</code> parameter to reference, and one is being created. 
 {% endwarning %}
 
-(% info %)
+{% info %}
 For recommended steps when creating Subusers using the API, check out [this Sendgrid Knowledgebase article.](https://support.sendgrid.com/hc/en-us/articles/201750787)
-(% endinfo %)
-
+{% endinfo %}
 
 {% anchor h2 %}
 Create a Subuser 
 {% endanchor %}
 
-
 {% parameters create %}
- {% parameter 'username' 'Yes' 'No more than 64 characters' 'The subusers new username' %}
- {% parameter 'password' 'Yes' 'Must be at least 6 characters' 'New password of subuser' %}
- {% parameter 'confirm_password' 'Yes' 'Must match password parameter, must be at least 6 characters' 'Confirm new password' %}
- {% parameter 'email' 'Yes' 'Must be in email format, no more than 64 characters' 'Email address of new subuser' %}
- {% parameter 'first_name' 'Yes' 'No more than 50 characters' 'First name of new subuser' %}
- {% parameter 'last_name' 'Yes' 'No more than 50 characters' 'Last name of new subuser' %}
- {% parameter 'address' 'Yes' 'No more than 100 characters' 'Address of new subuser' %}
- {% parameter 'city' 'Yes' 'No more than 100 characters' 'City of new subuser' %}
- {% parameter 'state' 'Yes' 'No more than 100 characters' 'State of new subuser' %}
- {% parameter 'zip' 'Yes' 'No more than 50 characters' 'Zip of new subuser. This field is not validated for correct value. It is up to developer to check for valid zip code.' %}
- {% parameter 'country' 'Yes' 'No more than 100 characters' 'Country of new subuser' %}
- {% parameter 'phone' 'Yes' 'No more than 50 characters' 'Phone number of new subuser' %}
- {% parameter 'website' 'Yes' 'No more than 255 characters' 'Website of new subuser' %}
- {% parameter 'company' 'Yes' 'No more than 255 characters' 'Company of new subuser' %}
- {% parameter 'mail_domain' 'No' 'A mail domain must already be setup with SendGrid, please contact [support@sendgrid.com](mailto:support@sendgrid.com) to have one setup' 'Mail domain of new subuser' %}
+ {% parameter username Yes 'No more than 64 characters' 'New subuser username' %}
+ {% parameter password Yes 'At least 6 characters' 'New subuser password' %}
+ {% parameter confirm_password Yes 'Match <code>password</code> argument' 'Confirm new password' %}
+ {% parameter email Yes 'Valid email address, no more than 64 characters' 'New subuser email. This is an administrative contact address for SendGrid' %}
+ {% parameter first_name Yes 'No more than 50 characters' 'New subuser profile first name' %}
+ {% parameter last_name Yes 'No more than 50 characters' 'New subuser profile last name' %}
+ {% parameter address Yes 'No more than 100 characters' 'New subuser profile street address' %}
+ {% parameter city Yes 'No more than 100 characters' 'New subuser profile city' %}
+ {% parameter state Yes 'No more than 100 characters' 'New subuser profile state' %}
+ {% parameter zip Yes 'No more than 50 characters' 'New subuser profile postal code' %}
+ {% parameter country Yes 'Valid [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code' 'New subuser profile country code' %}
+ {% parameter phone Yes 'No more than 50 characters' 'New subuser profile phone number' %}
+ {% parameter website Yes 'No more than 255 characters' 'New subuser profile website' %}
+ {% parameter company Yes 'No more than 255 characters' 'New subuser profile company name' %}
+ {% parameter mail_domain No 'Existing [whitelabel record]({{root_url}}/API_Reference/Customer_Subuser_API/whitelabel.html) on the parent user' 'New subuser whitelabel. Be mindful of IP assignment in relation to whitelabel record' %}
 {% endparameters %}
 
-
-{% apiexample create POST https://api.sendgrid.com/apiv2/customer.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=example@example.com&country=US&phone=555-5555 %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/customer.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=subuser_username&website=domain.com&password=subuser_password&confirm_password=subuser_password&first_name=subuser_first_name&last_name=subuser_last_name&address="123 Sesame Street"&city="New York"&state=NY&zip=10128&email=subuser@domain.com&country=US&phone="(999) 555-5555" %}
   {% response json %}
 {
   "message": "success"
@@ -66,11 +63,11 @@ This call will delete a subuser and will disable all tracked links on sent messa
 {% endwarning %}
 
 {% parameters delete %}
- {% parameter 'user' 'Yes' 'Must be a valid subuser name.' 'The subuser to delete.' %}
+ {% parameter user Yes 'Must be existing subuser name' 'Subuser to delete' %}
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=example@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=subuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -91,24 +88,22 @@ Retrieve Subusers
 {% endanchor %}
 Obtain a complete list of all subusers.
 
-
 {% parameters get %}
- {% parameter 'task' 'Yes' 'Must be set to **get** in order to retrieve user information' %}
- {% parameter 'username' 'No' 'Search filter, subuser that is registered under you' %}
- {% parameter 'email' 'No' 'Search filter, email address subuser was registered with' %}
- {% parameter 'active' 'No' 'Search filter, whether or not the subuser is currently active' %}
- {% parameter 'first_name' 'No' 'Search filter, first name of subuser' %}
- {% parameter 'last_name' 'No' 'Search filter, last name of subuser' %}
- {% parameter 'address' 'No' 'Search filter, address of subuser' %}
- {% parameter 'city' 'No' 'Search filter, city of subuser' %}
- {% parameter 'state' 'No' 'Search filter, state of subuser' %}
- {% parameter 'country' 'No' 'Search filter, country of subuser' %}
- {% parameter 'zip' 'No' 'Search filter, zipcode of subuser' %}
- {% parameter 'phone' 'No' 'Search filter, phone number of subuser' %}
- {% parameter 'website' 'No' 'Search filter, website of subuser' %}
- {% parameter 'company' 'No' 'Search filter, company of subuser' %}
+ {% parameter task Yes 'Must be set to <code>get</code>' 'Task to get list of subusers' %}
+ {% parameter username No 'Valid username format' 'Optional string to filter results against' %}
+ {% parameter email No 'Valid email format' 'Optional string to filter results against' %}
+ {% parameter active No '0 or 1' 'Optional flag to filter results against' %}
+ {% parameter first_name No 'Valid first_name format' 'Optional string to filter results against' %}
+ {% parameter last_name No 'Valid last_name format' 'Optional string to filter results against' %}
+ {% parameter address No 'Valid street address format' 'Optional string to filter results against' %}
+ {% parameter city No 'Valid city format' 'Optional string to filter results against' %}
+ {% parameter state No 'Valid state format' 'Optional string to filter results against' %}
+ {% parameter country No 'Valid country format' 'Optional string to filter results against' %}
+ {% parameter zip No 'Valid zip format' 'Optional string to filter results against' %}
+ {% parameter phone No 'Valid phone format' 'Optional string to filter results against' %}
+ {% parameter website No 'Valid website format' 'Optional string to filter results against' %}
+ {% parameter company No 'Valid company format' 'Optional string to filter results against' %}
 {% endparameters %}
-
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get %}
   {% response json %}
@@ -187,17 +182,110 @@ Obtain a complete list of all subusers.
 * * * * *
 
 {% anchor h2 %}
-Enable a Subuser 
+Update Subuser Username 
 {% endanchor %}
-Enable a subuser so they may start sending out emails again. This call will not enable website access.
 
+{% warning %}
+Subuser username is used to access website and API. Changes occur immediately. To safely alter login credentials without access downtime, use [Multiple Credentials]({{root_url}}/API_Reference/Web_API/multiple_credentials.html).
+{% endwarning %}
 
-{% parameters enable %}
- {% parameter 'user' 'Yes' 'Must be in email format' 'The subuser you are planning to enabling' %}
+{% parameters updateSubuserUsername %}
+ {% parameter task Yes 'Must be set to <code>setusername</code>' 'Task to update subuser username' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to update username of' %}
+ {% parameter username Yes 'Valid username format' 'New username for subuser' %}
 {% endparameters %}
 
+{% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setusername&user=subuser_username&username=newsubuser_username %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
 
-{% apiexample enable POST https://api.sendgrid.com/apiv2/customer.enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
+  {% endresponse %}
+{% endapiexample %}
+
+* * * * *
+
+{% anchor h2 %}
+Update Subuser Password 
+{% endanchor %}
+Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords must be updated.
+
+{% parameters updateSubuserPassword %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to update password of' %}
+ {% parameter password Yes 'At least 6 characters' 'New password for subuser' %}
+ {% parameter confirm_password Yes 'Match <code>password</code> argument' 'Confirm new password' %}
+{% endparameters %}
+
+{% apiexample updateSubuserPassword POST https://api.sendgrid.com/apiv2/customer.password api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&password=newPassword&confirm_password=newPassword %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+
+  {% endresponse %}
+{% endapiexample %}
+
+* * * * *
+
+{% anchor h2 %}
+Update Subuser Email Address 
+{% endanchor %}
+This is the administrative contact address, used by SendGrid to contact the user. Unrelated to sending address information.
+
+{% parameters updateSubuserEmailAddress %}
+ {% parameter task Yes 'Must be set to <code>setEmail</code>' 'Task to update subuser email address' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to update email address of' %}
+ {% parameter email Yes 'Valid email format' 'New administrative contact address' %}
+{% endparameters %}
+
+{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=subuser_username&email=newsubuser_username %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+
+  {% endresponse %}
+{% endapiexample %}
+
+* * * * *
+
+{% anchor h2 %}
+Update Subuser Profile 
+{% endanchor %}
+Update Subuser profile information.
+
+{% parameters updateprofile %}
+ {% parameter task Yes 'Must be set to <code>set</code>' 'Task to update subuser profile' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to update profile' %}
+ {% parameter first_name No 'Valid first_name format' 'Optional string to filter results against' %}
+ {% parameter last_name No 'Valid last_name format' 'Optional string to filter results against' %}
+ {% parameter address No 'Valid street address format' 'Optional string to filter results against' %}
+ {% parameter city No 'Valid city format' 'Optional string to filter results against' %}
+ {% parameter state No 'Valid state format' 'Optional string to filter results against' %}
+ {% parameter country No 'Valid country format' 'Optional string to filter results against' %}
+ {% parameter zip No 'Valid zip format' 'Optional string to filter results against' %}
+ {% parameter phone No 'Valid phone format' 'Optional string to filter results against' %}
+ {% parameter website No 'Valid website format' 'Optional string to filter results against' %}
+ {% parameter company No 'Valid company format' 'Optional string to filter results against' %}
+{% endparameters %}
+
+{% apiexample updateprofile POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=subuser_username&first_name=newFirstName&last_name=&newLastName %}
   {% response json %}
 {
   "message": "success"
@@ -216,13 +304,11 @@ Enable a subuser so they may start sending out emails again. This call will not 
 {% anchor h2 %}
 Disable a Subuser 
 {% endanchor %}
-This prevents them from sending out emails with SendGrid.
-
+Sets subuser's <code>active</code> flag to <code>0</code>. Prevents subuser from sending email. Does not affect website login permissions.
 
 {% parameters disable %}
- {% parameter 'user' 'Yes' 'Must be in email format' 'The subuser you are planning to disabling' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to disable email permissions' %}
 {% endparameters %}
-
 
 {% apiexample disable POST https://api.sendgrid.com/apiv2/customer.disable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -241,17 +327,15 @@ This prevents them from sending out emails with SendGrid.
 * * * * *
 
 {% anchor h2 %}
-Enable Website Access To A Subuser 
+Enable a Subuser 
 {% endanchor %}
-Allow a subuser to login to the SendGrid.com website. This call will not enable the subuser to send out emails.
+Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to send email. Does not affect website login permissions. New subusers are set to active by default.
 
-
-{% parameters enablewebsite %}
- {% parameter 'user' 'Yes' 'Must be in email format' 'The subuser you are planning to grant website access' %}
+{% parameters enable %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to enable email permissions' %}
 {% endparameters %}
 
-
-{% apiexample enablewebsite POST https://api.sendgrid.com/apiv2/customer.website_enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
+{% apiexample enable POST https://api.sendgrid.com/apiv2/customer.enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -270,11 +354,10 @@ Allow a subuser to login to the SendGrid.com website. This call will not enable 
 {% anchor h2 %}
 Disable Website Access To A Subuser 
 {% endanchor %}
-Disallow a subuser to login to the SendGrid.com website. This call will not prevent them from sending emails.
-
+Disallow a subuser to login to the SendGrid website. Does not affect email sending permissions.
 
 {% parameters disablewebsite %}
- {% parameter 'user' 'Yes' 'Must be in email format' 'The subuser you are planning to disallow website access' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to disable website access' %}
 {% endparameters %}
 
 
@@ -295,115 +378,15 @@ Disallow a subuser to login to the SendGrid.com website. This call will not prev
 * * * * *
 
 {% anchor h2 %}
-Update Subuser Profile 
+Enable Website Access To A Subuser 
 {% endanchor %}
-Allows you to update your subusers profile information
+Allow a subuser to login to the SendGrid website. Does not affect email sending permissions. New subusers are enabled by default.
 
-
-{% parameters updateprofile %}
- {% parameter 'task' 'Yes' 'Must be set to **set** in order to update profile information' %}
- {% parameter 'user' 'Yes' 'Subuser that is registered under you' %}
- {% parameter 'first_name' 'No' 'First name of subuser' %}
- {% parameter 'last_name' 'No' 'Last name of subuser' %}
- {% parameter 'address' 'No' 'Address of subuser' %}
- {% parameter 'city' 'No' 'City of subuser' %}
- {% parameter 'state' 'No' 'State of subuser' %}
- {% parameter 'country' 'No' 'Country of subuser' %}
- {% parameter 'zip' 'No' 'Zipcode of subuser' %}
- {% parameter 'phone' 'No' 'Phone number of subuser' %}
- {% parameter 'website' 'No' 'Website of subuser' %}
- {% parameter 'company' 'No' 'Company of subuser' %}
+{% parameters enablewebsite %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to enable website access' %}
 {% endparameters %}
 
-
-{% apiexample updateprofile POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&first_name=newFirstName&last_name=&newLastNam %}
-  {% response json %}
-{
-  "message": "success"
-}
-  {% endresponse %}
-  {% response xml %}
-<result>
-   <message>success</message>
-</result>
-
-  {% endresponse %}
-{% endapiexample %}
-
-* * * * *
-
-{% anchor h2 %}
-Update Subuser Password 
-{% endanchor %}
-Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a subusers password.
-
-
-{% parameters updateSubuserPassword %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under you' 'The subuser you are planning to reset the password' %}
- {% parameter 'password' 'Yes' 'Must be at least 6 characters' 'New password of subuser' %}
- {% parameter 'confirm_password' 'Yes' 'Must match password parameter and be at least 6 characters' 'Confirm new password' %}
-{% endparameters %}
-
-
-{% apiexample updateSubuserPassword POST https://api.sendgrid.com/apiv2/customer.password api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&password=newPasword&confirm_password=newPasswor %}
-  {% response json %}
-{
-  "message": "success"
-}
-  {% endresponse %}
-  {% response xml %}
-<result>
-   <message>success</message>
-</result>
-
-  {% endresponse %}
-{% endapiexample %}
-
-* * * * *
-
-{% anchor h2 %}
-Update Subuser Username 
-{% endanchor %}
-Note that your subuser account username is used to login to our SMTP server *and* the website and changes take effect immediately.
-
-
-{% parameters updateSubuserUsername %}
- {% parameter 'task' 'Yes' 'Must be set to**setUsername**' 'This will let us know you want to update your subusers username. This is the new username your subuser will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The user we will be updating their username for' %}
- {% parameter 'username' 'Yes' 'Must be in email format, not more than 100 characters, cannot be already taken and cannot contain SendGrid.com in the domain name' 'This is the new username we will be authenticating with our SMTP servers *and* to access our site. This update takes effect immediately' %}
-{% endparameters %}
-
-
-{% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=example@example.com&username=newexample@example.com %}
-  {% response json %}
-{
-  "message": "success"
-}
-  {% endresponse %}
-  {% response xml %}
-<result>
-   <message>success</message>
-</result>
-
-  {% endresponse %}
-{% endapiexample %}
-
-* * * * *
-
-{% anchor h2 %}
-Update Subuser Email Address 
-{% endanchor %}
-This is the contact email we use for your subusers. Changes take place immediately. It is your responsibility to validate the contact email.
-
-
-{% parameters updateSubuserEmailAddress %}
- {% parameter 'task' 'Yes' 'Must be set to **setEmail**' 'This will let us know you want to update your subusers email address. This update takes effect immediately' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The user we will be updating their username for' %}
- {% parameter 'email' 'Yes' 'Must be in email format, not more than 100 characters' 'This is the new email address we will use for contacting subuser. This update takes effect immediately' %}
-{% endparameters %}
-
-
-{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=example@example.com&email=newexample@example.com %}
+{% apiexample enablewebsite POST https://api.sendgrid.com/apiv2/customer.website_enable api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
