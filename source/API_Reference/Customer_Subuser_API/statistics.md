@@ -21,8 +21,8 @@ The <code>days</code> argument and the <code>start_date</code>/<code>end_date</c
 {% parameters stats %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve statistics from' %}
  {% parameter days No 'Unsigned Integer' 'Number of days in the past to include statistics (includes today)' %}
- {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'Beginning of date range' %}
- {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'End of date range' %}
+ {% parameter start_date No 'Date must be in <code>YYY-mm-dd</code> format and be before the <code>end_date</code> parameter' 'Beginning of date range' %}
+ {% parameter end_date No 'Date must be in <code>YYY-mm-dd</code> format and be after the <code>start_date</code> parameter' 'End of date range' %}
 {% endparameters %}
 
 {% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
@@ -155,8 +155,8 @@ The <code>days</code> argument and the <code>start_date</code>/<code>end_date</c
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve statistics from' %}
  {% parameter category Yes 'Existing category on the account' 'Category to retrieve statistics from' %}
  {% parameter days No 'Unsigned Integer' 'Number of days in the past to include statistics (includes today)' %}
- {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'Beginning of date range' %}
- {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'End of date range' %}
+ {% parameter start_date No 'Date must be in <code>YYY-mm-dd</code> format and be before the <code>end_date</code> parameter' 'Beginning of date range' %}
+ {% parameter end_date No 'Date must be in <code>YYY-mm-dd</code> format and be after the <code>start_date</code> parameter' 'End of date range' %}
 {% endparameters %}
 
 {% apiexample catstats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&category=categoryA %}

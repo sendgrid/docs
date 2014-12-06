@@ -9,10 +9,9 @@ navigation:
 {% anchor h2 %}
 Retrieve Bounces 
 {% endanchor %}
-Note that you can use either the <code>days</code> parameter or the <code>start_date</code>|<code>end_date</code> parameter.
 
 {% parameters get %}
- {% parameter task Yes 'Must be set to <code>get</code>' 'This will allow you to retrieve the bounces for the specified subuser' %}
+ {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve bounces' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve bounces of' %}
  {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
@@ -58,12 +57,12 @@ Note that you can use either the <code>days</code> parameter or the <code>start_
 {% anchor h2 %}
 Delete Bounces 
 {% endanchor %}
-Since SendGrid suppresses messages to bounced addresses, users can remove bounces from their suppression list at any time if redelivery to a bounced address is desired.
+SendGrid suppresses messages to bounced addresses, but entries can be removed from the suppression list at any time if redelivery to a bounced address is desired. Take care that the address should be redelivered to.
 
 {% parameters delete %}
- {% parameter task Yes 'Must be set to <code>delete</code>' 'This will allow you to delete the bounces for the specified user' %}
+ {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to remove address from bounce suppression list' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve bounces of' %}
- {% parameter email Yes 'Address existing on the list' 'Address to remove from the Bounce suppression list' %}
+ {% parameter email Yes 'Address exists on the list' 'Address to remove from the Bounce suppression list' %}
 {% endparameters %}
 
 {% apiexample delete POST https://api.sendgrid.com/api/user.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=bounce@example.com %}

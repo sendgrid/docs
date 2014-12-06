@@ -20,7 +20,6 @@ Get Current Settings
  {% parameter user Yes 'Subuser must be under your account' 'The subuser to retrieve records for' %}
 {% endparameters %}
 
-
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=subuser_username %}
   {% response json %}
 {
