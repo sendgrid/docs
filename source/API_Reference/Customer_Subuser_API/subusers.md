@@ -86,23 +86,23 @@ This call will delete a subuser and will disable all tracked links on sent messa
 {% anchor h2 %}
 Retrieve Subusers 
 {% endanchor %}
-Obtain a complete list of all subusers.
+Obtain a list of subusers under your account.
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to get list of subusers' %}
- {% parameter username No 'Valid username format' 'Optional string to filter results against' %}
- {% parameter email No 'Valid email format' 'Optional string to filter results against' %}
- {% parameter active No '0 or 1' 'Optional flag to filter results against' %}
- {% parameter first_name No 'Valid first_name format' 'Optional string to filter results against' %}
- {% parameter last_name No 'Valid last_name format' 'Optional string to filter results against' %}
- {% parameter address No 'Valid street address format' 'Optional string to filter results against' %}
- {% parameter city No 'Valid city format' 'Optional string to filter results against' %}
- {% parameter state No 'Valid state format' 'Optional string to filter results against' %}
- {% parameter country No 'Valid country format' 'Optional string to filter results against' %}
- {% parameter zip No 'Valid zip format' 'Optional string to filter results against' %}
- {% parameter phone No 'Valid phone format' 'Optional string to filter results against' %}
- {% parameter website No 'Valid website format' 'Optional string to filter results against' %}
- {% parameter company No 'Valid company format' 'Optional string to filter results against' %}
+ {% parameter username No 'Valid username format' 'Optional string to filter results' %}
+ {% parameter email No 'Valid email format' 'Optional string to filter results' %}
+ {% parameter active No '0 or 1' 'Optional flag to filter results' %}
+ {% parameter first_name No 'Valid first_name format' 'Optional string to filter results' %}
+ {% parameter last_name No 'Valid last_name format' 'Optional string to filter results' %}
+ {% parameter address No 'Valid street address format' 'Optional string to filter results' %}
+ {% parameter city No 'Valid city format' 'Optional string to filter results' %}
+ {% parameter state No 'Valid state format' 'Optional string to filter results' %}
+ {% parameter country No 'Valid country format' 'Optional string to filter results' %}
+ {% parameter zip No 'Valid zip format' 'Optional string to filter results' %}
+ {% parameter phone No 'Valid phone format' 'Optional string to filter results' %}
+ {% parameter website No 'Valid website format' 'Optional string to filter results' %}
+ {% parameter company No 'Valid company format' 'Optional string to filter results' %}
 {% endparameters %}
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get %}
@@ -244,12 +244,12 @@ Update Subuser Email Address
 This is the administrative contact address, used by SendGrid to contact the user. Unrelated to sending address information.
 
 {% parameters updateSubuserEmailAddress %}
- {% parameter task Yes 'Must be set to <code>setEmail</code>' 'Task to update subuser email address' %}
+ {% parameter task Yes 'Must be set to <code>setemail</code>' 'Task to update subuser email address' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to update email address of' %}
  {% parameter email Yes 'Valid email format' 'New administrative contact address' %}
 {% endparameters %}
 
-{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=subuser_username&email=newsubuser_username %}
+{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setemail&user=subuser_username&email=newsubuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -271,18 +271,18 @@ Update Subuser Profile
 Update Subuser profile information.
 
 {% parameters updateprofile %}
- {% parameter task Yes 'Must be set to <code>set</code>' 'Task to update subuser profile' %}
+ {% parameter task Yes 'Must be set to <code>set</code>' 'Task to update subuser profile' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to update profile' %}
- {% parameter first_name No 'Valid first_name format' 'Optional string to filter results against' %}
- {% parameter last_name No 'Valid last_name format' 'Optional string to filter results against' %}
- {% parameter address No 'Valid street address format' 'Optional string to filter results against' %}
- {% parameter city No 'Valid city format' 'Optional string to filter results against' %}
- {% parameter state No 'Valid state format' 'Optional string to filter results against' %}
- {% parameter country No 'Valid country format' 'Optional string to filter results against' %}
- {% parameter zip No 'Valid zip format' 'Optional string to filter results against' %}
- {% parameter phone No 'Valid phone format' 'Optional string to filter results against' %}
- {% parameter website No 'Valid website format' 'Optional string to filter results against' %}
- {% parameter company No 'Valid company format' 'Optional string to filter results against' %}
+ {% parameter first_name No 'Valid first_name format' 'Optional string to filter results' %}
+ {% parameter last_name No 'Valid last_name format' 'Optional string to filter results' %}
+ {% parameter address No 'Valid street address format' 'Optional string to filter results' %}
+ {% parameter city No 'Valid city format' 'Optional string to filter results' %}
+ {% parameter state No 'Valid state format' 'Optional string to filter results' %}
+ {% parameter country No 'Valid country format' 'Optional string to filter results' %}
+ {% parameter zip No 'Valid zip format' 'Optional string to filter results' %}
+ {% parameter phone No 'Valid phone format' 'Optional string to filter results' %}
+ {% parameter website No 'Valid website format' 'Optional string to filter results' %}
+ {% parameter company No 'Valid company format' 'Optional string to filter results' %}
 {% endparameters %}
 
 {% apiexample updateprofile POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=subuser_username&first_name=newFirstName&last_name=&newLastName %}

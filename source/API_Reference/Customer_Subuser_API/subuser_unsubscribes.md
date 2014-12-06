@@ -9,7 +9,6 @@ navigation:
 {% anchor h2 %}
 Retrieve Unsubscribes 
 {% endanchor %}
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve unsubscribes for subuser' %}
@@ -17,7 +16,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
  {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
-{% apiexample get POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
