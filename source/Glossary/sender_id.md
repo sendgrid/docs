@@ -1,3 +1,4 @@
+---
 seo:
   title: Sender ID
   description: Sender ID is an email authentication standard developed by Microsoft that compares the email sender’s “From” address to the IP address to verify that it is authorized to send email from that domain.
