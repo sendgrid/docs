@@ -9,6 +9,8 @@ layout: page
 navigation:
   show: true
 ---
-**MTA** stands for Mail Transfer Agent or Message Transfer Agent. It is software that transfers electronic mail messages from one computer to another using a client–server application architecture. An MTA implements both the client (sending) and server (receiving) portions of the SMTP (Simple Mail Transfer Protocol).
+MTA stands for Mail Transfer Agent or Message Transfer Agent. MTA is software that transfers electronic mail messages from one computer to another using a client–server application architecture. 
 
-[To get more information please check out our Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
+An MTA implements both the client (sending) and server (receiving) portions of the [Simple Mail Transfer Protocol]({{root_url}}/Glossary/smtp.html).
+
+To get more information please check out our [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation).
