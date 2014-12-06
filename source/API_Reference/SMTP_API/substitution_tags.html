@@ -31,7 +31,9 @@ How you format your substitution tags may depend on the library you use to creat
 Do not use spaces inside your substitution tags, e.g. %first name%
 {% endwarning %}
 
-<h3>Substitution Tag Example</h3>
+{% anchor h2%}
+Substitution Tag Example
+{% endanchor %}
 
 Email HTML content:
 {% codeblock lang:html %}
@@ -124,3 +126,18 @@ Email HTML content:
   </body>
 </html>
 {% endcodeblock %}
+
+{% anchor h2%}
+Nested Substitutions
+{% endanchor %}
+
+You can have up to 4 nested substitutions 1->2->3->4->[text]
+
+ sub->section->sub->section2->[sub 5] -- sub 5 will not be replaced even if defined 
+ 
+ Please note:
+ -Subs within sections work 
+ -Sections within subs work 
+ -Sections within sections work 
+ 
+
