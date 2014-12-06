@@ -23,7 +23,7 @@ List
 {% endanchor %}
 
 {% parameters list %}
- {% parameter task Yes 'Must be set to <code>list</code>' %}
+ {% parameter task Yes 'Must be set to <code>list</code>' 'Task to list existing whitelabel records on the account' %}
 {% endparameters %}
 
 
