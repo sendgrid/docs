@@ -10,7 +10,7 @@ This app appends links to integrate with Google Analytics.
 
 ![Google Analytics App Image]({{root_url}}/images/google_analytics.png "Google Analytics")
 
-For more information about using this app, please refer to [Google's URL Builder](http://support.google.com/googleanalytics/bin/answer.py?hl=en&answer=55578) and their [presentation on Campaign Tracking](http://www.google.com/analytics/iq.html).
+For more information about using this app, please refer to [Google's URL Builder](https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingCampaigns) and their [Blog post on Campaign Tracking](https://sendgrid.com/blog/how-to-track-your-emails-using-google-analytics/).
 
 We default the settings to Google's recommendations. Anything you enter into those fields in the App Settings or via API will take precedence.
 
