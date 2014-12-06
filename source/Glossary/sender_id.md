@@ -11,4 +11,4 @@ navigation:
 
 Sender ID is an email authentication standard developed by Microsoft that compares the email sender’s “From” address to the IP address to verify that it is authorized to send email from that domain.
 
-[To get more information please check out our Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
+To get more information please check out our [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation).
