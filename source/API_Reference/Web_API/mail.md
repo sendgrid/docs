@@ -16,7 +16,6 @@ This endpoint allows you to send email.
 There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API. We recommend using these if possible.
 
 [View List »]({{root_url}}/Integrate/libraries.html)
-
 {% endinfo %}
 
 {% anchor h2 %}
@@ -25,6 +24,9 @@ send
 
 Send email.
 
+{% warning %}
+This is not a sandbox. These are real messages that consume credits on your account.
+{% endwarning %}
 
 {% parameters mail %}
  {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
