@@ -15,10 +15,6 @@ In both creating and searching for a subuser, use the <code>username</code> para
 {% info %}
 For recommended steps when creating Subusers using the API, check out [this Sendgrid Knowledgebase article.](https://support.sendgrid.com/hc/en-us/articles/201750787)
 {% endinfo %}
-<<<<<<< HEAD
-
-=======
->>>>>>> c8b6eab22f2c2e7dc43cdb59f71875e47ce33a35
 
 {% anchor h2 %}
 Create a Subuser 
