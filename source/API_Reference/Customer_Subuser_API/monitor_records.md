@@ -1,28 +1,26 @@
 ---
 layout: page
-weight: 0
+weight: 400
 title: Monitor Records
 navigation:
    show: true
 ---
 
-Receive a sample of an outgoing message by a specific subuser.
+Monitor records will send samples from one or more subusers at a frequency you set.
 
-The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a subuser. Multiple subuser can be appended to a single monitor record.
+The first step is to create a Monitor Record. Once the monitor record has been created, you can append asubuser to a monitor record. Multiple subusers can be appended to a single monitor record.
 
 {% anchor h2 %}
 Create Monitor Record 
 {% endanchor %}
-Obtain a complete list of all subuser.
-
+Create a new monitor record on the account.
 
 {% parameters create %}
- {% parameter 'task' 'Yes' 'Must be set to *create*' 'Create a monitor record' %}
- {% parameter 'name' 'Yes' 'Name must be unique. Can not be more than 255 characters' 'The unique name to identify this monitor record' %}
- {% parameter 'email' 'Yes' 'Must be in email format' 'The email destination to send the email sample to' %}
- {% parameter 'frequency' 'Yes' 'Subuser must be registered under your account' 'The frequency of emails to be sent out' %}
+ {% parameter task Yes 'Must be set to <code>create</code>' 'Task to create a monitor record' %}
+ {% parameter name Yes 'Must be unique to account. Can not be more than 255 characters' 'Unique name to identify this monitor record' %}
+ {% parameter email Yes 'Must be in email format' 'Email destination to send the sample to' %}
+ {% parameter frequency Yes 'Unsigned integer' 'Interval of emails between samples' %}
 {% endparameters %}
-
 
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
@@ -43,19 +41,17 @@ Obtain a complete list of all subuser.
 {% anchor h2 %}
 Edit Monitor Record 
 {% endanchor %}
-Make modifications to an existing Monitor record.
-
+Edit an existing Monitor record.
 
 {% parameters edit %}
- {% parameter 'task' 'Yes' 'Must be set to *edit*' 'The task required to edit a monitor' %}
- {% parameter 'name' 'Yes' 'The name of the previous monitor record' 'The monitor record we are going to edit' %}
- {% parameter 'new_name' 'No' 'New name must be unique and can not be more than 255 characters' 'The new monitor record name' %}
- {% parameter 'new_email' 'No' 'Must be in email format' 'The new email destination to send the email sample to' %}
- {% parameter 'new_frequency' 'No' 'Must be an integer and greater than 0' 'The new frequency of emails to be sent out' %}
+ {% parameter task Yes 'Must be set to <code>edit<code>' 'Task to edit a monitor record' %}
+ {% parameter name Yes 'Existing monitor record name' 'The monitor record we are going to edit' %}
+ {% parameter new_name No 'Must be unique to account. Can not be more than 255 characters' 'New monitor record name' %}
+ {% parameter new_email No 'Must be in email format' 'The new email destination to send the email sample to' %}
+ {% parameter new_frequency No 'Unsigned integer' 'The new intervals of emails between samples' %}
 {% endparameters %}
 
-
-{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=100 %}
   {% response json %}
 {
   "message": "success"
@@ -74,12 +70,11 @@ Make modifications to an existing Monitor record.
 {% anchor h2 %}
 Delete Monitor Record 
 {% endanchor %}
-Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
-
+Deleting a monitor record will remove it from SendGrid's system. Only monitor records with no subusers attached can be deleted.
 
 {% parameters delete %}
- {% parameter 'task' 'Yes' 'Must be set to *delete*' 'The task required to remove a monitor' %}
- {% parameter 'name' 'Yes' 'Must be a monitor record to remove' 'The unique name to identify this monitor record' %}
+ {% parameter task Yes 'Must be set to <code>delete<code>' 'Task to remove a monitor record' %}
+ {% parameter name Yes 'An existing monitor record' 'The unique name to identify this monitor record' %}
 {% endparameters %}
 
 
@@ -102,15 +97,15 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no
 {% anchor h2 %}
 List All Monitor Records 
 {% endanchor %}
-List all available monitor records a reseller has.
+List all available monitor records on your account.
 
 
-{% parameters listrecords %}
- {% parameter 'task' 'Yes' 'Must be set to *list*' 'The task required to list all monitor records' %}
+{% parameters list %}
+ {% parameter task Yes 'Must be set to <code>list</code>' 'Task to list all monitor records' %}
 {% endparameters %}
 
 
-{% apiexample listrecords POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
+{% apiexample list POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list %}
   {% response json %}
 [
   {
@@ -157,15 +152,15 @@ List all available monitor records a reseller has.
 * * * * *
 
 {% anchor h2 %}
-Append A Subuser To A Monitor Record 
+Append a Subuser to a Monitor Record 
 {% endanchor %}
-Append a monitor record to a existing record onto a subuser.
+Append a subuser to an existing monitor record.
 
 
 {% parameters append %}
- {% parameter 'task' 'Yes' 'Must be set to *append*' 'The task required to append a monitor record to a subuser' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The user we will append a monitor record to' %}
- {% parameter 'name' 'No' 'Must be a valid monitor record' 'The name of the monitor record we will be appending' %}
+ {% parameter task Yes 'Must be set to <code>append</code>' 'Task to append a monitor record to a subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser we will append a monitor record to' %}
+ {% parameter name Yes 'Must be a valid existing monitor record' 'The name of the monitor record we will be adding the subuser to' %}
 {% endparameters %}
 
 
@@ -192,8 +187,9 @@ Detach a subuser from a monitor record.
 
 
 {% parameters detach %}
- {% parameter 'task' 'Yes' 'Must be set to *detach*' 'The task required to detach a monitor record to a subuser' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we will detach the monitor record from' %}
+ {% parameter task Yes 'Must be set to <code>detach</code>' 'Task required to detach a monitor record from a subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser being removed from the monitor record' %}
+ {% parameter name No 'Must be a valid existing monitor record' 'The name of the monitor record we will be removing the subuser from. If not provided, subuser will be removed from all monitor records' %}
 {% endparameters %}
 
 
