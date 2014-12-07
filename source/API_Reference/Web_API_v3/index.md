@@ -33,6 +33,10 @@ authentication built-in. For example:
 $curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name":"example_name"}' https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
+You then enter your password at the prompt.
+
+* * * * *
+
 {% anchor h2 %}
 Host
 {% endanchor %}
@@ -43,8 +47,10 @@ https://api.sendgrid.com/v3/
 {% endcodeblock %}
 
 {% info %} 
-All requests must be made over HTTPS. HTTP is not supported. 
+All requests must be made over HTTPS. HTTP is **not** supported. 
 {% endinfo %}
+
+* * * * *
 
 {% anchor h2 %}
 Requests
@@ -119,6 +125,8 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
+* * * * *
+
 {% anchor h3 %}
 Rate Limits
 {% endanchor %}
@@ -131,7 +139,7 @@ regarding rate limits and number of requests left.
 
 Depending on the endpoint you are trying to reach, it will have a
 specific number of allowed requests per refresh period. Once this
-threshold has been reached, we will return a status code 429 response.
+threshold has been reached, we will return a status code `429` response.
 
 Example Request
 {% codeblock lang:http %}
@@ -181,6 +189,8 @@ X-RateLimit-Reset: 1392815263
 }
 {% endcodeblock %}
 
+* * * * *
+
 {% anchor h3 %}
 Pagination
 {% endanchor %}
@@ -196,9 +206,7 @@ default limit.
 Resources documented will display a bolded list of available paginated
 parameters if available.
 
-In this example, we will display an example paginated example. In the
-resource documentation, we will only provide the bolded list of
-available parameters.
+Below is a basic pagination example. In the resource documentation, we will only provide the bolded list of available parameters.
 
 {% info %}
 When information is batched, a <a href="http://tools.ietf.org/html/rfc5988">Link Header</a> will be provided in the response.
@@ -237,6 +245,8 @@ resources where the email contains `foo`.
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource?email=foo&foo=bar HTTP/1.1
 {% endcodeblock %}
+
+* * * * *
 
 {% anchor h2 %}
 Responses
