@@ -23,3 +23,16 @@ While DKIM authentication is an email best practice, it’s important to underst
 You can authenticate with DKIM yourself or the DKIM signature can be created by your sending MTA, but setting it up can be a complex process. If not done right, ISPs will block your email, particularly because incorrect implementation is a telltale sign of a spammer.
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
+
+When you utilize [whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228), you have to create DKIM DNS records.
+What it should look like:
+smtpapi._domainkey.yourdomain.com.  |  TXT or CNAME  |  value
+smtpapi._domainkey.subdomain.yourdomain.com.  |  TXT or CNAME  |  value
+ 
+TXT value: k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
+ 
+CNAME value: dkim.sendgrid.net
+
+Additional resources: 
+[the DKIM.org website](http://www.dkim.org/)
+[DNS Records and Underscores](https://support.sendgrid.com/hc/en-us/articles/200185218)
