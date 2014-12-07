@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 200
 title: Customer Deprovision
 navigation:
    show: true
@@ -14,7 +14,7 @@ Delete a SendGrid reseller customer account.
 
 
 {% parameters get %}
-{% parameter 'id' 'Yes' 'Id of the customer on our side' 'This value is returned in the <a href="customer_provision.html">Provision call </a> '%}
+{% parameter id Yes 'Id of the customer on SendGrid side' 'This value is returned in the <a href="customer_provision.html">Provision call</a> '%}
 {% endparameters %}
 
 {% apiv3example delete DELETE https://sendgrid.com/reseller.php/plug/:partner_name/resources/:id %}

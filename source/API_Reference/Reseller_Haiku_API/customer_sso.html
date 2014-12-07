@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 100
 title: Customer Single Sign On
 navigation:
    show: true
@@ -10,14 +10,14 @@ navigation:
 Single Sign On 
 {% endanchor %}
 
-Autologin a customer and allow them to change the settings of their account on our side.
+Autologin a customer and allow them to change the settings of their account on SendGrid.
 
 Redirect the user to this url with the following parameters:
 
 {% parameters post %}
- {% parameter 'id' 'Yes' 'Id of the customer on our side' 'This value is returned in the <a href="customer_provision.html">Provision call </a> '%}
- {% parameter 'token' 'Yes' 'token = sha1(id : salt : timestamp)' 'Salt is a random generated field provided when onboarding with SendGrid'%}
- {% parameter 'timestamp' 'Yes' 'Must be the unix timestamp at the time of the request' '' %}
+ {% parameter id Yes 'Id of the customer on SendGrid side' 'This value is returned in the <a href="customer_provision.html">Provision call </a> '%}
+ {% parameter token Yes '<code>sha1(id : salt : timestamp)</code>' 'Salt is provided when onboarding with SendGrid'%}
+ {% parameter timestamp Yes 'Must be the <a href="http://en.wikipedia.org/wiki/Unix_time">unix timestamp</a> at the time of the request' 'For verification' %}
 {% endparameters %}
 
 {% apiv3example get GET https://sendgrid.com/reseller.php/plug/:partner_name/resources/:id?token=bb466eb1d6bc345d11072c3cd25c311f21be130d&timestamp=1267597772 %}
@@ -31,4 +31,4 @@ Body: N/A
   {% endv3response %}
 {% endapiv3example %}
 
-If everything is ok, we will redirect the user to our website.
+If everything clears, we will redirect the user to our website.
