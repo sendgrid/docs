@@ -47,3 +47,11 @@ $ apt-get install libsasl2-modules
 {% codeblock lang:bash %}
 $ yum install cyrus-sasl-plain
 {% endcodeblock %}
+
+{% anchor h2%}
+Troubleshooting
+{% endanchor %}
+
+If port 587 is not working for you please try 2525 in your postfix config. You may also need to edit /etc/postfix/master.cf to remove # from
+
+ #tlsmgr unix - - n 1000? 1 tlsmgr
