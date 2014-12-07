@@ -6,25 +6,28 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This endpoint has been deprecated, and should not be used. Use the [Event Notification app]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification) with the [Subuser App endpoint]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html) instead.
+{% endwarning %}
+
 {% anchor h2 %}
-Retrieve 
+Get 
 {% endanchor %}
 
-{% parameters retrieve %}
- {% parameter 'task' 'Yes' 'Must be set to *get*' 'This will allow you to retrieve the event notification url for the specified subuser' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The username of the subuser' %}
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>get</code>' 'Task to get the url for the specified user' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'Username of the subuser to get settings for' %}
 {% endparameters %}
 
 
-{% apiexample retrieve POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=subuser_username %}
   {% response json %}
 {
-  "url": "http:\\/\\/www.SubUserPostUrlHere.com"
+  "url": "http:\/\/www.SubUserPostUrlHere.com"
 }
   {% endresponse %}
   {% response xml %}
 <url>http://www.SubUserPostUrlHere.com</url>
-
   {% endresponse %}
 {% endapiexample %}
 
@@ -35,13 +38,12 @@ Update / Set URL
 {% endanchor %}
 
 {% parameters set %}
- {% parameter 'task' 'Yes' 'Must be set to *set*' 'This will allow you to retrieve the event notification url for the specified subuser' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The name of the subuser' %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>set</code>' 'Task to set the eventurl for the subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The name of the subuser' %}
  {% parameter 'url' 'Yes' 'The notification URL' 'This is the new event notification URL' %}
 {% endparameters %}
 
-
-{% apiexample set POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.co %}
+{% apiexample set POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=subuser_username&url=http://www.SubUserPostUrlHere.com %}
   {% response json %}
 {
   "message": "success"
@@ -51,7 +53,6 @@ Update / Set URL
 <result>
    <message>success</message>
 </result>
-
   {% endresponse %}
 {% endapiexample %}
 
@@ -62,12 +63,11 @@ Delete
 {% endanchor %}
 
 {% parameters delete %}
- {% parameter 'task' 'Yes' 'Must be set to *delete*' 'This will allow you to delete the event notification url for the specified subuser' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The name of the subuser' %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>delete</code>' 'Task to delete the event notification url for the specified subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The name of the subuser' %}
 {% endparameters %}
 
-
-{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.co %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -77,6 +77,5 @@ Delete
 <result>
    <message>success</message>
 </result>
-
   {% endresponse %}
 {% endapiexample %}
