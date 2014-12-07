@@ -17,7 +17,7 @@ Delete a SendGrid reseller customer account.
 {% parameter id Yes 'Id of the customer on SendGrid side' 'This value is returned in the <a href="customer_provision.html">Provision call</a> '%}
 {% endparameters %}
 
-{% apiv3example delete DELETE https://sendgrid.com/reseller.php/plug/:partner_name/resources/:id %}
+{% apiv3example delete DELETE https://api.sendgrid.com/reseller.php/plug/:partner_name/resources/:id %}
   {% v3response %}
 HTTP/1.1 200 OK
 

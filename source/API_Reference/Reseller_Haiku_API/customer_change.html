@@ -18,7 +18,7 @@ Change the plan of a SendGrid reseller customer account.
  {% parameter plan Yes 'New plan that the customer selected' 'SendGrid plan, which defines customer credits and permissions' %}
 {% endparameters %}
 
-{% apiv3example put PUT https://sendgrid.com/reseller.php/plug/:partner_name/resources/:id partner_id=customer_unique_id&plan=bronze %}
+{% apiv3example put PUT https://api.sendgrid.com/reseller.php/plug/:partner_name/resources/:id partner_id=customer_unique_id&plan=bronze %}
   {% v3response %}
 HTTP/1.1 200 OK
 

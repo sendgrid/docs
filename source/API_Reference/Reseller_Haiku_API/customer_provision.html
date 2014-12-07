@@ -18,7 +18,7 @@ Create a SendGrid reseller customer account with a certain plan.
  {% parameter email No 'Customer email' 'Used as contact information for SendGrid support team'%}
 {% endparameters %}
 
-{% apiv3example post POST https://sendgrid.com/reseller.php/plug/:partner_name/resources partner_id=customer_unique_id&plan=free&email=email%40example.com %}
+{% apiv3example post POST https://api.sendgrid.com/reseller.php/plug/:partner_name/resources partner_id=customer_unique_id&plan=free&email=email%40example.com %}
   {% v3response %}
 HTTP/1.1 200 OK
 
