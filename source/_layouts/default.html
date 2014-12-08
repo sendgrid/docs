@@ -2,6 +2,17 @@
 {% capture body_classes %}{% if page.sidebar == false %}no-sidebar{% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %}collapse-sidebar sidebar-footer{% endif %} logged-out{% endcapture %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} class="{{ body_classes }}" itemscope itemtype="http://schema.org/WebPage">
 
+{% if site.data.version.contains "staging" %}
+<script>
+  // faking this to get rid of errors
+  dataLayer = [];
+  ga = function () {};
+  _gaq = [];
+</script>
+{% else %}
+{% include google_analytics.html %}
+{% endif %}
+
   {% include header.html %}
   <div itemscope itemtype='https://schema.org/Brand'>
     <meta content='SendGrid' itemprop='name'>
