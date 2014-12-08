@@ -19,4 +19,4 @@ Using TLS is increasingly important to protect your privacy and the privacy of y
 
 For more background on opportunistic TLS, read our blog post on the [Future of Email Security](https://sendgrid.com/blog/sendgrid-and-the-future-of-email-security/).  
 
-For information on configuring your system to utilize TLS, see our information on [setting up your server]({{root_url}}/source/User_Guide/Setting_Up_Your_Server/index.html) for sending email.
+For information on configuring your system to utilize TLS, see our information on [setting up your server]({{root_url}}/User_Guide/Setting_Up_Your_Server/index.html) for sending email.
