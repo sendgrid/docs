@@ -18,7 +18,7 @@ A drop occurs when our systems identify that a message is sent to an email addre
 How to identify Drops
 {% endanchor %}
 
-On the <a href=”https://sendgrid.com/statistics/overview”>Global Stats Dashboard</a>, the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
+On the [Global Stats Dashboard](https://sendgrid.com/statistics/overview), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
 ![Global Stats Drop]({{root_url}}/images/drops_1.png)
 
@@ -30,9 +30,9 @@ NOTE: If the email address is on the Unsubscribe list the reason will say "Unsub
 
 Some other reasons for which SendGrid may drop emails are:
 
-1. Email triggers SendGrid's spam filters. You can identify these drops only through the data received through the <a href="https://sendgrid.com/docs/API_Reference/Webhooks/event.html">Event Webhook</a> or in Email Activity. In both cases, the reason displayed will say "Spam Content". 
+1. Email triggers SendGrid's spam filters. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or in Email Activity. In both cases, the reason displayed will say "Spam Content".
 
-2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on <a href="https://sendgrid.com/docs/API_Reference/SMTP_API/index.html">SMTP API</a>.
+2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html).
 
 3. Duplicate message - emails are dropped with this reason only when they are sent through the Marketing Email App or through the Marketing API. If a recipient's address is showing on multiple lists and you assign those lists to one campaign, our systems automatically identify that the address is on multiple lists and drops the duplicate messages. This prevents having the same message sent to the same recipient multiple times.
 
@@ -56,6 +56,6 @@ Even if we do drop the messages intended to addresses that are already on one of
 
 You can easily clean your lists from all the bad email addresses in 2 simple ways:
 
-1. you can use our tool called <a href=”https://sendgrid.com/docs/Utilities/list_assist.html”>List Assist</a>. It is super easy to use and removes the unwanted email addresses in just a few seconds. Here is a short <a href=”https://sendgrid.com/docs/VidGrid/Tools/listassist.html”>video tutorial</a> on how to use the tool.
+1. you can use our tool called [List Assist]({{root_url}}/Utilities/list_assist.html). It is super easy to use and removes the unwanted email addresses in just a few seconds. Here is a short [video tutorial]({{root_url}}/VidGrid/Tools/listassist.html) on how to use the tool.
 
-2. You can use the <a href=”https://sendgrid.com/docs/API_Reference/Web_API/index.html”>Web API</a> to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
+2. You can use the [Web API]({{root_url}}/API_Reference/Web_API/index.html) to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
