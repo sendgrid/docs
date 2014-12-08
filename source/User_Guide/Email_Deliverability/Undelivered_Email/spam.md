@@ -1,3 +1,13 @@
+---
+seo:
+  title: Spam
+title: Spam
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
 {% anchor h3%}
 Spam
 {% endanchor %}
@@ -5,7 +15,10 @@ Spam
 The most simple way to define spam in the Email world is by using these two words: unwanted email. Since it’s so easy for a message to fall in this category, as a Sender you may want to know how and why emails can get marked as spam. In this sense we’ve listed some of the most common reasons for which an email may end up in the Spam Folder and ways to avoid this:
 
 
-1. Improper authentication. Authentication is extremely important as it helps ISPs identify you as a sender. Think of it as you'd be knocking at someone’s door. You want to inspire trust in order to get invited in their home. In the email world you can do so by making sure your email server supports these protocols (<a href=”http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail”>DKIM</a>, <a href=”http://en.wikipedia.org/wiki/Sender_Policy_Framework”>SPF</a>, <a href=”http://en.wikipedia.org/wiki/Sender_ID”>Sender-ID</a> and <a href=”http://en.wikipedia.org/wiki/DomainKeys”>Domain Keys</a>) and that they are properly implemented.
+1. Improper authentication. Authentication is extremely important as it helps ISPs identify you as a sender. Think of
+it as you'd be knocking at someone’s door. You want to inspire trust in order to get invited in their home.
+In the email world you can do so by making sure your email server supports these protocols
+([DKIM, Domain Keys]({root_url}}/Glossary/dkim.html), [SPF]({{root_url}}/Glossary/spf.html), and [Sender ID]({{root_url}}/Glossary/sender_id.html)) and that they are properly implemented.
 
 NOTE: SendGrid ensures authentication by setting up DKIM and SPF records automatically for you. For Silver or above packages, we offer dedicated IPs which can be whitelabeled with your sending domain and therefore strengthening the authentication.
 
