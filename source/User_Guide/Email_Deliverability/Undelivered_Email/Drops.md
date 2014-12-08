@@ -10,11 +10,11 @@ How to identify Drops
 
 On the <a href=”https://sendgrid.com/statistics/overview”>Global Stats Dashboard</a>, the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
-****** [IMAGE FILENAME: global_stats_drops.png] ******
+![Global Stats Drop]({{root_url}}/images/drops_1.png)
 
 In Email Activity, the drops are marked as seen below. Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 
-****** [IMAGE FILENAME: email_activity_drop.png] ******
+![Global Stats Drop]({{root_url}}/images/drops_3.png)
 
 NOTE: If the email address is on the Unsubscribe list the reason will say "Unsubscribed Address"; if on the Spam report list, it will say "Spam Reporting Address" and if on the Invalid Emails list, it will say "Invalid".
 
@@ -32,7 +32,7 @@ How to remove Drops
 
 If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. You can visit all the suppression lists under the Email Reports tab (except the Blocks list which is not a suppression list):
 
- ****** [IMAGE FILENAME: emailreports.gif] ******
+![Global Stats Drop]({{root_url}}/images/drops_2.png)
 
 Removing an address from the suppression lists will allow you to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again. 
 
