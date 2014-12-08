@@ -45,7 +45,7 @@ This is not a sandbox. These are real messages that consume credits on your acco
  {% parameter 'date' 'No' 'Must be a valid [RFC 2822 formatted date](http://www.faqs.org/rfcs/rfc2822)' 'Specify the date header of your email. One example: "Thu, 21 Dec 2000 16:01:07 +0200". PHP developers can use: *date('r');*' %}
  {% parameter 'files' 'No' 'Must be less than 7MB' 'Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf' %}
  {% parameter 'content' 'No' 'Required for sending inline images' 'Content IDs of the files to be used as inline images. Content IDs should match the cids used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `<img src="cid:ii_139db99fdb5c3704"></img>`' %}
- {% parameter 'headers' 'No' 'Must be in valid JSON format without integers' 'A collection of key/value pairs in JSON format. This is specifically for non-SendGrid custom extensible headers. Each key represents a header name and the value the header value. Ex: `{"X-Accept-Language": "en", "X-Mailer": "MyApp"}`' %}
+ {% parameter 'headers' 'No' 'Must be in valid JSON format without integers' 'A collection of key/value pairs in JSON format. This is specifically for non-SendGrid custom [extension headers](http://tools.ietf.org/html/rfc5322#section-2.2). Each key represents a header name and the value the header value. Ex: `{"X-Accept-Language": "en", "X-Mailer": "MyApp"}`' %}
 {% endparameters %}
 
 
