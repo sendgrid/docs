@@ -62,6 +62,8 @@ Update the timezone assigned to the user.
 list 
 {% endanchor %}
 
+This example provides the full list of IANA timezones in the SendGrid system, for reference. It's best practice to use the `timezone` parameter.
+
 {% parameters list %}
  {% parameter timezone No '[IANA timezone *Area/Location* format](http://en.wikipedia.org/wiki/Tz_database#Names_of_time_zones)' 'Restrict query to confirm existence of named timezone' %}
 {% endparameters %}
