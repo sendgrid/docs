@@ -35,6 +35,12 @@ The first time you send email from a fresh IP, ISP SPAM filters have to make a q
 Below are a few suggested schedules for ramping up your sending:
 
 {% anchor h3 %}
+Automated IP Warmup
+{% endanchor %}
+
+With our API V3, we have created a way for you to [automate your IP warmup process]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html). Please do checkout the manual methods, so that you can understand how IP warmup worked before SendGrid automated the process.
+
+{% anchor h3 %}
 For marketing email & marketing campaigns 
 {% endanchor %}
 
