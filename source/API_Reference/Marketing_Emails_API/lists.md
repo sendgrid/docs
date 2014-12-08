@@ -85,7 +85,6 @@ List all Recipient Lists on your account, or check if a particular List exists.
   {% response json %}
 [
   {
-    "id": 1,
     "list": "test"
   }
 ]
@@ -93,7 +92,6 @@ List all Recipient Lists on your account, or check if a particular List exists.
   {% response xml %}
 <lists>
    <list>
-      <id>1</id>
       <list>test</list>
    </list>
 </lists>
