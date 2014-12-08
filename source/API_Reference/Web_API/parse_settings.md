@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+With the [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) you can parse the content and attachments of emails. The Web API endpoints allow you to setup, get, and delete your Parse Webhooks settings.
+
 {% anchor h2 %}
 get 
 {% endanchor %}
