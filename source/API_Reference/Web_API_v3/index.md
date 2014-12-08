@@ -10,6 +10,8 @@ navigation:
 SendGrid's new API architecture features significant changes in behavior as compared to previous endpoints, so please read carefully!
 {% endinfo %}
 
+* * * * *
+
 {% anchor h2 %}
 Authentication
 {% endanchor %}
@@ -41,10 +43,7 @@ You then enter your password at the prompt.
 Host
 {% endanchor %}
 
-The host for API requests is
-{% codeblock %}
-https://api.sendgrid.com/v3/
-{% endcodeblock %}
+The host for API requests is `https://api.sendgrid.com/v3/`
 
 {% info %} 
 All requests must be made over HTTPS. HTTP is **not** supported. 
@@ -159,7 +158,7 @@ X-RateLimit-Reset: 1392815263
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+{% anchor h43%}
 When Limit is Reached
 {% endanchor %}
 
@@ -231,6 +230,7 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
   </tr>
 </table>
 
+* * * * *
 
 {% anchor h3 %}
 Search & Parameters
@@ -272,6 +272,8 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
+* * * * *
+
 {% anchor h3 %}
 Status Codes
 {% endanchor %}
@@ -307,6 +309,8 @@ support against resources.
   </tr>
 </table>
   
+* * * * *
+
 {% anchor h3 %}
 Successful Requests
 {% endanchor %}
@@ -332,6 +336,8 @@ successful Web API requests.
   </tr>
 </table>
 
+* * * * *
+
 {% anchor h3 %}
 Failed Requests
 {% endanchor %}
@@ -355,6 +361,8 @@ Content-Type: application/json
     ]
 }
 {% endcodeblock %}
+
+* * * * *
 
 {% anchor h3 %}
 Pagination
