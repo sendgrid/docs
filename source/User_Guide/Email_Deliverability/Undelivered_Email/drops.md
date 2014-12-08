@@ -1,3 +1,13 @@
+---
+seo:
+  title: Drops
+title: Drops
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
 {% anchor h3%}
 Drops
 {% endanchor %}
