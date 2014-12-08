@@ -116,19 +116,25 @@ This is not a sandbox. These are real messages that consume credits on your acco
 
 ### cURL Examples
 
+{% anchor h4 %}
 Send to one email recipient
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
+{% anchor h4 %}
 Send to multiple email recipients
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
+{% anchor h4 %}
 Send a test with attachment
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
@@ -140,7 +146,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
+{% anchor h4 %}
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
