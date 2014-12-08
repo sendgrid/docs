@@ -13,6 +13,35 @@ The `name` and `description` of the Group will be visible by recipients when the
 {% endinfo %}
 
 {% anchor h2 %}
+POST
+{% endanchor %}
+Create a new suppression group.
+
+{% info %}
+There is a limit of 25 groups per user.
+{% endinfo %}
+
+{% parameters post %}
+  {% parameter name Yes 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
+  {% parameter description Yes 'String. Max 100 characters' 'A description of the suppression group' %}
+{% endparameters %}
+
+{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
+  {% v3response %}
+HTTP/1.1 201 OK
+
+{
+  "id":103,
+  "name": "Product Suggestions",
+  "description": "Suggestions for products our users might like.",
+  "last_email_sent_at": "NOT IMPLEMENTED"
+}
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
 GET
 {% endanchor %}
 Retrieve all suppression groups associated with the user. 
@@ -60,35 +89,6 @@ Get information on a single suppression group.
 * * * * *
 
 {% anchor h2 %}
-POST
-{% endanchor %}
-Create a new suppression group.
-
-{% info %}
-There is a limit of 25 groups per user.
-{% endinfo %}
-
-{% parameters post %}
-  {% parameter name Yes 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
-  {% parameter description Yes 'String. Max 100 characters' 'A description of the suppression group' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
-  {% v3response %}
-HTTP/1.1 201 OK
-
-{
-  "id":103,
-  "name": "Product Suggestions",
-  "description": "Suggestions for products our users might like.",
-  "last_email_sent_at": "NOT IMPLEMENTED"
-}
-{% endv3response %}
-{% endapiv3example %}
-
-* * * * *
-
-{% anchor h2 %}
 PATCH
 {% endanchor %}
 Update a suppression group.
@@ -110,6 +110,8 @@ HTTP/1.1 201 OK
 }
 {% endv3response %}
 {% endapiv3example %}
+
+* * * * *
 
 {% anchor h2 %}
 DELETE

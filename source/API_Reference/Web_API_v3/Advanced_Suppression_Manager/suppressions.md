@@ -9,6 +9,29 @@ navigation:
 Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html) to prevent certain types of emails from being delivered to those addresses.
 
 {% anchor h2 %}
+POST
+{% endanchor %}
+
+Add recipient addresses to the suppressions list for a given group.
+
+{% info %}
+If the group has been deleted, this request will add the address to the global suppression.
+{% endinfo %}
+
+{% parameters post %}
+  {% parameter recipient_emails Yes 'Array of valid email addresses' 'Addresses to add to the suppression group' %}
+{% endparameters %}
+
+{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions recipient_emails=['test1@example.com','test2@example.com'] %}
+{% v3response %}
+HTTP/1.1 201
+{"recipient_emails":["test1@example.com","test2@example.com"]}
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
 GET 
 {% endanchor %}
 
@@ -48,29 +71,6 @@ HTTP/1.1 200
         }
     ]
 }
-{% endv3response %}
-{% endapiv3example %}
-
-* * * * *
-
-{% anchor h2 %}
-POST
-{% endanchor %}
-
-Add recipient addresses to the suppressions list for a given group.
-
-{% info %}
-If the group has been deleted, this request will add the address to the global suppression.
-{% endinfo %}
-
-{% parameters post %}
-  {% parameter recipient_emails Yes 'Array of valid email addresses' 'Addresses to add to the suppression group' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions recipient_emails=['test1@example.com','test2@example.com'] %}
-{% v3response %}
-HTTP/1.1 201
-{"recipient_emails":["test1@example.com","test2@example.com"]}
 {% endv3response %}
 {% endapiv3example %}
 
