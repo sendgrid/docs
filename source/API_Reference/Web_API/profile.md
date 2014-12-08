@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+Manage your SendGrid [profile](https://sendgrid.com/user/profile) settings using our [Web API]({{root_url}}/API_Reference/Web_API/index.html).
+
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -93,11 +95,11 @@ setPassword
 
 {% parameters set %}
  {% parameter 'password' 'Yes' 'Must be at least 6 characters' 'Your new password' %}
- {% parameter 'confirm_password' 'Yes' 'Must match password parameter and be at least 6 characters long' 'Confrim new password' %}
+ {% parameter 'confirm_password' 'Yes' 'Must match password parameter and be at least 6 characters long' 'Confirm new password' %}
 {% endparameters %}
 
 
-{% apiexample reset POST https://api.sendgrid.com/api/password.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPasword&confirm_password=newPassword %}
+{% apiexample reset POST https://api.sendgrid.com/api/password.set api_user=your_sendgrid_username&api_key=your_sendgrid_password&password=newPassword&confirm_password=newPassword %}
   {% response json %}
 {
   "message": "success"
