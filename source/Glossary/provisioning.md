@@ -30,7 +30,7 @@ What can I do in the meantime?
  
 Our Provisioning Team will be sending you a few emails that may contain some requests for additional information. Please answer any questions to the best of your ability so we can get you sending as quickly as possible!
 
-{% achor h3 %}
+{% anchor h3 %}
 Other relevant information
 {% endanchor %}
 

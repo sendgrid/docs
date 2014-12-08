@@ -15,3 +15,5 @@ You can export your unsubscribes from each list by hovering over the recipient l
 To add the exported unsubscribe list to a different recipient list, select “Manage Unsubscribes” and then “Upload.” You can also [add emails to your global unsubscribe list using an API call]({{root_url}}/API_Reference/Web_API/unsubscribes.html#-add).
 
 To export the unsubscribes from all of your different lists by selecting the “Download as CSV from all lists” option under “Manage Unsubscribes.”
+
+See Also: [Transactional Email Unsubscribes]({{root_url}}/Transactional_Emails/unsubscribes.html)
