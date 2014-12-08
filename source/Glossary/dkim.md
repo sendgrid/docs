@@ -26,13 +26,15 @@ SendGrid automatically enables DKIM for all email to improve your [email deliver
 
 When you utilize [whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228), you have to create DKIM DNS records.
 What it should look like:
+```
 smtpapi._domainkey.yourdomain.com.  |  TXT or CNAME  |  value
 smtpapi._domainkey.subdomain.yourdomain.com.  |  TXT or CNAME  |  value
  
 TXT value: k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
  
 CNAME value: dkim.sendgrid.net
-
+```
 Additional resources: 
-[the DKIM.org website](http://www.dkim.org/)
-[DNS Records and Underscores](https://support.sendgrid.com/hc/en-us/articles/200185218)
+
+* [the DKIM.org website](http://www.dkim.org/)
+* [DNS Records and Underscores](https://support.sendgrid.com/hc/en-us/articles/200185218)
