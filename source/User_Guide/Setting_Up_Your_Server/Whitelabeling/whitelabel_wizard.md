@@ -28,68 +28,7 @@ When in doubt, contact your DNS registrar or web hosting service's technical sup
 
 SendGrid allows companies to customize the domain that appears, a process called Whitelabeling. SendGrid does this using a subdomain for your domain. For example, if your domain is EXAMPLE.COM, you might use EM.EXAMPLE.COM, where EM is your sub-domain.
 
-Your first step is to choose a subdomain. Common examples are EMAIL, EM, MAIL, CONTACT, NEWS, NEWSLETTER, but you can make it anything you like. Now you just need to run the Whitelabel Wizard from your account and the wizard will generate the DNS records you need to add to your DNS entries. Below are links to some hosting and domain name registrars that you might be using.
-
-{% info %}
-The hosting company 1&1 does not support TXT records, so SPF cannot be specified and therefore is not supported by SendGrid.
-{% endinfo %}
-
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-        <td>
-          <a href="http://www.dnsmadeeasy.com">DNS Made Easy</a>
-        </td>
-        <td>
-          <a href="http://www.youtube.com/watch?v=hZ1bKYC3gWA=c4-overview-vl=PL2DD16B8270E9D3A0">Getting Started with DNS Made Easy</a>
-          <br>
-          <a href="http://help.dnsmadeeasy.com/records/spf-record/">Configure SPF Records on DNS Made Easy</a>
-          <br>
-          <a href="http://help.dnsmadeeasy.com/spry_menu/domainkeys-identified-mail-dkim-record/">Configure DK/DKIM Records on DNS Made Easy</a>
-          <br>
-          <a href="http://help.dnsmadeeasy.com/records/txt-record/">Configure TXT Records on DNS Made Easy</a>
-        </td>
-        <tr>
-          <td>
-            <a href="http://www.godaddy.com">GoDaddy</a>
-          </td>
-          <td>
-            <a href="http://support.godaddy.com/help/4597/setup-dns-using-cpanel">Configure DNS using CPanel</a>
-            <br>
-            <a href="http://support.godaddy.com/help/198/setting-up-dns-with-your-parallels-plesk-panel-9-server-and-domain-with-us">Configure DNS using Plesk Panel 9</a>
-            <br>
-            <a href="http://support.godaddy.com/help/6891/setting-up-dns-with-your-parallels-plesk-panel-10-server-and-domain-with-us">Configure DNS using Plesk Panel 10</a>
-            <br>
-            <a href="http://screencast.com/t/tip4j5ce6b">-Watch a video!-</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.bluehost.com">Bluehost</a>
-          </td>
-          <td>
-            <a href="https://my.bluehost.com/cgi/help/559">Instructions on how to configure DNS using cPanel on BlueHost</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.dreamhost.com">Dreamhost</a>
-          </td>
-          <td>
-            <a href="http://wiki.dreamhost.com/Custom_DNS">Instructions on how to configure custom DNS on DreamHost</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="http://www.hover.com">Hover</a>
-          </td>
-          <td>
-            <a href="https://www.hover.com/help/edit-dns-records-cname-mx-txt-and-srv">Instructions on how to edit your DNS configuration on Hover</a>
-          </td>
-        </tr>
-      </tr>
-   </tbody>
-</table>
+Your first step is to choose a subdomain. Common examples are EMAIL, EM, MAIL, CONTACT, NEWS, NEWSLETTER, but you can make it anything you like. Now you just need to run the Whitelabel Wizard from your account and the wizard will generate the DNS records you need to add to your DNS entries. It's important to know that [Instructions for modifying DNS settings]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html) may change depending on your host or registrar.
 
 {% warning %}
 It is critical that you select a subdomain that does not already exist. MAIL is a common subdomain. If you do not have access to your domain registrar, check with your service administrator.

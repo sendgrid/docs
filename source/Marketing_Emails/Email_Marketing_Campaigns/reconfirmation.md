@@ -9,7 +9,34 @@ navigation:
 ---
 
 {% anchor h2 %}
-What is a Reconfirmation Campaign? 
+How do you know if email subscribers are active or not?
+{% endanchor %}
+
+A common problem for senders is when a recipient will opt-in to receive their emails but after a certain period of time,
+these opted in emails do not make it to the mailbox. Worse, this leads to recently opted in addresses missing out on this
+senders emails as well. These addresses have opted in so what is the issue?
+
+Monitoring engagement is the best tool in ensuring a good reputation as a sender. In the past few years, there has been
+a large push in determine whether emails will make it to the mailbox by past engagement with that sender. Popular
+receiving mailboxes like Gmail, Yahoo! and Hotmail all use engagement tracking to decipher for their users which emails
+to put in the spam folder, bounce, or allow passage to a user's mailbox. Furthermore, many mailboxes now have the option
+to prioritize emails automatically so that there are two different categories of email; those deemed by the mailbox as
+important and those that aren't. This is almost entirely determined by whether or not recipients click on their emails
+or even better, if they reply. This increases the ante for senders to send content that recipients will engage with.
+
+Thankfully SendGrid provides a window into the problem. With a Silver Plan or higher senders are able to make use of
+the Event API which allows senders to know if recipients have opened and/or clicked on their emails. Lower tier plans
+can view this information under the Email Activity tab. With these tools, a sender can ensure that they are not sending
+to two major pitfalls: spam traps or recipients that are likely to acknowledge the email as spam. Sending to either of
+these recipients leads the receiving mailbox to believe that they are uninterested and therefore, begin to divert their
+emails to the unimportant or spam folders.
+
+Monitoring engagement provides a sustainable solution to sending that leaves both the sender and the recipients better off.
+Once you have been monitoring, you are primed to take some action with the subscribers who have not been active recently.
+You can do this with a Reconfirmation Campaign.
+
+{% anchor h2 %}
+What is a Reconfirmation Campaign?
 {% endanchor %}
 
 In order to maximize your email deliverability it is important to keep

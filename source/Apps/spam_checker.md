@@ -14,7 +14,7 @@ This App is only available to <a href="https://sendgrid.com/pricing">Silver acco
 
 ![Spam Checker App Image]({{root_url}}/images/spam_checker.png "Spam Checker")
 
-We use SpamAssassin to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient. 
+We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient. 
 {% warning %}
 The Default Value for this App is 5.0, and can be ranged between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless emails, where as 9 will only drop the spammiest of spam emails. 
 {% endwarning %}

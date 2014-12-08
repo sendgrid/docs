@@ -13,10 +13,11 @@ MultiAuth, or Multiple Authentication, is a feature that allows administrators t
 {% info %}
 Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username. 
 {% endinfo %}
+
 As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:
 
--   **Email** - enabling this right allows the designated credentials to send email through the account
--   **API** - enabling access to this function allows the designated credentials to utilize all of SendGrid's APIs, with exception to any API call that sends email
+-   **Email** - enabling this right allows the designated credentials to send email via SMTP Relay or using the [Send Mail function of the Web API]({{root_url}}/API_Reference/Web_API/mail.html)
+-   **API** - enabling access to this function allows the designated credentials to utilize all of [SendGrid's APIs](http://support.sendgrid.com/entries/21197488-what-are-the-sendgrid-apis-and-what-do-they-do), with exception to any API call that sends email
 -   **Web** - enables access to the web dashboard allows the specified credentials to administer the account using the web-based console.
 
 {% info %}
@@ -33,7 +34,7 @@ Future updates to Multiple User Credentials will allow for more granular control
 Using the Multiple Credentials Dashboard 
 {% endanchor %}
 
-In order to access the interface you need to login to your master account and click on **Account Settings \> Manage Multiple User Credentials**. When you access MultiAuth's User Credentials management interface, you will see a list of any previously created credentials. As an example, if you have created any credentials using the Multiple User Credentials API, those user names will appear here and display their assigned permissions.
+In order to access the interface you need to login to your master account and click on **Account Settings \> [Manage Multiple User Credentials](https://sendgrid.com/credentials)**. When you access MultiAuth's User Credentials management interface, you will see a list of any previously created credentials. As an example, if you have created any credentials using the Multiple User Credentials API, those user names will appear here and display their assigned permissions.
 
 {% info %}
 Credentials that have been granted access to the Web feature are not granted rights to access the Account Settings page. If they click on the link, they will receive a notification that their credentials do have have sufficient rights to do so. 

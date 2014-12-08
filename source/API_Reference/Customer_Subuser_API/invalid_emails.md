@@ -1,7 +1,7 @@
 ---
 layout: page
-weight: 0
-title: Invalid Emails
+weight: 250
+title: Subuser Invalid Emails
 navigation:
    show: true
 ---
@@ -11,13 +11,12 @@ Retrieve Invalid Emails
 {% endanchor %}
 
 {% parameters get %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving invalid emails from' %}
- {% parameter 'task' 'Yes' 'Must be set to *get*' 'This will allow you to retrieve the invalid emails for the specified subuser' %}
- {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+ {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve the invalid emails for the specified subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser retrieving invalid emails from' %}
+ {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
-
-{% apiexample get POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -64,16 +63,15 @@ Retrieve Invalid Emails
 {% anchor h2 %}
 Delete Invalid Emails 
 {% endanchor %}
-Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
+SendGrid drops messages to invalid emails, users can remove invalid emails from their list at any time if they believe the address to now be valid.
 
 {% parameters delete %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving invalid emails from' %}
- {% parameter 'task' 'Yes' 'Must be set to *delete*' 'This will allow you to delete a invalid email for the specified subuser' %}
- {% parameter 'email' 'No' 'Must be a invalid email' 'You must specify the invalid emails to remove' %}
+ {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to remove the specified email from the invalid email list for the specified subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser to retrieve invalid emails from' %}
+ {% parameter email Yes 'Must be a string' 'You must specify the invalid emails to remove' %}
 {% endparameters %}
 
-
-{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.invalidemails api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=invalidemail@example.com %}
   {% response json %}
 {
   "message": "success"

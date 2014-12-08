@@ -281,7 +281,11 @@ The following shows each type of event that can be posted along with the specifi
 You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you. 
 {% endinfo %}
 
-{% anchor h2 %}
+{% info %}
+The examples provided below are a JSON array for a particular event. These will always be within an array on the actual POST. The fields are not ordered.
+{% endinfo %}
+
+{% anchor h3 %}
 Processed 
 {% endanchor %}
 
@@ -302,7 +306,20 @@ Processed
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"processed"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Deferred 
 {% endanchor %}
 
@@ -327,7 +344,22 @@ Deferred
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "response":"400 Try again",
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "event":"delivered",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "attempt":"10"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Delivered 
 {% endanchor %}
 
@@ -350,7 +382,21 @@ Delivered
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "response":"250 OK",
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "event":"delivered",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"]
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Open 
 {% endanchor %}
 
@@ -371,7 +417,21 @@ Open
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "ip":"255.255.255.255",
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "useragent":"Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)",
+  "event":"open",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"]
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Click 
 {% endanchor %}
 
@@ -394,7 +454,22 @@ Click
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "ip":"255.255.255.255",
+  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+  "event":"click",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "url":"http://yourdomain.com/blog/news.html",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"]
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Bounce 
 {% endanchor %}
 
@@ -421,7 +496,23 @@ Bounce
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "status":"5.0.0",
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "event":"bounce",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "reason":"500 No Such User",
+  "type":"bounce"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Drop 
 {% endanchor %}
 
@@ -444,7 +535,21 @@ Drop
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "reason":"Bounced Address",
+  "event":"dropped"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Spam Report 
 {% endanchor %}
 
@@ -465,7 +570,19 @@ Spam Report
    </tbody>
 </table>
 
-{% anchor h2 %}
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"spamreport"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Unsubscribe 
 {% endanchor %}
 
@@ -485,6 +602,17 @@ Unsubscribe
       </tr>
    </tbody>
 </table>
+
+{% codeblock lang:json %}
+{
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"unsubscribe"
+}
+{% endcodeblock %}
 
 {% anchor h2 %}
 Marketing Email Unsubscribes 

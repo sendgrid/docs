@@ -29,11 +29,3 @@ You can export your unsubscribes from each list by hovering over the recipient l
 To add the exported unsubscribe list to a different recipient list, select “Manage Unsubscribes” and then “Upload.” You can also [add emails to your global unsubscribe list using an API call](https://sendgrid.com/docs/API_Reference/Web_API/unsubscribes.html#-add).
 
 To export the unsubscribes from all of your different lists by selecting the “Download as CSV from all lists” option under “Manage Unsubscribes.”
-
-{% anchor h2 %}
-How Do I Resubscribe My Recipients?
-{% endanchor %}
-
-To remove an address from the global unsubscribe list via the web interface, navigate to “Unsubscribes” via the “Email Reports” menu. Select the address, and then click the “delete” link.
-
-To resubscribe a user to a marketing email list, visit the “Manage Unsubscribes” page for the recipient list the user had opted out of, check the box next to their email address, and press the “Resubscribe” button.

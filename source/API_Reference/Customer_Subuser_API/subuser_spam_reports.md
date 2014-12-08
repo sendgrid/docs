@@ -1,23 +1,25 @@
 ---
 layout: page
-weight: 0
+weight: 200
 title: Subuser Spam Reports
 navigation:
    show: true
 ---
+
+
 
 {% anchor h2 %}
 Retrieve Spam Reports 
 {% endanchor %}
 
 {% parameters get %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving spam reports from' %}
- {% parameter 'task' 'Yes' 'Must be set to *get*' 'This will allow you to retrieve the spam reports for the specified user' %}
- {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+ {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve spam reports' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve the spam reports of' %}
+ {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -50,16 +52,15 @@ Retrieve Spam Reports
 {% anchor h2 %}
 Delete Spam Reports 
 {% endanchor %}
-Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
+SendGrid suppresses messages to spam-reporting addresses, but entries can be removed from the suppression list at any time if redelivery to a spam-reporting address is desired. Take care that the address should be redelivered to.
 
 {% parameters delete %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving spam reports from' %}
- {% parameter 'task' 'Yes' 'Must be set to *delete*' 'This will allow you to delete a spam report for the specified user' %}
- {% parameter 'email' 'No' 'Must be a spam reports' 'You must specify the spam reports to remove' %}
+ {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to remove address from spam report suppression list' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to remove spam reporting address from' %}
+ {% parameter email Yes 'Address exists on the list' 'Address to remove from the Spam Report suppression list' %}
 {% endparameters %}
 
-
-{% apiexample delete POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=spamreport@domain.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=spamreport@domain.com %}
   {% response json %}
 {
   "message": "success"
