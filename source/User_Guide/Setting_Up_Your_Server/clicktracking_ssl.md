@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Click and Open Tracking with SSL Enabled
-title: Click and Open Tracking with SSL Enabled
+  title: Setting up SSL for click tracking
+title: Setting up SSL for click tracking
 layout: page
 weight: 0
 navigation:
