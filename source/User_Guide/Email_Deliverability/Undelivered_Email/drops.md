@@ -42,7 +42,7 @@ How to remove Drops
 
 If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. You can visit all the suppression lists under the Email Reports tab (except the Blocks list which is not a suppression list):
 
-![Email Activity Drop]({{root_url}}/images/drops_2.png)
+![Email Activity Drop]({{root_url}}/images/drops_2.gif)
 
 Removing an address from the suppression lists will allow you to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again. 
 
