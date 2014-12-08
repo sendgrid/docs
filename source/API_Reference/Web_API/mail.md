@@ -63,7 +63,9 @@ This is not a sandbox. These are real messages that consume credits on your acco
   {% endresponse %}
 {% endapiexample %}
 
-### Call: Send to Multiple Recipients
+{% anchor h3 %}
+Call: Send to Multiple Recipients
+{% endanchor %}
 
 {% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -79,7 +81,9 @@ This is not a sandbox. These are real messages that consume credits on your acco
   {% endresponse %}
 {% endapiexample %}
 
-### Call: Sending with a CC and CCname
+{% anchor h3 %}
+Call: Sending with a CC and CCname
+{% endanchor %}
 
 {% apiexample cc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&cc=ccdestination@mail.com&ccname=CCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -95,7 +99,9 @@ This is not a sandbox. These are real messages that consume credits on your acco
   {% endresponse %}
 {% endapiexample %}
 
-### Call: Sending with a BCC and BCCname
+{% anchor h3 %}
+Call: Sending with a BCC and BCCname
+{% endanchor %}
 
 {% apiexample bcc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -114,7 +120,9 @@ This is not a sandbox. These are real messages that consume credits on your acco
 
 * * * * *
 
-### cURL Examples
+{% anchor h3 %}
+cURL Examples
+{% endanchor %}
 
 {% anchor h4 %}
 Send to one email recipient
@@ -158,7 +166,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F files[attachment.pdf]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
-### Raw HTTP Dump
+{% anchor h3 %}
+Raw HTTP Dump
+{% endanchor %}
 
 The following is a dump of the HTTP data sent to our server to generate an email via our web API.
 
