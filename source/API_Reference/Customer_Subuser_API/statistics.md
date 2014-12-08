@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 350
 title: Statistics
 navigation:
    show: true
@@ -12,93 +12,78 @@ Subuser Statistics
 Retrieve Subuser Statistics 
 {% endanchor %}
 
-Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
+Retrieve daily statistics for a subuser.
 
+{% info %}
+The <code>days</code> argument and the <code>start_date</code>/<code>end_date</code> arguments are exclusive from each other.
+{% endinfo %}
 
 {% parameters stats %}
- {% parameter 'Parameter' 'Required' 'Requirements' 'Description' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving statistics from' %}
- {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (includes today)' %}
- {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
- {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve statistics from' %}
+ {% parameter days No 'Unsigned Integer' 'Number of days in the past to include statistics (includes today)' %}
+ {% parameter start_date No 'Date must be in <code>YYY-mm-dd</code> format and be before the <code>end_date</code> parameter' 'Beginning of date range' %}
+ {% parameter end_date No 'Date must be in <code>YYY-mm-dd</code> format and be after the <code>start_date</code> parameter' 'End of date range' %}
 {% endparameters %}
 
-
-{% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com %}
+{% apiexample stats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 [
   {
-    "date": "2009-06-20",
-    "requests": 12342,
-    "bounces": 12,
-    "clicks": 10223,
-    "opens": 9992,
-    "spamreports": 5
-  },
-  {
-    "date": "2009-06-21",
-    "requests": 32342,
-    "bounces": 10,
-    "clicks": 14323,
-    "opens": 10995,
-    "spamreports": 7
-  },
-  {
-    "date": "2009-06-22",
-    "requests": 52342,
-    "bounces": 11,
-    "clicks": 19223,
-    "opens": 12992,
-    "spamreports": 2
+    "date": "2014-11-27",
+    "requests": 0,
+    "delivered": 0,
+    "bounces": 0,
+    "repeat_bounces": 0,
+    "unsubscribes": 0,
+    "repeat_unsubscribes": 0,
+    "clicks": 0,
+    "opens": 0,
+    "spamreports": 0,
+    "repeat_spamreports": 0,
+    "invalid_email": 0,
+    "blocks": 0,
+    "unique_clicks": 0,
+    "unique_opens": 0
   }
 ]
   {% endresponse %}
   {% response xml %}
 <stats>
-   <day>
-      <date>2009-06-20</date>
-      <requests>12342</requests>
-      <bounces>12</bounces>
-      <clicks>10223</clicks>
-      <opens>9992</opens>
-      <spamreports>5</spamreports>
-   </day>
-   <day>
-      <date>2009-06-21</date>
-      <requests>32342</requests>
-      <bounces>10</bounces>
-      <clicks>14323</clicks>
-      <opens>10995</opens>
-      <spamreports>7</spamreports>
-   </day>
-   <day>
-      <date>2009-06-22</date>
-      <requests>52342</requests>
-      <bounces>11</bounces>
-      <clicks>19223</clicks>
-      <opens>12992</opens>
-      <spamreports>2</spamreports>
-   </day>
+  <day>
+    <date>2014-11-29</date>
+    <requests>0</requests>
+    <delivered>0</delivered>
+    <bounces>0</bounces>
+    <repeat_bounces>0</repeat_bounces>
+    <unsubscribes>0</unsubscribes>
+    <repeat_unsubscribes>0</repeat_unsubscribes>
+    <clicks>0</clicks>
+    <opens>0</opens>
+    <spamreports>0</spamreports>
+    <repeat_spamreports>0</repeat_spamreports>
+    <invalid_email>0</invalid_email>
+    <blocks>0</blocks>
+    <unique_clicks>0</unique_clicks>
+    <unique_opens>0</unique_opens>
+  </day>
 </stats>
 
   {% endresponse %}
 {% endapiexample %}
 
 {% anchor h2 %}
-Retrieve Aggregates 
+Retrieve Aggregate Statistics 
 {% endanchor %}
 
-Retrieve all-time totals for your subuser
-
+Retrieve lifetime total statistics for a subuser.
 
 {% parameters agg %}
- {% parameter 'Parameter' 'Required' 'Requirements' 'Description' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving statistics from' %}
- {% parameter 'aggregate' 'Yes' 'Must be set to 1' 'This is used to let us know that you are interested in all time totals' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve statistics from' %}
+ {% parameter aggregate Yes 'Must be set to <code>1</code>' 'argument to provide total statistics instead of daily' %}
 {% endparameters %}
 
 
-{% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&aggregate=1 %}
+{% apiexample agg POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&aggregate=1 %}
   {% response json %}
 {
   "requests": "12342",
@@ -121,22 +106,26 @@ Retrieve all-time totals for your subuser
 {% endapiexample %}
 
 {% anchor h2 %}
-Category List 
+Category List
 {% endanchor %}
 
-Retrieve a list of all the categories used in your subusers account.
-
+Retrieve a list of all the categories used by a subuser.
 
 {% parameters cat %}
- {% parameter 'Parameter' 'Required' 'Requirements' 'Description' %}
- {% parameter 'list' 'Yes' 'The value must be set to <em>true</em>' 'This will allow you to retrieve a list of all categories used in your subusers account.' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser we are retrieving category statistics from' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to pull categories from' %}
+ {% parameter list Yes 'The value must be set to <code>true</code>' 'Task to retrieve list of categories' %}
 {% endparameters %}
 
 
-{% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&list=true %}
+{% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&list=true %}
   {% response json %}
 [
+  {
+    "category": "categoryA"
+  },
+  {
+    "category": "categoryB"
+  },
   {
     "category": "categoryC"
   }
@@ -153,68 +142,60 @@ Retrieve a list of all the categories used in your subusers account.
 {% endapiexample %}
 
 {% anchor h2 %}
-Category Statistics 
+Category Statistics
 {% endanchor %}
 
-Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use  *either* the days parameter *or* the start_date and end_date parameter.
+Retrieve statistics broken down by category. If the category does not exist, it will return an empty result set.
 
+{% info %}
+The <code>days</code> argument and the <code>start_date</code>/<code>end_date</code> arguments are exclusive from each other.
+{% endinfo %}
 
+{% parameters catstats %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to retrieve statistics from' %}
+ {% parameter category Yes 'Existing category on the account' 'Category to retrieve statistics from' %}
+ {% parameter days No 'Unsigned Integer' 'Number of days in the past to include statistics (includes today)' %}
+ {% parameter start_date No 'Date must be in <code>YYY-mm-dd</code> format and be before the <code>end_date</code> parameter' 'Beginning of date range' %}
+ {% parameter end_date No 'Date must be in <code>YYY-mm-dd</code> format and be after the <code>start_date</code> parameter' 'End of date range' %}
+{% endparameters %}
 
-{% xmljsontabs catstats %}
-
-<div class="tab-content">
-<div class="tab-pane" id="catstats-xml">
-### Call
-
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=categoryA
-{% endcodeblock %}
-    <h4>Call - Using an array of categories</h4>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=categoryB
-{% endcodeblock %}
-
-### Response
-
-{% codeblock lang:xml %}
+{% apiexample catstats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&category=categoryA %}
+  {% response json %}
+[
+  {
+    "date": "2009-06-20",
+    "category": "categoryA",
+    "requests": 12342,
+    "bounces": 12,
+    "clicks": 10223,
+    "opens": 9992,
+    "spamreports": 5
+  }
+]
+  {% endresponse %}
+  {% response xml %}
 <stats>
-   <day>
-      <date>2009-06-20</date>
-      <category>categoryA</category>
-      <requests>12342</requests>
-      <bounces>12</bounces>
-      <clicks>10223</clicks>
-      <opens>9992</opens>
-      <spamreports>5</spamreports>
-   </day>
-   <day>
-      <date>2009-06-21</date>
-      <category>categoryB</category>
-      <requests>32342</requests>
-      <bounces>10</bounces>
-      <clicks>14323</clicks>
-      <opens>10995</opens>
-      <spamreports>7</spamreports>
-   </day>
+  <day>
+    <date>2009-06-20</date>
+    <category>categoryA</category>
+    <requests>12342</requests>
+    <bounces>12</bounces>
+    <clicks>10223</clicks>
+    <opens>9992</opens>
+    <spamreports>5</spamreports>
+  </day>
 </stats>
+  {% endresponse %}
+{% endapiexample %}
 
-{% endcodeblock %}
+{% anchor h2 %}
+Multiple Category Statistics
+{% endanchor %}
 
-</div>
-<div class="tab-pane active" id="catstats-json">
-### Call
+When retrieving statistics for more than one category, use an array category argument.
 
-{% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=categoryA
-{% endcodeblock %}
-    <h4>Call - Using an array of categories</h4>
-    {% codeblock %}
-https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=categoryB
-{% endcodeblock %}
-
-### Response
-
-{% codeblock lang:json %}
+{% apiexample catstats POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&category[]=categoryA&category[]=categoryB %}
+  {% response json %}
 [
   {
     "date": "2009-06-20",
@@ -235,6 +216,27 @@ https://api.sendgrid.com/apiv2/customer.stats.json?api_user=your_sendgrid_userna
     "spamreports": 7
   }
 ]
-{% endcodeblock %}
-
-</div>
+  {% endresponse %}
+  {% response xml %}
+<stats>
+  <day>
+    <date>2009-06-20</date>
+    <category>categoryA</category>
+    <requests>12342</requests>
+    <bounces>12</bounces>
+    <clicks>10223</clicks>
+    <opens>9992</opens>
+    <spamreports>5</spamreports>
+  </day>
+  <day>
+      <date>2009-06-21</date>
+      <category>categoryB</category>
+      <requests>32342</requests>
+      <bounces>10</bounces>
+      <clicks>14323</clicks>
+      <opens>10995</opens>
+      <spamreports>7</spamreports>
+  </day>
+</stats>
+  {% endresponse %}
+{% endapiexample %}

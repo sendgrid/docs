@@ -1,10 +1,14 @@
 ---
 layout: page
-weight: 0
+weight: 50
 title: Parse Settings
 navigation:
    show: true
 ---
+
+{% info %}
+Please refer to the [Parse Documentation]({{root_url}}/API_Reference/Webhooks/parse.html) for documentation on Parse.
+{% endinfo %}
 
 {% anchor h2 %}
 Get Current Settings 
@@ -12,19 +16,23 @@ Get Current Settings
 
 
 {% parameters get %}
- {% parameter 'task' 'Yes' 'Must be set to *get*' 'Retrieve Parse settings' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser who we will update' %}
+ {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve Parse records' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser to retrieve records for' %}
 {% endparameters %}
 
-
-{% apiexample get POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=subuser_username %}
   {% response json %}
 {
   "parse": [
     {
-      "hostname": "www.example.com",
+      "hostname": "parse.example1.com",
       "url": "www.mydomain.com/parse.php",
       "spam_check": 1
+    },
+    {
+      "hostname": "parse.example2.com",
+      "url": "www.mydomain.com/parse.php",
+      "spam_check": 0
     }
   ]
 }
@@ -32,9 +40,14 @@ Get Current Settings
   {% response xml %}
 <parse>
    <entry>
-      <hostname>www.example.com</hostname>
+      <hostname>parse.example1.com</hostname>
       <url>www.mydomain.com/parse.php</url>
       <spam_check>1</spam_check>
+   </entry>
+   <entry>
+      <hostname>parse.example2.com</hostname>
+      <url>www.mydomain.com/parse.php</url>
+      <spam_check>0</spam_check>
    </entry>
 </parse>
 
@@ -49,14 +62,14 @@ Create New Entry
 
 
 {% parameters create %}
- {% parameter 'task' 'Yes' 'Must be set to *set*' 'Set Parse settings' %}
- {% parameter 'hostname' 'Yes' 'No more than 255 characters' 'Hostname we will use with your email' %}
- {% parameter 'url' 'Yes' 'The parse destination' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser who we will update' %}
+ {% parameter task Yes 'Must be set to <code>set</code>' 'Task to set Parse record' %}
+ {% parameter user Yes 'Subuser must be  under your account' 'The subuser setup parse on' %}
+ {% parameter hostname Yes 'Valid DNS entry' 'Hostname to catch email from. Must have mx record' %}
+ {% parameter url Yes 'Valid POST URL' 'The URL to POST the Parse data' %} 
 {% endparameters %}
 
 
-{% apiexample create POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=example@example.com %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=set&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -78,14 +91,14 @@ Edit Entry
 
 
 {% parameters edit %}
- {% parameter 'task' 'Yes' 'Must be set to *update*' 'Set Parse settings' %}
- {% parameter 'hostname' 'Yes' 'No more than 255 characters' 'Hostname entry you want to update' %}
- {% parameter 'url' 'Yes' 'The parse destination' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser who we will update' %}
+ {% parameter task Yes 'Must be set to <code>update</code>' 'Task to edit Parse record' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser who owns the Parse record to update' %}
+ {% parameter hostname Yes 'No more than 255 characters' 'Hostname entry you want to update' %}
+ {% parameter url Yes 'Valid POST URL' 'The new URL to POST the Parse data' %}
 {% endparameters %}
 
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=example@example.com %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&task=update&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
@@ -107,13 +120,12 @@ Delete Entry
 
 
 {% parameters data %}
- {% parameter 'task' 'Yes' 'Must be set to *delete*' 'Set Parse settings' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' 'The subuser who we will update' %}
- {% parameter 'hostname' 'Yes' 'Must be the hostname you wish to delete.' 'The host name you will remove for your subuser' %}
+ {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to delete Parse record' %}
+ {% parameter user Yes 'Subuser must be under your account' 'The subuser who owns the Parse record being removed.' %}
+ {% parameter hostname Yes 'Must be an existing hostname on the user' 'The Parse record to remove' %}
 {% endparameters %}
 
-
-{% apiexample data POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=example@example.com %}
+{% apiexample data POST https://api.sendgrid.com/apiv2/customer.parse api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&user=subuser_username %}
   {% response json %}
 {
   "message": "success"

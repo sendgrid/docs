@@ -1,31 +1,29 @@
 ---
 layout: page
-weight: 0
+weight: 475
 title: IP Management
 navigation:
    show: true
 ---
 
+{% anchor h2 %}
 List
+{% endanchor %}
 
-Obtain a complete list of all IP's and which are free, taken or available.
-
+Obtain a complete list of all IPs on your account and which are free, taken or available.
 
 {% parameters list %}
- {% parameter 'list' 'Yes' 'Must be set to either ( all / free / taken / available )' %}
+ {% parameter list Yes 'Must be set to one of:<br /><code>all</code> <code>free</code> <code>taken</code> <code>available</code>' 'Will return the IPs on the account that match the argument' %}
 {% endparameters %}
 
+The <code>list</code> argument will restrict the IPs returned:
 
-Here is a brief explanation of each option available for the list parameter:
-
-all
-:   All IP addresses available to account, regardless of whether or not the IP is taken by a subuser
-free
-:   All free IP addresses for the account. If a subuser is using an IP, it will not show up on this list
-taken
-:   All taken IP addresses for the account. Only IP addresses that taken by subusers will show up on this list
-available
-:   All available IP addresses for the account including all free IP addresses. If a subuser is deactivated*and* is assigned an IP, that IP will show up on this list since that IP address is not being used by anyone
+<ul>
+<li><strong>all</strong>: All IP addresses available on account, regardless of whether or not the IP is used by a subuser.</li>
+<li><strong>free</strong>: All free IP addresses for the account. IPs that are not in use by any subusers.</li>
+<li><strong>taken</strong>: All taken IP addresses for the account. IP addresses that are in use by one or more subusers.</li>
+<li><strong>available</strong>: All available IP addresses for the account including all free IP addresses. If a subuser is <em>deactivated</em> and assigned an IP, that IP will show up on this list since that IP address is not actually being used.</li>
+</ul>
 
 {% apiexample list POST https://api.sendgrid.com/apiv2/customer.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=all %}
   {% response json %}
@@ -54,22 +52,19 @@ available
 * * * * *
 
 {% anchor h2 %}
-Subuser IP Usage 
+Subuser IP List 
 {% endanchor %}
-If your account has more than one IP address, you can manage what IPs your subusers are allowed to send from. If you remove all IPs from a specified user, they will use all IPs from from your list.
 
-
-{% parameters usage %}
- {% parameter 'task' 'Yes' 'Must be set to *list*' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' %}
+{% parameters list %}
+ {% parameter task Yes 'Must be set to <code>list</code>' 'Task to return the IPs in use by the subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to get the IPs of' %}
 {% endparameters %}
 
-
-{% apiexample usage POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=example@example.com %}
+{% apiexample list POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=list&user=subuser_username %}
   {% response json %}
 {
   "success": "success",
-  "outboundcluster": "o1.sendgrid.net",
+  "outboundcluster": "SendGrid MTA",
   "ips": [
     {
       "ip": "255.255.255.250"
@@ -94,7 +89,7 @@ If your account has more than one IP address, you can manage what IPs your subus
   {% endresponse %}
   {% response xml %}
 <sendips>
-   <ocluster>o1.sendgrid.net</ocluster>
+   <ocluster>SendGrid MTA</ocluster>
    <ips>
       <ip>255.255.255.250</ip>
       <ip>255.255.255.251</ip>
@@ -115,15 +110,14 @@ Subuser IP Assignment
 You need to assign at least ONE IP to your subuser.
 
 
-{% parameters subuser %}
- {% parameter 'task' 'Yes' 'Must be set to *append*' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' %}
- {% parameter 'set' 'Yes' 'Must be either: **none**: Remove all ips. **all**: Apply all possible ips to subuser. **specify**: Specify the ips to the subser. Must be a valid set of IPs (use the list call to determine valid IPs)' %}
- {% parameter 'ip[]' 'No' 'If the *set* parameter is set, then you must specify the IPs. Use the ip[] parameter to specify an IP. [ IE - ip[]=255.255.255.0[]=255.255.255.1 ]' %}
+{% parameters append %}
+ {% parameter task Yes 'Must be set to <code>append</code>' 'Task to add ip to a subuser' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser that is adding IPs' %}
+ {% parameter set Yes 'Must be either:<br /><code>none</code> <code>all</code> <code>specify<code>' '<code>none</code>: Remove all ips.<br /><code>all</code>: Apply all possible ips to subuser.<br /><code>specify</code>: Specify the ips to the subser' %}
+ {% parameter ip[] No 'Must be a valid set of IPs (use the list call to determine valid IPs)' 'If the <code>set</code> parameter is <code>specify</code>, then you must specify the IPs. Use the ip[] parameter to specify an IP: <code>ip[]=255.255.255.0[]=255.255.255.1</code>' %}
 {% endparameters %}
 
-
-{% apiexample subuser POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=example@example.com&ip[]=255.255.255.250&ip[]=255.255.255.255 %}
+{% apiexample append POST https://api.sendgrid.com/apiv2/customer.sendip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&set=specify&user=subuser_username&ip[]=255.255.255.250&ip[]=255.255.255.255 %}
   {% response json %}
 {
   "message": "success"
