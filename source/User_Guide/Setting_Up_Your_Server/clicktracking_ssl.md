@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Click and Open Tracking with SSL Enabled
-title: Click and Open Tracking with SSL Enabled
+  title: Setting up SSL for click tracking
+title: Setting up SSL for click tracking
 layout: page
 weight: 0
 navigation:
@@ -20,57 +20,11 @@ Configuring SSL Certificates and Keys
 
 In order for click and open tracking to work over SSL, SendGrid needs to present a valid certificate that will be trusted by the email recipient's browser. For whitelabeled domains, SendGrid is not able to request and/or manage certificates, as it is not the record owner for the domain.
 
-To work around this restriction, you may use a CDN service, such as [CloudFlare](http://cloudflare.com) or [Fastly](http://fastly.com) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
+To work around this restriction, you may use a CDN service, such as [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html) or [Fastly](http://fastly.com) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
 
 Once you have followed the configuration guide for either of these
 services, please contact support and they will enable SSL click and
 opening tracking for you.
-
-{% anchor h2 %}
-Using CloudFlare
-{% endanchor %}
-
-{% anchor h3 %}
-Creating a New CloudFlare Account
-{% endanchor %}
-
-If you are not already a CloudFlare customer, you have two options for setting up your account. You can follow their Sign Up process, which requires that you make CloudFlare the authoritative provider for your DNS, or you can choose to perform a "CNAME configuration".
-
-Unless you are comfortable changing your authoritative DNS provider, please follow the instructions for [getting CloudFlare up and running using a CNAME based configuration](https://support.cloudflare.com/hc/en-us/articles/200168706-How-do-I-do-CNAME-setup-).
-
-{% anchor h3 %}
-Configuring CloudFlare
-{% endanchor %}
-
-First, login to your CloudFlare account. 
-
-Click on the "Settings" button on the Dashboard. 
-
-![CloudFlare Dashboard]({{root_url}}/images/cloudflare1.png)
-
-Now click on CloudFlare settings.
-
-![CloudFlare Settings]({{root_url}}/images/cloudflare2.png)
-
-Ensure that SSL mode is set to "Full SSL"
-
-![CloudFlare SSL]({{root_url}}/images/cloudflare3.png)
-
-{% info %}
-SendGrid is working with CloudFlare to resolve an issue that precludes the use of "Strict SSL". We recognize that "Strict SSL" is optimal, but unfortunately it can only be enabled by requesting a special configuration modification from CloudFlare. If your threat model requires the use of "Strict SSL", let us know and we will ask CloudFlare to enable the workaround for you.
-{% endinfo %}
-
-Now, go back to "Websites", and click on "DNS Settings".
-
-![CloudFlare DNS]({{root_url}}/images/cloudflare4.png)
-
-Add a new CNAME entry that points your desired whitelabel domain to $customer.ct.sendgrid.net, e.g.:
-
-![CloudFlare CNAME]({{root_url}}/images/cloudflare5.png)
-
-Now click on "I'm done with CNAME setup". Once done; contact SendGrid support,
-and they'll validate the CDN settings and enable SSL click and open
-tracking.
 
 {% anchor h2 %}
 Using Fastly
