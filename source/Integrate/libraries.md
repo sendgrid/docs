@@ -139,7 +139,7 @@ Python
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) *by SendGrid* - Official SendGrid Python wrapper to send emails
 -   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) *by SendGrid*- Official Python library to create SMTP API headers
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
--   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid STMP API interface for Django
+-   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
 -   [sendgrid-sendgrid](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
 
 {% anchor h3 %}
