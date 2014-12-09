@@ -6,20 +6,15 @@ navigation:
   show: true
 ---
 
-{% info %}
-IP Pools are available if you have dedicated IPs for your account.
-To add IPs to your account, please contact support.
-{% endinfo %}
-
 {% anchor h2 %}
 Using IP Pools with the SMTP API Header
 {% endanchor %}
 
 IP Pools allow you to group your dedicated SendGrid IP addresses
 together. For example, you might have separate pools named
-_transactional_ and _marketing_. 
+`transactional` and `marketing`. 
 
-Then, when sending marketing emails, you may specify that the _marketing_ pool be used, so that your transactional emails maintain their own reputation.
+Then, when sending marketing emails, you may specify that the `marketing` pool be used, so that your transactional IPs maintain their own reputation.
 
 {% codeblock lang:json %}
 
@@ -30,6 +25,29 @@ Then, when sending marketing emails, you may specify that the _marketing_ pool b
 {% warning %}
 If an IP pool is NOT specified for an email, it will use any IP available, including ones in pools.
 {% endwarning %}
+
+* * * * *
+
+{% anchor h2 %}
+POST
+{% endanchor %}
+Create an IP pool.
+
+{% info %}
+There is a limit of 10 IP pools per user.
+{% endinfo %}
+
+{% parameters post %}
+  {% parameter name Yes 'String. max of 64 characters' 'Name of the new IPpool' %}
+{% endparameters %}
+
+{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools name=marketing%}
+{% v3response %}
+{"name":"marketing"}
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
 
 {% anchor h2 %}
 GET
@@ -42,24 +60,7 @@ List all IP pools.
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
-POST
-{% endanchor %}
-Create an IP pool.
-
-{% info %}
-There is a limit of 10 IP pools per user.
-{% endinfo %}
-
-{% parameters post %}
-  {% parameter name 'A string with a max length of 64 characters.' 'The name of the pool.' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools name=marketing%}
-{% v3response %}
-{"name":"marketing"}
-{% endv3response %}
-{% endapiv3example %}
+* * * * *
 
 {% anchor h2 %}
 GET
@@ -75,13 +76,15 @@ List the IPs in a specified pool.
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
+
 {% anchor h2 %}
 PUT
 {% endanchor %}
-Update an IP pool's name
+Update an IP pool's name.
 
 {% parameters put %}
-  {% parameter name true 'A string with a max length of 64 characters.' 'The new name of the pool.' %}
+  {% parameter name Yes 'String. max 64 characters' 'New name of the pool' %}
 {% endparameters %}
 
 {% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
@@ -89,6 +92,8 @@ Update an IP pool's name
 {"name":"new_pool_name"}
 {% endv3response %}
 {% endapiv3example %}
+
+* * * * *
 
 {% anchor h2 %}
 DELETE
