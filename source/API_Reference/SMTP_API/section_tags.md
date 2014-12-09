@@ -84,7 +84,7 @@ The accompanying X-SMTPAPI JSON header would look like:
       "Jan 1",
       "Feb 14",
       "Aug 11"
-    ],
+    ]
   },
   "section": {
     ":male": "Mr. :name",
