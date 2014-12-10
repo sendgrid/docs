@@ -52,7 +52,7 @@ Get warmup status for a particular IP.
 HTTP/1.1 200 OK
 
 {
-  "ip":"167.89.21.3",
+  "ip":"0.0.0.0",
   "start_date":1409616000
 }
   {% endv3response %}
@@ -71,6 +71,11 @@ Add an IP to warmup.
 {% v3response %}
 _
 {% endv3response %}
+HTTP/1.1 201 OK
+{
+  "ip":"0.0.0.0",
+  "start_date":1409616000
+}
 {% endapiv3example %}
 
 {% anchor h2 %}
