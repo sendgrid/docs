@@ -6,10 +6,37 @@ navigation:
   show: true
 ---
 
+{% anchor h2 %}   
+POST    
+{% endanchor %}   
+Add an IP to a pool.    
+    
+{% info %}    
+An IP may belong to multiple pools. It may take 60 seconds for your IP    
+address to be added to a pool after your request is made.   
+{% endinfo %}   
+    
+{% parameters post %}   
+  {% parameter ip Yes 'Valid IP address' 'IP address to add to the pool' %}    
+{% endparameters %}   
+    
+{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools/:pool_name/ips ip=0.0.0.0 %}    
+  {% v3response %}    
+HTTP/1.1 201 OK   
+    
+{   
+    "ip":"0.0.0.0",   
+    "pool_name":"example_pool_1"    
+}   
+  {% endv3response %}   
+{% endapiv3example %} 
+
+* * * * *
+
 {% anchor h2 %}
 GET
 {% endanchor %}
-See a list of all IPs and the IPs, including warm up status and pools.
+See a list of all IPs, including warm up status and pools.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips %}
 {% v3response %}
@@ -26,6 +53,8 @@ HTTP/1.1 200 OK
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
+
 {% anchor h2 %}		
 GET		
 {% endanchor %}		
@@ -41,32 +70,9 @@ HTTP/1.1 200 OK
   "warmup":false		
 }		
   {% endv3response %}		
-{% endapiv3example %}		
-		
-{% anchor h2 %}		
-POST		
-{% endanchor %}		
-Add an IP to a pool.		
-		
-{% info %}		
-An IP may belong to multiple pools. It may take 60 seconds for your IP		
-address to be added to a pool after your request is made.		
-{% endinfo %}		
-		
-{% parameters post %}		
-  {% parameter ip true 'A valid IP address.' 'The IP address to add to the pool.' %}		
-{% endparameters %}		
-		
-{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools/:pool_name/ips ip=0.0.0.0 %}		
-  {% v3response %}		
-HTTP/1.1 201 OK		
-		
-{		
-    "ip":"0.0.0.0",		
-    "pool_name":"example_pool_1"		
-}		
-  {% endv3response %}		
-{% endapiv3example %}		
+{% endapiv3example %}
+
+* * * * *
 		
 {% anchor h2 %}		
 DELETE		
@@ -74,7 +80,7 @@ DELETE
 Remove an IP address from a pool.		
 		
 {% parameters post %}		
-  {% parameter ip true 'A valid IP address.' 'The IP address to remove from the pool.' %}		
+  {% parameter ip Yes 'Valid IP address' 'IP address to remove from the pool' %}		
 {% endparameters %}		
 		
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/:pool_name/ips ip=0.0.0.0 %}		
