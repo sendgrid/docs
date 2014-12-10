@@ -69,6 +69,8 @@ List the IPs in a specified pool.
 
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/pools/:pool_name %}
 {% v3response %}
+HTTP/1.1 200 OK	
+
 {
   "ips":["167.89.21.3"],
   "name":"new_test5"
@@ -89,7 +91,11 @@ Update an IP pool's name.
 
 {% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
 {% v3response %}
-{"name":"new_pool_name"}
+HTTP/1.1 200 OK	
+
+{
+	"name":"new_pool_name"
+}
 {% endv3response %}
 {% endapiv3example %}
 
