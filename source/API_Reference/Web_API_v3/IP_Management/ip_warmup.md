@@ -51,11 +51,13 @@ Get warmup status for a particular IP.
   {% v3response %}
 HTTP/1.1 200 OK
 
-{
-  "ip":"0.0.0.0",
-  "start_date":1409616000
-}
-  {% endv3response %}
+[
+  {
+    "ip":"0.0.0.0",
+    "start_date":1409616000
+  }
+]  
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
@@ -69,13 +71,15 @@ Add an IP to warmup.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
 {% v3response %}
-_
-{% endv3response %}
 HTTP/1.1 201 OK
-{
-  "ip":"0.0.0.0",
-  "start_date":1409616000
-}
+
+[
+  {
+    "ip":"0.0.0.0",
+    "start_date":1409616000
+  }
+]
+{% endv3response %}
 {% endapiv3example %}
 
 {% anchor h2 %}
