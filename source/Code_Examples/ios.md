@@ -11,7 +11,7 @@ We recommend using SendGrid Objective-C, our client library, <a href="https://gi
 {% endgithub %}
 
 {% anchor h2 %}Using SendGrid's Objective-C Library{% endanchor %}
-{% codeblock lang:objective-c %}
+{% codeblock lang:objc %}
 // using SendGrid's Objective-C Library - https://github.com/sendgrid/sendgrid-objc
 #import <SendGrid/SendGrid.h>
 #import <SendGrid/SendGridEmail.h>
