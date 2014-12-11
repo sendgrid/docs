@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+A user's timezone affects the displayed dates on all Suppression Lists and Statistics.
+
 {% anchor h2 %}
 get 
 {% endanchor %}
