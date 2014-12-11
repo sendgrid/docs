@@ -37,16 +37,28 @@ HTML
   end
 
   class V3ResponseBlock < Liquid::Block
+    # Solution to unquote true, false, and numbers in JSON response
+    def unquote_data(data)
+      data.each do |k, v|
+        data[k] = v.to_i if /\A[-+]?\d+\z/ === v
+        data[k] = true if v == "true"
+        data[k] = false if v == "false"
+      end
+    end
+
     def render(context)
       output = super
  
-      #let's parse the vars before we generate the output to avoid complications
+      # let's parse the vars before we generate the output to avoid complications
       identifier = Liquid::Template.parse("{{ identifier }}").render context
       request_type = Liquid::Template.parse("{{ request_type }}").render context
       url = Liquid::Template.parse("{{ url }}").render context
       data = Liquid::Template.parse("{{ data }}").render context
 
-      data = data.length > 0 ? JSON.pretty_generate(Hash[URI.decode_www_form(data)]) : ""
+      data = Hash[URI.decode_www_form(data)]
+      data = unquote_data(data)
+      data = data.length > 0 ? JSON.pretty_generate(data) : ""
+
       if data.length > 0
         data_block = "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
       end      
