@@ -12,10 +12,6 @@ This endpoint allows you to retrieve and delete entries in the Blocks list.
 You can live test these API endpoints with the "Try It" button for each endpoint on this page.
 {% endinfo %}
 
-{% warning %}
-<strong>"Try It" IS NOT A SANDBOX</strong><br />Using the "Try It" button makes live requests against your account.
-{% endwarning %}
-
 {% anchor h2 %}
 get 
 {% endanchor %}

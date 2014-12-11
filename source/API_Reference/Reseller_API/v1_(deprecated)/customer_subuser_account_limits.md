@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+ This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html) Reseller Customer Subuser Account Limits page
+{% endwarning %}
+
 Throttle your customer subuser when you need them to send only a specific amount of emails at a specified interval.
 
 * * * * *

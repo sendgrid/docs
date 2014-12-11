@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_invalid_emails.html) Reseller Customer Invalid Emails page.
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve Invalid Emails 
 {% endanchor %}

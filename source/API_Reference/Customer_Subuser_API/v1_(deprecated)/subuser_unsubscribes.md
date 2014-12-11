@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the v2 Customer Subuser API <a href="https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subuser_unsubscribes.html">Subuser Unsubscribes</a> page.
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve Unsubscribes 
 {% endanchor %}

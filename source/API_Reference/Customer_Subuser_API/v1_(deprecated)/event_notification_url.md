@@ -2,88 +2,34 @@
 layout: page
 weight: 0
 title: Event Notification URL
-seo:
-  robots: NOINDEX, FOLLOW
 navigation:
    show: true
 ---
 
+{% warning %}
+This endpoint has been deprecated, and should not be used. Use the [Event Notification app]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification) with the [Subuser App endpoint]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html) instead.
+{% endwarning %}
+
 {% anchor h2 %}
-Retrieve 
+Get 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *get*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The username of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+{% parameters get %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>get</code>' 'Task to get the url for the specified user' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'Username of the subuser to get settings for' %}
+{% endparameters %}
 
-{% xmljsontabs get %}
 
-<div class="tab-content">
-<div class="tab-pane" id="get-xml">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<url>http://www.SubUserPostUrlHere.com</url>
-
-{% endcodeblock %}
-
-</div>
-<div class="tab-pane active" id="get-json">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.json
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:json %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=subuser_username %}
+  {% response json %}
 {
-  "url": "http://www.SubUserPostUrlHere.com"
+  "url": "http:\/\/www.SubUserPostUrlHere.com"
 }
-{% endcodeblock %}
-
-</div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<url>http://www.SubUserPostUrlHere.com</url>
+  {% endresponse %}
+{% endapiexample %}
 
 * * * * *
 
@@ -91,86 +37,24 @@ Retrieve
 Update / Set URL 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *set*</td>
-         <td>This will allow you to retrieve the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-      <tr>
-         <td>url</td>
-         <td>Yes</td>
-         <td>The notification URL</td>
-         <td>This is the new event notification URL</td>
-      </tr>
-   </tbody>
-</table>
+{% parameters set %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>set</code>' 'Task to set the eventurl for the subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The name of the subuser' %}
+ {% parameter 'url' 'Yes' 'The notification URL' 'This is the new event notification URL' %}
+{% endparameters %}
 
-{% xmljsontabs set %}
-
-<div class="tab-content">
-<div class="tab-pane" id="set-xml">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>success</message>
-</result>
-
-{% endcodeblock %}
-
-</div>
-<div class="tab-pane active" id="set-json">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.json
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:json %}
+{% apiexample set POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=subuser_username&url=http://www.SubUserPostUrlHere.com %}
+  {% response json %}
 {
   "message": "success"
 }
-{% endcodeblock %}
-
-</div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+  {% endresponse %}
+{% endapiexample %}
 
 * * * * *
 
@@ -178,77 +62,20 @@ Update / Set URL
 Delete 
 {% endanchor %}
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Parameter</th>
-         <th>Required</th>
-         <th>Requirements</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>task</td>
-         <td>Yes</td>
-         <td>Must be set to *delete*</td>
-         <td>This will allow you to delete the event notification url for the specified subuser</td>
-      </tr>
-      <tr>
-         <td>user</td>
-         <td>Yes</td>
-         <td>Subuser must be registered under your account</td>
-         <td>The name of the subuser</td>
-      </tr>
-   </tbody>
-</table>
+{% parameters delete %}
+ {% parameter 'task' 'Yes' 'Must be set to <code>delete</code>' 'Task to delete the event notification url for the specified subuser' %}
+ {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The name of the subuser' %}
+{% endparameters %}
 
-{% xmljsontabs delete %}
-
-<div class="tab-content">
-<div class="tab-pane" id="delete-xml">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.xml
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:xml %}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<result>
-   <message>success</message>
-</result>
-
-{% endcodeblock %}
-
-</div>
-<div class="tab-pane active" id="delete-json">
-### Call
-
-{% requestblock %}
-
-  {% requesturl POST %}https://api.sendgrid.com/api/user.eventposturl.json
-  {% endrequesturl %}
-
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com
-  {% endrequestdata %}
-
-{% endrequestblock %}
-
-### Response
-
-{% codeblock lang:json %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.eventposturl api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=subuser_username %}
+  {% response json %}
 {
   "message": "success"
 }
-{% endcodeblock %}
-
-</div>
-</div>
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+  {% endresponse %}
+{% endapiexample %}

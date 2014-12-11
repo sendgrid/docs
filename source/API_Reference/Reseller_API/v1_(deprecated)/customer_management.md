@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_management.html) Reseller Customer Management page.
+{% endwarning %}
+
 These are actions that directly affect your customer. We provide access via XML and JSON.
 
 * * * * *

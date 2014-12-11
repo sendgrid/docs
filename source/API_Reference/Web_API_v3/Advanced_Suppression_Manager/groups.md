@@ -6,12 +6,45 @@ navigation:
   show: true
 ---
 
-Groups are individual types of email you would like your users to be able to unsubscribe from, (e.g. Newsletters, Invoices, Alerts).
+Groups are specific types of email you would like your recipients to be able to unsubscribe from or subscribe to. For example: Daily Newsletters, Invoices, System Alerts.
+
+{% info %}
+The `name` and `description` of the Group will be visible by recipients when they are managing their subscriptions.
+{% endinfo %}
+
+{% anchor h2 %}
+POST
+{% endanchor %}
+Create a new suppression group.
+
+{% info %}
+There is a limit of 25 groups per user.
+{% endinfo %}
+
+{% parameters post %}
+  {% parameter name Yes 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
+  {% parameter description Yes 'String. Max 100 characters' 'A description of the suppression group' %}
+{% endparameters %}
+
+{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
+  {% v3response %}
+HTTP/1.1 201 OK
+
+{
+  "id":103,
+  "name": "Product Suggestions",
+  "description": "Suggestions for products our users might like.",
+  "last_email_sent_at": "NOT IMPLEMENTED"
+}
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
 
 {% anchor h2 %}
 GET
 {% endanchor %}
-Retrieve all suppression groups associated with your account. 
+Retrieve all suppression groups associated with the user. 
 
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups %}
 {% v3response %}
@@ -34,6 +67,7 @@ Retrieve all suppression groups associated with your account.
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
 
 {% anchor h2 %}
 GET
@@ -52,33 +86,7 @@ Get information on a single suppression group.
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
-POST
-{% endanchor %}
-Create a new suppression group.
-
-{% info %}
-There is a limit of 25 groups per user.
-{% endinfo %}
-
-{% parameters post %}
-  {% parameter name true 'String, may not share its name with any other suppression group in your account.' 'The name of the new suppression group.' %}
-  {% parameter description true 'String' 'A description of your suppression group (for your reference)' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
-  {% v3response %}
-HTTP/1.1 201 OK
-
-{
-  "id":103,
-  "name": "Product Suggestions",
-  "description": "Suggestions for products our users might like.",
-  "last_email_sent_at": "NOT IMPLEMENTED"
-}
-{% endv3response %}
-{% endapiv3example %}
-
+* * * * *
 
 {% anchor h2 %}
 PATCH
@@ -86,8 +94,8 @@ PATCH
 Update a suppression group.
 
 {% parameters patch %}
-  {% parameter name false 'String, may not share its name with any other suppression group in your account.' 'The name of the new suppression group. Limit of 30 charaters.' %}
-  {% parameter description false 'String' 'A description of your suppression group. Limit of 100 characters.' %}
+  {% parameter name No 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
+  {% parameter description No 'String. Max 100 characters' 'A description of the suppression group' %}
 {% endparameters %}
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/asm/groups/:group_id name=Item+Suggestions&description=Suggestions+for+items+our+users+might+like. %}
@@ -103,15 +111,17 @@ HTTP/1.1 201 OK
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
+
 {% anchor h2 %}
 DELETE
 {% endanchor %}
 Delete a suppression group.
 
 {% info %}
-You can only delete groups that have not been used in the last 60 days.
+You can only delete groups that have not been attached to sent mail in the last 60 days.
 If a recipient uses the "one-click unsubscribe" option on an email
-associate with a deleted group, that recipient will be added to the
+associated with a deleted group, that recipient will be added to the
 global suppression list.
 {% endinfo %}
 

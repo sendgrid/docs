@@ -7,17 +7,21 @@ navigation:
 seo:
   title: SMTP API, Advanced Email Features -  SendGrid Documentation | SendGrid 
   override: true
-  description: The SMTP API gives you advanced control over emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and more. 
+  description: The SMTP API gives you advanced control over the emails you send. Through the X-SMTPAPI header, you can replace values, categorize messages and more. 
 ---
 
 <p>SendGrid's SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email.</p>
+
+<p>The X-SMTPAPI headers that you add will be stripped from the final email, because they are instruction headers for how SendGrid will handle your email. So you can expect to not actually see these headers in the final email.</p>
 
 {% anchor h4 %} 
 An example X-SMTPAPI header
 {% endanchor %}
 
 {% codeblock lang:json %}{
-  "category": "newuser"
+    "category": [
+        "newuser"
+    ]
 }
 {% endcodeblock %}
 <p>In this case, the header is telling the processing routine to assign this email the <a href="{{root_url}}/Delivery_Metrics/categories.html">category</a> of "newuser".</p>
@@ -28,69 +32,10 @@ The X-SMTPAPI Header
 
 <p>The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. This header can be added to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message's transaction.</p>
 
-<p>
-	<b>To:</b> An array of addresses to send the message to, optionally including the display name. <em>See <a href="#-Requirements-and-Limitations">limitations</a> below.</em>
-</p>
-{% codeblock lang:json %}{
-  "to": [
-    "<ben@example.com>",
-    "Joe Smith <joe@example.com>"
-  ]
-}
-{% endcodeblock %}
+<em>See <a href="https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html#-Requirements-and-Limitations">Requirments and Limitations</a></em>
 
 <p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
-</p>
-{% codeblock lang:json %}{
-  "sub": {
-    "%name%": [
-      "Ben",
-      "Joe"
-    ],
-    "%role%": [
-      "%sellerSection%",
-      "%buyerSection%"
-    ]
-  }
-}
-{% endcodeblock %}
-
-<p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
-</p>
-{% codeblock lang:json %}{
-  "section": {
-    "%sellerSection%": "Seller information for: %name%",
-    "%buyerSection%": "Buyer information for: %name%"
-  }
-}
-{% endcodeblock %}
-
-<p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined. Categories are intended for broader tracking, such as "newsletter" or "password_reset". 
-</p>
-{% codeblock lang:json %}{
-  "category": [
-    "category1",
-    "category2"
-  ]
-}
-{% endcodeblock %}
-
-<p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction. Unique Args are intended for more detailed tracking, such as "newsletter_fall_sale_1_1_14" or "password_reset_user123456".
-</p>
-{% codeblock lang:json %}{
-  "unique_args": {
-    "orderNumber": "12345",
-    "eventID": "6789"
-  }
-}
-{% endcodeblock %}
-
-<p>
-	<a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings already setup for your account. Settings are an associative array of the setting names and their values.
+  <a href="{{root_url}}/API_Reference/SMTP_API/apps.html">Apps</a>: An associative array of filters and their settings, used to override filter settings is already setup for your account. Settings are an associative array of the setting names and their values.
 </p>
 {% codeblock lang:json %}{
   "filters": {
@@ -106,6 +51,17 @@ The X-SMTPAPI Header
 {% endcodeblock %}
 
 <p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/categories.html">Category</a>: Associates the category of email this should be logged as. You may insert up to 10 categories as an array, these categories are not predefined. Categories are intended for broader tracking, such as "newsletter" or "password_reset". 
+</p>
+{% codeblock lang:json %}{
+  "category": [
+    "category1",
+    "category2"
+  ]
+}
+{% endcodeblock %}
+
+<p>
   <a href="{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html">Scheduling Parameters</a>: A collection of attributes that can delay sending and allow for faster mail flow.
 </p>
 
@@ -115,13 +71,21 @@ The X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-All of the above examples can then be combined into one larger JSON string placed in a header named X-SMTPAPI, and would look like this:
-
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/section_tags.html">Section</a>: Sections can be used to simplify substitution values that are common to many recipients. This is an associative array of sections that can be used in substitution values.
+</p>
 {% codeblock lang:json %}{
-  "to": [
-    "ben@sendgrid.com",
-    "joe@sendgrid.com"
-  ],
+  "section": {
+    "%sellerSection%": "Seller information for: %name%",
+    "%buyerSection%": "Buyer information for: %name%"
+  }
+}
+{% endcodeblock %}
+
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/substitution_tags.html">Substitution</a>: An associative array of substitution tags, where each tag is associated with a list of replacement text for the tag in the body text. Each Substitution value corresponds to an email in the "To" section of the JSON string.
+</p>
+{% codeblock lang:json %}{
   "sub": {
     "%name%": [
       "Ben",
@@ -131,69 +95,30 @@ All of the above examples can then be combined into one larger JSON string place
       "%sellerSection%",
       "%buyerSection%"
     ]
-  },
-  "section": {
-    "%sellerSection%": "Seller information for: %name%",
-    "%buyerSection%": "Buyer information for: %name%"
-  },
-  "category": [ 
-    "Orders"
-  ],
-  "unique_args": {
-    "orderNumber": "12345",
-    "eventID": "6789"
-  },
-  "filters": {
-    "footer": {
-      "settings": {
-        "enable": 1,
-        "text/plain": "Thank you for your business"
-      }
-    }
-  },
-  "send_at": 1409348513
+  }
 }
 {% endcodeblock %}
 
-<p>The above example is formatted for readability. Headers must be wrapped to keep the line length under 72. By RFC 821 no line can be longer than 1,000, so if you are going to generate this string yourself it is a good idea to make sure that you wrap it.</p>
-
-<p>Here is a full example of generating the above JSON header in a Perl script:</p>
-
-{% codeblock lang:perl %}
-
-#!/usr/local/bin/perl -w
-
-use strict;
-use JSON;
-
-my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com'],
-sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>[ 'sellerSection', 'buyerSection' ] },
-section => { '%sellerSection%' => 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
-category => 'Orders',
-unique_args => { 'orderNumber' => '12345', 'eventID' => '6789' },
-filters => { 'footer' => {'settings' => {'text/plain' => "Thank you for your business"}}}};
-
-my $json = JSON->new;
-$json->space_before(1);
-$json->space_after(1);
-my $js = $json->encode($header);
-# This regex breaks the string up at whitespaces to keep the line length short
-$js =~ s/(.{1,72})(\s)/$1\n   /g;
-my $hdr = "X-SMTPAPI: $js";
-print "$hdr\n";
-{% endcodeblock %}
-{% anchor h2 %}
-Requirements and Limitations 
-{% endanchor %}
-
-{% warning %}
-While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs at around 1,000 recipients, as this will better allow for the processing load to be distributed. Further, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
-{% endwarning %}
-
-<p>If you use the multiple recipient functionality of the API, you must not send to multiple recipients with the SMTP protocol as well. Doing so can cause duplicates of the message to be sent.
+<p>
+  <a href=" ">To:</a> An array of addresses to send the message to, optionally including the display name.
 </p>
+{% codeblock lang:json %}{
+  "to": [
+    "<ben@example.com>",
+    "Joe Smith <joe@example.com>"
+  ]
+}
+{% endcodeblock %}
 
-<p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header for you on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. In addition, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
+<p>
+  <a href="{{root_url}}/API_Reference/SMTP_API/unique_arguments.html">Unique Arguments</a>: An associative array of arguments and their values to be applied to all emails sent in this SMTP API transaction. Unique Args are intended for more detailed tracking, such as "newsletter_fall_sale_1_1_14" or "password_reset_user123456".
+</p>
+{% codeblock lang:json %}{
+  "unique_args": {
+    "orderNumber": "12345",
+    "eventID": "6789"
+  }
+}
+{% endcodeblock %}
 
-<p>When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted on errors. More info: <a href="https://support.sendgrid.com/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address"></a>Bounce Forwarding</a> </p>
-
+For an example X-SMTPAPI header using all the above methods see our <a href= "https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html"> Using the SMTP API</a> page.

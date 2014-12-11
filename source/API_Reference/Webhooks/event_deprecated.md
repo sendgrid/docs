@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% warning %}
-V1 and V2 of this webhook are being deprecated. [Version 3]({{root_url}}/API_Reference/Webhooks/event.html) is the recommended option and the only option available to new users. 
+V1 and V2 of this webhook are deprecated. [Version 3]({{root_url}}/API_Reference/Webhooks/event.html) is the recommended option and the only option available to new users. 
 {% endwarning %}
 
 {% anchor h2 %}
@@ -16,10 +16,10 @@ Requests
 
 You have the option to receive a **HTTP POST** request for each event ("Version 1") or to receive a batch of multiple events in one request after a very short delay ("Version 2"). These POSTs will be sent to the URL you have defined in the Event Notification app options.
 
-SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. This means that if you use batched events these events will drop due to 24 hours before the queue can max out. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.
+SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. This means that if you use batched events these events will drop 24 hours before the queue can max out. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.
 
 {% warning %}
-If your email traffic generates lots of events, the incoming amount of data can easily overload a web server if not configured properly for scalability. To reduce the number of requests to your server, enable the batched events option.   
+If your email traffic generates a lot of events, the incoming amount of data can easily overload a web server if not configured properly for scalability. To reduce the number of requests to your server, enable the batched events option.   
   
  Keep in mind that even with batched events enabled, your servers can potentially see a large number of POSTs from the webhook as we POST batches from multiple servers. You can load test your endpoints with [loader.io](http://loader.io) for free. 
 {% endwarning %}
@@ -85,7 +85,7 @@ The following image shows where events can be generated as email is being proces
 Default Parameters 
 {% endanchor %}
 
-The following parameters are always passed with each event. Some events include additional parameters. Also a category name and custom argument may be passed. Please see the Custom Parameters and Categories section below for more information.
+The following parameters are always passed with each event and some events include additional parameters. A category name and custom argument may also be passed. Please see the Custom Parameters and Categories section below for more information.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -188,7 +188,7 @@ Batching your events is recommended to reduce server load and reduce the number 
 {% anchor h2 %}
 Examples 
 {% endanchor %}
-The following examples will use PHP language, the Web API to send email using *curl*, and the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) for the *X-SMTPAPI* parameter when sending email. Many times is useful to see all parameters that are being POSTed. The following example receives a **batched** POST and dumps the parameters to a log file located at /tmp/dump.log: 
+The following examples will use PHP language, the Web API to send email using *curl*, and the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) for the *X-SMTPAPI* parameter when sending email. Many times it is useful to see all parameters that are being POSTed. The following example receives a **batched** POST and dumps the parameters to a log file located at /tmp/dump.log: 
 
 {% codeblock lang:php %}
 <?php
@@ -455,7 +455,7 @@ Unsubscribe
 Troubleshooting 
 {% endanchor %}
 
-Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at increasing intervals for up to three days after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines. Also, you can try a test POST yourself from a terminal by running the following command. This will give you the full response your server is returning including the HTTP headers.
+Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at increasing intervals for up to three days after the event occurs. Make sure you are not blocking our IPs and that you are trying to POST to your server. Our IPs change often since we constantly add more machines. You can also try a test POST yourself from a terminal by running the following command. This will give you the full response your server is returning including the HTTP headers.
 
 {% codeblock lang:bash %}
 curl -i -d 'email=test@gmail.com&amp;arg2=2&amp;arg1=1&amp;category=testing&amp;event=processed'

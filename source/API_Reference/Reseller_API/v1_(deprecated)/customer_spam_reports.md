@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_spam_reports.html) Reseller Customer Spam Reports page.
+{% endwarning %}
+
 {% anchor h2 %}
 Retrieve Spam Reports 
 {% endanchor %}

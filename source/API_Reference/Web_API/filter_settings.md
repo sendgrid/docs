@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+{% info %}
+  These API requests are Account Wide settings, unlike the SMTP API which will change the status at the individual email message level.
+{% endinfo %}
+
 For a more detailed description of each of the Apps below, please visit the [Apps]({{root_url}}/Apps/) page.
 
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)
@@ -25,7 +29,7 @@ When using this call, you must define all emails & domains here. Using this call
   {% parameter list no 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
 
-{% apiexample addresswhitelist POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
+{% apiexample addresswhitelist POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -50,10 +54,10 @@ BCC "Blind Carbon Copy"
 {% parameters bcc %} 
   
   {% parameter name yes 'bcc' 'The name of the app for which to apply settings.' %}  
-  {% parameter bcc yes 'An email address to be the BCC recipient.' 'email@example.com' %}
+  {% parameter email yes 'An email address to be the BCC recipient.' 'email@example.com' %}
 {% endparameters %}
 
-{% apiexample bcc POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=email@example.com %}
+{% apiexample bcc POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=email@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -81,7 +85,7 @@ Click Tracking
   {% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
 {% endparameters %}
 
-{% apiexample clicktrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1 %}
+{% apiexample clicktrack POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&enable_text=1 %}
   {% response json %}
 {
   "message": "success"
@@ -110,7 +114,7 @@ DKIM
   {% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
 {% endparameters %}
 
-{% apiexample dkim POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
+{% apiexample dkim POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=dkim&domain=example.com&use_from=1 %}
   {% response json %}
 {
   "message": "success"
@@ -139,7 +143,7 @@ Domain Keys
   {% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
 {% endparameters %}
 
-{% apiexample domainkeys POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
+{% apiexample domainkeys POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
   {% response json %}
 {
   "message": "success"
@@ -170,7 +174,7 @@ This app is our original Email Template app, today we have a more full featured 
   {% parameter text/html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
 {% endparameters %}
 
-{% apiexample template POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
+{% apiexample template POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
   {% response json %}
 {
   "message": "success"
@@ -213,7 +217,7 @@ All fields except version are required for each call.
 {% endparameters %}
 
 
-{% apiexample eventnotify POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3 %}
+{% apiexample eventnotify POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&processed=0&dropped=1&deferred=1&delivered=1&bounce=1&click=1&unsubscribe=1&spamreport=1&url=https://notificationurl.example.com/event&version=3 %}
   {% response json %}
 {
   "message": "success"
@@ -243,7 +247,7 @@ Footer
 {% endparameters %}
 
 
-{% apiexample footer POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid %}
+{% apiexample footer POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=footer&text/html=%3Cp%3EThanks!%3Cbr%2F%3ESendGrid%3C%2Fp%3E&text/plain=Thanks!%0ASendGrid %}
   {% response json %}
 {
   "message": "success"
@@ -276,7 +280,7 @@ Google Analytics
 {% endparameters %}
 
 
-{% apiexample googleanalytics POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
+{% apiexample googleanalytics POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
   {% response json %}
 {
   "message": "success"
@@ -322,7 +326,7 @@ SPAM Filter Checker
 {% endparameters %}
 
 
-{% apiexample spamcheck POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
+{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
   "message": "success"
@@ -355,7 +359,7 @@ Subscription Tracking
 {% endparameters %}
 
 
-{% apiexample subscriptiontrack POST https://sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D %}
+{% apiexample subscriptiontrack POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=subscriptiontrack&text/html=%3Cp%3EIf%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20%3C%25%20click%20here%20%25%3E%3C%2Fp%3E&text/plain=If%20you%20would%20like%20to%20unsubscribe%20and%20stop%20receiving%20these%20emails%20click%20here%3A%20%3C%25%20%25%3E.&url=http://www.example.com/UnsubscribeLandingPage&replace=%5Bunsubscribe_tag%5D %}
   {% response json %}
 {
   "message": "success"

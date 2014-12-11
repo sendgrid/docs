@@ -5,7 +5,7 @@
 #
 #   {% requestblock %}
 #     {% requesturl POST %}
-#          https://sendgrid.com/api/mail.send.json
+#          https://api.sendgrid.com/api/mail.send.json
 #     {% endrequesturl %}
 #     {% requestdata data POST %}
 #         api_user=your_sendgrid_username&api_key=your_sendgrid_password
@@ -18,7 +18,7 @@
 #      <tr>
 #        <td>POST</td>
 #        <td>
-#          <code>https://sendgrid.com/api/mail.send.json</code>
+#          <code>https://api.sendgrid.com/api/mail.send.json</code>
 #        </td>
 #      </tr>
 #      <tr>
@@ -53,7 +53,7 @@ module Jekyll
 
   class RequestBlockTag < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      
+
       super
     end
 

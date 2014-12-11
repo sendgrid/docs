@@ -32,10 +32,10 @@ In addition to these links, SendGrid adds email headers to messages so that remo
 The Whitelabel Wizard
 {% endanchor %}
 
-IP whitelabeling uses the [Whitelabel Wizard]({{root_url}}/User_Guide/whitelabel_wizard.html) to generate DNS records that you can take and add to your domain’s DNS zone file. Once completed, the IP address will then resolve back to your domain, masking SendGrid in the sending process. Emails that have gone through IP whitelabeling will appear to have been sent from you and your domain.
+IP whitelabeling uses the [Whitelabel Wizard]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html) to generate DNS records that you can take and add to your domain’s DNS zone file. Once completed, the IP address will then resolve back to your domain, masking SendGrid in the sending process. Emails that have gone through IP whitelabeling will appear to have been sent from you and your domain.
 
 As an example, if an email is sent from a non-whitelabeled account, Gmail will identify the message as being sent “via sendgrid.com.” However, with an account that has used IP whitelabeling, the message only references your domain. By whitelabeling your IP address, you can improve deliverability and increase your IP reputation.
 
 IP whitelabeling is only available to customers with [Silver, Gold, or Platinum packages](https://sendgrid.com/transactional-email/pricing). If you want to improve your email deliverability as much as possible, we suggest upgrading your account so that you have a dedicated IP address that you can then whitelabel.
 
-[Contact SendGrid’s support team](https://sendgrid.zendesk.com/hc/en-us) today to learn more about IP whitelabeling, or watch our [Whitelabel Wizard video]({{root_url}}/VidGrid/Whitelabel/whitelabel.html) to learn about whitelabeling and why you should use it.
+[Contact SendGrid’s support team](https://sendgrid.zendesk.com/hc/en-us) today to learn more about IP whitelabeling, or watch our [Whitelabel Wizard video]({{root_url}}/VidGrid/whitelabel.html) to learn about whitelabeling and why you should use it.

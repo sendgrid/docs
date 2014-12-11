@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 1000
+weight: 0
 title: EventKit App
 breadcrumbs: true
 navigation:

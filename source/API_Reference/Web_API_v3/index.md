@@ -10,6 +10,8 @@ navigation:
 SendGrid's new API architecture features significant changes in behavior as compared to previous endpoints, so please read carefully!
 {% endinfo %}
 
+* * * * *
+
 {% anchor h2 %}
 Authentication
 {% endanchor %}
@@ -33,16 +35,85 @@ authentication built-in. For example:
 $curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name":"example_name"}' https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
+You then enter your password at the prompt.
+
+* * * * *
+
 {% anchor h2 %}
 Host
 {% endanchor %}
 
-The host for API requests is
-{% codeblock %}
-https://api.sendgrid.com/v3/
+The host for API requests is `https://api.sendgrid.com/v3/`
+
+{% info %} 
+All requests must be made over HTTPS. HTTP is **not** supported. 
+{% endinfo %}
+
+* * * * *
+
+{% anchor h2 %}
+Rate Limits
+{% endanchor %}
+
+All calls within the Web API are allotted a specific number of requests
+per refresh period.
+
+Each Web API request returns the following header information 
+regarding rate limits and number of requests left.
+
+Depending on the endpoint you are trying to reach, it will have a
+specific number of allowed requests per refresh period. Once this
+threshold has been reached, we will return a status code `429` response.
+
+Example Request
+{% codeblock lang:http %}
+GET https://api.sendgrid.com/v3/resource HTTP/1.1
 {% endcodeblock %}
 
-All requests must be made over HTTPS. HTTP is not supported.
+Example Response
+{% codeblock lang:http %}
+HTTP/1.1 200 OK 
+Content-Type: application/json 
+X-RateLimit-Limit: 500
+X-RateLimit-Remaining: 499 
+X-RateLimit-Reset: 1392815263
+
+{ 
+  "foo": "bar"
+}
+{% endcodeblock %}
+
+{% anchor h3%}
+When Limit is Reached
+{% endanchor %}
+
+You will no longer be able to make requests against that endpoint for
+the duration of that refresh period.
+
+Example Request
+{% codeblock lang:http %}
+GET https://api.sendgrid.com/v3/resource/ HTTP/1.1
+{% endcodeblock %}
+
+Example Response
+{% codeblock lang:http %}
+HTTP/1.1 429 TOO MANY REQUESTS
+Content-Type: application/json
+X-RateLimit-Limit: 150
+X-RateLimit-Remaining: 0
+X-RateLimit-Reset: 1392815263
+
+{ 
+  "errors": [
+    { 
+      "field": null,
+       "message": "too many requests"
+    }, 
+  ] 
+}
+{% endcodeblock %}
+
+* * * * *
 
 {% anchor h2 %}
 Requests
@@ -59,7 +130,7 @@ You must provide an authorization header as described in
 Accept Header
 {% endanchor %}
 
-The API provides JSON responses. The accept header is not currently
+The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is not currently
 required, though it may be required in the future. If not set, the 
 API will use `application/json`.
 
@@ -117,67 +188,7 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
-Rate Limits
-{% endanchor %}
-
-All calls within the Web API are allotted a specific number of requests
-per refresh period.
-
-Each Web API requests returns the following header information 
-regarding rate limits and number of requests left.
-
-Depending on the endpoint you are trying to reach, it will have a
-specific number of allowed requests per refresh period. Once this
-threshold has been reached, we will return a status code 429 response.
-
-Example Request
-{% codeblock lang:http %}
-GET https://api.sendgrid.com/v3/resource HTTP/1.1
-{% endcodeblock %}
-
-Example Response
-{% codeblock lang:http %}
-HTTP/1.1 200 OK 
-Content-Type: application/json 
-X-RateLimit-Limit: 500
-X-RateLimit-Remaining: 499 
-X-RateLimit-Reset: 1392815263
-
-{ 
-  "foo": "bar"
-}
-{% endcodeblock %}
-
-{% anchor h3 %}
-When Limit is Reached
-{% endanchor %}
-
-You will no longer be able to make requests against that endpoint for
-the duration of that refresh period.
-
-Example Request
-{% codeblock lang:http %}
-GET https://api.sendgrid.com/v3/resource/ HTTP/1.1
-{% endcodeblock %}
-
-Example Response
-{% codeblock lang:http %}
-HTTP/1.1 429 TOO MANY REQUESTS
-Content-Type: application/json
-X-RateLimit-Limit: 150
-X-RateLimit-Remaining: 0
-X-RateLimit-Reset: 1392815263
-
-{ 
-  "errors": [
-    { 
-      "field": null,
-       "message": "too many requests"
-    }, 
-  ] 
-}
-{% endcodeblock %}
+* * * * *
 
 {% anchor h3 %}
 Pagination
@@ -194,9 +205,7 @@ default limit.
 Resources documented will display a bolded list of available paginated
 parameters if available.
 
-In this example, we will display an example paginated example. In the
-resource documentation, we will only provide the bolded list of
-available parameters.
+Below is a basic pagination example. In the resource documentation, we will only provide the bolded list of available parameters.
 
 {% info %}
 When information is batched, a <a href="http://tools.ietf.org/html/rfc5988">Link Header</a> will be provided in the response.
@@ -221,20 +230,23 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
   </tr>
 </table>
 
+* * * * *
 
 {% anchor h3 %}
 Search & Parameters
 {% endanchor %}
 
-Some resources allow you to search by a specific field. Other resources
+Some resources allow for you to search by a specific field. Other resources
 require you to append a parameter to the URI.
 
 In this example, we will display a paginated uri example, searching for
 resources where the email contains `foo`.
 
 {% codeblock lang:http %}
-GET https://api.sendgrid.com/v3/resource?email=foo&foo=bar HTTP/1.1
+GET https://api.sendgrid.com/v3/resource?email=foo&bar=baz HTTP/1.1
 {% endcodeblock %}
+
+* * * * *
 
 {% anchor h2 %}
 Responses
@@ -259,6 +271,8 @@ Content-Type: application/json
     "foo": "bar",
 }
 {% endcodeblock %}
+
+* * * * *
 
 {% anchor h3 %}
 Status Codes
@@ -295,6 +309,8 @@ support against resources.
   </tr>
 </table>
   
+* * * * *
+
 {% anchor h3 %}
 Successful Requests
 {% endanchor %}
@@ -320,11 +336,13 @@ successful Web API requests.
   </tr>
 </table>
 
+* * * * *
+
 {% anchor h3 %}
 Failed Requests
 {% endanchor %}
 
-The general format guidelines are displayed with the accompanying status
+The general format guidelines are displayed when the accompanying status
 code is returned.
 
 {% codeblock lang:http %}
@@ -344,11 +362,13 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
+* * * * *
+
 {% anchor h3 %}
 Pagination
 {% endanchor %}
 
-When a request is made with pagination query, the following data is
+When a request is made with a pagination query, the following data is
 included in the header to allow for easy traversal of previous, current,
 first, and last page of the data set.
 

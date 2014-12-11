@@ -82,7 +82,7 @@ module Jekyll
       output = super
       code = super
 
-      digest = Digest::MD5.hexdigest code
+      digest = Digest::MD5.hexdigest code + rand().to_s()
       
     source = <<HTML
 <div class="code-wrapper" id="wrapper_#{digest}" itemscope itemtype="http://schema.org/Code">
