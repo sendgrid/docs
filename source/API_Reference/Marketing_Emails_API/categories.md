@@ -93,31 +93,13 @@ Remove specific categories, or all categories from a Marketing Email.\\
 {% endapiexample %}
 
 * * * * *
-
-{% anchor h2 %}
-list 
-{% endanchor %}
+{% anchor h2 %} list {% endanchor %}
 
 List all categories.
 
+{% parameters list %} {% parameter 'category' 'No' 'Must be an existing Category' 'Search to see if a specific Category exists rather than a list of all Categories.' %} {% endparameters %}
 
-{% parameters list %}
- {% parameter 'category' 'No' 'Must be an existing Category' 'Search to see if a specific Category exists rather than a list of all Categories.' %}
-{% endparameters %}
-
-
-{% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
-  {% response json %}
-[
-  {
-    "category": "CATEGORY"
-  },
-  {
-    "category": "CATEGORY2"
-  }
-]
-  {% endresponse %}
-  {% response xml %}
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/category/list api_user=your_sendgrid_username&api_key=your_sendgrid_password %} {% response json %} [ { "category": "CATEGORY" }, { "category": "CATEGORY2" } ] {% endresponse %} {% response xml %}
 <categories>
    <category>
       <category>CATEGORY</category>
@@ -126,6 +108,4 @@ List all categories.
       <category>CATEGORY2</category>
    </category>
 </categories>
-
-  {% endresponse %}
-{% endapiexample %}
+{% endresponse %} {% endapiexample %}

@@ -6,13 +6,17 @@ navigation:
   show: true
 ---
 
-The Spam Checker app,is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter can provide notification when emails are detected that exceed a predefined spam threshold.
+{% info %}
+This App is only available to <a href="https://sendgrid.com/pricing">Silver accounts and higher</a>
+{% endinfo %}
+
+<p>The Spam Checker app, is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter notifies you when emails are detected that exceed a predefined spam threshold.</p>
 
 ![Spam Checker App Image]({{root_url}}/images/spam_checker.png "Spam Checker")
 
-We use SpamAssassin to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient. 
+We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. If you provide a URL, we will post the message to that URL, but this field is optional. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient. 
 {% warning %}
-The Default Value for this App is 5, and can be ranged between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless of emails, where as 9 will only drop the spammiest of spam emails. 
+The Default Value for this App is 5.0, and can be ranged between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless emails, where as 9 will only drop the spammiest of spam emails. 
 {% endwarning %}
 
 {% anchor h2 %}
@@ -36,7 +40,7 @@ Settings
       <tr>
          <td>Spam Threshhold</td>
          <td>No (default:5)</td>
-         <td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. The more negative a score is, the less likely it is to be spam, conversely increasing positive numbers suggest a message is spam.</td>
+         <td>Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. We use SpamAssassin to process the spam checks for this App, so you can base your Spam Threshold setting on values typically used with SpamAssassin. A lower score suggests that your email is the less likely it is to be spam, while higher numbers suggest a message is spam.</td>
       </tr>
    </tbody>
 </table>

@@ -8,6 +8,10 @@ navigation:
    show: true
 ---
 
+{% warning %}
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/apps.html) Reseller Apps page.
+{% endwarning %}
+
 {% anchor h2 %}
 List 
 {% endanchor %}

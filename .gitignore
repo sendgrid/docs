@@ -1,3 +1,4 @@
+.vagrant/
 .jekyll_indextank/
 .rvmrc
 _config.yml
@@ -7,6 +8,7 @@ _config.deploy.yml
 .DS_Store
 .sass-cache
 .gist-cache
+.idea
 .pygments-cache
 _deploy
 sass.old

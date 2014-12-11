@@ -93,14 +93,5 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
-  {% if site.data.version.contains "staging" %}
-  <script>
-    // faking this to get rid of errors
-	dataLayer = [];
-	ga = function () {};
-    _gaq = [];
-  </script>
-  {% else %}
-  {% include google_analytics.html %}
-  {% endif %}
+
 </head>

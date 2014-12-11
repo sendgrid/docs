@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+{% info %} This app is available to customers with [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing). {% endinfo %}
+
 Some e-mails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.
 
 {% anchor h2 %}

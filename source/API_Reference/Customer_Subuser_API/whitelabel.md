@@ -1,11 +1,20 @@
 ---
 layout: page
-weight: 0
+weight: 450
 title: Whitelabel
 navigation:
    show: true
 ---
-With the whitelabel API calls you will be able to retrieve whitelabel settings related to your account.
+
+All Whitelabel records that are successfully created on the parent account are available here. These can be attached to one or more subusers. <code>mail_domain</code> and <code>url_domain</code> should be the same in almost all cases.
+
+{% info %}
+Whitelabel records cannot be created via API, only via the web UI. The API is used to create and modify subuser-whitelabel relationships.
+{% endinfo %}
+
+{% warning %}
+Take note that IPs have records in line with Whitelabel records, but are not assigned with these commands. Subusers can be assigned to a mismatched whitelabel and IP, but should not be. There is no call at this time to note the whitelabeled rDNS record on the IP, DNS commands can be used to query these public records.
+{% endwarning %}
 
 * * * * *
 
@@ -14,7 +23,7 @@ List
 {% endanchor %}
 
 {% parameters list %}
- {% parameter 'task' 'Yes' 'Must be set to *list*' %}
+ {% parameter task Yes 'Must be set to <code>list</code>' 'Task to list existing whitelabel records on the account' %}
 {% endparameters %}
 
 
@@ -22,24 +31,24 @@ List
   {% response json %}
 [
   {
-    "mail_domain": "email.sendgrid.com",
-    "url_domain": "email.sendgrid.com"
+    "mail_domain": "em.domain1.com",
+    "url_domain": "em.domain1.com"
   },
   {
-    "mail_domain": "email.example.com",
-    "url_domain": "email.example.com"
+    "mail_domain": "em.domain2.com",
+    "url_domain": "em.domain2.com"
   }
 ]
   {% endresponse %}
   {% response xml %}
 <whitelabels>
    <whitelabel>
-      <mail_domain>email.sendgrid.com</mail_domain>
-      <url_domain>email.sendgrid.com</url_domain>
+      <mail_domain>em.domain1.com</mail_domain>
+      <url_domain>em.domain1.com</url_domain>
    </whitelabel>
    <whitelabel>
-      <mail_domain>email.example.com</mail_domain>
-      <url_domain>email.example.com</url_domain>
+      <mail_domain>em.domain2.com</mail_domain>
+      <url_domain>em.domain2.com</url_domain>
    </whitelabel>
 </whitelabels>
 
@@ -49,17 +58,18 @@ List
 * * * * *
 
 {% anchor h2 %}
-Append 
+Attach 
 {% endanchor %}
 
+Attaching a new whitelabel record to a subuser also removes any previously-attached whitelabel. This does not affect already-sent messages.
+
 {% parameters append %}
- {% parameter 'task' 'Yes' 'Must be set to *append*' %}
- {% parameter 'user' 'Yes' 'Subuser must be registered under your account' %}
- {% parameter 'mail_domain' 'Yes' 'Whitelabel mail_domain used to append a whitelabel record to a subuser' %}
+ {% parameter task Yes 'Must be set to <code>append</code>' 'Task to attach subuser to existing whitelabel record' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to modify whitelabel association of' %}
+ {% parameter mail_domain Yes '<code>sub.domain.com</code> format' 'Existing whitelabel record to attach to subuser' %}
 {% endparameters %}
 
-
-{% apiexample append POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=example@example.com&mail_domain=email.sendgrid.com %}
+{% apiexample append POST https://api.sendgrid.com/apiv2/customer.whitelabel api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&user=subuser_username&mail_domain=em.domain1.com %}
   {% response json %}
 {
   "message": "success"

@@ -16,7 +16,6 @@ This endpoint allows you to send email.
 There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API. We recommend using these if possible.
 
 [View List »]({{root_url}}/Integrate/libraries.html)
-
 {% endinfo %}
 
 {% anchor h2 %}
@@ -25,6 +24,9 @@ send
 
 Send email.
 
+{% warning %}
+This is not a sandbox. These are real messages that consume credits on your account.
+{% endwarning %}
 
 {% parameters mail %}
  {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
@@ -35,13 +37,15 @@ Send email.
  {% parameter 'html' 'No' 'API call must include at least one of the text or html parameters.' 'The HTML content of your email message.' %}
  {% parameter 'from' 'Yes' 'Must be a valid email address from your domain' 'This is where the email will appear to originate from for your recipient' %}
  {% parameter 'cc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: cc[]=a@mail.com&cc[]=b@mail.com.' %}
+ {% parameter 'ccname' 'No' 'Must be a valid email address' 'This is the name be appended to the cc field.' %}
  {% parameter 'bcc' 'No' 'Must be a valid email address' 'This can also be passed in as an array of email addresses for multiple recipients. Example: bcc[]=a@mail.com&bcc[]=b@mail.com.' %}
- {% parameter 'fromname' 'No' 'Must a valid string' 'This is name appended to the from email field. IE - Your name or company name' %}
+ {% parameter 'bccname' 'No' 'Must be a valid email address' 'This is the name appended to the bcc field.' %}
+ {% parameter 'fromname' 'No' 'Must a valid string' 'This is the name appended to the from email field. IE - Your name or company name' %}
  {% parameter 'replyto' 'No' 'Must be a valid email address' 'Append a reply-to field to your email message' %}
  {% parameter 'date' 'No' 'Must be a valid [RFC 2822 formatted date](http://www.faqs.org/rfcs/rfc2822)' 'Specify the date header of your email. One example: "Thu, 21 Dec 2000 16:01:07 +0200". PHP developers can use: *date('r');*' %}
  {% parameter 'files' 'No' 'Must be less than 7MB' 'Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf' %}
  {% parameter 'content' 'No' 'Required for sending inline images' 'Content IDs of the files to be used as inline images. Content IDs should match the cids used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `<img src="cid:ii_139db99fdb5c3704"></img>`' %}
- {% parameter 'headers' 'No' 'Must be in valid JSON format without integers' 'A collection of key/value pairs in JSON format. Each key represents a header name and the value the header value. Ex: `{"X-Accept-Language": "en", "X-Mailer": "MyApp"}`' %}
+ {% parameter 'headers' 'No' 'Must be in valid JSON format without integers' 'A collection of key/value pairs in JSON format. This is specifically for non-SendGrid custom [extension headers](http://tools.ietf.org/html/rfc5322#section-2.2). Each key represents a header name and the value the header value. Ex: `{"X-Accept-Language": "en", "X-Mailer": "MyApp"}`' %}
 {% endparameters %}
 
 
@@ -59,7 +63,9 @@ Send email.
   {% endresponse %}
 {% endapiexample %}
 
-### Call: Send to Multiple Recipients
+{% anchor h3 %}
+Call: Send to Multiple Recipients
+{% endanchor %}
 
 {% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=destination2@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -75,23 +81,68 @@ Send email.
   {% endresponse %}
 {% endapiexample %}
 
+{% anchor h3 %}
+Call: Sending with a CC and CCname
+{% endanchor %}
+
+{% apiexample cc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&cc=ccdestination@mail.com&ccname=CCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+
+  {% endresponse %}
+{% endapiexample %}
+
+{% anchor h3 %}
+Call: Sending with a BCC and BCCname
+{% endanchor %}
+
+{% apiexample bcc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
+  {% response json %}
+{
+  "message": "success"
+}
+  {% endresponse %}
+  {% response xml %}
+<result>
+   <message>success</message>
+</result>
+
+  {% endresponse %}
+{% endapiexample %}
+
+
 * * * * *
 
-### cURL Examples
+{% anchor h3 %}
+cURL Examples
+{% endanchor %}
 
+{% anchor h4 %}
 Send to one email recipient
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
+{% anchor h4 %}
 Send to multiple email recipients
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
+{% anchor h4 %}
 Send a test with attachment
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
@@ -103,7 +154,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
+{% anchor h4 %}
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
+{% endanchor %}
 
 {% codeblock lang:bash %}
 $ curl https://api.sendgrid.com/api/mail.send.json \
@@ -113,7 +166,9 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F files[attachment.pdf]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
-### Raw HTTP Dump
+{% anchor h3 %}
+Raw HTTP Dump
+{% endanchor %}
 
 The following is a dump of the HTTP data sent to our server to generate an email via our web API.
 

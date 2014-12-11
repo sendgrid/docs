@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+With the [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) you can parse the content and attachments of emails. The Web API endpoints allow you to setup, get, and delete your Parse Webhooks settings.
+
 {% anchor h2 %}
 get 
 {% endanchor %}
@@ -48,7 +50,7 @@ Specify the hostname and url for parsing incoming emails.
 {% parameters set %}
  {% parameter 'hostname' 'Yes' 'alphanumeric' 'The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.' %}
  {% parameter 'url' 'Yes' 'alphanumeric' 'The callback URL to which Parse Webhook payloads will be POSTed.' %}
- {% parameter 'spam_check' 'No' '0 or 1' 'If spam check is enabled, messages that look like spam will not be POSTed.' %}
+ {% parameter 'spam_check' 'No' '0 or 1' 'If enabled, mmessages will POST, and will have added fields of spam_report and spam_score' %}
 {% endparameters %}
 
 

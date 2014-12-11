@@ -16,37 +16,44 @@ filter and set the `template_id` to one of your Template Engine templates.
 Example
 {% codeblock lang:json %}
 {
-    "filters": {
-        "templates": {
-            "settings": {
-                "enable": 1,
-                "template_id": "5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f"
-            }
-        }
+  "filters": {
+    "templates": {
+      "settings": {
+        "enable": 1,
+        "template_id": "5997fcf6-2b9f-484d-acd5-7e9a99f0dc1f"
+      }
     }
+  }
 }
 {% endcodeblock %}
 
-You can use this JSON in the X-SMTPAPI header of an SMTP message, or in
-the x-smtpapi parameter of a [mail.send API
-call]({{root_url}}/API_Reference/Web_API/mail.html).
+You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
+the `x-smtpapi` parameter of a [mail.send API
+call]({{root_url}}/API_Reference/Web_API/mail.html#-send).
 
 {% info %}
 Make sure that the version of the template you want to use is set to active
-by using the activate endpoint or by activating it in the
+by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/versions.html#-POST) or by activating it in the
 UI.
 {% endinfo %}
+
+* * * * *
 
 {% anchor h2 %}
 Body and Subject Tags
 {% endanchor %}
 
 Enabling a Template Engine template means that the `subject` and `body`
-content of your message will behave differently. The
-`<%body%>` token in your template's content will be replaced with
-the value of the body provided in the API call or SMTP message.
-Similarly, the `<%subject%>` token in the template's subject content
-will be replaced.
+content of your message will behave differently. 
+
+The `<%body%>` token in your template's content will be replaced with
+the value of the body provided in the API call or SMTP message. 
+The `<%subject%>` token in the template's subject content will be replaced with the value of the subject in the API call or SMTP message. 
+
+If you want only the message's content to be displayed, populate only the token in the template's field.
+If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.
+
+* * * * *
 
 {% anchor h2 %}
 Substitutions and Sections
@@ -58,31 +65,31 @@ and [section]({{root_url}}/API_Reference/SMTP_API/section_tags.html)
 tags in your template's subject and body content, and they will be replaced with the values
 specified when you send the message.
 
-For example, consider a template with a subject of `Dear -name-, big sale on <%subject%>!` and following text content:
+For example, consider a template with a subject of `Dear :name, big sale on <%subject%>!` and following text content:
 
 {% codeblock lang:html %}
 <%body%>
 
-Hello there -name-!
+Hello there :name!
 
-You can buy it for only -price-! Yay!
+You can buy it for only :price! Yay!
 {% endcodeblock %}
 
-Now let's specify what to replace the `-name-` and `-price-` tags with,
+Now let's specify what to replace the `:name` and `:price` tags with,
 using the SMTP API header:
 
 {% codeblock lang:json %}
 {
   "to": [
-    "brandon@sendgrid.com",
-    "ben@sendgrid.com"
+    "alice@sendgrid.com",
+    "bob@sendgrid.com"
   ],
   "sub": {
-    "-name-": [
-      "Brandon",
-      "Ben"
+    ":name": [
+      "Alice",
+      "Bob"
     ],
-    "-price-": [
+    ":price": [
       "$4",
       "$4"
     ]
@@ -107,10 +114,8 @@ Company!` will produce the following email to Brandon, and a separate
 customized email for Ben.
 
 {% codeblock %}
-Subject:
-Dear Brandon, big sale on bacon!
+Subject: Dear Brandon, big sale on bacon!
 
-Body:
 Big news from Good Food Company!
 
 Hello there Brandon!

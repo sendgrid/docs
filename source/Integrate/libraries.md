@@ -53,8 +53,6 @@ Open source library contributions from the awesome SendGrid community.
 If you create a library, please let us know, by [adding your library to this page](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}). 
 {% endinfo %}
 
--   [sendgrid-android](https://github.com/danysantiago/sendgrid-android) - The Android library for SendGrid by [DannySantiago](https://github.com/danysantiago)
-
 {% anchor h2 %}
 Web API Libraries 
 {% endanchor %}
@@ -65,6 +63,12 @@ Web API Libraries
 
 -   [sendgrid-csharp](http://github.com/sendgrid/sendgrid-csharp) *by SendGrid* - Official C\# library to send emails
 -   [smtpapi-csharp](http://github.com/sendgrid/smtpapi-csharp) *by SendGrid* - Official C\# library to create SMTPAPI headers
+
+{% anchor h3 %}
+Android
+{% endanchor %}
+
+-   [sendgrid-android](https://github.com/danysantiago/sendgrid-android) - The Android library for SendGrid by [DannySantiago](https://github.com/danysantiago)
 
 {% anchor h3 %}
 Command Line 
@@ -93,6 +97,7 @@ Java
 -   [smtpapi-java](http://github.com/sendgrid/smtpapi-java) *by SendGrid*- Official Java library to create SMTP API headers
 -   [sendgrid-google-java](https://github.com/sendgrid/sendgrid-google-java) *by SendGrid* - Java library for use with Google App Engine
 -   [sendgrid4j](https://github.com/shunjikonishi/sendgrid4j) *by Shunji Konishi* - Simple SendGrid client for Java
+-   [sendgrid-asm-java](https://github.com/krenfro/sendgrid-asm-java) *by Kyle Renfro* - Advanced Suppression Manager (ASM) Java Client
 
 {% anchor h3 %}
 JavaScript 
@@ -138,7 +143,7 @@ Python
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) *by SendGrid* - Official SendGrid Python wrapper to send emails
 -   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) *by SendGrid*- Official Python library to create SMTP API headers
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
--   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid STMP API interface for Django
+-   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
 -   [sendgrid-sendgrid](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
 
 {% anchor h3 %}

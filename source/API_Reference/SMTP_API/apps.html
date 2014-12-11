@@ -482,7 +482,7 @@ Filter: <code>spamcheck</code>
 <tr>
 <td>url</td>
 <td><code>url</code></td>
-<td>an optional url to POST the email and a copy of the report to</td>
+<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/Apps/spam_checker.html#-Parameters">Spam Checker documentation</a> for POST details.</td>
 </tr>
 </tbody>
 </table>
@@ -536,10 +536,14 @@ Filter: <code>subscriptiontrack</code>
 <tr>
 <td>replace</td>
 <td><code>string</code></td>
-<td>A tag that will be replaced with the unsubscribe URL (e.g. <code>-unsubscribe_link-</code>). If this parameter is included, it will override <code>text/html</code> and <code>text/plain</code>.</td>
+<td>A tag that will be replaced with the unsubscribe URL (e.g. <code>[unsubscribe_url]</code>). If this parameter is included, it will override <code>text/html</code> and <code>text/plain</code> The URL of the link will be placed at the replace tag's location, with no html or other formatting.</td>
 </tr>
 </tbody>
 </table>
+
+{% warning %}
+The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setup via the UI or WebAPI, as an account-level setting.
+{% endwarning %}
 
 <h4>Example X-SMTPAPI Header Value</h4>
 {% codeblock lang:json %}

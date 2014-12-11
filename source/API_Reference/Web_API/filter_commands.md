@@ -6,13 +6,17 @@ navigation:
   show: true
 ---
 
+{% info %}
+  These API requests are Account Wide settings, unlike the SMTP API which will change the status at the individual email message level.
+{% endinfo %}
+
 {% anchor h2 %}
-Get Available 
+Get Available
 {% endanchor %}
 
 List all of the available apps.
 
-*Note: The name entry is used in all the other API calls to identify a app.* For a list of all the apps and parameters accesible with the Web API you can check the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page.
+*Note: The name entry is used in all the other API calls to identify an app.* For a list of all the apps and parameters accesible with the Web API you can check the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page.
 
 {% apiexample getavailable GET https://api.sendgrid.com/api/filter.getavailable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -23,7 +27,7 @@ List all of the available apps.
   {
     "name": "bcc",
     "title": "BCC",
-    "description": "Automatically BCC an address for every e-mail sent.",
+    "description": "Automatically BCC an address for every e-mail sent from this account.",
     "activated": false
   },
   {
@@ -48,13 +52,13 @@ List all of the available apps.
 * * * * *
 
 {% anchor h2 %}
-Activate App 
+Activate App
 {% endanchor %}
 
-Activate an app.
+Activate an app ofr the entire Account.
 
-{% parameters activate %} 
-  
+{% parameters activate %}
+
   {% parameter name true '' 'The name of the app to activate.' %}
 {% endparameters %}
 
@@ -75,13 +79,13 @@ Activate an app.
 * * * * *
 
 {% anchor h2 %}
-Deactivate App 
+Deactivate App
 {% endanchor %}
 
-Deactivate an app.
+Deactivate an app for the entire Account.
 
-{% parameters deactivate %} 
-  
+{% parameters deactivate %}
+
   {% parameter name true '' 'The name of the app to deactivate.' %}
 {% endparameters %}
 
@@ -102,12 +106,12 @@ Deactivate an app.
 * * * * *
 
 {% anchor h2 %}
-Setup App 
+Setup App
 {% endanchor %}
 
-Change application settings. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
+Change application settings across the entire Account. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
 
-{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&bcc=nick@sendgrid.com false %}
+{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=example@example.com false %}
   {% response json %}
 {
   "message": "success"
@@ -124,23 +128,22 @@ Change application settings. Applications and their settings can be found in the
 * * * * *
 
 {% anchor h2 %}
-Get App Settings 
+Get App Settings
 {% endanchor %}
 
 Get the Settings Of An App
 
-{% parameters getsettings %} 
-  
+{% parameters getsettings %}
+
   {% parameter name true '' 'The name of the app for which to retrieve settings.' %}
 {% endparameters %}
 
 {% apiexample getsettings GET https://api.sendgrid.com/api/filter.getsettings api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc %}
   {% response json %}
 {
-  "message": "success",
   "settings": [
     {
-      "bcc": "nick@sendgrid.com"
+      "email": "example@example.com"
     }
   ]
 }

@@ -13,10 +13,10 @@ emails.
 POST
 {% endanchor %}
 
-Add recipient emails to the global suppression group.
+Add recipient addresses to the global suppression group.
 
 {% parameters post %}
- {% parameter recipient_emails true 'Array of valid email addresses.' 'The emails to add to the suppression group.' %}
+ {% parameter recipient_emails Yes 'Array of valid email addresses' 'Addresses to add to the global suppression group' %}
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/asm/suppressions/global recipient_emails=["test1@example.com", "test2@example.com"] %}
@@ -26,13 +26,15 @@ HTTP/1.1 201
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
+
 {% anchor h2 %}
 GET
 {% endanchor %}
 
-Check if an address is in the global suppressions group.
+Check if a recipient address is in the global suppressions group.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/:email_address %}
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/global/:email_address %}
 {% v3response %}
 HTTP/1.1 200
 {
@@ -41,15 +43,16 @@ HTTP/1.1 200
 {% endv3response %}
 {% endapiv3example %}
 
+* * * * *
+
 {% anchor h2 %}
 DELETE
 {% endanchor %}
 
 Delete a recipient email from the global suppressions group.
 
-{% apiv3example get DELETE https://api.sendgrid.com/v3/asm/groups/:group_name/suppressions/:email_address %}
+{% apiv3example get DELETE https://api.sendgrid.com/v3/asm/suppressions/global/:email_address %}
 {% v3response %}
 HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
-
