@@ -1,3 +1,12 @@
+---
+seo:
+  title: Content Delivery Networks
+title: Content Delivery Networks
+layout: page
+weight: 0
+navigation:
+  show: true
+---
 
 {% anchor h2 %}
 Using CloudFlare
