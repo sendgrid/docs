@@ -10,6 +10,26 @@ navigation:
 We recommend using SendGrid C#, our client library, <a href="https://github.com/sendgrid/sendgrid-csharp">available on Github</a>, with full documentation.
 {% endgithub %}
 
+{% anchor h2 %}Using SendGrid's C# Library{% endanchor %}
+{% codeblock lang:csharp %}
+// using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
+using System;
+using System.Net;
+using System.Net.Mail;
+using SendGridMail;
+using SendGridMail.Transport;
+ 
+SendGrid mail = SendGrid.GetInstance();
+mail.From = new MailAddress("you@youremail.com");
+mail.AddTo("test@sendgrid.com");
+mail.Subject = "Sending with SendGrid is Fun";
+mail.Text = "and easy to do anywhere, even with C#";
+ 
+var credentials = new NetworkCredential(api_user, api_key);
+var transportWeb = new Web(credentials);
+transportWeb.Deliver(mail);
+{% endcodeblock %}
+
 {% anchor h2 %}
 Using .NET's Built-in SMTP Library 
 {% endanchor %}

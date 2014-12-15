@@ -13,6 +13,22 @@ navigation:
 We recommend using SendGrid Perl, our client library, <a href="https://github.com/sendgrid/sendgrid-perl">available on Github</a>, with full documentation.
 {% endgithub %}
 
+{% anchor h2 %}Using SendGrid's Perl Library{% endanchor %}
+{% codeblock lang:perl %}
+# using SendGrid's Perl Library - https://github.com/sendgrid/sendgrid-perl
+use Mail::SendGrid;
+use Mail::SendGrid::Transport::REST;
+ 
+my $sendgrid = Mail::SendGrid->new(
+  from => "test@sendgrid.com",
+  to => "you@youreamil.com",
+  subject => "Sending with SendGrid is Fun",
+  html => "and easy to do anywhere, even with Perl"
+);
+ 
+Mail::SendGrid::Transport::REST->new( username => $api_user, password => $api_key );
+{% endcodeblock %}
+
 {% anchor h2 %}
 Without sendgrid-perl
 {% endanchor %}

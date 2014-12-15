@@ -10,6 +10,21 @@ navigation:
   show: true
 ---
 {% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. {% endgithub %} 
+
+{% anchor h2 %}Using SendGrid's PHP Library{% endanchor %}
+{% codeblock lang:php %}
+// using SendGrid's PHP Library - https://github.com/sendgrid/sendgrid-php
+$sendgrid = new SendGrid($api_user, $api_key);
+$email    = new SendGrid\Email();
+ 
+$email->addTo("test@sendgrid.com")
+      ->setFrom("you@youremail.com")
+      ->setSubject("Sending with SendGrid is Fun")
+      ->setHtml("and easy to do anywhere, even with PHP");
+ 
+$sendgrid->send($email);
+{% endcodeblock %}
+
 {% anchor h2 %}
 Using PHP with cURL 
 {% endanchor %}
