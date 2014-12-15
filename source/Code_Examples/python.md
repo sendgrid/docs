@@ -9,3 +9,19 @@ navigation:
 {% github sendgrid/sendgrid-python#example Python %}
 We recommend using SendGrid Python, our client library, <a href="https://github.com/sendgrid/sendgrid-python">available on Github</a>, with full documentation.
 {% endgithub %}
+
+{% anchor h2 %} Using SendGrid's Python Library {% endanchor %}
+{% codeblock lang:python %}
+# using SendGrid's Python Library - https://github.com/sendgrid/sendgrid-python
+import sendgrid
+ 
+sendgrid = sendgrid.SendGridClient(api_user, api_key)
+message = sendgrid.Mail()
+ 
+message.add_to("test@sendgrid.com")
+message.set_from("you@youremail.com")
+message.set_subject("Sending with SendGrid is Fun")
+message.set_html("and easy to do anywhere, even with Python")
+ 
+sendgrid.send(message)
+{% endcodeblock %}
