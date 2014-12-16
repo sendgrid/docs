@@ -649,7 +649,7 @@ Group Unsubscribe
 {% codeblock lang:json %}
 {
   "sg_message_id":"sendgrid_internal_message_id",
-  "email":"email@example.com",
+  "email":"email@example.com",g
   "timestamp":1249948800,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
@@ -715,29 +715,6 @@ Group Unsubscribe
          <td>unsubscribe</td>
          <td>Message recipient</td>
          <td>The id of the unsubscribed asm group</td>
-         <td>The category you assigned</td>
-      </tr>
-   </tbody>
-</table>
-
-{% anchor h2 %}
-Group Resubscribe
-{% endanchor %}
-
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>event</th>
-         <th>email</th>
-         <th>asm_group_id</th>
-         <th>category</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>unsubscribe</td>
-         <td>Message recipient</td>
-         <td>The id of the resubscribed asm group</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
