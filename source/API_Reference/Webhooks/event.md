@@ -624,7 +624,7 @@ Unsubscribe
 {% endcodeblock %}
 
 {% anchor h3 %}
-ASM Unsubscribe 
+Group Unsubscribe 
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -632,13 +632,15 @@ ASM Unsubscribe
       <tr>
          <th>event</th>
          <th>email</th>
+         <th>asm_group_id</th>
          <th>category</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>group_unsubscribe</td>
+         <td>unsubscribe</td>
          <td>Message recipient</td>
+         <td>The id of the unsubscribed asm group</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
@@ -659,7 +661,7 @@ ASM Unsubscribe
 {% endcodeblock %}
 
 {% anchor h3 %}
-ASM Resubscribe 
+Group Resubscribe 
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -667,13 +669,15 @@ ASM Resubscribe
       <tr>
          <th>event</th>
          <th>email</th>
+         <th>asm_group_id</th>
          <th>category</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>group_resubscribe</td>
+         <td>unsubscribe</td>
          <td>Message recipient</td>
+         <td>The id of the resubscribed asm group</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
