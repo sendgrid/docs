@@ -614,6 +614,76 @@ Unsubscribe
 }
 {% endcodeblock %}
 
+{% anchor h3 %}
+ASM Unsubscribe 
+{% endanchor %}
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>group_unsubscribe</td>
+         <td>Message recipient</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+{% codeblock lang:json %}
+{
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"group_unsubscribe",
+  "asm_group_id":1,
+  "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
+  "ip":"255.255.255.255"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+ASM Resubscribe 
+{% endanchor %}
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>group_resubscribe</td>
+         <td>Message recipient</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+{% codeblock lang:json %}
+{
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"group_resubscribe",
+  "asm_group_id":1,
+  "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
+  "ip":"255.255.255.255"
+}
+{% endcodeblock %}
+
 {% anchor h2 %}
 Marketing Email Unsubscribes 
 {% endanchor %}

@@ -212,6 +212,8 @@ All fields except version are required for each call.
  {% parameter 'open' 'Yes' 'Notify when email is opened' '1' %}
  {% parameter 'unsubscribe' 'Yes' 'Notify when email is unsubscribed' '1' %}
  {% parameter 'spamreport' 'Yes' 'Notify when email is marked as spam' '1' %}
+ {% parameter 'group_unsubscribe' 'Yes' 'Notify when email unsubscribes from an [ASM Group]({{root_url}}//API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html)' '1' %}
+ {% parameter 'group_resubscribe' 'Yes' 'Notify when email resubscribes to an [ASM Group]({{root_url}}//API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html)' '1' %}
  {% parameter 'url' 'Yes' 'The post notification url to post these event messages to' 'https://notificationurl.example.com/event' %}
  {% parameter 'version' 'No' 'The version of the Event API you wish to use. (1-3)' '3' %}
 {% endparameters %}
