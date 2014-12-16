@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+{% warning %}
+This app is very powerful, and can only be used on a per-message basis. Use with extreme caution.
+{% endwarning %}
+
 Some e-mails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.
 
 {% anchor h2 %}
