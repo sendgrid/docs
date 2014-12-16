@@ -649,7 +649,7 @@ Group Unsubscribe
 {% codeblock lang:json %}
 {
   "sg_message_id":"sendgrid_internal_message_id",
-  "email":"email@example.com",g
+  "email":"email@example.com",
   "timestamp":1249948800,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
