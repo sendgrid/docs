@@ -623,8 +623,8 @@ Unsubscribe
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
-Group Unsubscribe
+{% anchor h3 %}
+Group Unsubscribe 
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -646,8 +646,22 @@ Group Unsubscribe
    </tbody>
 </table>
 
-{% anchor h2 %}
-Group Resubscribe
+{% codeblock lang:json %}
+{
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"group_unsubscribe",
+  "asm_group_id":1,
+  "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
+  "ip":"255.255.255.255"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Group Resubscribe 
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -668,6 +682,20 @@ Group Resubscribe
       </tr>
    </tbody>
 </table>
+
+{% codeblock lang:json %}
+{
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "event":"group_resubscribe",
+  "asm_group_id":1,
+  "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
+  "ip":"255.255.255.255"
+}
+{% endcodeblock %}
 
 {% anchor h2 %}
 Marketing Email Unsubscribes
