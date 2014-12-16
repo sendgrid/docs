@@ -698,29 +698,6 @@ Group Resubscribe
 {% endcodeblock %}
 
 {% anchor h2 %}
-Group Unsubscribe
-{% endanchor %}
-
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>event</th>
-         <th>email</th>
-         <th>asm_group_id</th>
-         <th>category</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>unsubscribe</td>
-         <td>Message recipient</td>
-         <td>The id of the unsubscribed asm group</td>
-         <td>The category you assigned</td>
-      </tr>
-   </tbody>
-</table>
-
-{% anchor h2 %}
 Marketing Email Unsubscribes
 {% endanchor %}
 
