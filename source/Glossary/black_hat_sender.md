@@ -17,5 +17,5 @@ If your emails are not getting the clicks and opens you expect, you may want to 
 
 For more information:
 
-* [Email Harvesting}({{root_url}}/Glossary/email_harvesting.md)
-* [White Hat Sender]({{root_url}}/Glossary/white_hat_sender.md)
+* [Email Harvesting]({{root_url}}/Glossary/email_harvesting.html)
+* [White Hat Sender]({{root_url}}/Glossary/white_hat_sender.html)
