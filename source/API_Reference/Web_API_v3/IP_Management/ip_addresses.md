@@ -79,11 +79,7 @@ DELETE
 {% endanchor %}		
 Remove an IP address from a pool.		
 		
-{% parameters post %}		
-  {% parameter ip Yes 'Valid IP address' 'IP address to remove from the pool' %}		
-{% endparameters %}		
-		
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/:pool_name/ips ip=0.0.0.0 %}		
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/:pool_name/ips/:ip %}		
   {% v3response %}		
 HTTP/1.1 204 NO CONTENT (OK)		
   {% endv3response %}		
