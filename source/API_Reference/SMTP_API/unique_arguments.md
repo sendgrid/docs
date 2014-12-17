@@ -59,3 +59,20 @@ To apply different unique arguments to individual emails, you may use [substitut
   }
 }
 {% endcodeblock %}
+
+<h4>Reserved Words</h4>
+
+Don't use uniq arguments matching those that are returned by Sengrid JSON by default (such as `name`, `event`, `timestamp`). Those arguments will be overriden by Sendgrid. Email will be delivered sucessfully
+
+{% codeblock lang:json %}
+{
+  "unique_args": {
+    "customerAccountNumber": "55555",
+    "event": "ignored_by_Sendgrid",
+    "email": "some-different-email-then-email-sender@ignored-by.sendgrid",
+  }
+}
+{% endcodeblock %}
+
+
+
