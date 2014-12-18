@@ -69,7 +69,7 @@ Don't use uniq arguments matching those that are returned by Sengrid JSON by def
   "unique_args": {
     "customerAccountNumber": "55555",
     "event": "ignored_by_Sendgrid",
-    "email": "some-different-email-then-email-sender@ignored-by.sendgrid",
+    "email": "some-different-email-then-email-sender@ignored-by.sendgrid"
   }
 }
 {% endcodeblock %}
