@@ -18,3 +18,4 @@ For more information:
 * [Bulk Email Folder]({{root_url}}/Glossary/bulk_mail_folder.html)
 * [Email Deliverability]({{root_url}}/Glossary/email_deliverability.html)
 * [Setting Up Your Server]({{root_url}}/User_Guide/Setting_Up_Your_Server/index.html)
+* [Black Hat Sender]({{root_url}}/Glossary/black_hat_sender.html)
