@@ -12,7 +12,8 @@ To access this feature navigate to Email Reports > Bounces > Settings, here: htt
 
 You will then want to scroll down the page and click the "Enable Bounces Forwarding" box. 
 
-****** [INSERT IMAGE HERE: fwd_bounces.png] ******
++![Bounce Forwarding]({{root_url}}/images/forward_bounces_1.png)
+
 
 If you have dedicated mailbox to manage the rejected messages you will want to enter its address in the "email address" field. However, if you want the notifications to be sent to the sender, you will want to leave this field blank. Without an address present in this field, the Bounces are forwarded to the original sending FROM address.
 
