@@ -1,5 +1,0 @@
-Deliveries - A delivery is recorded when a request to send an email results in the delivery of that email to the end recipient. Delivered means the message was accepted by the receiving server, HOWEVER this does not necessarily mean that the message reached the recipient’s inbox.
-
-If an email is indicated as delivered you can be certain that it was not deferred by the ISP.
-
-Read more about delivery metrics
