@@ -2,7 +2,7 @@
 seo:
   title: Email Reputation Monitoring
   description: Your email monitoring reputation is based on your bounces, blocks, spam, invalid email, and successfully delivered emails.
-  keywords:
+  keywords: reputation, email sender reputation, email reputation monitoring
 title: Reputation Monitoring
 weight: 0
 layout: page
