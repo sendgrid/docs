@@ -1,3 +1,0 @@
-Request - A request is an email sent and is reported in your SendGrid dashboard every time our servers get a request from your application or server to send an email to one of your customers. In simple terms, each time you contact SendGrid with an email and say hey could you deliver this message for me, that is a request. 
-
-Read more about delivery metrics
