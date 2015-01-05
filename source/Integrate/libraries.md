@@ -169,6 +169,12 @@ Titanium
 Webhook Libraries 
 {% endanchor %}
 
+{% anchor h3 -Django-Webhooks %}
+Django 
+{% endanchor %}
+
+-   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
+
 {% anchor h3 -PHP-Webhooks %}
 PHP 
 {% endanchor %}
