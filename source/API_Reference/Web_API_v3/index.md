@@ -32,7 +32,7 @@ If you want to use the API via `curl`, it has support for base64-encoded
 authentication built-in. For example:
 
 {% codeblock lang:bash %}
-$curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name":"example_name"}' https://api.sendgrid.com/v3/templates
+curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name":"example_name"}' https://api.sendgrid.com/v3/templates
 {% endcodeblock %}
 
 You then enter your password at the prompt.
