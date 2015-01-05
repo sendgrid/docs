@@ -17,16 +17,16 @@ Here, you’ll have access to:
 
 * Requests
 * Deliveries
-* Opens
+* [Opens]({{root_url}}/Glossary/opens.html)
 * Unique Opens
-* Clicks
+* [Clicks]({{root_url}}/Glossary/clicks.html)
 * Unique Clicks
 * Click-through ratio
 * Bounces
-* Spam reports
+* Repeat bounces
+* [Spam reports]({{root_url}}/Glossary/spam_reports.html)
 * Repeat spam reports
 * Unsubscribes
-* Repeat bounces
 * Invalid emails
 
 ![Email Marketing Stats Dashboard]({{root_url}}/images/EmailMarketing_Analytics_2.png)
