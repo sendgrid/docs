@@ -16,7 +16,7 @@ Add one or more emails to a Recipient List.
 
 {% parameters add%} 
   
-  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
+  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses to.' %}  
   {% parameter data Yes 'Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.' 'Specify the name, email address, and additional fields to add to the specified Recipient List.' %}
 {% endparameters %}
 
