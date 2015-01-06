@@ -260,8 +260,8 @@ The resulting webhook call
 {% codeblock lang:json %}
 [
   {
-   "event": "Processed",
-   "timestamp":"123456789"
+    "event": "Processed",
+    "timestamp":"123456789",
     "customerAccountNumber": "55555",
     "activationAttempt": "1",
     "New Argument 1": "New Value 1",
