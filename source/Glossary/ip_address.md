@@ -18,7 +18,7 @@ In the context of deploying email, a single IP address or IP range may be dedica
 If you are on a Silver or above plan you can see your IP reputation and IP address on your Account Overview page.
 {% endinfo %}
 
-![]({{root_url}}/images/ap_address_1.png)
+![]({{root_url}}/images/ip_address_1.png)
 
 For more information:
 
