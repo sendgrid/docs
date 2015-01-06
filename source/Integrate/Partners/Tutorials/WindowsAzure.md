@@ -237,7 +237,7 @@ completion();
 ![Code]({{root_url}}/images/azure_18.png)
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
 {%codeblock lang:objc%}
-// Populate the parameters for the Sendgrid Web API Call
+// Populate the parameters for the SendGrid Web API Call
 // Find more details about the [Web API here](https://sendgrid.com/docs/API_Reference/Web_API/index.html).
 NSString *username = @"<Your SendGrid Username>";
 NSString *apikey = @"<Your SendGrid Password>";
