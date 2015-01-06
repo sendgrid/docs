@@ -18,4 +18,6 @@ We recommend port 587 to avoid and rate limiting that your server host may apply
 
 Outbound connections for emails sent via SendGrid utilize opportunistic encryption using TLS. When we deliver your message to its recipient we will attempt to negotiate a TLS connection with the recipient’s mail server. If successful, we send using TLS. If not, a plain connection is used.
 
-If you are having issues with your hosting company allowing any sort of SMTP connection, please try sending your email through our [Web API]({{root_url}}/API_Reference/Web_API/index.html) instead of over SMTP.
+When sending through SendGrid's SMTP Relay, you can [add custom SMTP headers]({{root_url}}/API_Reference/SMTP_API/index.html) to control how your email is sent and what information is included.
+
+If your host will not allow any sort of SMTP connection, please try sending your email through our [Web API]({{root_url}}/API_Reference/Web_API/index.html) instead of over SMTP.
