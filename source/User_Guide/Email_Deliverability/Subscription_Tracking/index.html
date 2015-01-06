@@ -10,12 +10,15 @@ navigation:
 <p>
 Managing unsubscribes is key to getting maximum email delivery. If your customers have an easy way to tell you that they'd like to stop receiving your email besides using the spam button it will give you valuable insights without affecting your reputation.
 </p>
+
 <p>
 SendGrid has two different ways of processing unsubscribes depending on how you're sending mail. If you use the Subscription Tracking App, recipients can unsubscribe from all of the emails you’re sending. If you’re using the Marketing Email tool, recipients can unsubscribe from specific types of emails that they’d rather not receive anymore.
 </p>
+
 <p>
-If you are sending email through SendGrid and have the <a href="https://sendgrid.com/docs/Apps/subscription_tracking.html">Subscription Tracking app</a> turned on an unsubscribe option will be added to the footer of every email that gets sent through your account. A user who clicks the unsubscribe link will be added to your global unsubscribe list (this list can be found by going to the “Email Reports” tab and clicking on “Unsubscribes”) and _any _future attempts to send email to those users will be suppressed unless they’re removed. You can also manage this list manually, adding and removing addresses via the UI or with the use of <a href="https://sendgrid.com/docs/API_Reference/Web_API/unsubscribes.html">API calls</a>.
+If you are sending email through SendGrid and have the <a href="{{root_url}}/Apps/subscription_tracking.html">Subscription Tracking app</a> turned on, an unsubscribe option will be added to the footer of every email that gets sent through your account. A user who clicks the unsubscribe link will be added to your <a href="https://sendgrid.com/unsubscribes">global unsubscribe list</a> and **any** future attempts to send email to those users will be suppressed unless they’re removed. You can also manage this list manually, adding and removing addresses via the UI or with the use of <a href="{{root_url}}/API_Reference/Web_API/unsubscribes.html">API calls</a>.
 </p>
+
 <p>
-The <a href="https://sendgrid.com/docs/Apps/subscription_tracking.html">Subscription Tracking app</a> also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
+The <a href="{{root_url}}/Apps/subscription_tracking.html">Subscription Tracking app</a> also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
 </p>
