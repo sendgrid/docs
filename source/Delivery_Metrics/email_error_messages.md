@@ -14,7 +14,7 @@ Email is essentially computers talking to each other in simple codes to relay si
 250 
 {% endanchor %}
 
-The best mail server response code you can get. When you see this, everything has gone according to plan! This response is what results in a 'Delivered' event within your Sendgrid stats, and indicates that the recipient server has accepted the message.
+The best mail server response code you can get. When you see this, everything has gone according to plan! This response is what results in a 'Delivered' event within your SendGrid stats, and indicates that the recipient server has accepted the message.
 
 {% anchor h3 %}
 Examples: 
@@ -183,7 +183,7 @@ Examples:
 Other 
 {% endanchor %}
 
-Sendgrid will also display a code when the recipient server has responded with a literally blank reason code. Rather than leave you to ponder what a blank field might mean, the below message is displayed instead, letting you know that far end was not able to respond intelligently to our request.
+SendGrid will also display a code when the recipient server has responded with a literally blank reason code. Rather than leave you to ponder what a blank field might mean, the below message is displayed instead, letting you know that far end was not able to respond intelligently to our request.
 
 -   Delayed Bounce - Unable to Parse Server Reason</span>
 

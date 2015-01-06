@@ -28,7 +28,7 @@ Only CSV files are accepted at this time. A standard file chooser will allow you
 
 {% codeblock %} name,email "SG Support","support@sendgrid.com" "Sales Team","sales@sendgrid.com" {% endcodeblock %}
 
-Sendgrid supports Unicode (UTF-8), ASCII, and extended ASCII characters. When importing your list into Sendgrid, make sure that the characters are all encoded as UTF-8 in order to prevent syntax errors from occurring.
+SendGrid supports Unicode (UTF-8), ASCII, and extended ASCII characters. When importing your list into SendGrid, make sure that the characters are all encoded as UTF-8 in order to prevent syntax errors from occurring.
 
 #### Add Recipients Manually
 
