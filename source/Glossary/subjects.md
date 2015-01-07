@@ -9,6 +9,9 @@ layout: page
 navigation:
   show: true
 ---
+There are a quite a few things to know about email. So, we wanted to help you know as much as you could possibly want to know! These are some of the more common terms that we use elsewhere in our documentation.
+
+We have organized these by subject, but you can also look at our [alphabetical list of Email Terms]({{root_url}}/Glossary/index.html).
 
 <div class="row">
     <div class="col-md-4">
