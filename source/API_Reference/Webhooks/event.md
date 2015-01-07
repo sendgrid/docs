@@ -402,7 +402,7 @@ Deferred
   "response":"400 Try again",
   "sg_event_id":"sendgrid_internal_event_id",
   "sg_message_id":"sendgrid_internal_message_id",
-  "event":"delivered",
+  "event":"deferred",
   "email":"email@example.com",
   "timestamp":1249948800,
   "smtp-id":"<original-smtp-id@domain.com>",
