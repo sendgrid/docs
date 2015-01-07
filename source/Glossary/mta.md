@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-MTA stands for Mail Transfer Agent or Message Transfer Agent. MTA is software that transfers electronic mail messages from one computer to another using a client–server application architecture. 
+Mail Transfer Agent or Message Transfer Agent (MTA) is software that transfers electronic mail messages from one computer to another using a client–server application architecture.
 
 An MTA implements both the client (sending) and server (receiving) portions of the [Simple Mail Transfer Protocol]({{root_url}}/Glossary/smtp.html).
 
