@@ -59,7 +59,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
     <div class="col-md-4">
         {% anchor h2 %}Senders, Spam, & Spammers{% endanchor %}
         <ul>
-            <li><a href="{{root_url}}/Glossary/black_hat.html">Black Hat</a></li>
+            <li><a href="{{root_url}}/Glossary/black_hat_sender.html">Black Hat Sender</a></li>
             <li><a href="{{root_url}}/Glossary/blacklists.html">BlackLists</a></li>
             <li><a href="{{root_url}}/Glossary/bulk_mail_folder.html">Bulk Mail Folder</a></li>
             <li><a href="{{root_url}}/Glossary/challenge_response.html">Challenge Response</a></li>
@@ -80,14 +80,14 @@ We have organized these by subject, but you can also look at our [alphabetical l
         <ul>
             <li><a href="{{root_url}}/Glossary/bulk_email_service.html">Bulk Email Service</a></li>
             <li><a href="{{root_url}}/Glossary/bulk_sender_notification.html">Bulk Sender Notification</a></li>
-            <li><a href="{{root_url}}/Glossary/email_api_integrations.html">Email API Integration</a></li>
+            <li><a href="{{root_url}}/Glossary/email_api_integration.html">Email API Integration</a></li>
             <li><a href="{{root_url}}/Glossary/email_service_provider.html">Email Service Provider</a></li>
             <li><a href="{{root_url}}/Glossary/feedback_loop.html">Feedback Loop</a></li>
             <li><a href="{{root_url}}/Glossary/email_marketing.html">Email Marketing</a></li>
             <li><a href="{{root_url}}/Glossary/event_webhook.html">Event Webhook</a></li>
             <li><a href="{{root_url}}/Glossary/mail_merge.html">Mail Merge</a></li>
             <li><a href="{{root_url}}/Glossary/mta.html">MTA</a></li>
-            <li><a href="{{root_url}}/Glossary/open_relay.html">Open Relay</a></li>
+            <li><a href="{{root_url}}/Glossary/openrelay.html">Open Relay</a></li>
             <li><a href="{{root_url}}/Glossary/reputation_monitoring.html">Reputation Monitoring</a></li>
             <li><a href="{{root_url}}/Glossary/reseller_email_account.html">Reseller Email Account</a></li>
             <li><a href="{{root_url}}/Glossary/scheduled_emails.html">Scheduled Emails</a></li>
