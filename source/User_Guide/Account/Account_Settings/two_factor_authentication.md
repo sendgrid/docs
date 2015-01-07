@@ -14,20 +14,24 @@ how credentials are used to send email.
 {% endinfo %}
 
 {% info %}
-Two factor authentication does not currently support Multiple Users Credentials.
+Two factor authentication does not currently support [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html).
 {% endinfo %}
+
+{% anchor h2 %}
+Set up 2FA
+{% endanchor %}
 
 * Log in to your SendGrid account like normal.
 
-* On the Account Overview page, click on Account Settings.
+* On the Account Overview page, click on [Account Settings](https://sendgrid.com/user/account).
 
 ![Account Settings]({{root_url}}/images/account_settings.png)
 
-* On the right-hand side of the screen, click on “Setup Multifactor Authentication.”
+* On the right-hand side of the screen, click on [Setup Multifactor Authentication](https://sendgrid.com/multifactor/configure)
 
 * From the Multifactor Authentication page, enter your phone number, and click on “Send Text Message.”
 
-* Please note, for international phone numbers, enter your country-code too.  i.e.  +447812345678
+* Please note, for non-USA phone numbers, please add your country code.  i.e.  +447812345678
 
 * Check your phone.  You will have received a test message with a 6-digit code.  Now enter it in the “Verify Authentication Code” window.
 
@@ -38,3 +42,6 @@ Two factor authentication does not currently support Multiple Users Credentials.
 ![Multifactor Confirmation]({{root_url}}/images/multifactor_confirmation.png)
 
 * Now, whenever you log in to SendGrid, you’ll be prompted to enter a verification code that is sent to your phone at the time of login.
+
+
+*To remove 2FA from your SendGrid account, please [contact support](https://support.sendgrid.com)*

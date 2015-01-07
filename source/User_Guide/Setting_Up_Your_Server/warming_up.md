@@ -44,32 +44,24 @@ With our API V3, we have created a way for you to [automate your IP warmup proce
 For marketing email & marketing campaigns 
 {% endanchor %}
 
-#### Conservative Approach:
+**The Conservative Approach** is to estimate your total monthly email volume and divide that number by 30 and then try to spread your sending evenly over the first 30 days, based on that calculation. Example: if you will send 90,000 emails/month, you should start off sending 3,000 per day over the first month.
 
-Estimate your total monthly email volume and divide that number by 30 and then try to spread your sending evenly over the first 30 days, based on that calculation. Example: if you will send 90,000 emails/month, you should start off sending 3,000 per day over the first month.
-
-#### Aggressive Approach:
-
-Instead of dividing total monthly volume by 30, divide it by 15. Example: say you still need to send the same 90,000 email/month, but you need the emails to reach your recipients in half as long of a time frame, send 6,000 per day for the first 15 days.
+**The Aggressive Approach** is to divide your volume by 15 rather than 30. Example: say you still need to send the same 90,000 email/month, but you need the emails to reach your recipients in half as long of a time frame, send 6,000 per day for the first 15 days.
 
 {% anchor h3 %}
 For transactional email 
 {% endanchor %}
 
-#### Established businesses:
+**Established businesses** that are already sending a ton of email, and decide to move to an ESP for the first time or switch to a new vendor, should migrate their sending a little bit at a time. One way to do this is to split the traffic and move small portions of it to the new IP over time. Alternatively, companies who are already maintaining multiple mail servers, can move their servers over to the new IP(s) one at a time.
 
-If you are already sending a ton of email, and you decide to move to an ESP for the first time or switch to a new vendor, you should migrate your sending a little bit at a time. One way to do this is to split your traffic and move small portions of it to the new IP over time. Alternatively, if you are already maintaining multiple mail servers, you can move your servers over to your new IP one at a time.
-
-#### New businesses:
-
-Typically, the organic growth of your business will, by its nature, create an ideal ramp. Since transactional email is usually dependent on the number of users you have, the growth in your customer base will create a nice, comfortable growth curve in your email volume.
+**New businesses** can typically follow the organic growth of their business, because this growth will by its own nature create an ideal ramp. Since transactional email is usually dependent on the number of users, the growth in of the customer base will create a nice, comfortable growth curve in the email volume.
 
 ISPs keep monthly histories of all the email being sent to their systems. Therefore, you can expect to accomplish a sufficient warmup within about 30 days. You should be able to gradually increase your outbound traffic from about 1,000-2,000 emails/day (at the outset) up to 100,000-500,000 emails/day when the process is complete.
 
 {% anchor h2 %}
-4. What does SendGrid do to prepare its IPs for their customers? 
+What does SendGrid do to prepare its IPs for their customers?
 {% endanchor %}
 
 We are constantly working on different approaches to allow our customers to begin sending the email volume that their business demands as soon as possible. We take the first step of evaluating the history and cleanliness of the IPs that we put into our inventory – if a block doesn't meet our standards, we send them back. Once we've determined that our IPs have an acceptable pre-existing reputation, we then distribute those with the highest reputations first. This gives those with lesser reputations some time to cool off a bit and get ready for future assignment. We will continue to innovate in this space, because we see it as an important piece of our overall service offering.
 
-You might be thinking, "why haven't I encountered this whole warmup issue at other ESPs?" The answer is simple: many of them, especially those focused on marketing email tools, do not offer dedicated IP addresses to their customers. Most often, ESPs simply place everyone on a shared cluster by default. While it may be less cost effective and more technically complicated, we think it is important to empower our users by allowing them to earn their own reputation on their own IP.
+You might be thinking, "Why haven't I encountered this whole warmup issue at other ESPs?" The answer is simple: many of them, especially those focused on marketing email tools, do not offer dedicated IP addresses to their customers. Most often, ESPs simply place everyone on a shared cluster by default. While it may be less cost effective and more technically complicated, we think it is important to empower our users by allowing them to earn their own reputation on their own IP. This also protects you from sharing the negative reputation of the other companies on your IP.

@@ -15,25 +15,20 @@ To see the stats from a specific newsletter, select this button ![Email Marketin
 
 Here, you’ll have access to:
 
-* Requests
-* Deliveries
-* [Opens]({{root_url}}/Glossary/opens.html)
-* Unique Opens
-* [Clicks]({{root_url}}/Glossary/clicks.html)
-* Unique Clicks
-* Click-through ratio
-* Bounces
-* Repeat bounces
-* [Spam reports]({{root_url}}/Glossary/spam_reports.html)
-* Repeat spam reports
-* Unsubscribes
-* Invalid emails
+* [Bounces / Repeat Bounces]({{root_url}}/Glossary/bounces.html)
+* [Clicks / Unique Clicks / Click-through rate]({{root_url}}/Glossary/clicks.html)
+* [Deliveries]({{root_url}}/Glossary/deliveries.html)
+* [Invalid emails]({{root_url}}/User_Guide/Email_Deliverability/Undelivered_Email/index.html)
+* [Opens / Unique Opens]({{root_url}}/Glossary/opens.html)
+* [Requests]({{root_url}}/Glossary/request.html)
+* [Spam reports / Repeat spam reports]({{root_url}}/Glossary/spam_reports.html)
+* [Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html)
 
 ![Email Marketing Stats Dashboard]({{root_url}}/images/EmailMarketing_Analytics_2.png)
 
 You can learn more about each of these statistics [here]({{root_url}}/Delivery_Metrics/metrics.html).
 
-You can also view the statistics for your newsletters by selecting “manage” under the “Marketing Email” tab. Here you’ll see a quick preview of many of the metrics that you would look at to see how your newsletter is performing: sent, opens, unique opens, open rate, total clicks, CTR, opt-out/unsubscribe rate, and spam reports.
+You can also view the statistics for your newsletters by going to [Marketing Email > Manage](https://sendgrid.com/newsletter). Here you’ll see a quick preview of many of the metrics that you would look at to see how your newsletter is performing: sent, opens, unique opens, open rate, total clicks, CTR, opt-out/unsubscribe rate, and spam reports.
 
 ![Email Marketing Stats preview]({{root_url}}/images/EmailMarketing_Analytics_3.png)
 
