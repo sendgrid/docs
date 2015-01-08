@@ -18,23 +18,6 @@ An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider
 * * * * *
 
 {% anchor h2 %}
-POST
-{% endanchor %}
-Add an IP to warmup.
-
-{% parameters post %}
-  {% parameter ip Yes 'Valid IP address' 'IP address to warmup' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
-{% v3response %}
-_
-{% endv3response %}
-{% endapiv3example %}
-
-* * * * *
-
-{% anchor h2 %}
 GET
 {% endanchor %}
 Get all IPs that are currently warming up.
