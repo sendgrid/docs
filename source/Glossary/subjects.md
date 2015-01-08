@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Email Glossary By Subject
+  title: Email Terms By Subject
   description: Learn why more developers choose SendGrid for their email deliverability service to send transactional emails triggered by web apps. Get started for free
   keywords: email glossary, email terms
-title: Email Terms Glossary
+title: Email Terms By Subject
 weight: 100
 layout: page
 navigation:
