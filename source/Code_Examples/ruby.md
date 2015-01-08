@@ -22,7 +22,7 @@ email = SendGrid::Mail.new do |m|
   m.html    = 'and easy to do anywhere, even with Ruby'
 end
  
-sendgrid.send(email)
+client.send(email)
 {% endcodeblock %}
 
 This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.

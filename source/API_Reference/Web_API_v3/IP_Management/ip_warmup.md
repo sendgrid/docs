@@ -13,24 +13,7 @@ If you have existing warm IPs as well as new IPs that need warming, any mail bey
 
 If there are no existing warm IPs, any requests made above the hourly maximum limit will overflow to our Shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use these Shared IP Warmup clusters. 
 
-An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up.html) and consider your sending volume for best deliverability.
-
-* * * * *
-
-{% anchor h2 %}
-POST
-{% endanchor %}
-Add an IP to warmup.
-
-{% parameters post %}
-  {% parameter ip Yes 'Valid IP address' 'IP address to warmup' %}
-{% endparameters %}
-
-{% apiv3example post POST https://api.sendgrid.com/v3/ips/warmup ip=000.000.000.000 %}
-{% v3response %}
-_
-{% endv3response %}
-{% endapiv3example %}
+An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up_ips.html) and consider your sending volume for best deliverability.
 
 * * * * *
 

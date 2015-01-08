@@ -4,7 +4,7 @@ seo:
   description: A unique numerical address that defines an internet location.
   keywords:
 title: IP Address
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
