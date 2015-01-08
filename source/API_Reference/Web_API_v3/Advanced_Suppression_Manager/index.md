@@ -10,7 +10,7 @@ Advanced Suppression Managers gives your recipients more control over the types 
 certain group.
 
 Learn more in the:[Advanced Suppression Manager User
-Guide]({{root_url}}/User_Guide/advanced_suppression_manager.html), or
+Guide]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html), or
 check out the following API resources:
 
 -[Suppression
