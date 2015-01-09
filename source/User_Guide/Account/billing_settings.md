@@ -14,4 +14,4 @@ You can also go to the [Billing History > Automatic Payments](https://sendgrid.c
 
 ![]({{root_url}}/images/automatic_payment_1.png "Automatic Payment")
 
-Fill out the form and click "Make Payment" to save your Credit Card information.
+Fill out the form and click "Make Payment" to save your Credit Card information. When you return to the page, you will see the last 4 digits of the most recent credit card you entered listed as the active credit card on the account.
