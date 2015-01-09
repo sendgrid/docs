@@ -19,7 +19,7 @@ How is Reputation Computed?
 
 Your SendGrid account reputation is computed based on a calculation of:
 
-The percentage of requests that are able to be Delivered. This takes into account [Bounces]({{root_url}}/Glossary/bounces.html), Invalid Emails, and [Drops]({{root_url}}/Glossary/drops.html) (Repeat bounces, unsubscribes, etc.) Please review our [Delivery Metrics]({{root_url}}/Delivery_Metrics/index.html) documentation for more detail on these terms.
+The percentage of requests that are able to be Delivered. This takes into account [Bounces]({{root_url}}/Glossary/bounces.html), Invalid Emails, and Drops (Repeat bounces, unsubscribes, etc.) Please review our [Delivery Metrics]({{root_url}}/Delivery_Metrics/index.html) documentation for more detail on these terms.
 Spam Reports. Each spam report is a user actively rejecting your mail, and has a strong negative affect
  
 {% anchor h2 %}
