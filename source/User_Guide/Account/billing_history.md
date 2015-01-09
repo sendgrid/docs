@@ -2,8 +2,8 @@
 layout: page
 weight: 0
 seo:
-  title: Billing and Account Changes
-title: Billing and Account Changes
+  title: Billing History
+title: Billing History
 navigation:
   show: true
 ---
