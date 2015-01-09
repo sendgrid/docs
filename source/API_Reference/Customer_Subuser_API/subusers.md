@@ -244,12 +244,12 @@ Update Subuser Email Address
 This is the administrative contact address, used by SendGrid to contact the user. Unrelated to sending address information.
 
 {% parameters updateSubuserEmailAddress %}
- {% parameter task Yes 'Must be set to <code>setemail</code>' 'Task to update subuser email address' %}
+ {% parameter task Yes 'Must be set to <code>setEmail</code>' 'Task to update subuser email address' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to update email address of' %}
  {% parameter email Yes 'Valid email format' 'New administrative contact address' %}
 {% endparameters %}
 
-{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setemail&user=subuser_username&email=newsubuser_username %}
+{% apiexample updateSubuserEmailAddress POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setEmail&user=subuser_username&email=newsubuser_username %}
   {% response json %}
 {
   "message": "success"
