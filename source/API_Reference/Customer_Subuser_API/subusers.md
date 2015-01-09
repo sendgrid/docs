@@ -190,12 +190,12 @@ Subuser username is used to access website and API. Changes occur immediately. T
 {% endwarning %}
 
 {% parameters updateSubuserUsername %}
- {% parameter task Yes 'Must be set to <code>setusername</code>' 'Task to update subuser username' %}
+ {% parameter task Yes 'Must be set to <code>setUsername</code>' 'Task to update subuser username' %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to update username of' %}
  {% parameter username Yes 'Valid username format' 'New username for subuser' %}
 {% endparameters %}
 
-{% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setusername&user=subuser_username&username=newsubuser_username %}
+{% apiexample updateSubuserUsername POST https://api.sendgrid.com/apiv2/customer.profile api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=setUsername&user=subuser_username&username=newsubuser_username %}
   {% response json %}
 {
   "message": "success"
