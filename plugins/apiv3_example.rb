@@ -40,11 +40,8 @@ HTML
     # Solution to unquote true, false, and numbers in JSON response
     def unquote_data(data)
       data.each do |k, v|
-        if v.index("]").nil?
-        else
-          puts v
-          data[k] = v[v.index("[")+1,v.index("]")-1].gsub! "'",""
-          puts data[k]
+        unless v.index("]").nil?
+          data[k] = v[v.index("[") + 1, v.index("]") - 1].gsub!("'", "")
           data[k] = data[k].split(",")
         end
         data[k] = v.to_i if /\A[-+]?\d+\z/ === v
