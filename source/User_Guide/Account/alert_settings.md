@@ -8,4 +8,4 @@ navigation:
   show: true
 ---
 
-![]({{root_url}}/images/automatic_payment_1.png "Automatic Payment")
+![]({{root_url}}/images/alert_settings_1.png "Automatic Payment")
