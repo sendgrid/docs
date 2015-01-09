@@ -25,7 +25,7 @@ Stats Notification
 : This alert can only be sent daily, weekly, or monthly
 
 IP Blacklisted
-: You will receive a notification if one of your IP addresses is put on a blacklist.
+: You will receive a notification if one of your IP addresses is put on one of the blacklists SendGrid monitors.
 : This alert can only be sent daily, weekly, monthly, or as needed
 
 Invalid DNS Setting (Whitelabel)
