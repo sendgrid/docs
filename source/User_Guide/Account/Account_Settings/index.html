@@ -1,0 +1,44 @@
+---
+layout: page
+weight: 0
+seo:
+  title: SendGrid Account Settings
+title: Account Settings
+navigation:
+  show: true
+---
+<p>At any time you can change your account settings by loggin into your account and going to the <a href="https://sendgrid.com/user/account">Account Settings</a> page.</p>
+
+<img src="{{root_url}}/images/account_settings_1.png" alt="""Account Settings" />
+<br />
+<dl>
+  <dt><strong>Username</strong></dt><dd>this is your SendGrid username, the one you will use to log into your account, send over SMTP, and to use the API.</dd>
+  <dt><strong>Email</strong></dt><dd>this is the email that SendGrid will use to contact you. You will also use this email for any support purposes, such as retrieving a new password and verifying your account.</dd>
+  <dt><strong>Billing Email</strong></dt><dd>if this email is added, SendGrid will send all your billing notifications to this address. If you do not specify this address, SendGrid will send your billing notifications to your account Email.</dd>
+</dl>
+
+{% anchor h2 %}
+Changing your Password
+{% endanchor %}
+There are two ways to change your password. Through the portal and through the Forgot Password page.
+
+{% warning %}
+When you change your account password, your SMTP and API access will change as well. Make sure you update your account information on all systems and software!
+{% endwarning %}
+
+{% anchor h2 %}
+Changing your Password through the portal
+{% endanchor %}
+<dl>
+  <dt><strong>Current Password</strong></dt><dd>this is the current password on your account. Without this, you will not be able to change your password.</dd>
+  <dt><strong>New Password</strong></dt><dd>enter a new password into this field. Passwords should be secure and not guessable so as to protect your account information from nefarious people and scripts.</dd>
+  <dt><strong>Confirm New Password</strong></dt><dd>enter the same password that you put into "New Password". If the password entered here is not the same as what you put into "New Password", the form will not accept your new password.</dd>
+</dl>
+
+{% anchor h2 %}
+Changing your Password via Forgot Password
+{% endanchor %}
+
+If for some reason you cannot remember your password, go to the <a href="https://sendgrid.com/login">SendGrid login page</a> and click "<a href="https://sendgrid.com/user/forgotPassword)">Forgot Password</a>". From here, you will need to enter your SendGrid username.
+
+We will send you an email with account reactivation steps, please follow these steps to access your account again.
