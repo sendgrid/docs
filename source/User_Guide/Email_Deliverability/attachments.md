@@ -45,3 +45,9 @@ Digioh is integrated with SendGrid's Marketing Email solution, so you can be up 
 
 [Sign Up for a Free Digioh + SendGrid
 Account](https://digioh.com/sendgrid)
+
+{% anchor h2 %}
+Sending email with attachments via SendGrid
+{% endanchor %}
+
+To send emails with attachments via SendGrid, you can employ our [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) or our [Web API]({{root_url}}/API_Reference/Web_API/mail.html#-send).
