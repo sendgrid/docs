@@ -68,8 +68,19 @@ Please note, the validation step in the [Whitelabel Wizard]({{root_url}}/User_Gu
 For more information on SPF best practices and syntax, check out [www.openspf.org](http://www.openspf.org)
 
 {% anchor h2 %}
-Record flattening
+3rd Party Tools
+{% endanchor %}
+These are some tools that might be useful to you. We do not own or support these tools, so use them at your own risk. However,
+we hope that they are helpful.
+
+{% anchor h3 %}
+Record Flattening
 {% endanchor %}
 There is an experimental tool called the [dmarcian SPF Record Flattener](https://dmarcian.com/spf-survey/bitcointalk.org), which should be considered experimental. From their site: "[this tool] rewrites this record by removing duplicate netblocks, collapsing any overlapping netblocks, and using 0 DNS-querying mechanisms/modifiers."
 
 If you choose to use this functionality, we suggest that you test it extensively to make sure that your customers will receive your emails and their servers can look up your records properly.
+
+{% anchor h3 %}
+SPF Wizard
+{% endanchor %}
+[The SPF Wizard](http://www.spfwizard.net/) is a browser based SPF record generation tool. Fill out the form and the site generates an SPF record for you.
