@@ -26,4 +26,4 @@ The events that can be associated with category include:
 The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/Apps/). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}/Apps/subscription_tracking.html), [Clicks]({{root_url}}/Apps/click_tracking.html), and [Opens]({{root_url}}/Apps/open_tracking.html) require that the associated App is enabled. Check out the [Apps tab](https://sendgrid.com/app) to see which apps you have enabled.
 
 In order to add the X-SMTPAPI categories header, please look at our [SMTP API Categories]({{root_url}}/API_Reference/SMTP_API/categories.html) documentation. You can also
-get a [full category list](({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Category-List)) or get [category specific statistics]({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Retrieve-Statistics) from the SendGrid API.
+get a [full category list]({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Category-List) or get [category specific statistics]({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Retrieve-Statistics) from the SendGrid API.
