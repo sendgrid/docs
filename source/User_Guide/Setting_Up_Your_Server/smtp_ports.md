@@ -13,7 +13,7 @@ Many hosting providers and ISPs block port 25 as a default practice. When trying
 You can connect via unencrypted or TLS on ports 25, 2525, and 587. You can also connect via SSL on port 465. Keep in mind that many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing smtp relay.
 
 {% info %}
-We recommend port 587 to avoid and rate limiting that your server host may apply.
+We recommend port 587 to avoid any rate limiting that your server host may apply.
 {% endinfo %}
 
 Outbound connections for emails sent via SendGrid utilize opportunistic encryption using TLS. When we deliver your message to its recipient we will attempt to negotiate a TLS connection with the recipient’s mail server. If successful, we send using TLS. If not, a plain connection is used.
