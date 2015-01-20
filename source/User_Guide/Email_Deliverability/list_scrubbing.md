@@ -1,7 +1,7 @@
 ---
 seo:
   title: List Scrubbing Guide
-title: List Scrubbing
+title: List Scrubbing Guide
 weight: 0
 layout: page
 navigation:
