@@ -6,8 +6,7 @@ navigation:
   show: true
 ---
 
-Global Stats provide all of your user's email statistics for a given
-date range.
+Global Stats provide all of your user's email statistics for a given date range.
 
 {% anchor h2 %}
 GET
