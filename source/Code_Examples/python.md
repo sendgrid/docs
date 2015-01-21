@@ -15,7 +15,7 @@ We recommend using SendGrid Python, our client library, <a href="https://github.
 # using SendGrid's Python Library - https://github.com/sendgrid/sendgrid-python
 import sendgrid
  
-sendgrid = sendgrid.SendGridClient(api_user, api_key)
+sg = sendgrid.SendGridClient(api_user, api_key)
 message = sendgrid.Mail()
  
 message.add_to("test@sendgrid.com")
@@ -23,5 +23,5 @@ message.set_from("you@youremail.com")
 message.set_subject("Sending with SendGrid is Fun")
 message.set_html("and easy to do anywhere, even with Python")
  
-sendgrid.send(message)
+sg.send(message)
 {% endcodeblock %}
