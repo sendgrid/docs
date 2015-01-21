@@ -5,6 +5,11 @@ title: Advanced Statistics
 navigation:
   show: true
 ---
+
+{% warning %}
+This endpoint is being deprecated by the addition of the [v3 Advanced Statistics API]({{root_url}}/API_Reference/Web_API_v3/Stats/advanced.html).
+{% endwarning %}
+
 Advanced Statistics methods provide metrics on the browsers and devices that are opening emails, as well as providing statistics based on geographic location or ISP. 
 {% anchor h2 %}
 Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp 
