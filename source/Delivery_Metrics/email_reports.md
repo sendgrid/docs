@@ -15,23 +15,23 @@ The Email Reports tab of the website allows you to view logs of all your bounced
          <th>Description</th>
       </tr>
       <tr>
-         <td>[Bounces]({{root_url}}/Glossary/bounces.html)</td>
+         <td><a href="{{root_url}}/Glossary/bounces.html">Bounces</a></td>
          <td>When your email has not been successfully delivered and the reason reported back to us is that the email was bounced, that email appears on this list.</td>
       </tr>
       <tr>
-         <td>[Blocks]({{root_url}}/Glossary/blocks.html)</td>
+         <td><a href="{{root_url}}/Glossary/blocks.html">Blocks</a></td>
          <td>When your IP address has been added to a blacklist or has been blocked by an ISP or messaging organization, the effected email shows up on this list. Typically it is possible to have your IP address removed from a black list, and some lists automatically do this after a period of time.</td>
       </tr>
       <tr>
-         <td>[Spam Reports]({{root_url}}/Glossary/spam_reports.html)</td>
+         <td><a href="{{root_url}}/Glossary/spam_reports.html">Spam Reports</a></td>
          <td>If a person who has received your email reports that email as spam, we are notified by the ISP and we add that email to a spam report.</td>
       </tr>
       <tr>
-         <td>[Invalid Emails]({{root_url}}/User_Guide/Email_Deliverability/Undelivered_Email/index.html)</td>
+         <td><a href="{{root_url}}/User_Guide/Email_Deliverability/Undelivered_Email/index.html">Invalid Emails</a></td>
          <td>If an ISP reports back to us that the email supplied is invalid or we discover with our own algorithm that the email you are sending to is invalid, it will appear on this list.</td>
       </tr>
       <tr>
-         <td>[Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html)</td>
+         <td><a href="{{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html">Unsubscribes</a></td>
          <td>Note that SendGrid will not attempt delivery to any email on this list in future mailings.</td>
       </tr>
    </tbody>
