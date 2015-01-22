@@ -14,7 +14,7 @@ get
 
 Get current timezone assigned to the user.
 
-{% apiexample get GET https://sendgrid.com/api/timezone/get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample get GET https://api.sendgrid.com/api/timezone/get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 {
   "name": "Eastern Time, US & Canada",
