@@ -10,7 +10,7 @@ SendGrid provides a number of utilities to help you configure and send
 your email.
 
 Our Brand New [Deliverability Center]({{root_url}}/Utilities/deliverability_center.html) is live and ready to help!
-Come check out our growing library of Bounce Errors and their Solutions! 
+Come check out our growing library of bounce errors and their solutions! 
 
 Check out [Code Workshop]({{root_url}}/Utilities/code_workshop.html) to
 generate email-sending code in a variety of languages.
