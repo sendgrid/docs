@@ -20,7 +20,7 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 * `bower install` to install client-side dependencies (jQuery,
   bootstrap)
 * `bundle install` to install required rubygems.
-* `_config.sample.yml` to `_config.yml`
+* Copy `_config.sample.yml` and name it `_config.yml`
 * Set your root (if you're running locally it'll just be `/`) in `_config.yml`
 * `bundle exec rake preview`
 * Browse to `localhost:4000`
