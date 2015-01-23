@@ -89,15 +89,9 @@ $(function() {
         if (!valid) return;
 
         url = $(this).parent().find('.url').val();
-        // Temporary fix to allow for CORS
-        // Revert, once OPS allows for CORS on sendgrid domains
-        url = url.replace("api.sendgrid.com", "sendgrid.com");
         method = $(this).parent().find('.method').val().toUpperCase().trim();
         creds = "api_user=" + username + "&api_key=" + password;
         format = "." + Livedocs.getResponseFormat();
-        // Temporary fix to allow for CORS
-        // Revert, once OPS allows for CORS on sendgrid domains
-        url = url.replace("api.sendgrid.com", "sendgrid.com");
         data = buildQueryString($(this));
 
         if (method == "GET") {
@@ -235,9 +229,6 @@ $(function() {
       username = $.cookie('username');
 
       url = livedoc.find('.url').val();
-      // Temporary fix to allow for CORS
-      // Revert, once OPS allows for CORS on sendgrid domains
-      url = url.replace("api.sendgrid.com", "sendgrid.com");
       method = livedoc.find('.method').val().toUpperCase().trim();
       creds = "api_user=" + username + "&api_key=XXXXXXXX";
       format = "." + Livedocs.getResponseFormat();
