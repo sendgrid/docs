@@ -12,6 +12,10 @@ SendGrid's [SMTP API]({{ root_url }}/API_Reference/SMTP_API/) allows developers 
 Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 24 hours in advance.
 {% endinfo %}
 
+{% warning %}
+Using both `send_at` and `send_each_at` is not valid and will cause your request to be dropped.
+{% endwarning %}
+
 {% anchor h2 %}
 Send At
 {% endanchor %}	
