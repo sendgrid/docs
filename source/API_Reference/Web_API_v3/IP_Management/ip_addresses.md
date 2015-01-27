@@ -36,7 +36,8 @@ HTTP/1.1 201 OK
 {% anchor h2 %}
 GET
 {% endanchor %}
-See a list of all IPs, including warm up status and pools.
+See a list of all assigned and unassigned IPs. Response includes warm up status,  pools, assigned subusers, and whitelabel info.
+The start_date field corresponds to when warmup started for that IP.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips %}
 {% v3response %}
@@ -47,7 +48,32 @@ HTTP/1.1 200 OK
     "ip":"167.89.21.3",
     "pools":["new_test5"],
     "warmup":true,
-    "start_date":1409616000
+    "start_date":1409616000,
+    "subusers": ["username1", "username2"],
+    "rdns": "01.email@test.com",
+    "pools": ["pool1", "pool2"]
+  }
+]
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
+GET
+{% endanchor %}
+See only *assigned* IPs.
+
+{% apiv3example get GET https://api.sendgrid.com/v3/ips/assigned %}
+{% v3response %}
+HTTP/1.1 200 OK
+
+[
+  {
+    "ip":"167.89.21.3",
+    "pools":["new_test5"],
+    "warmup":true,
+    "start_date":1409616000,
   }
 ]
 {% endv3response %}
