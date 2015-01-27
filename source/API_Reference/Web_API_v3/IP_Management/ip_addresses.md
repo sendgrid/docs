@@ -50,7 +50,7 @@ HTTP/1.1 200 OK
     "warmup":true,
     "start_date":1409616000,
     "subusers": ["username1", "username2"],
-    "rdns": "01.email@test.com",
+    "rdns": "01.email.test.com",
     "pools": ["pool1", "pool2"]
   }
 ]
