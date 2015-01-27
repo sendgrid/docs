@@ -14,25 +14,29 @@
           <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
             <a href="{{root_url}}/index.html">Docs Home</a>
           </li>
+          <li class="nav-link {% if page.url contains 'User_Guide' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/User_Guide/index.html">User Guide</a>
+          </li>
           <li class="nav-link">
             <a href="{{root_url}}/Utilities/code_workshop.html">Code Workshop</a>
           </li>
-          <li class="nav-link {% if page.url contains 'VidGrid' %} current-page-item {% endif %}">
-            <a href="{{root_url}}/VidGrid/index.html">VidGrid</a>
+          <li class="nav-link {% if page.url contains 'Glossary' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/Glossary/index.html">Glossary</a>
           </li>
           <li class="nav-link">
             <a href="http://support.sendgrid.com/">Support</a>
           </li>
-          <li class="nav-link visible-xs">
-            <a href="https://sendgrid.com/marketing/request-demo" class="btn btn-primary btn-block">Contact Us</a>
-            <a href="https://sendgrid.com/user/signup" class="btn btn-success btn-block logged-out">Sign Up</a>
-            <a href="https://sendgrid.com/login" class="btn btn-default btn-block logged-out">Sign In</a>
+          <li class="nav-link visible-xs col-sm-3">
+            <a href="https://sendgrid.com/contact" class="btn btn-success btn-block">Contact Us</a>
+            <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-primary btn-block logged-out">Free Account</a>
+            <a href="https://sendgrid.com/login" class="btn btn-success btn-block logged-out">Sign In</a>
           </li>
         </ul>
       </div>
       <div class="pull-right navbar-buttons hidden-xs">
-        <a href="https://sendgrid.com/marketing/request-demo" class="btn btn-primary">Contact Us</a>
-        <a href="https://sendgrid.com/user/signup"class="btn btn-success logged-out">Sign Up</a>
+        <a href="https://sendgrid.com/contact" class="btn btn-success btn-primary">Contact Us</a>
+        <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-primary logged-out">Free Account</a>
+        <a href="https://sendgrid.com/login" class="btn btn-success logged-out">Sign In</a>
       </div>
     </div>
   </div>
