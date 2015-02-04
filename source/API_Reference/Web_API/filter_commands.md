@@ -55,7 +55,7 @@ List all of the available apps.
 Activate App
 {% endanchor %}
 
-Activate an app ofr the entire Account.
+Activate an app for the entire Account.
 
 {% parameters activate %}
 
