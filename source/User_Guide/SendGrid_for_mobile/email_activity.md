@@ -1,7 +1,7 @@
 ---
 seo:
-  title: SendGrid for iPhone Email Activity
-title: SendGrid for iPhone Email Activity
+  title: SendGrid for iPhone and iPad Email Activity
+title: SendGrid for iPhone and iPad Email Activity
 weight: 700
 layout: page
 navigation:
