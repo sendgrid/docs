@@ -1,7 +1,7 @@
 ---
 seo:
-  title: SendGrid for iOS Subuser Management
-title: SendGrid for iOS Subuser Management
+  title: SendGrid for iPhone Subuser Management
+title: SendGrid for iPhone Subuser Management
 weight: 500
 layout: page
 navigation:
@@ -9,7 +9,13 @@ navigation:
 ---
 
 <p style="text-align:center">
-	<img src="{{root_url}}/images/sendgrid_for_ios_subuser.gif" alt="SendGrid for iOS Email Activity" style="display:inline"/>
+	<img src="{{root_url}}/images/sendgrid_for_iphone_subuser.gif" alt="SendGrid for iPhone Subuser Management" style="display:inline"/>
+</p>
+
+<p style="text-align:center">
+	<a href="https://itunes.apple.com/us/app/sendgrid/id916808878?mt=8" target="_blank">
+		<img src="{{root_url}}/images/download_app_store.svg" alt="Download On The App Store" style="display:inline;border:none;" />
+	</a>
 </p>
 
 {% warning %}
