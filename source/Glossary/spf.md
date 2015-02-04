@@ -20,6 +20,6 @@ If SendGrid is not included in your SPF record then we will not be able to send 
  
 Please note:  We recommend configuring your “all” mechanism to be a soft fail, which is expressed as “~all” at the end of your SPF record.
 
-For more in depth information about implementing SPF records, pleas check out our [Whitelabeling > SPF documentation]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html)
+For more in depth information about implementing SPF records, please check out our [Whitelabeling > SPF documentation]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html)
 
 To get more information around email infrastructure check out our [Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)

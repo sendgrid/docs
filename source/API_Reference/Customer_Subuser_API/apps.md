@@ -15,12 +15,12 @@ List
 {% endanchor %}
 List all of the available apps available for the subuser.
 
-{% parameters getavailable %}   
-  {% parameter task Yes 'Must be set to <code>getavailable</code>' 'Task to retrieve available apps for the subuser' %}  
+{% parameters getAvailable %}   
+  {% parameter task Yes 'Must be set to <code>getAvailable</code>' 'Task to retrieve available apps for the subuser' %}  
   {% parameter user Yes 'Subuser must be under your account' 'The subuser being queried' %}
 {% endparameters %}
 
-{% apiexample list POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&user=subuser_username %}
+{% apiexample list POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getAvailable&user=subuser_username %}
   {% response json %}
 [
   {
