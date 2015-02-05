@@ -22,7 +22,6 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-go](http://github.com/sendgrid/sendgrid-go) - Official Go library
 -   [sendgrid-java](http://github.com/sendgrid/sendgrid-java) - Official Java library
 -   [sendgrid-nodejs](http://github.com/sendgrid/sendgrid-nodejs) - Official NodeJS library
--   [sendgrid-objc](http://github.com/sendgrid/sendgrid-objc) - Official Objective-C library
 -   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) - Official Perl library
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) - Official PHP library
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) - Official Python library
