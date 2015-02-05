@@ -38,7 +38,7 @@ http(s)://username:password@domain/foo.php
 
  
 {% warning %}
-If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2. 
+If you wish to receive encrypted posts, we require that your callback URL support at least TLS 1.0 
 {% endwarning %}
 
 {% anchor h2 %}
