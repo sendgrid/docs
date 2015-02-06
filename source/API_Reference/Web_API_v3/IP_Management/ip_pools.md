@@ -56,20 +56,20 @@ List all IP pools.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/pools %}
 {% v3response %}
-
+HTTP/1.1 200
 [
-{
-"name": "test1"
-},
-{
-"name": "test2"
-},
-{
-"name": "test3"
-},
-{
-"name": "new_test3"
-}
+  {
+    "name": "test1"
+  },
+  {
+    "name": "test2"
+  },
+  {
+    "name": "test3"
+  },
+  {
+    "name": "new_test3"
+  }
 ]
 
 {% endv3response %}
