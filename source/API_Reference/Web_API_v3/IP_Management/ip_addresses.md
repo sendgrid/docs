@@ -26,7 +26,9 @@ HTTP/1.1 201 OK
     
 {   
 "ip": "167.89.21.3",
-"pools": [],
+"pools": [
+"test1"
+],
 "start_date": 1409616000,
 "warmup": true
 }   
