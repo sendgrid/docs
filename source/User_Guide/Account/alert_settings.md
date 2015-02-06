@@ -20,38 +20,38 @@ You can also change which email address to which these alerts will be sent.
 Alert Options
 {% endanchor %}
 
-Stats Notification
+**Stats Notification**
 : An email notification of your SendGrid stats.
-: This alert can only be sent daily, weekly, or monthly
+: This alert can only be sent daily, weekly, or monthly<br />
 
-IP Blacklisted
+**IP Blacklisted**
 : You will receive a notification if one of your IP addresses is put on one of the blacklists SendGrid monitors.
-: This alert can only be sent daily, weekly, monthly, or as needed
+: This alert can only be sent daily, weekly, monthly, or as needed<br />
 
-Invalid DNS Setting (Whitelabel)
-: If one or more of your whitelabel settings is not properly set up, you will be notified.
+**Invalid DNS Setting (Whitelabel)**
+: If one or more of your whitelabel settings is not properly set up, you will be notified.<br />
 
-Reputation Rate Drops Below
+**Reputation Rate Drops Below**
 : If your sender reputation rate drops below the threshold you set, you will be notified.
-: Percentage should be a whole number. Example 10 for 10%
+: Percentage should be a whole number. Example 10 for 10%<br />
 
-Daily Delivery Rate Drops Below
+**Daily Delivery Rate Drops Below
 : If your delivery rate drops below the threshold you set, you will be notified.
-: Percentage should be a whole number. Example 10 for 10%
+: Percentage should be a whole number. Example 10 for 10%<br />
 
-Outbound Mail Queue Exceeds
-: If your outbound mail queue exceeds the threshold you set, you will be notified.
+**Outbound Mail Queue Exceeds**
+: If your outbound mail queue exceeds the threshold you set, you will be notified.<br />
 
-IP Filter status in Hotmail SNDS becomes
+**IP Filter status in Hotmail SNDS becomes**
 : Will alert you when your SNDS IP Health becomes red or yellow
-: This alert can only be sent daily, weekly, monthly, or as needed
+: This alert can only be sent daily, weekly, monthly, or as needed<br />
 
-Service Notifications
-: A notification will be sent to the email supplied for all Service Notifications.
+**Service Notifications**
+: A notification will be sent to the email supplied for all Service Notifications.<br />
 
-Usage Limit
+**Usage Limit**
 : If your usage limit or number of emails sent by your account reaches the threshold percent of available email credits on your account, you will be notified.
-: Percentage should be a whole number. Example 90 for 90%. This indicates the percentage used, not the percentage remaining.
+: Percentage should be a whole number. Example 90 for 90%. This indicates the percentage used, not the percentage remaining.<br />
 
 {% anchor h2 %}
 Add A New Alert
