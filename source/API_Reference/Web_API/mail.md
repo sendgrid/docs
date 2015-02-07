@@ -149,7 +149,7 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
 -F text="testing text body" --form-string html="<strong>testing html body</strong>" \
 -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \
--F files[attachment.gz]=@f.php.gz https://api.sendgrid.com/api/mail.send.json
+-F files\[attachment.gz\]=@f.php.gz
 {% endcodeblock %}
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
@@ -163,7 +163,7 @@ $ curl https://api.sendgrid.com/api/mail.send.json \
 -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
 -F text="testing text body" --form-string html="<strong>testing html body</strong>" \
 -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \
--F files[attachment.pdf]=@attachment.pdf;type=application/pdf
+-F files\[attachment.pdf\]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
 {% anchor h3 %}
