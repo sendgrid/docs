@@ -46,12 +46,13 @@ Body and Subject Tags
 Enabling a Template Engine template means that the `subject` and `body`
 content of your message will behave differently. 
 
-The `<%body%>` token in your template's content will be replaced with
-the value of the body provided in the API call or SMTP message. 
-The `<%subject%>` token in the template's subject content will be replaced with the value of the subject in the API call or SMTP message. 
-
 If you want only the message's content to be displayed, populate only the token in the template's field.
 If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.
+
+{% info %}
+Make sure that you set values for html and subject data when you post.
+These are used to replace the `<%body%>` and `<%subject%>` fields in your template.
+{% endinfo %}
 
 * * * * *
 
