@@ -50,7 +50,7 @@ Specify the hostname and url for parsing incoming emails.
 {% parameters set %}
  {% parameter 'hostname' 'Yes' 'alphanumeric' 'The hostname (domain or subdomain) for which you would like to configure a Parse Webhook callback URL.' %}
  {% parameter 'url' 'Yes' 'alphanumeric' 'The callback URL to which Parse Webhook payloads will be POSTed.' %}
- {% parameter 'spam_check' 'No' '0 or 1' 'If enabled, mmessages will POST, and will have added fields of spam_report and spam_score' %}
+ {% parameter 'spam_check' 'No' '0 or 1' 'If enabled, messages will POST, and will have added fields of spam_report and spam_score' %}
 {% endparameters %}
 
 
