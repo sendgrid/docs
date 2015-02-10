@@ -201,7 +201,7 @@ All fields except version are required for each call.
 {% endinfo %}
 
 
-{% parameters addresswhitelist %}
+{% parameters eventnotify %}
  {% parameter 'name' 'Yes' 'eventnotify' 'The app for which to set or retrieve settings.' %}
  {% parameter 'processed' 'Yes' 'Notify when email is processed' '0' %}
  {% parameter 'dropped' 'Yes' 'Notify when email is dropped' '1' %}
@@ -244,7 +244,7 @@ Footer
 *API App Name - `footer`*
 
 
-{% parameters bcc %}
+{% parameters footer %}
  {% parameter 'name' 'Yes' 'footer' 'The app for which to set or retrieve settings.' %}
  {% parameter 'text/html' 'No' 'String that holds the html body' '&lt;html&gt;Content&lt;/html&gt;' %}
  {% parameter 'text/plain' 'No' 'String that holds the text body' 'Content' %}
@@ -274,7 +274,7 @@ Google Analytics
 *API App Name - `ganalytics`*
 
 
-{% parameters clicktrack %}
+{% parameters ganalytics %}
  {% parameter 'name' 'Yes' 'ganalytics' 'The app for which to set or retrieve settings.' %}
  {% parameter 'utm_source' 'No' 'Name of the referrer source' 'Transactional Email' %}
  {% parameter 'utm_medium' 'No' 'Name of the marketing medium' 'email' %}
@@ -284,7 +284,7 @@ Google Analytics
 {% endparameters %}
 
 
-{% apiexample googleanalytics POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
+{% apiexample ganalytics POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=ganalytics&utm_source=Transactional Email&utm_medium=email&utm_content=Reset Your Password&utm_campaign=Redesigned Transactional Messaging %}
   {% response json %}
 {
   "message": "success"
@@ -323,7 +323,7 @@ SPAM Filter Checker
 *API App Name - `spamcheck`*
 
 
-{% parameters dkim %}
+{% parameters spamcheck %}
  {% parameter 'name' 'Yes' 'spamcheck' 'The app for which to set or retrieve settings.' %}
  {% parameter 'maxscore' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
  {% parameter 'url' 'Yes' 'URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam' 'https://www.example.com/spamcheck.php' %}
@@ -353,7 +353,7 @@ Subscription Tracking
 *API App Name - `subscriptiontrack`*
 
 
-{% parameters domainkeys %}
+{% parameters subscriptiontrack %}
  {% parameter 'name' 'Yes' 'subscriptiontrack' 'The app for which to set or retrieve settings.' %}
  {% parameter 'text/html' 'No' 'String for the HTML e-mail body' 'If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;' %}
  {% parameter 'text/plain' 'No' 'String for the plain text e-mail body' 'If you would like to unsubscribe and stop receiving these emails click here: &lt;% %&gt;.' %}
@@ -386,14 +386,14 @@ SendGrid for New Relic
 *API App Name - `newrelic`*
 
 
-{% parameters template %}
+{% parameters newrelic %}
  {% parameter 'name' 'Yes' 'newrelic' 'The app for which to set or retrieve settings.' %}
  {% parameter 'license_key' 'YES' 'Can be found in New Relic Settings page' %}
  {% parameter 'enable_subusers' 'YES' 'false to disable, true to enable' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
+{% apiexample newrelic POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&license_key=1234567&enable_subusers=true %}
   {% response json %}
 {
   "message": "success"
@@ -414,13 +414,13 @@ Sendwithus
 *API App Name - `sendwithus`*
 
 
-{% parameters eventnotify %}
+{% parameters sendwithus %}
  {% parameter 'name' 'Yes' 'sendwithus' 'The app for which to set or retrieve settings.' %}
  {% parameter 'license_key' 'YES' 'Can be found in Sendwithus Settings page' %}
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=sendwithus&license_key=1234567 %}
+{% apiexample sendwithus POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=sendwithus&license_key=1234567 %}
   {% response json %}
 {
   "message": "success"

@@ -25,8 +25,12 @@ address to be added to a pool after your request is made.
 HTTP/1.1 201 OK   
     
 {   
-    "ip":"0.0.0.0",   
-    "pool_name":"example_pool_1"    
+"ip": "000.00.00.0",
+"pools": [
+"test1"
+],
+"start_date": 1409616000,
+"warmup": true
 }   
   {% endv3response %}   
 {% endapiv3example %} 
@@ -44,7 +48,7 @@ HTTP/1.1 200 OK
 
 [
   {
-    "ip":"167.89.21.3",
+    "ip":"000.00.00.0",
     "pools":["new_test5"],
     "warmup":true,
     "start_date":1409616000
@@ -65,9 +69,15 @@ See which pools an IP address belongs to.
 HTTP/1.1 200 OK		
 		
 {		
-  "ip":"167.89.21.3",		
-  "pools":["example_pool_1"],		
-  "warmup":false		
+    "ips": [
+        {
+            "ip": "000.00.00.0",
+            "start_date": 1409616000,
+            "warmup": true
+        }
+    ],
+    "pool_name": "test1"
+  
 }		
   {% endv3response %}		
 {% endapiv3example %}

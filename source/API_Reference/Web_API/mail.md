@@ -129,7 +129,7 @@ Send to one email recipient
 {% endanchor %}
 
 {% codeblock lang:bash %}
-$ curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
+curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -137,7 +137,7 @@ Send to multiple email recipients
 {% endanchor %}
 
 {% codeblock lang:bash %}
-$ curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
+curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=destination2@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -145,11 +145,11 @@ Send a test with attachment
 {% endanchor %}
 
 {% codeblock lang:bash %}
-$ curl https://api.sendgrid.com/api/mail.send.json \
+curl https://api.sendgrid.com/api/mail.send.json \
 -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
 -F text="testing text body" --form-string html="<strong>testing html body</strong>" \
 -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \
--F files[attachment.gz]=@f.php.gz https://api.sendgrid.com/api/mail.send.json
+-F files\[attachment.gz\]=@f.php.gz
 {% endcodeblock %}
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
@@ -159,11 +159,11 @@ Send a test specifying the file content type by appending ';type=<mime type>' to
 {% endanchor %}
 
 {% codeblock lang:bash %}
-$ curl https://api.sendgrid.com/api/mail.send.json \
+curl https://api.sendgrid.com/api/mail.send.json \
 -F to=recipient@domain.com -F toname=test -F subject="Example Subject" \
 -F text="testing text body" --form-string html="<strong>testing html body</strong>" \
 -F from=test@yourdomain.com -F api_user=your_sendgrid_username -F api_key=your_sendgrid_password \
--F files[attachment.pdf]=@attachment.pdf;type=application/pdf
+-F files\[attachment.pdf\]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
 {% anchor h3 %}
