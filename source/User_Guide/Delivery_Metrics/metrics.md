@@ -16,7 +16,7 @@ adding the new beta statistics.
 {% endinfo %}
 
 {% info %}
- For a detailed list of common error messages, please visit our <a href="{{root_url}}/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
+ For a detailed list of common error messages, please visit our <a href="{{root_url}}/User_Guide/Delivery_Metrics/email_error_messages.html">Email Error Messages</a> page.
 {% endinfo %}
 
 {% anchor h2 %}

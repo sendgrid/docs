@@ -8,7 +8,7 @@ navigation:
 
 Categories can help organize your email analytics by enabling you to "tag" emails by type.
 
-Just as you can view the statistics on all your activity under [Statistics]({{root_url}}/Delivery_Metrics/index.html), you can go a step further and view the statistics broken down to a particular category.
+Just as you can view the statistics on all your activity under [Statistics]({{root_url}}/User_Guide/Delivery_Metrics/index.html), you can go a step further and view the statistics broken down to a particular category.
 
 The events that can be associated with category include:
 

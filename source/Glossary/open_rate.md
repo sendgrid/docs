@@ -18,4 +18,4 @@ The “Opens” percentage is the total number of times your users opened your e
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
 
-For more information visit our [Delivery Metrics](https://sendgrid.com/docs/Delivery_Metrics/index.html) page.
+For more information visit our [Delivery Metrics]({{root_url}}/User_Guide/Delivery_Metrics/index.html) page.

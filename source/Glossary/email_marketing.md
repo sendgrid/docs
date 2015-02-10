@@ -27,7 +27,7 @@ SendGrid can help you achieve your email marketing goals with our [Marketing Ema
 * [Drag and drop editor]({{root_url}}/VidGrid/Marketing_Emails/Design/drag_and_drop.html)
 * [Ability to use your own HTML]({{root_url}}/Marketing_Emails/create_manage.html)
 * [Scheduled email campaign delivery]({{root_url}}/API_Reference/Marketing_Emails_API/schedule.html)
-* [Powerful analytics]({{root_url}}/Delivery_Metrics/index.html)
+* [Powerful analytics]({{root_url}}/User_Guide/Delivery_Metrics/index.html)
 * [A/B testing]({{root_url}}/API_Reference/Marketing_Emails_API/variations.html)
 * [Simple list management]({{root_url}}/Marketing_Emails/recipients.html)
 

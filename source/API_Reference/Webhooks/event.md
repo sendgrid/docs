@@ -277,7 +277,7 @@ The resulting webhook call
 Categories 
 {% endanchor %}
 
-If [categories]({{root_url}}/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
+If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% codeblock lang:json %}
 [
