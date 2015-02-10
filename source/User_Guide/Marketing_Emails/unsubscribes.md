@@ -16,4 +16,4 @@ To add the exported unsubscribe list to a different recipient list, select “Ma
 
 To export the unsubscribes from all of your different lists by selecting the “Download as CSV from all lists” option under “Manage Unsubscribes.”
 
-See Also: [Transactional Email Unsubscribes]({{root_url}}/Transactional_Email/unsubscribes.html)
+See Also: [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
