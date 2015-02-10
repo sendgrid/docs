@@ -12,5 +12,5 @@ If you are sending email through SendGrid and have the [Subscription Tracking ap
 
 The [Subscription Tracking app]({{root_url}}/User_Guide/Apps/subscription_tracking.html) also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
 
-See Also: See Also: [Marketing Email Unsubscribes]({{root_url}}/Marketing_Emails/unsubscribes.html)
+See Also: See Also: [Marketing Email Unsubscribes]({{root_url}}/User_Guide/Marketing_Emails/unsubscribes.html)
 
