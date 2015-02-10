@@ -17,7 +17,7 @@ Deploying a Ruby App With SendGrid and Engine Yard
 Create/Modify Your Code for Engine Yard
 {% endanchor %}
 
-If you are using Ruby without a framework, please utilize [these instructions](https://sendgrid.com/docs/Code_Examples/ruby.html).
+If you are using Ruby without a framework, please utilize [these instructions](https://sendgrid.com/docs/Integrate/Code_Examples/ruby.html).
 
 For email sending only, you can [utilize Action Mailer](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html), or for more advanced functionality, you can use this [Ruby gem](https://github.com/stephenb/sendgrid).
 
