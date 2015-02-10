@@ -11,7 +11,7 @@ seo:
 ---
 
 {% info %}
-In order to track opens, you must have the [Open Tracking app]({{root_url}}/Apps/open_tracking.html) enabled.
+In order to track opens, you must have the [Open Tracking app]({{root_url}}/User_Guide/Apps/open_tracking.html) enabled.
 {% endinfo %}
 
 
