@@ -13,4 +13,4 @@ navigation:
 
 ### Advanced Suppression Manager
 
-ASM allows SendGrid customers to set up suppression groups that establish email types for their recipients (e.g. social notifications, daily digests, and alerts).  For SendGrid customers, this will create opportunity for improved engagement and sending reputation. Ron shows you how to access, create suppression groups, and where you can review these events.
+[ASM]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) allows SendGrid customers to set up suppression groups that establish email types for their recipients (e.g. social notifications, daily digests, and alerts).  For SendGrid customers, this will create opportunity for improved engagement and sending reputation. Ron shows you how to access, create suppression groups, and where you can review these events.
