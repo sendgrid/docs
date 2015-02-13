@@ -19,10 +19,10 @@ SendGrid can parse the attachments and contents of incoming emails. Application 
 The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
 
 {% info %}
-If you don't want email messages to be retried in case of an error in delivery, please respond with a 200 status to the POST request.
+If you don't want email messages to be retried in case of an error in delivery, please respond with a 2xx status to the POST request.
 {% endinfo %}
 
-In order to avoid returning an error your link is required to return a 200 HTTP code when the email is received. This lets our system know that your link has received the email response. It is then removed from our send queue. If we do **not** get a valid 200 HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.
+In order to avoid returning an error your link is required to return a 2xx HTTP code when the email is received. This lets our system know that your link has received the email response. It is then removed from our send queue. If we do **not** get a valid 2xx HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.
 
 {% anchor h2 %}
 Setup
