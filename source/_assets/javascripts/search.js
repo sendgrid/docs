@@ -109,39 +109,47 @@ function search(query) {
         <br/></div>')
       });
     })
+        .fail(function(){
+            $('div#kb-results').empty();
+            $('div#kb-results').append('<h2><div class="alert alert-danger">Knowledge Base Search Failed! Please try again.</div></h2>');
+        })
+
+        .always(function(){
+            $('#kb-indicator').hide();
+        });
+
 
     $.ajax({
-      url: "https://sendgrid.com/blog/?q=" + query,
-      dataType: "xml",
-      success: function (data) {
-        var $xml = $(data);
-        var items = [];
+        url: "https://sendgrid.com/blog/?q=" + query,
+        dataType: "xml"
+    })
+        .done(function (data) {
+            var $xml = $(data);
+            var items = [];
 
-        var articles = $xml.find("item");
-        if(articles.length == 0) {
-          $('div#blog-results').append('<h2>No Blog Found</h2>');
-          $('#blog-tab-badge').text('0');
-        } else {
-          $('#blog-tab-badge').text(articles.length);
-        }
-        $.each(articles, function (i) {
-          if (i === 5) return false;
-          var $this = $(this);
-          items.push('<div class="result"><p><a class="title" href="' + $this.find("link").text() + '">' +
-          $this.find("title").text() + '</a><br/><a href="' +
-          $this.find("link").text() + '"\><small>' + $this.find("link").text() + '</small></a><br/>' +
-          $this.find("description").text() + '</p><br/></div>');
+            var articles = $xml.find("item");
+            if(articles.length == 0) {
+              $('div#blog-results').append('<h2>No Blog Found</h2>');
+              $('#blog-tab-badge').text('0');
+            } else {
+              $('#blog-tab-badge').text(articles.length);
+            }
+            $.each(articles, function (i) {
+              if (i === 5) return false;
+              var $this = $(this);
+              items.push('<div class="result"><p><a class="title" href="' + $this.find("link").text() + '">' +
+              $this.find("title").text() + '</a><br/><a href="' +
+              $this.find("link").text() + '"\><small>' + $this.find("link").text() + '</small></a><br/>' +
+              $this.find("description").text() + '</p><br/></div>');
+            })
+            $("#blog-results").html(items.join(''));
+          })
+        .fail(function(){
+            $('div#blog-results').empty();
+            $('div#blog-results').append('<h2><div class="alert alert-danger">Blog Search Failed! Please try again.</div></h2>');
         })
-        $("#blog-results").html(items.join(''));
-      }
-    })
 
-    .fail(function(){
-      $('div#kb-results').empty();
-      $('div#kb-results').append('<h2><div class="alert alert-danger">Knowledge Base Search Failed! Please try again.</div></h2>');
-    })
-    
-    .always(function(){
-      $('#kb-indicator').hide();
-    });
+        .always(function(){
+            $('#blog-indicator').hide();
+        });
 }
