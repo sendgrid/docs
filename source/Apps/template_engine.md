@@ -10,7 +10,7 @@ navigation:
 This App is only available to [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing)
 {% endinfo %}
 
-This app is our new [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), that supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html). 
+Our [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html). 
 
 This app seperates email templates and design from sending, allowing templates to be worked on through the SendGrid UI and then populated during mail sending.
 
@@ -18,7 +18,11 @@ This app seperates email templates and design from sending, allowing templates t
 There is currently a limit of 100 Templates and 100 Versions that may be created per account. _Please reach out to support if you reach into the limit._
 {% endinfo %}
 
-This app is differs from our other apps, and may be found in a [different location](https://sendgrid.com/templates).
+This app is not in the same location as our other Apps, you will find it from the dashboard. Just click [Template Engine](https://sendgrid.com/templates) and you will be taken there.
+
+{% info %}
+Templates created in Template Engine are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
+{% endinfo %}
 
 More documentation may be found with the [Template Engine API Reference]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html).
 
