@@ -24,6 +24,6 @@ ESPs like SendGrid also provide expertise on increasing your [email deliverabili
 
 * [IP Whitelabeling]({{root_url}}/Glossary/ip_whitelabeling.html)
 * [Dedicated IPs]({{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html)
-* [IP warming]({{root_url}}/User_Guide/Setting_Uo_Your_Server/warming_up_ips.html)
+* [IP warming]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up_ips.html)
 
 An ESP may provide email services via a user interface (UI), or may also be an [SMTP provider]({{root_url}}/Glossary/smtp_provider.html).  SendGrid provides both services.

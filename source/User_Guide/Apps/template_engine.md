@@ -10,7 +10,7 @@ navigation:
 This App is only available to [Silver accounts and higher](https://sendgrid.com/transactional-email/pricing)
 {% endinfo %}
 
-Our [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/Apps/email_templates.html).
+Our [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html) supports multiple templates, versioning and more. Previously, we had a Template App, now called the [Legacy Template App]({{root_url}}/User_Guide/Apps/email_templates.html).
 
 This app seperates email templates and design from sending, allowing templates to be worked on through the SendGrid UI and then populated during mail sending.
 
