@@ -1,0 +1,20 @@
+---
+seo:
+  title: 7 Bit Encoding
+  description:
+  keywords:
+title: 7 Bit Encoding
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
+ASCII ( i/ˈæski/ ASS-kee), abbreviated from American Standard Code for Information Interchange, is a character-encoding
+scheme. Originally based on the English alphabet, it encodes 128 specified characters into 7-bit binary integers as shown
+by the ASCII chart on the right.
+
+ASCII codes represent text in computers, communications equipment, and other devices that use text. Most modern
+character-encoding schemes are based on ASCII, though they support many additional characters.
+
+Read more here
