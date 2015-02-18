@@ -48,6 +48,12 @@ Edit an existing Marketing Email.
 
 
 {% parameters edit %}
+ {% parameter 'identity' 'Yes' 'Must be an existing Identity' 'The Identity (Sender Address) that will be used for the Marketing Email being created.' %}
+ {% parameter 'name' 'Yes' 'None' 'The name that will be used for the Marketing Email.' %}
+ {% parameter 'newname' 'No' 'None' 'The new name that will be used for the Marketing Email.' %}
+ {% parameter 'subject' 'Yes' 'None' 'The subject that will be used for the Marketing Email.' %}
+ {% parameter 'text' 'Yes' 'None' 'The text portion of the Marketing Email.' %}
+ {% parameter 'html' 'Yes' 'None' 'The html portion of the Marketing Email.' %}
 {% endparameters %}
 
 
@@ -124,7 +130,7 @@ Retrieve a list of all existing Marketing Email.
 {% endparameters %}
 
 
-{% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/list name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
   {

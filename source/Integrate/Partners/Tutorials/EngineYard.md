@@ -17,11 +17,11 @@ Deploying a Ruby App With SendGrid and Engine Yard
 Create/Modify Your Code for Engine Yard
 {% endanchor %}
 
-If you are using Ruby without a framework, please utilize [these instructions](https://sendgrid.com/docs/Code_Examples/ruby.html).
+If you are using Ruby without a framework, please utilize [these instructions]({{root_url}}/Integrate/Code_Examples/ruby.html).
 
-For email sending only, you can [utilize Action Mailer](https://sendgrid.com/docs/Integrate/Frameworks/rubyonrails.html), or for more advanced functionality, you can use this [Ruby gem](https://github.com/stephenb/sendgrid).
+For email sending only, you can [utilize Action Mailer]({{root_url}}/Integrate/Frameworks/rubyonrails.html), or for more advanced functionality, you can use this [Ruby gem](https://github.com/stephenb/sendgrid).
 
-We have a [sample app on Github](https://github.com/sendgrid/sendgrid-engine-yard-ruby) that demonstrates sending an email via SendGrid using ActionMailer and receiving an email using our <a href="https://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse</a> webhook. 
+We have a [sample app on Github](https://github.com/sendgrid/sendgrid-engine-yard-ruby) that demonstrates sending an email via SendGrid using ActionMailer and receiving an email using our <a href="{{root_url}}/API_Reference/Webhooks/parse.html">Inbound Parse</a> webhook.
 
 {% anchor h3 %}
 Create/Configure Your Engine Yard Instance
@@ -66,7 +66,7 @@ config.action_mailer.smtp_settings = {
 {% endcodeblock %}
 </li>
 <li>Now you are ready to start sending emails from your app using SendGrid!</li>
-<li>If you are implementing our <a href="https://github.com/sendgrid/sendgrid-engine-yard-ruby">sample app</a>, which receives emails, you will need to setup your <a href="https://sendgrid.com/docs/API_Reference/Webhooks/parse.html">Inbound Parse settings</a>.</li>
+<li>If you are implementing our <a href="https://github.com/sendgrid/sendgrid-engine-yard-ruby">sample app</a>, which receives emails, you will need to setup your <a href="{{root_url}}/API_Reference/Webhooks/parse.html">Inbound Parse settings</a>.</li>
 </ol>
 
 {% anchor h2 %}

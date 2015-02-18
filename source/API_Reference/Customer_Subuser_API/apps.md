@@ -77,7 +77,7 @@ Activate an app on a subuser.
 {% parameters activate %}     
   {% parameter task Yes 'Must be set to <code>activate<code>' 'Task to activate an app' %}  
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to activate the app on' %}
-  {% parameter name Yes 'Must be a [supported app](https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html)' 'The app to activate' %}
+  {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to activate' %}
 {% endparameters %}
 
 {% apiexample activate POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&task=activate&user=subuser_username %}
@@ -104,7 +104,7 @@ Deactivate an app on a subuser.
 {% parameters deactivate %}   
   {% parameter task Yes 'Must be set to <code>deactivate<code>' 'Deactivate an app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to deactivate the app on' %}
-  {% parameter name Yes 'Must be a [supported app](https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html)' 'The app to deactivate' %}  
+  {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to deactivate' %}
 {% endparameters %}
 
 {% apiexample deactivate POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&task=deactivate&user=subuser_username %}
@@ -135,7 +135,7 @@ Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.ht
 {% parameters setup %}   
   {% parameter task Yes 'Must be set to <code>setup<code>' 'Task to setup an app' %} 
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to setup the app on' %}
-  {% parameter name Yes 'Must be a [supported app](https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html)' 'The app to setup' %}  
+  {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to setup' %}
 {% endparameters %}
 
 {% apiexample setup POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&name=clicktrack&task=setup&enable_text=0 %}
@@ -161,7 +161,7 @@ Get the settings for a subuser's app.
 {% parameters getsettings %} 
   {% parameter task Yes 'Must be set to <code>getsettings</code>' 'Task to retrieve the settings for the app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser get the app settings for' %}
-  {% parameter name Yes 'Must be a [supported app](https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html)' 'The app to retrieve settings of' %}  
+  {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to retrieve settings of' %}
 {% endparameters %}
 
 {% apiexample getsettings POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=clicktrack&task=getsettings&user=subuser_username %}

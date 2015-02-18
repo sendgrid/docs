@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Advanced Stats provide a more in-depth view of your statistics and the actions of the recipients segmented by geography, browser type, and more. You can read more about them in the [Advanced Delivery Metrics]({{root_url}}/Delivery_Metrics/advanced_statistics.html) section.
+Advanced Stats provide a more in-depth view of your statistics and the actions of the recipients segmented by geography, browser type, and more. You can read more about them in the [Advanced Delivery Metrics]({{root_url}}/User_Guide/Delivery_Metrics/advanced_statistics.html) section.
 
 {% anchor h2 %}
 GET

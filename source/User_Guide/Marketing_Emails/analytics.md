@@ -26,7 +26,7 @@ Here, you’ll have access to:
 
 ![Email Marketing Stats Dashboard]({{root_url}}/images/EmailMarketing_Analytics_2.png)
 
-You can learn more about each of these statistics [here]({{root_url}}/Delivery_Metrics/metrics.html).
+You can learn more about each of these statistics [here]({{root_url}}/User_Guide/Delivery_Metrics/metrics.html).
 
 You can also view the statistics for your newsletters by going to [Marketing Email > Manage](https://sendgrid.com/newsletter). Here you’ll see a quick preview of many of the metrics that you would look at to see how your newsletter is performing: sent, opens, unique opens, open rate, total clicks, CTR, opt-out/unsubscribe rate, and spam reports.
 

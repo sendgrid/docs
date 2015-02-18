@@ -16,7 +16,7 @@ navigation:
 SPF and Whitelabel
 {% endanchor %}
 
-As part of the [whitelabel]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html) process you must create a subdomain (such as em.example.com) which is used for [click and open tracking]({{root_url}}/Delivery_Metrics/email_activity.html) as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain.
+As part of the [whitelabel]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html) process you must create a subdomain (such as em.example.com) which is used for [click and open tracking]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain.
 
 If you have an SPF record set for your root domain (i.e. yourdomain.com), you must add {% codeblock %}include:sendgrid.net{% endcodeblock %} before the all mechanism of this record. If you do not have an SPF record for your domain you must create a TXT record with the value:
 

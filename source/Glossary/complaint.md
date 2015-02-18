@@ -14,6 +14,6 @@ A complaint is when an email recipient identifies an email message as spam or ju
 
 A sender’s complaint rate is calculated by dividing the total number of emails received by the ISP by the number of complaints reported by that ISP’s customers.
 
-Higher numbers of complaints can negatively impact your [email deliverability](https://sendgrid.com/docs/Glossary/email_deliverability.html).
+Higher numbers of complaints can negatively impact your [email deliverability]({{root_url}}/Glossary/email_deliverability.html).
 
 To get more information please check out our [Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)

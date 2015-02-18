@@ -49,10 +49,15 @@ content of your message will behave differently.
 If you want only the message's content to be displayed, populate only the token in the template's field.
 If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.
 
+{% anchor h3 %}
+Text or HTML Templates?
+{% endanchor %}
+
 {% info %}
-Make sure that you set values for html and subject data when you post.
-These are used to replace the `<%body%>` and `<%subject%>` fields in your template.
+It is best practice to provide content for both the ```html``` and the ```text``` properties in all of your emails.
 {% endinfo %}
+
+The ```text``` property is substituted into the `<%body%>` of the text template and ```html``` is substituted into the `<%body%>` of the HTML template. If the ```text``` property is present, but not ```html```, then the resulting email will only contain the text version of the template, not the HTML version. The `<%subject%>` property is used for both Text and HTML templates.
 
 * * * * *
 

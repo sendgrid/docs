@@ -8,7 +8,7 @@ navigation:
   show: true
 ---
 
-So, you tried to send a bunch of email, and when you checked your [Event webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [Email Activity]({{root_url}}/Delivery_Metrics/email_activity.html) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're looking at your [Email Reports]({{root_url}}/Delivery_Metrics/email_reports.html), and noticing a lot of addresses in your [Blocks](https://sendgrid.com/blocks), but not many in your Hard Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
+So, you tried to send a bunch of email, and when you checked your [Event webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're looking at your [Email Reports]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html), and noticing a lot of addresses in your [Blocks](https://sendgrid.com/blocks), but not many in your Hard Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
 
 First of all, rest assured that our system is designed with throttling (also known as "deferral" these terms mean the same thing in the email world, and may be used interchangeably) in mind. We continue to attempt to send messages for up to 72 hours until the message is delivered. Normally, it takes between a few minutes to a few hours until the message is delivered.
 

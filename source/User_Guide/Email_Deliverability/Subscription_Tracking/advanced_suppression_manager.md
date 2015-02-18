@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% info %}
-Advanced Suppression Manager (ASM) is in Beta and is not currently available for use with our [Marketing Email]({{root_url}}/Marketing_Emails/index.html) tool.
+Advanced Suppression Manager (ASM) is in Beta and is not currently available for use with our [Marketing Email]({{root_url}}/User_Guide/Marketing_Emails/index.html) tool.
 {% endinfo %}
 
 {% anchor h2 %}

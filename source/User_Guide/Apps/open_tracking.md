@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-The Open Tracking app adds an invisible image at the end of the email which can track e-mail opens. If the email recipient has images enabled on the email client, a request to server for the invisible image is executed and an open event is logged. These Events are logged in your [Statistics]({{root_url}}/Delivery_Metrics/) portal, the [Email Activity]({{root_url}}/Delivery_Metrics/email_activity.html) interface, and are reported by the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html). You can enable this app through the web interface by navigating to ["Apps"](https://sendgrid.com/app) (from top nav when logged in to your account) \> "Show Disabled Apps" \> "Enable" (button seen below)
+The Open Tracking app adds an invisible image at the end of the email which can track e-mail opens. If the email recipient has images enabled on the email client, a request to server for the invisible image is executed and an open event is logged. These Events are logged in your [Statistics]({{root_url}}/User_Guide/Delivery_Metrics/) portal, the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) interface, and are reported by the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html). You can enable this app through the web interface by navigating to ["Apps"](https://sendgrid.com/app) (from top nav when logged in to your account) \> "Show Disabled Apps" \> "Enable" (button seen below)
 
 ![]({{root_url}}/images/open_tracking.png "open-fixed")
 

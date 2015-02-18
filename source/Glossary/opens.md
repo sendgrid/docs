@@ -11,7 +11,7 @@ seo:
 ---
 
 {% info %}
-In order to track opens, you must have the [Open Tracking app]({{root_url}}/Apps/open_tracking.html) enabled.
+In order to track opens, you must have the [Open Tracking app]({{root_url}}/User_Guide/Apps/open_tracking.html) enabled.
 {% endinfo %}
 
 
@@ -19,6 +19,6 @@ SendGrid inserts a small, transparent image into all emails that will be tracked
 
 Not all email clients load images by default. Microsoft’s Outlook, Apple’s Mail.app, Mozilla’s Thunderbird, and Google’s Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and it will never be counted as opened because there is no way to track the event.
 
-In [Delivery Metrics]({{root_url}}/Delivery_Metrics/email_activity.html) the "opens percentage" is the total number of times your users opened your emails, divided by the total number of Delivered messages. 
+In [Delivery Metrics]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) the "opens percentage" is the total number of times your users opened your emails, divided by the total number of Delivered messages.
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages. 
