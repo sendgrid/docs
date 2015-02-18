@@ -120,7 +120,7 @@ function search(query) {
 
 
     $.ajax({
-        url: "https://sendgrid.com/blog/?q=" + query,
+        url: "https://sendgrid.com/blog/feed/?q=" + query,
         dataType: "xml"
     })
         .done(function (data) {
