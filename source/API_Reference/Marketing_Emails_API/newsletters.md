@@ -130,7 +130,7 @@ Retrieve a list of all existing Marketing Email.
 {% endparameters %}
 
 
-{% apiexample list POST https://api.sendgrid.com/api/newsletter/list &api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
+{% apiexample list POST https://api.sendgrid.com/api/newsletter/list name=SendGrid_Test&api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [
   {
