@@ -11,11 +11,11 @@ seo:
 ---
 
 {% info %}
-In order to track clicks, you must have the [Click Tracking App]({{root_url}}/Apps/click_tracking.html) enabled.
+In order to track clicks, you must have the [Click Tracking App]({{root_url}}/User_Guide/Apps/click_tracking.html) enabled.
 {% endinfo %}
 
 SendGrid can replace the links in your email templates with a custom link that when clicked, will redirect your customers to the original link from your template. When the user clicks, SendGrid will record the click event.
 
-In [Delivery Metrics]({{root_url}}/Delivery_Metrics/email_activity.html), “clicks percentage" is the total number of times your users have clicked on the various links within your emails, divided by the total number of Delivered messages. The “Unique clicks” percentage is the number of unique individuals that have clicked the links in your emails, divided by the total number of delivered messages.
+In [Delivery Metrics]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html), “clicks percentage" is the total number of times your users have clicked on the various links within your emails, divided by the total number of Delivered messages. The “Unique clicks” percentage is the number of unique individuals that have clicked the links in your emails, divided by the total number of delivered messages.
  
 Users clicking a SendGrid Unsubscribe link will not count as a Click. However, if you use a third-party unsubscribe link, it will be tracked as a click.

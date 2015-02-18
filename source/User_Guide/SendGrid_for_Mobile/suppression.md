@@ -18,7 +18,7 @@ navigation:
 	</a>
 </p>
 
-The Suppression Lists section will allow you to view and modify your account’s [suppression lists]({{root_url}}/Delivery_Metrics/email_reports.html).
+The Suppression Lists section will allow you to view and modify your account’s [suppression lists]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html).
 
 Depending on the list you're viewing, you can tap on an address to get more information (for instance, the bounce reason for addresses listed on the bounce list).  You can also swipe left on an address to delete it off a list.
 

@@ -277,7 +277,7 @@ The resulting webhook call
 Categories 
 {% endanchor %}
 
-If [categories]({{root_url}}/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
+If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% codeblock lang:json %}
 [
@@ -783,4 +783,4 @@ curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgri
 {% anchor h2 %}
 Version Differences 
 {% endanchor %}
-The primary difference between v2 (no longer available) and v3 of the Event Webhook is that Version 3 delivers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Furthermore, v3 provides more data with certain events. The [previous version of the webhook's documentation](https://sendgrid.com/docs/API_Reference/Webhooks/event_deprecated.html) is still provided so you can compare them.
+The primary difference between v2 (no longer available) and v3 of the Event Webhook is that Version 3 delivers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Furthermore, v3 provides more data with certain events. The [previous version of the webhook's documentation]({{root_url}}/API_Reference/Webhooks/event_deprecated.html) is still provided so you can compare them.

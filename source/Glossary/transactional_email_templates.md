@@ -24,7 +24,7 @@ The SendGrid Template Engine allows users to modify transactional email template
 
 The design section of the transactional email template engine allows marketers to easily design a template, without the need for complex coding. Developers can then manage multiple templates created with a RESTful API and integrate them into applications.
 
-To learn more about the SendGrid transactional email templates, you can visit the [technical documentation]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), watch our [video tutorial](https://sendgrid.com/docs/VidGrid/Template_Engine/template_engine.html) or [online demo webcast](http://go.sendgrid.com/Webcast-SendGrid-Template-Engine-Demo_Registration.html), or read the [Template Engine blog post](https://sendgrid.com/blog/sendgrid-transactional-email-template-engine-announcement/).
+To learn more about the SendGrid transactional email templates, you can visit the [technical documentation]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), watch our [video tutorial]({{root_url}}/VidGrid/template_engine.html) or [online demo webcast](http://go.sendgrid.com/Webcast-SendGrid-Template-Engine-Demo_Registration.html), or read the [Template Engine blog post](https://sendgrid.com/blog/sendgrid-transactional-email-template-engine-announcement/).
 
 By using the SendGrid transactional email Template Engine marketers can maintain control of their email design while enjoying the strong [email deliverability]({{root_url}}/Glossary/email_deliverability.html) that SendGrid provides. They can create a vast array of different email templates, all with the confidence of knowing their emails will reach the inbox.
 

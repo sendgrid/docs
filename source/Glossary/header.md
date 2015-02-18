@@ -16,5 +16,5 @@ More information:
 
 * [Managing headers with SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html)
 * [Managing headers with the Web API]({{root_url}}/API_Reference/Web_API/mail.html#-send)
-* [Marketing Email Templates]({{root_url}}/Marketing_Emails/create_manage.html)
-* [Transactional Email Templating]({{root_url}}/Transactional_Email/Template_Engine/index.html)
+* [Marketing Email Templates]({{root_url}}/User_Guide/Marketing_Emails/create_manage.html)
+* [Transactional Email Templating]({{root_url}}/User_Guide/Transactional_Email/Template_Engine/index.html)
