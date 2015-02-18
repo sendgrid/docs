@@ -26,5 +26,5 @@ server for www.sendgrid.com to get a Web page.
 
 For more information:
 
-* [CNAMES]({{root_url}}/Glossary/cnames.html)
+* [CNAMES]({{root_url}}/Glossary/cname.html)
 * The SendGrid [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
