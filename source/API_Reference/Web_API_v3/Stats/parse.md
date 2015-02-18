@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Parse API Stats
+title: Parse Webhook Stats
 weight: 95
 navigation:
   show: true
 ---
 
-Parse API Stats provide statistics on your [Parse API]({{root_url}}/API_Reference/Webhooks/parse.html) usage.
+Parse Webhook Stats provide statistics on your [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) usage.
 
 {% anchor h2 %}
 GET
 {% endanchor %}
 
-Gets statistics for Parse API usage.
+Gets statistics for Parse Webhook usage.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}

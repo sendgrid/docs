@@ -82,7 +82,7 @@ Event POST Example
 
 You can test your endpoint by clicking the "Test Your Integration" button on the setup screen. SendGrid will send a simulated POST of events to your callback url. At this time, our testing tool does not support HTTP basic authentication, so you must disable auth on your app while debugging.
 
-SendGrid expects a 200 HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-200 HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.
+SendGrid expects a 2xx HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-2xx HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.
 
 {% warning %}
 If your email traffic generates a lot of events, the incoming data can easily overload a web server if not configured properly. You can load test your endpoints with [loader.io](http://loader.io) for free. 
@@ -771,7 +771,7 @@ For emails sent through our Marketing Email tool, unsubscribes will look like th
 Troubleshooting 
 {% endanchor %}
 
-Ensure that your web server is returning a 200 response to our servers. Any other response type will result in our server retrying a POST until we receive a 200 response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines.
+Ensure that your web server is returning a 2xx response to our servers. Any other response type will result in our server retrying a POST until we receive a 2xx response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines.
 
 You can use the "Test Your Integration" button on the Event Notifications settings page to send simulated events to your callback URL. You can also send a POST from a shell using cURL. This will give you the full response your server is returning including the HTTP headers.
 
