@@ -13,7 +13,7 @@ Available to Bronze and higher packages or to our free demo accounts.
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. Common uses of this data are to remove unsubscribes, react to spam reports, [determine unengaged recipients](https://sendgrid.com/blog/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
 {% info %}
-If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event API](https://sendgrid.com/blog/leveraging-sendgrids-event-api/). 
+If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event Webhook](https://sendgrid.com/blog/leveraging-sendgrids-event-api/). 
 {% endinfo %}
 
 {% info %}
@@ -29,7 +29,7 @@ To setup the Event Webhook via our web interface, login and go to the [apps page
 The Event Webhook may also be setup by using our [Filter Settings Endpoint]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification).
 
 {% info %}
-We support basic HTTP authentication in our Event API. Those who wish to implement can provide credentials in the post event url field on the app settings page. Below is an example of the post url with authentication included. 
+We support basic HTTP authentication in our Event Webhook. Those who wish to implement can provide credentials in the post event url field on the app settings page. Below is an example of the post url with authentication included. 
 {% endinfo %}
 
 {% codeblock lang:html %}
