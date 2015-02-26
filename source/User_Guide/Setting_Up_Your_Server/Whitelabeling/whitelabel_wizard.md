@@ -50,7 +50,7 @@ The Whitelabel Wizard provides you with your static IP address.
 DNS Records
 {% endanchor %}
 
-The following records are needed for links, SPF, DomainKeys, and DKIM to work correctly.
+The following are the default records that are needed for links, SPF, DomainKeys, and DKIM to work correctly.
 
 <table class="table table-bordered table-striped">
    <tbody>
@@ -82,9 +82,12 @@ The following records are needed for links, SPF, DomainKeys, and DKIM to work co
    </tbody>
 </table>
 
+You can [customize your DKIM records](https://support.sendgrid.com/hc/en-us/articles/204116386) to your domain.
+
 {% info %}
 If you already have an SPF record, you can simply add include:sendgrid.net to this entry. Make sure to add it BEFORE the "all" mechanism as "all" always matches and typically goes at the end of the SPF record.
 {% endinfo %}
+
 **Underscore Problems?**
 
 If your DNS server does not allow underscores in CNAMES you will have problems adding the smtpapi._domainkey CNAME records. If that is the case please create the following TXT records instead:
