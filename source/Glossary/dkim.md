@@ -24,8 +24,9 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-When you utilize [whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228), you have to create DKIM DNS records.
-What it should look like:
+When you utilize [whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228), you have to create DKIM DNS records. You can even [customize your DKIM](https://support.sendgrid.com/hc/en-us/articles/204116386) records. 
+
+What a basic DKIM record should look like:
 ```
 smtpapi._domainkey.yourdomain.com.  |  TXT or CNAME  |  value
 smtpapi._domainkey.subdomain.yourdomain.com.  |  TXT or CNAME  |  value
@@ -36,5 +37,6 @@ CNAME value: dkim.sendgrid.net
 ```
 Additional resources: 
 
+* [Set up custom DKIM](https://support.sendgrid.com/hc/en-us/articles/204116386)
 * [the DKIM.org website](http://www.dkim.org/)
 * [DNS Records and Underscores](https://support.sendgrid.com/hc/en-us/articles/200185218)
