@@ -10,6 +10,10 @@ navigation:
 Using IP Pools with the SMTP API Header
 {% endanchor %}
 
+{% info %}
+IP pools can only be used with whitelabeled IP addresses.
+{% endinfo %}
+
 IP Pools allow you to group your dedicated SendGrid IP addresses
 together. For example, you might have separate pools named
 `transactional` and `marketing`. 
