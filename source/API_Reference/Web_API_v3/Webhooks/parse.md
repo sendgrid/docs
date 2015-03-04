@@ -3,7 +3,7 @@ layout: page
 title: Parse API
 weight: 80
 navigation:
-  show: true
+  show: false
 ---
 
 Parse API Settings API manages the [Parse API]({{root_url}}/API_Reference/Webhooks/parse.html) settings.

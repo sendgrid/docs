@@ -5,7 +5,8 @@ module Jekyll
       @identifier = attributes[0]
       @request_type = attributes[1]
       @url = attributes[2]
-      @data = attributes[3]
+      @data = markup.gsub(attributes[0],"").gsub(attributes[1],"").gsub(attributes[2],"").strip
+
 
       if attributes[4]
         @show_livedoc = attributes[4]
@@ -59,9 +60,13 @@ HTML
       url = Liquid::Template.parse("{{ url }}").render context
       data = Liquid::Template.parse("{{ data }}").render context
 
-      data = Hash[URI.decode_www_form(data)]
-      data = unquote_data(data)
-      data = data.length > 0 ? JSON.pretty_generate(data) : ""
+      if data.include? "="
+        data = Hash[URI.decode_www_form(data)]
+        data = unquote_data(data)
+        data = data.length > 0 ? JSON.pretty_generate(data) : ""
+      else
+        data = data.length > 0 ? JSON.pretty_generate(JSON.parse(data)) : ""
+      end
 
       if data.length > 0
         data_block = "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
