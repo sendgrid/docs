@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Unsubscribe Manager
-title: Unsubscribe Manager
+  title: Advanced Suppression Manager
+title: Advanced Suppression Manager
 weight: 0
 layout: page
 navigation:
@@ -21,7 +21,7 @@ is still in your contact database or you can send this contact's email via the A
 
 For example, if you had an outdated email list and sent an email to that list, but a user on that list had previously unsubscribed from that type of email from you, they would not get the email because the email
 would never leave SendGrid. It would be suppressed from being sent. A contact's emails will only be suppressed if they unsubscribe from that sender's emails, unsubscribing from one sender's list will have no effect
-on unsubscribe lists owned by other senders.
+on suppression lists owned by other senders.
 
 {% anchor h2 %}
 Overview
@@ -39,6 +39,6 @@ All of your groups will be visible on the Email Preferences page, along
 with the descriptions.
 {% endinfo %}
 
-And of course there's [Unsubscribe Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/index.html) for managing your groups and unsubscribes.
+And of course there's [Advanced Suppression Manager API endpoints]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) for managing your groups and suppressions.
 
 

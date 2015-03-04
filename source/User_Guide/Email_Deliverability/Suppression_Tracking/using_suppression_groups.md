@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Using Unsubscribe Groups
-title: Using Unsubscribe Groups
+  title: Using Suppression Groups
+title: Using Suppression Groups
 weight: 0
 layout: page
 navigation:
@@ -9,19 +9,19 @@ navigation:
 ---
 
 {% anchor h2 %}
-Unsubscribe Groups and Categories
+Suppression Groups and Categories
 {% endanchor %}
 
-While both unsubscribe groups and [categories]({{root_url}}/API_Reference/SMTP_API/categories.html) can represent types
+While both suppression groups and [categories]({{root_url}}/API_Reference/SMTP_API/categories.html) can represent types
 of email, they are used for different but complementary purposes. Categories are used to organize emails together for
-analytics, while unsubscribe groups organize emails together for the purpose of allowing recipients to opt out of receiving
+analytics, while suppression groups organize emails together for the purpose of allowing recipients to opt out of receiving
 those types of emails.
 
 {% anchor h2 %}
 Uploading a CSV
 {% endanchor %}
 
-You can upload a CSV of email addresses that you would like to add to a unsubscribe group.
+You can upload a CSV of email addresses that you would like to add to a suppression group.
 
 {% warning %}
 This CSV should be a list of emails, this is not names, addresses, or other information.  This is also not emails formatted like so: `FName LName <email@example.com>`
