@@ -1,7 +1,7 @@
 ---
 seo:
   title: Defining Unsubscribe Groups
-title: Defining ASM Groups
+title: Defining Unsubscribe Groups
 weight: 0
 layout: page
 navigation:
@@ -12,18 +12,18 @@ navigation:
 To Create ASM Groups
 {% endanchor %}
 
-After logging in to your SendGrid account, click on the beta invitation banner at the top of the page. Once in the beta SendGrid Customer Portal, click on the clipboard icon on the left navigation bar and select "Advanced Suppression Manager."
+After logging in to your SendGrid account, click on the beta invitation banner at the top of the page. Once in the beta SendGrid Customer Portal, click on the clipboard icon on the left navigation bar and select "Advanced unsubscribe Manager."
 
-From here you can begin creating suppression groups to define the types of emails for which you would like your recipients to be able to opt out.
+From here you can begin creating unsubscribe groups to define the types of emails for which you would like your recipients to be able to opt out.
 
-You can also create ASM groups via the [API V3 > ASM Endpoint]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-POST).
+You can also create ASM groups via the [API V3 > ASM Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
 
 
 {% anchor h2 %}
 Active and Inactive Groups
 {% endanchor %}
 
-A group is active if email has been sent using that suppression group in the last 60 days. Active groups may not be deleted.
+A group is active if email has been sent using that unsubscribe group in the last 60 days. Active groups may not be deleted.
 
 
 {% anchor h2 %}
@@ -46,5 +46,5 @@ You may only specify one group per send, and you should wait one minute after cr
 You can find your group IDs by looking at the Group ID column in the Advanced Suppression Manager UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-GET) of the groups resource.
 
 {% info %}
-You can create ASM groups via the [API V3 > ASM Endpoint]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-POST).
+You can create ASM groups via the [API V3 > ASM Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
 {% endinfo %}

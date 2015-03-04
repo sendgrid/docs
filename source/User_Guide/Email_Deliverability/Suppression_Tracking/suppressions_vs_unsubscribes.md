@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Group Unsubscribes vs Global Unsubscribes
-title: Group Suppressions vs Global Unsubscribes
+  title: Group Suppressions vs Global Suppressions
+title: Group Suppressions vs Global Suppressions
 weight: 0
 layout: page
 navigation:
