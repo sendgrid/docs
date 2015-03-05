@@ -26,7 +26,7 @@ When using this call, you must define all emails & domains here. Using this call
 {% parameters addresswhitelist %} 
   
   {% parameter name yes 'addresswhitelist' 'The name of the app for which to apply settings.' %}  
-  {% parameter list no 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
+  {% parameter list yes 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
 
 {% apiexample addresswhitelist POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
