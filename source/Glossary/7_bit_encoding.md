@@ -1,7 +1,7 @@
 ---
 seo:
-  title: 7 Bit Encoding
-  description:
+  title: ASCII Encoding
+  description: 7 bit encoding is the same as ASCII encoding, which is used for storing letters in binary.
   keywords:
 title: 7 Bit Encoding
 weight: 0
@@ -10,11 +10,11 @@ navigation:
   show: true
 ---
 
-ASCII ( i/ˈæski/ ASS-kee), abbreviated from American Standard Code for Information Interchange, is a character-encoding
-scheme. Originally based on the English alphabet, it encodes 128 specified characters into 7-bit binary integers as shown
-by the ASCII chart on the right.
+7 bit encoding is a reference to the ASCII character set, which is a set of 128 English alphabet characters and is used to store letters in binary. The set includes
+all the English lowercase letters, uppercase letters, and numbers from 0 to 9.
 
-ASCII codes represent text in computers, communications equipment, and other devices that use text. Most modern
-character-encoding schemes are based on ASCII, though they support many additional characters.
+The reason for the characters to be encoded to 7-bits, is because early computers handled data in bytes, or 8 bits. The extra bit was originally reserved for error checking.
 
-Read more here
+In this encoding we get 7 digit representations in 0s and 1s for each of the English letters we are trying to transmit.
+
+SendGrid requires 7 bit encoding in our [SMTPAPI categories header]({{root_url}}/API_Reference/SMTP_API/categories.html).
