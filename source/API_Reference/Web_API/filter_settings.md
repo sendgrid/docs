@@ -303,22 +303,6 @@ At least one of the optional parameters needs to be passed to avoid a "missing p
 * * * * *
 
 {% anchor h2 %}
-Gravatar 
-{% endanchor %}
-
-*API App Name - `gravatar`*
-
-* * * * *
-
-{% anchor h2 %}
-Open Tracking 
-{% endanchor %}
-
-*API App Name - `opentrack`*
-
-* * * * *
-
-{% anchor h2 %}
 SPAM Filter Checker 
 {% endanchor %}
 
