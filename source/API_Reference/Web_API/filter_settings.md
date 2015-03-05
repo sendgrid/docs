@@ -26,7 +26,7 @@ When using this call, you must define all emails & domains here. Using this call
 {% parameters addresswhitelist %} 
   
   {% parameter name yes 'addresswhitelist' 'The name of the app for which to apply settings.' %}  
-  {% parameter list no 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
+  {% parameter list yes 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
 
 {% apiexample addresswhitelist POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=addresswhitelist&list[]=support@example.com&list[]=sales@example.com %}
@@ -243,6 +243,7 @@ Footer
 
 *API App Name - `footer`*
 
+You must provide either text/html or text/plain, or both, to avoid receiving a "missing parameters" error.
 
 {% parameters footer %}
  {% parameter 'name' 'Yes' 'footer' 'The app for which to set or retrieve settings.' %}
@@ -273,6 +274,7 @@ Google Analytics
 
 *API App Name - `ganalytics`*
 
+At least one of the optional parameters needs to be passed to avoid a "missing parameters" error.
 
 {% parameters ganalytics %}
  {% parameter 'name' 'Yes' 'ganalytics' 'The app for which to set or retrieve settings.' %}
@@ -301,22 +303,6 @@ Google Analytics
 * * * * *
 
 {% anchor h2 %}
-Gravatar 
-{% endanchor %}
-
-*API App Name - `gravatar`*
-
-* * * * *
-
-{% anchor h2 %}
-Open Tracking 
-{% endanchor %}
-
-*API App Name - `opentrack`*
-
-* * * * *
-
-{% anchor h2 %}
 SPAM Filter Checker 
 {% endanchor %}
 
@@ -325,12 +311,12 @@ SPAM Filter Checker
 
 {% parameters spamcheck %}
  {% parameter 'name' 'Yes' 'spamcheck' 'The app for which to set or retrieve settings.' %}
- {% parameter 'maxscore' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
+ {% parameter 'max_score' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
  {% parameter 'url' 'Yes' 'URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam' 'https://www.example.com/spamcheck.php' %}
 {% endparameters %}
 
 
-{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
+{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&max_score=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
   "message": "success"
@@ -352,6 +338,7 @@ Subscription Tracking
 
 *API App Name - `subscriptiontrack`*
 
+You must pass at least one of the optional params in order to avoid the "missing parameter" error.
 
 {% parameters subscriptiontrack %}
  {% parameter 'name' 'Yes' 'subscriptiontrack' 'The app for which to set or retrieve settings.' %}
@@ -388,8 +375,8 @@ SendGrid for New Relic
 
 {% parameters newrelic %}
  {% parameter 'name' 'Yes' 'newrelic' 'The app for which to set or retrieve settings.' %}
- {% parameter 'license_key' 'YES' 'Can be found in New Relic Settings page' %}
- {% parameter 'enable_subusers' 'YES' 'false to disable, true to enable' %}
+ {% parameter 'license_key' 'Yes' 'Can be found in New Relic Settings page' %}
+ {% parameter 'enable_subusers' 'Yes' 'false to disable, true to enable' %}
 {% endparameters %}
 
 
@@ -416,7 +403,7 @@ Sendwithus
 
 {% parameters sendwithus %}
  {% parameter 'name' 'Yes' 'sendwithus' 'The app for which to set or retrieve settings.' %}
- {% parameter 'license_key' 'YES' 'Can be found in Sendwithus Settings page' %}
+ {% parameter 'license_key' 'Yes' 'Can be found in Sendwithus Settings page' %}
 {% endparameters %}
 
 
