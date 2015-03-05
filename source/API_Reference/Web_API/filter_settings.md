@@ -403,7 +403,7 @@ Sendwithus
 
 {% parameters sendwithus %}
  {% parameter 'name' 'Yes' 'sendwithus' 'The app for which to set or retrieve settings.' %}
- {% parameter 'license_key' 'YES' 'Can be found in Sendwithus Settings page' %}
+ {% parameter 'license_key' 'Yes' 'Can be found in Sendwithus Settings page' %}
 {% endparameters %}
 
 
