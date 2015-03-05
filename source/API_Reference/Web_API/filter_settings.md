@@ -274,6 +274,7 @@ Google Analytics
 
 *API App Name - `ganalytics`*
 
+At least one of the optional parameters needs to be passed to avoid a "missing parameters" error.
 
 {% parameters ganalytics %}
  {% parameter 'name' 'Yes' 'ganalytics' 'The app for which to set or retrieve settings.' %}
