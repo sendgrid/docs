@@ -311,12 +311,12 @@ SPAM Filter Checker
 
 {% parameters spamcheck %}
  {% parameter 'name' 'Yes' 'spamcheck' 'The app for which to set or retrieve settings.' %}
- {% parameter 'maxscore' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
+ {% parameter 'max_score' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
  {% parameter 'url' 'Yes' 'URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam' 'https://www.example.com/spamcheck.php' %}
 {% endparameters %}
 
 
-{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&maxscore=1.2&url=https://www.example.com/spamcheck.php %}
+{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&max_score=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
   "message": "success"
