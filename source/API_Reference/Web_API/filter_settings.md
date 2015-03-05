@@ -243,6 +243,7 @@ Footer
 
 *API App Name - `footer`*
 
+You must provide either text/html or text/plain, or both, to avoid receiving a "missing parameters" error.
 
 {% parameters footer %}
  {% parameter 'name' 'Yes' 'footer' 'The app for which to set or retrieve settings.' %}
