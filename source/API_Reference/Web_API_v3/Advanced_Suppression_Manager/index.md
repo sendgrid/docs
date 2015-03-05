@@ -14,7 +14,7 @@ Guide]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.
 check out the following API resources:
 
 -[Suppression
-Group]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html) This resource provides an overview on how to use groups which are individual types of email you would like your users to be able to unsubscribe from.
+Group]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html) This resource provides an overview on how to use groups, which are individual types of email, that you would like your users suppressed from.
 
 -[Suppressions]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html) This resource will show you how to use supressions which are email addresses that can be added to groups to prevent certain types of emails from being delivered to those addresses
 

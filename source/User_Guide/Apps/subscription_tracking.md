@@ -14,7 +14,7 @@ You can customize the text attached to emails and customize the landing page. Th
 
 {% codeblock %} sendgrid.net/submgmt/[encryptedString] {% endcodeblock %}
 
-If you would like to customize your links, create a CNAME that points to sendgrid.net and fill out the Whitelabel setting (available for Silver accounts and higher) in your account.
+If you would like to customize your links, create a CNAME that points to sendgrid.net and fill out the Whitelabel setting (available for Bronze accounts and higher) in your account.
 
 {% anchor h2 %}
 API Settings 

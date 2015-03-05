@@ -126,21 +126,25 @@ function search(query) {
         .done(function (data) {
             var $xml = $(data);
             var items = [];
-
-            var articles = $xml.find("item");
+            var topSize = 10;
+            //wp will return all the blog posts, only get 6 of them
+            var articles = $xml.find("item").slice(0,topSize);
             if(articles.length == 0) {
               $('div#blog-results').append('<h2>No Blog Found</h2>');
               $('#blog-tab-badge').text('0');
             } else {
-              $('#blog-tab-badge').text(articles.length);
+                $('#blog-tab-badge').text(articles.length);
             }
             $.each(articles, function (i) {
-              if (i === 5) return false;
+              //only return the topSize results
+              if (i === topSize) return false;
               var $this = $(this);
+              var blogContent = $this.find("description").text().split(".").slice(0,3).join(".") + ".";
+
               items.push('<div class="result"><p><a class="title" href="' + $this.find("link").text() + '">' +
               $this.find("title").text() + '</a><br/><a href="' +
               $this.find("link").text() + '"\><small>' + $this.find("link").text() + '</small></a><br/>' +
-              $this.find("description").text() + '</p><br/></div>');
+              blogContent + '</p><br/></div>');
             })
             $("#blog-results").html(items.join(''));
           })
