@@ -338,6 +338,7 @@ Subscription Tracking
 
 *API App Name - `subscriptiontrack`*
 
+You must pass at least one of the optional params in order to avoid the "missing parameter" error.
 
 {% parameters subscriptiontrack %}
  {% parameter 'name' 'Yes' 'subscriptiontrack' 'The app for which to set or retrieve settings.' %}
