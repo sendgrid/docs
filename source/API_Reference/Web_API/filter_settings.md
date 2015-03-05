@@ -375,8 +375,8 @@ SendGrid for New Relic
 
 {% parameters newrelic %}
  {% parameter 'name' 'Yes' 'newrelic' 'The app for which to set or retrieve settings.' %}
- {% parameter 'license_key' 'YES' 'Can be found in New Relic Settings page' %}
- {% parameter 'enable_subusers' 'YES' 'false to disable, true to enable' %}
+ {% parameter 'license_key' 'Yes' 'Can be found in New Relic Settings page' %}
+ {% parameter 'enable_subusers' 'Yes' 'false to disable, true to enable' %}
 {% endparameters %}
 
 
