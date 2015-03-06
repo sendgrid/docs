@@ -22,6 +22,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/dkim.html">DKIM</a></li>
             <li><a href="{{root_url}}/Glossary/dmarc.html">DMARC</a></li>
             <li><a href="{{root_url}}/Glossary/domain.html">Domain</a></li>
+            <li><a href="{{root_url}}/Glossary/dns.html">DNS</a></li>
             <li><a href="{{root_url}}/Glossary/imap.html">IMAP</a></li>
             <li><a href="{{root_url}}/Glossary/ip_address.html">IP Address</a></li>
             <li><a href="{{root_url}}/Glossary/ip_warmup.html">IP Warmup</a></li>
@@ -52,6 +53,8 @@ We have organized these by subject, but you can also look at our [alphabetical l
         {% anchor h2 %}Email{% endanchor %}
         <ul>
             <li><a href="{{root_url}}/Glossary/header.html">Header</a></li>
+            <li><a href="{{root_url}}/Glossary/Email_Types/peer_invitations.html">Peer Initiated Invitation Campaign</a></li>
+            <li><a href="{{root_url}}/Glossary/Email_Types/reconfirmation.html">Reconfirmation Campaign</a></li>
         </ul>
     </div>
 </div>
@@ -97,6 +100,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/smtp_server.html">SMTP Server</a></li>
             <li><a href="{{root_url}}/Glossary/smtp_service.html">SMTP Service</a></li>
             <li><a href="{{root_url}}/Glossary/subscriber_list_management.html">Subscriber List Management</a></li>
+            <li><a href="{{root_url}}/Glossary/tls.html">Transport Layer Security</a></li>
             <li><a href="{{root_url}}/Glossary/transactional_email.html">Transactional Email</a></li>
             <li><a href="{{root_url}}/Glossary/transactional_email_templates.html">Transactional Email Templates</a></li>
             <li><a href="{{root_url}}/Glossary/two_factor_authentication.html">Two Factor Authentication</a></li>
@@ -104,6 +108,10 @@ We have organized these by subject, but you can also look at our [alphabetical l
         </ul>
     </div>
     <div class="col-md-4">
-
+        {% anchor h2 %}Other{% endanchor %}
+        <ul>
+          <li><a href="{{root_url}}/Glossary/7_bit_encoding.html">7 bit (ASCII) Encoding</a></li>
+        </ul>
+    
     </div>
 </div>
