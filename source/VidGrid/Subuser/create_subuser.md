@@ -14,6 +14,6 @@ navigation:
 </div>
 
 
-In this video, Anthony walks us through the creation of a subuser account that shares a Whitelable with its Parent account.
+In this video, Anthony walks us through the creation of a subuser account that shares a Whitelabel with its Parent account.
 
 </div>
