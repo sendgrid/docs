@@ -26,7 +26,9 @@ Here you will add recipients to your list. You can choose one of three following
 
 Only CSV files are accepted at this time. A standard file chooser will allow you to select a file on your local machine. After you upload your file, the system will parse it, auto-detect column headers, and display a sample (5 rows) of your list. You can position the "Email" and "Name" columns (required) by dragging and dropping over the suitable column(s). You can also add other columns to the list if needed. You can keep extra columns by simply defining a new column as desired. Any columns with undefined_tag in the column head, will be discarded. An example CSV file might look as follows:
 
-{% codeblock %} name,email "SG Support","support@sendgrid.com" "Sales Team","sales@sendgrid.com" {% endcodeblock %}
+{% codeblock %} name,email
+"SG Support","support@sendgrid.com"
+"Sales Team","sales@sendgrid.com" {% endcodeblock %}
 
 SendGrid supports Unicode (UTF-8), ASCII, and extended ASCII characters. When importing your list into SendGrid, make sure that the characters are all encoded as UTF-8 in order to prevent syntax errors from occurring.
 
