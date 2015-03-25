@@ -83,7 +83,7 @@ $(function() {
         e.preventDefault();
 
         username = $.cookie('username');
-        password = $.cookie('password');
+        password = window.encodeURIComponent($.cookie('password'));
 
         var valid = Livedocs.validateRequired(this);
         if (!valid) return;
