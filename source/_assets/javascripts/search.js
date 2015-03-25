@@ -29,7 +29,7 @@ $(document).ready(function() {
 function search(query) {
   var relativeRoot = $('.nav-link > a')[0].pathname.replace('/index.html','');
   var simulatedSearchUrl = relativeRoot + '/search.html?q=' + encodeURIComponent(query);
-  ga('send', {
+  search_send_ga('send', {
     'hitType': 'pageview',
     'page': simulatedSearchUrl,
     'title': 'Search: ' + query
@@ -156,4 +156,17 @@ function search(query) {
         .always(function(){
             $('#blog-indicator').hide();
         });
+}
+
+function search_send_ga(action, data) {
+	if (search_verify_ga()) {
+		ga(action, data);
+	}
+}
+
+function search_verify_ga() {
+	if (typeof(ga) == "function") {
+		return true
+	}
+	return false;
 }
