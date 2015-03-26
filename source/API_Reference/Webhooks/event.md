@@ -765,7 +765,29 @@ For emails sent through our Marketing Email tool, unsubscribes will look like th
   }
 ]
 {% endcodeblock %}
+{% anchor h2 %}
+IP Pools
+{% endanchor %}
 
+For emails sent with a specified IP Pool, you can view the IP Pool used in the event post for a processed event.
+
+{% codeblock lang:json %}
+[
+  "email": "john.doe@sendgrid.com",
+    "smtp-id": "<14c583da911.2c36.1c804d@ismtpd-073>",
+    "timestamp": 1427409578,
+    "pool": {
+      "name": "new_MY_test",
+      "id": 210
+    },
+    "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
+    "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
+    "category": [
+      "IP Pool Test"
+    ],
+    "event": "processed"
+]
+{% endcodeblock %}
  
 {% anchor h2 %}
 Troubleshooting 
