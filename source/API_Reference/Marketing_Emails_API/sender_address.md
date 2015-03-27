@@ -21,6 +21,10 @@ Create a new Address.
  {% parameter 'email' 'Yes' 'Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)' 'Specify the email address to be used for this Address.' %}
  {% parameter 'replyto' 'No' 'Email address format, complying with [RFC 5322](http://tools.ietf.org/html/rfc5322)' 'Specify an email address to be used in the Reply-To field. If not defined, will default to the *email* parameter.' %}
  {% parameter 'address' 'Yes' 'None' 'Specify the physical address to be used for this Address.' %}
+ {% parameter 'city' 'Yes' 'None' 'Specify the city to be used for this Address.' %}
+ {% parameter 'state' 'Yes' 'None' 'Specify the state to be used for this Address.' %}
+ {% parameter 'zip' 'Yes' 'None' 'Specify the zipcode/postal code to be used for this Address.' %}
+ {% parameter 'country' 'Yes' 'None' 'Specify the country to be used for this Address.' %}
 {% endparameters %}
 
 
