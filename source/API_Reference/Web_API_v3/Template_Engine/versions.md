@@ -19,7 +19,7 @@ To set which version is active, use the [version PATCH]({{root_url}}/API_Referen
 active field to 1.
 
 {% info %}
-Each user can have up to 100 versions across all templates.
+Each user can have up to 300 versions across all templates.
 {% endinfo %}
 
 * * * * *
