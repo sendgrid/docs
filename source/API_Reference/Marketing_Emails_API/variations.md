@@ -191,9 +191,7 @@ Retrieve a list of all Variations attached to a Marketing Email.
 
 {% apiexample list POST https://api.sendgrid.com/api/newsletter/variations/list api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=existing_draft&variation=variation_to_find %}
   {% response json %}
-{
-  "message": "success"
-}
+[{"name": "copy of SUZ5PT"},{"name": "5XZyGo"}]
   {% endresponse %}
   {% response xml %}
 <result>
