@@ -22,7 +22,7 @@ Create a new Variation.
  {% parameter 'variation' 'Yes' 'None' 'The name of the Variation you will be adding.' %}
  {% parameter 'subject' 'Yes' 'None' 'The subject that will be used for the Variation being created.' %}
  {% parameter 'text' 'Yes' 'None' 'The text portion of the Marketing Email Variation being added.' %}
- {% parameter 'html' 'No' 'If the <code>type</code> parameter is set to "html" this parameter is required.' 'The html portion of the Marketing Email Variation being added.' %}
+ {% parameter 'html' 'Yes' 'None' 'The html portion of the Marketing Email Variation being added.' %}
  {% parameter 'type' 'Yes' 'Value must be either "text" or "html".' 'The Variation type, either plain text, or multipart-alternative text and html.' %}
  {% parameter 'identity_name' 'No' 'Must be an existing Marketing Email Identity' 'Identity name that is needed if the Marketing Email name does not already exist. Will be used to create a parent Marketing Email.' %}
 {% endparameters %}
