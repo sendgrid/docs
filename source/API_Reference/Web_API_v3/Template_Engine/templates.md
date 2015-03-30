@@ -11,7 +11,7 @@ The Template Engine API lets you programmatically create and manage
 templates for your transactional email.
 
 {% info %}
-Each user can have up to 100 templates.
+Each user can have up to 300 templates.
 {% endinfo %}
 
 * * * * *
