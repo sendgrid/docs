@@ -8,6 +8,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Whether you are new to the email game or an accomplished vet, you have probably run across the idea of warming up an IP (Internet Protocol) address to improve delivery performance. Since we often find ourselves explaining the ins and outs of the IP warm-up process to current and prospective customers, we figured we would write a post to explain the basics. Below, we ask and answer four basic questions to explore and explain the topic.
 
 {% anchor h2 %}
