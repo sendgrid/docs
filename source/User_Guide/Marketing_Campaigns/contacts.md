@@ -1,0 +1,126 @@
+---
+layout: page
+weight: 70
+title: Contacts
+navigation:
+  show: true
+seo:
+  title: Contacts
+  override: true
+  description:
+---
+
+<iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts](https://sendgrid.com/marketing_campaigns/contacts) page, you can add, upload,
+and delete your contacts.
+
+To add your contacts, just click the "Add List" or "Segment" button and then select your upload method.
+
+![]({{root_url}}/images/lists_5.png "Create a Segment")
+
+{% anchor h2 %}
+Manually Add a Contact
+{% endanchor %}
+
+In order to manually add a single contact straight to your contact database - to either a new or existing list - just click
+the “manual” tab on the upload window. You will then be able to add the information for your contact.
+
+{% anchor h2 %}
+Uploading Contacts
+{% endanchor %}
+
+{% anchor h3 %}
+Prepare Contacts for Upload
+{% endanchor %}
+
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your
+contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or
+Google Spreadsheets. You can also export your contacts from most database systems as a .csv file.
+
+Your CSV should have the contacts you want to upload into the Marketing Campaigns app, as well as their respective custom
+fields. For example: email, first_name, last_name, country, city, age - where “country,” “city,” and “age” are your custom
+fields (see below).
+
+The first row of your CSV must always be a header row which will identify the columns of your contacts. If you include
+custom data, then name your CSV columns (the values in the first row of your CSV) **the same as your custom fields**. Custom
+fields names are case insensitive, meaning that ```Email```, ```EMAIL```,
+and ```email``` are all treated exactly the same. We have provided
+[an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row.
+
+{% info %}
+Important: You must include ```email``` as one of your CSV headers because that is how we
+identify individual contacts. If you do not include the email column, we will not add any information to your contact
+database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will
+automatically fail, but will not cause the entire upload to fail.
+{% endinfo %}
+
+{% anchor h3 %}
+Upload Your Contacts
+{% endanchor %}
+
+You can add contacts to your contact database manually or by uploading the CSV you prepared in a previous step. These
+contacts can be added to a new list or to a list that already exists. If you happen to upload the same contact more than
+once, we will append any new data for fields not already uploaded. We will also update any fields associated with a contact
+that are in your upload file.
+
+{% info %}
+We will never create a duplicate contact in your contact database or add a contact more than
+once to any list or segment.
+{% endinfo %}
+
+To upload, choose a list. By default, we have selected the “No List - All Contacts,” which would upload directly to your
+contact database. If you would like to upload your CSV to a specifically named list, just click “New List” and type the
+name of your list. If you want to upload these contacts to a list that already exists, just select that list name from the dropdown.
+
+![]({{root_url}}/images/contacts_1.png "Upload Contacts")
+
+You will see the progress as your file uploads to SendGrid. This simply shows that we have the information; we will then
+kick off the process of storing and automatically segmenting your contacts if you have already set up segments on your account.
+
+![]({{root_url}}/images/contacts_2.png "Upload Contact Status")
+
+Once the CSV is done processing, you will receive a summary notification email with:
+
+* Total processed contacts
+* Number of new contacts
+* Number of updated contacts
+* Number of errors
+
+If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If
+you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
+
+![]({{root_url}}/images/contacts_3.png "Upload Contact Status Email")
+
+Please note: if you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you
+upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
+
+{% anchor h3 %}
+Viewing a Contact Profile
+{% endanchor %}
+
+To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then
+click the contact’s email address. You will then be able to see the email, date added, date updated, and all custom field
+values that you have assigned to this contact.
+
+![]({{root_url}}/images/contacts_5.png "Contact Profile")
+
+{% anchor h3 %}
+Delete a Specific Contact
+{% endanchor %}
+
+To remove one or more contacts from a list, find the contact and click the "Remove from list" option in the gear icon ![]({{root_url}}/images/terms_5.png "Contact Options") in
+the same row. You will also see an option to delete the contact, which deletes them from your contact database.
+
+![]({{root_url}}/images/contacts_4.png "Delete a contact")
+
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
+    </div>
+
+    <div class="col-md-6 text-right">
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
+    </div>
+</div>
