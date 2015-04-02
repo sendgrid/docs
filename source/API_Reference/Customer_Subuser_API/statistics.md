@@ -113,11 +113,11 @@ Retrieve a list of all the categories used by a subuser.
 
 {% parameters cat %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to pull categories from' %}
- {% parameter list Yes 'The value must be set to <code>1</code>' 'Task to retrieve list of categories' %}
+ {% parameter list Yes 'The value must be set to <code>true</code>' 'Task to retrieve list of categories' %}
 {% endparameters %}
 
 
-{% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&list=1 %}
+{% apiexample cat POST https://api.sendgrid.com/apiv2/customer.stats api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&list=true %}
   {% response json %}
 [
   {
