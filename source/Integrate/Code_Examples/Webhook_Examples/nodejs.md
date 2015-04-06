@@ -27,11 +27,12 @@ URL: http://sendgrid.biz/parse
 {% codeblock lang:javascript %}
 
 var express = require('express');
+var multer  = require('multer');
 var app = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
-  app.use(express.bodyParser());
+  app.use(multer());
 });
 
 app.post('/parse', function (req, res) {
