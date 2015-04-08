@@ -138,7 +138,7 @@ Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.ht
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to setup' %}
 {% endparameters %}
 
-{% apiexample setup POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&name=clicktrack&task=setup&enable_text=0 %}
+{% apiexample setup POST https://api.sendgrid.com/apiv2/customer.apps api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&name=bcc&task=setup&email=test@example.com %}
   {% response json %}
 {
   "message": "success"
