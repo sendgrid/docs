@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-
+ 
 ![]({{root_url}}/images/reputation_1.png "Sender Reputation")
 
 The Reputation score is a score about your email deliverability reputation scored from 0-100 (100 being the best) based on information abour your sending habits, including: 
