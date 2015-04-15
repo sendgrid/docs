@@ -42,6 +42,8 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 }
 {% endcodeblock %}
 
+{% warning %} There are a few cases where unique_args cannot be attached to the Event. Specifically Bounces that are returned via the Return-Path. Please keep this in mind when developing unique_args POST handling. {% endwarning %}
+
 Unique Arguments will also be shown in the [Email Activity tab](https://sendgrid.com/logs/index) of your account.
 
 To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html). An example of this would look like:
