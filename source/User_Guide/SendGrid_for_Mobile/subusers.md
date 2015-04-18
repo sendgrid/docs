@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Subuser Management
-title: SendGrid for iPhone and iPad Subuser Management
+title: Subuser Management
 weight: 500
 layout: page
 navigation:
