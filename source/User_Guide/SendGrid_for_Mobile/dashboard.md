@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Dashboard
-title: SendGrid for iPhone and iPad Dashboard
+title: Dashboard
 weight: 800
 layout: page
 navigation:
