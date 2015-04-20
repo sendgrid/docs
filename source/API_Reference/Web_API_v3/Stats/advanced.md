@@ -241,13 +241,13 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Gets email statistics by email service provider (ESP).
+Gets email statistics by mailbox provider.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
- {% parameter mailbox_providers No 'Array of strings' 'The ESPs to get statistics for, up to 10' %}
+ {% parameter mailbox_providers No 'Array of strings' 'The mailbox providers to get statistics for, up to 10' %}
 {% endparameters %}
 
 {% apiv3example get GET https://api.sendgrid.com/v3/mailbox_providers/stats?start_date=2015-01-01&end_date=2015-01-02 %}
