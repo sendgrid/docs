@@ -316,7 +316,7 @@ SPAM Filter Checker
 {% endparameters %}
 
 
-{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=eventnotify&max_score=1.2&url=https://www.example.com/spamcheck.php %}
+{% apiexample spamcheck POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=spamcheck&max_score=1.2&url=https://www.example.com/spamcheck.php %}
   {% response json %}
 {
   "message": "success"

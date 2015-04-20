@@ -20,3 +20,14 @@ The Reputation score is a score about your email deliverability reputation score
 -	Consistent mailing volume
 
 To achieve the highest reputation possible, we recommend that you have an opt-in process to the email addresses you send to, don’t purchase email lists, and continue to keep your lists clean.
+
+{% anchor h2 %}
+How is my reputation calculated?
+{% endanchor %}
+
+* Low bounce rates
+* Very few spam complaints
+* The ratio of invalid emails sent out
+* Consistent mailing volume
+
+To achieve the highest reputation possible, we recommend that you have an industry standard opt-in process, don't rent or buy email lists and always keep your lists clean.

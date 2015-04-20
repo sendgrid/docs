@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Suppression Lists
-title: SendGrid for iPhone and iPad Suppression Lists
+title: Suppression Lists
 weight: 600
 layout: page
 navigation:

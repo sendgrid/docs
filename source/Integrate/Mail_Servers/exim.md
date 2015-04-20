@@ -56,7 +56,7 @@ $ /etc/init.d/exim4 restart
 cPanel 
 {% endanchor %}
 
-If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following:
+If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
 
 {% codeblock lang:bash %}
 begin authenticators
