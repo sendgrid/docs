@@ -1,0 +1,198 @@
+---
+layout: page
+weight: 755
+title: API Keys
+navigation:
+  show: true
+---
+
+FORMAT: 1A
+
+# API Keys
+The API Keys feature allows customers to be able to generate an
+API Key credential which can be used for authentication with the
+SendGrid v3 Web API or Mail API.
+
+# Group API Keys management
+
+## API Keys collection [/api_keys]
+### List all API Keys belonging to the authenticated user [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result": [
+                    {
+                        "name":       "A New Hope",
+                        "api_key_id": "xxxxxxxx"
+                    }
+                ]
+            }
+
+### Generate a new API Key for the authenticated user [POST]
+This will create a new random API Key for the user.
+A JSON request body containing a "name" property is required.
+If number of maximum keys is reached, HTTP 403 will be returned.
+
++ Request
+
+    + Body
+
+            {
+                "name":"My API Key"
+            }
+
++ Response 201 (application/json)
+
+        {
+            "api_key":    "SG.xxxxxxxx.yyyyyyyy",
+            "api_key_id": "xxxxxxxx"
+            "name": "My API Key"
+        }
+
++ Response 400 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   "name",
+                        "message": "missing required argument"
+                    }
+                ]
+            }
+
++ Response 403 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   null,
+                        "message": "Cannot create more than 100 API Keys"
+                    }
+                ]
+            }
+
+## API Key [/api_keys/{api_key}]
+### Revoke an existing API Key [DELETE]
+Authentications using this API Key will fail
+after this request is made, with some small propogation delay.
+
+If the API Key ID does not exist an HTTP 404 will be returned.
+
++ Response 204 (application/json)
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   null,
+                        "message": "unable to find API Key for deletion"
+                    }
+                ]
+            }
+
+### Update the name of an existing API Key [PATCH]
+A JSON request body with a "name" property is required.
+
++ Request
+
+    + Body
+
+            {
+                "name": "A New Hope"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "api_key_id": "qfTQ6KG0QBiwWdJ0-pCLCA",
+                "name":       "A New Hope"
+            }
+
++ Response 400 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   null,
+                        "message": "expected JSON request body with 'name' property"
+                    }
+                ]
+            }
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   null,
+                        "message": "unable to find API Key to update"
+                    }
+                ]
+            }
+
+# Group API Key usage
+The API Keys feature adds a new "Bearer" scheme for HTTP authentication
+for both v3 WebAPI and the mail.send API.
+
+## Authentication against a /v3 API resource [/resource]
+Returns HTTP 401 if authentication fails.
+
+### Authentication [GET]
++ Request
+
+    + Headers
+
+            Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
+
++ Response 200 (application/json)
+
++ Response 401 (application/json)
+
+        {
+            "errors": [
+                {
+                    "field": null,
+                    "message": "authorization required"
+                }
+            ]
+        }
+
+
+## Authentication against the mail.send API [/api/mail.send.json]
+Returns HTTP 400 if authentication fails.
+
+### HTTP Authentication [GET]
++ Request
+
+    + Headers
+
+            Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
+
++ Response 200 (application/json)
+
++ Response 400 (application/json)
+
+    + Body
+
+            {
+                "message": "error",
+                "errors": [
+                    "invalid API Key"
+                ]
+            }
