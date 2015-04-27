@@ -2,6 +2,8 @@ module Jekyll
   class ApiV3Example < Liquid::Block
     def initialize(tag_name, markup, tokens)
       attributes = markup.split
+
+
       @identifier = attributes[0]
       @request_type = attributes[1]
       @url = attributes[2]
@@ -9,8 +11,14 @@ module Jekyll
 
 
       if attributes[4]
-        @show_livedoc = attributes[4]
+        if (attributes[4].include? "request_headers:" )
+          @request_header = attributes[4].gsub("request_headers:","")
+        else
+          @show_livedoc = attributes[4]
+        end
+
       end
+
 
       super
     end
@@ -33,6 +41,7 @@ HTML
       context['request_type'] = @request_type
       context['url'] = @url
       context['data'] = @data
+      context['request_header'] = @request_header
       super
     end
   end
@@ -58,7 +67,10 @@ HTML
       identifier = Liquid::Template.parse("{{ identifier }}").render context
       request_type = Liquid::Template.parse("{{ request_type }}").render context
       url = Liquid::Template.parse("{{ url }}").render context
+      request_header = Liquid::Template.parse("{{ request_header }}").render context
       data = Liquid::Template.parse("{{ data }}").render context
+
+      data_block = '';
 
       if data.include? "="
         data = Hash[URI.decode_www_form(data)]
@@ -68,9 +80,17 @@ HTML
         data = data.length > 0 ? JSON.pretty_generate(JSON.parse(data)) : ""
       end
 
+      if request_header.length > 0
+        request_header.gsub('{"',"").gsub('"}',"")
+        puts "#####DATA####"
+        puts "Request Headers<br/>{% codeblock lang:json %}#{request_header}{% endcodeblock %}"
+        data_block = "Request Headers<br/>{% codeblock lang:json %}#{request_header}{% endcodeblock %}"
+      end
+
       if data.length > 0
-        data_block = "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
-      end      
+        data_block += "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
+      end
+
       request_url = url
 
       output = <<HTML

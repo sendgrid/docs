@@ -42,6 +42,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
   @@path = ""
   @@request_body = ""
   @@response_body = ""
+  @@request_headers = ""
 
   ####
   # set the root url of the API calls
@@ -137,8 +138,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # get the request method
     if 3 == level
       debug "\t--RESET VARS--"
-      # get the response method from the header
-      @@method = text.split("[")[1].gsub("]","")
+      if text.include? "]"
+        # get the response method from the header
+        @@method = text.split("[")[1].gsub("]","")
+      else
+        puts "HEADER parse error - no HTTP method on " + text
+        exit
+      end
+
       debug "\tMETHOD SET: " + @@method
     end
 
@@ -198,10 +205,12 @@ class BluePrintHTML < Redcarpet::Render::HTML
     end
 
     #handle the request and response headers
-    if text.include? "Header"
-      # @todo build this out!
-    end
+    # When we have headers that tag along, we need to indicate this
+    if text.include? "Headers"
 
+      return docs_header(text)
+
+    end
     # next up is an element with Body - we don't know whether it's a request or a response
     if text.include? "Body"
 
@@ -293,16 +302,33 @@ class BluePrintHTML < Redcarpet::Render::HTML
     return text.to_s
   end
 
+  def docs_header(text)
+
+    text = text.gsub("Headers","")
+
+    if "request" == @@body_block
+      debug "Found a header! " + text
+      @@request_headers = text.gsub("\n","").gsub("&quot;",'"')
+    end
+
+    if "response" == @@body_block
+      #@todo build this out
+    end
+
+  end
+
   # handle the body of the request or response
   def docs_body(text)
     debug "\t --docs_body--"
     text = text.gsub("Body","")
 
+    debug "Body Block: " + @@body_block
+
     if "request" == @@body_block
 
-      @@request_body = text.gsub("\n","")
+      @@request_body = text.gsub("\n","").gsub("&quot;",'"')
 
-      debug "\t REQUEST BODY SET " + text.strip
+      puts "\t REQUEST BODY SET " + text.strip
 
       # we don't want this to be put out to the page yet
       return
@@ -434,6 +460,17 @@ class BluePrintHTML < Redcarpet::Render::HTML
       url += " " + @@request_body.strip
     end
 
+    if @@request_headers.length > 1
+      #make sure that we have the space there to be parsed
+
+      if @@request_body.length <= 1
+        url += " " + "{}"
+      end
+
+      #add the request headers to the tag
+      url += " {\"request_headers:" + @@request_headers.strip + "\"}"
+    end
+
     # output all the tags at once for this endpoint
     # if/when we want to put params on the URL in the Request area, we can do this append - @@params.gsub("\n","")+ - to the Url
     # we will need to probably grab params for the URL from the params list, rather than the request body
@@ -493,7 +530,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
   def reset_vars()
     debug "## RESET EVERYTHING ##"
     # reset everything, just in case we're about to do another endpoint - path doesn't get reset until another h2, bc we reuse the path
-    @@body_block, @@group_identifier, @@http_response, @@params, @@request_body, @@response_body = "","","","","","",""
+    @@body_block, @@group_identifier, @@http_response, @@params, @@request_body, @@response_body, @@request_headers = "","","","","","","",""
   end
 
 end
