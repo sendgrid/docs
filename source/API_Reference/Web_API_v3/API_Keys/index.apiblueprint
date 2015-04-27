@@ -5,6 +5,7 @@ title: API Keys
 navigation:
   show: true
 ---
+
 FORMAT: 1A
 
 # API Keys
@@ -159,6 +160,8 @@ Returns HTTP 401 if authentication fails.
 
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
 
++ Response 200 (application/json)
+
 + Response 401 (application/json)
 
         {
@@ -180,6 +183,8 @@ Returns HTTP 400 if authentication fails.
     + Headers
 
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
+
++ Response 200 (application/json)
 
 + Response 400 (application/json)
 
