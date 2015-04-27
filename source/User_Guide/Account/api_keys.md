@@ -1,3 +1,13 @@
+---
+layout: page
+weight: 0
+seo:
+  title: API Keys
+title: API Keys
+navigation:
+  show: true
+---
+
 {%warning%}
 API Keys work for v3 API calls and for sending email. API endpoints prior to v3 do not support API keys at this time.
 {%endwarning%}
