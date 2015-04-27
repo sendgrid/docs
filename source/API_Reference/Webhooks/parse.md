@@ -6,6 +6,8 @@ navigation:
   show: true
 ---
 
+<iframe src="//player.vimeo.com/video/95798301" width="700" height="400" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
 {% info %}
 Available to Silver and higher packages or to our free demo accounts.
 {% endinfo %}

@@ -94,8 +94,8 @@ setPassword
 {% endanchor %}
 
 {% parameters set %}
- {% parameter 'password' 'Yes' 'Must be at least 6 characters' 'Your new password' %}
- {% parameter 'confirm_password' 'Yes' 'Must match password parameter and be at least 6 characters long' 'Confirm new password' %}
+ {% parameter 'password' 'Yes' 'Must be at least 8 characters' 'Your new password' %}
+ {% parameter 'confirm_password' 'Yes' 'Must match password parameter and be at least 8 characters long' 'Confirm new password' %}
 {% endparameters %}
 
 
