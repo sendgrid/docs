@@ -1,31 +1,50 @@
 module Jekyll
   class ApiV3Example < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      attributes = markup.split
 
+      attributes = markup.split
 
       @identifier = attributes[0]
       @request_type = attributes[1]
       @url = attributes[2]
-      @data = markup.gsub(attributes[0],"").gsub(attributes[1],"").gsub(attributes[2],"").strip
 
+      #clean the original attributes from the original content
+      markup = markup.gsub(@identifier,"").gsub(@request_type,"").gsub(@url,"")
 
-      if attributes[4]
-        if (attributes[4].include? "request_headers:" )
-          @request_header = attributes[4].gsub("request_headers:","")
-        else
-          @show_livedoc = attributes[4]
+      #get the data - which is "request data" and "request headers" if they exist
+      @data, @request_header = markup.scan(/\{(.*?)\}/)
+
+      unless @data.nil?
+        #hack it back together now
+        @data = "{"+@data[0].to_s+"}"
+        markup = markup.gsub("{"+@data[0].to_s+"}", "")
+        if @data = "{}"
+          @data = ""
         end
-
       end
 
+      unless @request_header.nil?
+        @request_header = @request_header[0]
+        markup = markup.gsub("{"+@request_header.to_s+"}", "")
+
+        if @request_header.include? "request_header"
+          @request_header = @request_header.gsub("request_header","")
+        else
+          #this isn't a request header and it's out of order
+          @data = "{"+@request_header.to_s+"}"
+          @request_header = ""
+        end
+      end
+
+      if markup.strip.length > 0
+        @show_livedoc = markup
+      end
 
       super
     end
 
     def render(context)
       output = super
-
 
       output = <<HTML
 <div class="api-example panel" id="apiv3example-#{@identifier}">
@@ -40,8 +59,8 @@ HTML
       context['identifier'] = @identifier
       context['request_type'] = @request_type
       context['url'] = @url
-      context['data'] = @data
-      context['request_header'] = @request_header
+      context['data'] = @data.to_s
+      context['request_header'] = @request_header.to_s
       super
     end
   end
@@ -62,7 +81,7 @@ HTML
 
     def render(context)
       output = super
- 
+
       # let's parse the vars before we generate the output to avoid complications
       identifier = Liquid::Template.parse("{{ identifier }}").render context
       request_type = Liquid::Template.parse("{{ request_type }}").render context
@@ -81,10 +100,8 @@ HTML
       end
 
       if request_header.length > 0
-        request_header.gsub('{"',"").gsub('"}',"")
-        puts "#####DATA####"
-        puts "Request Headers<br/>{% codeblock lang:json %}#{request_header}{% endcodeblock %}"
-        data_block = "Request Headers<br/>{% codeblock lang:json %}#{request_header}{% endcodeblock %}"
+        request_header = request_header.gsub('-_-',"")
+        data_block = "Request Headers<br/>{% codeblock %}#{request_header}{% endcodeblock %}"
       end
 
       if data.length > 0
@@ -102,7 +119,7 @@ HTML
   {% codeblock lang:json %}#{output.strip}{% endcodeblock %}
 </div>
 HTML
-      
+
       return Liquid::Template.parse(output).render context
     end
   end

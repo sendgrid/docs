@@ -142,7 +142,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
         # get the response method from the header
         @@method = text.split("[")[1].gsub("]","")
       else
-        puts "HEADER parse error - no HTTP method on " + text
+        debug "HEADER parse error - no HTTP method on " + text
         exit
       end
 
@@ -207,6 +207,8 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #handle the request and response headers
     # When we have headers that tag along, we need to indicate this
     if text.include? "Headers"
+
+      debug "HEADERS!! " + text
 
       return docs_header(text)
 
@@ -306,9 +308,13 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     text = text.gsub("Headers","")
 
+    debug "In docs_header body_block = " + @@body_block
+
     if "request" == @@body_block
       debug "Found a header! " + text
+
       @@request_headers = text.gsub("\n","").gsub("&quot;",'"')
+
     end
 
     if "response" == @@body_block
@@ -328,7 +334,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       @@request_body = text.gsub("\n","").gsub("&quot;",'"')
 
-      puts "\t REQUEST BODY SET " + text.strip
+      debug "\t REQUEST BODY SET " + text.strip
 
       # we don't want this to be put out to the page yet
       return
@@ -460,15 +466,25 @@ class BluePrintHTML < Redcarpet::Render::HTML
       url += " " + @@request_body.strip
     end
 
+    debug "REQUEST HEADERS: " + @@request_headers
+
     if @@request_headers.length > 1
+
+      debug "WE HAVE REQUEST HEADERS"
+
       #make sure that we have the space there to be parsed
 
       if @@request_body.length <= 1
-        url += " " + "{}"
+        debug "REquest Body is 0"
+        url += " {}"
       end
 
+      debug "adding request headers to URL"
+
       #add the request headers to the tag
-      url += " {\"request_headers:" + @@request_headers.strip + "\"}"
+      url += " {request_header" + @@request_headers.strip + "}"
+
+      debug "####URL####" + url
     end
 
     # output all the tags at once for this endpoint

@@ -14,7 +14,7 @@ SendGrid v3 Web API or Mail API.
 
 # Group API Keys management
 
-## API Keys collection [/v3/api_keys]
+## API Keys collection [/api_keys]
 ### List all API Keys belonging to the authenticated user [GET]
 
 + Response 200 (application/json)
@@ -149,7 +149,7 @@ A JSON request body with a "name" property is required.
 The API Keys feature adds a new "Bearer" scheme for HTTP authentication
 for both v3 WebAPI and the mail.send API.
 
-## Authentication against a /v3 API resource [/v3/resource]
+## Authentication against a /v3 API resource [/resource]
 Returns HTTP 401 if authentication fails.
 
 ### Authentication [GET]
