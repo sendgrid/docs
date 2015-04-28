@@ -41,7 +41,7 @@ Notes: This API call allows SendGrid resellers to add a new set of credentials t
       <tr>
          <td>credential_password</td>
          <td>Yes</td>
-         <td>Must be at least 8 characters.</td>
+         <td>See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)</td>
          <td>The password used to authenticate the newly generated credential.</td>
       </tr>
    </tbody>
@@ -135,7 +135,7 @@ Notes: This API call allows SendGrid resellers to edit an already existing crede
       <tr>
          <td>new_credential_password</td>
          <td>Yes</td>
-         <td>Must be at least 8 characters</td>
+         <td>See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)</td>
          <td>The updated password</td>
       </tr>
    </tbody>

@@ -39,7 +39,7 @@ Create a Customer
       <tr>
          <td>password</td>
          <td>Yes</td>
-         <td>Must be at least 6 characters</td>
+         <td>Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)</td>
          <td>New password of customer</td>
       </tr>
       <tr>
@@ -1038,7 +1038,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
       <tr>
          <td>password</td>
          <td>Yes</td>
-         <td>Must be at least 6 characters</td>
+         <td>Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)</td>
          <td>New password of customer</td>
       </tr>
       <tr>
