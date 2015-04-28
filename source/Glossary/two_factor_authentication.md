@@ -16,4 +16,4 @@ With SendGrid, you can turn this security feature on in your [Account Settings](
 
 Related Articles:
 
-* [SendGrid's password requirements]({{root_url}}/User_Guide/Account/password.html)
+* [SendGrid's password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)
