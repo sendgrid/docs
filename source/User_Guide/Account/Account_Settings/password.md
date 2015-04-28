@@ -38,7 +38,7 @@ Create a Secure Password
 * Do not include personally identifiable information in your password (i.e. no usernames, phone number, birthdays, addresses, birth places, kid's/pet's names, etc).
 * Do not include general words commonly found in the dictionary in your password. For SendGrid, you still need at least one number in your password.
 * Do not use an "algorithm," like "sitename123".
-* Do not write your password down, instead, use a [password manager](link to the section below).
+* Do not write your password down, instead, use a [password manager](#-Remembering-all-your-passwords-is-hard).
 * Do not email, text, tweet, commit, or otherwise share your password.
 
 {% anchor h2 %}
