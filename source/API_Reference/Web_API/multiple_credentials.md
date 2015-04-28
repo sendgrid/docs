@@ -76,8 +76,7 @@ Retrieve a list of all credentials, or permissions for a specific credential.
 Add 
 {% endanchor %}
 
-This API call allows user to add a new set of credentials to their account.
-
+This API call allows user to add a new set of credentials to their account. Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/password.html) before proceeding.
 
 {% parameters add %}
  {% parameter 'username' 'Yes' 'alphanumeric' 'Enter a username for the new account' %}
@@ -104,6 +103,7 @@ This API call allows user to add a new set of credentials to their account.
 Edit 
 {% endanchor %}
 
+Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/password.html) before proceeding.
 
 {% parameters edit %}
  {% parameter 'username' 'Yes' 'alphanumeric' 'The existing credentials to edit' %}

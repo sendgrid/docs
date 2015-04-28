@@ -50,9 +50,9 @@ To create new credentials click the **Add New Credential** button at the bottom 
 
 When creating a new set of credentials, follow these instructions:
 
-1.  For Name, enter the username for the credential. We recommend using an email address to maintain uniqueness
-2.  For Password, enter a strong password that cannot be guessed or is based on a name or word
-3.  Select the boxes to activate the features you want the credentials to access
+1.  For Name, enter the username for the credential. We recommend using an email address to maintain uniqueness.
+2.  For Password, please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/password.html).
+3.  Select the boxes to activate the features you want the credentials to access.
 
 When you click **Create Credential**, you are returned to the User Credentials list page, where you will see the new credentials and their associated permissions. If you do not intend to create new credentials, you may click the **Cancel** button to cancel the action.
 
