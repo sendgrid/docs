@@ -22,7 +22,7 @@ Create a Subuser
 
 {% parameters create %}
  {% parameter username Yes 'No more than 64 characters' 'New subuser username' %}
- {% parameter password Yes 'At least 6 characters' 'New subuser password' %}
+ {% parameter password Yes 'At least 8 characters' 'New subuser password' %}
  {% parameter confirm_password Yes 'Match <code>password</code> argument' 'Confirm new password' %}
  {% parameter email Yes 'Valid email address, no more than 64 characters' 'New subuser email. This is an administrative contact address for SendGrid' %}
  {% parameter first_name Yes 'No more than 50 characters' 'New subuser profile first name' %}
