@@ -47,3 +47,7 @@ Set up 2FA
 
 
 *To remove 2FA from your SendGrid account, please [contact support](https://support.sendgrid.com)*
+
+Other Resources:
+
+* [SendGrid Knowledgebase 2FA article](http://support.sendgrid.com/hc/en-us/articles/203891718)
