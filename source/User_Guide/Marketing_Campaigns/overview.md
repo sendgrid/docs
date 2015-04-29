@@ -25,3 +25,18 @@ campaigns. With the toggles at the bottom of the graph, you can see detailed sta
         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns Overview</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>
+
+{% anchor h2 %}
+Set Notifications
+{% endanchor %}
+
+If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid
+about your account's marketing campaigns activity.  Email notifications about CSV upload summaries, sender verifications, A/B test winner notifications, and list/segment exports
+will be sent to this account.
+
+To enable this setting, click the "Set Notifications" button in the bottom left corner of any marketing campaigns screen.
+![]({{root_url}}/images/marketing_campaigns_set_notification.png "Set Notifications")
+
+Then, enter the new email address into the modal window that pops up.
+
+![]({{root_url}}/images/marketing_campaigns_set_notification_2.png "Add email for notifications")

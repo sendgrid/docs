@@ -16,6 +16,11 @@ seo:
 Managing Your Lists
 {% endanchor %}
 
+All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on
+the right side of your list title to see Export, View List, Edit List, and Delete options.
+
+![]({{root_url}}/images/lists_2.png "List Management Options")
+
 {% anchor h3 %}
 Change the List Name
 {% endanchor %}
@@ -26,6 +31,13 @@ page. You will be able to edit the name and then hit your enter key to save the 
 ![]({{root_url}}/images/lists_1.png "Change your list name")
 
 {% anchor h3 %}
+Edit a List
+{% endanchor %}
+
+When you select the "Edit List" option, you will be shown the upload contacts options that will allow you to add contacts directly to this list. You will
+also be able to create a segment of this list directly from this window.
+
+{% anchor h3 %}
 Delete a List
 {% endanchor %}
 
@@ -33,8 +45,6 @@ If you would like to delete a list, go to [Contacts](https://sendgrid.com/market
 a list of our contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
 that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s
 information will continue to exist in your contact database.
-
-![]({{root_url}}/images/lists_2.png "Delete a List")
 
 {% anchor h3 %}
 Create a List

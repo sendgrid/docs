@@ -28,12 +28,12 @@ The field name should be created using only alphanumeric characters (A-Z and 0-9
 be date, text, or number fields. We ask for the field type so that we can help you make segments from your contact
 database. You will be able to query your list in different ways, based on the data type.
 
-* **Date** - will allow you to select contacts before, after, or on a specific date.
-* **Text** - will allow you to select contacts who match specific text.
-* **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted.
+* **Date** - will allow you to select contacts before, after, or on a specific date. *Example: 1/1/2014*
+* **Text** - will allow you to select contacts who match specific text. *Example: Pet field that says "Dog"*
+* **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% info %}
-The number of custom fields that you can have at the moment is 20.  This is means you can have 23 fields total.  (first_name, last_name, email, and 20 custom fields)
+You can have up to 20 custom fields of each type.  This is means you can have 63 total custom fields, including the custom fields we provide by default.
 {% endinfo %}
 
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in

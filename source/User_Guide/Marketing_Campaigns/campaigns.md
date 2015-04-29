@@ -30,6 +30,10 @@ If you decide to upload your own template, you can create it in our editor using
 Add Your Content and Set Your Settings
 {% endanchor %}
 
+{% info %}
+The editor will autosave your changes every 3 seconds, so even if you close your browser window your changes will be saved.
+{% endinfo %}
+
 Once you choose your template, you will be taken to this page:
 
 ![]({{root_url}}/images/templates_7.png "Edit Your Campaign")
@@ -45,7 +49,7 @@ You can also change:
 * **Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
 * **Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. Click the “On” button to toggle the custom schedule options. If you choose to schedule a send, the campaign will be scheduled only after you click “Send” in the upper right hand corner.
 * **Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
-* **Suppression Group:** This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, click the "manage" prompt by this field. You will then be able to add a new suppression group.
+* **Suppression Group:** This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, click the "manage" prompt by this field. You will then be taken to the [Advanced Suppression Manager]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html) page to add a new suppression group.
 
 {% anchor h2 %}
 A/B Testing

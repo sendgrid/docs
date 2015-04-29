@@ -15,6 +15,8 @@ seo:
 A template is the basic structure of the email you will be sending out to your contacts. You can import the HTML for an
 email through the [SendGrid Marketing Campaigns template builder](https://sendgrid.com/marketing_campaigns/templates) or you can use one of the default templates we have provided.
 
+The editor will autosave your changes every 3 seconds, so even if you close your browser window your changes will be saved.
+
 ![]({{root_url}}/images/templates_1.png "Templates Page")
 
 {% anchor h2 %}

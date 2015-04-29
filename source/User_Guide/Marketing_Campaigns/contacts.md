@@ -30,6 +30,15 @@ the “manual” tab on the upload window. You will then be able to add the info
 Uploading Contacts
 {% endanchor %}
 
+Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid Customer Portal. If
+you have any issues, please see our Troubleshooting Guide.
+
+{% warning %}
+Email is the unique identifier for your Contacts database. This means you cannot add the same email to your user's contacts
+database twice, doing so will cause the original record to update all fields passed to the information in the most recent update.
+Updates to your contacts cannot be rolled back.
+{% endwarning %}
+
 {% anchor h3 %}
 Prepare Contacts for Upload
 {% endanchor %}
@@ -124,3 +133,82 @@ the same row. You will also see an option to delete the contact, which deletes t
          <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>
+
+
+{% anchor h2 %}
+Troubleshooting Contacts Upload
+{% endanchor %}
+
+{% anchor h3 %}
+My upload file is not accepted
+{% endanchor %}
+
+If your contacts list has non-English characters, please make sure that your file is a CSV file with UTF-8 formatting.
+
+{% anchor h3 %}
+My data is being rejected
+{% endanchor %}
+
+Make sure that you don't have text fields that look like numbers. Examples are numbers that could contain a punctuation
+character like a dash, underscore, parenthesis, or multiple dots:
+
+* US Zipcode: 80202-1713
+* Phone numbers: (555) 555-5555 or 555.555.5555
+* Monetary Values: $3.50
+
+{% anchor h3 %}
+I have more than one of the same email in my database
+{% endanchor %}
+
+With SendGrid's Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email
+address multiple times, the custom field data associated with that email will be updated with each upload to the most recently
+uploaded/updated information.  This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
+
+What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines)
+and then segment your user to be in lists based on those custom fields.
+
+{% anchor h2 %}
+Troubleshooting Contacts Upload
+{% endanchor %}
+
+{% anchor h3 %}
+My upload file is not accepted
+{% endanchor %}
+
+**Character Encoding**
+
+If your contacts list has non-English characters, please make sure that your file is a CSV file with UTF-8 formatting.
+
+**Text that looks like a number**
+
+Make sure that you don't have text fields that look like numbers. This excludes whole numbers (1,2,3,4) or decimals/floats (3.1415). Text that look like numbers are those that contain punctuation characters like a dash, underscore, parenthesis, or multiple dots.
+
+Some examples:
+
+* US Zip Code: 80202-1713
+* Phone numbers: “(555) 555-5555” or “555.555.5555”
+* Monetary Values with the currency indicator such as $3.50 or €5.73
+
+**Data formatting**
+
+Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV.
+The date format needs to be one of the following: MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY
+
+**Missing Header**
+
+Your CSV should always have a header row, that identifies each column. The rules for this are:
+
+1. You must have an “email” column
+1. The other fields you include should be named the same as your custom fields. Capitalization doesn’t matter.
+
+**Custom fields in your CSV but not your account**
+
+If you include a column in your CSV that is for a custom field not defined in your account, then the CSV will be rejected. We are currently working to add a feature that will let you set up custom fields as a step during the upload process.
+
+{% anchor h3 %}
+I have more than one of the same email in my database
+{% endanchor %}
+
+With SendGrid's Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the custom field data associated with that email will be updated with each upload to the most recently uploaded/updated information.  This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
+
+What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
