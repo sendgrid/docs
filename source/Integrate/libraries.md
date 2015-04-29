@@ -49,7 +49,7 @@ Community libraries
 Open source library contributions from the awesome SendGrid community.
 
 {% info %}
-If you create a library, please let us know, by [adding your library to this page](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}). 
+If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}). 
 {% endinfo %}
 
 {% anchor h2 %}

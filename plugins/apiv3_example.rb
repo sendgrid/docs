@@ -18,7 +18,7 @@ module Jekyll
         #hack it back together now
         @data = "{"+@data[0].to_s+"}"
         markup = markup.gsub("{"+@data[0].to_s+"}", "")
-        if @data = "{}"
+        if @data == "{}"
           @data = ""
         end
       end
