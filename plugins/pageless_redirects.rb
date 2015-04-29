@@ -116,6 +116,7 @@ module Jekyll
         FileUtils.mkdir_p(fs_path_to_dir)
 
         File.open(File.join(fs_path_to_dir, alias_file), 'w') do |file|
+          puts "generating redirect for " + alias_path + " to " + destination_path
           file.write(alias_template(destination_path))
         end
 
