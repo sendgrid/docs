@@ -14,7 +14,7 @@ how credentials are used to send email.
 {% endinfo %}
 
 {% info %}
-Two factor authentication does not currently support [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html).
+If you have 2FA on the parent account, any [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html) logins will trigger a 2FA notification to the parent user. 
 {% endinfo %}
 
 {% anchor h2 %}
