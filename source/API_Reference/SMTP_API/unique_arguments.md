@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/API_Reference/Webhooks/event.html) or the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page.
+The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/API_Reference/Webhooks/event.html) or the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page.
 
 These arguments can be added using a JSON string like this:
 
@@ -41,6 +41,8 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
   "activationAttempt": "1"
 }
 {% endcodeblock %}
+
+{% warning %} There are a few cases where unique_args cannot be attached to the Event. Specifically Bounces that are returned via the Return-Path. Please keep this in mind when developing unique_args POST handling. {% endwarning %}
 
 Unique Arguments will also be shown in the [Email Activity tab](https://sendgrid.com/logs/index) of your account.
 

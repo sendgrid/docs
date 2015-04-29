@@ -20,7 +20,7 @@ Gets statistics for Parse Webhook usage.
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/parse/stats?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/user/webhooks/parse/stats?start_date=2015-01-01&end_date=2015-01-02 %}
 {% v3response %}
 [
   {

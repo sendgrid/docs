@@ -17,5 +17,5 @@ When using ASM, a recipient clicking an unsubscribe link can choose which groups
 You can manage your global unsubscribes via [Email Reports > Unsubscribes](https://sendgrid.com/unsubscribes) in the SendGrid portal.
 
 {% info %}
-Group Unsubscribes do not currently trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.
+Group Unsubscribes will trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.
 {% endinfo %}

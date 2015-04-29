@@ -22,7 +22,7 @@ Create a Subuser
 
 {% parameters create %}
  {% parameter username Yes 'No more than 64 characters' 'New subuser username' %}
- {% parameter password Yes 'At least 6 characters' 'New subuser password' %}
+ {% parameter password Yes 'See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)' 'New subuser password' %}
  {% parameter confirm_password Yes 'Match <code>password</code> argument' 'Confirm new password' %}
  {% parameter email Yes 'Valid email address, no more than 64 characters' 'New subuser email. This is an administrative contact address for SendGrid' %}
  {% parameter first_name Yes 'No more than 50 characters' 'New subuser profile first name' %}
@@ -218,7 +218,7 @@ Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords mus
 
 {% parameters updateSubuserPassword %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to update password of' %}
- {% parameter password Yes 'At least 6 characters' 'New password for subuser' %}
+ {% parameter password Yes 'See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)' 'New password for subuser' %}
  {% parameter confirm_password Yes 'Match <code>password</code> argument' 'Confirm new password' %}
 {% endparameters %}
 

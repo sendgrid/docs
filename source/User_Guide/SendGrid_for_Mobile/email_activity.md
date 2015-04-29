@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Email Activity
-title: SendGrid for iPhone and iPad Email Activity
+title: Email Activity
 weight: 700
 layout: page
 navigation:
@@ -18,8 +18,8 @@ navigation:
 	</a>
 </p>
 
-Here you can view the realtime logs of all emails sent from your account in the last 7 days. You can also narrow down your search by pulling down on the screen and searching for an email address, and/or selecting the "More" button in the top right corner, selecting "Search Options" and selecting only certain events to show.
- 
-Tapping on any event will reveal more information, such as server responses or user-agents.
+Here you can view the real-time logs of all emails sent from your account in the last 7 days. You can also narrow down your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options” and selecting only certain events to show.
 
-Finally, you can export your Email Activity by selecting the "More" button in the top right corner and selecting "Export".  This will create a CSV that you can open in another app on your device.
+Tapping on any event will reveal more information, such as server responses or user agents.
+
+Finally, you can export your email activity by selecting the “More” button in the top right corner and selecting “Export.” This will create a CSV that you can open in another app on your device.
