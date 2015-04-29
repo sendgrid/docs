@@ -14,8 +14,10 @@ how credentials are used to send email.
 {% endinfo %}
 
 {% info %}
-Two factor authentication does not currently support [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html).
+If you have 2FA enabled on your account, [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html) logins will trigger a 2FA notification to the main credential's phone number.
 {% endinfo %}
+
+
 
 {% anchor h2 %}
 Set up 2FA
