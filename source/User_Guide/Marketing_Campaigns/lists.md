@@ -75,8 +75,10 @@ both conditions are required and ```OR``` indicates either condition will work.
 You can also segment your users by their engagement with your email campaigns. To do this, create a new list and choose
 the ```Engagement: Opens``` or ```Engagement: Clicks``` option from
 the bottom of the conditions fields list. Based on the criteria you set, you can then market to your users based on how
-engaged they are. This is especially useful for [reconfirmation campaigns]({{root_url}}/Glossary/Email_Types/reconfirmation.html)
-or for rewarding high engagement users.
+engaged they are with a specific campaign. This is especially useful for doing things like rewarding high engagement users.
+
+![]({{root_url}}/images/lists_engagement_segment_1.png "User Engagement Segment")
+
 
 {% anchor h3 %}
 Export a Segment List
