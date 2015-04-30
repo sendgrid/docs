@@ -63,6 +63,10 @@ You may want to test the email that you are sending to your customers in order t
 Selecting A/B Testing Criteria
 {% endanchor %}
 
+{% info %}
+You can test up to 6 variations of your campaign subject.
+{% endinfo %}
+
 The criteria you can set for your A/B tests are:
 
 * Open Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
