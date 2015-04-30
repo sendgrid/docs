@@ -16,7 +16,7 @@ Redirect 301 /API_Reference/Reseller_API/billing_retrieving_end_users_invoices_u
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_account_limits.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/customer_account_limits.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_apps.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/automatic_login.html
-Redirect 301 /API_Reference/Reseller_API/customer_subuser_bounces.htm https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html
+Redirect 301 /API_Reference/Reseller_API/customer_subuser_bounces.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_event_notification_url.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_invalid_emails.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_monitor_outgoing_email.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html
@@ -57,13 +57,13 @@ Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/App
 #
 #######
 Redirect 301 /Code_Examples/index.html https://sendgrid.com/docs/Integrate/Code_Examples/index.html
-Redirect 301 /Code_Examples/index.htmlhttps://sendgrid.com/docs/Integrate/Code_Examples/index.html
 Redirect 301 /Code_Examples/csharp.html https://sendgrid.com/docs/Integrate/Code_Examples/csharp.html
 Redirect 301 /Code_Examples/go.html https://sendgrid.com/docs/Integrate/Code_Examples/go.html
-Redirect 301 /Code_Examples/ios.html https://sendgrid.com/docs/Integrate/Code_Examples/ios.html
+#ios code is no more
+Redirect 301 /Code_Examples/ios.html https://sendgrid.com/docs/Integrate/Code_Examples/index.html
 Redirect 301 /Code_Examples/java.html https://sendgrid.com/docs/Integrate/Code_Examples/java.html
 Redirect 301 /Code_Examples/nodejs.html https://sendgrid.com/docs/Integrate/Code_Examples/nodejs.html
-Redirect 301 /Code_Examples/perl.htmlhttps://sendgrid.com/docs/Integrate/Code_Examples/perl.html
+Redirect 301 /Code_Examples/perl.html https://sendgrid.com/docs/Integrate/Code_Examples/perl.html
 Redirect 301 /Code_Examples/php.html https://sendgrid.com/docs/Integrate/Code_Examples/php.html
 Redirect 301 /Code_Examples/python.html https://sendgrid.com/docs/Integrate/Code_Examples/python.html
 Redirect 301 /Code_Examples/ruby.html https://sendgrid.com/docs/Integrate/Code_Examples/ruby.html
@@ -71,7 +71,7 @@ Redirect 301 /Code_Examples/Webhook_Examples/index.html https://sendgrid.com/doc
 Redirect 301 /Code_Examples/Webhook_Examples/go.html https://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/go.html
 Redirect 301 /Code_Examples/Webhook_Examples/nodejs.html https://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/nodejs.html
 Redirect 301 /Code_Examples/Webhook_Examples/php.html https://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/php.html
-Redirect 301 /Code_Examples/Webhook_Examples/python.htmlhttps://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/python.html
+Redirect 301 /Code_Examples/Webhook_Examples/python.html https://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/python.html
 Redirect 301 /Code_Examples/Webhook_Examples/csharp.html https://sendgrid.com/docs/Integrate/Code_Examples/Webhook_Examples/csharp.html
 Redirect 301 /Code_Examples/SMTP_API_Header_Examples/index.html https://sendgrid.com/docs/Integrate/Code_Examples/SMTP_API_Header_Examples/index.html
 Redirect 301 /Code_Examples/SMTP_API_Header_Examples/go.html https://sendgrid.com/docs/Integrate/Code_Examples/SMTP_API_Header_Examples/go.html
@@ -106,15 +106,15 @@ Redirect 301 /Integrate/Mail_Clients/outlook_2010.html https://sendgrid.com/docs
 # /docs/Marketing Email - moved to User Guide - originally sendgrid.com/docs/Marketing_Emails/
 #
 #######
-Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns https://sendgrid.com/docs/Glossary/Email_Types
-Redirect 301 /Marketing_Emails/ https://sendgrid.com/docs/User_Guide/Marketing_Emails/
-Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/dashboard.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/tags.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/unsubscribes.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/recipients.html https://sendgrid.com/docs
-Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs
+Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/index.html https://sendgrid.com/docs/Glossary/Email_Types/index.html
+Redirect 301 /Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
+Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
+Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
+Redirect 301 /Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/dashboard.html
+Redirect 301 /Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/tags.html
+Redirect 301 /Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
+Redirect 301 /Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/sender_address.html
 
 #######
 #
@@ -136,12 +136,11 @@ Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/Us
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Account_Settings/multiple_credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html
-Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/User_Guide/Account/account_changes.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
-Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
+Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/warming_up.html
-Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/whitelabel_wizard.html
+Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html
 
 #######
 #
