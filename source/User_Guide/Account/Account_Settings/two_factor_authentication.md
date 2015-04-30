@@ -14,8 +14,10 @@ how credentials are used to send email.
 {% endinfo %}
 
 {% info %}
-Two factor authentication does not currently support [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html).
+If you have 2FA enabled on your account, [Multiple User Credentials]({{root_url}}/User_Guide/Account/multiple_credentials.html) logins will trigger a 2FA notification to the main credential's phone number.
 {% endinfo %}
+
+
 
 {% anchor h2 %}
 Set up 2FA
@@ -45,3 +47,7 @@ Set up 2FA
 
 
 *To remove 2FA from your SendGrid account, please [contact support](https://support.sendgrid.com)*
+
+Other Resources:
+
+* [SendGrid Knowledgebase 2FA article](http://support.sendgrid.com/hc/en-us/articles/203891718)
