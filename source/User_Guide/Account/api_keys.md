@@ -55,7 +55,7 @@ $ curl -X POST https://api.sendgrid.com/api/mail.send.json \
      -d "to=test@sendgrid.com" \
      -d "from=you@youraddress.com" \
      -d "subject=Sending with SendGrid is Fun" \
-     -d "html=and easy to do anywhere, even with CURL"
+     -d "html=and easy to do anywhere, even with CURL" \
      -H "Authorization: Bearer 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"
 {%endcodeblock%}
 
