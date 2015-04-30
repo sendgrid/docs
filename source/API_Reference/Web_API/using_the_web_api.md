@@ -108,3 +108,20 @@ https://api.sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api
 <hr/>
 
 <p>For detailed information on the available Web API methods, select one from the tree on the left.</p>
+
+
+{% anchor h2 %}
+The Data
+{% endanchor %}
+
+When you send data a GET request, it usually means that you're sending data in the URL's query string,the part after the '?' in the url, as a key/value pair. The key is defined by the place where you are sending the data and is assumed to be URL-safe, however the data you provide may not be. So, you should urlencode the value (or the data part) of any URL-passed information. 
+
+For example, when you query google.com for "sendgrid.com/docs/" you get the following URL: 
+
+{% codeblock %}
+https://www.google.com/?gws_rd=ssl#q=sendgrid.com%2Fdocs%2F
+{% endcodeblock %}
+
+Where "sendgrid.com/docs/" was encoded to "sendgrid.com%2Fdocs%2F" in the URL. 
+
+Most programming languages have support for urlencoding, but should you need a character lookup to reference, please see the [Wikipedia doc about urlencoding](http://en.wikipedia.org/wiki/Percent-encoding).
