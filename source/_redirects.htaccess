@@ -144,6 +144,14 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 
 #######
 #
+# /docs/User_Guide/Transactional_Email/Template_Engine/
+#
+#######
+Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+
+
+#######
+#
 # /docs/VidGrid
 #
 #######
