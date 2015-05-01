@@ -144,6 +144,14 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 
 #######
 #
+# /docs/User_Guide/Apps/ - originally sendgrid.com/docs/User_Guide/Apps - moved to docs/User_Guide/Settings/
+#
+#######
+
+
+
+#######
+#
 # /docs/VidGrid
 #
 #######
