@@ -19,3 +19,5 @@ generate email-sending code in a variety of languages.
 suppressed recipients from your list.
 
 The [SMTP API header validator]({{root_url}}/Utilities/smtpapi_validator.html) will help ensure that the SMTP API header you are using is valid.
+
+The [Command Line Utility]({{root_url}}/Utilities/command_line_tool.html) provides a simple way to send Sendgrid emails using the command line.
