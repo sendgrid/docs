@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: What is Throttling?
+title: Throttling
 seo:
   title: Email Throttling
 navigation:

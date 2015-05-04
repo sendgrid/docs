@@ -47,6 +47,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/opens.html">Opens</a></li>
             <li><a href="{{root_url}}/Glossary/request.html">Request</a></li>
             <li><a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a></li>
+            <li><a href="{{root_url}}/Glossary/throttling.html">Throttling</a></li>
         </ul>
     </div>
     <div class="col-md-4">
