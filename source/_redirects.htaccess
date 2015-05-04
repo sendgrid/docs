@@ -3,6 +3,10 @@
 # /API_Reference
 #
 #######
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_unsubscribes.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/unsubscribes.html
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
@@ -134,6 +138,13 @@ Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/User_Guide/E
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/index.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Subscription_Tracking/index.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Account_Settings/multiple_credentials.html
