@@ -124,49 +124,6 @@ the same row. You will also see an option to delete the contact, which deletes t
 ![]({{root_url}}/images/contacts_4.png "Delete a contact")
 
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
-
-
-{% anchor h2 %}
-Troubleshooting Contacts Upload
-{% endanchor %}
-
-{% anchor h3 %}
-My upload file is not accepted
-{% endanchor %}
-
-If your contacts list has non-English characters, please make sure that your file is a CSV file with UTF-8 formatting.
-
-{% anchor h3 %}
-My data is being rejected
-{% endanchor %}
-
-Make sure that you don't have text fields that look like numbers. Examples are numbers that could contain a punctuation
-character like a dash, underscore, parenthesis, or multiple dots:
-
-* US Zipcode: 80202-1713
-* Phone numbers: (555) 555-5555 or 555.555.5555
-* Monetary Values: $3.50
-
-{% anchor h3 %}
-I have more than one of the same email in my database
-{% endanchor %}
-
-With SendGrid's Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email
-address multiple times, the custom field data associated with that email will be updated with each upload to the most recently
-uploaded/updated information.  This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
-
-What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines)
-and then segment your user to be in lists based on those custom fields.
-
 {% anchor h2 %}
 Troubleshooting Contacts Upload
 {% endanchor %}
@@ -212,3 +169,15 @@ I have more than one of the same email in my database
 With SendGrid's Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the custom field data associated with that email will be updated with each upload to the most recently uploaded/updated information.  This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
 What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
+
+
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
+    </div>
+
+    <div class="col-md-6 text-right">
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
+    </div>
+</div>
