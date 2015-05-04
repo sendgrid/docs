@@ -80,7 +80,9 @@ Create a new subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
 
@@ -107,7 +109,9 @@ Edit a subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
 
@@ -135,6 +139,8 @@ Delete a subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
