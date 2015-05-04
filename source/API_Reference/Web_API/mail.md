@@ -18,19 +18,21 @@ There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libra
 [View List »]({{root_url}}/Integrate/libraries.html)
 {% endinfo %}
 
-{% anchor h2 %}
-send
-{% endanchor %}
+{% warning %}
+The "Try It" functionality is not a sandbox. These are real API calls that consume email credits on your account.
+{% endwarning %}
 
 {% info %}
 When you make an API request to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
 {% endinfo %}
 
-Send email.
+{% anchor h2 %}
+send
+{% endanchor %}
 
-{% warning %}
-The "Try It" functionality is not a sandbox. These are real messages that consume credits on your account.
-{% endwarning %}
+SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be used when sending email over the API.
+
+Send email.
 
 {% parameters mail %}
  {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
