@@ -8,6 +8,10 @@ navigation:
   show: true
 ---
 
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+    <meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/896ca-8l1Qk" frameborder="0" allowfullscreen></iframe>
+</div>
+
 {% info %}
 Advanced Suppression Manager (ASM) is in Beta and is not currently available for use with our [Marketing Email]({{root_url}}/User_Guide/Marketing_Emails/index.html) tool.
 {% endinfo %}
