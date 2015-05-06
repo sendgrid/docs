@@ -170,7 +170,8 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 #######
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/VidGrid/Marketing_Emails/marketing_emails_setup.html
-Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/VidGrid/template_engine.html
+Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/VidGrid/whitelabel.html
 
 
