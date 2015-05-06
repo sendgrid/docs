@@ -1,7 +1,7 @@
 ---
 seo:
-  title: Unsubscribe Manager
-title: Unsubscribe Manager
+  title: Advanced Suppression Manager
+title: Advanced Suppression Manager
 weight: 0
 layout: page
 navigation:
