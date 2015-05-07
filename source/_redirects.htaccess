@@ -155,6 +155,7 @@ Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/Us
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Account_Settings/multiple_credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html
+Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/Classroom/Basics/sending_practices.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
