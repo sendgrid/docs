@@ -1,0 +1,29 @@
+---
+layout: page
+weight: 100
+title: Categories
+navigation:
+  show: true
+seo:
+  title: Categories
+  override: true
+  description: Paying attention to your deliverability metrics can help optimize your delivery rate and reduce the risk of being seen as a spammer.
+---
+
+Categories help organize your email analytics by enabling you to tag emails you send by topics you define.
+
+Just as you can view the statistics on all your activity under the '[Statistics]({{root_url}}/User_Guide/Delivery_Metrics/)' tab, you can go a step further and view the [statistics broken down to a particular category]({{root_url}}/User_Guide/Delivery_Metrics/categories.html).
+
+The events that can be associated with category include:
+
+-   Emails sent
+-   Clicks
+-   Opens
+-   Bounces
+-   Spam Reports
+-   Unsubscribes
+
+The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/User_Guide/Apps/). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}/User_Guide/Apps/subscription_tracking.html), [Clicks]({{root_url}}/User_Guide/Apps/click_tracking.html), and [Opens]({{root_url}}/User_Guide/Apps/open_tracking.html) require that the associated App is enabled. Check out the [Apps tab](https://sendgrid.com/app) to see which apps you have enabled.
+
+In order to add the X-SMTPAPI categories header, please look at our [SMTP API Categories]({{root_url}}/API_Reference/SMTP_API/categories.html) documentation. You can also
+get a [full category list]({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Category-List) or get [category specific statistics]({{root_url}}/API_Reference/Web_API/Statistics/index.html#-Retrieve-Statistics) from the SendGrid API.
