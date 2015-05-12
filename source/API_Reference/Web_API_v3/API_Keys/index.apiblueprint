@@ -11,7 +11,7 @@ FORMAT: 1A
 # API Keys
 The API Keys feature allows customers to be able to generate an
 API Key credential which can be used for authentication with the
-SendGrid v3 Web API or Mail API.
+SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
 
 # Group API Keys management
 
