@@ -85,6 +85,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
         <ul>
             <li><a href="{{root_url}}/Glossary/bulk_email_service.html">Bulk Email Service</a></li>
             <li><a href="{{root_url}}/Glossary/bulk_sender_notification.html">Bulk Sender Notification</a></li>
+            <li><a href="{{root_url}}/Glossary/categories.html">Categories</a></li>
             <li><a href="{{root_url}}/Glossary/email_api_integration.html">Email API Integration</a></li>
             <li><a href="{{root_url}}/Glossary/email_service_provider.html">Email Service Provider</a></li>
             <li><a href="{{root_url}}/Glossary/feedback_loop.html">Feedback Loop</a></li>
