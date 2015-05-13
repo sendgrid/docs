@@ -46,9 +46,11 @@ If number of maximum keys is reached, HTTP 403 will be returned.
 
 + Response 201 (application/json)
 
+    + Body
+
         {
             "api_key":    "SG.xxxxxxxx.yyyyyyyy",
-            "api_key_id": "xxxxxxxx"
+            "api_key_id": "xxxxxxxx",
             "name": "My API Key"
         }
 
@@ -163,6 +165,8 @@ Returns HTTP 401 if authentication fails.
 + Response 200 (application/json)
 
 + Response 401 (application/json)
+
+    + Body
 
         {
             "errors": [
