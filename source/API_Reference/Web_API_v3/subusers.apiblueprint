@@ -1,0 +1,114 @@
+---
+layout: page
+weight: 100
+title: Subusers API
+seo:
+  description: Create and Manage your subusers via the SendGrid v3 API
+  title: Subusers API
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+# Subusers
+Subusers resource
+
+# Group Subusers
+Subsers belonging to a parent user.
+
+## Subusers Collection [/v3/subusers?username={username}&limit={limit}&offset={offset}]
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of subusers to return.
+    + offset (optional, number, `1`) ... Paging offset.
+    + username (optional, string, `John`) ... The username of the subuser
+
+### List all Subusers for a parent [GET]
+
++ Response 200 (application/json)
+
+  + Body
+
+        [{
+          "id": 1, "username": "Test@example.com", "email": "Test@example.com"
+        }, {
+          "id": 2, "username": "John@example.com", "email": "John@example.com"
+        }]
+
++ Response 401
+
+  + Body
+
+        {
+          "errors":[
+            {
+              "field":null,
+              "message":"authorization required"}
+          ]
+        }
+
+### Create Subuser [POST]
+
++ Request (application/json)
+
+  + Body
+
+        {
+            "username": "John@example.com",
+            "email": "John@example.com",
+            "password": "johns_password",
+            "ips": ["1.1.1.1", "2.2.2.2"]
+        }
+
++ Response 201 (application/json)
+
+  + Body
+
+        {
+            "username": "John@example.com",
+            "email": "John@example.com",
+            "password": "johns_password",
+            "ips": ["1.1.1.1", "2.2.2.2"]
+        }
+
+## Subuser Reputations [/v3/subusers/reputations?usernames={usernames}&usernames={usernames}]
++ Parameters
+    + usernames (required, string, `my_subuser`) ... Array of string. The usernames of subusers to retrieve the reputations of.
+
+### Retrieve Subuser Reputations [GET]
+
++ Response 200
+
+  + Body
+
+        [
+            {"username": "user1", "reputation": 99.0},
+            {"username": "user2", "reputation": 95.2}
+        ]
+
+
+## Subuser IPs [/v3/subusers/{subuser_name}/ips]
++ Parameters
+    + subuser_name (required, string) ... subuser's username
+
+### Update IPs assigned to a subuser [PUT]
+
++ Request (application/json)
+
+  + Body
+
+        [
+            "127.0.0.1",
+            "127.0.0.2"
+        ]
+
++ Response 200 (application/json)
+
+  + Body
+
+        {
+            "ips":[
+                "127.0.0.1",
+                "127.0.0.2"
+            ]
+        }
