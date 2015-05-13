@@ -47,6 +47,9 @@ Subsers belonging to a parent user.
           ]
         }
 
+
+
+## Subusers Collection [/v3/subusers]
 ### Create Subuser [POST]
 
 + Request (application/json)
