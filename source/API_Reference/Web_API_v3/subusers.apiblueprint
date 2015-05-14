@@ -16,7 +16,7 @@ Subusers resource
 # Group Subusers
 Subsers belonging to a parent user.
 
-## Subusers Collection [/v3/subusers?username={username}&limit={limit}&offset={offset}]
+## Subusers Collection [/subusers?username={username}&limit={limit}&offset={offset}]
 
 + Parameters
     + limit (optional, number, `20`) ... Number of subusers to return.
@@ -49,7 +49,7 @@ Subsers belonging to a parent user.
 
 
 
-## Subusers Collection [/v3/subusers]
+## Subusers Collection [/subusers]
 ### Create Subuser [POST]
 
 + Request (application/json)
@@ -74,7 +74,7 @@ Subsers belonging to a parent user.
             "ips": ["1.1.1.1", "2.2.2.2"]
         }
 
-## Subuser Reputations [/v3/subusers/reputations?usernames={usernames}&usernames={usernames}]
+## Subuser Reputations [/subusers/reputations?usernames={usernames}&usernames={usernames}]
 + Parameters
     + usernames (required, string, `my_subuser`) ... Array of string. The usernames of subusers to retrieve the reputations of.
 
@@ -90,7 +90,7 @@ Subsers belonging to a parent user.
         ]
 
 
-## Subuser IPs [/v3/subusers/{subuser_name}/ips]
+## Subuser IPs [/subusers/{subuser_name}/ips]
 + Parameters
     + subuser_name (required, string) ... subuser's username
 
