@@ -67,7 +67,7 @@ This call will delete a subuser and will disable all tracked links on sent messa
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=subuser_username %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username %}
   {% response json %}
 {
   "message": "success"
