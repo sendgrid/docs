@@ -371,6 +371,8 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #   if = then we have a default
     #   if no = then we have just name
 
+    puts "Param String: " + text
+
     parameters = text.split(" ... ")
 
     description = parameters[1].chop
@@ -388,7 +390,11 @@ class BluePrintHTML < Redcarpet::Render::HTML
     optional = optional_requirements[0].strip
 
     # get the requirements information from the 2nd item in the parenthesis
-    requirements = optional_requirements[1].strip
+    requirements = ""
+    if optional_requirements[1]
+      requirements = optional_requirements[1].strip
+    end
+
 
     example = ""
 
@@ -412,6 +418,20 @@ class BluePrintHTML < Redcarpet::Render::HTML
       description += " Defaults to " + identifier_default[1].strip
     else
       identifier = identifier_default
+    end
+
+    # lets see if this description has members?
+    if description.include? "Members"
+      puts "Has Members!!"
+
+      descriptors = description.split("Members")
+
+      description = descriptors[0].strip + " Possible Values: "
+
+      members = descriptors[1].strip.split("\n").compact.collect{|x| x.strip}
+      description += members.join(", ")
+
+      puts "New Description: " + description
     end
 
     # add the example to the end of the description
