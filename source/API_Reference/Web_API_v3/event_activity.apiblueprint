@@ -1,0 +1,70 @@
+---
+layout: page
+weight: 100
+title: Event Activity API
+seo:
+  description: Retrieve your event activity from the v3 SendGrid API
+  title: Event Activity API
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+# Email Activity
+
+## Email Activity [/email_activity?email={email}&events={events}&exclude_events={exclude_events}&start_time={start_time}&end_time={end_time}]
+Retrieve a list of your recent email events.
+
++ Parameters
+
+    + email (optional, string, test@example.com) ... An email address or domain to search for.
+    + events (optional, array[string], opens) ... Retrieves only events of this type.
+        + Members
+            + `bounces`
+            + `clicks`
+            + `deferred`
+            + `delivered`
+            + `drops`
+            + `group_unsubscribe`
+            + `group_resubscribe`
+            + `opens`
+            + `processed`
+            + `parseapi`
+            + `spam_reports`
+            + `unsubscribes`
+    + exclude_events (optional, array[string], opens) ... Excludes events of this type.
+        + Members
+            + `bounces`
+            + `clicks`
+            + `deferred`
+            + `delivered`
+            + `drops`
+            + `group_unsubscribe`
+            + `group_resubscribe`
+            + `opens`
+            + `processed`
+            + `parseapi`
+            + `spam_reports`
+            + `unsubscribes`
+    + start_time (optional, timestamp, 1431625682) ... Retrieves events on or after this time.
+    + end_time (optional, timestamp, 1431625682) ... Retireves events on or before this time.
+
+### Email Activity Collection [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+        [
+            {
+               "email": "test@example.com",
+               "event": "processed",
+               "created": 1431624000,
+               "category": "my_category",
+               "smtp_id": "filter001-2348927389",
+               "asm_group_id": null,
+               "msg_id": "xxx-abc-123",
+               "ip": null,
+               "url": null
+            }
+        ]
