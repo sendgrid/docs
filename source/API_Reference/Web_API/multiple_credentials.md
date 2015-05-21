@@ -112,7 +112,7 @@ Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/
 {% endparameters %}
 
 
-{% apiexample edit POST https://api.sendgrid.com/api/credentials/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email": 0, "web": 1, "api": 0} %}
+{% apiexample edit POST https://api.sendgrid.com/api/credentials/edit api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=name&password=password&permissions={"email":0,"web":1,"api":0} %}
   {% response json %}
 {
   "message": "success"

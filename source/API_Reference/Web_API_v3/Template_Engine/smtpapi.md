@@ -116,15 +116,15 @@ using the SMTP API header:
 
 This combination of template and substitutions, when used with a message
 that has a subject of `bacon` and a body of `Big news from Good Food
-Company!` will produce the following email to Brandon, and a separate
-customized email for Ben.
+Company!` will produce the following email to Alice, and a separate
+customized email for Bob.
 
 {% codeblock %}
-Subject: Dear Brandon, big sale on bacon!
+Subject: Dear Alice, big sale on bacon!
 
 Big news from Good Food Company!
 
-Hello there Brandon!
+Hello there Alice!
 
 You can buy it for only $4! Yay!
 {% endcodeblock %}

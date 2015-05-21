@@ -279,6 +279,35 @@ Categories
 
 If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
+{% anchor h3 %}
+Single Category
+{% endanchor %}
+
+Will be returned as a string
+
+{% codeblock lang:json %}
+[
+  {
+    "email": "john.doe@sendgrid.com",
+    "timestamp": 1337966815,
+    "category": "newuser",
+    "event": "open"
+  },
+  {
+    "email": "jane.doe@sendgrid.com",
+    "timestamp": 1337966815,
+    "category": "olduser",
+    "event": "open"
+  }
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Multiple Categories
+{% endanchor %}
+
+Will be returned as an array
+
 {% codeblock lang:json %}
 [
   {
@@ -298,11 +327,6 @@ If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are us
   }
 ]
 {% endcodeblock %}
-
- 
-{% info %}
-If you apply multiple categories to any of your outgoing messages, the returned data will be in the form of an array, if there's only one category however, it will be returned as a string. 
-{% endinfo %}
 
 {% anchor h2 %}
 Example 

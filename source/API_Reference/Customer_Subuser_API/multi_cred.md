@@ -69,7 +69,7 @@ Create a new subuser credential.
 {% parameters add %}
  {% parameter task Yes 'Must be set to <code>add</code>' 'Task to create a subuser credential' %}
  {% parameter user Yes 'The subuser name' 'The subuser whose multi cred users you are looking for' %}
- {% parameter credential Yes 'The new user name, unique for your account' 'The subuser whose multi cred users you are looking for' %}
+ {% parameter credential_name Yes 'The new user name, unique for your account' 'The subuser whose multi cred users you are looking for' %}
  {% parameter credential_password Yes 'The password for your credential. See the [SendGrid password requirements](https://sendgrid.com/docs/User_Guide/Account/Account_Settings/password.html)' 'The password for your subuser credential' %}
 {% endparameters %}
 
@@ -80,7 +80,9 @@ Create a new subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
 
@@ -107,7 +109,9 @@ Edit a subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
 
@@ -135,6 +139,8 @@ Delete a subuser credential.
 }
   {% endresponse %}
   {% response xml %}
-    <message>success</message>
+   <result>
+      <message>success</message>
+   </result>
   {% endresponse %}
 {% endapiexample %}
