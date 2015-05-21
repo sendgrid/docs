@@ -9,7 +9,7 @@ navigation:
 SendGrid's [SMTP API]({{ root_url }}/API_Reference/SMTP_API/) allows developers to specify custom scheduling parameters. Using the parameters defined below, SendGrid will allow a customer to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter. This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release them when the time stamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance.
 
 {% info %}
-Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 24 hours in advance.
+Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 72 hours in advance.
 {% endinfo %}
 
 {% warning %}
