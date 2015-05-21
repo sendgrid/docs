@@ -1,31 +1,61 @@
 ---
 layout: page
 weight: 100
-title: Apps Index
+title: Settings
+seo:
+  title: Settings
 navigation:
   show: true
 ---
 
-<p>You can access the list of Apps available to your account by clicking the <a href="https://sendgrid.com/app">Apps</a> menu item after logging in.
+{% info %}
+This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
+{% endinfo %}
 
-<ul class="regular">
-	<li><a href="address_whitelisting.html"><strong>Address Whitelisting</strong></a>*</li>
-	<li><a href="bcc.html"><strong>BCC</strong></a>*</li>
-	<li><a href="click_tracking.html"><strong>Click Tracking</strong></a></li>
-	<li><a href="domain_keys.html"><strong>Domain Keys</strong></a></li>
-	<li><a href="dkim.html"><strong>DKIM</strong></a>*</li>
-	<li><a href="email_templates.html"><strong>Legacy Email Templates</strong></a>*</li>
-	<li><a href="event_notification.html"><strong>Event Notification</strong></a></li>
-	<li><a href="footer.html"><strong>Footer</strong></a>*</li>
-    <li><a href="forward_spam.html"><strong>Forward Spam</strong></a>*</li>
-	<li><a href="google_analytics.html"><strong>Google Analytics</strong></a>*</li>
-	<li><a href="gravatar.html"><strong>Gravatar</strong></a>*</li>
-	<li><a href="new_relic.html"><strong>SendGrid for New Relic</strong></a></li>
-	<li><a href="open_tracking.html"><strong>Open Tracking</strong></a></li>
-	<li><a href="sendwithus.html"><strong>Sendwithus</strong></a></li>
-	<li><a href="spam_checker.html"><strong>Spam Checker</strong></a>*</li>
-	<li><a href="subscription_tracking.html"><strong>Subscription Tracking</strong></a></li>
-	<li><a href="template_engine.html"><strong>Template Engine</strong></a>*</li>  	
-</ul>
+SendGrid allows you to configure and control everything about your SendGrid account. All of the settings that you can manage through the User Interface can also be managed through the API v3.
 
-<p><i>*Only available for Silver and above packages.</i> Please refer to our <a href="https://sendgrid.com/pricing.html">Pricing Guide</a> for more details.</p>
+{% anchor h2 %}
+Account Details
+{% endanchor %}
+<p>Your basic account settings for username, password, email address, and business address details.</p>
+
+{% anchor h2 %}
+Alert Settings
+{% endanchor %}
+<p>Receive alerts about your account and your SendGrid behavior via email.</p>
+
+{% anchor h2 %}
+API Keys
+{% endanchor %}
+<p>Create and manage your API Keys, which allow you to use SendGrid from your application or website.</p>
+
+{% anchor h2 %}
+Billing Settings
+{% endanchor %}
+<p>Manage your account and payment settings</p>
+
+{% anchor h2 %}
+Inbound Parse
+{% endanchor %}
+<p>Send and push emails to SendGrid, which will be broken apart by our software and returned to you as data that you can use for your application.</p>
+
+{% anchor h2 %}
+Mail Settings
+{% endanchor %}
+<p>Control how SendGrid filters and processes your emails as they go out to your recipients.</p>
+
+{% anchor h2 %}
+Partners
+{% endanchor %}
+<p>Control settings for SendGrid partner services.</p>
+
+{% anchor h2 %}
+Subuser Management
+{% endanchor %}
+<p>Create and manage subusers to segment your email sending and have different settings for your segments.</p>
+
+{% anchor h2 %}
+Tracking
+{% endanchor %}
+
+<p>Control how your emails and your recipient email interaction behaviors are tracked within SendGrid.</p>
