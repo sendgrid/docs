@@ -22,7 +22,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 **Last Name** - This is be the last name of the representative from your company who should receive contacts from SendGrid.
 **Email address** - this is the address where you will be contacted by SendGrid for any account level alerts and notifications. This must be a valid and active email address that you routinely check.
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
-**Password** -  Please see our Password requirements page.
+**Password** -  Please see our [Password requirements]({root_url}/User_Guide/Account/Account_Settings/password.html) page.
 **Company** - The name of your company.
 **Address 1** - The first line of your address.
 **Address 2** - The second line of your address, if your business has one.
@@ -35,7 +35,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone. 
 {% endinfo %}
 
-**Timezone** - The [timezone]({{root_url}}/Glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such at Statistics and scheduling sends in our Marketing Emails Functionality.  Please make sure that your timezone is set to the same as your business.
+**Timezone** - The [timezone]({{root_url}}/Glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such at [Statistics]({root_url}/User_Guide/Settings/index.html) and scheduling sends in our [Marketing Emails]({root_url}/User_Guide/Marketing_Emails/index.html) Functionality.  Please make sure that your timezone is set to the same as your business.
 **Website** - Your company’s website
 **Phone** - Your company’s phone number, where SendGrid can reach the representative that should be contacted.
 **Billing Email** - if this email is added, SendGrid will send all your billing notifications to this address. If you do not specify this address, SendGrid will send your billing notifications to your account Email.
@@ -62,5 +62,5 @@ Changing your Password through the portal
 Changing your Password via Forgot Password
 {% endanchor %}
 
-If for some reason you cannot remember your password, go to the SendGrid login page and click ”Forgot Password”. From here, you will need to enter your SendGrid username. We will send you an email with account reactivation steps, please follow these steps to access your account again.
+If for some reason you cannot remember your password, go to the [SendGrid login page](https://sendgrid.com/login) and click ”[Forgot Password](https://sendgrid.com/user/forgotPassword)”. From here, you will need to enter your SendGrid username. We will send you an email with account reactivation steps, please follow these steps to access your account again.
 

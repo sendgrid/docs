@@ -139,6 +139,9 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 #######
 Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
+Redirect 301 /User_Guide/Account/billing_settings.html
+Redirect 301 /User_Guide/Account/billing_history.html
+Redirect 301 /User_Guide/Account/billing.html
 Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/attachments.html
 #merged this "App" with the new Template Engine Docs
