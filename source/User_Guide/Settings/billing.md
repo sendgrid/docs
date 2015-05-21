@@ -4,7 +4,7 @@ weight: 0
 title: Billing Settings
 seo:
   title: Billing Settings
-  description: Manage your SendGrid billinh settings
+  description: Manage your SendGrid billing settings
   keywords: billing settings
 navigation:
   show: true
