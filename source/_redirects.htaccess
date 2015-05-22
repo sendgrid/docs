@@ -158,6 +158,8 @@ Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_G
 #this app goes away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/Settings/index.html
+Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/Settings/dkim.html
+Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/Settings/domain_keys.html
 Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/Settings/partners.html
 Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/Settings/partners.html
 Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
