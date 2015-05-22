@@ -34,7 +34,7 @@ Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.co
 #
 #######
 #forced a redirect file at /Apps/index.html - the following redirect wouldn't take
-Redirect 301 /Apps/index.html https://sendgrid.com/docs/User_Guide/Apps/index.html
+Redirect 301 /Apps/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /Apps/address_whitelisting.html https://sendgrid.com/docs/User_Guide/Apps/address_whitelisting.html
 Redirect 301 /Apps/bcc.html https://sendgrid.com/docs/User_Guide/Apps/bcc.html
 #forced a redirect file at /Apps/bypass_list_management.html - the following redirect wouldn't take
@@ -48,9 +48,9 @@ Redirect 301 /Apps/footer.html https://sendgrid.com/docs/User_Guide/Apps/footer.
 Redirect 301 /Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Apps/forward_spam.html
 Redirect 301 /Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Apps/google_analytics.html
 Redirect 301 /Apps/gravatar.html https://sendgrid.com/docs/User_Guide/Apps/gravatar.html
-Redirect 301 /Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Apps/new_relic.html
+Redirect 301 /Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Apps/open_tracking.html
-Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Apps/sendwithus.html
+Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Apps/spam_checker.html
 Redirect 301 /Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Apps/subscription_tracking.html
 Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Apps/template_engine.html
@@ -147,6 +147,9 @@ Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/User_Guide/E
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
+Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/Settings/index.html
+Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/Settings/partners.html
+Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/Settings/partners.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/index.html
@@ -169,14 +172,6 @@ Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/warming_up.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html
-
-#######
-#
-# /docs/User_Guide/Apps/ - originally sendgrid.com/docs/User_Guide/Apps - moved to docs/User_Guide/Settings/
-#
-#######
-
-
 
 #######
 #

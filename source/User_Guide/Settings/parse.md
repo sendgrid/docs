@@ -1,8 +1,8 @@
 ---
 seo:
-  title: 
-  description:  
-  keywords: 
+  title: Inbound Parse
+  description: Manage your Inbound parse settings
+  keywords: inbound parse, inbound parse webhook, parse settings, inbound parse settings
 title: Inbound Parse
 weight: 0
 layout: page
