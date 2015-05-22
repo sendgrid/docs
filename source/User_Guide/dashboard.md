@@ -20,7 +20,7 @@ The SendGrid dashboard is designed to give you an at-a-glance view of your curre
 The Header Bar
 {% endanchor %}
 
-**Reputation Monitor** - Your [sender reputation]({root_url}/Glossary/sender_reputation.html) is an indicator of how we view your email sending practices based on how well your email is delivered, bounced, and how many spam reports you get.
+**Reputation Monitor** - Your [sender reputation]({{root_url}}/Glossary/sender_reputation.html) is an indicator of how we view your email sending practices based on how well your email is delivered, bounced, and how many spam reports you get.
 sender_reputation.png
 
 **Credits Used** - Unlimited means that you can send as many emails as you want, up to the parent’s account cap. Sometimes this is 3-6 times the parent account (TODO: check with compliance about the rules)
@@ -47,7 +47,7 @@ If you would like to see all of your email activity, please go to the [Email Act
 Transactional Emails
 {% endanchor %}
 
-This box shows you the information for sending transactional emails via SendGrid’s [SMTP Relay]({root_url}/Glossary/smtp_relay.html). Your API Key is only shown once, when you create it, so it will not be shown on your dashboard.
+This box shows you the information for sending transactional emails via SendGrid’s [SMTP Relay]({{root_url}}/Glossary/smtp_relay.html). Your API Key is only shown once, when you create it, so it will not be shown on your dashboard.
 
 {% anchor h2 %}
 Advanced Suppression Manager

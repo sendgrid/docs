@@ -28,7 +28,7 @@ Your billing details show you what plan you have and how you will be billed by S
 
 **Overage Price** - The price you pay per email when you send more emails than are available on your package.
 
-**Marketing** - The cost per marketing email when using [SendGrid’s Marketing Emails]({root_url}/User_Guide/Marketing_Emails/index.html) feature. 
+**Marketing** - The cost per marketing email when using [SendGrid’s Marketing Emails]({{root_url}}/User_Guide/Marketing_Emails/index.html) feature. 
 
 {% anchor h2 %}
 Invoices

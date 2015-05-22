@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Subusers Settings
+title: Settings
 seo:
   title: Subusers Settings
   description: Create and Manage your Subusers
@@ -34,7 +34,7 @@ The top block of information on your settings page is designed to give you at-a-
 
 {% anchor h2 %}
 Credit Allocation
-
+{% endanchor %}
 
 Each subuser will be automatically configured to have access to Unlimited email credits from your parent account. This is so that your subusers can send emails from the moment you create them.  It is up to you to set how these credits are allocated once you’ve create the subusers account and we give you a couple of optoins.
 

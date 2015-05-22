@@ -5,7 +5,7 @@ seo:
   title: API Keys
 title: API Keys
 navigation:
-  show: true
+  show: false
 ---
 
 {% warning %}

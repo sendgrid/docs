@@ -4,7 +4,7 @@ seo:
   description: The SendGrid User Guide provides information about the SendGrid Customer Portal
   keywords: user guide, customer portal, user interface
 title: About the User Guide
-weight: 0
+weight: -10
 layout: page
 navigation:
   show: true

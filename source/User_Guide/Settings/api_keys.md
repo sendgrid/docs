@@ -50,4 +50,4 @@ Click the gear icon in the same row as the key you want to inactivate. Choose â€
 Sending Email With an API Key
 {% endanchor %}
 
-You will need an API key to send email with SendGrid, we have provided [basic instructions for how to send emails with our API Keys]({root_url}/Classroom/Send/api_keys.html) in case you need them.
+You will need an API key to send email with SendGrid, we have provided [basic instructions for how to send emails with our API Keys]({{root_url}}/Classroom/Send/api_keys.html) in case you need them.

@@ -18,7 +18,7 @@ This page refers to our beta UI functionality. To find these features, please cl
 Click tracking
 {% endanchor %}
 
-Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your [Whitelabeled Link domain]({root_url}/User_Guide/Settings/Whitelabel/link.html) so that any time a customer clicks a link, SendGrid can track those [clicks]({root_url}/Glossary/clicks.html). 
+Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your [Whitelabeled Link domain]({{root_url}}/User_Guide/Settings/Whitelabel/link.html) so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html). 
 
 {% anchor h3 %}
 Settings
@@ -55,10 +55,10 @@ Open Tracking
 {% endanchor %}
 
 {% info %}
-If you are using [domain whitelabeling]({root_url}/User_Guide/Settings/Whitelabel/domains.html), then your open tracking image will be served from your whitelabel domain instead of from SendGrid.net.
+If you are using [domain whitelabeling]({{root_url}}/User_Guide/Settings/Whitelabel/domains.html), then your open tracking image will be served from your whitelabel domain instead of from SendGrid.net.
 {% endinfo %}
 
-Open Tracking adds an invisible image at the end of the email which can track email [opens]({root_url}/Glossary/opens.html). If the email recipient has images enabled on their email client, a request to SendGrid’s server for the invisible image is executed and an open event is logged. These Events are logged in your Statistics portal, the Email Activity interface, and are reported by the Event Webhook. 
+Open Tracking adds an invisible image at the end of the email which can track email [opens]({{root_url}}/Glossary/opens.html). If the email recipient has images enabled on their email client, a request to SendGrid’s server for the invisible image is executed and an open event is logged. These Events are logged in your Statistics portal, the Email Activity interface, and are reported by the Event Webhook. 
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 

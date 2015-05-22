@@ -87,6 +87,15 @@ Redirect 301 /Code_Examples/SMTP_API_Header_Examples/ruby.html https://sendgrid.
 
 #######
 #
+# /docs/Classroom - temporary redirects to avoid confusion
+#
+#######
+Redirect 301 /Classroom/index.html https://sendgrid.com/docs/index.html
+Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/index.html
+Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
+
+#######
+#
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######

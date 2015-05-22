@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Subusers Impersonation
+title: Impersonation
 seo:
   title: Subusers Impersonation
   description: Impersonate a subuser so you can see their specific settings.

@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: New Relic
 navigation:
-  show: true
+  show: false
 seo:
   title:  SendGrid for New Relic
 ---
