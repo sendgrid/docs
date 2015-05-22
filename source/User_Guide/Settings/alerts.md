@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Partner Settings
-  description: Manage your SendGrid partner settings
-  keywords: sendgrid partner settings, partner settings, 3rd party settings
-title: Partners
+  title: Alert Settings
+  description: Manage your SendGrid alerts
+  keywords: sendgrid alerts, account alerts, deliverability alerts
+title: Alerts
 weight: 0
 layout: page
 navigation:
