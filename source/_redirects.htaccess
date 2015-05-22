@@ -47,7 +47,7 @@ Redirect 301 /Apps/event_notification.html https://sendgrid.com/docs/User_Guide/
 Redirect 301 /Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Apps/google_analytics.html
-Redirect 301 /Apps/gravatar.html https://sendgrid.com/docs/User_Guide/Apps/gravatar.html
+Redirect 301 /Apps/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Apps/open_tracking.html
 Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
@@ -155,6 +155,8 @@ Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/Use
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
+#this app goes away as of May 27, 2015
+Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/Settings/index.html
 Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/Settings/partners.html
 Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/Settings/partners.html
