@@ -1,0 +1,54 @@
+---
+layout: page
+weight: 0
+title: Overview
+seo:
+  title: SendGrid Suppressions Overview
+  description: SendGrid will suppress emails that your recipients unsubscribe from or that recipient email servers reject.
+  keywords: suppressions, unsubscribes, email suppressions, email unsubscribes
+navigation:
+  show: true
+---
+
+
+This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
+
+{% anchor h2 %}
+Suppressions vs. Unsubscribes
+{% endanchor %}
+
+An unsubscribe is the action an email recipient takes when they opt-out of an email list. Typically, this is done by clicking the unsubscribe link in the email and viewing a website.
+
+A suppression is the action the sender takes when a recipient has opted out of an email list or when the recipient’s email server or provider has rejected emails sent to that address.
+
+This is an important distinction, because from the point of view of your recipients, you as the SendGrid customer are the sender. We have made this distinction in order to clearly define the difference between an action a recipient takes and an action SendGrid takes on your behalf.
+
+{% anchor h2 %}
+Managing Unsubscribes
+{% endanchor %}
+
+Managing unsubscribes is key to getting maximum email delivery. If your customers have an easy way to tell you that they’d like to stop receiving your email, instead of using the spam button, it will give you valuable insights without affecting your reputation.
+
+SendGrid has two different ways of processing unsubscribes depending on how you’re sending mail. If you use <a href="{{root_url}}/User_Guide/Settings/tracking.html">Subscription Tracking</a>, recipients can unsubscribe from all of the emails you’re sending. If you’re using the marketing email tool, recipients can unsubscribe from specific types of emails that they’d rather not receive anymore.
+
+If you are sending email through SendGrid and have the Subscription Tracking setting turned on, an unsubscribe option will be added to the footer of every email that gets sent through your account. A user who clicks the unsubscribe link will be added to your global unsubscribe list and **any** future attempts to send email to those users will be suppressed, unless they’re removed. You can also manage this list manually, adding and removing addresses via the UI or with the use of API calls.
+
+The Subscription Tracking setting also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
+
+{% anchor h2 %}
+Different Types of Suppressions
+{% endanchor %}
+
+SendGrid automatically suppresses emails sent to users for a variety of reasons in order to aid our customers in having the best possible reputation they can have by attempting to prevent unwanted mail.
+
+**<a href="{{root_url}}/User_Guide/Suppressions/global_unsubscribes.html">Global Unsubscribes</a>** - When a user unsubscribes from everything you might email them
+
+**<a href="{{root_url}}/User_Guide/Suppressions/global_unsubscribes.html">Group Unsubscribes</a>** - When a user unsubscribes from a specific group of your emails
+
+**<a href="{{root_url}}/User_Guide/Suppressions/bounces.html">Bounces</a>** - The recipient’s email server sends the email back to SendGrid
+
+**<a href="{{root_url}}/User_Guide/Suppressions/spam_reports.html">Spam Reports</a>** - The recipient marks your email as spam
+
+**<a href="{{root_url}}/User_Guide/Suppressions/blocks.html">Blocks</a>** - Your IP address is on a blacklist used by the recipient’s mail server
+
+**<a href="{{root_url}}/User_Guide/Suppressions/invalid_email.html">Invalid Emails</a>** - The recipient address does not exist at the mail server you sent to
