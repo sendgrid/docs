@@ -17,8 +17,8 @@ The events that can be associated with category include:
 * [Opens]({{root_url}}/Glossary/opens.html)
 * [Bounces]({{root_url}}/Glossary/bounces.html)
 * [Spam Reports]({{root_url}}/Glossary/spam_reports.html)
-* [Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html)
+* [Unsubscribes]({{root_url}}/User_Guide/Settings/tracking.html)
 
-The actual statistics included vary depending upon the set of enabled [Apps]({{root_url}}/User_Guide/Apps/index.html). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}/User_Guide/Apps/subscription_tracking.html), [Clicks]({{root_url}}/User_Guide/Apps/click_tracking.html), and [Opens]({{root_url}}/User_Guide/Apps/open_tracking.html) require that the associated App is enabled. Check out the [Apps tab](https://sendgrid.com/app) to see which apps you have enabled.
+The actual statistics included vary depending upon the set of enabled [Settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. [Unsubscribes]({{root_url}}/User_Guide/Settings/tracking.html), [Clicks]({{root_url}}/User_Guide/Settings/tracking.html), and [Opens]({{root_url}}/User_Guide/Settings/tracking.html) require that the associated App is enabled. Check out [Settings](https://sendgrid.com/beta/settings) to see which apps you have enabled.
 
 [Read more about categories]({{root_url}}/API_Reference/SMTP_API/categories.html) in the SMTP API section.

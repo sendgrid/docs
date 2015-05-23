@@ -45,6 +45,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/deliveries.html">Deliveries</a></li>
             <li><a href="{{root_url}}/Glossary/open_rate.html">Open Rate</a></li>
             <li><a href="{{root_url}}/Glossary/opens.html">Opens</a></li>
+            <li><a href="{{root_url}}/Glossary/rate_limiting.html">Rate Limiting</a></li>
             <li><a href="{{root_url}}/Glossary/request.html">Request</a></li>
             <li><a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a></li>
             <li><a href="{{root_url}}/Glossary/spam.html">Spam</a></li>
