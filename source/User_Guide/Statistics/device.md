@@ -1,7 +1,7 @@
 ---
 seo:
   title: Device Statistics
-  description: View and compare your device specific email statistics.
+  description: View and filter your device specific email statistics.
   keywords: Device statistics, SendGrid device statistics
 title: Device
 weight: 100
