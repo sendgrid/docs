@@ -1,7 +1,7 @@
 ---
 seo:
   title: Category Statistics Comparison
-  description: View and filter your Category specific SendGrid email statistics.
+  description: Compare statistics from your SendGrid email categories.
   keywords: compare category statistics, SendGrid compare category statistics, category statistic comparison
 title: Category Comparison
 weight: 100
