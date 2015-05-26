@@ -3,10 +3,7 @@
 # /API_Reference
 #
 #######
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_unsubscribes.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/unsubscribes.html
+
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
@@ -27,6 +24,11 @@ Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/
 Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/templates.html
 Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/versions.html
 Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/smtpapi.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_unsubscribes.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/unsubscribes.html
+Redirect 301 /API_Reference/Web_API_v3/event_activity.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
 
 #######
 #
