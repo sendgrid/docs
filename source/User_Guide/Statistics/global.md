@@ -1,9 +1,9 @@
 ---
 seo:
-  title:
-  description: Manage your SendGrid account from the dashboard
-  keywords: SendGrid dashboard, SendGrid customer portal, customer portal, dashboard
-title: Dashboard
+  title: Global Statistics
+  description: View and filter your global SendGrid statistics for your entire account.
+  keywords: Global SendGrid Statistics, SendGrid Global Statistics
+title: Global
 weight: 100
 layout: page
 navigation:
