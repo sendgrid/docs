@@ -104,7 +104,7 @@ Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/doc
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/email_activity.html
-Redirect 301 /Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/Glossary/email_error_messages.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 
@@ -177,6 +177,7 @@ Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/do
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html source/Glossary/email_error_messages.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/index.html
