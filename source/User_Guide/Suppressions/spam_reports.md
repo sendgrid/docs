@@ -4,8 +4,8 @@ weight: 0
 title: Spam Reports
 seo:
   title: Spam Reports
-  description: 
-  keywords: 
+  description: When a recipient marks your email as spam, their mail provider will let SendGrid know. We will help to prevent you from sending email to this recipient again.
+  keywords: spam reports, recipient spam report, recipient marked as spam, spam email report
 navigation:
   show: true
 ---
