@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Overview
+title: Advanced Suppression Manager
 seo:
   title: Advanced Suppression Manager
   description: Advanced Suppression Manager helps you to define and manage suppression groups to keep you out of the spam folder. 

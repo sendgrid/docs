@@ -41,7 +41,7 @@ Using the API
 You can manage your Global Unsubscribes via the [Advanced Suppression Manager Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html).
 
 {% anchor h2 %}
-Related Articles
+Related
 {% endanchor %}
 
 [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html).
