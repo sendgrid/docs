@@ -103,8 +103,7 @@ Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/D
 Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/categories.html
-Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/email_activity.html
-Redirect 301 /Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/Glossary/email_error_messages.html
+Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 
@@ -155,7 +154,6 @@ Redirect 301 /User_Guide/Account/billing_history.html https://sendgrid.com/docs/
 Redirect 301 /User_Guide/Account/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/Account/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
-Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/attachments.html
 Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
@@ -166,8 +164,7 @@ Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/Use
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-#this app goes away as of May 27, 2015
-Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
+Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/Settings/index.html
 Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/Settings/partners.html
 Redirect 301 /User_Guide/Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
@@ -176,15 +173,24 @@ Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_G
 Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/attachments.html
 Redirect 301 /User_Guide/Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html source/Glossary/email_error_messages.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/Suppressions/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https://sendgrid.com/docs/Glossary/spam.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/index.html https://sendgrid.com/docs/Glossary/undelivered_email.html
@@ -195,6 +201,8 @@ Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/Use
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
+#this app goes away as of May 27, 2015
+Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/Glossary/rate_limiting.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
