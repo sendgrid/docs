@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Sendwithus
 navigation:
-  show: true
+  show: false
 ---
 
 Enable the Sendwithus app via the [SendGrid Apps page](https://sendgrid.com/app)
