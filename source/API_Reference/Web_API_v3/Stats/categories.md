@@ -12,7 +12,7 @@ Category Stats provide all of your user's email statistics for your categories.
 GET
 {% endanchor %}
 
-Gets email statistics for the given categories.
+Gets email statistics for the given categories. If you don't pass any parameters, the endpoint will return a sum for each category 10 at a time.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
@@ -133,19 +133,20 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Gets the total sums of each email statistic metric for all categories over the
-given date range.
+Gets the total sums of each email statistic metric for all categories over the given date range.
 
 {% parameters get %}
+ {% parameter categories Yes 'Array of strings' 'The categories to get statistics for, up to 10' %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
- {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
+ {% parameter aggregate_by No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
+  {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/categories/stats/sums?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/categories/stats/sums?categories={categories}&start_date={start_date}&end_date={end_date}&aggregated_by={aggregated_by}&sort_by_metric={sort_by_metric}&sort_by_direction={sort_by_direction}&limit={limit}&offset={offset} %}
 {% v3response %}
 HTTP/1.1 200
 {
