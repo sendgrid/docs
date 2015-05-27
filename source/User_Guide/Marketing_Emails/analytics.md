@@ -18,7 +18,7 @@ Here, you’ll have access to:
 * [Bounces / Repeat Bounces]({{root_url}}/Glossary/bounces.html)
 * [Clicks / Unique Clicks / Click-through rate]({{root_url}}/Glossary/clicks.html)
 * [Deliveries]({{root_url}}/Glossary/deliveries.html)
-* [Invalid emails]({{root_url}}/User_Guide/Suppressions/invalid_email.html)
+* [Invalid emails]({{root_url}}/User_Guide/Suppressions/invalid_emails.html)
 * [Opens / Unique Opens]({{root_url}}/Glossary/opens.html)
 * [Requests]({{root_url}}/Glossary/request.html)
 * [Spam reports / Repeat spam reports]({{root_url}}/Glossary/spam_reports.html)
