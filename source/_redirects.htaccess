@@ -205,6 +205,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/drops.html https://sendgrid.com/docs/Glossary/drops.html
+Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/index.html https://sendgrid.com/docs/Glossary/undelivered_email.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https://sendgrid.com/docs/Glossary/spam.html
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Subscription_Tracking/index.html

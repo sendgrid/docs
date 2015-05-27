@@ -43,6 +43,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/bounces.html">Bounces</a></li>
             <li><a href="{{root_url}}/Glossary/clicks.html">Clicks</a></li>
             <li><a href="{{root_url}}/Glossary/deliveries.html">Deliveries</a></li>
+            <li><a href="{{root_url}}/Glossary/drops.html">Drops</a></li>
             <li><a href="{{root_url}}/Glossary/open_rate.html">Open Rate</a></li>
             <li><a href="{{root_url}}/Glossary/opens.html">Opens</a></li>
             <li><a href="{{root_url}}/Glossary/rate_limiting.html">Rate Limiting</a></li>
@@ -50,6 +51,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a></li>
             <li><a href="{{root_url}}/Glossary/spam.html">Spam</a></li>
             <li><a href="{{root_url}}/Glossary/throttling.html">Throttling</a></li>
+            <li><a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Emails</a></li>
         </ul>
     </div>
     <div class="col-md-4">
