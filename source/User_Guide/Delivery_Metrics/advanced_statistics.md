@@ -13,8 +13,7 @@ SendGrid provides customers with advanced statistics about their email delivery.
 about customers who are reading your emails. SendGrid also provides more [traditional email statistics]({{root_url}}/User_Guide/Delivery_Metrics/metrics.html).
 
 {% info %}
-These stats are in beta. Data may be delayed by up to 10 hours. The top
-of these reports will indicate the last time the data was updated.
+Data may be delayed by up to 10 hours. The top of these reports will indicate the last time the data was updated.
 {% endinfo %}
 
 {% anchor h2 %}

@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 Partner settings allow you to integrate your SendGrid account with our partners to increase your SendGrid experience and functionality.
 
 {% anchor h2 %}

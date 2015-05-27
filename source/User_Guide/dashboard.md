@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You should be able to see stats for the last 7 days about all of the emails you have sent through your SendGrid account.
 
 {% anchor h2 %}

@@ -10,11 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-
 You can setup alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
 
 For most alerts, you can choose to have the alert sent to you As Needed, Hourly, Daily, Weekly, or Monthly. The information contained in your alert will be for the last period of the alert. For example, if you choose weekly for the Stats alert, you will receive the stats for the last week.

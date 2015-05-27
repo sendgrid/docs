@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 When you create a subuser, you are given the basic options for setting up that subuser. Immediately upon saving, you will be taken to the subuser settings page. You can also get to this page by clicking the subuser’s name from the main subuser list.
 From this page, you get a quick overview of the subuser’s sending behavior and you can change everything about your subuser, restricting or allowing the mail sending capabilities of this subuser. 
 

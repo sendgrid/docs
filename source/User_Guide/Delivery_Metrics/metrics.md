@@ -11,8 +11,7 @@ navigation:
 
 {% info %}
  Most of the metrics we track for you are available from our web
-interface or through our <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a>. We are working on
-adding the new beta statistics.
+interface or through our <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event API</a>.
 {% endinfo %}
 
 {% info %}

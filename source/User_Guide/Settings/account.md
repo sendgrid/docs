@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 Your Profile will provide SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails.  Each section of your Profile page is editable by clicking the “Edit” button to the right of each section. Once you have made your changes, click the “Save” button. This will only save the settings for that section. If you decide to abandon your changes, click “Cancel”. 
 
 To edit your name and email address, click the “Change Contact Info” button to the right. A form will appear which will allow you to change these settings.
