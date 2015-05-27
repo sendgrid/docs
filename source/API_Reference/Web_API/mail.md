@@ -18,19 +18,21 @@ There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libra
 [View List »]({{root_url}}/Integrate/libraries.html)
 {% endinfo %}
 
-{% anchor h2 %}
-send
-{% endanchor %}
+{% warning %}
+The "Try It" functionality is not a sandbox. These are real API calls that consume email credits on your account.
+{% endwarning %}
 
 {% info %}
 When you make an API request to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
 {% endinfo %}
 
-Send email.
+{% anchor h2 %}
+send
+{% endanchor %}
 
-{% warning %}
-The "Try It" functionality is not a sandbox. These are real messages that consume credits on your account.
-{% endwarning %}
+SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be used when sending email over the API.
+
+Send email.
 
 {% parameters mail %}
  {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
@@ -48,7 +50,7 @@ The "Try It" functionality is not a sandbox. These are real messages that consum
  {% parameter 'replyto' 'No' 'Must be a valid email address' 'Append a reply-to field to your email message' %}
  {% parameter 'date' 'No' 'Must be a valid [RFC 2822 formatted date](http://www.faqs.org/rfcs/rfc2822)' 'Specify the date header of your email. One example: "Thu, 21 Dec 2000 16:01:07 +0200". PHP developers can use: *date('r');*' %}
  {% parameter 'files' 'No' 'Must be less than 7MB' 'Files to be attached. The file contents must be part of the multipart HTTP POST. Ex: files[file1.jpg]=file1.jpg&files[file2.pdf]=file2.pdf' %}
- {% parameter 'content' 'No' 'Required for sending inline images' 'Content IDs of the files to be used as inline images. Content IDs should match the cids used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `<img src="cid:ii_139db99fdb5c3704"></img>`' %}
+ {% parameter 'content' 'No' 'Required for sending inline images' 'Content IDs of the files to be used as inline images. Content IDs should match the cids used in the HTML markup. Ex: content[file1.jpg]=ii_139db99fdb5c3704 would correspond with the HTML `<img src="cid:ii_139db99fdb5c3704"></img>`' and files[file1.jpg] would contain the contents. %}
  {% parameter 'headers' 'No' 'Must be in valid JSON format without integers' 'A collection of key/value pairs in JSON format. This is specifically for non-SendGrid custom [extension headers](http://tools.ietf.org/html/rfc5322#section-2.2). Each key represents a header name and the value the header value. Ex: `{"X-Accept-Language": "en", "X-Mailer": "MyApp"}`' %}
 {% endparameters %}
 
