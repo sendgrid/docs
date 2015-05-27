@@ -192,7 +192,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_supp
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/resubscription_of_users.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
@@ -210,6 +210,7 @@ Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/Glossary/rate_limiting.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Track/clicktracking_ssl.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/content_delivery_networks.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html https://sendgrid.com/docs/Classroom/Send/segmenting_traffic.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/smtp_ports.html https://sendgrid.com/docs/Classroom/Basics/smtp_ports.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
