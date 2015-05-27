@@ -151,6 +151,7 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classroom/Send/api_keys.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
+Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
 Redirect 301 /User_Guide/Account/Account_Settings/password.html https://sendgrid.com/docs/Classroom/Basics/password.html
 Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
@@ -203,7 +204,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Subscription_Tracking/index.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
-Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Account_Settings/multiple_credentials.html
+Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
