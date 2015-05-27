@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-These are the API endpoints to manage the [Multiple Credentials feature]({{root_url}}/User_Guide/Account/multiple_credentials.html).
+These are the API endpoints to manage the [Multiple Credentials feature]({{root_url}}/User_Guide/Settings/multiple_credentials.html).
 
 {% anchor h2 %}
 get 
