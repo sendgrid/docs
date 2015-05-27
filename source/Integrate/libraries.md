@@ -155,7 +155,6 @@ Ruby
 -   [sendgrid-rails](http://github.com/PavelTyk/sendgrid-rails) *by Pavel Tsiukhtsiayeu* - Extends ActionMailer with SendGrid methods
 -   [gatling_gun](http://github.com/okrb/gatling_gun) *by James Edward Gray II* - Simple wrapper over SendGrid's Marketing Email API.
 -   [sendgrid_api](http://github.com/markedmondson/sendgrid_api) *by Mark Edmondson* - Implements an ActionMailer that delivers through the SendGrid Web API.
--   [sendgrid-ruby](https://github.com/SendGridJP/sendgrid-ruby) *by SendGridJP* - SendGrid rubygem for SendGrid Web API that aims the same functionality with official library.
 -   [sendgrid4r](https://github.com/awwa/sendgrid4r) *by Wataru Sato* - Ruby wrapper for the SendGrid Web API v3.
 
 {% anchor h3 %}
@@ -167,6 +166,12 @@ Titanium
 {% anchor h2 %}
 Webhook Libraries 
 {% endanchor %}
+
+{% anchor h3 -C-sharp-webhooks %}
+C#
+{% endanchor %}
+
+-   [C# Webhooks](https://github.com/mirajavora/sendgrid-webhooks) - *Community contributed library*
 
 {% anchor h3 -Django-Webhooks %}
 Django 

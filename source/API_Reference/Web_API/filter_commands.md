@@ -16,7 +16,7 @@ Get Available
 
 List all of the available apps.
 
-*Note: The name entry is used in all the other API calls to identify an app.* For a list of all the apps and parameters accesible with the Web API you can check the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page.
+*Note: The name entry is used in all the other API calls to identify an app.* For a list of all the apps and parameters accessible with the Web API you can check the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page.
 
 {% apiexample getavailable GET https://api.sendgrid.com/api/filter.getavailable api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
