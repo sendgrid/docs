@@ -151,6 +151,7 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classroom/Send/api_keys.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
+Redirect 301 /User_Guide/Account/Account_Settings/password.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/billing_settings.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/Account/billing_history.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
