@@ -51,7 +51,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a></li>
             <li><a href="{{root_url}}/Glossary/spam.html">Spam</a></li>
             <li><a href="{{root_url}}/Glossary/throttling.html">Throttling</a></li>
-            <li><a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Emails</a></li>
+            <li><a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Email</a></li>
         </ul>
     </div>
     <div class="col-md-4">
