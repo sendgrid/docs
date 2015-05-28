@@ -42,8 +42,8 @@ Redirect 301 /Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.h
 #forced a redirect file at /Apps/bypass_list_management.html - the following redirect wouldn't take
 Redirect 301 /Apps/bypass_list_management.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/Settings/domain_keys.html
-Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/Settings/dkim.html
+Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
@@ -164,16 +164,16 @@ Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/Settings/dkim.html
-Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/Settings/domain_keys.html
+Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/Settings/index.html
-Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/Settings/partners.html
+Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
+Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /User_Guide/Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/Settings/partners.html
+Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
 #merged this "App" with the new Template Engine Docs
@@ -222,6 +222,10 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.ht
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/smtp_ports.html https://sendgrid.com/docs/Classroom/Basics/smtp_ports.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app goes away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
