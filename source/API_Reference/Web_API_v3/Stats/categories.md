@@ -136,7 +136,6 @@ GET
 Gets the total sums of each email statistic metric for all categories over the given date range.
 
 {% parameters get %}
- {% parameter categories Yes 'Array of strings' 'The categories to get statistics for, up to 10' %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
  {% parameter aggregate_by No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
@@ -146,7 +145,7 @@ Gets the total sums of each email statistic metric for all categories over the g
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/categories/stats/sums?categories={categories}&start_date={start_date}&end_date={end_date}&aggregated_by={aggregated_by}&sort_by_metric={sort_by_metric}&sort_by_direction={sort_by_direction}&limit={limit}&offset={offset} %}
+{% apiv3example get GET /v3/categories/stats/sums?start_date={start_date}&end_date={end_date}&aggregated_by={aggregated_by}&sort_by_metric={sort_by_metric}&sort_by_direction={sort_by_direction}&limit={limit}&offset={offset} %}
 {% v3response %}
 HTTP/1.1 200
 {

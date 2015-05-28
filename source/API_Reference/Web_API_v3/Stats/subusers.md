@@ -21,7 +21,7 @@ Gets email statistics for the given subusers.
  {% parameter subusers Yes 'Array of strings' 'The subusers to get statistics for, up to 10' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/subusers/stats?start_date=2015-01-01&end_date=2015-01-02&subusers=user1&subusers=user2 %}
+{% apiv3example get GET /v3/subusers/stats?subusers={subusers}&subusers={subusers}&start_date={start_date}&end_date={end_date}&aggregated_by={aggregated_by} %}
 {% v3response %}
 HTTP/1.1 200
 [
