@@ -12,7 +12,7 @@ Access your email statistics via the New Relic Dashboard.
 
 ![]({{root_url}}/images/new_relic.png)
 
-In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the app enabled.
+In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled.
 
 * * * * *
 
@@ -31,7 +31,7 @@ This can be found by accessing the SendGrid's Plugin page on New Relic or from t
 
 ![]({{root_url}}/images/newrelic-settings.png)
 
-In the New Relic app settings you can enable the statistics for your subusers.
+In the New Relic settings you can enable the statistics for your subusers.
 
 {% warning %}
 You will receive statistics only for 100 subusers

@@ -6,7 +6,7 @@ navigation:
   show: false
 ---
 
-Enable the Sendwithus app via the [SendGrid Partner Settings page]({{site.app_url}}/settings/partners)
+Enable the Sendwithus setting via the [SendGrid Partner Settings page]({{site.app_url}}/settings/partners)
 
 ![]({{root_url}}/images/sendwithus.png)
 
@@ -18,7 +18,7 @@ Settings
 
 Step 1. Enter an API Key
 
-On the settings page you need to input an API key from Sendwithus so that SendGrid can manage certain settings from the "App Settings" page. If you do not have a Sendwithus account, you can click the [If don't have one, create an account here](https://www.sendwithus.com/partners/sendgrid?campaignid=15785&mbsy=77nv3&src=sendgrid) link.
+On the settings page you need to input an API key from Sendwithus so that SendGrid can manage certain settings from the "Settings" page. If you do not have a Sendwithus account, you can click the [If don't have one, create an account here](https://www.sendwithus.com/partners/sendgrid?campaignid=15785&mbsy=77nv3&src=sendgrid) link.
 
 ![]({{root_url}}/images/sendwithus_settings1.png)
 
