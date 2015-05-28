@@ -306,7 +306,7 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Gets email statistics by browser.
+Gets email statistics by browser. You can add multiple browsers to the URL, by using the `browsers` parameter multiple times.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
