@@ -14,13 +14,9 @@ A drop occurs when our systems identify that a message is sent to an email addre
 How to identify Drops
 {% endanchor %}
 
-On the [Global Stats Dashboard](https://sendgrid.com/statistics/overview), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
+On the [Global Stats Dashboard]({{root_url}}/User_Guide/Statistics/global.html), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
-![Global Stats Drop]({{root_url}}/images/drops_1.png)
-
-In [Email Activity](https://sendgrid.com/logs/index), the drops are marked as seen below. Clicking on the event, will show more details about it, including the reason for which the email was dropped.
-
-![Email Reports]({{root_url}}/images/drops_3.png)
+You will also find drops in your [Email Activity](https://sendgrid.com/beta/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 
 {% info %}
 If the email address is on the Unsubscribe list the reason will say "Unsubscribed Address"; if on the Spam report list, it will say "Spam Reporting Address" and if on the Invalid Emails list, it will say "Invalid".*
@@ -40,11 +36,7 @@ Some other reasons for which SendGrid may drop emails are:
 How to remove Drops
 {% endanchor %}
 
-If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. You can visit all the suppression lists under the Email Reports tab (except the Blocks list which is not a suppression list):
-
-![Email Activity Drop]({{root_url}}/images/drops_2.gif)
-
-Removing an address from the suppression lists will allow you to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again. 
+If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. You can visit your suppression lists and removing an address from the bounces list. Then you will be able to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again. 
 
 {% info %}
 NOTE: We cannot re-deliver messages that have been Dropped or appear on suppression lists, but we will attempt future messages once the address has been removed from the list.

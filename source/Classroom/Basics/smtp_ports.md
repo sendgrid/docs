@@ -6,7 +6,7 @@ seo:
   title: SMTP Ports
   description: If you're having difficulty with SendGrid, you can connect via unencrypted or TLS on ports 25, 2525, and 587. You can connect via SSL on port 465.
 navigation:
-  show: true
+  show: false
 ---
 
 Many hosting providers and ISPs block port 25 as a default practice. When trying to connect to smtp.sendgrid.net remember that ports 25, 2525, 587, and 465 are all available for use.

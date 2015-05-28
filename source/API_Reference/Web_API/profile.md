@@ -94,7 +94,7 @@ setPassword
 {% endanchor %}
 
 {% parameters set %}
- {% parameter 'password' 'Yes' 'Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)' 'Your new password' %}
+ {% parameter 'password' 'Yes' 'Please see the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'Your new password' %}
  {% parameter 'confirm_password' 'Yes' 'Must match password parameter' 'Confirm new password' %}
 {% endparameters %}
 
