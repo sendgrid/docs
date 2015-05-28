@@ -5,11 +5,11 @@ title: Attachments
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 {% anchor h2 %}
-Limitations 
+Limitations
 {% endanchor %}
 
 The total message size is limited to 20,480,000 bytes, or approximately
@@ -27,10 +27,10 @@ Best Practices
 {% endanchor %}
 
 Attachments are in and of themselves potential risks when sending email.
-Email filters are more likely to prevent delivery of a message that has an attachment 
+Email filters are more likely to prevent delivery of a message that has an attachment
 due to the risk of viruses.
 
-A good alternative to attaching a file to your message is to place it on a page of your website, 
+A good alternative to attaching a file to your message is to place it on a page of your website,
 and then provide a link to that web page within your message body.
 
 {% anchor h2 %}
