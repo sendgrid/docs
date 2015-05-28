@@ -234,7 +234,7 @@ Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/thro
 Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Accounts/Account_Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/warming_up.html
-Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html
+Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 
 #######
 #
