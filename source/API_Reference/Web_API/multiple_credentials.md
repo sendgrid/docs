@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-These are the API endpoints to manage the [Multiple Credentials feature]({{root_url}}/User_Guide/Account/multiple_credentials.html).
+These are the API endpoints to manage the [Multiple Credentials feature]({{root_url}}/User_Guide/Settings/multiple_credentials.html).
 
 {% anchor h2 %}
 get 
@@ -76,7 +76,7 @@ Retrieve a list of all credentials, or permissions for a specific credential.
 Add 
 {% endanchor %}
 
-This API call allows user to add a new set of credentials to their account. Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html) before proceeding.
+This API call allows user to add a new set of credentials to their account. Please see the [SendGrid password requirements]({{root_url}}{{site.password_requirements}}) before proceeding.
 
 {% parameters add %}
  {% parameter 'username' 'Yes' 'alphanumeric' 'Enter a username for the new account' %}
@@ -103,7 +103,7 @@ This API call allows user to add a new set of credentials to their account. Plea
 Edit 
 {% endanchor %}
 
-Please see the [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html) before proceeding.
+Please see the [SendGrid password requirements]({{root_url}}{{site.password_requirements}}) before proceeding.
 
 {% parameters edit %}
  {% parameter 'username' 'Yes' 'alphanumeric' 'The existing credentials to edit' %}
