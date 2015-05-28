@@ -44,7 +44,7 @@ NOTE: We cannot re-deliver messages that have been Dropped or appear on suppress
 
 *Since SendGrid’s got my back and my reputation is not affected by these Drops, why should I care about removing them?*
 
-Your lists will be cleaner and even if we do drop the messages intended to addresses that are already on one of the suppression lists, we do accept and process these requests before we drop them. Since this is the case, you are still charged credits for these emails.
+Your lists will be cleaner and even if we do drop the messages intended to addresses that are already on one of the suppression lists, we do accept and process these requests before we drop them. Since this is the case, you are still charged for these emails.
 
 {% anchor h3 %}
 Clean your lists

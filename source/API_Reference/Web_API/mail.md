@@ -19,7 +19,7 @@ There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libra
 {% endinfo %}
 
 {% warning %}
-The "Try It" functionality is not a sandbox. These are real API calls that consume email credits on your account.
+The "Try It" functionality is not a sandbox. These are real API calls that consume emails on your account.
 {% endwarning %}
 
 {% info %}
