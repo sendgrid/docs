@@ -36,6 +36,6 @@ IP whitelabeling uses the [Whitelabel Wizard]({{root_url}}/User_Guide/Setting_Up
 
 As an example, if an email is sent from a non-whitelabeled account, Gmail will identify the message as being sent “via sendgrid.com.” However, with an account that has used IP whitelabeling, the message only references your domain. By whitelabeling your IP address, you can improve deliverability and increase your IP reputation.
 
-IP whitelabeling is only available to customers with [Silver, Gold, or Platinum packages]({{site.site_url}}/transactional-email/pricing). If you want to improve your email deliverability as much as possible, we suggest upgrading your account so that you have a dedicated IP address that you can then whitelabel.
+IP whitelabeling is only available to customers with [Pro 100k plans]({{site.site_url}}/transactional-email/pricing) or higher. If you want to improve your email deliverability as much as possible, we suggest upgrading your account so that you have a dedicated IP address that you can then whitelabel.
 
 [Contact SendGrid’s support team](https://sendgrid.zendesk.com/hc/en-us) today to learn more about IP whitelabeling, or watch our [Whitelabel Wizard video]({{root_url}}/VidGrid/whitelabel.html) to learn about whitelabeling and why you should use it.

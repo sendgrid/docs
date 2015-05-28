@@ -42,9 +42,8 @@ Settings
 
 Some ISPs or e-mail clients (such as Hotmail or Outlook) will display a message with the Sender header reading "on behalf of" followed by the address that is in the Sender header. To remove this, do one of the following:
 
-1.Disable the Domain Keys filter in the filters section of your account
-
-2.Upgrade to a package (Silver or higher) that provides [Whitelabel]({{site.app_url}}/settings/whitelabel) support and set up the Domain Keys record in your DNS
+1. Disable the Domain Keys filter in the filters section of your account
+2. Upgrade to a package (Pro 100k or higher) that provides [Whitelabel]({{site.app_url}}/settings/whitelabel) support and set up the Domain Keys record in your DNS
 
 Settings may be changed through:
 

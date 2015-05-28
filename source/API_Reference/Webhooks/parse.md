@@ -9,7 +9,7 @@ navigation:
 <iframe src="https://player.vimeo.com/video/95798301" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% info %}
-Available to Silver and higher packages or to our free demo accounts.
+Available to all accounts except Lite.
 {% endinfo %}
 
 {% info %}

@@ -55,7 +55,9 @@ Don't want to include another hostname lookup?
 
 If you would rather not include SendGrid's SPF hostname lookup in your record, or perhaps you just have too many already, you can also choose to give permission to a specific IP address to send mail for your domain. This is accomplished using the ip4 mechanism.
 
-If you have a Silver or higher level package, you can choose to specify your dedicated IP address as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain. An example of such an include looks like this:
+If you have a Pro 100k or higher level package, you can [whitelabel your dedicated IP]({{root_url}}/User_Guide/Settings/Whitelabel/ips.html), meaning that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain.
+
+An example of doing this manually looks like this:
 
 {% codeblock %}
 v=spf1 a mx include:_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 ~all
