@@ -10,9 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
 
 {% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
@@ -71,7 +68,7 @@ To change this graph to see another metric for your recipient’s devices, choos
 Individual Metrics Figures
 {% endanchor %}
 
-When you initially choose the devices to compare, this graph will show you the actual open numbers over time for each of the compared devices. 
+When you initially choose the devices to compare, this graph will show you the actual open numbers over time for each of the compared devices.
 
 You can remove individual devices from the list of devices at the top of this page. The graph will refresh, showing only the selected subusers.
 

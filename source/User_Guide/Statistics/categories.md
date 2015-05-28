@@ -11,16 +11,12 @@ navigation:
 ---
 
 {% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-{% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
 Categories can help organize your email analytics by enabling you to “tag” emails by type. Just as you can view the statistics on all your [email activity]({{root_url}}/User_Guide/email_activity.html), you can go a step further and view the statistics broken down to a particular category.
 
-The actual statistics included vary depending upon your [account settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated settings are enabled. 
+The actual statistics included vary depending upon your [account settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated settings are enabled.
 
 In order to see statistics for a category, select the category and the page will show you both a graph and a table of your category’s email statistics.
 

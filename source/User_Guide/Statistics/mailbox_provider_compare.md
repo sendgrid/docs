@@ -12,10 +12,6 @@ navigation:
 
 
 {% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-{% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
@@ -31,7 +27,7 @@ Your top most graph will show you how each selected mailbox provider has fared f
 Individual Metrics Comparison
 {% endanchor %}
 
-This graph will show you the mailbox provider stats for the selected metric. To change the metric, select it from the button at the top of the page. 
+This graph will show you the mailbox provider stats for the selected metric. To change the metric, select it from the button at the top of the page.
 
 You can remove individual providers from the graph by clicking the button above and to the right of this chart and unchecking the boxes next to the provider name. The graph will refresh, showing only the stats for the selected mailbox providers.
 

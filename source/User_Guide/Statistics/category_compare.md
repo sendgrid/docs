@@ -10,16 +10,13 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
 
 {% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
 
-Categories can help organize your email analytics by enabling you to “tag” emails by type. As a result, you may want to compare one category to another. The category comparison tool allows you to do this. 
+Categories can help organize your email analytics by enabling you to “tag” emails by type. As a result, you may want to compare one category to another. The category comparison tool allows you to do this.
 
 {% anchor h2 %}
 Select Your Categories
@@ -31,7 +28,7 @@ You can compare up to 10 categories at a time. To select them, click the “+”
 Comparison Overview
 {% endanchor %}
 
-Once you have selected the categories, your top most graph will show you how each selected category has fared for each individual metric in a single graph. Each category will be assigned a color in this bar chart. 
+Once you have selected the categories, your top most graph will show you how each selected category has fared for each individual metric in a single graph. Each category will be assigned a color in this bar chart.
 
 You can remove individual categories from the list of categories you selected initially, by clicking the “Categories” button and unchecking categories. The graph will refresh, showing only the selected categories.
 
@@ -41,7 +38,7 @@ You can change which metrics, date, or grouping by adjusting the [statistics fil
 Individual Metrics Comparison
 {% endanchor %}
 
-When you initially choose the categories to compare, this graph will be titled “Comparison for Deliveries” and will show you the delivery rates over time for each of the compared categories. 
+When you initially choose the categories to compare, this graph will be titled “Comparison for Deliveries” and will show you the delivery rates over time for each of the compared categories.
 
 You can remove individual categories from the list of categories you selected initially, by clicking the “Categories” button and unchecking categories. The graph will refresh, showing only the selected categories.
 
@@ -51,7 +48,7 @@ To change this graph to see another metric for your categories, click the button
 Individual Metrics Figures
 {% endanchor %}
 
-When you initially choose the categories to compare, this table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared categories. 
+When you initially choose the categories to compare, this table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared categories.
 
 You can remove individual categories from the list of categories you selected initially, by clicking the “Categories” button and unchecking categories. The graph will refresh, showing only the selected categories.
 
