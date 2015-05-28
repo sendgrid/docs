@@ -6,14 +6,14 @@ navigation:
   show: false
 ---
 
-Enable the Sendwithus app via the [SendGrid Apps page](https://sendgrid.com/app)
+Enable the Sendwithus app via the [SendGrid Partner Settings page]({{site.app_url}}/settings/partners)
 
 ![]({{root_url}}/images/sendwithus.png)
 
 * * * * *
 
 {% anchor h2 %}
-Settings 
+Settings
 {% endanchor %}
 
 Step 1. Enter an API Key
@@ -37,10 +37,10 @@ If you do not have any SendGrid Instances on Sendwithus, there are 2 options:
 ​1. Create an SendGrid Instance using the the main account. This is done by creating a credential on SendGrid that will permit Sendwithus to interact with the SendGrid API.
 
 {% warning %}
-Caution: This will change the Event URL, Clicktracking, and Opentracking so that Sendwithus can keep track of deliverability. If you do not want these to change, please consider using the second option. 
+Caution: This will change the Event URL, Clicktracking, and Opentracking so that Sendwithus can keep track of deliverability. If you do not want these to change, please consider using the second option.
 {% endwarning %}
 
-​2. Create an SendGrid Instance using a subuser account. In order to use this option, you must have the ability to create subusers, (silver and higher accounts) and not have reached the subuser limit for your account. Using this option, all the Sendwithus settings will be created on the subuser account. Emails will be sent using the subuser account, thus to be able to see the email statistics, you must select the subuser account on the [Statistics Dashboard](https://sendgrid.com/statistics).
+​2. Create an SendGrid Instance using a subuser account. In order to use this option, you must have the ability to create subusers, and not have reached the subuser limit for your account. Using this option, all the Sendwithus settings will be created on the subuser account. Emails will be sent using the subuser account, thus to be able to see the email statistics, you must select the subuser account on the [Statistics Dashboard]({{site.app_url}}/statistics/subuser).
 
 In each case, the SendGrid Instance created will be set as the default on Sendwithus.
 

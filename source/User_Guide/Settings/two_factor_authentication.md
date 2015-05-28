@@ -25,11 +25,11 @@ Set up 2FA
 
 * Log in to your SendGrid account like normal.
 
-* On the Account Overview page, click on [Account Settings](https://sendgrid.com/user/account).
+* On the Account Overview page, click on [Account Settings]({{site.app_url}}/settings/acount).
 
 ![Account Settings]({{root_url}}/images/account_settings.png)
 
-* On the right-hand side of the screen, click on [Setup Multifactor Authentication](https://sendgrid.com/multifactor/configure)
+* On the right-hand side of the screen, click on [Setup Multifactor Authentication]({{site.app_url}}/multifactor/configure)
 
 * From the Multifactor Authentication page, enter your phone number, and click on “Send Text Message.”
 
@@ -46,7 +46,7 @@ Set up 2FA
 * Now, whenever you log in to SendGrid, you’ll be prompted to enter a verification code that is sent to your phone at the time of login.
 
 
-*To remove 2FA from your SendGrid account, please [contact support](https://support.sendgrid.com)*
+*To remove 2FA from your SendGrid account, please [contact support]({{site.support_url}})*
 
 Other Resources:
 

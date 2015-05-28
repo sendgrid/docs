@@ -6,10 +6,10 @@ navigation:
   show: true
 ---
 
-Manage your SendGrid [profile](https://sendgrid.com/user/profile) settings using our [Web API]({{root_url}}/API_Reference/Web_API/index.html).
+Manage your SendGrid [profile](https://sendgrid.com/settings/account) settings using our [Web API]({{root_url}}/API_Reference/Web_API/index.html).
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 {% apiexample get GET https://api.sendgrid.com/api/profile.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
@@ -57,7 +57,7 @@ get
 * * * * *
 
 {% anchor h2 %}
-set 
+set
 {% endanchor %}
 
 {% parameters set %}
@@ -90,7 +90,7 @@ set
 * * * * *
 
 {% anchor h2 %}
-setPassword 
+setPassword
 {% endanchor %}
 
 {% parameters set %}
@@ -116,11 +116,11 @@ setPassword
 * * * * *
 
 {% anchor h2 %}
-setUsername 
+setUsername
 {% endanchor %}
 
 {% warning %}
-Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately. 
+Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
 {% endwarning %}
 
 {% parameters reset %}
@@ -145,11 +145,11 @@ Please note, your account username is used to login to our SMTP server and the w
 * * * * *
 
 {% anchor h2 %}
-setEmail 
+setEmail
 {% endanchor %}
 
 {% info %}
-Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link. 
+Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.
 {% endinfo %}
 
 {% parameters setusername %}

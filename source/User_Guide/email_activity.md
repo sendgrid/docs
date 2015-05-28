@@ -40,7 +40,7 @@ You will be able to see data about the following types of email events in the Em
 **Deferred** - The recipient mail server asked SendGrid to stop sending emails so fast.
 
 **Drops** - SendGrid will drop an email when the contact on that email is in one of your suppression groups, the recipient 
-email previously bounced, or that recipient has marked your email as spam. For more information, see [My Emails Are Being Dropped](https://support.sendgrid.com/hc/en-us/articles/200181728-My-emails-are-being-dropped-).
+email previously bounced, or that recipient has marked your email as spam. For more information, see [My Emails Are Being Dropped]({{site.support_url}}/hc/en-us/articles/200181728-My-emails-are-being-dropped-).
 
 **[Bounces]({{root_url}}/Glossary/bounces.html)** - When an email is attempted to be delivered, but the recipient mail server 
 

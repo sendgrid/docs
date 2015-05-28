@@ -28,7 +28,7 @@ You can then give your recipients more control over the types of emails they wan
 Make sure your group names and descriptions are customer friendly! Your customers will see these group names and descriptions when they unsubscribe from your emails. 
 {% endinfo %}
 
-All of your groups will be visible on the [Advanced Suppression Manager](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Advanced Suppression Manager API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Advanced Suppression Manager]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Advanced Suppression Manager API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) endpoints for managing your groups and suppressions.
 
 {% anchor h2 %}
 Add A Suppression Group
@@ -54,13 +54,13 @@ The emails should not be enclosed in quotes and should be NOT be formatted like 
 This CSV should have a list of email addresses in the first column. It can include a header row or extra columns but this ancillary information will be ignored.
 {% endinfo %}
 
-To upload a CSV of recipients who should not receive this group’s emails, click the gear icon at the right of the suppression group name. When you select “upload CSV” a window will pop out. Drag your CSV and click “Done”. SendGrid will consume your CSV file and add the emails it finds to your group. From that point on, any emails sent with this group will not go to the recipients in this list. To view which group a recipient is in, go to the [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes) page and search by that recipient’s email address.
+To upload a CSV of recipients who should not receive this group’s emails, click the gear icon at the right of the suppression group name. When you select “upload CSV” a window will pop out. Drag your CSV and click “Done”. SendGrid will consume your CSV file and add the emails it finds to your group. From that point on, any emails sent with this group will not go to the recipients in this list. To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
 
 {% anchor h3 %}
 Manually Add Suppression Group Recipients
 {% endanchor %}
 
-To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the suppression group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this suppression group will not go to this recipient.  To view which group a recipient is in, go to the [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes) page and search by that recipient’s email address.
+To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the suppression group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this suppression group will not go to this recipient.  To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
 
 {% anchor h2 %}
 Export a Suppression Group List

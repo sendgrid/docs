@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Your Profile will provide SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails.  Each section of your Profile page is editable by clicking the “Edit” button to the right of each section. Once you have made your changes, click the “Save” button. This will only save the settings for that section. If you decide to abandon your changes, click “Cancel”. 
+Your Profile will provide SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails.  Each section of your Profile page is editable by clicking the “Edit” button to the right of each section. Once you have made your changes, click the “Save” button. This will only save the settings for that section. If you decide to abandon your changes, click “Cancel”.
 
 To edit your name and email address, click the “Change Contact Info” button to the right. A form will appear which will allow you to change these settings.
 
@@ -39,7 +39,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 **Zip** - The Zip code in which your company operates.
 
 {% info %}
-If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone. 
+If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone.
 {% endinfo %}
 
 **Timezone** - The [timezone]({{root_url}}/Glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such at [Statistics]({{root_url}}/User_Guide/Settings/index.html) and scheduling sends in our [Marketing Emails]({{root_url}}/User_Guide/Marketing_Emails/index.html) Functionality.  Please make sure that your timezone is set to the same as your business.
@@ -74,5 +74,4 @@ Changing your Password through the portal
 Changing your Password via Forgot Password
 {% endanchor %}
 
-If for some reason you cannot remember your password, go to the [SendGrid login page](https://sendgrid.com/login) and click ”[Forgot Password](https://sendgrid.com/user/forgotPassword)”. From here, you will need to enter your SendGrid username. We will send you an email with account reactivation steps, please follow these steps to access your account again.
-
+If for some reason you cannot remember your password, go to the [SendGrid login page]({{site.site_url}}/login) and click ”[Forgot Password]({{site.site_url}}/user/forgotPassword)”. From here, you will need to enter your SendGrid username. We will send you an email with account reactivation steps, please follow these steps to access your account again.

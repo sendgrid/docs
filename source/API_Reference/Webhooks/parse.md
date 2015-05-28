@@ -33,7 +33,7 @@ Setup
 The following steps are required to begin parsing email:
 
 -   Point the MX Record of the Domain/Hostname or Subdomain to **mx.sendgrid.net**
--   Associate the Domain/Hostname and the URL in the [Parse API settings page](https://sendgrid.com/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
+-   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
 
 The following parameters will be included in the POST to your callback URL.
 

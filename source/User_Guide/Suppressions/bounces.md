@@ -40,4 +40,4 @@ When you select the checkboxes next to the recipient names or select all, using 
 Related
 {% endanchor %}
 
-[Set up Bounce Forwarding to go to the email’s from address](https://support.sendgrid.com/hc/en-us/articles/200181478)
+[Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)

@@ -64,7 +64,7 @@ Settings
 
 **Status** - On or Off
 
-**Related Information** - [How Google’s Image Caching effects your opens](https://sendgrid.com/blog/googles-new-image-caching-5-things-need-know/)
+**Related Information** - [How Google’s Image Caching effects your opens]({{site.blog_url}}/googles-new-image-caching-5-things-need-know/)
 
 {% anchor h2 %}
 Subscription Tracking

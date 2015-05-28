@@ -13,7 +13,7 @@ In both creating and searching for a subuser, use the <code>username</code> para
 {% endwarning %}
 
 {% info %}
-For recommended steps when creating Subusers using the API, check out [this SendGrid Knowledgebase article.](https://support.sendgrid.com/hc/en-us/articles/201750787)
+For recommended steps when creating Subusers using the API, check out [this SendGrid Knowledgebase article.]({{site.support_url}}/hc/en-us/articles/201750787)
 {% endinfo %}
 
 {% anchor h2 %}

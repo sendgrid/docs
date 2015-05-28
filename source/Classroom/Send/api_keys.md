@@ -26,7 +26,7 @@ Permissions that allow you to define what a given API Key is allowed to do are i
 Managing API Keys
 {% endanchor %}
 
-You can [manage your API Keys](https://app.sendgrid.com/settings/api_keys) from the SendGrid Customer Portal. Additionally, you can [manage your API keys via the API itself]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
+You can [manage your API Keys]({{site.app_url}}/settings/api_keys) from the SendGrid Customer Portal. Additionally, you can [manage your API keys via the API itself]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
 
 {% anchor h2%}
 Using API Keys

@@ -16,7 +16,7 @@ How to identify Drops
 
 On the [Global Stats Dashboard]({{root_url}}/User_Guide/Statistics/global.html), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
-You will also find drops in your [Email Activity](https://app.sendgrid.com/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
+You will also find drops in your [Email Activity]({{site.app_url}}/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 
 {% info %}
 If the email address is on the Unsubscribe list the reason will say "Unsubscribed Address"; if on the Spam report list, it will say "Spam Reporting Address" and if on the Invalid Emails list, it will say "Invalid".*

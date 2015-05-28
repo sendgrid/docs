@@ -148,16 +148,16 @@ links within HTML &lt;a&gt; tags with unique links that redirect through our ser
 as the clickable link text in your &lt;a&gt; tag, when the Click Tracking link is replaced it creates irregularity
 between where the link appears to go and where it actually goes. For example the original link:
 
-<a href="http://www.sendgrid.com">http://www.sendgrid.com</a>
+<a href="{{site.site_url}}">{{site.site_url}}</a>
 
 Gets replaced with a much longer Click Tracked link:
 
-<a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D_4MHh">http://www.sendgrid.com</a>
+<a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D_4MHh">{{site.site_url}}</a>
 
 This is can be very similar to Phishing emails and as such may cause messages to go to the Spam Folder rather than the inbox. To
 get around this, use something descriptive for the link text rather than the link itself in your messages:
 
-<a href="http://www.sendgrid.com">Click to visit SendGrid</a>
+<a href="{{site.site_url}}">Click to visit SendGrid</a>
 
 {% anchor h2 %}
 Images and Attachments

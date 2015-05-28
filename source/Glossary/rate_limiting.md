@@ -14,5 +14,5 @@ There are limitations to delivery rates imposed by recipient mail servers. Excee
 referred to as [throttling]({{root_url}}/Glossary/throttling.html). Throttling in terms of email means that a recipient mail server has accepted all the mail it is 
 willing to accept from your IP for a certain period of time.
 
-Please visit our [pricing page](https://sendgrid.com/pricing) to see the account specific sending limits.
+Please visit our [pricing page]({{site.pricing_url}}) to see the account specific sending limits.
 

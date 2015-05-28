@@ -29,7 +29,7 @@ Stats
 
 On your dashboard we provide the last 30 days of email statistics in a graph, so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
 
-If you want to see all of your email statistics, go to your [Statistics Page](https://app.sendgrid.com/statistics) via the graph icon on the left side menu.
+If you want to see all of your email statistics, go to your [Statistics Page]({{site.app_url}}/statistics) via the graph icon on the left side menu.
  
 {% anchor h2 %}
 Activity Feed
@@ -37,7 +37,7 @@ Activity Feed
 
 Your activity feed will show you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can even search your activity by email address.
 
-If you would like to see all of your email activity, please go to the [Email Activity](https://app.sendgrid.com/email_activity) page. For more information, please see our email activity documentation.
+If you would like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see our email activity documentation.
 
 {% anchor h2 %}
 Transactional Emails
@@ -49,7 +49,7 @@ This box shows you the information for sending transactional emails via SendGrid
 Advanced Suppression Manager
 {% endanchor %}
 
-The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage](https://app.sendgrid.com/suppressions/advanced_suppression_manager) and Integrate your Suppression Groups. 
+The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and Integrate your Suppression Groups. 
 
 {% anchor h2 %}
 Help Links

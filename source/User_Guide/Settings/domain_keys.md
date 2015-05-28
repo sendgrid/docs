@@ -15,7 +15,7 @@ The domain that is checked for the public key is based on one of two e-mail head
 DomainKeys is disabled by default, because SendGrid signs all e-mail with DKIM. However, it's still available to be enabled if you need it for a legacy mail receiver.
 
 {% anchor h2 %}
-Settings 
+Settings
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -44,10 +44,10 @@ Some ISPs or e-mail clients (such as Hotmail or Outlook) will display a message 
 
 1.Disable the Domain Keys filter in the filters section of your account
 
-2.Upgrade to a package (Silver or higher) that provides [Whitelabel](https://sendgrid.com/whitelabel/) support and set up the Domain Keys record in your DNS
+2.Upgrade to a package (Silver or higher) that provides [Whitelabel]({{site.app_url}}/settings/whitelabel) support and set up the Domain Keys record in your DNS
 
 Settings may be changed through:
 
 -   [SMTP API]({{root_url}}/API_Reference/SMTP_API/apps.html#domainkeys) (on a per message basis)
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Domain-Keys) (on an account wide basis)
--   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
+-   [Web Interface]({{site.app_url}}) (on an account wide basis)

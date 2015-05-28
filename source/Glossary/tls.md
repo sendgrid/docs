@@ -15,6 +15,6 @@ SendGrid also utilizes “opportunistic TLS” for sending email via [SMTP]({{ro
 
 Using TLS is increasingly important to protect your privacy and the privacy of your recipients, and to prevent online surveillance.  
 
-For more background on opportunistic TLS, read our blog post on the [Future of Email Security](https://sendgrid.com/blog/sendgrid-and-the-future-of-email-security/).  
+For more background on opportunistic TLS, read our blog post on the [Future of Email Security]({{site.blog_url}}/sendgrid-and-the-future-of-email-security/).  
 
 For information on configuring your system to utilize TLS, see our information on setting up your server for sending email.

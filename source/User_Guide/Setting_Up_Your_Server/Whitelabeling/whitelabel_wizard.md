@@ -82,7 +82,7 @@ The following are the default records that are needed for links, SPF, DomainKeys
    </tbody>
 </table>
 
-You can [customize your DKIM records](https://support.sendgrid.com/hc/en-us/articles/204116386) to your domain.
+You can [customize your DKIM records]({{site.support_url}}/hc/en-us/articles/204116386) to your domain.
 
 {% info %}
 If you already have an SPF record, you can simply add include:sendgrid.net to this entry. Make sure to add it BEFORE the "all" mechanism as "all" always matches and typically goes at the end of the SPF record.

@@ -54,8 +54,14 @@ asset_pipeline:
 indextank_api_url: http://:example@example.api.indexden.com #get an index URL at indexden.com
 indextank_index:  docs #set this to the index name you set on indexden.com
 
-# these values are applied as regular expressions 
+# these values are applied as regular expressions
 # indextank_excludes: [index.html, 404.html, ^/secret/]
 
 #pages we link to from many places, change it once here. Must be added to content as {{root_url}}{{site.thisVariable}} in links
 password_requirements: "/Classroom/Basics/password.html"
+app_url: "https://app.sendgrid.com"
+blog_url: "https://sendgrid.com/blog"
+marketing_email_url: "https://app.sendgrid.com/newsletter"
+pricing_url: "https://sendgrid.com/pricing"
+site_url: "https://sendgrid.com"
+support_url: "https://support.sendgrid.com"

@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-[DKIM](https://sendgrid.com/blog/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
+[DKIM]({{site.blog_url}}/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
 
 Spoofers and phishers can be sending email to unwitting recipients by purporting to be from a trusted brand or sender. By “signing” email with DKIM, legitimate senders can label which domains belong to them, and by doing so, empower ISPs to block email streams that have not been properly authenticated using DKIM.
 
@@ -24,7 +24,7 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-When you utilize [whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228), you have to create DKIM DNS records. You can even [customize your DKIM](https://support.sendgrid.com/hc/en-us/articles/204116386) records. 
+When you utilize [whitelabeling]({{site.support_url}}/hc/en-us/articles/200548228), you have to create DKIM DNS records. You can even [customize your DKIM]({{site.support_url}}/hc/en-us/articles/204116386) records. 
 
 What a basic DKIM record should look like:
 ```
@@ -37,6 +37,6 @@ CNAME value: dkim.sendgrid.net
 ```
 Additional resources: 
 
-* [Set up custom DKIM](https://support.sendgrid.com/hc/en-us/articles/204116386)
+* [Set up custom DKIM]({{site.support_url}}/hc/en-us/articles/204116386)
 * [the DKIM.org website](http://www.dkim.org/)
-* [DNS Records and Underscores](https://support.sendgrid.com/hc/en-us/articles/200185218)
+* [DNS Records and Underscores]({{site.support_url}}/hc/en-us/articles/200185218)

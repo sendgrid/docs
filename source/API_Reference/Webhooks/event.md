@@ -7,52 +7,52 @@ navigation:
 ---
 
 {% info %}
-Available to Bronze and higher packages or to our free demo accounts. 
+Available to Bronze and higher packages or to our free demo accounts.
 {% endinfo %}
 
-SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. Common uses of this data are to remove unsubscribes, react to spam reports, [determine unengaged recipients](https://sendgrid.com/blog/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
+SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. Common uses of this data are to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
 {% info %}
-If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event Webhook](https://sendgrid.com/blog/leveraging-sendgrids-event-api/). 
+If you'd like to see how one of our customers uses the Event Webhook, check out [Leveraging SendGrid's Event Webhook]({{site.blog_url}}/leveraging-sendgrids-event-api/).
 {% endinfo %}
 
 {% info %}
-There are a number of pre-made integrations for the SendGrid Event Webhook that make processing events easy. You can find them in the [Library Index]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries). 
+There are a number of pre-made integrations for the SendGrid Event Webhook that make processing events easy. You can find them in the [Library Index]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries).
 {% endinfo %}
 
 {% anchor h2 %}
-Setup 
+Setup
 {% endanchor %}
 
-To setup the Event Webhook via our web interface, login and go to the [apps page](https://sendgrid.com/app), click on Show Disabled Apps, click the Event Notification app, then click on settings. Check the boxes next to the type of events that you want posted to your web server, then enter in the URL you have setup to receive POSTs from our servers when an event occurs.
+To setup the Event Webhook via our web interface, login and go to the [settings page]({{site.app_url}}/settings), click on Show Disabled Apps, click the Event Notification app, then click on settings. Check the boxes next to the type of events that you want posted to your web server, then enter in the URL you have setup to receive POSTs from our servers when an event occurs.
 
 The Event Webhook may also be setup by using our [Filter Settings Endpoint]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification).
 
 {% info %}
-We support basic HTTP authentication in our Event Webhook. Those who wish to implement can provide credentials in the post event url field on the app settings page. Below is an example of the post url with authentication included. 
+We support basic HTTP authentication in our Event Webhook. Those who wish to implement can provide credentials in the post event url field on the app settings page. Below is an example of the post url with authentication included.
 {% endinfo %}
 
 {% codeblock lang:html %}
 http(s)://username:password@domain/foo.php
 {% endcodeblock %}
 
- 
+
 {% warning %}
-If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2. 
+If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2.
 {% endwarning %}
 
 {% anchor h2 %}
-Requests 
+Requests
 {% endanchor %}
 
 You will receive a **HTTP POST** containing a JSON array of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options.
 
 {% info %}
-Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second. 
+Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second.
 {% endinfo %}
 
 {% anchor h3 %}
-Event POST Example 
+Event POST Example
 {% endanchor %}
 
 {% codeblock lang:json %}
@@ -85,11 +85,11 @@ You can test your endpoint by clicking the "Test Your Integration" button on the
 SendGrid expects a 2xx HTTP response to the POST, otherwise the event notification will be retried. If your URL returns a non-2xx HTTP code it will be deferred and retried for 24 hours. The maximum number of deferred POSTs in the retry queue is 100,000. If the queue is full, the oldest request in the queue will be removed to make room for the newest deferred POST. Events that cannot be submitted within the maximum retry period or events removed from the defer queue will be lost.
 
 {% warning %}
-If your email traffic generates a lot of events, the incoming data can easily overload a web server if not configured properly. You can load test your endpoints with [loader.io](http://loader.io) for free. 
+If your email traffic generates a lot of events, the incoming data can easily overload a web server if not configured properly. You can load test your endpoints with [loader.io](http://loader.io) for free.
 {% endwarning %}
 
 {% anchor h2 %}
-Event Types 
+Event Types
 {% endanchor %}
 
 The following lists the events generated by SendGrid:
@@ -152,7 +152,7 @@ The following image shows where events can be generated as email is being proces
 ![]({{root_url}}/images/event_1.png "Event Flow")
 
 {% anchor h2 %}
-Default Parameters for Delivery Events 
+Default Parameters for Delivery Events
 {% endanchor %}
 
 The following parameters are sent with delivery events: bounce, deferred, delivered, dropped, and processed events. Some events may include additional parameters.
@@ -179,7 +179,7 @@ The following parameters are sent with delivery events: bounce, deferred, delive
 </table>
 
 {% anchor h2 %}
-Default Parameters for Engagement Events 
+Default Parameters for Engagement Events
 {% endanchor %}
 
 The following parameters are sent with engagement events: click, open, spamreport, and unsubscribe events. Some events may include additional parameters.
@@ -210,7 +210,7 @@ The following parameters are sent with engagement events: click, open, spamrepor
 </table>
 
 {% anchor h2 %}
-Unique Arguments and Categories 
+Unique Arguments and Categories
 {% endanchor %}
 
 Events generated by SendGrid can also include unique arguments. To define and receive custom parameters in your URL the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) must be used when sending emails using the *unique_args* argument. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them in the SMTP API header or parameter, as described on the [Unique Arguments documentation page]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html), they would then be returned in the events like this:
@@ -274,7 +274,7 @@ The resulting webhook call
 
 
 {% anchor h2 %}
-Categories 
+Categories
 {% endanchor %}
 
 If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
@@ -329,9 +329,9 @@ Will be returned as an array
 {% endcodeblock %}
 
 {% anchor h2 %}
-Example 
+Example
 {% endanchor %}
-The following example uses PHP to store webhook requests in `/tmp/dump.log`: 
+The following example uses PHP to store webhook requests in `/tmp/dump.log`:
 
 {% codeblock lang:php %}
 <?php
@@ -347,15 +347,15 @@ echo "ok";
 ?>
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Parameter Details 
+Parameter Details
 {% endanchor %}
 
 The following shows each type of event that can be posted along with the specific parameters that go along with the event.
 
 {% info %}
-You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you. 
+You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you.
 {% endinfo %}
 
 {% info %}
@@ -363,7 +363,7 @@ The examples provided below are a JSON array for a particular event. These will 
 {% endinfo %}
 
 {% anchor h3 %}
-Processed 
+Processed
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -397,7 +397,7 @@ Processed
 {% endcodeblock %}
 
 {% anchor h3 %}
-Deferred 
+Deferred
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -437,7 +437,7 @@ Deferred
 {% endcodeblock %}
 
 {% anchor h3 %}
-Delivered 
+Delivered
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -474,7 +474,7 @@ Delivered
 {% endcodeblock %}
 
 {% anchor h3 %}
-Open 
+Open
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -509,7 +509,7 @@ Open
 {% endcodeblock %}
 
 {% anchor h3 %}
-Click 
+Click
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -547,7 +547,7 @@ Click
 {% endcodeblock %}
 
 {% anchor h3 %}
-Bounce 
+Bounce
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -590,7 +590,7 @@ Bounce
 {% endcodeblock %}
 
 {% anchor h3 %}
-Drop 
+Drop
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -627,7 +627,7 @@ Drop
 {% endcodeblock %}
 
 {% anchor h3 %}
-Spam Report 
+Spam Report
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -660,7 +660,7 @@ Spam Report
 {% endcodeblock %}
 
 {% anchor h3 %}
-Unsubscribe 
+Unsubscribe
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -692,7 +692,7 @@ Unsubscribe
 {% endcodeblock %}
 
 {% anchor h3 %}
-Group Unsubscribe 
+Group Unsubscribe
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -729,7 +729,7 @@ Group Unsubscribe
 {% endcodeblock %}
 
 {% anchor h3 %}
-Group Resubscribe 
+Group Resubscribe
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -811,9 +811,9 @@ For emails sent with a specified IP Pool, you can view the IP Pool used in the e
     }
 ]
 {% endcodeblock %}
- 
+
 {% anchor h2 %}
-Troubleshooting 
+Troubleshooting
 {% endanchor %}
 
 Ensure that your web server is returning a 2xx response to our servers. Any other response type will result in our server retrying a POST until we receive a 2xx response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs. Make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines.
@@ -824,8 +824,8 @@ You can use the "Test Your Integration" button on the Event Notifications settin
 curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"category":"newuser","event":"click","url":"https://sendgrid.com"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Version Differences 
+Version Differences
 {% endanchor %}
 The primary difference between v2 (no longer available) and v3 of the Event Webhook is that Version 3 delivers events as JSON arrays, whereas the previous version delivered batched JSON as JSON documents separated by line breaks. Furthermore, v3 provides more data with certain events. The [previous version of the webhook's documentation]({{root_url}}/API_Reference/Webhooks/event_deprecated.html) is still provided so you can compare them.
