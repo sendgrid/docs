@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send.  The list provided here can be filtered by email address or date. 
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send.  The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Group Unsubscribes by Date
@@ -34,7 +34,7 @@ When you select the checkboxes next to the recipient names or select all, using 
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html).
+You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html).
 
 {% anchor h2 %}
 Related

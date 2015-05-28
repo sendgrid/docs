@@ -55,4 +55,4 @@ The advanced suppression manager box will show you the current status of suppres
 Help Links
 {% endanchor %}
 
-We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us), our [Documentation](https://sendgrid.com/docs/), and our [Community page](http://community.sendgrid.com/sendgrid).
+We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us), our [Documentation]({{root_url}}/), and our [Community page](http://community.sendgrid.com/sendgrid).

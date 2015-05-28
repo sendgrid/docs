@@ -23,7 +23,7 @@ The "Try It" functionality is not a sandbox. These are real API calls that consu
 {% endwarning %}
 
 {% info %}
-When you make an API request to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
+When you make an API request to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
 {% endinfo %}
 
 {% anchor h2 %}
