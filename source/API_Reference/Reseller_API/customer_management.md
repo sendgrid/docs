@@ -12,7 +12,7 @@ Create a Customer
 
 {% parameters create %}
  {% parameter 'username' 'Yes' 'No more than 64 characters' 'The customers new username' %}
- {% parameter 'password' 'Yes' 'See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)' 'New password of customer' %}
+ {% parameter 'password' 'Yes' 'See [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'New password of customer' %}
  {% parameter 'confirm_password' 'Yes' 'Must match password parameter' 'Confirm new password' %}
  {% parameter 'email' 'Yes' 'Must be in email format, no more than 64 characters' 'Email address of new customer' %}
  {% parameter 'first_name' 'Yes' 'No more than 50 characters' 'First name of new customer' %}
@@ -324,7 +324,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 {% parameters password %}
  {% parameter 'user' 'Yes' 'Customer must be registered under you' 'The customer you are planning to reset the password' %}
- {% parameter 'password' 'Yes' 'See [SendGrid password requirements]({{root_url}}/User_Guide/Account/Account_Settings/password.html)' 'New password of customer' %}
+ {% parameter 'password' 'Yes' 'See [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'New password of customer' %}
  {% parameter 'confirm_password' 'Yes' 'Must match password parameter' 'Confirm new password' %}
  {% parameter 'method' 'Yes' 'Must be set to *password*' 'Allows you to access password functionality' %}
 {% endparameters %}

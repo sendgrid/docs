@@ -70,7 +70,7 @@ Create a new subuser credential.
  {% parameter task Yes 'Must be set to <code>add</code>' 'Task to create a subuser credential' %}
  {% parameter user Yes 'The subuser name' 'The subuser whose multi cred users you are looking for' %}
  {% parameter credential_name Yes 'The new user name, unique for your account' 'The subuser whose multi cred users you are looking for' %}
- {% parameter credential_password Yes 'The password for your credential. See the [SendGrid password requirements](https://sendgrid.com/docs/User_Guide/Account/Account_Settings/password.html)' 'The password for your subuser credential' %}
+ {% parameter credential_password Yes 'The password for your credential. See the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'The password for your subuser credential' %}
 {% endparameters %}
 
 {% apiexample add POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=create&user=subuser_name&credential=new_user_name&credential_password=new_credential_password %}
@@ -99,7 +99,7 @@ Edit a subuser credential.
  {% parameter task Yes 'Must be set to <code>edit</code>' 'Task to edit a subuser credential' %}
  {% parameter user Yes 'The subuser name' 'The subuser whose multi cred users you are looking for' %}
  {% parameter credential_name Yes 'The credential name' 'The current name of the credential' %}
- {% parameter new_credential_password Yes 'The password for your credential. See the [SendGrid password requirements](https://sendgrid.com/docs/User_Guide/Account/Account_Settings/password.html)' 'The password for your subuser credential' %}
+ {% parameter new_credential_password Yes 'The password for your credential. See the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'The password for your subuser credential' %}
 {% endparameters %}
 
 {% apiexample edit POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=edit&user=subuser_name&credential_name=credential_name&new_credential_password=credential_password %}
