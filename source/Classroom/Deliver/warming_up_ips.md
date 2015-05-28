@@ -5,7 +5,7 @@ title: Warming Up an IP Address
 seo:
   title: Warming Up an IP Address
 navigation:
-  show: true
+  show: false
 ---
 
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
