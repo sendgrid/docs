@@ -12,7 +12,7 @@ Subuser Stats provide all of your user's email statistics for your subuser accou
 GET
 {% endanchor %}
 
-Gets email statistics for the given subusers.
+Gets email statistics for the given subusers.  You can add up to 10 `subusers` parameters, one for each subuser you want stats for.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
@@ -21,7 +21,7 @@ Gets email statistics for the given subusers.
  {% parameter subusers Yes 'Array of strings' 'The subusers to get statistics for, up to 10' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/subusers/stats?start_date=2015-01-01&end_date=2015-01-02&subusers=user1&subusers=user2 %}
+{% apiv3example get GET /v3/subusers/stats?subusers={subusers}&subusers={subusers}&start_date={start_date}&end_date={end_date}&aggregated_by={aggregated_by} %}
 {% v3response %}
 HTTP/1.1 200
 [
@@ -138,8 +138,10 @@ Gets the total sums of each email statistic metric for all subusers over the giv
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
+ {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
  {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
+ {% parameter subusers Yes 'Array of strings' 'The subusers to get statistics for, up to 10' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
 {% endparameters %}

@@ -45,8 +45,8 @@ Host
 
 The host for API requests is `https://api.sendgrid.com/v3/`
 
-{% info %} 
-All requests must be made over HTTPS. HTTP is **not** supported. 
+{% info %}
+All requests must be made over HTTPS. HTTP is **not** supported.
 {% endinfo %}
 
 * * * * *
@@ -58,7 +58,7 @@ Rate Limits
 All calls within the Web API are allotted a specific number of requests
 per refresh period.
 
-Each Web API request returns the following header information 
+Each Web API request returns the following header information
 regarding rate limits and number of requests left.
 
 Depending on the endpoint you are trying to reach, it will have a
@@ -72,13 +72,13 @@ GET https://api.sendgrid.com/v3/resource HTTP/1.1
 
 Example Response
 {% codeblock lang:http %}
-HTTP/1.1 200 OK 
-Content-Type: application/json 
+HTTP/1.1 200 OK
+Content-Type: application/json
 X-RateLimit-Limit: 500
-X-RateLimit-Remaining: 499 
+X-RateLimit-Remaining: 499
 X-RateLimit-Reset: 1392815263
 
-{ 
+{
   "foo": "bar"
 }
 {% endcodeblock %}
@@ -103,13 +103,13 @@ X-RateLimit-Limit: 150
 X-RateLimit-Remaining: 0
 X-RateLimit-Reset: 1392815263
 
-{ 
+{
   "errors": [
-    { 
+    {
       "field": null,
        "message": "too many requests"
-    }, 
-  ] 
+    },
+  ]
 }
 {% endcodeblock %}
 
@@ -131,12 +131,24 @@ Accept Header
 {% endanchor %}
 
 The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is not currently
-required, though it may be required in the future. If not set, the 
+required, though it may be required in the future. If not set, the
 API will use `application/json`.
 
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/endpoint HTTP/1.1
 Accept: application/json
+{% endcodeblock %}
+
+{% anchor h3 %}
+Arrays of Data
+{% endanchor %}
+
+When you send an array of data in a `GET` request, you will include the parameter multiple times on the URL. We do not require that you add brackets to the parameter name.
+
+Example Array in a GET request
+
+{% codeblock lang:http %}
+GET https://api.sendgrid.com/v3/endpoint?parameter=data1&parameter=data2 HTTP/1.1
 {% endcodeblock %}
 
 {% anchor h3 %}
@@ -252,7 +264,7 @@ GET https://api.sendgrid.com/v3/resource?email=foo&bar=baz HTTP/1.1
 Responses
 {% endanchor %}
 
-{% anchor h3 %} 
+{% anchor h3 %}
 Content-Type Header
 {% endanchor %}
 
@@ -308,7 +320,7 @@ support against resources.
     <td>500</td><td>Internal server error</td>
   </tr>
 </table>
-  
+
 * * * * *
 
 {% anchor h3 %}
@@ -380,8 +392,8 @@ GET https://api.sendgrid.com/v3/resource?limit=5&offset=0 HTTP/1.1
 HTTP/1.1 200 OK
 Content-Type: application/json
 
-Link: <http://api.sendgrid.com/v3/resource?limit=5&offset=5>; rel="next"; title="2", 
-      <http://api.sendgrid.com/v3/resource?limit=5&offset=0>; rel="prev"; title="1", 
-      <http://api.sendgrid.com/v3/resource?limit=5&offset=10>; rel="last"; title="3", 
+Link: <http://api.sendgrid.com/v3/resource?limit=5&offset=5>; rel="next"; title="2",
+      <http://api.sendgrid.com/v3/resource?limit=5&offset=0>; rel="prev"; title="1",
+      <http://api.sendgrid.com/v3/resource?limit=5&offset=10>; rel="last"; title="3",
       <http://api.sendgrid.com/v3/resource?limit=5&offset=0>; rel="first"; title="1"
 {% endcodeblock %}

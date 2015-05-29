@@ -104,7 +104,7 @@ Available device types:
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/devices/stats?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/devices/stats?start_date=2015-01-01&end_date=2015-01-02&aggregated_by=week %}
 {% v3response %}
 HTTP/1.1 200
 [
@@ -152,7 +152,7 @@ Gets email statistics by client type.
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/clients/stats?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/clients/stats?start_date=2015-01-01&end_date=2015-01-02&aggregated_by=week %}
 {% v3response %}
 HTTP/1.1 200
 [
@@ -201,7 +201,7 @@ Gets email statistics for a single client type.
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/clients/:client_type/stats?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/clients/:client_type/stats?start_date=2015-01-01&end_date=2015-01-02&aggregated_by=week %}
 {% v3response %}
 HTTP/1.1 200
 [
@@ -306,7 +306,7 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Gets email statistics by browser.
+Gets email statistics by browser. You can add multiple browsers to the URL, by using the `browsers` parameter multiple times.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
@@ -315,7 +315,7 @@ Gets email statistics by browser.
  {% parameter browsers No 'Array of strings' 'The browsers to get statistics for, up to 10' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/browsers/stats?start_date=2015-01-01&end_date=2015-01-02 %}
+{% apiv3example get GET https://api.sendgrid.com/v3/browsers/stats?start_date=2015-01-01&end_date=2015-01-02&aggregated_by=week %}
 {% v3response %}
 HTTP/1.1 200
 [
