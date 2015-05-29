@@ -38,6 +38,8 @@ class BluePrintHTML < Redcarpet::Render::HTML
   @@http_response = "200"
   @@params = ""
   @@param_list = ""
+  @@attr_list = ""
+  @@param_string = ""
   @@method = ""
   @@path = ""
   @@request_body = ""
@@ -103,7 +105,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     if 2 == level
 
       # reset for each endpoint path, bc params are the same for all HTTP methods within this path group
-      @@param_list = ""
+      @@param_list, @@attr_list, @@param_string = "", "", ""
 
       #create a unique HTML ID for the group
 
@@ -138,6 +140,10 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # get the request method
     if 3 == level
       debug "\t--RESET VARS--"
+
+      # attrs get reset by HTTP METHOD
+      @@attr_list, @@param_string = "", ""
+
       if text.include? "]"
         # get the response method from the header
         @@method = text.split("[")[1].gsub("]","")
@@ -201,7 +207,11 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # Build the Parameters Liquid Block
     if text.include? "Parameters"
-      return docs_liquid_params_block(text)
+      return docs_liquid_params_block(text, "parameters")
+    end
+
+    if text.include? "Attributes"
+      return docs_liquid_params_block(text, "attributes")
     end
 
     #handle the request and response headers
@@ -371,7 +381,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #   if = then we have a default
     #   if no = then we have just name
 
-    debug "Param String: " + text
+    puts "Param String: " + text
 
     parameters = text.split(" ... ")
 
@@ -389,8 +399,16 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # get the optional/required information from the 1st item in the parenthesis
     optional = optional_requirements[0].strip
 
+    unless optional.include? "required"
+      unless optional.include? "optional"
+        puts
+        throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + parameters[0]
+      end
+    end
+
     # get the requirements information from the 2nd item in the parenthesis
     requirements = ""
+
     if optional_requirements[1]
       requirements = optional_requirements[1].strip
     end
@@ -400,7 +418,11 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # Create the example from the 3rd item in the parenthesis
     if optional_requirements.length > 2
-      example = " Example: `" + optional_requirements[2].strip + "`"
+      optional_requirements[2] = optional_requirements[2].strip
+
+      example = " Example: `" + optional_requirements[2] + "`"
+
+      puts "\t " + example
     end
 
     parameter_req = "Yes"
@@ -416,13 +438,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
       description += " Defaults to " + identifier_default[1].strip
+      puts "\t Description: " + description
     else
       identifier = identifier_default
     end
 
     # lets see if this description has members?
     if description.include? "Members"
-      debug "Has Members!!"
+      puts "Has Members!!"
 
       descriptors = description.split("Members")
 
@@ -431,16 +454,21 @@ class BluePrintHTML < Redcarpet::Render::HTML
       members = descriptors[1].strip.split("\n").compact.collect{|x| x.strip}
       description += members.join(", ")
 
-      debug "New Description: " + description
+      puts "New Description: " + description
     end
 
     # add the example to the end of the description
     if example.length > 0
       description += example
+      puts "\t Desc+Example: " + description
     end
 
     # liquidexample --- {% parameter :identifer :required :requirements :description %}
-    @@param_list += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    puts "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    puts "\t TEST "
+    puts @@param_string
+    @@param_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    puts "\t added to param_list['temp']"
   end
 
   # builds the final output of all the liquid tags, using all the vars we've set
@@ -519,6 +547,12 @@ class BluePrintHTML < Redcarpet::Render::HTML
       output += @@param_list + "\n\n"
     end
 
+    unless @@attr_list.nil?
+      debug "\t attr_list is not NIL"
+      output += @@attr_list + "\n\n"
+    end
+
+
     output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n" +
         "\t{% v3response %}\n" +
         "\t\t" + text + "\n"
@@ -541,10 +575,10 @@ class BluePrintHTML < Redcarpet::Render::HTML
   end
 
   # builds the parameter block using the parameters text that is passed in and the group identifier
-  def docs_liquid_params_block(text)
-    debug "\t --Parameter Block --"
+  def docs_liquid_params_block(text, type)
+    debug "\t --" + type + " Block --"
 
-    debug "\t Params: " + text
+    debug "\t " + type + ": " + text
     # This should be building the following, using the other variables that have been set already
 
     # {% parameters categoriesget %}
@@ -554,10 +588,18 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # {% endparameters %}
 
     # create the params list when we have a list element that says "Params"
-    unless @@param_list.include? "parameters"
-      @@param_list = "{% parameters endpoint#{@@group_identifier} %}\n" + @@param_list + "{% endparameters %}"
-      debug "\t PARAM LIST SET: " + @@param_list
+    if type == "parameters"
+      @@param_list = "{% parameters endpoint#{@@group_identifier} %}\n" + @@param_string + "{% endparameters %}"
+      debug "\t param LIST SET: " + @@param_list
     end
+
+    # create the attr list when we have a list element that says "Params"
+    if type == "attributes"
+      @@attr_list = "{% attributes endpoint#{@@group_identifier} %}\n" + @@param_string + "{% endattributes %}"
+      debug "\t attr LIST SET: " + @@attr_list
+    end
+
+    @@param_string = ""
 
     # we don't want any output from this method
     return ""
