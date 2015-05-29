@@ -4,7 +4,7 @@ seo:
   description: View and filter your Browser specific email statistics.
   keywords: Browser statistics, SendGrid Browser statistics
 title: Browser
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
@@ -26,7 +26,7 @@ There are similarities between Device and Browser statistics and we are working 
 
 Choose a browser from the list to see statistics about how your recipients interact with your email based on the application they use to look at the internet.
 
-The actual statistics included vary depending upon [your account settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated settings are enabled. 
+The actual statistics included vary depending upon [your account settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, Clicks, and Opens require that the associated settings are enabled.
 
 You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
 
