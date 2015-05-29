@@ -1,0 +1,394 @@
+---
+layout: page
+title: Mail
+weight: 0
+navigation:
+  show: true
+seo:
+  title: Mail Settings API
+  description: Manage your mail sending settings via the SendGrid API.
+  keywords: mail settings, address whitelisting, bcc settings, bounce purge settings, event notification settings, footer settings, forward bounce settings, forward spam settings, legacy template settings
+---
+
+FORMAT: 1A
+
+# Mail Settings
+
+## Mail Settings Collection [/v3/mail_settings?limit={limit}&offset={offset}]
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of settings to return.
+    + offset (optional, number, `1`) ... Paging offset.
+
+### Get Mail Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result":
+                [
+                  {
+                    "name": "bcc",
+                    "title": "BCC",
+                    "description": "lorem ipsum... .",
+                    "enabled": true
+                  }
+                ]
+            }
+
+
+## Address Whitelisting Settings [/v3/mail_settings/address_whitelist]
+
+### Get Address Whitelist Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "list": ["email1@example.com", "example.com"]
+            }
+
+### Update Address Whitelist Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "list": ["email1@example.com", "example.com"]
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "list": ["email1@example.com", "example.com"]
+            }
+
+## BCC Settings [/v3/mail_settings/bcc]
+
+### Get BCC Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "email": "email@example.com"
+            }
+
+### Update BCC Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "email": "email@example.com"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+               "enabled": true,
+               "email": "email@example.com"
+            }
+
+## Bounce Purge Settings [/v3/mail_settings/bounce_purge]
+
+
+### Get Bounce Purge Settings [GET]
+
+The number that is passed for both "hard_bounces" and "soft_bounces" must be a positive integer.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "hard_bounces": 1,
+              "soft_bounces": 1
+            }
+
+### Update Bounce Purge Settings [PATCH]
+
+The number that is passed for both "hard_bounces" and "soft_bounces" must be a positive integer.
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "hard_bounces": 1,
+              "soft_bounces": 1
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "hard_bounces": 1,
+              "soft_bounces": 1
+            }
+
+## Event Notification [/v3/user/webhooks/event/settings]
+
+### Get Event Notification Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "enabled": true,
+                "url": "url",
+                "group_resubscribe": true,
+                "delivered": true,
+                "group_unsubscribe": true,
+                "spam_report": true,
+                "bounce": true,
+                "deferred": true,
+                "unsubscribe": true,
+                "processed": true,
+                "open": true,
+                "click": true,
+                "dropped": true
+            }
+
+### Update Event Notification Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "enabled": true,
+                "url": "url",
+                "group_resubscribe": true,
+                "delivered": true,
+                "group_unsubscribe": true,
+                "spamreport": true,
+                "bounce": true,
+                "deferred": true,
+                "unsubscribe": true,
+                "processed": true,
+                "open": true,
+                "click": true,
+                "dropped": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "enabled": true,
+                "url": "url",
+                "group_resubscribe": true,
+                "delivered": true,
+                "group_unsubscribe": true,
+                "spamreport": true,
+                "bounce": true,
+                "deferred": true,
+                "unsubscribe": true,
+                "processed": true,
+                "open": true,
+                "click": true,
+                "dropped": true
+            }
+
+## Event Notification Test [/v3/user/webhooks/event/test]
+
+### Test Event Notification Settings [POST]
+Sends a fake event notification post to the provided URL.
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "url": "url"
+            }
+
++ Response 204 (application/json)
+
+## Footer Settings [/v3/mail_settings/footer]
+
+### Get Footer Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "...",
+              "plain_content": "..."
+            }
+
+### Update Footer Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "...",
+              "plain_content": "..."
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "...",
+              "plain_content": "..."
+            }
+
+## Forward Bounce Settings [/v3/mail_settings/forward_bounce]
+
+### Get Forward Bounce Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
+### Update Forward Bounce Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
+## Forward Spam Settings [/v3/mail_settings/forward_spam]
+
+### Get Forward Spam Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
+### Update Forward Spam Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "email": "email address"
+            }
+
+## Legacy Template Settings [/v3/mail_settings/template]
+
+### Get Template Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "..."
+            }
+
+### Update Template Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "..."
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "html_content": "..."
+            }
+
+
+## Plain Content Settings [/v3/mail_settings/plain_content]
+
+### Get Plain Content Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+### Plain Text Content [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
