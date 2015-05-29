@@ -4,7 +4,7 @@ seo:
   description: Compare your Browser specific email statistics.
   keywords: Browser comparison statistics, Compare SendGrid Browser statistics
 title: Browser Comparison
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
@@ -32,7 +32,7 @@ Your top most graph will show you how each selected browser has fared for the se
 Individual Metrics Comparison
 {% endanchor %}
 
-This graph will show you the browser stats for the selected metric. To change the metric, select it from the button at the top of the page. 
+This graph will show you the browser stats for the selected metric. To change the metric, select it from the button at the top of the page.
 
 You can remove individual browsers from the graph by clicking the button above and to the right of this chart and unchecking the boxes next to the browser name. The graph will refresh, showing only the stats for the selected browser.
 

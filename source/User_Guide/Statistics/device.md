@@ -4,7 +4,7 @@ seo:
   description: View and filter your device specific email statistics.
   keywords: Device statistics, SendGrid device statistics
 title: Device
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
@@ -71,7 +71,7 @@ To change this graph to see another metric for your recipient’s devices, choos
 Individual Metrics Figures
 {% endanchor %}
 
-When you initially choose the devices to compare, this graph will show you the actual open numbers over time for each of the compared devices. 
+When you initially choose the devices to compare, this graph will show you the actual open numbers over time for each of the compared devices.
 
 You can remove individual devices from the list of devices at the top of this page. The graph will refresh, showing only the selected subusers.
 
