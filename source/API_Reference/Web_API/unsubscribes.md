@@ -50,7 +50,7 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 delete 
 {% endanchor %}
 
-Delete an address from the Unsubscribe list. Please note that if no parameters are provided or if empty parameters are provided the ENTIRE list will be removed.
+Delete an address from the Unsubscribe list. Use `delete_all=1` in order to delete all addresses from your unsubscribe list.
 
 {% parameters delete %}
   {% parameter email No 'Must be a valid user account email.' 'Unsubscribed email address to remove.' %}
