@@ -119,3 +119,9 @@ Deleting an IP Whitelabel is permanent and can not be rolled back.
 {% endwarning %}
 
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.
+
+{% anchor h2 %}
+Using the API
+{% endanchor %}
+
+[Manage your IP whitelabel via our v3 API]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/ips.html)

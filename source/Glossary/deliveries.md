@@ -14,5 +14,4 @@ A delivery is recorded when a request to send an email results in the email bein
 
 If an email is indicated as delivered you can be certain that it was not deferred by the ISP.
 
-Visit [Delivery Metrics]({{root_url}}/User_Guide/Statistics/index.html) to find more information about all the statistics SendGrid provides.
-
+Visit [Statistics]({{root_url}}/User_Guide/Statistics/index.html) to find more information about all the statistics SendGrid provides.

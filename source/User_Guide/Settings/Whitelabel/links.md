@@ -103,3 +103,9 @@ Deleting a Domain Whitelabel is permanent and can not be rolled back.
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.
 
 Once deleted, the internal SendGrid DNS entries will be deleted and any email you send will fall back to the appropriate whitelabel settings according the [Whitelabel Application Logic]({{root_url}}/User_Guide/Settings/Whitelabel/index.html#-Whitelabel-Application-Logic).
+
+{% anchor h2 %}
+Using the API
+{% endanchor %}
+
+[Manage your link whitelabel via our v3 API]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/links.html)

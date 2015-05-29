@@ -168,3 +168,9 @@ You can NOT delete the default domain whitelabel. You must replace it if you wan
 {% endinfo %}
 
 Once deleted, the internal SendGrid DNS entries will be deleted and any email you send will fall back to the appropriate whitelabel settings according the [Whitelabel Application Logic]({{root_url}}/User_Guide/Settings/Whitelabel/index.html#-Whitelabel-Application-Logic).
+
+{% anchor h2 %}
+Using the API
+{% endanchor %}
+
+[Manage your domain whitelabel via our v3 API]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/domains.html)
