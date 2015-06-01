@@ -74,6 +74,67 @@ Subsers belonging to a parent user.
             "ips": ["1.1.1.1", "2.2.2.2"]
         }
 
+## Subusers Monitor [/v3/subusers/{subuser_name}/monitor]
+
++ Parameters
+
+    + subuser_name (required, string, `my_subuser`) ... The subuser's username
+
+### Retrieve monitor settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "email": "test@example.com",
+                "frequency": 500
+            }
+
+### Create monitor settings [POST]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "email": "test@example.com",
+                "frequency": 500
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "email": "test@example.com",
+                "frequency": 500
+            }
+
+### Update monitor settings [PUT]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "email": "test@example.com",
+                "frequency": 500
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "email": "test@example.com",
+                "frequency": 500
+            }
+
+### Delete monitor settings [DELETE]
+
++ Response 204
+
 ## Subuser Reputations [/subusers/reputations?usernames={usernames}&usernames={usernames}]
 + Parameters
     + usernames (required, string, `my_subuser`) ... Array of string. The usernames of subusers to retrieve the reputations of.
