@@ -135,6 +135,7 @@ Subsers belonging to a parent user.
 
 + Response 204
 
+
 ## Subuser Reputations [/subusers/reputations?usernames={usernames}&usernames={usernames}]
 + Parameters
     + usernames (required, string, `my_subuser`) ... Array of string. The usernames of subusers to retrieve the reputations of.
