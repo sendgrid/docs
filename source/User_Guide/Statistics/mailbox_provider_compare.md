@@ -4,7 +4,7 @@ seo:
   description: Compare your Mailbox Provider specific email statistics.
   keywords: Mailbox Provider comparison statistics, Compare SendGrid Mailbox Provider statistics
 title: Mailbox Provider Comparison
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true

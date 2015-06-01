@@ -4,7 +4,7 @@ seo:
   description: View and filter your Category specific SendGrid email statistics.
   keywords: category statistics, SendGrid category statistics
 title: Categories
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true

@@ -4,7 +4,7 @@ seo:
   description: View and filter your Browser specific email statistics.
   keywords: Browser statistics, SendGrid Browser statistics
 title: Browser
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true

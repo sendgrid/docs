@@ -4,7 +4,7 @@ seo:
   description: View your Inbound Parse Webhook statistics.
   keywords: Inbound Parse statistics, SendGrid Inbound Parse statistics, Inbound Parse Webhook statistics, SendGrid Inbound Parse Webhook statistics,
 title: Inbound Parse
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true

@@ -4,7 +4,7 @@ seo:
   description: Compare statistics from your SendGrid email categories.
   keywords: compare category statistics, SendGrid compare category statistics, category statistic comparison
 title: Category Comparison
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
