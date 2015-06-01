@@ -18,7 +18,7 @@ navigation:
 	</a>
 </p>
 
-The dashboard page will display your account’s statistics for the past day, week, or month. SendGrid offers a number of [delivery metrics]({{root_url}}/User_Guide/Delivery_Metrics/index.html)to report what is happening with your messages.
+The dashboard page will display your account’s statistics for the past day, week, or month. SendGrid offers a number of [statistics]({{root_url}}/User_Guide/Statistics/index.html) to report what is happening with your messages.
 
 You can also export the statistics for each individual day to a CSV file by tapping the “share” button.
 

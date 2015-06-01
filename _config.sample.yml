@@ -57,3 +57,5 @@ indextank_index:  docs #set this to the index name you set on indexden.com
 # these values are applied as regular expressions 
 # indextank_excludes: [index.html, 404.html, ^/secret/]
 
+#pages we link to from many places, change it once here. Must be added to content as {{root_url}}{{site.thisVariable}} in links
+password_requirements: "/Classroom/Basics/password.html"

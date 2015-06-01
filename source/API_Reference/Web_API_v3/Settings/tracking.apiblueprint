@@ -1,0 +1,190 @@
+---
+layout: page
+title: Tracking
+weight: 0
+navigation:
+  show: true
+breadcrumbs: true
+seo:
+  title: Tracking Settings API
+  keywords: tracking settings api, Click tracking settings, open tracking settings, unsubscribe tracking settings, google analytics settings
+  description: Manage your SendGrid tracking settings with the SendGrid API.
+---
+
+FORMAT: 1A
+
+# Group Tracking Settings
+
+## Tracking Settings Collection [/v3/tracking_settings?limit={limit}&offset={offset}]
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of settings to return.
+    + offset (optional, number, `1`) ... Paging offset.
+
+### Get Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result":
+                [
+                  {
+                    "name": "open",
+                    "title": "Open Tracking",
+                    "description": "lorem ipsum... .",
+                    "enabled": true
+                  }
+                ]
+            }
+
+## Click Tracking Settings Resource [/v3/tracking_settings/click]
+
+### Get Click Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+### Update Click Tracking Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+## Google Analytics Settings Resource [/v3/tracking_settings/google_analytics]
+
+### Get Google Analytics Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
+### Update Google Analytics Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+             {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+             {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
+## Open Tracking Settings Resource [/v3/tracking_settings/open]
+
+### Get Open Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+### Update Open Tracking Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+## Subscription Tracking Settings Resource [/v3/tracking_settings/subscription]
+
+### Get Subscription Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content": "html content",
+              "plain_content": "text content"
+            }
+
+### Update Subscription Tracking Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content": "html content",
+              "plain_content": "text content"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content":"html content",
+              "plain_content":"text content"
+            }

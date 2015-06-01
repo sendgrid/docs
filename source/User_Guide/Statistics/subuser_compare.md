@@ -4,7 +4,7 @@ seo:
   description: View and compare your subuser specific email statistics.
   keywords: compare subuser statistics, SendGrid compare subuser statistics, subuser statistic comparison
 title: Subuser Comparison
-weight: 100
+weight: 0
 layout: page
 navigation:
   show: true
@@ -30,7 +30,7 @@ You can compare up to 10 subusers at a time. To select them, click the “+” s
 Comparison Overview
 {% endanchor %}
 
-Once you have selected the subusers, your top most graph will show you how each selected subuser has fared for each individual metric in a single graph. Each subuser will be assigned a color in this bar chart. 
+Once you have selected the subusers, your top most graph will show you how each selected subuser has fared for each individual metric in a single graph. Each subuser will be assigned a color in this bar chart.
 
 You can remove individual subusers from the list of subusers you selected initially, by clicking the “Subusers” button and unchecking subusers. The graph will refresh, showing only the selected subusers.
 
@@ -38,7 +38,7 @@ You can remove individual subusers from the list of subusers you selected initia
 Individual Metrics Comparison
 {% endanchor %}
 
-When you initially choose the subusers to compare, this graph will be titled “Comparison for Deliveries” and will show you the delivery rates over time for each of the compared subusers. 
+When you initially choose the subusers to compare, this graph will be titled “Comparison for Deliveries” and will show you the delivery rates over time for each of the compared subusers.
 
 You can remove individual subusers from the list of categories you selected initially, by clicking the “Subusers” button and unchecking subusers. The graph will refresh, showing only the selected subusers.
 
@@ -48,7 +48,7 @@ To change this graph to see another metric for your subusers, click the button n
 Individual Metrics Figures
 {% endanchor %}
 
-When you initially choose the subusers to compare, this table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared subusers. 
+When you initially choose the subusers to compare, this table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared subusers.
 
 You can remove individual subusers from the list of categories you selected initially, by clicking the “Subusers” button and unchecking subusers. The graph will refresh, showing only the selected subusers.
 
