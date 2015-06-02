@@ -5,6 +5,7 @@
 #######
 
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
+Redirect 301 /API_Reference/Customer_Subuser_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/index.html
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html
