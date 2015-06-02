@@ -26,17 +26,17 @@ Any changes you make to DNS can immediately affect your client’s ability to re
 The Types of Whitelabeling
 {% endanchor %}
 
-<h3><a href="{{root_url}}/User_Guide/Whitelabel/domains.html">Domain Whitelabel</a></h3>
+<h3><a href="{{root_url}}/User_Guide/Settings/Whitelabel/domains.html">Domain Whitelabel</a></h3>
 
 This type of whitelabel allows email recipient servers and services to verify the identity of the email sender back to the domain that the sender controls. This gives a layer of email authentication that helps in email deliverability. With only the domain whitelabel, you are still subject to the reputation of your IP address.
 
-<h3><a href="{{root_url}}/User_Guide/Whitelabel/links.html">Email Links Whitelabel</a></h3>
+<h3><a href="{{root_url}}/User_Guide/Settings/Whitelabel/links.html">Email Links Whitelabel</a></h3>
 
 When you put a link or an image into an email and have click or open tracking turned on, the click tracking links and the images will point to your domain. This shows the recipient email server that you are not trying to hide anything behind the links and that you control the content of your emails.
 
 Some bad actors will use 3rd party link shortening services to populate the domains they list in their email content and they do not include their own domain in those links. This practice is a red flag to spam filters.
 
-<h3><a href="{{root_url}}/User_Guide/Whitelabel/ips.html">IP Addresses Whitelabel</a></h3>
+<h3><a href="{{root_url}}/User_Guide/Settings/Whitelabel/ips.html">IP Addresses Whitelabel</a></h3>
 
 An IP whitelabel works in tandem with your domain whitelabel, but the real reputation for email usually lays with the IP address since many domains can point to the same IP. It is always ideal to have both a domain and an IP whitelabel. You will need to have a private IP address or purchase one through [SendGrid support](https://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account) in order to whitelabel your IP address. You can send email from multiple domains from each of your private IPs, but remember that each one will positively or negatively affect the others if they are sharing IPs.
 
@@ -46,9 +46,9 @@ Setting Up Whitelabels
 
 You can set up your whitelabels from the overview page or from the individual whitelabel type pages in the customer portal. For the purposes of the User Guide, we cover each setup process in depth on the respective whitelabel pages.
 
-* <a href="{{root_url}}/User_Guide/Whitelabel/domains.html">Setting up Domain Whitelabel</a>
-* <a href="{{root_url}}/User_Guide/Whitelabel/links.html">Setting up Email Link Whitelabels</a>
-* <a href="{{root_url}}/User_Guide/Whitelabel/ips.html">Setting up IP Whitelabels</a>
+* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/domains.html">Setting up Domain Whitelabel</a>
+* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/links.html">Setting up Email Link Whitelabels</a>
+* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/ips.html">Setting up IP Whitelabels</a>
 * [All you need to know about whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228-All-You-Need-to-Know-About-Whitelabeling)
 
 {% anchor h2 %}
