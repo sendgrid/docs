@@ -50,9 +50,9 @@ What is IP whitelabeling?
 How do I whitelabel?
 {% endanchor %}
 
-Each whitelabel type is a two-step process: 
+Each whitelabel type is a two-step process:
 
-1. SendGrid will generate DNS records that you must add to your domain host (GoDaddy, Network Solutions, Hover, etc.). 
+1. SendGrid will generate DNS records that you must add to your domain host (GoDaddy, Network Solutions, Hover, etc.).
 2. Click the gear icon in-line with your domain name on the main whitelabel page, then select “validate” in the dropdown list to initiate a check that ensures the records on your DNS host match the records SendGrid generated.
 
 {% anchor h2 %}
@@ -60,3 +60,11 @@ Can I whitelabel multiple domains?
 {% endanchor %}
 
 Yes, it's possible to whitelabel multiple domains using the improved whitelabel management process. When multiple whitelabel domains exist on your account, SendGrid will use the from address for each email you send through SendGrid and match it to a domain and link whitelabel. If the from address does not match an existing whitelabel, SendGrid will fall back to the whitelabel you have chosen as the default.
+
+{% anchor h2 %}
+Related Articles
+{% endanchor %}
+
+* [All You Need To Know About Whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228)
+* [I have created DNS records, but SendGrid is not validating them.](https://support.sendgrid.com/hc/en-us/articles/204075436)
+* [Whitelabel - Do I need to make DNS changes?](https://support.sendgrid.com/hc/en-us/articles/200181868)
