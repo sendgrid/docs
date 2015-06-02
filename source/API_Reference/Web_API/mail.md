@@ -35,7 +35,7 @@ SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be u
 Send email.
 
 {% parameters mail %}
- {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
+ {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com&to[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
  {% parameter 'toname' 'No' 'Must be a string. If *to* parameter is an array, *toname* must be an array with the exact number of array elements as the *to* field' 'Give a name to the recipient. This can also be passed as an array if the to above is an array. Example: toname[]=Alpha[]=Beta.' %}
  {% parameter 'x-smtpapi' 'No' 'Must be in valid JSON format' 'Please review the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) to view documentation on what you can do with the JSON headers' %}
  {% parameter 'subject' 'Yes' 'Must be a valid string' 'The subject of your email' %}
