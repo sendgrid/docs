@@ -1,28 +1,28 @@
 ---
 layout: page
-title: Contacts API
 weight: 0
+title: Contacts API
+seo:
+  title: Contacts API
+  description: The SendGrid Marketing Campaigns Contacts API
+  keywords: Contacts, contacts api, marketing campaigns contacts
 navigation:
   show: true
-breadcrumbs: true
 ---
 
 FORMAT: 1A
 
-# Contacts
+# Contacts API
 
 {% info %}
-__NOTE: All recipient IDs are the URL-encoded email;
-for example if a recipient's email is `foo@example.com`, their recipient ID is `foo@example.com`;
-if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3Fother@example.com`.__
+Treat recipient IDs as opaque values. The `id` value returned by recipient endpoints should be passed exactly as returned to endpoints that require a recipient id.
 {% endinfo %}
 
 # Group Custom Fields
 
 ## Custom Fields [/contactdb/custom_fields]
 
-### Add a Single Custom Field [POST]
-
+### Create a Custom Field [POST]
 + Request (application/json)
 
     + Body
@@ -43,7 +43,7 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
             Returned if custom field type is invalid or not provided
             Returned if custom field name is not provided
 
-### List Custom Fields [GET]
+### List All Custom Fields [GET]
 
 + Response 200
 
@@ -62,7 +62,7 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 + Parameters
     + custom_field_id (required, number) ... The id of the custom field
 
-### List a Single Custom Field [GET]
+### Retrieve a Custom Field [GET]
 
 + Response 200
 
@@ -92,17 +92,30 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
             Returned if the custom field ID does not exist
 
+
+# Group Reserved Fields
+
+## Reserved Fields [/contactdb/reserved_fields]
+
+### List fields that are reserved and can't be used for custom field names. [GET]
+
++ Response 200
+
+    + Body
+
+            {"reserved_fields":[{"name":"first_name","type":"text"},{"name":"last_name","type":"text"},{"name":"email","type":"text"},{"name":"created_at","type":"date"},{"name":"updated_at","type":"date"},{"name":"last_emailed","type":"date"},{"name":"last_clicked","type":"date"},{"name":"last_opened","type":"date"},{"name":"my_custom_field","type":"text"}]}
+
+
+
 # Group Lists
 
-{% info %}
-__NOTE: All recipient IDs are the URL-encoded email;
-for example if a recipient's email is `foo@example.com`, their recipient ID is `foo@example.com`;
-if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3Fother@example.com`.__
-{% endinfo %}
+All recipient IDs are the URL-encoded email; for example if a recipient's email is `foo@example.com`, their recipient ID is `foo@example.com`; if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3Fother@example.com`.
+
+
 
 ## Lists [/contactdb/lists]
 
-### Add a Single List [POST]
+### Create a List [POST]
 
 + Request (application/json)
 
@@ -125,7 +138,9 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
             Returned if request body is invalid JSON
 
 
-### Read all Lists [GET]
+### List All Lists [GET]
+
+Returns an empty list if no lists exist
 
 + Response 200
 
@@ -133,12 +148,34 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
             {"lists":[{"id":1,"name":"the jones","recipient_count":1}]}
 
-## Lists: [/contactdb/lists/{list_id}]
+
+### Delete Multiple lists [DELETE]
+
++ Request (application/json)
+
+    + Body
+
+            [1,2,3]
+
++ Response 204
+
+    - Returned if one or more lists were deleted
+
+    + Body
+
++ Response 400
+
+     + Body
+
+            Returned if all the list ids are not valid
+
+
+## Lists [/contactdb/lists/{list_id}]
 
 + Parameters
     + list_id (required,number) ... The ID of the list
 
-### Get a Single List [GET]
+### Retrieve a List [GET]
 
 + Response 200
 
@@ -158,7 +195,7 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
             Returned if the list id does not exist
 
-### Update a Single List [PATCH]
+### Update a List [PATCH]
 
 + Request (application/json)
 
@@ -181,7 +218,7 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
         Returned if list id does not exist
 
-### Delete a Single List [DELETE]
+### Delete a List [DELETE]
 
 + Response 204
 
@@ -199,58 +236,31 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
             Returned if the list id does not exist
 
-## Lists [/contactdb/lists/{list_id}/recipients_batch]
+
+
+## Lists [/contactdb/lists/{list_id}/recipients?page_size=100&page=1]
 
 + Parameters
-    + list_id (required, number) ... The ID of your list
+    + list_id (required, integer) ... The ID of your list.
+    + page = `1` (optional, integer) ... page of recipients to return, must be a positive integer.
+    + page_size = `100` (optional, integer) ... size of pages, must be a positive integer between 1 and 1000.
 
-### Add Multiple Recipients to a Single List [POST]
-
-+ Request (application/json)
-
-    + Body
-
-            ["jones@example.com", "miller@example.com"]
-
-+ Response 201
-
-+ Response 400
-
-    + Body
-
-            Returned if the list id is not a valid integer
-            Returned if no valid recipient ids were passed
-            Returned if no recipients were added
-            Returned if request body is invalid JSON
-
-+ Response 404
-
-    + Body
-
-            Returned if the list id does not exist
-
-
-## Lists [/contactdb/lists/{list_id}/recipients?limit=100&offset=0]
-
-+ Parameters
-    + list_id (required, integer) ... The ID of your list
-    + limit = `100` (optional, integer) ... number of recipients to return at a time (default: 100)
-    + offset = `0` (optional, integer) ... index of first recipient to return (default: 0)
-
-### List Recipients from a Single List [GET]
+### List Recipients on a List [GET]
 
 + Response 200
 
     + Body
 
-            {"recipients":[{"created_at":1422395108,"email":"e@example.com","first_name":"Ed","id":"e@example.com","last_clicked":null,"last_emailed":null,"last_name":null,"last_opened":null,"updated_at":1422395108}]}
+            {"recipients":[{"created_at":1422395108,"email":"e@example.com","first_name":"Ed","id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":null,"last_opened":null,"updated_at":1422395108}]}
 
 + Response 400
 
     + Body
 
             Returned if list id is not a valid integer
-            Returned if the parameters are invalid
+            Returned if page_size or page are not valid integers
+            Returned if page_size is less than 1 or greater than 1000
+            Returned if page is less than 1
 
 + Response 404
 
@@ -262,7 +272,7 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
 + Parameters
     + list_id (required, number) ... The ID of your list
-    + recipient_id (required, string) ... The ID of your recipient
+    + recipient_id (required, string) ... The ID of your existing recipient
 
 ### Add a Single Recipient to a List [POST]
 
@@ -298,81 +308,124 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
             Returned if the list id does not exist
             Returned if the recipient id does not exist
 
-## Lists [/contactdb/lists_batch]
+## Lists [/contactdb/lists/{list_id}/recipients]
 
-### Delete Multiple lists [DELETE]
++ Parameters
+    + list_id (required, number) ... The ID of your list
+
+### Add Multiple Recipients to a List [POST]
+
+Adds existing recipients to a list, passing in the recipient IDs to add. Recipient IDs should be passed exactly as they are returned from recipient endpoints.
 
 + Request (application/json)
 
     + Body
-            [1,2,"3"]
 
-+ Response 204
-
-     + Body
-
-+ Response 400
-
-     + Body
-
-            Returned if all the list ids are not valid
-
-
-
-# Group Recipients
-
-## Recipients [/contactdb/recipients]
-
-### Add a Single Recipient [POST]
-
-+ Request (application/json)
-
-     + Body
-
-            {"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy"}
+            ["YUBh", "bWlsbGVyQG1pbGxlci50ZXN0"]
 
 + Response 201
 
-    + Body
-
-            {
-                "created_at": 1424838734,
-                "custom_fields": [
-                    {"id":2,"name":"middle_name","type":"text","value":null},
-                    {"id":3,"name":"favorite_number","type":"number","value":null},
-                    {"id":4,"name":"birthday","type":"date","value":null},
-                    {"id”:5,”name":"pet","type":"text","value":"Fluffy"}
-                ],
-                "email":"jones@example.com",
-                "first_name":null,
-                "id":"jones@example.com",
-                "last_clicked":null,
-                "last_emailed":null,
-                "last_name":null,
-                "last_opened":null,
-                "updated_at":1424838734
-            }
-
 + Response 400
 
-     + Body
+    + Body
 
-            Returned if email parameter is empty or not valid
-            Returned if recipient limit has been reached
-            Returned if the request body is not valid json
-                {"errors":[{"message": "request body is invalid"}]}
+            Returned if the list id is not a valid integer
+            Returned if no valid recipient ids were passed
+            Returned if no recipients were added
+            Returned if request body is invalid JSON
 
-### Delete Multiple Recipients [DELETE]
++ Response 404
+
+    + Body
+
+            Returned if the list id does not exist
+
+# Group Recipients
+## Recipients [/contactdb/recipients]
+### Add Single Recipient [POST]
 
 + Request (application/json)
 
      + Body
 
-            ["jones@example.com", "miller@example.com"]
+            [{"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25}]
+
++ Response 201
+
+     + Body
+
+            {"error_count":0,"error_indices":[],"new_count":1,"persisted_recipients":["am9uZXNAZXhhbXBsZS5jb20="],"updated_count":0}
+
++ Response 400
+
+     + Body
+
+            Returned if the request body is not valid json
+            Returned if none of the recipient emails are not defined or valid
+
+### Add Multiple Recipients [POST]
+
++ Request (application/json)
+
+     + Body
+
+            [
+                {"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25},
+                {"email": "miller@example.com", "last_name": "Miller", "pet": "FrouFrou", "age": 32}
+                {"email": "invalid_email", "last_name": "Smith", "pet": "Spot", "age": 17}
+            ]
+
++ Response 201
+
+     + Body
+
+            {"error_count":1,"error_indices":[2],"new_count":2,"persisted_recipients":["YUBh", "bWlsbGVyQG1pbGxlci50ZXN0"],"updated_count":0, "errors":[{"message":"Invalid email.", "error_indices":[2]}]}
+
++ Response 400
+
+     + Body
+
+            Returned if the request body is not valid json
+            Returned if none of the recipient emails are not defined or valid
+
+### Update Recipient [POST]
+
+Updates one or more recipients. The body is a list of recipient objects.
+
++ Request (application/json)
+
+     + Body
+
+            [{"email": "jones@example.com", "last_name": "updated last name"}, ...]
+
++ Response 201
+
+     + Body
+
+            {"error_count":0,"error_indices":[],"new_count":0,"persisted_recipients":["am9uZXNAZXhhbXBsZS5jb20="],"updated_count":1}
+
++ Response 400
+
+     + Body
+
+            Returned if the request body is not valid json
+            Returned if none of the recipient emails are not defined or valid
+
+### Delete Recipient [DELETE]
+
+Deletes one or more recipients. The body is a list of recipient ids to delete.
+
++ Request (application/json)
+
+     + Body
+
+            ["YUBh", "bWlsbGVyQG1pbGxlci50ZXN0"]
 
 + Response 204
 
-     + Body
+    - Returned if at least one recipient was deleted
+
+    + Body
 
 + Response 400
 
@@ -382,11 +435,12 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
             Returned if one or more of the provided emails are invalid
             Returned if the request body is not valid json
 
-## Recipients [/contactdb/recipients?limit=100&offset=0]
+
+## Recipients [/contactdb/recipients?page_size=100&page=1]
 
 + Parameters
-    + limit = `100` (optional, integer) ... number of recipients to return at a time.
-    + offset = `0` (optional, integer) ... index of first recipient to return.
+    + page_size = `100` (optional, integer) ... number of recipients to return at a time, must be a positive integer between 1 and 1000.
+    + page = `1` (optional, integer) ... page to return, must be a positive integer
 
 ### List Recipients [GET]
 
@@ -394,100 +448,23 @@ if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3F
 
      + Body
 
-            {"created_at":1422313607,"email":"jones@example.com","first_name":null,"id":"jones@example.com","last_clicked":null,"last_emailed":null,"last_name":"Jones","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"Fluffy","type":"text"}]}
+            {"recipients": [{"created_at":1422313607,"email":"jones@example.com","first_name":null,"id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":"Jones","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"Fluffy","type":"text"}]}]}
 
 + Response 400
 
      + Body
 
-            Returned if limit or offset are not valid integers
-            Returned if limit is less than 1
-            Returned if offset is less than 0
+            Returned if page_size or page are not valid integers
+            Returned if page_size is less than 1 or greater than 1000
+            Returned if page is less than 1
 
-## Recipients [/contactdb/recipients/batch]
-
-### Get Multiple Recipients [GET]
-
-+ Request (application/json)
-
-     + Body
-
-            ["jones@example.com","miller@example.com"]
-
-+ Response 200
-
-     + Body
-
-            {
-              "recipients": [
-                {"created_at":1422313607,"email":"jones@example.com","first_name":null,"id":"jones@example.com","last_clicked":null,"last_emailed":null,"last_name":"Jones","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"Fluffy","type":"text"}]},
-                {"created_at":1422313607,"email":"miller@example.com","first_name":null,"id":"miller@example.com","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"FrouFrou","type":"text"}]}
-              ]
-            }
-
-+ Response 400
-
-    + Body
-
-            Returned if the request body is not valid json
-            {"errors":[{"message": "no valid record ids provided"}]}
-            Returned if none of the recipient ids are valid
-
-## Recipients [/contactdb/recipients/count]
-
-### Read a count of recipients [GET]
-
-+ Response 200
-
-     + Body
-
-            {"recipient_count": 2}
-
-## Recipients Search [/contactdb/recipients/search/?{field_name}=bob]
-
-{% info %}
-Note: *"field_name" is a variable that is substituted for your actual custom field name from your recipient*
-{% endinfo %}
-
-+ Parameters
-    + field_name (required, text) ... the name of the field you're looking for
-
-### Read recipients matching search criteria [GET]
-
-+ Response 200
-
-     + Body
-
-            {"recipients":
-                [{
-                    "created_at": 1422313607,
-                    "email": "jones@example.com",
-                    "first_name": null,
-                    "id": "jones@example.com",
-                    "last_clicked": null,
-                    "last_emailed": null,
-                    "last_name": "Jones",
-                    "last_opened": null,
-                    "updated_at": 1422313790,
-                    "custom_fields": [
-                        { "id": 23, "name": "pet", "value": "Fluffy", "type": "text"}
-                    ]
-                }]
-            }
-
-+ Response 400
-
-     + Body
-
-            Returned if no search params are specified
-            {"errors":[{"message": "no search params"}]}
 
 ## Recipients [/contactdb/recipients/{recipient_id}]
 
 + Parameters
     + recipient_id (required,number) ... The ID of the recipient
 
-### List a Single Recipient [GET]
+### Retrieve a Recipient [GET]
 
 + Response 200
 
@@ -497,7 +474,7 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
                 "created_at": 1422313607,
                 "email": "jones@example.com",
                 "first_name": null,
-                "id": "jones@example.com",
+                "id": "YUBh",
                 "last_clicked": null,
                 "last_emailed": null,
                 "last_name": "Jones",
@@ -542,9 +519,9 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
 ## Recipients [/contactdb/recipients/{recipient_id}/lists]
 
 + Parameters
-    + recipient_id (required, number) ... The ID of the recipient
+    + recipient_id (required,string) ... The ID of the recipient
 
-### List the recipient lists to which the recipient belongs [GET]
+### Get the Lists the Recipient Is On [GET]
 
 + Response 200
 
@@ -564,88 +541,135 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
 
             Returned if record for the recipient id does not exist
 
-## Recipients [/contactdb/recipients_batch]
 
-### Add Multiple Recipients [POST]
 
-+ Request (application/json)
 
-     + Body
+## Recipients [/contactdb/recipients/count]
 
-            [
-                {"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy"},
-                {"email": "miller@example.com", "last_name": "Miller", "pet": "FrouFrou"}
-            ]
+### Get a Count of Recipients [GET]
 
-+ Response 201
++ Response 200
 
      + Body
 
-            {"error_count":0,"error_indices":[],"new_count":2,"persisted_recipients":["jones@example.com", "miller@example.com"],"updated_count":0}
+            {"recipient_count": 2}
+
+## Recipients Search [/recipients/search/?{field_name}=bob]
+
++ Parameters
+    + field_name (required, text) ... the name of the field you're looking for
+
+### Get Recipients Matching Search Criteria [GET]
+
+{% info %}
+*"field_name" is a variable that is substituted for your actual custom field name from your recipient.
+Text fields must be url-encoded. Date fields are searchable only by unix timestamp (e.g. 2/2/2015 becomes 1422835200)*
+{% endinfo %}
+
++ Response 200
+
+     + Body
+
+            {"recipients":
+                [{
+                    "created_at": 1422313607,
+                    "email": "jones@example.com",
+                    "first_name": null,
+                    "id": "YUBh",
+                    "last_clicked": null,
+                    "last_emailed": null,
+                    "last_name": "Jones",
+                    "last_opened": null,
+                    "updated_at": 1422313790,
+                    "custom_fields": [
+                        { "id": 23, "name": "pet", "value": "Fluffy", "type": "text"}
+                    ]
+                }]
+            }
 
 + Response 400
 
      + Body
 
-            Returned if the request body is not valid json
-            {"errors":[{"message": "request body is invalid"}]}
+            Returned if no search params are specified
+            {"errors":[{"message": "no search params"}]}
 
-            Returned if none of the recipient emails are not defined or valid
-            {"errors":[{"message": "No recipients persisted, possibly due to invalid parameters"}]}
 
-# Group Reserved Fields
 
-## Reserved Fields [/contactdb/reserved_fields]
-
-### List fields that are reserved and can't be used for custom field names. [GET]
-
-+ Response 200
-
-    + Body
-
-            {"reserved_fields":[{"name":"first_name","type":"text"},{"name":"last_name","type":"text"},{"name":"email","type":"text"},{"name":"created_at","type":"date"},{"name":"updated_at","type":"date"},{"name":"last_emailed","type":"date"},{"name":"last_clicked","type":"date"},{"name":"last_opened","type":"date"},{"name":"my_custom_field","type":"text"}]}
 
 # Group Segments
 
 #### Valid operators for create and update depend on the type of the field you are segmenting.
 
 <ul>
- <li>Dates: "eq", "ne", "lt" (before), "gt" (after)</li>
- <li>Text: "contains", "eq" (is), "ne" (is not)</li>
- <li>Numbers: "eq", "lt", "gt"</li>
- <li>Opens and Clicks: "eq" (opened), "ne" (not opened)</li>
+  <li>Dates: "eq", "ne", "lt" (before), "gt" (after)</li>
+  <li>Text: "contains", "eq" (is), "ne" (is not)</li>
+  <li>Numbers: "eq", "lt", "gt"</li>
+  <li>Opens and Clicks: "eq" (opened), "ne" (not opened)</li>
 </ul>
 
 ## Segments [/contactdb/segments]
 
-### List all segments [GET]
+### Create a Segment [POST]
 
-+ Response 200
-
-     + Body
-
-            {"segments":[{"id":1,"name":"Last Name Miller","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}]}
-
-### Create a segment [POST]
-
-+ Request
++ Request (application/json)
 
     + Body
 
-            {"name":"Last Name Miller","conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
+            {
+              "name": "Last Name Miller",
+              "conditions": [{ "field": "last_name", "value": "Miller", "operator": "eq", "and_or": null}]
+            }
 
 + Response 201
 
     + Body
 
-            {"id":1,"name":"Last Name Miller","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
+            {
+              "id": 1,
+              "name": "Last Name Miller",
+              "list_id": null,
+              "conditions": [{
+                                "field":"last_name",
+                                "value":"Miller",
+                                "operator":"eq",
+                                "and_or":null
+                              }],
+              "recipient_count": 1
+            }
+
+### List All Segments [GET]
+
++ Response 200
+
+     + Body
+
+            {
+              "segments": [
+                            {
+                            "id":1,
+                            "name": "Last Name Miller",
+                            "list_id": null,
+                            "conditions": [
+                                          {
+                                          "field": "last_name",
+                                          "value": "Miller",
+                                          "operator": "eq",
+                                          "and_or": null
+                                          }, { "field": "something"}
+                                        ],
+                            "recipient_count":1
+                            }
+                          ]
+            }
+
 
 ## Segments [/contactdb/segments/{segment_id}]
 
 + Parameters
     + segment_id (required,number) ... The ID of the segment
 
-### List a single segment [GET]
+### Retrieve a Segment [GET]
 
 + Response 200
 
@@ -660,7 +684,7 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
             Returned if segment id is not valid
             Returned if segment id does not exist
 
-### Update a single segment [PUT]
+### Update a Segment [PATCH]
 
 + Request (application/json)
 
@@ -695,7 +719,7 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
 
             Returned if the segment id does not exist
 
-### Delete a Single Segment [DELETE]
+### Delete a Segment [DELETE]
 
 + Response 204
 
@@ -718,13 +742,13 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
 + Parameters
     + segment_id (required,number) ... The ID of the segment
 
-### List the Recipients from a Single Segment [GET]
+### List Recipients On a Segment [GET]
 
 + Response 200
 
     + Body
 
-            {"recipients":[{"created_at":1423160740,"email":"miller@example.com","first_name":null,"id":"miller@example.com","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
+            {"recipients":[{"created_at":1423160740,"email":"miller@example.com","first_name":null,"id":"bWlsbGVyQG1pbGxlci50ZXN0","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
 
 + Response 404
 
@@ -738,16 +762,16 @@ Note: *"field_name" is a variable that is substituted for your actual custom fie
 
 + Parameters
     + segment_id (required, integer) ... The ID of your segment
-    + limit = `100` (optional, integer) ... number of recipients to return at a time
-    + offset = `0` (optional, integer) ... number of recipients to offset by
+    + limit = `100` (optional, integer) ... number of recipients to return at a time, must be a positive integer from 1 to 1000.
+    + offset = `0` (optional, integer) ... number of recipients to offset by, must be a positive integer.
 
-### List recipients from a single segment according to limit and offset [GET]
+### List Recipients On a Segment According to Limit and Offset [GET]
 
 + Response 200
 
     + Body
 
-            {"recipients":[{"created_at":1423160740,"email":"miller@example.com","first_name":null,"id":"miller@example.com","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
+            {"recipients":[{"created_at":1423160740,"email":"bWlsbGVyQG1pbGxlci50ZXN0","first_name":null,"id":"miller@example.com","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
 
 + Response 400
 
