@@ -342,9 +342,9 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     if "request" == @@body_block
 
-      @@request_body = text.gsub("\n","").gsub("&quot;",'"')
+      @@request_body = text.gsub("\n", "").gsub("&quot;",'"').strip
 
-      debug "\t REQUEST BODY SET " + text.strip
+      debug "\t REQUEST BODY SET " + text.gsub("\n", "").gsub("&quot;",'"').strip
 
       # we don't want this to be put out to the page yet
       return
@@ -381,7 +381,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #   if = then we have a default
     #   if no = then we have just name
 
-    puts "Param String: " + text
+    debug "Param String: " + text
 
     parameters = text.split(" ... ")
 
@@ -401,7 +401,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
-        puts
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + parameters[0]
       end
     end
@@ -422,7 +421,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       example = " Example: `" + optional_requirements[2] + "`"
 
-      puts "\t " + example
+      debug "\t " + example
     end
 
     parameter_req = "Yes"
@@ -438,14 +437,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
       description += " Defaults to " + identifier_default[1].strip
-      puts "\t Description: " + description
+      debug "\t Description: " + description
     else
       identifier = identifier_default
     end
 
     # lets see if this description has members?
     if description.include? "Members"
-      puts "Has Members!!"
+      debug "Has Members!!"
 
       descriptors = description.split("Members")
 
@@ -454,27 +453,31 @@ class BluePrintHTML < Redcarpet::Render::HTML
       members = descriptors[1].strip.split("\n").compact.collect{|x| x.strip}
       description += members.join(", ")
 
-      puts "New Description: " + description
+      debug "New Description: " + description
     end
 
     # add the example to the end of the description
     if example.length > 0
       description += example
-      puts "\t Desc+Example: " + description
+      debug "\t Desc+Example: " + description
     end
 
     # liquidexample --- {% parameter :identifer :required :requirements :description %}
-    puts "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t TEST "
-    puts @@param_string
+
     @@param_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t added to param_list['temp']"
+    debug "\t added to param_list['temp']"
   end
 
   # builds the final output of all the liquid tags, using all the vars we've set
   # we do this during the response, because we finally have all the parts we need
   def docs_liquid_output(text)
     # {% apiv3example :endpoint_identifier :requestType :url?:parameters %}
+    #   {% apiv3requestbody %}
+    #      json here
+    #   {% endapiv3requestbody %}
+    #   {% apiv3requestheader %}
+    #      json here
+    #   {% endapiv3requestheader %}
     #   {% v3response %}
     #   :expectedResponse
     #   [
@@ -509,32 +512,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
       url += @@params
     end
 
-    if @@request_body.length > 1
-      # handle a request body with no params
-      url += " " + @@request_body.strip
-    end
-
-    debug "REQUEST HEADERS: " + @@request_headers
-
-    if @@request_headers.length > 1
-
-      debug "WE HAVE REQUEST HEADERS"
-
-      #make sure that we have the space there to be parsed
-
-      if @@request_body.length <= 1
-        debug "REquest Body is 0"
-        url += " {}"
-      end
-
-      debug "adding request headers to URL"
-
-      #add the request headers to the tag
-      url += " {request_header" + @@request_headers.strip + "}"
-
-      debug "####URL####" + url
-    end
-
     # output all the tags at once for this endpoint
     # if/when we want to put params on the URL in the Request area, we can do this append - @@params.gsub("\n","")+ - to the Url
     # we will need to probably grab params for the URL from the params list, rather than the request body
@@ -553,8 +530,21 @@ class BluePrintHTML < Redcarpet::Render::HTML
     end
 
 
-    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n" +
-        "\t{% v3response %}\n" +
+    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
+
+    if @@request_body.length > 1
+      output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
+    end
+
+    if @@request_headers.length > 1
+      output +=     "\t {% apiv3requestheader %}" +
+                      @@request_headers.strip +
+                    "\t {% endapiv3requestheader %}"
+    end
+
+
+
+    output +=   "\t{% v3response %}\n" +
         "\t\t" + text + "\n"
 
     #sometimes, we don't have a response body. That's ok.
@@ -570,7 +560,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # call the instance var reset
     reset_vars()
-
+    debug "\n\n" + output + "\n\n"
     return "\n\n" + output + "\n\n"
   end
 
