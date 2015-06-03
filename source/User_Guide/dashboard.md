@@ -26,11 +26,7 @@ Activity Feed
 
 Your activity feed will show you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can even search your activity by email address.
 
-<<<<<<< HEAD
 If you would like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see our email activity documentation.
-=======
-If you would like to see all of your email activity, please go to the [Email Activity](https://app.sendgrid.com/email_activity) page. For more information, please see our email activity documentation.
->>>>>>> mk_middleman
 
 {% anchor h2 %}
 Transactional Emails
@@ -42,18 +38,10 @@ This box shows you the information for sending transactional emails via SendGrid
 Advanced Suppression Manager
 {% endanchor %}
 
-<<<<<<< HEAD
 The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and Integrate your Suppression Groups.
-=======
-The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage](https://app.sendgrid.com/suppressions/advanced_suppression_manager) and Integrate your Suppression Groups.
->>>>>>> mk_middleman
 
 {% anchor h2 %}
 Help Links
 {% endanchor %}
 
-<<<<<<< HEAD
 We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us), our [Documentation]({{root_url}}/), and our [Community page](http://community.sendgrid.com/sendgrid).
-=======
-We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us), our [Documentation](https://sendgrid.com/docs/), and our [Community page](http://community.sendgrid.com/sendgrid).
->>>>>>> mk_middleman
