@@ -90,6 +90,10 @@ Automated security
 This is the “set it once and forget it” option. You must turn this on for each subdomain you whitelabel.
 {% endinfo %}
 
+{% warning %}
+If you are not allowed to have underscores in your CNAME records, you will have to manually manage your DNS.
+{% endwarning %}
+
 Instead of managing your DNS records for every single change you make, adding an IP address for example, SendGrid can manage all the SPF record updates for you. This option will change the DNS records that you point at SendGrid for your domain, allowing the responsibility of updating the records to pass through to SendGrid. This means that DKIM and SPF records will all be handled by SendGrid once this whitelabel is verified.
 
 If you choose not to have SendGrid manage your DNS records, then you will be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager.
