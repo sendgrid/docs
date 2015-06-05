@@ -20,7 +20,7 @@ performance.  This functionality:
 
 
 {% info %}
-Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 24 hours in advance.
+Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 72 hours in advance.
 {% endinfo %}
 
 {% warning %}
