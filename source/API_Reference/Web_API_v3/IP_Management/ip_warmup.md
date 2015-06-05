@@ -11,9 +11,9 @@ of mail that can be sent through them per hour, with the limit determined by how
 
 If you have existing warm IPs as well as new IPs that need warming, any mail beyond the hourly maximum limit will overflow to your existing warm IPs.
 
-If there are no existing warm IPs, any requests made above the hourly maximum limit will overflow to our Shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use these Shared IP Warmup clusters. 
+If there are no existing warm IPs, any requests made above the hourly maximum limit will overflow to our Shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use these Shared IP Warmup clusters.
 
-An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up_ips.html) and consider your sending volume for best deliverability.
+An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP]({{root_url}}/Classroom/Deliver/warming_up_ips.html) and consider your sending volume for best deliverability.
 
 * * * * *
 
@@ -59,7 +59,7 @@ HTTP/1.1 200 OK
 {% endv3response %}
 {% endapiv3example %}
 
-* * * * * 
+* * * * *
 
 {% anchor h2 %}
 POST
@@ -92,4 +92,4 @@ Remove an IP from warmup.
 {% v3response %}
 HTTP/1.1 204 NO CONTENT (OK)
 {% endv3response %}
-{% endapiv3example %} 
+{% endapiv3example %}
