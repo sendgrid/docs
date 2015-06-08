@@ -174,7 +174,7 @@ This app is our original Email Template app, today we have a more full featured 
   {% parameter text/html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
 {% endparameters %}
 
-{% apiexample template POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text_html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
+{% apiexample template POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=template&text/html=%3Chtml%3E%3Chead%3E%3C%2Fhead%3E%3Cbody%20bgcolor%3D%27pink%27%3E%3Cdiv%20style%3D%27width%3A200px%27%20bgcolor%3D%27%23FFF%27%3E%3C%25%20body%20%25%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E %}
   {% response json %}
 {
   "message": "success"

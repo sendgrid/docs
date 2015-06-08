@@ -15,10 +15,10 @@ First of all, rest assured that our system is designed with throttling (also kno
 But what is throttling? Well, it's when a receiving server refuses a message, but with a specific explanation that tells our server it's only a temporary refusal. They usually say things like "user is receiving mail at too great a rate right now, please try again later", or "user's mailbox is over quota." One important thing to note is that these errors are almost always a **400** class of error.
 
 {% anchor h2 %}
-What can cause a deferral? 
+What can cause a deferral?
 {% endanchor %}
 
--   The receiving server doesn't recognize your IP, and is afraid you're sending spam. *This is why [warming up]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up_ips.html) is so important, so they know who you are.*
+-   The receiving server doesn't recognize your IP, and is afraid you're sending spam. *This is why [warming up]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is so important, so they know who you are.*
 
 -   The receiving server doesn't have any open ports to receive email.
 
@@ -31,7 +31,7 @@ What happens if it's continuously deferred for 72 hours? Well, that generally me
 What this means is that even if you send a message through us for that user, we will not even try to deliver to that address, because we know it's no longer good. Continuing to try to send to a known bad address will harm your reputation with the receiver, so we prevent that. However, if you continue to try to send, and we intercept it, your reputation with us goes down, as noted on your Dashboard [Account Overview](https://sendgrid.com/account/overview).
 
 {% anchor h2 %}
-Recap 
+Recap
 {% endanchor %}
 
 Deferrals, aka Throttling, aka Soft Bounces are a normal part of email delivery, one SendGrid knows how to handle. There are a number of mundane reasons that can cause a defer. If a message stays throttled, it will be added to the Block list.
