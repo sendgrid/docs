@@ -14,7 +14,7 @@ navigation:
 When in doubt, contact your DNS registrar or web hosting service’s technical support department. All information in this document complies with the DNS standards, but some registrars and web hosting providers handle things differently.
 {% endinfo %}
 
-SendGrid’s domain whitelabel allows you to whitelabel your domain and get rid of the “via sendgrid.net” message on your emails, even if you don’t have a private IP address with SendGrid. You can start to build your domain’s email reputation and explicitly show all your recipients that you actually sent these emails. This should help to increase your deliverability and reduce your potential for spam reports.
+SendGrid’s domain whitelabel allows you to whitelabel your domain and get rid of the “via sendgrid.net” message on your emails, even if you don’t have a dedicated IP address with SendGrid. You can start to build your domain’s email reputation and explicitly show all your recipients that you actually sent these emails. This should help to increase your deliverability and reduce your potential for spam reports.
 
 Whitelabeling is critical to your email reputation and there are a couple things you should know:
 

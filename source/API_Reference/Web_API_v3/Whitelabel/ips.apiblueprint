@@ -4,7 +4,7 @@ weight: 0
 title: IPs
 seo:
   title: Whitelabel IPs
-  description: Whitelabel private IP addresses with SendGrid over the v3 API
+  description: Whitelabel dedicated IP addresses with SendGrid over the v3 API
   keywords: ip whitelabel, whitelabel ip
 navigation:
   show: true
