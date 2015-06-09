@@ -75,9 +75,9 @@ to create a couple CNAME records for the links to be rewritten to and for us to 
 ### Create a Link [POST]
 
 + Attributes
-    + domain (required, string,  example.com) ... Domain to create the whitelabel for
-    + subdomain (required, string, mail) ... Subdomain to create the whitelabel for
-    + default (optional, boolean, true) ... Whether to use this link whitelabel as the fallback when a match cannot be found.
+    + domain example.com (required, string) - Domain to create the whitelabel for
+    + subdomain mail (required, string) - Subdomain to create the whitelabel for
+    + default true (optional, boolean) - Whether to use this link whitelabel as the fallback when a match cannot be found.
 
 + Request (application/json)
 
@@ -315,7 +315,7 @@ subuser management.
 ### Associate Link [POST]
 
 + Attributes
-    + username (required, string, `jane@example.com`) ... User to associate with the link whitelabel.
+    + username jane@example.com (required, string) - User to associate with the link whitelabel.
 
 + Request
 
