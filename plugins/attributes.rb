@@ -14,7 +14,7 @@ module Jekyll
 <table id="parameters-#{@identifier.strip}" class="table table-bordered table-striped">
   <tbody>
     <tr>
-      <th>Attribute</th>
+      <th>Request Attribute</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
