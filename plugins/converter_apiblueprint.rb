@@ -39,6 +39,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
   @@params = ""
   @@param_list = ""
   @@attr_list = ""
+  @@attr_string = ""
   @@param_string = ""
   @@method = ""
   @@path = ""
@@ -200,10 +201,19 @@ class BluePrintHTML < Redcarpet::Render::HTML
     debug "\t list type = " + list_type.to_s
     debug "\t" + text
 
+
+
     # individual parameters are accessed first in the processing
-    if text.include? " ... "
+    if text.include? ") ... "
       return docs_liquid_individual_params(text)
     end
+
+    # individual parameters are accessed first in the processing
+    if text.include? ") - "
+      return docs_liquid_individual_attrs(text)
+    end
+
+
 
     # Build the Parameters Liquid Block
     if text.include? "Parameters"
@@ -365,10 +375,101 @@ class BluePrintHTML < Redcarpet::Render::HTML
     text
   end
 
+  # Rules:
+  #   Attributes has "(required, type) - "
+  #   the first word is the param name
+  #   everything between the first word and the open paren is the example
+  #   between the params are required, type data
+  #   everything after the " - " is the description
+  def docs_liquid_individual_attrs(text)
+    debug "\t --Individual Attributes--"
+    # BluePrint example --- :identifier :example (:optional, :type) - :description
+
+    puts "\t\tAttr String: " + text
+
+    position = text.index(" ")
+    #the identifier is everything before the first space.
+    identifier = text[0..position].strip
+
+    debug "\t\tidentifier: " + identifier
+
+    text = text[position..text.length].strip
+
+    debug "\t\tnew text: " + text
+
+    # find the open paren
+    position = text.index(" (")
+
+    #the example is everything from the first space to the open paren
+    example = text[0..position]
+
+    if example.length > 0
+      example = docs_example_text(example)
+    end
+
+    debug "\t\texample: " + example
+
+    text = text[position..text.length].strip
+
+    debug "\t\tnew text: " + text
+
+    position = text.index(" - ")
+
+    #get the description, add example no matter what
+    description = text[position..text.length].gsub(" - ", "").strip
+
+    debug "\t\tdescription: " + description
+
+    if description.rindex(".") != (description.length - 1)
+      throw "Description should have a period at the end. Given: " + description + " For identifier: " + identifier
+    end
+
+    description +=  example
+
+    text = text[0..position].strip.gsub("("," ").gsub(")", " ").split(",")
+
+    debug "\t\t new text: "
+
+    optional = text[0].strip
+
+    debug "\t\t optional: " + optional
+
+    unless optional.include? "required"
+      unless optional.include? "optional"
+        puts
+        throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + optional
+      end
+    end
+
+    parameter_req = "Yes"
+
+    if "optional" == optional.downcase
+      parameter_req = "No"
+    end
+
+    requirements = text[1].strip
+
+    debug "\t\t requirements: " + requirements
+
+    @@attr_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+
+    debug "\t\t " + @@attr_string
+
+  end
+
+  def docs_default_text(text)
+    return "<br />Default: `" + text + "`"
+  end
+
+  def docs_example_text(text)
+    return "<br />Example: `" + text + "`"
+  end
+
+
   # handles the specifics of the liquid "parameters" items for the redcarpet:list_item method
   def docs_liquid_individual_params(text)
     debug "\t --Individual Parameter--"
-    # BluePrint example --- :identifier (:optional, :requirements) … :description
+    # BluePrint example --- :identifier (:optional, :type, :example) … :description
 
     # split by ...
     #       [1] = description
@@ -420,7 +521,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     if optional_requirements.length > 2
       optional_requirements[2] = optional_requirements[2].strip
 
-      example = " Example: `" + optional_requirements[2] + "`"
+      example = docs_example_text(optional_requirements[2])
 
       puts "\t " + example
     end
@@ -437,7 +538,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     if identifier_default.include? "="
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
-      description += " Defaults to " + identifier_default[1].strip
+      description += docs_default_text(identifier_default[1].strip)
       puts "\t Description: " + description
     else
       identifier = identifier_default
@@ -588,7 +689,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # create the attr list when we have a list element that says "Params"
     if type == "attributes"
-      @@attr_list = "{% attributes endpoint#{@@group_identifier} %}\n" + @@param_string + "{% endattributes %}"
+      @@attr_list = "{% attributes endpoint#{@@group_identifier} %}\n" + @@attr_string + "{% endattributes %}"
       debug "\t attr LIST SET: " + @@attr_list
     end
 
