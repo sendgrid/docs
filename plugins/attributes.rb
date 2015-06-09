@@ -1,7 +1,7 @@
 require 'kramdown'
 
 module Jekyll
-  class Parameters < Liquid::Block
+  class Attributes < Liquid::Block
     def initialize(tag_name, markup, tokens)
       @identifier = markup
 
@@ -14,7 +14,7 @@ module Jekyll
 <table id="parameters-#{@identifier.strip}" class="table table-bordered table-striped">
   <tbody>
     <tr>
-      <th>URI Parameter</th>
+      <th>Request Attribute</th>
       <th>Required</th>
       <th>Requirements</th>
       <th>Description</th>
@@ -29,4 +29,4 @@ HTML
   end
 end
 
-Liquid::Template.register_tag('parameters', Jekyll::Parameters)
+Liquid::Template.register_tag('attributes', Jekyll::Attributes)
