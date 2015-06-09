@@ -64,9 +64,7 @@ Your default whitelabel is your fallback for click and open tracking when you se
 Creating An Email Link Whitelabel
 {% endanchor %}
 
-When you enter the information for your whitelabel and click “Save”, SendGrid will update its own internal DNS to prepare for your whitelabel settings. This process may take up to 60 seconds.
-
-We will then give you the DNS entries that you need to make to match the settings you provided.
+When you enter the information for your whitelabel and click “Save”, we will show you the DNS entries that you need to make to match the settings you provided.
 
 {% anchor h2 %}
 Validate Your Email Link Whitelabel
@@ -102,7 +100,7 @@ Deleting a Domain Whitelabel is permanent and can not be rolled back.
 
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.
 
-Once deleted, the internal SendGrid DNS entries will be deleted and any email you send will fall back to the appropriate whitelabel settings according the [Whitelabel Application Logic]({{root_url}}/User_Guide/Settings/Whitelabel/index.html#-Whitelabel-Application-Logic).
+Once deleted, you will need to update your DNS as your links will no longer be white labeled to this subdomain by SendGrid.
 
 {% anchor h2 %}
 Using the API
