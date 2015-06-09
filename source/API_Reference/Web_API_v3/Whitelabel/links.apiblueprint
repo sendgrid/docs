@@ -75,8 +75,8 @@ to create a couple CNAME records for the links to be rewritten to and for us to 
 ### Create a Link [POST]
 
 + Attributes
-    + domain example.com (required, string) - Domain to create the whitelabel for
-    + subdomain mail (required, string) - Subdomain to create the whitelabel for
+    + domain example.com (required, string) - Domain to create the whitelabel for.
+    + subdomain mail (required, string) - Subdomain to create the whitelabel for.
     + default true (optional, boolean) - Whether to use this link whitelabel as the fallback when a match cannot be found.
 
 + Request (application/json)

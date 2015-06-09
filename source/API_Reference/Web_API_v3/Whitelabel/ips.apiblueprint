@@ -75,9 +75,9 @@ Return list of IPs. If search key is provided, returns IPs that matches.
 
 ### Create an IP [POST]
 + Attributes
-    + ip 192.168.1.1 (required, string) - IP to whitelabel
-    + domain example.com (required, string) - Domain that will be used to send messages on the IP
-    + subdomain email (required, string) - Subdomain that will be used to send messages on the IP
+    + ip 192.168.1.1 (required, string) - IP to whitelabel.
+    + domain example.com (required, string) - Domain that will be used to send messages on the IP.
+    + subdomain email (required, string) - Subdomain that will be used to send messages on the IP.
 
 + Request (application/json)
 
