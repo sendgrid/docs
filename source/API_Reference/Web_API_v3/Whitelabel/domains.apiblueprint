@@ -116,12 +116,12 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 ### Create a Domain [POST]
 
 + Attributes (object)
-    + domain (required, string, `example.com`) ... Domain being whitelabeled
-    + subdomain (required, string, `news`) ... Subdomain being whitelabeled
-    + automatic_security (optional, boolean,  `false`) ... Whether to allow SendGrid to manage your SPF records, DKIM keys, and DKIM key rotation.
-    + ips (optional, array[string], `[\"192.168.1.1\"]`) ... Specify IPs to be used in your SPF record
-    + custom_spf (optional, boolean, `true`) ... Specify whether to use a custom spf or allow SendGrid to manage your SPF.  This option is only available to domain whitelabels setup for manual security.
-    + `default` (optional, boolean, `false`) ... Whether to use this whitelabel as the fallback if no domain whitelabels match the sender's domain.
+    + domain example.com (required, string) - Domain being whitelabeled
+    + subdomain news (required, string) - Subdomain being whitelabeled
+    + automatic_security false (optional, boolean) - Whether to allow SendGrid to manage your SPF records, DKIM keys, and DKIM key rotation.
+    + ips ["192.168.1.1"] (optional, array[string]) - Specify IPs to be used in your SPF record
+    + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF.  This option is only available to domain whitelabels setup for manual security.
+    + default false (optional, boolean) - Whether to use this whitelabel as the fallback if no domain whitelabels match the sender's domain.
 
 + Request (application/json)
 
@@ -231,8 +231,8 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 ### Update a Domain [PATCH]
 
 + Attributes
-    + `default` (optional, boolean, `false`) ... Inidcates whether this domain whitelabel should be considered the default.  Defaults to false.
-    + custom_spf (optional, boolean, `false`) ... Indicates whether to generate a custom SPF record for manual security.  Defaults to false.
+    + default false (optional, boolean) - Inidcates whether this domain whitelabel should be considered the default.  Defaults to false.
+    + custom_spf false (optional, boolean) - Indicates whether to generate a custom SPF record for manual security.  Defaults to false.
 
 + Request (application/json)
 
@@ -348,7 +348,7 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 ### Add an IP to a Domain [POST]
 
 + Attributes
-    + ip (required, string, `192.168.0.1`) ... IP to associate with the domain.  Used for manually specifying IPs for custom SPF.
+    + ip 192.168.0.1 (required, string) - IP to associate with the domain. Used for manually specifying IPs for custom SPF.
 
 + Request (application/json)
 
@@ -563,7 +563,7 @@ subuser management.
 ### Associate Domain [POST]
 
 + Attributes
-    + username (required, string, `jane@example.com`) ... Username to associate with the domain whitelabel.
+    + username jane@example.com (required, string) - Username to associate with the domain whitelabel.
 
 
 + Request
