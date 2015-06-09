@@ -28,7 +28,7 @@ Google Analytics
 
 For more information about using this app, please refer to Google’s URL Builder and their Blog post on Campaign Tracking.
 
-We default the settings to Google’s recommendations. Anything you enter into those fields in the Settings or via API will take precedence.
+We default the settings to Google’s recommendations. Anything you enter into those fields in the Settings or via API will take precedence. For more information see [Google Analytics Demystified](https://support.sendgrid.com/hc/en-us/articles/200181468). 
 
 {% anchor h3 %}
 Settings
