@@ -19,7 +19,7 @@ Retrieve Spam Reports
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/api/customer.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -60,7 +60,7 @@ SendGrid suppresses messages to spam-reporting addresses, but entries can be rem
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Spam Report suppression list' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/user.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=spamreport@domain.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/customer.spamreports api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=spamreport@domain.com %}
   {% response json %}
 {
   "message": "success"
