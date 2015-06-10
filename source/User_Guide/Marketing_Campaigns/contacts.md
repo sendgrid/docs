@@ -68,41 +68,50 @@ automatically fail, but will not cause the entire upload to fail.
 Upload Your Contacts
 {% endanchor %}
 
-You can add contacts to your contact database manually or by uploading the CSV you prepared in a previous step. These
-contacts can be added to a new list or to a list that already exists. If you happen to upload the same contact more than
-once, we will append any new data for fields not already uploaded. We will also update any fields associated with a contact
-that are in your upload file.
+You can add contacts by uploading the CSV you prepared in a previous step. If you happen to upload the same contact more than once, we will append any new data for fields not already uploaded. We will also update any fields associated with a contact that are in your upload file.
 
 {% info %}
 We will never create a duplicate contact in your contact database or add a contact more than
 once to any list or segment.
 {% endinfo %}
 
-To upload, choose a list. By default, we have selected the “No List - All Contacts,” which would upload directly to your
-contact database. If you would like to upload your CSV to a specifically named list, just click “New List” and type the
-name of your list. If you want to upload these contacts to a list that already exists, just select that list name from the dropdown.
+{% anchor h3 %}
+Add Contacts From a CSV
+{% endanchor %}
+
+To add new contacts, select “Add Contacts” and then select “Upload CSV”. Select your file, by clicking “Select A File”.
+
+{% anchor h3 %}
+Create a New List from a CSV
+{% endanchor %}
+
+To create a new list from your CSV< choose “Add a List or Segment” and then select Upload CSV. Add the name of the list you would like to create and then choose your file.
+
+{% anchor h3 %}
+Select Your Custom Fields
+{% endanchor %}
 
 ![]({{root_url}}/images/contacts_1.png "Upload Contacts")
 
-You will see the progress as your file uploads to SendGrid. This simply shows that we have the information; we will then
-kick off the process of storing and automatically segmenting your contacts if you have already set up segments on your account.
+You will see the progress as your file uploads to SendGrid. This simply shows that we have the information. If your list is quite large, we will then kick off the process of storing and automatically segmenting your contacts if you have already set up segments on your account. For smaller lists, you will see your contacts in your new list quickly.
 
 ![]({{root_url}}/images/contacts_2.png "Upload Contact Status")
 
-Once the CSV is done processing, you will receive a summary notification email with:
+Once we have completed processing your new contacts, you will receive a summary notification email with:
 
 * Total processed contacts
 * Number of new contacts
 * Number of updated contacts
 * Number of errors
 
-If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If
-you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
+If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
 
 ![]({{root_url}}/images/contacts_3.png "Upload Contact Status Email")
 
-Please note: if you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you
+{% info %}
+If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you
 upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
+{% endinfo %}
 
 {% anchor h3 %}
 Viewing a Contact Profile
