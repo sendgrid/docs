@@ -16,7 +16,7 @@ Retrieve Unsubscribes
  {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
-{% apiexample get POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/api/customer.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -57,7 +57,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Unsubscribe suppression list' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=unsubscribe@sample.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/customer.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=unsubscribe@sample.com %}
   {% response json %}
 {
   "message": "success"
