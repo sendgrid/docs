@@ -188,7 +188,11 @@ Returns HTTP 400 if authentication fails.
 
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
 
-+ Response 200 (application/json)
++ Response 200
+
+    + Body
+    
+            { "message": "success" }
 
 + Response 400 (application/json)
 
