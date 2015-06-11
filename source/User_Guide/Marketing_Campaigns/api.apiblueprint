@@ -595,7 +595,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
      + Body
 
             Returned if no search params are specified
-            {"errors":[{"message": "no search params"}]}
+
 
 
 

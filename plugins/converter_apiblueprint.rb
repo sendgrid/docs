@@ -235,12 +235,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
     end
     # next up is an element with Body - we don't know whether it's a request or a response
     if text.include? "Body"
-
+      debug "\t text included Body"
       return docs_body(text)
 
     end
 
-    debug "\t body_block = " + @@body_block
+    debug "\t list_item body_block = " + @@body_block
+
+    debug text
 
     if text.include? "Response"
 
@@ -259,14 +261,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       # if we don't have one of the 200 responses, don't bother printing it
       # originally done inside of docs_liquid_output
-      unless @@http_response[0].to_s == "2"
-
-        # call the instance var reset
-        reset_vars()
-
-        # return nothing because we don't want any output here
-        return ""
-      end
+      # unless @@http_response[0].to_s == "2"
+      #
+      #   # call the instance var reset
+      #   reset_vars()
+      #
+      #   # return nothing because we don't want any output here
+      #   return ""
+      # end
 
       return docs_liquid_output(text)
     end
@@ -385,7 +387,11 @@ class BluePrintHTML < Redcarpet::Render::HTML
     debug "\t --Individual Attributes--"
     # BluePrint example --- :identifier :example (:optional, :type) - :description
 
+<<<<<<< HEAD
     puts "\t\tAttr String: " + text
+=======
+    debug "\t\tAttr String: " + text
+>>>>>>> marketingapps_797
 
     position = text.index(" ")
     #the identifier is everything before the first space.
@@ -436,7 +442,10 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
+<<<<<<< HEAD
         puts
+=======
+>>>>>>> marketingapps_797
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + optional
       end
     end
@@ -482,7 +491,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #   if = then we have a default
     #   if no = then we have just name
 
-    puts "Param String: " + text
+    debug "Param String: " + text
 
     parameters = text.split(" ... ")
 
@@ -502,7 +511,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
-        puts
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + parameters[0]
       end
     end
@@ -523,7 +531,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       example = docs_example_text(optional_requirements[2])
 
-      puts "\t " + example
+      debug "\t " + example
     end
 
     parameter_req = "Yes"
@@ -539,14 +547,18 @@ class BluePrintHTML < Redcarpet::Render::HTML
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
       description += docs_default_text(identifier_default[1].strip)
+<<<<<<< HEAD
       puts "\t Description: " + description
+=======
+      debug "\t Description: " + description
+>>>>>>> marketingapps_797
     else
       identifier = identifier_default
     end
 
     # lets see if this description has members?
     if description.include? "Members"
-      puts "Has Members!!"
+      debug "Has Members!!"
 
       descriptors = description.split("Members")
 
@@ -555,21 +567,21 @@ class BluePrintHTML < Redcarpet::Render::HTML
       members = descriptors[1].strip.split("\n").compact.collect{|x| x.strip}
       description += members.join(", ")
 
-      puts "New Description: " + description
+      debug "New Description: " + description
     end
 
     # add the example to the end of the description
     if example.length > 0
       description += example
-      puts "\t Desc+Example: " + description
+      debug "\t Desc+Example: " + description
     end
 
     # liquidexample --- {% parameter :identifer :required :requirements :description %}
-    puts "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t TEST "
-    puts @@param_string
+    debug "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    debug "\t TEST "
+    debug @@param_string
     @@param_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t added to param_list['temp']"
+    debug "\t added to param_list['temp']"
   end
 
   # builds the final output of all the liquid tags, using all the vars we've set
@@ -622,45 +634,90 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     output = ""
 
-    #sometimes we have no params, that's OK
-    unless @@param_list.nil?
-      debug "\t PARAMS LIST IS NOT NIL"
-      output += @@param_list + "\n\n"
+    # which display do we use?
+    display = "v3response"
+
+    if !@@response_body.include? "{"
+      if @@response_body.length > 0
+        display = "v3responselist"
+      end
     end
 
-    unless @@attr_list.nil?
-      debug "\t attr_list is not NIL"
-      output += @@attr_list + "\n\n"
-    end
+    # for backwards compatibility - is this json or not?
+    if display == "v3responselist"
+      temp = ""
+      temp +=   "\t{% v3responselist #{text} %}\n"
+          responses = @@response_body.split("\n")
+          temp += '<h3>Possible ' + text.gsub("HTTP/1.1", "")+ ' Error Messages</h3>'+
+          '<table id="response-errors" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Field</th>
+                <th>Error Message</th>
+              </tr></thead><tbody>'
 
+          responses.each {|x|
+            puts x
+            if x.length > 0
+              if x.include? ":"
+                x = x.gsub('"', "").split(":")
+                puts "in zgsub : "
+                puts x
+                temp += "<tr><td>" + x[0].strip + "</td><td>" + x[1].strip + "</td></tr>"
+              else
+                puts "in :::: "
+                puts x
+                temp += "<tr><td></td><td>" + x.strip + "</td></tr>"
+              end
+            end
+          }
+      temp += "</tbody></table>\n\t{%endv3responselist%}\n"
+      debug temp
+      output += temp
+    else
 
-    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
-
-    if @@request_body.length > 1
-      output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
-    end
-
-    if @@request_headers.length > 1
-      output +=     "\t {% apiv3requestheader %}" +
-                      @@request_headers.strip +
-                    "\t {% endapiv3requestheader %}"
-    end
-
-
-
-    output +=   "\t{% v3response %}\n" +
-        "\t\t" + text + "\n"
-
-    #sometimes, we don't have a response body. That's ok.
-    unless @@params.nil?
-      if @@response_body.length > 1
-        output += JSON.pretty_generate(JSON.parse(@@response_body)) + "\n"
+      #sometimes we have no params, that's OK
+      unless @@param_list.nil?
+        debug "\t PARAMS LIST IS NOT NIL"
+        output += @@param_list + "\n\n"
       end
 
+      unless @@attr_list.nil?
+        debug "\t attr_list is not NIL"
+        output += @@attr_list + "\n\n"
+      end
+
+
+
+      output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
+      if @@request_body.length > 1
+        output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
+      end
+
+      if @@request_headers.length > 1
+        output +=     "\t {% apiv3requestheader %}" +
+                        @@request_headers.strip +
+                      "\t {% endapiv3requestheader %}"
+      end
+      output +=   "\t{% v3response %}\n" +
+          "\t\t" + text + "\n"
+        unless @@params.nil?
+          if @@response_body.length > 1
+            output += JSON.pretty_generate(JSON.parse(@@response_body)) + "\n"
+          end
+        end
+      output += "\t{% endv3response %}\n"
+      output +=   "{% endapiv3example %}"
     end
 
-    output += "\t{% endv3response %}\n" +
-        "{% endapiv3example %}"
+
+
+    #sometimes, we don't have a response body. That's ok.
+
+
+
+
+
 
     # call the instance var reset
     reset_vars()
