@@ -9,7 +9,7 @@ navigation:
 
 
 {% anchor h2 %}
-Retrieve Spam Reports 
+Retrieve Spam Reports
 {% endanchor %}
 
 {% parameters get %}
@@ -50,7 +50,7 @@ Retrieve Spam Reports
 * * * * *
 
 {% anchor h2 %}
-Delete Spam Reports 
+Delete Spam Reports
 {% endanchor %}
 SendGrid suppresses messages to spam-reporting addresses, but entries can be removed from the suppression list at any time if redelivery to a spam-reporting address is desired. Take care that the address should be redelivered to.
 

@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Retrieve Unsubscribes 
+Retrieve Unsubscribes
 {% endanchor %}
 
 {% parameters get %}
@@ -47,7 +47,7 @@ Retrieve Unsubscribes
 * * * * *
 
 {% anchor h2 %}
-Delete Unsubscribes 
+Delete Unsubscribes
 {% endanchor %}
 SendGrid suppresses messages to unsubscribed addresses, but entries can be removed from the suppression list at any time if redelivery to an unsubscribed address is desired. Take care that the address should be redelivered to.
 
@@ -74,7 +74,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
 * * * * *
 
 {% anchor h2 %}
-Add Unsubscribes 
+Add Unsubscribes
 {% endanchor %}
 Manually add address to the Unsubscribe suppression list, to prevent delivery to the address.
 

@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Retrieve Bounces 
+Retrieve Bounces
 {% endanchor %}
 
 {% parameters get %}
@@ -55,7 +55,7 @@ Retrieve Bounces
 * * * * *
 
 {% anchor h2 %}
-Delete Bounces 
+Delete Bounces
 {% endanchor %}
 SendGrid suppresses messages to bounced addresses, but entries can be removed from the suppression list at any time if redelivery to a bounced address is desired. Take care that the address should be redelivered to.
 
