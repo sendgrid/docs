@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Retrieve Unsubscribes 
+Retrieve Unsubscribes
 {% endanchor %}
 
 {% parameters get %}
@@ -16,7 +16,7 @@ Retrieve Unsubscribes
  {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
-{% apiexample get POST https://api.sendgrid.com/api/customer.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -47,7 +47,7 @@ Retrieve Unsubscribes
 * * * * *
 
 {% anchor h2 %}
-Delete Unsubscribes 
+Delete Unsubscribes
 {% endanchor %}
 SendGrid suppresses messages to unsubscribed addresses, but entries can be removed from the suppression list at any time if redelivery to an unsubscribed address is desired. Take care that the address should be redelivered to.
 
@@ -57,7 +57,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Unsubscribe suppression list' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/customer.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=unsubscribe@sample.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/user.unsubscribes api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=unsubscribe@sample.com %}
   {% response json %}
 {
   "message": "success"
@@ -74,7 +74,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
 * * * * *
 
 {% anchor h2 %}
-Add Unsubscribes 
+Add Unsubscribes
 {% endanchor %}
 Manually add address to the Unsubscribe suppression list, to prevent delivery to the address.
 

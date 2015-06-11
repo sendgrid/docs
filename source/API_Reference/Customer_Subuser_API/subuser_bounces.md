@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Retrieve Bounces 
+Retrieve Bounces
 {% endanchor %}
 
 {% parameters get %}
@@ -16,7 +16,7 @@ Retrieve Bounces
  {% parameter date No '0 or 1' 'Optional argument to retrieve the timestamps, in ISO-8601 format, Pacific Timezone: <code>YYYY-MM-DD HH:MM:SS</code>' %}
 {% endparameters %}
 
-{% apiexample get POST https://api.sendgrid.com/api/customer.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/api/user.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -55,7 +55,7 @@ Retrieve Bounces
 * * * * *
 
 {% anchor h2 %}
-Delete Bounces 
+Delete Bounces
 {% endanchor %}
 SendGrid suppresses messages to bounced addresses, but entries can be removed from the suppression list at any time if redelivery to a bounced address is desired. Take care that the address should be redelivered to.
 
@@ -65,7 +65,7 @@ SendGrid suppresses messages to bounced addresses, but entries can be removed fr
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Bounce suppression list' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/customer.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=bounce@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/user.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=bounce@example.com %}
   {% response json %}
 {
   "message": "success"
