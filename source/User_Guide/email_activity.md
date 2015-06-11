@@ -4,9 +4,9 @@ weight: 0
 title: Email Activity
 seo:
   title: SendGrid Email Activity
-  description: Email activity allows you to see and search the email events on your account. 
+  description: Email activity allows you to see and search the email events on your account.
   keywords: email activity, account events, email events
-navigation: 
+navigation:
   show: true
 ---
 
@@ -39,7 +39,7 @@ You will be able to see data about the following types of email events in the Em
 
 **Deferred** - The recipient mail server asked SendGrid to stop sending emails so fast.
 
-**Drops** - SendGrid will drop an email when the contact on that email is in one of your suppression groups, the recipient 
+**Drops** - SendGrid will drop an email when the contact on that email is in one of your suppression groups, the recipient
 email previously bounced, or that recipient has marked your email as spam. For more information, see [My Emails Are Being Dropped]({{site.support_url}}/hc/en-us/articles/200181728-My-emails-are-being-dropped-).
 
 **[Bounces]({{root_url}}/Glossary/bounces.html)** - When an email is attempted to be delivered, but the recipient mail server rejects it.
@@ -60,7 +60,7 @@ Filtering The Activity Feed
 Searching Within Your Email Activity
 {% endanchor %}
 
-If you need to search for a specific recipient, enter the recipients entire email address into the search field and press enter. 
+If you need to search for a specific recipient, enter the recipient’s entire email address into the search field and press enter.
 
 You can also search by the mailbox name, the part before the @ symbol, or by the domain name, the part after the @ symbol.
 
@@ -68,14 +68,14 @@ You can also search by the mailbox name, the part before the @ symbol, or by the
 Download Your Activity Feed
 {% endanchor %}
 
-If you want to take your feed data with you, click the gear icon at the top of the page and select “Download as CSV”. This 
-will provide you with some of your data, but if you are wanting to perform real time analytics on your events, we suggest the 
+If you want to take your feed data with you, click the gear icon at the top of the page and select “Download as CSV”. This
+will provide you with some of your data, but if you are wanting to perform real time analytics on your events, we suggest the
 [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html).
 
 {% anchor h2 %}
 Subuser Email Activity
 {% endanchor %}
 
-To see a subuser’s email activity, you will need to either log in as that subuser or impersonate the subuser account. 
+To see a subuser’s email activity, you will need to either log in as that subuser or impersonate the subuser account.
 
 When looking at a subuser’s email activity, you will not see the subuser parent’s email activity.

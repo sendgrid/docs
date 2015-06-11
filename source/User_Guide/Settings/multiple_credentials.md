@@ -11,7 +11,7 @@ navigation:
 MultiAuth, or Multiple Authentication, is a feature that allows administrators to create and manage additional user access to SendGrid features and allows the ability to send messages without sharing access to the master account credentials.
 
 {% info %}
-Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username. 
+Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username.
 {% endinfo %}
 
 As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:
@@ -21,7 +21,7 @@ As the primary account holder, you can assign one of three rights to each set of
 -   **Web** - enables access to the web dashboard allows the specified credentials to administer the account using the web-based console.
 
 {% info %}
-Future updates to Multiple User Credentials will allow for more granular control over access rights granted to the specified credentials. At this time, granting access to one of the three available features is granting full access to that feature, with the following exceptions:
+Future updates to multiple user credentials will allow for more granular control over access rights granted to the specified credentials. At this time, granting access to one of the three available features is granting full access to that feature, with the following exceptions:
 
 -   In order to allow credentials to send mail via an API call, you must also allow them Email access
 -   Granting credentials access to Email will allow them to use the API calls that send messages
@@ -31,13 +31,13 @@ Future updates to Multiple User Credentials will allow for more granular control
 {% endinfo %}
 
 {% anchor h2 %}
-Using the Multiple Credentials Dashboard 
+Using the Multiple Credentials Dashboard
 {% endanchor %}
 
-In order to access the interface you need to login to your master account and click on **Account Settings \> [Manage Multiple User Credentials](https://sendgrid.com/credentials)**. When you access MultiAuth's User Credentials management interface, you will see a list of any previously created credentials. As an example, if you have created any credentials using the Multiple User Credentials API, those user names will appear here and display their assigned permissions.
+In order to access the interface you need to login to your master account and click on **Settings -> [Credentials](https://sendgrid.com/credentials)**. When you access MultiAuth's User Credentials management interface, you will see a list of any previously created credentials. As an example, if you have created any credentials using the Multiple User Credentials API, those user names will appear here and display their assigned permissions.
 
 {% info %}
-Credentials that have been granted access to the Web feature are not granted rights to access the Account Settings page. If they click on the link, they will receive a notification that their credentials do have have sufficient rights to do so. 
+Credentials that have been granted access to the Web feature are not granted rights to access the Account Settings page. If they click on the link, they will receive a notification that their credentials do have have sufficient rights to do so.
 {% endinfo %}
 
 ![]({{root_url}}/images/multiple_credentials_1.png "multiauth_webui_credslist")
@@ -59,9 +59,9 @@ When you click **Create Credential**, you are returned to the User Credentials l
 If you need to edit a set of credentials, you can click the Edit icon, and you will be redirected to the settings page.
 
 {% info %}
-If you leave the password field empty then your modifications will only affect the permissions. 
+If you leave the password field empty then your modifications will only affect the permissions.
 {% endinfo %}
 
 ![]({{root_url}}/images/multiple_credentials_3.png)
 
-## 
+##

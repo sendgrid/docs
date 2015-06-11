@@ -30,5 +30,10 @@ Inbound parse requires a hostname, where the emails will be sent, and the URL wh
 
 **Spam Check** - Inbound Parse will check incoming emails for spam and reject the emails that are obviously spam.
 
-**Send Raw** - If you would prefer to receive the full MIME message, select this option. 
+**Send Raw** - If you would prefer to receive the full MIME message, select this option.
 
+{% anchor h2 %}
+Using the API
+{% endanchor %}
+
+If you're interested in how to use the Inbound Parse Webhook, please check out our [Inbound Parse Webhook API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html).

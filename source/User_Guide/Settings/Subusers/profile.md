@@ -18,9 +18,9 @@ This section will show you the contact information you put in when you created y
 
 **Avatar** - A [gravatar](http://gravatar.com) will load when an email address is entered, making it easier to identify your subusers in the subuser list.
 
-**First Name** - This is the first name of the representative from your company who should receive contacts from SendGrid.
+**First Name** - The first name of the person responsible for this subuser.
 
-**Last Name** - This is the last name of the representative from your company who should receive contacts from SendGrid.
+**Last Name** - The last name of the person responsible for this subuser.
 
 **Email Address** - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
 
@@ -44,7 +44,7 @@ Company Information
 
 **Address 1** - The first line of your subuser’s address.
 
-**Address 2** - The second line of your address, if your subuser has one.
+**Address 2** - The second line of your subuser's address, if your subuser has one.
 
 **City** - The city in which your subuser operates.
 

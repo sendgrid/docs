@@ -11,7 +11,7 @@ navigation:
 ---
 
 When you create a subuser, you are given the basic options for setting up that subuser. Immediately upon saving, you will be taken to the subuser settings page. You can also get to this page by clicking the subuser’s name from the main subuser list.
-From this page, you get a quick overview of the subuser’s sending behavior and you can change everything about your subuser, restricting or allowing the mail sending capabilities of this subuser. 
+From this page, you get a quick overview of the subuser’s sending behavior and you can change everything about your subuser, restricting or allowing the mail sending capabilities of this subuser.
 
 {% anchor h2 %}
 Subuser Behavior
@@ -32,13 +32,13 @@ The top block of information on your settings page is designed to give you at-a-
 Credit Allocation
 {% endanchor %}
 
-Each subuser will be automatically configured to have access to Unlimited email credits from your parent account. This is so that your subusers can send emails from the moment you create them.  It is up to you to set how these credits are allocated once you’ve create the subusers account and we give you a couple of optoins.
+Each subuser will be automatically configured to have access to Unlimited email credits from your parent account. This is so that your subusers can send emails from the moment you create them. It is up to you to set how these credits are allocated once you’ve create the subusers account and we give you a couple of optoins.
 
 **Unlimited Credits** - The default Credit Allocation setting for all new subusers. This allows your subuser to send as many emails as they need, up to and through the limitations on your parent account.
 
-**Recurring Credits** - Allows a certain number of email credits to be allocated to this user per month, use it or lose it. Once the limit is reached, the user’s requests to send emails will be denied by SendGrid.
+**Recurring Credits** - Allows a certain number of email credits to be allocated to this user per day, week, or month - use it or lose it. Once the limit is reached, the user’s requests to send emails will be denied by SendGrid.
 
-**Nonrecurrent Credits** - The number of credits this subuser has will not change on a schedule, the credits you give are the credits this subuser has, unless you allocate more credits either manually or via the API. 
+**Nonrecurrent Credits** - The number of credits this subuser has will not change on a schedule, the credits you give are the credits this subuser has, unless you allocate more credits either manually or via the API.
 
 {% anchor h2 %}
 Allocating or Removing Credits From a Subuser
@@ -68,7 +68,7 @@ One email credit will be charged for every monitor email that is sent
 
 When you turn this feature is on, by clicking the “off” button, you will be shown a form that allows you to set the frequency SendGrid will test emails and the address to which these emails will be forwarded.
 
-The Collect Sample Rate is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. 
+The Collect Sample Rate is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent.
 For example, if you set the Collect Sample Rate at 100 then you will receive a copy of every 100th email this subuser sends.
 
 {% anchor h2 %}

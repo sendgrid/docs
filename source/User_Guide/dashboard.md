@@ -10,13 +10,13 @@ navigation:
   show: true
 ---
 
-The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You should be able to see stats for the last 7 days about all of the emails you have sent through your SendGrid account.
+The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You can view the stats about all of the emails you have sent through your SendGrid account.
 
 {% anchor h2 %}
 Stats
 {% endanchor %}
 
-On your dashboard we provide the last 30 days of email statistics in a graph, so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
+On your dashboard you can choose to see the last 7 or the last 30 days of email statistics in the main graph, so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
 
 If you want to see all of your email statistics, go to your [Statistics Page]({{site.app_url}}/statistics) via the graph icon on the left side menu.
 
