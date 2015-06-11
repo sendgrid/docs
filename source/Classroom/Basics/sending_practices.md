@@ -13,10 +13,10 @@ As you begin to use your SendGrid account there are some important things to rem
 
 Additionally, there are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice referred to as throttling. Throttling in terms of email means that a recipient mail server has accepted all the mail it is willing to accept from your IP for a certain period of time.
 
-If you have a Silver or higher package, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/User_Guide/Setting_Up_Your_Server/warming_up_ips.html).
+If you have a Silver or higher package, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/Classroom/Deliver/warming_up_ips.html).
 
 {% anchor h2 %}
-Lite Plan Volume Restrictions 
+Lite Plan Volume Restrictions
 {% endanchor %}
 
 Our Lite package has a bandwidth restriction to keep spammers from abusing our system. For the first 7 days you will be limited to 1,000 emails per day. After the 7th day we look into how many emails you have sent, how many days your account has been active, and check your reputation status. As the value of each of these parameters increases, your volume limitations will decrease.

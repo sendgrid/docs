@@ -18,7 +18,7 @@ package main
 import ("github.com/sendgrid/sendgrid-go")
  
 func main() {
-    sendgrid := sendgrid.NewSendGridClient(api_user, api_key)
+    sg := sendgrid.NewSendGridClient(api_user, api_key)
  
     message := sendgrid.NewMail()
     message.AddTo("test@sendgrid.com")
@@ -26,6 +26,6 @@ func main() {
     message.SetSubject("Sending with SendGrid is Fun")
     message.SetHTML("and easy to do anywhere, even with Go")
  
-    sendgrid.Send(message)
+    sg.Send(message)
 }
 {% endcodeblock %}

@@ -54,6 +54,7 @@ Redirect 301 /Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Se
 Redirect 301 /Apps/gravatar.html https://sendgrid.com/docs/User_guide/Settings/index.html
 Redirect 301 /Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
+Redirect 301 /Apps/return_path_seedlist.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
