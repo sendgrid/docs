@@ -387,11 +387,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     debug "\t --Individual Attributes--"
     # BluePrint example --- :identifier :example (:optional, :type) - :description
 
-<<<<<<< HEAD
-    puts "\t\tAttr String: " + text
-=======
     debug "\t\tAttr String: " + text
->>>>>>> marketingapps_797
 
     position = text.index(" ")
     #the identifier is everything before the first space.
@@ -442,10 +438,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
-<<<<<<< HEAD
-        puts
-=======
->>>>>>> marketingapps_797
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + optional
       end
     end
@@ -547,11 +539,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
       description += docs_default_text(identifier_default[1].strip)
-<<<<<<< HEAD
-      puts "\t Description: " + description
-=======
       debug "\t Description: " + description
->>>>>>> marketingapps_797
     else
       identifier = identifier_default
     end
@@ -657,16 +645,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
               </tr></thead><tbody>'
 
           responses.each {|x|
-            puts x
+
             if x.length > 0
               if x.include? ":"
                 x = x.gsub('"', "").split(":")
-                puts "in zgsub : "
-                puts x
+
                 temp += "<tr><td>" + x[0].strip + "</td><td>" + x[1].strip + "</td></tr>"
               else
-                puts "in :::: "
-                puts x
+
                 temp += "<tr><td></td><td>" + x.strip + "</td></tr>"
               end
             end
