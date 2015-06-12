@@ -385,7 +385,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     debug "\t --Individual Attributes--"
     # BluePrint example --- :identifier :example (:optional, :type) - :description
 
-    puts "\t\tAttr String: " + text
+    debug "\t\tAttr String: " + text
 
     position = text.index(" ")
     #the identifier is everything before the first space.
@@ -436,7 +436,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
-        puts
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + optional
       end
     end
@@ -482,7 +481,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     #   if = then we have a default
     #   if no = then we have just name
 
-    puts "Param String: " + text
+    debug "Param String: " + text
 
     parameters = text.split(" ... ")
 
@@ -502,7 +501,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     unless optional.include? "required"
       unless optional.include? "optional"
-        puts
         throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + parameters[0]
       end
     end
@@ -523,7 +521,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       example = docs_example_text(optional_requirements[2])
 
-      puts "\t " + example
+      debug "\t " + example
     end
 
     parameter_req = "Yes"
@@ -539,14 +537,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
       description += docs_default_text(identifier_default[1].strip)
-      puts "\t Description: " + description
+      debug "\t Description: " + description
     else
       identifier = identifier_default
     end
 
     # lets see if this description has members?
     if description.include? "Members"
-      puts "Has Members!!"
+      debug "Has Members!!"
 
       descriptors = description.split("Members")
 
@@ -555,21 +553,21 @@ class BluePrintHTML < Redcarpet::Render::HTML
       members = descriptors[1].strip.split("\n").compact.collect{|x| x.strip}
       description += members.join(", ")
 
-      puts "New Description: " + description
+      debug "New Description: " + description
     end
 
     # add the example to the end of the description
     if example.length > 0
       description += example
-      puts "\t Desc+Example: " + description
+      debug "\t Desc+Example: " + description
     end
 
     # liquidexample --- {% parameter :identifer :required :requirements :description %}
-    puts "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t TEST "
-    puts @@param_string
+    debug "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    debug "\t TEST "
+    debug @@param_string
     @@param_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
-    puts "\t added to param_list['temp']"
+    debug "\t added to param_list['temp']"
   end
 
   # builds the final output of all the liquid tags, using all the vars we've set
