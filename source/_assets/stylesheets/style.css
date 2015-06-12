@@ -54,7 +54,7 @@ h3, .h3 {
   padding:0 15px 0px 15px;
 }
 
-.bar-indicator { 
+.bar-indicator {
 	width: 220px;
 	height: 20px;
 	background: url(../images/bar-indicator.gif);
@@ -95,11 +95,11 @@ line-height: 26px;
 }
 
 #logo {
-	margin-top:18px;
-	display:inline-block;
-	width:120px;
-	height:33px;
-	background: url(../images/sendgrid-logo.png?embed=true) no-repeat;
+  margin-top: 21px;
+  display: inline-block;
+  width: 120px;
+  height: 33px;
+	background: url(../images/SendGrid-logo.png?embed=true) no-repeat;
 }
 
 #content img {
@@ -163,7 +163,7 @@ border-color: #dFb5b4;
 
 }
 
-.code-buttons > .nav-tabs > li .code-button:hover, .code-buttons > .nav-tabs > li .code-button.hover { 
+.code-buttons > .nav-tabs > li .code-button:hover, .code-buttons > .nav-tabs > li .code-button.hover {
   cursor: pointer;
   background-color: #eee;
 }
@@ -182,7 +182,7 @@ figure.code {
 	margin-top: 20px;
 }
 
-code.wrap, code.requestdata { 
+code.wrap, code.requestdata {
  white-space: pre-wrap;       /* css-3 */
  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
  white-space: -pre-wrap;      /* Opera 4-6 */
@@ -214,15 +214,15 @@ code.wrap, code.requestdata {
 	color: #859900;
 }
 
-body.logged-out .logged-in, body.logged-in .logged-out { 
+body.logged-out .logged-in, body.logged-in .logged-out {
 	display: none;
 }
 
-body.logged-out .logged-out, body.logged-in .logged-in { 
+body.logged-out .logged-out, body.logged-in .logged-in {
 	display: block;
 }
 
-body.logged-out .logged-out, body.logged-in .logged-in .btn { 
+body.logged-out .logged-out, body.logged-in .logged-in .btn {
 	display: inline-block;
 }
 
@@ -239,8 +239,8 @@ article .nav-tabs li a {
   color: #555;
 }
 
-#header-top { 
-  height: 28px; 
+#header-top {
+  height: 28px;
   border-bottom: 1px solid #000;
   background-color: rgb(30,36,47);
   padding-right:30px;
@@ -262,21 +262,21 @@ article .nav-tabs li a {
   right: -5px;
 }
 
-#nav { 
-  min-height: 68px; 
-  background-color: rgb(47,54,70); 
-  border-bottom: 4px solid #287abe; 
-  margin-bottom: 0; 
+#nav {
+  min-height: 68px;
+  background-color: rgb(47,54,70);
+  border-bottom: 4px solid #287abe;
+  margin-bottom: 0;
 }
 
 #nav ul { list-style-type: none; }
 #nav .nav-link { height: 68px;}
-#nav .nav-link a { 
-  padding: 29px 10px 25px 10px; 
-  line-height: 14px; 
-  color: #fff; 
-  text-transform: uppercase; 
-  font-size: 13px; 
+#nav .nav-link a {
+  padding: 29px 10px 25px 10px;
+  line-height: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
 #nav .nav-link a:hover { text-decoration: underline; background-color: rgb(47,54,70); }
@@ -371,7 +371,7 @@ article .nav-tabs li a {
 }
 
 /* Responsive menu stuff */
-#header-wrap .navbar-inner { 
+#header-wrap .navbar-inner {
 	min-height:0;
 	background: none;
 	border: 0;
@@ -382,7 +382,7 @@ article .nav-tabs li a {
 #header { width: 100%; }
 
 
-#header-wrap .btn-navbar { 
+#header-wrap .btn-navbar {
 	float:none;
 	margin-top:13px;
 }
@@ -393,8 +393,8 @@ article .nav-tabs li a {
   float:none;
 }
 
-.search-query { 
-	background-color: white; 
+.search-query {
+	background-color: white;
 }
 
 .navbar-search  input { border-radius:0px; }
@@ -503,7 +503,7 @@ body:before {
   font-size: 12pt;
 }
 
-.breadcrumb-pane { 
+.breadcrumb-pane {
   font-size: 13px;
 }
 
@@ -606,8 +606,8 @@ figure.code.expanded {
 	overflow: hidden;
 }
 
-.video-container iframe,  
-.video-container object,  
+.video-container iframe,
+.video-container object,
 .video-container embed {
 	position: absolute;
 	top: 0;
@@ -670,7 +670,7 @@ figure.code.expanded {
 
 .iframe-container iframe {
   height: 100%;
-  overflow:auto; 
+  overflow:auto;
   width:100%;
   display:block;
 }
