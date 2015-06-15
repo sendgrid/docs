@@ -80,16 +80,26 @@ You may want to test the email that you are sending to your customers in order t
 ![]({{root_url}}/images/ab_testing_1.png "A/B Testing")
 
 {% anchor h3 %}
+Subject Testing vs. Content Testing
+{% endanchor %}
+
+When you are A/B testing your email campaigns, you will want to optimize for a specific metric, whether it's opens, clicks, or something else of your choosing. While both subject and content testing is available, each caters to testing for specific metrics on the surface.  
+
+Subject testing caters more to open rate, because the subject is usually all the recipient sees until they open their email. Once you find a subject that works well, you will potentially see other engagement metrics improve as well.
+
+Content testing caters more to click rate, because the recipient will not see this content unless they open the email.
+
+{% anchor h3 %}
 Selecting A/B Testing Criteria
 {% endanchor %}
 
 {% info %}
-You can test up to 6 variations of your campaign subject.
+You can test up to 6 variations at a time.
 {% endinfo %}
 
 **Activate A/B Testing** - When you view the “Testing” tab, by default A/B testing will be turned off. Click the button that says “Off” to toggle this feature on.
 
-**Test Versions Of** - Currently, Subject Line is the only option. This will change in future versions of Marketing Campaigns.
+**Test Versions Of** - Select whether you want to test the subject or the content.
 
 **Test Size** - The percentage of your list that should get each variation. Each variation will be sent to the same number of contacts.
 
@@ -99,12 +109,26 @@ Open Rate - This is the rate at which your customers <a href="{{root_url}}/Gloss
 
 Click Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
 
-Manual - You can choose your winner from within your campaign’s stats.
+Manual - You can choose your winner from within your campaign’s stats manually.
 
 **Duration** - The time to test your variation, from 30 minutes to 24 hours. While you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
 
 {% anchor h3 %}
-Selecting a Winner
+Adding Your Versions
+{% endanchor %}
+
+In all cases, your versions will be located in the same place where you would normally edit that piece of your campaign.
+
+For subject testing, you will find multiple input boxes, one for each variation, in the sidebar where you would normally find your single subject line.
+
+{% info %}
+To know the direct cause for the best performing variation, it typically makes sense to make one change per variation rather than many changes. That way you can point to a direct cause for the differences in your stats.
+{% endinfo %}
+
+For content testing, you will be able to make edits to each of your variations by selecting one of the tabs at the top of the content area. The number of tabs you see will depend on how many versions you have decided to test.
+
+{% anchor h3 %}
+Sending The Winner
 {% endanchor %}
 
 When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won.
