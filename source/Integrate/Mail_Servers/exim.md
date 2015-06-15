@@ -103,3 +103,8 @@ Once you have completed and saved all changes to Exim's configuration files, you
 {% codeblock lang:bash %}
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
+
+{% anchor h2 %}
+Exim Documentation
+{% endanchor %}
+If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
