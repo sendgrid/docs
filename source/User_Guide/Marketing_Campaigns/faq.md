@@ -40,10 +40,7 @@ Based on our initial conversations, we anticipate high demand for Early Access. 
 * Sender Management and Verification
 
 ### What additional features will we see added in upcoming months?
-* A/B Content Testing
 * Drag and Drop Editor
-* Campaigns API
-* Sender API
 
 ### Where can I provide feedback about the new solution?
 Within the Marketing Campaigns solution, simply click the “Provide Feedback” tab on the bottom right of your screen to submit suggestions and feedback. You can also reach our team directly anytime at [support@sendgrid.com](mailto:support@sendgrid.com).
