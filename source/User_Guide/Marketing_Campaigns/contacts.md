@@ -58,10 +58,7 @@ and ```email``` are all treated exactly the same. We have provided
 [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row.
 
 {% info %}
-Important: You must include ```email``` as one of your CSV headers because that is how we
-identify individual contacts. If you do not include the email column, we will not add any information to your contact
-database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will
-automatically fail, but will not cause the entire upload to fail.
+You must include ```email``` as one of your CSV headers because that is how we identify individual contacts. If you do not include the email column, we will not add any information to your contact database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 {% endinfo %}
 
 {% anchor h3 %}
@@ -71,29 +68,30 @@ Upload Your Contacts
 You can add contacts by uploading the CSV you prepared in a previous step. If you happen to upload the same contact more than once, we will append any new data for fields not already uploaded. We will also update any fields associated with a contact that are in your upload file.
 
 {% info %}
-We will never create a duplicate contact in your contact database or add a contact more than
-once to any list or segment.
+We will never create a duplicate contact in your contact database or add a contact more than once to any list or segment.
 {% endinfo %}
 
 {% anchor h3 %}
 Add Contacts From a CSV
 {% endanchor %}
 
-To add new contacts, select “Add Contacts” and then select “Upload CSV”. Select your file, by clicking “Select A File”.
+To add new contacts, select “Add Contacts” and then select “Upload CSV.” Select your file by clicking “Select A File.”
 
 {% anchor h3 %}
 Create a New List from a CSV
 {% endanchor %}
 
-To create a new list from your CSV< choose “Add a List or Segment” and then select Upload CSV. Add the name of the list you would like to create and then choose your file.
+To create a new list from your CSV choose “Add a List or Segment” and then select “Upload CSV.” Add the name of the list you would like to create and then choose your file.
 
 {% anchor h3 %}
 Select Your Custom Fields
 {% endanchor %}
 
+Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row. For each header you can select which custom field to associate to the data in the column. If the header row matches the custom field name, the two will automatically be connected. You can also add a custom field if you need to.
+
 ![]({{root_url}}/images/contacts_1.png "Upload Contacts")
 
-You will see the progress as your file uploads to SendGrid. This simply shows that we have the information. If your list is quite large, we will then kick off the process of storing and automatically segmenting your contacts if you have already set up segments on your account. For smaller lists, you will see your contacts in your new list quickly.
+You will see the progress as your file uploads to SendGrid. This simply shows that we have the information. If your list is quite large, we will start the process of storing and automatically segmenting your contacts if you have already set up segments on your account. For smaller lists, you will see your contacts in your new list quickly.
 
 ![]({{root_url}}/images/contacts_2.png "Upload Contact Status")
 

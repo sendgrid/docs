@@ -79,11 +79,11 @@ You can add a custom unsubscribe link to your template by making use of the [uns
 
 You have two options for how you implement unsubscribe links in order to be CAN-SPAM compliant:
 
-**Option 1:**  Add the [unsubscribe] tag AND choose a suppression group from the list on the left side of your campaign
+**Option 1** - Add the [unsubscribe] tag AND choose a suppression group from the list on the left side of your campaign
 builder. If you don’t add the [unsubscribe] tag somewhere in your template, but you do choose an [ASM group]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/index.html), we will
 add an unsubscribe link at the very end of your email.
 
-**Option 2:** Add your own fully functional unsubscribe link to the email. For this option, please do not choose a suppression group, otherwise SendGrid will add it’s own unsubscribe link at the bottom of the email.
+**Option 2** - Add your own fully functional unsubscribe link to the email. For this option, please do not choose a suppression group, otherwise SendGrid will add it’s own unsubscribe link at the bottom of the email.
 
 {% warning %}
 If you do not implement one of the two options above, there will be NO unsubscribe link added to your emails and you will
