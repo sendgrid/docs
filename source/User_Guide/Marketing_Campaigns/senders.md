@@ -31,13 +31,13 @@ When you click “Create New Sender,” you will be shown a form where you can s
 
 ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
 
-Once you fill out this information and hit “save,” we will send a confirmation email to the email address you entered on your sender identity. When you have confirmed your email address, you will then be able to select and attach this sender identity from your campaign management page.
-
 * **From Name** - This is the display or “user friendly” name that is displayed to the user when they receive their email.
 * **From Email Address** - This will display to the user as the email address who sent this email.
 * **Reply-To Email Address** - If your user hits reply in their email, the reply will go to this address.
 * **Company Address, City, State, Zip Code, Country** - The address of your business, for CAN-SPAM compliance.
 * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
+
+Once you fill out this information and hit “save,” you will then be able to select and attach this sender identity from your campaign management page.
 
 <div class="row">
     <div class="col-md-6 text-left">
