@@ -156,7 +156,7 @@ Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classro
 Redirect 301 /User_Guide/Account/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
+Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/Account/Account_Settings/password.html https://sendgrid.com/docs/Classroom/Basics/password.html
 Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
@@ -216,10 +216,11 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
-Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
+Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Glossary/Email_Types/reconfirmation.html
 Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/Glossary/rate_limiting.html
+Redirect 301 /User_Guide/Settings/multiple_credntials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Track/clicktracking_ssl.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/content_delivery_networks.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html https://sendgrid.com/docs/Classroom/Send/segmenting_traffic.html

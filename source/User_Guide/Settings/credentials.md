@@ -42,7 +42,7 @@ Credentials that have been granted access to the Web feature are not granted rig
 
 ![]({{root_url}}/images/multiple_credentials_1.png "multiauth_webui_credslist")
 
-As you can see in the above sample image, there is a user name called "admin" who has been granted all privileges. There are also options to Edit or Destroy the account.
+As you can see in the above sample image, there is a user name called "SendGridExampleUser" who has been granted Web and API privileges. There are also options to Edit or Destroy the account.
 
 To create new credentials click the **Add New Credential** button at the bottom left of the credentials list. This will open the New Credential page, as shown below:
 
