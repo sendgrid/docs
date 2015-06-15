@@ -42,7 +42,7 @@ Delete a List
 {% endanchor %}
 
 If you would like to delete a list, go to [Contacts](https://sendgrid.com/marketing_campaigns/contacts) where you will see
-a list of our contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
+a list of your contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
 that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s
 information will continue to exist in your contact database.
 
@@ -50,6 +50,24 @@ information will continue to exist in your contact database.
 Create a List
 {% endanchor %}
 You create lists when you upload contacts, please check out our information on [uploading contacts]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts) for more information.
+
+{% anchor h3 %}
+Add Contacts to a list
+{% endanchor %}
+
+To add contacts to a list, click the gear icon next to the list name and select “Edit List”. A window will pop out where you can upload a new CSV or manually add a contact.
+
+{% anchor h3 %}
+Remove Contacts From a List
+{% endanchor %}
+
+Click on the name of your list to view all the contacts on the list. Check the box next to the contacts you would like to remove. You will notice that a button at the top right corner will keep track of how many contacts you have selected. Click the button with the selected count and choose the option “Remove from this list” to take these contacts off the list.
+
+{% info %}
+Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the customer portal without re-adding the contacts manually or via a CSV.
+{% endinfo %}
+
+If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
 
 {% anchor h2 %}
 Create a Segment
