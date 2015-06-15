@@ -7,7 +7,7 @@ navigation:
 seo:
   title: Create and Send Campaigns
   override: true
-  description: 
+  description:
 ---
 
 {% info %}
@@ -20,36 +20,57 @@ When you are ready to send an email campaign, go to the campaigns page and click
 Choose Your Template
 {% endanchor %}
 
-We have provided you with two default templates to choose from.
-If you decide to upload your own template, you can create it in our editor using HTML or plaintext.
+We have provided you with multiple default templates to choose from. If you decide to upload your own email design we suggest that you [create a template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html) so that you can reuse it.
+
+{% warning %}
+The importer will not save your template for later use.
+{% endwarning %}
+
+We have also included a template importer option, just click the "Importer" tab, where you can paste your HTML in for one-time use.
 
 ![]({{root_url}}/images/templates_6.png "Choose a Template")
 
 
 {% anchor h2 %}
-Add Your Content and Set Your Settings
+Add Your Content and Manage Your Settings
 {% endanchor %}
 
 {% info %}
 The editor will autosave your changes every 3 seconds, so even if you close your browser window your changes will be saved.
 {% endinfo %}
 
-Once you choose your template, you will be taken to this page:
+Once you choose your template, you will be taken to the campaign editor page:
 
 ![]({{root_url}}/images/templates_7.png "Edit Your Campaign")
 
-
 From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign.
 
-You can also change:
 
-* **Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page.
-* **From Sender:** This is the person from whom this email will be sent. The user will see this name as the sender on their email.
-* **Email Subject:** The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
-* **Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
-* **Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. Click the “On” button to toggle the custom schedule options. If you choose to schedule a send, the campaign will be scheduled only after you click “Send” in the upper right hand corner.
-* **Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
-* **Suppression Group:** This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, click the "manage" prompt by this field. You will then be taken to the [Advanced Suppression Manager]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html) page to add a new suppression group.
+**Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page.
+
+**From Sender:** This is the person from whom this email will be sent. The user will see this name as the sender on their email.
+
+**Email Subject:** The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
+
+**Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
+
+**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click “Send” in the upper right hand corner.
+
+**Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
+
+**Unsubscribe Group:** This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, please go to the [Advanced Suppression Manager](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page to add a new suppression group. Please see our [Suppressions docs]({{root_url}}/User_Guide/Suppressions/index.html) for more information.
+
+{% warning %}
+The test send will be deducted from your email package limit.
+{% endwarning %}
+
+{% info %}
+This test email will not replace your substitution tags, as you will be sending to an email address and not to a formal contact in your database.
+{% endinfo %}
+
+**Send Test Email** - If you want to see the email as your customer would see it, you can enter your email address here and click “Send.” The campaign will be sent to the email specified immediately.
+
+**
 
 {% anchor h2 %}
 A/B Testing
@@ -67,16 +88,15 @@ Selecting A/B Testing Criteria
 You can test up to 6 variations of your campaign subject.
 {% endinfo %}
 
-The criteria you can set for your A/B tests are:
+**Open Rate** - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
 
-* Open Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
-* Click Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
-* Test Size - The percentage of your list that should get each variation. Each variation will be sent to the same number of contacts.
-* Duration - The time to test your variation.
+**Click Rate** - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
 
-It’s important to note that you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you
-should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign,
-you should set the duration so that your customers get the campaign the same day as the sale.
+**Test Size** - The percentage of your list that should get each variation. Each variation will be sent to the same number of contacts.
+
+**Duration** - The time to test your variation.
+
+It’s important to note that you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
 
 When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won.
 ![]({{root_url}}/images/ab_testing_4.png "Manually choose a test winner")
