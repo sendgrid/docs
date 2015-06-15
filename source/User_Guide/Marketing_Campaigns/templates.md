@@ -15,7 +15,7 @@ seo:
 A template is the basic structure of the email you will be sending out to your contacts. You can import the HTML for an
 email through the [SendGrid Marketing Campaigns template builder](https://sendgrid.com/marketing_campaigns/templates) or you can use one of the default templates we have provided.
 
-The editor will autosave your changes every 3 seconds, so even if you close your browser window your changes will be saved.
+The editor will autosave your changes every 3 seconds, so even if you close your browser window, your changes will be saved.
 
 ![]({{root_url}}/images/templates_1.png "Templates Page")
 
@@ -62,7 +62,9 @@ will show you the status of your upload and then show a thumbnail of your image 
 {% anchor h3 %}
 Inserting an Image Into Your Template
 {% endanchor %}
+
 To insert an image into your template, just click the image thumbnail in the library and you will see a form that will let you set how the image will be inserted.
+
 From here, you can add  alt text, change the default height and width, and even set a default alignment for your images.
 
 ![]({{root_url}}/images/image_library_1.png "Insert an Image into your Template")
@@ -89,6 +91,13 @@ add an unsubscribe link at the very end of your email.
 If you do not implement one of the two options above, there will be NO unsubscribe link added to your emails and you will
 be in direct violation of CAN-SPAM.
 {% endwarning %}
+
+{% anchor h2 %}
+Adding a Weblink
+{% endanchor %}
+
+You can give your campaign recipients the option to see their email online, by adding a ```[weblink]``` tag within your template. This tag only adds the URL, so you will need to add an HTML anchor tag around this substitution tag.
+
 
 <div class="row">
     <div class="col-md-6 text-left">
