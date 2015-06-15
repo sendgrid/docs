@@ -54,7 +54,7 @@ From here you can change the content in your email without affecting your templa
 
 **Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
 
-**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click “Send” in the upper right hand corner.
+**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click "Schedule" in the upper right hand corner.
 
 **Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
 
@@ -152,6 +152,12 @@ Duplicating a Campaign
 {% endanchor %}
 
 To duplicate a campaign that you already have, just click the gear icon to the right of that campaign and choose "duplicate". You will be taken to the campaign builder where you can change the name from the default auto-generated and timestamped campaign name. This will automatically create this campaign in your list, even if you do not click the "save" button.
+
+{% anchor h2 %}
+Unschedule a Campaign
+{% endanchor %}
+
+From the main campaigns page, you can click the gear icon inline with your campaign and select "Unschedule Campaign". This will put your campaign back into a draft status and remove the schedule date.
 
 {% anchor h2 %}
 Campaign Statistics

@@ -23,25 +23,25 @@ To add your contacts, just click the "Add List" or "Segment" button and then sel
 Manually Add a Contact
 {% endanchor %}
 
-In order to manually add a single contact straight to your contact database - to either a new or existing list - just click
-the “manual” tab on the upload window. You will then be able to add the information for your contact.
+In order to manually add a single contact straight to your contact database, just click the “manual” tab on the upload window. You will then be able to add the information for your contact.
 
 {% anchor h2 %}
 Uploading Contacts
 {% endanchor %}
 
-Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid Customer Portal. If
-you have any issues, please see our Troubleshooting Guide.
+Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid Customer Portal. If you have any issues, please see our Troubleshooting Guide.
 
 {% warning %}
-Email is the unique identifier for your Contacts database. This means you cannot add the same email to your user's contacts
-database twice, doing so will cause the original record to update all fields passed to the information in the most recent update.
-Updates to your contacts cannot be rolled back.
+Email is the unique identifier for your Contacts database. This means you cannot add the same email to your user's contacts database twice, doing so will cause the original record to update all fields passed to the information in the most recent update. Updates to your contacts cannot be rolled back.
 {% endwarning %}
 
 {% anchor h3 %}
 Prepare Contacts for Upload
 {% endanchor %}
+
+{% warning %}
+Your CSV file MUST be in UTF-8 format.
+{% endwarning %}
 
 You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your
 contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or
@@ -51,11 +51,7 @@ Your CSV should have the contacts you want to upload into the Marketing Campaign
 fields. For example: email, first_name, last_name, country, city, age - where “country,” “city,” and “age” are your custom
 fields (see below).
 
-The first row of your CSV must always be a header row which will identify the columns of your contacts. If you include
-custom data, then name your CSV columns (the values in the first row of your CSV) **the same as your custom fields**. Custom
-fields names are case insensitive, meaning that ```Email```, ```EMAIL```,
-and ```email``` are all treated exactly the same. We have provided
-[an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row.
+The first row of your CSV must always be a header row which will identify the columns of your contacts. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row. If you add custom field data to your CSV, while it’s not a requirement to do so, you can save yourself some time on upload by naming the columns the same as the custom fields you have defined in the Marketing Campaigns customer portal.
 
 {% info %}
 You must include ```email``` as one of your CSV headers because that is how we identify individual contacts. If you do not include the email column, we will not add any information to your contact database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
@@ -65,7 +61,7 @@ You must include ```email``` as one of your CSV headers because that is how we i
 Upload Your Contacts
 {% endanchor %}
 
-You can add contacts by uploading the CSV you prepared in a previous step. If you happen to upload the same contact more than once, we will append any new data for fields not already uploaded. We will also update any fields associated with a contact that are in your upload file.
+You can add contacts by uploading the CSV you prepared in a previous step. If you happen to upload the same contact more than once, we will append or update any data, assuming the most recent upload has the correct and most up to date information.
 
 {% info %}
 We will never create a duplicate contact in your contact database or add a contact more than once to any list or segment.
@@ -81,7 +77,13 @@ To add new contacts, select “Add Contacts” and then select “Upload CSV.”
 Create a New List from a CSV
 {% endanchor %}
 
-To create a new list from your CSV choose “Add a List or Segment” and then select “Upload CSV.” Add the name of the list you would like to create and then choose your file.
+To create a new list from your CSV choose “Add List or Segment” and then select “Upload CSV.” Add the name of the list you would like to create and then choose your file.
+
+{% anchor h3 %}
+Add Contacts to a List
+{% endanchor %}
+
+You can manually add a contact or upload a CSV of contacts directly to a list that already exists by going to your contacts page and clicking the gear icon in line with your list name and then selecting “Edit”.  From the window that pops out, the normal upload or manual add functionality will be available.
 
 {% anchor h3 %}
 Select Your Custom Fields
