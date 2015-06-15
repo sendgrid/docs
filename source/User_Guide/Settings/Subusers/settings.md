@@ -45,7 +45,7 @@ Allocating or Removing Credits From a Subuser
 {% endanchor %}
 
 {% warning %}
-This feature only makes changes to a subusers when the Nonrecurring Credit option is selected for this subuser.
+This feature only makes changes to a subuser when the Nonrecurring Credit option is selected for this subuser.
 {% endwarning %}
 
 If your subuser has been allocated Nonrecurring Credits, then this feature will allow you to allocate credits to, or remove credits from this subuser account. Simply click the “Change Credit Rules” button and then choose whether to add or subtract credits for this subuser.
