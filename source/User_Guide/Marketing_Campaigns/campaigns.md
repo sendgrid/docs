@@ -70,7 +70,6 @@ This test email will not replace your substitution tags, as you will be sending 
 
 **Send Test Email** - If you want to see the email as your customer would see it, you can enter your email address here and click “Send.” The campaign will be sent to the email specified immediately.
 
-**
 
 {% anchor h2 %}
 A/B Testing
@@ -88,17 +87,28 @@ Selecting A/B Testing Criteria
 You can test up to 6 variations of your campaign subject.
 {% endinfo %}
 
-**Open Rate** - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
+**Activate A/B Testing** - When you view the “Testing” tab, by default A/B testing will be turned off. Click the button that says “Off” to toggle this feature on.
 
-**Click Rate** - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
+**Test Versions Of** - Currently, Subject Line is the only option. This will change in future versions of Marketing Campaigns.
 
 **Test Size** - The percentage of your list that should get each variation. Each variation will be sent to the same number of contacts.
 
-**Duration** - The time to test your variation.
+**Selecting a Winner**
 
-It’s important to note that you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
+Open Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
+
+Click Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
+
+Manual - You can choose your winner from within your campaign’s stats.
+
+**Duration** - The time to test your variation, from 30 minutes to 24 hours. While you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
+
+{% anchor h3 %}
+Selecting a Winner
+{% endanchor %}
 
 When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won.
+
 ![]({{root_url}}/images/ab_testing_4.png "Manually choose a test winner")
 
 You can also manually choose a winner at any time after you start the test.
@@ -122,7 +132,7 @@ It is good practice to look at your campaign on a couple of different screen siz
 ![]({{root_url}}/images/templates_10.png "Text Preview") is the text preview option, also known as plain text. It will show you what text-only users and screen readers will see when they look at your email.
 
 {% info %}
-Note: While the preview functionality we provide will cover many use cases, it will not render the same as all mobile devices or desktop email clients. We recommend you use programs like [Litmus](https://litmus.com/) to check that your email renders appropriately across all devices and clients.
+While the preview functionality we provide will cover many use cases, it will not render the same as all mobile devices or desktop email clients. We recommend you use programs like [Litmus](https://litmus.com/) to check that your email renders appropriately across all devices and clients.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -142,7 +152,6 @@ Duplicating a Campaign
 {% endanchor %}
 
 To duplicate a campaign that you already have, just click the gear icon to the right of that campaign and choose "duplicate". You will be taken to the campaign builder where you can change the name from the default auto-generated and timestamped campaign name. This will automatically create this campaign in your list, even if you do not click the "save" button.
-
 
 {% anchor h2 %}
 Campaign Statistics
