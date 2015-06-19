@@ -15,7 +15,7 @@ Multifactor authentication applies to website logins. It does not change how you
 {% endinfo %}
 
 {% info %}
-If you have 2FA enabled on your account, [Multiple User Credentials]({{root_url}}/User_Guide/Settings/multiple_credentials.html) logins will trigger a 2FA notification to the main credential's phone number.
+If you have 2FA enabled on your account, [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html) logins will trigger a 2FA notification to the main credential's phone number.
 {% endinfo %}
 
 Multi factor authentication allows you to make your SendGrid account more secure by requiring more than one way to verify that it is in fact you who is logging into your account. Currently, SendGrid’s multi factor authentication can send a text to your cell phone, which you will enter into the login form.
