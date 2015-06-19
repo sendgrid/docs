@@ -18,12 +18,13 @@ Start by going to: 'Tools' -\> 'Account Settings'
 The Settings that need to be entered include:
 
 </h3>
--   **Description -** SendGrid Connection
--   **Server Name -** smtp.sendgrid.net
--   **Port -** 465
--   **Connection security -** SSL/TLS
--   **Authentication method -** Normal password
--   **User Name -** sendgrid_username
+
+* **Description -** SendGrid Connection
+* **Server Name -** smtp.sendgrid.net
+* **Port -** 465
+* **Connection security -** SSL/TLS
+* **Authentication method -** Normal password
+* **User Name -** your sendgrid.com username
 
 ![]({{root_url}}/images/thunderbird_2.png "thunderbird_settings")
 

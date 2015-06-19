@@ -1,9 +1,13 @@
 ---
 layout: page
 weight: 0
-title: Exim
+title: Exim 4
 navigation:
   show: true
+seo:
+  title: Exim 4 configuration for SendGrid
+  keywords: Exim Internet Mailer, Exim, Exim and SendGrid
+  description: Configuration information for Exim 4 and Sendgrid.
 ---
 
 {% warning %}
@@ -99,3 +103,8 @@ Once you have completed and saved all changes to Exim's configuration files, you
 {% codeblock lang:bash %}
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
+
+{% anchor h2 %}
+Exim Documentation
+{% endanchor %}
+If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
