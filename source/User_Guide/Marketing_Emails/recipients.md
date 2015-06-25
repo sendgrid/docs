@@ -171,6 +171,10 @@ This form enables your visitors to subscribe to your marketing email directly fr
 </li>
 #### Generate Subscription Widget embedded code
 
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/fkRnX3kuMMU?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 On the "Manage Recipients Lists" page, you can click on the "Subscription Widget" link under a certain list. This will open a pop-up where you will have to input the domain where the widget will be used. The domain is mandatory because it will be used to validate the request for adding the recipient into the SendGrid database. Once the domain is filled in, you can click on Generate Widget Code button.
 
 {% anchor h3 %}

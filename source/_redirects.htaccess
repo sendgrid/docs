@@ -244,6 +244,11 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 #######
 Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/drag_and_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/newsletter_basics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/tags.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/subscription_widget.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/weblink.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/tags.html
 Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
 Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
 Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
