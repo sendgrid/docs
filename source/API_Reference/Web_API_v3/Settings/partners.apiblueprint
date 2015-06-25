@@ -15,7 +15,7 @@ FORMAT: 1A
 
 # Group Partner Settings
 
-## Partner Settings Collection [/v3/partner_settings?limit={limit}&offset={offset}]
+## Partner Settings Collection [/partner_settings?limit={limit}&offset={offset}]
 
 + Parameters
     + limit (optional, number, `20`) ... Number of settings to return.
@@ -39,7 +39,7 @@ FORMAT: 1A
                 ]
             }
 
-## New Relic Partner Settings Resource [/v3/partner_settings/new_relic]
+## New Relic Partner Settings Resource [/partner_settings/new_relic]
 
 ### Get New Relic Settings [GET]
 
@@ -72,7 +72,7 @@ FORMAT: 1A
               "license_key": "key"
             }
 
-## SendWithUs Partner Settings Resource [/v3/partner_settings/sendwithus]
+## SendWithUs Partner Settings Resource [/partner_settings/sendwithus]
 
 ### Get SendWithUs Settings [GET]
 
