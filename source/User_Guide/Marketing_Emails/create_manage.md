@@ -31,7 +31,7 @@ First define the name of the marketing email, what category or categories it wil
 -   **Category -**Select a category to help classify the marketing email for your statistics. If you need a new one, just click the Add A New Category button under the list.
 -   **Send Method -** If you want to send a regular marketing email, leave it on Send The Same Marketing Email To All Recipients. If, however, you want to perform split testing, select the second option.
 
-***Split Testing*** introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list.
+***Split Testing*** introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list. *See our video at the bottom of this page for more information about split testing*
 
 {% info %}
 While it's up to you what criteria you will use to determine success, our personal favorite is Clicks. This speaks to how many people not only opened your marketing email, but were compelled enough by the content to click, as well.
@@ -191,3 +191,16 @@ Pause/Resume/Stop Sending
 {% endanchor %}
 
 Manages the marketing email sending status by pausing, resuming or even stopping the sending process.
+
+
+{% anchor h2 %}
+Split Testing Video
+{% endanchor %}
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/SVIYmtdJv7k?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</div>
+### A/B Split Testing
+
+You can create multiple versions of a Marketing Email that, based on recipient activity, will automatically determine the winning variation which will then send to the remaining recipients. Kayla provides simple instructions for all of the steps needed to take advantage of this advanced feature.
