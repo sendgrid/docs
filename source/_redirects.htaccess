@@ -253,4 +253,5 @@ Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendg
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
 Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
-Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/VidGrid/whitelabel.html
+Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
