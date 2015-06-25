@@ -7,17 +7,21 @@ navigation:
 ---
 
 {% anchor h2 %}
-Create Recipients 
+Create Recipients
 {% endanchor %}
 
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/YAgfiz4NMms?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 {% anchor h3 %}
-Step 1 — Create New List 
+Step 1 — Create New List
 {% endanchor %}
 
 You will need to decide on a name for the list in order to identify it later. To create the list, click on "Continue".
 
 {% anchor h3 %}
-Step 2 — Add Recipients 
+Step 2 — Add Recipients
 {% endanchor %}
 
 Here you will add recipients to your list. You can choose one of three following methods:
@@ -38,27 +42,27 @@ Manual additions can be done following the same guidelines as the "Upload List" 
 
 #### External URL
 
-You can also retrieve your list from an external URL where a CSV file is hosted. You must specify the URL, and then import the list into the marketing email wizard following the same column-based rules described above. 
+You can also retrieve your list from an external URL where a CSV file is hosted. You must specify the URL, and then import the list into the marketing email wizard following the same column-based rules described above.
 {% info %}
-You must include a connection protocol in the URL i.e. http:// or ftp:// 
+You must include a connection protocol in the URL i.e. http:// or ftp://
 {% endinfo %}
 
 {% info %}
-Note: you need to click the "Check" link to see the preview of the list and re-arrange columns 
+Note: you need to click the "Check" link to see the preview of the list and re-arrange columns
 {% endinfo %}
 
 {% anchor h3 %}
-Step 3 — Verify New List 
+Step 3 — Verify New List
 {% endanchor %}
 
 Here you can see email addresses uploaded from the previous step and you can batch-delete the ones you don't need. Verify - will just save the list and redirect to My Recipient Lists.
 
 {% anchor h2 %}
-Manage Recipients 
+Manage Recipients
 {% endanchor %}
 
 {% anchor h3 %}
-Overview 
+Overview
 {% endanchor %}
 
 Here you can see your previously created recipient lists with the following information:
@@ -71,11 +75,12 @@ Here you can see your previously created recipient lists with the following info
 You can filter the recipient lists by name, using the search form at the top of the page.
 
 {% anchor h3 %}
-Update List 
+Update List
 {% endanchor %}
-This lets you update your list by adding bulk contacts (using the same steps as creating a new list). 
+This lets you update your list by adding bulk contacts (using the same steps as creating a new list).
+
 {% anchor h3 %}
-Batch Actions 
+Batch Actions
 {% endanchor %}
 
 The available batch actions for a list are:
@@ -100,23 +105,27 @@ The exact steps to follow in order to take the Delete actions are:
 -   Confirm the action (OK or Cancel).
 
 {% info %}
-If you try to copy or move emails that already exist at the target destination, this operation will fail for those emails. 
+If you try to copy or move emails that already exist at the target destination, this operation will fail for those emails.
 {% endinfo %}
 
 {% anchor h3 %}
-Stats 
+Stats
 {% endanchor %}
 
 This page shows you delivery stats for this list, by default, this displays stats for all marketing email sent to this list. You can view, print, or download this information to excel. You can also select subsets of stats for this list, i.e. stats for just one marketing emailsent to this list.
 
 {% anchor h3 %}
-Download to Excel 
+Download to Excel
 {% endanchor %}
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/zrovEyBKDv4?list=UUY6NAKPOZkBaMO4-KJ6dWRA" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Allows you to export the stats into an XLS file which you can save locally.
 
 {% anchor h3 %}
-Print View 
+Print View
 {% endanchor %}
 
 Displays the marketing email graph and tabular analytics in a convenient printable format.
@@ -133,7 +142,7 @@ Allows you to export email addresses from the list based on type. This can be th
 -   Spam Reports
 
 {% anchor h3 %}
-Manage Unsubscribes 
+Manage Unsubscribes
 {% endanchor %}
 
 In this page you may see various types of recipients:
@@ -153,7 +162,7 @@ You can take the following actions depending on which category you want to make 
 -   Upload (you can upload a new list of resubscribes or unsubscribes to a your list).
 
 {% anchor h3 %}
-Subscription Widget 
+Subscription Widget
 {% endanchor %}
 
 <li>
@@ -165,7 +174,7 @@ This form enables your visitors to subscribe to your marketing email directly fr
 On the "Manage Recipients Lists" page, you can click on the "Subscription Widget" link under a certain list. This will open a pop-up where you will have to input the domain where the widget will be used. The domain is mandatory because it will be used to validate the request for adding the recipient into the SendGrid database. Once the domain is filled in, you can click on Generate Widget Code button.
 
 {% anchor h3 %}
-Use the embedded code 
+Use the embedded code
 {% endanchor %}
 
 Once the embed code is generated, you may use it on your website. By default the widget displays all fields used by the newsletter at the time of generation, you may modify that, by changing the HTML provided. The widget has a robust API that allows for advanced configuration and styling. The most current documentation for this widget may be found [in its repository on Github](https://github.com/sendgrid/sendgrid-subscription-widget#readme).

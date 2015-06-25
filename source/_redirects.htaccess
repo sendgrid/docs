@@ -246,6 +246,9 @@ Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/doc
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
 Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/recipient_list.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
 Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html#-Scheduling-Video
 Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html#-Split-Testing-Video
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
