@@ -15,7 +15,7 @@ FORMAT: 1A
 
 # Group Tracking Settings
 
-## Tracking Settings Collection [/v3/tracking_settings?limit={limit}&offset={offset}]
+## Tracking Settings Collection [/tracking_settings?limit={limit}&offset={offset}]
 
 + Parameters
     + limit (optional, number, `20`) ... Number of settings to return.
@@ -39,7 +39,7 @@ FORMAT: 1A
                 ]
             }
 
-## Click Tracking Settings Resource [/v3/tracking_settings/click]
+## Click Tracking Settings Resource [/tracking_settings/click]
 
 ### Get Click Tracking Settings [GET]
 
@@ -69,7 +69,7 @@ FORMAT: 1A
               "enabled": true
             }
 
-## Google Analytics Settings Resource [/v3/tracking_settings/google_analytics]
+## Google Analytics Settings Resource [/tracking_settings/google_analytics]
 
 ### Get Google Analytics Settings [GET]
 
@@ -114,7 +114,7 @@ FORMAT: 1A
               "utm_campaign":"website"
             }
 
-## Open Tracking Settings Resource [/v3/tracking_settings/open]
+## Open Tracking Settings Resource [/tracking_settings/open]
 
 ### Get Open Tracking Settings [GET]
 
@@ -144,7 +144,7 @@ FORMAT: 1A
               "enabled": true
             }
 
-## Subscription Tracking Settings Resource [/v3/tracking_settings/subscription]
+## Subscription Tracking Settings Resource [/tracking_settings/subscription]
 
 ### Get Subscription Tracking Settings [GET]
 
