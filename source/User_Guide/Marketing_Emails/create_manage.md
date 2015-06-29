@@ -26,12 +26,11 @@ STEP 1: Setup
 
 First define the name of the marketing email, what category or categories it will use for statistical purposes, and which identity you will use to send the marketing email.
 
--   **Marketing Email Title -**This name is for you and internal organization. Name it whatever you think it useful.
--   **Pick a Sender Address -**In order to comply with the CAN-SPAM Act, you must have a valid Sender Address. Links are provided to create and manage your Sender Addresses, but if you have not created one yet, you will be taken to the appropriate page.
--   **Category -**Select a category to help classify the marketing email for your statistics. If you need a new one, just click the Add A New Category button under the list.
--   **Send Method -** If you want to send a regular marketing email, leave it on Send The Same Marketing Email To All Recipients. If, however, you want to perform split testing, select the second option.
-
-***Split Testing*** introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list.
+-   **Marketing Email Title ** - This name is for you and internal organization. Name it whatever you think it useful.
+-   **Pick a Sender Address ** - In order to comply with the CAN-SPAM Act, you must have a valid Sender Address. Links are provided to create and manage your Sender Addresses, but if you have not created one yet, you will be taken to the appropriate page.
+-   **Category ** - Select a category to help classify the marketing email for your statistics. If you need a new one, just click the Add A New Category button under the list.
+-   **Send Method ** - If you want to send a regular marketing email, leave it on Send The Same Marketing Email To All Recipients. If, however, you want to perform split testing, select the second option.
+-   **Split Testing** - introduces a new set of options. This works by defining a percentage of your total recipients as a test group. Whichever variant they like the most gets sent out to the remaining recipients in the list. *See our video at the bottom of this page for more information about split testing*
 
 {% info %}
 While it's up to you what criteria you will use to determine success, our personal favorite is Clicks. This speaks to how many people not only opened your marketing email, but were compelled enough by the content to click, as well.
@@ -50,6 +49,10 @@ STEP 3: Design
 Text marketing email design is quite straightforward, but if you chose HTML there are some tips that will help you. The graphical editor is very capable, as you can see in the image below.
 
 ![]({{root_url}}/images/newsletter_create_1.png "The WYSIWYG marketing email editor")
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/jhOiKuFRbMY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
 
 There are three distinct areas of the graphical editor, Modules on the left, the editor itself in the center, and the Style/Library section to the right. In Design Mode, you drag and drop Modules from the bin to the left and into the Editor. This functionality makes it easier and quicker to create attractive marketing emails.
 
@@ -191,3 +194,28 @@ Pause/Resume/Stop Sending
 {% endanchor %}
 
 Manages the marketing email sending status by pausing, resuming or even stopping the sending process.
+
+{% anchor h2 %}
+Scheduling Video
+{% endanchor %}
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/pjFCe2YxXWw?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</div>
+### Scheduling Your Marketing Email
+
+Kayla’s tech tip shows you the options to schedule your Marketing Email for delivery. Use this feature to ensure that your Marketing Email always sends on time.
+
+
+{% anchor h2 %}
+Split Testing Video
+{% endanchor %}
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/SVIYmtdJv7k?rel=0" frameborder="0" allowfullscreen></iframe>
+
+</div>
+### A/B Split Testing
+
+You can create multiple versions of a Marketing Email that, based on recipient activity, will automatically determine the winning variation which will then send to the remaining recipients. Kayla provides simple instructions for all of the steps needed to take advantage of this advanced feature.
