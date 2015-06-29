@@ -126,7 +126,7 @@ Returns an empty array if no campaigns exist
     + Body
 
             {
-                "id": 986724
+                "id": 986724,
                 "title": "March Newsletter",
                 "subject": "New Products for Spring!",
                 "sender_id": 124451,
@@ -354,7 +354,7 @@ Changes the send_at time for the specified campaign.
     + Body
 
             {
-                "send_at": 1489771528,
+                "send_at": 1489771528
             }
 
 + Response 404
