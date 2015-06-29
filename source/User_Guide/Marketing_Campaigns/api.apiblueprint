@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% info %}
-These endpoints use API Keys.
+Please refer to our [API Key]({{root_url}}/Classroom/Send/api_keys.html) page for information on how to authenticate and use these endpoints.
 {% endinfo %}
 
 FORMAT: 1A
