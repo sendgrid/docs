@@ -11,6 +11,13 @@ navigation:
 ---
 
 {% anchor h2 %}
+Will my old whitelabel still work?
+{% endanchor %}
+
+Yes. It will automatically show up in the whitelabel settings and will be set as the default. You will not lose your whitelabel. We do suggest that you update your whitelabel by making a new one and updating your DNS to reap the benefit of our new features.
+
+
+{% anchor h2 %}
 Why whitelabel?
 {% endanchor %}
 
