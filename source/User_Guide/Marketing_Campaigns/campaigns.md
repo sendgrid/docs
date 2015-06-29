@@ -75,7 +75,7 @@ This test email will not replace your substitution tags, as you will be sending 
 A/B Testing
 {% endanchor %}
 
-You may want to test the email that you are sending to your customers in order to optimize engagement from them. A/B testing in marketing campaigns works by sending versions of your emails to small subsets of your contacts. When your contacts interact with the emails according to the criteria you set, SendGrid will send the winning version of your campaign to the remainder of your contacts.
+You may want to test the email that you are sending to your customers in order to optimize engagement from them. A/B testing in Marketing Campaigns works by sending versions of your emails to small subsets of your contacts. When your contacts interact with the emails according to the criteria you set, SendGrid will send the winning version of your campaign to the remainder of your contacts.
 
 ![]({{root_url}}/images/ab_testing_1.png "A/B Testing")
 
@@ -83,18 +83,18 @@ You may want to test the email that you are sending to your customers in order t
 Subject Testing vs. Content Testing
 {% endanchor %}
 
-When you are A/B testing your email campaigns, you will want to optimize for a specific metric, whether it's opens, clicks, or something else of your choosing. While both subject and content testing is available, each caters to testing for specific metrics on the surface.  
+When you are A/B testing your email campaigns, you will want to optimize for a specific metric, whether it's opens, clicks, or something else of your choosing.
 
-Subject testing caters more to open rate, because the subject is usually all the recipient sees until they open their email. Once you find a subject that works well, you will potentially see other engagement metrics improve as well.
+Subject testing caters more to open rate, because the subject is usually all the recipient sees until they open their email. So if you have high open rates, that’s generally a reflection of the strength of your subject line. Once you find a subject that works well, you will potentially see other engagement metrics improve as well.
 
-Content testing caters more to click rate, because the recipient will not see this content unless they open the email.
+Content testing caters more to click rate, because the recipient will not see this content unless they open the email. If you have high click rates, it generally means that you have compelling content and calls to action (CTAs).
 
 {% anchor h3 %}
 Selecting A/B Testing Criteria
 {% endanchor %}
 
 {% info %}
-You can test up to 6 variations at a time.
+You can test up to 6 variations of your campaign.
 {% endinfo %}
 
 **Activate A/B Testing** - When you view the “Testing” tab, by default A/B testing will be turned off. Click the button that says “Off” to toggle this feature on.
@@ -105,13 +105,13 @@ You can test up to 6 variations at a time.
 
 **Selecting a Winner**
 
-Open Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
+Open Rate - This is the rate at which your recipients <a href="{{root_url}}/Glossary/opens.html">open</a> your emails.
 
-Click Rate - This is the rate at which your customers <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
+Click Rate - This is the rate at which your recipients <a href="{{root_url}}/Glossary/clicks.html">click</a> links in your emails.
 
-Manual - You can choose your winner from within your campaign’s stats manually.
+Manual - You will be notified by email when the test duration time has passed. At that time, you can choose your winner manually. The campaign will not be sent to all recipients until you choose a winning variation.
 
-**Duration** - The time to test your variation, from 30 minutes to 24 hours. While you can test your variations for up to 24 hours, but only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
+**Duration** - The time to test your variation, ranging from 30 minutes to 24 hours. While you can test your variations for up to 24 hours, only the subset of emails you've chosen to test will be sent before that duration is up. This means that you should be mindful of your test duration with respect to the timeliness of your campaign content. For example, if you have a one-day sale that happens the day of your campaign, you should set the duration so that your customers get the campaign the same day as the sale.
 
 {% anchor h3 %}
 Adding Your Versions
