@@ -228,10 +228,13 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers
 Redirect 301 /User_Guide/Setting_Up_Your_Server/smtp_ports.html https://sendgrid.com/docs/Classroom/Basics/smtp_ports.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
+<<<<<<< HEAD
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+=======
+>>>>>>> 080c75e14dbe8fb4f40e06c6866c122bd20ccd05
 #this app goes away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
@@ -249,10 +252,33 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 #######
 Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+<<<<<<< HEAD
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
+=======
+Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/drag_and_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/newsletter_basics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/tags.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/subscription_widget.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/weblink.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/tags.html
+Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/index.html
+>>>>>>> 080c75e14dbe8fb4f40e06c6866c122bd20ccd05
 Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/recipient_list.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/recipients.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html#-Scheduling-Video
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html#-Split-Testing-Video
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
 Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+<<<<<<< HEAD
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+=======
+Redirect 301 /VidGrid/Tools/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/index.html
+Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/VidGrid/whitelabel.html
+>>>>>>> 080c75e14dbe8fb4f40e06c6866c122bd20ccd05

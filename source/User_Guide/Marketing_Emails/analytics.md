@@ -9,6 +9,10 @@ navigation:
   show: true
 ---
 
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe src="https://www.youtube.com/embed/cXsh8MBJxWY?rel=0" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+</div>
+
 Starting from your newsletter dashboard, you’ll see your global newsletter stats. This graph is showing how all of your newsletters are being received by all of your recipient lists. It’s a global view of all of the sending that you’ve done through this application.
 
 To see the stats from a specific newsletter, select this button ![Email Marketing Stats]({{root_url}}/images/EmailMarketing_Analytics_1.png) on the right-hand side, and choose the desired newsletter.

@@ -6,6 +6,10 @@ navigation:
   show: true
 ---
 
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZM-htj1XdcA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 There are a few special tags you can add to the body of your marketing email These tags are case insensitive so if you make a mistake SendGrid knows what tags you want to use.
 
 You can also add custom tags to your emails. Custom Tags can be created by going to [Marketing Email \> My Recipients \> Manage]({{site.marketing_email_url}}/lists). From here you can choose the list you wish to create tags for by clicking on the custom tags menu item in the list table. Simply click on Add a Custom Tag and enter in your tag name. We will automatically generate the tag name based on what you've entered.
@@ -15,6 +19,9 @@ Be sure to use a tag name the corresponds with an actual column of data in your 
 {% anchor h2 %}
 [weblink]
 {% endanchor %}
+
+<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ye_I15JPt4Q?rel=0" frameborder="0" allowfullscreen></iframe></div>
 
 Place the `[weblink]` tag in the body to provide a link to a hosted copy of the email content. The tag is replaced with the URL, so to create a link, use the following HTML:
 
