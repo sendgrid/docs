@@ -94,9 +94,11 @@ This is the “set it once and forget it” option. You must turn this on for ea
 If you are not allowed to have underscores in your CNAME records, you will have to manually manage your DNS.
 {% endwarning %}
 
-Instead of managing your DNS records for every single change you make, adding an IP address for example, SendGrid can manage all the SPF record updates for you. This option will change the DNS records that you point at SendGrid for your domain, allowing the responsibility of updating the records to pass through to SendGrid. This means that DKIM and SPF records will all be handled by SendGrid once this whitelabel is verified.
+Instead of managing your DNS records for every single change you make, adding an IP address for example, SendGrid can manage your SPF and DKIM record updates for you. This option will change the DNS records that you point at SendGrid for your domain, allowing the responsibility of updating the records to pass through to SendGrid. This means that DKIM and SPF records will all be handled by SendGrid once this whitelabel is verified.
 
-If you choose not to have SendGrid manage your DNS records, then you will be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager.
+In setting up two custom DKIM keys, it allows SendGrid to rotate these two keys periodically without requiring the customer to make any additional changes/update to their DNS.  Rotating DKIM means that we will rotate between the two DKIMs.  SendGrid will also generate a custom spf that includes only the IPs the customer is sending from (as opposed to ~ all sendgrid.net).  SendGrid will generate these records but the customer MUST enter the CNAME records into their DNS host.
+
+If you choose not to have SendGrid manage your DNS records, then you will be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager. This will also mean that your SPF record will include all of SendGrid's IP addresses.
 
 {% anchor h3 %}
 Creating a Domain Whitelabel
