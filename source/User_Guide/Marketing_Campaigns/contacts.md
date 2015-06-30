@@ -47,11 +47,9 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or
 Google Spreadsheets. You can also export your contacts from most database systems as a .csv file.
 
-Your CSV should have the contacts you want to upload into the Marketing Campaigns app, as well as their respective custom
-fields. For example: email, first_name, last_name, country, city, age - where “country,” “city,” and “age” are your custom
-fields (see below).
+Your CSV should have the contacts you want to upload into the Marketing Campaigns app, as well as their respective custom fields. For example: email, first_name, last_name, country, city, age - where “country,” “city,” and “age” are your custom fields.
 
-The first row of your CSV must always be a header row which will identify the columns of your contacts. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row. If you add custom field data to your CSV, while it’s not a requirement to do so, you can save yourself some time on upload by naming the columns the same as the custom fields you have defined in the Marketing Campaigns customer portal.
+The first row of your CSV must always be a header row which will identify the columns of your contacts. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row. If you add custom field data to your CSV, while it’s not a requirement to do so, you can save yourself some time on upload by naming the columns the same as the custom fields you have previously defined in the Marketing Campaigns customer portal.
 
 {% info %}
 You must include ```email``` as one of your CSV headers because that is how we identify individual contacts. If you do not include the email column, we will not add any information to your contact database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
