@@ -6,8 +6,7 @@ body {
 	padding: 0 !important;
 	font-size:18px;
 	line-height:24px;
-  background-color: rgb(247,247,247);
-  height:100%;
+  background-color: rgb(247,247,247);se
 }
 
 p {
@@ -99,7 +98,7 @@ line-height: 26px;
   display: inline-block;
   width: 120px;
   height: 33px;
-	background: url(../images/SendGrid-logo.png?embed=true) no-repeat;
+	background: url(../images/sendgrid-logo.png?embed=true) no-repeat;
 }
 
 #content img {
