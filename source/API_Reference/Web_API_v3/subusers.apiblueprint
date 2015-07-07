@@ -74,7 +74,7 @@ Subsers belonging to a parent user.
             "ips": ["1.1.1.1", "2.2.2.2"]
         }
 
-## Subusers Monitor [/v3/subusers/{subuser_name}/monitor]
+## Subusers Monitor [/subusers/{subuser_name}/monitor]
 
 + Parameters
 
