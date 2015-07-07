@@ -65,13 +65,6 @@ If you need to search for a specific recipient, enter the recipient’s entire e
 
 You can also search by the mailbox name, the part before the @ symbol, or by the domain name, the part after the @ symbol.
 
-{% anchor h2 %}
-Download Your Activity Feed
-{% endanchor %}
-
-If you want to take your feed data with you, click the gear icon at the top of the page and select “Download as CSV”. This
-will provide you with some of your data, but if you are wanting to perform real time analytics on your events, we suggest the
-[Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html).
 
 {% anchor h2 %}
 Subuser Email Activity
