@@ -232,6 +232,7 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html htt
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
@@ -271,3 +272,4 @@ Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+
