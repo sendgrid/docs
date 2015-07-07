@@ -7,12 +7,12 @@ navigation:
 ---
 
 {% anchor h2 %}
-Parse Webhook 
+Parse Webhook
 {% endanchor %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to https://sendgrid.com/email.php.
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz
@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: https://sendgrid.com/email.php
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at https://sendgrid.com/email.php: 
+ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at https://sendgrid.com/email.php:
 
 {% codeblock lang:php %}
 <?php
@@ -42,9 +42,9 @@ if($num_attachments){
 ?>
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Event Webhook 
+Event Webhook
 {% endanchor %}
 
 To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).
@@ -63,7 +63,7 @@ foreach ($events as $event) {
 
 {% endcodeblock %}
 
- 
+
 {% info %}
-get the event webhook up and running easily with our awesome open source app, eventkit <a href="http://sendgrid.github.io/eventkit/setup.html/" ?>Chick here to get setup</a>. 
+get the event webhook up and running easily with our awesome open source app, eventkit <a href="http://sendgrid.github.io/eventkit/setup.html/" ?>Chick here to get setup</a>.
 {% endinfo %}

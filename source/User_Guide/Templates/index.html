@@ -8,12 +8,10 @@ navigation:
   show: true
 ---
 
-<div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
-    <meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Z0TmOqQarww" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://player.vimeo.com/video/130480159" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p>
-The SendGrid <a href="https://sendgrid.com/templates">Template Engine</a> gives you unmatched simplicity, flexibility, and
+The SendGrid <a href="{{site.app_url}}/templates">Template Engine</a> gives you unmatched simplicity, flexibility, and
 control in the management of your email content and design. Get your templates out of your app and instead let your app
 leverage our Template Engine! Template Engine enables seamless collaboration between marketers, developers, and designers,
 allowing each to work within SendGrid's user interface to edit and create email templates for transactional emails.
@@ -30,7 +28,7 @@ Templates created in Template Engine are account and subuser specific. Templates
 <div class="row">
   <div class="col-md-6">
     <h3>
-      <a href="https://sendgrid.com/docs/User_Guide/Templates/create_edit.html">Create and Edit Your Templates</a>
+      <a href="{{root_url}}/User_Guide/Templates/create_edit.html">Create and Edit Your Templates</a>
     </h3>
 
      Templates and versions work together to allow you to easily and quickly iterate. Each version can have its own unique name, content, and subject. Template Engine allows you to insert and edit HTML and inline CSS visually or with a code editor, and supports plain-text content as well.
@@ -48,7 +46,7 @@ Templates created in Template Engine are account and subuser specific. Templates
   </div>
   <div class="col-md-6">
     <h3>
-      <a href="https://sendgrid.com/docs/User_Guide/Templates/manage.html">Manage Your Templates</a>
+      <a href="{{root_url}}/User_Guide/Templates/manage.html">Manage Your Templates</a>
     </h3>
 
     Update, add versions, and manage your templates in an easy to use interface. Keep your most recent template versions
@@ -61,7 +59,7 @@ Templates created in Template Engine are account and subuser specific. Templates
 <div class="row">
   <div class="clearfix col-md-6">
     <h3>
-      <a href="https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/index.html">Integrate With Your App</a>
+      <a href="{{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html">Integrate With Your App</a>
     </h3>
 
     Talk to your development team about integrating your new template(s) with your application. They can read more about
@@ -82,5 +80,5 @@ Templates created in Template Engine are account and subuser specific. Templates
 {% endanchor %}
 
 Start using our Template Engine now by creating your first Template!
-<a href="https://sendgrid.com/templates/new"><img src="{{root_url}}/images/template_engine_6.png" class="img-responsive center-block"/></a>
+<a href="{{site.app_url}}/templates/new"><img src="{{root_url}}/images/template_engine_6.png" class="img-responsive center-block"/></a>
 </div>

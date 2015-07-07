@@ -7,12 +7,12 @@ navigation:
 ---
 
 {% anchor h2 %}
-Parse Webhook 
+Parse Webhook
 {% endanchor %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse. In this example we wil be using Python the Flask framework.
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz
@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: http://sendgrid.biz/parse
 {% endcodeblock %}
 
-  To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code: 
+  To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code:
 
 {% codeblock lang:python %}
 from flask import Flask, request

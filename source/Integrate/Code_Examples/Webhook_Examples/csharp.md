@@ -7,12 +7,12 @@ navigation:
 ---
 
 {% anchor h2 %}
-Parse Webhook 
+Parse Webhook
 {% endanchor %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/upload
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz
@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: http://sendgrid.biz/upload
 {% endcodeblock %}
 
- Put this C\# model in your models folder: 
+ Put this C\# model in your models folder:
 
 {% codeblock lang:csharp %}
 /// <summary>

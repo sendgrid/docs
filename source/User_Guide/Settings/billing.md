@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 When you create or upgrade to a paid account, you will put a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
 {% anchor h2 %}
@@ -28,7 +24,7 @@ Your billing details show you what plan you have and how you will be billed by S
 
 **Overage Price** - The price you pay per email when you send more emails than are available on your package.
 
-**Marketing** - The cost per marketing email when using [SendGrid’s Marketing Emails]({{root_url}}/User_Guide/Marketing_Emails/index.html) feature. 
+**Marketing** - The cost per marketing email when using [SendGrid’s Marketing Emails]({{root_url}}/User_Guide/Marketing_Emails/index.html) feature.
 
 {% anchor h2 %}
 Invoices
@@ -47,7 +43,7 @@ Cancel Account
 {% endanchor %}
 
 {% info %}
-Canceled accounts are not deleted. Accounts are changed to our free plan.
+Canceled accounts are not deleted. Accounts are changed to our [free]({{site.site_url}}/free?mc=SendGrid%20Documentation) plan.
 {% endinfo %}
 
 We are truly sorry to see you go. Please don’t forget that we have 24/7 support and would love the opportunity to help and chat about why you’re leaving if we can.

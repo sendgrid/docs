@@ -16,7 +16,7 @@ How to identify Drops
 
 On the [Global Stats Dashboard]({{root_url}}/User_Guide/Statistics/global.html), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
-You will also find drops in your [Email Activity](https://app.sendgrid.com/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
+You will also find drops in your [Email Activity]({{site.app_url}}/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 
 {% info %}
 If the email address is on the Unsubscribe list the reason will say "Unsubscribed Address"; if on the Spam report list, it will say "Spam Reporting Address" and if on the Invalid Emails list, it will say "Invalid".*
@@ -44,7 +44,7 @@ NOTE: We cannot re-deliver messages that have been Dropped or appear on suppress
 
 *Since SendGrid’s got my back and my reputation is not affected by these Drops, why should I care about removing them?*
 
-Your lists will be cleaner and even if we do drop the messages intended to addresses that are already on one of the suppression lists, we do accept and process these requests before we drop them. Since this is the case, you are still charged credits for these emails.
+Your lists will be cleaner and even if we do drop the messages intended to addresses that are already on one of the suppression lists, we do accept and process these requests before we drop them. Since this is the case, you are still charged for these emails.
 
 {% anchor h3 %}
 Clean your lists

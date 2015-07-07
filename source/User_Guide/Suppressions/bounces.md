@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled email address, a nonexistent email address, or a full recipient inbox. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
 
 {% anchor h2 %}
@@ -44,4 +40,4 @@ When you select the checkboxes next to the recipient names or select all, using 
 Related
 {% endanchor %}
 
-[Set up Bounce Forwarding to go to the email’s from address](https://support.sendgrid.com/hc/en-us/articles/200181478)
+[Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)

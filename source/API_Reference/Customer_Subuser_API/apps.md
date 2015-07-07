@@ -11,11 +11,11 @@ Please see the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_setti
 {% endinfo %}
 
 {% anchor h2 %}
-List 
+List
 {% endanchor %}
 List all of the available apps available for the subuser.
 
-{% parameters getAvailable %}   
+{% parameters getAvailable %}
   {% parameter task Yes 'Must be set to <code>getAvailable</code>' 'Task to retrieve available apps for the subuser' %}  
   {% parameter user Yes 'Subuser must be under your account' 'The subuser being queried' %}
 {% endparameters %}
@@ -70,11 +70,11 @@ Note: The <code>name</code> entry is used in all the other API calls to identify
 * * * * *
 
 {% anchor h2 %}
-Activate App 
+Activate App
 {% endanchor %}
 Activate an app on a subuser.
 
-{% parameters activate %}     
+{% parameters activate %}
   {% parameter task Yes 'Must be set to <code>activate<code>' 'Task to activate an app' %}  
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to activate the app on' %}
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to activate' %}
@@ -97,11 +97,11 @@ Activate an app on a subuser.
 * * * * *
 
 {% anchor h2 %}
-Deactivate App 
+Deactivate App
 {% endanchor %}
 Deactivate an app on a subuser.
 
-{% parameters deactivate %}   
+{% parameters deactivate %}
   {% parameter task Yes 'Must be set to <code>deactivate<code>' 'Deactivate an app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to deactivate the app on' %}
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to deactivate' %}
@@ -124,16 +124,16 @@ Deactivate an app on a subuser.
 * * * * *
 
 {% anchor h2 %}
-Setup App 
+Setup App
 {% endanchor %}
-These API calls require that settings are passed using POST. 
+These API calls require that settings are passed using POST.
 
 {% info %}
 Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) for the required arguments for each app.
 {% endinfo %}
 
-{% parameters setup %}   
-  {% parameter task Yes 'Must be set to <code>setup<code>' 'Task to setup an app' %} 
+{% parameters setup %}
+  {% parameter task Yes 'Must be set to <code>setup<code>' 'Task to setup an app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to setup the app on' %}
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to setup' %}
 {% endparameters %}
@@ -154,11 +154,11 @@ Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.ht
 * * * * *
 
 {% anchor h2 %}
-Get Current Settings 
+Get Current Settings
 {% endanchor %}
 Get the settings for a subuser's app.
 
-{% parameters getsettings %} 
+{% parameters getsettings %}
   {% parameter task Yes 'Must be set to <code>getsettings</code>' 'Task to retrieve the settings for the app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser get the app settings for' %}
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to retrieve settings of' %}

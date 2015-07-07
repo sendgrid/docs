@@ -1,12 +1,7 @@
 ---
 /API_Reference: 80
-#/Apps: 40
-#/Code_Examples: 80
-#/Delivery_Metrics: 40
 /Glossary: 20
 /Integrate: 80
-#/Marketing_Emails: 40
-#/Transactional_Email: 40
 /User_Guide: 90
 /Utilities: 80
 /VidGrid: 20
@@ -18,14 +13,8 @@
 # User Guide
 # ----- 80 ------
 # API Reference
-# Code Examples
 # Integrate
 # Utilities
-# ----- 40 ------
-# Apps
-# Delivery Metrics
-# Marketing Emails
-# Transactional Email
 # ----- 20 ------
 # Glossary
 # VidGrid

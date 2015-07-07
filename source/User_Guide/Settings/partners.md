@@ -10,17 +10,13 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 Partner settings allow you to integrate your SendGrid account with our partners to increase your SendGrid experience and functionality.
 
 {% anchor h2 %}
 SendGrid For New Relic
 {% endanchor %}
 
-Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the app enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/Classroom/Track/new_relic.html).
+Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/Classroom/Track/new_relic.html).
 
 {% anchor h3 %}
 Settings

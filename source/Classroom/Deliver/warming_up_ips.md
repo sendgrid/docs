@@ -18,7 +18,7 @@ What does it actually mean to "warm up" an IP address?
 
 IP warming is a gradual process that happens over time, with the goal of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or "cold" (ie, recently dormant) IP address, they will take notice of it and immediately begin evaluating the traffic coming from that IP. Since volume is perhaps the most telling factor in the eyes of ISP SPAM filters, it is best to begin sending low to moderate volume (e.g., up to 1 million emails/month), eventually working your way up to larger volumes (e.g., over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 
-It should be noted that taking this gradual, ramping approach does not guarantee smooth sailing for ever more. It remains important to follow other email [best practices](https://sendgrid.com/blog/10-tips-to-keep-email-out-of-the-spam-folder) – send acceptable content that your users want to get, maintain quality lists and send your email on a consistent basis.
+It should be noted that taking this gradual, ramping approach does not guarantee smooth sailing for ever more. It remains important to follow other email [best practices]({{site.blog_url}}/10-tips-to-keep-email-out-of-the-spam-folder) – send acceptable content that your users want to get, maintain quality lists and send your email on a consistent basis.
 
 {% anchor h2 %}
 Does my IP need to be warmed up? And if so, why? 

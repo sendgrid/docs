@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 [Spam reports]({{root_url}}/Glossary/spam_reports.html) happen when a recipient indicates that they think your email is [spam]({{root_url}}/Glossary/spam.html) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date. 
 
 {% anchor h2 %}

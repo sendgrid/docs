@@ -172,7 +172,7 @@ Follow these steps to enable Mobile Services from the Windows Azure interface:
 Now you need to add a table to the database:
 
 1.	Click on the name of your mobile service to access its settings
-2.	Click DATA, then Add a Table 
+2.	Click DATA, then Add a Table
 3.	Choose a table name, update permissions and click COMPLETE
 ![Choose]({{root_url}}/images/azure_12.png)
 

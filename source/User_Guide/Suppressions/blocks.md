@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 [Blocks]({{root_url}}/Glossary/blocks.html) happen when your mail server IP address has been added to a blacklist or blocked by an ISP.  Typically it is possible to have your IP address removed from a black list, and some lists automatically do this after a period of time.
 
 The list provided here can be filtered by email address or date. 

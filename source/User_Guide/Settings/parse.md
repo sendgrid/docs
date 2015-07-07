@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
 SendGrid’s Inbound Parse is a webhook that allows you to receive emails that get automatically broken apart by SendGrid and then sent to the location of your choosing. SendGrid will grab the content, attachments, and the headers from any email it receives via your specified hostname. Please see our [Inbound Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) technical docs for more information about how to handle the information coming to you from SendGrid’s Inbound Parse.
 
 {% anchor h2 %}
@@ -34,5 +30,10 @@ Inbound parse requires a hostname, where the emails will be sent, and the URL wh
 
 **Spam Check** - Inbound Parse will check incoming emails for spam and reject the emails that are obviously spam.
 
-**Send Raw** - If you would prefer to receive the full MIME message, select this option. 
+**Send Raw** - If you would prefer to receive the full MIME message, select this option.
 
+{% anchor h2 %}
+Using the API
+{% endanchor %}
+
+If you're interested in how to use the Inbound Parse Webhook, please check out our [Inbound Parse Webhook API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html).
