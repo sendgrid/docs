@@ -38,6 +38,9 @@ class BluePrintHTML < Redcarpet::Render::HTML
   @@http_response = "200"
   @@params = ""
   @@param_list = ""
+  @@attr_list = ""
+  @@attr_string = ""
+  @@param_string = ""
   @@method = ""
   @@path = ""
   @@request_body = ""
@@ -103,7 +106,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     if 2 == level
 
       # reset for each endpoint path, bc params are the same for all HTTP methods within this path group
-      @@param_list = ""
+      @@param_list, @@attr_list, @@param_string = "", "", ""
 
       #create a unique HTML ID for the group
 
@@ -138,6 +141,10 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # get the request method
     if 3 == level
       debug "\t--RESET VARS--"
+
+      # attrs get reset by HTTP METHOD
+      @@attr_list, @@param_string = "", ""
+
       if text.include? "]"
         # get the response method from the header
         @@method = text.split("[")[1].gsub("]","")
@@ -194,14 +201,27 @@ class BluePrintHTML < Redcarpet::Render::HTML
     debug "\t list type = " + list_type.to_s
     debug "\t" + text
 
+
+
     # individual parameters are accessed first in the processing
-    if text.include? " ... "
+    if text.include? ") ... "
       return docs_liquid_individual_params(text)
     end
 
+    # individual parameters are accessed first in the processing
+    if text.include? ") - "
+      return docs_liquid_individual_attrs(text)
+    end
+
+
+
     # Build the Parameters Liquid Block
     if text.include? "Parameters"
-      return docs_liquid_params_block(text)
+      return docs_liquid_params_block(text, "parameters")
+    end
+
+    if text.include? "Attributes"
+      return docs_liquid_params_block(text, "attributes")
     end
 
     #handle the request and response headers
@@ -332,9 +352,9 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     if "request" == @@body_block
 
-      @@request_body = text.gsub("\n","").gsub("&quot;",'"')
+      @@request_body = text.gsub("\n", "").gsub("&quot;",'"').strip
 
-      debug "\t REQUEST BODY SET " + text.strip
+      debug "\t REQUEST BODY SET " + text.gsub("\n", "").gsub("&quot;",'"').strip
 
       # we don't want this to be put out to the page yet
       return
@@ -355,10 +375,100 @@ class BluePrintHTML < Redcarpet::Render::HTML
     text
   end
 
+  # Rules:
+  #   Attributes has "(required, type) - "
+  #   the first word is the param name
+  #   everything between the first word and the open paren is the example
+  #   between the params are required, type data
+  #   everything after the " - " is the description
+  def docs_liquid_individual_attrs(text)
+    debug "\t --Individual Attributes--"
+    # BluePrint example --- :identifier :example (:optional, :type) - :description
+
+    debug "\t\tAttr String: " + text
+
+    position = text.index(" ")
+    #the identifier is everything before the first space.
+    identifier = text[0..position].strip
+
+    debug "\t\tidentifier: " + identifier
+
+    text = text[position..text.length].strip
+
+    debug "\t\tnew text: " + text
+
+    # find the open paren
+    position = text.index(" (")
+
+    #the example is everything from the first space to the open paren
+    example = text[0..position]
+
+    if example.length > 0
+      example = docs_example_text(example)
+    end
+
+    debug "\t\texample: " + example
+
+    text = text[position..text.length].strip
+
+    debug "\t\tnew text: " + text
+
+    position = text.index(" - ")
+
+    #get the description, add example no matter what
+    description = text[position..text.length].gsub(" - ", "").strip
+
+    debug "\t\tdescription: " + description
+
+    if description.rindex(".") != (description.length - 1)
+      throw "Description should have a period at the end. Given: " + description + " For identifier: " + identifier
+    end
+
+    description +=  example
+
+    text = text[0..position].strip.gsub("("," ").gsub(")", " ").split(",")
+
+    debug "\t\t new text: "
+
+    optional = text[0].strip
+
+    debug "\t\t optional: " + optional
+
+    unless optional.include? "required"
+      unless optional.include? "optional"
+        throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + optional
+      end
+    end
+
+    parameter_req = "Yes"
+
+    if "optional" == optional.downcase
+      parameter_req = "No"
+    end
+
+    requirements = text[1].strip
+
+    debug "\t\t requirements: " + requirements
+
+    @@attr_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+
+    debug "\t\t " + @@attr_string
+
+  end
+
+  def docs_default_text(text)
+    return "<br />Default: `" + text + "`"
+  end
+
+  def docs_example_text(text)
+    return "<br />Example: `" + text + "`"
+  end
+
+
   # handles the specifics of the liquid "parameters" items for the redcarpet:list_item method
   def docs_liquid_individual_params(text)
     debug "\t --Individual Parameter--"
-    # BluePrint example --- :identifier (:optional, :requirements) … :description
+    # BluePrint example --- :identifier (:optional, :type, :example) … :description
 
     # split by ...
     #       [1] = description
@@ -389,8 +499,15 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # get the optional/required information from the 1st item in the parenthesis
     optional = optional_requirements[0].strip
 
+    unless optional.include? "required"
+      unless optional.include? "optional"
+        throw "String must be 'optional' or 'required' in parens. example: (optional, number, example string) \n String was: " + parameters[0]
+      end
+    end
+
     # get the requirements information from the 2nd item in the parenthesis
     requirements = ""
+
     if optional_requirements[1]
       requirements = optional_requirements[1].strip
     end
@@ -400,7 +517,11 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # Create the example from the 3rd item in the parenthesis
     if optional_requirements.length > 2
-      example = " Example: `" + optional_requirements[2].strip + "`"
+      optional_requirements[2] = optional_requirements[2].strip
+
+      example = docs_example_text(optional_requirements[2])
+
+      debug "\t " + example
     end
 
     parameter_req = "Yes"
@@ -415,7 +536,8 @@ class BluePrintHTML < Redcarpet::Render::HTML
     if identifier_default.include? "="
       identifier_default = identifier_default.split("=")
       identifier = identifier_default[0].strip
-      description += " Defaults to " + identifier_default[1].strip
+      description += docs_default_text(identifier_default[1].strip)
+      debug "\t Description: " + description
     else
       identifier = identifier_default
     end
@@ -437,16 +559,27 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # add the example to the end of the description
     if example.length > 0
       description += example
+      debug "\t Desc+Example: " + description
     end
 
     # liquidexample --- {% parameter :identifer :required :requirements :description %}
-    @@param_list += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    debug "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    debug "\t TEST "
+    debug @@param_string
+    @@param_string += "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
+    debug "\t added to param_list['temp']"
   end
 
   # builds the final output of all the liquid tags, using all the vars we've set
   # we do this during the response, because we finally have all the parts we need
   def docs_liquid_output(text)
     # {% apiv3example :endpoint_identifier :requestType :url?:parameters %}
+    #   {% apiv3requestbody %}
+    #      json here
+    #   {% endapiv3requestbody %}
+    #   {% apiv3requestheader %}
+    #      json here
+    #   {% endapiv3requestheader %}
     #   {% v3response %}
     #   :expectedResponse
     #   [
@@ -481,32 +614,6 @@ class BluePrintHTML < Redcarpet::Render::HTML
       url += @@params
     end
 
-    if @@request_body.length > 1
-      # handle a request body with no params
-      url += " " + @@request_body.strip
-    end
-
-    debug "REQUEST HEADERS: " + @@request_headers
-
-    if @@request_headers.length > 1
-
-      debug "WE HAVE REQUEST HEADERS"
-
-      #make sure that we have the space there to be parsed
-
-      if @@request_body.length <= 1
-        debug "REquest Body is 0"
-        url += " {}"
-      end
-
-      debug "adding request headers to URL"
-
-      #add the request headers to the tag
-      url += " {request_header" + @@request_headers.strip + "}"
-
-      debug "####URL####" + url
-    end
-
     # output all the tags at once for this endpoint
     # if/when we want to put params on the URL in the Request area, we can do this append - @@params.gsub("\n","")+ - to the Url
     # we will need to probably grab params for the URL from the params list, rather than the request body
@@ -519,8 +626,27 @@ class BluePrintHTML < Redcarpet::Render::HTML
       output += @@param_list + "\n\n"
     end
 
-    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n" +
-        "\t{% v3response %}\n" +
+    unless @@attr_list.nil?
+      debug "\t attr_list is not NIL"
+      output += @@attr_list + "\n\n"
+    end
+
+
+    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
+
+    if @@request_body.length > 1
+      output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
+    end
+
+    if @@request_headers.length > 1
+      output +=     "\t {% apiv3requestheader %}" +
+                      @@request_headers.strip +
+                    "\t {% endapiv3requestheader %}"
+    end
+
+
+
+    output +=   "\t{% v3response %}\n" +
         "\t\t" + text + "\n"
 
     #sometimes, we don't have a response body. That's ok.
@@ -536,15 +662,15 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     # call the instance var reset
     reset_vars()
-
+    debug "\n\n" + output + "\n\n"
     return "\n\n" + output + "\n\n"
   end
 
   # builds the parameter block using the parameters text that is passed in and the group identifier
-  def docs_liquid_params_block(text)
-    debug "\t --Parameter Block --"
+  def docs_liquid_params_block(text, type)
+    debug "\t --" + type + " Block --"
 
-    debug "\t Params: " + text
+    debug "\t " + type + ": " + text
     # This should be building the following, using the other variables that have been set already
 
     # {% parameters categoriesget %}
@@ -554,10 +680,18 @@ class BluePrintHTML < Redcarpet::Render::HTML
     # {% endparameters %}
 
     # create the params list when we have a list element that says "Params"
-    unless @@param_list.include? "parameters"
-      @@param_list = "{% parameters endpoint#{@@group_identifier} %}\n" + @@param_list + "{% endparameters %}"
-      debug "\t PARAM LIST SET: " + @@param_list
+    if type == "parameters"
+      @@param_list = "{% parameters endpoint#{@@group_identifier} %}\n" + @@param_string + "{% endparameters %}"
+      debug "\t param LIST SET: " + @@param_list
     end
+
+    # create the attr list when we have a list element that says "Params"
+    if type == "attributes"
+      @@attr_list = "{% attributes endpoint#{@@group_identifier} %}\n" + @@attr_string + "{% endattributes %}"
+      debug "\t attr LIST SET: " + @@attr_list
+    end
+
+    @@param_string = ""
 
     # we don't want any output from this method
     return ""

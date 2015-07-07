@@ -10,7 +10,7 @@ navigation:
 
 From time to time, it's good to take a long hard look at your lists and clean house. At SendGrid, this means scrubbing your list. For senders, a scrubbed list sent by SendGrid can be the ticket to delivery heaven. Unfortunately, scrubbing your list can be intimidating. Senders don’t know where to start and resort to using list cleaning services. What senders might not know is that cleaning your list can be done for free and much, much more effectively. We have put together simple steps that will improve any senders list. A bad list is fraught with problems and if left unbrushed, can lead to removing all of a senders teeth which requires a lot of resources to replace. Please go through these; we promise it will save you a trip to the dentist in the long run.
 
-1. SendGrid automatically suppresses hard bounces if you try to send to them again. Let me make this clear - don’t waste your credits; remove these addresses from your list. Keeping your list up to date will save you money and time should you try to send somewhere else with your list.
+1. SendGrid automatically suppresses hard bounces if you try to send to them again. Let me make this clear - don’t waste your emails - remove these addresses from your list. Keeping your list up to date will save you money and time should you try to send somewhere else with your list.
 
 2. This may seem obvious but when people unsubscribe, remove them from your list! If you are keeping unsubscribed addresses around, they have broken up with you and it is best to move on. Delete their addresses.
 

@@ -10,7 +10,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Send Email 
+Send Email
 {% endanchor %}
 
 <p>There are three different technical concepts you should know about sending emails via SendGrid's <a href="{{root_url}}/Glossary/email_api_integration.html">Email API</a>:</p>
@@ -25,7 +25,7 @@ Send Email
 <p>The SendGrid Marketing Email API provides developers with the ability to <a href="{{root_url}}/API_Reference/Marketing_Emails_API/emails.html">manage marketing emails</a>, <a href="{{root_url}}/API_Reference/Marketing_Emails_API/lists.html">lists</a>, <a href="{{root_url}}/API_Reference/Marketing_Emails_API/sender_address.html">identities</a>, and <a href="{{root_url}}/API_Reference/Marketing_Emails_API/schedule.html">schedule delivery events</a></p>
 
 <h3>SMTPAPI</h3>
-<p>The <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> allows you to tag your emails to get detailed statistics on each tag, send multiple customized emails in one request via mail merge, and configure each app on a per email basis. This is done by passing a JSON string in the X-SMTPAPI header if using SMTP or in the x-smtpapi HTTP parameter if using the web API. <a href="{{root_url}}/API_Reference/SMTP_API/index.html">Using the SMTP API</a></p>
+<p>The <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> allows you to tag your emails to get detailed statistics on each tag, send multiple customized emails in one request via mail merge, and configure each setting on a per email basis. This is done by passing a JSON string in the X-SMTPAPI header if using SMTP or in the x-smtpapi HTTP parameter if using the web API. <a href="{{root_url}}/API_Reference/SMTP_API/index.html">Using the SMTP API</a></p>
 
 <h3>SMTP</h3>
 <p>This is a protocol rather than an API. SMTP is widely supported by applications and is usually the fastest way to integrate with SendGrid. <a href="{{root_url}}/Integrate/index.html">Learn how to integrate using SMTP</a>.</p>
@@ -34,7 +34,7 @@ Send Email
 <p>This API allows SendGrid customers to manage their subusers and every aspect of their subuser's accounts.</p>
 
 {% anchor h2 %}
-Receive Email 
+Receive Email
 {% endanchor %}
 <p>SendGrid can parse the email bodies and attachments from incoming emails and post them to your web application. For details on how to integrate your application to start receiving emails please refer to our <a href="{{root_url}}/API_Reference/Webhooks/parse.html">Parse Webhook</a>. Application examples include:</p>
 <ul>
@@ -45,7 +45,7 @@ Receive Email
 </ul>
 
 {% anchor h2 %}
-Real-time Event Notification Webhook 
+Real-time Event Notification Webhook
 {% endanchor %}
 
 <p>SendGrid can send real-time notifications about events that happen on the SendGrid system to a URL. These events include clicks, opens, unsubscribe, bounces, and many others. These events include more data than what SendGrid records and allow customers to customize their own reporting. What makes this API even more powerful is the ability to include user-defined parameters in each event. Through our SMTP API, customers can embed unique parameters in each email they send. These parameters are then passed to each event notification so your application can associate these events with your customers. Read more about the <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event Webhook</a>. Examples of applications include:</p>

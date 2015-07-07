@@ -15,7 +15,7 @@ An Internet Protocol (IP) Address address is a unique numerical address that def
 In the context of deploying email, a single IP address or IP range may be dedicated to an organization in order to send email for multiple domains. The reputation of this IP is based on the aggregate performance of all the senders who use it.
 
 {% info %}
-If you are on a Silver or above plan you can see your IP reputation and IP address on your Account Overview page.
+If you are on a Pro 100k or above plan you can see your IP reputation and IP address on your Account Overview page.
 {% endinfo %}
 
 ![]({{root_url}}/images/ip_address_1.png)
@@ -24,8 +24,3 @@ For more information:
 
 * [SendGrid Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
 * [Whitelabeling your IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html)
-
-
-
-
-

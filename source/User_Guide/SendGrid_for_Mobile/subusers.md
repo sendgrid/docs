@@ -19,7 +19,7 @@ navigation:
 </p>
 
 {% warning %}
-This view will only be available in the app if you are on a Silver or higher plan and have created one or more subusers.
+This view will only be available in the app if you are on a Pro 100k or higher plan and have created one or more subusers.
 {% endwarning %}
 
 Here you can view your current subusers and also “impersonate” them, allowing you to view the app as though you logged in as that subuser.

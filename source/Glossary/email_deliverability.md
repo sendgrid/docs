@@ -22,7 +22,7 @@ Good email deliverability is influenced by a lot of factors, including having a 
 * Monitoring your sending data
 * Sending wanted mail
 
-SendGrid helps you [achieve strong email deliverability](https://sendgrid.com/solutions) by providing the following features in each of these best practices and more:
+SendGrid helps you [achieve strong email deliverability]({{site.site_url}}/solutions) by providing the following features in each of these best practices and more:
 
 * Reputation monitoring
 * ISP monitoring
@@ -37,4 +37,4 @@ SendGrid helps you [achieve strong email deliverability](https://sendgrid.com/so
 
 SendGrid also has a world-class support team that is available 24/7 via chat, phone, and email to address any of your email deliverability needs.
 
-If email drives your business, then paying close attention to your email deliverability rates is an undeniable key to your success. Let SendGrid help you achieve that success. To learn more about how email deliverability affects your business, download our free [Deliverability Guide](http://go.sendgrid.com/DeliverabilityGuide.html?mc=Direct&mcd=https://sendgrid.com/docs/).
+If email drives your business, then paying close attention to your email deliverability rates is an undeniable key to your success. Let SendGrid help you achieve that success. To learn more about how email deliverability affects your business, download our free [Deliverability Guide](http://go.sendgrid.com/DeliverabilityGuide.html?mc=Direct&mcd={{root_url}}/).

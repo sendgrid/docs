@@ -19,7 +19,7 @@ How To Impersonate A Subuser
 {% endanchor %}
 
 1. Log into the customer portal, if you are not already logged in.
-2. Go to the top right corner of the portal screen and click your avatar, the round image of you or your initials. 
+2. Go to the top left corner of the portal screen and click your name just above the navigation menu
 3. Click “Switch User”
 4. Choose the subuser you want to impersonate by clicking that subuser’s name
 

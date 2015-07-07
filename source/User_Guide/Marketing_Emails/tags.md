@@ -12,7 +12,7 @@ navigation:
 
 There are a few special tags you can add to the body of your marketing email These tags are case insensitive so if you make a mistake SendGrid knows what tags you want to use.
 
-You can also add custom tags to your emails. Custom Tags can be created by going to [Marketing Email \> My Recipients \> Manage](https://sendgrid.com/newsletter/lists). From here you can choose the list you wish to create tags for by clicking on the custom tags menu item in the list table. Simply click on Add a Custom Tag and enter in your tag name. We will automatically generate the tag name based on what you've entered.
+You can also add custom tags to your emails. Custom Tags can be created by going to [Marketing Email \> My Recipients \> Manage]({{site.marketing_email_url}}/lists). From here you can choose the list you wish to create tags for by clicking on the custom tags menu item in the list table. Simply click on Add a Custom Tag and enter in your tag name. We will automatically generate the tag name based on what you've entered.
 
 Be sure to use a tag name the corresponds with an actual column of data in your recipient list file. If not, the tag will not insert any data into the content of the email and the end user will see the custom tag. If you have created a new custom tag for a recipient list (one that has no column of data) then we will create a new column for you on your recipient list that you can backfill with the correct data so when using the custom tag actual data will be passed into the content of your email.
 

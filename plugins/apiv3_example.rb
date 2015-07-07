@@ -11,31 +11,6 @@ module Jekyll
       #clean the original attributes from the original content
       markup = markup.gsub(@identifier,"").gsub(@request_type,"").gsub(@url,"")
 
-      #get the data - which is "request data" and "request headers" if they exist
-      @data, @request_header = markup.scan(/\{(.*?)\}/)
-
-      unless @data.nil?
-        #hack it back together now
-        @data = "{"+@data[0].to_s+"}"
-        markup = markup.gsub("{"+@data[0].to_s+"}", "")
-        if @data == "{}"
-          @data = ""
-        end
-      end
-
-      unless @request_header.nil?
-        @request_header = @request_header[0]
-        markup = markup.gsub("{"+@request_header.to_s+"}", "")
-
-        if @request_header.include? "request_header"
-          @request_header = @request_header.gsub("request_header","")
-        else
-          #this isn't a request header and it's out of order
-          @data = "{"+@request_header.to_s+"}"
-          @request_header = ""
-        end
-      end
-
       if markup.strip.length > 0
         @show_livedoc = markup
       end
@@ -48,6 +23,9 @@ module Jekyll
 
       output = <<HTML
 <div class="api-example panel" id="apiv3example-#{@identifier}">
+<div class="panel-body">
+  <h3>Request</h3>
+  {% codeblock lang:http %}#{@request_type} #{@url} HTTP/1.1{% endcodeblock %}
   #{output}
 </div>
 HTML
@@ -99,22 +77,19 @@ HTML
         data = data.length > 0 ? JSON.pretty_generate(JSON.parse(data)) : ""
       end
 
-      if request_header.length > 0
-        request_header = request_header.gsub('-_-',"")
-        data_block = "Request Headers<br/>{% codeblock %}#{request_header}{% endcodeblock %}"
-      end
-
-      if data.length > 0
-        data_block += "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
-      end
+      # if request_header.length > 0
+      #   request_header = request_header.gsub('-_-',"")
+      #   data_block = "Request Headers<br/>{% codeblock %}#{request_header}{% endcodeblock %}"
+      # end
+      #
+      # if data.length > 0
+      #   data_block += "Request Body<br/>{% codeblock lang:json %}#{data}{% endcodeblock %}"
+      # end
 
       request_url = url
 
       output = <<HTML
-<div class="panel-body">
-  <h3>Request</h3>
-  {% codeblock lang:http %}#{request_type} #{request_url} HTTP/1.1{% endcodeblock %}
-  #{data_block} 
+  #{data_block}
   <h3>Response</h3>
   {% codeblock lang:json %}#{output.strip}{% endcodeblock %}
 </div>

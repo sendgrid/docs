@@ -12,18 +12,18 @@ Access your email statistics via the New Relic Dashboard.
 
 ![]({{root_url}}/images/new_relic.png)
 
-In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the app enabled.
+In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled.
 
 * * * * *
 
 {% anchor h2 %}
-Settings 
+Settings
 {% endanchor %}
 
 Settings may be changed through:
 
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-SendGrid-for-New-Relic) (on an account wide basis)
--   [Web Interface](https://sendgrid.com/app) (on an account wide basis)
+-   [Customer Portal]({{site.app_url}}/settings/partners) (on an account wide basis)
 
 If you would like get your statistics in the New Relic Dashboard, you need to provide us your New Relic license key.
 
@@ -31,10 +31,10 @@ This can be found by accessing the SendGrid's Plugin page on New Relic or from t
 
 ![]({{root_url}}/images/newrelic-settings.png)
 
-In the New Relic app settings you can enable the statistics for your subusers.
+In the New Relic settings you can enable the statistics for your subusers.
 
 {% warning %}
-You will receive statistics only for 100 subusers 
+You will receive statistics only for 100 subusers
 {% endwarning %}
 
 After you have entered your settings and saved them, enable the app.
@@ -42,7 +42,7 @@ After you have entered your settings and saved them, enable the app.
 * * * * *
 
 {% anchor h2 %}
-New Relic Dashboard 
+New Relic Dashboard
 {% endanchor %}
 
 Go on New Relic site and there you will find the SendGrid extension on the left menu. After clicking on 'SendGrid' extension, a SendGrid instance will be displayed and if you activated the subuser options beneath the stats of the primary account will be the stats for subusers.
