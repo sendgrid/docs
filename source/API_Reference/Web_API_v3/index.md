@@ -43,11 +43,11 @@ Example header:
 
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/resource HTTP/1.1
-Authorization: Bearer TS.Wy8e9dgMSl2_Zu_TOzO8Qg.lWy8e9dgMSl2_Zu_TOzO8Qg.lWy8e9dgMSl2_Zu_TOzO8Qg
+Authorization: Bearer Your.API.Key-HERE
 {% endcodeblock %}
 
 {% codeblock lang:bash %}
-curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer TS.Wy8e9dgMSl2_Zu_TOzO8Qg.lWy8e9dgMSl2_Zu_TOzO8Qg.lWy8e9dgMSl2_Zu_TOzO8Qg" -H "Content-Type: application/json"
+curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json"
 {% endcodeblock %}
 
 * * * * *
