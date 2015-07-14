@@ -18,7 +18,7 @@ The list provided here can be filtered by email address or date.
 Searching Blocks by Date
 {% endanchor %}
 
-In the top right corner, you will see a calendar icon. Click this and choose the dates you would like to search between. Your recipient list will refresh, showing the recipients who marked your email as spam between these dates.
+In the top right corner, you will see a calendar icon. Click this and choose the dates you would like to search between. Your recipient list will refresh, showing the email addresses that were blocked between these dates as well as the block reason.
 
 {% anchor h2 %}
 Removing Recipients from The List
