@@ -25,7 +25,7 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
     + limit (optional, number, 50) ... Number of domains to return. Defaults to 50.
     + offset (optional, number, 0) ... Paging offset. Defaults to 0.
     + exclude_subusers (optional, boolean, true) ... Exclude subuser domains from the results. Defaults to "false".
-    + username (optional, string `john`) ... Search for domain whitelabels belonging to the given user.
+    + username (optional, string, `john`) ... Search for domain whitelabels belonging to the given user.
     + domain (optional, string, `example.com`) ... Search for domain whitelabels that match the given domain.
 
 ### List all Domains [GET]
