@@ -88,7 +88,7 @@ For more information on this, read <a href="http://tools.ietf.org/html/rfc821"> 
 
 <p>Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries, which will cause spaces to be inserted in the final resulting e-mail. Additionally, if your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.</p>
 
-<p>When using the API, if our system encounters a parsing error the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors. More info: <a href="https://support.sendgrid.com/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address"></a>Bounce Forwarding</a> </p>
+<p>When using the API, if our system encounters a parsing error the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors. More info: <a href="{{site.support_url}}/hc/en-us/articles/200181478-How-to-set-up-bounce-forwarding-to-go-to-the-email-s-FROM-address"></a>Bounce Forwarding</a> </p>
 
 {% anchor h2 %}
 Sending Unicode in the SMTP API

@@ -9,10 +9,10 @@ navigation:
 ---
 
 
-Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on 
-different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email 
-template developer to build your templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) 
-before sending them to your customers. 
+Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on
+different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email
+template developer to build your templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com)
+before sending them to your customers.
 
 {% info %}
 There is currently a limit of 300 templates and 300 versions that may be created per account.
@@ -26,15 +26,15 @@ Templates created in Template Engine are account and subuser specific. Templates
 Create a Template
 {% endanchor %}
 
-When you first visit the Template Engine, you will be asked to create your first template. 
+When you first visit the Template Engine, you will be asked to create your first template.
 
-<a href="https://sendgrid.com/templates/new">![](/images/template_engine_17.png "Add a Template")</a>
+<a href="{{site.app_url}}/templates/new">![](/images/template_engine_17.png "Add a Template")</a>
 
-Click “Create Template” and you’ll be asked to add a Template Name. 
+Click “Create Template” and you’ll be asked to add a Template Name.
 
 ![](/images/template_engine_7.png "Template Name")
 
-When you hit save, you will be taken to the editor. From here, you can change the subject and the body of your email template. 
+When you hit save, you will be taken to the editor. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
@@ -72,7 +72,7 @@ To get the to the plain text editor, find the text icon in the editor header bar
 Send a Test
 {% endanchor %}
 
-We suggest that when you’re done making changes with your template and before you activate your template, you should send a test. 
+We suggest that when you’re done making changes with your template and before you activate your template, you should send a test.
 
 ![](/images/template_engine_12.png "Send a Test Menu")
 

@@ -13,4 +13,4 @@ navigation:
 </div>
 ### List Assist
 
-Anisha gives a quick demo on what [List Assist](https://sendgrid.com/listassist) is and how to use it.
+Anisha gives a quick demo on what [List Assist]({{site.site_url}}/listassist) is and how to use it.

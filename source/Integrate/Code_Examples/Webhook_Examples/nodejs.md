@@ -7,12 +7,12 @@ navigation:
 ---
 
 {% anchor h2 %}
-Parse Webhook 
+Parse Webhook
 {% endanchor %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse . We will be using Node and the Express framework.
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
 {% codeblock %}
 Hostname: email.sendgrid.biz
@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: http://sendgrid.biz/parse
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code: 
+ To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code:
 
 {% codeblock lang:javascript %}
 
@@ -51,9 +51,9 @@ var server = app.listen(app.get('port'), function() {
 });
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Event Webhook 
+Event Webhook
 {% endanchor %}
 
 To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).

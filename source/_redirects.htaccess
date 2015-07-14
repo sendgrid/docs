@@ -44,8 +44,8 @@ Redirect 301 /Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.h
 #forced a redirect file at /Apps/bypass_list_management.html - the following redirect wouldn't take
 Redirect 301 /Apps/bypass_list_management.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/Settings/domain_keys.html
-Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/Settings/dkim.html
+Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
@@ -156,7 +156,7 @@ Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classro
 Redirect 301 /User_Guide/Account/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
+Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/Account/Account_Settings/password.html https://sendgrid.com/docs/Classroom/Basics/password.html
 Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
@@ -169,8 +169,8 @@ Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-BCC
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
-Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/index.html
+Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Legacy-Email-Template
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
@@ -216,10 +216,11 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
-Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/multiple_credentials.html
+Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
-Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Glossary/Email_Typesreconfirmation.html
+Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/Glossary/Email_Types/reconfirmation.html
 Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/Glossary/rate_limiting.html
+Redirect 301 /User_Guide/Settings/multiple_credntials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Track/clicktracking_ssl.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/content_delivery_networks.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html https://sendgrid.com/docs/Classroom/Send/segmenting_traffic.html
@@ -227,7 +228,12 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers
 Redirect 301 /User_Guide/Setting_Up_Your_Server/smtp_ports.html https://sendgrid.com/docs/Classroom/Basics/smtp_ports.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
-#this app goes away as of May 27, 2015
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+#this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
@@ -235,15 +241,17 @@ Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/thro
 Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
-Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html
+Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 
 #######
 #
 # /docs/VidGrid
 #
 #######
+Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
+Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
@@ -262,5 +270,6 @@ Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html ht
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/create_manage.html
 Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
-Redirect 301 /VidGrid/Tools/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/VidGrid/whitelabel.html
+Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+

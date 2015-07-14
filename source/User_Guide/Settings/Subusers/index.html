@@ -11,11 +11,7 @@ navigation:
 ---
 
 {% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-{% info %}
-You can create up to 15 subusers through your account. If you need more subusers, please contact <a href="https://support.sendgrid.com">SendGrid support</a>.
+You can create up to 15 subusers through your account. If you need more subusers, please contact <a href="{{site.support_url}}">SendGrid support</a>.
 {% endinfo %}
 
 Subusers are SendGrid accounts that belong to a parent account. They have their own permissions and credit limits, which you assign as you create the subusers. Subusers are provided in order to help you segment your email sending and API activity. We suggest our customers create subusers for each of the different types of emails they send. This often means one subuser for transactional emails and one for marketing emails; however some of our customers will break up their sending across multiple subusers in order to segment the statistics for each type or function of email they send.
@@ -37,7 +33,7 @@ To create a subuser, click the “Create New Subuser” button at the top of the
 When you’re done entering information, click the blue “Create Subuser” button at the top of the subuser window. You will be taken to the subuser’s profile page.
 
 {% info %}
-You can have 15 subusers. If you need more, please contact <a href="https://support.sendgrid.com">SendGrid support</a>.
+You can have 15 subusers. If you need more, please contact <a href="{{site.support_url}}">SendGrid support</a>.
 {% endinfo %}
 
 <strong>Username</strong> - The username your subuser will use to send email and access the API.
@@ -60,14 +56,14 @@ The Collect Sample Rate is the number of emails SendGrid will allow your account
 For example, if you set the Collect Sample Rate at 100, then you will receive a copy of every 100th email this subuser sends.
 
 {% info %}
-Keep in mind that the sending reputation of any subuser on an IP address will affect the reputation of other subusers on the same IP. Free, Lite, and Bronze accounts share an IP address with other users on the same account level. Upgrading to Silver or higher includes a dedicated IP address.
+Keep in mind that the sending reputation of any subuser on an IP address will affect the reputation of other subusers on the same IP. All account plans below Pro 100k share an IP address with other users on the same account level. Upgrading to Pro 100k plan or higher includes a dedicated IP address.
 {% endinfo %}
 
-<strong>IP Addresses</strong> - When you create a SendGrid account your account is assigned to an IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and either assigned IP addresses to them or set up <a href="https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/ip_pools.html">IP Pools</a>.
+<strong>IP Addresses</strong> - When you create a SendGrid account your account is assigned to an IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and either assigned IP addresses to them or set up <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html">IP Pools</a>.
 
 We give you the same functionality when you create your subusers. Simply select the IP address you would like this subuser to send from. We will show you which other users are assigned to the same IP address, so you can keep like senders together.
 
-If you need more IP addresses, please contact <a href="https://support.sendgrid.com">SendGrid support</a>.
+If you need more IP addresses, please contact <a href="{{site.support_url}}">SendGrid support</a>.
 
 {% anchor h2 %}
 Optional Profile Information
@@ -75,9 +71,9 @@ Optional Profile Information
 
 We do not require this information for your subusers, but we suggest that you fill out as much of this information as possible to improve the deliverability for this subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your subuser directly if we notice anything on their account.
 
-<strong>First Name</strong> - This is the first name of the representative from your company who should receive contacts from SendGrid.
+<strong>First Name</strong> - The first name of the person responsible for this subuser.
 
-<strong>Last Name</strong> - This is the last name of the representative from your company who should receive contacts from SendGrid.
+<strong>Last Name</strong> - The last name of the person responsible for this subuser.
 
 <strong>Company</strong> - The name of your subuser’s company.
 
@@ -102,4 +98,4 @@ We do not require this information for your subusers, but we suggest that you fi
 Export Subuser Information
 {% endanchor %}
 
-If you would like to see how your subusers are performing in comparison to each other, simply click on the “Export” button on the main subuser page. This will create a CSV file that will have each subuser’s reputation, number of requests each subuser made this month, and the number of requests each subuser made last month.
+If you would like to see how your subusers are performing in comparison to each other, simply click on the “Export” button on the <a href="https://app.sendgrid.com/settings/subusers">main subuser page</a>. This will create a CSV file that will have each subuser’s reputation, number of requests each subuser made this month, and the number of requests each subuser made last month.

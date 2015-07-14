@@ -172,7 +172,7 @@ Follow these steps to enable Mobile Services from the Windows Azure interface:
 Now you need to add a table to the database:
 
 1.	Click on the name of your mobile service to access its settings
-2.	Click DATA, then Add a Table 
+2.	Click DATA, then Add a Table
 3.	Choose a table name, update permissions and click COMPLETE
 ![Choose]({{root_url}}/images/azure_12.png)
 
@@ -250,11 +250,7 @@ NSString *text = @"%20";
 NSString *subject = [itemText.text stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
 // Generate the Web API call
-<<<<<<< HEAD:source/Integrate/Partners/Tutorials/WindowsAzure.md
 NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
-=======
-NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.sendgrid.com/api/mail.send.json?to=%@&from=%@&fromname=%@&subject=%@&text=%@&api_user=%@&api_key=%@",to, from, fromname, subject, text, username, apikey]];
->>>>>>> f4202064a43620816d16671c073ad89d7e833dfa:source/Integrate/Partners/WindowsAzure.md
 
 // This writes the composed URL in the XCode console for debugging purposes
 NSLog(@"URL %@",url);

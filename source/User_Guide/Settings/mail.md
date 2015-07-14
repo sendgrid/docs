@@ -10,11 +10,7 @@ navigation:
   show: true
 ---
 
-{% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/API_Reference/Web_API/mail.html) or [SMTP Relay]({{root_url}}/Glossary/smtp_relay.html). 
+Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/API_Reference/Web_API/mail.html) or [SMTP Relay]({{root_url}}/Glossary/smtp_relay.html).
 
 {% anchor h2 %}
 Address Whitelist
@@ -35,7 +31,7 @@ BCC
 {% endanchor %}
 
 {% warning %}
-With this setting turned on, you will be charged an extra credit for every email you send. 
+With this setting turned on, you will be charged an extra email for every email you send.
 {% endwarning %}
 
 Automatically sends a blind carbon copy to an address for every email sent without adding that address to the header. Please note that only one email address may be entered in this field, if you wish to distribute BCCs to multiple addresses you will need to create a distribution group or use forwarding rules.
@@ -52,7 +48,7 @@ Settings
 Bounce Purge
 {% endanchor %}
 
-Allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists. 
+Allows you to set a schedule for SendGrid to automatically delete contacts from your soft and hard bounce suppression lists.
 
 {% anchor h3 %}
 Settings
@@ -107,7 +103,7 @@ Forward Bounce
 {% endanchor %}
 
 {% info %}
-You will not be charged email credits when these reports are forwarded to you.
+You will not be charged an email when these reports are forwarded to you.
 {% endinfo %}
 
 Activating this App allows you to specify an email address to which bounce reports are forwarded. Insert the email address to which you would like to receive these bounce reports.
@@ -118,14 +114,14 @@ Settings
 
 **Status** - On or Off
 
-**Email** - Click “edit” to add an email address where you’d like bounce emails to be forwarded. 
+**Email** - Click “edit” to add an email address where you’d like bounce emails to be forwarded.
 
 {% anchor h2 %}
 Forward Spam
 {% endanchor %}
 
 {% info %}
-You will not be charged email credits when these reports are forwarded to you.
+You will not be charged an email when these reports are forwarded to you.
 {% endinfo %}
 
 Activating this App allows you to specify an email address to which spam reports are forwarded. Insert the email address to which you would like to receive spam reports.
@@ -154,7 +150,7 @@ Settings
 
 **Status** - On or Off
 
-**Template** - Click “edit” to define your HTML template within the WYSIWYG editor. 
+**Template** - Click “edit” to define your HTML template within the WYSIWYG editor.
 
 {% anchor h2 %}
 Plain Content
