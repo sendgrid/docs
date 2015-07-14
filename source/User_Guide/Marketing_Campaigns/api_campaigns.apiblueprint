@@ -24,7 +24,10 @@ Campaigns related resources of the **Marketing Campaigns API**
 
 ## Campaigns [/campaigns]
 
-Note: A campaign requires a title, subject, sender ID, html content, plain content, and at least one list ID or segment ID.
+{% info %}
+A campaign requires a title to be created.
+In order to send or schedule the campaign, you will be required to provide a subject, sender ID, content (we suggest both html and plain text), and at least one list or segment ID.
+{% endinfo %}
 
 ### Create a Campaign [POST]
 
@@ -72,6 +75,7 @@ Note: A campaign requires a title, subject, sender ID, html content, plain conte
             "html_content": "html_content exceeds the 1MB limit"
             "plain_content": "plain_content exceeds the 1MB limit"
             "sender_id": "sender_id does not exist"
+            "sender_id": "sender_id is not a verified sender identity"
             "list_ids": "list_ids do not all exist"
             "segment_ids": "segment_ids do not all exist"
             "suppression_group_id": "suppression_group_id does not exist"
@@ -197,6 +201,7 @@ Returns an empty array if no campaigns exist
             "html_content": "html_content exceeds the 1MB limit"
             "plain_content": "plain_content exceeds the 1MB limit"
             "sender_id": "sender_id does not exist"
+            "sender_id": "sender_id is not a verified sender identity"
             "list_ids": "list_ids do not all exist"
             "segment_ids": "segment_ids do not all exist"
             "suppression_group_id": "suppression_group_id does not exist"
@@ -238,6 +243,7 @@ Returns an empty array if no campaigns exist
             "sender_id": "sender_id can't be blank"
             "plain_content": "plain_content can't be blank, please provide plain text or html content"
             "list_ids": "You must select at least 1 segment or 1 list to send to."
+            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
 
 + Response 403
 
@@ -293,6 +299,7 @@ Returns an empty array if no campaigns exist
             "list_ids": "You must select at least 1 segment or 1 list to send to."
             "send_at": "Please choose a future time for sending your campaign."
             "": "The JSON you have submitted cannot be parsed."
+            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
 
 + Response 403
 
@@ -334,6 +341,7 @@ Changes the send_at time for the specified campaign.
 
             "": "The JSON you have submitted cannot be parsed."
             "send_at": "Please choose a future time for sending your campaign."
+            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
 
 + Response 403
 
