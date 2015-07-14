@@ -63,12 +63,12 @@ Some say that the law may lead to a decrease in GDP due to the law potentially i
 **Additional Resources:**
 
 The following organizations can provide additional information and further actual advice on the general items listed above:
-Personal/Business Legal Counsel
-￼￼￼￼￼
-Federal Trade Commission (FTC)
-National Institute of Standards & Technology (NIST) Securities and Exchange Commission (SEC) Financial Industry Regulatory Authority (FINRA) White House
-Congress
-The California Attorney General
+
+* Personal/Business Legal Counsel
+￼￼* ￼￼￼Federal Trade Commission (FTC)
+* National Institute of Standards & Technology (NIST) Securities and Exchange Commission (SEC) Financial Industry Regulatory Authority (FINRA) White House
+* Congress
+* The California Attorney General
 
 **Sources and Additional Reading:**
 
