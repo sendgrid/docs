@@ -160,10 +160,11 @@ The date format needs to be one of the following: MM/DD/YYYY, MM/D/YYYY, M/D/YYY
 
 **Missing Header**
 
-Your CSV should always have a header row, that identifies each column. The rules for this are:
+Your CSV should always have a header row. The rules for this are:
 
-1. You must have an “email” column
-1. The other fields you include should be named the same as your custom fields. Capitalization doesn’t matter.
+1. You must have an “email” column.
+1. Capitalization doesn’t matter.
+1. The other columns can be blank.
 
 **Custom fields in your CSV but not your account**
 

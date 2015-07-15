@@ -21,7 +21,7 @@ FORMAT: 1A
 __NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipient endpoints should be passed exactly as returned to endpoints that require a recipient id.
 # Group Custom Fields
 
-## Custom Fields [/custom_fields]
+## Custom Fields [/contactdb/custom_fields]
 
 ### Create a Custom Field [POST]
 + Request (application/json)
@@ -58,7 +58,7 @@ __NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipie
                 ]
             }
 
-## Custom Fields [/custom_fields/{custom_field_id}]
+## Custom Fields [/contactdb/custom_fields/{custom_field_id}]
 
 + Parameters
     + custom_field_id (required, number) ... The id of the custom field
@@ -96,7 +96,7 @@ __NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipie
 
 # Group Reserved Fields
 
-## Reserved Fields [/reserved_fields]
+## Reserved Fields [/contactdb/reserved_fields]
 
 ### List fields that are reserved and can't be used for custom field names. [GET]
 
@@ -114,7 +114,7 @@ All recipient IDs are the URL-encoded email; for example if a recipient's email 
 
 
 
-## Lists [/lists]
+## Lists [/contactdb/lists]
 
 ### Create a List [POST]
 
@@ -168,7 +168,7 @@ Returned if one or more lists were deleted
             Returned if all the list ids are not valid
 
 
-## Lists [/lists/{list_id}]
+## Lists [/contactdb/lists/{list_id}]
 
 + Parameters
     + list_id (required,number) ... The ID of the list
@@ -236,7 +236,7 @@ Returned if one or more lists were deleted
 
 
 
-## Lists [/lists/{list_id}/recipients?page_size=100&page=1]
+## Lists [/contactdb/lists/{list_id}/recipients?page_size=100&page=1]
 
 + Parameters
     + list_id (required, integer) ... The ID of your list
@@ -266,7 +266,7 @@ Returned if one or more lists were deleted
 
             Returned if list id does not exist
 
-## Lists [/lists/{list_id}/recipients/{recipient_id}]
+## Lists [/contactdb/lists/{list_id}/recipients/{recipient_id}]
 
 + Parameters
     + list_id (required, number) ... The ID of your list
@@ -306,7 +306,7 @@ Returned if one or more lists were deleted
             Returned if the list id does not exist
             Returned if the recipient id does not exist
 
-## Lists [/lists/{list_id}/recipients]
+## Lists [/contactdb/lists/{list_id}/recipients]
 
 + Parameters
     + list_id (required, number) ... The ID of your list
@@ -339,7 +339,9 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
             Returned if the list id does not exist
 
 # Group Recipients
-## Recipients [/recipients]
+
+## Recipients [/contactdb/recipients]
+
 ### Add Single Recipient [POST]
 
 + Request (application/json)
@@ -387,7 +389,7 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
             Returned if the request body is not valid json
             Returned if none of the recipient emails are not defined or valid
 
-### Update Recipient [POST]
+### Update Recipient [PATCH]
 
 Updates one or more recipients. The body is a list of recipient objects.
 
@@ -438,7 +440,9 @@ Deletes one or more recipients. The body is a list of recipient ids to delete.
             Returned if the request body is not valid json
 
 
-## Recipients [/recipients?page_size=100&page=1]
+## Recipients [/contactdb/recipients?page_size=100&page=1]
+Note: Batch deletion of a page makes it possible to receive an empty page of recipients before reaching the end of
+the list of recipients. To avoid this issue; iterate over pages until a 404 is retrieved.
 
 + Parameters
     + page = `1` (optional, integer) ... page index of first recipients to return (default: 0, must be a positive integer)
@@ -461,7 +465,7 @@ Deletes one or more recipients. The body is a list of recipient ids to delete.
             Returned if page_size is less than 1 or greater than 1000
 
 
-## Recipients [/recipients/{recipient_id}]
+## Recipients [/contactdb/recipients/{recipient_id}]
 
 + Parameters
     + recipient_id (required,number) ... The ID of the recipient
@@ -518,7 +522,7 @@ Deletes one or more recipients. The body is a list of recipient ids to delete.
 
             Returned if record for recipient id does not exist
 
-## Recipients [/recipients/{recipient_id}/lists]
+## Recipients [/contactdb/recipients/{recipient_id}/lists]
 
 + Parameters
     + recipient_id (required,string) ... The ID of the recipient
@@ -546,7 +550,7 @@ Deletes one or more recipients. The body is a list of recipient ids to delete.
 
 
 
-## Recipients [/recipients/count]
+## Recipients [/contactdb/recipients/count]
 
 ### Get a Count of Recipients [GET]
 
@@ -556,7 +560,7 @@ Deletes one or more recipients. The body is a list of recipient ids to delete.
 
             {"recipient_count": 2}
 
-## Recipients Search [/recipients/search/?{field_name}=bob]
+## Recipients Search [/contactdb/recipients/search/?{field_name}=bob]
 Note: *"field_name" is a variable that is substituted for your actual custom field name from your recipient.
 Text fields must be url-encoded. Date fields are searchable only by unix timestamp (e.g. 2/2/2015 becomes 1422835200)*
 
@@ -603,7 +607,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 * Numbers: "eq", "lt", "gt"
 * Opens and Clicks: "eq" (opened), "ne" (not opened)
 
-## Segments [/segments]
+## Segments [/contactdb/segments]
 
 ### Create a Segment [POST]
 
@@ -611,13 +615,13 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 
     + Body
 
-            {"name":"Last Name Miller","conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
+            {"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
 
 + Response 201
 
     + Body
 
-            {"id":1,"name":"Last Name Miller","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
+            {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
 
 
 ### List All Segments [GET]
@@ -626,10 +630,10 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 
      + Body
 
-            {"segments":[{"id":1,"name":"Last Name Miller","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}]}
+            {"segments":[{"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}]}
 
 
-## Segments [/segments/{segment_id}]
+## Segments [/contactdb/segments/{segment_id}]
 
 + Parameters
     + segment_id (required,number) ... The ID of the segment
@@ -640,7 +644,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 
      + Body
 
-            {"id":1,"name":"Last Name Miller","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
+            {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
 
 + Response 404
 
@@ -655,13 +659,13 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 
      + Body
 
-            {"name":"The Millers","conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
+            {"name":"The Millers","list_id":5,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
 
 + Response 200
 
      + Body
 
-            {"id":5,"name":"The Millers","list_id":null,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
+            {"id":5,"name":"The Millers","list_id":5,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
 
 + Response 400
 
@@ -702,7 +706,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
 
             Returned if the segment id does not exist
 
-## Segments [/segments/{segment_id}/recipients]
+## Segments [/contactdb/segments/{segment_id}/recipients]
 
 + Parameters
     + segment_id (required,number) ... The ID of the segment
@@ -723,7 +727,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
             Returned if the segment id does not exist (TODO: Currently returning a 500)
 
 
-## Segments [/segments/{segment_id}/recipients?page_size=50&page=1]
+## Segments [/contactdb/segments/{segment_id}/recipients?page_size=50&page=1]
 
 + Parameters
     + segment_id (required, integer) ... The ID of your segment
