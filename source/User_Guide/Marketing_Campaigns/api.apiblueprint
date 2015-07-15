@@ -18,12 +18,16 @@ FORMAT: 1A
 
 # Contacts API
 
-__NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipient endpoints should be passed exactly as returned to endpoints that require a recipient id.
+{% info %}
+Treat recipient IDs as opaque values. The `id` value returned by recipient endpoints should be passed exactly as returned to endpoints that require a recipient id.
+{% endinfo %}
+
 # Group Custom Fields
 
 ## Custom Fields [/contactdb/custom_fields]
 
 ### Create a Custom Field [POST]
+
 + Request (application/json)
 
     + Body
@@ -34,7 +38,7 @@ __NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipie
 
     + Body
 
-            {"id":1,"name":"pet","type":"text"}
+            {"id":1, "name":"pet", "type":"text"}
 
 + Response 400
 
@@ -50,7 +54,7 @@ __NOTE: Treat recipient IDs as opaque values. The `id` value returned by recipie
 
     + Body
 
-            {"custom_fields":
+            { "custom_fields":
                 [
                     { "id": 1, "name": "birthday", "type": "date" },
                     { "id": 2, "name": "middle_name", "type": "text" },
@@ -724,7 +728,7 @@ Text fields must be url-encoded. Date fields are searchable only by unix timesta
     + Body
 
             Returned if the segment id is not valid
-            Returned if the segment id does not exist (TODO: Currently returning a 500)
+            Returned if the segment id does not exist
 
 
 ## Segments [/contactdb/segments/{segment_id}/recipients?page_size=50&page=1]
