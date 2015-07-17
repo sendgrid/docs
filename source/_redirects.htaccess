@@ -255,6 +255,7 @@ Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/doc
 Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/index.html https://sendgrid.com/docs/index.html
+Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/Utilities/list_assist.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
