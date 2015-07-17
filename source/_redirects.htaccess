@@ -252,6 +252,8 @@ Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/User_Guide/email_a
 Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
+Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
+Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
@@ -272,4 +274,3 @@ Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-
