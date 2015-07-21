@@ -11,9 +11,12 @@ navigation:
 FORMAT: 1A
 
 # Subusers
+Subusers resource
+
+# Group Subusers
 Subsers belonging to a parent user.
 
-## Subusers Collection [/v3/subusers?username={username}&limit={limit}&offset={offset}]
+## Subusers Collection [/subusers?username={username}&limit={limit}&offset={offset}]
 
 ### List all Subusers for a parent [GET]
 
@@ -45,7 +48,7 @@ Subsers belonging to a parent user.
               ]
             }
 
-## Subusers Collection [/v3/subusers]
+## Subusers Collection [/subusers]
 ### Create Subuser [POST]
 
 + Request (application/json)
@@ -70,7 +73,7 @@ Subsers belonging to a parent user.
                 "ips": ["1.1.1.1", "2.2.2.2"]
             }
 
-## Subuser Item [/v3/subusers/{subuser_name}]
+## Subuser Item [/subusers/{subuser_name}]
 ### Enable/disable a subuser [PATCH]
 
 + Request (application/json)
@@ -87,7 +90,7 @@ Subsers belonging to a parent user.
 
 + Response 204 (application/json)
 
-## Subusers Monitor [/v3/subusers/{subuser_name}/monitor]
+## Subusers Monitor [/subusers/{subuser_name}/monitor]
 
 + Parameters
 
@@ -149,7 +152,7 @@ Subsers belonging to a parent user.
 + Response 204
 
 
-## Subuser Reputations [/v3/subusers/reputations?usernames={usernames}&usernames={usernames}]
+## Subuser Reputations [/subusers/reputations?usernames={usernames}&usernames={usernames}]
 
 + Parameters
 
@@ -167,7 +170,7 @@ Subsers belonging to a parent user.
             ]
 
 
-## Subuser IPs [/v3/subusers/{subuser_name}/ips]
+## Subuser IPs [/subusers/{subuser_name}/ips]
 
 + Parameters
 
