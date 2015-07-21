@@ -740,7 +740,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
     end
 
     @@param_string = ""
-
+    @@attr_string = ""
     # we don't want any output from this method
     return ""
   end
