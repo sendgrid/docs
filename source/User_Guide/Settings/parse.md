@@ -22,7 +22,7 @@ You will see all of your individual host and URL pairs that you have set up in t
 Add Host & URL
 {% endanchor %}
 
-Inbound parse requires a hostname, where the emails will be sent, and the URL where SendGrid will send the data it builds from every email.
+Inbound Parse requires a hostname, where the emails will be sent, and the URL where SendGrid will send the data it builds from every email.
 
 **Host Name** - The domain where you have pointed an MX Record, so that email can be sent to and received by addresses at this hostname. For example: sgparse.example.com
 
