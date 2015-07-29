@@ -28,9 +28,9 @@ Unless you are comfortable changing your authoritative DNS provider, please foll
 Configuring CloudFlare
 {% endanchor %}
 
-First, login to your CloudFlare account. 
+First, login to your CloudFlare account.
 
-Click on the SETTINGS button on the Dashboard. 
+Click on the SETTINGS button on the Dashboard.
 
 ![CloudFlare Dashboard]({{root_url}}/images/cloudflare1.png)
 
@@ -65,12 +65,12 @@ Using Fastly
 [Sign up for Fastly](https://www.fastly.com/signup/) or login to your
 existing account.
 
-Click on the CONFIGURE button on the Dashboard. 
- 
+Click on the CONFIGURE button on the Dashboard.
+
 ![Fastly Dashboard]({{root_url}}/images/fastly1.png)
 
 Click NEW SERVICE
- 
+
 ![CloudFlare Service]({{root_url}}/images/fastly2.png)
 
 Set the options as follows:
@@ -83,8 +83,7 @@ Set the options as follows:
 
 Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid whitelabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
 
-Now configure your DNS provider with a CNAME record for email.example.com (e.g. your desired whitelabel domain) to global.prod.fastly.net.
+After provisioning, switch your CNAME for your domain(s) over to the TLS endpoint provided by Fastly support.
 
 Finally; contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
 tracking.
-
