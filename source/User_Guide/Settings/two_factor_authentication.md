@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 0
-title: Two Factor Authentication
+title: Multifactor Authentication
 seo:
-  title: Two Factor Authentication
-  keywords: multi factor authentication, two factor authentication
-  description: Setup multiple authentication for your SendGrid login.
+  title: Multifactor Authentication
+  keywords: multi factor authentication, two factor authentication, Multifactor, multi-factor
+  description: Setup multifactor authentication for your SendGrid login.
 navigation:
   show: true
 ---
