@@ -55,9 +55,7 @@ Filtering The Activity Feed
 
 **By Event** - If you’re looking into a single type of event, simply click the checkbox next to “All Filters” and then select the individual event types that you are looking for. The activity feed will refresh with only the event types you selected.
 
-**By Date** - In order to change the date range for your event feed, click the calendar icon at the top right corner of the page. The left calendar is for your start date, the right calendar is for the end date. Your events will be shown including the start and end dates.
-
-{% anchor h2 %
+{% anchor h2 %}
 Searching Within Your Email Activity
 {% endanchor %}
 

@@ -184,6 +184,8 @@ Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/do
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
+Redirect 301 /User_Guide/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html#-Using-Fastly
 Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
 Redirect 301 /User_Guide/Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/Glossary/email_error_messages.html
