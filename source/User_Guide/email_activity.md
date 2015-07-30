@@ -22,21 +22,21 @@ Email activity only shows the most recent 7 days, up to 500 activities. In order
 Email Events
 {% endanchor %}
 
-You will be able to see data about the following types of email events in the Email Activity Feed
+You will be able to see data about the following types of email events in the Email Activity Feed:
 
 **[Processed]({{root_url}}/Glossary/request.html)** - Requests from your website, application, or mail client via SMTP Relay or the API that SendGrid processed.
 
 **[Clicks]({{root_url}}/Glossary/clicks.html)** - Whenever a recipient clicks one of the Click Tracked links in your email.
 
-**[Delivered]({{root_url}}/Glossary/deliveries.html)** - An email that was delivered to a recipient
+**[Delivered]({{root_url}}/Glossary/deliveries.html)** - An email that was delivered to a recipient.
 
-**[Opens]({{root_url}}/Glossary/opens.html)** - Whenever an email is opened by a recipient
+**[Opens]({{root_url}}/Glossary/opens.html)** - Whenever an email is opened by a recipient.
 
-**Unsubscribes** - Whenever a recipient unsubscribes from your emails
+**Unsubscribes** - Whenever a recipient unsubscribes from your emails.
 
-**Group Unsubscribes** - When a recipient unsubscribes from a suppression group
+**Group Unsubscribes** - When a recipient unsubscribes from a suppression group.
 
-**Group Resubscribes** - When a recipient resubscribes themselves to a suppression group
+**Group Resubscribes** - When a recipient resubscribes themselves to a suppression group.
 
 **Deferred** - The recipient mail server asked SendGrid to stop sending emails so fast.
 
@@ -53,7 +53,7 @@ email previously bounced, or that recipient has marked your email as spam. For m
 Filtering The Activity Feed
 {% endanchor %}
 
-**By Event** - If you are looking into only a single type of event, simply click the checkbox next to “All Filters” and then select the individual event types that you are looking for. The activity feed will refresh with only the events of the types that you selected.
+**By Event** - If you’re looking into a single type of event, simply click the checkbox next to “All Filters” and then select the individual event types that you are looking for. The activity feed will refresh with only the event types you selected.
 
 {% anchor h2 %}
 Searching Within Your Email Activity

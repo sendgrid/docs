@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-[Spam reports]({{root_url}}/Glossary/spam_reports.html) happen when a recipient indicates that they think your email is [spam]({{root_url}}/Glossary/spam.html) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date. 
+[Spam reports]({{root_url}}/Glossary/spam_reports.html) happen when a recipient indicates that they think your email is [spam]({{root_url}}/Glossary/spam.html) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Spam Reports by Date
@@ -27,4 +27,4 @@ When you select the checkboxes next to the recipient names or select all, using 
 {% anchor h2 %}
 Download Spam Reports as CSV
 {% endanchor %}
-You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.

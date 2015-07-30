@@ -52,16 +52,17 @@ One email credit will be charged for every monitor email that is sent.
 
 <strong>Email Monitor</strong> - By default, this feature is off. To turn it on, click the “off” button. You will be shown a form that allows you to set the frequency that SendGrid will test emails and the address to which these emails will be forwarded.
 
-The Collect Sample Rate is the number of emails SendGrid will allow your account to send before copying the email address you set on the next email sent.
-For example, if you set the Collect Sample Rate at 100, then you will receive a copy of every 100th email this subuser sends.
+The “Collect Sample Rate” is the number of emails SendGrid will allow your account to send before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100, then you will receive a copy of every 100th email this subuser sends.
 
 {% info %}
 Keep in mind that the sending reputation of any subuser on an IP address will affect the reputation of other subusers on the same IP. All account plans below Pro 100k share an IP address with other users on the same account level. Upgrading to Pro 100k plan or higher includes a dedicated IP address.
 {% endinfo %}
 
-<strong>IP Addresses</strong> - When you create a SendGrid account your account is assigned to an IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and either assigned IP addresses to them or set up <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html">IP Pools</a>.
+<strong>IP Addresses</strong>
 
-We give you the same functionality when you create your subusers. Simply select the IP address you would like this subuser to send from. We will show you which other users are assigned to the same IP address, so you can keep like senders together.
+When you create a SendGrid account, your account is assigned to an IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and assigned IP addresses to them or set up <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html">IP Pools</a>.
+
+We give you the same functionality when you create your subusers. Simply select the IP address you would like this subuser to send from. We will show you which other users are assigned to the same IP address, so you can keep similar senders together.
 
 If you need more IP addresses, please contact <a href="{{site.support_url}}">SendGrid support</a>.
 
@@ -69,7 +70,7 @@ If you need more IP addresses, please contact <a href="{{site.support_url}}">Sen
 Optional Profile Information
 {% endanchor %}
 
-We do not require this information for your subusers, but we suggest that you fill out as much of this information as possible to improve the deliverability for this subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your subuser directly if we notice anything on their account.
+We do not require this information for your subusers, but we suggest that you fill out as much as possible to improve the deliverability for this subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your subuser directly if we notice anything on their account.
 
 <strong>First Name</strong> - The first name of the person responsible for this subuser.
 
@@ -87,7 +88,7 @@ We do not require this information for your subusers, but we suggest that you fi
 
 <strong>Country</strong> - The country in which your subuser operates.
 
-<strong>Zip</strong> - The Zip code in which your subuser operates.
+<strong>Zip</strong> - The zip code in which your subuser operates.
 
 <strong>Company Phone Number</strong> - The phone number for your subuser’s business.
 

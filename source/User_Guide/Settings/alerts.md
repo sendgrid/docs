@@ -10,17 +10,17 @@ navigation:
   show: true
 ---
 
-You can setup alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
+You can set up alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
 
-For most alerts, you can choose to have the alert sent to you As Needed, Hourly, Daily, Weekly, or Monthly. The information contained in your alert will be for the last period of the alert. For example, if you choose weekly for the Stats alert, you will receive the stats for the last week.
+For most alerts, you can choose to have the alert sent to you as needed, hourly, daily, weekly, or monthly. The information contained in your alert will be for the last period of the alert. For example, if you choose weekly for the stats alert, you will receive the stats for the last week.
 
-You can also change which email address to which these alerts will be sent.
+You can also change which email address these alerts are sent to.
 
 {% anchor h2 %}
 Add Alert
 {% endanchor %}
 
-To add a new alert, click the large “+” or the “Add Alert” button. When the window appears, select the type of alert you would like to receive. Some alert have options for being sent when a certain threshold is met or when a time period is met.
+To add a new alert, click the large “+” or the “Add Alert” button. When the window appears, select the type of alert you would like to receive. Some alerts have options for being sent when a certain threshold is met or when a time period is met.
 
 {% anchor h2 %}
 Alerts

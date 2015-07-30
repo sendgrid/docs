@@ -18,9 +18,9 @@ Billing Details
 
 Your billing details show you what plan you have and how you will be billed by SendGrid.
 
-**Plan** - The plan you are currently using with Sendgrid
+**Plan** - The plan you are currently using with Sendgrid.
 
-**Price** - The price per month that you pay to use SendGrid
+**Price** - The price per month that you pay to use SendGrid.
 
 **Overage Price** - The price you pay per email when you send more emails than are available on your package.
 
@@ -30,7 +30,7 @@ Your billing details show you what plan you have and how you will be billed by S
 Invoices
 {% endanchor %}
 
-Your recent invoices will be shown in this section in a list ordered by date. You will be able to see the date you were billed, how much you were billed, and the status of that invoice.
+Your recent invoices are shown in this section in a list ordered by date. You are shown the date you were billed, how much you were billed, and the status of that invoice.
 
 {% anchor h2 %}
 Changing Your Plan

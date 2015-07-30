@@ -11,10 +11,10 @@ navigation:
 ---
 
 {% anchor h2 %}
-Click tracking
+Click Tracking
 {% endanchor %}
 
-Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your Whitelabeled link domain so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html).
+Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your whitelabeled link domain so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html).
 
 {% anchor h3 %}
 Settings
@@ -26,9 +26,9 @@ Settings
 Google Analytics
 {% endanchor %}
 
-For more information about using this app, please refer to Google’s URL Builder and their Blog post on Campaign Tracking.
+For more information about using this app, please refer to [Google’s URL Builder](https://support.google.com/analytics/answer/1033867?hl=en) and their article on "[Best Practices for Campaign Building](https://support.google.com/analytics/answer/1037445)".
 
-We default the settings to Google’s recommendations. Anything you enter into those fields in the Settings or via API will take precedence. For more information see [Google Analytics Demystified](https://support.sendgrid.com/hc/en-us/articles/200181468). 
+We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics Demystified](https://support.sendgrid.com/hc/en-us/articles/200181468).
 
 {% anchor h3 %}
 Settings
@@ -36,7 +36,7 @@ Settings
 
 **Status** - On or Off
 
-**Campaign Source** - Name of the referrer source. (e.g. Google, SomeDomain.com, Marketing EmailA)
+**Campaign Source** - Name of the referrer source. (e.g. Google, SomeDomain.com, Marketing Email)
 
 **Campaign Medium** - Name of the marketing medium. (e.g. Email)
 
@@ -54,7 +54,7 @@ Open Tracking
 If you are using domain whitelabeling, then your open tracking image will be served from your whitelabel domain instead of from SendGrid.net.
 {% endinfo %}
 
-Open Tracking adds an invisible image at the end of the email which can track email [opens]({{root_url}}/Glossary/opens.html). If the email recipient has images enabled on their email client, a request to SendGrid’s server for the invisible image is executed and an open event is logged. These Events are logged in your Statistics portal, the Email Activity interface, and are reported by the Event Webhook.
+Open Tracking adds an invisible image at the end of the email which can track email [opens]({{root_url}}/Glossary/opens.html). If the email recipient has images enabled on their email client, a request to SendGrid’s server for the invisible image is executed and an open event is logged. These events are logged in the  Statistics portal, Email Activity interface, and are reported by the Event Webhook.
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 
@@ -80,7 +80,7 @@ Settings
 
 **Replacement Tag** - Your custom defined tag for your templates. Use this to place your unsubscribe content wherever you want in your template. If you don’t provide this, your unsubscribe link will be automatically added to the bottom of your email.
 
-**HTML Unsubscribe Content** - The Information and HTML for your unsubscribe link. In this HTML, you should include the link text you would like displayed in your email within the tag, like so:
+**HTML Unsubscribe Content** - The information and HTML for your unsubscribe link. In this HTML, you should include the link text you would like displayed in your email within the tag, like so:
 
 {% codeblock lang:html %}
 <% Unsubscribe Here %>
