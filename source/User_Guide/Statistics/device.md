@@ -29,20 +29,19 @@ The clients report breaks down which devices and clients are most frequently use
   </tr>
   <tr>
     <td>Webmail</td>
-    <td>A web-based email client I.E. Yahoo, Google, AOL, or
-      Outlook.com.</td>
+    <td>A web-based email client (Yahoo, Google, AOL, Outlook.com, etc.).</td>
   </tr>
   <tr>
     <td>Phone</td>
-    <td>A smart phone; iPhone, Android, Blackberry, etc.</td>
+    <td>A smart phone (iPhone, Android, Blackberry, etc.).</td>
   </tr>
   <tr>
     <td>Tablet</td>
-    <td>A tablet computer: iPad, android based tablet, etc.</td>
+    <td>A tablet computer (iPad, android based tablet, etc.).</td>
   </tr>
   <tr>
     <td>Other</td>
-    <td>An unrecognized Device.</td>
+    <td>An unrecognized device.</td>
   </tr>
 </table>
 
