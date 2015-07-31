@@ -41,10 +41,10 @@ Subdomain
 This is the “prefix” of the domain that you are actually whitelabeling.
 
 {% info %}
-We actually suggest that you use the same subdomain as your domain whitelabel.
+We suggest that you use the same subdomain as your domain whitelabel.
 {% endinfo %}
 
-We will then prepend a second level subdomain similar to “o1”, incrementing the numeric value of this string as you add IP whitelabels to this subdomain.
+We will then prepend a second level subdomain similar to ```o1``` incrementing the numeric value of this string as you add IP whitelabels to this subdomain.
 
 {% anchor h3 %}
 Domain
@@ -61,7 +61,7 @@ Your domain whitelabel will not affect your email link whitelabel and vice versa
 The root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel.  Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
 
 {% anchor h3 %}
-Use new Domain
+Use New Domain
 {% endanchor %}
 
 Allows you to add a new domain to your whitelabel options.
@@ -70,7 +70,7 @@ Allows you to add a new domain to your whitelabel options.
 Default IP Whitelabel
 {% endanchor %}
 
-There is not default IP whitelabel. If you only have a single IP address, this will be the only IP address that SendGrid sends from on your behalf.
+There is no default IP whitelabel. If you only have a single IP address, this will be the only IP address that SendGrid sends from on your behalf.
 
 {% anchor h2 %}
 Creating an IP Whitelabel
@@ -78,29 +78,29 @@ Creating an IP Whitelabel
 
 When you enter the information for your IP whitelabel and click “Save”, SendGrid will update its own internal DNS to prepare for your whitelabel settings. This process may take up to 60 seconds.
 
-We will then give you the DNS A Record entry that you need to enter at your host or registrar to match the new IP address.
+We will then give you the DNS A record entry that you need to enter at your host or registrar to match the new IP address.
 
 {% anchor h2 %}
 Validate Your IP Whitelabel
 {% endanchor %}
 
 {% warning %}
-Your IP Whitelabel will not work properly until the A Record is propogated and validated by SendGrid.
+Your IP whitelabel will not work properly until the A record is propagated and validated by SendGrid.
 {% endwarning %}
 
-Once you have made the DNS changes, you need to validate your whitelabel.
+Once you have made the DNS changes, you need to validate your whitelabel:
 
 1. Return to IP whitelabels
 2. Click the whitelabel you just added (or the gear icon to the right of the whitelabel)
 3. Click “Validate”
 
-If everything is setup properly and the DNS records have propagated, then SendGrid will verify your whitelabel.
+If everything is set up properly and the DNS records have propagated, then SendGrid will verify your whitelabel.
 
 {% anchor h3 %}
 Viewing Your IP Whitelabel
 {% endanchor %}
 
-If you need to check the status of a whitelabel, you can see the “at a glance” information from the IP Whitelabel page. However, if you’re looking for more in-depth information or you need to find the DNS settings for your whitelabel then just click the gear icon next to the whitelabel and select “View”.
+If you need to check the status of a whitelabel, you can see the “at a glance” information from the IP Whitelabel page. However, if you’re looking for more in-depth information or you need to find the DNS settings for your whitelabel then just click the gear icon next to the whitelabel and select “View.”
 
 From this page you will be able to see all of the settings you entered when setting up your whitelabel, whether the whitelabel is valid, and all of the DNS settings you need for this whitelabel.
 
@@ -115,7 +115,7 @@ Deleting an IP Whitelabel
 {% endanchor %}
 
 {% warning %}
-Deleting an IP Whitelabel is permanent and can not be rolled back.
+Deleting an IP whitelabel is permanent and can not be rolled back.
 {% endwarning %}
 
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.

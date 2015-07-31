@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Email Link Whitelabels allow all of the click tracked links to be from your domain instead of sendgrid.net. It also will serve open tracking images from your domain. This helps in email deliverability because you are no longer relying on clicktracking being routed through a domain that you do not control. Spam filters and recipient servers will look at the links within emails to determine whether the email should be delivered and will use the reputation of the root domain to determine whether the links can be trusted.
+Email link whitelabels allow all of the click-tracked links to be from your domain instead of sendgrid.net. It also will serve open tracking images from your domain. This helps in email deliverability because you are no longer relying on clicktracking being routed through a domain that you do not control. Spam filters and recipient servers will look at the links within emails to determine whether the email should be delivered and will use the reputation of the root domain to determine whether the links can be trusted.
 
 {% anchor h2 %}
 Email Link Whitelabel Settings
@@ -20,13 +20,13 @@ Email Link Whitelabel Settings
 On Behalf Of User
 {% endanchor %}
 
-This setting lets you assign a whitelabel to a subuser account or the account you are currently using. A subuser can set up their own whitelabel, of course. However, if the parent account assigns a whitelabel to a subuser, that subuser will not be able to edit or modify the settings of the assigned whitelabel.
+This setting lets you assign a whitelabel to a subuser account or the account you are currently using. A subuser can set up their own whitelabel, however, if the parent account assigns a whitelabel to a subuser, that subuser will not be able to edit or modify the settings of the assigned whitelabel.
 
 {% anchor h3 %}
 Subdomain
 {% endanchor %}
 
-This is the “prefix” of the root domain that you are actually whitelabeling. Historically, we have suggested prefixes like “link”, “click”, etc. However, you can use whatever subdomain you would like to use.
+This is the “prefix” of the root domain that you are actually whitelabeling. Historically, we have suggested prefixes like “link,” “click,” etc. However, you can use whatever subdomain you would like to use.
 
 {% warning %}
 The email link whitelabel subdomain MUST be different from your domain whitelabel subdomain.
@@ -64,7 +64,7 @@ Your default whitelabel is your fallback for click and open tracking when you se
 Creating An Email Link Whitelabel
 {% endanchor %}
 
-When you enter the information for your whitelabel and click “Save”, we will show you the DNS entries that you need to make to match the settings you provided.
+When you enter the information for your whitelabel and click “Save,” we will show you the DNS entries that you need to make to match the settings you provided.
 
 {% anchor h2 %}
 Validate Your Email Link Whitelabel
@@ -74,7 +74,7 @@ Validate Your Email Link Whitelabel
 SendGrid will not start using your  whitelabels until they are validated! Until they are validated, you will see that all your links point to click track urls on sendgrid.net.
 {% endwarning %}
 
-Once you have made the DNS changes, you need to validate your whitelabel.
+Once you have made the DNS changes, you need to validate your whitelabel:
 
 1. Return to the Email Link Whitelabels page
 2. Click the whitelabel you just added (or the gear icon to the right of the whitelabel)
@@ -86,7 +86,7 @@ If everything is setup properly and the DNS records have propagated, then SendGr
 Managing and Viewing Your Email Link Whitelabel
 {% endanchor %}
 
-If you need to check the status of a whitelabel, you can see the “at a glance” information from the Email Link Whitelabel page. However, if you’re looking for more in-depth information or you need to find the DNS settings for your whitelabel then just click the gear icon next to the whitelabel and select “View”.
+If you need to check the status of a whitelabel, you can see the “at a glance” information from the Email Link Whitelabel page. However, if you’re looking for more in-depth information or you need to find the DNS settings for your whitelabel then just click the gear icon next to the whitelabel and select "View."
 
 From this page you will be able to see all of the settings you entered when setting up your whitelabel, whether the whitelabel is valid, and all of the DNS settings you need for this whitelabel.
 

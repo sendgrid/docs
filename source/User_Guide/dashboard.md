@@ -24,9 +24,9 @@ If you want to see all of your email statistics, go to your [Statistics Page]({{
 Activity Feed
 {% endanchor %}
 
-Your activity feed will show you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can even search your activity by email address.
+Your Activity Feed shows you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
 
-If you would like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see our email activity documentation.
+If you’d like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see the email activity documentation.
 
 {% anchor h2 %}
 Transactional Emails
@@ -38,7 +38,7 @@ This box shows you the information for sending transactional emails via SendGrid
 Advanced Suppression Manager
 {% endanchor %}
 
-The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and Integrate your Suppression Groups.
+The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your suppression groups.
 
 {% anchor h2 %}
 Help Links
