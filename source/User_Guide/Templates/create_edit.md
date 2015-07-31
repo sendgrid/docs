@@ -85,6 +85,7 @@ Activate Your Template
 ![](/images/template_engine_11.png "Make Your Template Active")
 
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
+
 Select the “Make Active” option from the gear icon menu next to the save button.
 
 {% anchor h2 %}

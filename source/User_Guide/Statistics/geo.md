@@ -29,10 +29,10 @@ Activity Map
 The activity map gives you a visualization of your metric based statistics on an actual map. From the world view, you can click a country to see more specific geographic locations.
 
 {% anchor h2 %}
-Figures By Location
+Figures by Location
 {% endanchor %}
 
-The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your stats (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the 2nd week of April in California, this is a great place to check.
+The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your stats (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April in California, this is a great place to check.
 
 This table will refresh with new or adjusted data based on the various filters available at the top of the page. You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 
