@@ -24,7 +24,7 @@ There are a number of pre-made integrations for the SendGrid Event Webhook that 
 Setup
 {% endanchor %}
 
-To setup the Event Webhook via our web interface, login and go to the [settings page]({{site.app_url}}/settings), click on Show Disabled Apps, click the Event Notification app, then click on settings. Check the boxes next to the type of events that you want posted to your web server, then enter in the URL you have setup to receive POSTs from our servers when an event occurs.
+To setup the Event Webhook via our web interface, login and go to the [mail settings page]({{site.app_url}}/settings/mail_settings) and click on the Event Notification setting, then click on the "edit" link. Check the boxes next to the type of events that you want posted to your web server, then enter in the URL you have setup to receive POSTs from our servers when an event occurs.
 
 The Event Webhook may also be setup by using our [Filter Settings Endpoint]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification).
 
