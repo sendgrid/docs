@@ -28,9 +28,6 @@ The importer will not save your template for later use.
 
 We have also included a template importer option, just click the "Importer" tab, where you can paste your HTML in for one-time use.
 
-![]({{root_url}}/images/templates_6.png "Choose a Template")
-
-
 {% anchor h2 %}
 Add Your Content and Manage Your Settings
 {% endanchor %}
