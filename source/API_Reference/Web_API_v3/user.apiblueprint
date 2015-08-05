@@ -1,0 +1,61 @@
+---
+layout: page
+weight: 100
+title: Users API
+seo:
+  description: View and Manage your user profile via the SendGrid v3 API
+  title: User API
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+# Users
+
+## User Profile [/v3/user/profile]
+
+### GET User Profile [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+        {
+            "address":"814 West Chapman Avenue",
+            "city":"Orange",
+            "company":"SendGrid",
+            "country":"US",
+            "first_name":"Test",
+            "last_name":"User",
+            "phone":"555-555-5555",
+            "state":"CA",
+            "website":"http://www.sendgrid.com",
+            "zip":"92868"
+        }
+
+### PATCH User Profile [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+        {
+          "city": "Orange"
+        }
+
++ Response 200 (application/json)
+
+    + Body
+
+        {
+            "address":"814 West Chapman Avenue",
+            "city":"Orange",
+            "company":"SendGrid",
+            "country":"US",
+            "first_name":"Test",
+            "last_name":"User",
+            "phone":"555-555-5555",
+            "state":"CA",
+            "website":"http://www.sendgrid.com",
+            "zip":"92868"
+        }

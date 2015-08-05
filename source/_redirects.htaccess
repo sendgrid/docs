@@ -170,7 +170,7 @@ Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Sett
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Legacy-Email-Template
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
