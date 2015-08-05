@@ -80,7 +80,7 @@ If number of maximum keys is reached, HTTP 403 will be returned.
                 ]
             }
 
-## API Key [/api_keys/{api_key}]
+## API Key [/api_keys/{api_key_id}]
 ### Revoke an existing API Key [DELETE]
 Authentications using this API Key will fail
 after this request is made, with some small propogation delay.

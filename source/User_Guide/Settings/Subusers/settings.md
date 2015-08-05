@@ -19,9 +19,9 @@ Subuser Behavior
 
 The top block of information on your settings page is designed to give you at-a-glance information about your subuser’s sending behavior within SendGrid. It is important to keep an eye on your subuser’s behavior, because you are responsible for all the subusers you create.
 
-**Requests** - the number of API requests that this subuser made during the current month. This is not necessarily individual email sends as one request can be used to send multiple emails.
+**Requests** - The number of API requests that this subuser made during the current month. This is not necessarily individual email sent since one request can be used to send multiple emails.
 
-**Reputation** - If a subuser’s SendGrid Reputation goes down, it is likely that subuser will no longer be able to send emails through SendGrid.
+**Reputation** - If a subuser’s [reputation]({{root_url}}/Glossary/reputation_monitoring.html) goes down, it is likely that subuser will no longer be able to send emails through SendGrid.
 
 **Opens** - The number of times this subuser’s emails were opened this month.
 
@@ -32,9 +32,9 @@ The top block of information on your settings page is designed to give you at-a-
 Credit Allocation
 {% endanchor %}
 
-Each subuser will be automatically configured to have access to Unlimited email credits from your parent account. This is so that your subusers can send emails from the moment you create them. It is up to you to set how these credits are allocated once you’ve create the subusers account and we give you a couple of optoins.
+Each subuser will be automatically configured to have access to Unlimited email credits from your parent account. This is so that your subusers can send emails from the moment you create them. It is up to you to set how these credits are allocated once you’ve create the subuser’s account and we give you a couple of options.
 
-**Unlimited Credits** - The default Credit Allocation setting for all new subusers. This allows your subuser to send as many emails as they need, up to and through the limitations on your parent account.
+**Unlimited Credits** - The default credit allocation setting for all new subusers. This allows your subuser to send as many emails as they need, up to and through the limitations on your parent account.
 
 **Recurring Credits** - Allows a certain number of email credits to be allocated to this user per day, week, or month - use it or lose it. Once the limit is reached, the user’s requests to send emails will be denied by SendGrid.
 
@@ -45,18 +45,18 @@ Allocating or Removing Credits From a Subuser
 {% endanchor %}
 
 {% warning %}
-This feature only makes changes to a subuser when the Nonrecurring Credit option is selected for this subuser.
+This feature only makes changes to a subuser when the nonrecurring credit option is selected for this subuser.
 {% endwarning %}
 
-If your subuser has been allocated Nonrecurring Credits, then this feature will allow you to allocate credits to, or remove credits from this subuser account. Simply click the “Change Credit Rules” button and then choose whether to add or subtract credits for this subuser.
+If your subuser has been allocated nonrecurring credits, then this feature will allow you to allocate credits to, or remove credits from this subuser account. Simply click the “Change Credit Rules” button and then choose whether to add or subtract credits for this subuser.
 
 {% anchor h2 %}
 Select Whitelabel
 {% endanchor %}
 
-Just as your parent account will send from a specific IP address, so will your subuser accounts. This allows you flexibility with your subusers so that you can segment them by email type, usage, or any number of other reasons to specific IPs therefore protecting the reputation of the IP addresses you have for other email types or usages from each other.
+Just as your parent account will send from a specific IP address, so will your subuser accounts. This allows you flexibility with your subusers so that you can segment them by email type, usage, or any number of other categories to protect the reputation of the IP addresses you have from each other.
 
-When you create your subuser, you are given the option to select which IP address they should send from, but if you ever need to change the IP address, you can do it from here.  If you choose multiple IPs, then SendGrid will alternate between the IP addresses to send emails for this subuser.
+When you create your subuser, you are given the option to select which IP address they should send from, but if you ever need to change the IP address, you can do it from here. If you choose multiple IPs, SendGrid will alternate between the IP addresses to send emails for this subuser.
 
 {% anchor h2 %}
 Email Monitor
@@ -66,10 +66,9 @@ Email Monitor
 One email credit will be charged for every monitor email that is sent
 {% endwarning %}
 
-When you turn this feature is on, by clicking the “off” button, you will be shown a form that allows you to set the frequency SendGrid will test emails and the address to which these emails will be forwarded.
+This feature is also turned off by default. When you turn this feature is on, by clicking the “off” button, you will be shown a form that allows you to set the frequency SendGrid will test emails and the address to which these emails will be forwarded.
 
-The Collect Sample Rate is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent.
-For example, if you set the Collect Sample Rate at 100 then you will receive a copy of every 100th email this subuser sends.
+The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this subuser sends.
 
 {% anchor h2 %}
 Disable Subuser Account
@@ -87,4 +86,4 @@ Delete Account
 Deleting a subuser account cannot be undone. Please make sure that you are ready to delete this account before you delete it. All access for this subuser will immediately be revoked upon deletion.
 {% endwarning %}
 
-To delete a subuser account, click the red Delete button and click the “Confirm” button in the confirmation window that pops up. This cannot be undone, so be sure that you actually want to delete this account!
+To delete a subuser account, click the red "Delete" button and click the “Confirm” button in the confirmation window that pops up. This cannot be undone, so be sure that you actually want to delete this account!

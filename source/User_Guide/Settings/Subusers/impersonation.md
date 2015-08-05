@@ -10,16 +10,16 @@ navigation:
   show: true
 ---
 
-When you set up subusers, whether for segmentation of sending or for other functional reasons, you may run into a point in time when it would be useful to see what the subuser’s settings are and to see what the subuser can see in the customer portal.
+When you set up subusers, whether for segmentation of sending or for other functional reasons, it may be useful to see what the subuser’s settings are and to see what the subuser can see in the customer portal.
 
-To aide you in that effort, we have made it so that you can impersonate a subuser from your parent account and then manage the subuser the same way as if you had logged in with that user’s credentials, without having to log out of your parent account.
+To assist you,, we’ve made it so you can impersonate a subuser from your parent account and then manage the subuser the same way as if you had logged in with that user’s credentials, without having to log out of your parent account.
 
 {% anchor h2 %}
 How To Impersonate A Subuser
 {% endanchor %}
 
-1. Log into the customer portal, if you are not already logged in.
-2. Go to the top left corner of the portal screen and click your name just above the navigation menu
+1. Log into the customer portal if you aren’t already logged in.
+2. Go to the top left corner of the portal screen and click on your name just above the navigation menu.
 3. Click “Switch User”
 4. Choose the subuser you want to impersonate by clicking that subuser’s name
 

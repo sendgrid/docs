@@ -30,4 +30,4 @@ When you select the checkboxes next to the recipient names or select all, using 
 Download Invalid Emails as CSV
 {% endanchor %}
 
-You can download your list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+You can download your list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.

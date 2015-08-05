@@ -61,7 +61,7 @@ indextank_index:  docs #set this to the index name you set on indexden.com
 password_requirements: "/Classroom/Basics/password.html"
 app_url: "https://app.sendgrid.com"
 blog_url: "https://sendgrid.com/blog"
-marketing_email_url: "https://app.sendgrid.com/newsletter"
+marketing_email_url: "https://sendgrid.com/newsletter"
 pricing_url: "https://sendgrid.com/pricing"
 site_url: "https://sendgrid.com"
 support_url: "https://support.sendgrid.com"

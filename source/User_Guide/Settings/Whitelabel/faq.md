@@ -33,13 +33,13 @@ What is domain whitelabeling?
 What is email link whitelabeling?
 {% endanchor %}
 
-[Email Link whitelabeling]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) adds a CNAME record for a subdomain that you choose, which masks click and open-tracking links to your domain rather than a SendGrid domain. This increases deliverability, builds trust, and strengthens your brand in your emails.
+[Email Link whitelabeling]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) adds a CNAME record for a subdomain that you choose, which masks click and open tracking links to your domain rather than a SendGrid domain. This increases deliverability, builds trust, and strengthens your brand in your emails.
 
 {% anchor h2 %}
 What is IP whitelabeling?
 {% endanchor %}
 
-[IP whitelabeling]({{root_url}}/User_Guide/Settings/Whitelabel/ips.html) adds an A-record on a subdomain that points directly to your unique sending IP address. This further increases trust and improves deliverability of your email.
+[IP whitelabeling]({{root_url}}/User_Guide/Settings/Whitelabel/ips.html) adds an A record on a subdomain that points directly to your unique sending IP address. This further increases trust and improves deliverability of your email.
 
 {% anchor h2 %}
 How do I whitelabel?
@@ -48,7 +48,7 @@ How do I whitelabel?
 Each whitelabel type is a two-step process:
 
 1. SendGrid will generate DNS records that you must add to your domain host (GoDaddy, Network Solutions, Hover, etc.).
-2. Click the gear icon in-line with your domain name on the main whitelabel page, then select “validate” in the dropdown list to initiate a check that ensures the records on your DNS host match the records SendGrid generated.
+2. Click the gear icon in line with your domain name on the main whitelabel page, then select “validate” in the dropdown list to initiate a check that ensures the records on your DNS host match the records SendGrid generated.
 
 {% anchor h2 %}
 Can I whitelabel multiple domains?
@@ -74,7 +74,7 @@ When you upgrade, you will need to create new subdomains for IP, link, or domain
 Why whitelabel?
 {% endanchor %}
 
-Have you ever noticed that email you send through your SendGrid account displays “sent on behalf of” or “via sendgrid.me” and wondered how to get rid of it? Have you noticed that click-tracking links point to a SendGrid domain rather than your domain? Whitelabeling effectively masks SendGrid's delivery and click/open tracking to your domain, giving your emails a consistent and professional appearance where all links and sources point back to your domain.
+Have you ever noticed that email you send through your SendGrid account displays “sent on behalf of” or “via sendgrid.me” and wondered how to get rid of it? Have you noticed that click tracking links point to a SendGrid domain rather than your domain? Whitelabeling effectively masks SendGrid's delivery and click/open tracking to your domain, giving your emails a consistent and professional appearance where all links and sources point back to your domain.
 
 {% anchor h2 %}
 What do I do if I have more than 10 IPs?

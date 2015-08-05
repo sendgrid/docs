@@ -22,17 +22,17 @@ This section will show you the contact information you put in when you created y
 
 **Last Name** - The last name of the person responsible for this subuser.
 
-**Email Address** - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
+**Email Address** - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service](https://sendgrid.com/tos). Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
 
 {% anchor h2 %}
 Username & Password
 {% endanchor %}
 
-We do not require this information for your subusers, but we suggest that you fill out as much of this information as possible to improve the deliverability for this subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your subuser directly if we notice anything on their account.
+We do not require this information for your subusers, but we suggest that you fill out as much as possible to improve the deliverability for this subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your subuser directly if we notice anything on their account.
 
 **Username** - The username your subuser will use to send email and access the API.
 
-**Password** - The password your subuser will use to access SendGrid.com
+**Password** - The password your subuser will use to access SendGrid.com.
 
 **Confirm Password** - This field only shows when you’re changing your password. It is used to confirm the password above was typed correctly.
 
