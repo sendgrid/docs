@@ -10,7 +10,7 @@ seo:
   description: Use our Drag and Drop editor to swiftly build out your campaign content with predefined modules. Edit individual modules easily in the style sidebar, and reorder modules with a simple drag of your mouse.
 ---
 
-The Drag and Drop editor helps you swiftly build your campaign content with predefined modules. Edit individual modules easily in the style sidebar, and reorder modules with a simple drag of your mouse.
+The Drag & Drop editor helps you swiftly build your campaign content with predefined modules. Edit individual modules easily in the style sidebar, and reorder modules with a simple drag of your mouse.
 
 ![]({{root_url}}/images/DnD_toggle_off.png) <br />
 ![]({{root_url}}/images/DnD_toggle_on.png) <br />
@@ -20,7 +20,7 @@ The Drag and Drop editor helps you swiftly build your campaign content with pred
 Getting Started
 {% endanchor %}
 
-To get started, turn on the Drag & Drop toggle in the Settings tab, located below the campaign name field. This will add a modules group to the Build tab, and turn on a fourth tab option called “Style” which houses the Drag & Drop modules.
+To get started, turn on the Drag & Drop toggle in the Settings tab, located below the campaign name field. This will add a modules group to the Build tab, and turn on a fourth tab option called “Style” which houses the Drag & Drop modules, as well as two settings panels, Email Body and Content Container, for editing the area around the modules, such as content width and padding, font family and color, and background color.
 
 Modules are blocks of content that can be dragged into the main editor and dropped above or below other moveable modules.
 
@@ -35,7 +35,7 @@ We populate every campaign with both pre-header and footer modules.
 {% endinfo %}
 
 {% warning %}
-Pre-header and footer modules are locked modules and cannot be removed.
+<strong>Pre-header</strong> and <strong>footer</strong> modules are locked modules and cannot be removed.
 {% endwarning %}
 
 Pre-header and footer are important pieces of any email campaign, where information like sender details and unsubscribe links are included. Individual settings for these include background color and padding or margin spacing.
