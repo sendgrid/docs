@@ -11,9 +11,6 @@ navigation:
 FORMAT: 1A
 
 # Subusers
-Subusers resource
-
-# Group Subusers
 Subsers belonging to a parent user.
 
 ## Subusers Collection [/subusers?username={username}&limit={limit}&offset={offset}]
