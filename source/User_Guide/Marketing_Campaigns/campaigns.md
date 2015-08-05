@@ -160,6 +160,10 @@ While the preview functionality we provide will cover many use cases, it will no
 Save or Send Your Campaign
 {% endanchor %}
 
+{% info %}
+You cannot resend a campaign once it has been sent!
+{% endinfo %}
+
 You have the option to save your campaign, for editing later. Once you are ready to send, you can click the “send” button in the top right corner of this page. If you have chosen to schedule your campaign, it will be sent at the time specified. If you do not schedule your campaign, it will send immediately.
 
 {% anchor h2 %}
