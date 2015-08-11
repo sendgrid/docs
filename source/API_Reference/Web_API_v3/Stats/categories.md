@@ -138,7 +138,7 @@ Gets the total sums of each email statistic metric for all categories over the g
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
- {% parameter aggregate_by No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
+ {% parameter aggregate_by No 'Must be day|week|month' 'How to group the statistics' %}
   {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
