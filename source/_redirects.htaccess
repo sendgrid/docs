@@ -170,7 +170,7 @@ Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Sett
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Legacy-Email-Template
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
@@ -235,6 +235,8 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https:/
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/multifactor_authentication.html
@@ -258,7 +260,7 @@ Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/doc
 Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/index.html https://sendgrid.com/docs/index.html
-Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/Utilities/list_assist.html
+Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/docs/Utilities/list_assist.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/analytics.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Marketing_Emails/unsubscribes.html
