@@ -175,6 +175,10 @@ The following parameters are sent with delivery events: bounce, deferred, delive
          <td>Email address of the intended recipient</td>
       </tr>
       <tr>
+         <td>timestamp</td>
+         <td><a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a></td>
+      </tr>
+      <tr>
          <td>smtp-id</td>
          <td>An id attached to the message by the originating system</td>
       </tr>
@@ -200,6 +204,10 @@ The following parameters are sent with engagement events: click, open, spamrepor
       <tr>
          <td>email</td>
          <td>Email address of the intended recipient</td>
+      </tr>
+      <tr>
+         <td>timestamp</td>
+         <td><a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a></td>
       </tr>
       <tr>
          <td>useragent</td>
