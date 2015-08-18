@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/131027734" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% info %}
 Send the right email, to the right person, at the right time, with the right frequency.
 {% endinfo %}
