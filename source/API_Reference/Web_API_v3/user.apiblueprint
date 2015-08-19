@@ -12,7 +12,7 @@ FORMAT: 1A
 
 # Users
 
-## User Profile [/v3/user/profile]
+## User Profile [/user/profile]
 
 ### GET User Profile [GET]
 
