@@ -183,7 +183,7 @@ Django
 PHP 
 {% endanchor %}
 
--   [eventhook](http://sendgrid.github.io/eventkit/setup.html) *by SendGrid* - An app to consume and store SendGrid Events on a LAMP Stack
+-   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 {% anchor h3 -Ruby-Webhooks %}
 Ruby 
