@@ -95,7 +95,7 @@ Deleting an Email Link Whitelabel
 {% endanchor %}
 
 {% warning %}
-Deleting a Domain Whitelabel is permanent and can not be rolled back.
+Deleting an Email Link Whitelabel is permanent and can not be rolled back.
 {% endwarning %}
 
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.
