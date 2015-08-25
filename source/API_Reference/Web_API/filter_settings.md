@@ -130,35 +130,6 @@ DKIM
 
 * * * * *
 
-{% anchor h2 %}
-Domain Keys 
-{% endanchor %}
-
-*API App Name - `domainkeys`*
-
-{% parameters domainkeys %} 
-  
-  {% parameter name yes 'domainkeys' 'The name of the app for which to apply settings.' %}  
-  {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
-  {% parameter sender no '1 to insert a sender header if the domain specified does not match the from address; 0 to never insert a Sender header.' '0 or 1' %}
-{% endparameters %}
-
-{% apiexample domainkeys POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=domainkeys&sender=1 %}
-  {% response json %}
-{
-  "message": "success"
-}
-  {% endresponse %}
-  {% response xml %}
-<result>
-   <message>success</message>
-</result>
-
-  {% endresponse %}
-{% endapiexample %}
-
-* * * * *
-
 {% anchor h2 -Email-Templates %}
 Legacy Email Templates 
 {% endanchor %}
