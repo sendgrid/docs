@@ -236,6 +236,7 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://s
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+#forced a redirect file at /User_Guide/Settings/domain_keys.html
 Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
