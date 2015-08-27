@@ -185,56 +185,6 @@ of your email.</p>
 
 <hr/>
 
-{% anchor h3 domainkeys %}
-Filter: <code>domainkeys</code>
-{% endanchor %}
-
-<p>Allows you to specify the domain to use to sign messages with Domain
-Keys. This domain should match the domain in the From address of your
-email.</p>
-
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>Parameter Name</th>
-<th>Parameter Value</th>
-<th>Parameter Description</th>
-</tr>
-<tr>
-<td>enable</td>
-<td><code>0</code> | <code>1</code></td>
-<td>Disable or enable this App</td>
-</tr>
-<tr>
-<td>domain</td>
-<td><code>domain</code></td>
-<td>The domain to sign messages as</td>
-</tr>
-<tr>
-<td>sender</td>
-<td><code>0</code> | <code>1</code></td>
-<td>1 - Insert a Sender header if the domain specified does not match the From address. 0 - never insert a Sender header</td>
-</tr>
-</tbody>
-</table>
-
-<h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "domainkeys" : {
-      "settings" : {
-        "enable" : 1,
-        "domain" : "example.com",
-        "sender" : 1
-      }
-    }
-  }
-}
-{% endcodeblock %}
-
-<hr/>
-
 {% anchor h3 footer %}
 Filter: <code>footer</code>
 {% endanchor %}

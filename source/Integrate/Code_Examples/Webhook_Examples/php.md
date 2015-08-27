@@ -63,7 +63,3 @@ foreach ($events as $event) {
 
 {% endcodeblock %}
 
-
-{% info %}
-get the event webhook up and running easily with our awesome open source app, eventkit <a href="http://sendgrid.github.io/eventkit/setup.html/" ?>Chick here to get setup</a>.
-{% endinfo %}

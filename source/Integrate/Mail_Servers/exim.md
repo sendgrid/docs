@@ -68,7 +68,7 @@ begin authenticators
 sendgrid_login:
   driver = plaintext
   public_name = LOGIN
-  client_send = : username@example.com : YourSendGridPassword
+  client_send = : YourSendGridUsername : YourSendGridPassword
 {% endcodeblock %}
 
  

@@ -183,7 +183,7 @@ Django
 PHP 
 {% endanchor %}
 
--   [eventhook](http://sendgrid.github.io/eventkit/setup.html) *by SendGrid* - An app to consume and store SendGrid Events on a LAMP Stack
+-   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 {% anchor h3 -Ruby-Webhooks %}
 Ruby 
@@ -191,3 +191,4 @@ Ruby
 
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
+-   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments

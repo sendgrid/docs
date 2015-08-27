@@ -20,7 +20,7 @@ Browser information can help optimize your email sending by showing you how diff
 
 {% anchor h2 %}
 Comparison Overview
-{% endanchor %}w
+{% endanchor %}
 
 Your top most graph will show you how each selected browser has fared for the selected individual metric in the donut graph.
 
