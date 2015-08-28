@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Create and Manage Marketing Emails
+title: Create and Manage Legacy Marketing Emails
 navigation:
   show: true
 ---
