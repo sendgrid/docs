@@ -5,11 +5,15 @@ title: Categories
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 This module allows you to create and manage categories within your Marketing Emails.
 
 {% anchor h2 %}
-create 
+create
 {% endanchor %}
 
 Create a new Category.
@@ -37,7 +41,7 @@ Create a new Category.
 * * * * *
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Assign a Category to an existing Marketing Email.
@@ -66,7 +70,7 @@ Assign a Category to an existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-remove 
+remove
 {% endanchor %}
 
 Remove specific categories, or all categories from a Marketing Email.\\

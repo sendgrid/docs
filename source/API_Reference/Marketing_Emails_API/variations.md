@@ -5,13 +5,16 @@ title: Variations (A/B Testing)
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
 
 This module allows you to add new Variations to your drafted Marketing Emails. These Variations can be used in A/B testing (also sometimes called split testing).
 
 * * * * *
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Create a new Variation.
@@ -45,9 +48,9 @@ Create a new Variation.
 * * * * *
 
 {% anchor h2 %}
-edit 
+edit
 {% endanchor %}
-Edit an existing Variation.   
+Edit an existing Variation.
 
 
 {% parameters edit %}
@@ -78,9 +81,9 @@ Edit an existing Variation.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
-Retrieve the contents of an existing Variation.   
+Retrieve the contents of an existing Variation.
 
 
 {% parameters get %}
@@ -123,9 +126,9 @@ Retrieve the contents of an existing Variation.
 * * * * *
 
 {% anchor h2 %}
-cancel 
+cancel
 {% endanchor %}
-Cancels a current Variation send that is in progress.   
+Cancels a current Variation send that is in progress.
 
 
 {% parameters cancel %}
@@ -150,9 +153,9 @@ Cancels a current Variation send that is in progress.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
-Delete the contents of an existing Variation.   
+Delete the contents of an existing Variation.
 
 
 {% parameters delete %}
@@ -178,9 +181,9 @@ Delete the contents of an existing Variation.
 * * * * *
 
 {% anchor h2 %}
-list 
+list
 {% endanchor %}
-Retrieve a list of all Variations attached to a Marketing Email.   
+Retrieve a list of all Variations attached to a Marketing Email.
 
 
 {% parameters list %}
@@ -204,9 +207,9 @@ Retrieve a list of all Variations attached to a Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-pickwinner 
+pickwinner
 {% endanchor %}
-Select the Variation you would like to send.   
+Select the Variation you would like to send.
 
 
 {% parameters pickwinner %}
@@ -232,9 +235,9 @@ Select the Variation you would like to send.
 * * * * *
 
 {% anchor h2 %}
-schedule 
+schedule
 {% endanchor %}
-Schedule a send time and percentage for your variations.   
+Schedule a send time and percentage for your variations.
 
 
 {% parameters schedule %}

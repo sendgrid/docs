@@ -8,15 +8,18 @@ seo:
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
 
 This endpoint allows you to add, view, or remove scheduled delivery events for Marketing Emails.
 
 {% info %}
-If you wish to send a marketing email immediately, leave off the **at** and **after** parameters. 
+If you wish to send a marketing email immediately, leave off the **at** and **after** parameters.
 {% endinfo %}
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Schedule a delivery time for an existing Marketing Email.
@@ -46,7 +49,7 @@ Schedule a delivery time for an existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
@@ -74,7 +77,7 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Cancel a scheduled send for a Marketing Email.

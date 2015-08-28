@@ -5,17 +5,21 @@ title: Emails
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 This endpoint allows you to manage entries in your Recipient Lists.
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Add one or more emails to a Recipient List.
 
-{% parameters add%} 
-  
+{% parameters add%}
+
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses to.' %}  
   {% parameter data Yes 'Must be a valid JSON string matching the required format. Limited to a 1000 entries maximum.' 'Specify the name, email address, and additional fields to add to the specified Recipient List.' %}
 {% endparameters %}
@@ -68,13 +72,13 @@ Add multiple email recipients to a list:
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 Get the email addresses and associated fields for a Recipient List.
 
-{% parameters get %} 
-  
+{% parameters get %}
+
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
   {% parameter email No 'Must be an email address or list of addresses.' 'Optional email addresses to search for in the Recipient List.' %}
   {% parameter unsubscribed No 'Must be set to 1' 'To retrieve a list of unsubscribed email addresses' %}
@@ -104,13 +108,13 @@ Get the email addresses and associated fields for a Recipient List.
 * * * * *
 
 {% anchor h2 %}
-count 
+count
 {% endanchor %}
 
 Retrieve the number of entries on a list.
 
-{% parameters count %} 
-  
+{% parameters count %}
+
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}
 {% endparameters %}
 
@@ -131,13 +135,13 @@ Retrieve the number of entries on a list.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Remove one or more emails from a Recipient List.
 
-{% parameters delete %} 
-  
+{% parameters delete %}
+
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
   {% parameter email[] Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List. May list multiple addresses with multiple <code>email[]</code> parameters' %}
 {% endparameters %}

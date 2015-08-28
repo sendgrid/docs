@@ -5,11 +5,15 @@ title: Marketing Emails
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 This endpoint allows you to add, view, or remove marketing emails.
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Create a new Marketing Email.
@@ -41,7 +45,7 @@ Create a new Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-edit 
+edit
 {% endanchor %}
 
 Edit an existing Marketing Email.
@@ -74,7 +78,7 @@ Edit an existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 Retrieve the contents of an existing Marketing Email.
@@ -119,7 +123,7 @@ Retrieve the contents of an existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-list 
+list
 {% endanchor %}
 
 Retrieve a list of all existing Marketing Email.
@@ -177,7 +181,7 @@ Retrieve a list of all existing Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Remove an existing Marketing Email.

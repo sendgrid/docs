@@ -5,11 +5,14 @@ title: Sender Address
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
 
 This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Marketing Email feature.
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Create a new Address.
@@ -45,7 +48,7 @@ Create a new Address.
 * * * * *
 
 {% anchor h2 %}
-edit 
+edit
 {% endanchor %}
 
 Edit an existing Address.
@@ -78,7 +81,7 @@ Edit an existing Address.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 Retrieve information associated with a particular Address.
@@ -125,7 +128,7 @@ Retrieve information associated with a particular Address.
 * * * * *
 
 {% anchor h2 %}
-list 
+list
 {% endanchor %}
 
 List all Addresses on your account, or check if a particular Address exists.
@@ -155,7 +158,7 @@ List all Addresses on your account, or check if a particular Address exists.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Remove an Address from your account.
