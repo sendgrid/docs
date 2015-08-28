@@ -5,6 +5,9 @@ title: Dashboard
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a> functionality.
+{% endwarning %}
 
 The Marketing Email Dashboard lets you view information regarding your sent and pending marketing emails. On the dashboard you can see:
 

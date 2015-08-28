@@ -5,6 +5,9 @@ title: Marketing Email Tags
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a> functionality.
+{% endwarning %}
 
 <div class="video-container" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 <meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZM-htj1XdcA?rel=0" frameborder="0" allowfullscreen></iframe>
