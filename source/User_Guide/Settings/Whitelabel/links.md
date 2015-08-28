@@ -48,11 +48,15 @@ Your email link whitelabel will not affect your domain whitelabel and vice versa
 
 The root domain for your subdomain. This is the domain that will receive the reputation from the whitelabel.  Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
 
+{% anchor h3 %}
 Use new Domain
+{% endanchor %}
 
 Allows you to add a new domain to your whitelabel options.
 
+{% anchor h3 %}
 Default Whitelabel
+{% endanchor %}
 
 {% info %}
 There can be only one!
@@ -95,7 +99,7 @@ Deleting an Email Link Whitelabel
 {% endanchor %}
 
 {% warning %}
-Deleting a Domain Whitelabel is permanent and can not be rolled back.
+Deleting an Email Link Whitelabel is permanent and can not be rolled back.
 {% endwarning %}
 
 When you view your detailed whitelabel information, you will notice at the bottom of the page that you can delete this whitelabel. If you click the button and then confirm that you are sure you want to delete this whitelabel, then SendGrid will delete it.
