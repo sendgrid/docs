@@ -51,7 +51,7 @@ From here you can change the content in your email without affecting your templa
 
 **Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
 
-**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click "Schedule" in the upper right hand corner.
+**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click "Schedule" in the upper right hand corner. Remember, your timezone is set in your [account settings](https://sendgrid.com/docs/User_Guide/Settings/account.html).
 
 **Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
 
