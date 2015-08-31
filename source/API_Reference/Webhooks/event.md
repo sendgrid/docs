@@ -313,13 +313,17 @@ If [ASM groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manage
 Categories
 {% endanchor %}
 
+{% info %}
+For categories, we return what was sent. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+{% endinfo %}
+
 If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% anchor h3 %}
-Single Category
+Category as a String
 {% endanchor %}
 
-Will be returned as a string
+Single categories sent as a string will be returned as a string.
 
 {% codeblock lang:json %}
 [
@@ -339,10 +343,10 @@ Will be returned as a string
 {% endcodeblock %}
 
 {% anchor h3 %}
-Multiple Categories
+Categories Array
 {% endanchor %}
 
-Will be returned as an array
+Categories sent to SendGrid as an array will be returned as an array.
 
 {% codeblock lang:json %}
 [
@@ -410,7 +414,7 @@ For emails sent with a specified IP Pool, you can view the IP Pool used in the e
 Parameter Details
 {% endanchor %}
 
-The following shows each type of event that can be posted along with the specific parameters that go along with the event.
+The following shows each type of event that can be posted along with all the possible parameters that go along with the event.
 
 {% info %}
 You can use the SMTP API to specify additional custom parameters including categories and unique args. Each unique arg is posted as a separate post parameter, similar to the category listed below, but with a custom name specified by you.
@@ -458,6 +462,12 @@ Bounce
   "smtp-id":"<original-smtp-id@domain.com>",
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1,
   "reason":"500 No Such User",
   "type":"bounce"
 }
@@ -497,7 +507,13 @@ Click
   "timestamp":1249948800,
   "url":"http://yourdomain.com/blog/news.html",
   "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"]
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
@@ -537,7 +553,13 @@ Deferred
   "smtp-id":"<original-smtp-id@domain.com>",
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
-  "attempt":"10"
+  "attempt":"10",
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
@@ -574,12 +596,18 @@ Delivered
   "timestamp":1249948800,
   "smtp-id":"<original-smtp-id@domain.com>",
   "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"]
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
 {% anchor h3 %}
-Drop
+Dropped
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -646,7 +674,13 @@ Open
   "useragent":"Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)",
   "event":"open",
   "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"]
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
@@ -680,7 +714,14 @@ Processed
   "smtp-id":"<original-smtp-id@domain.com>",
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
-  "event":"processed"
+  "event":"processed",
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
+  "send_at":1249949000
 }
 {% endcodeblock %}
 
@@ -713,7 +754,8 @@ Spam Report
   "timestamp":1249948800,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
-  "event":"spamreport"
+  "event":"spamreport",
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
@@ -745,7 +787,8 @@ Unsubscribe
   "timestamp":1249948800,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
-  "event":"unsubscribe"
+  "event":"unsubscribe",
+  "asm_group_id": 1
 }
 {% endcodeblock %}
 
@@ -782,7 +825,8 @@ Group Unsubscribe
   "event":"group_unsubscribe",
   "asm_group_id":1,
   "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
-  "ip":"255.255.255.255"
+  "ip":"255.255.255.255",
+  "response":"200 OK"
 }
 {% endcodeblock %}
 
@@ -814,12 +858,14 @@ Group Resubscribe
   "sg_message_id":"sendgrid_internal_message_id",
   "email":"email@example.com",
   "timestamp":1249948800,
+  "asm_group_id": 1,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
   "event":"group_resubscribe",
   "asm_group_id":1,
   "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
-  "ip":"255.255.255.255"
+  "ip":"255.255.255.255",
+  "response":"250 OK"
 }
 {% endcodeblock %}
 
