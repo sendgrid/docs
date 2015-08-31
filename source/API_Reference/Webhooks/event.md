@@ -825,8 +825,7 @@ Group Unsubscribe
   "event":"group_unsubscribe",
   "asm_group_id":1,
   "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
-  "ip":"255.255.255.255",
-  "response":"200 OK"
+  "ip":"255.255.255.255"
 }
 {% endcodeblock %}
 
@@ -864,8 +863,7 @@ Group Resubscribe
   "event":"group_resubscribe",
   "asm_group_id":1,
   "useragent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36",
-  "ip":"255.255.255.255",
-  "response":"250 OK"
+  "ip":"255.255.255.255"
 }
 {% endcodeblock %}
 
