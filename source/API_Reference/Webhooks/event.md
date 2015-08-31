@@ -284,6 +284,30 @@ The resulting webhook call
 
 *Note: The event and the email are not overwritten, because "event" and "email" are reserved and SendGrid defaults to the reserved key for webhooks.*
 
+{% anchor h2 %}
+Advanced Suppression Manager
+{% endanchor %}
+
+If [ASM groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html) are used over the SMTP API they will be returned by the Event Webhook as such:
+
+{% codeblock lang:json %}
+[
+  {
+    "status":"5.0.0",
+    "sg_event_id":"sendgrid_internal_event_id",
+    "sg_message_id":"sendgrid_internal_message_id",
+    "event":"bounce",
+    "email":"email@example.com",
+    "timestamp":1249948800,
+    "smtp-id":"<original-smtp-id@domain.com>",
+    "unique_arg_key":"unique_arg_value",
+    "category":["category1", "category2"],
+    "reason":"500 No Such User",
+    "type":"bounce",
+    "asm_group_id": 1,
+  }
+]
+{% endcodeblock %}
 
 {% anchor h2 %}
 Categories
@@ -359,6 +383,28 @@ echo "ok";
 ?>
 {% endcodeblock %}
 
+{% anchor h2 %}
+IP Pools
+{% endanchor %}
+
+For emails sent with a specified IP Pool, you can view the IP Pool used in the event post for a processed event.
+
+{% codeblock lang:json %}
+[
+    {
+        "email": "john.doe@sendgrid.com",
+        "smtp-id": "<14c583da911.2c36.1c804d@ismtpd-073>",
+        "timestamp": 1427409578,
+        "pool": {
+            "name": "new_MY_test",
+            "id": 210
+        },
+        "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
+        "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
+        "event": "processed"
+    }
+]
+{% endcodeblock %}
 
 {% anchor h2 %}
 Parameter Details
@@ -375,7 +421,7 @@ The examples provided below are a JSON array for a particular event. These will 
 {% endinfo %}
 
 {% anchor h3 %}
-Processed
+Bounce
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -383,13 +429,58 @@ Processed
       <tr>
          <th>event</th>
          <th>email</th>
+         <th>status</th>
+         <th>reason</th>
+         <th>type</th>
          <th>category</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>processed</td>
+         <td>bounce</td>
          <td>Message recipient</td>
+         <td>Status code string, e.g. 5.5.0</td>
+         <td>Bounce reason from MTA</td>
+         <td>Bounce/Blocked/Expired</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+{% codeblock lang:json %}
+{
+  "status":"5.0.0",
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "event":"bounce",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "reason":"500 No Such User",
+  "type":"bounce"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Click
+{% endanchor %}
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>url</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>click</td>
+         <td>Message recipient</td>
+         <td>URL Clicked</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
@@ -399,12 +490,14 @@ Processed
 {
   "sg_event_id":"sendgrid_internal_event_id",
   "sg_message_id":"sendgrid_internal_message_id",
+  "ip":"255.255.255.255",
+  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+  "event":"click",
   "email":"email@example.com",
   "timestamp":1249948800,
-  "smtp-id":"<original-smtp-id@domain.com>",
+  "url":"http://yourdomain.com/blog/news.html",
   "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"],
-  "event":"processed"
+  "category":["category1", "category2"]
 }
 {% endcodeblock %}
 
@@ -486,6 +579,43 @@ Delivered
 {% endcodeblock %}
 
 {% anchor h3 %}
+Drop
+{% endanchor %}
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>reason</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>dropped</td>
+         <td>Message recipient</td>
+         <td>Drop reason</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "smtp-id":"<original-smtp-id@domain.com>",
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "reason":"Bounced Address",
+  "event":"dropped"
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
 Open
 {% endanchor %}
 
@@ -521,7 +651,7 @@ Open
 {% endcodeblock %}
 
 {% anchor h3 %}
-Click
+Processed
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -529,96 +659,13 @@ Click
       <tr>
          <th>event</th>
          <th>email</th>
-         <th>url</th>
          <th>category</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td>click</td>
+         <td>processed</td>
          <td>Message recipient</td>
-         <td>URL Clicked</td>
-         <td>The category you assigned</td>
-      </tr>
-   </tbody>
-</table>
-
-{% codeblock lang:json %}
-{
-  "sg_event_id":"sendgrid_internal_event_id",
-  "sg_message_id":"sendgrid_internal_message_id",
-  "ip":"255.255.255.255",
-  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
-  "event":"click",
-  "email":"email@example.com",
-  "timestamp":1249948800,
-  "url":"http://yourdomain.com/blog/news.html",
-  "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"]
-}
-{% endcodeblock %}
-
-{% anchor h3 %}
-Bounce
-{% endanchor %}
-
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>event</th>
-         <th>email</th>
-         <th>status</th>
-         <th>reason</th>
-         <th>type</th>
-         <th>category</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>bounce</td>
-         <td>Message recipient</td>
-         <td>Status code string, e.g. 5.5.0</td>
-         <td>Bounce reason from MTA</td>
-         <td>Bounce/Blocked/Expired</td>
-         <td>The category you assigned</td>
-      </tr>
-   </tbody>
-</table>
-
-{% codeblock lang:json %}
-{
-  "status":"5.0.0",
-  "sg_event_id":"sendgrid_internal_event_id",
-  "sg_message_id":"sendgrid_internal_message_id",
-  "event":"bounce",
-  "email":"email@example.com",
-  "timestamp":1249948800,
-  "smtp-id":"<original-smtp-id@domain.com>",
-  "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"],
-  "reason":"500 No Such User",
-  "type":"bounce"
-}
-{% endcodeblock %}
-
-{% anchor h3 %}
-Drop
-{% endanchor %}
-
-<table class="table table-bordered table-striped">
-   <thead>
-      <tr>
-         <th>event</th>
-         <th>email</th>
-         <th>reason</th>
-         <th>category</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>dropped</td>
-         <td>Message recipient</td>
-         <td>Drop reason</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
@@ -633,8 +680,7 @@ Drop
   "smtp-id":"<original-smtp-id@domain.com>",
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
-  "reason":"Bounced Address",
-  "event":"dropped"
+  "event":"processed"
 }
 {% endcodeblock %}
 
@@ -777,7 +823,7 @@ Group Resubscribe
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
+{% anchor h3 %}
 Marketing Email Unsubscribes
 {% endanchor %}
 
@@ -799,28 +845,6 @@ For emails sent through our Marketing Email tool, unsubscribes will look like th
     ],
     "event": "unsubscribe"
   }
-]
-{% endcodeblock %}
-{% anchor h2 %}
-IP Pools
-{% endanchor %}
-
-For emails sent with a specified IP Pool, you can view the IP Pool used in the event post for a processed event.
-
-{% codeblock lang:json %}
-[
-    {
-        "email": "john.doe@sendgrid.com",
-        "smtp-id": "<14c583da911.2c36.1c804d@ismtpd-073>",
-        "timestamp": 1427409578,
-        "pool": {
-            "name": "new_MY_test",
-            "id": 210
-        },
-        "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
-        "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
-        "event": "processed"
-    }
 ]
 {% endcodeblock %}
 
