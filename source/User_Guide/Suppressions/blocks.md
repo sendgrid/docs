@@ -11,10 +11,11 @@ navigation:
 ---
 
 [Blocks]({{root_url}}/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.  
-The Reason on the Block will clarify what the exact reason is. Typically it is possible to have your IP address removed from a black list, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered Block.
+
+The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a blacklist, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
 
 {% info %}
-Unlike addresses on our other Suppression Lists, new messages to Blocked addresses will be attempted, as the message content is likely different, and may not be Blocked.
+Unlike addresses on our other suppression lists, new messages to blocked addresses will be attempted, as the message content is likely different, and may not be blocked.
 {% endinfo %}
 
 The list provided here can be filtered by email address or date.

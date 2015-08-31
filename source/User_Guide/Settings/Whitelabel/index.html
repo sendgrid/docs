@@ -83,13 +83,19 @@ If SendGrid cannot match your email to a valid whitelabel, SendGrid.net will be 
 
 For any account, SendGrid will attach valid whitelabel information in the following order, starting at the top of the list and applying the whitelabel when the criteria are matched:
 
-1. Valid whitelabel that matches the domain in the FROM address
-2. Valid default whitelabel
-3. SendGrid.net
+<ol>
+  <li>Valid whitelabel that matches the domain in the FROM address.</li>
+  <li>Valid default whitelabel.</li>
+</ol>
+
+<em>If no valid whitelabels can be found, we will default to sendgrid.net.</em>
 
 For subusers, SendGrid will attach valid whitelabel information in the following order, starting at the top of the list and applying the whitelabel when the criteria are matched:
 
-1. Valid whitelabel *for this subuser* that matches the domain in the FROM address
-2. Valid default whitelabel *for this subuser*
-3. Valid whitelabel assigned by the parent account to this subuser
-4. SendGrid.net
+<ol>
+  <li>Valid whitelabel *for this subuser* that matches the domain in the FROM address.</li>
+  <li>Valid default whitelabel *for this subuser*.</li>
+  <li>Valid whitelabel assigned by the parent account to this subuser.</li>
+</ol>
+
+<em>If no valid whitelabels can be found, we always default to sendgrid.net.</em>
