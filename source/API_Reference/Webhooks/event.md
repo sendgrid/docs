@@ -291,7 +291,6 @@ Advanced Suppression Manager
 If [ASM groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% codeblock lang:json %}
-[
   {
     "status":"5.0.0",
     "sg_event_id":"sendgrid_internal_event_id",
@@ -304,9 +303,8 @@ If [ASM groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manage
     "category":["category1", "category2"],
     "reason":"500 No Such User",
     "type":"bounce",
-    "asm_group_id": 1,
+    "asm_group_id": 1
   }
-]
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -720,7 +718,7 @@ Processed
     "newsletter_id": "1943530",
     "newsletter_send_id": "2308608"
   },
-  "asm_group_id": 1
+  "asm_group_id": 1,
   "send_at":1249949000
 }
 {% endcodeblock %}
