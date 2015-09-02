@@ -32,7 +32,7 @@ send
 
 SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be used when sending email over the API.
 
-Send email.
+You can have up to 10,000 recipients per API request.
 
 {% parameters mail %}
  {% parameter 'to' 'Yes' 'Must be a valid email address' 'This can also be passed in as an array, to send to multiple locations. Example: to[]=a@mail.com&to[]=b@mail.com. Note that recipients passed in this parameter will be visible as part of the message. If you wish to hide the recipients, use the TO parameter in the [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) header.' %}
@@ -122,7 +122,6 @@ Call: Sending with a BCC and BCCname
 
   {% endresponse %}
 {% endapiexample %}
-
 
 * * * * *
 
