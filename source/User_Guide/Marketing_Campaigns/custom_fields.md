@@ -31,7 +31,7 @@ database. You will be able to query your list in different ways, based on the da
 * **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% info %}
-You can have up to 20 custom fields of each type.  This is means you can have 63 total custom fields, including the custom fields we provide by default.
+You can have up to 100 custom fields of each type.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -39,7 +39,7 @@ Delete a Custom Field
 {% endanchor %}
 
 {% warning %}
-Deleting this custom field will delete all values for that field across your contact database. If you have any campaigns using this field's substitution tag, those will NOT get replaced when the campaign is sent. You will not be allowed to delete this custom field if it is currently being used in a segment. This deletion process may take several minutes--you will continue to see the custom field on this page until the process has completed.
+Deleting this custom field will delete all values for that field across your contact database. If you have any campaigns using this field's substitution tag, those will NOT get replaced when the campaign is sent. You will not be allowed to delete this custom field if it is currently being used in a segment. This deletion process may take several minutes -- you will continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
