@@ -20,6 +20,10 @@ When you are ready to send an email campaign, go to the campaigns page and click
 Choose Your Template
 {% endanchor %}
 
+{% info %}
+You can also create a campaign from your [temaplates list]({root_url}/User_Guide/Marketing_Campaigns/templates.html).
+{% endinfo %}
+
 We have provided you with multiple default templates to choose from. If you decide to upload your own email design we suggest that you [create a template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html) so that you can reuse it.
 
 {% warning %}
