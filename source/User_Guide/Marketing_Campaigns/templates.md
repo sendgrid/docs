@@ -128,6 +128,6 @@ You can insert your sender identity information into your campaigns using the fo
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/campaigns.html">Create and Send Your Campaign</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html">Create and Send Your Campaign</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

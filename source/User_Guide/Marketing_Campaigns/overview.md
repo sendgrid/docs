@@ -17,7 +17,7 @@ When you log into <a href="{marketing_campaigns_url}/overview">SendGrid Marketin
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/campaigns.html">Campaigns</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html">Campaigns</a>
     </div>
 
     <div class="col-md-6 text-right">
