@@ -15,13 +15,17 @@ seo:
 A template is the basic structure of the email you will be sending out to your contacts. You can import the HTML for an
 email through the [SendGrid Marketing Campaigns template builder]({marketing_campaigns_url}/templates) or you can use one of the default templates we have provided.
 
-The editor will autosave your changes every 3 seconds, so even if you close your browser window, your changes will be saved. As you make changes to your campaign, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
+From the main templates list: you can add a template, edit a template, or create a campaign using one of your templates.
 
 ![]({{root_url}}/images/templates_1.png "Templates Page")
 
 {% anchor h2 %}
 Uploading HTML
 {% endanchor %}
+
+{% info %}
+The editor will autosave your changes every 3 seconds, so even if you close your browser window, your changes will be saved. As you make changes to your campaign, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
+{% endinfo %}
 
 Apart from our default templates, we make it easy to upload your own HTML email template. To do this, go to “create new template.” You will notice that we show you the design view by default. To get to the code view, just click the code view icon: ![]({{root_url}}/images/templates_2.png "Code View Button")
 
