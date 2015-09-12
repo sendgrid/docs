@@ -10,7 +10,7 @@ seo:
   description: Use our Drag and Drop editor to swiftly build out your campaign content with predefined modules. Edit individual modules easily in the style sidebar, and reorder modules with a simple drag of your mouse.
 ---
 
-The Drag & Drop editor helps you swiftly build your campaign content with predefined modules. Edit individual modules easily in the style sidebar, and reorder modules with a simple drag of your mouse.
+The Drag & Drop editor helps you swiftly build your campaign with predefined content modules. Easily edit individual modules in the sidebar, and reorder modules with a simple drag of your mouse.
 
 ![]({{root_url}}/images/DnD_toggle_off.png) <br />
 ![]({{root_url}}/images/DnD_toggle_on.png) <br />
@@ -20,11 +20,18 @@ The Drag & Drop editor helps you swiftly build your campaign content with predef
 Getting Started
 {% endanchor %}
 
-To get started, turn on the Drag & Drop toggle in the Settings tab, located below the campaign name field. This will add a modules group to the Build tab, and turn on a fourth tab option called “Style” which houses the Drag & Drop modules, as well as two settings panels, Email Body and Content Container, for editing the area around the modules, such as content width and padding, font family and color, and background color.
+To get started, click on the Drag & Drop toggle in the Settings tab, located below the campaign name field. A modal will display asking if you’re sure you want to change editor modes. Clicking “continue” will turn on the Drag & Drop Editor, which will wrap any existing content with HTML needed for the new editor features to work.
 
-Modules are blocks of content that can be dragged into the main editor and dropped above or below other moveable modules.
+{% info %}
+For information on how to convert your existing template content for compatibility with corresponding Drag & Drop modules, see the section [HTML Markup](#-HTML-Markup-for-Modules) for Modules below. Any content that is not converted for use in the Drag & Drop Editor will be grouped together inside a WYSIWYG module.
+{% endinfo %}
 
-There are a number of modules available for use in building your campaign, each with unique styling options located in the “Style” section of the editor sidebar.
+Turning on the Drag & Drop Editor will also open a new tab called “Build” which contains the available modules and style groups.
+
+The “Global Styles” group has two subgroups: “Email Body,” with style options for background color, text, and link color and font family and size, and “Content Container” with style options for width, background color, and padding.
+
+The “Module Styles” group is where unique styling options exist for the modules used in building your campaign. Dragging and dropping a module into the editor, or selecting an existing one, will reveal the styling options for that module.
+
 
 {% anchor h2 %}
 Available Modules
@@ -52,37 +59,43 @@ Pre-header and footer are important pieces of any email campaign, where informat
     <tr>
       <td>Text</td>
       <td>A module for text</td>
-      <td>Container background, Padding</td>
+      <td>background color, padding</td>
     </tr>
 
     <tr>
       <td>Image</td>
       <td>A module to house a single image</td>
-      <td>Link URL, Alt text, Width, Height, Padding, Alignment</td>
+      <td>image background, image margin</td>
     </tr>
 
     <tr>
       <td> Image & Text </td>
       <td>A module allowing for an image to be aligned to the left or right of text</td>
-      <td>Image Link URL, Image position, Image background, Image margin, Text background, Text margin</td>
+      <td>image position, image background, image margin, text background, text margin</td>
+    </tr>
+
+    <tr>
+      <td>Columns</td>
+      <td>A module with multiple drop zones for other non-column modules</td>
+      <td>container background, container padding, cell padding, columns</td>
     </tr>
 
     <tr>
       <td>Button</td>
       <td>An external link</td>
-      <td>Alignment, Button text, Button color, Padding, Border radius, Border color, Text color, Font size, Height, Width, URL, Container background, Padding.</td>
+      <td>button color, border color, Font color, width, height, padding, border radius, font size, button text, button URL, alignment,container background, container padding</td>
     </tr>
 
     <tr>
       <td>Spacer</td>
       <td>Extra spacing between modules</td>
-      <td>Container background, Spacing (padding-bottom)</td>
+      <td>background color, spacing (padding-bottom)</td>
     </tr>
 
     <tr>
       <td>WYSIWYG</td>
-      <td>“What You See Is What You Get” – an all-purpose module that can contain text and images</td>
-      <td>Container background, Padding</td>
+      <td>"What You See Is What You Get" – an all-purpose module that can contain text and images</td>
+      <td>background color, padding</td>
     </tr>
 </tbody></table>
 
@@ -99,6 +112,8 @@ To build a module from scratch in the code editor, or to convert existing html e
 {% anchor h3 %}
 HTML For Drag & Drop
 {% endanchor %}
+
+To start, you will first need to add an attribute to your opening &lt;html&gt; tag: ```data-dnd="true"```. This will turn on the Drag & Drop editor mode (and flip the toggle in the Settings tab to “On”).
 
 The generic template for all Drag & Drop modules is a table whose data-type varies per the type of module you are using. Some modules may have content that can be placed in the table’s column (like text for a Text module) while others may have none (such as a Spacer module).
 
@@ -146,7 +161,9 @@ Text
 
 The text module follows the generic template. You can leave the section marked [MODULE CONTENT] blank and switch from the code editor to the visual editor to see the how it will look with the default attributes. Or, you can replace it with any valid HTML text:
 
-<p>This is an example of normal text content in a Text module.</p>
+{% codeblock lang:html %}
+<div>This is an example of normal text content in a text module.</div>
+{% endcodeblock %}
 
 <strong>Text example:</strong>
 {% codeblock lang:html %}
@@ -241,6 +258,38 @@ As the name implies, this module has nested within it two individual image and t
   </tr>
 </table>
 {% endcodeblock %}
+
+{% anchor h3 %}
+Columns
+{% endanchor %}
+
+The Columns module acts as a container, with between 1 - 4 column drop zones for you to drag and drop other modules into.
+
+{% info %}
+A column module cannot be dropped inside another column module.
+{% endinfo %}
+
+By default, a column module has 2 column drop zones. As with other templates, you can leave the section of the template marked [MODULE] empty to render the default empty columns, or you may replace it below with any valid module HTML.
+
+{% codeblock lang:html %}
+<table role="module" data-type="columns">
+  <tr>
+    <td>
+      <table class="columns--container-table">
+        <tr role="module-content">
+          <td role="column-0">
+            [MODULE]
+          </td>
+          <td role="column-1">
+            [MODULE]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}
+
 
 {% anchor h3 %}
 WYSIWYG

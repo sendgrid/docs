@@ -69,7 +69,7 @@ We will never create a duplicate contact in your contact database or add a conta
 Add Contacts From a CSV
 {% endanchor %}
 
-To add new contacts, select “Add Contacts” and then select “Upload CSV.” Select your file by clicking “Select A File.”
+To add new contacts, select “Add Contacts” and then select “Upload CSV.” Select your file by dragging a file into or clicking the CSV upload area which says “Drag and drop your CSV here or select it from your computer.”
 
 {% anchor h3 %}
 Create a New List from a CSV
