@@ -14,7 +14,7 @@ seo:
 
 Custom fields allow you to add extra information about your contacts to your contact database. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
-To add custom fields, simply navigate to the [custom fields page]({{marketing_campaigns_url}}/custom_fields), where you can create and manage your custom fields. You will notice that we have preloaded your account with email, first_name, and last_name custom fields.
+To add custom fields, simply navigate to the [custom fields page]({{marketing_campaigns_url}}/custom_fields), where you can create and manage your custom fields. You will notice that we have preloaded your account with the custom fields: email, first_name, and last_name. These are reserved fields and cannot be removed. See our [full list of reserved fields](https://support.sendgrid.com/hc/en-us/articles/206923947).
 
 ![]({{root_url}}/images/custom_fields_3.png "See Your New Custom Field")
 
