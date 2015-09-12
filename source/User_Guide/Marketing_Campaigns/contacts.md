@@ -12,8 +12,11 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({marketing_campaigns_url}/contacts) page, you can add, upload,
-and delete your contacts.
+{% info %}
+SendGrid requires that your contacts have given you explicit permission to email them. We do not allow purchased or rented lists. Please see our [email policy](https://sendgrid.com/email_policy) for more details.
+{% endinfo %}
+
+Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({marketing_campaigns_url}/contacts) page, you can add, upload, and delete your contacts.
 
 To add your contacts, just click the "Add List" or "Segment" button and then select your upload method.
 
@@ -32,7 +35,7 @@ Uploading Contacts
 Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid Customer Portal. If you have any issues, please see our Troubleshooting Guide.
 
 {% warning %}
-Email is the unique identifier for your Contacts database. This means you cannot add the same email to your user's contacts database twice, doing so will cause the original record to update all fields passed to the information in the most recent update. Updates to your contacts cannot be rolled back.
+Email is the unique identifier for your Contacts Database. This means you cannot add the same email to your user's contacts database twice, doing so will cause the original record to update all fields passed to the information in the most recent update. Updates to your contacts cannot be rolled back.
 {% endwarning %}
 
 {% anchor h3 %}
