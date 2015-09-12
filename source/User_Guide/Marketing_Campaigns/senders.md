@@ -28,7 +28,7 @@ Your sender identity must be verified before you use it to send a campaign.
 {% endwarning %}
 
 Whenever you send an email, in order to be CAN-SPAM compliant, you need to provide some basic sender information in your
-emails. We have set up a [sender management feature]({marketing_campaigns_url}/senders) for you,
+emails. We have set up a [sender management feature]({{marketing_campaigns_url}}/senders) for you,
 so that you can input the right information and add this to your emails.
 
 When you click “Create New Sender,” you will be shown a form where you can set up a sender identity.
@@ -65,7 +65,7 @@ To resend your verfication email, click the gear icon for this sender and select
 Automatically Verify Your Sender Identity
 {% endanchor %}
 
-If you have a [verified whitelabel domain]({root_url}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
 {% anchor h2 %}
 Use Sender Identity Information In Your Campaigns
