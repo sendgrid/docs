@@ -22,7 +22,7 @@ To enable this setting, enter the new email address into the modal window that p
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Campaigns</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/campaigns.html">Campaigns</a>
     </div>
 
     <div class="col-md-6 text-right">

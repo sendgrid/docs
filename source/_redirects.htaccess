@@ -218,7 +218,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/API_Reference/Marketing_Campaigns/contactdb.html
-Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/API_Reference/Marketing_Campaigns/campaigns.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/campaigns.html https://sendgrid.com/API_Reference/Marketing_Campaigns/Campaigns/campaigns.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
