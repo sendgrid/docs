@@ -10,7 +10,7 @@ navigation:
   These API requests are Account Wide settings, unlike the SMTP API which will change the status at the individual email message level.
 {% endinfo %}
 
-For a more detailed description of each of the Apps below, please visit the [Apps]({{root_url}}/User_Guide/Apps/) page.
+For a more detailed description of each of the Filters below, please visit the [Settings]({{root_url}}/User_Guide/Settings/) page.
 
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)
 
@@ -18,14 +18,14 @@ All calls to change filter settings are made to the [filter.setup endpoint.]({{r
 Address Whitelist 
 {% endanchor %}
 
-*API App Name - `addresswhitelist`*
+*Name - `addresswhitelist`*
 
 {% info %}
 When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call. 
 {% endinfo %}
 {% parameters addresswhitelist %} 
   
-  {% parameter name yes 'addresswhitelist' 'The name of the app for which to apply settings.' %}  
+  {% parameter name yes 'addresswhitelist' 'The name of the setting.' %}  
   {% parameter list yes 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
 
@@ -49,11 +49,11 @@ When using this call, you must define all emails & domains here. Using this call
 BCC "Blind Carbon Copy" 
 {% endanchor %}
 
-*API App Name - `bcc`*
+*Name - `bcc`*
 
 {% parameters bcc %} 
   
-  {% parameter name yes 'bcc' 'The name of the app for which to apply settings.' %}  
+  {% parameter name yes 'bcc' 'The name of the setting.' %}  
   {% parameter email yes 'An email address to be the BCC recipient.' 'email@example.com' %}
 {% endparameters %}
 
@@ -77,11 +77,11 @@ BCC "Blind Carbon Copy"
 Click Tracking 
 {% endanchor %}
 
-*API App Name - `clicktrack`*
+*Name - `clicktrack`*
 
 {% parameters clicktrack %} 
   
-  {% parameter name yes 'clicktrack' 'The name of the app for which to apply settings.' %}  
+  {% parameter name yes 'clicktrack' 'The name of the setting.' %}  
   {% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
 {% endparameters %}
 
@@ -105,11 +105,11 @@ Click Tracking
 DKIM 
 {% endanchor %}
 
-*API App Name - `dkim`*
+*Name - `dkim`*
 
 {% parameters dkim %} 
   
-  {% parameter name yes 'dkim' 'The name of the app for which to apply settings.' %}  
+  {% parameter name yes 'dkim' 'The name of the setting.' %}  
   {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
   {% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
 {% endparameters %}
@@ -134,14 +134,14 @@ DKIM
 Legacy Email Templates 
 {% endanchor %}
 
-*API App Name - `template`*
+*Name - `template`*
 
 {% warning %}
-This app is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html). 
+This setting is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html). 
 {% endwarning %}
 {% parameters template %} 
   
-  {% parameter name yes 'template' 'The name of the app for which to apply settings.' %}  
+  {% parameter name yes 'template' 'The name of the setting.' %}  
   {% parameter text/html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
 {% endparameters %}
 
@@ -165,7 +165,7 @@ This app is our original Email Template app, today we have a more full featured 
 Event Notification 
 {% endanchor %}
 
-*API App Name - `eventnotify`*
+*Name - `eventnotify`*
 
 {% info %}
 All fields except version are required for each call. 
@@ -173,7 +173,7 @@ All fields except version are required for each call.
 
 
 {% parameters eventnotify %}
- {% parameter 'name' 'Yes' 'eventnotify' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'eventnotify' 'The setting.' %}
  {% parameter 'processed' 'Yes' 'Notify when email is processed' '0' %}
  {% parameter 'dropped' 'Yes' 'Notify when email is dropped' '1' %}
  {% parameter 'deferred' 'Yes' 'Notify when email is deferred' '1' %}
@@ -212,12 +212,12 @@ All fields except version are required for each call.
 Footer 
 {% endanchor %}
 
-*API App Name - `footer`*
+*Name - `footer`*
 
 You must provide either text/html or text/plain, or both, to avoid receiving a "missing parameters" error.
 
 {% parameters footer %}
- {% parameter 'name' 'Yes' 'footer' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'footer' 'The setting.' %}
  {% parameter 'text/html' 'No' 'String that holds the html body' '&lt;html&gt;Content&lt;/html&gt;' %}
  {% parameter 'text/plain' 'No' 'String that holds the text body' 'Content' %}
 {% endparameters %}
@@ -243,12 +243,12 @@ You must provide either text/html or text/plain, or both, to avoid receiving a "
 Google Analytics 
 {% endanchor %}
 
-*API App Name - `ganalytics`*
+*Name - `ganalytics`*
 
 At least one of the optional parameters needs to be passed to avoid a "missing parameters" error.
 
 {% parameters ganalytics %}
- {% parameter 'name' 'Yes' 'ganalytics' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'ganalytics' 'The setting.' %}
  {% parameter 'utm_source' 'No' 'Name of the referrer source' 'Transactional Email' %}
  {% parameter 'utm_medium' 'No' 'Name of the marketing medium' 'email' %}
  {% parameter 'utm_campaign' 'No' 'Name of the campaign' 'Redesigned Transaction' %}
@@ -277,11 +277,11 @@ At least one of the optional parameters needs to be passed to avoid a "missing p
 SPAM Filter Checker 
 {% endanchor %}
 
-*API App Name - `spamcheck`*
+*Name - `spamcheck`*
 
 
 {% parameters spamcheck %}
- {% parameter 'name' 'Yes' 'spamcheck' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'spamcheck' 'The setting.' %}
  {% parameter 'max_score' 'Yes' 'Emails with a spam score over this value will be considered spam and will not be delivered to the recipient. The default spam threshold is 5.0, but you can set this to any value you wish. We use SpamAssassin to process the spam checks for this filter, so you can base your maxscore setting on values typically used with SpamAssassin' '1.2' %}
  {% parameter 'url' 'Yes' 'URL to post the email and a copy of the detailed SpamAssassin report describing why the email was designated as spam' 'https://www.example.com/spamcheck.php' %}
 {% endparameters %}
@@ -307,12 +307,12 @@ SPAM Filter Checker
 Subscription Tracking 
 {% endanchor %}
 
-*API App Name - `subscriptiontrack`*
+*Name - `subscriptiontrack`*
 
 You must pass at least one of the optional params in order to avoid the "missing parameter" error.
 
 {% parameters subscriptiontrack %}
- {% parameter 'name' 'Yes' 'subscriptiontrack' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'subscriptiontrack' 'The setting.' %}
  {% parameter 'text/html' 'No' 'String for the HTML e-mail body' 'If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;' %}
  {% parameter 'text/plain' 'No' 'String for the plain text e-mail body' 'If you would like to unsubscribe and stop receiving these emails click here: &lt;% %&gt;.' %}
  {% parameter 'url' 'No' 'a URL the customer will be redirected to on clicking the subscription management link' 'http://www.example.com/UnsubscribeLandingPage' %}
@@ -341,11 +341,11 @@ You must pass at least one of the optional params in order to avoid the "missing
 SendGrid for New Relic 
 {% endanchor %}
 
-*API App Name - `newrelic`*
+*Name - `newrelic`*
 
 
 {% parameters newrelic %}
- {% parameter 'name' 'Yes' 'newrelic' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'newrelic' 'The setting.' %}
  {% parameter 'license_key' 'Yes' 'Can be found in New Relic Settings page' %}
  {% parameter 'enable_subusers' 'Yes' 'false to disable, true to enable' %}
 {% endparameters %}
@@ -369,11 +369,11 @@ SendGrid for New Relic
 Sendwithus 
 {% endanchor %}
 
-*API App Name - `sendwithus`*
+*Name - `sendwithus`*
 
 
 {% parameters sendwithus %}
- {% parameter 'name' 'Yes' 'sendwithus' 'The app for which to set or retrieve settings.' %}
+ {% parameter 'name' 'Yes' 'sendwithus' 'The setting for which to set or retrieve settings.' %}
  {% parameter 'license_key' 'Yes' 'Can be found in Sendwithus Settings page' %}
 {% endparameters %}
 
