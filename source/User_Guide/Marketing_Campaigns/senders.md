@@ -23,6 +23,10 @@ will ensure that you receive notifications when contacts have been uploaded and 
 Create Your Sender Identity
 {% endanchor h2 %}
 
+{% warning %}
+Your sender identity must be verified before you use it to send a campaign.
+{% endwarning %}
+
 Whenever you send an email, in order to be CAN-SPAM compliant, you need to provide some basic sender information in your
 emails. We have set up a [sender management feature]({marketing_campaigns_url}/senders) for you,
 so that you can input the right information and add this to your emails.

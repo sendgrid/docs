@@ -49,6 +49,10 @@ From here you can change the content in your email without affecting your templa
 
 **Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page.
 
+{% warning %}
+Your [sender identity]({root_url}/User_Guide/Marketing_Campaigns/senders.html) must be verified before you use it to send a campaign.
+{% endwarning %}
+
 **From Sender:** This is the person from whom this email will be sent. The user will see this name as the sender on their email.
 
 **Email Subject:** The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
@@ -170,6 +174,10 @@ Save or Send Your Campaign
 {% info %}
 You cannot resend a campaign once it has been sent!
 {% endinfo %}
+
+{% warning %}
+Your [sender identity]({root_url}/User_Guide/Marketing_Campaigns/senders.html) must be verified before you use it to send a campaign.
+{% endwarning %}
 
 You have the option to save your campaign, for editing later. Once you are ready to send, you can click the “send” button in the top right corner of this page. If you have chosen to schedule your campaign, it will be sent at the time specified. If you do not schedule your campaign, it will send immediately.
 
