@@ -33,14 +33,14 @@ Add Your Content and Manage Your Settings
 {% endanchor %}
 
 {% info %}
-The editor will autosave your changes every 3 seconds, so even if you close your browser window your changes will be saved.
+The editor will autosave your changes every 3 seconds. That way, if you close your browser window your changes will be saved.
 {% endinfo %}
 
 Once you choose your template, you will be taken to the campaign editor page:
 
 ![]({{root_url}}/images/templates_7.png "Edit Your Campaign")
 
-From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign.
+From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign. As you make changes, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
 
 
 **Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page.
