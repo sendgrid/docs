@@ -51,15 +51,48 @@ We will not allow you to send with a sender identity that is not verified. This 
 
 To Verify your identity, create the identity following the instructions above.  Once you click save, we will send an email to the address you specified.
 
+{% info %}
+Your verification link is only valid for 48 hours. After that time you will need to start the verification process over.
+{% endinfo %}
+
 1. Check your email for the verification email we sent.
 2. Click the link provided in the verification email.
 3. Your sender identity is now verified!
+
+To resend your verfication email, click the gear icon for this sender and select 'view' from the menu.
 
 {% anchor h2 %}
 Automatically Verify Your Sender Identity
 {% endanchor %}
 
 If you have a [verified whitelabel domain]({root_url}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+
+{% anchor h2 %}
+Use Sender Identity Information In Your Campaigns
+{% endanchor %}
+
+You can insert your sender identity information into your campaigns using the following tags within your campaign or template content.
+
+**[Sender_Name]** - The sender's name.
+
+**[Sender_Address]** - The sender's street address.
+
+**[Sender_City]** - The sender's city.
+
+**[Sender_State]** - The sender's state.
+
+**[Sender_Zip]** - The sender's zip.
+
+{% anchor h3 %}
+Display Sender Info
+{% endanchor %}
+If you'd like to show your full sender's address and information you can use the tags like so:
+
+{% codeblock %}
+[Sender_Name]
+[Sender_Address]
+[Sender_City], [Sender_State] [Sender_Zip]
+{% endcodeblock %}
 
 <div class="row">
     <div class="col-md-6 text-left">

@@ -106,6 +106,21 @@ Adding a Weblink
 
 You can give your campaign recipients the option to see their email online, by adding a ```[weblink]``` tag within your template. This tag only adds the URL, so you will need to add an HTML anchor tag around this substitution tag.
 
+{% anchor h3 %}
+Use Sender Identity Information In Your Campaigns
+{% endanchor %}
+
+You can insert your sender identity information into your campaigns using the following tags within your campaign or template content.
+
+**[Sender_Name]** - The sender's name.
+
+**[Sender_Address]** - The sender's street address.
+
+**[Sender_City]** - The sender's city.
+
+**[Sender_State]** - The sender's state.
+
+**[Sender_Zip]** - The sender's zip.
 
 <div class="row">
     <div class="col-md-6 text-left">
