@@ -41,7 +41,7 @@ also be able to create a segment of this list directly from this window.
 Delete a List
 {% endanchor %}
 
-If you would like to delete a list, go to [Contacts](https://sendgrid.com/marketing_campaigns/contacts) where you will see
+If you would like to delete a list, go to [Contacts]({marketing_campaigns_url}/contacts) where you will see
 a list of your contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
 that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s
 information will continue to exist in your contact database.
@@ -76,7 +76,7 @@ Create a Segment
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
 
-To set up a segment, click the “add list or Segment” button from [Contacts](https://sendgrid.com/marketing_campaigns/contacts).
+To set up a segment, click the “add list or Segment” button from [Contacts]({marketing_campaigns_url}/contacts).
 
 ![]({{root_url}}/images/lists_5.png "Delete a List")
 

@@ -12,7 +12,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts](https://sendgrid.com/marketing_campaigns/contacts) page, you can add, upload,
+Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({marketing_campaigns_url}/contacts) page, you can add, upload,
 and delete your contacts.
 
 To add your contacts, just click the "Add List" or "Segment" button and then select your upload method.
