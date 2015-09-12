@@ -118,6 +118,10 @@ upload a list, any contact that fits the segment criteria you've defined will be
 Viewing a Contact Profile
 {% endanchor %}
 
+{% info %}
+Searches are case-insensitive but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io"
+{% endinfo %}
+
 To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then
 click the contact’s email address. You will then be able to see the email, date added, date updated, and all custom field
 values that you have assigned to this contact.
