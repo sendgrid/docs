@@ -92,8 +92,6 @@ Select Your Custom Fields
 
 Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row. For each header you can select which custom field to associate to the data in the column. If the header row matches the custom field name, the two will automatically be connected. You can also add a custom field if you need to.
 
-![]({{root_url}}/images/contacts_1.png "Upload Contacts")
-
 You will see the progress as your file uploads to SendGrid. This simply shows that we have the information. If your list is quite large, we will start the process of storing and automatically segmenting your contacts if you have already set up segments on your account. For smaller lists, you will see your contacts in your new list quickly.
 
 ![]({{root_url}}/images/contacts_2.png "Upload Contact Status")
