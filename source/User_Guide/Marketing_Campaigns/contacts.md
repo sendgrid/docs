@@ -52,7 +52,7 @@ Google Spreadsheets. You can also export your contacts from most database system
 
 Your CSV should have the contacts you want to upload into the Marketing Campaigns app, as well as their respective custom fields. For example: email, first_name, last_name, country, city, age - where “country,” “city,” and “age” are your custom fields.
 
-The first row of your CSV must always be a header row which will identify the columns of your contacts. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row. If you add custom field data to your CSV, while it’s not a requirement to do so, you can save yourself some time on upload by naming the columns the same as the custom fields you have previously defined in the Marketing Campaigns customer portal.
+The first row of your CSV must always be a header row which will identify the columns of your contacts. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. The first row of the file is the header row. All headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, while it’s not a requirement to do so, you can save yourself some time on upload by naming the columns the same as the custom fields you have previously defined in the Marketing Campaigns customer portal.
 
 {% info %}
 You must include ```email``` as one of your CSV headers because that is how we identify individual contacts. If you do not include the email column, we will not add any information to your contact database or list. Also, it should be noted that any rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
@@ -158,8 +158,9 @@ Some examples:
 
 **Data formatting**
 
-Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV.
-The date format needs to be one of the following: MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY
+Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV. Years must be represented as 4-digit numbers. 1999 not 99. Day and month fields may be represented as single numbers.
+
+The date format must be one of the following: MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY
 
 **Missing Header**
 
