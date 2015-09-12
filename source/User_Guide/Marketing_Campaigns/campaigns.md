@@ -40,7 +40,7 @@ Once you choose your template, you will be taken to the campaign editor page:
 
 ![]({{root_url}}/images/templates_7.png "Edit Your Campaign")
 
-From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign. As you make changes, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
+From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign. As you make changes to your campaign, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
 
 
 **Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page.
