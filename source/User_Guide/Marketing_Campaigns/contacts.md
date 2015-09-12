@@ -102,6 +102,7 @@ Once we have completed processing your new contacts, you will receive a summary 
 * Number of new contacts
 * Number of updated contacts
 * Number of errors
+* Error messages for each errored row
 
 If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
 
@@ -124,7 +125,12 @@ To view a specific contact profile, find the contact in one of your lists or by 
 click the contact’s email address. You will then be able to see the email, date added, date updated, and all custom field
 values that you have assigned to this contact.
 
-![]({{root_url}}/images/contacts_5.png "Contact Profile")
+{% anchor h3 %}
+Editing a Contact Profile
+{% endanchor %}
+
+When you are viewing a contact, click any of the "Edit" buttons to edit the contact's information within that section. This includes the recipient's contact information and custom fields.
+
 
 {% anchor h3 %}
 Delete a Specific Contact
