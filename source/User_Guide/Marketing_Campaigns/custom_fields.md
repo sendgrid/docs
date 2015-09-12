@@ -34,6 +34,14 @@ database. You will be able to query your list in different ways, based on the da
 You can have up to 20 custom fields of each type.  This is means you can have 63 total custom fields, including the custom fields we provide by default.
 {% endinfo %}
 
+{% anchor h2 %}
+Delete a Custom Field
+{% endanchor %}
+
+{% warning %}
+Deleting this custom field will delete all values for that field across your contact database. If you have any campaigns using this field's substitution tag, those will NOT get replaced when the campaign is sent. You will not be allowed to delete this custom field if it is currently being used in a segment. This deletion process may take several minutes--you will continue to see the custom field on this page until the process has completed.
+{% endwarning %}
+
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
 the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will
 be removed as well.

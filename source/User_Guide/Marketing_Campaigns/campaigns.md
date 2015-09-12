@@ -67,6 +67,9 @@ This test email will not replace your substitution tags, as you will be sending 
 
 **Send Test Email** - If you want to see the email as your customer would see it, you can enter your email address here and click “Send.” The campaign will be sent to the email specified immediately.
 
+{% info %}
+Don't forget that you can use [replacement tags]({root_url}/User_Guide/Marekting_Campaigns/templates.html#-Replacement-Tags) for both a weblink and unsubscribe links.
+{% endinfo %}
 
 {% anchor h2 %}
 A/B Testing

@@ -70,6 +70,10 @@ From here, you can add  alt text, change the default height and width, and even 
 ![]({{root_url}}/images/image_library_1.png "Insert an Image into your Template")
 
 {% anchor h2 %}
+Replacement Tags
+{% endanchor %}
+
+{% anchor h3 %}
 Unsubscribe Links
 {% endanchor %}
 
@@ -92,7 +96,7 @@ If you do not implement one of the two options above, there will be NO unsubscri
 be in direct violation of CAN-SPAM.
 {% endwarning %}
 
-{% anchor h2 %}
+{% anchor h3 %}
 Adding a Weblink
 {% endanchor %}
 
