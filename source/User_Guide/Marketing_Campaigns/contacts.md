@@ -12,9 +12,9 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({{marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts.
+Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts.
 
-To add your contacts, just click the "Add List" or "Segment" button and then select your upload method. For information about how many contacts come with your package, please refer to our [pricing page]({pricing_url}).
+To add your contacts, just click the "Add List" or "Segment" button and then select your upload method. For information about how many contacts come with your package, please refer to our [pricing page]({site.pricing_url}).
 
 ![]({{root_url}}/images/lists_5.png "Create a Segment")
 

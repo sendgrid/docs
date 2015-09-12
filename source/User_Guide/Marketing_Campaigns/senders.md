@@ -16,8 +16,7 @@ seo:
 Verify Your Account Settings
 {% endanchor h2 %}
 
-Go to your SendGrid [account settings]({app_url}/user/account) to modify or verify that your timezone and account email address are correct. This
-will ensure that you receive notifications when contacts have been uploaded and that your scheduled sends are delivered at the correct time.
+Go to your SendGrid [account settings]({{site.app_url}}/user/account) to modify or verify that your timezone and account email address are correct. This will ensure that you receive notifications when contacts have been uploaded and that your scheduled sends are delivered at the correct time.
 
 {% anchor h2 %}
 Create Your Sender Identity
@@ -28,7 +27,7 @@ Your sender identity must be verified before you use it to send a campaign.
 {% endwarning %}
 
 Whenever you send an email, in order to be CAN-SPAM compliant, you need to provide some basic sender information in your
-emails. We have set up a [sender management feature]({{marketing_campaigns_url}}/senders) for you,
+emails. We have set up a [sender management feature]({{site.marketing_campaigns_url}}/senders) for you,
 so that you can input the right information and add this to your emails.
 
 When you click “Create New Sender,” you will be shown a form where you can set up a sender identity.

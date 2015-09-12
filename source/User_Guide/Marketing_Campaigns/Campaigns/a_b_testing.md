@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: A/B Testing Marketing Campaigns
+title: A/B Testing
 navigation:
   show: true
 seo:
