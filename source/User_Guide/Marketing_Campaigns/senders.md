@@ -41,7 +41,25 @@ When you click “Create New Sender,” you will be shown a form where you can s
 * **Company Address, City, State, Zip Code, Country** - The address of your business, for CAN-SPAM compliance.
 * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
 
-Once you fill out this information and hit “save,” you will then be able to select and attach this sender identity from your campaign management page.
+Once you fill out this information and hit “save,” you will then be able to verify your sender.
+
+{% anchor h2 %}
+Verifying Your Sender Identity
+{% endanchor %}
+
+We will not allow you to send with a sender identity that is not verified. This is a security feature that helps you be in compliance with [CAN-SPAM](http://www.business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business) when you send through SendGrid.
+
+To Verify your identity, create the identity following the instructions above.  Once you click save, we will send an email to the address you specified.
+
+1. Check your email for the verification email we sent.
+2. Click the link provided in the verification email.
+3. Your sender identity is now verified!
+
+{% anchor h2 %}
+Automatically Verify Your Sender Identity
+{% endanchor %}
+
+If you have a [verified whitelabel domain]({root_url}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
 <div class="row">
     <div class="col-md-6 text-left">
