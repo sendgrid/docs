@@ -48,7 +48,7 @@ Verifying Your Sender Identity
 
 We will not allow you to send with a sender identity that is not verified. This is a security feature that helps you be in compliance with [CAN-SPAM](http://www.business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business) when you send through SendGrid.
 
-To Verify your identity, create the identity following the instructions above.  Once you click save, we will send an email to the address you specified.
+To verify your identity, create the identity following the instructions above. Once you click “save,” we will send an email to the address you specified.
 
 {% info %}
 Your verification link is only valid for 48 hours. After that time you will need to start the verification process over.

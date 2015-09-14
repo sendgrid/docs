@@ -14,7 +14,7 @@ seo:
 
 Custom fields allow you to add extra information about your contacts to your contact database. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
-To add custom fields, simply navigate to the [custom fields page]({{site.marketing_campaigns_url}}/custom_fields), where you can create and manage your custom fields. You will notice that we have preloaded your account with the custom fields: email, first_name, and last_name. These are reserved fields and cannot be removed. See our [full list of reserved fields](https://support.sendgrid.com/hc/en-us/articles/206923947).
+To add custom fields, simply navigate to the [custom fields page]({{site.marketing_campaigns_url}}/custom_fields), where you can create and manage your custom fields. You’ll notice that we have preloaded your account with the custom fields: email, first_name, and last_name. These are reserved fields and cannot be removed. See our [full list of reserved fields](https://support.sendgrid.com/hc/en-us/articles/206923947).
 
 ![]({{root_url}}/images/custom_fields_3.png "See Your New Custom Field")
 
@@ -45,8 +45,7 @@ Deleting this custom field will delete all values for that field across your con
 {% endwarning %}
 
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
-the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will
-be removed as well.
+the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will be removed as well.
 
 <div class="row">
     <div class="col-md-6 text-left">
