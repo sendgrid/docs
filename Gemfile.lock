@@ -138,5 +138,5 @@ DEPENDENCIES
   rubypants
   s3-static-site
   simple-cloudfront-invalidator
-  therubyracer
+  therubyracer (= 0.12.2)
   yui-compressor
