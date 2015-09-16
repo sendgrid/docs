@@ -866,10 +866,33 @@ Group Resubscribe
 {% endcodeblock %}
 
 {% anchor h3 %}
-Marketing Email Unsubscribes
+Marketing Campaigns
 {% endanchor %}
 
-For emails sent through our Marketing Email tool, unsubscribes will look like the following example:
+For emails sent through our Marketing Campaigns feature, we will add Marketing Campaigns specific params to the Event Webhook.
+
+{% codeblock lang:json %}
+{
+  "category": [],
+  "email": "email@example.com",
+  "event": "processed",
+  "marketing_campaign_id": 12345,
+  "marketing_campaign_name": "campaign name",
+  "nlvx_campaign_id": 12345,
+  "nlvx_user_id": 12345,
+  "post_type": "event",
+  "sg_event_id": "sendgrid_internal_event_id",
+  "sg_message_id": "sendgrid_internal_message_id",
+  "smtp-id": "",
+  "timestamp": 1442349428
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Legacy Marketing Email Unsubscribes
+{% endanchor %}
+
+For emails sent through our Legacy Marketing Email tool, unsubscribes will look like the following example:
 
 {% codeblock lang:json %}
 [
