@@ -59,3 +59,16 @@ FORMAT: 1A
             "website":"http://www.sendgrid.com",
             "zip":"92868"
         }
+
+## User Account [/v3/user/account]
+
+### GET User Account [GET]
+
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "type": "free",
+                "reputation": 99.7
+            }
