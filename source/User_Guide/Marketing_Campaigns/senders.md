@@ -26,6 +26,10 @@ Create Your Sender Identity
 Your sender identity must be verified before you use it to send a campaign.
 {% endwarning %}
 
+{% warning %}
+When you schedule a campaign, the sender identity used will not be able to be deleted.
+{% endwarning %}
+
 Whenever you send an email, in order to be CAN-SPAM compliant, you need to provide some basic sender information in your
 emails. We have set up a [sender management feature]({{site.marketing_campaigns_url}}/senders) for you,
 so that you can input the right information and add this to your emails.
