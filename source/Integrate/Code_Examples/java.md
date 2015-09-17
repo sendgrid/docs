@@ -14,7 +14,10 @@ import com.sendgrid.*;
  
 public class SendGridExample {
   public static void main(String[] args) {
-    SendGrid sendgrid = new SendGrid(api_user, api_key);
+    
+    SendGrid sendgrid = new SendGrid(api_key); // recommended
+    // OR
+    SendGrid sendgrid = new SendGrid(api_user, api_password);
  
     SendGrid.Email email = new SendGrid.Email();
  
