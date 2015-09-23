@@ -41,7 +41,7 @@ Validate whether or not a batch id is valid
     + Body
 
              {
-                "id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw"
+                "id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw",
                 "expiration": 1442945818
              }
 + Response 400 (application/json)
