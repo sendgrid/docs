@@ -1,7 +1,7 @@
 ---
 layout: page
-weight: 755
-title: Batch ID 
+weight: 0
+title: Batch ID
 navigation:
   show: true
 ---
@@ -9,7 +9,7 @@ navigation:
 FORMAT: 1A
 
 # Batch IDs
-If the customer sets the [SMTPAPI header batch_id]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html), 
+If the customer sets the [SMTPAPI header batch_id]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html),
 it allows for the customer to then cancel a scheduled send based on that batch_id by calling the [Cancel Scheduled Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Cancel_Scheduled_Send/index.html)
 
 # Group Batch ID Management
@@ -47,7 +47,7 @@ Validate whether or not a batch id is valid
 + Response 400 (application/json)
 
     + Body
-             
+
              {
                 "errors":[{"message": "invalid batch id"}]
              }
