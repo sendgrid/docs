@@ -54,78 +54,74 @@ Validate whether or not a batch id is valid
              }
 
 
-# Cancel Scheduled Sends
-The Cancel Scheduled Sends feature allows you to cancel a scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
-included in the SMTPAPI header.
+ # Cancel Scheduled Sends
+ The Cancel Scheduled Sends feature allows the customer to cancel a
+ scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
+ included in the SMTPAPI header.
 
-# Group Cancel Scheduled Send
+ # Group Cancel Scheduled Send
 
-## Manage user scheduled sends [/user/scheduled_send]
+ ## Manage user scheduled sends [/user/scheduled_send]
+ A CRUD for managing user scheduled sends
 
-### Retrieve scheduled send [GET]
-Get cancel/paused scheduled send information.
+ ### Retrieve scheduled send [GET]
+ Get cancel/paused scheduled send information.
 
-+ Request
-    + Body
+ + Request
+     + Body
+
+              {
+                 "id": "YOUR_BATCH_ID"
+              }
+
+ + Response 200 (application/json)
+
+     + Body
+
+              {
+                 "id": "YOUR_BATCH_ID",
+                 "status": "cancel"
+              }
+
+
+
+ ### Update user scheduled send information [PUT]
+ Update the status of a scheduled send.
+
+ + Request
+     + Body
 
              {
-                "id": "YOUR_BATCH_ID"
+                 "id": "YOUR_BATCH_ID",
+                 "status": "pause"
              }
+ + Response 204 (application/json)
+ + Response 404
 
-+ Response 200 (application/json)
+ ### Cancel or pause a scheduled send [POST]
+ Cancel or pause a scheduled send. If the maximum number of cancellations/pauses are added, HTTP 400 will
+ be returned.
 
-    + Body
+ + Request
+     + Body
 
              {
-                "id": "YOUR_BATCH_ID",
-                "status": "cancel"
-
+                 "id": "YOUR_BATCH_ID",
+                 "status": "pause"
              }
+ + Response 201 (application/json)
+ + Response 400
 
+ ### Delete a cancellation or pause of a scheduled send [DELETE]
+ Delete the cancellation/pause of a scheduled send.
 
+ + Request
+     + Body
 
-### Update user scheduled send information [PUT]
-Update the status of a scheduled send.
+             {
+                 "id": "YOUR_BATCH_ID"
+             }
+             
+ + Response 204
 
-+ Request
-    + Body
-
-            {
-                "id": "YOUR_BATCH_ID",
-                "status": "pause"
-            }
-
-+ Response 204 (application/json)
-
-+ Response 404
-
-### Cancel or pause a scheduled send [POST]
-Cancel or pause a scheduled send. If the maximum number of cancellations/pauses are added, HTTP 400 will
-be returned.
-
-+ Request
-    + Body
-
-            {
-                "id": "YOUR_BATCH_ID",
-                "status": "pause"
-            }
-
-+ Response 201 (application/json)
-
-+ Response 400
-
-### Delete a cancellation or pause of a scheduled send [DELETE]
-Delete the cancellation/pause of a scheduled send.
-
-+ Request
-
-    + Body
-
-            {
-                "id": "YOUR_BATCH_ID" 
-            }
-
-+ Response 204
-
-+ Response 404
+ + Response 404
