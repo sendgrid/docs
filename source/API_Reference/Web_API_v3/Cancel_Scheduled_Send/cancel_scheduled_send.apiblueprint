@@ -1,0 +1,79 @@
+---
+layout: page
+weight: 755
+title: Cancel Scheduled Sends 
+navigation:
+  show: true
+---
+
+FORMAT: 1A
+
+# Cancel Scheduled Sends
+The Cancel Scheduled Sends feature allows the customer to cancel a 
+scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
+included in the SMTPAPI header.
+
+# Group Cancel Scheduled Send
+
+## Manage user scheduled sends [/user/scheduled_send]
+A CRUD for managing user scheduled sends
+
+### Retrieve scheduled send [GET]
+Get cancel/paused scheduled send information.
+
++ Request
+    + Body
+
+             {
+                "id": 23
+             }
++ Response 200 (application/json)
+
+    + Body
+
+             {
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
+                "status": "cancel"
+                
+             }
+
+
+
+### Update user scheduled send information [PUT]
+Update the status of a scheduled send.
+
++ Request
+    + Body
+
+            {
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
+                "status": "pause"
+            }
++ Response 204 (application/json)
++ Response 404
+
+### Cancel or pause a scheduled send [POST]
+Cancel or pause a scheduled send. If the maximum number of cancellations/pauses are added, HTTP 400 will 
+be returned.
+
++ Request
+    + Body
+
+            {
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
+                "status": "pause"
+            }
++ Response 201 (application/json)
++ Response 400
+
+### Delete a cancellation or pause of a scheduled send [DELETE]
+Delete the cancellation/pause of a scheduled send.
+
++ Request
+    + Body
+
+            {
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y"
+            }
++ Response 204
++ Response 404
