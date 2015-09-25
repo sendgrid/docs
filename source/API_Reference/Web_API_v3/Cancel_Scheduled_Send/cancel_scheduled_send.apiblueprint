@@ -32,8 +32,7 @@ Get cancel/paused scheduled send information.
     + Body
 
              {
-                "id": 23,
-                "batch_id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
                 "status": "cancel"
                 
              }
@@ -47,7 +46,7 @@ Update the status of a scheduled send.
     + Body
 
             {
-                "id": 24,
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
                 "status": "pause"
             }
 + Response 204 (application/json)
@@ -61,7 +60,7 @@ be returned.
     + Body
 
             {
-                "id": 24,
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y",
                 "status": "pause"
             }
 + Response 201 (application/json)
@@ -74,7 +73,7 @@ Delete the cancellation/pause of a scheduled send.
     + Body
 
             {
-                "id": 24
+                "id": "MDI2MmNjN2MtNjE1NS0xMWU1LThkNWItMDgwMDI3OGJkMmY2LTIwZWFkZmI2Y"
             }
 + Response 204
 + Response 404
