@@ -43,9 +43,9 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
     + Body
 
+            "" : "Returned if request body is invalid JSON"
             "type" : "Returned if custom field type is invalid or not provided"
             "type" : "Returned if custom field name is not provided"
-            "" : "Returned if request body is invalid JSON"
 
 ### List All Custom Fields [GET]
 
@@ -109,9 +109,13 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
             {"reserved_fields":[{"name":"first_name","type":"text"},{"name":"last_name","type":"text"},{"name":"email","type":"text"},{"name":"created_at","type":"date"},{"name":"updated_at","type":"date"},{"name":"last_emailed","type":"date"},{"name":"last_clicked","type":"date"},{"name":"last_opened","type":"date"},{"name":"my_custom_field","type":"text"}]}
 
+
+
 # Group Lists
 
 All recipient IDs are the URL-encoded email; for example if a recipient's email is `foo@example.com`, their recipient ID is `foo@example.com`; if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3Fother@example.com`.
+
+
 
 ## Lists [/contactdb/lists]
 
@@ -217,6 +221,9 @@ Returned if one or more lists were deleted
 
 ### Delete a List [DELETE]
 
++ Parameters
+    + delete_contacts = `true` (optional, boolean) ... True to delete all contacts on the list in addition to deleting the list
+
 + Response 204
 
      + Body
@@ -232,6 +239,8 @@ Returned if one or more lists were deleted
      + Body
 
             "id" : "Returned if the list id does not exist"
+
+
 
 ## Lists [/contactdb/lists/{list_id}/recipients?page_size=100&page=1]
 
@@ -437,8 +446,11 @@ Returned if at least one recipient was deleted
 
 
 ## Recipients [/contactdb/recipients?page_size=100&page=1]
-Note: Batch deletion of a page makes it possible to receive an empty page of recipients before reaching the end of
+
+{% info %}
+Batch deletion of a page makes it possible to receive an empty page of recipients before reaching the end of
 the list of recipients. To avoid this issue; iterate over pages until a 404 is retrieved.
+{% endinfo %}
 
 + Parameters
     + page = `1` (optional, integer) ... page index of first recipients to return (default: 0, must be a positive integer)
@@ -702,6 +714,10 @@ Valid operators for create and update depend on the type of the field you are se
             "segment_id" : "Returned if the segment id does not exist"
 
 ### Delete a Segment [DELETE]
+
++ Parameters
+    + delete_contacts = `true` (optional, boolean) ... True to delete all contacts matching the segment in addition to deleting the segment
+
 
 + Response 204
 
