@@ -8,6 +8,9 @@ navigation:
 
 FORMAT: 1A
 
+# Cancellation of Scheduled Sends
+Cancelling scheduled send
+
 # Group Batch IDs
 
 If you set the [SMTPAPI header batch_id]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html),
@@ -26,8 +29,7 @@ Generate a new Batch ID to associate with scheduled sends
     + Body
 
             {
-                "batch_id": "YOUR_BATCH_ID",
-                "expiration": 1442945818
+                "batch_id": "YOUR_BATCH_ID"
             }
 
 ## Validate Batch ID [/mail/batch/]
@@ -43,8 +45,7 @@ Validate whether or not a batch id is valid
     + Body
 
              {
-                "batch_id": "YOUR_BATCH_ID",
-                "expiration": 1442945818
+                "batch_id": "YOUR_BATCH_ID"
              }
 
 + Response 400 (application/json)
@@ -88,7 +89,7 @@ Get cancel/paused scheduled send information.
 
 
 
-### Update user scheduled send information [PUT]
+### Update user scheduled send information [PATCH]
 
 Update the status of a scheduled send.
 
@@ -123,16 +124,12 @@ be returned.
 
 + Response 400
 
+## delete user scheduled send cancellation [/user/scheduled_send/{batch_id}]
+
 ### Delete a cancellation or pause of a scheduled send [DELETE]
 Delete the cancellation/pause of a scheduled send.
 
 + Request
-
-   + Body
-
-           {
-               "batch_id": "YOUR_BATCH_ID"
-           }
 
 + Response 204
 
