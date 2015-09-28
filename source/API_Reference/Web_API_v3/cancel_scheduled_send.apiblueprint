@@ -63,7 +63,7 @@ The Cancel Scheduled Sends feature allows the customer to cancel a
 scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
 included in the SMTPAPI header.
 
-## Manage user scheduled sends [/user/scheduled_send]
+## Manage user scheduled sends [/user/scheduled_send/{batch_id}]
 
 A CRUD for managing user scheduled sends
 
@@ -72,11 +72,6 @@ A CRUD for managing user scheduled sends
 Get cancel/paused scheduled send information.
 
 + Request
-   + Body
-
-            {
-               "batch_id": "YOUR_BATCH_ID"
-            }
 
 + Response 200 (application/json)
 
@@ -86,8 +81,6 @@ Get cancel/paused scheduled send information.
                "batch_id": "YOUR_BATCH_ID",
                "status": "cancel"
             }
-
-
 
 ### Update user scheduled send information [PATCH]
 
@@ -105,6 +98,17 @@ Update the status of a scheduled send.
 + Response 204 (application/json)
 
 + Response 404
+
+### Delete a cancellation or pause of a scheduled send [DELETE]
+Delete the cancellation/pause of a scheduled send.
+
++ Request
+
++ Response 204
+
++ Response 404
+
+## Cancel or pause a scheduled send [/user/scheduled_send/]
 
 ### Cancel or pause a scheduled send [POST]
 
@@ -124,13 +128,4 @@ be returned.
 
 + Response 400
 
-## delete user scheduled send cancellation [/user/scheduled_send/{batch_id}]
 
-### Delete a cancellation or pause of a scheduled send [DELETE]
-Delete the cancellation/pause of a scheduled send.
-
-+ Request
-
-+ Response 204
-
-+ Response 404
