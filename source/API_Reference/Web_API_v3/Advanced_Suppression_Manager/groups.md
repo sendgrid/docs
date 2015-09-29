@@ -33,8 +33,7 @@ HTTP/1.1 201 OK
 {
   "id":103,
   "name": "Product Suggestions",
-  "description": "Suggestions for products our users might like.",
-  "last_email_sent_at": "NOT IMPLEMENTED"
+  "description": "Suggestions for products our users might like."
 }
 {% endv3response %}
 {% endapiv3example %}
@@ -53,14 +52,12 @@ Retrieve all suppression groups associated with the user.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
-    "last_email_sent_at": "2014-09-04 01:34:43",
     "unsubscribes": 400
   },
   {
     "id": 101,
     "name": "Alerts",
     "description 2": "Emails triggered by user-defined rules.",
-    "last_email_sent_at": "2012-11-06 09:37:33",
     "unsubscribes": 1
   }
 ]
@@ -80,7 +77,6 @@ Get information on a single suppression group.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
-    "last_email_sent_at": "2014-09-04 01:34:43",
     "unsubscribes": 400
 }
 {% endv3response %}
@@ -105,8 +101,7 @@ HTTP/1.1 201 OK
 {
   "id":103,
   "name": "Item Suggestions",
-  "description": "Suggestions for items our users might like.",
-  "last_email_sent_at": "2014-09-05 03:14:15"
+  "description": "Suggestions for items our users might like."
 }
 {% endv3response %}
 {% endapiv3example %}
