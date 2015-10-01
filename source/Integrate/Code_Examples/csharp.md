@@ -27,7 +27,7 @@ mail.Text = "and easy to do anywhere, even with C#";
  
 var credentials = new NetworkCredential(api_user, api_key);
 var transportWeb = new Web(credentials);
-transportWeb.Deliver(mail);
+transportWeb.DeliverAsync(mail);
 {% endcodeblock %}
 
 {% anchor h2 %}
