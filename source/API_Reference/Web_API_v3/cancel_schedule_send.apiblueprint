@@ -32,7 +32,7 @@ Generate a new Batch ID to associate with scheduled sends
                 "batch_id": "YOUR_BATCH_ID"
             }
 
-## Validate Batch ID [/mail/batch/]
+## Validate Batch ID [/mail/batch]
 
 ### Validate Batch ID [GET]
 
@@ -67,7 +67,7 @@ included in the SMTPAPI header.
 
 A CRUD for managing user scheduled send cancellations
 
-## Cancel or pause a scheduled send [/user/scheduled_sends/]
+## Cancel or pause a scheduled send [/user/scheduled_sends]
 
 ### Cancel or pause a scheduled send [POST]
 
