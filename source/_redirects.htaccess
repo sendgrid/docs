@@ -22,7 +22,7 @@ Redirect 301 /API_Reference/Reseller_API/customer_subuser_spam_reports.html http
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_statistics.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_timezone.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_unsubscribes.html https://sendgrid.com/docs/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html
-Redirect 301 /API_Reference/Web_API_v3/cancel_schedule_send.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
+Redirect 301 /API_Reference/Web_API_v3/cancel_scheduled_send.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
 Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/index.html
 Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/templates.html
 Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/versions.html
