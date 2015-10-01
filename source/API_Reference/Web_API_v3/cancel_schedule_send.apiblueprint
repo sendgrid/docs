@@ -91,7 +91,6 @@ Update the status of a scheduled send.
    + Body
 
            {
-               "batch_id": "YOUR_BATCH_ID",
                "status": "pause"
            }
 
