@@ -12,32 +12,33 @@ FORMAT: 1A
 
 # Bounces
 
-
 ## Bounces Collection [/v3/suppression/bounces?start_time={start_time}&end_time={end_time}]
 
 + Parameters
 
-    + start_time (optional, number, `1443651141`) ... Refers start of the time range when a bounce was created.
-    + end_time (optional, number, `1443651154`) ... Refers end of the time range when a bounce was created.
+    + start_time (optional, number, `1443651141`) ... Refers start of the time range in unix timestamp when a bounce was created (inclusive).
+    + end_time (optional, number, `1443651154`) ... Refers end of the time range in unix timestamp when a bounce was created (inclusive).
 
 ### List all bounces [GET]
 
 + Response 200 (application/json)
 
-        [
-            {
-                "created": 1443651125,
-                "email": "testemail1@test.com",
-                "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
-                "status": "5.1.1"
-            },
-            {
-                "created": 1433800303,
-                "email": "testemail2@testing.com",
-                "reason": "550 5.1.1 <testemail2@testing.com>: Recipient address rejected: User unknown in virtual alias table ",
-                "status": "5.1.1"
-            }
-        ]
+    + Body
+
+            [
+                {
+                    "created": 1443651125,
+                    "email": "testemail1@test.com",
+                    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
+                    "status": "5.1.1"
+                },
+                {
+                    "created": 1433800303,
+                    "email": "testemail2@testing.com",
+                    "reason": "550 5.1.1 <testemail2@testing.com>: Recipient address rejected: User unknown in virtual alias table ",
+                    "status": "5.1.1"
+                }
+            ]
 
 ## Bounces Collection [/v3/suppression/bounces]
 
@@ -49,20 +50,24 @@ There's two bounce delete options:
 
 + Request (application/json)
 
-        {
-            "delete_all": true
-        }
+    + Body
+
+            {
+                "delete_all": true
+            }
 
 + Response 204
 
 + Request (application/json)
 
-        {
-            "emails": [
-                "email1@test.com",
-                "email2@test.com"
-            ]
-        }
+    + Body
+
+            {
+                "emails": [
+                    "email1@test.com",
+                    "email2@test.com"
+                ]
+            }
 
 + Response 204
 
@@ -75,14 +80,17 @@ There's two bounce delete options:
 
 + Response 200 (application/json)
 
-        [
-            {
-                "created": 1443651125,
-                "email": "bounce1@test.com",
-                "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
-                "status": "5.1.1"
-            }
-        ]
+    + Body
+
+            [
+                {
+                    "created": 1443651125,
+                    "email": "bounce1@test.com",
+                    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
+                    "status": "5.1.1"
+                }
+            ]
+
 ### Delete a bounce [DELETE]
 
 + Response 204
