@@ -27,7 +27,9 @@ mail.Text = "and easy to do anywhere, even with C#";
  
 var credentials = new NetworkCredential(api_user, api_key);
 var transportWeb = new Web(credentials);
-transportWeb.Deliver(mail);
+transportWeb.DeliverAsync(mail);
+// If developing a Console Application, use the following
+// transportWeb.DeliverAsync(mail).Wait();
 {% endcodeblock %}
 
 {% anchor h2 %}
