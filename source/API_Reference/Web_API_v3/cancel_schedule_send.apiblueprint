@@ -24,7 +24,7 @@ Generate a new Batch ID to associate with scheduled sends
 + Request
 
 
-+ Response 200 (application/json)
++ Response 201 (application/json)
 
     + Body
 
@@ -32,7 +32,7 @@ Generate a new Batch ID to associate with scheduled sends
                 "batch_id": "YOUR_BATCH_ID"
             }
 
-## Validate Batch ID [/mail/batch/]
+## Validate Batch ID [/mail/batch]
 
 ### Validate Batch ID [GET]
 
@@ -53,7 +53,7 @@ Validate whether or not a batch id is valid
     + Body
 
              {
-                "errors":[{"message": "invalid batch id"}]
+                "errors":[{"field": null, "message": "invalid batch id"}]
              }
 
 
@@ -63,52 +63,7 @@ The Cancel Scheduled Sends feature allows the customer to cancel a
 scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
 included in the SMTPAPI header.
 
-## Manage user scheduled sends [/user/scheduled_send/{batch_id}]
-
-A CRUD for managing user scheduled sends
-
-### Retrieve scheduled send [GET]
-
-Get cancel/paused scheduled send information.
-
-+ Request
-
-+ Response 200 (application/json)
-
-   + Body
-
-            {
-               "batch_id": "YOUR_BATCH_ID",
-               "status": "cancel"
-            }
-
-### Update user scheduled send information [PATCH]
-
-Update the status of a scheduled send.
-
-+ Request
-
-   + Body
-
-           {
-               "batch_id": "YOUR_BATCH_ID",
-               "status": "pause"
-           }
-
-+ Response 204 (application/json)
-
-+ Response 404
-
-### Delete a cancellation or pause of a scheduled send [DELETE]
-Delete the cancellation/pause of a scheduled send.
-
-+ Request
-
-+ Response 204
-
-+ Response 404
-
-## Cancel or pause a scheduled send [/user/scheduled_send/]
+## Cancel or pause a scheduled send [/user/scheduled_sends]
 
 ### Cancel or pause a scheduled send [POST]
 
@@ -119,11 +74,85 @@ be returned.
 
    + Body
 
-           {
-               "batch_id": "YOUR_BATCH_ID",
-               "status": "pause"
-           }
+            {
+                "batch_id": "YOUR_BATCH_ID",
+                "status": "pause"
+            }
 
 + Response 201 (application/json)
 
 + Response 400
+    
+    + Body
+
+            {
+                "errors": [{"field":null,"message":"{\"error\": \"max limit reached\"}"}]
+            }
+
+
+            {
+                "errors":[{"field":"batch_id","message":"invalid batch id"}]
+            }
+
+            
+            {
+                "errors":[{"field":"batch_id","message":"a status for this batch id exists, try PATCH to update the status"}]
+            }
+
+## Manage cancelled user scheduled sends [/user/scheduled_sends/{batch_id}]
+
+A CRUD for managing user scheduled send cancellations
+
+### Retrieve scheduled send [GET]
+
+Get cancel/paused scheduled send information. If {batch_id} is omitted, all of the user's scheduled send cancellations
+are returned
+
++ Request
+
++ Response 200 (application/json)
+
+   + Body
+
+            [
+                {"batch_id": "BATCH_ID_1","status": "cancel"},
+                {"batch_id": "BATCH_ID_2","status": "pause"} 
+            ]
+
+### Update user scheduled send information [PATCH]
+
+Update the status of a scheduled send.
+
++ Request
+
+   + Body
+
+            {
+               "status": "pause"
+            }
+
++ Response 204 (application/json)
+
++ Response 404
+
+    + Body
+
+            {
+                "errors":[{"field":null,"message":"batch id not found"}]
+            }
+
+### Delete a cancellation or pause of a scheduled send [DELETE]
+Delete the cancellation/pause of a scheduled send.
+
++ Request
+
++ Response 204
+
++ Response 404
+
+    + Body
+
+            {
+                "errors":[{"field":null,"message":"batch id not found"}]
+            }
+
