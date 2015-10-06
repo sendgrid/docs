@@ -38,6 +38,14 @@ Add An Unsubscribe Group
 
 To add a new group, click the “Create New Group” button at the top right of the page. Then, you will be asked to name your Unsubscribe Group and add the description. Click “Done” and you will see your new group in the list of all of your unsubscribe groups.
 
+{% anchor h3 %}
+Default Groups
+{% endanchor %}
+
+Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
+
+You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/API_Reference/SMTP_API/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API. 
+
 {% anchor h2 %}
 Add Recipients to an Unsubscribe Group
 {% endanchor %}
