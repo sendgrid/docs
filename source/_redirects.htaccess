@@ -27,11 +27,16 @@ Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/
 Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/templates.html
 Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/versions.html
 Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/smtpapi.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_unsubscribes.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html
-Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Advanced_Suppression_Manager/unsubscribes.html
 Redirect 301 /API_Reference/Web_API_v3/event_activity.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
+Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
+Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html
+Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
+Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/suppressions.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
+Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/unsubscribes.html
+
 
 #######
 #
@@ -165,7 +170,7 @@ Redirect 301 /User_Guide/Account/billing_settings.html https://sendgrid.com/docs
 Redirect 301 /User_Guide/Account/billing_history.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/Account/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/Account/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
-Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html
+Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
 Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-BCC
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
@@ -200,18 +205,18 @@ Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs
 Redirect 301 /User_Guide/Email_Deliverability/scheduling.html https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html
 Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sendgrid.com/docs/Glossary/sender_reputation.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html#-Add-A-Suppression-Group
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html#-Add-A-Suppression-Group
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Suppressions/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html#-Using-the-API
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html#-Add-A-Suppression-Group
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html#-Using-the-API
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html#-Add-A-Suppression-Group
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Suppressions/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/resubscription_of_users.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Bounce
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/drops.html https://sendgrid.com/docs/Glossary/drops.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/index.html https://sendgrid.com/docs/Glossary/undelivered_email.html
@@ -237,7 +242,7 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://s
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
 Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-#forced a redirect file at /User_Guide/Settings/domain_keys.html 
+#forced a redirect file at /User_Guide/Settings/domain_keys.html
 Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
@@ -256,7 +261,7 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 #
 #######
 Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html

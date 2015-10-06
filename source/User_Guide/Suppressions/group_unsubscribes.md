@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 0
-title: Group Unsubscribes
+title: Unsubscribe Groups
 seo:
-  title: Group Unsubscribes
+  title: Unsubscribe Groups
   description: Allow recipients to unsubscribe from specific types of email you send, rather than everything you send, and stay out of the spam folder.
   keywords: Group suppressions, Group unsubscribes, Group email unsubscribe, Group email suppression
 navigation:
@@ -34,7 +34,7 @@ When you select the checkboxes next to the recipient names or select all, using 
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html).
+You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 {% anchor h2 %}
 Related

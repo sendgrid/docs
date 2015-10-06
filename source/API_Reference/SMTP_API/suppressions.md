@@ -45,7 +45,7 @@ You can specify up to 25 groups to display.
 Groups
 {% endanchor %}
 
-You can find your group IDs by looking at the Group ID column in the Advanced Suppression Manager UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html#-GET) of the groups resource.
+You can find your group IDs by looking at the Group ID column in the Advanced Suppression Manager UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
 
 Related Articles:
 
