@@ -34,7 +34,7 @@ You can download your Global Unsubscribe list as a CSV by clicking the gear icon
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html).
+You can manage your Global Unsubscribes via the [Advanced Suppression Manager Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
 
 {% anchor h2 %}
 Related
