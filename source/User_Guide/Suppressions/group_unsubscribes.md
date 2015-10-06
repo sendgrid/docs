@@ -34,7 +34,7 @@ When you select the checkboxes next to the recipient names or select all, using 
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html).
+You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 {% anchor h2 %}
 Related

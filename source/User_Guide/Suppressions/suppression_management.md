@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 90
 title: Suppression Management
 seo:
   title: Suppression Management
@@ -30,7 +30,7 @@ You can then give your recipients more control over the types of emails they wan
 Make sure your group names and descriptions are customer friendly! Your customers will see these group names and descriptions when they unsubscribe from your emails.
 {% endinfo %}
 
-All of your groups will be visible on the [Advanced Suppression Manager]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Advanced Suppression Manager API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Advanced Suppression Manager]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Advanced Suppression Manager API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
 {% anchor h2 %}
 Add A Suppression Group
@@ -90,4 +90,4 @@ To delete a suppression group, select “Delete” and then “confirm” from t
 Using the API
 {% endanchor %}
 
-When you use the [SendGrid API with suppression groups]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html), you can include the suppression group ID with your mail send calls. To get the ID, go to your suppression group list and you will find the ID in the “Group ID” column.
+When you use the [SendGrid API with suppression groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html), you can include the suppression group ID with your mail send calls. To get the ID, go to your suppression group list and you will find the ID in the “Group ID” column.
