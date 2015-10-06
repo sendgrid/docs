@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Groups
+title: Unsubscribe Groups
 weight: 90
 navigation:
   show: true
+  title: Unsubscribe Groups
 ---
 
 Groups are specific types of email you would like your recipients to be able to unsubscribe from or subscribe to. For example: Daily Newsletters, Invoices, System Alerts.
@@ -43,7 +44,7 @@ HTTP/1.1 201 OK
 {% anchor h2 %}
 GET
 {% endanchor %}
-Retrieve all suppression groups associated with the user. 
+Retrieve all suppression groups associated with the user.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups %}
 {% v3response %}

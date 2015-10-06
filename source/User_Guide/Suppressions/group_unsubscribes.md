@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 0
-title: Group Unsubscribes
+title: Unsubscribe Groups
 seo:
-  title: Group Unsubscribes
+  title: Unsubscribe Groups
   description: Allow recipients to unsubscribe from specific types of email you send, rather than everything you send, and stay out of the spam folder.
   keywords: Group suppressions, Group unsubscribes, Group email unsubscribe, Group email suppression
 navigation:

@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 0
-title: Advanced Suppression Manager
+title: Suppression Management
 seo:
-  title: Advanced Suppression Manager
-  description: Advanced Suppression Manager helps you to define and manage suppression groups to keep you out of the spam folder.
-  keywords: subscription manager, suppression manager, unsubscribe manager
+  title: Suppression Management
+  description: Suppression Manager helps you to define and manage suppression groups to keep you out of the spam folder.
+  keywords: subscription manager, suppression manager, unsubscribe manager, unsubscribe manager
 navigation:
   show: true
 ---
