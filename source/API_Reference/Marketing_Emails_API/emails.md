@@ -138,7 +138,7 @@ Remove one or more emails from a Recipient List.
 
 {% parameters delete %} 
   
-  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are adding email addresses too.' %}  
+  {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are removing email addresses from.' %}  
   {% parameter email[] Yes 'Must be an email or emails in the Recipient List.' 'Specify the email address or email addresses you wish to remove from the specified Recipient List. May list multiple addresses with multiple <code>email[]</code> parameters' %}
 {% endparameters %}
 
