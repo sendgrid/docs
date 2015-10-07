@@ -12,7 +12,7 @@ FORMAT: 1A
 
 # Bounces
 
-## Bounces Collection [/v3/suppression/bounces?start_time={start_time}&end_time={end_time}]
+## Bounces Collection [/suppression/bounces?start_time={start_time}&end_time={end_time}]
 
 + Parameters
 
@@ -40,7 +40,7 @@ FORMAT: 1A
                 }
             ]
 
-## Bounces Collection [/v3/suppression/bounces]
+## Bounces Collection [/suppression/bounces]
 
 There's two bounce delete options:
 1) deleting all bounces by specifying "delete_all" to true in the request body, or
@@ -71,7 +71,7 @@ There's two bounce delete options:
 
 + Response 204
 
-## Bounces Item [/v3/suppression/bounces/{email}]
+## Bounces Item [/suppression/bounces/{email}]
 + Parameters
 
     + email ('required', string, `bounce1@test.com`) ... Email address of bounce entry to retrieve
