@@ -95,3 +95,13 @@ Duplicate a Template
 ![](/images/template_engine_13.png "Duplicate your template")
 
 When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. Template Engine will clone this version, giving it a name that includes the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
+
+{% anchor h2 %}
+Unsubscribe Substitution Tags
+{% endanchor %}
+
+You can use substitution tags to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
+
+* Unsubscribe from just this type of email (group): <% asm_group_unsubscribe_url %>.
+* Unsubscribe from everything we send: <% asm_global_unsubscribe_url %>. 
+* Manage your unsubscribe preferences: <% asm_preferences_url %>
