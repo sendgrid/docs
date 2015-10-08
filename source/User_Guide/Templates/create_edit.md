@@ -100,8 +100,24 @@ When you’re ready to create a new version of your template, you can select the
 Unsubscribe Substitution Tags
 {% endanchor %}
 
-You can use substitution tags to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
+You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
 
-* Unsubscribe from just this type of email (group): <% asm_group_unsubscribe_url %>.
-* Unsubscribe from everything we send: <% asm_global_unsubscribe_url %>. 
-* Manage your unsubscribe preferences: <% asm_preferences_url %>
+{% anchor h3 %}
+Unsubscribe From This List
+{% endanchor %}
+
+When you add the ```<% asm_group_unsubscribe_url %>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
+
+{% anchor h3 %}
+Unsubscribe From All Emails
+{% endanchor %}
+
+When you add the ```<% asm_global_unsubscribe_url %>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
+
+{% anchor h3 %}
+Manage Email Preferences
+{% endanchor %}
+
+When you add the ```<% asm_preferences_url %>``` tag to your email, we will replace that tag with the text "Manage Email Preferences", wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+
+
