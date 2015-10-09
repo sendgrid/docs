@@ -20,6 +20,12 @@ The Unsubscribe Link
 
 When a recipient clicks the Unsubscribe link, they will be asked to confirm their choice and then will be added to the Global Unsubscribe list.
 
+{% anchor h3 %}
+Custom Unsubscribe Links
+{% endanchor %}
+
+SendGrid also provides [Unsubscribe Groups tags]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags) that have been pre-defined for you. You can use these tags within the content of your email to place the unsubscribe links wherever you would prefer.
+
 {% anchor h2 %}
 The Email Preferences Link
 {% endanchor %}
