@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send.  The list provided here can be filtered by email address or date. 
+Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the  [Unsubscribe From All Emails link]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date. 
 
 {% anchor h2 %}
 Searching Global Unsubscribes by Date
