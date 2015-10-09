@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 90
-title: Suppression Management
+title: Unsubscribe Groups
 seo:
-  title: Suppression Management
+  title: Unsubscribe Groups
   description: Suppression Manager helps you to define and manage unsubscribe groups to keep you out of the spam folder.
   keywords: subscription manager, suppression manager, unsubscribe manager, unsubscribe manager
 navigation:
