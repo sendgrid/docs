@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the  [Unsubscribe From All Emails link]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date. 
+Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html#-Global-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Global Unsubscribes by Date
@@ -29,6 +29,13 @@ Download Global Unsubscribes as CSV
 {% endanchor %}
 
 You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+
+{% anchor h3 %}
+Global Unsubscribe Substitution Tag
+{% endanchor %}
+
+When you add the ```<% asm_global_unsubscribe_url %>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.  For more substitution tags, please visit our [Template Engine]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+
 
 {% anchor h2 %}
 Using the API
