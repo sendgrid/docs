@@ -40,7 +40,7 @@ Get suppressed addresses for a given group.
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions %}
 {% v3response %}
 HTTP/1.1 200
-{"recipient_emails":["test1@example.com","test2@example.com"]}
+["test1@example.com","test2@example.com"]
 {% endv3response %}
 {% endapiv3example %}
 
