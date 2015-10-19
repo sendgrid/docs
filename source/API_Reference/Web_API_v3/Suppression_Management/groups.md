@@ -25,6 +25,7 @@ There is a limit of 25 groups per user.
 {% parameters post %}
   {% parameter name Yes 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
   {% parameter description Yes 'String. Max 100 characters' 'A description of the suppression group' %}
+  {% parameter is_default No 'Boolean' 'Default value is false' %}
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
@@ -34,7 +35,8 @@ HTTP/1.1 201 OK
 {
   "id":103,
   "name": "Product Suggestions",
-  "description": "Suggestions for products our users might like."
+  "description": "Suggestions for products our users might like.",
+  "is_default": false
 }
 {% endv3response %}
 {% endapiv3example %}
