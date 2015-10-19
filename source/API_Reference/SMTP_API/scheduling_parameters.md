@@ -6,18 +6,17 @@ navigation:
   show: true
 ---
 
-With scheduling you can send large volumes of email in queued batches or target individual recipients by specifying custom UNIX timestamp parameter. 
-Using the parameters defined below, you can queue batches of emails targeting individual recipients. 
+With scheduling you can send large volumes of email in queued batches or target individual recipients by specifying custom UNIX timestamp parameter.
+Using the parameters defined below, you can queue batches of emails targeting individual recipients.
 
-This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release 
-them when the timestamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** 
+This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release
+them when the timestamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time**
 performance.  This functionality:
 
 * Improves efficiency of processing and distributing large volumes of email.
 * Reduces email pre-processing time.
 * Enables you to time email arrival to increase open rates.
 * Is available for free to all SendGrid customers.
-
 
 {% info %}
 Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 72 hours in advance.
@@ -29,8 +28,8 @@ Using both `send_at` and `send_each_at` is not valid and will cause your request
 
 {% anchor h2 %}
 Send At
-{% endanchor %}	
-	
+{% endanchor %}
+
 To schedule a send request for a large batch of emails use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 <h4>Example of send_at email header</h4>
@@ -42,8 +41,8 @@ To schedule a send request for a large batch of emails use the `send_at` paramet
 
 {% anchor h2 %}
 Send Each At
-{% endanchor %}	
-	
+{% endanchor %}
+
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 <h4>Example of send_each_at email header</h4>
