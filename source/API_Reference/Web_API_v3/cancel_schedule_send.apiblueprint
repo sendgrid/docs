@@ -61,7 +61,9 @@ Validate whether or not a batch id is valid
 
 The Cancel Scheduled Sends feature allows the customer to cancel a
 scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html)
-included in the SMTPAPI header.
+included in the SMTPAPI header. 
+
+Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
 
 ## Cancel or pause a scheduled send [/user/scheduled_sends]
 
