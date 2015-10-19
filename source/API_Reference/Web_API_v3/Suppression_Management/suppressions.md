@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html) to prevent certain types of emails from being delivered to those addresses.
+Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Suppression_Management/groups.html) to prevent certain types of emails from being delivered to those addresses.
 
 {% anchor h2 %}
 POST
@@ -32,7 +32,7 @@ HTTP/1.1 201
 * * * * *
 
 {% anchor h2 %}
-GET 
+GET
 {% endanchor %}
 
 Get suppressed addresses for a given group.
@@ -87,4 +87,3 @@ Delete a recipient email from the suppressions list for a group.
 HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
-
