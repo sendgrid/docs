@@ -16,10 +16,10 @@ Code Examples
 2. [Node.js](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-nodejs-how-to-send-email/)
 3. [.NET](http://azure.microsoft.com/en-us/documentation/articles/sendgrid-dotnet-how-to-send-email/)
 4. [Java](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-java-how-to-send-email/)
-5. [Java]({{root_url}}/Integrate/Partners/Tutorials/WindowsAzure.html) via an Azure webpage
+5. [Java]({{root_url}}/Integrate/Tutorials/WindowsAzure.html) via an Azure webpage
 6. [Mobile Services](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-mobile-services-send-email-scripts/)
 
 {% anchor h2 %}
 Still have questions?
 {% endanchor %}
-Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here]({{site.blog_url}}/?s=Azure&submit=). 
+Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here]({{site.blog_url}}/?s=Azure&submit=).
