@@ -47,36 +47,6 @@ HTTP/1.1 200
 * * * * *
 
 {% anchor h2 %}
-GET
-{% endanchor %}
-
-Get suppression groups associated with a given recipient address.
-
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/:email_address %}
-{% v3response %}
-HTTP/1.1 200
-{
-    "suppressions": [
-        {
-            "id": 1,
-            "name": "Weekly Newsletter",
-            "description": "The weekly newsletter",
-            "suppressed": false
-        },
-        {
-            "id": 4,
-            "name": "Special Offers",
-            "description": "Special offers and coupons",
-            "suppressed": false
-        }
-    ]
-}
-{% endv3response %}
-{% endapiv3example %}
-
-* * * * *
-
-{% anchor h2 %}
 DELETE
 {% endanchor %}
 
