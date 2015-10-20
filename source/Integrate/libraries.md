@@ -158,6 +158,13 @@ Ruby
 -   [sendgrid4r](https://github.com/awwa/sendgrid4r) *by Wataru Sato* - Ruby wrapper for the SendGrid Web API v3.
 
 {% anchor h3 %}
+Rust
+{% endanchor %}
+
+-   [sendgrid-rs](https://github.com/gsquire/sendgrid-rs) by [gsquire](https://github.com/gsquire)
+
+
+{% anchor h3 %}
 Titanium 
 {% endanchor %}
 
