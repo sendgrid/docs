@@ -71,9 +71,7 @@ To allow for the cancellation of a scheduled send, you must include a batch id w
     "john@example.com",
     "mike@example.com"
   ],
-  "send_at": [
-    1409348513
-  ],
+  "send_at": 1409348513,
   "batch_id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw"
 }
 {% endcodeblock %}
