@@ -18,7 +18,6 @@ performance.  This functionality:
 * Enables you to time email arrival to increase open rates.
 * Is available for free to all SendGrid customers.
 
-
 {% info %}
 Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 72 hours in advance.
 {% endinfo %}
@@ -59,5 +58,22 @@ To schedule a send request for individual recipients; use `send_each_at` to send
     1409348514,
     1409348515
   ]
+}
+{% endcodeblock %}
+
+To allow for the cancellation of a scheduled send, you must include a batch id with your send. The endpoint for cancellation needs a batch id to cancel with. To generate a valid batch id, use the batch id generation endpoint
+
+<h4>Example of including a batch_id</h4>
+{% codeblock lang:json %}
+{
+  "to": [
+    "<ben@example.com>",
+    "john@example.com",
+    "mike@example.com"
+  ],
+  "send_at": [
+    1409348513
+  ],
+  "batch_id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw"
 }
 {% endcodeblock %}
