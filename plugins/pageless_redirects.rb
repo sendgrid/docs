@@ -121,7 +121,7 @@ module Jekyll
         end
 
         (alias_index_path.split('/').size + 1).times do |sections|
-          @site.static_files << Jekyll::PagelessRedirectFile.new(@site, @site.dest, alias_index_path.split('/')[0, sections].join('/'), '')
+          @site.static_files << PagelessRedirectFile.new(@site, @site.dest, alias_index_path.split('/')[1, sections + 1].join('/'), '')
         end
       end
     end

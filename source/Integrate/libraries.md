@@ -28,7 +28,7 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-ruby](http://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
 -   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) - Official Titanium wrapper
 
-The following official libraries are mantained by SendGrid to create [SMTP API Headers]({{root_url}}/API_Reference/SMTP_API/index.html), they are included in the above official libraries.
+The following official libraries are maintained by SendGrid to create [SMTP API Headers]({{root_url}}/API_Reference/SMTP_API/index.html), they are included in the above official libraries.
 
 -   [smtpapi-csharp](http://github.com/sendgrid/smtpapi-csharp) - Official C\# SMTP API library
 -   [smtpapi-go](http://github.com/sendgrid/smtpapi-go) - Official Go SMTP API library
@@ -37,6 +37,9 @@ The following official libraries are mantained by SendGrid to create [SMTP API H
 -   [smtpapi-php](http://github.com/sendgrid/smtpapi-php) - Official PHP SMTP API library
 -   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) - Official Python SMTP API library
 -   [smtpapi-ruby](http://github.com/sendgrid/smtpapi-ruby) - Official Ruby SMTP API library
+
+The following official libraries are maintained by SendGrid to use the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html):
+-   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 {% info %}
 If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP 
@@ -186,16 +189,10 @@ Django
 
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
 
-{% anchor h3 -PHP-Webhooks %}
-PHP 
-{% endanchor %}
-
--   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
-
 {% anchor h3 -Ruby-Webhooks %}
 Ruby 
 {% endanchor %}
-
+-   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments

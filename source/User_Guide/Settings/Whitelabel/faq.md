@@ -68,7 +68,7 @@ Will my old whitelabel still work?
 
 Yes. It will automatically show up in the whitelabel settings and will be set as the default. You will not lose your whitelabel. We do suggest that you update your whitelabel by making a new one and updating your DNS to reap the benefit of our new features.
 
-When you upgrade, you will need to create new subdomains for IP, link, or domain whitelabels because we have split the whitelabeling functionality from "whitelabel everything" to individually whitelabel each separate piece.
+[When you upgrade](https://support.sendgrid.com/hc/en-us/articles/206855907-Upgrading-your-Whitelabel-), you will need to create new subdomains for IP, link, or domain whitelabels because we have split the whitelabeling functionality from "whitelabel everything" to individually whitelabel each separate piece.
 
 {% anchor h2 %}
 Why whitelabel?
@@ -94,6 +94,7 @@ Related Articles
 {% endanchor %}
 
 * [All You Need To Know About Whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228)
+* [How to upgrade your old whitelabel](https://support.sendgrid.com/hc/en-us/articles/206855907-Upgrading-your-Whitelabel-)
 * [I have created DNS records, but SendGrid is not validating them.](https://support.sendgrid.com/hc/en-us/articles/204075436)
 * [Open SPF](http://www.openspf.org/Introduction)
 * [Whitelabel - Do I need to make DNS changes?](https://support.sendgrid.com/hc/en-us/articles/200181868)
