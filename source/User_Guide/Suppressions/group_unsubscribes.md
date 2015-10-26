@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send.  The list provided here can be filtered by email address or date.
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tags) from within your email.  The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Group Unsubscribes by Date
@@ -30,11 +30,18 @@ Removing Recipients From The List
 
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list.
 
+{% anchor h3 %}
+Group Unsubscribe Substitution Tag
+{% endanchor %}
+
+When you add the ```<% asm_group_unsubscribe_url %>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email. For more substitution tags, please visit our [Template Engine]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+
+
 {% anchor h2 %}
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html).
+You can manage your Global Unsubscribes via the [Advanced Suppression Manager Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 {% anchor h2 %}
 Related

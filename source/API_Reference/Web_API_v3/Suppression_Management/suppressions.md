@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html) to prevent certain types of emails from being delivered to those addresses.
+Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Suppression_Management/groups.html) to prevent certain types of emails from being delivered to those addresses.
 
 {% anchor h2 %}
 POST
@@ -32,7 +32,7 @@ HTTP/1.1 201
 * * * * *
 
 {% anchor h2 %}
-GET 
+GET
 {% endanchor %}
 
 Get suppressed addresses for a given group.
@@ -40,37 +40,7 @@ Get suppressed addresses for a given group.
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions %}
 {% v3response %}
 HTTP/1.1 200
-{"recipient_emails":["test1@example.com","test2@example.com"]}
-{% endv3response %}
-{% endapiv3example %}
-
-* * * * *
-
-{% anchor h2 %}
-GET
-{% endanchor %}
-
-Get suppression groups associated with a given recipient address.
-
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/:email_address %}
-{% v3response %}
-HTTP/1.1 200
-{
-    "suppressions": [
-        {
-            "id": 1,
-            "name": "Weekly Newsletter",
-            "description": "The weekly newsletter",
-            "suppressed": false
-        },
-        {
-            "id": 4,
-            "name": "Special Offers",
-            "description": "Special offers and coupons",
-            "suppressed": false
-        }
-    ]
-}
+["test1@example.com","test2@example.com"]
 {% endv3response %}
 {% endapiv3example %}
 
@@ -87,4 +57,3 @@ Delete a recipient email from the suppressions list for a group.
 HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
-

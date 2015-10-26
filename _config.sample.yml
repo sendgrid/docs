@@ -31,9 +31,6 @@ highlighter: pygments # default python pygments have been replaced by pygments.r
 
 titlecase: true       # Converts page and post titles to titlecase
 
-navigation:	#creates a default for showing navigation unless otherwise overridden in individual file's frontmatter
-  show: true
-
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/page_navigation.html]
@@ -54,8 +51,9 @@ asset_pipeline:
 indextank_api_url: http://:example@example.api.indexden.com #get an index URL at indexden.com
 indextank_index:  docs #set this to the index name you set on indexden.com
 
-# these values are applied as regular expressions
-# indextank_excludes: [index.html, 404.html, ^/secret/]
+# language
+languages: ["en", "es"]
+exclude_from_localizations: ["javascript", "images", "css"]
 
 #pages we link to from many places, change it once here. Must be added to content as {{root_url}}{{site.thisVariable}} in links
 password_requirements: "/Classroom/Basics/password.html"

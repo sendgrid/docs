@@ -24,4 +24,10 @@ When a recipient clicks the Unsubscribe link, they will be asked to confirm thei
 The Email Preferences Link
 {% endanchor %}
 
-Via the Email Preferences link, recipients will see the Email Preferences page. From here, recipients will be able to see all of your ASM groups and their descriptions. They will then be able to choose whether or not they want to receive those types of emails.
+If you choose not to use substitution tags, your emails will automatically have am Email Preferences link, which when clicked will show recipients their personalized Email Preferences page. From here, recipients will be able to see all of your ASM groups and their descriptions. They will then be able to choose whether or not they want to receive those types of emails.
+
+{% anchor h3 %}
+Manage Email Preferences
+{% endanchor %}
+
+You can also choose to manually add the ```<% asm_preferences_url %>``` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences", wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in. For more substitution tags, please visit our [Template Engine]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags).

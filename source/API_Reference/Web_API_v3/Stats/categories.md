@@ -9,7 +9,7 @@ navigation:
 Category Stats provide all of your user's email statistics for your categories.
 
 {% anchor h2 %}
-GET
+GET statistics
 {% endanchor %}
 
 Gets email statistics for the given categories. If you don't pass any parameters, the endpoint will return a sum for each category 10 at a time.
@@ -130,7 +130,7 @@ HTTP/1.1 200
 * * * * *
 
 {% anchor h2 %}
-GET
+GET Sums
 {% endanchor %}
 
 Gets the total sums of each email statistic metric for all categories over the given date range.
