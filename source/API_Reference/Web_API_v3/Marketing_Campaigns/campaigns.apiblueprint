@@ -69,8 +69,8 @@ In order to send or schedule the campaign, you will be required to provide a sub
 
     + Body
 
+            "title": "title can't be blank"
             "title": "title is too long (maximum is 100 characters)"
-            "title": "You already have a campaign with the same name."
             "categories": "categories exceeds 10 category limit"
             "html_content": "html_content exceeds the 1MB limit"
             "plain_content": "plain_content exceeds the 1MB limit"
@@ -82,9 +82,15 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "": "The JSON you have submitted cannot be parsed."
             "": "You've reached your limit of 250 campaigns. Please delete one or more and try again."
 
-### Get all Campaigns [GET]
+## Campaigns [/campaigns?limit={limit}&offset={offset}]
 
+### Get all Campaigns [GET]
+Returns campaigns in reverse order they were created (newest first)
 Returns an empty array if no campaigns exist
+
++ Parameters
+    + limit = 10 (optional, number) ... The maximum number of campaigns to return
+    + offset = 0 (optional, number) ... The index of the slice of campaigns to return, where 0 is the first slice
 
 + Response 200
 
@@ -195,8 +201,8 @@ Returns an empty array if no campaigns exist
 
     + Body
 
+            "title": "title can't be blank"
             "title": "title is too long (maximum is 100 characters)"
-            "title": "You already have a campaign with the same name."
             "categories": "categories exceeds 10 category limit"
             "html_content": "html_content exceeds the 1MB limit"
             "plain_content": "plain_content exceeds the 1MB limit"
@@ -416,6 +422,7 @@ If the specified campaign is in the process of being sent, the only option is to
 
             "": "The JSON you have submitted cannot be parsed."
             "to": "Please provide an email address to which the test should be sent."
+            "to": "You can only send tests to 10 addresses at a time."
             "subject": "Please add a subject to your campaign before sending a test."
             "plain_content": "Plain content and html content can't both be blank. Please set one of these values before sending a test."
             "sender_id": "Please assign a sender identity to your campaign before sending a test."

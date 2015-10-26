@@ -470,7 +470,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
   # handles the specifics of the liquid "parameters" items for the redcarpet:list_item method
   def docs_liquid_individual_params(text)
     debug "\t --Individual Parameter--"
-    # BluePrint example --- :identifier (:optional, :type, :example) … :description
+    # BluePrint example --- :identifier = :default (:optional, :type, :example) … :description
 
     # split by ...
     #       [1] = description
