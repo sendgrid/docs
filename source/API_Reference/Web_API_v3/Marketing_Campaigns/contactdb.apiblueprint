@@ -82,7 +82,7 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
 ### Delete a Custom Field [DELETE]
 
-+ Response 204
++ Response 202
 
 + Response 400
 
@@ -113,7 +113,7 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
 # Group Lists
 
-All recipient IDs are the URL-encoded email; for example if a recipient's email is `foo@example.com`, their recipient ID is `foo@example.com`; if a recipient's email is `bar?other@example.com`, their recipient ID is `bar%3Fother@example.com`.
+All recipient IDs are a URL-safe base64 encoding of the recipient's lower cased email address; for example if a recipient's email is `foo@example.com`, their recipient ID is `Zm9vQGV4YW1wbGUuY29t`.
 
 
 
@@ -211,7 +211,7 @@ Returned if one or more lists were deleted
 + Response 400
 
         "name" : "Returned if list name is a duplicate of existing list or segment"
-        "name" : "Returned if list name is not provided"
+        "name" : "Returned if list name is invalid or not provided"
         "list_id" : "Returned if list_id is not valid"
         "" : "Returned if request body is invalid JSON"
 
@@ -224,7 +224,7 @@ Returned if one or more lists were deleted
 + Parameters
     + delete_contacts = `true` (optional, boolean) ... True to delete all contacts on the list in addition to deleting the list
 
-+ Response 204
++ Response 202
 
      + Body
 
@@ -233,6 +233,7 @@ Returned if one or more lists were deleted
      + Body
 
             "list_id" : "Returned if list_id is not valid"
+            "delete_contacts" : "Returned if delete_contacts is not valid"
 
 + Response 404
 
@@ -262,9 +263,10 @@ Returned if one or more lists were deleted
     + Body
 
             "list_id" : "Returned if list_id is not a valid integer"
-            "page_size" : "Returned if page_size or page are not valid integers"
-            "page_size" : "Returned if page_size is less than 1 or greater than 1000"
+            "page" : "Returned if page is not a valid integer"
             "page" : "Returned if page is less than 1"
+            "page_size" : "Returned if page_size is not a valid integer"
+            "page_size" : "Returned if page_size is less than 1 or greater than 1000"
 
 + Response 404
 
@@ -284,14 +286,19 @@ Returned if one or more lists were deleted
 
     + Body
 
++ Response 400
+
+    + Body
+
+            "list_id" : "Returned if list_id is invalid"
+            "recipient_id" : "Returned if recipient_id is invalid"
+
 + Response 404
 
     + Body
 
             "list_id" : "Returned if list_id does not exist"
-            "list_id" : "Returned if list_id is invalid"
             "recipient_id" : "Returned if recipient_id does not exist"
-            "recipient_id" : "Returned if recipient_id is invalid"
 
 ### Delete a Single Recipient from a Single List [DELETE]
 
@@ -305,7 +312,6 @@ Returned if one or more lists were deleted
 
             "list_id" : "Returned if list_id is not valid"
             "recipient_id" : "Returned if recipient_id is not valid"
-            "recipient_id" : "Returned if recipient_id is not in the list"
 
 + Response 404
 
@@ -369,7 +375,6 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
      + Body
 
             "" : "Returned if request body is not valid json"
-            "" : "Returned if all the recipient ids are invalid"
 
 
 ### Add Multiple Recipients [POST]
@@ -395,7 +400,6 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
      + Body
 
             "" : "Returned if request body is not valid json"
-            "" : "Returned if none of the recipient emails are not defined or valid"
 
 ### Update Recipient [PATCH]
 
@@ -406,8 +410,7 @@ Updates one or more recipients. The body is a list of recipient objects.
      + Body
 
             [
-              {"email": "jones@example.com", "last_name": "Jones"},
-              {"email": "smith@example.com", "last_name": "Smith"}
+              {"email": "jones@example.com", "last_name": "Jones"}
             ]
 
 + Response 201
@@ -421,7 +424,6 @@ Updates one or more recipients. The body is a list of recipient objects.
      + Body
 
             "" : "Returned if request body is not valid json"
-            "" : "Returned if none of the recipient emails are not defined or valid"
 
 ### Delete Recipient [DELETE]
 
@@ -443,7 +445,7 @@ Returned if at least one recipient was deleted
      + Body
 
             "" : "Returned if no recipients are deleted"
-            "" : "Returned if one or more of the provided emails are invalid"
+            "" : "Returned if all of the provided recipient ids are invalid"
             "" : "Returned if request body is not valid json"
 
 
@@ -622,6 +624,7 @@ Mon, 02 Feb 2015 23:59:59 GMT.
      + Body
 
             "" : "Returned if no search params are specified"
+            "field" : "Returned if the provided field is invalid or does not exist"
 
 
 
@@ -630,9 +633,13 @@ Mon, 02 Feb 2015 23:59:59 GMT.
 Valid operators for create and update depend on the type of the field you are segmenting.
 
 * Dates: "eq", "ne", "lt" (before), "gt" (after)
-* Text: "contains", "eq" (is), "ne" (is not)
+* Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value)
 * Numbers: "eq", "lt", "gt"
-* Opens and Clicks: "eq" (opened), "ne" (not opened)
+* Email Clicks and Opens: "eq" (opened), "ne" (not opened)
+
+Segment conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either clicks.campaign_identifier or opens.campaign_identifier. The condition value should be a string containing the id of a completed campaign.
+
+Segments may contain multiple condtions, joined by an "and" or "or" in the "and_or" field. The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
 
 ## Segments [/contactdb/segments]
 
@@ -642,14 +649,30 @@ Valid operators for create and update depend on the type of the field you are se
 
     + Body
 
-            {"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
+            {"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}]}
 
 + Response 201
 
     + Body
 
-            {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
+            {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}], "recipient_count":0}
 
+
++ Response 400
+
+     + Body
+
+            "name" : "Returned if the name is not valid"
+            "list_id" : "Returned if the list_id is not valid"
+            "and_or" : "Returned if and_or and set value is not passed into the request body"
+            "and_or" : "Returned if and_or is set on the only condition passed"
+            "and_or" : "Returned if and_or is set on all conditions"
+            "and_or" : "Returned if and_or is not set on more than one condition and less than all conditions"
+            "operator" : "Returned if operator and set value is not passed into the request body"
+            "value" : "Returned if value and set value is not passed into the request body"
+            "field" : "Returned if field and set value is not passed into the request body"
+            "" : "Returned if request body is not valid json"
+            "" : "Returned if invalid value is passed into one of the request body parameters"
 
 ### List All Segments [GET]
 
@@ -704,6 +727,8 @@ Valid operators for create and update depend on the type of the field you are se
      + Body
 
             "segment_id" : "Returned if segment_id is not valid"
+            "name" : "Returned if the name is not valid"
+            "list_id" : "Returned if the list_id is not valid"
             "and_or" : "Returned if and_or and set value is not passed into the request body"
             "and_or" : "Returned if and_or is set on the only condition passed"
             "and_or" : "Returned if and_or is set on all conditions"
@@ -735,6 +760,7 @@ Valid operators for create and update depend on the type of the field you are se
      + Body
 
             "segment_id" : "Returned if segment_id is not valid"
+            "delete_contacts" : "Returned if delete_contacts is not a valid boolean"
 
 + Response 404
 
@@ -742,10 +768,12 @@ Valid operators for create and update depend on the type of the field you are se
 
             "segment_id" : "Returned if segment_id does not exist"
 
-## Segments [/contactdb/segments/{segment_id}/recipients]
+## Segments [/contactdb/segments/{segment_id}/recipients?page_size={page_size}&page={page}]
 
 + Parameters
     + segment_id (required,number) ... The ID of the segment
+    + page_size = `100` (optional, integer) ... Number of recipients to return at a time (must be a positive integer from 1 to 1000)
+    + page = `1` (optional, integer) ... Page index of recipients to return (must be a positive integer)
 
 ### List Recipients On a Segment [GET]
 
@@ -753,29 +781,7 @@ Valid operators for create and update depend on the type of the field you are se
 
     + Body
 
-            {"recipients":[{"created_at":1423160740,"email":"miller@example.com","first_name":null,"id":"bWlsbGVyQG1pbGxlci50ZXN0","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
-
-+ Response 404
-
-    + Body
-
-            "segment_id" : "Returned if segment_id is not valid"
-            "segment_id" : "Returned if segment_id does not exist"
-
-## Segments [/contactdb/segments/{segment_id}/recipients?page_size=50&page=1]
-
-+ Parameters
-    + segment_id (required, integer) ... The ID of your segment
-    + page_size = `100` (optional, integer) ... Number of recipients to return at a time (must be a positive integer from 1 to 1000)
-    + page = `1` (optional, integer) ... Page index of recipients to return (must be a positive integer)
-
-### List Recipients On a Segment According to Page and Page Size [GET]
-
-+ Response 200
-
-    + Body
-
-            {"recipients":[{"created_at":1423160740,"email":"bWlsbGVyQG1pbGxlci50ZXN0","first_name":null,"id":"miller@example.com","last_clicked":null,"last_emailed":null,"last_name":"Miller","last_opened":null,"updated_at":1423160740}]}
+            {"recipients":[{"created_at": 1422313607,"email": "jones@example.com","first_name": null,"id": "YUBh","last_clicked": null,"last_emailed": null,"last_name": "Jones","last_opened": null,"updated_at": 1422313790,"custom_fields": [{ "id": 23, "name": "pet", "value": "Fluffy", "type": "text"}]}]}
 
 + Response 400
 
