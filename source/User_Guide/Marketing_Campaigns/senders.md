@@ -23,7 +23,7 @@ Create Your Sender Identity
 {% endanchor h2 %}
 
 {% warning %}
-Your sender identity must be verified before you use it to send a campaign.
+Your sender identity must be verified before you may edit it or use it to send a campaign.
 {% endwarning %}
 
 {% warning %}
@@ -35,6 +35,10 @@ emails. We have set up a [sender management feature]({{site.marketing_campaigns_
 so that you can input the right information and add this to your emails.
 
 When you click “Create New Sender,” you will be shown a form where you can set up a sender identity.
+
+{% info %}
+You can create up to 50 unique sender identities.
+{% endinfo %}
 
 ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
 
