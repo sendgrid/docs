@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 {% warning %}
-This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
 {% endwarning %}
 
 

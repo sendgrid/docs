@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 {% warning %}
-This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
 {% endwarning %}
 
 This module allows you to add new Variations to your drafted Marketing Emails. These Variations can be used in A/B testing (also sometimes called split testing).
