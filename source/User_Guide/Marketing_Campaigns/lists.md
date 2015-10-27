@@ -51,6 +51,10 @@ Create a List
 {% endanchor %}
 You create lists when you upload contacts, please check out our information on [uploading contacts]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts) for more information.
 
+{% info %}
+You can create up to 50 lists.
+{% endinfo %}
+
 {% anchor h3 %}
 Add Contacts to a list
 {% endanchor %}
