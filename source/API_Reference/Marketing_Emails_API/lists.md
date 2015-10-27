@@ -5,11 +5,15 @@ title: Lists
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 This endpoint allows you to manage and create Recipient Lists associated with the Marketing Email feature.
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Create a new Recipient List.
@@ -41,7 +45,7 @@ Additional columns may be added to a list at any time by specifying new column n
 * * * * *
 
 {% anchor h2 %}
-edit 
+edit
 {% endanchor %}
 
 Rename a Recipient List.
@@ -70,7 +74,7 @@ Rename a Recipient List.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 List all Recipient Lists on your account, or check if a particular List exists.
@@ -104,7 +108,7 @@ List all Recipient Lists on your account, or check if a particular List exists.
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Remove a Recipient List from your account.

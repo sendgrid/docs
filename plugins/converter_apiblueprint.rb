@@ -235,12 +235,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
     end
     # next up is an element with Body - we don't know whether it's a request or a response
     if text.include? "Body"
-
+      debug "\t text included Body"
       return docs_body(text)
 
     end
 
-    debug "\t body_block = " + @@body_block
+    debug "\t list_item body_block = " + @@body_block
+
+    debug text
 
     if text.include? "Response"
 
@@ -259,14 +261,14 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
       # if we don't have one of the 200 responses, don't bother printing it
       # originally done inside of docs_liquid_output
-      unless @@http_response[0].to_s == "2"
-
-        # call the instance var reset
-        reset_vars()
-
-        # return nothing because we don't want any output here
-        return ""
-      end
+      # unless @@http_response[0].to_s == "2"
+      #
+      #   # call the instance var reset
+      #   reset_vars()
+      #
+      #   # return nothing because we don't want any output here
+      #   return ""
+      # end
 
       return docs_liquid_output(text)
     end
@@ -468,7 +470,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
   # handles the specifics of the liquid "parameters" items for the redcarpet:list_item method
   def docs_liquid_individual_params(text)
     debug "\t --Individual Parameter--"
-    # BluePrint example --- :identifier (:optional, :type, :example) … :description
+    # BluePrint example --- :identifier = :default (:optional, :type, :example) … :description
 
     # split by ...
     #       [1] = description
@@ -620,45 +622,91 @@ class BluePrintHTML < Redcarpet::Render::HTML
 
     output = ""
 
-    #sometimes we have no params, that's OK
-    unless @@param_list.nil?
-      debug "\t PARAMS LIST IS NOT NIL"
-      output += @@param_list + "\n\n"
-    end
+    # which display do we use?
+    display = "v3response"
 
-    unless @@attr_list.nil?
-      debug "\t attr_list is not NIL"
-      output += @@attr_list + "\n\n"
-    end
+    debug "display is " + display
 
+    debug "Response body is " + @@response_body
 
-    output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
-
-    if @@request_body.length > 1
-      output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
-    end
-
-    if @@request_headers.length > 1
-      output +=     "\t {% apiv3requestheader %}" +
-                      @@request_headers.strip +
-                    "\t {% endapiv3requestheader %}"
+    # for backwards compatibility - is this json or not?
+    if !@@response_body.include? "{"
+      if @@response_body.length > 0
+        debug "Did not find JSON array in response body"
+        display = "v3responselist"
+      end
     end
 
 
+    if "v3responselist" == display
 
-    output +=   "\t{% v3response %}\n" +
-        "\t\t" + text + "\n"
+          debug "display is v3responselist"
+          temp = ""
+          temp +=   "\t{% v3responselist #{text} %}\n"
+            responses = @@response_body.split("\n")
+              if @@response_body.include? ":"
 
-    #sometimes, we don't have a response body. That's ok.
-    unless @@params.nil?
-      if @@response_body.length > 1
-        output += JSON.pretty_generate(JSON.parse(@@response_body)) + "\n"
+                  temp += '<h3>Possible ' + text.gsub("HTTP/1.1", "")+ ' Error Messages</h3>'+
+                  '<table id="response-errors" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Field</th>
+                        <th>Error Message</th>
+                      </tr></thead><tbody>'
+
+                  responses.each {|x|
+                    puts "response string: " + x
+                    x = x.gsub('"', "").split(":")
+                    temp += "<tr><td>" + x[0].strip + "</td><td>" + x[1].strip + "</td></tr>"
+                        }
+
+                  temp += "</tbody></table>\n\t"
+              else
+                  debug "This is not a k/v pair of 400 errors"
+                  temp += "<ul>\n"
+                  responses.each {|x|
+                    temp += "\t<li> " + x + "</li>\n"
+                  }
+                  temp += "</ul>\n"
+              end
+          temp += "{%endv3responselist%}\n"
+          debug temp
+          output += temp
+    else
+
+      #sometimes we have no params, that's OK
+      unless @@param_list.nil?
+        debug "\t PARAMS LIST IS NOT NIL"
+        output += @@param_list + "\n\n"
       end
 
+      unless @@attr_list.nil?
+        debug "\t attr_list is not NIL"
+        output += @@attr_list + "\n\n"
+      end
+
+      output += "{% apiv3example endpoint#{@@group_identifier} #{@@method} #{url} %}\n"
+      if @@request_body.length > 1
+        output +=     "\t {% apiv3requestbody %} #{@@request_body.strip} \t {% endapiv3requestbody %}"
+      end
+
+      if @@request_headers.length > 1
+        output +=     "\t {% apiv3requestheader %}" +
+                        @@request_headers.strip +
+                      "\t {% endapiv3requestheader %}"
+      end
+      output +=   "\t{% v3response %}\n" +
+          "\t\t" + text + "\n"
+        unless @@params.nil?
+          if @@response_body.length > 1
+            output += JSON.pretty_generate(JSON.parse(@@response_body)) + "\n"
+          end
+        end
+      output += "\t{% endv3response %}\n"
+      output +=   "{% endapiv3example %}"
     end
 
-    output += "\t{% endv3response %}\n" +
-        "{% endapiv3example %}"
+    #sometimes, we don't have a response body. That's ok.
 
     # call the instance var reset
     reset_vars()

@@ -5,11 +5,15 @@ title: Recipients
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 This module allows you to manage which lists are assigned to marketing email.
 
 {% anchor h2 %}
-add 
+add
 {% endanchor %}
 
 Assign a List to a Marketing Email.
@@ -38,7 +42,7 @@ Assign a List to a Marketing Email.
 * * * * *
 
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
 
 Get all lists assigned to a particular marketing email
@@ -70,7 +74,7 @@ Get all lists assigned to a particular marketing email
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
 
 Remove assigned lists from marketing email

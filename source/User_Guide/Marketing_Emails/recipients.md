@@ -5,6 +5,9 @@ title: Create and Manage Recipients
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a> functionality.
+{% endwarning %}
 
 {% anchor h2 %}
 Create Recipients
