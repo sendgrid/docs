@@ -14,6 +14,10 @@ seo:
 
 Managing contacts is an integral part of your marketing campaigns lifecycle. From our [contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts.
 
+{% info %}
+Your first 2,000 contacts are free.
+{% endinfo %}
+
 To add your contacts, just click the "Add List" or "Segment" button and then select your upload method. For information about how many contacts come with your package, please refer to our [pricing page]({{site.pricing_url}}).
 
 ![]({{root_url}}/images/lists_5.png "Create a Segment")
@@ -74,6 +78,10 @@ Add Contacts From a CSV
 
 To add new contacts, select “Add Contacts” and then select “Upload CSV.” Select your file by dragging a file into or clicking the CSV upload area which says “Drag and drop your CSV here or select it from your computer.”
 
+{% warning %}
+The maximum uploadable file size of your CSV is 2GB.
+{% endwarning %}
+
 {% anchor h3 %}
 Create a New List from a CSV
 {% endanchor %}
@@ -105,6 +113,10 @@ Once we have completed processing your new contacts, you will receive a summary 
 * Error messages for each errored row
 
 If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
+
+{% info %}
+The download link to your CSV with errored rows will be available for 24 hours.
+{% endinfo %}
 
 ![]({{root_url}}/images/contacts_3.png "Upload Contact Status Email")
 
