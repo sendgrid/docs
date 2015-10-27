@@ -17,6 +17,8 @@ email through the [SendGrid Marketing Campaigns template builder]({{site.marketi
 
 From the main templates list: you can add a template, edit a template, or create a campaign using one of your templates. You can also duplicate one of the templates that we provide by clicking the gear icon on the template, then clicking "Duplicate".
 
+You can also create templates directly from a campaign by navigating to the campaign you would like to use as a model, clicking the gear icon, then clicking “Create Template”. This will create a new template with the content from the selected campaign. You will automatically be navigated to the Template Editor where you can view and make changes your new template.
+
 {% info %}
 You can create or add up to 300 different templates.
 {% endinfo %}
