@@ -32,6 +32,8 @@ The “Global Styles” group has two subgroups: “Email Body,” with style op
 
 The “Module Styles” group is where unique styling options exist for the modules used in building your campaign. Dragging and dropping a module into the editor, or selecting an existing one, will reveal the styling options for that module.
 
+You can duplicate a module by clicking the Duplicate Module icon in the upper right corner of the currently selected module. The duplicate will be placed directly beneath the original module.
+
 
 {% anchor h2 %}
 Available Modules
@@ -96,6 +98,12 @@ Pre-header and footer are important pieces of any email campaign, where informat
       <td>WYSIWYG</td>
       <td>"What You See Is What You Get" – an all-purpose module that can contain text and images</td>
       <td>background color, padding</td>
+    </tr>
+    
+    <tr>
+      <td>Divider</td>
+      <td>A visual divider, or horizontal rule, between modules</td>
+      <td>background color, line color, height, padding</td>
     </tr>
 </tbody></table>
 
