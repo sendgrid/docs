@@ -45,7 +45,7 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
             "" : "Returned if request body is invalid JSON"
             "type" : "Returned if custom field type is invalid or not provided"
-            "type" : "Returned if custom field name is not provided"
+            "name" : "Returned if custom field name is not provided"
 
 ### List All Custom Fields [GET]
 
@@ -78,7 +78,7 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
      + Body
 
-            "id" : "Returned if the custom field ID does not exist"
+            "custom_field_id" : "Returned if custom_field_id does not exist"
 
 ### Delete a Custom Field [DELETE]
 
@@ -88,13 +88,13 @@ Treat recipient IDs as opaque values. The `id` value returned by recipient endpo
 
      + Body
 
-            "id" : "Returned if the custom field ID is not valid"
+            "id" : "Returned if custom_field_id is not valid"
 
 + Response 404
 
      + Body
 
-            "id" : "Returned if the custom field ID does not exist"
+            "custom_field_id" : "Returned if custom_field_id does not exist"
 
 
 # Group Reserved Fields
@@ -137,8 +137,8 @@ All recipient IDs are the URL-encoded email; for example if a recipient's email 
 
     + Body
 
-            "name" : "Returned if list name is a duplicate of existing list"
-            "name" : "Returned if the list name is not a string"
+            "name" : "Returned if list name is a duplicate of an existing list or segment"
+            "name" : "Returned if list name is not a string"
             "" : "Returned if request body is invalid JSON"
 
 
@@ -168,7 +168,7 @@ Returned if one or more lists were deleted
 
      + Body
 
-            "id" : "Returned if all the list ids are not valid"
+            "id" : "Returned if all list ids are not valid"
 
 
 ## Lists [/contactdb/lists/{list_id}]
@@ -188,13 +188,13 @@ Returned if one or more lists were deleted
 
      + Body
 
-            "id" : "Returned if the list id is not valid"
+            "list_id" : "Returned if list_id is not valid"
 
 + Response 404
 
      + Body
 
-            "id" : "Returned if the list id does not exist"
+            "list_id" : "Returned if list_id does not exist"
 
 ### Update a List [PATCH]
 
@@ -210,14 +210,14 @@ Returned if one or more lists were deleted
 
 + Response 400
 
-        "name" : "Returned if the list name is a duplicate of existing list or segment"
-        "name" : "Returned if the list name is not provided"
-        "id" : "Returned if the list id is not valid"
+        "name" : "Returned if list name is a duplicate of existing list or segment"
+        "name" : "Returned if list name is not provided"
+        "list_id" : "Returned if list_id is not valid"
         "" : "Returned if request body is invalid JSON"
 
 + Response 404
 
-        "id" : "Returned if list id does not exist"
+        "list_id" : "Returned if list_id does not exist"
 
 ### Delete a List [DELETE]
 
@@ -232,13 +232,13 @@ Returned if one or more lists were deleted
 
      + Body
 
-            "id" : "Returned if the list id is not valid"
+            "list_id" : "Returned if list_id is not valid"
 
 + Response 404
 
      + Body
 
-            "id" : "Returned if the list id does not exist"
+            "list_id" : "Returned if list_id does not exist"
 
 
 
@@ -246,8 +246,8 @@ Returned if one or more lists were deleted
 
 + Parameters
     + list_id (required, integer) ... The ID of your list
-    + page = `1` (optional, integer) ... page index of first recipient to return (default: 1, must be a positive integer)
-    + page_size = `100` (optional, integer) ... number of recipients to return at a time (default: 100, must be a positive integer between 1 and 1000)
+    + page = `1` (optional, integer) ... Page index of first recipient to return (must be a positive integer)
+    + page_size = `100` (optional, integer) ... Number of recipients to return at a time (must be a positive integer between 1 and 1000)
 
 ### List Recipients on a List [GET]
 
@@ -261,7 +261,7 @@ Returned if one or more lists were deleted
 
     + Body
 
-            "id" : "Returned if list id is not a valid integer"
+            "list_id" : "Returned if list_id is not a valid integer"
             "page_size" : "Returned if page_size or page are not valid integers"
             "page_size" : "Returned if page_size is less than 1 or greater than 1000"
             "page" : "Returned if page is less than 1"
@@ -270,7 +270,7 @@ Returned if one or more lists were deleted
 
     + Body
 
-            Returned if list id does not exist
+            "list_id" : "Returned if list_id does not exist"
 
 ## Lists [/contactdb/lists/{list_id}/recipients/{recipient_id}]
 
@@ -288,8 +288,10 @@ Returned if one or more lists were deleted
 
     + Body
 
-            "list_id" : "Returned if the list id does not exist or is invalid"
-            "list_id" : "Returned if the recipient id does not exist or is invalid"
+            "list_id" : "Returned if list_id does not exist"
+            "list_id" : "Returned if list_id is invalid"
+            "recipient_id" : "Returned if recipient_id does not exist"
+            "recipient_id" : "Returned if recipient_id is invalid"
 
 ### Delete a Single Recipient from a Single List [DELETE]
 
@@ -301,16 +303,16 @@ Returned if one or more lists were deleted
 
     + Body
 
-            "list_id" : "Returned if the list id is not valid"
-            "recipient_id" : "Returned if the recipient id is not valid"
-            "recipient_id" : "Returned if the recipient is not in the list"
+            "list_id" : "Returned if list_id is not valid"
+            "recipient_id" : "Returned if recipient_id is not valid"
+            "recipient_id" : "Returned if recipient_id is not in the list"
 
 + Response 404
 
     + Body
 
-            "list_id" : "Returned if the list id does not exist"
-            "recipient_id" : "Returned if the recipient id does not exist"
+            "list_id" : "Returned if list_id does not exist"
+            "recipient_id" : "Returned if recipient_id does not exist"
 
 ## Lists [/contactdb/lists/{list_id}/recipients]
 
@@ -333,7 +335,7 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
 
     + Body
 
-            "list_id" : "Returned if the list id is not a valid integer"
+            "list_id" : "Returned if list_id is not a valid integer"
             "" : "Returned if no valid recipient ids were passed"
             "" : "Returned if no recipients were added"
             "" : "Returned if request body is invalid JSON"
@@ -342,7 +344,7 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
 
     + Body
 
-            Returned if the list id does not exist
+            "list_id": "Returned if list_id does not exist"
 
 # Group Recipients
 
@@ -366,7 +368,7 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
 
      + Body
 
-            "" : "Returned if the request body is not valid json"
+            "" : "Returned if request body is not valid json"
             "" : "Returned if all the recipient ids are invalid"
 
 
@@ -392,7 +394,7 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
 
      + Body
 
-            "" : "Returned if the request body is not valid json"
+            "" : "Returned if request body is not valid json"
             "" : "Returned if none of the recipient emails are not defined or valid"
 
 ### Update Recipient [PATCH]
@@ -418,7 +420,7 @@ Updates one or more recipients. The body is a list of recipient objects.
 
      + Body
 
-            "" : "Returned if the request body is not valid json"
+            "" : "Returned if request body is not valid json"
             "" : "Returned if none of the recipient emails are not defined or valid"
 
 ### Delete Recipient [DELETE]
@@ -442,7 +444,7 @@ Returned if at least one recipient was deleted
 
             "" : "Returned if no recipients are deleted"
             "" : "Returned if one or more of the provided emails are invalid"
-            "" : "Returned if the request body is not valid json"
+            "" : "Returned if request body is not valid json"
 
 
 ## Recipients [/contactdb/recipients?page_size=100&page=1]
@@ -453,8 +455,8 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 {% endinfo %}
 
 + Parameters
-    + page = `1` (optional, integer) ... page index of first recipients to return (default: 0, must be a positive integer)
-    + page_size = `100` (optional, integer) ... number of recipients to return at a time (default: 100, must be a positive integer between 1 and 1000)
+    + page = `1` (optional, integer) ... Page index of first recipients to return (must be a positive integer)
+    + page_size = `100` (optional, integer) ... Number of recipients to return at a time (must be a positive integer between 1 and 1000)
 
 ### List Recipients [GET]
 
@@ -503,13 +505,13 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
      + Body
 
-            "recipient_id" : "Returned if recipient id is not valid"
+            "recipient_id" : "Returned if recipient_id is not valid"
 
 + Response 404
 
      + Body
 
-            "" : "Returned if record for recipient id does not exist"
+            "recipient_id" : "Returned if record for recipient id does not exist"
 
 ### Delete a Recipient [DELETE]
 
@@ -522,13 +524,13 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
      + Body
 
-            "recipient_id" : "Returned if the recipient id is not valid"
+            "recipient_id" : "Returned if recipient_id is not valid"
 
 + Response 404
 
      + Body
 
-            "" : "Returned if record for recipient id does not exist"
+            "recipient_id" : "Returned if record for recipient id does not exist"
 
 ## Recipients [/contactdb/recipients/{recipient_id}/lists]
 
@@ -547,13 +549,13 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
      + Body
 
-            "recipient_id" : "Returned if the recipient id is not valid"
+            "recipient_id" : "Returned if recipient_id is not valid"
 
 + Response 404
 
      + Body
 
-            "" : "Returned if record for the recipient id does not exist"
+            "recipient_id" : "Returned if record for the recipient id does not exist"
 
 ## Recipients [/contactdb/recipients/billable_count]
 
@@ -590,7 +592,7 @@ Mon, 02 Feb 2015 23:59:59 GMT.
 {% endinfo %}
 
 + Parameters
-    + field_name (required, text) ... the name of the field you're looking for
+    + field_name (required, text) ... The name of the field you're looking for
 
 ### Get Recipients Matching Search Criteria [GET]
 
@@ -671,12 +673,17 @@ Valid operators for create and update depend on the type of the field you are se
 
             {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name","value":"Miller","operator":"eq","and_or":""}],"recipient_count":1}
 
++ Response 400
+
+     + Body
+
+            "segment_id" : "Returned if segment_id is not valid"
+
 + Response 404
 
      + Body
 
-            "segment_id" : "Returned if segment id is not valid"
-            "segment_id" : "Returned if segment id does not exist"
+            "segment_id" : "Returned if segment_id does not exist"
 
 ### Update a Segment [PATCH]
 
@@ -696,14 +703,14 @@ Valid operators for create and update depend on the type of the field you are se
 
      + Body
 
-            "segment_id" : "Returned if the segment id is not valid"
-            "operator" : "Returned if "and_or" and set value is not passed into the request body"
-            "operator" : "Returned if "and_or" is set on the only condition passed"
-            "operator" : "Returned if "and_or" is set on all conditions"
-            "operator" : "Returned if "and_or" is not set on more than one condition when passing multiple conditions"
-            "operator" : "Returned if "op" and set value is not passed into the request body"
-            "value" : "Returned if "value" and set value is not passed into the request body"
-            "field" : "Returned if "field" and set value is not passed into the request body"
+            "segment_id" : "Returned if segment_id is not valid"
+            "and_or" : "Returned if and_or and set value is not passed into the request body"
+            "and_or" : "Returned if and_or is set on the only condition passed"
+            "and_or" : "Returned if and_or is set on all conditions"
+            "and_or" : "Returned if and_or is not set on more than one condition and less than all conditions"
+            "operator" : "Returned if operator and set value is not passed into the request body"
+            "value" : "Returned if value and set value is not passed into the request body"
+            "field" : "Returned if field and set value is not passed into the request body"
             "" : "Returned if request body is not valid json"
             "" : "Returned if invalid value is passed into one of the request body parameters"
 
@@ -711,7 +718,7 @@ Valid operators for create and update depend on the type of the field you are se
 
      + Body
 
-            "segment_id" : "Returned if the segment id does not exist"
+            "segment_id" : "Returned if segment_id does not exist"
 
 ### Delete a Segment [DELETE]
 
@@ -727,13 +734,13 @@ Valid operators for create and update depend on the type of the field you are se
 
      + Body
 
-            "segment_id" : "Returned if the segment id is not valid"
+            "segment_id" : "Returned if segment_id is not valid"
 
 + Response 404
 
      + Body
 
-            "segment_id" : "Returned if the segment id does not exist"
+            "segment_id" : "Returned if segment_id does not exist"
 
 ## Segments [/contactdb/segments/{segment_id}/recipients]
 
@@ -752,15 +759,15 @@ Valid operators for create and update depend on the type of the field you are se
 
     + Body
 
-            "segment_id" : "Returned if the segment id is not valid"
-            "segment_id" : "Returned if the segment id does not exist"
+            "segment_id" : "Returned if segment_id is not valid"
+            "segment_id" : "Returned if segment_id does not exist"
 
 ## Segments [/contactdb/segments/{segment_id}/recipients?page_size=50&page=1]
 
 + Parameters
     + segment_id (required, integer) ... The ID of your segment
-    + page_size = `100` (optional, integer) ... number of recipients to return at a time (default: 100, must be a positive integer from 1 to 1000)
-    + page = `1` (optional, integer) ... page index of recipients to return (default: 0, must be a positive integer)
+    + page_size = `100` (optional, integer) ... Number of recipients to return at a time (must be a positive integer from 1 to 1000)
+    + page = `1` (optional, integer) ... Page index of recipients to return (must be a positive integer)
 
 ### List Recipients On a Segment According to Page and Page Size [GET]
 
@@ -782,4 +789,5 @@ Valid operators for create and update depend on the type of the field you are se
 
     + Body
 
-            "segment_id" : "Returned if the segment id is not valid or does not exist."
+            "segment_id" : "Returned if segment_id is not valid"
+            "segment_id" : "Returned if segment_id does not exist"

@@ -82,7 +82,7 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "": "The JSON you have submitted cannot be parsed."
             "": "You've reached your limit of 250 campaigns. Please delete one or more and try again."
 
-## Campaigns [/campaigns?limit={limit}&offset={offset}]
+## Campaigns [/campaigns{?limit,offset}]
 
 ### Get all Campaigns [GET]
 Returns campaigns in reverse order they were created (newest first)
