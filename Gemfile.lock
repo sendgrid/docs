@@ -140,3 +140,6 @@ DEPENDENCIES
   simple-cloudfront-invalidator
   therubyracer (= 0.12.2)
   yui-compressor
+
+BUNDLED WITH
+   1.10.5

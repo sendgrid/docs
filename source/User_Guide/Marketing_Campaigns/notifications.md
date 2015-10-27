@@ -1,0 +1,31 @@
+---
+layout: page
+weight: 5
+title: Notifications
+navigation:
+  show: true
+seo:
+  title: Notifications
+  override: true
+  description:
+---
+
+{% anchor h2 %}
+Set Notifications
+{% endanchor %}
+
+If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid about your account's marketing campaigns activity.  Email notifications about CSV upload summaries, sender verifications, A/B test winner notifications, and list/segment exports will be sent to this account.
+
+To enable this setting, enter the new email address into the modal window that pops up.
+
+![]({{root_url}}/images/marketing_campaigns_set_notification_2.png "Add email for notifications")
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/overview.html">Dashboard</a>
+    </div>
+
+    <div class="col-md-6 text-right">
+        <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns Overview</a><strong>&nbsp;&rsaquo;</strong>
+    </div>
+</div>

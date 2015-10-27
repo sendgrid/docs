@@ -8,6 +8,10 @@ seo:
 navigation:
   show: true
 ---
+{% warning %}
+This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+{% endwarning %}
+
 
 <p>SendGrid has a Marketing Email API that allows users to access data and interact with the Marketing Email functionality of SendGrid website. We also have a <a href="{{root_url}}/User_Guide/Marketing_Emails/index.html">Marketing Email web interface</a>.</p>
 
@@ -18,7 +22,7 @@ navigation:
 <hr/>
 
 {% anchor h2 %}
-URL Format 
+URL Format
 {% endanchor %}
 <p>The following is the syntax for making Marketing Email API requests:</p>
 
@@ -28,14 +32,14 @@ URL Format
 
 <ul>
 	<li><strong>[action]</strong> - Each module supports multiple actions such as add, get, and delete.</li>
-	
+
 	<li><strong>[format]</strong> - This determines the response format. It can be either json for a JSON response or xml for an XML response.</li>
-	
+
 </ul>
 <hr/>
 
 {% anchor h2 %}
-HTTP Return codes 
+HTTP Return codes
 {% endanchor %}
 <ul>
 	<li><strong>2XX</strong> - The API call was successful.</li>
@@ -44,12 +48,12 @@ HTTP Return codes
 </ul>
 
 {% anchor h2 %}
-Responses 
+Responses
 {% endanchor %}
 <p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
 
 {% anchor h2 %}
-Errors 
+Errors
 {% endanchor %}
 <ul>
 	<li>XML
@@ -94,7 +98,7 @@ success
 <hr/>
 
 {% anchor h2 %}
-Authentication 
+Authentication
 {% endanchor %}
 <p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.</p>
 <ul>

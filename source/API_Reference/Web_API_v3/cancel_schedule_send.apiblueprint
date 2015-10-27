@@ -49,11 +49,7 @@ Validate whether or not a batch id is valid
 + Response 400 (application/json)
 
     + Body
-
-             {
-                "errors":[{"field": null, "message": "invalid batch id"}]
-             }
-
+          "" : "invalid batch id"
 
 # Group Cancel Scheduled Sends
 
@@ -84,10 +80,9 @@ be returned.
 + Response 400
 
     + Body
-
-            "" : "max limit reached"
-            "batch_id" : "invalid batch id"
-            "batch_id" : "a status for this batch id exists, try PATCH to update the status"
+          "" : "max limit reached"
+          "" : "invalid batch id"
+          "batch_id" : "a status for this batch id exists, try PATCH to update the status"
 
 ## Manage cancelled user scheduled sends [/user/scheduled_sends/{batch_id}]
 
@@ -127,7 +122,7 @@ Update the status of a scheduled send.
 
     + Body
 
-            "" : "batch id not found"
+        "" : "batch id not found"
 
 ### Delete a cancellation or pause of a scheduled send [DELETE]
 
@@ -141,4 +136,4 @@ Delete the cancellation/pause of a scheduled send.
 
     + Body
 
-            "" : "batch id not found"
+        "" : "batch id not found"

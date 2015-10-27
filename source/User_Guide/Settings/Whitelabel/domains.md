@@ -16,6 +16,10 @@ When in doubt, contact your DNS registrar or web hosting service’s technical s
 
 SendGrid’s domain whitelabel allows you to whitelabel your domain and get rid of the “via sendgrid.net” message on your emails, even if you don’t have a dedicated IP address with SendGrid. You can start to build your domain’s email reputation and explicitly show all your recipients that you actually sent these emails. This should help increase your deliverability and reduce your potential for spam reports.
 
+{% info %}
+Marketing Campaigns [Sender Identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) that use the same domain as your domain whitelabel will automatically verify.
+{% endinfo %}
+
 Whitelabeling is critical to your email reputation and there are a couple things you should know:
 
 1. You can only have one active and verified whitelabel per root domain. example.com is a root domain, where em.example.com is a subdomain.
