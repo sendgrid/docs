@@ -21,10 +21,10 @@ Generate a new Batch ID to associate with scheduled sends
 
 ### Generate Batch ID [POST]
 
-+ Request
++ Request (application/json)
 
 
-+ Response 201 (application/json)
++ Response 201
 
     + Body
 
@@ -32,15 +32,13 @@ Generate a new Batch ID to associate with scheduled sends
                 "batch_id": "YOUR_BATCH_ID"
             }
 
-## Validate Batch ID [/mail/batch]
-
 ### Validate Batch ID [GET]
 
 Validate whether or not a batch id is valid
 
-+ Request
++ Request (application/json)
 
-+ Response 200 (application/json)
++ Response 200
 
     + Body
 
@@ -95,9 +93,9 @@ A CRUD for managing user scheduled send cancellations
 Get cancel/paused scheduled send information. If {batch_id} is omitted, all of the user's scheduled send cancellations
 are returned
 
-+ Request
++ Request (application/json)
 
-+ Response 200 (application/json)
++ Response 200
 
    + Body
 
@@ -110,7 +108,7 @@ are returned
 
 Update the status of a scheduled send.
 
-+ Request
++ Request (application/json)
 
    + Body
 
@@ -118,7 +116,7 @@ Update the status of a scheduled send.
                "status": "pause"
             }
 
-+ Response 204 (application/json)
++ Response 204
 
 + Response 404
 
@@ -127,9 +125,10 @@ Update the status of a scheduled send.
         "" : "batch id not found"
 
 ### Delete a cancellation or pause of a scheduled send [DELETE]
+
 Delete the cancellation/pause of a scheduled send.
 
-+ Request
++ Request (application/json)
 
 + Response 204
 
