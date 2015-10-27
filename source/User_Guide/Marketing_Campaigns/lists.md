@@ -76,6 +76,10 @@ Create a Segment
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
 
+{% info %}
+You can create up to 100 segments.
+{% endinfo %}
+
 To set up a segment, click the “add list or Segment” button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
 
 ![]({{root_url}}/images/lists_5.png "Delete a List")
@@ -87,6 +91,10 @@ example, a field that is a “number” will show greater than, less than, and e
 show ```IS``` and ```IS NOT``` as options. As you add conditions you
 will be able to select ```AND``` or ```OR``` as options, where ```AND``` indicates
 both conditions are required and ```OR``` indicates either condition will work.
+
+{% info %}
+You can add up to 15 different conditions per segment.
+{% endinfo %}
 
 ![]({{root_url}}/images/lists_3.png "Create a Segment")
 
@@ -109,6 +117,9 @@ The CSV export email will look like:
 
 ![]({{root_url}}/images/lists_4.png "Export a Segment List")
 
+{% info %}
+The download link for your CSV export will be valid for 24 hours.
+{% endinfo %}
 
 <div class="row">
     <div class="col-md-6 text-left">
