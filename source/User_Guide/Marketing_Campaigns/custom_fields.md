@@ -18,10 +18,6 @@ To add custom fields, simply navigate to the [custom fields page]({{site.marketi
 
 ![]({{root_url}}/images/custom_fields_3.png "See Your New Custom Field")
 
-{% info %}
-You can have up to 100 custom fields of each type.  
-{% endinfo %}
-
 To create a new custom field, simply click the “create new field” button at the top of the page. You will then see the “add new custom field” form, where you can add in the data about your custom field.
 
 ![]({{root_url}}/images/custom_fields_2.png "Add New Custom Field")
@@ -33,6 +29,14 @@ database. You will be able to query your list in different ways, based on the da
 * **Date** - will allow you to select contacts before, after, or on a specific date. *Example: 1/1/2014*
 * **Text** - will allow you to select contacts who match specific text. *Example: Pet field that says "Dog"*
 * **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
+
+{% info %}
+You can create up to 20 custom fields for each data type: date, text, and number.
+{% endinfo %}
+
+{% warning %}
+Text custom fields are limited to a length of 240 characters.
+{% endwarning %}
 
 ![]({{root_url}}/images/custom_fields_1.png "Default Custom Fields")
 
