@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Supression Groups
+title: Suppression Groups
 navigation:
   show: true
 ---
