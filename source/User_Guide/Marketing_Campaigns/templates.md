@@ -10,7 +10,7 @@ seo:
   description:
 ---
 
-<iframe src="//player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 A template is the basic structure of the email you will be sending out to your contacts. You can import the HTML for an
 email through the [SendGrid Marketing Campaigns template builder]({{site.marketing_campaigns_url}}/templates) or you can use one of the default templates we have provided.

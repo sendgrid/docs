@@ -10,7 +10,7 @@ seo:
   description:
 ---
 
-<iframe src="//player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% anchor h2 %}
 Verify Your Account Settings
