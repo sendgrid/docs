@@ -182,6 +182,18 @@ The following parameters are sent with delivery events: bounce, deferred, delive
          <td>smtp-id</td>
          <td>An id attached to the message by the originating system</td>
       </tr>
+      <tr>
+         <td>ip</td>
+         <td>Which IP address was used to send the email.</td>
+      </tr>
+      <tr>
+         <td>tls</td>
+         <td>Whether or not TLS was used when sending the email.</td>
+      </tr>
+      <tr>
+         <td>cert_error</td>
+         <td>Whether there was a certificate error on the receiving side.</td>
+      </tr>
    </tbody>
 </table>
 
@@ -215,7 +227,15 @@ The following parameters are sent with engagement events: click, open, spamrepor
       </tr>
       <tr>
          <td>ip</td>
-         <td>The IP Address where the event originated</td>
+         <td>Which IP address was used to send the email.</td>
+      </tr>
+      <tr>
+         <td>tls</td>
+         <td>Whether or not TLS was used when sending the email.</td>
+      </tr>
+      <tr>
+         <td>cert_error</td>
+         <td>Whether there was a certificate error on the receiving side.</td>
       </tr>
    </tbody>
 </table>
@@ -467,7 +487,10 @@ Bounce
   },
   "asm_group_id": 1,
   "reason":"500 No Such User",
-  "type":"bounce"
+  "type":"bounce",
+  "ip" : "127.0.0.1",
+  "tls" : "1",
+  "cert_error" : "0"
 }
 {% endcodeblock %}
 
@@ -557,7 +580,10 @@ Deferred
     "newsletter_id": "1943530",
     "newsletter_send_id": "2308608"
   },
-  "asm_group_id": 1
+  "asm_group_id": 1,
+  "ip" : "127.0.0.1",
+  "tls" : "0",
+  "cert_error" : "0"
 }
 {% endcodeblock %}
 
@@ -600,7 +626,10 @@ Delivered
     "newsletter_id": "1943530",
     "newsletter_send_id": "2308608"
   },
-  "asm_group_id": 1
+  "asm_group_id": 1,
+  "ip" : "127.0.0.1",
+  "tls" : "1",
+  "cert_error" : "1"
 }
 {% endcodeblock %}
 
