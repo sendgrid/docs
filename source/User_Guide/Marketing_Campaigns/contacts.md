@@ -98,7 +98,13 @@ You can manually add a contact or upload a CSV of contacts directly to a list th
 Select Your Custom Fields
 {% endanchor %}
 
-Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row. For each header you can select which custom field to associate to the data in the column. If the header row matches the custom field name, the two will automatically be connected. You can also add a custom field if you need to.
+Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row. 
+
+{% info %}
+If you have a CSV that contains data you do not wish to upload, you may choose to skip certain column headers. All column headers other than "Email" may be skipped by selecting the "Skip Column" checkbox to the right of the column header. Skipped column headers will not be uploaded and will not appear as custom fields within an individual contact's profile.
+{% endinfo %}
+
+For each header you can select which custom field to associate to the data in the column. If the header matches a custom field name, the two will automatically be connected. You can also add a custom field if you need to.
 
 You will see the progress as your file uploads to SendGrid. This simply shows that we have the information. If your list is quite large, we will start the process of storing and automatically segmenting your contacts if you have already set up segments on your account. For smaller lists, you will see your contacts in your new list quickly.
 
@@ -112,10 +118,10 @@ Once we have completed processing your new contacts, you will receive a summary 
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV with the errored rows so that you can fix and re-upload. If you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and re-upload those contacts. If you’re watching in the UI, every time you refresh the page your contact # should change as we’re processing your contacts.
 
 {% info %}
-The download link to your CSV with errored rows will be available for 24 hours.
+The download link to your CSV of errored rows will be available for 24 hours.
 {% endinfo %}
 
 ![]({{root_url}}/images/contacts_3.png "Upload Contact Status Email")
