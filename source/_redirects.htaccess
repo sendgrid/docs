@@ -41,7 +41,7 @@ Redirect 301 /API_Reference/Reseller_API/account_overview.html https://sendgrid.
 Redirect 301 /API_Reference/Reseller_API/apps.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/apps.html
 Redirect 301 /API_Reference/Reseller_API/authenticate_a_customer_subuser.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html
 Redirect 301 /API_Reference/Reseller_API/authenticate_a_customer.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html
-Redirect 301 /API_Reference/Reseller_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/automatic_login.html
+Redirect 301 /API_Reference/Reseller_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html
 Redirect 301 /API_Reference/Reseller_API/customer_account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_account_limits.html
@@ -52,7 +52,7 @@ Redirect 301 /API_Reference/Reseller_API/customer_spam_reports.html https://send
 Redirect 301 /API_Reference/Reseller_API/customer_statistics.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_statistics.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_apps.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html
-Redirect 301 /API_Reference/Reseller_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html
+Redirect 301 /API_Reference/Reseller_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_bounces.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_event_notification_url.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html
@@ -74,7 +74,7 @@ Redirect 301 /API_Reference/Reseller_API/parse_settings.html https://sendgrid.co
 Redirect 301 /API_Reference/Reseller_API/pending_account_changes.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/pending_account_changes.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html
-Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html
+Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html
@@ -89,7 +89,7 @@ Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/account_overview.html h
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/apps.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/apps.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer.html
-Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html
+Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/billing.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing.html
@@ -101,7 +101,7 @@ Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_spam_reports.h
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_statistics.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_statistics.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html
-Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_automatic_login.html
+Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html
@@ -130,11 +130,14 @@ Redirect 301 /API_Reference/Reseller_Haiku_API/customer_deprovision.html https:/
 Redirect 301 /API_Reference/Reseller_Haiku_API/customer_provision.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/customer_provision.html
 Redirect 301 /API_Reference/Reseller_Haiku_API/customer_sso.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/customer_sso.html
 Redirect 301 /API_Reference/Reseller_Haiku_API/index.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/index.html
-Redirect 301 /API_Reference/Web_API_v3/cancel_scheduled_send.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
 Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/index.html
 Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/templates.html
 Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/versions.html
 Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/smtpapi.html
+Redirect 301 /API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
+Redirect 301 /API_Reference/Web_API/Reseller_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html
+Redirect 301 /API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html
+Redirect 301 /API_Reference/Web_API_v3/cancel_scheduled_send.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
 Redirect 301 /API_Reference/Web_API_v3/event_activity.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html
