@@ -8,6 +8,16 @@ Redirect 301 /API_Reference/Customer_Subuser_API/automatic_login.html https://se
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Customer_Subuser_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/index.html
+Redirect 301 /API_Reference/Marketing_Emails/	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails/
+Redirect 301 /API_Reference/Marketing_Emails_API/categories.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/categories.html
+Redirect 301 /API_Reference/Marketing_Emails_API/emails.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/emails.html
+Redirect 301 /API_Reference/Marketing_Emails_API/lists.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/lists.html
+Redirect 301 /API_Reference/Marketing_Emails_API/index.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/index.html
+Redirect 301 /API_Reference/Marketing_Emails_API/newsletters.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/newsletters.html
+Redirect 301 /API_Reference/Marketing_Emails_API/recipients.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/recipients.html
+Redirect 301 /API_Reference/Marketing_Emails_API/schedule.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/schedule.html
+Redirect 301 /API_Reference/Marketing_Emails_API/sender_address.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/sender_address.html
+Redirect 301 /API_Reference/Marketing_Emails_API/variations.html	https://sendgrid.com/docs/API_Reference/Web_API/Marketing_Emails_API/variations.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html
 Redirect 301 /API_Reference/Reseller_API/customer_subuser_account_limits.html https://sendgrid.com/docs/API_Reference/Reseller_API/v1_(deprecated)/customer_account_limits.html
