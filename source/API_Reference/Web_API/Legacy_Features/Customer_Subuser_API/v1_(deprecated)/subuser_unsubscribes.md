@@ -9,11 +9,11 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the v2 Customer Subuser API <a href="{{root_url}}/API_Reference/Customer_Subuser_API/subuser_unsubscribes.html">Subuser Unsubscribes</a> page.
+This feature is deprecated, please go to the v2 Customer Subuser API <a href="{{root_url}}/API_Reference/Web_API/Customer_Subuser_API/subuser_unsubscribes.html">Subuser Unsubscribes</a> page.
 {% endwarning %}
 
 {% anchor h2 %}
-Retrieve Unsubscribes 
+Retrieve Unsubscribes
 {% endanchor %}
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -115,7 +115,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 * * * * *
 
 {% anchor h2 %}
-Delete Unsubscribes 
+Delete Unsubscribes
 {% endanchor %}
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
@@ -222,7 +222,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 * * * * *
 
 {% anchor h2 %}
-Add Unsubscribes 
+Add Unsubscribes
 {% endanchor %}
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 

@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_account_limits.html) Reseller Customer Account Limits page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_account_limits.html) Reseller Customer Account Limits page.
 {% endwarning %}
 
 Throttle your customer when you need them to send only a specific amount of emails at a specified interval.
@@ -17,7 +17,7 @@ Throttle your customer when you need them to send only a specific amount of emai
 * * * * *
 
 {% anchor h2 %}
-Retrieve 
+Retrieve
 {% endanchor %}
 
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
@@ -120,7 +120,7 @@ Retrieve account limits for a specific customer. If the API call response is emp
 * * * * *
 
 {% anchor h2 %}
-No Limit 
+No Limit
 {% endanchor %}
 
 Obtain a complete list of all customer.
@@ -226,7 +226,7 @@ result><message>success</message></result>
 * * * * *
 
 {% anchor h2 %}
-Recurring Reset 
+Recurring Reset
 {% endanchor %}
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
@@ -362,7 +362,7 @@ result><message>success</message></result>
 * * * * *
 
 {% anchor h2 %}
-Total Credits 
+Total Credits
 {% endanchor %}
 
 Set a subusers credits to a specified amount.
@@ -474,7 +474,7 @@ result><message>success</message></result>
 * * * * *
 
 {% anchor h2 %}
-Increment Credits 
+Increment Credits
 {% endanchor %}
 
 Increment a subusers credits by a specified amount.
@@ -586,7 +586,7 @@ result><message>success</message></result>
 * * * * *
 
 {% anchor h2 %}
-Decrement Credits 
+Decrement Credits
 {% endanchor %}
 
 Decrement a subusers credits by a specified amount.

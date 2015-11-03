@@ -9,11 +9,11 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_invalid_emails.html) Reseller Customer Invalid Emails page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_invalid_emails.html) Reseller Customer Invalid Emails page.
 {% endwarning %}
 
 {% anchor h2 %}
-Retrieve Invalid Emails 
+Retrieve Invalid Emails
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -77,15 +77,15 @@ Retrieve Invalid Emails
 invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=customer@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -96,7 +96,7 @@ invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain
 * * * * *
 
 {% anchor h2 %}
-Delete Invalid Emails 
+Delete Invalid Emails
 {% endanchor %}
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.

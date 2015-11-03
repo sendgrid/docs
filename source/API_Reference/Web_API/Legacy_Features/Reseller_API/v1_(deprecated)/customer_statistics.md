@@ -9,11 +9,11 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_statistics.html) Reseller Customer Statistics page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_statistics.html) Reseller Customer Statistics page.
 {% endwarning %}
 
 {% anchor h2 %}
-Retrieve Customer Statistics 
+Retrieve Customer Statistics
 {% endanchor %}
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
@@ -82,15 +82,15 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -101,7 +101,7 @@ stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces
 * * * * *
 
 {% anchor h2 %}
-Retrieve Aggregates 
+Retrieve Aggregates
 {% endanchor %}
 
 Retrieve all-time totals for your customer
@@ -158,15 +158,15 @@ Retrieve all-time totals for your customer
 stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;aggregate=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -177,7 +177,7 @@ stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><open
 * * * * *
 
 {% anchor h2 %}
-Category List 
+Category List
 {% endanchor %}
 
 Retrieve a list of all the categories used in your customers account.
@@ -237,15 +237,15 @@ Retrieve a list of all the categories used in your customers account.
 categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;list=tru
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -256,7 +256,7 @@ categories><category>categoryA</category><category>categoryB</category><category
 * * * * *
 
 {% anchor h2 %}
-Category Statistics 
+Category Statistics
 {% endanchor %}
 
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
@@ -345,27 +345,27 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h4>Command - Using an array of categories</h4>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>

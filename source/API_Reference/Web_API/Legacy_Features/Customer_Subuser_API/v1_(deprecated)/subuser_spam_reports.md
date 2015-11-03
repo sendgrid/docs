@@ -9,12 +9,12 @@ navigation:
 ---
 
 {% warning %}
-  This feature is deprecated. Please go to the [Version 2]({{root_url}}/API_Reference/Customer_Subuser_API/subuser_spam_reports.html) Customer Subuser Spam Reports page 
+  This feature is deprecated. Please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/subuser_spam_reports.html) Customer Subuser Spam Reports page 
 
 {% endwarning %}
 
 {% anchor h2 %}
-Retrieve Spam Reports 
+Retrieve Spam Reports
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -115,7 +115,7 @@ Retrieve Spam Reports
 * * * * *
 
 {% anchor h2 %}
-Delete Spam Reports 
+Delete Spam Reports
 {% endanchor %}
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 

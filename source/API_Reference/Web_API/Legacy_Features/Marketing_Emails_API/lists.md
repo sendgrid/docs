@@ -39,7 +39,7 @@ Create a new Recipient List.
 {% endapiexample %}
 
 {% info %}
-Additional columns may be added to a list at any time by specifying new column names when using the <a href="{{root_url}}/API_Reference/Marketing_Emails_API/emails.html#-add">Email Add Endpoint</a>.
+Additional columns may be added to a list at any time by specifying new column names when using the <a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html#-add">Email Add Endpoint</a>.
 {% endinfo %}
 
 * * * * *

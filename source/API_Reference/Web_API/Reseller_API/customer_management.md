@@ -5,9 +5,9 @@ title: Customer Management
 navigation:
    show: true
 ---
-These are actions that directly affect your customer. We provide access via XML and JSON. 
+These are actions that directly affect your customer. We provide access via XML and JSON.
 {% anchor h2 %}
-Create a Customer 
+Create a Customer
 {% endanchor %}
 
 {% parameters create %}
@@ -25,7 +25,7 @@ Create a Customer
  {% parameter 'phone' 'Yes' 'No more than 50 characters' 'Phone number of new customer' %}
  {% parameter 'website' 'Yes' 'No more than 255 characters' 'Website of new customer' %}
  {% parameter 'company' 'Yes' 'No more than 255 characters' 'Company of new customer' %}
- {% parameter 'package' 'Yes' 'No more than 255 characters' 'Name of the Package to assign to customer. You can view the available package [here](/API_Reference/Reseller_API/view_available_packages.html).' %}
+ {% parameter 'package' 'Yes' 'No more than 255 characters' 'Name of the Package to assign to customer. You can view the available package [here]({{root_url}}/API_Reference/Web_API/Reseller_API/view_available_packages.html).' %}
  {% parameter 'whitelabel' 'Yes' 'No more than 255 characters' 'The domain name for whitelabel. The default one is *sendgrid.me*' %}
  {% parameter 'ip_group[]' 'No' 'No more than 255 characters for each ip_group name. It must belong to you.' 'Name of the IP Group you wish to optionally add.' %}
  {% parameter 'ip[]' 'No' 'Valid ip address that belongs to you.' 'If package allows it, you can optionally add additional IP addresses.' %}
@@ -51,7 +51,7 @@ Create a Customer
 * * * * *
 
 {% anchor h2 %}
-Delete a Customer 
+Delete a Customer
 {% endanchor %}
 Remove a customer from your account. This is **not** the same as disabling a customer on our system. This is the same thing as closing out a customers account at the end of their billing cycle.
 
@@ -77,7 +77,7 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 * * * * *
 
 {% anchor h2 %}
-Retrieve Customers 
+Retrieve Customers
 {% endanchor %}
 Obtain a complete list of all customers.
 
@@ -173,7 +173,7 @@ Obtain a complete list of all customers.
 * * * * *
 
 {% anchor h2 %}
-Enable a Customer 
+Enable a Customer
 {% endanchor %}
 Enable a customer so they may start sending out emails again. This call will not enable website access.
 
@@ -200,7 +200,7 @@ Enable a customer so they may start sending out emails again. This call will not
 * * * * *
 
 {% anchor h2 %}
-Disable a Customer 
+Disable a Customer
 {% endanchor %}
 This prevents them from sending out emails with SendGrid.
 
@@ -227,7 +227,7 @@ This prevents them from sending out emails with SendGrid.
 * * * * *
 
 {% anchor h2 %}
-Enable Website Access To A Customer 
+Enable Website Access To A Customer
 {% endanchor %}
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
@@ -254,7 +254,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 * * * * *
 
 {% anchor h2 %}
-Disable Website Access To A Customer 
+Disable Website Access To A Customer
 {% endanchor %}
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
@@ -281,7 +281,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 * * * * *
 
 {% anchor h2 %}
-Update Customer Profile 
+Update Customer Profile
 {% endanchor %}
 Allows you to update your customers profile information
 
@@ -318,7 +318,7 @@ Allows you to update your customers profile information
 * * * * *
 
 {% anchor h2 %}
-Update Customer Password 
+Update Customer Password
 {% endanchor %}
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 
@@ -347,7 +347,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 * * * * *
 
 {% anchor h2 %}
-Update Customer Username 
+Update Customer Username
 {% endanchor %}
 Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
@@ -376,7 +376,7 @@ Note that your customer account username is used to login to our SMTP server *an
 * * * * *
 
 {% anchor h2 %}
-Update Customer Email Address 
+Update Customer Email Address
 {% endanchor %}
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 

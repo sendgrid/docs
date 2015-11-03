@@ -9,12 +9,12 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the  <a href="{{root_url}}/API_Reference/Customer_Subuser_API/subuser_bounces.html"> Version 2 </a> Customer Subuser API Bounces page.
+This feature is deprecated, please go to the  <a href="{{root_url}}/API_Reference/Web_API/Customer_Subuser_API/subuser_bounces.html"> Version 2 </a> Customer Subuser API Bounces page.
 {% endwarning %}
 
 
 {% anchor h2 %}
-Retrieve Bounces 
+Retrieve Bounces
 {% endanchor %}
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -124,7 +124,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 * * * * *
 
 {% anchor h2 %}
-Delete Bounces 
+Delete Bounces
 {% endanchor %}
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 

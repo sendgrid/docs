@@ -7,11 +7,11 @@ navigation:
 ---
 
 {% warning %}
-This endpoint has been deprecated, and should not be used. Use the [Event Notification app]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification) with the [Subuser App endpoint]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html) instead.
+This endpoint has been deprecated, and should not be used. Use the [Event Notification app]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification) with the [Subuser App endpoint]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/apps.html) instead.
 {% endwarning %}
 
 {% anchor h2 %}
-Get 
+Get
 {% endanchor %}
 
 {% parameters get %}
@@ -34,7 +34,7 @@ Get
 * * * * *
 
 {% anchor h2 %}
-Update / Set URL 
+Update / Set URL
 {% endanchor %}
 
 {% parameters set %}
@@ -59,7 +59,7 @@ Update / Set URL
 * * * * *
 
 {% anchor h2 %}
-Delete 
+Delete
 {% endanchor %}
 
 {% parameters delete %}

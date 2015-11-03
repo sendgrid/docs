@@ -9,11 +9,11 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/apps.html) Reseller Apps page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/apps.html) Reseller Apps page.
 {% endwarning %}
 
 {% anchor h2 %}
-List 
+List
 {% endanchor %}
 
 List all of the available apps.
@@ -78,15 +78,15 @@ Note: The *name* entry is used in all the other API calls to identify a app.
     </filters>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;method=apps&amp;user=customer@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -94,9 +94,9 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 {"name":"twitter","title":"Twitter","description":"This plugin allows you to send an email message to twitter","activated":false}
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Activate App 
+Activate App
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -154,15 +154,15 @@ Activate App
 <result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -176,7 +176,7 @@ Activate App
 * * * * *
 
 {% anchor h2 %}
-Deactivate App 
+Deactivate App
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -234,15 +234,15 @@ Deactivate App
 <result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -256,7 +256,7 @@ Deactivate App
 * * * * *
 
 {% anchor h2 %}
-Customize App 
+Customize App
 {% endanchor %}
 
 These API calls require that settings are passed using POST.
@@ -293,15 +293,15 @@ This is returned if that filter has no settings or is not enabled.
 <filter></filter>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -326,19 +326,19 @@ This is returned if that filter has no settings or is not enabled.
 <hr/>
 
 {% anchor h2 %}
-Get Current Settings 
+Get Current Settings
 
 {% endanchor %}
 <h3>XML Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>

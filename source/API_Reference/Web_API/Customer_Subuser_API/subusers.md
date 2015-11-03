@@ -9,7 +9,7 @@ navigation:
 These commands allow the creation, management, and deletion of subusers.
 
 {% warning %}
-In both creating and searching for a subuser, use the <code>username</code> parameter. In other commands, use the <code>user</code> parameter. When creating a subuser, there is no existing <code>user</code> parameter to reference, and one is being created. 
+In both creating and searching for a subuser, use the <code>username</code> parameter. In other commands, use the <code>user</code> parameter. When creating a subuser, there is no existing <code>user</code> parameter to reference, and one is being created.
 {% endwarning %}
 
 {% info %}
@@ -17,7 +17,7 @@ For recommended steps when creating Subusers using the API, check out [this Send
 {% endinfo %}
 
 {% anchor h2 %}
-Create a Subuser 
+Create a Subuser
 {% endanchor %}
 
 {% parameters create %}
@@ -35,7 +35,7 @@ Create a Subuser
  {% parameter phone Yes 'No more than 50 characters' 'New subuser profile phone number' %}
  {% parameter website Yes 'No more than 255 characters' 'New subuser profile website' %}
  {% parameter company Yes 'No more than 255 characters' 'New subuser profile company name' %}
- {% parameter mail_domain No 'Existing [whitelabel record]({{root_url}}/API_Reference/Customer_Subuser_API/whitelabel.html) on the parent user' 'New subuser whitelabel. Be mindful of IP assignment in relation to whitelabel record' %}
+ {% parameter mail_domain No 'Existing [whitelabel record]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/whitelabel.html) on the parent user' 'New subuser whitelabel. Be mindful of IP assignment in relation to whitelabel record' %}
 {% endparameters %}
 
 {% apiexample create POST https://api.sendgrid.com/apiv2/customer.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=subuser_username&website=domain.com&password=subuser_password&confirm_password=subuser_password&first_name=subuser_first_name&last_name=subuser_last_name&address="123 Sesame Street"&city="New York"&state=NY&zip=10128&email=subuser@domain.com&country=US&phone="(999) 555-5555" %}
@@ -55,7 +55,7 @@ Create a Subuser
 * * * * *
 
 {% anchor h2 %}
-Delete a Subuser 
+Delete a Subuser
 {% endanchor %}
 
 {% warning %}
@@ -84,7 +84,7 @@ This call will delete a subuser and will disable all tracked links on sent messa
 * * * * *
 
 {% anchor h2 %}
-Retrieve Subusers 
+Retrieve Subusers
 {% endanchor %}
 Obtain a list of subusers under your account.
 
@@ -182,7 +182,7 @@ Obtain a list of subusers under your account.
 * * * * *
 
 {% anchor h2 %}
-Update Subuser Username 
+Update Subuser Username
 {% endanchor %}
 
 {% warning %}
@@ -212,7 +212,7 @@ Subuser username is used to access website and API. Changes occur immediately. T
 * * * * *
 
 {% anchor h2 %}
-Update Subuser Password 
+Update Subuser Password
 {% endanchor %}
 Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords must be updated.
 
@@ -239,7 +239,7 @@ Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords mus
 * * * * *
 
 {% anchor h2 %}
-Update Subuser Email Address 
+Update Subuser Email Address
 {% endanchor %}
 This is the administrative contact address, used by SendGrid to contact the user. Unrelated to sending address information.
 
@@ -266,7 +266,7 @@ This is the administrative contact address, used by SendGrid to contact the user
 * * * * *
 
 {% anchor h2 %}
-Update Subuser Profile 
+Update Subuser Profile
 {% endanchor %}
 Update Subuser profile information.
 
@@ -302,7 +302,7 @@ Update Subuser profile information.
 * * * * *
 
 {% anchor h2 %}
-Disable a Subuser 
+Disable a Subuser
 {% endanchor %}
 Sets subuser's <code>active</code> flag to <code>0</code>. Prevents subuser from sending email. Does not affect website login permissions.
 
@@ -327,7 +327,7 @@ Sets subuser's <code>active</code> flag to <code>0</code>. Prevents subuser from
 * * * * *
 
 {% anchor h2 %}
-Enable a Subuser 
+Enable a Subuser
 {% endanchor %}
 Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to send email. Does not affect website login permissions. New subusers are set to active by default.
 
@@ -352,7 +352,7 @@ Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to sen
 * * * * *
 
 {% anchor h2 %}
-Disable Website Access To A Subuser 
+Disable Website Access To A Subuser
 {% endanchor %}
 Disallow a subuser to login to the SendGrid website. Does not affect email sending permissions.
 
@@ -378,7 +378,7 @@ Disallow a subuser to login to the SendGrid website. Does not affect email sendi
 * * * * *
 
 {% anchor h2 %}
-Enable Website Access To A Subuser 
+Enable Website Access To A Subuser
 {% endanchor %}
 Allow a subuser to login to the SendGrid website. Does not affect email sending permissions. New subusers are enabled by default.
 

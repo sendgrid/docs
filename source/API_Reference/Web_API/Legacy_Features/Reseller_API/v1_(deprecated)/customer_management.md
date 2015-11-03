@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/customer_management.html) Reseller Customer Management page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_management.html) Reseller Customer Management page.
 {% endwarning %}
 
 These are actions that directly affect your customer. We provide access via XML and JSON.
@@ -17,7 +17,7 @@ These are actions that directly affect your customer. We provide access via XML 
 * * * * *
 
 {% anchor h2 %}
-Create a Customer 
+Create a Customer
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -226,7 +226,7 @@ Create a Customer
 * * * * *
 
 {% anchor h2 %}
-Delete a Customer 
+Delete a Customer
 {% endanchor %}
 
 Remove a customer from your account. This is **not** the same as disabling a customer on our system. However, the removed user will still be stored within the system so that you cannot re-register a new user with this new username.
@@ -441,15 +441,15 @@ Obtain a complete list of all customers.
       <city>any city</city><state>CA</state><zip>91234</zip><country>US</country><phone>555-555-5555</phone><website>example.com</website></user></users
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=profile&amp;task=ge
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -460,7 +460,7 @@ Obtain a complete list of all customers.
 * * * * *
 
 {% anchor h2 %}
-Enable a Customer 
+Enable a Customer
 {% endanchor %}
 
 Enable a customer so they may start sending out emails again. This call will not enable website access.
@@ -558,7 +558,7 @@ Enable a customer so they may start sending out emails again. This call will not
 * * * * *
 
 {% anchor h2 %}
-Disable a Customer 
+Disable a Customer
 {% endanchor %}
 
 This prevents them from sending out emails with SendGrid.
@@ -656,7 +656,7 @@ This prevents them from sending out emails with SendGrid.
 * * * * *
 
 {% anchor h2 %}
-Enable Website Access To A Customer 
+Enable Website Access To A Customer
 {% endanchor %}
 
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
@@ -754,7 +754,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 * * * * *
 
 {% anchor h2 %}
-Disable Website Access To A Customer 
+Disable Website Access To A Customer
 {% endanchor %}
 
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
@@ -852,7 +852,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 * * * * *
 
 {% anchor h2 %}
-Update Customer Profile 
+Update Customer Profile
 {% endanchor %}
 
 Allows you to update your customers profile information
@@ -1014,7 +1014,7 @@ Allows you to update your customers profile information
 * * * * *
 
 {% anchor h2 %}
-Update Customer Password 
+Update Customer Password
 {% endanchor %}
 
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
@@ -1132,7 +1132,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 * * * * *
 
 {% anchor h2 %}
-Update Customer Username 
+Update Customer Username
 {% endanchor %}
 
 Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
@@ -1261,7 +1261,7 @@ Note that your customer account username is used to login to our SMTP server *an
 * * * * *
 
 {% anchor h2 %}
-Update Customer Email Address 
+Update Customer Email Address
 {% endanchor %}
 
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.

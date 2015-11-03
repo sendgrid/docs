@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Reseller_API/authenticate_a_customer_subuser.html) Reseller Authenticate a customer subuser page.
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html) Reseller Authenticate a customer subuser page.
 {% endwarning %}
 
 Authenticate a customer subuser on your website before displaying their account information so that you can have users manage their SendGrid account on your website completely.

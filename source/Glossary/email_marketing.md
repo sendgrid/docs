@@ -23,12 +23,12 @@ Following email best practices in your marketing emails can yield great rewards 
 
 SendGrid can help you achieve your email marketing goals with our [Marketing Email Service]({{site.site_url}}/email-marketing). This service provides the following and much more:
 
-* [Pre-designed email templates]({{root_url}}/User_Guide/Marketing_Emails/create_manage.html#-STEP-3-Design)
-* [Drag and drop editor]({{root_url}}/VidGrid/Marketing_Emails/Design/drag_and_drop.html)
-* [Ability to use your own HTML]({{root_url}}/User_Guide/Marketing_Emails/create_manage.html)
-* [Scheduled email campaign delivery]({{root_url}}/API_Reference/Marketing_Emails_API/schedule.html)
+* [Pre-designed email templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
+* [Drag and drop editor]({{root_url}}/User_GuideMarketing_Campaigns/Campaigns/drag_drop.html)
+* [Ability to use your own HTML]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html)
+* [Scheduled Marketing campaigns delivery]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns_API/campaigns.html)
 * [Powerful analytics]({{root_url}}/User_Guide/Statistics/index.html)
-* [A/B testing]({{root_url}}/API_Reference/Marketing_Emails_API/variations.html)
-* [Simple list management]({{root_url}}/User_Guide/Marketing_Emails/recipients.html)
+* [A/B testing]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html)
+* [List Segmentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)
 
 This level of visibility into your email marketing performance is invaluable when it comes to determining what resonates best with your audience. Overall, the key to a successful email marketing is that it drives an action. You should strive to provide relevant content by using segmentation strategies to tailor your communications. This is best achieved by testing your design, content, and offers to determine what resonates best with your subscribers.
