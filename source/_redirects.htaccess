@@ -338,6 +338,14 @@ Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/API_R
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/API_Reference/Marketing_Campaigns/Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
+Redirect 301 /User_Guide/Marketing_Emails/create_manage.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
+Redirect 301 /User_Guide/Marketing_Emails/dashboard.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Legacy_Features/Marketing_Emails/dashboard.html
+Redirect 301 /User_Guide/Marketing_Emails/index.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
+Redirect 301 /User_Guide/Marketing_Emails/analytics.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
+Redirect 301 /User_Guide/Marketing_Emails/recipients.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
+Redirect 301 /User_Guide/Marketing_Emails/sender_address.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/sender_address.html
+Redirect 301 /User_Guide/Marketing_Emails/tags.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html
+Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html	https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
