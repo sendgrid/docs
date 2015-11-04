@@ -76,7 +76,7 @@ Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html
-Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification.html
+Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html
@@ -342,7 +342,7 @@ Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
-Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Legacy_Features/Marketing_Emails/dashboard.html
+Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/dashboard.html
 Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
 Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
 Redirect 301 /User_Guide/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
