@@ -655,7 +655,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
                       </tr></thead><tbody>'
 
                   responses.each {|x|
-                    puts "response string: " + x
+                    debug "response string: " + x
                     x = x.gsub('"', "").split(":")
                     temp += "<tr><td>" + x[0].strip + "</td><td>" + x[1].strip + "</td></tr>"
                         }
