@@ -15,7 +15,7 @@ Usernames must be unique. No two accounts, either primary or additional credenti
 {% endinfo %}
 
 {% info %}
-Multiple User Authentication only refers to how credentials are used to differentiate between different users of one SendGrid account. For the login security feature, please see [Multifactor Authentication]({{root_ulr}/User_Guide/Settings/multifactor_authentication.html).
+Multiple User Authentication only refers to how credentials are used to differentiate between different users of one SendGrid account. For the login security feature, please see [Multifactor Authentication]({{root_url}}/User_Guide/Settings/multifactor_authentication.html).
 {% endinfo %}
 
 As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:
