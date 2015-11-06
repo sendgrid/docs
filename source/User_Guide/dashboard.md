@@ -35,10 +35,10 @@ Transactional Emails
 This box shows you the information for sending transactional emails via SendGrid’s [SMTP Relay]({{root_url}}/Glossary/smtp_relay.html). Your API Key is only shown once, when you create it, so it will not be shown on your dashboard.
 
 {% anchor h2 %}
-Advanced Suppression Manager
+Unsubscribe Groups
 {% endanchor %}
 
-The advanced suppression manager box will show you the current status of suppression groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your suppression groups.
+The Unsubscribe Groups box will show you the current status of unsubscribe groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your unsubscribe groups.
 
 {% anchor h2 %}
 Help Links
