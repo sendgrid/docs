@@ -305,10 +305,10 @@ The resulting webhook call
 *Note: The event and the email are not overwritten, because "event" and "email" are reserved and SendGrid defaults to the reserved key for webhooks.*
 
 {% anchor h2 %}
-Advanced Suppression Manager
+Unsubscribe Groups
 {% endanchor %}
 
-If [ASM groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html) are used over the SMTP API they will be returned by the Event Webhook as such:
+If [Unsubscribe Groups]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% codeblock lang:json %}
   {
