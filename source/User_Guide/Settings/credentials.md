@@ -14,6 +14,10 @@ MultiAuth, or Multiple Authentication, is a feature that allows administrators t
 Usernames must be unique. No two accounts, either primary or additional credentials, may have the same username.
 {% endinfo %}
 
+{% info %}
+Multiple User Authentication only refers to how credentials are used to differentiate between different users of one SendGrid account. For the login security feature, please see [Multifactor Authentication]({{root_url}}/User_Guide/Settings/multifactor_authentication.html).
+{% endinfo %}
+
 As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:
 
 -   **Email** - Enabling this right allows the designated credentials to send email via SMTP Relay or using the [Send Mail function of the Web API]({{root_url}}/API_Reference/Web_API/mail.html)
