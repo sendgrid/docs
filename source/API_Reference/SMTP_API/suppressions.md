@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Defining an ASM Group When Sending
+Defining an Unsubscribe Group When Sending
 {% endanchor %}
 
 To specify a group when sending an email, add the group's ID to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
@@ -24,7 +24,7 @@ You may only specify one group per send, and you should wait one minute after cr
 {% endcodeblock %}
 
 {% anchor h2 %}
-Defining ASM Groups to display on the Manage Preferences page
+Defining Unsubscribe Groups to display on the Manage Preferences page
 {% endanchor %}
 
 To specify which groups to display on the Manage Preferences page of an email, add the group IDs to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
@@ -45,8 +45,8 @@ You can specify up to 25 groups to display.
 Groups
 {% endanchor %}
 
-You can find your group IDs by looking at the Group ID column in the Advanced Suppression Manager UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
+You can find your group IDs by looking at the Group ID column in the Unsubscribe Groups UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
 
 Related Articles:
 
-* You can create ASM groups via the [API V3 > ASM Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
+* You can create Unsubscribe groups via the [API V3 > Unsubscribe Groups Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
