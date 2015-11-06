@@ -41,7 +41,7 @@ When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will
 Using the API
 {% endanchor %}
 
-You can manage your Global Unsubscribes via the [Advanced Suppression Manager Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
+You can manage your Global Unsubscribes via the [Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
 
 {% anchor h2 %}
 Related

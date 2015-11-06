@@ -79,10 +79,11 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "list_ids": "list_ids do not all exist"
             "segment_ids": "segment_ids do not all exist"
             "suppression_group_id": "suppression_group_id does not exist"
+            "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
             "": "You've reached your limit of 250 campaigns. Please delete one or more and try again."
 
-## Campaigns [/campaigns{?limit,offset}]
+## Campaigns [/campaigns?limit={limit}&offset={offset}]
 
 ### Get all Campaigns [GET]
 Returns campaigns in reverse order they were created (newest first)
@@ -211,6 +212,7 @@ Returns an empty array if no campaigns exist
             "list_ids": "list_ids do not all exist"
             "segment_ids": "segment_ids do not all exist"
             "suppression_group_id": "suppression_group_id does not exist"
+            "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
 
 + Response 403
@@ -249,7 +251,9 @@ Returns an empty array if no campaigns exist
             "sender_id": "sender_id can't be blank"
             "plain_content": "plain_content can't be blank, please provide plain text or html content"
             "list_ids": "You must select at least 1 segment or 1 list to send to."
-            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
+            "unsubscribe_tag": "An [unsubscribe] tag in both your html and plain content is required to send a campaign."
+            "suppression_group_id": "Either a suppression_group_id or custom_unsubscribe_url is required to send a campaign."
+            "": "You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
 
 + Response 403
 
@@ -304,6 +308,8 @@ Returns an empty array if no campaigns exist
             "plain_content": "plain_content can't be blank, please provide plain text or html content"
             "list_ids": "You must select at least 1 segment or 1 list to send to."
             "send_at": "Please choose a future time for sending your campaign."
+            "unsubscribe_tag": "An [unsubscribe] tag in both your html and plain content is required to send a campaign."
+            "suppression_group_id": "Either a suppression_group_id or custom_unsubscribe_url is required to send a campaign."
             "": "The JSON you have submitted cannot be parsed."
             "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
 
@@ -405,6 +411,8 @@ If the specified campaign is in the process of being sent, the only option is to
     + campaign_id (required, number) ... The id of the campaign
 
 ### Send a Test Campaign [POST]
+
+To send to multiple addresses, use an array for the JSON "to" value ["one@address","two@address"]
 
 + Request (application/json)
 

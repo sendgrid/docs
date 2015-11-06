@@ -46,31 +46,40 @@ Once you choose your template, you will be taken to the campaign editor page.
 
 From here you can change the content in your email without affecting your template, meaning that any changes here will be saved for this campaign only and will not change your template. This allows you to use the same template multiple times without having to worry about changes from campaign to campaign. As you make changes to your campaign, you will notice the “Save” button change to “Saving…” as the editor autosaves your changes.
 
-**Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page. Newly created campaigns are named "Untitled" unless you specify a name. You are not required to give your campaign a unique name.
+<strong>Campaign Name:</strong> This is the name of your campaign, so you can find it again from the campaigns page. Newly created campaigns are named "Untitled" unless you specify a name. You are not required to give your campaign a unique name.
 
 {% warning %}
 Your <a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">sender identity</a> must be verified before you use it to send a campaign.
 {% endwarning %}
+<p>
+<strong>From Sender:</strong> This is the person from whom this email will be sent. The user will see this name as the sender on their email.
+</p>
 
-**From Sender:** This is the person from whom this email will be sent. The user will see this name as the sender on their email.
+<p>
+<strong>Email Subject:</strong> The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
+</p>
 
-**Email Subject:** The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
-
-**Lists/Segments to Send To:** You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
+<p>
+<strong>Lists/Segments to Send To:</strong> You can choose which contacts will receive your email. You can choose more than one list or segment. A contact in multiple selected lists will only receive the email once.
+</p>
 
 {% warning %}
 When you schedule a campaign, the sender identity used will not be able to be deleted.
 {% endwarning %}
-
-**Send Immediately / Schedule:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click "Schedule" in the upper right hand corner. Remember, your timezone is set in your <a href="https://sendgrid.com/docs/User_Guide/Settings/account.html">account settings</a>.
-
-**Categories:** This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
+<p>
+<strong>Send Immediately/Schedule:</strong> You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click "Schedule" in the upper right hand corner. Remember, your timezone is set in your <a href="https://sendgrid.com/docs/User_Guide/Settings/account.html">account settings</a>.
+</p>
+<p>
+<strong>Categories:</strong> This is a category that you can set for your emails, which will help you track delivery metrics in the SendGrid advanced statistics section based on your own classifications of the emails you are sending. To add a category, type the name and press enter.
+</p>
 
 {% info %}
 You can create up to 10 different categories.
 {% endinfo %}
 
-**Unsubscribe Group:** This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, please go to the <a href="https://app.sendgrid.com/suppressions/advanced_suppression_manager">Unsubscribe Groups</a> page to add a new suppression group. Please see our <a href="{{root_url}}/User_Guide/Suppressions/index.html">Suppressions docs</a> for more information.
+<p>
+<strong>Unsubscribe Group:</strong> This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, please go to the<a href="https://app.sendgrid.com/suppressions/advanced_suppression_manager">Unsubscribe Groups</a> page to add a new suppression group. Please see our <a href="{{root_url}}/User_Guide/Suppressions/index.html">Suppressions docs</a> for more information.
+</p>
 
 {% warning %}
 The test send will be deducted from your email package limit.
@@ -80,7 +89,7 @@ The test send will be deducted from your email package limit.
 This test email will not replace your substitution tags, as you will be sending to an email address and not to a formal contact in your database.
 {% endinfo %}
 
-**Send Test Email** - If you want to see the email as your customer would see it, you can enter your email address here and click “Send.” The campaign will be sent to the email specified immediately.
+<strong>Send Test Email:</strong> If you want to see the email as your customer would see it, you can enter your email address here and click “Send.” The campaign will be sent to the email specified immediately.
 
 {% info %}
 To send a test email to more than one address, simply separate each address with a comma. You can send test emails to no more than 10 different addresses.

@@ -99,7 +99,7 @@ Java
 -   [smtpapi-java](http://github.com/sendgrid/smtpapi-java) *by SendGrid*- Official Java library to create SMTP API headers
 -   [sendgrid-google-java](https://github.com/sendgrid/sendgrid-google-java) *by SendGrid* - Java library for use with Google App Engine
 -   [sendgrid4j](https://github.com/shunjikonishi/sendgrid4j) *by Shunji Konishi* - Simple SendGrid client for Java
--   [sendgrid-asm-java](https://github.com/krenfro/sendgrid-asm-java) *by Kyle Renfro* - Advanced Suppression Manager (ASM) Java Client
+-   [sendgrid-asm-java](https://github.com/krenfro/sendgrid-asm-java) *by Kyle Renfro* - Unsubscribe Groups Java Client
 
 {% anchor h3 %}
 JavaScript 
