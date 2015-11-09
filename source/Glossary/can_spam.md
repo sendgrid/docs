@@ -28,4 +28,5 @@ CAN-SPAM is not limited to bulk email. Any commercial email communication, inclu
 {% endwarning %}
 
 Related Articles:
+
 - [SendGrid Deliverability Tips and Tricks]({{root_url}}/Classroom/Deliver/index.html)
