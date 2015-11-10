@@ -11,7 +11,7 @@ seo:
   keywords: triggered email, automated email, Threads, behavior-driven email
 ---
 
-Automated email, also known as [triggered email]({{root_url}}/Glossary/triggered_email.html) or behavior-driven email, refers to any email that is programed to be delivered as a response to a specified [event]({{root_url}}/Glossary/triggering_event.html) or action. While traditional [marketing email]({{root_url}}/Glossary/Email_Types/index.html) involves sending a general promotional message to a large list of recipients, automated email allows you to dynamically send targeted, promotional content that is uniquely relevant to an individual recipient.
+Automated email, also known as [triggered email]({{root_url}}/Glossary/triggered_email.html) or behavior-driven email, refers to any email that is programed to be delivered as a response to a specified [event]({{root_url}}/Glossary/triggering_events.html) or action. While traditional [marketing email]({{root_url}}/Glossary/Email_Types/index.html) involves sending a general promotional message to a large list of recipients, automated email allows you to dynamically send targeted, promotional content that is uniquely relevant to an individual recipient.
 
 Examples of automated email include a welcome series [drip campaign]({{root_url}}/Glossary/drip_campaign.html) that is initiated by a new user sign-up or targeted advertisements based on an individual user’s purchase history. 
 
