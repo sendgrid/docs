@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Emails that are sent with an ASM group specified with will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.
+Emails that are sent with an unsubscribe group specified with will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.
 
 If you do not specify a unsubscribe group when sending an email, the unsubscribe link will act as a global unsubscribe. This means that the recipient will no longer get any emails at all, including potentially important emails like password resets. To avoid this, create unsubscribe groups.
 
@@ -24,7 +24,7 @@ When a recipient clicks the Unsubscribe link, they will be asked to confirm thei
 The Email Preferences Link
 {% endanchor %}
 
-If you choose not to use substitution tags, your emails will automatically have am Email Preferences link, which when clicked will show recipients their personalized Email Preferences page. From here, recipients will be able to see all of your ASM groups and their descriptions. They will then be able to choose whether or not they want to receive those types of emails.
+If you choose not to use substitution tags, your emails will automatically have am Email Preferences link, which when clicked will show recipients their personalized Email Preferences page. From here, recipients will be able to see all of your Unsubscribe Groups and their descriptions. They will then be able to choose whether or not they want to receive those types of emails.
 
 {% anchor h3 %}
 Manage Email Preferences
