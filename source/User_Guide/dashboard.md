@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/144782741?title=0&byline=0&portrait=0" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You can view the stats about all of the emails you have sent through your SendGrid account.
 
 {% anchor h2 %}
