@@ -95,6 +95,8 @@ Obtain a complete list of all customers.
  {% parameter 'phone' 'No' 'Search filter, phone number of customer' %}
  {% parameter 'website' 'No' 'Search filter, website of customer' %}
  {% parameter 'method' 'Yes' 'Must be set to *profile*' %}
+ {% parameter 'limit' 'No' 'Optional field to limit the number of results returned.' %}
+ {% parameter 'offset' 'No' 'Optional beginning point in the list to retrieve from.' %}
 {% endparameters %}
 
 
@@ -102,6 +104,7 @@ Obtain a complete list of all customers.
   {% response json %}
 [
   {
+    "id": "123",
     "username": "username",
     "email": "example1@example.com",
     "active": "true",
@@ -116,6 +119,7 @@ Obtain a complete list of all customers.
     "website": "example.com"
   },
   {
+    "id": "124",
     "username": "username",
     "email": "example2@example.com",
     "active": "false",
@@ -134,14 +138,13 @@ Obtain a complete list of all customers.
   {% response xml %}
 <users>
    <user>
+      <id>123</id>
       <username>user1</username>
       <email>example1@example.com</email>
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>
-      <address>
-555 any street
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
@@ -150,14 +153,13 @@ Obtain a complete list of all customers.
       <website>example.com</website>
    </user>
    <user>
+      <id>124</id>
       <username>user2</username>
       <email>example2@example.com</email>
       <active>false</active>
       <first_name>jane</first_name>
       <last_name>doe</last_name>
-      <address>
-555 any street
-</address>
+      <address>555 any street</address>
       <city>any city</city>
       <state>CA</state>
       <zip>91234</zip>
