@@ -14,6 +14,7 @@ Triggered email is a form of [automated email]({{root_url}}/Glossary/automated_e
 
 In the case of SendGrid’s automated and behavior driven email platform, [Threads](http://threads.io/), this is accomplished by tracking individual users and the actions that they may take when interacting with your application or website.
 
+
 {% info %}
 Please visit the [Threads Support Page](https://support.threads.io/hc/en-us) for more information about how you can send triggered email through your SendGrid account.
 {% endinfo %}
