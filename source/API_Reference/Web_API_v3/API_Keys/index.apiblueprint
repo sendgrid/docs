@@ -32,27 +32,27 @@ SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_AP
             }
 
 ### Generate a new API Key for the authenticated user [POST]
-This will create a new random API Key for the user.
-A JSON request body containing a "name" property is required.
-If number of maximum keys is reached, HTTP 403 will be returned.
+This will create a new random API Key for the user with permissions assigned. A JSON request body containing a "name" property is required. If number of maximum keys is reached, HTTP 403 will be returned. Optionally, you can specify "scopes" to limit what permissions an API Key is given. If no API Key is provided, it will assign all of the parent account's assignable scopes to the API Key.
 
 + Request
 
     + Body
 
             {
-                "name":"My API Key"
+                "name": "My API Key",
+                "scopes": ["mail.send", "alerts.create", "alerts.read"]
             }
 
 + Response 201 (application/json)
 
     + Body
 
-        {
-            "api_key":    "SG.xxxxxxxx.yyyyyyyy",
-            "api_key_id": "xxxxxxxx",
-            "name": "My API Key"
-        }
+            {
+                "api_key":    "SG.xxxxxxxx.yyyyyyyy",
+                "api_key_id": "xxxxxxxx",
+                "name": "My API Key",
+                "scopes": ["mail.send", "alerts.create", "alerts.read"]
+            }
 
 + Response 400 (application/json)
 
@@ -81,11 +81,35 @@ If number of maximum keys is reached, HTTP 403 will be returned.
             }
 
 ## API Key [/api_keys/{api_key_id}]
+### Get an existing API Key [GET]
+Retrieve a single api key. If the API Key ID does not exist an HTTP 404 will be returned.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "api_key_id": "xxxxxxxx",
+                "name": "My API Key",
+                "scopes": ["mail.send", "alerts.create", "alerts.read"]
+            }
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "errors": [
+                    {
+                        "field":   null,
+                        "message": "unable to find API Key"
+                    }
+                ]
+            }
+
 ### Revoke an existing API Key [DELETE]
 Authentications using this API Key will fail
-after this request is made, with some small propogation delay.
-
-If the API Key ID does not exist an HTTP 404 will be returned.
+after this request is made, with some small propagation delay. If the API Key ID does not exist an HTTP 404 will be returned.
 
 + Response 204 (application/json)
 
@@ -120,6 +144,28 @@ A JSON request body with a "name" property is required.
             {
                 "api_key_id": "qfTQ6KG0QBiwWdJ0-pCLCA",
                 "name":       "A New Hope"
+            }
+
+### Update the name & scopes of an API Key [PUT]
+A JSON request body with a "name" property is required. Most provide the list of all the scopes an api key should have.
+
++ Request
+
+    + Body
+
+            {
+                "name": "A New Hope",
+                "scopes": ["user.profile.read", "user.profile.update"]
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "api_key_id": "qfTQ6KG0QBiwWdJ0-pCLCA",
+                "name":       "A New Hope",
+                "scopes": ["user.profile.read", "user.profile.update"]
             }
 
 + Response 400 (application/json)
@@ -162,11 +208,7 @@ Returns HTTP 401 if authentication fails.
 
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
 
-+ Response 200 (application/json)
-
 + Response 401 (application/json)
-
-    + Body
 
         {
             "errors": [
@@ -188,10 +230,10 @@ Returns HTTP 400 if authentication fails.
 
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
 
-+ Response 200
++ Response 200 (application/json)
 
     + Body
-    
+
             { "message": "success" }
 
 + Response 400 (application/json)
