@@ -14,7 +14,7 @@ Not to be confused with the post-send email events like [clicks]({{root_url}}/Gl
 
 Viewing a webpage, using a feature, clicking a button, or buying a product are all examples of events that can be used to determine when an email should be sent and what the content of that email should be.
 
-Events that are tracked through [Threads](http://threads.io/) may also have properties that can tell you more about what happened: the address of the webpage that your user visited, the exact button that they clicked, or the SKU (stock keeping unit) of the product they purchased.
+Events that are tracked through [Threads](http://threads.io/) may also have properties that can tell you more about what happened: the address of the webpage your user visited, the exact button they clicked, or the plan type they purchased.
 
 {% info %}
 More information about how events can be tracked in [Threads](http://threads.io/) can be found [here](https://support.threads.io/hc/en-us).
