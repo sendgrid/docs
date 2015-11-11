@@ -9,9 +9,7 @@ navigation:
 FORMAT: 1A
 
 # API Keys
-The API Keys feature allows customers to be able to generate an
-API Key credential which can be used for authentication with the
-SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
+The API Keys feature allows customers to be able to generate an API Key credential which can be used for authentication with the SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
 
 # Group API Keys management
 
@@ -32,9 +30,7 @@ SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_AP
             }
 
 ### Generate a new API Key for the authenticated user [POST]
-This will create a new random API Key for the user.
-A JSON request body containing a "name" property is required.
-If number of maximum keys is reached, HTTP 403 will be returned.
+This will create a new random API Key for the user. A JSON request body containing a "name" property is required. If number of maximum keys is reached, HTTP 403 will be returned.
 
 + Request
 
@@ -82,10 +78,7 @@ If number of maximum keys is reached, HTTP 403 will be returned.
 
 ## API Key [/api_keys/{api_key_id}]
 ### Revoke an existing API Key [DELETE]
-Authentications using this API Key will fail
-after this request is made, with some small propogation delay.
-
-If the API Key ID does not exist an HTTP 404 will be returned.
+Authentications using this API Key will fail after this request is made, with some small propogation delay. If the API Key ID does not exist an HTTP 404 will be returned.
 
 + Response 204 (application/json)
 
@@ -149,8 +142,7 @@ A JSON request body with a "name" property is required.
             }
 
 # Group API Key usage
-The API Keys feature adds a new "Bearer" scheme for HTTP authentication
-for both v3 WebAPI and the mail.send API.
+The API Keys feature adds a new "Bearer" scheme for HTTP authentication for both v3 WebAPI and the mail.send API.
 
 ## Authentication against a /v3 API resource [/resource]
 Returns HTTP 401 if authentication fails.
