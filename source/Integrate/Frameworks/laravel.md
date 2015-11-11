@@ -41,3 +41,46 @@ Mail::send('emails.demo', $data, function($message)
 
 ?>
 {% endcodeblock %}
+
+## Adding a category or custom field
+
+Categories in sendgrid allow you to split your statistics into categories. An example would be if you have a white labeled service you can split your statistics by the user login.
+
+Another useful feature of sendgrid is the notifications. If you want to complete the feedback loop for your product you can pass identifiers as a header which relate to a record in your database which you can then parse the notifications against that record to track deliveries/opens/clicks/bounces.
+
+
+{% codeblock lang:php %}
+<?php
+
+   Mail::send('emails.view', $data, function ($message)
+    {
+        $data['category']                  = 'category';
+        $data['unique_args']['variable_1'] = 'abc';
+
+        $header = $this->asString($data);
+
+        $message->getSwiftMessage()->getHeaders()->addTextHeader('X-SMTPAPI', $header);
+
+        $message->to('jane@example.com', 'Jane Doe')->subject('This is a demo!');
+    });
+
+
+    private function asJSON($data) // set as private with the expectation of being a class method
+    {
+        $json = json_encode($data);
+
+        $json = preg_replace('/(["\]}])([,:])(["\[{])/', '$1$2 $3', $json);
+
+        return $json;
+    }
+
+    private function asString($data) // set as private with the expectation of being a class method
+    {
+        $json = $this->asJSON($data);
+        $str  = wordwrap($json, 76, "\n   ");
+
+        return $str;
+    }
+?>
+{% endcodeblock %}
+
