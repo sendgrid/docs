@@ -52,17 +52,18 @@ Another useful feature of sendgrid is the notifications. If you want to complete
 {% codeblock lang:php %}
 <?php
 
-	Mail::send('emails.demo', $data, function($message)
-	{
-	    $data['category']                = 'category;
-            $data['unique_args']['variable_1'] = 'abc';
-            
-            $header = $this->asString($data);
-  
-	    $message->getSwiftMessage()->getHeaders()->addTextHeader('X-SMTPAPI', $header);
-	    
-	    $message->to('jane@example.com', 'Jane Doe')->subject('This is a demo!');
-	});
+   Mail::send('emails.view', $data, function ($message)
+    {
+        $data['category']                  = 'category';
+        $data['unique_args']['variable_1'] = 'abc';
+
+        $header = $this->asString($data);
+
+        $message->getSwiftMessage()->getHeaders()->addTextHeader('X-SMTPAPI', $header);
+
+        $message->to('jane@example.com', 'Jane Doe')->subject('This is a demo!');
+    });
+
 
     private function asJSON($data) // set as private with the expectation of being a class method
     {
