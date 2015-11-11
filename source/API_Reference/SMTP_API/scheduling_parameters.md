@@ -19,7 +19,7 @@ performance.  This functionality:
 * Is available for free to all SendGrid customers.
 
 {% info %}
-Once you send SendGrid a request with a scheduling parameter, that email request cannot be cancelled and we currently only accept time stamps no greater than 72 hours in advance.
+Scheduled sends can be cancelled, if you include a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
 {% endinfo %}
 
 {% warning %}

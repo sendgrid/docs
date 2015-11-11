@@ -50,7 +50,6 @@ HTTP/1.1 200 OK
 [
   {
     "ip":"000.00.00.0",
-    "pools":["new_test5"],
     "warmup":true,
     "start_date":1409616000,
     "subusers": ["username1", "username2"],
