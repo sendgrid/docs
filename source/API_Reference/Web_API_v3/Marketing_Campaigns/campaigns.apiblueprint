@@ -253,7 +253,7 @@ Returns an empty array if no campaigns exist
             "list_ids": "You must select at least 1 segment or 1 list to send to."
             "unsubscribe_tag": "An [unsubscribe] tag in both your html and plain content is required to send a campaign."
             "suppression_group_id": "Either a suppression_group_id or custom_unsubscribe_url is required to send a campaign."
-            "": "You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
+            "": "You do not have enough credits to send this campaign. Upgrade your plan to send more. {{app_url}}/settings/billing"
 
 + Response 403
 
@@ -311,7 +311,7 @@ Returns an empty array if no campaigns exist
             "unsubscribe_tag": "An [unsubscribe] tag in both your html and plain content is required to send a campaign."
             "suppression_group_id": "Either a suppression_group_id or custom_unsubscribe_url is required to send a campaign."
             "": "The JSON you have submitted cannot be parsed."
-            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
+            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more. {{app_url}}/settings/billing"
 
 + Response 403
 
@@ -353,7 +353,7 @@ Changes the send_at time for the specified campaign.
 
             "": "The JSON you have submitted cannot be parsed."
             "send_at": "Please choose a future time for sending your campaign."
-            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more: https://app.sendgrid.com/settings/billing"
+            "":"You do not have enough credits to send this campaign. Upgrade your plan to send more. {{app_url}}/settings/billing"
 
 + Response 403
 
