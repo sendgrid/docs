@@ -654,9 +654,13 @@ class BluePrintHTML < Redcarpet::Render::HTML
                         <th>Error Message</th>
                       </tr></thead><tbody>'
 
+
                   responses.each {|x|
                     debug "response string: " + x
-                    x = x.gsub('"', "").split(":")
+
+                    #only parse the first colon in the string and allow the rest to be displayed
+                    x = x.gsub('"', "").split(":",2)
+
                     temp += "<tr><td>" + x[0].strip + "</td><td>" + x[1].strip + "</td></tr>"
                         }
 
