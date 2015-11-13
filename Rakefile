@@ -70,36 +70,36 @@ end
 desc "Rewrite all github style backtick code blocks with more explicit codeblocks"
 task :codeblocks do
   htmlfiles = File.join("**", "source", "**", "*.html")
-  
+
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/)
-  
+
   files.each do |htmlfile|
     next if htmlfile == '.' or htmlfile == '..'
     puts "Converting code blocks: " + htmlfile
-    file = File.open(htmlfile)   
-    
+    file = File.open(htmlfile)
+
     contents = file.read
-    
+
     output = "";
-    
+
     i=0
     contents.each_line do |line|
       if line.index('```')
         if i % 2 == 0
           puts 'found one: ' + line
           line = line.gsub(/(```)\s(.*)/,'{% codeblock lang:\2 %}')
-          puts 'now: ' + line 
+          puts 'now: ' + line
         else
           puts 'found one: ' + line
           line = line.gsub(/(```)/,"{% endcodeblock %}")
-          puts 'now: ' + line 
+          puts 'now: ' + line
         end
-        i=i+1      
+        i=i+1
       end
       output = output + line
     end
-    
+
     file = File.new(htmlfile,"w")
     file.write(output)
   end
@@ -109,7 +109,7 @@ desc "invalidate all files in /public on cloudfront"
 task :invalidate_cloudfront do
   Dir.chdir('public')
   public_files = Dir.glob("**/*.html")
-  
+
   cleaned_files = Array.new
   public_files.delete_if{|f| File.directory?(f) }
   public_files.each{|f| cleaned_files.push '/' + f}
@@ -119,29 +119,29 @@ task :invalidate_cloudfront do
   else
     cf_distro_id = ENV["DEV_CLOUDFRONT_DISTRO"]
   end
-        
+
   invalidator = SimpleCloudfrontInvalidator::CloudfrontClient.new(ENV["PROD_ACCESS_KEY"], ENV["PROD_SECRET_KEY"], cf_distro_id)
-  
-  puts invalidator.invalidate(public_files) 
+
+  puts invalidator.invalidate(public_files)
 end
 
 desc "index the generated files"
 task :index do
   htmlfiles = File.join("**", "public", "**", "*.html")
-  
+
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
-  
+
   puts 'Indexing pages...'
   @storage_dir = File.join(Dir.pwd, '.jekyll_indextank')
   @last_indexed_file = File.join(@storage_dir, 'last_index')
-  
+
   begin
     Dir.mkdir(@storage_dir) unless File.exists?(@storage_dir)
   rescue SystemCallError
     puts 'WARNING: cannot create directory to store index timestamps.'
   end
-  
+
   begin
     @last_indexed = File.open(@last_indexed_file, "rb") {|f| Marshal.load(f)}
   rescue
@@ -159,7 +159,7 @@ task :index do
   files.each do |htmlfile|
     next if htmlfile.include?("index.html")
     doc = Nokogiri::HTML(File.open(htmlfile))
-    
+
     #remove some elements we don't want to index
     doc.search('article code, article code-button').remove
 
@@ -169,9 +169,9 @@ task :index do
 
     url = htmlfile.gsub('public','')
 
-    @index.document(url).add({ 
+    @index.document(url).add({
       :text => page_text,
-      :title => doc.title 
+      :title => doc.title
     })
     puts 'Indexed ' << htmlfile
   end
@@ -182,7 +182,7 @@ task :index do
   rescue
     puts 'WARNING: cannot write indexed timestamps file.'
   end
-  
+
   puts 'Indexing done'
 end
 
@@ -201,10 +201,10 @@ end
 desc "parse XML and JSON codeblocks and identify invalid blocks"
 task :validate_json_xml do
   htmlfiles = File.join("**", "source", "**", "*.{html,md}")
-  
+
   #don't mess with the jekyll stuff
   files = FileList[htmlfiles].exclude(/_layouts/).exclude(/_includes/).exclude(/_assets/)
-  
+
   json_invalid = 0
   json_valid =0
   xml_invalid = 0
@@ -223,7 +223,7 @@ task :validate_json_xml do
     contents.gsub!(/({%\s?codeblock lang:json\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       is_json = ($2.strip).to_s.is_json?
       json = is_json ? JSON.parse($2.strip) : $2
-      
+
       if is_json
         json_valid += 1
       else
@@ -235,7 +235,7 @@ task :validate_json_xml do
     contents.gsub!(/({%\s?response json\s?%})(.*?)({\%\s?endresponse\s?%})/m) do |match|
       is_json = ($2.strip).to_s.is_json?
       json = is_json ? JSON.parse($2.strip) : $2
-      
+
       if is_json
         json_valid += 1
       else
@@ -247,11 +247,16 @@ task :validate_json_xml do
     #Validate the XML
     contents.gsub!(/({%\s?codeblock lang:xml\s?%})(.*?)({\%\s?endcodeblock\s?%})/m) do |match|
       begin
-        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
-        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
-      rescue
+
+        xml = $2.to_s.strip
+
+        xml = Nokogiri::XML(xml) { |config| config.strict }
+
+      rescue Nokogiri::XML::SyntaxError => e
         xml_invalid += 1
-        puts "\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n---------------------------"
+        puts "\nINVALID XML in #{htmlfile}: \n#{$2.to_s.strip}\n"
+        puts "caught exception: #{e}"
+        puts "---------------------------"
         next
       end
       xml_valid += 1
@@ -259,11 +264,16 @@ task :validate_json_xml do
 
     contents.gsub!(/({%\s?response xml\s?%})(.*?)({\%\s?endreponse\s?%})/m) do |match|
       begin
-        $2.sub!('<?xml version="1.0" encoding="ISO-8859-1"?>','')
-        xml = Nokogiri.XML($2, nil, "UTF-8") { |config| config.strict }
-      rescue
+
+        xml = $2.to_s.strip
+
+        xml = Nokogiri::XML(xml) { |config| config.strict }
+
+      rescue Nokogiri::XML::SyntaxError => e
         xml_invalid += 1
-        puts "\nINVALID XML in #{htmlfile}: \n#{$2.strip}\n---------------------------"
+        puts "\nINVALID XML in #{htmlfile}: \n#{$2.to_s.strip}\n"
+        puts "caught exception: #{e}"
+        puts "---------------------------"
         next
       end
       xml_valid += 1
