@@ -894,11 +894,15 @@ Group Resubscribe
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+{% anchor h2 %}
 Marketing Campaigns
 {% endanchor %}
 
-For emails sent through our Marketing Campaigns feature, we will add Marketing Campaigns specific params to the Event Webhook.
+For emails sent through our Marketing Campaigns feature, we will add Marketing Campaigns specific params to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` will be displayed as unique arguments in the event data.
+
+{% anchor h3 %}
+Example event from a standard (non-A/B test) campaign send:
+{% endanchor %}
 
 {% codeblock lang:json %}
 {
@@ -914,6 +918,53 @@ For emails sent through our Marketing Campaigns feature, we will add Marketing C
   "sg_message_id": "sendgrid_internal_message_id",
   "smtp-id": "",
   "timestamp": 1442349428
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Example event from an A/B Test:
+{% endanchor %}
+
+ `marketing_campaign_version` will be displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` will be returned as `A`, `B`, `C`, etc.
+
+{% codeblock lang:json %}
+{
+  "category": [],
+  "email": "tadpole_0010@stbase-018.sjc1.sendgrid.net",
+  "event": "processed",
+  "marketing_campaign_id": 23314,
+  "marketing_campaign_name": "unique args ab",
+  "marketing_campaign_version": "B",
+  "nlvx_campaign_id": 23314,
+  "nlvx_campaign_split_id": 13471,
+  "nlvx_user_id": 939115,
+  "post_type": "event",
+  "sg_event_id": "qNOzbkTuTNCdxa1eXEpnXg",
+  "sg_message_id": "5lFl7Fr1Rjme_EyzNNB_5A.stfilter-015.5185.55F883172.0",
+  "smtp-id": "<5lFl7Fr1Rjme_EyzNNB_5A@stismtpd-006.sjc1.sendgrid.net>",
+  "timestamp": 1442349848
+}
+{% endcodeblock %}
+
+{% anchor h3 %}
+Example event from the winning phase of an A/B Test:
+{% endanchor %}
+
+{% codeblock lang:json %}
+{
+  "category": [],
+  "email": "tadpole_0001@stbase-018.sjc1.sendgrid.net",
+  "event": "delivered",
+  "marketing_campaign_id": 23314,
+  "marketing_campaign_name": "unique args ab",
+  "nlvx_campaign_id": 23314,
+  "nlvx_user_id": 939115,
+  "post_type": "event",
+  "response": "250 Ok ",
+  "sg_event_id": "X2M1IUfMRhuAhWM0CbmFqQ",
+  "sg_message_id": "fPJrJPIRTxC_obpgfTy74w.stfilter-015.5185.55F883564.0",
+  "smtp-id": "",
+  "timestamp": 1442349911
 }
 {% endcodeblock %}
 
