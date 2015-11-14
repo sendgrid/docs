@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Migration Guide Part 2: Importing your Unsubscribes
-  description: Migration Guide Part 2: Importing your Unsubscribes
+  title: Migration Guide Part 2 Importing your Unsubscribes
+  description: Migration Guide Part 2 Importing your Unsubscribes
   keywords: drop, unsubscribe, unsub, export, import, migrate, asm, suppression
-title: Migration Guide Part 2: Importing your Unsubscribes
+title: Migration Guide Part 2 Importing your Unsubscribes
 weight: 0
 layout: page
 zendesk_id: 207009597
@@ -48,4 +48,3 @@ From here,&nbsp;click " **Create New Group**" and give your group a name and des
 ![]({{root_url}}/images/uploadunsubecsv.gif)
 
 &nbsp;And now you're done! You will now be able to select this ASM groups when building a campaign, so that&nbsp;when you send your campaign, any users who had previously unsubscribed will&nbsp;remain undisturbed.
-

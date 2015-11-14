@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Migration Guide Part 1: Migrating your Recipient Lists into Contacts
-  description: Migration Guide Part 1: Migrating your Recipient Lists into Contacts
+  title: Migration Guide Part 1 Migrating your Recipient Lists into Contacts
+  description: Migration Guide Part 1 Migrating your Recipient Lists into Contacts
   keywords: segmentation, marketing, newsletter, list, export, recipient, import, client, lists, migrate, customer, contacts, segment, move
-title: Migration Guide Part 1: Migrating your Recipient Lists into Contacts
+title: Migration Guide Part 1 Migrating your Recipient Lists into Contacts
 weight: 0
 layout: page
 zendesk_id: 206300138
@@ -91,4 +91,3 @@ You can also use our API methods to pull out your old contacts out of our Legacy
 &nbsp;
 
 &nbsp;
-
