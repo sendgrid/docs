@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-_"Can I add more email&nbsp;to my account?"&nbsp;_This is a question I hear often from SendGrid users&nbsp;and I would like to clear it all up today. **You cannot manually add more emails&nbsp;to an account,** &nbsp;however most plans allow for overages.
+_"Can I add more email&nbsp;to my account?"&nbsp;_ This is a question I hear often from SendGrid users&nbsp;and I would like to clear it all up today. **You cannot manually add more emails&nbsp;to an account,** &nbsp;however most plans allow for overages.
 
 If you are on the Free plan and need of more emails, you will need to upgrade plans.&nbsp;
 
@@ -30,4 +30,3 @@ If you are on the Free plan and need of more emails, you will need to upgrade pl
 &nbsp;
 
 &nbsp;
-

@@ -2,7 +2,7 @@
 seo:
   title: How do I add more credits?
   description: How do I add more credits?
-  keywords: 
+  keywords:
 title: How do I add more credits?
 weight: 0
 layout: page
@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-_"Can I add more credits to my account?"&nbsp;_This is a question I hear often from SendGrid users&nbsp;and I would like to clear it all up today. **You cannot add more credits to an account** &nbsp;but most plans allow for overages.
+_"Can I add more credits to my account?"&nbsp;_ This is a question I hear often from SendGrid users&nbsp;and I would like to clear it all up today. **You cannot add more credits to an account** &nbsp;but most plans allow for overages.
 
 If you are on the Free plan and need of more credits, you will need to upgrade plans.&nbsp;
 
@@ -30,4 +30,3 @@ If you are on the Free plan and need of more credits, you will need to upgrade p
 &nbsp;
 
 &nbsp;
-
