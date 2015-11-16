@@ -1,9 +1,9 @@
 ---
 seo:
-  title: SPF - Don't Exceed Ten DNS Lookups!
-  description: SPF - Don't Exceed Ten DNS Lookups!
+  title: SPF&#58; Don't Exceed Ten DNS Lookups!
+  description: SPF&#58; Don't Exceed Ten DNS Lookups
   keywords:
-title: SPF - Don't Exceed Ten DNS Lookups!
+title: SPF&#58; Don't Exceed Ten DNS Lookups!
 weight: 0
 layout: page
 zendesk_id: 200185168

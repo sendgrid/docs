@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Gmail DMARC Changes / 
-  description: Gmail DMARC Changes / 
+  title: Gmail DMARC Changes
+  description: Gmail DMARC Changes
   keywords: dmarc, gmail, from, spf, dkim
-title: Gmail DMARC Changes / 
+title: Gmail DMARC Changes
 weight: 0
 layout: page
 zendesk_id: 202449646
@@ -30,4 +30,3 @@ This is because Gmail&nbsp;will no longer be accepting messages where the From d
 &nbsp;
 
 For more extended reading, check out <LINK GOES HERE>,&nbsp;as well as our&nbsp; [DMARC Knowledgebase article](https://sendgrid.zendesk.com/hc/en-us/articles/200182958-Everything-about-DMARC-).
-

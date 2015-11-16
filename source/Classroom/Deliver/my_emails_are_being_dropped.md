@@ -3,7 +3,7 @@ seo:
   title: My emails are being dropped.
   description: My emails are being dropped.
   keywords: spam, address, bounces, drop, block, invalid, dropped, repeat, spam report, unsubscribed, bounced, reporting
-title: My emails are being dropped.
+title: My Emails Are Being Dropped
 weight: 0
 layout: page
 zendesk_id: 200181728
@@ -32,4 +32,3 @@ Addresses appearing on the **Blocks** list do _not_ get&nbsp;suppressed&nbsp;lik
 &nbsp;
 
 You may also want to read through our&nbsp; [SendGrid Deliverability 101](http://support.sendgrid.com/entries/21194967-deliverability-101)&nbsp;documentation for best sending practices and tips.8
-

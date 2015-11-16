@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Preference Centers - Giving Subscribers Control
-  description: Preference Centers: Giving Subscribers Control
+  title: Preference Centers&#58; Giving Subscribers Control
+  description: Preference Centers&#58; Giving Subscribers Control
   keywords: subscription, unsubscribe, suppress, preference, center
-title: Preference Centers - Giving Subscribers Control
+title: Preference Centers&#58; Giving Subscribers Control
 weight: 0
 layout: page
 zendesk_id: 204585828

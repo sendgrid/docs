@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Yahoo DMARC Changes / "Message not accepted for policy reasons"
-  description: Yahoo DMARC Changes / "Message not accepted for policy reasons"
+  title: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
+  description: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
   keywords: policy, dmarc, spf, dkim, Yahoo
-title: Yahoo DMARC Changes / "Message not accepted for policy reasons"
+title: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
 weight: 0
 layout: page
 zendesk_id: 201876356
@@ -30,4 +30,3 @@ This is because Yahoo will no longer be accepting messages where the From domain
 &nbsp;
 
 For more extended reading, check out this blog post from our friends over at [Word to the Wise.](https://wordtothewise.com/2014/04/brief-dmarc-primer/)&nbsp;As well as our [DMARC Knowledgebase article](https://sendgrid.zendesk.com/hc/en-us/articles/200182958-Everything-about-DMARC-).
-
