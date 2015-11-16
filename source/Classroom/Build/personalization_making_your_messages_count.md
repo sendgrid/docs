@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Personalization: Making Your Messages Count 
-  description: Personalization: Making Your Messages Count 
+  title: Personalization - Making Your Messages Count
+  description: Personalization - Making Your Messages Count
   keywords: subvar, sub, name, personalize, number, first, last
-title: Personalization: Making Your Messages Count 
+title: Personalization - Making Your Messages Count
 weight: 0
 layout: page
 zendesk_id: 204509378
@@ -17,7 +17,7 @@ Email personalization is a deliverability practice that is best described as _ad
 
 Personalizing message content is beneficial to both senders and recipients in many ways:&nbsp;
 
-- 
+-
 
 Subscribers are more likely to interact with messages that are addressed to them specifically, personalized messages are easier to recognize in a cluttered inbox. The more subscribers engage with your mail, the better reputation you will build with ISPs. This translates to better delivery and overall brand trust.&nbsp;
 
@@ -28,4 +28,3 @@ Subscribers are more likely to interact with messages that are addressed to them
 Personalization is one of the best ways to increase engagement and build a stronger relationship with your subscribers as well as ISPs. Individualized messages are an absolute must if you're trying to get the most out of your email program.&nbsp;
 
 &nbsp;
-
