@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Google Analytics Demystified: GA Statistics vs SG Statistics
-  description: Google Analytics Demystified: GA Statistics vs SG Statistics
+  title: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
+  description: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
   keywords: statistics, page, tracking, URL, google, analytics, GA, stats, events, view, UTM
-title: Google Analytics Demystified: GA Statistics vs SG Statistics
+title: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
 weight: 0
 layout: page
 zendesk_id: 200181468

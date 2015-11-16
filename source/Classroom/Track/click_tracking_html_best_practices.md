@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-If you are experiencing issues with the Click Tracking application not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our Click Tracking app to find and replace them. Links must be within an HTML <a> tag and be proceeded by **"http://** &nbsp;or&nbsp; **"https://**  
+If you are experiencing issues with the Click Tracking application not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our Click Tracking app to find and replace them. Links must be within an HTML `<a>` tag and be proceeded by **`"http://`** &nbsp;or&nbsp; **`"https://`**  
 Here are some example links that will be properly replaced by our Click Tracking app:
 
 `<a href="http://www.sendgrid.com">SendGrid</a>`
@@ -28,7 +28,9 @@ Here are some example links that will be properly replaced by our Click Tracking
 
 &nbsp;
 
-_Please note: If you are in the habit of BASE64 encoding your email content we will be unable to detect the encoded <a> tags and overwrite them, so Clicks will not be tracked in this case._
+{% info %}
+_Please note: If you are in the habit of BASE64 encoding your email content we will be unable to detect the encoded `<a>` tags and overwrite them, so Clicks will not be tracked in this case._
+{% endinfo %}
 
 &nbsp;
 
@@ -37,4 +39,3 @@ If you have a Silver package or higher and you have Whitelabeled your sending IP
 &nbsp;
 
 If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here](/hc/en-us/articles/204074166-Click-tracking-links-have-stopped-working-) for more troubleshooting tips.
-

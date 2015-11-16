@@ -1,9 +1,9 @@
 ---
 seo:
-  title: "Delete from bounce list" option in Email Activity
-  description: "Delete from bounce list" option in Email Activity
+  title: Option to "Delete From Bounce List" in Email Activity
+  description: Delete From bounce list option in Email Activity
   keywords: drop, list, email, bounce, dropped, activity, deleted, reason, delete from bounce list, bounce list, bounced address
-title: "Delete from bounce list" option in Email Activity
+title: Option to "Delete From Bounce List" in Email Activity
 weight: 0
 layout: page
 zendesk_id: 204074633
@@ -26,4 +26,3 @@ Removing an address from the Bounces list will allow you to send future messages
 &nbsp;
 
 Please note that you will also see this option appear alongside other event types such as&nbsp;Unsubscribe and Spam Report, in these cases this option works in the very same way, but simply removes in from the respective&nbsp;Email Reports list.&nbsp;
-

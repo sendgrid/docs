@@ -2,7 +2,7 @@
 seo:
   title: Discrepancies between Requests and Deliveries
   description: Discrepancies between Requests and Deliveries
-  keywords: different, defferred, deferral, throttled, requests, delayed, delivered
+  keywords: different, deferred, deferral, throttled, requests, delayed, delivered
 title: Discrepancies between Requests and Deliveries
 weight: 0
 layout: page
