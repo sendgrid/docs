@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Welcome Emails: Making a Good First Impression
-  description: Welcome Emails: Making a Good First Impression
+  title: Welcome Emails&#58; Making a Good First Impression
+  description: Welcome Emails&#58; Making a Good First Impression
   keywords: double, campaign, started, opt, welcome, nurture
-title: Welcome Emails: Making a Good First Impression
+title: Welcome Emails&#58; Making a Good First Impression
 weight: 0
 layout: page
 zendesk_id: 204586178
@@ -18,4 +18,3 @@ Welcome emails can also double as a confirmed opt-in message. Confirmed opt-in i
 &nbsp;
 
 &nbsp;
-

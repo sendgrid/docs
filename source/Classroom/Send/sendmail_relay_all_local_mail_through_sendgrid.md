@@ -1,9 +1,9 @@
 ---
 seo:
-  title: sendmail: Relay all local mail through Sendgrid
-  description: sendmail: Relay all local mail through Sendgrid
-  keywords: 
-title: sendmail: Relay all local mail through Sendgrid
+  title: sendmail&#58; Relay all local mail through Sendgrid
+  description: sendmail&#58; Relay all local mail through Sendgrid
+  keywords:
+title: sendmail&#58; Relay all local mail through Sendgrid
 weight: 0
 layout: page
 zendesk_id: 200185188
@@ -33,4 +33,3 @@ Restart sendmail:
 [code]  
 sudo /etc/init.d/sendmail restart  
 [/code]
-
