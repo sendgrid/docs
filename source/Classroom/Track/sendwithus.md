@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Sendwithus
 navigation:
-  show: false
+  show: true
 ---
 
 Enable the Sendwithus setting via the [SendGrid Partner Settings page]({{site.app_url}}/settings/partners)

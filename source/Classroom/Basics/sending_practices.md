@@ -6,7 +6,7 @@ seo:
   title: Sending Best Practices and Limitations
   description: A guide to sending practices and SendGrid Usage limits. Learn how to best use SendGrid today.
 navigation:
-  show: false
+  show: true
 ---
 
 As you begin to use your SendGrid account there are some important things to remember. For example, Lite and [Free]({{site.site_url}}/free?mc=SendGrid%20Documentation) packages have limitations in the amount of email that can be sent each day. Free accounts are simply limited to 400 emails per day. Below you will find a breakdown of the Lite package and it's limitations.
