@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-{% info %}
+{% info %} 
 Available to all accounts except Lite.
 {% endinfo %}
 
