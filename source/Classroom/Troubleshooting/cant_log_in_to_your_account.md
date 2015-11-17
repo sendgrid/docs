@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Can't log in to your account? 
-  description: Can't log in to your account? 
-  keywords: password, log, can't, authentication, username, reset, get, failed, user, invalid, account, deactivated, banned, in, terminated, bad username/password, name, won't, 535, 535 Authentication failed: Bad username / password, login, access, denied
-title: Can't log in to your account? 
+  title: Can't log in to your account?
+  description: Can't log in to your account?
+  keywords: password, log, can't, authentication, username, reset, get, failed, user, invalid, account, deactivated, banned, in, terminated, bad username/password, name, won't, 535, 535 Authentication failed&#58; Bad username / password, login, access, denied
+title: Can't log in to your account?
 weight: 0
 layout: page
 zendesk_id: 204192663
@@ -58,4 +58,3 @@ When an account is banned, it is permanently cancelled. Access to the account is
 &nbsp;
 
 We don't make a habit of letting banned accounts back on, but if you would like to discuss it, _please respond to the email you received from our Compliance department._ Support cannot assist in&nbsp;reactivation of Banned accounts.&nbsp;
-

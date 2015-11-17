@@ -1,9 +1,9 @@
 ---
 seo:
-  title: What's the recomended message size limit? 
-  description: What's the recomended message size limit? 
+  title: What's the recommended message size limit?
+  description: What's the recommended message size limit?
   keywords: webhook, message, api, limit, parse, max, size, maximum, attachment, file, 20mb, large, too, big
-title: What's the recomended message size limit? 
+title: What's the recommended message size limit? 
 weight: 0
 layout: page
 zendesk_id: 204034406
@@ -22,4 +22,3 @@ This same size limit applies when sending messages to our Parse API webhook, 20m
 &nbsp;
 
 &nbsp;
-

@@ -1,9 +1,9 @@
 ---
 seo:
-  title: "Email was deferred due to the following reason(s):" IP Deferrals messages
-  description: "Email was deferred due to the following reason(s):" IP Deferrals messages
-  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits", IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
-title: "Email was deferred due to the following reason(s):" IP Deferrals messages
+  title: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
+  description: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
+  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
+title: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
 weight: 0
 layout: page
 zendesk_id: 203950186
@@ -36,4 +36,3 @@ If there are no existing warm IPs, any requests made above the hourly maximum li
 An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP](https://sendgrid.com/docs/User_Guide/warming_up.html) and consider your sending volume for best deliverability.
 
 &nbsp;
-

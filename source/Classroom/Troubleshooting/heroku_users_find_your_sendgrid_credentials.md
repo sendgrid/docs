@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Heroku Users: Find your Sendgrid Credentials
-  description: Heroku Users: Find your Sendgrid Credentials
+  title: Heroku Users&#58; Find your SendGrid Credentials
+  description: Heroku Users&#58; Find your SendGrid Credentials
   keywords: heroku
-title: Heroku Users: Find your Sendgrid Credentials
+title: Heroku Users&#58; Find your SendGrid Credentials
 weight: 0
 layout: page
 zendesk_id: 200181998
@@ -15,4 +15,3 @@ If you are a Heroku user using [the SendGrid Add-on](https://addons.heroku.com/s
 
 1. Go to your Apps, choose Sendgrid
 2. Click Settings and then click “reveal config vars”
-

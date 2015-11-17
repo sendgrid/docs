@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Testing your connectivity to Sendgrid's SMTP relay using Telnet
-  description: Testing your connectivity to Sendgrid's SMTP relay using Telnet
+  title: Testing your connectivity to SendGrid's SMTP relay using Telnet
+  description: Testing your connectivity to SendGrid's SMTP relay using Telnet
   keywords: telnet, ports, connection, smtp
-title: Testing your connectivity to Sendgrid's SMTP relay using Telnet
+title: Testing your connectivity to SendGrid's SMTP relay using Telnet
 weight: 0
 layout: page
 zendesk_id: 200182038

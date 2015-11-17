@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Invalid SMTPAPI header
-  description: Invalid SMTPAPI header
-  keywords: event, smtpapi, invalid, header, invalid smtpapi header, x-smtpapi
-title: Invalid SMTPAPI header
+  title: Invalid SMTP API header
+  description: Invalid SMTP API header
+  keywords: event, smtp api, invalid, header, invalid smtp api header, x-smtpapi
+title: Invalid SMTP API header
 weight: 0
 layout: page
 zendesk_id: 204418493
@@ -44,4 +44,3 @@ To either prevent or troubleshoot issues like this you can run your JSON through
 If you still need help,&nbsp;please use the links below.
 
 &nbsp;
-

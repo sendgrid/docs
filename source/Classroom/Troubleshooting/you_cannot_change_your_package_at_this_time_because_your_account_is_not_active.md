@@ -1,9 +1,9 @@
 ---
 seo:
-  title: "You cannot change your package at this time because your account is not active." when upgrading.
-  description: "You cannot change your package at this time because your account is not active." when upgrading.
+  title: Upgrade error message&#58; "You cannot change your package at this time because your account is not active."
+  description: Upgrade error message&#58; "You cannot change your package at this time because your account is not active."
   keywords: can't, not, upgrade, You cannot change your package at this time because your account is not active, cannot, change, package
-title: "You cannot change your package at this time because your account is not active." when upgrading.
+title: Upgrade error message&#58; "You cannot change your package at this time because your account is not active."
 weight: 0
 layout: page
 zendesk_id: 204289718
@@ -22,4 +22,3 @@ Trying to upgrade and seeing this message? There are a couple of reasons you mig
 &nbsp;
 
 **Account Suspension** - Our compliance team may have your account under review, this status also prevents further upgrading until everything has been resolved. [Read more here](/hc/en-us/articles/200182918-Account-Under-Review-Suspended) about what to do in this case.
-

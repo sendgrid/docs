@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
- **"**** Your account is still being provisioned. You will not be able to send out any email. ****"**
+ **"Your account is still being provisioned. You will not be able to send out any email."**
 
 We provision all new customer accounts to ensure the validity of all our new customers. As an industry email provider it is important to protect our system as well as inboxes around the world from Spam email. By verifying domain ownership, evaluating every website, determining what kind of messages will be sent and who they will be sent to we maintain our credibility as an email provider and also help you get the best deliverability possible.&nbsp;
 
@@ -20,4 +20,3 @@ Please note that Provisioning related emails are sent to the registered account 
 &nbsp;
 
 [What should I do if my account provision was declined?](https://sendgrid.zendesk.com/hc/en-us/articles/200181638)
-
