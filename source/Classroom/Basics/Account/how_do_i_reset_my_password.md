@@ -1,9 +1,9 @@
 ---
 seo:
-  title: How do I reset my password? 
-  description: How do I reset my password? 
-  keywords: 
-title: How do I reset my password? 
+  title: How do I reset my password?
+  description: How do I reset my password?
+  keywords:
+title: How do I reset my password?
 weight: 0
 layout: page
 zendesk_id: 206336127
@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-_ **Please** _&nbsp; **use caution** , when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords. &nbsp;When changing passwords consult the email administrator who created the account if you are uncertain.
+_ **Please** &nbsp; **use caution** , when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords. &nbsp;When changing passwords consult the email administrator who created the account if you are uncertain.
 
 Please use one of the following 2 options to reset your password:&nbsp;
 
@@ -69,4 +69,3 @@ Forgot your password? No problem.&nbsp;
 **Do you have a reseller account?** &nbsp;Look for specific communication from your reseller. &nbsp;Many partners like Heroku, Appdirect, Engineyard, Softlayer, and Azure will complete this update with no action required from you.
 
 _ **Please** _&nbsp; **use caution** , when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords. &nbsp;When changing passwords consult the email administrator who created the account if you are uncertain.
-

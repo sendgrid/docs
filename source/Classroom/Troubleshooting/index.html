@@ -11,8 +11,21 @@ navigation:
 ---
 
 <div class="row">
+    <div class="col-md-4">
+        <h2><a href="#Account-Administration">Account Administration</a></h2>
+    </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
+        <h2><a href="#Delivery-Issues">Delivery Issues</a></h2>
+    </div>
+
+    <div class="col-md-4">
+        <h2><a href="#Authentication-Email-Headers-and-Whitelabeling">Authentication, Email Headers, and Whitelabeling</a></h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
         {% anchor h2 %}Account Administration{% endanchor %}
         <ul>
             <li><a href="{{root_url}}account_under_review_suspended.html">Account Under Review / Suspended</a></li>
@@ -35,8 +48,10 @@ navigation:
             <li><a href="{{root_url}}your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html">I got an email saying, "Your SendGrid Account Is At Risk For Suspension". What should I do?</a></li>
         </ul>
     </div>
+</div>
 
-    <div class="col-md-6">
+<div class="row">
+    <div class="col-md-12">
         {% anchor h2 %}Delivery Issues{% endanchor %}
         <ul>
             <li><a href="{{root_url}}email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html">Email was deferred due to the following reason(s)&#58; IP Deferrals messages</a></li>
@@ -46,12 +61,10 @@ navigation:
             <li><a href="{{root_url}}troubleshooting_delays_and_latency.html">Troubleshooting Delays and Latency</a></li>
         </ul>
     </div>
-
 </div>
 
 <div class="row">
-
-    <div class="col-md-6">
+    <div class="col-md-12">
         {% anchor h2 %}Authentication, Email Headers, and Whitelabeling{% endanchor %}
         <ul>
             <li><a href="{{root_url}}a_custom_field_did_not_substitute_during_a_send.html">A Custom Field value did not substitute during a send.</a></li>
@@ -66,5 +79,4 @@ navigation:
             <li><a href="{{root_url}}you_have_used_a_reserved_field_name_for_your_custom_field.html">"You have used a reserved field name for your custom field"</a></li>
         </ul>
     </div>
-
 </div>
