@@ -8,7 +8,7 @@ weight: 0
 layout: page
 zendesk_id: 200182078
 navigation:
-  show: true
+  show: false
 ---
 
 ## What _is_ SugarCRM?
@@ -29,4 +29,3 @@ Once these changes have been made within the Email Settings page within your Sug
 SugarCRM outlines this process in more detail in their own support documentation [here](http://support.sugarcrm.com/04_Find_Answers/02KB/02Administration/100Email/Configuring_Your_Outbound_Email_Server_(SMTP)_to_Work_With_Sugar).
 
 &nbsp;
-

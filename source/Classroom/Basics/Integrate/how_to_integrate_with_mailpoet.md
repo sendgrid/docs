@@ -8,7 +8,7 @@ weight: 0
 layout: page
 zendesk_id: 204730027
 navigation:
-  show: true
+  show: false
 ---
 
 MailPoet is a great way to send mail in WordPress. The best way to get MailPoet to work properly with SendGrid is;
@@ -22,4 +22,3 @@ MailPoet is a great way to send mail in WordPress. The best way to get MailPoet 
 4.&nbsp;Check off "Use Web API"
 
 ![]({{root_url}}/images/Screen_Shot_2015-02-13_at_4.47.27_PM.png)
-

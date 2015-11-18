@@ -8,7 +8,7 @@ weight: 0
 layout: page
 zendesk_id: 200182048
 navigation:
-  show: true
+  show: false
 ---
 
 ## _Why_ to integrate Interspire with SendGrid
@@ -41,4 +41,3 @@ More info on SendGrid's Event API can be found [here](http://sendgrid.com/docs/A
 More info on Interspire's XML API can be found [here](http://www.interspire.com/emailmarketer/pdf/XMLApiDocumentation.pdf)
 
 &nbsp;
-
