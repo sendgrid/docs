@@ -8,6 +8,5 @@ weight: 0
 layout: page
 zendesk_id: 204416623
 navigation:
-  show: true
+  show: false
 ---
-
