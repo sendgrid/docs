@@ -1,3 +1,14 @@
+---
+seo:
+  title: Send Emails Through SendGrid For New Caught Webhook Data
+  description:
+  keywords:
+title: Send Emails Through SendGrid For New Caught Webhook Data
+weight: 0
+layout: page
+navigation:
+  show: true
+---
 #Send emails through SendGrid for new caught webhook data
 
 

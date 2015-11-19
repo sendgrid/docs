@@ -1,3 +1,14 @@
+---
+seo:
+  title: Sending SendGrid Emails For New Postgre SQL Custom Query Row Matches
+  description:
+  keywords:
+title: Sending SendGrid Emails For New Postgre SQL Custom Query Row Matches
+weight: 0
+layout: page
+navigation:
+  show: true
+---
 #Sending SendGrid emails for new PostgreSQL custom query row matches
 
 

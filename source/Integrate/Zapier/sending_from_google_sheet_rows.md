@@ -1,3 +1,15 @@
+---
+seo:
+  title: Sending SendGrid Emails From New Google Sheets Rows
+  description:
+  keywords:
+title: Sending SendGrid Emails From New Google Sheets Rows
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
 #Sending SendGrid emails from new Google Sheets rows
 
 

@@ -1,3 +1,15 @@
+---
+seo:
+  title: Sending SendGrid Email When new Firebase Child Records Are Added
+  description:
+  keywords:
+title: Sending SendGrid Email When new Firebase Child Records Are Added
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
 #Sending SendGrid email when new Firebase child records are added
 
 

@@ -1,3 +1,15 @@
+---
+seo:
+  title: Sending New Emails via SendGrid For New Gravity Forms Submissions
+  description:
+  keywords:
+title: Sending New Emails via SendGrid For New Gravity Forms Submissions
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
 #Sending new emails via SendGrid for new Gravity Forms submissions
 
 
