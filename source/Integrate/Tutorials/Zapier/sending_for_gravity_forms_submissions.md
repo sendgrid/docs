@@ -1,8 +1,8 @@
 ---
 seo:
   title: Sending New Emails via SendGrid For New Gravity Forms Submissions
-  description:
-  keywords:
+  description: Learn how to send an email whenever you receive a new Gravity Form submission.
+  keywords: integration, tutorial, Gravity Forms Submissions, SendGrid, Zapier
 title: Sending New Emails via SendGrid For New Gravity Forms Submissions
 weight: 0
 layout: page
@@ -23,7 +23,7 @@ You will need:
 1. [Getting your accounts ready](#ready)
 2. [Connecting your accounts](#connect)
 
-###<a name=”ready>Getting your accounts ready</a>
+###<a name="ready">Getting your accounts ready</a>
 
 
 To connect your Gravity Forms account to Zapier, you will need the Gravity Forms plugin with the Zapier add-on installed. You will also need a form created in Gravity forms. To get started with Gravity forms, and for information on creating forms and installing the add-ons that you will need, check [here](https://www.gravityhelp.com/documentation/article/getting-started/). Information for getting started with Gravity Forms on Zapier can be found [here](https://zapier.com/help/gravity-forms/#how-get-started-gravity-forms).
@@ -43,6 +43,7 @@ Click here to [Send new emails via SendGrid for new Gravity Forms submissions](h
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
 4. Using fields from Gravity Forms, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=5fpmLkDdv82LPlTeYCyhUE7bsFeSIE)
 
 5. Click **Save + Finish**.

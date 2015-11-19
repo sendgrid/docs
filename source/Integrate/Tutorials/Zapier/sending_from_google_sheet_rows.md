@@ -1,8 +1,8 @@
 ---
 seo:
   title: Sending SendGrid Emails From New Google Sheets Rows
-  description:
-  keywords:
+  description: Learn how to use Zapier to automatically send mail when you update a Google Sheets document.
+  keywords: integrate, tutorial, Google Sheets, SendGrid, Zapier
 title: Sending SendGrid Emails From New Google Sheets Rows
 weight: 0
 layout: page
@@ -10,11 +10,11 @@ navigation:
   show: true
 ---
 
-If you want to automatically send emails through your SendGrid when you update your Google Sheets spreadsheets, you can do that using [Zapier](http://zapier.com).
+If you want to automatically send emails through your SendGrid account when you update your Google Sheets spreadsheets, you can do that using [Zapier](http://zapier.com).
 
 You will need:
 
-* a [Google Docs](https://docs.google.com/)
+* a [Google Docs](https://docs.google.com/) account
 * a [SendGrid](http://sendgrid.com) account
 * a [Zapier](http://zapier.com) account
 
@@ -23,7 +23,7 @@ You will need:
 1. [Getting your accounts ready](#ready)
 2. [Connecting your accounts](#connect)
 
-###<a name=”ready>Getting your accounts ready</a>
+###<a name="ready">Getting your accounts ready</a>
 
 
 To connect your Google Sheets to Zapier, make sure [you have created a new sheet for this purpose](http://www.gcflearnfree.org/googlespreadsheets/8.2). You can learn more about getting started with Google Sheets on Zapier, [here](https://zapier.com/help/google-sheets/#how-get-started-google-sheets-zapier).
@@ -37,14 +37,17 @@ Click here to [Send SendGrid emails from new Google Sheets rows](https://zapier.
 1. Choose your Google Sheets account from the list of accounts, or connect a new account.
 
 2. Choose the **Spreadsheet** and the **Worksheet** you wish to use.
+
 ![Google Sheets pages](https://api.monosnap.com/rpc/file/download?id=KXMJ5qmwH4piFKBkBZXiTbMFu2cTog)
 
 3. Choose your SendGrid account from the list of accounts, or connect a new account.
 
 4. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
 5. Using fields from Google Sheets, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+
 ![Email content](https://api.monosnap.com/rpc/file/download?id=gmK4I07JxAKFtgoEBhJBwkdUh4fD7i)
 
 6. Click **Save + Finish**.

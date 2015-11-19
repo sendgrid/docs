@@ -1,8 +1,8 @@
 ---
 seo:
   title: Sending SendGrid Email When New Firebase Child Records Are Added
-  description:
-  keywords:
+  description: Learn how to use Zapier to send email when new Firebase Child Records Are Added.
+  keywords: integrate, tutorial, Firebase, Child Records, SendGrid, Zapier
 title: Sending SendGrid Email When New Firebase Child Records Are Added
 weight: 0
 layout: page
@@ -23,7 +23,7 @@ You will need:
 1. [Getting your accounts ready](#ready)
 2. [Connecting your accounts](#connect)
 
-###<a name=”ready>Getting your accounts ready</a>
+###<a name="ready">Getting your accounts ready</a>
 
 
 To connect your Firebase account you will need an active Firebase account. To get started with Firebase, go [here](https://www.firebase.com/tutorial/). You can learn more about getting started with Firebase on Zapier, [here](https://zapier.com/help/firebase/#how-get-started-firebase).
@@ -37,7 +37,9 @@ Click here to [Send SendGrid email when new Firebase child records are added](ht
 1. Choose your Firebase account from the list of accounts, or connect a new account.
 
 2. To connect a new Firebase account to your Zapier, you will need to enter the name of the **Firebase instance** you wish to use, and the **Secret** to authenticate the connection. You can find your secret authentication under the Auth tab.
+
 ![Credentials](https://api.monosnap.com/rpc/file/download?id=mHKxFy2GGk7HAi3GiaWCjnlHFL5AwM)
+
 ![Secret](https://api.monosnap.com/rpc/file/download?id=qgDlpkBImMfmQgb8TeQCQEZXNK0wnc)
 
 3. Enter the **Path to Data** that you wish for the Zap to watch for child records.
@@ -46,6 +48,7 @@ Click here to [Send SendGrid email when new Firebase child records are added](ht
 4. Choose your  account from the list of accounts, or connect a new account.
 
 5.  To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
 6. Using fields from Firebase, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
