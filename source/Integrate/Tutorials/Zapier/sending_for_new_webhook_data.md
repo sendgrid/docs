@@ -9,7 +9,6 @@ layout: page
 navigation:
   show: true
 ---
-
 If you want to receive a SendGrid email every time you receive a new webhook post, you can do that using [Zapier](http://zapier.com).
 
 You will need:
@@ -34,13 +33,18 @@ To link your Webhooks on Zapier to SendGrid, you must have an active SendGrid ac
 Click here to [Send emails through SendGrid for new caught webhook data](https://zapier.com/zapbook/zaps/4784/send-emails-through-sendgrid-for-new-caught-webhook-data/).
 
 1. Zapier will automatically generate a Webhook for you to send requests to. When you have this, click **Ok, continue**.
+
 2. Choose whether or not you wish to specify a **Child Key** for your webhook. Click **Save + Continue**.
-4. Choose your SendGrid account from the list of accounts, or connect a new account.
-5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
+3. Choose your SendGrid account from the list of accounts, or connect a new account.
+
+4. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
-6. Using fields from the Webhook, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+
+5. Using fields from the Webhook, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=nzgrqhMuvZtnagf2ns64uWZkF8P7od)
-7. Click **Save + Finish**.
+
+6. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, new webhook payloads will automatically cause a corresponding SendGrid email to be sent.
 

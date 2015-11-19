@@ -35,13 +35,18 @@ To link your Google Sheets to SendGrid, you must have an active SendGrid account
 Click here to [Send SendGrid emails from new Google Sheets rows](https://zapier.com/zapbook/zaps/4783/send-sendgrid-emails-from-new-google-sheets-rows/).
 
 1. Choose your Google Sheets account from the list of accounts, or connect a new account.
+
 2. Choose the **Spreadsheet** and the **Worksheet** you wish to use.
 ![Google Sheets pages](https://api.monosnap.com/rpc/file/download?id=KXMJ5qmwH4piFKBkBZXiTbMFu2cTog)
+
 3. Choose your SendGrid account from the list of accounts, or connect a new account.
+
 4. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
+
 5. Using fields from Google Sheets, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 ![Email content](https://api.monosnap.com/rpc/file/download?id=gmK4I07JxAKFtgoEBhJBwkdUh4fD7i)
+
 6. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, newly updated rows in Google Sheets will send corresponding emails through your SendGrid account.
