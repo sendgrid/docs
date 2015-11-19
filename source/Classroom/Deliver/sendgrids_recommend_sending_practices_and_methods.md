@@ -1,9 +1,9 @@
 ---
 seo:
-  title: SendGrid's Recommend Sending Practices & Methods
-  description: SendGrid's Recommend Sending Practices & Methods
+  title: SendGrid's Recommended Sending Practices & Methods
+  description: SendGrid's Recommended Sending Practices & Methods
   keywords: reputation, deliverability, best, practice, confirmation, peer, reconfirmation, spam traps, purchased, lists
-title: SendGrid's Recommend Sending Practices & Methods
+title: SendGrid's Recommended Sending Practices & Methods
 weight: 0
 layout: page
 zendesk_id: 200181748
@@ -26,4 +26,3 @@ In order to help you get the best deliverability, here are some informational ar
 &nbsp;
 
 If you have any questions about these sending practices or methods and how they can help improve your deliverability, please contact the SendGrid Support Team. Our [Deliverability 101](http://support.sendgrid.com/entries/21194967-deliverability-101) article also has a multitude of other deliverability tips and tricks.
-
