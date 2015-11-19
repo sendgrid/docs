@@ -10,10 +10,6 @@ navigation:
   show: true
 ---
 
-#Sending SendGrid emails from new Google Sheets rows
-
-
-
 If you want to automatically send emails through your SendGrid when you update your Google Sheets spreadsheets, you can do that using [Zapier](http://zapier.com).
 
 You will need:

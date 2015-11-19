@@ -9,9 +9,6 @@ layout: page
 navigation:
   show: true
 ---
-#Sending SendGrid emails for new PostgreSQL custom query row matches
-
-
 
 If you want to send emails automatically through SendGrid when new custom PostgreSQL rows are created, you can do that using [Zapier](http://zapier.com).
 

@@ -10,8 +10,6 @@ navigation:
   show: true
 ---
 
-#Sending emails from SendGrid to tagged Infusionsoft Contacts
-
 If you want to send emails automatically from your SendGrid to your Infusionsoft contacts, you can do that using [Zapier](http://zapier.com).
 
 You will need:

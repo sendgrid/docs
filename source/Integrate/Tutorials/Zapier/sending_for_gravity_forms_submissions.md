@@ -10,9 +10,6 @@ navigation:
   show: true
 ---
 
-#Sending new emails via SendGrid for new Gravity Forms submissions
-
-
 If you want to send a new SendGrid email every time you receive a Gravity Form submission, you can do that using [Zapier](http://zapier.com).
 
 You will need:

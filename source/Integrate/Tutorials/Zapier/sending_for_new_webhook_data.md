@@ -9,9 +9,6 @@ layout: page
 navigation:
   show: true
 ---
-#Send emails through SendGrid for new caught webhook data
-
-
 
 If you want to receive a SendGrid email every time you receive a new webhook post, you can do that using [Zapier](http://zapier.com).
 
