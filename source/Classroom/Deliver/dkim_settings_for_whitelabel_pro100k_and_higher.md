@@ -1,9 +1,9 @@
 ---
 seo:
-  title: DKIM Settings for Whitelabel (Silver+)
-  description: DKIM Settings for Whitelabel (Silver+)
+  title: DKIM Settings for Whitelabel - Pro 100K Accounts
+  description: DKIM Settings for Whitelabel Pro 100K
   keywords: gmail, dkim, on behalf, via, white, label, whitelabel, outlook, list, wizard, whitelabeling, whitelist, email., em.
-title: DKIM Settings for Whitelabel (Silver+)
+title: DKIM Settings for Whitelabel - Pro 100K
 weight: 0
 layout: page
 zendesk_id: 200181458
@@ -28,4 +28,3 @@ We recommend that the DKIM App be configured to match your full Whitelabel inclu
 A side effect of this is that some other mail providers, such as Gmail, sign messages with the subdomain. You may see a 'via' or 'on behalf of' message next to your FROM address with the full sending domain. With our example subdomain you would see:
 
 To get around this, use a FROM address that lies under the full sending domain such as address@em.domain.com. You will then need to enable your mail server to receive messages at the subdomain and sending address in case any of your recipients reply to your emails.
-
