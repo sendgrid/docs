@@ -22,4 +22,3 @@ A few things to note;
 - Enabling this feature will require you to verify a 6 digit code SMSed to your phone each time you log in to Sendgrid.com.&nbsp;This&nbsp;does not effect API&nbsp;access.
 
 **Please note that enabling 2FA will also require any Multiple Credentials associated with the main account to use a&nbsp;verification code when logging in as well.&nbsp;**
-

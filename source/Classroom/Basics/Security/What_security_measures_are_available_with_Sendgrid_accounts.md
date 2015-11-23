@@ -26,4 +26,3 @@ Additionally, we offer [Enforced TLS](https://sendgrid.com/docs/API_Reference/We
 **2-Factor Authentication**
 
 As an optional&nbsp;security precaution SendGrid also uses Two Factor Authentication during the login process. It requires not only a password and username but also something that only the user has access to like a physical token, a phone application, or device. You can turn the [Two Factor Authentication](https://sendgrid.com/docs/User_Guide/Account/Account_Settings/two_factor_authentication.html) feature on in your account settings.
-

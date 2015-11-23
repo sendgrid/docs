@@ -28,4 +28,3 @@ There are many great techniques available to protect your registration form but 
 &nbsp;
 
 Feel free to view our [Security Check](http://support.sendgrid.com/entries/21894581-security-checklist) list for more security tips.
-
