@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-If you are experiencing an issue where you or your recipients are seeing Sendgrid click tracked links not redirecting properly, or simply timing out, it&nbsp;could be due to one&nbsp;of several conditions.
+If you are experiencing an issue where you or your recipients are seeing SendGrid click tracked links not redirecting properly, or simply timing out, it&nbsp;could be due to one&nbsp;of several conditions.
 
 &nbsp;
 
@@ -44,4 +44,3 @@ If you are not on a Mac, you can also use the [CNAMELookup](http://mxtoolbox.com
 &nbsp;
 
 For more tips&nbsp;on Click Tracking best practices, as well as&nbsp;proper HTML syntax for links, [check here](/hc/en-us/articles/200181448) for more information.&nbsp;
-
