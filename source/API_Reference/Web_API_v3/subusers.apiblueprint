@@ -11,7 +11,7 @@ navigation:
 FORMAT: 1A
 
 # Subusers
-Subsers belonging to a parent user.
+Subusers belonging to a parent user.
 
 ## Subusers Collection [/subusers?username={username}&limit={limit}&offset={offset}]
 
