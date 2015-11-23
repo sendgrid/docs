@@ -66,7 +66,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 - **Make sure to give ALL of your images 'alt' attributes**
 
   - This simple step will keep the overall sizing of your images the same across platforms
-  - ie.&nbsp;http://www.w3schools.com/tags/att\_img\_alt.asp
+  - ie. http://www.w3schools.com/tags/att\_img\_alt.asp
 - **Outlook.com adds some pixels at the end of each image which can rearrange spacing, alignment, or padding**
 
   - Use the "Outlook.com hack"
@@ -78,7 +78,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
   - Outlook cannot support these tags
   - Instead use 'align'
 
-    - ie. <img src="image.jpeg" align="right">
+    - ie. `<img src="image.jpeg" align="right">`
   - _Seeing issues with Yahoo! as well in this respect?_
 
     - Try align="top" to the image in question.
