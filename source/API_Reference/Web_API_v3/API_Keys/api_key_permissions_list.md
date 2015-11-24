@@ -1,9 +1,9 @@
 ---
 seo:
-  title: API Key Permissions
-  description: Assign an API Key specific permissions.
+  title: API Key Permissions List
+  description: A record of all possible API Key permissions
   keywords: API, API Key, permissions, authentication, scope
-title: API Key Permissions
+title: API Key Permissions List
 weight: 0
 layout: page
 navigation:
@@ -14,7 +14,7 @@ navigation:
 Scopes For Each Use Case
 {% endanchor h2 %}
 
-There are separate API Keys for for general API calls and billing specific calls. Requiring a separate key for billing API calls prevents a user from gaining too much access to your account and potentially abusing that access. A user should only have as much access as needed to complete his or her job: applying scopes, or permissions, to an API Key allows you to achieve this.
+There are separate API Keys for general API calls and billing specific calls. Requiring a separate key for billing API calls prevents a user from gaining too much access to your account and potentially abusing that access. A user should only have as much access as needed to complete his or her job: applying scopes, or permissions, to an API Key allows you to achieve this.
 
 You are able to assign an API key these specific permissions during the key creation process, but they can also be changed later. Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found here.
 
