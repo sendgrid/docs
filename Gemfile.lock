@@ -1,14 +1,11 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    aws-sdk (2.1.35)
-      aws-sdk-resources (= 2.1.35)
-    aws-sdk-core (2.1.35)
-      jmespath (~> 1.0)
-    aws-sdk-resources (2.1.35)
-      aws-sdk-core (= 2.1.35)
+    aws-sdk (1.40.0)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
     blankslate (2.1.2.4)
-    capistrano (2.15.6)
+    capistrano (2.15.7)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
@@ -21,7 +18,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1.1)
+    coffee-script-source (1.10.0)
     colorator (0.1)
     colored (1.2)
     commonjs (0.2.7)
@@ -63,6 +60,7 @@ GEM
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     jmespath (1.1.3)
+    json (1.8.3)
     kramdown (1.9.0)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -73,7 +71,9 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.5)
-    mime-types (2.6.2)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2015.1120)
     mini_portile (0.6.2)
     multipart-post (2.0.0)
     net-scp (1.2.1)
@@ -127,7 +127,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk
+  aws-sdk (= 1.40.0)
   blankslate (= 2.1.2.4)
   capistrano (~> 2.15)
   haml
