@@ -20,7 +20,7 @@ GET a new subuser credential.
  {% parameter user Yes 'The subuser name' 'The subuser whose multi cred users you are looking for' %}
 {% endparameters %}
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=get&user=subuser_name %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/customer.credential api_user=apikey&api_key=your_sendgrid_password&task=get&user=subuser_name %}
   {% response json %}
 [
     {"id":12345,"name":"subuser_cred_1","permissions":{"web":1,"api":0,"mail":1}},
@@ -73,7 +73,7 @@ Create a new subuser credential.
  {% parameter credential_password Yes 'The password for your credential. See the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'The password for your subuser credential' %}
 {% endparameters %}
 
-{% apiexample add POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=create&user=subuser_name&credential=new_user_name&credential_password=new_credential_password %}
+{% apiexample add POST https://api.sendgrid.com/apiv2/customer.credential api_user=apikey&api_key=your_sendgrid_password&task=create&user=subuser_name&credential=new_user_name&credential_password=new_credential_password %}
   {% response json %}
 {
     "message" : "success"
@@ -102,7 +102,7 @@ Edit a subuser credential.
  {% parameter new_credential_password Yes 'The password for your credential. See the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'The password for your subuser credential' %}
 {% endparameters %}
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=edit&user=subuser_name&credential_name=credential_name&new_credential_password=credential_password %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.credential api_user=apikey&api_key=your_sendgrid_password&task=edit&user=subuser_name&credential_name=credential_name&new_credential_password=credential_password %}
   {% response json %}
 {
     "message" : "success"
@@ -132,7 +132,7 @@ Delete a subuser credential.
     {% parameter credential_name Yes 'The credential name' 'The current name of the credential' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.credential.json api_user=apikey&api_key=your_sendgrid_password&task=delete&user=subuser_name&credential_name=credential_name %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/customer.credential api_user=apikey&api_key=your_sendgrid_password&task=delete&user=subuser_name&credential_name=credential_name %}
   {% response json %}
 {
     "message" : "success"
