@@ -5,7 +5,7 @@ title: Resubscription of Users
 weight: 0
 layout: page
 navigation:
-  show: false
+  show: true
 ---
 
 {% anchor h2 %}

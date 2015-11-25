@@ -5,7 +5,7 @@ title: Setting up SSL for click tracking
 layout: page
 weight: 0
 navigation:
-  show: false
+  show: true
 ---
 
 {% anchor h2 %}
