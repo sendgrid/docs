@@ -26,4 +26,3 @@ Example:
 &nbsp;
 
 For more information please feel free to review our [documentation](https://sendgrid.com/docs/Classroom/Send/api_keys.html) page.
-

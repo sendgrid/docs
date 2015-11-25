@@ -35,4 +35,3 @@ curl -X "POST" "https://api.sendgrid.com/api/credentials/add.json" \
         -F "permissions={\"email\": 1, \"web\": 1, \"api\": 1}"
 
 **&nbsp;**
-

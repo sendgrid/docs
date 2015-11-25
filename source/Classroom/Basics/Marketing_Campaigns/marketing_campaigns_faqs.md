@@ -11,23 +11,23 @@ navigation:
   show: true
 ---
 
-- 
+-
 
 Do stats include ones for mail I send over the SMTPAPI and WebAPI?
 
-  - 
+  -
 
 A: No, these stats are specific to the mail you send over Marketing Campaigns only.
 
-- 
+-
 
 How do I find stats for a specific campaign?
 
-  - 
+  -
 
 A: You can go into the settings menu after your campaign has started sending, and there will be a link for “Stats”.
 
-- 
+-
 
 Is there a way for me to get more stats than are shown on the UI?
 

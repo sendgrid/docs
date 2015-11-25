@@ -1,9 +1,9 @@
 ---
 seo:
-  title: What is my sending/originating IP address with Sendgrid? 
-  description: What is my sending/originating IP address with Sendgrid? 
+  title: What is my sending/originating IP address with Sendgrid?
+  description: What is my sending/originating IP address with Sendgrid?
   keywords: silver, dedicated, sending, IP, account, originating, originate
-title: What is my sending/originating IP address with Sendgrid? 
+title: What is my sending/originating IP address with Sendgrid?
 weight: 0
 layout: page
 zendesk_id: 200181978
@@ -31,4 +31,3 @@ You can find your account’s main IP address on your Account Overview page. It 
 If you have multiple IP addresses on the account, these will also be listed here as well.&nbsp;
 
 ![]({{root_url}}/images/2_ips_maco.png)
-

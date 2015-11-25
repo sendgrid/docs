@@ -16,4 +16,3 @@ If you’re using SendGrid as an SMTP relay from another application, or using o
 &nbsp;
 
 Read more [here](https://sendgrid.com/docs/Glossary/Email_Types/index.html).
-

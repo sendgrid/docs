@@ -2,7 +2,7 @@
 seo:
   title: How do I Upgrade or Downgrade my account?
   description: How do I Upgrade or Downgrade my account?
-  keywords: 
+  keywords:
 title: How do I Upgrade or Downgrade my account?
 weight: 0
 layout: page
@@ -18,4 +18,3 @@ navigation:
 ![]({{root_url}}/images/2015-05-26_1028.png)
 
 &nbsp;
-

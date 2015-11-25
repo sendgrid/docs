@@ -30,4 +30,3 @@ You can take things a step further by processing or analyzing the data to presen
 Although it does require a fair amount of setup, the benefits of the Event API are paramount. More information about setup can be found in our [SendGrid Event API Documentation](https://sendgrid.com/docs/API_Reference/Webhooks/index.html). If you have any specific questions about the Event API please do not hesitate to contact our Support team via email, chat, or phone call.
 
 Need additional functionality with your Event API integration? Check out the open-source [Event Kit App](https://github.com/sendgrid/eventkit), as well as out friends over at [Keen.io](https://keen.io/).
-

@@ -15,4 +15,3 @@ Currently&nbsp;the only methods of payment we accept are&nbsp; **credit or check
 
 We don't accept PayPal, wire transfer, checks, or any card requiring a PIN.  
 Sorry for any inconvenience this may cause!
-

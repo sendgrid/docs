@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Tips To Keep Your List Organized 
-  description: Tips To Keep Your List Organized 
+  title: Tips To Keep Your List Organized
+  description: Tips To Keep Your List Organized
   keywords: segmentation, opt-in, list, spam traps, lists
-title: Tips To Keep Your List Organized 
+title: Tips To Keep Your List Organized
 weight: 0
 layout: page
 zendesk_id: 200182908
@@ -34,4 +34,3 @@ You may want to target different email campaigns according to engagement. If you
 &nbsp;
 
 List segmentation is a great tool that can be used to power your email campaigns as well as protect your reputation as a sender. Happy sending!
-

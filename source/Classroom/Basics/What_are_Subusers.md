@@ -22,4 +22,3 @@ There are three typical use cases for Subusers:
 3. External Use, Whitelabeled Sending - To send on behalf of a different domain and have the messages fully Whitelabeled, you need to purchase a new sending IP and Whitelabel that IP to the new sending IP. Please review our [Creating & Whitelabeling A New Subuser To A New Domain](http://support.sendgrid.com/entries/21758936-creating-whitelabeling-a-subuser-to-a-new-sending-domain) article for more information.
 
 Subusers are created and managed in the Subuser Management section of your account settings.
-

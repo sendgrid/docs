@@ -16,7 +16,7 @@ navigation:
 **1. Establish the New Subuser&nbsp;** (required)
 
 With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html)&nbsp;you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a whitelabel entry or enable website/SMTP access for the subuser.   
-  
+
 **Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
 
 <center>
@@ -25,7 +25,7 @@ With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Cust
 </center>
 
 **2. Assign an IP to be Used by the New Subuser** &nbsp;(required)   
-  
+
 Now that you have created the new subuser account, you will need to [add an IP](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment)&nbsp;so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
 
 **Call Example:** https://api.sendgrid.com/apiv2/customer.ip.xml?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&list=all
@@ -111,4 +111,3 @@ Now that you have created a new subuser you can change the [Event Notification U
 </center>
 
 &nbsp;
-

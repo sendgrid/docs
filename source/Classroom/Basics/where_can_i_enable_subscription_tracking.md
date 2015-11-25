@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Where can I enable Subscription Tracking? 
-  description: Where can I enable Subscription Tracking? 
+  title: Where can I enable Subscription Tracking?
+  description: Where can I enable Subscription Tracking?
   keywords: subscription, tracking, unsubscribe, unsub, apps, new, removed, where
-title: Where can I enable Subscription Tracking? 
+title: Where can I enable Subscription Tracking?
 weight: 0
 layout: page
 zendesk_id: 206916227
@@ -20,4 +20,3 @@ In our old interface, you may have been used to going to your Apps section, and 
 &nbsp;
 
 ![]({{root_url}}/images/subtrack.gif)
-

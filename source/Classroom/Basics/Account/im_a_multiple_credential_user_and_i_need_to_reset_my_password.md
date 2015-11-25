@@ -24,4 +24,3 @@ You may find yourself in a position where you have been given a set of Multiple 
 **If you use&nbsp;Multiple Credentials, but would like to reset the password, you will need to get in touch with the owner of the primary account and ask them to reset the password on your behalf.**
 
 Currently there is no method for Multiple Credential users to change those credentials themselves.
-

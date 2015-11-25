@@ -16,4 +16,3 @@ In order to add additional IPs to your account please contact either SendGrid Su
 Make sure you know and inform us if the IP will be for the Parent account, both Primary and [Subuser](http://support.sendgrid.com/forums/20690237-subusers "Link: http://support.sendgrid.com/forums/20690237-subusers") account, or Subuser account use only.&nbsp;
 
 Additional IPs cost an extra $20 per IP per month.&nbsp;
-

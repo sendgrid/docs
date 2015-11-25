@@ -1,9 +1,9 @@
 ---
 seo:
-  title: What is SMTP? 
-  description: What is SMTP? 
+  title: What is SMTP?
+  description: What is SMTP?
   keywords: integration, smtp, mta
-title: What is SMTP? 
+title: What is SMTP?
 weight: 0
 layout: page
 zendesk_id: 202821898
@@ -24,4 +24,3 @@ We've also got this great entry in our [Email Library](https://sendgrid.com/emai
 &nbsp;
 
 &nbsp;
-

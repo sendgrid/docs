@@ -12,4 +12,3 @@ navigation:
 ---
 
 You can report malicious emails and abberant behaviour you see from our users&nbsp;here: [http://sendgrid.com/report\_spam](http://sendgrid.com/report_spam)
-

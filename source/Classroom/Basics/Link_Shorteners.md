@@ -28,11 +28,11 @@ For click tracking analytics, SendGrid already provides aggregate open and click
 Here are some alternative ways to maintain the aesthetic that link shorteners provide:
 
 > Get your own link shortener
-> 
+>
 > Rather than using a general purpose public link shortener, use your own private one! &nbsp;Assuming you operate an honest business, your own private link shortener is unlikely to be blacklisted, and you can name it whatever you want. This also means your brand doesn't get hidden behind the link you actually want your customers to click on.
-> 
+>
 > Use HTML
-> 
+>
 > Even easier, just use HTML to transform any text or picture into a link. HTML is the code in the background of emails that handles structure and layout. It gets rendered by your inbox provider into attractive, well laid out messages. Just tag that picture or bit of text in your message that you want directing to your website, and voila! Pretty links!
 
 Summary
@@ -44,4 +44,3 @@ In email, don't use general purpose public link shorteners. They are abused by s
 &nbsp;
 
 &nbsp;
-

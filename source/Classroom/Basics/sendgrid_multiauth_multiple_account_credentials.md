@@ -22,4 +22,3 @@ navigation:
 **Web** - Access to your account's SendGrid portal. This includes all aspect of the login portal including account settings and billing information
 
 &nbsp;
-

@@ -32,4 +32,3 @@ The SendGrid APIs allow you to interact with our system in a number of different
 &nbsp;
 
 **Marketing Email API** &nbsp;– The Marketing Email API allows you to interact with our Marketing Email app without having to log into sendgrid.com. You can upload and manage recipient lists, Marketing Email content, and manage sender identities. Please visit our&nbsp; [SendGrid Marketing Email API Documentation](http://sendgrid.com/docs/API_Reference/Marketing_Emails_API/index.html)&nbsp;page for more information or our&nbsp; [SendGrid Interactive Documentation](http://sendgrid.com/docs/api_workshop.html)&nbsp;for help building&nbsp;Marketing&nbsp;Email API calls.
-

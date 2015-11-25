@@ -48,4 +48,3 @@ It is very easy to become a SendGrid OEM customer. Simply contact our support de
 &nbsp;
 
 Happy Sending!
-
