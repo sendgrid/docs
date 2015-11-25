@@ -12,15 +12,15 @@ $(document).ready(function() {
        	search($('input#page-query').val());
      		return false;
 		});
-	} 
-	
+	}
+
 	$('form.navbar-search').submit(function() {
     query = $('input#query').val();
     $.jStorage.set('search_query', query);
-    
+
     //this is kinda hacky but let's infer the root from the home button
     var root = $('.nav-link > a')[0].href.replace('/index.html','');
-    
+
     document.location.href = root + "/search.html";
     return false;
 	});
@@ -34,7 +34,7 @@ function search(query) {
     'page': simulatedSearchUrl,
     'title': 'Search: ' + query
   });
- 
+
   $('.circle-indicator').show();
 
   var result = $.getJSON('https://86xw1.api.searchify.com/v1/indexes/docs/search?q=' + encodeURIComponent(query) + '&fetch=title&snippet=text&len=500&callback=?')
@@ -45,14 +45,14 @@ function search(query) {
       last_char = root.substr(root.length - 1);
       if (last_char == "/")
         root = root.slice(0, -1);
-      
+
       if(data.matches == 0) {
         $('div#results').append('<h2>No Documentation Results Found</h2>');
         $('#docs-tab-badge').text('0');
       } else {
         $('#docs-tab-badge').text(data.matches);
       }
-    
+
       $.each(data.results, function(index, result) {
         $('div#results').append('<div class="result">\
             <p><a class="title" href="' + root + result.docid + '">' + result.title + '</a><br/>\
@@ -66,14 +66,14 @@ function search(query) {
       $('div#results').empty();
       $('div#results').append('<h2><div class="alert alert-danger">Documentation Search Failed! Please try again.</div></h2>');
     })
-    
+
     .always(function(){
       $('#indicator').hide();
     });
 
 
   var token = "222d9f6a86c97a5fe1d024dd258a2fc919fe7cc847900751bed9d64ce333510e";
-  var kb_result = 
+  var kb_result =
     $.ajax({
       url: 'https://sendgrid.zendesk.com/api/v2/help_center/articles/search.json?query=' + encodeURIComponent(query),
       headers: {
@@ -82,7 +82,7 @@ function search(query) {
     })
     .done(function(data){
       $('div#kb-results').empty();
-     
+
       data = $.grep(data.results, function(result){ return result.section_id!='200050018' } );
 
       if(data.length == 0) {
@@ -91,7 +91,7 @@ function search(query) {
       } else {
         $('#kb-tab-badge').text(data.length);
       }
-    
+
       $.each(data, function(index, result) {
         first_occurrence = $(result.body).text().toLowerCase().indexOf(query);
         before_chars = (500-(query.length))/2;
@@ -120,7 +120,7 @@ function search(query) {
 
 
     $.ajax({
-        url: "{{site.blog_url}}/feed/?q=" + query,
+        url: "https://sendgrid.com/blog/feed/?q=" + query,
         dataType: "xml"
     })
         .done(function (data) {
