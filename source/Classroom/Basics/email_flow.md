@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Email Flow
 navigation:
-  show: false
+  show: true
 seo:
   title: Email Message Flow Explained
   description: A basic diagram and description of how each email message flows in general and through SendGrid

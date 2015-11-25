@@ -5,7 +5,7 @@ title: Warming Up an IP Address
 seo:
   title: Warming Up an IP Address
 navigation:
-  show: false
+  show: true
 ---
 
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -13,7 +13,7 @@ navigation:
 Whether you are new to the email game or an accomplished vet, you have probably run across the idea of warming up an IP (Internet Protocol) address to improve delivery performance. Since we often find ourselves explaining the ins and outs of the IP warm-up process to current and prospective customers, we figured we would write a post to explain the basics. Below, we ask and answer four basic questions to explore and explain the topic.
 
 {% anchor h2 %}
-What does it actually mean to "warm up" an IP address? 
+What does it actually mean to "warm up" an IP address?
 {% endanchor %}
 
 IP warming is a gradual process that happens over time, with the goal of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or "cold" (ie, recently dormant) IP address, they will take notice of it and immediately begin evaluating the traffic coming from that IP. Since volume is perhaps the most telling factor in the eyes of ISP SPAM filters, it is best to begin sending low to moderate volume (e.g., up to 1 million emails/month), eventually working your way up to larger volumes (e.g., over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
@@ -21,7 +21,7 @@ IP warming is a gradual process that happens over time, with the goal of establi
 It should be noted that taking this gradual, ramping approach does not guarantee smooth sailing for ever more. It remains important to follow other email [best practices]({{site.blog_url}}/10-tips-to-keep-email-out-of-the-spam-folder) – send acceptable content that your users want to get, maintain quality lists and send your email on a consistent basis.
 
 {% anchor h2 %}
-Does my IP need to be warmed up? And if so, why? 
+Does my IP need to be warmed up? And if so, why?
 {% endanchor %}
 
 If you are sending email from a new or cold" IP address, the various ISPs have no basis from which to assign you a sending reputation. Since this reputation will eventually determine whether or not your emails will get past their SPAM filters, it's obviously pretty darn important. In the case that your are sending a very low volume (e.g., \< 10,000 emails/month) of email, you will likely stay off the ISPs' radars for the most part. However, if you are exceeding this approximate threshold, you should make the warmup process a priority in order to start off on the right foot. We suggest that a warmup period is useful regardless of volume.
@@ -29,7 +29,7 @@ If you are sending email from a new or cold" IP address, the various ISPs have n
 Often times, the history of your IP is also an important determinant of an ISPs initial evaluation. Here are a few tools you can use to check the reputation of any IP: Return Path's [SenderScore.org](https://senderscore.org) and Cisco's IronPort [SenderBase.org](http://www.senderbase.org)
 
 {% anchor h2 %}
-How does one go about warming up an IP? What does it entail in terms of volume, time frame, etc? 
+How does one go about warming up an IP? What does it entail in terms of volume, time frame, etc?
 {% endanchor %}
 
 The first time you send email from a fresh IP, ISP SPAM filters have to make a quick decision. Unfortunately, in this case they don't have enough information to make an educated decision. Therefore, you have to give them something to work with – just not too much and not too quickly!
@@ -43,7 +43,7 @@ Automated IP Warmup
 With our API V3, we have created a way for you to [automate your IP warmup process]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html). Please do checkout the manual methods, so that you can understand how IP warmup worked before SendGrid automated the process.
 
 {% anchor h3 %}
-For marketing email & marketing campaigns 
+For marketing email & marketing campaigns
 {% endanchor %}
 
 **The Conservative Approach** is to estimate your total monthly email volume and divide that number by 30 and then try to spread your sending evenly over the first 30 days, based on that calculation. Example: if you will send 90,000 emails/month, you should start off sending 3,000 per day over the first month.
@@ -51,7 +51,7 @@ For marketing email & marketing campaigns
 **The Aggressive Approach** is to divide your volume by 15 rather than 30. Example: say you still need to send the same 90,000 email/month, but you need the emails to reach your recipients in half as long of a time frame, send 6,000 per day for the first 15 days.
 
 {% anchor h3 %}
-For transactional email 
+For transactional email
 {% endanchor %}
 
 **Established businesses** that are already sending a ton of email, and decide to move to an ESP for the first time or switch to a new vendor, should migrate their sending a little bit at a time. One way to do this is to split the traffic and move small portions of it to the new IP over time. Alternatively, companies who are already maintaining multiple mail servers, can move their servers over to the new IP(s) one at a time.

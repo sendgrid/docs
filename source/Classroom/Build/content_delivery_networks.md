@@ -5,7 +5,7 @@ title: Content Delivery Networks
 layout: page
 weight: 0
 navigation:
-  show: false
+  show: true
 ---
 
 Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
