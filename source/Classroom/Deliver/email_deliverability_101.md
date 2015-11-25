@@ -70,7 +70,7 @@ The day then comes where&nbsp;one of your recipients simply can't take it any mo
 
 The potential fallback from this is that not only will that recipient no longer receive their&nbsp;important&nbsp;receipts, invoices, and password resets, but it then becomes possible that ALL recipients at the same domain or ISP may also run afoul of the same problem. Yikes!
 
-Consider setting up a [new Subuser account](/hc/en-us/articles/200181928-Creating-Whitelabeling-A-Subuser-To-A-New-Sending-Domain) with an [additional dedicated IP address](/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-my-account-Silver-only-) specifically for your marketing email, for example:
+Consider setting up a [new Subuser account](http://support.sendgrid.com/hc/en-us/articles/200181928-Creating-Whitelabeling-A-Subuser-To-A-New-Sending-Domain) with an [additional dedicated IP address](http://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-my-account-Silver-only-) specifically for your marketing email, for example:
 
 Parent account : IP 1 : Receipts, invoices, and password resets
 
@@ -88,7 +88,7 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 
 - "Add us to your address book!" - Having a recipient add your from address you their address book or trusted senders list can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to similar&nbsp;messages to different recipients!
 - Star or Mark as important - A simple inbox action like this is just another way your recipients can tell their mail providers that "Hey, I want these messages".
-- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses!&nbsp;Consider reaching out to the postmaster(usually postmaster@thedomain.com) of problematic mail domains to see if they can white list [your dedicated IP address](/hc/en-us/articles/200181978-What-is-my-sending-originating-IP-address-with-Sendgrid-).&nbsp;
+- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses!&nbsp;Consider reaching out to the postmaster(usually postmaster@thedomain.com) of problematic mail domains to see if they can white list [your dedicated IP address](http://support.sendgrid.com/hc/en-us/articles/200181978-What-is-my-sending-originating-IP-address-with-Sendgrid-).&nbsp;
 - "If you don't receive an email right away, please check your spam folder and mark "not spam"" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.&nbsp;
 
 &nbsp;
@@ -125,7 +125,6 @@ Finally, there are some great 3rd party&nbsp;services you can use to get an idea
 
 You can send emails to a capture address at one of these services and they will reply with a breakdown of all the positive and negative factors of your emails. This helps you isolate and fix specific issues that may be sending your email to the Spam folder rather than the inbox. These services are&nbsp;_HIGHLY recommended_ for troubleshooting **spam folder delivery. &nbsp;**
 
-[Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the&nbsp; [IP address you send mail from](/hc/en-us/articles/200181978-What-is-my-sending-originating-IP-address-with-Sendgrid-).&nbsp;
+[Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the&nbsp; [IP address you send mail from](http://support.sendgrid.com/hc/en-us/articles/200181978-What-is-my-sending-originating-IP-address-with-Sendgrid-).&nbsp;
 
 SendGrid has also released the article _[Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html)_ highlighting these and more deliverability tips. Our Compliance team also has a set of [Recommended Sending Practices & Methods](http://support.sendgrid.com/entries/21460723-sendgrid-s-recommend-sending-practices-methods) covering industry standards such as confirmation and invitation emails.
-

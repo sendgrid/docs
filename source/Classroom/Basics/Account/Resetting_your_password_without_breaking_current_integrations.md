@@ -2,7 +2,7 @@
 seo:
   title: Resetting your password without breaking current integrations
   description: Resetting your password without breaking current integrations
-  keywords: 
+  keywords:
 title: Resetting your password without breaking current integrations
 weight: 0
 layout: page
@@ -37,7 +37,7 @@ Now that your integration has the new credentials, go ahead and deploy your chan
 
 **Step 4 - Update The Original Credentials**
 
-Finally, once your integration is fully using your new credentials, you can go and [reset your password](/hc/en-us/articles/203893828) for your original credentials without interrupting your mail flow.
+Finally, once your integration is fully using your new credentials, you can go and [reset your password](http://support.sendgrid.com/hc/en-us/articles/203893828) for your original credentials without interrupting your mail flow.
 
 &nbsp;
 
@@ -50,4 +50,3 @@ If you'd like, once your original credentials have been changed, you can then go
 ![]({{root_url}}/images/indycareful.gif)
 
 Good luck, and don't hesitate to contact Support if you have any questions about the process!&nbsp;
-

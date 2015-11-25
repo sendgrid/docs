@@ -2,7 +2,7 @@
 seo:
   title: SSL vs. TLS
   description: SSL vs. TLS
-  keywords: 
+  keywords:
 title: SSL vs. TLS
 weight: 0
 layout: page
@@ -13,7 +13,7 @@ navigation:
 
 TLS (Transport Layer Security&nbsp;and SSL (Secure Sockets Layer) are protocols that provide data encryption and authentication between applications and servers in scenarios where that data is being sent across an insecure network, such as checking your email. The terms SSL and TLS are often used interchangeably or in conjunction with each other (TLS/SSL), but one is in fact the predecessor of the other — SSL 3.0 served as the basis for TLS 1.0 which, as a result, is sometimes referred to as SSL 3.1. With this said though, _is there actually a practical difference between the two?_
 
-It used to be believed that TLS v1.0 was&nbsp;marginally more secure than SSL v3.0, its predecessor. &nbsp;However, SSL v3.0 is getting very old and recent developments, such as the [POODLE](/hc/en-us/articles/204410613-Jan-7-SSLv3-Disabled-for-API-endpoints)&nbsp;vulnerability have shown that SSL v3.0 is now completely insecure (especially for web sites using it). &nbsp;Even before the POODLE was set loose, the US Government had&nbsp;already mandated&nbsp;that SSL v3 not be used for sensitive government communications or for HIPAA-compliant communications. If that was not enough … POODLE certainly was. &nbsp;In fact, as a result of POODLE, SSL v3 is being disabled on web sites all over the world and for many other services as well.
+It used to be believed that TLS v1.0 was&nbsp;marginally more secure than SSL v3.0, its predecessor. &nbsp;However, SSL v3.0 is getting very old and recent developments, such as the [POODLE](http://support.sendgrid.com/hc/en-us/articles/204410613-Jan-7-SSLv3-Disabled-for-API-endpoints)&nbsp;vulnerability have shown that SSL v3.0 is now completely insecure (especially for web sites using it). &nbsp;Even before the POODLE was set loose, the US Government had&nbsp;already mandated&nbsp;that SSL v3 not be used for sensitive government communications or for HIPAA-compliant communications. If that was not enough … POODLE certainly was. &nbsp;In fact, as a result of POODLE, SSL v3 is being disabled on web sites all over the world and for many other services as well.
 
 SSL v3.0 is effectively “dead” as a useful security protocol. &nbsp;Places that still allow its use for web hosting as placing their “secure web sites” at risk; Organizations that allow SSL v3 use to persist for other protocols (e.g. IMAP) should take steps to remove that support at the soonest software update maintenance window.
 
@@ -26,4 +26,3 @@ Subsequent versions of TLS — v1.1 and v1.2 are _significantly more secure&nbsp
 &nbsp;
 
 &nbsp;
-

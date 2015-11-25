@@ -74,4 +74,4 @@ Here you will see the Location and Value fields displayed. These values are what
 
 - Enabling Custom DKIM will use the existing Domain settings in your [DKIM App](https://sendgrid.com/app/appSettings/type/dkim/id/21), and will respect your choice to "Set the DKIM domain to match the FROM domain.
 - You can only create a single custom DKIM record per domain, but you may create as many as you like for additional domains you send from and control.
-- There is currently not a way to delete a Custom&nbsp;DKIM entry from within the UI, please&nbsp; [submit a ticket](/hc/en-us/requests/new) in order to get an entry deleted.
+- There is currently not a way to delete a Custom&nbsp;DKIM entry from within the UI, please&nbsp; [submit a ticket](http://support.sendgrid.com/hc/en-us/requests/new) in order to get an entry deleted.

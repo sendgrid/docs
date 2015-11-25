@@ -21,7 +21,7 @@ In your logs, you may be&nbsp;seeing Deferral&nbsp;events with the reason(s) of;
 
 We spend a lot of time tuning the rate of delivery on an ISP by ISP basis, and these deferral events are simply proof that this system is working for you to keep ISPs happy with your throughput, regardless of your sending habits.
 
-**Cool, so is there anything I need to do?** &nbsp;Nope, we'll continue to attempt delivery&nbsp;of Deferred messages&nbsp;for up to 72 hours, after which time we may [drop the message](/hc/en-us/articles/200181728-My-emails-are-being-dropped-) if the ISP still isn't able&nbsp;accept the messages. These deferrals may sometimes result in delays between an email's Processed event and the eventual Delivery event, but again, this is simply us optimizing the rate at which email sends are attempted.&nbsp;
+**Cool, so is there anything I need to do?** &nbsp;Nope, we'll continue to attempt delivery&nbsp;of Deferred messages&nbsp;for up to 72 hours, after which time we may [drop the message](http://support.sendgrid.com/hc/en-us/articles/200181728-My-emails-are-being-dropped-) if the ISP still isn't able&nbsp;accept the messages. These deferrals may sometimes result in delays between an email's Processed event and the eventual Delivery event, but again, this is simply us optimizing the rate at which email sends are attempted.&nbsp;
 
 &nbsp;
 

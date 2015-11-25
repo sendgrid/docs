@@ -43,4 +43,4 @@ If you are not on a Mac, you can also use the [CNAMELookup](http://mxtoolbox.com
 
 &nbsp;
 
-For more tips&nbsp;on Click Tracking best practices, as well as&nbsp;proper HTML syntax for links, [check here](/hc/en-us/articles/200181448) for more information.&nbsp;
+For more tips&nbsp;on Click Tracking best practices, as well as&nbsp;proper HTML syntax for links, [check here](http://support.sendgrid.com/hc/en-us/articles/200181448) for more information.&nbsp;

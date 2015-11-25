@@ -21,5 +21,4 @@ In all seriousness, we don't allow our users to send to purchased lists&nbsp;for
 
 Firstly, purchased lists violate our [Email Policy](https://sendgrid.com/email_policy).
 
-Secondly, it's just bad practice and sending to one will only end in tears. You can find out [more&nbsp;here](/hc/en-us/articles/200182878-Why-Purchased-Email-Lists-Are-No-Good).&nbsp;&nbsp;
-
+Secondly, it's just bad practice and sending to one will only end in tears. You can find out [more&nbsp;here](http://support.sendgrid.com/hc/en-us/articles/200182878-Why-Purchased-Email-Lists-Are-No-Good).&nbsp;&nbsp;

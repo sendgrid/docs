@@ -13,5 +13,4 @@ navigation:
 
 We do not offer a true "sandbox" environment, however we do have a [Free plan](https://sendgrid.com/transactional-email/pricing) which allows you to send 400 emails per day, and also gives you access to almost all of the features offered with our higher package levels. The Free plan does not include access to a dedicated IP or&nbsp;IP whitelabeling.
 
-We also have a [sink email address](/hc/en-us/articles/201995663-Safely-Test-Your-Sending-Speed)&nbsp;that can help you test message throughput&nbsp;for your integration.
-
+We also have a [sink email address](http://support.sendgrid.com/hc/en-us/articles/201995663-Safely-Test-Your-Sending-Speed)&nbsp;that can help you test message throughput&nbsp;for your integration.

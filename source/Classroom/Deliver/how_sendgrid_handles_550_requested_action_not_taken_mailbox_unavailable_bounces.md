@@ -17,4 +17,4 @@ Despite the fact that a very small percentage of addresses that return this boun
 
 We have found that over 99% of email addresses returning this bounce reason never have a successful delivery.
 
-**Because sending to previously bounced&nbsp;addresses can negatively impact sending reputation, it is in our sender’s best interest to treat this response as a hard bounce and [drop subsequent&nbsp;sending](/hc/en-us/articles/200181728-My-emails-are-being-dropped-). The increase in hard bounces, particularly at Microsoft domains, may last for some time yet this is an important step to maximize deliverability and protect the reputation of our senders.**
+**Because sending to previously bounced&nbsp;addresses can negatively impact sending reputation, it is in our sender’s best interest to treat this response as a hard bounce and [drop subsequent&nbsp;sending](http://support.sendgrid.com/hc/en-us/articles/200181728-My-emails-are-being-dropped-). The increase in hard bounces, particularly at Microsoft domains, may last for some time yet this is an important step to maximize deliverability and protect the reputation of our senders.**

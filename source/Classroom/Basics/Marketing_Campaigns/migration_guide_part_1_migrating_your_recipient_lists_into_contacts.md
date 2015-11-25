@@ -63,7 +63,7 @@ Next,&nbsp;click " **Add to New List**" option and give your list a Name.&nbsp;
 
 When you're satisfied, click **Save** to start the upload.
 
-If&nbsp;you encounter errors while uploading your new list, be sure to check out our [List Upload Troubleshooting guide](/hc/en-us/articles/206317698-List-Upload-Troubleshooting). If all goes well, you will see the following message:&nbsp;
+If&nbsp;you encounter errors while uploading your new list, be sure to check out our [List Upload Troubleshooting guide](http://support.sendgrid.com/hc/en-us/articles/206317698-List-Upload-Troubleshooting). If all goes well, you will see the following message:&nbsp;
 
 &nbsp; ![]({{root_url}}/images/uploadcsvsuccess.png)
 

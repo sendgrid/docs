@@ -15,8 +15,8 @@ There are many&nbsp;different ways to use SendGrid’s email services so it all 
 
 **The main ways you can integrate with Sendgrid:&nbsp;**
 
-- [SMTP](/hc/en-us/articles/202821898-What-is-SMTP-)&nbsp;- Send using a desktop mail client, or existing program/service with [your smtp credentials](/hc/en-us/articles/200328026-What-are-my-settings-for-SMTP-integration-).&nbsp;
-- [Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html)&nbsp;- Send from your app using&nbsp; [your api key](/hc/en-us/articles/200181818-What-is-my-API-key-). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.
+- [SMTP](http://support.sendgrid.com/hc/en-us/articles/202821898-What-is-SMTP-)&nbsp;- Send using a desktop mail client, or existing program/service with [your smtp credentials](http://support.sendgrid.com/hc/en-us/articles/200328026-What-are-my-settings-for-SMTP-integration-).&nbsp;
+- [Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html)&nbsp;- Send from your app using&nbsp; [your api key](http://support.sendgrid.com/hc/en-us/articles/200181818-What-is-my-API-key-). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.
 - [Email Marketing App and API](https://sendgrid.com/docs/Marketing_Emails/index.html)&nbsp;- Send from our content creation UI and manage your lists via the website.&nbsp;
 
 &nbsp;
@@ -28,4 +28,3 @@ There are many&nbsp;different ways to use SendGrid’s email services so it all 
 - We _ **highly** _ recommend that if you are a Silver or&nbsp;higher customer, you [warm up your IP](https://sendgrid.com/docs/User_Guide/warming_up.html) as part of your getting started checklist. Warming up is one of the best ways to prevent delivery issues down the road!
 
 &nbsp;
-

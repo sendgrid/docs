@@ -59,7 +59,7 @@ Keep in mind that many&nbsp;modern network nodes will de-prioritize ICMP packets
 
 **Google Header Analyzer**
 
-Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular&nbsp;location. For more information on how to grab the original headers from an email, [check here.](/hc/en-us/articles/203965613-How-do-I-check-the-headers-raw-source-of-an-email-)
+Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular&nbsp;location. For more information on how to grab the original headers from an email, [check here.](http://support.sendgrid.com/hc/en-us/articles/203965613-How-do-I-check-the-headers-raw-source-of-an-email-)
 
 1. Grab the headers of the message you want to analyze. Make sure you just grab the received headers, which is everything above the first content boundary.
 

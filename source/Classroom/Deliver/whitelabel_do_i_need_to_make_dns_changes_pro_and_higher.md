@@ -25,11 +25,10 @@ You can take this a step further by completing the Whitelabel and adding a handf
 
 ![]({{root_url}}/images/makowhitelabel2.png)&nbsp;
 
-Since an IP will only support a single rDNS name, it's recommended that you use a single IP per specific top-level domain/account. Learn more about adding additional&nbsp;IPs [here](/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account).
+Since an IP will only support a single rDNS name, it's recommended that you use a single IP per specific top-level domain/account. Learn more about adding additional&nbsp;IPs [here](http://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account).
 
-[Subusers](/hc/en-us/articles/200181918-What-are-Subusers-)&nbsp;can also be used in conjunction with Whitelabels when sending from multiple domains. Having a single IP assigned to a single Subuser is a great way to segment your traffic.&nbsp;
+[Subusers](http://support.sendgrid.com/hc/en-us/articles/200181918-What-are-Subusers-)&nbsp;can also be used in conjunction with Whitelabels when sending from multiple domains. Having a single IP assigned to a single Subuser is a great way to segment your traffic.&nbsp;
 
 &nbsp;
 
 For specific questions about how to make the required Whitelabel DNS changes to your domain, please contact your website and/or DNS hosting provider.
-
