@@ -25,13 +25,14 @@ The following is a complete list of all possible permissions that you may assign
         <h3><a href="#Categories">Categories</a></h3>
         <h3><a href="#Clients">Clients</a></h3>
         <h3><a href="#Credentials">Credentials</a></h3>
+        <h3><a href="#IPs">IPs</a></h3>
     </div>
     <div class="col-md-4">
-        <h3><a href="#IPs">IPs</a></h3>
         <h3><a href="#Mail-Settings">Mail Settings</a></h3>
         <h3><a href="#Mail">Mail</a></h3>
         <h3><a href="#Marketing-Campaigns">Marketing Campaigns</a></h3>
         <h3><a href="#Partner-Settings">Partner Settings</a></h3>
+        <h3><a href="#Scheduled-Sends">Scheduled Sends</a></h3>
         <h3><a href="#Stats">Stats</a></h3>
         <h3><a href="#Subusers">Subusers</a></h3>
     </div>
@@ -39,7 +40,8 @@ The following is a complete list of all possible permissions that you may assign
         <h3><a href="#Suppressions">Suppressions</a></h3>
         <h3><a href="#Templates">Templates</a></h3>
         <h3><a href="#Tracking">Tracking</a></h3>
-        <h3><a href="#User">User</a></h3>
+        <h3><a href="#User-Settings">User Settings</a></h3>
+        <h3><a href="#Webhook">Webhook</a></h3>
         <h3><a href="#Whitelabel">Whitelabel</a></h3>
         <h3><a href="#Whitelist">Whitelist</a></h3>
     </div>
@@ -447,6 +449,28 @@ The following is a complete list of all possible permissions that you may assign
   </tbody>
 </table>
 
+{% anchor h2 %}Scheduled Sends{% endanchor %}
+<table class="table table-bordered table-striped">
+  <tbody>
+      <tr>
+        <td>user.scheduled_sends.create</td>
+        <td>create new scheduled send</td>
+      </tr>
+      <tr>
+        <td>user.scheduled_sends.delete</td>
+        <td>delete existing scheduled send</td>
+      </tr>
+      <tr>
+        <td>user.scheduled_sends.read</td>
+        <td>retrieve scheduled send</td>
+      </tr>
+      <tr>
+        <td>user.scheduled_sends.update</td>
+        <td>update existing scheduled send</td>
+      </tr>
+  </tbody>
+</table>
+
 {% anchor h2 %}Subusers{% endanchor %}
 <table class="table table-bordered table-striped">
   <tbody>
@@ -635,7 +659,7 @@ The following is a complete list of all possible permissions that you may assign
   </tbody>
 </table>
 
-{% anchor h2 %}User{% endanchor %}
+{% anchor h2 %}User Settings{% endanchor %}
 <table class="table table-bordered table-striped">
   <tbody>
       <tr>
@@ -735,22 +759,6 @@ The following is a complete list of all possible permissions that you may assign
         <td>update existing profile</td>
       </tr>
       <tr>
-        <td>user.scheduled_sends.create</td>
-        <td>create new scheduled send</td>
-      </tr>
-      <tr>
-        <td>user.scheduled_sends.delete</td>
-        <td>delete existing scheduled send</td>
-      </tr>
-      <tr>
-        <td>user.scheduled_sends.read</td>
-        <td>retrieve scheduled send</td>
-      </tr>
-      <tr>
-        <td>user.scheduled_sends.update</td>
-        <td>update existing scheduled send</td>
-      </tr>
-      <tr>
         <td>user.settings.enforced_tls.create</td>
         <td></td>
       </tr>
@@ -798,6 +806,12 @@ The following is a complete list of all possible permissions that you may assign
         <td>user.username.update</td>
         <td>update existing username</td>
       </tr>
+    </tbody>
+</table>
+
+{% anchor h2 %}Webhook{% endanchor %}
+<table class="table table-bordered table-striped">
+  <tbody>
       <tr>
         <td>user.webhooks.event.settings.read</td>
         <td>retrieve event webhook settings</td>

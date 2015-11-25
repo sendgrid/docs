@@ -27,7 +27,7 @@ In our above example, we made sure to exclude `billing.update` from the list of 
 How can I use API Key permissions?
 {% endanchor h2 %}
 
-During the API Key creation process you will be able to:
+During the [API Key creation process]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html) you will be able to:
 
 1. Give your new key a name for easy identification
 2. Set which permissions are to be associated with your new key
@@ -42,35 +42,8 @@ When you create an API Key, you can not assign it more permissions than you curr
 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
-{% anchor h3 %}
-Permissions
-{% endanchor h3 %}
-
-There are several general categories of permissions that allow you to grant "read" and "write" access to an API endpoint, or to prohibit all access to that endpoint.
-
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <th>Permission</th>
-         <th>Description</th>
-      </tr>
-      <tr>
-         <td>No Access</td>
-         <td>You cannot access this endpoint.</td>
-      </tr>
-      <tr>
-         <td>Read Access</td>
-         <td>You can only access GET endpoints.</td>
-      </tr>
-      <tr>
-         <td>Write Access</td>
-         <td>You can only access PATCH, PUT, DELETE, and POST endpoints.</td>
-      </tr>
-   </tbody>
-</table>
-
 {% anchor h2 %}
-Example API Keys with Recommended Permissions
+Example Permissions for Common API Key Use Cases
 {% endanchor h2 %}
 
 {% anchor h3 %}
