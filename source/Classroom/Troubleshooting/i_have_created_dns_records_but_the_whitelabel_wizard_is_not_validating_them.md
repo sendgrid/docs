@@ -45,7 +45,7 @@ Examples:
 | dig cname sub.domain.com | CNAME | sendgrid.net |
 | dig txt smtpapi.\_domainkey.sub.domain.com | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB |
 | dig txt smtpapi.\_domainkey.domain.com | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB |
-| dig txt domain.com | TXT | [v=spf1 include:sendgrid.net ~all](/hc/en-us/articles/202517236-SPF-Records-Explained) |
+| dig txt domain.com | TXT | [v=spf1 include:sendgrid.net ~all](http://support.sendgrid.com/hc/en-us/articles/202517236-SPF-Records-Explained) |
 | dig a&nbsp;o\*.sub.domain.com | A | Your Sendgrid IP address |
 
 &nbsp;
@@ -77,4 +77,3 @@ Check global propagation: [https://www.whatsmydns.net/](https://www.whatsmydns.n
 Check DNS records online: [http://mxtoolbox.com/DNSLookup.aspx](http://mxtoolbox.com/DNSLookup.aspx)
 
 &nbsp;
-
