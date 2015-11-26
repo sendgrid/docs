@@ -38,7 +38,7 @@ Create a Customer
   {% response json %}
 {
   "message": "success",
-  "id": 123
+  "id": "123"
 }
   {% endresponse %}
   {% response xml %}
