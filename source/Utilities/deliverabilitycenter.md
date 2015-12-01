@@ -7,10 +7,18 @@ navigation:
   show: true 
 ---
 
-Come check out updated [Deliverability Center](https://sendgrid.com/deliverabilitycenter)! 
+The [Deliverability Center](https://sendgrid.com/deliverabilitycenter) can tell you about the health of your account's statistics, your Whitelabel and DNS records, and provides a library of bounce codes and reasons with explanations and action items to keep your email delivery healthy.   
 
-Login with your account credentials and easily check your account's sending metrics with our Statistics Healthcheck, validate your Whitelabel DNS Records, and view your account's Top Bounce reasons! Include up to 5 email addresses to be sent any notable changes we see, be it a decline in opens or a failed DNS Record.  
+![]({{root_url}}/images/searching.gif "Deliverability Center Search")
 
-You can also search and browse our ever growing library of SMTP Errors and our recommended solutions.
+Feature list:
+  - Bounce Dictionary with all of the major ESPs like Gmail, Yahoo, Microsoft and AOL.
+  - Explanations and action items for all major bounce reasons and codes.
+  - Statistics Healthcheck for your account run daily.
+  - Whitelabel validation and monitoring.
+  - Top 5 daily bounce reasons for your account.
+  - Email and SMS alerts for Statistics and Whitelabel issues.
+
+Sign in to the Deliverability Center to see the whole suite of features, to generate reports for your account, and to add contact information for notifications.
 
 ![]({{root_url}}/images/deliverability_center_screenshot.png "Deliverability Center")
