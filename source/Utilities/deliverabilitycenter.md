@@ -5,6 +5,10 @@ footer: false
 weight: 115
 navigation:
   show: true 
+seo:
+  title: Deliverability Center
+  override: true
+  description: The Deliverability Center can tell you about the health of your account's statistics, your Whitelabel and DNS records, and provides a library of bounce codes and reasons with explanations and action items to keep your email delivery healthy.
 ---
 
 The [Deliverability Center](https://sendgrid.com/deliverabilitycenter) can tell you about the health of your account's statistics, your Whitelabel and DNS records, and provides a library of bounce codes and reasons with explanations and action items to keep your email delivery healthy.   
