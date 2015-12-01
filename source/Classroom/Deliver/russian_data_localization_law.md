@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Russian Data Localization Law
 navigation:
-  show: false
+  show: true
 seo:
   title: Russian Data Localization Law
   description: Summary of highlights from new Russia Data Localization Law to be enforced as of September 1, 2015
