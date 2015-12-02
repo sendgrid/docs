@@ -13,26 +13,43 @@ seo:
 What are API Key permissions?
 {% endanchor h2 %}
 
-API Keys are used to authenticate an API call. By assigning specific permissions to an API Key, you can limit exactly which calls an API Key is able to authenticate, very similar to the way in which a computer administrator can assign file "read" or "write" access to certain users.
+API Keys are used to authenticate an API call. There are two types of API Keys:
 
-For example, if you were to create an API Key for authenticating calls that would result in creating, reading, or sending email, you would want to assign the `mail.send` permission to that key to allow it to send email. However, you would not want to assign it the `billing.update` permission, since that would be outside the scope of its permissions.
+1. General API Keys
+2. Billing API Keys
+
+We require that you use a dedicated API Key for billing related API calls that is distinct from keys used for general API calls. This separation prevents a user from gaining too much access to your account and potentially abusing that access.
+
+By assigning specific permissions to an API Key, you can limit exactly which calls an API Key is able to authenticate, very similar to the way in which a computer administrator can assign file "read" or "write" access to certain users.
+
+For example, if you were to create an API Key for authenticating calls that would result in creating, reading, or sending email, you would want to assign the `mail.send` permission to that key to allow it to send email. However, you would not want to assign it the `billing.update` permission, since that would be outside the scope of its intended use.
 
 {% anchor h2 %}
 Why are API Key permissions useful?
 {% endanchor h2 %}
 
-We require that you use a dedicated API Key for billing related API calls that is distinct from keys used for general API calls. This separation prevents a user from gaining too much access to your account and potentially abusing that access. In addition to the required separate billing API Key, we recommend creating a dedicated API Key for several other categories of API calls. A good security practice is to assign a user only as much access as is necessary to complete his or her job: this can be achieved by applying permissions to each API Key.
+A good security practice is to assign a user only as much access as is necessary to complete his or her job: this principle can also be applied to API Keys by assigning **permissions** to each key. These permissions give you better security and control over the different areas of your account.
 
-For example, in our mail sending API Key referenced above, we made sure to exclude `billing.update` from the list of permissions. This is so that someone with the mail sending key would be unable to access and change sensitive billing information. This powerful ability to control access to the various areas of your account can be very helpful in preventing and mitigating the consequences of a leaked API Key.
+For example, in our mail sending API Key referenced above, we made sure to exclude `billing.update` from the list of permissions. This is to prevent someone with the mail sending key from accessing and change sensitive billing information. This powerful ability to control access to the various areas of your account can be very helpful in preventing and mitigating the consequences of a leaked API Key.
 
 {% anchor h2 %}
 How can I use API Key permissions?
 {% endanchor h2 %}
 
-During the [API Key creation process]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html) you will be able to:
+{% anchor h3 %}
+General API Keys
+{% endanchor h3 %}
+
+To create a new General API Key and assign it permissions, first navigate to your Settings and select API Keys. This page displays your current API Keys. To create a new key, click the Create API Key button and select "General API Key".
+
+![]({{root_url}}/images/select_general_api_key.png)
+
+You will then be able to:
 
 1. Give your new key a name for easy identification
 2. Select which permissions you would like to be associated with your new key
+
+![]({{root_url}}/images/select_general_api_key_permissions.png)
 
 When assigning permissions to your API Key, you will be given the option to select one of the following levels of access:
 
@@ -42,11 +59,25 @@ When assigning permissions to your API Key, you will be given the option to sele
 
 Once an API Key is assigned permissions, it will only be able to authenticate API calls that reside within the scope of those permissions.
 
-API Key permissions are not permanent and may be changed any time after the key has been created.
-
 {% info %}
 When you create an API Key, you can not assign it more permissions than you currently have.
 {% endinfo %}
+
+{% anchor h3 %}
+Billing API Keys
+{% endanchor h3 %}
+
+To create a Billing API Key, navigate to your Settings and select API Keys. Click the Create API Key button and select "Billing API Key".
+
+![]({{root_url}}/images/select_billing_api_key.png)
+
+You will then be able to name your key and assign it permissions.
+
+![]({{root_url}}/images/select_billing_api_key_permissions.png)
+
+API Key permissions are not permanent and may be changed any time after the key has been created. Simply click the gear icon next to the API Key you would like to make changes to, and click "Edit Details".
+
+![]({{root_url}}/images/editing_api_keys.png)
 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
