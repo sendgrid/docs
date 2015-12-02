@@ -78,7 +78,23 @@ You can create up to 10 different categories.
 {% endinfo %}
 
 <p>
-<strong>Unsubscribe Group:</strong> This allows you to set the group that applies to this email, so that users who have already opted out of emails do not receive them again. In order to keep your sender rating high, it is important to make sure you don’t send emails to users who have unsubscribed in the past. In order to create a new suppression group, please go to the<a href="https://app.sendgrid.com/suppressions/advanced_suppression_manager">Unsubscribe Groups</a> page to add a new suppression group. Please see our <a href="{{root_url}}/User_Guide/Suppressions/index.html">Suppressions docs</a> for more information.
+<strong>Unsubscribe Group:</strong> This allows you to select which unsubscribe group to apply to this campaign so that users who have already opted out of these emails do not receive them again. In order to keep your sender rating high, it is important to make sure that you don't send emails to users who have already unsubscribed. To create a new unsubscribe group, please go to the <a href="https://app.sendgrid.com/suppressions/advanced_suppression_manager">Unsubscribe Groups</a> page. For more information, please see our <a href="{{root_url}}/User_Guide/Suppressions/index.html">Suppressions documentation</a>.
+</p>
+
+<p>
+You can also choose to use your own custom unsubscribe group, by selecting “Use Custom Link…” from the group dropdown menu and inserting a URL into the text field that appears.
+
+<img src="{{root_url}}/images/unsubscribe_group_dropdown.png" alt="Unsubscribe Group Dropdown Menue" />
+</p>
+
+{% info %}
+In order to send or schedule a campaign, an [unsubscribe] tag is required in both the plain text and HTML versions of your content, and a corresponding unsubscribe group or custom URL must be selected.
+{% endinfo %}
+
+<p>
+<strong>IP Pool:</strong> If you have created one or more IP Pools, an extra dropdown menu will be displayed that gives you the option to select an IP Pool for use with your currently selected campaign. For more information about IP Pools and how they may be helpful, please see our <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html">IP Pooling Documentation</a>.
+
+<img src="{{root_url}}/images/ip_pool_dropdown.png" alt="IP Pool Dropdown Menue" />
 </p>
 
 {% warning %}
