@@ -37,14 +37,12 @@ Create a Customer
 {% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=true&company=company&whitelabel=sendgrid.me %}
   {% response json %}
 {
-  "message": "success",
-  "id": "123"
+  "message": "success"
 }
   {% endresponse %}
   {% response xml %}
 <result>
    <message>success</message>
-   <id>123</id>
 </result>
 
   {% endresponse %}
