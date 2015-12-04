@@ -16,7 +16,7 @@ Partner settings allow you to integrate your SendGrid account with our partners 
 SendGrid For New Relic
 {% endanchor %}
 
-Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/Classroom/Track/new_relic.html).
+Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/Classroom/Track/Collecting_Data/new_relic.html).
 
 {% anchor h3 %}
 Settings
@@ -30,7 +30,7 @@ Settings
 sendwithus
 {% endanchor %}
 
-Segment contacts, A/B test emails, and more with [sendwithus](https://www.sendwithus.com/) while sending through your SendGrid account. For more information, please see our [Setting up SendGrid with sendwithus]({{root_url}}/Classroom/Track/sendwithus.html).
+Segment contacts, A/B test emails, and more with [sendwithus](https://www.sendwithus.com/) while sending through your SendGrid account. For more information, please see our [Setting up SendGrid with sendwithus]({{root_url}}/Classroom/Track/Collecting_Data/sendwithus.html).
 
 {% anchor h3 %}
 Settings
