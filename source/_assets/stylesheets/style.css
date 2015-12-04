@@ -810,3 +810,7 @@ figure.code.expanded {
     }
 
 }
+
+.subsection-links a{
+  font-size: 14px;
+}
