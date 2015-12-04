@@ -25,7 +25,7 @@ SendGrid customers utilizing our service for their transactional email and wanti
 -   **SMTP Hostname**: ssl://smtp.sendgrid.net or tls://smtp.sendgrid.net
 -   **SMTP Username**: [your SendGrid account's username]
 -   **SMTP Password**: [your SendGrid account's password]
--   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email/Infrastructure/smtp_ports.html)]
+-   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email_Infrastructure/smtp_ports.html)]
 
 Once these changes have been made within the Email Settings page within your SugarCRM account, all outgoing mail from the application will be routed to SendGrid so we can send it to your end recipient.
 
