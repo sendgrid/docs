@@ -9,7 +9,6 @@ layout: page
 navigation:
   show: true
 ---
-
 FORMAT: 1A
 
 # MAKO API Permissions
@@ -32,15 +31,10 @@ This endpoint will return a list of scopes for which that user have access.
 
     + Body
 
-        ["mail.send","alerts.create", "alerts.read"]
+            ["mail.send","alerts.create", "alerts.read"]
 
-+ Response 200 (application/json)
-
-        []
 
 + Response 401
-
-    + Body
 
         {
           "errors":[
@@ -64,23 +58,19 @@ This endpoint will return a list of scopes which can be assigned to a subuser.
 
     + Body
 
-        ["mail.send","alerts.create", "alerts.read"]
-
-+ Response 200 (application/json)
-
-        []
+            ["mail.send","alerts.create", "alerts.read"]
 
 + Response 401
 
     + Body
 
-        {
-          "errors":[
             {
-              "field":null,
-              "message":"authorization required"}
-          ]
-        }
+              "errors":[
+                {
+                  "field":null,
+                  "message":"authorization required"}
+              ]
+            }
 
 ## API Key Assignable Scopes [/v3/scopes/api_keys]
 ### List all assignable scopes to a api_key [GET]
@@ -94,17 +84,9 @@ This endpoint will return a list of scopes which can be assigned to a api_key.
 
 + Response 200 (application/json)
 
-    + Body
-
         ["mail.send","alerts.create", "alerts.read"]
 
-+ Response 200 (application/json)
-
-        []
-
 + Response 401
-
-    + Body
 
         {
           "errors":[
@@ -126,19 +108,9 @@ This endpoint will return a list of scopes which can be assigned to a credential
 
 + Response 200 (application/json)
 
-    + Body
-
         ["mail.send","alerts.create", "alerts.read"]
 
-+ Response 200 (application/json)
-
-    + Body
-
-        []
-
 + Response 401
-
-    + Body
 
         {
           "errors":[
