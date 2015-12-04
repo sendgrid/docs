@@ -21,7 +21,6 @@ If a&nbsp;subscriber is complaining that they have not received your email there
 
 4. Have the user check their SPAM folder.&nbsp;
 
-5. Check your suppression lists; [bounces](/hc/admin/articles/sendgrid.com/bounces), [blocks](/hc/admin/articles/sendgrid.com/blocks), [spam reports](https://sendgrid.com/spamReports), [invalid email](https://sendgrid.com/invalidEmail).&nbsp;
+5. Check your suppression lists; [bounces]({{root_url}}/Glossary/bounces.html), [blocks]({{root_url}}/Glossary/blocks.html), [spam reports]({{root_url}}/Glossary/spam_reports.html), [invalid email](https://sendgrid.com/invalidEmail).&nbsp;
 
-If you still have no luck tracking down the email after all of the above, [contact support](/hc/admin/articles/support.sendgrid.com).&nbsp;
-
+If you still have no luck tracking down the email after all of the above, [contact support](http://support.sendgrid.com/hc/en-us).&nbsp;
