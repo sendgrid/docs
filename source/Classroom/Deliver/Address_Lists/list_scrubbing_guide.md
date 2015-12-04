@@ -11,7 +11,9 @@ navigation:
   show: true
 ---
 
-It’s springtime here in the United States and nothing brings in the spirit like a good spring cleaning. At SendGrid, this means scrubbing your list. For senders, a scrubbed list sent by SendGrid can be the ticket to delivery heaven. Unfortunately, scrubbing your list can be intimidating. Senders don’t know where to start and resort to using list cleaning services. What senders might not know is that cleaning your list can be done for free and much, much more effectively. We have put together simple steps that will improve any senders list. A bad list is fraught with problems and if left unbrushed, can lead to removing all of a senders teeth which requires a lot of resources to replace. Please go through these; we promise it will save you a trip to the dentist in the long run.
+It’s springtime here in the United States and nothing brings in the spirit like a good spring cleaning. At SendGrid, this means scrubbing your list. For senders, a scrubbed list sent by SendGrid can be the ticket to delivery heaven. Unfortunately, scrubbing your list can be intimidating. Senders don’t know where to start and resort to using list cleaning services. What senders might not know is that cleaning your list can be done for free and much, much more effectively.
+
+We have put together simple steps that will improve any senders list. A bad list is fraught with problems and if left unbrushed, can lead to removing all of a senders teeth which requires a lot of resources to replace. Please go through these; we promise it will save you a trip to the dentist in the long run.
 
 **&nbsp;**
 
