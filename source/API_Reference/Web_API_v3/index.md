@@ -327,6 +327,9 @@ support against resources.
     <td>401</td><td>Requires authentication</td>
   </tr>
   <tr>
+    <td>406</td><td>Missing Accept header. example: Accept: application/json</td>
+  </tr>
+  <tr>
     <td>429</td><td>Too Many Requests</td>
   </tr>
   <tr>
