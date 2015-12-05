@@ -31,5 +31,5 @@ If you have the ability to create subusers then you also have the ability to pur
 - Account individual IP reputation
 
 {% info %}
-You can also use our [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) to help you segment your traffic. More information can be found [here]({{root_url}}/Classroom/Send/segmenting_traffic.html).
+You can also use our [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) to help you segment your traffic. More information can be found [here]({{root_url}}/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html).
 {% endinfo %}

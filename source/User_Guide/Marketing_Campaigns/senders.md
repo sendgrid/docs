@@ -37,7 +37,7 @@ so that you can input the right information and add this to your emails.
 When you click “Create New Sender,” you will be shown a form where you can set up a sender identity.
 
 {% info %}
-You can create up to 50 unique sender identities.
+You can create up to 10 unique sender identities.
 {% endinfo %}
 
 ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
