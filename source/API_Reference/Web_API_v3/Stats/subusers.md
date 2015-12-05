@@ -141,7 +141,6 @@ Gets the total sums of each email statistic metric for all subusers over the giv
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
  {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
- {% parameter subusers Yes 'Array of strings' 'The subusers to get statistics for, up to 10' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
 {% endparameters %}
