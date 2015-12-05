@@ -17,11 +17,10 @@ If a&nbsp;subscriber is complaining that they have not received your email there
 
 2. If you do see a delivered event for the message in Email Activity, you can expand it and look at the reason code. You should see 250 OK. Often times the receiving sever will "queue the message" and it will say "Queued" right after 250 OK. This means the receiving server accepted the message but is holding it.&nbsp;
 
-3. If you see deferred events in Email Activity, then expand the event and look at the deferral reason. Is it a problem with connection? Is the user's inbox full? SendGrid will try and deliver deferred messages for up to 72hrs before the users email will end up on the [bounce list](/hc/admin/articles/sendgrid.com/bounces).
+3. If you see deferred events in Email Activity, then expand the event and look at the deferral reason. Is it a problem with connection? Is the user's inbox full? SendGrid will try and deliver deferred messages for up to 72hrs before the users email will end up on the [bounce list]({{root_url}}/User_Guide/Suppressions/bounces.html).
 
 4. Have the user check their SPAM folder.&nbsp;
 
-5. Check your suppression lists; [bounces](/hc/admin/articles/sendgrid.com/bounces), [blocks](/hc/admin/articles/sendgrid.com/blocks), [spam reports](https://sendgrid.com/spamReports), [invalid email](https://sendgrid.com/invalidEmail).&nbsp;
+5. Check your suppression lists; [bounces]({{root_url}}/User_Guide/Suppressions/bounces.html), [blocks]({{root_url}}/User_Guide/Suppressions/blocks.html), [spam reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html), [invalid email]({{root_url}}/User_Guide/Suppressions/invalid_emails.html).&nbsp;
 
-If you still have no luck tracking down the email after all of the above, [contact support](/hc/admin/articles/support.sendgrid.com).&nbsp;
-
+If you still have no luck tracking down the email after all of the above, [contact support](http://support.sendgrid.com/hc/en-us).&nbsp;
