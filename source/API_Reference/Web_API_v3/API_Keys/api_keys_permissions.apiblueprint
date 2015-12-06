@@ -19,13 +19,9 @@ Related resources of the **Permissions API**
 
 ## Available Scopes [/v3/scopes]
 ### List all available scopes for a user [GET]
-This endpoint will return a list of scopes for which that user have access.
+This endpoint will return a list of scopes for which that user has access.
 
 + Request
-
-    + Header
-
-            Authorization: token value
 
 + Response 200 (application/json)
 
@@ -33,8 +29,9 @@ This endpoint will return a list of scopes for which that user have access.
 
             ["mail.send","alerts.create", "alerts.read"]
 
-
 + Response 401
+
+    + Body
 
         {
           "errors":[
@@ -49,10 +46,6 @@ This endpoint will return a list of scopes for which that user have access.
 This endpoint will return a list of scopes which can be assigned to a subuser.
 
 + Request
-
-    + Header
-
-            Authorization: token value
 
 + Response 200 (application/json)
 
@@ -74,19 +67,19 @@ This endpoint will return a list of scopes which can be assigned to a subuser.
 
 ## API Key Assignable Scopes [/v3/scopes/api_keys]
 ### List all assignable scopes to a api_key [GET]
-This endpoint will return a list of scopes which can be assigned to a api_key.
+This endpoint will return a list of scopes which can be assigned to an api_key.
 
 + Request
 
-    + Header
-
-            Authorization: token value
-
 + Response 200 (application/json)
+
+    + Body
 
         ["mail.send","alerts.create", "alerts.read"]
 
 + Response 401
+
+    + Body
 
         {
           "errors":[
@@ -102,15 +95,15 @@ This endpoint will return a list of scopes which can be assigned to a credential
 
 + Request
 
-    + Header
-
-            Authorization: token value
-
 + Response 200 (application/json)
+
+    + Body
 
         ["mail.send","alerts.create", "alerts.read"]
 
 + Response 401
+
+    + Body
 
         {
           "errors":[
