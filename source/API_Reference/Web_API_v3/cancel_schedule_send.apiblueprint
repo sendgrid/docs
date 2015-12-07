@@ -97,8 +97,8 @@ A CRUD for managing user scheduled send cancellations
 
 ### Retrieve scheduled send [GET]
 
-Get cancel/paused scheduled send information. If {batch_id} is omitted, all of the user's scheduled send cancellations
-are returned
+Get cancel/paused scheduled send information. If you call https://api.sendgrid.com/v3/user/scheduled_sends without the batch_id, all of the user's scheduled send cancellations
+are returned.
 
 + Request (application/json)
 
