@@ -220,6 +220,198 @@ Redirect 301 /Classroom/Send/api_keys.html /Classroom/Send/How_Emails_Are_Sent/a
 
 #######
 #
+# /docs/Classroom - redirects for Classroom/Basics
+#
+#######
+
+Redirect 301 /Classroom/Basics/a_sendgrid_user_is_spamming_me.html http://sendgrid.com/docs/Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html
+Redirect 301 /Classroom/Basics/does_sendgrid_support_end_to_end_tls.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html
+Redirect 301 /Classroom/Basics/email_flow.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/email_flow.html
+Redirect 301 /Classroom/Basics/everything_about_dmarc.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html
+Redirect 301 /Classroom/Basics/link_shorteners.html http://sendgrid.com/docs/Classroom/Build/Add_Content/link_shorteners.html
+Redirect 301 /Classroom/Basics/password.html http://sendgrid.com/docs/Classroom/Basics/Security/password.html
+Redirect 301 /Classroom/Basics/recommended_smtp_settings.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html
+Redirect 301 /Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html http://sendgrid.com/docs/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html
+Redirect 301 /Classroom/Basics/sendgrid_oem_process.html http://sendgrid.com/docs/Classroom/Basics/Misc/sendgrid_oem_process.html
+Redirect 301 /Classroom/Basics/sending_practices.html http://sendgrid.com/docs/Classroom/Basics/Account/sending_practices.html
+Redirect 301 /Classroom/Basics/smtp_ports.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/smtp_ports.html
+Redirect 301 /Classroom/Basics/ssl_vs_tls.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html
+Redirect 301 /Classroom/Basics/tips_to_keep_your_list_organized.html http://sendgrid.com/docs/Classroom/Basics/Address_lists/tips_to_keep_your_list_organized.html
+Redirect 301 /Classroom/Basics/what_are_subusers.html http://sendgrid.com/docs/Classroom/Basics/Account/what_are_subusers.html
+Redirect 301 /Classroom/Basics/what_are_the_sendgrid_apis_and_what_do_they_do.html http://sendgrid.com/docs/Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html
+Redirect 301 /Classroom/Basics/what_is_smtp.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/what_is_smtp.html
+Redirect 301 /Classroom/Basics/what_is_the_difference_between_marketing_and_transactional_emails.html http://sendgrid.com/docs/Classroom/Basics/Misc/what_is_the_difference_between_marketing_and_transactional_emails.html
+Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html http://sendgrid.com/docs/Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html
+Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
+Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
+
+#######
+#
+# /docs/Classroom - redirects for Classroom/Build
+#
+#######
+
+Redirect 301 /Classroom/Build/a_b_testing.html http://sendgrid.com/docs/Classroom/Build/Choose_Content/a_b_testing.html
+Redirect 301 /Classroom/Build/adaptive_email_content.html http://sendgrid.com/docs/Classroom/Build/Choose_Content/adaptive_email_content.html
+Redirect 301 /Classroom/Build/attachments.html http://sendgrid.com/docs/Classroom/Build/Add_Content/attachments.html
+Redirect 301 /Classroom/Build/brand_consistency_why_its_important.html http://sendgrid.com/docs/Classroom/Build/Choose_Content/brand_consistency_why_its_important.html
+Redirect 301 /Classroom/Build/can_i_use_substitution_tags_in_subject_lines.html http://sendgrid.com/docs/Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html
+Redirect 301 /Classroom/Build/content_delivery_networks.html http://sendgrid.com/docs/Classroom/Build/Add_Content/content_delivery_networks.html
+Redirect 301 /Classroom/Build/embedding_videos_in_your_emails.html http://sendgrid.com/docs/Classroom/Build/Add_Content/embedding_videos_in_your_emails.html
+Redirect 301 /Classroom/Build/gmail_promotions_tab.html http://sendgrid.com/docs/Classroom/Build/Choose_Content/gmail_promotions_tab.html
+Redirect 301 /Classroom/Build/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html http://sendgrid.com/docs/Classroom/Build/Add_Content/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html
+Redirect 301 Classroom/Build/html_formatting_issues.html http://sendgrid.com/docs/Classroom/Build/Format_Content/html_formatting_issues.html
+Redirect 301 /Classroom/Build/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html http://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
+Redirect 301 /Classroom/Build/personalization_making_your_messages_count.html http://sendgrid.com/docs/Classroom/Build/Choose_Content/personalization_making_your_messages_count.html
+Redirect 301 /Classroom/Build/plain_text_emails_converted_to_html.html http://sendgrid.com/docs/Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html
+Redirect 301 /Classroom/Build/responsive_templates_and_design.html http://sendgrid.com/docs/Classroom/Build/Format_Content/responsive_templates_and_design.html
+Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid.com/docs/Classroom/Build/Add_Content/substitution_and_section_tags.html
+Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
+
+#######
+#
+# /docs/Classroom - redirects for Classroom/Deliver
+#
+#######
+
+Redirect 301 /Classroom/Deliver/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/overview.html
+Redirect 301 /Classroom/Deliver/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html
+Redirect 301 /Classroom/Deliver/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html
+Redirect 301 /Classroom/Deliver/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html
+Redirect 301 /Classroom/Deliver/email_deliverability_101.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.htnml
+Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
+Redirect 301 /Classroom/Deliver/how_to_warm_up_your_ip_address.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html
+Redirect 301 /Classroom/Deliver/keep_in_touch_the_importance_of_engagement.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html
+Redirect 301 /Classroom/Deliver/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html
+Redirect 301 /Classroom/Deliver/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html
+Redirect 301 /Classroom/Deliver/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/suppressions_vs_unsubscribes.html
+Redirect 301 /Classroom/Deliver/the_art_of_notifications.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/the_art_of_notifications.html
+Redirect 301 /Classroom/Deliver/russian_data_localization_law.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html
+Redirect 301 /Classroom/Deliver/unsubscribes_explained.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/unsubscribes_explained.html
+Redirect 301 /Classroom/Deliver/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html
+Redirect 301 /Classroom/Deliver/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html
+Redirect 301 /Classroom/Deliver/list_scrubbing_guide.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/list_scrubbing_guide.html
+Redirect 301 /Classroom/Deliver/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html
+Redirect 301 /Classroom/Deliver/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html
+Redirect 301 /Classroom/Deliver/role_addresses.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/role_addresses.html
+Redirect 301 /Classroom/Deliver/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html
+Redirect 301 /Classroom/Deliver/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html
+Redirect 301 /Classroom/Deliver/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html
+Redirect 301 /Classroom/Deliver/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
+Redirect 301 /Classroom/Deliver/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html
+Redirect 301 /Classroom/Deliver/dkim_settings_for_whitelabel_pro100k_and_higher.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html
+Redirect 301 /Classroom/Deliver/gmail_dmarc_changes.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/gmail_dmarc_changes.html
+Redirect 301 /Classroom/Deliver/internet_standards_spf_and_dkim_and_deliverability.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html
+Redirect 301 /Classroom/Deliver/spf_dont_exceed_ten_dns_lookups.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html
+Redirect 301 /Classroom/Deliver/spf_records_explained.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/spf_records_explained.html
+Redirect 301 /Classroom/Deliver/the_importance_of_a_physical_mailing_address.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/the_importance_of_a_physical_mailing_address.html
+Redirect 301 /Classroom/Deliver/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html
+Redirect 301 /Classroom/Deliver/google_feedback_loop_spam_complaints.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/google_feedback_loop_spam_complaints.html
+Redirect 301 /Classroom/Deliver/help_my_emails_arent_being_delivered.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/help_my_emails_arent_being_delivered.html
+Redirect 301 /Classroom/Deliver/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html
+Redirect 301 /Classroom/Deliver/how_do_i_keep_emails_from_dropping.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/how_do_i_keep_emails_from_dropping.html
+Redirect 301 /Classroom/Deliver/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html
+Redirect 301 /Classroom/Deliver/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html
+Redirect 301 /Classroom/Deliver/my_emails_are_being_dropped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html
+Redirect 301 /Classroom/Deliver/my_emails_are_going_to_spam.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_going_to_spam.html
+Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/spam_trapped.html
+Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html
+
+#######
+#
+# /docs/Classroom - redirects for Classroom/Send
+#
+#######
+
+Redirect 301 /Classroom/Send/how_can_i_schedule_emails_to_send_at_specific_times.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/how_can_i_schedule_emails_to_send_at_specific_times.html
+Redirect 301 /Classroom/Send/seeing_a_delay_with_your_first_few_sends.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/seeing_a_delay_with_your_first_few_sends.html
+Redirect 301 /Classroom/Send/can_i_stop_a_send_in_progress.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html
+Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
+Redirect 301 /Classroom/Send/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html
+Redirect 301 /Classroom/Send/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html
+Redirect 301 /Classroom/Send/email_to_sms.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/email_to_sms.html
+Redirect 301 /Classroom/Send/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html
+Redirect 301 /Classroom/Send/sendmail_relay_all_local_mail_through_sendgrid.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html
+Redirect 301 /Classroom/Send/sending.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/sending.html
+Redirect 301 /Classroom/Send/can_i_resend_messages_that_were_dropped.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/can_i_resend_messages_that_were_dropped.html
+Redirect 301 /Classroom/Send/can_i_send_adult_content_in_my_emails.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html
+Redirect 301 /Classroom/Send/welcome_emails_making_a_good_first_impression.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html
+Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html
+Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
+Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
+
+#######
+#
+# /docs/Classroom - redirects for Classroom/Track
+#
+#######
+
+Redirect 301 /Classroom/Track/what_do_all_these_delivery_statistics_mean.html https://sendgrid.com/docs/Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html
+Redirect 301 /Classroom/Track/how_can_i_tell_if_an_email_was_actually_delivered.html https://sendgrid.com/docs/Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html
+Redirect 301 /Classroom/Track/discrepancies_between_requests_and_deliveries.html https://sendgrid.com/docs/Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html
+Redirect 301 /Classroom/Track/can_i_download_a_list_of_click_and_or_open_events.html https://sendgrid.com/docs/Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html
+Redirect 301 /Classroom/Track/google_analytics_demystified_ga_statistics_vs_sg_statistics.html https://sendgrid.com/docs/Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html
+Redirect 301 /Classroom/Track/sendwithus.html https://sendgrid.com/docs/Classroom/Track/Collecting_Data/sendwithus.html
+Redirect 301 /Classroom/Track/new_relic.html https://sendgrid.com/docs/Classroom/Track/Collecting_Data/new_relic.html
+Redirect 301 /Classroom/Track/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html https://sendgrid.com/docs/Classroom/Track/Collecting_Data/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html
+Redirect 301 /Classroom/Track/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/Classroom/Track/Bounces/bounce_forwarding_and_gmail.html
+Redirect 301 /Classroom/Track/bounce_reports_how_can_i_be_notified.html https://sendgrid.com/docs/Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html
+Redirect 301 /Classroom/Track/common_smtp_server_bounce_responses.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Classroom/Track/delete_from_bounce_list_option_in_email_activity.html https://sendgrid.com/docs/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html
+Redirect 301 /Classroom/Track/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html https://sendgrid.com/docs/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html
+Redirect 301 /Classroom/Track/how_to_set_up_bounce_forwarding.html https://sendgrid.com/docs/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html
+Redirect 301 /Classroom/Track/implementing_bounce_notification_for_multiple_from_addresses.html https://sendgrid.com/docs/Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html
+Redirect 301 /Classroom/Track/click_tracking_html_best_practices.html https://sendgrid.com/docs/Classroom/Track/Clicks/click_tracking_html_best_practices.html
+Redirect 301 /Classroom/Track/click_tracking_links_have_stopped_working.html https://sendgrid.com/docs/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html
+Redirect 301 /Classroom/Track/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Track/Clicks/clicktracking_ssl.html
+Redirect 301 /Classroom/Track/delivery_rate_drops_rate.html https://sendgrid.com/docs/Classroom/Track/Drops/delivery_rate_drops_rate.html
+Redirect 301 /Classroom/Track/drop_reason_bounced_address.html https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_bounced_address.html
+Redirect 301 /Classroom/Track/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_unsubscribed_address.html
+Redirect 301 /Classroom/Track/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html
+Redirect 301 /Classroom/Track/unsubscribe_via_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
+
+#######
+#
+# /docs/Classroom - redirects for Classroom/Troubleshooting
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/account_under_review_suspended.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html
+Redirect 301 /Classroom/Troubleshooting/cant_access_the_email_address_on_file_for_your_sendgrid_account.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html
+Redirect 301 /Classroom/Troubleshooting/cant_log_in_to_your_account.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html
+Redirect 301 /Classroom/Troubleshooting/dont_know_your_user_name.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/dont_know_your_user_name.html
+Redirect 301 /Classroom/Troubleshooting/help_i_cant_find_my_smtp_username_and_password.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/help_i_cant_find_my_smtp_username_and_password.html
+Redirect 301 /Classroom/Troubleshooting/help_my_account_has_been_compromised.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/help_my_account_has_been_compromised.html
+Redirect 301 /Classroom/Troubleshooting/heroku_users_find_your_sendgrid_credentials.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html
+Redirect 301 /Classroom/Troubleshooting/how_can_i_turn_off_2_factor_authentication.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html
+Redirect 301 /Classroom/Troubleshooting/how_to_change_password_when_integrated_via_appdirect.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html
+Redirect 301 /Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html
+Redirect 301 /Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html
+Redirect 301 /Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html
+Redirect 301 /Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html
+Redirect 301 /Classroom/Troubleshooting/i_didnt_receive_the_password_reset_email.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/i_didnt_receive_the_password_reset_email.html
+Redirect 301 /Classroom/Troubleshooting/my_provision_was_declined_what_should_i_do.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html
+Redirect 301 /Classroom/Troubleshooting/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html
+Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_out_any_email.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_out_any_email.html
+Redirect 301 /Classroom/Troubleshooting/your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html
+Redirect 301 /Classroom/Troubleshooting/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html
+Redirect 301 /Classroom/Troubleshooting/my_client_is_complaining_that_they_have_not_received_an_email.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html
+Redirect 301 /Classroom/Troubleshooting/safely_test_your_sending_speed.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html
+Redirect 301 /Classroom/Troubleshooting/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html
+Redirect 301 /Classroom/Troubleshooting/troubleshooting_delays_and_latency.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_and_latency.html
+Redirect 301 /Classroom/Troubleshooting/a_custom_field_did_not_substitute_during_a_send.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/a_custom_field_did_not_substitute_during_a_send.html
+Redirect 301 /Classroom/Troubleshooting/certificate_verification_failed.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/certificate_verification_failed.html
+Redirect 301 /Classroom/Troubleshooting/dns_records_and_underscores.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html
+Redirect 301 /Classroom/Troubleshooting/how_do_i_check_the_headers_raw_source_of_an_email.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html
+Redirect 301 /Classroom/Troubleshooting/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html
+Redirect 301 /Classroom/Troubleshooting/invalid_smtp_api_header.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html
+Redirect 301 /Classroom/Troubleshooting/list_upload_troubleshooting.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html
+Redirect 301 /Classroom/Troubleshooting/upgrading_your_whitelabel.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html
+Redirect 301 /Classroom/Troubleshooting/you_have_used_a_reserved_field_name_for_your_custom_field.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html
+
+#######
+#
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
