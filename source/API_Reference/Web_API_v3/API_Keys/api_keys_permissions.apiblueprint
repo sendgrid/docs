@@ -21,7 +21,6 @@ Related resources of the **Permissions API**
 ### List all available scopes for a user [GET]
 This endpoint will return a list of scopes for which that user has access.
 
-+ Request
 
 + Response 200 (application/json)
 
@@ -29,23 +28,22 @@ This endpoint will return a list of scopes for which that user has access.
 
             ["mail.send","alerts.create", "alerts.read"]
 
+
 + Response 401
 
-    + Body
+      + Body
 
-        {
-          "errors":[
             {
-              "field":null,
-              "message":"authorization required"}
-          ]
-        }
+              "errors":[
+                {
+                  "field":null,
+                  "message":"authorization required"}
+              ]
+            }
 
 ## Subuser Assignable Scopes [/v3/scopes/subusers]
 ### List all assignable scopes to a subuser [GET]
 This endpoint will return a list of scopes which can be assigned to a subuser.
-
-+ Request
 
 + Response 200 (application/json)
 
@@ -69,46 +67,42 @@ This endpoint will return a list of scopes which can be assigned to a subuser.
 ### List all assignable scopes to a api_key [GET]
 This endpoint will return a list of scopes which can be assigned to an api_key.
 
-+ Request
-
 + Response 200 (application/json)
 
-    + Body
+      + Body
 
-        ["mail.send","alerts.create", "alerts.read"]
+            ["mail.send","alerts.create", "alerts.read"]
 
 + Response 401
 
-    + Body
+      + Body
 
-        {
-          "errors":[
             {
-              "field":null,
-              "message":"authorization required"}
-          ]
-        }
+              "errors":[
+                {
+                  "field":null,
+                  "message":"authorization required"}
+              ]
+            }
 
 ## Credential Assignable Scopes [/v3/scopes/credentials]
 ### List all assignable scopes to a credential [GET]
 This endpoint will return a list of scopes which can be assigned to a credential.
 
-+ Request
-
 + Response 200 (application/json)
 
-    + Body
+      + Body
 
-        ["mail.send","alerts.create", "alerts.read"]
+            ["mail.send","alerts.create", "alerts.read"]
 
 + Response 401
 
-    + Body
+      + Body
 
-        {
-          "errors":[
             {
-              "field":null,
-              "message":"authorization required"}
-          ]
-        }
+              "errors":[
+                {
+                  "field":null,
+                  "message":"authorization required"}
+              ]
+            }
