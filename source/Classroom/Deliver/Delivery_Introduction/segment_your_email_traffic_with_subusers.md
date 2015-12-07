@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-If you have a Pro plan or higher at SendGrid then you have the ability to segment your email traffic with us through the creation of subuser accounts. Account segmentation is usually done to keep [marketing](http://sendgrid.com/docs/VidGrid/Marketing_Emails/Design/newsletter_basics.html) and [transactional](http://sendgrid.com/mkt/assets/pdfs/SendGrid_Leveraging_Email.pdf) email traffic separate. This allows for more organized and useful statistics, and an easier understanding of account reputations. It also allows for individualized application and feature management on a per account basis. Segmentation can even be established at the IP level, which, when combined with subusers, can fully separate email traffic so that they are separate entities all together.
+If you have a Pro plan or higher at SendGrid then you have the ability to segment your email traffic with us through a combination of subuser accounts and whitelabels. Account segmentation is usually done to keep [marketing](http://sendgrid.com/docs/VidGrid/Marketing_Emails/Design/newsletter_basics.html) and [transactional](http://sendgrid.com/mkt/assets/pdfs/SendGrid_Leveraging_Email.pdf) email traffic separate. This allows for more organized and useful statistics, and an easier understanding of account reputations. It also allows for individualized application and feature management on a per account basis. Segmentation can even be established at the IP level, which, when combined with subusers, can fully separate email traffic so that they are separate entities all together.
 
 ## Basic Subuser Segmentation
 
@@ -29,6 +29,7 @@ If you have the ability to create subusers then you also have the ability to pur
 - Separation of application and features per account
 - Easier statistics separation
 - Account individual IP reputation
+- Control individual domain reputation
 
 {% info %}
 You can also use our [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) to help you segment your traffic. More information can be found [here]({{root_url}}/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html).
