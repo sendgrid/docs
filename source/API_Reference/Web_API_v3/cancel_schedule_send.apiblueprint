@@ -91,14 +91,9 @@ be returned.
           "" : "invalid batch id"
           "batch_id" : "a status for this batch id exists, try PATCH to update the status"
 
-## Manage cancelled user scheduled sends [/user/scheduled_sends/{batch_id}]
+### Retrieve all scheduled sends [GET]
 
-A CRUD for managing user scheduled send cancellations
-
-### Retrieve scheduled send [GET]
-
-Get cancel/paused scheduled send information. If {batch_id} is omitted, all of the user's scheduled send cancellations
-are returned
+Get all cancel/paused scheduled send information. 
 
 + Request (application/json)
 
@@ -109,6 +104,26 @@ are returned
             [
                 {"batch_id": "BATCH_ID_1","status": "cancel"},
                 {"batch_id": "BATCH_ID_2","status": "pause"}
+            ]
+
+
+
+## Manage cancelled user scheduled sends [/user/scheduled_sends/{batch_id}]
+
+A CRUD for managing user scheduled send cancellations
+
+### Retrieve a scheduled send [GET]
+
+Get a single cancel/paused scheduled send information. 
+
++ Request (application/json)
+
++ Response 200
+
+   + Body
+
+            [
+                {"batch_id": "BATCH_ID_1","status": "cancel"}
             ]
 
 ### Update user scheduled send information [PATCH]
