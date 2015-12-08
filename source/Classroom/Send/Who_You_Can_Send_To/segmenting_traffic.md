@@ -23,4 +23,4 @@ One way of segmenting your email sends is to use our <a href="{{site.blog_url}}/
 Segmenting by Subuser and IP
 {% endanchor %}
 
-You can also segment your email sending by subuser, which will allow you to share the same overall email credit pool but have unique SMTP credentials, settings, statistics, and site login. Subusers can also be Whitelabeled to separate sending domains by purchasing additional sending IPs and assigning a subuser to that IP. More information on segmentation via subusers can be found [here]({{root_url}}/Classroom/Deliver/segment_your_email_traffic_with_subusers.html).
+You can also segment your email sending by subuser, which will allow you to share the same overall email credit pool but have unique SMTP credentials, settings, statistics, and site login. Subusers can also be Whitelabeled to separate sending domains by purchasing additional sending IPs and assigning a subuser to that IP. More information on segmentation via subusers can be found [here]({{root_url}}/Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html).
