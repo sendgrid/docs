@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-The Template Engine API lets you programmatically [create and manage 
+The transactional templates API lets you programmatically [create and manage
 templates]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/templates.html) for your transactional email. You may [version these templates]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/versions.html), then [send them through the existing SendGrid API]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/smtpapi.html).
 
 [Templates]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/templates.html): Templates are re-usable email layouts, that may be created and interacted with through the API. These are intended to be a specific type of message, such as 'Weekly Product Update'.

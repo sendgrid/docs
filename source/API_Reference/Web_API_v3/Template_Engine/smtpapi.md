@@ -10,8 +10,8 @@ navigation:
 Enabling a Template
 {% endanchor %}
 
-To use a Template Engine template when you send, enable the `templates`
-filter and set the `template_id` to one of your Template Engine templates.
+To use a transactional template when you send, enable the `templates`
+filter and set the `template_id` to one of your transactional templates.
 
 Example
 {% codeblock lang:json %}
@@ -43,7 +43,7 @@ UI.
 Body and Subject Tags
 {% endanchor %}
 
-Enabling a Template Engine template means that the `subject` and `body`
+Enabling a transactional template means that the `subject` and `body`
 content of your message will behave differently. 
 
 If you want only the message's content to be displayed, populate only the token in the template's field.

@@ -7,14 +7,14 @@ navigation:
   show: true
 ---
 
-The Template Engine API lets you programmatically create and manage templates for your transactional email.
+The transactional templates API lets you programmatically create and manage templates for your transactional email.
 
 {% info %}
 Each user can have up to 300 templates.
 {% endinfo %}
 
 {% info %}
-Templates created in Template Engine are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
+Transactional templates are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
 {% endinfo %}
 
 * * * * *

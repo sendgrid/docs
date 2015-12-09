@@ -15,16 +15,16 @@ For a more detailed description of each of the Filters below, please visit the [
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)
 
 {% anchor h2 %}
-Address Whitelist 
+Address Whitelist
 {% endanchor %}
 
 *Name - `addresswhitelist`*
 
 {% info %}
-When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call. 
+When using this call, you must define all emails & domains here. Using this call will overwrite any current settings for this filter. This would also be how you remove an entry, by excluding if from the call.
 {% endinfo %}
-{% parameters addresswhitelist %} 
-  
+{% parameters addresswhitelist %}
+
   {% parameter name yes 'addresswhitelist' 'The name of the setting.' %}  
   {% parameter list yes 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
@@ -46,13 +46,13 @@ When using this call, you must define all emails & domains here. Using this call
 * * * * *
 
 {% anchor h2 %}
-BCC "Blind Carbon Copy" 
+BCC "Blind Carbon Copy"
 {% endanchor %}
 
 *Name - `bcc`*
 
-{% parameters bcc %} 
-  
+{% parameters bcc %}
+
   {% parameter name yes 'bcc' 'The name of the setting.' %}  
   {% parameter email yes 'An email address to be the BCC recipient.' 'email@example.com' %}
 {% endparameters %}
@@ -74,13 +74,13 @@ BCC "Blind Carbon Copy"
 * * * * *
 
 {% anchor h2 %}
-Click Tracking 
+Click Tracking
 {% endanchor %}
 
 *Name - `clicktrack`*
 
-{% parameters clicktrack %} 
-  
+{% parameters clicktrack %}
+
   {% parameter name yes 'clicktrack' 'The name of the setting.' %}  
   {% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
 {% endparameters %}
@@ -102,13 +102,13 @@ Click Tracking
 * * * * *
 
 {% anchor h2 %}
-DKIM 
+DKIM
 {% endanchor %}
 
 *Name - `dkim`*
 
-{% parameters dkim %} 
-  
+{% parameters dkim %}
+
   {% parameter name yes 'dkim' 'The name of the setting.' %}  
   {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
   {% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
@@ -131,16 +131,16 @@ DKIM
 * * * * *
 
 {% anchor h2 -Email-Templates %}
-Legacy Email Templates 
+Legacy Email Templates
 {% endanchor %}
 
 *Name - `template`*
 
 {% warning %}
-This setting is our original Email Template app, today we have a more full featured [Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), which supports multiple templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html). 
+This setting is our original Email Template app, today we have a more full featured [Transactional Template Engine]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), which supports multiple transactional templates, versioning and more. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html). 
 {% endwarning %}
-{% parameters template %} 
-  
+{% parameters template %}
+
   {% parameter name yes 'template' 'The name of the setting.' %}  
   {% parameter text/html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
 {% endparameters %}
@@ -162,13 +162,13 @@ This setting is our original Email Template app, today we have a more full featu
 * * * * *
 
 {% anchor h2 %}
-Event Notification 
+Event Notification
 {% endanchor %}
 
 *Name - `eventnotify`*
 
 {% info %}
-All fields except version are required for each call. 
+All fields except version are required for each call.
 {% endinfo %}
 
 
@@ -209,7 +209,7 @@ All fields except version are required for each call.
 * * * * *
 
 {% anchor h2 %}
-Footer 
+Footer
 {% endanchor %}
 
 *Name - `footer`*
@@ -240,7 +240,7 @@ You must provide either text/html or text/plain, or both, to avoid receiving a "
 * * * * *
 
 {% anchor h2 %}
-Google Analytics 
+Google Analytics
 {% endanchor %}
 
 *Name - `ganalytics`*
@@ -274,7 +274,7 @@ At least one of the optional parameters needs to be passed to avoid a "missing p
 * * * * *
 
 {% anchor h2 %}
-SPAM Filter Checker 
+SPAM Filter Checker
 {% endanchor %}
 
 *Name - `spamcheck`*
@@ -304,7 +304,7 @@ SPAM Filter Checker
 * * * * *
 
 {% anchor h2 %}
-Subscription Tracking 
+Subscription Tracking
 {% endanchor %}
 
 *Name - `subscriptiontrack`*
@@ -338,7 +338,7 @@ You must pass at least one of the optional params in order to avoid the "missing
 * * * * *
 
 {% anchor h2 %}
-SendGrid for New Relic 
+SendGrid for New Relic
 {% endanchor %}
 
 *Name - `newrelic`*
@@ -366,7 +366,7 @@ SendGrid for New Relic
 * * * * *
 
 {% anchor h2 %}
-Sendwithus 
+Sendwithus
 {% endanchor %}
 
 *Name - `sendwithus`*

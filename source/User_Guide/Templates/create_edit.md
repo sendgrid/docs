@@ -19,14 +19,14 @@ There is currently a limit of 300 templates and 300 versions that may be created
 {% endinfo %}
 
 {% info %}
-Templates created in Template Engine are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
+Transactional templates are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
 {% endinfo %}
 
 {% anchor h2 %}
 Create a Template
 {% endanchor %}
 
-When you first visit the Template Engine, you will be asked to create your first template.
+When you first visit the transactional templates page, you will be asked to create your first template.
 
 <a href="{{site.app_url}}/templates/new">![](/images/template_engine_17.png "Add a Template")</a>
 
@@ -62,7 +62,7 @@ As soon as you add <%body%> back into the content, the warning will go away.
 
 ![](/images/template_engine_15.png "The Code Editor for Template Engine")
 
-When you’re done editing, just hit the save button to keep all your changes. If you have not manually entered your content into the plain text editor, then you will get a notification from Template Engine offering to pull this content from your HTML code. Please double check that the content is formatted the way you want it before you send an email using this template.
+When you’re done editing, just hit the save button to keep all your changes. If you have not manually entered your content into the plain text editor, then you will get a notification offering to pull this content from your HTML code. Please double check that the content is formatted the way you want before you send an email using this template.
 
 To get the to the plain text editor, find the text icon in the editor header bar.
 
@@ -94,7 +94,7 @@ Duplicate a Template
 
 ![](/images/template_engine_13.png "Duplicate your template")
 
-When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. Template Engine will clone this version, giving it a name that includes the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
+When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. The Transactional Template Engine will clone this version, giving it a name that includes the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags
@@ -119,5 +119,3 @@ Manage Email Preferences
 {% endanchor %}
 
 When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
-
-
