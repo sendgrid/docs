@@ -282,6 +282,8 @@ Returned if one or more lists were deleted
 
 ### Add a Single Recipient to a List [POST]
 
+Individual recipients may be added to a list one at a time with a limit of 1000 requests per second, where one recipient is added to the list per request.
+
 + Response 201
 
     + Body
@@ -328,6 +330,8 @@ Returned if one or more lists were deleted
 ### Add Multiple Recipients to a List [POST]
 
 Adds existing recipients to a list, passing in the recipient IDs to add. Recipient IDs should be passed exactly as they are returned from recipient endpoints.
+
+The rate at which recipients may be added to a list is limited to 1 request per second. Recipients may be added in batches of 1000.
 
 + Request (application/json)
 
@@ -378,6 +382,8 @@ Adds existing recipients to a list, passing in the recipient IDs to add. Recipie
 
 
 ### Add Multiple Recipients [POST]
+
+The rate at which recipients may be uploaded is limited to 3 requests every 2 seconds. Recipients may be uploaded in batches of 1000 per request. This results in a maximum upload rate of 1500 recipients per second.
 
 + Request (application/json)
 
