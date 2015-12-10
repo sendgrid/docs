@@ -11,7 +11,7 @@ navigation:
 
 Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on
 different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email
-template developer to build your templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com)
+template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com)
 before sending them to your customers.
 
 {% info %}
@@ -60,7 +60,7 @@ If you paste in an email template, it is likely that you will overwrite the defa
 
 As soon as you add <%body%> back into the content, the warning will go away.
 
-![](/images/template_engine_15.png "The Code Editor for Template Engine")
+![](/images/template_engine_15.png "The Code Editor for transactional templates")
 
 When you’re done editing, just hit the save button to keep all your changes. If you have not manually entered your content into the plain text editor, then you will get a notification offering to pull this content from your HTML code. Please double check that the content is formatted the way you want before you send an email using this template.
 
@@ -94,7 +94,7 @@ Duplicate a Template
 
 ![](/images/template_engine_13.png "Duplicate your template")
 
-When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. The Transactional Template Engine will clone this version, giving it a name that includes the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
+When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. This creates a clone, giving it a name including the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using Template Engine with SMTP API
+title: Using Transactional Templates With The SMTP API
 alias: /API_Reference/Web_API_v3/Template_Engine/smtpapi.html
 navigation:
   show: true
@@ -44,7 +44,7 @@ Body and Subject Tags
 {% endanchor %}
 
 Enabling a transactional template means that the `subject` and `body`
-content of your message will behave differently. 
+content of your message will behave differently.
 
 If you want only the message's content to be displayed, populate only the token in the template's field.
 If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.
