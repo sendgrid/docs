@@ -577,6 +577,21 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 
 #######
 #
+# /API_Reference/Web_API_v3/Template_Engine - redirects for Template Engine -> Transactional Template Rename
+# /User_Guide/Templates
+#
+#######
+
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/index.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/index.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/smtpapi.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/templates.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/templates.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/versions.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/versions.html
+Redirect 301 /User_Guide/Templates/index.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /User_Guide/Templates/create_edit.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_edit.html
+Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html
+
+#######
+#
 # /docs/VidGrid
 #
 #######
