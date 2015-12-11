@@ -14,6 +14,55 @@ navigation:
 Please refer to our [API Key](https://sendgrid.com/docs/Classroom/Send/api_keys.html) page for information on how to authenticate and use these endpoints.
 {% endinfo %}
 
+Custom Fields
+
+<ul>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Create-a-Custom-Field-POST">Create a Custom Field - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-All-Custom-Fields-GET">List all Custom Fields - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Custom-Field-DELETE">Delete a Custom Field - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-fields-that-are-reserved-and-can39t-be-used-for-custom-field-names-GET">List Reserved Fields - GET</a></li>
+</ul>
+
+Lists
+
+<ul>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Create-a-List-POST">Create a List - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-All-Lists-GET">List All Lists - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-Multiple-lists-DELETE">Delete Multiple Lists - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Retrieve-a-List-GET">Retrieve a List - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-a-List-PATCH">Update a List - PATCH</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-List-DELETE">Delete a List - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-on-a-List-GET">List Recipients on a List - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a Dingle Recipient to a List - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Single-Recipient-from-a-Single-List-DELETE">Delete a Single Recipient From a List - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-to-a-List-POST">Add Multiple Recipients To a List - POST</a></li>
+</ul>
+
+Recipients
+<ul>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Single-Recipient-POST">Add a Single Recipient - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-POST">Add Multiple Recipients - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-Recipient-PATCH">Update a Recipient - PATCH</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-Recipient-DELETE">Delete one or more Recipients - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-GET">List Recipients - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Retrieve-a-Recipient-GET">Retrieve a Recipient - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Recipient-DELETE">Delete a single Recipient - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Billable-Recipients-GET">Get Count of Billable Recipients - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Recipients-GET">Get Count of Recipients - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-Recipients-Matching-Search-Criteria-GET">Get Recipients Matching Search Criteria - GET</a></li>
+</ul>
+
+Segments
+
+<ul>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Create-a-Segment-POST">Create a Segment - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-All-Segments-GET">List all Segments - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Retrieve-a-Segment-GET">Retrieve a Segment - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-a-Segment-PATCH">Update a Segment - PATCH</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Segment-DELETE">Delete a Segment - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-On-a-Segment-GET">List Recipients on a Segment</a></li>
+</ul>
+
 FORMAT: 1A
 
 # Contacts API
