@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Using Template Engine with SMTP API
-alias: /API_Reference/Web_API_v3/Template_Engine/smtpapi.html
+title: Using Transactional Templates With The SMTP API
+alias: /API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
 navigation:
   show: true
 ---
@@ -10,8 +10,8 @@ navigation:
 Enabling a Template
 {% endanchor %}
 
-To use a Template Engine template when you send, enable the `templates`
-filter and set the `template_id` to one of your Template Engine templates.
+To use a transactional template when you send, enable the `templates`
+filter and set the `template_id` to one of your transactional templates.
 
 Example
 {% codeblock lang:json %}
@@ -33,7 +33,7 @@ call]({{root_url}}/API_Reference/Web_API/mail.html#-send).
 
 {% info %}
 Make sure that the version of the template you want to use is set to active
-by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/versions.html#-POST) or by activating it in the
+by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
 UI.
 {% endinfo %}
 
@@ -43,8 +43,8 @@ UI.
 Body and Subject Tags
 {% endanchor %}
 
-Enabling a Template Engine template means that the `subject` and `body`
-content of your message will behave differently. 
+Enabling a transactional template means that the `subject` and `body`
+content of your message will behave differently.
 
 If you want only the message's content to be displayed, populate only the token in the template's field.
 If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.

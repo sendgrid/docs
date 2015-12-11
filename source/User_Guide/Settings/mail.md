@@ -139,7 +139,7 @@ Legacy Email Template
 {% endanchor %}
 
 {% warning %}
-This setting is for our original Email Templates, today we have a more full featured [Template Engine]({{root_url}}/User_Guide/Templates/index.html), which supports multiple templates, versioning and more.
+This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/index.html), with support for multiple templates, versioning and more.
 {% endwarning %}
 
 This setting wraps an HTML template around your email content. This can be useful for sending out marketing email and/or other HTML formatted messages. Use the embedded, full-featured HTML editor to create a template that your emails will be wrapped in. Be sure to include a tag to place the content of your email.

@@ -34,7 +34,7 @@ You can download your Global Unsubscribe list as a CSV by clicking the gear icon
 Global Unsubscribe Substitution Tag
 {% endanchor %}
 
-When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.  For more substitution tags, please visit our [Template Engine]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.  For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
 
 
 {% anchor h2 %}
