@@ -52,7 +52,7 @@ This will create a new random API Key for the user with permissions assigned. A 
                 "api_key":    "SG.xxxxxxxx.yyyyyyyy",
                 "api_key_id": "xxxxxxxx",
                 "name": "My API Key",
-                "scopes": [mail.send", "alerts.create", "alerts.read"]
+                "scopes": ["mail.send", "alerts.create", "alerts.read"]
             }
 
 + Response 400 (application/json)
@@ -94,7 +94,7 @@ If the API Key ID does not exist an HTTP 404 will be returned.
             {
                 "api_key_id": "xxxxxxxx",
                 "name": "My API Key",
-                "scopes": [mail.send", "alerts.create", "alerts.read"]
+                "scopes": ["mail.send", "alerts.create", "alerts.read"]
             }
         
 + Response 404 (application/json)
