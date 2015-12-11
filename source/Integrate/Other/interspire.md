@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-## *Why* to integrate Interspire with SendGrid
+## *Why* integrate Interspire with SendGrid
 
 Interspire's [Email Marketer](http://www.interspire.com/emailmarketer/) is a powerful email marketing tool used by some SendGrid customers to carry out more in-depth marketing campaigns. Email Marketer has all the bells and whistles of an email marketing suite, and it's really good at helping customers carry out marketing campaigns from start to finish. SendGrid is really good at giving mail senders all the necessary tools to ensure their mail gets delivered to the inbox. This is why some customers choose to create their email marketing campaigns with Interspire and send the mail through SendGrid, to ensure optimized deliverability of the mail to the inbox. Luckily, Interspire makes this integration with SendGrid simple.
 
@@ -21,7 +21,7 @@ In order to set Email Marketer's outbound mail server to point to SendGrid, clic
 -   **SMTP Hostname**: ssl://smtp.sendgrid.net or tls://smtp.sendgrid.net
 -   **SMTP Username**: [your SendGrid account's username]
 -   **SMTP Password**: [your SendGrid account's password]
--   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{%20root_url}}/Integrate/index.html)]
+-   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email_Infrastructure/smtp_ports.html)]
 
 Once these settings changes have been made within the Email Settings page within your Email Marketer account, all mail from the application will be sent to SendGrid so we can send it to the end recipient. Simple as that.
 
