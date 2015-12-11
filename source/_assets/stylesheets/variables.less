@@ -28,10 +28,10 @@
 //** Background color for `<body>`.
 @body-bg:               #ffffff;
 //** Global text color on `<body>`.
-@text-color:            fade(@brand-secondary, 20%);
+@text-color:            @brand-secondary;
 
 //** Global textual link color.
-@link-color:            fade(@brand-primary, 20%);
+@link-color:            fade(@brand-primary, 80%);
 //** Link hover color set via `darken()` function.
 @link-hover-color:      @brand-primary;
 
@@ -47,20 +47,19 @@
 @font-family-base:        @font-family-sans-serif;
 
 @font-size-base:          16px;
-@font-size-large:         ceil((@font-size-base * 1.15)); // ~16px
-@font-size-small:         ceil((@font-size-base * 0.75)); // ~10px
+@font-size-small:         ceil((@font-size-base * 0.8)); // ~13px
 
 @font-size-h1:            floor((@font-size-base * 2.15)); // ~36px
-@font-size-h2:            floor((@font-size-base * 1.7)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.25)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 0.85)); // ~18px
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.75)); // ~12px
+@font-size-h2:            floor((@font-size-base * 1.5)); // ~24px
+@font-size-h3:            ceil((@font-size-base * 1.25)); // ~20px
+@font-size-h4:            @font-size-base;
+@font-size-h5:            ceil((@font-size-base * 0.8)); // ~13px
+@font-size-h6:            @font-size-base;
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.5; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~24px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    "Open Sans", Helvetica, Arial, sans-serif;
