@@ -60,7 +60,7 @@ FORMAT: 1A
             "zip":"92868"
         }
 
-## User Account [/v3/user/account]
+## User Account [/user/account]
 
 ### GET User Account [GET]
 
