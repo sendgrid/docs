@@ -46,6 +46,7 @@ There is a limit of 10 IP pools per user.
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/ips/pools name=marketing%}
+{% apiv3requestbody %} {"name":"marketing"} {% endapiv3requestbody %}
 {% v3response %}
 {"name":"marketing"}
 {% endv3response %}

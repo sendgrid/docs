@@ -99,7 +99,7 @@ Pre-header and footer are important pieces of any email campaign, where informat
       <td>"What You See Is What You Get" – an all-purpose module that can contain text and images</td>
       <td>background color, padding</td>
     </tr>
-    
+
     <tr>
       <td>Divider</td>
       <td>A visual divider, or horizontal rule, between modules</td>
@@ -298,6 +298,24 @@ By default, a column module has 2 column drop zones. As with other templates, yo
 </table>
 {% endcodeblock %}
 
+{% anchor h3 %}
+Divider
+{% endanchor %}
+
+The divider module contains no content and functions only as a static design element. Much like a horizontal rule, the divider provides visual separation between other modules in your template. The divider module possesses background color, line color, line height, and padding attributes, which you can set.
+
+As with the other modules, you can leave the section marked [MODULE CONTENT] blank and switch from the code editor to the visual editor to see how it will look with the default attributes.
+
+<strong>Divider example:</strong>
+{% codeblock lang:html %}
+<table class="module" role="module" data-type="divider">
+  <tr>
+    <td role="module-content">
+      [MODULE CONTENT]
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}
 
 {% anchor h3 %}
 WYSIWYG
