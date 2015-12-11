@@ -13,7 +13,8 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         rgb(0,112,205);
+@brand-primary:         #1A82E2;
+@brand-secondary:		#294762;
 @brand-success:         rgb(72,142,136);
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -25,27 +26,27 @@
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #ffffff;
 //** Global text color on `<body>`.
-@text-color:            @gray-darker;
+@text-color:            fade(@brand-secondary, 20%);
 
 //** Global textual link color.
-@link-color:            @brand-primary;
+@link-color:            fade(@brand-primary, 20%);
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      @brand-primary;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Proxima N W15 Reg", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          16px;
 @font-size-large:         ceil((@font-size-base * 1.15)); // ~16px
 @font-size-small:         ceil((@font-size-base * 0.75)); // ~10px
 
@@ -62,8 +63,8 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    "Proxima N W15 Smbd", Helvetica, Arial, sans-serif;
-@headings-font-weight:    500;
+@headings-font-family:    "Open Sans", Helvetica, Arial, sans-serif;
+@headings-font-weight:    inherit;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 

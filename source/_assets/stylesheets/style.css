@@ -4,17 +4,18 @@ html {
 
 body {
 	padding: 0 !important;
-	font-size:18px;
-	line-height:24px;
-  background-color: rgb(247,247,247);se
+	font-size: 16px;
+	line-height: 24px;
+  font-weight: 300;
+  background-color: white
 }
 
 p {
-	margin:12px 0;
+	margin: 12px 0;
 }
 
 article {
-  max-width:725px;
+  max-width: 725px;
 }
 
 article img {
@@ -33,7 +34,12 @@ table {
 }
 
 b, strong {
-  font-family: "Proxima N W15 Smbd";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Colfax-Light", sans-serif;
 }
 
 h3, .h3 {
@@ -41,16 +47,16 @@ h3, .h3 {
 }
 
 .btn {
-  padding-left:20px;
-  padding-right:20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nopadding {
-  padding:0px;
+  padding: 0px;
 }
 
 .rowpadding {
-  padding:0 15px 0px 15px;
+  padding: 0 15px 0px 15px;
 }
 
 .bar-indicator {
@@ -64,7 +70,7 @@ h3, .h3 {
 	height: 16px;
 	background: url(../images/circle-indicator.gif);
   display: inline-block;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .result a.title { text-decoration:underline; }
@@ -250,7 +256,8 @@ article .nav-tabs li a {
 }
 
 #header-top .login-link {
-  font-family: "Proxima N W15 Light";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   text-align: right;
   font-size: 12px;
 }
@@ -317,7 +324,8 @@ article .nav-tabs li a {
   padding-top:50px;
   height:190px;
   vertical-align:middle;
-  font-family: "Proxima N W15 Light";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   overflow: hidden;
 }
 
@@ -331,7 +339,8 @@ article .nav-tabs li a {
 
 .home-list .panel h3 {
   color: rgb(0,112,205);
-  font-family: "Proxima N W15 Light";
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 .home-list .panel:hover p {
@@ -470,7 +479,8 @@ body:before {
 .subtree-name {
   padding:12px 38px;
   color: #eee;
-  font-family: "Proxima N W15 Light", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 #nav-menu .subtree-name+ul li {
@@ -496,7 +506,8 @@ body:before {
 }
 
 .nav>li>a {
-  font-family: "Proxima N W15 Light", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
   padding:12px 15px;
   color: #eee;
   font-size: 12pt;
