@@ -34,7 +34,7 @@ When you select the checkboxes next to the recipient names or select all, using 
 Group Unsubscribe Substitution Tag
 {% endanchor %}
 
-When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email. For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email. For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
 
 
 {% anchor h2 %}

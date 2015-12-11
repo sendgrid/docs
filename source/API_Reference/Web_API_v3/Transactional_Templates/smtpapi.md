@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using Transactional Templates With The SMTP API
-alias: /API_Reference/Web_API_v3/Template_Engine/smtpapi.html
+alias: /API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
 navigation:
   show: true
 ---
@@ -33,7 +33,7 @@ call]({{root_url}}/API_Reference/Web_API/mail.html#-send).
 
 {% info %}
 Make sure that the version of the template you want to use is set to active
-by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Template_Engine/versions.html#-POST) or by activating it in the
+by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
 UI.
 {% endinfo %}
 

@@ -2,7 +2,7 @@
 layout: page
 title: Templates
 weight: 100
-alias: /API_Reference/Web_API_v3/Template_Engine/templates.html
+alias: /API_Reference/Web_API_v3/Transactional_Templates/templates.html
 navigation:
   show: true
 ---

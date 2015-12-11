@@ -137,7 +137,7 @@ Legacy Email Templates
 *Name - `template`*
 
 {% warning %}
-This setting is our original Email Template app, today we have more full featured [transactional templates]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html), with support for multiple templates, and versioning, and many other helpful features. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/index.html).
+This setting is our original Email Template app, today we have more full featured [transactional templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html), with support for multiple templates, and versioning, and many other helpful features. Its settings, however, are controlled using a [separate API]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html).
 {% endwarning %}
 {% parameters template %}
 
