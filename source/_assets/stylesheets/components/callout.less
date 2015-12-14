@@ -1,0 +1,26 @@
+.callout {
+	font-family: "Colfax-Light", sans-serif;
+	font-size: 20px;
+  padding-left: 15px;
+  color: fade(@brand-secondary, 80%);
+  &.callout-info {
+  	border-left: 5px solid @brand-primary;
+  }
+  &.callout-warning {
+  	border-left: 5px solid @brand-danger;
+  }
+  &.callout-github {
+  	border-left: 5px solid @brand-primary;
+  	padding-right: 80px;
+	  background: url("/images/GitHub-Mark-64px.png?embed=true") 98% no-repeat no-repeat;
+	  margin-bottom: 20%;
+	  &.affix {
+	    top: -20px;
+	    margin-bottom: 0;
+	    z-index: 2000;
+	  }
+	  .link {
+	    margin: 16px 0 0 0;
+	  }
+  }
+}
