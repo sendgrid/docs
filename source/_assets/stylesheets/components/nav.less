@@ -1,25 +1,23 @@
 // Top Header
 #header-top {
-  height: 28px;
-  border-bottom: 1px solid #000;
-  background-color: rgb(30,36,47);
-  padding-right:30px;
-}
-
-#header-top a {
-  color: white;
-}
-
-#header-top .login-link {
-  font-weight: 400;
-  text-align: right;
+  height: 27px;
+  border-bottom: 1px solid @gray;
+  background-color: @gray-light;
+  padding-right: 40px;
   font-size: @font-size-small;
+  a {
+    color: @body-color;
+  }
+  .login-link {
+    font-weight: 400;
+    text-align: right;
+  }
 }
 
 // Main Header
 #nav {
   .nav-link {
-      a {
+    a {
       color: fade(@text-color, 80%);
       font-size: @font-size-small;
       font-weight: 600;
@@ -53,7 +51,6 @@
   width: 24px;
   height: 15px;
   position: relative;
-  margin: 50px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -89,7 +86,7 @@
       }
 
       &:nth-child(2) {
-        top: 18px;
+        top: 6px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
         -o-transform-origin: left center;
@@ -97,7 +94,7 @@
       }
 
       &:nth-child(3) {
-        top: 36px;
+        top: 12px;
         -webkit-transform-origin: left center;
         -moz-transform-origin: left center;
         -o-transform-origin: left center;
@@ -124,7 +121,7 @@
         -moz-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
-        top: 39px;
+        top: 12px;
         left: 8px;
       }
     }
