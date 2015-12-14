@@ -17,5 +17,4 @@ In some cases -subVal- may be the best choice while in other %subVal% or #subVal
 
 Also, don't use spaces inside your substitution tags, e.g. %first name%. Consider using underscores(\_) to denote spaces.
 
-**Substitution tags are different than [Marketing Email Tags](https://sendgrid.com/docs/Marketing_Emails/tags.html), and are only used in conjunction with our SMTPAPI.&nbsp;**
-
+**Substitution tags are different from [Marketing Email Tags](https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html), and are only used in conjunction with our SMTP API.&nbsp;**

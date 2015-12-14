@@ -17,7 +17,7 @@ There are many&nbsp;different ways to use SendGrid’s email services so it all 
 
 - [SMTP](http://support.sendgrid.com/hc/en-us/articles/202821898-What-is-SMTP-)&nbsp;- Send using a desktop mail client, or existing program/service with [your smtp credentials](http://support.sendgrid.com/hc/en-us/articles/200328026-What-are-my-settings-for-SMTP-integration-).&nbsp;
 - [Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html)&nbsp;- Send from your app using&nbsp; [your api key](http://support.sendgrid.com/hc/en-us/articles/200181818-What-is-my-API-key-). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.
-- [Email Marketing App and API](https://sendgrid.com/docs/Marketing_Emails/index.html)&nbsp;- Send from our content creation UI and manage your lists via the website.&nbsp;
+- [Email Marketing App and API](https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html)&nbsp;- Send from our content creation UI and manage your lists via the website.&nbsp;
 
 &nbsp;
 
