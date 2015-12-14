@@ -16,9 +16,25 @@
 
 // Main Header
 #nav {
+  background: @gray-light;
+  border-bottom: 1px solid @gray;
+  padding: 0 40px;
+  .navbar-collapse {
+    .media-up(@screen-tablet, {
+      width: 700px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 12px;
+      margin: 0 auto;
+    });
+  }
+  .navbar-buttons {
+    margin-top: 16px;
+  }
   .nav-link {
     a {
-      color: fade(@text-color, 80%);
+      color: @body-color;
       font-size: @font-size-small;
       font-weight: 600;
       letter-spacing: 1px;

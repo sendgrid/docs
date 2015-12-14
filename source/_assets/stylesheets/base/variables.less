@@ -28,6 +28,7 @@
 @body-bg:               #FFFFFF;
 //** Global text color on `<body>`.
 @text-color:            @brand-secondary;
+@body-color:            fade(@brand-secondary, 80%);
 
 //** Global textual link color.
 @link-color:            fade(@brand-primary, 80%);
@@ -65,7 +66,6 @@
 @headings-font-weight:    inherit;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
-@body-color:              fade(@brand-secondary, 80%);
 
 
 //-- Iconography
@@ -388,11 +388,11 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 15px;
-@nav-link-hover-bg:                         @gray-light;
+@nav-link-padding:                          12px 24px;
+@nav-link-hover-bg:                         transparent;
 
-@nav-disabled-link-color:                   @gray-light;
-@nav-disabled-link-hover-color:             @gray-light;
+@nav-disabled-link-color:                   fade(@brand-gray, 50%);
+@nav-disabled-link-hover-color:             fade(@brand-gray, 50%);
 
 @nav-open-link-hover-color:                 #FFFFFF;
 
