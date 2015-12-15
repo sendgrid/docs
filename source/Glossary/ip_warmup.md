@@ -10,8 +10,18 @@ seo:
   description: Initially splitting up the email send requests from a new dedicated IP, so it doesn't get blocked.
 ---
 
-When you place your IP in warmup mode, this means we will split up the requests that you send to us and only send a minimal amount of messages from your dedicated IP. The rest will be sent from a already warmed up IP pool. Each day we will increase the amount that we send directly from your IP. You can see the IP warmup schedule here .
+[IP warming]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is the gradual process of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or “cold” (recently dormant) IP address, they will take notice and immediately begin evaluating the traffic coming from that IP.
 
-[IP warming]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is a gradual process that happens over time, with the goal of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or “cold” (ie, recently dormant) IP address, they will take notice of it and immediately begin evaluating the traffic coming from that IP. Since volume is perhaps the most telling factor in the eyes of ISP SPAM filters, it is best to begin sending low to moderate volume (e.g., up to 1 million emails/month), eventually working your way up to larger volumes (e.g., over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you. Click here to read more about this.
+Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume (e.g. up to 1 million emails/month), eventually working your way up to larger volumes (e.g. over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 
-Now you can also warmup your IP using our [IP Warmup API]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
+{% info %}
+You can now warmup your IP using our [IP Warmup API]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
+{% endinfo %}
+
+When you place your IP in warmup mode, we divid your email requests between the dedicated IP you wish to warm up and IPs already warmed up in an IP pool. Each day we will increase the amount sent directly from you warming dedicated IP. You can see the IP warmup schedule [here]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
+
+{% warning %}
+We recommend the IP warmup tool only for users that have other warm, dedicated IPs which can accept any overflow email traffic as we gradually increase the volume sent through the warming IP. If you do not have other dedicated IPs, any overflow traffic will be sent through our shared IP Pools, which can impact your personal sending reputation.
+
+If you do not have other dedicated IPs and are buliding your reputation from scratch, recommend that you follow [this]({{root_url}}/assets/IPWarmupSchedule.pdf) warm up schedule.
+{% endwarning %}
