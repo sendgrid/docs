@@ -45,3 +45,17 @@ table {
 .rowpadding {
   padding: 0 15px 0px 15px;
 }
+
+.hidden-sm {
+  display: none;
+  .media-up(@screen-tablet, {
+    display: block;
+  });
+}
+
+.visible-sm {
+  display: block;
+  .media-up(@screen-tablet, {
+    display: none;
+  });
+}
