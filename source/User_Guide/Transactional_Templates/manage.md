@@ -25,7 +25,7 @@ Managing Templates
 ![](/images/template_engine_14.png "Managing your Templates")
 
 From the main template view on each template group, you will see a gear icon menu. From this menu, you can choose to edit 
-the name of your template, [add a version]({{root_url}}/User_Guide/Templates/create_edit.html), or delete the template.
+the name of your template, [add a version]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html), or delete the template.
 
 {% info %}
 To delete a template, you must first delete all the versions of your template.

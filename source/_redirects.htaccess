@@ -130,10 +130,10 @@ Redirect 301 /API_Reference/Reseller_Haiku_API/customer_deprovision.html https:/
 Redirect 301 /API_Reference/Reseller_Haiku_API/customer_provision.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/customer_provision.html
 Redirect 301 /API_Reference/Reseller_Haiku_API/customer_sso.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/customer_sso.html
 Redirect 301 /API_Reference/Reseller_Haiku_API/index.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_Haiku_API/index.html
-Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/index.html
-Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/templates.html
-Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/versions.html
-Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Template_Engine/smtpapi.html
+Redirect 301 /API_Reference/Template_Engine_API/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/index.html
+Redirect 301 /API_Reference/Template_Engine_API/templates.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/templates.html
+Redirect 301 /API_Reference/Template_Engine_API/versions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/versions.html
+Redirect 301 /API_Reference/Template_Engine_API/smtpapi.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
 Redirect 301 /API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
 Redirect 301 /API_Reference/Web_API/Reseller_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html
 Redirect 301 /API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html
@@ -175,7 +175,7 @@ Redirect 301 /Apps/return_path_seedlist.html https://sendgrid.com/docs/User_Guid
 Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 
 #######
 #
@@ -496,7 +496,7 @@ Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/User_Gui
 Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Spam-Checker
 Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
 #merged this "App" with the new Template Engine Docs
-Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
 Redirect 301 /User_Guide/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html#-Using-Fastly
@@ -571,9 +571,24 @@ Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Se
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
 Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
-Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+
+#######
+#
+# /API_Reference/Web_API_v3/Template_Engine - redirects for Template Engine -> Transactional Template Rename
+# /User_Guide/Templates
+#
+#######
+
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/index.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/index.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/smtpapi.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/templates.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/templates.html
+Redirect 301 /API_Reference/Web_API_v3/Template_Engine/versions.html http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/versions.html
+Redirect 301 /User_Guide/Templates/index.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /User_Guide/Templates/create_edit.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_edit.html
+Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html
 
 #######
 #
@@ -606,8 +621,8 @@ Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html ht
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
 Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/settings.html
-Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
-Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Templates/index.html
+Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html

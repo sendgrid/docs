@@ -19,7 +19,7 @@ It's important that your existing lists make it over into our new Marketing Camp
 2. Edit your Exported&nbsp;.CSV
 3. Upload your .CSV into the new Marketing Campaigns interface.&nbsp;
 
-You'll need to perform this process for **each list** you want to migrate over, there is not a process to bring more than 1 list over at a time unless you develop something using&nbsp;our API:&nbsp; [Get List names](https://sendgrid.com/docs/API_Reference/Marketing_Emails_API/lists.html#-get) >&nbsp; [Get Recipients From List](https://sendgrid.com/docs/API_Reference/Marketing_Emails_API/emails.html#-get)&nbsp;>&nbsp; [Create a new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#-Lists) >&nbsp; [Add Recipients to the new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#Add-Multiple-Recipients-to-a-List-POST)
+You'll need to perform this process for **each list** you want to migrate over, there is not a process to bring more than 1 list over at a time unless you develop something using&nbsp;our API:&nbsp; [Get List names](https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html#-get) >&nbsp; [Get Recipients From List](https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html#-get)&nbsp;>&nbsp; [Create a new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#-Lists) >&nbsp; [Add Recipients to the new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#Add-Multiple-Recipients-to-a-List-POST)
 
 &nbsp;
 
@@ -79,8 +79,8 @@ If&nbsp;you encounter errors while uploading your new list, be sure to check out
 
 You can also use our API methods to pull out your old contacts out of our Legacy Newsletter service and add them to a new Marketing Campaigns List. This of course requires some development on your side, but can be useful for moving multiple lists.
 
-1. [Get old List names](https://sendgrid.com/docs/API_Reference/Marketing_Emails_API/lists.html#-get)
-2. [Get Recipients From old List](https://sendgrid.com/docs/API_Reference/Marketing_Emails_API/emails.html#-get)&nbsp;
+1. [Get old List names](https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html#-get)
+2. [Get Recipients From old List](https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html#-get)&nbsp;
 3. [Create a new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#-Lists)&nbsp;
 4. [Add Recipients to the new List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/api.html#Add-Multiple-Recipients-to-a-List-POST)
 

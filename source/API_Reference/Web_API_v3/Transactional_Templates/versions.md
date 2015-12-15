@@ -2,20 +2,20 @@
 layout: page
 title: Versions
 weight: 90
-alias: /API_Reference/Web_API_v3/Template_Engine/versions.html
+alias: /API_Reference/Web_API_v3/Transactional_Templates/versions.html
 navigation:
   show: true
 ---
 
-Each template can have multiple versions, with different subjects and 
+Each template can have multiple versions, with different subjects and
 content for each version.
 
 To retrieve all versions of a template, call the [template
-GET]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/templates.html#-GET)
+GET]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html#-GET)
 method. Versions are returned as nested resources of the template
 resource.
 
-To set which version is active, use the [version PATCH]({{root_url}}/API_Reference/Web_API_v3/Template_Engine/versions.html#-PATCH) method to set the
+To set which version is active, use the [version PATCH]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-PATCH) method to set the
 active field to 1.
 
 {% info %}
