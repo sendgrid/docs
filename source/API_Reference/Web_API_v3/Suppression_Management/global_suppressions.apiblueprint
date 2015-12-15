@@ -26,9 +26,7 @@ Global Suppressions are email addresses that will not receive any emails.
 
 + Response 201 (application/json)
 
-    + Body
-
-            {"recipient_emails":["test1@example.com","test2@example.com"]}
+        {"recipient_emails":["test1@example.com","test2@example.com"]}
 
 ## Global Suppression [/v3/asm/suppressions/{email}]
 + Parameters
