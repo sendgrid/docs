@@ -8,34 +8,27 @@ layout: default
 
 {% if page.sidebar == false %}
 <div class="col-md-12 content-wrapper">
-  {% unless page.breadcrumbs == false %}
-    <section>{% breadcrumbs %}</section>
-  {% endunless %}
   <article role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
-
 {% else %}
 <div class="col-md-9 col-sm-9 content-wrapper">
-  {% unless page.breadcrumbs == false %}
-    <section>{% breadcrumbs %}</section>
-  {% endunless %}
-<article role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
+  <article role="article" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement">
 {% endif %}
     {% if page.title and page.showTitle != false %}
-  <header class="page-header">
-    <h1 class="entry-title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-  </header>
-  {% endif %}
+    <header class="page-header">
+      <h1 class="entry-title" itemprop="name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    </header>
+    {% endif %}
 
-  {{ content }}
+    {{ content }}
 
-  {% if page.last_modified %}
-    <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
-  {% endif %}
-  {% if page.hideFeedback != true %}
-    {% include feedback.html %}
-  {% endif %}
+    {% if page.last_modified %}
+      <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
+    {% endif %}
+    {% if page.hideFeedback != true %}
+      {% include feedback.html %}
+    {% endif %}
+  </article>
 </div>
-</article>
 {% include livedocs_modal.html %}
 
 <meta itemprop="specialty" content="email">
