@@ -98,6 +98,7 @@ module.exports = {
   optimize: {
     css: {
       src:  developmentAssets + '/*.css',
+      src:  srcAssets + '/bower_components/highlightjs/styles/default.css',
       dest: productionAssets,
       options: {
         keepSpecialComments: 0
