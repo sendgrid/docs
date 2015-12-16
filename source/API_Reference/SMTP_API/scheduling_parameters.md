@@ -6,8 +6,12 @@ navigation:
   show: true
 ---
 
-With scheduling you can send large volumes of email in queued batches or target individual recipients by specifying custom UNIX timestamp parameter.
+With scheduling you can send large volumes of email in queued batches or target individual recipients by specifying a custom UNIX timestamp parameter.
 Using the parameters defined below, you can queue batches of emails targeting individual recipients.
+
+{% info %}
+**Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
+{% endinfo%}
 
 This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release
 them when the timestamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time**
