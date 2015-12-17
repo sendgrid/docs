@@ -3,10 +3,32 @@
 	padding: 11px 45px;
 }
 
+.btn-primary {
+  color: @white;
+  background: rgba(26, 130, 226, 0.8);
+  border: 1px solid @brand-primary;
+  &:hover, &:focus {
+    color: @white;
+    background: @brand-primary;
+  }
+  &:active {
+    color: @white;
+    box-shadow: 0 1px 4px 0 rgba(41, 70, 97, 0.2);
+  }
+}
+
 .btn-secondary {
-	color: fade(@brand-primary, 80%);
+	color: @brand-primary;
 	background: transparent;
 	border: 1px solid @brand-primary;
+  &:hover, &:focus {
+    color: @brand-primary;
+    background: rgba(26,130,226,0.1);
+  }
+  &:active {
+    color: @brand-primary;
+    box-shadow: 0 1px 4px 0 rgba(41, 70, 97, 0.2);
+  }
 }
 
 .btn-small {
