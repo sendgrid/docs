@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Automated Email
 navigation:
-  show: true
+  show: false
 seo:
   title: Automated Email
   override: true

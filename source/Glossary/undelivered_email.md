@@ -6,7 +6,7 @@ title: Undelivered Email
 weight: 100
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Undelivered email can be the result of several things but most commonly there is an issue with the email address or content.

@@ -7,7 +7,7 @@ title: SMTP Service
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An SMTP service makes it easy for developers to send email from their applications. Most modern programming languages have libraries to send email via SMTP, or Simple Mail Transport Protocol. An SMTP service provides an external mail server and has tremendous advantages over using an in-house server or one made available by a hosting provider.

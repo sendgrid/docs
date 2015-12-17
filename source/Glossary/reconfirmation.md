@@ -5,7 +5,7 @@ seo:
   title: Reconfirmation Email Campaigns
 title: Reconfirmation Email Campaigns
 navigation:
-  show: true
+  show: false
 ---
 
 {% anchor h2 %}

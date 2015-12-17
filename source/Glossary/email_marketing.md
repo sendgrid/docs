@@ -7,7 +7,7 @@ title: Email Marketing
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Email Marketing (also known as commercial or promotional email) as defined by the CAN-SPAM Act is any message in which the primary purpose “advertises or promotes a commercial product or service, including content on a website operated for a commercial purpose.” Examples of email marketing include:

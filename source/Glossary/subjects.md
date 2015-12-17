@@ -1,17 +1,17 @@
 ---
 seo:
-  title: Email Terms By Subject
+  title: Email Terms Glossary
   description: Learn why more developers choose SendGrid for their email deliverability service to send transactional emails triggered by web apps. Get started for free
   keywords: email glossary, email terms
-title: Email Terms By Subject
+title: Glossary
 weight: 100
 layout: page
 navigation:
-  show: true
+  show: false
 ---
-There are a quite a few things to know about email. So, we wanted to help you know as much as you could possibly want to know! These are some of the more common terms that we use elsewhere in our documentation.
+There are a lot of things to know about email. So, we wanted to help you know as much as you could possibly want to know! These are some of the more common terms that we use elsewhere in our documentation.
 
-We have organized these by subject, but you can also look at our [alphabetical list of Email Terms]({{root_url}}/Glossary/index.html).
+<a href="{{root_url}}/glossary.html">Alphabetical</a> <a class="active" href="{{root_url}}/Glossary/subjects.html">By Subject</a>
 
 <div class="row">
     <div class="col-md-4">
@@ -58,8 +58,8 @@ We have organized these by subject, but you can also look at our [alphabetical l
         {% anchor h2 %}Email{% endanchor %}
         <ul>
             <li><a href="{{root_url}}/Glossary/header.html">Header</a></li>
-            <li><a href="{{root_url}}/Glossary/Email_Types/peer_invitations.html">Peer Initiated Invitation Campaign</a></li>
-            <li><a href="{{root_url}}/Glossary/Email_Types/reconfirmation.html">Reconfirmation Campaign</a></li>
+            <li><a href="{{root_url}}/Glossary/peer_invitations.html">Peer Initiated Invitation Campaign</a></li>
+            <li><a href="{{root_url}}/Glossary/reconfirmation.html">Reconfirmation Campaign</a></li>
         </ul>
     </div>
 </div>
@@ -95,6 +95,7 @@ We have organized these by subject, but you can also look at our [alphabetical l
             <li><a href="{{root_url}}/Glossary/email_marketing.html">Email Marketing</a></li>
             <li><a href="{{root_url}}/Glossary/event_webhook.html">Event Webhook</a></li>
             <li><a href="{{root_url}}/Glossary/mail_merge.html">Mail Merge</a></li>
+            <li><a href="{{root_url}}/Glossary/marketing_email.html">Marketing Email</a></li>
             <li><a href="{{root_url}}/Glossary/mta.html">MTA</a></li>
             <li><a href="{{root_url}}/Glossary/openrelay.html">Open Relay</a></li>
             <li><a href="{{root_url}}/Glossary/reputation_monitoring.html">Reputation Monitoring</a></li>
@@ -118,6 +119,5 @@ We have organized these by subject, but you can also look at our [alphabetical l
         <ul>
           <li><a href="{{root_url}}/Glossary/7_bit_encoding.html">7 bit (ASCII) Encoding</a></li>
         </ul>
-    
     </div>
 </div>

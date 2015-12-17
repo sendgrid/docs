@@ -1,5 +1,5 @@
 * {
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 
 html {
@@ -21,6 +21,7 @@ p {
 
 article {
   max-width: 780px;
+  margin-bottom: 68px;
 }
 
 article img {
@@ -33,17 +34,8 @@ table {
   background-color: white;
 }
 
-article {
-  margin-bottom: 68px;
-}
-
 .container-fluid {
   max-width: 940px;
-}
-
-.content-wrapper {
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .content {
@@ -66,8 +58,8 @@ article {
 }
 
 .visible-sm {
-  display: block;
-  .media-up(@screen-tablet, {
-    display: none;
+  display: none !important;
+  .media-down(@screen-tablet, {
+    display: block !important;
   });
 }

@@ -7,7 +7,7 @@ title: Email Authentication
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Email authentication refers to technical standards that help ISPs and other receivers validate the identity of an email sender. There are three authentication standards in use: [SPF]({{root_url}}/Glossary/spf.html) developed by AOL, [Sender ID]({{root_url}}/Glossary/sender_id.html) developed by Microsoft and [DKIM]({{root_url}}/Glossary/dkim.html) developed by Yahoo!.

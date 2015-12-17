@@ -7,7 +7,7 @@ title: SMTP API
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 [SMTP]({{root_url}}/Glossary/smtp.html) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.

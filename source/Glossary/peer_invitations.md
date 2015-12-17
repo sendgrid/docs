@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Peer-initiated Invitations Campaign
 navigation:
-  show: true
+  show: false
 seo:
   title: Peer-initiated Invitations Campaign
   override: true

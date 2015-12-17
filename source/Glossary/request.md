@@ -7,7 +7,7 @@ title: Request
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Whenever your application or server attempts to send an email to one of your customers via SendGrid, we will record that as a request to your SendGrid dashboard. In other words, when you send emails through SendGrid, you are essentially requesting, "Hey could you deliver this message for me?".

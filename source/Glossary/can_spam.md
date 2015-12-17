@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: CAN-SPAM
 navigation:
-  show: true
+  show: false
 seo:
   title: CAN-SPAM
   override: true
