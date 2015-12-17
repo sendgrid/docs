@@ -1,4 +1,12 @@
-.navbar-collapse { margin-top: 48px;}
+.navbar-collapse {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 16px;
+  .media-up(@screen-tablet, {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  });
+}
 
 #nav-menu {
   font-size: @font-size-small;
