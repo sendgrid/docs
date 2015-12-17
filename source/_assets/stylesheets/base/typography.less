@@ -24,3 +24,18 @@ h5 {
 h6 {
   font-weight: 700;
 }
+
+p.small {
+  font-size: @font-size-small;
+  color: @text-color;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+a {
+  color: fade(@brand-primary, 80%);
+  &:hover, &:active, &:focus {
+    color: @brand-primary;
+    text-decoration: none;
+  }
+}

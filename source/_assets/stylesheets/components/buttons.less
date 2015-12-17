@@ -5,7 +5,7 @@
 
 .btn-primary {
   color: @white;
-  background: rgba(26, 130, 226, 0.8);
+  background: fade(@brand-primary, 80%);
   border: 1px solid @brand-primary;
   &:hover, &:focus {
     color: @white;
@@ -13,7 +13,7 @@
   }
   &:active {
     color: @white;
-    box-shadow: 0 1px 4px 0 rgba(41, 70, 97, 0.2);
+    box-shadow: 0 1px 4px 0 fade(@brand-secondary, 20%);
   }
 }
 
@@ -23,11 +23,11 @@
 	border: 1px solid @brand-primary;
   &:hover, &:focus {
     color: @brand-primary;
-    background: rgba(26,130,226,0.1);
+    background: fade(@brand-primary, 10%);
   }
   &:active {
     color: @brand-primary;
-    box-shadow: 0 1px 4px 0 rgba(41, 70, 97, 0.2);
+    box-shadow: 0 1px 4px 0 fade(@brand-secondary, 20%);
   }
 }
 
