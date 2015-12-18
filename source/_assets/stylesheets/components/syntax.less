@@ -1,6 +1,6 @@
-.code-wrapper {
-	margin: 36px 0;
+.code-wrapper, #overlay {
 	.code-buttons {
+		margin-top: 36px;
 	  > .nav-tabs {
 	    border-bottom: 0px;
 	    &:first-child {
@@ -25,6 +25,7 @@
 	}
 
 	figure.code {
+		margin-bottom: 36px;
 		border-radius: 0 2px 2px 0;
 		border: 1px solid @gray !important;
 		border-radius: 2px;
@@ -349,4 +350,8 @@
 	figure.code pre, figure.code .highlight {
 		margin-bottom: 0;
 	}
+}
+
+#overlay .copycode {
+	display: none;
 }
