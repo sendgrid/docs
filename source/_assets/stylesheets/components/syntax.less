@@ -355,3 +355,37 @@
 #overlay .copycode {
 	display: none;
 }
+
+#copy-prompt {
+	position: absolute;
+	color: #fff;
+	background-color: rgba(0,0,0,.6);
+	font-size: 20px;
+	border-radius: 10px;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+code.wrap, code.requestdata {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ display:inline-block;
+ max-width:580px;
+}
+
+.request-block {
+	margin: 10px 0;
+}
+
+.request-block code {
+  display: inline-block;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.request-block .requestdata {
+	color: black;
+}

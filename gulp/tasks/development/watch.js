@@ -16,5 +16,5 @@ gulp.task('watch',  ['browsersync'], function () {
   gulp.watch('source/_includes/**/*.{html,xml}', ['jekyll-rebuild']);
   gulp.watch('source/_layouts/*.html,xml', ['jekyll-rebuild']);
   gulp.watch('source/_assets/stylesheets/**/*.less', ['less']);
-  gulp.watch('source/_assets/javascripts/**/*.less', ['scripts', 'jshint']);
+  gulp.watch('source/_assets/javascripts/**/*.less', ['jekyll-rebuild']);
 });

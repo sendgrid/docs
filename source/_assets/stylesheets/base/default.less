@@ -22,6 +22,8 @@ p {
 article {
   max-width: 780px;
   margin-bottom: 68px;
+  word-break: break-all;
+  white-space: normal;
 }
 
 article img {
@@ -62,4 +64,16 @@ table {
   .media-down(@screen-tablet, {
     display: block !important;
   });
+}
+
+body.logged-out .logged-in, body.logged-in .logged-out {
+  display: none;
+}
+
+body.logged-out .logged-out, body.logged-in .logged-in {
+  display: block;
+}
+
+body.logged-out .logged-out, body.logged-in .logged-in .btn {
+  display: inline-block;
 }
