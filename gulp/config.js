@@ -16,12 +16,6 @@ module.exports = {
       files: [
         developmentAssets + '*.{css,js}',
       ]
-    },
-    production: {
-      server: {
-        baseDir: [production]
-      },
-      port: 9998
     }
   },
   delete: {
@@ -31,12 +25,6 @@ module.exports = {
     development: {
       src:    src,
       dest:   development,
-      config: '_config.yml'
-    },
-    production: {
-      src:    src,
-      dest:   production,
-      // config: '_config.yml,_config.build.yml'
       config: '_config.yml'
     }
   },
@@ -104,28 +92,28 @@ module.exports = {
         keepSpecialComments: 0
       }
     }
-  },
-  revision: {
-    src: {
-      assets: [
-        productionAssets + '/*.css'
-      ],
-      base: production
-    },
-    dest: {
-      assets: production,
-      manifest: {
-        name: 'manifest.json',
-        path: productionAssets
-      }
-    }
-  },
-  collect: {
-    src: [
-      productionAssets + '/manifest.json',
-      production + '/*.{html,xml,txt,json,css,js}',
-      '!' + production + '/feed.xml'
-    ],
-    dest: production
   }
+  // revision: {
+  //   src: {
+  //     assets: [
+  //       productionAssets + '/*.css'
+  //     ],
+  //     base: production
+  //   },
+  //   dest: {
+  //     assets: production,
+  //     manifest: {
+  //       name: 'manifest.json',
+  //       path: productionAssets
+  //     }
+  //   }
+  // },
+  // collect: {
+  //   src: [
+  //     productionAssets + '/manifest.json',
+  //     production + '/*.{html,xml,txt,json,css,js}',
+  //     '!' + production + '/feed.xml'
+  //   ],
+  //   dest: production
+  // }
 };
