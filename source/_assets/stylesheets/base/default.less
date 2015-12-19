@@ -22,8 +22,6 @@ p {
 article {
   max-width: 780px;
   margin-bottom: 68px;
-  word-break: break-all;
-  white-space: normal;
 }
 
 article img {
@@ -75,5 +73,8 @@ body.logged-out .logged-out, body.logged-in .logged-in {
 }
 
 body.logged-out .logged-out, body.logged-in .logged-in .btn {
-  display: inline-block;
+  display: block;
+  .media-up(@screen-tablet, {
+    display: inline-block;
+  });
 }
