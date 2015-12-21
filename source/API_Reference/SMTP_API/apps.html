@@ -380,7 +380,7 @@ Filter: <code>gravatar</code>
 Filter: <code>opentrack</code>
 {% endanchor %}
 
-<p>Inserts an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened.</p>
+<p>If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.</p>
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -394,6 +394,11 @@ Filter: <code>opentrack</code>
 <td><code>0</code> | <code>1</code></td>
 <td>Disable or enable this App</td>
 </tr>
+<tr>
+<td>replace</td>
+<td>string</td>
+<td>A string to be replaced by SendGrid with the tracking image at send time.</td>
+</tr>
 </tbody>
 </table>
 
@@ -403,7 +408,8 @@ Filter: <code>opentrack</code>
   "filters" : {
     "opentrack" : {
       "settings" : {
-        "enable" : 1
+        "enable" : 1,
+        "replace" : "%opentrack%"
       }
     }
   }
