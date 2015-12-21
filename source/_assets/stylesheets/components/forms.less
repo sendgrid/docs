@@ -21,20 +21,25 @@ form {
       border-bottom: 2px solid @brand-primary;
     }
   }
-  label.floating-label {
-    font-size: 14px;
-    font-weight: 300;
-    color: fade(@brand-secondary, 60%);
-    cursor: text;
-    z-index: -1;
-    position: absolute;
-    top: 11px;
-    left: 0;
-    &.is-focused, &.is-dirty {
-      font-size: 12px;
-      line-height: 14px;
-      top: -8px;
-      font-weight: 400;
+  label {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    &.floating-label {
+      font-size: 14px;
+      font-weight: 300;
+      color: fade(@brand-secondary, 60%);
+      cursor: text;
+      z-index: -1;
+      position: absolute;
+      top: 11px;
+      left: 0;
+      &.is-focused, &.is-dirty {
+        font-size: 12px;
+        line-height: 14px;
+        top: -8px;
+        font-weight: 400;
+      }
     }
   }
   &.navbar-search {
