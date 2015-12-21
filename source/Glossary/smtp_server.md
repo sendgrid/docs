@@ -7,7 +7,7 @@ title: SMTP Server
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An SMTP server is used to send email. Though server is in the name, they do not necessarily reside on an entire machine. Rather, an [SMTP server is an application]({{site.blog_url}}/what-is-an-smtp-server/) that runs all the time awaiting new mail to send.

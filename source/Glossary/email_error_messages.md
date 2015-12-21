@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Email Error Messages
 navigation:
-  show: true
+  show: false
 ---
 
 Email is essentially computers talking to each other in simple codes to relay simple text messages. Being able to interpret the codes that these computers kick back when something goes wrong is a skill that doesn't always come naturally, so we've assembled a collection of common responses you're likely to see come back from recipient mail servers, as well as guidance on what to do with them.

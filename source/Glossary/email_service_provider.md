@@ -7,7 +7,7 @@ title: Email Service Provider
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An Email Service Provider (ESP) is a service organization that provides transactional and/or marketing email services.

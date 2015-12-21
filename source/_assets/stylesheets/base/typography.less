@@ -1,0 +1,44 @@
+b, strong {
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  font-family: "Colfax-Light", sans-serif;
+}
+
+h3, .h3 {
+  color: fade(@brand-secondary, 80%);
+}
+
+h4 {
+  font-family: "Colfax-Medium", sans-serif;
+}
+
+h5 {
+  color: fade(@brand-secondary, 60%);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+p.small {
+  font-size: @font-size-small;
+  color: @text-color;
+  font-weight: 400;
+  opacity: 60%;
+}
+
+a {
+  color: fade(@brand-primary, 80%);
+  &:hover, &:active, &:focus {
+    color: @brand-primary;
+    text-decoration: none;
+  }
+}
+
+li {
+  color: @body-color;
+}

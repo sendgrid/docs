@@ -7,7 +7,7 @@ title: Transactional Email
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Transactional email is relationship content that “facilitates an already agreed-upon transaction or updates a customer about an ongoing transaction.” It includes any email triggered by a user’s interaction with a web application, such as:

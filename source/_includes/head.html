@@ -39,15 +39,8 @@
   <link href="{{root_url}}/images/favicon.ico" rel="icon">
 
   <link href="{{root_url}}/{% css_asset_tag global %}
-- /_assets/stylesheets/bootstrap.less
-- /_assets/stylesheets/fonts.css
-- /_assets/stylesheets/style.css
-- /_assets/stylesheets/icomoon.css
-- /_assets/stylesheets/syntax.css
-- /_assets/stylesheets/print.css
-- /_assets/stylesheets/error.css
-- /_assets/stylesheets/vidgrid.css
-- /_assets/stylesheets/livedocs.css
+- /_assets/stylesheets/app.less
+- /_assets/stylesheets/style.less
 - /_assets/bower_components/highlightjs/styles/default.css
 {% endcss_asset_tag %}" rel="stylesheet" type='text/css' />
 
@@ -65,16 +58,18 @@
 -  /_assets/bower_components/bootstrap/dist/js/bootstrap.min.js
 -  /_assets/javascripts/libs/ZeroClipboard.js
 -  /_assets/javascripts/search.js
+-  /_assets/javascripts/forms.js
 -  /_assets/bower_components/jsrender/jsrender.js
 -  /_assets/javascripts/livedocs.js
 -  /_assets/javascripts/feedback.js
--  /_assets/javascripts/callouts.js
 -  /_assets/javascripts/octopress.js
 -  /_assets/bower_components/highlightjs/highlight.pack.js
 -  /_assets/javascripts/formatXml.js
 -  /_assets/javascripts/parseQuerystring.js
 -  /_assets/bower_components/jquery-cookie/jquery.cookie.js
 {% endjavascript_asset_tag %}"
+
+  // filename = "{{root_url}}/assets/app.js"
 
    // Add a script element as a child of the body
    function downloadJSAtOnload() {
@@ -93,5 +88,7 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300,300italic,600,600italic" id="opensans-css" media="screen" rel="stylesheet" type="text/css">
 
 </head>

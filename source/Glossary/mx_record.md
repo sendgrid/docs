@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: MX Record
 navigation:
-  show: true
+  show: false
 seo:
   title: MX Record
   override: true

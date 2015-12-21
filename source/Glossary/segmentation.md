@@ -7,7 +7,7 @@ title: Segmentation
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Segmentation refers to the practice of separating the different types of email that you send, such as marketing email and transactional email. By segmenting your email traffic you can both obtain more useful engagement statistics and improve your deliverability.

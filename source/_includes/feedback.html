@@ -1,20 +1,23 @@
 <div class="feedback">
-  <span class="prompt">Was this helpful?</span>
+  <p class="small">Was this helpful?</p>
   <a class="feedback-element feedback-positive" href="#">
-    <img src="{{root_url}}/images/encircled-plus.png" alt="+" />
-    Yes
+    <img src="{{root_url}}/images/helpful-yes-icon.svg" alt="+" />
+    <p class="small">Yes</p>
   </a>
   <a class="feedback-element feedback-negative" href="#">
-    <img src="{{root_url}}/images/encircled-minus.png" alt="-" />
-    No
+    <img src="{{root_url}}/images/helpful-no-icon.svg" alt="-" />
+    <p class="small">No</p>
   </a>
   <a class="feedback-element feedback-more" href="#">
-    <img src="{{root_url}}/images/feedback.png" alt="" />
-    Feedback
-  </a><br /><hr />
-  <div class="logged-out text-center feedback-cta">
-    <a href="https://sendgrid.com/pricing?mc=SendGrid%20Documentation">SendGrid Pricing</a> | Try out SendGrid <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation">for free</a>!
-  </div>
+    <img src="{{root_url}}/images/feedback-icon.svg" alt="" />
+    <p class="small">Feedback</p>
+  </a>
+</div>
+
+<div class="feedback-cta">
+  <a href="https://sendgrid.com/pricing?mc=SendGrid%20Documentation" class="btn btn-small btn-secondary logged-out">SendGrid Pricing</a>
+  <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-small btn-secondary logged-out">Try SendGrid for Free</a>
+  <a href="https://sendgrid.com/contact" class="btn btn-small btn-secondary">Contact Us</a>
 </div>
 
 <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

@@ -7,7 +7,7 @@ title: Opt-In Email
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 **Opt-in email** refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively given you permission to send them email. Without obtaining this permission, your email is likely unwanted or unsolicited, and is liable to be marked as [spam]({{root_url}}/Glossary/spam.html) by the recipient or be “bulked” by the receiving mailbox provider (i.e. delivered directly to the spam folder).

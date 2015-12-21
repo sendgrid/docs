@@ -5,7 +5,7 @@ title: Drops
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A drop occurs when our systems identify that a message is sent to an email address that is already listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists mentioned above, our systems automatically drop the email in order to protect your Sender Reputation.

@@ -7,7 +7,7 @@ title: 7 Bit Encoding
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 7 bit encoding is a reference to the ASCII character set, which is a set of 128 English alphabet characters and is used to store letters in binary. The set includes

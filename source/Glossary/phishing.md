@@ -7,7 +7,7 @@ title: Phishing
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Phishing is a technique for acquiring information such as user names, passwords, credit cards, social security numbers and other personal data by masquerading as a trusted business like a bank or credit card company. With phishing messages, the email appears to be sent by the trusted entity and the consumer is tricked into providing their personal information.
