@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: IP Warmup
 navigation:
-  show: true
+  show: false
 seo:
   title: Warming up and IP
   override: true

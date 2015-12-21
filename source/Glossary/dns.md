@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: DNS
 navigation:
-  show: true
+  show: false
 seo:
   title: Domain Name System (DNS)
   override: true

@@ -7,7 +7,7 @@ title: A Record
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 The A record is what links your dedicated IP address to your chosen subdomain.  Creating this record will, for example, point traffic for o1.subdomain.yourdomain.com back to your dedicated IP, and vice versa.

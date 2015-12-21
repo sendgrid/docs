@@ -5,7 +5,7 @@ title: Spam
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 The most simple way to define spam in the Email world is by using these two words: ```unwanted email```.

@@ -7,7 +7,7 @@ title: IP Address
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An Internet Protocol (IP) Address address is a unique numerical address that defines and internet location. In the more familiar, and recognizable, 4th version these addresses are written as 4 sets of numbers separated by periods. For example, 127.0.0.1 is an IP address. An IP address can be dynamic, meaning it changes each time an email message is deployed, or it can be static meaning it does not change. A static IP address is recommended for senders of commercial email.

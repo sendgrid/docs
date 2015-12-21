@@ -7,7 +7,7 @@ title: Blacklist
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A Blacklist is a list of IP addresses that are known to send unsolicited and/or unwanted emails. ISPs and enterprises use blacklists to identify and filter illegitimate mail streams.

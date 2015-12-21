@@ -7,7 +7,7 @@ title: Blocks
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Blocked messages will appear under Email Reports under Blocks. When your IP address has been added to a blacklist, has been blocked by an ISP or messaging organization, the affected email shows up on this list. Typically it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.

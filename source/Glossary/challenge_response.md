@@ -7,7 +7,7 @@ title: Challenge Response
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A challenge–response (C/R) system is a type of filter that automatically sends a reply back with a request to the sender of an incoming e-mail. In the reply, the sender is asked to perform an action to ensure delivery of the original message. 

@@ -7,7 +7,7 @@ title: Autoresponder
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An autoresponder is a computer program that generates a response to an email, request, or action. Autoresponders were initially used to notify a sender of an undeliverable email, but now they are often used in email marketing. Autoresponders can give you the ability to send a customer a pre-written email when a specified event takes place, such as a customer creating an account or purchasing a product.

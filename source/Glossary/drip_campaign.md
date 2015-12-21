@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Drip Campaign
 navigation:
-  show: true
+  show: false
 seo:
   title: Drip Campaign
   override: true
