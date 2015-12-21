@@ -18,8 +18,8 @@
           <li class="nav-link {% if page.title == 'Code Workshop' %} current-page-item {% endif %}">
             <a href="{{root_url}}/Utilities/code_workshop.html">Code Workshop</a>
           </li>
-          <li class="nav-link {% if page.title == 'Glossary' or page.url contains 'Glossary' %} current-page-item {% endif %}">
-            <a href="{{root_url}}/glossary.html">Glossary</a>
+          <li class="nav-link {% if page.url contains 'Glossary' %} current-page-item {% endif %}">
+            <a href="{{root_url}}/Glossary/index.html">Glossary</a>
           </li>
           <li class="nav-link">
             <a href="http://support.sendgrid.com/">Support</a>
@@ -33,7 +33,7 @@
         </ul>
       </div>
       <div class="pull-right navbar-buttons hidden-sm">
-        <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-small btn-secondary logged-out">Sign Up</a>
+        <a href="https://sendgrid.com/pricing?mc=SendGrid%20Documentation" class="btn btn-small btn-secondary logged-out">Sign Up</a>
       </div>
     </div>
   </div>
