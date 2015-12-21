@@ -425,14 +425,6 @@ Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User
 
 #######
 #
-# /docs/Glossary
-#
-#######
-Redirect 301 /Glossary/index.html https://sendgrid.com/glossary.html
-
-
-#######
-#
 # /docs/Integrate
 #
 #######

@@ -6,13 +6,14 @@ seo:
 title: Glossary
 weight: 100
 layout: page
+breadcrumbs: false
 navigation:
   show: false
 ---
 There are a lot of things to know about email. So, we wanted to help you know as much as you could possibly want to know! These are some of the more common terms that we use elsewhere in our documentation.
 
 <div class="glossary-toggle">
-    <div><a href="{{root_url}}/glossary.html">Alphabetical</a></div>
+    <div><a href="{{root_url}}/Glossary/index.html">Alphabetical</a></div>
     <div class="active"><a href="{{root_url}}/Glossary/subjects.html">By Subject</a></div>
 </div>
 
