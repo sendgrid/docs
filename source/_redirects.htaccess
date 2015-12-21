@@ -209,7 +209,7 @@ Redirect 301 /Code_Examples/SMTP_API_Header_Examples/ruby.html https://sendgrid.
 
 #######
 #
-# /docs/Classroom - temporary redirects to avoid confusion
+# /docs/Classroom - redirects to avoid confusion
 #
 #######
 Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/index.html
@@ -220,7 +220,7 @@ Redirect 301 /Classroom/Send/api_keys.html /Classroom/Send/How_Emails_Are_Sent/a
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Basics
+# /docs/Classroom/Basics - redirects for Classroom/Basics
 #
 #######
 
@@ -247,7 +247,7 @@ Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.c
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Build
+# /docs/Classroom/Build - redirects for Classroom/Build
 #
 #######
 
@@ -270,7 +270,7 @@ Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Deliver
+# /docs/Classroom/Deliver - redirects for Classroom/Deliver
 #
 #######
 
@@ -319,7 +319,7 @@ Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://send
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Send
+# /docs/Classroom/Send - redirects for Classroom/Send
 #
 #######
 
@@ -342,7 +342,7 @@ Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/C
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Track
+# /docs/Classroom/Track - redirects for Classroom/Track
 #
 #######
 
@@ -372,7 +372,7 @@ Redirect 301 /Classroom/Track/unsubscribe_via_subscription_tracking.html https:/
 
 #######
 #
-# /docs/Classroom - redirects for Classroom/Troubleshooting
+# /docs/Classroom/Troubleshooting - redirects for Classroom/Troubleshooting
 #
 #######
 
@@ -422,6 +422,14 @@ Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Gu
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+
+#######
+#
+# /docs/Glossary
+#
+#######
+Redirect 301 /Glossary/index.html https://sendgrid.com/glossary.html
+
 
 #######
 #
