@@ -4,7 +4,7 @@ $(function() {
 		CollapsibleLists.applyTo(document.getElementById('nav-menu'));
 	}
 
-	$.ajax({
+/*	$.ajax({
 		url: "https://sendgrid.com/user/checkLogin",
 		method: "GET",
 		success: function (data) {
@@ -15,6 +15,7 @@ $(function() {
 		},
 		dataType: "jsonp"
 	});
+	*/
 
 	$('#nav-menu').click(function (e) {
 		if(e.target == this){
