@@ -10,7 +10,7 @@ FORMAT: 1A
 
 # API Keys
 The API Keys feature allows customers to be able to generate an
-API Key credential which can be used for authentication with the 
+API Key credential which can be used for authentication with the
 SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
 
 # Group API Keys management
@@ -32,6 +32,7 @@ SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_AP
             }
 
 ### Generate a new API Key for the authenticated user [POST]
+
 This will create a new random API Key for the user with permissions assigned. A JSON request body containing a "name" property is required. If number of maximum keys is reached, HTTP 403 will be returned. Optionally, you can specify "scopes" to limit what permissions an API Key is given. If no API Key is provided, it will assign all of the parent account's assignable scopes to the API Key. For a list scopes, please look at the [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html)
 
 
@@ -90,17 +91,17 @@ If the API Key ID does not exist an HTTP 404 will be returned.
 + Response 200 (application/json)
 
     + Body
-    
+
             {
                 "api_key_id": "xxxxxxxx",
                 "name": "My API Key",
                 "scopes": ["mail.send", "alerts.create", "alerts.read"]
             }
-        
+
 + Response 404 (application/json)
-    
+
     + Body
-        
+
             {
                 "errors": [
                     {
@@ -130,7 +131,7 @@ If the API Key ID does not exist an HTTP 404 will be returned.
                     }
                 ]
             }
-            
+
 ### Update the name of an existing API Key [PATCH]
 A JSON request body with a "name" property is required.
 
@@ -141,7 +142,7 @@ A JSON request body with a "name" property is required.
             {
                 "name": "A New Hope"
             }
-            
+
 + Response 200 (application/json)
 
     + Body
@@ -150,9 +151,9 @@ A JSON request body with a "name" property is required.
                 "api_key_id": "qfTQ6KG0QBiwWdJ0-pCLCA",
                 "name":       "A New Hope"
             }
-            
+
 ### Update the name & scopes of an API Key [PUT]
-A JSON request body with a "name" property is required. 
+A JSON request body with a "name" property is required.
 Most provide the list of all the scopes an api key should have.
 
 + Request
@@ -163,7 +164,7 @@ Most provide the list of all the scopes an api key should have.
                 "name": "A New Hope",
                 "scopes": ["user.profile.read", "user.profile.update"]
             }
-            
+
 + Response 200 (application/json)
 
     + Body
@@ -186,7 +187,7 @@ Most provide the list of all the scopes an api key should have.
                     }
                 ]
             }
-            
+
 + Response 404 (application/json)
 
     + Body
@@ -199,7 +200,7 @@ Most provide the list of all the scopes an api key should have.
                     }
                 ]
             }
-            
+
 # Group API Key usage
 The API Keys feature adds a new "Bearer" scheme for HTTP authentication
 for both v3 WebAPI and the mail.send API.
@@ -212,10 +213,10 @@ Returns HTTP 401 if authentication fails.
 ### Authentication [GET]
 + Request
 
-    + Headers 
-    
+    + Headers
+
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
-        
+
 + Response 401 (application/json)
 
         {
@@ -234,20 +235,20 @@ Returns HTTP 400 if authentication fails.
 ### HTTP Authentication [GET]
 + Request
 
-    + Headers 
-    
+    + Headers
+
             Authorization: Bearer SG.xxxxxxxx.yyyyyyyy
 
 + Response 200 (application/json)
 
     + Body
-        
+
             { "message": "success" }
 
-+ Response 400 (application/json)    
++ Response 400 (application/json)
 
     + Body
-        
+
             {
                 "message": "error",
                 "errors": [
