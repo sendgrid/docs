@@ -1,23 +1,21 @@
 <div class="navbar navbar-static-top" id="nav">
   <div class="container-fluid">
     <div class="row">
-      <div class="navbar-header col-md-3">
+      <div class="navbar-header">
         <a href="//sendgrid.com"><span id="logo"></span></a>
-        <button type="button" class="navbar-toggle"
+        <button type="button" class="navbar-toggle" id="nav-icon"
           data-toggle="collapse" data-target="#navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-list collapsed-icon"></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse col-md-4" id="navbar">
+      <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav" id="nav-links">
           <li class="nav-link {% if page.title == 'Docs Home' %} current-page-item {% endif %}">
             <a href="{{root_url}}/index.html">Docs Home</a>
           </li>
-          <li class="nav-link {% if page.url contains 'User_Guide' %} current-page-item {% endif %}">
-            <a href="{{root_url}}/User_Guide/index.html">User Guide</a>
-          </li>
-          <li class="nav-link">
+          <li class="nav-link {% if page.title == 'Code Workshop' %} current-page-item {% endif %}">
             <a href="{{root_url}}/Utilities/code_workshop.html">Code Workshop</a>
           </li>
           <li class="nav-link {% if page.url contains 'Glossary' %} current-page-item {% endif %}">
@@ -26,16 +24,16 @@
           <li class="nav-link">
             <a href="http://support.sendgrid.com/">Support</a>
           </li>
-          <li class="nav-link visible-xs">
-            <a href="https://sendgrid.com/contact" class="btn btn-success btn-block">Contact Us</a>
-            <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-primary btn-block logged-out">Free Account</a>
+          <li class="nav-link visible-sm">
+            <a href="https://sendgrid.com/login">Log In</a>
+          </li>
+          <li class="nav-link visible-sm">
+            <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation">Sign Up</a>
           </li>
         </ul>
       </div>
-      <div class="pull-right navbar-buttons hidden-xs">
-        <a href="https://sendgrid.com/contact" class="btn btn-success">Contact Us</a>
-        <a href="https://sendgrid.com/pricing?mc=SendGrid%20Documentation" class="btn btn-success logged-out">Pricing</a>
-        <a href="https://sendgrid.com/free?mc=SendGrid%20Documentation" class="btn btn-primary logged-out">Free Account</a>
+      <div class="pull-right navbar-buttons hidden-sm">
+        <a href="https://sendgrid.com/pricing?mc=SendGrid%20Documentation" class="btn btn-small btn-secondary logged-out">Sign Up</a>
       </div>
     </div>
   </div>

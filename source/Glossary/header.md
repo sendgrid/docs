@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Header
 navigation:
-  show: true
+  show: false
 seo:
   title: Header
   override: true

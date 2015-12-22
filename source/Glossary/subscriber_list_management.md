@@ -7,7 +7,7 @@ title: Subscriber List Management
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Maintaining good list management is a key element in keeping your users happy. Sending email to someone who has unsubscribed or never signed up in the 1st place is a big no-no in the email game.

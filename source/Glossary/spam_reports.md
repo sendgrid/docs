@@ -7,7 +7,7 @@ title: Spam Reports
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Spam Reports are triggered when a customer clicks the spam button or puts your email in their [spam folder]({{root_url}}/Glossary/bulk_mail_folder.html) within their email client such as Yahoo, Outlook or AOL. Spam reports can only be gathered from Internet Service Providers that provide a Feedback loop.

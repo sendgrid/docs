@@ -7,7 +7,7 @@ title: Triggering Events
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Not to be confused with the post-send email events like [clicks]({{root_url}}/Glossary/clicks.html), [drops]({{root_url}}/Glossary/drops.html), or [bounces]({{root_url}}/Glossary/bounces.html) that SendGrid tracks: in terms of [automated email]({{root_url}}/Glossary/automated_email.html), **triggering events** are events that you specify based on the ways that your users interact with your website or application. These events can be tracked and used to prompt a [triggered action]({{root_url}}/Glossary/triggered_actions.html), such as the delivery of an email.

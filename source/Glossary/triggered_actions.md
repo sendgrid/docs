@@ -7,7 +7,7 @@ title: Triggered Actions
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Triggered actions are automatically initiated when a specific [triggering event]({{root_url}}/Glossary/triggering_events.html) that you are tracking takes place. These actions must be defined in advance, and they must be associated with a predetermined user and event.

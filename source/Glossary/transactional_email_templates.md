@@ -7,7 +7,7 @@ title: Transactional Email Templates
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Transactional email templates are pre-coded email layouts that marketers, designers, and developers can use to quickly and easily create transactional email campaigns. SendGrid’s transactional email templates allow non-technical and technical people alike to make real-time changes to the email their recipients receive.

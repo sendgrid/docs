@@ -7,7 +7,7 @@ title: Spoofing
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Spoofing is a technique where forged email addresses are used to trick recipients into opening an email because the source has been hidden. This deceptive tactic is used to spread viruses and other malicious programs. Spoofing emails are often sent out as pretending to be large companies trying to steal your account info by having you click a link and enter your account credentials.

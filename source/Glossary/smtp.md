@@ -7,7 +7,7 @@ title: SMTP
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 For most people, sending an email is as simple as entering an email address, writing a message, and hitting “send;” a few minutes later, the same message arrives in the recipient’s inbox. What you may not know, however, is that there is an entire process a message needs to go through for this to happen.

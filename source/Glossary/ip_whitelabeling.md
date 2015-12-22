@@ -7,7 +7,7 @@ title: IP Whitelabeling
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 IP whitelabeling allows you to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html) by changing the domains referenced in email headers and links. Once an account has been properly whitelabeled, SendGrid is completely masked from the sending process, and emails appear to have been sent directly from you.

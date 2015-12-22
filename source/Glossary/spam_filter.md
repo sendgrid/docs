@@ -7,7 +7,7 @@ title: Spam Filter
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Spam Filters are software based email filters that block email on a range of attributes from words or phases within the email to header information and other factors. The goal is to identify spam before it is delivered to the inbox.

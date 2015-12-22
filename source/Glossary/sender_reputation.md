@@ -7,7 +7,7 @@ title: Sender Reputation
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 ![]({{root_url}}/images/reputation_1.png "Sender Reputation")

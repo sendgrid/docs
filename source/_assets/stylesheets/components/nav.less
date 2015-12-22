@@ -1,0 +1,158 @@
+// Top Header
+#header-top {
+  height: 27px;
+  border-bottom: 1px solid @gray;
+  background-color: @gray-light;
+  padding-right: 40px;
+  font-size: @font-size-small;
+  .container-fluid {
+    max-width: 1440px;
+  }
+  a {
+    color: @body-color;
+  }
+  .login-link {
+    font-weight: 400;
+    text-align: right;
+  }
+}
+
+// Main Header
+.navbar-static-top {
+  background: @gray-light;
+  border-bottom: 1px solid @gray;
+  .container-fluid {
+    max-width: 1440px;
+  }
+  .navbar-collapse {
+    .media-up(@screen-tablet, {
+      width: 490px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 12px;
+      margin: 0 auto;
+    });
+  }
+  .navbar-nav {
+    border-top: 1px solid @gray;
+    padding: 30px 0;
+    .media-up(@screen-tablet, {
+      border-top: none;
+      padding: 0;
+    });
+  }
+  .navbar-buttons {
+    margin-top: 16px;
+    margin-right: 40px;
+  }
+  .nav-link {
+    a {
+      color: @body-color;
+      font-size: @font-size-small;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+        color: @brand-primary;
+      }
+    }
+  }
+  .current-page-item a {
+    color: @brand-primary;
+  }
+  #logo {
+    margin-top: 21px;
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    background: url(/images/sendgrid-logo-blue.png?embed=true) no-repeat;
+    background-size: contain;
+    margin-left: 16px;
+  }
+
+  // Mobile
+  #nav-icon {
+    margin-right: 16px;
+    margin-top: 26px;
+    width: 24px;
+    height: 15px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+      span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: @brand-primary;
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+          top: 0px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+
+        &:nth-child(2) {
+          top: 6px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+
+        &:nth-child(3) {
+          top: 12px;
+          -webkit-transform-origin: left center;
+          -moz-transform-origin: left center;
+          -o-transform-origin: left center;
+          transform-origin: left center;
+        }
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top: -3px;
+          left: 8px;
+        }
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+        &:nth-child(3) {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          top: 12px;
+          left: 8px;
+        }
+      }
+    }
+  }
+}

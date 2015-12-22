@@ -7,7 +7,7 @@ title: Bounces
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A message that is returned to the server that sent it. Bounced emails are either a permanent failure to deliver the email or a temporary failure to deliver the email, based on conditions with the recipient mail server.

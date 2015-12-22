@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Mail Merge
 navigation:
-  show: true
+  show: false
 seo:
   title: Mail Merge
   override: true
