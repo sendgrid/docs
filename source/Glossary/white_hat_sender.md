@@ -6,7 +6,7 @@ title: White Hat Sender
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A white hat sender is a sender or company who only sends email to those recipients who have given express permission to receive email from the sender. Put simply, white hat senders always strive to “send the right message, to the right person, at the right time, with the right frequency.”

@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Opens & Unique Opens
 navigation:
-  show: true
+  show: false
 seo:
   title: Opens & Unique Opens
   override: true

@@ -8,7 +8,7 @@ weight: 0
 layout: page
 zendesk_id: 200591267
 navigation:
-  show: true
+  show: false
 ---
 
 {% anchor h2 %}What is CTR?{% endanchor %}

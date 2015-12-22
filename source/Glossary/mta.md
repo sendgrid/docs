@@ -7,7 +7,7 @@ title: MTA
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 Mail Transfer Agent or Message Transfer Agent (MTA) is software that transfers electronic mail messages from one computer to another using a client–server application architecture.
 

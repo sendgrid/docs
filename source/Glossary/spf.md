@@ -7,7 +7,7 @@ title: SPF
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 Sender Policy Framework (SPF) is an email authentication standard developed by AOL that compares the email sender’s actual IP address to a list of IP addresses authorized to send mail from that domain. The IP list is published in the domain’s DNS record.
 

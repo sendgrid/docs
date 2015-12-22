@@ -7,7 +7,7 @@ title: Domain
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A domain is a named Internet address that resolves to the numbered Internet Protocol (IP) addresses computers use to connect. Examples: sendgrid.com, yourdomain.com, google.com. Simply put, it’s the web address your users type into their browser to learn about your company.

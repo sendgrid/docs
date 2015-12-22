@@ -9,7 +9,9 @@ navigation:
 FORMAT: 1A
 
 # API Keys
-The API Keys feature allows customers to be able to generate an API Key credential which can be used for authentication with the SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
+The API Keys feature allows customers to be able to generate an
+API Key credential which can be used for authentication with the
+SendGrid v3 Web API or the [Mail API Endpoint]({{root_url}}/API_Reference/Web_API/mail.html)
 
 # Group API Keys management
 
@@ -39,7 +41,7 @@ This will create a new random API Key for the user with permissions assigned. A 
     + Body
 
             {
-                "name": "My API Key",
+                "name":"My API Key",
                 "scopes": ["mail.send", "alerts.create", "alerts.read"]
             }
 
@@ -82,7 +84,9 @@ This will create a new random API Key for the user with permissions assigned. A 
 
 ## API Key [/api_keys/{api_key_id}]
 ### Get an existing API Key [GET]
-Retrieve a single api key. If the API Key ID does not exist an HTTP 404 will be returned.
+Retrieve a single api key.
+
+If the API Key ID does not exist an HTTP 404 will be returned.
 
 + Response 200 (application/json)
 
@@ -108,9 +112,10 @@ Retrieve a single api key. If the API Key ID does not exist an HTTP 404 will be 
             }
 
 ### Revoke an existing API Key [DELETE]
-
 Authentications using this API Key will fail
-after this request is made, with some small propagation delay. If the API Key ID does not exist an HTTP 404 will be returned.
+after this request is made, with some small propogation delay.
+
+If the API Key ID does not exist an HTTP 404 will be returned.
 
 + Response 204 (application/json)
 
@@ -148,7 +153,8 @@ A JSON request body with a "name" property is required.
             }
 
 ### Update the name & scopes of an API Key [PUT]
-A JSON request body with a "name" property is required. Most provide the list of all the scopes an api key should have.
+A JSON request body with a "name" property is required.
+Most provide the list of all the scopes an api key should have.
 
 + Request
 
@@ -196,9 +202,12 @@ A JSON request body with a "name" property is required. Most provide the list of
             }
 
 # Group API Key usage
-The API Keys feature adds a new "Bearer" scheme for HTTP authentication for both v3 WebAPI and the mail.send API.
+The API Keys feature adds a new "Bearer" scheme for HTTP authentication
+for both v3 WebAPI and the mail.send API.
 
-## Authentication against a /v3 API resource [/resource]
+This is an example. This endpoint does not exist.
+
+## Authentication against an EXAMPLE /v3 API resource [/resource]
 Returns HTTP 401 if authentication fails.
 
 ### Authentication [GET]
@@ -220,7 +229,7 @@ Returns HTTP 401 if authentication fails.
         }
 
 
-## Authentication against the mail.send API [/api/mail.send.json]
+## Example of authentication against the mail.send API [/api/mail.send.json]
 Returns HTTP 400 if authentication fails.
 
 ### HTTP Authentication [GET]

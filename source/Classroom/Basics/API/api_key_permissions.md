@@ -60,7 +60,7 @@ When assigning permissions to your API Key, you will be given the option to sele
 Once an API Key is assigned permissions, it will only be able to authenticate API calls that reside within the scope of those permissions.
 
 {% info %}
-When you create an API Key, you can not assign it more permissions than you currently have.
+You may not assign an API Key greater permissions than you currently have.
 {% endinfo %}
 
 {% anchor h3 %}

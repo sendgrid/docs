@@ -7,7 +7,7 @@ title: Rate Limiting
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 There are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice

@@ -7,7 +7,7 @@ title: DKIM
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 [DKIM]({{site.blog_url}}/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.

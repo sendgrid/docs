@@ -3,37 +3,39 @@ layout: page
 icon: icon-search
 weight: 1
 title: Search
-navigation: 
+navigation:
   show: false
 ---
 
 <form class="form-search" id="search">
+  <label class="floating-label is-dirty" for "query">
+    Search Docs
+  </label>
   <input class="input-large search-query" type="text" id="page-query" name="query"/>
   <input type="hidden" id="root" name="root" value="{{ site.root }}">
-  <input class="btn" type="submit"/>
+  <input class="btn btn-primary btn-small" type="submit" value="Search"/>
 </form>
-<hr/>
 <div>
    <ul class="nav nav-tabs">
       <li class="active">
           <a id="docs-tab" name="docs" href="#results" data-toggle="tab">
+            Docs
             <span id="indicator" class="circle-indicator" style="display:none;"></span>
             <span id="docs-tab-badge" class="badge"></span>
-            Documentation Results
           </a>
       </li>
       <li>
           <a id="kb-tab" name="kb" href="#kb-results" data-toggle="tab">
+            Knowledge Base
             <span id="kb-indicator" class="circle-indicator" style="display:none;"></span>
             <span id="kb-tab-badge" class="badge"></span>
-            Knowledge Base Results
           </a>
       </li>
        <li>
            <a id="blog-tab" name="blog" href="#blog-results" data-toggle="tab">
+               Blog
                <span id="blog-indicator" class="circle-indicator" style="display:none;"></span>
                <span id="blog-tab-badge" class="badge"></span>
-               Blog Results
            </a>
        </li>
   </ul>

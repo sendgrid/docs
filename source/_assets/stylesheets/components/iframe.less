@@ -1,0 +1,15 @@
+.iframe-container {
+  overflow: hidden;
+  height: calc(100% - 100px);
+  height: -o-calc(100% - 100px); /* opera */
+  height: -webkit-calc(100% - 100px); /* google, safari */
+  height: -moz-calc(100% - 100px); /* firefox */
+  width: 100%;
+  position: absolute;
+  iframe {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    display: block;
+  }
+}
