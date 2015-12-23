@@ -33,7 +33,7 @@ Lists
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-a-List-PATCH">Update a List - PATCH</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-List-DELETE">Delete a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-on-a-List-GET">List Recipients on a List - GET</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a Dingle Recipient to a List - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a single Recipient to a List - POST</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Single-Recipient-from-a-Single-List-DELETE">Delete a Single Recipient From a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-to-a-List-POST">Add Multiple Recipients To a List - POST</a></li>
 </ul>
