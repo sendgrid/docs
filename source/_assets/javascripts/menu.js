@@ -1,7 +1,7 @@
-$(function() {
-	if($('#nav-menu').length) {
+$('#nav-menu').each(function() {
+	if($(this).length) {
 		$(".collapsibleListOpen, .collapsibleListClosed").toggleClass("collapsibleListOpen collapsibleListClosed");
-		CollapsibleLists.applyTo(document.getElementById('nav-menu'));
+		CollapsibleLists.applyTo(this);
 	}
 
 	$.ajax({
@@ -20,12 +20,5 @@ $(function() {
 		if(e.target == this){
 			$(this).toggleClass("shown");
 		}
-	});
-
-});
-
-$(function(){
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
 	});
 });

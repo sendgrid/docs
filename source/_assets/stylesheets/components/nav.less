@@ -18,7 +18,7 @@
 }
 
 // Main Header
-.navbar-static-top {
+.navbar-default {
   background: @gray-light;
   border-bottom: 1px solid @gray;
   .container-fluid {
@@ -26,12 +26,16 @@
   }
   .navbar-collapse {
     .media-up(@screen-tablet, {
-      width: 325px;
+      width: 350px;
       position: absolute;
       left: 0;
       right: 0;
       top: 12px;
       margin: 0 auto;
+      &:hover {
+        cursor: pointer !important;
+        cursor: hand !important;
+      }
     });
   }
   .navbar-nav {
@@ -70,6 +74,8 @@
     width: 24px;
     height: 15px;
     position: relative;
+    background: none;
+    border: none;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -79,7 +85,7 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-      span {
+      .menu-icon {
         display: block;
         position: absolute;
         height: 3px;
@@ -122,7 +128,7 @@
     }
 
     &.open {
-      span {
+      .menu-icon {
         &:nth-child(1) {
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
@@ -140,10 +146,16 @@
           -moz-transform: rotate(-45deg);
           -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
-          top: 12px;
+          top: 13.5px;
           left: 8px;
         }
       }
     }
+  }
+  #js-sidebar-links {
+    display: none !important;
+    .media-down(@screen-tablet, {
+      display: block !important;
+    });
   }
 }
