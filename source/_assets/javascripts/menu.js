@@ -1,7 +1,7 @@
-$('#nav-menu').each(function() {
-	if($(this).length) {
+$(function() {
+	if($('#nav-menu').length) {
 		$(".collapsibleListOpen, .collapsibleListClosed").toggleClass("collapsibleListOpen collapsibleListClosed");
-		CollapsibleLists.applyTo(this);
+		CollapsibleLists.applyTo(document.getElementById('nav-menu'));
 	}
 
 	$.ajax({
