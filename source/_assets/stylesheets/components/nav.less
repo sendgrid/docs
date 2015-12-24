@@ -52,6 +52,10 @@
   }
   .nav-link {
     a {
+      line-height: 24px;
+      position: relative;
+      display: block;
+      padding: 10px 16px;
       color: @body-color;
       font-size: @font-size-small;
       font-weight: 600;
@@ -63,8 +67,30 @@
       }
     }
   }
+  #nav-menu {
+    a, .subtree-name {
+      color: @body-color;
+      line-height: 24px;
+      position: relative;
+      display: block;
+      color: @body-color;
+      font-size: @font-size-small;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .nav-list {
+      margin-left: 16px;
+    }
+    .subtree-name {
+      padding: 10px 16px 0;
+    }
+    li.active a {
+      color: @brand-primary;
+    }
+  }
   .current-page-item a {
-    color: @brand-primary;
+    color: @brand-primary !important;
   }
 
   // Mobile
@@ -152,6 +178,7 @@
       }
     }
   }
+  // This CSS media query controls the function being called in responsive-menu.js, so be careful if you change it :)
   #js-sidebar-links {
     display: none !important;
     .media-down(@screen-tablet, {
