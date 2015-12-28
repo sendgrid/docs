@@ -1,14 +1,5 @@
-
-<div class="col-md-3 col-sm-3 nopadding">
-    <div id="sidebar-header" class="visible-sm navbar-header col-md-3 sidenav-toggle" data-toggle="collapse"
-        data-target="#sidebar">
-      <h3>Menu</h3>
-      <span class="sr-only">Toggle Documentation Tree</span>
-      <span class="icon-arrow-down"></span>
-    </div>
-
-    <div class="collapse navbar-collapse nopadding" id="sidebar">
-
+<div id="sidebar" class="col-md-3 col-sm-3 hidden-sm">
+    <div id="sidebar-wrapper">
       <form class="navbar-search">
         <div class="input-group">
           <label class="floating-label" for "query">
@@ -22,5 +13,5 @@
       </form>
 
 	  <nav itemscope itemtype="http://schema.org/SiteNavigationElement">{% navigation %}</nav>
-    </div>
+  </div>
 </div>
