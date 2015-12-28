@@ -149,7 +149,7 @@ Subusers belonging to a parent user.
 + Response 204
 
 
-## Subuser Reputations [/subusers/reputations?usernames={usernames}&usernames={usernames}]
+## Subuser Reputations [/subusers/reputations?usernames={usernames}]
 
 + Parameters
 

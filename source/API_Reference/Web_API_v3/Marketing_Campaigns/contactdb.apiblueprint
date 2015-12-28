@@ -40,8 +40,7 @@ Lists
 
 Recipients
 <ul>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Single-Recipient-POST">Add a Single Recipient - POST</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-POST">Add Multiple Recipients - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Recipients-POST">Add Recipients - POST</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-Recipient-PATCH">Update a Recipient - PATCH</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-Recipient-DELETE">Delete one or more Recipients - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-GET">List Recipients - GET</a></li>
@@ -409,28 +408,7 @@ The rate at which recipients may be added to a list is limited to 1 request per 
 
 ## Recipients [/contactdb/recipients]
 
-### Add Single Recipient [POST]
-
-+ Request (application/json)
-
-     + Body
-
-            [{"email": "jones@example.com", "last_name": "Jones", "pet": "Indiana", "age": 25}]
-
-+ Response 201
-
-     + Body
-
-            {"error_count":0,"error_indices":[],"new_count":1,"persisted_recipients":["am9uZXNAZXhhbXBsZS5jb20="],"updated_count":0}
-
-+ Response 400
-
-     + Body
-
-            "" : "Returned if request body is not valid json"
-
-
-### Add Multiple Recipients [POST]
+### Add Recipients [POST]
 
 The rate at which recipients may be uploaded is limited to 3 requests every 2 seconds. Recipients may be uploaded in batches of 1000 per request. This results in a maximum upload rate of 1500 recipients per second.
 
