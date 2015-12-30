@@ -10,7 +10,7 @@ FORMAT: 1A
 # Group Global Suppressions
 Global Suppressions are email addresses that will not receive any emails.
 
-## Global Suppressions Collection [/v3/asm/suppressions/global]
+## Global Suppressions Collection [/asm/suppressions/global]
 
 ### Add a Global Suppression [POST]
 + Request (application/json)
@@ -30,7 +30,7 @@ Global Suppressions are email addresses that will not receive any emails.
 
                 {"recipient_emails":["test1@example.com","test2@example.com"]}
 
-## Global Suppression [/v3/asm/suppressions/{email}]
+## Global Suppression [/asm/suppressions/global/{email}]
 + Parameters
     + email (required, string, `test@test.com`) ... The email to delete.
 
