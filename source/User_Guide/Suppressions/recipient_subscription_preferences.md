@@ -12,7 +12,7 @@ navigation:
 
 Emails that are sent with an unsubscribe group specified with will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.
 
-If you do not specify a unsubscribe group when sending an email, the unsubscribe link will act as a global unsubscribe. This means that the recipient will no longer get any emails at all, including potentially important emails like password resets. To avoid this, create unsubscribe groups.
+If you do not specify an unsubscribe group when sending an email, the unsubscribe link will act as a global unsubscribe. This means that the recipient will no longer get any emails at all, including potentially important emails like password resets. To avoid this, create unsubscribe groups.
 
 {% anchor h2 %}
 The Unsubscribe Link
@@ -30,4 +30,8 @@ If you choose not to use substitution tags, your emails will automatically have 
 Manage Email Preferences
 {% endanchor %}
 
-You can also choose to manually add the `<%asm_preferences_raw_url%>` tag to your email. We will automatically replace that tag with a URL pointing to your [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html), wherever the tag is found in your email. Clicking this link will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in. For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+You can also choose to manually add the `<%asm_preferences_url%>` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences," wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+
+Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) without the hyperlinked text "Manage Email Preferences".
+
+For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
