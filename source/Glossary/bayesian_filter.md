@@ -7,7 +7,7 @@ title: Bayesian Filter
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 This is a statistical method for determining the probability that an email is spam by looking for the use of words or phrases commonly associated with spam email.

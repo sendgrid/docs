@@ -7,7 +7,7 @@ title: Bulk Mail Folder
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 The Bulk Mail Folder is also called the “spam” or “junk” folder, the folder where questionable email is routed. 

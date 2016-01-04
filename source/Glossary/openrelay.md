@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Open Relay
 navigation:
-  show: true
+  show: false
 seo:
   title: Open SMTP Relay
   decription: An SMTP server configured in such a way that it allows anyone on the Internet to send email through it.

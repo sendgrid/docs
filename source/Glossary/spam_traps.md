@@ -7,7 +7,7 @@ title: Spam Traps
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Spam traps, also called a “honeypots”, are email addresses created (or re-activated) by ISPs specifically to lure spammers. In many cases, the only way to acquire the address is through an automated email address harvesting process.

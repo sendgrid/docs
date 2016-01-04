@@ -7,7 +7,7 @@ title: Bulk Email Service
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A bulk email service allows you to send email communications to large lists of multiple recipients by incorporating email into your applications. You can send one email to many people, or a unique email to each person on your list with a bulk email service. Depending on the provider, you can send unique emails to each recipient by providing a template for substituting information (such as a name).

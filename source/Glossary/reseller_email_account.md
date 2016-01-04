@@ -7,7 +7,7 @@ title: Reseller Email Account
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Having a Reseller Email account means SendGrid has a formal reseller partnership with a company and all billing and usage is integrated into SendGrid.  This usually means a platform is reselling SendGrid’s product under their own platform.  

@@ -1,0 +1,64 @@
+form {
+  position: relative;
+  input[type]:not([type="submit"]), select, textarea {
+    border: none;
+    box-shadow: none;
+    background: 0 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid fade(@brand-secondary, 20%);
+    font-size: 13px;
+    color: fade(@brand-secondary, 80%);
+    width: 100%;
+    padding: 6px 24px 6px 0;
+    text-overflow: ellipsis;
+    &:focus, &:active {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      border-bottom: 2px solid @brand-primary;
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+  label {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    &.floating-label {
+      font-size: 14px;
+      font-weight: 300;
+      color: fade(@brand-secondary, 60%);
+      cursor: text;
+      z-index: -1;
+      position: absolute;
+      top: 11px;
+      left: 0;
+      &.is-focused, &.is-dirty {
+        font-size: 12px;
+        line-height: 14px;
+        top: -8px;
+        font-weight: 400;
+      }
+    }
+  }
+  &.navbar-search {
+    margin-bottom: 30px;
+    .input-btn {
+      border: none;
+      background: none;
+      position: absolute;
+      right: -4px;
+      bottom: 3px;
+      z-index: 2;
+      font-size: 14px;
+      color: fade(@brand-secondary, 30%);
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+}

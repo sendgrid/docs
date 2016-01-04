@@ -7,7 +7,7 @@ title: Complaint
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A complaint is when an email recipient identifies an email message as spam or junk by clicking the “report spam” or “mark as junk” button within their email reader. 

@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Timezones
 navigation:
-  show: true
+  show: false
 seo:
   title: Timezones
   override: true

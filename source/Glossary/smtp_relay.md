@@ -7,7 +7,7 @@ title: SMTP Relay
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An email SMTP relay service is used every time you send an email to someone outside of your address’ domain. SMTP, or Simple Mail Transfer Protocol, does the heavy lifting of sending the message. The relay service moves the message from your email server to the email server of the recipient. It’s like the handoff of the baton in a relay race.
