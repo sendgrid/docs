@@ -10,7 +10,7 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Whether you are new to the email game or are an accomplished vet, you have probably run across the idea of warming up an [IP address]({{root_url}}/Glossary/ip_address.html) to improve delivery performance. [Warming up your IP]({{root_url}}/docs/Glossary/ip_warmup.html) allows you to gradually establish a good [sender reputation]({{root_url}}/Glossary/sender_reputation.html), and is a critical step for new SendGrid users or users who are adding a new dedicated IP address to their account.
+Whether you are new to the email game or are an accomplished vet, you have probably run across the idea of warming up an [IP address]({{root_url}}/Glossary/ip_address.html) to improve delivery performance. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually establish a good [sender reputation]({{root_url}}/Glossary/sender_reputation.html), and is a critical step for new SendGrid users or users who are adding a new dedicated IP address to their account.
 
 {% anchor h2 %}
 What does it actually mean to "warm up" an IP address?
@@ -18,7 +18,7 @@ What does it actually mean to "warm up" an IP address?
 
 IP warming is the practice of gradually increasing the volume of mail sent via a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
 
-When an ISP observes email suddenly coming from a new or "cold" (i.e. recently dormant) IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending low to moderate volume (e.g. up to 1 million emails/month), eventually working your way up to larger volumes (e.g. over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your recipients treat your email.
+When an ISP observes email suddenly coming from a new or "cold" (i.e. recently dormant) IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume (e.g. up to 1 million emails/month), eventually working your way up to larger volumes (e.g. over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your recipients treat your email.
 
 It should be noted that taking this gradual, ramping approach does not guarantee a perfect sending reputation. It is still important to follow sending [best practices](https://sendgrid.com/blog/10-tips-to-keep-email-out-of-the-spam-folder/). Remember to always
 
@@ -55,7 +55,7 @@ There are three approaches to warming up a new IP address:
 
 1. Have Support place your IP address into “warmup mode” which will automatically throttle traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html). This requires the least amount of effort form the user, but will take more time before the IP address is completely warm.
 2. Manually place your IP address into warmup mode via our [API]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html) which will automatically throttle traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html). This allows you to add or remove IPs from warm up mode at your discretion.
-3. Manually warm up your IP. Please refer to our [IP Warmup Guide]({{root_url}}/assets/IPWarmupSchedule.pdf) to determine the appropriate rate at which to manually increase the amount of traffic you send through your new IP. This option makes you completely responsible for the entire IP warmup process.
+3. Manually warm up your IP. Please refer to our [IP Warmup Guide]({{root_url}}/assets/IPWarmupSchedule.pdf) to determine the appropriate rate at which to manually increase the amount of traffic to send through your new IP. This option makes you completely responsible for the entire IP warmup process.
 
 {% warning %}
 When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing, dedicated, and warm IPs. If you do not have any other warm IPs, all extra traffic will be routed through SendGrid’s Shared IP Warmup clusters. If your sending reputation is below 85, you will be unable to use these clusters, and your reputation will suffer as a result.
