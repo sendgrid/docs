@@ -16,6 +16,9 @@ navigation:
 	<a href="https://itunes.apple.com/us/app/sendgrid/id916808878?mt=8" target="_blank">
 		<img src="{{root_url}}/images/download_app_store.svg" alt="Download On The App Store" style="display:inline;border:none;" />
 	</a>
+  <a href="https://play.google.com/store/apps/details?id=com.sendgrid.android.sendgrid.app&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+    <img alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_45.png" style="display:inline" />
+  </a>
 </p>
 
 {% warning %}

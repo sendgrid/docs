@@ -16,9 +16,12 @@ navigation:
 	<a href="https://itunes.apple.com/us/app/sendgrid/id916808878?mt=8" target="_blank">
 		<img src="{{root_url}}/images/download_app_store.svg" alt="Download On The App Store" style="display:inline;border:none;" />
 	</a>
+  <a href="https://play.google.com/store/apps/details?id=com.sendgrid.android.sendgrid.app&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+    <img alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_45.png" style="display:inline" />
+  </a>
 </p>
 
-The Suppression List section allows you to view and modify your account’s [suppression lists]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html).
+The Suppression List section allows you to view and modify your account’s [suppression lists]({{root_url}}/User_Guide/Suppressions/index.html).
 
 Depending on the list you’re viewing, you can tap on an address to get more information (for instance, the bounce reason for addresses listed on the bounce list). You can also swipe left on an address to delete it off a list.
 
