@@ -84,7 +84,7 @@ This will create a new random API Key for the user with permissions assigned. A 
 
 ## API Key [/api_keys/{api_key_id}]
 ### Get an existing API Key [GET]
-Retrieve a single api key. For the permissions that can be set for this endpoint, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
+Retrieve a single api key. For a list of permissions that can be assigned to API Keys, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
 <br />
 <br />
 If the API Key ID does not exist an HTTP 404 will be returned.
@@ -114,7 +114,7 @@ If the API Key ID does not exist an HTTP 404 will be returned.
 
 ### Revoke an existing API Key [DELETE]
 Authentications using this API Key will fail
-after this request is made, with some small propagation delay. For the permissions that can be set for this endpoint, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
+after this request is made, with some small propagation delay. For a list of permissions that can be assigned to API Keys, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
 <br />
 <br />
 If the API Key ID does not exist an HTTP 404 will be returned.
@@ -135,7 +135,7 @@ If the API Key ID does not exist an HTTP 404 will be returned.
             }
 
 ### Update the name of an existing API Key [PATCH]
-A JSON request body with a "name" property is required. For the permissions that can be set for this endpoint, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
+A JSON request body with a "name" property is required. For a list of permissions that can be assigned to API Keys, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
 
 + Request
 
@@ -156,7 +156,7 @@ A JSON request body with a "name" property is required. For the permissions that
 
 ### Update the name & scopes of an API Key [PUT]
 A JSON request body with a "name" property is required.
-Most provide the list of all the scopes an api key should have. For the permissions that can be set for this endpoint, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
+Most provide the list of all the scopes an api key should have. For a list of permissions that can be assigned to API Keys, please see our [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#API-Keys).
 
 + Request
 

@@ -37,7 +37,7 @@ curl -H "Content-Type: application/json" -u sendgrid_username -X POST -d '{"name
 
 You then enter your password at the prompt.
 
-V3 API also supports the use of API Keys. API Keys allow you to use another method of authentication separate from your username and password to your account. Keys add an additional layer of security for your account. API Keys can be generated in your account - visit <a href="https://app.sendgrid.com/settings/api_keys">https://app.sendgrid.com/settings/api_keys</a>. To use keys, you must set a plain text header named "Authorization" with the contents of the header being "Bearer XXX" where XXX is your API Secret Key.
+V3 API also supports the use of API Keys. API Keys allow you to use another method of authentication separate from your account username and password. API Keys add an additional layer of security for your account and can be assigned [specific permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to limit which areas of your account they may be used to access. API Keys can be generated in your account - visit <a href="https://app.sendgrid.com/settings/api_keys">https://app.sendgrid.com/settings/api_keys</a>. To use keys, you must set a plain text header named "Authorization" with the contents of the header being "Bearer XXX" where XXX is your API Secret Key.
 
 Example header:
 
