@@ -22,11 +22,4 @@ $(function() {
 			$(this).toggleClass("shown");
 		}
 	});
-
-});
-
-$(function(){
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-	});
 });

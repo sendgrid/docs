@@ -43,6 +43,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/blocks.html">Blocks</a>
         <a href="{{root_url}}/Glossary/bounces.html">Bounces</a>
         <a href="{{root_url}}/Glossary/clicks.html">Clicks</a>
+        <a href="{{root_url}}/Glossary/ctr.html">CTR</a>
         <a href="{{root_url}}/Glossary/deliveries.html">Deliveries</a>
         <a href="{{root_url}}/Glossary/drops.html">Drops</a>
         <a href="{{root_url}}/Glossary/open_rate.html">Open Rate</a>
@@ -56,17 +57,23 @@ There are a lot of things to know about email. So, we wanted to help you know as
     </div>
     <div class="col-md-4 glossary-section">
         {% anchor h2 %}Email{% endanchor %}
+        <a href="{{root_url}}/Glossary/automated_email.html">Automated Email</a>
+        <a href="{{root_url}}/Glossary/drip_campaign.html">Drip Campaign</a>
         <a href="{{root_url}}/Glossary/header.html">Header</a>
+        <a href="{{root_url}}/Glossary/opt_in_email.html">Opt-In Email</a>
         <a href="{{root_url}}/Glossary/peer_invitations.html">Peer Initiated Invitation Campaign</a>
         <a href="{{root_url}}/Glossary/reconfirmation.html">Reconfirmation Campaign</a>
+        <a href="{{root_url}}/Glossary/triggered_email.html">Triggered Email</a>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4 glossary-section">
         {% anchor h2 %}Senders, Spam, & Spammers{% endanchor %}
+        <a href="{{root_url}}/Glossary/bayesian_filter.html">Bayesian Filter</a>
         <a href="{{root_url}}/Glossary/black_hat_sender.html">Black Hat Sender</a>
         <a href="{{root_url}}/Glossary/blacklists.html">BlackLists</a>
         <a href="{{root_url}}/Glossary/bulk_mail_folder.html">Bulk Mail Folder</a>
+        <a href="{{root_url}}/Glossary/can_spam.html">CAN-SPAM</a>
         <a href="{{root_url}}/Glossary/challenge_response.html">Challenge Response</a>
         <a href="{{root_url}}/Glossary/complaint.html">Complaint</a>
         <a href="{{root_url}}/Glossary/email_authentication.html">Email Authentication</a>
@@ -81,6 +88,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
     </div>
     <div class="col-md-4 glossary-section">
         {% anchor h2 %}SendGrid Services{% endanchor %}
+        <a href="{{root_url}}/Glossary/autoresponder.html">Autoresponder</a>
         <a href="{{root_url}}/Glossary/bulk_email_service.html">Bulk Email Service</a>
         <a href="{{root_url}}/Glossary/bulk_sender_notification.html">Bulk Sender Notification</a>
         <a href="{{root_url}}/Glossary/categories.html">Categories</a>
@@ -105,6 +113,8 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/tls.html">Transport Layer Security</a>
         <a href="{{root_url}}/Glossary/transactional_email.html">Transactional Email</a>
         <a href="{{root_url}}/Glossary/transactional_email_templates.html">Transactional Email Templates</a>
+        <a href="{{root_url}}/Glossary/triggered_actions.html">Triggered Actions</a>
+        <a href="{{root_url}}/Glossary/triggering_events.html">Triggering Events</a>
         <a href="{{root_url}}/Glossary/two_factor_authentication.html">Two Factor Authentication</a>
         <a href="{{root_url}}/Glossary/web_api.html">Web API</a>
     </div>

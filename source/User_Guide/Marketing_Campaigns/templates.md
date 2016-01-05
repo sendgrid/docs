@@ -88,7 +88,7 @@ From here, you can add  alt text, change the default height and width, and even 
 ![]({{root_url}}/images/image_library_1.png "Insert an Image into your Template")
 
 {% anchor h2 %}
-Replacement Tags
+Substitution Tags
 {% endanchor %}
 
 {% anchor h3 %}
@@ -135,6 +135,17 @@ You can insert your sender identity information into your campaigns using the fo
 **[Sender_State]** - The sender's state.
 
 **[Sender_Zip]** - The sender's zip.
+
+{% anchor h3 %}
+Substitution Tag Default Values
+{% endanchor %}
+
+You can also choose a default value for a substitution tag to be displayed in the event that there is no unique replacement value. For example, users often write "Dear `[%first_name%]`" with the intent of replacing the substitution tag with each recipient's name. However, if there is no name on file for a particular recipient, the email will read "Dear [%first_name%]" instead of "Dear John".
+
+This can be avoided by assigning a default value to a substitution tag using the syntax: `[%first_name|Valued Customer%]`
+
+Now, if no name is on record for a particular recipient, the email will read "Dear Valued Customer" instead of "Dear [%first_name%]". You may choose any value to set as the default.
+
 
 <div class="row">
     <div class="col-md-6 text-left">

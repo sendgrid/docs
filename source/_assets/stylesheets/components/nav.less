@@ -18,7 +18,7 @@
 }
 
 // Main Header
-.navbar-static-top {
+.navbar-default {
   background: @gray-light;
   border-bottom: 1px solid @gray;
   .container-fluid {
@@ -26,20 +26,25 @@
   }
   .navbar-collapse {
     .media-up(@screen-tablet, {
-      width: 325px;
+      width: 350px;
       position: absolute;
       left: 0;
       right: 0;
       top: 12px;
       margin: 0 auto;
+      &:hover {
+        cursor: pointer !important;
+        cursor: hand !important;
+      }
     });
   }
   .navbar-nav {
-    border-top: 1px solid @gray;
+    border-top: none;
     padding: 30px 0;
+    margin: 0;
     .media-up(@screen-tablet, {
-      border-top: none;
       padding: 0;
+      margin-top: 2px;
     });
   }
   .navbar-buttons {
@@ -48,6 +53,10 @@
   }
   .nav-link {
     a {
+      line-height: 24px;
+      position: relative;
+      display: block;
+      padding: 10px 16px;
       color: @body-color;
       font-size: @font-size-small;
       font-weight: 600;
@@ -59,8 +68,37 @@
       }
     }
   }
+  #logo {
+  margin-top: 21px;
+  display: inline-block;
+  width: 120px;
+  height: 26px;
+  margin-left: 16px;
+}
+  #nav-menu {
+    a, .subtree-name {
+      color: @body-color;
+      line-height: 24px;
+      position: relative;
+      display: block;
+      color: @body-color;
+      font-size: @font-size-small;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .nav-list {
+      margin-left: 16px;
+    }
+    .subtree-name {
+      padding: 10px 16px 0;
+    }
+    li.active a {
+      color: @brand-primary;
+    }
+  }
   .current-page-item a {
-    color: @brand-primary;
+    color: @brand-primary !important;
   }
 
   // Mobile
@@ -70,6 +108,8 @@
     width: 24px;
     height: 15px;
     position: relative;
+    background: none;
+    border: none;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -79,7 +119,7 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-      span {
+      .menu-icon {
         display: block;
         position: absolute;
         height: 3px;
@@ -122,7 +162,7 @@
     }
 
     &.open {
-      span {
+      .menu-icon {
         &:nth-child(1) {
           -webkit-transform: rotate(45deg);
           -moz-transform: rotate(45deg);
@@ -140,10 +180,17 @@
           -moz-transform: rotate(-45deg);
           -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
-          top: 12px;
+          top: 13.5px;
           left: 8px;
         }
       }
     }
+  }
+  // This CSS media query controls the function being called in responsive-menu.js, so be careful if you change it :)
+  #js-sidebar-links {
+    display: none !important;
+    .media-down(@screen-tablet, {
+      display: block !important;
+    });
   }
 }
