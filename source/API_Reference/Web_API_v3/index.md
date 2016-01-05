@@ -357,6 +357,9 @@ successful Web API requests.
     <td>PATCH</td><td>The updated resource object is returned</td>
   </tr>
   <tr>
+    <td>PUT</td><td>The updated resource object is returned</td>
+  </tr>
+  <tr>
     <td>DELETE</td><td>No content is returned</td>
   </tr>
   <tr>
