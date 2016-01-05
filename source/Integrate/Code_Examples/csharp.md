@@ -13,23 +13,17 @@ We recommend using SendGrid C#, our client library, <a href="https://github.com/
 {% anchor h2 %}Using SendGrid's C# Library{% endanchor %}
 {% codeblock lang:csharp %}
 // using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
-using System;
-using System.Net;
+using System.Net.Http;
 using System.Net.Mail;
-using SendGridMail;
-using SendGridMail.Transport;
+
+var myMessage = new SendGrid.SendGridMessage();
+myMessage.AddTo("test@sendgrid.com");
+myMessage.From = new MailAddress("you@youremail.com", "First Last");
+myMessage.Subject = "Sending with SendGrid is Fun";
+myMessage.Text = "and easy to do anywhere, even with C#";
  
-SendGrid mail = SendGrid.GetInstance();
-mail.From = new MailAddress("you@youremail.com");
-mail.AddTo("test@sendgrid.com");
-mail.Subject = "Sending with SendGrid is Fun";
-mail.Text = "and easy to do anywhere, even with C#";
- 
-var credentials = new NetworkCredential(api_user, api_key);
-var transportWeb = new Web(credentials);
-transportWeb.DeliverAsync(mail);
-// If developing a Console Application, use the following
-// transportWeb.DeliverAsync(mail).Wait();
+var transportWeb = new SendGrid.Web("SENDGRID_APIKEY");
+transportWeb.Deliver(myMessage).Wait();
 {% endcodeblock %}
 
 {% anchor h2 %}
