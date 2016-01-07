@@ -184,11 +184,12 @@ C#
 
 -   [C# Webhooks](https://github.com/mirajavora/sendgrid-webhooks) - *Community contributed library*
 
-{% anchor h3 -Django-Webhooks %}
-Django 
+{% anchor h3 -Python-Webhooks %}
+Python
 {% endanchor %}
 
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
+-   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming Sendgrid Webhook events in Pyramid apps
 
 {% anchor h3 -Ruby-Webhooks %}
 Ruby 
