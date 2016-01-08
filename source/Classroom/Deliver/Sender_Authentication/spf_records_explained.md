@@ -25,7 +25,7 @@ In this example we have a unique SPF record for the authorization of outbound ma
 
 Do not create&nbsp;more than one SPF1 record for a given domain. In this case you will want to merge the additional SPF records into one SPF record.
 
-You also cannot have&nbsp; [more than 10 DNS lookups](http://support.sendgrid.com/entries/251819-SPF-Don-t-Exceed-Ten-DNS-Lookups-)&nbsp;in your SPF record.
+You also cannot have&nbsp; [more than 10 DNS lookups]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html)&nbsp;in your SPF record.
 
 &nbsp;
 
@@ -45,9 +45,9 @@ _v=spf1 a mx&nbsp;_ **_i_** _nclude:\_spf.google.com&nbsp;include:spf.protection
 
 **Don't want to include&nbsp;another hostname&nbsp;lookup?&nbsp;**
 
-If you would rather not include Sendgrid's SPF hostname lookup in your record, or perhaps you just have&nbsp; [too many already](https://sendgrid.zendesk.com/hc/en-us/articles/200185168-SPF-Don-t-Exceed-Ten-DNS-Lookups-), you can also choose to give permission to a specific IP address to send mail for your domain. This is accomplished using the ip4 mechanism.
+If you would rather not include Sendgrid's SPF hostname lookup in your record, or perhaps you just have&nbsp; [too many already]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html), you can also choose to give permission to a specific IP address to send mail for your domain. This is accomplished using the ip4 mechanism.
 
-If you have a Silver or higher level package, you can choose to specify your [dedicated IP address](https://sendgrid.zendesk.com/hc/en-us/articles/200181978-What-is-my-sending-IP-address-) as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within Sendgrid for that domain. An example of such an include looks like this:&nbsp;
+If you have a Pro 100K or higher level package, you can choose to specify your [dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html) as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within Sendgrid for that domain. An example of such an include looks like this:&nbsp;
 
 _v=spf1 a mx i__nclude:\_spf.google.com&nbsp;include:spf.protection.outlook.com ip4:12.34.56.78 -all_
 
@@ -56,4 +56,3 @@ If you wish to add multiple ip4 lookups(if you have an account that sends from m
 &nbsp;
 
 For more information on SPF best practices and syntax, check out&nbsp; [www.openspf.org](http://www.openspf.org/)
-

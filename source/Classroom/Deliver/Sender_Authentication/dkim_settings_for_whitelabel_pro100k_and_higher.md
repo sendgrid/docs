@@ -15,7 +15,7 @@ In order to help you get the best deliverability possible as well as ensure you 
 
 &nbsp;
 
-First, the dedicated IP(s) associated with your account must be [Whitelabeled](http://support.sendgrid.com/entries/21195838-whitelabel-why-do-i-need-to-make-dns-changes). If you are unsure about your Whitelabel status, go ahead and check the [SendGrid Whitelabel Wizard](http://sendgrid.com/whitelabel). If your IP Is Whitelabeled you are ready to configure the DKIM App.
+First, the dedicated IP(s) associated with your account must be [Whitelabeled]({{root_url}}/Classroom/Deliver/Delivery_Introduction/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html). If you are unsure about your Whitelabel status, go ahead and check the [SendGrid Whitelabel Wizard](http://sendgrid.com/whitelabel). If your IP Is Whitelabeled you are ready to configure the DKIM App.
 
 &nbsp;
 

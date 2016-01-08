@@ -15,6 +15,6 @@ navigation:
 
 That said, it's still acceptable&nbsp;to send "on behalf" of other domains, but it's not best practice.&nbsp;
 
-Our recommendation would is to create a [subuser account](http://support.sendgrid.com/hc/en-us/articles/200181918-What-are-Subusers-), purchase&nbsp;an [additional IP](http://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account), and [whitelabel your new subuser](http://support.sendgrid.com/hc/en-us/articles/200181928-Creating-Whitelabeling-A-Subuser-To-A-New-Sending-Domain) with each&nbsp;new domain you want to use.
+Our recommendation would is to create a [subuser account]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html), purchase&nbsp;an [additional IP]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html), and [whitelabel your new subuser](http://support.sendgrid.com/hc/en-us/articles/200181928-Creating-Whitelabeling-A-Subuser-To-A-New-Sending-Domain) with each&nbsp;new domain you want to use.
 
 The general rule of thumb is to have one specific account and one specific IP for each domain you'd like to send from.&nbsp;
