@@ -37,7 +37,7 @@ Now that your integration has the new credentials, go ahead and deploy your chan
 
 **Step 4 - Update The Original Credentials**
 
-Finally, once your integration is fully using your new credentials, you can go and [reset your password](http://support.sendgrid.com/hc/en-us/articles/203893828) for your original credentials without interrupting your mail flow.
+Finally, once your integration is fully using your new credentials, you can go and [reset your password]({{root_url}}/Classroom/Basics/Account/how_do_i_reset_my_password.html) for your original credentials without interrupting your mail flow.
 
 &nbsp;
 
