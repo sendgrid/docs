@@ -27,7 +27,7 @@ How can you prevent this from happening:
 
 - If an address has **not engaged with your emails in over six months** , they are probably not interested in or expecting to receive your emails. &nbsp; **Remove these addresses**. &nbsp;They are doing you more harm than good at this point.  
 
-- The best way to make sure your recipients are engaged is to **make sure they have explicitly opted in**. &nbsp;Seems obvious? &nbsp;Well, we hope so :) &nbsp; [Double opt in]({{root_url}}/Classroom//Glossary/opt_in_email.html) is preferable as it verifies you are sending to a legitimate address, and confirms that your subscriber wants to receive your email.  
+- The best way to make sure your recipients are engaged is to **make sure they have explicitly opted in**. &nbsp;Seems obvious? &nbsp;Well, we hope so :) &nbsp; [Double opt in]({{root_url}}/Glossary/opt_in_email.html) is preferable as it verifies you are sending to a legitimate address, and confirms that your subscriber wants to receive your email.  
 
 - **Re-opt in**. Don’t rely on them to unsubscribe. Using our [Event API](http://sendgrid.com/docs/API_Reference/Webhooks/event.html), check to see if they are clicking or opening your mail. If not, send them a winback&nbsp;email and follow these [best practices]({{root_url}}/Glossary/reconfirmation.html) regarding your reconfirmation campaign.   
 
