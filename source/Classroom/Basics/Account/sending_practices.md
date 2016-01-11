@@ -9,7 +9,7 @@ navigation:
   show: true
 ---
 
-As you begin to use your SendGrid account there are some important things to remember. For example, Lite and [Free]({{site.site_url}}/free?mc=SendGrid%20Documentation) packages have limitations in the amount of email that can be sent each day. Free accounts are simply limited to 12,000 emails per month. Below you will find a breakdown of the Lite package and it's limitations.
+As you begin to use your SendGrid account there are some important things to remember. For example, Lite and [Free]({{site.site_url}}/free?mc=SendGrid%20Documentation) packages have limitations in the amount of email that can be sent each day. Free accounts are limited to 12,000 emails per month. Below you will find a breakdown of the Lite package and it's limitations.
 
 Additionally, there are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice referred to as throttling. Throttling in terms of email means that a recipient mail server has accepted all the mail it is willing to accept from your IP for a certain period of time.
 
