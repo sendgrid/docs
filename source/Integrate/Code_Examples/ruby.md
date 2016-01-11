@@ -10,10 +10,13 @@ navigation:
 
 {% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}
 {% codeblock lang:ruby %}
-# using SendGrid's Ruby Library - https://github.com/sendgrid/sendgrid-ruby
+# using SendGrid's Ruby Library
+# https://github.com/sendgrid/sendgrid-ruby
 require 'sendgrid-ruby'
- 
-client = SendGrid::Client.new(api_user: api_user, api_key: api_key)
+
+sendgrid = SendGrid::Client.new do |c|
+  c.api_key = 'SENDGRID_APIKEY'
+end
  
 email = SendGrid::Mail.new do |m|
   m.to      = 'test@sendgrid.com'
@@ -22,7 +25,7 @@ email = SendGrid::Mail.new do |m|
   m.html    = 'and easy to do anywhere, even with Ruby'
 end
  
-client.send(email)
+sendgrid.send(email)
 {% endcodeblock %}
 
 This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.
