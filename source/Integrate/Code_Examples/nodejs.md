@@ -9,8 +9,9 @@ navigation:
 
 {% anchor h2 %} using SendGrid's Node.js Library {% endanchor %}
 {% codeblock lang:js %}
-// using SendGrid's Node.js Library - https://github.com/sendgrid/sendgrid-nodejs
-var sendgrid = require("sendgrid")(api_user, api_key);
+// using SendGrid's Node.js Library
+// https://github.com/sendgrid/sendgrid-nodejs
+var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
 var email = new sendgrid.Email();
  
 email.addTo("test@sendgrid.com");

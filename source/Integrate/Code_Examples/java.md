@@ -9,15 +9,13 @@ navigation:
 
 {% anchor h2 %} Using SendGrid's Java Library {% endanchor %}
 {% codeblock lang:java %}
-// using SendGrid's Java Library - https://github.com/sendgrid/sendgrid-java
+// using SendGrid's Java Library
+// https://github.com/sendgrid/sendgrid-java
 import com.sendgrid.*;
  
 public class SendGridExample {
   public static void main(String[] args) {
-    
-    SendGrid sendgrid = new SendGrid(api_key); // recommended
-    // OR
-    SendGrid sendgrid = new SendGrid(api_user, api_password);
+    SendGrid sendgrid = new SendGrid("SENDGRID_APIKEY");
  
     SendGrid.Email email = new SendGrid.Email();
  

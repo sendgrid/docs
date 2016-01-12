@@ -25,17 +25,3 @@ Settings
 **Status** - On or Off
 
 **New Relic License Key** - The license key provided with your New Relic account.
-
-{% anchor h2 %}
-sendwithus
-{% endanchor %}
-
-Segment contacts, A/B test emails, and more with [sendwithus](https://www.sendwithus.com/) while sending through your SendGrid account. For more information, please see our [Setting up SendGrid with sendwithus]({{root_url}}/Classroom/Track/Collecting_Data/sendwithus.html).
-
-{% anchor h3 %}
-Settings
-{% endanchor %}
-
-**Status** - On or Off
-
-**sendwithus API Key** - Your API key from your sendwithus account.
