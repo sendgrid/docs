@@ -37,7 +37,7 @@ _You may want to consider the OEM process if the following describes your situat
 2. If you want to send messages using SendGrid services on behalf of a brand new domain(s). And you do not mind that the recipients will know the messages are coming from your organization based on your white label.&nbsp;
 3. If you want to send messages using SendGrid services on behalf of a brand new domain(s). And you want to purchase additional IP addresses, and white label them to your customer's domains. The message recipients will see that the&nbsp;messages&nbsp;are coming from your customer's domain.&nbsp;
 
-_\*NOTE\* For additional&nbsp;information&nbsp;regarding sub-users and scenarios, please view our KB article [here](http://support.sendgrid.com/entries/21196048-What-are-Subusers-)_
+_\*NOTE\* For additional&nbsp;information&nbsp;regarding sub-users and scenarios, please see [What are subusers?]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html)_
 
 # &nbsp;
 

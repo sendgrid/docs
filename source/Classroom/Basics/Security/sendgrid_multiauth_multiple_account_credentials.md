@@ -17,7 +17,7 @@ navigation:
 
 **Email** - The ability to send email via SMTP Relay or using the [Send Mail function of the Web API](http://sendgrid.com/docs/API_Reference/Web_API/mail.html)
 
-**API** - The ability to interact with your account through all [SendGrid APIs](http://support.sendgrid.com/entries/21197488-what-are-the-sendgrid-apis-and-what-do-they-do)&nbsp;excluding the Send Mail function of the Web API
+**API** - The ability to interact with your account through all [SendGrid APIs]({{root_url}}/Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html)&nbsp;excluding the Send Mail function of the Web API
 
 **Web** - Access to your account's SendGrid portal. This includes all aspect of the login portal including account settings and billing information
 

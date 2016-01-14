@@ -38,4 +38,4 @@ If you have a Silver package or higher and you have Whitelabeled your sending IP
 
 &nbsp;
 
-If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here](http://support.sendgrid.com/hc/en-us/articles/204074166-Click-tracking-links-have-stopped-working-) for more troubleshooting tips.
+If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here]({{root_url}}/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html) for more troubleshooting tips.

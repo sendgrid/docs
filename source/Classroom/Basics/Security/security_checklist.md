@@ -42,7 +42,7 @@ SendGrid doesn’t compromise when it comes to compromised accounts and neither 
 
 8) &nbsp;Are there any rogue web scripts/forms on your server?  
 
-9) &nbsp;If you have a website sending emails through SendGrid, are there checks in place to prevent visitors (or bots) from sending email in large volumes or in any way that is abusive? &nbsp;If you have an email registration form, [here](http://support.sendgrid.com/entries/21856326-keeping-your-registration-form-secure) are some helpful tips to keep your form secure.   
+9) &nbsp;If you have a website sending emails through SendGrid, are there checks in place to prevent visitors (or bots) from sending email in large volumes or in any way that is abusive? &nbsp;If you have an email registration form, [here]({{root_url}}/Classroom/Basics/Security/keeping_your_registration_form_secure.html) are some helpful tips to keep your form secure.
 
 10) &nbsp;Do you have a mail server which routes outbound mail through SendGrid? &nbsp;Is it misconfigured as an open relay?
 
