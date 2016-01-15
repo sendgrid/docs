@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Global Suppressions
+title: Global Unsubscribes
 weight: 70
 navigation:
   show: true
 ---
 FORMAT: 1A
 
-# Group Global Suppressions
-Global Suppressions are email addresses that will not receive any emails.
+# Group Global Unsubscribes
+Global Unsubscribes are email addresses that will not receive any emails.
 
-## Global Suppressions Collection [/asm/suppressions/global]
+## Global Unsubscribes Collection [/asm/suppressions/global]
 
-### Add a Global Suppression [POST]
+### Add email addresses to the Global Unsubscribes collection [POST]
 + Request (application/json)
 
     + Body
@@ -30,22 +30,28 @@ Global Suppressions are email addresses that will not receive any emails.
 
                 {"recipient_emails":["test1@example.com","test2@example.com"]}
 
-## Global Suppression [/asm/suppressions/{email}]
+## Global Unsubscribes [/asm/suppressions/{email}]
 + Parameters
     + email (required, string, `test@test.com`) ... The email to delete.
 
-### Retrieve a Global Suppression [GET]
+### Determine if an email address belongs to the Global Unsubscribes collection [GET]
+
+If the email address belongs to the Global Unsubscribes collection:
+
 + Response 200 (application/json)
 
     + Body
 
-                {
-                  "recipient_emails": [
-                    "test1@example.com",
-                    "test2@example.com"
-                  ]
-                }
+                { "recipient_email": "{email}" }
 
-### Delete a Global Suppression [DELETE]
+If the email address does not belongs to the Global Unsubscribes collection:
+
++ Response 200 (application/json)
+
+    + Body
+
+                { }
+
+### Remove an email address from the Global Unsubscribes collection [DELETE]
 
 + Response 204 (application/json)
