@@ -23,7 +23,7 @@ The SendGrid APIs allow you to interact with our system in a number of different
 
 &nbsp;
 
-**Event Webhook** – The Event Webhook gives you full sending logs from the moment of implementation and allows you to create reports of activity and statistics far beyond what is provided on sendgrid.com. The Event Webhook requires you to setup a URL where we HTTP POST your account activity as it takes place.&nbsp;Automated systems can also be built to take action when specific events, such as an Open, Click or Unsubscribe, occur. Please visit our [SendGrid Event Webhook&nbsp;Documentation](http://sendgrid.com/docs/API_Reference/Webhooks/event.html) page for more information. We also have a great article about [why setting up the SendGrid Event Webhook for your account is an excellent idea](http://support.sendgrid.com/entries/21233621-why-event-api).
+**Event Webhook** – The Event Webhook gives you full sending logs from the moment of implementation and allows you to create reports of activity and statistics far beyond what is provided on sendgrid.com. The Event Webhook requires you to setup a URL where we HTTP POST your account activity as it takes place.&nbsp;Automated systems can also be built to take action when specific events, such as an Open, Click or Unsubscribe, occur. Please visit our [SendGrid Event Webhook&nbsp;Documentation](http://sendgrid.com/docs/API_Reference/Webhooks/event.html) page for more information. We also have a great article about [why setting up the SendGrid Event Webhook for your account is an excellent idea]({{root_url}}/Classroom/Basics/API/why_event_api.html).
 
 &nbsp;
 

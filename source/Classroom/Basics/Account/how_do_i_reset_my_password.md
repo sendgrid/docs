@@ -56,15 +56,15 @@ Forgot your password? No problem.&nbsp;
 
 **3. More Options** &nbsp;
 
-**Want more security?** [Consider enabling 2-factor Authentication.](http://support.sendgrid.com/hc/en-us/articles/203891718-Setting-up-2-factor-Authentication)
+**Want more security?** [Consider enabling 2-factor Authentication.]({{root_url}}/Classroom/Basics/Security/setting_up_2_factor_authentication.html)
 
-**Need to&nbsp;reset your password without breaking your current integration?** [Learn how here.](http://support.sendgrid.com/hc/en-us/articles/205649967)
+**Need to&nbsp;reset your password without breaking your current integration?** [Learn how here.]({{root_url}}/Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html)
 
-**Can't access the email address for your Sendgrid account? &nbsp;** [Find out how to regain access here.](http://support.sendgrid.com/hc/en-us/articles/204982878)
+**Can't access the email address for your SendGrid account? &nbsp;** [Find out how to regain access here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html)
 
-**Don't know your username?** &nbsp; [Get clues here.](http://support.sendgrid.com/hc/en-us/articles/205645617-Don-t-know-your-username-)
+**Don't know your username?** &nbsp; [Get clues here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/dont_know_your_username.html)
 
-**Still can't log in?** [No worries, read more options here.](http://support.sendgrid.com/hc/en-us/articles/204192663-Can-t-log-in-to-your-account-)
+**Still can't log in?** [No worries, read more options here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html)
 
 **Do you have a reseller account?** &nbsp;Look for specific communication from your reseller. &nbsp;Many partners like Heroku, Appdirect, Engineyard, Softlayer, and Azure will complete this update with no action required from you.
 

@@ -221,6 +221,7 @@ FORMAT: 1A
 
 ### Update Spam Check Settings [PATCH]
 ```max_score``` should be between 1 and 10 inclusively
+```url``` can be url or email
 
 + Request (application/json)
 
@@ -228,18 +229,19 @@ FORMAT: 1A
 
             {
               "enabled": true,
-              "url": "url", // can be url or email
+              "url": "url",
               "max_score": 5
             }
 
 + Response 200 (application/json)
 ```max_score``` should be between 1 and 10 inclusively
+```url``` can be url or email
 
     + Body
 
             {
               "enabled": true,
-              "url": "url", // can be url or email
+              "url": "url",
               "max_score": 5
             }
 
@@ -253,7 +255,7 @@ FORMAT: 1A
 
             {
               "enabled": true,
-              "html_content": "..."
+              "html_content": "<% body %>"
             }
 
 ### Update Template Settings [PATCH]
@@ -264,7 +266,7 @@ FORMAT: 1A
 
             {
               "enabled": true,
-              "html_content": "..."
+              "html_content": "<% body %>"
             }
 
 + Response 200 (application/json)
@@ -273,7 +275,7 @@ FORMAT: 1A
 
             {
               "enabled": true,
-              "html_content": "..."
+              "html_content": "<% body %>"
             }
 
 ## Bounce Purge Settings Resource [/mail_settings/bounce_purge]

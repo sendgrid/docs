@@ -15,4 +15,4 @@ If you feel that a particular domain or blacklisting service is blocking your em
 
 &nbsp;
 
-You may also want to read through our&nbsp; [SendGrid Deliverability 101](http://support.sendgrid.com/entries/21194967-deliverability-101)&nbsp;documentation for best sending practices and tips.
+You may also want to read through our&nbsp; [SendGrid Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html)&nbsp;documentation for best sending practices and tips.

@@ -17,7 +17,7 @@ To setup 2-Factor Authentication, simply log in to your account and visit the&nb
 
 A few things to note;
 
-- [To turn off 2FA, you will need to contact us,](http://support.sendgrid.com/hc/en-us/articles/204232503-How-can-I-turn-off-2-factor-authentication-)&nbsp;there is not a way via the UI.
+- [To turn off 2FA, you will need to contact us,]({{root_url}}/Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html)&nbsp;there is not a way via the UI.
 - 2- Factor can only go to 1 phone so multiple&nbsp;credential&nbsp;users will need to have access to the main phone.&nbsp;
 - Enabling this feature will require you to verify a 6 digit code SMSed to your phone each time you log in to Sendgrid.com.&nbsp;This&nbsp;does not effect API&nbsp;access.
 

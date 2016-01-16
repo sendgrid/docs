@@ -17,7 +17,7 @@ You can go into the campaign stats for a campaign anytime after your campaign st
 
 **I chose to manually pick the winner of my A/B test campaign. How will I know when to do that?**
 
-You’ll get an email on the time-out of your A/B test duration, reminding you to go into the UI and pick your winner. You can also choose the winner at any time within that duration if one variation vastly outstrips the other.
+You’ll get an email on the time-out of your A/B test duration, reminding you to go into the UI and pick your winner. You can also choose the winner at any time within that duration if one variation vastly outperforms the other.
 
 **Can I change the winner method after I’ve started sending my A/B test campaign?**
 

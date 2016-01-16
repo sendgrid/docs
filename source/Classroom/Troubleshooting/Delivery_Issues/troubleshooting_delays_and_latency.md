@@ -18,7 +18,7 @@ Is it us? Is it you? Check our [Status Page](http://status.sendgrid.com/) for mo
 **1. Check these suggestions first:**
 
 1. If you are integrated with Sendgrid using code, we _highly_&nbsp;recommend using&nbsp;the official Sendgrid libraries available on&nbsp;our [Github account](https://github.com/sendgrid). These are written&nbsp;with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
-2. You can use our&nbsp; [SMTPAPI](https://sendgrid.com/docs/API_Reference/SMTP_API/index.html)&nbsp;to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP](http://support.sendgrid.com/hc/en-us/articles/200328026-Recommended-SMTP-settings) sending&nbsp;as well as [HTTP](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)(API) sending.&nbsp;
+2. You can use our&nbsp; [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html)&nbsp;to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html) sending&nbsp;as well as [HTTP](https://sendgrid.com/docs/API_Reference/Web_API/mail.html)(API) sending.&nbsp;
 3. Lastly, you can try to open additional&nbsp;connections from your end: Generally, we recommend a maximum of&nbsp;10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
 
 **2. None of those helped, what else can I try?**
@@ -59,7 +59,7 @@ Keep in mind that many&nbsp;modern network nodes will de-prioritize ICMP packets
 
 **Google Header Analyzer**
 
-Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular&nbsp;location. For more information on how to grab the original headers from an email, [check here.](http://support.sendgrid.com/hc/en-us/articles/203965613-How-do-I-check-the-headers-raw-source-of-an-email-)
+Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular&nbsp;location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html)
 
 1. Grab the headers of the message you want to analyze. Make sure you just grab the received headers, which is everything above the first content boundary.
 

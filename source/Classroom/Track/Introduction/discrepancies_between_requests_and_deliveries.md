@@ -17,7 +17,7 @@ A low percentage of requests versus delivered emails in your email statistics pa
 
 **Dropped Email**
 
-1. The most common problem is sending to email addres(ses) that have landed in one of your **SendGrid-managed Email List** s [(Reference Item 2 of this post](http://support.sendgrid.com/entries/122303-help-my-emails-aren-t-being-delivered)). The bounce list is most often the culprit and SendGrid automatically **drops** &nbsp;emails sent to addresses that are on your SendGrid-managed email lists. Check your **repeat bounces** statistic and consider either removing these emails from your email list or the SendGrid bounce table.
+1. The most common problem is sending to email addresses that have landed in one of your **SendGrid-managed Email List** s [(Reference Item 2 of this post]({{root_url}}/Classroom/Deliver/Undeliverable_Email/help_my_emails_arent_being_delivered.html). The bounce list is most often the culprit and SendGrid automatically **drops** &nbsp;emails sent to addresses that are on your SendGrid-managed email lists. Check your **repeat bounces** statistic and consider either removing these emails from your email list or the SendGrid bounce table.
 
 &nbsp;
 
