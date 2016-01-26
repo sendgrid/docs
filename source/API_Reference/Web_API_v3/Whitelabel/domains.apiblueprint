@@ -294,7 +294,7 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 ### Default Domain [GET]
 
 + Parameters
-    + domain (optional, string, `em.example.com`) ... Sender domain to find a domain whitelabel match against.
+    + domain (optional, string, `em.example.com`) ... The sending domain against which to compare the domain whitelabel.
 
 + Response 200 (application/json)
 
