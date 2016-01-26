@@ -15,10 +15,11 @@ navigation:
 <p style="text-align:center">
 	<a href="https://itunes.apple.com/us/app/sendgrid/id916808878?mt=8" target="_blank">
 		<img src="{{root_url}}/images/download_app_store.svg" alt="Download On The App Store" style="display:inline;border:none;" />
-	</a>
-  <a href="https://play.google.com/store/apps/details?id=com.sendgrid.android.sendgrid.app&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
-    <img alt="Get it on Google Play" src="http://developer.android.com/images/brand/en_generic_rgb_wo_45.png" style="display:inline" />
-  </a>
+	</a><sup>1</sup>
+<a href="https://play.google.com/store/apps/details?id=com.sendgrid.android.sendgrid.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+	<img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />
+</a>	
+<sup>2</sup>
 </p>
 
 Here you can view the real-time logs of all [email activity]({{root_url}}/User_Guide/email_activity.html) from your account in the last 7 days. You can also narrow your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options,” and selecting only certain events to show.
@@ -26,3 +27,10 @@ Here you can view the real-time logs of all [email activity]({{root_url}}/User_G
 Tapping on any event will reveal more information, such as server responses or user agents.
 
 Finally, you can export your email activity by selecting the “More” button in the top right corner and selecting “Export.” This will create a CSV that you can open in another app on your device.
+
+<p class="small">
+  <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
+</p>
+<p class="small">
+  <sup>2</sup>Android, Google Play, and the Google Play logo are trademarks of Google Inc.
+</p>
