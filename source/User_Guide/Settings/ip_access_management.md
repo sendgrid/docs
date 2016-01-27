@@ -21,7 +21,7 @@ There is no limit on how many IP addresses you can whitelist.
 {% endinfo %}
 
 {% warning %}
-It is possible to remove your own IP address from your whitelist, thus preventing yourself from having access to your own account. While we are able to restore your access, we do require that you provide thorough proof of your identify and ownership of your account. We take the security of your account very seriously, and wish to prevent any "bad actors" from maliciously gaining access to your account.
+It is possible to remove your own IP address from your whitelist, thus blocking your own access to your account. While we are able to restore your access, we do require thorough proof of your identify and ownership of your account. We take the security of your account very seriously, and wish to prevent any "bad actors" from maliciously gaining access to your account.
 
 Your current IP is clearly displayed to help prevent you from accidentally removing it from the whitelist.
 {% endwarning %}
@@ -54,12 +54,20 @@ To manually whitelist one or more IP addresses, click the Add IP Addresses butto
 
 You will see a dialogue box presenting you with a blank form in which you may enter a single IP address or multiple IP addresses separated by a space, comma or on separate lines.
 
-![]({{root_url}}/images/add_ip_to_whitelist.png)
+*INSERT NEW SCREENSHOT HERE*
 
-To enter a range of IP addresses, simply enter the first IP address followed by a `/` and then the last two digits of the last IP in the range. For example, the range `25.203.44.234/24` would include the following IPs: `25.203.44.234`, `25.203.44.235`, `25.203.44.236`, `25.203.44.237`, `25.203.44.238`, `25.203.44.239`, and `25.203.44.24`.
+To enter a range of IP addresses, simply enter the first IP address followed by a `/` and then the last two digits of the last IP in the range. For example, the range `25.203.44.234/24` would include the following IPs:
+
+* `25.203.44.234`
+* `25.203.44.235`
+* `25.203.44.236`
+* `25.203.44.237`
+* `25.203.44.238`
+* `25.203.44.239`
+* `25.203.44.24`.
 
 To enter a range of IP addresses using a “wildcard”, simply add an asterisk to the end of the IP. For example, `25.203.44.*` would include all IPs that begin with `25.203.44`.
 
-You may also assign a nickname to an IP address by including the nickname inside square brackets directly after the IP. For example, `68.156.291.21[Los Angeles Office]` would assign the nickname “Los Angeles Office” to the IP `68.156.291.21`.
-
 After entering the IP addresses you would like to whitelist, click Save.
+
+For additional information about using IP Access Management through our API, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/ip_access_management.html).

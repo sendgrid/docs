@@ -9,7 +9,7 @@ FORMAT: 1A
 
 # IP Access Management
 
-IP Access Management is a set of endpoints to control IP whitelisting.
+IP Access Management is a set of endpoints to control IP whitelisting. For some additional information about IP Access Management, you can read about it in our [User Guide]({{root_url}}/User_Guide/Settings/ip_access_management.html).
 
 # Group Activity
 
