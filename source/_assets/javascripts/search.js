@@ -47,7 +47,14 @@ function search(query) {
         root = root.slice(0, -1);
 
       if(data.matches == 0) {
-        $('div#results').append('<h2>No Documentation Results Found</h2>');
+        $('div#results').append('<p>No results found in Documentation.</p>\
+        <p>Suggestions:</p>\
+        <ul>\
+        <li>Make sure all keywords are spelled correctly.</li>\
+        <li>Try different keywords.</li>\
+        <li>Try more general keywords.</li>\
+        <li>Try fewer keywords.</li>\
+        </ul>');
         $('#docs-tab-badge').text('0');
       } else {
         $('#docs-tab-badge').text(data.matches);
@@ -55,68 +62,20 @@ function search(query) {
 
       $.each(data.results, function(index, result) {
         $('div#results').append('<div class="result">\
-            <p><a class="title" href="' + root + result.docid + '">' + result.title + '</a><br/>\
-        <a href="' + root + result.docid + '"\><small>' + root + result.docid + '</small></a><br/>\
-            ' + result.snippet_text + '</p>\
-        <br/></div>')
+            <a class="title" href="' + root + result.docid + '"><h3>' + result.title + '</h3></a>\
+            <p>' + result.snippet_text + '</p>\
+        </div>')
       });
     })
 
     .fail(function(){
       $('div#results').empty();
-      $('div#results').append('<h2><div class="alert alert-danger">Documentation Search Failed! Please try again.</div></h2>');
+      $('div#results').append('<p>Documentation search failed :( Please try again.</p>');
     })
 
     .always(function(){
       $('#indicator').hide();
     });
-
-
-  var token = "222d9f6a86c97a5fe1d024dd258a2fc919fe7cc847900751bed9d64ce333510e";
-  var kb_result =
-    $.ajax({
-      url: 'https://sendgrid.zendesk.com/api/v2/help_center/articles/search.json?query=' + encodeURIComponent(query),
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
-    })
-    .done(function(data){
-      $('div#kb-results').empty();
-
-      data = $.grep(data.results, function(result){ return result.section_id!='200050018' } );
-
-      if(data.length == 0) {
-        $('div#kb-results').append('<h2>No Knowledge Base Results Found</h2>');
-        $('#kb-tab-badge').text('0');
-      } else {
-        $('#kb-tab-badge').text(data.length);
-      }
-
-      $.each(data, function(index, result) {
-        first_occurrence = $(result.body).text().toLowerCase().indexOf(query);
-        before_chars = (500-(query.length))/2;
-        start = first_occurrence - before_chars;
-        if (start < 0) {
-          start = 0;
-        }
-        end = start + (before_chars*2);
-        excerpt = $(result.body).text().substring(start, end).replace(query,'<strong>' + query + '</strong>');
-
-        $('div#kb-results').append('<div class="result">\
-            <p><a class="title" href="' + result.html_url + '">' + result.title + '</a><br/>\
-        <a href="' + result.html_url + '"\><small>' + result.html_url + '</small></a><br/>\
-            ' + excerpt + '</p>\
-        <br/></div>')
-      });
-    })
-        .fail(function(){
-            $('div#kb-results').empty();
-            $('div#kb-results').append('<h2><div class="alert alert-danger">Knowledge Base Search Failed! Please try again.</div></h2>');
-        })
-
-        .always(function(){
-            $('#kb-indicator').hide();
-        });
 
 
     $.ajax({
@@ -130,10 +89,17 @@ function search(query) {
             //wp will return all the blog posts, only get 6 of them
             var articles = $xml.find("item").slice(0,topSize);
             if(articles.length == 0) {
-              $('div#blog-results').append('<h2>No Blog Found</h2>');
-              $('#blog-tab-badge').text('0');
+              $('div#blog-results').append('<p>No blog posts found.</p>\
+              <p>Suggestions:</p>\
+              <ul>\
+              <li>Make sure all keywords are spelled correctly.</li>\
+              <li>Try different keywords.</li>\
+              <li>Try more general keywords.</li>\
+              <li>Try fewer keywords.</li>\
+              </ul>');
+              $('#blog-tab-badge').text('O');
             } else {
-                $('#blog-tab-badge').text(articles.length);
+              $('#blog-tab-badge').text(articles.length);
             }
             $.each(articles, function (i) {
               //only return the topSize results
@@ -141,16 +107,15 @@ function search(query) {
               var $this = $(this);
               var blogContent = $this.find("description").text().split(".").slice(0,3).join(".") + ".";
 
-              items.push('<div class="result"><p><a class="title" href="' + $this.find("link").text() + '">' +
-              $this.find("title").text() + '</a><br/><a href="' +
-              $this.find("link").text() + '"\><small>' + $this.find("link").text() + '</small></a><br/>' +
-              blogContent + '</p><br/></div>');
+              items.push('<div class="result"><a class="title" href="' + $this.find("link").text() + '"><h3>' +
+              $this.find("title").text() + '</h3></a><p>' +
+              blogContent + '</p></div>');
             })
             $("#blog-results").html(items.join(''));
           })
         .fail(function(){
             $('div#blog-results').empty();
-            $('div#blog-results').append('<h2><div class="alert alert-danger">Blog Search Failed! Please try again.</div></h2>');
+            $('div#blog-results').append('<p>Blog search failed :( Please try again.</p>');
         })
 
         .always(function(){

@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: IMAP
 navigation:
-  show: true
+  show: false
 seo:
   title: IMAP - Internet Message Access Protocol
   override: true

@@ -55,12 +55,16 @@ Retrieve all suppression groups associated with the user.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default": true,
     "unsubscribes": 400
   },
   {
     "id": 101,
     "name": "Alerts",
     "description 2": "Emails triggered by user-defined rules.",
+    "last_email_sent_at": null,
+    "is_default": false,
     "unsubscribes": 1
   }
 ]
@@ -80,6 +84,8 @@ Get information on a single suppression group.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default": true,
     "unsubscribes": 400
 }
 {% endv3response %}

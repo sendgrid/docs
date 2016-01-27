@@ -7,7 +7,7 @@ title: Scheduled Emails
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Scheduling emails allows the ability to have the email send at a certain time.

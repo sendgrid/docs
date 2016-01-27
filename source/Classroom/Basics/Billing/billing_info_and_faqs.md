@@ -29,7 +29,7 @@ Credits don't roll over from month to month, any unused credits from the previou
 
 **I missed a payment, what happens next?**
 
-Accounts with outstanding balances over 7 days old will&nbsp;be suspended due to nonpayment. As soon as you can [update your payment info](http://support.sendgrid.com/hc/en-us/articles/200183078-Update-your-Credit-Card-Resubmit-Payments), your account will become active again.
+Accounts with outstanding balances over 7 days old will&nbsp;be suspended due to nonpayment. As soon as you can [update your payment info]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html), your account will become active again.
 
 Accounts&nbsp;that have&nbsp;unpaid invoices and are still suspended during the last week of the month will be Terminated, and access revoked until the balance is settled. Contact support using the options below to get your account re-activated from a billing terminated state.&nbsp;
 
@@ -37,7 +37,7 @@ Accounts&nbsp;that have&nbsp;unpaid invoices and are still suspended during the 
 
 **I received a Payment Failed message.**
 
-If you receive a _Payment Failed_ message, you can [update your credit card here](http://support.sendgrid.com/hc/en-us/articles/200183078-Update-your-Credit-Card-Resubmit-Payments). You can update the expiration date on an existing card or enter a new card. Also, if you now have sufficient funds on your current card, you can retry an outstanding charge.
+If you receive a _Payment Failed_ message, you can [update your credit card here]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html). You can update the expiration date on an existing card or enter a new card. Also, if you now have sufficient funds on your current card, you can retry an outstanding charge.
 
 &nbsp;
 

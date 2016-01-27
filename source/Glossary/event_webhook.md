@@ -7,7 +7,7 @@ title: Event Webhook
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A webhook is an HTTP callback that allows a web application to POST a message to a URL when certain events take place. Often called “Reverse APIs,” Webhooks can be used to receive data in real time, pass it on to another application, or process the data faster than traditional APIs.

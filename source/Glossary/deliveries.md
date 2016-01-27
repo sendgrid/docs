@@ -7,7 +7,7 @@ title: Deliveries
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A delivery is recorded when a request to send an email results in the email being accepted by the receiving server, however this does not necessarily mean that the message reached the recipient’s inbox. Some users and some email applications may filter the email away from the inbox even though the email was delivered to (read: accepted by) the recipient email server.

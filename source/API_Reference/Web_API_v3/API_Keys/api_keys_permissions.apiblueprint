@@ -17,7 +17,7 @@ Permissions resource
 # Group Permissions
 Related resources of the **Permissions API**
 
-## Available Scopes [/v3/scopes]
+## Available Scopes [/scopes]
 ### List all available scopes for a user [GET]
 This endpoint will return a list of scopes for which that user has access.
 
@@ -41,68 +41,3 @@ This endpoint will return a list of scopes for which that user has access.
               ]
             }
 
-## Subuser Assignable Scopes [/v3/scopes/subusers]
-### List all assignable scopes to a subuser [GET]
-This endpoint will return a list of scopes which can be assigned to a subuser.
-
-+ Response 200 (application/json)
-
-    + Body
-
-            ["mail.send","alerts.create", "alerts.read"]
-
-+ Response 401
-
-    + Body
-
-            {
-              "errors":[
-                {
-                  "field":null,
-                  "message":"authorization required"}
-              ]
-            }
-
-## API Key Assignable Scopes [/v3/scopes/api_keys]
-### List all assignable scopes to a api_key [GET]
-This endpoint will return a list of scopes which can be assigned to an api_key.
-
-+ Response 200 (application/json)
-
-      + Body
-
-            ["mail.send","alerts.create", "alerts.read"]
-
-+ Response 401
-
-      + Body
-
-            {
-              "errors":[
-                {
-                  "field":null,
-                  "message":"authorization required"}
-              ]
-            }
-
-## Credential Assignable Scopes [/v3/scopes/credentials]
-### List all assignable scopes to a credential [GET]
-This endpoint will return a list of scopes which can be assigned to a credential.
-
-+ Response 200 (application/json)
-
-      + Body
-
-            ["mail.send","alerts.create", "alerts.read"]
-
-+ Response 401
-
-      + Body
-
-            {
-              "errors":[
-                {
-                  "field":null,
-                  "message":"authorization required"}
-              ]
-            }

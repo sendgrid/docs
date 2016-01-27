@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Clicks and Unique Clicks
 navigation:
-  show: true
+  show: false
 seo:
   title: Clicks and Unique Clicks
   override: true

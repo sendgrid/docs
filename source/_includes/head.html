@@ -36,18 +36,32 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="{{root_url}}/images/favicon.ico" rel="icon">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{root_url}}/images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{root_url}}/images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{root_url}}/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{root_url}}/images/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{root_url}}/images/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{root_url}}/images/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{root_url}}/images/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{root_url}}/images/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{root_url}}/images/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{root_url}}/images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{root_url}}/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{root_url}}/images/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{root_url}}/images/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="&nbsp;"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="{{root_url}}/images/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="{{root_url}}/images/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="{{root_url}}/images/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="{{root_url}}/images/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="{{root_url}}/images/mstile-310x310.png" />
+
 
   <link href="{{root_url}}/{% css_asset_tag global %}
-- /_assets/stylesheets/bootstrap.less
-- /_assets/stylesheets/fonts.css
-- /_assets/stylesheets/style.css
-- /_assets/stylesheets/icomoon.css
-- /_assets/stylesheets/syntax.css
-- /_assets/stylesheets/print.css
-- /_assets/stylesheets/error.css
-- /_assets/stylesheets/vidgrid.css
-- /_assets/stylesheets/livedocs.css
+- /_assets/stylesheets/app.less
+- /_assets/stylesheets/icomoon.less
+- /_assets/stylesheets/images.less
 - /_assets/bower_components/highlightjs/styles/default.css
 {% endcss_asset_tag %}" rel="stylesheet" type='text/css' />
 
@@ -59,22 +73,26 @@
 -  /_assets/javascripts/collapse.min.js
 -  /_assets/bower_components/jstorage/jstorage.min.js
 -  /_assets/javascripts/menu.js
+-  /_assets/javascripts/menu-icon.js
+-  /_assets/javascripts/responsive-menu.js
 -  /_assets/javascripts/analytics.js
 -  /_assets/javascripts/codebuttons.js
 -  /_assets/bower_components/modernizr/modernizr.js
 -  /_assets/bower_components/bootstrap/dist/js/bootstrap.min.js
 -  /_assets/javascripts/libs/ZeroClipboard.js
 -  /_assets/javascripts/search.js
+-  /_assets/javascripts/forms.js
 -  /_assets/bower_components/jsrender/jsrender.js
 -  /_assets/javascripts/livedocs.js
 -  /_assets/javascripts/feedback.js
--  /_assets/javascripts/callouts.js
 -  /_assets/javascripts/octopress.js
 -  /_assets/bower_components/highlightjs/highlight.pack.js
 -  /_assets/javascripts/formatXml.js
 -  /_assets/javascripts/parseQuerystring.js
 -  /_assets/bower_components/jquery-cookie/jquery.cookie.js
 {% endjavascript_asset_tag %}"
+
+  // filename = "{{root_url}}/assets/app.js"
 
    // Add a script element as a child of the body
    function downloadJSAtOnload() {
@@ -93,5 +111,7 @@
   </script>
 
   <link href="{{root_url}}{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300,300italic,600,600italic" id="opensans-css" media="screen" rel="stylesheet" type="text/css">
 
 </head>

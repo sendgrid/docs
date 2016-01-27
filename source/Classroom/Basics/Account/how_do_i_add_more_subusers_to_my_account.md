@@ -15,4 +15,4 @@ By default, we limit the amount of subusers a Pro&nbsp;(or higher) account has t
 
 Just so you are aware, the support agent will likely ask a few questions about what you will be using&nbsp;subusers&nbsp;for and the volume you might be sending over them. Don't worry though, we're only asking so we can help you have the best experience possible with new subusers.&nbsp;
 
-Read more about what subusers are, and what features they have&nbsp; [here](http://support.sendgrid.com/hc/en-us/articles/200181918-What-are-Subusers-).
+Read more about what subusers are, and what features they have&nbsp; [here]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html).

@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Categories
 navigation:
-  show: true
+  show: false
 seo:
   title: Categories
   override: true

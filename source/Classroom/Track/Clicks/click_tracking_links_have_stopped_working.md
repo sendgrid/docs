@@ -25,7 +25,7 @@ If you are unsure what the original link was, feel free to contact Support using
 
 **Your whitelabel CNAME record is not valid.**
 
-If your account is Silver or higher, and you have completed&nbsp;the [Whitelabel](https://sendgrid.com/whitelabel/wizard/page/2), you were prompted to add a CNAME record to allow us to write your own domain into your click tracked links.
+If your account is Pro 100K or higher, and you have completed&nbsp;the [Whitelabel](https://sendgrid.com/whitelabel/wizard/page/2), you were prompted to add a CNAME record to allow us to write your own domain into your click tracked links.
 
 This record not only allows for your click tracked links to appear to be directly from your domain, but also allows users to properly redirect back to Sendgrid before going on to their final destination. This redirect allows us to track clicks and increment them in your account statistics. If this record is entered&nbsp;incorrectly&nbsp;or deleted in your DNS host, it can potentially break links within your emails.&nbsp;
 
@@ -43,4 +43,4 @@ If you are not on a Mac, you can also use the [CNAMELookup](http://mxtoolbox.com
 
 &nbsp;
 
-For more tips&nbsp;on Click Tracking best practices, as well as&nbsp;proper HTML syntax for links, [check here](http://support.sendgrid.com/hc/en-us/articles/200181448) for more information.&nbsp;
+For more tips&nbsp;on Click Tracking best practices, as well as&nbsp;proper HTML syntax for links, [check here]({{root_url}}/Classroom/Track/Clicks/click_tracking_html_best_practices.html) for more information.&nbsp;

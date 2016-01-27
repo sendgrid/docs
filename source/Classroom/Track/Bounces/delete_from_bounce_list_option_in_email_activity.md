@@ -17,7 +17,7 @@ navigation:
 
 You may have seen this option floating around in your interactions with [Email Activity](https://sendgrid.com/logs/index), but what does it do? I'm glad you asked.&nbsp;
 
-This option allows you to easily remove this particular address from the appropriate Email Reports&nbsp;list in your account. Sending to addresses that are already on an Email Reports list can cause [Drop events](http://support.sendgrid.com/hc/en-us/articles/203790456-Drop-Reason-Bounced-Address) in the future. In the case of our above example, the [Bounces List](https://sendgrid.com/bounces)&nbsp;is the list in question.
+This option allows you to easily remove this particular address from the appropriate Email Reports&nbsp;list in your account. Sending to addresses that are already on an Email Reports list can cause [Drop events]({{root_url}}/Classroom/Track/Drops/drop_reason_bounced_address.html) in the future. In the case of our above example, the [Bounces List](https://sendgrid.com/bounces)&nbsp;is the list in question.
 
 ![]({{root_url}}/images/emailreports.gif)
 

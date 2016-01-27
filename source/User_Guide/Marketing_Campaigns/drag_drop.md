@@ -105,6 +105,12 @@ Pre-header and footer are important pieces of any email campaign, where informat
       <td>A visual divider, or horizontal rule, between modules</td>
       <td>background color, line color, height, padding</td>
     </tr>
+    
+    <tr>
+      <td>Social</td>
+      <td>Icons that allow for social media integration within your campaigns.</td>
+      <td>icon (Facebook, Twitter, Instagram, Google+, and Pinterest), size, border radius</td>
+    </tr>
 </tbody></table>
 
 ![]({{root_url}}/images/drag_drop_button_short.gif)
@@ -331,6 +337,26 @@ The WYSIWYG module follows the generic template. You can leave the section marke
   <tr>
     <td role="module-content">
 [MODULE CONTENT]
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}
+
+{% anchor h3 %}
+Social
+{% endanchor %}
+
+The social icons module allows for simple social media integration when creating or editing templates or campaigns. The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured. 
+
+To turn a social media option on or off, simply check or uncheck its corresponding checkbox. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.
+
+If you are converting HTML to use our Drag & Drop modules, please add the following code snippet to your template. Once pasted in the code view, switch back to the design editor, select the new social icons module and then modify the social icon styles in the module styles panel on the left side of the screen.
+
+<strong>Social example:</strong>
+{% codeblock %}
+<table class=“module” role="module" data-type="social">
+  <tr>
+    <td role=“module-content”>
     </td>
   </tr>
 </table>

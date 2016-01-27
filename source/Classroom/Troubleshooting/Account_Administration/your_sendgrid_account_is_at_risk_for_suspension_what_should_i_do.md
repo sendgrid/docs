@@ -36,7 +36,7 @@ Although some settings have been made in our server for this, we cannot disclose
 
 <font style="font-size: 14pt;" size="4"><strong>I did all the things that have been asked from me, but I still got suspended.</strong></font>
 
-In this situation you most probably received an email already from our Compliance & Abuse team. Please reply to that email in order to get in touch with them and have things cleared out, and re-activate your account. For more details, please have a look at this link: [https://support.sendgrid.com/hc/en-us/articles/200182918-Account-Under-Review-Suspended](http://support.sendgrid.com/hc/en-us/articles/200182918-Account-Under-Review-Suspended)
+In this situation you most probably received an email already from our Compliance & Abuse team. Please reply to that email in order to get in touch with them and have things cleared out, and re-activate your account. More information about suspended accounts can be found [here]({{root_url}}/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html).
 
 Happy sending!
 

@@ -19,4 +19,4 @@ _For sake of timely resolution, we recommend using CHAT&nbsp;_ which is availabl
 
 We'll try and help you isolate any issues or vulnerabilities with your SendGrid integration. We can also temporarily deactivate your account as well as delete any messages that are currently in a pending state within our system. In some cases your account may have already been preemptively Suspended to prevent damage to your reputation, in these cases please check your email for a notification from our Compliance department and respond directly to it to get the ball rolling.
 
-Please also refer to our [Security Checklist](http://support.sendgrid.com/hc/en-us/articles/200182938-Security-Checklist) for more tips on preventing or shoring up&nbsp;account compromises.&nbsp;
+Please also refer to our [Security Checklist]({{root_url}}/Classroom/Basics/Security/security_checklist.html) for more tips on preventing or shoring up&nbsp;account compromises.&nbsp;
