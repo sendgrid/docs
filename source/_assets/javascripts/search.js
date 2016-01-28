@@ -78,59 +78,6 @@ function search(query) {
     });
 
 
-  var token = "222d9f6a86c97a5fe1d024dd258a2fc919fe7cc847900751bed9d64ce333510e";
-  var kb_result =
-    $.ajax({
-      url: 'https://sendgrid.zendesk.com/api/v2/help_center/articles/search.json?query=' + encodeURIComponent(query),
-      headers: {
-        'Authorization': 'Bearer ' + token
-      }
-    })
-    .done(function(data){
-      $('div#kb-results').empty();
-
-      data = $.grep(data.results, function(result){ return result.section_id!='200050018' } );
-
-      if(data.length == 0) {
-        $('div#kb-results').append('<p>No results found in Knowledge Base.</p>\
-        <p>Suggestions:</p>\
-        <ul>\
-        <li>Make sure all keywords are spelled correctly.</li>\
-        <li>Try different keywords.</li>\
-        <li>Try more general keywords.</li>\
-        <li>Try fewer keywords.</li>\
-        </ul>');
-        $('#kb-tab-badge').text('0');
-      } else {
-        $('#kb-tab-badge').text(data.length);
-      }
-
-      $.each(data, function(index, result) {
-        first_occurrence = $(result.body).text().toLowerCase().indexOf(query);
-        before_chars = (500-(query.length))/2;
-        start = first_occurrence - before_chars;
-        if (start < 0) {
-          start = 0;
-        }
-        end = start + (before_chars*2);
-        excerpt = $(result.body).text().substring(start, end).replace(query,'<strong>' + query + '</strong>');
-
-        $('div#kb-results').append('<div class="result">\
-            <a class="title" href="' + root + result.html_url + '"><h3>' + result.title + '</h3></a>\
-            <p>' + excerpt + '</p>\
-        </div>')
-      });
-    })
-        .fail(function(){
-            $('div#kb-results').empty();
-            $('div#kb-results').append('<p>Knowledge Base search failed :( Please try again.</p>');
-        })
-
-        .always(function(){
-            $('#kb-indicator').hide();
-        });
-
-
     $.ajax({
         url: "https://sendgrid.com/blog/feed/?q=" + query,
         dataType: "xml"

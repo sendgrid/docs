@@ -71,36 +71,3 @@ FORMAT: 1A
               "enabled": true,
               "license_key": "key"
             }
-
-## SendWithUs Partner Settings Resource [/partner_settings/sendwithus]
-
-### Get SendWithUs Settings [GET]
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "enabled": true,
-              "license_key": "key"
-            }
-
-### Update SendWithUs Settings [PATCH]
-
-+ Request (application/json)
-
-    + Body
-
-            {
-              "enabled": true,
-              "license_key": "key"
-            }
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "enabled": true,
-              "license_key": "key"
-            }

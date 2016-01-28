@@ -17,7 +17,7 @@ Permissions resource
 # Group Permissions
 Related resources of the **Permissions API**
 
-## Available Scopes [/v3/scopes]
+## Available Scopes [/scopes]
 ### List all available scopes for a user [GET]
 This endpoint will return a list of scopes for which that user has access.
 
