@@ -68,6 +68,13 @@ i.e. A CNAME for "email." becomes "email.domain.com"
 
 &nbsp;
 
+**Use GoDaddy? Watch our handy video guide for whitelabel!** 
+
+<iframe src="https://player.vimeo.com/video/149805633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+&nbsp;
+
 &nbsp;
 
 **Tools:**
