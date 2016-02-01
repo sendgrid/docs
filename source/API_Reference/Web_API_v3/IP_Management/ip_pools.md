@@ -93,7 +93,7 @@ HTTP/1.1 200 OK
 
 {
   "ips":["167.89.21.3"],
-  "name":"new_test5"
+  "pool_name":"new_test5"
 }
 {% endv3response %}
 {% endapiv3example %}
