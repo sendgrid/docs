@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/149816616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% info %}
 If you plan to send from multiple domains, you should whitelabel at least one IP address per domain.
 {% endinfo %}

@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/149664450" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Email link whitelabels allow all of the click-tracked links to be from your domain instead of sendgrid.net. It also will serve open tracking images from your domain. This helps in email deliverability because you are no longer relying on clicktracking being routed through a domain that you do not control. Spam filters and recipient servers will look at the links within emails to determine whether the email should be delivered and will use the reputation of the root domain to determine whether the links can be trusted.
 
 {% anchor h2 %}
