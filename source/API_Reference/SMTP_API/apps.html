@@ -233,47 +233,6 @@ Filter: <code>footer</code>
 
 <hr/>
 
-{% anchor h3 forwardspam %}
-Filter: <code>forwardspam</code>
-{% endanchor %}
-<p>Allows for a copy of spam reports to be forwarded to an email address.</p>
-
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>Parameter Name</th>
-<th>Parameter Value</th>
-<th>Parameter Description</th>
-</tr>
-<tr>
-<td>enable</td>
-<td><code>0</code> | <code>1</code></td>
-<td>Disable or enable this App</td>
-</tr>
-<tr>
-<td>email</td>
-<td><code>email</code></td>l</code></td>
-<td>email address destination for spam report to go to</td>
-</tr>
-</tbody>
-</table>
-
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "forwardspam" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "you@example.com"
-      }
-    }
-  }
-}
-{% endcodeblock %}
-
-
-<hr/>
-
 {% anchor h3 ganalytics %}
 Filter: <code>ganalytics</code>
 {% endanchor %}
