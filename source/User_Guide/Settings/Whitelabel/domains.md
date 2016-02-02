@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/149585179" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% info %}
 When in doubt, contact your DNS registrar or web hosting service’s technical support department. All information in this document complies with the DNS standards, but some registrars and web hosting providers handle things differently.
 {% endinfo %}
