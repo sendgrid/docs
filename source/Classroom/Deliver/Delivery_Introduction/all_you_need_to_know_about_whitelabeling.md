@@ -20,7 +20,7 @@ All users have access to Domain and Link whitelabeling. Pro plans and higher wil
 **How?**  
 The whitelabeling process involves the creation of several new DNS records which establish a new subdomain in your domain registrar. When creating this new subdomain it is very important to choose one that has not yet been established within your DNS settings in order to avoid conflicting records. We also highly recommend that you do not choose “sendgrid” as your subdomain, since doing so would defeat the purpose of whitelabeling!
 
-These records all work in tandem in order to remove SendGrid as the message signing entity and display your chosen subdomain as the authenticated sender. &nbsp;Please refer to our docs&nbsp;for more information on the process and required DNS records.
+These records all work in tandem in order to remove SendGrid as the message signing entity and display your chosen subdomain as the authenticated sender. Please refer to our [User Guide]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) for helpful video tutorials and more information on the process and required DNS records.
 
 **The Records**  
 To complete the whitelabeling process, you will need to create DNS records as stated in the article and video above.
