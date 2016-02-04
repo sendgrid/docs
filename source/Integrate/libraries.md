@@ -77,6 +77,7 @@ Command Line
 {% endanchor %}
 
 -   [cmdgrid](http://github.com/martyndavies/cmdgrid) *by Martyn Davies* - CLI for working with SendGrid's Parse API
+-   [sgsend](http://github.com/vvaidy/sgsend) *by Vijay Vaidyanathan* - Sending email from the shell command line (for Macs and Unix)
 
 {% anchor h3 %}
 Go 
