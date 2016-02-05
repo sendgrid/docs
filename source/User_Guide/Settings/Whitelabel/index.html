@@ -43,18 +43,19 @@ Some bad actors will use 3rd party link shortening services to populate the doma
 
 <iframe src="https://player.vimeo.com/video/149816616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-An IP whitelabel works in tandem with your domain whitelabel, but the real reputation for email is usually associated with the IP address since many domains can point to the same IP. It is always ideal to have both a domain and an IP whitelabel. You will need to have a dedicated IP address or purchase one through [SendGrid support](https://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account) in order to whitelabel your IP address. You can send email from multiple domains from each of your dedicated IPs. Remember that each domain will positively or negatively affect the other domains when you use the same IP for multiple domains.
+An IP whitelabel works in tandem with your domain whitelabel, but the real reputation for email is usually associated with the IP address since many domains can point to the same IP. It is always ideal to have both a domain and an IP whitelabel. You will need to have a dedicated IP address or purchase one through <a href="{{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html">SendGrid Support</a> in order to whitelabel your IP address. You can send email from multiple domains from each of your dedicated IPs. Remember that each domain will positively or negatively affect the other domains when you use the same IP for multiple domains.
 
 {% anchor h2 %}
 Setting Up Whitelabels
 {% endanchor %}
 
-You can set up your whitelabels from the overview page or from the individual whitelabel type pages in the customer portal. For the purposes of the User Guide, we cover each set up process in depth on the respective whitelabel pages.
-
-* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/domains.html">Setting Up Domain Whitelabel</a>
-* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/links.html">Setting Up Email Link Whitelabels</a>
-* <a href="{{root_url}}/User_Guide/Settings/Whitelabel/ips.html">Setting Up IP Whitelabels</a>
-* [All You Need to Know About Whitelabeling](https://support.sendgrid.com/hc/en-us/articles/200548228-All-You-Need-to-Know-About-Whitelabeling)
+You can set up your whitelabels from the overview page or from the individual whitelabel type pages in the customer portal. For the purposes of the User Guide, we cover each set up process in depth on the following pages:
+<ul>
+  <li><a href="{{root_url}}/User_Guide/Settings/Whitelabel/domains.html">Setting Up Domain Whitelabel</a></li>
+  <li><a href="{{root_url}}/User_Guide/Settings/Whitelabel/links.html">Setting Up Email Link Whitelabels</a></li>
+  <li><a href="{{root_url}}/User_Guide/Settings/Whitelabel/ips.html">Setting Up IP Whitelabels</a></li>
+  <li><a href="{{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html">All You Need to Know About Whitelabeling</a></li>
+</ul>
 
 {% anchor h2 %}
 How Does Whitelabeling Work?
@@ -98,8 +99,8 @@ For any account, SendGrid will attach valid whitelabel information in the follow
 For subusers, SendGrid will attach valid whitelabel information in the following order, starting at the top of the list and applying the whitelabel when the criteria are matched:
 
 <ol>
-  <li>Valid whitelabel *for this subuser* that matches the domain in the FROM address.</li>
-  <li>Valid default whitelabel *for this subuser*.</li>
+  <li>Valid whitelabel <strong>for this subuser</strong> that matches the domain in the FROM address.</li>
+  <li>Valid default whitelabel <strong>for this subuser</strong>.</li>
   <li>Valid whitelabel assigned by the parent account to this subuser.</li>
 </ol>
 
