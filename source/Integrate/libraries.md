@@ -60,6 +60,12 @@ Web API Libraries
 {% endanchor %}
 
 {% anchor h3 %}
+Universal
+{% endanchor %}
+
+-   [CloudRail-SendGrid](https://cloudrail.com/?utm_source=SendGrid&utm_medium=Website&utm_campaign=SendGrid%20Website) *by CloudRail* - Bundle SendGrid and other APIs into one SDK
+
+{% anchor h3 %}
 .NET 
 {% endanchor %}
 
