@@ -91,19 +91,21 @@ See which pools an IP address belongs to.
 		
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/0.0.0.0 %}		
   {% v3response %}		
-HTTP/1.1 200 OK		
-		
-{		
-    "ips": [
-        {
-            "ip": "000.00.00.0",
-            "start_date": 1409616000,
-            "warmup": true
-        }
-    ],
-    "pool_name": "test1"
-  
-}		
+HTTP/1.1 200 OK	
+
+{
+  "ip": "000.00.00.0",
+  "subusers": [
+    "subuser1",
+    "subuser2"
+  ],
+  "rdns": "o1.em.example.com",
+  "pools": ["test1"],
+  "warmup": false,
+  "start_date": null,
+  "whitelabeled": true
+}
+
   {% endv3response %}		
 {% endapiv3example %}
 
