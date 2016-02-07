@@ -77,13 +77,13 @@ Set the options as follows:
 
 *Name*: SendGrid (or whatever you like)
 
-*Origin Server Address*: yourcompanyname.ct.sendgrid.net : 443 (Insert your company name. Note the connection on the SSL port 443)
+*Origin Server Address*: sendgrid.net : 443 (Note the connection on the SSL port 443)
 
-*Domain Name*: email.example.com (whitelabel domain name is, from the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links that SendGrid creates in your emails).
+*Domain Name*: email.example.com (Enter your WhiteLabel domain name here. Ensure it matches the domain configured in the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links).
 
 Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid whitelabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
 
-After provisioning, switch your CNAME for your domain(s) over to the TLS endpoint provided by Fastly support.
+After provisioning, updated the CNAME record for your domain(s) over to the TLS endpoint provided by Fastly support.
 
-Finally; contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
+Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
 tracking.
