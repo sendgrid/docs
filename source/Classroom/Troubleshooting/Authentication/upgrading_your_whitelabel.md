@@ -50,9 +50,9 @@ For example, if you change your whitelabel’s domain from `em.example.com` to `
 
 After changing the value in the subdomain field, select whether or not you would like this whitelabel to be the default whitelabel for your account. You may also change whether or not you are using Automated Security.
 
-- By turning Automated Security ON, you will be given three CNAME records that you will be prompted to give to your host provider.
+- By turning Automated Security on, you will be given three CNAME records that you will be prompted to give to your host provider.
 
-- By turning Automated Security Off, you will be given one MX record and two TXT records that you will be prompted to give to your host provider.
+- By turning Automated Security off, you will be given one MX record and two TXT records that you will be prompted to give to your host provider.
 
 Finally, click Save. You will then be taken to a page listing your new DNS records that you must enter in your DNS host provider’s settings. Once you have entered those DNS records in your host provider’s settings, return to your SendGrid account and validate your new whitelabel.
 
