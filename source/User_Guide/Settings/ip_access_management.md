@@ -70,4 +70,8 @@ To enter a range of IP addresses using a “wildcard”, simply add an asterisk 
 
 After entering the IP addresses you would like to whitelist, click Save.
 
+{% info %}
+If you remove every IP address from your whitelist, you will again be able to log in to your account from any IP address.
+{% endinfo %}
+
 For additional information about using IP Access Management through our API, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/ip_access_management.html).

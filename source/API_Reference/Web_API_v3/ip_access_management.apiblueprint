@@ -9,7 +9,7 @@ FORMAT: 1A
 
 # IP Access Management
 
-IP Access Management is a set of endpoints to control IP whitelisting. For some additional information about IP Access Management, you can read about it in our [User Guide]({{root_url}}/User_Guide/Settings/ip_access_management.html).
+IP Access Management is a set of endpoints to control IP whitelisting.
 
 # Group Activity
 
@@ -91,6 +91,18 @@ Resources related to IP whitelisting. IP whitelisting allows users to specify IP
                     {"id": 3, "ip": "192.168.1.3/32", "created_at": 1441824715, "updated_at": 1441824715}
                 ]
             }
+
+### Delete Whitelisted IPs [DELETE]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "ids": [1, 2, 3]
+            }
+
++ Response 204
 
 ## IP Whitelist Entry [/access_settings/whitelist/{rule_id}]
 
