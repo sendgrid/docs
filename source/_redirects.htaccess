@@ -280,6 +280,7 @@ Redirect 301 /Classroom/Deliver/bacn_its_whats_for_dinner.html https://sendgrid.
 Redirect 301 /Classroom/Deliver/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html
 Redirect 301 /Classroom/Deliver/email_deliverability_101.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.htnml
 Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
 Redirect 301 /Classroom/Deliver/how_to_warm_up_your_ip_address.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html
 Redirect 301 /Classroom/Deliver/keep_in_touch_the_importance_of_engagement.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html
 Redirect 301 /Classroom/Deliver/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html

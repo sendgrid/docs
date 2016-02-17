@@ -17,16 +17,16 @@ Permissions resource
 # Group Permissions
 Related resources of the **Permissions API**
 
-## Available Scopes [/scopes]
+## Available Scopes [/v3/scopes]
+
 ### List all available scopes for a user [GET]
 This endpoint will return a list of scopes for which that user has access.
-
 
 + Response 200 (application/json)
 
     + Body
 
-            ["mail.send","alerts.create", "alerts.read"]
+            ["mail.send", "alerts.create", "alerts.read"]
 
 
 + Response 401
@@ -40,4 +40,3 @@ This endpoint will return a list of scopes for which that user has access.
                   "message":"authorization required"}
               ]
             }
-
