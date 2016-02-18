@@ -33,7 +33,7 @@ Global Unsubscribes are email addresses that will not receive any emails.
 ## Global Unsubscribes [/asm/suppressions/global/{email}]
 
 + Parameters
-    + email (required, string, `test@test.com`) ... The email to delete.
+    + email (required, string, `test@test.com`) ... The email address.
 
 ### Determine if an email address belongs to the Global Unsubscribes collection [GET]
 

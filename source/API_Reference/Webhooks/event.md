@@ -191,7 +191,7 @@ The following parameters are sent with delivery events: bounce, deferred, delive
          <td>Whether or not TLS was used when sending the email.</td>
       </tr>
       <tr>
-         <td>cert_error</td>
+         <td>cert_err</td>
          <td>Whether there was a certificate error on the receiving side.</td>
       </tr>
    </tbody>
@@ -234,7 +234,7 @@ The following parameters are sent with engagement events: click, open, spamrepor
          <td>Whether or not TLS was used when sending the email.</td>
       </tr>
       <tr>
-         <td>cert_error</td>
+         <td>cert_err</td>
          <td>Whether there was a certificate error on the receiving side.</td>
       </tr>
    </tbody>
@@ -490,7 +490,7 @@ Bounce
   "type":"bounce",
   "ip" : "127.0.0.1",
   "tls" : "1",
-  "cert_error" : "0"
+  "cert_err" : "0"
 }
 {% endcodeblock %}
 
@@ -583,7 +583,7 @@ Deferred
   "asm_group_id": 1,
   "ip" : "127.0.0.1",
   "tls" : "0",
-  "cert_error" : "0"
+  "cert_err" : "0"
 }
 {% endcodeblock %}
 
@@ -629,7 +629,7 @@ Delivered
   "asm_group_id": 1,
   "ip" : "127.0.0.1",
   "tls" : "1",
-  "cert_error" : "1"
+  "cert_err" : "1"
 }
 {% endcodeblock %}
 
