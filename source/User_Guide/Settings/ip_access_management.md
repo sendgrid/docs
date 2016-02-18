@@ -54,8 +54,6 @@ To manually whitelist one or more IP addresses, click the Add IP Addresses butto
 
 You will see a dialogue box presenting you with a blank form in which you may enter a single IP address or multiple IP addresses separated by a space, comma or on separate lines.
 
-*INSERT NEW SCREENSHOT HERE*
-
 To enter a range of IP addresses, simply enter the first IP address followed by a `/` and then the last two digits of the last IP in the range. For example, the range `25.203.44.234/24` would include the following IPs:
 
 * `25.203.44.234`
