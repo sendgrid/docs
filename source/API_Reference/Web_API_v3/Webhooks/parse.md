@@ -17,9 +17,9 @@ Gets Parse API settings.
 {% apiv3example get GET https://api.sendgrid.com/v3/webhooks/parse/settings %}
 {% v3response %}
 {
-  “url”: “http://mydomain.com/parse”
-  “hostname”: “mail.mydomain.com”,
-  “spam_check_outgoing”: true
+  "url": "http://mydomain.com/parse",
+  "hostname": "mail.mydomain.com",
+  "spam_check_outgoing": true
 }
 {% endv3response %}
 {% endapiv3example %}
