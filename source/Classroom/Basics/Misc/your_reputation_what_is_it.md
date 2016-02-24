@@ -11,13 +11,13 @@ navigation:
   show: true
 ---
 
-One logged in to your account, on the left side&nbsp;of the [SendGrid website](https://sendgrid.com), you can find your&nbsp; **SendGrid account reputation**. This reputation is a indicator of how we view your email sending practices.
+Once logged in to your account, on the left side&nbsp;of the [SendGrid website](https://sendgrid.com), you can find your&nbsp; **SendGrid account reputation**. This reputation is a indicator of how we view your email sending practices.
 
 []({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png)&nbsp;
 
 &nbsp;
 
-**H**** ow is Reputation Calculated?**
+**How is Reputation Calculated?**
 
 The SendGrid account reputation is computed based on a calculation of:
 
