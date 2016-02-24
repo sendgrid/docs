@@ -27,7 +27,8 @@ Before you get going, you'll need to set up IIS in order to support SendGrid int
 9.  On the right side "Actions" pane: click Apply
 
 <center>
-![]({{root_url}}/images/iis_mgr_site.png)
+
+![](https://sendgrid.com/docs/images/iis_mgr_site.png)
 
 </center>
 
