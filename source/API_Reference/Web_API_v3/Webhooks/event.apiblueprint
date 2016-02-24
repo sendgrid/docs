@@ -10,7 +10,7 @@ FORMAT 1A
 
 # Group Event Webhook Settings
 
-## Event Webhook Resource [/v3/user/webhooks/event/settings]
+## Event Webhook Resource [/user/webhooks/event/settings]
 
 ### Get Event Webhook Settings [GET]
 
@@ -76,7 +76,7 @@ FORMAT 1A
                 "dropped": true
             }
 
-## Event Notification Test Resource [/v3/user/webhooks/event/test]
+## Event Notification Test Resource [/user/webhooks/event/test]
 
 ### Test Event Notification Settings [POST]
 Sends a fake event notification post to the provided URL.
