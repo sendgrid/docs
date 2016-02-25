@@ -39,4 +39,4 @@ Additional resources:
 
 * [Set up custom DKIM]({{site.support_url}}/hc/en-us/articles/204116386)
 * [the DKIM.org website](http://www.dkim.org/)
-* [DNS Records and Underscores]({{site.support_url}}/hc/en-us/articles/200185218)
+* [DNS Records and Underscores]({{root_url}}/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html)
