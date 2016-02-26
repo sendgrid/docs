@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-{% info %} 
+{% info %}
 Available to all accounts except Lite.
 {% endinfo %}
 
@@ -517,6 +517,10 @@ Click
    </tbody>
 </table>
 
+{% info %}
+`url_offset` gives you more information about the link that was clicked. Links are indexed beginning at 0. `index` indicates which link was clicked based on that index. The type of link can be either text, HTML, or a header. `type` indicates the type of the link that was clicked.
+{% endinfo %}
+
 {% codeblock lang:json %}
 {
   "sg_event_id":"sendgrid_internal_event_id",
@@ -527,6 +531,10 @@ Click
   "email":"email@example.com",
   "timestamp":1249948800,
   "url":"http://yourdomain.com/blog/news.html",
+  "url_offset": {
+    "index": 0,
+    "type": "html"
+  }
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
   "newsletter": {
