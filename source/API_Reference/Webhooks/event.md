@@ -534,7 +534,7 @@ Click
   "url_offset": {
     "index": 0,
     "type": "html"
-  }
+  },
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
   "newsletter": {
