@@ -15,6 +15,10 @@ Whitelabeling your account is one of the best things you can do to maintain good
 
 A common hurdle that many users encounter is that Step 2 of the Whitelabel Wizard fails to validate DNS records they have just created!
 
+{% warning %}
+If you created a whitelabel before February 15, 2016, with Automated Security enabled but have not validated the whitelabel, you will need to generate new CNAMEs. We have made a slight formatting change to the CNAMEs we generate, and any any unvalidated CNAMEs generated before February 15, 2016, must be replaced. Whitelabeling functionality has not been altered in any way, and whitelabels that have already been validated are unaffected by this update.
+{% endwarning %}
+
 &nbsp;
 
 ![]({{root_url}}/images/iwl.gif)
@@ -68,7 +72,7 @@ i.e. A CNAME for "email." becomes "email.domain.com"
 
 &nbsp;
 
-**Use GoDaddy? Watch our handy video guide for whitelabel!** 
+**Use GoDaddy? Watch our handy video guide for whitelabel!**
 
 <iframe src="https://player.vimeo.com/video/149805633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -83,4 +87,4 @@ Check global propagation: [https://www.whatsmydns.net/](https://www.whatsmydns.n
 
 Check DNS records online: [http://mxtoolbox.com/DNSLookup.aspx](http://mxtoolbox.com/DNSLookup.aspx)
 
-&nbsp;
+If you continue to have problems validating your whitelabel or you have further questions that have not been addressed here, please contact our [Customer Support](https://support.sendgrid.com/hc/en-us).
