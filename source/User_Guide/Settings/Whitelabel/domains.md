@@ -131,6 +131,8 @@ Once you have made the DNS changes, you need to validate your whitelabel:
 
 If everything is set up properly and the DNS records have propagated, then SendGrid will verify your whitelabel and email sending will use this whitelabel following the Whitelabel Application Logic.
 
+If you are having trouble validating your DNS records, please see this [helpful Classroom article]({{root_url}}/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html).
+
 {% anchor h2 %}
 Changing or Replacing a Whitelabel Domain
 {% endanchor %}
