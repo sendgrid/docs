@@ -10,7 +10,7 @@ navigation:
 
 Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest either [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare) or [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare),  [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
 {% anchor h2 %}
 Using CloudFlare
@@ -84,6 +84,32 @@ Set the options as follows:
 Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid Email Links WhiteLabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
 
 After provisioning, update the CNAME record for your domain(s) over to the TLS endpoint provided by Fastly support.
+
+Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
+tracking.
+
+{% anchor h2 %}
+Using KeyCDN
+{% endanchor %}
+
+[Sign up for KeyCDN](https://www.keycdn.com) or login to your
+existing account.
+
+Create a pull zone and point the origin URL to https://sendgrid.net.
+
+![KeyCDN Pull Zone]({{root_url}}/images/keycdn1.png)
+
+Enable SSL and HTTP/2 (custom SSL or Let's Encrypt).
+
+![KeyCDN Enable SSL]({{root_url}}/images/keycdn2.png)
+
+Enable the option "Forward Host Header." 
+
+![KeyCDN Forward Host Header]({{root_url}}/images/keycdn3.png)
+
+Add the Zonealias (with the alias you want to use for your email links whitelabel domain)
+
+![KeyCDN Zonealias]({{root_url}}/images/keycdn4.png)
 
 Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
 tracking.
