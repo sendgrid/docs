@@ -92,7 +92,7 @@ tracking.
 Using KeyCDN
 {% endanchor %}
 
-[Sign up for KeyCDN](https://app.keycdn.com/signup) or login to your
+[Sign up for KeyCDN](https://www.keycdn.com) or login to your
 existing account.
 
 Create a pull zone and point the origin URL to https://sendgrid.net.
