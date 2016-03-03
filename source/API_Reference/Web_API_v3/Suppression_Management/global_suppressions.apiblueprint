@@ -10,6 +10,32 @@ FORMAT: 1A
 # Group Global Unsubscribes
 Global Unsubscribes are email addresses that will not receive any emails.
 
+## Unsubscribes Collection [/suppression/unsubscribes?start_time={start_time}&end_time={end_time}&limit=10&offset=0]
+
++ Parameters
+
+    + start_time (optional, timestamp, `1443651141`) ... Refers start of the time range in unix timestamp when an unsubscribe email was created (inclusive).
+    + end_time (optional, timestamp, `1443651154`) ... Refers end of the time range in unix timestamp when an unsubscribe email was created (inclusive).
+    + limit (optional, integer, `10`) ... Limit the number of items
+    + offset (optional, integer, `0`) ... Paging offset
+
+### List all globally unsubscribed email addresses [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+                [
+                    {
+                        "created":1443651141,
+                        "email":"user1@example.com"
+                    },
+                    {
+                        "created": 1443651154,
+                        "email": "user2@example.com"
+                    }
+                ]
+
 ## Global Unsubscribes Collection [/asm/suppressions/global]
 
 ### Add email addresses to the Global Unsubscribes collection [POST]
