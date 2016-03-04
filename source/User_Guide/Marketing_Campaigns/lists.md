@@ -52,7 +52,7 @@ Create a List
 You create lists when you upload contacts, please check out our information on [uploading contacts]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts) for more information.
 
 {% info %}
-You can create up to 50 lists.
+You can create up to 100 lists.
 {% endinfo %}
 
 {% anchor h3 %}
