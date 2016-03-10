@@ -44,13 +44,10 @@ In order to access the interface, you need to log in to your master account and 
 Credentials that have been granted access to the Web feature are not granted rights to access the Account Settings page. If they click on the link, they will receive a notification that their credentials do have have sufficient rights to do so.
 {% endinfo %}
 
-![]({{root_url}}/images/multiple_credentials_1.png "multiauth_webui_credslist")
 
 As you can see in the above sample image, there is a username called “admin” who has been granted all privileges. There are also options to “Edit” or “Destroy” the account.
 
-To create new credentials click the “Add New Credential” button at the bottom left of the credentials list. This will open the New Credential page, as shown below:
-
-![]({{root_url}}/images/multiple_credentials_2.png "multiauth_webui_newcreds")
+To create new credentials click the “Add New Credential” button at the bottom left of the credentials list. This will open the New Credential page.
 
 When creating a new set of credentials, follow these instructions:
 
@@ -65,7 +62,3 @@ If you need to edit a set of credentials, you can click the “Edit” icon, and
 {% info %}
 If you leave the password field empty then your modifications will only affect the permissions.
 {% endinfo %}
-
-![]({{root_url}}/images/multiple_credentials_3.png)
-
-##
