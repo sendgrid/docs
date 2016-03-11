@@ -10,28 +10,27 @@ navigation:
 ---
 
 {% anchor h2 %}
+The v3 API
+{% endanchor %}
+
+<p>Our RESTful V3 API provides functionality for <a href="{{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html">managing user unsubscribes</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">templating emails</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html">managing IP addresses</a>, and <a href="{{root_url}}/API_Reference/Web_API_v3/Settings/enforced_tls.html">enforcing TLS</a>.</p>
+
+{% anchor h2 %}
 Send Email
 {% endanchor %}
 
-<p>There are three different technical concepts you should know about sending emails via SendGrid's <a href="{{root_url}}/Glossary/email_api_integration.html">Email API</a>:</p>
-
-<h3>Web API</h3>
-<p>If SMTP is not used, we also offer a simple <a href="{{root_url}}/API_Reference/Web_API/mail.html">Web API mail method</a> to send email. </p>
-
-<h3>Web API V3</h3>
-<p>Our V3 Web API provides functionality for <a href="{{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html">managing user unsubscribes</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">templating emails</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html">managing IP addresses</a>, and <a href="{{root_url}}/API_Reference/Web_API_v3/Settings/enforced_tls.html">enforcing TLS</a>.</p>
+<h3>Mail HTTP Endpoint</h3>
+<p>If you would like to use our API, we offer a simple <a href="{{root_url}}/API_Reference/Web_API/mail.html">Web API mail method</a> to send email. </p>
 
 <h3>Marketing Campaigns API</h3>
 <p>The SendGrid Marketing Email API provides developers with the ability to <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html">manage marketing emails</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html">lists</a>, <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html">identities</a>, and <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html">schedule delivery events</a></p>
 
-<h3>SMTPAPI</h3>
-<p>The <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> allows you to tag your emails to get detailed statistics on each tag, send multiple customized emails in one request via mail merge, and configure each setting on a per email basis. This is done by passing a JSON string in the X-SMTPAPI header if using SMTP or in the x-smtpapi HTTP parameter if using the web API. <a href="{{root_url}}/API_Reference/SMTP_API/index.html">Using the SMTP API</a></p>
-
 <h3>SMTP</h3>
 <p>This is a protocol rather than an API. SMTP is widely supported by applications and is usually the fastest way to integrate with SendGrid. <a href="{{root_url}}/Integrate/index.html">Learn how to integrate using SMTP</a>.</p>
 
-<h3>Customer Subuser API</h3>
-<p>This API allows SendGrid customers to manage their subusers and every aspect of their subuser's accounts.</p>
+<h3>SMTPAPI</h3>
+<p>When sending with SMTP, the <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP API</a> allows you to add specific instructions to your SMTP emails, that match the functionality of our mail endpoint. You can add custom arguments, track your emails engagement, and send multiple emails with the same request. <a href="{{root_url}}/API_Reference/SMTP_API/index.html">Using the SMTP API</a></p>
+
 
 {% anchor h2 %}
 Receive Email
@@ -75,5 +74,8 @@ Retrieve Information
 Reseller APIs
 {% endanchor %}
 
-* <a href="">Reseller API</a> - Allows SendGrid Reseller Cutomers to manage every aspect of their customer's SendGrid accounts.
-* <a href="">Reseller Haiku API</a> - Allows SendGrid Reseller Customers to manage servers and accounts through SendGrid.
+<ul>
+	<li><a href="">Reseller API</a> - Allows SendGrid Reseller Cutomers to manage every aspect of their customer's SendGrid accounts.</li>
+	<li><a href="">Reseller Haiku API</a> - Allows SendGrid Reseller Customers to manage servers and accounts through SendGrid.</li>
+</ul> 
+
