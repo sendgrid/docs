@@ -9,12 +9,13 @@ layout: page
 navigation:
   show: true
 ---
-It is possible to track the number of times each link in one of your [campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) was clicked. All you need to do is enable [click tracking]({{root_url}}/User_Guide/Settings/tracking.html) in your tracking settings. You will then be able to see the statistics for each link you have included in a campaign when viewing your [Campaign Statistics].
+It is possible to track the number of times each link in one of your [campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) was clicked. All you need to do is enable [click tracking]({{root_url}}/User_Guide/Settings/tracking.html) in your tracking settings. When you navigate to your [campaigns]({{site.url}}/marketing_campaigns/campaigns), click the Action Cog next to the campaign, and select Stats you will then be able to see the detailed statistics for the campaign, including a table displaying a list of your links with the number of unique clicks, and total clicks for each link.
+
+![]({{root_url}}/images/marketing_campaigns_link_tracking.jpg)
 
 {% info %}
 It is important to make sure that you are formatting your HTML links correctly in order for them to successfully be tracked. If you are having problems with click tracking, please [click here]({{root_url}}/Classroom/Track/Clicks/click_tracking_html_best_practices.html).
 {% endinfo %}
-
 
 {% anchor h2 %}
 Tracking Links With Custom Fields and Substitution Tags
