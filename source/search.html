@@ -9,10 +9,12 @@ navigation:
 ---
 
 <form class="form-search" id="search">
-  <label class="floating-label is-dirty" for "query">
-    Search Docs
-  </label>
-  <input class="input-large search-query" type="text" id="page-query" name="query"/>
+  <div class="input-group">
+    <label class="floating-label is-dirty" for "query">
+      Search Docs
+    </label>
+    <input class="input-large search-query" type="text" id="page-query" name="query"/>
+  </div>
   <input type="hidden" id="root" name="root" value="{{ site.root }}">
   <input class="btn btn-primary btn-small" type="submit" value="Search"/>
 </form>
