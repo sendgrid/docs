@@ -1,5 +1,13 @@
 form {
   position: relative;
+  .input-group {
+    border-bottom: 1px solid fade(@brand-secondary, 20%);
+    box-shadow: transparent 0px 1px 0px;
+    &.is-focused {
+      border-bottom: 1px solid @brand-primary;
+      box-shadow: @brand-primary 0px 1px 0px;
+    }
+  }
   input[type]:not([type="submit"]), select, textarea {
     border: none;
     box-shadow: none;
@@ -8,7 +16,6 @@ form {
     border-radius: 0;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid fade(@brand-secondary, 20%);
     font-size: 13px;
     color: fade(@brand-secondary, 80%);
     width: 100%;
@@ -18,7 +25,6 @@ form {
       outline: none;
       border: none;
       box-shadow: none;
-      border-bottom: 2px solid @brand-primary;
     }
     &:last-child {
       margin-bottom: 30px;
@@ -35,23 +41,32 @@ form {
       cursor: text;
       z-index: -1;
       position: absolute;
-      top: 11px;
+      top: 7px;
       left: 0;
       &.is-focused, &.is-dirty {
         font-size: 12px;
         line-height: 14px;
-        top: -8px;
+        top: -12px;
         font-weight: 400;
       }
     }
   }
   &.navbar-search {
     margin-bottom: 30px;
+    .search-query {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: @font-size-base;
+    }
+    .icon-search {
+      background: red;
+    }
     .input-btn {
       border: none;
       background: none;
       position: absolute;
-      right: -4px;
+      right: 0px;
+      background: red;
       bottom: 3px;
       z-index: 2;
       font-size: 14px;
