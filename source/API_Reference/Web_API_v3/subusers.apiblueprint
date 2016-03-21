@@ -33,18 +33,6 @@ Subusers belonging to a parent user.
               "id": 2, "username": "John@example.com", "email": "John@example.com"
             }]
 
-+ Response 401 (application/json)
-
-    + Body
-
-            {
-              "errors":[
-                {
-                  "field": null,
-                  "message": "authorization required"}
-              ]
-            }
-
 ## Subusers Collection [/subusers]
 ### Create Subuser [POST]
 
