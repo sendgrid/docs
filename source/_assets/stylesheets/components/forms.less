@@ -1,8 +1,10 @@
 form {
   position: relative;
-  .input-group {
+  .input-group,
+  .form-group {
     border-bottom: 1px solid fade(@brand-secondary, 20%);
     box-shadow: transparent 0px 1px 0px;
+    width: 100%;
     &.is-focused {
       border-bottom: 1px solid @brand-primary;
       box-shadow: @brand-primary 0px 1px 0px;
@@ -25,9 +27,6 @@ form {
       outline: none;
       border: none;
       box-shadow: none;
-    }
-    &:last-child {
-      margin-bottom: 30px;
     }
   }
   label {
@@ -63,7 +62,6 @@ form {
       background: none;
       position: absolute;
       right: 0px;
-      background: red;
       bottom: 3px;
       z-index: 2;
       font-size: 14px;
