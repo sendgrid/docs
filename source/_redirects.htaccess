@@ -147,7 +147,7 @@ Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.h
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/unsubscribes.html
-Redirect 301 /API_Reference/Web_API_v3/ip_access_management.html https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html
+
 
 #######
 #
@@ -575,7 +575,7 @@ Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Settings/ip_access_management.html https://sendgrid.com/docs/User_Guide/index.html
+
 
 #######
 #
