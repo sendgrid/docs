@@ -56,15 +56,11 @@ You will see a dialogue box presenting you with a blank form in which you may en
 
 ![]({{root_url}}/images/ip_access_management_add_ip.png)
 
-To enter a range of IP addresses, simply enter the first IP address followed by a `/` and then the last two digits of the last IP in the range. For example, the range `25.203.44.234/24` would include the following IPs:
+It is possible for advanced users to use CIDR notation to whitelist a range of IP addresses. To do so, simply enter your routing prefix followed by a `/` and then the number of bits in your routing mask. For example: `192.168.100.14/24`. 
 
-* `25.203.44.234`
-* `25.203.44.235`
-* `25.203.44.236`
-* `25.203.44.237`
-* `25.203.44.238`
-* `25.203.44.239`
-* `25.203.44.24`.
+{% warning %}
+Explaining CIDR notation is beyond the scope of this article, and we only recommend that advanced users use this notation when whitelisting IPs. If you are unfamiliar with CIDR notation, we recommend that you enter each IP individually when whitelisting a range of IPs.
+{% endwarning %}
 
 To enter a range of IP addresses using a “wildcard”, simply add an asterisk to the end of the IP. For example, `25.203.44.*` would include all IPs that begin with `25.203.44`.
 
