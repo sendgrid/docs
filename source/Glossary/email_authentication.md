@@ -12,4 +12,4 @@ navigation:
 
 Email authentication refers to technical standards that help ISPs and other receivers validate the identity of an email sender. There are three authentication standards in use: [SPF]({{root_url}}/Glossary/spf.html) developed by AOL, [Sender ID]({{root_url}}/Glossary/sender_id.html) developed by Microsoft and [DKIM]({{root_url}}/Glossary/dkim.html) developed by Yahoo!.
 
-To get more information please check out our [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation).
+To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html).
