@@ -92,6 +92,8 @@ tracking.
 Using KeyCDN
 {% endanchor %}
 
+This section is maintained by KeyCDN, if you have any questions about KeyCDN please [contact their support](https://www.keycdn.com/support/) team.
+
 [Sign up for KeyCDN](https://www.keycdn.com) or login to your
 existing account.
 
