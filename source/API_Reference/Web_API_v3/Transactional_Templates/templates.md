@@ -79,23 +79,19 @@ Retrieve a single template.
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/templates/:template_id %}
 {% v3response %}
 {
-  "templates": [
+  "id": "e8ac01d5-a07a-4a71-b14c-4721136fe6aa",
+  "name": "example template name",
+  "versions": [
     {
-      "id": "e8ac01d5-a07a-4a71-b14c-4721136fe6aa",
-      "name": "example template name",
-      "versions": [
-        {
-          "id": "de37d11b-082a-42c0-9884-c0c143015a47",
-          "user_id": 1234,
-          "template_id": "d51480ba-ca3f-465c-bc3e-ceb71d73c38d",
-          "active": 1,
-          "name": "example version",
-          "html_content": "<%body%><strong>Click to Reset</strong>",
-          "plain_content": "Click to Reset<%body%>",
-          "subject": "<%subject%>",
-          "updated_at": "2014-05-22 20:05:21"
-        }
-      ]
+      "id": "de37d11b-082a-42c0-9884-c0c143015a47",
+      "user_id": 1234,
+      "template_id": "d51480ba-ca3f-465c-bc3e-ceb71d73c38d",
+      "active": 1,
+      "name": "example version",
+      "html_content": "<%body%><strong>Click to Reset</strong>",
+      "plain_content": "Click to Reset<%body%>",
+      "subject": "<%subject%>",
+      "updated_at": "2014-05-22 20:05:21"
     }
   ]
 }

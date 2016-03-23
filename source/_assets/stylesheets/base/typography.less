@@ -23,7 +23,6 @@ h2 {
 }
 
 h3, .h3 {
-  color: fade(@brand-secondary, 80%);
   margin-bottom: 13px;
   margin-top: 20px;
   line-height: 30px;
@@ -37,7 +36,7 @@ h4 {
 }
 
 h5 {
-  color: fade(@brand-secondary, 60%);
+  color: rgba(41, 70, 97, 0.60);
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 13px;
@@ -54,16 +53,15 @@ p {
   margin-bottom: 16px;
   &.small {
     font-size: @font-size-small;
-    color: @text-color;
+    color: rgba(41, 70, 97, 0.60);
     font-weight: 400;
-    opacity: 60%;
   }
 }
 
 a {
-  color: fade(@brand-primary, 80%);
+  color: @link-color;
   &:hover, &:active, &:focus {
-    color: @brand-primary;
+    color: @link-hover-color;
     text-decoration: none;
   }
 }
