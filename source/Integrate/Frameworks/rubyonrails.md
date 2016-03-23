@@ -22,7 +22,7 @@ controllers for email views.
 $ rails generate mailer UserNotifier
 {% endcodeblock %}
 
-Now we open up the mailer we've just generated, <code>app/mailers/usernotifier.rb</code> and add a mailer action that sends users a signup email.
+Now we open up the mailer we've just generated, <code>app/mailers/user_notifier.rb</code> and add a mailer action that sends users a signup email.
 
 {% codeblock lang:ruby %}
 class UserNotifier < ActionMailer::Base
@@ -37,7 +37,7 @@ class UserNotifier < ActionMailer::Base
 end
 {% endcodeblock %}
 
-Now we need a view that corresponds to our action and outputs HTML for our email. Create a file <code>app/views/Usernotifier/send_signup_email.html.erb</code> as follows:
+Now we need a view that corresponds to our action and outputs HTML for our email. Create a file <code>app/views/User_notifier/send_signup_email.html.erb</code> as follows:
 
 {% codeblock lang:html %}
 <!DOCTYPE html>
