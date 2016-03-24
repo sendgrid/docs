@@ -72,7 +72,7 @@ To upload an image, click the big plus icon or the upload button. Then drag your
 will show you the status of your upload and then show a thumbnail of your image in your image library.
 
 {% warning %}
-The image library can store up to 200 images, but the file size for each image cannot exceed 20MB.
+The image library can store up to 400 images, but the file size for each image cannot exceed 10MB.
 {% endwarning %}
 
 ![]({{root_url}}/images/image_library_3.png "Upload an image")

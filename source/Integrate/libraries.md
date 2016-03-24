@@ -60,6 +60,12 @@ Web API Libraries
 {% endanchor %}
 
 {% anchor h3 %}
+Universal
+{% endanchor %}
+
+-   [CloudRail-SendGrid](https://cloudrail.com/?utm_source=SendGrid&utm_medium=Website&utm_campaign=SendGrid%20Website) *by CloudRail* - Bundle SendGrid and other APIs into one SDK
+
+{% anchor h3 %}
 .NET 
 {% endanchor %}
 
@@ -85,6 +91,12 @@ Go
 
 -   [sendgrid-go](http://github.com/sendgrid/sendgrid-go) - Official Go library to send emails
 -   [smtpapi-go](http://github.com/sendgrid/smtpapi-go) *by SendGrid*- Official Go library to create SMTP API headers
+
+{% anchor h3 %}
+Elixir 
+{% endanchor %}
+
+-   [sendgrid_elixir](http://github.com/alexgaribay/sendgrid_elixir) *by Alex Garibay* - Elixir package for sending SendGrid transactional emails
 
 {% anchor h3 %}
 Groovy 
