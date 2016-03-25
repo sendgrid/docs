@@ -24,7 +24,7 @@ SendGrid charges every account on a month-to-month subscription basis, at the be
 
 **How do I read my invoice?**
 
-Learn more about what you're paying for with our "[How to read your invoice]({{root_url}}/Classroom/Basics/Billing/How_to_read_you_invoice.html)" article.
+Learn more about what you're paying for with our "[How to read your invoice]({{root_url}}/Classroom/Basics/Billing/how_to_read_you_invoice.html)" article.
 
 
 
@@ -44,7 +44,7 @@ Accounts that have unpaid invoices and are still suspended during the last week 
 
 How does Marketing Campaigns billing work?
 
-Glad you asked! [Read more about it here]({{root_url}}/Classroom/Basics/Billing/How_does_billing_work_for_Marketing_Campaigns?.html). 
+Glad you asked! [Read more about it here]({{root_url}}/Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html). 
 
 
 
@@ -74,20 +74,20 @@ You will be billed $10 for every 10,000 contacts. Your first 2,000 contacts are 
 
 **I would like to request a refund.**
 
-Learn more about your eligibility for a possible refund [here]({{root_url}}/Classroom/Basics/Billing/I_would_like_to_request_a_refund.html).
+Learn more about your eligibility for a possible refund [here]({{root_url}}/Classroom/Basics/Billing/i_would_like_to_request_a_refund.html).
 
 
 
 
 **Here are some handy billing resources:**
 
-[Plan and Billing Details](https://sendgrid.com/settings/billing) - View or update your Credit Card, and download and view your invoices.
+[Plan and Billing Details](https://app.sendgrid.com/settings/billing) - View or update your Credit Card, and download and view your invoices.
 
 [SendGrid Pricing Page](http://sendgrid.com/pricing.html)- View the SendGrid plans along with their functionality and features. This also shows overage charges per package.
 
-[Upgrade your Account](https://sendgrid.com/settings/billing) - Upgrade your account to a higher level package, upgrades are effective immediately.
+[Upgrade your Account](https://app.sendgrid.com/settings/billing) - Upgrade your account to a higher level package, upgrades are effective immediately.
 
-[Downgrade your Account](https://sendgrid.com/settings/billing)- Downgrade your account to a lower level package, downgrades take effect on the first day of the next month.
+[Downgrade your Account](https://app.sendgrid.com/settings/billing)- Downgrade your account to a lower level package, downgrades take effect on the first day of the next month.
 
-[Cancel your Account](https://sendgrid.com/settings/billing) - Cancel your SendGrid account, this brings your account back down to the Free level.
+[Cancel your Account](https://app.sendgrid.com/settings/billing) - Cancel your SendGrid account, this brings your account back down to the Free level.
 
