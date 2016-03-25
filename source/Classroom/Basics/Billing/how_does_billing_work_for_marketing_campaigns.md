@@ -25,7 +25,7 @@ Example:
 
 If you have a Pro 100,000 plan ($79.95/month) who has uploaded 22,000 contacts to Marketing Campaigns ($20/month), will see a total bill for $99.95/month.
 
-High volume pricing is also available, contact our [Sales department](sales@sendgrid.com) for more details.
+High volume pricing is also available, contact our Sales department at <sales@sendgrid.com> for more details.
 
 
 ![]({{root_url}}/images/pricing_grid.png)
