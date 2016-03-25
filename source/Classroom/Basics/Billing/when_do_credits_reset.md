@@ -11,6 +11,6 @@ navigation:
   show: true
 ---
 
-Bronze, Silver, Gold, Platinum, and High Volume accounts see their email credits reset the _1st day of each&nbsp;month_ at 12:01 PST.&nbsp;
+Essentails, Pro, and Premier accounts will see their email credits reset the _1st day of each month_ at 12:01 PST.
 
 For Free, as well as Lite accounts, credits will reset _daily_ at 12:01 PST
