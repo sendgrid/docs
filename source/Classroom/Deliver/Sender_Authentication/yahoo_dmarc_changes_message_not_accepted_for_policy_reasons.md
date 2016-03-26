@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
-  description: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
-  keywords: policy, dmarc, spf, dkim, Yahoo
-title: Yahoo DMARC Changes&#58; "Message not accepted for policy reasons"
+  title: Yahoo DMARC Changes "Message not accepted for policy reasons"
+  description: Yahoo DMARC Changes "Message not accepted for policy reasons"
+  keywords: policy, dmarc, spf, dkim, Yahoo, yahoogroups, y7mail, p=, reject, p=reject
+title: Yahoo DMARC Changes "Message not accepted for policy reasons"
 weight: 0
 layout: page
 zendesk_id: 201876356
@@ -30,3 +30,58 @@ This is because Yahoo will no longer be accepting messages where the From domain
 &nbsp;
 
 For more extended reading, check out this blog post from our friends over at [Word to the Wise.](https://wordtothewise.com/2014/04/brief-dmarc-primer/)&nbsp;As well as our [DMARC Knowledgebase article](https://sendgrid.zendesk.com/hc/en-us/articles/200182958-Everything-about-DMARC-).
+
+
+
+28 March, 2016
+
+Yahoo has updated their DMARC policy to utilize **p=reject** for the below low-volume Yahoo international domains. Please make any changes you need to handle these domains in the same way you handle yahoo.com. 
+
+As a reminder, this change means that you will _not_ be able to send with a _from address_ of any of the following domains:
+
+y7mail.com
+yahoo.at
+yahoo.be
+yahoo.bg
+yahoo.cl
+yahoo.co.hu
+yahoo.co.id
+yahoo.co.il
+yahoo.co.kr
+yahoo.co.th
+yahoo.co.za
+yahoo.com.co
+yahoo.com.hr
+yahoo.com.my
+yahoo.com.pe
+yahoo.com.ph
+yahoo.com.sg
+yahoo.com.tr
+yahoo.com.tw
+yahoo.com.ua
+yahoo.com.ve
+yahoo.com.vn
+yahoo.cz
+yahoo.dk
+yahoo.ee
+yahoo.fi
+yahoo.hr
+yahoo.hu
+yahoo.ie
+yahoo.lt
+yahoo.lv
+yahoo.nl
+yahoo.no
+yahoo.pl
+yahoo.pt
+yahoo.rs
+yahoo.se
+yahoo.si
+yahoo.sk
+yahoogroups.co.kr
+yahoogroups.com.cn
+yahoogroups.com.sg
+yahoogroups.com.tw
+yahoogrupper.dk
+yahoogruppi.it
+yahooxtra.co.nz
