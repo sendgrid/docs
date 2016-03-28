@@ -6,7 +6,6 @@ seo:
 title: How does billing work for Marketing Campaigns?
 weight: 0
 layout: page
-zendesk_id: 
 navigation:
   show: true
 ---
