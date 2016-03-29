@@ -11,11 +11,11 @@ navigation:
   show: true
 ---
 
-&nbsp;
+ 
 
 Example Name substitution:
 
-&nbsp;
+ 
 
 Simple Substitution:
 
@@ -23,7 +23,7 @@ Simple Substitution:
 > 
 > "-name-": ["John", "Jane"]}
 
-&nbsp;
+ 
 
 Double Substitution:
 
@@ -33,27 +33,27 @@ Double Substitution:
 > 
 > "-last\_name-": ["Smith", "Williams"]}
 
-&nbsp;
+ 
 
 Simple Section and Substitution:
 
-&nbsp;
+ 
 
 > {"sub": {
 > 
-> "-name-": [&nbsp;"John", "Jane"&nbsp;],
+> "-name-": [ "John", "Jane" ],
 > 
 > "-warm\_welcome-": ["-greeting-"] },
 > 
 > "section": {
 > 
-> "-greeting-": "Hello&nbsp;-name-,"&nbsp;}
+> "-greeting-": "Hello -name-," }
 
-&nbsp;
+ 
 
 Double Substitution with Section:
 
-&nbsp;
+ 
 
 > {"sub": {
 > 
@@ -65,13 +65,13 @@ Double Substitution with Section:
 > 
 > "section": {
 > 
-> "-greeting-": "Hello -first\_name- -last\_name-,"&nbsp;}
+> "-greeting-": "Hello -first\_name- -last\_name-," }
 
-&nbsp;
+ 
 
 Complex Section and Substitution (01):
 
-&nbsp;
+ 
 
 > {"sub": {
 > 
@@ -87,21 +87,21 @@ Complex Section and Substitution (01):
 > 
 > "-greeting02-": "Hello -first\_name- -last\_name-,",
 > 
-> "-greeting03-": "Dear -first\_name- -last\_name-,"&nbsp;}
+> "-greeting03-": "Dear -first\_name- -last\_name-," }
 
-&nbsp;
+ 
 
 > {"to":
 > 
-> [&nbsp;"sample01@domain.com",&nbsp;"sample02@domain.com",&nbsp;"sample03@domain.com"&nbsp;],
+> [ "sample01@domain.com", "sample02@domain.com", "sample03@domain.com" ],
 > 
 > "sub":{
 > 
-> "-name-":&nbsp;[&nbsp;"sample01",&nbsp;"sample02",&nbsp;"sample03"&nbsp;],
+> "-name-": [ "sample01", "sample02", "sample03" ],
 > 
-> "-confirmations-":&nbsp;[&nbsp;"-confirmation\_001-",&nbsp;"-confirmation\_002-",&nbsp;"-confirmation\_003-"&nbsp;],
+> "-confirmations-": [ "-confirmation\_001-", "-confirmation\_002-", "-confirmation\_003-" ],
 > 
-> "-order\_id-":&nbsp;[&nbsp;"12345",&nbsp;"23456",&nbsp;"34567"&nbsp;] },
+> "-order\_id-": [ "12345", "23456", "34567" ] },
 > 
 > "section":{
 > 
@@ -115,7 +115,7 @@ Complex Section and Substitution (01):
 > 
 > }
 
-&nbsp;
+ 
 
 > {"to":
 > 
@@ -123,19 +123,19 @@ Complex Section and Substitution (01):
 > 
 > "sub":{
 > 
-> "\*|BLANK|\*":&nbsp;[""],
+> "\*|BLANK|\*": [""],
 > 
-> "\*|SUBJECTS|\*":&nbsp;["\*|SUBJECT01|\*","\*|SUBJECT02|\*","\*|SUBJECT03|\*"],
+> "\*|SUBJECTS|\*": ["\*|SUBJECT01|\*","\*|SUBJECT02|\*","\*|SUBJECT03|\*"],
 > 
-> "\*|SMALLBANNERS|\*":&nbsp;["","",""],
+> "\*|SMALLBANNERS|\*": ["","",""],
 > 
-> "\*|OFFERS|\*":&nbsp;["\*|OFFER01|\*","\*|OFFER02|\*","\*|OFFER03|\*"],
+> "\*|OFFERS|\*": ["\*|OFFER01|\*","\*|OFFER02|\*","\*|OFFER03|\*"],
 > 
-> "\*|B\_AMOUNT|\*":&nbsp;["19.95","55.95",""],
+> "\*|B\_AMOUNT|\*": ["19.95","55.95",""],
 > 
-> "\*|BALANCES|\*":&nbsp;["\*|BALANCE|\*","\*|BALANCE|\*","\*|BLANK|\*"],
+> "\*|BALANCES|\*": ["\*|BALANCE|\*","\*|BALANCE|\*","\*|BLANK|\*"],
 > 
-> "\*|ANALYTICS|\*":&nbsp;["\*|ANALYTIC|\*","\*|ANALYTIC|\*","\*|ANALYTIC|\*"]},
+> "\*|ANALYTICS|\*": ["\*|ANALYTIC|\*","\*|ANALYTIC|\*","\*|ANALYTIC|\*"]},
 > 
 > "section": {
 > 
@@ -151,7 +151,7 @@ Complex Section and Substitution (01):
 > 
 > "\*|SMALLBANNER03|\*": "Banner 03",
 > 
-> "\*|BALANCE|\*": "You have a balance of&nbsp;$\*|B\_AMOUNT|\*",
+> "\*|BALANCE|\*": "You have a balance of $\*|B\_AMOUNT|\*",
 > 
 > "\*|OFFER01|\*": "Offer 01",
 > 
@@ -165,9 +165,9 @@ Complex Section and Substitution (01):
 > 
 > }
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
 {"to": [  
  "kyle.a.roberts@outlook.com",  
@@ -185,18 +185,18 @@ Complex Section and Substitution (01):
 
 " ,": [",",",",",",",",",",","],
 
-&nbsp;
+ 
 
 "-warm\_welcome-": ["-greeting-", "-greeting-", "-greeting-", "-greeting-", "-greeting-", "-greeting-"]},  
 "section": {  
 "-greeting-": "Welcome -first\_name- -last\_name-,",  
 "-1-": "Welcome," }}
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
 "sub": { "%name%": ["Ben", "Joe"], "%role%": ["%sellerSection%", "%buyerSection%"] }, "section": { "%sellerSection%": "Seller information for: %name%", "%buyerSection%": "Buyer information for: %name%" }
 

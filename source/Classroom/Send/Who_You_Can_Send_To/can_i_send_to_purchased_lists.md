@@ -15,9 +15,9 @@ navigation:
 
 Next question.
 
-&nbsp;
+ 
 
-In all seriousness, we don't allow our users to send to purchased lists&nbsp;for any reason.&nbsp;
+In all seriousness, we don't allow our users to send to purchased lists for any reason. 
 
 First, purchased lists violate our [Email Policy](https://sendgrid.com/email_policy).
 

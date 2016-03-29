@@ -13,7 +13,7 @@ navigation:
 
 In order to help you get the best deliverability, here are some informational articles we have about our recommended sending practices and methods:
 
-&nbsp;
+ 
 
 [Sending Peer-initiated and Invitation Emails]({{root_url}}/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html)
 
@@ -23,6 +23,6 @@ In order to help you get the best deliverability, here are some informational ar
 
 [Why Purchased Email Lists Are No Good]({{root_url}}/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html)
 
-&nbsp;
+ 
 
 If you have any questions about these sending practices or methods and how they can help improve your deliverability, please contact the SendGrid Support Team. Our [Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) article also has a multitude of other deliverability tips and tricks.

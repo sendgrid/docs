@@ -25,6 +25,6 @@ One common issue that arises with email registration forms is people registering
 
 There are many great techniques available to protect your registration form but a balance must be created between user friendliness and security. Some forms have many required fields in registering as well as checks to make sure that the form is filled out correctly. Too many fields can drive away potential interest in your site or product. One way to balance out the registration process is to have other information about the person be collected on a landing page after the registration form is done. This serves to be both user friendly as well as allow you to collect valuable information.
 
-&nbsp;
+ 
 
 Feel free to view our [Security Check]({{root_url}}/Classroom/Basics/Security/security_checklist.html) list for more security tips.

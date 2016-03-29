@@ -11,5 +11,5 @@ navigation:
   show: true
 ---
 
-Currently&nbsp;there is not a way to download your Click and Open data from the website. We recommend implementing out [Event Notification](https://app.sendgrid.com/settings/mail_settings) feature if you find yourself needing to store this data.&nbsp;
+Currently there is not a way to download your Click and Open data from the website. We recommend implementing out [Event Notification](https://app.sendgrid.com/settings/mail_settings) feature if you find yourself needing to store this data. 
 

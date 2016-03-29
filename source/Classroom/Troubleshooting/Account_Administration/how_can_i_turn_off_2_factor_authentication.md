@@ -11,15 +11,15 @@ navigation:
   show: true
 ---
 
-Currently there is not a way through the Sendgrid website or API to turn off 2 factor authentication once you've enabled it.&nbsp;
+Currently there is not a way through the Sendgrid website or API to turn off 2 factor authentication once you've enabled it. 
 
-However, a Support agent can turn it off&nbsp;manually upon request, just get in touch using one of the links below to get started!
+However, a Support agent can turn it off manually upon request, just get in touch using one of the links below to get started!
 
-&nbsp;
+ 
 
 We'll need to do a few steps to verify, here's a general rundown:
 
-1. We'll have you verify some information in your account by logging in and making a quick change.&nbsp;
+1. We'll have you verify some information in your account by logging in and making a quick change. 
 
 2. We'll send you a text to the number you have registered for 2FA in your account.
 

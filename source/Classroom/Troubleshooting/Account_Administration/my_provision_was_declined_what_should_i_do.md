@@ -16,7 +16,7 @@ navigation:
 We send a message to your registered email address containing information that explains why your account was not activated. Here are a few common reasons for the initial provision declination:
 
 - **Verify Domain Control** – We need to verify that you are in control of or are associated with the registered domain.
-- **Inadequate Domain** – If there isn't a live website or a splash page, or there is very minimal content on your website, then it makes it difficult for us to ascertain what kinds of email you’ll be sending and to whom. We'll also need an&nbsp;explanation and/or samples of the messages you plan to send through our system.
+- **Inadequate Domain** – If there isn't a live website or a splash page, or there is very minimal content on your website, then it makes it difficult for us to ascertain what kinds of email you’ll be sending and to whom. We'll also need an explanation and/or samples of the messages you plan to send through our system.
 - **Different Connections** – This means that your registered address differs from the region of the world from which we see you connecting to our site. We need to verify that the account was created by someone associated with or contracted by your company.
 - **Duplicate Account** – We only allow one account per customer and per domain, sorry!
 
