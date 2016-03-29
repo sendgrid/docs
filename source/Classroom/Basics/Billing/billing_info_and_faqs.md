@@ -23,7 +23,7 @@ SendGrid charges every account on a month-to-month subscription basis, at the be
 
 **How do I read my invoice?**
 
-Learn more about what you're paying for with our "[How to read your invoice]({{root_url}}/Classroom/Basics/Billing/how_to_read_you_invoice.html)" article.
+Learn more about what you're paying for with our "[How to read your invoice]({{root_url}}/Classroom/Basics/Billing/how_to_read_your_invoice.html)" article.
 
 
 **Do credits roll over?**
