@@ -24,7 +24,7 @@ Alternatively, if you request a refund on the 5th of the month, and we can see t
 
 Please note; Refunds are only applicable to the subscription charge on your account, not for overages accrued during the prior month or contact storage charges. 
 
-Did you forget to downgrade or cancel your account? [Click here for more info]({{root_url}}/Classroom/Basics/Billing/Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html). 
+Did you forget to downgrade or cancel your account? [Click here for more info]({{root_url}}/Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html). 
 
  
  ![]({{root_url}}/images/2015-05-26_0952.png) 
@@ -43,7 +43,7 @@ For more information on how overages are calculated, please refer to the above g
 
 For information on how contact storage in Marketing Campaigns is calculated, [click here]({{root_url}}/Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html). 
 
-Did you forget to downgrade or cancel your account? [Click here for more info]({{root_url}}/Classroom/Basics/Billing/Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html). 
+Did you forget to downgrade or cancel your account? [Click here for more info]({{root_url}}/Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html). 
 
  
 
