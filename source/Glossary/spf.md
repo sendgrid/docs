@@ -87,6 +87,6 @@ SPF Wizard
 
 Related Links:
 
-* <a href="https://sendgrid.zendesk.com/hc/en-us/articles/202517236">SPF Records Explained</a>
-* <a href="https://sendgrid.zendesk.com/hc/en-us/articles/200185168">SPF: Don't Exceed Ten DNS Lookups!</a>
-* <a href="https://sendgrid.zendesk.com/hc/en-us/articles/200181678">Internet Standards (SPF and DKIM) and Deliverability</a>
+* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/spf_records_explained.html">SPF Records Explained</a>
+* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html">SPF: Don't Exceed Ten DNS Lookups!</a>
+* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html">Internet Standards (SPF and DKIM) and Deliverability</a>
