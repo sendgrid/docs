@@ -11,13 +11,13 @@ navigation:
   show: true
 ---
 
-You can receive bounce notifications to a specific address&nbsp;by enabling the "Forward Bounces" feature in your account and&nbsp;defining the forwarding address.&nbsp;
+You can receive bounce notifications to a specific address by enabling the "Forward Bounces" feature in your account and defining the forwarding address. 
 
-&nbsp;To access this feature navigate to **[Mail Settings](https://sendgrid.com/beta/settings/mail_settings)** --> Forward Bounce:
+ To access this feature navigate to **[Mail Settings](https://sendgrid.com/beta/settings/mail_settings)** --> Forward Bounce:
 
-&nbsp;
+ 
 
 You'll want to scroll down the page and click the "Enable Bounces Forwarding" box, and leave the email address entry field blank. This setup allows you to receive a bounce notification report to the FROM address on the email that bounced.
 
-&nbsp;&nbsp;
+  
 

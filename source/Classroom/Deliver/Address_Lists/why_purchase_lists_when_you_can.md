@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-Every time a sender breaks our [Terms of Service](http://sendgrid.com/email_policy.html)&nbsp;by purchasing a list the answer is always the same: “To grow their recipient list.” This is completely understandable because typically there is no malice and the list advertisers make it sound like the recipients are genuinely interested in your content. There is inertia and potential. Gaining exposure to potential buyers and promoting your product is essential to the success of any business, but it won’t work. This is spamming. A common misconception is that the greater quantity of recipients means greater results. The truth is that quality is the anthem of success. A list full of engaged, excited recipients will yield a sender far better results in the short run and even more in the long run. Customers’ attention cannot just be bought; it must be earned. Legendary email marketer Seth Godin summed it up best, "Earning permission is a long-term, profitable, scalable strategy that pays for itself. Think about how much better off a brand would be if it took the time to make promises, keep them and be transparent about its communications."
+Every time a sender breaks our [Terms of Service](http://sendgrid.com/email_policy.html) by purchasing a list the answer is always the same: “To grow their recipient list.” This is completely understandable because typically there is no malice and the list advertisers make it sound like the recipients are genuinely interested in your content. There is inertia and potential. Gaining exposure to potential buyers and promoting your product is essential to the success of any business, but it won’t work. This is spamming. A common misconception is that the greater quantity of recipients means greater results. The truth is that quality is the anthem of success. A list full of engaged, excited recipients will yield a sender far better results in the short run and even more in the long run. Customers’ attention cannot just be bought; it must be earned. Legendary email marketer Seth Godin summed it up best, "Earning permission is a long-term, profitable, scalable strategy that pays for itself. Think about how much better off a brand would be if it took the time to make promises, keep them and be transparent about its communications."
 
-&nbsp;
+ 
 
 How to grow your email list healthily and with great results:
 
@@ -40,12 +40,12 @@ How to grow your email list healthily and with great results:
 
 6. Facebook is a great way to promote. Set up a Facebook page to connect with your recipients and promote in fun ways like contests and giveaways. Reward your loyal followers. Put a email registration form on your page to strengthen your connection. Make sure that there are benefits to joining the email list such as a personal birthday promotion.
 
-&nbsp;
+ 
 
-7. Make it easy for your fans to promote your organization. Add a simple form to your website where fans can send an invite or just let their friends know about what you have to offer. But first, swing by our [guidelines]({{root_url}}/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html) to make sure that your campaign will be done safely and&nbsp;successfully.&nbsp;
+7. Make it easy for your fans to promote your organization. Add a simple form to your website where fans can send an invite or just let their friends know about what you have to offer. But first, swing by our [guidelines]({{root_url}}/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html) to make sure that your campaign will be done safely and successfully. 
 
 
- 8. Keep your content captivating. Think about who you are sending to and what they would be interested in. The key to successful promotion is to find the people that will be excited about what you offer. Those are the people that spread your ideas. Seth Godin released a helpful&nbsp; [checklist](http://sethgodin.typepad.com/seths_blog/2008/06/email-checklist.html)&nbsp;to run through every time an email is sent that will help you make sure you deliver great content.&nbsp;  
+ 8. Keep your content captivating. Think about who you are sending to and what they would be interested in. The key to successful promotion is to find the people that will be excited about what you offer. Those are the people that spread your ideas. Seth Godin released a helpful  [checklist](http://sethgodin.typepad.com/seths_blog/2008/06/email-checklist.html) to run through every time an email is sent that will help you make sure you deliver great content.   
 
 
 Further ideas or suggestions? What has worked for you in the past? Let us know in the comments section.

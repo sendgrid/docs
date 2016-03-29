@@ -21,7 +21,7 @@ When you receive messages like this, you can trash them. If you have the time, p
 
 **Also, remember...**
 
-- Use strong passwords for your accounts (when possible,&nbsp;pass-phrases&nbsp;that include alphanumeric characters and symbols).
+- Use strong passwords for your accounts (when possible, pass-phrases that include alphanumeric characters and symbols).
 - Don't share your passwords.
 - Your password should never be the same as your username.
 - If you think your password may have been compromised, change it.

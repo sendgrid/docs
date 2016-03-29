@@ -11,14 +11,14 @@ navigation:
   show: true
 ---
 
-The total message size should not exceed&nbsp; **20MB.** This includes the message itself, headers, and the combined size of any attachments.&nbsp;
+The total message size should not exceed  **20MB.** This includes the message itself, headers, and the combined size of any attachments. 
 
-Using this limit will give you the best chance of not hitting server-side size limits as well, as many mail servers will have varying policies when it comes to the size of messages they will accept.&nbsp;
+Using this limit will give you the best chance of not hitting server-side size limits as well, as many mail servers will have varying policies when it comes to the size of messages they will accept. 
 
-&nbsp;
+ 
 
 This same size limit applies when sending messages to our Parse API webhook, 20mb or under, if you please!
 
-&nbsp;
+ 
 
-&nbsp;
+ 
