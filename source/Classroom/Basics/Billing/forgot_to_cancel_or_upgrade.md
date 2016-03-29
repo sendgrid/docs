@@ -17,4 +17,4 @@ EXAMPLE:
 
 If you request a refund on your $79.95/mo Pro account, and your monthly invoice totals $117.00 due to a combination of overages and contact storage, you are only eligible for a refund of up to 79.95. The remaining 37.05 cannot be refunded in this scenario. 
 
-If you need to request a refund, please email <billing@sendgrid.com>.
+If you need to request a refund, please email &lt;billing@sendgrid.com&gt;.
