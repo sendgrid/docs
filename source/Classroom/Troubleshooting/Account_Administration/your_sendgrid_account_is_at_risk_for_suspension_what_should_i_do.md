@@ -11,17 +11,17 @@ navigation:
   show: true
 ---
 
-When you get an email like this, it means that our system noticed that your deliverability rates &nbsp;(delivered events / processed events) have dropped, or that you received complaints (spam reports) from you clients.
+When you get an email like this, it means that our system noticed that your deliverability rates  (delivered events / processed events) have dropped, or that you received complaints (spam reports) from you clients.
 
-Don't worry though, this&nbsp;is simply a precautionary warning. No need to be alarmed!
+Don't worry though, this is simply a precautionary warning. No need to be alarmed!
 
-&nbsp;
+ 
 
 **What should you do?**
 
 - **Check your email activity:** You should take a close look at your recent email activity logs by using the [Stats Dashboard](https://sendgrid.com/statistics/overview). There, you would have to check your Bounce / Spam Report / Invalid Email Rates. All of these could affect your reputation as a sender.
 
-&nbsp;
+ 
 
 ![]({{root_url}}/images/Selection_028.png)
 
@@ -40,4 +40,4 @@ In this situation you most probably received an email already from our Complianc
 
 Happy sending!
 
-&nbsp;
+ 

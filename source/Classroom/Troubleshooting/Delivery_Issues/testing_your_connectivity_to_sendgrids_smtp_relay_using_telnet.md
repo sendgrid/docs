@@ -13,20 +13,20 @@ navigation:
 
 ## Starting your Telnet connection
 
-To begin, open your Windows menu, type cmd into the search function, and press enter.&nbsp;
+To begin, open your Windows menu, type cmd into the search function, and press enter. 
 
-If you are using a Mac, launch the Terminal application.&nbsp;
+If you are using a Mac, launch the Terminal application. 
 
-You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the&nbsp;progression&nbsp;below to walk you through the connection, every line starting with > is a command you will type and&nbsp;subsequently&nbsp;press the <enter> key afterwards.&nbsp;
+You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the progression below to walk you through the connection, every line starting with > is a command you will type and subsequently press the <enter> key afterwards. 
 
 ## Acceptable Ports
 
-We accept unencrypted and TLS connections on ports **25** , **587** , & **2525** &nbsp;and&nbsp;SSL encryption on **465**.  
+We accept unencrypted and TLS connections on ports **25** , **587** , & **2525**  and SSL encryption on **465**.  
 You can test for open ports using the following telnet command, substituting _#_ for a port number:
 
     >telnet smtp.sendgrid.net #
 
-&nbsp;
+ 
 
 ## Telnet Response:
 
@@ -40,6 +40,6 @@ You can test for open ports using the following telnet command, substituting _#_
     > <enter> you need to enter one blank line before you start the actual body of the message
     >This is the body of the message you would like to send. <enter>>. <enter> typing a period(.) tells us you are finished, and to send the message250 Delivery in progress>quit <enter>221 See you laterConnection to host lost.
 
-&nbsp;
+ 
 
-_ **Note** :&nbsp;__If upon attempting 'telnet smtp.sendgrid.net #', you receive an error stating "'telnet' is not recognized as an internal or external command, operable program or batch file." this means that Telnet is not installed on your machine. This can be done by visiting your "Add and Remove Progams" section within your Control Panel, and installing the 'Telnet Client' and 'Telnet Server' packages within 'Turn&nbsp;Windows&nbsp;features on or off".&nbsp;_
+_ **Note** : __If upon attempting 'telnet smtp.sendgrid.net #', you receive an error stating "'telnet' is not recognized as an internal or external command, operable program or batch file." this means that Telnet is not installed on your machine. This can be done by visiting your "Add and Remove Progams" section within your Control Panel, and installing the 'Telnet Client' and 'Telnet Server' packages within 'Turn Windows features on or off". _

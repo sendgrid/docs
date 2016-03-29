@@ -15,11 +15,11 @@ navigation:
 
 Ever received an email message that claimed to be from a company or a brand, and clearly wasn’t? This “phishy” behavior is often the result of domain spoofing, and is likely the work of someone trying to phish personal details of the messages’ recipients. Current email infrastructure standards aren’t perfect, and can sometimes be exploited. So how do you protect your own domain or brand from being spoofed in this way?  
 
-Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Which was created to tell a participating receiving server what to do with a message that fails both SPF and DKIM validation. In other words, what to do if a&nbsp;message&nbsp;claims to be from you, but isn't.
+Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Which was created to tell a participating receiving server what to do with a message that fails both SPF and DKIM validation. In other words, what to do if a message claims to be from you, but isn't.
 
 # How do I implement it?
 
-Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you.&nbsp;  
+Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you.   
 
 DMARC, in conjunction with a dedicated IP (Silver or higher) SendGrid package is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.   
 Return Path's Brand Monitor is one, and Agari is another.
@@ -35,8 +35,8 @@ Return Path's Brand Monitor is one, and Agari is another.
 
 ## 1. Deploy DKIM & SPF by Whitelabeling your Sendgrid IP
 
-Start by completing the Whitelabel process for your account. This ensures that emails sent through your Sendgrid account will be properly signed using DKIM and SPF for your unique domain.&nbsp;  
-For more information on completing this process, visit the documentation:&nbsp;  
+Start by completing the Whitelabel process for your account. This ensures that emails sent through your Sendgrid account will be properly signed using DKIM and SPF for your unique domain.   
+For more information on completing this process, visit the documentation:   
 http://sendgrid.com/docs/User\_Guide/whitelabel\_wizard.html
 
 ## 2. Ensure proper DKIM and SPF signing for your Whitelabel domain
@@ -50,18 +50,18 @@ Within your DNS registrar, you'll need to create a TXT resource record that rece
 
 ![](https://lh6.googleusercontent.com/d9Cpjrw0_rW_s9KuXTYdfQNISzwOTFTunaDbkHU5frW7se-a3nsEkR2MkTIBGdUF8i6IhOCF88jLF0zGrjajwy2iIxcTdJ6ptxX4avQLsXYeThW_MhI)
 
-&nbsp;
+ 
 
 ### A simple DMARC record
 
     “v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc.rua@customddomain.com”
 
 The record explained:  
-**v** =DMARC1;&nbsp; - Version - It is set to use DMARC version 1, there are no other versions at present. So always set 1.
+**v** =DMARC1;  - Version - It is set to use DMARC version 1, there are no other versions at present. So always set 1.
 
-**pct** =100; &nbsp;- Percent - Assess 100% of messages claiming to be from the domain, this can be any number between 1 and 100.
+**pct** =100;  - Percent - Assess 100% of messages claiming to be from the domain, this can be any number between 1 and 100.
 
-**p** =quarantine **;** &nbsp; - Policy - Tell receiver to QUARANTINE unqualified mail, which generally means “send this directly to the spam folder”.
+**p** =quarantine **;**   - Policy - Tell receiver to QUARANTINE unqualified mail, which generally means “send this directly to the spam folder”.
 
 **rua** = [mailto:dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com) Reporting URI of aggregate reports - Send aggregate reports to dmarc.rua [@customdomain.com](mailto:postmaster@whitelabeldomain.com), set this to an email address you control that is closely monitored.
 
@@ -101,17 +101,17 @@ Up until now you should have only been using the p=none policy to get reports of
 
 **p=quarantine** - Unqualified mail goes directly to spam, but can be recovered. This is useful when you’re fairly certain you know all the locations where mail is coming from, but want to ‘softfail’ any messages that are unqualified until you’re 100% sure.   
 
-**p=reject** - When you’re absolutely sure you know every server and service that is sending email for your domain, signing is in place for each of these services and you want anything with the audacity to claim otherwise completely denied. Unqualified mail is completely deleted by the recipient mail server, never to be seen again.&nbsp;
+**p=reject** - When you’re absolutely sure you know every server and service that is sending email for your domain, signing is in place for each of these services and you want anything with the audacity to claim otherwise completely denied. Unqualified mail is completely deleted by the recipient mail server, never to be seen again. 
 
 # Other Resources
 
 Overview: [dmarc.org](https://sendgrid.zendesk.com/hc/admin/articles/200182958-Everything-about-DMARC-/dmarc.org)  
-Frequently Asked Questions: &nbsp; [http://dmarc.org/faq.html](http://dmarc.org/faq.html)  
+Frequently Asked Questions:   [http://dmarc.org/faq.html](http://dmarc.org/faq.html)  
 Specification: [http://dmarc.org/specification.html](http://dmarc.org/specification.html)  
 Sendgrid Blog Post: [http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/)  
 SPF Syntax: [http://www.openspf.org/SPF\_Record\_Syntax](http://www.openspf.org/SPF_Record_Syntax)
 
-Returnpath:&nbsp; [http://www.returnpath.com/solution-content/dmarc-support/](http://www.returnpath.com/solution-content/dmarc-support/)  
-Agari:&nbsp; [http://agari.com/dmarc/](http://www.openspf.org/SPF_Record_Syntax)  
+Returnpath:  [http://www.returnpath.com/solution-content/dmarc-support/](http://www.returnpath.com/solution-content/dmarc-support/)  
+Agari:  [http://agari.com/dmarc/](http://www.openspf.org/SPF_Record_Syntax)  
 SPF record validator: [http://www.kitterman.com/spf/validate.html](http://www.kitterman.com/spf/validate.html)  
 DMARC record validator: [http://kitterman.com/dmarc/assistant.html](http://kitterman.com/dmarc/assistant.html)

@@ -11,11 +11,11 @@ navigation:
   show: true
 ---
 
-if you're attempting to change&nbsp;the password for your SendGrid account and you're integrated via AppDirect the instructions to do so are slightly different. Rather than updating them via the **Account Settings** &nbsp;you can update your credentials by going to **Manage Apps** > **SendGrid** > **Settings** &nbsp;via the AppDirect UI.&nbsp;
+if you're attempting to change the password for your SendGrid account and you're integrated via AppDirect the instructions to do so are slightly different. Rather than updating them via the **Account Settings**  you can update your credentials by going to **Manage Apps** > **SendGrid** > **Settings**  via the AppDirect UI. 
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 

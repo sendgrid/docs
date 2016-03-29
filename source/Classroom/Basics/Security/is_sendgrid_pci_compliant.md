@@ -11,10 +11,10 @@ navigation:
   show: true
 ---
 
- **Yes!** We do not store your credit card information anywhere in our systems.&nbsp;
+ **Yes!** We do not store your credit card information anywhere in our systems. 
 
-We can provide a&nbsp;PCI-DSS certificate upon request.
+We can provide a PCI-DSS certificate upon request.
 
-&nbsp;
+ 
 
-&nbsp;
+ 

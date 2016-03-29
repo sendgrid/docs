@@ -21,7 +21,7 @@ _Please note that in order to maintain seamless email flow, it is important to a
 
 ![]({{root_url}}/images/azurepwdchangeupdated.png)
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 

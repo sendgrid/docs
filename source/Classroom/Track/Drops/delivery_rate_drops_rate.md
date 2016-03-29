@@ -11,5 +11,5 @@ navigation:
   show: true
 ---
 
-This delivery rate is calculated simply&nbsp;as the ratio of email successfully delivered(Delivered events) to email delivery requests(Processed events).&nbsp;
+This delivery rate is calculated simply as the ratio of email successfully delivered(Delivered events) to email delivery requests(Processed events). 
 
