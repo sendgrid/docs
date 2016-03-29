@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-FORMAT 1A
+FORMAT: 1A
 
 # Group Event Webhook Settings
 
