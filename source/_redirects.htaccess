@@ -292,6 +292,7 @@ Redirect 301 /Classroom/Deliver/unsubscribes_explained.html https://sendgrid.com
 Redirect 301 /Classroom/Deliver/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html
 Redirect 301 /Classroom/Deliver/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html
 Redirect 301 /Classroom/Deliver/list_scrubbing_guide.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/list_scrubbing_guide.html
+Redirect 301 /Classroom/Deliver/list_scrubbing.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/list_scrubbing_guide.html
 Redirect 301 /Classroom/Deliver/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html
 Redirect 301 /Classroom/Deliver/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html
 Redirect 301 /Classroom/Deliver/role_addresses.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/role_addresses.html
