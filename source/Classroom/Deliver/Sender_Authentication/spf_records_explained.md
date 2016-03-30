@@ -15,44 +15,44 @@ Sender Policy Framework (SPF) is an open standard aimed at preventing sender add
 
 **SPF and Whitelabel**
 
-As part of the&nbsp;whitelabel process&nbsp;you must create a subdomain (such as&nbsp;_email.yourdomain.com_) which is used for click and open tracking as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain.&nbsp;
+As part of the whitelabel process you must create a subdomain (such as _email.yourdomain.com_) which is used for click and open tracking as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain. 
 
-If you have an SPF record set for your&nbsp; **root** &nbsp;domain (i.e.&nbsp;yourdomain_.com_), you must add a unique alphanumeric string&nbsp;before the&nbsp;_all_&nbsp;mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an SPF record for your domain you must create a TXT record with the value provided to you during the whitelabel creation process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
+If you have an SPF record set for your  **root**  domain (i.e. yourdomain_.com_), you must add a unique alphanumeric string before the _all_ mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an SPF record for your domain you must create a TXT record with the value provided to you during the whitelabel creation process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
 
 v=spf1 include:u826348.wl.sendgrid.net -all
 
 In this example we have a unique SPF record for the authorization of outbound mail for an account. A "-" inclusion versus a "~" inclusion indicates that this SPF record is the only record used to authenticate mail for your domain. Make sure to include any other authorized sender into this SPF record if you need to authenticate mailings from other sources.
 
-Do not create&nbsp;more than one SPF1 record for a given domain. In this case you will want to merge the additional SPF records into one SPF record.
+Do not create more than one SPF1 record for a given domain. In this case you will want to merge the additional SPF records into one SPF record.
 
-You also cannot have&nbsp; [more than 10 DNS lookups]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html)&nbsp;in your SPF record.
+You also cannot have  [more than 10 DNS lookups]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html) in your SPF record.
 
-&nbsp;
+ 
 
-**Already have an SPF record for your domain?&nbsp;**
+**Already have an SPF record for your domain? **
 
-No problem. You simply need to add your&nbsp;Sendgrid account's&nbsp;unique SPF&nbsp;inclusion&nbsp;into your existing record.&nbsp;
+No problem. You simply need to add your Sendgrid account's unique SPF inclusion into your existing record. 
 
-For example, say your record looks like this:&nbsp;
+For example, say your record looks like this: 
 
-_v=spf1 a mx&nbsp;_ **_i_** _nclude:\_spf.google.com&nbsp;include:spf.protection.outlook.com -all_
+_v=spf1 a mx _ **_i_** _nclude:\_spf.google.com include:spf.protection.outlook.com -all_
 
-You would just&nbsp;need to add our lookup at the end of the string, before the \*all mechanism, like so:
+You would just need to add our lookup at the end of the string, before the \*all mechanism, like so:
 
-_v=spf1 a mx&nbsp;_ **_i_** _nclude:\_spf.google.com&nbsp;include:spf.protection.outlook.com&nbsp;include:u826348.wl.sendgrid.net -all_
+_v=spf1 a mx _ **_i_** _nclude:\_spf.google.com include:spf.protection.outlook.com include:u826348.wl.sendgrid.net -all_
 
-&nbsp;
+ 
 
-**Don't want to include&nbsp;another hostname&nbsp;lookup?&nbsp;**
+**Don't want to include another hostname lookup? **
 
-If you would rather not include Sendgrid's SPF hostname lookup in your record, or perhaps you just have&nbsp; [too many already]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html), you can also choose to give permission to a specific IP address to send mail for your domain. This is accomplished using the ip4 mechanism.
+If you would rather not include Sendgrid's SPF hostname lookup in your record, or perhaps you just have  [too many already]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html), you can also choose to give permission to a specific IP address to send mail for your domain. This is accomplished using the ip4 mechanism.
 
-If you have a Pro 100K or higher level package, you can choose to specify your [dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html) as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within Sendgrid for that domain. An example of such an include looks like this:&nbsp;
+If you have a Pro 100K or higher level package, you can choose to specify your [dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html) as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within Sendgrid for that domain. An example of such an include looks like this: 
 
-_v=spf1 a mx i__nclude:\_spf.google.com&nbsp;include:spf.protection.outlook.com ip4:12.34.56.78 -all_
+_v=spf1 a mx i__nclude:\_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 -all_
 
 If you wish to add multiple ip4 lookups(if you have an account that sends from multiple dedicated IPs, for example), simply add them into your record separated by spaces. Unlike with include:hostname lookups, a SPF1 record can have any number of ip4 includes.
 
-&nbsp;
+ 
 
-For more information on SPF best practices and syntax, check out&nbsp; [www.openspf.org](http://www.openspf.org/)
+For more information on SPF best practices and syntax, check out  [www.openspf.org](http://www.openspf.org/)

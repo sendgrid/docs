@@ -11,17 +11,17 @@ navigation:
   show: true
 ---
 
-There are a few ways to create multiple user credentials for your sub-users.&nbsp;
+There are a few ways to create multiple user credentials for your sub-users. 
 
 1. Login directly as the sub-user. Click on account settings, then Manage Multiple User Credentials and add your new MUC. **You will not be able to add a going through Subuser Management. You need to login directly as a sub-user.**
 
-Here is a helpful video&nbsp; [http://screencast.com/t/5wOlumK0kUdx](http://screencast.com/t/5wOlumK0kUdx) and link to the docs page. [Click here](https://sendgrid.com/docs/User_Guide/multiple_credentials.html)
+Here is a helpful video  [http://screencast.com/t/5wOlumK0kUdx](http://screencast.com/t/5wOlumK0kUdx) and link to the docs page. [Click here](https://sendgrid.com/docs/User_Guide/multiple_credentials.html)
 
-&nbsp;
+ 
 
 2. You can use Web-API calls. [Click here](https://sendgrid.com/docs/API_Reference/Web_API/multiple_credentials.html)
 
-&nbsp;
+ 
 
 2. Use this cURL command;
 
@@ -34,4 +34,4 @@ curl -X "POST" "https://api.sendgrid.com/api/credentials/add.json" \
         -F "password=new_subuser_credential_password" \
         -F "permissions={\"email\": 1, \"web\": 1, \"api\": 1}"
 
-**&nbsp;**
+** **

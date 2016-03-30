@@ -15,7 +15,7 @@ navigation:
 
 This is a “Drop” event which occurs when a message to an address has previously Unsubscribed from one of your messages.
 
-You can visit the [Global Unsubscribes](https://app.sendgrid.com/suppressions/global_unsubscribes)&nbsp;under the&nbsp;Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error code. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop it to protect your external reputation.
+You can visit the [Global Unsubscribes](https://app.sendgrid.com/suppressions/global_unsubscribes) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error code. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop it to protect your external reputation.
 
 ![]({{root_url}}/images/Screen_Shot_2015-05-20_at_3.26.25_PM.png)
 

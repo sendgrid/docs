@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-We do not store message content of emails we send, we simply&nbsp;send them on their merry way for the most part. As a result, there is not a way to view content of emails you have already sent.&nbsp;
+We do not store message content of emails we send, we simply send them on their merry way for the most part. As a result, there is not a way to view content of emails you have already sent. 
 
 If you happen to be using our Email Marketing app, we will store copies of the original templates that you send out, and you can view and store them whenever you like. There are no storage limits or expirations on these content templates. This doesn't include specific copies of those emails sent to specific recipients, however.
 

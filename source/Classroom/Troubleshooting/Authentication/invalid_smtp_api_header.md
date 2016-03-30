@@ -41,6 +41,6 @@ Looking at this we can see that the closing of the "to" section did not happen. 
 
 To either prevent or troubleshoot issues like this you can run your JSON through our [SMTP API Header Validator](https://sendgrid.com/docs/Utilities/smtpapi_validator.html). Additionally, [JSONLint](http://jsonlint.com/) or [JSONLintCompressor](http://jsonlint.com/?reformat=compress) can be used to help as well.
 
-If you still need help,&nbsp;please use the links below.
+If you still need help, please use the links below.
 
-&nbsp;
+ 

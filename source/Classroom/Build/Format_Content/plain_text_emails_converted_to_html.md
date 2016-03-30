@@ -29,7 +29,7 @@ The following filters convert plain text emails to HTML so the proper HTML tags 
 3. You can separate new sentences with double newlines, which will add a "paragraph" <p> tag around the sentence.
 4. You can convert your message to HTML, bypassing our need to convert it altogether
 
-- To disable conversion globally, visit Mail Settings --> Plain Content&nbsp;&nbsp;and&nbsp;enabled the suppression.
+- To disable conversion globally, visit Mail Settings --> Plain Content  and enabled the suppression.
 
 **Why can't you just automatically add <br /> tags to newlines upon conversion?**
 

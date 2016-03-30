@@ -19,7 +19,7 @@ If your current integration is using our [Web API](https://sendgrid.com/docs/API
 
 ![]({{root_url}}/images/manangemultiple.png)
 
-&nbsp;
+ 
 
 **Step 2 - Update Your Integration With The New Credentials**
 
@@ -27,26 +27,26 @@ If your current integration is using our [Web API](https://sendgrid.com/docs/API
 
 Now that you have a new set of credentials, go into your existing system and update your integration or code to use the new Multiple Credential username and password. Run a few tests to ensure that mail continues to flow as expected.
 
-&nbsp;
+ 
 
 **Step 3 - Deploy The Changes**
 
 Now that your integration has the new credentials, go ahead and deploy your changes into production.
 
-&nbsp;
+ 
 
 **Step 4 - Update The Original Credentials**
 
 Finally, once your integration is fully using your new credentials, you can go and [reset your password]({{root_url}}/Classroom/Basics/Account/how_do_i_reset_my_password.html) for your original credentials without interrupting your mail flow.
 
-&nbsp;
+ 
 
 **Step 5 (Optional)**
 
-If you'd like, once your original credentials have been changed, you can then go and update your integration again to use the primary&nbsp;username and new password. Once you deploy those changes, you can go back and delete the alternate credentials you created in Step 1.&nbsp;
+If you'd like, once your original credentials have been changed, you can then go and update your integration again to use the primary username and new password. Once you deploy those changes, you can go back and delete the alternate credentials you created in Step 1. 
 
-&nbsp;
+ 
 
 ![]({{root_url}}/images/indycareful.gif)
 
-Good luck, and don't hesitate to contact Support if you have any questions about the process!&nbsp;
+Good luck, and don't hesitate to contact Support if you have any questions about the process! 

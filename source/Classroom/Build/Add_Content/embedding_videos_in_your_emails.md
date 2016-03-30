@@ -15,7 +15,7 @@ navigation:
 
 In the earlier years of email embedding videos was quite common. People would design emails to contain welcome videos, marketing webinars, and even short videos on how to make millions from the comfort of your own home. However, as the Internet has matured the range of media that is supported by mail clients and web-based programs has dramatically changed.
 
-![](https://sendgrid.zendesk.com/hc/en-us/article_attachments/200707707/what_year_is_it_.jpg)&nbsp;
+![](https://sendgrid.zendesk.com/hc/en-us/article_attachments/200707707/what_year_is_it_.jpg) 
 
 Nowadays most email clients have completely done away with the different calls and styling that supported embedded videos. The majority of the time, plugins must already be installed on the recipients' mail client to even make viewing an embedded video possible. As of today, Mac Mail seems to be the only client that supports video without the need for plugins in most cases. This is due mostly to Mac Mail's support of the HTML5 <video> tag. There is some talk across the Internet that as HTML5 becomes more widely supported we can expect to see a rise in number of mail clients that are able to support embedded videos.
 
@@ -27,13 +27,13 @@ Aside from these videos simply not being supported by most mail clients, the nex
 
 ## OUR VERDICT
 
-**Do not embed videos**. As we discussed, videos are rarely, if ever, supported by the mail client without the use of plugins, and inbox trends have shown that emails containing embedded videos are all too often labeled as spam or junk. If you absolutely have to embed a video then you should make sure to segment your lists based on the mail clients which support video, then embed the video specific to the calls that the mail client can support. &nbsp;
+**Do not embed videos**. As we discussed, videos are rarely, if ever, supported by the mail client without the use of plugins, and inbox trends have shown that emails containing embedded videos are all too often labeled as spam or junk. If you absolutely have to embed a video then you should make sure to segment your lists based on the mail clients which support video, then embed the video specific to the calls that the mail client can support.  
 
-GIFs are supported by most mail clients, so if the need is there then experimenting in that format is usually much safer. In the Support Team's opinion, the easiest and most reliable way to share a video with a recipient is to simply place a link in your email body that redirects the recipient to the original video.&nbsp;
+GIFs are supported by most mail clients, so if the need is there then experimenting in that format is usually much safer. In the Support Team's opinion, the easiest and most reliable way to share a video with a recipient is to simply place a link in your email body that redirects the recipient to the original video. 
 
 If you have any questions regarding this information, or if you would like further assistance in understanding this subject, please feel free to contact our [support team](https://sendgrid.zendesk.com/hc/en-us) and we will be happy to help!
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 

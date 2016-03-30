@@ -11,6 +11,6 @@ navigation:
   show: true
 ---
 
-Our system is designed to&nbsp;opportunistically try outbound TLS, meaning that if your clients ESP accepts an inbound TLS connection, we will send the email over TLS.
+Our system is designed to opportunistically try outbound TLS, meaning that if your clients ESP accepts an inbound TLS connection, we will send the email over TLS.
 
-We also offer the ability to [enforce TLS encryption](https://sendgrid.com/docs/API_Reference/Web_API_v3/Settings/enforced_tls.html) when we attempt to deliver email to your recipients.&nbsp;The Enforced TLS feature&nbsp;specifies whether or not the recipient is required to support TLS or have a valid certificate.&nbsp;
+We also offer the ability to [enforce TLS encryption](https://sendgrid.com/docs/API_Reference/Web_API_v3/Settings/enforced_tls.html) when we attempt to deliver email to your recipients. The Enforced TLS feature specifies whether or not the recipient is required to support TLS or have a valid certificate. 

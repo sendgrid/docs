@@ -11,10 +11,10 @@ navigation:
   show: true
 ---
 
-[Upgrade your Account](https://app.sendgrid.com/settings/billing)&nbsp;- Upgrade your account to a higher level package, upgrades are effective immediately.&nbsp;
+[Upgrade your Account](https://app.sendgrid.com/settings/billing) - Upgrade your account to a higher level package, upgrades are effective immediately. 
 
-[Downgrade your Account](https://app.sendgrid.com/settings/billing)&nbsp;- Downgrade your account to a lower level package, downgrades take effect on the first day of the next month.
+[Downgrade your Account](https://app.sendgrid.com/settings/billing) - Downgrade your account to a lower level package, downgrades take effect on the first day of the next month.
 
 ![]({{root_url}}/images/2015-05-26_1028.png)
 
-&nbsp;
+ 

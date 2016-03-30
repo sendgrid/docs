@@ -41,6 +41,6 @@ For more information, please see the following links:
 - Curl POST via PHP: [http://davidwalsh.name/execute-http-post-php-curl](http://davidwalsh.name/execute-http-post-php-curl)   
 (notice how the data is put into the CURL\_POSTFIELDS variable instead of the CURL\_URL variable)
 
-&nbsp;
+ 
 
 _last updated: Jayson Sperling - 09 Apr 2013_

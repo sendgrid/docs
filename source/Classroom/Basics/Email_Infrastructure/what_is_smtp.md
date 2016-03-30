@@ -13,14 +13,14 @@ navigation:
 
 You're trying to get email up and running on your website or within your app and everywhere you turn you see the pesky term "SMTP". You think to yourself, "I just want to set up a simple password reset email or welcome email, I don't want to get into the technical stuff".
 
-At SendGrid we want to make email accessible for everyone. We don't want you to be intimidated by the term so we have a few great resources available to help explain just what&nbsp; **Simple Mail Transfer Protocol&nbsp;** (or SMTP) really is.
+At SendGrid we want to make email accessible for everyone. We don't want you to be intimidated by the term so we have a few great resources available to help explain just what  **Simple Mail Transfer Protocol ** (or SMTP) really is.
 
-Check out this great Q&A session between our marketing department's own Warren Duff and Nigel Dunetts from our awesome support team:&nbsp; [http://sendgrid.com/blog/smtp-service-crash-course/](http://sendgrid.com/blog/smtp-service-crash-course/)
+Check out this great Q&A session between our marketing department's own Warren Duff and Nigel Dunetts from our awesome support team:  [http://sendgrid.com/blog/smtp-service-crash-course/](http://sendgrid.com/blog/smtp-service-crash-course/)
 
-We've also got this great entry in our [Email Library](https://sendgrid.com/email-library)&nbsp;that provides some excellent information:&nbsp; [https://sendgrid.com/email-library/smtp](https://sendgrid.com/email-library/smtp)
+We've also got this great entry in our [Email Library](https://sendgrid.com/email-library) that provides some excellent information:  [https://sendgrid.com/email-library/smtp](https://sendgrid.com/email-library/smtp)
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 
-&nbsp;
+ 

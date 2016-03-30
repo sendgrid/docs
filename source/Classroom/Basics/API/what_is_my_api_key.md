@@ -15,7 +15,7 @@ SendGrid offers customers the ability to manage the security of their accounts a
 
 API Keys allow you to generate an authentication credential that is separate from your username and password. They are independent from one another and are easily disposable. You should create unique API keys for each of your applications or servers so that you can easily revoke them without disrupting other systems if needed.
 
-&nbsp;
+ 
 
 Example:
 
@@ -23,6 +23,6 @@ Example:
 
 \*For sending via SMTP, provide the string `apikey` as the SMTP username, and use your API Key as the password.
 
-&nbsp;
+ 
 
 For more information please feel free to review our [documentation](https://sendgrid.com/docs/Classroom/Send/api_keys.html) page.
