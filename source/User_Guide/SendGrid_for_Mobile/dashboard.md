@@ -15,11 +15,15 @@ navigation:
 <p style="text-align:center">
 	<a href="https://itunes.apple.com/us/app/sendgrid/id916808878?mt=8" target="_blank">
 		<img src="{{root_url}}/images/download_app_store.svg" alt="Download On The App Store" style="display:inline;border:none;" />
-	</a><sup>1</sup>
+	</a>
+  <sup>1</sup>
+</p>
+
+<p style="text-align:center">
   <a href="https://play.google.com/store/apps/details?id=com.sendgrid.android.sendgrid.app&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-  	<img style="height:45px" style="width:185px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />
+    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" style="display:inline;border:none;width:135px;height:45px" />
   </a>
-<sup>2</sup>
+  <sup>2</sup>
 </p>
 
 The dashboard page will display your account’s statistics for the past day, week, or month. SendGrid offers a number of [statistics]({{root_url}}/User_Guide/Statistics/index.html) to report what is happening with your messages.
