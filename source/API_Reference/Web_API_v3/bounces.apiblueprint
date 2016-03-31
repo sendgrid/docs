@@ -44,7 +44,7 @@ FORMAT: 1A
 
 There's two bounce delete options:
 1) deleting all bounces by specifying "delete_all" to true in the request body, or
-2) deleteing some emails by specificy "emails" and an array of emails in the response body.
+2) deleteing some emails by specificy "emails" and an array of emails in the request body.
 
 ### Delete bounces [DELETE]
 
