@@ -15,6 +15,4 @@ navigation:
 
 [Downgrade your Account](https://app.sendgrid.com/settings/billing) - Downgrade your account to a lower level package, downgrades take effect on the first day of the next month.
 
-![]({{root_url}}/images/2015-05-26_1028.png)
-
- 
+![]({{root_url}}/images/pricing_grid.png)
