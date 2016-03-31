@@ -27,7 +27,7 @@ Please note; Refunds are only applicable to the subscription charge on your acco
 Did you forget to downgrade or cancel your account? [Click here for more info]({{root_url}}/Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html). 
 
  
- ![]({{root_url}}/images/2015-05-26_0952.png) 
+ ![]({{root_url}}/images/pricing_grid.png) 
  
 
 **You have no overages and/or have no contacts stored in Marketing Campaigns**

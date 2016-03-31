@@ -11,10 +11,10 @@ navigation:
   show: true
 ---
 
-The Pro plans come with all the features we offer. Free, Lite, and Essential are designed to fulfill specific use cases, and as a result can lack some features you might need. 
+The Pro plans come with all the features we offer. Free and Essential plans are designed to fulfill specific use cases, and as a result can lack some features you might need.
 
-One of the best reasons to go Pro is getting a dedicated IP address. Sending from a dedicated IP address allows you better control over your deliverability and sending reputation. 
+One of the best reasons to go Pro is getting a dedicated IP address. Sending from a dedicated IP address allows you better control over your deliverability and sending reputation.
 
- 
+
 
 For more info on what plans come with what features, check out our [Pricing page](https://sendgrid.com/pricing)!
