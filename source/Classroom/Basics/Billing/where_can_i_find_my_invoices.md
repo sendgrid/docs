@@ -11,6 +11,6 @@ navigation:
   show: true
 ---
 
-Head on over to your [Billing History](https://app.sendgrid.com/settings/billing) and feast your eyes on your invoices of the past and present.
+Head on over to your [Plan & Billing details](https://app.sendgrid.com/settings/billing) page and feast your eyes on your invoices of the past and present. 
 
-From here, you can download and and view your invoices to your heart's content. Please let us know if you have any questions!
+From here, you can download and view your invoices to your heart's content. If you have questions about your invoice, please consult our handy "[How to read your invoice](https://sendgrid.com/docs/Classroom/Basics/Billing/how_to_read_your_invoice.html)" guide!
