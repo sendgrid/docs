@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   {% if page.seo.title and page.seo.override %}
     <title>{{ page.seo.title }}</title>
+    <meta class='swiftype' name='title' data-type='string' content='{{ page.seo.title }}' />
   {% else %}
     {% capture title %}{% if page.seo.title %}{{ page.seo.title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
     <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
@@ -30,6 +31,19 @@
   {% if page.seo.robots %}
     <meta name="robots" content="{{ page.seo.robots }}">
   {% endif %}
+
+  {% if page.st.type %}
+    <meta class='swiftype' name='type' data-type='enum' content='{{ page.st.type }}' />
+  {% endif %}
+
+  {% if page.st.info %}
+    <meta class='swiftype' name='info' data-type='string' content='{{ page.st.info }}' />
+  {% endif %}
+
+  {% if page.st.publish_date %}
+    <meta class='swiftype' name='published_at' data-type='date' content='{{ page.st.publish_date }}' />
+  {% endif %}
+
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
