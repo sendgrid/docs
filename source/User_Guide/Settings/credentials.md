@@ -20,7 +20,7 @@ Multiple User Authentication only refers to how credentials are used to differen
 
 As the primary account holder, you can assign one of three rights to each set of credentials. These functions are:
 
--   **Email** - Enabling this right allows the designated credentials to send email via SMTP Relay or using the [Send Mail function of the Web API]({{root_url}}/API_Reference/Web_API/mail.html)
+-   **Email** - Enabling this right allows the designated credentials to send email via SMTP Relay or using the [Send Mail function of the Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/mail.html)
 -   **API** - Enabling access to this function allows the designated credentials to utilize all of [SendGrid's APIs](http://support.sendgrid.com/entries/21197488-what-are-the-sendgrid-apis-and-what-do-they-do), with exception to any API call that sends email
 -   **Web** - Enabling access to the web dashboard allows the specified credentials to administer the account using the web-based console.
 
