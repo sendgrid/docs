@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 0
-title: Mail
+title: v2 Mail Send
 seo:
-  title: Mail - Send Email Using HTTP - SendGrid Documentation | SendGrid
+  title: v2 Mail Send - Send Email Using HTTP - SendGrid Documentation | SendGrid
   override: true
   description: The v2 mail send endpoint allows you to send email through SendGrid using a POST request. Find documentation and examples on how to use the endpoint.
 navigation:
