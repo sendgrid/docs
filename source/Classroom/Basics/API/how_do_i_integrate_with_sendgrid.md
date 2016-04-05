@@ -16,7 +16,7 @@ There are many different ways to use SendGrid’s email services so it all comes
 **The main ways you can integrate with Sendgrid: **
 
 - [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/what_is_smtp.html) - Send using a desktop mail client, or existing program/service with [your smtp credentials]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html).
-- [Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html) - Send from your app using  [your api key]({{root_url}}/Classroom/Basics/API/what_is_my_api_key.html). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.
+- [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html) - Send from your app using  [your api key]({{root_url}}/Classroom/Basics/API/what_is_my_api_key.html). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.
 - [Email Marketing App and API](https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html) - Send from our content creation UI and manage your lists via the website.
 
 

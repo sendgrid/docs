@@ -50,4 +50,4 @@ Account](https://digioh.com/sendgrid)
 Sending email with attachments via SendGrid
 {% endanchor %}
 
-To send emails with attachments via SendGrid, you can employ our [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) or our [Web API]({{root_url}}/API_Reference/Web_API/mail.html#-send).
+To send emails with attachments via SendGrid, you can employ our [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) or our [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html).
