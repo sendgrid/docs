@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-_ **Please**   **use caution** , when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords.  When changing passwords consult the email administrator who created the account if you are uncertain.
+>**Please use caution**, when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords.  When changing passwords consult the email administrator who created the account if you are uncertain.
 
-Please use one of the following 2 options to reset your password: 
+**Please use one of the following 2 options to reset your password:** 
 
 <iframe src="https://www.youtube.com/embed/IWbZyNPhNMg" width="520" height="415" frameborder="0" allowfullscreen=""></iframe>
 
@@ -21,7 +21,7 @@ Please use one of the following 2 options to reset your password:
 
  
 
-**1. Reset from your Account Settings page**
+##**1. Reset from your Account Settings page**
 
 You can reset your password after you're logged in. 
 
@@ -37,7 +37,7 @@ You can reset your password after you're logged in.
 
  
 
-**2. Reset from the Log In Screen**
+##**2. Reset from the Log In Screen**
 
 Forgot your password? No problem. 
 
@@ -54,7 +54,7 @@ Forgot your password? No problem.
 
  
 
-**3. More Options**  
+##**3. More Options**  
 
 **Want more security?** [Consider enabling 2-factor Authentication.]({{root_url}}/Classroom/Basics/Security/setting_up_2_factor_authentication.html)
 
@@ -68,4 +68,5 @@ Forgot your password? No problem.
 
 **Do you have a reseller account?**  Look for specific communication from your reseller.  Many partners like Heroku, Appdirect, Engineyard, Softlayer, and Azure will complete this update with no action required from you.
 
-_ **Please** _  **use caution** , when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords.  When changing passwords consult the email administrator who created the account if you are uncertain.
+
+>**Please use caution**, when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords.  When changing passwords consult the email administrator who created the account if you are uncertain.

@@ -21,6 +21,6 @@ Your can update your card information, as well as export past invoices for your 
 
  
 
-![]({{root_url}}/images/plan_billing__1_.png)
+![]({{root_url}}/images/pricing_grid.png)
 
  

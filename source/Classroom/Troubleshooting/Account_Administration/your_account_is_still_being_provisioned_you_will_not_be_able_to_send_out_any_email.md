@@ -25,5 +25,5 @@ Please note that Provisioning related emails are sent to the registered account 
 
  
 
-**[What should I do if my account provision was declined?](https://sendgrid.zendesk.com/hc/en-us/articles/200181638)**
+**[What should I do if my account provision was declined?](https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html)**
 
