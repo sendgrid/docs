@@ -1,6 +1,14 @@
-# [SendGrid Source](https://segment.com/sources/sendgrid/?utm_medium=docs&utm_source=stripe&utm_campaign=sources)
+---
+layout: page
+weight: 100
+title: SendGrid Source
+seo:
+  description: Learn how to integrate your SendGrid account with Segment.
+navigation:
+  show: true
+---
 
-With your SendGrid data in your data warehouse, you’ll be able to analyze your email activity (opens, clicks, deliveries, and bounces), lists, and recipients via SQL. Additionally, you can join your SendGrid data with Segment event and other source data you’re already sending to your warehouse, so you can correlate product feature usage with email activity, or tie referral sources into your customer journey analysis.
+By using [SendGrid Source](https://segment.com/sources/sendgrid/?utm_medium=docs&utm_source=stripe&utm_campaign=sources) with your SendGrid data in your data warehouse, you’ll be able to analyze your email activity (opens, clicks, deliveries, and bounces), lists, and recipients via SQL. Additionally, you can join your SendGrid data with Segment event and other source data you’re already sending to your warehouse, so you can correlate product feature usage with email activity, or tie referral sources into your customer journey analysis.
 
 This documentation is managed by [Segment](https://segment.com/?utm_medium=docs&utm_source=sendgrid&utm_campaign=sources). If you have any questions please contact Segment's support team at friends@segment.com.
 
