@@ -13,6 +13,12 @@ SendGrid's new API architecture features significant changes in behavior as comp
 * * * * *
 
 {% anchor h2 %}
+Mail
+{% endanchor %}
+
+SendGrid's Web API v3 mail send endpoint offers many improvements over the v2 endpoint. For more information, please visit the [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html).
+
+{% anchor h2 %}
 Authentication
 {% endanchor %}
 
