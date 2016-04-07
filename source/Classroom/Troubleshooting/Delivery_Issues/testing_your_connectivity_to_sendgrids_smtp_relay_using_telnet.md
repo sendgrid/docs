@@ -30,7 +30,7 @@ You can test for open ports using the following telnet command, substituting _#_
 
 ## Telnet Response:
 
-    >telnet smtp.sendgrid.net # <enter>220 xxxx ESMTP service ready>EHLO <enter>250-xxxx250-8BITMIME250-SIZE 20480000250-AUTH=PLAIN LOGIN250-AUTH PLAIN LOGIN250 STARTTLS>auth login <enter>334 VXNlcm5hbWU6>your BASE64 encoded SG username <enter>334 UGFzc3dvcmQ6>your BASE64 encoded SG password <enter>235 Authentication successful. ***
+    >telnet smtp.sendgrid.net # <enter>220 xxxx ESMTP service ready>EHLO <enter>250-xxxx250-8BITMIME250-SIZE 20480000250-AUTH=PLAIN LOGIN250-AUTH PLAIN LOGIN250 STARTTLS>auth login <enter>334 VXNlcm5hbWU6>[your BASE64 encoded SG username](https://www.base64encode.org/ ) <enter>334 UGFzc3dvcmQ6>[your BASE64 encoded SG password](https://www.base64encode.org/ ) <enter>235 Authentication successful. ***
 
 **_\*\*\* This indicates that your connection to smtp.sendgrid.net over the selected port is open, and your username and password are valid as authentication credentials._**
 
