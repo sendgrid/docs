@@ -8,15 +8,11 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Blocks list.
 
-{% info %}
-You can live test these API endpoints with the "Try It" button for each endpoint on this page.
-{% endinfo %}
-
 {% anchor h2 %}
-get 
+get
 {% endanchor %}
-Retrieve a list of Blocks with addresses and response codes, optionally with dates. {% parameters get %} 
-  
+Retrieve a list of Blocks with addresses and response codes, optionally with dates. {% parameters get %}
+
   {% parameter date false 'Must be set to 1' 'Retrieve the timestamp of the Block records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}  
   {% parameter days false 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve blocks (includes today)' %}  
   {% parameter start_date false 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve blocks.' %}  
@@ -70,10 +66,10 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
 * * * * *
 
 {% anchor h2 %}
-delete 
+delete
 {% endanchor %}
-Delete an address from the Block list. {% parameters delete %} 
-  
+Delete an address from the Block list. {% parameters delete %}
+
   {% parameter email true 'Must be a valid user account email.' 'Blocked email address to remove.' %}
 {% endparameters %}
 
@@ -95,10 +91,10 @@ Delete an address from the Block list. {% parameters delete %}
 * * * * *
 
 {% anchor h2 %}
-count 
+count
 {% endanchor %}
-{% parameters count %} 
-  
+{% parameters count %}
+
   {% parameter start_date false 'Date must be in YYYY-MM-DD format and be before the end_date parameter.' 'Optional date to start counting from.' %}  
   {% parameter end_date false 'Date must be in YYYY-MM-DD format and be after the start_date parameter.' 'Optional date to start counting from.' %}  
   {% parameter type false 'hard or soft' 'The type of bounce to count.' %}
