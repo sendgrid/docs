@@ -12,7 +12,7 @@ seo:
 
 SendGrid has helped thousands of customers send their email messages since 2009. We help our customers build their email content, send their messages, and view the success of each campaign sent.
 
-We also realize that the actual journey of an email message from sender to the inbox  is complicated. And, sometimes it may not be fully understood by all senders. This post shows the basics of the email path, along with where SendGrid is helping to make that journey less complicated.
+We also realize that the actual journey of an email message from sender to the inbox  is complicated. Sometimes this process may not be fully understood by all senders. This post shows the basics of the email path, along with where SendGrid is helping to make that journey less complicated.
 
 In the email flowchart below, you can see the main components that all email messages pass through. Granted, there are many other finer details involved within each step, but for the sake of this post, we’re keeping it to the basics.
 
@@ -47,7 +47,7 @@ This stands for “Domain Name System” and it is thought of as the “phone bo
 {% anchor h3 %}
 Authentication
 {% endanchor %}
-The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s whitelabel feature assists with setting up both SPF and DKIM properly.  This assist the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
+The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s whitelabel feature assists with setting up both SPF and DKIM properly.  This assists the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
 
 {% anchor h3 %}
 Reputation
@@ -74,4 +74,4 @@ Reacting to Opinions of the “Guests”
 {% anchor h3 %}
 Feedback for the Guests to Give the Host
 {% endanchor %}
-Within email, there is a function know as a Feedback Loop.  These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
+Within email, there is a function known as a Feedback Loop.  These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
