@@ -20,4 +20,8 @@ Templates may have multiple versions with different content, these may be change
 
 **[Sending Transactional Templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html)**
 
-The [SMTP API]({{ root_url }}/API_Reference/SMTP_API/index.html) is used to send templated email through SendGrid. The Web API with the [x-smtpapi parameter]({{ root_url }}/API_Reference/Web_API/mail.html#-send) can also be used.
+You can send transactional templates using one of three ways:
+
+* Using the [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay)
+* Including the template ID in the `templates` parameter of the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html)
+* Using the x-smtpapi parameter in the Web API v2 Mail Send endpoint
