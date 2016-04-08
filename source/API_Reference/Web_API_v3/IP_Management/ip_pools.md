@@ -109,9 +109,10 @@ Update an IP pool's name.
   {% parameter name Yes 'String. max 64 characters' 'New name of the pool' %}
 {% endparameters %}
 
+{% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
+
 {% apiv3requestbody %} {"name":"marketing"} {% endapiv3requestbody %}
 
-{% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
 {% v3response %}
 HTTP/1.1 200 OK	
 
