@@ -21,7 +21,7 @@ There is no limit on how many IP addresses you can whitelist.
 {% endinfo %}
 
 {% warning %}
-It is possible to remove your own IP address from your whitelist, thus [blocking your own access to your account](https://support.sendgrid.com/hc/en-us/articles/217574958). While we are able to restore your access, we do require thorough proof of your identify and ownership of your account. We take the security of your account very seriously, and wish to prevent any "bad actors" from maliciously gaining access to your account.
+It is possible to remove your own IP address from your whitelist, thus [blocking your own access to your account]({{root_url}}/Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html). While we are able to restore your access, we do require thorough proof of your identify and ownership of your account. We take the security of your account very seriously, and wish to prevent any "bad actors" from maliciously gaining access to your account.
 
 Your current IP is clearly displayed to help prevent you from accidentally removing it from the whitelist.
 {% endwarning %}
