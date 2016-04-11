@@ -26,6 +26,10 @@ It is possible to remove your own IP address from your whitelist, thus [blocking
 Your current IP is clearly displayed to help prevent you from accidentally removing it from the whitelist.
 {% endwarning %}
 
+{% warning %}
+If you do not access SendGrid via a static IP address (e.g. via VPN or from a business internet service), setting up IP Access Management may result in being locked out of your SendGrid account. If you do discover that you have locked yourself out of your account, please visit our [Classroom]({{root_url}}/Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html) for suggestions on how to regain access and tips on how to prevent this in the future.
+{% endwarning %}
+
 {% anchor h2 %}
 Whitelisting an IP Address
 {% endanchor %}
