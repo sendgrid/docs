@@ -302,6 +302,7 @@ Redirect 301 /Classroom/Deliver/why_purchase_lists_when_you_can.html https://sen
 Redirect 301 /Classroom/Deliver/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
 Redirect 301 /Classroom/Deliver/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html
 Redirect 301 /Classroom/Deliver/dkim_settings_for_whitelabel_pro100k_and_higher.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html https://sendgrid.com/docs/Classroom/index.html
 Redirect 301 /Classroom/Deliver/gmail_dmarc_changes.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/gmail_dmarc_changes.html
 Redirect 301 /Classroom/Deliver/internet_standards_spf_and_dkim_and_deliverability.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html
 Redirect 301 /Classroom/Deliver/spf_dont_exceed_ten_dns_lookups.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html
