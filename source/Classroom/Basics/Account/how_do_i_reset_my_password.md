@@ -15,9 +15,6 @@ navigation:
 
 **Please use one of the following 2 options to reset your password:** 
 
-<iframe src="https://www.youtube.com/embed/IWbZyNPhNMg" width="520" height="415" frameborder="0" allowfullscreen=""></iframe>
-
- 
 
  
 
@@ -48,9 +45,7 @@ Forgot your password? No problem.
 
 ![]({{root_url}}/images/forgotpassword.gif)
 
- 
 
- 
 
  
 
