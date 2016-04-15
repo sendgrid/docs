@@ -91,22 +91,13 @@ Billing
 
 An API Key for authenticating billing related API calls should be given the following permissions.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>billing.delete</td>
-         <td>Perform a cancellation of the account</td>
-      </tr>
-      <tr>
-         <td>billing.read</td>
-         <td>Retrieve billing information and invoices</td>
-      </tr>
-      <tr>
-         <td>billing.update</td>
-         <td>Modify billing information, including the ability to perform package changes</td>
-      </tr>
-   </tbody>
-</table>
+{% codeblock lang:json %}
+"scopes": [
+  "billing.delete",
+  "billing.read",
+  "billing.update"
+]
+{% endcodeblock %}
 
 {% anchor h3 %}
 Mail
@@ -114,30 +105,15 @@ Mail
 
 If you were to create an API Key for authenticating API calls that result in creating, sending, reading, and deleting emails, you would want to assign that key the following permissions.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>mail.batch.create</td>
-         <td>Create batch id for schedule and cancel scheduled sends</td>
-      </tr>
-      <tr>
-         <td>mail.batch.delete</td>
-         <td>Delete batch id for schedule and cancel scheduled sends</td>
-      </tr>
-      <tr>
-         <td>mail.batch.read</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>mail.batch.update</td>
-         <td></td>
-      </tr>
-      <tr>
-         <td>mail.send</td>
-         <td>Send mail</td>
-      </tr>
-   </tbody>
-</table>
+{% codeblock lang:json %}
+"scopes": [
+  "mail.batch.create",
+  "mail.batch.delete",
+  "mail.batch.read",
+  "mail.batch.update",
+  "mail.send"
+]
+{% endcodeblock %}
 
 {% anchor h3 %}
 Marketing Campaigns
@@ -145,26 +121,14 @@ Marketing Campaigns
 
 An API Key used only to authenticate API calls that relate specifically to Marketing Campaigns should include the following permissions.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>marketing_campaigns.create</td>
-         <td>Perform POST operations on marketing campaigns</td>
-      </tr>
-      <tr>
-         <td>marketing_campaigns.delete</td>
-         <td>perform DELETE operations on marketing campaign APIs</td>
-      </tr>
-      <tr>
-         <td>marketing_campaigns.read</td>
-         <td>perform GET operations on marketing campaign APIs</td>
-      </tr>
-      <tr>
-         <td>marketing_campaigns.update</td>
-         <td>perform PUT/PATCH operations on marketing campaign APIs</td>
-      </tr>
-   </tbody>
-</table>
+{% codeblock lang:json %}
+"scopes": [
+  "marketing_campaigns.create",
+  "marketing_campaigns.delete",
+  "marketing_campaigns.read",
+  "marketing_campaigns.update"
+]
+{% endcodeblock %}
 
 {% anchor h3 %}
 Stats
@@ -172,18 +136,12 @@ Stats
 
 To limit who can access your statistics, create an API Key with the following permissions. Stats do not have "full access" because it would be impossible for you to change your stats via an API call.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>stats.read</td>
-         <td>Retreive stats</td>
-      </tr>
-      <tr>
-         <td>stats.global.read</td>
-         <td>Retrieve global stats</td>
-      </tr>
-   </tbody>
-</table>
+{% codeblock lang:json %}
+"stats": [
+  "stats.read",
+  "stats.global.read"
+]
+{% endcodeblock %}
 
 {% anchor h3 %}
 Whitelabel
@@ -191,23 +149,11 @@ Whitelabel
 
 An API Key for authenticating API calls that can create, change, and remove whitelabel information would require the the following permissions.
 
-<table class="table table-bordered table-striped">
-   <tbody>
-      <tr>
-         <td>whitelabel.create</td>
-         <td>Create whitelabels</td>
-      </tr>
-      <tr>
-         <td>whitelabel.delete</td>
-         <td>Delete existing whitelabels</td>
-      </tr>
-      <tr>
-         <td>whitelabel.read</td>
-         <td>Retrieve whitelabels</td>
-      </tr>
-      <tr>
-         <td>whitelabel.update</td>
-         <td>Update existing whitelabels</td>
-      </tr>
-   </tbody>
-</table>
+{% codeblock lang:json %}
+"scopes": [
+  "whitelabel.create",
+  "whitelabel.delete",
+  "whitelabel.read",
+  "whitelabel.update"
+]
+{% endcodeblock %}
