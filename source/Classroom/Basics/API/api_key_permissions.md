@@ -85,26 +85,41 @@ Several specific use cases for an API Key and the permissions that you might wan
 Example Permissions for Common API Key Use Cases
 {% endanchor h2 %}
 
+<ul>
+  <li><a href="#-Read-Only-Access-for-Mail-Send">Mail Send: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Mail-Send">Mail Send: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Alerts">Alerts: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Alerts">Alerts: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Stats">Stats: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Stats">Stats: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Suppressions">Suppressions: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Suppressions">Suppressions: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Whitelabels">Whitelabels: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Whitelables">Whitelabels: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-IP-Management">IP Management: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-IP-Manaagement">IP Management: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Templates">Templates: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Templates">Templates: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Inbound-Parse">Inbound Parse: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Inbound-Parse">Inbound Parse: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Mail-Settings">Mail Settings: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Mail-Settings">Mail Settings: Full Access</a></li>
+  <li><a href="#-Read-Only-Access-for-Marketing-Campaigns">Marketing Campaigns: Read Only Access</a></li>
+  <li><a href="#-Full-Access-for-Marketing-Campaigns">Marketing Campaigns: Full Access</a></li>
+</ul>
+
 {% anchor h3 %}
-Billing
-{% endanchor h3 %}
-
-An API Key for authenticating billing related API calls should be given the following permissions.
-
+Read Only Access for Mail Send
+{% endanchor %}
 {% codeblock lang:json %}
 "scopes": [
-  "billing.delete",
-  "billing.read",
-  "billing.update"
+  "mail.batch.read"
 ]
 {% endcodeblock %}
 
 {% anchor h3 %}
-Mail
-{% endanchor h3 %}
-
-If you were to create an API Key for authenticating API calls that result in creating, sending, reading, and deleting emails, you would want to assign that key the following permissions.
-
+Full Access for Mail Send
+{% endanchor %}
 {% codeblock lang:json %}
 "scopes": [
   "mail.batch.create",
@@ -116,44 +131,231 @@ If you were to create an API Key for authenticating API calls that result in cre
 {% endcodeblock %}
 
 {% anchor h3 %}
-Marketing Campaigns
-{% endanchor h3 %}
-
-An API Key used only to authenticate API calls that relate specifically to Marketing Campaigns should include the following permissions.
-
+Read Only Access for Alerts
+{% endanchor %}
 {% codeblock lang:json %}
 "scopes": [
-  "marketing_campaigns.create",
-  "marketing_campaigns.delete",
-  "marketing_campaigns.read",
-  "marketing_campaigns.update"
+  "alerts.read"
 ]
 {% endcodeblock %}
 
 {% anchor h3 %}
-Stats
-{% endanchor h3 %}
-
-To limit who can access your statistics, create an API Key with the following permissions. Stats do not have "full access" because it would be impossible for you to change your stats via an API call.
-
+Full Access for Alerts
+{% endanchor %}
 {% codeblock lang:json %}
-"stats": [
-  "stats.read",
-  "stats.global.read"
+"scopes": [
+  "alerts.create",
+  "alerts.delete",
+  "alerts.read",
+  "alerts.update"
 ]
 {% endcodeblock %}
 
 {% anchor h3 %}
-Whitelabel
-{% endanchor h3 %}
+Read Only Access for Stats
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "email_activity.read",
+  "stats.read",
+  "stats.global.read",
+  "browsers.stats.read",
+  "devices.stats.read",
+  "geo.stats.read",
+  "mailbox_providers.stats.read"
+]
+{% endcodeblock %}
 
-An API Key for authenticating API calls that can create, change, and remove whitelabel information would require the the following permissions.
+{% anchor h3 %}
+Read Only Access for Suppressions
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "suppressions.read"
+]
+{% endcodeblock %}
 
+{% anchor h3 %}
+Full Access for Suppressions
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "suppressions.create",
+  "suppressions.delete",
+  "suppressions.read",
+  "suppressions.update"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for Whitelabels
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "whitelabel.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for Whitelabels
+{% endanchor %}
 {% codeblock lang:json %}
 "scopes": [
   "whitelabel.create",
   "whitelabel.delete",
   "whitelabel.read",
   "whitelabel.update"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for IP Management
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "ips.assigned.read",
+  "ips.read",
+  "ips.pools.read",
+  "ips.warmup.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for IP Management
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "ips.assigned.read",
+  "ips.read",
+  "ips.pools.create",
+  "ips.pools.delete",
+  "ips.pools.read",
+  "ips.pools.update",
+  "ips.pools.ips.create",
+  "ips.pools.ips.delete",
+  "ips.warmup.create",
+  "ips.warmup.delete",
+  "ips.warmup.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for Templates
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "templates.read",
+  "templates.versions.activate.read",
+  "templates.versions.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for Templates
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "templates.create",
+  "templates.delete",
+  "templates.read",
+  "templates.update",
+  "templates.versions.activate.create",
+  "templates.versions.activate.delete",
+  "templates.versions.activate.read",
+  "templates.versions.activate.update",
+  "templates.versions.create",
+  "templates.versions.delete",
+  "templates.versions.read",
+  "templates.versions.update"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for Inbound Parse
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "user.webhooks.parse.settings.read",
+  "user.webhooks.parse.stats.read"
+  ]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for Inbound Parse
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "user.webhooks.parse.settings.create",
+  "user.webhooks.parse.settings.delete",
+  "user.webhooks.parse.settings.read",
+  "user.webhooks.parse.settings.update",
+  "user.webhooks.parse.stats.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for Mail Settings
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "mail_settings.address_whitelist.read",
+  "mail_settings.bcc.read",
+  "mail_settings.bounce_purge.read",
+  "mail_settings.footer.read",
+  "mail_settings.forward_bounce.read",
+  "mail_settings.forward_spam.read",
+  "mail_settings.plain_content.read",
+  "mail_settings.read",
+  "mail_settings.spam_check.read",
+  "mail_settings.template.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for Mail Settings
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "mail_settings.address_whitelist.read",
+  "mail_settings.address_whitelist.update",
+  "mail_settings.bcc.read",
+  "mail_settings.bcc.update",
+  "mail_settings.bounce_purge.read",
+  "mail_settings.bounce_purge.update",
+  "mail_settings.footer.read",
+  "mail_settings.footer.update",
+  "mail_settings.forward_bounce.read",
+  "mail_settings.forward_bounce.update",
+  "mail_settings.forward_spam.read",
+  "mail_settings.forward_spam.update",
+  "mail_settings.plain_content.read",
+  "mail_settings.plain_content.update",
+  "mail_settings.read",
+  "mail_settings.spam_check.read",
+  "mail_settings.spam_check.update",
+  "mail_settings.template.read",
+  "mail_settings.template.update"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Read Only Access for Marketing Campaigns
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "marketing_campaigns.read"
+]
+{% endcodeblock %}
+
+{% anchor h3 %}
+Full Access for Marketing Campaigns
+{% endanchor %}
+{% codeblock lang:json %}
+"scopes": [
+  "marketing_campaigns.create",
+  "marketing_campaigns.delete",
+  "marketing_campaigns.read",
+  "marketing_campaigns.update",
+  "partner_settings.new_relic.read"
 ]
 {% endcodeblock %}
