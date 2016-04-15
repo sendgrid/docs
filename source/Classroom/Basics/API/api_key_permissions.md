@@ -111,7 +111,7 @@ Example Permissions for Common API Key Use Cases
 {% anchor h3 %}
 Read Only Access for Mail Send
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "mail.batch.read"
 ]
@@ -120,7 +120,7 @@ Read Only Access for Mail Send
 {% anchor h3 %}
 Full Access for Mail Send
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "mail.batch.create",
   "mail.batch.delete",
@@ -133,7 +133,7 @@ Full Access for Mail Send
 {% anchor h3 %}
 Read Only Access for Alerts
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "alerts.read"
 ]
@@ -142,7 +142,7 @@ Read Only Access for Alerts
 {% anchor h3 %}
 Full Access for Alerts
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "alerts.create",
   "alerts.delete",
@@ -154,7 +154,7 @@ Full Access for Alerts
 {% anchor h3 %}
 Read Only Access for Stats
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "email_activity.read",
   "stats.read",
@@ -169,7 +169,7 @@ Read Only Access for Stats
 {% anchor h3 %}
 Read Only Access for Suppressions
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "suppressions.read"
 ]
@@ -178,7 +178,7 @@ Read Only Access for Suppressions
 {% anchor h3 %}
 Full Access for Suppressions
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "suppressions.create",
   "suppressions.delete",
@@ -190,7 +190,7 @@ Full Access for Suppressions
 {% anchor h3 %}
 Read Only Access for Whitelabels
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "whitelabel.read"
 ]
@@ -199,7 +199,7 @@ Read Only Access for Whitelabels
 {% anchor h3 %}
 Full Access for Whitelabels
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "whitelabel.create",
   "whitelabel.delete",
@@ -211,7 +211,7 @@ Full Access for Whitelabels
 {% anchor h3 %}
 Read Only Access for IP Management
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "ips.assigned.read",
   "ips.read",
@@ -223,7 +223,7 @@ Read Only Access for IP Management
 {% anchor h3 %}
 Full Access for IP Management
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "ips.assigned.read",
   "ips.read",
@@ -242,7 +242,7 @@ Full Access for IP Management
 {% anchor h3 %}
 Read Only Access for Templates
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "templates.read",
   "templates.versions.activate.read",
@@ -253,7 +253,7 @@ Read Only Access for Templates
 {% anchor h3 %}
 Full Access for Templates
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "templates.create",
   "templates.delete",
@@ -273,7 +273,7 @@ Full Access for Templates
 {% anchor h3 %}
 Read Only Access for Inbound Parse
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "user.webhooks.parse.settings.read",
   "user.webhooks.parse.stats.read"
@@ -283,7 +283,7 @@ Read Only Access for Inbound Parse
 {% anchor h3 %}
 Full Access for Inbound Parse
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "user.webhooks.parse.settings.create",
   "user.webhooks.parse.settings.delete",
@@ -296,7 +296,7 @@ Full Access for Inbound Parse
 {% anchor h3 %}
 Read Only Access for Mail Settings
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "mail_settings.address_whitelist.read",
   "mail_settings.bcc.read",
@@ -314,7 +314,7 @@ Read Only Access for Mail Settings
 {% anchor h3 %}
 Full Access for Mail Settings
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "mail_settings.address_whitelist.read",
   "mail_settings.address_whitelist.update",
@@ -341,7 +341,7 @@ Full Access for Mail Settings
 {% anchor h3 %}
 Read Only Access for Marketing Campaigns
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "marketing_campaigns.read"
 ]
@@ -350,7 +350,7 @@ Read Only Access for Marketing Campaigns
 {% anchor h3 %}
 Full Access for Marketing Campaigns
 {% endanchor %}
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "marketing_campaigns.create",
   "marketing_campaigns.delete",
