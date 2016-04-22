@@ -270,12 +270,15 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Retrieve the monthly email statistics for the given subusers over the given date range.
+Retrieve the monthly email statistics for all subusers over the given date range.
+
+When using the `sort_by_metric` to sort your stats by a specific metric, you can not sort by the following metrics:
+`bounce_drops`, `deferred`, `invalid_emails`, `processed`, `spam_report_drops`, `spam_reports`, or `unsubscribe_drops`.
 
 {% parameters get %}
  {% parameter date Yes 'Date formatted as YYYY-MM-DD' 'The date of the month to retrieve statistics.' %}
  {% parameter subuser No String 'A substring search of your subusers.' %}
- {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
+ {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.'' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
@@ -348,9 +351,12 @@ GET
 
 Retrieve the monthly email statistics for a single subuser.
 
+When using the `sort_by_metric` to sort your stats by a specific metric, you can not sort by the following metrics:
+`bounce_drops`, `deferred`, `invalid_emails`, `processed`, `spam_report_drops`, `spam_reports`, or `unsubscribe_drops`.
+
 {% parameters get %}
  {% parameter date Yes 'Date formatted as YYYY-MM-DD' 'The date of the month to retrieve statistics.' %}
- {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered.' %}
+ {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
