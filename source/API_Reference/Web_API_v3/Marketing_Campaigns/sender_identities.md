@@ -17,7 +17,7 @@ Create a Sender Identity [POST]
 
 This endpoint allows you to create a sender identity.
 
-Sender Identities are required to be verified before use. If your domain has bee whitelabeled it will auto verify on creation. Otherwise an email will be sent to the  `from.email`.
+Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the  `from.email`.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/marketing_campaigns/senders %}
 {% apiv3requestbody %}
@@ -166,3 +166,53 @@ Delete a Sender Identity [DELETE]
 This endpoint allows you to delete one of your sender identities.
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id} %}
+
+{% v3response %}
+HTTP/1.1 204
+{% endv3response %}
+{% endapiv3example %}
+
+{% anchor h2 %}
+Resend Sender Identity Verification [POST]
+{% endanchor %}
+
+This endpoint allows you to resend the sender identity verification email.
+
+{% apiv3example post POST https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id}/resend_verification %}
+
+{% v3response %}
+HTTP/1.1 204
+{% endv3response %}
+{% endapiv3example %}
+
+{% anchor h2 %}
+Retrieve a Specific Sender Identity [GET]
+{% endanchor %}
+
+{% apiv3example get GET https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id} %}
+
+{% v3response %}
+{
+  "id": 1,
+  "nickname": "My Sender ID",
+  "from": {
+    "email": "from@example.com",
+    "name": "Example INC"
+  },
+  "reply_to": {
+    "email": "replyto@example.com",
+    "name": "Example INC"
+  },
+  "address": "123 Elm St.",
+  "address_2": "Apt. 456",
+  "city": "Denver",
+  "state": "Colorado",
+  "zip": "80202",
+  "country": "United States",
+  "verified": true,
+  "updated_at": 1449872165,
+  "created_at": 1449872165,
+  "locked": false
+}
+{% endv3response %}
+{% endapiv3example %}
