@@ -278,7 +278,7 @@ When using the `sort_by_metric` to sort your stats by a specific metric, you can
 {% parameters get %}
  {% parameter date Yes 'Date formatted as YYYY-MM-DD' 'The date of the month to retrieve statistics.' %}
  {% parameter subuser No String 'A substring search of your subusers.' %}
- {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.'' %}
+ {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.' %}
  {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
