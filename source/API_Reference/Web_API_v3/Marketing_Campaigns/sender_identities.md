@@ -5,7 +5,7 @@ title: Sender Identities API
 seo:
   title: Sender Identities API
   description: The SendGrid Marketing Campaigns Sender Identities API
-  keywords: Senders, identities api, marketing campaigns senders
+  keywords: sender, identities, api, marketing campaigns senders
 navigation:
   show: true
 ---
@@ -188,6 +188,8 @@ HTTP/1.1 204
 {% anchor h2 %}
 Retrieve a Specific Sender Identity [GET]
 {% endanchor %}
+
+This endoint allows you to retrieve a specific sender identity.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id} %}
 
