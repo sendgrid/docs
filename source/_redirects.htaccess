@@ -496,6 +496,7 @@ Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/Use
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Spam
+Redirect 301 /User_Guide/Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
 Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html#-SendGrid-For-New-Relic
 Redirect 301 /User_Guide/Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Open-Tracking
