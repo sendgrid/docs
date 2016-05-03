@@ -1,4 +1,4 @@
-require 'kramdown'
+#require 'kramdown'
 
 module Jekyll
   class APITableParams < Liquid::Tag
@@ -13,21 +13,18 @@ module Jekyll
       @description = parameters[4]
       @depth = defined?(parameters[5]) ? parameters[5] : 0
 
-      puts "before type check"
       if @type.include? "array"
         @row_type = "array"
-        puts "array"
       elsif @type.include? "object"
         @row_type = "object"
-        puts "object"
       elsif @type.include? "string"
         @row_type = "string"
       elsif @type.include? "number"
-        @row_type = "number"
+        @row_type = "int"
       elsif @type.include? "integer"
-        @row_type = "integer"
+        @row_type = "int"
       elsif @type.include? "boolean"
-        @row_type = "boolean"
+        @row_type = "bool"
       end
 
       super
@@ -48,8 +45,8 @@ output=<<HTML
 </tr>
 HTML
 
-      html = Kramdown::Document.new(output).to_html
-      return Liquid::Template.parse(html).render context
+      #html = Kramdown::Document.new(output).to_html
+      return Liquid::Template.parse(output).render context
     end
   end
 end

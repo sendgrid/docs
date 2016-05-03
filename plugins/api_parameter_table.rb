@@ -1,4 +1,4 @@
-require 'kramdown'
+#require 'kramdown'
 
 module Jekyll
   class APITable < Liquid::Block
@@ -24,8 +24,8 @@ module Jekyll
   </tbody>
 </table>
 HTML
-      html = Kramdown::Document.new(output).to_html
-      return Liquid::Template.parse(html).render context
+      #html = Kramdown::Document.new(output).to_html
+      return Liquid::Template.parse(output).render context
     end
   end
 end
