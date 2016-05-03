@@ -1,60 +1,3 @@
-//##### added by Matt
-// Colors
-@sg-blue:         #1a82e2;
-@slate:           #294661;
-
-// Tints
-@sg-blue-80:      #489BE8;
-@sg-blue-60:      #76B4EE;
-@sg-blue-40:      #77B5ED;
-@sg-blue-10:      #E8F2FC;
-@slate-80:        #546C82;
-@slate-60:        #7F91A1;
-
-// Accent Colors
-@mantis:          #18c96e;
-@ron-burgundy:    #b71c1c;
-@burnt-orange:    #ff5722;
-@carrot:          #ff9900;
-@mango:           #fdd835;
-@spruce:          #4cb04f;
-@grass-stain:     #8ac24a;
-@lime:            #cbdb39;
-@cobalt:          #303f9f;
-@bluebird:        #2196f3;
-@seafoam:         #00bcd4;
-@caribbean:       #00e5ff;
-@crown:           #7b1fa2;
-@screample:       #7c4dff;
-@sangria:         #880e4f;
-@lavender:        #dea7e8;
-@wild-strawberry: #ff4081;
-@steel:           #9e9e9e;
-
-// Grays
-@gray-border:     #ECECED;
-@gray-background: #F5F5F8;
-
-// Modular Scale
-@scaleup-11:      9.492rem;
-@scaleup-10:      7.594rem;
-@scaleup-9:       6.328rem;
-@scaleup-8:       5.063rem;
-@scaleup-7:       4.219rem;
-@scaleup-6:       3.375rem;
-@scaleup-5:       2.813rem;
-@scaleup-4:       2.25rem;
-@scaleup-3:       1.875rem;
-@scaleup-2:       1.5rem;
-@scaleup-1:       1.25rem;
-@scale-0:         1rem;
-@scaledown-1:     0.833rem;
-@scaledown-2:     0.667rem;
-@scaledown-3:     0.556rem;
-@scaledown-4:     0.444rem;
-@scaledown-5:     0.37rem;
-@scaledown-6:     0.296rem;
-
 table {
   color: @slate-60;
   text-align: left;
@@ -108,10 +51,9 @@ table {
     }
   }
   th {
-    padding: @scaleup-1;
+    padding: @scaleup-2;
     font-weight: 700;
-    font-size: @scaledown-1;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     text-transform: uppercase;
     &.details-header {
       text-align: right;
@@ -136,6 +78,9 @@ table {
       &:hover {
         cursor: pointer;
       }
+      img {
+        display: inline-block;
+      }
     }
     &.param {
       position: relative;
@@ -143,7 +88,7 @@ table {
       &:before {
         content: '';
         position: absolute;
-        margin-top: 4px;
+        margin-top: 8px;
         left: 0;
         width: @scaledown-2;
         height: @scaledown-2;
