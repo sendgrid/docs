@@ -19,7 +19,7 @@ This endpoint allows you to create a sender identity.
 
 Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the  `from.email`.
 
-{% apiv3example post POST https://api.sendgrid.com/v3/marketing_campaigns/senders %}
+{% apiv3example post POST https://api.sendgrid.com/v3/senders %}
 {% apiv3requestbody %}
 {
   "nickname": "My Sender ID",
@@ -72,7 +72,7 @@ Retrieve All Sender Identities [GET]
 
 This endpoint allows you to retrieve a list of all of your sender identities.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/marketing_campaigns/senders %}
+{% apiv3example get GET https://api.sendgrid.com/v3/senders %}
 {% v3response %}
 {
   "result": [
@@ -111,7 +111,7 @@ Updates to `from.email` require re-verification. If your domain has been whitela
 
 Partial updates are allowed, but fields that are marked as "required" in the POST (create) endpoint must not be nil if that field is included in the PATCH request.
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/marketing_campaigns/senders{sender_id} %}
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/senders/{sender_id} %}
 
 {% apiv3requestbody %}
 {
@@ -165,7 +165,7 @@ Delete a Sender Identity [DELETE]
 
 This endpoint allows you to delete one of your sender identities.
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id} %}
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/senders/{sender_id} %}
 
 {% v3response %}
 HTTP/1.1 204
@@ -178,7 +178,7 @@ Resend Sender Identity Verification [POST]
 
 This endpoint allows you to resend the sender identity verification email.
 
-{% apiv3example post POST https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id}/resend_verification %}
+{% apiv3example post POST https://api.sendgrid.com/v3/senders/{sender_id}/resend_verification %}
 
 {% v3response %}
 HTTP/1.1 204
@@ -191,7 +191,7 @@ Retrieve a Specific Sender Identity [GET]
 
 This endoint allows you to retrieve a specific sender identity.
 
-{% apiv3example get GET https://api.sendgrid.com/v3/marketing_campaigns/senders/{sender_id} %}
+{% apiv3example get GET https://api.sendgrid.com/v3/senders/{sender_id} %}
 
 {% v3response %}
 {
