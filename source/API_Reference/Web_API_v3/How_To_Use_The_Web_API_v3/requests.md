@@ -10,6 +10,10 @@ navigation:
 ---
 
 {% anchor h2 %}
+Making a Request
+{% endanchor %}
+
+{% anchor h3 %}
 Host
 {% endanchor %}
 
@@ -19,16 +23,12 @@ The host for API requests is `https://api.sendgrid.com/v3/`
 All requests must be made over HTTPS. HTTP is **not** supported.
 {% endinfo %}
 
-* * * * *
-
 {% anchor h3 %}
 Authorization Header
 {% endanchor %}
 
 You must provide an authorization header as described in
 [Authentication](#-Authentication).
-
-* * * * *
 
 {% anchor h3 %}
 HTTP Verbs
@@ -63,8 +63,6 @@ Depending on the resource, we support the following HTTP verbs:
   </tr>
 </table>
 
-* * * * *
-
 {% anchor h3 %}
 Accept Header
 {% endanchor %}
@@ -77,8 +75,6 @@ API will use `application/json`.
 GET https://api.sendgrid.com/v3/endpoint HTTP/1.1
 Accept: application/json
 {% endcodeblock %}
-
-* * * * *
 
 {% anchor h3 %}
 Arrays of Data
@@ -93,6 +89,10 @@ GET https://api.sendgrid.com/v3/endpoint?parameter=data1&parameter=data2 HTTP/1.
 {% endcodeblock %}
 
 * * * * *
+
+{% anchor h2 %}
+Formatting Your Request
+{% endanchor %}
 
 {% anchor h3 %}
 Request Body
@@ -109,8 +109,6 @@ Content-Type: application/json
   "name": "new template name"
 }
 {% endcodeblock %}
-
-* * * * *
 
 {% anchor h3 %}
 Pagination
@@ -152,8 +150,6 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
   </tr>
 </table>
 
-* * * * *
-
 {% anchor h3 %}
 Search & Parameters
 {% endanchor %}
@@ -170,7 +166,7 @@ GET https://api.sendgrid.com/v3/resource?email=foo&bar=baz HTTP/1.1
 
 * * * * *
 
-{% anchor h3 %}
+{% anchor h2 %}
 Successful Requests
 {% endanchor %}
 
