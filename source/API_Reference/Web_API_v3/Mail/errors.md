@@ -34,7 +34,7 @@ Failed requests will always return an error response, including a response code,
 | 405 | METHOD NOT ALLOWED |  |
 | 413 | PAYLOAD TOO LARGE | The JSON payload you have included in your request is too large. |
 | 429 | TOO MANY REQUESTS | The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html) |
-| 5xx | 5xx respones indicate an error made by SendGrid | The request you made was valid, but an error occurred when SendGrid attempted to processes it. |
+| 5xx | 5xx respones indicate an error made by SendGrid | An error occurred when SendGrid attempted to processes it. |
 | 500 | SERVER UNAVAILABLE | An error occurred on a SendGrid server. |
 | 503 | SERVICE NOT AVAILABLE | The SendGrid v3 Web API is not available. |
 

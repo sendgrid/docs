@@ -93,3 +93,39 @@ Request Body Parameters
 {% endanchor %}
 
 Every request made to /v3/mail/send/beta will require a request body formatted in JSON containing the your email’s content and metadata. This may include information such as the recipient’s email address, the return address, and the subject.
+
+{% apitable %}
+  {% api_table_param personalization "array of objects" Yes "100 Max" "An array of messages and their metadata. Each object within personalizations can be thought of as an envelope - it defines who should receive an individual message and how that message should be handled. For more information, please see our documentation on Personalizations. Parameters in personalizations will override the parameters of the same name from the message level." 0 %}
+    {% api_table_param to "array of email objects" Yes "" "An array of recipients. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
+      {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
+      {% api_table_param name string No "" "The name of the recipient." 2 %}
+    {% api_table_param cc "array of email objects" No "" "An array of recipients who will receive a copy of your email. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
+      {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
+      {% api_table_param name string No "" "The name of the recipient." 2 %}
+    {% api_table_param bcc "array of email objects" No "" "An array of recipients who will receive a blind carbon copy of your email. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
+      {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
+      {% api_table_param name string No "" "The name of the recipient." 2 %}
+    {% api_table_param subject string No "" "The subject line of your email." 1 %}
+    {% api_table_param headers "object" No "" "An object allowing you to specify specific handling instructions for your email." 1 %}
+    {% api_table_param substitutions "object" No "" "An object following the pattern "substitution_tag":"value to substitute". All are assumed to be strings. These substitutions will apply to the content of your email, in addition to the `subject` and `reply-to` parameters." 1 %}
+    {% api_table_param custom_args "object" No "" "These are values that are specific to this personalization that will be carried along with the email, activity data, and links. Substitutions will not be made on custom arguments. personalizations[x].custom_args will be merged with message level custom_args, overriding any conflicting keys. The combined total size of the resulting custom arguments, after merging, for each personalization may not exceed 10,000 bytes." 1 %}
+    {% api_table_param send_at integer No "" "A unix timestamp allowing you to specify when you want your email to be sent from SendGrid. **This is not necessary if you want the email to be sent at the time of your API request.**" 1 %}
+  {% api_table_param from "array of email objects" No "" "An email object containing the email address and name of the sender." 0 %}
+    {% api_table_param email string Yes "" "The email address of the sender." 1 %}
+    {% api_table_param name string No "" "The name of the sender." 1 %}
+  {% api_table_param reply_to "array of email objects" No "" "An email object containing the email address and name of the individual who should receive responses to your email." 0 %}
+    {% api_table_param email string Yes "" "The email address to which responses will be sent." 1 %}
+    {% api_table_param name string No "" "The name of the individual who will receive responses to the email." 1 %}
+  {% api_table_param subject string Yes "" "The subject of your email. This may be overridden by `personalizations[x].subject`." 0 %}
+  {% api_table_param content "array of objects" Yes "" "An array in which you may specify the content of your email. You can include multiple mime types of content, but you must specify at least one. To include more than one mime type, simply add another object to the array containing the `type` and `value` parameters. If included, text/plain and text/html must be the first indices of the array in this order. **If you choose to include the text/plain or text/html mime types, they must be the first indices of the `content` array in the order text/plain, text/html.**" 0 %}
+    {% api_table_param type string Yes "" "1 Min" "The mime type of the content you are including in your email. For example, text/plain or text/html." %}
+    {% api_table_param value string Yes "" "1 Min" "The actual content of the specified mime type that you are including in your email." %}
+  {% api_table_param attachments "array of objects" No "" "An array of objects in which you can specify any attachments you want to include." 0 %}
+    {% api_table_param content string Yes "" "" "description" %}
+    {% api_table_param type string required? "" "" "description" %}
+    {% api_table_param filename string Yes "" "" "description" %}
+    {% api_table_param disposition string required? "" "" "description" %}
+    {% api_table_param content_id string required? "" "" "description" %}
+
+
+{% endapitable %}
