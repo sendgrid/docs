@@ -48,6 +48,8 @@ SendGrid provides libraries to help you quickly and easily integrate with the v3
   }]
 }
 {% endapiv3requestbody %}
+
+
 {% endapiv3example %}
 
 For general information about how to use SendGrid's Web API v3, please visit our [API Overview]({{root_url}}/API_Reference/Web_API_v3/index.html)
