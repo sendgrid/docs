@@ -118,14 +118,14 @@ Every request made to /v3/mail/send/beta will require a request body formatted i
     {% api_table_param name string No "" "The name of the individual who will receive responses to the email." 1 %}
   {% api_table_param subject string Yes "" "The subject of your email. This may be overridden by `personalizations[x].subject`." 0 %}
   {% api_table_param content "array of objects" Yes "" "An array in which you may specify the content of your email. You can include multiple mime types of content, but you must specify at least one. To include more than one mime type, simply add another object to the array containing the `type` and `value` parameters. If included, text/plain and text/html must be the first indices of the array in this order. **If you choose to include the text/plain or text/html mime types, they must be the first indices of the `content` array in the order text/plain, text/html.**" 0 %}
-    {% api_table_param type string Yes "" "1 Min" "The mime type of the content you are including in your email. For example, text/plain or text/html." %}
-    {% api_table_param value string Yes "" "1 Min" "The actual content of the specified mime type that you are including in your email." %}
-  {% api_table_param attachments "array of objects" No "" "An array of objects in which you can specify any attachments you want to include." 0 %}
-    {% api_table_param content string Yes "" "" "description" %}
-    {% api_table_param type string required? "" "" "description" %}
-    {% api_table_param filename string Yes "" "" "description" %}
-    {% api_table_param disposition string required? "" "" "description" %}
-    {% api_table_param content_id string required? "" "" "description" %}
-
+    {% api_table_param type string Yes "1 Min" "The mime type of the content you are including in your email. For example, text/plain or text/html." %}
+    {% api_table_param value string Yes "1 Min" "The actual content of the specified mime type that you are including in your email." %}
+  {% api_table_param attachments "array of objects" No "An array of objects in which you can specify any attachments you want to include." 0 %}
+    {% api_table_param content string Yes "" "The Base64 encoded content of the attachment." 1 %}
+    {% api_table_param type string No "" "The mime type of the content you are attaching. For example, application/pdf or image/jpeg." 1 %}
+    {% api_table_param filename string Yes "" "The filename of the attachment." 1 %}
+    {% api_table_param disposition string No "" "The content-disposition of the attachment specifying how you would like the attachment to be displayed. For example, `inline` results in the attached file being displayed automatically within the message while `attachment` results in the attached file requiring some action to be taken before it is displayed (e.g. opening or downloading the file). Defaults to `attachment`. Can be either `attachment` or `inline`." 1 %}
+    {% api_table_param content_id string No "" "A unique id that you specify for the attachment. This is used when the disposition is set to `inline` and the attachment is an image, allowing the file to be displayed within the body of your email. Ex: `<img src="cid:ii_139db99fdb5c3704"></img>`" 1 %}
+  {% api_table_param template_id string no "description" %}
 
 {% endapitable %}
