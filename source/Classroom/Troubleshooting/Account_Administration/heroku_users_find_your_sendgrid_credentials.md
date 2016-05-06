@@ -11,7 +11,12 @@ navigation:
   show: true
 ---
 
-If you are a Heroku user using [the SendGrid Add-on](https://addons.heroku.com/sendgrid), and would like to access the SendGrid web interface, you can find your SendGrid credentials by doing the following from the Heroku interface:
+#Find your exisiting username/password:
+If you are a Heroku user using [the SendGrid add-on](https://addons.heroku.com/sendgrid), and would like to access the SendGrid web interface, or would just like to know your Sendgrid account credentials; you can find them by doing the following from the Heroku interface:
 
-1. Go to your Apps, choose Sendgrid
-2. Click Settings and then click “reveal config vars”
+>1. Go to your Apps, choose Sendgrid
+>2. Click Settings and then click “reveal config vars”
+
+
+#Reset your Sendgrid add-on password:
+Because we do not directly control the accounts created through Heroku add-ons, you will need to contact [Heroku Support](https://www.heroku.com/support) directly to request a password reset for the add-on. Keep in mind that resetting your Sendgrid password may break any integrations you have that are currently using the exisiting credentials for authentication.   
