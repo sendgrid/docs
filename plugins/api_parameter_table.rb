@@ -30,4 +30,4 @@ HTML
   end
 end
 
-Liquid::Template.register_tag('apitable', Jekyll::APITable)
+Liquid::Template.register_tag('api_table', Jekyll::APITable)
