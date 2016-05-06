@@ -666,11 +666,12 @@ Mon, 02 Feb 2015 23:59:59 GMT.
 # Group Segments
 
 Valid operators for create and update depend on the type of the field you are segmenting.
-
-* Dates: "eq", "ne", "lt" (before), "gt" (after)
-* Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value)
-* Numbers: "eq", "lt", "gt"
-* Email Clicks and Opens: "eq" (opened), "ne" (not opened)
+<ul>
+<li>Dates: "eq", "ne", "lt" (before), "gt" (after)</li>
+<li>Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value)</li>
+<li>Numbers: "eq", "lt", "gt"</li>
+<li>Email Clicks and Opens: "eq" (opened), "ne" (not opened)</li>
+</ul>
 
 Segment conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either clicks.campaign_identifier or opens.campaign_identifier. The condition value should be a string containing the id of a completed campaign.
 
