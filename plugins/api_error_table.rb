@@ -13,7 +13,7 @@ module Jekyll
       output = super
       output = <<HTML
 <h2>#{@name}</h2>
-<table name="#{@identifier}">
+<table name="#{@identifier}" class="apitable">
   <tbody>
     <tr>
       <th colspan="1">Error Code</th>
