@@ -94,8 +94,8 @@ Request Body Parameters
 
 Every request made to /v3/mail/send/beta will require a request body formatted in JSON containing the your email’s content and metadata. This may include information such as the recipient’s email address, the return address, and the subject.
 
-{% apitable %}
-  {% api_table_param personalization "array of objects" Yes "100 Max" "An array of messages and their metadata. Each object within personalizations can be thought of as an envelope - it defines who should receive an individual message and how that message should be handled. For more information, please see our documentation on Personalizations. Parameters in personalizations will override the parameters of the same name from the message level." 0 %}
+{% api_table %}
+  {% api_table_param personalizations "array of objects" Yes "100 Max" "An array of messages and their metadata. Each object within personalizations can be thought of as an envelope - it defines who should receive an individual message and how that message should be handled. For more information, please see our documentation on Personalizations. Parameters in personalizations will override the parameters of the same name from the message level." 0 %}
     {% api_table_param to "array of email objects" Yes "" "An array of recipients. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
       {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
       {% api_table_param name string No "" "The name of the recipient." 2 %}
@@ -126,6 +126,24 @@ Every request made to /v3/mail/send/beta will require a request body formatted i
     {% api_table_param filename string Yes "" "The filename of the attachment." 1 %}
     {% api_table_param disposition string No "" "The content-disposition of the attachment specifying how you would like the attachment to be displayed. For example, `inline` results in the attached file being displayed automatically within the message while `attachment` results in the attached file requiring some action to be taken before it is displayed (e.g. opening or downloading the file). Defaults to `attachment`. Can be either `attachment` or `inline`." 1 %}
     {% api_table_param content_id string No "" "A unique id that you specify for the attachment. This is used when the disposition is set to `inline` and the attachment is an image, allowing the file to be displayed within the body of your email. Ex: `<img src="cid:ii_139db99fdb5c3704"></img>`" 1 %}
-  {% api_table_param template_id string no "description" %}
-
-{% endapitable %}
+  {% api_table_param template_id string no "description" 0 %}
+  {% api_table_param sections "custom object" No "" "Description" 0 %}
+  {% api_table_param headers "custom object" No "" "Description" 0 %}
+  {% api_table_param categories "array of integers" No "Max 255" "Description" 0 %}
+  {% api_table_param custom_args "custom object" No "" "Description" 0 %}
+  {% api_table_param send_at integer No "" "Description" 0 %}
+  {% api_table_param batch_id string No "" "Description" 0 %}
+  {% api_table_param asm "object" No "" "Description" 0 %}
+    {% api_table_param group_id integer Yes "" "Description" 1 %}
+    {% api_table_param groups_to_display "array of integers" No "Max 25" "Description" 1 %}
+  {% api_table_param ip_pool_name string No "Min 2, Max 64" "Description" 0 %}
+  {% api_table_param mail_settings "object" No "" "Description" 0 %}
+    {% api_table_param bcc "object" No "" "Description" 1 %}
+      {% api_table_param enable bool No "" "Description" 2 %}
+      {% api_table_param email string No "" "Description" 2 %}
+    {% api_table_param bypass_list_management bool No "" "Description" 1 %}
+    {% api_table_param footer "object" No "" "Description" 1 %}
+      {% api_table_param enable bool No "" "Description" 2 %}
+      {% api_table_param text string No "" "Description" 2 %}
+      {% api_table_param html string No "" "Description" 2 %}
+{% endapi_table %}
