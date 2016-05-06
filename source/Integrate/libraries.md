@@ -22,11 +22,11 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-go](http://github.com/sendgrid/sendgrid-go) - Official Go library
 -   [sendgrid-java](http://github.com/sendgrid/sendgrid-java) - Official Java library
 -   [sendgrid-nodejs](http://github.com/sendgrid/sendgrid-nodejs) - Official NodeJS library
--   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) - Official Perl library
+
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) - Official PHP library
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) - Official Python library
 -   [sendgrid-ruby](http://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
--   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) - Official Titanium wrapper
+
 
 The following official libraries are maintained by SendGrid to create [SMTP API Headers]({{root_url}}/API_Reference/SMTP_API/index.html), they are included in the above official libraries.
 
@@ -133,7 +133,7 @@ Meteor
 Perl 
 {% endanchor %}
 
--   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) *by SendGrid* - Official Perl library for the SendGrid API
+-   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) *by SendGrid* -  Perl library for the SendGrid API
 -   [WebService--SendGrid](http://github.com/majrmovies/WebService--SendGrid) *by Jonathan Lloyd* - Perl interface for SendGrid API
 
 {% anchor h3 %}
@@ -185,7 +185,7 @@ Rust
 Titanium 
 {% endanchor %}
 
--   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) *by SendGrid* - Official SendGrid Titanium wrapper
+-   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) - SendGrid Titanium wrapper
 
 {% anchor h2 %}
 Webhook Libraries 

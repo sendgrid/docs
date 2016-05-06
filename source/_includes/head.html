@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   {% if page.seo.title and page.seo.override %}
     <title>{{ page.seo.title }}</title>
+    <meta class='swiftype' name='title' data-type='string' content='{{ page.seo.title }}' />
   {% else %}
     {% capture title %}{% if page.seo.title %}{{ page.seo.title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
     <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
@@ -16,8 +17,13 @@
 
   {% if page.seo.description %}
     <meta name="description" content="{{ page.seo.description }}">
+    <meta class='swiftype' name='info' data-type='string' content='{{ page.seo.description }}' />
   {% else %}
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+      <meta class='swiftype' name='info' data-type='string' content='{{ page.description }}' />
+
+    {% endif %}
   {% endif %}
 
   {% capture canonical %}{% if page.seo.canonical %}{{ page.seo.canonical }}{% else %}{{site.url}}{{page.url}}{% endif %}{% endcapture %}
@@ -30,6 +36,18 @@
   {% if page.seo.robots %}
     <meta name="robots" content="{{ page.seo.robots }}">
   {% endif %}
+
+  {% if page.st.type %}
+    <meta class='swiftype' name='type' data-type='enum' content='{{ page.st.type }}' />
+  {% endif %}
+
+  {% if page.st.info %}
+  {% endif %}
+
+  {% if page.st.publish_date %}
+    <meta class='swiftype' name='published_at' data-type='date' content='{{ page.st.publish_date }}' />
+  {% endif %}
+
 
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
@@ -86,13 +104,11 @@
 -  /_assets/javascripts/search.js
 -  /_assets/javascripts/forms.js
 -  /_assets/bower_components/jsrender/jsrender.js
--  /_assets/javascripts/livedocs.js
 -  /_assets/javascripts/feedback.js
 -  /_assets/javascripts/octopress.js
 -  /_assets/bower_components/highlightjs/highlight.pack.js
--  /_assets/javascripts/formatXml.js
--  /_assets/javascripts/parseQuerystring.js
 -  /_assets/bower_components/jquery-cookie/jquery.cookie.js
+- /_assets/javascripts/tables.js
 {% endjavascript_asset_tag %}"
 
   // filename = "{{root_url}}/assets/app.js"
