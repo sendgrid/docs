@@ -12,7 +12,7 @@ module Jekyll
     def render(context)
 output=<<HTML
 <tr class="depth-2 details-closed">
-  <td colspan="3" class="param status-#{@error_message}">#{@error_message}</td>
+  <td colspan="3" class="param">#{@error_message}</td>
   <td class="details-caret"><img src="/images/caret.svg"></td>
 </tr>
 <tr class="details-row">

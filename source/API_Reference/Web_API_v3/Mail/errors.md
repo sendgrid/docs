@@ -39,3 +39,228 @@ Failed requests will always return an error response, including a response code,
 | 503 | SERVICE NOT AVAILABLE | The SendGrid v3 Web API is not available. |
 
 Following is a complete list of the possible parameter level errors that you may receive when making a request to the v3 Mail Send endpoint. Each error will include the field that caused the error (e.g. "personalizations" or "personalizations.to"), a brief message explaining the cause of the error, and a link to the error in the table below. Here you will find links to relevant documentation for each error.
+
+{% api_error_table personalizations "" message.personalizations %}
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "The personalization block is limited to [top end] personalizations per API request. You have provided [this many] personalizations. Please consider splitting this into multiple requests and resending your request." "Description." %}
+
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "You must have at least one personalization." "Description." %}
+{% endapi_error_table %}
+
+{% api_error_table personalizations.to "" message.personalizations.to %}
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "The to array must at least have an 'email' parameter with a valid email address and it may also contain a 'name' parameter. e.g. {'email' : 'example@example.com'}  or {'email' : 'example@example.com', 'name' : 'Example Recipient'}" "Description." %}
+{% endapi_error_table %}
+
+{% api_error_table "Recipient Errors" "Description goes here!" message.recipient-errors %}
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "There is a limit of 1000 total recipients (to + cc + bcc) per mail/send request." "Description." %}
+  {% api_error_table_message "Each to object must at least have an email address and may also contain a name. e.g. {'email' : 'example@example.com'}  or {'email' : 'example@example.com', 'name' : 'Example Recipient'}" "Description." %}
+  {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email] more than once." "Description." %}
+{% endapi_error_table %}
+
+{% api_error_table personalizations.cc "" message.personalizations.cc%}
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "The cc array, when used, must at least have an 'email' parameter with a valid email address and it may also contain a 'name' parameter. e.g. {"email" : "example@example.com"} or {"email" : "example@example.com", "name" : "Example Recipient"}" "Description." %}
+
+  {% api_error_table_message "Each recipient object must at least have an email address and may also contain a name. e.g. {'email' : 'example@example.com'}  or {'email' : 'example@example.com', 'name' : 'Example Recipient'}" "Description." %}
+
+  {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email] more than once." "Description." %}
+{% endapi_error_table %}
+
+{% api_error_table personalizations.bcc "" message.personalizations.bcc %}
+
+{% endapi_error_table %}
+
+{% api_error_table personalizations.categories "" message.personalizations.categories %}
+
+{% endapi_error_table %}
+
+{% api_error_table personalizations.custom_args "" message.personalizations.custom_args %}
+
+{% endapi_error_table %}
+
+{% api_error_table personalizations.headers "" message.personalizations.headers %}
+
+{% endapi_error_table %}
+
+{% api_error_table personalizations.substitutions "" message.personalizations.substitutions %}
+
+{% endapi_error_table %}
+
+{% api_error_table from "" message.from %}
+
+{% endapi_error_table %}
+
+{% api_error_table reply_to "" message.reply_to %}
+
+{% endapi_error_table %}
+
+{% api_error_table subject "" message.subject %}
+
+{% endapi_error_table %}
+
+{% api_error_table content "" message.content %}
+
+{% endapi_error_table %}
+
+{% api_error_table content.type "" message.content.type %}
+
+{% endapi_error_table %}
+
+{% api_error_table content.value "" message.content.value %}
+
+{% endapi_error_table %}
+
+{% api_error_table attachments.content "" message.attachments.content %}
+
+{% endapi_error_table %}
+
+{% api_error_table attachments.type "" message.attachments.type %}
+
+{% endapi_error_table %}
+
+{% api_error_table attachments.filename "" message.attachments.filename %}
+
+{% endapi_error_table %}
+
+{% api_error_table attachments.disposition "" message.attachments.disposition %}
+
+{% endapi_error_table %}
+
+{% api_error_table attachments.content_id "" message.attached.content_id %}
+
+{% endapi_error_table %}
+
+{% api_error_table template_id "" message.template_id %}
+
+{% endapi_error_table %}
+
+{% api_error_table sections "" message.sections %}
+
+{% endapi_error_table %}
+
+{% api_error_table headers "" message.headers %}
+
+{% endapi_error_table %}
+
+{% api_error_table categories "" message.categories %}
+
+{% endapi_error_table %}
+
+{% api_error_table send_at "" message.send_at %}
+
+{% endapi_error_table %}
+
+{% api_error_table batch_id "" message.batch_id %}
+
+{% endapi_error_table %}
+
+{% api_error_table asm.group_id "" message.asm.group_id %}
+
+{% endapi_error_table %}
+
+{% api_error_table asm.groups_to_display "" message.asm.groups_to_display %}
+
+{% endapi_error_table %}
+
+{% api_error_table ip_pool_name "" message.ip_pool_name %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.bcc.enable "" message.mail_settings.bcc.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.bcc.email "" message.mail_settings.bcc.email %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.bypass_list_management.enable "" message.mail_settings.bypass_list_management.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.footer.enable "" message.mail_settings.footer.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.footer.text "" message.mail_settings.footer.text %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.footer.html "" message.mail_settings.footer.html %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.sandbox_mode.enable "" message.mail_settings.sandbox_mode.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.spam_check.enable "" message.mail_settings.spam_check.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.spam_check.threshold "" message.spam_check.threshold %}
+
+{% endapi_error_table %}
+
+{% api_error_table mail_settings.spam_check.post_to_url "" message.mail_settings.spam_check.post_to_url %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.click_tracking.enable "" message.tracking_settings.click_tracking.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.click_tracking.enable_text "" message.tracking_settings.click_tracking.enable_text %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.open_tracking.enable "" message.tracking_settings.open_tracking.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.open_tracking.substitution_tag "" message.tracking_settings.open_tracking.substitution_tag %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.subscription_tracking.enable "" message.tracking_settings.subscription_tracking.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.subscription_tracking.text "" message.tracking_settings.subscription_tracking.text %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.subscription_tracking.html "" message.tracking_settings.subscription_tracking.html %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.subscription_tracking.substitution_tag "" message.tracking_settings.subscription_tracking.substitution_tag %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.enable "" message.tracking_settings.ganalytics.enable %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.utm_source "" message.tracking_settings.ganalytics.utm_source %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.utm_medium "" message.tracking_settings.ganalytics.utm_medium %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.utm_term "" message.tracking_settings.ganalytics.utm_term %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.utm_content "" message.tracking_settings.ganalytics.utm_content %}
+
+{% endapi_error_table %}
+
+{% api_error_table tracking_settings.ganalytics.utm_campaign "" message.tracking_settings.ganalytics.utm_campaign %}
+
+{% endapi_error_table %}

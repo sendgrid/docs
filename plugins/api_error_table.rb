@@ -1,19 +1,20 @@
 #require 'kramdown'
-
 module Jekyll
   class APIErrorTable < Liquid::Block
     def initialize(tag_name, markup, tokens)
       parameters = markup.shellsplit
       @name = parameters[0]
+      @description = parameters[1]
       @identifier = @name.gsub(".","_")
+      @tag = parameters[2]
       super
     end
-
     def render(context)
       output = super
       output = <<HTML
-<h2>#{@name}</h2>
-<table name="#{@identifier}" class="apitable">
+{% anchor h2 #{@tag}%}#{@name}{% endanchor %}
+#{@description}
+<table name="#{@identifier}">
   <tbody>
     <tr>
       <th colspan="1">Error Code</th>
@@ -30,5 +31,4 @@ HTML
     end
   end
 end
-
 Liquid::Template.register_tag('api_error_table', Jekyll::APIErrorTable)
