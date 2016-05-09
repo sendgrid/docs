@@ -14,7 +14,7 @@ module Jekyll
       output = <<HTML
 {% anchor h2 #{@tag}%}#{@name}{% endanchor %}
 #{@description}
-<table name="#{@identifier}">
+<table class="apitable" name="#{@identifier}">
   <tbody>
     <tr>
       <th colspan="1">Error Code</th>

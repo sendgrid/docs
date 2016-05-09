@@ -44,7 +44,6 @@ Following is a complete list of the possible parameter level errors that you may
   {% api_error_table_row 400 %}
   {% api_error_table_message "The personalization block is limited to [top end] personalizations per API request. You have provided [this many] personalizations. Please consider splitting this into multiple requests and resending your request." "Description." %}
 
-  {% api_error_table_row 400 %}
   {% api_error_table_message "You must have at least one personalization." "Description." %}
 {% endapi_error_table %}
 
@@ -60,7 +59,7 @@ Following is a complete list of the possible parameter level errors that you may
   {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email] more than once." "Description." %}
 {% endapi_error_table %}
 
-{% api_error_table personalizations.cc "" message.personalizations.cc%}
+{% api_error_table personalizations.cc "" message.personalizations.cc %}
   {% api_error_table_row 400 %}
   {% api_error_table_message "The cc array, when used, must at least have an 'email' parameter with a valid email address and it may also contain a 'name' parameter. e.g. {"email" : "example@example.com"} or {"email" : "example@example.com", "name" : "Example Recipient"}" "Description." %}
 
@@ -70,7 +69,8 @@ Following is a complete list of the possible parameter level errors that you may
 {% endapi_error_table %}
 
 {% api_error_table personalizations.bcc "" message.personalizations.bcc %}
-
+  {% api_error_table_row 400 %}
+  {% api_error_table_message "The bcc array, when used, must at least have an 'email' parameter with a valid email address and it may also contain a 'name' parameter. e.g. {'email' : 'example@example.com'}  or {'email' : 'example@example.com', 'name' : 'Example Recipient'}" "Description." %}
 {% endapi_error_table %}
 
 {% api_error_table personalizations.categories "" message.personalizations.categories %}

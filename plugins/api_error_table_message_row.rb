@@ -1,5 +1,4 @@
 #require 'kramdown'
-
 module Jekyll
   class APIErrorTableRowMessage < Liquid::Tag
     def initialize(tag_name, markup, tokens)
@@ -8,7 +7,6 @@ module Jekyll
       @description = parameters[1]
       super
     end
-
     def render(context)
 output=<<HTML
 <tr class="depth-2 details-closed">
@@ -20,11 +18,9 @@ output=<<HTML
   <td colspan="3">#{@description}</td>
 </tr>
 HTML
-
       #html = Kramdown::Document.new(output).to_html
       return Liquid::Template.parse(output).render context
     end
   end
 end
-
 Liquid::Template.register_tag('api_error_table_message', Jekyll::APIErrorTableRowMessage)
