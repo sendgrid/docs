@@ -5,6 +5,7 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       parameters = markup.shellsplit
       @name = parameters[0]
+      @description = parameters[1]
       @identifier = @name.gsub(".","_")
       super
     end
@@ -13,6 +14,7 @@ module Jekyll
       output = super
       output = <<HTML
 <h2>#{@name}</h2>
+#{@description}
 <table name="#{@identifier}">
   <tbody>
     <tr>
