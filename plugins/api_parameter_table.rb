@@ -11,7 +11,7 @@ module Jekyll
     def render(context)
       output = super
       output = <<HTML
-<table>
+<table class="apitable">
   <tbody>
     <tr>
       <th colspan="2">JSON Parameter</th>
