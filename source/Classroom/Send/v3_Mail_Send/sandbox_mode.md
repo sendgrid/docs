@@ -86,7 +86,7 @@ Example Sandbox Mode JSON
 {% endcodeblock %}
 
 **Response**
-{% codeblock lang:json %}
+{% codeblock %}
 {
   "errors": [
     {
