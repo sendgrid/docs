@@ -13,9 +13,9 @@ module Jekyll
     def render(context)
       output = super
       output = <<HTML
-<h2>#{@name}</h2>
+{% anchor h3 #{@tag}%}#{@name}{% endanchor %}
 #{@description}
-<table name="#{@identifier}">
+<table class="apitable" name="#{@identifier}">
   <tbody>
     <tr>
       <th colspan="1">Error Code</th>
