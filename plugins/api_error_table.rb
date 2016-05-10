@@ -12,7 +12,7 @@ module Jekyll
     def render(context)
       output = super
       output = <<HTML
-{% anchor h2 #{@tag}%}#{@name}{% endanchor %}
+{% anchor h3 #{@tag}%}#{@name}{% endanchor %}
 #{@description}
 <table class="apitable" name="#{@identifier}">
   <tbody>

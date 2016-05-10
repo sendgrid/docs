@@ -40,6 +40,22 @@ Failed requests will always return an error response, including a response code,
 
 Following is a complete list of the possible parameter level errors that you may receive when making a request to the v3 Mail Send endpoint. Each error will include the field that caused the error (e.g. "personalizations" or "personalizations.to"), a brief message explaining the cause of the error, and a link to the error in the table below. Here you will find links to relevant documentation for each error.
 
+{% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [Personalizations Errors](#-Personalizations-Errors)
+* [Message Level Errors](#-Message-Level-Errors)
+* [Content Errors](#-Content-Errors)
+* [Attachment Errors](#-Attachment-Errors)
+* [ASM Errors](#-ASM-Errors)
+* [Mail Settings Errors](#-Mail-Settings-Errors)
+* [Tracking Settings Errors](#-Tracking-Settings-Errors)
+
+{% anchor h2 %}
+Personalizations Errors
+{% endanchor %}
+
 {% api_error_table personalizations "" message.personalizations %}
   {% api_error_table_row 400 %}
 
@@ -89,25 +105,25 @@ Following is a complete list of the possible parameter level errors that you may
 {% api_error_table personalizations.categories "" message.personalizations.categories %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "You are limited to 10 categories per personalization. You provided X categories." "" %}
+  {% api_error_table_message "You are limited to 10 categories per personalization. You provided X categories." "For more information on how you can use categories to organize your email analytics, please visit our <a href={{root_url}}/User_Guide/Statistics/categories.html>User Guide</a>." %}
 
-  {% api_error_table_message "Categories must be an array of strings." "" %}
+  {% api_error_table_message "Categories must be an array of strings." "For more information on how you can use categories to organize your email analytics, please visit our <a href={{root_url}}/User_Guide/Statistics/categories.html>User Guide</a>." %}
 
-  {% api_error_table_message "Each category must not be longer than 255 characters. [YOUR CATEGORY] exceeds this limit" "" %}
+  {% api_error_table_message "Each category must not be longer than 255 characters. [YOUR CATEGORY] exceeds this limit" "For more information on how you can use categories to organize your email analytics, please visit our <a href={{root_url}}/User_Guide/Statistics/categories.html>User Guide</a>." %}
 
-  {% api_error_table_message "The categories must be a unique list, and you have included [YOUR CATEGORY] more than once." "" %}
+  {% api_error_table_message "The categories must be a unique list, and you have included [YOUR CATEGORY] more than once." "For more information on how you can use categories to organize your email analytics, please visit our <a href={{root_url}}/User_Guide/Statistics/categories.html>User Guide</a>." %}
 
-  {% api_error_table_message "Categories can not contain non-ascii characters" "" %}
+  {% api_error_table_message "Categories can not contain non-ascii characters" "For more information on how you can use categories to organize your email analytics, please visit our <a href={{root_url}}/User_Guide/Statistics/categories.html>User Guide</a>." %}
 {% endapi_error_table %}
 
 {% api_error_table personalizations.custom_args "" message.personalizations.custom_args %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "All values of custom arguments object must be strings" "" %}
+  {% api_error_table_message "All values of custom arguments object must be strings" "Click <a href={{root_url}}/API_Reference/SMTP_API/unique_arguments.html>here</a> more information about how to use custom arguments." %}
 
-  {% api_error_table_message "<code>custom_args</code> cannot be empty." "" %}
+  {% api_error_table_message "<code>custom_args</code> cannot be empty." "Click <a href={{root_url}}/API_Reference/SMTP_API/unique_arguments.html>here</a> more information about how to use custom arguments." %}
 
-  {% api_error_table_message "The combined size of both global and personalization custom arguments may not exceed 10,000 bytes per personalization." "" %}
+  {% api_error_table_message "The combined size of both global and personalization custom arguments may not exceed 10,000 bytes per personalization." "Click <a href={{root_url}}/API_Reference/SMTP_API/unique_arguments.html>here</a> more information about how to use custom arguments." %}
 {% endapi_error_table %}
 
 {% api_error_table personalizations.headers "" message.personalizations.headers %}
@@ -132,6 +148,10 @@ Following is a complete list of the possible parameter level errors that you may
   {% api_error_table_message "You are limited to 10,000 substitutions." "" %}
 {% endapi_error_table %}
 
+{% anchor h2 %}
+Message Level Errors
+{% endanchor %}
+
 {% api_error_table from "" message.from %}
   {% api_error_table_row 400 %}
 
@@ -155,6 +175,10 @@ Following is a complete list of the possible parameter level errors that you may
 
   {% api_error_table_message "The subject of your email should not be longer than 100 characters." "" %}
 {% endapi_error_table %}
+
+{% anchor h2 %}
+Content Errors
+{% endanchor %}
 
 {% api_error_table content "" message.content %}
   {% api_error_table_row 400 %}
@@ -185,6 +209,10 @@ Following is a complete list of the possible parameter level errors that you may
 
   {% api_error_table_message "Following RFC 1341, section 7.2, if either text/html or text/plain are to be sent in your email: text/plain needs to be first, followed by text/html, followed by any other content." "" %}
 {% endapi_error_table %}
+
+{% anchor h2 %}
+Attachment Errors
+{% endanchor %}
 
 {% api_error_table attachments.content "" message.attachments.content %}
   {% api_error_table_row 400 %}
@@ -282,6 +310,10 @@ Following is a complete list of the possible parameter level errors that you may
   {% api_error_table_message "The batch_id must be a string." "" %}
 {% endapi_error_table %}
 
+{% anchor h2 %}
+ASM Errors
+{% endanchor %}
+
 {% api_error_table asm.group_id "" message.asm.group_id %}
   {% api_error_table_row 400 %}
 
@@ -307,6 +339,10 @@ Following is a complete list of the possible parameter level errors that you may
 
   {% api_error_table_message "The IP Pool name must be a valid pool name for your account. You provided [YOUR IP POOL NAME]." "" %}
 {% endapi_error_table %}
+
+{% anchor h2 %}
+Mail Settings Errors
+{% endanchor %}
 
 {% api_error_table mail_settings.bcc.enable "" message.mail_settings.bcc.enable %}
   {% api_error_table_row 400 %}
@@ -373,6 +409,10 @@ Following is a complete list of the possible parameter level errors that you may
 
   {% api_error_table_message "You must include the url to post to when using the spam check mail setting." "" %}
 {% endapi_error_table %}
+
+{% anchor h2 %}
+Tracking Settings Errors
+{% endanchor %}
 
 {% api_error_table tracking_settings.click_tracking.enable "" message.tracking_settings.click_tracking.enable %}
   {% api_error_table_row 400 %}

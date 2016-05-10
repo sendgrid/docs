@@ -79,7 +79,7 @@ Limitations
 {% endanchor %}
 
 * The total size of your email, including attachments, must be less than 30MB.
-* The total number of recipients must be less than 100.
+* The total number of recipients must be less than 100. This includes all recipients defied within the `to`, `cc`, and `bcc` parameters, across each object that you include in the `personalizations` array.
 * 3000 requests/sec is the maximum rate at which you may call v3 Mail endpoint.
 * The total length of custom arguments must be less than 10000 bytes.
 
