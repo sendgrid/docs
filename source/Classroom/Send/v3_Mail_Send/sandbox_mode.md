@@ -60,28 +60,24 @@ Example Sandbox Mode JSON
 **Request**
 {% codeblock lang:json %}
 {
-  "personalizations": [
-    {
-      "to": [
-    {
-      "email": "john@example.com"
-    }
-    ],
-    "subject": "Hello, World!"
-    }
-  ]
-  "from": {
-    "email": "John Doe"
-  },
-  "content": {
-    "type": "text",
-    "value": "Hello, World!"
-  },
-  "mail_settings": {
-    "sandbox_mode": {
-      "enable": true
-    }
-  }
+	"personalizations": [{
+		"to": [{
+			"email": "john@example.com"
+		}],
+		"subject": "Hello, World!"
+	}],
+	"from": {
+		"email": "John Doe"
+	},
+	"content": {
+		"type": "text",
+		"value": "Hello, World!"
+	},
+	"mail_settings": {
+		"sandbox_mode": {
+			"enable": true
+		}
+	}
 }
 {% endcodeblock %}
 
