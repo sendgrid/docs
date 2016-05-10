@@ -72,11 +72,11 @@ Example Sandbox Mode JSON
   ]
   "from": {
     "email": "John Doe"
-  }
+  },
   "content": {
     "type": "text",
     "value": "Hello, World!"
-  }
+  },
   "mail_settings": {
     "sandbox_mode": {
       "enable": true
