@@ -265,3 +265,136 @@ HTTP/1.1 200
 }
 {% endv3response %}
 {% endapiv3example %}
+
+{% anchor h2 %}
+GET
+{% endanchor %}
+
+Retrieve the monthly email statistics for all subusers over the given date range.
+
+When using the `sort_by_metric` to sort your stats by a specific metric, you can not sort by the following metrics:
+`bounce_drops`, `deferred`, `invalid_emails`, `processed`, `spam_report_drops`, `spam_reports`, or `unsubscribe_drops`.
+
+{% parameters get %}
+ {% parameter date Yes 'Date formatted as YYYY-MM-DD' 'The date of the month to retrieve statistics.' %}
+ {% parameter subuser No String 'A substring search of your subusers.' %}
+ {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.' %}
+ {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
+ {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
+ {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
+{% endparameters %}
+
+{% apiv3example get GET /subusers/stats/monthly?date={date}&subuser={subuser}&sort_by_metric={sort_by_metric}&sort_by_direction={sort_by_direction}&limit={limit}&offset={offset} %}
+{% v3response %}
+HTTP/1.1 200
+
+{
+  "date": "2016-02-01",
+  "stats": [
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "metrics": {
+          "blocks": 0,
+          "bounce_drops": 0,
+          "bounces": 0,
+          "clicks": 0,
+          "deferred": 0,
+          "delivered": 0,
+          "invalid_emails": 0,
+          "opens": 1,
+          "processed": 0,
+          "requests": 100,
+          "spam_report_drops": 0,
+          "spam_reports": 99,
+          "unique_clicks": 0,
+          "unique_opens": 0,
+          "unsubscribe_drops": 0,
+          "unsubscribes": 0
+      },
+      "name": "user1",
+      "type": "subuser"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "metrics": {
+          "blocks": 0,
+          "bounce_drops": 0,
+          "bounces": 0,
+          "clicks": 5,
+          "deferred": 0,
+          "delivered": 0,
+          "invalid_emails": 0,
+          "opens": 10,
+          "processed": 10,
+          "requests": 10,
+          "spam_report_drops": 0,
+          "spam_reports": 0,
+          "unique_clicks": 0,
+          "unique_opens": 0,
+          "unsubscribe_drops": 0,
+          "unsubscribes": 0
+      },
+      "name": "user2",
+      "type": "subuser"
+    }
+  ]
+}
+
+{% endv3response %}
+{% endapiv3example %}
+
+{% anchor h2 %}
+GET
+{% endanchor %}
+
+Retrieve the monthly email statistics for a single subuser.
+
+When using the `sort_by_metric` to sort your stats by a specific metric, you can not sort by the following metrics:
+`bounce_drops`, `deferred`, `invalid_emails`, `processed`, `spam_report_drops`, `spam_reports`, or `unsubscribe_drops`.
+
+{% parameters get %}
+ {% parameter date Yes 'Date formatted as YYYY-MM-DD' 'The date of the month to retrieve statistics.' %}
+ {% parameter sort_by_metric No 'A single metric' 'The metric that you want to sort by. Defaults to delivered. Other metrics that you can sort by are: `blocks`, `bounces`, `clicks`, `delivered`, `opens`, `requests`, `unique_clicks`, `unique_opens`, and `unsubscribes`.' %}
+ {% parameter sort_by_direction No '[desc|asc]' 'The direction you want to sort. Defaults to desc.' %}
+ {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned. Defaults to 5.' %}
+ {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from. Defaults to 0.' %}
+{% endparameters %}
+
+{% apiv3example get GET /subusers/:subuser_name/stats/monthly?date={date}&subuser={subuser}&sort_by_metric={sort_by_metric}&sort_by_direction={sort_by_direction}&limit={limit}&offset={offset} %}
+{% v3response %}
+HTTP/1.1 200
+
+{
+  "date": "2016-02-01",
+  "stats": [
+      {
+        "first_name": "John",
+        "last_name": "Doe",
+        "metrics": {
+            "blocks": 0,
+            "bounce_drops": 0,
+            "bounces": 0,
+            "clicks": 5,
+            "deferred": 0,
+            "delivered": 0,
+            "invalid_emails": 0,
+            "opens": 10,
+            "processed": 10,
+            "requests": 10,
+            "spam_report_drops": 0,
+            "spam_reports": 0,
+            "unique_clicks": 0,
+            "unique_opens": 0,
+            "unsubscribe_drops": 0,
+            "unsubscribes": 0
+        },
+        "name": "user1",
+        "type": "subuser"
+      }
+  ]
+}
+
+{% endv3response %}
+{% endapiv3example %}
