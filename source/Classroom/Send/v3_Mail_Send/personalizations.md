@@ -83,7 +83,6 @@ The following example shows you what the personalization parameter would look li
 		},
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
-"THE REST OF YOUR REQUEST BODY HERE"
 }
 {% endcodeblock %}
 
@@ -107,8 +106,7 @@ The following example shows how to send one email to recipient1@example.com with
 			"%CustomerID%": "CUSTOMER ID GOES HERE"
 		},
 		"subject": "YOUR SUBJECT LINE GOES HERE"
-	}],
-"THE REST OF YOUR REQUEST BODY HERE"
+	}]
 }
 {% endcodeblock %}
 
@@ -134,8 +132,7 @@ The following example shows how to send one email to <recipient1@example.com> wi
 			"%fname%": "recipient",
 			"%CustomerID%": "CUSTOMER ID GOES HERE"
 		}
-	}],
-"THE REST OF YOUR REQUEST BODY HERE"
+	}]
 }
 {% endcodeblock %}
 
@@ -160,8 +157,7 @@ The following shows how to send one email to three different recipients: <recipi
 			"%CustomerID%": "CUSTOMER ID GOES HERE"
 		},
 		"subject": "YOUR SUBJECT LINE GOES HERE"
-	}],
-"THE REST OF YOUR REQUEST BODY HERE"
+	}]
 }
 {% endcodeblock %}
 
@@ -189,8 +185,7 @@ The following shows what personalizations are required to send the same email to
 			"%CustomerID%": "CUSTOMER ID GOES HERE"
 		},
 		"subject": "YOUR SUBJECT LINE GOES HERE"
-	}],
-"THE REST OF YOUR REQUEST BODY HERE"
+	}]
 }
 {% endcodeblock %}
 
@@ -234,7 +229,6 @@ The following shows how to send two different emails to two different groups of 
 			"%CustomerID%": 55
 		},
 		"subject": "YOUR SUBJECT LINE GOES HERE"
-	}],
-"THE REST OF YOUR REQUEST BODY HERE"
+	}]
 }
 {% endcodeblock %}
