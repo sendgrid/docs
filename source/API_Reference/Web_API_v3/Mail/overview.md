@@ -114,7 +114,7 @@ Every request made to /v3/mail/send/beta will require a request body formatted i
     {% api_table_param headers "object" No "" "An object allowing you to specify specific handling instructions for your email." 1 %}
     {% api_table_param substitutions "object" No "" "An object following the pattern "substitution_tag":"value to substitute". All are assumed to be strings. These substitutions will apply to the content of your email, in addition to the `subject` and `reply-to` parameters." 1 %}
     {% api_table_param custom_args "object" No "" "These are values that are specific to this personalization that will be carried along with the email, activity data, and links. Substitutions will not be made on custom arguments. personalizations[x].custom_args will be merged with message level custom_args, overriding any conflicting keys. The combined total size of the resulting custom arguments, after merging, for each personalization may not exceed 10,000 bytes." 1 %}
-    {% api_table_param send_at integer No "" "A unix timestamp allowing you to specify when you want your email to be sent from SendGrid. **This is not necessary if you want the email to be sent at the time of your API request.**" 1 %}
+    {% api_table_param send_at integer No "" "A unix timestamp allowing you to specify when you want your email to be sent from SendGrid. <b>This is not necessary if you want the email to be sent at the time of your API request.</b>" 1 %}
   {% api_table_param from "array of email objects" No "" "An email object containing the email address and name of the sender." 0 %}
     {% api_table_param email string Yes "" "The email address of the sender." 1 %}
     {% api_table_param name string No "" "The name of the sender." 1 %}
