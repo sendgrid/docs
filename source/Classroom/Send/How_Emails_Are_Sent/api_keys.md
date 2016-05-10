@@ -19,7 +19,7 @@ What are API Keys?
 API Keys allow you to generate an authentication credential that is separate from your username and password. They are independent from one another and are easily disposable. You should create unique API keys for each of your applications or servers so that you can easily revoke them without disrupting other systems if needed.
 
 {% info %}
-Permissions that allow you to define what a given API Key is allowed to do are in development and will be available soon.
+You can use [API Key Permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) to define what actions an API Key can be used to authenticate.
 {% endinfo %}
 
 {% anchor h2%}
@@ -42,21 +42,19 @@ For sending via SMTP, provide the string `apikey` as the SMTP username, and use 
 Via HTTP
 {% endanchor %}
 
-For sending via HTTP using the [mail.send]({{root_url}}/API_Reference/Web_API/mail.html) endpoint, add an `Authorization` header to your message. Then provide your API key as a `bearer` token in that header. For example,
+For sending via HTTP using the [v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html) or the [v3 mail send ]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html) endpoint, add an `Authorization` header to your message. Then provide your API key as a `bearer` token in that header. For example,
 
 {%codeblock%}
 Authorization: Bearer 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
 {%endcodeblock%}
 
-Sending an email via curl using an API Key would look like:
+Sending an email via a curl request to the v3 mail send endpoint using an API Key would look like:
 
 {%codeblock%}
-$ curl -X POST https://api.sendgrid.com/api/mail.send.json \
-     -d "to=test@sendgrid.com" \
-     -d "from=you@youraddress.com" \
-     -d "subject=Sending with SendGrid is Fun" \
-     -d "html=and easy to do anywhere, even with CURL" \
-     -H "Authorization: Bearer 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"
+$curl --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header 'authorization: Bearer YOUR_API_KEY_GOES_HERE' \
+  --data '{"personalizations":[{"to":["recipient@example.com"]}],"from":"sender@example.com","subject":"Hello, World!","content":[{"type":"string","value":"Heya!"}]}'
 {%endcodeblock%}
 
 {% anchor h3 %}
