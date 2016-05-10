@@ -17,7 +17,7 @@ Since this is not a general release, we do not recommend POSTing production leve
 
 *When this endpoint is ready for general release, your code will require an update in order to use the official URI.*
 
-By using this endpoint, you accept that you may encounter bugs and that the endpoint may be taken down for maintenance at any time. We cannot guarantee the continued availability of this beta endpoint. We hope that you like this new endpoint and we appreciate any [feedback](mailto:dx+mail-beta@sendgrid.com) that you can send our way.
+By using this endpoint, you accept that you may encounter bugs and that the endpoint may be taken down for maintenance at any time. We cannot guarantee the continued availability of this beta endpoint. We hope that you like this new endpoint and we appreciate any <a href="mailto:dx+mail-beta@sendgrid.com">feedback</a> that you can send our way.
 {% endwarning %}
 
 When sending email via the v3 Mail Send endpoint, the various metadata about the message (such as the recipients, subject line, headers, substitutions, and custom arguments) are contained within an array called personalizations.
