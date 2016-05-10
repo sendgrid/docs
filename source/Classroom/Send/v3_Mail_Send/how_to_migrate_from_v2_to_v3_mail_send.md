@@ -25,7 +25,7 @@ Why should you migrate?
 {% endanchor %}
 
 {% info %}
-If you are currently using the [Web API v2 mail send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version]({{root_url}}/Web_API_v3/mail.html).
+If you are currently using the [Web API v2 mail send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version]({{root_url}}/Web_API_v3/Mail/overview.html).
 {% endinfo %}
 
 With a few quick changes you will be able to take advantage of the improvements and added features provided by the v3 mail send endpoint, such as:
@@ -41,7 +41,7 @@ What do you need to migrate?
 
 All you need to migrate from the v2 to v3 mail send endpoint is a SendGrid account.
 
-If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/mail.html) to get started.
+If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html) to get started.
 
 {% anchor h2 %}
 JSON Schema
