@@ -36,7 +36,7 @@ Think of the personalizations section of the request body like the envelope of a
 You must include at least one "to" object within the personalizations array.
 {% endinfo %}
 
-Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both <john@example.com> and <jane@example.com>, but set each email to be delivered at different times.
+Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;jane@example.com&gt;, but set each email to be delivered at different times.
 
 {% info %}
 You may not include more than 100 personalizations per API request. If you need to include more than 100 personalizations, please divide these across multiple API requests.
@@ -90,7 +90,7 @@ The following example shows you what the personalization parameter would look li
 Sending a Single Email to a Single Recipient With a CC
 {% endanchor %}
 
-The following example shows how to send one email to recipient1@example.com with a carbon copy sent to recipient2@example.com. Both emails will have the same headers.
+The following example shows how to send one email to recipient1&#064;example&period;com with a carbon copy sent to recipient2&#064;example&period;com. Both emails will have the same headers.
 
 {% codeblock lang:json %}
 {
@@ -114,7 +114,7 @@ The following example shows how to send one email to recipient1@example.com with
 Sending a Single Email to a Single Recipient With a CC and a BCC
 {% endanchor %}
 
-The following example shows how to send one email to <recipient1@example.com> with a CC sent to <recipient2@example.com> and a BCC sent to <recipient3@example.com>.
+The following example shows how to send one email to recipient1&#064;example&period;com with a CC sent to recipient2&#064;example&period;com and a BCC sent to recipient3&#064;example&period;com.
 
 {% codeblock lang:json %}
 {
@@ -140,7 +140,7 @@ The following example shows how to send one email to <recipient1@example.com> wi
 Sending the same Email to Multiple Recipients
 {% endanchor %}
 
-The following shows how to send one email to three different recipients: <recipient1@example.com>, <recipient2@example.com>, and <recipient3@example.com>. These recipients will all be able to see each other on the email.
+The following shows how to send one email to three different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
 
 {% codeblock lang:json %}
 {
