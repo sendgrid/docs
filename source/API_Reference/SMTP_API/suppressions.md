@@ -10,8 +10,11 @@ navigation:
 Defining an Unsubscribe Group When Sending
 {% endanchor %}
 
-To specify a group when sending an email, add the group's ID to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
-call]({{root_url}}/API_Reference/Web_API/mail.html).
+The method used to specify an unsubscribe group for an email depends on how you will be sending that email:
+
+* When sending an SMTP message, add the group's ID to the X-SMTPAPI header.
+* When sending an email via the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), add the group's ID in the `x-smtpapi` parameter.
+* When sending an email via the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html), define the group's ID in the `asm.group_id` parameter.
 
 {% warning %}
 You may only specify one group per send, and you should wait one minute after creating the group before sending with it.

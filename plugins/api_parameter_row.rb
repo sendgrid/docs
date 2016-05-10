@@ -37,7 +37,7 @@ output=<<HTML
   <td>#{@type}</td>
   <td>#{@required}</td>
   <td>#{@constraints}</td>
-  <td class="details-caret"><img src="images/caret.svg"></td>
+  <td class="details-caret"><img src="/images/caret.svg"></td>
 </tr>
 <tr class="details-row">
   <td colspan="2"></td>
