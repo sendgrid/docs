@@ -19,7 +19,7 @@ The SendGrid APIs allow you to interact with our system in a number of different
 
 
 
-**Web API v3** – The Web API v3 allows you to pull information you’d normally get on sendgrid.com without logging into the website. For example you can pull your settings, statistics, and email reports list. The Web API v3 can also be used to send email to SendGrid outside the realm of SMTP by using our [v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html). Please visit our [SendGrid Web API v3 Documentation]({{root_url}}/API_Reference/Web_API_v3/index.html) page for more information or our [SendGrid Interactive Documentation](http://sendgrid.com/docs/api_workshop.html) for help building Web API calls. Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for even more info.
+**Web API v3** – The Web API v3 allows you to pull information you’d normally get on sendgrid.com without logging into the website. For example you can pull your settings, statistics, and email reports list. The Web API v3 can also be used to send email to SendGrid outside the realm of SMTP by using our [v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html). Please visit our [SendGrid Web API v3 Documentation]({{root_url}}/API_Reference/Web_API_v3/index.html) page for more information or our [SendGrid Interactive Documentation](http://sendgrid.com/docs/api_workshop.html) for help building Web API calls. Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for even more info.
 
 
 

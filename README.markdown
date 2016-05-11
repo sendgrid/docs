@@ -44,16 +44,16 @@ There's also a <code>version</code> number in the config.
 
 * Clone the repo.
 * Bring up development environment with Vagrant
-		
+
 		$ vagrant up
-		
+
 * Browse to [http://localhost:4000](http://localhost:4000)
 
 ## Testing
 
 		$ vagrant ssh
 		$ cd docs && bin/test
-		
+
 ## Important Things to Know
 
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
@@ -115,11 +115,11 @@ There are some custom plugins (look in the `plugins` folder) that define new liq
 
 #### Anchors
 
-You can create anchor tags that will have named anchors generated for them automatically with links on hover. 
+You can create anchor tags that will have named anchors generated for them automatically with links on hover.
 The parameter is the wrapping element to use.
 
 ```
-{% anchor h2 %} 
+{% anchor h2 %}
 Some Anchor Text
 {% endanchor %}
 ```
@@ -161,14 +161,3 @@ payload in querystring format.
 
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
-
-## License
-(The MIT License)
-
-Copyright © 2008-2015 SendGrid Inc.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
