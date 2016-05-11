@@ -39,7 +39,7 @@ Usually this is as simple a retyping one or both fields (you're only human after
 
 Usually received via the API, this error means we don't recognize one or both of the **api\_user** and **api\_key** parameters that you've passed in your call.
 
-Usually this can be solved with one of the action points in the "Invalid username and/or password" section above.
+Usually this can be solved with one of the action points listed above.
 
  
 
