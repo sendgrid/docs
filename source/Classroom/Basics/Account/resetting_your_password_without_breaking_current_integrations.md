@@ -14,7 +14,7 @@ navigation:
 
 First, login to your account with your primary credentials and head over to the [Multiple User Credentials page](https://app.sendgrid.com/credentials). Create a new set of credentials that have (at minimum) access to send **Mail**.
 
-If your current integration is using our [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html#-send), [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html), or one of our open sourced libraries to send mail, you'll also need to enable **API** access along with **Mail** access for the credentials.
+If your current integration is using our [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html#-send), [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), or one of our open sourced libraries to send mail, you'll also need to enable **API** access along with **Mail** access for the credentials.
 
 ![]({{root_url}}/images/MultiCredScreencap.png)
 

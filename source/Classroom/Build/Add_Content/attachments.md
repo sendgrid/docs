@@ -16,7 +16,7 @@ Limitations
 v3 Mail Send
 {% endanchor %}
 
-The total message size of emails sent via the [v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html) is limited to 30MB. This includes all headers, the body, and attachments. That means
+The total message size of emails sent via the [v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) is limited to 30MB. This includes all headers, the body, and attachments. That means
 that the maximum attachment size depends on the size of the rest of the
 stuff in your message, but we do recommend that your attachments do not exceed 10MB.
 
@@ -62,4 +62,4 @@ Account](https://digioh.com/sendgrid)
 Sending email with attachments via SendGrid
 {% endanchor %}
 
-To send emails with attachments via SendGrid, you can employ our [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) or our [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html).
+To send emails with attachments via SendGrid, you can employ our [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) or our [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).

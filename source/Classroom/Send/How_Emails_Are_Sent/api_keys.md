@@ -42,7 +42,7 @@ For sending via SMTP, provide the string `apikey` as the SMTP username, and use 
 Via HTTP
 {% endanchor %}
 
-For sending via HTTP using the [v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html) or the [v3 mail send ]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html) endpoint, add an `Authorization` header to your message. Then provide your API key as a `bearer` token in that header. For example,
+For sending via HTTP using the [v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html) or the [v3 mail send ]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) endpoint, add an `Authorization` header to your message. Then provide your API key as a `bearer` token in that header. For example,
 
 {%codeblock%}
 Authorization: Bearer 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

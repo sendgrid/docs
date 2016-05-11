@@ -30,7 +30,7 @@ Example
 You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
 the `x-smtpapi` parameter of a [Web API v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html#-send) call.
 
-If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
+If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
 
 {% info %}
 Make sure that the version of the template you want to use is set to active

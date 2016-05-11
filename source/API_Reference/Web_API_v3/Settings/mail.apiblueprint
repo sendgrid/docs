@@ -14,7 +14,7 @@ FORMAT: 1A
 
 # Mail Settings
 
-The following settings can also be used when sending mail via the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html) by enabling your desired settings within the "mail_settings" object of your JSON payload.
+The following settings can also be used when sending mail via the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) by enabling your desired settings within the "mail_settings" object of your JSON payload.
 
 ## Mail Settings Collection [/mail_settings?limit={limit}&offset={offset}]
 
