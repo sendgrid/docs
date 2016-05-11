@@ -8,7 +8,7 @@ navigation:
 ---
 
 The transactional templates API lets you programmatically [create and manage
-templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html) for your transactional email. You may [version these templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html), then send them through SendGrid's [SMTP API]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html), the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), or the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html).
+templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html) for your transactional email. You may [version these templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html), then send them through SendGrid's [SMTP API]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html), the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), or the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 
 **[Templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html)**
 
@@ -23,5 +23,5 @@ Templates may have multiple versions with different content, these may be change
 You can send transactional templates using one of three ways:
 
 * Using the [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay)
-* Including the template ID in the `templates` parameter of the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/overview.html)
+* Including the template ID in the `templates` parameter of the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)
 * Using the x-smtpapi parameter in the Web API v2 Mail Send endpoint
