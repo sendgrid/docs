@@ -146,6 +146,14 @@ Personalizations Errors
   {% api_error_table_message "You are limited to 10,000 substitutions." "You may not make more than 10,000 substitutions per request. Substitutions will apply to the content of your email, in addition to the <code>subject</code> and <code>reply_to</code> parameters" %}
 {% endapi_error_table %}
 
+{% api_error_table personalizations.send_at "" message.personalizations.send_at %}
+{% api_error_table_row 400 %}
+
+{% api_error_table_message "The <code>send_at</code> parameter is expecting a Unix timestamp as an integer. We will send immediately if you include a <code>send_at</code> timestamp that is in the past." "<code>send_at</code> accepts a unix timestamp representing when you want your email to be sent from SendGrid. If you want the email to be sent at the time of your API request, simply omit the <code>send_at</code> parameter." %}
+
+{% api_error_table_message "Scheduling more than 72 hours in advance is forbidden." "The <code>send_at</code> parameter allows you to schedule your email to be sent up to 72 hours in advance, but due to our constraints, we cannot schedule emails more than 72 hours in the future. For more information on scheduling parameters, please see our <a href=\"{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html\">API Reference</a>." %}
+{% endapi_error_table %}
+
 {% anchor h2 %}
 Message Level Errors
 {% endanchor %}
