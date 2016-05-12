@@ -11,8 +11,6 @@ navigation:
   show: true
 ---
 
-Month, Day, 2014
-
 Gmail has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo and AOL. You may have started seeing bounce messages with the Reason of:
 
 **<NDR GOES HERE > **
@@ -21,7 +19,7 @@ This is because Gmail will no longer be accepting messages where the From domain
 
  
 
-**What this means:**  You can no longer send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
+**What this means:**  As of June, 2016, you can no longer send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
 
 **What you can do: ** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
 
