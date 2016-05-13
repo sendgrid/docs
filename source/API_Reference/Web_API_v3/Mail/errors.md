@@ -102,6 +102,15 @@ Personalizations Errors
   {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email address] more than once." "To prevent the same email from being delivered to one recipient multiple times, SendGrid will confirm that you do not duplicate an email address in your request. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
 {% endapi_error_table %}
 
+{% api_error_table personalizations.subject "" message.personalizations.subject %}
+  {% api_error_table_row 400 %}
+
+  {% api_error_table_message "The subject of your email must be a string at least one character in length." "You are required to include a subject for every email you send, and you may not include an empty subject. The minimum length of your subject is one character." %}
+
+  {% api_error_table_message "The subject is required. You can get around this requirement if you use a template with a subject defined." "Every email must have a subject. This can be accomplished 3 ways: you include a template that has a subject, you define a global subject, or every single personalizations object has a subject." %}
+
+{% endapi_error_table %}
+
 {% api_error_table personalizations.categories "" message.personalizations.categories %}
   {% api_error_table_row 400 %}
 
@@ -250,7 +259,7 @@ Attachment Errors
   {% api_error_table_message "The disposition of your attachment can be either &#34;inline&#34; or &#34;attachment&#34;. You provided [YOUR DISPOSITION]." "The content-disposition of your attachment defines how you would like the attachment to be displayed. For example, &#34;inline&#34; results in the attached file being displayed automatically within the message while &#34;attachment&#34; results in the attached file requiring some action to be taken before it is displayed (e.g. opening or downloading the file). <code>attachments.disposition</code> always defaults to &#34;attachment&#34;. Can be either &#34;attachment&#34; or &#34;inline&#34;." %}
 {% endapi_error_table %}
 
-{% api_error_table attachments.content_id "" message.attached.content_id %}
+{% api_error_table attachments.content_id "" message.attachments.content_id %}
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The content ID of your attachment must be a string. You provided [YOUR CONTENT ID]." "The <code>content_id</code> is a unique id that you specify for the attachment. This is used when the disposition is set to &#34;inline&#34; and the attachment is an image, allowing the file to be displayed within the body of your email. For example, <code>&lt;img src=&#34;cid:ii_139db99fdb5c3704&#34;&gt;&lt;/img&gt;</code>" %}
@@ -398,7 +407,7 @@ Mail Settings Errors
   {% api_error_table_message "The spam check enable param should be a boolean value." "" %}
 {% endapi_error_table %}
 
-{% api_error_table mail_settings.spam_check.threshold "" message.spam_check.threshold %}
+{% api_error_table mail_settings.spam_check.threshold "" message.mail_settings.spam_check.threshold %}
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The spam check threshold is between 1 and 10, with the lower numbers being the most strict filtering. " "" %}
