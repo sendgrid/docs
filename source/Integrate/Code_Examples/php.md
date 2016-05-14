@@ -43,15 +43,15 @@ $url = 'https://api.sendgrid.com/';
 $pass = $sendgrid_apikey; 
 $template_id = '<your_template_id>';
 $js = array(
-  'sub' => array(':name' => array('Elmer')),
+  'sub' => array(':name' => array('Example Name')),
   'filters' => array('templates' => array('settings' => array('enable' => 1, 'template_id' => $template_id)))
 );
 
 $params = array(
-    'to'        => "elmer.thomas@sendgrid.com", 
-    'toname'    => "Elmer Thomas",
-    'from'      => "dx@sendrid.com",
-    'fromname'  => "DX Team",
+    'to'        => "test@sendgrid.com", 
+    'toname'    => "Example User",
+    'from'      => "you@youremail.com",
+    'fromname'  => "Your Name",
     'subject'   => "PHP Test", 
     'text'      => "I'm text!",
     'html'      => "<strong>I'm HTML!</strong>",
