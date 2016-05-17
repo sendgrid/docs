@@ -14,28 +14,42 @@ navigation:
   show: true
 ---
 
-{% anchor h1 %}1. Whitelabeled Domains{% endanchor %}
+{% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [Whitelabeled Domains](#-Whitelabeled-Domains)
+* [Email Links](#-Email-Links)
+* [IP Whitelabels](#-IP-Whitelabels)
+* [Whitelabeling with GoDaddy](#-Whitelabeling-with-GoDaddy)
+* [Whitelabeling with Hover](#-Whitelabeling-with-Hover)
+
+***************
+
+{% anchor h3 %}Whitelabeled Domains{% endanchor %}
 
 <iframe src="https://player.vimeo.com/video/149585179" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
-{% anchor h1 %}2. Email Links{% endanchor %}
+
+
+{% anchor h3 %}Email Links{% endanchor %}
 
 <iframe src="https://player.vimeo.com/video/149664450" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
-{% anchor h1 %}3. IP Whitelabels {% endanchor %}
+
+
+{% anchor h3 %}IP Whitelabels {% endanchor %}
 
 <iframe src="https://player.vimeo.com/video/149816616" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
-{% anchor h1 %}Whitelabeling with GoDaddy{% endanchor %}
+
+
+{% anchor h3 %}Whitelabeling with GoDaddy{% endanchor %}
 
 <iframe src="https://player.vimeo.com/video/149805633" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
-{% anchor h1 %}Whitelabeling with Hover{% endanchor %}
+
+
+{% anchor h3 %}Whitelabeling with Hover{% endanchor %}
 
 <iframe src="https://player.vimeo.com/video/158954155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
-
-
-
-
-
-
