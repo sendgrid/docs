@@ -48,10 +48,10 @@ $js = array(
 );
 
 $params = array(
-    'to'        => "elmer.thomas@sendgrid.com", 
-    'toname'    => "Elmer Thomas",
-    'from'      => "dx@sendrid.com",
-    'fromname'  => "DX Team",
+    'to'        => "test@example.com", 
+    'toname'    => "Example User",
+    'from'      => "you@youremail.com",
+    'fromname'  => "Your Name",
     'subject'   => "PHP Test", 
     'text'      => "I'm text!",
     'html'      => "<strong>I'm HTML!</strong>",
