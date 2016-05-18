@@ -20,7 +20,7 @@ Your first 2,000 contacts are free.
 
 To add your contacts, just click the "Add List" or "Segment" button and then select your upload method. For information about how many contacts come with your package, please refer to our [pricing page]({{site.pricing_url}}).
 
-![]({{root_url}}/images/lists_5.png "Create a Segment")
+![]({{root_url}}/images/add_list_or_segment_button.png)
 
 {% info %}
 SendGrid requires that your contacts have given you explicit permission to email them. We do not allow purchased or rented lists. Please see our [email policy](https://sendgrid.com/email_policy) for more details.
@@ -98,7 +98,7 @@ You can manually add a contact or upload a CSV of contacts directly to a list th
 Select Your Custom Fields
 {% endanchor %}
 
-Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row. 
+Once your file uploads, you will see a new window pop out that has inspected the header row from your CSV file. It will automatically show each column header from your header row.
 
 {% info %}
 If you have a CSV that contains data you do not wish to upload, you may choose to skip certain column headers. All column headers other than "Email" may be skipped by selecting the "Skip Column" checkbox to the right of the column header. Skipped column headers will not be uploaded and will not appear as custom fields within an individual contact's profile.
@@ -139,16 +139,25 @@ Viewing a Contact Profile
 Searches are case-insensitive but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io"
 {% endinfo %}
 
-To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then
-click the contact’s email address. You will then be able to see the email, date added, date updated, and all custom field
-values that you have assigned to this contact.
+To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then click the contact’s email address. You will then be able to view the email, reserved fields that SendGrid provides, and list associations for this contact.
+
+![]({{root_url}}/images/contact_profile_page_details.png)
+
+To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
+
+![]({{root_url}}/images/contact_profile_page_tabs.png)
 
 {% anchor h3 %}
 Editing a Contact Profile
 {% endanchor %}
 
-When you are viewing a contact, click any of the "Edit" buttons to edit the contact's information within that section. This includes the recipient's contact information and custom fields.
+When you are viewing a contact, click any of the "Edit" buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields (except email), any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
+![]({{root_url}}/images/editing_contact_custom_fields.png)
+
+To edit the associated lists for your contact, simply click on the Associated Lists tab, enter or select the list you would like to use, and click Add.
+
+![]({{root_url}}/images/editing_associated_lists.png)
 
 {% anchor h3 %}
 Delete a Specific Contact
