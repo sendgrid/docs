@@ -167,7 +167,6 @@ Ruby
 {% endanchor %}
 
 -   [sendgrid](http://github.com/stephenb/sendgrid) *by Stephen Blankenship* - SendGrid rubygem (ActionMailer)
--   [heroku-sendgrid-stats](https://github.com/hone/heroku-sendgrid-stats) *by Terence Lee* - Heroku CLI plugin to pull SendGrid stats
 -   [sendgrid_toolkit](http://github.com/freerobby/sendgrid_toolkit) *by Robby Grossman* - Ruby wrapper for the SendGrid Web API
 -   [sendgrid-rails](http://github.com/PavelTyk/sendgrid-rails) *by Pavel Tsiukhtsiayeu* - Extends ActionMailer with SendGrid methods
 -   [gatling_gun](http://github.com/okrb/gatling_gun) *by James Edward Gray II* - Simple wrapper over SendGrid's Marketing Email API.
