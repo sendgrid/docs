@@ -102,6 +102,15 @@ Personalizations Errors
   {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email address] more than once." "To prevent the same email from being delivered to one recipient multiple times, SendGrid will confirm that you do not duplicate an email address in your request. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
 {% endapi_error_table %}
 
+{% api_error_table personalizations.subject "" message.personalizations.subject %}
+  {% api_error_table_row 400 %}
+
+  {% api_error_table_message "The subject of your email must be a string at least one character in length." "You are required to include a subject for every email you send, and you may not include an empty subject. The minimum length of your subject is one character." %}
+
+  {% api_error_table_message "The subject is required. You can get around this requirement if you use a template with a subject defined." "Every email must have a subject. This can be accomplished 3 ways: you include a template that has a subject, you define a global subject, or every single personalizations object has a subject." %}
+
+{% endapi_error_table %}
+
 {% api_error_table personalizations.categories "" message.personalizations.categories %}
   {% api_error_table_row 400 %}
 
@@ -144,6 +153,14 @@ Personalizations Errors
   {% api_error_table_message "The substitution values must be an object of key/value pairs, where the values are all strings." "Substitutions must always follow the pattern <code>&#34;substitution_tag&#34;: &#34;value to substitute&#34;</code>. The value to substitute for the &#34;substitution_tag&#34; must always be a string." %}
 
   {% api_error_table_message "You are limited to 10,000 substitutions." "You may not make more than 10,000 substitutions per request. Substitutions will apply to the content of your email, in addition to the <code>subject</code> and <code>reply_to</code> parameters" %}
+{% endapi_error_table %}
+
+{% api_error_table personalizations.send_at "" message.personalizations.send_at %}
+{% api_error_table_row 400 %}
+
+{% api_error_table_message "The <code>send_at</code> parameter is expecting a Unix timestamp as an integer. We will send immediately if you include a <code>send_at</code> timestamp that is in the past." "<code>send_at</code> accepts a unix timestamp representing when you want your email to be sent from SendGrid. If you want the email to be sent at the time of your API request, simply omit the <code>send_at</code> parameter." %}
+
+{% api_error_table_message "Scheduling more than 72 hours in advance is forbidden." "The <code>send_at</code> parameter allows you to schedule your email to be sent up to 72 hours in advance, but due to our constraints, we cannot schedule emails more than 72 hours in the future. For more information on scheduling parameters, please see our <a href=\"{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html\">API Reference</a>." %}
 {% endapi_error_table %}
 
 {% anchor h2 %}
@@ -242,7 +259,7 @@ Attachment Errors
   {% api_error_table_message "The disposition of your attachment can be either &#34;inline&#34; or &#34;attachment&#34;. You provided [YOUR DISPOSITION]." "The content-disposition of your attachment defines how you would like the attachment to be displayed. For example, &#34;inline&#34; results in the attached file being displayed automatically within the message while &#34;attachment&#34; results in the attached file requiring some action to be taken before it is displayed (e.g. opening or downloading the file). <code>attachments.disposition</code> always defaults to &#34;attachment&#34;. Can be either &#34;attachment&#34; or &#34;inline&#34;." %}
 {% endapi_error_table %}
 
-{% api_error_table attachments.content_id "" message.attached.content_id %}
+{% api_error_table attachments.content_id "" message.attachments.content_id %}
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The content ID of your attachment must be a string. You provided [YOUR CONTENT ID]." "The <code>content_id</code> is a unique id that you specify for the attachment. This is used when the disposition is set to &#34;inline&#34; and the attachment is an image, allowing the file to be displayed within the body of your email. For example, <code>&lt;img src=&#34;cid:ii_139db99fdb5c3704&#34;&gt;&lt;/img&gt;</code>" %}
@@ -390,7 +407,7 @@ Mail Settings Errors
   {% api_error_table_message "The spam check enable param should be a boolean value." "" %}
 {% endapi_error_table %}
 
-{% api_error_table mail_settings.spam_check.threshold "" message.spam_check.threshold %}
+{% api_error_table mail_settings.spam_check.threshold "" message.mail_settings.spam_check.threshold %}
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The spam check threshold is between 1 and 10, with the lower numbers being the most strict filtering. " "" %}
