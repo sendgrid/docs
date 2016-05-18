@@ -751,7 +751,7 @@ Segments may contain multiple condtions, joined by an "and" or "or" in the "and_
 
      + Body
 
-            {"name":"The Millers","list_id":5,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
+            {"name":"The Millers","conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""}]}
 
 + Response 200
 
