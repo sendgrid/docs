@@ -20,7 +20,7 @@ An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider
 {% anchor h2 %}
 GET
 {% endanchor %}
-Get all IPs that are currently warming up.
+Get all IPs that are currently warming up. 
 
 {% apiv3example get-all GET https://api.sendgrid.com/v3/ips/warmup %}
   {% v3response %}
