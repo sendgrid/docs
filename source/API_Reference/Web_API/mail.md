@@ -1,25 +1,29 @@
 ---
 layout: page
 weight: 0
-title: Mail
+title: v2 Mail Send
 seo:
-  title: Mail - Send Email Using HTTP - SendGrid Documentation | SendGrid
+  title: v2 Mail Send - Send Email Using HTTP - SendGrid Documentation | SendGrid
   override: true
-  description: The mail send endpoint allows you to send email through SendGrid using a POST request. Find documentation and examples on how to use the endpoint.
+  description: The v2 mail send endpoint allows you to send email through SendGrid using a POST request. Find documentation and examples on how to use the endpoint.
 navigation:
   show: true
 ---
 
-This endpoint allows you to send email.
+This endpoint allows you to send email over SendGrid's Web API v2.
 
 {% info %}
-There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API. We recommend using these if possible.
+For information about the latest mail send endpoint, please visit our [Web API v3 mail send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+{% endinfo %}
+
+{% info %}
+There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API v2. We recommend using these if possible.
 
 [View List »]({{root_url}}/Integrate/libraries.html)
 {% endinfo %}
 
 {% info %}
-When you make an API request to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
+When you make a request to the Web API v2 to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -29,7 +33,7 @@ send
 SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be used when sending email over the API.
 
 {% info %}
-You can have up to 10,000 recipients per API request. While we do not enforce rate limits on sending mail via the mail.send endpoint, we do recommend that users avoid making more than 3,000 API requests per second.
+You can have up to 10,000 recipients per Web API v2 request. While we do not enforce rate limits on sending mail via the v2 mail send endpoint, we do recommend that users avoid making more than 3,000 API requests per second.
 {% endinfo %}
 
 {% parameters mail %}
@@ -173,7 +177,7 @@ curl https://api.sendgrid.com/api/mail.send.json \
 Raw HTTP Dump
 {% endanchor %}
 
-The following is a dump of the HTTP data sent to our server to generate an email via our web API.
+The following is a dump of the HTTP data sent to our server to generate an email via our Web API v2.
 
 {% codeblock %}
 POST /api/mail.send.json HTTP/1.1
