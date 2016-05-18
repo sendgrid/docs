@@ -143,7 +143,7 @@ Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html h
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/suppressions.html
-Redirect 301 /API_Reference/Web_API_v3/Mail/overview.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html 
+Redirect 301 /API_Reference/Web_API_v3/Mail/overview.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
@@ -207,6 +207,20 @@ Redirect 301 /Code_Examples/SMTP_API_Header_Examples/perl.html https://sendgrid.
 Redirect 301 /Code_Examples/SMTP_API_Header_Examples/php.html https://sendgrid.com/docs/Integrate/Code_Examples/SMTP_API_Header_Examples/php.html
 Redirect 301 /Code_Examples/SMTP_API_Header_Examples/python.html https://sendgrid.com/docs/Integrate/Code_Examples/SMTP_API_Header_Examples/python.html
 Redirect 301 /Code_Examples/SMTP_API_Header_Examples/ruby.html https://sendgrid.com/docs/Integrate/Code_Examples/SMTP_API_Header_Examples/ruby.html
+
+#######
+#
+# /docs/Integrate/Code_Examples - moved to v2 specific folder
+#
+#######
+Redirect 301 /Integrate/Code_Examples/csharp.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/csharp.html
+Redirect 301 /Integrate/Code_Examples/go.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/go.html
+Redirect 301 /Integrate/Code_Examples/java.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/java.html
+Redirect 301 /Integrate/Code_Examples/nodejs.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/nodejs.html
+Redirect 301 /Integrate/Code_Examples/perl.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/perl.html
+Redirect 301 /Integrate/Code_Examples/php.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/php.html
+Redirect 301 /Integrate/Code_Examples/python.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/python.html
+Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/ruby.html
 
 #######
 #
@@ -374,6 +388,7 @@ Redirect 301 /Classroom/Track/drop_reason_bounced_address.html https://sendgrid.
 Redirect 301 /Classroom/Track/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_unsubscribed_address.html
 Redirect 301 /Classroom/Track/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html
 Redirect 301 /Classroom/Track/unsubscribe_via_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
+Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html https://sendgrid.com/docs/Classroom/Track/index.html
 
 #######
 #

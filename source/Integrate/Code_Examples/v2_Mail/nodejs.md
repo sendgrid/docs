@@ -7,7 +7,7 @@ navigation:
 ---
 {% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation. {% endgithub %}
 
-{% anchor h2 %} using SendGrid's Node.js Library {% endanchor %}
+{% anchor h2 %} Using SendGrid's Node.js Library {% endanchor %}
 {% codeblock lang:js %}
 // using SendGrid's Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs

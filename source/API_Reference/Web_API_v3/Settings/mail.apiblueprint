@@ -10,6 +10,28 @@ seo:
   keywords: mail settings, address whitelisting, bcc settings, bounce purge settings, event notification settings, footer settings, forward bounce settings, forward spam settings, legacy template settings
 ---
 
+<ul>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Mail-Settings-GET">Get Mail Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-BCC-Settings-GET">Get BCC Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-BCC-Settings-PATCH">Update BCC Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Address-Whitelist-Settings-GET">Get Address Whitelist Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Address-Whitelist-Settings-PATCH">Update Address Whitelist Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Footer-Settings-GET">Get Footer Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Footer-Settings-PATCH">Update Footer Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Forward-Spam-Settings-GET">Get Forward Spam Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Forward-Spam-Settings-PATCH">Update Forward Spam Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Plain-Content-Settings-GET">Get Plain Content Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Plain-Text-Content-PATCH">Update Plain Text Content - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Spam-Check-Settings-GET">Get Spam Check Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Spam-Check-Settings-PATCH">Update Spam Check Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Template-Settings-GET">Get Template Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Template-Settings-PATCH">Update Template Settings - PATCH</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Bounce-Purge-Settings-GET">Get Bounce Purge Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Bounce-Purge-Settings-PATCH">Update Bounce Purge Settings [PATCH]</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Get-Forward-Bounce-Settings-GET">Get Forward Bounce Settings - GET</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Settings/mail.html#Update-Forward-Bounce-Settings-PATCH">Update Forward Bounce Settings - PATCH</a></li>
+</ul>
+
 FORMAT: 1A
 
 # Mail Settings
@@ -187,7 +209,7 @@ The following settings can also be used when sending mail via the [Web API v3 Ma
               "enabled": true
             }
 
-### Plain Text Content [PATCH]
+### Update Plain Text Content [PATCH]
 
 + Request (application/json)
 
