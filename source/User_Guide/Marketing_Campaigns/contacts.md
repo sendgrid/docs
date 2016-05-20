@@ -172,7 +172,7 @@ the same row. You will also see an option to delete the contact, which deletes t
 Delete All Contacts
 {% endanchor %}
 
-If you would like to delete all of your contacts at once, navigate to your [Contacts page](https://sendgrid.com/marketing_campaigns/contacts) and click on the Action Cog next to All Contacts. Select Delete.
+If you would like to delete all of your contacts at once, navigate to your [Contacts page](https://sendgrid.com/marketing_campaigns/contacts) and click on the Action Cog next to All Contacts. Select Delete All Contacts.
 
 This will delete all of your Marketing Campaigns contacts, without deactivating your account.
 
