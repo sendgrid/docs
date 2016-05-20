@@ -45,14 +45,14 @@ Glad you asked! [Read more about it here]({{root_url}}/Classroom/Basics/Billing/
 
 **I received a Payment Failed message.**
 
-If you receive a _Payment Failed_ message, you can [update your credit card here]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html). You can update the expiration date on an existing card or enter a new card. Also, if you now have sufficient funds on your current card, you can retry an outstanding charge.
+If you receive a _Payment Failed_ message, you can [update your credit card here]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html). You can update the expiration date on an existing card or enter a new card(please re-add the card information to update the expiry date). Also, if you now have sufficient funds on your current card, you can retry an outstanding charge.
 
 
 **How do overages work?**
 
 Depending on your package, you will be charged a small amount per-email for each email that you send beyond the credit limit of your current package. Any overage charges are added to the invoice of the month _after_ the over-limit sending occurred.
 
-Note: Upgrading your account does NOT absorb overage charges already incurred, so make sure you are using the right package for your usage case.
+**Note: Upgrading your account does NOT absorb overage charges already incurred, so make sure you are using the right package for your usage case.**
 
 ![]({{root_url}}/images/pricing_grid.png)
 
