@@ -168,6 +168,16 @@ the same row. You will also see an option to delete the contact, which deletes t
 
 ![]({{root_url}}/images/contacts_4.png "Delete a contact")
 
+{% anchor h3 %}
+Delete All Contacts
+{% endanchor %}
+
+If you would like to delete all of your contacts at once, navigate to your [Contacts page](https://sendgrid.com/marketing_campaigns/contacts) and click on the Action Cog next to All Contacts. Select Delete.
+
+This will delete all of your Marketing Campaigns contacts, without deactivating your account.
+
+![]({{root_url}}/images/delete_all_contacts.png)
+
 
 {% anchor h2 %}
 Troubleshooting Contacts Upload
