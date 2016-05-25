@@ -21,7 +21,7 @@ It's possible under some circumstances to accidentally lock yourself out of your
 
 3. Once you have created a ticket, one of our agents will work with you to verify ownership of the account in a number of ways. We reserve the right to be very thorough with this process, as we treat the account security of our customers with very high sensitivity.  
 
-4. Once we can fully verify the ownership of your account to our satisfaction, we can provide access to your IP, or disable the feature entirely. 
+4. Once we can fully verify the ownership of your account to our satisfaction, we can provide access to your IP. After you are able to log back into your account, you can modify your IP access as needed or even disable the feature entirely.
 
 ![]({{root_url}}/images/IPAM_screengrab.png)
 
