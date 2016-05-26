@@ -99,17 +99,6 @@ The following is a complete list of all possible permissions that you may assign
 ]
 {% endcodeblock %}
 
-{% anchor h2 %}Clients{% endanchor %}
-{% codeblock %}
-"scopes": [
-  "clients.desktop.stats.read",
-  "clients.phone.stats.read",
-  "clients.stats.read",
-  "clients.tablet.stats.read",
-  "clients.webmail.stats.read"
-]
-{% endcodeblock %}
-
 {% anchor h2 %}Credentials{% endanchor %}
 {% codeblock %}
 "scopes": [
@@ -129,7 +118,12 @@ The following is a complete list of all possible permissions that you may assign
   "browsers.stats.read",
   "devices.stats.read",
   "geo.stats.read",
-  "mailbox_providers.stats.read"
+  "mailbox_providers.stats.read",
+  "clients.desktop.stats.read",
+  "clients.phone.stats.read",
+  "clients.stats.read",
+  "clients.tablet.stats.read",
+  "clients.webmail.stats.read"
 ]
 {% endcodeblock %}
 
