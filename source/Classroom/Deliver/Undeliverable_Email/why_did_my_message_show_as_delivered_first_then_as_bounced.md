@@ -3,10 +3,10 @@ st:
   published_at: 2016-05-17
   type: Classroom
 seo:
-  title: Why did my message show as Delivered and then as Bounced afterwards?
-  description: Learn what to do When an email address shows events for both Delivered and Bounced...
+  title: Why did my message show as Delivered first and then as Bounced?
+  description: Learn what to do when an email address shows events for both Delivered and Bounced...
   keywords: delay, delivery, deliver, delivered, after, then, bounce, bounces, bounced
-title: Why did my message show as Delivered and then as Bounced afterwards?
+title: Why did my message show as Delivered first and then as Bounced?
 weight: 0
 layout: page
 navigation:
