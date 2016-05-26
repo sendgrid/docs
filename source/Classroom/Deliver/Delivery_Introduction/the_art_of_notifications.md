@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Excessive notifications can become the needy partner of email. We try to keep up with them but eventually, we give up and toss them to the wolves. We have seen the frequency of spam complaints from a single recipient increasing. Recipients are having their mailboxes flooded with notifications and must resort to selecting all of their notifications then reporting them as spam. This flood of spam complaints then makes the mailbox provider think that sender is spamming and will begin to throttle their messages. Now the sender is having deliverability problems and the recipient wants to have nothing to do with the sender. There are solutions!
+Excessive notifications can become the needy partner of email. We try to keep up with them but eventually, we give up and toss them to the wolves. We have seen the frequency of spam complaints from a single recipient increasing. Recipients are having their mailboxes flooded with notifications and must resort to selecting all of their notifications then reporting them as spam. This flood of spam complaints then makes the mailbox provider think that sender is spamming and will begin to throttle, filter, or block their messages. Now the sender is having deliverability problems and the recipient wants to have nothing to do with the sender. There are solutions!
 
 ** **
 
