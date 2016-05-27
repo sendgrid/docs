@@ -50,10 +50,6 @@ To add a template, click the “Code” button in the header. Copy and paste you
 
 ![](/images/template_engine_8.png "Editing your Template")
 
-{% warning %}
-You MUST have a <%subject%> tag in the subject and a <%body%> tag in your template.
-{% endwarning %}
-
 If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. When you do this, you will remove the body placeholder tag <%body%>. When you do this, the editor will show the following notification.
 
 ![](/images/template_engine_4.png "required tags for templates")
