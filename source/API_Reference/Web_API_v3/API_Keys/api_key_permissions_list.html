@@ -86,6 +86,10 @@ The following is a complete list of all possible permissions that you may assign
 ]
 {% endcodeblock %}
 
+{% info %}
+As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissions.html">Classroom</a>, Billing permissions are mutually exclusive from all others. An API Key can *either* have Billing Permissions, or any other set of Permissions.
+{% endinfo %}
+
 {% anchor h2 %}Categories{% endanchor %}
 
 {% codeblock %}
@@ -96,17 +100,6 @@ The following is a complete list of all possible permissions that you may assign
   "categories.update",
   "categories.stats.read",
   "categories.stats.sums.read"
-]
-{% endcodeblock %}
-
-{% anchor h2 %}Clients{% endanchor %}
-{% codeblock %}
-"scopes": [
-  "clients.desktop.stats.read",
-  "clients.phone.stats.read",
-  "clients.stats.read",
-  "clients.tablet.stats.read",
-  "clients.webmail.stats.read"
 ]
 {% endcodeblock %}
 
@@ -129,7 +122,12 @@ The following is a complete list of all possible permissions that you may assign
   "browsers.stats.read",
   "devices.stats.read",
   "geo.stats.read",
-  "mailbox_providers.stats.read"
+  "mailbox_providers.stats.read",
+  "clients.desktop.stats.read",
+  "clients.phone.stats.read",
+  "clients.stats.read",
+  "clients.tablet.stats.read",
+  "clients.webmail.stats.read"
 ]
 {% endcodeblock %}
 
