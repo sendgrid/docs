@@ -8,24 +8,34 @@ navigation:
   show: true
 ---
 
-Each template you create will have a grouping of versions for this template. This allows you to see where you’ve been and create new versions without using them until you make them active. Only one version can be active per template.
+Each template you create will have a grouping of versions for this template. This allows you to see where you’ve been and create new versions without using them until you make them active.
 
-{% anchor h2 %}
-Changing Your Templates View
-{% endanchor %}
+Only one version can be active per template.
 
-![](/images/template_engine_18.png "Changing your template list view")
+When viewing your transactional templates, you may choose to display, or hide, any inactive template versions.
 
-As you create new templates, you may find that a list view might be more suitable to scrolling through your templates. To switch the view, find the view options next to the “Create Template” button and select the list or box view option.
+![]({{root_url}}/images/transactional_templates_show_versions.png "Show inactive template versions.")
+
+![]({{root_url}}/images/transactional_templates_hide_versions.png "Hide inactive template versions.")
+
 
 {% anchor h2 %}
 Managing Templates
 {% endanchor %}
 
-![](/images/template_engine_14.png "Managing your Templates")
+<div class="row">
+  <div class="col-md-6">
+  From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template.
+  </div>
+  <div class="col-md-6">
+    <img src="{{root_url}}/images/template_engine_18.png" class="img-responsive pull-right"/>
+  </div>
+  <br>
+</div>
 
-From the main template view on each template group, you will see a gear icon menu. From this menu, you can choose to edit 
-the name of your template, [add a version]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html), or delete the template.
+You will also see a gear icon for each template version. Clicking this presents a menu allowing you to preview and test, edit, duplicate, and delete the template version. You can also use the preview modal to send a test.
+
+![]({{root_url}}/images/template_engine_19.png)
 
 {% info %}
 To delete a template, you must first delete all the versions of your template.
