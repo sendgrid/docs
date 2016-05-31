@@ -24,7 +24,7 @@ There is a limit of 25 groups per user.
 
 {% parameters post %}
   {% parameter name Yes 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
-  {% parameter description Yes 'String. Max 100 characters' 'A description of the suppression group' %}
+  {% parameter description Yes 'String. Max 200 characters' 'A description of the suppression group' %}
   {% parameter is_default No 'Boolean' 'Default value is false' %}
 {% endparameters %}
 
@@ -100,7 +100,7 @@ Update a suppression group.
 
 {% parameters patch %}
   {% parameter name No 'String. May not share its name with any other suppression group on the user. Max 30 characters' 'The name of the new suppression group' %}
-  {% parameter description No 'String. Max 100 characters' 'A description of the suppression group' %}
+  {% parameter description No 'String. Max 200 characters' 'A description of the suppression group' %}
 {% endparameters %}
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/asm/groups/:group_id name=Item+Suggestions&description=Suggestions+for+items+our+users+might+like. %}
