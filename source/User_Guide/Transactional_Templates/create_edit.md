@@ -8,11 +8,7 @@ navigation:
   show: true
 ---
 
-
-Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on
-different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email
-template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com)
-before sending them to your customers.
+Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 {% info %}
 There is currently a limit of 300 templates and 300 versions that may be created per account.
@@ -28,13 +24,21 @@ Create a Template
 
 When you first visit the transactional templates page, you will be asked to create your first template.
 
-<a href="{{site.app_url}}/templates/new">![](/images/template_engine_17.png "Add a Template")</a>
+<a href="{{site.app_url}}/templates/new">![](/images/template_engine_4.png "Add a Template")</a>
 
 Click “Create Template” and you’ll be asked to add a Template Name.
 
-![](/images/template_engine_7.png "Template Name")
+![](/images/template_engine_6.png "Template Name")
 
-When you hit save, you will be taken to the editor. From here, you can change the subject and the body of your email template.
+When you hit save, your new template group will be created.
+
+![](/images/template_engine_7.png "Template Group")
+
+You can then open the actions dropdown menu to create a new version.
+
+![](/images/template_engine_8.png "Create Template Version")
+
+When you click Add Version, you will be taken to the editor.  From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
@@ -48,53 +52,83 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 To add a template, click the “Code” button in the header. Copy and paste your HTML code into the dark-background code editor, like so:
 
-![](/images/template_engine_8.png "Editing your Template")
+![](/images/template_engine_9.png "Editing your Template")
 
-{% warning %}
-You MUST have a <%subject%> tag in the subject and a <%body%> tag in your template.
-{% endwarning %}
+If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 
-If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. When you do this, you will remove the body placeholder tag <%body%>. When you do this, the editor will show the following notification.
+![](/images/template_engine_10.png)
 
-![](/images/template_engine_4.png "required tags for templates")
-
-As soon as you add <%body%> back into the content, the warning will go away.
-
-![](/images/template_engine_15.png "The Code Editor for transactional templates")
-
-When you’re done editing, just hit the save button to keep all your changes. If you have not manually entered your content into the plain text editor, then you will get a notification offering to pull this content from your HTML code. Please double check that the content is formatted the way you want before you send an email using this template.
+When you’re done editing, just hit the save button to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
 
 To get the to the plain text editor, find the text icon in the editor header bar.
 
-![](/images/template_engine_10.png "Design/Code Switch")
+![](/images/template_engine_11.png "Design/Code Switch")
 
 {% anchor h2 %}
-Send a Test
+Preview and Test Your Template
 {% endanchor %}
 
-We suggest that when you’re done making changes with your template and before you activate your template, you should send a test.
+We suggest that when you’re done making changes to your template, you preview and test it to ensure that the format and layout look the way you expect. We recommend that you always test your template before activating it.
 
-![](/images/template_engine_12.png "Send a Test Menu")
+<div class="row">
 
-When you select the “Send a Test” option, a sidebar window will pop out with a preview of the email that you’re going to test. The test email will be sent to the admin email on your account.  Your substitution tags will not be replaced in this test, but you will be able to see the layout and format of your template email in your own email program.
+  <div class="clearfix col-md-6">  
+    When you select the “Preview” option, a sidebar window will pop out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
+    <br>
+    <br>
+    You may send a test email using your new template from this window.
+  </div>
+  <div class="col-md-6">
+    <img src="{{root_url}}/images/template_engine_12.png" class="img-responsive pull-right"/>
+  </div>
+  <br>
+</div>
+
+![](/images/template_engine_13.png "Preview and Test")
+
+If you click the Send Test button, you will be given the option of specifying the recipient, and subject line, of your test email.
+
+![](/images/template_engine_14.png "Send Test")
+
+Your substitution tags will not be replaced in this test, but you will be able to confirm the layout and format of your template.
 
 {% anchor h2 %}
 Activate Your Template
 {% endanchor %}
 
-![](/images/template_engine_11.png "Make Your Template Active")
+<div class="row">
 
-A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
-
-Select the “Make Active” option from the gear icon menu next to the save button.
+  <div class="clearfix col-md-6">  
+  A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
+  <br>
+  <br>
+  Select the “Make Active” option from the gear icon menu.
+  </div>
+  <div class="col-md-6">
+    <img src="{{root_url}}/images/template_make_active.png" class="img-responsive pull-right"/>
+  </div>
+  <br>
+</div>
 
 {% anchor h2 %}
 Duplicate a Template
 {% endanchor %}
 
-![](/images/template_engine_13.png "Duplicate your template")
+<div class="row">
 
-When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button. This creates a clone, giving it a name including the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
+  <div class="col-md-6">
+    <img src="{{root_url}}/images/templates_duplicate_version.png" class="img-responsive pull-left"/>
+  </div>
+
+  <div class="clearfix col-md-6">  
+  When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button.
+  <br>
+  <br>
+  This creates a clone, giving it a name including the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
+  </div>
+
+<br>
+</div>
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags
