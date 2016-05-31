@@ -17,7 +17,6 @@ At SendGrid we want to make email accessible for everyone. We don't want you to 
 
 Check out this great Q&A session between our marketing department's own Warren Duff and Nigel Dunetts from our awesome support team:  [http://sendgrid.com/blog/smtp-service-crash-course/](http://sendgrid.com/blog/smtp-service-crash-course/)
 
-We've also got this great entry in our [Email Library](https://sendgrid.com/email-library) that provides some excellent information:  [https://sendgrid.com/email-library/smtp](https://sendgrid.com/email-library/smtp)
 
  
 
