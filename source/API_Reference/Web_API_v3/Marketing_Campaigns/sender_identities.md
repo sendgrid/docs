@@ -165,7 +165,7 @@ Delete a Sender Identity [DELETE]
 
 This endpoint allows you to delete one of your sender identities.
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/senders/{sender_id} %}
+{% apiv3example patch DELETE https://api.sendgrid.com/v3/senders/{sender_id} %}
 
 {% v3response %}
 HTTP/1.1 204
