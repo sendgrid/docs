@@ -23,7 +23,7 @@ You should now be looking at a DOS-prompt style window with a blinking cursor in
 
 #Things to know before initiating the Telnet Authentication:
 
-1. For the first command in the telnet authentication test, **the "#" symbol will need to be replaced with one of our recommended ports.** We accept unencrypted and TLS connections on ports **25**, **587**, & **2525** and SSL encryption on **465**. 
+1. For the first command in the telnet authentication test, **the "#" symbol will need to be replaced with one of our recommended ports.** We accept unencrypted and TLS connections on ports **25**, **587**, & **2525**.
 
 2. You will be required to enter a base 64 encoded version of your SendGrid username and password. To encode your username and password, please visit the following URL: https://www.base64encode.org/
 
@@ -50,12 +50,12 @@ Below is a walkthrough of how to send a message via telnet. **Every line startin
 
     >mail from: fromaddress@domain.com <enter>
     250 Sender address accepted
-    >rcpt to: toaddress@domain.com <enter>
+    >rcpt to: toaddress@domain.com <enter>
     250 Recipient address accepted
     >data <enter>
     354 Continue
-    >To:To Name <enter>
-    >From: From Name <enter>
+    >To:To Name <enter>
+    >From: From Name <enter>
     >Subject:Testing <enter>
     > <enter> *You need to enter one blank line before you start the actual body of the message
     >This is where the body of the message you would like to send goes. <enter>
