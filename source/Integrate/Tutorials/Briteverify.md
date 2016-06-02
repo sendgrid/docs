@@ -32,30 +32,30 @@ So to generate the Sendgrid API key, please log into your SendGrid account and c
 
 In the API Keys page, click "Create API Key" and then select "General API Key" from the dropdown menu. 
 
-![]({{root_url}}/images/Briteverify_Picture_04.jpeg
+![]({{root_url}}/images/Briteverify_Picture_04.jpeg)
 <sub>*NOTE: API KEYS COVERED FOR SECURITY PURPOSES*</sub>
 
 Here you will be able to name your API Key and set up the relevant permissions.
 
-![]({{root_url}}/images/Briteverify_Picture_05.jpeg
+![]({{root_url}}/images/Briteverify_Picture_05.jpeg)
 
 In order for BriteVerify to work with your SendGrid list, you will need to make these changes to your permissions:
 
-![]({{root_url}}/images/Briteverify_Picture_06.jpg
-![]({{root_url}}/images/Briteverify_Picture_07.jpeg
+![]({{root_url}}/images/Briteverify_Picture_06.jpg)
+![]({{root_url}}/images/Briteverify_Picture_07.jpeg)
 <sub>*THE API PERMISSION SETTINGS*</sub>
 
 When you are finished, click Save to generate your API Key. At this point, please store this key somewhere safe because as soon as you navigate away from this page, you will not be able to retrieve or restore the token.
 
-![]({{root_url}}/images/Briteverify_Picture_08.jpeg
+![]({{root_url}}/images/Briteverify_Picture_08.jpeg)
 <sub>*NOTE: API KEY COVERED FOR SECURITY PURPOSES*</sub>
 
 Also copy the key over to the Briteverify app and paste it in the text box. Please ensure there are no additional spaces when pasting it in. If the key is incorrectly inputted, an error will be displayed requesting you to review the info.
 
-![]({{root_url}}/images/Briteverify_Picture_09.jpeg
+![]({{root_url}}/images/Briteverify_Picture_09.jpeg)
 <sub>*NOTE: API KEY COVERED FOR SECURITY PURPOSES*</sub>
 
 Once the correct API key is provided, the applications are synced up and you may now verify your Sendgrid data. For more details on different ways to verify Sendgrid data, please refer to the video on “Verify emails with Sendgrid”.
 
-![]({{root_url}}/images/Briteverify_Picture_10.jpeg
+![]({{root_url}}/images/Briteverify_Picture_10.jpeg)
 <sub>*THE IMPORT SCREEN AFTER API KEY HAS BEEN VERIFIED*</sub>
