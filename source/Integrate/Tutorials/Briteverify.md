@@ -42,6 +42,7 @@ Here you will be able to name your API Key and set up the relevant permissions.
 In order for BriteVerify to work with your SendGrid list, you will need to make these changes to your permissions:
 
 ![]({{root_url}}/images/Briteverify_Picture_06.jpg)
+
 ![]({{root_url}}/images/Briteverify_Picture_07.jpeg)
 <sub>*THE API PERMISSION SETTINGS*</sub>
 
