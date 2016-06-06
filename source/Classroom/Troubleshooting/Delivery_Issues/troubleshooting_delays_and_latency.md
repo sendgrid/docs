@@ -11,17 +11,19 @@ navigation:
   show: true
 ---
 
-Is it us? Is it you? Check our [Status Page](http://status.sendgrid.com/) for more info on potential systemic email issues.
+##Experiencing delays? Check our _[Status Page](http://status.sendgrid.com/)_ for the current state of all Sendgrid Services.
 
- As you send emails, you may encounter scenarios where mail seems to take more time than it should to get to it's final destination. Mail delays can manifest in a slew of ways, so we've collected a comprehensive list of steps to try to track them down!
+ As you send emails, you may encounter scenarios where mail seems to take more time than it should to get to it's final destination. Mail delays can manifest in a number of ways, so we've collected a list of tips to help you try to track them down!
 
-**1. Check these suggestions first:**
+###1. Check these suggestions first:
 
-1. If you are integrated with Sendgrid using code, we _highly_ recommend using the official Sendgrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
-2. You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html) sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html). 
-3. Lastly, you can try to open additional connections from your end: Generally, we recommend a maximum of 10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
+**1.** If you are integrated with Sendgrid using code, we _highly_ recommend using the official Sendgrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
 
-**2. None of those helped, what else can I try?**
+**2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html) sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html). 
+
+**3.** Lastly, you can try to open additional connections from your end: Generally, we recommend a maximum of 10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
+
+###2. None of those helped, what else can I try?
 
 More often that not, one of the 3 suggestions above will resolve a latency problem. However, some latency issues are simply due to the quality of your connection or traffic shaping. There is always the possibility that network problem issue lies with either yours or your ISPs configuration. Below are a number of methods that will help you determine where a latency issue really is.
 
