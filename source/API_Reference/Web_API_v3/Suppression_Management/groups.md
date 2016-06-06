@@ -29,7 +29,16 @@ There is a limit of 25 groups per user.
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
-  {% v3response %}
+
+{% apiv3requestbody %}
+{
+  "name": "Product Suggestions",
+  "description": "Suggestions for products our users might like.",
+  "is_default": true
+}
+{% endapiv3requestbody %}
+
+{% v3response %}
 HTTP/1.1 201 OK
 
 {
