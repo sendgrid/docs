@@ -118,6 +118,47 @@ HTTP/1.1 201 OK
 * * * * *
 
 {% anchor h2 %}
+GET
+{% endanchor %}
+
+Retrieve information about multiple suppression groups.
+
+This endpoint will return information for each group ID that you include in your request. To add a group ID to your request, simply append `&id=` followed by the group ID.
+
+{% parameters get %}
+  {% parameter id No Integer 'ID for a suppression group that you want to retrieve information for.' %}
+{% endparameters %}
+
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups?id={id1}&id={id2} %}
+
+{% v3response %}
+HTTP/1.1 200 OK
+
+[
+  {
+    "id": 100,
+    "name": "Newsletters",
+    "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default" : true,
+    "unsubscribes": 400
+  },
+  {
+    "id": 101,
+    "name": "Alerts",
+    "description 2": "Emails triggered by user-defined rules.",
+    "last_email_sent_at": null,
+    "is_default" : false,
+    "unsubscribes": 1
+  }
+]
+{% endv3response %}
+
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
 DELETE
 {% endanchor %}
 Delete a suppression group.

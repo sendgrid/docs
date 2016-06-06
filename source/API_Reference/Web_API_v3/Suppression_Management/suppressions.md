@@ -144,7 +144,7 @@ POST
 {% endanchor %}
 
 Use this endpoint to determine if a given list of emails exists in the given suppression group.
-This endpoint will return a subset of emails from the request that exists in the suppression group.
+This endpoint will return a subset of emails from the request that exist in the suppression group.
 
 {% parameters post %}
   {% parameter group_id Yes 'integer' 'The ID of the group that you would like to search.' %}
