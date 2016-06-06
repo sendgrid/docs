@@ -1,0 +1,134 @@
+---
+layout: page
+title: Alerts API
+weight: 0
+navigation:
+  show: true
+---
+
+FORMAT: 1A
+
+## Alerts Collection [/alerts]
+
+### Get All User Alerts [GET]
+
+Retrieve all alerts.
+
++ Response 200 (application/json)
+
+        [
+            {
+                "created_at": 1451498784,
+                "email_to": "test@example.com",
+                "id": 46,
+                "percentage": 90,
+                "type": "usage_limit",
+                "updated_at": 1451498784
+            },
+            {
+                "created_at": 1451498812,
+                "email_to": "test@example.com",
+                "frequency": "monthly",
+                "id": 47,
+                "type": "stats_notification",
+                "updated_at": 1451498812
+            },
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451520930
+            }
+        ]
+
+### Create a New User Alert [POST]
+
+Create a new alert.
+<br>
+
++ Attributes (object)
+    + type usage_alert (required, string) - Type of alert to create.
+    + email_to test@example.com (required, string) - Email to send the alert to.
+    + percentage 90 (optional, number) - Required for usage_alert. Threshold to send the email at.
+    + frequency daily (optional, string) - Required for stats_notification. How often to send the notification.
+
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "type": "stats_notification",
+                "email_to": "test@example.com",
+                "frequency": "daily"
+            }
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451520930
+            }
+
+## User Alerts Collection [/users/alerts/{user_alert_id}]
+
+### Get a User Alert [GET]
+
+Retrieve a specific alert.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451520930
+            }
+
+### Delete a User Alert [DELETE]
+
+Delete a user alert.
+
++ Response 204
+
+### Update a User Alert [PATCH]
+
+Update a user alert.
+
++ Attributes
+    + email_to test@example.com (optional, string) - Update the send to email.
+    + frequency monthly (optional, string) - Frequency to send the stats_notification alert at.
+    + percentage 90 (optional, number) - Percentage to send the usage_limit alert at.
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "email_to": "test@example.com"
+            }
+
++ Response 200
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451522691
+            }
