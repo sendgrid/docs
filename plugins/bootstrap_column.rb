@@ -8,9 +8,9 @@
   # Some content
   # {% endhtml_column %}
 #   ...
-  # <div id="best_column" class="col-md-4">
-  #   <p>Some content</p>
-  # </div>
+# <div id="best_column" class="col-md-4">
+#   <p>Some content</p>
+# </div>
 #
 module Jekyll
 
@@ -23,16 +23,21 @@ module Jekyll
 
       @class = defined?(parameters[1]) ? " #{parameters[1]}" : ""
 
-      @id = defined?(parameters[2]) ? "id=\"#{parameters[0]}\"" : ""
+      @id = parameters[2];
+
+      if defined?(parameters[2].to_str)
+        if !empty?(parameters[2].to_str)
+          @id = "id=\"#{parameters[2]}\""
+        end
+      end
+
 
       super
     end
     def render(context)
         output = super
 output = <<HTML
-  <div #{@id} class="#{@class}">
-  #{output}
-  </div>
+<div #{@id} class="#{@size}#{@class}"><p>#{output}</p></div>
 HTML
 
         #html = Kramdown::Document.new(output).to_html
@@ -40,4 +45,4 @@ HTML
     end
   end
 end
-  Liquid::Template.register_tag('html_row', Jekyll::Bootstrap_Column)
+  Liquid::Template.register_tag('html_column', Jekyll::Bootstrap_Column)

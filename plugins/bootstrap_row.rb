@@ -54,9 +54,7 @@ module Jekyll
     def render(context)
         output = super
 output = <<HTML
-  <div #{@id} class="row#{@class}">
-  #{output}
-  </div>
+<div #{@id} class="row#{@class}">#{output}</div>
 HTML
 
         #html = Kramdown::Document.new(output).to_html
