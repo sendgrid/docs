@@ -16,7 +16,7 @@ The following steps will show you how to selectively pull out all email addresse
 
 1. When viewing your dashboard, navigate to the left hand menu and click Suppressions.
 
-2. Open a specific category, click the settings cog in the upper right corner, then select "Download as CSV".
+2. Open a specific category, click the settings cog in the upper right corner, then select Download as CSV.
 
     ![]({{root_url}}/images/remove_unusable_contacts_1.png)
 
@@ -28,9 +28,9 @@ The following steps will show you how to selectively pull out all email addresse
 
 4. Return to your dashboard, navigate to the left hand menu and select Marketing, then Contacts.
 
-5. In the upper right corner click "Add list or segment" and select "Upload CSV".
+5. In the upper right corner click Add List or Segment and select Upload CSV.
 
-6. You will be presented with a dialogue box. Select the option to "Create New List" and name it something obvious, like "Remove Invalid Emails".
+6. You will be presented with a dialogue box. Select the option to Create New List and name it something obvious, like "Remove Invalid Emails".
 
 7. Once uploaded, click the cog to the right of that new list and select Delete.
 
