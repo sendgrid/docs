@@ -1,10 +1,20 @@
 ---
 layout: page
 title: Alerts API
-weight: 0
+weight: 100
 navigation:
   show: true
 ---
+
+Alerts allow you to specify an email address to receive notifications regarding your email usage or statistics.
+<br>
+<ul>
+  <li>Usage alerts allow you to set the threshold at which an alert will be sent. For example, if you want to be notified when you've used 90% of your current package's allotted emails, you would set the "percentage" parameter to 90.</li>
+  <li>Stats notifications allow you to set the frequency at which you would like to receive. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily".</li>
+</ul>
+<br>
+For more information about alerts, please visit our <a href="{{root_url}}/User_Guide/Settings/alerts.html">User Guide</a>.
+
 
 FORMAT: 1A
 
@@ -47,12 +57,13 @@ Retrieve all alerts.
 
 Create a new alert.
 <br>
+<br>
 
 + Attributes (object)
-    + type usage_alert (required, string) - Type of alert to create.
-    + email_to test@example.com (required, string) - Email to send the alert to.
-    + percentage 90 (optional, number) - Required for usage_alert. Threshold to send the email at.
-    + frequency daily (optional, string) - Required for stats_notification. How often to send the notification.
+    + type usage_alert (required, string) - The type of alert you want to create. Can be either usage_alert or stats_notification.
+    + email_to test@example.com (required, string) - The email address the alert will be sent to.
+    + percentage 90 (optional, number) - Required for usage_alert. When this usage threshold is reached, the alert will be sent.
+    + frequency daily (optional, string) - Required for stats_notification. How frequently the alert will be sent.
 
 
 + Request (application/json)
@@ -106,11 +117,13 @@ Delete a user alert.
 ### Update a User Alert [PATCH]
 
 Update a user alert.
+<br>
+<br>
 
 + Attributes
-    + email_to test@example.com (optional, string) - Update the send to email.
-    + frequency monthly (optional, string) - Frequency to send the stats_notification alert at.
-    + percentage 90 (optional, number) - Percentage to send the usage_limit alert at.
+    + email_to test@example.com (optional, string) - The new email address you want your alert to be sent to.
+    + frequency monthly (optional, string) - The new frequency at which to send the stats_notification alert.
+    + percentage 90 (optional, number) - The new percentage threshold at which the usage_limit alert will be sent.
 
 + Request (application/json)
 
