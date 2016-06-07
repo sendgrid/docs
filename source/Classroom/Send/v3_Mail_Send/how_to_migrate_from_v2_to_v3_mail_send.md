@@ -35,6 +35,8 @@ With a few quick changes you will be able to take advantage of the improvements 
 * Improved error reporting and documentation.
 * Extensive code examples in each of our [libraries]({{root_url}}/Integrate/libraries.html) to help you integrate quickly.
 
+<iframe src="https://player.vimeo.com/video/168940206" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 What do you need to migrate?
 {% endanchor %}
