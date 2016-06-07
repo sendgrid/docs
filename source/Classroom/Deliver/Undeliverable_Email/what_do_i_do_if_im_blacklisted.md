@@ -76,6 +76,6 @@ Below are links to the delisting forms used by the more popular external blackli
 
 *IMPORTANT NOTE:* If you request a delisting from a blacklisting service, and don't do anything to change the behavior that caused the listing in the first place, it is likely to occur again. Depending on the blacklist, it can be progressively harder to get delisted after the second or third listing. Blacklists are in place 
 
-###TL;DR: Don't delist from major blacklists without a plan in place to address the issue that caused the listing!  
+###TL;DR: Don't delist from major blacklists without a plan in place to address the issue that caused the listing! [Learn more about how to avoid and mitigate risk of blacklisting here](https://sendgrid.com/blog/avoiding-email-blacklists/).
 
 
