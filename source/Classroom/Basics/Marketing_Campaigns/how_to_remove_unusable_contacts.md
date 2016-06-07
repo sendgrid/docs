@@ -14,9 +14,9 @@ It is common to have contacts that result in a group unsubscribe, block, bounce,
 
 The following steps will show you how to selectively pull out all email addresses that result in any of the above events, add these addresses to a separate list, then delete that list so that they no longer result in a charge nor impact your reputation.
 
-1. When viewing your dashboard, navigate to the left hand menu and click Suppressions.
+1. When viewing your dashboard, navigate to the left hand menu and click **Suppressions**.
 
-2. Open a specific category, click the settings cog in the upper right corner, then select Download as CSV.
+2. Open a specific category, click the settings cog in the upper right corner, then select **Download as CSV**.
 
     ![]({{root_url}}/images/remove_unusable_contacts_1.png)
 
@@ -26,13 +26,13 @@ The following steps will show you how to selectively pull out all email addresse
     * Next, upload that CSV of all contacts to our [List Assist](https://sendgrid.com/docs/Utilities/list_assist.html) tool. This will give you a CSV of all of your Marketing Campaigns contacts that exist on any of the Suppression lists.
     * Use that list to follow steps 4-8 below. You can find a video tutorial explaining how to use List Assist [here](https://www.youtube.com/watch?v=FiyDgCl78dk).
 
-4. Return to your dashboard, navigate to the left hand menu and select Marketing, then Contacts.
+4. Return to your dashboard, navigate to the left hand menu and select **Marketing**, then **Contacts**.
 
-5. In the upper right corner click Add List or Segment and select Upload CSV.
+5. In the upper right corner click **Add List or Segment** and select **Upload CSV**.
 
-6. You will be presented with a dialogue box. Select the option to Create New List and name it something obvious, like "Remove Invalid Emails".
+6. You will be presented with a dialogue box. Select the option to **Create New List** and name it something obvious, like "Remove Invalid Emails".
 
-7. Once uploaded, click the cog to the right of that new list and select Delete.
+7. Once uploaded, click the cog to the right of that new list and select **Delete**.
 
 8. Another dialogue box will open asking if you wish to delete "all contacts associated with this list". Make sure that box is checked, and then you're good to go!
 
