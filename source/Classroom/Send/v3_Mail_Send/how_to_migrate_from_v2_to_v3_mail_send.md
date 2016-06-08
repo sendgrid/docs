@@ -45,7 +45,7 @@ Below you will find a visual comparison of the v2 and v3 JSON schemas that highl
 
 For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 
-![]({{root_url}}/images/v2_vs_v3_mail_send.png)
+![]({{root_url}}/images/v2_vs_v3_mail_send_ga.png)
 
 One of the more prominent changes you may notice, is that many of the settings that were previously handled by SendGrid’s [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) are now defined explicitly within the JSON schema of the request body to the mail send endpoint.
 
