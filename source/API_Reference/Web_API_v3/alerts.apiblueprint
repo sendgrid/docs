@@ -10,7 +10,7 @@ Alerts allow you to specify an email address to receive notifications regarding 
 <br>
 <ul>
   <li>Usage alerts allow you to set the threshold at which an alert will be sent. For example, if you want to be notified when you've used 90% of your current package's allotted emails, you would set the "percentage" parameter to 90.</li>
-  <li>Stats notifications allow you to set the frequency at which you would like to receive. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily".</li>
+  <li>Stats notifications allow you to set how frequently the alerts will be sent. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily".</li>
 </ul>
 <br>
 For more information about alerts, please visit our <a href="{{root_url}}/User_Guide/Settings/alerts.html">User Guide</a>.
@@ -20,7 +20,7 @@ FORMAT: 1A
 
 ## Alerts Collection [/alerts]
 
-### Get All User Alerts [GET]
+### Get All Alerts [GET]
 
 Retrieve all alerts.
 
@@ -53,7 +53,7 @@ Retrieve all alerts.
             }
         ]
 
-### Create a New User Alert [POST]
+### Create a New Alert [POST]
 
 Create a new alert.
 <br>
@@ -89,9 +89,9 @@ Create a new alert.
                 "updated_at": 1451520930
             }
 
-## User Alerts Collection [/users/alerts/{user_alert_id}]
+## Alerts Collection [/alerts/{alert_id}]
 
-### Get a User Alert [GET]
+### Get an Alert [GET]
 
 Retrieve a specific alert.
 
@@ -108,15 +108,15 @@ Retrieve a specific alert.
                 "updated_at": 1451520930
             }
 
-### Delete a User Alert [DELETE]
+### Delete an Alert [DELETE]
 
-Delete a user alert.
+Delete an alert.
 
 + Response 204
 
-### Update a User Alert [PATCH]
+### Update an Alert [PATCH]
 
-Update a user alert.
+Update an alert.
 <br>
 <br>
 
