@@ -13,38 +13,19 @@ navigation:
 
 # What is it?
 
-SendGrid has an OEM process, where we allow customers to utilize SendGrid's service to send email on behalf of their customers or users. Generally this is done by creating sub-user accounts, and allowing our customer's clients to use SendGrid via the sub-accounts, yet still be managed by the original customer that owns the parent account. The process is completed by having the customer and SendGrid both sign an agreement. From the agreement, the customer receives not only the right to utilize SendGrid services for their customers, but also an increased sub-user and IP address limit. 
+
+SendGrid’s OEM process allows customers to use SendGrid’s service to send email on behalf of your customers, and can also include direct sending for your own business. 
+
+Typically this is achieved by utilizing our subuser functionality, where you create a parent account and then separate your customers into [subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html): child accounts that belong to (and live within) a parent account. Subusers have their own permissions and sending limits, which you assign as you create them. For most customers who are sending email on behalf of their customers as an OEM, it's a great way to separate their users' data. It also gives you the ability to create a [domain whitelabel]({{root_url}}/User_Guide/Settings/Whitelabel/domains.html) for each of your customers, effectively masking SendGrid as the delivery engine for the end recipient, and you as the account owner if you choose. 
 
  
 
 # Why It Matters
 
-1. If you would like to use SendGrid services for your clients
-2. If you need more than 15 sub-users
-3. If you need more than 15 IP addresses
-4. You can use the customer sub-user API to manage your customers
-5. Upon becoming an OEM customer you are granted to a single training session regarding the use and operation of SendGrid services (upon request). 
+All SendGrid Pro and Premier level accounts have the ability to create subusers, but the number of potential subaccounts is initially capped at 15. 
 
-_\*NOTE\* Once you are an OEM customer, you are in turn responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support and education for your clients._
+If your use case requires more than 15 subaccounts, we can expand that number after completion of our OEM Agreement. To become a SendGrid OEM customer, please contact our Customer Success team at [customersuccess@sendgrid.com](mailto:customersuccess@sendgrid.com). We will then verify your account integrity and provide you with the OEM agreement. Upon signing it, we will return a counter signed copy for your records. At that point, we can increase the number of subusers available to your SendGrid account. 
 
-#  
+*NOTE:* _Once you are an OEM customer, you are responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support, and education for your clients. If you engage in direct sending of emails to your customers (as permitted by the OEM Agreement), you will also be responsible for your content and sending/data collection practices._ 
 
-# Scenarios
 
-_You may want to consider the OEM process if the following describes your situation:_
-
-1. You would like to have more than 15 sub-users or IP addresses simply for separating your transactional/marketing mail, stats, reputations, or organizational departments. 
-2. If you want to send messages using SendGrid services on behalf of a brand new domain(s). And you do not mind that the recipients will know the messages are coming from your organization based on your white label. 
-3. If you want to send messages using SendGrid services on behalf of a brand new domain(s). And you want to purchase additional IP addresses, and white label them to your customer's domains. The message recipients will see that the messages are coming from your customer's domain. 
-
-_\*NOTE\* For additional information regarding sub-users and scenarios, please see [What are subusers?]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html)_
-
-#  
-
-# How to Become an OEM Customer
-
-It is very easy to become a SendGrid OEM customer. Simply contact our support department via phone, chat or [email](http://support.sendgrid.com/tickets/new). Let us know that you are interested, and your reason for becoming an OEM customer. We will then verify your account integrity and provide you with the OEM agreement. Upon signing it, we will provide you with a counter signed copy for your records via the ticket. At that point, just let us know how many additional sub-users or IP addresses you will need, and we will be glad to increase your limit. 
-
- 
-
-Happy Sending!

@@ -24,19 +24,19 @@ Create a Template
 
 When you first visit the transactional templates page, you will be asked to create your first template.
 
-<a href="{{site.app_url}}/templates/new">![](/images/template_engine_4.png "Add a Template")</a>
+<a href="{{site.app_url}}/templates/new">![](/images/templates_create_edit_1.png "Add a Template")</a>
 
 Click “Create Template” and you’ll be asked to add a Template Name.
 
-![](/images/template_engine_6.png "Template Name")
+![](/images/templates_create_edit_2.png "Template Name")
 
 When you hit save, your new template group will be created.
 
-![](/images/template_engine_7.png "Template Group")
+![](/images/templates_create_edit_3.png "Template Group")
 
 You can then open the actions dropdown menu to create a new version.
 
-![](/images/template_engine_8.png "Create Template Version")
+![](/images/templates_create_edit_4.png "Create Template Version")
 
 When you click Add Version, you will be taken to the editor.  From here, you can change the subject and the body of your email template.
 
@@ -52,17 +52,17 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 To add a template, click the “Code” button in the header. Copy and paste your HTML code into the dark-background code editor, like so:
 
-![](/images/template_engine_9.png "Editing your Template")
+![](/images/templates_create_edit_5.png "Editing your Template")
 
 If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 
-![](/images/template_engine_10.png)
+![](/images/templates_create_edit_6.png)
 
 When you’re done editing, just hit the save button to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
 
 To get the to the plain text editor, find the text icon in the editor header bar.
 
-![](/images/template_engine_11.png "Design/Code Switch")
+![](/images/templates_create_edit_7.png "Design/Code Switch")
 
 {% anchor h2 %}
 Preview and Test Your Template
@@ -84,11 +84,11 @@ We suggest that when you’re done making changes to your template, you preview 
   <br>
 </div>
 
-![](/images/template_engine_13.png "Preview and Test")
+![](/images/templates_create_edit_8.png "Preview and Test")
 
 If you click the Send Test button, you will be given the option of specifying the recipient, and subject line, of your test email.
 
-![](/images/template_engine_14.png "Send Test")
+![](/images/templates_create_edit_9.png "Send Test")
 
 Your substitution tags will not be replaced in this test, but you will be able to confirm the layout and format of your template.
 

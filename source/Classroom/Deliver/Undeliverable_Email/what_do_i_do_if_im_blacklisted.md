@@ -1,4 +1,7 @@
 ---
+st:
+  published_at: 2016-06-07
+  type: Classroom
 seo:
   title: What do I do if I'm blacklisted?
   description: What do I do if I'm blacklisted?
@@ -15,7 +18,7 @@ Ending up on a blacklist can be detrimental to your domain’s email deliverabil
 
  
 
-**Shared IP Plans (Free, Lite, Bronze, Shared Marketing)**
+**Shared IP Plans (Free, Legacy Lite, and Essentials)**
 
  
 
@@ -23,7 +26,7 @@ If you are on one of our shared IP plans and you notice a block message based on
 
  
 
-**Dedicated IP Plans (Silver, Gold, Platinum, High Volume)**
+**Dedicated IP Plans (Pro, and Premier)**
 
  
 
@@ -54,11 +57,15 @@ Below are links to the delisting forms used by the more popular external blackli
 
 - [AT&T](http://rbl.att.net/cgi-bin/rbl/block_admin.cgi "Link: http://rbl.att.net/end\_user\_request2.html")\*
 - [Barracuda](http://www.barracudacentral.org/rbl/removal-request)
+- [Cloudmark](https://csi.cloudmark.com/en/reset/)
 - [Comcast](http://postmaster.comcast.net/block-removal-request.html)
 - [Google](https://support.google.com/mail/contact/msgdelivery)
 - [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
 - [Microsoft/Outlook](https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts)
 - [Mimecast](http://www.mimecast.com/senderfeedback)
+- [Office365](https://sender.office.com/)
+- [ProofPoint](https://support.proofpoint.com/dnsbl-lookup.cgi)
+- [SORBS](http://www.sorbs.net/overview.shtml)
 - [SpamCop](http://www.spamcop.net/bl.shtml)
 - [Spam Rats](http://www.spamrats.com/removal.php)
 - [Spamhaus](http://www.spamhaus.org/lookup/)
@@ -66,6 +73,9 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Trend Micro](https://ers.trendmicro.com/reputations)
 - [URIBL](https://admin.uribl.com/)
 
- 
 
-_\*AT&T's delisting request form URL will be changing on a regular basis according to their website so we will try to keep our link to them up-to-date._
+*IMPORTANT NOTE:* If you request a delisting from a blacklisting service, and don't do anything to change the behavior that caused the listing in the first place, it is likely to occur again. Depending on the blacklist, it can be progressively harder to get delisted after the second or third listing. Blacklists are in place 
+
+###TL;DR: Don't delist from major blacklists without a plan in place to address the issue that caused the listing! [Learn more about how to avoid and mitigate risk of blacklisting here](https://sendgrid.com/blog/avoiding-email-blacklists/).
+
+
