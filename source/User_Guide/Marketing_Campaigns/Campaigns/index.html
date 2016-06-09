@@ -187,11 +187,51 @@ From the main campaigns page, you can click the gear icon inline with your campa
 Campaign Statistics
 {% endanchor %}
 
+<p>
 Once you have sent a campaign, you can click the gear icon next to the campaign name and then choose “stats.” From here, you will get statistics specific to this campaign including bounces, clicks, opens, etc. and you can also export a CSV with the raw stats.
+</p>
 
 <img src="{{root_url}}/images/stats_1.jpg" alt="Campaign Statistics" />
 
+<p>
 You can choose to see either raw numbers or percentages when looking at your campaign statistics by clicking the Toggle switch on the Campaigns page.
+</p>
+
+{% anchor h3 %}
+Exporting Statistics for Multiple Campaigns
+{% endanchor %}
+
+<p>
+You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, with the exception of two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
+</p>
+
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{root_url}}/images/bulk_edit_button.png" class="img-responsive pull-left"/>
+  </div>
+  <div class="clearfix col-md-8">
+    <p>
+    To export statistics for multiple campaigns, navigate to your Campaigns page within Marketing Campaigns. Check the box next to each campaign that you want to include in your stats CSV. As you add campaigns, you will notice a number on the bulk dropdown menu in the upper right increase.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="clearfix col-md-8">
+    <p>
+    Once you’ve selected the campaigns that you want to include in your CSV, click this button and select Export CSV.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <img src="{{root_url}}/images/export_multiple_campaign_stats_1.png" class="img-responsive pull-right"/>
+  </div>
+</div>
+
+<ul>
+  <li>Campaigns are ordered from most to least recent.</li>
+  <li>The CSV will include a row for each day that SendGrid has gathered statistics.</li>
+  <li>Every stats CSV that you export will contain a row containing the totals for each column.</li>
+</ul>
 
 {% anchor h3 %}
 Link Tracking
@@ -201,10 +241,6 @@ You can also view detailed statistics about the links you include in your campai
 
 {% info %}
 Click tracking stats will be displayed for the top 20 most frequently clicked links within your campaign.
-{% endinfo %}
-
-{% info %}
-Clicks can not be tracked in A/B test campaigns.
 {% endinfo %}
 
 <img src="{{root_url}}/images/link_tracking.png" alt="Link Tracking" />
