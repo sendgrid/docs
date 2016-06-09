@@ -10,7 +10,7 @@ Alerts allow you to specify an email address to receive notifications regarding 
 <br>
 <ul>
   <li>Usage alerts allow you to set the threshold at which an alert will be sent. For example, if you want to be notified when you've used 90% of your current package's allotted emails, you would set the "percentage" parameter to 90.</li>
-  <li>Stats notifications allow you to set how frequently the alerts will be sent. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily".</li>
+  <li>Stats notifications allow you to set how frequently you would like to receive email statistics reports. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily". Stats notifications include data such as how many emails you sent each day, in addition to other email events such as bounces, drops, unsubscribes, etc.</li>
 </ul>
 <br>
 For more information about alerts, please visit our <a href="{{root_url}}/User_Guide/Settings/alerts.html">User Guide</a>.
@@ -55,7 +55,7 @@ Retrieve all alerts.
 
 ### Create a New Alert [POST]
 
-Create a new alert.
+Create a new alert. You can create the same alert multiple times, but with different email addresses specified in the "email_to" parameter. This is useful if you have multiple users on the same account who would like to receive the same alerts.
 <br>
 <br>
 
