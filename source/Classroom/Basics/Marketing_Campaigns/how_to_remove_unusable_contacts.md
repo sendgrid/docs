@@ -10,9 +10,9 @@ navigation:
   show: true
 ---
 
-It is common to have contacts that result in a group unsubscribe, block, bounce, invalid email address, or spam report. These contacts either will not, or do not want to receive your marketing emails. By continuing to store these contacts, you are being charged for recipients that we will not deliver your emails to, since contacts that result in bounces, spam reports, etc. are immediately dropped to protect your sending reputation.
+It is common to have contacts that result in a group unsubscribe, block, bounce, invalid email address, or spam report. Attempting to send email to these contacts can negatively impact your reputation since these contacts do not want to (and will not) receive your marketing emails. By continuing to store these contacts, you are being charged for recipients that will automatically be dropped.
 
-The following steps will show you how to remove all of your unusable Marketing Campaigns contacts.
+The following steps will show you how to remove all of your unusable Marketing Campaigns contacts so that you won't continue to be charged for their storage.
 
 1. When viewing your dashboard, navigate to the left hand menu and click **Suppressions**.
 
