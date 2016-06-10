@@ -414,8 +414,7 @@ The rate at which recipients may be added to a list is limited to 1 request per 
 ## Recipients [/contactdb/recipients]
 
 {% info %}
-If a recipient that is uploaded already exists in storage, and if the uploaded recipient contains no changes to what is currently stored,
-the record of the recipient will not be updated and the index of that recipient will be contained in the unmodified_indices list.
+If you make a request to upload a duplicate recipient and your request would make no change to the original recipient, the original recipient will remain unchanged and its index will be added to the unmodified_indices list.
 {% endinfo %}
 
 ### Add Single Recipient [POST]
