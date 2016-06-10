@@ -25,33 +25,34 @@ FORMAT: 1A
 Retrieve all alerts.
 
 + Response 200 (application/json)
+    + Body
 
-        [
-            {
-                "created_at": 1451498784,
-                "email_to": "test@example.com",
-                "id": 46,
-                "percentage": 90,
-                "type": "usage_limit",
-                "updated_at": 1451498784
-            },
-            {
-                "created_at": 1451498812,
-                "email_to": "test@example.com",
-                "frequency": "monthly",
-                "id": 47,
-                "type": "stats_notification",
-                "updated_at": 1451498812
-            },
-            {
-                "created_at": 1451520930,
-                "email_to": "test@example.com",
-                "frequency": "daily",
-                "id": 48,
-                "type": "stats_notification",
-                "updated_at": 1451520930
-            }
-        ]
+            [
+                {
+                    "created_at": 1451498784,
+                    "email_to": "test@example.com",
+                    "id": 46,
+                    "percentage": 90,
+                    "type": "usage_limit",
+                    "updated_at": 1451498784
+                },
+                {
+                    "created_at": 1451498812,
+                    "email_to": "test@example.com",
+                    "frequency": "monthly",
+                    "id": 47,
+                    "type": "stats_notification",
+                    "updated_at": 1451498812
+                },
+                {
+                    "created_at": 1451520930,
+                    "email_to": "test@example.com",
+                    "frequency": "daily",
+                    "id": 48,
+                    "type": "stats_notification",
+                    "updated_at": 1451520930
+                }
+            ]
 
 ### Create a New Alert [POST]
 
