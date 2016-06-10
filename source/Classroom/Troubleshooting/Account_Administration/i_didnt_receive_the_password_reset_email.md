@@ -1,7 +1,10 @@
 ---
+st:
+  published_at: 2016-06-10
+  type: Classroom
 seo:
   title: I didn't receive the password reset email
-  description: I didn't receive the password reset email
+  description: Initiate a password reset and haven't received it? 
   keywords: password, reset, email, account, bad username/password, login
 title: I didn't receive the password reset email
 weight: 0
@@ -11,17 +14,16 @@ navigation:
   show: true
 ---
 
-There are a few things to take into account when requesting a password reset;
+There are a few things to take into account when requesting a password reset:
 
-1. Make sure you are putting in your username and not your email address in the password reset screen.
+* Make sure you are entering your username and not your email address in the password reset screen.
 
-2. Make sure you are expecting the email at the correct address. The password reset will be sent to email you have in your SendGrid Account settings. 
+* Ensure that you are expecting the email at the correct address. The password reset will be sent to email you have in your SendGrid account settings for the username you enter. 
 
-3. It is possible that you cannot login because the bililng dept has terminated your account due to non-payment. In that case you should have received several emails detailing this and again these emails are going to the email you have in your SendGrid Account settings. 
+* It is also possible that you cannot login because our billing team has terminated your account due to non-payment. In this case you would have received several emails detailing the reason behind the terminatio. These emails are also going to the email you have in your SendGrid account settings. 
 
-4. The email may be in your SPAM or Junk folder. Be sure to check there, and if you do find it there, mark it as "not spam".
+* The reset email may be in your SPAM or Junk folder. If you do find it there, be sure to mark it as "not spam".
 
- 
 
-**For security reasons, Sendgrid Support agents cannot change account passwords. Sorry about that! **
+**For security reasons, Sendgrid support agents cannot change account passwords.**
 
