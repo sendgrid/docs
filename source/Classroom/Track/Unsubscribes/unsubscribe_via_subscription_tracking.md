@@ -16,6 +16,7 @@ navigation:
 - Automatically add an unsubscribe link to the bottom of your emails.
 - Customize the unsubscribe link that is added automatically
 - Create a replacement tag that will allow you to put the unsubscribe link anywhere you would like using HTML.
+- Automatically incorporates the [list-unsubscribe](https://sendgrid.com/blog/list-unsubscribe/) header in your emails.
 
 ## How do I enable Subscription Tracking? ** **
 
@@ -25,7 +26,7 @@ From your Account Overview page, visit the sidebar menu and click “Settings”
 
 ## How do I just add an unsubscribe link?
 
-Just enable the setting. That will add the default unsubscribe link to the bottom of your emails.
+Just enable the setting! Once enabled, we'll add the default unsubscribe link to the bottom of your emails.
 
 ## How do I change what the link says?
 
@@ -65,9 +66,6 @@ Doing this will allow you to use that tag within the html. This tag will get rep
 
     <p>If you would like to stop receiving these emails <a href=”[unsubscribe]”>click here</a></p>
 
-The HTML code above gives you the following results:
-
-    If you would like to stop receiving these emails click here
 
 ## What is a landing page?
 
@@ -75,11 +73,6 @@ This section allows you to create a page that appears once the unsubscribe link 
 
 ![]({{root_url}}/images/Screen_Shot_2015-05-26_at_11.39.02_AM.png)
 
- 
-
-## Anything else I should know?
-
-Enabling our Subscription Tracking app also automatically incorporates the [list-unsubscribe](https://sendgrid.com/blog/list-unsubscribe/) header, which is great way to supplement and improve your email deliverability!
 
  
 
