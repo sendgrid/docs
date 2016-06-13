@@ -13,7 +13,6 @@ layout: page
 navigation:
  show: true
 ---
-#Using SendGrid with BriteVerify
 ##Creating a new API Key
 
 To use BriteVerify to verify your SendGrid list, you will need to generate an API Key within SendGrid. 
