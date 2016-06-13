@@ -91,11 +91,11 @@ send_via_sendgrid:
 Add a transport to the **Transport Configuration** Box:
 
 {% codeblock lang:bash %}
-sendgrid_smtp:
+Sendgrid_smtp:
   driver = smtp
   hosts = smtp.sendgrid.net
-  hosts_require_auth = smtp.sendgrid.net
-  hosts_require_tls = smtp.sendgrid.net
+  hosts_require_auth = <; $host_address
+  hosts_require_tls = <; $host_address
 {% endcodeblock %}
 
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
