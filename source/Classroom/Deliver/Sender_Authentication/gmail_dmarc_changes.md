@@ -1,8 +1,11 @@
 ---
+st:
+  published_at: 2016-06-13
+  type: Classroom
 seo:
   title: Gmail DMARC Changes
-  description: Gmail DMARC Changes
-  keywords: dmarc, gmail, from, spf, dkim
+  description: 550 5.7.1 Unauthenticated email from domain.tld is not accepted due...
+  keywords: dmarc, gmail, google, from, spf, dkim
 title: Gmail DMARC Changes
 weight: 0
 layout: page
@@ -13,9 +16,9 @@ navigation:
 
 Gmail has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo and AOL. You may have started seeing bounce messages with the Reason of:
 
-**<NDR GOES HERE > **
+**550 5.7.1 Unauthenticated email from domain.tld is not accepted due to domain's DMARC policy. Please contact administrator of domain.tld domain if this was a legitimate mail. Please visit [https://support.google.com/mail/answer/2451690](https://support.google.com/mail/answer/2451690) to learn about DMARC initiative. 62si14044909itw.103 - gsmtp **
 
-This is because Gmail will no longer be accepting messages where the From domain is a Gmail address and the message originates from a non-approved Gmail mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domain. 
+This is because Gmail will no longer be accepting messages where the From domain is a Gmail address and the message originates from a non-approved Gmail mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domains. 
 
  
 
@@ -27,4 +30,4 @@ This is because Gmail will no longer be accepting messages where the From domain
 
  
 
-For more extended reading, check out <LINK GOES HERE>, as well as our  [DMARC Knowledgebase article](https://sendgrid.zendesk.com/hc/en-us/articles/200182958-Everything-about-DMARC-).
+For more extended reading, check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744), as well as our  [DMARC Classroom article]({{root_url}}/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html).
