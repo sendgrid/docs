@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Suppressions are email addresses that can be added to [groups]({{ root_url }}/API_Reference/Web_API_v3/Suppression_Management/groups.html) to prevent certain types of emails from being delivered to those addresses.
+Suppressions are email addresses that can be added to [groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html) to prevent certain types of emails from being delivered to those addresses.
 
 {% anchor h2 %}
 GET
@@ -19,7 +19,7 @@ Get all suppressions.
 HTTP/1.1 200
 [
   {
-    "email":"test1@example.com",
+    "email":"test@example.com",
     "group_id": 1,
     "group_name": "Weekly News",
     "created_at": 1410986704
@@ -44,7 +44,7 @@ HTTP/1.1 200
 GET
 {% endanchor %}
 
-Get a list of all unsubscribe groups that the given address belongs to.
+Retrieve all unsubscribe groups that the given email address has been added to.
 
 {% parameters post %}
   {% parameter email Yes 'String' 'Email address to search for across all groups.' %}
@@ -144,20 +144,21 @@ POST
 {% endanchor %}
 
 Use this endpoint to determine if a given list of emails exists in the given suppression group.
-This endpoint will return a subset of emails from the request that exist in the suppression group.
+
+When given a list of email addresses and a group ID, this endpoint will return only the email addresses that have been unsubscribed from the given group.
 
 {% parameters post %}
   {% parameter group_id Yes 'integer' 'The ID of the group that you would like to search.' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions %}
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions/search %}
 
 {% apiv3requestbody %}
 {
   "recipient_emails": [
-    "exists1@example.com",
-    "exists2@example.com",
-    "doesnotexists@example.com"
+    "test1@example.com",
+    "test2@example.com",
+    "test3@example.com"
   ]
 }
 {% endapiv3requestbody %}
@@ -167,8 +168,8 @@ HTTP/1.1 200
 
 {
   "recipient_emails":[
-    "exists1@example.com",
-    "exists2@example.com"
+    "test1@example.com",
+    "test2@example.com"
   ]
 }
 
