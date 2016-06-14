@@ -12,8 +12,6 @@ your email.
 Our Brand New [Deliverability Center]({{root_url}}/Utilities/deliverabilitycenter.html) is live and ready to help!
 Come check out our growing library of bounce errors and their solutions!
 
-Check out [Code Workshop]({{root_url}}/Utilities/code_workshop.html) to
-generate email-sending code in a variety of languages.
 
 The [SMTP API header validator]({{root_url}}/Utilities/smtpapi_validator.html) will help ensure that the SMTP API header you are using is valid.
 
