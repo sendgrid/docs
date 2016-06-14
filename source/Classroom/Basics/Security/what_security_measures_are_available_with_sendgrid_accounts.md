@@ -13,7 +13,7 @@ navigation:
 
  **Encryption options**
 
-All email sent via SendGrid will utilize opportunistic encryption using [TLS](https://sendgrid.com/docs/Glossary/tls.html). This means that if your recipients’ mail servers are configured to support TLS, it will be impossible for someone along the route to intercept and/or modify your messages. With opportunistic TLS if the recipient mail server does not support the encryption then the message will then be sent without.
+All email sent via SendGrid will utilize [Opportunistic TLS encryption]({{root_url}}/Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html). This means that if your recipients’ mail servers are configured to support TLS, it will be impossible for someone along the route to intercept and/or modify your messages. With opportunistic TLS if the recipient mail server does not support the encryption then the message will then be sent without.
 
 You can read more about which mail servers support TLS in [this blog post](https://sendgrid.com/blog/sendgrid-and-the-future-of-email-security/).
 

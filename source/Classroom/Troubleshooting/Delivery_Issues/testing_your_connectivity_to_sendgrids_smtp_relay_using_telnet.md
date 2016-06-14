@@ -19,17 +19,16 @@ To begin, choose one of the following options based on the type of computer you 
 
 >**Mac/Unix:** launch the Terminal application. 
 
-You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the progression below to walk you through the connection, **every line starting with > is a command you will type and then press the ENTER key afterwards.** 
+You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the progression below to walk you through the connection.
 
-##Recommended Ports
+#Things to know before initiating the Telnet Authentication:
 
-We accept unencrypted and TLS connections on ports **25**, **587**, & **2525** and SSL encryption on **465**.  
->**In the below example, substitute _#_ for a valid port number port number:**
+1. For the first command in the telnet authentication test, **the "#" symbol will need to be replaced with one of our recommended ports.** We accept unencrypted and TLS connections on ports **25**, **587**, & **2525**.
 
-    >telnet smtp.sendgrid.net #
+2. You will be required to enter a base 64 encoded version of your SendGrid username and password. To encode your username and password, please visit the following URL: https://www.base64encode.org/
 
- 
-#Telnet Response:
+#Telnet Authentication Walkthrough:
+Below is a walkthrough of a basic telnet authentication. **Every line starting with ">" indicates that the text following it is a command you will need to type in followed by pressing the ENTER key afterwards.** 
 
     >telnet smtp.sendgrid.net # <enter>
     220 xxxx ESMTP service ready
@@ -37,9 +36,9 @@ We accept unencrypted and TLS connections on ports **25**, **587**, & **2525** a
     250-xxxx250-8BITMIME250-SIZE 20480000250-AUTH=PLAIN LOGIN250-AUTH PLAIN LOGIN250 STARTTLS
     >auth login <enter>
     334 VXNlcm5hbWU6
-    >Enter your BASE64 encoded SG username here. Encode your username to BASE64 using this tool: https://www.base64encode.org/ <enter>
+    >Enter your BASE64 encoded SendGrid username here. <enter>
     334 UGFzc3dvcmQ6
-    >Enter your BASE64 encoded SG password here. Encode your password to BASE64 using this tool: https://www.base64encode.org/ <enter>
+    >Enter your BASE64 encoded SendGrid password here. <enter>
     235 Authentication successful. *
 
 ####* Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open, and your username and password are valid!
@@ -47,18 +46,19 @@ We accept unencrypted and TLS connections on ports **25**, **587**, & **2525** a
 
 
 #Sending a message using Telnet:
+Below is a walkthrough of how to send a message via telnet. **Every line starting with ">" indicates that the text following it is a command you will need to type in followed by pressing the ENTER key afterwards.** 
 
     >mail from: fromaddress@domain.com <enter>
     250 Sender address accepted
-    >rcpt to: toaddress@domain.com <enter>
+    >rcpt to: toaddress@domain.com <enter>
     250 Recipient address accepted
     >data <enter>
     354 Continue
-    >To:To Name <enter>
-    >From: From Name <enter>
+    >To:To Name <enter>
+    >From: From Name <enter>
     >Subject:Testing <enter>
     > <enter> *You need to enter one blank line before you start the actual body of the message
-    >This is the body of the message you would like to send. <enter>
+    >This is where the body of the message you would like to send goes. <enter>
     >. <enter> *Typing a period(.) tells us you are finished, and to send the message.
     250 Delivery in progress
     >quit <enter>

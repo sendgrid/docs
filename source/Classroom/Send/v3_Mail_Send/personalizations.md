@@ -10,15 +10,6 @@ navigation:
   show: true
 ---
 
-{% warning %}
-**This endpoint is currently in beta!**
-
-Since this is not a general release, we do not recommend POSTing production level traffic through this endpoint or integrating your production servers with this endpoint.
-
-*When this endpoint is ready for general release, your code will require an update in order to use the official URI.*
-
-By using this endpoint, you accept that you may encounter bugs and that the endpoint may be taken down for maintenance at any time. We cannot guarantee the continued availability of this beta endpoint. We hope that you like this new endpoint and we appreciate any <a href="mailto:dx+mail-beta@sendgrid.com">feedback</a> that you can send our way.
-{% endwarning %}
 
 When sending email via the v3 Mail Send endpoint, the various metadata about the message (such as the recipients, subject line, headers, substitutions, and custom arguments) are contained within an array called personalizations.
 
@@ -40,7 +31,7 @@ You must include at least one "to" object within the personalizations array.
 Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;jane@example.com&gt;, but set each email to be delivered at different times.
 
 {% info %}
-You may not include more than 100 personalizations per API request. If you need to include more than 100 personalizations, please divide these across multiple API requests.
+You may not include more than 1000 personalizations per API request. If you need to include more than 1000 personalizations, please divide these across multiple API requests.
 {% endinfo %}
 
 There are certain parameters that can be defined both at the "message level" and at the "personalizations" level.

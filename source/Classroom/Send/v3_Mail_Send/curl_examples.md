@@ -12,23 +12,13 @@ navigation:
 
 Below are some cURL examples for several basic use cases to get you sending email through SendGrid's v3 Mail Send endpoint right away!
 
-{% warning %}
-**This endpoint is currently in beta!**
-
-Since this is not a general release, we do not recommend POSTing production level traffic through this endpoint or integrating your production servers with this endpoint.
-
-*When this endpoint is ready for general release, your code will require an update in order to use the official URI.*
-
-By using this endpoint, you accept that you may encounter bugs and that the endpoint may be taken down for maintenance at any time. We cannot guarantee the continued availability of this beta endpoint. We hope that you like this new endpoint and we appreciate any <a href="mailto:dx+mail-beta@sendgrid.com">feedback</a> that you can send our way.
-{% endwarning %}
-
 {% anchor h2 %}
 Hello, World!
 {% endanchor %}
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "YOU@sendgrid.com"}]}],"from": {"email": "dx@sendgrid.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
@@ -40,7 +30,7 @@ Sending a Basic Email to Multiple Recipients
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email ":"recipient4@example.com"}]}], "from": {"email": "dx@sendgrid.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
@@ -52,7 +42,7 @@ Sending a Basic Email to Multiple Recipients
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email ":"recipient4@example.com"}]}], "from": {"email": "dx@sendgrid.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
@@ -64,7 +54,7 @@ Sending a Basic Email Using a Template
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "template_id" : "YOUR_TEMPLATE_ID"}'
@@ -76,7 +66,7 @@ Sending a Basic Email at a Scheduled Time
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "send_at" : "UNIX_TIMESTAMP_HERE"}'
@@ -99,7 +89,7 @@ curl --request POST \
 **Step 2: Schedule the email to be sent, using your new batch ID**
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "send_at" : "UNIX_TIMESTAMP_HERE", "batch_id" : "YOUR_BATCH_ID"}'

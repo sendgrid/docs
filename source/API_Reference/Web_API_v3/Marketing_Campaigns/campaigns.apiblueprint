@@ -101,7 +101,7 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "suppression_group_id": "suppression_group_id does not exist"
             "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
-            "": "You've reached your limit of 250 campaigns. Please delete one or more and try again."
+            "": "You've reached your limit of 2500 campaigns. Please delete one or more and try again."
 
 ## Campaigns [/campaigns?limit={limit}&offset={offset}]
 
