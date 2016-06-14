@@ -9,16 +9,6 @@ navigation:
   show: true
 ---
 
-{% warning %}
-**This endpoint is currently in beta!**
-
-Since this is not a general release, we do not recommend POSTing production level traffic through this endpoint or integrating your production servers with this endpoint.
-
-*When this endpoint is ready for general release, your code will require an update in order to use the official URI.*
-
-By using this endpoint, you accept that you may encounter bugs and that the endpoint may be taken down for maintenance at any time. We cannot guarantee the continued availability of this beta endpoint. We hope that you like this new endpoint and we appreciate any <a href="mailto:dx+mail-beta@sendgrid.com">feedback</a> that you can send our way.
-{% endwarning %}
-
 Failed requests will always return an error response, including a response code, a message explaining the reason for the error, and a link to any relevant documentation that may help you troubleshoot the problem.
 
 | Response Code | Reason | Description |
@@ -68,11 +58,11 @@ Personalizations Errors
 {% api_error_table personalizations "" message.personalizations %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "The personalization block is limited to 100 personalizations per API request. You have provided X personalizations. Please consider splitting this into multiple requests and resending your request." "The v3 Mail Send endpoint is only capable of processing 100 individual <code>personalizations</code> objects per request. If you need to send your email to more than 100 different recipients, we recommend that you simply make more than once call. For more information about the <code>personalizations</code> array, and how you can use it to define who you would like you send your email to, and how you would like your email to be processed, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
+  {% api_error_table_message "The personalization block is limited to 1000 personalizations per API request. You have provided X personalizations. Please consider splitting this into multiple requests and resending your request." "The v3 Mail Send endpoint is only capable of processing 1000 individual <code>personalizations</code> objects per request. If you need to send your email to more than 1000 different recipients, we recommend that you simply make more than once call. For more information about the <code>personalizations</code> array, and how you can use it to define who you would like you send your email to, and how you would like your email to be processed, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
 
   {% api_error_table_message "You must have at least one personalization." "Every email you send must have at least one recipient email address included. Recipients are defined in the <code>personalizations</code> array. For more information on how to use <code>personalizations</code> to define who you want to send your email to, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
 
-  {% api_error_table_message "There is a limit of 100 total recipients (to + cc + bcc) per request." "The combined, total number of email recipients may never exceed 100. This includes recipients defined within the <code>to</code>, <code>cc</code>, and <code>bcc</code> parameters. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
+  {% api_error_table_message "There is a limit of 1000 total recipients (to + cc + bcc) per request." "The combined, total number of email recipients may never exceed 1000. This includes recipients defined within the <code>to</code>, <code>cc</code>, and <code>bcc</code> parameters. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
 
   {% api_error_table_message "Each &#34;to&#34; object must at least have an email address and may also contain a name. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "For every recipient that you define within a <code>personalizations.to</code> parameter, you must include one, valid email address. You are not required to include a name." %}
 
