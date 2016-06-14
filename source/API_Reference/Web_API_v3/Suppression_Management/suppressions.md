@@ -151,7 +151,7 @@ When given a list of email addresses and a group ID, this endpoint will return o
   {% parameter group_id Yes 'integer' 'The ID of the group that you would like to search.' %}
 {% endparameters %}
 
-{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions/search %}
+{% apiv3example post POST https://api.sendgrid.com/v3/asm/groups/:group_id/suppressions/search %}
 
 {% apiv3requestbody %}
 {
