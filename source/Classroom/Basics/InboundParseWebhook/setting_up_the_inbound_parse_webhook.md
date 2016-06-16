@@ -5,7 +5,7 @@ st:
 
 seo:
  title: 
- description: Parse your incoming mail with SendGrid's inbound parse webhook
+ description: Process your incoming mail with SendGrid's inbound parse webhook
  keywords: SendGrid, inbound parse, email processing, webhook
 title: Getting Started with SendGrid Inbound Parse Webhook
 weight: 90
