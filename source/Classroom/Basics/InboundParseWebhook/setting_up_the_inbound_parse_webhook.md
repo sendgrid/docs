@@ -62,7 +62,7 @@ To begin processing email using SendGrid’s Inbound Parse Webhook, setup MX Rec
 To test if everything is working, send an email from your email account to *anything*@yourhostname.com.
 
 {% info %}
-The local-part (i.e. anything before @) can be any word or combination because all email for this subdomain will be processed.
+The local-part (i.e. anything before @) can be any word or combination because all email for your hostname will be processed.
 {% endinfo %}
   
   You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) to see if SendGrid parsed incoming email. For more help, see [Debugging a Webhook](https://sendgrid.com/blog/whats-webhook/).
