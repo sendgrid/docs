@@ -7,7 +7,7 @@ seo:
  title: 
  description: Process your incoming mail with SendGrid's inbound parse webhook
  keywords: SendGrid, inbound parse, email processing, webhook
-title: Getting Started with SendGrid Inbound Parse Webhook
+title: Getting Started with SendGrid's Inbound Parse Webhook
 weight: 90
 layout: page
 navigation:
@@ -18,7 +18,7 @@ navigation:
 As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes headers, attachments, and content then POSTs all payloads for a domain or subdomain to your application as JSON or XML. 
 
   {% info %}
-  XML is only available in v2.
+  XML is available only in v2.
   {% endinfo %}
 
 What your application does with that data is up to you. For some ideas of what you can do with Inbound Parse, click [here] (#).
@@ -37,12 +37,12 @@ To begin processing email using SendGrid’s Inbound Parse Webhook, setup MX Rec
 3. Assign the MX record a priority of 10, and point it to the address: `mx.sendgrid.net.`
 
       {% info %}
-      If there is no field for priority, type 10 before the address. e.g. `10 mx.sendgrid.net.`
+      If there is no field for priority, type 10 before the address, e.g. `10 mx.sendgrid.net.`
       {% endinfo %}
 
 ###Pointing to a Hostname and URL
-1. From your SendGrid Dashboard click **Settings**, and then click *Inbound Parse*.
-	 You are now on the Inbound Parse page.
+1. From your SendGrid Dashboard click **Settings**, and then click **Inbound Parse**.
+   You are now on the Inbound Parse page.
 2. Click **Add Host & URL**
    SendGrid will prompt you to enter your hostname and a URL in your application where the Parse Webhook payloads will be POSTed.
 
@@ -51,6 +51,7 @@ To begin processing email using SendGrid’s Inbound Parse Webhook, setup MX Rec
       {% endinfo %}
 
 3. Type your hostname (e.g. parse.yourdomain.com) and public application URL.
+
 4. (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam and reject obvious spam.
 
 5. (Optional) Check **Send Raw** if you would prefer to receive the full MIME message.
