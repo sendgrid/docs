@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-07 April, 2014
+_07 April, 2014_
 
-Recently Yahoo mail domains have battened down the hatches, so to speak, and started to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have started seeing bounce messages with the Reason of:
+Yahoo mail domains have battened down the hatches, so to speak, and started to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have started seeing bounce messages with the Reason of:
 
 **"554 5.7.9 Message not accepted for policy reasons.  See http://postmaster.yahoo.com/errors/postmaster-28.html"  **
 
@@ -33,7 +33,7 @@ For more extended reading, check out this blog post from our friends over at [Wo
 
 
 
-28 March, 2016
+_28 March, 2016_
 
 Yahoo has updated their DMARC policy to utilize **p=reject** for the below low-volume Yahoo international domains. Please make any changes you need to handle these domains in the same way you handle yahoo.com. 
 
