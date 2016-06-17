@@ -64,6 +64,8 @@ Settings
 
 **Status** - On or Off
 
+**Replacement Tag** - If you do not want the open tracking image to be inserted at the end of your email, it is possible to specify an alternative location by using a replacement tag and the open tracking [SMTP API header]({{root_url}}/API_Reference/SMTP_API/apps.html#opentrack).
+
 **Related Information** - [How Google’s Image Caching effects your opens]({{site.blog_url}}/googles-new-image-caching-5-things-need-know/)
 
 {% anchor h2 %}
