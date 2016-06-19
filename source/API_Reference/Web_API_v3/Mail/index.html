@@ -60,7 +60,7 @@ Authentication
 {% endanchor %}
 
 {% codeblock lang:bash %}
-curl =X "POST" "https://api.sendgrid.com/v3/mail/send" -H "Authorization: Bearer YOUR_API_KEY" -H "Content-Type: application/json" -d "[YOUR DATA HERE]"
+curl -X "POST" "https://api.sendgrid.com/v3/mail/send" -H "Authorization: Bearer YOUR_API_KEY" -H "Content-Type: application/json" -d "[YOUR DATA HERE]"
 {% endcodeblock %}
 
 You must authenticate every API request to send mail by including an <code>Authorization</code> header. This header should include the authorization type of <code>Bearer</code>, followed by your API Key that has already been assigned the necessary permissions. Click <a href="{{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html">here</a> for more information.
