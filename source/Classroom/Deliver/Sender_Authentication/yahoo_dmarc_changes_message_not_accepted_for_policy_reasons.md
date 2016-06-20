@@ -13,15 +13,15 @@ navigation:
 
 _07 April, 2014_
 
-Yahoo mail domains have battened down the hatches, so to speak, and started to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have started seeing bounce messages with the Reason of:
+Yahoo mail domains have battened down the hatches, so to speak, and are starting to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have seen an increase in bounce messages with the following explanation:
 
 **"554 5.7.9 Message not accepted for policy reasons.  See http://postmaster.yahoo.com/errors/postmaster-28.html"  **
 
-This is because Yahoo will no longer be accepting messages where the From domain is a Yahoo mail domain, and the message originates from a non-approved Yahoo mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domains. 
+This is because Yahoo no longer accepts messages where the From domain is a Yahoo mail domain, and the message originates from a non-approved Yahoo mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domains. 
 
  
 
-**What this means:** You can no longer send with the From address being anything from a Yahoo address when sending to a domain that checks DMARC before accepting mail. 
+**What this means:** You can no longer send with the From address set as anything from a Yahoo address when sending to a domain that checks DMARC before accepting mail. 
 
 **What you can do:** You will need to change the From address to a non-Yahoo address. We recommend using your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Yahoo address that previously was used in the From field. 
 
