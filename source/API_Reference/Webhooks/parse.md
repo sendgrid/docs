@@ -42,7 +42,7 @@ The request that will be sent to the HTTP endpoint will be encoded as multipart/
 {% endinfo %}
 
 {% info %}
-This table includes a breakdown of terms, not a list of headers.
+This table only includes a breakdown of terms and is not intended to be a comprehensive list of headers.
 {% endinfo %}
  
  <table class="table table-bordered table-striped">
