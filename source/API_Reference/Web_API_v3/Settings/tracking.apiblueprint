@@ -128,6 +128,15 @@ FORMAT: 1A
 
 ### Update Open Tracking Settings [PATCH]
 
+<p>
+  By default, the open tracking image used to determine when an email is opened is inserted at the end of your email. It is possible to specify an alternative location by using a replacement tag and the open tracking <a href="{{root_url}}/API_Reference/SMTP_API/apps.html#opentrack">SMTP API header</a>.
+</p>
+
+<p>
+  If you are sending through the <a href="{{root_url}}/API_Reference/Web_API_v3/Mail/index.html">v3 Mail Send endpoint</a> then you can specify the substitution tag you want to use by setting the <code>enable</code> parameter to <code>true</code> within the <code>open_tracking</code> object and specifying the text you would like to use in the <code>substitution_tag</code> parameter. SendGrid will replace your <code>substitution_tag</code> text with the open tracking pixel wherever you insert it in your email.
+</p>
+
+
 + Request (application/json)
 
     + Body
