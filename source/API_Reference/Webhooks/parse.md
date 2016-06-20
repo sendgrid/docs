@@ -41,7 +41,11 @@ The following parameters will be included in the POST to your callback URL.
 The request that will be sent to the HTTP endpoint will be encoded as multipart/form-data.
 {% endinfo %}
 
-<table class="table table-bordered table-striped">
+{% info %}
+This table only includes a breakdown of terms and is not intended to be a comprehensive list of headers.
+{% endinfo %}
+ 
+ <table class="table table-bordered table-striped">
    <tbody>
       <tr>
          <th>headers</th>
