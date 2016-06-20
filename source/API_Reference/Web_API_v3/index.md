@@ -14,7 +14,7 @@ Hello, World!
 
 {% codeblock lang:bash %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send/beta \
+  --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
   --data '{"personalizations": [{"to": [{"email": "YOU@sendgrid.com"}]}],"from": {"email": "dx@sendgrid.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'

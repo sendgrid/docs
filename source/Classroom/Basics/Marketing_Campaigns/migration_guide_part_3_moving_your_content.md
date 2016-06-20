@@ -11,4 +11,5 @@ navigation:
   show: true
 ---
 
-![]({{root_url}}/images/videocomingsoon.jpg)
+<p><iframe src="https://player.vimeo.com/video/144756876" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></p>
+

@@ -19,7 +19,6 @@ So how do you keep mail to important addresses and domains flowing without havin
 
 The [Address Whitelist Setting](https://app.sendgrid.com/settings/mail_settings) is a a place where you can define specific addresses and even whole domains that you never want us to Drop messages to! 
 
-![]({{root_url}}/images/addresswhitelist.gif)
 
 After adding an address or domain here, you are free to retry attempts to previously dropped addresses. Adding an address here does not automatically reattempt dropped messages, however. 
 
