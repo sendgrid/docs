@@ -51,7 +51,7 @@ This article aims to list and briefly explain the default Tags you may find your
 
 ###Migrating from Legacy Newsletter? Use this handy chart to update your tags!
 
-<table>
+<table class="table">
   <tr><th>Legacy Newsletter Tag</th><th>Marketing Campaigns Tag</th></tr>
   <tr><td><code>[%from_name%]</code></td><td><code>[Sender_Name]</code></td></tr>
   <tr><td><code>[%address%]</code></td><td><code>[Sender_Address]</code></td></tr>
