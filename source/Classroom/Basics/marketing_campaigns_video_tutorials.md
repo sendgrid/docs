@@ -22,7 +22,7 @@ Learn how to set notification addresses properly for Marketing Campaigns, as wel
 
 {% anchor h2 %}Contacts, Lists, and Segments{% endanchor %}
 
-Learn how to upload and customize your Contacts list, as well as create meaningful segments based on specific parameters. For help with errors while uploading Lists, be sure to check out our <a href="/hc/en-us/articles/206317698-Troubleshooting-List-Uploads" target="_blank">troubleshooting guide</a>.</p>
+Learn how to upload and customize your Contacts list, as well as create meaningful segments based on specific parameters. For help with errors while uploading Lists, be sure to check out our <a href="{{root_url}}/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html" target="_blank">troubleshooting guide</a>.</p>
 
 <p><iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 
