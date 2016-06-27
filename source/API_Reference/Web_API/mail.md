@@ -12,9 +12,9 @@ navigation:
 
 This endpoint allows you to send email over SendGrid's Web API v2.
 
-{% info %}
-For information about the latest mail send endpoint, please visit our [Web API v3 mail send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
-{% endinfo %}
+{% warning %}
+For information about the latest mail send endpoint, please visit our [Web API v3 Mail Send documentation]({{root_url}}/docs/API_Reference/Web_API_v3/Mail/index.html). To current v2 users: We encourage [migrating]({{root_url}}/docs/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html) to the new endpoint to take advantage of upcoming features.
+{% endwarning %}
 
 {% info %}
 There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libraries.html) to allow for email sending through the Web API v2. We recommend using these if possible.
