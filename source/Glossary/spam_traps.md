@@ -14,6 +14,6 @@ Spam traps, also called a “honeypots”, are email addresses created (or re-ac
 
 Spam traps are important because so many large ISPs, spam filter providers and Domain Name System [blacklists]({{root_url}}/Glossary/blacklists.html) use them. In short, sending an email to a spam trap can lead directly to being blacklisted by the organization that set up the trap. Remember that blacklisting can ruin a business’s reputation and halt further email deliverability.
 
-This [article]({{site.support_url}}/hc/en-us/articles/200182968) from our Support Help Center goes into specific details about spam traps.
+This [article]({{root_url}}/Classroom/Deliver/Undeliverable_Email/spam_trapped.html) from our Support Help Center goes into specific details about spam traps.
 
 [To get even more information please check out our Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
