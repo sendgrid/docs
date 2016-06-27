@@ -32,7 +32,7 @@ For more information on how you can get started using Two-Factor Authentication,
 How is this release of Two-Factor Authentication different from the Legacy Two-Factor Authentication?
 {% endanchor %}
 
-The previous release of Two-Factor Authentication would generate a 6-digit token delivered to your mobile device via SMS. You would then be required to submit this token to finish logging in.The functionality of the latest release of Two-Factor
+The previous release of Two-Factor Authentication would generate a 6-digit token delivered to your mobile device via SMS. You would then be required to submit this token to finish logging in. The functionality of the latest release of Two-Factor
 
 Authentication remains largely the same. However, it now supports the use of the [Authy App](https://www.authy.com/) to generate a 7-digit authentication token.
 
