@@ -7,7 +7,7 @@ seo:
  title: Using SendGrid with BriteVerify
  description: Verify your SendGrid email list with Briteverify
  keywords: SendGrid email list, SendGrid integrate, Briteverify, Tutorial
-title: Using SendGrid with Briteverify
+title: Using SendGrid with BriteVerify
 weight: 90
 layout: page
 navigation:
@@ -67,5 +67,5 @@ Once the correct API Key is provided, the applications sync, and you may now ver
 <sub>*THE IMPORT SCREEN AFTER API KEY HAS BEEN VERIFIED*</sub>
 
 {% info %}
-For more information or support contact [BrightVerify](http://www.briteverify.com/)
+For more information or support contact [BriteVerify](http://www.briteverify.com/)
 {% endinfo%}
