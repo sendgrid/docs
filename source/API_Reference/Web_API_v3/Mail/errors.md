@@ -11,22 +11,83 @@ navigation:
 
 Failed requests will always return an error response, including a response code, a message explaining the reason for the error, and a link to any relevant documentation that may help you troubleshoot the problem.
 
-| Response Code | Reason | Description |
-|---|---|---|
-| 2xx | 2xx responses indicate a successful request | The request that you made is valid and successful. |
-| 200 | OK | Your message is valid, but it is not queued to be delivered. |
-| 202 | ACCEPTED | Your message is both valid, and queued to be delivered. |
-| 4xx | 4xx responses indicate an error with the request | There was a problem with your request. |
-| 400 | BAD REQUEST |  |
-| 401 | UNAUTHORIZED | You do not have authorization to make the request. |
-| 403 | FORBIDDEN |  |
-| 404 | NOT FOUND | The resource you tried to locate could not be found or does not exist. |
-| 405 | METHOD NOT ALLOWED |  |
-| 413 | PAYLOAD TOO LARGE | The JSON payload you have included in your request is too large. |
-| 429 | TOO MANY REQUESTS | The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html) |
-| 5xx | 5xx respones indicate an error made by SendGrid | An error occurred when SendGrid attempted to processes it. |
-| 500 | SERVER UNAVAILABLE | An error occurred on a SendGrid server. |
-| 503 | SERVICE NOT AVAILABLE | The SendGrid v3 Web API is not available. |
+<table class="table">
+  <tr>
+    <th>Response Code</th>
+    <th>Reason</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>2xx</td>
+    <td>2xx responses indicate a successful request</td>
+    <td>The request that you made is valid and successful.</td>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>OK</td>
+    <td>Your message is valid, but it is not queued to be delivered.</td>
+  </tr>
+  <tr>
+    <td>202</td>
+    <td>ACCEPTED</td>
+    <td>Your message is both valid, and queued to be delivered.</td>
+  </tr>
+  <tr>
+    <td>4xx</td>
+    <td>4xx responses indicate an error with the request</td>
+    <td>There was a problem with your request.</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>BAD REQUEST</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>401</td>
+    <td>UNAUTHORIZED</td>
+    <td>You do not have authorization to make the request.</td>
+  </tr>
+  <tr>
+    <td>403</td>
+    <td>FORBIDDEN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>404</td>
+    <td>NOT FOUND</td>
+    <td>The resource you tried to locate could not be found or does not exist.</td>
+  </tr>
+  <tr>
+    <td>405</td>
+    <td>METHOD NOT ALLOWED</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>413</td>
+    <td>PAYLOAD TOO LARGE</td>
+    <td>The JSON payload you have included in your request is too large.</td>
+  </tr>
+  <tr>
+    <td>429</td>
+    <td>TOO MANY REQUESTS</td>
+    <td>The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html)</td>
+  </tr>
+  <tr>
+    <td>5xx</td>
+    <td>5xx respones indicate an error made by SendGrid</td>
+    <td>An error occurred when SendGrid attempted to processes it.</td>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>SERVER UNAVAILABLE</td>
+    <td>An error occurred on a SendGrid server.</td>
+  </tr>
+  <tr>
+    <td>503</td>
+    <td>SERVICE NOT AVAILABLE</td>
+    <td>The SendGrid v3 Web API is not available.</td>
+  </tr>
+</table>
 
 Following is a complete list of the possible parameter level errors that you may receive when making a request to the v3 Mail Send endpoint. Each error will include the field that caused the error (e.g. "personalizations" or "personalizations.to"), a brief message explaining the cause of the error, and a link to the error in the table below. Here you will find links to relevant documentation for each error.
 

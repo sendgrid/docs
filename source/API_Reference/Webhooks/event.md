@@ -919,11 +919,10 @@ Example event from a standard (non-A/B test) campaign send:
   "event": "processed",
   "marketing_campaign_id": 12345,
   "marketing_campaign_name": "campaign name",
-  "nlvx_campaign_id": 12345,
-  "nlvx_user_id": 12345,
   "post_type": "event",
   "sg_event_id": "sendgrid_internal_event_id",
   "sg_message_id": "sendgrid_internal_message_id",
+  "sg_user_id": 12345,
   "smtp-id": "",
   "timestamp": 1442349428
 }
@@ -943,12 +942,11 @@ Example event from an A/B Test:
   "marketing_campaign_id": 23314,
   "marketing_campaign_name": "unique args ab",
   "marketing_campaign_version": "B",
-  "nlvx_campaign_id": 23314,
-  "nlvx_campaign_split_id": 13471,
-  "nlvx_user_id": 939115,
+  "marketing_campaign_split_id": 13471,
   "post_type": "event",
   "sg_event_id": "qNOzbkTuTNCdxa1eXEpnXg",
   "sg_message_id": "5lFl7Fr1Rjme_EyzNNB_5A.stfilter-015.5185.55F883172.0",
+  "sg_user_id": 939115,
   "smtp-id": "<5lFl7Fr1Rjme_EyzNNB_5A@stismtpd-006.sjc1.sendgrid.net>",
   "timestamp": 1442349848
 }
@@ -965,12 +963,11 @@ Example event from the winning phase of an A/B Test:
   "event": "delivered",
   "marketing_campaign_id": 23314,
   "marketing_campaign_name": "unique args ab",
-  "nlvx_campaign_id": 23314,
-  "nlvx_user_id": 939115,
   "post_type": "event",
   "response": "250 Ok ",
   "sg_event_id": "X2M1IUfMRhuAhWM0CbmFqQ",
   "sg_message_id": "fPJrJPIRTxC_obpgfTy74w.stfilter-015.5185.55F883564.0",
+  "sg_user_id": 12345,
   "smtp-id": "",
   "timestamp": 1442349911
 }

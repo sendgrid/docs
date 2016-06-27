@@ -31,4 +31,4 @@ Addresses appearing on the **Blocks** list do _not_ get suppressed like other li
 
  
 
-You may also want to read through our  [SendGrid Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) documentation for best sending practices and tips.8
+You may also want to read through our [SendGrid Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) documentation for best sending practices and tips.
