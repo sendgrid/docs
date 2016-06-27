@@ -21,7 +21,7 @@ If you are a Heroku user using [the SendGrid add-on](https://addons.heroku.com/s
 >2. Click on "settings" and then click “reveal config vars”
 
 
-#Reset your Sendgrid add-on password:
+#Reset your SendGrid add-on password:
 
 Go to the [Password Reset page](https://sendgrid.com/user/forgotPassword) and enter your SendGrid username, and click submit. An email will be sent to the email address on file with instructions on how to reset your password. If you don't know your SendGrid username, use the steps detailed above to find your username through the Heroku portal. Keep in mind that resetting your Sendgrid password may break any integrations you have that are currently using the exisiting credentials for authentication.  
 
