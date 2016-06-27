@@ -13,7 +13,7 @@ navigation:
 This endpoint allows you to send email over SendGrid's Web API v2.
 
 {% warning %}
-For information about the latest mail send endpoint, please visit our [Web API v3 Mail Send documentation]({{root_url}}/docs/API_Reference/Web_API_v3/Mail/index.html). To current v2 users: We encourage [migrating]({{root_url}}/docs/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html) to the new endpoint to take advantage of upcoming features.
+For information about the latest mail send endpoint, please visit our [Web API v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html). To current v2 users: We encourage [migrating]({{root_url}}/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html) to the new endpoint to take advantage of upcoming features.
 {% endwarning %}
 
 {% info %}
