@@ -44,6 +44,8 @@ HTTP/1.1 200
 
 {% endapiv3example %}
 
+*****
+
 {% anchor h2 %}
 Deny an access attempt [DELETE]
 {% endanchor %}
@@ -62,6 +64,8 @@ HTTP/1.1 204
 
 {% endapiv3example %}
 
+*****
+
 {% anchor h2 %}
 Approve an access attempt [PATCH]
 {% endanchor %}
@@ -73,10 +77,313 @@ Approve an access attempt [PATCH]
 {% endparameters %}
 
 {% v3response %}
-HTTP1.1 201
+HTTP/1.1 201
 {
   "id": 10
 }
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Resend a teammate invite [POST]
+{% endanchor %}
+
+Teammate invitations expire after 7 days.
+
+{% apiv3example post POST https://api.sendgrid.com/v3/teammates/pending/{token}/resend %}
+
+{% parameters get %}
+ {% parameter token yes 'String' 'The token for the invite that you want to resend.' %}
+{% endparameters %}
+
+{% v3response %}
+HTTP/1.1 200
+{
+  "pending_id": "abc123abc",
+  "email": "teammate1@example.com",
+  "scopes": [
+    "user.profile.read",
+    "user.profile.update"
+  ],
+  "is_admin": false
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Retrieve a list of all pending teammates [GET]
+{% endanchor %}
+
+Each teammate invitation is valid for 7 days. Users may resend the invite to refresh the expiration date.
+
+{% apiv3example get GET https://api.sendgrid.com/v3/teammates/pending %}
+
+{% v3response %}
+HTTP/1.1 200
+{
+  "result": [
+    {
+      "email": "user1@example.com",
+      "scopes": [
+        "user.profile.read",
+        "user.profile.edit"
+      ],
+      "is_admin": false,
+      "pending_id": "abcd123abc",
+      "expiration_date": 1456424263
+    },
+    {
+      "email": "user2@example.com",
+      "scopes": [],
+      "is_admin": true,
+      "pending_id": "bcde234bcd",
+      "expiration_date": 1456424263
+    }
+  ]
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Delete a pending teammate invite
+{% endanchor %}
+
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/teammates/pending/{token} %}
+
+{% parameters get %}
+ {% parameter token yes 'String' 'The token for the invite that you want to delete.' %}
+{% endparameters %}
+
+{% v3response %}
+HTTP/1.1 204
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Invite a teammate [POST]
+{% endanchor %}
+
+{% apiv3example post POST https://api.sendgrid.com/v3/teammates %}
+
+{% apiv3requestbody %}
+{
+  "email": "teammate1@example.com",
+  "scopes": [
+    "user.profile.read",
+    "user.profile.update"
+  ],
+  "is_admin": false
+}
+{% endapiv3requestbody %}
+
+{% v3response %}
+HTTP/1.1 201
+{
+  "pending_id": "abc123abc",
+  "email": "teammate1@example.com",
+  "scopes": [
+    "user.profile.read",
+    "user.profile.update"
+  ],
+  "is_admin": false
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Retrieve a list of all teammates [GET]
+{% endanchor %}
+
+{% info %}
+Each account may have no more than 1,000 teammates.
+{% endinfo %}
+
+{% apiv3example get GET https://api.sendgrid.com/v3/teammates %}
+
+{% parameters get %}
+ {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}
+ {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}
+{% endparameters %}
+
+{% v3response %}
+HTTP/1.1 200
+{
+  "results": [
+    {
+      "username": "teammate1",
+      "email": "teammate1@example.com",
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "user_type": "owner",
+      "is_admin": true,
+      "phone": "123-345-3453",
+      "website": "www.example.com",
+      "company": "ACME Inc.",
+      "address": "123 Acme St",
+      "address2": "",
+      "city": "City",
+      "state": "CA",
+      "country": "USA",
+      "zip": "12345"
+    },
+    {
+      "username": "teammate2",
+      "email": "teammate2@example.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "user_type": "teammate",
+      "is_admin": false,
+      "phone": "123-345-3453",
+      "website": "www.example.com",
+      "company": "ACME Inc.",
+      "address": "123 Acme St",
+      "address2": "",
+      "city": "City",
+      "state": "CA",
+      "country": "USA",
+      "zip": "12345"
+    },
+    {
+      "username": "teammate3",
+      "email": "teammate3@example.com",
+      "first_name": "Steve",
+      "last_name": "Doe",
+      "user_type": "admin",
+      "is_admin": true,
+      "phone": "123-345-3453",
+      "website": "www.example.com",
+      "company": "ACME Inc.",
+      "address": "123 Acme St",
+      "address2": "",
+      "city": "City",
+      "state": "CA",
+      "country": "USA",
+      "zip": "12345"
+    }
+  ]
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Retrieve a specific teammate [GET]
+{% endanchor %}
+
+{% apiv3example get GET https://api.sendgrid.com/v3/teammates/{username} %}
+
+{% parameters get %}
+ {% parameter username Yes 'String' 'The username of the teammate that you want to retrieve.' %}
+{% endparameters %}
+
+{% v3response %}
+HTTP/1.1 200
+{
+  "username": "teammate1",
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "email": "teammate1@example.com",
+  "scopes": [
+    "user.profile.read",
+    "user.profile.update",
+    "..."
+  ],
+  "user_type": "admin",
+  "is_admin": true,
+  "phone": "123-345-3453",
+  "website": "www.example.com",
+  "company": "ACME Inc.",
+  "address": "123 Acme St",
+  "address2": "",
+  "city": "City",
+  "state": "CA",
+  "country": "USA",
+  "zip": "12345"
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Update teammate's permissions
+{% endanchor %}
+
+To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to false and pass in all the scopes that a teammate should have.
+
+Only the parent user or other admin teammates can update another teammate's permissions. However, admin users can only update permissions.
+
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/teammates/{username} %}
+
+{% apiv3requestbody %}
+{
+  "scopes": [
+    "user.profile.read",
+    "user.profile.edit"
+  ],
+  "is_admin": false
+}
+{% endapiv3requestbody %}
+
+{% v3response %}
+HTTP/1.1 200
+{
+  "username": "teammate1",
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "email": "teammate1@example.com",
+  "scopes": [
+    "user.profile.read",
+    "user.profile.edit"
+  ],
+  "user_type": "teammate",
+  "is_admin": false,
+  "phone": "123-345-3453",
+  "website": "www.example.com",
+  "company": "ACME Inc.",
+  "address": "123 Acme St",
+  "address2": "",
+  "city": "City",
+  "state": "CA",
+  "country": "USA",
+  "zip": "12345"
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+*****
+
+{% anchor h2 %}
+Delete a teammate
+{% endanchor %}
+
+{% info %}
+Only the parent user or an admin teammate can delete another teammate.
+{% endinfo %}
+
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/teammates/{username} %}
+
+{% v3response %}
+HTTP/1.1 204
 {% endv3response %}
 
 {% endapiv3example %}
