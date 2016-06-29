@@ -13,6 +13,8 @@ navigation:
 Retrieve all access requests [GET]
 {% endanchor %}
 
+This endpoint allows you to retrieve a list of all recent access requests.
+
 {% apiv3example get GET https://api.sendgrid.com/v3/scopes/requests %}
 
 {% parameters get %}
@@ -50,7 +52,7 @@ HTTP/1.1 200
 Deny an access attempt [DELETE]
 {% endanchor %}
 
-**Note: Only teammate admins can call this endpoint to approve another teammate's access request.**
+This endpoint allows you to deny an attempt to access your account.
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/scopes/requests/{request_id} %}
 
@@ -69,6 +71,10 @@ HTTP/1.1 204
 {% anchor h2 %}
 Approve an access attempt [PATCH]
 {% endanchor %}
+
+This endpoint allows you to approve an access attempt.
+
+**Note: Only teammate admins can call this endpoint to approve another teammate's access request.**
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/scopes/requests/approve/{id} %}
 
@@ -91,7 +97,9 @@ HTTP/1.1 201
 Resend a teammate invite [POST]
 {% endanchor %}
 
-Teammate invitations expire after 7 days.
+This endpoint allows you to resend a teammate invite.
+
+**Note: Teammate invitations will expire after 7 days. Resending an invite will reset the expiration date.**
 
 {% apiv3example post POST https://api.sendgrid.com/v3/teammates/pending/{token}/resend %}
 
@@ -120,7 +128,9 @@ HTTP/1.1 200
 Retrieve a list of all pending teammates [GET]
 {% endanchor %}
 
-Each teammate invitation is valid for 7 days. Users may resend the invite to refresh the expiration date.
+This endpoint allows you to retrieve a list of all pending teammate invitations.
+
+**Note: Each teammate invitation is valid for 7 days. Users may resend the invite to refresh the expiration date.**
 
 {% apiv3example get GET https://api.sendgrid.com/v3/teammates/pending %}
 
@@ -157,6 +167,8 @@ HTTP/1.1 200
 Delete a pending teammate invite
 {% endanchor %}
 
+This endpoint allows you to delete a pending teammate invite.
+
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/teammates/pending/{token} %}
 
 {% parameters get %}
@@ -174,6 +186,8 @@ HTTP/1.1 204
 {% anchor h2 %}
 Invite a teammate [POST]
 {% endanchor %}
+
+This endpoint allows you to send a teammate invitation via email with a predefined set of scopes, or permissions. A teammate invite will expire after 7 days, but you may resend the invite at any time to reset the expiration date.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/teammates %}
 
@@ -208,6 +222,8 @@ HTTP/1.1 201
 {% anchor h2 %}
 Retrieve a list of all teammates [GET]
 {% endanchor %}
+
+This endpoint allows you to retrieve a list of all current teammates.
 
 {% info %}
 Each account may have no more than 1,000 teammates.
@@ -287,6 +303,8 @@ HTTP/1.1 200
 Retrieve a specific teammate [GET]
 {% endanchor %}
 
+This endpoint allows you to retrieve a specific teammate by username.
+
 {% apiv3example get GET https://api.sendgrid.com/v3/teammates/{username} %}
 
 {% parameters get %}
@@ -326,6 +344,8 @@ HTTP/1.1 200
 {% anchor h2 %}
 Update teammate's permissions
 {% endanchor %}
+
+This endpoint allows you to update a teammate's permissions.
 
 To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to false and pass in all the scopes that a teammate should have.
 
@@ -375,6 +395,8 @@ HTTP/1.1 200
 {% anchor h2 %}
 Delete a teammate
 {% endanchor %}
+
+This endpoint allows you to delete a teammate.
 
 {% info %}
 Only the parent user or an admin teammate can delete another teammate.
