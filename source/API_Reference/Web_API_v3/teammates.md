@@ -9,6 +9,18 @@ navigation:
   show: true
 ---
 
+* [Retrieve all access requests](#-Retrieve-all-access-requests-GET)
+* [Deny an access request](#-Deny-an-access-request-DELETE)
+* [Approve an access request](#-Approve-an-access-request-PATCH)
+* [Resend a teammate invite](#-Resend-a-teammate-invite-POST)
+* [Retrieve a list of all pending teammates](#-Retrieve-a-list-of-all-pending-teammates-GET)
+* [Delete a pending teammate invite](#-Delete-a-pending-teammate-invite-DELETE)
+* [Invite a teammate](#-Invite-a-teammate-POST)
+* [Retrieve a list of all teammates](#-Retrieve-a-list-of-all-teammates-GET)
+* [Retrieve a specific teammate](#-Retrieve-a-specific-teammate-GET)
+* [Update teammate's permissions](#-Update-teammates-permissions-PATCH)
+* [Delete a teammate](#-Delete-a-teammate-DELETE)
+
 {% anchor h2 %}
 Retrieve all access requests [GET]
 {% endanchor %}
@@ -49,7 +61,7 @@ HTTP/1.1 200
 *****
 
 {% anchor h2 %}
-Deny an access attempt [DELETE]
+Deny an access request [DELETE]
 {% endanchor %}
 
 This endpoint allows you to deny an attempt to access your account.
@@ -69,7 +81,7 @@ HTTP/1.1 204
 *****
 
 {% anchor h2 %}
-Approve an access attempt [PATCH]
+Approve an access request [PATCH]
 {% endanchor %}
 
 This endpoint allows you to approve an access attempt.
@@ -164,7 +176,7 @@ HTTP/1.1 200
 *****
 
 {% anchor h2 %}
-Delete a pending teammate invite
+Delete a pending teammate invite [DELETE]
 {% endanchor %}
 
 This endpoint allows you to delete a pending teammate invite.
@@ -342,14 +354,18 @@ HTTP/1.1 200
 *****
 
 {% anchor h2 %}
-Update teammate's permissions
+Update teammate's permissions [PATCH]
 {% endanchor %}
 
 This endpoint allows you to update a teammate's permissions.
 
 To turn a teammate into an admin, the request body should contain an `is_admin` set to `true`. Otherwise, set `is_admin` to false and pass in all the scopes that a teammate should have.
 
-Only the parent user or other admin teammates can update another teammate's permissions. However, admin users can only update permissions.
+{% info %}
+Only the parent user or other admin teammates can update another teammate's permissions.
+
+Admin users can only update permissions.
+{% endinfo %}
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/teammates/{username} %}
 
@@ -393,7 +409,7 @@ HTTP/1.1 200
 *****
 
 {% anchor h2 %}
-Delete a teammate
+Delete a teammate [DELETE]
 {% endanchor %}
 
 This endpoint allows you to delete a teammate.
