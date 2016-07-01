@@ -16,7 +16,7 @@ navigation:
 {% warning %}
 Two-Factor authentication is currently in beta.
 
-If you encounter any problems when using this feature, please reach out to our [Customer Support team](https://support.sendgrid.com/hc/en-us). If you would like to provide any feedback, please reach out to [email address]
+If you encounter any problems when using this feature, please reach out to our [Customer Support team](https://support.sendgrid.com/hc/en-us).
 
 You can find answers to some frequently asked questions [here]({{root_url}}/Classroom/Basics/Security/two_factor_authentication_faq.html).
 {% endwarning %}
