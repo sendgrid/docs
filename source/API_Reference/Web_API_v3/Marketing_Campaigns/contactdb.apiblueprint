@@ -654,11 +654,11 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 ### Search with conditions [POST]
 
 <p>
-  Search using segment conditions. Body contains a json object with <code>conditions</code>, a list of conditions as described below, and an optional <code>list_id</code>, which is a valid list id for a list to limit the search on.
+  Search using segment conditions. Body contains a JSON object with <code>conditions</code>, a list of conditions as described below, and an optional <code>list_id</code>, which is a valid list ID for a list to limit the search on.
 </p>
 
 <p>
-  Valid operators for create and update depend on the type of the field you are search.
+  Valid operators for create and update depend on the type of the field you are searching for.
 </p>
 
 <ul>
