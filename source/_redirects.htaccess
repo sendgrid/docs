@@ -259,6 +259,7 @@ Redirect 301 /Classroom/Basics/what_is_the_difference_between_marketing_and_tran
 Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html http://sendgrid.com/docs/Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html
 Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
+Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
 
 #######
 #
@@ -598,7 +599,7 @@ Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide
 Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/multifactor_authentication.html
+Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
@@ -606,6 +607,8 @@ Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
 
 #######
