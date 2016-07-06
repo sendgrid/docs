@@ -23,7 +23,7 @@ After selecting the link you’ll be in the Manage Product page specific to Send
 
 From here you can select the “settings” tab which will display the below information. Here is where you can reset your password for SendGrid. Please keep in mind this is for the parent access and not sub user access that may have been added via the SendGrid UI.
 
-&nbsp;
+ 
 
-&nbsp;
+ 
 

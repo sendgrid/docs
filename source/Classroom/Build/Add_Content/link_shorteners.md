@@ -33,7 +33,7 @@ Here are some alternative ways to maintain the aesthetic that link shorteners pr
 
 > Get your own link shortener
 >
-> Rather than using a general purpose public link shortener, use your own private one! &nbsp;Assuming you operate an honest business, your own private link shortener is unlikely to be blacklisted, and you can name it whatever you want. This also means your brand doesn't get hidden behind the link you actually want your customers to click on.
+> Rather than using a general purpose public link shortener, use your own private one!  Assuming you operate an honest business, your own private link shortener is unlikely to be blacklisted, and you can name it whatever you want. This also means your brand doesn't get hidden behind the link you actually want your customers to click on.
 >
 > Use HTML
 >

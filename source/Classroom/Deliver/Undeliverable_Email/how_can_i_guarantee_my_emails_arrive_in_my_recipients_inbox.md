@@ -13,7 +13,6 @@ navigation:
 
 Unfortunately there is no surefire way to ensure your messages arrive in the inbox of your recipients. There are however industry standards and best practices you can follow to give your emails the highest likelihood of meeting all mail provider and spam filter expectations.
 
-&nbsp;
+ 
 
-Please refer to our&nbsp; [SendGrid Deliverability 101](http://support.sendgrid.com/entries/21194967-deliverability-101)&nbsp;documentation for best sending practices and tips.
-
+Please refer to our  [SendGrid Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) documentation for best sending practices and tips.

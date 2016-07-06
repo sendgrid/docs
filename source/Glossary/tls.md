@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Transport Layer Security
 navigation:
-  show: true
+  show: false
 seo:
   title: Transport Layer Security
   override: true

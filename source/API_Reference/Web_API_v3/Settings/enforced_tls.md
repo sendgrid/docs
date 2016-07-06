@@ -45,7 +45,12 @@ Change the Enforced TLS settings
   {% parameter require_valid_cert False 'true or false' 'Require certificates to be valid' %}
 {% endparameters %}
 
-{% apiv3example patch PATCH https://api.sendgrid.com/v3/user/settings/enforced_tls require_tls=true %}
+{% apiv3example patch PATCH https://api.sendgrid.com/v3/user/settings/enforced_tls %}
+{% apiv3requestbody %}
+{
+    "require_tls": true
+}
+{% endapiv3requestbody %}
 {% v3response %}
 HTTP/1.1 200
 {

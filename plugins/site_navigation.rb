@@ -60,7 +60,6 @@ module Jekyll
 
       sorted_tree = tree_array.sort_by {|node| [ -(node[:weight]), node[:base] ]}
 
-      puts "generating nav tree for #{@page_url}"
       files_first_traverse "", sorted_tree, 0
     end
 

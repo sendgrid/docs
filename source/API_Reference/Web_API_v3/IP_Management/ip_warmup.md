@@ -20,7 +20,8 @@ An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider
 {% anchor h2 %}
 GET
 {% endanchor %}
-Get all IPs that are currently warming up.
+
+Get all IPs that are currently warming up. The value returned for "start_date" represents the date that the IP was entered into warmup, and is always formatted as a Unix timestamp.
 
 {% apiv3example get-all GET https://api.sendgrid.com/v3/ips/warmup %}
   {% v3response %}
@@ -88,7 +89,7 @@ DELETE
 {% endanchor %}
 Remove an IP from warmup.
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup/000.000.000.000 %}
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup/0.0.0.0 %}
 {% v3response %}
 HTTP/1.1 204 NO CONTENT (OK)
 {% endv3response %}

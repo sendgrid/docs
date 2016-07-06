@@ -83,6 +83,7 @@ Obtain a complete list of all customers.
 
 {% parameters get %}
  {% parameter 'task' 'Yes' 'Must be set to **get** in order to retrieve user information' %}
+ {% parameter 'id' 'No' 'Search filter, id customer that is registered under you' %}
  {% parameter 'username' 'No' 'Search filter, customer that is registered under you' %}
  {% parameter 'email' 'No' 'Search filter, email address customer was registered with' %}
  {% parameter 'first_name' 'No' 'Search filter, first name of customer' %}

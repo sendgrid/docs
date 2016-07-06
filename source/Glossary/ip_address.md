@@ -7,7 +7,7 @@ title: IP Address
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An Internet Protocol (IP) Address address is a unique numerical address that defines and internet location. In the more familiar, and recognizable, 4th version these addresses are written as 4 sets of numbers separated by periods. For example, 127.0.0.1 is an IP address. An IP address can be dynamic, meaning it changes each time an email message is deployed, or it can be static meaning it does not change. A static IP address is recommended for senders of commercial email.
@@ -22,5 +22,5 @@ If you are on a Pro 100k or above plan you can see your IP reputation and IP add
 
 For more information:
 
-* [SendGrid Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
+* [SendGrid Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
 * [Whitelabeling your IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html)

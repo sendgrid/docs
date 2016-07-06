@@ -7,7 +7,7 @@ title: DKIM
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 [DKIM]({{site.blog_url}}/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
@@ -24,7 +24,7 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-When you utilize [whitelabeling]({{site.support_url}}/hc/en-us/articles/200548228), you have to create DKIM DNS records. You can even [customize your DKIM]({{site.support_url}}/hc/en-us/articles/204116386) records. 
+When you utilize [whitelabeling]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html), you have to create DKIM DNS records. You can even customize your DKIM records. 
 
 What a basic DKIM record should look like:
 ```
@@ -37,6 +37,6 @@ CNAME value: dkim.sendgrid.net
 ```
 Additional resources: 
 
-* [Set up custom DKIM]({{site.support_url}}/hc/en-us/articles/204116386)
+* [Internet Standards (SPF and DKIM) and Deliverability]({{root_url}}/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html)
 * [the DKIM.org website](http://www.dkim.org/)
-* [DNS Records and Underscores]({{site.support_url}}/hc/en-us/articles/200185218)
+* [DNS Records and Underscores]({{root_url}}/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html)

@@ -11,14 +11,14 @@ navigation:
   show: true
 ---
 
-If you are experiencing issues with the Click Tracking application not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our Click Tracking app to find and replace them. Links must be within an HTML `<a>` tag and be proceeded by **`"http://`** &nbsp;or&nbsp; **`"https://`**  
-Here are some example links that will be properly replaced by our Click Tracking app:
+If you are experiencing issues with the click tracking setting not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our click tracking setting to find and replace them. Links must be within an HTML `<a>` tag, must be quoted, must not contain spaces around the `=` in the `href` attribute, and must be proceeded by **`"http://`** or **`"https://`**
+Here are some example links that will be properly replaced by our click tracking app:
 
 `<a href="http://www.sendgrid.com">SendGrid</a>`
 
-`<a href="http://sendgrid.com">SendGrid</a>`
+`<a href="https://sendgrid.com">SendGrid</a>`
 
-&nbsp;The following links, even though they may still resolve, will not be captured or replaced by our Click Tracking system:&nbsp;
+The following links, even though they may still resolve, will not be captured or replaced by our click tracking system:
 
 `<a href="sendgrid.com">SendGrid</a>`
 
@@ -26,16 +26,18 @@ Here are some example links that will be properly replaced by our Click Tracking
 
 `<a href=http://www.sendgrid.com>SendGrid</a>`
 
-&nbsp;
+`<a href= http://www.sendgrid.com>SendGrid</a>`
+
 
 {% info %}
-_Please note: If you are in the habit of BASE64 encoding your email content we will be unable to detect the encoded `<a>` tags and overwrite them, so Clicks will not be tracked in this case._
+_Please note: If you are in the habit of BASE64 encoding your email content we will be unable to detect the encoded `<a>` tags and overwrite them, so clicks will not be tracked in this case._
 {% endinfo %}
 
-&nbsp;
+Click tracking can be turned off for individual links by including the `clicktracking=off` attribute inside the anchor of an HTML link *before* the `href`. For example, `<a clicktracking=off href="http://example.com">link text</a>` would not be tracked.
 
-If you have a Silver package or higher and you have Whitelabeled your sending IP address, the replaced Click Tracking links lie under the Whitelabeled subdomain. Silver and higher accounts that have not Whitelabeled, Bronze accounts, and Free accounts have Click Tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
 
-&nbsp;
+If you have a Pro 100K package or higher and you have whitelabeled your sending IP address, the replaced click tracking links lie under the whitelabeled subdomain. Pro 100K and higher packages that have not whitelabeled, Essentials packages, and Free packages have click tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
 
-If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here](http://support.sendgrid.com/hc/en-us/articles/204074166-Click-tracking-links-have-stopped-working-) for more troubleshooting tips.
+
+
+If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here]({{root_url}}/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html) for more troubleshooting tips.

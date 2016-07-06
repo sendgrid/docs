@@ -7,7 +7,7 @@ title: Reputation Monitoring
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 You will notice on your [Account Overview]({{site.app_url}}) page you will see your IP reputation score, which will be somewhere from 0% to 100%. This score will go up or down based on your [bounce]({{root_url}}/Glossary/bounces.html), [block]({{root_url}}/Glossary/blocks.html), [spam]({{root_url}}/Glossary/spam_reports.html) and invalid rates.

@@ -11,12 +11,12 @@ navigation:
   show: true
 ---
 
-We're sorry to see anyone leave, but things happen and we totally understand. If you want to cancel your account, you can [do it&nbsp;here](https://app.sendgrid.com/settings/billing).&nbsp;
+We're sorry to see anyone leave, but things happen and we totally understand. If you want to cancel your account, you can [do it here](https://app.sendgrid.com/settings/billing). 
 
-Cancellations take full effect on the first day of the next calendar month, at which point your account will still be usable, but will be at the Free package level. &nbsp;
+Cancellations take full effect on the first day of the next calendar month, at which point your account will still be usable, but will be at the Free package level.  
 
-&nbsp;
+ 
 
-We wish you the best of&nbsp;luck in your future email endeavors, &nbsp;we'll always have Paris. <3
+We wish you the best of luck in your future email endeavors,  we'll always have Paris. <3
 
-&nbsp;
+ 

@@ -6,8 +6,8 @@ navigation:
   show: true
 ---
 
-{% info %} 
-Available to all accounts except Lite.
+{% info %}
+Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 {% endinfo %}
 
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. Common uses of this data are to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
@@ -45,7 +45,7 @@ If you wish to receive encrypted posts, we require that your callback URL suppor
 Requests
 {% endanchor %}
 
-You will receive a **HTTP POST** containing a JSON array of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options.
+You will receive an **HTTP POST** containing a JSON array of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options.
 
 {% info %}
 Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second.
@@ -191,7 +191,7 @@ The following parameters are sent with delivery events: bounce, deferred, delive
          <td>Whether or not TLS was used when sending the email.</td>
       </tr>
       <tr>
-         <td>cert_error</td>
+         <td>cert_err</td>
          <td>Whether there was a certificate error on the receiving side.</td>
       </tr>
    </tbody>
@@ -234,7 +234,7 @@ The following parameters are sent with engagement events: click, open, spamrepor
          <td>Whether or not TLS was used when sending the email.</td>
       </tr>
       <tr>
-         <td>cert_error</td>
+         <td>cert_err</td>
          <td>Whether there was a certificate error on the receiving side.</td>
       </tr>
    </tbody>
@@ -490,7 +490,7 @@ Bounce
   "type":"bounce",
   "ip" : "127.0.0.1",
   "tls" : "1",
-  "cert_error" : "0"
+  "cert_err" : "0"
 }
 {% endcodeblock %}
 
@@ -517,6 +517,10 @@ Click
    </tbody>
 </table>
 
+{% info %}
+`url_offset` gives you more information about the link that was clicked. Links are indexed beginning at 0. `index` indicates which link was clicked based on that index. The type of link can be either text, HTML, or a header. `type` indicates the type of the link that was clicked.
+{% endinfo %}
+
 {% codeblock lang:json %}
 {
   "sg_event_id":"sendgrid_internal_event_id",
@@ -527,6 +531,10 @@ Click
   "email":"email@example.com",
   "timestamp":1249948800,
   "url":"http://yourdomain.com/blog/news.html",
+  "url_offset": {
+    "index": 0,
+    "type": "html"
+  },
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
   "newsletter": {
@@ -583,7 +591,7 @@ Deferred
   "asm_group_id": 1,
   "ip" : "127.0.0.1",
   "tls" : "0",
-  "cert_error" : "0"
+  "cert_err" : "0"
 }
 {% endcodeblock %}
 
@@ -629,7 +637,7 @@ Delivered
   "asm_group_id": 1,
   "ip" : "127.0.0.1",
   "tls" : "1",
-  "cert_error" : "1"
+  "cert_err" : "1"
 }
 {% endcodeblock %}
 
@@ -911,11 +919,10 @@ Example event from a standard (non-A/B test) campaign send:
   "event": "processed",
   "marketing_campaign_id": 12345,
   "marketing_campaign_name": "campaign name",
-  "nlvx_campaign_id": 12345,
-  "nlvx_user_id": 12345,
   "post_type": "event",
   "sg_event_id": "sendgrid_internal_event_id",
   "sg_message_id": "sendgrid_internal_message_id",
+  "sg_user_id": 12345,
   "smtp-id": "",
   "timestamp": 1442349428
 }
@@ -935,12 +942,11 @@ Example event from an A/B Test:
   "marketing_campaign_id": 23314,
   "marketing_campaign_name": "unique args ab",
   "marketing_campaign_version": "B",
-  "nlvx_campaign_id": 23314,
-  "nlvx_campaign_split_id": 13471,
-  "nlvx_user_id": 939115,
+  "marketing_campaign_split_id": 13471,
   "post_type": "event",
   "sg_event_id": "qNOzbkTuTNCdxa1eXEpnXg",
   "sg_message_id": "5lFl7Fr1Rjme_EyzNNB_5A.stfilter-015.5185.55F883172.0",
+  "sg_user_id": 939115,
   "smtp-id": "<5lFl7Fr1Rjme_EyzNNB_5A@stismtpd-006.sjc1.sendgrid.net>",
   "timestamp": 1442349848
 }
@@ -957,12 +963,11 @@ Example event from the winning phase of an A/B Test:
   "event": "delivered",
   "marketing_campaign_id": 23314,
   "marketing_campaign_name": "unique args ab",
-  "nlvx_campaign_id": 23314,
-  "nlvx_user_id": 939115,
   "post_type": "event",
   "response": "250 Ok ",
   "sg_event_id": "X2M1IUfMRhuAhWM0CbmFqQ",
   "sg_message_id": "fPJrJPIRTxC_obpgfTy74w.stfilter-015.5185.55F883564.0",
+  "sg_user_id": 12345,
   "smtp-id": "",
   "timestamp": 1442349911
 }

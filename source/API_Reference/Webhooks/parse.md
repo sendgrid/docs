@@ -9,7 +9,7 @@ navigation:
 <iframe src="https://player.vimeo.com/video/95798301" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% info %}
-Available to all accounts except Lite.
+Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 {% endinfo %}
 
 {% info %}
@@ -39,6 +39,10 @@ The following parameters will be included in the POST to your callback URL.
 
 {% info %}
 The request that will be sent to the HTTP endpoint will be encoded as multipart/form-data.
+{% endinfo %}
+
+{% info %}
+This table only includes a breakdown of terms and is not intended to be a comprehensive list of headers.
 {% endinfo %}
 
 <table class="table table-bordered table-striped">

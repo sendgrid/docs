@@ -11,6 +11,6 @@ navigation:
   show: true
 ---
 
-There’s an overage charge per email that changes depending on the package. This overage charge comes into play when you start to send emails beyond your monthly subscription amount.&nbsp;
+There’s an overage charge per email that changes depending on the package. This overage charge comes into play when you start to send emails beyond your monthly subscription amount.
 
-You can see the cost for overages on the [Pricing&nbsp;page](https://sendgrid.com/transactional-email/pricing) for each package. **&nbsp;**
+You can see the cost for overages on the [Pricing page](https://sendgrid.com/transactional-email/pricing) for each package.

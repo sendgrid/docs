@@ -3,7 +3,7 @@ layout: page
 weight: 0
 title: Bulk Sender Notification
 navigation:
-  show: true
+  show: false
 seo:
   title: Bulk Sender Notification
   override: true

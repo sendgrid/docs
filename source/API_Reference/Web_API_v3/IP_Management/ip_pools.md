@@ -93,7 +93,7 @@ HTTP/1.1 200 OK
 
 {
   "ips":["167.89.21.3"],
-  "name":"new_test5"
+  "pool_name":"new_test5"
 }
 {% endv3response %}
 {% endapiv3example %}
@@ -110,6 +110,9 @@ Update an IP pool's name.
 {% endparameters %}
 
 {% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
+
+{% apiv3requestbody %} {"name":"marketing"} {% endapiv3requestbody %}
+
 {% v3response %}
 HTTP/1.1 200 OK	
 

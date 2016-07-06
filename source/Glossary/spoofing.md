@@ -7,7 +7,7 @@ title: Spoofing
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Spoofing is a technique where forged email addresses are used to trick recipients into opening an email because the source has been hidden. This deceptive tactic is used to spread viruses and other malicious programs. Spoofing emails are often sent out as pretending to be large companies trying to steal your account info by having you click a link and enter your account credentials.
@@ -16,4 +16,4 @@ If you might have been tricked by a phishing email sent via SendGrid, please con
 
 If we find out that a customer of ours is sending spoofing or phishing emails we will ban their account immediately.
 
-To get more information please check out our [Email Infrastructure Guide.](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation).
+To get more information please check out our [Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html).

@@ -13,7 +13,7 @@ seo:
 <iframe src="https://player.vimeo.com/video/139274837" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% info %}
-Accounts are currently limited to 250 campaigns.
+Accounts are currently limited to 2500 campaigns.
 {% endinfo %}
 
 When you are ready to send an email campaign, go to the campaigns page and click “Create Campaign.” From here you will be able to choose the template to use for this campaign, add content, and send the email.
@@ -57,6 +57,10 @@ Your <a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">sender i
 
 <p>
 <strong>Email Subject:</strong> The subject line the user will see. Note: You can use substitution tags in order to personalize the email subject for your customers.
+</p>
+
+<p>
+<strong>Email Preheader:</strong> You can write a brief description of the content of your campaign. This preheader text will appear direcly after the subject line when a recipient previews your email. The preheader is one of the very first items that a user will see when viewing your campaign. This setting allows you to easily create a unique preheader without having to make any changes to your template.
 </p>
 
 <p>
@@ -125,6 +129,7 @@ If you want to test the subject or content of your campaigns before you send it,
 Preview Your Campaign
 {% endanchor %}
 
+<p>
 It is good practice to look at your campaign on a couple of different screen sizes. In order to expedite this process for you, we have provided a desktop and mobile preview for you. At the top of your screen you will notice three icons that look like the following:
 
 <img src="{{root_url}}/images/templates_8.png" alt="Desktop Preview" /> is the desktop preview option. It will show you what your users will see when looking at your email through their desktop email application.
@@ -132,9 +137,18 @@ It is good practice to look at your campaign on a couple of different screen siz
 <img src="{{root_url}}/images/templates_9.png" alt="Mobile Preview" /> is the mobile preview option. It will show you what your users will see when looking at your email through a mobile email application.
 
 <img src="{{root_url}}/images/templates_10.png" alt="Text Preview" /> is the text preview option, also known as plain text. It will show you what text-only users and screen readers will see when they look at your email.
+</p>
+
+<p>
+You may also preview any campaign listed on the Campaigns page. Simply click the Action Cog next to the campaign you would like to preview, and select Preview. You will be shown a small window displaying both mobile, and desktop, formats.
+<br />
+<img src="{{root_url}}/images/campaign_dropdown_preview.png" />
+<br />
+<img src="{{root_url}}/images/campaign_preview_modal.png" />
+</p>
 
 {% info %}
-While the preview functionality we provide will cover many use cases, it will not render the same as all mobile devices or desktop email clients. We recommend you use programs like <a href="https://litmus.com/">Litmus</a> to check that your email renders appropriately across all devices and clients.
+While the preview functionality we provide will cover many use cases, it will not render the same on all mobile devices or desktop email clients. We recommend you use programs like <a href="https://litmus.com/">Litmus</a> to check that your email renders appropriately across all devices and clients.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -173,11 +187,67 @@ From the main campaigns page, you can click the gear icon inline with your campa
 Campaign Statistics
 {% endanchor %}
 
+<p>
 Once you have sent a campaign, you can click the gear icon next to the campaign name and then choose “stats.” From here, you will get statistics specific to this campaign including bounces, clicks, opens, etc. and you can also export a CSV with the raw stats.
+</p>
 
 <img src="{{root_url}}/images/stats_1.jpg" alt="Campaign Statistics" />
 
+<p>
 You can choose to see either raw numbers or percentages when looking at your campaign statistics by clicking the Toggle switch on the Campaigns page.
+</p>
+
+{% anchor h3 %}
+Exporting Statistics for Multiple Campaigns
+{% endanchor %}
+
+<p>
+You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, with the exception of two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
+</p>
+
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{root_url}}/images/bulk_edit_button.png" class="img-responsive pull-left"/>
+  </div>
+  <div class="clearfix col-md-8">
+    <p>
+    To export statistics for multiple campaigns, navigate to your Campaigns page within Marketing Campaigns. Check the box next to each campaign that you want to include in your stats CSV. As you add campaigns, you will notice a number on the bulk dropdown menu in the upper right increase.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="clearfix col-md-8">
+    <p>
+    Once you’ve selected the campaigns that you want to include in your CSV, click this button and select Export CSV.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <img src="{{root_url}}/images/export_multiple_campaign_stats_1.png" class="img-responsive pull-right"/>
+  </div>
+</div>
+
+<ul>
+  <li>Campaigns are ordered from most to least recent.</li>
+  <li>The CSV will include a row for each day that SendGrid has gathered statistics.</li>
+  <li>Every stats CSV that you export will contain a row containing the totals for each column.</li>
+</ul>
+
+{% anchor h3 %}
+Link Tracking
+{% endanchor %}
+
+You can also view detailed statistics about the links you include in your campaigns. From your Campaign Statistics page you will see a table ranking your links according to the number of times they were clicked by your recipients. You will see the number of total clicks for each link in addition to the total number of unique clicks for each link. All of these stats can be displayed as raw numbers or percentages by clicking the Toggle switch.
+
+{% info %}
+Click tracking stats will be displayed for the top 20 most frequently clicked links within your campaign.
+{% endinfo %}
+
+<img src="{{root_url}}/images/link_tracking.png" alt="Link Tracking" />
+
+<p>
+For more information about how to add links to your campain to ensure that they are tracked, please visit our <a href="{{root_url}}/Classroom/Track/Clicks/click_tracking_links_with_substitution_tags.html">Classroom</a>.
+</p>
 
 <div class="row">
     <div class="col-md-6 text-left">

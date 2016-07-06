@@ -14,6 +14,21 @@ navigation:
 Please refer to our [API Key]({{root_url}}/Classroom/Send/api_keys.html) page for information on how to authenticate and use these endpoints.
 {% endinfo %}
 
+Campaigns
+
+<ul>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Create-a-Campaign-POST">Create a Campaign - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Get-all-Campaigns-GET">Get all Campaigns - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#View-a-Campaign-GET">View a Campaign - GET</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE">Delete a Campaign - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Update-a-Campaign-PATCH">Update a Campaign - PATCH</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Send-a-Campaign-POST">Send a Campaign - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Schedule-a-Campaign-POST">Schedule a Campaign - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Update-a-Scheduled-Campaign-PATCH">Update a Scheduled Campaign - PATCH</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE">Unschedule a Scheduled Campaign - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Send-a-Test-Campaign-POST">Send a Test Campaign - POST</a></li>
+</ul>
+
 FORMAT: 1A
 
 # Marketing Campaigns API
@@ -86,7 +101,7 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "suppression_group_id": "suppression_group_id does not exist"
             "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
-            "": "You've reached your limit of 250 campaigns. Please delete one or more and try again."
+            "": "You've reached your limit of 2500 campaigns. Please delete one or more and try again."
 
 ## Campaigns [/campaigns?limit={limit}&offset={offset}]
 

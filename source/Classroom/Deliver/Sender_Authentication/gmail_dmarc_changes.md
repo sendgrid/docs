@@ -1,8 +1,11 @@
 ---
+st:
+  published_at: 2016-06-13
+  type: Classroom
 seo:
   title: Gmail DMARC Changes
-  description: Gmail DMARC Changes
-  keywords: dmarc, gmail, from, spf, dkim
+  description: 550 5.7.1 Unauthenticated email from domain.tld is not accepted due...
+  keywords: dmarc, gmail, google, from, spf, dkim
 title: Gmail DMARC Changes
 weight: 0
 layout: page
@@ -11,22 +14,20 @@ navigation:
   show: true
 ---
 
-Month, Day, 2014
+Gmail has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo and AOL. You may have started seeing bounce messages with the Reason of:
 
-Gmail has recently decided to embrace&nbsp; [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/)&nbsp;more explicitly, much like their email brethren, Yahoo and AOL.&nbsp;You may have started seeing bounce messages with the Reason of:
+**550 5.7.1 Unauthenticated email from domain.tld is not accepted due to domain's DMARC policy. Please contact administrator of domain.tld domain if this was a legitimate mail. Please visit [https://support.google.com/mail/answer/2451690](https://support.google.com/mail/answer/2451690) to learn about DMARC initiative. 62si14044909itw.103 - gsmtp **
 
-**<NDR GOES HERE&nbsp;>&nbsp;**
+This is because Gmail will no longer be accepting messages where the From domain is a Gmail address and the message originates from a non-approved Gmail mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domains. 
 
-This is because Gmail&nbsp;will no longer be accepting messages where the From domain is a&nbsp;Gmail&nbsp;address&nbsp;and the message originates from a non-approved Gmail&nbsp;mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domain.&nbsp;
+ 
 
-&nbsp;
+**What this means:**  As of June, 2016, you can no longer send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
 
-**What this means:** &nbsp;You can no longer send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail.&nbsp;
+**What you can do: ** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
 
-**What you can do:&nbsp;** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail&nbsp;address that previously was used in the From field.&nbsp;
+**What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a  [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 
-**What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a&nbsp; [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
+ 
 
-&nbsp;
-
-For more extended reading, check out <LINK GOES HERE>,&nbsp;as well as our&nbsp; [DMARC Knowledgebase article](https://sendgrid.zendesk.com/hc/en-us/articles/200182958-Everything-about-DMARC-).
+For more extended reading, check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744), as well as our  [DMARC Classroom article]({{root_url}}/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html).

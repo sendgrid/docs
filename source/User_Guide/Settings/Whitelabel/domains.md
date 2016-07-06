@@ -10,6 +10,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/149585179" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% info %}
 When in doubt, contact your DNS registrar or web hosting service’s technical support department. All information in this document complies with the DNS standards, but some registrars and web hosting providers handle things differently.
 {% endinfo %}
@@ -129,6 +131,8 @@ Once you have made the DNS changes, you need to validate your whitelabel:
 
 If everything is set up properly and the DNS records have propagated, then SendGrid will verify your whitelabel and email sending will use this whitelabel following the Whitelabel Application Logic.
 
+If you are having trouble validating your DNS records, please see this [helpful Classroom article]({{root_url}}/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html).
+
 {% anchor h2 %}
 Changing or Replacing a Whitelabel Domain
 {% endanchor %}
@@ -137,9 +141,9 @@ Changing or Replacing a Whitelabel Domain
 Examples Of Why You Might Change Or Replace A Domain Whitelabel
 {% endanchor %}
 
-1. If you were a Sendgrid customer before May 27th, 2015 you and want to update to the new whitelabel system
+1. If you were a Sendgrid customer before May 27th, 2015 and you want to update to the new whitelabel system
 2. You want to change your domain whitelabel
-3. [You add IP addresses to your SendGrid account](https://support.sendgrid.com/hc/en-us/articles/200181948-Adding-an-additional-dedicated-IP-to-your-account)
+3. [You add IP addresses to your SendGrid account]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html)
 
 The steps for changing or replacing a whitelabel are easy!
 

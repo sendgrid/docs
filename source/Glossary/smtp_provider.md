@@ -7,7 +7,7 @@ title: SMTP Provider
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 An email SMTP provider is an email delivery vendor that uses Simple Mail Transfer Protocol ([SMTP]({{root_url}}/Glossary/smtp.html)) to send and receive email messages. Email messages traverse SMTP to relay your messages from your server to the recipient’s server so that it can be delivered and read by the end recipient.

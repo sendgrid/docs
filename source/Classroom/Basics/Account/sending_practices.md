@@ -9,17 +9,21 @@ navigation:
   show: true
 ---
 
-As you begin to use your SendGrid account there are some important things to remember. For example, Lite and [Free]({{site.site_url}}/free?mc=SendGrid%20Documentation) packages have limitations in the amount of email that can be sent each day. Free accounts are simply limited to 400 emails per day. Below you will find a breakdown of the Lite package and it's limitations.
+{% warning %}
+The Lite plan was discontinued for all new customers effective March 31, 2016. [Click here]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html) for more information.
+{% endwarning %}
+
+As you begin to use your SendGrid account there are some important things to remember. For example, Legacy Lite and [Free]({{site.site_url}}/free?mc=SendGrid%20Documentation) packages have limitations in the amount of email that can be sent each day. Free accounts are limited to 12,000 emails per month. Below you will find a breakdown of the Legacy Lite package and it's limitations.
 
 Additionally, there are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice referred to as throttling. Throttling in terms of email means that a recipient mail server has accepted all the mail it is willing to accept from your IP for a certain period of time.
 
 If you have a Pro 100k or higher package, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/Classroom/Deliver/warming_up_ips.html).
 
 {% anchor h2 %}
-Lite Plan Volume Restrictions
+Legacy Lite Plan Volume Restrictions
 {% endanchor %}
 
-Our Lite package has a bandwidth restriction to keep spammers from abusing our system. For the first 7 days you will be limited to 1,000 emails per day. After the 7th day we look into how many emails you have sent, how many days your account has been active, and check your reputation status. As the value of each of these parameters increases, your volume limitations will decrease.
+Our Legacy Lite package has a bandwidth restriction to keep spammers from abusing our system. For the first 7 days you will be limited to 1,000 emails per day. After the 7th day we look into how many emails you have sent, how many days your account has been active, and check your reputation status. As the value of each of these parameters increases, your volume limitations will decrease.
 
 As you achieve each guideline after the 7-day period, your account limit will be raised incrementally. You must achieve all guidelines in one row before you can achieve any guideline on the next row. The below table lists the limitation factors, and how they affect your total.
 

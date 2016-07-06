@@ -17,11 +17,11 @@ When creating Custom Fields, or uploading a list with customized headers in our 
 
 **This is because you are attempting to use a Custom Field that is already reserved by Sendgrid for internal purposes.**
 
-**These fields, with the exceptions of email, first\_name, and last\_name,&nbsp;can&nbsp;NOT be edited.**
+**These fields, with the exceptions of email, first\_name, and last\_name, can NOT be edited.**
 
-Reserved fields are used to track useful metrics for your contacts by default. Trying to pass additional data into some of these&nbsp;field names can cause inaccuracies in your Contacts.
+Reserved fields are used to track useful metrics for your contacts by default. Trying to pass additional data into some of these field names can cause inaccuracies in your Contacts.
 
-&nbsp;
+ 
 
 Here is a short list of the Reserved Custom Fields:
 
@@ -31,10 +31,10 @@ Here is a short list of the Reserved Custom Fields:
 | **last\_name** | **text** |
 | **email** | **text** |
 | **created\_at** | **date** |
-| **updated\_at** | **date&nbsp;** |
-| **last\_emailed** | **date&nbsp;** |
-| **last\_clicked** | **date&nbsp;** |
-| **last\_opened** | **date&nbsp;** |
+| **updated\_at** | **date ** |
+| **last\_emailed** | **date ** |
+| **last\_clicked** | **date ** |
+| **last\_opened** | **date ** |
 
 ![]({{root_url}}/images/SendGrid_Marketing_Campaigns.png)
 

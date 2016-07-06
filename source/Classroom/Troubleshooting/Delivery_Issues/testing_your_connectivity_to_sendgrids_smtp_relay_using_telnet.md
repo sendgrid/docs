@@ -11,35 +11,59 @@ navigation:
   show: true
 ---
 
-## Starting your Telnet connection
+#Starting your Telnet connection:
 
-To begin, open your Windows menu, type cmd into the search function, and press enter.&nbsp;
+To begin, choose one of the following options based on the type of computer you are using.
 
-If you are using a Mac, launch the Terminal application.&nbsp;
+>**Windows:** Open your Windows menu, type **cmd* into the search function, and press enter. 
 
-You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the&nbsp;progression&nbsp;below to walk you through the connection, every line starting with > is a command you will type and&nbsp;subsequently&nbsp;press the <enter> key afterwards.&nbsp;
+>**Mac/Unix:** launch the Terminal application. 
 
-## Acceptable Ports
+You should now be looking at a DOS-prompt style window with a blinking cursor in the top left-hand corner, you will use this window to input the commands to initiate a telnet connection. Use the progression below to walk you through the connection.
 
-We accept unencrypted and TLS connections on ports **25** , **587** , & **2525** &nbsp;and&nbsp;SSL encryption on **465**.  
-You can test for open ports using the following telnet command, substituting _#_ for a port number:
+#Things to know before initiating the Telnet Authentication:
 
-    >telnet smtp.sendgrid.net #
+1. For the first command in the telnet authentication test, **the "#" symbol will need to be replaced with one of our recommended ports.** We accept unencrypted and TLS connections on ports **25**, **587**, & **2525**.
 
-&nbsp;
+2. You will be required to enter a base 64 encoded version of your SendGrid username and password. To encode your username and password, please visit the following URL: https://www.base64encode.org/
 
-## Telnet Response:
+#Telnet Authentication Walkthrough:
+Below is a walkthrough of a basic telnet authentication. **Every line starting with ">" indicates that the text following it is a command you will need to type in followed by pressing the ENTER key afterwards.** 
 
-    >telnet smtp.sendgrid.net # <enter>220 xxxx ESMTP service ready>EHLO <enter>250-xxxx250-8BITMIME250-SIZE 20480000250-AUTH=PLAIN LOGIN250-AUTH PLAIN LOGIN250 STARTTLS>auth login <enter>334 VXNlcm5hbWU6>your BASE64 encoded SG username <enter>334 UGFzc3dvcmQ6>your BASE64 encoded SG password <enter>235 Authentication successful. ***
+    >telnet smtp.sendgrid.net # <enter>
+    220 xxxx ESMTP service ready
+    >EHLO <enter>
+    250-xxxx250-8BITMIME250-SIZE 20480000250-AUTH=PLAIN LOGIN250-AUTH PLAIN LOGIN250 STARTTLS
+    >auth login <enter>
+    334 VXNlcm5hbWU6
+    >Enter your BASE64 encoded SendGrid username here. <enter>
+    334 UGFzc3dvcmQ6
+    >Enter your BASE64 encoded SendGrid password here. <enter>
+    235 Authentication successful. *
 
-**_\*\*\* This indicates that your connection to smtp.sendgrid.net over the selected port is open, and your username and password are valid as authentication credentials._**
+####* Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open, and your username and password are valid!
 
-## Sending a message using Telnet:
 
-    >mail from: fromaddress@domain.com <enter>250 Sender address accepted>rcpt to: toaddress@domain.com <enter>250 Recipient address accepted>data <enter>354 Continue>To:To Name <enter>>From: From Name <enter>>Subject:Testing <enter>
-    > <enter> you need to enter one blank line before you start the actual body of the message
-    >This is the body of the message you would like to send. <enter>>. <enter> typing a period(.) tells us you are finished, and to send the message250 Delivery in progress>quit <enter>221 See you laterConnection to host lost.
 
-&nbsp;
+#Sending a message using Telnet:
+Below is a walkthrough of how to send a message via telnet. **Every line starting with ">" indicates that the text following it is a command you will need to type in followed by pressing the ENTER key afterwards.** 
 
-_ **Note** :&nbsp;__If upon attempting 'telnet smtp.sendgrid.net #', you receive an error stating "'telnet' is not recognized as an internal or external command, operable program or batch file." this means that Telnet is not installed on your machine. This can be done by visiting your "Add and Remove Progams" section within your Control Panel, and installing the 'Telnet Client' and 'Telnet Server' packages within 'Turn&nbsp;Windows&nbsp;features on or off".&nbsp;_
+    >mail from: fromaddress@domain.com <enter>
+    250 Sender address accepted
+    >rcpt to: toaddress@domain.com <enter>
+    250 Recipient address accepted
+    >data <enter>
+    354 Continue
+    >To:To Name <enter>
+    >From: From Name <enter>
+    >Subject:Testing <enter>
+    > <enter> *You need to enter one blank line before you start the actual body of the message
+    >This is where the body of the message you would like to send goes. <enter>
+    >. <enter> *Typing a period(.) tells us you are finished, and to send the message.
+    250 Delivery in progress
+    >quit <enter>
+    221 See you later 
+    Connection to host lost.
+
+
+>**Note**: If upon attempting 'telnet smtp.sendgrid.net #', you receive an error stating "'telnet' is not recognized as an internal or external command, operable program or batch file." this means that Telnet is not installed on your machine. This can be done by visiting your "Add and Remove Progams" section within your Control Panel, and installing the 'Telnet Client' and 'Telnet Server' packages within 'Turn Windows features on or off". 

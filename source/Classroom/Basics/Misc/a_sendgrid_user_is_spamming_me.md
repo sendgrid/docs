@@ -11,4 +11,4 @@ navigation:
   show: true
 ---
 
-You can report malicious emails and aberrant behavior you see from our users here: [http://sendgrid.com/report\_spam](http://sendgrid.com/report_spam)
+You can report malicious emails and spam behavior you see from SendGrid users **[here](http://sendgrid.com/report_spam)**.

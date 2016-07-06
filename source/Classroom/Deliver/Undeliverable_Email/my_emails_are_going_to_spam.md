@@ -11,4 +11,4 @@ navigation:
   show: true
 ---
 
-There are numerous reasons mail providers place messages into the Spam folder. While there is no surefire way to ensure your messages arrive in the inbox of your recipients, there are however industry standards and best practices you can follow to give your emails the highest likelihood of meeting all mail provider and spam filter expectations. Please visit our [Deliverability 10](http://support.sendgrid.com/entries/21194967-deliverability-101)1 guide&nbsp;for more all our recommended sending practices, tips & tricks, and other resources.
+There are numerous reasons mail providers place messages into the Spam folder. While there is no surefire way to ensure your messages arrive in the inbox of your recipients, there are however industry standards and best practices you can follow to give your emails the highest likelihood of meeting all mail provider and spam filter expectations. Please visit our [Deliverability 10]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html)1 guide for more all our recommended sending practices, tips & tricks, and other resources.

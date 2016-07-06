@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="4px" viewBox="0 0 8 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>caret</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="--parameters-&gt;-detail" transform="translate(-1172.000000, -264.000000)" fill="#546C81">
+            <g id="Table-Parent-Child-Copy" transform="translate(240.000000, 81.000000)">
+                <g id="Row" transform="translate(0.000000, 36.000000)">
+                    <g id="Child" transform="translate(0.000000, 119.000000)">
+                        <path d="M939.880612,28.2782737 L939.630682,28.0914636 C939.473098,27.9695121 939.216324,27.9695121 939.058739,28.0914636 L936.012199,30.6082569 L932.889364,28.0914636 C932.73018,27.9695121 932.473406,27.9695121 932.315822,28.0914636 L932.118188,28.260852 C931.960604,28.3821583 931.960604,28.5796035 932.118188,28.7022003 L935.724228,31.5090202 C935.883412,31.6303265 936.140186,31.6303265 936.29777,31.5090202 L939.880612,28.7196219 C940.039796,28.5976704 940.039796,28.3995799 939.880612,28.2782737 Z" id="caret"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

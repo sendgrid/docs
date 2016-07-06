@@ -7,7 +7,7 @@ title: Email API Integration
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Email API integration allows you to connect your email service provider to your own platform and your marketing, sales, or CRM tools. In doing so, you can sync data and create hybrid, customized systems that empower your workforce and leverage your technology via a single interface.

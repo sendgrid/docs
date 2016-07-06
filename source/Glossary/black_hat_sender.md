@@ -6,7 +6,7 @@ title: Black Hat Sender
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 A black hat sender is a sender/company who sends email to recipients who either send to recipients who have not given permission to senders to send to them.

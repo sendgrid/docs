@@ -29,7 +29,16 @@ There is a limit of 25 groups per user.
 {% endparameters %}
 
 {% apiv3example post POST https://api.sendgrid.com/v3/asm/groups name=Product+Suggestions&description=Suggestions+for+products+our+users+might+like. %}
-  {% v3response %}
+
+{% apiv3requestbody %}
+{
+  "name": "Product Suggestions",
+  "description": "Suggestions for products our users might like.",
+  "is_default": true
+}
+{% endapiv3requestbody %}
+
+{% v3response %}
 HTTP/1.1 201 OK
 
 {
@@ -55,12 +64,16 @@ Retrieve all suppression groups associated with the user.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default": true,
     "unsubscribes": 400
   },
   {
     "id": 101,
     "name": "Alerts",
     "description 2": "Emails triggered by user-defined rules.",
+    "last_email_sent_at": null,
+    "is_default": false,
     "unsubscribes": 1
   }
 ]
@@ -80,6 +93,8 @@ Get information on a single suppression group.
     "id": 100,
     "name": "Newsletters",
     "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default": true,
     "unsubscribes": 400
 }
 {% endv3response %}
@@ -107,6 +122,47 @@ HTTP/1.1 201 OK
   "description": "Suggestions for items our users might like."
 }
 {% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
+GET
+{% endanchor %}
+
+Retrieve information about multiple suppression groups.
+
+This endpoint will return information for each group ID that you include in your request. To add a group ID to your request, simply append `&id=` followed by the group ID.
+
+{% parameters get %}
+  {% parameter id No Integer 'ID for a suppression group that you want to retrieve information for.' %}
+{% endparameters %}
+
+{% apiv3example get GET https://api.sendgrid.com/v3/asm/groups?id={id1}&id={id2} %}
+
+{% v3response %}
+HTTP/1.1 200 OK
+
+[
+  {
+    "id": 100,
+    "name": "Newsletters",
+    "description": "Our monthly newsletter.",
+    "last_email_sent_at": null,
+    "is_default" : true,
+    "unsubscribes": 400
+  },
+  {
+    "id": 101,
+    "name": "Alerts",
+    "description 2": "Emails triggered by user-defined rules.",
+    "last_email_sent_at": null,
+    "is_default" : false,
+    "unsubscribes": 1
+  }
+]
+{% endv3response %}
+
 {% endapiv3example %}
 
 * * * * *

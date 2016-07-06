@@ -5,7 +5,7 @@ title: Throttling
 seo:
   title: Email Throttling
 navigation:
-  show: true
+  show: false
 ---
 
 So, you tried to send a bunch of email, and when you checked your [Event webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're looking at your [Email Reports]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html), and noticing a lot of addresses in your [Blocks]({{site.app_url}}/suppressions/blocks), but not many in your Hard Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?

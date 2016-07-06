@@ -7,7 +7,7 @@ title: Email Deliverability
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 Email Deliverability represents your sent emails being delivered to your recipient’s inbox as intended. Strong deliverability is critical for any company, as email is the primary method of communication to customers. Your delivery rate is the total number of emails successfully delivered to the ISPs divided by the total number of emails sent.
