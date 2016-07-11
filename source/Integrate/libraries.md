@@ -22,7 +22,6 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-go](http://github.com/sendgrid/sendgrid-go) - Official Go library
 -   [sendgrid-java](http://github.com/sendgrid/sendgrid-java) - Official Java library
 -   [sendgrid-nodejs](http://github.com/sendgrid/sendgrid-nodejs) - Official NodeJS library
-
 -   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) - Official PHP library
 -   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) - Official Python library
 -   [sendgrid-ruby](http://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
@@ -38,7 +37,7 @@ The following official libraries are maintained by SendGrid to create [SMTP API 
 -   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) - Official Python SMTP API library
 -   [smtpapi-ruby](http://github.com/sendgrid/smtpapi-ruby) - Official Ruby SMTP API library
 
-The following official libraries are maintained by SendGrid to use the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html):
+The following official library is maintained by SendGrid to use the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html):
 -   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 {% info %}
@@ -66,13 +65,6 @@ Universal
 -   [CloudRail-SendGrid](https://cloudrail.com/?utm_source=SendGrid&utm_medium=Website&utm_campaign=SendGrid%20Website) *by CloudRail* - Bundle SendGrid and other APIs into one SDK
 
 {% anchor h3 %}
-.NET 
-{% endanchor %}
-
--   [sendgrid-csharp](http://github.com/sendgrid/sendgrid-csharp) *by SendGrid* - Official C\# library to send emails
--   [smtpapi-csharp](http://github.com/sendgrid/smtpapi-csharp) *by SendGrid* - Official C\# library to create SMTPAPI headers
-
-{% anchor h3 %}
 Android
 {% endanchor %}
 
@@ -85,13 +77,6 @@ Command Line
 -   [cmdgrid](http://github.com/martyndavies/cmdgrid) *by Martyn Davies* - CLI for working with SendGrid's Parse API
 -   [sgsend](http://github.com/vvaidy/sgsend) *by Vijay Vaidyanathan* - Sending email from the shell command line (for Macs and Unix)
 -   [sg](http://github.com/awwa/sg) *by Wataru Sato* - CLI for all SendGrid v3 endpoints.
-
-{% anchor h3 %}
-Go 
-{% endanchor %}
-
--   [sendgrid-go](http://github.com/sendgrid/sendgrid-go) - Official Go library to send emails
--   [smtpapi-go](http://github.com/sendgrid/smtpapi-go) *by SendGrid*- Official Go library to create SMTP API headers
 
 {% anchor h3 %}
 Elixir 
@@ -109,18 +94,14 @@ Groovy
 Java 
 {% endanchor %}
 
--   [sendgrid-java](https://github.com/sendgrid/sendgrid-java) *by SendGrid* - Official Java library to send emails
--   [smtpapi-java](http://github.com/sendgrid/smtpapi-java) *by SendGrid*- Official Java library to create SMTP API headers
 -   [sendgrid-google-java](https://github.com/sendgrid/sendgrid-google-java) *by SendGrid* - Java library for use with Google App Engine
 -   [sendgrid4j](https://github.com/shunjikonishi/sendgrid4j) *by Shunji Konishi* - Simple SendGrid client for Java
 -   [sendgrid-asm-java](https://github.com/krenfro/sendgrid-asm-java) *by Kyle Renfro* - Unsubscribe Groups Java Client
 
 {% anchor h3 %}
-JavaScript 
+JavaScript / Node.js
 {% endanchor %}
 
--   [sendgrid-nodejs](http://github.com/sendgrid/sendgrid-nodejs) *by SendGrid* - node.js for quickly and easily sending emails through SendGrid.
--   [smtpapi-nodejs](http://github.com/sendgrid/smtpapi-nodejs) *by SendGrid*- Official NodeJS library to create SMTP API headers
 -   [node-sendgrid-web](http://github.com/jesusabdullah/node-sendgrid-web) *by Joshua Holbrook* - Send emails via SendGrid using the JSON web API and the request module.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 
@@ -141,8 +122,6 @@ Perl
 PHP 
 {% endanchor %}
 
--   [sendgrid-php](http://github.com/sendgrid/sendgrid-php) *by SendGrid* - Official PHP wrapper to send emails through the SendGrid API
--   [smtpapi-php](http://github.com/sendgrid/smtpapi-php) *by SendGrid*- Official PHP library to create SMTP API headers
 -   [sendgrid-openshift-php](https://github.com/sendgrid/openshift-sendgrid-php) *by SendGrid* - Official PHP wrapper for use with Red Hat OpenShift
 -   [sendgrid-report-php](https://github.com/fcosrno/sendgrid-report-php) *by Francisco Serrano* - PHP wrapper to view and manage SendGrid reports through the SendGrid API
 -   [SendGrid-PHP-Library](https://github.com/alonbendavid/SendGrid-PHP-Library) *by Alon Ben David* - PHP wrapper for the SendGrid API including Marketing Email API
@@ -157,8 +136,6 @@ PHP
 Python 
 {% endanchor %}
 
--   [sendgrid-python](http://github.com/sendgrid/sendgrid-python) *by SendGrid* - Official SendGrid Python wrapper to send emails
--   [smtpapi-python](http://github.com/sendgrid/smtpapi-python) *by SendGrid*- Official Python library to create SMTP API headers
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
 -   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
 -   [sendgrid-django](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
@@ -207,7 +184,6 @@ Python
 {% anchor h3 -Ruby-Webhooks %}
 Ruby 
 {% endanchor %}
--   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments
