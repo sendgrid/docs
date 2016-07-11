@@ -91,7 +91,7 @@ send_via_sendgrid:
 Add a transport to the **Transport Configuration** Box:
 
 {% codeblock lang:bash %}
-Sendgrid_smtp:
+sendgrid_smtp:
   driver = smtp
   hosts = smtp.sendgrid.net
   hosts_require_auth = <; $host_address
