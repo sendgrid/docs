@@ -3,10 +3,10 @@ st:
   published_at: 2016-06-07
   type: Classroom
 seo:
-  title: I have an account through a third party partner that leverages SendGrid's services. Why can’t I access your new Marketing Campaigns feature?
-  description: Unable to access Marketing Campaigns with another service...
+  title: Why can't I access Sendgrid's Marketing Campaigns when using 3rd party services/platforms?
+  description: Unable to access Marketing Campaigns with another service like Heroku or Azure...
   keywords: marketing, campaigns, azure, heroku, partner,
-title: I have an account through a third party partner that leverages SendGrid's services. Why can’t I access your new Marketing Campaigns feature?
+title: Why can't I access Sendgrid's Marketing Campaigns when using 3rd party services/platforms?
 weight: 0
 layout: page
 navigation:
