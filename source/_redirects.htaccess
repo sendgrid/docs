@@ -397,6 +397,7 @@ Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics
 #
 #######
 
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html#-Disabling-TwoFactor-Authentication
 Redirect 301 /Classroom/Troubleshooting/account_under_review_suspended.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html
 Redirect 301 /Classroom/Troubleshooting/cant_access_the_email_address_on_file_for_your_sendgrid_account.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html
 Redirect 301 /Classroom/Troubleshooting/cant_log_in_to_your_account.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html
@@ -453,6 +454,7 @@ Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User
 #######
 
 Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/docs/Glossary/peer_invitations.html
+Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/ips.html
 
 #######
 #

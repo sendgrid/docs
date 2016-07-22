@@ -185,5 +185,5 @@ Python
 Ruby 
 {% endanchor %}
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
--   [griddler](https://github.com/thoughtbot/griddler) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
+-   [griddler](https://github.com/thoughtbot/griddler-sendgrid) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments
