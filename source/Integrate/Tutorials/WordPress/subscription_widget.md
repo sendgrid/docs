@@ -170,7 +170,7 @@ Widget Settings
   <tr><td>Display the first and last name fields ('true' or 'false')</td><td><code>define('SENDGRID_MC_OPT_INCL_FNAME_LNAME', 'true');</code></td></tr>
   <tr><td>First and last name fields are required ('true' or 'false')</td><td><code>define('SENDGRID_MC_OPT_REQ_FNAME_LNAME', 'true');</code></td></tr>
   <tr><td>Signup confirmation email subject</td><td><code>define('SENDGRID_MC_SIGNUP_EMAIL_SUBJECT', 'Confirm subscription');</code></td></tr>
-  <tr><td>Signup confirmation email content</td><td><code>define('SENDGRID_MC_SIGNUP_EMAIL_CONTENT', '<a href="%confirmation_link%">click here</a>');</code></td></tr>
+  <tr><td>Signup confirmation email content</td><td><code>define('SENDGRID_MC_SIGNUP_EMAIL_CONTENT', '&lta href="%confirmation_link%"&gtclick here&lt/a&gt');</code></td></tr>
   <tr><td>Signup confirmation page ID</td><td><code>define('SENDGRID_MC_SIGNUP_CONFIRMATION_PAGE', 'page_id');</code></td></tr>
 </table>
 
