@@ -82,7 +82,7 @@ add_filter('wp_mail_content_type', 'set_html_content_type');
 {% endcodeblock %}
 
 {% warning %}
-After you’ve run `wp_mail()`, you should remove the ‘text/html’ filter. If you forget to remove the 'text/html' filter the reset link will still be included in the email, but it will appear as the entire URL instead of hyperlinked text.
+After you’ve run wp_mail(), you must remove the ‘text/html’ filter in order to return to your initial settings.
 {% endwarning %}
 
 {% codeblock lang:php %}
