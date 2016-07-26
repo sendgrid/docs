@@ -72,9 +72,13 @@ To create a dedicated API Key for your plugin, log into your SendGrid account, n
 Choosing Your Marketing Campaigns Recipient List
 {% endanchor %}
 
-After you set up a valid API key you must choose a specific list where your new contacts will be stored. If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html).
+After you set up a valid API key you must choose a specific list where your new contacts will be stored.
 
 ![]({{root_url}}/images/wp_subscription_widget_2.png)
+
+If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html).
+
+![]({{root_url}}/images/wp_subscription_widget_2_1.png)
 
 {% anchor h3 %}
 Configuring Your Subscription Widget Form
