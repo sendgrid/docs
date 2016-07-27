@@ -9,7 +9,7 @@ navigation:
 These examples require the [JSON Ruby Library](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html).
 
 {% anchor h2 %}
-SmtpApiHeader.rb 
+SmtpApiHeader.rb
 {% endanchor %}
 
 This header is required for each example.
@@ -19,18 +19,18 @@ This header is required for each example.
 # Version 1.0
 # Last Updated 6/22/2009
 require 'json'
- 
+
 class SmtpApiHeader
- 
+
   def initialize()
     @data = {}
   end  
- 
+
   def addTo(to)
     @data['to'] ||= []
     @data['to'] += to.kind_of?(Array) ? to : [to]
-  end 
- 
+  end
+
   def addSubVal(var, val)
     if not @data['sub']
       @data['sub'] = {}
@@ -41,18 +41,18 @@ class SmtpApiHeader
       @data['sub'][var] = [val]    
     end
   end
- 
+
   def setUniqueArgs(val)
     if val.instance_of?(Hash)
       @data['unique_args'] = val
     end
   end
- 
+
   def setCategory(cat)
- 
+
     @data['category'] = cat
   end
- 
+
   def addFilterSetting(fltr, setting, val)
     if not @data['filters']
       @data['filters'] = {}
@@ -65,44 +65,44 @@ class SmtpApiHeader
     end
     @data['filters'][fltr]['settings'][setting] = val
   end
- 
+
   def asJSON()
     json = JSON.generate @data
     return json.gsub(/(["\]}])([,:])(["\[{])/, '\\1\\2 \\3')
   end
- 
+
   def as_string()
     json  = asJSON()
     str = 'X-SMTPAPI: %s' % json.gsub(/(.{1,72})( +|$\n?)|(.{1,72})/,"\\1\\3\n")
     return str    
   end
- 
+
 end
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-Example Ruby Usage 
+Example Ruby Usage
 {% endanchor %}
 
 {% codeblock lang:ruby %}
 require './SmtpApiHeader.rb'
 require 'mail'
- 
+
 Mail.defaults do
   delivery_method :smtp, { :address   => 'smtp.sendgrid.net',
                            :port      => 587,
                            :domain    => 'sendgrid.com',
-                           :user_name => 'yourSendGridUsername', 
+                           :user_name => 'yourSendGridUsername',
                            :password  => 'yourSendGridPassword',
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end
-      
+
 hdr = SmtpApiHeader.new
- 
+
 receiver = ['recipient1@domain.com', 'recipient2@domain.com']
- 
+
 hdr.addTo(receiver)
 hdr.setUniqueArgs({'test' => 1, 'foo' =>2})
 hdr.setCategory('yourCategory')
