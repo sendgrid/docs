@@ -82,6 +82,8 @@ In iOS, you can use `NSURLSession` resolve the link.
 
 For example:
 
+#### Using Swift
+
 {% codeblock %}
 
 func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
@@ -106,6 +108,8 @@ func application(application: UIApplication, continueUserActivity userActivity: 
 }
 
 {% endcodeblock %}
+
+#### Using Objective-C
 
 {% codeblock lang:m %}
 
@@ -141,6 +145,8 @@ Resolving Links in Android
 For Android, you can use `HttpURLConnection` to resolve the URL by setting `setInstanceFollowRedirects` to `false`.
 
 For example:
+
+#### Using Java
 
 {% codeblock lang:java %}
 
