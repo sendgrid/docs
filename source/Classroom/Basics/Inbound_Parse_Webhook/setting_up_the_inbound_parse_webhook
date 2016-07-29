@@ -94,8 +94,14 @@ You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from
 Remember to direct your incoming email to your hostname (e.g. anything@parse.yourdomain.com). If you do not, your incoming email will not be parsed. 
 {% endwarning %}
 
+
+
 {% anchor h2 %}
-Parameters
+Example Raw Payload 
+{% endanchor %}
+
+{% anchor h2 %}
+Raw Parameters
 {% endanchor %}
 
 <table class="table table-bordered table-striped">
@@ -156,7 +162,7 @@ The total message size limit, including the message itself and all attachments, 
 {% endinfo %}
 
 {% anchor h2 %}
-Example Payload
+Example Default Payload 
 {% endanchor %}
 
 {% response json %}
