@@ -308,7 +308,7 @@ The total message size limit, including the message itself and all attachments, 
 {% endinfo %}
 
 {% anchor h2 %}
-Example Default Payload
+Example Raw Payload
 {% endanchor %}
 
 {% codeblock %}
