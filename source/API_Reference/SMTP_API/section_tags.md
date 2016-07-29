@@ -143,20 +143,3 @@ Casey receives:
  </body>
 </html>
 {% endcodeblock %}
-
-{% anchor h3 %}
-Section Tag Walkthrough Explained
-{% endanchor %}
-
-Our example uses nested substitution and section tags in order to demonstrate the possible complexity that can be used to create extremely customizable emails for your users.
-
-Substitution process:
-
-1. `:salutation` body tag read, which directs to the Section tag.
-1. `:salutation` header value populated to body. This creates a `:name` tag in the body.
-1. `:name` body tag read, which directs to the Substitution tag.
-1. `:name` header value populated to body.
-1. `:event_details` body tag read, which directs to the Section tag.
-1. `:event_details` header value populated to the body. This creates a `:event_date` tag in the body.
-1. `:event_date` body tag read, which directs to the Substitution tag.
-1. `:event_date` header value populated to the body.
