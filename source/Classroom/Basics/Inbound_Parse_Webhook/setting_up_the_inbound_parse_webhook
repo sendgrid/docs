@@ -94,11 +94,153 @@ You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from
 Remember to direct your incoming email to your hostname (e.g. anything@parse.yourdomain.com). If you do not, your incoming email will not be parsed. 
 {% endwarning %}
 
+{% anchor h2 %}
+Default Parameters
+{% endanchor %}
 
+<table class="table table-bordered table-striped">
+   <tbody>
+      <tr>
+         <th>headers</th>
+         <td>The raw headers of the email.</td>
+      </tr>
+      <tr>
+         <th>dkim</th>
+         <td>A JSON string containing the verification results of any dkim and domainkeys signatures in the message.</td>
+      </tr>
+      <tr>
+         <th>content-ids</th>
+         <td>A JSON string containing the number of attachments. </td>
+      </tr>
+      <tr>
+         <th>to</th>
+         <td>Email recipient field, as taken from the message headers.</td>
+      </tr>
+      <tr>
+         <th>html</th>
+         <td>HTML body of email. If not set, email did not have an HTML body.</td>
+      </tr>
+      <tr>
+         <th>from</th>
+         <td>Email sender, as taken from the message headers.</td>
+      </tr>
+      <tr>
+         <th>sender_ip</th>
+         <td>A JSON string of the sender’s ip address.</td>
+      </tr>
+      <tr>
+         <th>spam_report</th>
+         <td>Spam Assassin’s spam report.</td>
+      </tr>
+      <tr>
+         <th>envelope</th>
+         <td>A JSON string containing the SMTP envelope. This will have two variables: *to*, which is a single-element array containing the address that we received the email to, and *from*, which is the return path for the message.</td>
+      </tr>
+      <tr>
+         <th>attachments</th>
+         <td>Number of attachments included in email.</td>
+      </tr>
+      <tr>
+         <th>subject</th>
+         <td>Email Subject.</td>
+      </tr>
+      <tr>
+         <th>spam_score</th>
+         <tdSpam Assassin’s rating for whether or not this is spam.td>
+      </tr>
+      <tr>
+         <th>attachment-info</th>
+         <td>A JSON string containing the attachmentX keys with another JSON string as the value. This string will contain the keys *filename* and *name*, which is the name of the file (if it was provided) and *type*, which is the [media type](http://en.wikipedia.org/wiki/Internet_media_type) of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td> 
+      </tr>
+      <tr>
+         <th>charsets</th>
+         <td>A JSON string containing the character sets of the fields extracted from the message.</td>
+      </tr>
+      <tr>
+         <th>SPF</th>
+         <td>The results of the Sender Policy Framework verification of the message sender and receiving IP address.</td>
+      </tr>
+      </tbody>
+</table>
 
 {% anchor h2 %}
-Example Raw Payload 
+Example Default Payload 
 {% endanchor %}
+
+{% codeblock %}
+[Date] array(16) {
+  ["headers"]=>
+  string(1970) "Received: by mx0047p1mdw1.sendgrid.net with SMTP id 6WCVv7KAWn Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
+Received: from mail-io0-f169.google.com (mail-io0-f169.google.com [209.85.223.169]) by mx0047p1mdw1.sendgrid.net (Postfix) with ESMTPS id AA9FFA817F2 for <parse@parse.yourdomain.com>; Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
+Received: by mail-io0-f169.google.com with SMTP id b62so81593819iod.3 for <parse@parse.yourdomain.com>; Wed, 27 Jul 2016 13:53:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.com; s=ga1; h=mime-version:from:date:message-id:subject:to; bh=DpB1CYYeumytcPF3q0Upvx3Sq/oF4ZblEwnuVzFwqGI=; b=GH5YTxjt6r4HoTa+94w6ZGQszFQSgegF+Jlv69YV76OLycJI4Gxdwfh6Wlqfez5yID 5dsWuqaVJZQyMq/Dy/c2gHSqVo60BKG56YrynYeSrMPy8abE/6/muPilYxDoPoEyIr/c UXH5rhOKjmJ7nICKu1o99Tfl0cXyCskE7ERW0=
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=DpB1CYYeumytcPF3q0Upvx3Sq/oF4ZblEwnuVzFwqGI=; b=Sq6LVHbmywBdt3sTBn19U8VOmelfoJltz8IcnvcETZsYwk96RBxN+RKMN5fOZSKw4j 15HrgdIFfyDmp67YK0ygvOITlTvZ6XY5I0PtnvDtAQt79kS3tKjI3QKJoEp/ZjIjSzlL KG7agl6cxFgBbIN0yHWBOvy3O+ZXY8tZdom1yOvULjmjW1U9JkdOs+aJ6zq4qhZX/RM/ tIgLB461eJ5V95iQDDc5Ibj9Cvy4vJfXLQRO0nLVQAT2Yz58tkEO1bDZpWOPAyUNneIL yhIWp+SpbuqhMA68mq0krG1PjmWalUbpVcGJIGuOKB9mQFFo/MqdrUCjvYnyo1jPLPeX psdQ==
+X-Gm-Message-State: AEkoousvdxmDoxLlTUYJ1AOmCGJv77xRBBlfKv6YrthH0M2NueMwlOxUD6t8nidE9uonXbdJ/DQy/chmHUnN//a4
+X-Received: by 10.107.6.101 with SMTP id 98mr38024553iog.41.1469652785829; Wed, 27 Jul 2016 13:53:05 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.107.48.17 with HTTP; Wed, 27 Jul 2016 13:53:05 -0700 (PDT)
+From: Sender Name <example@example.com>
+Date: Wed, 27 Jul 2016 14:53:05 -0600
+Message-ID: <CAN_P_JMvV7ZpAQhOnDienypLrJmuhN=LQWweu4yScw4jQyXY2w@mail.gmail.com>
+Subject: Different File Types
+To: parse@parse.yourdomain.com
+Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
+"
+  ["dkim"]=>
+  string(22) "{@sendgrid.com : pass}"
+  ["content-ids"]=>
+  string(37) "{"ii_1562e2169c132d83":"attachment1"}"
+  ["to"]=>
+  string(26) "parse@parse.yourdomain.com"
+  ["html"]=>
+  string(479) "<div dir="ltr">Here&#39;s an email with multiple attachments<div><br></div><div><img src="cid:ii_1562e2169c132d83" alt="Inline image 1" width="455" height="544"><br clear="all"><div><br></div>-- <br><div class="gmail_signature" data-smartmail="gmail_signature"><div dir="ltr"><img src="https://sendgrid.com/brand/sg-logo-email.png" width="96" height="17"><br><div><br></div></div></div>
+</div></div>
+"
+  ["from"]=>
+  string(33) "Sender Name <example@example.com>"
+  ["text"]=>
+  string(139) "Here's an email with multiple attachments
+"
+  ["sender_ip"]=>
+  string(14) "209.85.223.169"
+  ["spam_report"]=>
+  string(844) "Spam detection software, running on the system "mx0047p1mdw1.sendgrid.net", has
+identified this incoming email as possible spam.  The original message
+has been attached to this so you can view it (if it isn't spam) or label
+similar future email.  If you have any questions, see
+@@CONTACT_ADDRESS@@ for details.
+
+Content preview:  Here's an email with multiple attachments [image: Inline image
+   1] -- [...] 
+
+Content analysis details:   (2.6 points, 5.0 required)
+
+ pts rule name              description
+---- ---------------------- --------------------------------------------------
+ 0.8 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.8 HTML_IMAGE_ONLY_08     BODY: HTML: images with 400-800 bytes of words
+ 0.0 T_MIME_NO_TEXT         No text body parts
+
+"
+  ["envelope"]=>
+  string(66) "{"to":["parse@parse.yourdomain.com"],"from":"example@example.com"}"
+  ["attachments"]=>
+  string(1) "2"
+  ["subject"]=>
+  string(20) "Different File Types"
+  ["spam_score"]=>
+  string(5) "2.597"
+  ["attachment-info"]=>
+  string(287) "{"attachment2":{"filename":"DockMcWordface.docx","name":"DockMcWordface.docx","type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},"attachment1":{"filename":"MG_2359.jpg","name":"_MG_2359.jpg","type":"image/jpeg","content-id":"ii_1562e2169c132d83"}}"
+  ["charsets"]=>
+  string(77) "{"to":"UTF-8","html":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"UTF-8"}"
+  ["SPF"]=>
+  string(4) "pass"
+}
+
+
+{% endcodeblock %}
 
 {% anchor h2 %}
 Raw Parameters
