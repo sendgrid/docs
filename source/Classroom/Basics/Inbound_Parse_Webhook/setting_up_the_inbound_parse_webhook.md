@@ -80,7 +80,7 @@ If you do not check **Send Raw**, the post will be multipart/form-data with the 
 
   **(6)** Click Save.
 
-	You have just finished configuring Inbound Parse!
+You have just finished configuring Inbound Parse!
 
 {% anchor h2 %}
 Testing
@@ -154,7 +154,7 @@ Default Parameters
       </tr>
       <tr>
          <th>attachment-info</th>
-         <td>A JSON string containing the attachmentX keys with another JSON string as the value. This string will contain the keys <code>filename</code> and <code>name</code>, which is the name of the file (if it was provided) and <code>type</code>, which is the [media type](http://en.wikipedia.org/wiki/Internet_media_type) of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
+         <td>A JSON string containing the attachmentX keys with another JSON string as the value. This string will contain the keys <code>filename</code> and <code>name</code>, which is the name of the file (if it was provided) and <code>type</code>, which is the <a href="http://en.wikipedia.org/wiki/Internet_media_type">media type</a> of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
       </tr>
       <tr>
          <th>charsets</th>
@@ -282,7 +282,7 @@ Raw Parameters
       </tr>
       <tr>
          <th>Envelope</th>
-         <td>A JSON string containing the SMTP envelope. This will have two variables: *to*, which is an single-element array containing the addresses that recieved the email, and *from*, which is the return path for the message.</td>
+         <td>A JSON string containing the SMTP envelope. This will have two variables: *to*, which is an single-element array containing the addresses that received the email, and *from*, which is the return path for the message.</td>
       </tr>
       <tr>
          <th>Subject</th>
