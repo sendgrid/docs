@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Marketing Email Tags
+title: Legacy Newsletter Tags
 navigation:
   show: true
 ---
@@ -13,9 +13,9 @@ This page refers to our legacy email marketing tool. Please check out our new <a
 <meta itemprop="name" content="{{ page.title }}"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZM-htj1XdcA?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-There are a few special tags you can add to the body of your marketing email These tags are case insensitive so if you make a mistake SendGrid knows what tags you want to use.
+There are a few special tags you can add to the body of your Legacy email. These tags are case insensitive so if you make a mistake SendGrid knows what tags you want to use.
 
-You can also add custom tags to your emails. Custom Tags can be created by going to [Marketing Email \> My Recipients \> Manage]({{site.marketing_email_url}}/lists). From here you can choose the list you wish to create tags for by clicking on the custom tags menu item in the list table. Simply click on Add a Custom Tag and enter in your tag name. We will automatically generate the tag name based on what you've entered.
+You can also add custom tags to your emails. Custom Tags can be created by going to [Legacy Newsletter \> My Recipients \> Manage]({{site.marketing_email_url}}/lists). From here you can choose the list you wish to create tags for by clicking on the custom tags menu item in the list table. Simply click on Add a Custom Tag and enter in your tag name. We will automatically generate the tag name based on what you've entered.
 
 Be sure to use a tag name the corresponds with an actual column of data in your recipient list file. If not, the tag will not insert any data into the content of the email and the end user will see the custom tag. If you have created a new custom tag for a recipient list (one that has no column of data) then we will create a new column for you on your recipient list that you can backfill with the correct data so when using the custom tag actual data will be passed into the content of your email.
 
@@ -63,7 +63,7 @@ There are several tags you can use to embed sender address information in your e
 Custom Tag Sending Best Practices
 {% endanchor %}
 
-At SendGrid we are always trying to help our customers send marketing email more efficiently. We recently did some research and attempted to provide some best practices when creating email custom tags. Below are some tests we ran to provide our customers custom tag benchmarks to consider when sending large volumes of marketing email.
+At SendGrid we are always trying to help our customers send marketing email more efficiently. We recently did some research and attempted to provide some best practices when creating email custom tags. Below are some tests we ran to provide our customers custom tag benchmarks to consider when sending large volumes of Legacy Newsletters.
 
 ### The Test
 
@@ -97,4 +97,4 @@ Batch sending (of 1000 recipients per batch)
 </li>
 ### Recommendations
 
-You should try to keep your custom tag total character count relatively small especially if you want to use more custom tags in your emails. If you choose to have custom tags with a lot of characters then try to limit the total amount of custom tags in your recipient lists. Referencing the tests above you can determine a safe amount of tags to use depending on the size of those tags that can result in efficient email batching when sending Marketing Email with SendGrid.
+You should try to keep your custom tag total character count relatively small especially if you want to use more custom tags in your emails. If you choose to have custom tags with a lot of characters then try to limit the total amount of custom tags in your recipient lists. Referencing the tests above you can determine a safe amount of tags to use depending on the size of those tags that can result in efficient email batching when sending Legacy Newsletetrs with SendGrid.
