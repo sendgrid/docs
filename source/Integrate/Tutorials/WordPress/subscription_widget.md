@@ -183,4 +183,4 @@ Related Content
 {% endanchor %}
 
 * [SendGrid's WordPress Plugin]({{root_url}}/Integrate/Tutorials/WordPress/sendgrid_wordpress_plugin.html)
-* [SendGrid's WordPress Integratino FAQ]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html)
+* [SendGrid's WordPress Integration FAQ]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html)

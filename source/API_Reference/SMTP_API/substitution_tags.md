@@ -127,25 +127,6 @@ Email HTML content:
 </html>
 {% endcodeblock %}
 
-{% anchor h2%}
-Nested Substitutions
-{% endanchor %}
-
-You can have up to 4 nested substitutions. Any deeper nesting will result in the tag being printed in your email.
-
-Example: **substitution1** replaced by **substitution2** replaced by **substitution3** replaced by **substitution4** replaced by **[substitution5]** - the email shows "[substitution5]"
-
-This works for [section tags]({{root_url}}/API_Reference/SMTP_API/section_tags.html) as well:
-
-Example: **substitution1** replaced by **section1** replaced by **substitution2** replaced by **section2** replaced by **[substitution5]** -- the email shows "[substitution5]"
- 
- Please note:
-
-* Substitution tags within section tags work
-* Section tags within substitution tags work
-* Section tags within section tags work
-* Section tags can only be added via substitution tags
-
 {% anchor h2 %}
 SendGrid Defined Substitution Tags
 {% endanchor %}
