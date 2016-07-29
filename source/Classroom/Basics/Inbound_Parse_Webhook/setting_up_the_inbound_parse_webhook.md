@@ -110,11 +110,11 @@ Default Parameters
       </tr>
       <tr>
          <th>dkim</th>
-         <td>A JSON string containing the verification results of any DKIM and domain keys signatures in the message.</td>
+         <td>A string containing the verification results of any DKIM and domain keys signatures in the message.</td>
       </tr>
       <tr>
          <th>content-ids</th>
-         <td>A JSON string containing the number of attachments. </td>
+         <td>A string containing the number of attachments. </td>
       </tr>
       <tr>
          <th>to</th>
@@ -130,7 +130,7 @@ Default Parameters
       </tr>
       <tr>
          <th>sender_ip</th>
-         <td>A JSON string of the sender’s ip address.</td>
+         <td>A string of the sender’s ip address.</td>
       </tr>
       <tr>
          <th>spam_report</th>
@@ -138,7 +138,7 @@ Default Parameters
       </tr>
       <tr>
          <th>envelope</th>
-         <td>A JSON string containing the SMTP envelope. This will have two variables: <code>to</code>, which is a single-element array containing the address that we received the email to, and <code>from</code>, which is the return path for the message.</td>
+         <td>A string containing the SMTP envelope. This will have two variables: <code>to</code>, which is a single-element array containing the address that we received the email to, and <code>from</code>, which is the return path for the message.</td>
       </tr>
       <tr>
          <th>attachments</th>
@@ -154,11 +154,11 @@ Default Parameters
       </tr>
       <tr>
          <th>attachment-info</th>
-         <td>A JSON string containing the attachmentX keys with another JSON string as the value. This string will contain the keys <code>filename</code> and <code>name</code>, which is the name of the file (if it was provided) and <code>type</code>, which is the <a href="http://en.wikipedia.org/wiki/Internet_media_type">media type</a> of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
+         <td>A string containing the attachmentX keys with another JSON string as the value. This string will contain the keys <code>filename</code> and <code>name</code>, which is the name of the file (if it was provided) and <code>type</code>, which is the <a href="http://en.wikipedia.org/wiki/Internet_media_type">media type</a> of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
       </tr>
       <tr>
          <th>charsets</th>
-         <td>A JSON string containing the character sets of the fields extracted from the message.</td>
+         <td>A string containing the character sets of the fields extracted from the message.</td>
       </tr>
       <tr>
          <th>SPF</th>
@@ -254,11 +254,11 @@ Raw Parameters
    <tbody>
       <tr>
          <th>dkim</th>
-         <td>A JSON string containing the verification results of any DKIM and domain keys signatures in the message.</td>
+         <td>A string containing the verification results of any DKIM and domain keys signatures in the message.</td>
       </tr>
       <tr>
          <th>Email</th>
-         <td>A JSON string containing the email headers, date, body, and attachments</td>
+         <td>A string containing the email headers, date, body, and attachments</td>
       </tr>
       <tr>
          <th>To</th>
@@ -282,7 +282,7 @@ Raw Parameters
       </tr>
       <tr>
          <th>Envelope</th>
-         <td>A JSON string containing the SMTP envelope. This will have two variables: *to*, which is an single-element array containing the addresses that received the email, and *from*, which is the return path for the message.</td>
+         <td>A string containing the SMTP envelope. This will have two variables: <code>to</code>, which is an single-element array containing the addresses that received the email, and <code>from</code>, which is the return path for the message.</td>
       </tr>
       <tr>
          <th>Subject</th>
@@ -294,7 +294,7 @@ Raw Parameters
       </tr>
       <tr>
          <th>Charsets</th>
-         <td>A JSON string containing the character sets of the fields extracted from the message.</td>
+         <td>A string containing the character sets of the fields extracted from the message.</td>
       </tr>
       <tr>
          <th>SPF</th>
@@ -311,7 +311,7 @@ The total message size limit, including the message itself and all attachments, 
 Example Default Payload
 {% endanchor %}
 
-{% response json %}
+{% codeblock %}
 array(11) {
   ["dkim"]=>
   string(22) "{@sendgrid.com : pass}"
@@ -491,7 +491,7 @@ Content analysis details:   (0.4 points, 5.0 required)
   ["SPF"]=>
   string(4) "pass"
 }
-{% endresponse %}
+{% endcodeblock %}
 
 {% anchor h2 %}
 Code Examples
