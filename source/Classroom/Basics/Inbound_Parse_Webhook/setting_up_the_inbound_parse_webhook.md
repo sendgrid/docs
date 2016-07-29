@@ -150,7 +150,7 @@ Default Parameters
       </tr>
       <tr>
          <th>spam_score</th>
-         <tdSpam Assassin’s rating for whether or not this is spam.td>
+         <td>Spam Assassin’s rating for whether or not this is spam.<td>
       </tr>
       <tr>
          <th>attachment-info</th>
