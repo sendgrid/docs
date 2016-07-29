@@ -46,6 +46,7 @@ This table only includes a breakdown of terms and is not intended to be a compre
 {% endinfo %}
 
 <table class="table table-bordered table-striped">
+
    <tbody>
       <tr>
          <th>headers</th>
