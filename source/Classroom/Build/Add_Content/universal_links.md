@@ -38,16 +38,24 @@ There are several requirements that you must complete before you can begin using
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must resolve your links.
 
 {% anchor h2 %}
-What are "apple-app-site-association" and "app manifest" files?
+What are "apple-app-site-association" and "digital asset links" files?
 {% endanchor %}
 
 To keep your app secure, Google and Apple want to restrict which resources or websites are allowed to link directly to different pages within your app. This prevents bad actors from using universal links to gain access to sensitive information within your app.
 
-"Apple-app-site" and "app manifest" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
+"Apple-app-site" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
 
 {% info %}
-You must create your own manifest and association files, and you must upload these files to a secure server.
+You must create your own digital asset links and apple-app-site-association files, and you must upload these files to a secure server.
 {% endinfo %}
+
+Both "apple-app-site-association" and "digital asset links" files are comprised of a series of JSON key/value pairs that associate external URLs with pages within your application.
+
+**For detailed instructions on how to configure an iOS "apple-app-site-association" file, please see [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).**
+
+**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).**
+
+Once you have created and configured your Android and iOS configuration files, you will have to host them on a secure HTTPS server. Keep reading below to learn how you can host these files on either [Amazon CloudFront](https://aws.amazon.com/cloudfront/) or [NGINX](https://www.nginx.com/).
 
 {% anchor h2 %}
 Setting Up Universal Links Using CloudFront
