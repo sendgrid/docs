@@ -1,8 +1,8 @@
 ---
 layout: page
 seo:
-  title: Errors
-title: Errors
+  title: Status Codes & Errors for SendGrid Mail API
+title: Status Codes & Errors
 description: v3 Mail Send Errors and Troubleshooting Reference
 weight: 98
 navigation:
