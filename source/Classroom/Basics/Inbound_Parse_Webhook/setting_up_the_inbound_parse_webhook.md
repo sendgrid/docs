@@ -92,7 +92,7 @@ To test if everything is working, send an email from your email account to anyth
 The local-part (i.e. anything before @) can be any word or combination because all email for the domain or subdomain will be processed.
 {% endinfo %}
 
-You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook](https://sendgrid.com/blog/whats-webhook/).
+You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/debug.html).
 
 {% warning %}
 Remember to direct your incoming email to your hostname (e.g. anything@parse.yourdomain.com). If you do not, your incoming email will not be parsed.
@@ -494,14 +494,19 @@ Content analysis details:   (0.4 points, 5.0 required)
 {% endcodeblock %}
 
 {% anchor h2 %}
-Code Examples
+Other Inbound Parse Documentation
 {% endanchor %}
 
   - [Parse API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Webhooks/parse.html)
-  - [Parse Settings](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/parse_settings.html)
-  - [Parse Settings Subuser](https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html)
+    Manage Inbound Parse Webhook settings using the Parse API (Web API v3).
   - [Parse Webhook Settings](https://sendgrid.com/docs/API_Reference/Web_API/parse_settings.html)
+    Get existing settings, set the hostname and posting URL without going through the UI, and delete existing settings (Web API v2).  
+  - [Parse Settings Subuser](https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html)
+    Get current Parse settings and create, edit, and delete entries using the Subuser API (Web API v2).
+  - [Reseller API Parse Settings](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/parse_settings.html)
+    Get current Parse settings and create, edit, and delete entries using the Reseller API (Web API v2).
   - [Reseller Customer Subuser Parse Settings](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html)
+    Get current Parse settings and create, edit, and delete entries using the Reseller Customer Subuser API (Web API v2).
 
 {% anchor h2 %}
 Statistics
