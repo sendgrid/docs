@@ -87,6 +87,40 @@ Can I disable the opt-in email?
 No. SendGrid’s Email Policy requires that all email addresses sent to by SendGrid customers be confirmed via an opt-in email. In other words, every recipient of an email sent via SendGrid must actively confirm their desire to receive that email by means of an opt-in confirmation.
 
 {% anchor h2 %}
+Can I change the content of the emails before they are sent?
+{% endanchor %}
+
+Yes, you can change the content by adding a filter. You need to declare a function that takes the content of the email as an argument and then call `add_filter()` with the name "sendgrid_mail_text" or "sendgrid_mail_html", depending on what part of the email you want to change.
+
+If you want to change the _text content_ of all emails before they are delivered, add the following to the functions.php file of your WordPress installation.
+
+{% codeblock lang:php %}
+function change_sendgrid_text_email( $message ) {
+    return $message . ' changed by way of text filter ';
+}
+
+add_filter( 'sendgrid_mail_text', 'change_sendgrid_text_email' );
+{% endcodeblock %}
+
+If you want to change the _HTML content_ of all emails before they are delivered, simply add the following to the **functions.php** file of your WordPress installation.
+
+{% codeblock lang:php %}
+function change_sendgrid_html_email( $message ) {
+    return $message . ' changed by way of html filter ';
+}
+
+add_filter( 'sendgrid_mail_html', 'change_sendgrid_html_email' );
+{% endcodeblock %}
+
+{% info %}
+**Please note:** what is changed in your emails depends on the content-type that you have set in the settings page or overwritten in a filter.
+
+For "text/plain," only the text part is overwritten by the filter. For "text/html," both the text and the HTML filters are called.
+{% endinfo %}
+
+The code snippets above are usually added in the functions.php file of your theme.
+
+{% anchor h2 %}
 Related Content
 {% endanchor %}
 
