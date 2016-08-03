@@ -182,6 +182,8 @@ Settings
 
 **Status** - On or Off
 
-**Spam Threshold** - Click “Edit” to change the threshold from 1-10 (**see the message above**)
+**Spam Threshold** - Click **Edit** to change the threshold from 1-10 (**see the message above**)
 
-**URL To Post Spam Messages To** - Click “Edit” to provide an Inbound Parse URL to send spam messages to, so you can inspect them
+**URL To Post Spam Messages To** - Click “Edit” to provide an Inbound Parse URL to send spam messages to, so you can inspect them. If you don't have an Inbound Parse URL, check out [Setting Up The Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html).
+
+
