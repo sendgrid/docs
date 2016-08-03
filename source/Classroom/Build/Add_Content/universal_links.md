@@ -61,13 +61,177 @@ Once you have created and configured your Android and iOS configuration files, y
 Setting Up Universal Links Using CloudFront
 {% endanchor %}
 
-[SEE INSTRUCTIONS FROM COLLIN M]
+After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up Amazon's CloudFront to host these files.
+
+**(1)** Navigate to [Amazon CloudFront](https://aws.amazon.com/cloudfront/). Once you have created an account or are logged into your existing account, create a new **S3 bucket** and give it a unique name (e.g. links-example-com)
+
+**(2)** Upload your "apple-app-site-association" file into the root of the new S3 bucket
+
+**(3)** Under **Permissions** on the uploaded file, add a permission for **Everyone** to **Open/Download**, then hit **Save**
+
+**(4)** Under **Metadata** on the uploaded file, change the **Content-Type** value to **application/json**, then hit **Save**
+
+![]({{root_url}}/images/universal_links_1.png)
+
+**(5)** Create a new folder in the bucket called “.well-known”
+
+**(6)** Inside of the ".well-known" folder, uplaod the same "apple-app-site-association" file as in step 2
+
+**(7)** As above, add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+
+**(8)** Inside of the “.well-known” folder, upload your “assetlinks.json”
+
+**(9)** Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+
+**(10)** Navigate to the **AWS Certificate Manager**
+
+**(11)** Request a new certificate for the domain your link whitelabel is configured for (e.g. links.example.com)
+
+**(12)** AWS will send an email to the appropriate domain owners, requesting them to approve the certificate
+
+![]({{root_url}}/images/universal_links_2.png)
+
+**(13)** Ensure that the certificate is approved and issued
+
+**(14)** Navigate to AWS CloudFront
+
+**(15)** Create a new Distribution that is a Web delivery method
+
+**(16)** Under the **Origin Settings** section, set the fields as follows:
+
+![]({{root_url}}/iamges/universal_links_3.png)
+
+* **Origin Domain Name:** sendgrid.net
+* **Origin ID:** sendgrid.net
+* **Origin SSL Protocols:** only TLSv1.2
+* **Origin Protocol Policy:** HTTPS Only
+
+**(17)** Under the **Default Cache Behavior Settings** section, set the fields as follows:
+
+![]({{root_url}}/images/universal_links_4.png)
+
+* **Forward Headers:** All
+* **Forward Query Strings:** Yes
+
+**(18)** Under the **Distribution Settings** section, set the fields as follows:
+
+![]({{root_url}}/images/universal_links_5.png)
+
+* **Alternate Domain Names:** links.example.com
+* **SSL Certificate:** Custom SSL Certificate, pointing to the appropriate ACM certificate
+
+**(19)** Hit **Create Distribution**
+
+**(20)** Once the distribution is created, click into **Distribution Settings**
+
+**(21)** Under the **Origins** tab, create a new origin with the following details
+
+![]({{root_url}}/images/universal_links_6.png)
+
+* **Origin Domain Name:** links-example-com.s3.amazonaws.com
+* **Origin ID:** s3
+
+**(22)** Click **Create**
+
+**(23)** Under the **Behaviors** tab, create a new behavior with the following details
+
+![]({{root_url}}/images/universal_links_7.png)
+
+* **Path Pattern:** apple-app-site-association
+* **Origin:** s3
+* **Viewer Protocol Policy:** HTTPS Only
+
+**(24)** Click **Create**
+
+**(25)** Create another behavior with the following details
+
+* **Path Pattern:** .well-known/apple-app-site-association
+* **Origin:** s3
+* **Viewer Protocol Policy:** HTTPS Only
+
+**(26)** Click **Create**
+
+**(27)** Create a third behavior with the following details
+
+**Path Pattern:** .well-known/assetlinks.json
+**Origin:** s3
+**Viewer Protocol Policy:** HTTPS Only
+
+**(28)** Hit **Create**
+
+**(29)** Ensure that the **Behaviors** are sorted so that the **Default** is the last onNewIntent
+
+![]({{root_url}}/images/universal_links_8.png)
+
+**(30)** Wait for the distribution to deploy
+
+**(31)** Verify the distribution serves up the expected files (do this without changing the real DNS to avoid causing any issues with existing links)
+
+* https://links.example.com/apple-app-site-association
+* https://links.example.com/.well-known/apple-app-site-association
+* https://links.example.com/.well-known/assetlinks.json
+* https://links.example.com/wf/click?upn=
+
+**(32)** Verify behavior using [https://branch.io/resources/universal-links/](https://branch.io/resources/universal-links/)
 
 {% anchor h2 %}
 Setting Up Universal Links Using NGINX
 {% endanchor %}
 
-[SEE INSTRUCTIONS FROM COLLIN M]
+After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up NGINX to host these files.
+
+**(1)** Request a new certificate for the domain your link whitelabel is configured for (e.g. links.example.com)
+
+**(2)** Place the certificate chain into the file named **/etc/pki/tls/certs/links.example.com.crt**
+
+**(3)** Place the private key into the file named **/etc/pki/tls/private/links.example.com.key**
+
+**(4)** Create the following directory **/var/www/links.example.com**
+
+**(5)** Create the file **/var/www/links.example.com/apple-app-site-association**, with the appropriate content for your apple-app-site-association file, as explained in [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+
+**(6)** Create the directory **/var/www/links.example.com/.well-known**
+
+**(7)** Create the file **/var/www/links.example.com/.well-known/apple-app-site-association**, with the appropriate content for your apple-app-site-association file
+
+**(8)** Create the file **/var/www/links.example.com/.well-known/assetlinks.json**, with the appropriate content for your digital asset links file, as explained in [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).
+
+**(9)** Create the file **/etc/nginx/conf.d/links.example.com.conf**, with the following content:
+
+{% codeblock %}
+
+server {
+  listen 80;
+  server_name 'links.example.com';
+  location / {
+    proxy_pass 'https://sendgrid.net';
+    proxy_set_header 'Host' 'links.example.com';
+  }
+}
+
+server {
+  listen 443 ssl;
+  ssl_certificate '/etc/pki/tls/certs/links.example.com.crt';
+  ssl_certificate_key '/etc/pki/tls/private/links.example.com.key';
+  location = /apple-app-site-association {
+    root '/var/www/links.example.com';
+    default_type 'application/json';
+  }
+  location = /.well-known/apple-app-site-association {
+    root '/var/www/links.example.com';
+    default_type 'application/json';
+  }
+  location = /.well-known/assetlinks.json {
+    root '/var/www/links.example.com';
+    default_type 'application/json';
+  }
+  location / {
+    proxy_pass 'https://sendgrid.net';
+    proxy_set_header 'Host' 'links.example.com';
+  }
+}
+
+{% endcodeblock %}
 
 {% anchor h2 %}
 Resolving SendGrid Click Tracking Links
