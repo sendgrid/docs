@@ -29,7 +29,7 @@ Requirements
 
 * PHP version 5.3.0 or later.
 * To send emails through SMTP you need to install the [Swift Mailer plugin](https://wordpress.org/plugins/swift-mailer/).
-* If the wp_mail() function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
+* If the `wp_mail()` function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
 
 {% anchor h3 %}
 Automatically Install the SendGrid Plugin from the WordPress Admin Page
@@ -45,7 +45,7 @@ Automatically Install the SendGrid Plugin from the WordPress Admin Page
 Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin .ZIP File
 {% endanchor %}
 
-1. Upload the WordPress SendGrid Plugin to the /wp-contents/plugins/ folder.
+1. Upload the WordPress SendGrid Plugin to the **/wp-contents/plugins/** folder.
 2. Activate the plugin from the **Plugins** menu in WordPress.
 4. [Create a SendGrid account](http://sendgrid.com/partner/wordpress) on the WordPress Partner's Page
 4. Navigate to **Settings**, select **SendGrid Settings**, and enter your SendGrid credentials.
@@ -62,7 +62,7 @@ Configuring Your Credentials
 
 To enable the Subscription Widget, you’ll first need an API key to authenticate your access to SendGrid services. If you’ve already set up the General settings for the plugin, you may choose to use the same API key by checking the “Use same authentication as transactional” option.
 
-Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]() necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]().
+Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html#-What-permissions-should-my-API-keys-have) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
 
 To create a dedicated API Key for your plugin, log into your SendGrid account, navigate to **Settings** in the lefthand sidebar, and click on **API Keys**. You can learn more about API Keys and how to create them [here]({{root_url}}/User_Guide/Settings/api_keys.html).
 
@@ -84,7 +84,7 @@ If you don't have a list set up for your signups from the Subscription Widget, o
 Configuring Your Subscription Widget Form
 {% endanchor %}
 
-Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to customize the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
+Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to choose the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
 
 {% info %}
 Note: The default text [my site name] is **not** a substitution tag. You should replace the text within the "Signup email subject" field with your entire desired subject text.
