@@ -11,6 +11,18 @@ navigation:
 ---
 
 {% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [What are Universal Links?]()
+* [Requirements]()
+* [What are "apple-app-site-association" and "digital asset links" files?]()
+* [Setting Up Universal Links Using CloudFront]()
+* [Setting Up Universal Links Using NGINX]()
+* [Resolving SendGrid Click Tracking Links]()
+
+
+{% anchor h2 %}
 What are universal links?
 {% endanchor %}
 
@@ -24,7 +36,7 @@ These links are sometimes referred to as "deep links" in the context of Google's
 Regardless of the OS you are configuring your links for, we will use the term "universal links".
 {% endinfo %}
 
-Furthermore, if the user opens the link on a mobile device, but they don't have your app installed, it is possible to link them to your app's page on the app store (either Apple's App Store or Google Play). These are called **deferred universal** links.
+When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to have your SendGrid click tracking links act as universal links]().
 
 {% anchor h2 %}
 Requirements
@@ -36,6 +48,7 @@ There are several requirements that you must complete before you can begin using
 - Universal links for Android require that you set up an "app manifest" file.
 - Your apple-app-site-association and app manifest files must be hosted on an HTTPS web server or content delivery network (CDN).
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must resolve your links.
+- You must complete the [link whitelabeling process]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) for your account. When whitelabeling your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
 
 {% anchor h2 %}
 What are "apple-app-site-association" and "digital asset links" files?
@@ -54,6 +67,53 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 **For detailed instructions on how to configure an iOS "apple-app-site-association" file, please see [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).**
 
 **For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).**
+
+
+{% anchor h3 %}
+Example **apple-app-site-association** file:
+{% endanchor %}
+
+{% codeblock lang:json %}
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "PVJ3H958G6.com.sg.Universal-Link",
+        "paths": [
+          "/uni/wf/*"
+        ]
+      }
+    ]
+  }
+}
+{% endcodeblock %}
+
+{% info %}
+**Do not** append the .json file extension to your apple-app-site-association file!
+{% endinfo %}
+
+{% anchor h3 %}
+Example **assetlinks.json** file:
+{% endanchor %}
+
+{% codeblock lang:json %}
+[
+  {
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.applink.sg.myapplication",
+      "sha256_cert_fingerprints": [
+        "E7:D5:12:FF:88:56:1E:88:EA:27:E4:8D:AA:F1:4B:28:97:99:00:21:A2:9D:2A:25:33:2E:2D:1D:00:F2:60:49"
+      ]
+    },
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ]
+  }
+]
+{% endcodeblock %}
+
 
 Once you have created and configured your Android and iOS configuration files, you will have to host them on a secure HTTPS server. Keep reading below to learn how you can host these files on either [Amazon CloudFront](https://aws.amazon.com/cloudfront/) or [NGINX](https://www.nginx.com/).
 
