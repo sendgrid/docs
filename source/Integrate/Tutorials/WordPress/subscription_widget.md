@@ -29,7 +29,7 @@ Requirements
 
 * PHP version 5.3.0 or later.
 * To send emails through SMTP you need to install the [Swift Mailer plugin](https://wordpress.org/plugins/swift-mailer/).
-* If the wp_mail() function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
+* If the `wp_mail()` function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
 
 {% anchor h3 %}
 Automatically Install the SendGrid Plugin from the WordPress Admin Page
@@ -45,7 +45,7 @@ Automatically Install the SendGrid Plugin from the WordPress Admin Page
 Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin .ZIP File
 {% endanchor %}
 
-1. Upload the WordPress SendGrid Plugin to the /wp-contents/plugins/ folder.
+1. Upload the WordPress SendGrid Plugin to the **/wp-contents/plugins/** folder.
 2. Activate the plugin from the **Plugins** menu in WordPress.
 4. [Create a SendGrid account](http://sendgrid.com/partner/wordpress) on the WordPress Partner's Page
 4. Navigate to **Settings**, select **SendGrid Settings**, and enter your SendGrid credentials.
@@ -62,7 +62,7 @@ Configuring Your Credentials
 
 To enable the Subscription Widget, you’ll first need an API key to authenticate your access to SendGrid services. If you’ve already set up the General settings for the plugin, you may choose to use the same API key by checking the “Use same authentication as transactional” option.
 
-Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]() necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]().
+Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html#-What-permissions-should-my-API-keys-have) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
 
 To create a dedicated API Key for your plugin, log into your SendGrid account, navigate to **Settings** in the lefthand sidebar, and click on **API Keys**. You can learn more about API Keys and how to create them [here]({{root_url}}/User_Guide/Settings/api_keys.html).
 
@@ -84,11 +84,17 @@ If you don't have a list set up for your signups from the Subscription Widget, o
 Configuring Your Subscription Widget Form
 {% endanchor %}
 
-Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to customize the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
+Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to choose the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
+
+{% info %}
+Note: The default text [my site name] is **not** a substitution tag. You should replace the text within the "Signup email subject" field with your entire desired subject text.
+{% endinfo %}
 
 ![]({{root_url}}/images/wp_subscription_widget_3.png)
 
-You can also configure the page that will be displayed to the user by selecting it from the drop down menu on the settings page.
+Select the WordPress page that will be displayed to the user by selecting it from the drop down menu on the settings page.
+
+If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page). Once you have created and saved this new page, it will appear in the dropdown menu alongside the "Default Confirmation Page" option. For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
 
 {% anchor h3 %}
 Testing Your Subscription Widget
@@ -115,7 +121,7 @@ If you would like to add the “First Name” and “Last Name” fields, and re
 You may also configure your installation of the subscription widget by defining specific SendGrid settings as global variables within the wp-config.php file. See the next section for a list of specific settings and the corresponding PHP required to add those settings to the wp-config.php file.
 
 {% anchor h2 %}
-Manually Configuring Your Subscription Widget (For Advanced Users)
+Manually Configuring Your Subscription Widget (Advanced)
 {% endanchor %}
 
 You can manually configure your subscription widget by defining your settings within the wp-config.php file. **It is important to note that the information presented below refers to the same configuration steps previously described.** There is no added functionality that comes with manually editing your wp-config.php file, it is simply an alternative method of changing the same settings.
@@ -136,10 +142,12 @@ You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and 
 Credentials Settings for the SendGrid WordPress Subscription Widget
 {% endanchor %}
 
-<table class="table">
-  <tr><td>Authentication Method</td><td><code>define('SENDGRID_AUTH_METHOD', 'apikey');</code></td></tr>
-  <tr><td>API Key</td><td><code>define('SENDGRID_API_KEY', 'sendgrid_api_key');</code></td></tr>
-</table>
+- **Authentication Method**: `define('SENDGRID_AUTH_METHOD', 'apikey');`
+
+  The method used to authenticate the WordPress plugin when sending email through your SendGrid account.
+- **API Key**: `define('SENDGRID_API_KEY', 'sendgrid_api_key');`
+
+  Your SendGrid API Key.
 
 {% anchor h3 %}
 Manually Configuring Your Email Settings (Advanced)
@@ -149,15 +157,33 @@ Manually Configuring Your Email Settings (Advanced)
 Email Settings for the SendGrid WordPress Subscription Widget
 {% endanchor %}
 
-<table class="table">
-  <tr><td>Send method ('api' or 'smtp')</td><td><code>define('SENDGRID_SEND_METHOD', 'api');</code></td></tr>
-  <tr><td>From name</td><td><code>define('SENDGRID_FROM_NAME', 'Example Name');</code></td></tr>
-  <tr><td>From email</td><td><code>define('SENDGRID_FROM_EMAIL', 'from_email@example.com');</code></td></tr>
-  <tr><td>Reply to email</td><td><code>define('SENDGRID_REPLY_TO', 'reply_to@example.com');</code></td></tr>
-  <tr><td>Categories</td><td><code>define('SENDGRID_CATEGORIES', 'category_1,category_2');</code></td></tr>
-  <tr><td>Template</td><td><code>define('SENDGRID_TEMPLATE', 'templateID');</code></td></tr>
-  <tr><td>Content-type</td><td><code>define('SENDGRID_CONTENT_TYPE', 'html');</code></td></tr>
-</table>
+- **Send Method**: `define('SENDGRID_SEND_METHOD', 'api');`
+
+  The method used to deliver email. Can be either SMTP or the Web API. SMTP can only be used if the Swift Mailer plugin is installed.
+*****
+- **From name**: `define('SENDGRID_FROM_NAME', 'Example Name');`
+
+  The name of the sender.
+*****
+- **From email**: `define('SENDGRID_FROM_EMAIL', 'from_email@example.com');`
+
+  The email address of the sender.
+*****
+- **Reply to email**: `define('SENDGRID_REPLY_TO', 'reply_to@example.com');`
+
+  The email address that will populate the "reply to" field when recipients click the "reply" button.
+*****
+- **Categories**: `define('SENDGRID_CATEGORIES', 'category_1,category_2');`
+
+  Any [categories]({{root_url}}/User_Guide/Statistics/categories.html) that you would like to tag your WordPress emails with.
+*****
+- **Template**: `define('SENDGRID_TEMPLATE', 'templateID');`
+
+  The template that you would like to apply to your WordPress emails.
+*****
+- **Content**: `define('SENDGRID_CONTENT_TYPE', 'html');`
+
+  Denotes the type of data included in your email. Can be "plaintext" or "html".
 
 {% anchor h3 %}
 Manually Configuring Your Widget Settings (Advanced)
@@ -167,16 +193,41 @@ Manually Configuring Your Widget Settings (Advanced)
 Widget Settings
 {% endanchor %}
 
-<table class="table">
-  <tr><td>Marketing Campaigns API Keys</td><td><code>define('SENDGRID_MC_API_KEY', 'sendgrid_mc_api_key');</code></td></tr>
-  <tr><td>Use the same authentication as for sending emails ('true' or 'false')</td><td><code>define('SENDGRID_MC_OPT_USE_TRANSACTIONAL', 'false');</code></td></tr>
-  <tr><td>Contact list ID</td><td><code>define('SENDGRID_MC_LIST_ID', 'listID');</code></td></tr>
-  <tr><td>Display the first and last name fields ('true' or 'false')</td><td><code>define('SENDGRID_MC_OPT_INCL_FNAME_LNAME', 'true');</code></td></tr>
-  <tr><td>First and last name fields are required ('true' or 'false')</td><td><code>define('SENDGRID_MC_OPT_REQ_FNAME_LNAME', 'true');</code></td></tr>
-  <tr><td>Signup confirmation email subject</td><td><code>define('SENDGRID_MC_SIGNUP_EMAIL_SUBJECT', 'Confirm subscription');</code></td></tr>
-  <tr><td>Signup confirmation email content</td><td><code>define('SENDGRID_MC_SIGNUP_EMAIL_CONTENT', '&lta href="%confirmation_link%"&gtclick here&lt/a&gt');</code></td></tr>
-  <tr><td>Signup confirmation page ID</td><td><code>define('SENDGRID_MC_SIGNUP_CONFIRMATION_PAGE', 'page_id');</code></td></tr>
-</table>
+- **Marketing Campaigns API Keys**: `define('SENDGRID_MC_API_KEY', 'sendgrid_mc_api_key');`
+
+  Your API Key generated to authenticate use of the Marketing Campaigns API.
+*****
+- **Use the same authentication as for sending emails ('true' or 'false':)**: `define('SENDGRID_MC_OPT_USE_TRANSACTIONAL', 'false');`
+
+  Indicates if your API Key used to authenticate sending emails should also be used when adding new contacts via the subscription widget.
+*****
+- **Contact list ID**: `define('SENDGRID_MC_LIST_ID', 'listID');`
+
+  The ID of the contact list that you would like your new subscribers to be added to.
+
+  To find your list ID, navigate to **Marketing Campaigns**, then click **Contacts**. Click on the list you would like to use. When viewing the list, the last 6 digits of the URL make up the list ID.
+*****
+- **Display the first and last name fields ('true' or 'false')**: `define('SENDGRID_MC_OPT_INCL_FNAME_LNAME', 'true');`
+
+  Indicates if you want to display fields for your subscribers to enter both their first and last names on the subscription form.
+****
+- **First and last name fields are required ('true' or 'false')**: `define('SENDGRID_MC_OPT_REQ_FNAME_LNAME', 'true');`
+
+  Indicates if you want to require your subscribers to submit both their first and last names on the subscription form.
+*****
+- **Signup confirmation email subject**: `define('SENDGRID_MC_SIGNUP_EMAIL_SUBJECT', 'Confirm subscription');`
+
+  The subject line of your signup confirmation emails.
+*****
+- **Signup confirmation email content**: `define('SENDGRID_MC_SIGNUP_EMAIL_CONTENT', '&lta href="%confirmation_link%"&gtclick here&lt/a&gt');`
+
+  The content of the body of your signup confirmation email.
+*****
+- **Signup confirmation page ID**: `define('SENDGRID_MC_SIGNUP_CONFIRMATION_PAGE', 'page_id');`
+
+  The WordPress page ID of the page you would like to link users to when confirming their subscription.
+
+  To find your page ID, log into your WordPress account and click **Pages** in the left hand nav of your dashboard. Select your confirmation page. In the URL you will see the text "post=XX" where XX represents your page ID.
 
 {% anchor h2 %}
 Related Content

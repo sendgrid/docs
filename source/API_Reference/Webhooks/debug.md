@@ -39,9 +39,9 @@ Next, select which notifications you would like to have sent to RequestBin (if i
 Receive Inbound Parse Data
 {% endanchor %}
 
-Before you can receive data through the Inbound Parse Webhook, you will need to follow the [instructions for making changes to your MX records]({{root_url}}/API_Reference/Webhooks/parse.html) in your DNS setup.
+Before you can receive data through the Inbound Parse Webhook, you will need to follow the [instructions for making changes to your MX records]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html#-Setting-up-an-MX-Record) in your DNS setup.
 
-Once that has been completed you can [setup your Inbound Parse]({{site.site_url}}/developer/reply). In this case, you need to add your RequestBin URL as the URL to POST to.
+Once that has been completed you can [setup your Inbound Parse]({{site.site_url}}/developer/reply) by adding a hostname and a URL where the payloads can POST. In this case, you need to add your RequestBin URL as the URL to POST to.
 
 {% anchor h3 %}
 Seeing the results
