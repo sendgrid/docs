@@ -70,7 +70,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 
 {% anchor h3 %}
-Example **apple-app-site-association** file:
+Example apple-app-site-association file:
 {% endanchor %}
 
 {% codeblock lang:json %}
@@ -94,7 +94,7 @@ Example **apple-app-site-association** file:
 {% endinfo %}
 
 {% anchor h3 %}
-Example **assetlinks.json** file:
+Example assetlinks.json file:
 {% endanchor %}
 
 {% codeblock lang:json %}
@@ -123,7 +123,8 @@ Setting Up Universal Links Using CloudFront
 
 After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up Amazon's CloudFront to host these files.
 
-**(1)** Navigate to [Amazon CloudFront](https://aws.amazon.com/cloudfront/). Once you have created an account or are logged into your existing account, create a new **S3 bucket** and give it a unique name (e.g. links-example-com)
+**(1)** Navigate to [Amazon CloudFront](https://aws.amazon.com/cloudfront/). Once you have created an account or are logged into your existing
+        account, create a new **S3 bucket** and give it a unique name (e.g. links-example-com)
 
 **(2)** Upload your "apple-app-site-association" file into the root of the new S3 bucket
 
@@ -141,7 +142,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 **(8)** Inside of the “.well-known” folder, upload your “assetlinks.json”
 
-**(9)** Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+**(9)** Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** and change the Content-Type to
+        “application/json”
 
 **(10)** Navigate to the **AWS Certificate Manager**
 
@@ -159,7 +161,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 **(16)** Under the **Origin Settings** section, set the fields as follows:
 
-![]({{root_url}}/iamges/universal_links_3.png)
+![]({{root_url}}/images/universal_links_3.png)
 
 * **Origin Domain Name:** sendgrid.net
 * **Origin ID:** sendgrid.net
@@ -225,7 +227,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 **(30)** Wait for the distribution to deploy
 
-**(31)** Verify the distribution serves up the expected files (do this without changing the real DNS to avoid causing any issues with existing links)
+**(31)** Verify that the distribution serves up the expected files (do this without changing the real DNS to avoid causing any issues with
+         existing links)
 
 * https://links.example.com/apple-app-site-association
 * https://links.example.com/.well-known/apple-app-site-association
@@ -248,13 +251,16 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 **(4)** Create the following directory **/var/www/links.example.com**
 
-**(5)** Create the file **/var/www/links.example.com/apple-app-site-association**, with the appropriate content for your apple-app-site-association file, as explained in [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+**(5)** Create the file **/var/www/links.example.com/apple-app-site-association**, with the appropriate content for your
+        apple-app-site-association file, as explained in [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
 
 **(6)** Create the directory **/var/www/links.example.com/.well-known**
 
-**(7)** Create the file **/var/www/links.example.com/.well-known/apple-app-site-association**, with the appropriate content for your apple-app-site-association file
+**(7)** Create the file **/var/www/links.example.com/.well-known/apple-app-site-association**, with the appropriate content for your
+        apple-app-site-association file
 
-**(8)** Create the file **/var/www/links.example.com/.well-known/assetlinks.json**, with the appropriate content for your digital asset links file, as explained in [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).
+**(8)** Create the file **/var/www/links.example.com/.well-known/assetlinks.json**, with the appropriate content for your digital asset links
+        file, as explained in [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).
 
 **(9)** Create the file **/etc/nginx/conf.d/links.example.com.conf**, with the following content:
 
