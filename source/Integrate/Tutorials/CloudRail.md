@@ -21,7 +21,7 @@ Setup
 The easiest way to integrate CloudRail for Android is via Maven. 
 It suffices to add the following to your build.gradle:
 
-{% codeblock lang:plain %}
+{% codeblock lang:java %}
 dependencies {
     compile 'com.cloudrail:cloudrail-si-android:2.6.5'
 }
