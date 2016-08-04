@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Welcome to SendGrid's Web API v3! This API is completely RESTful, fully featured, easy to integrate with, and offers support in [7 different languages]({{root_url}}/Integrate/libraries.html).
+Welcome to SendGrid's Web API v3! This API is RESTful, fully featured, easy to integrate with, and offers support in [7 different languages]({{root_url}}/Integrate/libraries.html).
 
 {% anchor h2 %}
 Hello, World!
