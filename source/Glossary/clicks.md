@@ -19,3 +19,7 @@ SendGrid can replace the links in your email templates with a custom link that w
 In [Statistics]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html), “clicks percentage" is the total number of times your users have clicked on the various links within your emails, divided by the total number of Delivered messages. The “Unique clicks” percentage is the number of unique individuals that have clicked the links in your emails, divided by the total number of delivered messages.
 
 Users clicking a SendGrid Unsubscribe link will not count as a Click. However, if you use a third-party unsubscribe link, it will be tracked as a click.
+
+{% info %}
+SendGrid will store tracking data for unique click events for up to 7 days.
+{% endinfo %}
