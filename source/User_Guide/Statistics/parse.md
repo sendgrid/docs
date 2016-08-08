@@ -20,4 +20,4 @@ The Inbound Parse Webhook accepts emails on behalf of your specified hostname, p
 Using the API
 {% endanchor %}
 
-To use the Inbound Parse Webhook, please check out [Setting Up the Inbound Parse Webhook]({{root_url}}Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) and our [Inbound Parse API documentation]({{root_url}}/API_Reference/Webhooks/parse.html).
+To use the Inbound Parse Webhook, please check out [Setting Up the Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) and our [Inbound Parse API documentation]({{root_url}}/API_Reference/Webhooks/parse.html).
