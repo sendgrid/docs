@@ -332,7 +332,7 @@ func application(application: UIApplication, continueUserActivity userActivity: 
             print("Unable to handle user activity: No URL provided")
             return false
         }
-        let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+        let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(encodedURL, completionHandler: { (data, response, error) -> Void in
             guard let resolvedURL = response?.URL else {
                 print("Unable to handle URL: \(encodedURL.absoluteString)")
@@ -360,7 +360,7 @@ func application(application: UIApplication, continueUserActivity userActivity: 
             NSLog(@"Unable to handle user activity: No URL provided");
             return false;
         }
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        NSURLSession *session = [NSURLSession sharedSession];
         NSURLSessionDataTask *task = [session dataTaskWithURL:encodedURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
             if (response == nil || [response URL] == nil) {
                 NSLog(@"Unable to handle URL: %@", encodedURL.absoluteString);
