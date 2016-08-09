@@ -13,10 +13,7 @@ navigation:
 * [What is Two-Factor Authentication?](#-What-is-TwoFactor-Authentication)
 * [How is this release of Two-Factor Authentication different from the Legacy Two-Factor Authentication?](#-How-is-this-release-of-TwoFactor-Authentication-different-from-the-Legacy-TwoFactor-Authentication)
 * [Can I get locked out of my account by using Two-Factor Authentication? If this happens, how can I regain access?](#-Can-I-get-locked-out-of-my-account-by-using-TwoFactor-Authentication-If-this-happens-how-can-I-regain-access)
-* [Can I migrate from the Legacy Two-Factor Authentication to Two-Factor Authentication?](#-Can-I-migrate-from-the-Legacy-TwoFactor-Authentication-to-TwoFactor-Authentication)
 * [Can I use Two-Factor Authentication with multiple user credentials?](#-Can-I-use-TwoFactor-Authentication-with-multiple-user-credentials)
-* [How long can I continue to use the legacy Two-Factor Authentication before I have to migrate to the latest release?](#-How-long-can-I-continue-to-use-the-legacy-TwoFactor-Authentication-before-I-have-to-migrate-to-the-latest-release)
-* [How long will SendGrid support legacy Two-Factor Authentication?](#-How-long-will-SendGrid-support-legacy-TwoFactor-Authentication)
 * [Will my multiple user credentials be supported on Two-Factor Authentication?](#-Will-my-multiple-user-credentials-be-supported-on-TwoFactor-Authentication)
 * [What happens if I repeatedly attempt to log in with an invalid token?](#-What-happens-if-I-repeatedly-attempt-to-log-in-with-an-invalid-token)
 
