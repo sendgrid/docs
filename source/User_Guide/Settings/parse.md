@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Inbound Parse
+  title: Inbound Parse Webhook
   description: Manage your Inbound parse settings
   keywords: inbound parse, inbound parse webhook, parse settings, inbound parse settings
 title: Inbound Parse
@@ -10,27 +10,27 @@ navigation:
   show: true
 ---
 
-SendGrid’s Inbound Parse is a webhook that allows you to receive emails that get automatically broken apart by SendGrid and then sent to the location of your choosing. SendGrid will grab the content, attachments, and the headers from any email it receives via your specified hostname. Please see our [Inbound Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) technical docs for more information about how to handle the information coming to you from SendGrid’s Inbound Parse.
+SendGrid’s Inbound Parse Webhook allows you to receive emails that get automatically broken apart by SendGrid and then sent to a URL of your choosing. SendGrid will grab the content, attachments, and the headers from any email it receives for your specified hostname. Please see our [Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) technical docs for more information about how to handle the information coming to you from SendGrid’s Inbound Parse.
 
 {% anchor h2 %}
 Manage Inbound Parse
 {% endanchor %}
 
-You will see all of your individual host and URL pairs that you have set up in the table on the main Inbound Parse page. From there, you can use the gear icon on the right side of each pair to remove and edit this Inbound Parse Webhook.
+You can see all of your hostname and URL pairs that you have set up in the table on the main [Inbound Parse page](https://app.sendgrid.com/settings/parse). From there, you can use the gear icon on the right side of each pair to remove and edit the Inbound Parse Webhook settings.
 
 {% anchor h2 %}
 Add Host & URL
 {% endanchor %}
 
-Inbound Parse requires a hostname, where the emails will be sent, and the URL where SendGrid will send the data it builds from every email.
+The Inbound Parse Webhook requires a hostname, where the emails will be sent, and the URL where SendGrid will POST the data it builds from every incoming email.
 
-**Host Name** - The domain where you have pointed an MX Record, so that email can be sent to and received by addresses at this hostname. For example: sgparse.example.com
+**Host Name** - The domain where you have pointed an MX Record so addresses at this hostname can receive email. For example: parse.yourdomain.com
 
-**URL** - The URL for Inbound Parse to send all parsed email information.
+**URL** - The URL for the Inbound Parse Webhook to POST all parsed email information.
 
-**Spam Check** - Inbound Parse will check incoming emails for spam and reject the emails that are obviously spam.
+**Spam Check** - Inbound Parse will check incoming emails for spam and reject the emails that are obviously spam. Selecting this option will also include a spam report.
 
-**Send Raw** - If you would prefer to receive the full MIME message, select this option.
+**Send Raw** - Select this option if you would prefer to receive the full MIME message.
 
 {% anchor h2 %}
 Using the API

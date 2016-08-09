@@ -10,53 +10,37 @@ navigation:
 
 Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare),  [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
 {% anchor h2 %}
 Using CloudFlare
 {% endanchor %}
 
-{% anchor h3 %}
-Creating a New CloudFlare Account
-{% endanchor %}
+The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
-If you are not already a CloudFlare customer, you have two options for setting up your account. You can follow their Sign Up process, which requires that you make CloudFlare the authoritative provider for your DNS, or you can choose to perform a "CNAME configuration".
+Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
-Unless you are comfortable changing your authoritative DNS provider, please follow the instructions for [getting CloudFlare up and running using a CNAME based configuration](https://support.cloudflare.com/hc/en-us/articles/200168706-How-do-I-do-CNAME-setup-).
+![CloudFlare DNS Settings]({{root_url}}/images/cloudflare1.png)
 
-{% anchor h3 %}
-Configuring CloudFlare
-{% endanchor %}
+Add a new CNAME entry that points your configured Email Links WhiteLabel domain to sendgrid.net.
 
-First, login to your CloudFlare account.
+![CloudFlare DNS Addition]({{root_url}}/images/cloudflare2.png)
 
-Click on the SETTINGS button on the Dashboard.
+Once the record is created, click on the cloud icon under the Status column to turn it orange and enable HTTP proxy.
 
-![CloudFlare Dashboard]({{root_url}}/images/cloudflare1.png)
+![CloudFlare DNS HTTP proxy]({{root_url}}/images/cloudflare3.png)
 
-Now click on CLOUDFLARE SETTINGS.
+Next, navigate to the Page Rules settings for your domain. You will need to create a Page Rule for your Email Links Whitelabel domain that sets SSL to Full. This is necessary due to how [CloudFlare validates the certificate on the origin](https://support.cloudflare.com/hc/en-us/articles/200721975). You can find more information on the different SSL options [here](https://support.cloudflare.com/hc/en-us/articles/200170416).
 
-![CloudFlare Settings]({{root_url}}/images/cloudflare2.png)
+![CloudFlare Page Rules Addition]({{root_url}}/images/cloudflare4.png)
 
-Ensure that SSL mode is set to "Full SSL"
+Ensure that the Page Rule is On.
 
-![CloudFlare SSL]({{root_url}}/images/cloudflare3.png)
+![CloudFlare Page Rules Verification]({{root_url}}/images/cloudflare5.png)
 
-{% info %}
-SendGrid is working with CloudFlare to resolve an issue that precludes the use of "Strict SSL". We recognize that "Strict SSL" is optimal, but unfortunately it can only be enabled by requesting a special configuration modification from CloudFlare. If your threat model requires the use of "Strict SSL", let us know and we will ask CloudFlare to enable the workaround for you.
-{% endinfo %}
+If you are using a CNAME setup, you will also need to change DNS to point to the CloudFlare CNAME you created.
 
-Now, go back to WEBSITES, and click on DNS SETTINGS.
-
-![CloudFlare DNS]({{root_url}}/images/cloudflare4.png)
-
-Add a new CNAME entry that points your desired Email Links WhiteLabel domain to $customer.ct.sendgrid.net, e.g.:
-
-![CloudFlare CNAME]({{root_url}}/images/cloudflare5.png)
-
-Now click on I AM DONE WITH CNAME SETUP. Once done; contact SendGrid support,
-and they'll validate the CDN settings and enable SSL click and open
-tracking.
+Once all of this is done, you will need to contact [SendGrid support](https://support.sendgrid.com/) and request that SSL click and open tracking be enabled on your account. They will then verify the configuration and enable the setting on your account.
 
 {% anchor h2 %}
 Using Fastly

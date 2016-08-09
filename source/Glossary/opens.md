@@ -22,3 +22,7 @@ Not all email clients load images by default. Microsoft’s Outlook, Apple’s M
 In [Statistics]({{root_url}}/User_Guide/Statistics/index.html) the "opens percentage" is the total number of times your users opened your emails, divided by the total number of Delivered messages.
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
+
+{% info %}
+SendGrid will store tracking data for unique open events for up to 7 days.
+{% endinfo %}

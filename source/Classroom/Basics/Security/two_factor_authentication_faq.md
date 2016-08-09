@@ -13,10 +13,7 @@ navigation:
 * [What is Two-Factor Authentication?](#-What-is-TwoFactor-Authentication)
 * [How is this release of Two-Factor Authentication different from the Legacy Two-Factor Authentication?](#-How-is-this-release-of-TwoFactor-Authentication-different-from-the-Legacy-TwoFactor-Authentication)
 * [Can I get locked out of my account by using Two-Factor Authentication? If this happens, how can I regain access?](#-Can-I-get-locked-out-of-my-account-by-using-TwoFactor-Authentication-If-this-happens-how-can-I-regain-access)
-* [Can I migrate from the Legacy Two-Factor Authentication to Two-Factor Authentication?](#-Can-I-migrate-from-the-Legacy-TwoFactor-Authentication-to-TwoFactor-Authentication)
 * [Can I use Two-Factor Authentication with multiple user credentials?](#-Can-I-use-TwoFactor-Authentication-with-multiple-user-credentials)
-* [How long can I continue to use the legacy Two-Factor Authentication before I have to migrate to the latest release?](#-How-long-can-I-continue-to-use-the-legacy-TwoFactor-Authentication-before-I-have-to-migrate-to-the-latest-release)
-* [How long will SendGrid support legacy Two-Factor Authentication?](#-How-long-will-SendGrid-support-legacy-TwoFactor-Authentication)
 * [Will my multiple user credentials be supported on Two-Factor Authentication?](#-Will-my-multiple-user-credentials-be-supported-on-TwoFactor-Authentication)
 * [What happens if I repeatedly attempt to log in with an invalid token?](#-What-happens-if-I-repeatedly-attempt-to-log-in-with-an-invalid-token)
 
@@ -54,34 +51,12 @@ It is possible to lock yourself out of your account when using Two-Factor Authen
 If you find that you’ve lost access to your account as a result of Two-Factor Authentication, please reach out to our [Support Team](https://support.sendgrid.com/hc/en-us).
 
 {% anchor h2 %}
-Can I migrate from the previous Two-Factor Authentication to Two-Factor Authentication?
-{% endanchor %}
-
-Absolutely!
-
-During the beta period of Two-Factor Authentication, you will receive a series of emails from SendGrid encouraging you to create a new Two-Factor Authentication configuration using the Authy App.
-
-After the beta period for Two-Factor Authentication is complete, you will automatically be migrated using the mobile phone number previously used for the old Two-Factor Authentication.
-
-{% anchor h2 %}
 Can I use Two-Factor Authentication with multiple user credentials?
 {% endanchor %}
 
 You can create multiple configurations of Two-Factor Authentication, allowing you to use more than one mobile device to authenticate when logging into your account. However, you cannot create multiple, distinct Two-Factor Authentication configurations to be used by multiple credentialed users.
 
 The interaction between Two-Factor Authentication and multiple credentialed users has remained unchanged in the latest release. If Two-Factor Authentication is enabled and any multiple credentialed user attempts to log in, a notification will be triggered on the main credentialed user’s mobile device.
-
-{% anchor h2 %}
-How long can I continue to use the previous Two-Factor Authentication before I have to migrate to the latest release?
-{% endanchor %}
-
-Once the beta period for Two-Factor Authentication comes to a close, all users will be automatically migrated using the phone number associated with their old Two-Factor Authentication configuration.
-
-{% anchor h2 %}
-How long will SendGrid support the previous Two-Factor Authentication?
-{% endanchor %}
-
-We will support the previous Two-Factor Authentication only for the duration of the beta period.
 
 {% anchor h2 %}
 Will my multiple user credentials be supported on Two-Factor Authentication?
