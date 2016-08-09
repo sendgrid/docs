@@ -19,6 +19,7 @@ Table of Contents
 * [What are "apple-app-site-association" and "digital asset links" files?](#-What-are-appleappsiteassociation-and-digital-asset-links-files)
 * [Setting Up Universal Links Using CloudFront](#-Setting-Up-Universal-Links-Using-CloudFront)
 * [Setting Up Universal Links Using NGINX](#-Setting-Up-Universal-Links-Using-NGINX)
+* [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
 * [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
 
 
@@ -36,7 +37,11 @@ These links are sometimes referred to as "deep links" in the context of Google's
 Regardless of the OS you are configuring your links for, we will use the term "universal links".
 {% endinfo %}
 
-When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to have your SendGrid click tracking links act as universal links]().
+When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to ensure that your universal links are tracked](#-Resolving-SendGrid-Click-Tracking-Links).
+
+{% warning %}
+**Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links](#-Flagging-Your-Universal-Links)
+{% endwarning %}
 
 {% anchor h2 %}
 Requirements
@@ -66,7 +71,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 **For detailed instructions on how to configure an iOS "apple-app-site-association" file, please see [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).**
 
-**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started#key-terms).**
+**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started).**
 
 
 {% anchor h3 %}
@@ -81,7 +86,7 @@ Example apple-app-site-association file:
       {
         "appID": "PVJ3H958G6.com.sg.Universal-Link",
         "paths": [
-          "/uni/wf/*"
+          "/uni/*"
         ]
       }
     ]
@@ -283,6 +288,20 @@ server {
 {% endcodeblock %}
 
 {% anchor h2 %}
+Flagging Your Universal Links
+{% endanchor %}
+
+It is not unusual to include links to pages outside of your app alongside links to your app in the same email. Not all of these links should be treated as universal links. For example, if you have Facebook or Twitter links tagged as universal links, users will be taken to your app when they click those links instead of being taken to your Facebook and Twitter pages.
+
+**To flag links to your app as universal links, simply include the attribute `universal="true"` within the HTML link of your email.**
+
+For example:
+
+`<a href="links.example.com" universal="true">Link to your app!</a>`
+
+If you exclude the `universal="true"` attribute, your links will still function, but they will take your recipient to their mobile browser.
+
+{% anchor h2 %}
 Resolving SendGrid Click Tracking Links
 {% endanchor %}
 
@@ -299,7 +318,7 @@ Now that you've successfully set up your app to open SendGrid click tracking lin
 Resolving Links in iOS
 {% endanchor %}
 
-In iOS, you can use `NSURLSession` resolve the link.
+If you have written your app for iOS, you can use `NSURLSession` resolve the link.
 
 For example:
 
@@ -363,7 +382,7 @@ func application(application: UIApplication, continueUserActivity userActivity: 
 Resolving Links in Android
 {% endanchor %}
 
-For Android, you can use `HttpURLConnection` to resolve the URL by setting `setInstanceFollowRedirects` to `false`.
+If you have written your app for Android, you can use `HttpURLConnection` to resolve the URL by setting `setInstanceFollowRedirects` to `false`.
 
 For example:
 
