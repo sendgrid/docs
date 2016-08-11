@@ -8,6 +8,7 @@ Redirect 301 /API_Reference/Customer_Subuser_API/automatic_login.html https://se
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Customer_Subuser_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/index.html
+Redirect 301 /API_Reference/Web_API/Customer_Subuser_API/multi_cred.html https://sendgrid.com/docs/API_Reference/Web_API_v3/teammates.html
 Redirect 301 /API_Reference/Marketing_Emails_API/categories.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/categories.html
 Redirect 301 /API_Reference/Marketing_Emails_API/emails.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html
 Redirect 301 /API_Reference/Marketing_Emails_API/lists.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html
