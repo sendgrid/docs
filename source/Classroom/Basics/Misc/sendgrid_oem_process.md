@@ -14,18 +14,17 @@ navigation:
 # What is it?
 
 
-SendGrid’s OEM process allows customers to use SendGrid’s service to send email on behalf of your customers, and can also include direct sending for your own business. 
+SendGrid’s OEM process allows customers to use SendGrid’s service to send email on behalf of your customers, and can also include direct sending for your own business.
 
-Typically this is achieved by utilizing our subuser functionality, where you create a parent account and then separate your customers into [subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html): child accounts that belong to (and live within) a parent account. Subusers have their own permissions and sending limits, which you assign as you create them. For most customers who are sending email on behalf of their customers as an OEM, it's a great way to separate their users' data. It also gives you the ability to create a [domain whitelabel]({{root_url}}/User_Guide/Settings/Whitelabel/domains.html) for each of your customers, effectively masking SendGrid as the delivery engine for the end recipient, and you as the account owner if you choose. 
-
- 
+Typically this is achieved by utilizing our subuser functionality, where you create a parent account and then separate your customers into [subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html): child accounts that belong to (and live within) a parent account. Subusers have their own permissions and sending limits, which you assign as you create them. For most customers who are sending email on behalf of their customers as an OEM, it's a great way to separate their users' data. It also gives you the ability to create a [domain whitelabel]({{root_url}}/User_Guide/Settings/Whitelabel/domains.html) for each of your customers, effectively masking SendGrid as the delivery engine for the end recipient, and you as the account owner if you choose.
 
 # Why It Matters
 
-All SendGrid Pro and Premier level accounts have the ability to create subusers, but the number of potential subaccounts is initially capped at 15. 
+All SendGrid Pro and Premier level accounts have the ability to create subusers, but the number of potential subaccounts is initially capped at 15.
 
-If your use case requires more than 15 subaccounts, we can expand that number after completion of our OEM Agreement. To become a SendGrid OEM customer, please contact our Customer Success team at [customersuccess@sendgrid.com](mailto:customersuccess@sendgrid.com). We will then verify your account integrity and provide you with the OEM agreement. Upon signing it, we will return a counter signed copy for your records. At that point, we can increase the number of subusers available to your SendGrid account. 
+If your use case requires more than 15 subaccounts, we can expand that
+number with compliance with our [OEM Terms and Conditions](https://sendgrid.com/policies/tos/) (Section 24 of our Terms of Service).
 
-*NOTE:* _Once you are an OEM customer, you are responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support, and education for your clients. If you engage in direct sending of emails to your customers (as permitted by the OEM Agreement), you will also be responsible for your content and sending/data collection practices._ 
+To become a SendGrid OEM customer, please contact our Customer Success team at [customersuccess@sendgrid.com](mailto:customersuccess@sendgrid.com).
 
-
+*NOTE:* _Once you are an OEM customer, you are responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support, and education for your clients. If you engage in direct sending of emails to your customers (as permitted by the OEM Agreement), you will also be responsible for your content and sending/data collection practices._

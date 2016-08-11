@@ -11,6 +11,10 @@ navigation:
 ---
 The Sender Identities API allows you to create and manage sender identities for Marketing Campaigns.
 
+{% info %}
+The `nickname`, `from.email`, `address`, `city`, and `country` parameters are required when creating and updating sender identities.
+{% endinfo %}
+
 {% anchor h2 %}
 Create a Sender Identity [POST]
 {% endanchor %}

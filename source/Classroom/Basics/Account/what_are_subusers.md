@@ -19,6 +19,6 @@ There are three typical use cases for Subusers:
 
 2. External Use, Unwhitelabeled Sending - If you are creating a Subuser to send messages on behalf of a new domain, you can either send on behalf of your current Whitelabel or you can purchase a new IP to Whitelabel a new Subdomain. Creating a Subuser that uses the parent account IP and Whitelabel results in a  ['via' or 'on behalf of' message]({{root_url}}/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html) displaying in some email clients if you use a FROM domain that does not match the Whitelabeled domain. These settings can be adjusted in the Whitelabels section of your account settings.
 
-3. External Use, Whitelabeled Sending - To send on behalf of a different domain and have the messages fully Whitelabeled, you need to purchase a new sending IP and Whitelabel that IP to the new sending IP. Please review our [Creating & Whitelabeling A New Subuser To A New Domain](http://support.sendgrid.com/entries/21758936-creating-whitelabeling-a-subuser-to-a-new-sending-domain) article for more information.
+3. External Use, Whitelabeled Sending - To send on behalf of a different domain and have the messages fully Whitelabeled, you need to purchase a new sending IP and Whitelabel that IP to the new sending domain.
 
 Subusers are created and managed in the Subuser Management section of your account settings.

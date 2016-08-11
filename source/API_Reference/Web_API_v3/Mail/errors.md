@@ -1,8 +1,8 @@
 ---
 layout: page
 seo:
-  title: Errors
-title: Errors
+  title: Status Codes & Errors for SendGrid Mail API
+title: Status Codes & Errors
 description: v3 Mail Send Errors and Troubleshooting Reference
 weight: 98
 navigation:
@@ -25,7 +25,7 @@ Failed requests will always return an error response, including a response code,
   <tr>
     <td>200</td>
     <td>OK</td>
-    <td>Your message is valid, but it is not queued to be delivered.</td>
+    <td>Your message is valid, but it is not queued to be delivered. †</td>
   </tr>
   <tr>
     <td>202</td>
@@ -88,6 +88,7 @@ Failed requests will always return an error response, including a response code,
     <td>The SendGrid v3 Web API is not available.</td>
   </tr>
 </table>
+† Sandbox mode only.
 
 Following is a complete list of the possible parameter level errors that you may receive when making a request to the v3 Mail Send endpoint. Each error will include the field that caused the error (e.g. "personalizations" or "personalizations.to"), a brief message explaining the cause of the error, and a link to the error in the table below. Here you will find links to relevant documentation for each error.
 

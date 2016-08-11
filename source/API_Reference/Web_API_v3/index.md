@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Welcome to SendGrid's Web API v3! This API is completely RESTful, fully featured, easy to integrate with, and offers support in [7 different languages]({{root_url}}/Integrate/libraries.html).
+Welcome to SendGrid's Web API v3! This API is RESTful, fully featured, easy to integrate with, and offers support in [7 different languages]({{root_url}}/Integrate/libraries.html).
 
 {% anchor h2 %}
 Hello, World!
@@ -17,7 +17,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "YOU@sendgrid.com"}]}],"from": {"email": "dx@sendgrid.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "your.email@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% info %}

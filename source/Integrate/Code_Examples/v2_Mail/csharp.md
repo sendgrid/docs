@@ -23,7 +23,9 @@ myMessage.Subject = "Sending with SendGrid is Fun";
 myMessage.Text = "and easy to do anywhere, even with C#";
  
 var transportWeb = new SendGrid.Web("SENDGRID_APIKEY");
-transportWeb.Deliver(myMessage).Wait();
+transportWeb.DeliverAsync(myMessage);
+// NOTE: If your developing a Console Application, use the following so that the API call has time to complete
+// transportWeb.DeliverAsync(myMessage).Wait();
 {% endcodeblock %}
 
 {% anchor h2 %}
