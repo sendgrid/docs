@@ -48,7 +48,7 @@ It is possible to lock yourself out of your account when using Two-Factor Authen
 * You choose to use Authy and SMS but have neither cellular service nor WiFi.
 * You have a shared SendGrid account, but only one user has a mobile device configured with Two-Factor Authentication.
 
-If you find that you’ve lost access to your account as a result of Two-Factor Authentication, please reach out to our [Support Team](https://support.sendgrid.com/hc/en-us).
+If you find that you’ve lost access to your account as a result of Two-Factor Authentication, please reach out to the [Authy Support Team](https://www.authy.com/faq/).
 
 {% anchor h2 %}
 Can I use Two-Factor Authentication with multiple user credentials?
@@ -62,7 +62,7 @@ The interaction between Two-Factor Authentication and multiple credentialed user
 Will my multiple user credentials be supported on Two-Factor Authentication?
 {% endanchor h2 %}
 
-You may not have individual Two-Factor Authentication configurations for each of your multiple credentialed users. You may set up multiple devices with the Authy App, but you cannot assign one device to one multiple credentialed user.
+Yes! Multiple user credentials can choose to have their own individual two-factor authentication.  
 
 {% anchor h2 %}
 What happens if I repeatedly attempt to log in with an invalid token?
