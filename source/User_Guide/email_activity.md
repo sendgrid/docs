@@ -47,7 +47,7 @@ email previously bounced, or that recipient has marked your email as spam. For m
 
 **[Spam Reports]({{root_url}}/Glossary/spam_reports.html)** - Whenever a recipient marks your email as spam and their mail server tells us about it.
 
-**Parse** - Whenever an email comes in through the [Inbound Parse API]({{root_url}}/API_Reference/Webhooks/parse.html).
+**Parse** - Whenever an incoming email is processed through the [Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html).
 
 {% anchor h2 %}
 Filtering The Activity Feed

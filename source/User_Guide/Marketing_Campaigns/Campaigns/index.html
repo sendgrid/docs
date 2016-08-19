@@ -12,6 +12,22 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/139274837" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+<ul>
+  <li><a href="#-Choose-Your-Template">Choose Your Tempalte</a></li>
+  <li><a href="#-Add-Your-Content-and-Manage-Your-Settings">Add Your Content and Manage Your Settings</a></li>
+  <li><a href="#-AB-Testing-Your-Campaigns">A/B Testing Your Campaigns</a></li>
+  <li><a href="#-Preview-Your-Campaign">Preview Your Campaign</a></li>
+  <li><a href="#-Save-or-Send-Your-Campaign">Save or Send Your Campaign</a></li>
+  <li><a href="#-View-All-of-Your-Campaigns">View All of Your Campaigns</a></li>
+  <li><a href="#-Duplicating-a-Campaign">Duplicating a Campaign</a></li>
+  <li><a href="#-Unschedule-a-Campaign">Unschedule a Campaign</a></li>
+  <li><a href="#-Campaign-Statistics">Campaign Statistics</a></li>
+  <li><a href="#-Exporting-Statistics-for-Multiple-Campaigns">Exporting Statistics for Multiple Campaigns</a></li>
+  <li><a href="#-Link-Tracking">Link Tracking</a></li>
+  <li><a href="#-Engagement-Statistics">Engagement Statistics</a></li>
+</ul>
+
+
 {% info %}
 Accounts are currently limited to 2500 campaigns.
 {% endinfo %}
@@ -172,6 +188,30 @@ View All of Your Campaigns
 From the campaigns page, you can view all the campaigns that you have built or sent. High level statistics about each campaign will be available in-line with the name, send date, and status of the campaign. You can also click the gear icon at the right to duplicate, view stats, or preview the campaign.
 
 {% anchor h2 %}
+Search Your Campaigns
+{% endanchor %}
+
+<p>
+  As you create and send more campaigns, it can become difficult to find older campaigns, either to view their statistics or to reuse content for a new campaign.
+</p>
+
+<p>
+  From the campaigns page, simply type a campaign name or any word or words that would be in the campaign name into the search bar.
+</p>
+
+<p>
+  <img src="{{root_url}}/images/campaigns_search.png" alt="Search Campaigns" />
+</p>
+
+<p>
+  All campaigns with names containing the searched word or words will be returned, with up to 10 search results displayed per page. You may select search results to delete or export by checking the box on the left, or you can edit a campaign by opening the Action Cog menu as you normally would from the campaigns index. You may also return to the campaigns index at any time, either by clicking Campaigns in the navigation menu on the left, or by clearing the search box.
+</p>
+
+<p>
+  You may also filter your results by status: "All", "Draft", "Scheduled", "In Progress", "Sent", or "Canceled."
+</p>
+
+{% anchor h2 %}
 Duplicating a Campaign
 {% endanchor %}
 
@@ -247,6 +287,68 @@ Click tracking stats will be displayed for the top 20 most frequently clicked li
 
 <p>
 For more information about how to add links to your campain to ensure that they are tracked, please visit our <a href="{{root_url}}/Classroom/Track/Clicks/click_tracking_links_with_substitution_tags.html">Classroom</a>.
+</p>
+
+{% anchor h2 %}
+Engagement Statistics
+{% endanchor %}
+
+{% anchor h3 %}
+Create a Segment Based On Your Engagement Metrics
+{% endanchor %}
+
+<p>
+  Marketing Campaigns makes it very easy to create a dynamic segment of recipients who have either opened one of your campaigns or have clicked links within a campaign.
+</p>
+
+<p>
+  First, from either the <strong>campaigns list view</strong> or the individual <strong>campaign stats page</strong>, hover over the "Unique Opens" or "Unique Clicks" stats.
+</p>
+
+<p>
+  <i>From the campaigns list view:</i>
+  <img src="{{root_url}}/images/campaign_stats_2.png" alt="View Details" />
+</p>
+
+<p>
+  <i>From the individual campaign stats page:</i>
+  <img src="{{root_url}}/images/campaign_stats_1.png" alt="View Details" />
+</p>
+
+<p>
+  Click <strong>View Details</strong>.
+</p>
+
+<p>
+  This will present you with a real-time list of all recipients who either opened your campaign, or clicked a link within your campaign (depending on the particular metric you selected).
+</p>
+
+<p>
+  Next, click <strong>Create Segment</strong>. This will open a segmentation window. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name “Contacts who [clicked/opened] [your campaign name].”
+</p>
+
+<p>
+  You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, click <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment">here</a>.
+</p>
+
+<p>
+  <img src="{{root_url}}/images/campaign_stats_4.png" alt="View Details" />
+</p>
+
+<p>
+  Once you're done creating your segment, click <strong>Save</strong>. You now have a dynamic segment that will continuously update as recipients engage with this campaign.
+</p>
+
+{% anchor h3 %}
+Export a List of Engaged Recipients
+{% endanchor %}
+
+<p>
+  In addition to creating a dynamic segment of recipients based on campaign engagement as described above, you can also export a list of all contacts who have either opened your campaign or have clicked a link within your campaign (up until that moment).
+</p>
+
+<p>
+  Simply hover over either the "Unique Opens" or "Unique Clicks" stats of the campaign that you're interested in. Then click <strong>View Details</strong>. Finally, click <strong>Export CSV</strong>.
 </p>
 
 <div class="row">
