@@ -44,5 +44,5 @@ One strategy is to create a segment of recipients who rarely engage with your ca
 Sometimes having a very large percentage of unengaged recipients indicates that your contact list is becoming stale. In this situation, we recommend you consider sending an email to your unengaged recipients explicitly asking if they would like to continue hearing from you, and if so, how. This is a smart, simple way to improve your deliverability and maintain your positive reputation as a sender.
 
 {% info %}
-To learn more about email engagement and deliverability, please read [Comparing Industry Email Engagement Stats](https://sendgrid.com/blog/comparing-industry-email-engagement-stats/) on our blog!
+To learn more about email engagement and deliverability, please read _[Comparing Industry Email Engagement Stats](https://sendgrid.com/blog/comparing-industry-email-engagement-stats/)_ on our blog!
 {% endinfo %}
