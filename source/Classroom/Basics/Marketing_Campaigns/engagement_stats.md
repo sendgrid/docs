@@ -10,12 +10,13 @@ navigation:
   show: true
 ---
 
-Marketing Campaigns has made it easier than ever to gather engagement statistics for each of your campaigns. You can view how many times your campaign was opened, the number of times links were clicked within your campaign, and the specific recipients who either opened or clicked a link within your campaign.
 
-These engagement statistics can provide valuable insight not only into how well your campaigns are performing, but also which exact recipients are the most (or least) engaged with your content.
+Marketing Campaigns makes it simple to understand how customers are (or aren’t) engaging with your campaigns. You can view in aggregate how many times your campaign was opened, the number of clicks within your campaign, and the specific recipients who either opened or clicked within your campaign.
+
+These engagement statistics can provide valuable insight not only into how well your campaigns are performing, but also which recipients are the most (or least) engaged with your content.
 
 {% info %}
-For detailed instructions on how to view your engagement stats, and how to create a segment of recipients based on these stats, please visit our [User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics).
+**For detailed instructions on how to view your engagement stats, and how to create a dynamic segment of recipients based on these stats, please visit our [User Guide](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics).**
 {% endinfo %}
 
 {% anchor h2 %}
@@ -23,23 +24,25 @@ Leveraging Your Engagement Statistics
 {% endanchor %}
 
 {% anchor h3 %}
-Cultivating Engaged Recipients
+Cultivate Engaged Recipients
 {% endanchor %}
 
-Creating a dynamic segment of recipients who have either opened one of your campaigns or have clicked links within a campaign can be useful in many ways. You might send them a follow-up email that’s specifically designed to build on your first campaign. Now that you have more information about _what_ content initially sparked those readers' interest, you can continue the conversation.
+Creating a dynamic segment of recipients who have either opened one of your campaigns or have clicked within a campaign can be useful in many ways. As one example, you can use engagement metrics to identify who has engaged with a campaign, and then send them a highly-relevant follow-up message that builds on the first campaign they demonstrated interest in.
 
-Furthermore, recipients who have expressed an interest in your content can also be sent to more frequently. In order to protect your reputation as a sender, it is important to ensure that the people you frequently send campaigns to are genuinely interested in receiving those campaigns. [Engagement statistics]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics) can help you seek out these recipients.
+You can also use engagement data to optimize your sending cadence. For instance, recipients who have opened or clicked your content are expressing interest in what you have to say, and may like to receive more frequent messages.
+
+Of course, in order to protect your reputation as a sender, it is important to test sending frequency by monitoring the engagement of recipients as you send more frequently. If you see your overall engagement start to dip after increasing your frequency, you should immediately re-evaluate the increase.
 
 {% anchor h3 %}
-Re-Ignite Relationships With Stale Recipients
+Reignite Relationships With Unengaged Recipients
 {% endanchor %}
 
-Identifying recipients who _have not_ engaged with one of your recent campaigns can often be just as useful.
+Identifying recipients who have not engaged with one of your campaigns can often be just as useful as identifying those who are engaged.
 
-Creating a list of recipients who rarely (or never) engage with your campaigns can help you determine how to modify your message to better target those recipients in the future. Look for patterns in your campaign content and try to correlate those patterns with unengaged recipients.
+One strategy is to create a segment of recipients who rarely engage with your campaigns. This can help you identify recipients who are not responding to your current content strategy, and test new approaches. This might include different subject matter, subject lines, offers, or sending frequency (i.e sending monthly rather than weekly).
 
-Occasionally, it is best to simply send to these recipients less frequently.
+Sometimes having a very large percentage of unengaged recipients indicates that your contact list is becoming stale. In this situation, we recommend you consider sending an email to your unengaged recipients explicitly asking if they would like to continue hearing from you, and if so, how. This is a smart, simple way to improve your deliverability and maintain your positive reputation as a sender.
 
-Sometimes having a very large percentage of unengaged recipients indicates that your contact list is becoming stale.
-
-If you feel that you have an abnormally large number of unengaged recipients, we recommend that you consider sending an email explicitly asking these recipients if they would like to continue hearing from you, and if so, how. This is a smart, simple way to improve your deliverability and maintain your positive reputation as a sender.
+{% info %}
+To learn more about email engagement and deliverability, please read [Comparing Industry Email Engagement Stats](https://sendgrid.com/blog/comparing-industry-email-engagement-stats/) on our blog!
+{% endinfo %}
