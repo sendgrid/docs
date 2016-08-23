@@ -27,4 +27,5 @@ Our open source Eventkit app alleviates the hassle of needing to set up an endpo
 
 ###2. Once you have EventKit set up, watch this video to learn more about the features within as well as how to navigate the user interface. 
 
-##VIDEO COMING SOON
+<iframe src="https://player.vimeo.com/video/179804115" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
