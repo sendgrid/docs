@@ -1,16 +1,28 @@
 ---
 layout: page
 weight: 60
-title: Lists
+title: Lists and Segmentation
 navigation:
   show: true
 seo:
-  title: Lists
+  title: Lists and Segmentation
   override: true
   description:
 ---
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+{% anchor h2 %}
+What are Lists and Segments?
+{% endanchor %}
+
+Lists are simply static collections of Marketing Campaigns contacts. By default, any new contacts you add are stored under "ALL CONTACTS." You may create new lists when adding contacts either manually, or when uploading a CSV (comma separated values) file.
+
+Segmentation allows you to create dynamically updated sub-lists of contacts (or segments) that share similar traits such as age, gender, location, etc. Segments are dynamically updated over time as the traits of your contacts change. Segmentation can be especially useful to ensure that you are targeting the best recipients for your campaign.
+
+{% info %}
+You must create at least one list or segment in order to send a campaign.
+{% endinfo %}
 
 {% anchor h2 %}
 Managing Your Lists
@@ -89,12 +101,12 @@ To set up a segment, click the “add list or Segment” button from [Contacts](
 ![]({{root_url}}/images/lists_5.png "Delete a List")
 
 Then select the “New Segmentation” option. You can then start managing the parameters for your segment including the name and the conditions that allow a
-contact into this segment. This is where the type you set for your custom fields matters because different operators (```IS```,
-```IS NOT```, ```IS BEFORE```, ```IS AFTER```, ```CONTAINS WORD```, etc.) will show up depending on the type of custom field you selected. For
+contact into this segment. This is where the type you set for your custom fields matters because different operators (`IS`,
+`IS NOT`, `IS BEFORE`, `IS AFTER`, `CONTAINS WORD`, etc.) will show up depending on the type of custom field you selected. For
 example, a field that is a “number” will show greater than, less than, and equals as options where a “text” field will
-show ```IS``` and ```IS NOT``` as options. As you add conditions you
-will be able to select ```AND``` or ```OR``` as options, where ```AND``` indicates
-both conditions are required and ```OR``` indicates either condition will work.
+show `IS` and `IS NOT` as options. As you add conditions you
+will be able to select `AND` or `OR` as options, where `AND` indicates
+both conditions are required and `OR` indicates either condition will work.
 
 {% info %}
 You can add up to 15 different conditions per segment.
@@ -103,7 +115,7 @@ You can add up to 15 different conditions per segment.
 ![]({{root_url}}/images/lists_3.png "Create a Segment")
 
 You can also segment your users by their engagement with your email campaigns. To do this, create a new list and choose
-the ```Engagement: Opens``` or ```Engagement: Clicks``` option from
+the `Engagement: Opens` or `Engagement: Clicks` option from
 the bottom of the conditions fields list. Based on the criteria you set, you can then market to your users based on how
 engaged they are with a specific campaign. This is especially useful for doing things like rewarding high engagement users.
 
@@ -111,7 +123,7 @@ engaged they are with a specific campaign. This is especially useful for doing t
 
 
 {% anchor h3 %}
-Export a Segment List
+Export a Segment
 {% endanchor %}
 
 Export the contacts on a list by clicking the gear icon in the same row as your segment and then choosing the “export”
