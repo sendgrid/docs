@@ -7,7 +7,7 @@ title: Universal Links
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 {% anchor h2 %}
@@ -29,7 +29,7 @@ What are universal links?
 
 Mobile devices are increasingly becoming the preferred method of receiving, reading, and engaging with email. If you send an email containing a link to your website, but you also have a corresponding mobile application, it is possible to ensure that any recipients who click the link on their mobile device are taken directly to your app instead of their web browsers.
 
-This is accomplished by using **universal links**. A universal link is a unique URL that can be configured to open a window in either the recipient's web browser, mobile browser, or mobile application depending on the device the recipient is using.
+This is accomplished by using **universal links**. A universal link is a unique URL that can be configured to open a window in either the recipient's web browser, mobile browser, or mobile application depending on the device the recipient is using. SendGrid enables you to simply tag individual links that you would like to be converted to universal links, without sacrificing the ability to track clicks on those links.
 
 {% info %}
 These links are sometimes referred to as "deep links" in the context of Google's Android OS. Apple uses the term "universal links".
@@ -40,7 +40,7 @@ Regardless of the OS you are configuring your links for, we will use the term "u
 When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to ensure that your universal links are tracked](#-Resolving-SendGrid-Click-Tracking-Links).
 
 {% warning %}
-**Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links](#-Flagging-Your-Universal-Links)
+**Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links as universal](#-Flagging-Your-Universal-Links).
 {% endwarning %}
 
 {% anchor h2 %}
@@ -49,10 +49,10 @@ Requirements
 
 There are several requirements that you must complete before you can begin using universal links in your email:
 
-- Universal links for iOS require an "apple-app-site-association" file.
-- Universal links for Android require that you set up an "app manifest" file.
-- Your apple-app-site-association and app manifest files must be hosted on an HTTPS web server or content delivery network (CDN).
-- To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must resolve your links.
+- Universal links for iOS require an "apple-app-site-association" JSON file.
+- Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android "app manifest" file.
+- Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
+- To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#-Resolving-SendGrid-Click-Tracking-Links).
 - You must complete the [link whitelabeling process]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) for your account. When whitelabeling your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
 
 {% anchor h2 %}
@@ -118,6 +118,16 @@ Example assetlinks.json file:
   }
 ]
 {% endcodeblock %}
+
+{% info %}
+When configuring your universal links for Android devices, you must specify which URLs should be handled by the app and which should not.
+
+For iOS this is set in the "apple-app-site-association" file by including "paths": ["/uni/\*"], indicating that any URL containing the path "/uni" should be opened in your app.
+
+Android requires that you specify these paths inside your app, rather than the assetlinks.json file.
+
+This is accomplished by adding an "intent" filter. Please visit Google's Developer Documentation to learn how to add an intent filter in your app.
+{% endinfo %}
 
 
 Once you have created and configured your Android and iOS configuration files, you will have to host them on a secure HTTPS server. Keep reading below to learn how you can host these files on either [Amazon CloudFront](https://aws.amazon.com/cloudfront/) or [NGINX](https://www.nginx.com/).
@@ -256,15 +266,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 server {
   listen 80;
-  server_name 'links.example.com';
-  location / {
-    proxy_pass 'https://sendgrid.net';
-    proxy_set_header 'Host' 'links.example.com';
-  }
-}
-
-server {
   listen 443 ssl;
+  server_name 'links.example.com';
   ssl_certificate '/etc/pki/tls/certs/links.example.com.crt';
   ssl_certificate_key '/etc/pki/tls/private/links.example.com.key';
   location = /apple-app-site-association {
@@ -291,6 +294,10 @@ server {
 Flagging Your Universal Links
 {% endanchor %}
 
+{% info %}
+It is important to make sure that only the links within your email that point to your app are flagged as universal links.
+{% endinfo %}
+
 It is not unusual to include links to pages outside of your app alongside links to your app in the same email. Not all of these links should be treated as universal links. For example, if you have Facebook or Twitter links tagged as universal links, users will be taken to your app when they click those links instead of being taken to your Facebook and Twitter pages.
 
 **To flag links to your app as universal links, simply include the attribute `universal="true"` within the HTML link of your email.**
@@ -313,6 +320,8 @@ Now that you've successfully set up your app to open SendGrid click tracking lin
 
 1. Trigger the "click" event in your SendGrid account for statistics.
 2. Find the original URL to determine which part of your app the user should be taken to.
+
+The following code examples help to illustrate what logic should be included within your own app to guarantee that your links are resolved, and tracked by SendGrid.
 
 {% anchor h3 %}
 Resolving Links in iOS
