@@ -390,6 +390,7 @@ Redirect 301 /Classroom/Track/drop_reason_unsubscribed_address.html https://send
 Redirect 301 /Classroom/Track/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html
 Redirect 301 /Classroom/Track/unsubscribe_via_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
 Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html https://sendgrid.com/docs/Classroom/Track/index.html
+Redirect 301 /Classroom/Track/Collecting_Data/sendwithus.html https://support.sendwithus.com/esp_accounts/connect_sendgrid/
 
 #######
 #
@@ -455,6 +456,7 @@ Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User
 
 Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/docs/Glossary/peer_invitations.html
 Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/ips.html
+Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
 
 #######
 #
