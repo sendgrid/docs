@@ -56,7 +56,7 @@ Under **URL** enter the tag "[Unsubscribe]" and click **Confirm**. By linking th
 
 ![]({{root_url}}/images/mc_group_unsubscribes_4.png)
 
-Finally, click Save to save your campaign.
+Finally, click **Save** to save your campaign.
 
 Congratulations! You've now successfully added a group unsubscribe link to your campaign! If one of your recipients clicks this link in your campaign, they will be added to the Unsubscribe Group shown a confirmation page.
 
@@ -94,6 +94,6 @@ SendGrid will replace this tag with a link to an unsubscribe confirmation page f
 <a href='[unsubscribe]'>Click Here to Unsubscribe</a>
 {% endcodeblock %}
 
-* For HTML content using the design editor, add a hyperlink to your unsubscribe text and designate the URL as "[Unsubscribe]"
+* For HTML content using the design editor, add a hyperlink to your unsubscribe text and designate the URL as "[Unsubscribe]".
 
 * For plain text content, add the tag after your unsubscribe text. For example, "To unsubscribe, visit [unsubscribe]."
