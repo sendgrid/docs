@@ -10,6 +10,10 @@ navigation:
   show: false
 ---
 
+{% info %}
+Universal Links is currently in beta!
+{% endinfo %}
+
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}
