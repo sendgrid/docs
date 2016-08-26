@@ -16,9 +16,11 @@ seo:
 What are Lists and Segments?
 {% endanchor %}
 
-Lists are simply static collections of Marketing Campaigns contacts. By default, any new contacts you add are stored under "ALL CONTACTS." You may create new lists when adding contacts either manually, or when uploading a CSV (comma separated values) file.
+Lists are simply static collections of Marketing Campaigns contacts. By default, any new contacts you add are stored under ALL CONTACTS. You may create new lists when adding contacts either manually, or when uploading a CSV (comma separated values) file.
 
-Segmentation allows you to create dynamically updated sub-lists of contacts (or segments) that share similar traits such as age, gender, location, etc. Segments are dynamically updated over time as the traits of your contacts change. Segmentation can be especially useful to ensure that you are targeting the best recipients for your campaign.
+Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or [how they’ve engaged with your emails previously]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). You can create a segment that pulls from ALL CONTACTS or from a specific existing list.
+
+Segments are dynamically updated over time as you add customers who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. Segmentation can be especially useful to ensure that you are targeting the best recipients for your campaign.
 
 {% info %}
 You must create at least one list or segment in order to send a campaign.
@@ -28,8 +30,7 @@ You must create at least one list or segment in order to send a campaign.
 Managing Your Lists
 {% endanchor %}
 
-All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on
-the right side of your list title to see Export, View List, Edit List, and Delete options.
+All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on the right side of your list title to see Export, View List, Edit List, and Delete options.
 
 ![]({{root_url}}/images/lists_2.png "List Management Options")
 
@@ -37,8 +38,7 @@ the right side of your list title to see Export, View List, Edit List, and Delet
 Change the List Name
 {% endanchor %}
 
-To change the name of a list, view the list and then click the pencil icon next to the name of the list at the top of the
-page. You will be able to edit the name and then hit your enter key to save the change.
+To change the name of a list, view the list and then click the pencil icon next to the name of the list at the top of the page. You will be able to edit the name and then hit your enter key to save the change.
 
 ![]({{root_url}}/images/lists_1.png "Change your list name")
 
@@ -46,17 +46,13 @@ page. You will be able to edit the name and then hit your enter key to save the 
 Edit a List
 {% endanchor %}
 
-When you select the "Edit List" option, you will be shown the upload contacts options that will allow you to add contacts directly to this list. You will
-also be able to create a segment of this list directly from this window.
+When you select the “Edit List” option, you will be shown the upload contacts options that will allow you to add contacts directly to this list. You will also be able to create a segment of this list directly from this window.
 
 {% anchor h3 %}
 Delete a List
 {% endanchor %}
 
-If you would like to delete a list, go to [Contacts]({{site.marketing_campaigns_url}}/contacts) where you will see
-a list of your contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
-that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s
-information will continue to exist in your contact database.
+If you would like to delete a list, go to [Contacts]({{site.marketing_campaigns_url}}/contacts) where you will see a list of your contacts, then click the gear icon in the same row as your list name and select “Delete”. Once you have confirmed that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s information will continue to exist in your contact database.
 
 {% anchor h3 %}
 Create a List
