@@ -126,7 +126,7 @@ For iOS this is set in the "apple-app-site-association" file by including "paths
 
 Android requires that you specify these paths inside your app, rather than the assetlinks.json file.
 
-This is accomplished by adding an "intent" filter. Please visit Google's Developer Documentation to learn how to add an intent filter in your app.
+This is accomplished by adding an "intent" filter. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter in your app.
 {% endinfo %}
 
 
