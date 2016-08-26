@@ -9,10 +9,13 @@ layout: page
 navigation:
   show: true
 ---
+{% info %}
+Any email you send through Marketing Campaigns must include an unsubscribe link for your recipients to let you know if they no longer wish to receive this type of mail from you.
+{% endinfo %}
 
-Unsubscribe groups make it possible for your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. Unsubscribe groups are especially useful if you send very several different types of email to the same recipients.
+Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. Unsubscribe groups are especially useful if you send very several different types of email to the same recipients.
 
-For example, you might send transactional email, such as password reset confirmations or receipts, in addition to your marketing campaigns. Some of your recipients might want to stop receiving your marketing content while continuing to receive your transactional email.
+For example, you might send transactional email, such as password reset confirmations or receipts, in addition to your marketing campaigns. Some of your recipients might want to stop receiving your marketing content while continuing to receive your transactional email. Or, they may wish to receive a weekly marketing email, but not a daily email.
 
 This is accomplished by creating an unsubscribe group, and assigning that group to a campaign. An unsubscribe link is then added to your campaign. When a recipient clicks that link we log a "group unsubscribe" event, and that recipient will no longer receive any emails that are assigned that unsubscribe group.
 
@@ -38,9 +41,13 @@ Once you've created your Unsubscribe Group, navigate to **Marketing** in the lef
 
 Select the Campaign you want to add the Group Unsubscribe link to. Click **Edit** in the Preview Modal that appears or click the Action Cog and select **Edit** from the dropdown menu.
 
-Look for **Campaign Settings** in the left hand sidebar. Under the **Recipients** dropdown menu in this sidebar, select your Unsubscribe Group.
+Look for **Settings** in the left hand sidebar. Under the **Recipients** dropdown menu in this sidebar, select your Unsubscribe Group.
 
-Once you add a Group Unsubscribe Link to your campaign, any user who clicks that link will be added to this Unsubscribe Group!
+Once you add a Group Unsubscribe Link to your campaign, any user who clicks that link will be added to this Unsubscribe Group! If you send another campaign with the same unsubscribe group, SendGrid will not deliver that campaign to recipients to have been added to that unsubscribe group.
+
+{% info %}
+You can only add one unsubscribe group per campaign.
+{% endinfo %}
 
 ![]({{root_url}}/images/mc_group_unsubscribes_2.png)
 
@@ -58,21 +65,41 @@ Under **URL** enter the tag "[Unsubscribe]" and click **Confirm**. By linking th
 
 Finally, click **Save** to save your campaign.
 
-Congratulations! You've now successfully added a group unsubscribe link to your campaign! If one of your recipients clicks this link in your campaign, they will be added to the Unsubscribe Group shown a confirmation page.
+Congratulations! You've now successfully added a group unsubscribe link to your campaign! If one of your recipients clicks this link in your campaign, they will be taken to a page SendGrid generates confirming that they have unsubscribed from this type, or group, of emails. .
+
+Of course, if they change their mind, they can always click “View Email Preferences” to see and manage which email groups they are subscribed to.
 
 ![]({{root_url}}/images/mc_group_unsubscribes_5.png)
+
+{% anchor h2 %}
+Using a Custom Unsubscribe Link
+{% endanchor %}
+
+If you would like to use a custom URL for your unsubscribe link, navigate to **Settings** in the left hand sidebar and select the **Recipients** dropdown menu. Under **Unsubscribe Group**, select "Use Custom Link…"
+
+This will add an extra field where you can insert a URL to one of your own pages where your recipients can set their subscription preferences. This is useful if you do not want to use the default SendGrid page.
+
+![]({{root_url}}/images/mc_group_unsubscribes_8.png)
+
+You may still use the "[Unsubscribe]" substitution tag to insert this unsubscribe link in the content of your campaign. Simply specify your custom URL as described above. Then, insert the text you would like to link to your custom unsubscribe page in the body of your campaign. Highlight the text you want to link and click the small link icon. In the URL field, enter "[Unsubscribe]".
 
 {% anchor h2 %}
 Manage Email Preferences Links
 {% endanchor %}
 
-It is possible to add a link that will take your readers to a page where they can manage their subscription preferences. This page lists the various Unsubscribe Groups you have created and allows your recipients to either subscribe or unsubscribe from multiple groups at once.
+While not required like an unsubscribe link, you may choose to add a “manage email preferences” link that will take your readers to a page where they can view the different types of email you send (your Unsubscribe Groups) and opt into or out of the various options.
 
-To add the Manage Preferences link, simply follow the steps described for the Unsubscribe Link, except when inserting the tag in the Link Preferences window, use the tag "[Unsubscribe_Preferences]".
+To add the Manage Preferences link, simply follow the steps described for the Unsubscribe Link.
+
+Then, in the body of your campaign, insert the text you would like to use for your manage preferences link (e.g. "Click here to manage your email preferences."). Highlight the text you want to turn into a link and click the **small link icon** in the toolbar to open the Link Preferences window, select link type “URL” and enter “[Unsubscribe_Preferences] in the URL field.
 
 ![]({{root_url}}/images/mc_group_unsubscribes_6.png)
 
-When your recipients click this link, they will be taken to the Email Preferences page where they can unsubscribe from specific groups.
+When your recipients click this link, they will be taken to an email preferences page SendGrid generates where they can opt into or out of the email groups you offer.
+
+{% info %}
+The Email Preferences page will only display the unsubscribe groups that you have marked as "default" in your Unsubscribe Group settings.
+{% endinfo %}
 
 {% info %}
 The Email Preferences page will only display the unsubscribe groups that you have marked as "default" in your Unsubscribe Group settings.
