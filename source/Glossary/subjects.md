@@ -90,7 +90,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         {% anchor h2 %}SendGrid Services{% endanchor %}
         <a href="{{root_url}}/Glossary/autoresponder.html">Autoresponder</a>
         <a href="{{root_url}}/Glossary/bulk_email_service.html">Bulk Email Service</a>
-        <a href="{{root_url}}/Glossary/bulk_sender_notification.html">Bulk Sender Notification</a>
         <a href="{{root_url}}/Glossary/categories.html">Categories</a>
         <a href="{{root_url}}/Glossary/email_api_integration.html">Email API Integration</a>
         <a href="{{root_url}}/Glossary/email_service_provider.html">Email Service Provider</a>

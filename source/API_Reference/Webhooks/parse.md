@@ -31,7 +31,7 @@ The following steps are required to begin parsing email:
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
 -   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
 
-See [Setting Up The Inbound Parse Webhook]({{site.site_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html#-Setup) for step-by-step instructions.
+See [Setting Up The Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) for step-by-step instructions.
 
 {% info %}
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.

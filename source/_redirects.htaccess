@@ -457,6 +457,7 @@ Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User
 
 Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/docs/Glossary/peer_invitations.html
 Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/ips.html
+Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
 
 #######
 #
