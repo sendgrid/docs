@@ -3,7 +3,7 @@ seo:
   title: Form.io Integration
   description: How to integrate Form.io with SendGrid.
   keywords: Form.io, integrate
-title: Building Serverless Apps with Form.io + Sendgrid
+title: Building Serverless Apps with Form.io + SendGrid
 weight: 100
 layout: page
 navigation:
