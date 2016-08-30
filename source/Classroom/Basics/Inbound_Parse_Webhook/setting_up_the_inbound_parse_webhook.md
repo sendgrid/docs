@@ -26,7 +26,7 @@ Check out some pre-made integrations for the SendGrid Parse Webhook in the [Libr
 Setup
 {% endanchor %}
 
-To begin processing email using SendGrid’s Inbound Parse Webhook, setup MX Records, and assign the Hostname where you would like to receive email and a URL where you want to POST the payloads.
+To begin processing email using SendGrid's Inbound Parse Webhook, you will have to setup MX Records, choose the hostname (or receiving domain) that will be receiving the emails you want to parse, and define the URL where you want to POST your parsed emails.
 
 {% anchor h3 %}
 Setting up an MX Record
@@ -62,13 +62,17 @@ Pointing to a Hostname and URL
 
   **(2)** Click **Add Host & URL**.
 
-  SendGrid prompts you to enter your hostname and a URL where the Parse Webhook payloads can POST.
+  Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
+
+  The subdomain-domain combination must be unique. We recommend adding a subdomain such as "parse" to ensure that only emails sent to the @parse.example.com are parsed.
 
 {% info %}
 The URL must be accessible from the public web.
 {% endinfo %}
 
-  **(3)** Type your hostname (e.g. parse.yourdomain.com) and public application URL.
+  **(3)** Enter the subdomain (e.g. "parse") and select the whitelabeled root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
+
+  ![]({{root}}/images/setting_up_inbound_parse_1.png)
 
   **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email and reject obvious spam. Checking this box will also include the spam report and spam score in the payload.
 
@@ -497,15 +501,15 @@ Content analysis details:   (0.4 points, 5.0 required)
 Other Inbound Parse Documentation
 {% endanchor %}
 
-  - [Parse API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html)
+  - [Parse API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html) -
     Manage Inbound Parse Webhook settings using the Parse API (Web API v3).
-  - [Parse Webhook Settings]({{root_url}}/API_Reference/Web_API/parse_settings.html)
+  - [Parse Webhook Settings]({{root_url}}/API_Reference/Web_API/parse_settings.html) -
     Get existing settings, set the hostname and posting URL without going through the UI, and delete existing settings (Web API v2).  
-  - [Parse Settings Subuser]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html)
+  - [Parse Settings Subuser]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Subuser API (Web API v2).
-  - [Reseller API Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/parse_settings.html)
+  - [Reseller API Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Reseller API (Web API v2).
-  - [Reseller Customer Subuser Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html)
+  - [Reseller Customer Subuser Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Reseller Customer Subuser API (Web API v2).
 
 {% anchor h2 %}

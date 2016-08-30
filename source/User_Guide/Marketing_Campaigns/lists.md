@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 60
-title: Lists
+title: Lists and Segmentation
 navigation:
   show: true
 seo:
-  title: Lists
+  title: Lists and Segmentation
   override: true
   description:
 ---
@@ -13,11 +13,24 @@ seo:
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% anchor h2 %}
+What are Lists and Segments?
+{% endanchor %}
+
+Lists are simply static collections of Marketing Campaigns contacts. By default, any new contacts you add are stored under ALL CONTACTS. You may create new lists when adding contacts either manually, or when uploading a CSV (comma separated values) file.
+
+Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or [how they’ve engaged with your emails previously]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). You can create a segment that pulls from ALL CONTACTS or from a specific existing list.
+
+Segments are dynamically updated over time as you add customers who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. Segmentation can be especially useful to ensure that you are targeting the best recipients for your campaign.
+
+{% info %}
+You must create at least one list or segment in order to send a campaign.
+{% endinfo %}
+
+{% anchor h2 %}
 Managing Your Lists
 {% endanchor %}
 
-All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on
-the right side of your list title to see Export, View List, Edit List, and Delete options.
+All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on the right side of your list title to see Export, View List, Edit List, and Delete options.
 
 ![]({{root_url}}/images/lists_2.png "List Management Options")
 
@@ -25,8 +38,7 @@ the right side of your list title to see Export, View List, Edit List, and Delet
 Change the List Name
 {% endanchor %}
 
-To change the name of a list, view the list and then click the pencil icon next to the name of the list at the top of the
-page. You will be able to edit the name and then hit your enter key to save the change.
+To change the name of a list, view the list and then click the pencil icon next to the name of the list at the top of the page. You will be able to edit the name and then hit your enter key to save the change.
 
 ![]({{root_url}}/images/lists_1.png "Change your list name")
 
@@ -34,17 +46,13 @@ page. You will be able to edit the name and then hit your enter key to save the 
 Edit a List
 {% endanchor %}
 
-When you select the "Edit List" option, you will be shown the upload contacts options that will allow you to add contacts directly to this list. You will
-also be able to create a segment of this list directly from this window.
+When you select the “Edit List” option, you will be shown the upload contacts options that will allow you to add contacts directly to this list. You will also be able to create a segment of this list directly from this window.
 
 {% anchor h3 %}
 Delete a List
 {% endanchor %}
 
-If you would like to delete a list, go to [Contacts]({{site.marketing_campaigns_url}}/contacts) where you will see
-a list of your contacts, then click the gear icon in the same row as your list name and select "Delete". Once you have confirmed
-that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s
-information will continue to exist in your contact database.
+If you would like to delete a list, go to [Contacts]({{site.marketing_campaigns_url}}/contacts) where you will see a list of your contacts, then click the gear icon in the same row as your list name and select “Delete”. Once you have confirmed that you do in fact want to delete this list, only the association of a contact to this list will be deleted. Your contact’s information will continue to exist in your contact database.
 
 {% anchor h3 %}
 Create a List
@@ -89,12 +97,12 @@ To set up a segment, click the “add list or Segment” button from [Contacts](
 ![]({{root_url}}/images/lists_5.png "Delete a List")
 
 Then select the “New Segmentation” option. You can then start managing the parameters for your segment including the name and the conditions that allow a
-contact into this segment. This is where the type you set for your custom fields matters because different operators (```IS```,
-```IS NOT```, ```IS BEFORE```, ```IS AFTER```, ```CONTAINS WORD```, etc.) will show up depending on the type of custom field you selected. For
+contact into this segment. This is where the type you set for your custom fields matters because different operators (`IS`,
+`IS NOT`, `IS BEFORE`, `IS AFTER`, `CONTAINS WORD`, etc.) will show up depending on the type of custom field you selected. For
 example, a field that is a “number” will show greater than, less than, and equals as options where a “text” field will
-show ```IS``` and ```IS NOT``` as options. As you add conditions you
-will be able to select ```AND``` or ```OR``` as options, where ```AND``` indicates
-both conditions are required and ```OR``` indicates either condition will work.
+show `IS` and `IS NOT` as options. As you add conditions you
+will be able to select `AND` or `OR` as options, where `AND` indicates
+both conditions are required and `OR` indicates either condition will work.
 
 {% info %}
 You can add up to 15 different conditions per segment.
@@ -103,7 +111,7 @@ You can add up to 15 different conditions per segment.
 ![]({{root_url}}/images/lists_3.png "Create a Segment")
 
 You can also segment your users by their engagement with your email campaigns. To do this, create a new list and choose
-the ```Engagement: Opens``` or ```Engagement: Clicks``` option from
+the `Engagement: Opens` or `Engagement: Clicks` option from
 the bottom of the conditions fields list. Based on the criteria you set, you can then market to your users based on how
 engaged they are with a specific campaign. This is especially useful for doing things like rewarding high engagement users.
 
@@ -111,7 +119,7 @@ engaged they are with a specific campaign. This is especially useful for doing t
 
 
 {% anchor h3 %}
-Export a Segment List
+Export a Segment
 {% endanchor %}
 
 Export the contacts on a list by clicking the gear icon in the same row as your segment and then choosing the “export”
