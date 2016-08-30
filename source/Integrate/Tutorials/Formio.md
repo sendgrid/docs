@@ -3,7 +3,7 @@ seo:
   title: Form.io Integration
   description: How to integrate Form.io with SendGrid.
   keywords: Form.io, integrate
-title: Building Serverless Apps with Form.io + Sendgrid
+title: Building Serverless Apps with Form.io + SendGrid
 weight: 100
 layout: page
 navigation:
@@ -11,9 +11,9 @@ navigation:
 ---
 <a href="https://form.io" target="_blank">Form.io</a> is a combined form and data management API platform created for developers who are building "Serverless" form-based applications.  Form.io provides an easy drag-and-drop form builder workflow allowing you to build complex forms for enterprise applications quickly and easily. These forms are then embedded directly into your application with a single line of code that dynamically renders the form (using Angular or React) in your app while at the very same time generating the RESTful API to support those forms. The Form.io platform also offers numerous 3rd-party services that are fully integrated into the form building process allowing you to extend the power and capability of your apps while saving time and effort.
 
-Form.io has recently announced the integration of Sendgrid’s API into their list of standard “Form Actions”, allowing you to extend your Sendgrid email capabilities further into your apps, by automatically triggering emails through your Sendgrid account when forms are submitted within your application.
+Form.io has recently announced the integration of Sendgrid’s API into their list of standard “Form Actions”, allowing you to extend your SendGrid email capabilities further into your apps, by automatically triggering emails through your SendGrid account when forms are submitted within your application.
 
-![Form.io Sendgrid integration]({{root_url}}/images/formio-sendgrid.png "Form.io Sendgrid Integration")
+![Form.io SendGrid integration]({{root_url}}/images/formio-sendgrid.png "Form.io SendGrid Integration")
 
 This step-by-step guide will show how to set up a SendGrid integration within the Form.io platform.
 
@@ -44,7 +44,7 @@ Once you have a Form.io project, the next step is to create an <strong>API Key</
 Adding an email action
 {% endanchor %}
 
-Now that you have your project configured to send emails through Sendgrid, the next step is to add an email action to any form within your project. A good use case for this would be to send an email anytime someone registers for your application. To achieve this capability, please follow the following steps.
+Now that you have your project configured to send emails through SendGrid, the next step is to add an email action to any form within your project. A good use case for this would be to send an email anytime someone registers for your application. To achieve this capability, please follow the following steps.
 
  - Click on the <strong>Resources</strong> tab within your project.
  - Next, click on the <strong>Actions</strong> button on the <strong>User</strong> resource.
