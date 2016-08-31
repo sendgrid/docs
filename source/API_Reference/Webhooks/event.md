@@ -91,6 +91,14 @@ SendGrid expects a 2xx HTTP response to the POST, otherwise the event notificati
 If your email traffic generates a lot of events, the incoming data can easily overload a web server if not configured properly. You can load test your endpoints with [loader.io](http://loader.io) for free.
 {% endwarning %}
 
+{% anchor h3 %}
+Duplicate Events
+{% endanchor %}
+
+**It is possible to see duplicate events in the data posted by the Event Webhook.**
+
+We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event.
+
 {% anchor h2 %}
 Event Types
 {% endanchor %}
