@@ -3,10 +3,10 @@ st:
   published_at: 2016-05-26
   type: Classroom
 seo:
-  title: Can I resend messages that were Dropped?
+  title: Can I resend messages that were dropped?
   description: Does your email activity show a dropped event?
   keywords: drop, dropped, send, resend, deliver, 
-title: Can I turn off Click Tracking for specific links?
+title: Can I resend messages that were dropped?
 weight: 0
 layout: page
 navigation:
