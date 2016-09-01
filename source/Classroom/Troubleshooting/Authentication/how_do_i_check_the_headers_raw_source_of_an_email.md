@@ -1,8 +1,11 @@
 ---
+st:
+  published_at: 2016-09-01
+  type: Classroom
 seo:
   title: How do I check the headers/raw source of an email?
   description: How do I check the headers/raw source of an email?
-  keywords: bounces, email, headers, raw, source, check, look, find
+  keywords: bounces, email, headers, raw, source
 title: How do I check the headers/raw source of an email?
 weight: 0
 layout: page
