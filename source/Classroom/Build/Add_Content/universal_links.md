@@ -88,7 +88,7 @@ Example apple-app-site-association file:
     "apps": [],
     "details": [
       {
-        "appID": "PVJ3H958G6.com.sg.Universal-Link",
+        "appID": "[YOUR APP ID HERE]",
         "paths": [
           "/uni/*"
         ]
@@ -113,7 +113,7 @@ Example assetlinks.json file:
       "namespace": "android_app",
       "package_name": "com.applink.sg.myapplication",
       "sha256_cert_fingerprints": [
-        "E7:D5:12:FF:88:56:1E:88:EA:27:E4:8D:AA:F1:4B:28:97:99:00:21:A2:9D:2A:25:33:2E:2D:1D:00:F2:60:49"
+        "[YOUR APP FINGERPRINT HERE]"
       ]
     },
     "relation": [
