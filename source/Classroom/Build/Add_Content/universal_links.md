@@ -111,7 +111,7 @@ Example assetlinks.json file:
   {
     "target": {
       "namespace": "android_app",
-      "package_name": "com.applink.sg.myapplication",
+      "package_name": "[YOUR APP’S PACKAGE NAME]",
       "sha256_cert_fingerprints": [
         "[YOUR APP FINGERPRINT HERE]"
       ]
