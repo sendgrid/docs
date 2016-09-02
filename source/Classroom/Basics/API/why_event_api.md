@@ -24,4 +24,4 @@ The Event API, available with all Essentials and higher accounts, provides HTTP 
 
 Although it does require a fair amount of setup, the benefits of the Event API are paramount. More information about setup can be found in our [SendGrid Event API Documentation](https://sendgrid.com/docs/API_Reference/Webhooks/index.html). If you have any specific questions about the Event API please do not hesitate to contact our Support team via email, chat, or phone call.
 
-Need additional functionality with your Event API integration? Check out the open-source [Event Kit App](https://github.com/sendgrid/eventkit), also check out our friends over at [Keen.io](https://keen.io/) who provide a place to receive POST data.
+Need additional functionality with your Event API integration? Check out the open-source [Event Kit App](https://github.com/sendgrid/eventkit-rails), also check out our friends over at [Keen.io](https://keen.io/) who provide a place to receive POST data.
