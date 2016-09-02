@@ -1,4 +1,7 @@
 ---
+st:
+  published_at: 2016-09-02
+  type: Classroom
 seo:
   title: Blacklist
   description: A list of IP addresses that are known to send unsolicited or unwanted emails
@@ -10,7 +13,7 @@ navigation:
   show: false
 ---
 
-A Blacklist is a list of IP addresses that are known to send unsolicited and/or unwanted emails. ISPs and enterprises use blacklists to identify and filter illegitimate mail streams.
+A Blacklist is a list of IP addresses that are known to send unsolicited and/or unwanted emails. ISPs and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
 
 You may have found in your Block List or Bounce list that your sending IP address and or domain have been blacklisted by an ISP. What this means is that this ISP has determined they have an issue with what you are sending or how often you are sending mail. This ISP will most likely not accept mail from you anymore until you request to be de-listed. If you are sending mail you will want to try your best to stay off of blacklists because certain ones can affect your deliverability. Our Compliance and Support Teams keep a close eye on which of our IP’s end up on a blacklist and we try as quickly as possible to resolve the issue however more often then not it will require the user sending the mail to contact the ISP.
 
@@ -52,7 +55,6 @@ Below are links to the delisting forms used by the more popular external blackli
 * [Barracuda](http://www.barracudacentral.org/rbl/removal-request)
 * [Comcast](http://postmaster.comcast.net/block-removal-request.html)
 * [Google](https://support.google.com/mail/contact/msgdelivery)
-* [HotMail](https://support.msn.com/eform.aspx?productKey=edfsmsbl&ct=eformts)
 * [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
 * [Microsoft/Outlook](https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts)
 * [Mimecast](http://www.mimecast.com/senderfeedback)
