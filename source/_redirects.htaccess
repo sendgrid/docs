@@ -260,6 +260,7 @@ Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html htt
 Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
+Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
 
 #######
 #
