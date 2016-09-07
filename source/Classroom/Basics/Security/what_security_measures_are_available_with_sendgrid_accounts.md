@@ -5,7 +5,7 @@ st:
 seo:
   title: SendGrid Security FAQs
   description: What security measures are available with Sendgrid accounts?
-  keywords: security, policy, encryption, 2fa, soc2, hipaa, safe, harbor, compliance, compliant, disaster, recovery, type 2 privacy
+  keywords: security, policy, encryption, 2fa, soc2, hipaa, safe, harbor, compliance, compliant, disaster, recovery, type 2, vulnerability, exploit, privacy
 title: SendGrid Security FAQs
 weight: 0
 layout: page
