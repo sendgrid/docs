@@ -23,6 +23,21 @@ layout: default
     {% endif %}
 
     <div class="content">
+      {% if page.url contains "/Marketing_Campaigns/" %}
+        <div class="callout callout-info">
+          <p>
+            Migrating from the Legacy Newsletter? <a href="{{root_url}}/User_Guide/Legacy_Features/Marketing_Emails/Legacy_Newsletter_Migration/index.html">Here</a> are some valuable resources to help get you started.
+          </p>
+        </div>
+      {% endif %}
+
+      {% if page.url contains "/Legacy_Features/Marketing_Emails/" and page.url != "https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html" %}
+        <div class="callout callout-warning">
+          <p>
+            <strong>Please note: Legacy Newsletter will be sunset in November of 2017.</strong> For more information about this transition and a list of resources to help you migrate to Marketing Campaigns, please <a href="{{root_url}}/User_Guide/Legacy_Features/Marketing_Emails/Legacy_Newsletter_Migration/index.html">click here</a>.
+          </p>
+        </div>
+      {% endif %}
       {{ content }}
     </div>
 
