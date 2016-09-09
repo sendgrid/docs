@@ -491,6 +491,8 @@ Mail Settings Errors
   {% api_error_table_message "The spam check url must be a string." "" %}
 
   {% api_error_table_message "You must include the url to post to when using the spam check mail setting." "" %}
+
+  {% api_error_table_message "The `post_to_url` parameter must start with `http://` or `https://`." "" %}
 {% endapi_error_table %}
 
 {% api_error_table mail_settings.spam_check.threshold "" message.mail_settings.spam_check.threshold %}

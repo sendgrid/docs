@@ -1,8 +1,11 @@
 ---
+st:
+  published_at: 2016-09-01
+  type: Classroom
 seo:
   title: AOL DMARC Changes / "refused due to provided DMARC Policy"
   description: AOL DMARC Changes / "refused due to provided DMARC Policy"
-  keywords: AOL, 521, policy, dmarc, spf, dkim
+  keywords: AOL, 521, policy, dmarc, spf, dkim, refused, failed
 title: AOL DMARC Changes / "refused due to provided DMARC Policy"
 weight: 0
 layout: page
@@ -13,7 +16,7 @@ navigation:
 
 23 April, 2014
 
-Recently AOL mail domains have started to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their Email brethren, Yahoo. You may have started seeing bounce messages with the Reason of:
+Recently AOL mail domains have started to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their Email brethren, Yahoo. You may have started seeing bounce messages with the reason of:
 
 **"521 5.2.1 :  (DMARC) This message failed DMARC Evaluation and is being refused due to provided DMARC Policy"  **
 

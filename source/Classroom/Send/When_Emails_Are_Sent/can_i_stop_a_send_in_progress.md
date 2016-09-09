@@ -15,9 +15,15 @@ Oops! You accidentally sent a whole pile of mail you didn't mean to send... No w
 
 ## Transactional Email
 
-Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send emails requests as quickly as possible, sometimes halting an accidental send is just not possible. This is a list of things that you can do to attempt to halt an ongoing send:
+Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible, sometimes halting an accidental send is just not possible. This is a list of things that you can do to attempt to halt an ongoing send:
 
+<<<<<<< HEAD
 **1.**  **Change your password** - The simply act of [changing your password](https://sendgrid.com/user/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
+=======
+ 
+
+**1.**  **Change your password** - The simple act of [changing your password](https://sendgrid.com/user/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
+>>>>>>> fda8e9e9649f24230d03bb80cf595e1471b3a70b
 
 This method is great if you have a runaway script or have just started a job accidentally. Be sure to verify that the credentials your app is using belong to either the primary account owner or the [teammate]({{root_url}}/User_Guide/Settings/teammates.html) responsible for sending mail so that you know which set of credentials need to be changed in order to interrupt the send.
 
