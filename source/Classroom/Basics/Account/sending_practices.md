@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 0
-title: Sending Practices and Limitations
+title: Lite Plan Limitations
 seo:
-  title: Sending Best Practices and Limitations
-  description: A guide to sending practices and SendGrid Usage limits. Learn how to best use SendGrid today.
+  title: Lite Plan Limitations
+  description: Lite Plan Limitations
 navigation:
   show: true
 ---
