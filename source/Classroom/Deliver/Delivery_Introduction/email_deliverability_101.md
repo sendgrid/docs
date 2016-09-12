@@ -127,4 +127,4 @@ You can send emails to a capture address at one of these services and they will 
 
 [Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the  [IP address you send mail from]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html). 
 
-SendGrid has also released the article _[Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html)_ highlighting these and more deliverability tips. Our Compliance team also has a set of [Recommended Sending Practices & Methods]({{root_url}}/Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html) covering industry standards such as confirmation and invitation emails.
+SendGrid has also released the article _[Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html)_ highlighting these and more deliverability tips. 
