@@ -166,5 +166,5 @@ To learn how to create and manage Teammates via our Web API v3, please visit our
 Related Resources
 {% endanchor %}
 
-* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammtes.html)
+* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
 * [Frequently Asked Questions]({{root_url}}/Classroom/Basics/Account/teamamtes)
