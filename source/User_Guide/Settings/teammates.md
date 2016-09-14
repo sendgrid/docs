@@ -11,9 +11,9 @@ navigation:
 ---
 
 {% warning %}
-<center><strong>Teammates is currently in beta!</strong></center>
+**Teammates is currently in beta!**
 
-SendGrid is releasing the Teammates beta to users on each pricing plan in phases. If you do not immediately have access to Teammates, you will shortly! Stay tuned!
+SendGrid is releasing the Teammates Beta to users on each pricing plan in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
 {% endwarning %}
 
 
