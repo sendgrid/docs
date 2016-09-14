@@ -26,7 +26,9 @@ navigation:
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
 
-Yes! Teammates is available for users on all SendGrid pricing plans.
+{% warning %}
+SendGrid is releasing the Teammates Beta to users on each pricing plan in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
+{% endwarning %}
 
 {% anchor h2 %}
 Is there an additional fee to use Teammates?
@@ -58,11 +60,13 @@ Subusers can create and manage teammates. The parent account will have complete 
 How are teammates different from Multiple User Credentials?
 {% endanchor %}
 
-Teammates is an updated and expanded feature set based on Multiple User Credentials. If you previously had configured one or more Multiple User Credentials on your account, they will be migrated to Teammates.
+Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html).
 
-Much like Multiple User Credentials, Teammates allows you to create and manage multiple users of a single account, with the ability to specify what areas of the account those users can access.
+Should you choose to participate in the Teammates beta, your multiple credentialed users can be edited and managed via Teammates.
 
-Multiple User Credentials allowed the account owner to set two different permissions:
+As with Multiple User Credentials, Teammates allows you to create and manage multiple users of a single account, with the ability to specify what areas of the account those users can access.
+
+Multiple User Credentials allows the account owner to set two different permissions:
 
 * **UI/API** - allowed the user to access the dashboard and make API calls
 * **Mail** - allowed the user to send email
@@ -73,7 +77,11 @@ On the other hand, Teammates provides much more granular control over the permis
 What will happen to my Multiple User Credentials?
 {% endanchor %}
 
-Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you previously had configured one or more Multiple User Credentials on your account, they will be migrated to Teammates with their original permissions. However, once migrated, you will have much more granular control over those teammates' permissions.
+Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions once the Teammates beta has ended and it has been made generally available to all accounts. However, once migrated, you will have much more granular control over those teammates' permissions.
+
+{% info %}
+For the duration of the open beta, you will be able to use either Multiple User Credentials or Teammates.
+{% endinfo %}
 
 The process by which multiple user credentials are converted to teammates is as follows:
 * Credentialed users with **UI/API** and **Mail** permissions will be converted to admin teammates.
