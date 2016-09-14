@@ -17,15 +17,15 @@ Oops! You accidentally sent a whole pile of mail you didn't mean to send... No w
 
 Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible, sometimes halting an accidental send is just not possible. This is a list of things that you can do to attempt to halt an ongoing send:
 
-**1.**  **Change your password** - The simply act of [changing your password](https://sendgrid.com/user/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
+**1.** **Change your password** - The simply act of [changing your password](https://sendgrid.com/user/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
 
 This method is great if you have a runaway script or have just started a job accidentally. Be sure to verify that the credentials your app is using belong to either the primary account owner or the [teammate]({{root_url}}/User_Guide/Settings/teammates.html) responsible for sending mail so that you know which set of credentials need to be changed in order to interrupt the send.
 
-**2.** Contact Support** - Support has the ability to clear any emails currently pending delivery from your account. To be more clear, there is a very small window of opportunity between when we accept an email request and when we actually attempt delivery to the recipient. Emails can build up in this queue, and upon request, we can delete them entirely.
+**2.** **Contact Support** - Support has the ability to clear any emails currently pending delivery from your account. To be more clear, there is a very small window of opportunity between when we accept an email request and when we actually attempt delivery to the recipient. Emails can build up in this queue, and upon request, we can delete them entirely.
 
 ## Marketing email
 
-**1.**  In Progress** - Simply deleting a marketing email that is in progress will halt any progress of the send made thus far, and keep further emails from that send from going out. Be sure to clone the email first, so you don't lose your work! This method has a small window of opportunity, but if you get to it within a minute or so of clicking "Finish" you'll be able to catch it.
+**1.**  **In Progress** - Simply deleting a marketing email that is in progress will halt any progress of the send made thus far, and keep further emails from that send from going out. Be sure to clone the email first, so you don't lose your work! This method has a small window of opportunity, but if you get to it within a minute or so of clicking "Finish" you'll be able to catch it.
 
 ![]({{root_url}}/images/inprogressmarketing.png)
 
