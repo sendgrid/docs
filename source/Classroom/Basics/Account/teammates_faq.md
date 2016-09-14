@@ -1,6 +1,3 @@
-st:
-  published_at: 2016-09-13
-  type: Classroom
 seo:
   title: Teammates FAQ
   description: Frequently Asked Questions about SendGrid Teammates
