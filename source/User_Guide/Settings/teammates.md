@@ -167,4 +167,4 @@ Related Resources
 {% endanchor %}
 
 * [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
-* [Frequently Asked Questions]({{root_url}}/Classroom/Basics/Account/teammates_frequently_asked_questions.html)
+* [Frequently Asked Questions]({{root_url}}/Classroom/Basics/Account/teammates_faq.html)

@@ -1,3 +1,4 @@
+---
 seo:
   title: Teammates FAQ
   description: Frequently Asked Questions about SendGrid Teammates
