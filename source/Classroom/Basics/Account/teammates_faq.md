@@ -10,6 +10,12 @@ navigation:
   show: true
 ---
 
+{% warning %}
+<center><strong>Teammates is currently in beta!</strong></center>
+
+SendGrid is releasing the Teammates Beta to users on each pricing plan in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
+{% endwarning %}
+
 * [Is Teammates available for all SendGrid pricing plans?]()
 * [Is there an additional fee to use Teammates?]()
 * [How are teammates different from subusers?]()
@@ -26,9 +32,9 @@ navigation:
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
 
-{% warning %}
-SendGrid is releasing the Teammates Beta to users on each pricing plan in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
+SendGrid is releasing the Teammates beta to each pricing plan in phases. However, once Teammates is made generally available and the beta has ended, it will be available to all SendGrid users.
+
+If would like to use the Teammates beta, but do not see it under **Settings** on your dashboard, please stay tuned!
 
 {% anchor h2 %}
 Is there an additional fee to use Teammates?
