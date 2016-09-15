@@ -6,12 +6,10 @@ navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/95798301" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 {% info %}
 Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 {% endinfo %}
-
+ 
 SendGrid can parse the attachments and contents of incoming emails. Application examples include receiving uploads and posting blog articles via email.
 
 The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
