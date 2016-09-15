@@ -503,8 +503,6 @@ Other Inbound Parse Documentation
 
   - [Parse API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html) -
     Manage Inbound Parse Webhook settings using the Parse API (Web API v3).
-  - [Parse Webhook Settings]({{root_url}}/API_Reference/Web_API/parse_settings.html) -
-    Get existing settings, set the hostname and posting URL without going through the UI, and delete existing settings (Web API v2).  
   - [Parse Settings Subuser]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Subuser API (Web API v2).
   - [Reseller API Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/parse_settings.html) -
