@@ -21,6 +21,8 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 What is Teammates?
 {% endanchor %}
 
+![Teammates Overview]({{root_url}}/images/teammates_1.png)
+
 Teammates is an account administration and security tool designed to help manage multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
 
 There are several benefits to using Teammates. The first and foremost is security: by giving your individual team members access only to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Second, Teammates helps to streamline not only your team members jobs, but also the job of the admin. Teammates makes it incredibly easy to add, remove, and manage different users.
@@ -79,6 +81,8 @@ Each SendGrid account is limited to 1000 teammates.
 
 You should now see a modal window titled "New Teammate." Here you will enter your teammate's email address and select the type of teammate you would like to add. The teammate type dictates what permissions your new teammate will have.
 
+![Adding a new teammate]({{root_url}}/images/teammates_2.png)
+
 {% anchor h2 %}
 Teammate Permissions
 {% endanchor %}
@@ -90,6 +94,8 @@ The three different permission levels are:
 * **NO ACCESS -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, they may still [request access to that feature](#-Requesting-Access-to-a-SendGrid-Feature).
 * **READ ACCESS -** Teammates with read only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
 * **FULL ACCESS -** Teammates with full access to a feature can view and make any changes.
+
+![Teammate Permissions]({{root_url}}/images/teammates_3.png)
 
 {% info %}
 Only administrator teammates may impersonate subusers!
@@ -106,6 +112,8 @@ Accepting a Teammate Invitation
 If someone has invited you to join their SendGrid account as a teammate, you should receive an email with the subject line "You're invited to join John Doe's team on SendGrid!" where John Doe is the administrator who invited you.
 
 To accept the invitation, simply open the email and click **Set up your Profile**. This will take you to the SendGrid website displaying a modal window asking for your first name, last name, desired username, and password.
+
+![Teammate Invitation Email]({{root_url}}/images/teammates_4.png)
 
 Once you've filled out these fields, click **Sign In**.
 
