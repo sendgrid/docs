@@ -9,7 +9,7 @@ navigation:
 {% info %}
 Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 {% endinfo %}
- 
+
 SendGrid can parse the attachments and contents of incoming emails. Application examples include receiving uploads and posting blog articles via email.
 
 The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
@@ -27,7 +27,7 @@ Setup
 The following steps are required to begin parsing email:
 
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
--   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
+-   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply).
 
 You must ensure that the subdomain-domain combination for your receiving domain is unique.
 
