@@ -21,7 +21,6 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 What is Teammates?
 {% endanchor %}
 
-![Teammates Overview]({{root_url}}/images/teammates_1.png)
 
 Teammates is an account administration and security tool designed to help manage multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
 
@@ -75,6 +74,8 @@ Teammate invitations are valid for 7 days.
 
 Click **Add Teammate** to open the modal window allowing you to specify the email address and permissions of your new teammate.
 
+![Teammates]({{root_url}}/images/teammates_1.png)
+
 {% info %}
 Each SendGrid account is limited to 1000 teammates.
 {% endinfo %}
@@ -113,13 +114,15 @@ If someone has invited you to join their SendGrid account as a teammate, you sho
 
 To accept the invitation, simply open the email and click **Set up your Profile**. This will take you to the SendGrid website displaying a modal window asking for your first name, last name, desired username, and password.
 
-![Teammate Invitation Email]({{root_url}}/images/teammates_4.png)
+![Teammate Invitation Email]({{root_url}}/images/teammates_5.png)
 
 Once you've filled out these fields, click **Sign In**.
 
 {% info %}
 Teammate invitations are valid for 7 days. If you click the link to **Set up your Profile** in the invitation and discover that your invitation has expired, you must reach out to your account administrator to request a new invitation.
 {% endinfo %}
+
+![Teammate Account Created Successfully]({{root_url}}/images/teammates_6.png)
 
 {% anchor h3 %}
 Requesting Access to a SendGrid Feature
@@ -128,6 +131,8 @@ Requesting Access to a SendGrid Feature
 If you are already signed into a SendGrid account as a teammate, but do not have access to a certain page or feature, you may request access to that page simply by clicking **Request Access**.
 
 This will send a notification to the account administrator who can grant you access.
+
+![Requesting Access to a Feature]({{root_url}}/images/teammates_7.png)
 
 {% anchor h3 %}
 Granting Access to a SendGrid Feature (Administrators)
@@ -143,9 +148,13 @@ To grant that teammate access to the feature, click **Approve**.
 
 If you do not want to grant them access, simply click **Deny**.
 
+![Granting Access to a Feature]({{root_url}}/images/teammates_9.png)
+
 {% info %}
 A notification email will be sent to the teammate when they are either granted or denied access. This email will be delivered by SendGrid, but the "reply to" address will be the email address on file for the account owner.
 {% endinfo %}
+
+![Access Granted Notification]({{root_url}}/images/teammates_11.png)
 
 {% anchor h2 %}
 Managing Teammates
@@ -156,6 +165,8 @@ To modify an existing teammate's permissions, navigate to the **Teammates Page**
 Click **Edit** to open a modal window presenting the teammate's current permissions. Make your desired changes and click **Update**.
 
 To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action cog next to the teammate you want to delete and click **Delete**.
+
+![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 
 {% warning %}
 You cannot recover a deleted teammate! Please be certain before deleting one of your teammates.
