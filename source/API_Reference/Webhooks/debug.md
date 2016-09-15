@@ -64,18 +64,10 @@ Setup
 To get up and running, install and enter the following in your CLI
 
 {% codeblock lang:html %}
-$ ngrok 3000
+$ ngrok http 3000
 {% endcodeblock %}
 
 This would open up a connection to port 3000 on your local machine, at a URL like `http://3a4bfceb.ngrok.com`. You may then put this URL as your the URL for your Parse Webhook or Event Webhook.
-
-Rather than having to change this every time you restart ngrok, specify the subdomain flag:
-
-{% codeblock lang:html %}
-$ ngrok -subdomain=myappname 3000
-{% endcodeblock %}
-
-This will open up port 3000 and make it accessible at `http://myappname.ngrok.com`.
 
 {% anchor h3 %}
 Seeing what's happening
