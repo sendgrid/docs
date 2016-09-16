@@ -43,7 +43,7 @@ Every API request you make to the Web API v3 must be authenticated by including 
 
 {% codeblock lang:bash %} curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json" {% endcodeblock %}
 
-To access the API with the elevated permissions of the full user account, for example to change permission scope of an API Key, you can access the API with basic HTTP authentication. More information about basic auth can be found [here](https://sendgrid.com/blog/magic-behind-basic-http-authentication/).
+To access the API with the elevated permissions of the full user account, for example to change the permission scope of an API Key, you can also access the API with basic HTTP authentication. More information about basic auth can be found [here](https://sendgrid.com/blog/magic-behind-basic-http-authentication/).
 
 {% codeblock lang:bash %} curl -X "GET" "https://api.sendgrid.com/v3/api_keys" -H "Authorization: Basic base64encoded.user:password-HERE" -H "Content-Type: application/json" {% endcodeblock %}
 
