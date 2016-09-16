@@ -23,6 +23,15 @@ layout: default
     {% endif %}
 
     <div class="content">
+
+      {% if page.url contains "Web_API" %}
+
+        {% warning %}
+        Any SendGrid parent account (not subuser accounts) created after the release of Teammates will have access **only** to the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/index.html). All accounts created before this date will continue to have access to both the [Web API v2]({{root_url}}/API_Reference/Web_API/index.html) and the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/index.html).
+        {% endwarning %}
+
+      {% endif %}
+
       {{ content }}
     </div>
 
