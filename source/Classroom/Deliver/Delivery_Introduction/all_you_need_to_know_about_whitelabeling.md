@@ -23,7 +23,7 @@ The whitelabeling process involves the creation of several new DNS records which
 These records all work in tandem in order to remove SendGrid as the message signing entity and display your chosen subdomain as the authenticated sender. Please refer to our [User Guide]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) for helpful video tutorials and more information on the process and required DNS records.
 
 **The Records**  
-To complete the whitelabeling process, you will need to create DNS records as stated in the article and video above.
+To complete the whitelabeling process, you will need to create DNS records within your domain's DNS settings.
 
 **1.  [SPF Record](http://en.wikipedia.org/wiki/Sender_Policy_Framework) (Sender Policy Framework)**
 
