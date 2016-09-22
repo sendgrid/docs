@@ -16,6 +16,17 @@ navigation:
 SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
 {% endwarning %}
 
+{% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [What is Teammates?](#-What-is-Teammates)
+* [Where can I find Teammates?](#-Where-can-I-find-Teammates)
+* [Who can use Teammates?](#-Who-can-use-Teammates)
+* [Setting Up Teammates](#-Setting-Up-Teammates)
+* [Teammate Permissions](#-Teammate-Permissions)
+* [Managing Teammates](#-Managing-Teammates)
+* [Teammates and API Keys](#-Teammates-and-API-Keys)
 
 {% anchor h2 %}
 What is Teammates?
