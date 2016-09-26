@@ -298,43 +298,6 @@ Filter: <code>ganalytics</code>
 
 <hr/>
 
-{% anchor h3 gravatar %}
-Filter: <code>gravatar</code>
-{% endanchor %}
-
-<p>Inserts an img tag at the bottom of the html section of an email to display the gravatar associated with the mail sender.</p>
-
-
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>Parameter Name</th>
-<th>Parameter Value</th>
-<th>Parameter Description</th>
-</tr>
-<tr>
-<td>enable</td>
-<td><code>0</code> | <code>1</code></td>
-<td>Disable or enable this Setting</td>
-</tr>
-</tbody>
-</table>
-
-<h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "gravatar" : {
-      "settings" : {
-      "enable" : 1
-      }
-    }
-  }
-}
-{% endcodeblock %}
-
-<hr/>
-
 {% anchor h3 opentrack %}
 Filter: <code>opentrack</code>
 {% endanchor %}
