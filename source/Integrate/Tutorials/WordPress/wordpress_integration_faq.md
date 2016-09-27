@@ -20,6 +20,8 @@ navigation:
 * [Will contacts from the widget be uploaded to Marketing Campaigns or Legacy Newsletter?](#-Will-contacts-from-the-widget-be-uploaded-to-Marketing-Campaigns-or-Legacy-Newsletter)
 * [What permissions should my API keys have?](#-What-permissions-should-my-API-keys-have)
 * [Can I disable the opt-in email?](#-Can-I-disable-the-optin-email)
+* [Can I change the content of the emails before they are sent?](#-Can-I-change-the-content-of-the-emails-before-they-are-sent)
+* [Can the SendGrid Plugin be used on a multisite network?](#-Can-the-SendGrid-Plugin-be-used-on-a-multisite-network)
 
 {% anchor h2 %}
 What credentials do I need to add on the settings page?
@@ -119,6 +121,20 @@ For "text/plain," only the text part is overwritten by the filter. For "text/htm
 {% endinfo %}
 
 The code snippets above are usually added in the functions.php file of your theme.
+
+{% anchor h2 %}
+Can the SendGrid Plugin be used on a multisite network?
+{% endanchor %}
+
+Yes. This plugin has basic multisite network support.
+
+To use the SendGrid plugin on your multisite network, navigate to your WordPress dashboard and click **My Sites**, select **Network Admin**, and click on **Plugins**. Under the SendGrid WordPress plugin, click **Network Enable**.
+
+The settings for all sites in the network can only be configured by the network admin in the Network Admin dashboard.
+
+{% info %}
+**Please note:** you may not specify different plugin settings for each site in your network. The same settings will be used across your entire multisite network.
+{% endinfo %}
 
 {% anchor h2 %}
 Related Content
