@@ -87,16 +87,66 @@ threshold has been reached, we will return a status code `429` response.
 
 Sometimes your API call will generate an error. Every response to an API call that generates an error will include an error code, the reason for the error, and an error message to help you debug your request.
 
-| Code           | Reason                                            | Description                                                                                  |
-|----------------|---------------------------------------------------|----------------------------------------------------------------------------------------------|
-| 4xx            | 4xx responses indicate an error with your request | There was a problem with your request.                                                       |
-| 400            | BAD REQUEST                                       |                                                                                              |
-| 401            | UNAUTHORIZED                                      | You do not have authorization to make the request.                                           |
-| 403            | FORBIDDEN                                         |                                                                                              |
-| 404            | NOT FOUND                                         | The resource you tried to locate could not be found or does not exist.                       |
-| 405            | METHOD NOT ALLOWED                                |                                                                                              |
-| 413            | PAYLOAD TOO LARGE                                 | The JSON payload you have included in your request is too large.                             |
-| 429            | TOO MANY REQUESTS                                 | The number of requests you have made exceeds SendGrid’s rate limitations.                    |
-| 5xx            | 5xx responses indicate an error made by SendGrid  | The request you made was valid, but an error occurred when SendGrid attempted to process it. |
-| 500            | SERVER ERROR                                      | An error occurred on a SendGrid server.                                                      |
-| 503            | SERVICE NOT AVAILABLE                             | The SendGrid v3 Web API is not available.                                                    |
+
+<table class="table">
+  <tr>
+    <th>Code</th>
+    <th>Reason</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>4xx</td>
+    <td>4xx responses indicate an error with your request</td>
+    <td>There was a problem with your request.</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>BAD REQUEST</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>401</td>
+    <td>UNAUTHORIZED</td>
+    <td>You do not have authorization to make the request.</td>
+  </tr>
+  <tr>
+    <td>403</td>
+    <td>FORBIDDEN</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>404</td>
+    <td>NOT FOUND</td>
+    <td>The resource you tried to locate could not be found or does not exist.</td>
+  </tr>
+  <tr>
+    <td>405</td>
+    <td>METHOD NOT ALLOWED</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>413</td>
+    <td>PAYLOAD TOO LARGE</td>
+    <td>The JSON payload you have included in your request is too large.</td>
+  </tr>
+  <tr>
+    <td>429</td>
+    <td>TOO MANY REQUESTS</td>
+    <td>The number of requests you have made exceeds SendGrid’s rate limitations.</td>
+  </tr>
+  <tr>
+    <td>5xx</td>
+    <td>5xx responses indicate an error made by SendGrid</td>
+    <td>The request you made was valid, but an error occurred when SendGrid attempted to process it.</td>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>SERVER ERROR</td>
+    <td>An error occurred on a SendGrid server.</td>
+  </tr>
+  <tr>
+    <td>503</td>
+    <td>SERVICE NOT AVAILABLE</td>
+    <td>The SendGrid v3 Web API is not available.</td>
+  </tr>
+</table>
