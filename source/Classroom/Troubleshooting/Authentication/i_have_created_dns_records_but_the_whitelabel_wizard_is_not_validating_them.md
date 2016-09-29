@@ -45,12 +45,38 @@ If the ANSWER section of the dig return is empty, that usually means that either
 
 Examples:
 
-| **Command** | **Type** | **ANSWER** |
-| dig cname sub.domain.com | CNAME | sendgrid.net |
-| dig txt smtpapi.\_domainkey.sub.domain.com | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB |
-| dig txt smtpapi.\_domainkey.domain.com | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB |
-| dig txt domain.com | TXT | [v=spf1 include:sendgrid.net ~all]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_records_explained.html) |
-| dig a o\*.sub.domain.com | A | Your Sendgrid IP address |
+<table class="table">
+  <tr>
+    <th>Command</th>
+    <th>Type</th>
+    <th>ANSWER</th>
+  </tr>
+  <tr>
+    <td>dig cname sub.domain.com</td>
+    <td>CNAME</td>
+    <td>sendgrid.net</td>
+  </tr>
+  <tr>
+    <td>dig txt smtpapi.\_domainkey.sub.domain.com</td>
+    <td>TXT</td>
+    <td>k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB</td>
+  </tr>
+  <tr>
+    <td>dig txt smtpapi.\_domainkey.domain.com</td>
+    <td>TXT</td>
+    <td>k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB</td>
+  </tr>
+  <tr>
+    <td>dig txt domain.com</td>
+    <td>TXT</td>
+    <td>[v=spf1 include:sendgrid.net ~all]({{root_url}}/Classroom/Deliver/Sender_Authentication/spf_records_explained.html)</td>
+  </tr>
+  <tr>
+    <td>dig a o\*.sub.domain.com</td>
+    <td>A</td>
+    <td>Your Sendgrid IP address</td>
+  </tr>
+</table>
 
  
 
