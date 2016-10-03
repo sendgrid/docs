@@ -11,6 +11,6 @@ navigation:
   show: true
 ---
 
-We do not offer a true "sandbox" environment, however we do have a [Free plan](https://sendgrid.com/transactional-email/pricing) which allows you to send 12000 emails per month, and also gives you access to almost all of the features offered with our higher package levels. The Free plan does not include access to a dedicated IP or IP whitelabeling.
+We do not offer a true "sandbox" environment, however we do have a [free trial](https://sendgrid.com/transactional-email/pricing) which allows you to send 100 emails per day, and also gives you access to almost all of the features offered with our higher package levels. The free trial does not include access to a dedicated IP or IP whitelabeling.
 
 We also have a [sink email address]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html) that can help you test message throughput for your integration.
