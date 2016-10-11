@@ -9,6 +9,42 @@ navigation:
   show: true
 ---
 
+## [Pricing](#-Pricing)
+
+* [How can I estimate what it will cost to use Marketing Campaigns?](#-How-can-I-estimate-what-it-will-cost-to-use-Marketing-Campaigns)
+* [Why does Marketing Campaigns charge me for storing contacts?](#-Why-does-Marketing-Campaigns-charge-me-for-storing-contacts)
+* [What is the additional value of Marketing Campaigns vs. Legacy Newsletter?](#-What-is-the-additional-value-of-Marketing-Campaigns-vs-Legacy-Newsletter)
+
+## [Migrating](#-Migrating)
+
+* [Can I try Marketing Campaigns with test sends before deciding whether to migrate?](#-Can-I-try-Marketing-Campaigns-with-test-sends-before-deciding-whether-to-migrate)
+* [Will SendGrid automatically migrate my account to Marketing Campaigns?](#-Will-SendGrid-automatically-migrate-my-account-to-Marketing-Campaigns)
+* [What do I need to do in order to migrate to Marketing Campaigns?](#-What-do-I-need-to-do-in-order-to-migrate-to-Marketing-Campaigns)
+* [How do I move my contacts from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-contacts-from-Legacy-Newsletter-to-Marketing-Campaigns)
+* [How do I move my templates from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-templates-from-Legacy-Newsletter-to-Marketing-Campaigns)
+* [How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-transfer-my-unsubscribes-from-Legacy-Newsletter-to-Marketing-Campaigns)
+
+## [Contact Management](#-Contact-Management)
+
+* [#-What-information-will-Marketing-Campaigns-store-about-my-contacts](#-What-information-will-Marketing-Campaigns-store-about-my-contacts)
+
+## [Segmentation](#-Segmentation)
+
+* [What is segmentation?](#-What-is-segmentation)
+* [How is a list different from a segment?](#-How-is-a-list-different-from-a-segment)
+* [How do I create a segment?](#-How-do-I-create-a-segment)
+
+## [Statistics](#-Statistics)
+
+* [What will happen to all of my historical stats in Legacy Newsletter?](#-What-will-happen-to-all-of-my-historical-stats-in-Legacy-Newsletter)
+* [Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?](#-Why-are-some-stats-that-Im-used-to-in-Legacy-Newsletter-missing-in-Marketing-Campaigns)
+
+## [Campaign Creation](#-Campaign-Creation)
+
+* [How is creating a campaign different in Marketing Campaigns than Legacy Newsletter?](#-How-is-creating-a-campaign-different-in-Marketing-Campaigns-than-Legacy-Newsletter)
+
+***********
+
 {% anchor h2 %}
 Pricing
 {% endanchor %}
