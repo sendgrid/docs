@@ -615,6 +615,20 @@ Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_G
 Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 
+#######
+#
+# /User_Guide/Legacy_Features/Marketing_Emails - redirects to /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features
+#
+#######
+
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html
 
 #######
 #
