@@ -26,7 +26,7 @@ navigation:
 
 ## [Contact Management](#-Contact-Management)
 
-* [#-What-information-will-Marketing-Campaigns-store-about-my-contacts](#-What-information-will-Marketing-Campaigns-store-about-my-contacts)
+* [What information will Marketing Campaigns store about my contacts?](#-What-information-will-Marketing-Campaigns-store-about-my-contacts)
 
 ## [Segmentation](#-Segmentation)
 
