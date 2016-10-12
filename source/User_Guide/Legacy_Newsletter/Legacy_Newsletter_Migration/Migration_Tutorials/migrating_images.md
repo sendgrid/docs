@@ -1,10 +1,10 @@
 ---
 layout: page
-weight: 0
+weight: 70
 seo:
-  title: Overview
+  title: Moving Your Images
   description:
-title: Overview
+title: Moving Your Images
 navigation:
   show: true
 ---
