@@ -259,4 +259,4 @@ Both Legacy Newsletter and Marketing Campaigns help you manage contacts, build c
 * Improved unsubscribe management
 * Increased granularity into campaign performance, for instance, individual link click tracking
 
-And there’s much more! Explore our [side-by-side comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html).
+And there’s much more! Explore our side-by-side [comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html).
