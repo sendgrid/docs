@@ -144,6 +144,7 @@ Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppr
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/suppressions.html
 Redirect 301 /API_Reference/Web_API_v3/Mail/overview.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
+Redirect 301 /API_Reference/Web_API/parse_settings.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Webhooks/parse.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
@@ -260,6 +261,7 @@ Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html htt
 Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
+Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
 
 #######
 #
@@ -283,6 +285,7 @@ Redirect 301 /Classroom/Build/plain_text_emails_converted_to_html.html http://se
 Redirect 301 /Classroom/Build/responsive_templates_and_design.html http://sendgrid.com/docs/Classroom/Build/Format_Content/responsive_templates_and_design.html
 Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid.com/docs/Classroom/Build/Add_Content/substitution_and_section_tags.html
 Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
+Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.html https://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
 
 #######
 #
@@ -336,6 +339,7 @@ Redirect 301 /Classroom/Deliver/my_emails_are_going_to_spam.html https://sendgri
 Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/spam_trapped.html
 Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html
 Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 
 #######
 #

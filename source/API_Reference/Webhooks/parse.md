@@ -6,8 +6,6 @@ navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/95798301" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 {% info %}
 Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 {% endinfo %}
@@ -29,7 +27,7 @@ Setup
 The following steps are required to begin parsing email:
 
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
--   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply). *This can also be done using the [Parse Settings Endpoint]({{root_url}}/API_Reference/Web_API/parse_settings.html).*
+-   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply).
 
 You must ensure that the subdomain-domain combination for your receiving domain is unique.
 

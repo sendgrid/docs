@@ -1,7 +1,7 @@
 ---
 layout: page
 seo:
-  title: Overview
+  title: V3 Mail Send API Overview
 title: Overview
 description: Send Email Using the v3 Mail Send Endpoint
 weight: 100
@@ -152,7 +152,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param spam_check object No "" "This allows you to test the content of your email for spam." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param threshold integer No "Max 10" "The threshold used to determine if your content qualifies as spam on a scale from 1 to 10, with 10 being most strict, or most likely to be considered as spam." 2 %}
-      {% api_table_param post_to_url string No "" "An Inbound Parse URL that you would like a copy of your email along with the spam report to be sent to." 2 %}
+      {% api_table_param post_to_url string No "" "An Inbound Parse URL that you would like a copy of your email along with the spam report to be sent to. The <code>post_to_url</code> parameter must start with <code>http://</code> or <code>https://</code>." 2 %}
   {% api_table_param tracking_settings object No "" "Settings to determine how you would like to track the metrics of how your recipients interact with your email." 0 %}
     {% api_table_param click_tracking object No "" "Allows you to track whether a recipient clicked a link in your email." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}

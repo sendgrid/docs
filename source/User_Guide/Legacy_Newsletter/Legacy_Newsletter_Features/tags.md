@@ -97,4 +97,4 @@ Batch sending (of 1000 recipients per batch)
 </li>
 ### Recommendations
 
-You should try to keep your custom tag total character count relatively small especially if you want to use more custom tags in your emails. If you choose to have custom tags with a lot of characters then try to limit the total amount of custom tags in your recipient lists. Referencing the tests above you can determine a safe amount of tags to use depending on the size of those tags that can result in efficient email batching when sending Legacy Newsletetrs with SendGrid.
+You should try to keep your custom tag total character count relatively small especially if you want to use more custom tags in your emails. If you choose to have custom tags with a lot of characters then try to limit the total amount of custom tags in your recipient lists. Referencing the tests above you can determine a safe amount of tags to use depending on the size of those tags that can result in efficient email batching when sending Legacy Newsletters with SendGrid.

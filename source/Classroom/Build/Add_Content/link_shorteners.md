@@ -1,6 +1,7 @@
 ---
 seo:
   title: Link Shorteners
+  canonical: https://sendgrid.com/blog/link-shorteners-not-for-email/
   description: Link Shorteners
   keywords: bitly, bit.ly, link, shortener, URL
 title: Link Shorteners

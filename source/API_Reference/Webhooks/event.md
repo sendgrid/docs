@@ -48,7 +48,7 @@ Requests
 You will receive an **HTTP POST** containing a JSON array of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options.
 
 {% info %}
-Events currently post every 1 second or when the batch size reaches 1MB (one megabyte), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second.
+Events currently post every 30 second or when the batch size reaches 768K (seven hundred sixty-eight kilobytes), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second.
 {% endinfo %}
 
 {% anchor h3 %}
@@ -90,6 +90,14 @@ SendGrid expects a 2xx HTTP response to the POST, otherwise the event notificati
 {% warning %}
 If your email traffic generates a lot of events, the incoming data can easily overload a web server if not configured properly. You can load test your endpoints with [loader.io](http://loader.io) for free.
 {% endwarning %}
+
+{% anchor h3 %}
+Duplicate Events
+{% endanchor %}
+
+**It is possible to see duplicate events in the data posted by the Event Webhook.**
+
+We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event.
 
 {% anchor h2 %}
 Event Types

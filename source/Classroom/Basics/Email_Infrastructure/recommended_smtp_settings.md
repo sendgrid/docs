@@ -13,8 +13,9 @@ navigation:
 
 #**Integrate with Sendgrid using SMTP**
 
-- Change your SMTP authentication username and password to your **SendGrid username and password,** or set up a [Multiple Credential](https://sendgrid.com/docs/User_Guide/multiple_credentials.html) with the "MAIL" permission enabled. 
+- Create an API Key and make sure it has Mail permissions. 
 - Set the server host to **smtp.sendgrid.net.** This setting can sometimes be referred to as the external SMTP server, or relay, by some programs and services.
+- Use the string "apikey" for the SMTP username and use your API key for the password.
 
 ##**Ports**
 
