@@ -53,9 +53,9 @@ Pricing
 Is the pricing for Marketing Campaigns the same as it is for Legacy Newsletter?
 {% endanchor %}
 
-Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid plan (which can be shared with any mail you send using the API or SMTP relay). For instance, if you have the Pro 300K plan and send 100,000 emails through Legacy or Marketing Campaigns, you’ll have 200,000 emails remaining to send through the API or SMTP relay..
+Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid plan (which can be shared with any mail you send using the API or SMTP relay). For instance, if you have the Pro 300K plan and send 100,000 emails through Legacy or Marketing Campaigns, you’ll have 200,000 emails remaining to send through the API or SMTP relay.
 
-From there, each email marketing solution charges a premium for sending through the user interface. With Legacy newsletter it’s a **$0.25 fee per 1,000 emails you send**. For Marketing campaigns, it’s a **$10 fee per 10,000 contacts you store**. Your first 2,000 contacts in Marketing Campaigns are free.
+From there, each email marketing solution charges a premium for sending through the user interface. With Legacy Newsletter it’s a **$0.25 fee per 1,000 emails you send**. For Marketing Campaigns, it’s a **$10 fee per 10,000 contacts you store**. Your first 2,000 contacts in Marketing Campaigns are free.
 
 <table class="table">
 
@@ -100,17 +100,17 @@ A final note: The ability to segment your contacts into meaningful recipient gro
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 {% endanchor %}
 
-**Segmentation:** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve engaged with your emails.
+**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
-**Contact management:** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
+**[Contact management:({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)]** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
-**Visibility into user engagement:** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
+**[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 
 **Improved user experience:** Ease of use is central to Marketing Campaigns. You’ll love the improved design and our UI/UX team has thoughtfully considered every workflow and is continuously working with customers to find opportunities to optimize.
 
-**Flexible campaign building flow:** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
+**[Flexible campaign building flow:]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html)** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
 
-**Recipient preferences:** Allow your users to easily opt into (or out of) different types of content you send using Unsubscribe Groups, and rely on Marketing Campaigns to track that data so you can reliably honor recipient preferences.
+**[Recipient preferences:]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html)** Allow your users to easily opt out of different types of content you send using Unsubscribe Groups, and rely on Marketing Campaigns to track that data so you can reliably honor recipient preferences.
 
 **Better integration:** Marketing Campaigns is fully integrated into SendGrid, allowing you to easily navigate to important tools such as Stats where you can see more complete data such as geography or device type.
 
@@ -132,13 +132,13 @@ You can also choose to send using both Legacy Newsletter and Marketing Campaigns
 Will SendGrid automatically migrate my account to Marketing Campaigns?
 {% endanchor %}
 
-No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simply. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
+No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simple. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
 
 {% anchor h3 %}
 What do I need to do in order to migrate to Marketing Campaigns?
 {% endanchor %}
 
-First, review this Migration Checklist.
+First, review this [Migration Checklist]({{root_url}}User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).
 
 While your migration plan will depend on your unique scenario, the migration checklist will encourage you to consider the following:
 
@@ -178,7 +178,7 @@ What information will Marketing Campaigns store about my contacts?
 
 Marketing Campaigns will store two types of data about your contacts:
 
-**Custom Fields:** Any information you share with us about your contacts such as age, geography, last purchase, etc. This data can be added using a CSV upload or using our Contacts API. Currently, Marketing Campaigns can store up to 60 different [custom field types]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html).
+**Custom Fields:** Any information you share with us about your contacts such as age, geography, last purchase, etc. This data can be added using a CSV upload or using our [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). Currently, Marketing Campaigns can store up to 60 different [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html).
 
 **Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
 
@@ -230,13 +230,13 @@ Your historical stats will still be available within the Legacy Newsletter as lo
 
 **Note: we will provide 12 months of advance warning before depreciation.**
 
-For this reason, we recommend you export any data you wish to retain for the long term. View our migration guide for details on how to export.
+For this reason, we recommend you [export any data you wish to retain]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html) for the long term. View our migration guide for details on how to export.
 
 {% anchor h3 %}
 Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?
 {% endanchor %}
 
-Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a side-by-side comparison for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
+Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a [side-by-side comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html) for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
 
 In many instances you’ll find that Marketing Campaigns provides more in-depth statistics than Legacy Newsletter. For instance, you can view which links within a campaign were clicked most often, or which individuals opened or clicked within particular campaigns. Insights like these help you learn about and optimize recipient engagement.
 
