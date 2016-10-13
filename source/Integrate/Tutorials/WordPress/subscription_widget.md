@@ -94,7 +94,59 @@ Note: The default text [my site name] is **not** a substitution tag. You should 
 
 Select the WordPress page that will be displayed to the user by selecting it from the drop down menu on the settings page.
 
-If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page). Once you have created and saved this new page, it will appear in the dropdown menu alongside the "Default Confirmation Page" option. For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
+{% anchor h3 %}
+Configuring Your Subscription Opt-In Confirmation Page
+{% endanchor %}
+
+If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page).
+
+![]({{root_url}}/images/)
+
+You may use the following substitution tags when building your confirmation page:
+
+* **[sendgridSubscriptionFirstName]** - the first name of your new subscriber
+* **[sendgridSubscriptionLastName]** - the last name of your new subscriber
+* **[sendgridSubscriptionEmail]** - the email address for your new subscriber
+
+Once you have created and saved this new page, it will alppear in the dropdown menu alongside the "Default Confirmation Page" option.
+
+![]({{root_url}}/images/)
+
+For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
+
+{% anchor h3 %}
+Form Customization
+{% endanchor %}
+
+If you want to customize your subscription form, you can do so from the settings page. You can set labels for the "First Name", "Last Name", and "Email" fields in addition to the "Subscribe" button.
+
+You can also adjust the padding surrounding the input fields and buttons.
+
+![]({{root_url}}/images/)
+
+If you want additional or advanced configuration options (for example, CSS styles), you can use the following .css classes:
+
+* `sendgrid_mc_label` for the labels
+* `sendgrid_mc_input` for the input fields
+* `sendgrid_mc_button` for the subscribe button
+
+For example, if you want your form to look like the following:
+
+![]({{root_url}}/images/)
+
+You would need to add the following to your .css file:
+
+{% codeblock lang:css %}
+.sendgrid_mc_label{
+  color: #ff0000;
+}
+.sendgrid_mc_input {
+  border: 3px solid #000000 !important;
+}
+.sendgrid_mc_button {
+  background-color: #0000ff !important;
+}
+{% endcodeblock %}
 
 {% anchor h3 %}
 Testing Your Subscription Widget
