@@ -2,9 +2,9 @@
 layout: page
 weight: 80
 seo:
-  title: Migrating Your Unsubscribes
+  title: Migrating Unsubscribes
   description:
-title: Migrating Your Unsubscribes
+title: Migrating Unsubscribes
 navigation:
   show: true
 ---

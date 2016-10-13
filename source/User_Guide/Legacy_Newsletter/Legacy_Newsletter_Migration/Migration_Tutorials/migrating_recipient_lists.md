@@ -2,9 +2,9 @@
 layout: page
 weight: 90
 seo:
-  title: Migrating Your Recipient Lists
+  title: Migrating Recipient Lists
   description:
-title: Migrating Your Recipient Lists
+title: Migrating Recipient Lists
 navigation:
   show: true
 ---

@@ -2,9 +2,9 @@
 layout: page
 weight: 70
 seo:
-  title: Migrating Your Content
+  title: Migrating Content
   description:
-title: Migrating Your Content
+title: Migrating Content
 navigation:
   show: true
 ---

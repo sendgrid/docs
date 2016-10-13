@@ -2,9 +2,9 @@
 layout: page
 weight: 70
 seo:
-  title: Migrating Your Images
+  title: Migrating Images
   description:
-title: Migrating Your Images
+title: Migrating Images
 navigation:
   show: true
 ---

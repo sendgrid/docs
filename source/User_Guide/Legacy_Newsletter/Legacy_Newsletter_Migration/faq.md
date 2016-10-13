@@ -251,6 +251,7 @@ How is creating a campaign different in Marketing Campaigns than Legacy Newslett
 {% endanchor %}
 
 Both Legacy Newsletter and Marketing Campaigns help you manage contacts, build campaigns, run multivariate tests, schedule sends, and review analytics. However, these tasks either more robust or easier to execute (or both!) in Marketing Campaigns. For example, Marketing Campaigns offers:
+
 * Clean visuals and a more intuitive user interface
 * More options for managing contact profiles
 * Ability to create dynamic segments to send targeted campaigns
