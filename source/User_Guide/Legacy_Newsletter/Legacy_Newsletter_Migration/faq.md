@@ -138,7 +138,7 @@ No. We do not have any automated tools for migrating your Legacy Newsletter acco
 What do I need to do in order to migrate to Marketing Campaigns?
 {% endanchor %}
 
-First, review this [Migration Checklist]({{root_url}}User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).
+First, review this [Migration Checklist]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).
 
 While your migration plan will depend on your unique scenario, the migration checklist will encourage you to consider the following:
 
