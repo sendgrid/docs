@@ -166,7 +166,7 @@ View our template migration how-to video or documentation page for step-by-step 
 How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our unsubscribe migration how-to video or documentation page for step-by -step instructions.
+View our unsubscribe migration how-to video or documentation page for step-by-step instructions.
 
 {% anchor h2 %}
 Contact Management
@@ -236,7 +236,7 @@ For this reason, we recommend you export any data you wish to retain for the lon
 Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?
 {% endanchor %}
 
-Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a side-by-side comparison for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <LegacyMigration@SendGrid.com>.
+Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a side-by-side comparison for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
 
 In many instances you’ll find that Marketing Campaigns provides more in-depth statistics than Legacy Newsletter. For instance, you can view which links within a campaign were clicked most often, or which individuals opened or clicked within particular campaigns. Insights like these help you learn about and optimize recipient engagement.
 
