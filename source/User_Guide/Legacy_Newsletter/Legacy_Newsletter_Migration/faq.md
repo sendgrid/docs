@@ -3,7 +3,7 @@ layout: page
 weight: 0
 seo:
   title: Frequently Asked Questions
-  description:
+  description: Answers to commong questions about migrating to Marketing Campaigns
 title: Frequently Asked Questions
 navigation:
   show: true
