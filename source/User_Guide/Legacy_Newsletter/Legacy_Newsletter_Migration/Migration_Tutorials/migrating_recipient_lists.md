@@ -9,6 +9,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/136621131" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Exporting Your Lists from Legacy Newsletter
 {% endanchor %}
@@ -96,7 +98,7 @@ To upload your properly formatted .csv file to Marketing Campaigns, navigate to 
 
 From your SendGrid Dashboard, click **Marketing** and select **Contacts** under **Marketing Campaigns**.
 
-In the upper right-hand corner, click **Add List or Segment** and **select Upload CSV**.
+In the upper right-hand corner, click **Add List or Segment** and select **Upload CSV**.
 
 You may either create a new list for your migrated recipients, choose an existing list to add these recipients to, or simply add these contacts to “All Contacts”.
 

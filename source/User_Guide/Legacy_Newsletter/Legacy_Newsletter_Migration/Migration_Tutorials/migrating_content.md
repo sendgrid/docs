@@ -9,6 +9,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/187210070" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Marketing Campaigns offers a library of responsive templates as well as an easy-to-use campaign builder. However, if you have templates in Legacy Newsletter that you’d like to reuse in Marketing Campaigns, here’s a step-by-step migration guide.
 
 Begin by navigating to Legacy Newsletter.
@@ -36,6 +38,10 @@ Repeat this process for each image that you want to migrate into Marketing Campa
 Next, select all of the HTML for your newsletter and copy it to your clipboard or a plain text editor.
 
 Navigate to **Marketing Campaigns** and click **Templates**. Click **Create a New Template**, give it a name, and click the **Code** toggle switch. Delete the example HTML that's displayed and paste in your copied HTML from Legacy Newsletter.
+
+{% warning %}
+After pasting your copied HTML into the Marketing Campaigns code editor, do not toggle into the design editor. Continue updating your tags and adding your images within the code editor to ensure that the formatting of your template remains consistent.
+{% endwarning %}
 
 Next, you need to update any tags that you used in your newsletter template to match the tags used by Marketing Campaigns.
 
@@ -135,6 +141,12 @@ Click **Send a Test** and enter your email address.
 Once you see the newsletter appear in your inbox, open it and view the source code.
 
 For example, to accomplish this using Gmail, click **View Original** and select and copy all of the text beginning and ending with the `<HTML>` tag. Paste this code into Marketing Campaigns according to the steps described in the first half of this article.
+
+Once delivered to your inbox, the content of your email will be encoded as Quoted-Printable text, and must be decoded before you paste it into Marketing Campaigns in order to maintain the original formatting.
+
+Decoding your campaign is simple. Simply paste all of the text beginning and ending with the <HTML> tag that you copied from your inbox into an [online decoder](http://www.motobit.com/util/quoted-printable-decoder.asp) and click **Decode the source data**. Then you can paste the outputted text into Marketing Campaigns.
+
+![]({{root_url}}/images/decode_quoted_printable.gif)
 
 Again, please make sure that you re-host your images in the Marketing Campaigns image library and update any of your old Legacy Newsletter tags to match the tags used by Marketing Campaigns.
 

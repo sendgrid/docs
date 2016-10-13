@@ -9,9 +9,11 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/136013004" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 To honor the subscription preferences of your recipients as you migrate from Legacy Newsletter to Marketing Campaigns, you’ll need to manually migrate your Legacy Newsletter unsubscribes. Doing so will ensure that campaigns you send will not go to recipients who have previously opted out of your email.
 
-Marketing Campaigns allows you to manage your unsubscribes more efficiently and with increased ease of compliance…
+Marketing Campaigns allows you to manage your unsubscribes more efficiently, making it easier to comply with the standards set by [CAN-SPAM]({{root_url}}/Glossary/can_spam.html)
 
 * Unsubscribe groups allow your recipients to opt out of specific types of mail you send
 * Once a user unsubscribes from a type of email you send (an unsubscribe group), they will not receive any email of that group, regardless of which list or segment they’re included on
@@ -49,7 +51,7 @@ To create this new unsubscribe group, click your account name in the upper right
 
 Under **Suppressions** in the left hand nav bar, click **Unsubscribe Groups**.
 
-This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.  
+This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.    
 
 In our example, the name would be "Weekly Newsletter" and the description might be "Weekly summary of the week's top posts."
 

@@ -9,6 +9,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/187210070" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Download Images From Legacy Newsletter
 {% endanchor %}
