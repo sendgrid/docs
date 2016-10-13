@@ -132,7 +132,7 @@ You can also choose to send using both Legacy Newsletter and Marketing Campaigns
 Will SendGrid automatically migrate my account to Marketing Campaigns?
 {% endanchor %}
 
-No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simply. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
+No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simply. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
 
 {% anchor h3 %}
 What do I need to do in order to migrate to Marketing Campaigns?
@@ -259,4 +259,4 @@ Both Legacy Newsletter and Marketing Campaigns help you manage contacts, build c
 * Improved unsubscribe management
 * Increased granularity into campaign performance, for instance, individual link click tracking
 
-And there’s much more! Explore our [side-by-side comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html).
+And there’s much more! Explore our [side-by-side comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html).
