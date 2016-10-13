@@ -80,7 +80,7 @@ From there, each email marketing solution charges a premium for sending through 
 How can I estimate what it will cost to use Marketing Campaigns?
 {% endanchor %}
 
-Leverage our [Pricing Calculator]({{root_url}}{{site.pricing_url}}) to enter the volume of email you’ll be sending as well as the number of contacts you’ll store in Marketing Campaigns.
+Leverage our [Pricing Calculator](https://sendgrid.com/pricing/) to enter the volume of email you’ll be sending as well as the number of contacts you’ll store in Marketing Campaigns.
 
 {% anchor h3 %}
 Why does Marketing Campaigns charge me for storing contacts?
