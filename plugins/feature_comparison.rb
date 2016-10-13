@@ -1,7 +1,7 @@
 #require 'kramdown'
 
 module Jekyll
-  class APITable < Liquid::Block
+  class table < Liquid::Block
     def initialize(tag_name, markup, tokens)
       @identifier = markup
 
@@ -11,14 +11,12 @@ module Jekyll
     def render(context)
       output = super
       output = <<HTML
-<table class="apitable">
+<table class="feature_comparison">
   <tbody>
     <tr>
-      <th colspan="2">JSON Parameter</th>
-      <th>Type</th>
-      <th>Required</th>
-      <th>Limitations</th>
-      <th class="details-header">Details</th>
+      <th>Legacy Newsletter</th>
+      <th>Marketing Campaigns</th>
+      <td class="details-caret"><img src="/images/caret.svg"></td>
     </tr>
     #{output}
   </tbody>
@@ -30,4 +28,4 @@ HTML
   end
 end
 
-Liquid::Template.register_tag('api_table', Jekyll::APITable)
+Liquid::Template.register_tag('feature_comparison', Jekyll::APITable)
