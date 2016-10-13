@@ -100,7 +100,7 @@ Configuring Your Subscription Opt-In Confirmation Page
 
 If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page).
 
-![]({{root_url}}/images/)
+![]({{root_url}}/images/form_customization.png)
 
 You may use the following substitution tags when building your confirmation page:
 
@@ -110,7 +110,7 @@ You may use the following substitution tags when building your confirmation page
 
 Once you have created and saved this new page, it will alppear in the dropdown menu alongside the "Default Confirmation Page" option.
 
-![]({{root_url}}/images/)
+![]({{root_url}}/images/example_form.png)
 
 For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
 
@@ -280,6 +280,8 @@ Widget Settings
   The WordPress page ID of the page you would like to link users to when confirming their subscription.
 
   To find your page ID, log into your WordPress account and click **Pages** in the left hand nav of your dashboard. Select your confirmation page. In the URL you will see the text "post=XX" where XX represents your page ID.
+
+
 
 {% anchor h2 %}
 Related Content
