@@ -92,7 +92,11 @@ Note: The default text [my site name] is **not** a substitution tag. You should 
 
 ![]({{root_url}}/images/wp_subscription_widget_3.png)
 
-Select the WordPress page that will be displayed to the user by selecting it from the drop down menu on the settings page.
+When writing the content for your signup confirmation email, you can choose between either HTML or Plain Text.
+
+![]({{root_url}}/images/signup_email_html_text.png)
+
+Finally, select the WordPress page that will be displayed to the user by selecting it from the drop down menu on the settings page.
 
 {% anchor h3 %}
 Configuring Your Subscription Opt-In Confirmation Page
@@ -100,7 +104,7 @@ Configuring Your Subscription Opt-In Confirmation Page
 
 If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page).
 
-![]({{root_url}}/images/form_customization.png)
+![]({{root_url}}/images/wp_plugin_confirmation_page.png)
 
 You may use the following substitution tags when building your confirmation page:
 
@@ -108,9 +112,9 @@ You may use the following substitution tags when building your confirmation page
 * **[sendgridSubscriptionLastName]** - the last name of your new subscriber
 * **[sendgridSubscriptionEmail]** - the email address for your new subscriber
 
-Once you have created and saved this new page, it will alppear in the dropdown menu alongside the "Default Confirmation Page" option.
+Once you have created and saved this new page, it will appear in the dropdown menu alongside the "Default Confirmation Page" option.
 
-![]({{root_url}}/images/example_form.png)
+![]({{root_url}}/images/sign_up_confirmation_page_option.png)
 
 For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
 
@@ -122,7 +126,7 @@ If you want to customize your subscription form, you can do so from the settings
 
 You can also adjust the padding surrounding the input fields and buttons.
 
-![]({{root_url}}/images/)
+![]({{root_url}}/images/form_customization.png)
 
 If you want additional or advanced configuration options (for example, CSS styles), you can use the following .css classes:
 
@@ -132,7 +136,7 @@ If you want additional or advanced configuration options (for example, CSS style
 
 For example, if you want your form to look like the following:
 
-![]({{root_url}}/images/)
+![]({{root_url}}/images/example_form.png)
 
 You would need to add the following to your .css file:
 
@@ -169,6 +173,8 @@ To display the widget on your website, navigate to the widgets page in WordPress
 ![]({{root_url}}/images/wp_subscription_widget_6.png)
 
 If you would like to add the “First Name” and “Last Name” fields, and require users to fill these fields when subscribing to your emails, simply navigate to the Subscription Widget tab, and select **Settings**.
+
+![]({{root_url}}/images/wp_sub_widget_example.png)
 
 You may also configure your installation of the subscription widget by defining specific SendGrid settings as global variables within the wp-config.php file. See the next section for a list of specific settings and the corresponding PHP required to add those settings to the wp-config.php file.
 
@@ -280,8 +286,22 @@ Widget Settings
   The WordPress page ID of the page you would like to link users to when confirming their subscription.
 
   To find your page ID, log into your WordPress account and click **Pages** in the left hand nav of your dashboard. Select your confirmation page. In the URL you will see the text "post=XX" where XX represents your page ID.
+*****
+- **First Name Label**: `define('SENDGRID_MC_FIRST_NAME_LABEL', 'First Name');`
 
+  First Name Label
+*****
+- **Last Name Label**: `define('SENDGRID_MC_LAST_NAME_LABEL', 'Last Name');`
 
+  Last Name Label
+*****
+- **Email Label**: `define('SENDGRID_MC_EMAIL_LABEL', ‘Email’);`
+
+  Email Label
+*****
+- **Subscribe Label**: `define('SENDGRID_MC_SUBSCRIBE_LABEL', 'Subscribe');`
+
+  Subscribe Button Label
 
 {% anchor h2 %}
 Related Content
