@@ -102,7 +102,7 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
-**[Contact management:({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)]** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
+**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
 **[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 
@@ -166,7 +166,7 @@ View our template migration how-to video or documentation page for step-by-step 
 How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our unsubscribe migration how-to video or documentation page for step-by-step instructions.
+View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
 
 {% anchor h2 %}
 Contact Management
