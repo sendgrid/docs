@@ -32,6 +32,16 @@ What can I do in the meantime?
 
 Our Provisioning Team will be sending you a few emails that may contain some requests for additional information. Please answer any questions to the best of your ability so we can get you sending as quickly as possible!
 
+{% info %}
+SendGrid is in the process of introducing a 30 day Free Trial alongside an improved onboarding experience.
+
+Free Trial users will be limited to 100 emails per day until they have verified their account. After account verification, they may send up to a total of 40,000 emails for the remainder of the 30 day period.
+
+The 30 day period begins immediately after account _creation_, **not** account _verification_.
+
+Once the 30 day period has ended, Free Trial users will be limited to sending 100 emails per day at no additional cost.
+{% endinfo %}
+
 {% anchor h3 %}
 Other relevant information
 {% endanchor %}
