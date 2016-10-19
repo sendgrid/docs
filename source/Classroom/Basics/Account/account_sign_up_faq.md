@@ -54,7 +54,7 @@ Learn more about setting up and using two factor authentication [here]({{root_ur
 
 {% anchor h3 %}How do I set up the domain whitelabel?{% endanchor h3 %} 
 
-Learn about the benefits, and the process of setting up a domain whitelabel [here]({{root_url}}/Classroom/Basics/Whitelabel/domain_whitelabel.html).
+Learn about the benefits, and the process of setting up a domain whitelabel [here]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html).
 
 {% anchor h3 %}Was my credit card charged even though I only have 100 credits per day?{% endanchor h3 %}
 
