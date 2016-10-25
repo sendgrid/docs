@@ -38,11 +38,11 @@ You have either not yet completed the verification steps for your account, or yo
 
 {% anchor h3 %}Why don't I have all the credits available on my paid plan?{% endanchor %}
 
-Until you complete the required verification steps, you will only be able to send up to 100 emails per day. Once you complete the steps oresented, your credit usage limits will be unlocked
+Until you complete the required verification steps, you will only be able to send up to 100 emails per day. Once you complete the steps presented, your credit usage limits will be unlocked
 
 {% anchor h3 %}How do I resend the verification email?{% endanchor %}
 
-You can resend the verification to the email address you specified during the initial signup form by heading to the [verification guide](https://app.sendgrid.com/guide) and clicking "Resend in the "Comnfirm your Email Address" step.
+You can resend the verification to the email address you specified during the initial signup form by heading to the [verification guide](https://app.sendgrid.com/guide) and clicking "Resend in the "Confirm your Email Address" step.
 
 {% anchor h3 %}What if I entered my email address incorrectly?{% endanchor %} 
 
@@ -58,7 +58,7 @@ Learn about the benefits, and the process of setting up a domain whitelabel [her
 
 {% anchor h3 %}Was my credit card charged even though I only have 100 credits per day?{% endanchor h3 %}
 
-If you chose a paid plan during the initial signup form, your credit card is charged and your trial period both happen right away. Complete the verification steps presented to you to unlock the full abilities of your paid account. 
+Yes. If you chose a paid plan during the initial signup form, your credit card is charged and your trial period begins right away. Complete the verification steps presented to you to unlock the full abilities of your paid account. 
 
 {% anchor h3 %}When does the trial period begin?{% endanchor h3 %} 
 
