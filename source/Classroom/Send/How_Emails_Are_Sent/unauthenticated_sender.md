@@ -1,4 +1,4 @@
-v —
+---
 st:
   published_at: 2016-10-31
   type: Classroom
@@ -18,4 +18,3 @@ If you're getting an "Unauthenticated Senders Not Allowed" error, the problem us
 To fix this issue, you'll want to make sure that you've configured your setup to connect to smtp.sendgrid.net using authentication, and that the credentials you're using are the same credentials you use to login to the SendGrid.
 
 If you're using cPanel/Exim, you'll want to make sure it's configured to authenticate every time it connects to smtp.sendgrid.net.
-
