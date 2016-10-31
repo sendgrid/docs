@@ -262,6 +262,9 @@ Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_other
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
 Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_lists.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_content.html
 
 #######
 #
