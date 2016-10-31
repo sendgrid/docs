@@ -22,15 +22,15 @@ A marketer, developer, and accountant would each have their own teammate account
 
 As an example of role specific permissions, the marketer would be given the following levels of access:
 
-* [Alerts]({{root_url}}/User_Guide/Settings/alerts.html)
-* [Category Management]({{root_url}}/User_Guide/Statistics/categories.html)
-* [Email Activity]({{root_url}}/User_Guide/email_activity.html)
-* [Mail Send: Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)
-* [Mail Settings: Spam Checker]({{root_url}}/User_Guide/Settings/mail.html#-Spam-Checker)
-* [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html)
-* [Stats]({{root_url}}/User_Guide/Statistics/index.html)
-* [Suppressions]({{root_url}}/User_Guide/Suppressions/index.html)
-* [Template Engine]({{root_url}}/User_Guide/Transactional_Templates/index.html)
-* [Tracking]({{root_url}}/User_Guide/Settings/tracking.html)
+* [Alerts]({{root_url}}/User_Guide/Settings/alerts.html) - Full Access
+* [Category Management]({{root_url}}/User_Guide/Statistics/categories.html) - Read Access
+* [Email Activity]({{root_url}}/User_Guide/email_activity.html) - Read Access
+* [Mail Send: Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) - Read Access
+* [Mail Settings: Spam Checker]({{root_url}}/User_Guide/Settings/mail.html#-Spam-Checker) - Full Access
+* [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) - Full Access
+* [Stats]({{root_url}}/User_Guide/Statistics/index.html) - Read Access
+* [Suppressions]({{root_url}}/User_Guide/Suppressions/index.html) - Full Access
+* [Template Engine]({{root_url}}/User_Guide/Transactional_Templates/index.html) - Full Access
+* [Tracking]({{root_url}}/User_Guide/Settings/tracking.html) - Full Access
 
 For more information about Teammates please see our [User Guide]({{root_url}}/User_Guide/Settings/teammates.html) and [FAQ]({{root_url}}/Classroom/Basics/Account/teammates_faq.html).
