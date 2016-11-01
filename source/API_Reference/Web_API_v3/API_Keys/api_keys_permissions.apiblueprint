@@ -24,9 +24,15 @@ This endpoint will return a list of scopes for which that user has access.
 
 + Response 200 (application/json)
 
-    + Body
+      + Body
 
-            ["mail.send", "alerts.create", "alerts.read"]
+            {
+              "scopes": [
+                "mail.send",
+                "alerts.create",
+                "alerts.read"
+              ]
+            }
 
 
 + Response 401
