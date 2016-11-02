@@ -68,6 +68,10 @@ Failed requests will always return an error response, including a response code,
     <td>The JSON payload you have included in your request is too large.</td>
   </tr>
   <tr>
+    <td>415</td>
+    <td>UNSUPPORTED MEDIA TYPE</td>
+    <td></td>
+  <tr>
     <td>429</td>
     <td>TOO MANY REQUESTS</td>
     <td>The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html)</td>
@@ -102,6 +106,7 @@ Table of Contents
 * [Batch ID Errors](#-Batch-ID-Errors)
 * [Categories Errors](#-Categories-Errors)
 * [Content Errors](#-Content-Errors)
+* [Encoding Errors](#-Encoding-Errors)
 * [From Address Errors](#-From-Address-Errors)
 * [Headers Errors](#-Headers-Errors)
 * [IP Pool Errors](#-IP-Pool-Errors)
@@ -331,6 +336,16 @@ Content Errors
   {% api_error_table_message "The content value must be a string at least one character in length." "We do not allow you to send an empty email to your recipients. Even if you include the <code>content.value</code> parameter, it must include at least one character." %}
 
   {% api_error_table_message "Following RFC 1341, section 7.2, if either text/html or text/plain are to be sent in your email: text/plain needs to be first, followed by text/html, followed by any other content." "The order in which you specify the MIME types of your content must always be text/plain first, if you choose to include it, followed by text/html, and then any other MIME types you wish to include." %}
+{% endapi_error_table %}
+
+{% anchor h2 %}
+Encoding Errors
+{% endanchor %}
+
+{% api_error_table Encoding "" "" %}
+  {% api_error_table_row 415 %}
+
+  {% api_error_table_message "Invalid UTF8 in request" "Your payload must be encoded in UTF-8. This includes any attachments." %}
 {% endapi_error_table %}
 
 {% anchor h2 %}
