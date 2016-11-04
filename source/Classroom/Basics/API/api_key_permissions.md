@@ -81,6 +81,35 @@ API Key permissions are not permanent and may be changed any time after the key 
 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
+{% anchor h3 %}
+Adding additional API Key permissons not listed in the User Interface
+{% endanchor h3 %}
+
+As it turns out, the [API key Permissions List](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) contains even more permissions than can be added to your API key than those listed when creating a new API key. Currently, when you create new key and give it full access, it excludes additional permissions that can be added via an API call. The best way to see what permissions your API key has is by making [this call](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) using the same API key to make the request. 
+
+For the user profile request you're attempting to make, you will need to make sure you have these permissions:
+
+```
+"scopes": [
+  "user.account.read",
+  "user.profile.read",
+]
+```
+
+To give your API key these extra permissions you will need to make [this request](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Update-the-name-amp-scopes-of-an-API-Key-PUT). 
+
+**Important things** to know before making the above API request:
+
+**1.** You will need to make the above request using your parent account's username and password because your API key will not have API key permissions by default. There are two ways you can do this:
+
++ You can add basic authorization to your API call yourself by base64 encoding your username and password like this: `username:password` and adding it to your Authorization header as Basic. We go into a little more detail on this [here](https://sendgrid.com/blog/magic-behind-basic-http-authentication/).
+
++ Or you can use a rest client like [Postman](http://www.getpostman.com/) or [Paw](https://luckymarmot.com/paw), where you can select to Authenticate with basic auth (your SendGrid parent account username and password) then update the request to add your parent account credentials encoded into the headers.
+
+These authentication work arounds are really only good to use in this instance, to update your API keys, as in the long run API keys are a much safer way to authenticate when making API requests.
+
+**2.** Make sure that when you make the request, you add **all of the scopes** you want the API key to have. For example, if you make the request and just list "categories.read" as the scopes, you will then have a key with only the "categories.read" scope. Make sure to list everything you get from the [get existing key request](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Get-an-existing-API-Key-GET) in addition to the new scopes you want to add. 
+
 {% anchor h2 %}
 Example Permissions for Common API Key Use Cases
 {% endanchor h2 %}
