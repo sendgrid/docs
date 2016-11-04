@@ -29,6 +29,19 @@ return array(
 ?>
 {% endcodeblock %}
 
+## Laravel 5
+
+Update your .env file with sendgrid details:
+{% codeblock %}
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.sendgrid.net
+MAIL_PORT=587
+MAIL_USERNAME=sendgrid_username
+MAIL_PASSWORD=sendgrid_password
+{% endcodeblock %}
+
+Refrence [Learning Laravel](http://learninglaravel.net/learn-to-send-emails-using-gmail-and-sendgrid-in-laravel-5)
+
 You can use Laravel's Mail class just like you normally would, but all email will be sent through SendGrid!
 
 {% codeblock lang:php %}
