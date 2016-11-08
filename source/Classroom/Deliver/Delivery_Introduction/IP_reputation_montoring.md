@@ -4,7 +4,7 @@ st:
   type: Classroom
 seo:
   title: Do you offer reputation monitoring for dedicated IP accounts?
-  description: Need reuptation monitoring for your dedicated IP?
+  description: Need reputation monitoring for your dedicated IP?
   keywords: IP, reputation, monitoring, monitor, dedicated
 title: Do you offer reputation monitoring for dedicated IP accounts?
 weight: 0
