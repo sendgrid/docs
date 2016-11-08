@@ -74,7 +74,7 @@ The URL must be accessible from the public web.
 
   ![]({{root}}/images/setting_up_inbound_parse_1.png)
 
-  **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email and reject obvious spam. Checking this box will also include the spam report and spam score in the payload.
+  **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam. Checking this box will also include the spam report and spam score in the payload.
 
   **(5)** (Optional) Check **Send Raw** if you would prefer to receive the full MIME message in encoded in JSON.
 
