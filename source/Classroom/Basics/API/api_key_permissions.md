@@ -92,7 +92,7 @@ For the user profile request you're attempting to make, you will need to make su
 {% codeblock lang:json %}
 "scopes": [
   "user.account.read",
-  "user.profile.read",
+  "user.profile.read"
 ]
 {% endcodeblock %}
 
