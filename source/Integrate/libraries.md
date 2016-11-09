@@ -59,6 +59,12 @@ Web API Libraries
 {% endanchor %}
 
 {% anchor h3 %}
+.NET
+{% endanchor %}
+
+-   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/).
+
+{% anchor h3 %}
 Universal
 {% endanchor %}
 
