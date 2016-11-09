@@ -89,7 +89,7 @@ As it turns out, the [API Key Permissions List](https://sendgrid.com/docs/API_Re
 
 For the user profile request you're attempting to make, you will need to make sure you have these permissions:
 
-{% codeblock lang:json %}
+{% codeblock %}
 "scopes": [
   "user.account.read",
   "user.profile.read"
