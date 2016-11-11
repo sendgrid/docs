@@ -109,6 +109,8 @@ Instead of managing your DNS records for every single change you make, like addi
 
 If you choose not to have SendGrid manage your DNS records, then you’ll be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager. This will also mean that your SPF record will include all of SendGrid’s IP addresses.
 
+It is important to remember that you will always be provided with a custom DKIM signature, regardless of whether or not you use automated security. Turning automated security off does not mean that you will not be provided with a custom DKIM signature, but SendGrid will not automatically handle the DKIM and SPF signing of your outbound email if you add dedicated IP addresses or upgrade your account.
+
 {% anchor h3 %}
 Creating a Domain Whitelabel
 {% endanchor %}
