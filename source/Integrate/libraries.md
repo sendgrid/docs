@@ -89,6 +89,7 @@ Elixir
 {% endanchor %}
 
 -   [sendgrid_elixir](http://github.com/alexgaribay/sendgrid_elixir) *by Alex Garibay* - Elixir package for sending SendGrid transactional emails
+-   [sendgrid_elixir](https://github.com/thoughtbot/bamboo) *by Thoughtbot* - Elixir emailing package, with SendGrid adapter
 
 {% anchor h3 %}
 Groovy 
