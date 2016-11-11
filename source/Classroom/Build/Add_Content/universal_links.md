@@ -7,12 +7,8 @@ title: Universal Links
 weight: 0
 layout: page
 navigation:
-  show: false
+  show: true
 ---
-
-{% info %}
-Universal Links is currently in beta!
-{% endinfo %}
 
 {% anchor h2 %}
 Table of Contents
