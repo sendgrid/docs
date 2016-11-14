@@ -57,7 +57,9 @@ Who can use Teammates?
 Teammates is an improved and expanded version of what was previously referred to as Multiple User Credentials. If you had one or more Multiple User Credentials configured for your account, then those credentials will automatically be migrated to the Teammates platform.
 {% endinfo %}
 
-Teammates is available on all account levels! Even if you still have a [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), you will have access to Teammates and your multiple credential users will be migrated to Teammates.
+Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There are no limitations for teammates on Pro level plans or higher.
+
+If you have an Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
 
 Only account administrators and teammates with admin access are able to create and manage teammates. Subuser accounts also have access to Teammates, but they will be unable to manage teammates on the parent account level.
 

@@ -32,9 +32,15 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
 
+{% warning %}
 SendGrid is releasing the Teammates beta to each pricing plan in phases. However, once Teammates is made generally available and the beta has ended, it will be available to all SendGrid users.
 
 If would like to use the Teammates beta, but do not see it under **Settings** on your dashboard, please stay tuned!
+{% endwarning %}
+
+Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There are no limitations for teammates on Pro level plans or higher.
+
+If you have an Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
 
 {% anchor h2 %}
 Is there an additional fee to use Teammates?
@@ -90,6 +96,7 @@ For the duration of the open beta, you will be able to use either Multiple User 
 {% endinfo %}
 
 The process by which multiple user credentials are converted to teammates is as follows:
+
 * Credentialed users with **UI/API** and **Mail** permissions will be converted to admin teammates.
 * Credentialed users with **Mail** permissions only will be converted to teammates with only the ability to send mail.
 * Credentialed users with **UI/API** permissions only will be converted to teammates with the ability access the dashboard and the ability to make the same API calls they previously had access to.
