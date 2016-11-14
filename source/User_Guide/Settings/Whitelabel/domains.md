@@ -105,9 +105,13 @@ We recommend avoiding the use of underscores in your subdomains because many DNS
 If your DNS provider doesn't support underscores in CNAME records, you will have to disable automated security to use a different set of DNS records.
 {% endwarning %}
 
-Instead of managing your DNS records for every single change you make, like adding an IP address, SendGrid can manage your SPF and DKIM record updates for you. This option will change the DNS records that you point at SendGrid for your domain, allowing the responsibility of updating the records to pass through to SendGrid. This means that DKIM and SPF records will all be handled by SendGrid once this whitelabel is verified.
+Instead of managing your DNS records for every single change you make, SendGrid can manage your SPF and DKIM record updates for you. This option will change the DNS records that you point at SendGrid for your domain, allowing the responsibility of updating the records to pass through to SendGrid. This means that DKIM and SPF records will all be handled by SendGrid once this whitelabel is verified.
 
-If you choose not to have SendGrid manage your DNS records, then you’ll be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager. This will also mean that your SPF record will include all of SendGrid’s IP addresses.
+If you choose not to have SendGrid manage your DNS records, then you’ll be shown all of the manual DNS records that you need to enter at your registrar or host. You will be responsible for making any updates to your DNS settings for any changes on your account. The records you are given will be MX, DKIM, and SPF records to enter at your registrar, hosting company, or DNS manager. This will also mean that your SPF record will include all of SendGrid’s IP addresses.
+
+**It is important to remember that you will always be provided with a custom DKIM signature, regardless of whether or not you use automated security.** However, with automated security turned off, SendGrid will not automatically update your DKIM signature whenever you make a change to your account that could affect your DNS records (like adding a dedicated IP).
+
+If you turn off automated security, you will be responsible for updating your DNS records whenever you upgrade your account or add additional dedicated IPs. For example, with automated security turned off, you will have to manually add your new IP addresses to your SPF record from your whitelabel settings. Once you have updated these DNS records, your outbound mail will continue to be signed using your custom DKIM signature.
 
 {% anchor h3 %}
 Creating a Domain Whitelabel
