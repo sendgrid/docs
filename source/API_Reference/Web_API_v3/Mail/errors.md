@@ -311,7 +311,7 @@ Content Errors
 {% api_error_table content "" message.content %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "The content param is required unless you are using a Transactional Template and have defined a template_ID." "You may not send an email without the content parameter unless you are using a Transactional Template. This is to prevent you from sending an empty email to your recipients." %}
+  {% api_error_table_message "The content param is required unless you are using a transactional template and have defined a template_ID." "You may not send an email without the content parameter unless you are using a transactional template. This is to prevent you from sending an empty email to your recipients." %}
 
   {% api_error_table_message "There must be at least one defined content block. We typically suggest both text/plain and text/html blocks are included, but only one block is required." "You must specify at least one content type and value for every email you send. We recommend that you include both text/plain and text/html to ensure that all of your recipients are able to read your email, but you are only required to define one type of content." %}
 {% endapi_error_table %}
