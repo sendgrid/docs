@@ -60,13 +60,13 @@ Fill out the fields as follows:
 
 *Server address and port*: sendgrid.net : 443 (Note the connection on the SSL port 443)
 
-*Domain*: email.example.com (Enter your Email Links WhiteLabel domain here. Ensure it matches the domain configured in the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links).
+*Domain*: email.example.com (Enter your Email Links WhiteLabel domain here. Ensure it matches the domain configured in the SendGrid whitelabel settings. This value will be what recipients see in your SSL enabled clicktracking links).
 
 *Description*: SendGrid (or whatever you like)
 
 Click the CREATE button. The new service appears in the list of services available.
 
-Fastly has [several options](https://docs.fastly.com/guides/securing-communications/ordering-a-paid-tls-option) for SSL termination. If you want to be able to use your SendGrid Email Links WhiteLabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a support ticket with Fastly by emailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject and include your [customer ID](https://docs.fastly.com/guides/account-management-and-security/finding-and-managing-your-account-info#finding-your-customer-id).
+Fastly has [several options](https://docs.fastly.com/guides/securing-communications/ordering-a-paid-tls-option) for SSL termination. If you want to be able to use your SendGrid link whitelabel domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a support ticket with Fastly by emailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject and include your [customer ID](https://docs.fastly.com/guides/account-management-and-security/finding-and-managing-your-account-info#finding-your-customer-id).
 
 After provisioning, update the [CNAME record](https://docs.fastly.com/guides/basic-setup/adding-cname-records) for your domain(s) over to the TLS endpoint provided by Fastly support.
 
