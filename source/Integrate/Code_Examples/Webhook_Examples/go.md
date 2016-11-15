@@ -11,7 +11,7 @@ Parse Webhook
 {% endanchor %}
 
 {% github sendgrid/sendgrid-go#example golang %}
-We recommend using SendGrid Go, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-go/tree/master/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.
+We recommend using our official Go SDK, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-go/tree/master/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.
 {% endgithub %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/upload
