@@ -11,7 +11,7 @@ Parse Webhook
 {% endanchor %}
 
 {% github sendgrid/sendgrid-python#example Python %}
-We recommend using SendGrid Python, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.
+We recommend using our official Python SDK, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.
 {% endgithub %}
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse. In this example we will be using Python the Flask framework.
