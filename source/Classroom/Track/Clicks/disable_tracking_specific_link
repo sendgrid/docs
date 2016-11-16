@@ -1,0 +1,22 @@
+v —
+st:
+  published_at: 2016-05-26
+  type: Classroom
+seo:
+  title: Can I turn off Click Tracking for specific links? 
+  description: Don't want to track all the links in your email? 
+  keywords: click, track, tracking, link, URL, exclude, exempt, ignore 
+title: Can I turn off Click Tracking for specific links?
+weight: 0
+layout: page
+navigation:
+  show: true
+---
+
+It is possible to turn off click tracking for specific links in your HTML formatted messages. Simply wrap your links in the following example code snippet and the links will not be tracked using SendGrid's click tracking feature.
+
+```
+<a clicktracking=off href="http://sendgrid.com">Untracked Link</a>
+```
+
+**Note:** This feature is not usable for Plain Text emails.
