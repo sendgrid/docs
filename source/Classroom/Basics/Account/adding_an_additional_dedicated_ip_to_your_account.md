@@ -12,7 +12,7 @@ navigation:
 ---
 Please note: Additional IPs are available to Pro or higher accounts only. 
 
-In order to add additional IPs to your Pro or higher account, please visit [support.sendgrid.com](support.sendgrid.com) to reach a support agent and request additional IPs. Please include the username of your primary account as part of the request. 
+In order to add additional IPs to your Pro or higher account, please visit [support.sendgrid.com](https://support.sendgrid.com/hc/en-us) to reach a support agent and request additional IPs. Please include the username of your primary account as part of the request. 
 
 Make sure to inform us if the IP will be need to be active for the Parent account, both Parent and [Subuser]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) account, or Subuser account use only. If you need assign a new IP to a subuser, please use the [Subusers API update IP]({{root_url}}/API_Reference/Web_API_v3/subusers.html#Update-IPs-assigned-to-a-subuser-PUT) endpoint, or visit the [Subuser Management](https://app.sendgrid.com/settings/subusers) interface. 
 
