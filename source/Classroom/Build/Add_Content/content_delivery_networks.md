@@ -46,31 +46,31 @@ Once all of this is done, you will need to contact [SendGrid support](https://su
 Using Fastly
 {% endanchor %}
 
-[Sign up for Fastly](https://www.fastly.com/signup/) or login to your
-existing account.
+[Sign up for Fastly](https://www.fastly.com/signup/) or [log in](https://manage.fastly.com) to your existing account.
 
-Click on the CONFIGURE button on the Dashboard.
+Click the CONFIGURE link at the top of the page.
 
 ![Fastly Dashboard]({{root_url}}/images/fastly1.png)
 
-Click NEW SERVICE
+Click the gear icon to open the MANAGE SERVICE menu and select CREATE. The Create a new service page appears.
 
-![CloudFlare Service]({{root_url}}/images/fastly2.png)
+![Fastly Service]({{root_url}}/images/fastly2.png)
 
-Set the options as follows:
+Fill out the fields as follows:
 
-*Name*: SendGrid (or whatever you like)
+*Server address and port*: sendgrid.net : 443 (Note the connection on the SSL port 443)
 
-*Origin Server Address*: sendgrid.net : 443 (Note the connection on the SSL port 443)
+*Domain*: email.example.com (Enter your Email Links WhiteLabel domain here. Ensure it matches the domain configured in the SendGrid whitelabel settings. This value will be what recipients see in your SSL enabled clicktracking links).
 
-*Domain Name*: email.example.com (Enter your Email Links WhiteLabel domain here. Ensure it matches the domain configured in the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links).
+*Description*: SendGrid (or whatever you like)
 
-Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid Email Links WhiteLabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
+Click the CREATE button. The new service appears in the list of services available.
 
-After provisioning, update the CNAME record for your domain(s) over to the TLS endpoint provided by Fastly support.
+Fastly has [several options](https://docs.fastly.com/guides/securing-communications/ordering-a-paid-tls-option) for SSL termination. If you want to be able to use your SendGrid link whitelabel domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a support ticket with Fastly by emailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject and include your [customer ID](https://docs.fastly.com/guides/account-management-and-security/finding-and-managing-your-account-info#finding-your-customer-id).
 
-Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
-tracking.
+After provisioning, update the [CNAME record](https://docs.fastly.com/guides/basic-setup/adding-cname-records) for your domain(s) over to the TLS endpoint provided by Fastly support.
+
+Finally, contact SendGrid support and they'll validate the CDN settings and enable SSL click and open tracking.
 
 {% anchor h2 %}
 Using KeyCDN
@@ -89,7 +89,7 @@ Enable SSL and HTTP/2 (custom SSL or Let's Encrypt).
 
 ![KeyCDN Enable SSL]({{root_url}}/images/keycdn2.png)
 
-Enable the option "Forward Host Header." 
+Enable the option "Forward Host Header."
 
 ![KeyCDN Forward Host Header]({{root_url}}/images/keycdn3.png)
 
