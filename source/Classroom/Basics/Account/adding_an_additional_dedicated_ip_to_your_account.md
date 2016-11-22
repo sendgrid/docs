@@ -2,7 +2,7 @@
 seo:
   title: Adding an additional dedicated IP to your account
   description: Adding an additional dedicated IP to your account
-  keywords: address, purchase, silver, dedicated, IP, account, add, additional, another, need, more, IPs
+  keywords: address, purchase, silver, dedicated, IP, account, add, additional, another, need, more, IPs, new, sending
 title: Adding an additional dedicated IP to your account
 weight: 0
 layout: page

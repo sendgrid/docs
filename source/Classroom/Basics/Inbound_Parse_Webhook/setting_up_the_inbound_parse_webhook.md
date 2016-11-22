@@ -10,7 +10,7 @@ navigation:
  show: true
 ---
 
-As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments of that email, then POSTs the multipart/form-data of the attachment and JSON-encoded content to the URL of your choosing.
+As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose. 
 
 {% info %}
 XML is only available in v2.
@@ -76,10 +76,10 @@ The URL must be accessible from the public web.
 
   **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam. Checking this box will also include the spam report and spam score in the payload.
 
-  **(5)** (Optional) Check **Send Raw** if you would prefer to receive the full MIME message in encoded in JSON.
+  **(5)** (Optional) Check **Send Raw** if you would prefer to receive the full MIME message URL encoded in multipart/form-data.
 
 {% warning %}
-If you do not check **Send Raw**, the post will be multipart/form-data with the email content encoded in JSON but the attachments will be in multipart/form-data. If your code is only set up to read JSON, attachments could be dropped.
+If you do not check **Send Raw**, the post will be multipart/form-data with the email content URL encoded, but the attachments will be in multipart/form-data. If your code is only set up to read URL encoding, attachments could be dropped.
 {% endwarning %}
 
   **(6)** Click Save.
