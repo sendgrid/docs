@@ -102,7 +102,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param cc "array of email objects" No "" "An array of recipients who will receive a copy of your email. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
       {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
       {% api_table_param name string No "" "The name of the recipient. May not contain <code>;</code>, <code>.</code>, or <code>,</code>" 2 %}
-    {% api_table_param bcc "array of email objects" No "" "An array of recipients who will receive a blind carbon copy of your email. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email." 1 %}
+    {% api_table_param bcc "array of email objects" No "" "An array of recipients who will receive a blind carbon copy of your email. Each email object within this array may contain the recipient’s name, but must always contain the recipient’s email. When including a BCC of your email, the recipient of the BCC will be shown the To address specified in the original message. However, if you are sending multiple personalizations with multiple To addresses, the BCC recipient will randomly be shown any one of these To addresses. There is no way to guarantee which To address will be included in the BCC's email." 1 %}
       {% api_table_param email string Yes "" "The email address of the recipient." 2 %}
       {% api_table_param name string No "" "The name of the recipient. May not contain <code>;</code>, <code>.</code>, or <code>,</code>" 2 %}
     {% api_table_param subject string No "" "The subject line of your email." 1 %}
