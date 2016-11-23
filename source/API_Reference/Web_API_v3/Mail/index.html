@@ -138,7 +138,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param groups_to_display "array of integers" No "Max 25" "An array containing the unsubscribe groups that you would like to be displayed on the <a href="https://sendgrid.com/docs/User_Guide/Suppressions/recipient_subscription_preferences.html">unsubscribe preferences page</a>." 1 %}
   {% api_table_param ip_pool_name string No "Min 2, Max 64" "The IP Pool that you would like to send this email from." 0 %}
   {% api_table_param mail_settings "object" No "" "A collection of different mail settings that you can use to specify how you would like this email to be handled." 0 %}
-    {% api_table_param bcc "object" No "" "This allows you to have a blind carbon copy automatically sent to the specified email address for every email that is sent." 1 %}
+    {% api_table_param bcc "object" No "" "The address specified in the <code>mail_settings.bcc</code> object will receive a blind carbon copy (BCC) of the very first personalization defined in the personalizations array." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param email string No "" "The email address that you would like to receive the BCC." 2 %}
     {% api_table_param bypass_list_management object No "" "Allows you to bypass all unsubscribe groups and suppressions to ensure that the email is delivered to every single recipient. This should only be used in emergencies when it is absolutely necessary that every recipient receives your email. Ex: outage emails, or forgot password emails." 1 %}
