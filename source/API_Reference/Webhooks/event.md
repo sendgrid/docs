@@ -266,7 +266,7 @@ For example, if you include the following unique arguments in your x-smtpapi par
 {
   "unique_args": {
     "userid": "1123",
-    "template": "welcom"
+    "template": "welcome"
   }
 }
 {% endcodeblock %}
