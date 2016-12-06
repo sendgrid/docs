@@ -99,7 +99,7 @@ Then, insert the text you would like to link to your custom unsubscribe page in 
 Manage Email Preferences Links
 {% endanchor %}
 
-While not required like an unsubscribe link, you can also add add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt into or out of the various options.
+While not required like an unsubscribe link, you can also add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt into or out of the various options.
 
 To add the manage preferences link, simply follow the steps described for the unsubscribe link.
 
