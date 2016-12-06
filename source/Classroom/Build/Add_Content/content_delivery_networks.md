@@ -18,6 +18,8 @@ Using CloudFlare
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
+The instructions also assume that you have setup a validated[Email Links Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/links.html) on your account. This step is essential for allowing the following instructions to work appropriately.
+
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
 ![CloudFlare DNS Settings]({{root_url}}/images/cloudflare1.png)
