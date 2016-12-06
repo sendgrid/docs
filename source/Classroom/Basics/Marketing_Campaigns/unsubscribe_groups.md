@@ -13,6 +13,8 @@ navigation:
 Any email you send through Marketing Campaigns must include an unsubscribe link for your recipients to let you know if they no longer wish to receive this type of mail from you.
 {% endinfo %}
 
+<iframe src="https://player.vimeo.com/video/187705765" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}
