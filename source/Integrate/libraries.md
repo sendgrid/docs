@@ -62,7 +62,7 @@ Web API Libraries
 .NET
 {% endanchor %}
 
--   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/).
+-   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/). This library also includes a parser for Events and Inbounce Email webhooks.
 
 {% anchor h3 %}
 Universal
@@ -180,6 +180,7 @@ Webhook Libraries
 C#
 {% endanchor %}
 
+-   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/). This library also includes a parser for Events and Inbounce Email webhooks.
 -   [C# Webhooks](https://github.com/mirajavora/sendgrid-webhooks) - *Community contributed library*
 
 {% anchor h3 -Python-Webhooks %}
