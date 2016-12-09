@@ -59,6 +59,12 @@ Web API Libraries
 {% endanchor %}
 
 {% anchor h3 %}
+.NET
+{% endanchor %}
+
+-   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/).
+
+{% anchor h3 %}
 Universal
 {% endanchor %}
 
@@ -83,6 +89,7 @@ Elixir
 {% endanchor %}
 
 -   [sendgrid_elixir](http://github.com/alexgaribay/sendgrid_elixir) *by Alex Garibay* - Elixir package for sending SendGrid transactional emails
+-   [sendgrid_elixir](https://github.com/thoughtbot/bamboo) *by Thoughtbot* - Elixir emailing package, with SendGrid adapter
 
 {% anchor h3 %}
 Groovy 

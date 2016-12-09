@@ -87,6 +87,8 @@ threshold has been reached, we will return a status code `429` response.
 
 Sometimes your API call will generate an error. Every response to an API call that generates an error will include an error code, the reason for the error, and an error message to help you debug your request.
 
+For an example of a generic error message, [click here]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/errors.html). For a list of specific errors that may be returned when using the v3 Mail Send endpoint, [click here]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html).
+
 
 <table class="table">
   <tr>

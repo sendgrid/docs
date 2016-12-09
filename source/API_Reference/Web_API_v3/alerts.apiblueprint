@@ -61,9 +61,9 @@ Create a new alert. You can create the same alert multiple times, but with diffe
 <br>
 
 + Attributes (object)
-    + type usage_alert (required, string) - The type of alert you want to create. Can be either usage_alert or stats_notification.
+    + type usage_limit (required, string) - The type of alert you want to create. Can be either usage_limit or stats_notification. A usage_limit alert allows you to set the threshold at which a usage alert will be sent. A stats_notification alert allows you to set how frequently you would like to receive email statistics reports.
     + email_to test@example.com (required, string) - The email address the alert will be sent to.
-    + percentage 90 (optional, number) - Required for usage_alert. When this usage threshold is reached, the alert will be sent.
+    + percentage 90 (optional, number) - Required for usage_limit. When this usage threshold is reached, the alert will be sent.
     + frequency daily (optional, string) - Required for stats_notification. How frequently the alert will be sent.
 
 

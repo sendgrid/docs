@@ -11,9 +11,12 @@ navigation:
   show: true
 ---
 
-If you would like to add a subscriber to the Global unsubscribe list you can do so by going here  [sendgrid.com/unsubscribes](https://sendgrid.com/unsubscribes) and clicking Add Email. 
+You can manually add one of your recipients to your Global Unsubscribes list [here](https://app.sendgrid.com/suppressions/global_unsubscribes).
 
-![]({{root_url}}/images/Screen_Shot_2015-02-09_at_2.19.03_PM.png)
+Simply click the gear icon, select **Manually Add Recipients**, and enter the email address you would like to add. Finally, click **add**. If you would like to add more than one recipient, separate the addresses with commas or a new line.
 
-**Important:** This means this email address will not receive any more emails from you. Even transactional ones such as password resets, invoices, account confirmations, ect. All requests made to this email will be dropped automatically by SendGrid. 
+![]({{root_url}}/images/add_global_unsubscribe_1.png)
 
+{% warning %}
+Any email addresses you add to your global unsubscribes list will not receive **any** of your email. Even transactional emails such as password reset emails and account confirmations. All requests to deliver to addresses on the global unsubscribes list will be automatically dropped.
+{% endwarning %}
