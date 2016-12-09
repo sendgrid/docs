@@ -78,7 +78,7 @@ Failed requests will always return an error response, including a response code,
   </tr>
   <tr>
     <td>5xx</td>
-    <td>5xx respones indicate an error made by SendGrid</td>
+    <td>5xx responses indicate an error made by SendGrid</td>
     <td>An error occurred when SendGrid attempted to processes it.</td>
   </tr>
   <tr>
