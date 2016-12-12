@@ -31,7 +31,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/ip_warmup.html">IP Warmup</a>
         <a href="{{root_url}}/Glossary/ip_whitelabeling.html">IP Whitelabeling</a>
         <a href="{{root_url}}/Glossary/mx_record.html">MX Record</a>
-        <a href="{{root_url}}/Glossary/provisioning.html">Provisioning</a>
         <a href="{{root_url}}/Glossary/reverse_dns.html">Reverse DNS</a>
         <a href="{{root_url}}/Glossary/smtp.html">SMTP</a>
         <a href="{{root_url}}/Glossary/spf.html">SPF</a>
