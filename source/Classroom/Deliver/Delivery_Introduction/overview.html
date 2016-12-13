@@ -16,7 +16,7 @@ Email Deliverability Tips and Tricks
 
 Satisfying each of the below conditions are great steps to resolve current or potential issues with email
 deliverability such as spam folder delivery or blacklisting. While none of these are required, they all come
-highly recommend from SendGrid.
+highly recommended from SendGrid.
 
 {% anchor h3 %}
 1. Who, What, When, Where, Why.
@@ -123,7 +123,7 @@ Some key takeaways from <a href="https://www.ftc.gov/tips-advice/business-center
     examples can include:
 </p>
 <p>
-    "Add us to your address book!" - Having a recipient add your from address you their address book or trusted senders list
+    "Add us to your address book!" - Having a recipient add your from address to their address book or trusted senders list
     can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to
     similar messages to different recipients!
     Star or Mark as important - A simple inbox action like this is just another way your recipients can tell their mail
@@ -141,34 +141,52 @@ Some key takeaways from <a href="https://www.ftc.gov/tips-advice/business-center
 7. Nuts and Bolts
 {% endanchor %}
 
+<p>
 Tips for Click Tracked links
-
+</p>
+  
+<p>
 Our Click Tracking application can sometimes trip up Spam Filters. If you have Click Tracking enabled, we'll replace any
 links within HTML &lt;a&gt; tags with unique links that redirect through our service. As such if you use the original link
 as the clickable link text in your &lt;a&gt; tag, when the Click Tracking link is replaced it creates irregularity
-between where the link appears to go and where it actually goes. For example the original link:
+between where the link appears to go and where it actually goes. For example the original link: 
+</p>
 
-<a href="{{site.site_url}}">{{site.site_url}}</a>
-
+<p>
+  <a href="{{site.site_url}}">{{site.site_url}}</a>
+</p>
+  
+<p>
 Gets replaced with a much longer Click Tracked link:
+</p>
 
-<a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D_4MHh">{{site.site_url}}</a>
+<p>
+  <a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D_4MHh">{{site.site_url}}</a>
+</p>
 
-This is can be very similar to Phishing emails and as such may cause messages to go to the Spam Folder rather than the inbox. To
-get around this, use something descriptive for the link text rather than the link itself in your messages:
+<p>
+  This is can be very similar to Phishing emails and as such may cause messages to go to the Spam Folder rather than the inbox. To
+  get around this, use something descriptive for the link text rather than the link itself in your messages:
 
-<a href="{{site.site_url}}">Click to visit SendGrid</a>
-
+<p>
+  <a href="{{site.site_url}}">Click to visit SendGrid</a>
+</p>
+  
 {% anchor h2 %}
 Images and Attachments
 {% endanchor %}
 
-Also consider how you include images and attachments in your messages. As it is impossible to know how a receiving server
-treats attachments, we recommend using the HTML &lt;img&gt; tag to include images in your messages and we also
-recommend linking to hosted files rather than including them as attachments. Images must be hosted on your own or
-on a public facing server to be included via the HTML &lt;img&gt; tag. Secure site logins or credentials can be
-used to track who is coming to your site to download files. This helps ensure that your message gets to the recipient
-regardless of any attachment restrictions on the receiving mail server.
+<p>
+  Also consider how you include images and attachments in your messages. As it is impossible to know how a receiving server
+  treats attachments, we recommend using the HTML &lt;img&gt; tag to include images in your messages and we also
+  recommend linking to hosted files rather than including them as attachments.
+</p>
+
+<p>
+  Images must be hosted on your own or server or on a public facing server to be included via the HTML &lt;img&gt; tag. Secure site logins or credentials can be
+  used to track who is coming to your site to download files. This helps ensure that your message gets to the recipient
+  regardless of any attachment restrictions on the receiving mail server.
+</p>
 
 {% anchor h2 %}
 Tools of the Trade
