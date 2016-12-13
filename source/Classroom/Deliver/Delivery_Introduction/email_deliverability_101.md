@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-Below are Email Deliverability tips and tricks from leading industry experts. While none of these are required, they all come highly recommend from SendGrid.
+Below are some email deliverability tips and tricks from leading industry experts. While none of these are required, they all come highly recommended from SendGrid.
 
-Satisfying each of the below conditions are great steps to resolve current or potential issues with email deliverability such as spam folder delivery or blacklisting.
+Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
 {% anchor h3 %}
 Who, What, When, Where, Why.
@@ -23,13 +23,13 @@ First and foremost, ask yourself this question:
 
 **Am I sending the right message to the right person at the right time with the right frequency?**
 
-Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed, and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened, or get marked as Spam, mail providers won't be as comfortable placing your messages in the inbox, or accepting them at all!
+Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed, and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened, or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox, or accepting them at all!
 
 {% anchor h2 %}
 Adhere to Standards
 {% endanchor %}
 
-The second biggest factor in inbox delivery is the actual content you send in your messages. It's very important to ensure your emails meet all CAN-SPAM requirements.
+The second biggest factor in inbox delivery is the actual content you send in your messages. It's very important to ensure your emails meet every CAN-SPAM requirement.
 
 Some key takeaways from [CAN-SPAM](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business):
 
@@ -46,15 +46,15 @@ One of the most important parts of CAN-SPAM is this line:
 
 **"Tell recipients how to opt out of receiving future email from you."**
 
-All email providers look for an Unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the Spam folder. [Subscription Tracking](http://sendgrid.com/docs/Apps/subscription_tracking.html) automatically inserts an Unsubscribe link into all your mails and maintains the Unsubscribe list. Subscription Tracking is available for all account levels except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
+All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking](http://sendgrid.com/docs/Apps/subscription_tracking.html) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list. Subscription tracking is available for all account levels except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
 
-Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as Spam because they have no other option?
+Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
 
 {% anchor h3 %}
 Who are you?
 {% endanchor %}
 
-Maximum company visibility helps as well. Placing your company name in the Subject line of your emails and including your physical mailing address and phone number in your email footers helps mail providers recognize you as a legitimate company and sender of email. This also helps your recipients know that this message is indeed from you!
+Maximum company visibility helps as well. Placing your company name in the subject line of your emails and including your physical mailing address and phone number in your email footers helps mail providers recognize you as a legitimate company and sender of email. This also helps your recipients know that this message is indeed from you!
 
 We've all ignored phone calls from numbers we don't recognize, the same goes for email!
 
@@ -62,7 +62,7 @@ We've all ignored phone calls from numbers we don't recognize, the same goes for
 Segment your traffic
 {% endanchor %}
 
-Keeping your mail streams seperate can make a huge difference in the long run. Specifically, segregating your Marketing emails from your Transactional ones, and vice versa is a great way to keep legitimate mail out of trouble.
+Keeping your mail streams separated can make a huge difference in the long run. Specifically, segmenting your marketing email from your transactional email is a great way to keep legitimate mail out of trouble.
 
 Say for example you are sending your Daily Knitting Update emails on the same account and the same IP address as your receipts, invoices, and password resets.
 
@@ -70,7 +70,7 @@ The day then comes where one of your recipients simply can't take it any more, a
 
 The potential fallback from this is that not only will that recipient no longer receive their important receipts, invoices, and password resets, but it then becomes possible that ALL recipients at the same domain or ISP may also run afoul of the same problem. Yikes!
 
-Consider setting up a [new Subuser account]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) with an [additional dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html) specifically for your marketing email, for example:
+Consider setting up a [new subuser account]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) with an [additional dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html) specifically for your marketing email, for example:
 
 Parent account : IP 1 : Receipts, invoices, and password resets
 
@@ -99,7 +99,7 @@ Nuts and Bolts
 Tips for Click Tracked links**
 {% endanchor %}
 
-Our Click Tracking application can sometimes trip up Spam Filters. If you have Click Tracking enabled, we'll replace any links within HTML <a> tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your <a> tag, when the Click Tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
+Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML <a> tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your <a> tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
 
 <a href="http://www.sendgrid.com">http://www.sendgrid.com</a>
 
@@ -107,7 +107,7 @@ Gets replaced with a much longer Click Tracked link:
 
 <a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D\_4MHh">http://www.sendgrid.com</a>
 
-This is can be very similar to Phishing emails and as such may cause messages to go to the Spam Folder rather than the inbox. To get around this, use something descriptive for the link text rather than the link itself in your messages:
+This is can be very similar to phishing emails and as such may cause messages to go to the spam folder rather than the inbox. To get around this, use something descriptive for the link text rather than the link itself in your messages:
 
 <a href="http://www.sendgrid.com">Click to visit SendGrid</a>
 
