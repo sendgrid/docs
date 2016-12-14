@@ -72,9 +72,8 @@ The potential fallback from this is that not only will that recipient no longer 
 
 Consider setting up a [new subuser account]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) with an [additional dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html) specifically for your marketing email, for example:
 
-Parent account : IP 1 : Receipts, invoices, and password resets
-
-Subuser account : IP 2 : Marketing/Promotional emails.
+* Parent account | IP 1 | Receipts, invoices, and password resets
+* Subuser account | IP 2 | Marketing/Promotional emails
 
 This simple division will keep your important email in the clear, even if one stream runs into trouble. Remember, don't cross the streams!
 
@@ -96,26 +95,26 @@ Nuts and Bolts
 {% endanchor %}
 
 {% anchor h3 %}
-Tips for Click Tracked links**
+Tips for Click Tracked links
 {% endanchor %}
 
-Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML <a> tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your <a> tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
+Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML `<a>` tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your `<a>` tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
 
-<a href="http://www.sendgrid.com">http://www.sendgrid.com</a>
+`<a href="http://www.sendgrid.com">http://www.sendgrid.com</a>`
 
-Gets replaced with a much longer Click Tracked link:
+Gets replaced with a much longer link with click tracking:
 
-<a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D\_4MHh">http://www.sendgrid.com</a>
+`<a href="http://beertemp.sendgrid.net/wf/click?upn=a2quqXSHnxzJyDEtVGmF4w3cWg6voxuzvZ4oDr9WeNk-3D\_4MHh">http://www.sendgrid.com</a>`
 
-This is can be very similar to phishing emails and as such may cause messages to go to the spam folder rather than the inbox. To get around this, use something descriptive for the link text rather than the link itself in your messages:
+This is may look very similar to phishing emails, placing these messages in the spam folder rather than the inbox. To get around this, use something descriptive for the link text rather than the link itself in your messages:
 
-<a href="http://www.sendgrid.com">Click to visit SendGrid</a>
+`<a href="http://www.sendgrid.com">Click to visit SendGrid</a>`
 
 {% anchor h3 %}
 Images and Attachments
 {% endanchor %}
 
-Also consider how you include images and attachments in your messages. As it is impossible to know how a receiving server treats attachments, we recommend using the HTML <img> tag to include images in your messages and we also recommend linking to hosted files rather than including them as attachments. Images must be hosted on your own or on a public facing server to be included via the HTML <img> tag. Secure site logins or credentials can be used to track who is coming to your site to download files. This helps ensure that your message gets to the recipient regardless of any attachment restrictions on the receiving mail server.
+Also consider how you include images and attachments in your messages. As it is impossible to know how a receiving server treats attachments, we recommend using the HTML `<img>` tag to include images in your messages and we also recommend linking to hosted files rather than including them as attachments. Images must be hosted on your own or on a public facing server to be included via the HTML `<img>` tag. Secure site logins or credentials can be used to track who is coming to your site to download files. This helps ensure that your message gets to the recipient regardless of any attachment restrictions on the receiving mail server.
 
 {% anchor h2 %}
 Tools of the Trade
@@ -123,10 +122,11 @@ Tools of the Trade
 
 Finally, there are some great 3rd party services you can use to get an idea of how mail providers analyze your emails:
 
-[http://isnotspam.com](http://isnotspam.com/)/ AND  [http://www.mail-tester.com/](http://www.mail-tester.com/)
+* [http://isnotspam.com](http://isnotspam.com/)
+* [http://www.mail-tester.com/](http://www.mail-tester.com/)
 
 You can send emails to a capture address at one of these services and they will reply with a breakdown of all the positive and negative factors of your emails. This helps you isolate and fix specific issues that may be sending your email to the Spam folder rather than the inbox. These services are _HIGHLY recommended_ for troubleshooting **spam folder delivery.**
 
 [Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the [IP address you send mail from]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html).
 
-SendGrid has also released the article _[Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html)_ highlighting these and more deliverability tips.
+SendGrid has also released the article [Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html) highlighting these and more deliverability tips.
