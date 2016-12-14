@@ -21,7 +21,7 @@ When creating Custom Fields, or uploading a list with customized headers in our 
 
 Reserved fields are used to track useful metrics for your contacts by default. Trying to pass additional data into some of these field names can cause inaccuracies in your Contacts.
 
- 
+
 
 Here is a short list of the Reserved Custom Fields:
 
@@ -39,4 +39,3 @@ Here is a short list of the Reserved Custom Fields:
 </table>
 
 ![]({{root_url}}/images/SendGrid_Marketing_Campaigns.png)
-
