@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Deliver Index
+  title: Deliverability Overview
   description: How to make sure that your emails are delivered, and what to do when they're not.
   keywords:
-title: Deliver Index
+title: Deliverability Overview
 weight: 100
 layout: page
 navigation:
@@ -15,7 +15,7 @@ Deliverability Introduction
 {% endanchor %}
 
 <p>
-  description...
+  Email deliverability refers to the rate at which your emails are successfully delivered to your recipients' inboxes without negatively impacting your sending reputation with your recipients' inbox providers. Below is a quick-start guide to email deliverability listing several tips to improve and maintain your sender reputation.
 </p>
 
 <ul>
@@ -27,7 +27,7 @@ Best Practices
 {% endanchor %}
 
 <p>
-  description...
+  When it comes to deliverability, there are several best practices that you should follow when creating email content, and managing your email programs. Following are a few discussions about engagement, writing relevant content, email notifications, and warming up your dedicated sending IP addresses.
 </p>
 
 <ul>
@@ -42,10 +42,11 @@ Compliance
 {% endanchor %}
 
 <p>
-  description...
+  In addition to deliverability best-practices, there are certain requirements that **must** be met in order to remain compliant with SendGrid's requirements and the legal requirements laid out in the CAN-SPAM act.
 </p>
 
 <ul>
+  <li><a href="{{root_url}}/Glossary/can_spam.html">CAN-SPAM</a></li>
   <li><a href="{{root_url}}Delivery_Introduction/russian_data_localization_law.html">Russian Data Localization Law</a></li>
   <li><a href="{{root_url}}Sender_Authentication/the_importance_of_a_physical_mailing_address.html">The Importance of a Physical Mailing Address</a></li>
   <li><a href="{{root_url}}Undeliverable_Email/what_do_i_do_if_im_blacklisted.html">What do I do if I'm blacklisted?</a></li>
@@ -56,7 +57,7 @@ List Management
 {% endanchor %}
 
 <p>
-  description...
+  Collecting a list of interested and engaged recipients is the first step that you should take to ensure the delivery of your email, and to keep your recipients from reporting your emails as spam. Here are a few tips and tutorials to help guide your recipient, or contact, list management.
 </p>
 
 <ul>
@@ -76,7 +77,7 @@ Spam
 {% endanchor %}
 
 <p>
-  description...
+  Spam is simply defined as <strong>unwanted</strong> email. Your emails might be sent to the spam folder, or marked as spam by your recipients because you are sending to the wrong people, or because your content is caught by spam filters. Here are several articles explaining spam, and what to do if your emails are marked as spam.
 </p>
 
 <ul>
@@ -91,7 +92,7 @@ Suppressions
 {% endanchor %}
 
 <p>
-  Suppressions are . . .
+  A suppression is an email that fails to deliver or is acively prevented from being delivered. There are a variaty of suppressions: some are wanted, while others result from poor deliverability practices. Following is a list of common suppressions, along with information on how to handle these different events.
 </p>
 
 {% anchor h3 %}
@@ -99,10 +100,12 @@ Bounces
 {% endanchor %}
 
 <p>
-  Bounces are when . . .
+  A bounce is simply a message that is returned to the original sending server. There can be permanent and temporary bounces.
 </p>
 
 <ul>
+  <li><a href="{{root_url}}/Glossary/bounces.html">Bounces Definition</a></li>
+  <li><a href="{{root_url}}/User_Guide/Suppressions/bounces.html">Bounces User Guide</a></li>
   <li><a href="{{root_url}}/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html">Common SMTP Server Bounce Responses</a></li>
 </ul>
 
@@ -111,10 +114,11 @@ Drops
 {% endanchor %}
 
 <p>
-  Drops are when . . .
+  A drop occurs when SendGrid identifies a message that has been added to a suppression list. Bounces, unsubscribes, <a href="{{root_url}}/User_Guide/Suppressions/spam_reports.html">spam reports,</a> and <a href="{{root_url}}/User_Guide/Suppressions/invalid_emails.html">invalid email addresses</a> all result in a drop.
 </p>
 
 <ul>
+  <li><a href="{{root_url}}/Glossary/drops.html">Drops Definition</a></li>
   <li><a href="{{root_url}}Undeliverable_Email/how_do_i_keep_emails_from_dropping.html">How do I keep emails from dropping?</a></li>
   <li><a href="{{root_url}}Undeliverable_Email/my_emails_are_being_dropped.html">My Emails Are Being Dropped</a></li>
   <li><a href="{{root_url}}Undeliverable_Email/help_my_emails_arent_being_delivered.html">Help, My emails aren't being delivered!</a></li>
@@ -125,10 +129,12 @@ Unsubscribes
 {% endanchor %}
 
 <p>
-  Unsubscribes are when . . .
+  An unsubscribe occurs when one of your recipients requests to no longer receive one or more of your emails. There are group unsubscribes, where a recipient unsubscribes from a subset of your email, and global unsubscribes, where a recipient requests to be removed from <strong>all</strong> of your emails.
 </p>
 
 <ul>
+  <li><a href="{{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html">Unsubscribe Groups User Guide</a></li>
+  <li><a href="{{root_url}}/User_Guide/Suppressions/global_unsubscribes.html">Global Unsubscribes User Guide</a></li>
   <li><a href="{{root_url}}Delivery_Introduction/suppressions_vs_unsubscribes.html">Group Unsubscribes vs Global Unsubscribes</a></li>
   <li><a href="{{root_url}}Delivery_Introduction/unsubscribes_explained.html">Unsubscribes Explained</a></li>
   <li><a href="{{root_url}}Address_Lists/preference_centers_giving_subscribers_control.html">Preference Centers&#58; Giving Subscribers Control</a></li>
@@ -139,7 +145,7 @@ Whitelabeling
 {% endanchor %}
 
 <p>
-  description...
+  Whitelabeling is one of the most critical aspects of maintaining your sender reputation. For a complete discussion of whitelabeling, along with a list of all of our whitelabeling documentation, please see the reference linked below.
 </p>
 
 <ul>
