@@ -46,6 +46,12 @@ Keys within objects like custom_args will be merged. If any of the keys conflict
 All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields), will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these three arrays in a single personalization.
 {% endinfo %}
 
+{% warning %}
+When including a BCC of your email, the recipient of the BCC will be shown the To address specified in the original message.
+
+However, if you are sending multiple personalizations with multiple To addresses, the BCC recipient will randomly be shown any one of these To addresses. There is no way to guarantee which To address will be included in the BCC's email.
+{% endwarning %}
+
 Below are some examples of how you can use personalizations for various use cases.
 
 Personalization Examples Index
