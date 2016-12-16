@@ -1,7 +1,7 @@
 ---
 seo:
   title: ISP-Suggested Hourly Limits
-  description:
+  description: Deferral event due to reaching hourly limit.
   keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
 title: ISP-Suggested Hourly Limits
 weight: 0
@@ -10,7 +10,9 @@ navigation:
   show: true
 ---
 
-**Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]**
+In your logs, you may see the following error message accompanying a deferral event:
+
+`Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
 
 SendGrid can automatically warmup dedicated IP addresses by limiting the amount of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
