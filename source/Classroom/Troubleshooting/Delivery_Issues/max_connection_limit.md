@@ -12,8 +12,9 @@ navigation:
 
 In your logs, you may see the following error message accompanying a deferral event:
 
-
-`Email was deferred due to the following reason(s): ["IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]`
+{% codeblock %}
+Email was deferred due to the following reason(s): ["IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]
+{% endcodeblock %}
 
 {% anchor h3 %}
 What's that about?

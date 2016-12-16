@@ -12,7 +12,9 @@ navigation:
 
 In your logs, you may see the following error message accompanying a deferral event:
 
-`Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
+{% codeblock %}
+Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]
+{% endcodeblock %}
 
 SendGrid can automatically warmup dedicated IP addresses by limiting the amount of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
