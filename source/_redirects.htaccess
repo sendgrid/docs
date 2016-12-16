@@ -444,6 +444,8 @@ Redirect 301 /Classroom/Troubleshooting/list_upload_troubleshooting.html https:/
 Redirect 301 /Classroom/Troubleshooting/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html
 Redirect 301 /Classroom/Troubleshooting/upgrading_your_whitelabel.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html
 Redirect 301 /Classroom/Troubleshooting/you_have_used_a_reserved_field_name_for_your_custom_field.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html https://sendgrid.com/docs/Classroom/Troubleshooting/index.html#Delivery-Issues
+
 
 #######
 #
