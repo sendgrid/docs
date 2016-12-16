@@ -2,7 +2,7 @@
 seo:
   title: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
   description: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
-  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
+  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, [IPs reached ISP-suggested max connection limits]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html), suggested, hourly, max, limits
 title: Email was deferred due to the following reason(s)&#58; IP Deferrals messages
 weight: 0
 layout: page
@@ -13,7 +13,7 @@ navigation:
 
 In your logs, you may be seeing Deferral events with the reason(s) of;
 
-**Email was deferred due to the following reason(s): [****"IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]**
+**Email was deferred due to the following reason(s): [IPs reached ISP-suggested max connection limits]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html)**
 
 **What's that about?** I'm glad you asked. We've recently updated the infrastructure that handles the actual sending of mail off to it's intended recipients, specifically updated in regards to sending rate. 
 
@@ -25,7 +25,7 @@ We spend a lot of time tuning the rate of delivery on an ISP by ISP basis, and t
 
  
 
-**Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]** 
+**Email was deferred due to the following reason(s): [IPs reached ISP-suggested max connection limits]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html)** 
 
 SendGrid can automatically warmup dedicated IP addresses by limiting the amount of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
