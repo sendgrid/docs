@@ -262,9 +262,7 @@ Unique arguments and custom arguments are functionally the same: unique argument
 Unique Arguments
 {% endanchor %}
 
-To define and receive unique arguments when sending email via the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) simply use the `unique_args` parameter. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them in the SMTP API header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html.
-
-Any [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) included in your email via the x-smtpapi parameter are passed back in the Event Webhook response.
+To define and receive unique arguments when sending email via the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html) simply use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them in the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
 For example, if you include the following unique arguments in your x-smtpapi parameter:
 
@@ -277,7 +275,7 @@ For example, if you include the following unique arguments in your x-smtpapi par
 }
 {% endcodeblock %}
 
-You will receive the same unique argument included with the data returned by the Event Webhook:
+You will receive the same unique argument included with the data returned to the Event Webhook:
 
 {% codeblock lang:json %}
 [
