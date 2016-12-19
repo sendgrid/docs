@@ -262,9 +262,9 @@ Unique arguments and custom arguments are functionally the same: unique argument
 Unique Arguments
 {% endanchor %}
 
-To define and receive unique arguments when sending email via the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html) simply use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them in the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+To define and receive unique arguments when sending email via the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html) simply use the `unique_args` parameter in the X-SMTPAPI header or parameter. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them in the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
-For example, if you include the following unique arguments in your x-smtpapi parameter:
+For example, if you include the following unique arguments in your x-smtpapi parameter for an email sent via the v2 Mail Send endpoint:
 
 {% codeblock lang:json %}
 {
@@ -337,7 +337,7 @@ Custom Arguments
 
 Any custom arguments that you include with an email sent through [v3 Mail Send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) will also be included in your Event Webhook response.
 
-For example, if you were to include the following custom arguments in your payload to the v3 Mail Send endpoint:
+For example, if you were to include the following custom arguments in a personalization in your payload to the v3 Mail Send endpoint:
 
 {% codeblock lang:json %}
 {
