@@ -124,6 +124,8 @@ from=info@domain.com&
 List-Unsubscribe with SMTP
 {% endanchor %}
 
-{% codeblock %}
-smtp example here...
+{% codeblock lang:json %}
+{
+    "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>"
+}
 {% endcodeblock %}
