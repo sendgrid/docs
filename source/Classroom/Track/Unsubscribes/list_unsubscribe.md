@@ -17,7 +17,7 @@ navigation:
 What is List-Unsubscribe?
 {% endanchor %}
 
-[List-Unsubscribe](http://www.list-unsubscribe.com/) is a small piece of text that can be inserted in the header section of your email. The List-Unsubscribe header will insert an "unsubscribe" button, or link, in your email making it easier for your recipients to unsubscribe from your mailing list.
+[List-Unsubscribe](http://www.list-unsubscribe.com/) is a small piece of text that can be inserted in the header section of your email. The List-Unsubscribe header will insert an "unsubscribe" button, or link, in your email. A recipient can click this link to notify you that they would like to unsubscribe from your emails.
 
 {% codeblock lang:json %}
 {
@@ -29,9 +29,9 @@ What is List-Unsubscribe?
 SendGrid's Subscription Tracking
 {% endanchor %}
 
-If you enable SendGrid's [subscription tracking](https://app.sendgrid.com/settings/tracking) feature, SendGrid will automatically insert the List-Unsubscribe header with an "unsubscribe" link in all of your text and HTML emails.
+If you enable SendGrid's [subscription tracking](https://app.sendgrid.com/settings/tracking) feature, SendGrid will automatically insert the List-Unsubscribe header in all of your text and HTML emails— placing an unsubscribe link in all of your emails.
 
-Alternatively, you can place the substitution tag [unsubscribe] in your email, and SendGrid will place the unsubscribe link at that location. You may customize this tag, along with the message inserted during the substitution. For more information, see our [subscription tracking documentation]({{root_url}}/User_Guide/Settings/tracking.html#-Subscription-Tracking).
+Alternatively, you can place the substitution tag _[unsubscribe]_ anywhere in your email to specify the exact location where you want the unsubscribe link to appear. You may customize this tag and with the message inserted during the substitution. For more information, see our [subscription tracking documentation]({{root_url}}/User_Guide/Settings/tracking.html#-Subscription-Tracking).
 
 It is possible to use the List-Unsubscribe header even if you do not want to use subscription tracking. Continue reading below for an explanation of the header, and how to use it when sending email via SendGrid.
 
@@ -45,7 +45,7 @@ The List-Unsubscribe header provides two methods of unsubscribing users: an emai
 Email Unsubscribe: mailto
 {% endanchor %}
 
-The mailto portion of the List-Unsubscribe header allows you to specify an email address that will receive the unsubscribe request. In other words, when a recipient clicks the "unsubscribe" link in your email, and email will be sent by the recipient's mail client to this address.
+The mailto portion of the List-Unsubscribe header allows you to specify an email address that will receive the unsubscribe request. In other words, when a recipient clicks the "unsubscribe" link in your email, the recipient's email client will send an email to this address.
 
 **It is your responsibility to receive and process these generated emails.**
 
@@ -116,7 +116,7 @@ to=destination@example.com&
 toname=Destination&
 subject=Example_Subject&
 text=testingtextbody&
-from=info@domain.com
+from=info@domain.com&
 "headers": {"List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com>"}
 {% endcodeblock %}
 
