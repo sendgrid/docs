@@ -31,7 +31,7 @@ SendGrid's Subscription Tracking
 
 If you enable SendGrid's [subscription tracking](https://app.sendgrid.com/settings/tracking) feature, SendGrid will automatically insert the List-Unsubscribe header in all of your text and HTML emails— placing an unsubscribe link in all of your emails.
 
-Alternatively, you can place the substitution tag _[unsubscribe]_ anywhere in your email to specify the exact location where you want the unsubscribe link to appear. You may customize this tag and with the message inserted during the substitution. For more information, see our [subscription tracking documentation]({{root_url}}/User_Guide/Settings/tracking.html#-Subscription-Tracking).
+Alternatively, you can place the substitution tag _[unsubscribe]_ anywhere in the body of your email to specify the exact location where you want the unsubscribe link to appear. You may customize this tag and with the message inserted during the substitution. For more information, see our [subscription tracking documentation]({{root_url}}/User_Guide/Settings/tracking.html#-Subscription-Tracking).
 
 It is possible to use the List-Unsubscribe header even if you do not want to use subscription tracking. Continue reading below for an explanation of the header, and how to use it when sending email via SendGrid.
 
