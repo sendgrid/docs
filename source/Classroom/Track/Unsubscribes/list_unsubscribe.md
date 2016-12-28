@@ -99,8 +99,7 @@ Using List-Unsubscribe with v3 Mail Send
     }
   ],
   "headers": {
-    "List-Unsubscribe": "<mailto:unsubscribe@example.com>,
-    <http://www.unsubscribe.example.com>"
+    "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com>"
   }
 }
 {% endcodeblock %}
@@ -126,6 +125,6 @@ List-Unsubscribe with SMTP
 
 {% codeblock lang:json %}
 {
-    "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>"
+  "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>"
 }
 {% endcodeblock %}
