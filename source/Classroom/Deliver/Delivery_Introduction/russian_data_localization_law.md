@@ -6,6 +6,7 @@ navigation:
   show: true
 seo:
   title: Russian Data Localization Law
+  canonical: https://sendgrid.com/blog/the-russian-data-localization-law-what-you-need-to-know-to-be-compliant/
   description: Summary of highlights from new Russia Data Localization Law to be enforced as of September 1, 2015
   keywords: Russian data localization law, Russian Federal Law
 ---

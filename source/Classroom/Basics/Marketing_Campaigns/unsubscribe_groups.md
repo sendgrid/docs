@@ -13,6 +13,8 @@ navigation:
 Any email you send through Marketing Campaigns must include an unsubscribe link for your recipients to let you know if they no longer wish to receive this type of mail from you.
 {% endinfo %}
 
+<iframe src="https://player.vimeo.com/video/187705765" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}
@@ -99,11 +101,11 @@ Then, insert the text you would like to link to your custom unsubscribe page in 
 Manage Email Preferences Links
 {% endanchor %}
 
-While not required like an unsubscribe link, you can also add add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt into or out of the various options.
+While not required like an unsubscribe link, you can also add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt into or out of the various options.
 
 To add the manage preferences link, simply follow the steps described for the unsubscribe link.
 
-Then, in the body of your campaign, insert the text you would like to use for your manage preferences link (e.g. "Click here to manage your email preferences."). Highlight the text you want to turn into a link and click the **small link icon** in the toolbar to open the Link Preferences window, select link type “URL” and enter “[Unsubscribe_Preferences] in the URL field.
+Then, in the body of your campaign, insert the text you would like to use for your manage preferences link (e.g. "Click here to manage your email preferences."). Highlight the text you want to turn into a link and click the **small link icon** in the toolbar to open the Link Preferences window, select link type “URL” and enter “[Unsubscribe_Preferences]" in the URL field.
 
 ![]({{root_url}}/images/mc_group_unsubscribes_6.png)
 

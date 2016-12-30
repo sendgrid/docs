@@ -32,7 +32,7 @@ module Jekyll
 
     def render(context)
 output=<<HTML
-<tr class="depth-#{@depth} #{@row_required} details-closed">
+<tr class="depth-#{@depth} #{@row_required} details-closed" name="#{@name}">
   <td colspan="2" class="param #{@row_type}">#{@name}</td>
   <td>#{@type}</td>
   <td>#{@required}</td>

@@ -38,7 +38,7 @@ POST
 Create an IP pool.
 
 {% info %}
-There is a limit of 10 IP pools per user.
+There is a limit of 100 IP pools per user.
 {% endinfo %}
 
 {% parameters post %}
