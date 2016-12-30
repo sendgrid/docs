@@ -27,20 +27,19 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 * [How do I request access to a SendGrid feature?]()
 * [How do I grant access to a SendGrid feature?]()
 * [How do I set up Two-Factor Authentication for a teammate?]()
+* [Can I reset my teammate password?]()
 
 {% anchor h2 %}
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
 
 {% warning %}
-SendGrid is releasing the Teammates beta to each pricing plan in phases. However, once Teammates is made generally available and the beta has ended, it will be available to all SendGrid users.
-
-If would like to use the Teammates beta, but do not see it under **Settings** on your dashboard, please stay tuned!
+SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
 {% endwarning %}
 
-Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There are no limitations for teammates on Pro level plans or higher.
+**Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. Pro level plans or higher can add up to 1,000 teammates.**
 
-If you have an Essentials, [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
+If you have an Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
 
 {% anchor h2 %}
 Is there an additional fee to use Teammates?
@@ -74,7 +73,7 @@ How are teammates different from Multiple User Credentials?
 
 Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html).
 
-Should you choose to participate in the Teammates beta, your multiple credentialed users can be edited and managed via Teammates.
+Your multiple credentialed users can be edited and managed via Teammates.
 
 As with Multiple User Credentials, Teammates allows you to create and manage multiple users of a single account, with the ability to specify what areas of the account those users can access.
 
@@ -90,10 +89,6 @@ What will happen to my Multiple User Credentials?
 {% endanchor %}
 
 Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions once the Teammates beta has ended and it has been made generally available to all accounts. However, once migrated, you will have much more granular control over those teammates' permissions.
-
-{% info %}
-For the duration of the open beta, you will be able to use either Multiple User Credentials or Teammates.
-{% endinfo %}
 
 The process by which multiple user credentials are converted to teammates is as follows:
 
@@ -115,7 +110,7 @@ Yes, there is an API that you can use to create and manage Teammates. For more i
 Is there a difference between managing teammates in the API versus the Customer Portal?
 {% endanchor %}
 
-There is no inherent difference between creating or managing teammates via the API and the UI, wiht one exception. When you create a teammate with the API, you have more granular control over a teammate's permissions.
+There is no inherent difference between creating or managing teammates via the API and the UI, with one exception. When you create a teammate with the API, you have more granular control over a teammate's permissions.
 
 This is due to the fact that the Teammates API makes use of [API Key permissions]({{root_url}}/Classroom/Basics/API/api_key_permissions.html), or scopes, when setting teammate permissions. **There is not a 1:1 relationship between the set of teammate permissions configurable via the UI and the set of API Key permissions.**
 
@@ -131,7 +126,7 @@ Deleted teammates may not be recovered. Once a teammate has been deleted, that t
 How do I request access to a SendGrid feature?
 {% endanchor %}
 
-If you are a teammate with restricted access to a SendGrid account but feel that there is a feature you should have access, to simply navigate to that feature in the Customer Portal and click **Request Access**. You will receive an email when an account administrator either grants or denies you access.
+If you are a teammate with restricted access to a SendGrid account but feel that there is a feature you should have access to, simply navigate to that feature in the Customer Portal and click **Request Access**. You will receive an email when an account administrator either grants or denies you access.
 
 {% anchor h2 %}
 How do I grant access to a SendGrid feature?
@@ -146,6 +141,12 @@ How do I set up Two-Factor Authentication for a teammate?
 {% endanchor %}
 
 Each individual teammate is responsible for setting up Two-Factor Authentication on their account. The process of setting up Two-Factor Authentication as a Teammate is no different from the process for a regular account owner. For detailed instructions on how to configure Two-Factor Authentication, [click here]({{root_url}}/User_Guide/Settings/two_factor_authentication.html).
+
+{% anchor h2 %}
+Can I reset my teammate password?
+{% endanchor %}
+
+Currently, teammate passwords **cannot** be reset by any user or teammate (admin or otherwise). Please make sure that you store your teammate's password in a safe location, and do not lose it. We will provide the ability to reset teammate passwords in the future.
 
 {% anchor h2 %}
 Related Resources
