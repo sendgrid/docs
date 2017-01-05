@@ -143,12 +143,6 @@ How do I set up Two-Factor Authentication for a teammate?
 Each individual teammate is responsible for setting up Two-Factor Authentication on their account. The process of setting up Two-Factor Authentication as a Teammate is no different from the process for a regular account owner. For detailed instructions on how to configure Two-Factor Authentication, [click here]({{root_url}}/User_Guide/Settings/two_factor_authentication.html).
 
 {% anchor h2 %}
-Can I reset my teammate password?
-{% endanchor %}
-
-Currently, teammate passwords **cannot** be reset by any user or teammate (admin or otherwise). Please make sure that you store your teammate's password in a safe location, and do not lose it. We will provide the ability to reset teammate passwords in the future.
-
-{% anchor h2 %}
 Related Resources
 {% endanchor %}
 
