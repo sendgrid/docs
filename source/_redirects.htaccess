@@ -697,3 +697,14 @@ Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+
+#######
+#
+# Redirects for Teammates Beta Docs
+#
+#######
+
+Redirect 301 /User_Guide/Settings/teammates.html https://sendgrid.com/docs/index.html
+Redirect 301 /API_Reference/Web_API_v3/teammates.html https://sendgrid.com/docs/index.html
+Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/index.html
+Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/index.html
