@@ -347,6 +347,7 @@ Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/d
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html 
 
 #######
 #
@@ -697,14 +698,3 @@ Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-
-#######
-#
-# Redirects for Teammates Beta Docs
-#
-#######
-
-Redirect 301 /User_Guide/Settings/teammates.html https://sendgrid.com/docs/index.html
-Redirect 301 /API_Reference/Web_API_v3/teammates.html https://sendgrid.com/docs/index.html
-Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/index.html
-Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/index.html
