@@ -29,6 +29,10 @@ The following steps are required to begin parsing email:
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
 -   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply).
 
+{% warning %}
+Posting will fail to your URL endpoint if it is redirected.
+{% endwarning %}
+
 You must ensure that the subdomain-domain combination for your receiving domain is unique.
 
 {% warning %}
