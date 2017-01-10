@@ -38,6 +38,10 @@ http(s)://username:password@domain/foo.php
 
 
 {% warning %}
+Posting will fail to your URL endpoint if it is redirected.
+{% endwarning %}
+
+{% warning %}
 If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2.
 {% endwarning %}
 
