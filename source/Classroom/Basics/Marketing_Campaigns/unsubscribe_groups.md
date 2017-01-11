@@ -25,7 +25,7 @@ Table of Contents
 * [Manage Email Preferences Links](#-Manage-Email-Preferences-Links)
 * [Troubleshooting](#-Troubleshooting)
 
-The first step to include an unsubscribe link is to create an unsubscribe group. Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. Unsubscribe groups are especially useful if you send very several different types of email to the same recipients.
+The first step to include an unsubscribe link is to create an unsubscribe group. Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. Unsubscribe groups are especially useful if you send several very different types of email to the same recipients.
 
 For example, you might send transactional email, such as password reset confirmations or receipts, in addition to your marketing campaigns. Some of your recipients might want to stop receiving your marketing content while continuing to receive your transactional email. Or, they may wish to receive a weekly marketing email, but not a daily email.
 
