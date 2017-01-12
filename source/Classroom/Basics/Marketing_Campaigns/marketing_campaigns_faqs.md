@@ -68,7 +68,7 @@ Billing & Pricing
 Where can I find my monthly invoice?
 {% endanchor %}
 
-You can find your invoice from your SendGrid Billing Settings. From your SendGrid dashboard, click Settings then Plan & Billing Details. Here you can find how much you are being billed for stored contacts (e.g. how much you are charged per 10,000 contacts) as well as the total you owe.
+You can find your invoice from your [SendGrid Billing Settings](https://app.sendgrid.com/settings/billing). From your SendGrid dashboard, click **Settings** then **Plan & Billing Details**. Here you can find how much you are being billed for stored contacts (e.g. how much you are charged per 10,000 contacts) as well as the total you owe.
 
 Contacts stored on any subusers of your account will be included in your total.
 
@@ -78,15 +78,15 @@ Which contacts am I charged for?
 
 You will be charged to store all of your contacts, regardless of whether or not some contacts have unsubscribed from one or more campaigns.
 
-You are not charged when sending a campaign to a contact that has been added to the unsubscribe group associated with that campaign.
+You are **not charged** when sending a campaign to a contact that has been added to the unsubscribe group associated with that campaign.
 
-You are charged when sending emails to address that are invalid, report your campaign as spam, or bounce.
+You **are charged** when sending emails to address that are invalid, report your campaign as spam, or bounce.
 
 {% anchor h3 %}
 How much does Marketing Campaigns cost?
 {% endanchor %}
 
-You will be charged $10.00 for every 10,000 contacts you store. Your first 2,000 contacts are free. For a detailed discussion of Marketing Campaigns pricing, please see our pricing page.
+You will be charged $10.00 for every 10,000 contacts you store. Your first 2,000 contacts are free. For a detailed discussion of Marketing Campaigns pricing, please see our [pricing page](https://sendgrid.com/pricing/).
 
 {% anchor h3 %}
 Can I pay a prorated rate if I don't store my contacts for an entire month?
@@ -116,7 +116,7 @@ No, each recipient will only receive a campaign once regardless how many times t
 When scheduling a camping, why do I get the error: "Please choose a future date and time for sending your campaign"?
 {% endanchor %}
 
-This error often occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your Account Details.
+This error often occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your [Account Details](https://app.sendgrid.com/settings/account).
 
 {% anchor h3 %}
 How do I edit a schedule campaign?
@@ -134,7 +134,7 @@ Deleted campaigns cannot be restored. Please be careful when deleting a campaign
 Where can I get a list of all of my substitution tags to insert into my campaign?
 {% endanchor %}
 
-When in the Campaign Editor, click the Build tab in the left hand sidebar. Here you will see a full list of your substitution tags, along with icons you can click to easily copy a tag.
+When in the Campaign Editor, click the **Build** tab in the left hand sidebar. Here you will see a full list of your substitution tags, along with icons you can click to easily copy a tag.
 
 {% anchor h3 %}
 Can I use substitution tags in my subject line?
@@ -152,25 +152,25 @@ All images uploaded are stored in your Image Library and are shared between tran
 Are unsubscribe links automatically added to my campaign?
 {% endanchor %}
 
-If you specify a location within the body of your campaign by adding the [unsubscribe] tag, we will insert an unsubscribe link there. If you do not include the [unsubscribe] tag anywhere in your body, we will append the unsubscribe link at the end of your email. For more information on adding unsubscribe links to your campaigns, click here.
+If you specify a location within the body of your campaign by adding the [unsubscribe] tag, we will insert an unsubscribe link there. If you do not include the [unsubscribe] tag anywhere in your body, we will append the unsubscribe link at the end of your email. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 Why is my [unsubscribe] tag not being replaced with an unsubscribe link?
 {% endanchor %}
 
-Make sure that you have inserted the [unsubscribe] tag in the body of your campaign and have selected an unsubscribe group for your campaign. You must specify an unsubscribe group in order for the unsubscribe link to be added. For more information on adding unsubscribe links to your campaigns, click here.
+Make sure that you have inserted the [unsubscribe] tag in the body of your campaign and have selected an unsubscribe group for your campaign. You must specify an unsubscribe group in order for the unsubscribe link to be added. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 What is a suppression group?
 {% endanchor %}
 
-A suppression group, referred to as an unsubscribe group is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. They are especially useful if you send several very different types of email to the same recipients. For more information on using unsubscribe links in your campaigns, click here.
+A suppression group, referred to as an unsubscribe group is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. They are especially useful if you send several very different types of email to the same recipients. For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 What is the difference between suppression groups and unsubscribe groups?
 {% endanchor %}
 
-Suppression groups and unsubscribe groups are the same. We refer to suppression groups as unsubscribe groups. For more information on using unsubscribe links in your campaigns, click here.
+Suppression groups and unsubscribe groups are the same. We refer to suppression groups as unsubscribe groups. For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 Where can I find a list of contacts who have marked one of my campaigns as spam?
@@ -200,13 +200,13 @@ It is normal to see a slight delay between uploading contacts and seeing your li
 How do I add an existing contact to an existing list?
 {% endanchor %}
 
-Navigate to your contacts page and search for the contact that you want to add. Click on that contact and scroll down until you see the Associated Lists tab. On this tab you'll find a drop down menu allowing you to select a preexisting list to add this contact to.
+Navigate to your contacts page and search for the contact that you want to add. Click on that contact and scroll down until you see the **Associated Lists** tab. On this tab you'll find a drop down menu allowing you to select a preexisting list to add this contact to.
 
 {% anchor h3 %}
 How do I update the custom fields for one of my contacts?
 {% endanchor %}
 
-You can either re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the Custom Fields tab. Finally, click Edit to begin updating your contact's custom fields.
+You can either re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
 
 {% anchor h3 %}
 How do I updating an existing contact list?
@@ -214,15 +214,15 @@ How do I updating an existing contact list?
 
 You can either upload a CSV of contacts to an existing list or you can manually add contacts to a list.
 
-To upload a CSV to an existing list, navigate to the Contacts page and click Add List or Segment. Click Upload CSV. Under the dropdown menu titled Add to an existing list select the list you want to add your new contacts to. Continue with the CSV upload process as described here.
+To upload a CSV to an existing list, navigate to the Contacts page and click **Add List or Segment**. Click **Upload CSV**. Under the dropdown menu titled **Add to an existing list** select the list you want to add your new contacts to. Continue with the CSV upload process as described here.
 
-To manually add a contact to an existing list, navigate to the Contacts page and click Add List or Segment. Click Manual Add. Under the dropdown menu titled Add to an existing list select the list you want to add your new contact to. Continue adding your contact as described here.
+To manually add a contact to an existing list, navigate to the Contacts page and click **Add List or Segment**. Click **Manual Add**. Under the dropdown menu titled **Add to an existing list** select the list you want to add your new contact to. Continue adding your contact as described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Add-Contacts-From-a-CSV).
 
 {% anchor h3 %}
 Why am I receiving errors when uploading a CSV?
 {% endanchor %}
 
-The most common reason users receive errors when uploading CSVs is that there are incorrectly formatted dates in the CSV file. Make sure that your dates all have 4 year digits and are in MM/DD/YYYY format. If you are still having problems, double check the CSV upload steps described here.
+The most common reason users receive errors when uploading CSVs is that there are incorrectly formatted dates in the CSV file. Make sure that your dates all have 4 year digits and are in MM/DD/YYYY format. If you are still having problems, double check the CSV upload steps described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts).
 
 {% anchor h3 %}
 Why does my contact upload summary video show a smaller total than the number of contacts I uploaded?
@@ -258,7 +258,7 @@ We currently only allow full word searches when searching for custom field value
 How do I view which specific recipients have opened or clicked within one of my campaigns?
 {% endanchor %}
 
-You can view which recipients have opened or click in your campaigns by creating a segment based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, visit our User Guide. For other ideas on how to leverage these engagement stats, checkout this classroom article.
+You can view which recipients have opened or click in your campaigns by creating a segment based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
 {% anchor h3 %}
 What is the maximum number of lists and segments that I can create?
@@ -294,13 +294,13 @@ It can take up to 5 minutes before an unsubscribed contact will appear in an uns
 How do I unschedule a campaign that I don't want to send?
 {% endanchor %}
 
-You can unschedule a campaign by navigating to your list of campaigns, clicking the action cog next to the campaign you want to stop and clicking Unschedule. This returns the campaign to "draft" form.
+You can unschedule a campaign by navigating to your list of campaigns, clicking the action cog next to the campaign you want to stop and clicking **Unschedule**. This returns the campaign to "draft" form.
 
 {% anchor h3 %}
 How do I stop a campaign send?
 {% endanchor %}
 
-When a campaign is in progress, a red X will appear next to that campaign on your campaigns page. Click this X to cancel your campaign. NOTE: you cannot resume a cancelled campaign.
+When a campaign is in progress, a red X will appear next to that campaign on your campaigns page. Click this X to cancel your campaign. **NOTE: you cannot resume a cancelled campaign.**
 
 {% anchor h3 %}
 Can I retrieve Marketing Campaigns events via the Event Webhook?
@@ -318,7 +318,7 @@ From the internal wiki: "At this time we enforce open and click tracking so all 
 When a recipient clicks the unsubscribe link in my campaign, are they unsubscribed from all of my emails?
 {% endanchor %}
 
-No, Marketing Campaigns uses unsubscribe groups that allow you to specify which groups of marketing email your recipients subscribe to. For more information on how to use unsubscribe groups, click here.
+No, Marketing Campaigns uses unsubscribe groups that allow you to specify which groups of marketing email your recipients subscribe to. For more information on how to use unsubscribe groups, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 Why am I required to select an unsubscribe group when sending a campaign?
@@ -335,7 +335,7 @@ Sender Verification
 Why didn't I receive a sender ID verification email?
 {% endanchor %}
 
-If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand sidebar and click on Senders. Next to the sender you need to verify, click the action cog and select Resend Verification.
+If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand sidebar and click on **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
 
 {% anchor h3 %}
 Why isn't my sender ID verified after clicking the verification link?
@@ -389,10 +389,10 @@ No, the stats displayed on the Marketing Campaigns Overview page are specific to
 How do I view statistics for a specific campaign?
 {% endanchor %}
 
-Under Marketing Campaigns in the left hand sidebar, select Campaigns. Find the campaign you want to see stats for in the list and click the action cog on the right. Click Stats to view statistics for that specific campaign.
+Under **Marketing Campaigns** in the left hand sidebar, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action cog on the right. Click **Stats** to view statistics for that specific campaign.
 
 {% anchor h3 %}
 Are there more stats available than are shown in the UI?
 {% endanchor %}
 
-Yes, you can export a CSV of raw stats for any of your campaigns. This CSV will include stats like click-through rate, total open rate, spam report rate, and more. To learn more about stats from Marketing Campaigns, click here.
+Yes, you can export a CSV of raw stats for any of your campaigns. This CSV will include stats like click-through rate, total open rate, spam report rate, and more. To learn more about stats from Marketing Campaigns, click [here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Campaign-Statistics).
