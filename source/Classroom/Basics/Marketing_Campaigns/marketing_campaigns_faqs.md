@@ -15,57 +15,66 @@ navigation:
 Table of Contents
 {% endanchor %}
 
-* [**A/B Testing**]()
-  - [Where can I manually select the winner of an A/B test campaign?]()
-  - [When can I manually pick the winner of an A/B test campaign?]()
-  - [Can I change the winning criteria after sending an A/B test campaign?]()
-  - [Can I see which A/B test variation was sent to each recipient?]()
-  - [Can I export raw stats for each of my A/B test variations?]()
-* [**Billing & Pricing**]()
-  - [Where can I find my monthly invoice?]()
-  - [Which contacts am I charged for?]()
-  - [How much does Marketing Campaigns cost?]()
-  - [Can I pay a prorated rate if I don't store my contacts for an entire month?]()
-* [**Campaigns & Campaign Editor**]()
-  - [How come I can't select a sender ID in the campaign editor after creating it?]()
-  - [If I send a campaign to multiple lists or segments, will contacts on each list receive a duplicate email?]()
-  - [When scheduling a camping, why do I get the error: "Please choose a future date and time for sending your campaign"?]()
-  - [How do I edit a schedule campaign?]()
-  - [Can I restore a deleted campaign?]()
-  - [Where can I get a list of all of my substitution tags to insert into my campaign?]()
-  - [Can I use substitution tags in my subject line?]()
-  - [Where are uploaded images stored and how do I access them?]()
-  - [Are unsubscribe links automatically added to my campaign?]()
-  - [Why is my [unsubscribe] tag not being replaced with an unsubscribe link?]()
-  - [What is a suppression group?]()
-  - [What is the difference between suppression groups and unsubscribe groups?]()
-  - [Where can I find a list of contacts who have marked one of my campaigns as spam?]()
-  - [How many campaigns can I create?]()
-* [**Contacts & CSV Uploading**]()
-  - [How come my list and segment counts aren't updated after adding new contacts?]()
-  - [How do I add an existing contact to an existing list?]()
-  - [How do I update the custom fields for one of my contacts?]()
-  - [How do I updating an existing contact list?]()
-  - [Why am I receiving errors when uploading a CSV?]()
-  - [Why does my contact upload summary video show a smaller total than the number of contacts I uploaded?]()
-  - [What is the file size limit when uploading CSVs?]()
-  - [How long will it take to upload a CSV?]()
-* [**Segmentation**]()
-  - [Why can't I search for partial words of custom fields when creating a segment?]()
-  - [How do I view which specific recipients have opened or clicked within one of my campaigns?]()
-  - [What is the maximum number of lists and segments that I can create?]()
-* [**Sending Campaigns**]()
-  - [How come one of my substitution tags wasn't replaced during a send?]()
-  - [Why aren't my substitution tags weren't replaced in my test send?]()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-  - []()
-* [**Sender Verification**]()
-* [**Stats**]()
+* [**A/B Testing**](#-AB-Testing)
+  - [Where can I manually select the winner of an A/B test campaign?](#-When-can-I-manually-pick-the-winner-of-an-AB-test-campaign)
+  - [When can I manually pick the winner of an A/B test campaign?](#-When-can-I-manually-pick-the-winner-of-an-AB-test-campaign)
+  - [Can I change the winning criteria after sending an A/B test campaign?](#-Can-I-change-the-winning-criteria-after-sending-an-AB-test-campaign)
+  - [Can I see which A/B test variation was sent to each recipient?](#-Can-I-see-which-AB-test-variation-was-sent-to-each-recipient)
+  - [Can I export raw stats for each of my A/B test variations?](#-Can-I-export-raw-stats-for-each-of-my-AB-test-variations)
+* [**Billing & Pricing**](#-Billing--Pricing)
+  - [Where can I find my monthly invoice?](#-Where-can-I-find-my-monthly-invoice)
+  - [Which contacts am I charged for?](#-Which-contacts-am-I-charged-for)
+  - [How much does Marketing Campaigns cost?](#-How-much-does-Marketing-Campaigns-cost)
+  - [Can I pay a prorated rate if I don't store my contacts for an entire month?](#-Can-I-pay-a-prorated-rate-if-I-dont-store-my-contacts-for-an-entire-month)
+* [**Campaigns & Campaign Editor**](#-Campaigns--Campaign-Editor)
+  - [How come I can't select a sender ID in the campaign editor after creating it?](#-How-come-I-cant-select-a-sender-ID-in-the-campaign-editor-after-creating-it)
+  - [If I send a campaign to multiple lists or segments, will contacts on each list receive a duplicate email?](#-If-I-send-a-campaign-to-multiple-lists-or-segments-will-contacts-on-each-list-receive-a-duplicate-email)
+  - [When scheduling a camping, why do I get the error: "Please choose a future date and time for sending your campaign"?](#-When-scheduling-a-camping-why-do-I-get-the-error-Please-choose-a-future-date-and-time-for-sending-your-campaign)
+  - [How do I edit a scheduled campaign?](#-How-do-I-edit-a-scheduled-campaign)
+  - [Can I restore a deleted campaign?](#-Can-I-restore-a-deleted-campaign)
+  - [Where can I get a list of all of my substitution tags to insert into my campaign?](#-Where-can-I-get-a-list-of-all-of-my-substitution-tags-to-insert-into-my-campaign)
+  - [Can I use substitution tags in my subject line?](#-Can-I-use-substitution-tags-in-my-subject-line)
+  - [Where are uploaded images stored and how do I access them?](#-Where-are-uploaded-images-stored-and-how-do-I-access-them)
+  - [Are unsubscribe links automatically added to my campaign?](#-Are-unsubscribe-links-automatically-added-to-my-campaign)
+  - [Why is my unsubscribe tag not being replaced with an unsubscribe link?](#-Why-is-my-unsubscribe-tag-not-being-replaced-with-an-unsubscribe-link)
+  - [What is a suppression group?](#-What-is-a-suppression-group)
+  - [What is the difference between suppression groups and unsubscribe groups?](#-What-is-the-difference-between-suppression-groups-and-unsubscribe-groups)
+  - [Where can I find a list of contacts who have marked one of my campaigns as spam?](#-Where-can-I-find-a-list-of-contacts-who-have-marked-one-of-my-campaigns-as-spam)
+  - [How many campaigns can I create?](#-How-many-campaigns-can-I-create)
+* [**Contacts & CSV Uploading**](#-Contacts--CSV-Uploading)
+  - [How come my list and segment counts aren't updated after adding new contacts?](#-How-come-my-list-and-segment-counts-arent-updated-after-adding-new-contacts)
+  - [How do I add an existing contact to an existing list?](#-How-do-I-add-an-existing-contact-to-an-existing-list)
+  - [How do I update the custom fields for one of my contacts?](#-How-do-I-update-the-custom-fields-for-one-of-my-contacts)
+  - [How do I update an existing contact list?](#-How-do-I-update-an-existing-contact-list)
+  - [Why am I receiving errors when uploading a CSV?](#-Why-am-I-receiving-errors-when-uploading-a-CSV)
+  - [Why does my contact upload summary video show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-video-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
+  - [What is the file size limit when uploading CSVs?](#-What-is-the-file-size-limit-when-uploading-CSVs)
+  - [How long will it take to upload a CSV?](#-How-long-will-it-take-to-upload-a-CSV)
+* [**Segmentation**](#-Segmentation)
+  - [Why can't I search for partial words of custom fields when creating a segment?](#-Why-cant-I-search-for-partial-words-of-custom-fields-when-creating-a-segment)
+  - [How do I view which specific recipients have opened or clicked within one of my campaigns?](#-How-do-I-view-which-specific-recipients-have-opened-or-clicked-within-one-of-my-campaigns)
+  - [What is the maximum number of lists and segments that I can create?](#-What-is-the-maximum-number-of-lists-and-segments-that-I-can-create)
+* [**Sending Campaigns**](#-Sending-Campaigns)
+  - [How come one of my substitution tags wasn't replaced during a send?](#-How-come-one-of-my-substitution-tags-wasnt-replaced-during-a-send)
+  - [Why aren't my substitution tags replaced in my test send?](#-Why-arent-my-substitution-tags-replaced-in-my-test-send)
+  - [Why isn't my unsubscribed contact appearing in an unsubscribe group?](#-Why-isnt-my-unsubscribed-contact-appearing-in-an-unsubscribe-group)
+  - [How do I unschedule a campaign that I don't want to send?](#-How-do-I-unschedule-a-campaign-that-I-dont-want-to-send)
+  - [How do I stop a campaign send?](#-How-do-I-stop-a-campaign-send)
+  - [Can I retrieve Marketing Campaigns events via the Event Webhook?](#-Can-I-retrieve-Marketing-Campaigns-events-via-the-Event-Webhook)
+  - [Can I turn off open/click tracking?](#-Can-I-turn-off-openclick-tracking)
+  - [When a recipient clicks the unsubscribe link in my campaign, are they unsubscribed from all of my emails?](#-When-a-recipient-clicks-the-unsubscribe-link-in-my-campaign-are-they-unsubscribed-from-all-of-my-emails)
+  - [Why am I required to select an unsubscribe group when sending a campaign?](#-Why-am-I-required-to-select-an-unsubscribe-group-when-sending-a-campaign)
+* [**Sender Verification**](#-Sender-Verification)
+  - [Why didn't I receive a sender ID verification email?](#-Why-didnt-I-receive-a-sender-ID-verification-email)
+  - [Why isn't my sender ID verified after clicking the verification link?](#-Why-isnt-my-sender-ID-verified-after-clicking-the-verification-link)
+  - [How long is the sender ID verification link valid?](#-How-long-is-the-sender-ID-verification-link-valid)
+* [**Stats**](#-Stats)
+  - [Are stats included for email I send via SMTPAPI and the Web API?](#-Are-stats-included-for-email-I-send-via-SMTPAPI-and-the-Web-API)
+  - [How do I find stats for a specific campaign?](#-How-do-I-find-stats-for-a-specific-campaign)
+  - [Is there a way for me to get more stats than are shown on the UI?](#-Is-there-a-way-for-me-to-get-more-stats-than-are-shown-on-the-UI)
+  - [What unit of time is used for my dashboard statistics?](#-What-unit-of-time-is-used-for-my-dashboard-statistics)
+  - [How do I view statistics for a specific campaign?](#-How-do-I-view-statistics-for-a-specific-campaign)
+  - [Are there more stats available than are shown in the UI?](#-Are-there-more-stats-available-than-are-shown-in-the-UI)
 
 {% anchor h2 %}
 A/B Testing
@@ -162,7 +171,7 @@ When scheduling a camping, why do I get the error: "Please choose a future date 
 This error often occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your [Account Details](https://app.sendgrid.com/settings/account).
 
 {% anchor h3 %}
-How do I edit a schedule campaign?
+How do I edit a scheduled campaign?
 {% endanchor %}
 
 First, unschedule the campaign that you want to edit— this will return your campaign to "draft form". When finished editing your campaign, simply reschedule your desired send time.
@@ -252,7 +261,7 @@ How do I update the custom fields for one of my contacts?
 You can either re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
 
 {% anchor h3 %}
-How do I updating an existing contact list?
+How do I update an existing contact list?
 {% endanchor %}
 
 You can either upload a CSV of contacts to an existing list or you can manually add contacts to a list.
@@ -322,7 +331,7 @@ How come one of my substitution tags wasn't replaced during a send?
 If one of your substitution tags wasn't replaced during a send, make sure that there is a value associated with that substitution tag. Search for the email address of the recipient that received the faulty email and double check the value of a custom field you may have used. You should also make sure that you spelled the substitution tag correctly when building the campaign.
 
 {% anchor h3 %}
-Why aren't my substitution tags weren't replaced in my test send?
+Why aren't my substitution tags replaced in my test send?
 {% endanchor %}
 
 The Send Test feature doesn't replace any substitution tags - it is only intended to show you how your campaign will be rendered in different email inboxes.
@@ -421,12 +430,6 @@ What unit of time is used for my dashboard statistics?
 {% endanchor %}
 
 Currently, you can see your aggregate stats over all time, and the graph displayed on the Marketing Campaigns Overview page displays stats for the previous 7 days.
-
-{% anchor h3 %}
-Do the stats displayed on my Marketing Campaigns overview page include email sent via SMTP or the Web API?
-{% endanchor %}
-
-No, the stats displayed on the Marketing Campaigns Overview page are specific to email sent via Marketing Campaigns.
 
 {% anchor h3 %}
 How do I view statistics for a specific campaign?
