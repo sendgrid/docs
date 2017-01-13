@@ -16,8 +16,8 @@ Table of Contents
 {% endanchor %}
 
 * [**A/B Testing**](#-AB-Testing)
-  - [Where can I manually select the winner of an A/B test campaign?](#-When-can-I-manually-pick-the-winner-of-an-AB-test-campaign)
-  - [When can I manually pick the winner of an A/B test campaign?](#-When-can-I-manually-pick-the-winner-of-an-AB-test-campaign)
+  - [Where can I manually select the winner of an A/B test campaign?](#-When-can-I-manually-select-the-winner-of-an-AB-test-campaign)
+  - [When can I manually select the winner of an A/B test campaign?](#-When-can-I-manually-select-the-winner-of-an-AB-test-campaign)
   - [Can I change the winning criteria after sending an A/B test campaign?](#-Can-I-change-the-winning-criteria-after-sending-an-AB-test-campaign)
   - [Can I see which A/B test variation was sent to each recipient?](#-Can-I-see-which-AB-test-variation-was-sent-to-each-recipient)
   - [Can I export raw stats for each of my A/B test variations?](#-Can-I-export-raw-stats-for-each-of-my-AB-test-variations)
@@ -29,7 +29,7 @@ Table of Contents
 * [**Campaigns & Campaign Editor**](#-Campaigns--Campaign-Editor)
   - [How come I can't select a sender ID in the campaign editor after creating it?](#-How-come-I-cant-select-a-sender-ID-in-the-campaign-editor-after-creating-it)
   - [If I send a campaign to multiple lists or segments, will contacts on each list receive a duplicate email?](#-If-I-send-a-campaign-to-multiple-lists-or-segments-will-contacts-on-each-list-receive-a-duplicate-email)
-  - [When scheduling a camping, why do I get the error: "Please choose a future date and time for sending your campaign"?](#-When-scheduling-a-camping-why-do-I-get-the-error-Please-choose-a-future-date-and-time-for-sending-your-campaign)
+  - [When scheduling a campaign, why do I get the error: "Please choose a future date and time for sending your campaign"?](#-When-scheduling-a-campaign-why-do-I-get-the-error-Please-choose-a-future-date-and-time-for-sending-your-campaign)
   - [How do I edit a scheduled campaign?](#-How-do-I-edit-a-scheduled-campaign)
   - [Can I restore a deleted campaign?](#-Can-I-restore-a-deleted-campaign)
   - [Where can I get a list of all of my substitution tags to insert into my campaign?](#-Where-can-I-get-a-list-of-all-of-my-substitution-tags-to-insert-into-my-campaign)
@@ -47,7 +47,7 @@ Table of Contents
   - [How do I update the custom fields for one of my contacts?](#-How-do-I-update-the-custom-fields-for-one-of-my-contacts)
   - [How do I update an existing contact list?](#-How-do-I-update-an-existing-contact-list)
   - [Why am I receiving errors when uploading a CSV?](#-Why-am-I-receiving-errors-when-uploading-a-CSV)
-  - [Why does my contact upload summary video show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-video-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
+  - [Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-email-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
   - [What is the file size limit when uploading CSVs?](#-What-is-the-file-size-limit-when-uploading-CSVs)
   - [How long will it take to upload a CSV?](#-How-long-will-it-take-to-upload-a-CSV)
 * [**Segmentation**](#-Segmentation)
@@ -69,7 +69,7 @@ Table of Contents
   - [Why isn't my sender ID verified after clicking the verification link?](#-Why-isnt-my-sender-ID-verified-after-clicking-the-verification-link)
   - [How long is the sender ID verification link valid?](#-How-long-is-the-sender-ID-verification-link-valid)
 * [**Stats**](#-Stats)
-  - [Are stats included for email I send via SMTPAPI and the Web API?](#-Are-stats-included-for-email-I-send-via-SMTPAPI-and-the-Web-API)
+  - [Are stats included for email I send via SMTP and the Web API?](#-Are-stats-included-for-email-I-send-via-SMTP-and-the-Web-API)
   - [How do I find stats for a specific campaign?](#-How-do-I-find-stats-for-a-specific-campaign)
   - [Is there a way for me to get more stats than are shown on the UI?](#-Is-there-a-way-for-me-to-get-more-stats-than-are-shown-on-the-UI)
   - [What unit of time is used for my dashboard statistics?](#-What-unit-of-time-is-used-for-my-dashboard-statistics)
@@ -87,7 +87,7 @@ Where can I manually select the winner of an A/B test campaign?
 You can navigate to the campaign's stats to select a winner.
 
 {% anchor h3 %}
-When can I manually pick the winner of an A/B test campaign?
+When can I manually select the winner of an A/B test campaign?
 {% endanchor %}
 
 You will receive an email when your A/B test has completed reminding you to manually select a winner. You may manually select a winner at any time immediately after beginning an A/B test campaign— you do not have to let the test finish before selecting a winner.
@@ -165,7 +165,7 @@ If I send a campaign to multiple lists or segments, will contacts on each list r
 No, each recipient will only receive a campaign once regardless how many times they appear on a list or segment.
 
 {% anchor h3 %}
-When scheduling a camping, why do I get the error: "Please choose a future date and time for sending your campaign"?
+When scheduling a campaign, why do I get the error: "Please choose a future date and time for sending your campaign"?
 {% endanchor %}
 
 This error often occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your [Account Details](https://app.sendgrid.com/settings/account).
@@ -277,7 +277,7 @@ Why am I receiving errors when uploading a CSV?
 The most common reason users receive errors when uploading CSVs is that there are incorrectly formatted dates in the CSV file. Make sure that your dates all have 4 year digits and are in MM/DD/YYYY format. If you are still having problems, double check the CSV upload steps described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts).
 
 {% anchor h3 %}
-Why does my contact upload summary video show a smaller total than the number of contacts I uploaded?
+Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?
 {% endanchor %}
 
 You have probably uploaded duplicate contacts. Double check your CSV for duplicates, and if you are certain there are none, please reach out to your Customer Success Manager or contact Support.
@@ -408,7 +408,7 @@ Stats
 {% endanchor %}
 
 {% anchor h3 %}
-Are stats included for email I send via SMTPAPI and the Web API?
+Are stats included for email I send via SMTP and the Web API?
 {% endanchor %}
 
 No, these stats are specific to the email you send over Marketing Campaigns only.
