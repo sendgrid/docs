@@ -7,7 +7,7 @@ navigation:
 seo:
   title: How does billing work for Marketing Campaigns?
   description: How does billing work for Marketing Campaigns?
-  keywords: marketing, campaigns, bill, charge, contacts, usage, overage
+  keywords: marketing, campaigns, bill, charge, contacts, usage, overage, subuser
 ---
 
 {% anchor h2 %}
@@ -46,6 +46,8 @@ Marketing Campaigns Billing for Subusers
 
 Each subuser may store up to 2,000 contacts for free before they are charged the same rate of $10.00 per 10,000 contacts each month. Any additional charges due for storing contacts on a subuser account will appear in the parent account's monthly invoice.
 
-The emails subusers send through Marketing Campaigns are subtracted from the parent account's monthly email credit allotment.
+The emails subusers send through Marketing Campaigns are subtracted from the parent account's monthly email credit allowance.
 
 **Note:** if there are one or more subusers under a parent account, and both those subusers _and_ the parent account each store the same contact, then the parent account will be billed for each instance that the duplicate contact is stored.
+
+For example, if a SendGrid parent account uploads a contact with the address `johndoe@example.com` and a single subuser of that parent account also uploads a contact for `johndoe@example.com`, then the parent account will be billed twice for that contact.
