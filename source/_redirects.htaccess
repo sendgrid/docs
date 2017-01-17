@@ -347,7 +347,7 @@ Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/d
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
-Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html 
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
 
 #######
 #
@@ -474,6 +474,7 @@ Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/do
 Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/ips.html
 Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
 Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/Classroom/Basics/Account/account_sign_up_faq.html
+Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/Glossary/email_marketing.html
 
 #######
 #
