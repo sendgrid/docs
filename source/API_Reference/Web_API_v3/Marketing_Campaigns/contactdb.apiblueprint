@@ -73,6 +73,10 @@ FORMAT: 1A
 Treat recipient IDs as opaque values. The `id` value returned by recipient endpoints should be passed exactly as returned to endpoints that require a recipient id.
 {% endinfo %}
 
+{% info %}
+It is important to note that recipient IDs are actually encoded email addresses.
+{% endinfo %}
+
 # Group Custom Fields
 
 ## Custom Fields [/contactdb/custom_fields]
