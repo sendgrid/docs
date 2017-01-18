@@ -38,6 +38,10 @@ http(s)://username:password@domain/foo.php
 
 
 {% warning %}
+The Event Webhook will not follow redirects. Please make sure to use the correct URL, or posting will fail.
+{% endwarning %}
+
+{% warning %}
 If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2.
 {% endwarning %}
 
