@@ -45,7 +45,8 @@ Every API request you make to the Web API v3 must be authenticated by including 
 
 ###[Requests]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/requests.html)
 
-All requests to the Web API v3 must be made via HTTPS. All requests must have a `Content-Type` header declared.
+All requests to the Web API v3 must be made via HTTPS. It is a best practice to include the `Content-Type: application/json` header in all of your requests.
+
 The Web API v3 is completely RESTful and accepts GET, POST, PUT, and DELETE requests, depending on the resource.
 
 {% codeblock lang:http %}
