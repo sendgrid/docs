@@ -38,7 +38,7 @@ http(s)://username:password@domain/foo.php
 
 
 {% warning %}
-Posting will fail to your URL endpoint if it is redirected.
+The Event Webhook will not follow redirects. Please make sure to use the correct URL, or posting will fail.
 {% endwarning %}
 
 {% warning %}
