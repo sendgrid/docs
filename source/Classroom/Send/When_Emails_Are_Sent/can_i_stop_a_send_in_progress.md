@@ -99,13 +99,13 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
 {% endapiv3example %}
 
 {% anchor h4 %}
-Cancel or Pause Your Send
+4. Cancel or Pause Your Send
 {% endanchor %}
 
 Now that your email has been scheduled and has a batch ID assigned, you can pause or cancel the send at any time up to 10 minutes before the scheduled send time.
 
 {% info %}
-You can still make the following API call within 10 minutes of the scheduled send time, but scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
 {% endinfo %}
 
 To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `stats` to "cancel".
@@ -122,22 +122,42 @@ To only pause your scheduled send, simply set the `status` parameter in your req
 {% endv3response %}
 {% endapiv3example %}
 
+For more details, please see our [Cancel Scheduled Sends API Reference]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
+
 {% anchor h2 %}
 Marketing Campaigns
 {% endanchor %}
 
-{% anchor h3 %}
-Stopping a Campaign In Progress
-{% endanchor %}
-
-Simply deleting a marketing email that is in progress will halt any progress of the send made thus far, and keep further emails from that send from going out. Be sure to clone the email first, so you don't lose your work! This method has a small window of opportunity, but if you get to it within a minute or so of clicking "Finish" you'll be able to catch it.
-
-![]({{root_url}}/images/inprogressmarketing.png)
+You have several options for canceling, unscheduling, or rescheduling a campaign.
 
 {% anchor h3 %}
-Canceling a Scheduled Campaign
+Using the User interface
 {% endanchor %}
 
-{% anchor h3 %}
-Stopping a Campaign via API
+{% anchor h4 %}
+Canceling a Campaign
 {% endanchor %}
+
+If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have two options:
+
+1. **Deleting the Campaign**
+
+  Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the gear icon and select **Delete**.
+
+2. **Canceling the Campaign**
+
+  Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop and click the little red X next to the campaign name to cancel the campaign.
+
+  ![]({{root_url}}/images/cancel_campaign_1.png)
+
+  ![]({{root_url}}/images/cancel_campaign_2.png)
+
+  ![]({{root_url}}/images/cancel_campaign_3.png)
+
+{% anchor h4 %}
+Unscheduling a Campaign
+{% endanchor %}
+
+Simply, navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click the action cog next to the campaign you want to undschedule and select **Unschedule**.
+
+![]({{root_url}}/images/cancel_campaign_4.png)
