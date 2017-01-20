@@ -108,7 +108,7 @@ Now that your email has been scheduled and has a batch ID assigned, you can paus
 Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
 {% endinfo %}
 
-To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `stats` to "cancel".
+To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".
 
 {% apiv3example post POST https://api.sendgrid.com/v3/user/scheduled_sends %}
 {% apiv3requestbody %}
@@ -128,7 +128,7 @@ For more details, please see our [Cancel Scheduled Sends API Reference]({{root_u
 Marketing Campaigns
 {% endanchor %}
 
-You have several options for canceling, unscheduling, or rescheduling a campaign.
+You have several options for canceling or unscheduling a campaign.
 
 {% anchor h3 %}
 Using the User interface
