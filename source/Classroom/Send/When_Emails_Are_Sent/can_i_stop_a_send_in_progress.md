@@ -142,17 +142,21 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 
 1. **Deleting the Campaign**
 
-  Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the gear icon and select **Delete**.
+    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the gear icon and select **Delete**.
 
 2. **Canceling the Campaign**
 
-  Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop and click the little red X next to the campaign name to cancel the campaign.
+    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop and click the little red X next to the campaign name to cancel the campaign. Click **Confirm** in the confirmation window that appears. You'll see the status of your campaign change to "Canceled".
 
-  ![]({{root_url}}/images/cancel_campaign_1.png)
+    ![]({{root_url}}/images/cancel_campaign_1.png)
 
-  ![]({{root_url}}/images/cancel_campaign_2.png)
+    *****
 
-  ![]({{root_url}}/images/cancel_campaign_3.png)
+    ![]({{root_url}}/images/cancel_campaign_2.png)
+
+    *****
+
+    ![]({{root_url}}/images/cancel_campaign_3.png)
 
 {% anchor h4 %}
 Unscheduling a Campaign
@@ -161,3 +165,31 @@ Unscheduling a Campaign
 Simply, navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click the action cog next to the campaign you want to undschedule and select **Unschedule**.
 
 ![]({{root_url}}/images/cancel_campaign_4.png)
+
+{% anchor h3 %}
+Using the API
+{% endanchor %}
+
+{% anchor h4 %}
+Deleting a Campaign
+{% endanchor %}
+
+You can delete a campaign by making the following API call where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
+
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id} %}
+{% v3response %}
+  HTTP/1.1 204
+{% endv3response %}
+{% endapiv3example %}
+
+{% anchor h4 %}
+Unscheduling a Campaign
+{% endanchor %}
+
+You can unschedule a campaign by making the following API call where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
+
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules %}
+{% v3response %}
+  HTTP/1.1 204
+{% endv3response %}
+{% endapiv3example %}
