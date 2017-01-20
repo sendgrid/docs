@@ -38,6 +38,10 @@ http(s)://username:password@domain/foo.php
 
 
 {% warning %}
+The Event Webhook will not follow redirects. Please make sure to use the correct URL, or posting will fail.
+{% endwarning %}
+
+{% warning %}
 If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2.
 {% endwarning %}
 
@@ -397,15 +401,23 @@ Categories sent to SendGrid as an array will be returned as an array.
 {% anchor h2 %}
 Example
 {% endanchor %}
-The following example uses PHP to store webhook requests in `/tmp/dump.log`:
+The following example uses PHP to store webhook requests in `/tmp/log.txt`:
 
 {% codeblock lang:php %}
 <?php
-$fh = fopen('/tmp/dump.log', 'a+');
-if ( $fh )
-{
-// Dump body
-fwrite($fh, print_r($HTTP_RAW_POST_DATA, true));
+
+$myFile = "tmp/log.txt";
+$fh = fopen($myFile, 'a+') or die("can't open file");
+
+if ($fh){
+    $headers = apache_request_headers();
+    $postdata = file_get_contents("php://input");
+
+    foreach ($headers as $header => $value) {
+    fwrite($fh, print_r("$header: $value \n", true));
+}
+
+fwrite($fh, print_r("$postdata \n", true));
 fclose($fh);
 }
 
