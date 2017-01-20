@@ -43,7 +43,84 @@ There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_sch
 You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique batch id) pending cancellation at one time.
 {% endinfo %}
 
+To create a batch ID, assign that ID to an email or group of emails, and cancel the send, refer to the following steps:
 
+{% anchor h4 %}
+1. Generate a Batch ID
+{% endanchor %}
+
+First, generate a batch id by calling the v3/mail/batch endpoint. When successful, you should receive a 201 response along with your batch ID.
+
+{% apiv3example post POST https://api.sendgrid.com/v3/mail/batch %}
+{% v3response %}
+  HTTP/1.1 201
+  {
+    "batch_id": "YOUR_BATCH_ID"
+  }
+{% endv3response %}
+{% endapiv3example %}
+
+{% anchor h4 %}
+2. Assign Batch ID to an Email
+{% endanchor %}
+
+The batch ID generated in step 1 can now be used when scheduling an email via the Web API v3 by setting the value of `batch_id` to your new batch ID in a v3/mail/send request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
+
+{% apiv3example post POST https://api.sendgrid.com/v3/mail/send %}
+{% apiv3requestbody %}
+{
+  "personalizations": [
+    {
+    "to": [
+    {
+    "email": "john@example.com"
+    }
+    ],
+    "subject": "Hello, World!"
+  }],
+  "from": {
+    "email": "from_address@example.com"
+  },
+  "content": [{
+    "type": "text/plain",
+    "value": "Hello, World!"
+  }],
+  "send_at": 1484913600,
+  "batch_id": "YOUR_BATCH_ID"
+}
+{% endapiv3requestbody %}
+
+{% v3response %}
+{
+  HTTP/1.1 202
+}
+{% endv3response %}
+
+{% endapiv3example %}
+
+{% anchor h4 %}
+Cancel or Pause Your Send
+{% endanchor %}
+
+Now that your email has been scheduled and has a batch ID assigned, you can pause or cancel the send at any time up to 10 minutes before the scheduled send time.
+
+{% info %}
+You can still make the following API call within 10 minutes of the scheduled send time, but scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+{% endinfo %}
+
+To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `stats` to "cancel".
+
+{% apiv3example post POST https://api.sendgrid.com/v3/user/scheduled_sends %}
+{% apiv3requestbody %}
+  {
+  "batch_id": "YOUR_BATCH_ID",
+  "status": "pause"
+  }
+{% endapiv3requestbody %}
+{% v3response %}
+  HTTP/1.1 201
+{% endv3response %}
+{% endapiv3example %}
 
 {% anchor h2 %}
 Marketing Campaigns
