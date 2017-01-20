@@ -99,7 +99,7 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
 {% endapiv3example %}
 
 {% anchor h4 %}
-4. Cancel or Pause Your Send
+3. Cancel or Pause Your Send
 {% endanchor %}
 
 Now that your email has been scheduled and has a batch ID assigned, you can pause or cancel the send at any time up to 10 minutes before the scheduled send time.
