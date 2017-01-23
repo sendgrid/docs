@@ -25,7 +25,7 @@ Stopping an ongoing send that is using SMTP or the Web API can be tricky, becaus
 
 The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
 
-This method is great if you have a runaway script or have just started a job accidentally. Be sure to verify that the credentials your app is using are either the primary account ones, or a [Multiple Credential](https://app.sendgrid.com/settings/credentials) so you can change the proper one.
+This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [Multiple Credential](https://app.sendgrid.com/settings/credentials) so you can change the proper one.
 
 {% anchor h3 %}
 2. Contact Support
@@ -49,7 +49,7 @@ To create a batch ID, assign that ID to an email or group of emails, and cancel 
 1. Generate a Batch ID
 {% endanchor %}
 
-First, generate a batch id by calling the v3/mail/batch endpoint. When successful, you should receive a 201 response along with your batch ID.
+First, generate a batch id by calling the [v3/mail/batch endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Batch-IDs). When successful, you should receive a 201 response along with your batch ID.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/mail/batch %}
 {% v3response %}
@@ -64,7 +64,7 @@ First, generate a batch id by calling the v3/mail/batch endpoint. When successfu
 2. Assign Batch ID to an Email
 {% endanchor %}
 
-The batch ID generated in step 1 can now be used when scheduling an email via the Web API v3 by setting the value of `batch_id` to your new batch ID in a v3/mail/send request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
+The batch ID generated in step 1 can now be used when scheduling an email via the SendGrid API v3 by setting the value of `batch_id` to your new batch ID in a [v3/mail/send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
 
 {% apiv3example post POST https://api.sendgrid.com/v3/mail/send %}
 {% apiv3requestbody %}
@@ -102,7 +102,7 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
 3. Cancel or Pause Your Send
 {% endanchor %}
 
-Now that your email has been scheduled and has a batch ID assigned, you can pause or cancel the send at any time up to 10 minutes before the scheduled send time.
+Now that your email has been scheduled and has a batch ID assigned, you can [pause or cancel the send]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Cancel-Scheduled-Sends) at any time up to 10 minutes before the scheduled send time.
 
 {% info %}
 Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
@@ -131,7 +131,7 @@ Marketing Campaigns
 You have several options for canceling or unscheduling a campaign.
 
 {% anchor h3 %}
-Using the User interface
+Using the User Interface
 {% endanchor %}
 
 {% anchor h4 %}
@@ -162,12 +162,12 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 Unscheduling a Campaign
 {% endanchor %}
 
-Simply, navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click the action cog next to the campaign you want to unschedule and select **Unschedule**.
+If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns) by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Campaigns**. Next to the campaign you want to unschedule, click the action cog and select **Unschedule**.
 
-![]({{root_url}}/images/cancel_campaign_4.png)
+![]({{root_url}}/images/unschedule_campaign.gif)
 
 {% anchor h3 %}
-Using the API
+Using the SendGrid API
 {% endanchor %}
 
 {% anchor h4 %}
