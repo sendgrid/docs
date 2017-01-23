@@ -114,7 +114,7 @@ Edit a version.
   {% parameter subject No '`<%subject%>` tag must be present' 'Updated subject for the new version' %}
   {% parameter html_content No '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for html content.' 'HTML content of the new version.' %}
   {% parameter plain_content No '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for plain content.' 'Text/plain content of the new version.' %}
-  {% parameter active No '`0` Inactive, `1` Active' 'Sets the version as the active verion on the remplate. Only one version of a template can be active.' %}
+  {% parameter active No '`0` Inactive, `1` Active' 'Sets the version as the active version on the template. Only one version of a template can be active.' %}
 {% endparameters %}
 
 {% apiv3example patch PATCH https://api.sendgrid.com/v3/templates/:template_id/versions/:version_id name=updated_example_name%}
