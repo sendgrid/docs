@@ -23,9 +23,9 @@ Stopping an ongoing send that is using SMTP or the Web API can be tricky, becaus
 1. Change your password
 {% endanchor %}
 
-The simple act of [changing your password](https://sendgrid.com/user/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
+The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
 
-This method is great if you have a runaway script or have just started a job accidentally. Be sure to verify that the credentials your app is using are either the primary account ones, or a [Multiple Credential](https://sendgrid.com/credentials) so you can change the proper one.
+This method is great if you have a runaway script or have just started a job accidentally. Be sure to verify that the credentials your app is using are either the primary account ones, or a [Multiple Credential](https://app.sendgrid.com/settings/credentials) so you can change the proper one.
 
 {% anchor h3 %}
 2. Contact Support
@@ -37,7 +37,7 @@ Support has the ability to clear any emails currently pending delivery from your
 Cancel Scheduled Sends
 {% endanchor %}
 
-There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the Web API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
+There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
 
 {% info %}
 You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique batch id) pending cancellation at one time.
@@ -162,7 +162,7 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 Unscheduling a Campaign
 {% endanchor %}
 
-Simply, navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click the action cog next to the campaign you want to undschedule and select **Unschedule**.
+Simply, navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click the action cog next to the campaign you want to unschedule and select **Unschedule**.
 
 ![]({{root_url}}/images/cancel_campaign_4.png)
 
@@ -171,24 +171,24 @@ Using the API
 {% endanchor %}
 
 {% anchor h4 %}
-Deleting a Campaign
+Unscheduling a Campaign
 {% endanchor %}
 
-You can delete a campaign by making the following API call where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
+You can unschedule a campaign by making a call to [/v3/camaigns/{campaign_id}/schedules]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id} %}
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules %}
 {% v3response %}
   HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
 
 {% anchor h4 %}
-Unscheduling a Campaign
+Deleting a Campaign
 {% endanchor %}
 
-You can unschedule a campaign by making the following API call where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
+You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules %}
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id} %}
 {% v3response %}
   HTTP/1.1 204
 {% endv3response %}
