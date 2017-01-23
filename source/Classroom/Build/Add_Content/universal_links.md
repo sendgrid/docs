@@ -22,10 +22,6 @@ Table of Contents
 * [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
 * [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
 
-{% warning %}
-Universal Links is currently in Early Access!
-{% endwarning %}
-
 {% anchor h2 %}
 What are universal links?
 {% endanchor %}
