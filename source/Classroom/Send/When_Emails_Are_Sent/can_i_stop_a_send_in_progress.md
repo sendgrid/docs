@@ -51,10 +51,6 @@ You have several options for canceling or unscheduling a campaign.
 Using the User Interface
 {% endanchor %}
 
-{% anchor h4 %}
-Canceling a Campaign
-{% endanchor %}
-
 If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have two options:
 
 1. **Deleting the Campaign**
@@ -77,10 +73,6 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 
 {% anchor h3 %}
 Using the SendGrid API
-{% endanchor %}
-
-{% anchor h4 %}
-Deleting a Campaign
 {% endanchor %}
 
 You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
