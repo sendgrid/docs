@@ -13,6 +13,10 @@ navigation:
 
 Oops! You accidentally sent a whole pile of mail you didn't mean to send... No worries, take a deep breath and read on. Be it a misspelled subject line or a rogue script, we can help!
 
+{% info %}
+If you are looking for information on how to cancel a scheduled email or campaign, [click here]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html)!
+{% endinfo %}
+
 {% anchor h2 %}
 Transactional Email
 {% endanchor %}
