@@ -31,14 +31,8 @@ The simple act of [changing your password](https://app.sendgrid.com/settings/acc
 
 This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [Multiple Credential](https://app.sendgrid.com/settings/credentials) so you can change the proper one.
 
-{% anchor h3 %}
-2. Delete Your API Key
-{% endanchor %}
-
-Similar to changing your password, you can change or delete your API key if you need to quickly interrupt a send that is already being queued for delivery. Remember, you have to delete the API key used to authenticate the script or app that originated the email requests.
-
 {% warning %}
-We cannot guarantee that changing your password or API key will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.
+We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.
 {% endwarning %}
 
 {% anchor h3 %}
