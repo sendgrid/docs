@@ -13,9 +13,9 @@ navigation:
 
 If you have scheduled an email or a campaign to be sent, but decided to cancel or reschedule the email then you have several options.
 
-{% info %}
+{% warning %}
 If you are looking for information on how to stop a send that is currently in progress, [click here]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html)!
-{% endinfo %}
+{% endwarning %}
 
 {% anchor h2 %}
 Transactional Email
