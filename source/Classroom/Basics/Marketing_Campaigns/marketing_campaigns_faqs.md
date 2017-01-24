@@ -86,6 +86,8 @@ Where can I manually select the winner of an A/B test campaign?
 
 You can navigate to the campaign's stats to select a winner.
 
+![]({{root_url}}/images/pick_ab_test_winner.gif)
+
 {% anchor h3 %}
 When can I manually select the winner of an A/B test campaign?
 {% endanchor %}
@@ -109,6 +111,8 @@ Can I export raw stats for each of my A/B test variations?
 {% endanchor %}
 
 Yes! Simply click "Export CSV" button on the campaign stats page. The exported CSV will contain a line of stats for each individual variation you sent.
+
+![]({{root_url}}/images/stats_view_details.png)
 
 **********
 
