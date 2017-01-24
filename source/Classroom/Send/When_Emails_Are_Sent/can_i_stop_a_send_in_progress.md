@@ -2,7 +2,7 @@
 seo:
   title: Can I stop a send in progress?
   description: Can I stop a send in progress?
-  keywords: pause, halt, flush, delete, queue, stop
+  keywords: pause, halt, delete, queue, stop, interrupt
 title: Can I stop a send in progress?
 weight: 0
 layout: page

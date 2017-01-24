@@ -2,11 +2,10 @@
 seo:
   title: Can I stop a scheduled send?
   description: Can I stop a scheduled email or campaign?
-  keywords: pause, halt, flush, delete, queue, stop, cancel, reschedule, unschedule
+  keywords: pause, halt, delete, queue, stop, cancel, reschedule, unschedule
 title: Can I stop a scheduled send?
 weight: 0
 layout: page
-zendesk_id: 204117516
 navigation:
   show: true
 ---
