@@ -17,14 +17,14 @@ If you are looking for information on how to stop a send that is currently in pr
 {% endwarning %}
 
 {% anchor h2 %}
-Transactional Email
+Canceling Transactional Email
 {% endanchor %}
 
 {% anchor h3 %}
 Cancel Scheduled Sends
 {% endanchor %}
 
-There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
+There is a [/group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
 
 {% info %}
 You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique batch id) pending cancellation at one time.
@@ -112,7 +112,7 @@ To only pause your scheduled send, simply set the `status` parameter in your req
 For more details, please see our [Cancel Scheduled Sends API Reference]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 
 {% anchor h2 %}
-Marketing campaigns
+Canceling a Marketing Campaign
 {% endanchor %}
 
 {% anchor h3 %}

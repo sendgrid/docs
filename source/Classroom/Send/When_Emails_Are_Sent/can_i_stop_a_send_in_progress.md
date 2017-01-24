@@ -18,7 +18,7 @@ If you are looking for information on how to cancel a scheduled email or campaig
 {% endwarning %}
 
 {% anchor h2 %}
-Transactional Email
+Stopping Transactional Email
 {% endanchor %}
 
 Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress, or a send that you have scheduled.
@@ -42,7 +42,7 @@ We cannot guarantee that changing your password will prevent 100% of your email 
 Support has the ability to clear any emails currently pending delivery from your account. To be more clear, there is a very small window of opportunity between when we accept an email request and when we actually attempt delivery to the recipient. Emails can build up in this queue, and upon request, we can delete them entirely.
 
 {% anchor h2 %}
-Marketing Campaigns
+Stopping a Marketing Campaign
 {% endanchor %}
 
 You have several options for canceling or unscheduling a campaign.
