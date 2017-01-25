@@ -89,10 +89,10 @@ You can navigate to the campaign's stats to select a winner.
 ![]({{root_url}}/images/mc_faq_1.gif)
 
 {% anchor h3 %}
-When can I manually select the winner of an A/B test campaign?
+When can I manually pick the winner of an A/B test campaign?
 {% endanchor %}
 
-You will receive an email when your A/B test has completed reminding you to manually select a winner. You may manually select a winner at any time immediately after beginning an A/B test campaign— you do not have to let the test finish before selecting a winner.
+You will receive an email reminding you to manually select a winner when your A/B test has completed. However, you may manually select a winner at any time immediately after beginning an A/B test campaign— you do not have to let the test finish before selecting a winner.
 
 {% anchor h3 %}
 Can I change the winning criteria after sending an A/B test campaign?
@@ -110,7 +110,7 @@ No, currently you cannot see which recipient received which version.
 Can I export raw stats for each of my A/B test variations?
 {% endanchor %}
 
-Yes! Simply click "Export CSV" button on the campaign stats page. The exported CSV will contain a line of stats for each individual variation you sent.
+Yes! Simply click the "Export CSV" button on the campaign stats page. The exported CSV will contain a line of stats for each individual variation you sent.
 
 ![]({{root_url}}/images/mc_faq_2.png)
 
@@ -142,11 +142,17 @@ Contacts stored on any subusers of your account will be included in your total.
 Which contacts am I charged for?
 {% endanchor %}
 
-You will be charged to store all of your contacts, regardless of whether or not some contacts have unsubscribed from one or more campaigns.
+You will be charged to store all of your contacts, regardless of whether or not some contacts have unsubscribed from one or more campaigns. You are also charged to store any contacts on your subusers' accounts. As with your parent account, each subuser can store up to 2,000 contacts for free.
 
-You are **not charged** when sending a campaign to a contact that has been added to the unsubscribe group associated with that campaign.
+{% info %}
+Your parent account will be billed for each unique contact, regardless of how many lists or segments that contact appears on. However, if there are one or more subusers under a parent account, the parent account will be billed for all unique contacts stored on each account, even if the same contact is stored on multiple accounts.
+{% endinfo %}
 
-You **are charged** when sending emails to address that are invalid, report your campaign as spam, or bounce.
+For example, if a SendGrid parent account uploads a contact with the address `johndoe@example.com` and a single subuser of that parent account also uploads a contact for `johndoe@example.com`, then the parent account will be billed twice for that contact.
+
+Unsubscribed contacts will not consume email credits when you send via Marketing Campaigns, even if those unsubscribed contacts are included in the list or segment you are sending to.
+
+However, sending campaigns to invalid email addresses, recipients who have marked your emails as spam, or addresses that bounce will still consume email credits from your monthly balance.
 
 {% anchor h3 %}
 How much does Marketing Campaigns cost?
@@ -184,13 +190,13 @@ No, each recipient will only receive a campaign once regardless how many times t
 When scheduling a campaign, why do I get the error: "Please choose a future date and time for sending your campaign"?
 {% endanchor %}
 
-This error often occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your [Account Details](https://app.sendgrid.com/settings/account).
+This error occurs if you enter a time in the past to deliver a campaign. Make sure that your timezone is set correctly in your [Account Details](https://app.sendgrid.com/settings/account).
 
 {% anchor h3 %}
 How do I edit a scheduled campaign?
 {% endanchor %}
 
-First, unschedule the campaign that you want to edit— this will return your campaign to "draft form". When finished editing your campaign, simply reschedule your desired send time.
+First, unschedule the campaign that you want to edit— this will return your campaign to "draft" status. When finished editing your campaign, simply reschedule your desired send time.
 
 ![]({{root_url}}/images/mc_faq_5.gif)
 
@@ -198,13 +204,13 @@ First, unschedule the campaign that you want to edit— this will return your ca
 Can I restore a deleted campaign?
 {% endanchor %}
 
-Deleted campaigns cannot be restored. Please be careful when deleting a campaign!
+Deleted campaigns cannot be restored. When deleting a campaign the application will ask you to confirm your choice to delete. Please be careful when deleting campaigns.
 
 {% anchor h3 %}
 Where can I get a list of all of my substitution tags to insert into my campaign?
 {% endanchor %}
 
-When in the Campaign Editor, click the **Build** tab in the left hand sidebar. Here you will see a full list of your substitution tags, along with icons you can click to easily copy a tag.
+When in the Campaign Editor, click the **Tags** tab in the left hand sidebar. Here you will see a full list of your substitution tags, along with icons you can click to easily copy a tag.
 
 ![]({{root_url}}/images/mc_faq_6.gif)
 
@@ -212,7 +218,7 @@ When in the Campaign Editor, click the **Build** tab in the left hand sidebar. H
 Can I use substitution tags in my subject line?
 {% endanchor %}
 
-Yes, using substitution tags in your subject line is a great way to further customize your emails for each of your recipients.
+Yes, using substitution tags in your subject line is a great way to further customize your emails for each of your recipients. It's worth noting you can use emoji here as well.
 
 {% anchor h3 %}
 Where are uploaded images stored and how do I access them?
@@ -224,19 +230,21 @@ All images uploaded are stored in your Image Library and are shared between tran
 Are unsubscribe links automatically added to my campaign?
 {% endanchor %}
 
-If you specify a location within the body of your campaign by adding the [unsubscribe] tag, we will insert an unsubscribe link there. If you do not include the [unsubscribe] tag anywhere in your body, we will append the unsubscribe link at the end of your email. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+No, every campaign is required to have the [unsubscribe] tag, and the [unsubscribe] tag will automatically be appended in every SendGrid template.
+
+However, you can specify the exact location in your email that you would like the unsubscribe link to appear by inserting the [unsubscribe] tag at a location of your choice. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 Why is my [unsubscribe] tag not being replaced with an unsubscribe link?
 {% endanchor %}
 
-Make sure that you have inserted the [unsubscribe] tag in the body of your campaign and have selected an unsubscribe group for your campaign. You must specify an unsubscribe group in order for the unsubscribe link to be added. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+Make sure that you have inserted the [unsubscribe] tag in the body of your campaign _and_ have selected an unsubscribe group for your campaign. You must specify an unsubscribe group or include a [custom unsubscribe URL]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html#-Using-a-Custom-Unsubscribe-Link) in order for the unsubscribe link to be added and for your campaign to be sent. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
-What is a suppression group?
+What is an unsubscribe group?
 {% endanchor %}
 
-A suppression group, referred to as an unsubscribe group is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types, or groups, of emails instead of globally unsubscribing from all of your emails. They are especially useful if you send several very different types of email to the same recipients. For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+An _unsubscribe group_ is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types or groups of emails instead of globally unsubscribing from _all_ of your emails. A common example, would be to have one group for “Account” messages like password resets and shipping notifications, and another group for “Marketing” messages, so that users unsubscribing from marketing email don’t mistakenly miss password reminder emails.  For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 What is the difference between suppression groups and unsubscribe groups?
@@ -248,7 +256,11 @@ Suppression groups and unsubscribe groups are the same. We refer to suppression 
 Where can I find a list of contacts who have marked one of my campaigns as spam?
 {% endanchor %}
 
-You can find a list of contacts who have marked one of your campaigns as spam by clicking Stats from the left hand sidebar then filtering the results by "Spam Reports".
+You can find a list of contacts who have marked one of your campaigns as spam by clicking [Stats](https://app.sendgrid.com/statistics) from the left hand navigation menu then filtering the results by "Spam Reports". You can apply a category to a campaign or series of campaigns to further filter these stats.
+
+{% warning %}
+You will not be able to see which specific campaign was marked as spam unless you assign a unique category for every campaign.
+{% endwarning %}
 
 {% anchor h3 %}
 How many campaigns can I create?
@@ -280,7 +292,7 @@ Navigate to your contacts page and search for the contact that you want to add. 
 How do I update the custom fields for one of my contacts?
 {% endanchor %}
 
-You can either re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
+You can re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
 
 ![]({{root_url}}/images/mc_faq_8.gif)
 
@@ -334,15 +346,17 @@ We currently only allow full word searches when searching for custom field value
 How do I view which specific recipients have opened or clicked within one of my campaigns?
 {% endanchor %}
 
-You can view which recipients have opened or click in your campaigns by creating a segment based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
+To quickly view which recipients have either opened one of your campaigns or have clicked within one of your campaigns, click **Campaigns** under **Marketing Campaigns** in the left hand navigation menu. Click the campaign you're interested in, and hover your cursor over either the "Unique Opens" or "Unique Clicks" tile and click **View Details**.
 
 ![]({{root_url}}/images/mc_faq_2.png)
+
+You can also create a segment of recipients have opened or click in your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
 {% anchor h3 %}
 What is the maximum number of lists and segments that I can create?
 {% endanchor %}
 
-You can create up to 100 lists and 100 segments.
+You can create up to 100 lists and 100 segments. Each resource is independently limited to 100. In other words, you can create 100 lists and 100 segments, but not 200 of one and 0 of the other.
 
 **********
 
@@ -372,13 +386,13 @@ It can take up to 5 minutes before an unsubscribed contact will appear in an uns
 How do I unschedule a campaign that I don't want to send?
 {% endanchor %}
 
-You can unschedule a campaign by navigating to your list of campaigns, clicking the action cog next to the campaign you want to stop and clicking **Unschedule**. This returns the campaign to "draft" form.
+You can unschedule a campaign by navigating to your list of campaigns, clicking the action cog next to the campaign you want to stop and clicking **Unschedule**. This returns the campaign to "draft" form. Also see _[How do I edit a scheduled campaign?](#-How-do-I-edit-a-scheduled-campaign)_ for additional detail.
 
 {% anchor h3 %}
 How do I stop a campaign send?
 {% endanchor %}
 
-When a campaign is in progress, a red X will appear next to that campaign on your campaigns page. Click this X to cancel your campaign. **NOTE: you cannot resume a cancelled campaign.**
+When a campaign is in progress, a red X will appear next to that campaign on your campaigns page. Click this X to cancel your campaign. **NOTE: you cannot resume a cancelled campaign.** For more information on stopping sends in progress, see _[Can I stop a send in progress?]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html)_
 
 {% anchor h3 %}
 Can I retrieve Marketing Campaigns events via the Event Webhook?
@@ -390,7 +404,17 @@ Yes! We send events from Marketing Campaigns to the Event Webhook, including A/B
 Can I turn off open/click tracking?
 {% endanchor %}
 
-From the internal wiki: "At this time we enforce open and click tracking so all users get the benefits of this feature."
+No, click tracking is permanently enabled for all links included in your campaigns. Even if you disable click tracking under your general SendGrid settings, links clicked in your campaigns are still included in your link click tracking totals.
+
+However, by adding the attribute `"clicktracking=off"` to the `<a>` tag of a link in one of your campaigns **before the href attribute**, you can prevent that link from being included in the link click tracking table for that campaign.
+
+Clicks on this link are still recorded under your general SendGrid stats and the aggregate Campaign stats. To learn more about click tracking in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Link-Tracking).
+
+For example, the link:
+
+`<a clicktracking="off" href="www.example.com">Example Link</a>`
+
+would not be included in the link click tracking table, but it would still be counted in your overall SendGrid stats and the aggregate click tracking stats for the campaign.
 
 {% anchor h3 %}
 When a recipient clicks the unsubscribe link in my campaign, are they unsubscribed from all of my emails?
@@ -403,6 +427,9 @@ Why am I required to select an unsubscribe group when sending a campaign?
 {% endanchor %}
 
 All email sent through Marketing Campaigns is required to have an unsubscribe link allowing recipients to quickly and easily unsubscribe from your emails.
+
+The [unsubscribe] tag must always be present, and you must always either select an unsubscribe group or include a custom unsubscribe URL. For detailed instructions on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+
 **********
 
 {% anchor h2 %}
@@ -413,7 +440,7 @@ Sender Verification
 Why didn't I receive a sender ID verification email?
 {% endanchor %}
 
-If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand sidebar and click on **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
+If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand navigation menu and click on **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
 
 ![]({{root_url}}/images/mc_faq_4.gif)
 
@@ -421,13 +448,13 @@ If you didn't receive a sender ID verification email, try requesting the verific
 Why isn't my sender ID verified after clicking the verification link?
 {% endanchor %}
 
-If you clicked the link in your sender ID verification email, but had to sign into SendGrid again, then your sender ID wasn't verified. You must be signed into SendGrid before clicking the verification link in your email.
+If you clicked the link in your sender ID verification email, but had to sign into SendGrid again, then your sender ID wasn't verified. You must be signed into SendGrid _before_ clicking the verification link in your email.
 
 {% anchor h3 %}
 How long is the sender ID verification link valid?
 {% endanchor %}
 
-The URL in your sender ID verification email is valid for 48 hours. After 48 hours you will have to request a new verification email to be delivered. To resend your verification email, navigate to Marketing Campaigns in the left hand sidebar and click Senders. Next to the sender you need to verify, click the action cog and select Resend Verification.
+The URL in your sender ID verification email is valid for 48 hours. After 48 hours you will have to request a new verification email to be delivered. To resend your verification email, navigate to Marketing Campaigns in the left hand navigation menu and click **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
 
 **********
 
@@ -436,7 +463,7 @@ Stats
 {% endanchor %}
 
 {% anchor h3 %}
-Are stats included for email I send via SMTP and the Web API?
+Are stats included for email I send via SMTP and the SendGrid API?
 {% endanchor %}
 
 No, these stats are specific to the email you send over Marketing Campaigns only.
@@ -451,7 +478,9 @@ You can go into the settings menu after your campaign has started sending, and t
 Is there a way for me to get more stats than are shown on the UI?
 {% endanchor %}
 
-You can always export a CSV of raw stats for any of your campaigns. That will include stats like CTR, total open rates, spam report rate, and more.
+You can always export a CSV of raw stats for any of your campaigns. That will include stats like CTR, total open rates, spam report rate, and more. To learn more about stats from Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Campaign-Statistics).
+
+Additionally, you can use [SendGrid's Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) to collect and store your Marketing Campaigns statistics.
 
 {% anchor h3 %}
 What unit of time is used for my dashboard statistics?
@@ -463,12 +492,6 @@ Currently, you can see your aggregate stats over all time, and the graph display
 How do I view statistics for a specific campaign?
 {% endanchor %}
 
-Under **Marketing Campaigns** in the left hand sidebar, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action cog on the right. Click **Stats** to view statistics for that specific campaign.
+Under **Marketing Campaigns** in the left hand navigation menu, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action cog on the right. Click **Stats** to view statistics for that specific campaign.
 
 ![]({{root_url}}/images/mc_faq_9.gif)
-
-{% anchor h3 %}
-Are there more stats available than are shown in the UI?
-{% endanchor %}
-
-Yes, you can export a CSV of raw stats for any of your campaigns. This CSV will include stats like click-through rate, total open rate, spam report rate, and more. To learn more about stats from Marketing Campaigns, click [here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Campaign-Statistics).
