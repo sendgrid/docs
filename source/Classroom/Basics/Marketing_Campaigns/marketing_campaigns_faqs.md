@@ -86,7 +86,7 @@ Where can I manually select the winner of an A/B test campaign?
 
 You can navigate to the campaign's stats to select a winner.
 
-![]({{root_url}}/images/pick_ab_test_winner.gif)
+![]({{root_url}}/images/mc_faq_1.gif)
 
 {% anchor h3 %}
 When can I manually select the winner of an A/B test campaign?
@@ -112,7 +112,17 @@ Can I export raw stats for each of my A/B test variations?
 
 Yes! Simply click "Export CSV" button on the campaign stats page. The exported CSV will contain a line of stats for each individual variation you sent.
 
-![]({{root_url}}/images/stats_view_details.png)
+![]({{root_url}}/images/mc_faq_2.png)
+
+{% anchor h3 %}
+Can I see which links were clicked within each of my A/B test versions?
+{% endanchor %}
+
+Yes! The link tracking tab on your campaign's stats page displays your link click tracking stats for each version of your test.
+
+![]({{root_url}}/images/mc_faq_3.png)
+
+To see these stats, click **Campaigns** under **Marketing Campaigns** in the left hand side bar. Click the gear icon next to your A/B test campaign and select **Stats**. Scroll down until you see the section titled **Link Tracking**. Here you will find your click tracking stats for all of the links in each of your test versions.
 
 **********
 
@@ -160,7 +170,9 @@ Campaigns & Campaign Editor
 How come I can't select a sender ID in the campaign editor after creating it?
 {% endanchor %}
 
-Make sure that you have verified all of your sender IDs. You can only select a valid sender ID when sending a campaign. You can resend a sender ID verification email from the sender ID's details page.
+Make sure that you have verified the sender ID you are trying to select. You can only select a verified sender ID when sending a campaign. You can resend a sender ID verification email from the sender ID's details page. Any sender you create using a domain you have already [whitelabeled]({{root_url}}/Classroom/Basics/Whitelabel/index.html) will automatically be verified.
+
+![]({{root_url}}/images/mc_faq_4.gif)
 
 {% anchor h3 %}
 If I send a campaign to multiple lists or segments, will contacts on each list receive a duplicate email?
@@ -180,6 +192,8 @@ How do I edit a scheduled campaign?
 
 First, unschedule the campaign that you want to edit— this will return your campaign to "draft form". When finished editing your campaign, simply reschedule your desired send time.
 
+![]({{root_url}}/images/mc_faq_5.gif)
+
 {% anchor h3 %}
 Can I restore a deleted campaign?
 {% endanchor %}
@@ -191,6 +205,8 @@ Where can I get a list of all of my substitution tags to insert into my campaign
 {% endanchor %}
 
 When in the Campaign Editor, click the **Build** tab in the left hand sidebar. Here you will see a full list of your substitution tags, along with icons you can click to easily copy a tag.
+
+![]({{root_url}}/images/mc_faq_6.gif)
 
 {% anchor h3 %}
 Can I use substitution tags in my subject line?
@@ -258,11 +274,15 @@ How do I add an existing contact to an existing list?
 
 Navigate to your contacts page and search for the contact that you want to add. Click on that contact and scroll down until you see the **Associated Lists** tab. On this tab you'll find a drop down menu allowing you to select a preexisting list to add this contact to.
 
+![]({{root_url}}/images/mc_faq_7.gif)
+
 {% anchor h3 %}
 How do I update the custom fields for one of my contacts?
 {% endanchor %}
 
 You can either re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
+
+![]({{root_url}}/images/mc_faq_8.gif)
 
 {% anchor h3 %}
 How do I update an existing contact list?
@@ -315,6 +335,8 @@ How do I view which specific recipients have opened or clicked within one of my 
 {% endanchor %}
 
 You can view which recipients have opened or click in your campaigns by creating a segment based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
+
+![]({{root_url}}/images/mc_faq_2.png)
 
 {% anchor h3 %}
 What is the maximum number of lists and segments that I can create?
@@ -393,6 +415,8 @@ Why didn't I receive a sender ID verification email?
 
 If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand sidebar and click on **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
 
+![]({{root_url}}/images/mc_faq_4.gif)
+
 {% anchor h3 %}
 Why isn't my sender ID verified after clicking the verification link?
 {% endanchor %}
@@ -440,6 +464,8 @@ How do I view statistics for a specific campaign?
 {% endanchor %}
 
 Under **Marketing Campaigns** in the left hand sidebar, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action cog on the right. Click **Stats** to view statistics for that specific campaign.
+
+![]({{root_url}}/images/mc_faq_9.gif)
 
 {% anchor h3 %}
 Are there more stats available than are shown in the UI?
