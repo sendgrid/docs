@@ -74,7 +74,6 @@ Table of Contents
   - [Is there a way for me to get more stats than are shown on the UI?](#-Is-there-a-way-for-me-to-get-more-stats-than-are-shown-on-the-UI)
   - [What unit of time is used for my dashboard statistics?](#-What-unit-of-time-is-used-for-my-dashboard-statistics)
   - [How do I view statistics for a specific campaign?](#-How-do-I-view-statistics-for-a-specific-campaign)
-  - [Are there more stats available than are shown in the UI?](#-Are-there-more-stats-available-than-are-shown-in-the-UI)
 
 {% anchor h2 %}
 A/B Testing
@@ -134,7 +133,7 @@ Billing & Pricing
 Where can I find my monthly invoice?
 {% endanchor %}
 
-You can find your invoice from your [SendGrid Billing Settings](https://app.sendgrid.com/settings/billing). From your SendGrid dashboard, click **Settings** then **Plan & Billing Details**. Here you can find how much you are being billed for stored contacts (e.g. how much you are charged per 10,000 contacts) as well as the total you owe.
+You can find your invoice in your [SendGrid Billing Settings](https://app.sendgrid.com/settings/billing). From your SendGrid dashboard, click **Settings** then **Plan & Billing Details**. Here you can find how much you are being billed for stored contacts (e.g. how much you are charged per 10,000 contacts) as well as the total you owe.
 
 Contacts stored on any subusers of your account will be included in your total.
 
@@ -184,7 +183,7 @@ Make sure that you have verified the sender ID you are trying to select. You can
 If I send a campaign to multiple lists or segments, will contacts on each list receive a duplicate email?
 {% endanchor %}
 
-No, each recipient will only receive a campaign once regardless how many times they appear on a list or segment.
+No, each recipient will only receive a campaign once regardless of how many times they appear on a list or segment.
 
 {% anchor h3 %}
 When scheduling a campaign, why do I get the error: "Please choose a future date and time for sending your campaign"?
@@ -224,13 +223,13 @@ Yes, using substitution tags in your subject line is a great way to further cust
 Where are uploaded images stored and how do I access them?
 {% endanchor %}
 
-All images uploaded are stored in your Image Library and are shared between transactional templates and Marketing Campaigns. To access your images, simply open a campaign in the Campaign Editor (or a transactional template) and click the small image icon in the toolbar.
+All images uploaded are stored in your image library and are shared between transactional templates and Marketing Campaigns. To access your images, simply open a campaign in the Campaign Editor (or a transactional template) and click the small image icon in the toolbar.
 
 {% anchor h3 %}
 Are unsubscribe links automatically added to my campaign?
 {% endanchor %}
 
-No, every campaign is required to have the [unsubscribe] tag, and the [unsubscribe] tag will automatically be appended in every SendGrid template.
+Every campaign is required to have the [unsubscribe] tag, and the [unsubscribe] tag will automatically be appended in every SendGrid template.
 
 However, you can specify the exact location in your email that you would like the unsubscribe link to appear by inserting the [unsubscribe] tag at a location of your choice. For more information on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
@@ -350,7 +349,7 @@ To quickly view which recipients have either opened one of your campaigns or hav
 
 ![]({{root_url}}/images/mc_faq_2.png)
 
-You can also create a segment of recipients have opened or click in your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
+You can also create a segment of recipients that have either opened or click within one of your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
 {% anchor h3 %}
 What is the maximum number of lists and segments that I can create?
