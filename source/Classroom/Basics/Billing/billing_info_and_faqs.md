@@ -2,7 +2,7 @@
 seo:
   title: Billing Info and FAQs
   description: Billing Info and FAQs
-  keywords: billing, refund, subscription, plan, charge, usage, overage, newsletter, marketing, campaigns, cancel, downgrade, upgrade,
+  keywords: billing, refund, subscription, plan, charge, usage, overage, newsletter, marketing, campaigns, cancel, downgrade, upgrade, resubmit, retry, payment
 title: Billing Info and FAQs
 weight: 0
 layout: page
