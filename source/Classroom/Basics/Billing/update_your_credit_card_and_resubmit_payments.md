@@ -17,7 +17,7 @@ Is your credit card about to expire? Need to move over from your personal/testin
 
  
 
-You can update your card information, retrying a failed payment, and exporting past invoices for your business can all be managed from the Plan and Billing Details page. It is also possible to change your package type and cancel your account from this page.
+You can update your card information, retry a failed payment, and export past invoices for your business on the Plan and Billing Details page. It is also possible to change your package type and cancel your account from this page.
 
  
 
