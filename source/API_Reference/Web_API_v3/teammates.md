@@ -205,7 +205,7 @@ HTTP/1.1 204
 Invite a teammate [POST]
 {% endanchor %}
 
-This endpoint allows you to send a teammate invitation via email with a predefined set of scopes, or permissions. A teammate invite will expire after 7 days, but you may resend the invite at any time to reset the expiration date.
+This endpoint allows you to send a teammate invitation via email with a predefined set of scopes, or permissions. A teammate invite will expire after 7 days, but you may resend the invite at any time to reset the expiration date. **Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.**
 
 {% apiv3example post POST https://api.sendgrid.com/v3/teammates %}
 
