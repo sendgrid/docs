@@ -74,7 +74,7 @@ Failed requests will always return an error response, including a response code,
   <tr>
     <td>429</td>
     <td>TOO MANY REQUESTS</td>
-    <td>The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html)</td>
+    <td>The number of requests you have made exceeds SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html">rate limitations</a></td>
   </tr>
   <tr>
     <td>5xx</td>

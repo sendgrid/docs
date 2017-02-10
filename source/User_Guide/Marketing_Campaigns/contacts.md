@@ -215,10 +215,6 @@ Your CSV should always have a header row. The rules for this are:
 1. Capitalization doesn’t matter.
 1. The other columns can be blank.
 
-**Custom fields in your CSV but not your account**
-
-If you include a column in your CSV that is for a custom field not defined in your account, then the CSV will be rejected. We are currently working to add a feature that will let you set up custom fields as a step during the upload process.
-
 {% anchor h3 %}
 I have more than one of the same email in my database
 {% endanchor %}

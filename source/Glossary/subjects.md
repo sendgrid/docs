@@ -97,7 +97,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/email_marketing.html">Email Marketing</a>
         <a href="{{root_url}}/Glossary/event_webhook.html">Event Webhook</a>
         <a href="{{root_url}}/Glossary/mail_merge.html">Mail Merge</a>
-        <a href="{{root_url}}/Glossary/marketing_email.html">Marketing Email</a>
         <a href="{{root_url}}/Glossary/mta.html">MTA</a>
         <a href="{{root_url}}/Glossary/openrelay.html">Open Relay</a>
         <a href="{{root_url}}/Glossary/reputation_monitoring.html">Reputation Monitoring</a>
@@ -109,6 +108,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/smtp_server.html">SMTP Server</a>
         <a href="{{root_url}}/Glossary/smtp_service.html">SMTP Service</a>
         <a href="{{root_url}}/Glossary/subscriber_list_management.html">Subscriber List Management</a>
+        <a href="{{root_url}}/Glossary/teammates.html">Teammates</a>
         <a href="{{root_url}}/Glossary/tls.html">Transport Layer Security</a>
         <a href="{{root_url}}/Glossary/transactional_email.html">Transactional Email</a>
         <a href="{{root_url}}/Glossary/transactional_email_templates.html">Transactional Email Templates</a>
