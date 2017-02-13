@@ -69,7 +69,7 @@ There are three ways to create a subuser whitelabel:
 
 1. You can create a whitelabel from your parent account, and then **[assign that whitelabel to a subuser](#-Assigning-a-whitelabel-to-a-subuser)** via [subuser management](https://app.sendgrid.com/settings/subusers).
 2. You can [create a whitelabel on behalf of a subuser](#-Whitelabeling-on-behalf-of-a-subuser) from your parent account— connecting that whitelabel with the subuser.
-3. If you are a subuser, you may [create and manage your own whitelabel](#-Creating-a-whitelabel-from-the-subuser-account) if the parent account has not already assigned you a whitelabel.
+3. If you are a subuser, you may [create and manage your own whitelabel](#-Creating-a-Whitelabel-from-the-Subuser-Account) if the parent account has not already assigned you a whitelabel.
 
 Below you will find step-by-step instructions explaining each of these two options, along with a discussion of the pros and cons of each option.
 
@@ -85,7 +85,7 @@ Creating a Subuser Whitelabel from the Parent Account
 Benefits of whitelabeling a subuser from the parent account
 {% endanchor %}
 
-Whitelabels created by the parent account and assigned to a subuser can not be edited by the subuser. This is secure and safe method that provides the parent account with more control over subusers' whitelabels.
+Whitelabels created by the parent account and assigned to a subuser can not be edited by the subuser. This is a secure and safe method that provides the parent account with more control over subusers' whitelabels.
 
 {% warning %}
 While subusers cannot modify whitelabels assigned or connected to them, they can still create their own whitelabel which would overwrite the whitelabel assigned or connected to them by the parent account.
