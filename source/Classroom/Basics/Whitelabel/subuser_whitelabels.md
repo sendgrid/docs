@@ -20,7 +20,7 @@ Table of Contents
 * [What is whitelabeling?](#-What-is-whitelabeling)
 * [What are the benefits of whitelabeling subusers?](#-What-are-the-benefits-of-whitelabeling-subusers)
 * [Creating subuser whitelabels](#-Creating-Subuser-Whitelabels)
-* [Creating a subuser whitelabel from the parent account](#-#-Creating-a-Subuser-Whitelabel-from-the-Parent-Account)
+* [Creating a subuser whitelabel from the parent account](#-Creating-a-Subuser-Whitelabel-from-the-Parent-Account)
     * [Assigning a whitelabel to a subuser](#-Assigning-a-whitelabel-to-a-subuser)
     * [Whitelabeling on behalf of a subuser](#-Whitelabeling-on-behalf-of-a-subuser)
 * [Creating a subuser whitelabel from the subuser account](#-Creating-a-Whitelabel-from-the-Subuser-Account)
