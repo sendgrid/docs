@@ -1,9 +1,25 @@
+---
+seo:		
+  title: Substitution and Section Tags
+  description: Substitution and Section Tags
+  keywords:
+title: Substitution and Section Tags
+weight: 0
+layout: page
+zendesk_id: 204382358
+navigation:
+  show: true
+---
 
-## Simple Substitution:
+{% anchor h2 %}
+Simple Substitution
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": [
 		"example01@domain.com",
@@ -14,17 +30,21 @@
 		"-name-": ["John", "Jane", "Matt"]
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 Hello -name-,
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -72,13 +92,17 @@ Hello -name-,
 	}]
 
 }
-```
+{% endcodeblock %}
 
-## Double Substitution:
+{% anchor h2 %}
+Double Substitution
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": [
 		"example01@domain.com",
@@ -90,17 +114,21 @@ Hello -name-,
 		"-last_name-": ["Smith", "Williams", "Johnson"]
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 Hello -first_name- -last_name-,
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -151,14 +179,17 @@ Hello -first_name- -last_name-,
 	}]
 
 }
-```
+{% endcodeblock %}
 
-## Simple Section and Substitution:
+{% anchor h2 %}
+Simple Section and Substitution
+{% endanchor %}
 
- 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": [
 		"example01@domain.com",
@@ -173,17 +204,21 @@ Hello -first_name- -last_name-,
 		"-greeting-": "Hello -name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 -warm_welcome-
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -236,13 +271,17 @@ Hello -first_name- -last_name-,
 		"-greeting-": "Welcome -name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-## Double Substitution with Section:
+{% anchor h2 %}
+Double Substitution with Section
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": [
 		"example01@domain.com",
@@ -258,17 +297,21 @@ Hello -first_name- -last_name-,
 		"-greeting-": "Hello -first_name- -last_name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 -warm_welcome-
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -324,13 +367,17 @@ Hello -first_name- -last_name-,
 		"-greeting-": "Welcome -first_name- -last_name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-## Complex Section and Substitution (01):
+{% anchor h2 %}
+Complex Section and Substitution (01)
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": [
 		"example01@domain.com",
@@ -348,17 +395,21 @@ Hello -first_name- -last_name-,
 		"-greeting03-": "Dear -first_name- -last_name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 -warm_welcome-
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -416,13 +467,17 @@ Hello -first_name- -last_name-,
 		"-greeting03-": "Dear -first_name- -last_name-,"
 	}
 }
-```
+{% endcodeblock %}
 
-## Complex Section and Substitution (02):
+{% anchor h2 %}
+Complex Section and Substitution (02)
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
 	"sub": {
@@ -436,19 +491,23 @@ Hello -first_name- -last_name-,
 		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
 	}
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 Hello -name-,
 
 -confirmations-
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -503,19 +562,23 @@ Hello -name-,
 		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
 	}
 }
-```
+{% endcodeblock %}
 
-## Complex Section and Substitution (03):
+{% anchor h2 %}
+Complex Section and Substitution (03)
+{% endanchor %}
 
-### X-SMTPAPI Header:
+{% anchor h3 %}
+X-SMTPAPI Header
+{% endanchor %}
 
-```
-
-{"to": [
-    "example01@domain.com",
-    "example02@domain.com",
-    "example03@domain.com"
-  ],
+{% codeblock lang:json %}
+{
+"to": [
+  "example01@domain.com",
+  "example02@domain.com",
+  "example03@domain.com"
+],
 "sub": {
 "-first_name-": [ "Example", "Example", ""],
 "-last_name-": [ "01", "", "" ],
@@ -526,17 +589,21 @@ Hello -name-,
 "-greeting-": "Welcome -first_name- -last_name-,",
 "-1-": "Welcome," }
 }
-```
+{% endcodeblock %}
 
-### Email Content:
+{% anchor h3 %}
+Email Content
+{% endanchor %}
 
-```
+{% codeblock %}
 -warm_welcome-
-```
+{% endcodeblock %}
 
-### v3 Mail Send:
+{% anchor h3 %}
+v3 Mail Send
+{% endanchor %}
 
-```
+{% codeblock lang:json %}
 {
 	"personalizations": [{
 		"to": [{
@@ -599,4 +666,4 @@ Hello -name-,
 		"-1-": "Welcome,"
 	}
 }
-```
+{% endcodeblock %}
