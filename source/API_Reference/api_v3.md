@@ -8,6 +8,6 @@ footer: false
 weight: 100
 layout: iframe
 navigation:
-  show: false
+  show: true
 ---
 <iframe frameborder="0" src="https://sendgrid.api-docs.io/v3.0"></iframe>
