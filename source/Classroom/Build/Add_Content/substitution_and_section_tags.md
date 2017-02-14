@@ -1,202 +1,602 @@
----
-seo:
-  title: Substitution and Section Tags
-  description: Substitution and Section Tags
-  keywords: 
-title: Substitution and Section Tags
-weight: 0
-layout: page
-zendesk_id: 204382358
-navigation:
-  show: true
----
+
+## Simple Substitution:
+
+### X-SMTPAPI Header:
+
+```
+{
+	"to": [
+		"example01@domain.com",
+		"example02@domain.com",
+		"example03@domain.com"
+	],
+	"sub": {
+		"-name-": ["John", "Jane", "Matt"]
+	}
+}
+```
+
+### Email Content:
+
+```
+Hello -name-,
+```
+
+### v3 Mail Send:
+
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-name-": "John"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-name-": "Jane"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-name-": "Matt"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "Hello -name-,"
+	}, {
+		"type": "text/html",
+		"value": "Hello -name-,"
+	}]
+
+}
+```
+
+## Double Substitution:
+
+### X-SMTPAPI Header:
+
+```
+{
+	"to": [
+		"example01@domain.com",
+		"example02@domain.com",
+		"example03@domain.com"
+	],
+	"sub": {
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"]
+	}
+}
+```
+
+### Email Content:
+
+```
+Hello -first_name- -last_name-,
+```
+
+### v3 Mail Send:
+
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-first_name-": "John",
+			"-last_name-": "Smith"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-first_name-": "Jane",
+			"-last_name-": "Williams"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "Hello -first_name- -last_name-,"
+	}, {
+		"type": "text/html",
+		"value": "Hello -first_name- -last_name-,"
+	}]
+
+}
+```
+
+## Simple Section and Substitution:
 
  
+### X-SMTPAPI Header:
 
-Example Name substitution:
+```
+{
+	"to": [
+		"example01@domain.com",
+		"example02@domain.com",
+		"example03@domain.com"
+	],
+	"sub": {
+		"-name-": ["John", "Jane", "Matt"],
+		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+	},
+	"section": {
+		"-greeting-": "Hello -name-,"
+	}
+}
+```
 
- 
+### Email Content:
 
-Simple Substitution:
+```
+-warm_welcome-
+```
 
-> {"sub": {
-> 
-> "-name-": ["John", "Jane"]}
+### v3 Mail Send:
 
- 
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-name-": "John",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-name-": "Jane",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-name-": "Matt",
+			"-warm_welcome-": "-greeting-"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "-warm_welcome-"
+	}, {
+		"type": "text/html",
+		"value": "-warm_welcome-"
+	}],
+	"sections": {
+		"-greeting-": "Welcome -name-,"
+	}
+}
+```
 
-Double Substitution:
+## Double Substitution with Section:
 
-> {"sub": {
-> 
-> "-first\_name-": ["John", "Jane"],
-> 
-> "-last\_name-": ["Smith", "Williams"]}
+### X-SMTPAPI Header:
 
- 
+```
+{
+	"to": [
+		"example01@domain.com",
+		"example02@domain.com",
+		"example03@domain.com"
+	],
+	"sub": {
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"],
+		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+	},
+	"section": {
+		"-greeting-": "Hello -first_name- -last_name-,"
+	}
+}
+```
 
-Simple Section and Substitution:
+### Email Content:
 
- 
+```
+-warm_welcome-
+```
 
-> {"sub": {
-> 
-> "-name-": [ "John", "Jane" ],
-> 
-> "-warm\_welcome-": ["-greeting-"] },
-> 
-> "section": {
-> 
-> "-greeting-": "Hello -name-," }
+### v3 Mail Send:
 
- 
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-first_name-": "John",
+			"-last_name-": "Smith",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-first_name-": "Jane",
+			"-last_name-": "Williams",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson",
+			"-warm_welcome-": "-greeting-"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "-warm_welcome-"
+	}, {
+		"type": "text/html",
+		"value": "-warm_welcome-"
+	}],
+	"sections": {
+		"-greeting-": "Welcome -first_name- -last_name-,"
+	}
+}
+```
 
-Double Substitution with Section:
+## Complex Section and Substitution (01):
 
- 
+### X-SMTPAPI Header:
 
-> {"sub": {
-> 
-> "-first\_name-": ["John", "Jane"],
-> 
-> "-last\_name-": ["Smith", "Williams"],
-> 
-> "-warm\_welcome-": ["-greeting-"] },
-> 
-> "section": {
-> 
-> "-greeting-": "Hello -first\_name- -last\_name-," }
+```
+{
+	"to": [
+		"example01@domain.com",
+		"example02@domain.com",
+		"example03@domain.com"
+	],
+	"sub": {
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"],
+		"-warm_welcome-": ["-greeting01-", "-greeting02-", "-greeting03-"]
+	},
+	"section": {
+		"-greeting01-": "Welcome -first_name- -last_name-,",
+		"-greeting02-": "Hello -first_name- -last_name-,",
+		"-greeting03-": "Dear -first_name- -last_name-,"
+	}
+}
+```
 
- 
+### Email Content:
 
-Complex Section and Substitution (01):
+```
+-warm_welcome-
+```
 
- 
+### v3 Mail Send:
 
-> {"sub": {
-> 
-> "-first\_name-": ["John", "Jane"],
-> 
-> "-last\_name-": ["Smith", "Williams"],
-> 
-> "-warm\_welcome-": ["-greeting01- or -greeting02- or -greeting03-"] },
-> 
-> "section": {
-> 
-> "-greeting01-": "Welcome -first\_name- -last\_name-,",
-> 
-> "-greeting02-": "Hello -first\_name- -last\_name-,",
-> 
-> "-greeting03-": "Dear -first\_name- -last\_name-," }
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-first_name-": "John",
+			"-last_name-": "Smith",
+			"-warm_welcome-": "-greeting01-"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-first_name-": "Jane",
+			"-last_name-": "Williams",
+			"-warm_welcome-": "-greeting02-"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson",
+			"-warm_welcome-": "-greeting03-"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "-warm_welcome-"
+	}, {
+		"type": "text/html",
+		"value": "-warm_welcome-"
+	}],
+	"sections": {
+		"-greeting01-": "Welcome -first_name- -last_name-,",
+		"-greeting02-": "Hello -first_name- -last_name-,",
+		"-greeting03-": "Dear -first_name- -last_name-,"
+	}
+}
+```
 
- 
+## Complex Section and Substitution (02):
 
-> {"to":
-> 
-> [ "sample01@domain.com", "sample02@domain.com", "sample03@domain.com" ],
-> 
-> "sub":{
-> 
-> "-name-": [ "sample01", "sample02", "sample03" ],
-> 
-> "-confirmations-": [ "-confirmation\_001-", "-confirmation\_002-", "-confirmation\_003-" ],
-> 
-> "-order\_id-": [ "12345", "23456", "34567" ] },
-> 
-> "section":{
-> 
-> "-confirmation\_001-":"Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order\_id-.",
-> 
-> "-confirmation\_002-":"Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order\_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-> 
-> "-confirmation\_003-":"Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order\_id-. You can download your invoice as a PDF for your records."
-> 
-> },
-> 
-> }
+### X-SMTPAPI Header:
 
- 
+```
+{
+	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
+	"sub": {
+		"-name-": ["John", "Jane", "Matt"],
+		"-confirmations-": ["-confirmation_001-", "-confirmation_002-", "-confirmation_003-"],
+		"-order_id-": ["12345", "23456", "34567"]
+	},
+	"section": {
+		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+	}
+}
+```
 
-> {"to":
-> 
-> ["sample01@domain.com","sample02@domain.com","sample03@domain.com"],
-> 
-> "sub":{
-> 
-> "\*|BLANK|\*": [""],
-> 
-> "\*|SUBJECTS|\*": ["\*|SUBJECT01|\*","\*|SUBJECT02|\*","\*|SUBJECT03|\*"],
-> 
-> "\*|SMALLBANNERS|\*": ["","",""],
-> 
-> "\*|OFFERS|\*": ["\*|OFFER01|\*","\*|OFFER02|\*","\*|OFFER03|\*"],
-> 
-> "\*|B\_AMOUNT|\*": ["19.95","55.95",""],
-> 
-> "\*|BALANCES|\*": ["\*|BALANCE|\*","\*|BALANCE|\*","\*|BLANK|\*"],
-> 
-> "\*|ANALYTICS|\*": ["\*|ANALYTIC|\*","\*|ANALYTIC|\*","\*|ANALYTIC|\*"]},
-> 
-> "section": {
-> 
-> "\*|SUBJECT01|\*": "Subject 01",
-> 
-> "\*|SUBJECT02|\*": "Subject 02",
-> 
-> "\*|SUBJECT03|\*": "Subject 03",
-> 
-> "\*|SMALLBANNER01|\*": "Banner 01",
-> 
-> "\*|SMALLBANNER02|\*": "Banner 02",
-> 
-> "\*|SMALLBANNER03|\*": "Banner 03",
-> 
-> "\*|BALANCE|\*": "You have a balance of $\*|B\_AMOUNT|\*",
-> 
-> "\*|OFFER01|\*": "Offer 01",
-> 
-> "\*|OFFER02|\*": "Offer 02",
-> 
-> "\*|OFFER03|\*": "Offer 03",
-> 
-> "\*|ANALYTIC|\*": "analytic code from Google"
-> 
-> }
-> 
-> }
+### Email Content:
 
- 
+```
+Hello -name-,
 
- 
+-confirmations-
+```
 
-{"to": [  
- "kyle.a.roberts@outlook.com",  
- "kyle.a.roberts@outlook.com",  
- "kyle.a.roberts@outlook.com",  
- "kyle.a.roberts@outlook.com",  
- "kyle.a.roberts@outlook.com",  
- "kyle.a.roberts@outlook.com"  
- ],  
-"sub": {  
-"-first\_name-": ["John", "Jane", "", "Jason", "Mike", "Sam"],  
-"-last\_name-": ["Smith", "", "", "", "Johnson", ""],
+### v3 Mail Send:
 
-"Welcome ,": ["-1-","-1-","-1-","-1-","-1-","-1-"],
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-name-": "John",
+			"-confirmations-": "-confirmation_001-"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-name-": "Jane",
+			"-confirmations-": "-confirmation_002-"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-name-": "Matt",
+			"-confirmations-": "-confirmation_003-"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "Example",
+	"content": [{
+		"type": "text/plain",
+		"value": "Hello -name-,\r\n-confirmations-"
+	}, {
+		"type": "text/html",
+		"value": "<p>Hello -name-,</p><br><p>-confirmations-</p>"
+	}],
+	"sections": {
+		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+	}
+}
+```
 
-" ,": [",",",",",",",",",",","],
+## Complex Section and Substitution (03):
 
- 
+### X-SMTPAPI Header:
 
-"-warm\_welcome-": ["-greeting-", "-greeting-", "-greeting-", "-greeting-", "-greeting-", "-greeting-"]},  
-"section": {  
-"-greeting-": "Welcome -first\_name- -last\_name-,",  
-"-1-": "Welcome," }}
+```
 
- 
+{"to": [
+    "example01@domain.com",
+    "example02@domain.com",
+    "example03@domain.com"
+  ],
+"sub": {
+"-first_name-": [ "Example", "Example", ""],
+"-last_name-": [ "01", "", "" ],
+"Welcome ,": ["-1-","-1-","-1-"],
+" ,": [",",",",","],
+"-warm_welcome-": [ "-greeting-", "-greeting-", "-greeting-"]},
+"section": {
+"-greeting-": "Welcome -first_name- -last_name-,",
+"-1-": "Welcome," }
+}
+```
 
- 
+### Email Content:
 
- 
+```
+-warm_welcome-
+```
 
-"sub": { "%name%": ["Ben", "Joe"], "%role%": ["%sellerSection%", "%buyerSection%"] }, "section": { "%sellerSection%": "Seller information for: %name%", "%buyerSection%": "Buyer information for: %name%" }
+### v3 Mail Send:
 
+```
+{
+	"personalizations": [{
+		"to": [{
+			"email": "example01@domain.com",
+			"name": "Example 01"
+		}],
+		"subject": "Example 01",
+		"substitutions": {
+			"-first_name-": "Example",
+			"-last_name-": "01",
+			"Welcome ,": "-1-",
+			" ,": ",",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example02@domain.com",
+			"name": "Example 02"
+		}],
+		"subject": "Example 02",
+		"substitutions": {
+			"-first_name-": "Example",
+			"-last_name-": "",
+			"Welcome ,": "-1-",
+			" ,": ",",
+			"-warm_welcome-": "-greeting-"
+		}
+	}, {
+		"to": [{
+			"email": "example03@domain.com",
+			"name": "Example 03"
+		}],
+		"subject": "Example 03",
+		"substitutions": {
+			"-first_name-": "",
+			"-last_name-": "",
+			"Welcome ,": "-1-",
+			" ,": ",",
+			"-warm_welcome-": "-greeting-"
+		}
+	}],
+	"from": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"reply_to": {
+		"email": "sender@senddomain.com",
+		"name": "Sender"
+	},
+	"subject": "will get replaced",
+	"content": [{
+		"type": "text/plain",
+		"value": "-warm_welcome-"
+	}, {
+		"type": "text/html",
+		"value": "-warm_welcome-"
+	}],
+	"sections": {
+		"-greeting-": "Welcome -first_name- -last_name-,",
+		"-1-": "Welcome,"
+	}
+}
+```
