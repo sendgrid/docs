@@ -59,9 +59,7 @@ The mailto portion of the List-Unsubscribe header allows you to specify an email
 Web Unsubscribe: http
 {% endanchor %}
 
-The http portion of the List-Unsubscribe header allows you to specify a website that the recipient will be taken to when they click the "unsubscribe" link in your email.
-
-It is your responsibility to build a website where your users can submit a request to be removed from your mailing list.
+The http portion of the List-Unsubscribe header allows you to specify a URL that will receive a POST whenever someone clicks the unsubscribe link in your email.
 
 {% warning %}
 Failure to honor your recipients' unsubscribe requests may do more than damage your sender reputation. To learn more about deliverability and compliance, click [here]({{root_url}}/Classroom/Deliver/index.html#-Compliance).
