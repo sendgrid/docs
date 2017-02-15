@@ -54,7 +54,7 @@ Support
 Reporting
 {% endanchor %}
 
-Learn more about your shoppers’ engagement with performance feedback and real-time analytics on requested, delivered, open, bounced, unsubscribes, click, and more.
+Learn more about your shoppers’ engagement with performance feedback and real-time analytics on requests, deliveries, opens, bounces, unsubscribes, clicks, and more.
 
 {% anchor h2 %}
 What’s the functionality of your extension?
@@ -64,15 +64,15 @@ What’s the functionality of your extension?
 * In addition to reliable delivery and scalability, our extension allows you have access to real-time analytics and insights for quick, well-informed decision making about your customers to grow your e-commerce store.
 * Integrate easily with your SendGrid API key
 
-{% anchor h3 %}
+{% anchor h2 %}
 What makes your extension unique?
 {% endanchor %}
 
 * SendGrid pioneered the cloud-based email industry, and we are trusted by leading senders like Uber, AirBnB, and Spotify to achieve optimal deliverability at scale.
 * Flexible API and SMTP setup for for easy transactional email Integration.
 * Key email deliverability features including email authentication, reputation monitoring, dedicated IP addresses, and more.
-* Real-time analytics and reporting including open, click, bounce, unsubscribe tracking, and more.
-* Leverage our step-by-step documentation or get quick help from our 24/7 Support Team.
+* Real-time analytics and reporting including opens, clicks, bounces, unsubscribe tracking, and more.
+* Leverage our step-by-step [documentation](https://sendgrid.com/docs) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
 * This official extension was built for M2 by SendGrid’s dedicated partner-focused teams for continued management and future development.
 
 {% anchor h2 %}
@@ -91,7 +91,7 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
     ![]({{root_url}}/images/magento_3.jpg)
 
-3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the SendGrid Dashboard**. You can also add other [categories]({{root_url}}/User_Guide/Statistics/categories.html) for your emails in the field Categories.
+3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}/User_Guide/Statistics/categories.html) for your emails in the field Categories.
 
     ![]({{root_url}}/images/magento_4.png)
 
