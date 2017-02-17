@@ -16,7 +16,6 @@ Table of Contents
 
 * [I created a teammate in the UI with FULL ACCESS to a feature, but that teammate still has fewer permissions than a teammate created with the API.](#-I-created-a-teammate-in-the-UI-with-FULL-ACCESS-to-a-feature-but-that-teammate-still-has-fewer-permissions-than-a-teammate-created-with-the-API)
 * [Why can't my teammate impersonate a subuser?](#-Why-cant-my-teammate-impersonate-a-subuser)
-* [Why can't I access the Web API v2?](#-Why-cant-I-access-the-Web-API-v2)
 * [My old multiple user credential could access all new features released by SendGrid. Now that my credential has been migrated to Teammates, I can no longer access new features as they are released.](#-My-old-multiple-user-credential-could-access-all-new-features-released-by-SendGrid-Now-that-my-credential-has-been-migrated-to-Teammates-I-can-no-longer-access-new-features-as-they-are-released)
 * [I approved a request for access submitted by one of my teammates. Why was my teammate given full access to the feature?](#-I-approved-a-request-for-access-submitted-by-one-of-my-teammates-Why-was-my-teammate-given-full-access-to-the-feature)
 * [Help! One of my administrator teammates has deleted my teammate account!](#-Help-One-of-my-administrator-teammates-has-deleted-my-teammate-account)
