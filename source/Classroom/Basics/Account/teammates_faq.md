@@ -27,7 +27,6 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 * [How do I request access to a SendGrid feature?](#-How-do-I-request-access-to-a-SendGrid-feature)
 * [How do I grant access to a SendGrid feature?](#-How-do-I-grant-access-to-a-SendGrid-feature)
 * [How do I set up Two-Factor Authentication for a teammate?](#-How-do-I-set-up-TwoFactor-Authentication-for-a-teammate)
-* [Can I reset my teammate password?](#-Can-I-reset-my-teammate-password)
 
 {% anchor h2 %}
 Is Teammates available for all SendGrid pricing plans?
