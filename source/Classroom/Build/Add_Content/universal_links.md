@@ -7,12 +7,8 @@ title: Universal Links
 weight: 0
 layout: page
 navigation:
-  show: false
+  show: true
 ---
-
-{% info %}
-Universal Links is currently in beta!
-{% endinfo %}
 
 {% anchor h2 %}
 Table of Contents
@@ -25,7 +21,6 @@ Table of Contents
 * [Setting Up Universal Links Using NGINX](#-Setting-Up-Universal-Links-Using-NGINX)
 * [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
 * [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
-
 
 {% anchor h2 %}
 What are universal links?
@@ -339,15 +334,14 @@ For example:
 
 {% codeblock %}
 
-func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
     if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
         guard let encodedURL = userActivity.webpageURL else {
             print("Unable to handle user activity: No URL provided")
             return false
         }
-        let session = NSURLSession.sharedSession()
-        let task = session.dataTaskWithURL(encodedURL, completionHandler: { (data, response, error) -> Void in
-            guard let resolvedURL = response?.URL else {
+        let task = URLSession.shared.dataTask(with: encodedURL, completionHandler: { (data, response, error) in
+            guard let resolvedURL = response?.url else {
                 print("Unable to handle URL: \(encodedURL.absoluteString)")
                 return
             }

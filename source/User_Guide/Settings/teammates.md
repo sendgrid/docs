@@ -11,14 +11,26 @@ navigation:
 ---
 
 {% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [What is Teammates?](#-What-is-Teammates)
+* [Where can I find Teammates?](#-Where-can-I-find-Teammates)
+* [Who can use Teammates?](#-Who-can-use-Teammates)
+* [Setting Up Teammates](#-Setting-Up-Teammates)
+* [Teammate Permissions](#-Teammate-Permissions)
+* [Managing Teammates](#-Managing-Teammates)
+* [Teammates and API Keys](#-Teammates-and-API-Keys)
+
+{% anchor h2 %}
 What is Teammates?
 {% endanchor %}
 
 Teammates is an account administration and security tool designed to help manage multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
 
-There are several benefits to using Teammates. The first and foremost is security: by giving your individual team members access only to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Second, Teammates helps to streamline not only your team members jobs, but also the job of the admin. Teammates makes it incredibly easy to add, remove, and manage different users.
+There are several benefits to using Teammates. The first and foremost is security: by giving your individual team members access only to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Second, Teammates helps to streamline not only your team members' jobs, but also the job of the admin. Teammates makes it incredibly easy to add, remove, and manage different users.
 
-For example, a marketer and accountant are going to require access to two very different areas of your account: Marketing Campaigns and Billing. The accountant has no need to create and send marketing email, and the marketer has no need to manage your billing information. By assigning each teammate access only to the pages they need to complete their work, you are able to protect the sensitive financial information contained in the Billing settings.
+For example, a marketer and accountant are going to require access to two very different areas of your account: Marketing Campaigns and Billing. The accountant has no need to create and send marketing email, and the marketer has no need to manage your billing information. By assigning each teammate access only to the pages they need to complete their work, you are able to protect the sensitive financial information contained in the Billing settings, and safeguard the possibility of accidentally sending a campaign.
 
 {% info %}
 Teammates with admin permissions have as much control over an account as the original account owner. This can be useful in the event of an account owner or admin leaving the company. By ensuring that two members of your team have admin access, you can prevent your team from losing access to your SendGrid account.
@@ -38,7 +50,9 @@ Who can use Teammates?
 Teammates is an improved and expanded version of what was previously referred to as Multiple User Credentials. If you had one or more Multiple User Credentials configured for your account, then those credentials will automatically be migrated to the Teammates platform.
 {% endinfo %}
 
-Teammates is available on all account levels! Even if you still have a [Legacy Lite account]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), you will have access to Teammates and your multiple credential users will be migrated to Teammates.
+Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is no teammate limit for Pro plans and higher.
+
+If you have an Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
 
 Only account administrators and teammates with admin access are able to create and manage teammates. Subuser accounts also have access to Teammates, but they will be unable to manage teammates on the parent account level.
 
@@ -54,6 +68,10 @@ Setting Up Teammates
 Adding a Teammate as an Administrator
 {% endanchor %}
 
+{% info %}
+Only administrator teammates may impersonate subusers!
+{% endinfo %}
+
 To invite a teammate to your account, navigate to **Settings**, and click on **Teammates** in the sidebar.
 
 This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action cog under **Actions** you can either delete the teammate, or edit that teammate.
@@ -66,23 +84,29 @@ Teammate invitations are valid for 7 days.
 
 Click **Add Teammate** to open the modal window allowing you to specify the email address and permissions of your new teammate.
 
+![Teammates]({{root_url}}/images/teammates_1.png)
+
 {% info %}
-Each SendGrid account is limited to 1000 teammates.
+Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.
 {% endinfo %}
 
 You should now see a modal window titled "New Teammate." Here you will enter your teammate's email address and select the type of teammate you would like to add. The teammate type dictates what permissions your new teammate will have.
+
+![Adding a new teammate]({{root_url}}/images/teammates_2.png)
 
 {% anchor h2 %}
 Teammate Permissions
 {% endanchor %}
 
-By selecting a type, you can choose from several pre-defined permission levels to fit a variety of common roles: **Developer Access**, **Marketer Access**, and **Accountant Access**.
+By selecting a type, you can choose from several pre-defined permission levels to fit a variety of common roles: **Developer Access**, **Marketer Access**, and **Accountant Access** or you can customize access for the teammate.
 
 The three different permission levels are:
 
 * **NO ACCESS -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, they may still [request access to that feature](#-Requesting-Access-to-a-SendGrid-Feature).
 * **READ ACCESS -** Teammates with read only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
 * **FULL ACCESS -** Teammates with full access to a feature can view and make any changes.
+
+![Teammate Permissions]({{root_url}}/images/teammates_3.png)
 
 {% info %}
 Only administrator teammates may impersonate subusers!
@@ -100,11 +124,15 @@ If someone has invited you to join their SendGrid account as a teammate, you sho
 
 To accept the invitation, simply open the email and click **Set up your Profile**. This will take you to the SendGrid website displaying a modal window asking for your first name, last name, desired username, and password.
 
+![Teammate Invitation Email]({{root_url}}/images/teammates_5.png)
+
 Once you've filled out these fields, click **Sign In**.
 
 {% info %}
 Teammate invitations are valid for 7 days. If you click the link to **Set up your Profile** in the invitation and discover that your invitation has expired, you must reach out to your account administrator to request a new invitation.
 {% endinfo %}
+
+![Teammate Account Created Successfully]({{root_url}}/images/teammates_6.png)
 
 {% anchor h3 %}
 Requesting Access to a SendGrid Feature
@@ -112,7 +140,9 @@ Requesting Access to a SendGrid Feature
 
 If you are already signed into a SendGrid account as a teammate, but do not have access to a certain page or feature, you may request access to that page simply by clicking **Request Access**.
 
-This will send a notification to the account administrator who can grant you access.
+This will send a notification to the account administrator who can grant you access.  If there is more than one administrator, each administrator will be notified.
+
+![Requesting Access to a Feature]({{root_url}}/images/teammates_7.png)
 
 {% anchor h3 %}
 Granting Access to a SendGrid Feature (Administrators)
@@ -128,9 +158,13 @@ To grant that teammate access to the feature, click **Approve**.
 
 If you do not want to grant them access, simply click **Deny**.
 
+![Granting Access to a Feature]({{root_url}}/images/teammates_9.png)
+
 {% info %}
 A notification email will be sent to the teammate when they are either granted or denied access. This email will be delivered by SendGrid, but the "reply to" address will be the email address on file for the account owner.
 {% endinfo %}
+
+![Access Granted Notification]({{root_url}}/images/teammates_11.png)
 
 {% anchor h2 %}
 Managing Teammates
@@ -141,6 +175,8 @@ To modify an existing teammate's permissions, navigate to the **Teammates Page**
 Click **Edit** to open a modal window presenting the teammate's current permissions. Make your desired changes and click **Update**.
 
 To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action cog next to the teammate you want to delete and click **Delete**.
+
+![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 
 {% warning %}
 You cannot recover a deleted teammate! Please be certain before deleting one of your teammates.

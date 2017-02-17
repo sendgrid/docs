@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 0
-title: Sending Practices and Limitations
+title: Lite Plan Limitations
 seo:
-  title: Sending Best Practices and Limitations
-  description: A guide to sending practices and SendGrid Usage limits. Learn how to best use SendGrid today.
+  title: Lite Plan Limitations
+  description: Lite Plan Limitations
 navigation:
   show: true
 ---
@@ -17,7 +17,7 @@ As you begin to use your SendGrid account there are some important things to rem
 
 Additionally, there are limitations to delivery rates imposed by recipient mail servers. Exceeding these limitations results in a practice referred to as throttling. Throttling in terms of email means that a recipient mail server has accepted all the mail it is willing to accept from your IP for a certain period of time.
 
-If you have a Pro 100k or higher package, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/Classroom/Deliver/warming_up_ips.html).
+If you have a Pro 100k plan or higher, you may want to [read how to warm up your IP address to avoid having your outbound messaging throttled]({{root_url}}/Classroom/Deliver/warming_up_ips.html).
 
 {% anchor h2 %}
 Legacy Lite Plan Volume Restrictions

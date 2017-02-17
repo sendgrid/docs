@@ -1,6 +1,7 @@
 ---
 seo:
   title: Peer-Initiated Email Invitation Requirements
+  canonical: https://sendgrid.com/blog/best-practices-for-invite-a-friend-emails/
   description: Peer-Initiated Email Invitation Requirements
   keywords: spam, permission, list, best, practice, peer
 title: Peer-Initiated Email Invitation Requirements

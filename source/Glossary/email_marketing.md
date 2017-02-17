@@ -12,9 +12,12 @@ navigation:
 
 Email Marketing (also known as commercial or promotional email) as defined by the CAN-SPAM Act is any message in which the primary purpose “advertises or promotes a commercial product or service, including content on a website operated for a commercial purpose.” Examples of email marketing include:
 
-* Newsletters
-* Email promotions
 * Coupons
+* Newsletters
+* [Peer Initiated Invitations]({{root_url}}/Glossary/peer_invitations.html)
+* Product Announcements
+* Promotional Emails
+* [Reconfirmation Email Campaigns]({{root_url}}/Glossary/reconfirmation.html)
 * Special offers
 
 Email marketing attempts to encourage the recipient to take an action like making a purchase, downloading content, registering for a service, attending an event, or visiting a store. Since the intent of email marketing is to promote a commercial product or service, it must adhere to certain legal requirements defined in the CAN-SPAM Act that were specifically developed to protect consumers and help senders provide the best possible email experience.

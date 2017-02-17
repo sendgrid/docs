@@ -127,6 +127,14 @@ You will not be charged an email when these reports are forwarded to you.
 Activating this setting allows you to specify an email address to which spam reports are forwarded. Insert the email address to which you would like to receive spam reports.
 
 {% anchor h3 %}
+Forwarding abuse@ and postmaster@ Emails
+{% endanchor %}
+
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [properly configured your domain whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html).
+
+For example, if you create a valid domain whitelabel using the subdomain `sub` and root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
+
+{% anchor h3 %}
 Settings
 {% endanchor %}
 
@@ -158,6 +166,10 @@ Plain Content
 
 The Plain Content setting will automatically convert any plain text emails that you send to HTML before sending.
 
+{% info %}
+Please note: Large plain text files are sometimes unable to be converted to HTML. Instead, SendGrid will send only the plain text version. If HTML versions are essential, it is best practice to include the HTML portion of the email within your email requests. When SendGrid is unable to convert from plaintext to HTML, an alert is sent to the From address.
+{% endinfo %}
+
 {% anchor h3 %}
 Settings
 {% endanchor %}
@@ -185,5 +197,3 @@ Settings
 **Spam Threshold** - Click **Edit** to change the threshold from 1-10 (**see the message above**)
 
 **URL To Post Spam Messages To** - Click “Edit” to provide an Inbound Parse URL to send spam messages to, so you can inspect them. If you don't have an Inbound Parse URL, check out [Setting Up The Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html).
-
-

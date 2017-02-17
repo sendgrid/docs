@@ -30,9 +30,19 @@ layout: default
             Any SendGrid parent account (not subuser account) created after the release of Teammates will have access <strong>only</strong> to the <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API v3</a>. All accounts created before this date will continue to have access to both the <a href="{{root_url}}/API_Reference/Web_API/index.html">Web API v2</a> and the <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API v3</a>.
           </p>
         </div>
+
+      {% endif %}
+
+      {% if page.url contains "/Marketing_Campaigns/" %}
+        <div class="callout callout-info">
+          <p>
+            Migrating from the Legacy Newsletter? <a href="{{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html">Here</a> are some valuable resources to help get you started.
+          </p>
+        </div>
       {% endif %}
 
       {{ content }}
+
     </div>
 
     {% if page.last_modified %}

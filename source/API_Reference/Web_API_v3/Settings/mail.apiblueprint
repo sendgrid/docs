@@ -6,7 +6,7 @@ navigation:
   show: true
 seo:
   title: Mail Settings API
-  description: Manage your mail sending settings via the SendGrid API.
+  description: Manage your email sending settings with SendGrid's flexible API. Get reliable delivery you can count on with SendGrid. 
   keywords: mail settings, address whitelisting, bcc settings, bounce purge settings, event notification settings, footer settings, forward bounce settings, forward spam settings, legacy template settings
 ---
 
