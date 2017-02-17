@@ -43,9 +43,9 @@ Only **parent SendGrid accounts** and **administrator teammates** may impersonat
 Why can't I access the Web API v2?
 {% endanchor %}
 
-As part of the process to deprecate the Web API v2, SendGrid has restricted all parent accounts created *after the release of Teammates* on **February 28, 2017** from accessing the v2 API. This includes all parent accounts created by SendGrid Resellers, even if those Reseller accounts were created before Teammates was released.
+As part of the process to deprecate the Web API v2, SendGrid has restricted all parent accounts created *after the release of Teammates* on **February 28, 2017,** from accessing the v2 API. This includes all parent accounts created by SendGrid Resellers, even if those Reseller accounts were created before Teammates was released.
 
-If you have a parent SendGrid account that was created before **February 28, 2017** you will continue to have unrestricted access to the Web API v2.
+If you have a parent SendGrid account that was created before **February 28, 2017,** you will continue to have unrestricted access to the Web API v2.
 
 {% anchor h2 %}
 My old multiple user credential could access all new features released by SendGrid. Now that my credential has been migrated to Teammates, I can no longer access new features as they are released.
