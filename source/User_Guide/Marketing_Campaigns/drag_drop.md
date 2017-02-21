@@ -348,7 +348,7 @@ Social
 
 The social icons module allows for simple social media integration when creating or editing templates or campaigns. The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured.
 
-To turn a social media option on or off, simply check or uncheck its corresponding checkbox. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.
+To turn a social media option on, simply enter the destination URL into the link field for the icon in question; any icons without a URL entered in the link field will not be visible in your messages. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.
 
 If you are converting HTML to use our Drag & Drop modules, please add the following code snippet to your template. Once pasted in the code view, switch back to the design editor, select the new social icons module and then modify the social icon styles in the module styles panel on the left side of the screen.
 
