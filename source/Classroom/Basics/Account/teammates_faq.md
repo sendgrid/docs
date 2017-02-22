@@ -26,10 +26,6 @@ navigation:
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
 
-{% warning %}
-SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
-
 **Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.**
 
 If you have an Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
@@ -81,7 +77,7 @@ On the other hand, Teammates provides much more granular control over the permis
 What will happen to my Multiple User Credentials?
 {% endanchor %}
 
-Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions once the Teammates beta has ended and it has been made generally available to all accounts. However, once migrated, you will have much more granular control over those teammates' permissions.
+Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions. However, once migrated, you will have much more granular control over those teammates' permissions.
 
 The process by which multiple user credentials are converted to teammates is as follows:
 
