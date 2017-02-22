@@ -10,12 +10,6 @@ navigation:
   show: true
 ---
 
-{% warning %}
-**Teammates is currently in beta!**
-
-SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
-
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}
