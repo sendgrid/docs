@@ -149,6 +149,7 @@ Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.h
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/unsubscribes.html
+Redirect 301 /API_Reference/Webhooks/parse.html https://sendgrid.com/docs/API_Reference/Webhooks/inbound_email.html
 
 
 #######
