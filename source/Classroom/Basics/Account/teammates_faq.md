@@ -10,12 +10,6 @@ navigation:
   show: true
 ---
 
-{% warning %}
-**Teammates is currently in beta!**
-
-SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
-
 * [Is Teammates available for all SendGrid pricing plans?](#-Is-Teammates-available-for-all-SendGrid-pricing-plans)
 * [Is there an additional fee to use Teammates?](#-Is-there-an-additional-fee-to-use-Teammates)
 * [How are teammates different from subusers?](#-How-are-teammates-different-from-subusers)
@@ -31,10 +25,6 @@ SendGrid is releasing the Teammates Beta to users in phases. If you do not immed
 {% anchor h2 %}
 Is Teammates available for all SendGrid pricing plans?
 {% endanchor %}
-
-{% warning %}
-SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
 
 **Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.**
 
@@ -87,7 +77,7 @@ On the other hand, Teammates provides much more granular control over the permis
 What will happen to my Multiple User Credentials?
 {% endanchor %}
 
-Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions once the Teammates beta has ended and it has been made generally available to all accounts. However, once migrated, you will have much more granular control over those teammates' permissions.
+Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions. However, once migrated, you will have much more granular control over those teammates' permissions.
 
 The process by which multiple user credentials are converted to teammates is as follows:
 
