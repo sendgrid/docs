@@ -29,7 +29,7 @@ Stopping an ongoing send that is using SMTP or the Web API can be tricky, becaus
 
 The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.  
 
-This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [Multiple Credential](https://app.sendgrid.com/settings/credentials) so you can change the proper one.
+This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [teammate](https://app.sendgrid.com/settings/teammates) so you can change the proper one.
 
 {% warning %}
 We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.

@@ -27,7 +27,7 @@ Did you just sign up? If you don't verify your email address we never create you
 
 {% anchor h2 %}Check with other users{% endanchor %}
 
-You may have at some point shared your credentials with someone else/another department, check with them to make sure they haven't changed anything. Also consider implementing [Multiple User Credentials](https://sendgrid.com/docs/User_Guide/multiple_credentials.html) to set different levels of permissions. 
+You may have at some point shared your credentials with someone else/another department, check with them to make sure they haven't changed anything. Also consider implementing [Teammates]({{root_url}}/User_Guide/Settings/teammates.html) to set different levels of permissions. 
 
 
 {% anchor h2 %}Reset your password{% endanchor %}

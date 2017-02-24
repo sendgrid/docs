@@ -10,12 +10,6 @@ navigation:
   show: false
 ---
 
-{% warning %}
-**Teammates is currently in beta!**
-
-SendGrid is releasing the Teammates Beta to users in phases. If you do not immediately have access to Teammates, you will shortly. Stay tuned!
-{% endwarning %}
-
 [Teammates]({{root_url}}/User_Guide/Settings/teammates.html) is an account administration and security tool designed to help manage multiple users on a single SendGrid account. Teammates is built for groups of shared users, where each user has a different role and thus requires access to different SendGrid features.
 
 A marketer, developer, and accountant would each have their own teammate account under one SendGrid parent account. The parent SendGrid account will always have administrator level teammate permissions, and may grant any or all of these permissions to other teammates.
