@@ -8,6 +8,7 @@ Redirect 301 /API_Reference/Customer_Subuser_API/automatic_login.html https://se
 #forced a redirect file at /API_Reference/Customer_Subuser_API/event_notification_url.html - the following redirect wouldn't take
 Redirect 301 /API_Reference/Customer_Subuser_API/event_notification_url.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html
 Redirect 301 /API_Reference/Customer_Subuser_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/index.html
+Redirect 301 /API_Reference/Web_API/Customer_Subuser_API/multi_cred.html https://sendgrid.com/docs/API_Reference/Web_API_v3/teammates.html
 Redirect 301 /API_Reference/Marketing_Emails_API/categories.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/categories.html
 Redirect 301 /API_Reference/Marketing_Emails_API/emails.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html
 Redirect 301 /API_Reference/Marketing_Emails_API/lists.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html
@@ -262,6 +263,9 @@ Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html htt
 Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
+Redirect 301 /Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html https://sendgrid.com/docs/Classroom/Basics/Account/creating_teammates_for_subusers.html
+Redirect 301 /Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html https://sendgrid.com/docs/Classroom/Basics/Account/resetting_your_password_as_a_teammate.html
+Redirect 301 /Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_lists.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html
@@ -269,6 +273,7 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving
 Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
 Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/remove_bounced_addresses.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html
+
 
 #######
 #
@@ -624,6 +629,7 @@ Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide
 #forced a redirect file at /User_Guide/Settings/domain_keys.html
 Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
+Redirect 301 /User_Guide/Settings/credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
 Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
