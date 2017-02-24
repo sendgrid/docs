@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Inbound Parse Webhook
+title: Inbound Email Parse Webhook
 navigation:
   show: true
 ---

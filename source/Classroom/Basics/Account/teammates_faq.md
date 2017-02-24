@@ -21,7 +21,6 @@ navigation:
 * [How do I request access to a SendGrid feature?](#-How-do-I-request-access-to-a-SendGrid-feature)
 * [How do I grant access to a SendGrid feature?](#-How-do-I-grant-access-to-a-SendGrid-feature)
 * [How do I set up Two-Factor Authentication for a teammate?](#-How-do-I-set-up-TwoFactor-Authentication-for-a-teammate)
-* [Can I reset my teammate password?](#-Can-I-reset-my-teammate-password)
 
 {% anchor h2 %}
 Is Teammates available for all SendGrid pricing plans?
@@ -78,7 +77,7 @@ On the other hand, Teammates provides much more granular control over the permis
 What will happen to my Multiple User Credentials?
 {% endanchor %}
 
-Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions once the Teammates beta has ended and it has been made generally available to all accounts. However, once migrated, you will have much more granular control over those teammates' permissions.
+Teammates is an updated and expanded feature set based on [Multiple User Credentials]({{root_url}}/User_Guide/Settings/credentials.html). If you have one or more multiple credentialed users on your account, they will be migrated to Teammates with their original permissions. However, once migrated, you will have much more granular control over those teammates' permissions.
 
 The process by which multiple user credentials are converted to teammates is as follows:
 
