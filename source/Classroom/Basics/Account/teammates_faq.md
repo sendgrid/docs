@@ -15,6 +15,7 @@ navigation:
 * [How are teammates different from subusers?](#-How-are-teammates-different-from-subusers)
 * [How are teammates different from Multiple User Credentials?](#-How-are-teammates-different-from-Multiple-User-Credentials)
 * [What will happen to my Multiple User Credentials?](#-What-will-happen-to-my-Multiple-User-Credentials)
+* [Why can't my teammate impersonate a subuser](#-Why-cant-my-teammate-impersonate-a-subuser)
 * [Can I manage my teammates via API?](#-Can-I-manage-my-teammates-via-API)
 * [Is there a difference between managing teammates in the API versus the Customer Portal?](#-Is-there-a-difference-between-managing-teammates-in-the-API-versus-the-Customer-Portal)
 * [Can I recover a deleted teammate?](#-Can-I-recover-a-deleted-teammate)
@@ -88,6 +89,14 @@ The process by which multiple user credentials are converted to teammates is as 
 {% warning %}
 Once a credentialed user with only **UI/API** access has been converted to a teammate, that user will no longer automatically get access to new features. However, they will still be able to request access to new features.
 {% endwarning %}
+
+{% anchor h2 %}
+Why can't my teammate impersonate a subuser?
+{% endanchor %}
+
+Only **parent SendGrid accounts** and **administrator teammates** may impersonate subusers. A teammate with restricted permissions can not impersonate a subuser, and subusers cannot impersonate other subusers.
+
+Any Multiple User Credentials that have been migrated to teammates will have to be updated to possess full administrator permissions before they will be able to impersonate subusers. Any Multiple User Credentials that had only **UI/API** permissions will be unable to impersonate subusers as teammates until you update their permissions.
 
 {% anchor h2 %}
 Can I manage my teammates via API?
