@@ -15,7 +15,7 @@ navigation:
 * [How are teammates different from subusers?](#-How-are-teammates-different-from-subusers)
 * [How are teammates different from Multiple User Credentials?](#-How-are-teammates-different-from-Multiple-User-Credentials)
 * [What will happen to my Multiple User Credentials?](#-What-will-happen-to-my-Multiple-User-Credentials)
-* [Why can't my teammate impersonate a subuser](#-Why-cant-my-teammate-impersonate-a-subuser)
+* [Why can't my teammate impersonate a subuser?](#-Why-cant-my-teammate-impersonate-a-subuser)
 * [Can I manage my teammates via API?](#-Can-I-manage-my-teammates-via-API)
 * [Is there a difference between managing teammates in the API versus the Customer Portal?](#-Is-there-a-difference-between-managing-teammates-in-the-API-versus-the-Customer-Portal)
 * [Can I recover a deleted teammate?](#-Can-I-recover-a-deleted-teammate)
