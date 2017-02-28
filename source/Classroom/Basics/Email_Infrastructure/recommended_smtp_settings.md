@@ -13,15 +13,12 @@ navigation:
 
 ## Integrate with SendGrid using SMTP
 
-<<<<<<< HEAD
 - Change your SMTP authentication username and password to your **SendGrid username and password,** or set up a [teammate]({{root_url}}/User_Guide/Settings/teammates.html) with the **Mail Send** permission set to "Full Access".
-=======
 - Create an API Key and make sure it has Mail permissions. 
->>>>>>> fda8e9e9649f24230d03bb80cf595e1471b3a70b
 - Set the server host to **smtp.sendgrid.net.** This setting can sometimes be referred to as the external SMTP server, or relay, by some programs and services.
 - Use the string "apikey" for the SMTP username and use your API key for the password.
 
-### Ports
+## Ports
 
 - Use port **25**, **2525**, or **587** for unencrypted / [TLS](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html) connections
 - Use port **465** for [SSL](https://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html) connections
