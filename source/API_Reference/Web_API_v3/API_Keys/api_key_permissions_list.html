@@ -24,7 +24,6 @@ The following is a complete list of all possible permissions that you may assign
         <h3><a href="#Billing">Billing</a></h3>
         <h3><a href="#Categories">Categories</a></h3>
         <h3><a href="#Clients">Clients</a></h3>
-        <h3><a href="#Credentials">Credentials</a></h3>
         <h3><a href="#IPs">IPs</a></h3>
     </div>
     <div class="col-md-4">
@@ -35,9 +34,10 @@ The following is a complete list of all possible permissions that you may assign
         <h3><a href="#Scheduled-Sends">Scheduled Sends</a></h3>
         <h3><a href="#Stats">Stats</a></h3>
         <h3><a href="#Subusers">Subusers</a></h3>
+        <h3><a href="#Suppressions">Suppressions</a></h3>
     </div>
     <div class="col-md-4">
-        <h3><a href="#Suppressions">Suppressions</a></h3>
+        <h3><a href="#Teammates">Teammates</a></h3>
         <h3><a href="#Templates">Templates</a></h3>
         <h3><a href="#Tracking">Tracking</a></h3>
         <h3><a href="#User-Settings">User Settings</a></h3>
@@ -102,16 +102,6 @@ As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissio
   "categories.update",
   "categories.stats.read",
   "categories.stats.sums.read"
-]
-{% endcodeblock %}
-
-{% anchor h2 %}Credentials{% endanchor %}
-{% codeblock %}
-"scopes": [
-  "credentials.create",
-  "credentials.delete",
-  "credentials.read",
-  "credentials.update"
 ]
 {% endcodeblock %}
 
@@ -289,6 +279,18 @@ As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissio
 ]
 {% endcodeblock %}
 
+{% anchor h2 %}Teammates{% endanchor %}
+
+{% codeblock %}
+"scopes": [
+  "teammates.create",
+  "teammates.read",
+  "teammates.update",
+  "teammates.delete"
+]
+{% endcodeblock %}
+
+
 {% anchor h2 %}Templates{% endanchor %}
 {% codeblock %}
 "scopes": [
@@ -424,10 +426,6 @@ Below is a complete list of every API Key scope to be given to an admin level AP
   "clients.stats.read",
   "clients.tablet.stats.read",
   "clients.webmail.stats.read",
-  "credentials.create",
-  "credentials.delete",
-  "credentials.read",
-  "credentials.update",
   "devices.stats.read",
   "email_activity.read",
   "geo.stats.read",
@@ -530,6 +528,10 @@ Below is a complete list of every API Key scope to be given to an admin level AP
   "suppression.unsubscribes.read",
   "suppression.unsubscribes.update",
   "suppression.update",
+  "teammates.create",
+  "teammates.read",
+  "teammates.update",
+  "teammates.delete",
   "templates.create",
   "templates.delete",
   "templates.read",
