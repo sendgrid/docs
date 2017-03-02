@@ -22,10 +22,13 @@ How to integrate SugarCRM with SendGrid
 
 SendGrid customers utilizing our service for their transactional email and wanting to use SugarCRM for their email marketing campaigns can easily make a few settings changes within their SugarCRM account in order to point their outgoing mail to us, so we can deliver it to the end recipient. In order to send mail from SugarCRM to SendGrid, navigate the following on the SugarCRM site: Admin > Email Settings > Choose "Other" as the Email provider > Enter required server info as follows:
 
--   **SMTP Hostname**: ssl://smtp.sendgrid.net or tls://smtp.sendgrid.net
+-   **SMTP Server**: smtp.sendgrid.net
+-   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email_Infrastructure/smtp_ports.html)]
+-   **Use SMTP Authentication?**: Check this box
+-   **Enable SMTP over SSL or TLS?**: [the encryption of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email_Infrastructure/smtp_ports.html)]
 -   **SMTP Username**: [your SendGrid account's username]
 -   **SMTP Password**: [your SendGrid account's password]
--   **SMTP Port**: [the port of your choosing, the options for which can be found [here]({{root_url}}/Classroom/Basics/Email_Infrastructure/smtp_ports.html)]
+
 
 Once these changes have been made within the Email Settings page within your SugarCRM account, all outgoing mail from the application will be routed to SendGrid so we can send it to your end recipient.
 
