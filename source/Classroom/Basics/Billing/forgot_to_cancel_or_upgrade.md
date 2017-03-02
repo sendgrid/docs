@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-If you have not used your account in the current calendar month, we may be able to issue a refund or partial refund if you forgot to downgrade or cancel your account in the prior month. For more information on refund eligibility, [click here.]({{root_url}}Classroom/Basics/Billing/i_would_like_to_request_a_refund.html) 
+If you have not used your account in the current calendar month, we may be able to issue a refund or partial refund if you forgot to downgrade or cancel your account in the prior month. For more information on refund eligibility, [click here.]({{root_url}}/Classroom/Basics/Billing/i_would_like_to_request_a_refund.html) 
 
 Refunds for forgotten cancellation/downgrade are only applicable to the subscription charge on your account, not for overages or contact storage charges accrued during the prior month. 
 
