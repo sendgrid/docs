@@ -116,6 +116,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/triggering_events.html">Triggering Events</a>
         <a href="{{root_url}}/Glossary/two_factor_authentication.html">Two Factor Authentication</a>
         <a href="{{root_url}}/Glossary/web_api.html">Web API</a>
+        <a href="{{root_url}}/Glossary/whitelist.html">Whitelist</a>
     </div>
     <div class="col-md-4 glossary-section">
         {% anchor h2 %}Other{% endanchor %}
