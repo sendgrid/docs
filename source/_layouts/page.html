@@ -32,6 +32,14 @@ layout: default
         </div>
       {% endif %}
 
+      {% if page.url contains "/Web_API/" %}
+        <div class="callout callout-warning">
+          <p>
+            Any SendGrid parent account (not subuser account) created after the release of Teammates will have access <strong>only</strong> to the <a href="{{root_url}}/API_Reference/api_v3.html">Web API v3</a>. All accounts created before this date will continue to have access to both the <a href="{{root_url}}/API_Reference/Web_API/index.html">Web API v2</a> and the <a href="{{root_url}}/API_Reference/api_v3.html">Web API v3</a>.
+          </p>
+        </div>
+      {% endif %}
+
       {{ content }}
 
     </div>
