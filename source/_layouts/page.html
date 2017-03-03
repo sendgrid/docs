@@ -35,7 +35,9 @@ layout: default
       {% if page.url contains "/Web_API/" %}
         <div class="callout callout-warning">
           <p>
-            Any SendGrid parent account (not subuser account) created after the release of Teammates will have access <strong>only</strong> to the <a href="{{root_url}}/API_Reference/api_v3.html">Web API v3</a>. All accounts created before this date will continue to have access to both the <a href="{{root_url}}/API_Reference/Web_API/index.html">Web API v2</a> and the <a href="{{root_url}}/API_Reference/api_v3.html">Web API v3</a>.
+            SendGrid has restricted all parent accounts, including those created by <a href="https://sendgrid.com/partners/marketplace/">SendGrid Partners</a>, <strong>after the release of Teammates</strong> on <strong>February 23, 2017,</strong> from accessing the v2 API.
+
+            If you have a parent SendGrid account that was created before <strong>February 23, 2017,</strong> you will continue to have unrestricted access to the Web API v2.
           </p>
         </div>
       {% endif %}

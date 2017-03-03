@@ -51,7 +51,7 @@ Administrator teammates will continue to automatically receive full access to al
 Why can't I access the Web API v2?
 {% endanchor %}
 
-As part of the process to deprecate the Web API v2, SendGrid has restricted all parent accounts created *after the release of Teammates* on **February 23, 2017,** from accessing the v2 API. This includes all parent accounts created by SendGrid Resellers, even if those Reseller accounts were created before Teammates was released.
+SendGrid has restricted all parent accounts, including those created by [SendGrid Partners](https://sendgrid.com/partners/marketplace/), *after the release of Teammates* on **February 23, 2017,** from accessing the v2 API.
 
 If you have a parent SendGrid account that was created before **February 23, 2017,** you will continue to have unrestricted access to the Web API v2.
 
