@@ -143,12 +143,12 @@ Preview
 {% endanchor %}
 
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-8">
   <p>
     Clicking the action cog and selecting <strong>Preview</strong> will open a modal window containing a mobile and desktop preview of your campaign. You can toggle between between the two previews by clicking the monitor/phone icons.
   </p>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-4">
     <img src="{{root_url}}/images/campaigns_4.png" class="img-responsive pull-right"/>
   </div>
   <br>
@@ -261,10 +261,10 @@ Exporting statistics for multiple campaigns
 You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, with the exception of two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-4">
     <img src="{{root_url}}/images/campaigns_8.png" class="img-responsive pull-left"/>
   </div>
-  <div class="col-md-10">
+  <div class="col-md-8">
     <p>
       To export statistics for multiple campaigns, navigate to your Campaigns page within Marketing Campaigns. Check the box next to each campaign that you want to include in your stats CSV. As you add campaigns, you will notice a number on the bulk dropdown menu in the upper right increase.
     </p>
@@ -273,7 +273,7 @@ You can export a CSV containing the statistics for multiple campaigns. This expo
 </div>
 
 <div class="row">
-  <div class="col-md-10">
+  <div class="col-md-8">
     <p>Once you’ve selected the campaigns that you want to include in your CSV, click this button and select Export CSV.</p>
     <ul>
       <li>Campaigns are ordered from most to least recent.</li>
@@ -281,7 +281,7 @@ You can export a CSV containing the statistics for multiple campaigns. This expo
       <li>Every stats CSV that you export will contain a row containing the totals for each column.</li>
     </ul>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-4">
     <img src="{{root_url}}/images/campaigns_9.png" class="img-responsive pull-right"/>
   </div>
   <br>
