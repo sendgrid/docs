@@ -50,30 +50,13 @@ Responsive templates dynamically scale and adjust depending on what device your 
 
 ![]({{root_url}}/images/marketing_templates_2.png)
 
-<div class="row">
-  <div class="col-md-8">
-  <p>
-    You may hover over any of these template tiles and click <strong>Preview</strong> to view a quick preview of what your campaign will look like.
-  </p>
-  </div>
-  <div class="col-md-4">
-    <img src="{{root_url}}/images/marketing_templates_3.png" class="img-responsive pull-right"/>
-  </div>
-  <br>
-</div>
+You may hover over any of these template tiles and click <strong>Preview</strong> to view a quick preview of what your campaign will look like.
 
+![]({{root_url}}/images/marketing_templates_3.png)
 
-<div class="row">
-  <div class="col-md-3">
-    <img src="{{root_url}}/images/marketing_templates_4.png" class="img-responsive pull-left"/>
-  </div>
-  <div class="col-md-9">
-  <p>
-    To toggle between a preview of the desktop and mobile renditions of the template, click the desktop/phone toggle in the upper right corner.
-  </p>
-  </div>
-  <br>
-</div>
+To toggle between a preview of the desktop and mobile renditions of the template, click the desktop/phone toggle in the upper right corner.
+
+![]({{root_url}}/images/marketing_templates_4.png)
 
 {% anchor h2 %}
 Action Cog
