@@ -10,6 +10,18 @@ seo:
   description:
 ---
 
+{% anchor h2 %}
+Table of Contents
+{% endanchor %}
+
+* [Create a Campaign](#-Create-a-New-Campaign)
+* [Choose Your Template](#-Choose-your-template)
+* [Add Your Content and Manage Your Settings](#-Add-your-content-and-manage-your-settings)
+* [View All of Your Campaigns](#-View-All-of-Your-Campaigns)
+* [Campaign Action Items](#-Campaign-Action-Items)
+* [A/B Test Your Campaigns](#-AB-Test-Your-Campaigns)
+* [Campaign Statistics](#-Campaign-Statistics)
+
 The Campaigns page is the central hub for managing all of your marketing campaigns. This is where you'll come to create new campaigns, store your campaign drafts, and monitor the performance of previous campaigns you've already sent.
 
 {% anchor h2 %}
