@@ -72,6 +72,7 @@ Filter your campaign by status
 {% endanchor %}
 
 You may filter which campaigns are displayed on this list by status:
+
 * **All** - this will include all of your campaigns
 * **Sent** - this will include only campaigns that you've sent to your recipients
 * **Draft** - only campaigns that are
@@ -87,7 +88,7 @@ As you create and send more campaigns, you may wish to find older campaigns to r
 
 To quickly search for a specific campaign on the campaigns page, simply type the name or a word or phrase included in the name into the search bar.
 
-![]({{root_url}}/iamges/campaigns_2.png)
+![]({{root_url}}/images/campaigns_2.png)
 
 All campaigns with names containing the searched word or words will be returned, with up to 10 search results displayed per page.
 
@@ -141,9 +142,17 @@ Creating a template from a campaign, as opposed to duplicating a campaign, is an
 Preview
 {% endanchor %}
 
-Clicking the action cog and selecting **Preview** will open a modal window containing a mobile and desktop preview of your campaign. You can toggle between between the two previews by clicking the monitor/phone icons.
-
-![]({{root_url}}/images/campaigns_4.png)
+<div class="row">
+  <div class="col-md-10">
+  <p>
+    Clicking the action cog and selecting <strong>Preview</strong> will open a modal window containing a mobile and desktop preview of your campaign. You can toggle between between the two previews by clicking the monitor/phone icons.
+  </p>
+  </div>
+  <div class="col-md-2">
+    <img src="{{root_url}}/images/campaigns_4.png" class="img-responsive pull-right"/>
+  </div>
+  <br>
+</div>
 
 {% anchor h3 %}
 Delete a campaign
@@ -225,7 +234,7 @@ Campaign Statistics
 
 Once you have sent a campaign, click the campaign name to view its statistics. Alternatively, you can click the gear icon next to the campaign and then choose **Stats**. From the campaign's stats page, you will be able to see your bounces, clicks, opens, etc. You can also export a CSV with the raw stats.
 
-![]({{root_url}}/images/campaigns_6.png)
+![]({{root_url}}/images/campaigns_6.jpg)
 
 {% anchor h3 %}
 Link tracking
@@ -251,16 +260,32 @@ Exporting statistics for multiple campaigns
 
 You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, with the exception of two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
-![]({{root_url}}/images/campaigns_8.png)
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{root_url}}/images/campaigns_8.png" class="img-responsive pull-left"/>
+  </div>
+  <div class="col-md-10">
+    <p>
+      To export statistics for multiple campaigns, navigate to your Campaigns page within Marketing Campaigns. Check the box next to each campaign that you want to include in your stats CSV. As you add campaigns, you will notice a number on the bulk dropdown menu in the upper right increase.
+    </p>
+  </div>
+  <br>
+</div>
 
-To export statistics for multiple campaigns, navigate to your Campaigns page within Marketing Campaigns. Check the box next to each campaign that you want to include in your stats CSV. As you add campaigns, you will notice a number on the bulk dropdown menu in the upper right increase.
-
-Once you’ve selected the campaigns that you want to include in your CSV, click this button and select Export CSV.
-* Campaigns are ordered from most to least recent.
-* The CSV will include a row for each day that SendGrid has gathered statistics.
-* Every stats CSV that you export will contain a row containing the totals for each column.
-
-![]({{root_url}}/images/campaigns_9.png)
+<div class="row">
+  <div class="col-md-10">
+    <p>Once you’ve selected the campaigns that you want to include in your CSV, click this button and select Export CSV.</p>
+    <ul>
+      <li>Campaigns are ordered from most to least recent.</li>
+      <li>The CSV will include a row for each day that SendGrid has gathered statistics.</li>
+      <li>Every stats CSV that you export will contain a row containing the totals for each column.</li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <img src="{{root_url}}/images/campaigns_9.png" class="img-responsive pull-right"/>
+  </div>
+  <br>
+</div>
 
 ![]({{root_url}}/images/campaigns_10.png)
 
