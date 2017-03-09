@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 40
+weight: 70
 title: Design Editor
 navigation:
   show: true
@@ -52,7 +52,7 @@ Preview
   </p>
   </div>
   <div class="col-md-3">
-    <img src="{{root_url}}/images/design_editor_3.png" class="img-responsive pull-right"/>
+    <img src="{{root_url}}/images/design_editor_3.png" class="img-responsive pull-right style="vertical-align:center"/>
   </div>
   <br>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 80
+weight: 30
 title: Custom Fields
 navigation:
   show: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 95
 title: Dashboard
 navigation:
   show: true

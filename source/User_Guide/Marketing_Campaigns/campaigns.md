@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 40
+weight: 90
 title: Campaigns
 navigation:
   show: true

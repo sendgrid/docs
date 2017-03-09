@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 45
+weight: 60
 title: Drag & Drop
 navigation:
   show: true
@@ -49,11 +49,11 @@ Add Modules
 To add a new module to your campaign/template, simply expand the **Add Module** dropdown menu in the left hand sidebar and click and drag your desired module into your campaign/template.
 
 {% anchor h4 %}
-Add Modules
+Available Modules
 {% endanchor %}
 
-<table>
-  <tr><th>Modules Type</th><th>Description</th><th>Unique Styling Options</th></tr>
+<table class="table">
+  <tr><th>Module Type</th><th>Description</th><th>Unique Styling Options</th></tr>
   <tr><td>Image</td><td>A module containing a single image.</td><td>image background, image margin</td><tr>
   <tr><td>Image & Text</td><td>A module allowing an image to be aligned to the left or right of a body of text.</td><td>Image position, image background, image margin, text background, text margin</td><tr>
   <tr><td>Text</td><td>A module containing a single text body.</td><td>Background color, padding</td><tr>
@@ -143,7 +143,7 @@ The button module is built using a multitude of unique attributes. Because of th
 
 If you are converting HTML to use our drag and drop modules, we suggest replacing any button instances with the following template, then switching to the Style tab to populate the text and URL fields, as well as the button’s CSS.
 
-**Example:**
+**Button example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type="button"></table>
@@ -155,7 +155,7 @@ Spacer
 
 The spacer module contains no content, only background color and spacing attributes that can be edited in the sidebar.
 
-**Example:**
+**Spacer example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type=”spacer”></table>
@@ -167,7 +167,7 @@ Text
 
 You can leave the section marked [MODULE CONTENT] blank and switch from the code editor to the visual editor to see the how it will look with the default attributes. Or, you can replace it with any valid HTML text:
 
-**Example:**
+**Text example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type=”text”>
@@ -197,7 +197,7 @@ Replacing `[MODULE CONTENT]` with
 <a href="valid_url" target="\_blank"><img width="X" height="Y" src="an_image_url" alt="TEXT" />
 {% endcodeblock %}
 
-**Example:**
+**Image example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type="image" [DATA ATTRS]>
@@ -217,7 +217,7 @@ Image & Text
 
 This module includes a nested image and text module. This module is a little larger than the others, but the conventions remain the same: you can leave the template blank and switch views to see the default attributes and build from there, or put content in following the corresponding template descriptions above.
 
-**Example:**
+**Image & Text example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type="imagetext">
@@ -274,7 +274,7 @@ A column module cannot be dropped inside another column module.
 
 By default, a column header always has 2 drop zones. As with other templates, you can leave the section marked [MODULE] empty to render the default empty columns, or you may replace it below with any valid module HTML.
 
-**Example:**
+**Columns example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type="columns">
@@ -303,7 +303,7 @@ The divider module contains no content and functions only as a static design ele
 
 As with the other modules, you can leave the section marked [MODULE CONTENT] blank and switch from the code editor to the visual editor to see how it will look with the default attributes.
 
-**Example:**
+**Divider example:**
 
 {% codeblock lang:html %}
 <table class="module" role="module" data-type="divider">
@@ -323,7 +323,7 @@ The “what you see is what you get” (/ˈwɪziwɪɡ/ WIZ-ee-wig) module is eff
 
 The WYSIWYG module follows the generic template. You can leave the section marked [MODULE CONTENT] blank and switch from the code editor to the visual editor to see the how it will look with the default attributes. Or, you can replace it with any valid HTML:
 
-**Example:**
+**WYSIWYG example:**
 
 {% codeblock lang:html %}
 <table role="module" data-type=wysiwyg>
@@ -345,7 +345,7 @@ To turn a social media option on or off, simply check or uncheck its correspondi
 
 If you are converting HTML to use our Drag & Drop modules, please add the following code snippet to your template. Once pasted in the code view, switch back to the design editor, select the new social icons module and then modify the social icon styles in the module styles panel on the left side of the screen.
 
-**Example:**
+**Social example:**
 
 {% codeblock lang:html %}
 <table class=“module” role="module" data-type="social">
