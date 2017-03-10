@@ -38,7 +38,11 @@ When you’re ready to create an email campaign, you’ll start here on the Camp
 Choose your template
 {% endanchor %}
 
-We have provided you with multiple pre-built responsive templates to choose from.
+{% info %}
+You can also create a campaign from your [templates list]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
+{% endinfo %}
+
+We have provided you with multiple pre-built, responsive templates to choose from.
 
 You can also use your own design by creating a brand new template using our design editor or by uploading your own custom HTML.
 
@@ -70,10 +74,10 @@ From the campaigns page, you can view all of your campaigns that you’re workin
 
 For campaigns you’ve sent, you’ll see the following high level statistics:
 
-* **[Delivered rate]({{root_url}}/Glossary/deliveries.html)** - the number of emails delivered divided by the total number of delivery requests
-* **[Open rate]({{root_url}}/Glossary/open_rate.html)** - the number of emails opened divided by the total number of delivered emails
-* **[Click rate]({{root_url}}/Glossary/ctr.html)** - the number of clicks divided by the number of opens
-* **[Unsubscribe rate]** - the number of recipients who unsubscribed from your emails
+* **[Delivered rate]({{root_url}}/Glossary/deliveries.html)** - the number of emails delivered divided by the total number of delivery requests.
+* **[Open rate]({{root_url}}/Glossary/open_rate.html)** - the number of emails opened divided by the total number of delivered emails.
+* **[Click rate]({{root_url}}/Glossary/ctr.html)** - the number of clicks divided by the number of opens.
+* **[Unsubscribe rate]** - the number of recipients who unsubscribed from your emails.
 
 You can choose to see either raw numbers or percentages for these high level stats when looking at your campaign statistics by clicking the **#** or **%** toggle.
 
@@ -116,7 +120,7 @@ Next to each campaign, you will find a small action cog icon. Clicking this will
 Unschedule a campaign
 {% endanchor %}
 
-You can unschedule a campaign by clicking the action cog then clicking **Unschedule**. This will return your campaign to a “draft” status. Note, in order to edit or reschedule delivery time of a scheduled campaign you must first unschedule it.
+You can unschedule a campaign by clicking the action cog then clicking **Unschedule**. This will return your campaign to a “draft” status. Note, in order to edit or reschedule delivery time of a scheduled campaign you _must_ first unschedule it.
 
 {% anchor h3 %}
 Edit
@@ -128,11 +132,11 @@ To edit a campaign that is in “draft” status, simply click the campaign name
 Duplicating a campaign
 {% endanchor %}
 
-To duplicate an existing campaign, just click the action cog to the right of that campaign and choose “duplicate”. A new campaign will be created and you’ll be taken to the campaign builder where you can begin working on this new, duplicated campaign. Note, the following items will be carried over; be sure to review these to make sure you address any duplicated elements you wish to update:
+To duplicate an existing campaign, just click the action cog to the right of that campaign and choose **Duplicate**. A new campaign will be created and you’ll be taken to the campaign builder where you can begin working on this new, duplicated campaign. Note, the following items will be carried over; be sure to review these to make sure you address any duplicated elements you wish to update:
 
 * **Campaign name** - This will auto-populate with the original campaign name plus an underscore and a series of numbers.
 * **From Sender** - This will be set to the sender identity selected for the original campaign.
-* **Email Subject** - This field will include the same subjected used for the original campaign.
+* **Email Subject** - This field will include the same subject used for the original campaign.
 * **Categories** - Any categories that you specified in your original email will be carried over to your duplicate.
 * **List/Segments to Send To** - This will be set to the list or segment of recipients that you specified on your original campaign.
 * **Unsubscribe Group** - This will be set to the same unsubscribe group used in your original campaign.
@@ -146,9 +150,9 @@ Your duplicated campaign will automatically be added to your campaign list, even
 Create template
 {% endanchor %}
 
-Clicking the action cog and selecting **Create Template** will open a duplicate of your campaign's template in the template design editor. This is useful if you would like to leverage your campaign as a template that you can select when creating a new campaign. Make any modifications you would like, choose a new template name, and click **Save Template**. You’ll be able to find this new template in your template library when creating a new campaign.
+Clicking the action cog and selecting **Create Template** will open a duplicate of your campaign's template in the design editor. This is useful if you would like to leverage your campaign as a template that you can select when creating a new campaign. Make any modifications you would like, choose a new template name, and click **Save Template**. You’ll be able to find this new template in your template library when creating a new campaign.
 
-Creating a template from a campaign, as opposed to duplicating a campaign, is an easy way to save the content of your campaign without saving the campaign settings. When you duplicate a campaign, the campaign's settings are duplicated as well— make sure to review these settings before sending your campaign to avoid using the wrong subject, sender identity, categories, etc.
+Creating a template from a campaign, as opposed to _duplicating_ a campaign, is an easy way to save the content of your campaign without saving the campaign settings. When you duplicate a campaign, the campaign's settings are duplicated as well— make sure to review these settings before sending your campaign to avoid using the wrong subject, sender identity, categories, etc.
 
 {% anchor h3 %}
 Preview
@@ -212,7 +216,7 @@ You can assign up to 10 different categories to each campaign.
 Recipients
 {% endanchor %}
 
-**List/Segments to Send To:** The recipients who will receive your campaign. You may enter one or more lists or segments. Any duplicate contacts across multiple selected lists or segments will still only receive one copy of the campaign. Note: you must create your lists or segments in the Contacts section before you’ll be able to select them here.
+**List/Segments to Send To:** The recipients who will receive your campaign. You may enter one or more lists or segments. Any duplicate contacts across multiple selected lists or segments will still only receive one copy of the campaign. Note: you must create your lists or segments in the **Contacts** section before you’ll be able to select them here.
 
 **Unsubscribe Group:** This allows you to select which unsubscribe group to apply to this campaign so that users who have already opted out of this group of emails are not included in your recipients list. Any recipients who click the unsubscribe link in your campaign will be added to this group.
 
@@ -313,7 +317,7 @@ To learn how to leverage your engagement statistics, please visit our [Classroom
 View who clicked or opened your campaigns
 {% endanchor %}
 
-Marketing Campaigns makes it very easy to create a dynamic segment of recipients who have either opened one of your campaigns or have clicked links within a campaign.
+Marketing Campaigns makes it very easy to create a dynamic segment of recipients who have either opened one of your campaigns or have clicked links within your campaign.
 
 First, from either the **campaigns list view** or the individual **campaign stats page**, hover over the “Unique Opens” or “Unique Clicks” stats.
 
