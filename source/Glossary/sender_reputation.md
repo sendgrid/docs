@@ -12,6 +12,10 @@ navigation:
 
 ![]({{root_url}}/images/reputation_1.png "Sender Reputation")
 
+{% info %}
+Please note that the SendGrid Reputation does not necessarily represent your inboxing percentage at mailbox providers.
+{% endinfo %}
+
 Your Reputation score is given in a range from 0-100 (100 being the best) and is a calculated based on information abour your sending habits, specifically how many requests are able to be delivered. This includes:
 
 -	Low bounce rates, drop rates, unsubscribes
