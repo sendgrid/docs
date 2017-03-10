@@ -86,6 +86,6 @@ To duplicate a template, simply click **Duplicate** from the action cog menu. Th
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html">Create and Send Your Campaign</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Create and Send Your Campaign</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

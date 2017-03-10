@@ -91,6 +91,7 @@ These various fields enable you to identify which contacts are most engaged with
 ![]({{root_url}}/images/contact_fields_2.png)
 
 <table class="table">
+  <tr><th>Field Name</th><th>Description</th><th>Field Type</th><th>Can be edited?</th><th>Substitution tag in campaign builder?</th></tr>
   <tr><td>Date Added</td><td>The date that the contact was uploaded to SendGrid. When creating a segment, this field is called <strong>Created At</strong>.</td><td>date</td><td>no</td><td>no</td></tr>
   <tr><td>Date Updated</td><td>The date that the contact was most recently updated. When creating a segment, this field is called <strong>Updated At</strong>.</td><td>date</td><td>no</td><td>no</td></tr>
   <tr><td>Last Emailed</td><td>The date that the contact was last emailed.</td><td>date</td><td>no</td><td>no</td></tr>
