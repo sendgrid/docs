@@ -308,6 +308,7 @@ Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.htm
 Redirect 301 /Classroom/Deliver/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/overview.html
 Redirect 301 /Classroom/Deliver/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html
 Redirect 301 /Classroom/Deliver/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html
 Redirect 301 /Classroom/Deliver/email_deliverability_101.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
