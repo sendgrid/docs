@@ -32,16 +32,6 @@ layout: default
         </div>
       {% endif %}
 
-      {% if page.url contains "/Web_API/" %}
-        <div class="callout callout-warning">
-          <p>
-            SendGrid has restricted all parent accounts, including those created by <a href="https://sendgrid.com/partners/marketplace/">SendGrid Partners</a>, <strong>after the release of Teammates</strong> on <strong>February 23, 2017,</strong> from accessing the v2 API.
-
-            If you have a parent SendGrid account that was created before <strong>February 23, 2017,</strong> you will continue to have unrestricted access to the Web API v2.
-          </p>
-        </div>
-      {% endif %}
-
       {{ content }}
 
     </div>
