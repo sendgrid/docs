@@ -16,7 +16,6 @@ Table of Contents
 
 * [I created a teammate in the UI with FULL ACCESS to a feature, but that teammate still has fewer permissions than a teammate created with the API.](#-I-created-a-teammate-in-the-UI-with-FULL-ACCESS-to-a-feature-but-that-teammate-still-has-fewer-permissions-than-a-teammate-created-with-the-API)
 * [Why can't my teammate impersonate a subuser?](#-Why-cant-my-teammate-impersonate-a-subuser)
-* [Why can't I access the Web API v2?](#-Why-cant-I-access-the-Web-API-v2)
 * [My old multiple user credential could access all new features released by SendGrid. Now that my credential has been migrated to Teammates, I can no longer access new features as they are released.](#-My-old-multiple-user-credential-could-access-all-new-features-released-by-SendGrid-Now-that-my-credential-has-been-migrated-to-Teammates-I-can-no-longer-access-new-features-as-they-are-released)
 * [I approved a request for access submitted by one of my teammates. Why was my teammate given full access to the feature?](#-I-approved-a-request-for-access-submitted-by-one-of-my-teammates-Why-was-my-teammate-given-full-access-to-the-feature)
 * [Help! One of my administrator teammates has deleted my teammate account!](#-Help-One-of-my-administrator-teammates-has-deleted-my-teammate-account)
@@ -46,14 +45,6 @@ My old multiple user credential could access all new features released by SendGr
 All non-administrator teammates are restricted from accessing new features released by SendGrid. However, these teammates should still be able to see new features added to the nav bar in the UI. So, all teammates may request access to new SendGrid features.
 
 Administrator teammates will continue to automatically receive full access to all new SendGrid features.
-
-{% anchor h2 %}
-Why can't I access the Web API v2?
-{% endanchor %}
-
-SendGrid has restricted all parent accounts, including those created by [SendGrid Partners](https://sendgrid.com/partners/marketplace/), *after the release of Teammates* on **February 23, 2017,** from accessing the v2 API.
-
-If you have a parent SendGrid account that was created before **February 23, 2017,** you will continue to have unrestricted access to the Web API v2.
 
 {% anchor h2 %}
 I approved a request for access submitted by one of my teammates. Why was my teammate given full access to the feature?
