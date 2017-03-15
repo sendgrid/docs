@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-![]({{root_url}}/images/reputation_1.png "Sender Reputation")
+![]({{root_url}}/images/sender_reputation_1.png "Sender Reputation")
 
 {% info %}
 Please note that the SendGrid Reputation does not necessarily represent your inboxing percentage at mailbox providers.
