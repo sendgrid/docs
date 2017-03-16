@@ -228,8 +228,6 @@ What will happen to all of my historical stats in Legacy Newsletter?
 
 Your historical stats will still be available within the Legacy Newsletter as long as Legacy Newsletter is live. However, eventually Legacy Newsletter will go away so that SendGrid can focus on innovation and support for Marketing Campaigns.
 
-**Note: we will provide 12 months of advance warning before deprecation.**
-
 For this reason, we recommend you [export any data you wish to retain]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html) for the long term. View our migration guide for details on how to export.
 
 {% anchor h3 %}
