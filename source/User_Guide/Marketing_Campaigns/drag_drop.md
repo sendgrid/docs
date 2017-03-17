@@ -68,7 +68,7 @@ Available Modules
 ![]({{root_url}}/images/drag_drop_editor_3.gif)
 
 {% info %}
-Every campaign is automatically populated with a footer module by default.
+By default, every campaign is automatically populated with a footer module containing your sender identity information along with "Unsubscribe" and "Update Preferences" links. [CAN-SPAM]({{root_url}}/Glossary/can_spam.html) requires that you include this information in all of your campaigns.
 {% endinfo %}
 
 Footers are very important components of any marketing campaign; they include information like sender identity details and links allowing your recipients to unsubscribe from your emails. Individual styling settings for footers in Marketing Campaigns include background color, padding, and margin spacing.
@@ -111,7 +111,7 @@ Under the **Global Styles** dropdown menu in the left hand sidebar, click **Cont
 HTML Markup for Modules
 {% endanchor %}
 
-If you would like to import your own custom HTML to use in your template or campaign but wish to continue using drag & drop modules, please refer to the following guidelines when writing your HTML. By ensuring that your HTML modules match the following guidelines, you will be able to drag & drop your imported modules.
+If you would like to import your own custom HTML to use in your template or campaign but wish to continue editing using drag & drop functionality, please refer to the following guidelines when writing your HTML. By ensuring that your HTML modules match the following guidelines, you will be able to drag & drop your imported modules.
 
 {% anchor h3 %}
 HTML for Drag & Drop
