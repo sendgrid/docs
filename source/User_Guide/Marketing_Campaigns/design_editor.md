@@ -25,7 +25,7 @@ seo:
   <br>
 </div>
 
-The design editor provides the ability to toggle between our drag & drop editor making it easy to click and drag various pre-built modules into your campaign and a **general WYSIWYG editor** providing basic editing and formatting tools.
+In addition to the general WYSIWYG controls, you can also toggle on the drag & drop editor which makes it easy to click and drag various pre-built modules into your campaign.
 
 The design editor can be reached either by creating or editing a template from the [Templates page](https://sendgrid.com/marketing_campaigns/ui/marketing_templates), or by creating or editing a campaign from the [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns).
 
@@ -102,30 +102,11 @@ Tags
 Substitution Tags
 {% endanchor %}
 
-{% info %}
-You can use substitution tags for both web links and unsubscribe links.
-{% endinfo %}
-
 The **Tags** tab lists the various substitution tags that you can add to your campaign or template. Click the copy icon to easily copy a substitution tag, then paste the tag anywhere you want the substituted value to be placed in your content.
 
 ![]({{root_url}}/images/design_editor_6.png)
 
-The following tags are available under the Tags tab in addition to any custom fields you've already added:
-
-* **[%email%]** - The email address of the recipient
-* **[%first_name%]** - The first name of the recipient
-* **[%last_name%]** - The last name of the recipient
-* **[Sender_Name]** - The name of the sender selected when sending your campaign
-* **[Sender_City]** - The city on record for the sender selected when sending your campaign
-* **[Sender_State]** - The state on record for the sender selected when sending your campaign
-* **[Sender_Zip]** - The zip code on record for the sender selected when sending your campaign
-* **[Unsubscribe]** - This tag will be replaced with a link allowing your recipient to be added to the [unsubscribe group selected when sending your campaign]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
-* **[Unsubscribe_Preferences]** - This tag will be replaced with a link allowing your recipients to opt into or out of the various email [unsubscribe groups]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) you offer.
-* **[Weblink]** - This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.
-
-For a more detailed discussion of the various fields SendGrid provides, please read _[What is the difference between custom fields, reserved fields, and system fields?]()_
-
-For help understanding the unsubscribe, sender ID, and weblink system tags, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html#-Miscellaneous-Substitution-Tags).
+The following tags are available under the Tags tab in addition to any custom fields you've already added.
 
 {% anchor h3 %}
 Default Values
@@ -139,11 +120,43 @@ This can be avoided by assigning a default value to a substitution tag using the
 
 Now, if no name is on record for a particular recipient, the email will read “Hello Valued Customer” instead of “Hello [%first_name%]”. You may choose any value to set as the default.
 
+{% anchor h3 %}
+Substitution Tags for Personalization
+{% endanchor %}
+
+The following substitution tags are very useful when personalizing your content for each of your recipients.
+
+* **[%email%]** - The email address of the recipient
+* **[%first_name%]** - The first name of the recipient
+* **[%last_name%]** - The last name of the recipient
+
+{% anchor h3 %}
+Sender Identity, Unsubscribe Links, and Weblink Tags
+{% endanchor %}
+
+The sender identity, unsubscribe, and weblink substitution tags are very useful when building the footer for your campaign. Providing a quick and easy way for your recipients to unsubscribe from your marketing email along with being open about your identity and location not only ensures that you are [CAN-SPAM]({{root_url}}/Glossary/can_spam.html) compliant, but also builds trust with your recipients.
+
+* **[Sender_Name]** - The name of the sender selected when sending your campaign
+* **[Sender_City]** - The city on record for the sender selected when sending your campaign
+* **[Sender_State]** - The state on record for the sender selected when sending your campaign
+* **[Sender_Zip]** - The zip code on record for the sender selected when sending your campaign
+* **[Unsubscribe]** - This tag will be replaced with a link allowing your recipient to be added to the [unsubscribe group selected when sending your campaign]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+* **[Unsubscribe_Preferences]** - This tag will be replaced with a link allowing your recipients to opt into or out of the various email [unsubscribe groups]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) you offer.
+* **[Weblink]** - This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.
+
+{% info %}
+You can use substitution tags for both web links and unsubscribe links.
+{% endinfo %}
+
+For a more detailed discussion of the various fields SendGrid provides, please read _[What is the difference between custom fields, reserved fields, and system fields?]({{root_url}}/Classroom/Basics/Marketing_Campaigns/contact_data.)_
+
+For help understanding the unsubscribe, sender ID, and weblink system tags, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html#-Miscellaneous-Substitution-Tags).
+
 {% anchor h2 %}
 WYSIWYG Toolbar
 {% endanchor %}
 
-When the drag & drop editor is disabled, you will have access to a general toolbar presenting some basic formatting and styling options.
+When editing the text, text+image, or WYSIWYG modules you will have access to a general toolbar presenting some basic formatting and styling options.
 
 ![]({{root_url}}/images/design_editor_7.png)
 
