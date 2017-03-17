@@ -22,7 +22,7 @@ Table of Contents
 * [A/B Test Your Campaigns](#-AB-Test-Your-Campaigns)
 * [Campaign Statistics](#-Campaign-Statistics)
 
-The Campaigns page is the central hub for managing all of your marketing campaigns. This is where you'll come to create new campaigns, store your campaign drafts, and monitor the performance of previous campaigns you've already sent.
+The Campaigns page is the central hub for managing all of your email marketing campaigns. This is where you'll come to create new campaigns, store your campaign drafts, and monitor the performance of previous campaigns you've already sent.
 
 {% anchor h2 %}
 Create a New Campaign
@@ -77,7 +77,7 @@ For campaigns you’ve sent, you’ll see the following high level statistics:
 * **[Delivered rate]({{root_url}}/Glossary/deliveries.html)** - the number of emails delivered divided by the total number of delivery requests.
 * **[Open rate]({{root_url}}/Glossary/open_rate.html)** - the number of emails opened divided by the total number of delivered emails.
 * **[Click rate]({{root_url}}/Glossary/ctr.html)** - the number of clicks divided by the number of opens.
-* **[Unsubscribe rate]** - the number of recipients who unsubscribed from your emails.
+* **[Unsubscribe rate]** - the number of recipients who unsubscribed from your emails divided by the total number of delivered campaigns.
 
 You can choose to see either raw numbers or percentages for these high level stats when looking at your campaign statistics by clicking the **#** or **%** toggle.
 
@@ -89,18 +89,18 @@ Filter your campaign by status
 
 You may filter which campaigns are displayed on this list by status:
 
-* **All** - this will include all of your campaigns
-* **Sent** - this will include only campaigns that you've sent to your recipients
-* **Draft** - only campaigns that are
-* **In Progress** - any campaigns that are currently being sent or have been scheduled for sending
-* **Canceled** - any campaigns that you cancelled mid send
+* **All** - all of your campaigns, regardless of status
+* **Sent** - campaigns that you've sent to your recipients
+* **Draft** - campaigns that you’ve begun building but have neither sent nor scheduled
+* **In Progress** - campaigns that are currently being sent to recipients or have been scheduled for sending
+* **Canceled** - any campaigns that you cancelled mid-send
 * **Scheduled** - campaigns that have been scheduled for sending, but have not yet been sent
 
 {% anchor h3 %}
 Search your campaigns
 {% endanchor %}
 
-As you create and send more campaigns, you may wish to find older campaigns to reference their statistics or to reuse content for a new campaign simply by browsing.
+As you create and send more campaigns, you may wish to find older campaigns to reference their statistics or to reuse content for a new campaign.
 
 To quickly search for a specific campaign on the campaigns page, simply type the name or a word or phrase included in the name into the search bar.
 
@@ -138,7 +138,7 @@ To duplicate an existing campaign, just click the action cog to the right of tha
 * **From Sender** - This will be set to the sender identity selected for the original campaign.
 * **Email Subject** - This field will include the same subject used for the original campaign.
 * **Categories** - Any categories that you specified in your original email will be carried over to your duplicate.
-* **List/Segments to Send To** - This will be set to the list or segment of recipients that you specified on your original campaign.
+* **List/Segments to Send To** - This will be set to the list(s) or segment(s) of recipients that you specified on your original campaign.
 * **Unsubscribe Group** - This will be set to the same unsubscribe group used in your original campaign.
 * **Send Immediately** - This toggle will be set to the same setting as your original: if you scheduled your original campaign, the same schedule will be set for your duplicate. [Click here if you need to unschedule your campaign.]({{root_url}}/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html#-How-do-I-edit-a-scheduled-campaign)
 
@@ -190,8 +190,6 @@ Campaign Settings
 
 **Campaign Name:** This is the name of your campaign, so you can find it again from the campaigns page. Newly created campaigns are named “Untitled” unless you specify a name. This name is only used internally within the SendGrid Marketing Campaigns interface— _it will not be visible to your recipients._
 
-You are not required to give your campaign a unique name.
-
 **From Sender:** This is where you select the sender identity from whom your campaign will be sent. The recipient will see the name associated with this sender identity, and the reply to and from addresses will be the email address associated with this sender identity.
 
 {% warning %}
@@ -218,7 +216,7 @@ Recipients
 
 **List/Segments to Send To:** The recipients who will receive your campaign. You may enter one or more lists or segments. Any duplicate contacts across multiple selected lists or segments will still only receive one copy of the campaign. Note: you must create your lists or segments in the **Contacts** section before you’ll be able to select them here.
 
-**Unsubscribe Group:** This allows you to select which unsubscribe group to apply to this campaign so that users who have already opted out of this group of emails are not included in your recipients list. Any recipients who click the unsubscribe link in your campaign will be added to this group.
+**Unsubscribe Group:** This allows you to select which unsubscribe group to apply to this campaign so that users who have already opted out of this group of emails are not included in your recipients list. Any recipients who click the unsubscribe link in your campaign will be added to this unsubscribe group and will not receive future emails of this type.
 
 In order to remain [CAN-SPAM]({{root_url}}/Glossary/can_spam.html) compliant and to keep your sender reputation high, it is important to ensure you don't send emails to uninterested recipients who have already unsubscribed. You can create a new unsubscribe group from our [Unsubscribes Group page](https://app.sendgrid.com/suppressions/advanced_suppression_manager).
 
@@ -234,7 +232,7 @@ To send a test email to more than one recipient, simply separate each address wi
 Scheduling
 {% endanchor %}
 
-**Send Immediately:** You can set when this email will be sent to your contacts. “Send Immediately” is selected by default. If you would like to schedule your campaign, click the “On” button to toggle the custom schedule options. Scheduled campaigns will be scheduled only after you click “Schedule” in the upper right hand corner. Your timezone is set in your [account settings]({{root_url}}/User_Guide/Settings/account.html).
+**Send Immediately:** You can set when this email will be sent to your contacts. **Send Immediately** toggled "On" by default. If you would like to schedule your campaign for a future date, toggle **Send Immediately** to "Off" and enter the date, timezone, and time that you want your campaign to be sent. Scheduled campaigns will be scheduled only after you click **Schedule** in the upper right hand corner. Your timezone is set in your [account settings]({{root_url}}/User_Guide/Settings/account.html).
 
 [Click here if you've accidentally scheduled a campaign and want to unschedule it!]({{root_url}}/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html#-How-do-I-edit-a-scheduled-campaign)
 
@@ -248,15 +246,23 @@ You can easily run A/B tests on your campaigns with up to 6 different versions d
 Campaign Statistics
 {% endanchor %}
 
-Once you have sent a campaign, click the campaign name to view its statistics. Alternatively, you can click the gear icon next to the campaign and then choose **Stats**. From the campaign's stats page, you will be able to see your bounces, clicks, opens, etc. You can also export a CSV with the raw stats.
+Once you have sent a campaign, click the campaign name to view its statistics. Alternatively, you can click the gear icon next to the campaign and then choose **Stats**. From the campaign's stats page, you will be able to see your bounces, clicks, opens, etc. You can also export a CSV with the raw stats by clicking **Export CSV**.
 
 ![]({{root_url}}/images/campaigns_6.jpg)
+
+{% anchor h3 %}
+A/B Test Statistics
+{% endanchor %}
+
+If you ran an A/B test for your campaign, then you will find statistics for each version you sent from the campaign's stats page.
+
+![]({{root_url}}/images/a_b_test_stats.png)
 
 {% anchor h3 %}
 Link tracking
 {% endanchor %}
 
-You can also view detailed statistics about the links you include in your campaigns. From your Campaign Statistics page you will see a table ranking your links according to the number of times they were clicked by your recipients. You will see the number of total clicks for each link in addition to number of unique clicks for each link. All of these stats can be displayed as raw numbers or percentages by clicking the **#/%** toggle switch.
+You can also view detailed statistics about the links you include in your campaigns. From your Campaign Statistics page you will see a table ranking your links according to the number of times they were clicked by your recipients. You will see the number of _total clicks_ for each link in addition to number of _unique clicks_ for each link. All of these stats can be displayed as raw numbers or percentages by clicking the **#/%** toggle switch.
 
 {% info %}
 You can view which specific recipients clicked links within your campaign by examining your _engagement statistics_. From the campaign page, hover over the **Unique Clicks** tile and click **View Details**.
@@ -319,7 +325,7 @@ View who clicked or opened your campaigns
 
 Marketing Campaigns makes it very easy to create a dynamic segment of recipients who have either opened one of your campaigns or have clicked links within your campaign.
 
-First, from either the **campaigns list view** or the individual **campaign stats page**, hover over the “Unique Opens” or “Unique Clicks” stats.
+First, from either the **Campaigns page** or the individual **campaign stats page**, hover over the “Unique Opens” or “Unique Clicks” stats.
 
 _From the campaigns list view:_
 
