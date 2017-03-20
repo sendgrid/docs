@@ -92,8 +92,8 @@ These various fields enable you to identify which contacts are most engaged with
 
 <table class="table">
   <tr><th>Field Name</th><th>Description</th><th>Field Type</th><th>Can be edited?</th><th>Substitution tag in campaign builder?</th></tr>
-  <tr><td>Date Added</td><td>The date that the contact was uploaded to SendGrid. When creating a segment, this field is called <strong>Created At</strong>.</td><td>date</td><td>no</td><td>no</td></tr>
-  <tr><td>Date Updated</td><td>The date that the contact was most recently updated. When creating a segment, this field is called <strong>Updated At</strong>.</td><td>date</td><td>no</td><td>no</td></tr>
+  <tr><td>Date Added</td><td>The date that the contact was uploaded to SendGrid.</td><td>date</td><td>no</td><td>no</td></tr>
+  <tr><td>Last Updated</td><td>The date that the contact was most recently updated.</td><td>date</td><td>no</td><td>no</td></tr>
   <tr><td>Last Emailed</td><td>The date that the contact was last emailed.</td><td>date</td><td>no</td><td>no</td></tr>
   <tr><td>Last Clicked</td><td>The date that the contact last clicked on a link in your email.</td><td>date</td><td>no</td><td>no</td></tr>
   <tr><td>Last Opened</td><td>The date that the contact last opened one of your emails.</td><td>date</td><td>no</td><td>no</td></tr>
