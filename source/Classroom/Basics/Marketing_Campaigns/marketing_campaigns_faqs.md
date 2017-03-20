@@ -349,7 +349,7 @@ To quickly view which recipients have either opened one of your campaigns or hav
 
 ![]({{root_url}}/images/mc_faq_2.png)
 
-You can also create a segment of recipients that have either opened or click within one of your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
+You can also create a segment of recipients that have either opened or click within one of your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
 {% anchor h3 %}
 What is the maximum number of lists and segments that I can create?
@@ -407,7 +407,7 @@ No, click tracking is permanently enabled for all links included in your campaig
 
 However, by adding the attribute `"clicktracking=off"` to the `<a>` tag of a link in one of your campaigns **before the href attribute**, you can prevent that link from being included in the link click tracking table for that campaign.
 
-Clicks on this link are still recorded under your general SendGrid stats and the aggregate Campaign stats. To learn more about click tracking in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Link-Tracking).
+Clicks on this link are still recorded under your general SendGrid stats and the aggregate Campaign stats. To learn more about click tracking in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Link-Tracking).
 
 For example, the link:
 
@@ -477,7 +477,7 @@ You can go into the settings menu after your campaign has started sending, and t
 Is there a way for me to get more stats than are shown on the UI?
 {% endanchor %}
 
-You can always export a CSV of raw stats for any of your campaigns. That will include stats like CTR, total open rates, spam report rate, and more. To learn more about stats from Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Campaign-Statistics).
+You can always export a CSV of raw stats for any of your campaigns. That will include stats like CTR, total open rates, spam report rate, and more. To learn more about stats from Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Campaign-Statistics).
 
 Additionally, you can use [SendGrid's Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) to collect and store your Marketing Campaigns statistics.
 

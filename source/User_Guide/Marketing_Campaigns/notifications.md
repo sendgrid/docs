@@ -20,10 +20,9 @@ If you would like to have notifications sent to an email other than your parent 
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/overview.html">Dashboard</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html">A/B Testing</a>
     </div>
 
     <div class="col-md-6 text-right">
-        <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns Overview</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

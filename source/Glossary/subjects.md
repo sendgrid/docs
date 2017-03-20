@@ -49,7 +49,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/opens.html">Opens</a>
         <a href="{{root_url}}/Glossary/rate_limiting.html">Rate Limiting</a>
         <a href="{{root_url}}/Glossary/request.html">Request</a>
-        <a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a>
         <a href="{{root_url}}/Glossary/spam.html">Spam</a>
         <a href="{{root_url}}/Glossary/throttling.html">Throttling</a>
         <a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Email</a>

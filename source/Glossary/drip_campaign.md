@@ -19,7 +19,7 @@ period of time.
 
 Drip campaigns help you to send relevant and well timed emails that your customers are likely interested in
 seeing. Striving to send emails that are relevant to your recipients can help to improve your [sender
-reputation]({{root_url}}/Glossary/sender_reputation.html), cultivate customer satisfaction, and increase customer retention.
+reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html), cultivate customer satisfaction, and increase customer retention.
 
 {% info %}
 It is important to avoid initiating a series of messages that your customer doesn’t want to receive. Make sure

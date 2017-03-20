@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 70
+weight: 40
 title: Contacts
 navigation:
   show: true
@@ -227,10 +227,10 @@ What you may want to do is add logic to set a custom field, based on the reason 
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">Sender Identities</a>
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

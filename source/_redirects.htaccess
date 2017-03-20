@@ -486,7 +486,8 @@ Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guid
 Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
 Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/Classroom/Basics/Account/account_sign_up_faq.html
 Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/Glossary/email_marketing.html
-Redirect 301 Glossary/email_error_messages.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Glossary/email_error_messages.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 
 #######
 #
@@ -635,7 +636,6 @@ Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/Use
 #this app went away as of May 27, 2015
 Redirect 301 /User_Guide/Settings/credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/index.html
-Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
@@ -645,6 +645,8 @@ Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Del
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaigns.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
 
 #######
 #
