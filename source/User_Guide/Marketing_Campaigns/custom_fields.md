@@ -57,6 +57,6 @@ the same row as your field. When you delete the custom field, you will see a war
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/list.html">Lists & Segmentation</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists & Segmentation</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

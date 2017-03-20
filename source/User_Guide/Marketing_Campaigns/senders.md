@@ -103,7 +103,7 @@ If you'd like to show your full sender's address and information you can use the
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">drag_drop.html</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a>
     </div>
 
     <div class="col-md-6 text-right">
