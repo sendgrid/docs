@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 90
+weight: 50
 title: Sender Identities
 navigation:
   show: true
@@ -103,10 +103,10 @@ If you'd like to show your full sender's address and information you can use the
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns Overview</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a>
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

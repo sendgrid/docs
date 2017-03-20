@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 80
+weight: 30
 title: Custom Fields
 navigation:
   show: true
@@ -53,10 +53,10 @@ the same row as your field. When you delete the custom field, you will see a war
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">Sender Identities</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a>
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists & Segmentation</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

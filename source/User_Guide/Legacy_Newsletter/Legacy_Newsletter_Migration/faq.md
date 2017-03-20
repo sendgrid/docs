@@ -100,11 +100,11 @@ A final note: The ability to segment your contacts into meaningful recipient gro
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 {% endanchor %}
 
-**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
+**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
 **[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
-**[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
+**[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 
 **Improved user experience:** Ease of use is central to Marketing Campaigns. You’ll love the improved design and our UI/UX team has thoughtfully considered every workflow and is continuously working with customers to find opportunities to optimize.
 
@@ -180,7 +180,7 @@ Marketing Campaigns will store two types of data about your contacts:
 
 **Custom Fields:** Any information you share with us about your contacts such as age, geography, last purchase, etc. This data can be added using a CSV upload or using our [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). Currently, Marketing Campaigns can store up to 60 different [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html).
 
-**Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
+**Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
 
 {% anchor h2 %}
 Segmentation
