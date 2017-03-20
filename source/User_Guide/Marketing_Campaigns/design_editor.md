@@ -148,7 +148,7 @@ The sender identity, unsubscribe, and weblink substitution tags are very useful 
 You can use substitution tags for both web links and unsubscribe links.
 {% endinfo %}
 
-For a more detailed discussion of the various fields SendGrid provides, please read _[What is the difference between custom fields, reserved fields, and system fields?]({{root_url}}/Classroom/Basics/Marketing_Campaigns/contact_data.)_
+For a more detailed discussion of the various fields SendGrid provides, please read _[What is the difference between custom fields, reserved fields, and system fields?]({{root_url}}/Classroom/Basics/Marketing_Campaigns/contact_data.html)_
 
 For help understanding the unsubscribe, sender ID, and weblink system tags, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html#-Miscellaneous-Substitution-Tags).
 

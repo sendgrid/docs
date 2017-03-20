@@ -240,7 +240,7 @@ Scheduling
 A/B Test Your Campaigns
 {% endanchor %}
 
-You can easily run A/B tests on your campaigns with up to 6 different versions differentiated either by subject line or email content. To learn more about A/B testing in Marketing Campaigns, [click here]({{root_url}}/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
+You can easily run A/B tests on your campaigns with up to 6 different versions differentiated either by subject line or email content. To learn more about A/B testing in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html).
 
 {% anchor h2 %}
 Campaign Statistics
