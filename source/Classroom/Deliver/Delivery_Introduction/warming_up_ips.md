@@ -10,7 +10,7 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Whether you are new to the email game or are an accomplished vet, you have probably run across the idea of warming up an [IP address]({{root_url}}/Glossary/ip_address.html) to improve delivery performance. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually establish a good [sender reputation]({{root_url}}/Glossary/sender_reputation.html), and is a critical step for new SendGrid users or users who are adding a new dedicated IP address to their account.
+Whether you are new to the email game or are an accomplished vet, you have probably run across the idea of warming up an [IP address]({{root_url}}/Glossary/ip_address.html) to improve delivery performance. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually establish a good [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html), and is a critical step for new SendGrid users or users who are adding a new dedicated IP address to their account.
 
 {% anchor h2 %}
 What does it actually mean to "warm up" an IP address?
@@ -30,7 +30,7 @@ It should be noted that taking this gradual, ramping approach does not guarantee
 Does my IP need to be warmed up? And if so, why?
 {% endanchor %}
 
-If you are sending email from a new or “cold" IP address, ISPs have no means of determining your [sender reputation]({{root_url}}/Glossary/sender_reputation.html). Since this reputation determines whether or not your emails are delivered to your recipients’ inboxes, it is vital to immediately begin establishing a good reputation.
+If you are sending email from a new or “cold" IP address, ISPs have no means of determining your [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html). Since this reputation determines whether or not your emails are delivered to your recipients’ inboxes, it is vital to immediately begin establishing a good reputation.
 
 {% info %}
 Remember that it is much easier to establish a positive reputation as a new sender, than it is to repair an existing reputation.
