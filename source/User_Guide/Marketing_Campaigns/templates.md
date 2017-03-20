@@ -82,10 +82,10 @@ To duplicate a template, simply click **Duplicate** from the action cog menu. Th
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists and Segments</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Campaigns</a>
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Create and Send Your Campaign</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html">Design Editor</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

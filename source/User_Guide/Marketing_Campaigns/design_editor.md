@@ -188,3 +188,13 @@ To insert an image into your template, just click the image thumbnail in the lib
 From here, you can add alt text, change the default height and width, and even set a default alignment for your images.
 
 ![]({{root_url}}/images/design_editor_13.png)
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/templates.html">Marketing Templates</a>
+    </div>
+
+    <div class="col-md-6 text-right">
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a><strong>&nbsp;&rsaquo;</strong>
+    </div>
+</div>

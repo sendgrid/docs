@@ -80,10 +80,10 @@ If you choose to manually pick a winner, (meaning SendGrid is not automatically 
 
 <div class="row">
     <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Create and Send Campaigns</a>
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists & Segmentation</a>
     </div>
 
     <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a><strong>&nbsp;&rsaquo;</strong>
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/notifications.html">Notifications</a><strong>&nbsp;&rsaquo;</strong>
     </div>
 </div>

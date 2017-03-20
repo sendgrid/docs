@@ -311,7 +311,7 @@ You can export a CSV containing the statistics for multiple campaigns. This expo
 
 ![]({{root_url}}/images/campaigns_10.png)
 
-{% anchor h3 %}
+{% anchor h2 %}
 Engagement statistics
 {% endanchor %}
 
@@ -358,3 +358,13 @@ Export a list of engaged recipients
 In addition to creating a dynamic segment based on campaign engagement as described above, you can also export a list of all contacts who have either opened your campaign or have clicked a link within your campaign (up until that moment).
 
 Simply hover over either the "Unique Opens" or "Unique Clicks" stats of the campaign that you're interested in. Then click **View Details**. Finally, click **Export CSV**.
+
+<div class="row">
+    <div class="col-md-6 text-left">
+        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/overview.html">Dashboard</a>
+    </div>
+
+    <div class="col-md-6 text-right">
+         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/templates.html">Marketing Templates</a><strong>&nbsp;&rsaquo;</strong>
+    </div>
+</div>
