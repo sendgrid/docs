@@ -122,6 +122,8 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **Ongoing enhancements:** SendGrid is investing heavily in Marketing Campaigns. Not only will existing functionality be optimized, we’ll continue to add new, valuable capabilities to the solution.
 
+**[Improved security and compliance]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html):** Marketing Campaigns includes several security and compliance improvements. For example, you'll find the [unsubscribe and suppression management tools]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) have been improved to make it easier for your recipients to unsubscribe from unwanted email, and [Marketing Campaign's sender identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) have greatly improved our anti-spoofing protection.
+
 {% anchor h3 %}
 I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?
 {% endanchor %}
