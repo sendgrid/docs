@@ -14,6 +14,7 @@ navigation:
 * [How can I estimate what it will cost to use Marketing Campaigns?](#-How-can-I-estimate-what-it-will-cost-to-use-Marketing-Campaigns)
 * [Why does Marketing Campaigns charge me for storing contacts?](#-Why-does-Marketing-Campaigns-charge-me-for-storing-contacts)
 * [What is the additional value of Marketing Campaigns vs. Legacy Newsletter?](#-What-is-the-additional-value-of-Marketing-Campaigns-vs-Legacy-Newsletter)
+* [I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?](#-Im-using-Marketing-Campaigns-why-am-I-still-being-billed-for-Legacy-Newsletter)
 
 ## [Migrating](#-Migrating)
 
