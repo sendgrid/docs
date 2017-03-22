@@ -42,7 +42,7 @@ You will use this list of names to retrieve the content of those newsletters.
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/list.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
@@ -75,7 +75,7 @@ Now that you have a list of your newsletters, use the following request to retri
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/get.json -F name="Legacy Newsletter" -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
@@ -108,7 +108,7 @@ Take the exported content from the previous API call and import it into Marketin
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/campaigns \
   --header 'accept: application/json' \
@@ -157,7 +157,7 @@ First, collect all of your Legacy Newsletter recipient lists.
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/lists/get.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
@@ -186,7 +186,7 @@ Next, get a list of emails and names that belong to each recipient list retrieve
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/lists/email/get.json -F list="Legacy Newsletter list of recipients" -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
@@ -217,7 +217,7 @@ Use the list names you retrieved in the first step to create new contact lists i
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/contactdb/lists \
   --header 'accept: application/json' \
@@ -251,7 +251,7 @@ Save the `persisted_recipient` values, as these map to the `list_id` in the foll
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/contactdb/recipients \
   --header 'accept: application/json' \
@@ -281,13 +281,13 @@ Add contacts to new lists
 
 Now that you have imported all of your Legacy Newsletter recipients into your default Marketing Campaigns contact list, you can assign different contacts to their respective lists.
 
-To ensure that each contact is added to the correct list, use the persisted_recipient value from the previous call. This value maps directly to the list_id used to identify contact lists in Marketing Campaigns.
+To ensure that each contact is added to the correct list, use the `persisted_recipient` value from the previous call. This value maps directly to the `list_id` used to identify contact lists in Marketing Campaigns.
 
 {% anchor h4 %}
 Request
 {% endanchor %}
 
-{% codeblock lang:curl %}
+{% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/contactdb/lists/1/recipients \
   --header 'accept: application/json' \
@@ -299,3 +299,7 @@ curl --request POST \
 {% anchor h4 %}
 Response
 {% endanchor %}
+
+{% codeblock lang:bash %}
+HTTP/1.1 201
+{% endcodeblock %}
