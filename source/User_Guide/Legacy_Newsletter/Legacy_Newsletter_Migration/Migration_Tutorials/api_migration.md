@@ -142,7 +142,7 @@ Response
 Now, you can use the [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Update-a-Campaign-PATCH) or the [SendGrid UI](https://sendgrid.com/marketing_campaigns/ui/campaigns) to make further changes to your campaign.
 
 {% anchor h2 %}
-Migrate Recipient Lists
+Migrate Your Legacy Newsletter Recipient Lists
 {% endanchor %}
 
 Before attempting to migrate your recipient lists, please review our [Migrating Recipient Lists tutorial]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html). Then, using our API as described below, you can automate a portion of the process.
