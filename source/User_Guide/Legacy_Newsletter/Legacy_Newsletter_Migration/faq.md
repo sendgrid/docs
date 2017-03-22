@@ -24,6 +24,7 @@ navigation:
 * [How do I move my contacts from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-contacts-from-Legacy-Newsletter-to-Marketing-Campaigns)
 * [How do I move my templates from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-templates-from-Legacy-Newsletter-to-Marketing-Campaigns)
 * [How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-transfer-my-unsubscribes-from-Legacy-Newsletter-to-Marketing-Campaigns)
+* [How do I download and save my historical stats?](#-How-do-I-download-and-save-my-historical-stats)
 
 ## [Contact Management](#-Contact-Management)
 
@@ -186,6 +187,12 @@ How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
 View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
+
+{% anchor h3 %}
+How do I download and save my historical stats?
+{% endanchor %}
+
+View our [how-to video and documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html) for step-by-step instructions to download your historical stats/data.
 
 {% anchor h3 %}
 How do I migrate my API integration with Legacy Newsletter to Marketing Campagins?
