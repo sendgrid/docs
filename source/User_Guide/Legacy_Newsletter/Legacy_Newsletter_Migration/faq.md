@@ -19,7 +19,7 @@ navigation:
 
 * [Can I try Marketing Campaigns with test sends before deciding whether to migrate?](#-Can-I-try-Marketing-Campaigns-with-test-sends-before-deciding-whether-to-migrate)
 * [Will SendGrid automatically migrate my account to Marketing Campaigns?](#-Will-SendGrid-automatically-migrate-my-account-to-Marketing-Campaigns)
-* [What do I need to do in order to migrate to Marketing Campaigns?](#-What-do-I-need-to-do-in-order-to-migrate-to-Marketing-Campaigns)
+* [What do I need to prepare before to migrating to Marketing Campaigns?](#-What-do-I-need-to-prepare-before-migrating-to-Marketing-Campaigns)
 * [How do I move my contacts from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-contacts-from-Legacy-Newsletter-to-Marketing-Campaigns)
 * [How do I move my templates from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-move-my-templates-from-Legacy-Newsletter-to-Marketing-Campaigns)
 * [How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?](#-How-do-I-transfer-my-unsubscribes-from-Legacy-Newsletter-to-Marketing-Campaigns)
@@ -76,6 +76,10 @@ From there, each email marketing solution charges a premium for sending through 
 
 </table>
 
+{% warning %}
+We will be offering Legacy Newsletter customers who migrate to Marketing Campaigns the option to pay $0.25/1,000 emails sent. This is currently in development with expected availability of June 1, 2017.
+{% endwarning %}
+
 {% anchor h3 %}
 How can I estimate what it will cost to use Marketing Campaigns?
 {% endanchor %}
@@ -92,7 +96,9 @@ Charging by contacts stored in Marketing Campaigns as opposed to an additional f
 
 **Send more frequently to engaged recipients:** If you have recipients who are highly engaged, test sending to them more often. With the Marketing Campaigns pricing model, you’re only paying for storing that individual contact, regardless of how often you send to them.
 
-_(Note: Emails sent through either Legacy Newsletter or Marketing Campaigns count towards your base plan. Here we’re focusing on the added cost of sending through our email marketing solutions.)_
+{% info %}
+Emails sent through either Legacy Newsletter or Marketing Campaigns count towards your base plan. Here we’re focusing on the added cost of sending through our email marketing solutions.
+{% endinfo %}
 
 A final note: The ability to segment your contacts into meaningful recipient groups is a core benefit of Marketing Campaigns (and a key enhancement over Legacy Newsletter). Segmentation requires Marketing Campaigns to store your contacts, and that data storage is the expense that drives our pricing.
 
@@ -116,6 +122,14 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **Ongoing enhancements:** SendGrid is investing heavily in Marketing Campaigns. Not only will existing functionality be optimized, we’ll continue to add new, valuable capabilities to the solution.
 
+{% anchor h3 %}
+I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?
+{% endanchor %}
+
+Your final Legacy Newsletter bill will be generated on the first calendar day of the month following the last month you send via Legacy Newsletter. If you use both Legacy Newsletter and Marketing Campaigns, you’ll see two distinct line items on your invoices.
+
+For example, if you sent your final Legacy Newsletter campaign on June 15, and began using Marketing Campaigns at any point within June, you’ll see both items on your July invoice.
+
 {% anchor h2 %}
 Migrating
 {% endanchor %}
@@ -124,7 +138,9 @@ Migrating
 Can I try Marketing Campaigns with test sends before deciding whether to migrate?
 {% endanchor %}
 
-Yes. We encourage you to give Marketing Campaigns a try at any time. To make this even more approachable, you can store up to 2,000 contacts for free.
+Yes. We encourage you to [give Marketing Campaigns a try at any time](https://sendgrid.com/marketing_campaigns/ui/tour). To make this even more approachable, you can store up to 2,000 contacts for free.
+
+To get started, simply click your username in the upper right corner from the Legacy Newsletter dashboard and click **Account Overview**. Select **Marketing** from the left hand navigation menu and click **Tour** under Marketing Campaigns.
 
 You can also choose to send using both Legacy Newsletter and Marketing Campaigns at the same time.
 
@@ -135,7 +151,7 @@ Will SendGrid automatically migrate my account to Marketing Campaigns?
 No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simple. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
 
 {% anchor h3 %}
-What do I need to do in order to migrate to Marketing Campaigns?
+What do I need to prepare before migrating to Marketing Campaigns?
 {% endanchor %}
 
 First, review this [Migration Checklist]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).
