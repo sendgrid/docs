@@ -188,7 +188,7 @@ View our [unsubscribe migration how-to video or documentation page]({{root_url}}
 How do I migrate my API integration with Legacy Newsletter to Marketing Campagins?
 {% endanchor %}
 
-Please refer to our [API comparison]() to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.md).
+Please refer to our [API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html) to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
 
 {% anchor h2 %}
 Contact Management
