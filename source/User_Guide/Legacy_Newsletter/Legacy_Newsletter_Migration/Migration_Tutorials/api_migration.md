@@ -15,16 +15,16 @@ Before attempting to migrate your content, please review our [Migration Toolkit]
 Table of Contents
 {% endanchor %}
 
-* Migrate Your Legacy Newsletter Content
-    * Retrieve all newsletters
-    * Retrieve newsletter content
-    * Import newsletter content into Marketing Campaigns
-* Migrate Your Legacy Newsletter Recipient Lists
-    * Retrieve all recipient lists
-    * Retrieve recipient names and email addresses
-    * Create Marketing Campaigns contact lists
-    * Import Legacy Newsletter recipients into Marketing Campaigns
-    * Add contacts to new lists
+* [Migrate Your Legacy Newsletter Content](#-Migrate-Your-Legacy-Newsletter-Content)
+    * [Retrieve all newsletters](#-Retrieve-all-newsletters)
+    * [Retrieve newsletter content](#-Retrieve-newsletter-content)
+    * [Import newsletter content into Marketing Campaigns](#-Import-newsletter-content-into-Marketing-Campaigns)
+* [Migrate Your Legacy Newsletter Recipient Lists](#-Migrate-Your-Legacy-Newsletter-Recipient-Lists)
+    * [Retrieve all recipient lists](#-Retrieve-all-recipient-lists)
+    * [Retrieve recipient names and email addresses](#-Retrieve-recipient-names-and-email-addresses)
+    * [Create Marketing Campaigns contact lists](#-Create-Marketing-Campaigns-contact-lists)
+    * [Import Legacy Newsletter recipients into Marketing Campaigns](#-Import-Legacy-Newsletter-recipients-into-Marketing-Campaigns)
+    * [Add contacts to new lists](#-Add-contacts-to-new-lists)
 
 {% anchor h2 %}
 Migrate Your Legacy Newsletter Content
