@@ -164,25 +164,31 @@ While your migration plan will depend on your unique scenario, the migration che
 4. Are there images you have stored in Legacy Newsletter that you wish to use with Marketing Campaigns?
 5. Are there campaign statistics you want to download for future reference or analysis?
 6. Do you want to spend time testing campaign sends in Marketing Campaigns before you fully migrate?
-
+7. Do you have API integrations you need to migrate?
 
 {% anchor h3 %}
 How do I move my contacts from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our contact migration how-to video or documentation page for step-by-step instructions.
+View our contact migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html) for step-by-step instructions.
 
 {% anchor h3 %}
 How do I move my templates from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our template migration how-to video or documentation page for step-by-step instructions.
+View our template migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html) for step-by-step instructions.
 
 {% anchor h3 %}
 How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
 View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
+
+{% anchor h3 %}
+How do I migrate my API integration with Legacy Newsletter to Marketing Campagins?
+{% endanchor %}
+
+Please refer to our [API comparison]() to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.md).
 
 {% anchor h2 %}
 Contact Management
