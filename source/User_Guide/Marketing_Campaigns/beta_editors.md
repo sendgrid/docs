@@ -312,7 +312,7 @@ Incorrect:
 
 {% codeblock lang:html %}
 style="padding-top: 50px"
-{% endanchor %}
+{% endcodeblock %}
 
 {% anchor h4 %}
 Correct
@@ -355,7 +355,7 @@ To add spacing using this module, simply adjust the padding in the <td> tag. For
     </td>
   </tr>
 </table>
-{% endanchor %}
+{% endcodeblock %}
 
 {% anchor h4 %}
 Text
