@@ -104,4 +104,97 @@ During the beta, you will always be able to open your original campaign in the o
 Duplicating a campaign built in the beta editor
 {% endanchor %}
 
-If the campaign you are duplicating has either the label _Code Editor_ or _Design Editor_, then your duplicate will be opened in the indicated editor. 
+If the campaign you are duplicating has either the label _Code Editor_ or _Design Editor_, then your duplicate will be opened in the indicated editor.
+
+{% anchor h2 %}
+Creating new templates
+{% endanchor %}
+
+There are several ways to create a new Marketing Campaigns template. Depending on how you create your template, you may be presented with a choice of editor experiences or you may be channeled into the optimal editor for your template.
+
+Following is an explanation of how you can create a template, and which editor is available for each option.
+
+{% anchor h3 %}
+Create a new template
+{% endanchor %}
+
+To create a new template, navigate to **Marketing Campaigns** in the left hand navigation menu and select **Templates**. Click **Create New Template**.
+
+{% anchor h4 %}
+Select an editor
+{% endanchor %}
+
+When creating a brand new template, you may choose between either the design editor or the code editor.
+
+{% anchor h3 %}
+Duplicate a SendGrid template
+{% endanchor %}
+
+You can easily duplicate a pre-built template provided by SendGrid. Navigate to the **Marketing Templates** page and click **SendGrid Templates** under "Filter By".
+
+Choose your template, click the action cog, and select **Duplicate**. Your duplicate will be automatically opened in the new design editor.
+
+{% anchor h3 %}
+Duplicate a custom template
+{% endanchor %}
+
+If you would like to duplicate one of your custom templates, simply navigate to the **Marketing Templates** page, find your custom template, click the action cog and select Duplicate.
+
+If the template you are duplicating has the label **Old Editor**, then it will automatically be opened in the _old editor_. However, you will see a banner explaining that you are using the old editor. Click the link in this banner to move your template to the beta editor.
+
+After clicking the beta link, you will have the option of opening your template in either the beta design editor or the beta code editor.
+
+If the template has either the label **Code Editor** or **Design Editor**, your duplicate will be opened in the corresponding editor.
+
+{% anchor h3 %}
+Create a template from a campaign
+{% endanchor %}
+
+To create a new template from an existing campaign, navigate to the **Campaigns page**. Find the campaign you would like to use, click the action cog, and select **Create Template**. Campaigns labeled **Old Editor** will allow you to choose between opening the template in the code or design editors.
+
+Campaigns labeled **Code Editor** or **Design Editor** will open the template in the corresponding editor.
+
+{% anchor h2 %}
+Editing Existing Campaigns or Templates
+{% endanchor %}
+
+{% anchor h3 %}
+Campaigns
+{% endanchor %}
+
+To edit an existing campaign, navigate to the **Campaigns** page and find the campaign that you want to edit. Click the campaign title, or click the **Action Cog** and select **Edit**.
+
+Note: you can only edit campaigns that are in "draft" status. Scheduled or sent campaigns cannot be edited. [To edit a scheduled campaign, simply unschedule it to return to draft status.]({{root_url}}/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html#-How-do-I-edit-a-scheduled-campaign)
+
+If the existing campaign you selected includes the label **old campaign**, it will automatically be opened in the old campaign editor. You will see a banner explaining that you are using the old editor. To move your campaign to the beta editor, click **Switch to Beta Editor**.
+
+If you switch to the beta editor, SendGrid will create a duplicate of this campaign and will open the duplicate in the beta editor.
+
+You will still be able to return to the old editor by opening your original campaign in the old editor—it should have the label **Old Editor**—but you will be unable to revert the duplicate.
+
+{% anchor h2 %}
+Design Editor
+{% endanchor %}
+
+The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
+
+{% anchor h3 %}
+Drag & drop modules
+{% endanchor %}
+
+<table class="table">
+
+<tr><th>Module</th><th>Description</th><th>Unique Style Options</th></tr>
+<tr><td>Image</td><td>Can contain a single line</td><td>Image background, image margin, link url, alt text, alignment, responsive, height, width</td></tr>
+<tr><td>Image & Text
+<i>Coming soon!</i></td><td>This is a columns module with two columns - each can contain either an image or some text.</br>
+<i>While the pre-built Image & Text module is not yet released, you may always build your own by adding two column modules--one containing an image module and the other containing a text module.</i></td><td>Image, image position, image background, image margin, text background, text margin</td></tr>
+<tr><td>Text</td><td>Can contain text, tables, and images.</td><td>Background color, padding, line height</td></tr>
+<tr><td>Code</td><td>This is an "anything goes" module where you can enter your own custom HTML.</td><td>Module styles are not available for code modules.</td></tr>
+<tr><td>Columns</td><td>This module contains multiple drop zones for other non-column modules.</td><td>container background, container padding, cell padding, columns</td></tr>
+<tr><td>Button</td><td>A clickable button that links to a URL.</td><td>button color, border color, font color, width, height, padding, border radius, font size, button text, button URL, alignment,container background, container padding</td></tr>
+<tr><td>Divider</td><td>A visual divider, or horizontal rule, that can be placed between modules.</td><td>Background color, line color, height, padding</td></tr>
+<tr><td>Spacer</td><td>Allows you to insert spacing between other modules.</td><td>Background color, spacing (padding-bottom)</td></tr>
+<tr><td>Social</td><td>Icons that allow for social media integration within your campaigns.</br>
+<b>You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</b></td><td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td></tr>
+</table>
