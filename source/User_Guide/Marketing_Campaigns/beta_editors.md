@@ -14,25 +14,24 @@ seo:
 Table of Contents
 {% endanchor %}
 
-* [What is the new campaign and template editing experience?]()
-* [How do I participate in the beta?]()
-* [Creating new campaigns]()
-  * [Create a campaign from a SendGrid template]()
-  * [Editing a SendGrid template in the code editor]()
-* [Creating new templates]()
-  * [Create a new template]()
-  * [Duplicate a SendGrid template]()
-  * [Duplicate a custom template]()
-  * [Create a template from a campaign]()
-* [Editing existing campaigns or templates]()
-  * [Campaigns]()
-  * [Templates]()
-* [Design Editor]()
-* [Editing module HTML]()
-* [Using custom HTML]()
-* [Previewing your campaign]()
-* [Code editor]()
-* [Frequently asked questions]()
+* [What is the new campaign and template editing experience?](#-What-is-the-new-campaign-and-template-editing-experience)
+* [Creating new campaigns](#-Creating-New-Campaigns)
+  * [Create a new campaign](#-Create-a-netnew-campaign)
+  * [Duplciate a campaign](#-Duplicate-a-campaign)
+* [Creating new templates](#-Creating-new-templates)
+  * [Create a new template](#-Create-a-new-template)
+  * [Duplicate a SendGrid template](#-Duplicate-a-SendGrid-template)
+  * [Duplicate a custom template](#-Duplicate-a-custom-template)
+  * [Create a template from a campaign](#-Create-a-template-from-a-campaign)
+* [Editing existing campaigns or templates](#-Editing-Existing-Campaigns-or-Templates)
+  * [Campaigns](#-Campaigns)
+  * [Templates](#-Templates)
+* [Design Editor](#-Design-Editor)
+* [Editing module HTML](#-Editing-Module-HTML)
+* [Previewing your campaign](#-Previewing-Your-Campaign)
+* [Using Custom HTML](#-Using-Custom-HTML)
+* [Code Editor](#-Code-Editor)
+* [Frequently Asked Questions](#-Frequently-Asked-Questions)
 
 {% anchor h2 %}
 What is the new campaign and template editing experience?
@@ -172,6 +171,22 @@ If you switch to the beta editor, SendGrid will create a duplicate of this campa
 
 You will still be able to return to the old editor by opening your original campaign in the old editor—it should have the label **Old Editor**—but you will be unable to revert the duplicate.
 
+{% anchor h3 %}
+Templates
+{% endanchor %}
+
+To edit a template, navigate to the **Marketing Templates** page and find the template you want to edit.
+
+Hover over the template and click “Edit” or click the **Action Cog** and select **Edit**.
+
+You can only edit custom templates, or templates that you have created yourself or duplicated from a SendGrid pre-built template.
+
+As with campaigns, you will be taken to the editor originally used to create the campaign. You cannot switch between the design and code editors after the template has been created.
+
+If you have selected a template with the label _old editor_, then you will be able to choose to switch to the beta editor. If you do so, you’ll have the option to use the code editor or the design editor. Once you switch, SendGrid will create a duplicate of this template and will open that duplicate in the beta editor.
+
+You can return to the old editor by opening the original template—it will still have the _Old Editor_ label—however you will not be able to revert the duplicated template to the old editor.
+
 {% anchor h2 %}
 Design Editor
 {% endanchor %}
@@ -281,13 +296,13 @@ Following is an example of how you should structure and organize your custom HTM
 {% codeblock lang:html %}
 <div role=”modules-container”>
   <table role=”module” data-type=”button”>
-    [ module content ]
+    [module content]
   </table>
   <table role=”module” data-type=”text”>
-    [ module content ]
+    [module content]
   </table>
   <table role=”module” data-type=”image”>
-    [ module content ]
+    [module content]
   </table>
 </div>
 {% endcodeblock %}
@@ -333,7 +348,7 @@ Button
       <table class="wrapper-mobile">
         <tr>
           <td [styles go here too] bgcolor=[some color]>
-            [MODULE CONTENT]
+            [module content]
           </td>
         </tr>
       </table>
@@ -365,7 +380,7 @@ Text
 <table class="module" role="module" data-type="text">
   <tr>
     <td [styles go here] bgcolor=[some color]>
-      [MODULE CONTENT]
+      [module content]
     </td>
   </tr>
 </table>
@@ -375,13 +390,13 @@ Text
 Image
 {% endanchor %}
 
-Data attributes can be inserted directly in the <img> tag.
+Data attributes can be inserted directly in the `<img>` tag.
 
 {% codeblock lang:html %}
 <table class="wrapper" role="module" data-type="image">
   <tr>
     <td [styles go here] align=['left' or 'right']>
-      [MODULE CONTENT]
+      [module content]
     </td>
   </tr>
 </table>
@@ -398,10 +413,10 @@ Columns
       <table>
         <tr>
           <td class="templateColumnContainer column-drop-area">
-          [MODULE CONTENT]
+          [module content]
           </td>
           <td class="templateColumnContainer column-drop-area">
-          [ANOTHER MODULE CONTENT]
+          [module content]
           </td>
         </tr>
       </table>
@@ -438,7 +453,7 @@ This is essentially an "anything goes" module where you can paste any custom HTM
 <table class="module" role="module" data-type="code">
   <tr>
     <td>
-      [MODULE CONTENT]
+      [module content]
     </td>
   </tr>
 </table>
@@ -460,7 +475,7 @@ Once you have selected your desired icons, you can adjust the size, color, and b
     <table>
      <tbody>
       <tr>
-       [MODULE CONTENT]           
+       [module content]           
       </tr>
      </tbody>
     </table>
