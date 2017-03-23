@@ -66,17 +66,17 @@ Legacy Newsletter
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/category/create.json -F category="Legacy Newsletter Category" -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 {
   "message": "success"
 }
-```
+{% endcodeblock %}
 
 {% anchor h4 %}
 Marketing Campaigns
@@ -86,18 +86,18 @@ With marketing campaigns, categories are created when you create your campaign. 
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request POST \
 --url https://api.sendgrid.com/v3/campaigns \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json' \
 --data '{"title":"Legacy Newsletter","subject":"subject from Legacy Newsletter","html_content":"html content from Legacy Newsletter", "plain_content":"text content from Legacy Newsletter", "categories": ["Legacy Newsletter Category"]}'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 {
   "id": UNIQUE_ID,
   "title": "Legacy Newsletter",
@@ -115,7 +115,7 @@ curl --request POST \
   "custom_unsubscribe_url": "",
   "status": "Draft"
 }
-```
+{% endcodeblock %}
 
 {% anchor h3 %}
 Assign a Category to an existing Marketing Email
@@ -139,18 +139,18 @@ Legacy Newsletter
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/category/list.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 [
   { "category": "CATEGORY1" },
   { "category": "CATEGORY2" }
 ]
-```
+{% endcodeblock %}
 
 {% anchor h4 %}
 Marketing Campaigns
@@ -160,22 +160,22 @@ With Marketing Campaigns, categories are created when you create your campaign. 
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/categories \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% endcodeblock lang:json %}
 [
   {"category": "CATEGORY1"},
   {"category": "CATEGORY2"}
 ]
-```
+{% endcodeblock %}
 
 {% anchor h2 %}
 Emails
@@ -195,17 +195,17 @@ Legacy Newsletter
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"example@example.com", "name":"Example User"}'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 {
   "inserted": 1
 }
-```
+{% endcodeblock %}
 
 {% anchor h4 %}
 Marketing Campaigns
@@ -217,17 +217,17 @@ First, we get the list id:
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/lists \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% endcodeblock lang:json %}
 HTTP/1.1 200
 {
   "lists": [
@@ -238,23 +238,23 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Then, we get the recipient id (alternatively, you can get the recipient id by base64 encoding the email address):
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/recipients \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% endcodeblock lang:json %}
 HTTP/1.1 200
 {
   "recipients": [
@@ -279,25 +279,25 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Now we can add the recipient to the desired list:
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request POST \
 --url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients/{recipient_id} \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Request**
 
-```json
+{% endcodeblock lang:json %}
 HTTP/1.1 201
-```
+{% endcodeblock %}
 
 {% anchor h3 %}
 Add an email recipient with multiple data fields
@@ -309,17 +309,17 @@ Legacy Newsletter
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"example@example.com", "name":"Example User", "city":"Denver", "country":"USA"}'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% endcodeblock lang:json %}
 {
   "inserted": 1
 }
-```
+{% endcodeblock %}
 
 {% anchor h4 %}
 Marketing Campaigns
@@ -329,17 +329,17 @@ First, we get the list id:
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/lists \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "lists": [
@@ -350,23 +350,23 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Then, we get the recipient id (alternatively, you can get the recipient id by base64 encoding the email address):
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/recipients \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "recipients": [
@@ -391,25 +391,25 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Now we can add the recipient to the desired list:
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request POST \
 --url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients/{recipient_id} \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 201
-```
+{% endcodeblock %}
 
 {% anchor h3 %}
 Add multiple email recipients to a list
@@ -421,17 +421,17 @@ Legacy Newsletter
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data[]={"email":"example@example.com", "name":"Example User"}' -F 'data[]={"email":"example2@example.com", "name":"Example User2"}'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 {
   "inserted": 2
 }
-```
+{% endcodeblock %}
 
 {% anchor h4 %}
 Marketing Campaigns
@@ -441,17 +441,17 @@ First, we get the list id:
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/lists \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "lists": [
@@ -462,13 +462,13 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Then, we get the recipient id (alternatively, you can get the recipient id by base64 encoding the email address):
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request GET \
 --url https://api.sendgrid.com/v3/contactdb/recipients \
 --header 'accept: application/json' \
@@ -528,7 +528,7 @@ Now we can add the recipient to the desired list.
 
 **Request**
 
-```bash
+{% codeblock lang:bash %}
 curl --request POST \
 --url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients \
 --header 'accept: application/json' \
