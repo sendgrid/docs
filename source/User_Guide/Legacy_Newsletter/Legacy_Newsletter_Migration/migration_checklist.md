@@ -76,7 +76,3 @@ If you are using the [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/
 &nbsp; &#x274f; [Migrate your Legacy Newsletter Content to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
 
 &nbsp; &#x274f; [Migrate your Legacy Newsletter Recipient Lists to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
-
-&nbsp; &#x274f; [Migrate your Legacy Newsletter Unsubscribes to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
-
-&nbsp; &#x274f; [Download your Legacy Newsletter Statistics via the API.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)

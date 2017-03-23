@@ -112,7 +112,4 @@ Once you have configured your new fields, click **Save** to complete the migrati
 
 You will receive an email confirmation once SendGrid has finished processing your new contacts and they are ready for use.
 
-If you have development resources and would like to use our API to migrate your Legacy Newsletter lists into Marketing Campaigns, please visit our API Reference:
-
-* [Legacy Newsletter Lists API]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html)
-* [Marketing Campaigns Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
+[Click here for a step-by-step tutorial on how to migrate your recipient lists from Legacy Newsletter to Marketing Campaigns using the API]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
