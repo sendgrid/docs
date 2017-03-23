@@ -10,6 +10,10 @@ seo:
   description: With SendGrid Marketing Campaign’s new editing experience you now have complete control over your editing environment--you can choose between an optimized visual design editor and a pure HTML code editor.
 ---
 
+{% warning %}
+The new Marketing Campaigns code and design editors are currently in beta.
+{% endwarning %}
+
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}
@@ -82,6 +86,8 @@ Select an editor
 {% endanchor %}
 
 Next, you can choose between the **design editor** and the **code editor**.
+
+![Select Editor]({{root_url}}/images/select_editor.png)
 
 {% anchor h3 %}
 Duplicate a campaign
@@ -220,7 +226,11 @@ Editing Module HTML
 
 You can edit the HTML for any individual module by selecting that module within the design editor and clicking the **< >** icon. This opens a modal window in which you can modify the module's HTML.
 
+![Edit module HTML]({{root_url}}/images/edit_module_html.png)
+
 You can then make any non-structural changes to the content of the module such as updating text, styling, link sources, etc. However, if you do add or remove any HTML tags and click **Update**, you will see the message "Convert to a Code Module?." If you would like to keep your structural code changes, you will need to convert the module to a **code module**.
+
+![Convert to code module]({{root_url}}/images/convert_to_code_module.png)
 
 To return to the design editor after editing the HTML of a module, simply click **Update** to save your changes or click **Cancel** to discard any modifications.
 
@@ -263,6 +273,8 @@ Import HTML
 {% endanchor %}
 
 To import your own custom HTML, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** drop down menu. Expand the option titled **Import/Export**. Click the Import button.
+
+![Import HTML]({{root_url}}/images/import_html.png)
 
 This will open a window where you can paste in your own HTML that you would like to use within the design editor.
 
@@ -503,6 +515,8 @@ The HTML `<head>` element is where you can define any metadata you would like to
 
 To edit the HTML head of your campaign or template, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** menu. Expand the option titled **Edit HTML Head**.
 
+![Edit HTML head]({{root_url}}/images/edit_html_head.png)
+
 Click the **Edit** button to begin editing your HTML head. You will see a modal window appear where you can insert your own custom HTML. Once you've finished making your changes, click the **Update** button.
 
 {% anchor h4 %}
@@ -573,6 +587,8 @@ Uploading Images
 {% endanchor %}
 
 To add images to your campaign or template when using the code editor, select the **Images** tab in the left hand toolbar and click **Manage Image Library**. This will open a modal window where you can upload images to your image library.
+
+![Manage image library]({{root_url}}/images/manage_image_library.png)
 
 To insert an image into your campaign or template, select the image you want from your image library. You will be taken to the Image Details tab. Copy the URL under the **Image Source URL** field by clicking **Copy URL**.
 
