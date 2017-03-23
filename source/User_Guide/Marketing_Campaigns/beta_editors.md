@@ -614,9 +614,7 @@ Frequently Asked Questions
 How do I opt out of the beta?
 {% endanchor %}
 
-The new design and code editors will always be available to you, and there is no way to remove these options from appearing when creating or opening campaigns and templates.
-
-However, for the duration of the beta you will always be able to open your old campaigns and templates in the original editor, so long as they still have the Old Editor tag.
+For the duration of our closed beta, you may opt out of the new editing experience at any time by [contacting support](https://support.sendgrid.com/hc/en-us).
 
 {% info %}
 When you open one of your old campaigns or templates in a beta editor, SendGrid creates a duplicate of the original campaign/template which is opened in the beta editor. You may always open the original campaign or template in the old editor.
