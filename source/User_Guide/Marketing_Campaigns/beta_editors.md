@@ -20,8 +20,8 @@ Table of Contents
 
 * [What is the new campaign and template editing experience?](#-What-is-the-new-campaign-and-template-editing-experience)
 * [Creating new campaigns](#-Creating-New-Campaigns)
-  * [Create a new campaign](#-Create-a-netnew-campaign)
-  * [Duplciate a campaign](#-Duplicate-a-campaign)
+  * [Create a new campaign](#-Create-a-new-campaign)
+  * [Duplicate a campaign](#-Duplicate-a-campaign)
 * [Creating new templates](#-Creating-new-templates)
   * [Create a new template](#-Create-a-new-template)
   * [Duplicate a SendGrid template](#-Duplicate-a-SendGrid-template)
@@ -70,7 +70,7 @@ There are two ways to create a new campaign using the beta editor: create a net-
 Following is an explanation of how to create a campaign, and which editor will be available to you.
 
 {% anchor h3 %}
-Create a net-new campaign
+Create a new campaign
 {% endanchor %}
 
 To create a new campaign, navigate to **Marketing Campaigns** in the left hand navigation menu and click **Campaigns**. Click **Create Campaign** in the upper right corner.
@@ -272,7 +272,7 @@ You can add your own drag & drop HTML to a template in the design editor using t
 Import HTML
 {% endanchor %}
 
-To import your own custom HTML, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** drop down menu. Expand the option titled **Import/Export**. Click the Import button.
+To import your own custom HTML, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** drop down menu. Expand the option titled **Import/Export**. Click the **Import** button.
 
 ![Import HTML]({{root_url}}/images/import_html.png)
 
@@ -513,11 +513,11 @@ Edit HTML Head
 
 The HTML `<head>` element is where you can define any metadata you would like to include with your campaign or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
 
-To edit the HTML head of your campaign or template, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** menu. Expand the option titled **Edit HTML Head**.
+To edit the HTML head of your campaign or template, navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** menu. Expand the option titled **Edit HTML Head**. Click the **Edit** button to begin editing your HTML head.
 
 ![Edit HTML head]({{root_url}}/images/edit_html_head.png)
 
-Click the **Edit** button to begin editing your HTML head. You will see a modal window appear where you can insert your own custom HTML. Once you've finished making your changes, click the **Update** button.
+You will see a modal window appear where you can insert your own custom HTML. Once you've finished making your changes, click the **Update** button.
 
 {% anchor h4 %}
 Example: Adding custom fonts using the HTML head
