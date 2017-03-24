@@ -66,3 +66,13 @@ Migration to Marketing Campaigns is not automatic. We’ve built a [robust toolk
 &nbsp; &#x274f; Review the [side-by-side comparison of statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html) in Legacy Newsletter vs. Marketing Campaigns.
 
 &nbsp; &#x274f; Review the [Archiving Legacy Newsletter Statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html) article.
+
+{% anchor h3 %}
+6. Do you have any API integrations that you need to migrate?
+{% endanchor %}
+
+If you are using the [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) then we recommend that you migrate your integration to our [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html), the email marketing component of our v3 RESTful Web API. For help with migrating your integration, [please refer our API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html).
+
+&nbsp; &#x274f; [Migrate your Legacy Newsletter Content to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
+
+&nbsp; &#x274f; [Migrate your Legacy Newsletter Recipient Lists to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
