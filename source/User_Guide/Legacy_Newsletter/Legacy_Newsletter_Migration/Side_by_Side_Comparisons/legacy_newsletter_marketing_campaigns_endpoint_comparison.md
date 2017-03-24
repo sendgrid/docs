@@ -170,7 +170,7 @@ curl --request GET \
 
 **Response**
 
-{% endcodeblock lang:json %}
+{% codeblock lang:json %}
 [
   {"category": "CATEGORY1"},
   {"category": "CATEGORY2"}
@@ -227,7 +227,7 @@ curl --request GET \
 
 **Response**
 
-{% endcodeblock lang:json %}
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "lists": [
@@ -254,7 +254,7 @@ curl --request GET \
 
 **Response**
 
-{% endcodeblock lang:json %}
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "recipients": [
@@ -295,7 +295,7 @@ curl --request POST \
 
 **Request**
 
-{% endcodeblock lang:json %}
+{% codeblock lang:json %}
 HTTP/1.1 201
 {% endcodeblock %}
 
@@ -315,7 +315,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api
 
 **Response**
 
-{% endcodeblock lang:json %}
+{% codeblock lang:json %}
 {
   "inserted": 1
 }
@@ -474,11 +474,11 @@ curl --request GET \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 200
 {
   "recipients": [
@@ -522,7 +522,7 @@ HTTP/1.1 200
     }
   ]
 }
-```
+{% endcodeblock %}
 
 Now we can add the recipient to the desired list.
 
@@ -535,13 +535,13 @@ curl --request POST \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json' \
 --data '["YUBh","YUBhx"]'
-```
+{% endcodeblock %}
 
 **Response**
 
-```json
+{% codeblock lang:json %}
 HTTP/1.1 201
-```
+{% endcodeblock %}
 
 {% anchor h2 %}
 Lists
