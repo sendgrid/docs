@@ -225,7 +225,6 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-HTTP/1.1 201
 {
   "id": 1,
   "name": " list of recipients",
@@ -259,7 +258,6 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-HTTP/1.1 201
 {
   "new_count": 2,
   "persisted_recipients": [
