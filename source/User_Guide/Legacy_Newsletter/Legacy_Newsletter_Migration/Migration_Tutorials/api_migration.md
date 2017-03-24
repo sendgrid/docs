@@ -51,18 +51,16 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-{
-  [
-    {
-      "name": "Legacy Newsletter",
-      "newsletter_id": 560308
-    },
-    {
-      "name": "Legacy Newsletter Test",
-      "newsletter_id": 560869
-    }
-  ]
-}
+[
+  {
+    "name": "Legacy Newsletter",
+    "newsletter_id": 560308
+  },
+  {
+    "name": "Legacy Newsletter Test",
+    "newsletter_id": 560869
+  }
+]
 {% endcodeblock %}
 
 {% anchor h3 %}
@@ -88,7 +86,7 @@ Response
   "can_edit": false,
   "content_preview": 0,
   "date_schedule": null,
-  "subject": "subject from Legacy Newsletter"
+  "subject": "subject from Legacy Newsletter",
   "text": "text content from Legacy Newsletter",
   "html": "html content from Legacy Newsletter",
   "timezone_id": 16,
@@ -123,7 +121,7 @@ Response
 
 {% codeblock lang:json %}
 {
-  "id": UNIQUE_ID,
+  "id": "UNIQUE_ID",
   "title": "Name of newsletter",
   "ip_pool": "",
   "categories": [],
@@ -166,14 +164,12 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-{
-  [
-    {
-      "id": 1,
-      "list": "Legacy Newsletter list of recipients"
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "list": "Legacy Newsletter list of recipients"
+  }
+]
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -195,14 +191,12 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-{
-  [
-    {
-      "email": "dx@sendgrid.com",
-      "name": "SendGrid DX Team"
-    }
-  ]
-}
+[
+  {
+    "email": "dx@sendgrid.com",
+    "name": "SendGrid DX Team"
+  }
+]
 {% endcodeblock %}
 
 {% anchor h3 %}
