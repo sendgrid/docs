@@ -10,4 +10,4 @@ layout: iframe
 navigation:
   show: true
 ---
-<!--<iframe frameborder="0" src="https://sendgrid.api-docs.io/v3.0"></iframe>-->
+<iframe frameborder="0" src="https://sendgrid.api-docs.io/v3.0"></iframe>
