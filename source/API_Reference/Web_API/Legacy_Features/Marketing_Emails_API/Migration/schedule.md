@@ -139,7 +139,115 @@ First, we need to get the campaign_id:
     Retrieve the scheduled delivery time for an existing Marketing Email
     {% endanchor %}
 
-There is no equivalent API call in Marketing Campaigns. You may retrieve the scheduled delivery time for an existing Marketing Email directly in the SendGrid UI. First, navigate to your Campaigns page, then you will find the scheduled date and time under the relevant Campaign name to the right.
+
+{% anchor h4 %}
+Legacy Newsletter
+{% endanchor %}
+
+    **Request**
+
+    {% codeblock lang:bash %}
+    curl -X POST https://api.sendgrid.com/api/newsletter/schedule/get.json -F 'name=SendGrid_Test' api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
+    {% endcodeblock %}
+
+    **Response**
+
+    {% codeblock lang:json %}
+    {
+      "date": "2017-10-24 21:22:02"
+    }
+    {% endcodeblock %}
+
+{% anchor h4 %}
+Marketing Campaigns
+{% endanchor %}
+
+First, we need to get the campaign_id:
+
+    **Request**
+
+    {% codeblock lang:bash %}
+    curl --request GET \
+    --url https://api.sendgrid.com/v3/campaigns \
+    --header 'accept: application/json' \
+    --header 'authorization: Bearer SENDGRID_API_KEY' \
+    --header 'content-type: application/json'
+    {% endcodeblock %}
+
+    **Response**
+
+    {% codeblock lang:json %}
+    HTTP/1.1 200
+    {
+      "result": [
+        {
+          "id": 986724,
+          "title": "March Newsletter",
+          "subject": "New Products for Spring!",
+          "sender_id": 124451,
+          "list_ids": [
+            110,
+            124
+          ],
+          "segment_ids": [
+            110
+          ],
+          "categories": [
+            "spring line"
+          ],
+          "suppression_group_id": 42,
+          "custom_unsubscribe_url": "",
+          "ip_pool": "marketing",
+          "html_content": "<html><head><title></title></head><body><p>Check out our spring line!</p></body></html>",
+          "plain_content": "Check out our spring line!",
+          "status": "Draft"
+        },
+        {
+          "id": 986723,
+          "title": "February Newsletter",
+          "subject": "Final Winter Product Sale!",
+          "sender_id": 124451,
+          "list_ids": [
+            110,
+            124
+          ],
+          "segment_ids": [
+            110
+          ],
+          "categories": [
+            "winter line"
+          ],
+          "suppression_group_id": 42,
+          "custom_unsubscribe_url": "",
+          "ip_pool": "marketing",
+          "html_content": "<html><head><title></title></head><body><p>Last call for winter clothes!</p></body></html>",
+          "plain_content": "Last call for winter clothes!",
+          "status": "Sent"
+        }
+      ]
+    }
+    {% endcodeblock %}
+
+Then we can get the schedule time:
+
+**Request**
+
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/{campaign_id}/schedules \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
+
+**Response**
+
+{% codeblock lang:json %}
+HTTP/1.1 200
+{
+  "send_at": 1490778528
+}
+{% endcodeblock %}
 
 
 
@@ -147,7 +255,6 @@ There is no equivalent API call in Marketing Campaigns. You may retrieve the sch
 
 {% anchor h3 %}
 Cancel a scheduled send for a Marketing Email
-
 {% endanchor %}
 
   {% anchor h4 %}
