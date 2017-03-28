@@ -2,9 +2,9 @@
 layout: page
 weight: 10
 seo:
-  title: Legacy Newsletter to Marketing Campaigns: Campaigns Endpoint Comparison
-  description: The comparison of campaigns endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns: Campaigns Endpoint Comparison
+  title: Legacy Newsletter to Marketing Campaigns: Recipients Endpoint Comparison
+  description: The comparison of recipients endpoints between Legacy Newsletter and Marketing Campaigns
+title: Legacy Newsletter to Marketing Campaigns: Recipients Endpoint Comparison
 navigation:
   show: true
 ---
@@ -15,9 +15,6 @@ navigation:
   <li><a href="#-Get-all-Lists-Assigned-to-Particular-Marketing-Email">Get all Lists Assigned to a Particular Marketing Email</a></li>
   <li><a href="#-Remove-Assigned-Lists-From-Marketing-Email">Remove Assigned Lists From a Marketing Email</a></li>
 </ul>
-
-
-
 
 
 {% anchor h3 %}
