@@ -235,6 +235,7 @@ Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Classroom/Basics/password.html /Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Deliver/warming_up_ips.html /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
 Redirect 301 /Classroom/Send/api_keys.html /Classroom/Send/How_Emails_Are_Sent/api_keys.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
 
 #######
 #
