@@ -14,6 +14,7 @@ before_install:
   'source/_data/version.yml' ; fi"
 install:
 - travis_retry npm install
+- travis_retry n 6.10.1
 - travis_retry bower install
 - travis_retry bundle install
 before_script:

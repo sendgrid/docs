@@ -2,7 +2,7 @@
 layout: page
 weight: 10
 seo:
-  title: Legacy Newsletter to Marketing Campaigns: Lists Endpoint Comparison
+  title: Legacy Newsletter to Marketing Campaigns - Lists Endpoint Comparison
   description: The comparison of lists endpoints between Legacy Newsletter and Marketing Campaigns
 title: Legacy Newsletter to Marketing Campaigns Lists Endpoint Comparison
 navigation:
