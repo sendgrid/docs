@@ -2,9 +2,9 @@
 layout: page
 weight: 10
 seo:
-  title: Legacy Newsletter to Marketing Campaigns: Recipients Endpoint Comparison
+  title: Legacy Newsletter to Marketing Campaigns - Recipients Endpoint Comparison
   description: The comparison of recipients endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns: Recipients Endpoint Comparison
+title: Recipients Endpoint Comparison
 navigation:
   show: true
 ---
@@ -58,7 +58,7 @@ First, we need to get the list_id:
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
+
     {
       "lists": [
         {
@@ -87,16 +87,16 @@ Add lists to a new campaign:
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 201
+
     {
       "id": 986724,
       "title": "SendGrid_Test",
       "subject": "Test Subject",
-      "sender_id": sender_id,
+      "sender_id": 124451,
       "list_ids": [
         1,
         2
-      ]
+      ],
       "html_content": "<html><body>HTML content</body></html>",
       "plain_content": "Text Content",
       "status": "Draft"
@@ -121,12 +121,12 @@ If you have a campaign id, you can update a campaign with that list (Note that t
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
+
     {
       "id": 986724,
       "title": "SendGrid_Test_2",
       "subject": "Test Subject",
-      "sender_id": sender_id,
+      "sender_id": 124451,
       "list_ids": [
         1,
         2
@@ -182,7 +182,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/get.json -F api_
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
+
         {
           "result": [
             {
@@ -249,7 +249,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/get.json -F api_
 
         {% codeblock lang:json %}
 
-        HTTP/1.1 200
+
         {
           "id": 986724,
           "title": "March Newsletter",
@@ -318,7 +318,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/delete.json -F a
             **Response**
 
             {% codeblock lang:json %}
-            HTTP/1.1 200
+
             {
               "result": [
                 {
@@ -386,12 +386,12 @@ Then we can edit the campaign:
             **Response**
 
             {% codeblock lang:json %}
-            HTTP/1.1 200
+
             {
               "id": 986724,
               "title": "SendGrid_Test_2",
               "subject": "Test Subject",
-              "sender_id": sender_id,
+              "sender_id": 124451,
               "list_ids": [
                 110,
                 124

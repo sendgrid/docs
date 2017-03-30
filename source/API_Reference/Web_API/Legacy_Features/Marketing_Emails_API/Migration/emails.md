@@ -2,9 +2,9 @@
 layout: page
 weight: 10
 seo:
-  title: Legacy Newsletter to Marketing Campaigns: Emails Endpoint Comparison
+  title: Legacy Newsletter to Marketing Campaigns - Emails Endpoint Comparison
   description: The comparison of emails endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns Emails Endpoint Comparison
+title: Emails Endpoint Comparison
 navigation:
   show: true
 ---
@@ -69,7 +69,6 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
 {
   "lists": [
     {
@@ -96,7 +95,6 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
 {
   "recipients": [
     {
@@ -136,7 +134,7 @@ curl --request POST \
 
 **Request**
 
-{% codeblock lang:json %}
+{% codeblock lang:bash %}
 HTTP/1.1 201
 {% endcodeblock %}
 
@@ -181,7 +179,6 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
 {
   "lists": [
     {
@@ -208,7 +205,6 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
 {
   "recipients": [
     {
@@ -248,7 +244,7 @@ curl --request POST \
 
 **Response**
 
-{% codeblock lang:json %}
+{% codeblock lang:bash %}
 HTTP/1.1 201
 {% endcodeblock %}
 
@@ -296,7 +292,6 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
 {
   "lists": [
     {
@@ -323,7 +318,7 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
+
 {
   "recipients": [
     {
@@ -383,7 +378,7 @@ curl --request POST \
 
 **Response**
 
-{% codeblock lang:json %}
+{% codeblock lang:bash %}
 HTTP/1.1 201
 {% endcodeblock %}
 
@@ -440,7 +435,6 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/get.json -F api
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
     {
       "recipients": [
         {
@@ -501,7 +495,6 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/count.json -F a
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
         {
           "lists": [
             {
@@ -528,7 +521,6 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/count.json -F a
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
         {
           "id": 1,
           "name": "my_list",
@@ -582,7 +574,7 @@ First, we get the list id:
             **Response**
 
             {% codeblock lang:json %}
-            HTTP/1.1 200
+
             {
               "lists": [
                 {
@@ -610,7 +602,7 @@ Then, we get the recipient id (alternatively, you can get the recipient id by ba
           **Response**
 
           {% codeblock lang:json %}
-          HTTP/1.1 200
+
           {
             "recipients": [
               {
@@ -671,6 +663,6 @@ Then, we get the recipient id (alternatively, you can get the recipient id by ba
 
           **Response**
 
-          {% codeblock lang:json %}
+          {% codeblock lang:bash %}
           HTTP/1.1 204
           {% endcodeblock %}

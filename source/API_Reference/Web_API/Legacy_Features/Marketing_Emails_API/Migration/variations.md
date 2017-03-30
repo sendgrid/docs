@@ -2,9 +2,9 @@
 layout: page
 weight: 10
 seo:
-  title: Legacy Newsletter to Marketing Campaigns: Variations Endpoint Comparison
+  title: Legacy Newsletter to Marketing Campaigns - Variations Endpoint Comparison
   description: The comparison of variations endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns: Variations Endpoint Comparison
+title: Variations Endpoint Comparison
 navigation:
   show: true
 ---
