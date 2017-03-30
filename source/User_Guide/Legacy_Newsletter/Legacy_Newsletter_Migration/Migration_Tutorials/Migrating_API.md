@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 50
+weight: 0
 seo:
   title: How to migrate from SendGrid Legacy Newsletter to Marketing Campaigns
   description:
