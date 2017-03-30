@@ -232,10 +232,11 @@ Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integra
 #######
 Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
-Redirect 301 /Classroom/Basics/password.html /Classroom/Basics/Security/password.html
-Redirect 301 /Classroom/Deliver/warming_up_ips.html /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
-Redirect 301 /Classroom/Send/api_keys.html /Classroom/Send/How_Emails_Are_Sent/api_keys.html
-Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Classroom/Basics/password.html https://sendgrid.com/docs/Classroom/Basics/Security/password.html
+Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
+Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html
 
 #######
 #

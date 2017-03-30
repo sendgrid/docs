@@ -383,286 +383,272 @@ HTTP/1.1 201
 {% endcodeblock %}
 
 
-
-
-
-
-
-
-
-
-
-
 {% anchor h3 %}
 Get the email addresses and associated fields for a Recipient List
 {% endanchor %}
 
-  {% anchor h4 %}
-  Legacy Newsletter
-  {% endanchor %}
+{% anchor h4 %}
+Legacy Newsletter
+{% endanchor %}
 
-      **Request**
+**Request**
 
-      {% codeblock lang:bash %}
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/get.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list'
-      {% endcodeblock %}
+{% endcodeblock %}
 
-      **Response**
+**Response**
 
-      {% codeblock lang:json %}
-      [
-        {
-          "email": "example@example.com",
-          "name": "Example User"
-        }
-      ]
-      {% endcodeblock %}
+{% codeblock lang:json %}
+[
+  {
+    "email": "example@example.com",
+    "name": "Example User"
+  }
+]
+{% endcodeblock %}
 
-  {% anchor h4 %}
-  Marketing Campaigns
-  {% endanchor %}
+{% anchor h4 %}
+Marketing Campaigns
+{% endanchor %}
 
-    **Request**
+**Request**
 
-    {% codeblock lang:bash %}
-    curl --request GET \
-    --url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients \
-    --header 'accept: application/json' \
-    --header 'authorization: Bearer SENDGRID_API_KEY' \
-    --header 'content-type: application/json'
-    {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-    **Response**
+**Response**
 
-    {% codeblock lang:json %}
+{% codeblock lang:json %}
+{
+  "recipients": [
     {
-      "recipients": [
-        {
-          "created_at": 1422395108,
-          "email": "example@example.com",
-          "first_name": "Example User",
-          "id": "YUBh",
-          "last_clicked": null,
-          "last_emailed": null,
-          "last_name": null,
-          "last_opened": null,
-          "updated_at": 1422395108
-        }
-      ]
+      "created_at": 1422395108,
+      "email": "example@example.com",
+      "first_name": "Example User",
+      "id": "YUBh",
+      "last_clicked": null,
+      "last_emailed": null,
+      "last_name": null,
+      "last_opened": null,
+      "updated_at": 1422395108
     }
-    {% endcodeblock %}
+  ]
+}
+{% endcodeblock %}
 
 
 
-    {% anchor h3 %}
-    Retrieve the number of entries on a Recipient List
-    {% endanchor %}
+{% anchor h3 %}
+Retrieve the number of entries on a Recipient List
+{% endanchor %}
 
-      {% anchor h4 %}
-      Legacy Newsletter
-      {% endanchor %}
+{% anchor h4 %}
+Legacy Newsletter
+{% endanchor %}
 
-          **Request**
+**Request**
 
-          {% codeblock lang:bash %}
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/count.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list'
-          {% endcodeblock %}
+{% endcodeblock %}
 
-          **Response**
+**Response**
 
-          {% codeblock lang:json %}
-          {
-            "count": 1
-          }
-          {% endcodeblock %}
+{% codeblock lang:json %}
+{
+  "count": 1
+}
+{% endcodeblock %}
 
-      {% anchor h4 %}
-      Marketing Campaigns
-      {% endanchor %}
+{% anchor h4 %}
+Marketing Campaigns
+{% endanchor %}
 
-      First, we need to get the list_id:
+First, we need to get the list_id:
 
-        **Request**
+**Request**
 
-        {% codeblock lang:bash %}
-        curl --request GET \
-        --url https://api.sendgrid.com/v3/contactdb/lists \
-        --header 'accept: application/json' \
-        --header 'authorization: Bearer SENDGRID_API_KEY' \
-        --header 'content-type: application/json'
-        {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/contactdb/lists \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-        **Response**
+**Response**
 
-        {% codeblock lang:json %}
-        {
-          "lists": [
-            {
-              "id": 1,
-              "name": "the jones",
-              "recipient_count": 1
-            }
-          ]
-        }
-        {% endcodeblock %}
+{% codeblock lang:json %}
+{
+"lists": [
+  {
+    "id": 1,
+    "name": "the jones",
+    "recipient_count": 1
+  }
+]
+}
+{% endcodeblock %}
 
-        Now we can retrieve the number of entries in the list:
+Now we can retrieve the number of entries in the list:
 
-        **Request**
+**Request**
 
-        {% codeblock lang:bash %}
-        curl --request GET \
-        --url https://api.sendgrid.com/v3/contactdb/lists/{list_id} \
-        --header 'accept: application/json' \
-        --header 'authorization: Bearer SENDGRID_API_KEY' \
-        --header 'content-type: application/json'
-        {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/contactdb/lists/{list_id} \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-        **Response**
+**Response**
 
-        {% codeblock lang:json %}
-        {
-          "id": 1,
-          "name": "my_list",
-          "recipient_count": 1
-        }
-        {% endcodeblock %}
+{% codeblock lang:json %}
+{
+  "id": 1,
+  "name": "my_list",
+  "recipient_count": 1
+}
+{% endcodeblock %}
 
+{% anchor h3 %}
+Remove one or more emails from a Recipient List
 
+{% endanchor %}
 
+{% anchor h4 %}
+Legacy Newsletter
+{% endanchor %}
 
+**Request**
 
-        {% anchor h3 %}
-        Remove one or more emails from a Recipient List
-
-        {% endanchor %}
-
-          {% anchor h4 %}
-          Legacy Newsletter
-          {% endanchor %}
-
-              **Request**
-
-              {% codeblock lang:bash %}
+{% codeblock lang:bash %}
 curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/delete.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F email[]=example@example.com
-              {% endcodeblock %}
+{% endcodeblock %}
 
-              **Response**
+**Response**
 
-              {% codeblock lang:json %}
-              {
-                "removed": 1
-              }
-              {% endcodeblock %}
+{% codeblock lang:json %}
+{
+  "removed": 1
+}
+{% endcodeblock %}
 
-          {% anchor h4 %}
-          Marketing Campaigns
-          {% endanchor %}
+{% anchor h4 %}
+Marketing Campaigns
+{% endanchor %}
 
 First, we get the list id:
 
-            **Request**
+**Request**
 
-            {% codeblock lang:bash %}
-            curl --request GET \
-            --url https://api.sendgrid.com/v3/contactdb/lists \
-            --header 'accept: application/json' \
-            --header 'authorization: Bearer SENDGRID_API_KEY' \
-            --header 'content-type: application/json'
-            {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/contactdb/lists \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-            **Response**
+**Response**
 
-            {% codeblock lang:json %}
+{% codeblock lang:json %}
 
-            {
-              "lists": [
-                {
-                  "id": 1,
-                  "name": "my_list",
-                  "recipient_count": 1
-                }
-              ]
-            }
-            {% endcodeblock %}
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "my_list",
+      "recipient_count": 1
+    }
+  ]
+}
+{% endcodeblock %}
 
 
 Then, we get the recipient id (alternatively, you can get the recipient id by base64 encoding the email address):
 
-          **Request**
+**Request**
 
-          {% codeblock lang:bash %}
-          curl --request GET \
-          --url https://api.sendgrid.com/v3/contactdb/recipients \
-          --header 'accept: application/json' \
-          --header 'authorization: Bearer SENDGRID_API_KEY' \
-          --header 'content-type: application/json'
-          {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request GET \
+--url https://api.sendgrid.com/v3/contactdb/recipients \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-          **Response**
+**Response**
 
-          {% codeblock lang:json %}
+{% codeblock lang:json %}
 
-          {
-            "recipients": [
-              {
-                "created_at": 1422313607,
-                "email": "jones@example.com",
-                "first_name": null,
-                "id": "YUBh",
-                "last_clicked": null,
-                "last_emailed": null,
-                "last_name": "Jones",
-                "last_opened": null,
-                "updated_at": 1422313790,
-                "custom_fields": [
-                  {
-                    "id": 23,
-                    "name": "pet",
-                    "value": "Indiana",
-                    "type": "text"
-                  }
-                ]
-              },
-              {
-                "created_at": 1432313607,
-                "email": "jones2@example.com",
-                "first_name": null,
-                "id": "YUBhx",
-                "last_clicked": null,
-                "last_emailed": null,
-                "last_name": "Jonesy",
-                "last_opened": null,
-                "updated_at": 1423313790,
-                "custom_fields": [
-                  {
-                    "id": 23,
-                    "name": "pet",
-                    "value": "Indiana",
-                    "type": "text"
-                  }
-                ]
-              }
-            ]
-          }
+{
+  "recipients": [
+    {
+      "created_at": 1422313607,
+      "email": "jones@example.com",
+      "first_name": null,
+      "id": "YUBh",
+      "last_clicked": null,
+      "last_emailed": null,
+      "last_name": "Jones",
+      "last_opened": null,
+      "updated_at": 1422313790,
+      "custom_fields": [
+        {
+          "id": 23,
+          "name": "pet",
+          "value": "Indiana",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "created_at": 1432313607,
+      "email": "jones2@example.com",
+      "first_name": null,
+      "id": "YUBhx",
+      "last_clicked": null,
+      "last_emailed": null,
+      "last_name": "Jonesy",
+      "last_opened": null,
+      "updated_at": 1423313790,
+      "custom_fields": [
+        {
+          "id": 23,
+          "name": "pet",
+          "value": "Indiana",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
 
-          {% endcodeblock %}
+{% endcodeblock %}
 
-          Now we can delete the recipient to the desired list:
+Now we can delete the recipient to the desired list:
 
 
-          **Request**
+**Request**
 
-          {% codeblock lang:bash %}
-          curl --request DELETE \
-          --url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients/{recipient_id} \
-          --header 'accept: application/json' \
-          --header 'authorization: Bearer SENDGRID_API_KEY' \
-          --header 'content-type: application/json'
-          {% endcodeblock %}
+{% codeblock lang:bash %}
+curl --request DELETE \
+--url https://api.sendgrid.com/v3/contactdb/lists/{list_id}/recipients/{recipient_id} \
+--header 'accept: application/json' \
+--header 'authorization: Bearer SENDGRID_API_KEY' \
+--header 'content-type: application/json'
+{% endcodeblock %}
 
-          **Response**
+**Response**
 
-          {% codeblock lang:bash %}
-          HTTP/1.1 204
-          {% endcodeblock %}
+{% codeblock lang:bash %}
+HTTP/1.1 204
+{% endcodeblock %}

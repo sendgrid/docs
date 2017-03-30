@@ -6,7 +6,9 @@ navigation:
   show: true
 ---
 {% warning %}
-This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+Legacy Newsletter is being retired 9/30/17.<br />
+Ready to migrate? Have Questions?<br />
+Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html).
 {% endwarning %}
 
 This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Marketing Email feature.

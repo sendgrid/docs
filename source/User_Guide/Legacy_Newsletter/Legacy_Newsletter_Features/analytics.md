@@ -9,7 +9,9 @@ navigation:
   show: true
 ---
 {% warning %}
-This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a> functionality.
+Legacy Newsletter is being retired 9/30/17.<br />
+Ready to migrate? Have Questions?<br />
+Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html).
 {% endwarning %}
 
 

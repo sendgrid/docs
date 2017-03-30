@@ -1,17 +1,15 @@
 ---
 layout: page
-weight: 100
+weight: 50
 seo:
-  title: Legacy Newsletter to Marketing Campaigns Endpoint Comparison
+  title: How to migrate from SendGrid Legacy Newsletter to Marketing Campaigns
   description:
-title: Endpoint Comparison Overview
+title: Migrating Your API Integrations
 navigation:
   show: true
 ---
 
-The following map of API calls is designed to assist with a migration from SendGrid's Legacy Newsletter to Marketing Campaigns.
-
-<h2>Table of Contents</h2>
+If you have integrations with the Legacy Newsletter API, you’ll need to change your code to use the Marketing Campaigns API. We have mapped every endpoint available in Legacy Newsletter to the comparative endpoint in Marketing Campaigns, in our API Reference.
 
 <h3><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/categories.html">Categories</a></h3>
 
