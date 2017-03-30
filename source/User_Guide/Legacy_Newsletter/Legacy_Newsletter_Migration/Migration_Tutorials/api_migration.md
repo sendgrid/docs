@@ -121,7 +121,7 @@ Response
 
 {% codeblock lang:json %}
 {
-  "id": "UNIQUE_ID",
+  "id": 1,
   "title": "Name of newsletter",
   "ip_pool": "",
   "categories": [],

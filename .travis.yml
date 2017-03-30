@@ -13,6 +13,8 @@ before_install:
 - sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
   'source/_data/version.yml' ; fi"
 install:
+- nvm install 6.10.1
+- nvm use 6.10.1
 - travis_retry npm install
 - travis_retry bower install
 - travis_retry bundle install
