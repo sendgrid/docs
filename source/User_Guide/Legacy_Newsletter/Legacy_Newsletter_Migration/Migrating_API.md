@@ -81,9 +81,4 @@ If you have integrations with the Legacy Newsletter API, you’ll need to change
 
 <h3><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html">Variations</a></h3>
 
-<ul>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html"></a></li>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html"></a></li>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html"></a></li>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html"></a></li>
-</ul>
+There is currently no way to migrate variations to Marketing Campaigns using the API.
