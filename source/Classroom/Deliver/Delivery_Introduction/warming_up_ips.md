@@ -58,7 +58,7 @@ There are three approaches to warming up a new IP address:
 3. Manually warm up your IP. Please refer to our [IP Warmup Guide]({{root_url}}/assets/IPWarmupSchedule.pdf) to determine the appropriate rate at which to manually increase the amount of traffic to send through your new IP. This option makes you completely responsible for the entire IP warmup process.
 
 {% warning %}
-When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing, dedicated, and warm IPs. If you do not have any other warm IPs, all extra traffic will be routed through SendGrid’s Shared IP Warmup clusters. If your sending reputation is below 85, you will be unable to use these clusters, and your reputation will suffer as a result.
+When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing, dedicated, and warm IPs. If you do not have any other warm IPs, you will be required to follow the [IP Warmup Guide]({{root_url}}/assets/IPWarmupSchedule.pdf)
 
 For this reason, we only recommend that users with preexisting, warm IPs use the automatic warm up feature when adding a new dedicated IP address to their account.
 
