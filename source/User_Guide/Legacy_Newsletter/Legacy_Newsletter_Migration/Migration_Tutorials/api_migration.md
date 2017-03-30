@@ -4,15 +4,12 @@ weight: 50
 seo:
   title: Legacy Newsletter to Marketing Campaigns API Migration
   description:
-title: Using the API To Migrate
+title: Legacy Newsletter to Marketing Campaigns API Migration
 navigation:
   show: true
 ---
 
 Before attempting to migrate your content, please review our [Migration Toolkit](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html.html). Then, using our API as described below, you can automate a portion of the process. We are giving all of our examples in curl, but the steps should translate to whichever language you used to build your application.
-
-If you have integrations with the Legacy Newsletter API, you’ll need to change your code to use the Marketing Campaigns API. We have mapped every endpoint available in Legacy Newsletter to the comparative endpoint in Marketing Campaigns, in our [Legacy Newsletter API endpoint comparison]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/index.html).
-
 
 {% anchor h2 %}
 Table of Contents
@@ -89,7 +86,7 @@ Response
   "can_edit": false,
   "content_preview": 0,
   "date_schedule": null,
-  "subject": "subject from Legacy Newsletter",
+  "subject": "subject from Legacy Newsletter"
   "text": "text content from Legacy Newsletter",
   "html": "html content from Legacy Newsletter",
   "timezone_id": 16,
@@ -124,7 +121,7 @@ Response
 
 {% codeblock lang:json %}
 {
-  "id": "UNIQUE_ID",
+  "id": UNIQUE_ID,
   "title": "Name of newsletter",
   "ip_pool": "",
   "categories": [],
@@ -228,6 +225,7 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
+HTTP/1.1 201
 {
   "id": 1,
   "name": " list of recipients",
@@ -261,6 +259,7 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
+HTTP/1.1 201
 {
   "new_count": 2,
   "persisted_recipients": [
