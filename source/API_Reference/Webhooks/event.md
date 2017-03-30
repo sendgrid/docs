@@ -52,7 +52,7 @@ Requests
 You will receive an **HTTP POST** containing a JSON array of multiple events in one request after a very short delay. These POSTs will be sent to the URL you have defined in the Event Notification app options.
 
 {% info %}
-Events currently post every 30 second or when the batch size reaches 768K (seven hundred sixty-eight kilobytes), whichever occurs first. This is per server, so the webhook URL may receive tens of posts per second.
+Events currently post every 30 second or when the batch size reaches 768K (seven hundred sixty-eight kilobytes), whichever occurs first. This is per server, so the webhook URL will normally receive tens, and may receive hundreds, of posts per second.
 {% endinfo %}
 
 {% anchor h3 %}
