@@ -2,16 +2,14 @@
 layout: page
 weight: 100
 title: A Letter from Steve Sloan, SendGrid's CPO
-hideFeedback: false
-showTitle: false
-breadcrumbs: true
 navigation:
   show: false
 ---
 
 
+{% anchor h2 %}
 Legacy Newsletter to be Retired September 30, 2017
-
+{% endanchor %}
 
 We will retire Legacy Newsletter on September 30, 2017. This will allow us to better serve your email marketing needs by focusing on supporting and enhancing Marketing Campaigns, the future of email marketing at SendGrid.
 
@@ -27,7 +25,7 @@ To get started, [take a minute to learn]({{root_url}}/User_Guide/Legacy_Newslett
 
 Kind regards,
 
-Steve Sloan
+Steve Sloan<br />
 Chief Product Officer
 
 Want to know what sets Marketing Campaigns apart? Check out this brief video:
