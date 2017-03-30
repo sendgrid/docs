@@ -7,8 +7,9 @@ function apidocs_iframe() {
     var path = window.location.hash;
     $('#content .iframe-container').html('');
 
+    var url = 'https://sendgrid.api-docs.io/v3.0';
+
     if (path) {
-      var url = 'https://sendgrid.api-docs.io/v3.0';
       url += "/"+path.replace("#","");
     }
 

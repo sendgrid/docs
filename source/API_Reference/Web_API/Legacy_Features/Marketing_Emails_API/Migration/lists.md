@@ -4,7 +4,7 @@ weight: 10
 seo:
   title: Legacy Newsletter to Marketing Campaigns - Lists Endpoint Comparison
   description: The comparison of lists endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns Lists Endpoint Comparison
+title: Lists Endpoint Comparison
 navigation:
   show: true
 ---
@@ -59,7 +59,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/add.json -F api_user=
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 201
+
     {
       "id": 1,
       "name": "My List",
@@ -112,7 +112,7 @@ First, we get the list id:
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
+
         {
           "lists": [
             {
@@ -142,7 +142,7 @@ First, we get the list id:
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
+
         {
         "id": 1,
         "name": "My NEW List",
@@ -198,7 +198,7 @@ First, we get the list id:
             **Response**
 
             {% codeblock lang:json %}
-            HTTP/1.1 200
+
             {
               "lists": [
                 {
@@ -255,7 +255,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/delete.json -F api_us
               **Response**
 
               {% codeblock lang:json %}
-              HTTP/1.1 200
+
               {
                 "lists": [
                   {
@@ -279,6 +279,6 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/delete.json -F api_us
 
                 **Response**
 
-                {% codeblock lang:json %}
+                {% codeblock lang:bash %}
                 HTTP/1.1 202
                 {% endcodeblock %}

@@ -1,7 +1,7 @@
 ---
 layout: page
-weight: 10
-title: Legacy Newsletter to Marketing Campaigns Categories Endpoint Comparison
+weight: 100
+title: Categories Endpoint Comparison
 seo:
   title: Legacy Newsletter to Marketing Campaigns Categories Endpoint Comparison
   description: Legacy Newsletter to Marketing Campaigns Categories Endpoint Comparison
@@ -66,7 +66,7 @@ curl --request POST \
 
 {% codeblock lang:json %}
 {
-  "id": UNIQUE_ID,
+  "id": 1,
   "title": "Legacy Newsletter",
   "ip_pool": "",
   "categories": [

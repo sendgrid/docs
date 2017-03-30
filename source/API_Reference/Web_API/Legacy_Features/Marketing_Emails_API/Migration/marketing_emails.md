@@ -4,7 +4,7 @@ weight: 10
 seo:
   title: Legacy Newsletter to Marketing Campaigns - Campaigns Endpoint Comparison
   description: The comparison of campaigns endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns - Campaigns Endpoint Comparison
+title: Campaigns Endpoint Comparison
 navigation:
   show: true
 ---
@@ -105,12 +105,11 @@ Then you can create your campaign.
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 201
-    {
+        {
       "id": 986724,
       "title": "SendGrid_Test",
       "subject": "Test Subject",
-      "sender_id": sender_id,
+      "sender_id": 124451,
       "html_content": "<html><body>HTML content</body></html>",
       "plain_content": "Text Content",
       "status": "Draft"
@@ -160,7 +159,7 @@ First, find the campaign_id:
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
+
         {
           "result": [
             {
@@ -227,12 +226,12 @@ Then we can edit the campaign:
         **Response**
 
         {% codeblock lang:json %}
-        HTTP/1.1 200
+
         {
           "id": 986724,
           "title": "SendGrid_Test_2",
           "subject": "Test Subject",
-          "sender_id": sender_id,
+          "sender_id": 124451,
           "html_content": "<html><body>HTML content</body></html>",
           "plain_content": "Text Content",
           "status": "Draft"
@@ -294,7 +293,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/get.json -F api_user=SENDGR
                   **Response**
 
                   {% codeblock lang:json %}
-                  HTTP/1.1 200
+
                   {
                     "result": [
                       {
@@ -401,7 +400,7 @@ Retrieve a list of all existing Marketing Email
       **Response**
 
       {% codeblock lang:json %}
-      HTTP/1.1 200
+
       {
         "result": [
           {
@@ -496,7 +495,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/delete.json -F api_user=SEN
           **Response**
 
           {% codeblock lang:json %}
-          HTTP/1.1 200
+
           {
             "result": [
               {
@@ -563,6 +562,6 @@ Then, we can delete the campaign:
 
     **Response**
 
-    {% codeblock lang:json %}
+    {% codeblock lang:bash %}
 HTTP/1.1 204
     {% endcodeblock %}
