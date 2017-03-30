@@ -66,7 +66,7 @@ curl --request POST \
 
 {% codeblock lang:json %}
 {
-  "id": UNIQUE_ID,
+  "id": 1,
   "title": "Legacy Newsletter",
   "ip_pool": "",
   "categories": [

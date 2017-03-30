@@ -58,7 +58,7 @@ First, we need to get the campaign_id:
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
+
     {
       "result": [
         {
@@ -126,7 +126,7 @@ First, we need to get the campaign_id:
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
+
     {
       "id": 986724,
       "send_at": 1489771528,
@@ -177,7 +177,7 @@ First, we need to get the campaign_id:
     **Response**
 
     {% codeblock lang:json %}
-    HTTP/1.1 200
+
     {
       "result": [
         {
@@ -243,7 +243,7 @@ curl --request GET \
 **Response**
 
 {% codeblock lang:json %}
-HTTP/1.1 200
+
 {
   "send_at": 1490778528
 }
@@ -294,7 +294,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/schedule/delete.json -F api
       **Response**
 
       {% codeblock lang:json %}
-      HTTP/1.1 200
+
       {
         "result": [
           {
@@ -360,6 +360,6 @@ curl -X POST https://api.sendgrid.com/api/newsletter/schedule/delete.json -F api
 
     **Response**
 
-    {% codeblock lang:json %}
+    {% codeblock lang:bash %}
     HTTP/1.1 204
     {% endcodeblock %}

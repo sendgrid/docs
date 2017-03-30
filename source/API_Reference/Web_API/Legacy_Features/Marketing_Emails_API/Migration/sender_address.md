@@ -75,7 +75,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/add.json -F api_us
         "email": "example@example.com",
         "name": "Example User"
       },
-      "address": "929 Pearl Street"
+      "address": "929 Pearl Street",
       "city": "Boulder",
       "state": "Colorado",
       "zip": "80302",
@@ -190,7 +190,7 @@ curl --request PATCH \
     "email": "example@example.com",
     "name": "Example User 2"
   },
-  "address": "929 Pearl Street"
+  "address": "929 Pearl Street",
   "city": "Boulder",
   "state": "Colorado",
   "zip": "80302",
@@ -446,6 +446,6 @@ Then, we can delete the specified sender_id:
 
     **Response**
 
-    {% codeblock lang:json %}
+    {% codeblock lang:bash %}
 HTTP/1.1 204
     {% endcodeblock %}
