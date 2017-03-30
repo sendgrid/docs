@@ -34,7 +34,7 @@ You can increase the SendGrid reputation score by removing unengaged users and [
 
 The significance of your reputation depends on the plan you chose when creating your SendGrid account. For all plans, if your reputation becomes low enough, your account may come under review by our Compliance team, you may be contacted, and your account may be suspended for review.
 
-If you're using a Free of Essentials plan, we will put your account in a "New" IP cluster initially while we learn your sending habits. After that, you're placed in an IP cluster with other customers with the same reputation range as you. This keeps the good senders together, and prevents the poorer senders from harming the good ones.
+If you're using a Free or Essentials plan, we will put your account in a "New" IP cluster initially while we learn your sending habits. After that, you're placed in an IP cluster with other customers with the same reputation range as you. This keeps the good senders together, and prevents the poorer senders from harming the good ones.
 
 If you're a Pro plan or higher, you instead send from a dedicated IP, and our internal reputation metric does not have as much weight. Instead, you should keep a closer eye on your _domain reputation_. Domain Reputation is an important part of how mailbox providers decide whether or not your email lands in the spam folder, or the inbox.
 
