@@ -53,7 +53,6 @@ You cannot use the same subdomain for your Email Links as that of your Domain. W
 >
 > **CNAME (youruserid).(domain) --> sendgrid.net**
 
-![]({{root_url}}/images/WhitelabelCNAME.png)
 
 **3.** **A Record (Address)**
 
