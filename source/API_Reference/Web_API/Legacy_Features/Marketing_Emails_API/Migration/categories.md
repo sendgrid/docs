@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 100
 title: Categories Endpoint Comparison
 seo:
   title: Legacy Newsletter to Marketing Campaigns Categories Endpoint Comparison
