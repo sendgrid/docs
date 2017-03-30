@@ -86,7 +86,7 @@ Response
   "can_edit": false,
   "content_preview": 0,
   "date_schedule": null,
-  "subject": "subject from Legacy Newsletter"
+  "subject": "subject from Legacy Newsletter",
   "text": "text content from Legacy Newsletter",
   "html": "html content from Legacy Newsletter",
   "timezone_id": 16,
@@ -121,7 +121,7 @@ Response
 
 {% codeblock lang:json %}
 {
-  "id": UNIQUE_ID,
+  "id": 1,
   "title": "Name of newsletter",
   "ip_pool": "",
   "categories": [],
@@ -225,7 +225,6 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-HTTP/1.1 201
 {
   "id": 1,
   "name": " list of recipients",
@@ -259,7 +258,6 @@ Response
 {% endanchor %}
 
 {% codeblock lang:json %}
-HTTP/1.1 201
 {
   "new_count": 2,
   "persisted_recipients": [
