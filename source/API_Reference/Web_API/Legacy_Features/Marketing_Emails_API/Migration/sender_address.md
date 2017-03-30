@@ -4,7 +4,7 @@ weight: 10
 seo:
   title: Legacy Newsletter to Marketing Campaigns - Sender Address Endpoint Comparison
   description: The comparison of Sender Address endpoints between Legacy Newsletter and Marketing Campaigns
-title: Legacy Newsletter to Marketing Campaigns - Sender Address Endpoint Comparison
+title: Sender Address Endpoint Comparison
 navigation:
   show: true
 ---
