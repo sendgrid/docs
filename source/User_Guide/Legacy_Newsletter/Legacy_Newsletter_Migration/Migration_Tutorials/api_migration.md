@@ -4,7 +4,7 @@ weight: 50
 seo:
   title: Legacy Newsletter to Marketing Campaigns API Migration
   description:
-title: Legacy Newsletter to Marketing Campaigns API Migration
+title: Migrating Using API Calls
 navigation:
   show: true
 ---
