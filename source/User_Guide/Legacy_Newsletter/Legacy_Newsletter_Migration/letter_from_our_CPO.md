@@ -21,6 +21,8 @@ To get started, [take a minute to learn]({{root_url}}/User_Guide/Legacy_Newslett
 * A side-by-side [feature comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html) of Legacy Newsletter vs. Marketing Campaigns
 * [Pricing info]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html), and much more!
 
+To make the transition even simpler, if you migrate to Marketing Campaigns you’ll have the option to continue paying $0.25/1,000 emails sent. <strong>This is currently in development with expected availability of June 1, 2017.</strong>
+
 <strong>Remember, you can get started with Marketing Campaigns at no cost: your first 2,000 contacts are free.</strong>
 
 Kind regards,
