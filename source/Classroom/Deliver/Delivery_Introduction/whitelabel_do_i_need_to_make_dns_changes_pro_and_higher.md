@@ -25,7 +25,7 @@ You can take this a step further by completing the Whitelabel and adding a handf
 
 ![]({{root_url}}/images/makowhitelabel2.png) 
 
-Since an IP will only support a single rDNS name, it's recommended that you use a single IP per specific top-level domain/account. Learn more about adding additional IPs [here]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html).
+Since an IP will only support a single rDNS name, it's recommended that you use a single IP per unique domain you need to send from. Learn more about adding additional IPs [here]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html).
 
 [Subusers]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) can also be used in conjunction with Whitelabels when sending from multiple domains. Having a single IP assigned to a single Subuser is a great way to segment your traffic. 
 
