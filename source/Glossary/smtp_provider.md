@@ -24,4 +24,4 @@ When you become a SendGrid customer, we give you access to our [SMTP servers]({{
 
 * [Custom Apps](/User_Guide/Apps/index.html) and [Webhooks]({{root_url}}/API_Reference/Webhooks/event.html) – No matter what you want to track, we have the ability to show you who is opening your email, where your email is most successful, and who is reporting you as spam or unsubscribing from your recipient list.
 * [Industry Leading Customer Service]({{site.support_url}}/hc/en-us) – Our customer service team is capable of answering all your questions and helping you solve any problems that may arise with your email program.
-* [Dedicated IPs]({{site.blog_url}}/shared-and-dedicated-ips-which-should-you-choose/) – SendGrid allows you to take charge of your own sending reputation by giving you access to your very own IP. This means you won’t be affected by the actions of other companies’ sending habits.
+* Dedicated IPs – SendGrid allows you to take charge of your own sending reputation by giving you access to your very own IP. This means you won’t be affected by the actions of other companies’ sending habits.
