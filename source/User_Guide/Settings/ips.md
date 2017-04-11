@@ -36,8 +36,8 @@ Frequently Asked Questions
 {% endanchor %}
 
 {% anchor h3 %}
-
-{% endanchor %}What are dedicated IP addresses?
+What are dedicated IP addresses?
+{% endanchor %}
 
 An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses that dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
 
