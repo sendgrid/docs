@@ -71,12 +71,12 @@ For Pro plans, your first IP address is included in your plan's pricing. Each ad
 Are there limitations on usage?
 {% endanchor %}
 
-You may purchase up to 3 IP addresses per month. If you more than 3 IPs, then they should contact support.
+You may purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com).
 
 {% anchor h3 %}
-What happens if I only have one dedicated IP address?
+What if this is my first dedicated IP address?
 {% endanchor %}
 
-With only 1 dedicated IP address, users will not be able to use automated warmup. They will have to use manual warm up according to the schedule we recommend here.
+If you have only 1 dedicated IP address, you will not be able to use automated warmup for this IP address. You will need to manually warm up the IP according to the schedule we recommend [here](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
-There must be at least one already warm IP so that overflow emails from the the new IPs that are being warmed up can be sent from a warm IP.
+In order to use automatic warmup, you must have at least one already warm IP so that overflow emails from your new IPs in warm up can be sent from an already warm IP.
