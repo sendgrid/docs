@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Category Stats provide all of your user's email statistics for your categories.
+Category Stats provide all of your user's email statistics for your categories. Category Stats (and all stats) are only available for the last 3 years.
 
 {% anchor h2 %}
 GET statistics
