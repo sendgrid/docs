@@ -44,13 +44,13 @@ If you are sending a very low volume of email (less than 10,000 emails/month), I
 
 
 
-{% anchor %}
-# How do I warm up my IP address?
+{% anchor h2  %}
+How do I warm up my IP address?
 {% endanchor %}
 
 There are three seperate approaches to warming up a new IP address:
 
-{% anchor %}
+{% anchor h3 %}
 Manually Warm Up your IP
 {% endanchor %}
 
@@ -60,13 +60,13 @@ Gradually send more and more email over your IP address. Please refer to our sug
 New users who are establishing a reputation with their default dedicated IP should manually warm up to attain the best possible reputation going forward.
 {% endwarning %}
 
-{% anchor %}
+{% anchor h3 %}
 Automated IP Warmup
 {% endanchor %}
 
 Have [Support](https://support.sendgrid.com/hc/en-us) place your IP address into [Automated IP Warmup]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html) which will automatically throttle traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html). This same step can also be performed using the API, or during the process of [purchasing a new dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html).
 
-{% anchor %}
+{% anchor h3 %}
 Automated IP Warmup API
 {% endanchor %}
 
@@ -79,8 +79,9 @@ For this reason, we only recommend that users with preexisting, warm IPs use the
 {% endwarning %}
 
 
-
-# Why don't other ESPs require IP warmup?
+{% anchor h2 %}
+Why don't other ESPs require IP warmup?
+{% endanchor %}
 
 Many other email service providers, especially those focused on marketing email tools, may not offer dedicated IP addresses to their customers. Many ESPs place all of their customers on shared IP groups by default. When sending on a shared IP group, warming up is not usually required.
 
