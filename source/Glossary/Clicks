@@ -1,0 +1,9 @@
+Clicks - Whenever a user clicks on a link with in your email. Clicks are a great way to monitor your engagement with your users. 
+
+CTR stands for "click-through rate," and it's a metric that's used to measure the success of an email campaign.  Click-through rates are expressed as a percentage, which SendGrid calculates by taking the number of unique clicks divided by the number of unique opens from an email campaign multiplied by 100.
+ 
+For example:
+ 
+Let's say that you send out a marketing campaign to 1000 recipients, and of those 1000 messages you register 300 unique opens.  Then, out of those 300 unique opens, you record 100 unique clicks.  This would give your campaign a click-through rate of 33.3%, since 100 clicks divided by 300 opens equals 0.333 multiplied by 100. 
+
+Read more about the Delivery Metrics Index and Webhook
