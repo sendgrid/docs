@@ -13,4 +13,4 @@ AuthUser=sendgridusername
 AuthPass=sendgridpassword
 UseSTARTTLS=YES
 {% endcodeblock %}
-Then restart ssmtp. All set!
+All set!
