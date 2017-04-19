@@ -29,13 +29,6 @@ Generate a new Batch ID to associate with scheduled sends. A Batch ID is good fo
                 "batch_id": "YOUR_BATCH_ID"
             }
 
-## Batch ID Lookup [/mail/batch/{batch_id}]
-Generate a new Batch ID to associate with scheduled sends
-
-+ Parameters
-    + batch_id (required, string, `HkJ5yLYULb7Rj8GKSx7u025ouWVlMgAi`) ... The batch ID you want to check
-
-
 ### Validate Batch ID [GET]
 
 Validate whether or not a batch id is valid
