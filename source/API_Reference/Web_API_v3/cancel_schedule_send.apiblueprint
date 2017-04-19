@@ -63,10 +63,16 @@ Validate whether or not a batch id is valid for the authenticating account.
 The Cancel Scheduled Sends feature allows the customer to cancel a scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html) included in the SMTPAPI or Request Body. Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
 <br>
 <br>
-**You can have no more than 10 different batches, or 10 different groups of emails with each group identified by a unique batch id, pending cancellation or paused at one time.**
+When a Batch is **cancelled**, all messages associated with that batch will stay in your sending queue, but when their `send_at` value is reached, they will be discarded instead of attempting delivery.
+<br>
+<br>
+When a Batch is **paused**, all messages associated with that batch will stay in your sending queue, even past their `send_at` value. Any messages that are more than 72 hours old will be discarded as Expired.
+{% info %}
+You can have no more than 10 different batches, or 10 different groups of emails with each group identified by a unique batch id, pending cancellation or paused at one time.
 <br>
 <br>
 If you submit a cancel or pause request after the maximum number of cancellation/pause requests has already been reached, an HTTP 400 error will be returned.
+{% endinfo %}
 
 ## Cancel or pause a scheduled send [/user/scheduled_sends]
 
@@ -148,7 +154,7 @@ Update the status of a scheduled send.
 
 ### Delete a cancellation or pause of a scheduled send [DELETE]
 
-Delete the cancellation/pause of a scheduled send.
+Delete the cancellation/pause of a scheduled send. Any messages still in the sending queue with this Batch ID will revert to an active state, and delivery will be attempted when their `send_at` value is reached. Any "past due" messages will begin being delivered immediately.
 
 + Request (application/json)
 
