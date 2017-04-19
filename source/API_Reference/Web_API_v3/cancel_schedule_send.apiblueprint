@@ -8,16 +8,13 @@ navigation:
 
 FORMAT: 1A
 
-# Cancellation of Scheduled Sends
-Canceling scheduled send
-
 # Group Batch IDs
 
-If you set the [SMTPAPI header batch_id]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html), it allows you to then cancel a scheduled send based on that batch_id by calling the [Cancel Scheduled Send endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends).
+If you set the batch id in the [SMTPAPI header]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html) or [Web API Request Body]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html#-Request-Body-Parameters), it allows you to then cancel a scheduled send based on that batch_id by calling the [Cancel Scheduled Send endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends).
 
 ## Batch ID Generation [/mail/batch]
 
-Generate a new Batch ID to associate with scheduled sends
+Generate a new Batch ID to associate with scheduled sends. A Batch ID is good for 864,000 seconds from creation -- 1 day.
 
 ### Generate Batch ID [POST]
 
