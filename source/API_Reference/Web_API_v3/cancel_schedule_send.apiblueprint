@@ -29,9 +29,15 @@ Generate a new Batch ID to associate with scheduled sends. A Batch ID is good fo
                 "batch_id": "YOUR_BATCH_ID"
             }
 
+
+## Batch ID Lookup [/mail/batch/{batch_id}]
+
+Validate whether or not a batch id is valid for the authenticating account.
+
 ### Validate Batch ID [GET]
 
-Validate whether or not a batch id is valid
++ Parameters
+    + batch_id (required, string, `HkJ5yLYULb7Rj8GKSx7u025ouWVlMgAi`) ... The batch ID you want to check
 
 + Request (application/json)
 
@@ -54,10 +60,10 @@ Validate whether or not a batch id is valid
 
 # Group Cancel Scheduled Sends
 
-The Cancel Scheduled Sends feature allows the customer to cancel a scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html) included in the SMTPAPI header. Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+The Cancel Scheduled Sends feature allows the customer to cancel a scheduled send based on a [Batch ID]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html) included in the SMTPAPI or Request Body. Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
 <br>
 <br>
-**You can have no more than 10 different batches, or 10 different groups of emails with each group identified by a unique batch id, pending cancellation at one time.**
+**You can have no more than 10 different batches, or 10 different groups of emails with each group identified by a unique batch id, pending cancellation or paused at one time.**
 <br>
 <br>
 If you submit a cancel or pause request after the maximum number of cancellation/pause requests has already been reached, an HTTP 400 error will be returned.
@@ -87,7 +93,7 @@ Cancel or pause a scheduled send.
             "batch_id" : "invalid batch id"
             "batch_id" : "a status for this batch id exists, try PATCH to update the status"
 
-### Retrieve all scheduled sends [GET]
+### Retrieve all Cancelled and Paused scheduled sends [GET]
 
 Get all cancel/paused scheduled send information.
 
@@ -105,8 +111,6 @@ Get all cancel/paused scheduled send information.
 
 
 ## Manage cancelled user scheduled sends [/user/scheduled_sends/{batch_id}]
-
-A CRUD for managing user scheduled send cancellations
 
 ### Retrieve a scheduled send [GET]
 
