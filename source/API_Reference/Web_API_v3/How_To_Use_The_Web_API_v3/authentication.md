@@ -31,3 +31,13 @@ Authorization: Bearer Your.API.Key-HERE
 {% codeblock lang:bash %}
 curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json"
 {% endcodeblock %}
+
+{% anchor h3 %}
+Username-Password authentication
+{% endanchor %}
+
+SendGrid's Web API v3 also supports authentication based on username and password. This method has to be used to update API keys scopes for instance.
+
+{% codeblock lang:bash %}
+curl -X "PUT" "https://USERNAME:PASSWORD@api.sendgrid.com/v3/api_keys/API_KEY" -H "Content-Type: application/json" -d '{  "name": "KEY_NAME", "scopes": [ SCOPES ] }'
+{% endcodeblock %}
