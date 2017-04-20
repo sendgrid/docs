@@ -34,7 +34,7 @@ Using both `send_at` and `send_each_at` is not valid and will cause your request
 Send At
 {% endanchor %}
 
-To schedule a send request for a large batch of emails use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
+To schedule a send request for a large batch of emails use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) (in seconds).
 
 <h4>Example of send_at email header</h4>
 {% codeblock lang:json %}
