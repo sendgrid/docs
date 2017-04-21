@@ -16,7 +16,7 @@ You can create multiple A records for a domain with as many IP addresses as you 
 
 
 {% anchor h2%}
-Example A Record
+An Example A Record
 {% endanchor %}
 
 What it should look like:
