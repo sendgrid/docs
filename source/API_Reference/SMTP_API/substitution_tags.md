@@ -62,7 +62,7 @@ Email HTML content:
     "john.doe@gmail.com",
     "jane.doe@hotmail.com"
   ],
-  "sub": {
+  "substitutions": {
     "-name-": [
       "John",
       "Jane"
