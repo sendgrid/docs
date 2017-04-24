@@ -412,8 +412,8 @@ protected void onNewIntent(Intent intent) {
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    URL orginalURL = new URL(encodedURL);
-                    HttpURLConnection ucon = (HttpURLConnection) orginalURL.openConnection();
+                    URL originalURL = new URL(encodedURL);
+                    HttpURLConnection ucon = (HttpURLConnection) originalURL.openConnection();
                     ucon.setInstanceFollowRedirects(false);
                     URL resolvedURL = new URL(ucon.getHeaderField("Location"));
                     Log.d("App Link", resolvedURL.toString());
