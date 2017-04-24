@@ -53,31 +53,14 @@ Retrieve all unsubscribe groups that the given email address has been added to.
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/suppressions/{email} %}
 {% v3response %}
 HTTP/1.1 200
-{
-  "suppressions": [
-    {
-        "description": "Optional description.",
-        "id": 1,
-        "is_default": true,
-        "name": "Weekly News",
-        "suppressed": true
-    },
-    {
-        "description": "Some daily news.",
-        "id": 2,
-        "is_default": true,
-        "name": "Daily News",
-        "suppressed": true
-    },
-    {
-        "description": "An old group.",
-        "id": 2,
-        "is_default": false,
-        "name": "Old News",
-        "suppressed": false
-    }
-  ]
-}
+[
+  {
+    "created": 1492995026
+    "email": "test@example.com"
+    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces."
+    "status": "5.1.1"
+  }
+]
 {% endv3response %}
 {% endapiv3example %}
 
