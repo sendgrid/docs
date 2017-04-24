@@ -1,19 +1,21 @@
 ---
 seo:
   title: Adding an additional dedicated IP to your account
-  description: Adding an additional dedicated IP to your account
-  keywords: address, purchase, silver, dedicated, IP, account, add, additional, another, need, more, IPs, new, sending
+  description: Add more dedicated IPs to your account...
+keywords: add, additional, more, new, IP, address, purchase, dedicated, account, another, need, IPs, new, warmup
 title: Adding an additional dedicated IP to your account
 weight: 0
 layout: page
-zendesk_id: 200181948
 navigation:
   show: true
 ---
-Please note: Additional IPs are available to Pro or higher accounts only. 
 
-In order to add additional IPs to your Pro or higher account, please visit [support.sendgrid.com](https://support.sendgrid.com/hc/en-us) to reach a support agent and request additional IPs. Please include the username of your primary account as part of the request. 
+To add additional IPs to your Pro or Premier account, first log into your account, and then click the "Add a Dedicated IP" button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
-Make sure to inform us if the IP will be need to be active for the Parent account, both Parent and [Subuser]({{root_url}}/Classroom/Basics/Account/what_are_subusers.html) account, or Subuser account use only. If you need assign a new IP to a subuser, please use the [Subusers API update IP]({{root_url}}/API_Reference/Web_API_v3/subusers.html#Update-IPs-assigned-to-a-subuser-PUT) endpoint, or visit the [Subuser Management](https://app.sendgrid.com/settings/subusers) interface. 
+New IP addresses can be entered into [automated warmup]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html) as long as you have [another IP address](https://app.sendgrid.com/settings/ip_addresses) that has been active for more than 30 days, and has been whitelabeled. For best results, be sure to whitelabel newly added IP addresses as per the instructions provided in the workflow *before* you start sending with it.
 
-**Additional IPs cost an extra $20 per IP per month.**
+We do not recommend adding a new IP to automated warmup if you have no other IP addresses that are either not warmed up, or are less than 30 days old. In these cases, we recommend that you [warm up your new IP manually](https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html).
+
+Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions.
+
+**Additional IPs cost an extra $20 per additional IP per month. You may only add up to 3 new IP addresses to your account per month**
