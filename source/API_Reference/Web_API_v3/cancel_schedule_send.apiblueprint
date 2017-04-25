@@ -154,7 +154,8 @@ Update the status of a scheduled send.
 
 ### Delete a cancellation or pause of a scheduled send [DELETE]
 
-Delete the cancellation/pause of a scheduled send. Any messages still in the sending queue with this Batch ID will revert to an active state, and delivery will be attempted when their `send_at` value is reached. Any "past due" messages will begin being delivered immediately.
+Delete the cancellation/pause of a scheduled send. Any messages still in the sending queue with this Batch ID will revert to an active state, and delivery will be attempted when their `send_at` value is reached. Any "past due" messages (such as those that were *paused*) will be attempted to be delivered immediately.
+
 
 + Request (application/json)
 
