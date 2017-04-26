@@ -14,7 +14,7 @@ If you set the batch id in the [SMTPAPI header]({{root_url}}/API_Reference/SMTP_
 
 ## Batch ID Generation [/mail/batch]
 
-Generate a new Batch ID to associate with scheduled sends. A Batch ID is good for 864,000 seconds from creation -- 1 day.
+Generate a new Batch ID to associate with scheduled sends. A Batch ID is good for 864,000 seconds from creation -- 10 days.
 
 ### Generate Batch ID [POST]
 
