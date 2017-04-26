@@ -13,4 +13,5 @@ AuthUser=sendgridusername
 AuthPass=sendgridpassword
 UseSTARTTLS=YES
 {% endcodeblock %}
-All set!
+
+Your changes will come into effect as soon as the next message is sent via `ssmtp`
