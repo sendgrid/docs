@@ -24,10 +24,10 @@ Canceling Transactional Email
 Cancel Scheduled Sends
 {% endanchor %}
 
-There is a [/group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
+There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
 
 {% info %}
-You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique batch id) pending cancellation at one time.
+You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique `batch_id`) in a 'paused' or 'pending cancellation' state at one time.
 {% endinfo %}
 
 To create a batch ID, assign that ID to an email or group of emails, and cancel the send, refer to the following steps:
@@ -96,6 +96,10 @@ Scheduled sends cancelled less than 10 minutes before the scheduled time are not
 {% endinfo %}
 
 To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".
+
+When a Batch is **cancelled**, all messages associated with that batch will stay in your sending queue, but when their `send_at` value is reached, they will be discarded instead of attempting delivery.
+
+When a Batch is **paused**, all messages associated with that batch will stay in your sending queue, even past their `send_at` value. Any messages that are more than 72 hours old will be discarded as Expired.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/user/scheduled_sends %}
 {% apiv3requestbody %}

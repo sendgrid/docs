@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Dedicated IP Addresses
+  title: Purchasing Dedicated IP Addresses
   description: Purchase dedicated IP addresses
   keywords: sendgrid ip address, ips, ip addresses, purchase IPs
-title: Dedicated IP Addresses
+title: Purchase IP Addresses
 weight: 0
 layout: page
 navigation:
@@ -79,4 +79,4 @@ What if this is my first dedicated IP address?
 
 If you have only 1 dedicated IP address, you will not be able to use automated warmup for this IP address. You will need to manually warm up the IP according to the schedule we recommend [here](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
-In order to use automatic warmup, you must have at least one already warm IP so that overflow emails from your new IPs in warm up can be sent from an already warm IP.
+In order to use automated warmup, you must have at least one already warm IP so that overflow emails from your new IPs in warm up can be sent from an already warm IP.
