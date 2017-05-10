@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Is Sendgrid HIPAA Compliant?
+  title: Is SendGrid HIPAA Compliant?
   description: Sending email with SendGrid is not HIPAA compliant...
   keywords: security, hipaa, encryption, tls, ssl, secure, GLBA, gramm leach, bliley, act, health, law
 title: Is Sendgrid HIPAA Compliant?
