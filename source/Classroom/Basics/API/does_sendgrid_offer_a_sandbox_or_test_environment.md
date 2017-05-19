@@ -13,7 +13,7 @@ navigation:
 
 We do not offer a true "sandbox" environment, however we do have a [free trial](https://sendgrid.com/transactional-email/pricing) which allows you to send 100 emails per day, and also gives you access to almost all of the features offered with our higher package levels. The free trial does not include access to a dedicated IP or IP whitelabeling.
 
-We also have a [sink email address]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html) that can help you test message throughput for your integration.
+We also have a [sink email address]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html) that can help you test message throughput for your integration, as well as a [sandbox_mode setting]({{root_url}}Classroom/Send/v3_Mail_Send/sandbox_mode.html) for API v3 which prevents emails from being sent to the recipient. 
 
 {% info %}
 SendGrid is in the process of introducing a 30 day Free Trial alongside an improved onboarding experience.
