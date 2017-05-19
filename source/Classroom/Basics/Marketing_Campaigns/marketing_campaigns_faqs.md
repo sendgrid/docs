@@ -315,12 +315,12 @@ The most common reason users receive errors when uploading CSVs is that there ar
 What do I need to know to format my CSVs correctly? 
 {% endanchor %}
 
-Only .csv files are allowed
-A header row is required for all CSV uploads
-"Email" header field is always required
-Headers must use letters, numbers, and underscore characters only
-Date fields can be represented in the form: MM/DD/YYYY
-Years in date fields must be represented as their full value (e.g. 1999 not 99)
+* Only .csv files are allowed
+* A header row is required for all CSV uploads
+* "Email" header field is always required
+* Headers must use letters, numbers, and underscore characters only
+* Date fields can be represented in the form: MM/DD/YYYY
+* Years in date fields must be represented as their full value (e.g. 1999 not 99)
 
 For more detailed info, check out this page on [Preparing your contacts for upload]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Prepare-Contacts-for-Upload).
 
