@@ -34,7 +34,7 @@ Unfortunately you cannot skip a verification step, we require our users to compl
 
 {% anchor h3 %}Why do I only have 100 credits a day?{% endanchor %} 
 
-You have either not yet completed the verification steps for your account, or your 30 day trail period has expired. Either complete the verification steps, or [upgrade your account](https://app.sendgrid.com/settings/billing) to send more email.
+You have either not yet completed the verification steps for your account, or your 30 day trial period has expired. Either complete the verification steps, or [upgrade your account](https://app.sendgrid.com/settings/billing) to send more email.
 
 {% anchor h3 %}Why don't I have all the credits available on my paid plan?{% endanchor %}
 
