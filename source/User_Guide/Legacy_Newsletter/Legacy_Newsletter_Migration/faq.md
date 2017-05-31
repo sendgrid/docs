@@ -107,10 +107,10 @@ From there, each email marketing solution charges a premium for sending through 
 
 As an incentive to migrate to Marketing Campaigns, you can [choose how you’d like to pay](https://app.sendgrid.com/settings/billing): 
 
-<table>
+<table class="table" style="table-layout:fixed">
   <tr>
     <td><p>Pay <b>per email</b> you send</p>
-        <p><i>Special offer for Legacy Newsletter migrators</i></p>
+    <p><i>Special offer for Legacy Newsletter </br>migrators</i></p>
  </br>
         <p>$0.25/1,000 emails</p>
         <p>(plus base plan)</p>
