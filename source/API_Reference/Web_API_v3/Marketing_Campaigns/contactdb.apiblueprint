@@ -667,9 +667,9 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 </p>
 
 <ul>
-  <li>Dates: "eq", "ne", "lt" (before), "gt" (after)</li>
-  <li>Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value)</li>
-  <li>Numbers: "eq", "lt", "gt"</li>
+  <li>Dates: "eq", "ne", "lt" (before), "gt" (after), "empty", "not_empty"</li>
+  <li>Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value), "empty", "not_empty"</li>
+  <li>Numbers: "eq", "lt", "gt", "empty", "not_empty"</li>
   <li>Email Clicks and Opens: "eq" (opened), "ne" (not opened)</li>
 </ul>
 
