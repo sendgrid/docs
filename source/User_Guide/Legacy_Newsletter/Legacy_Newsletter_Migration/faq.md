@@ -18,7 +18,7 @@ navigation:
 
 ## [Pricing](#-Pricing)
 
-* [How can I estimate what it will cost to use Marketing Campaigns?](#-How-can-I-estimate-what-it-will-cost-to-use-Marketing-Campaigns)
+* [How do I choose how to pay for Marketing Campaigns?](#-How-do-I-choose-how-to-pay-for-Marketing-Campaigns)
 * [Why does Marketing Campaigns charge me for storing contacts?](#-Why-does-Marketing-Campaigns-charge-me-for-storing-contacts)
 * [What is the additional value of Marketing Campaigns vs. Legacy Newsletter?](#-What-is-the-additional-value-of-Marketing-Campaigns-vs-Legacy-Newsletter)
 * [I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?](#-Im-using-Marketing-Campaigns-why-am-I-still-being-billed-for-Legacy-Newsletter)
@@ -126,7 +126,7 @@ As an incentive to migrate to Marketing Campaigns, you can choose how you’d li
 How do I choose how to pay for Marketing Campaigns?
 {% endanchor %}
 
-You choose on the the Plan & Billing Details page in your account.
+You choose the Plan & Billing Details page in your account.
 
 {% anchor h3 %}
 Why is the default pricing for Marketing Campaigns per-contact?
