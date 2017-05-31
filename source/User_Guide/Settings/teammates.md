@@ -87,7 +87,7 @@ Click **Add Teammate** to open the modal window allowing you to specify the emai
 ![Teammates]({{root_url}}/images/teammates_1.png)
 
 {% info %}
-Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.
+Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. Pro and higher plans may create up to a limit of 1000 teammates.
 {% endinfo %}
 
 You should now see a modal window titled "New Teammate." Here you will enter your teammate's email address and select the type of teammate you would like to add. The teammate type dictates what permissions your new teammate will have.
