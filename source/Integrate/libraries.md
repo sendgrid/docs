@@ -199,3 +199,22 @@ Ruby
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler-sendgrid) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments
+
+{% anchor h2 %}
+Standard Drivers
+{% endanchor %}
+
+{% anchor h3 -ado-net %}
+ADO.NET Providers
+{% endanchor %}
+-    [CData ADO.NET Provider for SendGrid](http://www.cdata.com/drivers/sendgrid/ado) *by CData Software* - Use SendGrid Data Provider objects to connect and access data just as you would access any traditional database.
+
+{% anchor h3 -jdbc %}
+JDBC Drivers
+{% endanchor %}
+-    [CData JDBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/jdbc) *by CData Software* - Easily connect to live SendGrid data through any JDBC capable application or tool!
+
+{% anchor h3 -odbc %}
+ODBC Drivers
+{% endanchor %}
+-    [CData ODBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/odbc) *by CData Software* - Access SendGrid the same way that you would connect to any other ODBC data source!
