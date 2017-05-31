@@ -87,15 +87,6 @@ Adding Additional API Key Permissons Not Listed In the User Interface
 
 As it turns out, the [API Key Permissions List](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) contains more permissions that can be added to your API key than those listed when creating a new API key. Currently, when you create new key in the user interface and give it full access, it excludes additional permissions that can be added via an API call. The best way to see what permissions your API key has is by making [this call](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) using the same API key to make the request.
 
-For the user profile request you're attempting to make, you will need to make sure you have these permissions:
-
-{% codeblock %}
-"scopes": [
-  "user.account.read",
-  "user.profile.read"
-]
-{% endcodeblock %}
-
 To give your API key these extra permissions you will need to make [this request](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Update-the-name-amp-scopes-of-an-API-Key-PUT).
 
 **Important things** to know before making the above API request:
