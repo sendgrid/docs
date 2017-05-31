@@ -105,28 +105,30 @@ Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid pla
 
 From there, each email marketing solution charges a premium for sending through the user interface. With Legacy Newsletter it’s a **$0.25 fee per 1,000 emails you send**. For Marketing Campaigns, it’s a **$10 fee per 10,000 contacts you store**. Your first 2,000 contacts in Marketing Campaigns are free.
 
-As an incentive to migrate to Marketing Campaigns, you can choose how you’d like to pay: 
+As an incentive to migrate to Marketing Campaigns, you can [choose how you’d like to pay](https://app.sendgrid.com/settings/billing): 
 
 <table>
-   <tr>
- +    <td>Pay **per email** you send</br>
- *Special offer for Legacy Newsletter migrators*</br>
-  </br>
- $0.25/1,000 emails</br>
- (plus base plan)</td>
-         <td>Pay **per contact** you store</br>
- *Standard Marketing Campaigns pricing*</br>
-  </br>
- $10/10,000 contacts</br>
- (plus base plan)</td>
-   </tr>
- </table>
+  <tr>
+    <td><p>Pay <b>per email</b> you send</p>
+        <p><i>Special offer for Legacy Newsletter migrators</i></p>
+ </br>
+        <p>$0.25/1,000 emails</p>
+        <p>(plus base plan)</p>
+    </td>
+    <td><p>Pay <b>per contact</b> you store</p>
+        <p><i>Standard Marketing Campaigns pricing</i></p>
+ </br>
+        <p>$10/10,000 contacts</p>
+        <p>(plus base plan)</p>
+    </td>
+  </tr>
+</table>
 
 {% anchor h3 %}
 How do I choose how to pay for Marketing Campaigns?
 {% endanchor %}
 
-You choose the Plan & Billing Details page in your account.
+You choose the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in your account.
 
 {% anchor h3 %}
 Why is the default pricing for Marketing Campaigns per-contact?
