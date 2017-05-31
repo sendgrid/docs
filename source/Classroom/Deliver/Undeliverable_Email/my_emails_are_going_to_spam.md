@@ -20,7 +20,9 @@ Unfortunately, many ISPs will automatically send messages from IPs they do not k
 
 _Spam folder delivery is not caused by just one factor;_ the ISPs associate bits of reputation to everything you send. Please see below explained all the important things to take into account in order for an email to reach inbox.
 
-#Sending Domain Reputation
+{% anchor h2 %}
+Sending Domain Reputation
+{% endanchor %}
 
 ISPs will check for the reputation your sending domain has. If the recipients have reacted well to these messages, then even with not-so-good content, the email will have a higher chance of landing in the inbox. This goes the other way as well: a good, well-constructed email sent from a domain with an uncertain reputation could land in spam.
 
@@ -30,7 +32,9 @@ Not changing the [ESP]({{root_url}}/Glossary/email_service_provider.html) is als
 
 Creating a new domain is frowned upon as spammy behavior, and this wouldn't help this situation.
 
-#Quality Content
+{% anchor h2 %}
+Quality Content
+{% endanchor %}
 
 It is strongly recommended to separate marketing content from transactional content. In doing so, you would avoid any possibility that your recipients mistake the nature of your transactional email and mark them as spam.
 
@@ -40,15 +44,21 @@ The content reputation is also determined by the links you have in the email; th
 
 If you have used a template that generated very bad feedback from recipients, then ISPs will automatically associate your domain with a poor reputation, although your content is OK at that moment. Please note that spam filters may be triggered by certain words used in the email & subject.
 
-#Sending IP Reputation
+{% anchor h2 %}
+Sending IP Reputation
+{% endanchor %}
 
 As you are aware, the IP should be clean, properly warmed up and whitelabeled for your sending domain. Again, it is highly recommended not to mix marketing with transactional messages, as marketing messages generally trigger a higher spam report rate.
 
-#Frequency and User Engagement
+{% anchor h2 %}
+Frequency and User Engagement
+{% endanchor %}
 
 ISPs will always check how your recipients react to your messages (click, open, delete, mark them as spam). If you are sending too many messages to a recipient, then this may be a factor causing bad feedback from the recipient and the messages will go to spam. On the other hand, if a recipient opens messages in a timely manner and engages with them, it can lead to better future delivery! 
 
-#Whitelabeling
+{% anchor h2 %}
+Whitelabeling
+{% endanchor %}
 
 In order to show the ISPs that you are the sender and that you meant to send these messages, the authentication needs to be properly done.
 
@@ -64,7 +74,9 @@ Afterwards, you'll want to whitelabel your dedicated IPs and separate your marke
 
 This will associate your marketing reputation to the marketing subdomain and your transactional reputation to the transactional subdomain. As mentioned, this will take time, and will require some attention and maintenance, but this is the safest way to get your messages in the inbox.
 
-#Other Resources
+{% anchor h2 %}
+Other Resources
+{% endanchor %}
 
 - Check out our [Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) guide to get started with general guidelines on email ettiquite and sending practices.
 

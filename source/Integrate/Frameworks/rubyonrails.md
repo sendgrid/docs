@@ -9,7 +9,7 @@ navigation:
   show: true
 ---
   
-This example shows how to send an email for user signups. You can also checkout <a href='https://github.com/stephenb/sendgrid/'>this gem</a> for more advanced features.
+This example shows how to send an email for user signups. You can also checkout <a href='https://github.com/sendgrid/sendgrid-ruby'>this gem</a> for more advanced features.
 
 {% anchor h2 %}
 Setup ActionMailer

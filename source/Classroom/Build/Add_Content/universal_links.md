@@ -22,10 +22,6 @@ Table of Contents
 * [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
 * [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
 
-{% warning %}
-Universal Links is currently in Early Access!
-{% endwarning %}
-
 {% anchor h2 %}
 What are universal links?
 {% endanchor %}
@@ -416,8 +412,8 @@ protected void onNewIntent(Intent intent) {
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    URL orginalURL = new URL(encodedURL);
-                    HttpURLConnection ucon = (HttpURLConnection) orginalURL.openConnection();
+                    URL originalURL = new URL(encodedURL);
+                    HttpURLConnection ucon = (HttpURLConnection) originalURL.openConnection();
                     ucon.setInstanceFollowRedirects(false);
                     URL resolvedURL = new URL(ucon.getHeaderField("Location"));
                     Log.d("App Link", resolvedURL.toString());

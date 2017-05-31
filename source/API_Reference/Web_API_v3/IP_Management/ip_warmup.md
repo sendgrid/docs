@@ -1,19 +1,22 @@
 ---
+st:
+  published_at: 2017-04-12
+  type: API
+seo:
+  title: Automated IP Warmup
+  description: Use the API to create IP pools, assign IP addresses to them, and enable IP warmup pools and IPs.
+  keywords: auto, automatic, warm, up, api, v3, ip, pool, warmup, pools
+title: Automated IP Warmup
+weight: 0
 layout: page
-title: IP Warmup
-weight: 80
 navigation:
   show: true
 ---
 
-SendGrid can automatically warmup dedicated IP addresses by limiting the amount
-of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in warmup. See the [warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
+SendGrid can automatically warmup dedicated IP addresses by limiting the amount of mail that can be sent through them per hour. This section allows you to use the API to create IP pools, assign IP addresses to them, and enable IP warmup pools and the IPs within pools.
 
-If you have existing warm IPs as well as new IPs that need warming, any mail beyond the hourly maximum limit will overflow to your existing warm IPs.
+**Learn more about [automated IP warmup here]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html).**
 
-If there are no existing warm IPs, any requests made above the hourly maximum limit will overflow to our Shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use these Shared IP Warmup clusters.
-
-An IP in warmup will always follow SendGrid’s Warmup Schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. You can read more on [the importance of warming up a new IP]({{root_url}}/Classroom/Deliver/warming_up_ips.html) and consider your sending volume for best deliverability.
 
 * * * * *
 
@@ -56,7 +59,7 @@ HTTP/1.1 200 OK
     "ip":"0.0.0.0",
     "start_date":1409616000
   }
-]  
+]
 {% endv3response %}
 {% endapiv3example %}
 

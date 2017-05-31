@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-Category Stats provide all of your user's email statistics for your categories.
+Category Stats provide all of your user's email statistics for your categories. Category Stats (and all stats) are only available for the last 3 years.
 
 {% anchor h2 %}
 GET statistics
@@ -18,7 +18,7 @@ Gets email statistics for the given categories. If you don't pass any parameters
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}
- {% parameter categories Yes 'Array of strings' 'The categories to get statistics for, up to 10' %}
+ {% parameter categories Yes 'String' 'The categories to get statistics for, up to 10' %}
 {% endparameters %}
 
 {% apiv3example get GET https://api.sendgrid.com/v3/categories/stats?start_date=2015-01-01&end_date=2015-01-02&categories=cat1&categories=cat2 %}

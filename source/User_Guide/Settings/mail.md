@@ -166,6 +166,10 @@ Plain Content
 
 The Plain Content setting will automatically convert any plain text emails that you send to HTML before sending.
 
+{% info %}
+Please note: Large plain text files are sometimes unable to be converted to HTML. Instead, SendGrid will send only the plain text version. If HTML versions are essential, it is best practice to include the HTML portion of the email within your email requests. When SendGrid is unable to convert from plaintext to HTML, an alert is sent to the From address.
+{% endinfo %}
+
 {% anchor h3 %}
 Settings
 {% endanchor %}

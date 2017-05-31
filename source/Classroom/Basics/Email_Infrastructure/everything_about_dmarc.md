@@ -22,7 +22,7 @@ Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Whi
 
 Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you.   
 
-DMARC, in conjunction with a dedicated IP (Silver or higher) SendGrid package is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.   
+DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.   
 Return Path's Brand Monitor is one, and Agari is another.
 
 # The five phases:

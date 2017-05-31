@@ -13,9 +13,7 @@ navigation:
 
 On July 6th, 2015 we updated the process by with which users [Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html) their accounts. Users who have set up a legacy whitelabel will be prompted to upgrade their settings. This article will help to walk you through this upgrade process.
 
-If you navigate to the [Whitelabel Overview]({{site.app_url}}/settings/whitelabel) page by going to your Settings, and then selecting Whitelabels, you will see a list of your current whitelabels. After clicking on the Action Cog next to the whitelabel you would like to upgrade, select "Upgrade".
-
-![]({{root_url}}/images/WLupgrade.gif)
+If you navigate to the [Whitelabel Overview]({{site.app_url}}/settings/whitelabel) page by going to your Settings, and then selecting Whitelabels, you will see a list of your current whitelabels. After clicking on the action cog next to the whitelabel you would like to upgrade, select "Upgrade".
 
 If you accept the default settings and click Save, you might see the following error message:
 

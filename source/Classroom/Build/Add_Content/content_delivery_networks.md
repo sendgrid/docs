@@ -18,6 +18,8 @@ Using CloudFlare
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
+The instructions also assume that you have set up a valid [email links whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/links.html) on your account. This step is essential for the following instructions to work.
+
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
 ![CloudFlare DNS Settings]({{root_url}}/images/cloudflare1.png)
@@ -63,6 +65,7 @@ Contact SendGrid support to validate your CDN settings and enable SSL click and 
 {% info %}
 For more information, please visit [Fastly's documentation](https://docs.fastly.com/guides/basic-setup/working-with-services#creating-a-new-service).
 {% endinfo %}
+>>>>>>> 301bb0db06824cf412d9e53bde0b7df211707675
 
 {% anchor h2 %}
 Using KeyCDN
@@ -89,5 +92,5 @@ Add the Zonealias (with the alias you want to use for your email links whitelabe
 
 ![KeyCDN Zonealias]({{root_url}}/images/keycdn4.png)
 
-Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
+Finally, [contact SendGrid support](https://support.sendgrid.com/hc/en-us), and they'll validate the CDN settings and enable SSL click and open
 tracking.

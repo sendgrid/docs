@@ -27,7 +27,7 @@ Installing the Subscription Widget
 Requirements
 {% endanchor %}
 
-* PHP version 5.3.0 or later.
+* PHP version >= 5.6 and <= 7.1. Installing this plugin on PHP versions 5.3 and earlier will cause your website to break. Installation on PHP versions 5.4 and 5.5 will work but it is not recommended.
 * To send emails through SMTP you need to install the [Swift Mailer plugin](https://wordpress.org/plugins/swift-mailer/).
 * If the `wp_mail()` function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
 
@@ -200,9 +200,6 @@ You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and 
 Credentials Settings for the SendGrid WordPress Subscription Widget
 {% endanchor %}
 
-- **Authentication Method**: `define('SENDGRID_AUTH_METHOD', 'apikey');`
-
-  The method used to authenticate the WordPress plugin when sending email through your SendGrid account.
 - **API Key**: `define('SENDGRID_API_KEY', 'sendgrid_api_key');`
 
   Your SendGrid API Key.

@@ -36,6 +36,8 @@ All of your groups will be visible on the [Suppression Management]({{site.app_ur
 Add An Unsubscribe Group
 {% endanchor %}
 
+{% info %} There is a limit of 25 groups per user. {% endinfo %}
+
 To add a new group, click the “Create New Group” button at the top right of the page. Then, you will be asked to name your Unsubscribe Group and add the description. Click “Done” and you will see your new group in the list of all of your unsubscribe groups.
 
 {% anchor h3 %}

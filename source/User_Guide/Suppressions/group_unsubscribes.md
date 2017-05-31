@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tags) from within your email.  The list provided here can be filtered by email address or date.
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tag) from within your email.  The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Group Unsubscribes by Date
@@ -22,7 +22,7 @@ In the top right corner, you will see a calendar icon. Click this and choose the
 Download Group Unsubscribes as CSV
 {% endanchor %}
 
-You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+You can download your Group Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
 
 {% anchor h2 %}
 Removing Recipients From The List
