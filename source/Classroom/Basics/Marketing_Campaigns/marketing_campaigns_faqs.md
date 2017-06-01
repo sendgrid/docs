@@ -47,6 +47,7 @@ Table of Contents
   - [How do I update the custom fields for one of my contacts?](#-How-do-I-update-the-custom-fields-for-one-of-my-contacts)
   - [How do I update an existing contact list?](#-How-do-I-update-an-existing-contact-list)
   - [Why am I receiving errors when uploading a CSV?](#-Why-am-I-receiving-errors-when-uploading-a-CSV)
+  - [What do I need to know to format my CSVs correctly?](#-What-do-I-need-to-know-to-format-my-CSVs-correctly)
   - [Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-email-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
   - [What is the file size limit when uploading CSVs?](#-What-is-the-file-size-limit-when-uploading-CSVs)
   - [How long will it take to upload a CSV?](#-How-long-will-it-take-to-upload-a-CSV)
