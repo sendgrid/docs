@@ -47,6 +47,7 @@ Table of Contents
   - [How do I update the custom fields for one of my contacts?](#-How-do-I-update-the-custom-fields-for-one-of-my-contacts)
   - [How do I update an existing contact list?](#-How-do-I-update-an-existing-contact-list)
   - [Why am I receiving errors when uploading a CSV?](#-Why-am-I-receiving-errors-when-uploading-a-CSV)
+  - [What do I need to know to format my CSVs correctly?](#-What-do-I-need-to-know-to-format-my-CSVs-correctly)
   - [Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-email-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
   - [What is the file size limit when uploading CSVs?](#-What-is-the-file-size-limit-when-uploading-CSVs)
   - [How long will it take to upload a CSV?](#-How-long-will-it-take-to-upload-a-CSV)
@@ -310,6 +311,19 @@ Why am I receiving errors when uploading a CSV?
 {% endanchor %}
 
 The most common reason users receive errors when uploading CSVs is that there are incorrectly formatted dates in the CSV file. Make sure that your dates all have 4 year digits and are in MM/DD/YYYY format. If you are still having problems, double check the CSV upload steps described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts).
+
+{% anchor h3 %}
+What do I need to know to format my CSVs correctly? 
+{% endanchor %}
+
+* Only .csv files are allowed
+* A header row is required for all CSV uploads
+* "Email" header field is always required
+* Headers must use letters, numbers, and underscore characters only
+* Date fields can be represented in the form: MM/DD/YYYY
+* Years in date fields must be represented as their full value (e.g. 1999 not 99)
+
+For more detailed info, check out this page on [Preparing your contacts for upload]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Prepare-Contacts-for-Upload).
 
 {% anchor h3 %}
 Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?

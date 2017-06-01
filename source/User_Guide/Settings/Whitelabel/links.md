@@ -72,6 +72,10 @@ Creating An Email Link Whitelabel
 
 When you enter the information for your whitelabel and click “Save,” we will show you the DNS entries that you need to make to match the settings you provided.
 
+{% info %}
+You may create up to a maximum of 1500 link whitelabels.
+{% endinfo %}
+
 {% anchor h2 %}
 Validate Your Email Link Whitelabel
 {% endanchor %}

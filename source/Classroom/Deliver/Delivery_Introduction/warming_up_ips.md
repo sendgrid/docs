@@ -21,7 +21,7 @@ Whether you are new to the email game or are an accomplished vet, you have proba
 
 
 {% anchor h2 %}
-# What does it mean to "warm up" an IP address?
+What does it mean to "warm up" an IP address?
 {% endanchor %}
 
 IP warming is the practice of gradually increasing the volume of mail sent via a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.

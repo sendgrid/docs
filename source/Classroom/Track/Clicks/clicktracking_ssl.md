@@ -20,7 +20,10 @@ Configuring SSL Certificates and Keys
 
 In order for click and open tracking to work over SSL, SendGrid needs to present a valid certificate that will be trusted by the email recipient's browser. For whitelabeled domains, SendGrid is not able to request and/or manage certificates, as it is not the record owner for the domain.
 
-To work around this restriction, you may use a CDN service, such as [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare) or [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
+To work around this restriction, you may use a CDN service, such as 
+[CloudFlare]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-CloudFlare), 
+[Fastly]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-Fastly), or 
+[KeyCDN]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-KeyCDN) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
 
 Once you have followed the configuration guide for either of these
 services, please contact support and they will enable SSL click and

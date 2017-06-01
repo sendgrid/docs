@@ -14,6 +14,8 @@ seo:
 The new Marketing Campaigns code and design editors are currently in beta.
 {% endwarning %}
 
+<iframe src="https://player.vimeo.com/video/216023771" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Table of Contents
 {% endanchor %}

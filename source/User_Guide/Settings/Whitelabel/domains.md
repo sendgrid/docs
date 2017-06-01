@@ -121,6 +121,10 @@ When you enter the information for your whitelabel and click “Save,” SendGri
 
 We will then give you the DNS records that you need to give your DNS provider.
 
+{% info %}
+You may create up to a maximum of 1500 domain whitelabels. 
+{% endinfo %}
+
 {% anchor h3 %}
 Validate Your Domain Whitelabel
 {% endanchor %}

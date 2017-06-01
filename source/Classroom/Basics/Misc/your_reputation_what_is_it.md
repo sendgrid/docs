@@ -16,7 +16,7 @@ Once logged in to your account, on the left side of your [SendGrid.com](https://
 []({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png)
 
 {% info %}
-Please note that the SendGrid Reputation does not necessarily represent your inboxing percentage at mailbox providers.
+Please note that the SendGrid Reputation does not represent your inboxing percentage at mailbox providers.
 {% endinfo %}
 
 **How is the SendGrid Reputation Calculated?**

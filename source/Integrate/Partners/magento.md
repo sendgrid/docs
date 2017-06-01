@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-This extension allows you to configure Magento 2.0 to send all emails using SendGrid. To get started, [click here](https://www.magentocommerce.com/magento-connect/sendgrid-email-delivery-1.html)!
+This extension allows you to configure Magento 2.0 to send all emails using SendGrid. To get started, [click here](https://marketplace.magento.com/sendgrid-email-delivery-simplified.html)!
 
 {% anchor h2 %}
 Description

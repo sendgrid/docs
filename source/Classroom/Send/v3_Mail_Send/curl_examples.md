@@ -82,7 +82,7 @@ You may schedule an email to be sent up to 72 hours in the future by using the "
 {% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/batch \
-  --header 'authorization: Basic YOUR_API_KEY' \
+  --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
 {% endcodeblock %}
 

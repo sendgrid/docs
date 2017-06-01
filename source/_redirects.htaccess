@@ -490,6 +490,7 @@ Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/Classroom/Bas
 Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/Glossary/email_marketing.html
 Redirect 301 /Glossary/email_error_messages.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
 Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
+Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/Glossary/automated_email.html
 
 #######
 #

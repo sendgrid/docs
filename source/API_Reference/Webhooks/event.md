@@ -976,7 +976,6 @@ Group Resubscribe
   "sg_message_id":"sendgrid_internal_message_id",
   "email":"email@example.com",
   "timestamp":1249948800,
-  "asm_group_id": 1,
   "unique_arg_key":"unique_arg_value",
   "category":["category1", "category2"],
   "event":"group_resubscribe",
