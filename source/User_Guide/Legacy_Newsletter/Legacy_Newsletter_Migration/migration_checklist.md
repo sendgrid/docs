@@ -33,7 +33,7 @@ Migration to Marketing Campaigns is not automatic. We’ve built a [robust toolk
 2. Choose how you’d like to pay: Legacy Newsletter customers have the choice to pay per email sent or per contact stored. 
 {% endanchor %}
 
-&nbsp; &#x274f; Estimate your per-email vs. per-contact cost using the Marketing Campaigns pricing page.
+&nbsp; &#x274f; Estimate your per-email vs. per-contact cost using [the Marketing Campaigns pricing page]( https://app.sendgrid.com/settings/choose_how_you_pay).
 
 {% anchor h3 %}
 3. Do you need to migrate existing contact lists? Learn about migrating your contacts.
