@@ -127,7 +127,7 @@ As an incentive to migrate to Marketing Campaigns, you can [choose how you’d l
 </table>
 
 {% anchor h3 %}
-How and where do I choose how to pay for Marketing Campaigns?
+Where do I choose how to pay for Marketing Campaigns?
 {% endanchor %}
 
 You choose the [Plan & Billing Details page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account.
