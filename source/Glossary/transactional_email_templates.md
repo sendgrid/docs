@@ -14,7 +14,7 @@ Transactional email templates are pre-coded email layouts that marketers, design
 
 In the past, creating an email required marketers to work with designers and developers to develop the final message received by recipients. The SendGrid transactional template editor relieves a lot of this work by providing marketers and designers with various email layouts they can use within The SendGrid UI. This frees up developers to focus on more important projects, while the marketers can easily create and send their emails.
 
-SendGrid's [transactional templates]({{site.app_url}}/templates) give each user the ability to create their own templates for each of the transactional emails they need to send. Different email templates can be created, saved, and edited for purchase receipt emails, account notification emails, or password reset emails.
+SendGrid's [transactional templates]({{site.site_url}}/templates) give each user the ability to create their own templates for each of the transactional emails they need to send. Different email templates can be created, saved, and edited for purchase receipt emails, account notification emails, or password reset emails.
 
 {% anchor h2 %}
 Using Transactional Templates
