@@ -22,7 +22,7 @@ Before you begin, go to your SendGrid [account settings]({{site.app_url}}/user/a
 Adding a Sender
 {% endanchor h2 %}
 
-1. Click "Create New Sender"
+1. Click **Create New Sender**
 1. Fill out the entire "Add Sender Identity" form. This form is so extensive so that you are CAN-SPAM compliant. The footer of your emails includes the information you provide here.
 
    * **From Name** - This is user-friendly name that is displayed to the user when they receive their email.
@@ -30,12 +30,12 @@ Adding a Sender
    * **Reply-To Email Address** - If your user hits reply in their email, the reply will go to this address.
    * **Company Address, City, State, Zip Code, Country** - The address of your business, for CAN-SPAM compliance.
    * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
-   
+   </br>
    ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
 
-1. After you fill out the form, click "Save".
+1. After you fill out the form, click **Save**.
 1. Check the email account and click the link in the email to verify the Sender email.
-   * To resend your verification email, click the gear icon for this sender and select 'view' from the menu.
+   * To resend your verification email, click the gear icon under Actions on the Sender Management page and select Resend Verification.
    * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
    
 
@@ -52,7 +52,7 @@ Once you schedule a campaign, you won't be able to delete the sender identity us
 {% endwarning %}
 
 {% anchor h2 %}
-Using your preset Sender Information In Your Campaigns
+Using Your Preset Sender Information In Your Campaigns
 {% endanchor %}
 
 You can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
@@ -67,7 +67,7 @@ You can insert your sender identity information into your campaigns using the fo
 
 **[Sender_Zip]** - The sender's zip.
 
-So, to show your full sender's address and information in the footer of the email, you can use the tags like so:
+To show your sender's full address and information in the footer of the email, add the tags as shown:
 
 {% codeblock %}
 [Sender_Name]
