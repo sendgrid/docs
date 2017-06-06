@@ -30,25 +30,26 @@ Adding a Sender
    * **Reply-To Email Address** - If your user hits reply in their email, the reply will go to this address.
    * **Company Address, City, State, Zip Code, Country** - The address of your business, for CAN-SPAM compliance.
    * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
+   
    ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
-
-   {% warning %}
-   You must verify your sender identity before you can edit it or use it to send a campaign.
-   {% endwarning %}
-
-   {% warning %}
-   When you schedule a campaign, the sender identity used will not be able to be deleted.
-   {% endwarning %}
 
 1. After you fill out the form, click "Save".
 1. Check the email account and click the link in the email to verify the Sender email.
-   
-   {% info %}
-   Your verification link is only valid for 48 hours. After that time you will need to restart the verification process.
-   {% endinfo %}
-   
    * To resend your verification email, click the gear icon for this sender and select 'view' from the menu.
    * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+   
+
+{% info %}
+Your verification link is only valid for 48 hours. After that time you will need to restart the verification process.
+{% endinfo %}
+
+{% warning %}
+You must verify your sender identity before you can edit it or use it to send a campaign.
+{% endwarning %}
+
+{% warning %}
+Once you schedule a campaign, you won't be able to delete the sender identity used.
+{% endwarning %}
 
 {% anchor h2 %}
 Using your preset Sender Information In Your Campaigns
