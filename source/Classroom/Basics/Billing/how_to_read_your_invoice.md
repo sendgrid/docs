@@ -20,7 +20,7 @@ When you receive your invoice on the 1st of each month, you might have questions
 
 # 1. Physical Address
 
-**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
+**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, you can click on the "Change Invoice Address" button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
  
 
