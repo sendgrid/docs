@@ -30,7 +30,7 @@ Migration to Marketing Campaigns is not automatic. We’ve built a [robust toolk
 &nbsp; &#x274f; Practice by creating a test campaign and sending it to yourself.
 
 {% anchor h3 %}
-2. If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can [choose how you’d like to pay]( https://app.sendgrid.com/settings/choose_how_you_pay). You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns. 
+2. If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can [choose how you’d like to pay](https://app.sendgrid.com/settings/choose_how_you_pay). You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns. 
 {% endanchor %}
 
 &nbsp; &#x274f; Estimate your per-email vs. per-contact cost using [the Marketing Campaigns pricing page]( https://app.sendgrid.com/settings/choose_how_you_pay).
