@@ -48,7 +48,7 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 
 {% anchor h3 %} Date formatting {% endanchor h3 %}
 
-Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV. The date format needs to be one of the following: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`
+Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying properly, force the date format before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`
 
 {% anchor h3 %} Custom fields in your CSV but not your account {% endanchor h3 %}
 
@@ -76,7 +76,7 @@ Listed below are a few distinct errors you may encounter when uploading a CSV to
 
 {% anchor h3 %} Some of your custom fields have not been selected {% endanchor h3 %}
 
-- If you have worked with your CSV multiple times, or have made some adjustments to the data, there can be some hidden characters in the CSV file.
+- Look for hidden characters in your CSV file if you have worked with the file multiple times and made some adjustments to the data.
 - A common fix for this error would be to select all and copy your data to a new CSV spreadsheet. This should remove any hidden characters.
 
 ![]({{root_url}}/images/listupload_2.png)
@@ -90,13 +90,13 @@ Listed below are a few distinct errors you may encounter when uploading a CSV to
 
 {% anchor h3 %} We were unable to detect any headers in your CSV file {% endanchor h3 %}
 
-- Please be sure to include headers at the top of each column. The “email” header is required for all CSV uploads. Header fields can be blank in your CSV, but must be defined later during the upload process.
+- Include headers at the top of each column. The “email” header is required for all CSV uploads. Header fields can be blank in your CSV, but must be defined later during the upload process.
 
 ![]({{root_url}}/images/listupload_4.png)
 
 {% anchor h3 %} Float type conversion error {% endanchor h3 %}
 
-- Dashes or decimal places past the hundredth place need to be categorized as text_fields (-100, 123.123 are text fields, 100, 12.12 can be number fields).
+- Categorize dashes or decimal places that are past the hundredth place as text_fields (-100, 123.123 are text fields, 100, 12.12 can be number fields).
 Number fields can include monetary values without the currency symbols. For example, 19.95 would be a number field, and $19.95 including the ($) would be a text field.
 - As you are uploading your CSV, make sure you select the correct fields for your Field type.
 
