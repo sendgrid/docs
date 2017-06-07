@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% info %}
-In the case of an error, we will often send an email to you in the case of a list upload failure. Please check the email from SendGrid that outlines the results of your CSV upload, including a downloadable error report.
+In the case of a list upload failure, you may receive an email from SendGrid. Please check the email from SendGrid containing the results of your CSV upload, including a downloadable error report.
 
 ![]({{root_url}}/images/listupload_error.png)
 
@@ -19,6 +19,7 @@ In the case of an error, we will often send an email to you in the case of a lis
 
 {% anchor h2 %} General Formatting Rules {% endanchor h2 %}
 
+General rules and guidance to follow when formatting a CSV to upload into Marketing Campaigns.
 
 {% anchor h3 %} Character Encoding {% endanchor h3 %}
 
@@ -39,7 +40,7 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 - Phone numbers: “(555) 555-5555” or “555.555.5555”
 - Monetary Values with the currency indicator such as $3.50 or €5.73
 ```
-{% anchor h3 %} CSV Headers can be blank {% anchor h3 %}
+{% anchor h3 %} CSV Header {% endanchor h3 %}
 
 - Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
 
@@ -53,7 +54,7 @@ Make sure that your dates are properly formatted in your CSV. If you created you
 
 If you include a column in your CSV that is for a custom field not defined in your account, then the CSV will be rejected. We are currently working to add a feature that will let you set up custom fields as a step during the upload process.
 
-{% anchor h3 %} I have more than one of the same email in my database {% anchor h3 %}
+{% anchor h3 %} I have more than one of the same email in my database {% endanchor h3 %}
 
 With SendGrid’s Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the custom field data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
@@ -63,6 +64,8 @@ What you may want to do is add logic to set a custom field, based on the reason 
 
 
 {% anchor h2 %} Specific Upload Errors {% endanchor h2 %}
+
+Listed below are a few distinct errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
 
 {% anchor h3 %} We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email" {% endanchor h3 %}
 
