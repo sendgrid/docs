@@ -13,7 +13,7 @@ navigation:
   show: true
 ---
 
-If you wish to use upgrade an account purchased through one of our third party partners, you must upgrade your SendGrid service through the partner service and not through the SendGrid site or interface.
+If you wish to upgrade an account purchased through one of our third party partners, you must upgrade your SendGrid service through the partner service and not through the SendGrid site or interface.
 
 SendGrid cannot directly upgrade accounts created through::
 * [AppDirect](https://marketplace.appdirect.com/apps/1967#!overview)
