@@ -21,7 +21,7 @@ If you are on a Pro plan or higher, you have access to create [subusers]({{root_
 Each parent account is limited to 15 subusers. If you need to add more subusers, you can learn more about it [here]({{root_url}}/Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html).
 {% endinfo %}
 
-Before the release of Teammates, **multiple credentials** made it possible to give others access to your primary account without having to disclose your primary credentials. This option was located under [Credentials](https://app.sendgrid.com/settings/credentials) within your Settings. Multiple credentials allowed the parent account to grant access to another team member or department for the the purposes of reading stats, accessing the UI, and/or sending mail using the primary account. **Multiple credentials has since been improved and updated, and is now referred to as Teammates.**
+Before the release of Teammates, **multiple credentials** made it possible to give others access to your primary account without having to disclose your primary credentials. This option was located under [Credentials](https://app.sendgrid.com/settings/credentials) within your Settings. Multiple credentials allowed the parent account to grant access to another team member or department to read stats, use the UI, and to send mail using the primary account. **Multiple Credentials has since been improved and updated, and is now referred to as Teammates.**
 
 ## What is the difference between multiple credentials and teammates?
 
