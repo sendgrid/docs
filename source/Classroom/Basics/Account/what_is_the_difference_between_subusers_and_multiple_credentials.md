@@ -25,7 +25,7 @@ Before the release of Teammates, **multiple credentials** made it possible to gi
 
 ## What is the difference between multiple credentials and teammates?
 
-As of [INSERT RELEASE DATE HERE], all multiple user credentials have been migrated to [teammmates]({{root_url}}/User_Guide/Settings/teammates.html). Teammates is simply an expanded and improved iteration of the multiple user credentials feature. Teammates allows for more granular control over individual teammates' permissions, in addition to improving the process of inviting teammates and requesting/granting access to various SendGrid features. To learn more about teammates, please read our [Teammates FAQ]() and [User Guide]({{root_url}}/User_Guide/Settings/teammates.html)
+As of February 2017, all multiple user credentials have been migrated to [teammmates]({{root_url}}/User_Guide/Settings/teammates.html). Teammates is simply an expanded and improved iteration of the multiple user credentials feature. Teammates allows for more granular control over individual teammates' permissions, in addition to improving the process of inviting teammates and requesting/granting access to various SendGrid features. To learn more about teammates, please read our [Teammates FAQ]() and [User Guide]({{root_url}}/User_Guide/Settings/teammates.html)
 
 ## What is the difference between teammates and subusers?
 
