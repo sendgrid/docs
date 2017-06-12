@@ -65,7 +65,6 @@ Contact SendGrid support to validate your CDN settings and enable SSL click and 
 {% info %}
 For more information, please visit [Fastly's documentation](https://docs.fastly.com/guides/basic-setup/working-with-services#creating-a-new-service).
 {% endinfo %}
->>>>>>> 301bb0db06824cf412d9e53bde0b7df211707675
 
 {% anchor h2 %}
 Using KeyCDN
