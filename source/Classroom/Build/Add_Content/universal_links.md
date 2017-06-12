@@ -62,7 +62,7 @@ What are "apple-app-site-association" and "digital asset links" files?
 
 To keep your app secure, Google and Apple want to restrict which resources or websites are allowed to link directly to different pages within your app. This prevents bad actors from using universal links to gain access to sensitive information within your app.
 
-"apple-app-site-association" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
+Your "apple-app-site-association" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
 
 {% info %}
 You must create your own digital asset links and apple-app-site-association files, and you must upload these files to a secure server.
@@ -123,7 +123,7 @@ Example assetlinks.json file:
 {% info %}
 When configuring your universal links for Android devices, you must specify which URLs should be handled by the app and which should not.
 
-For iOS this is set in the "apple-app-site-association" file by including "paths": ["/uni/\*"], indicating that any URL containing the path "/uni" should be opened in your app.
+For iOS this is set in the "apple-app-site-association" file by including "paths": ["/uni/\*"], indicating that any URL containing the path "/uni/" should be opened in your app.
 
 Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
 {% endinfo %}
