@@ -55,7 +55,7 @@ curl -X GET \
    -H 'authorization: Bearer API Key' \
    
    -H 'on-behalf-of: subuser_username' \
-{% endcodeblock %
+{% endcodeblock %}
   
  {% warning %}  
  Please note: The on-behalf-of header will not work with the `mail.send` API.
