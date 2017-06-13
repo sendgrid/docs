@@ -24,6 +24,7 @@ The following is a complete list of all possible permissions that you may assign
         <h3><a href="#Billing">Billing</a></h3>
         <h3><a href="#Categories">Categories</a></h3>
         <h3><a href="#Clients">Clients</a></h3>
+        <h3><a href="#Credentials">Credentials</a></h3>
         <h3><a href="#IPs">IPs</a></h3>
     </div>
     <div class="col-md-4">
@@ -102,6 +103,16 @@ As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissio
   "categories.update",
   "categories.stats.read",
   "categories.stats.sums.read"
+]
+{% endcodeblock %}
+
+{% anchor h2 %}Credentials{% endanchor %}
+{% codeblock %}
+"scopes": [
+  "credentials.create",
+  "credentials.delete",
+  "credentials.read",
+  "credentials.update"
 ]
 {% endcodeblock %}
 
