@@ -141,7 +141,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 2. Upload your "apple-app-site-association" file into the root of the new S3 bucket
 
-3. Under **Permissions** on the uploaded file, add a permission for **Everyone** to **Open/Download**, then hit **Save**
+3. Under **Permissions** on the uploaded file, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI), then hit **Save**
 
 4. Under **Metadata** on the uploaded file, change the **Content-Type** value to **application/json**, then hit **Save**
 
@@ -150,11 +150,11 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 6. Inside of the ".well-known" folder, uplaod the same "apple-app-site-association" file as in step 2
 
-7. As above, add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+7. As above, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
 8. Inside of the “.well-known” folder, upload your “assetlinks.json”
 
-9. Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+9. Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
 10. Navigate to the **AWS Certificate Manager**
 
@@ -181,7 +181,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
     ![]({{root_url}}/images/universal_links_4.png)
 
-    * **Forward Headers:** All
+    * **Forward Headers:** Forward all, cache based on all
     * **Forward Query Strings:** Yes
 18. Under the **Distribution Settings** section, set the fields as follows:
 
@@ -219,9 +219,9 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 27. Create a third behavior with the following details
 
-    **Path Pattern:** .well-known/assetlinks.json
-    **Origin:** s3
-    **Viewer Protocol Policy:** HTTPS Only
+    * **Path Pattern:** .well-known/assetlinks.json
+    * **Origin:** s3
+    * **Viewer Protocol Policy:** HTTPS Only
 28. Hit **Create**
 
 29. Ensure that the **Behaviors** are sorted so that the **Default** is the last onNewIntent
@@ -235,6 +235,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     * https://links.example.com/.well-known/apple-app-site-association
     * https://links.example.com/.well-known/assetlinks.json
     * https://links.example.com/wf/click?upn=
+
 32. Verify behavior using [https://branch.io/resources/universal-links/](https://branch.io/resources/universal-links/)
 
 {% anchor h2 %}
