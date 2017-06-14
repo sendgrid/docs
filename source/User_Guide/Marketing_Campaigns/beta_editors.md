@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 98
-title: New Marketing Campaigns Beta Editors
+title: New Beta Editors
 navigation:
   show: true
 seo:
-  title: New Marketing Campaigns Beta Editors
+  title: New Beta Editors
   override: true
   description: With SendGrid Marketing Campaign’s new editing experience you now have complete control over your editing environment--you can choose between an optimized visual design editor and a pure HTML code editor.
 ---
