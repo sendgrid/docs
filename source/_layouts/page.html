@@ -22,20 +22,6 @@ layout: default
     </header>
     {% endif %}
 
-    <div class="content">
-
-      {% if page.url contains "/Marketing_Campaigns/" %}
-        <div class="callout callout-info">
-          <p>
-            Migrating from the Legacy Newsletter? <a href="{{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html">Here</a> are some valuable resources to help get you started.
-          </p>
-        </div>
-      {% endif %}
-
-      {{ content }}
-
-    </div>
-
     {% if page.last_modified %}
       <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
     {% endif %}
