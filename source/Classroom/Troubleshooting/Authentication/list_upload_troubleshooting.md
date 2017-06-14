@@ -50,10 +50,6 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 
 Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying properly, force the date format before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`
 
-{% anchor h3 %} Custom fields in your CSV but not your account {% endanchor h3 %}
-
-If you include a column in your CSV that is for a custom field not defined in your account, then the CSV will be rejected. We are currently working to add a feature that will let you set up custom fields as a step during the upload process.
-
 {% anchor h3 %} I have more than one of the same email in my database {% endanchor h3 %}
 
 With SendGrid’s Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the custom field data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.

@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Resubsription of Users
+  title: Resubscription of Users
 title: Resubscription of Users
 weight: 0
 layout: page
