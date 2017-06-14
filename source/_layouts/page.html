@@ -22,6 +22,12 @@ layout: default
     </header>
     {% endif %}
 
+ <div class="content">
+
+    {{ content }}
+
+ </div>
+      
     {% if page.last_modified %}
       <meta itemprop="lastReviewed" content="{{ page.last_modified }}">
     {% endif %}
