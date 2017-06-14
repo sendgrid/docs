@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 98
 title: New Marketing Campaigns Beta Editors
 navigation:
   show: true
