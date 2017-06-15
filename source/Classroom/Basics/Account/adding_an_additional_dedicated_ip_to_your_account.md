@@ -18,4 +18,4 @@ We do not recommend adding a new IP to automated warmup if you have no other IP 
 
 Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions.
 
-**Additional IPs cost an extra $20 per additional IP per month. You may only add up to 3 new IP addresses to your account per month**
+**Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month**
