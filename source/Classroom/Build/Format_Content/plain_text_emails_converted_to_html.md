@@ -29,15 +29,15 @@ The following filters convert plain text emails to HTML so the proper HTML tags 
 **How can I control the resulting conversion (see update below)**
 
 1. You can turn off the filters causing the conversion from plain text to HTML.
-2. If you start each line with a space, this will add a "preformatted" <pre> tag around the line.
-3. You can separate new sentences with double newlines, which will add a "paragraph" <p> tag around the sentence.
+2. If you start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
+3. You can separate new sentences with double newlines, which will add a "paragraph" `<p>` tag around the sentence.
 4. You can convert your message to HTML, bypassing our need to convert it altogether
 
 - To disable conversion globally, visit Mail Settings --> Plain Content  and enabled the suppression.
 
-**Why can't you just automatically add <br /> tags to newlines upon conversion?**
+**Why can't you just automatically add `<br />` tags to newlines upon conversion?**
 
-Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org/rfc/rfc5322.txt "Link: http://www.rfc-editor.org/rfc/rfc5322.txt"), Revised 2008) mailers are required to wrap lines at 998 characters, and recommends wrapping at 78 characters (excluding CR/LF). As a result, long sentences can often be broken up into multiple lines. Adding <br /> tags to each newline, would therefore create formatting problems.
+Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org/rfc/rfc5322.txt "Link: http://www.rfc-editor.org/rfc/rfc5322.txt"), Revised 2008) mailers are required to wrap lines at 998 characters, and recommends wrapping at 78 characters (excluding CR/LF). As a result, long sentences can often be broken up into multiple lines. Adding `<br />` tags to each newline, would therefore create formatting problems.
 
 **For more information**
 
