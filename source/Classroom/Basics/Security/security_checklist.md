@@ -1,7 +1,7 @@
 ---
 seo:
   title: Security Checklist
-  description: Tips to help keeo your account secure.
+  description: Tips to help keep your account secure.
   keywords: password, security, secure, virus, hack, script, github
 title: Security Checklist
 weight: 0
@@ -10,16 +10,16 @@ navigation:
   show: true
 ---
 
-SendGrid doesn’t compromise when it comes to compromised accounts and neither should you. Every day that you put off security steps, your reputation as a business and a sender is at risk. Take a few minutes and this checklist to help make ensure that your systems are secure.
+SendGrid doesn’t compromise when it comes to compromised accounts and neither should you. Every day that you put off security steps, your reputation as a business and a sender is at risk. Use these suggestions below to improve the security of your system.
 
 {% anchor h3 %} 1)  Use a robust password!  {% endanchor %}
 
 - Don't use the same password for multiple sites, vary your passwords whenever possible.
-- If possible, use  upper and lower case letters, numerals, and special characters. 
+- Use upper and lower case letters, numerals, and special characters. 
 - Don’t use easily guessable words or phrases such as personal information, your company name, or abbreviations. 
 - Don't expose your password on Github!
 
-Consider setting up [Teammates]({{root_url}}/docs/User_Guide/Settings/teammates.html) to create, manage, and restrict additional sets of credentials to more precisily grant permissions within your SendGrid account.
+Consider setting up [Teammates]({{root_url}}/docs/User_Guide/Settings/teammates.html) to create, manage, and restrict additional sets of credentials to more precisely grant permissions within your SendGrid account.
 
 {% anchor h3 %} 2) Avoid having web browsers save your SendGrid password. {% endanchor %} 
 
