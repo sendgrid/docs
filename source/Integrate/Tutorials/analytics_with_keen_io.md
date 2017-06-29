@@ -11,7 +11,7 @@ navigation:
 ---
 The SendGrid [Event Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/event.html) lets you stream all of the events that happen within an email directly to Keen IO for real time analysis and long term raw storage. These events are things like Delivered, Opened, Clicked, Marked as Spam… and [lots more](https://sendgrid.com/docs/API_Reference/Webhooks/event.html)!
 
-It only takes a couple minutes to start streaming data over and one you do you can start analyzing and visualizing your data in a whole bunch of different ways.
+It only takes a couple minutes to start streaming data over and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
 *This guide covers:*
 
@@ -20,7 +20,7 @@ It only takes a couple minutes to start streaming data over and one you do you c
 - [Doing Drilldowns & Reporting on Your Data](#-doing-drilldowns-and-reporting-on-your-data)
 - [Embedding SendGrid Analytics Into Your App](#-embedding-sendgrid-analytics-into-your-app)
 
-## <a name="-send-your-sendgrid-data-to-keen-io"</a>Send your SendGrid Data to Keen IO
+## <a name="-send-your-sendgrid-data-to-keen-io"></a>Send your SendGrid Data to Keen IO
 
 **Step 1: Create a Keen IO account**
 
@@ -57,7 +57,7 @@ To test this out, you can click on the “Test Your Integration” button in the
 
 Your SendGrid email data should now be populated in Keen IO. To check, head over to your Keen IO project page. Check out the "Streams" tab, select "SendGrid Email Events" from the drop-down list, and then you can see your Last 10 Events streamed. This should show at least one of our delivered email events, or more if you went to your inbox and opened it!
 
-## <a name="-analyze-your-sendgrid-data"</a>Analyze Your SendGrid Data
+## <a name="-analyze-your-sendgrid-data"></a>Analyze Your SendGrid Data
 
 **Step 1: Log into your Keen account, select your Project**
 
@@ -72,7 +72,7 @@ Open the “Explorer” tab
 Enter `count` as the “Analysis Type”, select `SendGrid Email Events` as your “Collection Name”, and press “Run Query”. You ran a query!
 ![Explorer to Run Query]({{root_url}}/images/keen/basic_count.png)
 
-The type of analysis you can do is vast, here’s a [link to read up on what those are](/docs/compute/). Adding an “Interval” will give you a line graph over time, you can “Group By” properties to view results categorically, and you can add “Filters” to refine the scope of your query.
+The type of analysis you can do is vast, here’s a [link to read up on what those are](https://keen.io/docs/compute/). Adding an “Interval” will give you a line graph over time, you can “Group By” properties to view results categorically, and you can add “Filters” to refine the scope of your query.
 
 
 ## Save Your Query & Make Your First Dashboard
@@ -93,7 +93,7 @@ Congratulations! You’ve created your first dashboard!
 Now start digging into your data and creating more custom analyses & visualizations.
 
 
-## <a name="-doing-drilldowns-and-reporting-on-your-data"</a>Doing Drilldowns and Reporting on Your Data
+## <a name="-doing-drilldowns-and-reporting-on-your-data"></a>Doing Drilldowns and Reporting on Your Data
 
 ### Select_Unique
 `Select_Unique` allows you extract many properties from a single field and filter on a specific segment of users based on any number of fields such as campaigns, clicks, and companyID.
@@ -136,7 +136,7 @@ Here’s an example funnel:
 ![Three Step Email Funnel]({{root_url}}/images/keen/funnel.png)
 
 
-## <a name="-embedding-sendgrid-analytics-into-your-app"</a>Embedding SendGrid Analytics Into Your App
-Just like SendGrid, Keen IO is 100% powered by APIs. This means you can embed rich analytics anywhere you can write code. Here’s a link to our [Native Analytics Guide](/guides/native-analytics/) that will give you step-by-step instructions on how to embed your SendGrid analytics into your product.
+## <a name="-embedding-sendgrid-analytics-into-your-app"></a>Embedding SendGrid Analytics Into Your App
+Just like SendGrid, Keen IO is 100% powered by APIs. This means you can embed rich analytics anywhere you can write code. Here’s a link to our [Native Analytics Guide](https://keen.io/guides/native-analytics/) that will give you step-by-step instructions on how to embed your SendGrid analytics into your product.
 
 *That concludes our guide for the day. Hope you have some fun with data and happy hacking!*
