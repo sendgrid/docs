@@ -30,6 +30,21 @@ module Jekyll
       source
     end
   end
+  
+   class DeveloperBlock < Liquid::Block
+    def initialize(tag_name, markup, tokens)
+      super
+    end
+
+    def render(context)
+      contents = super
+      source = '<div class="callout callout-developer">'
+      source += "#{Kramdown::Document.new(contents).to_html}"
+      source += '</div>'
+
+      source
+    end
+  end
 
   class GithubBlock < Liquid::Block
     def initialize(tag_name, markup, tokens)
