@@ -12,6 +12,10 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+{% developer %}
+This is a developer note.
+{% enddeveloper %}
+
 Marketing Campaigns templates determine how the content of your campaign will be built and displayed to your recipients. Templates also serve as a quick starting point for future campaigns by saving you time from having to rebuild your campaign's layout. Consequently, templates allow you to reuse content and maintain brand consistency across all of your campaign efforts.
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
