@@ -83,4 +83,5 @@ end
 
 Liquid::Template.register_tag('warning', Jekyll::WarningBlock)
 Liquid::Template.register_tag('info', Jekyll::InfoBlock)
+Liquid::Template.register_tag('developer', Jekyll::DeveloperBlock)
 Liquid::Template.register_tag('github', Jekyll::GithubBlock)
