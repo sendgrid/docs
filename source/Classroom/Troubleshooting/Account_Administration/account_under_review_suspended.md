@@ -11,6 +11,10 @@ navigation:
   show: true
 ---
 SendGrid reviews accounts that appear to have abnormal activity in order to preserve your reputation as a sender, as well as to to prevent potential bad actors on our system from influencing the rest of our sender population. The possible states of account review are explained below:  
+
+{% info %}
+**Received a suspension, warning, deactivation, or ban notice from SendGrid?** We apologize for any interruption in your service. _Please respond to any questions asked in the email notice._ The fastest way to get your account reactivated is to respond directly to the ticket sent to your email address. In most cases, SendGrid Support cannot reactivate a suspended or banned account, so contacting them directly may delay reactivation. 
+{% endinfo %}
   
 {% anchor h2 %}Suspended{% endanchor %}
 SendGrid will accept and queue mail while the account is under review. Mail will be held until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from send will expire and will not be delivered. _Please be aware that an account in a suspended state will continue to incur auto-renewal billing for your monthly subscription and any Marketing Campaigns contact storage._
@@ -26,10 +30,6 @@ All access to the account is blocked, both through SendGrid.com as well as the A
   
 {% anchor h2 %}Reactivation{% endanchor %}
 When all potential issues are resolved to our satisfaction, SendGrid will reactivate your service. Once reactivated, your account will be restored and any queued messages will be delivered.
-
-{% info %}
-**Received a suspension, warning, deactivation, or ban notice from SendGrid?** We apologize for any interruption in your service. _Please respond to any questions asked in the email notice._ The fastest way to get your account reactivated is to respond directly to the ticket sent to your email address. In most cases, SendGrid Support cannot reactivate a suspended or banned account, so contacting them directly may delay reactivation. 
-{% endinfo %}
 
 
 

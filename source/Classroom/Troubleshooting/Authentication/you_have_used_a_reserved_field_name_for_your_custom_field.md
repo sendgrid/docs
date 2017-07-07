@@ -31,6 +31,7 @@ Here is a short list of the Reserved Custom Fields:
   <tr><td>first_name</td><td>text</td></tr>
   <tr><td>last_name</td><td>text</td></tr>
   <tr><td>email</td><td>text</td></tr>
+  <tr><td>lists</td><td>text</td></tr>
   <tr><td>created_at</td><td>date</td></tr>
   <tr><td>updated_at</td><td>date</td></tr>
   <tr><td>last_emailed</td><td>date</td></tr>

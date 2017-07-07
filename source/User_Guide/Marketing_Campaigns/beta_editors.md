@@ -1,11 +1,11 @@
 ---
 layout: page
-weight: 0
-title: Marketing Campaigns Beta Editors
+weight: 98
+title: New Beta Editors
 navigation:
-  show: false
+  show: true
 seo:
-  title: Marketing Campaigns Beta Editors
+  title: New Beta Editors
   override: true
   description: With SendGrid Marketing Campaign’s new editing experience you now have complete control over your editing environment--you can choose between an optimized visual design editor and a pure HTML code editor.
 ---
@@ -48,20 +48,6 @@ With SendGrid Marketing Campaign’s new editing experience you now have complet
 The **code editor** provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from HTML generating WYSIWYG tools.
 
 The **design editor** offers users powerful drag & drop WYSIWYG editing tools making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML looking to leverage the design editor you can modify the HTML of individual content modules.
-
-{% anchor h2 %}
-Providing Feedback
-{% endanchor %}
-
-Thank you for participating in our Closed Beta.
-
-Please go about your normal Marketing Campaigns activities, [using this form](https://docs.google.com/forms/d/e/1FAIpQLSf7g2FB7pWJ9YgIxD339nwja5jq44IUms0VziVRasNSVDlMEQ/viewform?c=0&w=1) to share any feedback you may have about the new editing experience. This may include:
-
-* Positive feedback (e.g. something that was easier to do, or a new capability you liked).
-* Negative feedback (e.g. something that was difficult to do, or functionality you miss from the old editing experience).
-* General feedback (e.g. Anything that was unclear, questions you have, or general comments you'd like to share).
-
-Submit to this form as frequently as you like, there's no such thing as too much feedback!
 
 {% anchor h2 %}
 Creating New Campaigns
