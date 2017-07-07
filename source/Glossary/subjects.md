@@ -112,7 +112,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/transactional_email.html">Transactional Email</a>
         <a href="{{root_url}}/Glossary/transactional_email_templates.html">Transactional Email Templates</a>
         <a href="{{root_url}}/Glossary/triggered_actions.html">Triggered Actions</a>
-        <a href="{{root_url}}/Glossary/triggering_events.html">Triggering Events</a>
         <a href="{{root_url}}/Glossary/two_factor_authentication.html">Two Factor Authentication</a>
         <a href="{{root_url}}/Glossary/web_api.html">Web API</a>
         <a href="{{root_url}}/Glossary/whitelist.html">Whitelist</a>
