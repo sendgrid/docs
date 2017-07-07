@@ -57,20 +57,6 @@ Can I whitelabel multiple domains?
 Yes, it's possible to whitelabel multiple domains using the improved whitelabel management process. When multiple whitelabel domains exist on your account, SendGrid will use the from address for each email you send through SendGrid and match it to a domain and link whitelabel. If the from address does not match an existing whitelabel, SendGrid will fall back to the whitelabel you have chosen as the default.
 
 {% anchor h2 %}
-Why is my whitelabel marked with a caution sign?
-{% endanchor %}
-
-This means that you have a valid whitelabel, but it is using our old whitelabel instructions. You can improve your whitelabel for better deliverability and security by creating a new whitelabel. This new whitelabel will give you access to all of the new whitelabel features that come from our improved whitelabel setup.
-
-{% anchor h2 %}
-Will my old whitelabel still work?
-{% endanchor %}
-
-Yes. It will automatically show up in the whitelabel settings and will be set as the default. You will not lose your whitelabel. We do suggest that you update your whitelabel by making a new one and updating your DNS to reap the benefit of our new features.
-
-[When you upgrade]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html), you will need to create new subdomains for IP, link, or domain whitelabels because we have split the whitelabeling functionality from "whitelabel everything" to individually whitelabel each separate piece.
-
-{% anchor h2 %}
 Why whitelabel?
 {% endanchor %}
 
@@ -94,7 +80,6 @@ Related Articles
 {% endanchor %}
 
 * [All You Need To Know About Whitelabeling]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html)
-* [How to upgrade your old whitelabel]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html)
 * [I have created DNS records, but SendGrid is not validating them.]({{root_url}}/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html)
 * [Open SPF](http://www.openspf.org/Introduction)
 * [Whitelabel - Do I need to make DNS changes?]({{root_url}}/Classroom/Deliver/Delivery_Introduction/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html)

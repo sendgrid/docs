@@ -9,6 +9,7 @@ navigation:
   show: true
 ---
 FORMAT: 1A
+There are several causes for blocked emails: for example, your mail server IP address is on an ISP blacklist, or blocked by an ISP, or if the receiving server flags the message content.
 
 ## Blocks Collection [/suppression/blocks?start_time={start_time}&end_time={end_time}&limit=10&offset=0]
 

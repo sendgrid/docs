@@ -44,9 +44,9 @@ FORMAT: 1A
 
 ## Bounces Collection [/suppression/bounces]
 
-There're two bounce delete options:
+There are two bounce delete options:
 1) deleting all bounces by specifying "delete_all" to true in the request body, or
-2) deleteing some emails by specificy "emails" and an array of emails in the request body.
+2) deleting some bounces by specifying "emails" and an array of emails in the request body.
 
 ### Delete bounces [DELETE]
 
