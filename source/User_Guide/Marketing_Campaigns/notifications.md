@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 5
+weight: 90
 title: Notifications
 navigation:
   show: true

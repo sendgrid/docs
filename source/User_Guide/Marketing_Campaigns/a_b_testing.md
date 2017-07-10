@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 50
 title: A/B Testing
 navigation:
   show: true

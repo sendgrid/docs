@@ -1,11 +1,11 @@
 ---
 layout: page
-weight: 80
-title: Design Editor
+weight: 75
+title: Code Editor
 navigation:
   show: true
 seo:
-  title: Design Editor
+  title: Code Editor
   override: true
   description:
 ---

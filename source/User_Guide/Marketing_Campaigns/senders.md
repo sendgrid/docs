@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 50
+weight: 70
 title: Senders
 navigation:
   show: true

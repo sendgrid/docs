@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 98
+weight: 95
 title: New Beta Editors
 navigation:
   show: true
