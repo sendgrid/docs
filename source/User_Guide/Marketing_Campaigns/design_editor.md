@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 70
+weight: 80
 title: Design Editor
 navigation:
   show: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 40
+weight: 65
 title: Contacts
 navigation:
   show: true
