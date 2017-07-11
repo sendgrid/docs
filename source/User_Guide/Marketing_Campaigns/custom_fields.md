@@ -35,7 +35,7 @@ You can create up to 20 custom fields for each data type: date, text, and number
 {% endinfo %}
 
 {% warning %}
-Text custom fields are limited to a length of 240 characters.
+Text custom fields are limited to a length of 32,766 characters.
 {% endwarning %}
 
 ![]({{root_url}}/images/custom_fields_1.png "Default Custom Fields")

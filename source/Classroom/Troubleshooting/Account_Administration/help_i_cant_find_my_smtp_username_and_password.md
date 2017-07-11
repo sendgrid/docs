@@ -15,7 +15,7 @@ Your SMTP username and password is the same username and password you provided w
 
 SendGrid also allows account owners to invite multiple [teammates]({{root_url}}/User_Guide/Settings/teammates.html), or individual users of the same account, with their own login credentials.
 
-Click [here]({{root_url}}/Classroom/Troubleshooting/Account_Administration/dont_know_your_username.html) to learn more about how to find your username.
+Click [here]({{root_url}}/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html) to learn more about how to recover your username.
 
 Click [here]({{root_url}}/Classroom/Basics/Account/how_do_i_reset_my_password.html) to learn how to reset your password.
 
