@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 90
 title: Track and Store your Email Event Data
 navigation:
   show: true
