@@ -57,7 +57,7 @@ Forgot your password? No problem.
 
 **Can't access the email address for your SendGrid account?  ** [Find out how to regain access here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html)
 
-**Don't know your username?**   [Get clues here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/dont_know_your_username.html)
+**Don't know your username?**   [Get clues here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html)
 
 **Still can't log in?** [No worries, read more options here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html)
 
