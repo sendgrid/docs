@@ -33,13 +33,13 @@ Step 2: Activate SendGrid's Event Notification App
 
     1. Enter the Keen HTTP POST URL, exampled below, as the endpoint where SendGrid will send event notifications. You can find your `KEEN_PROJECT_ID` and `KEEN_API_WRITE_KEY` listed in the [Access tab](https://keen.io/projects) of your Keen project.
 
-     {% codeblock lang:curl %}
+     {% codeblock %}
      https://api.keen.io/3.0/projects/KEEN_PROJECT_ID/partners/sendgrid/versions/v3?api_key=KEEN_API_WRITE_KEY
      {% endcodeblock %}
 
      If you're using Version 1 or 2 of the SendGrid Event API, use this as your Post Event URL instead:
 
-     {% codeblock lang:curl %}
+     {% codeblock %}
      https://api.keen.io/3.0/projects/KEEN_PROJECT_ID/partners/sendgrid/versions/v2?api_key=KEEN_API_WRITE_KEY
      {% endcodeblock %}
 
