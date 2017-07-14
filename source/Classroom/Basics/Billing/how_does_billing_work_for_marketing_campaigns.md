@@ -14,7 +14,7 @@ seo:
 Overview
 {% endanchor %}
 
-Each email sent via Marketing Campaigns(UI or API) will count towards your monthly plan volume, just like the messages you already send.
+Each email sent via Marketing Campaigns (UI or API) will count towards your monthly plan volume, just like the messages you already send.
 
 In addition to your monthly plan price, you will receive a separate charge based on the maximum size of your Contacts list, which is calculated based on this simple formula:
 
