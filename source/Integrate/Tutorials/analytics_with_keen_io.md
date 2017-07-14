@@ -34,13 +34,14 @@ Step 1: Create a Keen IO account
 Step 2: Activate SendGrid's Event Notification App
 {% endanchor h4 %}
 
-1. First click on [Mail Settings](http://app.sendgrid.com/settings/mail_settings) within Settings in the left column. Next, locate and activate the Event Notification Setting.
+1. First click on [Mail Settings](http://app.sendgrid.com/settings/mail_settings) within Settings in the left column. 
+2. Next, activate the Event Notification Setting.
 ![SendGrid- Mail Settings]({{root_url}}/images/keen/sendgrid_mailsettings_eventnotification.png)
-2. Enter the Keen HTTP POST URL, exampled below, as the endpoint where SendGrid will send event notifications. You can find your `KEEN_PROJECT_ID` and `KEEN_API_WRITE_KEY` listed in the [Access tab](https://keen.io/projects) of your Keen project.
+3. Enter the Keen HTTP POST URL, shown below, as the endpoint where SendGrid will send event notifications. You can find your `KEEN_PROJECT_ID` and `KEEN_API_WRITE_KEY` listed in the [Access tab](https://keen.io/projects) of your Keen project.
     ```https://api.keen.io/3.0/projects/KEEN_PROJECT_ID/partners/sendgrid/versions/v3?api_key=KEEN_API_WRITE_KEY```
     If you're using Version 1 or 2 of the SendGrid Event API, use this as your Post Event URL instead:
     ```https://api.keen.io/3.0/projects/KEEN_PROJECT_ID/partners/sendgrid/versions/v2?api_key=KEEN_API_WRITE_KEY```
-3. In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, check "Select All" under the "Select Actions", or select just the ones you'd like to send to Keen IO.
+4. In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, check **Select All** under the *Select Actions*, or select just the ones you'd like to send to Keen IO.
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, aptly named "SendGrid Email Events", will be created within your project.
 
@@ -49,7 +50,7 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 Step 3: Send a test email!
 {% endanchor h4 %}
 
-To test this out, you can click on the “Test Your Integration” button in the Event Notification settings inside of SendGrid, which creates a set of sample email events from SendGrid into your Keen IO Project.
+To test this out, you can click on the **Test Your Integration** button in the Event Notification settings inside of SendGrid, which creates a set of sample email events from SendGrid into your Keen IO Project.
 
 Your SendGrid email data should now be populated in Keen IO. To check, head over to your Keen IO project page. Check out the "Streams" tab, select "SendGrid Email Events" from the drop-down list, and then you can see your Last 10 Events streamed. This should show at least one of our delivered email events, or more if you went to your inbox and opened it!
 
@@ -90,7 +91,7 @@ Step 1: Save your first query
 Step 2:  Add your graph to a dashboard
 {% endanchor h4 %}
 
-Select “Create Dashboard”, name your dashboard, and add the query we saved to the first tile. Then click “Save”.
+Select **Create Dashboard**, name your dashboard, and add the query we saved to the first tile. Then click “**Save**.
 
 ![Add Query to Dashboard]({{root_url}}/images/keen/create_dashboard.png)
 
