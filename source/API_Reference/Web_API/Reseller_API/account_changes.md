@@ -12,8 +12,7 @@ navigation:
 Immediate Upgrade
 {% endanchor %}
 
-Once an upgrade happens, an invoice is generated for that user. If it's a free user to a paid account, the full price for that upgrade will be created. If it's in between billing periods, a prorated discount will be applied to the invoice.
-
+Upgrading a user generates an invoice. If the user is upgrading from a free to a paid account, the invoice is for the full price of the account. If the upgrade happens between billing periods, the user gets a prorated discount. 
 
 {% parameters upgrade %}
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_upgrade</em> .' %}
@@ -85,7 +84,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% parameters close %}
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_close</em> .' %}
  {% parameter 'user' 'Yes' 'Must be an customer under your account.' %}
- {% parameter 'ip_group[]' 'No' 'Define an ip group you will place the user into once the customers account is closed.' %}
+ {% parameter 'ip_group[]' 'No' 'Define an IP Group to place the user into once the customers account is closed.' %}
 {% endparameters %}
 
 
