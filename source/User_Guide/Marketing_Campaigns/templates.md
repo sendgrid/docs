@@ -48,7 +48,7 @@ If you wish to create a custom template using either drag and drop or entering y
 This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
 
 {% anchor h3 %}
-Duplicating a SendGrid template
+Duplicating a SendGrid Template
 {% endanchor h3 %}
 
 You can easily duplicate a pre-built template provided by SendGrid. 
@@ -61,7 +61,7 @@ You can easily duplicate a pre-built template provided by SendGrid.
 1. Select **Duplicate**. The duplicate opens in the design editor. 
 
 {% anchor h3 %}
-Duplicating a custom template
+Duplicating a Custom Template
 {% endanchor h3 %}
 
 *To duplicate one of your custom templates:*
@@ -71,7 +71,7 @@ Duplicating a custom template
 1. Click the **action menu** and select **Duplicate**. 
 
 {% anchor h3 %}
-Creating a template from a campaign
+Creating a Template from a Campaign
 {% endanchor h3 %}
 
 *To create a new template from an existing campaign:*

@@ -294,7 +294,7 @@ Editing an HTML module
    If you make any structural code changes, you need to convert the module to a code module.
 
 {% anchor h3 %}
-Using custom HTML
+Using Custom HTML
 {% endanchor h3 %}
 
 You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#heading=h.90bira86kq6j), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality. 

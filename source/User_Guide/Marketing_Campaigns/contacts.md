@@ -223,14 +223,3 @@ With SendGrid's Marketing Campaigns feature, the unique identifier is the email 
 
 What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
 
-
-
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">Sender Identities</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

@@ -75,12 +75,3 @@ To show your sender's full address and information in the footer of the email, a
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
