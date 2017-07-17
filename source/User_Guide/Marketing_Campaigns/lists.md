@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 20
+weight: 60
 title: Lists and Segmentation
 navigation:
   show: true
@@ -133,12 +133,3 @@ The CSV export email will look like:
 The download link for your CSV export will be valid for 24 hours.
 {% endinfo %}
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html">A/B Testing</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 70
+weight: 80
 title: Design Editor
 navigation:
   show: true
@@ -9,192 +9,450 @@ seo:
   override: true
   description:
 ---
+[Getting Started with the Design Editor](#-Getting-Started-with-the-Design-Editor)
+[Drag & drop modules](#-Drag-&-drop-modules)
+  - [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
+  - [Code Modules](#-Code-Modules)
+  - [Custom Modules](#-Custom-Modules)
 
-<div class="row">
-  <div class="col-md-8">
-  <p>
-    The design editor is where you build your templates and campaigns using drag & drop and WYSIWYG tools. To get started with the design editor, simply navigate to <strong>Marketing Campaigns</strong> from the left hand navigation menu and select either <strong>Campaigns</strong> or <strong>Templates</strong>. Whenever you open one of your campaigns or templates you will be taken to the design editor.
-  </p>
-  <p>
-    You can use the design editor to make changes to the various modules like text, images, buttons, links, and custom code that make up the content you include in your campaigns.
-  </p>
-  </div>
-  <div class="col-md-4">
-    <img src="{{root_url}}/images/design_editor_1.png" class="img-responsive pull-right"/>
-  </div>
-  <br>
-</div>
+The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
-In addition to the general WYSIWYG controls, you can also toggle on the drag & drop editor which makes it easy to click and drag various pre-built modules into your campaign.
+{% anchor h3 %}
+Getting Started with the Design Editor
+{% endanchor h3 %}
 
-The design editor can be reached either by creating or editing a template from the [Templates page](https://sendgrid.com/marketing_campaigns/ui/marketing_templates), or by creating or editing a campaign from the [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns).
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
+1. Click **Create Campaign**.  
 
-{% anchor h2 %}
-Design / Code
-{% endanchor %}
+   To create a campaign using an existing campaign, find the campaign you want to use and click the action cog next to the campaign and then select Edit or Duplicate.
+   ![]({{root_url}}/images/duplicate_campaign.png)
+   
+1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. 
 
-Upon first opening the design editor, you will see a toggle allowing you to switch between the design and code editing experiences. Switching to the code editor will allow you to import, edit, and preview your campaign's raw HTML.
+   For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
 
-![]({{root_url}}/images/design_editor_2.png)
+1. Select **Design Editor**, and then click **Continue**. 
+
+   The Design Editor opens.
+
+{% anchor h3 %}
+Drag & drop modules
+{% endanchor h3 %}
+
+Drag & drop editing helps you swiftly build your campaign using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
+
+*To add a drag & drop module:*
+
+1. Navigate to the **Build** tab, and then click **Add Modules**.
+   ![]({{root_url}}/images/design_editor_drag_drop.png)
+2. Find the module tile you want to add to your campaign and drag and drop it into your content area.  
+3. Edit the module settings and add your custom content to build your campaign.   
+
+{% anchor h3 %}
+Drag & Drop Module Descriptions and Styles
+{% endanchor h3 %}
+
+<table class="table" style="table-layout:fixed">
+  <tr>
+    <th>Module</th>
+    <th>Description</th>
+    <th>Unique Style Options</th>
+  </tr>
+  <tr>
+    <td>Button</td>
+    <td>A clickable button that links to a URL.</td>
+    <td>button color, border color, font color, width, height, padding, border radius, font size, button text, button URL, alignment,container background, container padding</td>
+  </tr>
+  <tr>
+    <td>Columns</td>
+    <td>This module contains multiple drop zones for other non-column modules.</td>
+    <td>container background, container padding, cell padding, columns</td>
+  </tr>
+  <tr>
+    <td>Code</td>
+    <td>This is an "anything goes" module where you can enter your own custom HTML.</td>
+    <td>Module styles are not available for code modules.</td>
+  </tr>
+  <tr>
+    <td>Text</td>
+    <td>Can contain text, tables, and images.</td>
+    <td>Background color, padding, line height</td>
+  </tr>
+  <tr>
+    <td>Image</td>
+    <td>Can contain a single image.Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
+    <td>Image background, image margin, link url, alt text, alignment, responsive, height, width</td>
+  </tr>
+  <tr>
+    <td>Image and Text</td>
+    <td>This is a columns module with two columns - each can contain either an image or some text.</td>
+    <td>Image, image position, image background, image margin, text background, text margin</td>
+  </tr>
+  <tr>
+    <td>Spacer</td>
+    <td>Allows you to insert spacing between other modules.To add spacing using this module, simply adjust the padding in the &lt;td&gt; tag. For example, the spacer module will add a spacing of 50 pixels.</td>
+    <td>Background color, spacing (padding-bottom)</td>
+  </tr>
+  <tr>
+    <td>Divider</td>
+    <td>A visual divider, or horizontal rule, that can be placed between modules.</td>
+    <td>Background color, line color, height, padding</td>
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured.Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
+    <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Code Modules
+{% endanchor h3 %}
+
+The code module is a unique drag & drop module that allows you to insert any custom HTML in your campaign as a single module which can be relocated and edited.
+
+*To add a code module:*
+
+1. Navigate to the **Build** tab, and then click **Add Modules**. 
+1. Drag and drop the Code module tile into your content area.  
+
+To make changes to your module after adding your code, double click the module (or click the &lt; &gt; icon) to begin editing.
 
 {% warning %}
-Warning: toggling between the Design and Code editors, may cause your underlying HTML to be altered if the editor detects potentially faulty HTML.
+The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML, and always preview your campaign before sending it.
 {% endwarning %}
 
-{% anchor h2 %}
-Preview
-{% endanchor %}
+{% anchor h3 %}
+Custom Modules
+{% endanchor h3 %}
 
-<div class="row">
-  <div class="col-md-9">
-  <p>
-    You can easily open a preview of your campaign to see how it will appear on a desktop platform, a mobile platform, or as a plain-text email by clicking one of the preview icons.
-  </p>
-  </div>
-  <div class="col-md-3">
-    <img src="{{root_url}}/images/design_editor_3.png" class="img-responsive pull-right style="vertical-align:center"/>
-  </div>
-  <br>
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [custom module code examples](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#bookmark=id.spsaxe487t3d) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules, then your code will be imported as a text module.
+
+<table class="table" style="table-layout:fixed">
+  <tr>
+    <th>Module</th>
+    <th>Custom Module Code Examples</th>
+  </tr>
+  <tr>
+   <td>Image</td>
+    <td>{% codeblock lang:html %}
+<table class="wrapper" role="module" data-type="image">
+  <tr>
+    <td [styles go here] align=['left' or 'right']>
+      [MODULE CONTENT]
+    </td>
+  </tr>
+{% endcodeblock %}
+</td>
+  </tr>
+  <tr>
+    <td>Image &amp; Text</td>
+    <td>missing?</td>
+  </tr>
+  <tr>
+    <td>Text</td>
+    <td>{% codeblock lang:html %}
+    <table class="module" role="module" data-type="text">
+  <tr>
+    <td [styles go here] bgcolor=[some color]>
+      [MODULE CONTENT]
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Code</td>
+    <td>{% codeblock lang:html %}
+    <table class="module" role="module" data-type="code">
+  <tr>
+    <td>
+      [MODULE CONTENT]
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Columns</td>
+    <td>{% codeblock lang:html %}
+    <table role="module" data-type="columns">
+  <tr>
+    <td [styles go here] bgcolor=[some color]>
+      <table>
+        <tr>
+          <td class="templateColumnContainer column-drop-area">
+          [MODULE CONTENT]
+          </td>
+          <td class="templateColumnContainer column-drop-area">
+          [ANOTHER MODULE CONTENT]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Button</td>
+    <td>{% codeblock lang:html %}
+ <table class="module" role="module" data-type="button">
+  <tr>
+    <td [styles go here] bgcolor=[some color] align=['left' or 'right']>
+      <table class="wrapper-mobile">
+        <tr>
+          <td [styles go here too] bgcolor=[some color]>
+            [MODULE CONTENT]
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>   
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Divider</td>
+    <td>{% codeblock lang:html %}
+    <table class="module" role="module" data-type="divider">
+  <tr>
+    <td [styles go here] bgcolor=[some color]>
+      <table height=[some height]>
+        <tr>
+          <td bgcolor=[some color]></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Spacer</td>
+    <td >{% codeblock lang:html %}
+    <table class="module" role="module" data-type="spacer">
+  <tr>
+    <td style="padding: 50px 0 0 0" bgcolor=[some color]>
+    </td>
+  </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>
+  <tr>
+    <td>Social</td>
+    <td>{% codeblock lang:html %}
+    <table class="module" role="module" data-type="social">
+ <tbody>
+  <tr>
+   <td [styles go here] data-align=['left', 'right', or 'center']>
+    <table>
+     <tbody>
+      <tr>
+       [MODULE CONTENT]           
+      </tr>
+     </tbody>
+    </table>
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+{% endcodeblock %}</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Adding Images
+{% endanchor h3 %}
+
+*To upload an image:*
+
+1. Navigate to the **Build** tab, and then click **Add Modules**. 
+1. Select the Images module, and drag and drop it into your content area. This opens a modal window where you can upload images to your image library.  
+1. Drag and drop the image you want to use from your files or select **Choose images** to upload. 
+  
+*To insert an image:*
+
+1. Navigate to the **Build** tab, and then click **Add Modules**. 
+1. Drag and drop the **Images** module into your content area. This opens a modal window where you can select images from the image library.  
+1. Select the image you want to add to your campaign. This opens the Image Details tab.  
+1. Insert your image in the campaign by clicking **Save Image**. 
+  
+{% anchor h3 %}
+Editing an HTML module
+{% endanchor h3 %}
+
+*To edit module HTML:*
+
+1. Select the module in the design editor and click the **&lt; &gt;** icon. 
+
+   A modal opens where you can edit the module’s HTML.
+
+1. When you are finished editing the HTML, click **Update**.  
+
+   If you make any structural code changes, you need to convert the module to a code module.
+
+{% anchor h3 %}
+Using Custom HTML
+{% endanchor h3 %}
+
+You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#heading=h.90bira86kq6j), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality. 
+
+{% anchor h3 %}
+Importing HTML
+{% endanchor h3 %}
+
+*To import your own custom HTML:*
+
+1. Navigate to the **Build** tab in the left-hand navigation. 
+1. Scroll down and select the **Advanced** drop-down menu.  
+1. Expand the option titled **Import/Export**.  
+1 Click **Import**.
+   A window opens where you can paste in your own HTML.
+   ![]({{root_url}}/images/import_custom_html.png)
+1. Paste or enter the HTML you want to use, and then click **Import**. 
+  
+{% warning %}
+Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](code_editor.html).
+{% endwarning %}
+
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
+- First, we look for any HTML elements that contain the attribute role="modules-container".  
+- Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
+
+The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
+
+{% warning %}
+Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](https://docs.google.com/document/d/1CDiBMn8ZHNZxf_lF6suV1jjX_ij5h3Gideskt1gV3Rg/edit#heading=h.fyr366oz0yxo) will be included.
+
+If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
+{% endwarning %}
+  
+If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template— allowing you to move and edit them as you normally would.
+
+However, if your custom HTML is not compatible with drag & drop, then your imported HTML will be imported as a text module.
+
+{% anchor h3 %}
+Example HTML
+{% endanchor h3 %}
+
+Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules. 
+
+{% codeblock lang:html %}
+<div role=”modules-container”>
+  <table role=”module” data-type=”button”>
+    [ module content ]
+  </table>
+  <table role=”module” data-type=”text”>
+    [ module content ]
+  </table>
+  <table role=”module” data-type=”image”>
+    [ module content ]
+  </table>
 </div>
-
-{% anchor h2 %}
-Save your work!
-{% endanchor %}
-
-To save your template or campaign when using the design editor, simply click the <strong>Save Draft/Save Template</strong> button.
-
-<div class="row">
-  <div class="col-md-6">
-    <img src="{{root_url}}/images/design_editor_4.png" style="margin:auto"/>
-  </div>
-  <div class="col-md-6">
-    <img src="{{root_url}}/images/design_editor_5.png" style="margin:auto"/>
-  </div>
-</div>
-
-{% info %}
-The design editor will automatically save your changes every 2 minutes.
-{% endinfo %}
-
-{% anchor h2 %}
-Settings
-{% endanchor %}
+{% endcodeblock %}
 
 {% anchor h3 %}
-Template or Campaign Settings
-{% endanchor %}
+Exporting HTML from the design editor
+{% endanchor h3 %}
 
-You can name your template or campaign under the Settings tab in the left hand sidebar in the **Template Name** or **Campaign Name** text field.
+*To export the HTML of a template from the design editor:*
 
-{% anchor h2 %}
-Drag & drop editor
-{% endanchor %}
+1. Navigate to the **Build** tab in the left-hand navigation. 
+1. Scroll down and select the **Advanced** drop-down menu.  
+1. Expand the option titled **Import/Export**. This starts the raw HTML download of the template, excluding images. 
+  
+SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template's HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
 
-Under the name field, you will find a toggle switch allowing you to turn on the drag & drop editor. Enabling the drag & drop editor adds a new tab to the left-hand sidebar titled **Build** where you can add and edit different pre-built content modules.
+*To open your exported HTML in the code editor:*
 
-For more details, [please refer to our drag & drop editor documentation]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html).
-
-{% anchor h2 %}
-Tags
-{% endanchor %}
-
-{% anchor h3 %}
-Substitution Tags
-{% endanchor %}
-
-The **Tags** tab lists the various substitution tags that you can add to your campaign or template. Click the copy icon to easily copy a substitution tag, then paste the tag anywhere you want the substituted value to be placed in your content.
-
-![]({{root_url}}/images/design_editor_6.png)
-
-The following tags are available under the Tags tab in addition to any custom fields you've already added.
+1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.  
+1. Click **New Campaign**, and then select **Blank Template**. 
+1. Select **Code Editor**.  
+1. Paste the raw SendGrid template HTML into the code editor. 
 
 {% anchor h3 %}
-Default Values
-{% endanchor %}
+Using Substitution Tags
+{% endanchor h3 %}
 
-You can choose a default value for a substitution tag to be displayed in the event that there is no unique replacement value. For example, users often write “Hello [%first_name%]” with the intent of replacing the substitution tag with each recipient’s name. However, if there is no name on file for a particular recipient, the email will read “Hello [%first_name%]” instead of “Hello John”.
+Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients you can specify substitution tags specific to each recipient.
 
-This can be avoided by assigning a default value to a substitution tag using the syntax:
+*To add a substitution tag to your campaign:*
 
-`[%first_name|Valued Customer%]`
+1. Navigate to the **Tags** tab.  
+1. Locate the tag you want to add to your campaign and click the **copy** icon. 
+1. Paste the tag into the module. 
+  
+You can add the following substitution tags to your marketing campaign:
 
-Now, if no name is on record for a particular recipient, the email will read “Hello Valued Customer” instead of “Hello [%first_name%]”. You may choose any value to set as the default.
+<table class="table" style="table-layout:fixed">
+  <tr>
+    <th>Substitution Tag</th>
+    <th>Description</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td>`[%email%]`</td>
+    <td>The email address of the recipient</td>
+    <td>Personalization</td>
+  </tr>
+  <tr>
+    <td>`[%first_name%]`</td>
+    <td>The first name of the recipient</td>
+    <td>Personalization</td>
+  </tr>
+  <tr>
+    <td>`[%last_name%]`</td>
+    <td>The last name of the recipient</td>
+    <td>Personalization</td>
+  </tr>
+  <tr>
+    <td>`[Sender_Name]`</td>
+    <td>The name of the sender selected when sending your campaign</td>
+    <td>Sender Identity</td>
+  </tr>
+  <tr>
+    <td>`[Sender_City]`</td>
+    <td>The city on record for the sender selected when sending your campaign</td>
+    <td>Sender Identity</td>
+  </tr>
+  <tr>
+    <td>`[Sender_State]`</td>
+    <td>The state on record for the sender selected when sending your campaign</td>
+    <td>Sender Identity</td>
+  </tr>
+  <tr>
+    <td>`[Sender_Zip]`</td>
+    <td>The zip code on record for the sender selected when sending your campaign</td>
+    <td>Sender Identity</td>
+  </tr>
+  <tr>
+    <td>`[Unsubscribe]`</td>
+    <td>This tag will be replaced with a link allowing your recipient to be added to theunsubscribe group selected when sending your campaign.</td>
+    <td>Unsubscribe</td>
+  </tr>
+  <tr>
+    <td>`[Unsubscribe_Preferences]`</td>
+    <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various emailunsubscribe groupsyou offer.</td>
+    <td>Unsubscribe</td>
+  </tr>
+  <tr>
+    <td>`[Weblink]`</td>
+    <td>This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
+    <td>Weblink</td>
+  </tr>
+</table>
+
 
 {% anchor h3 %}
-Substitution Tags for Personalization
-{% endanchor %}
+Previewing your campaign
+{% endanchor h3 %}
 
-The following substitution tags are very useful when personalizing your content for each of your recipients.
+To preview your campaign or template, click the **Preview** button in the upper-left corner.
 
-* **[%email%]** - The email address of the recipient
-* **[%first_name%]** - The first name of the recipient
-* **[%last_name%]** - The last name of the recipient
+You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area. 
 
-{% anchor h3 %}
-Sender Identity, Unsubscribe Links, and Weblink Tags
-{% endanchor %}
+To view a plain-text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
-The sender identity, unsubscribe, and weblink substitution tags are very useful when building the footer for your campaign. Providing a quick and easy way for your recipients to unsubscribe from your marketing email along with being open about your identity and location not only ensures that you are [CAN-SPAM]({{root_url}}/Glossary/can_spam.html) compliant, but also builds trust with your recipients.
-
-* **[Sender_Name]** - The name of the sender selected when sending your campaign
-* **[Sender_City]** - The city on record for the sender selected when sending your campaign
-* **[Sender_State]** - The state on record for the sender selected when sending your campaign
-* **[Sender_Zip]** - The zip code on record for the sender selected when sending your campaign
-* **[Unsubscribe]** - This tag will be replaced with a link allowing your recipient to be added to the [unsubscribe group selected when sending your campaign]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
-* **[Unsubscribe_Preferences]** - This tag will be replaced with a link allowing your recipients to opt into or out of the various email [unsubscribe groups]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) you offer.
-* **[Weblink]** - This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.
-
-{% info %}
-You can use substitution tags for both web links and unsubscribe links.
-{% endinfo %}
-
-For a more detailed discussion of the various fields SendGrid provides, please read _[What is the difference between custom fields, reserved fields, and system fields?]({{root_url}}/Classroom/Basics/Marketing_Campaigns/contact_fields.html)_
-
-For help understanding the unsubscribe, sender ID, and weblink system tags, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html#-Miscellaneous-Substitution-Tags).
-
-{% anchor h2 %}
-WYSIWYG Toolbar
-{% endanchor %}
-
-When editing the text, text+image, or WYSIWYG modules you will have access to a general toolbar presenting some basic formatting and styling options.
-
-![]({{root_url}}/images/design_editor_7.png)
-
-<ul>
-  <li><p><img src="{{root_url}}/images/design_editor_8.png" style="display:inline"/> Clicking this icon will insert a table.</p></li>
-  <li><p><img src="{{root_url}}/images/design_editor_9.png" style="display:inline"/> Clicking this icon will open the image uploader.</p></li>
-  <li><p><img src="{{root_url}}/images/design_editor_10.png" style="display:inline"/> Clicking this icon will insert either a web link or an email link.</p></li>
-  <li><p><img src="{{root_url}}/images/design_editor_11.png" style="display:inline"/> Clicking this icon inserts a horizontal line or rule.</p></li>
-</ul>
-
-{% anchor h3 %}
-Uploading Images
-{% endanchor %}
-
-To upload an image, click the big plus icon or the upload button after clicking the image icon described above. Then drag your image to the upload box. SendGrid will show you the status of your upload and then show a thumbnail of your image in your image library.
-
-![]({{root_url}}/images/design_editor_12.png)
-
-{% info %}
-You can store up to 1,000 images in the image library. The max file size for each individual image is 10MB.
-{% endinfo %}
-
-{% anchor h3 %}
-Inserting an Image Into Your Template or Campaign
-{% endanchor %}
-
-To insert an image into your template, just click the image thumbnail in the library and you will see a form that will let you set how the image will be inserted.
-
-From here, you can add alt text, change the default height and width, and even set a default alignment for your images.
-
-![]({{root_url}}/images/design_editor_13.png)
-
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/templates.html">Marketing Templates</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
+When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
