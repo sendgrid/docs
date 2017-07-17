@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 60
+weight: 79
 title: Drag & Drop
 navigation:
   show: true

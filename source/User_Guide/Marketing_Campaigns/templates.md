@@ -79,12 +79,3 @@ Creating a template from a campaign
 1. From the left-hand navigation, select **Marketing Campaigns**, and then click **Campaigns**.
 1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**. 
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Campaigns</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html">Design Editor</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
