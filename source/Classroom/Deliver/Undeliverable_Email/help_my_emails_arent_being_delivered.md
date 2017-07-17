@@ -1,8 +1,8 @@
 ---
 seo:
   title: Help, My emails aren't being delivered!
-  description: Help, My emails aren't being delivered!
-  keywords: not, delivered, spam, reputation, getting, provisioning, provision, drop, inbox, email, out, report, client, bounce, invalid, deliverability, today, problem, delivery, clarification, complain
+  description: Learn about common reasons and solutions to why your message hasn't been delivered...
+  keywords: not, delivered, deferred, drop, inbox, email, out, report, client, bounce, invalid, deliverability, problem, delivery, 
 title: Help, My emails aren't being delivered!
 weight: 0
 layout: page
