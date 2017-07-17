@@ -27,7 +27,7 @@ Creating a New Template
 3. Select the editor you want to use, and then click **Continue**. 
 
 {% info %}
-Developers can use the [POST /campaigns API]([https://sendgrid.api-docs.io/v3.0/campaigns-api/create-a-campaign](https://sendgrid.api-docs.io/v3.0/campaigns-api/create-a-campaign)) to programmatically upload a template that you can then go in and edit using the Marketing Campaigns application.
+Developers can use the [POST /campaigns API](https://sendgrid.api-docs.io/v3.0/campaigns-api/create-a-campaign) to programmatically upload a template that you can then go in and edit using the Marketing Campaigns application.
 {% endinfo %}
 
 {% anchor h3 %}
