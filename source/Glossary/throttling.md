@@ -10,22 +10,22 @@ navigation:
   show: false
 ---
 
-So, you tried to send a bunch of email, and when you checked your [Event webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're looking at your [Email Reports]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html), and noticing a lot of addresses in your [Blocks]({{site.app_url}}/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
+So, you tried to send a bunch of emails, and when you checked your [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're looking at your [Email Reports]({{root_url}}/User_Guide/Delivery_Metrics/email_reports.html), and noticing a lot of addresses in your [Blocks]({{site.app_url}}/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
 
-Sendgrid systems have been designed with throttling in mind. We will continue to attempt to send messages for up to 72 hours until the message is delivered. Normally, it takes between a few minutes to a few hours until a deferred message is delivered, it's all up to the receiving mail server.
+SendGrid continues to attempt to send messages for up to 72 hours or until successful delivery. Normally, it takes between a few minutes and a few hours for a deferred messages successful delivery - it depends on the receiving mail server.
 
-Throttling is when a receiving server refuses a message, but with a specific explanation that tells our server it's only a temporary refusal. They will usually say things like "user is receiving mail at too great a rate right now, please try again later", or "user's mailbox is over quota." An important thing to note is that these errors are almost always a **400** sytle error, indicating a temporary failure. Unlike a **500** style, which indicates a permanent failure. 
+Throttling is when a receiving server refuses a message, but with a specific explanation that tells our server that it's only a temporary refusal. The error is usually something like "user is receiving mail at too great a rate right now, please try again later", or "user's mailbox is over quota." These errors are most often 400 errors - indicating a temporary failure. They are not often 500 errors - indicating a permanent failure. 
 
 {% anchor h2 %}
 What causes a deferral?
 {% endanchor %}
 
--   The receiving server doesn't recognize your IP, and is afraid you're sending spam. *This is why [warming up]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is so important, so that recipeint mail servers can become used to, and anticipate your messages.*
+-   The receiving server doesn't recognize your IP, and is afraid you're sending spam. *This is why [warming up]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is so important, so that recipeint mail servers can become used to and anticipate your messages.*
 
 -   The receiving server doesn't have any open ports to receive email.
 
 -   The recipient's mailbox is full.
 
--   Some recipients have marked your mail as spam, but not enough for the server to block you. Instead, they will refuse to receive more until they can learn more about how their users intereact with your messages.
+-   Some recipients have marked your mail as spam, but not enough for the server to block you. Instead, they will refuse to receive more until they can learn more about how their users interact with your messages.
 
-If a message is continuously deferred for 72 hours, it may mean that there is another issue such as the account being inactive, a full mailbox, or some other legitimate problem with the recipient. When we are unable to deliver a message after this time period, we convert these deferrals to "Blocks". Blocks are simply stored for reference, and do not behave like a supression list when sending to addresses that are on the list. 
+If a message is continuously deferred for 72 hours, it may mean that there is another issue such as the account being inactive, a full mailbox, or some other legitimate problem with the recipient. When we are unable to deliver a message after this time period, we convert these deferrals to "Blocks". Blocks are stored for reference and do not behave like a suppression list when sending to addresses that are on the list.
