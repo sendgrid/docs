@@ -17,7 +17,7 @@ Marketing Campaigns templates determine how the content of your campaign will be
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
 {% anchor h3 %}
-Creating a new template
+Creating a New Template
 {% endanchor h3 %}
 
 *To create a new template:*
