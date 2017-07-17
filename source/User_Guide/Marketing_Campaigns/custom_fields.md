@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 30
+weight: 55
 title: Custom Fields
 navigation:
   show: true
@@ -51,12 +51,3 @@ Deleting this custom field will delete all values for that field across your con
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
 the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will be removed as well.
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists & Segmentation</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
