@@ -157,5 +157,3 @@ Embedding SendGrid Analytics Into Your App
 {% endanchor h4 %}
 
 Just like SendGrid, Keen IO is 100% powered by APIs. This means you can embed rich analytics anywhere you can write code. Here’s a link to our [Native Analytics Guide](https://keen.io/guides/native-analytics/) that will give you step-by-step instructions on how to embed your SendGrid analytics into your product.
-
-*Hope you have some fun with data and happy hacking!*
