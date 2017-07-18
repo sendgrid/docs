@@ -24,7 +24,7 @@ Getting Started with the Design Editor
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 1. Click **Create Campaign**.  
 
-   To create a campaign using an existing campaign, find the campaign you want to use and click the action cog next to the campaign and then select Edit or Duplicate.
+   To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
    ![]({{root_url}}/images/duplicate_campaign.png)
    
 1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. 
@@ -32,8 +32,7 @@ Getting Started with the Design Editor
    For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
 
 1. Select **Design Editor**, and then click **Continue**. 
-
-   The Design Editor opens.
+The Design Editor opens.
 
 {% anchor h3 %}
 Drag & drop modules
