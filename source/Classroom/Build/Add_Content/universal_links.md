@@ -181,8 +181,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
     ![]({{root_url}}/images/universal_links_4.png)
 
-    * **Forward Headers:** Forward all, cache based on all
-    * **Forward Query Strings:** Yes
+    * **Forward Headers:** Yes
+    * **Forward Query Strings:** Forward all, cache based on all
 18. Under the **Distribution Settings** section, set the fields as follows:
 
     ![]({{root_url}}/images/universal_links_5.png)

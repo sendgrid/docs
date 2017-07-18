@@ -58,7 +58,7 @@ You may choose from two different verification methods when using two-factor aut
   </div>
 </p>
 
-To set up Two-Factor Authentication, navigate to your **Settings**, and click **Two-Factor Authentication**. From this page you will be able to see an overview of your Two-Factor Authentication settings, along with any settings that you have created for Credentialed Users.
+To set up Two-Factor Authentication, navigate to your **Settings**, and click **Two-Factor Authentication**. From this page, you will be able to see an overview of your Two-Factor Authentication settings, along with any settings that you have created for Credentialed Users.
 
 To add a new Two-Factor Authentication setting, click **Add Two-Factor Authentication**.
 
