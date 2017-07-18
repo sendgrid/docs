@@ -100,7 +100,7 @@ Drag & Drop Module Descriptions and Styles
   </tr>
   <tr>
     <td>Social</td>
-    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured.Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
+    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme. You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
 </table>
@@ -147,8 +147,49 @@ If you are writing your own custom HTML that you plan on importing into the desi
   </tr>
   <tr>
     <td>Image &amp; Text</td>
-    <td>missing?</td>
+    <td>{% codeblock lang:html %}
+<table role="module" data-type="imagetext">
+  <tr>
+    <td>
+      <table>
+        <tr role="module-content">
+          <td class="templateColumnContainer" >
+            <table>
+              <tr>
+                <td class="leftColumnContent" role="column-one">
+                  <table role="module" data-type="image">
+                    <tr>
+                      <td role="module-content">
+                        [MODULE CONTENT]
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="templateColumnContainer" >
+            <table>
+              <tr>
+                <td class="rightColumnContent" role="column-two">
+                  <table role="module" data-type="text">
+                    <tr>
+                      <td role="module-content">
+                        [MODULE CONTENT]
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
   </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>  
   <tr>
     <td>Text</td>
     <td>{% codeblock lang:html %}
