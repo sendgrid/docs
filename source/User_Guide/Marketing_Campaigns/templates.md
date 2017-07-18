@@ -40,12 +40,12 @@ You can only edit custom templates (templates that you have created yourself or 
  
 1. From the left-hand navigation, select **Marketing Campaigns**, and then click **Templates**. 
  
-If you wish to create a custom template using either drag and drop or entering your HTML, select **BLANK TEMPLATE**. 
+   If you wish to create a custom template using either drag and drop or entering your HTML, select **BLANK TEMPLATE**. 
 
 1. Navigate to the template you want to edit.   
 1. Click the **action menu** and select **Edit**. 
 
-This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
+   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
 
 {% anchor h3 %}
 Duplicating a SendGrid Template
