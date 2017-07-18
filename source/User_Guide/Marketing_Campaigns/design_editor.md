@@ -316,8 +316,10 @@ Adding Images
 *To insert an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**. 
-1. Drag and drop the **Images** module into your content area. This opens a modal window where you can select images from the image library.  
-1. Select the image you want to add to your campaign. This opens the Image Details tab.  
+1. Drag and drop the **Images** module into your content area.  
+A window opens where you can select images from the image library.  
+1. Select the image you want to add to your campaign. 
+The Image Details tab opens.  
 1. Insert your image in the campaign by clicking **Save Image**. 
   
 {% anchor h3 %}
@@ -327,12 +329,13 @@ Editing an HTML module
 *To edit module HTML:*
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon. 
-
-   A modal opens where you can edit the module’s HTML.
+A window opens where you can edit the module’s HTML.
 
 1. When you are finished editing the HTML, click **Update**.  
 
-   If you make any structural code changes, you need to convert the module to a code module.
+{% info %}
+If you make any structural code changes, you need to convert the module to a code module.
+{% endinfo %}If you make any structural code changes, you need to convert the module to a code module.
 
 {% anchor h3 %}
 Using Custom HTML
@@ -349,9 +352,11 @@ Importing HTML
 1. Navigate to the **Build** tab in the left-hand navigation. 
 1. Scroll down and select the **Advanced** drop-down menu.  
 1. Expand the option titled **Import/Export**.  
-1 Click **Import**.
+1. Click **Import**.
    A window opens where you can paste in your own HTML.
+   
    ![]({{root_url}}/images/import_custom_html.png)
+   
 1. Paste or enter the HTML you want to use, and then click **Import**. 
   
 {% warning %}
@@ -359,8 +364,9 @@ Any HTML that you import replaces all existing content in your campaign or templ
 {% endwarning %}
 
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
-- First, we look for any HTML elements that contain the attribute role="modules-container".  
-- Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
+
+  * First, we look for any HTML elements that contain the attribute role="modules-container".  
+  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
@@ -370,9 +376,9 @@ Any HTML outside an element with the "modules-container" attribute will be disca
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
 {% endwarning %}
   
-If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template— allowing you to move and edit them as you normally would.
+If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template. This allows you to move and edit them as you normally would.
 
-However, if your custom HTML is not compatible with drag & drop, then your imported HTML will be imported as a text module.
+However, if your custom HTML is not compatible with drag & drop  then your imported HTML will be imported as a text module.
 
 {% anchor h3 %}
 Example HTML
