@@ -19,7 +19,7 @@ SendGrid doesn’t compromise when it comes to compromised accounts and neither 
 - Don’t use easily guessable words or phrases such as personal information, your company name, or abbreviations. 
 - Don't expose your password on Github!
 
-Consider setting up [Teammates]({{root_url}}/docs/User_Guide/Settings/teammates.html) to create, manage, and restrict additional sets of credentials to more precisely grant permissions within your SendGrid account.
+Set up Teammates to create, manage, and restrict additional sets of credentials to more precisely grant permissions within your SendGrid account.
 
 {% anchor h3 %} 2) Don't let web browsers automatically save your SendGrid password. {% endanchor %} 
 
