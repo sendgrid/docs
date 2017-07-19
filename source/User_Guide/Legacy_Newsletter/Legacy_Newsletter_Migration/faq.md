@@ -130,7 +130,9 @@ If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you 
 Where do I choose how to pay for Marketing Campaigns?
 {% endanchor %}
 
-You choose the [Plan & Billing Details page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account.
+Visit the [Choose How You Pay page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account. If that link does not work for you, Navigate to **Settings** then **Plan and Billing Details**, then scroll to Marketing Campaigns and click **Learn More**. 
+
+Note: To be eligible for this pricing offer you need to have sent email via Legacy Newsletter between August 1, 2016 and March 30, 2017. 
 
 {% anchor h3 %}
 How can I estimate what it will cost to use Marketing Campaigns?
