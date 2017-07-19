@@ -18,6 +18,7 @@ install:
 - travis_retry npm install
 - travis_retry bower install
 - travis_retry bundle install
+- npm install -g bower
 before_script:
 - cp _config.sample.yml _config.yml
 - sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
