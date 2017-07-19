@@ -12,6 +12,7 @@ before_install:
   'source/_data/version.yml' ; fi"
 - sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
   'source/_data/version.yml' ; fi"
+- npm install -g bower
 install:
 - nvm install 6.10.1
 - nvm use 6.10.1
