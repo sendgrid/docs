@@ -18,7 +18,7 @@ Getting Started with the Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 
-1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the action cog next to the campaign and then select **Edit** or **Duplicate**. 
+1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. 
 
 ![]({{root_url}}/images/duplicate_campaign.png)
 
