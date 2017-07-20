@@ -64,7 +64,7 @@ New users who are establishing a reputation with their default dedicated IP shou
 Automated IP Warmup
 {% endanchor %}
 
-Have [Support](https://support.sendgrid.com/hc/en-us) place your IP address into [Automated IP Warmup]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html) which will automatically throttle traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html). This same step can also be performed using the API, or during the process of [purchasing a new dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html).
+You can place your IP address into [Automated IP Warmup]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html) within the IP Addresses section under Settings, which will automatically throttle traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html). This same step can also be performed using the API, or during the process of [purchasing a new dedicated IP address]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html).
 
 {% anchor h3 %}
 Automated IP Warmup API

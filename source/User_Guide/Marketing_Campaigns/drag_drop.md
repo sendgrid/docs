@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 60
+weight: 79
 title: Drag & Drop
 navigation:
   show: true
@@ -357,12 +357,3 @@ If you are converting HTML to use our Drag & Drop modules, please add the follow
 {% endcodeblock %}
 
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html">Design Editor</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-        <a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">Sender Identites</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

@@ -151,7 +151,7 @@ Changing or Replacing a Domain Whitelabel
 Examples of Why You Might Change or Replace a Domain Whitelabel
 {% endanchor %}
 
-1. If you were a SendGrid customer before May 27th, 2015 and you want to [update to the new whitelabel system]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html)
+1. If you were a SendGrid customer before May 27th, 2015 and you want to update to the new whitelabel system.
 2. You want to change your domain whitelabel
 3. [You add IP address to your SendGrid account]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html)
 
