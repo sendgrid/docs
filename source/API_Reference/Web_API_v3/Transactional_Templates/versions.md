@@ -34,7 +34,7 @@ Create a new version for a template.
   {% parameter subject Yes '`<%subject%>` tag must be present' 'Subject of the new version' %}
   {% parameter html_content Yes '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for html content.' 'HTML content of the new version.' %}
   {% parameter plain_content Yes '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for plain content.' 'Text/plain content of the new version.' %}
-  {% parameter editor No '`code` or `design`' 'UI Editor associated with the template version.  If not assigned, the editor will need to be selected before editing in the UI.' %}
+  {% parameter editor No '`code`' 'Editor associated with the template version.' %}
   {% parameter active No '`0` Inactive, `1` Active' 'Set the new version as the active version associated with the template. Only one version of a template can be active. The first version created for a template will automatically be set to Active.' %}
 {% endparameters %}
 
@@ -50,7 +50,7 @@ HTTP/1.1 201 OK
   "html_content": "<%body%>",
   "plain_content": "<%body%>",
   "subject": "<%subject%>",
-  "editor": "design",
+  "editor": "code",
   "updated_at": "2014-03-19 18:56:33"
 }
   {% endv3response %}
@@ -117,7 +117,7 @@ Edit a version.
   {% parameter subject No '`<%subject%>` tag must be present' 'Updated subject for the new version' %}
   {% parameter html_content No '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for html content.' 'HTML content of the new version.' %}
   {% parameter plain_content No '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for plain content.' 'Text/plain content of the new version.' %}
-  {% parameter editor No '`code` or `design`' 'UI Editor associated with the template version.  This may only be assigned if editor is null.' %}
+  {% parameter editor No '`code`' 'Editor associated with the template version.  This may only be assigned if editor is null.' %}
   {% parameter active No '`0` Inactive, `1` Active' 'Sets the version as the active version on the template. Only one version of a template can be active.' %}
 {% endparameters %}
 
