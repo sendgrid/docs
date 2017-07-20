@@ -9,6 +9,7 @@ layout: page
 navigation:
   show: true
 ---
+
 The SendGrid [Event Webhook](https://sendgrid.com/docs/API_Reference/Webhooks/event.html) lets you stream all of the events that happen within an email directly to Keen IO for real-time analysis and long term raw storage. These events are things like Delivered, Opened, Clicked, Marked as Spam, and [lots more](https://sendgrid.com/docs/API_Reference/Webhooks/event.html)!
 
 It only takes a few minutes to start streaming data over and once you do you can start analyzing and visualizing your data in many different ways.
@@ -45,7 +46,6 @@ Step 2: Activate SendGrid's Event Notification App
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, aptly named "SendGrid Email Events", will be created within your project.
 
-
 {% anchor h4 %}
 Step 3: Send a test email!
 {% endanchor h4 %}
@@ -76,7 +76,6 @@ Enter `count` as the “Analysis Type”, select `SendGrid Email Events` as your
 
 The type of analysis you can do is vast, here’s a [link to read up on what those are](https://keen.io/docs/compute/). Adding an “Interval” will give you a line graph over time, you can “Group By” properties to view results categorically, and you can add “Filters” to refine the scope of your query.
 
-
 {% anchor h3 %}
 Saving Your Query & Making Your First Dashboard
 {% endanchor h3 %}
@@ -100,7 +99,7 @@ Congratulations! You’ve created your first dashboard!
 
 Now start digging into your data and creating more custom analyses & visualizations.
 
-{% anchor h3 %}
+% anchor h3 %}
 Doing Drilldowns and Reporting on Your Data
 {% endanchor h3 %}
 
@@ -120,7 +119,6 @@ Some example uses for this analysis type:
 - List all of the bounced emails from the last six months
 
 ![Download Select Unique Results to CSV]({{root_url}}/images/keen/download_select_unique.png)
-
 
 {% anchor h4 %}
 Extractions
@@ -150,7 +148,6 @@ You can add as many filters as you’d like to make your funnel more targeted.
 
 Here’s an example funnel:
 ![Three Step Email Funnel]({{root_url}}/images/keen/funnel.png)
-
 
 {% anchor h4 %}
 Embedding SendGrid Analytics Into Your App
