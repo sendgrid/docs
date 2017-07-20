@@ -26,9 +26,11 @@ Getting Started with the Code Editor
 
 1. Select **Code Editor**, and then click **Continue**. 
 
-1. If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor. The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
+    If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.       The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
-1. Preview your campaign or template by clicking the **Preview** button. You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button. 
+1. Preview your campaign or template by clicking **Preview**. 
+
+You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button. 
 
 {% warning %}
 Once you create a new campaign or template in the Code Editor, you cannot switch to the Design Editor.
