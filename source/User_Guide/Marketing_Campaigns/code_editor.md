@@ -18,16 +18,19 @@ Getting Started with the Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 
-1. Click **Create Campaign**. To create a campaign using an existing campaign, find the campaign you want to use and click the action cog next to the campaign and then select **Edit** or **Duplicate**. 
+1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. 
+
 ![]({{root_url}}/images/duplicate_campaign.png)
 
 1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
 
 1. Select **Code Editor**, and then click **Continue**. 
 
-1. If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor. The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
+    If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.       The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
-1. Preview your campaign or template by clicking the **Preview** button. You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button. 
+1. Preview your campaign or template by clicking **Preview**. 
+
+You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button. 
 
 {% warning %}
 Once you create a new campaign or template in the Code Editor, you cannot switch to the Design Editor.
@@ -37,9 +40,9 @@ Once you create a new campaign or template in the Code Editor, you cannot switch
 Uploading Images
 {% endanchor h2 %}
 
-1. Select the **Images** tab, and click **Manage Image Library**. This opens a modal window where you can upload images to your image library.  
+1. Select the **Images** tab, and click **Manage Image Library**. A window opens where you can upload images to your image library.  
 
-1. Select the image you want from your image library. This takes you to the Image Details tab.  
+1. Select the image you want from your image library. The Image Details tab appears.  
 
 1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**.  
 
@@ -104,12 +107,12 @@ You can add the following substitution tags to your marketing campaign:
   </tr>
   <tr>
     <td>`[Unsubscribe]`</td>
-    <td>This tag will be replaced with a link allowing your recipient to be added to theunsubscribe group selected when sending your campaign.</td>
+    <td>This tag will be replaced with a link allowing your recipient to be added to the unsubscribe group selected when sending your campaign.</td>
     <td>Unsubscribe</td>
   </tr>
   <tr>
     <td>`[Unsubscribe_Preferences]`</td>
-    <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various emailunsubscribe groupsyou offer.</td>
+    <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various email unsubscribe groups you offer.</td>
     <td>Unsubscribe</td>
   </tr>
   <tr>
@@ -119,7 +122,7 @@ You can add the following substitution tags to your marketing campaign:
   </tr>
 </table>
 
-For contacts with no entry in a custom field, the substitution tag will appear blank. To set a default value, use the following pattern:
+For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
 `[%first_name | Valued Customer%]`
 

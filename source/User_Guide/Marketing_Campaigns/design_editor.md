@@ -9,11 +9,6 @@ seo:
   override: true
   description:
 ---
-[Getting Started with the Design Editor](#-Getting-Started-with-the-Design-Editor)
-[Drag & drop modules](#-Drag-&-drop-modules)
-  - [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
-  - [Code Modules](#-Code-Modules)
-  - [Custom Modules](#-Custom-Modules)
 
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
@@ -24,7 +19,7 @@ Getting Started with the Design Editor
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 1. Click **Create Campaign**.  
 
-   To create a campaign using an existing campaign, find the campaign you want to use and click the action cog next to the campaign and then select Edit or Duplicate.
+   To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
    ![]({{root_url}}/images/duplicate_campaign.png)
    
 1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. 
@@ -32,8 +27,7 @@ Getting Started with the Design Editor
    For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
 
 1. Select **Design Editor**, and then click **Continue**. 
-
-   The Design Editor opens.
+The Design Editor opens.
 
 {% anchor h3 %}
 Drag & drop modules
@@ -100,7 +94,7 @@ Drag & Drop Module Descriptions and Styles
   </tr>
   <tr>
     <td>Social</td>
-    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured.Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme.You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
+    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme. You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
 </table>
@@ -147,8 +141,49 @@ If you are writing your own custom HTML that you plan on importing into the desi
   </tr>
   <tr>
     <td>Image &amp; Text</td>
-    <td>missing?</td>
+    <td>{% codeblock lang:html %}
+<table role="module" data-type="imagetext">
+  <tr>
+    <td>
+      <table>
+        <tr role="module-content">
+          <td class="templateColumnContainer" >
+            <table>
+              <tr>
+                <td class="leftColumnContent" role="column-one">
+                  <table role="module" data-type="image">
+                    <tr>
+                      <td role="module-content">
+                        [MODULE CONTENT]
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td class="templateColumnContainer" >
+            <table>
+              <tr>
+                <td class="rightColumnContent" role="column-two">
+                  <table role="module" data-type="text">
+                    <tr>
+                      <td role="module-content">
+                        [MODULE CONTENT]
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
   </tr>
+</table>
+{% endcodeblock %}</td>
+  </tr>  
   <tr>
     <td>Text</td>
     <td>{% codeblock lang:html %}
@@ -275,8 +310,10 @@ Adding Images
 *To insert an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**. 
-1. Drag and drop the **Images** module into your content area. This opens a modal window where you can select images from the image library.  
-1. Select the image you want to add to your campaign. This opens the Image Details tab.  
+1. Drag and drop the **Images** module into your content area.  
+A window opens where you can select images from the image library.  
+1. Select the image you want to add to your campaign. 
+The Image Details tab opens.  
 1. Insert your image in the campaign by clicking **Save Image**. 
   
 {% anchor h3 %}
@@ -286,12 +323,13 @@ Editing an HTML module
 *To edit module HTML:*
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon. 
-
-   A modal opens where you can edit the module’s HTML.
+A window opens where you can edit the module’s HTML.
 
 1. When you are finished editing the HTML, click **Update**.  
 
-   If you make any structural code changes, you need to convert the module to a code module.
+{% info %}
+If you make any structural code changes, you need to convert the module to a code module.
+{% endinfo %}If you make any structural code changes, you need to convert the module to a code module.
 
 {% anchor h3 %}
 Using Custom HTML
@@ -308,9 +346,11 @@ Importing HTML
 1. Navigate to the **Build** tab in the left-hand navigation. 
 1. Scroll down and select the **Advanced** drop-down menu.  
 1. Expand the option titled **Import/Export**.  
-1 Click **Import**.
+1. Click **Import**.
    A window opens where you can paste in your own HTML.
+   
    ![]({{root_url}}/images/import_custom_html.png)
+   
 1. Paste or enter the HTML you want to use, and then click **Import**. 
   
 {% warning %}
@@ -318,8 +358,9 @@ Any HTML that you import replaces all existing content in your campaign or templ
 {% endwarning %}
 
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
-- First, we look for any HTML elements that contain the attribute role="modules-container".  
-- Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
+
+  * First, we look for any HTML elements that contain the attribute role="modules-container".  
+  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
@@ -329,9 +370,9 @@ Any HTML outside an element with the "modules-container" attribute will be disca
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
 {% endwarning %}
   
-If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template— allowing you to move and edit them as you normally would.
+If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template. This allows you to move and edit them as you normally would.
 
-However, if your custom HTML is not compatible with drag & drop, then your imported HTML will be imported as a text module.
+However, if your custom HTML is not compatible with drag & drop  then your imported HTML will be imported as a text module.
 
 {% anchor h3 %}
 Example HTML
