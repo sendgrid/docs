@@ -1,20 +1,18 @@
 ---
 layout: page
 weight: 99
-title: New Beta Editors
+title: New Editing Experience
 navigation:
   show: true
 seo:
-  title: New Beta Editors
+  title: New Editing Experience
   override: true
   description: With SendGrid Marketing Campaign’s new editing experience you now have complete control over your editing environment--you can choose between an optimized visual design editor and a pure HTML code editor.
 ---
 
-{% warning %}
-The new Marketing Campaigns code and design editors are currently in beta.
-{% endwarning %}
 
-<iframe src="https://player.vimeo.com/video/216023771" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/225867784" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% anchor h2 %}
 What is the new campaign and template editing experience?
@@ -28,7 +26,7 @@ The **design editor** offers users powerful drag & drop WYSIWYG editing tools ma
 
 For more information on getting started with the new editing experience, check out:
 
-* [Designing and Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+* [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
 * [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html)
     * [Getting Started]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Getting-Started-with-the-Design-Editor)
 * [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html)
@@ -48,16 +46,16 @@ Frequently Asked Questions
 {% endanchor %}
 
 {% anchor h3 %}
-How do I opt out of the beta?
+How do I use the templates I created in the previous editor?
 {% endanchor %}
 
-When you open one of your old campaigns or templates in the beta editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the old editor.
+When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
 
 {% anchor h3 %}
-What happens to my old campaigns and templates?
+What happens to my exisiting campaigns and templates?
 {% endanchor %}
 
-For the duration of the beta, you continue to have the option of opening your old campaigns and templates in the old editor. When you open an old campaign or template in the beta editor, it makes a duplicate of that campaign or template and opens the duplicate in the beta editor. You can't open the duplicate in the old editor, but you can open your originals in the old editor.
+For now, you can continue to open your campaigns and templates in the previous editor. When you open a campaign or template you created in the previous editor in the new editor, it makes a duplicate of that campaign or template and opens it in the editor. You can't open the duplicate in the previous editor, but you can open your originals in the prvious editor.
 
 {% anchor h3 %}
 Can I use both editors?
@@ -65,13 +63,12 @@ Can I use both editors?
 
 When opening a pre-existing campaign or template, you are given the option of opening the duplicate of that campaign or template in either the design editor or the code editor. Once you have made your selection, you will not be able to switch between the design and code editors when editing _that specific campaign or template_.
 
-However, for the duration of the beta, you can open your original campaigns and templates in the old editor.
 
 {% anchor h3 %}
-Can I move a campaign or template created in the beta editor to the old editor?
+Can I open a campaign or template created in the new editor with the previous editor?
 {% endanchor %}
 
-You cannot move a campaign/template from the beta editor to the old editor. Any new campaigns/templates created in the beta editor will only be accessible from the beta editor. However, you can still open your old campaigns/templates in the old editor.
+You cannot open a campaign/template created in the new editor with the previous editor. Any new campaigns/templates created in the new editor will only be accessible from the new editor. However, you can still open your existing campaigns/templates in the previous editor.
 
 {% anchor h3 %}
 Why did I get the error "We were unable to detect any drag & drop modules?"
