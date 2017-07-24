@@ -43,26 +43,22 @@ When you click Add Version, you will be taken to the editor.  From here, you can
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
 {% anchor h2 %}
-Editing Your Template
+Editing Your HTML Template
 {% endanchor %}
 
 {% info %}
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 {% endinfo %}
 
-To add a template, click the “Code” button in the header. Copy and paste your HTML code into the dark-background code editor, like so:
-
-![](/images/templates_create_edit_5.png "Editing your Template")
+To add a template, open a new template in the Code Editor. Copy and paste your HTML code into the dark-background code editor.
 
 If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 
-![](/images/templates_create_edit_6.png)
+When you’re done editing, click **Save** to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
 
-When you’re done editing, just hit the save button to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
-
-To get the to the plain text editor, find the text icon in the editor header bar.
-
-![](/images/templates_create_edit_7.png "Design/Code Switch")
+{% info %}
+You can also use the Design Editor to create and edit templates.
+{% endinfo %}
 
 {% anchor h2 %}
 Preview and Test Your Template
