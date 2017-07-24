@@ -9,11 +9,6 @@ seo:
   override: true
   description:
 ---
-[Getting Started with the Design Editor](#-Getting-Started-with-the-Design-Editor)
-[Drag & drop modules](#-Drag-&-drop-modules)
-  - [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
-  - [Code Modules](#-Code-Modules)
-  - [Custom Modules](#-Custom-Modules)
 
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
