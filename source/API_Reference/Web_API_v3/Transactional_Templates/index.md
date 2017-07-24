@@ -8,7 +8,7 @@ navigation:
 ---
 
 The transactional templates API lets you programmatically [create and manage
-templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html) for your transactional email. You may [version these templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html), then send them through SendGrid's [SMTP API]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html), the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), or the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html) for email you send via SendGrid's Email API. You may [version these templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html), then send them through SendGrid's [SMTP API]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html), the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), or the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 
 **[Templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/templates.html)**
 
