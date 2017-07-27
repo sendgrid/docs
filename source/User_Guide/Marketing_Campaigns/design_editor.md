@@ -490,24 +490,6 @@ Following is an example of how you should structure and organize your custom HTM
 </div>
 {% endcodeblock %}
 
-{% anchor h3 %}
-Exporting HTML from the design editor
-{% endanchor h3 %}
-
-*To export the HTML of a template from the design editor:*
-
-1. Navigate to the **Build** tab in the left-hand navigation.
-1. Scroll down and select the **Advanced** drop-down menu.  
-1. Expand the option titled **Import/Export**. This starts the raw HTML download of the template, excluding images.
-
-SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template's HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
-
-*To open your exported HTML in the code editor:*
-
-1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.  
-1. Click **New Campaign**, and then select **Blank Template**.
-1. Select **Code Editor**.  
-1. Paste the raw SendGrid template HTML into the code editor.
 
 {% anchor h3 %}
 Using Substitution Tags
@@ -524,61 +506,61 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 You can add the following substitution tags to your marketing campaign:
 
 <table class="table" style="table-layout:fixed">
-  <tr>
-    <th>Substitution Tag</th>
-    <th>Description</th>
-    <th>Type</th>
-  </tr>
-  <tr>
-    <td>`[%email%]`</td>
-    <td>The email address of the recipient</td>
-    <td>Personalization</td>
-  </tr>
-  <tr>
-    <td>`[%first_name%]`</td>
-    <td>The first name of the recipient</td>
-    <td>Personalization</td>
-  </tr>
-  <tr>
-    <td>`[%last_name%]`</td>
-    <td>The last name of the recipient</td>
-    <td>Personalization</td>
-  </tr>
-  <tr>
-    <td>`[Sender_Name]`</td>
-    <td>The name of the sender selected when sending your campaign</td>
-    <td>Sender Identity</td>
-  </tr>
-  <tr>
-    <td>`[Sender_City]`</td>
-    <td>The city on record for the sender selected when sending your campaign</td>
-    <td>Sender Identity</td>
-  </tr>
-  <tr>
-    <td>`[Sender_State]`</td>
-    <td>The state on record for the sender selected when sending your campaign</td>
-    <td>Sender Identity</td>
-  </tr>
-  <tr>
-    <td>`[Sender_Zip]`</td>
-    <td>The zip code on record for the sender selected when sending your campaign</td>
-    <td>Sender Identity</td>
-  </tr>
-  <tr>
-    <td>`[Unsubscribe]`</td>
-    <td>This tag will be replaced with a link allowing your recipient to be added to theunsubscribe group selected when sending your campaign.</td>
-    <td>Unsubscribe</td>
-  </tr>
-  <tr>
-    <td>`[Unsubscribe_Preferences]`</td>
-    <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various emailunsubscribe groupsyou offer.</td>
-    <td>Unsubscribe</td>
-  </tr>
-  <tr>
-    <td>`[Weblink]`</td>
-    <td>This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
-    <td>Weblink</td>
-  </tr>
+ <tr>
+   <th>Substitution Tag</th>
+   <th>Description</th>
+   <th>Type</th>
+ </tr>
+ <tr>
+   <td>`[%email%]`</td>
+   <td>The email address of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td>`[%first_name%]`</td>
+   <td>The first name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td>`[%last_name%]`</td>
+   <td>The last name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td>`[Sender_Name]`</td>
+   <td>The name of the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td>`[Sender_City]`</td>
+   <td>The city on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td>`[Sender_State]`</td>
+   <td>The state on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td>`[Sender_Zip]`</td>
+   <td>The zip code on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td>`[Unsubscribe]`</td>
+   <td>This tag will be replaced with a link allowing your recipient to be added to the unsubscribe group selected when sending your campaign.</td>
+   <td>Unsubscribe</td>
+ </tr>
+ <tr>
+   <td>`[Unsubscribe_Preferences]`</td>
+   <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various email unsubscribe groups you offer.</td>
+   <td>Unsubscribe</td>
+ </tr>
+ <tr>
+   <td>`[Weblink]`</td>
+   <td>This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
+   <td>Weblink</td>
+ </tr>
 </table>
 
 
