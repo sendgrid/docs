@@ -374,28 +374,18 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
   </tr>
   <tr>
     <td>Email Body</td>
-    <td>Background Color</td>
-    <td>This is the color for the background of your entire campaign/template.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Text Color</td>
-    <td>This is the color of all text in your campaign/template.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Link Color</td>
-    <td>This is the color of all links in your campaign/template.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Font Family</td>
-    <td>This is the font family to be used for all text in your campaign/template.</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Font Size</td>
-    <td>This is the default font size to be used for all text in your campaign/template.</td>
+    <td><p>Background Color</p>
+        <p>Text Color</p>
+        <p>Link Color</p>
+        <p>Font Family</p>
+        <p>Font Size</p>
+    </td>
+    <td><p>This is the color for the background of your entire campaign/template.</p>
+        <p>This is the color of all text in your campaign/template.</p>
+        <p>This is the color of all links in your campaign/template.</p>
+        <p>This is the font family to be used for all text in your campaign/template.</p>
+        <p>This is the default font size to be used for all text in your campaign/template.</p>
+        </td>
   </tr>
   <tr>
     <td>Content Container</td>
