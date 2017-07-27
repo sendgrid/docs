@@ -14,11 +14,11 @@ navigation:
 Setup/Configuration
 {% endanchor %}
 
-You can purchase a dedicated IP address from the Dedicated IP Addresses Settings page or from your Plan & Billing Details page.
+You can purchase a dedicated IP address from the IP Addresses Settings page or from your Plan & Billing Details page.
 
 To purchase a dedicated IP:
 
-* Navigate to Settings in the left hand navigation menu, select Dedicated IP Addresses
+* Navigate to Settings in the left hand navigation menu, select IP Addresses
 * Here you'll see a list of your current dedicated IPs. Your IPs in warmup will have a 'warmup' label
 * Click 'Add an IP Address'
 * Select the number of IP addresses you would like to purchase.

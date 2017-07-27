@@ -104,5 +104,4 @@ Related Resources
 * [How to Setup an IP Whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_ip_whitelabel.html)
 * [Whitelabel User Guide]({{root_url}}/User_Guide/Settings/Whitelabel/index.html)
 * [Domain Whitelabel API Reference]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/domains.html)
-* [Upgrading Your Whitelabel]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html)
 * [Whitelabel Video Tutorials]({{root_url}}/Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html)

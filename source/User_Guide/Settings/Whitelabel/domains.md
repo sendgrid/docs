@@ -77,7 +77,7 @@ If you add a new default domain whitelabel for a domain that is already whitelab
 Your domain whitelabel will not affect your email link whitelabel and vice versa.
 {% endinfo %}
 
-The domain is the root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel subdomain.example.com so the root domains match.
+The domain is the root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel subdomain.example.com, so the root domains match.
 
 {% anchor h3 %}
 Use New Domain
@@ -151,7 +151,7 @@ Changing or Replacing a Domain Whitelabel
 Examples of Why You Might Change or Replace a Domain Whitelabel
 {% endanchor %}
 
-1. If you were a SendGrid customer before May 27th, 2015 and you want to [update to the new whitelabel system]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html)
+1. If you were a SendGrid customer before May 27th, 2015 and you want to update to the new whitelabel system.
 2. You want to change your domain whitelabel
 3. [You add IP address to your SendGrid account]({{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html)
 
