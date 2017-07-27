@@ -38,7 +38,9 @@ Drag & drop editing helps you swiftly build your campaign using pre-built conten
 *To add a drag & drop module:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
+
    ![]({{root_url}}/images/design_editor_drag_drop.png)
+
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.  
 3. Edit the module settings and add your custom content to build your campaign.   
 
@@ -94,7 +96,7 @@ Drag & Drop Module Descriptions and Styles
   </tr>
   <tr>
     <td>Social</td>
-    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. The module displays when an icon link has been updated to point to a social media destination, providing a visual indicator that links have been properly configured. Once you have selected your desired icons, you can adjust the size, color, and border radius of the icons to match a template or campaign theme. You must specify the URL for each icon. Any icons without a URL in the link field will not appear in the campaign preview, or your delivered campaign.</td>
+    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
 </table>
@@ -106,7 +108,7 @@ Editing Module HTML
 *To edit Module HTML:*
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon.
-A window opens where you can edit the module’s HTML.
+A window opens where you can edit the module HTML.
 
 1. When you are finished editing the HTML, click **Update**.  
 
@@ -128,7 +130,7 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 Building a Custom Drag & Drop Module
 {% endanchor h3 %}
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [custom module code examples](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#bookmark=id.spsaxe487t3d) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules, then your code will be imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
 *To import your own custom HTML:*
 
@@ -143,10 +145,10 @@ If you are writing your own custom HTML that you plan on importing into the desi
 1. Paste or enter the HTML you want to use, and then click **Import**.
 
 {% warning %}
-Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](code_editor.html).
+Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](Code-Modules).
 {% endwarning %}
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
 
   * First, we look for any HTML elements that contain the attribute role="modules-container".  
   * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element.
@@ -154,7 +156,7 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
 {% warning %}
-Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](https://docs.google.com/document/d/1CDiBMn8ZHNZxf_lF6suV1jjX_ij5h3Gideskt1gV3Rg/edit#heading=h.fyr366oz0yxo) will be included.
+Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) will be included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
 {% endwarning %}
@@ -178,6 +180,10 @@ Following is an example of how you should structure and organize your custom HTM
   </table>
 </div>
 {% endcodeblock %}
+
+{% anchor h3 %}
+Drag & Drop Code Examples
+{% endanchor h3 %}
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -369,36 +375,22 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
 <table class="table" style="table-layout:fixed">
 <tr>
     <th>Global Style</th>
-    <th>Style Options</th>
-    <th>Description</th>
-  </tr>
+    <th>Style Options</th>  
+</tr>
   <tr>
-    <td>Email Body</td>
-    <td><p>Background Color</p>
-        <p>Text Color</p>
-        <p>Link Color</p>
-        <p>Font Family</p>
-        <p>Font Size</p>
+    <td><b>Email Body</b></td>
+    <td><p><b>Background Color</b> - This is the color for the background of your entire campaign/template.</p>
+        <p><b>Text Color</b> - This is the color of all text in your campaign/template. </p>
+        <p><b>Link Color</b> - This is the color of all links in your campaign/template.</p>
+        <p><b>Font Family</b> - This is the font family to be used for all text in your campaign/template.</p>
+        <p><b>Font Size</b> - This is the default font size to be used for all text in your campaign/template.</p>
     </td>
-    <td><p>This is the color for the background of your entire campaign/template.</p>
-        <p>This is the color of all text in your campaign/template.</p>
-        <p>This is the color of all links in your campaign/template.</p>
-        <p>This is the font family to be used for all text in your campaign/template.</p>
-        <p>This is the default font size to be used for all text in your campaign/template.</p>
-        </td>
   </tr>
   <tr>
-    <td>Content Container</td>
-    <td>Width</td>
-    <td>This is the width of the container for your entire campaign/template. Your modules will all be contained within these dimensions.</td>
-  </tr>
-  <tr>
-    <td>Background Color</td>
-    <td>This is the color of the area containing your modules.</td>
-  </tr>
-  <tr>
-    <td>Padding</td>
-    <td>This is the amount of space that you want between your modules and the boundaries of the content container.</td>
+    <td><b>Content Container</b></td>
+    <td><p><b>Width</b> - This is the width of the container for your entire campaign/template. Your modules will all be contained within these dimensions.</p>
+        <p><b>Background Color</b> - This is the color of the area containing your modules.</p>
+        <p><b>Padding</b> - This is the amount of space that you want between your modules and the boundaries of the content container.</p></td>
   </tr>
 </table>
 
@@ -425,7 +417,7 @@ The Image Details tab opens.
 Using Custom HTML
 {% endanchor h3 %}
 
-You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#heading=h.90bira86kq6j), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality.
+You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](#-Drag-&-Drop-Code-Examples), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality.
 
 {% anchor h3 %}
 Importing HTML
@@ -444,10 +436,10 @@ Importing HTML
 1. Paste or enter the HTML you want to use, and then click **Import**.
 
 {% warning %}
-Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](code_editor.html).
+Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](Code-Modules).
 {% endwarning %}
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
 
   * First, we look for any HTML elements that contain the attribute role="modules-container".  
   * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element.
@@ -455,7 +447,7 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
 {% warning %}
-Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](https://docs.google.com/document/d/1CDiBMn8ZHNZxf_lF6suV1jjX_ij5h3Gideskt1gV3Rg/edit#heading=h.fyr366oz0yxo) will be included.
+Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](Drag-&-Drop-Module-Descriptions-and-Styles) will be included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
 {% endwarning %}
