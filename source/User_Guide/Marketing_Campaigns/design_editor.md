@@ -21,16 +21,16 @@ Getting Started with the Design Editor
 
    To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
    ![]({{root_url}}/images/duplicate_campaign.png)
-   
-1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. 
 
-   For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
+1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates.
 
-1. Select **Design Editor**, and then click **Continue**. 
+   For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+
+1. Select **Design Editor**, and then click **Continue**.
 The Design Editor opens.
 
 {% anchor h3 %}
-Drag & drop modules
+Using Drag & Drop Modules
 {% endanchor h3 %}
 
 Drag & drop editing helps you swiftly build your campaign using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
@@ -100,27 +100,84 @@ Drag & Drop Module Descriptions and Styles
 </table>
 
 {% anchor h3 %}
+Editing Module HTML
+{% endanchor h3 %}
+
+*To edit Module HTML:*
+
+1. Select the module in the design editor and click the **&lt; &gt;** icon.
+A window opens where you can edit the module’s HTML.
+
+1. When you are finished editing the HTML, click **Update**.  
+
+{% info %}
+If you make any structural code changes, you need to convert the module to a code module.
+{% endinfo %}
+
+{% anchor h3 %}
 Code Modules
 {% endanchor h3 %}
 
 The code module is a unique drag & drop module that allows you to insert any custom HTML in your campaign as a single module which can be relocated and edited.
-
-*To add a code module:*
-
-1. Navigate to the **Build** tab, and then click **Add Modules**. 
-1. Drag and drop the Code module tile into your content area.  
-
-To make changes to your module after adding your code, double click the module (or click the &lt; &gt; icon) to begin editing.
 
 {% warning %}
 The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML, and always preview your campaign before sending it.
 {% endwarning %}
 
 {% anchor h3 %}
-Custom Modules
+Building a Custom Drag & Drop Module
 {% endanchor h3 %}
 
 If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [custom module code examples](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#bookmark=id.spsaxe487t3d) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules, then your code will be imported as a text module.
+
+*To import your own custom HTML:*
+
+1. Navigate to the **Build** tab in the left-hand navigation.
+1. Scroll down and select the **Advanced** drop-down menu.  
+1. Expand the option titled **Import/Export**.  
+1. Click **Import**.
+   A window opens where you can paste in your own HTML.
+
+   ![]({{root_url}}/images/import_custom_html.png)
+
+1. Paste or enter the HTML you want to use, and then click **Import**.
+
+{% warning %}
+Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](code_editor.html).
+{% endwarning %}
+
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
+
+  * First, we look for any HTML elements that contain the attribute role="modules-container".  
+  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element.
+
+The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
+
+{% warning %}
+Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](https://docs.google.com/document/d/1CDiBMn8ZHNZxf_lF6suV1jjX_ij5h3Gideskt1gV3Rg/edit#heading=h.fyr366oz0yxo) will be included.
+
+If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
+{% endwarning %}
+
+If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template. This allows you to move and edit them as you normally would.
+
+However, if your custom HTML is not compatible with drag & drop  then your imported HTML will be imported as a text module.
+
+Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
+
+{% codeblock lang:html %}
+<div role=”modules-container”>
+  <table role=”module” data-type=”button”>
+    [ module content ]
+  </table>
+  <table role=”module” data-type=”text”>
+    [ module content ]
+  </table>
+  <table role=”module” data-type=”image”>
+    [ module content ]
+  </table>
+</div>
+{% endcodeblock %}
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -298,44 +355,87 @@ If you are writing your own custom HTML that you plan on importing into the desi
 </table>
 
 {% anchor h3 %}
+Using Global Styles
+{% endanchor h3 %}
+
+In addition to editing the styles for individual modules within your campaign/template, you may also make changes to the global styling of your entire campaign/template. This includes attributes such as the background color, text color, or font family.
+
+
+
+The email body is the entire area that your campaign or template fills inside your recipient’s browser or email inbox.
+
+Under the Global Styles dropdown menu in the left hand sidebar, click **Email Body**  or **Content Container** to view and edit the following styles:
+
+<table class="table" style="table-layout:fixed">
+<tr>
+    <th>Global Style</th>
+    <th>Style Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Email Body</td>
+    <td>Background Color</td>
+    <td>This is the color for the background of your entire campaign/template.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Text Color</td>
+    <td>This is the color of all text in your campaign/template.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Link Color</td>
+    <td>This is the color of all links in your campaign/template.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Font Family</td>
+    <td>This is the font family to be used for all text in your campaign/template.</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Font Size</td>
+    <td>This is the default font size to be used for all text in your campaign/template.</td>
+  </tr>
+  <tr>
+    <td>Content Container</td>
+    <td>Width</td>
+    <td>This is the width of the container for your entire campaign/template. Your modules will all be contained within these dimensions.</td>
+  </tr>
+  <tr>
+    <td>Background Color</td>
+    <td>This is the color of the area containing your modules.</td>
+  </tr>
+  <tr>
+    <td>Padding</td>
+    <td>This is the amount of space that you want between your modules and the boundaries of the content container.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
 Adding Images
 {% endanchor h3 %}
 
 *To upload an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**. 
+1. Navigate to the **Build** tab, and then click **Add Modules**.
 1. Select the Images module, and drag and drop it into your content area. This opens a modal window where you can upload images to your image library.  
-1. Drag and drop the image you want to use from your files or select **Choose images** to upload. 
-  
+1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
+
 *To insert an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**. 
+1. Navigate to the **Build** tab, and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.  
 A window opens where you can select images from the image library.  
-1. Select the image you want to add to your campaign. 
+1. Select the image you want to add to your campaign.
 The Image Details tab opens.  
-1. Insert your image in the campaign by clicking **Save Image**. 
-  
-{% anchor h3 %}
-Editing an HTML module
-{% endanchor h3 %}
-
-*To edit module HTML:*
-
-1. Select the module in the design editor and click the **&lt; &gt;** icon. 
-A window opens where you can edit the module’s HTML.
-
-1. When you are finished editing the HTML, click **Update**.  
-
-{% info %}
-If you make any structural code changes, you need to convert the module to a code module.
-{% endinfo %}If you make any structural code changes, you need to convert the module to a code module.
+1. Insert your image in the campaign by clicking **Save Image**.
 
 {% anchor h3 %}
 Using Custom HTML
 {% endanchor h3 %}
 
-You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#heading=h.90bira86kq6j), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality. 
+You can add your own drag & drop HTML to a template in the design editor using the Import/Export menu. When importing HTML into the design editor, we recommend that you use [Marketing Campaigns drag & drop markup](https://docs.google.com/document/d/1JEVcouSkFmHJSP-2mI6h63S6sxfdW8mWRhQNIUG39eg/edit#heading=h.90bira86kq6j), otherwise your code will be imported as a single text module and you will not be able to leverage our drag & drop functionality.
 
 {% anchor h3 %}
 Importing HTML
@@ -343,16 +443,16 @@ Importing HTML
 
 *To import your own custom HTML:*
 
-1. Navigate to the **Build** tab in the left-hand navigation. 
+1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.  
 1. Expand the option titled **Import/Export**.  
 1. Click **Import**.
    A window opens where you can paste in your own HTML.
-   
+
    ![]({{root_url}}/images/import_custom_html.png)
-   
-1. Paste or enter the HTML you want to use, and then click **Import**. 
-  
+
+1. Paste or enter the HTML you want to use, and then click **Import**.
+
 {% warning %}
 Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](code_editor.html).
 {% endwarning %}
@@ -360,7 +460,7 @@ Any HTML that you import replaces all existing content in your campaign or templ
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](drag_drop.html).
 
   * First, we look for any HTML elements that contain the attribute role="modules-container".  
-  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element. 
+  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element.
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
@@ -369,16 +469,12 @@ Any HTML outside an element with the "modules-container" attribute will be disca
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
 {% endwarning %}
-  
+
 If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template. This allows you to move and edit them as you normally would.
 
 However, if your custom HTML is not compatible with drag & drop  then your imported HTML will be imported as a text module.
 
-{% anchor h3 %}
-Example HTML
-{% endanchor h3 %}
-
-Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules. 
+Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
 
 {% codeblock lang:html %}
 <div role=”modules-container”>
@@ -400,18 +496,18 @@ Exporting HTML from the design editor
 
 *To export the HTML of a template from the design editor:*
 
-1. Navigate to the **Build** tab in the left-hand navigation. 
+1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.  
-1. Expand the option titled **Import/Export**. This starts the raw HTML download of the template, excluding images. 
-  
+1. Expand the option titled **Import/Export**. This starts the raw HTML download of the template, excluding images.
+
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template's HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
 
 *To open your exported HTML in the code editor:*
 
 1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.  
-1. Click **New Campaign**, and then select **Blank Template**. 
+1. Click **New Campaign**, and then select **Blank Template**.
 1. Select **Code Editor**.  
-1. Paste the raw SendGrid template HTML into the code editor. 
+1. Paste the raw SendGrid template HTML into the code editor.
 
 {% anchor h3 %}
 Using Substitution Tags
@@ -422,9 +518,9 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 *To add a substitution tag to your campaign:*
 
 1. Navigate to the **Tags** tab.  
-1. Locate the tag you want to add to your campaign and click the **copy** icon. 
-1. Paste the tag into the module. 
-  
+1. Locate the tag you want to add to your campaign and click the **copy** icon.
+1. Paste the tag into the module.
+
 You can add the following substitution tags to your marketing campaign:
 
 <table class="table" style="table-layout:fixed">
@@ -492,7 +588,7 @@ Previewing your campaign
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
 
-You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area. 
+You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area.
 
 To view a plain-text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
