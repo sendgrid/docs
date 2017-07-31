@@ -1,3 +1,16 @@
+---
+seo:
+  title: Reading your invoice
+  description: Reading your invoice
+  keywords: invoice, bill, receipt, refund, line, item, marketing, campaigns, charge, contacts, usage, overage
+title: Reading your invoice
+weight: 0
+layout: page
+zendesk_id: 
+navigation:
+  show: true
+---
+
 SendGrid invoices can be confusing, particularly if you've made changes to your account during the previous month.
 
 Here's more information about reading your invoice: 
