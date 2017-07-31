@@ -291,8 +291,8 @@ Any HTML that you import replaces all existing content in your campaign or templ
 
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
 
-  * First, we look for any HTML elements that contain the attribute role="modules-container".  
-  * Next, we look for all HTML elements with the attribute role="module" that are descendants of the "modules-container" element.
+  * First, we look for any HTML elements that contain the attribute `role="modules-container"`.  
+  * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
