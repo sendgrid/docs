@@ -96,4 +96,4 @@ In this example, no messages were sent using the Legacy Newsletter, which works 
 
 The Transaction Summary shows the total charges for the month, and the Payment Summary area shows the payment type, and last 4 digits of the card that was charged. For more information about updating your payment method, [click here](https://sendgrid.com/docs/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html). 
 
-***These line items will always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.** 
+***These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.** 
