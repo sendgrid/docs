@@ -289,6 +289,10 @@ If you are writing your own custom HTML that you plan on importing into the desi
 Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#-Code-Modules).
 {% endwarning %}
 
+{% anchor h3 %}
+Drag & Drop Markup
+{% endanchor h3 %}
+
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
 
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.  
