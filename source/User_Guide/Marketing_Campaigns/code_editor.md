@@ -12,6 +12,12 @@ seo:
 
 Use the Code Editor to create a template, edit a SendGrid template, or build a campaign with your own custom HTML. With helpful features like preview, tag completion, and error flagging, you can confidently edit your HTML.
 
+* [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
+* [Uploading Images](#-Uploading-Images)
+* [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Previewing Your Campaign](#-Previewing-Your-Campaign)
+
+
 {% anchor h2 %}
 Getting Started with the Code Editor
 {% endanchor h2 %}
@@ -20,7 +26,7 @@ Getting Started with the Code Editor
 
 1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. 
 
-![]({{root_url}}/images/duplicate_campaign.png)
+   ![]({{root_url}}/images/duplicate_campaign.png)
 
 1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
 
@@ -127,7 +133,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 `[%first_name | Valued Customer%]`
 
 {% anchor h2 %}
-Previewing your campaign
+Previewing Your Campaign
 {% endanchor h2 %}
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
