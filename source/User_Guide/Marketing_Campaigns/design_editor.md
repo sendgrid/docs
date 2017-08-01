@@ -268,6 +268,64 @@ To view a plain-text version of your campaign or template, click the **T** icon.
 When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
 {% anchor h3 %}
+Editing the HTML Head
+{% endanchor %}
+
+The HTML `<head>` element is where you can define any metadata you would like to include with your campaign or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
+
+*To edit the HTML head of your campaign or template:*
+
+1. Navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** menu.
+1. Expand the option titled **Edit HTML Head**.
+1. Click  **Edit** to begin editing your HTML head.
+   A window appears where you can insert your own custom HTML.
+1. Once you've finished making your changes, click the **Update** button.
+
+{% anchor h4 %}
+Adding Custom Fonts Using the HTML Head
+{% endanchor %}
+
+Most commonly, users add custom fonts by using the <link> tag to reference a web font hosted somewhere on the internet. For example, [Google Fonts](https://fonts.google.com).
+
+{% warning %}
+Make sure that you define a web-safe font to use as a fallback if one of your recipient’s clients does not support your custom font.
+{% endwarning %}
+
+While some inbox providers do not support web fonts, the following popular clients do provide web font support:
+
+* Apple Mail
+* Outlook.com app
+* Outlook 2000
+* Default Android Mail app (not the Android Gmail app)
+* iOS Mail
+
+This list may change, and we cannot guarantee 100% support from any of these clients.
+
+*To add a custom font using the HTML head:*
+
+1. Open the HTML Head by navigating to the **Build** tab in the design editor.
+1. Scroll down to the **Advanced** drop-down menu and select **Edit HTML Head**.
+1. Click **Edit** to begin making your changes.
+1. Insert a `<link>` tag containing an href attribute pointing to your web font.
+
+For example:
+
+{% codeblock lang:html %}
+<link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
+{% endcodeblock %}
+
+Next, you’ll have to add add a `<style>` to specify that you want to use this new font family:
+
+{% codeblock lang:html %}
+<style>
+    body {
+        font-family: 'Oswald',
+        sans-serif;
+    }
+</style>
+{% endcodeblock %}
+
+{% anchor h3 %}
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
