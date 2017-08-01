@@ -182,7 +182,8 @@ Adding Images
 *To upload an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area. <br>This opens a modal window where you can upload images to your image library.  
+1. Select the Images module, and drag and drop it into your content area. 
+<br>This opens a window where you can upload images to your image library.  
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
@@ -324,7 +325,6 @@ This list may change, and we cannot guarantee 100% support from any of these cli
 1. Insert a `<link>` tag containing an href attribute pointing to your web font.
 
 For example:
-
 {% codeblock lang:html %}
 <link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
 {% endcodeblock %}
@@ -346,7 +346,7 @@ Importing Custom HTML With Drag & Drop Markup
 
 If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
-*To import your own custom HTML:*
+*To import custom HTML:*
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.  
@@ -591,7 +591,7 @@ Exporting HTML From the Design Editor
 
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
 
-*To open your exported HTML in the code editor:*
+*To open exported HTML in the code editor:*
 
 1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
 1. Click **New Campaign**, and then select **Blank Template**.
