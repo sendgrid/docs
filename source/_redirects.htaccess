@@ -737,4 +737,4 @@ Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Setti
 #######
 
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head
+Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head [NE,R]
