@@ -21,6 +21,7 @@ The design editor is where you build your templates and campaigns using drag & d
 * [Adding Images](#-Adding-Images)
 * [Using Substitution Tags](#-Using-Substitution-Tags)
 * [Previewing Your Campaign](#-Previewing-Your-Campaign)
+* [Editing the HTML Head](#-Editing-the-HTML-Head)
 * [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
     * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
     * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
