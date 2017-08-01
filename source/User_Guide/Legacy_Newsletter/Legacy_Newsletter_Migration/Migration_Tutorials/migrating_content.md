@@ -126,7 +126,7 @@ You might decide to take this opportunity to refresh your content by recreating 
 
 Navigate to **Marketing Campaigns**, select **Templates**, and click **Create New**.
 
-After naming your new campaign, toggle the Drag & Drop editor to **On**. This will present you with a **Build** tab where you can view each of the modules needed to create a beautiful and engaging campaign. [Click here]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html) for more instructions on how to use the Drag & Drop editor.
+After naming your new campaign, toggle the Drag & Drop editor to **On**. This will present you with a **Build** tab where you can view each of the modules needed to create a beautiful and engaging campaign. [Click here]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) for more instructions on how to use the Drag & Drop editor.
 
 {% anchor h3 %}
 Quick and Dirty
