@@ -11,9 +11,7 @@ navigation:
   show: true
 ---
 
-SendGrid invoices can be confusing, particularly if you've made changes to your account during the previous month.
-
-Here's more information about reading your invoice: 
+Your SendGrid invoice contains a lot of information, which may be difficult to read, particularly if you've made changes to your account during the previous month. Here's information on how to read your invoice:
 
 ![]({{root_url}}/images/invoice_legend.png)
 
@@ -21,7 +19,7 @@ Here's more information about reading your invoice:
 1. Physical Address
 {% endanchor %}
 
-**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, you can click on the "Change Invoice Address" button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
+**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, click Change Invoice Address on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
  
 
@@ -29,7 +27,7 @@ Here's more information about reading your invoice:
 2. Billing Email
 {% endanchor %}
 
-**The email address where you receive SendGrid statements.** By default, this is the primary email address on file in your account, but you can update it to a different address from the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you override the billing email address in this way, the primary email address on file will stop receiving invoices. 
+**The email address where you receive SendGrid statements.** By default, this is the primary email address on file in your account. You can update it anytime from the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you override the billing email address in this way, the primary email address on file will stop receiving invoices. 
 
 Need to send invoices to multiple addresses? Consider creating a [role address](https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/role_addresses.html) on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
@@ -41,11 +39,11 @@ These are the total charges for services used **in the current and previous mont
 
 ![]({{root_url}}/images/invoice_NL_usage.png)
 
-This describes which plan you are on and describes the total usage charge for sending during the previous month. In this case, the user switched from the Essentials plan to the Pro plan in the middle of the previous month, and the charge reflects a credit for the part of the month they weren't on Essentials and a charge for the part of the month where they switched to Pro.
+This describes the plan you subscribe to and the total charge for usage in the previous month. In this case, the user switched from the Essentials plan to the Pro plan in the middle of the previous month, and the charge reflects a credit for the part of the month they weren't on Essentials and a charge for the part of the month where they switched to Pro.
 
 ![]({{root_url}}/images/invoice_IP_Address.png)
 
-**IP Address** - These charges indicates you have additional IP Addresses allocated to your account beyond the first, which is included in the base plan charge. There are two lines because one IP Address was added before the IP Addresses price increased, and other was added after.
+**IP Address** - These charges indicate that you have additional IP Addresses allocated to your account. There are two lines because one IP Address was added before the IP Addresses price increased, and other was added after.
 
 Additional IPs cost $30.00 per IP/per month for Pro 100k plans and above.
 
@@ -63,7 +61,7 @@ Refer to "Contact List Usage" in the Usage Summary section below for more inform
 4. Usage Summary
 {% endanchor %}
 
-*This is how charges from the Usage Summary section are calculated:* 
+This is how charges from the Usage Summary section are calculated:
 
 ![]({{root_url}}/images/invoice_overage.png)
 

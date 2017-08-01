@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-To add additional IPs to your Pro or Premier account, first log into your account, and then click the "Add a Dedicated IP" button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
+To add additional IPs to your Pro or Premier account, first log into your account, and then click "Add a Dedicated IP" on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 New IP addresses can be entered into [automated warmup]({{root_url}}/Classroom/Basics/Misc/automated_ip_warmup.html) as long as you have [another IP address](https://app.sendgrid.com/settings/ip_addresses) that has been active for more than 30 days, and has been whitelabeled. For best results, be sure to whitelabel newly added IP addresses as per the instructions provided in the workflow *before* you start sending with it.
 
