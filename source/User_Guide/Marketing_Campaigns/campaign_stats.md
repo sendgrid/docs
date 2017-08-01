@@ -9,7 +9,17 @@ seo:
   override: true
   description:
 ---
+* [Viewing Campaign Statistics] (#Viewing-Campaign-Statistics)
+   * [Exporting Campaign Statistics] (#Exporting-Campaign-Statistics)
+   * [Exporting Statistics for Multiple Campaigns] (#Exporting-Statistics-for-Multiple-Campaigns)
+* [Leveraging Engagement Statistics] (#Leveraging-Engagement-Statistics)
+   * [Viewing Campaign Clicks and Opens] (#Viewing-Campaign-Clicks-and-Opens)
+   * [Creating a Segment Based on Your Engagement Metrics] (#Creating-a-Segment-Based-on-Your-Engagement-Metrics)
+   * [Exporting a list of Engaged Recipients] (#Exporting-a-list-of-Engaged-Recipients)
 
+{% anchor h2 %}
+Viewing Campaign Statistics
+{% endanchor %}
 Once you have sent a campaign, you can view statistics related to that campaign.
 
 *To view campaign statistics from the Campaigns page:*
@@ -18,6 +28,10 @@ Once you have sent a campaign, you can view statistics related to that campaign.
 1. Click the name of the campaign to view the statistics, or select the action menu next to the campaign.
 
 From the campaign stats page, you will be able to see your bounces, clicks, opens, etc.
+
+{% anchor h3 %}
+Exporting Campaign Statistics
+{% endanchor %}
 
 *To export a CSV with raw stats:*
 
@@ -50,7 +64,7 @@ Leveraging Engagement Statistics
 To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
 {% anchor h3 %}
-View Campaign Clicks and Opens
+Viewing Campaign Clicks and Opens
 {% endanchor %}
 
 Marketing Campaigns makes it very easy to view recipients who have either opened one of your campaigns or have clicked links within your campaign.
@@ -75,7 +89,7 @@ Creating a Segment Based on Your Engagement Metrics
 1. Once you’re done creating your segment, click **Save**. You now have a dynamic segment that will continuously update as recipients engage with this campaign.
 
 {% anchor h3 %}
-Export a list of engaged recipients
+Exporting a list of Engaged Recipients
 {% endanchor %}
 
 In addition to creating a dynamic segment based on campaign engagement as described above, you can also export a list of all contacts who have either opened your campaign or have clicked a link within your campaign (up until that moment).
