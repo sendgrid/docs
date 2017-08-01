@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 99
+weight: 81
 title: New Editing Experience
 navigation:
   show: true

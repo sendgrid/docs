@@ -12,8 +12,22 @@ seo:
 
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
+* [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
+* [Using Drag & Drop Modules](#-Using-Drag-&-Drop-Modules)
+    * [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
+* [Using Global Styles](#-Using-Global-Styles)
+* [Editing Module HTML](#-Editing-Module-HTML)
+* [Code Modules](#-Code-Modules)
+* [Adding Images](#-Adding-Images)
+* [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Previewing Your Campaign](#-Previewing-Your-Campaign)
+* [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
+    * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
+    * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
+* [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
+    
 {% anchor h3 %}
-Getting Started with the Design Editor
+Getting Started With the Design Editor
 {% endanchor h3 %}
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
@@ -256,7 +270,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 <code>[%first_name | Valued Customer%]</code>
 
 {% anchor h3 %}
-Previewing your campaign
+Previewing Your Campaign
 {% endanchor h3 %}
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
