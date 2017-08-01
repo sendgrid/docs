@@ -9,13 +9,13 @@ seo:
   override: true
   description:
 ---
-* [Viewing Campaign Statistics] (#-Viewing-Campaign-Statistics)
-   * [Exporting Campaign Statistics] (#-Exporting-Campaign-Statistics)
-   * [Exporting Statistics for Multiple Campaigns] (#-Exporting-Statistics-for-Multiple-Campaigns)
-* [Leveraging Engagement Statistics] (#-Leveraging-Engagement-Statistics)
-   * [Viewing Campaign Clicks and Opens] (#-Viewing-Campaign-Clicks-and-Opens)
-   * [Creating a Segment Based on Your Engagement Metrics] (#-Creating-a-Segment-Based-on-Your-Engagement-Metrics)
-   * [Exporting a list of Engaged Recipients] (#-Exporting-a-list-of-Engaged-Recipients)
+* [Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
+   * [Exporting Campaign Statistics](#-Exporting-Campaign-Statistics)
+   * [Exporting Statistics for Multiple Campaigns](#-Exporting-Statistics-for-Multiple-Campaigns)
+* [Leveraging Engagement Statistics](#-Leveraging-Engagement-Statistics)
+   * [Viewing Campaign Clicks and Opens](#-Viewing-Campaign-Clicks-and-Opens)
+   * [Creating a Segment Based on Your Engagement Metrics](#-Creating-a-Segment-Based-on-Your-Engagement-Metrics)
+   * [Exporting a list of Engaged Recipients](#-Exporting-a-list-of-Engaged-Recipients)
 
 {% anchor h2 %}
 Viewing Campaign Statistics
