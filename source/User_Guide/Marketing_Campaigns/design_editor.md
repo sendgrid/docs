@@ -275,10 +275,10 @@ The HTML `<head>` element is where you can define any metadata you would like to
 
 *To edit the HTML head of your campaign or template:*
 
-1. Navigate to the **Build** tab in the left hand toolbar and scroll to the **Advanced** menu.
+1. Navigate to the **Build** tab in the left-hand toolbar and scroll to the **Advanced** menu.
 1. Expand the option titled **Edit HTML Head**.
 1. Click  **Edit** to begin editing your HTML head.
-   A window appears where you can insert your own custom HTML.
+   A window appears where you can insert your custom HTML.
 1. Once you've finished making your changes, click the **Update** button.
 
 {% anchor h4 %}
