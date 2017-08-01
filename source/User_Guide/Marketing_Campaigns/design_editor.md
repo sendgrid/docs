@@ -38,10 +38,10 @@ Getting Started With the Design Editor
    ![]({{root_url}}/images/duplicate_campaign.png)
 
 1. Select the template that you want to use for your campaign.
-   You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+   <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
 1. Select **Design Editor**, and then click **Continue**.
-   The Design Editor opens.
+   <br>The Design Editor opens.
 
 {% anchor h3 %}
 Using Drag & Drop Modules
@@ -157,7 +157,7 @@ Editing Module HTML
 *To edit Module HTML:*
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon.
-A window opens where you can edit the module HTML.
+<br>A window opens where you can edit the module HTML.
 1. When you are finished editing the HTML, click **Update**.  
 
 {% info %}
@@ -181,16 +181,16 @@ Adding Images
 *To upload an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area. This opens a modal window where you can upload images to your image library.  
+1. Select the Images module, and drag and drop it into your content area. <br>This opens a modal window where you can upload images to your image library.  
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.  
-A window opens where you can select images from the image library.  
+   <br>A window opens where you can select images from the image library.  
 1. Select the image you want to add to your campaign.
-The Image Details tab opens.  
+   <br>The Image Details tab opens.  
 1. Insert your image in the campaign by clicking **Save Image**.
 
 {% anchor h3 %}
@@ -292,7 +292,7 @@ The HTML `<head>` element is where you can define any metadata you would like to
 1. Navigate to the **Build** tab in the left-hand toolbar and scroll to the **Advanced** menu.
 1. Expand the option titled **Edit HTML Head**.
 1. Click  **Edit** to begin editing your HTML head.
-   A window appears where you can insert your custom HTML.
+   <br>A window appears where you can insert your custom HTML.
 1. Once you've finished making your changes, click the **Update** button.
 
 {% anchor h4 %}
@@ -351,7 +351,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 1. Scroll down and select the **Advanced** drop-down menu.  
 1. Expand the option titled **Import/Export**.  
 1. Click **Import**.
-   A window opens where you can paste in your own HTML.
+   <br>A window opens where you can paste in your own HTML.
 
    ![]({{root_url}}/images/import_custom_html.png)
 
@@ -586,7 +586,7 @@ Exporting HTML From the Design Editor
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.
 1. Expand the option titled **Import/Export**.
-   This starts the raw HTML download of the template, excluding images.
+   <br>This starts the raw HTML download of the template, excluding images.
 
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
 
