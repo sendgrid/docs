@@ -14,7 +14,7 @@ Once you have an AWS account, you can to subscribe to SendGrid and access it dir
 Pricing
 {% endanchor %}
 
-There are two plans: AWS Basic, and AWS Pro. For more information, check out our [AWS pricing page]().
+There are two plans: AWS Basic, and AWS Pro. For more information, check out our [AWS Marketplace page]().
 
 {% anchor h2 %}
 Getting Started
@@ -51,7 +51,7 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
    </br> This takes you to the Dedicated IP Addresses page
    </br>
 1. Next, click **Add an IP Address**
-1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. To use automatic warm-up, you must have at least one other warm IP to handle the overflow traffic from the IP being warmed up.
+1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability.
 1. Click **Add**.
 
 {% anchor h3 %}
