@@ -16,7 +16,7 @@ Marketing Campaigns makes it simple to understand how customers are (or aren’t
 These engagement statistics can provide valuable insight not only into how well your campaigns are performing, but also which recipients are the most (or least) engaged with your content.
 
 {% info %}
-**For detailed instructions on how to view your engagement stats, and how to create a dynamic segment of recipients based on these stats, please visit our [User Guide](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics).**
+**For detailed instructions on how to view your engagement stats, and how to create a dynamic segment of recipients based on these stats, please visit our [User Guide](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html).**
 {% endinfo %}
 
 {% anchor h2 %}
