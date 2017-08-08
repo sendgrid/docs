@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Subusers are child accounts available for all Pro level and higher customers. Subusers share the same overall credit pool but have their own unique SMTP credentials, settings, statistics, and site login. Subusers can be Whitelabeled to separate sending domains by purchasing additional sending IPs for $20 per IP per month, creating a new Subuser assigned to the IP, and then completing the Whitelabel via the subuser management area of your account settings.
+Subusers are child accounts available for all Pro level and higher customers. Subusers share the same overall credit pool but have their own unique SMTP credentials, settings, statistics, and site login. Subusers can be Whitelabeled to separate sending domains by purchasing additional sending IPs for $30 per IP per month, creating a new Subuser assigned to the IP, and then completing the Whitelabel via the subuser management area of your account settings.
 
 There are three typical use cases for Subusers:
 

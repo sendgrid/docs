@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 99
+weight: 81
 title: New Editing Experience
 navigation:
   show: true
@@ -28,11 +28,25 @@ For more information on getting started with the new editing experience, check o
 
 * [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
 * [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html)
-    * [Getting Started]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Getting-Started-with-the-Design-Editor)
+    * [Getting Started With the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Getting-Started-With-the-Design-Editor)
+    * [Using Drag & Drop Modules]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Drag-&-Drop-Modules)
+    * [Drag & Drop Module Descriptions and Styles]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag-&-Drop-Module-Descriptions-and-Styles)
+    * [Using Global Styles]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Global-Styles)
+    * [Editing Module HTML]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-Module-HTML)
+    * [Code Modules]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Code-Modules)
+    * [Adding Images]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Adding-Images)
+    * [Using Substitution Tags]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-Tags)
+    * [Previewing Your Campaign]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Previewing-Your-Campaign)
+    * [Editing the HTML Head]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head)
+    * [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
+    * [Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag-&-Drop-Markup)
+    * [Drag & Drop Code Examples]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag-&-Drop-Code-Examples)
+    * [Exporting HTML From the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Exporting-HTML-From-the-Design-Editor)
 * [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html)
-    * [Getting Started]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Getting-Started-with-the-Code-Editor)
+    * [Getting Started with the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Getting-Started-with-the-Code-Editor)
+    * [Uploading Images]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Uploading-Images)
     * [Using Substitution Tags]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Using-Substitution-Tags)
-    * [Previewing your campaign]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Previewing-your-campaign)
+    * [Previewing Your Campaign]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Previewing-Your-Campaign)
 * [Marketing Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
     * [Creating a New Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
     * [Editing an Existing Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)

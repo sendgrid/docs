@@ -9,18 +9,18 @@ seo:
   override: true
   description:
 ---
-* [Viewing Campaign Statistics] (#Viewing-Campaign-Statistics)
-   * [Exporting Campaign Statistics] (#Exporting-Campaign-Statistics)
-   * [Exporting Statistics for Multiple Campaigns] (#Exporting-Statistics-for-Multiple-Campaigns)
-* [Leveraging Engagement Statistics] (#Leveraging-Engagement-Statistics)
-   * [Viewing Campaign Clicks and Opens] (#Viewing-Campaign-Clicks-and-Opens)
-   * [Creating a Segment Based on Your Engagement Metrics] (#Creating-a-Segment-Based-on-Your-Engagement-Metrics)
-   * [Exporting a list of Engaged Recipients] (#Exporting-a-list-of-Engaged-Recipients)
+* [Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
+   * [Exporting Campaign Statistics](#-Exporting-Campaign-Statistics)
+   * [Exporting Statistics for Multiple Campaigns](#-Exporting-Statistics-for-Multiple-Campaigns)
+* [Leveraging Engagement Statistics](#-Leveraging-Engagement-Statistics)
+   * [Viewing Campaign Clicks and Opens](#-Viewing-Campaign-Clicks-and-Opens)
+   * [Creating a Segment Based on Your Engagement Metrics](#-Creating-a-Segment-Based-on-Your-Engagement-Metrics)
+   * [Exporting a list of Engaged Recipients](#-Exporting-a-list-of-Engaged-Recipients)
 
 {% anchor h2 %}
 Viewing Campaign Statistics
 {% endanchor %}
-Once you have sent a campaign, you can view statistics related to that campaign.
+Once you send a campaign, you can view statistics related to that campaign.
 
 *To view campaign statistics from the Campaigns page:*
 
@@ -43,7 +43,7 @@ Exporting Campaign Statistics
 Exporting Statistics for Multiple Campaigns
 {% endanchor %}
 
-You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, with the exception of two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
+You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, except for two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
 *To export statistics for multiple campaigns:*
 
@@ -73,7 +73,7 @@ Marketing Campaigns makes it very easy to view recipients who have either opened
 
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details**.
-   <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
+   <br>A real-time list of all recipients who either opened your campaign or clicked a link within your campaign appears.
 
 {% anchor h3 %}
 Creating a Segment Based on Your Engagement Metrics
@@ -86,7 +86,8 @@ Creating a Segment Based on Your Engagement Metrics
 
    A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
 
-1. Once you’re done creating your segment, click **Save**. You now have a dynamic segment that will continuously update as recipients engage with this campaign.
+1. Click **Save**. 
+<br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
 
 {% anchor h3 %}
 Exporting a list of Engaged Recipients
