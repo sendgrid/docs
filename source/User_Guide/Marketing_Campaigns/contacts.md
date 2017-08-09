@@ -227,6 +227,6 @@ What you may want to do is add logic to set a custom field, based on the reason 
 Additional Resources
 {% endanchor h3 %}
 
-- [Lists ](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
 - [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
 - [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
