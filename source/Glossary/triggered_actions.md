@@ -17,3 +17,4 @@ SendGrid’s email automation platform, [Threads](http://threads.io/), makes it 
 {% info %}
 To learn more about the different actions that Threads makes possible, please visit our [Threads FAQ](https://support.threads.io/hc/en-us/articles/206049497-What-types-of-Workflow-Actions-are-supported-).
 {% endinfo %}
+ 
