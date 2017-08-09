@@ -62,6 +62,8 @@ To know the direct cause for the best performing variation, it typically makes s
 
 For content testing, you will be able to make edits to each of your variations by selecting one of the tabs at the top of the content area. The number of tabs you see will depend on how many versions you have decided to test.
 
+![]({{root_url}}/images/A_B_testing_short.gif)
+
 {% anchor h3 %}
 Sending The Winner
 {% endanchor %}
