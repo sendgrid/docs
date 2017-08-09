@@ -89,7 +89,7 @@ You can create a new segment with multiple conditions based on the information y
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
 
 {% info %}
-You can create up to 200 segments.
+You can create up to 400 segments.
 {% endinfo %}
 
 To set up a segment, click the “add list or Segment” button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
