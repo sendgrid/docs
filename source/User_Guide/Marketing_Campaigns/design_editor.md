@@ -26,7 +26,7 @@ The design editor is where you build your templates and campaigns using drag & d
     * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
     * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
 * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
-    
+
 {% anchor h3 %}
 Getting Started With the Design Editor
 {% endanchor h3 %}
@@ -54,7 +54,7 @@ Drag & drop editing helps you swiftly build your campaign using pre-built conten
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 
-   ![]({{root_url}}/images/design_editor_drag_drop.png)
+   ![]({{root_url}}/images/drag_and_drop_short.gif)
 
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.  
 3. Edit the module settings and add your custom content to build your campaign.   
@@ -161,6 +161,8 @@ Editing Module HTML
 <br>A window opens where you can edit the module HTML.
 1. When you are finished editing the HTML, click **Update**.  
 
+![]({{root_url}}/images/code_module.gif)
+
 {% info %}
 If you make any structural code changes, you need to convert the module to a code module.
 {% endinfo %}
@@ -182,7 +184,7 @@ Adding Images
 *To upload an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area. 
+1. Select the Images module, and drag and drop it into your content area.
 <br>This opens a window where you can upload images to your image library.  
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
