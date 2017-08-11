@@ -33,7 +33,7 @@ Then enter the server details:
 </p>
 ![Settings for Mail to use SendGrid SMTP]({{root_url}}/images/apple_mail_3.png "SendGrid SMTP server settings")
 
-When writing a message, there is a dropdown beneath the Subject field, where you can define the outgoing server you wish to use. This way, you can send individual messages to your regular SMTP, and the messages you need to send through SendGrid can go through us. Please note that when you select this, it will be remembered until you change the selection.
+When writing a message, there is a dropdown beneath the Subject field, where you can define the outgoing server you wish to use. By doing so, you can send individual messages to your regular SMTP and the messages you need to send through SendGrid can go through us. Please note that when you select the outgoing server, it will be remembered until you change the selection.
 
 ![The dropdown menu to select the SMTP server to use for this send.]({{root_url}}/images/apple_mail_4.png "SMTP server dropdown")
 
@@ -42,5 +42,5 @@ Unfortunately, there is not an easy way to add SMTP API headers to a message in 
 {% endinfo %}
 
 {% info %}
-Mail sometimes attaches images in a way that is incompatible with other email readers, but this is [correctable](http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/). 
+Mail sometimes attaches images in a way that is incompatible with other email readers, however there are external online resources to help you work around these incompatibilities.
 {% endinfo %}
