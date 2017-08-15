@@ -18,17 +18,31 @@ Some implementations of Postfix only allow passwords to contain letters and numb
 Find your Postfix config file, typically **/etc/postfix/main.cf**, and add the following:
 
 {% codeblock %}
-smtp_sasl_auth_enable = yes 
-smtp_sasl_password_maps = static:yourSendGridUsername:yourSendGridPassword 
-smtp_sasl_security_options = noanonymous 
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+smtp_sasl_tls_security_options = noanonymous
 smtp_tls_security_level = encrypt
 header_size_limit = 4096000
 relayhost = [smtp.sendgrid.net]:587
 {% endcodeblock %}
 
-Make sure to restart Postfix:
+Now you need to specify your credentials (optionally, use `apikey` as username and an API Key as password) in the separate file **/etc/postfix/sasl_passwd** (you'll likely need to create it):
+
+{% codeblock %}
+[smtp.sendgrid.net]:587 yourSendGridUsername:yourSendGridPassword
+{% endcodeblock %}
+
+Next, make sure the file has restricted read and write access only for root, and use the `postmap` command to update Postfix's hashtables to use this new file:
+
 {% codeblock lang:bash %}
-$ /etc/init.d/postfix restart
+$ sudo chmod 600 /etc/postfix/sasl_passwd
+$ sudo postmap /etc/postfix/sasl_passwd
+{% endcodeblock %}
+
+Finally, restart Postfix:
+{% codeblock lang:bash %}
+$ sudo systemctl restart postfix
 {% endcodeblock %}
 
  

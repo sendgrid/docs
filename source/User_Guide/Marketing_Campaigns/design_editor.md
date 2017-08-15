@@ -12,8 +12,23 @@ seo:
 
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
+* [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
+* [Using Drag & Drop Modules](#-Using-Drag-&-Drop-Modules)
+    * [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
+* [Using Global Styles](#-Using-Global-Styles)
+* [Editing Module HTML](#-Editing-Module-HTML)
+* [Code Modules](#-Code-Modules)
+* [Adding Images](#-Adding-Images)
+* [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Previewing Your Campaign](#-Previewing-Your-Campaign)
+* [Editing the HTML Head](#-Editing-the-HTML-Head)
+* [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
+    * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
+    * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
+* [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
+    
 {% anchor h3 %}
-Getting Started with the Design Editor
+Getting Started With the Design Editor
 {% endanchor h3 %}
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
@@ -24,10 +39,10 @@ Getting Started with the Design Editor
    ![]({{root_url}}/images/duplicate_campaign.png)
 
 1. Select the template that you want to use for your campaign.
-   You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+   <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
 1. Select **Design Editor**, and then click **Continue**.
-   The Design Editor opens.
+   <br>The Design Editor opens.
 
 {% anchor h3 %}
 Using Drag & Drop Modules
@@ -143,7 +158,7 @@ Editing Module HTML
 *To edit Module HTML:*
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon.
-A window opens where you can edit the module HTML.
+<br>A window opens where you can edit the module HTML.
 1. When you are finished editing the HTML, click **Update**.  
 
 {% info %}
@@ -167,16 +182,17 @@ Adding Images
 *To upload an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area. This opens a modal window where you can upload images to your image library.  
+1. Select the Images module, and drag and drop it into your content area. 
+<br>This opens a window where you can upload images to your image library.  
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.  
-A window opens where you can select images from the image library.  
+   <br>A window opens where you can select images from the image library.  
 1. Select the image you want to add to your campaign.
-The Image Details tab opens.  
+   <br>The Image Details tab opens.  
 1. Insert your image in the campaign by clicking **Save Image**.
 
 {% anchor h3 %}
@@ -256,7 +272,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 <code>[%first_name | Valued Customer%]</code>
 
 {% anchor h3 %}
-Previewing your campaign
+Previewing Your Campaign
 {% endanchor h3 %}
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
@@ -268,18 +284,75 @@ To view a plain-text version of your campaign or template, click the **T** icon.
 When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
 {% anchor h3 %}
+Editing the HTML Head
+{% endanchor %}
+
+The HTML `<head>` element is where you can define any metadata you would like to include with your campaign or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
+
+*To edit the HTML head of your campaign or template:*
+
+1. Navigate to the **Build** tab in the left-hand toolbar and scroll to the **Advanced** menu.
+1. Expand the option titled **Edit HTML Head**.
+1. Click  **Edit** to begin editing your HTML head.
+   <br>A window appears where you can insert your custom HTML.
+1. Once you've finished making your changes, click the **Update** button.
+
+{% anchor h4 %}
+Adding Custom Fonts Using the HTML Head
+{% endanchor %}
+
+Most commonly, users add custom fonts by using the <link> tag to reference a web font hosted somewhere on the internet. For example, [Google Fonts](https://fonts.google.com).
+
+{% warning %}
+Make sure that you define a web-safe font to use as a fallback if one of your recipient’s clients does not support your custom font.
+{% endwarning %}
+
+While some inbox providers do not support web fonts, the following popular clients do provide web font support:
+
+* Apple Mail
+* Outlook.com app
+* Outlook 2000
+* Default Android Mail app (not the Android Gmail app)
+* iOS Mail
+
+This list may change, and we cannot guarantee 100% support from any of these clients.
+
+*To add a custom font using the HTML head:*
+
+1. Open the HTML Head by navigating to the **Build** tab in the design editor.
+1. Scroll down to the **Advanced** drop-down menu and select **Edit HTML Head**.
+1. Click **Edit** to begin making your changes.
+1. Insert a `<link>` tag containing an href attribute pointing to your web font.
+
+For example:
+{% codeblock lang:html %}
+<link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
+{% endcodeblock %}
+
+Next, you’ll have to add add a `<style>` to specify that you want to use this new font family:
+
+{% codeblock lang:html %}
+<style>
+    body {
+        font-family: 'Oswald',
+        sans-serif;
+    }
+</style>
+{% endcodeblock %}
+
+{% anchor h3 %}
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
 If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
-*To import your own custom HTML:*
+*To import custom HTML:*
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.  
 1. Expand the option titled **Import/Export**.  
 1. Click **Import**.
-   A window opens where you can paste in your own HTML.
+   <br>A window opens where you can paste in your own HTML.
 
    ![]({{root_url}}/images/import_custom_html.png)
 
@@ -514,11 +587,11 @@ Exporting HTML From the Design Editor
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.
 1. Expand the option titled **Import/Export**.
-   This starts the raw HTML download of the template, excluding images.
+   <br>This starts the raw HTML download of the template, excluding images.
 
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
 
-*To open your exported HTML in the code editor:*
+*To open exported HTML in the code editor:*
 
 1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
 1. Click **New Campaign**, and then select **Blank Template**.

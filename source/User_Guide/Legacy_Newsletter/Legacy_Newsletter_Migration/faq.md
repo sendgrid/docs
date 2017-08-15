@@ -168,7 +168,7 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **Improved user experience:** Ease of use is central to Marketing Campaigns. You’ll love the improved design and our UI/UX team has thoughtfully considered every workflow and is continuously working with customers to find opportunities to optimize.
 
-**[Flexible campaign building flow:]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html)** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
+**[Flexible campaign building flow:]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
 
 **[Recipient preferences:]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html)** Allow your users to easily opt out of different types of content you send using Unsubscribe Groups, and rely on Marketing Campaigns to track that data so you can reliably honor recipient preferences.
 
