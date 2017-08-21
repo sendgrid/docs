@@ -65,7 +65,7 @@ This feature is only available for [Pro plans and higher](https://sendgrid.com/p
 How is my account's pricing affected by this feature?
 {% endanchor %}
 
-For Pro plans, your first IP address is included in your plan's pricing. Each additional IP address is $20/month.
+For Pro plans, your first IP address is included in your plan's pricing. Each additional IP address is $30/month.
 
 {% anchor h3 %}
 Are there limitations on usage?

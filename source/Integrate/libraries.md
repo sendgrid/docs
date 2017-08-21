@@ -206,14 +206,14 @@ Standard Drivers
 {% anchor h3 -ado-net %}
 ADO.NET Providers
 {% endanchor %}
--    [CData ADO.NET Provider for SendGrid](http://www.cdata.com/drivers/sendgrid/ado) *by CData Software* - Use SendGrid Data Provider objects to connect and access data just as you would access any traditional database.
+-    [CData ADO.NET Provider for SendGrid](http://www.cdata.com/drivers/sendgrid/ado) *by CData Software* - Fully-managed ADO.NET Provider with support for Entity Framework, ADO.NET 2.0, LINQ, and more. Use SendGrid Data Provider objects to connect and access data just as you would access any traditional database.
 
 {% anchor h3 -jdbc %}
 JDBC Drivers
 {% endanchor %}
--    [CData JDBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/jdbc) *by CData Software* - Easily connect to live SendGrid data through any JDBC capable application or tool!
+-    [CData JDBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/jdbc) *by CData Software* - Pure Java Type 4/5 JDBC Driver with bi-directional access from Java/J2EE applications. Easily connect to live SendGrid data through any JDBC capable application or tool!
 
 {% anchor h3 -odbc %}
 ODBC Drivers
 {% endanchor %}
--    [CData ODBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/odbc) *by CData Software* - Access SendGrid the same way that you would connect to any other ODBC data source!
+-    [CData ODBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/odbc) *by CData Software* - Unicode-enabled 32/64-bit ODBC 3.8 compliant Driver for Windows, Mac, & Linux. Access SendGrid the same way that you would connect to any other ODBC data source!

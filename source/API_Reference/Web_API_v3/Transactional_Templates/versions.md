@@ -34,6 +34,7 @@ Create a new version for a template.
   {% parameter subject Yes '`<%subject%>` tag must be present' 'Subject of the new version' %}
   {% parameter html_content Yes '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for html content.' 'HTML content of the new version.' %}
   {% parameter plain_content Yes '`<%body%>` tag must be inside the content. Maximum of 1048576 bytes allowed for plain content.' 'Text/plain content of the new version.' %}
+  {% parameter editor No 'String. Must be either "design" or "code".' 'Editor type used in the UI.' %}
   {% parameter active No '`0` Inactive, `1` Active' 'Set the new version as the active version associated with the template. Only one version of a template can be active. The first version created for a template will automatically be set to Active.' %}
 {% endparameters %}
 
@@ -49,6 +50,7 @@ HTTP/1.1 201 OK
   "html_content": "<%body%>",
   "plain_content": "<%body%>",
   "subject": "<%subject%>",
+  "editor": "code",
   "updated_at": "2014-03-19 18:56:33"
 }
   {% endv3response %}
@@ -97,6 +99,7 @@ HTTP/1.1 200 OK
   "html_content": "<%body%>",
   "plain_content": "<%body%>",
   "subject": "<%subject%>",
+  "editor": "code",
   "updated_at": "2014-03-19 18:56:33"
 }
 {% endv3response %}
@@ -129,6 +132,7 @@ HTTP/1.1 200 OK
   "html_content": "<%body%>",
   "plain_content": "<%body%>",
   "subject": "<%subject%>",
+  "editor": "design",
   "updated_at": "2014-03-19 18:56:33"
 }
 {% endv3response %}
