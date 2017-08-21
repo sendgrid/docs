@@ -22,8 +22,12 @@ Before you begin, go to your SendGrid [account settings]({{site.app_url}}/user/a
 Adding a Sender
 {% endanchor h2 %}
 
+*To add a sender*
+
 1. Click **Create New Sender**
-1. Fill out the entire "Add Sender Identity" form. This form is so extensive so that you are CAN-SPAM compliant. The footer of your emails includes the information you provide here.
+1. Fill out the entire **Add Sender Identity** form.
+
+   This form is to ensure that you are CAN-SPAM compliant. The footer of your emails includes the information you provide here.
 
    * **From Name** - This is user-friendly name that is displayed to the user when they receive their email.
    * **From Email Address** - This will display to the user as the email address who sent this email.
@@ -35,9 +39,9 @@ Adding a Sender
 
 1. After you fill out the form, click **Save**.
 1. Check the email account and click the link in the email to verify the Sender email.
-   * To resend your verification email, click the gear icon under Actions on the Sender Management page and select Resend Verification.
+   * To resend your verification email, click the action menu on the Sender Management page and select Resend Verification.
    * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
-   
+
 
 {% info %}
 Your verification link is only valid for 48 hours. After that time you will need to restart the verification process.
@@ -74,4 +78,3 @@ To show your sender's full address and information in the footer of the email, a
 [Sender_Address]
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
-
