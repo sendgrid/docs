@@ -691,7 +691,9 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
     + Body
 
-            {"recipients":
+            {
+              "recipient_count": 1,
+              "recipients":
                 [{
                     "created_at": 1422313607,
                     "email": "jones@example.com",
@@ -723,31 +725,32 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
             "" : "Returned if request body is not valid json"
             "" : "Returned if invalid value is passed into one of the request body parameters"
 
-
-## Search using simple criteria [/contactdb/recipients/search?{field_name}={value}]
-
-{% info %}
-"field_name" is a variable that is substituted for your actual custom field name from your recipient.
-Text fields must be url-encoded. Date fields are searchable only by unix timestamp (e.g. 2/2/2015 becomes 1422835200)
-{% endinfo %}
-
-{% info %}
-If field_name is a 'reserved' date field, such as created_at or updated_at, the system will internally convert
-your epoch time to a date range encompassing the entire day. For example, an epoch time of 1422835600 converts to
-Mon, 02 Feb 2015 00:06:40 GMT, but internally the system will search from Mon, 02 Feb 2015 00:00:00 GMT through
-Mon, 02 Feb 2015 23:59:59 GMT.
-{% endinfo %}
-
 + Parameters
     + field_name (required, text) ... The name of the field you're looking for
 
+## Search using simple criteria [/contactdb/recipients/search?{field_name}={value}]
+
 ### Get Recipients Matching Search Criteria [GET]
+
+<p>
+  "field_name" is a variable that is substituted for your actual custom field name from your recipient. Text fields must be url-encoded. Date fields are searchable only by unix timestamp. (e.g. 2/2/2015 becomes 1422835200)
+</p>
+
+<p>
+  If field_name is a date field, such as created_at or updated_at, the system will internally convert your epoch time to a date range encompassing the entire day. For example, an epoch time of 1422835600 converts to Mon, 02 Feb 2015 00:06:40 GMT, but internally the system will search from Mon, 02 Feb 2015 00:00:00 GMT through Mon, 02 Feb 2015 23:59:59 GMT.
+</p>
+
+<p>
+  You may also search by multiple fields (reserved, engagement, and custom). This is similar to constructing a POST with conditions whose "operator" is "eq" and "and_or" value is "and".
+</p>
 
 + Response 200
 
      + Body
 
-            {"recipients":
+            {
+              "recipient_count": 1,
+              "recipients":
                 [{
                     "created_at": 1422313607,
                     "email": "jones@example.com",
@@ -769,7 +772,7 @@ Mon, 02 Feb 2015 23:59:59 GMT.
      + Body
 
             "" : "Returned if no search params are specified"
-            "field" : "Returned if the provided field is invalid or does not exist"
+            "field" : "Returned if the provided field is invalid, cannot be parsed, or does not exist"
 
 + Response 404
 
