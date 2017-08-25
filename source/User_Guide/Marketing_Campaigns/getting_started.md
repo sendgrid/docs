@@ -53,11 +53,9 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**.  
 
-<<<<<<< HEAD
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [[A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)].
-=======
+
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
->>>>>>> upstream/develop
 
 1. Add a list or segment of recipients to recieve your campaign.
 
