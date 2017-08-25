@@ -14,7 +14,7 @@ seo:
 In order to track clicks, you must have the [Click Tracking App]({{root_url}}/User_Guide/Settings/tracking.html) enabled.
 {% endinfo %}
 
-SendGrid can replace the links in your email templates with a custom link that when clicked, will redirect your customers to the original link from your template. When the user clicks, SendGrid will record the click event.
+SendGrid can replace the links in your email templates with a custom link that when clicked, will redirect your customers to the original link from your template. When the user clicks, SendGrid will record the click event. We track 1000 link clicks per email.
 
 In [Statistics]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html), “clicks percentage" is the total number of times your users have clicked on the various links within your emails, divided by the total number of Delivered messages. The “Unique clicks” percentage is the number of unique individuals that have clicked the links in your emails, divided by the total number of delivered messages.
 
