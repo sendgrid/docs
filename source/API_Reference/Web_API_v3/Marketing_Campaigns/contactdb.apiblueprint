@@ -33,7 +33,7 @@ Lists
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-a-List-PATCH">Update a List - PATCH</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-List-DELETE">Delete a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-on-a-List-GET">List Recipients on a List - GET</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a single Recipient to a List - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a Single Recipient to a List - POST</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Single-Recipient-from-a-Single-List-DELETE">Delete a Single Recipient From a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-to-a-List-POST">Add Multiple Recipients To a List - POST</a></li>
 </ul>
@@ -46,7 +46,7 @@ Recipients
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-Recipient-DELETE">Delete one or more Recipients - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-GET">List Recipients - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Retrieve-a-Recipient-GET">Retrieve a Recipient - GET</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Recipient-DELETE">Delete a single Recipient - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Recipient-DELETE">Delete a Single Recipient - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-the-Lists-the-Recipient-Is-On-GET">Get the Lists the Recipient is On - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Billable-Recipients-GET">Get Count of Billable Recipients - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Recipients-GET">Get Count of Recipients - GET</a></li>
