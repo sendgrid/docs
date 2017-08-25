@@ -17,6 +17,11 @@ Before sending your first campaign, you need to do the following:
 - [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
 - [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
 - [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional)
+- [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation) 
+- [Add a Sender](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html) 
+- [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
+- [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html) 
+- [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional) 
 
 *To send your first email:*
 
@@ -48,11 +53,15 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**.  
 
+<<<<<<< HEAD
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [[A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)].
+=======
+1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
+>>>>>>> upstream/develop
 
 1. Add a list or segment of recipients to recieve your campaign.
 
-1. To send your campaign, click **Send Campaign**.
+1. To send your campaign, click **Send Campaign**. 
 
 {% info %}
 To schedule your campaign to send at a later time or date, toggle the **Send Immediately** button to **Off**, and enter the date and time you want the campaign to be sent.
