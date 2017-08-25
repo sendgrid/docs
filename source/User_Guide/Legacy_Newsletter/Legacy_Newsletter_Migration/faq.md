@@ -39,6 +39,7 @@ navigation:
 ## [Contact Management](#-Contact-Management)
 
 * [What information will Marketing Campaigns store about my contacts?](#-What-information-will-Marketing-Campaigns-store-about-my-contacts)
+* [Will the Subscription Widget also be retired?](#-Will-the-Subscription-Widget-also-be-retired?)
 
 ## [Segmentation](#-Segmentation)
 
@@ -267,6 +268,14 @@ Marketing Campaigns will store two types of data about your contacts:
 **Custom Fields:** Any information you share with us about your contacts such as age, geography, last purchase, etc. This data can be added using a CSV upload or using our [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). Currently, Marketing Campaigns can store up to 60 different [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html).
 
 **Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
+
+{% anchor h3 %}
+Will the Subscription Widget also be retired?
+{% endanchor %}
+
+The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17. 
+
+As you migrate to Marketing Campaigns, you can leverage any of the following best-in-class email list growth integrations to manage your recipient signups: [Privy](https://privy.com/sendgrid/), [WisePops](https://support.wisepops.com/integrations/connect-wisepops-with-sendgrid), [JustUno](https://www.justuno.com/sendgrid-integrations.html), or [SendGrid’s Wordpress subscription widget](https://sendgrid.com/docs/Integrate/Tutorials/WordPress/subscription_widget.html?mc=email&mcd=Legacymigration&utm_medium=email&utm_source=nurture&cvosrc=email.nurture.Legacymigration&utm_campaign=Legacymigration).
 
 {% anchor h2 %}
 Segmentation
