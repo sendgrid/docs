@@ -43,6 +43,8 @@ Migration to Marketing Campaigns is not automatic. We’ve built a [robust toolk
 
 &nbsp; &#x274f; Consider how you might segment your contacts and send more targeted, relevant campaigns.
 
+&nbsp; &#x274f; If in use, replace the Legacy Subscription Widget with one of the best-in-class [email list growth integrations for Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html#-Replacing-the-Legacy-Newsletter-Subscription-Widget).
+
 &nbsp; &#x274f; Review the [Contact Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html) for step-by-step instructions for moving your contacts into Marketing Campaigns.
 
 &nbsp; &#x274f; <b style="color:red">IMPORTANT!</b> You may have invalid or unsubscribed emails. If you do, ensure you migrate them. Review [Migrating Your Unsubscribes]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html) for detailed instructions.
