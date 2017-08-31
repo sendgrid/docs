@@ -67,6 +67,8 @@ You can insert your sender identity information into your campaigns using the fo
 
 **[Sender_Zip]** - The sender's zip.
 
+**[Sender_Country]** - The sender's country.
+
 To show your sender's full address and information in the footer of the email, add the tags as shown:
 
 {% codeblock %}
