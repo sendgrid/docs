@@ -77,3 +77,9 @@ You can also manually choose a winner at any time after you start the test.
 If you choose to manually pick a winner, (meaning SendGrid is not automatically choosing based on click or open rate), then you will be notified via email at the end of the duration you set, that your test is complete and that you need to choose a winner.
 
 ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
