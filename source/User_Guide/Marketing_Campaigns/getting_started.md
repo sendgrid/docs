@@ -9,6 +9,7 @@ seo:
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
+<iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Before sending your first campaign, you need to do the following:
 
