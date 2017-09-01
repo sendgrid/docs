@@ -23,3 +23,9 @@ Code Examples
 Still have questions?
 {% endanchor %}
 Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here]({{site.blog_url}}/?s=Azure&submit=).
+
+You are limited to two SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
+
+If you try to create a third account, you will encounter this error on your dashboard:
+
+![]({{root_url}}/images/azure_account_error.png)
