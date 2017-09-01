@@ -26,6 +26,8 @@ Segments are dynamically updated over time as you add customers who meet the cri
 You must create at least one list or segment in order to send a campaign.
 {% endinfo %}
 
+<iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 {% anchor h2 %}
 Managing Your Lists
 {% endanchor %}
@@ -80,6 +82,8 @@ Choosing “Delete” will permanently remove the contacts from your contact dat
 {% endinfo %}
 
 If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
+
+<iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% anchor h2 %}
 Create a Segment

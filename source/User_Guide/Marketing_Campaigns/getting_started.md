@@ -9,14 +9,10 @@ seo:
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
+<iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Before sending your first campaign, you need to do the following:
 
-- [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation)
-- [Add a Sender](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html)
-- [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
-- [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
-- [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional)
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation) 
 - [Add a Sender](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html) 
 - [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 

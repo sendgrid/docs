@@ -9,7 +9,8 @@ seo:
   override: true
   description:
 ---
-
+<iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  +
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
