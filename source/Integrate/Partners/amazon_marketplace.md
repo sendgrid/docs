@@ -5,38 +5,33 @@ title: Amazon Marketplace
 navigation:
   show: true
 ---
-
-{% anchor h2 %}
-Amazon Marketplace
-{% endanchor %}
-
 SendGrid has partnered with Amazon to offer our email services on the [Amazon Marketplace](https://console.aws.amazon.com/). Built for developers and designed for marketers, SendGrid offers developers simple SMTP and API integrations while non-technical users can leverage an intuitive interface to create, send, and analyze marketing emails.
 
-Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/), and the APIs. However, use the AWS Management Console if you want to reset your password, cancel your account, or manage billing.
+Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage billing.
 
 {% anchor h3 %}
 Pricing
 {% endanchor %}
 
-There are two plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB).
+There are two plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
 
-A price unit….
+![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 
-{% anchor h3 %}
+{% anchor h2 %}
 Getting Started
 {% endanchor %}
 
 *To quickly get started with SendGrid:*
-* Check out [Getting Started With Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html) for all of the tools you need to get started sending with the SendGrid application.
-* Look at the [API Reference]({{root_url}}/API_Reference/api_v3.html) for all of the API endpoints as well as information about using SMTP and the Webhooks.
-* See the [API Libraries](({{root_url}}/Integrate/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
+
+- See [Getting Started With Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html) for all of the tools you need to get started sending with the SendGrid application.
+- Look at the [API Reference]({{root_url}}/API_Reference/api_v3.html) for all of the API endpoints as well as information about using SMTP and the Webhooks.
+- See the [API Libraries](({{root_url}}/Integrate/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 
 {% info %}
-**Tip: Warm up your sending**
-Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
+**Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 {% endinfo %}
 
-{% anchor h3 %}
+{% anchor h2 %}
 Managing your account
 {% endanchor %}
 
@@ -52,7 +47,7 @@ Managing your account
 Adding a Dedicated IP Address
 {% endanchor %}
 
-You can purchase IP addresses that are dedicated to your account. Since you are the only one sending email over this IP, your sending practices determines the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
+You can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, your sending practices determine the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
 
 You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account).
 
@@ -89,7 +84,9 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 *To change your account plan:*
 
 1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)in the SendGrid Customer Portal.
-1. Select Upgrade to AWS Pro, or Downgrade to AWS Basic. 
+1. Select Upgrade to AWS Pro, or Downgrade to AWS Basic.
+
+![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
 
 {% anchor h3 %}
 Managing Billing Options
@@ -98,12 +95,12 @@ Managing Billing Options
 Manage your billing options from the [AWS Billing & Cost Management Dashboard](https://console.aws.amazon.com/billing/).
 
 {% anchor h3 %}
-Canceling your SendGrid Subscription
+Canceling Your SendGrid Subscription
 {% endanchor %}
 
 *To remove SendGrid from your AWS account:*
 
-1. Navigate to the your [Software Subscriptions page](https://aws.amazon.com/marketplace/library?productType=saas&ref_=lbr_tab_saas) on AWS.
+1. Navigate to your [Software Subscriptions page](https://aws.amazon.com/marketplace/library?productType=saas&ref_=lbr_tab_saas) on AWS.
 1. Click *Cancel Subscription* in the SendGrid section.
             
 ![]({{root_url}}/images/aws_cancel.png "AWS cancel button")
@@ -111,3 +108,5 @@ Canceling your SendGrid Subscription
 {% anchor h3 %}
 Troubleshooting
 {% endanchor %}
+
+If you run into issues with your AWS SendGrid account, you can contact our support team by [logging in here](https://support.sendgrid.com) and opening a support ticket.
