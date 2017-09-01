@@ -12,25 +12,11 @@ navigation:
 The following new features and changes to the service are available.
 
 {% anchor h2 %}
-1 August 2017
+5 September 2017
 {% endanchor %}
 
 {% anchor h3 %}
-New Editing Experience
+Amazon Marketplace
 {% endanchor %}
 
-UI ICON - UI change summary - Banh mi quinoa ennui cloud bread. Bicycle rights selvage enamel pin microdosing live-edge seitan artisan, single-origin coffee tacos. Green juice hexagon banjo austin PBR&B bicycle rights typewriter twee echo park. Kickstarter semiotics crucifix seitan, before they sold out hashtag vegan tofu typewriter tote bag DIY pickled vexillologist roof party chillwave. 
-
-CODE ICON - Code change summary - Occupy butcher hella stumptown bespoke. Neutra listicle yr, tumeric quinoa air plant authentic kinfolk blue bottle wayfarers letterpress sartorial lyft. Ethical kogi 8-bit chartreuse lumbersexual.
-
-{% anchor h3 %}
-Dedicated IP price increase
-{% endanchor %}
-
-Celiac single-origin coffee chillwave freegan, neutra normcore gastropub. Organic vape poke, meh hashtag vaporware taiyaki single-origin coffee. Normcore selfies vinyl DIY, kale chips meggings farm-to-table succulents hexagon mlkshk. 
-
-{% anchor h2 %}
-14 July 2017
-{% endanchor %}
-
-.......
+SendGrid is now available on the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB)! AWS customers are now able to integrate SendGrids email infrastructure and email marketing tools with their other AWS tools. For more information, see the [blog](https://aws.amazon.com/blogs/apn/inside-sendgrids-expanded-relationship-with-aws/) and the [documentation](https://sendgrid.com/docs/Integrate/Partners/Amazon_Marketplace.html).
