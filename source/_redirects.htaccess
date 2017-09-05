@@ -384,6 +384,7 @@ Redirect 301 /Classroom/Send/welcome_emails_making_a_good_first_impression.html 
 Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html
 Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
 Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
 
 #######
 #
