@@ -101,7 +101,7 @@ Canceling Your SendGrid Subscription
 *To remove SendGrid from your AWS account:*
 
 1. Navigate to your [Software Subscriptions page](https://aws.amazon.com/marketplace/library?productType=saas&ref_=lbr_tab_saas) on AWS.
-1. Click *Cancel Subscription* in the SendGrid section.
+1. Click **Cancel Subscription** in the SendGrid section.
             
 ![]({{root_url}}/images/aws_cancel.png "AWS cancel button")
 
