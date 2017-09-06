@@ -90,7 +90,7 @@ If you manually add a contact to a list with custom fields defined, you will nee
 Managing Contacts
 {% endanchor %}
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts based on custom fields, as well as view and edit each individual contact within your contact database. 
+Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts based on custom fields, as well as view and edit each individual contact within your contact database.
 
 {% anchor h3 %}
 Creating a New List
@@ -151,7 +151,6 @@ Searches are case agnostic but must be done using a whole email address that inc
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
 
-![]({{root_url}}/images/contact_profile_page_tabs.png)
 
 {% anchor h3 %}
 Editing a Contact
@@ -159,14 +158,10 @@ Editing a Contact
 
 When you are viewing a contact, click any of the Edit buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields (except email), any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
-![]({{root_url}}/images/editing_contact_custom_fields.png)
-
 *To edit the associated lists for your contact:*
 1. Select the **Associated Lists** tab.
 1. Enter or select the list you would like to use.
 1. Click **Add**.
-
-![]({{root_url}}/images/editing_associated_lists.png)
 
 {% anchor h3 %}
 Delete a Specific Contact
@@ -177,7 +172,6 @@ Delete a Specific Contact
 1. Click  **Remove From List**.
    You will also see an option to delete the contact, which deletes them from your contact database.
 
-![]({{root_url}}/images/contacts_4.png "Delete a contact")
 
 {% anchor h3 %}
 Delete All Contacts
