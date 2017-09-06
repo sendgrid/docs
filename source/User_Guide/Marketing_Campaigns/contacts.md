@@ -20,8 +20,6 @@ Managing contacts is an integral part of your marketing campaigns lifecycle. Fro
 
 {% info %}
 Your first 2,000 contacts are free. For information about how many contacts come with your package, please refer to our [pricing page]({{site.pricing_url}}).
-
-![]({{root_url}}/images/add_list_or_segment_button.png)
 {% endinfo %}
 
 {% anchor h3 %}
