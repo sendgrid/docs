@@ -201,7 +201,7 @@ Some examples:
 * Phone numbers: “(555) 555-5555” or “555.555.5555”
 * Monetary Values with the currency indicator such as $3.50 or €5.73
 
-**Data formatting**
+**Data Formatting**
 
 Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV. Years must be represented as 4-digit numbers. 1999 not 99. Day and month fields may be represented as single numbers.
 
@@ -223,3 +223,10 @@ With SendGrid's Marketing Campaigns feature, the unique identifier is the email 
 
 What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
 
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
+- [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
