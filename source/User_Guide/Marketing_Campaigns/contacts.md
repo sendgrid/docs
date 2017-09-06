@@ -16,7 +16,7 @@ seo:
 Adding Contacts
 {% endanchor %}
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts. Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid App.
+From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts. Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid App.
 
 {% info %}
 Your first 2,000 contacts are free. For information about how many contacts come with your package, please refer to our [pricing page]({{site.pricing_url}}).
@@ -90,11 +90,17 @@ If you manually add a contact to a list with custom fields defined, you will nee
 Managing Contacts
 {% endanchor %}
 
+Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts based on custom fields, as well as view and edit each individual contact within your contact database. 
+
+{% anchor h3 %}
+Creating a New List
+{% endanchor %}
+
 *To create a new list from your CSV:*
 
 1. Click **Add List or Segment** and then select **Upload CSV**.
 1. Click **+Add to New List** and enter the name of the list you would like to create.
-1. Choose a CSV file for upload and complete the steps listed in [Uploading Contacts](#-Uploading-Contacts).
+1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#-Uploading-a-CSV).
 
 {% anchor h3 %}
 Add Contacts to a List
