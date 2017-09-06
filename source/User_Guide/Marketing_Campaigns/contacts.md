@@ -142,7 +142,7 @@ Viewing a Contact
 To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then click the contact’s email address. You will then be able to view the email, reserved fields that SendGrid provides, and list associations for this contact.
 
 {% info %}
-Searches are case-insensitive but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io"
+Searches are case agnostic but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io".
 {% endinfo %}
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
