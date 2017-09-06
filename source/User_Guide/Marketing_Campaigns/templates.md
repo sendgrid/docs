@@ -80,5 +80,5 @@ Creating a Template from a Campaign
 1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**. 
 
 {% info %}
-For information on Sending Campaigns, visit our [Sending an Email](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html) article or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
+For more information, see [Sending an Email](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
 {% endinfo %}
