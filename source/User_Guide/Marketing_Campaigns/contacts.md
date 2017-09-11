@@ -16,10 +16,10 @@ seo:
 Adding Contacts
 {% endanchor %}
 
-From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, and delete your contacts. Contacts can be added to your contacts database via the API or using a CSV file through the SendGrid App.
+From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/API_Reference/api_v3.html), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 
 {% info %}
-Your first 2,000 contacts are free. For information about how many contacts come with your package, please refer to our [pricing page]({{site.pricing_url}}).
+Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 for every additional 10,000 contacts.
 {% endinfo %}
 
 {% anchor h3 %}
@@ -37,7 +37,7 @@ Your CSV should contain the following information about each contact:
 * first_name
 * last_name
 
-You can also include custom fields with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields.
+You can also include custom fields with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 The first row of your CSV must be a header row containing labels identifying each column. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
@@ -55,17 +55,18 @@ Uploading a CSV
 1. Choose an existing list or create a new list to add the contacts to.
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
-1. Check the populated data and select **Skip Column** to omit any data other than "Email" from the contacts list. Skipped column headers will not be uploaded and will not appear as custom fields within an individual contact's profile.
+1. Check the populated data. Only the **Email** field is required to complete the upload. Skipped column headers will not be uploaded and will not appear as custom fields within an individual contact's profile.
+1. Select **Skip Column** to omit data from the contacts list.
 1. Click **Save Contacts**.
 
-   The CSV uploads to your contacts database. You will receive an email to an address specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) once the CSV has been processed.
+   The CSV uploads to your contacts database. You will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) once the CSV has been processed. If you encounter issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html) for more information.
 
 {% warning %}
 The maximum CSV file size is 2GB.
 {% endwarning %}
 
 {% warning %}
-If you upload the same contact more than once, SendGrid will update any data, with the assumption that the most recent upload has the correct and most up-to-date information. Updates to your contacts cannot be rolled back.
+If you upload the same contact more than once, SendGrid updates the data, assuming the most recent upload has the most up-to-date information. Updates to your contacts cannot be rolled back. Multiples of the same contact (as identified by email) can be added to different lists or segments and count as one contact against your total contacts per account or subuser account.
 {% endwarning %}
 
 {% anchor h3 %}
@@ -75,7 +76,7 @@ Manually Add a Contact
 *To manually add a contact to your contact database:*
 
 1. Navigate to **Marketing Campaigns** and then click **Contacts**.
-1. In the top right-hand corner, click **Add List or Segment**.
+1. In the top right-hand corner, click **Add Contacts**.
 1. Click **Manual Add**.
 1. Select the list you want to add the contact to from the drop-down, or select **Add to New List** and enter the name of the list.
 1. Enter the information for the new contact.
@@ -127,7 +128,7 @@ Once we have completed processing your new contacts, you will receive a summary 
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and re-upload those contacts.
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts.
 
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.
@@ -180,4 +181,4 @@ Delete All Contacts
  1. Click the trash can icon.
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
-This will delete all of your Marketing Campaigns contacts without deactivating your account.
+This will delete all of your Marketing Campaigns contacts without deactivating your account. For information on how to remove unusable contacts from a list or segment without purging your entire contacts database, see [How to Remove Unusable Contacts](https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html)
