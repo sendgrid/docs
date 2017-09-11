@@ -55,7 +55,7 @@ Uploading a CSV
 1. Choose an existing list or create a new list to add the contacts to.
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
-1. Check the populated data. Only the **Email** field is required to complete the upload. Skipped column headers will not be uploaded and will not appear as custom fields within an individual contact's profile.
+1. Check the populated data. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 1. Select **Skip Column** to omit data from the contacts list.
 1. Click **Save Contacts**.
 
@@ -142,7 +142,7 @@ If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html
 Viewing a Contact
 {% endanchor %}
 
-To view a specific contact profile, find the contact in one of your lists or by searching your contact database. Then click the contact’s email address. You will then be able to view the email, reserved fields that SendGrid provides, and list associations for this contact.
+To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, reserved fields that SendGrid provides, and list associations for this contact.
 
 {% info %}
 Searches are case agnostic but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io".
@@ -155,7 +155,7 @@ To view any custom fields you have assigned to this contact, or to view any list
 Editing a Contact
 {% endanchor %}
 
-When you are viewing a contact, click any of the Edit buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields (except email), any custom fields you’ve added for this contact, and any lists the contact is associated with.
+When you are viewing a contact, click any of the Edit buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
 *To edit the associated lists for your contact:*
 1. Select the **Associated Lists** tab.
