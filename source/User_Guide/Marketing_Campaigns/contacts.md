@@ -26,8 +26,7 @@ Your first 2,000 contacts are free. For information about how many contacts come
 Formatting a CSV
 {% endanchor %}
 
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your
-contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
 
 {% warning %}
 Your CSV file MUST be in UTF-8 format.
@@ -135,8 +134,7 @@ The download link to your CSV of errored rows will be available for 24 hours.
 {% endinfo %}
 
 {% info %}
-If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you
-upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
+If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
 {% endinfo %}
 
 {% anchor h3 %}
