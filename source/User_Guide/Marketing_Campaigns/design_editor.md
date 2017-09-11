@@ -27,7 +27,7 @@ The design editor is where you build your templates and campaigns using drag & d
     * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
     * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
 * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
-    
+
 {% anchor h3 %}
 Getting Started With the Design Editor
 {% endanchor h3 %}
@@ -183,7 +183,7 @@ Adding Images
 *To upload an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area. 
+1. Select the Images module, and drag and drop it into your content area.
 <br>This opens a window where you can upload images to your image library.  
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
@@ -598,3 +598,11 @@ SendGrid hosts the images included in the pre-built templates and any images you
 1. Click **New Campaign**, and then select **Blank Template**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)
