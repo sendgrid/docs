@@ -56,12 +56,12 @@ Uploading a CSV
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
-   A page appears displaying the data from the header row from of the CSV file. From the list you can select which custom field to associate to the data in the column. If there isn't a corresponding field, you can add a custom field. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
-   
+   A page appears displaying the data from the header row from of the CSV file. From the list you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+
 1. Select **Skip Column** to omit data from the contacts list.
 1. Once you've gone through all of the headers, click **Save Contacts**.
 
-Once we have completed processing your new contacts, you will receive a summary notification email with the following information:
+Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) with the following information:
 
 * Total processed contacts
 * Number of new contacts
@@ -69,11 +69,13 @@ Once we have completed processing your new contacts, you will receive a summary 
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts.
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html).
 
+{% info %}
+The download link to your CSV of errored rows will be available for 24 hours.
+{% endinfo %}
 
-
-   The CSV uploads to your contacts database. You will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) once the CSV has been processed. If you encounter issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html) for more information.
+The CSV uploads to your contacts database. You w once the CSV has been processed.
 
 {% warning %}
 The maximum CSV file size is 2GB.
@@ -112,7 +114,7 @@ Creating a New List
 
 *To create a new list from your CSV:*
 
-1. Click **Add List or Segment** and then select **Upload CSV**.
+1. Click **Add Contacts** and then select **Upload CSV**.
 1. Click **+Add to New List** and enter the name of the list you would like to create.
 1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#-Uploading-a-CSV).
 
@@ -129,10 +131,6 @@ Add Contacts to a List
 1. Click **Save**.
 
 {% info %}
-The download link to your CSV of errored rows will be available for 24 hours.
-{% endinfo %}
-
-{% info %}
 If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
 {% endinfo %}
 
@@ -143,7 +141,7 @@ Viewing a Contact
 To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
 {% info %}
-Searches are case agnostic but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io".
+Searches are case agnostic but must be done using a whole email address that includes an "@" and any top-level domain like ".com" or ".io".
 {% endinfo %}
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
@@ -168,7 +166,7 @@ Delete a Specific Contact
 *To remove one or more contacts from a list:*
 
 1. Navigate to the contact you wish to modify and click the Action Menu.
-1. Click  **Remove From List**.
+1. Click **Remove From List**.
    You will also see an option to delete the contact, which deletes them from your contact database.
 
 
