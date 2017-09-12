@@ -75,8 +75,6 @@ If there are any errors, there will be a link to download a CSV containing the e
 The download link to your CSV of errored rows will be available for 24 hours.
 {% endinfo %}
 
-The CSV uploads to your contacts database. You w once the CSV has been processed.
-
 {% warning %}
 The maximum CSV file size is 2GB.
 {% endwarning %}
