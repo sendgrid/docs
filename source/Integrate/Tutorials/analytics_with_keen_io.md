@@ -53,19 +53,19 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 Test Your Integration
 {% endanchor h3 %}
 
-Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s Event Notification Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **Check for SendGrid Data** button.
+Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
 
-Your SendGrid email data should now be populated in Keen IO. You’ll have one segment automatically created for **All Mail**, and you can start customizing your email report.
+Your SendGrid email data should now be populated in Keen IO. 
 
 {% anchor h3 %}
 Using SendGrid Email Analytics
 {% endanchor h3 %}
 
-Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on the **Apps tab** in your projects page.
+Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab. 
 
-To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click the **Apps** tab. Select **SendGrid**. If you’ve successfully completed Step 1 and sent SendGrid data to Keen for storage, you will see the dashboard below.
+To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the “Apps” tab. Find SendGrid and select “Launch App”. If you’ve successfully sent SendGrid data to Keen for storage, you will see the dashboard below. 
 
-![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard.png)
+![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
 
 A report for **All of your Mail”** will be created automatically. You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
 
@@ -75,21 +75,19 @@ For each of these metrics, you can download a CSV of the detailed event data. Ju
 Adding a Segment
 {% endanchor h4 %}
 
-Now that you have an idea of the metrics that can be viewed for all of your mail, a more targeted segment within Keen IO to track a specific campaign or filter on a particular field like a customer ID.
+A segment will allow you to track a specific campaign or filter on a particular field like a customer ID. To create a segment, select “Add Segment” from the top left corner. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and, most importantly, select a property by which you’d like to measure the effectiveness of a campaign.
 
 {% info %}
 This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) in SendGrid
 {% endinfo %}
 
-To create a custom segment, select **Add Segment** from the top left corner of the Keen IO Application. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and select a property by which you’d like to measure the effectiveness of a campaign.
-
-Here’s an example of a segment created to look at delivered, open, and click rates for emails sent within the United States.
-
 ![SendGrid- Email Analytics App Create a Segment]({{root_url}}/images/keen/sendgrid_create_a_segment.png)
 
-Your custom segment will appear in the application here:
+Here’s an example of a segment created to look at delivered, open, and click rates for emails sent within the United States. 
 
 ![SendGrid- Email Analytics App Segment Now Created]({{root_url}}/images/keen/sendgrid_segment_created.png)
+
+You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam. For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign. 
 
 To edit a segment, click on the segment you newly created: you’ll find a menu that allows you to edit it, clone, or remove it.
 
