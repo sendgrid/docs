@@ -43,21 +43,21 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 Test Your Integration
 {% endanchor h3 %}
 
-Test that everything is working by clicking  on the **Test Your Integration** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **Check for SendGrid Data** button.
+Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
 
-Using Keen IO and SendGrid’s Email Analytics app, you can quickly and easily view email reports, run custom analysis, and permanently store all of your email event information.
+Your SendGrid email data should now be populated in Keen IO.
 
 {% anchor h3 %}
 SendGrid Email Analytics
 {% endanchor h3 %}
 
-Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab.
+Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab. 
 
-To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the **Apps tab**. Select **SendGrid**. If you’ve successfully completed Step 1 and sent SendGrid data to Keen for storage, you will see the dashboard below.
+To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the “Apps” tab. Find SendGrid and select “Launch App”. If you’ve successfully sent SendGrid data to Keen for storage, you will see the dashboard below. 
 
-![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard.png)
+![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
 
-A report for “All of your Mail” will be created automatically. You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
+Now you can start tracking the performance of your emails by creating segments! In each one you can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
 
 For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
 
