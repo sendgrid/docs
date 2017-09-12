@@ -55,9 +55,23 @@ Uploading a CSV
 1. Choose an existing list or create a new list to add the contacts to.
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
-1. Check the populated data. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+
+   A page appears displaying the data from the header row from of the CSV file. From the list you can select which custom field to associate to the data in the column. If there isn't a corresponding field, you can add a custom field. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+   
 1. Select **Skip Column** to omit data from the contacts list.
-1. Click **Save Contacts**.
+1. Once you've gone through all of the headers, click **Save Contacts**.
+
+Once we have completed processing your new contacts, you will receive a summary notification email with the following information:
+
+* Total processed contacts
+* Number of new contacts
+* Number of updated contacts
+* Number of errors
+* Error messages for each errored row
+
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts.
+
+
 
    The CSV uploads to your contacts database. You will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) once the CSV has been processed. If you encounter issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html) for more information.
 
@@ -83,7 +97,7 @@ Manually Add a Contact
 1. Click **Save**.
 
 {% info %}
-If you manually add a contact to a list with custom fields defined, you will need to manually define those fields and the corresponding values for each contact you add.
+To add Custom Field data to a manually imported contact, navigate to the Contact Details page of the new contact.  
 {% endinfo %}
 
 {% anchor h2 %}
@@ -114,22 +128,6 @@ Add Contacts to a List
 1. Enter the information for the new contact.
 1. Click **Save**.
 
-{% anchor h3 %}
-Selecting Custom Fields
-{% endanchor %}
-
-Once the CSV uploads, a page appears displaying the data from the header row from of the CSV file. From the list you can select which custom field to associate to the data in the column. If the header matches a custom field name, the existing field name will automatically appear. If there isn't a corresponding field, you can add a custom field.
-
-Once we have completed processing your new contacts, you will receive a summary notification email with the following information:
-
-* Total processed contacts
-* Number of new contacts
-* Number of updated contacts
-* Number of errors
-* Error messages for each errored row
-
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts.
-
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.
 {% endinfo %}
@@ -142,7 +140,7 @@ If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html
 Viewing a Contact
 {% endanchor %}
 
-To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, reserved fields that SendGrid provides, and list associations for this contact.
+To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
 {% info %}
 Searches are case agnostic but must be done using a whole email address that includes an "@" and any TLD like ".com" or ".io".
@@ -158,6 +156,7 @@ Editing a Contact
 When you are viewing a contact, click any of the Edit buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
 *To edit the associated lists for your contact:*
+
 1. Select the **Associated Lists** tab.
 1. Enter or select the list you would like to use.
 1. Click **Add**.
@@ -167,6 +166,7 @@ Delete a Specific Contact
 {% endanchor %}
 
 *To remove one or more contacts from a list:*
+
 1. Navigate to the contact you wish to modify and click the Action Menu.
 1. Click  **Remove From List**.
    You will also see an option to delete the contact, which deletes them from your contact database.
@@ -177,6 +177,7 @@ Delete All Contacts
 {% endanchor %}
 
 *To delete all of your contacts at once:*
+
  1. Navigate to your [Contacts page](https://sendgrid.com/marketing_campaigns/contacts) and hover over the Action Menu next to All Contacts.
  1. Click the trash can icon.
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
