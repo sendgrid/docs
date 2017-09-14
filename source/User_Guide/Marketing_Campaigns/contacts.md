@@ -9,6 +9,17 @@ seo:
   override: true
   description:
 ---
+* [Adding Contacts](#-Adding-Contacts)
+  * [Formatting a CSV](#-Formatting-a-CSV)
+  * [Uploading a CSV](#-Uploading-a-CSV)
+  * [Manually Add a Contact](#-Manually-Add-a-Contact)
+* [Managing Contacts](#-Managing-Contacts)
+  * [Creating a New List](#-Creating-a-New-List)
+  * [Add Contacts to a List](#-Add-Contacts-to-a-List)
+  * [Viewing a Contact](#-Viewing-a-Contact)
+  * [Editing a Contact](#-Editing-a-Contact)
+  * [Delete a Specific Contact](#-Delete-a-Specific-Contact)
+  * [Delete All Contacts](#-Delete-All-Contacts)
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -33,6 +44,7 @@ Your CSV file MUST be in UTF-8 format.
 {% endwarning %}
 
 Your CSV should contain the following information about each contact:
+
 * email (required)
 * first_name
 * last_name
@@ -54,6 +66,10 @@ Uploading a CSV
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose an existing list or create a new list to add the contacts to.
 1. Upload your file by dragging it into or clicking the CSV upload area.
+{% warning %}
+   The maximum CSV file size is 2GB.
+{% endwarning %}
+
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
    A page appears displaying the data from the header row from of the CSV file. From the list you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
@@ -75,13 +91,9 @@ If there are any errors, there will be a link to download a CSV containing the e
 The download link to your CSV of errored rows will be available for 24 hours.
 {% endinfo %}
 
-{% warning %}
-The maximum CSV file size is 2GB.
-{% endwarning %}
-
-{% warning %}
+{% info %}
 If you upload the same contact more than once, SendGrid updates the data, assuming the most recent upload has the most up-to-date information. Updates to your contacts cannot be rolled back. Multiples of the same contact (as identified by email) can be added to different lists or segments and count as one contact against your total contacts per account or subuser account.
-{% endwarning %}
+{% endinfo %}
 
 {% anchor h3 %}
 Manually Add a Contact
@@ -165,7 +177,7 @@ Delete a Specific Contact
 
 1. Navigate to the contact you wish to modify and click the Action Menu.
 1. Click **Remove From List**.
-   You will also see an option to delete the contact, which deletes them from your contact database.
+   This option removes the contact from the list. To remove the contact completely, select **delete**.
 
 
 {% anchor h3 %}
