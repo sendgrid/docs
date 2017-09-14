@@ -32,15 +32,11 @@ This is to ensure that you are CAN-SPAM compliant. The footer of your emails inc
 </br>
 ![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
 
-*To add a sender*
+1. After you fill out the form, click **Save**.
+1. Check the email account and click the link in the email to verify the Sender email.
+   * To resend your verification email, click the gear icon under Actions on the Sender Management page and select Resend Verification.
+   * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
-1. Navigate to **Marketing Campaigns** and then click **Senders**.
-1. In the upper right corner, click **Create New Sender**.
-1. Enter your information in the **Add a Sender** form and then click **Save**.
-1. An email is sent to the account you specified as your From Email Address.
-1. Click the link in the verification email to complete the process of adding a verified sender.
-
-   To resend your verification email, navigate to the Sender Management page and click the action menu next to the Sender that you wish to verify. Select **Resend Verification**. Your verification link is only valid for 48 hours. After that time you will need to restart the verification process.
 
 {% info %}
 If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
@@ -70,6 +66,8 @@ You can insert your sender identity information into your campaigns using the fo
 
 **[Sender_Zip]** - The sender's zip.
 
+**[Sender_Country]** - The sender's country.
+
 To show your sender's full address and information in the footer of the email, add the tags as shown:
 
 {% codeblock %}
@@ -77,3 +75,9 @@ To show your sender's full address and information in the footer of the email, a
 [Sender_Address]
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html)

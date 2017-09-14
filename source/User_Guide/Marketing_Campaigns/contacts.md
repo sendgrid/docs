@@ -179,6 +179,7 @@ Delete a Specific Contact
 1. Click **Remove From List**.
    This option removes the contact from the list. To remove the contact completely, select **delete**.
 
+**Data Formatting**
 
 {% anchor h3 %}
 Delete All Contacts
@@ -190,4 +191,10 @@ Delete All Contacts
  1. Click the trash can icon.
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
-This will delete all of your Marketing Campaigns contacts without deactivating your account. For information on how to remove unusable contacts from a list or segment without purging your entire contacts database, see [How to Remove Unusable Contacts](https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html)
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
+- [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
