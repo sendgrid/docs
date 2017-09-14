@@ -76,7 +76,7 @@ Remove Contacts From a List
 Click on the name of your list to view all the contacts on the list. Check the box next to the contacts you would like to remove. You will notice that a button at the top right corner will keep track of how many contacts you have selected. Click the button with the selected count and choose the option “Remove from this list” to take these contacts off the list.
 
 {% info %}
-Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the customer portal without re-adding the contacts manually or via a CSV.
+Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the UI without re-adding the contacts manually or via a CSV.
 {% endinfo %}
 
 If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
