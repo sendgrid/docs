@@ -26,11 +26,11 @@ Segments are dynamically updated over time as you add customers who meet the cri
 You must create at least one list or segment in order to send a campaign.
 {% endinfo %}
 
-<iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 {% anchor h2 %}
 Managing Your Lists
 {% endanchor %}
+
+<iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on the right side of your list title to see Export, View List, Edit List, and Delete options.
 
@@ -83,11 +83,12 @@ Choosing “Delete” will permanently remove the contacts from your contact dat
 
 If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
 
-<iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% anchor h2 %}
 Create a Segment
 {% endanchor %}
+
+<iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
