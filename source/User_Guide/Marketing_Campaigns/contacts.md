@@ -69,7 +69,6 @@ Uploading a CSV
 {% warning %}
    The maximum CSV file size is 2GB.
 {% endwarning %}
-
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
    A page appears displaying the data from the header row from of the CSV file. From the list you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
