@@ -46,7 +46,7 @@ You can add as many of the SMTP API methods as you want to a single large JSON s
 }
 {% endcodeblock %}
 
-<p>The above example is formatted for readability. Headers must be wrapped to keep the line length under 72. By [RFC 821](http://tools.ietf.org/html/rfc821) no line can be longer than 1,000, so if you are going to generate this string yourself it is a good idea to make sure that you wrap it.</p>
+<p>The above example is formatted for readability. Headers must be wrapped to keep the line length under 72. By <a href="https://tools.ietf.org/html/rfc821">RFC 821</a> no line can be longer than 1,000, so if you are going to generate this string yourself it is a good idea to make sure that you wrap it.</p>
 
 <p>Here is a full example of generating the above JSON header in a Perl script:</p>
 

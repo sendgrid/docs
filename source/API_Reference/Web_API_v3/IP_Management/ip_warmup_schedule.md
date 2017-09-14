@@ -15,7 +15,7 @@ If you are looking for a suggested IP Warmup Schedule, [please download our IP W
 The following schedule shows the automatic hourly warmup schedule and email limits that SendGrid will use to
 warmup your IP addresses when used with [IP warmup feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
 
-Any email traffic exceeding these hourly message limits will be sent through your other dedicated IP Addresses. If you don't have any other dedicated IP Addresses, these emails will be sent through SendGrid's shared IPs as a default.
+Any email traffic exceeding these hourly message limits will be sent through your other warm dedicated IP Addresses. If you don't have any other warm dedicated IP Addresses, you will need to manually warmup following the [IP Warmup Guide](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
 <table class="table table-striped table-bordered">
   <tr>

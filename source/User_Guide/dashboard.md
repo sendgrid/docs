@@ -18,7 +18,7 @@ The SendGrid dashboard is designed to give you an at-a-glance view of your curre
 Stats
 {% endanchor %}
 
-On your dashboard you can choose to see the last 7 or the last 30 days of email statistics in the main graph, so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
+On your dashboard, you can choose to see the last 7 or the last 30 days of email statistics in the main graph so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
 
 If you want to see all of your email statistics, go to your [Statistics Page]({{site.app_url}}/statistics) via the graph icon on the left side menu.
 
@@ -46,4 +46,4 @@ The Unsubscribe Groups box will show you the current status of unsubscribe group
 Help Links
 {% endanchor %}
 
-We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us), our [Documentation]({{root_url}}/), and our [Community page](http://community.sendgrid.com/sendgrid).
+We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us) and our [Documentation]({{root_url}}/).

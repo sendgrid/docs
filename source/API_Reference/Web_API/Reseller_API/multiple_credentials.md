@@ -6,8 +6,18 @@ navigation:
   show: true
 ---
 
+{% warning %}
+The Reseller API endpoints for creating and managing Multiple User Credentials may still be used. However, with the release of [Teammates]({{root_url}}/User_Guide/Settings/teammates.html), creating a Multiple User Credential through this API will create a teammate with administrator privileges.
+
+While Teammates is backwards compatible with the Multiple User Credentials Reseller API, we do recommend that you use the [Teammates API]({{root_url}}/API_Reference/Web_API_v3/teammates.html) to create and manage teammates.
+
+There will eventually be a deprecation plan for the Multiple Credential Users Reseller API.
+{% endwarning %}
+
+
+
 {% anchor h2 %}
-Add user credential 
+Add user credential
 {% endanchor %}
 
 Notes: This API call allows SendGrid resellers to add a new set of credentials to a specified child account.
@@ -101,7 +111,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 * * * * *
 
 {% anchor h2 %}
-Edit user credential 
+Edit user credential
 {% endanchor %}
 
 Notes: This API call allows SendGrid resellers to edit an already existing credential password. Changing the credential name is not currently allowed.
@@ -196,7 +206,7 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 </h4>
 
 {% anchor h2 %}
-Delete user credential 
+Delete user credential
 {% endanchor %}
 
 Notes: This API call allows SendGrid resellers to delete an existing credential under a child account.

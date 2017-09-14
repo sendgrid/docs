@@ -11,6 +11,10 @@ navigation:
   show: true
 ---
 
+{% info %}
+Please note: Large plain text files are sometimes unable to be converted to HTML. Instead, SendGrid will send only the plain text version. If HTML versions are essential, it is best practice to include the HTML portion of the email within your email requests. When SendGrid is unable to convert from plaintext to HTML, an alert is sent to the From address.
+{% endinfo %}
+
 If you are sending plain text emails, you may have noticed that, in some cases, your email is converted to HTML. This typically happens when you have one or more filters enabled that require a HTML version of the message you are sending.
 
 **Why does this happen?**
@@ -38,4 +42,3 @@ Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org
 **For more information**
 
 We use the open-source library [MKDoc-Text-Structured](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm) to perform the plain-text to HTML conversion. More information about this library and how it works can be found on the [MKDoc-Text-Structured documentation page](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm).
-

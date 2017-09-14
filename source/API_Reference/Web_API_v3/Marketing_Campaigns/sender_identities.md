@@ -21,6 +21,8 @@ Create a Sender Identity [POST]
 
 This endpoint allows you to create a sender identity.
 
+{% info %} You may create up to 100 unique sender identities.{% endinfo %}
+
 Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the  `from.email`.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/senders %}

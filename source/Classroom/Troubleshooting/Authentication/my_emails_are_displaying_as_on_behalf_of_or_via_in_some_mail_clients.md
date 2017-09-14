@@ -17,6 +17,7 @@ A handful of ISPs and mail clients, such as Gmail or Outlook, will display a mes
 
 
 
-By default, SendGrid signs all email with DKIM to improve deliverability with recipient domains. However, when using accounts that do not include Whitelabeling, this means that the domain in the 'from' field will not have the proper <acronym title="Domain Name System">DNS </acronym>record to authenticate the e-mail. Because of this, SendGrid inserts a Sender header as either sendgrid.me or sendgrid.info, and the e-mail can then be properly authenticated._ Be advised, this limitation applies to our Free, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html) plans and cannot be modified unless you  [upgrade](https://app.sendgrid.com/settings/billing) your account._
+By default, SendGrid signs all email with DKIM to improve deliverability with recipient domains. However, when using accounts that do not include Whitelabeling, this means that the domain in the 'from' field will not have the proper <acronym title="Domain Name System">DNS </acronym>record to authenticate the e-mail. Because of this, SendGrid inserts a Sender header as either sendgrid.me or sendgrid.info, and the e-mail can then be properly authenticated.
 
-When using a Essential or higher account, you can solve this display issue by matching the domain in your 'from' address to what you have set within your account Whitelabel wherever possible. Additionally IP whitelabeling is available for Pro packages and above.
+
+You can solve this display issue by matching the domain in your 'from' address to what you have set within your account Whitelabel wherever possible. Additionally IP whitelabeling is available for Pro packages and above.

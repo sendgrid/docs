@@ -36,7 +36,7 @@ You may not include more than 1000 personalizations per API request. If you need
 
 There are certain parameters that can be defined both at the "message level" and at the "personalizations" level.
 
-For example, the subject, headers, substitutions, custom arguments, and send_at parameters can all be defined globally or at the personalizations level. When SendGrid processes and validates your request, it first looks at the globally defined parameters. Then the personalizations you have specified are applied, overriding any duplicates already specified globally.
+For example, the subject, headers, custom arguments, and send_at parameters can all be defined globally or at the personalizations level. When SendGrid processes and validates your request, it first looks at the globally defined parameters. Then the personalizations you have specified are applied, overriding any duplicates already specified globally.
 
 Individual fields within the personalization array will override any other global, or "message level", parameters that are defined outside of personalizations. For example, the email subject defined within personalizations will override the subject defined at the message level in the JSON payload.
 

@@ -21,7 +21,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "YOU@sendgrid.com"}]}],"from": {"email": "dx@sendgrid.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -33,7 +33,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "dx@sendgrid.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sender@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -45,7 +45,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "dx@sendgrid.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sender@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% anchor h2 %}
@@ -82,7 +82,7 @@ You may schedule an email to be sent up to 72 hours in the future by using the "
 {% codeblock lang:bash %}
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/batch \
-  --header 'authorization: Basic YOUR_API_KEY' \
+  --header 'authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
 {% endcodeblock %}
 

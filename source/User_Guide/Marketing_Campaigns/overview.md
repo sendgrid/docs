@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 10
+weight: 99
 title: Dashboard
 navigation:
   show: true
@@ -15,12 +15,3 @@ When you log into <a href="{{site.marketing_campaigns_url}}/overview">SendGrid M
 
 ![]({{root_url}}/images/stats_2.png "Campaign Statistics")
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-        <a href="{{root_url}}/User_Guide/Marketing_Campaigns/notifications.html">Notifications</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

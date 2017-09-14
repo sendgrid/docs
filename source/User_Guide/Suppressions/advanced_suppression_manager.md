@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/130486946" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 When a user unsubscribes from a type of email being sent to them at the sender account level, SendGrid will suppress all of your attempts at sending this type of email to that user. This means that the contact information is still in your contact database or you can send this contact’s email via the API. Regardless, emails will not be sent to this contact’s email.
 
@@ -35,6 +35,8 @@ All of your groups will be visible on the [Suppression Management]({{site.app_ur
 {% anchor h2 %}
 Add An Unsubscribe Group
 {% endanchor %}
+
+{% info %} There is a limit of 25 groups per user. {% endinfo %}
 
 To add a new group, click the “Create New Group” button at the top right of the page. Then, you will be asked to name your Unsubscribe Group and add the description. Click “Done” and you will see your new group in the list of all of your unsubscribe groups.
 

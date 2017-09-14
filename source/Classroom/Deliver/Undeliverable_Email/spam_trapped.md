@@ -1,6 +1,7 @@
 ---
 seo:
   title: Spam Trapped
+  canonical: https://sendgrid.com/blog/spam-traps-what-they-are-and-why-you-should-pay-attention-to-them/
   description: Spam Trapped
   keywords: spam, role, address, trap, honey, pot, double, segmentation, opt-in, bad, old, spam traps, purchased, lists
 title: Spam Trapped

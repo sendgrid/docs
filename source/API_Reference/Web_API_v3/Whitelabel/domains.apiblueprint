@@ -123,6 +123,10 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
     + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF.  This option is only available to domain whitelabels setup for manual security.
     + default false (optional, boolean) - Whether to use this whitelabel as the fallback if no domain whitelabels match the sender's domain.
 
+{% info %}
+You may create up to a maximum of 1500 domain whitelabels.
+{% endinfo %}
+
 + Request (application/json)
 
   + Body

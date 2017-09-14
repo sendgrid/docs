@@ -21,8 +21,4 @@ As these IP groups [warm up](https://sendgrid.com/docs/Classroom/Deliver/Deliver
 
 Keep in mind SendGrid will continue to attempt to deliver these throttled emails on your behalf for up to 72 hours (it rarely takes the full 72 hours to deliver an email throttled in this way). 
 
-If you wish to avoid disruptions like this in the future, considering [upgrading your account to a Pro or higher plan](https://app.sendgrid.com/settings/billing), which includes a dedicated IP address as opposed to sending from a shared IP group. Dedicated IP addresses are great because instead of many different users sending from the same IP or group of IPs, you are in complete control of your sending reputation. 
-
-Customer feedback is extremely important us here at SendGrid, and we have made these changes as a result of that feedback. We know in the long run, this will immensely help your sending.
-
-July 2016
+If you wish to avoid delivery disruptions like this in the future, considering [upgrading your account to a Pro or higher plan](https://app.sendgrid.com/settings/billing), which includes a dedicated IP address as opposed to sending from a shared IP group. Dedicated IP addresses are great because instead of many different users sending from the same IP or group of IPs, you are in complete control of your sending reputation. 

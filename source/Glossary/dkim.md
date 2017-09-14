@@ -24,18 +24,42 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-When you utilize [whitelabeling]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html), you have to create DKIM DNS records. You can even customize your DKIM records. 
+{% anchor h2 %}
+Automated Security and Your DKIM Signature
+{% endanchor %}
 
-What a basic DKIM record should look like:
-```
-smtpapi._domainkey.yourdomain.com.  |  TXT or CNAME  |  value
-smtpapi._domainkey.subdomain.yourdomain.com.  |  TXT or CNAME  |  value
- 
-TXT value: k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
- 
-CNAME value: dkim.sendgrid.net
-```
-Additional resources: 
+When you set up a [whitelabel]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html), you will be given the option of using [automated or manual security]({{root_url}}/Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/Glossary/ip_address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
+
+**SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when creating your domain whitelabel. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
+
+
+
+{% anchor h3 %}
+Example DKIM Record: Automated Security ON
+{% endanchor %}
+
+{% codeblock %}
+
+subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
+s1.domainkey.yourdomain.com. | CNAME | s1.domainkey.uXXX.wlXXX.sendgrid.net.
+s2.domainkey.yourdomain.com. | CNAME | s2.domainkey.uXXX.wlXXX.sendgrid.net.
+
+{% endcodeblock %}
+
+{% anchor h3 %}
+Example DKIM Record: Automated Security OFF
+{% endanchor %}
+
+{% codeblock %}
+
+m1._domainkey.yourdomain.com. | MX | mx.sendgrid.net
+s1.domainkey.yourdomain.com. | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
+s2.domainkey.yourdomain.com. | TXT | v=spf1 include:sendgrid.net ~all
+
+{% endcodeblock %}
+
+
+Additional resources:
 
 * [Internet Standards (SPF and DKIM) and Deliverability]({{root_url}}/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html)
 * [the DKIM.org website](http://www.dkim.org/)

@@ -14,7 +14,7 @@ navigation:
 Click Tracking
 {% endanchor %}
 
-Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your whitelabeled link domain so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html).
+Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your whitelabeled link domain so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html). SendGrid can track up to 1000 links per email.
 
 {% anchor h3 %}
 Settings
@@ -28,7 +28,7 @@ Google Analytics
 
 For more information about using this app, please refer to [Google’s URL Builder](https://support.google.com/analytics/answer/1033867?hl=en) and their article on "[Best Practices for Campaign Building](https://support.google.com/analytics/answer/1037445)".
 
-We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics Demystified](https://support.sendgrid.com/hc/en-us/articles/200181468).
+We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics Demystified](https://sendgrid.com/docs/Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html).
 
 {% anchor h3 %}
 Settings

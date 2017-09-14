@@ -6,7 +6,9 @@ navigation:
   show: true
 ---
 {% warning %}
-This page refers to our legacy email marketing tool. Please check out our new <a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html">Marketing Campaigns API</a>.
+Legacy Newsletter is being retired 9/30/17.<br />
+Ready to migrate? Have Questions?<br />
+Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html).
 {% endwarning %}
 
 
@@ -141,7 +143,7 @@ delete
 
 Remove one or more emails from a Recipient List.
 
-{% parameters delete %} 
+{% parameters delete %}
 
   {% parameter list Yes 'Must be an existing Recipient List.' 'The list which you are removing email addresses from.' %}  
 

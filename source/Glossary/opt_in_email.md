@@ -20,7 +20,7 @@ There are several variations of opt-in email:
 
 - **Confirmed Opt-in** refers to the practice of sending confirmation emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
-Giving your recipients the option to opt-in to receive your email will help to improve your [sender reputation]({{root_url}}/Glossary/sender_reputation.html) and will prevent your emails from ending up in your recipients’ [spam folders]({{root_url}}/Glossary/bulk_mail_folder.html).
+Giving your recipients the option to opt-in to receive your email will help to improve your [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html) and will prevent your emails from ending up in your recipients’ [spam folders]({{root_url}}/Glossary/bulk_mail_folder.html).
 
 Regardless of your method of obtaining a recipient's permission, it is important to give them the option of **opting-out** of receiving your future emails by including an [unsubscribe link]({{root_url}}/User_Guide/Suppressions/index.html).
 

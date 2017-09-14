@@ -18,7 +18,9 @@ If you send purely transactional emails, you may run into a situation where impo
 
 So, how do you keep mail to important addresses and domains flowing without having to go in and clear your suppression lists each time this happens?
 
-Easy, check out Address Whitelist! The [Address Whitelist](https://app.sendgrid.com/settings/mail_settings) is a setting where you can define specific addresses, and even whole domains that you never want us to Drop messages to!
+Easy, check out Address Whitelist! The [Address Whitelist](https://app.sendgrid.com/settings/mail_settings) is a setting where you can define specific addresses, and even whole domains that you never want us to Drop messages to! 
+
+![]({{root_url}}/images/address_whitelist_example.png)
 
 After adding an address or domain to Address Whitelist, you are free to retry attempts to previously dropped addresses. Adding an address here does not automatically re-attempt dropped messages, however.  
 

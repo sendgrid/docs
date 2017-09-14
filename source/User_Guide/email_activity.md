@@ -15,7 +15,7 @@ navigation:
 The Email Activity page allows you to view a snapshot of the email related activity that has been sent on your account. This does not include the information sent on a subuser account. These logs display all of your email events and can be viewed by the most recent activity or searched by email address.
 
 {% info %}
-Email activity only shows the most recent 7 days, up to 500 activities. In order to access data in real time, we recommend that you consider implementing our Event Webhook.
+Email activity only shows the most recent 7 days. To access data in real time, we recommend that you consider implementing our Event Webhook.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -44,6 +44,8 @@ You will be able to see data about the following types of email events in the Em
 email previously bounced, or that recipient has marked your email as spam. For more information, see [My Emails Are Being Dropped]({{site.support_url}}/hc/en-us/articles/200181728-My-emails-are-being-dropped-).
 
 **[Bounces]({{root_url}}/Glossary/bounces.html)** - When an email is attempted to be delivered, but the recipient mail server rejects it.
+
+**[Blocks]({{root_url}}/Glossary/blocks.html)** - When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.
 
 **[Spam Reports]({{root_url}}/Glossary/spam_reports.html)** - Whenever a recipient marks your email as spam and their mail server tells us about it.
 

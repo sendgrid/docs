@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 70
+weight: 65
 title: Contacts
 navigation:
   show: true
@@ -201,7 +201,7 @@ Some examples:
 * Phone numbers: “(555) 555-5555” or “555.555.5555”
 * Monetary Values with the currency indicator such as $3.50 or €5.73
 
-**Data formatting**
+**Data Formatting**
 
 Make sure that your dates are properly formatted in your CSV. If you created your CSV with Excel, you may need to force the date format before exporting to CSV. Years must be represented as 4-digit numbers. 1999 not 99. Day and month fields may be represented as single numbers.
 
@@ -215,10 +215,6 @@ Your CSV should always have a header row. The rules for this are:
 1. Capitalization doesn’t matter.
 1. The other columns can be blank.
 
-**Custom fields in your CSV but not your account**
-
-If you include a column in your CSV that is for a custom field not defined in your account, then the CSV will be rejected. We are currently working to add a feature that will let you set up custom fields as a step during the upload process.
-
 {% anchor h3 %}
 I have more than one of the same email in my database
 {% endanchor %}
@@ -227,14 +223,10 @@ With SendGrid's Marketing Campaigns feature, the unique identifier is the email 
 
 What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
 
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
 
-
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
+- [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
+- [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)

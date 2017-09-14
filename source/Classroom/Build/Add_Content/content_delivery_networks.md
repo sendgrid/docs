@@ -18,6 +18,8 @@ Using CloudFlare
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
+The instructions also assume that you have set up a valid [email links whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/links.html) on your account. This step is essential for the following instructions to work.
+
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
 ![CloudFlare DNS Settings]({{root_url}}/images/cloudflare1.png)
@@ -46,31 +48,23 @@ Once all of this is done, you will need to contact [SendGrid support](https://su
 Using Fastly
 {% endanchor %}
 
-[Sign up for Fastly](https://www.fastly.com/signup/) or login to your
-existing account.
-
-Click on the CONFIGURE button on the Dashboard.
-
-![Fastly Dashboard]({{root_url}}/images/fastly1.png)
-
-Click NEW SERVICE
-
-![CloudFlare Service]({{root_url}}/images/fastly2.png)
+1. [Sign up for Fastly](https://www.fastly.com/signup/) or [log in](https://manage.fastly.com) to an existing account.
+2. Click **Configure** on the Dashboard.
+3. Click the gear icon to open the **Manage Service** menu and click **Create**.
 
 Set the options as follows:
 
-*Name*: SendGrid (or whatever you like)
+* **Server address and port:** `sendgrid.net` : `443` _The connection on the SSL port 443_
+* **Domain:** `email.example.com` _Enter your links whitelabel domain here. Ensure it matches the domain configured in the SendGrid whitelabel settings. This value will be what recipients see in your SSL enabled click tracking links._
+* **Description:** `SendGrid` (or whatever you like)
 
-*Origin Server Address*: sendgrid.net : 443 (Note the connection on the SSL port 443)
+Finally, click the **Create**. The new service will appear in the list of available services.
 
-*Domain Name*: email.example.com (Enter your Email Links WhiteLabel domain here. Ensure it matches the domain configured in the SendGrid WhiteLabel Wizard. This value will be what recipients see in your SSL enabled clicktracking links).
+Contact SendGrid support to validate your CDN settings and enable SSL click and open tracking.
 
-Fastly has a few different options for SSL termination. If you want to be able to use your SendGrid Email Links WhiteLabel Domain with SSL, you'll need to select either the Shared Certificate, Shared Wildcard Certificate, or Customer Certificate Hosting options. If you need to add your SendGrid whitelabel domain to your Fastly managed certificate, you can open a ticket with Fastly via the support tab or by mailing support@fastly.com, and they will walk you through the process. Please put "SSL Certificate Request" in the subject.
-
-After provisioning, update the CNAME record for your domain(s) over to the TLS endpoint provided by Fastly support.
-
-Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
-tracking.
+{% info %}
+For more information, please visit [Fastly's documentation](https://docs.fastly.com/guides/basic-setup/working-with-services#creating-a-new-service).
+{% endinfo %}
 
 {% anchor h2 %}
 Using KeyCDN
@@ -89,7 +83,7 @@ Enable SSL and HTTP/2 (custom SSL or Let's Encrypt).
 
 ![KeyCDN Enable SSL]({{root_url}}/images/keycdn2.png)
 
-Enable the option "Forward Host Header." 
+Enable the option "Forward Host Header."
 
 ![KeyCDN Forward Host Header]({{root_url}}/images/keycdn3.png)
 
@@ -97,5 +91,5 @@ Add the Zonealias (with the alias you want to use for your email links whitelabe
 
 ![KeyCDN Zonealias]({{root_url}}/images/keycdn4.png)
 
-Finally; Contact SendGrid support, and they'll validate the CDN settings and enable SSL click and open
+Finally, [contact SendGrid support](https://support.sendgrid.com/hc/en-us), and they'll validate the CDN settings and enable SSL click and open
 tracking.

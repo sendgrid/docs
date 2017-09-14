@@ -11,6 +11,9 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 #Starting your Telnet connection:
 
 To begin, choose one of the following options based on the type of computer you are using.

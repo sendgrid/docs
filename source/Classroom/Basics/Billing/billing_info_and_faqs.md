@@ -2,7 +2,7 @@
 seo:
   title: Billing Info and FAQs
   description: Billing Info and FAQs
-  keywords: billing, refund, subscription, plan, charge, usage, overage, newsletter, marketing, campaigns, cancel, downgrade, upgrade,
+  keywords: billing, refund, subscription, plan, charge, usage, overage, newsletter, marketing, campaigns, cancel, downgrade, upgrade, resubmit, retry, payment
 title: Billing Info and FAQs
 weight: 0
 layout: page
@@ -33,7 +33,7 @@ Credits don't roll over from month to month, any unused credits from the previou
 
 **I missed a payment, what happens next?**
 
-Accounts with outstanding balances over 4-5 days old will be suspended due to nonpayment. As soon as you can [update your payment info]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html), your account will become active again.
+Accounts with outstanding balances over 4-5 days old will be suspended due to nonpayment. As soon as possible, [update your payment info or resubmit payment]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html) and your account will become active again shortly.
 
 Accounts that have unpaid invoices and are still suspended during the last week of the month will be terminated, and access revoked until the balance is settled. Please contact support to get your account re-activated from a billing terminated state.
 

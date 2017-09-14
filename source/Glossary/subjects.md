@@ -31,7 +31,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/ip_warmup.html">IP Warmup</a>
         <a href="{{root_url}}/Glossary/ip_whitelabeling.html">IP Whitelabeling</a>
         <a href="{{root_url}}/Glossary/mx_record.html">MX Record</a>
-        <a href="{{root_url}}/Glossary/provisioning.html">Provisioning</a>
         <a href="{{root_url}}/Glossary/reverse_dns.html">Reverse DNS</a>
         <a href="{{root_url}}/Glossary/smtp.html">SMTP</a>
         <a href="{{root_url}}/Glossary/spf.html">SPF</a>
@@ -50,7 +49,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/opens.html">Opens</a>
         <a href="{{root_url}}/Glossary/rate_limiting.html">Rate Limiting</a>
         <a href="{{root_url}}/Glossary/request.html">Request</a>
-        <a href="{{root_url}}/Glossary/sender_reputation.html">Sender Reputation</a>
         <a href="{{root_url}}/Glossary/spam.html">Spam</a>
         <a href="{{root_url}}/Glossary/throttling.html">Throttling</a>
         <a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Email</a>
@@ -60,6 +58,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/automated_email.html">Automated Email</a>
         <a href="{{root_url}}/Glossary/drip_campaign.html">Drip Campaign</a>
         <a href="{{root_url}}/Glossary/header.html">Header</a>
+        <a href="{{root_url}}/Glossary/message_id.html">Message ID</a>
         <a href="{{root_url}}/Glossary/opt_in_email.html">Opt-In Email</a>
         <a href="{{root_url}}/Glossary/peer_invitations.html">Peer Initiated Invitation Campaign</a>
         <a href="{{root_url}}/Glossary/reconfirmation.html">Reconfirmation Campaign</a>
@@ -97,7 +96,6 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/email_marketing.html">Email Marketing</a>
         <a href="{{root_url}}/Glossary/event_webhook.html">Event Webhook</a>
         <a href="{{root_url}}/Glossary/mail_merge.html">Mail Merge</a>
-        <a href="{{root_url}}/Glossary/marketing_email.html">Marketing Email</a>
         <a href="{{root_url}}/Glossary/mta.html">MTA</a>
         <a href="{{root_url}}/Glossary/openrelay.html">Open Relay</a>
         <a href="{{root_url}}/Glossary/reputation_monitoring.html">Reputation Monitoring</a>
@@ -109,13 +107,14 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/smtp_server.html">SMTP Server</a>
         <a href="{{root_url}}/Glossary/smtp_service.html">SMTP Service</a>
         <a href="{{root_url}}/Glossary/subscriber_list_management.html">Subscriber List Management</a>
+        <a href="{{root_url}}/Glossary/teammates.html">Teammates</a>
         <a href="{{root_url}}/Glossary/tls.html">Transport Layer Security</a>
         <a href="{{root_url}}/Glossary/transactional_email.html">Transactional Email</a>
         <a href="{{root_url}}/Glossary/transactional_email_templates.html">Transactional Email Templates</a>
         <a href="{{root_url}}/Glossary/triggered_actions.html">Triggered Actions</a>
-        <a href="{{root_url}}/Glossary/triggering_events.html">Triggering Events</a>
         <a href="{{root_url}}/Glossary/two_factor_authentication.html">Two Factor Authentication</a>
         <a href="{{root_url}}/Glossary/web_api.html">Web API</a>
+        <a href="{{root_url}}/Glossary/whitelist.html">Whitelist</a>
     </div>
     <div class="col-md-4 glossary-section">
         {% anchor h2 %}Other{% endanchor %}

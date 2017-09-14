@@ -10,7 +10,11 @@ navigation:
 Parse Webhook
 {% endanchor %}
 
-In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse. In this example we wil be using Python the Flask framework.
+{% github sendgrid/sendgrid-python#example Python %}
+We recommend using our official Python SDK, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.
+{% endgithub %}
+
+In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse. In this example we will be using Python the Flask framework.
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 

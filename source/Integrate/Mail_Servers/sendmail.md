@@ -12,6 +12,10 @@ Sendmail requires libsasl in order to properly send authentication requests to S
 
 Set the authorization credentials in **/etc/mail/access**
 
+{% warning %}
+We have had reports that some customers have needed to install `cyrus-sasl-plain` in order to avoid authentication issues as well. We have not validated this requirement, so please make sure your system administrators, Ops, and/or InfoSec people approve this change before you make it!
+{% endwarning %}
+
 {% codeblock lang:bash %}
 AuthInfo:smtp.sendgrid.net "U:yourUserName" "P:yourPassword" "M:PLAIN"
 {% endcodeblock %}

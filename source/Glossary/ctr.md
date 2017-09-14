@@ -1,9 +1,9 @@
 ---
 seo:
-  title: CTR
+  title: Click-Through Rate (CTR)
   description: What is CTR?
   keywords: CTR, click, rate, tctr, clicks, through
-title: CTR
+title: Click-Through Rate (CTR)
 weight: 0
 layout: page
 zendesk_id: 200591267

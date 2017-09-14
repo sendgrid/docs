@@ -189,6 +189,26 @@ $headers[] = 'categories: category1, category2';
 If you would like to configure categories for statistics tracking, simply set your desired category as the value of the 'Categories' field in the 'Statistics settings' section.
 
 {% anchor h2 %}
+Multisite
+{% endanchor %}
+
+If you are using the SendGrid plugin in a multisite environment, you need to enable it for use across your multisite network.
+
+Simply navigate to **My Sites**, click on **Network Admin**, and select **Plugins**.
+
+Here you can either enable or disable your SendGrid plugin for use across your multisite network.
+
+Once you have enabled SendGrid for use across your multisite network, you will be able to access the settings page from the network dashboard.
+
+You can enable access for SendGrid settings to each subsite in the Multisite Settings tab. If the checkbox is unchecked then that site will not see the SendGrid settings page and it will use the settings set on the network.
+
+{% info %}
+**Please note!** When you activate SendGrid management for a subsite, that site will not be able to send emails until the admin updates the SendGrid settings on that subsite.
+{% endinfo %}
+
+If you have already installed the SendGrid plugin in a multisite environment and you update to any version **after** 1.9.0 you may need to re-configure your plugin.
+
+{% anchor h2 %}
 Related content
 {% endanchor %}
 * [SendGrid's WordPress Subscription Widget]({{root_url}}/Integrate/Tutorials/WordPress/subscription_widget.html)

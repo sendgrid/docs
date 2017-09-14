@@ -14,7 +14,7 @@ navigation:
   show: true
 ---
 
-Ending up on a blacklist can be detrimental to your domain’s email deliverability.  All major ISPs use some form of blacklisting service in order to protect their customers from malicious emails, although not all blacklisting services are actively being used. If a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority.  Depending on the level of your account, you should approach a blacklisting in one of two ways:
+Ending up on a blacklist can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of blacklists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use blacklists to help them make inboxing and filtering decisions. Others rely only their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority.  Depending on the level of your account, you should approach a blacklisting in one of two ways:
 
  
 
@@ -73,12 +73,6 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Trend Micro](https://ers.trendmicro.com/reputations)
 - [URIBL](https://admin.uribl.com/)
 
-**†** **July 2016** At the time of this writing, Spamcop has blacklisted a number of our shared IPs. This is a common issue when using an account utilizing shared IPs. You are sharing IP's with hundreds, if not thousands, of SendGrid users and 1 bad actor can affect everyone accessing the IP group. **Our Compliance team is working with Spamcop as much as possible to get these IPs delisted.** However, Spamcop does not accept manual delisting requests, they only automatically delist IPs on a rotating 24-48 hours schedule. 
-
-Despite this, our Compliance team is doing everything they can to get shared IPs delisted with Spamcop, but at this point, we have to wait for them to automatically delist. In the interim, you may want to consider moving up to a Pro account with a dedicated IP to minimize any associated risk of poor sender on the same IP group. [Pro package pricing](https://sendgrid.com/pricing/) isn't based on volume, so much as it is priced for enhanced deliverability due to the dedicated IP.
-<br />
-<br />
-<br />
 *IMPORTANT NOTE:* If you request a delisting from a blacklisting service, and don't do anything to change the behavior that caused the listing in the first place, it is likely to occur again. Depending on the blacklist, it can be progressively harder to get delisted after the second or third listing.  
 
 ###TL;DR: Don't delist from major blacklists without a plan in place to address the issue that caused the listing! [Learn more about how to avoid and mitigate risk of blacklisting here](https://sendgrid.com/blog/avoiding-email-blacklists/).

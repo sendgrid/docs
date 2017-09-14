@@ -2,7 +2,7 @@
 seo:
   title: Mailbox Provider Statistics
   description: View and filter your Mailbox Provider specific email statistics.
-  keywords: Mailbox Provider statistics, SendGrid Mailbox Provider statistics
+  keywords: Mailbox Provider statistics, SendGrid Mailbox Provider statistics, email domain, stats by domain
 title: Mailbox Provider
 weight: 0
 layout: page
@@ -11,14 +11,10 @@ navigation:
 ---
 
 {% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
-{% endinfo %}
-
-{% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
-The mailbox provider report highlights how your mail performs across all the major providers, such as Hotmail, Yahoo, Gmail, and others.  The list of available providers is based on your recipient interaction with your emails. As you send mail and your recipient list diversifies, you will start to see more providers in the list.
+The [mailbox provider statistics](https://app.sendgrid.com/statistics/mailbox_provider) highlights how your mail performs across all the major providers, such as Hotmail, Yahoo, Gmail, and others.  The list of available providers is based on your recipient interaction with your emails. As you send mail and your recipient list diversifies, you will start to see more providers in the list.
 
 The actual statistics included vary depending upon your [account settings]({{root_url}}/User_Guide/Settings/index.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 

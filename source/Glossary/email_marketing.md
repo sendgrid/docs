@@ -12,9 +12,12 @@ navigation:
 
 Email Marketing (also known as commercial or promotional email) as defined by the CAN-SPAM Act is any message in which the primary purpose “advertises or promotes a commercial product or service, including content on a website operated for a commercial purpose.” Examples of email marketing include:
 
-* Newsletters
-* Email promotions
 * Coupons
+* Newsletters
+* [Peer Initiated Invitations]({{root_url}}/Glossary/peer_invitations.html)
+* Product Announcements
+* Promotional Emails
+* [Reconfirmation Email Campaigns]({{root_url}}/Glossary/reconfirmation.html)
 * Special offers
 
 Email marketing attempts to encourage the recipient to take an action like making a purchase, downloading content, registering for a service, attending an event, or visiting a store. Since the intent of email marketing is to promote a commercial product or service, it must adhere to certain legal requirements defined in the CAN-SPAM Act that were specifically developed to protect consumers and help senders provide the best possible email experience.
@@ -24,11 +27,11 @@ Following email best practices in your marketing emails can yield great rewards 
 SendGrid can help you achieve your email marketing goals with our [Marketing Email Service]({{site.site_url}}/solutions/email-marketing). This service provides the following and much more:
 
 * [Pre-designed email templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
-* [Drag and drop editor]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html)
-* [Ability to use your own HTML]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/index.html)
+* [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
+* [Ability to use your own HTML]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html)
 * [Scheduled Marketing campaigns delivery]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html)
 * [Powerful analytics]({{root_url}}/User_Guide/Statistics/index.html)
-* [A/B testing]({{root_url}}/User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html)
+* [A/B testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
 * [List Segmentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)
 
 This level of visibility into your email marketing performance is invaluable when it comes to determining what resonates best with your audience. Overall, the key to a successful email marketing is that it drives an action. You should strive to provide relevant content by using segmentation strategies to tailor your communications. This is best achieved by testing your design, content, and offers to determine what resonates best with your subscribers.

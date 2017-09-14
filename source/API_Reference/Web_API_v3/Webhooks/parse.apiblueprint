@@ -9,6 +9,8 @@ FORMAT: 1A
 
 The following Parse API settings allow you to manage the [Inbound Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html).
 
+In addition to configuring the Inbound Parse via our API, you may also configure the Inbound Parse in the Settings menu available from your SendGrid dashboard. For more information, see our [User Guide]({{root_url}}/User_Guide/Settings/parse.html).
+
 ## Parse Settings Collection [/user/webhooks/parse/settings?limit={limit}&offset={offset}]
 
 ### Get Parse Settings [GET]

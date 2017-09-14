@@ -18,8 +18,6 @@ In the context of deploying email, a single IP address or IP range may be dedica
 If you are on a Pro 100k or above plan you can see your IP reputation and IP address on your Account Overview page.
 {% endinfo %}
 
-![]({{root_url}}/images/ip_address_1.png)
-
 For more information:
 
 * [SendGrid Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)

@@ -21,20 +21,22 @@ When creating Custom Fields, or uploading a list with customized headers in our 
 
 Reserved fields are used to track useful metrics for your contacts by default. Trying to pass additional data into some of these field names can cause inaccuracies in your Contacts.
 
- 
+
 
 Here is a short list of the Reserved Custom Fields:
 
-| **Field Name** | **Field Type** |
-| **id** | **text** |
-| **first\_name** | **text** |
-| **last\_name** | **text** |
-| **email** | **text** |
-| **created\_at** | **date** |
-| **updated\_at** | **date ** |
-| **last\_emailed** | **date ** |
-| **last\_clicked** | **date ** |
-| **last\_opened** | **date ** |
+<table class="table">
+  <tr><th>Field Name</th><th>Field Type</th></tr>
+  <tr><td>id</td><td>text</td></tr>
+  <tr><td>first_name</td><td>text</td></tr>
+  <tr><td>last_name</td><td>text</td></tr>
+  <tr><td>email</td><td>text</td></tr>
+  <tr><td>lists</td><td>text</td></tr>
+  <tr><td>created_at</td><td>date</td></tr>
+  <tr><td>updated_at</td><td>date</td></tr>
+  <tr><td>last_emailed</td><td>date</td></tr>
+  <tr><td>last_clicked</td><td>date</td></tr>
+  <tr><td>last_opened</td><td>date</td></tr>
+</table>
 
 ![]({{root_url}}/images/SendGrid_Marketing_Campaigns.png)
-

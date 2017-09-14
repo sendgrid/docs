@@ -14,4 +14,14 @@ A domain is a named Internet address that resolves to the numbered Internet Prot
 
 If you are on a Pro 100k or above plan you will have your very own dedicated IP address which we encourage you to [whitelabel your server for sending with SendGrid]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html)
 
+{% anchor h2 %}
+SMTP Domain
+{% endanchor %}
+An example of one of the SendGrid domains is our SMTP domain: `smtp.sendgrid.com`
+
+{% anchor h2 %}
+More Information
+{% endanchor %}
+
 For more information, please download our [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
+

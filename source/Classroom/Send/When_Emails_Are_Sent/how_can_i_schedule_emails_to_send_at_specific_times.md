@@ -18,7 +18,6 @@ If you are using Marketing Campaigns, you can schedule a time to send your campa
 
 You can also schedule your campaigns with the [Marketing Campaigns API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Schedule-a-Campaign-POST). 
 
-![]({{root_url}}/images/schedule_emails_1.png
 
 #2. SMTP API
 You can use the [SMTP API](https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html) header to schedule your emails when sending via [SMTP](https://sendgrid.com/docs/Integrate/index.html#-SMTP-Relay) or our [mail.send API endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.

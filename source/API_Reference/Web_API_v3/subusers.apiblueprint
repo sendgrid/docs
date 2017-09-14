@@ -3,7 +3,7 @@ layout: page
 weight: 100
 title: Subusers API
 seo:
-  description: Create and Manage your subusers via the SendGrid v3 API
+  description: SendGrid's flexible v3 web API allows you to create and manage your subusers with quick setup and simple API calls. Click for example requests.
   title: Subusers API
 navigation:
   show: true

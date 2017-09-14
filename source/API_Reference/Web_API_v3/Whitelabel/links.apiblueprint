@@ -79,6 +79,10 @@ to create a couple CNAME records for the links to be rewritten to and for us to 
     + subdomain mail (required, string) - Subdomain to create the whitelabel for.
     + default true (optional, boolean) - Whether to use this link whitelabel as the fallback when a match cannot be found.
 
+{% info %}
+You may create up to a maximum of 1500 link whitelabels.
+{% endinfo %}
+
 + Request (application/json)
 
   + Body

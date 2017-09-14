@@ -13,4 +13,4 @@ navigation:
   show: true
 ---
 
-[Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) is currently not available for customers using third party partner services such as Azure, Heroku, etc... Although the feature is visible on the dashboard, it is not accessable to third party partner accounts at this time. This is a feature we hope will be available in the future. If you believe you did have access to Marketing Campaigns and it is no longer available, we will check and reactivate if necessary.
+[Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) is currently not available for customers using third party partner services such as Azure, Heroku, etc... Although the feature is visible on the dashboard, it is not accessable to third party partner accounts at this time. This is a feature we hope will be available in the future.

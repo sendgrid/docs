@@ -53,7 +53,7 @@ Return list of IPs. If search key is provided, returns IPs that matches.
         },{
             "id": 2,
             "ip": "192.168.1.2",
-            "rnds": "o2.email.example.com",
+            "rdns": "o2.email.example.com",
             "users":
             [
                 {"username":"john@example.com", "user_id":7},
@@ -94,7 +94,7 @@ Return list of IPs. If search key is provided, returns IPs that matches.
         {
             "id": 123,
             "ip": "192.168.1.2",
-            "rnds": "o1.email.example.com",
+            "rdns": "o1.email.example.com",
             "users": [],
             "subdomain": "email",
             "domain": "example.com",

@@ -65,7 +65,7 @@ To schedule a send request for individual recipients; use `send_each_at` to send
 }
 {% endcodeblock %}
 
-To allow for the cancellation of a scheduled send, you must include a batch id with your send. The endpoint for cancellation needs a batch id to cancel with. To generate a valid batch id, use the batch id generation endpoint
+To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. The endpoint for cancellation needs a `batch_id` to cancel with. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
 <h4>Example of including a batch_id</h4>
 {% codeblock lang:json %}

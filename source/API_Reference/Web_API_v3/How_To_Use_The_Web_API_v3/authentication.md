@@ -3,7 +3,8 @@ layout: page
 seo:
   title: Authentication
 title: Authentication
-description: Learn how to authentication your requests to the Web API V3
+description: Learn how to authenticate your requests to the Web API V3
+keywords: auth, authenticate, api, key, username, password, bearer, on, behalf, subuser
 weight: 99
 navigation:
   show: true
@@ -31,3 +32,31 @@ Authorization: Bearer Your.API.Key-HERE
 {% codeblock lang:bash %}
 curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json"
 {% endcodeblock %}
+
+{% anchor h3 %}
+On-Behalf of Subuser
+{% endanchor %}
+
+The on-behalf-of header allows you to make calls for a particular subuser through the parent account; this can be useful for automating bulk updates or administering a subuser without changing authentication in your code. In the header you are passing, you will simply need to add: `On-Behalf-Of: subuser_username`
+
+This will generate the api call as if it was the subuser account itself making the call. Just make sure you are using the correct subuser username.
+
+When authenticating using the on-behalf-of header, you will need to use the API key or basic auth credentials of the parent account.
+ 
+{% anchor h3 %}
+Using API Key:
+{% endanchor %}
+ 
+
+{% codeblock lang:bash %}
+curl -X GET \
+   'https://api.sendgrid.com/v3/stats?start_date=2016-01-01&end_date=2017-01-01&aggregated_by=month' \
+   
+   -H 'authorization: Bearer API Key' \
+   
+   -H 'on-behalf-of: subuser_username' \
+{% endcodeblock %}
+  
+ {% warning %}  
+ Please note: The on-behalf-of header will not work with the `mail.send` API.
+ {% endwarning %}  

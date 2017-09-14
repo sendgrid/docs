@@ -68,13 +68,17 @@ Failed requests will always return an error response, including a response code,
     <td>The JSON payload you have included in your request is too large.</td>
   </tr>
   <tr>
+    <td>415</td>
+    <td>UNSUPPORTED MEDIA TYPE</td>
+    <td></td>
+  <tr>
     <td>429</td>
     <td>TOO MANY REQUESTS</td>
-    <td>The number of requests you have made exceeds SendGrid's [rate limitations]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html)</td>
+    <td>The number of requests you have made exceeds SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html">rate limitations</a></td>
   </tr>
   <tr>
     <td>5xx</td>
-    <td>5xx respones indicate an error made by SendGrid</td>
+    <td>5xx responses indicate an error made by SendGrid</td>
     <td>An error occurred when SendGrid attempted to processes it.</td>
   </tr>
   <tr>
@@ -102,6 +106,7 @@ Table of Contents
 * [Batch ID Errors](#-Batch-ID-Errors)
 * [Categories Errors](#-Categories-Errors)
 * [Content Errors](#-Content-Errors)
+* [Encoding Errors](#-Encoding-Errors)
 * [From Address Errors](#-From-Address-Errors)
 * [Headers Errors](#-Headers-Errors)
 * [IP Pool Errors](#-IP-Pool-Errors)
@@ -141,6 +146,8 @@ Personalizations Errors
   {% api_error_table_message "Each recipient object must at least have an email address and may also contain a name. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "Every recipient that you define within the <code>personalizations.cc</code> array must be in the form of an email object including one, valid email address. You are not required to include a name." %}
 
   {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email address] more than once." "To prevent the same email from being delivered to one recipient multiple times, SendGrid will confirm that you do not duplicate an email address in your request. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
+    {% api_error_table_message "The BCC email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
+
 {% endapi_error_table %}
 
 {% api_error_table personalizations.cc "" message.personalizations.cc %}
@@ -151,6 +158,8 @@ Personalizations Errors
   {% api_error_table_message "Each recipient object must at least have an email address and may also contain a name. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "Every recipient that you define within the <code>personalizations.cc</code> array must be in the form of an email object including one, valid email address. You are not required to include a name." %}
 
   {% api_error_table_message "Each unique email address in the personalization block should only be included once. You have included [email address] more than once." "To prevent the same email from being delivered to one recipient multiple times, SendGrid will confirm that you do not duplicate an email address in your request. For more information on how you may specify your recipients, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
+      {% api_error_table_message "The CC email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
+
 {% endapi_error_table %}
 
 {% api_error_table personalizations.custom_args "" message.personalizations.custom_args %}
@@ -203,6 +212,9 @@ Personalizations Errors
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The to array must at least have an <code>email</code> parameter with a valid email address and it may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "Every email you send must have at least one, valid recipient email address included. However, you are not required to include a corresponding name with the recipient email address. For more information on how to use <code>personalizations</code> to define who you want to send your email to, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
+  
+  {% api_error_table_message "The To email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
+
 {% endapi_error_table %}
 
 {% anchor h2 %}
@@ -306,7 +318,7 @@ Content Errors
 {% api_error_table content "" message.content %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "The content param is required. " "You may not send an email without the content parameter. This is to prevent you from sending an empty email to your recipients." %}
+  {% api_error_table_message "The content param is required unless you are using a transactional template and have defined a template_ID." "You may not send an email without the content parameter unless you are using a transactional template. This is to prevent you from sending an empty email to your recipients." %}
 
   {% api_error_table_message "There must be at least one defined content block. We typically suggest both text/plain and text/html blocks are included, but only one block is required." "You must specify at least one content type and value for every email you send. We recommend that you include both text/plain and text/html to ensure that all of your recipients are able to read your email, but you are only required to define one type of content." %}
 {% endapi_error_table %}
@@ -334,6 +346,16 @@ Content Errors
 {% endapi_error_table %}
 
 {% anchor h2 %}
+Encoding Errors
+{% endanchor %}
+
+{% api_error_table Encoding "" "" %}
+  {% api_error_table_row 415 %}
+
+  {% api_error_table_message "Invalid UTF8 in request" "Your payload must be encoded in UTF-8. This includes any attachments." %}
+{% endapi_error_table %}
+
+{% anchor h2 %}
 From Address Errors
 {% endanchor %}
 
@@ -343,6 +365,9 @@ From Address Errors
   {% api_error_table_message "The from object must at least have an <code>email</code> parameter with a valid email address and may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}" "While every <code>from</code> parameter must include a valid email address, you are not required to include a name." %}
 
   {% api_error_table_message "The <code>from</code> object must be provided for every email send. It is an object that requires the <code>email</code> parameter, but may also contain a <code>name</code> parameter.  e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}" "You are required to provide a from address whenever you send an email through SendGrid. This is used for authentication purposes and helps to build a positive sending reputation with your recipients' ISPs. You are not required to include a name within the <code>from</code> parameter." %}
+  
+  {% api_error_table_message "The From email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
+
 {% endapi_error_table %}
 
 {% anchor h2 %}
@@ -382,6 +407,9 @@ Reply To Errors
 
   {% api_error_table_message "The <code>reply_to</code> object, when used, must at least have an <code>email</code> parameter with a valid email address and it may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "For every carbon copy of your email, you must include one, valid recipient email address. However, you are not required to include a corresponding name with the recipient email address. For more information on how to use <code>personalizations</code> to define who you want to send your email to, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." "" %}
 {% endapi_error_table %}
+
+  {% api_error_table_message "The Reply-To email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
+
 
 {% anchor h2 %}
 Sections Errors
