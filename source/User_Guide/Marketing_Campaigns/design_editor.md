@@ -64,6 +64,9 @@ Drag & drop editing helps you swiftly build your campaign using pre-built conten
 {% anchor h3 %}
 Drag & Drop Module Descriptions and Styles
 {% endanchor h3 %}
+<iframe src="https://player.vimeo.com/video/233699442" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/233699948" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/233700782" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can add the following drag & drop modules to your campaign:
 
