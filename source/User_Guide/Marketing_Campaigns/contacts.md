@@ -66,15 +66,16 @@ Uploading a CSV
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose an existing list or create a new list to add the contacts to.
 1. Upload your file by dragging it into or clicking the CSV upload area.
-{% warning %}
-   The maximum CSV file size is 2GB.
-{% endwarning %}
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
    A page appears displaying the data from the header row from of the CSV file. From the list you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 
 1. Select **Skip Column** to omit data from the contacts list.
 1. Once you've gone through all of the headers, click **Save Contacts**.
+
+{% warning %}
+   The maximum CSV file size is 2GB.
+{% endwarning %}
 
 Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications) with the following information:
 
