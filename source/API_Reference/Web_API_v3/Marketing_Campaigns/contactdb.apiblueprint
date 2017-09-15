@@ -678,7 +678,7 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
       <li>"empty", "not_empty"</li>
       <li>"is within"
         <ul>
-          <li>You may use an [ISO 8601 date format](https://en.wikipedia.org/wiki/ISO_8601) or the # of days.</li>
+          <li>You may use an <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank>ISO 8601 date format</a></li>
         </ul>
       </li>
     </ul>
