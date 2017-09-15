@@ -656,7 +656,9 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
 ## Recipients Search [/contactdb/recipients/search]
 
-### Search with conditions [POST]
+{% anchor h3 %}
+Search with conditions [POST]
+{% endanchor %}
 
 <p>
   Search using segment conditions without actually creating a segment.
@@ -766,7 +768,7 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
   This endpoint is similar to making a POST with conditions whose operator is "eq" and whose "and_or" values are "and".
   Text fields must be url-encoded.
   Date fields are searchable only by epoch with a granularity of day.
-  For example, 1422835600 converts to Mon, 02 Feb 2015 00:06:40 GMT, but internally the system will search from Mon, 02 Feb 2015 00:00:00 GMT through Mon, 02 Feb 2015 23:59:59 GMT.
+  For example, `1422835600` converts to `Mon, 02 Feb 2015 00:06:40 GMT`, but internally the system will search from `Mon, 02 Feb 2015 00:00:00 GMT` through `Mon, 02 Feb 2015 23:59:59 GMT`.
 </p>
 
 + Response 200
@@ -807,8 +809,11 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
 <p>
   Body contains a JSON object with <code>conditions</code>, a list of conditions as described below, a unique <code>name</code>, and an optional <code>list_id</code>, which is a valid list ID for a list to limit the search on.
-  The JSON accepted by this endpoint is identical to that of the POST search with conditions, with the addition of requiring a unique name.  (POST search with conditions is described above.)
 </p>
+
+{% info %}
+The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-[POST]), with the addition of requiring a unique name.  (POST search with conditions is described above.)
+{% endinfo %}
 
 ## Segments [/contactdb/segments]
 
