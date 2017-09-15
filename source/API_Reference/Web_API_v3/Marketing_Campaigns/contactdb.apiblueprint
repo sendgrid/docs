@@ -715,7 +715,7 @@ Search with conditions [POST]
                     {"field":"birthday", "value":"P0Y1M1W3DT1H4M2S", "operator": "is within", "and_or": "and"},
                     {"field":"date_joined", "value":"7", "operator": "is within", "and_or": "or"},
                     {"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},
-                    {"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}
+                    {"field":"clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}
                 ]
             }
 
