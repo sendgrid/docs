@@ -26,7 +26,7 @@ If you want to see all of your email statistics, go to your [Statistics Page]({{
 Activity Feed
 {% endanchor %}
 
-Your Activity Feed shows you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
+Your Activity Feed shows you the last 500 email activity events for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
 
 If you’d like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see the email activity documentation.
 
