@@ -14,7 +14,7 @@ Timezones can be a tricky thing to wrangle, because depending on where you norma
 you may come across times that don't always jive with what you're expecting.
 
 When you create your SendGrid account, you will set the timezone for your account in your profile. This timezone will be 
-used for times displayed in the SendGrid customer portal and for scheduling Marketing Campaigns.
+used for times displayed in the SendGrid UI and for scheduling Marketing Campaigns.
 
 When you use the API or look at event listings, you may notice something that you receive numbers. These numbers are a [Unix 
 Timestamp](http://en.wikipedia.org/wiki/Unix_time), which basically means "the number of seconds since "since 00:00:00 Coordinated Universal 

@@ -83,7 +83,7 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 
 *To change your account plan:*
 
-1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)in the SendGrid Customer Portal.
+1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)in the SendGrid UI.
 1. Select Upgrade to AWS Pro, or Downgrade to AWS Basic.
 
 ![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
