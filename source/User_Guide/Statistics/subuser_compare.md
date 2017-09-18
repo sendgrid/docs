@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% info %}
-This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid Customer Portal.
+This page refers to our beta UI functionality. To find these features, please click the “Beta” button at the top of the SendGrid UI.
 {% endinfo %}
 
 {% info %}

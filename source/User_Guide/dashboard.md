@@ -2,7 +2,7 @@
 seo:
   title: SendGrid Customer Dashboard
   description: Manage your SendGrid account from the dashboard
-  keywords: SendGrid dashboard, SendGrid customer portal, customer portal, dashboard
+  keywords: SendGrid dashboard, SendGrid UI, UI, dashboard, Application
 title: Dashboard
 weight: 90
 layout: page
