@@ -128,7 +128,7 @@ _**What to do with this response_: Don’t retry sending to this address, it’s
 
 ## **554**
 
-The message failed. This response is a ‘default’ of sorts, but can be attributed to anything from planetary alignment, tides of the moon or gypsy curses. Generally a very vague NDR, but refer to the human-readable portion of the message for further instruction.  
+The message failed. This response is a ‘default’ of sorts, but can be attributed to anything from planetary alignment, tides of the moon, or just plain bad luck. Generally a very vague NDR, but refer to the human-readable portion of the message for further instruction.  
 
 ### Examples:
 
