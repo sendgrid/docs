@@ -78,6 +78,7 @@ Uploading a CSV
 
 {% info %}
 After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html).
+{% endinfo %}
 
 {% warning %}
    The maximum CSV file size is 2GB.
