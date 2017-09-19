@@ -17,7 +17,7 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 - [Send Your SendGrid Data to Keen IO](#-send-your-sendgrid-data-to-keen-io)
 - [Test Your Integration](#-test-your-integration)
-- [SendGrid Email Analytics App: How to Guide](#-using-sendgrid-email-analytics
+- [Using SendGrid Email Analytics](#-using-sendgrid-email-analytics)
 - [Ad-Hoc Querying & Raw Data Access](#-ad-hoc-querying-and-raw-data-access)
 - [Embedding SendGrid Analytics Into Your App](#-embedding-sendgrid-analytics-into-your-app)
 - [Additional Resources](#-additional-resources)
