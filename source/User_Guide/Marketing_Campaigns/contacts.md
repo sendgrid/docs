@@ -65,6 +65,9 @@ Uploading a CSV
 
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose an existing list or create a new list to add the contacts to.
+
+    If you choose to add the contacts without assigning them to a list, they are added to the contacts database without any additional context. All contact, regardless of whether or not they are added to a list exist in the contacts database once they have been uploaded.  
+
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
@@ -72,6 +75,9 @@ Uploading a CSV
 
 1. Select **Skip Column** to omit data from the contacts list.
 1. Once you've gone through all of the headers, click **Save Contacts**.
+
+{% info %}
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html).
 
 {% warning %}
    The maximum CSV file size is 2GB.
@@ -116,7 +122,7 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 Managing Contacts
 {% endanchor %}
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts based on custom fields, as well as view and edit each individual contact within your contact database.
+Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
 
 {% anchor h3 %}
 Creating a New List
