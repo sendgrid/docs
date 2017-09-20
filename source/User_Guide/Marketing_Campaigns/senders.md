@@ -24,15 +24,18 @@ Adding a Sender
 
 This is to ensure that you are CAN-SPAM compliant. The footer of your emails includes the information you provide here.
 
+*To add a sender:*
+
+1. Navigate to **Marketing Campaigns** and then click **Senders**.
+1. In the top right corner of the Sender Management page, click **Create New Sender**.
+1. Fill in all of the fields on the page and then click **Save**.
+
 * **From Name** - This is user-friendly name that is displayed to the user when they receive their email.
 * **From Email Address** - This will display to the user as the email address who sent this email.
-* **Reply To - If your user hits reply in their email, the reply will go to this address.
+* **Reply To** - If your user hits reply in their email, the reply will go to this address.
 * **Company Address, City, State, Zip Code, Country** - The address of your business which is required for CAN-SPAM compliance.
 * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
-</br>
 
-
-1. After you fill out the form, click **Save**.
 1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
 {% warning %}
