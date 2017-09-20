@@ -26,28 +26,27 @@ This is to ensure that you are CAN-SPAM compliant. The footer of your emails inc
 
 * **From Name** - This is user-friendly name that is displayed to the user when they receive their email.
 * **From Email Address** - This will display to the user as the email address who sent this email.
-* **Reply-To Email Address** - If your user hits reply in their email, the reply will go to this address.
-* **Company Address, City, State, Zip Code, Country** - The address of your business, for CAN-SPAM compliance.
+* **Reply To - If your user hits reply in their email, the reply will go to this address.
+* **Company Address, City, State, Zip Code, Country** - The address of your business which is required for CAN-SPAM compliance.
 * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
 </br>
-![]({{root_url}}/images/sender_identity_1.png "Sender Identities")
+
 
 1. After you fill out the form, click **Save**.
-1. Check the email account and click the link in the email to verify the Sender email.
-   * To resend your verification email, click the gear icon under Actions on the Sender Management page and select Resend Verification.
-   * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
+{% warning %}
+You must verify your sender identity before you can edit it or use it to send a campaign.
+{% endwarning %}
+
+   To resend your verification email, hover over the Action Menu on the Sender Management page and select Resend Verification.
 
 {% info %}
 If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 {% endinfo %}
 
 {% warning %}
-You must verify your sender identity before you can edit it or use it to send a campaign.
-{% endwarning %}
-
-{% warning %}
-Once you schedule a campaign, you won't be able to delete the sender identity used.
+Once you schedule a campaign, you cannot delete the sender identity associated with that campaign.
 {% endwarning %}
 
 {% anchor h2 %}
@@ -68,7 +67,15 @@ You can insert your sender identity information into your campaigns using the fo
 
 **[Sender_Country]** - The sender's country.
 
-To show your sender's full address and information in the footer of the email, add the tags as shown:
+*To add tags to your campaign:*
+
+1. Navigate to the **Build** tab.
+1. Click and drag a Text module into your campaign body.
+1. Navigate to the **Tags** tab.
+1. Select the copy icon next to the tag you want to add to your campaign.
+1. Click in the text module you added previously and paste the tag into the module.
+
+To show your sender's full address and information in the footer of the email, SendGrid recommends adding the tags as shown:
 
 {% codeblock %}
 [Sender_Name]
