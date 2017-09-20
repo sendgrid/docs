@@ -15,15 +15,15 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 *This guide covers:*
 
-- [Send Your SendGrid Data to Keen IO](#-send-your-sendgrid-data-to-keen-io)
-- [Test Your Integration](#-test-your-integration)
-- [Using SendGrid Email Analytics](#-using-sendgrid-email-analytics)
-- [Ad-Hoc Querying & Raw Data Access](#-ad-hoc-querying-and-raw-data-access)
-- [Embedding SendGrid Analytics Into Your App](#-embedding-sendgrid-analytics-into-your-app)
-- [Additional Resources](#-additional-resources)
+- [Sending Your SendGrid Data to Keen IO](#-Sending-Your-SendGrid-Data-to-Keen-IO)
+- [Testing Your Integration](#-Testing-Your-Integration)
+- [Using SendGrid Email Analytics](#-Using-SendGrid-Email-Analytics)
+- [Ad-Hoc Querying and Access to Raw Data](#-Ad-Hoc-Querying-and-Access-to-Raw-Data)
+- [Embedding SendGrid Analytics Into Your App](#-Embedding-SendGrid-Analytics-Into-Your-App)
+- [Additional Resources](#-Additional-Resources)
 
 {% anchor h3 %}
-Send your SendGrid Data to Keen IO
+Sending Your SendGrid Data to Keen IO
 {% endanchor h3 %}
 
 **Step 1: Create a Keen IO and SendGrid account**
@@ -50,7 +50,7 @@ In the settings, select the events you want to post to Keen IO (why not all of t
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection for each type of email event will be created within your Keen Project.
 
 {% anchor h3 %}
-Test Your Integration
+Testing Your Integration
 {% endanchor h3 %}
 
 Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
@@ -199,7 +199,7 @@ Select **Create Dashboard**, name your dashboard, and add the query we saved to 
 
 ![Add Query to Dashboard]({{root_url}}/images/keen/sendgrid_create_dashboard.png)
 
-{% anchor h3 embedding-sendgrid-analytics-into-your-app %}
+{% anchor h3 %}
 Embedding SendGrid Analytics Into Your App
 {% endanchor h3 %}
 
