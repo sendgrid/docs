@@ -609,6 +609,7 @@ Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
+Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
 Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/dashboard.html
 Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
