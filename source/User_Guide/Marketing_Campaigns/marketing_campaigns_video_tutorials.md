@@ -80,21 +80,21 @@ Learn how to segment your contacts.
 
 {% anchor h2 %} Design Tutorials {% endanchor %}
 
-% anchor h3 %}Adding Button, Columns, and Code Modules{% endanchor %}
+{% anchor h3 %}Adding Button, Columns, and Code Modules{% endanchor %}
 
 Learn how to add Button, Columns, and Code Modules using the Design Editor.
 
 <p><iframe src="https://player.vimeo.com/video/233699442" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 
 
-% anchor h3 %}Adding Image and Text Modules{% endanchor %}
+{% anchor h3 %}Adding Image and Text Modules{% endanchor %}
 
 Learn how to add Image and Text Modules using the Design Editor.
 
 <p><iframe src="https://player.vimeo.com/video/233699948" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 
 
-% anchor h3 %}Adding Spacer, Divider, and Social Modules{% endanchor %}
+{% anchor h3 %}Adding Spacer, Divider, and Social Modules{% endanchor %}
 
 Learn how to add Spacer, Divider, and Social Modules using the Design Editor.
 
@@ -103,7 +103,7 @@ Learn how to add Spacer, Divider, and Social Modules using the Design Editor.
 
 {% anchor h2 %} Sending Tutorials {% endanchor %}
 
-% anchor h3 %}Using A/B Testing{% endanchor %}
+{% anchor h3 %}Using A/B Testing{% endanchor %}
 
 Learn how to use A/B Testing when sending a campaign.
 
