@@ -10,10 +10,10 @@ seo:
   description: Learn how to use Marketing Campaigns with this handy series of videos...
   keywords: Marketing Campaigns, SendGrid Marketing, SendGrid Marketing Campaigns, marketing, campaigns, video, list, contact, template, segment, tag, merge, custom, field
 ---
-[Getting Started with Marketing Campaigns](#-Getting-Started-With-Marketing-Campaigns)
-[Contacts Tutorials](#-Contacts-Tutorials)
-[Design Tutorials](#-Design-Tutorials)
-[Sending Tutorials](#-Sending-Tutorials)
+- [Getting Started with Marketing Campaigns](#-Getting-Started-With-Marketing-Campaigns)
+- [Contacts Tutorials](#-Contacts-Tutorials)
+- [Design Tutorials](#-Design-Tutorials)
+- [Sending Tutorials](#-Sending-Tutorials)
 
 {% anchor h2 %} Getting Started with Marketing Campaigns {% endanchor %}
 
