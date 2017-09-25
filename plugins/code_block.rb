@@ -83,27 +83,8 @@ module Jekyll
       code = super
 
       digest = Digest::MD5.hexdigest code + rand().to_s()
-      
     source = <<HTML
-<div class="code-wrapper" id="wrapper_#{digest}" itemscope itemtype="http://schema.org/Code">
-  <meta itemscope="name" content="#{@title}">
-  <meta itemscope="programmingLangauge" content="#{@filetype}">
-  <div class="code-buttons">
-    <ul class="nav nav-tabs">
-      <li class="pull-right">
-        <a class="copycode code-button btn-mini" id="copy_#{digest}">
-          <i class="icon-copy"></i> Copy
-        </a>
-      </li>
-      <li class="pull-right">
-        <a class="expandcode code-button btn-mini" id="expand_#{digest}">
-          <i class="icon-fullscreen"></i> Fullscreen
-        </a>
-      </li>
-    </ul>
-  </div>
-  <figure class="code" id="code_#{digest}">
-  #{@caption}
+
 HTML
 
       if @filetype
