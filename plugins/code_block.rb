@@ -84,6 +84,11 @@ module Jekyll
 
       digest = Digest::MD5.hexdigest code + rand().to_s()
     source = <<HTML
+    <div class="code-wrapper" id="wrapper_#{digest}" itemscope itemtype="http://schema.org/Code">
+    <meta itemscope="name" content="#{@title}">
+    <meta itemscope="programmingLangauge" content="#{@filetype}">
+    <figure class="code" id="code_#{digest}">
+    #{@caption}
 
 HTML
 
