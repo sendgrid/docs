@@ -29,19 +29,19 @@ This is to ensure that you are CAN-SPAM compliant. The footer of your emails inc
 1. Navigate to **Marketing Campaigns** and then click **Senders**.
 1. In the top right corner of the Sender Management page, click **Create New Sender**.
 1. Fill in all of the fields on the page and then click **Save**.
+
     * **From Name** - This is user-friendly name that is displayed to the user when they receive their email.
     * **From Email Address** - This will display to the user as the email address who sent this email.
     * **Reply To** - If your user hits reply in their email, the reply will go to this address.
     * **Company Address, City, State, Zip Code, Country** - The address of your business which is required for CAN-SPAM compliance.
     * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
+<br>
 1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
 {% warning %}
 You must verify your sender identity before you can edit it or use it to send a campaign.
 {% endwarning %}
-
-   To resend your verification email, hover over the Action Menu on the Sender Management page and select Resend Verification.
-
+   To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
 {% info %}
 If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 {% endinfo %}
