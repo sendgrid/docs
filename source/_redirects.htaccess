@@ -657,14 +657,14 @@ Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html https://
 #
 #######
 
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/overview.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-Tags
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 
 #######
 #
@@ -738,3 +738,18 @@ Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Setti
 
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/getting_started.html
 Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head [NE,R]
+
+#######
+#
+# //User_Guide/Legacy_Newsletter/ legacy newsletter redirects
+#
+#######
+
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
