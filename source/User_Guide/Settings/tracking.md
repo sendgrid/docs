@@ -54,7 +54,7 @@ Open Tracking
 If you are using email link whitelabeling, then your open tracking image will be served from your whitelabel domain instead of from SendGrid.net.
 {% endinfo %}
 
-Open Tracking adds an invisible, one pixel image at the end of the email which can track email [opens]({{root_url}}/Glossary/opens.html). If the email recipient has images enabled on their email client and a request to SendGrid’s server for the invisible image is executed, then an open event is logged. These events are logged in the Statistics portal, Email Activity interface, and are reported by the Event Webhook.
+Open Tracking adds an invisible, one pixel image at the end of the email which can track email [opens]({{root_url}}/Glossary/opens.html). If the email recipient has images enabled on their email client and a request to SendGrid’s server for the invisible image is executed, then an open event is logged. These events are logged in the Statistics UI, Email Activity interface, and are reported by the Event Webhook.
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 

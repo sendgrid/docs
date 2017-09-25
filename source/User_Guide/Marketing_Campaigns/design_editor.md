@@ -14,8 +14,8 @@ seo:
 The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
-* [Using Drag & Drop Modules](#-Using-Drag-&-Drop-Modules)
-    * [Drag & Drop Module Descriptions and Styles](#-Drag-&-Drop-Module-Descriptions-and-Styles)
+* [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
+    * [Drag & Drop Module Descriptions and Styles](#-Drag-Drop-Module-Descriptions-and-Styles)
 * [Using Global Styles](#-Using-Global-Styles)
 * [Editing Module HTML](#-Editing-Module-HTML)
 * [Code Modules](#-Code-Modules)
@@ -23,9 +23,9 @@ The design editor is where you build your templates and campaigns using drag & d
 * [Using Substitution Tags](#-Using-Substitution-Tags)
 * [Previewing Your Campaign](#-Previewing-Your-Campaign)
 * [Editing the HTML Head](#-Editing-the-HTML-Head)
-* [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
-    * [Drag & Drop Markup](#-Drag-&-Drop-Markup)
-    * [Drag & Drop Code Examples](#-Drag-&-Drop-Code-Examples)
+* [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup)
+    * [Drag & Drop Markup](#-Drag--Drop-Markup)
+    * [Drag & Drop Code Examples](#-Drag--Drop-Code-Examples)
 * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
 
 {% anchor h3 %}
@@ -64,6 +64,9 @@ Drag & drop editing helps you swiftly build your campaign using pre-built conten
 {% anchor h3 %}
 Drag & Drop Module Descriptions and Styles
 {% endanchor h3 %}
+<iframe src="https://player.vimeo.com/video/233699442" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/233699948" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/233700782" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can add the following drag & drop modules to your campaign:
 

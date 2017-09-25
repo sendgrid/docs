@@ -50,7 +50,7 @@ Create an API Key
 
 When you click the “Create API Key” button, a dropdown menu will appear allowing you to choose the type of API key you would like to create. After selecting either "General API Key" or "Billing API Key", you will be shown a page allowing you to give your new key a name and permissions.
 
-The API key name will follow your API key around through the SendGrid customer portal, so it is important that you choose a name that is meaningful to you.
+The API Key name will follow your API key around through the SendGrid UI, so it is important that you choose a name that is meaningful to you.
 
 {% warning %}
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore this generated token.

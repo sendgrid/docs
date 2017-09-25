@@ -54,14 +54,14 @@ If you find that your scheduled sends or stats seem like they are not quite corr
 Changing Your Password
 {% endanchor %}
 
-There are two ways to change your password. Through the portal and through the Forgot Password page.
+There are two ways to change your password. Through the SendGrid UI and through the Forgot Password page.
 
 {% warning %}
 When you change your account password, your SMTP and API access will change as well. Make sure you update your account information on all systems and software!
 {% endwarning %}
 
 {% anchor h3 %}
-Changing your Password through the portal
+Changing your Password through the SendGrid UI
 {% endanchor %}
 
 **Current Password** - This is the current password on your account. Without this, you will not be able to change your password.

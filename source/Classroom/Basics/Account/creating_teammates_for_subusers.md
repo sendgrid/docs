@@ -23,7 +23,7 @@ The process of creating teammates is no different for subusers than for parent u
 Subuser teammates will only have access to the subuser account!
 {% endinfo %}
 
-Teammates can be created and managed both via the user interface (commonly referred to as the Customer Portal) and the v3 Web API. If you are creating a teammate via the v3 Web API, you can use one of our 7 libraries, or you may make a cURL request.
+Teammates can be created and managed both via the user interface and the v3 Web API. If you are creating a teammate via the v3 Web API, you can use one of our 7 libraries, or you may make a cURL request.
 
 ### Using the User Interface
 

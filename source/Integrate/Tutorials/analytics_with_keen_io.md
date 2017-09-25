@@ -15,15 +15,15 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 *This guide covers:*
 
-- [Send Your SendGrid Data to Keen IO](#-send-your-sendgrid-data-to-keen-io)
-- [Test Your Integration](#-test-your-integration)
-- [SendGrid Email Analytics App: How to Guide](#-using-sendgrid-email-analytics
-- [Ad-Hoc Querying & Raw Data Access](#-ad-hoc-querying-and-raw-data-access)
-- [Embedding SendGrid Analytics Into Your App](#-embedding-sendgrid-analytics-into-your-app)
-- [Additional Resources](#-additional-resources)
+- [Sending Your SendGrid Data to Keen IO](#-Sending-Your-SendGrid-Data-to-Keen-IO)
+- [Testing Your Integration](#-Testing-Your-Integration)
+- [Using SendGrid Email Analytics](#-Using-SendGrid-Email-Analytics)
+- [Querying and Accessing Raw Data](#-Querying-and-Accessing-Raw-Data)
+- [Embedding SendGrid Analytics Into Your App](#-Embedding-SendGrid-Analytics-Into-Your-App)
+- [Additional Resources](#-Additional-Resources)
 
 {% anchor h3 %}
-Send your SendGrid Data to Keen IO
+Sending Your SendGrid Data to Keen IO
 {% endanchor h3 %}
 
 **Step 1: Create a Keen IO and SendGrid account**
@@ -50,7 +50,7 @@ In the settings, select the events you want to post to Keen IO (why not all of t
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection for each type of email event will be created within your Keen Project.
 
 {% anchor h3 %}
-Test Your Integration
+Testing Your Integration
 {% endanchor h3 %}
 
 Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
@@ -141,8 +141,8 @@ For each segment in each step, you can download the segment and retrieve a list 
 
 ![SendGrid- Email Analytics App Choose to Download to CSV]({{root_url}}/images/keen/sendgrid_segment_created.png)
 
-{% anchor h3 ad-hoc-querying-and-raw-data-access %}
-Ad-Hoc Querying and Access to Raw Data
+{% anchor h3 %}
+Querying and Accessing Raw Data
 {% endanchor h3 %}
 
 In addition to the data views you see in the Keen SendGrid App, all of your SendGrid data flowing into Keen is also available for raw analysis, programmatic querying via API, and full resolution download.
@@ -199,7 +199,7 @@ Select **Create Dashboard**, name your dashboard, and add the query we saved to 
 
 ![Add Query to Dashboard]({{root_url}}/images/keen/sendgrid_create_dashboard.png)
 
-{% anchor h3 embedding-sendgrid-analytics-into-your-app %}
+{% anchor h3 %}
 Embedding SendGrid Analytics Into Your App
 {% endanchor h3 %}
 
@@ -209,7 +209,7 @@ Just like SendGrid, Keen IO is 100% powered by APIs. This means you can embed ri
 
 Many customers find it useful to embed analytics into their products for their customers or customer success teams. For step-by-step instructions on how to embed your SendGrid analytics into your product, check out our [Native Analytics Guide](https://keen.io/guides/native-analytics/). Some customers also take advantage of Keen IO's [S3 Streaming](https://keen.io/docs/streams/amazon-s3/) capabilities to write a copy of all their data to AWS.
 
-{% anchor h3 additional-resources %}
+{% anchor h3 %}
 Additional Resources:
 {% endanchor h3 %}
 
