@@ -510,16 +510,16 @@ Redirect 301 /Integrate/Open_Source_Apps/wordpress.html https://sendgrid.com/doc
 #
 #######
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/index.html https://sendgrid.com/docs/Glossary/Email_Types/index.html
-Redirect 301 /Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
-Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
-Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
-Redirect 301 /Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/dashboard.html
+Redirect 301 /Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html https://sendgrid.com/docs/Glossary/Email_Types/reconfirmation.html
-Redirect 301 /Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html
-Redirect 301 /Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html
-Redirect 301 /Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/sender_address.html
+Redirect 301 /Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
+Redirect 301 /Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
 
 #######
 #
@@ -556,7 +556,7 @@ Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/d
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Legacy-Email-Template
+Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Spam
@@ -607,14 +607,14 @@ Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
-Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
-Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/dashboard.html
-Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
-Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
-Redirect 301 /User_Guide/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /User_Guide/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/sender_address.html
-Redirect 301 /User_Guide/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html
-Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html
+Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /User_Guide/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /User_Guide/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
+Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
@@ -663,7 +663,7 @@ Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https:/
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-Tags
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 
 #######
@@ -706,22 +706,22 @@ Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs
 Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/docs/Utilities/list_assist.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/analytics.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html
-Redirect 301 /VidGrid/Marketing_Emails/Design/drag_and_drop.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
-Redirect 301 /VidGrid/Marketing_Emails/Design/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
-Redirect 301 /VidGrid/Marketing_Emails/Design/newsletter_basics.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html
-Redirect 301 /VidGrid/Marketing_Emails/Design/subscription_widget.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /VidGrid/Marketing_Emails/Design/weblink.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/tags.html
-Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
-Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
-Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /VidGrid/Marketing_Emails/Recipients/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /VidGrid/Marketing_Emails/Recipients/recipient_list.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/recipients.html
-Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html#-Scheduling-Video
-Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html#-Split-Testing-Video
-Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/drag_and_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/newsletter_basics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/subscription_widget.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /VidGrid/Marketing_Emails/Design/weblink.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
+Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /VidGrid/Marketing_Emails/Recipients/recipient_list.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
+Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/settings.html
 Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
@@ -751,5 +751,5 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_man
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
