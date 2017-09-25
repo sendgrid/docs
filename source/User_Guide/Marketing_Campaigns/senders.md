@@ -35,8 +35,7 @@ This is to ensure that you are CAN-SPAM compliant. The footer of your emails inc
     * **Reply To** - If your user hits reply in their email, the reply will go to this address.
     * **Company Address, City, State, Zip Code, Country** - The address of your business which is required for CAN-SPAM compliance.
     * **Nickname** - This is the name of this sender identity, which can be useful for identifying this identity in your list of senders. It will not be visible to your recipients.
-
-
+    </br>
 1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
 {% warning %}
