@@ -8,6 +8,9 @@ title: Migrating Recipient Lists
 navigation:
   show: true
 ---
+{% warning %}
+The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
 
 <iframe src="https://player.vimeo.com/video/136621131" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
