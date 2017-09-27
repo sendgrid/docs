@@ -207,22 +207,25 @@ What files or data can I download from Legacy Newsletter?
 {% endanchor %}
 
 For a limited time following the sunset of Legacy Newsletter, you will be able to download:
-  * [Recipient Lists] ({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html)
-  * [Templates] ({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html)
-  * [Statistics] ({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html)
-  * [Unsubscribes] ({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html)
-  * [Images] ({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html)
+
+  * [Recipient Lists](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html)
+  * [Templates](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html)
+  * [Statistics](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html)
+  * [Unsubscribes](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html)
+  * [Images](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html)
   * Sender Addresses
   * Email Reports
 
   *To save Sender Addresses:*
+
    1. From the application, navigate to **Sender Addresses**.
    2. Select **Manage**.
    3. Copy and paste the information you wish to save into a new file. 
 
-  *To download Email Reports*:
+  *To download Email Reports:*
+
    1. Navigate to **Marketing Email** and then select **Manage**. 
-   1. Find the campaign you wish to save the data for and click the title. 
+   2.  Find the campaign you wish to save the data for and click the title. 
 
 {% anchor h3 %}
 What do I need to prepare before migrating to Marketing Campaigns?
