@@ -8,6 +8,9 @@ title: Downloading Historical Statistics
 navigation:
   show: true
 ---
+{% warning %}
+The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
 
 Begin by navigating to your Legacy Newsletter dashboard.
 

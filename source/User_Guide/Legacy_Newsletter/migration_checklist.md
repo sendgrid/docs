@@ -13,8 +13,12 @@ navigation:
 Moving from Legacy Newsletter to Marketing Campaigns
 {% endanchor %}
 
-If you haven't made the switch yet, you can still access your data and contacts for a limited time. The migration to Marketing Campaigns is not automatic. We’ve built a [robust toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) to help make the manual migration steps fast and simple. This high-level checklist is part of the toolkit and is designed to help you think through important considerations as you make the move to Marketing Campaigns.
-ah,
+{% warning %}
+The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
+
+The migration to Marketing Campaigns is not automatic. We’ve built a [robust toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) to help make the manual migration steps fast and simple. This high-level checklist is part of the toolkit and is designed to help you think through important considerations as you make the move to Marketing Campaigns.
+
 {% anchor h3 %}
 1. Familiarize yourself with Marketing Campaigns.
 {% endanchor %}
@@ -81,7 +85,7 @@ ah,
 
 If you are using the [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) then we recommend that you migrate your integration to our [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html), the email marketing component of our v3 RESTful Web API. For help with migrating your integration, [please refer our API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html).
 
-&nbsp; &#x274f; [Migrate your Legacy Newsletter Content to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
+&nbsp; &#x274f; [Migrate your Legacy Newsletter Content to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
 
 &nbsp; &#x274f; [Migrate your Legacy Newsletter Recipient Lists to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html)
 

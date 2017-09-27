@@ -8,6 +8,9 @@ title: Migrating Using API Calls
 navigation:
   show: true
 ---
+{% warning %}
+The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
 
 Before attempting to migrate your content, please review our [Migration Toolkit](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html). Then, using our API as described below, you can automate a portion of the process. We are giving all of our examples in curl, but the steps should translate to whichever language you used to build your application.
 
