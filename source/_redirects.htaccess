@@ -151,6 +151,7 @@ Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html https://s
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/unsubscribes.html
 Redirect 301 /API_Reference/Webhooks/parse.html https://sendgrid.com/docs/API_Reference/Webhooks/inbound_email.html
+Redirect 301 /API_Reference/SMTP_API/smtpapi_validator.html https://sendgrid.com/docs/API_Reference/SMTP_API/index.html
 
 
 #######
@@ -383,6 +384,7 @@ Redirect 301 /Classroom/Send/welcome_emails_making_a_good_first_impression.html 
 Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html
 Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
 Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
 
 #######
 #
@@ -488,7 +490,7 @@ Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/User_Guid
 Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
 Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/Classroom/Basics/Account/account_sign_up_faq.html
 Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/Glossary/email_marketing.html
-Redirect 301 /Glossary/email_error_messages.html /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
+Redirect 301 /Glossary/email_error_messages.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
 Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/Glossary/automated_email.html
 
@@ -607,6 +609,7 @@ Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
+Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/create_manage.html
 Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/dashboard.html
 Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Features/Marketing_Emails/index.html
@@ -737,4 +740,3 @@ Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Setti
 #######
 
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head [NE,R]

@@ -9,6 +9,7 @@ seo:
   override: true
   description:
 ---
+<iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You may want to test the email that you are sending to your customers in order to optimize engagement from them. A/B testing in Marketing Campaigns works by sending versions of your emails to small subsets of your contacts. When your contacts interact with the emails according to the criteria you set, SendGrid will send the winning version of your campaign to the remainder of your contacts.
 
@@ -77,3 +78,9 @@ You can also manually choose a winner at any time after you start the test.
 If you choose to manually pick a winner, (meaning SendGrid is not automatically choosing based on click or open rate), then you will be notified via email at the end of the duration you set, that your test is complete and that you need to choose a winner.
 
 ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)

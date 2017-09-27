@@ -24,19 +24,19 @@ Getting Started with the Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 
-1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. 
+1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
 
    ![]({{root_url}}/images/duplicate_campaign.png)
 
-1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html). 
+1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
-1. Select **Code Editor**, and then click **Continue**. 
+1. Select **Code Editor**, and then click **Continue**.
 
     If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.       The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
-1. Preview your campaign or template by clicking **Preview**. 
+1. Preview your campaign or template by clicking **Preview**.
 
-You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button. 
+You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 {% warning %}
 Once you create a new campaign or template in the Code Editor, you cannot switch to the Design Editor.
@@ -52,7 +52,7 @@ Uploading Images
 
 1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**.  
 
-1. Paste this URL in the image source tag in your campaign or template's HTML. For example: `<img src="your image URL here">` 
+1. Paste this URL in the image source tag in your campaign or template's HTML. For example: `<img src="your image URL here">`
 
 {% anchor h2 %}
 Using Substitution Tags
@@ -60,13 +60,13 @@ Using Substitution Tags
 
 Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients you can specify substitution tags specific to each recipient.
 
-**To add a substitution tag to your campaign:** 
+**To add a substitution tag to your campaign:**
 
 1. Navigate to the **Tags** tab.  
 
-1. Locate the tag you want to add to your campaign and click the **copy** icon. 
+1. Locate the tag you want to add to your campaign and click the **copy** icon.
 
-1. Paste the tag into the module. 
+1. Paste the tag into the module.
 
 You can add the following substitution tags to your marketing campaign:
 
@@ -138,10 +138,17 @@ Previewing Your Campaign
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
 
-You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area. 
+You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area.
 
 To view a plain text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
- 
 
 When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+- [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)

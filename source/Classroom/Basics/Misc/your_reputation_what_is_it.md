@@ -27,7 +27,7 @@ The SendGrid account reputation is computed based on a calculation of:
 - Spam Reports. Each spam report is a user actively rejecting your mail, and has a strong negative affect.
 
 {% info %}
-You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses}(https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports. 
+You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports. 
 {% endinfo %}
 
 **The Effect of Reputation on your Account**
