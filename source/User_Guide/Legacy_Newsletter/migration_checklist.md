@@ -59,7 +59,7 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 4. Migrate your templates.
 {% endanchor %}
 
-&nbsp; &#x274f; Review the [Migrating Your Content]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html) article for details.
+&nbsp; &#x274f; Review the [Migrating Your Content]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html) article for details.
 
 &nbsp; &#x274f; Consider starting fresh by customizing one of SendGrid's responsive templates and using the enhanced campaign editor.
 
@@ -67,7 +67,7 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 5. Migrate your images.
 {% endanchor %}
 
-&nbsp; &#x274f; Review the [Migrating Your Content]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html) article.
+&nbsp; &#x274f; Review the [Migrating Your Content]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html) article.
 
 &nbsp; &#x274f; Review the [Migrating Your Images]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html) article.
 

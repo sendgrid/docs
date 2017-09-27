@@ -209,11 +209,11 @@ What files or data can I download from Legacy Newsletter?
 
 For a limited time following the sunset of Legacy Newsletter, you will be able to download:
 
-  * [Recipient Lists](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html)
-  * [Templates](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html)
-  * [Statistics](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html)
-  * [Unsubscribes](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html)
-  * [Images](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html)
+  * [Recipient Lists](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_recipient_lists.html)
+  * [Templates](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html)
+  * [Statistics](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
+  * [Unsubscribes](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html)
+  * [Images](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_images.html)
   * Sender Addresses
   * Email Reports
 
