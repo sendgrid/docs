@@ -15,7 +15,7 @@ navigation:
 The Email Activity page allows you to view a snapshot of the email related activity that has been sent on your account. This does not include the information sent on a subuser account. These logs display all of your email events and can be viewed by the most recent activity or searched by email address.
 
 {% info %}
-Email activity only shows the most recent 7 days. To access data in real time, we recommend that you consider implementing our Event Webhook.
+Email activity only shows the most recent 500 events. To access data in real time, we recommend that you consider implementing our Event Webhook.
 {% endinfo %}
 
 {% anchor h2 %}

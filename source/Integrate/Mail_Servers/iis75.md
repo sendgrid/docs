@@ -106,4 +106,4 @@ You can also test using the logging feature we had you activate earlier. You can
 
 Notice, highlighted in blue below, that the server sent an email and that it went through various OutboundConnectionCommand and Outbound ConnectionResponse steps. These along with the information of the various stages of EHLO, AUTH, MAIL, RCPT, DATA and quit that the email was sent successfully.
 
-Finally, you can confirm that your configuration is working by logging into our site. Login into our web portal using your SendGrid credentials. On the main Dashboard tab you will see a list of messages that were recently sent through our service. This number should increment by one each time you either use telnet to send an email or you use a ASP.NET test script.
+Finally, you can confirm that your configuration is working by logging into our site. Login into our web UI using your SendGrid credentials. On the main Dashboard tab you will see a list of messages that were recently sent through our service. This number should increment by one each time you either use telnet to send an email or you use a ASP.NET test script.

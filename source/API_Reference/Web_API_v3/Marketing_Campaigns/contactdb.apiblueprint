@@ -33,7 +33,7 @@ Lists
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Update-a-List-PATCH">Update a List - PATCH</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-List-DELETE">Delete a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-on-a-List-GET">List Recipients on a List - GET</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a single Recipient to a List - POST</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-a-Single-Recipient-to-a-List-POST">Add a Single Recipient to a List - POST</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Single-Recipient-from-a-Single-List-DELETE">Delete a Single Recipient From a List - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Add-Multiple-Recipients-to-a-List-POST">Add Multiple Recipients To a List - POST</a></li>
 </ul>
@@ -46,7 +46,7 @@ Recipients
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-Recipient-DELETE">Delete one or more Recipients - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#List-Recipients-GET">List Recipients - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Retrieve-a-Recipient-GET">Retrieve a Recipient - GET</a></li>
-<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Recipient-DELETE">Delete a single Recipient - DELETE</a></li>
+<li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Delete-a-Recipient-DELETE">Delete a Single Recipient - DELETE</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-the-Lists-the-Recipient-Is-On-GET">Get the Lists the Recipient is On - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Billable-Recipients-GET">Get Count of Billable Recipients - GET</a></li>
 <li><a href="{{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html#Get-a-Count-of-Recipients-GET">Get Count of Recipients - GET</a></li>
@@ -656,36 +656,68 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
 ## Recipients Search [/contactdb/recipients/search]
 
-### Search with conditions [POST]
+{% anchor h3 %}
+Search with conditions [POST]
+{% endanchor %}
 
 <p>
-  Search using segment conditions. Body contains a JSON object with <code>conditions</code>, a list of conditions as described below, and an optional <code>list_id</code>, which is a valid list ID for a list to limit the search on.
+  Search using segment conditions without actually creating a segment.
+  Body contains a JSON object with <code>conditions</code>, a list of conditions as described below, and an optional <code>list_id</code>, which is a valid list ID for a list to limit the search on.
 </p>
 
 <p>
-  Valid operators for create and update depend on the type of the field you are searching for.
+  Valid operators for create and update depend on the type of the field for which you are searching.
 </p>
 
 <ul>
-  <li>Dates: "eq", "ne", "lt" (before), "gt" (after), "empty", "not_empty"</li>
+  <li>Dates:
+    <ul>
+      <li>"eq", "ne", "lt" (before), "gt" (after)
+        <ul>
+          <li>You may use MM/DD/YYYY for day granularity or an epoch for second granularity.</li>
+        </ul>
+      </li>
+      <li>"empty", "not_empty"</li>
+      <li>"is within"
+        <ul>
+          <li>You may use an <a href="https://en.wikipedia.org/wiki/ISO_8601" target="_blank">ISO 8601 date format</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
   <li>Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value), "empty", "not_empty"</li>
   <li>Numbers: "eq", "lt", "gt", "empty", "not_empty"</li>
   <li>Email Clicks and Opens: "eq" (opened), "ne" (not opened)</li>
 </ul>
 
 <p>
-  Search conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either clicks.campaign_identifier or opens.campaign_identifier. The condition value should be a string containing the id of a completed campaign.
+  Field values must all be a string.
 </p>
 
 <p>
-  Search conditions list may contain multiple conditions, joined by an "and" or "or" in the "and_or" field. The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
+  Search conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either <code>clicks.campaign_identifier</code> or <code>opens.campaign_identifier</code>.
+  The condition value should be a string containing the id of a completed campaign.
+</p>
+
+<p>
+  Search conditions list may contain multiple conditions, joined by an "and" or "or" in the "and_or" field.
+  The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
 </p>
 
 + Request
 
     + Body
 
-            {"list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}]}
+            {
+                "list_id":4,
+                "conditions":[
+                    {"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},
+                    {"field":"birthday", "value":"P0Y1M1W3DT1H4M2S", "operator": "is within", "and_or": "and"},
+                    {"field":"date_joined", "value":"7", "operator": "is within", "and_or": "or"},
+                    {"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},
+                    {"field":"clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}
+                ]
+            }
 
 + Response 201
 
@@ -724,24 +756,20 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
             "" : "Returned if invalid value is passed into one of the request body parameters"
 
 
-## Search using simple criteria [/contactdb/recipients/search?{field_name}={value}]
-
-{% info %}
-"field_name" is a variable that is substituted for your actual custom field name from your recipient.
-Text fields must be url-encoded. Date fields are searchable only by unix timestamp (e.g. 2/2/2015 becomes 1422835200)
-{% endinfo %}
-
-{% info %}
-If field_name is a 'reserved' date field, such as created_at or updated_at, the system will internally convert
-your epoch time to a date range encompassing the entire day. For example, an epoch time of 1422835600 converts to
-Mon, 02 Feb 2015 00:06:40 GMT, but internally the system will search from Mon, 02 Feb 2015 00:00:00 GMT through
-Mon, 02 Feb 2015 23:59:59 GMT.
-{% endinfo %}
+## Search using simple criteria [/contactdb/recipients/search?{field_name}={value}&{field_name2}={value2}]
 
 + Parameters
     + field_name (required, text) ... The name of the field you're looking for
 
 ### Get Recipients Matching Search Criteria [GET]
+
+<p>
+  "field_name" is a variable that is substituted for your actual custom field name from your recipient.
+  This endpoint is similar to making a POST with conditions whose operator is "eq" and whose "and_or" values are "and".
+  Text fields must be url-encoded.
+  Date fields are searchable only by epoch with a granularity of day.
+  For example, <code>1422835600</code> converts to <code>Mon, 02 Feb 2015 00:06:40 GMT</code>, but internally the system will search from <code>Mon, 02 Feb 2015 00:00:00 GMT</code> through <code>Mon, 02 Feb 2015 23:59:59 GMT</code>.
+</p>
 
 + Response 200
 
@@ -779,17 +807,13 @@ Mon, 02 Feb 2015 23:59:59 GMT.
 
 # Group Segments
 
-Valid operators for create and update depend on the type of the field you are segmenting.
-<ul>
-<li>Dates: "eq", "ne", "lt" (before), "gt" (after)</li>
-<li>Text: "contains", "eq" (is - matches the full field), "ne" (is not - matches any field where the entire field is not the condition value)</li>
-<li>Numbers: "eq", "lt", "gt"</li>
-<li>Email Clicks and Opens: "eq" (opened), "ne" (not opened)</li>
-</ul>
+<p>
+  Body contains a JSON object with <code>conditions</code>, a list of conditions as described below, a unique <code>name</code>, and an optional <code>list_id</code>, which is a valid list ID for a list to limit the search on.
+</p>
 
-Segment conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either clicks.campaign_identifier or opens.campaign_identifier. The condition value should be a string containing the id of a completed campaign.
-
-Segments may contain multiple condtions, joined by an "and" or "or" in the "and_or" field. The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
+{% info %}
+The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-POST), with the addition of requiring a unique name.  (POST search with conditions is described above.)
+{% endinfo %}
 
 ## Segments [/contactdb/segments]
 
@@ -799,7 +823,16 @@ Segments may contain multiple condtions, joined by an "and" or "or" in the "and_
 
     + Body
 
-            {"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}]}
+            {
+                "name": "Last Name Miller",
+                "list_id": 4,
+                "conditions": [
+                    {"field": "last_name", "value":"Miller", "operator":"eq", "and_or":""},
+                    {"field": "last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},
+                    {"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"},
+                    {"field": "birthday", "value": "P2D1H", "operator": "is within", "and_or": "or"}
+                ]
+            }
 
 + Response 201
 
@@ -813,7 +846,7 @@ Segments may contain multiple condtions, joined by an "and" or "or" in the "and_
 
      + Body
 
-            "name" : "Returned if the name is not valid"
+            "name" : "Returned if the name is not valid (it is not unique)"
             "list_id" : "Returned if the list_id is not valid"
             "and_or" : "Returned if and_or and set value is not passed into the request body"
             "and_or" : "Returned if and_or is set on the only condition passed"

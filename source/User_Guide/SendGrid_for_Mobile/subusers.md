@@ -36,7 +36,7 @@ Here you can view your current subusers and also “impersonate” them, allowin
 The app currently only displays a maximum of 10 subusers. If you have more than 10 subusers, you can pull down and search for the username of a specific subuser that is not listed.
 {% endinfo %}
 
-Once you select a subuser, you’ll be presented with a summary of the account’s performance. You can then click the “Impersonate User” button to log in as that subuser and view their apps. When impersonating a subuser, you’ll find a message in the banner at the top of the page that says “You’re currently logged in as [subuser name].” You can switch back to your parent account by clicking the “Back to Parent Account” link on the left side of the banner at the top of the customer portal.
+Once you select a subuser, you’ll be presented with a summary of the account’s performance. You can then click the “Impersonate User” button to log in as that subuser and view their apps. When impersonating a subuser, you’ll find a message in the banner at the top of the page that says “You’re currently logged in as [subuser name].” You can switch back to your parent account by clicking the “Back to Parent Account” link on the left side of the banner at the top of the SendGrid UI.
 
 <p class="small">
   <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
