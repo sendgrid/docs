@@ -20,6 +20,7 @@ seo:
   * [Editing a Contact](#-Editing-a-Contact)
   * [Delete a Specific Contact](#-Delete-a-Specific-Contact)
   * [Delete All Contacts](#-Delete-All-Contacts)
+  
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
