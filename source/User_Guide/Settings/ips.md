@@ -14,11 +14,11 @@ navigation:
 Setup/Configuration
 {% endanchor %}
 
-You can purchase a dedicated IP address from the Dedicated IP Addresses Settings page or from your Plan & Billing Details page.
+You can purchase a dedicated IP address from the IP Addresses Settings page or from your Plan & Billing Details page.
 
 To purchase a dedicated IP:
 
-* Navigate to Settings in the left hand navigation menu, select Dedicated IP Addresses
+* Navigate to Settings in the left hand navigation menu, select IP Addresses
 * Here you'll see a list of your current dedicated IPs. Your IPs in warmup will have a 'warmup' label
 * Click 'Add an IP Address'
 * Select the number of IP addresses you would like to purchase.
@@ -65,7 +65,7 @@ This feature is only available for [Pro plans and higher](https://sendgrid.com/p
 How is my account's pricing affected by this feature?
 {% endanchor %}
 
-For Pro plans, your first IP address is included in your plan's pricing. Each additional IP address is $20/month.
+For Pro plans, your first IP address is included in your plan's pricing. Each additional IP address is $30/month.
 
 {% anchor h3 %}
 Are there limitations on usage?

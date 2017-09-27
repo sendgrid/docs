@@ -60,7 +60,8 @@ Retrieve all templates.
           "template_id": "9c59c1fb-931a-40fc-a658-50f871f3e41c",
           "active": 1,
           "name": "example version name",
-          "updated_at": "2014-03-19 18:56:33"
+          "updated_at": "2014-03-19 18:56:33",
+          "editor": "design"
         }
       ]
     }
@@ -90,6 +91,7 @@ Retrieve a single template.
       "name": "example version",
       "html_content": "<%body%><strong>Click to Reset</strong>",
       "plain_content": "Click to Reset<%body%>",
+      "editor": "code",
       "subject": "<%subject%>",
       "updated_at": "2014-05-22 20:05:21"
     }

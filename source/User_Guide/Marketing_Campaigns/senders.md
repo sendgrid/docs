@@ -37,7 +37,7 @@ Adding a Sender
 1. Check the email account and click the link in the email to verify the Sender email.
    * To resend your verification email, click the gear icon under Actions on the Sender Management page and select Resend Verification.
    * If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
-   
+
 
 {% info %}
 Your verification link is only valid for 48 hours. After that time you will need to restart the verification process.
@@ -67,6 +67,8 @@ You can insert your sender identity information into your campaigns using the fo
 
 **[Sender_Zip]** - The sender's zip.
 
+**[Sender_Country]** - The sender's country.
+
 To show your sender's full address and information in the footer of the email, add the tags as shown:
 
 {% codeblock %}
@@ -75,12 +77,8 @@ To show your sender's full address and information in the footer of the email, a
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html">Drag & Drop</a>
-    </div>
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
 
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
+- [Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html)

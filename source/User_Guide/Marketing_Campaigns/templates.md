@@ -16,76 +16,73 @@ Marketing Campaigns templates determine how the content of your campaign will be
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
-To view your templates, click **Marketing Campaigns** in the left hand navigation menu and select **Templates**.
-
-{% anchor h2 %}
-Create New Template
-{% endanchor %}
-
-To create a new template from scratch, click the **Create New Template** button. This will take you to the design editor with a blank template that you can build and customize to suit your needs.
-
-![]({{root_url}}/images/marketing_templates_1.png)
-
-{% anchor h2 %}
-View all Templates
-{% endanchor %}
-
-To find the [Marketing Campaigns templates page](https://sendgrid.com/marketing_campaigns/ui/marketing_templates), click **Marketing Campaigns** in the left hand navigation menu and select **Templates**.
-
-Here you will find a list of all templates available to you, including both pre-built templates created by SendGrid and any templates you might have created yourself.
-
 {% anchor h3 %}
-Filter
-{% endanchor %}
+Creating a New Template
+{% endanchor h3 %}
 
-You can filter which templates are displayed on the templates page by selecting either **All**, **Custom**, or **SendGrid Templates** under **Filter By**.
+*To create a new template:*
 
-* **All** - this will include every template available to you.
-* **Custom** - this includes only templates that you have created.
-* **SendGrid Templates** - this includes all templates pre-built by SendGrid.
+1. From the left-hand navigation, select **Campaigns**, and then select **Templates**.  
+2. Click **Create New Template**.  
+3. Select the editor you want to use, and then click **Continue**.
 
 {% info %}
-Responsive templates dynamically scale and adjust depending on what device your recipient is using to view your campaign.
+Developers can use the [POST /campaigns API](https://sendgrid.api-docs.io/v3.0/campaigns-api/create-a-campaign) to programmatically upload a template that you can then go in and edit using the Marketing Campaigns application.
 {% endinfo %}
 
-![]({{root_url}}/images/marketing_templates_2.png)
+{% anchor h3 %}
+Editing an Existing Template
+{% endanchor h3 %}
 
-You may hover over any of these template tiles and click <strong>Preview</strong> to view a quick preview of what your campaign will look like.
+You can only edit custom templates (templates that you have created yourself or duplicated from a SendGrid pre-built template).
 
-![]({{root_url}}/images/marketing_templates_3.png)
+*To edit a template:*
 
-To toggle between a preview of the desktop and mobile renditions of the template, click the desktop/phone toggle in the upper right corner.
+1. From the left-hand navigation, select **Marketing Campaigns**, and then click **Templates**.
 
-![]({{root_url}}/images/marketing_templates_4.png)
+   If you wish to create a custom template using either drag and drop or entering your HTML, select **BLANK TEMPLATE**.
 
-{% anchor h2 %}
-Action Cog
-{% endanchor %}
+1. Navigate to the template you want to edit.  
+1. Click the **action menu** and select **Edit**.
 
-Use the action cog next to each template tile to access the different actions you can perform on a template.
+   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
 
 {% anchor h3 %}
-Create campaign
-{% endanchor %}
+Duplicating a SendGrid Template
+{% endanchor h3 %}
 
-{% info %}
-You can create or add up to 300 different templates.
-{% endinfo %}
+You can easily duplicate a pre-built template provided by SendGrid.
 
-You can create a new campaign based on a template by clicking **Create Campaign** in the action cog menu. This will open the campaign editor and automatically insert the template you selected. To learn more about creating campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html).
+*To duplicate a SendGrid template:*
+
+1. From the left-hand navigation, select **Campaigns**  
+1. Click **Templates**.  
+1. Locate the template you want to duplicate and then click the action cog.
+1. Select **Duplicate**. The duplicate opens in the design editor.
 
 {% anchor h3 %}
-Duplicate
-{% endanchor %}
+Duplicating a Custom Template
+{% endanchor h3 %}
 
-To duplicate a template, simply click **Duplicate** from the action cog menu. This will create a duplicate of your template, and will automatically open that duplicate in the design editor. For more information about the design editor, [click here]({{root_url}}).
+*To duplicate one of your custom templates:*
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Campaigns</a>
-    </div>
+1. From the left-hand navigation, select **Marketing Campaigns**,  
+1. Click **Templates**.
+1. Click the **action menu** and select **Duplicate**.
 
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html">Design Editor</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
+{% anchor h3 %}
+Creating a Template from a Campaign
+{% endanchor h3 %}
+
+*To create a new template from an existing campaign:*
+
+1. From the left-hand navigation, select **Marketing Campaigns**, and then click **Campaigns**.
+1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**.
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- For more information, see [Sending an Email](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
+- [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)
+- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)

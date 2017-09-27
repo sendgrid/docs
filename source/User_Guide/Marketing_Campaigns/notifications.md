@@ -18,11 +18,3 @@ If you would like to have notifications sent to an email other than your parent 
 
 ![]({{root_url}}/images/marketing_campaigns_notifications.png "Add email for notifications")
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html">A/B Testing</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-    </div>
-</div>

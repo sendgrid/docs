@@ -18,7 +18,7 @@ What are Lists and Segments?
 
 Lists are simply static collections of Marketing Campaigns contacts. By default, any new contacts you add are stored under ALL CONTACTS. You may create new lists when adding contacts either manually, or when uploading a CSV (comma separated values) file.
 
-Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or [how they’ve engaged with your emails previously]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics). You can create a segment that pulls from ALL CONTACTS or from a specific existing list.
+Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or how they’ve engaged with your emails previously. You can create a segment that pulls from ALL CONTACTS or from a specific existing list.
 
 Segments are dynamically updated over time as you add customers who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. Segmentation can be especially useful to ensure that you are targeting the best recipients for your campaign.
 
@@ -29,6 +29,8 @@ You must create at least one list or segment in order to send a campaign.
 {% anchor h2 %}
 Managing Your Lists
 {% endanchor %}
+
+<iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 All of your list management features can be reached through the gear icon on the main contacts page. Just click the icon on the right side of your list title to see Export, View List, Edit List, and Delete options.
 
@@ -76,20 +78,23 @@ Remove Contacts From a List
 Click on the name of your list to view all the contacts on the list. Check the box next to the contacts you would like to remove. You will notice that a button at the top right corner will keep track of how many contacts you have selected. Click the button with the selected count and choose the option “Remove from this list” to take these contacts off the list.
 
 {% info %}
-Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the customer portal without re-adding the contacts manually or via a CSV.
+Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the UI without re-adding the contacts manually or via a CSV.
 {% endinfo %}
 
 If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
+
 
 {% anchor h2 %}
 Create a Segment
 {% endanchor %}
 
+<iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
 
 {% info %}
-You can create up to 100 segments.
+You can create up to 400 segments.
 {% endinfo %}
 
 To set up a segment, click the “add list or Segment” button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
@@ -133,12 +138,3 @@ The CSV export email will look like:
 The download link for your CSV export will be valid for 24 hours.
 {% endinfo %}
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html">A/B Testing</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

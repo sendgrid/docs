@@ -39,6 +39,7 @@ navigation:
 ## [Contact Management](#-Contact-Management)
 
 * [What information will Marketing Campaigns store about my contacts?](#-What-information-will-Marketing-Campaigns-store-about-my-contacts)
+* [Will the Subscription Widget also be retired?](#-Will-the-Subscription-Widget-also-be-retired?)
 
 ## [Segmentation](#-Segmentation)
 
@@ -130,7 +131,9 @@ If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you 
 Where do I choose how to pay for Marketing Campaigns?
 {% endanchor %}
 
-You choose the [Plan & Billing Details page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account.
+Visit the [Choose How You Pay page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account. If that link does not work for you, Navigate to **Settings** then **Plan and Billing Details**, then scroll to Marketing Campaigns and click **Learn More**. 
+
+Note: To be eligible for this pricing offer you need to have sent email via Legacy Newsletter between August 1, 2016 and March 30, 2017. 
 
 {% anchor h3 %}
 How can I estimate what it will cost to use Marketing Campaigns?
@@ -166,7 +169,7 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **Improved user experience:** Ease of use is central to Marketing Campaigns. You’ll love the improved design and our UI/UX team has thoughtfully considered every workflow and is continuously working with customers to find opportunities to optimize.
 
-**[Flexible campaign building flow:]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html)** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
+**[Flexible campaign building flow:]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)** Marketing Campaigns accommodates your preferred workflow; there’s no forced step-by-step process. The end result is increased efficiency and a more pleasant experience.
 
 **[Recipient preferences:]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html)** Allow your users to easily opt out of different types of content you send using Unsubscribe Groups, and rely on Marketing Campaigns to track that data so you can reliably honor recipient preferences.
 
@@ -265,6 +268,14 @@ Marketing Campaigns will store two types of data about your contacts:
 **Custom Fields:** Any information you share with us about your contacts such as age, geography, last purchase, etc. This data can be added using a CSV upload or using our [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). Currently, Marketing Campaigns can store up to 60 different [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html).
 
 **Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
+
+{% anchor h3 %}
+Will the Subscription Widget also be retired?
+{% endanchor %}
+
+The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17. 
+
+As you migrate to Marketing Campaigns, you can leverage any of the following best-in-class email list growth integrations to manage your recipient signups: [Privy](https://privy.com/sendgrid/), [WisePops](https://support.wisepops.com/integrations/connect-wisepops-with-sendgrid), [JustUno](https://www.justuno.com/sendgrid-integrations.html), or [SendGrid’s Wordpress subscription widget](https://sendgrid.com/docs/Integrate/Tutorials/WordPress/subscription_widget.html?mc=email&mcd=Legacymigration&utm_medium=email&utm_source=nurture&cvosrc=email.nurture.Legacymigration&utm_campaign=Legacymigration).
 
 {% anchor h2 %}
 Segmentation

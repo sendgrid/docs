@@ -15,11 +15,3 @@ When you log into <a href="{{site.marketing_campaigns_url}}/overview">SendGrid M
 
 ![]({{root_url}}/images/stats_2.png "Campaign Statistics")
 
-<div class="row">
-    <div class="col-md-6 text-left">
-    </div>
-
-    <div class="col-md-6 text-right">
-        <a href="{{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html">Campaigns</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>
