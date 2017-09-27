@@ -28,7 +28,7 @@ Sending Your SendGrid Data to Keen IO
 
 **Step 1: Create a Keen IO and SendGrid account**
 
-* Create a <a href="https://keen.io/signup">Keen IO account</a> (if you don't already have one)
+* Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
 * Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
 
 
