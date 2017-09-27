@@ -76,7 +76,7 @@ In order to best meet your email marketing needs, our focus will be dedicated to
 How long will Legacy Newsletter be available?
 {% endanchor %}
 
-As of **September 30, 2017**, Legacy Newsletter is no longer available. Now that the product has been deprecated, you can no longer create or send campaigns. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).  
+As of **September 30, 2017**, Legacy Newsletter is no longer available. Now that the product has been deprecated, you can no longer create or send campaigns. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).  
 
 Whether or not you choose not to migrate, you need to download any data from Legacy Newsletter you wish to maintain **ASAP**.
 
@@ -181,7 +181,7 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **Ongoing enhancements:** SendGrid is investing heavily in Marketing Campaigns. Not only will existing functionality be optimized, we’ll continue to add new, valuable capabilities to the solution.
 
-**[Improved security and compliance]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html):** Marketing Campaigns includes several security and compliance improvements. For example, you'll find the [unsubscribe and suppression management tools]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) have been improved to make it easier for your recipients to unsubscribe from unwanted email, and [Marketing Campaign's sender identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) have greatly improved our anti-spoofing protection.
+**[Improved security and compliance]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html):** Marketing Campaigns includes several security and compliance improvements. For example, you'll find the [unsubscribe and suppression management tools]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) have been improved to make it easier for your recipients to unsubscribe from unwanted email, and [Marketing Campaign's sender identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) have greatly improved our anti-spoofing protection.
 
 {% anchor h3 %}
 I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?
@@ -199,9 +199,9 @@ Migrating
 Will SendGrid automatically migrate my account to Marketing Campaigns?
 {% endanchor %}
 
-No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html) of resources to help make the manual steps to migrate your account fast and simple. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
+No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/index.html) of resources to help make the manual steps to migrate your account fast and simple. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
 
-You can also use the API to migrate your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns. For more information, see our [Legacy Newsletter to Marketing Campaigns API Migration Guide](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
+You can also use the API to migrate your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns. For more information, see our [Legacy Newsletter to Marketing Campaigns API Migration Guide](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html).
 
 {%anchor h3 %}
 What files or data can I download from Legacy Newsletter?
@@ -232,7 +232,7 @@ For a limited time following the sunset of Legacy Newsletter, you will be able t
 What do I need to prepare before migrating to Marketing Campaigns?
 {% endanchor %}
 
-First, review this [Migration Checklist]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html).
+First, review this [Migration Checklist]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).
 
 While your migration plan will depend on your unique scenario, the migration checklist will encourage you to consider the following:
 
@@ -248,31 +248,31 @@ While your migration plan will depend on your unique scenario, the migration che
 How do I move my contacts from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our contact migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html) for step-by-step instructions.
+View our contact migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_recipient_lists.html) for step-by-step instructions.
 
 {% anchor h3 %}
 How do I move my templates from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our template migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html) for step-by-step instructions.
+View our template migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html) for step-by-step instructions.
 
 {% anchor h3 %}
 How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
+View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
 
 {% anchor h3 %}
 How do I download and save my historical stats?
 {% endanchor %}
 
-View our [how-to video and documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html) for step-by-step instructions to download your historical stats/data.
+View our [how-to video and documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html) for step-by-step instructions to download your historical stats/data.
 
 {% anchor h3 %}
 How do I migrate my API integration with Legacy Newsletter to Marketing Campaigns?
 {% endanchor %}
 
-Please refer to our [API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html) to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html).
+Please refer to our [API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/api_comparison.html) to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html).
 
 {% anchor h2 %}
 Contact Management
@@ -342,13 +342,13 @@ What will happen to all of my historical stats in Legacy Newsletter?
 
 After **September 30, 2017** you will be given a short grace period to download your data. After this grace period this data will no longer be available.
 
-For this reason, we recommend you export any data you wish to retain for the long term. [View our migration guide for details on how to export this data.](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html)
+For this reason, we recommend you export any data you wish to retain for the long term. [View our migration guide for details on how to export this data.](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
 
 {% anchor h3 %}
 Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?
 {% endanchor %}
 
-Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a [side-by-side comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html) for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
+Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a [side-by-side comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/statistics_reporting.html) for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
 
 In many instances you’ll find that Marketing Campaigns provides more in-depth statistics than Legacy Newsletter. For instance, you can view which links within a campaign were clicked most often, or which individuals opened or clicked within particular campaigns. Insights like these help you learn about and optimize recipient engagement.
 
@@ -371,4 +371,4 @@ Both Legacy Newsletter and Marketing Campaigns help you manage contacts, build c
 * Improved unsubscribe management
 * Increased granularity into campaign performance, for instance, individual link click tracking
 
-And there’s much more! Explore our side-by-side [comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html).
+And there’s much more! Explore our side-by-side [comparison of Legacy Newsletter and Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/index.html).
