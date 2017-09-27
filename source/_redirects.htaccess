@@ -747,10 +747,10 @@ Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  
 #
 #######
 
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
@@ -765,7 +765,7 @@ Redriect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter//Side_by_Side_Comparisons/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/campaign_building.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/contact_management.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/statistics_reporting.html
