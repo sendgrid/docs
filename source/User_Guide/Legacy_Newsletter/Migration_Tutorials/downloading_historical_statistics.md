@@ -9,8 +9,11 @@ navigation:
   show: true
 ---
 {% warning %}
-The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+Legacy Newsletter is now retired.
+As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
 {% endwarning %}
+
+For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
 Begin by navigating to your Legacy Newsletter dashboard.
 
