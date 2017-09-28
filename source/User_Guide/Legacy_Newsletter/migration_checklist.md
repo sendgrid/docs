@@ -8,14 +8,16 @@ title: Migration Checklist
 navigation:
   show: true
 ---
+{% warning %}
+Legacy Newsletter is now retired.
+As a safety net, you may **retrieve** data for a short grace period. Please act meow to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
+
+For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
 {% anchor h2 %}
 Moving from Legacy Newsletter to Marketing Campaigns
 {% endanchor %}
-
-{% warning %}
-The ability to retrieve data such as lists, templates, or statistics will only be available for a short grace period. Please act meow to download your data or migrate any assets to Marketing Campaigns.
-{% endwarning %}
 
 The migration to Marketing Campaigns is not automatic. We’ve built a [robust toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/index.html) to help make the manual migration steps fast and simple. This high-level checklist is part of the toolkit and is designed to help you think through important considerations as you make the move to Marketing Campaigns.
 
