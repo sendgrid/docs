@@ -11,7 +11,7 @@ navigation:
 
 ## Legacy Newsletter Sunset
 
-* [Why are you retiring Legacy Newsletter?](#-Why-are-you-retiring-Legacy-Newsletter)
+* [Why did you retire Legacy Newsletter?](#-Why-did-you-retire-Legacy-Newsletter)
 * [How long will Legacy Newsletter be available?](#-How-long-will-Legacy-Newsletter-be-available)
 * [What will happen to my account when the product is retired?](#-What-will-happen-to-my-account-when-the-product-is-retired)
 * [What if I choose not to migrate?](#-What-if-I-choose-not-to-migrate)
@@ -63,20 +63,20 @@ Legacy Newsletter Sunset
 {% endanchor %}
 
 {% anchor h3 %}
-Why are you retiring Legacy Newsletter?
+Why did you retire Legacy Newsletter?
 {% endanchor %}
 
 We created Legacy Newsletter to deliver on customer demand for a simple, straightforward e-newsletter tool to support user engagement and retention.
 
 Over time, the needs and expectations of our customers—and the market at large—have continued to grow. In response, we built Marketing Campaigns: an easy-to-use solution designed to help customers confidently achieve their email marketing goals.
 
-In order to best meet your email marketing needs, our focus will be dedicated to optimizing Marketing Campaigns moving forward. Without continued investment, Legacy Newsletter will become obsolete and impractical for us to continue to support to the degree our customers deserve.
+In order to best meet your email marketing needs, our focus will be dedicated to optimizing Marketing Campaigns moving forward. Without continued investment, Legacy Newsletter would have become obsolete and impractical for us to continue to support to the degree our customers deserve.
 
 {% anchor h3 %}
 How long will Legacy Newsletter be available?
 {% endanchor %}
 
-As of **September 30, 2017**, Legacy Newsletter is no longer available. Now that the product has been deprecated, you can no longer create or send campaigns. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).  
+As of **September 30, 2017**, Legacy Newsletter has been deprecated. You can no longer create or send campaigns, though you can download data for a **brief** grace period. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).  
 
 Whether or not you choose not to migrate, you need to download any data from Legacy Newsletter you wish to maintain **ASAP**.
 
@@ -89,14 +89,14 @@ Now that Legacy Newsletter has been sunset, you cannot create or send campaigns.
 Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of Newsletter, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
 
 {% warning %}
-After the sunset date, you will have a short grace period to access and download any data you have stored in the application such as contact lists, templates, statistics, or prior campaigns.
+There is currently a **brief** grace period to access and download any data you have stored in the application such as contact lists, templates, statistics, or prior campaigns.
 {% endwarning %} 
 
 {% anchor h3 %}
 What if I choose not to migrate?
 {% endanchor %}
 
-If you choose not to migrate, you’ll need to download any data and assets from Legacy Newsletter you wish to retain before **ASAP**. SendGrid is offering a short grace period for those that have not migrated yet, but be aware that anything not downloaded after that period will be permanently deleted.
+If you choose not to migrate, you’ll need to download any data and assets from Legacy Newsletter you wish to retain **ASAP**. SendGrid is offering a **short** grace period for those that have not migrated yet, but be aware that anything not downloaded asap will soon be permanently deleted.
 
 {% anchor h2 %}
 Pricing
@@ -149,7 +149,7 @@ Leverage our [Pricing Calculator](https://app.sendgrid.com/settings/choose_how_y
 Why does Marketing Campigns charge me for storing contacts?
 {% endanchor %}
 
-Charging by contacts stored in Marketing Campaigns as opposed to an additional fee for each email sent through Legacy Newsletter is aligned with sending best practices. This model encourages you to monitor how engaged your recipients are, and to modify your marketing strategy accordingly. Here’s how:
+The default pricing for Marketing Campaigns is to charge for contacts stored in Marketing Campaigns as opposed to an additional fee for each email sent through Legacy Newsletter. This is aligned with sending best practices by encouraging you to monitor how engaged your recipients are and modify your marketing strategy accordingly. Here’s how:
 
 **Send less frequently to unengaged recipients:** If you have recipients who are not opening your email, remove them from your list! Continually sending to these recipients not only leads to a poor recipient experience, but is also a poor use of your time and money. By removing unengaged recipients, you save money, improve deliverability, and maintain a positive reputation with your recipients and your recipients’ inbox providers.
 
@@ -340,9 +340,9 @@ Statistics
 What will happen to all of my historical stats in Legacy Newsletter?
 {% endanchor %}
 
-After **September 30, 2017** you will be given a short grace period to download your data. After this grace period this data will no longer be available.
+After **September 30, 2017** you will be given a short grace period to download your data. After this grace period this data will be permanently deleted.
 
-For this reason, we recommend you export any data you wish to retain for the long term. [View our migration guide for details on how to export this data.](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
+For this reason, we recommend you export any data you wish to retain for the long term **asap**. [View our migration guide for details on how to export this data.](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
 
 {% anchor h3 %}
 Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?
