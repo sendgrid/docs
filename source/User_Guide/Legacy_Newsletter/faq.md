@@ -15,12 +15,14 @@ As a safety net, you may **retrieve** data for a short grace period. Please act 
 
 For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
-## Legacy Newsletter Sunset
+## Legacy Newsletter Sunset (#-Legacy-Newsletter-Sunset)
 
 * [Why did you retire Legacy Newsletter?](#-Why-did-you-retire-Legacy-Newsletter)
 * [How long will Legacy Newsletter be available?](#-How-long-will-Legacy-Newsletter-be-available)
 * [What will happen to my account when the product is retired?](#-What-will-happen-to-my-account-when-the-product-is-retired)
 * [What if I choose not to migrate?](#-What-if-I-choose-not-to-migrate)
+* [Will engagement stats continue to populate after the sunset?](#-Will-engagement-stats-continue-to-populate-after-the-sunset)
+* [Will data on unsubscribes, bounces, etc., continue to populate after the retirement?] (#-Will-data-on-unsubscribes-bounces- etc-continue-to-populate-after-the-retirement?
 
 ## [Pricing](#-Pricing)
 
@@ -92,7 +94,7 @@ What will happen to my account when the product is retired?
 
 Now that Legacy Newsletter has been sunset, you cannot create or send campaigns.  This deprecation includes both the web interface at sendgrid.com/newsletter and [APIs]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) at `api.sendgrid.com/api/newsletter`.
 
-Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of Newsletter, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
+Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of *Newsletter*, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
 
 {% warning %}
 There is currently a **brief** grace period to access and download any data you have stored in the application such as contact lists, templates, statistics, or prior campaigns.
@@ -103,6 +105,19 @@ What if I choose not to migrate?
 {% endanchor %}
 
 If you choose not to migrate, you’ll need to download any data and assets from Legacy Newsletter you wish to retain **ASAP**. SendGrid is offering a **short** grace period for those that have not migrated yet, but be aware that anything not downloaded asap will soon be permanently deleted.
+
+{% anchor h3 %}
+Will engagement stats continue to populate after the retirement? 
+{% endanchor %}
+
+If a recipient engages with an email after the sunset date, those engagement stats will be updated in the application for a brief grace period. 
+
+{% anchor h3 %}
+Will data on unsubscribes, bounces, etc., continue to populate after the retirement?
+{% endanchor %}
+
+If a recipient unsubscribes from your email, marks it as spam, or their address bounces, that information will be updated in the application for a brief grace period.  
+
 
 {% anchor h2 %}
 Pricing
