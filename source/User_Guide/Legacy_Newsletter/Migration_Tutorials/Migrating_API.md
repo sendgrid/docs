@@ -9,6 +9,13 @@ navigation:
   show: true
 ---
 
+{% warning %}
+Legacy Newsletter is now retired.
+As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
+
+For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
+
 If you have integrations with the Legacy Newsletter API, you’ll need to change your code to use the Marketing Campaigns API. We have mapped every endpoint available in Legacy Newsletter to the comparative endpoint in Marketing Campaigns, in our API Reference.
 
 <h3><a href="{{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/categories.html">Categories</a></h3>

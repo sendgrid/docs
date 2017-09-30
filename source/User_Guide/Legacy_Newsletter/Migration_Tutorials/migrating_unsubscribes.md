@@ -8,6 +8,12 @@ title: Migrating Unsubscribes
 navigation:
   show: true
 ---
+{% warning %}
+Legacy Newsletter is now retired.
+As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
+
+For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
 <iframe src="https://player.vimeo.com/video/136013004" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

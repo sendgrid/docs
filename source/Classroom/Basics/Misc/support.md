@@ -1,6 +1,6 @@
 ---
 seo:
-  title: How to contact SendGrid Support
+  title: Contacting SendGrid Support
   description: SendGrid support contact information
   keywords: SendGrid support, support contact, sendgrid support chat, sendgrid support phone number
 title: How to contact SendGrid support
@@ -18,9 +18,7 @@ navigation:
   <div class="col-md-4"></div>
 </div>
 
-You can contact SendGrid support from the [SendGrid Support Portal](https://support.sendgrid.com).
-
-Paying SendGrid customers have the option to contact support via phone, chat, or by submitting a ticket using our web form.
+You can contact SendGrid support from the [SendGrid Support Portal](https://support.sendgrid.com). Click **Login & Contact Support**, and then **Contact Support** to see your support contact options. Paying SendGrid customers have the option to contact support via phone, chat, or by submitting a ticket using our web form. All SendGrid customers have the option to submit a ticket using our web form.
 
 {% anchor h2 %}
 Support Hours
