@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 0
-title: Node.js
+title: v2 Node.js
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation. {% endgithub %}
+{% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using <a href="https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/nodejs.html">v3</a> SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation. {% endgithub %}
 
 {% anchor h2 %} Using SendGrid's Node.js Library {% endanchor %}
 {% codeblock lang:js %}
