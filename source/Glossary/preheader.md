@@ -10,7 +10,9 @@ navigation:
   show: false
 ---
 
- Along with the subject line, the preheader text is the first thing subscribers come into contact with when they receive your email campaign.
+A preheader is the short summary text that follows the subject line when an email is viewed in the inbox. Many mobile, desktop and web email clients provide them to tip you off on what the email contains before you open it.
+
+Along with the subject line, the preheader text is the first thing subscribers come into contact with when they receive your email campaign.
 
 Many businesses use preheaders in their email marketing campaigns to get more subscribers to open and read their emails – and to ensure that their campaigns are as deliverable as possible.
 
