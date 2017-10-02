@@ -30,7 +30,6 @@ Amazon Marketplace
 {% endanchor %}
 
 SendGrid is now available on the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB)! AWS customers are now able to integrate SendGrids email infrastructure and email marketing tools with their other AWS tools. For more information, see the [blog](https://aws.amazon.com/blogs/apn/inside-sendgrids-expanded-relationship-with-aws/) and the [documentation](https://sendgrid.com/docs/Integrate/Partners/Amazon_Marketplace.html).
-<<<<<<< HEAD
 
 {% anchor h2 %}
 2 October 2017
