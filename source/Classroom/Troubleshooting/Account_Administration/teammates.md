@@ -30,7 +30,7 @@ SendGrid has a list of "scopes" (or permissions) for all actions that can be per
 
 When you create a teammate with the Web API v3, you also must specify which permissions to give the new teammate. However, the method used to specify teammate permissions in the API allows for more granular control over exactly which permissions are assigned. In other words, the list of permissions available via the API is more detailed than the list available in the UI.
 
-If you create a teammate in the UI, but find that it lacks sufficient permissions, then you will have to modify those permissions by making an API call. For more information on how to do this, click here.
+If you create a teammate in the UI, but find that it lacks sufficient permissions, then you will have to modify those permissions by making an API call. For more information on updating permissions with the teammates API, see the [`PATCH /teammates/{username}` method](https://sendgrid.api-docs.io/v3.0/teammates/teammates-update-teammate-permissions) in the API Reference.
 
 {% anchor h2 %}
 Why can't my teammate impersonate a subuser?
