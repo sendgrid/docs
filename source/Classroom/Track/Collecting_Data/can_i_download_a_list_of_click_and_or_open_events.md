@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Currently there is not a way to download a log or a .csv of your Click, Open, or any other email event data directly from the SendGrid customer portal. We recommend implementing our [Event Notification Webhook](https://app.sendgrid.com/settings/mail_settings) if you find yourself needing to log and access your data more granularly. 
+Currently there is not a way to download a log or a .csv of your Click, Open, or any other email event data directly from the SendGrid UI. We recommend implementing our [Event Notification Webhook](https://app.sendgrid.com/settings/mail_settings) if you find yourself needing to log and access your data more granularly. 
 
 You can also use our [open source EventKit app]({{root_url}}/Utilities/event_kit.html) to set up a basic implementation of our Event Notification Webhook, and will grant you the ability to download a .csv of email data from the EventKit interface for any events that are collected _after the setup is complete_. 
 

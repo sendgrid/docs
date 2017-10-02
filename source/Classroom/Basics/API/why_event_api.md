@@ -13,7 +13,7 @@ navigation:
 
 Wouldn't it be nice if you could get information about every email you've ever sent, every message that's ever been opened, and any link that's ever been clicked? If you ever talk to SendGrid Support agents, we'll almost always recommend implementing our Event API to help you track these sorts of metrics. This article highlights the major benefits of the Event API and why we constantly recommend it!
 
-Due to the sheer volume of email we send (over 1 _billion_ emails a _day_ as of April 2016), we can only store so much information regarding the emails passing through our system. Your [Activity Feed](https://app.sendgrid.com/email_activity?) page holds records for up to 7 days with a max 500 entries shown at one time, and our internal database records also only go back about 30 days. After that time passes, specific email data is gone(stats are permanent). 
+Due to the sheer volume of email we send (over 1 _billion_ emails a _day_ as of April 2016), we can only store so much information regarding the emails passing through our system. Your [Activity Feed](https://app.sendgrid.com/email_activity?) page holds records up to 500 events, and our internal database records also only go back about 30 days. After that time passes, specific email data is gone(stats are permanent). 
 
 
 Fortunately, you can receive and store all of this information on your end though by implementing our **[Event API!](https://sendgrid.com/docs/API_Reference/Webhooks/index.html)**. 

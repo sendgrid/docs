@@ -1,8 +1,8 @@
 ---
 seo:
   title: The SendGrid User Guide
-  description: The SendGrid User Guide provides information about the SendGrid Customer Portal
-  keywords: user guide, customer portal, user interface
+  description: The SendGrid User Guide provides information about the SendGrid UI
+  keywords: user guide, UI, user interface
 title: About the User Guide
 weight: -10
 layout: page
@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-The SendGrid User Guide will give you information about the different user interfaces within the SendGrid portal. As changes and new features are added to our portal, we will update the User Guide to reflect them.
+The SendGrid User Guide will give you information about the different user interfaces within the SendGrid UI. As changes and new features are added to our UI, we will update the User Guide to reflect them.
 
 {% anchor h2 %}
 Open Source
