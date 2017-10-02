@@ -12,6 +12,16 @@ navigation:
 The following new features and changes to the service are available.
 
 {% anchor h2 %}
+30 September 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Legacy Newsletter
+{% endanchor %}
+
+Legacy Newsletter has been sunset and can no longer be used to build or send campaigns. In order to continue sending marketing emails, SendGrid recommends switching to [Marketing Campaigns](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html). See the [documentation](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html) for more information on why we made the switch.  
+
+{% anchor h2 %}
 5 September 2017
 {% endanchor %}
 
