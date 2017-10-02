@@ -7,7 +7,7 @@ seo:
   description: The new features and changes to SendGrid
   keywords: release notes
 navigation:
-  show: true
+  show: false
 ---
 The following new features and changes to the service are available.
 
