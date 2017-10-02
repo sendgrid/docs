@@ -67,10 +67,6 @@ To find it, visit your [Keen home screen](https://keen.io/home), select the proj
 
 ![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
 
-A report for **All of your Mail”** will be created automatically. You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
-
-For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
-
 {% anchor h4 %}
 Adding a Segment
 {% endanchor h4 %}
