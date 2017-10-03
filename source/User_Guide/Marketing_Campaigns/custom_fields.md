@@ -31,7 +31,7 @@ database. You will be able to query your list in different ways, based on the da
 * **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% info %}
-You can create up to 20 custom fields for each data type: date, text, and number.
+You can create up to 120 custom fields.
 {% endinfo %}
 
 {% warning %}
