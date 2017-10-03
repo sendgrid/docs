@@ -121,6 +121,11 @@ You can add the following drag & drop modules to your campaign:
     <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
+  <tr>
+    <td>Unsubscribe</td>
+    <td>Allows you to insert preset Sender information and unsubscribe links into your email. SendGrid recommends using this module to remain CAN-SPAM compliant.</td>
+    <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
+  </tr>
 </table>
 
 {% anchor h3 %}
