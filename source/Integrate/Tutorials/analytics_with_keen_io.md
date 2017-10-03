@@ -28,7 +28,7 @@ Sending Your SendGrid Data to Keen IO
 
 **Step 1: Create a Keen IO and SendGrid account**
 
-* Create a <a href="https://keen.io/signup">Keen IO account</a> (if you don't already have one)
+* Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
 * Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
 
 
@@ -66,10 +66,6 @@ Once you have data successfully flowing from SendGrid to Keen, a new application
 To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the “Apps” tab. Find SendGrid and select “Launch App”. If you’ve successfully sent SendGrid data to Keen for storage, you will see the dashboard below. 
 
 ![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
-
-A report for **All of your Mail”** will be created automatically. You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
-
-For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
 
 {% anchor h4 %}
 Adding a Segment
