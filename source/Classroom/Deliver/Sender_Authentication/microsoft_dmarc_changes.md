@@ -14,7 +14,7 @@ navigation:
   show: true
 ---
 
-Miscrosoft has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo, AOL, and GMail. You may have started seeing bounce messages with the following reasons:
+Miscrosoft has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo, AOL, and Gmail. You may have started seeing bounce messages with the following reasons:
 
 Hotmail / Outlook / MSN / Live: 
 

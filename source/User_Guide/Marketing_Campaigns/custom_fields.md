@@ -38,6 +38,10 @@ You can create up to 20 custom fields for each data type: date, text, and number
 Text custom fields are limited to a size of 32,766 bytes.
 {% endwarning %}
 
+{% warning %}
+Number custom fields are limited to 309 digits.
+{% endwarning %}
+
 ![]({{root_url}}/images/custom_fields_1.png "Default Custom Fields")
 
 {% anchor h2 %}
