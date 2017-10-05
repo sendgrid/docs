@@ -8,6 +8,10 @@ navigation:
 
 Throttle your customer when you need them to send only a specific amount of emails at a specified interval.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
