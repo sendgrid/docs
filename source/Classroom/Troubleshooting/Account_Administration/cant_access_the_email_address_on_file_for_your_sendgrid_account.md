@@ -14,7 +14,7 @@ navigation:
   show: true
 ---
 
-Sometimes, people leave your company, and their email address may be deleted or lost. Those email accounts can sometimes be associated with important business accounts, like your account with SendGrid! This kind of access is important for notifications, billing alerts, and passwords reset emails.  
+Sometimes, people leave your company, and their email address may be deleted or lost. Those email accounts can sometimes be associated with important business accounts, like your account with SendGrid! This kind of access is important for notifications, billing alerts, and passwords reset emails. 
 
 If you find yourself in a similar situation, use one of the following options to get back in the action:
 

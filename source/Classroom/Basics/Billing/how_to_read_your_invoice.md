@@ -82,7 +82,7 @@ The charge for contact storage is **$10.00 PER 10,000 contacts(1 block),** so th
 
 ![]({{root_url}}/images/invoice_usage_NL.png)
 
-**Newsletter Usage** - Legacy Newsletter usage is charged at a rate of **$0.25 per 1000 messages sent.** This charge is in addition to the base plan price for emails used, as well as any overages that are accrued.  
+**Newsletter Usage** - Legacy Newsletter usage is charged at a rate of **$0.25 per 1000 messages sent.** This charge is in addition to the base plan price for emails used, as well as any overages that are accrued. 
 
 In this example, no messages were sent using the Legacy Newsletter, which works out to a $0.00 charge.
 

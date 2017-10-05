@@ -26,7 +26,7 @@ You will either have to verify your email address, set up two-factor authenticat
 
 {% anchor h3 %}Can I send email right away?{% endanchor %}
 
-Yes, you can send up to 100 emails per day even when your account is in a pre-verified state.  
+Yes, you can send up to 100 emails per day even when your account is in a pre-verified state. 
 
 {% anchor h3 %}Can I skip a verification step?{% endanchor %} 
 

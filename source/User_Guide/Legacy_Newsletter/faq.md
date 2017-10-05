@@ -84,7 +84,7 @@ In order to best meet your email marketing needs, our focus will be dedicated to
 How long will Legacy Newsletter be available?
 {% endanchor %}
 
-As of **September 30, 2017**, Legacy Newsletter has been deprecated. You can no longer create or send campaigns, though you can download data for a **brief** grace period. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).  
+As of **September 30, 2017**, Legacy Newsletter has been deprecated. You can no longer create or send campaigns, though you can download data for a **brief** grace period. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html). 
 
 Whether or not you choose not to migrate, you need to download any data from Legacy Newsletter you wish to maintain **ASAP**.
 
@@ -92,7 +92,7 @@ Whether or not you choose not to migrate, you need to download any data from Leg
 What will happen to my account when the product is retired?
 {% endanchor %}
 
-Now that Legacy Newsletter has been sunset, you cannot create or send campaigns.  This deprecation includes both the web interface at sendgrid.com/newsletter and [APIs]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) at `api.sendgrid.com/api/newsletter`.
+Now that Legacy Newsletter has been sunset, you cannot create or send campaigns. This deprecation includes both the web interface at sendgrid.com/newsletter and [APIs]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) at `api.sendgrid.com/api/newsletter`.
 
 Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of *Newsletter*, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
 
@@ -116,7 +116,7 @@ If a recipient engages with an email after the sunset date, those engagement sta
 Will data on unsubscribes, bounces, etc., continue to populate after the retirement?
 {% endanchor %}
 
-If a recipient unsubscribes from your email, marks it as spam, or their address bounces, that information will be updated in the application for a brief grace period.  
+If a recipient unsubscribes from your email, marks it as spam, or their address bounces, that information will be updated in the application for a brief grace period. 
 
 
 {% anchor h2 %}
@@ -247,7 +247,7 @@ For a limited time following the sunset of Legacy Newsletter, you will be able t
   *To download Email Reports:*
 
    1. Navigate to **Marketing Email** and then select **Manage**. 
-   2.  Find the campaign you wish to save the data for and click the title. 
+   2. Find the campaign you wish to save the data for and click the title. 
 
 {% anchor h3 %}
 What do I need to prepare before migrating to Marketing Campaigns?
