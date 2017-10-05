@@ -22,6 +22,9 @@ Upgrading a user generates an invoice. If the user is upgrading from a free to a
  {% parameter 'ip_group[]' 'No' 'If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
   {% response json %}
