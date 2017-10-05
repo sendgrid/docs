@@ -694,6 +694,10 @@ Search with conditions [POST]
   Field values must all be a string.
 </p>
 
+{% info %}
+You can search for up to 15 different conditions per request.
+{% endinfo %}
+
 <p>
   Search conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either <code>clicks.campaign_identifier</code> or <code>opens.campaign_identifier</code>.
   The condition value should be a string containing the id of a completed campaign.
