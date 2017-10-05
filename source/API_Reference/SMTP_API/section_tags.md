@@ -32,6 +32,10 @@ Do not use spaces inside your section or substitution tags! e.g. `%first name%`
 The space breaks the string.
 {% endwarning %}
 
+{% warning %}
+Do not nest section tags in sections as they will fail and your section will not be replaced.
+{% endwarning %}
+
 * * * * *
 
 {% anchor h2 %}
