@@ -28,6 +28,8 @@ Managing API Keys
 
 You can [manage your API Keys]({{site.app_url}}/settings/api_keys) from the SendGrid UI. Additionally, you can [manage your API keys via the API itself]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
 
+(% info %) There is a limit of 100 API Keys per account. (% endinfo %)
+
 {% anchor h2%}
 Using API Keys
 {% endanchor %}
