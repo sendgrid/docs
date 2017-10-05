@@ -61,6 +61,11 @@ Depending on your editor selection, you use different methods to design your cam
 To schedule your campaign to send at a later time or date, toggle the **Send Immediately** button to **Off**, and enter the date and time you want the campaign to be sent.
 {% endinfo %}
 
+Be sure your account is set to the correct timezone, in order to ensure that your emails get sent when you want them to.
+
+From the left-hand navigation select **Settings**, and then click **Account Details** or go to:
+https://app.sendgrid.com/settings/account, at the bottom of the page, find **TIME ZONE** and ensure your desired timezone is correct. 
+
 {% anchor h3 %}
 Additional Resources
 {% endanchor h3 %}
