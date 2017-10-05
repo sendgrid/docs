@@ -10,6 +10,10 @@ navigation:
 We recommend using SendGrid C#, our client library, <a href="https://github.com/sendgrid/sendgrid-csharp">available on Github</a>, with full documentation.
 {% endgithub %}
 
+{% info %}
+The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in C#](https://github.com/sendgrid/sendgrid-csharp/blob/master/TROUBLESHOOTING.md#v2).
+{% endinfo %}
+
 {% anchor h2 %}Using SendGrid's C# Library{% endanchor %}
 {% codeblock lang:csharp %}
 // using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
