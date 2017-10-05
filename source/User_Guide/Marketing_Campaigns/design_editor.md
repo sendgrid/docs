@@ -98,7 +98,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Image</td>
-    <td>Can contain a single image.Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
+    <td>Can contain a single image. Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
     <td>Image background, image margin, link url, alt text, alignment, responsive, height, width</td>
   </tr>
   <tr>
@@ -240,32 +240,33 @@ You can add the following substitution tags to your marketing campaign:
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code></td>
+   <td><code>[Sender_Name]</code>*</td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code></td>
+   <td><code>[Sender_City]</code>*</td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code></td>
+   <td><code>[Sender_State]</code>*</td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code></td>
+   <td><code>[Sender_Zip]</code>*</td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code></td>
+   <td><code>[Unsubscribe]</code>*</td>
    <td>This tag will be replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code></td>
+   <td><code>[Unsubscribe_Preferences]</code>
+   *</td>
    <td>This tag will be replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
@@ -275,6 +276,7 @@ You can add the following substitution tags to your marketing campaign:
    <td>Weblink</td>
  </tr>
 </table>
+*For your convenience, these subsitution tags have been added to an Unsubscribe Module available in the Design Editor.
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
