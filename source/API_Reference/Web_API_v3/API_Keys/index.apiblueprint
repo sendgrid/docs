@@ -81,6 +81,8 @@ This will create a new random API Key for the user with permissions assigned. A 
                     }
                 ]
             }
+            
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
 ## API Key [/api_keys/{api_key_id}]
 ### Get an existing API Key [GET]
