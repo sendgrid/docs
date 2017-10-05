@@ -75,6 +75,8 @@ You will then be able to name your key and assign it permissions.
 
 ![]({{root_url}}/images/select_billing_api_key_permissions.png)
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 API Key permissions are not permanent and may be changed any time after the key has been created. Simply click the gear icon next to the API Key you would like to make changes to, and click "Edit Details".
 
 ![]({{root_url}}/images/editing_api_keys.png)
