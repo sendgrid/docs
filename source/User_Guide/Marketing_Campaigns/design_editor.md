@@ -261,12 +261,12 @@ You can add the following substitution tags to your marketing campaign:
  </tr>
  <tr>
    <td><code>[Unsubscribe]</code></td>
-   <td>This tag will be replaced with a link allowing your recipient to be added to the unsubscribe group selected when sending your campaign.</td>
+   <td>This tag will be replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code>[Unsubscribe_Preferences]</code></td>
-   <td>This tag will be replaced with a link allowing your recipients to opt into or out of the various email unsubscribe groups you offer.</td>
+   <td>This tag will be replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
