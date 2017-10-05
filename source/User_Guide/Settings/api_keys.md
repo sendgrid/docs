@@ -52,6 +52,8 @@ When you click the “Create API Key” button, a dropdown menu will appear allo
 
 The API Key name will follow your API key around through the SendGrid UI, so it is important that you choose a name that is meaningful to you.
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 {% warning %}
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore this generated token.
 {% endwarning %}
