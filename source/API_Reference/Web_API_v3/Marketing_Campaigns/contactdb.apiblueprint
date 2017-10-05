@@ -708,6 +708,7 @@ You can search for up to 15 different conditions per request.
   The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
 </p>
 
+
 + Request
 
     + Body
@@ -845,6 +846,10 @@ The JSON accepted by this endpoint is identical to that of the [POST search with
             {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}], "recipient_count":0}
 
 {% warning %}The response of the initial `POST` will return a `recipient_count` of 0 because it takes some time to populate. Follow up with a `GET` to verfiy segment size.{% endwarning %}
+
+{% info %}
+You can add up to 15 different conditions per segment.
+{% endinfo %}
 
 + Response 400
 
