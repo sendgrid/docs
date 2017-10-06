@@ -12,7 +12,7 @@ seo:
 
 Categories help organize your email analytics by enabling you to tag emails you send by topics you define.
 
-Just as you can view the statistics on all your activity under the '[Statistics]({{root_url}}/User_Guide/Delivery_Metrics/)' tab, you can go a step further and view the [statistics broken down to a particular category]({{root_url}}/User_Guide/Delivery_Metrics/categories.html).
+Just as you can view the statistics on all your activity under the '[Statistics]({{root_url}}/User_Guide/Statistics/index.html)' tab, you can go a step further and view the [statistics broken down to a particular category]({{root_url}}/User_Guide/Statistics/categories.html).
 
 The events that can be associated with category include:
 

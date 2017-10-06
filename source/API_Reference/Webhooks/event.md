@@ -411,7 +411,7 @@ Categories
 For categories, we return what was sent. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 {% endinfo %}
 
-If [categories]({{root_url}}/User_Guide/Delivery_Metrics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
+If [categories]({{root_url}}/User_Guide/Statistics/categories.html) are used over the SMTP API they will be returned by the Event Webhook as such:
 
 {% anchor h3 %}
 Category as a String
