@@ -19,7 +19,7 @@ Begin by navigating to your Legacy Newsletter dashboard.
 
 Go to **Marketing Email** and click **Manage** to view the statistics for your newsletters.
 
-Here you will find a quick preview of your newsletter engagement and delivery metrics such as:
+Here you will find a quick preview of your newsletter engagement and statistics such as:
 
 * Sent
 * Opens
