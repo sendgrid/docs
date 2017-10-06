@@ -21,6 +21,9 @@ Before sending your first campaign, you need to do the following:
 
 *To send your first email:*
 
+{% info %}
+Please make sure to check your [Account Details](https://sendgrid.com/docs/User_Guide/Settings/account.html) under **Settings** to confirm that your account is set to the proper timezone.
+{% endinfo %}
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
 
 1. Click **Create Campaign**.To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
