@@ -44,6 +44,8 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 {% anchor h2 %}
 Create an API Key
 {% endanchor %}
@@ -51,6 +53,8 @@ Create an API Key
 When you click the “Create API Key” button, a dropdown menu will appear allowing you to choose the type of API key you would like to create. After selecting either "General API Key" or "Billing API Key", you will be shown a page allowing you to give your new key a name and permissions.
 
 The API Key name will follow your API key around through the SendGrid UI, so it is important that you choose a name that is meaningful to you.
+
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
 {% warning %}
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore this generated token.

@@ -62,7 +62,7 @@ The interaction between Two-Factor Authentication and multiple credentialed user
 Will my multiple user credentials be supported on Two-Factor Authentication?
 {% endanchor h2 %}
 
-Yes! Multiple user credentials can choose to have their own individual two-factor authentication.  
+Yes! Multiple user credentials can choose to have their own individual two-factor authentication. 
 
 {% anchor h2 %}
 What happens if I repeatedly attempt to log in with an invalid token?

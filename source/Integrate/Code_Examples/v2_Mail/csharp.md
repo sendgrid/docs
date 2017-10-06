@@ -50,7 +50,7 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
 </system.net>
 {% endcodeblock %}
 
-This C# program will build a MIME email and send it through SendGrid.  .NET already has built in libraries to send and receive emails. 
+This C# program will build a MIME email and send it through SendGrid. .NET already has built in libraries to send and receive emails. 
 This example uses:
 [.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
 

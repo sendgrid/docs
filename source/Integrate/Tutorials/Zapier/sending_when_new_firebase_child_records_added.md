@@ -41,7 +41,7 @@ Click here to [Send SendGrid email when new Firebase child records are added](ht
 3. Enter the **Path to Data** that you wish for the Zap to watch for child records.
 ![Path to data](https://api.monosnap.com/rpc/file/download?id=ftCyfZYQCYwIxgDZ7m61vK9wcdU2F3)
 4. Choose your  account from the list of accounts, or connect a new account.
-5.  To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 6. Using fields from Firebase, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=z8bVdXOXSPszyLTNfBf0lhSYrPMlcP)

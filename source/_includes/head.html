@@ -40,7 +40,7 @@
   {% endif %}
 
   {% capture canonical %}{% if page.seo.canonical %}{{ page.seo.canonical }}{% else %}{{site.url}}{{page.url}}{% endif %}{% endcapture %}
-  {% comment %} ## This is an easy way to check if the canonical url has a protocol – it's only displayed if it does.  ## {% endcomment %}
+  {% comment %} ## This is an easy way to check if the canonical url has a protocol – it's only displayed if it does. ## {% endcomment %}
   {% capture canonicalprotocolfree %}{{ canonical | replace:'http','' }}{% endcapture %}
   {% if canonical and canonicalprotocolfree != canonical  %}
   <link rel="canonical" href="{{canonical}}"/>

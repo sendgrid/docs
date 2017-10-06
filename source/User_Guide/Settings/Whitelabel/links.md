@@ -48,7 +48,7 @@ If you add a new default email link whitelabel for a email link domain that is a
 Your email link whitelabel will not affect your domain whitelabel and vice versa.
 {% endinfo %}
 
-The root domain for your subdomain. This is the domain that will receive the reputation from the whitelabel.  Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
+The root domain for your subdomain. This is the domain that will receive the reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
 
 {% anchor h3 %}
 Use new Domain

@@ -15,7 +15,7 @@ navigation:
 
 **1. Establish the New Subuser ** (required)
 
-With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a whitelabel entry or enable website/SMTP access for the subuser.   
+With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a whitelabel entry or enable website/SMTP access for the subuser.  
 
 **Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
 
@@ -33,7 +33,7 @@ Now that you have created the new subuser account, you will need to [add an IP](
 When defining the parameter 'list' there are a few options you can choose:
 
 - **All ** = Will list all of the IPs on your account, taken or available.
-- **Free ** = Will list all the free IPs on your account.  For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
+- **Free ** = Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
 - **Taken ** = Will list all of the IP addresses that are assigned to your parent and/or subuser accounts.
 - **Available ** = Will list all of the unassigned IP addresses for the account. If a subuser is deactivated _and it _is assigned an IP, that IP will show up on this list since that IP address is not technically in use.
 <center>
@@ -71,7 +71,7 @@ First, you should find out what whitelabel entries you have associated with your
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/9d491f57-d3c8-4376-a31d-a04b49590747/00000097.png" alt=""></p>
 </center>
 
-The API response above shows that email.sendgrid.com and email.example.com are both already established whitelabel entries, and can be used by this subuser.  If none are displayed then the next step in this process should be skipped.
+The API response above shows that email.sendgrid.com and email.example.com are both already established whitelabel entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
 
 If you have a whitelabel entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
 
@@ -102,9 +102,9 @@ The final step in creating your new subuser requires you to simply [activate the
 
 If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high five!  
 
-But wait, there's more...  
+But wait, there's more... 
 
-Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.   
+Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.  
 
 <center>
 <p> </p>

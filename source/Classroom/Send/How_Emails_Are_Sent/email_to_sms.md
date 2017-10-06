@@ -21,7 +21,7 @@ Basically, SMTP-to-SMS gateways have narrow bandwidth, due to the need for mobil
 Here’s a relevant comment about SMS from [RFC 5724](http://www.ietf.org/rfc/rfc5724.txt):  
  > SMS messages very often are delivered almost instantaneously (if the  
   receiving SMS client is online), but there is no guarantee for when  
-  SMS messages will be delivered.  In particular, SMS messages between  
+  SMS messages will be delivered. In particular, SMS messages between  
   different network operators sometimes take a long time to be  
   delivered (hours or even days) or are not delivered at all, so  
   applications SHOULD NOT make any assumptions about the reliability  

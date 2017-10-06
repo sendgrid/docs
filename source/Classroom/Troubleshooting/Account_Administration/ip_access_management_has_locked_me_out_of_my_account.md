@@ -19,7 +19,7 @@ It's possible under some circumstances to accidentally lock yourself out of your
 
 2. If you have tried the above suggestion, and access is not possible, please [submit a Support ticket](https://support.sendgrid.com/hc/en-us/requests/new#ipam-lockout) to inform us of your access issue. Please try to resolve access yourself before contacting support, as our agents will require that you attempt access from other IPs first before the process can move forward. 
 
-3. Once you have submitted a ticket, one of our agents will work with you to verify ownership of the account in a number of ways. We reserve the right to be very thorough with this process, as we treat the account security of our customers with very high sensitivity.  
+3. Once you have submitted a ticket, one of our agents will work with you to verify ownership of the account in a number of ways. We reserve the right to be very thorough with this process, as we treat the account security of our customers with very high sensitivity. 
 
 4. Once we can fully verify the ownership of your account to our satisfaction, we can provide access to your IP. After you are able to log back into your account, you can modify your IP access as needed or even disable the feature entirely.
 

@@ -20,7 +20,7 @@ In the email flowchart below, you can see the main components that all email mes
 
 First, a sender puts together the content that their recipients will love. Then it’s time for the “SMTP conversation” to take place. SMTP stands for Simple Mail Transfer Protocol, and this conversation is what makes email messages get from the sender to the recipient. It’s easiest to think of an SMTP conversation as a “handshake.”
 
-Imagine that a sender is a host at a party and all of the other guests are the recipients of the message. The host will then shake every guest’s hand and during that “handshake” they will have this SMTP conversation. In the end, the guest (i.e. recipient and its recipient server) will determine if they will accept the message or not.  In this scenario, you can think of SendGrid as a person at the party grabbing both the host’s and guest’s hands and making the handshake and discussion actually happen.
+Imagine that a sender is a host at a party and all of the other guests are the recipients of the message. The host will then shake every guest’s hand and during that “handshake” they will have this SMTP conversation. In the end, the guest (i.e. recipient and its recipient server) will determine if they will accept the message or not. In this scenario, you can think of SendGrid as a person at the party grabbing both the host’s and guest’s hands and making the handshake and discussion actually happen.
 
 {% anchor h2 %}
 The “Handshake” Details and Results
@@ -47,14 +47,14 @@ This stands for “Domain Name System” and it is thought of as the “phone bo
 {% anchor h3 %}
 Authentication
 {% endanchor %}
-The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s whitelabel feature assists with setting up both SPF and DKIM properly.  This assists the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
+The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s whitelabel feature assists with setting up both SPF and DKIM properly. This assists the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
 
 {% anchor h3 %}
 Reputation
 {% endanchor %}
 When reviewing the sending IP and domain, the receiving server will factor in both of the following items:
 
-The reaction of its other recipients to mail sent by that same IP and domain (i.e. marked as spam or not).  
+The reaction of its other recipients to mail sent by that same IP and domain (i.e. marked as spam or not). 
 Where the receiving server previously decided to place any mail from the same IP and domain.
 
 {% info %}
@@ -74,4 +74,4 @@ Reacting to Opinions of the “Guests”
 {% anchor h3 %}
 Feedback for the Guests to Give the Host
 {% endanchor %}
-Within email, there is a function known as a Feedback Loop.  These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
+Within email, there is a function known as a Feedback Loop. These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.

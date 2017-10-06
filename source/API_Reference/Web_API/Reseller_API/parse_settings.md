@@ -17,6 +17,9 @@ Get Current Settings
  {% parameter 'method' 'Yes' 'Must be set to <em>parse</em>' 'Allows you to access parse functionality' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com %}
   {% response json %}

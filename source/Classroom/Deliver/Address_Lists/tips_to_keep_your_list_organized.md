@@ -15,7 +15,7 @@ List segmentation refers to the practice of customizing a larger master address 
 
  
 
-You might like to segment your address list based on the campaigns you are running.  This is a good practice if you are sending a mix of transactional/confirmation, notification, and newsletter emails to your users.  Some of your users may want to opt-out of notifications or newsletters while still receiving more important transactional/confirmation emails.
+You might like to segment your address list based on the campaigns you are running. This is a good practice if you are sending a mix of transactional/confirmation, notification, and newsletter emails to your users. Some of your users may want to opt-out of notifications or newsletters while still receiving more important transactional/confirmation emails.
 
  
 
@@ -25,7 +25,7 @@ Another criteria for list segmentation is segregation by address acquisition tim
 
  
 
-Also, it is wise to segregate these sublists so that each are sending on different IPs.  For example, it is common to set up transactional/confirmation emails on a separate IP than your marketing emails as these are more prone to being responded to as spam or causing the recipient “email fatigue”.  The reason for this is to protect the deliverability of your important emails from the potential harm due to the complaints from your more potentially risky marketing campaigns (or any other type of email that could cause “email fatigue” for the recipient). An old list that you may use for a win back campaign might have a lot of bounces and email addresses that are now invalid. Separating this campaign from your other email with a separate IP protects your other IPs reputation and deliverability.
+Also, it is wise to segregate these sublists so that each are sending on different IPs. For example, it is common to set up transactional/confirmation emails on a separate IP than your marketing emails as these are more prone to being responded to as spam or causing the recipient “email fatigue”. The reason for this is to protect the deliverability of your important emails from the potential harm due to the complaints from your more potentially risky marketing campaigns (or any other type of email that could cause “email fatigue” for the recipient). An old list that you may use for a win back campaign might have a lot of bounces and email addresses that are now invalid. Separating this campaign from your other email with a separate IP protects your other IPs reputation and deliverability.
 
  
 

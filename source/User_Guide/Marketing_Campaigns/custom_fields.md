@@ -22,7 +22,7 @@ To create a new custom field, simply click the “create new field” button at 
 
 ![]({{root_url}}/images/custom_fields_2.png "Add New Custom Field")
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”.  The field type can
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can
 be date, text, or number fields. We ask for the field type so that we can help you make segments from your contact
 database. You will be able to query your list in different ways, based on the data type:
 

@@ -38,7 +38,7 @@ You can then open the actions dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
-When you click Add Version, you will be taken to the editor.  From here, you can change the subject and the body of your email template.
+When you click Add Version, you will be taken to the editor. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
