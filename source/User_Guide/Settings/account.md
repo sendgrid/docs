@@ -1,18 +1,18 @@
 ---
 layout: page
 weight: 0
-title: Account Settings
+title: Account Details
 seo:
-  title: Account Settings
+  title: Account Details
   description: Manage your SendGrid account settings
-  keywords: account settings, profile settings
+  keywords: account settings, profile settings, account details
 navigation:
   show: true
 ---
 
 Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails. Each section of your profile can be edited by clicking the “Edit” button to the right of each section. Once you have made your changes, click the “Save” button. This will only save the settings for that section. If you decide to abandon your changes, click “Cancel.”
 
-To edit your name and email address, click the “Change Contact Info” button to the right. A form will appear which will allow you to change these settings.
+To edit your name and email address, click the “Change Contact Info” button to the right. A form will appear which will allow you to change these details.
 
 **First Name** - This is be the first name of the representative from your company who should receive contacts from SendGrid.
 
