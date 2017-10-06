@@ -44,6 +44,8 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 {% anchor h2 %}
 Create an API Key
 {% endanchor %}
