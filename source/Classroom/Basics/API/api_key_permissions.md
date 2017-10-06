@@ -40,6 +40,8 @@ How can I use API Key permissions?
 General API Keys
 {% endanchor h3 %}
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 To create a new General API Key and assign it permissions, first navigate to your Settings and select API Keys. This page displays your current API Keys. To create a new key, click the Create API Key button and select "General API Key".
 
 ![]({{root_url}}/images/select_general_api_key.png)
