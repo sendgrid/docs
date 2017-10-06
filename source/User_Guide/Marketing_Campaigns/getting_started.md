@@ -19,6 +19,10 @@ Before sending your first campaign, you need to do the following:
 - [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html) 
 - [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional) 
 
+{% info %}
+Please make sure to check your [Account Details](https://sendgrid.com/docs/User_Guide/Settings/account.html) under **Settings** to confirm that your account is set to the proper timezone. This will prevent confusion when scheduling your campaign send.
+{% endinfo %}
+
 *To send your first email:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
