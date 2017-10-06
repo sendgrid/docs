@@ -13,6 +13,8 @@ API Keys allow you to generate an
 API Key credential which can be used for authentication with the
 SendGrid v3 Web API, the [v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), and the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html).
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 # Group API Keys management
 
 ## API Keys collection [/api_keys]
