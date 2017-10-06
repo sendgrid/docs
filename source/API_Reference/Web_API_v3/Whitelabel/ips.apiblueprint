@@ -14,7 +14,7 @@ FORMAT: 1A
 
 # Group IP Whitelabel
 
-A IP whitelabel consists of a subdomain and domain that will be used to generate a reverse DNS record for a given IP.  Once SendGrid
+A IP whitelabel consists of a subdomain and domain that will be used to generate a reverse DNS record for a given IP. Once SendGrid
 has verified that the customer has created the appropriate A record for their IP, SendGrid will create the appropriate reverse DNS record for the IP.
 
 

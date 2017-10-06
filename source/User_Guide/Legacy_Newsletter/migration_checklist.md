@@ -36,7 +36,7 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 &nbsp; &#x274f; Practice by creating a test campaign and sending it to yourself.
 
 {% anchor h3 %}
-2. Choose how you'd like to pay.  
+2. Choose how you'd like to pay. 
 {% endanchor %}
 
 &nbsp; &#x274f; If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can choose how you’d like to pay. You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns.

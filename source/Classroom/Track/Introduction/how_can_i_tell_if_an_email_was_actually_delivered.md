@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-There are a couple of ways to tell if an email was actually delivered. You can search in your [Email Activity](https://sendgrid.com/logs/index) which will display delivered mail for the last 7-10 days. If an email is successfully delivered then you will see a delivered event which when expanded will show a reason code of 250 OK. This means the receiving sever has accepted the message.  
+There are a couple of ways to tell if an email was actually delivered. You can search in your [Email Activity](https://sendgrid.com/logs/index) which will display delivered mail for the last 7-10 days. If an email is successfully delivered then you will see a delivered event which when expanded will show a reason code of 250 OK. This means the receiving sever has accepted the message. 
 
 Email Activity will also show you bounced, deferred and processed messages (click on search options and make sure these are checked). 
 
