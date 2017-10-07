@@ -78,6 +78,17 @@ You may not give an API key greater permissions than you currently have.
 
 After you click the “Save” button, you will be shown your API key. This key will only be shown here, so copy it down! Once you leave this page, you will not be able to see this key again.
 
+## Generate new API keys - without invalidating the old ones
+From [https://app.sendgrid.com/settings/api_keys](https://app.sendgrid.com/settings/api_keys),
+click the blue "Create API Key" button at the top right of the page. See [Generate your new API key](https://sendgrid.com/docs/User_Guide/Settings/api_keys.html#-Create-an-API-Key), for more details.
+
+## Replace an old API key with a new one
+Locate the API key you would like to replace in your list of keys and select the gear icon drop down at the right on the same row, then select "Delete API Key". 
+Next, [generate your new API key.](https://sendgrid.com/docs/User_Guide/Settings/api_keys.html#-Create-an-API-Key)
+
+## Testing an API key
+You can easily test your newly created API key using curl, as outlined at: [basic instructions for how to send emails with our API Keys]({{root_url}}/Classroom/Send/How_Emails_Are_Sent/api_keys.html).
+
 {% anchor h2 %}
 Edit an API Key
 {% endanchor %}
