@@ -16,7 +16,7 @@ A bounce occurs when a sent message is rejected by the receiving mail server. Th
 Bounce Notifications
 {% endanchor %}
 
-If you would like to recieve a notification for each bounce message, you can turn on Bounce Forwarding in your Mail Settings.
+If you would like to receive a notification for each bounce message, you can turn on Bounce Forwarding in your Mail Settings.
 
 {% anchor h2 %}
 Searching Bounces by Date
