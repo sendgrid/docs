@@ -23,5 +23,5 @@ When you place your IP in warmup mode, we divide your email requests between the
 {% warning %}
 We recommend the IP warmup tool only for users that have other warm, dedicated IPs which can accept any overflow email traffic as we gradually increase the volume sent through the warming IP. 
 
-If you do not have other dedicated IPs and are buliding your reputation from scratch, recommend that you follow [this]({{root_url}}/assets/IPWarmupSchedule.pdf) warm up schedule.
+If you do not have other dedicated IPs and are building your reputation from scratch, recommend that you follow [this]({{root_url}}/assets/IPWarmupSchedule.pdf) warm up schedule.
 {% endwarning %}
