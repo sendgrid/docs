@@ -86,7 +86,7 @@ API Key permissions are not permanent and may be changed any time after the key 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
 {% anchor h3 %}
-Adding Additional API Key Permissons Not Listed In the User Interface
+Adding Additional API Key Permissions Not Listed In the User Interface
 {% endanchor h3 %}
 
 As it turns out, the [API Key Permissions List](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) contains more permissions that can be added to your API key than those listed when creating a new API key. Currently, when you create new key in the user interface and give it full access, it excludes additional permissions that can be added via an API call. The best way to see what permissions your API key has is by making [this call](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) using the same API key to make the request.
