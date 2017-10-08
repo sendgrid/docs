@@ -285,7 +285,7 @@ Deferred
       <tr>
          <td>deferred</td>
          <td>Message recipient</td>
-         <td>Full reponse from MTA</td>
+         <td>Full response from MTA</td>
          <td>Delivery attempt #</td>
          <td>The category you assigned</td>
       </tr>
@@ -309,7 +309,7 @@ Delivered
       <tr>
          <td>delivered</td>
          <td>Message recipient</td>
-         <td>Full reponse from MTA</td>
+         <td>Full response from MTA</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
