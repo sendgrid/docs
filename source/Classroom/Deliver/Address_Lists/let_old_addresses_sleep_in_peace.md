@@ -17,7 +17,7 @@ What problems can arise:
 
 - Spam trap hits - Old addresses (or even entire domains) that have been abandoned may be recycled into [spam traps]({{root_url}}/Classroom/Deliver/Undeliverable_Email/spam_trapped.html). Once recycled, spam traps never opt in to receive email. So while an address may have opted in years ago, the spam trap will see your emails as unsolicited, determining that you are sending spam. Play it safe and remove addresses that haven’t engaged with your emails in six months. You don’t want old addresses that are no longer interested in receiving your emails ruin your reputation so that new, engaged addresses don’t get them.   
 
-- Bounces - Old addresses that have been taken out of commision will likely result in a bounce. Receiving mailboxes monitor how many bounces you have on their system and will reject your email if this volume is too high.  
+- Bounces - Old addresses that have been taken out of commission will likely result in a bounce. Receiving mailboxes monitor how many bounces you have on their system and will reject your email if this volume is too high.  
 
 - Spam Complaints - A recipient who is no longer interested in your email (and may not even remember opting in) is much more likely to report your email as spam. What difference is it to the recipient when they are cleaning out their inbox:  reporting as spam or unsubscribing?  They have virtually the same outcome for the recipient and reporting email as spam is often times easier.   
 
