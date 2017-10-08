@@ -62,7 +62,7 @@ Whitelabeling
 
 In order to show the ISPs that you are the sender and that you meant to send these messages, the authentication needs to be properly done.
 
-The sending domain needs to be [whitelabeled]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) (so that the SPF and DKIM pass). We highly recommend whitelabeling all of the links that you include in yoru email - as mentioned above, these links should be on your own domain and they shouldn't be blacklisted.
+The sending domain needs to be [whitelabeled]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) (so that the SPF and DKIM pass). We highly recommend whitelabeling all of the links that you include in your email - as mentioned above, these links should be on your own domain and they shouldn't be blacklisted.
 
 If the above guidelines are met (the sending domain matches the whitelabeled domain; the authentication is properly handled, the content is relevant and not using spam triggering words, and the IP is clean and warmed-up) then your messages should start going to inbox.
 
@@ -78,8 +78,8 @@ This will associate your marketing reputation to the marketing subdomain and you
 Other Resources
 {% endanchor %}
 
-- Check out our [Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) guide to get started with general guidelines on email ettiquite and sending practices.
+- Check out our [Deliverability 101]({{root_url}}/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html) guide to get started with general guidelines on email etiquette and sending practices.
 
-- After reading our Deliverability 101 guide, take a deep dive into advanced email delivery with [Sendgrid's Official Email Deliverability Guide](https://go.sendgrid.com/Deliverability-Guide-V2.html)
+- After reading our Deliverability 101 guide, take a deep dive into advanced email delivery with [SendGrid's Official Email Deliverability Guide](https://go.sendgrid.com/Deliverability-Guide-V2.html)
 
 - If you require personalized delivery assistance, get in touch with our Deliverability Consulting team - [you can reach out to them directly here.](https://sendgrid.com/marketing/delivery-consult)
