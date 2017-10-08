@@ -87,7 +87,17 @@ Locate the API key you would like to replace in your list of keys and select the
 Next, [generate your new API key.](https://sendgrid.com/docs/User_Guide/Settings/api_keys.html#-Create-an-API-Key)
 
 ## Testing an API key
-You can easily test your newly created API key using curl, as outlined at: [basic instructions for how to send emails with our API Keys]({{root_url}}/Classroom/Send/How_Emails_Are_Sent/api_keys.html).
+You can easily test your newly created API key using cURL:
+
+${%codeblock%}
+ curl -i --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header 'Authorization: Bearer YOUR_API_KEY_HERE' \
+  --header 'Content-Type: application/json' \
+  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}'
+{%endcodeblock%}
+
+Look for a **202 Accepted** in the HTTP response headers.
 
 {% anchor h2 %}
 Edit an API Key
