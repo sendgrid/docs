@@ -148,7 +148,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     ![]({{root_url}}/images/universal_links_1.png)
 5. Create a new folder in the bucket called “.well-known”
 
-6. Inside of the ".well-known" folder, uplaod the same "apple-app-site-association" file as in step 2
+6. Inside of the ".well-known" folder, upload the same "apple-app-site-association" file as in step 2
 
 7. As above, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
