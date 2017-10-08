@@ -14,7 +14,7 @@ navigation:
 
 **You have not used your account in the current calendar month** 
 
-Sendgrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead please cancel your account to avoid any future subscription charges.
+SendGrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead please cancel your account to avoid any future subscription charges.
 
 EXAMPLE:
 
