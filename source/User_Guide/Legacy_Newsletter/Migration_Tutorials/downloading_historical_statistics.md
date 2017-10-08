@@ -32,7 +32,7 @@ Here you will find a quick preview of your newsletter engagement and statistics 
 * Opt-Out or Unsubscribe Rate
 * Spam Reports
 
-To save and download statistics for future reference, simply use the checkboxes to select one or more campaigns that you are interested and click **Download CSV**.
+To save and download statistics for future reference, simply use the checkboxes to select one or more campaigns that you are interested in and click **Download CSV**.
 
 For more information about Legacy Newsletter statistics and analytics, click [here]({{root_url}}/User_Guide/Legacy_Features/Marketing_Emails/analytics.html).
 
