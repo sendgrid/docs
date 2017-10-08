@@ -27,4 +27,4 @@ navigation:
 
 When using SMTP, You can send 100 messages per SMTP connection at a time, and open up to 10 concurrent connections from a single server at a time.
 
-For more information on how to integrate with Sendgrid, check out [our Integrate page.](https://sendgrid.com/docs/Integrate/index.html)
+For more information on how to integrate with SendGrid, check out [our Integrate page.](https://sendgrid.com/docs/Integrate/index.html)
