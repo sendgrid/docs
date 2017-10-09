@@ -12,6 +12,9 @@ Retrieve Unsubscribes
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving unsubscribes from' %}

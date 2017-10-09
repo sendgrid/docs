@@ -41,6 +41,15 @@ When writing a message, there is a dropdown beneath the Subject field, where you
 Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail. 
 {% endinfo %}
 
-{% info %}
-Mail sometimes attaches images in a way that is incompatible with other email readers, but this is [correctable](http://micahgilman.com/play/disable-mac-mailapp-inline-image-attachments/). 
-{% endinfo %}
+{% anchor h2 %}
+Attachment Compatibility
+{% endanchor %}
+
+Mail will sometimes attach images in a way that is incompatible with other email readers.  However, this behavior can be be changed so that Mail will send more traditional non-inline attachments.
+
+1. Open Terminal (found in Finder > Applications > Utilities).
+1. In Terminal, paste the following: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes```.
+1. Press return.
+1. Restart the Mail app.
+
+If you wish to restore the normal behavior of Mail, repeat the steps above while using the following commmand: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes```.

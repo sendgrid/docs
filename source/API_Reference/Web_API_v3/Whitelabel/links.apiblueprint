@@ -14,7 +14,7 @@ FORMAT: 1A
 
 # Group Link Whitelabel
 
-A link whitelabel consists of a subdomain and domain that will be used to rewrite links in mail messages.  Our customer will be asked
+A link whitelabel consists of a subdomain and domain that will be used to rewrite links in mail messages. Our customer will be asked
 to create a couple CNAME records for the links to be rewritten to and for us to verify that they are the domain owners.
 
 ## Links Collection [/whitelabel/links]
@@ -195,7 +195,7 @@ You may create up to a maximum of 1500 link whitelabels.
 + Response 204
 
 ## Default Link [/whitelabel/links/default?domain={domain}]
-Default link is the actual link whitelabel to be used when sending messages.  If there are multiple link whitelabels, the default is determined by the following order:
+Default link is the actual link whitelabel to be used when sending messages. If there are multiple link whitelabels, the default is determined by the following order:
 
 <ul>
   <li>Validated link whitelabels marked as "default"</li>
@@ -268,9 +268,9 @@ Default link is the actual link whitelabel to be used when sending messages.  If
 
 ## Associated Link [/whitelabel/links/subuser?username={username}]
 
-Link Whitelabels can be associated with subusers via parent accounts.  This functionality allows
-subusers to send mail off their parent's Whitelabels.  To associate a Whitelabel, the parent account
-must first create a Whitelabel and validate it.  Then the parent may associate the Whitelabel in
+Link Whitelabels can be associated with subusers via parent accounts. This functionality allows
+subusers to send mail off their parent's Whitelabels. To associate a Whitelabel, the parent account
+must first create a Whitelabel and validate it. Then the parent may associate the Whitelabel in
 subuser management.
 
 + Parameters

@@ -13,7 +13,7 @@ navigation:
   show: true
 ---
 
-As it turns out, SendGrid does not offer dedicated IP address reputation monitoring as a service.  We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation. 
+As it turns out, SendGrid does not offer dedicated IP address reputation monitoring as a service. We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation. 
 
 The following are some third party tools available to assist you in maintaining your reputation:
 

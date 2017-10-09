@@ -15,7 +15,7 @@ _07 April, 2014_
 
 Yahoo mail domains have battened down the hatches, so to speak, and are starting to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have seen an increase in bounce messages with the following explanation:
 
-**"554 5.7.9 Message not accepted for policy reasons.  See http://postmaster.yahoo.com/errors/postmaster-28.html"  **
+**"554 5.7.9 Message not accepted for policy reasons. See http://postmaster.yahoo.com/errors/postmaster-28.html"  **
 
 This is because Yahoo no longer accepts messages where the From domain is a Yahoo mail domain, and the message originates from a non-approved Yahoo mail domain server/service. This is a security measure they have implemented to help reduce potential address spoofing of their mail domains. 
 

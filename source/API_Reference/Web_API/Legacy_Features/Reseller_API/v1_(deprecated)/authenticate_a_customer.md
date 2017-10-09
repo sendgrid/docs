@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html) Reseller Authenticate a Customer page.   
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html) Reseller Authenticate a Customer page.  
 {% endwarning %}
 
 

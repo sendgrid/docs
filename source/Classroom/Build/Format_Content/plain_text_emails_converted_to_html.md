@@ -29,7 +29,7 @@ The following filters convert plain text emails to HTML so the proper HTML tags 
 **How can I control the resulting conversion (see update below)**
 
 1. You can turn off the filters causing the conversion from plain text to HTML.
-2. If you start each line with a space, this will add a "preformatted" <pre> tag around the line.
+2. If you start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
 3. You can separate new sentences with double newlines, which will add a "paragraph" <p> tag around the sentence.
 4. You can convert your message to HTML, bypassing our need to convert it altogether
 

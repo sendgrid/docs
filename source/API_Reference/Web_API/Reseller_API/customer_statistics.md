@@ -24,6 +24,10 @@ Note that you can use *either* the days parameter *or* the `start_date` and `end
 
 To retrive statistics for the Marketing Emails application you can use [Category Statistics](#-Category-Statistics) with `category=Newsletter` parameter.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
   {% response json %}
 [

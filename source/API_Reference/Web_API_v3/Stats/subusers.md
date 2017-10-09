@@ -12,7 +12,7 @@ Subuser Stats provide all of your user's email statistics for your subuser accou
 GET
 {% endanchor %}
 
-Gets email statistics for the given subusers.  You can add up to 10 `subusers` parameters, one for each subuser you want stats for.
+Gets email statistics for the given subusers. You can add up to 10 `subusers` parameters, one for each subuser you want stats for.
 
 {% parameters get %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
