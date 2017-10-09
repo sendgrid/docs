@@ -9,9 +9,13 @@ navigation:
   show: true
 ---
 
-Laravel provides a clean API over the popular SwiftMailer library with drivers for SMTP, PHP's `mail`, `sendmail` and more. For this example we'll be sending an email with SendGrid using the SMTP Driver. For more information, check out the docs for [Laravel's Mail interface](http://laravel.com/docs/mail).
+Laravel provides a clean API over the popular SwiftMailer library with drivers for SMTP, PHP's `mail`, `sendmail` and more. For this example, we'll be sending an email with SendGrid using the SMTP Driver. For more information, check out the docs for [Laravel's Mail interface](http://laravel.com/docs/mail).
 
-In Laravel 5.5 LTS, Mailable classes are used. Mailables in Laravel abstracts building emails with a mailable class. Basically, mailables are responsible for collating data and passing them to views.
+Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building emails with a mailable class. Mailables are responsible for collating data and passing them to views.
+
+{% anchor h2 %}
+Before you begin
+{% endanchor %}
 
 In `.env` you need to find and configure these variables: 
 
@@ -30,9 +34,12 @@ MAIL_FROM_ADDRESS=from@example.com
 The `MAIL_FROM_NAME` field requires double quotes because there is a space in the string.
 {% endinfo %}
 
-## Creating a Mailable
+{% anchor h2 %}
+Creating a Mailable
+{% endanchor %}
 
-Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat. Open CLI, go to the project directory and type:
+Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat.
+Open CLI, go to the project directory and type:
 
 `php artisan make:mail TestEmail`
 
@@ -76,7 +83,7 @@ class TestEmail extends Mailable
 }
 {% endcodeblock %}
 
-In Laravel `Views` are used as 'templates' if you will when sending an email. Let's create a file under `app/resources/views/emails/test.blade.php` and insert this code:
+In Laravel `Views` are used as 'templates' when sending an email. Let's create a file under `app/resources/views/emails/test.blade.php` and insert this code:
 
 {% codeblock lang:html %}
 <!DOCTYPE html>
@@ -91,9 +98,11 @@ In Laravel `Views` are used as 'templates' if you will when sending an email. Le
     </html>
 {% endcodeblock %}
 
-## Sending an email
+{% anchor h2 %}
+Sending an email
+{% endanchor %}
 
-Now that we have our Mailable Class created all we need to do is run this code:
+Now that we have our Mailable Class created, all we need to do is run this code:
 
 {% codeblock lang:php %}
 <?php
@@ -104,13 +113,15 @@ Now that we have our Mailable Class created all we need to do is run this code:
     Mail::to('john@example.com')->send(new TestEmail($data));
 {% endcodeblock %}
 
-## Adding a category or custom field
+{% anchor h2 %}
+Adding a category or custom field
+{% endanchor %}
 
-Categories in sendgrid allow you to split your statistics into categories. An example would be if you have a white labeled service you can split your statistics by the user login.
+Categories in SendGrid allow you to split your statistics into sections. For example, if you have a Whitelabeled service, you can split your statistics by the user login.
 
-Another useful feature of sendgrid is the notifications. If you want to complete the feedback loop for your product you can pass identifiers as a header which relate to a record in your database which you can then parse the notifications against that record to track deliveries/opens/clicks/bounces.
+Another useful tool is event notifications. If you want to complete the feedback loop for your product you can pass identifiers as a header which relate to a record in your database which you can then parse the notifications against that record to track deliveries/opens/clicks/bounces.
 
-The `withSwiftMessage` method of the `Mailable` base class allows you to register a callback which will be invoked with the raw SwiftMailer message instance before sending the message. This gives you an opportunity to customize the message before it is delivered:
+The `withSwiftMessage` method of the `Mailable` base class allows you to register the callback that is invoked with the raw SwiftMailer message instance before sending the message. This knowledge allows you to customize the message before delivery. To customize your message, use something similar to this:
 
 {% codeblock lang:php %}
 <?php
