@@ -107,6 +107,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/reserved_fields.html">Reserved Fields</a>
         <a href="{{root_url}}/Glossary/scheduled_emails.html">Scheduled Emails</a>
         <a href="{{root_url}}/Glossary/segments.html">Segments</a>
+        <a href="{{root_url}}/Glossary/sends.html">Sends</a>
         <a href="{{root_url}}/Glossary/smtp_api.html">SMTP API</a>
         <a href="{{root_url}}/Glossary/smtp_provider.html">SMTP Provider</a>
         <a href="{{root_url}}/Glossary/smtp_relay.html">SMTP Relay</a>
