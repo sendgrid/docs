@@ -47,7 +47,7 @@ This describes the plan you subscribe to and the total charge for usage in the p
 
 Additional IPs cost $30.00 per IP/per month for Pro 100k plans and above.
 
-For more information on Sendgrid Plans, visit our [pricing page](https://sendgrid.com/pricing). 
+For more information on SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing). 
 
  
 
