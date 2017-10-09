@@ -116,7 +116,6 @@ Java
 JavaScript / Node.js
 {% endanchor %}
 
--   [node-sendgrid-web](http://github.com/jesusabdullah/node-sendgrid-web) *by Joshua Holbrook* - Send emails via SendGrid using the JSON web API and the request module.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
 
