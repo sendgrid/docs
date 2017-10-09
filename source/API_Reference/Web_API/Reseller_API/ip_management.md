@@ -19,6 +19,9 @@ View all IPs under your account.
  {% parameter 'system' 'No' 'Must be set to <em>true</em> .' 'Include IPs assigned by SendGrid.' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
   {% response json %}

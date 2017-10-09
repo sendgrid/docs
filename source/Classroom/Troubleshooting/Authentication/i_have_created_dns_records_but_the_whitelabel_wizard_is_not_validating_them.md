@@ -19,7 +19,7 @@ A common hurdle that many users encounter during the whitelabel process is that 
 Allow Your DNS Records to Propagate
 {% endanchor %}
 
-9 times out of 10, this validation issue can be solved with a judicious application of time.  DNS records must take time to propagate throughout the internet before we can detect if they exist, and are indeed correct.
+9 times out of 10, this validation issue can be solved with a judicious application of time. DNS records must take time to propagate throughout the internet before we can detect if they exist, and are indeed correct.
 
 Propagation can take anywhere from a few hours to a few days, depending on your DNS host. We've found that popular hosts such as Godaddy and DNSMadeEasy will typically take around an hour or so to propagate new records out to where we can detect them.
 

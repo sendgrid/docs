@@ -471,10 +471,10 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_t
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
 Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
-Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/categories.html
+Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Statistics/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html

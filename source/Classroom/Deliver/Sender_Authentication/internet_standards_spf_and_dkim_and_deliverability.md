@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-For standards like SPF and DKIM / DomainKeys, whether they improve deliverability or bypass filters is entirely at the discretion of the validating receivers. It is expected that messages from a sender with a good reputation would be subject to less scrutiny by the receiver's filters. [1] In other words, omitting these standards usually doesn't hurt, but providing them can only help deliverability.  
+For standards like SPF and DKIM / DomainKeys, whether they improve deliverability or bypass filters is entirely at the discretion of the validating receivers. It is expected that messages from a sender with a good reputation would be subject to less scrutiny by the receiver's filters. [1] In other words, omitting these standards usually doesn't hurt, but providing them can only help deliverability. 
 
 Some other things to consider:
 

@@ -23,6 +23,9 @@ Return an array of invoice numbers to your account.
  {% parameter 'status' 'No' 'Must be either paid, unpaid, refunded, deferred, canceled. This is used to specify what kind of invoice you would like returned.' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample get POST https://api.sendgrid.com/api/billing.list api_user=your_sendgrid_username&api_key=your_sendgrid_password&status=pai %}
   {% response json %}

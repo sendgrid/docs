@@ -26,7 +26,7 @@ I'm glad you asked. We've recently updated the infrastructure that handles the a
 What's wrong with my IPs?
 {% endanchor %}
 
-Nothing! This is simply due to the fact that most of the time we are sending mail much faster than most ISPs can accept it. Rather than turning the fire hose on full-blast, we create one of these deferral events to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast is a great way to get on an ISP's naughty list.  
+Nothing! This is simply due to the fact that most of the time we are sending mail much faster than most ISPs can accept it. Rather than turning the fire hose on full-blast, we create one of these deferral events to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast is a great way to get on an ISP's naughty list. 
 
 We spend a lot of time tuning the rate of delivery on an ISP by ISP basis, and these deferral events are simply proof that this system is working for you to keep ISPs happy with your throughput, regardless of your sending habits.
 

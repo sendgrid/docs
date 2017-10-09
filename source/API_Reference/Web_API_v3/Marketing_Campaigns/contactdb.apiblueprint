@@ -817,7 +817,7 @@ You can search for up to 15 different conditions per request.
 </p>
 
 {% info %}
-The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-POST), with the addition of requiring a unique name.  (POST search with conditions is described above.)
+The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-POST), with the addition of requiring a unique name. (POST search with conditions is described above.)
 {% endinfo %}
 
 ## Segments [/contactdb/segments]

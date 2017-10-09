@@ -33,7 +33,7 @@ Log into your SendGrid account, click on **Settings** from the left menu → Sel
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-You can snag a prebuilt URL in Keen’s UI or make your own.  
+You can snag a prebuilt URL in Keen’s UI or make your own. 
 
 In the Keen IO settings, select the events you want to post to Keen IO. To do this, under **Select Actions**, check **All**.
 

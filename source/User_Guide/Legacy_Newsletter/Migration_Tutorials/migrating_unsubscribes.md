@@ -57,7 +57,7 @@ To create this new unsubscribe group, click your account name in the upper right
 
 Under **Suppressions** in the left hand nav bar, click **Unsubscribe Groups**.
 
-This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.    
+This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.   
 
 In our example, the name would be "Weekly Newsletter" and the description might be "Weekly summary of the week's top posts."
 

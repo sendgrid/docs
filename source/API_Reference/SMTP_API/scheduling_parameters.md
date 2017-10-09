@@ -15,7 +15,7 @@ Using the parameters defined below, you can queue batches of emails targeting in
 
 This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release
 them when the timestamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time**
-performance.  This functionality:
+performance. This functionality:
 
 * Improves efficiency of processing and distributing large volumes of email.
 * Reduces email pre-processing time.

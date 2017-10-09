@@ -16,15 +16,15 @@ IIS 7.5 Configuration
 
 Before you get going, you'll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.
 
-1.  Open IIS 7.0/7.5 Manager in Windows
-2.  Click on your site (see image below, noting that your configuration will look different), and the main configuration options page will be displayed to the right
-3.  Double-click on the "SMTP E-mail" under the ASP.NET section (to get the below screen)
-4.  In the email address field: type the email address that will be the "sender"
-5.  Click on the "Deliver e-mail to SMTP server" radio button if not already enabled
-6.  In the SMTP Server field: type localhost
-7.  In the Port field: type 25
-8.  In Authentication Settings click the "Not required" option.
-9.  On the right side "Actions" pane: click Apply
+1. Open IIS 7.0/7.5 Manager in Windows
+2. Click on your site (see image below, noting that your configuration will look different), and the main configuration options page will be displayed to the right
+3. Double-click on the "SMTP E-mail" under the ASP.NET section (to get the below screen)
+4. In the email address field: type the email address that will be the "sender"
+5. Click on the "Deliver e-mail to SMTP server" radio button if not already enabled
+6. In the SMTP Server field: type localhost
+7. In the Port field: type 25
+8. In Authentication Settings click the "Not required" option.
+9. On the right side "Actions" pane: click Apply
 
 <center>
 
@@ -40,13 +40,13 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 Enable SMTP Service: 
 {% endanchor %}
 
-1.  Go to Start \> All Programs \> Administrative Tools \> Server Manager
-2.  Click on the Features item in the navigation pane
-3.  Click the Add Features link to start the wizard
-4.  Scroll down the list to the SMTP Server, and check the box. The Required Role Services dialog will appear, listing all of the dependencies that the SMTP server depends on to operate. Click Add Require Role Services.
-5.  Click Next twice
-6.  Review the list of available IIS Role Services and check any that you would like to add
-7.  Click Next then click Install
+1. Go to Start \> All Programs \> Administrative Tools \> Server Manager
+2. Click on the Features item in the navigation pane
+3. Click the Add Features link to start the wizard
+4. Scroll down the list to the SMTP Server, and check the box. The Required Role Services dialog will appear, listing all of the dependencies that the SMTP server depends on to operate. Click Add Require Role Services.
+5. Click Next twice
+6. Review the list of available IIS Role Services and check any that you would like to add
+7. Click Next then click Install
 
 Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.
 
@@ -54,15 +54,15 @@ Once the SMTP Server service is installed, the IIS 6.0 virtual server technology
 Configure IIS 6.0 to Relay Outbound Email to SendGrid 
 {% endanchor %}
 
-1.  Go to Start \> All Programs \> Administrative Tools \> IIS 6.0 Manager
-2.  Right click on the SMTP Virtual Server \#1 and select the Properties option
-3.  Click the box to enable logging section to assist you in configuring the server
-4.  Click on Properties and check the box to activate Use Local Time For File Naming And Rollover option
-5.  Click on the Advanced tab and check the following items: Date, Time, Client IP Address, User Name, Service Name, Server Name, Server IP Address, Server Port, Method, Protocol Status, Bytes Sent, Protocol Version, and Host.
-6.  Click OK
-7.  Click on the Access tab the click the Relay button in the Relay Restrictions section
-8.  Click Add, enter 127.0.0.1, and click OK. The IP will appear in the list with Access Granted
-9.  Click OK Only The List Below radio button and enter 127.0.0.1 in the IP address field.
+1. Go to Start \> All Programs \> Administrative Tools \> IIS 6.0 Manager
+2. Right click on the SMTP Virtual Server \#1 and select the Properties option
+3. Click the box to enable logging section to assist you in configuring the server
+4. Click on Properties and check the box to activate Use Local Time For File Naming And Rollover option
+5. Click on the Advanced tab and check the following items: Date, Time, Client IP Address, User Name, Service Name, Server Name, Server IP Address, Server Port, Method, Protocol Status, Bytes Sent, Protocol Version, and Host.
+6. Click OK
+7. Click on the Access tab the click the Relay button in the Relay Restrictions section
+8. Click Add, enter 127.0.0.1, and click OK. The IP will appear in the list with Access Granted
+9. Click OK Only The List Below radio button and enter 127.0.0.1 in the IP address field.
 10. Click on OK to return to the Access tab as shown in the previous screenshots.
 11. Select the Delivery tab and click the Outbound Security button
 12. Click on Basic Authentication where the Username will be your SendGrid.com username and the password will be your SendGrid.com password
