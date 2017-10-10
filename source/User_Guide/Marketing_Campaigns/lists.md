@@ -78,7 +78,7 @@ Remove Contacts From a List
 Click on the name of your list to view all the contacts on the list. Check the box next to the contacts you would like to remove. You will notice that a button at the top right corner will keep track of how many contacts you have selected. Click the button with the selected count and choose the option “Remove from this list” to take these contacts off the list.
 
 {% info %}
-Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the customer portal without re-adding the contacts manually or via a CSV.
+Choosing “Delete” will permanently remove the contacts from your contact database. You cannot roll back this change through the UI without re-adding the contacts manually or via a CSV.
 {% endinfo %}
 
 If you would like to remove these contacts from your contact database, you can do that by selecting “Delete”.
@@ -92,6 +92,8 @@ Create a Segment
 
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
 includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
+
+The fields `Date Added` and `Last Updated` are system generated. `Date Added` refers to the date the contact record was first created on your account. `Last Updated` refers to the date the contact was last updated. This could have been any of the following: a manual field update, an import that updated several qualities of this record or an API call that automatically updated this record.
 
 {% info %}
 You can create up to 400 segments.
@@ -108,6 +110,8 @@ example, a field that is a “number” will show greater than, less than, and e
 show `IS` and `IS NOT` as options. As you add conditions you
 will be able to select `AND` or `OR` as options, where `AND` indicates
 both conditions are required and `OR` indicates either condition will work.
+
+
 
 {% info %}
 You can add up to 15 different conditions per segment.

@@ -50,7 +50,7 @@ Our Support agents may sometimes ask you to give us the raw source or headers of
 
 **Yahoo:**
 
-Sadly, Yahoo does not offer an option in their web tool to view the headers from received messages. 
+Look for the option called "View Raw Message" under the More menu (displayed as 3 dots).
 
  
 

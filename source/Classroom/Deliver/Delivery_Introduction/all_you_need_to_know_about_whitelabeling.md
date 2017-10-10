@@ -25,7 +25,7 @@ These records all work in tandem in order to remove SendGrid as the message sign
 **The Records**  
 To complete the whitelabeling process, you will need to create DNS records within your domain's DNS settings.
 
-# **1.  [SPF Record](http://en.wikipedia.org/wiki/Sender_Policy_Framework) (Sender Policy Framework)**
+# **1. [SPF Record](http://en.wikipedia.org/wiki/Sender_Policy_Framework) (Sender Policy Framework)**
 
 What it should look like:
 

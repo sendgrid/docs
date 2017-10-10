@@ -7,6 +7,10 @@ navigation:
 ---
 {% github sendgrid/sendgrid-java#usage Java %} We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation. {% endgithub %}
 
+{% info %}
+The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in Java](https://github.com/sendgrid/sendgrid-java/blob/master/TROUBLESHOOTING.md#v2).
+{% endinfo %}
+
 {% anchor h2 %} Using SendGrid's Java Library {% endanchor %}
 {% codeblock lang:java %}
 // using SendGrid's Java Library

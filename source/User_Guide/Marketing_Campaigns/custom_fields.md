@@ -22,7 +22,7 @@ To create a new custom field, simply click the “create new field” button at 
 
 ![]({{root_url}}/images/custom_fields_2.png "Add New Custom Field")
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”.  The field type can
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can
 be date, text, or number fields. We ask for the field type so that we can help you make segments from your contact
 database. You will be able to query your list in different ways, based on the data type:
 
@@ -35,7 +35,11 @@ You can create up to 20 custom fields for each data type: date, text, and number
 {% endinfo %}
 
 {% warning %}
-Text custom fields are limited to a length of 32,766 characters.
+Text custom fields are limited to a size of 32,766 bytes.
+{% endwarning %}
+
+{% warning %}
+Number custom fields are limited to 309 digits.
 {% endwarning %}
 
 ![]({{root_url}}/images/custom_fields_1.png "Default Custom Fields")

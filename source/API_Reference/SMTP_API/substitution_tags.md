@@ -20,7 +20,11 @@ navigation:
 {% endcodeblock %}
 
 {% info %}
-Substitution tags will work in the Subject line as well as the body of the email. 
+Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). 
+{% endinfo %}
+
+{% info %}
+Substitutions are limited to 10000 bytes per personalization block.
 {% endinfo %}
 
 {% info %}
@@ -29,6 +33,10 @@ How you format your substitution tags may depend on the library you use to creat
 
 {% warning %}
 Do not use spaces inside your substitution tags, e.g. %first name%
+{% endwarning %}
+
+{% warning %}
+Do not nest substitution tags in substitions as they will fail and your substitution will not take place.
 {% endwarning %}
 
 {% anchor h2%}

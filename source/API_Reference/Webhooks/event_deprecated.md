@@ -141,7 +141,7 @@ email=emailrecipient@domain.com&amp;event=open&amp;userid=1123&amp;template=welc
 Categories
 
 {% endanchor %}
-<p>If a <a href="{{root_url}}/User_Guide/Delivery_Metrics/categories.html">category</a> is used over the SMTP API to get detailed statistics for <em>user signups</em> in addition to custom parameter, include the following in your SMTP headers as X-SMTPAPI or as the xsmtpapi parameter of your Web API call:</p>
+<p>If a <a href="{{root_url}}/User_Guide/Statistics/categories.html">category</a> is used over the SMTP API to get detailed statistics for <em>user signups</em> in addition to custom parameter, include the following in your SMTP headers as X-SMTPAPI or as the xsmtpapi parameter of your Web API call:</p>
 
 {% codeblock lang:json %}
 {

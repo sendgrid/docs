@@ -8,12 +8,18 @@ title: Downloading Historical Statistics
 navigation:
   show: true
 ---
+{% warning %}
+Legacy Newsletter is now retired.
+As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
+{% endwarning %}
+
+For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
 Begin by navigating to your Legacy Newsletter dashboard.
 
 Go to **Marketing Email** and click **Manage** to view the statistics for your newsletters.
 
-Here you will find a quick preview of your newsletter engagement and delivery metrics such as:
+Here you will find a quick preview of your newsletter engagement and statistics such as:
 
 * Sent
 * Opens
