@@ -77,8 +77,7 @@ Event POST Example
     "url":"https://sendgrid.com",
     "sg_message_id":"sendgrid_internal_message_id",
     "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
-    "event":"click",
-    
+    "event":"click"
   },
   {
     "ip": "X.XX.XXX.XX",
