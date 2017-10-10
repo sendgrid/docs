@@ -72,20 +72,20 @@ Event POST Example
   {
     "email":"john.doe@sendgrid.com",
     "timestamp": 1337966815,
-    "ip":"X.XX.XXX.XX"
+    "ip":"X.XX.XXX.XX",
     "sg_event_id":"sendgrid_internal_event_id",
-    "url":"https://sendgrid.com"
+    "url":"https://sendgrid.com",
     "sg_message_id":"sendgrid_internal_message_id",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
     "event":"click",
     
   },
   {
-    "ip": "X.XX.XXX.XX"
-    "sg_user_id": XXXXXX
+    "ip": "X.XX.XXX.XX",
+    "sg_user_id": 123,
     "sg_event_id":"sendgrid_internal_event_id",
     "sg_message_id":"sendgrid_internal_message_id",
-    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
     "event": "group_unsubscribe",
     "email": "john.doe@sendgrid.com",
     "timestamp": 1337969592,
