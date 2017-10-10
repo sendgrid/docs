@@ -24,7 +24,7 @@ The configuration of a new send connector is straight forward. It is the associa
 4. Click on **New Send Connector** in the Actions sidebar.
 5. Name the Send Connector whatever you like and select Internet for the Intended Use pull-down. This allows for the integration with an authenticated SmartHost and adds the default send permissions required by Exchange 2010 to route messages through an external host that is not a part of the domain forest.
 6. Click **Next**.
-7. Click Add and specify the allowed address space to which the connector can send messages. If you want to send to anyone on the internet, then you would insert an "\*" in the Address field. If you want to send only to a specific domain, enter that domain. If you want to allow all sub-domains you can check the box, but I prefer to notate that literally like so: \*.SAMPLEDOMAIN.COM. Insert a high cost (100 is the top, so choose wisely) so that the connector is not used inadvertantly.
+7. Click Add and specify the allowed address space to which the connector can send messages. If you want to send to anyone on the internet, then you would insert an "\*" in the Address field. If you want to send only to a specific domain, enter that domain. If you want to allow all sub-domains you can check the box, but I prefer to notate that literally like so: \*.SAMPLEDOMAIN.COM. Insert a high cost (100 is the top, so choose wisely) so that the connector is not used inadvertently.
 8. Click **Next**.
 9. On the Network Settings page, select the **Route mail through the following smart hosts** item.
 10. Click **Add**.
