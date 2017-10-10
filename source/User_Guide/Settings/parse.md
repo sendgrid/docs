@@ -26,7 +26,7 @@ The Inbound Parse Webhook requires a hostname, where the emails will be sent, an
 
 **Host Name** - The domain where you have pointed an MX Record so addresses at this hostname can receive email. For example: parse.yourdomain.com
 
-When entering your host name (also referred to as the receiving domain), the subdomain-domain combination must be globally unique, and the domain must be one of your whitelabled domains.
+When entering your host name (also referred to as the receiving domain), the subdomain-domain combination must be globally unique, and the domain must be one of your whitelabeled domains.
 
 **URL** - The URL for the Inbound Parse Webhook to POST all parsed email information.
 
