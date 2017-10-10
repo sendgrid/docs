@@ -44,14 +44,14 @@ You will be shown a window containing a list of all of your IP addresses, the ac
 ![]({{root_url}}/images/ip_whitelabel_setup_2.png)
 
 {% info %}
-An IP address can only be whitelabled to a single domain. However, you can whitelable multiple IP addresses to the same domain or different domains depending on your sending needs.
+An IP address can only be whitelabeled to a single domain. However, you can whitelabel multiple IP addresses to the same domain or different domains depending on your sending needs.
 {% endinfo %}
 
 **(6)** Once you have entered the subdomain and selected the domain, click **Save**.
 
 **(7)** Click **Confirm** in the validation notification that appears.
 
-**(8)** You should be taken to the IP validation page where you can review the IP address being whitelabled, the user that this IP whitelabel will be assigned to, the updated rDNS information, and the A record that you will need to give your DNS provider.
+**(8)** You should be taken to the IP validation page where you can review the IP address being whitelabeled, the user that this IP whitelabel will be assigned to, the updated rDNS information, and the A record that you will need to give your DNS provider.
 
 ![]({{root_url}}/images/ip_whitelabel_setup_3.png)
 

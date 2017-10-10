@@ -5,7 +5,7 @@ st:
 seo:
   title: Why am I seeing “Credential Resource Already Exists” when I am creating a subuser or credential?
   description: Having trouble creating a username...
-  keywords: username, crendential, subuser, exists, resource
+  keywords: username, credential, subuser, exists, resource
 title: Why am I seeing “Credential Resource Already Exists” when I am creating a subuser or credential?
 weight: 0
 layout: page
