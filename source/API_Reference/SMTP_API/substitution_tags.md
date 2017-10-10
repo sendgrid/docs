@@ -36,7 +36,7 @@ Do not use spaces inside your substitution tags, e.g. %first name%
 {% endwarning %}
 
 {% warning %}
-Do not nest substitution tags in substitions as they will fail and your substitution will not take place.
+Do not nest substitution tags in substitutions as they will fail and your substitution will not take place.
 {% endwarning %}
 
 {% anchor h2%}
