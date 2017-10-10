@@ -2,7 +2,7 @@
 seo:
   title: ISP-Suggested Max Connection Limit
   description: Deferral event due to reaching a max connection limit.
-  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connetion, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
+  keywords: throttled, event, connection, limit, delivered, no, delay, throttle, processed, IPS, available, per-domain, connection, IPs were throttled by recipient server, IPs reached ISP-suggested hourly limits, IPs reached ISP-suggested max connection limits http://send.gd/1uKnEBh, suggested, hourly, max, limits
 title: ISP-Suggested Max Connection Limit
 weight: 0
 layout: page
