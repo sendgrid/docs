@@ -31,7 +31,7 @@ database. You will be able to query your list in different ways, based on the da
 * **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% info %}
-You can create up to 20 custom fields for each data type: date, text, and number.
+You can create up to 120 custom fields in any combination of date, text, and number.
 {% endinfo %}
 
 {% warning %}
@@ -54,4 +54,3 @@ Deleting this custom field will delete all values for that field across your con
 
 If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
 the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will be removed as well.
-
