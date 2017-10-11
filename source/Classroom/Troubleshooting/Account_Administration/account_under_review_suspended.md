@@ -20,7 +20,9 @@ Warned
 {% endanchor %}
 The account maintains full sending functionality during a warning period. However, if we do not receive a response your account may be suspended to prevent further risk to your sending reputation. Warned accounts will be unable to upgrade their usage plan, or create new sub-users until the review has concluded to our satisfaction.
 
+{% anchor h2 %}
 Suspended
+{% endanchor %}
 SendGrid will accept and queue mail while the account is under review. Mail will be held until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from send will expire and will not be delivered. Mail that has already been Delivered will still be functional, including open and click tracking, as well as links redirecting properly. 
 
 Please be aware that an account in a suspended state will continue to incur auto-renewal billing for your monthly subscription and any Marketing Campaigns contact storage.
