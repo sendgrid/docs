@@ -10,6 +10,10 @@ Receive a sample of an outgoing message by a specific customer.
 
 The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer. Multiple customer can be appended to a single monitor record.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 * * * * *
 
 {% anchor h2 %}

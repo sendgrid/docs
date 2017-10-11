@@ -13,7 +13,7 @@ navigation:
 
 ![]({{root_url}}/images/bounces.gif)
 
-This is a “Drop” event which occurs when a message to an address has previously Bounced.   
+This is a “Drop” event which occurs when a message to an address has previously Bounced.  
 
 You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error reason code. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
 

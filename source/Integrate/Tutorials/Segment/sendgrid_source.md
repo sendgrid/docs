@@ -44,7 +44,7 @@ SendGrid has a single Event URL location. By using the SendGrid source, you will
 
 SendGrid has a sync component, which means we’ll make requests to their API on your behalf on a 3 hour interval to pull the latest data into Segment. In the initial sync, we’ll grab all the SendGrid objects (and their corresponding properties) according to the [Collections Table]() below. SendGrid objects will be written into a separate schema, corresponding to the source instance’s schema name you designated upon creation.
 
-Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid.  For example,  if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be  `200`. 
+Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid. For example,  if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be  `200`. 
 
 
 ### Streaming

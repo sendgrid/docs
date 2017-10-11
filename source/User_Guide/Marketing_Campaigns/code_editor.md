@@ -22,7 +22,7 @@ Use the Code Editor to create a template, edit a SendGrid template, or build a c
 Getting Started with the Code Editor
 {% endanchor h2 %}
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.  
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
 
 1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
 
@@ -32,7 +32,7 @@ Getting Started with the Code Editor
 
 1. Select **Code Editor**, and then click **Continue**.
 
-    If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.       The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
+    If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.      The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
 1. Preview your campaign or template by clicking **Preview**.
 
@@ -46,11 +46,11 @@ Once you create a new campaign or template in the Code Editor, you cannot switch
 Uploading Images
 {% endanchor h2 %}
 
-1. Select the **Images** tab, and click **Manage Image Library**. A window opens where you can upload images to your image library.  
+1. Select the **Images** tab, and click **Manage Image Library**. A window opens where you can upload images to your image library. 
 
-1. Select the image you want from your image library. The Image Details tab appears.  
+1. Select the image you want from your image library. The Image Details tab appears. 
 
-1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**.  
+1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**. 
 
 1. Paste this URL in the image source tag in your campaign or template's HTML. For example: `<img src="your image URL here">`
 
@@ -62,7 +62,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 **To add a substitution tag to your campaign:**
 
-1. Navigate to the **Tags** tab.  
+1. Navigate to the **Tags** tab. 
 
 1. Locate the tag you want to add to your campaign and click the **copy** icon.
 
