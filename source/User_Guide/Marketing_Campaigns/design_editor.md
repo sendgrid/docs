@@ -123,7 +123,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Unsubscribe</td>
-    <td>Allows you to insert preset Sender information and unsubscribe links into your email. SendGrid recommends using this module to remain CAN-SPAM compliant.</td>
+    <td>This module is pre-populated with your sender information and unsubscribe links which are required in order to be compliant with anti-spam laws.</td>
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
@@ -276,7 +276,7 @@ You can add the following substitution tags to your marketing campaign:
    <td>Weblink</td>
  </tr>
 </table>
-*For your convenience, these subsitution tags have been added to an Unsubscribe Module available in the Design Editor.
+*For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor. 
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 

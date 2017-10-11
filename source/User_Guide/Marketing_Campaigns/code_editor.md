@@ -126,7 +126,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Weblink</td>
  </tr>
 </table>
-*For your convenience, these subsitution tags have been added to an Unsubscribe Module available in the Design Editor.
+*For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor. 
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
