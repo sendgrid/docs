@@ -9,7 +9,7 @@ seo:
 navigation:
   show: true
 ---
-![]({{root_url}}/images/release_notes.png "release notes") 
+![]({{root_url}}/images/release_notes.png "release notes")
 
 The following new features and changes to the service are available.
 
