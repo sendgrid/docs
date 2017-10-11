@@ -11,6 +11,17 @@ navigation:
 ---
 The following new features and changes to the service are available.
 
+{% anchor h2 %} 
+DATE October 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Custom field update
+{% endanchor %}
+
+The limit of custom fields you can create has been increased to 120. This limit can be applied to any type of data contained in a contacts list including numbers, text, or dates. 
+
+
 {% anchor h2 %}
 2 October 2017
 {% endanchor %}
