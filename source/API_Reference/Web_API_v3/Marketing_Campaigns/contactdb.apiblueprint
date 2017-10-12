@@ -694,6 +694,10 @@ Search with conditions [POST]
   Field values must all be a string.
 </p>
 
+{% info %}
+You can search for up to 15 different conditions per request.
+{% endinfo %}
+
 <p>
   Search conditions using "eq" or "ne" for email clicks and opens should provide a "field" of either <code>clicks.campaign_identifier</code> or <code>opens.campaign_identifier</code>.
   The condition value should be a string containing the id of a completed campaign.
@@ -703,6 +707,7 @@ Search with conditions [POST]
   Search conditions list may contain multiple conditions, joined by an "and" or "or" in the "and_or" field.
   The first condition in the conditions list must have an empty "and_or", and subsequent conditions must all specify an "and_or".
 </p>
+
 
 + Request
 
@@ -812,7 +817,7 @@ Search with conditions [POST]
 </p>
 
 {% info %}
-The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-POST), with the addition of requiring a unique name.  (POST search with conditions is described above.)
+The JSON accepted by this endpoint is identical to that of the [POST search with conditions](#-Search-with-conditions-POST), with the addition of requiring a unique name. (POST search with conditions is described above.)
 {% endinfo %}
 
 ## Segments [/contactdb/segments]
@@ -841,6 +846,10 @@ The JSON accepted by this endpoint is identical to that of the [POST search with
             {"id":1,"name":"Last Name Miller","list_id":4,"conditions":[{"field":"last_name", "value":"Miller", "operator":"eq", "and_or":""},{"field":"last_clicked", "value":"01/02/2015", "operator": "gt", "and_or": "and"},{"field": "clicks.campaign_identifier", "value": "513", "operator": "eq", "and_or": "or"}], "recipient_count":0}
 
 {% warning %}The response of the initial `POST` will return a `recipient_count` of 0 because it takes some time to populate. Follow up with a `GET` to verfiy segment size.{% endwarning %}
+
+{% info %}
+You can add up to 15 different conditions per segment.
+{% endinfo %}
 
 + Response 400
 

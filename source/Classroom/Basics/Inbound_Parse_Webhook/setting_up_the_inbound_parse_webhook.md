@@ -213,9 +213,9 @@ Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
   string(14) "209.85.223.169"
   ["spam_report"]=>
   string(844) "Spam detection software, running on the system "mx0047p1mdw1.sendgrid.net", has
-identified this incoming email as possible spam.  The original message
+identified this incoming email as possible spam. The original message
 has been attached to this so you can view it (if it isn't spam) or label
-similar future email.  If you have any questions, see
+similar future email. If you have any questions, see
 @@CONTACT_ADDRESS@@ for details.
 
 Content preview:  Here's an email with multiple attachments [image: Inline image
@@ -469,9 +469,9 @@ AFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAgACAD/AQAAmw4AAAAA
   string(13) "209.85.214.45"
   ["spam_report"]=>
   string(798) "Spam detection software, running on the system "mx0032p1mdw1.sendgrid.net", has
-identified this incoming email as possible spam.  The original message
+identified this incoming email as possible spam. The original message
 has been attached to this so you can view it (if it isn't spam) or label
-similar future email.  If you have any questions, see
+similar future email. If you have any questions, see
 @@CONTACT_ADDRESS@@ for details.
 
 Content preview:  This is a test email with 1 attachment.

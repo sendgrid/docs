@@ -66,10 +66,10 @@ How do I use the templates I created in the previous editor?
 When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
 
 {% anchor h3 %}
-What happens to my exisiting campaigns and templates?
+What happens to my existing campaigns and templates?
 {% endanchor %}
 
-For now, you can continue to open your campaigns and templates in the previous editor. When you open a campaign or template you created in the previous editor in the new editor, it makes a duplicate of that campaign or template and opens it in the editor. You can't open the duplicate in the previous editor, but you can open your originals in the prvious editor.
+For now, you can continue to open your campaigns and templates in the previous editor. When you open a campaign or template you created in the previous editor in the new editor, it makes a duplicate of that campaign or template and opens it in the editor. You can't open the duplicate in the previous editor, but you can open your originals in the previous editor.
 
 {% anchor h3 %}
 Can I use both editors?

@@ -116,7 +116,6 @@ Java
 JavaScript / Node.js
 {% endanchor %}
 
--   [node-sendgrid-web](http://github.com/jesusabdullah/node-sendgrid-web) *by Joshua Holbrook* - Send emails via SendGrid using the JSON web API and the request module.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
 
@@ -145,7 +144,7 @@ PHP
 -   [codeigniter-sendgrid-mail](http://github.com/bold/codeigniter-sendgrid-mail) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Mail API
 -   [sendgrid-component](http://github.com/damusnet/sendgrid-component) *by Damien Varron* - CakePHP component that extends the base email component with SendGrid functionality
 -   [sendgrid-subuser-api](https://github.com/eliksir/sendgrid-subuser-api) *by Eliksir* - Library that makes it easy to work with the SendGrid Subuser API
--   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP.  Very structured, OO implementation with excellent test coverage.  A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
+-   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP. Very structured, OO implementation with excellent test coverage. A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
 -   [laravel-sendgrid-driver](https://github.com/s-ichikawa/laravel-sendgrid-driver) *by Shingo Ichikawa* - This liblary can add sendgrid driver into the laravel's mail configure.
 
 {% anchor h3 %}
@@ -196,7 +195,7 @@ Python
 {% endanchor %}
 
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
--   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming Sendgrid Webhook events in Pyramid apps
+-   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming SendGrid Webhook events in Pyramid apps
 
 {% anchor h3 -Ruby-Webhooks %}
 Ruby

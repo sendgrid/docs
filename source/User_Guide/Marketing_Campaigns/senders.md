@@ -42,6 +42,8 @@ The footer of your emails automatically contains your sender information, becaus
 <br></br>
 1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
+{% info %} You may create up to 100 unique senders.{% endinfo %}
+
 {% warning %}
 You must verify your sender identity before you can edit it or use it to send a campaign.
 {% endwarning %}

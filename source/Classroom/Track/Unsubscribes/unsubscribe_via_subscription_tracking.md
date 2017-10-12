@@ -56,7 +56,7 @@ Change the Plain Text content as well. There won’t be any clickable wording he
 
 ## I don't want my unsubscribe links at the bottom!
 
-This requires adding a HTML code snippet to the body of your email using the Replacement Tag field within the Subscription app’s settings.  Set a replacement tag within the replacement tag field. {i.e. [unsubscribe]}
+This requires adding a HTML code snippet to the body of your email using the Replacement Tag field within the Subscription app’s settings. Set a replacement tag within the replacement tag field. {i.e. [unsubscribe]}
 
   ![]({{root_url}}/images/Screen_Shot_2015-05-26_at_11.39.15_AM.png)
 

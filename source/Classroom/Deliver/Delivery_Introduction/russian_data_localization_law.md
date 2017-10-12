@@ -74,13 +74,7 @@ The following organizations can provide additional information and further actua
 **Sources and Additional Reading:**
 
 * [http://uk.practicallaw.com/2-502-2227#a452067](http://uk.practicallaw.com/2-502-2227#a452067)
-* [http://www.rapsinews.com/tags/tag_FederalServiceforSupervisionofCo
-mmunications/] (http://www.rapsinews.com/tags/tag_FederalServiceforSupervisionofCo
-mmunications/)
-* [http://www.lexology.com/library/detail.aspx?g=9c043a6a-d4ee-41c1-
-acf1-15a433e2c84f] (http://www.lexology.com/library/detail.aspx?g=9c043a6a-d4ee-41c1-
-acf1-15a433e2c84f)
+* [http://www.rapsinews.com/tags/tag_FederalServiceforSupervisionofCommunications/] (http://www.rapsinews.com/tags/tag_FederalServiceforSupervisionofCommunications/)
+* [http://www.lexology.com/library/detail.aspx?g=9c043a6a-d4ee-41c1-acf1-15a433e2c84f] (http://www.lexology.com/library/detail.aspx?g=9c043a6a-d4ee-41c1-acf1-15a433e2c84f)
 * [https://community.oracle.com/thread/3659170] (https://community.oracle.com/thread/3659170)
-* [http://www.cityam.com/218299/why-russia-s-new-data-law-targeting-
-google-facebook-and-twitter-will-cost-its-economy] (http://www.cityam.com/218299/why-russia-s-new-data-law-targeting-
-google-facebook-and-twitter-will-cost-its-economy)
+* [http://www.cityam.com/218299/why-russia-s-new-data-law-targeting-google-facebook-and-twitter-will-cost-its-economy] (http://www.cityam.com/218299/why-russia-s-new-data-law-targeting-google-facebook-and-twitter-will-cost-its-economy)

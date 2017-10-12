@@ -54,7 +54,7 @@ List all of the available apps available for the subuser.
   <app>
     <name>subscriptiontrack</name>
     <title>Subscription Tracking</title>
-    <description>Adds unsubscribe links to the bottom of the text and HTML emails.  Future emails won't be delivered to unsubscribed users.</description>
+    <description>Adds unsubscribe links to the bottom of the text and HTML emails. Future emails won't be delivered to unsubscribed users.</description>
     <activated>0</activated>
   </app>
   <app>

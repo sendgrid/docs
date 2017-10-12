@@ -52,7 +52,7 @@ We will then prepend a second level subdomain similar to ```o1``` incrementing t
 Domain
 {% endanchor %}
 
-The root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel.  Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
+The root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
 
 {% anchor h3 %}
 Use New Domain
