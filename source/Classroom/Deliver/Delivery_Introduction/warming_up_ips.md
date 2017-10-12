@@ -48,7 +48,7 @@ If you are sending a very low volume of email (less than 10,000 emails/month), I
 How do I warm up my IP address?
 {% endanchor %}
 
-There are three seperate approaches to warming up a new IP address:
+There are three separate approaches to warming up a new IP address:
 
 {% anchor h3 %}
 Manually Warm Up your IP

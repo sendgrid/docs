@@ -13,6 +13,6 @@ navigation:
 
 {% info %} "You have unpaid invoices. Please update your payment details or retry payment." {% endinfo %}
 
-Did you receive a notification regarding an unpaid invoice? This is just a friendly warning that your service may be inturupted unless you settle any outstanding balance on your account. This may occur when the card on file for your account is declined when we attempted to process payment on the first of the month. 
+Did you receive a notification regarding an unpaid invoice? This is just a friendly warning that your service may be interrupted unless you settle any outstanding balance on your account. This may occur when the card on file for your account is declined when we attempted to process payment on the first of the month. 
 
 To please [update your credit card or retry a payment]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html) by logging into your SendGrid account and visiting [Plan and Billing Details](https://app.sendgrid.com/settings/billing). You can then either re-enter the credit card information and then click Save, or retry the payment. If you choose to update the card on file, the outstanding payment will process automatically. 

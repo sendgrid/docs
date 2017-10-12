@@ -83,4 +83,4 @@ This will prevent the campaign from being delivered to recipients in that unsubs
 
 For more general information on unsubscribe groups, please click [here]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html).
 
-For a more indepth tutorial on how to use unsubscribe groups and unsubscribe links in Marketing Campaigns, click [here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+For a more in-depth tutorial on how to use unsubscribe groups and unsubscribe links in Marketing Campaigns, click [here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).

@@ -28,7 +28,7 @@ There are two reserved fields representing your contacts' names: **first_name** 
 The **lists** custom field represents the various lists that a contact belongs to. This field excludes any segments. While this field cannot be edited directly, it is updated whenever you add or remove your contact from a list.
 
 {% info %}
-Reserved fields do **not** count towards your allotment of 60 custom fields.
+Reserved fields do **not** count towards your allotment of 120 custom fields.
 {% endinfo %}
 
 <table class="table">
@@ -46,7 +46,7 @@ Custom Fields
 You can create and edit custom fields that are particularly relevant to your email strategy, such as city, gender, age, or even plan type.
 
 {% info %}
-You can create up to 60 custom fields; 20 each of the following custom field types: date, text, or number.
+You can create up to 120 custom fields.
 {% endinfo %}
 
 The following options may be configured when creating a new custom field:

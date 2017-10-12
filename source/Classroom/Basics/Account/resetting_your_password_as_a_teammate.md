@@ -2,7 +2,7 @@
 seo:
   title: Resetting Your Password As a Teammate
   description: Learn how to reset your password as a teammate
-  keywords: password, multiauth, username, multiple, teamamtes
+  keywords: password, multiauth, username, multiple, teammates
 title: Resetting Your Password As a Teammate
 weight: 0
 layout: page

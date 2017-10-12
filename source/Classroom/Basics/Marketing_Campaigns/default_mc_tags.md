@@ -49,13 +49,13 @@ Sender Identity information
 To create a new Sender Identity, navigate to **Marketing Campaigns** in the left hand sidebar, and select **Senders**. Click **Create New Sender** and enter the details of your new sender.
 {% endinfo %}
 
-**[Sender_Address] -** Inserts the the physical address associated with the Sender Identity chosen for the campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
+**[Sender_Address] -** Inserts the physical address associated with the Sender Identity chosen for the campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
 
-**[Sender_City] -** Inserts the the city associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
+**[Sender_City] -** Inserts the city associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
 
-**[Sender_State] -** Inserts the the state associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
+**[Sender_State] -** Inserts the state associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
 
-**[Sender_Zip] -** Inserts the the zip code associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
+**[Sender_Zip] -** Inserts the zip code associated with the sender identity chosen for the Campaign. This is required in order to be compliant with [CAN-SPAM]({{root_url}}/Glossary/can_spam.html).
 
 {% info %}
 **[Sender_State]** and **[Sender_Zip]** are not required for international senders. If you reside outside of the USA, you may leave these fields blank.
