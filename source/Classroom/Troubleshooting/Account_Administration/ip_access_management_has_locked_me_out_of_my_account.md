@@ -1,7 +1,7 @@
 ---
 seo:
   title: IP Access Management has locked me out of my account
-  description: Locked out of your account becasue of IPAM? Learn how to get back in here...
+  description: Locked out of your account because of IPAM? Learn how to get back in here...
   keywords: IP, access, management, locked, out, lockout, blocked, ipam, reactivate, login, can't
 title: IP Access Management has locked me out of my account
 weight: 0
@@ -29,8 +29,8 @@ It's possible under some circumstances to accidentally lock yourself out of your
 Tips for not getting locked out:
 {% endanchor %}
 
-**Add yourself first:** When initially setting up IP Access for your Sendgrid account, it's a good idea to always add your current public address first, so you don't lock yourself out accidentally right away. You can always find the public IP address of your current network by doing a [Google search for "what is my IP"](https://www.google.com/search?q=what+is+my+IP).
+**Add yourself first:** When initially setting up IP Access for your SendGrid account, it's a good idea to always add your current public address first, so you don't lock yourself out accidentally right away. You can always find the public IP address of your current network by doing a [Google search for "what is my IP"](https://www.google.com/search?q=what+is+my+IP).
 
-**Use caution with Residential Networks:** Keep in mind that if you are connecting from a home or residential network, it is not uncommon for ISPs to change the public IP addresses of their customers as they see fit and also without warning. This may result in a scenario where you suddenly cannot access your Sengrid account from your house, so use caution when whitelisting IPs from residential networks. 
+**Use caution with Residential Networks:** Keep in mind that if you are connecting from a home or residential network, it is not uncommon for ISPs to change the public IP addresses of their customers as they see fit and also without warning. This may result in a scenario where you suddenly cannot access your SendGrid account from your house, so use caution when whitelisting IPs from residential networks.
 
 **VPNs/VMs:** If you use a VPN to connect to your corporate network from home, or wish to connect from a virtual machine, ask your IT department for the correct IP that you should add to IP Access Management. 

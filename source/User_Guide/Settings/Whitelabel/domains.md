@@ -26,7 +26,7 @@ There are a few quick points worth highlighting before you dive into the whitela
 * The domain whitelabeling process requires you to create a subdomain of your root domain to whitelabel and send email from.
 * Your reputation is always attributed to your root domain, regardless of the subdomain you whitelabel, or even if you switch subdomains.
 
-If you have three different subdomains that you have whitelabled and send email from, they will all share the same reputation.
+If you have three different subdomains that you have whitelabeled and send email from, they will all share the same reputation.
 
 For example: **marketing.yourdomain.com**, **billing.yourdomain.com**, and **support.yourdomain.com** will all contribute to, and share the reputation of, **yourdomain.com**.
 

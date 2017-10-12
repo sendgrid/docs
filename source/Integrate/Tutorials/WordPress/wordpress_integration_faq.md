@@ -91,7 +91,7 @@ What permissions should my API keys have?
 For the API Key used for sending emails (the General tab):
 – Full Access to Mail Send.
 – Read Access to Stats.
-– Read Access to Supressions > Unsubscribe Groups.
+– Read Access to Suppressions > Unsubscribe Groups.
 – Read Access to Template Engine.
 For the API Key used for contact upload (the Subscription Widget tab):
 – Full Access to Marketing Campaigns.

@@ -13,7 +13,7 @@ navigation:
   show: true
 ---
 
-Sendgrid's [Event Notification]({{root_url}}/API_Reference/Webhooks/event.html) feature allows you to receive POST data for your email events such as Opens, Clicks, Deliveries, and much more. However, traditionally this feature requires that you set up a separate database on your own to receive and store this posted data. While highly customizable, this method can be development and time intensive.
+SendGrid's [Event Notification]({{root_url}}/API_Reference/Webhooks/event.html) feature allows you to receive POST data for your email events such as Opens, Clicks, Deliveries, and much more. However, traditionally this feature requires that you set up a separate database on your own to receive and store this posted data. While highly customizable, this method can be development and time intensive.
 
 Our open source Eventkit app alleviates the hassle of needing to set up an endpoint on your own domain, and provides a simple yet powerful user interface to view and sort your SendGrid event data. Check out the videos below to walk you through the setup and configuration of EventKit. 
 

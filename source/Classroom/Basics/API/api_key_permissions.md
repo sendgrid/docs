@@ -120,9 +120,9 @@ Example Permissions for Common API Key Use Cases
   <li><a href="#-Read-Only-Access-for-Suppressions">Suppressions: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Suppressions">Suppressions: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Whitelabels">Whitelabels: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-Whitelables">Whitelabels: Full Access</a></li>
+  <li><a href="#-Full-Access-for-Whitelabels">Whitelabels: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-IP-Management">IP Management: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-IP-Manaagement">IP Management: Full Access</a></li>
+  <li><a href="#-Full-Access-for-IP-Management">IP Management: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Templates">Templates: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Templates">Templates: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Inbound-Parse">Inbound Parse: Read Only Access</a></li>

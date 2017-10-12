@@ -8,7 +8,7 @@ navigation:
 
 Monitor records will send samples from one or more subusers at a frequency you set.
 
-The first step is to create a Monitor Record. Once the monitor record has been created, you can append asubuser to a monitor record. Multiple subusers can be appended to a single monitor record.
+The first step is to create a Monitor Record. Once the monitor record has been created, you can append a subuser to a monitor record. Multiple subusers can be appended to a single monitor record.
 
 {% anchor h2 %}
 Create Monitor Record 

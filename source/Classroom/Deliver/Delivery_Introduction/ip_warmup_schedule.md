@@ -4,7 +4,7 @@ st:
   type: Classroom
 seo:
   title: IP Warmup Schedule
-  description: Get guidance on planning your sending strategy, and help identifing potential weaknesses in your email program...
+  description: Get guidance on planning your sending strategy, and help identifying potential weaknesses in your email program...
   keywords: IP, warm, up, warmup, getting, started, ramp, ramping
   canonical: https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf
 title: IP Warmup Schedule

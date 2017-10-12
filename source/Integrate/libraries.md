@@ -195,7 +195,7 @@ Python
 {% endanchor %}
 
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
--   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming Sendgrid Webhook events in Pyramid apps
+-   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming SendGrid Webhook events in Pyramid apps
 
 {% anchor h3 -Ruby-Webhooks %}
 Ruby
