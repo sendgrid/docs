@@ -553,7 +553,7 @@ Bounce
          <td>Message recipient</td>
          <td>Status code string, e.g. 5.5.0</td>
          <td>Bounce reason from MTA</td>
-         <td>Bounce/Blocked/Expired</td>
+         <td><a href="{{root_url}}/Glossary/bounces.html">Bounce</a></li>/<a href="{{root_url}}/Glossary/blocks.html">Blocked</a>/Expired</td>
          <td>The category you assigned</td>
       </tr>
    </tbody>
