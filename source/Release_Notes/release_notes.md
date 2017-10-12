@@ -38,7 +38,7 @@ The Contacts page in Marketing Campaigns has been updated to improve the user ex
 Substitution tag update
 {% endanchor %}
 
-Substitution tags are no longer case sensitive in the email content. Previously, your substitution tag in your email content had to exactly match the substitution tag. For example, if you have the substitution tag `[%panda%]`, and your email content says `"hello [%PANda%], buy my eucalyptus"`, then the substitution tag for [%panda%] is now applied.
+Substitution tags are no longer case sensitive in the email content. Previously, the substitution tag in your email content had to exactly match the substitution tag. For example, if you have the substitution tag `[%panda%]`, and your email content says `"hello [%PANda%], buy my bamboo"`, the substitution tag for [%panda%] is now applied.
 
 {% anchor h2 %}
 30 September 2017
@@ -58,7 +58,7 @@ Legacy Newsletter has been sunset and can no longer be used to build or send cam
 Save your favorite colors
 {% endanchor %}
 
-Added the ability to save swatches of commonly used colors when designing email templates or campaigns.
+You now have the ability to save swatches of commonly used colors when designing email templates or campaigns.
 
 {% anchor h2 %}
 5 September 2017
@@ -76,7 +76,7 @@ SendGrid is now available on the [AWS Marketplace](https://aws.amazon.com/market
 New editing experience
 {% endanchor %}
 
-Delivered [even more flexibility and control](https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/) when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between:
+The editing experience has been updated to offer [a better user experience](https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/) when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between:
 
 A powerful, marketer-friendly code editor with:
 - Split-screen editing so you can see your HTML changes in a live preview
@@ -116,7 +116,7 @@ You can now include up to 32,000 characters in text custom fields. This is usefu
 Responsive image enhancements
 {% endanchor %}
 
-Images are now responsive to the container they’re held within, as opposed to being a percent of their original size.).
+Images are now responsive to the container they’re held within, as opposed to being a percent of their original size.
 
 {% anchor h3 %}
 Additional fonts available for campaigns and templates
@@ -132,7 +132,7 @@ Additional standard web fonts are now available, including Arial Black, Bookman 
 Added data to recipient exports
 {% endanchor %}
 
-CSV exports of lists and segments now include data on when customers last opened or clicked.
+CSV exports of lists and segments now include data on recipient opens and clicks.
 
 {% anchor h2 %}
 5 May 2017
@@ -142,7 +142,7 @@ CSV exports of lists and segments now include data on when customers last opened
 Experiments tab and Experiments overview
 {% endanchor %}
 
-The Experiments tab in the UI leads to an Experiments overview page where you can opt into active research experiments or suggest additional experiments you would like SendGrid to run. The introduction of these experiments gives you the opportunity to shape the future of SendGrid’s platform with your valuable feedback.
+The Experiments tab in the UI leads to an Experiments overview page where you can opt in to active research experiments or suggest additional experiments you would like SendGrid to run. The introduction of these experiments gives you the opportunity to shape the future of SendGrid’s platform with your valuable feedback.
 
 {% anchor h2 %}
 12 May 2017
@@ -152,7 +152,7 @@ The Experiments tab in the UI leads to an Experiments overview page where you ca
 Visual reference of A/B test creative
 {% endanchor %}
 
-Campaigns that ran with an A/B test now show a preview of both versions from the Campaign detail page.
+Campaigns run with an A/B test now show a preview of both versions from the Campaign detail page.
 
 {% anchor h2 %}
 19 April 2017
@@ -182,7 +182,7 @@ You can now store up to 1,500 images for use in templates, up from 1,000 previou
 Teammates
 {% endanchor %}
 
-Teammates expands our existing permissions for multiple credentialed users, and adds a layer of well-tested UX and UI to make it easy for you to add your colleagues to your account. Teammate-level credentials allow account owners to limit teammates to read-only views, limit their access to only those areas they need to see, or give them access to secure areas to manage specific features, such as API keys.
+Teammates expands our existing permissions for multiple credentialed users, and adds a layer of UI to make it easy for you to add your colleagues to your account. Teammate-level credentials allow account owners to limit teammates to read-only views, limit their access to only those areas they need to see, or give them access to secure areas to manage specific features, such as API keys.
 
 {% anchor h2 %}
 22 February 2017
@@ -210,13 +210,13 @@ We’ve added several new protections that further enhance security at the accou
 {% anchor h3 %}
 Interactive v3 API documentation{% endanchor %}
 
-For developers creating and monitoring an integration with the SendGrid API, the new interactive [v3 API documentation](https://sendgrid.com/docs/API_Reference/api_v3.html) is easier to use and expedites end-to-end integration time. You can now call every endpoint in the API directly from the browser, so you can see your data in the requests and responses before you write a single line of code. Then, when you’re ready to start testing code, you can copy/paste the code from the call you just made from the “Try It” page. All of these great features, along with contextual search and clear, as well as color-coordinated formatting allow for easy scanning and quick solution identification.
+For developers creating and monitoring an integration with the SendGrid API, the new interactive [v3 API documentation](https://sendgrid.com/docs/API_Reference/api_v3.html) is easier to use and expedites end-to-end integration time. You can now call every endpoint in the API directly from the browser, so you can see your data in the requests and responses before you write a single line of code. Then, when you’re ready to start testing code, you can copy/paste the code from the call you just made from the “Try It” page. All of these features, including contextual search and clear as well as color-coordinated formatting, allow for easy scanning and quick solution identification.
 
 {% anchor h3 %}
 New C# library supporting .NET Core
 {% endanchor %}
 
-Microsoft is making big moves towards .NET Core and we have decided to make sure our C# library is ready when and if you decide to start rewriting your code. Our new library is .NET Standard 1.3 compliant, so that our library works with C# 4.5.2 and up.
+Microsoft is moving towards .NET Core and we have decided to make sure our C# library is ready when and if you decide to start rewriting your code. Our new library is .NET Standard 1.3 compliant, so that our library works with C# 4.5.2 and up.
 
 {% anchor h2 %}
 26 January 2017
@@ -226,7 +226,7 @@ Microsoft is making big moves towards .NET Core and we have decided to make sure
 Improved contact search
 {% endanchor %}
 
-You can now use “fuzzy” search to find contacts, rather than having to have an exact name or email address.
+You can now use approximate search terms to find contacts, rather than having to have an exact name or email address.
 
 {% anchor h3 %}
 Billing and invoice usability improvements
@@ -242,7 +242,7 @@ To ease the customer process for paying invoices, we’re introducing an unpaid 
 Universal links and partnership with Branch
 {% endanchor %}
 
-You can now maximize customer engagement by streamlining your SendGrid email to your mobile app experience, using Branch’s implementation of SendGrid’s universal links. Universal links (also known as deep links) allow senders to link directly into their mobile apps from email, while maintaining click tracking functionality. We partnered with Branch to ease setup and ongoing support requirements for universal links.
+You can now maximize customer engagement by streamlining your SendGrid email with your mobile app experience using Branch’s implementation of SendGrid’s universal links. Universal links (also known as deep links) allow senders to link directly into their mobile apps from email, while maintaining click tracking functionality. We partnered with Branch to offer easy setup and ongoing support requirements for universal links.
 
 {% anchor h2 %}
 5 January 2017
