@@ -12,7 +12,7 @@ navigation:
 The following new features and changes to the service are available.
 
 {% anchor h2 %} 
-DATE October 2017
+11 October 2017
 {% endanchor %}
 
 {% anchor h3 %}
