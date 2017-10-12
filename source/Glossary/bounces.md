@@ -23,7 +23,7 @@ You can also [retrieve and edit your list of bounces]({{root_url}}/API_Reference
 Helpful Knowledge Base articles:
 {% endanchor %}
 
-* [Drop Reason: Bounced Address](https://sendgrid.zendesk.com/hc/en-us/articles/203790456)
-* [Bounce Forwarding APP](https://sendgrid.zendesk.com/hc/en-us/articles/200181478)
-* [Implementing Bounce Notification For Multiple From Addresses](https://sendgrid.zendesk.com/hc/en-us/articles/200185178)
-* [Email Activity & Bounces](https://sendgrid.zendesk.com/hc/en-us/articles/200181728)
+* [Drop Reason: Bounced Address](https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_bounced_address.html)
+* [Bounce Forwarding APP](https://sendgrid.com/docs/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html)
+* [Implementing Bounce Notification For Multiple From Addresses](https://sendgrid.com/docs/Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html)
+* [Email Activity & Bounces](https://sendgrid.com/docs/User_Guide/email_activity.html)
