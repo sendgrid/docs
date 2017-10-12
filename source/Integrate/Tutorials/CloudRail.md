@@ -66,7 +66,7 @@ final Profile profile = new Facebook(this, "[Client ID]", "[Client Secret]");
 
 new Thread() {
     public void run() {
-        String userFullName = profile.getFullName(); // Implicitely triggers login
+        String userFullName = profile.getFullName(); // Implicitly triggers login
         String userEmail = profile.getEmail();
         email.sendEmail(
                 "[senderEmail]",

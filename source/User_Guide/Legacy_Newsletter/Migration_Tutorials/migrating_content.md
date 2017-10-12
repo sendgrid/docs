@@ -29,7 +29,7 @@ First, we'll walk through the process of migrating content created using HTML in
 Migrating Content Created in the Code Editor
 {% endanchor %}
 
-Mouse over the email that you want to migrate content from and click Edit.
+Mouse over the email that you want to migrate content from and click **Edit**.
 
 This will take you to the Design section of Legacy Newsletter where you normally create and edit your newsletters.
 
@@ -39,7 +39,7 @@ Hover your mouse over the image you want to migrate, and click the pencil shaped
 
 Right click on the image and select "Save image as…" to download the image to your computer.
 
-Repeat this process for each image that you want to migrate into Marketing Campaigns
+Repeat this process for each image that you want to migrate into Marketing Campaigns.
 
 Next, select all of the HTML for your newsletter and copy it to your clipboard or a plain text editor.
 

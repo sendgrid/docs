@@ -37,7 +37,7 @@ Make sure that the content of your emails is to-the-point and relevant to your s
 
 {% anchor h3 %}Sending Frequency{% endanchor %}
 
-Be up front with your recipients regarding your sending rates. If you tell your users that you will send out one newsletter every week, then it's important to to stick to that schedule. Better still, give your recipients options, such as the ability to choose between a weekly and a monthly newsletter.
+Be up front with your recipients regarding your sending rates. If you tell your users that you will send out one newsletter every week, then it's important to stick to that schedule. Better still, give your recipients options, such as the ability to choose between a weekly and a monthly newsletter.
 
 {% anchor h3 %}Consistency{% endanchor %}
 

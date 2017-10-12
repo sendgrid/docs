@@ -29,7 +29,7 @@ We recommend giving DNS changes at least an hour to propagate, and then trying t
 Verify Your DNS Records Manually
 {% endanchor %}
 
-To check if a DNS record has been propogated, use the simple Unix command **DIG** to check your whitelabel records. The easiest way to do this is to use **Terminal** on a Mac platform.
+To check if a DNS record has been propagated, use the simple Unix command **DIG** to check your whitelabel records. The easiest way to do this is to use **Terminal** on a Mac platform.
 
 Use the commands from the table below to check the accuracy of records. The **ANSWER** section of the output should contain what is displayed in the answer column of the table. If the **ANSWER** section of the dig return is empty, that usually means that either the record does not exist or has yet to propagate.
 

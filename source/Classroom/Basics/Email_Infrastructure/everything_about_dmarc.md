@@ -27,7 +27,7 @@ Return Path's Brand Monitor is one, and Agari is another.
 
 # The five phases:
 
-1. Deploy DKIM & SPF by Whitelabeling your Sendgrid IP.
+1. Deploy DKIM & SPF by Whitelabeling your SendGrid IP.
 2. Ensure proper DKIM and SPF signing for your Whitelabel domain.
 3. Publish a DMARC record with your DNS registrar, then monitor the results.
 4. Analyze the feedback you receive, and adjust your mail streams as needed.
@@ -36,13 +36,13 @@ Return Path's Brand Monitor is one, and Agari is another.
 
 ## 1. Deploy DKIM & SPF by Whitelabeling your Sendgrid IP
 
-Start by completing the Whitelabel process for your account. This ensures that emails sent through your Sendgrid account will be properly signed using DKIM and SPF for your unique domain.  
+Start by completing the Whitelabel process for your account. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
 For more information on completing this process, visit the documentation:   
 http://sendgrid.com/docs/User\_Guide/whitelabel\_wizard.html
 
 ## 2. Ensure proper DKIM and SPF signing for your Whitelabel domain
 
-Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to the domain you've Whitelabeled your Sendgrid account with. ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
+Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to the domain you've Whitelabeled your SendGrid account with. ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
 As long as both are passing, you’re in business!
 
 ## 3. Publish a DMARC record with your DNS registrar, then monitor the results
@@ -109,7 +109,7 @@ Up until now you should have only been using the p=none policy to get reports of
 Overview: [dmarc.org](https://sendgrid.zendesk.com/hc/admin/articles/200182958-Everything-about-DMARC-/dmarc.org)  
 Frequently Asked Questions:   [http://dmarc.org/faq.html](http://dmarc.org/faq.html)  
 Specification: [http://dmarc.org/specification.html](http://dmarc.org/specification.html)  
-Sendgrid Blog Post: [http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/)  
+SendGrid Blog Post: [http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/)  
 SPF Syntax: [http://www.openspf.org/SPF\_Record\_Syntax](http://www.openspf.org/SPF_Record_Syntax)
 
 Returnpath:  [http://www.returnpath.com/solution-content/dmarc-support/](http://www.returnpath.com/solution-content/dmarc-support/)  

@@ -167,7 +167,7 @@ How can I estimate what it will cost to use Marketing Campaigns?
 Leverage our [Pricing Calculator](https://app.sendgrid.com/settings/choose_how_you_pay) to enter the volume of email you’ll be sending as well as the number of contacts you’ll store in Marketing Campaigns.
 
 {% anchor h3 %}
-Why does Marketing Campigns charge me for storing contacts?
+Why does Marketing Campaigns charge me for storing contacts?
 {% endanchor %}
 
 The default pricing for Marketing Campaigns is to charge for contacts stored in Marketing Campaigns as opposed to an additional fee for each email sent through Legacy Newsletter. This is aligned with sending best practices by encouraging you to monitor how engaged your recipients are and modify your marketing strategy accordingly. Here’s how:
