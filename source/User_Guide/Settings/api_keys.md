@@ -95,7 +95,7 @@ Testing an API key
 
 You can easily test your newly created API key using cURL:
 
-${%codeblock%}
+{%codeblock%}
  curl -i --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY_HERE' \
