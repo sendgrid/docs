@@ -5,7 +5,7 @@ title: Links
 seo:
   title: Whitelabel Links
   description: Whitelabel click tracking links and open tracking image with SendGrid over the v3 API
-  keywords: link whitelabel, whitelabel link, whitelabel click tracking links, whitelabe open tracking image
+  keywords: link whitelabel, whitelabel link, whitelabel click tracking links, whitelabel open tracking image
 navigation:
   show: true
 ---
@@ -127,7 +127,7 @@ You may create up to a maximum of 1500 link whitelabels.
 
 ### Retrieve a Link [GET]
 
-+ Response 200 (applicaiton/json)
++ Response 200 (application/json)
 
   + Body
         {
