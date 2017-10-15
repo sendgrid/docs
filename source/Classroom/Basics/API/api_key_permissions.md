@@ -536,7 +536,7 @@ Below is a list of every scope included in an administrator level API Key.
   "teammates.create",
   "teammates.delete",
   "teammates.read",
-  "teammates.update"
+  "teammates.update",
   "templates.create",
   "templates.delete",
   "templates.read",
