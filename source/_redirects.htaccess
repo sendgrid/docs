@@ -250,6 +250,7 @@ Redirect 301 /Classroom/Basics/does_sendgrid_support_end_to_end_tls.html http://
 Redirect 301 /Classroom/Basics/email_flow.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/email_flow.html
 Redirect 301 /Classroom/Basics/everything_about_dmarc.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html
 Redirect 301 /Classroom/Basics/link_shorteners.html http://sendgrid.com/docs/Classroom/Build/Add_Content/link_shorteners.html
+Redirect 301 /Classroom/Basics/password.html http://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Basics/recommended_smtp_settings.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html
 Redirect 301 /Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html http://sendgrid.com/docs/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html
 Redirect 301 /Classroom/Basics/sendgrid_oem_process.html http://sendgrid.com/docs/Classroom/Basics/Misc/sendgrid_oem_process.html
@@ -772,9 +773,6 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_S
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
-
-
 
 
 
