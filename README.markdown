@@ -119,7 +119,7 @@ seo:
 ---
 ```
 
-By default `<title>` tags follow the template `{Page Title} {Site Title}`. However the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`, `description` and `canonical` change their respective tags.
+By default `<title>` tags follow the template `{Page Title} {Site Title}`. However the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`. `description` and `canonical` change their respective tags.
 
 ### Custom Liquid Tags
 There are some custom plugins (look in the `plugins` folder) that define new liquid blocks for use in pages.
