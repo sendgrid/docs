@@ -23,7 +23,7 @@ Bounced emails are commonly due to SMTP 4.X.X errors or SMTP 5.X.X errors, which
 * Too many invalid recipients
 
 {% anchor h3 %}
-Helpful Knowledge Base articles:
+Additional Resources
 {% endanchor %}
 
 * [Bounces]({{root_url}}/Glossary/bounces.html)
