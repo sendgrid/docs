@@ -43,7 +43,7 @@ Depending on the resource, we support the following HTTP verbs:
   </tr>
   <tr>
     <td>GET</td>
-    <td>Retrieve a resource or group of resouces</td>
+    <td>Retrieve a resource or group of resources</td>
   </tr>
   <tr>
     <td>POST</td>

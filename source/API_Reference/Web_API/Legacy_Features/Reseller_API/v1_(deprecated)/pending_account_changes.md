@@ -241,7 +241,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -351,7 +351,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
       <tr>
          <td>ip[]</td>
          <td>Optional</td>
-         <td>If the package you are downgrading your user requires a whitelabel and/or an unique IP, you may assign a free IP to this customer using your assigned IPs in suppliment from SendGrid.</td>
+         <td>If the package you are downgrading your user to requires a whitelabel and/or a unique IP, you may assign a free IP to this customer using your assigned IPs in supplement from SendGrid.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -428,7 +428,7 @@ result><message>success</message></result>
 Immediate Close 
 {% endanchor %}
 
-Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
+Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -561,7 +561,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -671,7 +671,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -748,7 +748,7 @@ result><message>success</message></result>
 Scheduled Close 
 {% endanchor %}
 
-Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
+Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 
 <table class="table table-bordered table-striped">
    <thead>
