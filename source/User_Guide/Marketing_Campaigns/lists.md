@@ -101,13 +101,12 @@ You can create up to 400 segments.
 
 *To create a Segment:*
 
-1. To set up a segment, click the **Add List or Segment** button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
-  ![]({{root_url}}/images/lists_5.png "Add List or Segment")
-1. Select **New Segment**.
-1. Select which List to have the Segment pull from.
+1. Navigate to **Marketing** and then select **Contacts**.
+1. Click **Create Segment**. 
+1. Choose either **Segment all contacts** or **Segment an exisiting list**.
+1. Enter a *Segment Name*.
+1. If you chose to segment an existing list, select a list from the *Select List to Segment* drop-down. 
 
-  Towards the bottom, you can set certain conditions in order to populate the Segment from the select List
-  
 1. In **Select Condition** choose a desired condition or custom field.
 1. In **Select Criteria** choose from a list of available operators based on the chosen condition. (`IS`, `IS NOT`, `IS BEFORE`, `IS AFTER`, `CONTAINS WORD`, etc.)
 
