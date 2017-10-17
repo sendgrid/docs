@@ -16,7 +16,7 @@ If a recipient has opted out of your mailings in the past but wishes to re-open 
 
 For recipients who have opted out of your transactional messages, all you need to do is locate the address in question on your global unsubscribe list, select the corresponding check box, and click the "delete" button. You can also check your [drops list](https://sendgrid.zendesk.com/hc/en-us/articles/203295137) for users to reconfirm.
 
-For marketing list resubscribes, you will need to locate the recipient list from which the recipient unsubscribed within your [suppressions settings]({{site.app_url}}/suppressions).  Click on the "manage unsubscribes" link for the list in question, locate and select the recipient's email address, and then click the "resubscribe" button.
+For marketing list resubscribes, you will need to locate the recipient list from which the recipient unsubscribed within your [suppressions settings]({{site.app_url}}/suppressions). Click on the "manage unsubscribes" link for the list in question, locate and select the recipient's email address, and then click the "resubscribe" button.
 
 {% anchor h3 %}
 Removing Unsubscribes is Risky Business...

@@ -42,7 +42,7 @@ Click here to [Send SendGrid emails for new PostgreSQL custom query row matches]
 4. Choose your SendGrid account from the list of accounts, or connect a new account.
 5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
-6.  Using fields from PostgreSQL, create and customize the email message that the Zap will send. The required fields for this step are **To**, **From**, and **Subject**, but you may fill in further fields if you desire to do so.
+6. Using fields from PostgreSQL, create and customize the email message that the Zap will send. The required fields for this step are **To**, **From**, and **Subject**, but you may fill in further fields if you desire to do so.
 ![Email creation](https://api.monosnap.com/rpc/file/download?id=PMa2LUCYaqGcvdy9pPUtMhtrUtp5nW)
 7. Click **Save + Finish**.
 

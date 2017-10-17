@@ -10,6 +10,9 @@ navigation:
 Retrieve Bounces 
 {% endanchor %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving bounces from' %}
@@ -17,7 +20,6 @@ Retrieve Bounces
  {% parameter 'date' 'No' 'Must be set to 1' 'Retrieves the timestamps, it will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>bounces</em>' 'Allows you to access bounces functionality' %}
 {% endparameters %}
-
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date=1 %}
   {% response json %}

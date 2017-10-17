@@ -22,10 +22,6 @@ The following steps will show you how to remove all of your unusable Marketing C
 
 3. Repeat step 2 for each of the groups that you want to remove (e.g. unsubscribes, spam reports etc.) and merge each of those lists into a single CSV file.
 
-    * *Alternatively, you can download all of your contacts from Marketing Campaigns (create a segment defined by "created at" "is after" with a date from 1999 to capture all contacts, and then export that segment).*
-    * *Next, upload that CSV of all contacts to our [List Assist](https://sendgrid.com/docs/Utilities/list_assist.html) tool. This will give you a CSV of all of your Marketing Campaigns contacts that exist on any of the Suppression lists.*
-    * *Use that list to follow steps 4-8 below. You can find a video tutorial explaining how to use List Assist [here](https://www.youtube.com/watch?v=FiyDgCl78dk).*
-
 4. Return to your dashboard, navigate to the left hand menu and select **Marketing**, then **Contacts**.
 
 5. In the upper right corner click **Add List or Segment** and select **Upload CSV**.

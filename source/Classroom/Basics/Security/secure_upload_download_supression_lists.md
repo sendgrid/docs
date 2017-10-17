@@ -4,8 +4,8 @@ st:
   type: Classroom
 seo:
   title: How can I securely upload or download lists of suppression addresses to SendGrid?
-  description: SendGrid offers secure channels for upload/download of supression lists. 
-  keywords: transmit, download, upload,encrypted, encryption, files, documents, csv, list
+  description: SendGrid offers secure channels for upload/download of suppression lists. 
+  keywords: transmit, download, upload, encrypted, encryption, files, documents, csv, list
 title: How can I securely upload or download lists of suppression addresses to SendGrid?
 weight: 0
 layout: page

@@ -42,7 +42,7 @@ Messages are temporarily deferred because of recipient server policy reasons. Us
 - 421 4.7.1 : (DYN:T1) http://postmaster.info.aol.com/errors/421dynt1.html (throttled)
 - 421 4.7.0 [GL01] Message from (X.X.X.X) temporarily deferred - 4.16.50. Please refer to http://postmaster.yahoo.com/errors/postmaster-21.html
 
-**_What to do with this response_**: We’ll continue to retry deferred messages for up to 72 hours for a response like this, but you may consider temporarily easing off the throttle when sending messages to a domain that is returning this code, just so you don’t further delay your messages currently being tried.  
+**_What to do with this response_**: We’ll continue to retry deferred messages for up to 72 hours for a response like this, but you may consider temporarily easing off the throttle when sending messages to a domain that is returning this code, just so you don’t further delay your messages currently being tried. 
 
 ## **450**  
 
@@ -103,7 +103,7 @@ The intended mailbox does not exist on this recipient server. This response will
 - 551 not our customer
 - 551 user does not exist
 
-**_ What to do with this response_** : Don’t bother re-sending, the recipient server does not recognize the recipient address as being one of it’s own. Keep any eye on the human readable portion of the response, as it may include a forwarding address.  
+**_ What to do with this response_** : Don’t bother re-sending, the recipient server does not recognize the recipient address as being one of it’s own. Keep any eye on the human readable portion of the response, as it may include a forwarding address. 
 
 ## **552**  
 
@@ -113,7 +113,7 @@ The intended mailbox has exceeded its storage limits.
 
 - 552 5.2.2 This message is larger than the current system limit or the recipient's mailbox is full. Create a shorter message body or remove attachments and try sending it again.
 
-**_What to do with this response_**: It’s at your discretion if you want to try re-sending, but there's a pretty good chance that it's a defunct address. We don't resend messages with this error code, so refer to the human readable portion for more guidance.  
+**_What to do with this response_**: It’s at your discretion if you want to try re-sending, but there's a pretty good chance that it's a defunct address. We don't resend messages with this error code, so refer to the human readable portion for more guidance. 
 
 ## **553**
 
@@ -128,7 +128,7 @@ _**What to do with this response_: Don’t retry sending to this address, it’s
 
 ## **554**
 
-The message failed. This response is a ‘default’ of sorts, but can be attributed to anything from planetary alignment, tides of the moon or gypsy curses. Generally a very vague NDR, but refer to the human-readable portion of the message for further instruction.  
+The message failed. This response is a ‘default’ of sorts, but can be attributed to anything from planetary alignment, tides of the moon, or just plain bad luck. Generally a very vague NDR, but refer to the human-readable portion of the message for further instruction. 
 
 ### Examples:
 
@@ -143,4 +143,4 @@ Sendgrid will also display a code when the recipient server has responded with a
 
 Delayed Bounce - Unable to Parse Server Reason
 
-**_What to do with this response_** _:_ Your best bet is to contact the mail administrator for the intended recipient's mail domain to see if they have any more info on what may have happened.   
+**_What to do with this response_** _:_ Your best bet is to contact the mail administrator for the intended recipient's mail domain to see if they have any more info on what may have happened.  

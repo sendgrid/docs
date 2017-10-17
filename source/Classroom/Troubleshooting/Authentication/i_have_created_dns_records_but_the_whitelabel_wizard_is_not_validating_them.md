@@ -19,7 +19,7 @@ A common hurdle that many users encounter during the whitelabel process is that 
 Allow Your DNS Records to Propagate
 {% endanchor %}
 
-9 times out of 10, this validation issue can be solved with a judicious application of time.  DNS records must take time to propagate throughout the internet before we can detect if they exist, and are indeed correct.
+9 times out of 10, this validation issue can be solved with a judicious application of time. DNS records must take time to propagate throughout the internet before we can detect if they exist, and are indeed correct.
 
 Propagation can take anywhere from a few hours to a few days, depending on your DNS host. We've found that popular hosts such as Godaddy and DNSMadeEasy will typically take around an hour or so to propagate new records out to where we can detect them.
 
@@ -29,7 +29,7 @@ We recommend giving DNS changes at least an hour to propagate, and then trying t
 Verify Your DNS Records Manually
 {% endanchor %}
 
-To check if a DNS record has been propogated, use the simple Unix command **DIG** to check your whitelabel records. The easiest way to do this is to use **Terminal** on a Mac platform.
+To check if a DNS record has been propagated, use the simple Unix command **DIG** to check your whitelabel records. The easiest way to do this is to use **Terminal** on a Mac platform.
 
 Use the commands from the table below to check the accuracy of records. The **ANSWER** section of the output should contain what is displayed in the answer column of the table. If the **ANSWER** section of the dig return is empty, that usually means that either the record does not exist or has yet to propagate.
 

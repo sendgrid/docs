@@ -14,7 +14,7 @@ seo:
 Overview
 {% endanchor %}
 
-Each email sent via Marketing Campaigns(UI or API) will count towards your monthly plan volume, just like the messages you already send.
+Each email sent via Marketing Campaigns (UI or API) will count towards your monthly plan volume, just like the messages you already send.
 
 In addition to your monthly plan price, you will receive a separate charge based on the maximum size of your Contacts list, which is calculated based on this simple formula:
 
@@ -22,7 +22,7 @@ In addition to your monthly plan price, you will receive a separate charge based
 
 This amount is based on the highest number stored in the preceding month. Think of it as a high-water mark, so even if you reduce your contacts before your next bill rolls around (the 1st of each calendar month), you'll still be charged for whatever upper limit was reached.
 
-For all customers, the first 2,000 contacts are stored for free. Free customers are also welcome to try out Marketing Campaigns, but will be able to upload no more than 2,000 Contacts.  
+For all customers, the first 2,000 contacts are stored for free. Free customers are also welcome to try out Marketing Campaigns, but will be able to upload no more than 2,000 Contacts. 
 
 Example:
 

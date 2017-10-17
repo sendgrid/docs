@@ -2,7 +2,7 @@
 seo:
   title: SendGrid Customer Dashboard
   description: Manage your SendGrid account from the dashboard
-  keywords: SendGrid dashboard, SendGrid customer portal, customer portal, dashboard
+  keywords: SendGrid dashboard, SendGrid UI, UI, dashboard, Application
 title: Dashboard
 weight: 90
 layout: page
@@ -18,7 +18,7 @@ The SendGrid dashboard is designed to give you an at-a-glance view of your curre
 Stats
 {% endanchor %}
 
-On your dashboard you can choose to see the last 7 or the last 30 days of email statistics in the main graph, so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
+On your dashboard, you can choose to see the last 7 or the last 30 days of email statistics in the main graph so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
 
 If you want to see all of your email statistics, go to your [Statistics Page]({{site.app_url}}/statistics) via the graph icon on the left side menu.
 
@@ -26,7 +26,7 @@ If you want to see all of your email statistics, go to your [Statistics Page]({{
 Activity Feed
 {% endanchor %}
 
-Your Activity Feed shows you the last 7 days of email activity for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
+Your Activity Feed shows you the last 500 email activity events for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
 
 If you’d like to see all of your email activity, please go to the [Email Activity]({{site.app_url}}/email_activity) page. For more information, please see the email activity documentation.
 

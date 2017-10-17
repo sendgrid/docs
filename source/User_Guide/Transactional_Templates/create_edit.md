@@ -38,31 +38,27 @@ You can then open the actions dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
-When you click Add Version, you will be taken to the editor.  From here, you can change the subject and the body of your email template.
+When you click Add Version, you will be taken to the editor. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
 {% anchor h2 %}
-Editing Your Template
+Editing Your HTML Template
 {% endanchor %}
 
 {% info %}
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 {% endinfo %}
 
-To add a template, click the “Code” button in the header. Copy and paste your HTML code into the dark-background code editor, like so:
-
-![](/images/templates_create_edit_5.png "Editing your Template")
+To add a template, open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html). Copy and paste your HTML code into the dark-background code editor.
 
 If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 
-![](/images/templates_create_edit_6.png)
+When you’re done editing, click **Save** to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
 
-When you’re done editing, just hit the save button to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
-
-To get the to the plain text editor, find the text icon in the editor header bar.
-
-![](/images/templates_create_edit_7.png "Design/Code Switch")
+{% info %}
+You can also use the [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html) to create and edit templates.
+{% endinfo %}
 
 {% anchor h2 %}
 Preview and Test Your Template

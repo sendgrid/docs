@@ -26,7 +26,9 @@ You can use [API Key Permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys
 Managing API Keys
 {% endanchor %}
 
-You can [manage your API Keys]({{site.app_url}}/settings/api_keys) from the SendGrid Customer Portal. Additionally, you can [manage your API keys via the API itself]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
+You can [manage your API Keys]({{site.app_url}}/settings/api_keys) from the SendGrid UI. Additionally, you can [manage your API keys via the API itself]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
+
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
 {% anchor h2%}
 Using API Keys
@@ -48,14 +50,15 @@ For sending via HTTP using the [v2 mail send]({{root_url}}/API_Reference/Web_API
 Authorization: Bearer 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
 {%endcodeblock%}
 
-Sending an email via a curl request to the v3 mail send endpoint using an API Key would look like:
+Sending an email via a cURL request to the v3 mail send endpoint using an API Key would look like:
 
-{%codeblock%}
-$curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send \
-  --header 'authorization: Bearer YOUR_API_KEY_GOES_HERE' \
-  --data '{"personalizations":[{"to":["recipient@example.com"]}],"from":"sender@example.com","subject":"Hello, World!","content":[{"type":"string","value":"Heya!"}]}'
-{%endcodeblock%}
+${%codeblock%} curl -i --request POST 
+--url https://api.sendgrid.com/v3/mail/send 
+--header 'Authorization: Bearer YOUR_API_KEY_HERE' 
+--header 'Content-Type: application/json' 
+--data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}' {%endcodeblock%}
+
+Look for a 202 Accepted in the HTTP response headers.
 
 {% anchor h3 %}
 Via a SendGrid Open Source Library

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 30
+weight: 55
 title: Custom Fields
 navigation:
   show: true
@@ -22,7 +22,7 @@ To create a new custom field, simply click the “create new field” button at 
 
 ![]({{root_url}}/images/custom_fields_2.png "Add New Custom Field")
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”.  The field type can
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can
 be date, text, or number fields. We ask for the field type so that we can help you make segments from your contact
 database. You will be able to query your list in different ways, based on the data type:
 
@@ -31,11 +31,15 @@ database. You will be able to query your list in different ways, based on the da
 * **Number** - will allow you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% info %}
-You can create up to 20 custom fields for each data type: date, text, and number.
+You can create up to 120 custom fields.
 {% endinfo %}
 
 {% warning %}
-Text custom fields are limited to a length of 240 characters.
+Text custom fields are limited to a size of 32,766 bytes.
+{% endwarning %}
+
+{% warning %}
+Number custom fields are limited to 309 digits.
 {% endwarning %}
 
 ![]({{root_url}}/images/custom_fields_1.png "Default Custom Fields")
@@ -48,15 +52,5 @@ Delete a Custom Field
 Deleting this custom field will delete all values for that field across your contact database. If you have any campaigns using this field's substitution tag, those will NOT get replaced when the campaign is sent. You will not be allowed to delete this custom field if it is currently being used in a segment. This deletion process may take several minutes--you will continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
-If you need to delete a custom field, you can do so by clicking the ![]({{root_url}}/images/terms_5.png "Default Custom Fields") in
-the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will be removed as well.
+If you need to delete a custom field, you can do so by clicking the action menu in the same row as your field. When you delete the custom field, you will see a warning that all data associated with this field will be removed as well.
 
-<div class="row">
-    <div class="col-md-6 text-left">
-        <strong>&lsaquo;&nbsp;</strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a>
-    </div>
-
-    <div class="col-md-6 text-right">
-         <a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists & Segmentation</a><strong>&nbsp;&rsaquo;</strong>
-    </div>
-</div>

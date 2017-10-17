@@ -18,6 +18,9 @@ This will return a list of all available timezones.
  {% parameter 'task' 'Yes' 'Must be set to <em>list</em>' 'This will allow you to retrieve the timezones' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample list GET https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=list %}
   {% response json %}

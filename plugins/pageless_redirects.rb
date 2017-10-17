@@ -49,6 +49,7 @@
 # Plugin License: MIT
 # Plugin Credit: This plugin borrows heavily from alias_generator (http://github.com/tsmango/jekyll_alias_generator) by Thomas Mango (http://thomasmango.com)
 
+require 'uri'
 require 'json'
 
 module Jekyll
@@ -107,6 +108,8 @@ module Jekyll
       alias_paths.flatten.each do |alias_path|
         alias_path = alias_path.to_s
 
+        register(alias_path, destination_path)
+
         alias_dir  = File.extname(alias_path).empty? ? alias_path : File.dirname(alias_path)
         alias_file = File.extname(alias_path).empty? ? "index.html" : File.basename(alias_path)
 
@@ -124,6 +127,44 @@ module Jekyll
           @site.static_files << PagelessRedirectFile.new(@site, @site.dest, alias_index_path.split('/')[1, sections + 1].join('/'), '')
         end
       end
+    end
+
+    def register(alias_href, destination_href)
+      @known_aliases ||= {}
+      @known_destinations ||= {}
+
+      alias_url = url(alias_href)
+      destination_url = url(destination_href)
+
+      if exisiting_destination_href = @known_aliases[alias_url]
+        if exisiting_destination_href == destination_href
+          puts "WARNING: #{alias_href} -> #{destination_href} already exists"
+        else
+          raise "Can't have duplicate redirections: " \
+                "You're trying to create #{alias_href} -> #{destination_href} but " \
+                "#{alias_href} -> #{exisiting_destination_href} already exists"
+        end
+      end
+
+      if exisiting_alias_href = @known_destinations[alias_url]
+        raise "Can't chain redirections: " \
+              "You're trying to create #{alias_href} -> #{destination_href} but " \
+              "#{exisiting_alias_href} -> #{alias_href} exists"
+      end
+
+      if exisiting_destination_href = @known_aliases[destination_url]
+        raise "Can't chain redirections: " \
+              "You're trying to create #{alias_href} -> #{destination_href} but " \
+              "#{destination_href} -> #{exisiting_destination_href} exists"
+      end
+
+      @known_aliases[alias_url] = destination_href
+      @known_destinations[destination_url] = alias_href
+    end
+
+    def url(href)
+      @base_uri ||= URI(@site.config["url"]).tap { |uri| uri.path = "" }
+      URI(href).scheme.nil? ? "#{@base_uri}#{href}" : href
     end
 
     def alias_template(destination_path)
@@ -149,7 +190,6 @@ module Jekyll
   end
 
   class PagelessRedirectFile < StaticFile
-    require 'set'
 
     def destination(dest)
       File.join(dest, @dir)
