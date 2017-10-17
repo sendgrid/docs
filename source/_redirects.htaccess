@@ -250,7 +250,6 @@ Redirect 301 /Classroom/Basics/does_sendgrid_support_end_to_end_tls.html http://
 Redirect 301 /Classroom/Basics/email_flow.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/email_flow.html
 Redirect 301 /Classroom/Basics/everything_about_dmarc.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html
 Redirect 301 /Classroom/Basics/link_shorteners.html http://sendgrid.com/docs/Classroom/Build/Add_Content/link_shorteners.html
-Redirect 301 /Classroom/Basics/password.html http://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Basics/recommended_smtp_settings.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html
 Redirect 301 /Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html http://sendgrid.com/docs/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html
 Redirect 301 /Classroom/Basics/sendgrid_oem_process.html http://sendgrid.com/docs/Classroom/Basics/Misc/sendgrid_oem_process.html
@@ -606,7 +605,6 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html
-Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
@@ -739,7 +737,7 @@ Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Setti
 #######
 
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head [NE,R]
+Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 
 #######
 #
