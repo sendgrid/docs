@@ -349,7 +349,6 @@ Redirect 301 /Classroom/Deliver/how_can_i_guarantee_my_emails_arrive_in_my_recip
 Redirect 301 /Classroom/Deliver/how_do_i_keep_emails_from_dropping.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/how_do_i_keep_emails_from_dropping.html
 Redirect 301 /Classroom/Deliver/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html
 Redirect 301 /Classroom/Deliver/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html
-Redirect 301 /Classroom/Deliver/my_emails_are_being_dropped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html
 Redirect 301 /Classroom/Deliver/my_emails_are_going_to_spam.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_going_to_spam.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/spam_trapped.html
@@ -772,8 +771,6 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_S
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
-
-
-
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
 
 
