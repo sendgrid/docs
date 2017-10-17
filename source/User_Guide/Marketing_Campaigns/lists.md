@@ -99,30 +99,38 @@ The fields `Date Added` and `Last Updated` are system generated. `Date Added` re
 You can create up to 400 segments.
 {% endinfo %}
 
-To set up a segment, click the “add list or Segment” button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
+*To create a Segment:*
 
-![]({{root_url}}/images/lists_5.png "Delete a List")
+1. To set up a segment, click the **Add List or Segment** button from [Contacts]({{site.marketing_campaigns_url}}/contacts).
+  ![]({{root_url}}/images/lists_5.png "Add List or Segment")
+1. Select **New Segment**.
+1. Select which List to have the Segment pull from.
 
-Then select the “New Segmentation” option. You can then start managing the parameters for your segment including the name and the conditions that allow a
-contact into this segment. This is where the type you set for your custom fields matters because different operators (`IS`,
-`IS NOT`, `IS BEFORE`, `IS AFTER`, `CONTAINS WORD`, etc.) will show up depending on the type of custom field you selected. For
-example, a field that is a “number” will show greater than, less than, and equals as options where a “text” field will
-show `IS` and `IS NOT` as options. As you add conditions you
-will be able to select `AND` or `OR` as options, where `AND` indicates
-both conditions are required and `OR` indicates either condition will work.
+  Towards the bottom, you can set certain conditions in order to populate the Segment from the select List
+  
+1. In **Select Condition** choose a desired condition or custom field.
+1. In **Select Criteria** choose from a list of available operators based on the chosen condition. (`IS`, `IS NOT`, `IS BEFORE`, `IS AFTER`, `CONTAINS WORD`, etc.)
 
+  Different operators will show up depending on the type of condition or custom field selected. e.g. a field that is a “number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options where instead a “text” field will
+show `IS` and `IS NOT` as options.
 
+1. Select **+** to add additional conditions.
 
+ You will be able to select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true.
+ 
 {% info %}
 You can add up to 15 different conditions per segment.
 {% endinfo %}
 
-![]({{root_url}}/images/lists_3.png "Create a Segment")
+![]({{root_url}}/images/lists_3.png "Example of a Segment requiring countries to be either U.S. or Canada")
 
-You can also segment your users by their engagement with your email campaigns. To do this, create a new list and choose
-the `Engagement: Opens` or `Engagement: Clicks` option from
-the bottom of the conditions fields list. Based on the criteria you set, you can then market to your users based on how
+You can also segment your users by their engagement with your email campaigns. You can then market to your users based on how
 engaged they are with a specific campaign. This is especially useful for doing things like rewarding high engagement users.
+
+*To create this Segment:*
+
+1. Create a new Segment.
+1. In **Select Condition** choose **Engagement: Opens** or **Engagement: Clicks**
 
 ![]({{root_url}}/images/lists_engagement_segment_1.png "User Engagement Segment")
 
@@ -131,14 +139,17 @@ engaged they are with a specific campaign. This is especially useful for doing t
 Export a Segment
 {% endanchor %}
 
-Export the contacts on a list by clicking the gear icon in the same row as your segment and then choosing the “export”
-option. This will trigger SendGrid to send an email to the primary email address on the account that includes a link to
+*To export a Segment:*
+
+1. Click the gear icon in your Segment's row
+1. Choose **Export**
+
+  This will trigger SendGrid to send an email to the primary email address on the account that includes a link to
 download the CSV of all the contacts in the list and their associated custom field values.
 The CSV export email will look like:
 
-![]({{root_url}}/images/lists_4.png "Export a Segment List")
+![]({{root_url}}/images/lists_4.png "CSV Export Email")
 
 {% info %}
 The download link for your CSV export will be valid for 24 hours.
 {% endinfo %}
-
