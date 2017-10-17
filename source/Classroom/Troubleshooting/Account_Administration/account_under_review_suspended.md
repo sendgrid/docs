@@ -10,15 +10,13 @@ layout: page
 navigation:
   show: true
 ---
-<<<<<<< HEAD
 - [Warned](#-Warned)
 - [Suspended](#-Suspended)
 - [Deactivated](#-Deactivated)
 - [Banned](#-Banned)
 - [Reactivation](#-Reactivation)
-=======
+
 SendGrid reviews accounts that appear to have abnormal activity in order to preserve your reputation as a sender, as well as to prevent potential bad actors on our system from influencing the rest of our sender population. The possible states of account review are explained below:  
->>>>>>> upstream/develop
 
 SendGrid reviews accounts that appear to have abnormal activity in order to preserve your reputation as a sender, as well as to to prevent potential bad actors on our system from influencing the rest of our sender population. The possible states of account review are explained below:
 
@@ -29,7 +27,6 @@ Warned
 {% endanchor %}
 The account maintains full sending functionality during a warning period. However, if we do not receive a response your account may be suspended to prevent further risk to your sending reputation. Warned accounts will be unable to upgrade their usage plan, or create new sub-users until the review has concluded to our satisfaction.
 
-<<<<<<< HEAD
 {% anchor h2 %}
 Suspended
 {% endanchor %}
@@ -59,10 +56,3 @@ Additional Resources
 {% endanchor %}
 
 - [Doc Name]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
-=======
-{% anchor h2 %}Banned{% endanchor %}
-All access to the account is blocked, both through SendGrid.com as well as the API. Email requests to our system will not be accepted. If an account has dedicated IP's assigned to it, they will be removed. Related sub-users will also be banned and unable to send email or access their account. _Please be aware that an account in a banned state will stop any auto-renewal billing, though you will still be charged for any overages or Marketing Campaigns contact storage during the current month._  
-  
-{% anchor h2 %}Reactivation{% endanchor %}
-When all potential issues are resolved to our satisfaction, SendGrid will reactivate your service. Once reactivated, your account will be restored and any queued messages will be delivered.
->>>>>>> upstream/develop
