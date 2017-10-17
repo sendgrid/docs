@@ -38,7 +38,7 @@ The Contacts page in Marketing Campaigns has been updated to improve the user ex
 Substitution tag update
 {% endanchor %}
 
-Substitution tags are no longer case sensitive in the email content. Previously, the substitution tag in your email content had to exactly match the substitution tag. For example, if you have the substitution tag `[%panda%]`, and your email content says `"hello [%PANda%], buy my bamboo"`, the substitution tag for [%panda%] is now applied.
+Substitution tags are no longer case sensitive in the email content. Previously, the substitution tag in your email content had to exactly match the substitution tag. For example, if you have the substitution tag `[%panda%]`, and your email content says `"hello [%PANda%], buy my bamboo"`, the substitution tag for `[%panda%]` is now applied.
 
 {% anchor h2 %}
 30 September 2017
@@ -64,7 +64,9 @@ You now have the ability to save swatches of commonly used colors when designing
 5 September 2017
 {% endanchor %}
 
-**Amazon Marketplace**
+{% anchor h3 %}
+Amazon Marketplace
+{% endanchor %}
 
 SendGrid is now available on the [AWS Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB)! AWS customers are now able to integrate SendGrids email infrastructure and email marketing tools with their other AWS tools. For more information, see the [blog](https://aws.amazon.com/blogs/apn/inside-sendgrids-expanded-relationship-with-aws/) and the [documentation](https://sendgrid.com/docs/Integrate/Partners/Amazon_Marketplace.html).
 

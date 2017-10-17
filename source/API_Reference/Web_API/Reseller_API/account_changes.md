@@ -18,7 +18,7 @@ Upgrading a user generates an invoice. If the user is upgrading from a free to a
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_upgrade</em> .' %}
  {% parameter 'user' 'Yes' 'Must be a User under your account.' 'The customers username.' %}
  {% parameter 'package' 'Yes' 'The name of the package you will be upgrading the User to.' %}
- {% parameter 'ip[]' 'No' 'If the package you are upgrading your user requires a whitelabel and/or a unique IP, you must assign a free IP to this user.' %}
+ {% parameter 'ip[]' 'No' 'If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.' %}
  {% parameter 'ip_group[]' 'No' 'If the package you are upgrading your user to does not require an IP or whitelabel, you must place them in an IP group.' %}
 {% endparameters %}
 

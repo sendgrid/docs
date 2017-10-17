@@ -235,7 +235,7 @@ You may create up to a maximum of 1500 domain whitelabels.
 ### Update a Domain [PATCH]
 
 + Attributes
-    + default false (optional, boolean) - Inidcates whether this domain whitelabel should be considered the default. Defaults to false.
+    + default false (optional, boolean) - Indicates whether this domain whitelabel should be considered the default. Defaults to false.
     + custom_spf false (optional, boolean) - Indicates whether to generate a custom SPF record for manual security. Defaults to false.
 
 + Request (application/json)

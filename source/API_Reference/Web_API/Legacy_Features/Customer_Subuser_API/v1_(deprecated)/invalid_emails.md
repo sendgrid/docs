@@ -146,12 +146,12 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *delete*</td>
-         <td>This will allow you to delete a invalid email for the specified subuser</td>
+         <td>This will allow you to delete an invalid email for the specified subuser</td>
       </tr>
       <tr>
          <td>email</td>
          <td>No</td>
-         <td>Must be a invalid email</td>
+         <td>Must be an invalid email</td>
          <td>You must specify the invalid emails to remove</td>
       </tr>
    </tbody>
