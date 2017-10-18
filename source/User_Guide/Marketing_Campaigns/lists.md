@@ -9,8 +9,10 @@ seo:
   override: true
   description:
 ---
+- [Creating a Segment](#-Creating-a-Segment)
+- [Exporting a Segment](#-Exporting-a-Segment)
 
-Using the information stored in your [contact lists](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html), you can filter the data to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or from a specific existing list. [Custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) allow you to use unique information to identify contacts for different segments.
+Using the information stored in your [contact lists](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html), you can filter the data to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) allow you to use unique information to identify contacts for different segments.
 
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. 
 
@@ -19,7 +21,7 @@ Creating a Segment
 {% endanchor %}
 
 You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
-includes email, first_name, last_name, and all of the custom fields you have created prior to making this segment.
+includes email, first_name, last_name, and all of the custom fields you have created before making this segment.
 
 {% info %}
 You can create up to 400 segments.
@@ -29,17 +31,17 @@ You can create up to 400 segments.
 
 1. Navigate to **Marketing** and then select **Contacts**.
 1. Click **Create Segment**. 
-1. Choose **Segment all contacts** or **Segment an exisiting list**.
+1. Choose **Segment all contacts** or **Segment an existing list**.
 1. Enter a *Segment Name*.
-1. If you chose to segment an existing list, select a list from the *Select List to Segment* drop-down. 
-1. From the *Select Condition* drop-down choose a desired condition or custom field.
+1. To segment an existing list, select a list from the *Select List to Segment* drop-down. 
+1. From the *Select Condition* drop-down, choose the desired condition or custom field.
 1. From *Select Criteria* drop-dwn choose from a list of available operators based on the chosen condition.
 
 {% info %}
 The operator tells the segment *how* to apply the condition.
 {% endinfo %}
 
-Depending on which condition is selected, the operators you can choose from differ. The operators assigned to custom fields will depend on the field type (Text, Date, or Number).  For example, a condition labled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
+Depending on which condition is selected, the operators you can choose from differ. The operators assigned to custom fields will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
