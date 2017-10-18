@@ -137,23 +137,19 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 Adding Categories
 {% endanchor h2 %}
 
-Assigning categories to a campaign allow you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: "Weekly Digest," "Product Announcements."
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: "Weekly Digest," "Product Announcements."
 
-1. Click on the "Settings" panel located on the left-hand side of the screen.
+1. Click the *Settings* panel located on the left-hand side of the window to expand it.
 
-1. In the "Settings" tab, under the "Campaign Settings" accordian panel, locate the "Categories" header.
+1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu. 
 
-1. Click on the "Add Categories" line and then type in the tag to add and hit enter.
+1. Locate the *Categories* field under *Campaign Settings*.
 
+1. Select the *Add Categories* field and then type in the tag to add and hit enter. 
+
+{% info %}
 Currently, only 10 categories can be added to each campaign.
-
-{% warning %}
-Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use Unique Arguments instead.
-{% endwarning %}
-
-{% warning %}
-Categories must be in 7bit encoding using the US-ASCII character set.
-{% endwarning %}
+{% endinfo %}
 
 {% anchor h2 %}
 Previewing Your Campaign
