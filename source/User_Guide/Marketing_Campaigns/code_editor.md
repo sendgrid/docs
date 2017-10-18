@@ -15,6 +15,7 @@ Use the Code Editor to create a template, edit a SendGrid template, or build a c
 * [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
 * [Uploading Images](#-Uploading-Images)
 * [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Adding Categories](#-Adding-Categories)
 * [Previewing Your Campaign](#-Previewing-Your-Campaign)
 
 
@@ -131,6 +132,28 @@ You can add the following substitution tags to your marketing campaign:
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
 `[%first_name | Valued Customer%]`
+
+{% anchor h2 %}
+Adding Categories
+{% endanchor h2 %}
+
+Assigning categories to a campaign allow you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: "Weekly Digest," "Product Announcements."
+
+1. Click on the "Settings" panel located on the left-hand side of the screen.
+
+1. In the "Settings" tab, under the "Campaign Settings" accordian panel, locate the "Categories" header.
+
+1. Click on the "Add Categories" line and then type in the tag to add and hit enter.
+
+Currently, only 10 categories can be added to each campaign.
+
+{% warning %}
+Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use Unique Arguments instead.
+{% endwarning %}
+
+{% warning %}
+Categories must be in 7bit encoding using the US-ASCII character set.
+{% endwarning %}
 
 {% anchor h2 %}
 Previewing Your Campaign
