@@ -33,9 +33,8 @@ Getting Started With the Design Editor
 {% endanchor h3 %}
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
-1. Click **Create Campaign**. 
-
-   To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
+1. Click **Create Campaign**.
+   <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
 
    ![]({{root_url}}/images/duplicate_campaign.png)
 
