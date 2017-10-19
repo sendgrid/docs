@@ -54,6 +54,8 @@ Open source library contributions from the awesome SendGrid community.
 If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}).
 {% endinfo %}
 
+-   [sendgrid]( https://packagist.org/packages/godpod/sendgrid)
+
 {% anchor h2 %}
 Web API Libraries
 {% endanchor %}
