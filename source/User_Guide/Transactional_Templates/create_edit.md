@@ -22,23 +22,18 @@ Transactional templates are account and subuser specific. Templates created on a
 Create a Template
 {% endanchor %}
 
-When you first visit the transactional templates page, you will be asked to create your first template.
-
+1.Open the transactional templates page and click on **Create Template** button.
 <a href="{{site.app_url}}/templates/new">![](/images/templates_create_edit_1.png "Add a Template")</a>
 
-Click “Create Template” and you’ll be asked to add a Template Name.
+2.Add a unique Template name in the dialogue box and then click on **Save**. A new Template group is created.
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-When you hit save, your new template group will be created.
-
-![](/images/templates_create_edit_3.png "Template Group")
-
-You can then open the actions dropdown menu to create a new version.
+3.Open the **Actions** dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
-When you click Add Version, you will be taken to the editor. From here, you can change the subject and the body of your email template.
+When you click **Add Version**, you will be taken to the editor. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
@@ -50,11 +45,11 @@ Editing Your HTML Template
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 {% endinfo %}
 
-To add a template, open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html). Copy and paste your HTML code into the dark-background code editor.
+1.To add a template, open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html). 
 
-If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
+2.Copy and paste your HTML code into the dark-background code editor. If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 
-When you’re done editing, click **Save** to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
+3.When you’re done editing, click **Save** to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
 
 {% info %}
 You can also use the [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html) to create and edit templates.
@@ -65,24 +60,16 @@ Preview and Test Your Template
 {% endanchor %}
 
 We suggest that when you’re done making changes to your template, you preview and test it to ensure that the format and layout look the way you expect. We recommend that you always test your template before activating it.
+ 
+1.Select the **Preview** option, a sidebar window will pop out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
 
-<div class="row">
+![](/images/template_engine_12.png "Preview option")
 
-  <div class="clearfix col-md-6">  
-    When you select the “Preview” option, a sidebar window will pop out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
-    <br>
-    <br>
-    You may send a test email using your new template from this window.
-  </div>
-  <div class="col-md-6">
-    <img src="{{root_url}}/images/template_engine_12.png" class="img-responsive pull-right"/>
-  </div>
-  <br>
-</div>
+2.Send a test email using your new template by clicking on the **Send test** button from this window.
 
 ![](/images/templates_create_edit_8.png "Preview and Test")
 
-If you click the Send Test button, you will be given the option of specifying the recipient, and subject line, of your test email.
+3.If you click the **Send Test** button, you will be given the option of specifying the recipient, and subject line, of your test email.
 
 ![](/images/templates_create_edit_9.png "Send Test")
 
