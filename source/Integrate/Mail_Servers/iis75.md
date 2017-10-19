@@ -28,7 +28,7 @@ Before you get going, you'll need to set up IIS in order to support SendGrid int
 
 <center>
 
-![](https://sendgrid.com/docs/images/iis_mgr_site.png)
+![]({{root_url}}/images/iis_mgr_site.png "IIS Manager")
 
 </center>
 
