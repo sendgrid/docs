@@ -64,7 +64,8 @@ Pointing to a Hostname and URL
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
-  The subdomain-domain combination must be unique. We recommend adding a subdomain such as "parse" to ensure that only emails sent to the @parse.example.com are parsed.
+  Parse should be a unique subdomain of Whitelabeled Domain, not the same subdomain.
+If you use the same subdomain as your Whitelabeled Domain, you must have Automatic Security disabled on the Domain Whitelabel. Otherwise, those messages will bounce due to an infinite CNAME>MX loop.
 
 {% info %}
 The URL must be accessible from the public web.
