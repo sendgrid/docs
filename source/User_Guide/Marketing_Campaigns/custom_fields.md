@@ -61,12 +61,11 @@ Deleting a Custom Field
 1. Locate the field you wish to remove.
 1. Hover over the action menu to the right of the field name entry.
 1. Select the delete icon. 
-1. Clic **Confirm**.
+1. Click **Confirm**.
 
 {% warning %}
 Deleting a custom field delete all values for that field across your contact database. If you have any campaigns using the data in this field via a substitution tag, those values NOT get replaced when the campaign is sent. You cannot delete a custom field that is currently being used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
-
 
 {% anchor h3 %}
 Additional Resources

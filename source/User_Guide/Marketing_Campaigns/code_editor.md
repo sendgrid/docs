@@ -27,7 +27,7 @@ Getting Started with the Code Editor
 
 1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
 
-   ![]({{root_url}}/images/duplicate_campaign.png)
+   ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
