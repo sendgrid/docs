@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 99
-title: Sending an Email
+title: Sending a Campaign
 navigation:
   show: true
 seo:
-  title: Sending an Email
+  title: Sending a Campaign
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
@@ -19,7 +19,7 @@ Before sending your first campaign, you need to do the following:
 - [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html) 
 - [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional) 
 
-*To send your first email:*
+*To send your first campaign:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
 
@@ -49,9 +49,7 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**. 
 
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [[A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)].
-
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information on A/B testing, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
+1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
 
 1. Add a list or segment of recipients to receive your campaign.
 
