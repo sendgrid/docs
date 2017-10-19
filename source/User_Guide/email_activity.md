@@ -18,6 +18,11 @@ The Email Activity page allows you to view a snapshot of the email related activ
 Email activity only shows the most recent 500 events. To access data in real time, we recommend that you consider implementing our Event Webhook.
 {% endinfo %}
 
+* [Email-Events](#-Email-Events)
+* [Filtering The Activity Feed](#-Filtering-The-Activity-Feed)
+* [Searching Within Your Email Activity](#-Searching-Within-Your-Email-Activity)
+* [Subuser Email Activity](#-Subuser-Email-Activity)
+
 {% anchor h2 %}
 Email Events
 {% endanchor %}
