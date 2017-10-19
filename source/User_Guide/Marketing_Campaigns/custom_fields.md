@@ -12,7 +12,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Custom fields allow you to add extra information about your contacts to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
+Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
 {% info %}
 You can create up to 60 custom fields; 20 of each type (text, date, or number).
@@ -51,7 +51,7 @@ Text custom fields are limited to a size of 32,766 bytes.
 Reserved Fields
 {% endanchor %}
 
-Your account comes preloaded with reserved fields that cannot be removed. With the exception of first_name, last_name, and email, these fields are auto-populated based by SendGrid. 
+Your account comes preloaded with reserved fields that cannot be removed. With the exception of first_name, last_name, and email, these fields are auto-populated by SendGrid. 
 
 Here is a short list of the Reserved Custom Fields:
 
@@ -70,14 +70,21 @@ Here is a short list of the Reserved Custom Fields:
 </table>
 
 {% anchor h2 %}
-Delete a Custom Field
+Deleting a Custom Field
 {% endanchor %}
+
+*To delete a custom field:*
+
+1. Navigate to **Marketing Campaigns** and select **Custom Fields**.
+1. Locate the field you wish to remove.
+1. Hover over the action menu to the right of the field name entry.
+1. Select the delete icon. 
+1. Clic **Confirm**.
 
 {% warning %}
 Deleting a custom field will delete all values for that field across your contact database. If you have any campaigns using the data in this field via a substitution tag, those values will NOT get replaced when the campaign is sent. You cannot delete a custom field that is currently being used in a segment. This deletion process may take several minutes--you will continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
-If you need to delete a custom field, you can do so by clicking the action menu in the same row as your field. When you delete the custom field,you will see a warning that all data associated with this field will be removed as well.
 
 {% anchor h3 %}
 Additional Resources
