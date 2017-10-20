@@ -38,7 +38,7 @@ database.
 You can query your list in different ways, based on the data type:
 
 * **Date** - allows you to select contacts before, after, or on a specific date. *Example: 1/1/2014*
-* **Text** - allows you to select contacts who match specific text. *Example: Pet field that says "Dog"*
+* **Text** - allows you to select contacts who match the specific text. *Example: Pet field that says "Dog"*
 * **Number** - allows you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
 {% warning %}
@@ -49,7 +49,7 @@ Text custom fields are limited to a size of 32,766 bytes.
 Reserved Fields
 {% endanchor %}
 
-Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved: id, first_name, last_name, email, lists, created_at, updated_at, last_emailed, last_clicked, last_opened. With the exception of first_name, last_name, and email, these fields are auto-populated by SendGrid. 
+Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved: id, first_name, last_name, email, lists, created_at, updated_at, last_emailed, last_clicked, last_opened. Except first_name, last_name, and email, these fields are auto-populated by SendGrid. 
 
 {% anchor h2 %}
 Deleting a Custom Field
@@ -64,7 +64,7 @@ Deleting a Custom Field
 1. Click **Confirm**.
 
 {% warning %}
-Deleting a custom field delete all values for that field across your contact database. If you have any campaigns using the data in this field via a substitution tag, those values NOT get replaced when the campaign is sent. You cannot delete a custom field that is currently being used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
+Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values NOT get replaced when you send the campaign. You cannot delete a custom field that is used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
 {% anchor h3 %}
