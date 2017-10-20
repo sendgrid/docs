@@ -146,5 +146,5 @@ The download link for your CSV export will be valid for 24 hours.
 Additional Resources
 {% endanchor h2 %}
 
-* Contacts(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
-* Custom fields(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
+- Contacts(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
+- Custom fields(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
