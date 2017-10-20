@@ -34,7 +34,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "spellcheck" : "echo \"Spellchecking...\" && mdspell '**/*.md' '!**/node_modules/**/*.md' -a --en-us -r && exit 0"
+    "spellcheck" : "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' -a --en-us -r && exit 0",
+    "spellcheck-file" : "mdspell -a --en-us -r"
   },
   "repository": {
     "type": "git",
