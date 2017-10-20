@@ -19,4 +19,4 @@ Click [here]({{root_url}}/Classroom/Troubleshooting/Account_Administration/recov
 
 Click [here]({{root_url}}/Classroom/Basics/Account/how_do_i_reset_my_password.html) to learn how to reset your password.
 
-If you are integrating with SendGrid's Web API v3, we highly recommend that you only use [API Keys]({{root_url}}/Classroom/Basics/API/api_key_permissions.html), not Basic Auth, when [authenticating]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html).
+If you are integrating with SendGrid's Web API v3, we highly recommend that you only use [API Keys]({{root_url}}/Classroom/Basics/API/api_key_permissions.html) when [authenticating]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html).

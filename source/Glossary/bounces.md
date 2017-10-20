@@ -2,7 +2,7 @@
 seo:
   title: Bounces
   description: Bounced emails are emails that are returned to the server that sent them.
-  keywords: blocks, undelivered email
+  keywords: bounced email, bounces, undelivered email, returned email, rejected email
 title: Bounces
 weight: 0
 layout: page

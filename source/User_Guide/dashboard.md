@@ -14,9 +14,15 @@ navigation:
 
 The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You can view the stats about all of the emails you have sent through your SendGrid account.
 
+* [Stats](#-Stats)
+* [Activity Feed](#-Activity-Feed)
+* [Transactional-Emails](#-Transactional-Emails)
+* [Unsubscribe-Groups](#-Unsubscribe-Groups)
+* [Help-Links](#-Help-Links)
+
 {% anchor h2 %}
 Stats
-{% endanchor %}
+{% endanchor h2 %}
 
 On your dashboard, you can choose to see the last 7 or the last 30 days of email statistics in the main graph so that you can keep an eye on your sending. From this graph, you can see Requests, Deliveries, Opens, Clicks, Bounces, and Spam Reports.
 
@@ -24,7 +30,7 @@ If you want to see all of your email statistics, go to your [Statistics Page]({{
 
 {% anchor h2 %}
 Activity Feed
-{% endanchor %}
+{% endanchor h2 %}
 
 Your Activity Feed shows you the last 500 email activity events for your account. This includes all actions that you will see in your full Email Activity Feed. You can filter on any of the activity filters and you can search your activity by email address.
 
@@ -32,18 +38,18 @@ If you’d like to see all of your email activity, please go to the [Email Activ
 
 {% anchor h2 %}
 Transactional Emails
-{% endanchor %}
+{% endanchor h2 %}
 
 This box shows you the information for sending transactional emails via SendGrid’s [SMTP Relay]({{root_url}}/Glossary/smtp_relay.html). Your API Key is only shown once, when you create it, so it will not be shown on your dashboard.
 
 {% anchor h2 %}
 Unsubscribe Groups
-{% endanchor %}
+{% endanchor h2 %}
 
 The Unsubscribe Groups box will show you the current status of unsubscribe groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your unsubscribe groups.
 
 {% anchor h2 %}
 Help Links
-{% endanchor %}
+{% endanchor h2 %}
 
 We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us) and our [Documentation]({{root_url}}/).
