@@ -142,3 +142,9 @@ The CSV export email will look like:
 The download link for your CSV export will be valid for 24 hours.
 {% endinfo %}
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+* Contacts(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
+* Custom fields(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
