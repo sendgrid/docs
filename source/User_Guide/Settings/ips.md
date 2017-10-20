@@ -85,6 +85,6 @@ In order to use automated warmup, you must have at least one already warm IP so 
 Additional Resources
 {% endanchor h2 %}
 
-* IP Access Management(https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
-* Billing Settings(https://sendgrid.com/docs/User_Guide/Settings/billing.html)
-* Mail(https://sendgrid.com/docs/User_Guide/Settings/mail.html)
+- IP Access Management(https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
+- Billing Settings(https://sendgrid.com/docs/User_Guide/Settings/billing.html)
+- Mail(https://sendgrid.com/docs/User_Guide/Settings/mail.html)
