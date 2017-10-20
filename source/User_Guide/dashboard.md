@@ -14,7 +14,6 @@ navigation:
 
 The SendGrid dashboard is designed to give you an at-a-glance view of your current email activity. You can view the stats about all of the emails you have sent through your SendGrid account.
 
-## Table of Contents
 + [Stats](#-Stats)
 + [Activity Feed](#-Activity-Feed)
 + [Transactional Emails](#-Transactional-Emails)
