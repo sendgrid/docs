@@ -354,7 +354,7 @@ Redirect 301 /Classroom/Deliver/my_emails_are_going_to_spam.html https://sendgri
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/spam_trapped.html
 Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html
-Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html
+Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
