@@ -13,7 +13,7 @@ navigation:
  
 ![]({{root_url}}/images/IPAM_login_warning.png)
 
-It's possible under some circumstances to accidentally lock yourself out of your Sendgrid account when using IP Access Management. This article aims to help you get access again, as well as provide tips for avoiding lock-out in the future. 
+It's possible under some circumstances to accidentally lock yourself out of your SendGrid account when using IP Access Management. This article aims to help you get access again, as well as provide tips for avoiding lock-out in the future.
 
 1. **First, try accessing the account from the IP(s) you have previously whitelisted.** This may require you to travel to and log in from a different physical location, or enlist the help of a colleague who can connect to one of those networks. 
 

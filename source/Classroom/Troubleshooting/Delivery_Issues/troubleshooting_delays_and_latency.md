@@ -17,7 +17,7 @@ navigation:
 
 ### 1. Check these suggestions first:
 
-**1.** If you are integrated with Sendgrid using code, we _highly_ recommend using the official Sendgrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
+**1.** If you are integrated with SendGrid using code, we _highly_ recommend using the official SendGrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
 
 **2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html) sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
 
