@@ -7,32 +7,15 @@ This site is based on Octopress, which is in turn based on Jekyll, with a dash o
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
 
+The develop branch is merged to production weekly (unless we need to do a release sooner than that).
+
 The master branch is continuously deployed to production.
 
-_Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
+### _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
 
 **Submit all pull requests to the develop branch**
 
 **Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
-
-* CLAs and CCLAs
-* Local Setup
-    * Dependencies
-    * Setup Steps
-    * Configure jekyll
-    * Running
-    * View your install
-* Vagrant Setup
-* Testing
-* Important Things to Know
-* Config
-    * The Nav Tree
-    * Pages
-	    * SEO
-	    * Anchors
-	    * Info blocks
-	    * API Examples
-* JS and CSS, etc
 
 ## CLAs and CCLAs
 
@@ -71,109 +54,106 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 the yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
 
-		$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby
+	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
 
 * Close and reopen your terminal window
 * Check which version you have installed
 
-		$ ruby -v
+	`$ ruby -v`
 
 The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
 
-		$ rvm install 2.3.0
+	`$ rvm install 2.3.0`
 
 then set that version to be the default version
 
-		$ rvm --default use 2.3.0
+	`$ rvm --default use 2.3.0`
 
 * Install Homebrew (if you don't have it)
 
-		$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 * Install YAML
 
-		$ brew install libyaml
+	`$ brew install libyaml`
 
 * Install npm
 
-		$ brew install npm
+	`$ brew install npm`
 
 * Set your Node version
 
-		$ npm install -g n
+	`$ npm install -g n`
 
-		$ n 6.10.1
+	`$ n 6.10.1`
 
 * install git flow to manage branches ([http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)) (optional)
 
-		$ brew install git-flow
+	`$ brew install git-flow`
 
 * clone repo
 
-		$ git clone [https://github.com/sendgrid/docs.git](https://github.com/sendgrid/docs.git)
+	`$ git clone [https://github.com/sendgrid/docs.git](https://github.com/sendgrid/docs.git)`
 
 OR use the GitGUI tool to clone the repo
 
 
 * switch to develop branch to make changes
 
-		$ ls docs
+	`$ ls docs`
 
-		$ git checkout develop
+	`$ git checkout develop`
 
 * install bundle (if you don't have this installed)
 
-		$ sudo gem install bundler
+	`$ sudo gem install bundler`
 
 * Go to your docs directory
 
-		$ cd docs
+	`$ cd docs`
 
 * Install the build tools
 
-		$ npm install
+	`$ npm install`
 
 to install build tools.
 
 * Install bower
 
-		$ npm install -g bower
+	`$ npm install -g bower`
 
 * Install client-side dependencies (jQuery, bootstrap)
 
-		$ bower install
+	`$ bower install`
 
 to install client-side dependencies.
 
 * Install required Ruby gems
 
-		$ bundle install
+	`$ bundle install`
 
 If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
 
-		gem uninstall libv8
-
-		brew tap homebrew/versions
-
-		brew install --force v8-315
-		bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"
-		sudo gem install therubyracer -v '0.12.2'
-
-		bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"
-		bundle install
+	- `gem uninstall libv8`
+	- `brew tap homebrew/versions`
+	- `brew install --force v8-315`
+	- `bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"`
+	- `sudo gem install therubyracer -v '0.12.2'`
+        - `bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"`
+	- `bundle install`
 
 ### Configure jekyll
 
 * Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
 
-		$ cp _config.sample.yml _config.yml
+	`$ cp _config.sample.yml _config.yml
 
 * Edit the following items in the _config.yml "Jekyll & Plugins" section to match your local environment:
 
-		source: /path_to_your_files/source_
+	`source: /path_to_your_files/source_`
 (if you're running locally path_to_your_files will be `/)_`
 
-		destination: /path_to_your_files/public
+	`destination: /path_to_your_files/public`
 
 For example:
 
@@ -185,7 +165,7 @@ For example:
 
 * Do the following instead of Jekyll serve:
 
-		$ bundle exec rake preview
+	`$ bundle exec rake preview`
 
 Note: if you receive an error message similar to "No Java Runtime Present: Requesting Install" please see the following instructions
 
@@ -195,7 +175,7 @@ Note: if you receive an error message similar to "No Java Runtime Present: Reque
 * Install it
 * In your terminal, type:
 
-		export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
 * run java -version again
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
@@ -204,25 +184,12 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 ### View your install
 * Browse to [localhost:4000](localhost:4000)
 
-## Vagrant Setup
 
-* Clone the repo.
-* Bring up development environment with Vagrant
-
-		$ vagrant up
-
-* Browse to [http://localhost:4000](http://localhost:4000)
-
-## Testing
-
-		$ vagrant ssh
-		$ cd docs && bin/test
-
-## Important Things to Know
+### Important Things to Know
 
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
-* To rebuild the site: <code>rake generate</code>
+* To rebuild the site, [control][c] to cancel the build, and then [bundle exec rake preview] to restart it.
 
 ## Config
 
