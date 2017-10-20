@@ -25,5 +25,5 @@ There are a few things to take into account when requesting a password reset:
 * The reset email may be in your SPAM or Junk folder. If you do find it there, be sure to mark it as "not spam".
 
 
-**For security reasons, Sendgrid support agents cannot change account passwords.**
+**For security reasons, SendGrid support agents cannot change account passwords.**
 

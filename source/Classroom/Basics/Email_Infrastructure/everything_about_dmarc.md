@@ -34,7 +34,7 @@ Return Path's Brand Monitor is one, and Agari is another.
 5. Escalate your DMARC policy tags from 'p=none' to 'p=quarantine' to 'p=reject' as you gain experience. 
 
 
-## 1. Deploy DKIM & SPF by Whitelabeling your Sendgrid IP
+## 1. Deploy DKIM & SPF by Whitelabeling your SendGrid IP
 
 Start by completing the Whitelabel process for your account. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
 For more information on completing this process, visit the documentation:   

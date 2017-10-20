@@ -61,7 +61,7 @@ Forgot your password? No problem.
 
 **Still can't log in?** [No worries, read more options here.]({{root_url}}/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html)
 
-**Do you have a reseller account?**  Look for specific communication from your reseller. Many partners like Heroku, Appdirect, Engineyard, Softlayer, and Azure will complete this update with no action required from you.
+**Do you have a reseller account?**  Look for specific communication from your reseller. Many partners like Heroku, AppDirect, Engineyard, Softlayer, and Azure will complete this update with no action required from you.
 
 
 >**Please use caution**, when updating passwords, to maintain seamless email flow it is important to also update any custom code, web pages or servers that use this account with your new passwords. When changing passwords consult the email administrator who created the account if you are uncertain.
