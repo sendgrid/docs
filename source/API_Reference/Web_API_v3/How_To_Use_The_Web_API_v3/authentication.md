@@ -46,17 +46,17 @@ When authenticating using the on-behalf-of header, you will need to use the API 
 {% anchor h3 %}
 Using API Key:
 {% endanchor %}
- 
+
 
 {% codeblock lang:bash %}
 curl -X GET \
    'https://api.sendgrid.com/v3/stats?start_date=2016-01-01&end_date=2017-01-01&aggregated_by=month' \
-   
+
    -H 'authorization: Bearer API Key' \
-   
+
    -H 'on-behalf-of: subuser_username' \
 {% endcodeblock %}
-  
+
  {% warning %}  
  Please note: The on-behalf-of header will not work with the `mail.send` API.
  {% endwarning %}  

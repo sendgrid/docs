@@ -19,7 +19,7 @@ If you receive this kind of error : "certificate verification failed for [smtp.s
 
 The connection is still encrypted, it's just that your server doesn't have the necessary CA (ceritificate authority) certs to confirm that our certificate is valid.
 
-You can download the Godaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called "gd\_bundle-g2-g1.crt"). Save that somewhere on your server, for instance "/etc/postfix/ssl/gd\_bundle-g2-g1.crt". Finally, tell Postfix where to find it by adding or editing the following line in /etc/postfix/ [main.cf](http://main.cf/):
+You can download the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called "gd\_bundle-g2-g1.crt"). Save that somewhere on your server, for instance "/etc/postfix/ssl/gd\_bundle-g2-g1.crt". Finally, tell Postfix where to find it by adding or editing the following line in /etc/postfix/ [main.cf](http://main.cf/):
 
  
 

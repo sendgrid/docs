@@ -146,6 +146,7 @@ PHP
 -   [sendgrid-subuser-api](https://github.com/eliksir/sendgrid-subuser-api) *by Eliksir* - Library that makes it easy to work with the SendGrid Subuser API
 -   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP. Very structured, OO implementation with excellent test coverage. A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
 -   [laravel-sendgrid-driver](https://github.com/s-ichikawa/laravel-sendgrid-driver) *by Shingo Ichikawa* - This liblary can add sendgrid driver into the laravel's mail configure.
+-   [godpod/sendgrid](https://packagist.org/packages/godpod/sendgrid) *by Ravi Rajendra* - This library allows you to quickly and easily send emails or make api calls through SendGrid using PHP.
 
 {% anchor h3 %}
 Python
