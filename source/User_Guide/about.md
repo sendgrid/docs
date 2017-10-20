@@ -12,9 +12,9 @@ navigation:
 
 The SendGrid User Guide will give you information about the different user interfaces within the SendGrid UI. As changes and new features are added to our UI, we will update the User Guide to reflect them.
 
-+ [Open Source](#-Open-Source)
-+ [Make Changes](#-Make-Changes)
-+ [Give Feedback](#-Give-Feedback)
+- [Open Source](#-Open-Source)
+- [Make Changes](#-Make-Changes)
+- [Give Feedback](#-Give-Feedback)
 
 
 {% anchor h2 %}
