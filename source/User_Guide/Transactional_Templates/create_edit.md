@@ -22,18 +22,17 @@ Transactional templates are account and subuser specific. Templates created on a
 Create a Template
 {% endanchor %}
 
-1.Open the transactional templates page and click on **Create Template** button.
-<a href="{{site.app_url}}/templates/new">![](/images/templates_create_edit_1.png "Add a Template")</a>
-
-2.Add a unique Template name in the dialogue box and then click on **Save**. A new Template group is created.
+1. Open the transactional templates page and click **Create Template**.
+1. Add a unique template name in the dialogue box and then click **Save**. 
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-3.Open the **Actions** dropdown menu to create a new version.
+1.Open the **Actions** dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
-When you click **Add Version**, you will be taken to the editor. From here, you can change the subject and the body of your email template.
+1. Click **Add Version**. 
+<br></br>The editor opens. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
@@ -45,73 +44,60 @@ Editing Your HTML Template
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 {% endinfo %}
 
-1.To add a template, open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html). 
+*To add a template:*
 
-2.Copy and paste your HTML code into the dark-background code editor. If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
+1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
 
-3.When you’re done editing, click **Save** to keep all your changes. Please double check that the content is formatted correctly before you send an email using this template.
+1. If you selected the Code Edtior, copy and paste your HTML code into the code editor. 
+<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
 
-{% info %}
-You can also use the [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html) to create and edit templates.
-{% endinfo %}
+1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
 {% anchor h2 %}
 Preview and Test Your Template
 {% endanchor %}
 
-We suggest that when you’re done making changes to your template, you preview and test it to ensure that the format and layout look the way you expect. We recommend that you always test your template before activating it.
+SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
+
+*To preview your template:*
  
-1.Select the **Preview** option, a sidebar window will pop out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
+1. Select **Preview**.  <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
 
 ![](/images/template_engine_12.png "Preview option")
 
-2.Send a test email using your new template by clicking on the **Send test** button from this window.
+1. Click **Send Test** to send a test email using your new template. 
+1. Fill in the *recipient* and *subject line* and then click **Send**.  
 
 ![](/images/templates_create_edit_8.png "Preview and Test")
 
-3.If you click the **Send Test** button, you will be given the option of specifying the recipient, and subject line, of your test email.
-
 ![](/images/templates_create_edit_9.png "Send Test")
 
-Your substitution tags will not be replaced in this test, but you will be able to confirm the layout and format of your template.
+Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
 {% anchor h2 %}
 Activate Your Template
 {% endanchor %}
 
-<div class="row">
+*To activate your template:*
 
-  <div class="clearfix col-md-6">  
-  A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
-  <br>
-  <br>
-  Select the “Make Active” option from the gear icon menu.
-  </div>
-  <div class="col-md-6">
-    <img src="{{root_url}}/images/template_make_active.png" class="img-responsive pull-right"/>
-  </div>
-  <br>
-</div>
+1. Navigate to the template you wish to use and select the action menu.
+1. Select **Make Active**.  
+
+(% info %)
+A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
+(% endinfo %)
 
 {% anchor h2 %}
 Duplicate a Template
 {% endanchor %}
 
-<div class="row">
+*To duplicate a template:*
 
-  <div class="col-md-6">
-    <img src="{{root_url}}/images/templates_duplicate_version.png" class="img-responsive pull-left"/>
-  </div>
+1. Navigate to the template you wish to use and select the action menu.
+1. Select **Duplicate**.  
 
-  <div class="clearfix col-md-6">  
-  When you’re ready to create a new version of your template, you can select the “Duplicate” option from the gear icon menu near the save button.
-  <br>
-  <br>
-  This creates a clone, giving it a name including the original version name, the word “clone,” and today’s date. This duplicate version will not be active until you activate it.
-  </div>
+This creates a clone, giving it a name including the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 
-<br>
-</div>
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags
