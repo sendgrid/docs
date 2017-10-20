@@ -41,7 +41,7 @@ The on-behalf-of header allows you to make calls for a particular subuser throug
 
 This will generate the api call as if it was the subuser account itself making the call. Just make sure you are using the correct subuser username.
 
-When authenticating using the on-behalf-of header, you will need to use the API key credentials of the parent account.
+When authenticating using the on-behalf-of header, you will need to use the API key credentials, or basic auth of the parent account.
 
 {% anchor h3 %}
 Using API Key:
