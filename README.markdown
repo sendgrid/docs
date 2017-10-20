@@ -15,6 +15,26 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 
 **Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
 
+* CLAs and CCLAs
+* Local Setup
+    * Dependencies
+    * Setup Steps
+    * Configure jekyll
+    * Running
+    * View your install
+* Vagrant Setup
+* Testing
+* Important Things to Know
+* Config
+    * The Nav Tree
+    * Pages
+	    * SEO
+	    * Anchors
+	    * Info blocks
+	    * API Examples
+* JS and CSS, etc
+
+
 ## CLAs and CCLAs
 
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
@@ -28,6 +48,7 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 ## Local Setup
 
 ### Dependencies
+
 * Required:
     * Git
     * Xcode
