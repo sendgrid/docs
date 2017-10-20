@@ -34,7 +34,6 @@ _Please_, feel free to make any contributions you feel will make SendGrid Docume
 	    * API Examples
 * JS and CSS, etc
 
-
 ## CLAs and CCLAs
 
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
