@@ -23,7 +23,7 @@ Google Analytics has Clicks, Visits, Visitors, Pageviews, and Unique Pageviews. 
 
 The key here is that Google Analytics Clicks **are in no way related**  to SendGrid Clicks.
 
-Google Analytics **Visits** should generally correlate to Sendgrid **Unique Clicks**. However:
+Google Analytics **Visits** should generally correlate to SendGrid **Unique Clicks**. However:
 
 - If you link to a non-GA tracked site, there will be more Clicks than Visits.
 - If a user clicks a link in an email multiple times within the 30 minute Analytics "session" window, there will be a Click for every time they clicked, but only one Unique Click and one Visit.

@@ -13,7 +13,7 @@ navigation:
 
 There are many different ways to use SendGrid’s email services, so it all comes down to what _you_ need. We have numerous examples for how to configure mail clients such as Outlook and Apple Mail to send through our system as well as integration examples for a multitude of [programming languages and libraries](https://sendgrid.com/docs/Integrate/libraries.html) on our  **[SendGrid Integration Page](http://sendgrid.com/docs/Integrate/index.html).**
 
-#**The main ways to integrate with Sendgrid:**
+#**The main ways to integrate with SendGrid:**
 
 - **[SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/what_is_smtp.html)** - Send with a desktop mail client, or existing program/service using [your SMTP credentials]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html).
 - **[Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html)** - Send from your app using  [your api key]({{root_url}}/Classroom/Basics/API/what_is_my_api_key.html). Check out our [API Guide](http://go.sendgrid.com/rs/sendgrid/images/SendGrid_API_Guide-101.pdf) for more info.

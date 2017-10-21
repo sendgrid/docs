@@ -9,7 +9,7 @@ navigation:
   show: false
 ---
 
-A black hat sender is a sender/company who sends email to recipients who either send to recipients who have not given permission to senders to send to them.
+A black hat sender is a sender or company who sends email to recipients that didn't specifically requested to get emails from that sender. It is somebody that delivers unsolicited emails to recipients that never requested them.
 
 Not all black hat activity is intentional, though. Even senders who have their recipient's permission but send an excessive amount of email or who send at an alarming frequency may be flagged by users as “spam”. These senders will be identified by the recipients’ ISP, which may throttle the sender's email, send it to spam traps, or totally block the emails.
 
