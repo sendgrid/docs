@@ -132,21 +132,27 @@ to install client-side dependencies.
 
 	`$ bundle install`
 
-If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
+	* If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
 
-	- `gem uninstall libv8`
-	- `brew tap homebrew/versions`
-	- `brew install --force v8-315`
-	- `bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"`
-	- `sudo gem install therubyracer -v '0.12.2'`
-        - `bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"`
-	- `bundle install`
+		`$ gem uninstall libv8`
+	
+		`$ brew tap homebrew/versions`
+	
+		`$ brew install --force v8-315`
+	
+		`$ bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"`
+	
+		`$ sudo gem install therubyracer -v '0.12.2'`
+	
+		`$ bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"`
+	
+		`$ bundle install`
 
 ### Configure jekyll
 
 * Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
 
-	`$ cp _config.sample.yml _config.yml
+	`$ cp _config.sample.yml _config.yml`
 
 * Edit the following items in the _config.yml "Jekyll & Plugins" section to match your local environment:
 
@@ -175,7 +181,7 @@ Note: if you receive an error message similar to "No Java Runtime Present: Reque
 * Install it
 * In your terminal, type:
 
-	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
 
 * run java -version again
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
