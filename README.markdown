@@ -193,18 +193,7 @@ npm run spellcheck
 npm run spellcheck-file [filename]
 ```
 #### Example output:
-```diff
-     source/User_Guide/Marketing_Campaigns/lists.md
-     38 | 1. From *Select Criteria*
--drop-dwn
-        choose from a list of availab
-
-    source/User_Guide/Settings/Subusers/settings.md
-       28 | mber of times links from this
--subuer’s
- emails were clicked this mont
-```
-***NOTE***: this output is clearer in the command line.. I tried to make it understandable that the syntax coloring is red for incorrect words.
+![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
 
 ### Dictionary: English-US
 
