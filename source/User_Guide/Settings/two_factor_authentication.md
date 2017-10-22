@@ -13,6 +13,11 @@ navigation:
  show: true
 ---
 
+- [What is Two-Factor Authentication](#-What-is-Two-Factor-Authentication)
+- [How To Set Up Two-Factor Authentication](#-How-To-Set-Up-Two-Factor-Authentication)
+- [Using Two-Factor Authentication](#-Using-Two-Factor-Authentication)
+- [Disabling Two-Factor Authentication](#-Disabling-Two-Factor-Authentication)
+
 {% anchor h2 %}
 What is Two-Factor Authentication?
 {% endanchor %}
