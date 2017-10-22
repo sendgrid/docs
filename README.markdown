@@ -63,11 +63,11 @@ the yui compressor will need the full JDK to run - [http://www.oracle.com/techne
 
 The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
 
-	`$ rvm install 2.3.0`
+	$ rvm install 2.3.0
 
 then set that version to be the default version
 
-	`$ rvm --default use 2.3.0`
+	$ rvm --default use 2.3.0
 
 * Install Homebrew (if you don't have it)
 
@@ -146,7 +146,7 @@ If the gem installation fails with a message like "An error occurred while insta
 
 * Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
 
-	`$ cp _config.sample.yml _config.yml
+	`$ cp _config.sample.yml _config.yml`
 
 * Edit the following items in the _config.yml "Jekyll & Plugins" section to match your local environment:
 
