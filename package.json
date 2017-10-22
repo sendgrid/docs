@@ -4,7 +4,8 @@
   "description": "SendGrid's Documentation",
   "main": "public/index.html",
   "dependencies": {
-    "bower": "~1.3.1"
+    "bower": "~1.3.1",
+    "debug": "^3.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.9.11",
@@ -34,8 +35,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "spellcheck" : "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' -a --en-us -r && exit 0",
-    "spellcheck-file" : "mdspell -a --en-us -r"
+    "spellcheck": "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' -a --en-us -r || :",
+    "spellcheck-file": "mdspell -a --en-us -r"
   },
   "repository": {
     "type": "git",
