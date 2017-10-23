@@ -126,7 +126,7 @@ New editing experience
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>The editing experience has been updated to offer <a href="https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/">a better user experience</a> when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between a marketer-friendly code editor and a flexible design editor that still offers HTML options./td>
+    <td>The editing experience has been updated to offer <a href="https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/">a better user experience</a> when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between a marketer-friendly code editor and a flexible design editor that still offers HTML options.</td>
   </tr>
 </table>
 
