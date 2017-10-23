@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 100
-title: Release Notes
+title: ""
 seo:
   title: SendGrid Release Notes
   description: The new features and changes to SendGrid
