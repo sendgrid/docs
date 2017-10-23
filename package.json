@@ -35,8 +35,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "spellcheck": "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' '!**/public/**/*' -a --en-us -r && exit 0",
+    "test": "npm run spellcheck || :",
+    "spellcheck": "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' '!**/public/**/*' -a --en-us -r || :",
     "spellcheck-file": "mdspell -a --en-us -r"
   },
   "repository": {
