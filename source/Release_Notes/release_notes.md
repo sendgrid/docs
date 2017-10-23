@@ -7,7 +7,7 @@ seo:
   description: The new features and changes to SendGrid
   keywords: release notes
 navigation:
-  show: true
+  show: false
 ---
 ![]({{root_url}}/images/release_notes.png "release notes")
 
