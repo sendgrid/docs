@@ -357,7 +357,7 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 
 # License
 [The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
-=======
+
 ## Style Guide
 
 ### About Jobs-to-be-done
