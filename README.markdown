@@ -47,8 +47,14 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 
 ### Setup Steps
 
-* Install Git: [http://git-scm.com/download/mac](http://git-scm.com/download/mac)
-* Install a GitGUI(if you want it) [http://mac.github.com](http://mac.github.com)
+* Install Git for:
+	* [Mac](https://git-scm.com/download/mac) 
+	* [Windows](https://git-scm.com/download/win) 
+	* [Linux](https://git-scm.com/download/linux)
+* Install a GitGUI(if you want it) for:
+	* [Mac](https://mac.github.com)
+	* [Windows](https://desktop.github.com/)
+	* [Linux](https://git-scm.com/download/gui/linux)
 * Install Xcode (if you don't have it installed. Go the App Store an download it)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run $ xcode-select --install
