@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: New Relic
+title: SendGrid for New Relic
 navigation:
   show: true
 seo:
@@ -23,7 +23,7 @@ Settings
 Settings may be changed through:
 
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-SendGrid-for-New-Relic) (on an account wide basis)
--   [Customer Portal]({{site.app_url}}/settings/partners) (on an account wide basis)
+-   [SendGrid UI]({{site.app_url}}/settings/partners) (on an account wide basis)
 
 If you would like get your statistics in the New Relic Dashboard, you need to provide us your New Relic license key.
 

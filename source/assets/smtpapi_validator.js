@@ -2013,7 +2013,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
     // RFC 2396: characters not allowed for various reasons.
     unwise = ['{', '}', '|', '\\', '^', '`'].concat(delims),
 
-    // Allowed by RFCs, but cause of XSS attacks.  Always escape these.
+    // Allowed by RFCs, but cause of XSS attacks. Always escape these.
     autoEscape = ['\''].concat(unwise),
     // Characters that are never ever allowed in a hostname.
     // Note that any invalid chars are also handled, but these
@@ -2335,7 +2335,7 @@ Url.prototype.format = function() {
 
   if (protocol && protocol.substr(-1) !== ':') protocol += ':';
 
-  // only the slashedProtocols get the //.  Not mailto:, xmpp:, etc.
+  // only the slashedProtocols get the //. Not mailto:, xmpp:, etc.
   // unless they had them to begin with.
   if (this.slashes ||
       (!protocol || slashedProtocol[protocol]) && host !== false) {
@@ -2469,7 +2469,7 @@ Url.prototype.resolveObject = function(relative) {
 
   // if the url is a non-slashed url, then relative
   // links like ../.. should be able
-  // to crawl up to the hostname, as well.  This is strange.
+  // to crawl up to the hostname, as well. This is strange.
   // result.protocol has already been set by now.
   // Later on, put the first path part into the host field.
   if (psychotic) {
@@ -2538,7 +2538,7 @@ Url.prototype.resolveObject = function(relative) {
   }
 
   if (!srcPath.length) {
-    // no path at all.  easy.
+    // no path at all. easy.
     // we've already handled the other stuff above.
     result.pathname = null;
     //to support http.request

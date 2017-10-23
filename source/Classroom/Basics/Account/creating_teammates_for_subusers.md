@@ -23,7 +23,7 @@ The process of creating teammates is no different for subusers than for parent u
 Subuser teammates will only have access to the subuser account!
 {% endinfo %}
 
-Teammates can be created and managed both via the user interface (commonly referred to as the Customer Portal) and the v3 Web API. If you are creating a teammate via the v3 Web API, you can use one of our 7 libraries, or you may make a cURL request.
+Teammates can be created and managed both via the user interface and the v3 Web API. If you are creating a teammate via the v3 Web API, you can use one of our 7 libraries, or you may make a cURL request.
 
 ### Using the User Interface
 
@@ -41,7 +41,7 @@ Teammate permissions may be either:
 
 * **"Admin"** - administrator teammates have full access to all of the subuser's account features and settings.
 * **"Read-Only Access"** - teammates with read-only permissions will be able to view all of the subuser's account features and settings, but they won't be able to make any changes.
-* **"Restricted Access"** - teamamtes with restricted access will have access to only the features you specify. There are three presets: "Developer Access", "Marketer Access", and "Accountant Access". The specific permissions for each preset are displayed under **Access Details**.
+* **"Restricted Access"** - teammates with restricted access will have access to only the features you specify. There are three presets: "Developer Access", "Marketer Access", and "Accountant Access". The specific permissions for each preset are displayed under **Access Details**.
 
 You may also customize any of these presets. You can make your own set of permissions by selecting "Custom Access" and using the sliders next to each permission under **Access Details**.
 

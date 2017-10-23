@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-We do it automatically! By simply enabling the [Subscription Tracking](https://app.sendgrid.com/settings/tracking) setting in your account, we'll include a list-unsubscribe header in any messages you send.  
+We do it automatically! By simply enabling the [Subscription Tracking](https://app.sendgrid.com/settings/tracking) setting in your account, we'll include a list-unsubscribe header in any messages you send. 
 
 For more information about the list-unsubscribe header, and why it is awesome, check out http://www.list-unsubscribe.com/
 

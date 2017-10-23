@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/130486946" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 When a user unsubscribes from a type of email being sent to them at the sender account level, SendGrid will suppress all of your attempts at sending this type of email to that user. This means that the contact information is still in your contact database or you can send this contact’s email via the API. Regardless, emails will not be sent to this contact’s email.
 
@@ -30,7 +30,7 @@ You can then give your recipients more control over the types of emails they wan
 Make sure your group names and descriptions are customer friendly! Your customers will see these group names and descriptions when they unsubscribe from your emails.
 {% endinfo %}
 
-All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
 {% anchor h2 %}
 Add An Unsubscribe Group
@@ -72,7 +72,7 @@ To upload a CSV of recipients who should not receive this group’s emails, clic
 Manually Add Unsubscribe Group Recipients
 {% endanchor %}
 
-To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the unsubscribe group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this unsubscribe group will not go to this recipient.  To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
+To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the unsubscribe group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this unsubscribe group will not go to this recipient. To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
 
 {% anchor h2 %}
 Export an Unsubscribe Group List

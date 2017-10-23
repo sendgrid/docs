@@ -278,7 +278,7 @@ curl --request GET \
 
 
 {% anchor h3 %}
-Remove assigned ists from a Marketing Email
+Remove assigned lists from a Marketing Email
 {% endanchor %}
 
 {% anchor h4 %}

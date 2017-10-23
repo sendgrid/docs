@@ -31,5 +31,5 @@ send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@examp
 
  
 {% info %}
-You may also send emails with Django by using the [sendgrid-django](https://github.com/elbuo8/sendgrid-django) library, which utilizes the [Web API]({{%20root_url%20}}/API_Reference/Web_API/index.html) instead of SMTP as the transport mechanism. 
+You may also send emails with Django by using the [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5) library, which utilizes the [Web API]({{%20root_url%20}}/API_Reference/Web_API/index.html) instead of SMTP as the transport mechanism. 
 {% endinfo %}

@@ -140,7 +140,7 @@ Requesting Access to a SendGrid Feature
 
 If you are already signed into a SendGrid account as a teammate, but do not have access to a certain page or feature, you may request access to that page simply by clicking **Request Access**.
 
-This will send a notification to the account administrator who can grant you access.  If there is more than one administrator, each administrator will be notified.
+This will send a notification to the account administrator who can grant you access. If there is more than one administrator, each administrator will be notified.
 
 ![Requesting Access to a Feature]({{root_url}}/images/teammates_7.png)
 

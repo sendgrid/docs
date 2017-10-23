@@ -9,6 +9,9 @@ seo:
   override: true
   description:
 ---
+
+<iframe src="https://player.vimeo.com/video/221496791" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 * [Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
    * [Exporting Campaign Statistics](#-Exporting-Campaign-Statistics)
    * [Exporting Statistics for Multiple Campaigns](#-Exporting-Statistics-for-Multiple-Campaigns)

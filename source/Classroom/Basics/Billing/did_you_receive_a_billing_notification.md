@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-If you received a billing email, it was because we were not able to process a payment on your account.  
+If you received a billing email, it was because we were not able to process a payment on your account. 
 
-There are several different reasons that your credit card may have been declined.  To get this issue resolved, please log in and [resubmit payment here]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html).
+There are several different reasons that your credit card may have been declined. To get this issue resolved, please log in and [resubmit payment here]({{root_url}}/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html).
 
  
 

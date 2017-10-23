@@ -23,7 +23,7 @@ An example using Curl which is not correct (when used on the command line):
 
     $ curl https://sendgrid.com/api/mail.send.json?api_user=MyName&api_key=MyPassword&to=to@email.com&from=from@email.com&text=some+really+long+text+also+notice+how+this+is+all+part+of+the+mail.send.json+URI
 
-The above Curl request is putting all of the parameters as part of the URL (https://sendgrid.com/api/mail.send.json) instead as seperate fields.
+The above Curl request is putting all of the parameters as part of the URL (https://sendgrid.com/api/mail.send.json) instead as separate fields.
 
 Resolution/Best Practices:   
 When performing the HTTP POST, ensure that the parameters are being posted as part of the body instead of with the URI.

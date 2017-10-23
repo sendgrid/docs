@@ -47,7 +47,7 @@ This describes the plan you subscribe to and the total charge for usage in the p
 
 Additional IPs cost $30.00 per IP/per month for Pro 100k plans and above.
 
-For more information on Sendgrid Plans, visit our [pricing page](https://sendgrid.com/pricing). 
+For more information on SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing). 
 
  
 
@@ -82,7 +82,7 @@ The charge for contact storage is **$10.00 PER 10,000 contacts(1 block),** so th
 
 ![]({{root_url}}/images/invoice_usage_NL.png)
 
-**Newsletter Usage** - Legacy Newsletter usage is charged at a rate of **$0.25 per 1000 messages sent.** This charge is in addition to the base plan price for emails used, as well as any overages that are accrued.  
+**Newsletter Usage** - Legacy Newsletter usage is charged at a rate of **$0.25 per 1000 messages sent.** This charge is in addition to the base plan price for emails used, as well as any overages that are accrued. 
 
 In this example, no messages were sent using the Legacy Newsletter, which works out to a $0.00 charge.
 

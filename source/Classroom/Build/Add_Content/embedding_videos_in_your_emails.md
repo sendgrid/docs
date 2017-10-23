@@ -27,7 +27,7 @@ Aside from these videos simply not being supported by most mail clients, the nex
 
 ## OUR VERDICT
 
-**Do not embed videos**. As we discussed, videos are rarely, if ever, supported by the mail client without the use of plugins, and inbox trends have shown that emails containing embedded videos are all too often labeled as spam or junk. If you absolutely have to embed a video then you should make sure to segment your lists based on the mail clients which support video, then embed the video specific to the calls that the mail client can support.  
+**Do not embed videos**. As we discussed, videos are rarely, if ever, supported by the mail client without the use of plugins, and inbox trends have shown that emails containing embedded videos are all too often labeled as spam or junk. If you absolutely have to embed a video then you should make sure to segment your lists based on the mail clients which support video, then embed the video specific to the calls that the mail client can support. 
 
 GIFs are supported by most mail clients, so if the need is there then experimenting in that format is usually much safer. In the Support Team's opinion, the easiest and most reliable way to share a video with a recipient is to simply place a link in your email body that redirects the recipient to the original video. 
 

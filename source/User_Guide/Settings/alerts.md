@@ -43,6 +43,6 @@ Stats Notifications
 An email containing your stats sent at the frequency you define. For example:
 
 Weekly stats will be sent once week and show the trailing week.
-Daily Stats will be sent every day, but with trailing 7 day stats included.  
+Daily Stats will be sent every day, but with trailing 7 day stats included. 
 
 For more in depth statistics, we suggest using the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html).
