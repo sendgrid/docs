@@ -20,10 +20,10 @@ There are a few things to take into account when requesting a password reset:
 
 * Ensure that you are expecting the email at the correct address. The password reset will be sent to email you have in your SendGrid account settings for the username you enter. 
 
-* It is also possible that you cannot login because our billing team has terminated your account due to non-payment. In this case you would have received several emails detailing the reason behind the terminatio. These emails are also going to the email you have in your SendGrid account settings. 
+* It is also possible that you cannot login because our billing team has terminated your account due to non-payment. In this case you would have received several emails detailing the reason behind the termination. These emails are also going to the email you have in your SendGrid account settings. 
 
 * The reset email may be in your SPAM or Junk folder. If you do find it there, be sure to mark it as "not spam".
 
 
-**For security reasons, Sendgrid support agents cannot change account passwords.**
+**For security reasons, SendGrid support agents cannot change account passwords.**
 

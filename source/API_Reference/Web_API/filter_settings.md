@@ -315,7 +315,7 @@ You must pass at least one of the optional params in order to avoid the "missing
  {% parameter 'name' 'Yes' 'subscriptiontrack' 'The setting.' %}
  {% parameter 'text/html' 'No' 'String for the HTML e-mail body' 'If you would like to unsubscribe and stop receiving these emails &lt;% click here %&gt;' %}
  {% parameter 'text/plain' 'No' 'String for the plain text e-mail body' 'If you would like to unsubscribe and stop receiving these emails click here: &lt;% %&gt;.' %}
- {% parameter 'url' 'No' 'a URL the customer will be redirected to on clicking the subscription management link' 'http://www.example.com/UnsubscribeLandingPage' %}
+ {% parameter 'url' 'No' 'a URL the customer will be redirected to upon clicking the subscription management link' 'http://www.example.com/UnsubscribeLandingPage' %}
  {% parameter 'landing' 'No' 'HTML content for a landing page that will be displayed by SendGrid' '&lt;html&gt;Content&lt;/html&gt;' %}
  {% parameter 'replace' 'No' 'a tag that can be added to the content that will be replaced by SendGrid with the subscription management link' '[unsubscribe_tag]' %}
 {% endparameters %}

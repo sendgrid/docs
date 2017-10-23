@@ -5,13 +5,13 @@ title: Drupal
 navigation:
   show: true
 ---
-To send emails from Drupal using SendGrid, you may use the Sendgrid Integration module, the SMTP Authentication Support module, or the Swift Mailer module depending on your needs.
+To send emails from Drupal using SendGrid, you may use the SendGrid Integration module, the SMTP Authentication Support module, or the Swift Mailer module depending on your needs.
 
 {% anchor h2 %}
 Using the SendGrid Integration Module
 {% endanchor %}
 
-The SendGrid Integration Module uses the SendGrid API webservices to send email. It does not use SMTP. Depending on the workload of your website, this could be of benefit to you in performance. This module also provides charts for reports of vital statistcis. The module does require an advanced knowledge of Drupal in order to install and setup. Usage of Drush is required.
+The SendGrid Integration Module uses the SendGrid API webservices to send email. It does not use SMTP. Depending on the workload of your website, this could be of benefit to you in performance. This module also provides charts for reports of vital statistics. The module does require an advanced knowledge of Drupal in order to install and setup. Usage of Drush is required.
 
 Download and install the [SendGrid Integration Module](https://www.drupal.org/project/sendgrid_integration "SendGrid Integration Module") from Drupal.org and perform updates via Drush with Composer Manger.
 
@@ -32,7 +32,7 @@ Open your modules page, find the SMTP module, and configure it with the followin
 
 -   **SMTP Server** - smtp.sendgrid.net
 -   **SMTP Port** - 587
--   **Use Encrypted Protocal** - No. If you want encryption choose "Use SSL" and set SMTP Port to 465
+-   **Use Encrypted Protocol** - No. If you want encryption choose "Use SSL" and set SMTP Port to 465
 -   **Username** - SendGrid Username
 -   **Password** - SendGrid Password
 

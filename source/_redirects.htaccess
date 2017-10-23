@@ -250,7 +250,6 @@ Redirect 301 /Classroom/Basics/does_sendgrid_support_end_to_end_tls.html http://
 Redirect 301 /Classroom/Basics/email_flow.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/email_flow.html
 Redirect 301 /Classroom/Basics/everything_about_dmarc.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html
 Redirect 301 /Classroom/Basics/link_shorteners.html http://sendgrid.com/docs/Classroom/Build/Add_Content/link_shorteners.html
-Redirect 301 /Classroom/Basics/password.html http://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Basics/recommended_smtp_settings.html http://sendgrid.com/docs/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html
 Redirect 301 /Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html http://sendgrid.com/docs/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html
 Redirect 301 /Classroom/Basics/sendgrid_oem_process.html http://sendgrid.com/docs/Classroom/Basics/Misc/sendgrid_oem_process.html
@@ -355,7 +354,7 @@ Redirect 301 /Classroom/Deliver/my_emails_are_going_to_spam.html https://sendgri
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/spam_trapped.html
 Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html
-Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html
+Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
@@ -471,10 +470,10 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_t
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
 Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
-Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/categories.html
+Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Statistics/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
@@ -606,7 +605,6 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https:
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
 Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html
-Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
@@ -739,7 +737,7 @@ Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Setti
 #######
 
 Redirect 301 /User_Guide/Marketing_Campaigns/campaigns.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head [NE,R]
+Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 
 #######
 #
@@ -774,8 +772,3 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_S
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
-
-
-
-
-

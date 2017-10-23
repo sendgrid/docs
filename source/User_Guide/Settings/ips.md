@@ -80,3 +80,11 @@ What if this is my first dedicated IP address?
 If you have only 1 dedicated IP address, you will not be able to use automated warmup for this IP address. You will need to manually warm up the IP according to the schedule we recommend [here](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
 In order to use automated warmup, you must have at least one already warm IP so that overflow emails from your new IPs in warm up can be sent from an already warm IP.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- IP Access Management(https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
+- Billing Settings(https://sendgrid.com/docs/User_Guide/Settings/billing.html)
+- Mail(https://sendgrid.com/docs/User_Guide/Settings/mail.html)

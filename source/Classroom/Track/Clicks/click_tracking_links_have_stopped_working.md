@@ -30,7 +30,7 @@ If you are unsure what the original link was, feel free to contact Support using
 
 If your account is Pro 100K or higher, and you have completed the [Whitelabel](https://sendgrid.com/whitelabel/wizard/page/2), you were prompted to add a CNAME record to allow us to write your own domain into your click tracked links.
 
-This record not only allows for your click tracked links to appear to be directly from your domain, but also allows users to properly redirect back to Sendgrid before going on to their final destination. This redirect allows us to track clicks and increment them in your account statistics. If this record is entered incorrectly or deleted in your DNS host, it can potentially break links within your emails. 
+This record not only allows for your click tracked links to appear to be directly from your domain, but also allows users to properly redirect back to SendGrid before going on to their final destination. This redirect allows us to track clicks and increment them in your account statistics. If this record is entered incorrectly or deleted in your DNS host, it can potentially break links within your emails.
 
 To check if your CNAME record is up to date, simply use the Unix command **dig** to check your whitelabel subdomain. The easiest way to go about this is to use Terminal on a Mac platform. 
 

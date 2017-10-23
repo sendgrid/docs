@@ -53,7 +53,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
 
 {% parameters delete %}
  {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to remove unsubscribed address from subuser' %}
- {% parameter user Yes 'Subuser must be under your account' 'Subuser to remove unsubsribed address from' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to remove unsubscribed address from' %}
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Unsubscribe suppression list' %}
 {% endparameters %}
 

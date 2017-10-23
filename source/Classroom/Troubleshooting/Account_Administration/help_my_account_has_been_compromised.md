@@ -15,7 +15,7 @@ If you believe your account has been compromised, please login to your account a
 
 After changing your account username and password, please contact either the SendGrid Support team via chat, email, or phone or the SendGrid Compliance team via email so we can investigate the issue.
 
-_For sake of timely resolution, we recommend using CHAT _ which is available 24/7, 7 days a week_.  We can help you investigate, and get our Compliance team involved if necessary. 
+_For sake of timely resolution, we recommend using CHAT _ which is available 24/7, 7 days a week_. We can help you investigate, and get our Compliance team involved if necessary. 
 
 We'll try and help you isolate any issues or vulnerabilities with your SendGrid integration. We can also temporarily deactivate your account as well as delete any messages that are currently in a pending state within our system. In some cases your account may have already been preemptively Suspended to prevent damage to your reputation, in these cases please check your email for a notification from our Compliance department and respond directly to it to get the ball rolling.
 

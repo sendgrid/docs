@@ -186,7 +186,7 @@ The Spam Checker setting, is useful when your web application allows your end us
 The default threshold is 5.0 and can range between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless emails, whereas 9 will only drop the spammiest of spam emails.
 {% endwarning %}
 
-We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. You must provide an URL, so we will post the message to that URL. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
+We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. You must provide a URL, so we will post the message to that URL. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
 
 {% anchor h3 %}
 Settings

@@ -1,7 +1,7 @@
 ---
 seo:
   title: Migrating Images from Legacy Newsletter into Marketing Campaigns
-  description: Learn how to migrate images from Legacy Newsletter into the Marketing Campagins Image Library
+  description: Learn how to migrate images from Legacy Newsletter into the Marketing Campaigns Image Library
   keywords: images, marketing, newsletter, export, migrate, import, move
 title: Migrating Images from Legacy Newsletter into Marketing Campaigns
 weight: 0

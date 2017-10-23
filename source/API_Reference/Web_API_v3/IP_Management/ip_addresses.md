@@ -9,11 +9,11 @@ navigation:
 {% anchor h2 %}   
 POST    
 {% endanchor %}   
-Add an IP to a pool.    
+Add an IP to a pool.   
     
 {% info %}    
 An IP may belong to multiple pools. It may take 60 seconds for your IP    
-address to be added to a pool after your request is made.   
+address to be added to a pool after your request is made.  
 {% endinfo %}   
     
 {% parameters post %}   

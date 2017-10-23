@@ -18,7 +18,7 @@ Billing Details
 
 Your billing details show you what plan you have and how you will be billed by SendGrid.
 
-**Plan** - The plan you are currently using with Sendgrid.
+**Plan** - The plan you are currently using with SendGrid.
 
 **Price** - The price per month that you pay to use SendGrid.
 

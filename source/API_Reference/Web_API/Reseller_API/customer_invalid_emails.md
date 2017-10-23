@@ -10,7 +10,6 @@ navigation:
 Retrieve Invalid Emails 
 {% endanchor %}
 
-
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving invalid emails from' %}
  {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the invalid emails for the specified customer' %}
@@ -18,6 +17,9 @@ Retrieve Invalid Emails
  {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid email functionality' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=customer@example.com&task=get&date=1 %}
   {% response json %}
@@ -72,8 +74,8 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving invalid emails from' %}
- {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete a invalid email for the specified customer' %}
- {% parameter 'email' 'Yes' 'Must be a invalid email' 'You must specify the invalid emails to remove' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete an invalid email for the specified customer' %}
+ {% parameter 'email' 'Yes' 'Must be an invalid email' 'You must specify the invalid emails to remove' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid emails functionality' %}
 {% endparameters %}
 
