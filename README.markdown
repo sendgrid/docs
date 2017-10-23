@@ -336,3 +336,36 @@ payload in querystring format.
 
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
+
+## Node Spellchecker
+
+This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
+
+### Init
+```
+# (pull code updates before this)
+# install updated npm package dependencies!
+npm install
+```
+
+### Usage
+```
+# generates report of misspellings
+npm run spellcheck
+
+# generates report of misspellings of [filename]
+npm run spellcheck-file [filename]
+```
+#### Example output:
+![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
+
+### Dictionary: English-US
+
+See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
+Also `.spelling` contains a list of custom words added to the dictionary.
+
+### Contribution
+This still needs work! Many, many words in tech jargon come back as incorrect.
+The best way I've found to solve this issue without too much overhead work:
+1. Run `npm run spellcheck`
+2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
