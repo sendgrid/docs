@@ -1,3 +1,5 @@
+![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+
 # SendGrid Documentation
 
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
@@ -45,8 +47,14 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 
 ### Setup Steps
 
-* Install Git: [http://git-scm.com/download/mac](http://git-scm.com/download/mac)
-* Install a GitGUI(if you want it) [http://mac.github.com](http://mac.github.com)
+* Install Git for:
+	* [Mac](https://git-scm.com/download/mac) 
+	* [Windows](https://git-scm.com/download/win) 
+	* [Linux](https://git-scm.com/download/linux)
+* Install a GitGUI(if you want it) for:
+	* [Mac](https://mac.github.com)
+	* [Windows](https://desktop.github.com/)
+	* [Linux](https://git-scm.com/download/gui/linux)
 * Install Xcode (if you don't have it installed. Go the App Store an download it)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run $ xcode-select --install
@@ -292,3 +300,13 @@ payload in querystring format.
 
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
+
+# About
+
+SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
+It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+
+![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+
+# License
+[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
