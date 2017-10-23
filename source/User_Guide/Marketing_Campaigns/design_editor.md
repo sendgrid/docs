@@ -606,11 +606,13 @@ SendGrid hosts the images included in the pre-built templates and any images you
 Creating Categories
 {% endanchor h3 %}
 
-Creating categories to your campaign allows you to track statistics across multiple similar campaigns. You can easily add categories by simply typing them in the "Categories" section of the left hand sidebar.
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: “Weekly Digest,” “Product Announcements.”
 
 *To add a category:*
-1. Click on the **Categories** text field under **Campaign Settings**.
-2. Type the name of your category and press enter.
+
+1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
+1. Find the *Categories* field.
+1. Enter the name of a new category or select a previously used category from the drop-down menu. 
 
 {% anchor h3 %}
 Additional Resources
