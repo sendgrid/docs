@@ -1,3 +1,5 @@
+![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+
 # SendGrid Documentation
 
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
@@ -292,3 +294,13 @@ payload in querystring format.
 
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
+
+# About
+
+SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
+It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+
+![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+
+# License
+[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
