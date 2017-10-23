@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
 [![Dependency Status](https://gemnasium.com/sendgrid/docs.svg)](https://gemnasium.com/sendgrid/docs)
 
-This site is based on Octopress, which is in turn based on Jekyll, with a dash of Twitter Bootstrap added.
+This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
 
@@ -72,17 +72,17 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 
 * Install Git: [http://git-scm.com/download/mac](http://git-scm.com/download/mac)
 * Install a GitGUI(if you want it) [http://mac.github.com](http://mac.github.com)
-* Install Xcode (if you don't have it installed. Go the App Store an download it)
+* Install Xcode (if you don't have it installed. Go to the App Store and download it)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run $ xcode-select --install
-* Install JDK
-the yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* Install JDK  
+The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
 
 	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
 
 * Close and reopen your terminal window
-* Check which version you have installed
+* Check which version of Ruby you have  
 
 	`$ ruby -v`
 
