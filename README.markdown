@@ -70,8 +70,8 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 <a name="setup"></a>
 ### Setup Steps
 
-* Install Git: [http://git-scm.com/download/mac](http://git-scm.com/download/mac)
-* Install a GitGUI(if you want it) [http://mac.github.com](http://mac.github.com)
+* Install Git: [http://git-scm.com/downloads](http://git-scm.com/downloads)
+* Install a GitGUI(if you want it) [http://desktop.github.com/](http://desktop.github.com/)
 * Install Xcode (if you don't have it installed. Go to the App Store and download it)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run $ xcode-select --install
