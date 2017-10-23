@@ -23,7 +23,7 @@ These arguments can be added using a JSON string like this:
 }
 {% endcodeblock %}
 
-These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST would look something like this:
+These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST requests would look something like this:
 
 <h4>Example Webhook Post Data</h4>
 {% codeblock lang:json %}

@@ -15,7 +15,7 @@ seo:
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
 {% info %}
-You can create up to 60 custom fields; 20 of each type (text, date, or number).
+You can create up to 120 custom fields.
 {% endinfo %}
 
 {% anchor h2 %}
