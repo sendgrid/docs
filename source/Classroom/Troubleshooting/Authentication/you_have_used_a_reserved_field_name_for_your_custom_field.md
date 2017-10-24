@@ -15,7 +15,7 @@ When creating Custom Fields, or uploading a list with customized headers in our 
 
 ![]({{root_url}}/images/Cursor_and_customfeilduniqueerror_png.png)
 
-**This is because you are attempting to use a Custom Field that is already reserved by Sendgrid for internal purposes.**
+**This is because you are attempting to use a Custom Field that is already reserved by SendGrid for internal purposes.**
 
 **These fields, with the exceptions of email, first\_name, and last\_name, can NOT be edited.**
 
