@@ -83,9 +83,9 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 	* [Mac](https://mac.github.com)
 	* [Windows](https://desktop.github.com/)
 	* [Linux](https://git-scm.com/download/gui/linux)
-* Install Xcode (if you don't have it installed. Go the App Store an download it)
+* Install [Xcode](https://developer.apple.com/xcode/) (if you don't have it installed. Click the link to download)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
-    * Note: You may need to run $ xcode-select --install
+    * Note: You may need to run `$ xcode-select --install`
 * Install JDK  
 The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
@@ -213,15 +213,18 @@ For example:
 
 Note: if you receive an error message similar to "No Java Runtime Present: Requesting Install" please see the following instructions
 
-* Open your Terminal
-* java -version gives you an error and a popup
-* Get the mac download here [https://www.java.com/en/download/faq/java_mac.xml](https://www.java.com/en/download/faq/java_mac.xml)
+* Open your Terminal or Cmd
+* If `java -version` gives you an error and a popup
+* Get the download here 
+	* [Mac](https://www.java.com/en/download/faq/java_mac.xml)
+	* [Windows](https://www.java.com/en/download/)
 * Install it
 * In your terminal, type:
 
 	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
 
-* run java -version again
+* Run `java -version` again.
+
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
 [http://stackoverflow.com/a/19582689](http://stackoverflow.com/a/19582689)
 
