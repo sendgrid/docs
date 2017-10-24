@@ -79,7 +79,7 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 	* [Mac](https://git-scm.com/download/mac) 
 	* [Windows](https://git-scm.com/download/win) 
 	* [Linux](https://git-scm.com/download/linux)
-* Install a GitGUI(if you want it) for:
+* Install a GitGUI (if you want it) for:
 	* [Mac](https://mac.github.com)
 	* [Windows](https://desktop.github.com/)
 	* [Linux](https://git-scm.com/download/gui/linux)
