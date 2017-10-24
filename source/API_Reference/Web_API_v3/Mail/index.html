@@ -173,3 +173,28 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
       {% api_table_param utm_content string No "" "Used to differentiate your campaign from advertisements." 2 %}
       {% api_table_param utm_campaign string No "" "The name of the campaign." 2 %}
 {% endapi_table %}
+{% anchor h2 %}
+Response Example
+{% endanchor %}
+
+{% codeblock %}
+Response Code: 202 Accepted
+Response Headers:
+    Access-Control-Allow-Headers →Authorization, Content-Type, On-behalf-of, x-sg-elas-acl
+    Access-Control-Allow-Methods →POST
+    Access-Control-Allow-Origin →https://sendgrid.api-docs.io
+    Access-Control-Max-Age →600
+    Connection →keep-alive
+    Content-Length →0
+    Content-Type →text/plain; charset=utf-8
+    Date →Mon, 23 Oct 2017 23:09:41 GMT
+    Server →nginx
+    X-Message-Id →kA5kcHA8SVGtVh5S9rAUew
+    X-No-CORS-Reason →https://sendgrid.com/docs/Classroom/Basics/API/cors.html
+Response Body:
+
+{% endcodeblock %}
+
+{% info %}
+If you are using the Event Webhook, it's best practice to store your X-Message-ID data help with deduplications in your webhook data.
+{% endinfo %}
