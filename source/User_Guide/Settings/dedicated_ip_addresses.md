@@ -14,7 +14,7 @@ navigation:
 What are Dedicated IP Addresses?
 {% endanchor %}
 
-An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses that dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
+An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
 
 
 {% anchor h2 %}
@@ -53,12 +53,12 @@ You can purchase an additional Dedicated IP Address from the IP Addresses Settin
 Setup/Configuration
 {% endanchor %}
 
-To add an additional Dedicated IP Address:
+*To add an additional Dedicated IP Address:*
 
-* Navigate to Settings in the left hand navigation menu, select IP Addresses
-* Here you'll see a list of your current Dedicated IPs. Your IPs in warmup will have a 'warmup' label
-* Click 'Add an IP Address'
-* Select the number of IP addresses you would like to purchase.
+1. In the left navigation, select **Settings** and then click **IP Addresses**.  
+   Here you'll see a list of your current Dedicated IPs. Your IPs in warmup will have a 'warmup' label
+1. Click **Add an IP Address**. 
+1. Select the number of IP addresses you would like to purchase.
 
 Under "Additional Options" you will find the following options:
 
@@ -500,6 +500,6 @@ Any email traffic exceeding these hourly message limits will be sent through you
 Additional Resources
 {% endanchor h2 %}
 
-- IP Access Management(https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
-- Billing Settings(https://sendgrid.com/docs/User_Guide/Settings/billing.html)
-- Mail(https://sendgrid.com/docs/User_Guide/Settings/mail.html)
+- [IP Access Management](https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
+- [Billing Settings](https://sendgrid.com/docs/User_Guide/Settings/billing.html)
+- [Mail](https://sendgrid.com/docs/User_Guide/Settings/mail.html)
