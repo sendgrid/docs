@@ -11,9 +11,9 @@ seo:
 ---
 Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing allows you send different versions of your emails to small subsets of your contacts.
 
-When your contacts interact with the A/B test emails, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
+When recipients interact with the A/B test emails, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
 
-- [Get started A/B Testing a Marketing Campaign](#-Get-started-AB-Testing-a-Marketing-Campaign)
+- [Set up an A/B test](#-Set-up-an-AB-test)
 - [Choose the Type of A/B Test To Run](#-Choose-the-Type-of-AB-Test-To-Run)
 - [Adding Your Email Versions](#-Adding-Your-Email-Versions)
 - [Select the A/B Test Campaign Sample Size](#-Select-the-AB-Test-Campaign-Sample-Size)
@@ -24,35 +24,30 @@ When your contacts interact with the A/B test emails, you can compare the engage
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %} Get started A/B Testing a Marketing Campaign {% endanchor %}
+{% anchor h2 %} Set up an A/B test {% endanchor %}
 
-{% anchor h3 %} Navigate to your Campaings, under Marketing Campaigns {% endanchor %}
+ *To set up an A/B test on an existing campaign:*
 
-Get started A/B testing a draft email campaign by navigating to **[Campaigns](#https://sendgrid.com/marketing_campaigns/ui/campaigns)**, in your SendGrid dashboard.
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
+1. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in. 
+1. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
+1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**. 
+1. 
 
-1. Select an email draft to enter the email editor.
-2. Go to the "A/B Testing" Tab.
-3. Set the "Activate A/B Testing" toggle to 'on'.
-
-*(If you are using the Code Editor, the "A/B Testing" Tab is in the 'Settings' tab on the left)*
-
-![]({{root_url}}/images/ab_testing_1.png "A/B Testing")
 
 {% anchor h2 %} Choose the Type of A/B Test To Run {% endanchor %}
 
-When you are A/B testing your email campaigns, you will want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content. 
+When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content. 
 
+(% info %)
 You can test up to 6 different variations for each A/B test campaign.
-
-{% anchor h3 %}
-Subject Line Testing vs. Email Content Testing
-{% endanchor %}
+(% endinfo %)
 
 - **Subject Line - Optimize Open Rates**
 
 	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/Glossary/open_rate.html) of your email campaign, since the subject usually is all the recipient sees until they open your email.
 
-	High open rates shows the strengh of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
+	High open rates shows the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
 - **Email Content - Optimize Click Rates**
 
@@ -143,34 +138,13 @@ When a variation wins, based on your criteria and duration, you will be notified
 If you chose to Manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
 {% endinfo %}
 
-{% anchor h2 %} A/B Testing FAQ {% endanchor %}
-
-{% anchor h3 %} I chose to manually pick the winner of my A/B test campaign. Where do I do that? {% endanchor %}
-
-  You can manually pick the winning variation anytime after your campaign starts. Go into the campaign stats for a campaign to manually pick the winner.
-
-{% anchor h3 %} I chose to manually pick the winner of my A/B test campaign. How will I know when to do that? {% endanchor %}
-
-  You’ll get an email at the conclusion of your A/B test duration, reminding you to go into your dashboard to pick your winner. You can also choose the winner at any time within that duration if one variation vastly outperforms the other.
-
-{% anchor h3 %} Can I change the winner method after I’ve started sending my A/B test campaign? {% endanchor %}
-
-  You cannot change the winner method after your campaign has started sending.
-
-{% anchor h3 %} Can I find out which of my recipients received each variation of my A/B test campaign? {% endanchor %}
-
-  At this time we do not have that functionality but it is on our roadmap.
-
-{% anchor h3 %} Can I export raw stats for each of my A/B test variations? {% endanchor %}
-
-  Yes! You can click the “Export CSV” button on the campaign stats page and it will give you a line of stats for each variation (as well as a line for totals) per day.
-
 
 ---------------
 
 {% anchor h3 %}
-Related Resources
+Additional Resources
 {% endanchor h3 %}
 
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
 - [Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html)
 - [Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html)
