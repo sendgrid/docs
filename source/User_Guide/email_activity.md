@@ -78,3 +78,11 @@ Subuser Email Activity
 To see a subuser’s email activity, you will need to either log in as that subuser or impersonate the subuser account.
 
 When looking at a subuser’s email activity, you will not see the subuser parent’s email activity.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+[Email Activity for Mobile](https://sendgrid.com/docs/User_Guide/SendGrid_for_Mobile/email_activity.html)
+[Dashboard](https://sendgrid.com/docs/User_Guide/dashboard.html)
+[Option to "Delete From Bounce List" in Email Activity](https://sendgrid.com/docs/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html)
