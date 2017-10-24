@@ -304,6 +304,7 @@ Redirect 301 /Classroom/Build/responsive_templates_and_design.html http://sendgr
 Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid.com/docs/Classroom/Build/Add_Content/substitution_and_section_tags.html
 Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
 Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.html https://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
+Redirect 301 /Classroom/Build/Choose_Content/a_b_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
 
 #######
 #
