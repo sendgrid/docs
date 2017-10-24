@@ -49,7 +49,7 @@ Unsubscribe Groups
 The Unsubscribe Groups box will show you the current status of unsubscribe groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your unsubscribe groups.
 
 {% anchor h2 %}
-Additional Resources
+Help Links
 {% endanchor h2 %}
 
 - [Support]({{site.support_url}}/hc/en-us)
