@@ -17,7 +17,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "your.email@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "exampleexampexample@example.com"}]}],"from": {"email": "exampleexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% info %}

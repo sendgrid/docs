@@ -56,7 +56,7 @@ ${%codeblock%} curl -i --request POST
 --url https://api.sendgrid.com/v3/mail/send 
 --header 'Authorization: Bearer YOUR_API_KEY_HERE' 
 --header 'Content-Type: application/json' 
---data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}' {%endcodeblock%}
+--data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}' {%endcodeblock%}
 
 Look for a 202 Accepted in the HTTP response headers.
 

@@ -17,7 +17,7 @@ Retrieve
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=example@example.com&method=eventposturl %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=exampleexampexample@example.com&method=eventposturl %}
   {% response json %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
@@ -43,7 +43,7 @@ Update / Set URL
 {% endparameters %}
 
 
-{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=example@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
+{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=exampleexampexample@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"
@@ -70,7 +70,7 @@ Delete
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=example@example.com&method=eventposturl %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=exampleexampexample@example.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"

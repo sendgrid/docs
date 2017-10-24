@@ -88,7 +88,7 @@ using the SMTP API header:
 {% codeblock lang:json %}
 {
   "to": [
-    "alice@sendgrid.com",
+    "exampleexampexample@example.com",
     "bob@sendgrid.com"
   ],
   "sub": {

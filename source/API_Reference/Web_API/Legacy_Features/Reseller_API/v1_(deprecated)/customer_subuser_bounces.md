@@ -55,7 +55,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -63,7 +63,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ### Response
 
 {% codeblock %}
-bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>email2@domain2.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces
+bounces><bounce><email>emaieexampexample@example.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>emaileexampexample@example.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -72,14 +72,14 @@ bounces><bounce><email>email1@domain.com</email><status>5.1.1</status><reason>ho
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=exampleexampexample@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
-{"email":"email1@domain.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{"email":"emaieexampexample@example.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com","created":"2009-06-01 19:41:39"},{"email":"emaileexampexample@example.com","status":"5.1.1","reason":"host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
 
@@ -132,7 +132,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=delete&email=bounceexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -154,7 +154,7 @@ result><message>Email does not exist</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=delete&email=bounceexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

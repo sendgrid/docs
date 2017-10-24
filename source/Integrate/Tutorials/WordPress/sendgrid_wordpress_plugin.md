@@ -37,7 +37,7 @@ If you would like to use [templates]({{root_url}}/User_Guide/Transactional_Templ
 You can have an individual email sent to each recipient by specifying the x-smtpapi-to header. For example:
 
 {% codeblock lang:php %}
-x-smtpapi-to: example@example.com, example2@example.com
+x-smtpapi-to: exampleexampexample@example.com, example2@example.com
 {% endcodeblock %}
 
 {% info %}

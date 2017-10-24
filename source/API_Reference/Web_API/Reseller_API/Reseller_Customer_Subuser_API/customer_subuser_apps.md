@@ -22,7 +22,7 @@ Note: The *name* entry is used in all the other API calls to identify an app.
 {% endparameters %}
 
 
-{% apiexample list POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=example@example.com %}
+{% apiexample list POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=exampleexampexample@example.com %}
   {% response json %}
 [
     {
@@ -71,7 +71,7 @@ Activate App
  {% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
 {% endparameters %}
 
-{% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=activate&user=example@example.com %}
+{% apiexample activate POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=activate&user=exampleexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -99,7 +99,7 @@ Deactivate App
 {% endparameters %}
 
 
-{% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=deactivate&user=example@example.com %}
+{% apiexample deactivate POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=newrelic&method=apps&task=deactivate&user=exampleexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -128,7 +128,7 @@ These API calls require that settings are passed using POST.
  {% parameter 'field_name' 'Yes' 'Must be set to <em>a setting field name</em>' 'The [fields]({{root_url}}/API_Reference/Web_API/filter_settings.html) required for each app to work properly' %}
 {% endparameters %}
 
-{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=example@example.com false %}
+{% apiexample customize POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=exampleexampexample@example.com false %}
   {% response json %}
 {
   "message": "success",
@@ -161,7 +161,7 @@ Get Current Settings
  {% parameter 'name' 'Yes' 'Must be set to <em>name of the app</em>' 'Name is returned in the List API call above' %}
 {% endparameters %}
 
-{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=example@example.com&method=app false %}
+{% apiexample settings POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&task=getsettings&user=exampleexampexample@example.com&method=app false %}
   {% response json %}
 {
   "settings": {

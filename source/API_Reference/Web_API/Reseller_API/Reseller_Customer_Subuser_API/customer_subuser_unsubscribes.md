@@ -21,15 +21,15 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -37,11 +37,11 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% response xml %}
 <unsubscribes>
    <unsubscribe>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
    <unsubscribe>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
 </unsubscribes>
@@ -66,7 +66,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=delete&email=unsubscribe@sample.com %}
   {% response json %}
 {
   "message": "success"
@@ -97,7 +97,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
 {% endparameters %}
 
 
-{% apiexample add POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com %}
+{% apiexample add POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=add&email=unsubscribe@sample.com %}
   {% response json %}
 {
   "message": "success"

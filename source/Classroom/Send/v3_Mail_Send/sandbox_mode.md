@@ -79,7 +79,7 @@ Example Sandbox Mode JSON
     {
       "field": "from",
       "message": "The from object must at least have an 'email'
-parameter with a valid email address and may also contain a 'name' parameter. e.g. {"email": "example@example.com"} or {"email": "example@example.com", "name": "Example Recipient"}"
+parameter with a valid email address and may also contain a 'name' parameter. e.g. {"email": "exampleexampexample@example.com"} or {"email": "exampleexampexample@example.com", "name": "Example Recipient"}"
     }
   ]
 }

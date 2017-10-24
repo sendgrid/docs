@@ -56,7 +56,7 @@ Get Current Settings
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -97,7 +97,7 @@ Get Current Settings
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -188,7 +188,7 @@ Edit Entry
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -222,7 +222,7 @@ Edit Entry
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=parse&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -307,7 +307,7 @@ Delete Entry
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -341,7 +341,7 @@ Delete Entry
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

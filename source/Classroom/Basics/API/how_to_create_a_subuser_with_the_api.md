@@ -17,7 +17,7 @@ navigation:
 
 With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a whitelabel entry or enable website/SMTP access for the subuser.  
 
-**Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
+**Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=exampleexampexample@example.com&country=US&phone=555-5555
 
 <center>
 <strong>Success Message<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/5e355c42-487e-442a-bd2b-89c9d80dd7d0/00000094.png" alt=""><center><strong> <br>Failure Message<br></strong></center>

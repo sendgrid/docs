@@ -53,7 +53,7 @@ Retrieve Invalid Emails
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=exampleexampexample@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -61,7 +61,7 @@ Retrieve Invalid Emails
 ### Response
 
 {% codeblock %}
-invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
+invalidemails><invalidemail><email>exampleexampexample@example.com</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>exampleexampexample@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -70,14 +70,14 @@ invalidemails><invalidemail><email>isaac@hotmail.comm</email><reason>Mail domain
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=exampleexampexample@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
-{"email":"isaac@hotmail.comm","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"isaac@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
+{"email":"exampleexampexample@example.com","reason":"Mail domain mentioned in email address is unknown","created":"2009-06-01 19:41:39"},{"email":"isaac@hotmail","reason":"Bad Syntax","created":"2009-06-01 19:41:39"},{"email":"exampleexampexample@example.com","reason":"Known bad domain","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 
 * * * * *
@@ -129,7 +129,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=exampleexampexample@example.com&task=delete&email=invalidemail@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -151,7 +151,7 @@ result><message>Email does not exist</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=example@example.com&task=delete&email=invalidemail@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=invalidemails&user=exampleexampexample@example.com&task=delete&email=invalidemail@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

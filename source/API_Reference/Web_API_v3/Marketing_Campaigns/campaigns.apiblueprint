@@ -454,7 +454,7 @@ To send to multiple addresses, use an array for the JSON "to" value ["one@addres
     + Body
 
             {
-                "to": "your.email@example.com"
+                "to": "exampleexampexample@example.com"
             }
 
 + Response 204

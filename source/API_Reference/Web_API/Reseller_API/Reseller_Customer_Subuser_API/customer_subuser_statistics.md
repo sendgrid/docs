@@ -21,7 +21,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com %}
   {% response json %}
 [
   {
@@ -96,7 +96,7 @@ Retrieve all-time totals for your customer subuser
 {% endparameters %}
 
 
-{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&aggregate= %}
+{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&aggregate= %}
   {% response json %}
 {
   "requests": 12342,
@@ -133,7 +133,7 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% endparameters %}
 
 
-{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru %}
+{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&list=tru %}
   {% response json %}
 {
   "category": "categoryC"
@@ -169,7 +169,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
+{% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
   {

@@ -18,15 +18,15 @@ Retrieve Spam Reports
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date= %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=exampleexampexample@example.com&task=get&date= %}
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -34,11 +34,11 @@ Retrieve Spam Reports
   {% response xml %}
 <spamreports>
    <spamreport>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </spamreport>
    <spamreport>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </spamreport>
 </spamreports>
@@ -62,7 +62,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manageSubuser api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=exampleexampexample@example.com&task=delete&email=spamreport@domain.com %}
   {% response json %}
 {
   "message": "success"

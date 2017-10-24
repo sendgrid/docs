@@ -38,7 +38,7 @@ Return list of IPs. If search key is provided, returns IPs that matches.
             "users":
             [
                 {"username":"john@example.com", "user_id":7},
-                {"username": "jane@example.com", "user_id":8}
+                {"username": "janeexampexample@example.com", "user_id":8}
             ],
             "subdomain": "email",
             "domain": "example.com",

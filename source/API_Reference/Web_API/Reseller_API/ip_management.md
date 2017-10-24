@@ -227,11 +227,11 @@ The current breakdown of users who are using your IPs.
 [
   {
     "ip": "255.255.253.0",
-    "user": "user4@example.com"
+    "user": "example@example.com"
   },
   {
     "ip": "255.255.254.0",
-    "user": "user4@example.com"
+    "user": "example@example.com"
   }
 ]
   {% endresponse %}
@@ -239,11 +239,11 @@ The current breakdown of users who are using your IPs.
 <ips>
    <entry>
       <ip>255.255.253.0</ip>
-      <user>user4@example.com</user>
+      <user>example@example.com</user>
    </entry>
    <entry>
       <ip>255.255.254.0</ip>
-      <user>user4@example.com</user>
+      <user>example@example.com</user>
    </entry>
 </ips>
 
