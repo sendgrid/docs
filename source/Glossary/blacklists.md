@@ -50,8 +50,8 @@ Delisting Request Forms
 
 Below are links to the delisting forms used by the more popular external blacklisting services:
 
-* [AOL](http://rbl.att.net/cgi-bin/rbl/block_admin.cgi)
-* [AT&T](http://postmaster.aol.com/SupportRequest.php)
+* [AOL](http://postmaster.aol.com/SupportRequest.php)
+* [AT&T](https://www.att.com/esupport/postmaster/index.jsp)
 * [Barracuda](http://www.barracudacentral.org/rbl/removal-request)
 * [Comcast](http://postmaster.comcast.net/block-removal-request.html)
 * [Google](https://support.google.com/mail/contact/msgdelivery)
