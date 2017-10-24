@@ -203,7 +203,7 @@ Adding Images
 Using Substitution Tags
 {% endanchor h3 %}
 
-Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients you can specify substitution tags specific to each recipient.
+Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your campaign.
 
 *To add a substitution tag to your campaign:*
 
@@ -211,28 +211,15 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 1. Locate the tag you want to add to your campaign and click the **copy** icon.
 1. Paste the tag into the module.
 
-You can add the following substitution tags to your marketing campaign:
+Any custom fields you've created will appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
+
+You'll also see a number of System Fields that you can place in the body of your campaign to populate with your data. These include:
 
 <table class="table" style="table-layout:fixed">
  <tr>
    <th>Substitution Tag</th>
    <th>Description</th>
    <th>Type</th>
- </tr>
- <tr>
-   <td><code>[%email%]</code></td>
-   <td>The email address of the recipient</td>
-   <td>Personalization</td>
- </tr>
- <tr>
-   <td><code>[%first_name%]</code></td>
-   <td>The first name of the recipient</td>
-   <td>Personalization</td>
- </tr>
- <tr>
-   <td><code>[%last_name%]</code></td>
-   <td>The last name of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
    <td><code>[Sender_Name]</code></td>
