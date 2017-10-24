@@ -15,7 +15,7 @@ The design editor is where you build your templates and campaigns using drag & d
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
 * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-    * [Drag & Drop Module Descriptions and Styles](#-Drag-Drop-Module-Descriptions-and-Styles)
+    * [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
 * [Using Global Styles](#-Using-Global-Styles)
 * [Editing Module HTML](#-Editing-Module-HTML)
 * [Code Modules](#-Code-Modules)
@@ -599,7 +599,7 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
 1. Find the *Categories* field.
-1. Enter the name of a new category or select a previously used category from the drop-down menu. 
+1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
 {% anchor h3 %}
 Additional Resources
