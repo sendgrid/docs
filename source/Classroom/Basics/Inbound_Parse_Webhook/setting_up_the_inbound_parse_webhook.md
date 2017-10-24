@@ -187,7 +187,7 @@ X-Gm-Message-State: AEkoousvdxmDoxLlTUYJ1AOmCGJv77xRBBlfKv6YrthH0M2NueMwlOxUD6t8
 X-Received: by 10.107.6.101 with SMTP id 98mr38024553iog.41.1469652785829; Wed, 27 Jul 2016 13:53:05 -0700 (PDT)
 MIME-Version: 1.0
 Received: by 10.107.48.17 with HTTP; Wed, 27 Jul 2016 13:53:05 -0700 (PDT)
-From: Sender Name <exampleexampexample@example.com>
+From: Sender Name <example@example.com>
 Date: Wed, 27 Jul 2016 14:53:05 -0600
 Message-ID: <CAN_P_JMvV7ZpAQhOnDienypLrJmuhN=LQWweu4yScw4jQyXY2w@mail.gmail.com>
 Subject: Different File Types
@@ -205,7 +205,7 @@ Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
 </div></div>
 "
   ["from"]=>
-  string(33) "Sender Name <exampleexampexample@example.com>"
+  string(33) "Sender Name <example@example.com>"
   ["text"]=>
   string(139) "Here's an email with multiple attachments
 "
@@ -232,7 +232,7 @@ Content analysis details:   (2.6 points, 5.0 required)
 
 "
   ["envelope"]=>
-  string(66) "{"to":["example@example.comom"],"from":"exampleexampexample@example.com"}"
+  string(66) "{"to":["example@example.comom"],"from":"example@example.com"}"
   ["attachments"]=>
   string(1) "2"
   ["subject"]=>
@@ -329,7 +329,7 @@ X-Gm-Message-State: ALyK8tINVaZIP8YCgQbpg5ya8EnqQo76uxkXUPpDnM+kAyAQQzehFU10Egyu
 X-Received: by 10.36.76.16 with SMTP id a16mr4479786itb.77.1468940781988; Tue, 19 Jul 2016 08:06:21 -0700 (PDT)
 MIME-Version: 1.0
 Received: by 10.107.48.17 with HTTP; Tue, 19 Jul 2016 08:06:21 -0700 (PDT)
-From: Sender Name <exampleexampexample@example.com>
+From: Sender Name <example@example.com>
 Date: Tue, 19 Jul 2016 09:06:21 -0600
 Message-ID: <CAN_P_JNa25--hzm5=-ES9cnxgWa+h+E49OOAS7sPpV0gsoXCOw@mail.gmail.com>
 Subject: Hello
@@ -464,7 +464,7 @@ AFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAgACAD/AQAAmw4AAAAA
   ["to"]=>
   string(22) "example@example.comom"
   ["from"]=>
-  string(33) "Sender Name <exampleexampexample@example.com>"
+  string(33) "Sender Name <example@example.com>"
   ["sender_ip"]=>
   string(13) "209.85.214.45"
   ["spam_report"]=>
@@ -485,7 +485,7 @@ Content analysis details:   (0.4 points, 5.0 required)
 
 "
   ["envelope"]=>
-  string(73) "{"to":["example@example.comom"],"from":"exampleexampexample@example.com"}"
+  string(73) "{"to":["example@example.comom"],"from":"example@example.com"}"
   ["subject"]=>
   string(5) "Hello"
   ["spam_score"]=>

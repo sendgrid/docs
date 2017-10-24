@@ -25,7 +25,7 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
   {% response json %}
 [
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "reason": "Mail domain mentioned in email address is unknown",
     "created": "2009-06-01 19:41:39"
   },
@@ -35,7 +35,7 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "reason": "Known bad domain",
     "created": "2009-06-01 19:41:39"
   }
@@ -44,7 +44,7 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
   {% response xml %}
 <invalidemails>
    <invalidemail>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <reason>Mail domain mentioned in email address is unknown</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -54,7 +54,7 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
    <invalidemail>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <reason>Known bad domain</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>

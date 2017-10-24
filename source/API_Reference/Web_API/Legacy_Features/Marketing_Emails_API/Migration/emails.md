@@ -37,7 +37,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"exampleexampexample@example.com", "name":"Example User"}'
+curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"example@example.com", "name":"Example User"}'
 {% endcodeblock %}
 
 **Response**
@@ -99,7 +99,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -149,7 +149,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"exampleexampexample@example.com", "name":"Example User", "city":"Denver", "country":"USA"}'
+curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data={"email":"example@example.com", "name":"Example User", "city":"Denver", "country":"USA"}'
 {% endcodeblock %}
 
 **Response**
@@ -209,7 +209,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -262,7 +262,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data[]={"email":"exampleexampexample@example.com", "name":"Example User"}' -F 'data[]={"email":"example2@example.com", "name":"Example User2"}'
+curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F 'data[]={"email":"example@example.com", "name":"Example User"}' -F 'data[]={"email":"example2@example.com", "name":"Example User2"}'
 {% endcodeblock %}
 
 **Response**
@@ -323,7 +323,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -342,7 +342,7 @@ curl --request GET \
     },
     {
       "created_at": 1432313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBhx",
       "last_clicked": null,
@@ -402,7 +402,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/get.json -F api
 {% codeblock lang:json %}
 [
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": "Example User"
   }
 ]
@@ -429,7 +429,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422395108,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": "Example User",
       "id": "YUBh",
       "last_clicked": null,
@@ -530,7 +530,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/delete.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F email[]=exampleexampexample@example.com
+curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/delete.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'list=my_list' -F email[]=example@example.com
 {% endcodeblock %}
 
 **Response**
@@ -593,7 +593,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -612,7 +612,7 @@ curl --request GET \
     },
     {
       "created_at": 1432313607,
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBhx",
       "last_clicked": null,

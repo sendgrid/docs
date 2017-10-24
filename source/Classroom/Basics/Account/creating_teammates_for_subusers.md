@@ -61,7 +61,7 @@ Example cURL request to invite a teammate:
 curl --request POST \
   --url https://api.sendgrid.com/v3/teammates \
   --header 'content-type: application/json' \
-  --data '{"email":"exampleexampexample@example.com","scopes":["billing.delete", "billing.read", "billing.update"],"is_admin":false}'
+  --data '{"email":"example@example.com","scopes":["billing.delete", "billing.read", "billing.update"],"is_admin":false}'
 {% endcodeblock %}
 
 The various teammate permissions are specified within the `scopes` array. The example shown here includes the billing scopes that would be useful for a teammate primarily responsible for accounting.

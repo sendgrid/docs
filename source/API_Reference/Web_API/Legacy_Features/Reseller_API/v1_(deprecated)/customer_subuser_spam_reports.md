@@ -53,7 +53,7 @@ Retrieve Spam Reports
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=exampleexampexample@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -70,7 +70,7 @@ spamreports><spamreport><email>emaieexampexample@example.com</email><created>200
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=exampleexampexample@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -129,7 +129,7 @@ Since SendGrid does not deliver to spam reported addresses, users can remove spa
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=exampleexampexample@example.com&task=delete&email=spamreport@domain.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -151,7 +151,7 @@ result><message>Email does not exist</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=exampleexampexample@example.com&task=delete&email=spamreport@domain.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=spamreports&user=example@example.com&task=delete&email=spamreport@domain.com
   {% endrequestdata %}
 
 {% endrequestblock %}

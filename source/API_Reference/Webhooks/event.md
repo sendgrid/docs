@@ -355,7 +355,7 @@ For example, if you were to include the following custom arguments in a personal
     {
       "to": [
         {
-          "email": "exampleexampexample@example.com"
+          "email": "example@example.com"
         }
       ],
       "subject": "Hello, World!",

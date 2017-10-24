@@ -22,7 +22,7 @@ Dir.glob html_files do |html_file|
     first_response = $3.strip
     second_response = $4.strip
 
-    #https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=exampleexampexample@example.com&task=retrieve
+    #https://api.sendgrid.com/apiv2/customer.limit.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=retrieve
 
     url = http_call.slice(0..(http_call.index('?')-1))
     data = http_call.slice((http_call.index('?')+1)..-1)

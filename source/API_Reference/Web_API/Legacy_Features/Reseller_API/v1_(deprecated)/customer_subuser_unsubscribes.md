@@ -49,7 +49,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -65,7 +65,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=exampleexampexample@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -119,7 +119,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=delete&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -153,7 +153,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=delete&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=delete&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -217,7 +217,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=add&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -251,7 +251,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=exampleexampexample@example.com&task=add&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=example@example.com&task=add&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}

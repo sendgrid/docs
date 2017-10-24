@@ -19,7 +19,7 @@ Retrieve Bounces
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
@@ -72,7 +72,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=delete&email=bounceexampexample@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounceexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

@@ -52,7 +52,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
   {% requesturl POST %}https://api.sendgrid.com/api/user.invalidemails.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=exampleexampexample@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -64,7 +64,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 
 <invalidemails>
    <invalidemail>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <reason>Mail domain mentioned in email address is unknown</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -74,7 +74,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
    <invalidemail>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <reason>Known bad domain</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -91,7 +91,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
   {% requesturl POST %}https://api.sendgrid.com/api/user.invalidemails.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=exampleexampexample@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -101,7 +101,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 {% codeblock lang:json %}
 [
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "reason": "Mail domain mentioned in email address is unknown",
     "created": "2009-06-01 19:41:39"
   },
@@ -111,7 +111,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "reason": "Known bad domain",
     "created": "2009-06-01 19:41:39"
   }
@@ -168,7 +168,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
   {% requesturl POST %}https://api.sendgrid.com/api/user.invalidemails.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=exampleexampexample@example.com&task=delete&email=invalidemail@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -202,7 +202,7 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
   {% requesturl POST %}https://api.sendgrid.com/api/user.invalidemails.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=exampleexampexample@example.com&task=delete&email=invalidemail@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=example@example.com&task=delete&email=invalidemail@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

@@ -55,7 +55,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -71,7 +71,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=exampleexampexample@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -118,7 +118,7 @@ Retrieve all-time totals for your customer subuser
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=exampleexampexample@example.com&aggregate=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&;user=example@example.com&aggregate=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -134,7 +134,7 @@ Retrieve all-time totals for your customer subuser
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=exampleexampexample@example.com&amp;aggregate=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;aggregate=
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -181,7 +181,7 @@ Retrieve a list of all the categories used in your customer subusers account.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&list=tru
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&list=tru
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -197,7 +197,7 @@ Retrieve a list of all the categories used in your customer subusers account.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=exampleexampexample@example.com&amp;list=tru
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;list=tru
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -262,7 +262,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -274,7 +274,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=exampleexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=example@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -290,7 +290,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=exampleexampexample@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -302,7 +302,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=exampleexampexample@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
   {% endrequestdata %}
       
 {% endrequestblock %}

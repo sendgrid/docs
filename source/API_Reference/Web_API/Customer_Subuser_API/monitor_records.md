@@ -22,7 +22,7 @@ Create a new monitor record on the account.
  {% parameter frequency Yes 'Unsigned integer' 'Interval of emails between samples' %}
 {% endparameters %}
 
-{% apiexample create POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=exampleexampexample@example.com&frequency=1000 %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
 {
   "message": "success"
@@ -51,7 +51,7 @@ Edit an existing Monitor record.
  {% parameter new_frequency No 'Unsigned integer' 'The new intervals of emails between samples' %}
 {% endparameters %}
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=exampleexampexample@example.com&new_frequency=100 %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=100 %}
   {% response json %}
 {
   "message": "success"
@@ -110,7 +110,7 @@ List all available monitor records on your account.
 [
   {
     "name": "sampleNameA",
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "frequency": "1000",
     "users": [
 
@@ -118,7 +118,7 @@ List all available monitor records on your account.
   },
   {
     "name": "sampleNameB",
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "frequency": "10000",
     "users": [
       "user1@example.com",
@@ -131,13 +131,13 @@ List all available monitor records on your account.
 <monitors>
    <monitor>
       <name>sampleNameA</name>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <frequency>1000</frequency>
       <users/>
    </monitor>
    <monitor>
       <name>sampleNameB</name>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>
@@ -164,7 +164,7 @@ Append a subuser to an existing monitor record.
 {% endparameters %}
 
 
-{% apiexample append POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=exampleexampexample@example.com %}
+{% apiexample append POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=append&name=myMonitor&user=example@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -193,7 +193,7 @@ Detach a subuser from a monitor record.
 {% endparameters %}
 
 
-{% apiexample detach POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=exampleexampexample@example.com %}
+{% apiexample detach POST https://api.sendgrid.com/apiv2/customer.monitor api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=detach&user=example@example.com %}
   {% response json %}
 {
   "message": "success"

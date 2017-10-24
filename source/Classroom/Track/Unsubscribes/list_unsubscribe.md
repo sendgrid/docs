@@ -87,14 +87,14 @@ Using List-Unsubscribe with v3 Mail Send
     {
       "to": [
         {
-          "email": "exampleexampexample@example.com"
+          "email": "example@example.com"
         }
       ],
       "subject": "Your subject line here"
     }
   ],
   "from": {
-    "email": "exampleexampexample@example.com"
+    "email": "example@example.com"
   },
   "content": [
     {

@@ -32,7 +32,7 @@ Obtain a complete list of all customer.
 {% endparameters %}
 
 
-{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=exampleexampexample@example.com&frequency=1000 %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000 %}
   {% response json %}
 {
   "message": "success"
@@ -65,7 +65,7 @@ Make modifications to an existing Monitor record.
 {% endparameters %}
 
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=exampleexampexample@example.com&new_frequency=5 %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5 %}
   {% response json %}
 {
   "message": "success"
@@ -129,7 +129,7 @@ List all available monitor records a reseller has.
 [
   {
     "name": "sampleNameA",
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "frequency": "1000",
     "users": [
 
@@ -137,7 +137,7 @@ List all available monitor records a reseller has.
   },
   {
     "name": "sampleNameB",
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "frequency": "10000",
     "users": [
       "user1@example.com",
@@ -150,13 +150,13 @@ List all available monitor records a reseller has.
 <monitors>
    <monitor>
       <name>sampleNameA</name>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <frequency>1000</frequency>
       <users/>
    </monitor>
    <monitor>
       <name>sampleNameB</name>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>

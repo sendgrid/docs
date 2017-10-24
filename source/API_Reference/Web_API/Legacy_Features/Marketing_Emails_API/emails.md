@@ -52,7 +52,7 @@ Add an email recipient to a list:
      -d 'api_user=your_sendgrid_username' \
      -d 'api_key=your_sendgrid_password' \
      -d 'list=my_list' \
-     -d 'data={"email":"exampleexampexample@example.com","name":"contactName"}'{% endcodeblock %}
+     -d 'data={"email":"example@example.com","name":"contactName"}'{% endcodeblock %}
 
 Add an email recipient with multiple data fields:
 
@@ -60,7 +60,7 @@ Add an email recipient with multiple data fields:
      -d 'api_user=your_sendgrid_username' \
      -d 'api_key=your_sendgrid_password' \
      -d 'list=my_list' \
-     -d 'data={"email":"exampleexampexample@example.com","name":"Oscar","city":"New York","street":"123 Sesame St"}'{% endcodeblock %}
+     -d 'data={"email":"example@example.com","name":"Oscar","city":"New York","street":"123 Sesame St"}'{% endcodeblock %}
 
 Add multiple email recipients to a list:
 
@@ -92,7 +92,7 @@ Get the email addresses and associated fields for a Recipient List.
   {% response json %}
 [
   {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": ""
   }
 ]
@@ -100,7 +100,7 @@ Get the email addresses and associated fields for a Recipient List.
   {% response xml %}
 <emails>
    <email>
-      <email>exampleexampexample@example.com</email>
+      <email>example@example.com</email>
       <name> </name>
    </email>
 </emails>

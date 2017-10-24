@@ -71,7 +71,7 @@ Filters
 
 You can customize the emails you send via SMTP by using different settings (also referred to as filters). These settings are specified within the **X-SMTPAPI header**.
 
-For example, to send a blind carbon copy (BCC) of your email to the address exampleexampexample@example.com, include the following in your X-SMTPAPI header:
+For example, to send a blind carbon copy (BCC) of your email to the address example@example.com, include the following in your X-SMTPAPI header:
 
 {% codeblock lang:json %}
 {
@@ -79,7 +79,7 @@ For example, to send a blind carbon copy (BCC) of your email to the address exam
     "bcc" : {
       "settings" : {
         "enable" : 1,
-        "email" : "exampleexampexample@example.com"
+        "email" : "example@example.com"
       }
     }
   }
@@ -127,7 +127,7 @@ To define the value that will replace the `-name-` tag, define the following in 
 {
   "to": [
     "john.doeexampexample@example.com",
-    "exampleexampexample@example.com"
+    "example@example.com"
   ],
   "sub": {
     "-name-": [

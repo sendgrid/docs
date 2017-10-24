@@ -28,19 +28,19 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
     "status": "4.0.0",
     "created": "2012-09-02 00:12:12",
     "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
-    "email": "exampleexampexample@example.com"
+    "email": "example@example.com"
   },
   {
     "status": "4.0.0",
     "created": "2012-09-02 00:21:29",
     "reason": "Connection timed out",
-    "email": "exampleexampexample@example.com"
+    "email": "example@example.com"
   },
   {
     "status": "4.0.0",
     "created": "2012-09-02 00:25:33",
     "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
-    "email": "exampleexampexample@example.com"
+    "email": "example@example.com"
   }
 ]
   {% endresponse %}

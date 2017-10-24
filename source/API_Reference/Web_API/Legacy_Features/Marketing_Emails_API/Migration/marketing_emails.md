@@ -71,7 +71,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "exampleexampexample@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",

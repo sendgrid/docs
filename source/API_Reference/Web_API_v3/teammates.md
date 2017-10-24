@@ -288,7 +288,7 @@ HTTP/1.1 200
     },
     {
       "username": "teammate3",
-      "email": "exampleexampexample@example.com",
+      "email": "example@example.com",
       "first_name": "Steve",
       "last_name": "Doe",
       "user_type": "admin",

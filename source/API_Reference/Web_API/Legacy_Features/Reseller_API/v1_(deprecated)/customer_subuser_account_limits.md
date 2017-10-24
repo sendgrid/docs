@@ -57,7 +57,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=retriev
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -86,7 +86,7 @@ Retrieve account limits for a specific customer subuser. If the API call respons
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=retriev
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=retriev
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -150,7 +150,7 @@ Obtain a complete list of all customer subuser.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=non
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -180,7 +180,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=non
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=non
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -277,7 +277,7 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=recurring&credits=200&period=dail
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -307,7 +307,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=recurring&credits=200&period=dail
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=recurring&credits=200&period=dail
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -378,7 +378,7 @@ Set a subusers credits to a specified amount.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=total&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -408,7 +408,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=total&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=total&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -481,7 +481,7 @@ Increment a subusers credits by a specified amount.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=increment&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -511,7 +511,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=increment&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=increment&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -584,7 +584,7 @@ Decrement a subusers credits by a specified amount.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=decrement&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -614,7 +614,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=exampleexampexample@example.com&task=decrement&credits=20
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=example@example.com&task=decrement&credits=20
   {% endrequestdata %}
 
 {% endrequestblock %}

@@ -76,7 +76,7 @@ Obtain a complete list of all customer.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=exampleexampexample@example.com&frequency=1000
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -106,7 +106,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=exampleexampexample@example.com&frequency=1000
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=create&name=myMonitor&email=example@example.com&frequency=1000
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -200,7 +200,7 @@ Make modifications to an existing Monitor record.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=exampleexampexample@example.com&new_frequency=5
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -230,7 +230,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=exampleexampexample@example.com&new_frequency=5
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=edit&name=myMonitor&new_name=updatedMonitor&new_email=example@example.com&new_frequency=5
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -414,7 +414,7 @@ List all available monitor records a reseller has.
 ### Response
 
 {% codeblock %}
-monitors><monitor><name>sampleNameA</name><email>exampleexampexample@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>exampleexampexample@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>exampexample@example.comom</user></users></monitor></monitors
+monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>exampexample@example.comom</user></users></monitor></monitors
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -430,7 +430,7 @@ monitors><monitor><name>sampleNameA</name><email>exampleexampexample@example.com
 
 <h3>Response</h3>
 {% codeblock %}
-{"name":"sampleNameA","email":"exampleexampexample@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"exampleexampexample@example.com","frequency":"10000","users":["user1@example.com","exampexample@example.comom"]}
+{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","exampexample@example.comom"]}
 {% endcodeblock %}
 
 * * * * *

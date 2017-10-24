@@ -111,7 +111,7 @@ Setup App
 
 Change application settings across the entire Account. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
 
-{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=exampleexampexample@example.com false %}
+{% apiexample setup POST https://api.sendgrid.com/api/filter.setup api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=bcc&email=example@example.com false %}
   {% response json %}
 {
   "message": "success"
@@ -143,7 +143,7 @@ Get the Settings Of An App
 {
   "settings": [
     {
-      "email": "exampleexampexample@example.com"
+      "email": "example@example.com"
     }
   ]
 }

@@ -34,7 +34,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/identity/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'identity=Test Identity' -F 'name=Example User' -F 'email=exampleexampexample@example.com' -F 'address=929_Pearl_Street' -F 'city=Boulder' -F 'state=Colorado' -F 'zip=80302' -F 'country=US'
+curl -X POST https://api.sendgrid.com/api/newsletter/identity/add.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'identity=Test Identity' -F 'name=Example User' -F 'email=example@example.com' -F 'address=929_Pearl_Street' -F 'city=Boulder' -F 'state=Colorado' -F 'zip=80302' -F 'country=US'
 {% endcodeblock %}
 
 **Response**
@@ -57,7 +57,7 @@ curl --request POST \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json' \
---data '{"nickname":"My Sender ID","from":{"email":"exampleexampexample@example.com","name":"Example User"},"reply_to":{"email":"exampleexampexample@example.com","name":"Example User"},"address":"929 Pearl Street","city":"Boulder","state":"Colorado","zip":"80302","country":"US"}'
+--data '{"nickname":"My Sender ID","from":{"email":"example@example.com","name":"Example User"},"reply_to":{"email":"example@example.com","name":"Example User"},"address":"929 Pearl Street","city":"Boulder","state":"Colorado","zip":"80302","country":"US"}'
 {% endcodeblock %}
 
 **Response**
@@ -68,11 +68,11 @@ curl --request POST \
   "id": 1,
   "nickname": "My Sender ID",
   "from": {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": "Example User"
   },
   "reply_to": {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": "Example User"
   },
   "address": "929 Pearl Street",
@@ -103,7 +103,7 @@ Legacy Newsletter
 **Request**
 
 {% codeblock lang:bash %}
-curl -X POST https://api.sendgrid.com/api/newsletter/identity/edit.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'identity=Test Identity' -F 'name=Example User 2' -F 'email=exampleexampexample@example.com' -F 'address=929_Pearl_Street' -F 'city=Boulder' -F 'state=Colorado' -F 'zip=80302' -F 'country=US'
+curl -X POST https://api.sendgrid.com/api/newsletter/identity/edit.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD -F 'identity=Test Identity' -F 'name=Example User 2' -F 'email=example@example.com' -F 'address=929_Pearl_Street' -F 'city=Boulder' -F 'state=Colorado' -F 'zip=80302' -F 'country=US'
 {% endcodeblock %}
 
 **Response**
@@ -143,7 +143,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "exampleexampexample@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -172,7 +172,7 @@ curl --request PATCH \
 --header 'accept: application/json' \
 --header 'authorization: Bearer SENDGRID_API_KEY' \
 --header 'content-type: application/json' \
---data '{"nickname":"My Sender ID","from":{"email":"exampleexampexample@example.com","name":"Example User 2"},"reply_to":{"email":"exampleexampexample@example.com","name":"Example User 2"},"address":"929 Pearl Street","city":"Boulder","state":"Colorado","zip":"80302","country":"US"}'
+--data '{"nickname":"My Sender ID","from":{"email":"example@example.com","name":"Example User 2"},"reply_to":{"email":"example@example.com","name":"Example User 2"},"address":"929 Pearl Street","city":"Boulder","state":"Colorado","zip":"80302","country":"US"}'
 
 {% endcodeblock %}
 
@@ -183,11 +183,11 @@ curl --request PATCH \
   "id": 1,
   "nickname": "My Sender ID",
   "from": {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": "Example User 2"
   },
   "reply_to": {
-    "email": "exampleexampexample@example.com",
+    "email": "example@example.com",
     "name": "Example User 2"
   },
   "address": "929 Pearl Street",
@@ -228,7 +228,7 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/get.json -F api_us
   "city": "Boulder",
   "name": "Name",
   "zip": "80302",
-  "replyto": "exampleexampexample@example.com",
+  "replyto": "example@example.com",
   "country": "US",
   "state": "CO",
   "address": "929 Pearl Street",
@@ -264,7 +264,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "exampleexampexample@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -338,7 +338,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "exampleexampexample@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -412,7 +412,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "exampleexampexample@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",

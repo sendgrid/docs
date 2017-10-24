@@ -55,7 +55,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -72,7 +72,7 @@ bounces><bounce><email>emaieexampexample@example.com</email><status>5.1.1</statu
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=exampleexampexample@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -132,7 +132,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=delete&email=bounceexampexample@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounceexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -154,7 +154,7 @@ result><message>Email does not exist</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=exampleexampexample@example.com&task=delete&email=bounceexampexample@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounceexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
