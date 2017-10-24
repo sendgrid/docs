@@ -50,9 +50,8 @@ Before you get started, SendGrid requires that a SendGrid Contributor License Ag
 
 Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when making a contribution. In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
 
-SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
 
-When you create a Pull Request, after a few seconds, a comment will appear with a link to the CLA. Click the link and fill out the brief form and then click the "I agree" button and you are all set. You will not be asked to re-sign the CLA unless we make a change.
+SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
 
 <a name="local"></a>
 ## Local Setup
@@ -79,13 +78,13 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 	* [Mac](https://git-scm.com/download/mac) 
 	* [Windows](https://git-scm.com/download/win) 
 	* [Linux](https://git-scm.com/download/linux)
-* Install a GitGUI(if you want it) for:
+* Install a GitGUI (if you want it) for:
 	* [Mac](https://mac.github.com)
 	* [Windows](https://desktop.github.com/)
 	* [Linux](https://git-scm.com/download/gui/linux)
-* Install Xcode (if you don't have it installed. Go the App Store an download it)
+* Install [Xcode](https://developer.apple.com/xcode/) (if you don't have it installed. Click the link to download)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
-    * Note: You may need to run $ xcode-select --install
+    * Note: You may need to run `$ xcode-select --install`
 * Install JDK  
 The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
@@ -213,15 +212,18 @@ For example:
 
 Note: if you receive an error message similar to "No Java Runtime Present: Requesting Install" please see the following instructions
 
-* Open your Terminal
-* java -version gives you an error and a popup
-* Get the mac download here [https://www.java.com/en/download/faq/java_mac.xml](https://www.java.com/en/download/faq/java_mac.xml)
+* Open your Terminal or Cmd
+* If `java -version` gives you an error and a popup
+* Get the download here 
+	* [Mac](https://www.java.com/en/download/faq/java_mac.xml)
+	* [Windows](https://www.java.com/en/download/)
 * Install it
 * In your terminal, type:
 
 	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
 
-* run java -version again
+* Run `java -version` again.
+
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
 [http://stackoverflow.com/a/19582689](http://stackoverflow.com/a/19582689)
 

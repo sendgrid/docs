@@ -15,7 +15,7 @@ The design editor is where you build your templates and campaigns using drag & d
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
 * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-    * [Drag & Drop Module Descriptions and Styles](#-Drag-Drop-Module-Descriptions-and-Styles)
+* [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
 * [Using Global Styles](#-Using-Global-Styles)
 * [Editing Module HTML](#-Editing-Module-HTML)
 * [Code Modules](#-Code-Modules)
@@ -203,7 +203,7 @@ Adding Images
 Using Substitution Tags
 {% endanchor h3 %}
 
-Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients you can specify substitution tags specific to each recipient.
+Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your campaign.
 
 *To add a substitution tag to your campaign:*
 
@@ -211,28 +211,15 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 1. Locate the tag you want to add to your campaign and click the **copy** icon.
 1. Paste the tag into the module.
 
-You can add the following substitution tags to your marketing campaign:
+Any custom fields you've created will appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
+
+You'll also see a number of System Fields that you can place in the body of your campaign to populate with your data. These include:
 
 <table class="table" style="table-layout:fixed">
  <tr>
    <th>Substitution Tag</th>
    <th>Description</th>
    <th>Type</th>
- </tr>
- <tr>
-   <td><code>[%email%]</code></td>
-   <td>The email address of the recipient</td>
-   <td>Personalization</td>
- </tr>
- <tr>
-   <td><code>[%first_name%]</code></td>
-   <td>The first name of the recipient</td>
-   <td>Personalization</td>
- </tr>
- <tr>
-   <td><code>[%last_name%]</code></td>
-   <td>The last name of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
    <td><code>[Sender_Name]</code></td>
@@ -348,7 +335,7 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
 *To import custom HTML:*
 
@@ -370,7 +357,7 @@ Any HTML that you import replaces all existing content in your campaign or templ
 Drag & Drop Markup
 {% endanchor h3 %}
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag--Drop-Code-Examples).
 
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
