@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to Keen IO for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
@@ -43,7 +43,7 @@ Log into your SendGrid account, click on **Settings** from the left menu → Sel
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-You can snag a prebuilt URL in Keen’s UI or make your own.  
+You can snag a prebuilt URL in Keen’s UI or make your own. 
 
 In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, under **Select Actions**, check **All**.
 
@@ -121,7 +121,7 @@ The report has fixed timeframe options, but that doesn’t mean that we stop sto
 Understanding User Behavior
 {% endanchor h4 %}
 
-Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.     
+Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.    
 
 ![SendGrid- Email Analytics App Funnel]({{root_url}}/images/keen/sendgrid_funnel.png)
 
@@ -179,7 +179,7 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 *To create a dashboard*:
 
-**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**.  
+**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**. 
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query.png)
 

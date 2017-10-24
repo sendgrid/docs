@@ -2,7 +2,7 @@
 seo:
   title: Deliveries
   description: A delivery is recorded when a request to send an email results in the delivery of that email to the end recipient.
-  keywords: Delivery, email delivery, delivery metrics, email statistics
+  keywords: Delivery, email delivery, statistics, email statistics
 title: Deliveries
 weight: 0
 layout: page

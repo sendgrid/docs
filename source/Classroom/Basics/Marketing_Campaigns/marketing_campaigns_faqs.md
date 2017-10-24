@@ -244,7 +244,7 @@ Make sure that you have inserted the [unsubscribe] tag in the body of your campa
 What is an unsubscribe group?
 {% endanchor %}
 
-An _unsubscribe group_ is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types or groups of emails instead of globally unsubscribing from _all_ of your emails. A common example, would be to have one group for “Account” messages like password resets and shipping notifications, and another group for “Marketing” messages, so that users unsubscribing from marketing email don’t mistakenly miss password reminder emails.  For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
+An _unsubscribe group_ is a group of recipients that we will not send emails to. Unsubscribe groups allow your readers to opt out of certain types or groups of emails instead of globally unsubscribing from _all_ of your emails. A common example, would be to have one group for “Account” messages like password resets and shipping notifications, and another group for “Marketing” messages, so that users unsubscribing from marketing email don’t mistakenly miss password reminder emails. For more information on using unsubscribe links in your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
 {% anchor h3 %}
 What is the difference between suppression groups and unsubscribe groups?

@@ -131,7 +131,7 @@ If you scheduled a specific time to send your campaign, it's easy to unschedule 
 Using the API
 {% endanchor %}
 
-You can unschedule a campaign by making a call to [/v3/camaigns/{campaign_id}/schedules]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
+You can unschedule a campaign by making a call to [/v3/campaigns/{campaign_id}/schedules]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules %}
 {% v3response %}

@@ -10,7 +10,7 @@ navigation:
 ---
 {% warning %}
 Legacy Newsletter is now retired.
-As a safety net, you may **retrieve** data for a short grace period. Please act meow to download your data or migrate any assets to Marketing Campaigns.
+As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
 {% endwarning %}
 
 For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
@@ -36,7 +36,7 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 &nbsp; &#x274f; Practice by creating a test campaign and sending it to yourself.
 
 {% anchor h3 %}
-2. Choose how you'd like to pay.  
+2. Choose how you'd like to pay. 
 {% endanchor %}
 
 &nbsp; &#x274f; If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can choose how you’d like to pay. You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns.

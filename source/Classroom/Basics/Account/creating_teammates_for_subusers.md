@@ -41,7 +41,7 @@ Teammate permissions may be either:
 
 * **"Admin"** - administrator teammates have full access to all of the subuser's account features and settings.
 * **"Read-Only Access"** - teammates with read-only permissions will be able to view all of the subuser's account features and settings, but they won't be able to make any changes.
-* **"Restricted Access"** - teamamtes with restricted access will have access to only the features you specify. There are three presets: "Developer Access", "Marketer Access", and "Accountant Access". The specific permissions for each preset are displayed under **Access Details**.
+* **"Restricted Access"** - teammates with restricted access will have access to only the features you specify. There are three presets: "Developer Access", "Marketer Access", and "Accountant Access". The specific permissions for each preset are displayed under **Access Details**.
 
 You may also customize any of these presets. You can make your own set of permissions by selecting "Custom Access" and using the sliders next to each permission under **Access Details**.
 

@@ -42,7 +42,7 @@ Connect to the SendGrid Inbound Parse API
 
 SendGrid can both send and receive email for your domain name. The playlist app uses incoming mail, which means setting up DNS at your domain registrar or host. The process to do this is going to be different depending on who controls your DNS. This tutorial will walk through the Azure and SendGrid part of this process, but you may need to ask for help on changing DNS in your system.
 
-It’s a good idea to choose a subdomain like playlist.example.com, rather than a domain itself. That’s because the Inbound Parse API must collect all mail and you don’t want to interrupt other email for your domain.  To use custom domains in Windows Azure, your website will need to run in either Shared mode or the Standard tier; however, Shared mode is currently not available.
+It’s a good idea to choose a subdomain like playlist.example.com, rather than a domain itself. That’s because the Inbound Parse API must collect all mail and you don’t want to interrupt other email for your domain. To use custom domains in Windows Azure, your website will need to run in either Shared mode or the Standard tier; however, Shared mode is currently not available.
 
 Find your IP address and note the further instructions in the management portal:
 

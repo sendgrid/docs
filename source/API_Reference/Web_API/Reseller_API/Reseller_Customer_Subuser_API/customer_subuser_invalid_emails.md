@@ -72,8 +72,8 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving invalid emails from' %}
- {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete a invalid email for the specified customer subuser' %}
- {% parameter 'email' 'No' 'Must be a invalid email' 'You must specify the invalid emails to remove' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete an invalid email for the specified customer subuser' %}
+ {% parameter 'email' 'No' 'Must be an invalid email' 'You must specify the invalid emails to remove' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid email functionality' %}
 {% endparameters %}
 

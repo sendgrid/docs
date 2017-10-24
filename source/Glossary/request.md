@@ -2,7 +2,7 @@
 seo:
   title: Request
   description: A request is recorded every time an application attempts to send an email through SendGrid's servers.
-  keywords: request, delivery metrics, statistics
+  keywords: request, statistics
 title: Request
 weight: 0
 layout: page

@@ -16,6 +16,16 @@ When a user unsubscribes from a type of email being sent to them at the sender a
 
 For example, if you had an outdated email list (not something we recommend by the way) and sent an email to that list, but a user on that list had previously unsubscribed from that type of email from you, they would not get the email because the email would never leave SendGrid. It would be suppressed from being sent. A contact’s emails will only be suppressed if they unsubscribe from that sender’s emails, unsubscribing from one sender’s list will have no effect on suppression lists owned by other senders.
 
+* [Overview](#Overview)
+* [Add An Unsubscribe Group](#-Add-An-Unsubscribe-Group)
+* [Default Groups](#-Default-Groups)
+* [Add Recipients to an Unsubscribe Group](#-Add-Recipients-to-an-Unsubscribe-Group)
+* [Upload a CSV To Add Unsubscribe Group Recipients](#-Upload-a-CSV-To-Add-Unsubscribe-Group-Recipients)
+* [Export an Unsubscribe Group List](#-Export-an-Unsubscribe-Group-List)
+* [Edit an Unsubscribe Group](#-Edit-an-Unsubscribe-Group)
+* [Delete an Unsubscribe Group](#-Delete-an-Unsubscribe-Group)
+* [Using the API](#-Using-the-API)
+
 {% anchor h2 %}
 Overview
 {% endanchor %}
@@ -30,7 +40,7 @@ You can then give your recipients more control over the types of emails they wan
 Make sure your group names and descriptions are customer friendly! Your customers will see these group names and descriptions when they unsubscribe from your emails.
 {% endinfo %}
 
-All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups.  There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
 {% anchor h2 %}
 Add An Unsubscribe Group
@@ -72,7 +82,7 @@ To upload a CSV of recipients who should not receive this group’s emails, clic
 Manually Add Unsubscribe Group Recipients
 {% endanchor %}
 
-To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the unsubscribe group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this unsubscribe group will not go to this recipient.  To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
+To manually add a recipient who should not receive this group’s emails, click the gear icon at the right of the unsubscribe group name. When you select “manual add” a window will pop out with a form where you can enter a valid email address. Once you click “Done”, any emails sent with this unsubscribe group will not go to this recipient. To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
 
 {% anchor h2 %}
 Export an Unsubscribe Group List
