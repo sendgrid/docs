@@ -20,7 +20,7 @@ Transactional templates are account and subuser specific. Templates created on a
 
 {% anchor h2 %}
 Create a Template
-{% endanchor %}
+{% endanchor h2 %}
 
 When you first visit the transactional templates page, you will be asked to create your first template.
 
@@ -44,7 +44,7 @@ The easiest way to get started with a new template is to use one of your previou
 
 {% anchor h2 %}
 Editing Your HTML Template
-{% endanchor %}
+{% endanchor h2 %}
 
 {% info %}
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
@@ -62,7 +62,7 @@ You can also use the [Design Editor](https://sendgrid.com/docs/User_Guide/Market
 
 {% anchor h2 %}
 Preview and Test Your Template
-{% endanchor %}
+{% endanchor h2 %}
 
 We suggest that when you’re done making changes to your template, you preview and test it to ensure that the format and layout look the way you expect. We recommend that you always test your template before activating it.
 
@@ -90,7 +90,7 @@ Your substitution tags will not be replaced in this test, but you will be able t
 
 {% anchor h2 %}
 Activate Your Template
-{% endanchor %}
+{% endanchor h2 %}
 
 <div class="row">
 
@@ -108,7 +108,7 @@ Activate Your Template
 
 {% anchor h2 %}
 Duplicate a Template
-{% endanchor %}
+{% endanchor h2 %}
 
 <div class="row">
 
@@ -128,7 +128,7 @@ Duplicate a Template
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags
-{% endanchor %}
+{% endanchor h2 %}
 
 You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
 
@@ -144,18 +144,26 @@ You can find your group IDs by looking at the Group ID column in the [Unsubscrib
 
 {% anchor h3 %}
 Unsubscribe From This List
-{% endanchor %}
+{% endanchor h3 %}
 
 When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List," wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
 
 {% anchor h3 %}
 Unsubscribe From All Emails
-{% endanchor %}
+{% endanchor h3 %}
 
 When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails," wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
 
 {% anchor h3 %}
 Manage Email Preferences
-{% endanchor %}
+{% endanchor h3 %}
 
 When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [SendGrid for Mobile](https://sendgrid.com/docs/User_Guide/SendGrid_for_Mobile/index.html)
+- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
+- [Manage Templates](https://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html)
