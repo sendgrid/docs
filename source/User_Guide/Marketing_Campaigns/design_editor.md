@@ -15,7 +15,7 @@ The design editor is where you build your templates and campaigns using drag & d
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
 * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-    * [Drag & Drop Module Descriptions and Styles](#-Drag-Drop-Module-Descriptions-and-Styles)
+* [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
 * [Using Global Styles](#-Using-Global-Styles)
 * [Editing Module HTML](#-Editing-Module-HTML)
 * [Code Modules](#-Code-Modules)
@@ -335,7 +335,7 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
 *To import custom HTML:*
 
@@ -357,7 +357,7 @@ Any HTML that you import replaces all existing content in your campaign or templ
 Drag & Drop Markup
 {% endanchor h3 %}
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag--Drop-Code-Examples).
 
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
