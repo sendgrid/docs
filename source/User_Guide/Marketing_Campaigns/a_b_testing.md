@@ -32,16 +32,14 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 1. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in. 
 1. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
 1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**. 
-1. 
-
 
 {% anchor h2 %} Choose the Type of A/B Test To Run {% endanchor %}
 
 When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content. 
 
-(% info %)
+{% info %}
 You can test up to 6 different variations for each A/B test campaign.
-(% endinfo %)
+{% endinfo %}
 
 - **Subject Line - Optimize Open Rates**
 
