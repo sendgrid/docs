@@ -774,6 +774,14 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
 
 
-
-
-
+Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Glossary/opt_in_email.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/role_addresses.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
