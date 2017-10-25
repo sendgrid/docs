@@ -26,7 +26,7 @@ Getting Started with the Code Editor
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
 
 1. Click **Create Campaign**.
-   <br>To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
+   <br>To create a campaign from one that has not yet been sent, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. To create a campaign from one that has already been sent, **Duplicate** will be the only option.
 
    ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
@@ -36,7 +36,7 @@ Getting Started with the Code Editor
 1. Select **Code Editor**, and then click **Continue**.
    <br>If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor. The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
-1. Preview your campaign or template by clicking **Preview**.
+1. The Code Editor features a **Live Preview** in the content area. The preview will show changes to the HTML as they are made in real time. The default preview mode is in desktop format.
    <br>You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 {% warning %}
@@ -63,9 +63,11 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 **To add a substitution tag to your campaign:**
 
-1. Navigate to the **Tags** tab. 
+1. Click the **Settings** tab on the left side of the editor.
 
-1. Locate the tag you want to add to your campaign and click the **copy** icon.
+1. Click the **Tags** tab at the top of the Settings window. 
+
+1. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
 
 1. Paste the tag into the module.
 
@@ -150,19 +152,6 @@ Assigning categories to a campaign allows you to track emails based on your own 
 {% info %}
 Currently, only 10 categories can be added to each campaign.
 {% endinfo %}
-
-{% anchor h2 %}
-Previewing Your Campaign
-{% endanchor h2 %}
-
-To preview your campaign or template, click the **Preview** button in the upper-left corner.
-
-You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area.
-
-To view a plain text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
-
-
-When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
 {% anchor h3 %}
 Additional Resources
