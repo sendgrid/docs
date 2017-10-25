@@ -83,6 +83,6 @@ When looking at a subuser’s email activity, you will not see the subuser paren
 Additional Resources
 {% endanchor h2 %}
 
-- [Email Activity for Mobile]({{root_url}}/User_Guide/SendGrid_for_Mobile/email_activity.html)
+- [Email Activity for Mobile ]({{root_url}}/User_Guide/SendGrid_for_Mobile/email_activity.html)
 - [Dashboard]({{root_url}}/User_Guide/dashboard.html)
 - [Option to "Delete From Bounce List" in Email Activity]({{root_url}}/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html)
