@@ -30,6 +30,12 @@ The dashboard page will display your account’s statistics for the past day, we
 
 You can also export the statistics for each individual day to a CSV file by tapping the “share” button.
 
+<h2>Additional Resources</h2>
+
+- [Deliverability Help]({{site.site_url}}/docs/Classroom/Deliver/index.html)
+- [Send Index Help]({{site.site_url}}/docs/Classroom/Send/index.html)
+- [Track Index Help]({{site.site_url}}/docs/Classroom/Track/index.html)
+
 <p class="small">
   <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
 </p>
