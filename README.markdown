@@ -42,6 +42,7 @@ The master branch is continuously deployed to production.
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
 * [JS and CSS, etc](#js_and_css)
+* [License](#license)
 
 <a name="cla"></a>
 ## CLAs and CCLAs
@@ -421,3 +422,6 @@ This still needs work! Many, many words in tech jargon come back as incorrect.
 The best way I've found to solve this issue without too much overhead work:
 1. Run `npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+
+# License
+[The MIT License (MIT)](LICENSE.txt)
