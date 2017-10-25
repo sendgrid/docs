@@ -48,7 +48,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
 
-1. If you selected the Code Edtior, copy and paste your HTML code into the code editor. 
+1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
 <br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
@@ -66,7 +66,7 @@ SendGrid suggests previewing and testing your template once you have created it 
 ![](/images/template_engine_12.png "Preview option")
 
 1. Click **Send Test** to send a test email using your new template. 
-1. Fill in the *recipient* and *subject line* and then click **Send**.  
+1. Fill in the *recipient* and *subject line* fields and then click **Send**.  
 
 ![](/images/templates_create_edit_8.png "Preview and Test")
 
@@ -96,7 +96,7 @@ Duplicate a Template
 1. Navigate to the template you wish to use and select the action menu.
 1. Select **Duplicate**.  
 
-This creates a clone, giving it a name including the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
+This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 
 
 {% anchor h2 %}
@@ -108,7 +108,7 @@ You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution
 {% warning %}
 When using the group unsubscribe substitution tag, you must specify which unsubscribe group you would like to use. If you are sending your email via our SMTP API, please add the group ID into the X-SMTPAPI header. If you are sending via our Web API, please enter the group ID into the x-smtpapi parameter of the mail.send API call.
 
-You must also specify which unsubscribe groups to include on the Manage Preference page if you are using the Manage Email Preferences substitution tag. For more detailed information, please visit our [API Reference]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
+You must also specify which unsubscribe groups to include on the Manage Preferences page if you are using the Manage Email Preferences substitution tag. For more detailed information, please visit our [API Reference]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
 {% endwarning %}
 
 {% info %}
