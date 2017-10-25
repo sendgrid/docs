@@ -17,10 +17,10 @@ Before Adding a Custom SSL configuration, you need to set up a valid [email link
 *To add a custom SSL configuration:*
 
 1. Prepare a proxy (like web application, nginx, or Amazon API Gateway) to take all traffic for `mailing.example.com` and forward it to `sendgrid.net`.
-2. Set up the proxy to use HTTP or HTTPS. For HTTPS, provide valid SSL certificate for `mailing.example.com` domain.
-3. To forward traffic, set `Host` HTTP header to `mailing.example.com` domain.
-4. Point the CNAME record to your proxy. For example, `CNAME mailing.example.com proxy.example.com`.
+1. Set up the proxy to use HTTP or HTTPS. For HTTPS, provide valid SSL certificate for `mailing.example.com` domain.
+1. To forward traffic, set `Host` HTTP header to `mailing.example.com` domain.
+1. Point the CNAME record to your proxy. For example, `CNAME mailing.example.com proxy.example.com`.
   {% warning %}
     Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the whitelabel stops working.
   {% endwarning %}
-5. Contact SendGrid support to enable SSL click and open tracking.
+1. [Contact SendGrid support](https://support.sendgrid.com/hc/en-us) to enable SSL click and open tracking.
