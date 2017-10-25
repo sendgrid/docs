@@ -23,15 +23,15 @@ Create a Template
 {% endanchor h2 %}
 
 1. Open the transactional templates page and click **Create Template**.
-1. Add a unique template name in the dialogue box and then click **Save**. 
+2. Add a unique template name in the dialogue box and then click **Save**. 
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-1.Open the **Actions** dropdown menu to create a new version.
+3. Open the **Actions** dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
-1. Click **Add Version**. 
+4. Click **Add Version**. 
 <br></br>The editor opens. From here, you can change the subject and the body of your email template.
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
@@ -46,12 +46,12 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
+1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html) or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html) by clicking **Actions** and selecting **New Version**. 
 
-1. If you selected the Code Edtior, copy and paste your HTML code into the code editor. 
+2. If you selected the Code Edtior, copy and paste your HTML code into the code editor. 
 <br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
 
-1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
+3. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
 {% anchor h2 %}
 Preview and Test Your Template
@@ -65,8 +65,8 @@ SendGrid suggests previewing and testing your template once you have created it 
 
 ![](/images/template_engine_12.png "Preview option")
 
-1. Click **Send Test** to send a test email using your new template. 
-1. Fill in the *recipient* and *subject line* and then click **Send**.  
+2. Click **Send Test** to send a test email using your new template. 
+3. Fill in the *recipient* and *subject line* and then click **Send**.  
 
 ![](/images/templates_create_edit_8.png "Preview and Test")
 
@@ -81,7 +81,7 @@ Activate Your Template
 *To activate your template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Make Active**.  
+2. Select **Make Active**.  
 
 (% info %)
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
@@ -94,7 +94,7 @@ Duplicate a Template
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Duplicate**.  
+2. Select **Duplicate**.  
 
 This creates a clone, giving it a name including the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 
