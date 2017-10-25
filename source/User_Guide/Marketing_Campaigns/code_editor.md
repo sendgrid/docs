@@ -17,6 +17,7 @@ Use the Code Editor to create a template, edit a SendGrid template, or build a c
 * [Using Substitution Tags](#-Using-Substitution-Tags)
 * [Adding Categories](#-Adding-Categories)
 * [Previewing Your Campaign](#-Previewing-Your-Campaign)
+* [Settings](#-Settings)
 
 
 {% anchor h2 %}
@@ -163,6 +164,77 @@ To view a plain text version of your campaign or template, click the **T** icon.
 
 
 When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
+
+{% anchor h2 %}
+Settings
+{% endanchor h2 %}
+
+**Two Factor Authentication**
+
+Two-Factor Authentication is an extra layer of security that is known as “multi factor authentication” that requires not only a password and username but also something that only that user has on them, i.e. a piece of information only they should know or have immediately at hand such as a physical token, a phone application, or a device.
+
+**Account Details**
+
+Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails. Each section of your profile can be edited by clicking the “Edit” button to the right of each section. Once you have made your changes, click the “Save” button. This will only save the settings for that section. .”When you change your account password, your SMTP and API access will change as well. Make sure you update your account information on all systems and software!
+
+**Alerts**
+
+You can set up alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
+For most alerts, you can choose to have the alert sent to you as needed, hourly, daily, weekly, or monthly. The information contained in your alert will be for the last period of the alert. For example, if you choose weekly for the stats alert, you will receive the stats for the last week.
+
+**API Keys**
+
+API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password.There is a limit of 100 API Keys per account.
+1. Full Access gives all of the API methods.
+2. Restricted Access lets you customize the level of access.
+3. Billing Access gives you access to the billing endpoints.
+
+**Billing Settings**
+
+When you create or upgrade to a paid account, you will put a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill.Canceled accounts are not deleted. Accounts are changed to our free plan.
+
+**IP Access Management**
+
+IP Access Management is a security feature that allows you to control who can access your SendGrid account based on their IP address. After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any other access attempts will be blocked.If you remove every IP address from your whitelist, you will again be able to log in to your account from any IP address.
+
+**Purchase IP Addresses**
+
+You can purchase a dedicated IP address from the IP Addresses Settings page or from your Plan & Billing Details page.
+To purchase a dedicated IP:
+* Navigate to Settings in the left hand navigation menu, select IP Addresses
+* Click ‘Add an IP Address’
+* Select the number of IP addresses you would like to purchase.
+
+**Mail**
+
+Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s Web API or SMTP Relay.An email SMTP relay service is used every time you send an email to someone outside of your address’ domain. SMTP, or Simple Mail Transfer Protocol, does the heavy lifting of sending the message.
+
+**Inbound Parse**
+
+SendGrid’s Inbound Parse Webhook allows you to receive emails that get automatically broken apart by SendGrid and then sent to a URL of your choosing. SendGrid will grab the content, attachments, and the headers from any email it receives for your specified hostname.The Inbound Parse Webhook requires a hostname, where the emails will be sent, and the URL where SendGrid will POST the data it builds from every incoming email.
+
+**Partners**
+
+Partner settings allow you to integrate your SendGrid account with our partners to increase your SendGrid experience and functionality.
+Access your email statistics via the New Relic Dashboard. In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled.
+
+**Teammates**
+
+Teammates is an account administration and security tool designed to help manage multiple users on a single SendGrid account. Teammates is built for groups of shared users, where each user has a different role and thus requires access to different SendGrid features.
+A marketer, developer, and accountant would each have their own teammate account under one SendGrid parent account. The parent SendGrid account will always have administrator level teammate permissions, and may grant any or all of these permissions to other teammates.
+
+**Tracking**
+
+Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or your whitelabeled link domain so that any time a customer clicks a link, SendGrid can track those clicks. SendGrid can track up to 1000 links per email.If you are using email link whitelabeling, then your open tracking image will be served from your whitelabel domain instead of from SendGrid.net.
+
+**Subusers**
+
+Subusers are SendGrid accounts that belong to a parent account. They have their own permissions and credit limits, which you assign as you create the subusers. Subusers are provided in order to help you segment your email sending and API activity. We suggest our customers create subusers for each of the different types of emails they send. This often means one subuser for transactional emails and one for marketing emails; however some of our customers will break up their sending across multiple subusers in order to segment the statistics for each type or function of email they send.
+
+**Whitelabel**
+
+Whitelabeling is the functionality that shows ISPs that SendGrid has your permission to send emails on your behalf. This permission is given by the act of pointing very specific DNS entries from your domain registrar to SendGrid. Once these DNS entries are entered and propagated, recipient email servers and services will read the headers on the emails you send and check the DNS records to verify the email was initiated at a trusted source.
+
 
 {% anchor h3 %}
 Additional Resources
