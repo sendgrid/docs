@@ -129,7 +129,7 @@ then set that version to be the default version
 
 * clone repo
 
-	`$ git clone [https://github.com/sendgrid/docs.git](https://github.com/sendgrid/docs.git)`
+	`$ git clone https://github.com/sendgrid/docs.git`
 
 OR use the GitGUI tool to clone the repo
 
