@@ -42,6 +42,17 @@ The master branch is continuously deployed to production.
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
 * [JS and CSS, etc](#js_and_css)
+* [Node Spellchecker](#node-spellchecker)
+	* [Init](#spellchecker-init)
+	* [Usage](#spellchecker-usage)
+		* [Example output](#spellchecker-example)
+	* [Dictionary](#spellchecker-dictionary)
+	* [Contribution](#spellchecker-contribution)
+* [Style Guide](#style-guide)
+	* [About Jobs-to-be-done](#about-jobs-to-be-done)
+	* [About Additional Resources](#about-additional-resources)
+* [About](#about)
+* [License](#license)
 
 <a name="cla"></a>
 ## CLAs and CCLAs
@@ -350,18 +361,49 @@ payload in querystring format.
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
 
-# About
+<a name="node-spellchecker"></a>
+## Node Spellchecker
 
-SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
-It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
 
-![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+<a name="spellchecker-init"></a>
+### Init
+```
+# (pull code updates before this)
+# install updated npm package dependencies!
+npm install
+```
+<a name="spellchecker-usage"></a>
+### Usage
+```
+# generates report of misspellings
+npm run spellcheck
 
-# License
-[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
+# generates report of misspellings of [filename]
+npm run spellcheck-file [filename]
+```
+<a name="spellchecker-example"></a>
+#### Example output:
+![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
 
+<a name="spellchecker-dictionary"></a>
+### Dictionary: English-US
+
+See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
+Also `.spelling` contains a list of custom words added to the dictionary.
+
+<a name="spellchecker-contribution"></a>
+### Contribution
+This still needs work! Many, many words in tech jargon come back as incorrect.
+The best way I've found to solve this issue without too much overhead work:
+1. Run `npm run spellcheck`
+2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+
+
+<a name="style-guide"></a>
 ## Style Guide
 
+<a name="about-jobs-to-be-done"></a>
 ### About Jobs-to-be-done
 
 Jobs to be done style includes:
@@ -371,6 +413,7 @@ Jobs to be done style includes:
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
 
+<a name="about-additional-resources"></a>
 ### About Additional Resources
 
 "Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
@@ -388,36 +431,12 @@ Additional Resources
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
 ```
-=======
-## Node Spellchecker
+<a name="about"></a>
+## About
 
-This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
+SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
+It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
 
-### Init
-```
-# (pull code updates before this)
-# install updated npm package dependencies!
-npm install
-```
-
-### Usage
-```
-# generates report of misspellings
-npm run spellcheck
-
-# generates report of misspellings of [filename]
-npm run spellcheck-file [filename]
-```
-#### Example output:
-![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
-
-### Dictionary: English-US
-
-See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
-Also `.spelling` contains a list of custom words added to the dictionary.
-
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+<a name="license"></a>
+## License
+[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
