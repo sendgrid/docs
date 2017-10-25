@@ -52,5 +52,5 @@ The Unsubscribe Groups box will show you the current status of unsubscribe group
 Additional Resources
 {% endanchor h2 %}
 
-[Support](http://support.sendgrid.com/hc/en-us)
-[Documentation]({{root_url}}/)
+- [Support]({{site.support_url}}/hc/en-us)
+- [Documentation]({{root_url}}/)
