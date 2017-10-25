@@ -47,11 +47,11 @@ Once you create a new campaign or template in the Code Editor, you cannot switch
 Uploading Images
 {% endanchor h2 %}
 
-1. Select the **Images** tab, and click **Manage Image Library**. A window opens where you can upload images to your image library. 
+1. Select the **Images** icon above the HTML code. A window opens where you can upload images to your image library. 
 
-1. Select the image you want from your image library. The Image Details tab appears. 
+1. Select the image you want from your image library. 
 
-1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**. 
+1. Select the **Image Details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**. 
 
 1. Paste this URL in the image source tag in your campaign or template's HTML. For example: `<img src="your image URL here">`
 
