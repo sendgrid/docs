@@ -17,7 +17,7 @@ When you create your SendGrid account, you will set the timezone for your accoun
 used for times displayed in the SendGrid UI and for scheduling Marketing Campaigns.
 
 When you use the API or look at event listings, you may notice something that you receive numbers. These numbers are a [Unix 
-Timestamp](http://en.wikipedia.org/wiki/Unix_time), which basically means "the number of seconds since 00:00:00 Coordinated Universal 
+Timestamp](http://en.wikipedia.org/wiki/Unix_time), which basically means the number of seconds since "00:00:00 Coordinated Universal 
 Time (UTC), Thursday, 1 January 1970".
 
 If for some reason you are running into timezone issues with scheduling Marketing Emails, please remember that you have the option to
