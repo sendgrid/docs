@@ -46,7 +46,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
+1. Open a new template in the [Code Editor ](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor ](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
 <br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
