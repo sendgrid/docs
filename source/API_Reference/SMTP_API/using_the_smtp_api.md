@@ -10,8 +10,8 @@ You can add as many of the SMTP API methods as you want to a single large JSON s
 
 {% codeblock lang:json %}{
   "to": [
-    "ben@sendgrid.com",
-    "joe@sendgrid.com"
+    "example@example.com",
+    "example@example.com"
   ],
   "sub": {
     "%name%": [
@@ -57,7 +57,7 @@ You can add as many of the SMTP API methods as you want to a single large JSON s
 use strict;
 use JSON;
 
-my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com'],
+my $header = { to => ['example@example.com', 'example@example.com'],
 sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>[ 'sellerSection', 'buyerSection' ] },
 section => { '%sellerSection%' => 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
 category => 'Orders',

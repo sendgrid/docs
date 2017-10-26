@@ -12,6 +12,8 @@ navigation:
 
 An invalid email occurs when you attempt to send email to an address that is formatted in a manner that does not meet internet email format standards or the email does not exist at the recipient's mail server. Examples include addresses without the “@” sign or addresses that include certain special characters and/or spaces. This response can come from our own server or the recipient mail server.
 
+Before you send, SendGrid does a check against the format of the email address to attempt to verify its validity. If the recipient server checks the address and doesn't find it, they will send back a 550 bounce to say that this is an invalid email address.
+
 The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
