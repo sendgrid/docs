@@ -55,3 +55,11 @@ You can remove individual subusers from the list of categories you selected init
 To change this graph to see another metric, click the button inline with the graph title and choose another metric.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+[Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
+[Email Activity]({{root_url}}/User_Guide/email_activity.html)
+[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
