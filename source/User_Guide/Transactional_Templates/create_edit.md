@@ -27,7 +27,7 @@ Create a Template
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-1.Open the **Actions** dropdown menu to create a new version.
+1. Open the **Actions** dropdown menu to create a new version.
 
 ![](/images/templates_create_edit_4.png "Create Template Version")
 
@@ -46,9 +46,9 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)by clicking **Actions** and selecting **New Version**. 
+1. Open a new template in the [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html) or [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html) by clicking **Actions** and selecting **New Version**. 
 
-1. If you selected the Code Edtior, copy and paste your HTML code into the code editor. 
+1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
 <br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
@@ -83,9 +83,9 @@ Activate Your Template
 1. Navigate to the template you wish to use and select the action menu.
 1. Select **Make Active**.  
 
-(% info %)
+{% info %}
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
-(% endinfo %)
+{% endinfo %}
 
 {% anchor h2 %}
 Duplicate a Template
@@ -106,7 +106,7 @@ Unsubscribe Substitution Tags
 You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
 
 {% warning %}
-When using the group unsubscribe substitution tag, you must specify which unsubscribe group you would like to use. If you are sending your email via our SMTP API, please add the group ID into the X-SMTPAPI header. If you are sending via our Web API, please enter the group ID into the x-smtpapi parameter of the mail.send API call.
+When using the group unsubscribe substitution tag, you must specify which unsubscribe group you would like to use. If you are sending your email via our SMTP API, please add the group ID into the X-SMTPAPI header. If you are sending via our Web API, please enter the group ID into the x-smtpapi parameter of the mail. Send API call.
 
 You must also specify which unsubscribe groups to include on the Manage Preference page if you are using the Manage Email Preferences substitution tag. For more detailed information, please visit our [API Reference]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
 {% endwarning %}
