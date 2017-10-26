@@ -83,9 +83,9 @@ Activate Your Template
 1. Navigate to the template you wish to use and select the action menu.
 1. Select **Make Active**.  
 
-(% info %)
+{% info %}
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
-(% endinfo %)
+{% endinfo %}
 
 {% anchor h2 %}
 Duplicate a Template
