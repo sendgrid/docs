@@ -42,6 +42,6 @@ To see only the figures from a specific geographic area, change the Activity Map
 Additional Resources
 {% endanchor %}
 
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-[Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
-[Timezones]({{root_url}}/Glossary/timezone.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
+- [Timezones]({{root_url}}/Glossary/timezone.html)

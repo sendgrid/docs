@@ -43,6 +43,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 Additional Resources
 {% endanchor %}
 
-[Mailbox Provider Stats]({{site.app_url}}/statistics/mailbox_provider)
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-[Account Settings]({{root_url}}/User_Guide/Settings/account.html)
+- [Mailbox Provider Stats]({{site.app_url}}/statistics/mailbox_provider)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Account Settings]({{root_url}}/User_Guide/Settings/account.html)

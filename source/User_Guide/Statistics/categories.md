@@ -40,6 +40,6 @@ Using the API
 Additional Resources
 {% endanchor %}
 
-[Email Activity]({{root_url}}/User_Guide/email_activity.html)
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-[Account Settings]({{root_url}}/User_Guide/Settings/account.html)
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Account Settings]({{root_url}}/User_Guide/Settings/account.html)

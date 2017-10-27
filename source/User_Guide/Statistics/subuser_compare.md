@@ -60,6 +60,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 Additional Resources
 {% endanchor %}
 
-[Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
-[Email Activity]({{root_url}}/User_Guide/email_activity.html)
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)

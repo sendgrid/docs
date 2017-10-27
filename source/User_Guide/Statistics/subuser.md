@@ -30,6 +30,6 @@ This table will refresh with new or adjusted data based on the various filters a
 Additional Resources
 {% endanchor %}
 
-[Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
-[Email Activity]({{root_url}}/User_Guide/email_activity.html)
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
