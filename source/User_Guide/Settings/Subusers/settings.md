@@ -87,3 +87,13 @@ Deleting a subuser account cannot be undone. Please make sure that you are ready
 {% endwarning %}
 
 To delete a subuser account, click the red "Delete" button and click the “Confirm” button in the confirmation window that pops up. This cannot be undone, so be sure that you actually want to delete this account!
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Subusers Overview]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [Subuser Profile]({{root_url}}/User_Guide/Settings/Subusers/profile.html)
+- [Subuser Impersonation]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html)
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Billing Settings]({{root_url}}/User_Guide/Settings/billing.html)
