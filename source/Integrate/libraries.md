@@ -116,8 +116,10 @@ Java
 JavaScript / Node.js
 {% endanchor %}
 
+-   [sendgrid-mailer](https://github.com/adamreisnz) *by Adam Reis* - JavaScript wrapper for the the official Sendgrid library.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
+-   [sts-sendgrid](https://github.com/oritpersik) *by Orit Persik* - Easily use the SendGrid Web API via Node.js.
 
 {% anchor h3 %}
 Meteor
@@ -147,6 +149,7 @@ PHP
 -   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP. Very structured, OO implementation with excellent test coverage. A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
 -   [laravel-sendgrid-driver](https://github.com/s-ichikawa/laravel-sendgrid-driver) *by Shingo Ichikawa* - This liblary can add sendgrid driver into the laravel's mail configure.
 -   [godpod/sendgrid](https://packagist.org/packages/godpod/sendgrid) *by Ravi Rajendra* - This library allows you to quickly and easily send emails or make api calls through SendGrid using PHP.
+-   [fastglass/sendgrid](https://github.com/taz77) *by taz77* - This library allows you to send emails through SendGrid using PHP and Guzzle 6.x. 
 
 {% anchor h3 %}
 Python
@@ -155,6 +158,7 @@ Python
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
 -   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
 -   [sendgrid-django](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
+-   [Flask-SendGrid](https://github.com/frankV) *by Frank Valcarcel* - SendGrid SMTP API interface for Flask
 
 {% anchor h3 %}
 Ruby
