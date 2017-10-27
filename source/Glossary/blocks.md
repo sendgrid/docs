@@ -22,6 +22,6 @@ See the block reason column for more detail specific to the blocked email.
 
 A few helpful links:
 
-* [Web API & Blocks](https://github.com/sendgrid/docs/blob/develop/source/API_Reference/Web_API/blocks.md)
+* [Web API & Blocks](https://sendgrid.com/docs/API_Reference/Web_API/blocks.html)
 * [My Emails are being dropped](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html)
 * [My Emails are being dropped](https://sendgrid.com/docs/Classroom/Track/Drops/resend_dropped_messages.html)
