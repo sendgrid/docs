@@ -542,6 +542,9 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 #
 #######
 
+Redirect 301 /User_Guide/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/about.html https://sendgrid.com/docs/index.html
+
 Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classroom/Send/api_keys.html
 Redirect 301 /User_Guide/Account/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
