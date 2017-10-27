@@ -2,12 +2,13 @@
 layout: page
 weight: 100
 title: Release Notes
+showTitle: false
 seo:
   title: SendGrid Release Notes
   description: The new features and changes to SendGrid
   keywords: release notes
 navigation:
-  show: true
+  show: false
 ---
 ![]({{root_url}}/images/release_notes.png "release notes")
 
@@ -81,7 +82,7 @@ Legacy Newsletter
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>Legacy Newsletter has been sunset and can no longer be used to build or send campaigns. In order to continue sending marketing emails, SendGrid recommends switching to <a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a>. See the <a href="https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html">documentation</a> for more information on why we made the switch.</td>
+    <td>Legacy Newsletter has been sunset and can no longer be used to build or send campaigns. To continue sending marketing emails, SendGrid recommends switching to <a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html">Marketing Campaigns</a>. See the <a href="https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html">documentation</a> for more information on why we made the switch.</td>
   </tr>
 </table>
 
@@ -96,7 +97,7 @@ Save your favorite colors
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>You now have the ability to save swatches of commonly used colors when designing email templates or campaigns.</td>
+    <td>You now can save swatches of commonly used colors when designing email templates or campaigns.</td>
   </tr>
 </table>
 
@@ -126,7 +127,7 @@ New editing experience
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>The editing experience has been updated to offer <a href="https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/">a better user experience</a> when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between a marketer-friendly code editor and a flexible design editor that still offers HTML options./td>
+    <td>The editing experience has been updated to offer <a href="https://sendgrid.com/blog/taking-the-pain-out-of-email-design-and-editing/">a better user experience</a> when creating email campaigns or templates. Whether using marketing or transactional templates, you can choose between a marketer-friendly code editor and a flexible design editor that still offers HTML options.</td>
   </tr>
 </table>
 
@@ -215,7 +216,7 @@ Experiments tab and Experiments overview
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>The Experiments tab in the UI leads to an Experiments overview page where you can opt in to active research experiments or suggest additional experiments you would like SendGrid to run. The introduction of these experiments gives you the opportunity to shape the future of SendGrid’s platform with your valuable feedback.</td>
+    <td>The Experiments tab in the UI leads to an Experiments overview page where you can opt into active research experiments or suggest additional experiments you would like SendGrid to run. The introduction of these experiments gives you the opportunity to shape the future of SendGrid’s platform with your valuable feedback.</td>
   </tr>
 </table>
 
@@ -239,7 +240,7 @@ Visual reference of A/B test creative
 {% endanchor %}
 
 {% anchor h3 %}
-IP self service purchase
+IP self-service purchase
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
@@ -275,7 +276,7 @@ Teammates
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>Teammates expands our existing permissions for multiple credentialed users, and adds a layer of UI to make it easy for you to add your colleagues to your account. Teammate-level credentials allow account owners to limit teammates to read-only views, limit their access to only those areas they need to see, or give them access to secure areas to manage specific features, such as API keys.</td>
+    <td>Teammates expands our existing permissions for multiple credentialed users and adds a layer of UI to make it easy for you to add your colleagues to your account. Teammate-level credentials allow account owners to limit teammates to read-only views, limit their access to only those areas they need to see or give them access to secure areas to manage specific features, such as API keys.</td>
   </tr>
 </table>
 
@@ -330,7 +331,7 @@ New C# library supporting .NET Core
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API"></td>
-    <td>Microsoft is moving towards .NET Core and we have decided to make sure our C# library is ready when and if you decide to start rewriting your code. Our new library is .NET Standard 1.3 compliant, so that our library works with C# 4.5.2 and up.</td>
+    <td>Microsoft is moving towards .NET Core, and we have decided to make sure our C# library is ready when and if you decide to start rewriting your code. Our new library is .NET Standard 1.3 compliant so that our library works with C# 4.5.2 and up.</td>
   </tr>
 </table>
 
@@ -371,7 +372,7 @@ Universal links and partnership with Branch
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/partners_icon.png" alt="An update to one of our Partners"></td>
-    <td>You can now maximize customer engagement by streamlining your SendGrid email with your mobile app experience using Branch’s implementation of SendGrid’s universal links. Universal links (also known as deep links) allow senders to link directly into their mobile apps from email, while maintaining click tracking functionality. We partnered with Branch to offer easy setup and ongoing support requirements for universal links.</td>
+    <td>You can now maximize customer engagement by streamlining your SendGrid email with your mobile app experience using Branch’s implementation of SendGrid’s universal links. Universal links (also known as deep links) allow senders to link directly into their mobile apps from email while maintaining click tracking functionality. We partnered with Branch to offer easy setup and ongoing support requirements for universal links.</td>
   </tr>
 </table>
 
@@ -386,6 +387,6 @@ Segment on relative dates
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>You can now create dynamic segments based on relative dates using `is before`, `is after`, or `is within`. For example, to create a segment of all recipients who have opened an email within 30 days, define a segment as `Condition: Last Opened` `Criteria: is within` `Number of days: 30`</td>
+    <td>You can now create dynamic segments based on relative dates using <code>is before</code>, <code>is after</code>, or <code>is within</code>. For example, to create a segment of all recipients who have opened an email within 30 days, define a segment as <code>Condition: Last Opened</code> <code>Criteria: is within</code> <code>Number of days: 30</code>.</td>
   </tr>
 </table>

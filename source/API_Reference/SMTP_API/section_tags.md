@@ -64,9 +64,9 @@ The accompanying X-SMTPAPI JSON header would look like:
 {% codeblock lang:json %}
 {
   "to": [
-    "alice@foo.com",
-    "bob@bar.com",
-    "casey@baz.com"
+    "example@example.com",
+    "example@example.com",
+    "example@example.com"
   ],
   "sub": {
     ":salutation": [

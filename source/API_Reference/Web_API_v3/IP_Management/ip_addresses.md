@@ -19,6 +19,8 @@ address to be added to a pool after your request is made.
 {% parameters post %}   
   {% parameter ip Yes 'Valid IP address' 'IP address to add to the pool' %}    
 {% endparameters %}   
+
+{% apiv3requestbody %} {"ip":"0.0.0.0"} {% endapiv3requestbody %}
     
 {% apiv3example post POST https://api.sendgrid.com/v3/ips/pools/:pool_name/ips ip=0.0.0.0 %}    
   {% v3response %}    
