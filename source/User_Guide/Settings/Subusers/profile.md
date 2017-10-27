@@ -22,7 +22,7 @@ This section will show you the contact information you put in when you created y
 
 **Last Name** - The last name of the person responsible for this subuser.
 
-**Email Address** - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service](https://sendgrid.com/tos). Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
+**Email Address** - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service]({{site.site_url}}/tos). Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
 
 {% anchor h2 %}
 Username & Password
@@ -57,3 +57,11 @@ Company Information
 **Company Phone Number** - The phone number for your subuser’s business.
 
 **Company Website** - The website for your subuser’s business.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Subusers Overview]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [Subuser Settings]({{root_url}}/User_Guide/Settings/Subusers/settings.html)
+- [Subuser Impersonation]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html)

@@ -12,7 +12,7 @@ navigation:
 
 When you set up subusers, whether for segmentation of sending or for other functional reasons, it may be useful to see what the subuser’s settings are and to see what the subuser can see in the SendGrid UI.
 
-To assist you,, we’ve made it so you can impersonate a subuser from your parent account and then manage the subuser the same way as if you had logged in with that user’s credentials, without having to log out of your parent account.
+To assist you, we’ve made it so you can impersonate a subuser from your parent account and then manage the subuser the same way as if you had logged in with that user’s credentials, without having to log out of your parent account.
 
 {% anchor h2 %}
 How To Impersonate A Subuser
@@ -32,3 +32,11 @@ Getting Back To Your Parent Account
 {% endanchor %}
 
 Click the link at the top left that says “<- Back to Parent Account”. This will log you out of the subuser account and take you back to your parent account portal.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Subusers Overview]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [Subuser Settings]({{root_url}}/User_Guide/Settings/Subusers/settings.html)
+- [Subuser Profile]({{root_url}}/User_Guide/Settings/Subusers/profile.html)
