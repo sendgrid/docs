@@ -60,6 +60,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 Additional Resources
 {% endanchor %}
 
-[Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
-[Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)

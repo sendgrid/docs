@@ -77,6 +77,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 Additional Resources
 {% endanchor %}
 
-[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-[Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
-[SendGrid for Mobile]({{root_url}}/User_Guide/SendGrid_for_Mobile/index.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [SendGrid for Mobile]({{root_url}}/User_Guide/SendGrid_for_Mobile/index.html)

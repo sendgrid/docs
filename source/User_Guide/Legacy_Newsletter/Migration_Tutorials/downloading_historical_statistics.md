@@ -37,3 +37,11 @@ To save and download statistics for future reference, simply use the checkboxes 
 For more information about Legacy Newsletter statistics and analytics, click [here]({{root_url}}/User_Guide/Legacy_Features/Marketing_Emails/analytics.html).
 
 ![]({{root_url}}/images/download_historical_stats.gif)
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Migrating Using API Calls]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)
+- [Migrating Your API Integrations]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html)
+- [SendGrid Support]({{site.support_url}})
