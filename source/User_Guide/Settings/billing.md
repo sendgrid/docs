@@ -48,7 +48,7 @@ Canceled accounts are not deleted. Accounts are changed to our [free]({{site.sit
 
 We are truly sorry to see you go. Please don’t forget that [we have 24/7 support]({{site.support_url}}) and would love the opportunity to help and chat about why you’re leaving if we can.
 
-To cancel, go the bottom of your billing details page, click the Cancel button, and follow the prompts. This process will close out your account.
+To cancel, go the bottom of your billing details page, click **Cancel**, and follow the prompts. This process will close out your account.
 
 {% anchor h2 %}
 Additional Resources
