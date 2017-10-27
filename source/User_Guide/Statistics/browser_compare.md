@@ -39,3 +39,11 @@ Individual Metrics Figures
 This table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared browsers.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+[Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+[Statistics]({{root_url}}/User_Guide/Statistics/index.html)

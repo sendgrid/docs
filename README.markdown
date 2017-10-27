@@ -33,6 +33,7 @@ The master branch is continuously deployed to production.
 	* [Running](#running)
 	* [View your install](#view)
 	* [Important Things to Know](#important)
+	* [Using Docker](#using-docker)
 * [Config](#config)
 	* [The Nav Tree](#tree)
 	* [Pages](#pages)
@@ -241,7 +242,7 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 
 <a name="view"></a>
 ### View your install
-* Browse to [localhost:4000](localhost:4000)
+* Browse to [http://localhost:4000](http://localhost:4000)
 
 
 <a name="important"></a>
@@ -250,6 +251,18 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
 * To rebuild the site, [control][c] to cancel the build, and then [bundle exec rake preview] to restart it.
+
+<a name="using-docker"></a>
+### Using Docker
+
+Install [Docker](https://www.docker.com/) first, then in terminal execute:
+
+```
+docker build -t sendgrid/docs:latest .
+docker run --rm -it -p 4000:4000 sendgrid/docs:latest
+```
+
+Wait until you see `Server running... press ctrl-c to stop.` and browse to [http://localhost:4000](http://localhost:4000)
 
 <a name="config"></a>
 ## Config

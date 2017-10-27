@@ -35,3 +35,11 @@ Using the API
 {% endanchor %}
 
 [Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+[Email Activity]({{root_url}}/User_Guide/email_activity.html)
+[Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+[Account Settings]({{root_url}}/User_Guide/Settings/account.html)
