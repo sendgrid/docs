@@ -1,0 +1,42 @@
+
+engines:
+  fixme:
+    enabled: false
+  rubocop:
+    enabled: true
+    channel: rubocop-0-49
+  duplication:
+    enabled: true
+  complexity:
+    enabled: false
+  markdownlint:
+    enabled: true
+
+exclude_paths:
+  - .codeclimate.yml
+  - .gitignore
+  - .rspec
+  - .rubocop.yml
+  - .travis.yml
+
+  - Gemfile.lock
+  - CHANGELOG.{md,markdown,txt,textile}
+  - CONTRIBUTING.{md,markdown,txt,textile}
+  - readme.{md,markdown,txt,textile}
+  - README.{md,markdown,txt,textile}
+  - Readme.{md,markdown,txt,textile}
+  - ReadMe.{md,markdown,txt,textile}
+  - COPYING
+  - LICENSE
+
+  - features/**/*
+  - script/**/*
+  - docs/**/*
+  - spec/**/*
+  - test/**/*
+  - vendor/**/*
+
+ratings:
+  paths:
+    - lib/**/*.rb
+    - "**.md"
