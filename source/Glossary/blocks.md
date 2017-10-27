@@ -20,7 +20,7 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks](https://github.com/sendgrid/docs/blob/develop/source/images/blocks_1.png)
 
-A few helpful links:
+A few helpful links :
 
 * [Web API & Blocks](https://github.com/sendgrid/docs/blob/develop/source/API_Reference/Web_API/blocks.md)
 * [My Emails are being dropped](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html)
