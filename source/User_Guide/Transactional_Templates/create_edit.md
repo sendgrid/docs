@@ -8,7 +8,7 @@ navigation:
   show: true
 ---
 
-Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
+Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 {% info %}
 There is currently a limit of 300 templates and 300 versions that may be created per account.
@@ -84,7 +84,7 @@ Activate Your Template
 1. Select **Make Active**.  
 
 {% info %}
-A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that Version “Active.”
+A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that version “Active.”
 {% endinfo %}
 
 {% anchor h2 %}
