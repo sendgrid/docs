@@ -34,6 +34,12 @@ If you’re viewing the unsubscribe list, you can hit the “+” button to manu
 
 Finally, if you want to search for a specific address, pull downwards on the list and type an address in the search field.
 
+<h2>Additional Resources</h2>
+
+- [Suppression Documentation]({{site.site_url}}/docs/User_Guide/Suppressions/index.html)
+- [Suppression Blocks]({{site.site_url}}/docs/User_Guide/Suppressions/blocks.html)
+- [Suppression Bounces]({{site.site_url}}/docs/User_Guide/Suppressions/bounces.html)
+
 <p class="small">
   <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
 </p>

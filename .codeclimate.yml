@@ -1,0 +1,49 @@
+
+engines:
+  fixme:
+    enabled: false
+  rubocop:
+    enabled: true
+    channel: rubocop-0-49
+  duplication:
+    enabled: true
+  complexity:
+    enabled: false
+  markdownlint:
+    enabled: true
+
+exclude_paths:
+  - .bowerrc
+  - .codeclimate.yml
+  - .dockerignore
+  - .gitignore
+  - .nvmrc
+  - .rspec
+  - .rubocop.yml
+  - .spelling
+  - .travis.yml
+  - Gemfile.lock
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - README.markdown
+  - license
+  - linklint-2.3.5
+  - linklint_command
+  - pacakge-lock.json
+  - package.json
+  - Rakefile
+  - Vagrantfile
+  - config.sample.yml
+  - bower.json
+  - gulfile.js
+  - .github/**/*
+  - bin/**/*
+  - config/**/*
+  - gulp/**/*
+  - script/**/*
+  - public/**/*
+
+ratings:
+  paths:
+    - lib/**/*.rb
+    - "**.md"

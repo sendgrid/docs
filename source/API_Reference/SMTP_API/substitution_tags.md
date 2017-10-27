@@ -67,8 +67,8 @@ Email HTML content:
 
 {% codeblock lang:json %}{
   "to": [
-    "john.doe@gmail.com",
-    "jane.doe@hotmail.com"
+    "example@example.com",
+    "example@example.com"
   ],
   "sub": {
     "-name-": [

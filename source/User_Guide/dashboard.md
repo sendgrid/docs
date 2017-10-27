@@ -49,7 +49,8 @@ Unsubscribe Groups
 The Unsubscribe Groups box will show you the current status of unsubscribe groups in your account. From here you can click links to [manage]({{site.app_url}}/suppressions/advanced_suppression_manager) and integrate your unsubscribe groups.
 
 {% anchor h2 %}
-Help Links
+Additional Resources
 {% endanchor h2 %}
 
-We have provided quick links to [Support](http://support.sendgrid.com/hc/en-us) and our [Documentation]({{root_url}}/).
+- [Support]({{site.support_url}}/hc/en-us)
+- [Documentation]({{root_url}}/)
