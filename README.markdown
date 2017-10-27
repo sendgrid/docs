@@ -385,16 +385,16 @@ This is a spellchecker functionality using [node-markdown-spellcheck](https://ww
 ```
 # (pull code updates before this)
 # install updated npm package dependencies!
-npm install
+$ npm install
 ```
 <a name="spellchecker-usage"></a>
 ### Usage
 ```
 # generates report of misspellings
-npm run spellcheck
+$ npm run spellcheck
 
 # generates report of misspellings of [filename]
-npm run spellcheck-file [filename]
+$ npm run spellcheck-file [filename]
 ```
 <a name="spellchecker-example"></a>
 #### Example output:
@@ -410,7 +410,7 @@ Also `.spelling` contains a list of custom words added to the dictionary.
 ### Contribution
 This still needs work! Many, many words in tech jargon come back as incorrect.
 The best way I've found to solve this issue without too much overhead work:
-1. Run `npm run spellcheck`
+1. Run `$ npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
 
 
@@ -459,5 +459,5 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 ### Contribution
 This still needs work! Many, many words in tech jargon come back as incorrect.
 The best way I've found to solve this issue without too much overhead work:
-1. Run `npm run spellcheck`
+1. Run `$ npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
