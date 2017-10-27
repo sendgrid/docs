@@ -18,7 +18,7 @@ Having an entry on the SendGrid block list does not automatically drop email as 
 
 See the block reason column for more detail specific to the blocked email.
 
-![Blocks](https://github.com/sendgrid/docs/blob/develop/source/images/blocks_1.png)
+![Blocks]({{root_url}}/images/blocks_1.png)
 
 A few helpful links:
 
