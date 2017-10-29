@@ -1,37 +1,15 @@
-![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
-
-# SendGrid Documentation
-
-[![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
-[![Dependency Status](https://gemnasium.com/sendgrid/docs.svg)](https://gemnasium.com/sendgrid/docs)
-[![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
-
-This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
-
-The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
-
-The develop branch is merged to production weekly (unless we need to do a release sooner than that).
-
-The master branch is continuously deployed to production.
-
-### _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
-
-**Submit all pull requests to the develop branch**
-
-**Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
-
-
-## Table of Contents
+Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
 
 * [CLAs and CCLAs](#cla)
-* [Local Setup](#local)
+* [Feature Request](#feature-request)
+* [Submit a Bug Report](#submit-a-bug-report)
+* [Improvements to the Codebase](#improvements-to-the-codebase)
+* [Local Setup](#install-and-run-locally)
 	* [Dependencies](#dependencies)
-	* [Setup Steps](#setup)
-	* [Configure jekyll](#jekyll)
+	* [Setup Steps](#setup-steps)
+	* [Configure Jekyll](#configure-jekyll)
 	* [Running](#running)
-	* [View your install](#view)
+	* [View Your Install](#view-your-install)
 	* [Important Things to Know](#important)
 	* [Using Docker](#using-docker)
 * [Config](#config)
@@ -49,12 +27,11 @@ The master branch is continuously deployed to production.
 		* [Example output](#spellchecker-example)
 	* [Dictionary](#spellchecker-dictionary)
 	* [Contribution](#spellchecker-contribution)
-* [Style Guide](#style-guide)
-	* [About Jobs-to-be-done](#about-jobs-to-be-done)
-	* [About Additional Resources](#about-additional-resources)
-* [About](#about)
+* [Creating a Pull Request](#creating-a-pull-request)
 
-* [License](#license)
+Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+
+**Submit all pull requests to the develop branch.**
 
 <a name="cla"></a>
 ## CLAs and CCLAs
@@ -63,8 +40,47 @@ Before you get started, SendGrid requires that a SendGrid Contributor License Ag
 
 Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when making a contribution. In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
 
-
 SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
+
+When you create a Pull Request, after a few seconds, a comment will appear with a link to the CLA. Click the link and fill out the brief form and then click the "I agree" button and you are all set. You will not be asked to re-sign the CLA unless we make a change.
+
+**Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
+
+
+There are a few ways to contribute, which we'll enumerate below:
+
+<a name="feature-request"></a>
+## Feature Request
+
+If you'd like to make a feature request, please read this section.
+
+The GitHub issue tracker is the preferred channel for library feature requests, but please respect the following restrictions:
+
+- Please **search for existing issues** in order to ensure we don't have duplicate bugs/feature requests.
+- Please be respectful and considerate of others when commenting on issues
+
+<a name="submit-a-bug-report"></a>
+## Submit a Bug Report
+
+Note: DO NOT include your credentials in ANY code examples, descriptions, or media you make public.
+
+A software bug is a demonstrable issue in the code base. In order for us to diagnose the issue and respond as quickly as possible, please add as much detail as possible into your bug report.
+
+Before you decide to create a new issue, please try the following:
+
+1. Check the Github issues tab if the identified issue has already been reported, if so, please add a +1 to the existing post.
+2. Update to the latest version of this code and check if issue has already been fixed
+3. Copy and fill in the Bug Report Template we have provided below
+
+### Please use our Bug Report Template
+
+In order to make the process easier, we've included a [sample bug report template](https://github.com/sendgrid/docs/.github/ISSUE_TEMPLATE). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
+
+<a name="improvements-to-the-codebase"></a>
+## Improvements to the Codebase
+
+We welcome direct contributions to the sendgrid docs code base. Thank you!
+
 
 <a name="local"></a>
 ## Local Setup
@@ -84,12 +100,12 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
     * bundler gem
     * bower
 
-<a name="setup"></a>
+<a name="setup-steps"></a>
 ### Setup Steps
 
 * Install Git for:
-	* [Mac](https://git-scm.com/download/mac) 
-	* [Windows](https://git-scm.com/download/win) 
+	* [Mac](https://git-scm.com/download/mac)
+	* [Windows](https://git-scm.com/download/win)
 	* [Linux](https://git-scm.com/download/linux)
 * Install a GitGUI (if you want it) for:
 	* [Mac](https://mac.github.com)
@@ -98,14 +114,14 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 * Install [Xcode](https://developer.apple.com/xcode/) (if you don't have it installed. Click the link to download)
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run `$ xcode-select --install`
-* Install JDK  
+* Install JDK
 The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
 
 	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
 
 * Close and reopen your terminal window
-* Check which version of Ruby you have  
+* Check which version of Ruby you have
 
 	`$ ruby -v`
 
@@ -183,21 +199,21 @@ to install client-side dependencies.
 	* If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
 
 		`$ gem uninstall libv8`
-	
+
 		`$ brew tap homebrew/versions`
-	
+
 		`$ brew install --force v8-315`
-	
+
 		`$ bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"`
-	
+
 		`$ sudo gem install therubyracer -v '0.12.2'`
-	
+
 		`$ bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"`
-	
+
 		`$ bundle install`
 
-<a name="jekyll"></a>
-### Configure jekyll
+<a name="configure-jekyll"></a>
+### Configure Jekyll
 
 * Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
 
@@ -227,23 +243,22 @@ Note: if you receive an error message similar to "No Java Runtime Present: Reque
 
 * Open your Terminal or Cmd
 * If `java -version` gives you an error and a popup
-* Get the download here 
+* Get the download here
 	* [Mac](https://www.java.com/en/download/faq/java_mac.xml)
 	* [Windows](https://www.java.com/en/download/)
 * Install it
 * In your terminal, type:
 
-	`export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
+	`$ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
 
 * Run `java -version` again.
 
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
 [http://stackoverflow.com/a/19582689](http://stackoverflow.com/a/19582689)
 
-<a name="view"></a>
-### View your install
+<a name="view-your-install"></a>
+### View Your Install
 * Browse to [http://localhost:4000](http://localhost:4000)
-
 
 <a name="important"></a>
 ### Important Things to Know
@@ -258,11 +273,22 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 Install [Docker](https://www.docker.com/) first, then in terminal execute:
 
 ```
-docker build -t sendgrid/docs:latest .
-docker run --rm -it -p 4000:4000 sendgrid/docs:latest
+$ docker build -t sendgrid/docs:latest .
+$ docker run --rm -it -p 4000:4000 sendgrid/docs:latest
 ```
 
 Wait until you see `Server running... press ctrl-c to stop.` and browse to [http://localhost:4000](http://localhost:4000)
+
+<a name="config"></a>
+## Config
+
+The config is defined in `_config.yml`.
+
+The only config variables you should need to know about are <code>root</code>, which is the root from which all links are calculated, and the <code>folder_weights</code> hash, which specifies the order that the folders should be displayed in the nav tree. Higher weights mean higher display priority (higher in the tree). You can also specify icons for folders with the
+<code>folder_icons</code> hash.
+
+There's also a <code>version</code> number in the config.
+
 
 <a name="config"></a>
 ## Config
@@ -413,51 +439,58 @@ The best way I've found to solve this issue without too much overhead work:
 1. Run `$ npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
 
+<a name="creating-a-pull-request"></a>
+## Creating a Pull Request
 
-<a name="style-guide"></a>
-## Style Guide
+1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
+   and configure the remotes:
 
-<a name="about-jobs-to-be-done"></a>
-### About Jobs-to-be-done
+   ```bash
+   # Clone your fork of the repo into the current directory
+   $ git clone https://github.com/sendgrid/docs
+   # Navigate to the newly cloned directory
+   $ cd docs
+   # Assign the original repo to a remote called "upstream"
+   $ git remote add upstream https://github.com/sendgrid/docs
+   ```
 
-Jobs to be done style includes:
+2. If you cloned a while ago, get the latest changes from upstream:
 
-* Table of contents at the beginning
-* "Additional Resources" section at the end
-* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions and correct UI workflow)
-	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+   ```bash
+   $ git checkout <dev-branch>
+   $ git pull upstream <dev-branch>
+   ```
 
-<a name="about-additional-resources"></a>
-### About Additional Resources
+3. Create a new topic branch (off the main project development branch) to
+   contain your feature, change, or fix:
 
-"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
+   ```bash
+   $ git checkout -b <topic-branch-name>
+   ```
 
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
+4. Commit your changes in logical chunks. Please adhere to these [git commit
+   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+   or your code is unlikely to be merged into the main project. Use Git's
+   [interactive rebase](https://help.github.com/articles/interactive-rebase)
+   feature to tidy up your commits before making them public.
 
-Here is example formatting:
+4a. Create tests.
 
-```
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
+4b. Create or update the example code that demonstrates the functionality of this change to the code.
 
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-```
-<a name="about"></a>
-## About
+5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
-SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
-It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+   ```bash
+   $ git pull [--rebase] upstream master
+   ```
 
-                                                 
-<a name="license"></a>
-## License
-[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
+6. Push your topic branch up to your fork:
 
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `$ npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+   ```bash
+   $ git push origin <topic-branch-name>
+   ```
+
+7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+    with a clear title and description against the `master` branch. All tests must be passing before we will review the PR.
+
+If you have any additional questions, please feel free to [email](mailto:dx@sendgrid.com) us or create an issue in this repo.

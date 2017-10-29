@@ -37,3 +37,11 @@ The figures table gives you all of the specific counts or percentages of each ev
 This table will refresh with new or adjusted data based on the various filters available at the top of the page. You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 
 To see only the figures from a specific geographic area, change the Activity Map to be either the world view or a specific country, then select the countries or states you want to see in the figures table using the buttons just above and to the right of the figures data.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
+- [Timezones]({{root_url}}/Glossary/timezone.html)

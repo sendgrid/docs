@@ -46,6 +46,18 @@ Cancel Account
 Canceled accounts are not deleted. Accounts are changed to our [free]({{site.site_url}}/free?mc=SendGrid%20Documentation) plan.
 {% endinfo %}
 
-We are truly sorry to see you go. Please don’t forget that we have 24/7 support and would love the opportunity to help and chat about why you’re leaving if we can.
+We are truly sorry to see you go. Please don’t forget that [we have 24/7 support]({{site.support_url}}) and would love the opportunity to help and chat about why you’re leaving if we can.
 
-To cancel, got the bottom of your billing details page, click the Cancel button, and follow the prompts. This process will close out your account.
+To cancel, go the bottom of your billing details page, click **Cancel**, and follow the prompts. This process will close out your account.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [SendGrid Pricing]({{site.site_url}}/pricing/)
+- [Subuser Impersonation]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html)
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [SendGrid Support]({{site.support_url}})
+
+
+
