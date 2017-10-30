@@ -13,22 +13,18 @@ navigation:
  show: true
 ---
 
-- [What is Two-Factor Authentication](#-What-is-Two-Factor-Authentication)
-- [How To Set Up Two-Factor Authentication](#-How-To-Set-Up-Two-Factor-Authentication)
-- [Using Two-Factor Authentication](#-Using-Two-Factor-Authentication)
-- [Disabling Two-Factor Authentication](#-Disabling-Two-Factor-Authentication)
-
-{% anchor h2 %}
-What is Two-Factor Authentication?
-{% endanchor %}
-
 Two-factor authentication, commonly referred to as multi-factor authentication, allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
 
 SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the the [Authy App](https://www.authy.com/app/mobile/), or an SMS message.
 
+* [Setting Up Two-Factor Authentication](#-Setting-Up-Two-Factor-Authentication)
+* [Using Two-Factor Authentication](#-Using-Two-Factor-Authentication)
+* [Disabling Two-Factor Authentication](#-Disabling-Two-Factor-Authentication)
+* [Regaining access to my account when I've been locked out by Two-Factor Authentication](#-Regaining-access-to-my-account-when-I--ve-been-locked-out-by-Two-Factor-Authentication)
+
 {% anchor h2 %}
-How To Set Up Two-Factor Authentication
-{% endanchor %}
+Setting Up Two-Factor Authentication
+{% endanchor h2 %}
 
 You may choose from two different verification methods when using two-factor authentication:
 
@@ -89,9 +85,11 @@ You may back out of the setup process at any time without fear of locking yourse
 
 ![]({{root_url}}/images/2fa_7.png)
 
+You can create multiple configurations of Two-Factor Authentication, allowing you to use more than one mobile device to authenticate when logging into your account
+
 {% anchor h2 %}
 Using Two-Factor Authentication
-{% endanchor %}
+{% endanchor h2 %}
 
 After you have created a setting for Two-Factor Authentication, simply log in as you normally would. If you have selected to receive a text message with your authentication token, look for the text message and enter the code that you receive. If you have selected the Authy App, go to your app, and enter the generated code.
 
@@ -99,9 +97,9 @@ Once setup, you will always be required to use Two-Factor Authentication to perf
 
 {% anchor h2 %}
 Disabling Two-Factor Authentication
-{% endanchor %}
+{% endanchor h2 %}
 
-To disable or delete a Two-Factor Authentication setting, navigate to the **Two-Factor Authentication overview page**. Find the setting you would like to delete, click the **Action Cog**, and select **Delete**.
+To disable or delete a Two-Factor Authentication setting, navigate to the **Two-Factor Authentication overview page**. Find the setting you would like to delete, click the **action menu**, and select **Delete**.
 
 <div class="row">
   <div class="clearfix col-md-6">
@@ -116,3 +114,15 @@ To disable or delete a Two-Factor Authentication setting, navigate to the **Two-
     <img src="{{root_url}}/images/2fa_8.png" class="img-responsive pull-right"/>
   </div>
 </div>
+
+{% anchor h2 %}
+Regaining access to my account when I've been locked out by Two-Factor Authentication
+{% endanchor h2 %}
+
+If you find that you’ve lost access to your account as a result of Two-Factor Authentication, please reach out to the [Authy Support Team](https://support.authy.com/hc/en-us).
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+* [Restoring Authy access on lost or inaccessible phones](https://support.authy.com/hc/en-us/articles/115012672088-Restoring-Authy-access-on-lost-or-inaccessible-phones)

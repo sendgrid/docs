@@ -51,7 +51,7 @@ Adding Your Unsubscribe Group to Your Campaign
 
 Once you've created your unsubscribe group, navigate to **Marketing** in the left hand nav and click **Campaigns**.
 
-Select the campaign you want to add the group unsubscribe link to. Click **Edit** in the preview modal that appears or click the action cog and select **Edit** from the dropdown menu.
+Select the campaign you want to add the group unsubscribe link to. Click **Edit** in the preview modal that appears or click the action menu and select **Edit** from the dropdown menu.
 
 Look for **Settings** in the left hand sidebar. Under the **Recipients** dropdown menu in this sidebar, select your unsubscribe group.
 

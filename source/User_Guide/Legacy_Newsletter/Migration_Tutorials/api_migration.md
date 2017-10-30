@@ -301,3 +301,11 @@ Response
 {% codeblock lang:bash %}
 HTTP/1.1 201
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Migrating Your API Integrations]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html)
+- [Migration Tutorials]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html)
+- [SendGrid Support]({{site.support_url}})

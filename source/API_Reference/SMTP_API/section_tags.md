@@ -66,6 +66,7 @@ The accompanying X-SMTPAPI JSON header would look like:
   "to": [
     "example@example.com",
     "bob@bar.com",
+    "example@example.com",
     "example@example.com"
   ],
   "sub": {

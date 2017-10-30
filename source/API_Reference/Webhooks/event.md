@@ -107,7 +107,7 @@ Duplicate Events
 
 **It is possible to see duplicate events in the data posted by the Event Webhook.**
 
-We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event.
+We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event where `sg_event_id` is present.
 
 {% anchor h2 %}
 Event Types

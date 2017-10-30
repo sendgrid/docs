@@ -33,6 +33,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
   "event": "processed",
   "New Argument 4": "New Value 4",
   "email": "useexampexample@example.com",
+  "email": "example@example.com",
   "smtp-id": "<145cea24eb8.1c420.57425@localhost.localdomain>",
   "timestamp": 1399331116,
   "New Argument 2": "New Value 2",

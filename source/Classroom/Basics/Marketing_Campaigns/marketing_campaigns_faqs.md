@@ -399,7 +399,7 @@ It can take up to 5 minutes before an unsubscribed contact will appear in an uns
 How do I unschedule a campaign that I don't want to send?
 {% endanchor %}
 
-You can unschedule a campaign by navigating to your list of campaigns, clicking the action cog next to the campaign you want to stop and clicking **Unschedule**. This returns the campaign to "draft" form. Also see _[How do I edit a scheduled campaign?](#-How-do-I-edit-a-scheduled-campaign)_ for additional detail.
+You can unschedule a campaign by navigating to your list of campaigns, clicking the action menu next to the campaign you want to stop and clicking **Unschedule**. This returns the campaign to "draft" form. Also see _[How do I edit a scheduled campaign?](#-How-do-I-edit-a-scheduled-campaign)_ for additional detail.
 
 {% anchor h3 %}
 How do I stop a campaign send?
@@ -453,7 +453,7 @@ Sender Verification
 Why didn't I receive a sender ID verification email?
 {% endanchor %}
 
-If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand navigation menu and click on **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
+If you didn't receive a sender ID verification email, try requesting the verification email to be resent. Simply navigate to Marketing Campaigns in the left hand navigation menu and click on **Senders**. Next to the sender you need to verify, click the action menu and select **Resend Verification**.
 
 ![]({{root_url}}/images/mc_faq_4.gif)
 
@@ -467,7 +467,7 @@ If you clicked the link in your sender ID verification email, but had to sign in
 How long is the sender ID verification link valid?
 {% endanchor %}
 
-The URL in your sender ID verification email is valid for 48 hours. After 48 hours you will have to request a new verification email to be delivered. To resend your verification email, navigate to Marketing Campaigns in the left hand navigation menu and click **Senders**. Next to the sender you need to verify, click the action cog and select **Resend Verification**.
+The URL in your sender ID verification email is valid for 48 hours. After 48 hours you will have to request a new verification email to be delivered. To resend your verification email, navigate to Marketing Campaigns in the left hand navigation menu and click **Senders**. Next to the sender you need to verify, click the action menu and select **Resend Verification**.
 
 **********
 
@@ -505,6 +505,6 @@ Currently, you can see your aggregate stats over all time, and the graph display
 How do I view statistics for a specific campaign?
 {% endanchor %}
 
-Under **Marketing Campaigns** in the left hand navigation menu, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action cog on the right. Click **Stats** to view statistics for that specific campaign.
+Under **Marketing Campaigns** in the left hand navigation menu, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action menu on the right. Click **Stats** to view statistics for that specific campaign.
 
 ![]({{root_url}}/images/mc_faq_9.gif)

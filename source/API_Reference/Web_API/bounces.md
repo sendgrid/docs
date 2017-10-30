@@ -51,12 +51,14 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
     "status": "5.7.1",
     "created": "2011-10-26 23:06:22",
     "reason": "550 5.7.1 <example@example.com>... Relaying denied. Proper authentication required. ",
+    "reason": "550 5.7.1 <info@bnl.co.uk>... Relaying denied. Proper authentication required. ",
     "email": "example@example.com"
   },
   {
     "status": "5.7.1",
     "created": "2011-12-01 01:45:55",
     "reason": "554 5.7.1 <example@example.com>: Relay access denied ",
+    "reason": "554 5.7.1 <richard@hengseng.com>: Relay access denied ",
     "email": "example@example.com"
   },
   {
@@ -70,16 +72,10 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
   {% response xml %}
 <bounces>
    <bounce>
-      <email>emaieexampexample@example.com</email>
+      <email>example@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: example@example.com</reason>
       <created>2009-06-10 12:40:30</created>
-   </bounce>
-   <bounce>
-      <email>emaileexampexample@example.com</email>
-      <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
-      <created>2009-08-01 10:16:30</created>
    </bounce>
 </bounces>
 
