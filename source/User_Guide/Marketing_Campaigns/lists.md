@@ -130,10 +130,3 @@ Additional Resources
 
 - [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
 - [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
-
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
-- Contacts(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
-- Custom fields(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
