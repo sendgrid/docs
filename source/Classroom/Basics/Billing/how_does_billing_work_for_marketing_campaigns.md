@@ -50,4 +50,4 @@ The emails subusers send through Marketing Campaigns are subtracted from the par
 
 **Note:** Your parent account will be billed for each unique contact, regardless of how many lists or segments that contact appears on. However, if there are one or more subusers under a parent account, the parent account will be billed for all unique contacts stored on each account, even if the same contact is stored on multiple accounts.
 
-For example, if a SendGrid parent account uploads a contact with the address `johndoe@example.com` and a single subuser of that parent account also uploads a contact for `johndoe@example.com`, then the parent account will be billed twice for that contact.
+For example, if a SendGrid parent account uploads a contact with the address `johndoeexampexample@example.com` and a single subuser of that parent account also uploads a contact for `johndoeexampexample@example.com`, then the parent account will be billed twice for that contact.

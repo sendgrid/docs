@@ -23,7 +23,7 @@ The best mail server response code you can get. When you see this, everything ha
 
 - 250 2.0.0 OK 1376056636 i3si9508927obz.16 - gsmtp
 - 250 ok dirdel
-- 250 &lt;4798911130a2069f3483fda756b8e81c@www.example.com&gt; Queued mail for delivery
+- 250 &lt;example@example.com&gt; Queued mail for delivery
 
 **_ What to do with this response_** _:_ Nothing, all is well with the cosmos. If you want, you could always print it out and frame it. Do keep in mind that messages that contain things like "Queued mail for delivery" is still indicative of a successful handoff to the recipient server, but there may still be internal queueing on the far end .
 <br></br>

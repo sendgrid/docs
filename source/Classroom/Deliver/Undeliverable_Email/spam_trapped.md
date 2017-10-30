@@ -18,7 +18,7 @@ navigation:
 
 Spam Traps are simply ways to identify and monitor spam. Creating them is as easy as taking an email address or even an entire domain that hasn’t been subscribed to any emails and sending an email to it. Since they haven’t subscribed to any mail, it will be considered spam.
 
-There are a wide variety of spam traps. Sources for spam traps are usually old addresses that were used as role addresses (sales@ info@ support@) in domain registrations or email addresses that were once valid but have been reassigned for trapping spam. This type of spam trap has once opted in to receive email and was likely published on a page somewhere online. (This is not that case for dictionary attackers since they generate millions of randomized addresses at common domains i.e. johndoe@gmail.com, johndoe1@gmail.com and so on.)
+There are a wide variety of spam traps. Sources for spam traps are usually old addresses that were used as role addresses (sales@ info@ support@) in domain registrations or email addresses that were once valid but have been reassigned for trapping spam. This type of spam trap has once opted in to receive email and was likely published on a page somewhere online. (This is not that case for dictionary attackers since they generate millions of randomized addresses at common domains i.e. example@example.com, example@example.com and so on.)
 
 Spam traps are so important because so many large ISPs, spam filter providers and Domain Name System [blacklists]({{root_url}}/Glossary/blacklists.html) use them. In short, sending an email to a spam trap can lead directly to being blacklisted by the organization that set up the trap. Remember that blacklisting can ruin a business’s reputation and halt further email deliverability.
 

@@ -377,7 +377,7 @@ List all available monitor records a reseller has.
 
 ### Response
 
-{% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>user2@example.com</user></users></monitor></monitors
+{% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>exampexample@example.comom</user></users></monitor></monitors
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -393,7 +393,7 @@ List all available monitor records a reseller has.
 
 <h3>Response</h3>
 {% codeblock %}
-{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","user2@example.com"]}
+{"name":"sampleNameA","email":"example@example.com","frequency":"1000","users":[]},{"name":"sampleNameB","email":"example@example.com","frequency":"10000","users":["user1@example.com","exampexample@example.comom"]}
 {% endcodeblock %}
 
 * * * * *

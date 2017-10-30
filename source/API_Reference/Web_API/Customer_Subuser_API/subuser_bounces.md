@@ -20,13 +20,13 @@ Retrieve Bounces
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "status": "5.1.1",
-    "reason": "550 5.1.1 unknown or illegal user: email1@domain.com",
+    "reason": "550 5.1.1 unknown or illegal user: emaieexampexample@example.com",
     "created": "2014-12-06 08:34:48"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "status": "5.1.1",
     "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at http:\/\/support.google.com\/mail\/bin\/answer.py?answer=6596 qy3si50924603pab.12 - gsmtp ",
     "created": "2014-12-06 08:36:34"
@@ -36,13 +36,13 @@ Retrieve Bounces
   {% response xml %}
 <bounces>
    <bounce>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <reason>550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
       <created>2014-12-06 08:34:48</created>
    </bounce>
    <bounce>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <status>5.1.1</status>
       <reason>550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at http:\/\/support.google.com\/mail\/bin\/answer.py?answer=6596 qy3si50924603pab.12 - gsmtp </reason>
       <created>2014-12-06 08:36:34</created>
@@ -65,7 +65,7 @@ SendGrid suppresses messages to bounced addresses, but entries can be removed fr
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Bounce suppression list' %}
 {% endparameters %}
 
-{% apiexample delete POST https://api.sendgrid.com/api/user.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=bounce@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/api/user.bounces api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=subuser_username&task=delete&email=bounceexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

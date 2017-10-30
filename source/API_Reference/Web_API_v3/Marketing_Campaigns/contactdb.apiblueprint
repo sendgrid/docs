@@ -314,7 +314,7 @@ Returned if one or more lists were deleted
 
     + Body
 
-            {"recipients":[{"created_at":1422395108,"email":"e@example.com","first_name":"Ed","id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":null,"last_opened":null,"updated_at":1422395108}]}
+            {"recipients":[{"created_at":1422395108,"email":"eexampexample@example.com","first_name":"Ed","id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":null,"last_opened":null,"updated_at":1422395108}]}
 
 + Response 400
 
@@ -433,7 +433,7 @@ The rate at which recipients may be uploaded is limited to 3 requests every 2 se
 
      + Body
 
-            [{"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25}]
+            [{"email": "example@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25}]
 
 + Response 201
 
@@ -455,8 +455,8 @@ The rate at which recipients may be uploaded is limited to 3 requests every 2 se
      + Body
 
             [
-                {"email": "jones@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25},
-                {"email": "miller@example.com", "last_name": "Miller", "pet": "FrouFrou", "age": 32},
+                {"email": "example@example.com", "last_name": "Jones", "pet": "Fluffy", "age": 25},
+                {"email": "milleexampexample@example.com", "last_name": "Miller", "pet": "FrouFrou", "age": 32},
                 {"email": "invalid_email", "last_name": "Smith", "pet": "Spot", "age": 17},
                 {"email": "pre-existing_email@example.com"}
             ]
@@ -482,7 +482,7 @@ Updates one or more recipients. The body is a list of recipient objects.
      + Body
 
             [
-              {"email": "jones@example.com", "last_name": "Jones"},
+              {"email": "example@example.com", "last_name": "Jones"},
               {"email": "pre-existing_email@example.com"}
             ]
 
@@ -538,7 +538,7 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
      + Body
 
-            {"recipients": [{"created_at":1422313607,"email":"jones@example.com","first_name":null,"id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":"Jones","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"Indiana","type":"text"}]}]}
+            {"recipients": [{"created_at":1422313607,"email":"example@example.com","first_name":null,"id":"YUBh","last_clicked":null,"last_emailed":null,"last_name":"Jones","last_opened":null,"updated_at":1422313790,"custom_fields":[{"id":23,"name":"pet","value":"Indiana","type":"text"}]}]}
 
 + Response 400
 
@@ -568,7 +568,7 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
             {
                 "created_at": 1422313607,
-                "email": "jones@example.com",
+                "email": "example@example.com",
                 "first_name": null,
                 "id": "YUBh",
                 "last_clicked": null,
@@ -734,7 +734,7 @@ You can search for up to 15 different conditions per request.
             {"recipients":
                 [{
                     "created_at": 1422313607,
-                    "email": "jones@example.com",
+                    "email": "example@example.com",
                     "first_name": null,
                     "id": "YUBh",
                     "last_clicked": 12345,
@@ -786,7 +786,7 @@ You can search for up to 15 different conditions per request.
             {"recipients":
                 [{
                     "created_at": 1422313607,
-                    "email": "jones@example.com",
+                    "email": "example@example.com",
                     "first_name": null,
                     "id": "YUBh",
                     "last_clicked": null,
@@ -978,7 +978,7 @@ You can add up to 15 different conditions per segment.
 
     + Body
 
-            {"recipients":[{"created_at": 1422313607,"email": "jones@example.com","first_name": null,"id": "YUBh","last_clicked": null,"last_emailed": null,"last_name": "Jones","last_opened": null,"updated_at": 1422313790,"custom_fields": [{ "id": 23, "name": "pet", "value": "Indiana", "type": "text"}]}]}
+            {"recipients":[{"created_at": 1422313607,"email": "example@example.com","first_name": null,"id": "YUBh","last_clicked": null,"last_emailed": null,"last_name": "Jones","last_opened": null,"updated_at": 1422313790,"custom_fields": [{ "id": 23, "name": "pet", "value": "Indiana", "type": "text"}]}]}
 
 + Response 400
 

@@ -68,7 +68,7 @@ class TestEmail extends Mailable
 
     public function build()
     {
-        $address = 'jane@example.com';
+        $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
         
@@ -146,7 +146,7 @@ class TestEmail extends Mailable
 
     public function build()
     {
-        $address = 'jane@example.com';
+        $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
 

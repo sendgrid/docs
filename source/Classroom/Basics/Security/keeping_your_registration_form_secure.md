@@ -13,7 +13,7 @@ navigation:
 
 Registration forms are a great way to follow up people’s interest in what you are offering on your website and with these tools you are able to make sure it is done right. Unfortunately, registration forms can be a large source of a sender acquiring bounced addresses and [Spam Traps]({{root_url}}/Classroom/Deliver/Undeliverable_Email/spam_trapped.html) which could cause your business to spam a host's mailbox without proper validation of addresses. This can reflect poorly in your SendGrid internal reputation as well as reflect poorly upon your business. Fortunately, there are many helpful techniques that can help a sender avoid many of the issue that can come up through their registration form.
 
-Sometimes in the registration process, a person makes a mistake in entering their email such as person@domain.coom or person@@domain.com. By entering the email address twice and having a system in place that checks that the addresses match up, the person entering their email address has a much smaller chance of accidentally entering an invalid address.
+Sometimes in the registration process, a person makes a mistake in entering their email such as example@example.com or person@@domain.com. By entering the email address twice and having a system in place that checks that the addresses match up, the person entering their email address has a much smaller chance of accidentally entering an invalid address.
 
 A good technique in protecting your registration form from bots is placing a required Captcha in the form:
 
