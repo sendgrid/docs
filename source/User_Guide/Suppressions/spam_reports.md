@@ -28,3 +28,10 @@ When you select the checkboxes next to the recipient names or select all, using 
 Download Spam Reports as CSV
 {% endanchor %}
 You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Spam Reports API]({{root_url}}/API_Reference/Web_API_v3/spam_reports.html)
+- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)

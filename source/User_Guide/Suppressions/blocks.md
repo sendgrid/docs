@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-[Blocks]({{root_url}}/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server. 
+[Blocks]({{root_url}}/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
 
 The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a blacklist, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
 
@@ -37,3 +37,11 @@ Download Blocks as CSV
 {% endanchor %}
 
 You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Bounces]({{root_url}}/User_Guide/Suppressions/bounces.html)
+- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
+- [Web API and Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
