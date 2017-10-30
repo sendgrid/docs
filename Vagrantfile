@@ -11,8 +11,8 @@ Vagrant.configure("2") do |config|
   config.vm.define 'ubuntu', primary: true do |c|
     c.vm.network "private_network", ip: "192.168.100.2"
     c.vm.network "forwarded_port", guest: 4000, host: 4000
-    c.vm.box = "utopic-server-cloudimg-amd64-vagrant-disk1.box"
-    c.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/utopic/current/utopic-server-cloudimg-amd64-vagrant-disk1.box"
+    c.vm.box = "hashicorp/precise64"
+    c.vm.box_url = "http://files.vagrantup.com/precise64.box"
     c.vm.provision "shell" do |s|
       s.inline = "apt-get update -y; apt-get install git ruby ruby-dev gems node nodejs npm openjdk-8-jre -y; gem install bundler;
       cd #{app_path} && npm install && bin/install && bin/preview"
