@@ -188,7 +188,7 @@ Deleting a Domain Whitelabel
 You cannot recover deleted domain whitelabels.
 {% endinfo %}
 
-To delete one of your domain whitelabels, navigate to your domain whitelabel settings and click the action cog next to the whitelabel you want to delete and click **Delete**. Alternatively, if you are already viewing the details for your domain whitelabel, click the **Delete** button in the bottom right hand corner.
+To delete one of your domain whitelabels, navigate to your domain whitelabel settings and click the action menu next to the whitelabel you want to delete and click **Delete**. Alternatively, if you are already viewing the details for your domain whitelabel, click the **Delete** button in the bottom right hand corner.
 
 {% info %}
 You can NOT delete the default domain whitelabel. You must replace it if you want to change it.
