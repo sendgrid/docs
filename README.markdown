@@ -109,7 +109,7 @@ The yui compressor will need the full JDK to run - [http://www.oracle.com/techne
 
 	`$ ruby -v`
 
-The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
+The latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
 
 	$ rvm install 2.3.0
 
@@ -408,7 +408,7 @@ Also `.spelling` contains a list of custom words added to the dictionary.
 
 <a name="spellchecker-contribution"></a>
 ### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
+This still needs work! Many words in tech jargon come back as incorrect.
 The best way I've found to solve this issue without too much overhead work:
 1. Run `$ npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
