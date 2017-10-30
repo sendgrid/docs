@@ -15,3 +15,9 @@ When you log into <a href="{{site.marketing_campaigns_url}}/overview">SendGrid M
 
 ![]({{root_url}}/images/stats_2.png "Campaign Statistics")
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
