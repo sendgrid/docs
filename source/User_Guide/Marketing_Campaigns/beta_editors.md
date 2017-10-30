@@ -96,3 +96,11 @@ If you receive the error “We were unable to detect any drag & drop modules”,
 * Every drag & drop module must include the attribute `role=module`
 
 If you continue to receive an error, please refer to our [example HTML for building a drag & drop module]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML).
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html)
+- [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)
+- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)
