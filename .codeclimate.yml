@@ -42,6 +42,8 @@ exclude_paths:
   - gulp/**/*
   - script/**/*
   - public/**/*
+  - source/assets/**/*
+  - plugins/**/*
 
 ratings:
   paths:
