@@ -455,9 +455,3 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 <a name="license"></a>
 ## License
 [The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
-
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `$ npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
