@@ -100,7 +100,7 @@ Sending to a well-managed address list can drastically help improve your deliver
 In your SendGrid Account there are different [Suppressions]({{root_url}}/User_Guide/Suppressions/index.html) lists. 
 
 **Global Unsubscribes** - Addresses on this list are opted out of all mailing 
-**Bounces** - Addresses that 
+**Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
 **Spam Reports** - Addresses that have marked your mail as spam
 **Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses. 
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
