@@ -265,7 +265,7 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
-* To rebuild the site, [control][c] to cancel the build, and then [bundle exec rake preview] to restart it.
+* To rebuild the site, `ctrl-c` to cancel the build, and then [bundle exec rake preview] to restart it.
 
 <a name="using-docker"></a>
 ### Using Docker
