@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-It is possible to track the number of times each link in one of your [campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) was clicked. All you need to do is enable [click tracking]({{root_url}}/User_Guide/Settings/tracking.html) in your tracking settings. When you navigate to your [campaigns]({{site.app_url}}/marketing_campaigns/campaigns), click the action menu next to the campaign, and select Stats. You will then be able to see the detailed statistics for the campaign, including a table displaying a list of your links along with the number of unique clicks, and total clicks, for each link.
+It is possible to track the number of times each link in one of your [campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) was clicked. When you navigate to your [campaigns]({{site.app_url}}/marketing_campaigns/campaigns), click the action menu next to the campaign, and select Stats. You will then be able to see the detailed statistics for the campaign, including a table displaying a list of your links along with the number of unique clicks, and total clicks, for each link.
 
 ![]({{root_url}}/images/link_tracking.png)
 
