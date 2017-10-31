@@ -12,50 +12,37 @@ layout: page
 navigation:
   show: false
 ---
-- [What is it?](#-What-is-it)
 - [Delisting Shared IP Plans](#-Delisting-Shared-IP-Plans)
 - [Delisting Dedicated IP Plans](#-Delisting-Dedicated-IP-Plans)
 - [Checking Your IP Address](#-Checking-Your-IP-Address)
 - [Delisting Request Forms](#-Delisting-Request-Forms)
 
-{% anchor h2 %}
-What is it?
-{% endanchor %}
+A Blacklist is a list of IP addresses that have been detected sending unsolicited and unwanted emails. Inbox service providers (like Gmail, Microsoft, Yahoo, and AOL) and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
 
-A Blacklist is a list of IP addresses that have been detected sending unsolicited and/or unwanted emails. Inbox service providers (ISPs : gmail, microsoft, yahoo, AOL, etc.) and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
+All major ISPs use some form of blacklisting service to protect their customers from malicious emails, although the deliverability impact can vary depending on the blacklisting service that lists the IP. If you find that your IP address is on the blacklist of one the many legitimate services, then submit a delisting request.
 
-All major ISPs use some form of blacklisting service in order to protect their customers from malicious emails, although the deliverability impact can vary depending on the blacklisting service the IP is listed on. If you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority. 
-
-Our Compliance Team keeps a close eye on which of our IP’s end up on a blacklist and we try as quickly as possible to resolve the issue. However more often than not, it will require the user sending the mail to contact the ISP.  
+SemdGrid keeps a close eye on our IP’s, and we try as quickly as possible to resolve any issues with blacklists. However, getting your IP off the blacklist often requires the user sending the mail to contact the ISP.  
 
 {% anchor h2 %}
 Delisting Shared IP Plans
 {% endanchor %}
 
-When on a Free or Essentials plan, your account is using shared IP pools, which means you are sharing IP addresses 
-with many other customers and there is the potential of being adversely affected by other senders in the same pool. 
-With these shared IP pools, our Compliance Team is automatically notified and will handle the delisting request on 
-behalf of our customers. The time it takes for an IP to be removed from a blacklist can vary depending on the 
-blacklisting services. 
+When on a Free or Essentials plan, your account is using shared IP pools - you are sharing IP addresses with many other customers, and there is the potential of being adversely affected by senders in the same pool. 
+When one of the shared IP pools gets blacklisted, SendGrid receives an automatic notification and handles the delisting request on behalf of our customers. Removal time varies depending on the blacklist.
 
 {% info %}
-We are unable to move your account to a new IP pool as these pools are controlled by an automated script. 
-The best way to not be impacted by other senders is to get a dedicated IP on a Pro or higher plan. 
+SendGrid is unable to move your account to a new IP pool. The best way to not be impacted by other senders is to get a dedicated IP on a Pro or higher plan. 
 {% endinfo %}
 
 {% anchor h2 %}
 Delisting Dedicated IP Plans
 {% endanchor %}
 
-We ask that our dedicated IP plan users make the initial delisting request in the event that they discover their 
-SendGrid IP on a blacklist. These IP addresses are only assigned to one account at a time, so we expect those users 
-to take responsibility for all of the mail that is sent through their account.  SendGrid will still be happy to step 
-in and assist with these delisting requests if the listing service requires the IP administrator to take action, or 
-if the delisting form is too complicated.
+We ask that our dedicated IP plan users make the initial delisting request if they discover their 
+SendGrid IP on a blacklist. SendGrid is happy to step in and assist with these delisting requests if the listing service requires the IP administrator to take action, or if the delisting form is too complicated.
 
 {% info %}
-Please note:  in the event that a sending domain (and not the IP address) is blacklisted, that domain’s controller 
-will be responsible for handling the delisting request.
+Please note:  If a sending domain (and not the IP address) is blacklisted, that domain’s controller is responsible for handling the delisting request.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -100,8 +87,7 @@ Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines
 [Hotmail/Outlook/Live Bulk Email Sender Guidelines](https://mail.live.com/mail/policies.aspx)
 [AOL Bulk Email Sender Guidelines](https://postmaster.aol.com/best-practices)
 
-If you are sending mail in accordance with above guidelines and still have problems to deliver email to those email 
-providers, you can contact the ISP support by the following URL:
+If you are sending mail using these guidelines and still have problems to deliver email to those email providers, you can contact the ISP support by the following URL:
 
 [Gmail Bulk Sender Contact Form](https://support.google.com/mail/contact/bulk_send_new?visit_id=1-636427436775630765-3555263264&rd=1)
 [Yahoo Bulk Sender Contact Form](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
@@ -109,7 +95,5 @@ providers, you can contact the ISP support by the following URL:
 [AOL Whitelisting Process](https://postmaster.aol.com/whitelist-request)
 
 {% warning %}
-If a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept 
-delisting requests, then you should not waste your time or money trying to get your domain/IP delisted because these 
-services are rarely, if ever, used. 
+If a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time or money trying to get your domain/IP delisted because these services are rarely, if ever, used by ISPs. 
 {% endwarning %}
