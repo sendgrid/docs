@@ -49,7 +49,7 @@ I accidentally scheduled a campaign I didn’t want to send.
 
   -
 
-A: You can Unschedule the campaign from the action cog menu and it will return to a Draft form. Whew!
+A: You can Unschedule the campaign from the action menu menu and it will return to a Draft form. Whew!
 
 -
 

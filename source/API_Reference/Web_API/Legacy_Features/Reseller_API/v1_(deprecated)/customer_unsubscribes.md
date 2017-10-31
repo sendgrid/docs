@@ -64,7 +64,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=get&date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=eexampexample@example.com&task=get&date=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -72,7 +72,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ### Response
 
 {% codeblock %}
-unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
+unsubscribes><unsubscribe><email>emaieexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>emaileexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -81,14 +81,14 @@ unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=customer@example.com&amp;task=get&amp;date=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=eexampexample@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
       
 {% endrequestblock %}
 
 <h3>Response</h3>
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{"email":"emaieexampexample@example.com","created":"2009-06-01 19:41:39"},{"email":"emaileexampexample@example.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
 
@@ -141,7 +141,7 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=eexampexample@example.com&task=delete&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -163,7 +163,7 @@ result><message>Email does not exist</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=delete&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=eexampexample@example.com&task=delete&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -233,7 +233,7 @@ Add unsubscribe email records to their account if they need to stop sending emai
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=eexampexample@example.com&task=add&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -255,7 +255,7 @@ result><message>Email already exists</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=customer@example.com&task=add&email=unsubscribe@sample.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=unsubscribes&user=eexampexample@example.com&task=add&email=unsubscribe@sample.com
   {% endrequestdata %}
 
 {% endrequestblock %}

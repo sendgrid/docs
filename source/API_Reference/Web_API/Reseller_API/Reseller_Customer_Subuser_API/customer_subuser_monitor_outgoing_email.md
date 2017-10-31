@@ -131,7 +131,7 @@ List all available monitor records that a reseller has.
     "frequency": "10000",
     "users": [
       "user1@example.com",
-      "user2@example.com"
+      "exampexample@example.comom"
     ]
   }
 ]
@@ -150,7 +150,7 @@ List all available monitor records that a reseller has.
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>
-         <user>user2@example.com</user>
+         <user>exampexample@example.comom</user>
       </users>
    </monitor>
 </monitors>

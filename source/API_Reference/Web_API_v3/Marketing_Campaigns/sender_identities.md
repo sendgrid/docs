@@ -34,7 +34,7 @@ Sender Identities are required to be verified before use. If your domain has bee
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -55,7 +55,7 @@ Sender Identities are required to be verified before use. If your domain has bee
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -90,7 +90,7 @@ This endpoint allows you to retrieve a list of all of your sender identities.
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -127,7 +127,7 @@ Partial updates are allowed, but fields that are marked as "required" in the POS
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -148,7 +148,7 @@ Partial updates are allowed, but fields that are marked as "required" in the POS
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -208,7 +208,7 @@ This endoint allows you to retrieve a specific sender identity.
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",

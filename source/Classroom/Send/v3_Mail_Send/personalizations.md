@@ -28,7 +28,7 @@ Think of the personalizations section of the request body like the envelope of a
 You must include at least one "to" object within the personalizations array.
 {% endinfo %}
 
-Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;jane@example.com&gt;, but set each email to be delivered at different times.
+Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;janeexampexample@example.com&gt;, but set each email to be delivered at different times.
 
 {% info %}
 You may not include more than 1000 personalizations per API request. If you need to include more than 1000 personalizations, please divide these across multiple API requests.

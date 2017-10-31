@@ -35,7 +35,7 @@ Retrieve invoices/usages from customers.
       "prorated": 0,
       "start_date": "2010-08-01",
       "end_date": "2010-08-31",
-      "username": "user4@example.com",
+      "username": "example@example.com",
       "package": "Example Package",
       "additional_charges": 0,
       "final_amount": 1007.95
@@ -74,7 +74,7 @@ Retrieve invoices/usages from customers.
          <prorated>0</prorated>
          <start_date>2010-08-01</start_date>
          <end_date>2010-08-31</end_date>
-         <username>user4@example.com</username>
+         <username>example@example.com</username>
          <package>Example Package</package>
          <additional_charges>0</additional_charges>
          <final_amount>1007.95</final_amount>

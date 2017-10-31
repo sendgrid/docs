@@ -64,7 +64,7 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
 1. From the left-hand navigation, select **Campaigns**  
 1. Click **Templates**. 
-1. Locate the template you want to duplicate and then click the action cog.
+1. Locate the template you want to duplicate and then click the action menu.
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
 {% anchor h3 %}

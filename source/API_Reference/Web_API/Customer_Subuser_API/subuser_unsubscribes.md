@@ -20,11 +20,11 @@ Retrieve Unsubscribes
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -32,11 +32,11 @@ Retrieve Unsubscribes
   {% response xml %}
 <unsubscribes>
    <unsubscribe>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
    <unsubscribe>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
 </unsubscribes>

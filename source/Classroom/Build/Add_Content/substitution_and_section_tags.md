@@ -50,7 +50,7 @@ X-SMTPAPI Header
 {% codeblock lang:json %}
 {
 	"to": [
-		"example01@domain.com",
+		"example0eexampexample@example.com",
 		"example02@domain.com",
 		"example03@domain.com"
 	],
@@ -68,7 +68,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -119,7 +119,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}
@@ -235,7 +235,7 @@ X-SMTPAPI Header
 {% codeblock lang:json %}
 {
 	"to": [
-		"example01@domain.com",
+		"example0eexampexample@example.com",
 		"example02@domain.com",
 		"example03@domain.com"
 	],
@@ -254,7 +254,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -308,7 +308,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}
@@ -424,7 +424,7 @@ X-SMTPAPI Header
 {% codeblock lang:json %}
 {
 	"to": [
-		"example01@domain.com",
+		"example0eexampexample@example.com",
 		"example02@domain.com",
 		"example03@domain.com"
 	],
@@ -446,7 +446,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -502,7 +502,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}
@@ -618,7 +618,7 @@ X-SMTPAPI Header
 {% codeblock lang:json %}
 {
 	"to": [
-		"example01@domain.com",
+		"example0eexampexample@example.com",
 		"example02@domain.com",
 		"example03@domain.com"
 	],
@@ -641,7 +641,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -700,7 +700,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}
@@ -816,7 +816,7 @@ X-SMTPAPI Header
 {% codeblock lang:json %}
 {
 	"to": [
-		"example01@domain.com",
+		"example0eexampexample@example.com",
 		"example02@domain.com",
 		"example03@domain.com"
 	],
@@ -841,7 +841,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -902,7 +902,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}
@@ -1019,7 +1019,7 @@ X-SMTPAPI Header
 
 {% codeblock lang:json %}
 {
-	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
+	"to": ["example0eexampexample@example.com", "example02@domain.com", "example03@domain.com"],
 	"sub": {
 		"-name-": ["John", "Jane", "Matt"],
 		"-confirmations-": ["-confirmation_001-", "-confirmation_002-", "-confirmation_003-"],
@@ -1041,7 +1041,7 @@ v3 Mail Send
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
+			"email": "example0eexampexample@example.com",
 			"name": "Example 01"
 		}],
 		"subject": "Example 01",
@@ -1102,7 +1102,7 @@ Example Outcome:
 {% endanchor %}
 
 {% anchor h4 %}
-example01@domain.com
+example0eexampexample@example.com
 {% endanchor %}
 
 {% anchor h5 %}

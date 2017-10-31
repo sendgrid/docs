@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
 [![Dependency Status](https://gemnasium.com/sendgrid/docs.svg)](https://gemnasium.com/sendgrid/docs)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/sendgrid-nodejs.svg)](https://github.com/sendgrid/sendgrid-nodejs/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
 This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
@@ -33,6 +33,7 @@ The master branch is continuously deployed to production.
 	* [Running](#running)
 	* [View your install](#view)
 	* [Important Things to Know](#important)
+	* [Using Docker](#using-docker)
 * [Config](#config)
 	* [The Nav Tree](#tree)
 	* [Pages](#pages)
@@ -42,13 +43,25 @@ The master branch is continuously deployed to production.
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
 * [JS and CSS, etc](#js_and_css)
+* [Node Spellchecker](#node-spellchecker)
+	* [Init](#spellchecker-init)
+	* [Usage](#spellchecker-usage)
+		* [Example output](#spellchecker-example)
+	* [Dictionary](#spellchecker-dictionary)
+	* [Contribution](#spellchecker-contribution)
+* [Style Guide](#style-guide)
+	* [About Jobs-to-be-done](#about-jobs-to-be-done)
+	* [About Additional Resources](#about-additional-resources)
+* [About](#about)
+
+* [License](#license)
 
 <a name="cla"></a>
 ## CLAs and CCLAs
 
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
 
-Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when making a contribution. In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
+Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when contributing. In this way, the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
 
 
 SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
@@ -92,11 +105,11 @@ The yui compressor will need the full JDK to run - [http://www.oracle.com/techne
 	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
 
 * Close and reopen your terminal window
-* Check which version of Ruby you have  
+* Check your Ruby version:  
 
 	`$ ruby -v`
 
-The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
+The latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
 
 	$ rvm install 2.3.0
 
@@ -128,7 +141,7 @@ then set that version to be the default version
 
 * clone repo
 
-	`$ git clone [https://github.com/sendgrid/docs.git](https://github.com/sendgrid/docs.git)`
+	`$ git clone https://github.com/sendgrid/docs.git`
 
 OR use the GitGUI tool to clone the repo
 
@@ -186,7 +199,7 @@ to install client-side dependencies.
 <a name="jekyll"></a>
 ### Configure jekyll
 
-* Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
+* Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file!
 
 	`$ cp _config.sample.yml _config.yml`
 
@@ -229,7 +242,7 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 
 <a name="view"></a>
 ### View your install
-* Browse to [localhost:4000](localhost:4000)
+* Browse to [http://localhost:4000](http://localhost:4000)
 
 
 <a name="important"></a>
@@ -238,6 +251,18 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
 * To rebuild the site, [control][c] to cancel the build, and then [bundle exec rake preview] to restart it.
+
+<a name="using-docker"></a>
+### Using Docker
+
+Install [Docker](https://www.docker.com/) first, then in terminal execute:
+
+```
+docker build -t sendgrid/docs:latest .
+docker run --rm -it -p 4000:4000 sendgrid/docs:latest
+```
+
+Wait until you see `Server running... press ctrl-c to stop.` and browse to [http://localhost:4000](http://localhost:4000)
 
 <a name="config"></a>
 ## Config
@@ -291,7 +316,7 @@ seo:
 ---
 ```
 
-By default `<title>` tags follow the template `{Page Title} {Site Title}`. However the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`. `description` and `canonical` change their respective tags.
+By default `<title>` tags follow the template `{Page Title} {Site Title}`. However, the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`. `description` and `canonical` change their respective tags.
 
 <a name="tags"></a>
 ### Custom Liquid Tags
@@ -311,7 +336,7 @@ Some Anchor Text
 <a name="info_blocks"></a>
 #### Info blocks
 
-Similarly you can create info and warning blocks:
+Similarly, you can create info and warning blocks:
 
 ```
 {% info %}
@@ -341,8 +366,8 @@ If you are working on API reference docs, you can generate XML and JSON nav tabs
 ```
 
 The parameters for the `apiexample` block are: unique identifier, HTTP
-method, the url (excluding .json or .xml extension), and the data
-payload in querystring format.
+method, the URL (excluding .json or .xml extension), and the data
+the payload in query string format.
 
 <a name="js_and_css"></a>
 ## JS and CSS, etc
@@ -350,27 +375,59 @@ payload in querystring format.
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
 
-# About
+<a name="node-spellchecker"></a>
+## Node Spellchecker
 
-SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
-It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
 
-![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+<a name="spellchecker-init"></a>
+### Init
+```
+# (pull code updates before this)
+# install updated npm package dependencies!
+$ npm install
+```
+<a name="spellchecker-usage"></a>
+### Usage
+```
+# generates report of misspellings
+$ npm run spellcheck
 
-# License
-[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
+# generates report of misspellings of [filename]
+$ npm run spellcheck-file [filename]
+```
+<a name="spellchecker-example"></a>
+#### Example output:
+![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
 
+<a name="spellchecker-dictionary"></a>
+### Dictionary: English-US
+
+See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
+Also `.spelling` contains a list of custom words added to the dictionary.
+
+<a name="spellchecker-contribution"></a>
+### Contribution
+This still needs work! Many words in tech jargon come back as incorrect.
+The best way I've found to solve this issue without too much overhead work:
+1. Run `$ npm run spellcheck`
+2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+
+
+<a name="style-guide"></a>
 ## Style Guide
 
+<a name="about-jobs-to-be-done"></a>
 ### About Jobs-to-be-done
 
 Jobs to be done style includes:
 
 * Table of contents at the beginning
 * "Additional Resources" section at the end
-* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions and correct UI workflow)
+* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
 
+<a name="about-additional-resources"></a>
 ### About Additional Resources
 
 "Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
@@ -388,36 +445,13 @@ Additional Resources
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
 ```
-=======
-## Node Spellchecker
+<a name="about"></a>
+## About
 
-This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
+SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
+It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
 
-### Init
-```
-# (pull code updates before this)
-# install updated npm package dependencies!
-npm install
-```
-
-### Usage
-```
-# generates report of misspellings
-npm run spellcheck
-
-# generates report of misspellings of [filename]
-npm run spellcheck-file [filename]
-```
-#### Example output:
-![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
-
-### Dictionary: English-US
-
-See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
-Also `.spelling` contains a list of custom words added to the dictionary.
-
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
+                                                 
+<a name="license"></a>
+## License
+[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
