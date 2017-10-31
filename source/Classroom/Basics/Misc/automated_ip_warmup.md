@@ -15,9 +15,7 @@ navigation:
 
 SendGrid can automatically warmup dedicated IP addresses by limiting the amount of mail that can be sent through them per hour, with the limit determined by how long the IP address has been in automated warmup. See the [automated warmup schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html) for more details.
 
-If you have existing warm IPs, as well as new IPs that need warming, any mail beyond the hourly maximum limit will overflow to your existing warm IPs.
-
-If there are no existing warm IPs, any requests made above the hourly maximum limit will overflow to our shared IP Warmup clusters for sending. If your sending reputation is below 85, you will not be able to use these Shared IP Warmup clusters.
+Any mail beyond the hourly maximum limit will overflow to your existing warm IPs. There needs to be at least 1 existing warm IP for Automated Warmup to be enabled. 
 
 An IP in warmup will always follow SendGrid’s Warmup schedule. Please consider a measured approach when sending on a new IP to allow for proper IP warmup. 
 
