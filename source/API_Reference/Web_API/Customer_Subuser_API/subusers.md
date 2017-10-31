@@ -186,7 +186,7 @@ Update Subuser Username
 {% endanchor %}
 
 {% warning %}
-Subuser username is used to access website and API. Changes occur immediately. For instructions on how to use [Teammates]({{root_url}}/User_Guide/Settings/teammates.html) to safely alter login credentials without access downtime, click [here]({{root_url}}/Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html).
+Subuser username is used to access website and API. Changes occur immediately.
 {% endwarning %}
 
 {% parameters updateSubuserUsername %}

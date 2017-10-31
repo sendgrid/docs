@@ -129,7 +129,7 @@ Append
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=eexampexample@example.com&mail_domain=email.sendgrid.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -159,7 +159,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=customer@example.com&mail_domain=email.sendgrid.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=whitelabel&task=append&user=eexampexample@example.com&mail_domain=email.sendgrid.com
   {% endrequestdata %}
 
 {% endrequestblock %}

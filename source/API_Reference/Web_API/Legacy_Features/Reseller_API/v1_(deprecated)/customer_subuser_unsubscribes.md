@@ -56,7 +56,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 ### Response
 
-{% codeblock %}  <unsubscribes><unsubscribe><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
+{% codeblock %}  <unsubscribes><unsubscribe><email>emaieexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>emaileexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -72,7 +72,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 <h3>Response</h3>
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}]
+{"email":"emaieexampexample@example.com","created":"2009-06-01 19:41:39"},{"email":"emaileexampexample@example.com","created":"2009-06-01 19:41:39"}]
 
 {% endcodeblock %}
 

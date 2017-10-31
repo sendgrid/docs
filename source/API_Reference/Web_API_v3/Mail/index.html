@@ -157,7 +157,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param click_tracking object No "" "Allows you to track whether a recipient clicked a link in your email." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param enable_text boolean No "true or false" "Indicates if this setting should be included in the text/plain portion of your email." 2 %}
-    {% api_table_param open_tracking object No "" "Allows you to track whether the email was opened or not, but including a single pixel image in the body of the content. When the pixel is loaded, we can log that the email was opened." 1 %}
+    {% api_table_param open_tracking object No "" "Allows you to track whether the email was opened or not, by including a single pixel image in the body of the content. When the pixel is loaded, we can log that the email was opened." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param substitution_tag string No "" "Allows you to specify a substitution tag that you can insert in the body of your email at a location that you desire. This tag will be replaced by the open tracking pixel." 2 %}
     {% api_table_param subscription_tracking object No "" "Allows you to insert a subscription management link at the bottom of the text and html bodies of your email. If you would like to specify the location of the link within your email, you may use the substitution_tag." 1 %}
@@ -196,5 +196,5 @@ Response Body:
 {% endcodeblock %}
 
 {% info %}
-If you are using the Event Webhook, it's best practice to store your X-Message-ID data help with deduplications in your webhook data.
+If you are using the Event Webhook, it's best practice to store your [X-Message-ID](https://sendgrid.com/docs/Glossary/x_message_id.html) data help with deduplications in your webhook data.
 {% endinfo %}

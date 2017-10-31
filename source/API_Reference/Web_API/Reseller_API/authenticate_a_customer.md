@@ -19,7 +19,7 @@ Authenticate a customer on your website before displaying their account informat
 These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
 {% endinfo %}
 
-{% apiexample auth POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=auth %}
+{% apiexample auth POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com&password=theirsubmittedpassword&method=auth %}
   {% response json %}
 {
   "message": "success"

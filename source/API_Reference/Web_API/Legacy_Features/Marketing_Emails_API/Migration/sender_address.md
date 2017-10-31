@@ -143,7 +143,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -264,7 +264,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -338,7 +338,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -412,7 +412,7 @@ curl --request GET \
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",

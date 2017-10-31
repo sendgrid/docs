@@ -30,7 +30,7 @@ $transport = new Zend_Mail_Transport_Smtp($smtpServer, $config);
 
 $mail = new Zend_Mail();
 
-$mail->setFrom('sender@example.com', 'Some Sender');
+$mail->setFrom('sendeexampexample@example.com', 'Some Sender');
 $mail->addTo('email@example.com','Some Recipient');
 $mail->setSubject('Test Subject');
 $mail->setBodyText('This is the text of the mail using Zend.');

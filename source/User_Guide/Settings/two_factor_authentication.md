@@ -99,7 +99,7 @@ Once setup, you will always be required to use Two-Factor Authentication to perf
 Disabling Two-Factor Authentication
 {% endanchor h2 %}
 
-To disable or delete a Two-Factor Authentication setting, navigate to the **Two-Factor Authentication overview page**. Find the setting you would like to delete, click the **Action Cog**, and select **Delete**.
+To disable or delete a Two-Factor Authentication setting, navigate to the **Two-Factor Authentication overview page**. Find the setting you would like to delete, click the **action menu**, and select **Delete**.
 
 <div class="row">
   <div class="clearfix col-md-6">

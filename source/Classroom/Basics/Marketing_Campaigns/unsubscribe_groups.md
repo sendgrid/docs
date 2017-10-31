@@ -51,7 +51,7 @@ Adding Your Unsubscribe Group to Your Campaign
 
 Once you've created your unsubscribe group, navigate to **Marketing** in the left hand nav and click **Campaigns**.
 
-Select the campaign you want to add the group unsubscribe link to. Click **Edit** in the preview modal that appears or click the action cog and select **Edit** from the dropdown menu.
+Select the campaign you want to add the group unsubscribe link to. Click **Edit** in the preview modal that appears or click the action menu and select **Edit** from the dropdown menu.
 
 Look for **Settings** in the left hand sidebar. Under the **Recipients** dropdown menu in this sidebar, select your unsubscribe group.
 
@@ -79,7 +79,7 @@ Finally, click **Save** to save your campaign.
 
 Congratulations! You've now successfully added a group unsubscribe link to your campaign! If one of your recipients clicks this link in your campaign, they will be taken to a page SendGrid generates confirming that they have unsubscribed from this type, or group, of emails.
 
-Of course, if they change their mind, they can always click “View Email Preferences” to see and manage which email groups they are subscribed to.
+Of course, if they change their mind, they can always click “View Email Preferences” to see and manage which email groups they are opted out of.
 
 ![]({{root_url}}/images/mc_group_unsubscribes_5.png)
 
@@ -101,7 +101,7 @@ Then, insert the text you would like to link to your custom unsubscribe page in 
 Manage Email Preferences Links
 {% endanchor %}
 
-While not required like an unsubscribe link, you can also add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt into or out of the various options.
+While not required like an unsubscribe link, you can also add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt out of the various options.
 
 To add the manage preferences link, simply follow the steps described for the unsubscribe link.
 
@@ -109,7 +109,7 @@ Then, in the body of your campaign, insert the text you would like to use for yo
 
 ![]({{root_url}}/images/mc_group_unsubscribes_6.png)
 
-When your recipients click this link, they will be taken to an email preferences page SendGrid generates where they can opt into or out of the email groups you offer.
+When your recipients click this link, they will be taken to an email preferences page SendGrid generates where they can opt out of the email groups you offer.
 
 {% info %}
 The Email Preferences page will only display the unsubscribe groups that you have marked as "default" in your unsubscribe group settings.

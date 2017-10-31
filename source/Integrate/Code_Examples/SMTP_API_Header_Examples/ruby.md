@@ -101,7 +101,7 @@ end
 
 hdr = SmtpApiHeader.new
 
-receiver = ['recipient1@domain.com', 'recipient2@domain.com']
+receiver = ['recipienteexampexample@example.com', 'recipient2@domain.com']
 
 hdr.addTo(receiver)
 hdr.setUniqueArgs({'test' => 1, 'foo' =>2})
