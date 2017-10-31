@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-A delivery is recorded when a request to send an email results in the email being accepted by the receiving server. However this does not necessarily mean that the message reached the recipient’s inbox. Some users and some email applications may filter the email away from the inbox even though the email was delivered to (read: accepted by) the recipient email server.
+A delivery is recorded when a request to send an email results in the email being accepted by the receiving server. However, this does not necessarily mean that the message reached the recipient’s inbox. Some users and some email applications may filter the email away from the inbox even though the email was delivered to (read: accepted by) the recipient email server.
 
 If an email is indicated as delivered you can be certain that it was not deferred by the ISP.
 
