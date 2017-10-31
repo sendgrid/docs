@@ -17,7 +17,7 @@ navigation:
 #Find your existing username/password through the Heroku portal :
 If you are a Heroku user using [the SendGrid add-on](https://addons.heroku.com/sendgrid), and would like to access the SendGrid web interface, or would just like to know your SendGrid account credentials; you can find them by doing the following from the Heroku interface:
 
->1. Go to your Apps, choose SendGrid
+>1. Go to your Apps, choose SendGrid.
 >2. Click on "settings" and then click “reveal config vars”
 
 
