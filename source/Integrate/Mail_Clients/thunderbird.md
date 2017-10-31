@@ -12,6 +12,7 @@ To send email using Thunderbird you will have to modify your outgoing server set
 Start by going to: 'Tools' -\> 'Account Settings'
 
 </h3>
+
 ![]({{root_url}}/images/thunderbird_1.png "thunderbird_add")
 
 <h2>
