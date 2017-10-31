@@ -55,7 +55,7 @@ To schedule a send request for individual recipients; use `send_each_at` to send
   "to": [
     "<ben@example.com>",
     "john@example.com",
-    "mikeexampexample@example.com"
+    "mikeexampexample@example.com",
     "<example@example.com>",
     "example@example.com",
     "example@example.com"
@@ -77,7 +77,7 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 
     "<ben@example.com>",
     "john@example.com",
-    "mikeexampexample@example.com"
+    "mikeexampexample@example.com",
     "<example@example.com>",
     "example@example.com",
     "example@example.com"
