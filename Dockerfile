@@ -26,6 +26,11 @@ COPY . /docs
 
 COPY _config.sample.yml _config.yml
 
+ONBUILD VOLUME ["node_modules/"]
+ONBUILD VOLUME ["gems/"]
+VOLUME ["/source/"]
+VOLUME ["/public/"]
+
 EXPOSE 4000
 
 CMD ["/bin/bash", "-lc", "bundle exec rake preview"]
