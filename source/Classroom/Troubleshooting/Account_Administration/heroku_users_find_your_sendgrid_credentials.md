@@ -36,12 +36,12 @@ Go to the [SendGrid Password Reset page](https://sendgrid.com/user/forgotPasswor
 
 {% info %}
 Resetting your password will not update the Config Vars of your SendGrid add-on in the Heroku portal. To update this please follow the directions above to pull up your add-on Settings/Config Vars. Then click the “edit” button to manually input your new password:
+{% endinfo %}
 
 ;i![]({{root_url}}/images/HerokuPW3.png "Heroku Config Vars Edit Screenshot"
 
 ;i![]({{root_url}}/images/HerokuPW4.png "Heroku Config Vars Password Edit Screenshot"
 
-{% endinfo %}
 
 {% warning %}
 Resetting your SendGrid password may break any integrations you have that are currently using the existing credentials for authentication.
