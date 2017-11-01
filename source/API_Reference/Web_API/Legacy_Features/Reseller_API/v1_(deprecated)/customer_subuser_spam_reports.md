@@ -61,7 +61,7 @@ Retrieve Spam Reports
 ### Response
 
 {% codeblock %}
-spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>email2@domain2.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
+spamreports><spamreport><email>emaieexampexample@example.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>emaileexampexample@example.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -77,7 +77,7 @@ spamreports><spamreport><email>email1@domain.com</email><created>2009-06-10 12:4
 
 <h3>Response</h3>
 {% codeblock %}
-{"email":"email1@domain.com","created":"2009-06-01 19:41:39"},{"email":"email2@domain2.com","created":"2009-06-01 19:41:39"}
+{"email":"emaieexampexample@example.com","created":"2009-06-01 19:41:39"},{"email":"emaileexampexample@example.com","created":"2009-06-01 19:41:39"}
 {% endcodeblock %}
 
 * * * * *

@@ -132,7 +132,7 @@ How do I grant access to a SendGrid feature?
 
 As an administrator, you can grant access to a feature several ways. If a teammate has requested access to a feature, simply log in to your account, navigate to **Settings** in the left hand sidebar, and click **Teammates**. You will see three tabs labeled **All**, **Requesting Access**, and **Invited**. Click **Requesting Access** to view a list of all Teammates who have requested access along with the name of the feature they requested access to. Select either **Deny** or **Approve**.
 
-You also can give feature access to a teammate by editing that Teammate's permissions settings. Simply navigate to the teammates overview, and find the teammate under the **All** tab. Click the Action Cog next to that teammate and click **Edit**. This will open a window allowing you to change that teammate's various permissions. For more information, please visit our [User Guide]({{root_url}}/User_Guide/Settings/teammates.html).
+You also can give feature access to a teammate by editing that Teammate's permissions settings. Simply navigate to the teammates overview, and find the teammate under the **All** tab. Click the action menu next to that teammate and click **Edit**. This will open a window allowing you to change that teammate's various permissions. For more information, please visit our [User Guide]({{root_url}}/User_Guide/Settings/teammates.html).
 
 {% anchor h2 %}
 How do I set up Two-Factor Authentication for a teammate?

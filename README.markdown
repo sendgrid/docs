@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
 [![Dependency Status](https://gemnasium.com/sendgrid/docs.svg)](https://gemnasium.com/sendgrid/docs)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/sendgrid-nodejs.svg)](https://github.com/sendgrid/sendgrid-nodejs/graphs/contributors)
+[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
 This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
@@ -61,7 +61,7 @@ The master branch is continuously deployed to production.
 
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
 
-Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when making a contribution. In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
+Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when contributing. In this way, the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
 
 
 SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
@@ -105,11 +105,11 @@ The yui compressor will need the full JDK to run - [http://www.oracle.com/techne
 	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
 
 * Close and reopen your terminal window
-* Check which version of Ruby you have  
+* Check your Ruby version:  
 
 	`$ ruby -v`
 
-The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
+The latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
 
 	$ rvm install 2.3.0
 
@@ -199,7 +199,7 @@ to install client-side dependencies.
 <a name="jekyll"></a>
 ### Configure jekyll
 
-* Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
+* Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file!
 
 	`$ cp _config.sample.yml _config.yml`
 
@@ -316,7 +316,7 @@ seo:
 ---
 ```
 
-By default `<title>` tags follow the template `{Page Title} {Site Title}`. However the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`. `description` and `canonical` change their respective tags.
+By default `<title>` tags follow the template `{Page Title} {Site Title}`. However, the page title can be changed for the purpose of the tag by using `seo["title"]`. `seo["override"]` will override the entire template, instead making the title page `{seo["title"]}`. `description` and `canonical` change their respective tags.
 
 <a name="tags"></a>
 ### Custom Liquid Tags
@@ -336,7 +336,7 @@ Some Anchor Text
 <a name="info_blocks"></a>
 #### Info blocks
 
-Similarly you can create info and warning blocks:
+Similarly, you can create info and warning blocks:
 
 ```
 {% info %}
@@ -366,8 +366,8 @@ If you are working on API reference docs, you can generate XML and JSON nav tabs
 ```
 
 The parameters for the `apiexample` block are: unique identifier, HTTP
-method, the url (excluding .json or .xml extension), and the data
-payload in querystring format.
+method, the URL (excluding .json or .xml extension), and the data
+the payload in query string format.
 
 <a name="js_and_css"></a>
 ## JS and CSS, etc
@@ -408,7 +408,7 @@ Also `.spelling` contains a list of custom words added to the dictionary.
 
 <a name="spellchecker-contribution"></a>
 ### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
+This still needs work! Many words in tech jargon come back as incorrect.
 The best way I've found to solve this issue without too much overhead work:
 1. Run `$ npm run spellcheck`
 2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
@@ -424,7 +424,7 @@ Jobs to be done style includes:
 
 * Table of contents at the beginning
 * "Additional Resources" section at the end
-* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions and correct UI workflow)
+* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
 
 <a name="about-additional-resources"></a>
@@ -455,9 +455,3 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 <a name="license"></a>
 ## License
 [The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
-
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `$ npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!

@@ -23,7 +23,7 @@ Retrieve Invalid Emails
   {% response json %}
 [
   {
-    "email": "isaac@hotmail.comm",
+    "email": "example@example.com",
     "reason": "Mail domain mentioned in email address is unknown",
     "created": "2009-06-01 19:41:39"
   },
@@ -33,7 +33,7 @@ Retrieve Invalid Emails
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "isaac@example.com",
+    "email": "example@example.com",
     "reason": "Known bad domain",
     "created": "2009-06-01 19:41:39"
   }
@@ -42,7 +42,7 @@ Retrieve Invalid Emails
   {% response xml %}
 <invalidemails>
    <invalidemail>
-      <email>isaac@hotmail.comm</email>
+      <email>example@example.com</email>
       <reason>Mail domain mentioned in email address is unknown</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -52,7 +52,7 @@ Retrieve Invalid Emails
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
    <invalidemail>
-      <email>isaac@example.com</email>
+      <email>example@example.com</email>
       <reason>Known bad domain</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>

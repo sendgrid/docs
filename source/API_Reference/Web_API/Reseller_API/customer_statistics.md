@@ -28,7 +28,7 @@ To retrieve statistics for the Marketing Emails application you can use [Categor
 These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
 {% endinfo %}
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com %}
   {% response json %}
 [
   {
@@ -158,7 +158,7 @@ Retrieve all-time totals for your customer
 {% endparameters %}
 
 
-{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=1 %}
+{% apiexample agg POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&aggregate=1 %}
   {% response json %}
 {
   "requests": 12342,
@@ -214,7 +214,7 @@ Retrieve a list of all the categories used in your customers account.
 {% endparameters %}
 
 
-{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=true %}
+{% apiexample cat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&list=true %}
   {% response json %}
 [
   {
@@ -259,7 +259,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% endparameters %}
 
 
-{% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
+{% apiexample catstat POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category %}
   {% response json %}
 [
   {

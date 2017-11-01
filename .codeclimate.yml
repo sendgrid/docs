@@ -22,7 +22,6 @@ exclude_paths:
   - .rubocop.yml
   - .spelling
   - .travis.yml
-
   - Gemfile.lock
   - CODE_OF_CONDUCT.md
   - CONTRIBUTING.md
@@ -37,13 +36,14 @@ exclude_paths:
   - config.sample.yml
   - bower.json
   - gulfile.js
-
-  - features/**/*
+  - .github/**/*
+  - bin/**/*
+  - config/**/*
+  - gulp/**/*
   - script/**/*
-  - docs/**/*
-  - spec/**/*
-  - test/**/*
-  - vendor/**/*
+  - public/**/*
+  - source/assets/**/*
+  - plugins/**/*
 
 ratings:
   paths:

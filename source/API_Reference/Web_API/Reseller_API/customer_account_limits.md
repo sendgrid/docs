@@ -26,7 +26,7 @@ Retrieve account limits for a specific customer. If the API call response is emp
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retrieve %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=eexampexample@example.com&task=retrieve %}
   {% response json %}
 {
   "credit": "40000",

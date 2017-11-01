@@ -104,3 +104,10 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 1. Click **View Details**.
 <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
 1. Click **Export CSV**.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+- [A/B Testing Your Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)

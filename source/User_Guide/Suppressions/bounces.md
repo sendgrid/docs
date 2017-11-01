@@ -37,7 +37,9 @@ Removing Recipients From The List
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list. You can also use the Bounce Purge.
 
 {% anchor h2 %}
-Related
+Additional Resources
 {% endanchor %}
 
-[Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
+- [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
+- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
+- [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)

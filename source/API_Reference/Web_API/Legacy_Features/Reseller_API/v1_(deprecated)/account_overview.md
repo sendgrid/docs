@@ -44,7 +44,7 @@ View general account information regarding your customers, including billing cyc
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -95,7 +95,7 @@ View general account information regarding your customers, including billing cyc
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

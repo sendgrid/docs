@@ -23,7 +23,7 @@ What is List-Unsubscribe?
 
 {% codeblock lang:json %}
 {
-"List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>"
+"List-Unsubscribe": "<mailto:unsubscribeexampexample@example.com>, <http://www.unsubscribe.example.com/>"
 }
 {% endcodeblock %}
 
@@ -103,7 +103,7 @@ Using List-Unsubscribe with v3 Mail Send
     }
   ],
   "headers": {
-    "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com>"
+    "List-Unsubscribe": "<mailto:unsubscribeexampexample@example.com>, <http://www.unsubscribe.example.com>"
   }
 }
 {% endcodeblock %}
@@ -120,7 +120,7 @@ toname=Destination&
 subject=Example_Subject&
 text=testingtextbody&
 from=info@domain.com&
-"headers": {"List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com>"}
+"headers": {"List-Unsubscribe": "<mailto:unsubscribeexampexample@example.com>, <http://www.unsubscribe.example.com>"}
 {% endcodeblock %}
 
 {% anchor h3 %}
@@ -129,6 +129,6 @@ List-Unsubscribe with SMTP
 
 {% codeblock lang:json %}
 {
-  "List-Unsubscribe": "<mailto:unsubscribe@example.com>, <http://www.unsubscribe.example.com/>"
+  "List-Unsubscribe": "<mailto:unsubscribeexampexample@example.com>, <http://www.unsubscribe.example.com/>"
 }
 {% endcodeblock %}

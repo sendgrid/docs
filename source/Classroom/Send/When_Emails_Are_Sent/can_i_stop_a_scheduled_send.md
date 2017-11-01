@@ -123,7 +123,7 @@ Canceling a Marketing Campaign
 Using the User Interface
 {% endanchor %}
 
-If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns) by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Campaigns**. Next to the campaign you want to unschedule, click the action cog and select **Unschedule**.
+If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns) by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Campaigns**. Next to the campaign you want to unschedule, click the action menu and select **Unschedule**.
 
 ![]({{root_url}}/images/unschedule_campaign.gif)
 
