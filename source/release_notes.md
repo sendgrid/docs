@@ -30,6 +30,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 November 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Marketing Campaigns Contacts
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>The Contacts page in Marketing Campaigns has been updated to improve the user experience! The UI has been simplified to make adding contacts more streamlined and easy-to-use. For more information, see the <a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html">documentation</a>.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 11 October 2017
 {% endanchor %}
 
@@ -48,17 +63,6 @@ Custom field update
 {% anchor h2 %}
 2 October 2017
 {% endanchor %}
-
-{% anchor h3 %}
-Marketing Campaigns Contacts
-{% endanchor %}
-
-<table class="table" style="width: 100%;">
-  <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>The Contacts page in Marketing Campaigns has been updated to improve the user experience! The UI has been simplified to make adding contacts more streamlined and easy-to-use. For more information, see the <a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html">documentation</a>.</td>
-  </tr>
-</table>
 
 {% anchor h3 %}
 Substitution tag update
