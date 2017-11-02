@@ -33,3 +33,11 @@ Download Invalid Emails as CSV
 {% endanchor %}
 
 You can download your list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Recipient Subscription Preferences]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html)
+- [Spam Reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html)
+- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)

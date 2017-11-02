@@ -63,6 +63,9 @@ Web API Libraries
 {% endanchor %}
 
 -   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/). This library also includes a parser for Events and Inbounce Email webhooks.
+-   [MinimalSendGrid](https://github.com/TanukiSharp/MinimalSendGrid) *by Sebastien Robert* - Minimal implementation of the SendGrid HTTP v3 API to send emails, compatible with .NET Standard 1.0
+-   [SendGridSharp](https://github.com/shibayan/SendGridSharp) *by Tatsuro Shibamura* - SendGrid Client for C# (.NET 4.5) Simple interface, support to the new API, there is a feature that is not dependent on the System.Net.Mail.
+
 
 {% anchor h3 %}
 Universal
@@ -119,6 +122,7 @@ JavaScript / Node.js
 -   [sendgrid-mailer](https://github.com/adamreisnz) *by Adam Reis* - JavaScript wrapper for the the official Sendgrid library.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
+-   [loopback-sendgrid-connector](https://github.com/VMois/loopback-sendgrid-connector) *by Vladyslav Moisieienkov* - Simple Loopback connector for SendGrid Mail Service
 -   [sts-sendgrid](https://github.com/oritpersik) *by Orit Persik* - Easily use the SendGrid Web API via Node.js.
 
 {% anchor h3 %}

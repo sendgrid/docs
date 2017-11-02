@@ -265,7 +265,7 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 
 * The source files are in `/source`, and the generated files will be created in `/public`. They get overwritten or wiped out when the site is rebuilt.
 
-* To rebuild the site, [control][c] to cancel the build, and then [bundle exec rake preview] to restart it.
+* To rebuild the site, `ctrl-c` to cancel the build, and then [bundle exec rake preview] to restart it.
 
 <a name="using-docker"></a>
 ### Using Docker
@@ -278,17 +278,6 @@ $ docker run --rm -it -p 4000:4000 sendgrid/docs:latest
 ```
 
 Wait until you see `Server running... press ctrl-c to stop.` and browse to [http://localhost:4000](http://localhost:4000)
-
-<a name="config"></a>
-## Config
-
-The config is defined in `_config.yml`.
-
-The only config variables you should need to know about are <code>root</code>, which is the root from which all links are calculated, and the <code>folder_weights</code> hash, which specifies the order that the folders should be displayed in the nav tree. Higher weights mean higher display priority (higher in the tree). You can also specify icons for folders with the
-<code>folder_icons</code> hash.
-
-There's also a <code>version</code> number in the config.
-
 
 <a name="config"></a>
 ## Config

@@ -47,6 +47,15 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
   {% response xml %}
 <blocks>
    <block>
+      <email>emaieexampexample@example.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
+      <created>2009-06-10 12:40:30</created>
+   </block>
+   <block>
+      <email>emaileexampexample@example.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
       <email>example@example.com</email>
       <status>5.1.1</status>
       <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: example@example.com</reason>

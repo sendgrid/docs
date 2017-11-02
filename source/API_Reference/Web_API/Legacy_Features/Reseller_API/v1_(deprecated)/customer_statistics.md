@@ -71,7 +71,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -88,7 +88,7 @@ stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -147,7 +147,7 @@ Retrieve all-time totals for your customer
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&aggregate=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&aggregate=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -164,7 +164,7 @@ stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><open
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;aggregate=
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=eexampexample@example.com&amp;aggregate=
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -226,7 +226,7 @@ Retrieve a list of all the categories used in your customers account.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&list=tru
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&list=tru
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -243,7 +243,7 @@ categories><category>categoryA</category><category>categoryB</category><category
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;list=tru
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=eexampexample@example.com&amp;list=tru
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -322,7 +322,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category=category
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -334,7 +334,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=customer@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=stats&user=eexampexample@example.com&start_date=2009-06-20&end_date=2009-06-22&category[]=categoryA&category[]=category
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -351,7 +351,7 @@ stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342<
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=eexampexample@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -363,7 +363,7 @@ stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342<
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=customer@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=eexampexample@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
   {% endrequestdata %}
 
 {% endrequestblock %}

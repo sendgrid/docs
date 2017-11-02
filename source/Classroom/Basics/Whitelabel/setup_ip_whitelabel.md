@@ -73,7 +73,7 @@ Whenever you add a dedicated IP address to your account, you should make sure to
 Deleting an IP Whitelabel
 {% endanchor %}
 
-You can delete an IP whitelabel at any time. Simply navigating to your SendGrid dashboard, click **Settings** in the lefthand sidebar, and click **IPs** under **Whitelabels**. You will see a list of your IP whitelabels. Click the action cog next to the whitelabel you want to delete and click **Delete**.
+You can delete an IP whitelabel at any time. Simply navigating to your SendGrid dashboard, click **Settings** in the lefthand sidebar, and click **IPs** under **Whitelabels**. You will see a list of your IP whitelabels. Click the action menu next to the whitelabel you want to delete and click **Delete**.
 
 {% warning %}
 Deleting an IP whitelabel is permanent! You cannot recover a deleted IP whitelabel.

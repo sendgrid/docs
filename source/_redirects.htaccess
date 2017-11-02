@@ -542,6 +542,9 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 #
 #######
 
+Redirect 301 /User_Guide/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/about.html https://sendgrid.com/docs/index.html
+
 Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classroom/Send/api_keys.html
 Redirect 301 /User_Guide/Account/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
@@ -779,4 +782,24 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_S
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
 
+
+#######
+#
+# Compliance redirects
+#
+#######
+
+Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Glossary/opt_in_email.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/role_addresses.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html https://sendgrid.com/docs/Classroom/Basics/Account/how_do_i_reset_my_password.html
+

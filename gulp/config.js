@@ -20,8 +20,7 @@ module.exports = {
   },
   delete: {
     src: [developmentAssets]
-  },
-  jekyll: {
+  },  jekyll: {
     development: {
       src:    src,
       dest:   development,
@@ -52,12 +51,12 @@ module.exports = {
   autoprefixer: {
     browsers: [
       'last 2 versions',
-      'safari 5',
+      'safari 10.0.1',
       'ie 8',
       'ie 9',
       'opera 12.1',
-      'ios 6',
-      'android 4'
+      'ios 8',
+      'android 6'
     ],
     cascade: true
   },
@@ -89,7 +88,7 @@ module.exports = {
       src:  srcAssets + '/bower_components/highlightjs/styles/default.css',
       dest: productionAssets,
       options: {
-        keepSpecialComments: 0
+        keepSpecialComments: 1
       }
     }
   }

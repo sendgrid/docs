@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: http://sendgrid.biz/parse
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following code:
+ To test this scenario, we sent an email to example@example.com and created the following code:
 
 {% codeblock lang:javascript %}
 

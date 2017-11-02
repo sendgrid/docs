@@ -99,7 +99,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "jones@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -209,7 +209,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "jones@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -323,7 +323,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "jones@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -342,7 +342,7 @@ curl --request GET \
     },
     {
       "created_at": 1432313607,
-      "email": "jones2@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBhx",
       "last_clicked": null,
@@ -593,7 +593,7 @@ curl --request GET \
   "recipients": [
     {
       "created_at": 1422313607,
-      "email": "jones@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBh",
       "last_clicked": null,
@@ -612,7 +612,7 @@ curl --request GET \
     },
     {
       "created_at": 1432313607,
-      "email": "jones2@example.com",
+      "email": "example@example.com",
       "first_name": null,
       "id": "YUBhx",
       "last_clicked": null,

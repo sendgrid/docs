@@ -86,7 +86,7 @@ This API call will return the timezone currently set for your customer.
 {% endparameters %}
 
 
-{% apiexample get GET https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=customer@example.com %}
+{% apiexample get GET https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=get&user=eexampexample@example.com %}
   {% response json %}
 {
   "name": "Central Time, US & Canada",
@@ -123,7 +123,7 @@ This API call will allow you to set timezone for your customer
 {% endparameters %}
 
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=customer@example.com&timezone=America/Los_Angeles %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=timezone&task=set&user=eexampexample@example.com&timezone=America/Los_Angeles %}
   {% response json %}
 {
   "message": "success"

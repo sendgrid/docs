@@ -34,7 +34,7 @@ Create a Customer
 {% endparameters %}
 
 
-{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=true&company=company&whitelabel=sendgrid.me %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.add api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=neweexampexample@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=neweexampexample@example.com&country=US&phone=555-555&free_user=true&company=company&whitelabel=sendgrid.me %}
   {% response json %}
 {
   "message": "success"
@@ -60,7 +60,7 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.delete api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -186,7 +186,7 @@ Enable a customer so they may start sending out emails again. This call will not
 {% endparameters %}
 
 
-{% apiexample enable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com %}
+{% apiexample enable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -213,7 +213,7 @@ This prevents them from sending out emails with SendGrid.
 {% endparameters %}
 
 
-{% apiexample disable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com %}
+{% apiexample disable POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -240,7 +240,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 {% endparameters %}
 
 
-{% apiexample website POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com %}
+{% apiexample website POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -267,7 +267,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 {% endparameters %}
 
 
-{% apiexample unwebsite POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com %}
+{% apiexample unwebsite POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -304,7 +304,7 @@ Allows you to update your customers profile information
 {% endparameters %}
 
 
-{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=newLastName %}
+{% apiexample update POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=eexampexample@example.com&first_name=newFirstName&last_name=newLastName %}
   {% response json %}
 {
   "message": "success"
@@ -333,7 +333,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% endparameters %}
 
 
-{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPassword %}
+{% apiexample password POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=eexampexample@example.com&password=newPasword&confirm_password=newPassword %}
   {% response json %}
 {
   "message": "success"
@@ -362,7 +362,7 @@ Note that your customer account username is used to login to our SMTP server *an
 {% endparameters %}
 
 
-{% apiexample name POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com %}
+{% apiexample name POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=eexampexample@example.com&username=neweexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -391,7 +391,7 @@ This is the contact email we use for your customers. Changes take place immediat
 {% endparameters %}
 
 
-{% apiexample email POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com %}
+{% apiexample email POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=eexampexample@example.com&email=neweexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

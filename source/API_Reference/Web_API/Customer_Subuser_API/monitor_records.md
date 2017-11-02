@@ -122,7 +122,7 @@ List all available monitor records on your account.
     "frequency": "10000",
     "users": [
       "user1@example.com",
-      "user2@example.com"
+      "exampexample@example.comom"
     ]
   }
 ]
@@ -141,7 +141,7 @@ List all available monitor records on your account.
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>
-         <user>user2@example.com</user>
+         <user>exampexample@example.comom</user>
       </users>
    </monitor>
 </monitors>
