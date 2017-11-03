@@ -13,7 +13,7 @@ Add IP Addresses.
     
 {% parameters post %}   
   {% parameter count Yes Integer 'The amount of IPs to add to the account.' %}
-  {% parameter subuser No String 'Array of usernames to be assigned a send IP.' %
+  {% parameter subuser No String 'Array of usernames to be assigned a send IP.' %}
 {% endparameters %}   
     
 {% apiv3example post POST https://api.sendgrid.com/v3/ips %}
