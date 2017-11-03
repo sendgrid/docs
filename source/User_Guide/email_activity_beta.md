@@ -3,7 +3,7 @@ layout: page
 weight: 
 title: Email Activity Feed - Beta
 navigation:
-  show: true
+  show: false
 seo:
   title: Email Activity Feed Beta
   override: true
@@ -27,26 +27,25 @@ With the Email Activity feed you can:
 * Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
-(% info %)
+{% info %}
 SendGrid stores two days of Email Activity data for free. To increase your storage capability, see LINK
-(% endinfo %)
+{% endinfo %}
 
-(% anchor H2 %)
+{% anchor h2 %}
 Filtering email activity
-(% endanchor %)
+{% endanchor %}
 
 Events on the Activity feed are organized by email and can be filtered with our basic and advanced search capabilities. 
 
-
-(% anchor H3 %)
+{% anchor h2 %}
 Basic search
-(% endanchor %)
+{% endanchor %}
 
 By default, the Activity Feed allows you to search by email address and event dates. The email address field filters with approximate, or fuzzy search. The date field pulls filters events that fit within the precies date range specified. 
 
-(% anchor H3 %)
+{% anchor h3 %}
 Advanced Search
-(% endanchor %)
+{% endanchor %}
 
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
@@ -79,18 +78,18 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 {% endinfo %}
 
-(% anchor H2 %)
+{% anchor h2 %}
 Viewing Event History
-(% endanchor %)
+{% endanchor %}
 
 *To view event history:*
 
 1. Navigate to the event you wish to view and click on the entry. 
 1. When you have finished reviewing the data, click **close**. 
 
-(% anchor H2 %)
+{% anchor h2 %}
 Exporting a CSV
-(% endanchor %)
+{% endanchor %}
 
 *To export a CSV:*
 
