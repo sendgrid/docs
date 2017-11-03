@@ -803,3 +803,4 @@ Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_g
 
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html https://sendgrid.com/docs/Classroom/Basics/Account/how_do_i_reset_my_password.html
 
+Redirect 301 /User_Guide/EASE.html https://sendgrid.com/docs/User_Guide/email_activity_beta.html

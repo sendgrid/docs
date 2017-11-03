@@ -24,7 +24,7 @@ The following steps will show you how to remove all of your unusable Marketing C
 
 4. Return to your dashboard, navigate to the left hand menu and select **Marketing**, then **Contacts**.
 
-5. In the upper right corner click **Add List or Segment** and select **Upload CSV**.
+5. In the upper right corner click **Add Contacts** and select **Upload CSV**.
 
 6. You will be presented with a dialogue box. Select the option to **Create New List** and name it something obvious, like "Remove Invalid Emails."
 
