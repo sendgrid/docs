@@ -19,9 +19,14 @@ navigation:
 If you are a Heroku user using [the SendGrid add-on](https://addons.heroku.com/sendgrid), and would like to access the SendGrid web interface, or would just like to know your SendGrid account credentials; you can find them by doing the following from the Heroku interface:
 
 1. In Heroku, go to your Apps, choose your SendGrid app
-    ;i![]({{root_url}}/images/HerokuPW1.png "Heroku SendGrid App Screenshot"
+
+ ![]({{root_url}}/images/HerokuPW1.png "Heroku SendGrid App Screenshot")
+
+
 1. Click on "Settings" and then click “Reveal Config Vars”
-    ;i![]({{root_url}}/images/HerokuPW2.png "Heroku Config Vars Screenshot"
+
+ ![]({{root_url}}/images/HerokuPW2.png "Heroku Config Vars Screenshot")
+
 
 {% info %}
 Editing your username or password here will not have an effect on your SendGrid account credentials.
@@ -35,9 +40,9 @@ Go to the [SendGrid Password Reset page](https://sendgrid.com/user/forgotPasswor
 Resetting your password will not update the Config Vars of your SendGrid add-on in the Heroku portal. To update this please follow the directions above to pull up your add-on Settings/Config Vars. Then click the “edit” button to manually input your new password:
 {% endinfo %}
 
-;i![]({{root_url}}/images/HerokuPW3.png "Heroku Config Vars Edit Screenshot"
+ ![]({{root_url}}/images/HerokuPW3.png "Heroku Config Vars Edit Screenshot")
 
-;i![]({{root_url}}/images/HerokuPW4.png "Heroku Config Vars Password Edit Screenshot"
+ ![]({{root_url}}/images/HerokuPW4.png "Heroku Config Vars Password Edit Screenshot”)
 
 {% warning %}
 Resetting your SendGrid password may break any integrations you have that are currently using the existing credentials for authentication.
