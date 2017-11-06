@@ -23,12 +23,15 @@ Before sending your first campaign, you need to do the following:
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
 
-1. Click **Create Campaign**.To create a campaign from an existing one, find the version you want to use and click the **action menu** to the far right of the campaign and then select **Edit** or **Duplicate**.
+1. Click **Create Campaign**. 
+<br> To create a campaign from an existing one, find the version you want to use and click the **action menu** to the far right of the campaign and then select **Edit** or **Duplicate**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
-1. Select the template that you want to use for your campaign. You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+1. Select the template that you want to use for your campaign. 
+<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
-1. Select an editor. You can choose between the **Design Editor** and the **Code Editor**.
+1. Select an editor. 
+<br> You can choose between the **Design Editor** and the **Code Editor**.
 ![]({{root_url}}/images/choose_editor.png)
 
 The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from the HTML generating WYSIWYG tools. 
@@ -43,7 +46,8 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab. 
 
-1. Add your custom content. For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) or [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html). 
+1. Add your custom content. 
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) or [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html). 
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
