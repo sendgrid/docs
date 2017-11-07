@@ -11,12 +11,19 @@ navigation:
   show: true
 ---
 
-_Please note that in order to maintain seamless email flow, it is important to also update any custom code, web pages or servers that use this account with your new passwords. If you are uncertain about these additional steps, consult the email administrator who created the account._
+
+_Please note that in order to maintain seamless email flow, it is important to also update any custom code, web pages or servers that use this account with your new passwords. If you are uncertain about these additional steps, consult the email administrator who created the account.
+
+You should also make sure you are logged out of SendGrid.com before making any changes to your password via the Azure portal.
 
 **Step 1** - Log into your Azure subscription at portal.azure.com and find your SendGrid deployment:
 
-![]({{root_url}}/images/azureloginpageupdated.png)
+![]({{root_url}}/images/AzurePW1.png “Azure Portal Screenshot")
 
 **Step 2** - Select ‘Change Password’, enter and re-confirm your new password. Remember to save your new password in order for it to take effect. Your new password must be a minimum of 8 alpha-numeric characters.
 
-![]({{root_url}}/images/azurepwdchangeupdated.png)
+![]({{root_url}}/images/AzurePW2.png “Azure Change Password Screenshot")
+
+**Step 3**- If you do not know your current password then click “Reset Password” instead. 
+
+![]({{root_url}}/images/AzurePW3.png “Azure Reset Password Screenshot")
