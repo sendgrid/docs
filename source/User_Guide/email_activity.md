@@ -18,9 +18,14 @@ The Email Activity page allows you to view a snapshot of the email related activ
 Email activity only shows the most recent 500 events. To access data in real time, we recommend that you consider implementing our Event Webhook.
 {% endinfo %}
 
+* [Email-Events](#-Email-Events)
+* [Filtering The Activity Feed](#-Filtering-The-Activity-Feed)
+* [Searching Within Your Email Activity](#-Searching-Within-Your-Email-Activity)
+* [Subuser Email Activity](#-Subuser-Email-Activity)
+
 {% anchor h2 %}
 Email Events
-{% endanchor %}
+{% endanchor h2 %}
 
 You will be able to see data about the following types of email events in the Email Activity Feed:
 
@@ -53,13 +58,13 @@ email previously bounced, or that recipient has marked your email as spam. For m
 
 {% anchor h2 %}
 Filtering The Activity Feed
-{% endanchor %}
+{% endanchor h2 %}
 
 **By Event** - If you’re looking into a single type of event, simply click the checkbox next to “All Filters” and then select the individual event types that you are looking for. The activity feed will refresh with only the event types you selected.
 
 {% anchor h2 %}
 Searching Within Your Email Activity
-{% endanchor %}
+{% endanchor h2 %}
 
 If you need to search for a specific recipient, enter the recipient’s entire email address into the search field and press enter.
 
@@ -68,8 +73,16 @@ You can also search by the mailbox name, the part before the @ symbol, or by the
 
 {% anchor h2 %}
 Subuser Email Activity
-{% endanchor %}
+{% endanchor h2 %}
 
 To see a subuser’s email activity, you will need to either log in as that subuser or impersonate the subuser account.
 
 When looking at a subuser’s email activity, you will not see the subuser parent’s email activity.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Email Activity for Mobile ]({{root_url}}/User_Guide/SendGrid_for_Mobile/email_activity.html)
+- [Dashboard]({{root_url}}/User_Guide/dashboard.html)
+- [Option to "Delete From Bounce List" in Email Activity]({{root_url}}/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html)

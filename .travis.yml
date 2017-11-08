@@ -28,6 +28,8 @@ script:
 - bundle exec jekyll build
 - bundle exec rake linklint
 - bundle exec rake validate_json_xml
+after_script:
+- travis_retry npm run test
 after_success:
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec cap deploy; fi"
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec rake invalidate_cloudfront;

@@ -16,6 +16,13 @@ Marketing Campaigns templates determine how the content of your campaign will be
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
+- [Creating a New Template](#-Creating-a-New-Template)
+- [Editing an Existing Template](#-Editing-an-Existing-Template)
+- [Duplicating a SendGrid Template](#-Duplicating-a-SendGrid-Template)
+- [Duplicating a Custom Template](#-Duplicating-a-Custom-Template)
+- [Creating a Template from a Campaign](#-Creating-a-Template-from-a-Campaign)
+- [Additional Resources](#-Additional-Resources)
+
 {% anchor h3 %}
 Creating a New Template
 {% endanchor h3 %}
@@ -57,7 +64,7 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
 1. From the left-hand navigation, select **Campaigns**  
 1. Click **Templates**. 
-1. Locate the template you want to duplicate and then click the action cog.
+1. Locate the template you want to duplicate and then click the action menu.
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
 {% anchor h3 %}

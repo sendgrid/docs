@@ -21,3 +21,5 @@ pdf
 public
 linklint_logs
 source/.asset_pipeline
+npm-debug.log
+package-lock.json

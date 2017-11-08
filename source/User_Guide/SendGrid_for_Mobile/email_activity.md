@@ -32,6 +32,12 @@ Tapping on any event will reveal more information, such as server responses or u
 
 Finally, you can export your email activity by selecting the “More” button in the top right corner and selecting “Export.” This will create a CSV that you can open in another app on your device.
 
+<h2>Additional Resources</h2>
+
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Email Service Provider]({{site.site_url}}/docs/Glossary/email_service_provider.html)
+- [Bulk Email Service]({{site.site_url}}/docs/Glossary/bulk_email_service.html)
+
 <p class="small">
   <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.
 </p>

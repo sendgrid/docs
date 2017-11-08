@@ -17,13 +17,13 @@ This is only a small handful of example codes that can get sent back. Every rece
 
 ## **250**  
 
-The best mail server response code you can get. When you see this, everything has gone according to plan! This response is what results in a 'Delivered' event within your Sendgrid stats, and indicates that the recipient server has accepted the message.
+The best mail server response code you can get. When you see this, everything has gone according to plan! This response is what results in a 'Delivered' event within your SendGrid stats, and indicates that the recipient server has accepted the message.
 
 ### Examples:
 
 - 250 2.0.0 OK 1376056636 i3si9508927obz.16 - gsmtp
 - 250 ok dirdel
-- 250 &lt;4798911130a2069f3483fda756b8e81c@www.example.com&gt; Queued mail for delivery
+- 250 &lt;example@example.com&gt; Queued mail for delivery
 
 **_ What to do with this response_** _:_ Nothing, all is well with the cosmos. If you want, you could always print it out and frame it. Do keep in mind that messages that contain things like "Queued mail for delivery" is still indicative of a successful handoff to the recipient server, but there may still be internal queueing on the far end .
 <br></br>
@@ -139,7 +139,7 @@ The message failed. This response is a ‘default’ of sorts, but can be attrib
 
 ## **Other**
 
-Sendgrid will also display a code when the recipient server has responded with a literally blank reason code. Rather than leave you to ponder what a blank field might mean, the below message is displayed instead, letting you know that the far end was not able to respond intelligently to our request.
+SendGrid will also display a code when the recipient server has responded with a literally blank reason code. Rather than leave you to ponder what a blank field might mean, the below message is displayed instead, letting you know that the far end was not able to respond intelligently to our request.
 
 Delayed Bounce - Unable to Parse Server Reason
 

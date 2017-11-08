@@ -56,7 +56,7 @@ For example, if you wanted to schedule an email to be sent at a certain time usi
 {% codeblock %}
 api_user=YOUR_USER_NAME&
 api_key=YOUR_PASSWORD&
-to=john.doe@example.com&
+to=john.doeexampexample@example.com&
 toname=John&
 subject=Hello, World!&
 text=Hello, World!&
@@ -70,7 +70,7 @@ However, the equivalent API call for the the v3 mail send endpoint would look li
 {
 	"personalizations": [{
 		"to": [{
-			"email": "john.doe@example.com"
+			"email": "john.doeexampexample@example.com"
 		}],
 		"subject": "Hello, World!",
 		"send_at": 1459728000

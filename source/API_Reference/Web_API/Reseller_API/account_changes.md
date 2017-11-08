@@ -26,7 +26,7 @@ Upgrading a user generates an invoice. If the user is upgrading from a free to a
 These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
 {% endinfo %}
 
-{% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+{% apiexample upgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "error",
@@ -61,7 +61,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 {% endparameters %}
 
 
-{% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Group %}
+{% apiexample downgrade POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"
@@ -91,7 +91,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
 {% endparameters %}
 
 
-{% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Group %}
+{% apiexample close POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=eexampexample@example.com&ip_group[]=Reseller Group %}
   {% response json %}
 {
   "message": "success"

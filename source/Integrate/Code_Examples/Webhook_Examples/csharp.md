@@ -87,7 +87,7 @@ public class Email
 }
 {% endcodeblock %}
 
- To test this, we send an email to alex@email.sendgrid.biz, and put the following method in our ApiController. Note: Don't forget the attribute.
+ To test this, we send an email to example@example.com, and put the following method in our ApiController. Note: Don't forget the attribute.
 
 {% codeblock lang:csharp %}
 // POST api/inbound

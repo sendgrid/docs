@@ -187,8 +187,6 @@ Delete a Specific Contact
 1. Click **Remove From List**.
    This option removes the contact from the list. To remove the contact completely, select **delete**.
 
-**Data Formatting**
-
 {% anchor h3 %}
 Delete All Contacts
 {% endanchor %}

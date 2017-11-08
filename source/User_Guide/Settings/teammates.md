@@ -74,7 +74,7 @@ Only administrator teammates may impersonate subusers!
 
 To invite a teammate to your account, navigate to **Settings**, and click on **Teammates** in the sidebar.
 
-This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action cog under **Actions** you can either delete the teammate, or edit that teammate.
+This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action menu under **Actions** you can either delete the teammate, or edit that teammate.
 
 If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. Under this list you will see the email address the invite was sent to along with the invitation expiration date.
 
@@ -114,7 +114,7 @@ Only administrator teammates may impersonate subusers!
 
 Once you select a teammate type and have entered a valid email address, you may either click **Create** to send the teammate invitation, or you can further customize the permissions levels for your teammate.
 
-After you have sent the teammate invitation, you will see a new entry underneath **Pending Invites** on the Teammates page under **Settings**. Teammate invitations expire after 7 days. You can delete an invitation, or resend the invitation, by clicking the action cog under Actions.
+After you have sent the teammate invitation, you will see a new entry underneath **Pending Invites** on the Teammates page under **Settings**. Teammate invitations expire after 7 days. You can delete an invitation, or resend the invitation, by clicking the action menu under Actions.
 
 {% anchor h3 %}
 Accepting a Teammate Invitation
@@ -170,11 +170,11 @@ A notification email will be sent to the teammate when they are either granted o
 Managing Teammates
 {% endanchor %}
 
-To modify an existing teammate's permissions, navigate to the **Teammates Page** under **Settings**. Under the list of current teammates, click the action cog next to the teammate you would like to edit.
+To modify an existing teammate's permissions, navigate to the **Teammates Page** under **Settings**. Under the list of current teammates, click the action menu next to the teammate you would like to edit.
 
 Click **Edit** to open a modal window presenting the teammate's current permissions. Make your desired changes and click **Update**.
 
-To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action cog next to the teammate you want to delete and click **Delete**.
+To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action menu next to the teammate you want to delete and click **Delete**.
 
 ![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 

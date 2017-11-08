@@ -51,9 +51,9 @@ Below is a walkthrough of a basic telnet authentication. **Every line starting w
 #Sending a message using Telnet:
 Below is a walkthrough of how to send a message via telnet. **Every line starting with ">" indicates that the text following it is a command you will need to type in followed by pressing the ENTER key afterwards.** 
 
-    >mail from: fromaddress@domain.com <enter>
+    >mail from: fromexample@example.com <enter>
     250 Sender address accepted
-    >rcpt to: toaddress@domain.com <enter>
+    >rcpt to: toexample@example.com <enter>
     250 Recipient address accepted
     >data <enter>
     354 Continue

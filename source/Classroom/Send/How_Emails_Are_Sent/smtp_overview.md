@@ -126,8 +126,8 @@ To define the value that will replace the `-name-` tag, define the following in 
 {% codeblock lang:json %}
 {
   "to": [
-    "john.doe@example.com",
-    "jane.doe@hotmail.com"
+    "john.doeexampexample@example.com",
+    "example@example.com"
   ],
   "sub": {
     "-name-": [

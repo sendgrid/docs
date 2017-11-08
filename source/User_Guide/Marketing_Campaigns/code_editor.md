@@ -15,6 +15,7 @@ Use the Code Editor to create a template, edit a SendGrid template, or build a c
 * [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
 * [Uploading Images](#-Uploading-Images)
 * [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Adding Categories](#-Adding-Categories)
 * [Previewing Your Campaign](#-Previewing-Your-Campaign)
 
 
@@ -24,19 +25,19 @@ Getting Started with the Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
 
-1. Click **Create Campaign**. To create a campaign from an existing one, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**.
+1. Click **Create Campaign**.
+   <br>To create a campaign from one that has not yet been sent, find the version you want to use and click the **action menu** next to the campaign and then select **Edit** or **Duplicate**. To create a campaign from one that has already been sent, **Duplicate** will be the only option.
 
-   ![]({{root_url}}/images/duplicate_campaign.png)
+   ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
-1. Select the template that you want to use for your campaign. You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+1. Select the template that you want to use for your campaign.
+   <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
 
 1. Select **Code Editor**, and then click **Continue**.
+   <br>If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor. The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 
-    If you have already built the HTML that you want to use in another application, copy and paste that code directly into the     content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.      The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
-
-1. Preview your campaign or template by clicking **Preview**.
-
-You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+1. The Code Editor features a **Live Preview** in the content area. The preview will show changes to the HTML as they are made in real time. The default preview mode is in desktop format.
+   <br>You can toggle between a preview of how your campaign or template will appear on a recipient's desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 {% warning %}
 Once you create a new campaign or template in the Code Editor, you cannot switch to the Design Editor.
@@ -46,11 +47,11 @@ Once you create a new campaign or template in the Code Editor, you cannot switch
 Uploading Images
 {% endanchor h2 %}
 
-1. Select the **Images** tab, and click **Manage Image Library**. A window opens where you can upload images to your image library. 
+1. Select the **Images** icon above the HTML code. A window opens where you can upload images to your image library. 
 
-1. Select the image you want from your image library. The Image Details tab appears. 
+1. Select the image you want from your image library. 
 
-1. Copy the URL in the **Image Source URL** tab by clicking **Copy URL**. 
+1. Select the **Image Details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**. 
 
 1. Paste this URL in the image source tag in your campaign or template's HTML. For example: `<img src="your image URL here">`
 
@@ -62,9 +63,11 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 **To add a substitution tag to your campaign:**
 
-1. Navigate to the **Tags** tab. 
+1. Click the **Settings** tab on the left side of the editor.
 
-1. Locate the tag you want to add to your campaign and click the **copy** icon.
+1. Click the **Tags** tab at the top of the Settings window. 
+
+1. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
 
 1. Paste the tag into the module.
 
@@ -133,17 +136,22 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 `[%first_name | Valued Customer%]`
 
 {% anchor h2 %}
-Previewing Your Campaign
+Adding Categories
 {% endanchor h2 %}
 
-To preview your campaign or template, click the **Preview** button in the upper-left corner.
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: "Weekly Digest," "Product Announcements."
 
-You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area.
+1. Click the *Settings* panel located on the left-hand side of the window to expand it.
 
-To view a plain text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu. 
 
+1. Locate the *Categories* field under *Campaign Settings*.
 
-When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
+1. Select the *Add Categories* field and then type in the tag to add and hit enter. 
+
+{% info %}
+Currently, only 10 categories can be added to each campaign.
+{% endinfo %}
 
 {% anchor h3 %}
 Additional Resources

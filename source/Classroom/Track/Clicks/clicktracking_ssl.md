@@ -23,7 +23,7 @@ In order for click and open tracking to work over SSL, SendGrid needs to present
 To work around this restriction, you may use a CDN service, such as 
 [CloudFlare]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-CloudFlare), 
 [Fastly]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-Fastly), or 
-[KeyCDN]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-KeyCDN) to manage certificates and keys for your domain. These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
+[KeyCDN]({{root_url}}/Classroom/Build/Add_Content/content_delivery_networks.html#-Using-KeyCDN) to manage certificates and keys for your domain. You can also setup [custom SSL configuration]({{root_url}}/Classroom/Build/Add_Content/custom_ssl_configurations.html). These services can then forward traffic onwards to SendGrid so that click and open tracking can be performed.
 
 Once you have followed the configuration guide for either of these
 services, please contact support and they will enable SSL click and
