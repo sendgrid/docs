@@ -44,7 +44,7 @@ Resetting your password will not update the Config Vars of your SendGrid add-on 
 
 ![]({{root_url}}/images/HerokuPW3.png "Heroku Config Vars Edit Screenshot")
 
-![]({{root_url}}/images/HerokuPW4.png "Heroku Config Vars Password Edit Screenshot”)
+![]({{root_url}}/images/HerokuPW4.png)
 
 {% warning %}
 Resetting your SendGrid password may break any integrations you have that are currently using the existing credentials for authentication.
