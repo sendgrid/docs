@@ -61,7 +61,7 @@ Scheduling Your Campaign
 {% endanchor h3 %}
 
 *To schedule your campaign:*
-1. To send your campaign at a later time or date, toggle the **Send Immediately** button to **Off**, 
+1. To send your campaign at a later time or date, toggle the **Send Immediately** button to **Off**. 
 1. Enter the date and time you want the campaign to be sent.
 1. Click **Schedule Campaign**. 
 
