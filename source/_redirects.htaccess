@@ -813,3 +813,4 @@ Redirect 301 /User_Guide/EASE.html https://sendgrid.com/docs/User_Guide/email_ac
 #######
 
 Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs//User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /User_Guide/Marketing_Campaigns/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
