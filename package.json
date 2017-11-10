@@ -45,10 +45,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall" : "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\"",
-    "test": "npm run spellcheck || :",
-    "spellcheck": "echo \"Spellchecking...\" && mdspell '**/*.html' '**/*.md' '!**/node_modules/**/*' '!**/public/**/*' '!**/linklint_logs/**/*' -a --en-us -r || :",
-    "spellcheck-file": "mdspell -a --en-us -r"
+    "postinstall" : "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
   },
   "repository": {
     "type": "git",
