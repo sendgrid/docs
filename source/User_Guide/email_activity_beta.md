@@ -69,7 +69,7 @@ In addition to viewing the email activity associated with your account by recipi
 1. In the field on the far left, select the criteria you wish to filter your event data by. 
 1. Once you have selected all the desired criteria associated with your search, click **Search**. 
   
-*Note*:To add additional search criteria, click **Add a Filter**. 
+To add additional search criteria, click **Add a Filter**. 
 
 {% info %}
 To further narrow your search results, select one of the following options:
