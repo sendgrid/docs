@@ -94,5 +94,5 @@ Exporting a CSV
 *To export a CSV:*
 
 1. In the top right corner of the Activity feed, click **Export CSV**. 
-   An email will be sent to the email address associated with your SendGrid account *or* the address associated with your Marketing Campaigns feature found under **Notifications**.
+   An email is sent to the email address associated with your SendGrid account *or* the address associated with your Marketing Campaigns feature found under **Notifications**.
 1. Open the email and then click **Download**.
