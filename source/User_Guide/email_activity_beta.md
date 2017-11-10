@@ -21,11 +21,11 @@ The Email Activity feed allows you to view a snapshot of email-related activity 
 
 With the Email Activity feed you can:
 
-* Troubleshoot email delivery issues faster with comprehensive and sequential event data by email.
+* Troubleshoot email delivery issues faster with comprehensive and sequential event data.
 * Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
 * Customize your data independently with CSV download/export option.
 * Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
-* Call all events by an email from the API with additional storage purchase.
+* Complete an API call to gather specific email events when additional storage is purchased.
 
 {% info %}
 SendGrid stores two days of Email Activity data for free. To increase your storage capability, see LINK
@@ -35,19 +35,19 @@ SendGrid stores two days of Email Activity data for free. To increase your stora
 Filtering email activity
 {% endanchor %}
 
-Events on the Activity feed are organized by email and can be filtered with our basic and advanced search capabilities. 
+Events on the Activity feed are organized by recipient email address and can be filtered with our basic and advanced search capabilities. 
 
-{% anchor h2 %}
+{% anchor h3 %}
 Basic search
 {% endanchor %}
 
-By default, the Activity Feed allows you to search by email address and event dates. The email address field filters with approximate, or fuzzy search. The date field pulls filters events that fit within the precies date range specified. 
+By default, the Activity Feed allows you to search by recipient email address and event timeframe. The To email address field will filter results including approximate data, or fuzzy search. The date field will filter results that fit the precise date range specified.
 
 {% anchor h3 %}
 Advanced Search
 {% endanchor %}
 
-In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
+In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, the following filters are also available:
 
 * Campaign ID
 * Campaign Name
@@ -65,17 +65,17 @@ In addition to viewing the email activity associated with your account by recipi
 
 *To use advanced search:*
 
-1. At the top of the Activity Feed page, click **Advanced** search. 
+1. At the top of the Activity Feed page, click **Advanced** search, in the upper right of the search window.
 1. In the field on the far left, select the criteria you wish to filter your event data by. 
-1. Once you have filled in all of the fields associated with that filter, click **Search**. 
-   To add additional search criteria, click **Add a Filter**. 
+1. Once you have selected all the desired criteria associated with your search, click **Search**. 
+  
+*Note*:To add additional search criteria, click **Add a Filter**. 
 
 {% info %}
 To further narrow your search results, select one of the following options:
 
-* Search emails by **any** of the following - This search will return more results and will pull in all events that meet *one or more* of the criteria specified by the selected filters. 
-or
-* Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
+* Search emails by **any** of the following - This search is an expansive. It will return more results and will pull in all events that meet *one or more* of the criteria specified by the selected filters.
+* Search emails by **all** of the following - This search is limiting. It will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 {% endinfo %}
 
 {% anchor h2 %}
@@ -85,7 +85,7 @@ Viewing Event History
 *To view event history:*
 
 1. Navigate to the event you wish to view and click on the entry. 
-1. When you have finished reviewing the data, click **close**. 
+1. When you have finished reviewing the event data, click **close**. 
 
 {% anchor h2 %}
 Exporting a CSV
@@ -93,6 +93,6 @@ Exporting a CSV
 
 *To export a CSV:*
 
-1. In the top right corner of the activity feed, click **Export CSV**. 
-   An email is sent to the email address associated with your SendGrid account. 
-1. Open the email and then click **Download**. 
+1. In the top right corner of the Activity feed, click **Export CSV**. 
+   An email will be sent to the email address associated with your SendGrid account *or* the address associated with your Marketing Campaigns feature found under **Notifications**.
+1. Open the email and then click **Download**.
