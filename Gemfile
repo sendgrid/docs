@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gem 'rake', '>=10.4.2'
 gem 'rack'
 gem 'htmlentities'
-gem 'jekyll', '2.0.3'
+gem 'jekyll', '2.2.0'
 gem 'jekyll-watch', '1.2.1'
 gem 'rubypants'
 gem 'rdiscount'
