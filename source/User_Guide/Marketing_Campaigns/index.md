@@ -13,7 +13,6 @@ seo:
   With <a href="{{site.marketing_campaigns_url}}">SendGrid Marketing Campaigns</a>, you will be able to add contacts,
   create segments, create and send campaigns, view your stats, and so much more. 
 
-  <br></br>
   <iframe src="https://player.vimeo.com/video/185514373" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
   {% anchor h2 %}
@@ -46,8 +45,8 @@ Sender identities
 {% endanchor %}
 
 <p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/senders.html">Sender Identities</a></strong> -
-Add your sender identity in the <a href="{{site.marketing_campaigns_url}}/senders">sender management section</a>.
-This is the *from name*, *from email address*, *reply-to email address*, and *physical address* that are sent with your campaigns. 
+Add your sender identity in the <a href="https://sendgrid.com/marketing_campaigns/ui/senders">sender management section</a>.
+The sender identity contains the  <em>from name</em>, <em>from email address</em>, <em>reply-to email address</em>, and <em>physical address</em> associated with your Marketing Campaign. 
 </p>
 <p><iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 
@@ -55,8 +54,7 @@ This is the *from name*, *from email address*, *reply-to email address*, and *ph
 Custom Fields
 {% endanchor %}
 
-<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a></strong> - Set up your <a href="{{site.marketing_campaigns_url}}/custom_fields">custom fields</a> so that you can upload
-contact-specific data. This allows us to automatically generate substitution tags for your emails and unlocks the ability to segment your contacts as well.
+<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a></strong> - Set up your <a href="{{site.marketing_campaigns_url}}/custom_fields">custom fields</a> so that you can upload contact-specific data, automatically generate substitution tags for your emails, and segment your contacts.l.
 </p>
 <p><iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 
@@ -144,7 +142,7 @@ Marketing Campaigns FAQ
 <p>If you have more questions, please check out our <a href="https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns">Marketing Campaigns FAQ</a>.</p>
 
 
-{% anchor h2 %}
+{% anchor h3 %}
 Marketing Campaigns APIs
 {% endanchor %}
 
