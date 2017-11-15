@@ -5,11 +5,10 @@ We strive to make our documentation concise, clear, organized, and scannable.
 * Use conversational language and industry-standard terms when possible.
 * Contractions are OK and preferred.
 * Use bulleted lists and numbered steps where applicable. 
-* 
 
 * [Terminology](#-Terminology)
 * [Punctuation](#-Punctuation)
-* [Capitalization(#-Capitalization)
+* [Capitalization](#-Capitalization)
 * [Warning and info blocks](#-Warning-and-info-blocks)
 * [Screenshots](#-Screenshots)
     * [Needs a screenshot](#-Needs-a-screenshot)
@@ -28,7 +27,7 @@ Terminology
 * Statistics, not “stats”
 * Email NOT e-mail
 * Deactivate, not inactivate 
-* Recipients - The people that receive email from SendGrid Customers. Not “users” or “customers”.
+* Recipients = The people that receive email from SendGrid Customers. Not “users” or “customers”.
 * “Log in” = verb
 * “login” = noun
 * “sign up” = verb
@@ -68,7 +67,7 @@ Your note
 {% endinfo %}```
 
 {% anchor h2 %}
-Screenshots:
+Screenshots
 {% endanchor %}
 
 Not every single page or step needs an accompanying screenshot. When in doubt, follow the guidelines below. 
