@@ -10,7 +10,7 @@ seo:
   description:
 ---
 
-The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow to help expedite the troubleshooting process.  
+The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Our latest enhancements to Email Activity give you increased visibility into the email delivery flow to help expedite the troubleshooting process.
 
 
 * [Filtering email activity](#-Filtering-email-activity)
@@ -22,7 +22,7 @@ The Email Activity feed allows you to view a snapshot of email-related activity 
 With the Email Activity feed you can:
 
 * Troubleshoot email delivery issues faster with comprehensive and sequential event data.
-* Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
+* Pinpoint specific emails easily with advanced search and filter options -- including subject line and email metadata.
 * Customize your data independently with CSV download/export option.
 * Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
 * Complete an API call to gather specific email events when additional storage is purchased.
@@ -41,7 +41,7 @@ Events on the Activity feed are organized by recipient email address and can be 
 Basic search
 {% endanchor %}
 
-By default, the Activity Feed allows you to search by recipient email address and event timeframe. The To email address field will filter results including approximate data, or fuzzy search. The date field will filter results that fit the precise date range specified.
+By default, the Activity feed allows you to search by recipient email address and event timeframe. The To email address field will filter results including approximate data, or fuzzy search. The date field will filter results that fit the precise date range specified.
 
 {% anchor h3 %}
 Advanced Search
