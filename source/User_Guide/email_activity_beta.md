@@ -10,7 +10,7 @@ seo:
   description:
 ---
 
-The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Our latest enhancementss to Email Activity give you increased visibility into the email delivery flow to help expedite the troubleshooting process.
+The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Our latest enhancements to Email Activity give you increased visibility into the email delivery flow to help expedite the troubleshooting process.
 
 
 * [Filtering email activity](#-Filtering-email-activity)
