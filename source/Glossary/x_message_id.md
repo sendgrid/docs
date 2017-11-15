@@ -21,4 +21,4 @@ When using the Event Webhook, it's best practice to store your X-Message-ID. X-M
 SendGrid recommends that users store this data to correlate to their Event Webhook data, and this data is very useful for Support troubleshooting.
 
 Related Articles
-- [Message-ID]({{root_url}}/Glossary/message_id.md)
+- [Message-ID]({{root_url}}/Glossary/message_id.html)
