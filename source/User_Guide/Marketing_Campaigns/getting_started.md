@@ -1,15 +1,17 @@
 ---
 layout: page
 weight: 99
-title: Sending a Campaign
+title: How to Send Email
 navigation:
   show: true
 seo:
-  title: Sending a Campaign
+  title: How to Send Email
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
 
 Before sending your first campaign, you need to do the following:
 
@@ -59,14 +61,24 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. To send your campaign, click **Send Campaign**. 
 
-{% info %}
-To schedule your campaign to send at a later time or date, toggle the **Send Immediately** button to **Off**, and enter the date and time you want the campaign to be sent.
-{% endinfo %}
+{% anchor h3 %}
+Scheduling Your Campaign
+{% endanchor h3 %}
 
-Be sure your account is set to the correct timezone, in order to ensure that your emails get sent when you want them to.
+*To schedule your campaign:*
+1. To send your campaign at a later time or date, toggle the **Send Immediately** button to **Off**. 
+1. Enter the date and time you want the campaign to be sent.
+1. Click **Schedule Campaign**. 
 
-From the left-hand navigation select **Settings**, and then click **Account Details** or go to:
-https://app.sendgrid.com/settings/account, at the bottom of the page, find **TIME ZONE** and ensure your desired timezone is correct. 
+{% warning %}
+Be sure your account is set to the correct time zone in order to ensure that your emails get sent when you want them to.
+{% endwarning %}
+
+*To change your time zone:* 
+
+1. From the left-hand navigation select **Settings**. 
+1. Click **Account Details** or go to https://app.sendgrid.com/settings/account.  
+1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired timezone is correct. 
 
 {% anchor h3 %}
 Additional Resources
@@ -74,3 +86,5 @@ Additional Resources
 
 - [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html) 
 - [Billing](https://sendgrid.com/docs/Classroom/Basics/index.html#Billing)
+- [Sending with the API]({{root_url}}/API_Reference/api_v3.html)
+- [Sending with SMTP]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
