@@ -58,6 +58,7 @@ Your warning
 Your note
 {% endinfo %}```
 
+
 <a name="screenshots"></a>
 ## Screenshots
 
@@ -71,7 +72,6 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 * Pop-up (modal) windows.
 
 ### Does NOT need a screenshot:
-
 
 * Install and uninstall wizards (unless there is something really unusual about a lot of the settings).
 * Login pages.
