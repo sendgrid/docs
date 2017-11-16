@@ -50,13 +50,16 @@ We strive to make our documentation concise, clear, organized, and scannable.
 
 These are great for quick information that you want to highlight to a user. Especially for “gotchas” or “neat tricks”. Please use the tags below to show these in your content.
 
-```{% warning %}
+```
+{% warning %}
 Your warning
-{% endwarning %}```
+{% endwarning %}
 
-```{% info %}
+{% info %}
 Your note
-{% endinfo %}```
+{% endinfo %}
+
+```
 
 
 <a name="screenshots"></a>
