@@ -1,10 +1,10 @@
 Hello! Thank you for choosing to help contribute to the SendGrid documentation site! There are many ways you can contribute and help is always welcome.  When writing documentation, we ask you to consider the following style guidelines. 
 
-[Terminology](#terminology)
-[Punctuation](#punctuation)
-[Capitalization](#capitalization)
-[Warning and info blocks](#warning blocks)
-[Screenshots](#screenshots)
+* [Terminology](#terminology)
+* [Punctuation](#punctuation)
+* [Capitalization](#capitalization)
+* [Warning and info blocks](#warning-and-info-blocks)
+* [Screenshots](#screenshots)
 
 
 We strive to make our documentation concise, clear, organized, and scannable. 
@@ -45,7 +45,7 @@ We strive to make our documentation concise, clear, organized, and scannable.
 * Use sentence case for headings unless it contains a feature name or UI element. (For example, Getting started with the Design Editor.)
 * Only capitalize exclusive feature names like “Event Webhook” and “Marketing Campaigns” not, “drag & drop editor” or “transactional templates". 
 
-<a name="warning blocks"></a>
+<a name="warning and info blocks"></a>
 ## Warning and info blocks
 
 These are great for quick information that you want to highlight to a user. Especially for “gotchas” or “neat tricks”. Please use the tags below to show these in your content.
