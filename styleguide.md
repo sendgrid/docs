@@ -84,3 +84,7 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 * Anything that is already described in detail or included on other screenshots – better to provide a link.
 * Screens containing details about the version, rights, etc. If a new version comes out, you may need to change numbers or letters on every    single screenshot.
 * Pieces of code, configs, etc. Better to insert these as formatted text – it looks better, and users can easily copy them.
+
+### File format and naming:
+
+Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters,and excessively long names.
