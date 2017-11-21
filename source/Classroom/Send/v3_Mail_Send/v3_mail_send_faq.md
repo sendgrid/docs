@@ -52,13 +52,13 @@ What’s the difference between sending mail via SMTP and the Web API?
 
 Sending email via the [SMTP-Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) is a quick and simple way to integrate your existing SMTP code with SendGrid’s email functionality. All you have to do is modify your SMTP configuration to point to SendGrid’s SMTP server and your email will be routed through SendGrid’s SMTP-Relay. You may then specify special instructions for how you would like SendGrid to handle your email by means of the [X-SMTPAPI header]({{root_url}}/API_Reference/SMTP_API/index.html).
 
-The Web API, on the other hand, requires you to make an HTTP request to an endpoint in SendGrid’s API. Previously, SendGrid has only offered a mail sending endpoint in the Web API v2, but now you can use the RESTful Web API v3 to send your email. Simply make an `HTTP POST` request to `https://api.sendgrid.com/v3/mail/send/beta` with the data for your email included in a JSON payload. For more information, please visit our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+The Web API, on the other hand, requires you to make an HTTP request to an endpoint in SendGrid’s API. Previously, SendGrid has only offered a mail sending endpoint in the Web API v2, but now you can use the RESTful Web API v3 to send your email. Simply make an `HTTP POST` request to `https://api.sendgrid.com/v3/mail/send` with the data for your email included in a JSON payload. For more information, please visit our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 
 {% anchor h2 %}
 Can I send marketing email over the v3 Mail Send endpoint?
 {% endanchor %}
 
-You can send any type of email (transactional or marketing) over the v3 Mail Send endpoint. However, we recommend you take a look at our [Marketing Campaigns API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html) for a more robust marketing feature set (including segmentation and templates).
+You can send any type of email (transactional or marketing) over the v3 Mail Send endpoint. However, we recommend you take a look at our [Marketing Campaigns API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/index.html) for a more robust marketing feature set (including segmentation and reusable templates).
 
 {% anchor h2 %}
 Are there limits on how often I can send email and how many recipients I can send to?
