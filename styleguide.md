@@ -1,6 +1,8 @@
 Hello! Thank you for choosing to help contribute to the SendGrid documentation site! There are many ways you can contribute and help is always welcome.  When writing documentation, we ask you to consider the following style guidelines. 
 
 * [Style](#style)
+    * [Numbers](#numbers)
+    * [About Additional Resources](#about-additional-resources)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -26,6 +28,14 @@ Where possible, pages are written in a "jobs to be done" format. Jobs to be done
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+
+<a name="numbers"></a>
+### Numbers
+
+Use numerals instead of spelling them out. However, if a number leads off the sentence, spell it out.
+YES: “SendGrid offers 10 templates in Marketing Campaigns.”
+YES: “Ten templates are included in Marketing Campaigns.”
+
 
 <a name="about-additional-resources"></a>
 ### About Additional Resources
