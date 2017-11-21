@@ -20,6 +20,32 @@ We strive to make our documentation concise, clear, organized, and scannable.
 When giving a user an action item, put the UI element involved in the action in **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element. 
     For example, "Enter your username and password, and then click **login**." 
 
+Where possible, pages are written in a "jobs to be done" format. Jobs to be done style includes:
+
+* Table of contents at the beginning
+* "Additional Resources" section at the end
+* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
+	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+
+<a name="about-additional-resources"></a>
+### About Additional Resources
+
+"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
+
+Here is an example "Additional Resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
+
+Here is example formatting:
+
+```
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+```
+
 <a name="terminology"></a>
 ## Terminology
 
