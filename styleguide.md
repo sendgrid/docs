@@ -1,5 +1,6 @@
 Hello! Thank you for choosing to help contribute to the SendGrid documentation site! There are many ways you can contribute and help is always welcome.  When writing documentation, we ask you to consider the following style guidelines. 
 
+* [Style](#style)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -7,11 +8,17 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 * [Screenshots](#screenshots)
 
 
+<a name="style"></a>
+## Style
+
 We strive to make our documentation concise, clear, organized, and scannable. 
 
 * Use conversational language and industry-standard terms when possible.
 * Contractions are OK and preferred.
 * Use bulleted lists and numbered steps where applicable. 
+
+When giving a user an action item, put the UI element involved in the action in **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element. 
+    For example, "Enter your username and password, and then click **login**. 
 
 <a name="terminology"></a>
 ## Terminology
