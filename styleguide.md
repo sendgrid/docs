@@ -18,7 +18,7 @@ We strive to make our documentation concise, clear, organized, and scannable.
 * Use bulleted lists and numbered steps where applicable. 
 
 When giving a user an action item, put the UI element involved in the action in **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element. 
-    For example, "Enter your username and password, and then click **login**. 
+    For example, "Enter your username and password, and then click **login**." 
 
 <a name="terminology"></a>
 ## Terminology
