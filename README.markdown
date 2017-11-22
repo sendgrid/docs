@@ -253,7 +253,7 @@ If that worked, then add the above command to your .bash_profile or .profile fil
 <a name="using-docker"></a>
 ### Using Docker
 
-Install [Docker](https://www.docker.com/) first, then in terminal execute:
+[Install Docker](https://docs.docker.com/engine/installation/) first, then in terminal execute:
 
 ```
 docker build -t sendgrid/docs:latest .
