@@ -19,10 +19,10 @@ We strive to make our documentation concise, clear, organized, and scannable.
 * Contractions are OK and preferred.
 * Use bulleted lists and numbered steps where applicable. 
 
-When giving a user an action item, put the UI element involved in the action in **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element. 
+When documenting a UI action, make it **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element. 
     For example, "Enter your username and password, and then click **login**." 
 
-Where possible, pages are written in a "jobs to be done" format. Jobs to be done style includes:
+Where possible, write pages in a "jobs to be done" format. Jobs to be done style includes:
 
 * Table of contents at the beginning
 * "Additional Resources" section at the end
@@ -59,19 +59,19 @@ Additional Resources
 <a name="terminology"></a>
 ## Terminology
 
-* SaaS (note capitalization)
-* Cloud-based (note hyphen)
-* Warmup, one word, no hyphen
-* Mail stream, 2 words
-* Statistics, not “stats”
-* Email NOT e-mail
-* Deactivate, not inactivate 
-* Recipients = The people that receive email from SendGrid Customers. Not “users” or “customers”.
-* “Log in” = verb
-* “login” = noun
-* “sign up” = verb
-* “sign-up” = noun
-* “username” = one word
+* SaaS - note capitalization
+* Cloud-based - note hyphen
+* Warmup - one word with no hyphen
+* Mail stream - 2 words
+* Statistics - do not shorten to “stats”
+* Email - NOT e-mail
+* Deactivate - not inactivate 
+* Recipients - The people that receive email from SendGrid Customers. Not “users” or “customers”.
+* “Log in” - verb
+* “login” - noun
+* “sign up” - verb
+* “sign-up” - noun
+* “username” - one word
 
 <a name="punctuation"></a>
 ## Punctuation
@@ -104,7 +104,6 @@ Your note
 
 ```
 
-
 <a name="screenshots"></a>
 ## Screenshots
 
@@ -113,8 +112,8 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 
 ### Needs a screenshot:
 
-* The layout of the main elements and areas of the interface with captions. For example, the toolbar, status bar, main menu, pop-up menu.      This avoids needing to explain in words: “On the bar on the left, click on the second button from the top”.
-* A screenshot for each action that significantly changes the state of the system, interface or data.
+* The layout of the main elements and areas of the interface with captions. For example, the toolbar, status bar, main menu, pop-up menu. This avoids needing to explain in words: “On the bar on the left, click on the second button from the top”.
+* Each action that significantly changes the state of the system, interface or data.
 * Pop-up (modal) windows.
 
 ### Does NOT need a screenshot:
@@ -125,9 +124,9 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 * Endless drop-down lists (select language or country).
 * Individual buttons (use text).
 * Anything that is already described in detail or included on other screenshots – better to provide a link.
-* Screens containing details about the version, rights, etc. If a new version comes out, you may need to change numbers or letters on every    single screenshot.
-* Pieces of code, configs, etc. Better to insert these as formatted text – it looks better, and users can easily copy them.
+* Screens containing details about the version, rights, etc. If a new version comes out, you may need to change numbers or letters on every single screenshot.
+* Pieces of code, configs, etc. Instead, insert these as formatted text – it looks better, and users can easily copy them.
 
 ### File format and naming:
 
-Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters,and excessively long names.
+Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
