@@ -50,8 +50,6 @@ The master branch is continuously deployed to production.
 	* [Dictionary](#spellchecker-dictionary)
 	* [Contribution](#spellchecker-contribution)
 * [Style Guide](#style-guide)
-	* [About Jobs-to-be-done](#about-jobs-to-be-done)
-	* [About Additional Resources](#about-additional-resources)
 * [About](#about)
 
 * [License](#license)
@@ -417,34 +415,9 @@ The best way I've found to solve this issue without too much overhead work:
 <a name="style-guide"></a>
 ## Style Guide
 
-<a name="about-jobs-to-be-done"></a>
-### About Jobs-to-be-done
+The SendGrid contributor style guide can be found [here](https://github.com/sendgrid/docs/blob/master/styleguide.md). 
 
-Jobs to be done style includes:
 
-* Table of contents at the beginning
-* "Additional Resources" section at the end
-* Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
-	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
-
-<a name="about-additional-resources"></a>
-### About Additional Resources
-
-"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
-
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
-
-Here is example formatting:
-
-```
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-```
 <a name="about"></a>
 ## About
 
