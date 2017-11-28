@@ -15,7 +15,7 @@ navigation:
 Simple Name Substitution
 {% endanchor %}
 
-This example will show you how to create a name substitution for your emails. We will be using the tag "-name-" in this example. In this example the tag -name- will get replaced with the name of the recipient.
+This example will show you how to create a name substitution for your emails. We will be using the tag "{{name}}" in this example. In this example the tag {{name}} will get replaced with the name of the recipient.
 
 {% anchor h3 %}
 Email Content
@@ -26,7 +26,7 @@ Text
 {% endanchor %}
 
 {% codeblock %}
-Hello -name-,
+Hello {{name}},
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -37,7 +37,7 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>Hello -name-,<br>
+    <p>Hello {{name}},<br>
     </p>
   </body>
 </html>
@@ -55,7 +55,7 @@ X-SMTPAPI Header
 		"example03@domain.com"
 	],
 	"sub": {
-		"-name-": ["John", "Jane", "Matt"]
+		"{{name}}": ["John", "Jane", "Matt"]
 	}
 }
 {% endcodeblock %}
@@ -73,7 +73,7 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-name-": "John"
+			"{{name}}": "John"
 		}
 	}, {
 		"to": [{
@@ -82,7 +82,7 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-name-": "Jane"
+			"{{name}}": "Jane"
 		}
 	}, {
 		"to": [{
@@ -91,7 +91,7 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-name-": "Matt"
+			"{{name}}": "Matt"
 		}
 	}],
 	"from": {
@@ -105,10 +105,10 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello -name-,"
+		"value": "Hello {{name}},"
 	}, {
 		"type": "text/html",
-		"value": "Hello -name-,"
+		"value": "Hello {{name}},"
 	}]
 
 }
@@ -200,7 +200,7 @@ HTML
 First Name and Last Name Substitutions
 {% endanchor %}
 
-This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "-first_name-" and "-last_name-" in this example. In this example the tag -first_name- will get replaced with the first name of the recipient and the tag -last_name- will get replaced with the last name of the recipient.
+This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{{first_name}}" and "{{last_name}}" in this example. In this example the tag {{first_name}} will get replaced with the first name of the recipient and the tag {{last_name}} will get replaced with the last name of the recipient.
 
 {% anchor h3 %}
 Email Content
@@ -211,7 +211,7 @@ Text
 {% endanchor %}
 
 {% codeblock %}
-Hello -first_name- -last_name-,
+Hello {{first_name}} {{last_name}},
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -222,7 +222,7 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>Hello -first_name- -last_name-,<br>
+    <p>Hello {{first_name}} {{last_name}},<br>
     </p>
   </body>
 </html>
@@ -240,8 +240,8 @@ X-SMTPAPI Header
 		"example03@domain.com"
 	],
 	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"]
 	}
 }
 {% endcodeblock %}
@@ -259,8 +259,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith"
 		}
 	}, {
 		"to": [{
@@ -269,8 +269,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams"
 		}
 	}, {
 		"to": [{
@@ -279,8 +279,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson"
 		}
 	}],
 	"from": {
@@ -294,10 +294,10 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello -first_name- -last_name-,"
+		"value": "Hello {{first_name}} {{last_name}},"
 	}, {
 		"type": "text/html",
-		"value": "Hello -first_name- -last_name-,"
+		"value": "Hello {{first_name}} {{last_name}},"
 	}]
 
 }
@@ -389,7 +389,7 @@ HTML
 Simple Greeting Section with Name Substitution
 {% endanchor %}
 
-This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "-warm_welcome-", "-greeting-" and "-name-" in this example. In this example we have created a greeting using the section tag -warm_welcome-. The -warm_welcome- tag is replaced with the -greeting- substitution which calls the section "Hello -name-,". The -name- tag in "Hello -name-," is then replaced with the recipients name.
+This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{{warm_welcome}}", "{{greeting}}" and "{{name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{name}},". The {{name}} tag in "Hello {{name}}," is then replaced with the recipients name.
 
 {% anchor h3 %}
 Email Content
@@ -400,7 +400,7 @@ Text
 {% endanchor %}
 
 {% codeblock %}
--warm_welcome-
+{{warm_welcome}}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -411,7 +411,7 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -429,11 +429,11 @@ X-SMTPAPI Header
 		"example03@domain.com"
 	],
 	"sub": {
-		"-name-": ["John", "Jane", "Matt"],
-		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+		"{{name}}": ["John", "Jane", "Matt"],
+		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
 	},
 	"section": {
-		"-greeting-": "Hello -name-,"
+		"{{greeting}}": "Hello {{name}},"
 	}
 }
 {% endcodeblock %}
@@ -451,8 +451,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-name-": "John",
-			"-warm_welcome-": "-greeting-"
+			"{{name}}": "John",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -461,8 +461,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-name-": "Jane",
-			"-warm_welcome-": "-greeting-"
+			"{{name}}": "Jane",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -471,8 +471,8 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-name-": "Matt",
-			"-warm_welcome-": "-greeting-"
+			"{{name}}": "Matt",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}],
 	"from": {
@@ -486,13 +486,13 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"-greeting-": "Welcome -name-,"
+		"{{greeting}}": "Welcome {{name}},"
 	}
 }
 {% endcodeblock %}
@@ -583,7 +583,7 @@ HTML
 Greeting Section with First & Last Name Substitutions
 {% endanchor %}
 
-This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "-warm_welcome-", "-greeting-", "-first_name-" and "-last_name-" in this example. In this example we have created a greeting using the section tag -warm_welcome-. The -warm_welcome- tag is replaced with the -greeting- substitution which calls the section "Hello -first_name- -last_name-,". The -first_name- and -last_name- tags in "Hello -first_name- -last_name-," is then replaced with the recipients first and last names.
+This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{first_name}} {{last_name}},". The {{first_name}} and {{last_name}} tags in "Hello {{first_name}} {{last_name}}," is then replaced with the recipients first and last names.
 
 {% anchor h3 %}
 Email Content
@@ -594,7 +594,7 @@ Text
 {% endanchor %}
 
 {% codeblock %}
--warm_welcome-
+{{warm_welcome}}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -605,7 +605,7 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -623,12 +623,12 @@ X-SMTPAPI Header
 		"example03@domain.com"
 	],
 	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"],
-		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"],
+		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
 	},
 	"section": {
-		"-greeting-": "Hello -first_name- -last_name-,"
+		"{{greeting}}": "Hello {{first_name}} {{last_name}},"
 	}
 }
 {% endcodeblock %}
@@ -646,9 +646,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith",
-			"-warm_welcome-": "-greeting-"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -657,9 +657,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams",
-			"-warm_welcome-": "-greeting-"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -668,9 +668,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson",
-			"-warm_welcome-": "-greeting-"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}],
 	"from": {
@@ -684,13 +684,13 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"-greeting-": "Welcome -first_name- -last_name-,"
+		"{{greeting}}": "Welcome {{first_name}} {{last_name}},"
 	}
 }
 {% endcodeblock %}
@@ -781,7 +781,7 @@ HTML
 Three Different Greeting Sections with First & Last Name Substitutions
 {% endanchor %}
 
-This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "-warm_welcome-", "-greeting01-", "-greeting02-", "-greeting03-", "-first_name-" and "-last_name-" in this example. In this example we have created three different greetings using the section tag -warm_welcome-. The -warm_welcome- tag is replaced with either -greeting01-, -greeting02- or -greeting03- substitution. This will call one of the three sections. In each of these sections there is the -first_name- and -last_name- tags which will get replaced with the recipients first and last names.
+This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting01}}", "{{greeting02}}", "{{greeting03}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created three different greetings using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with either {{greeting01}}, {{greeting02}} or {{greeting03}} substitution. This will call one of the three sections. In each of these sections there is the {{first_name}} and {{last_name}} tags which will get replaced with the recipients first and last names.
 
 {% anchor h3 %}
 Email Content
@@ -792,7 +792,7 @@ Text
 {% endanchor %}
 
 {% codeblock %}
--warm_welcome-
+{{warm_welcome}}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -803,7 +803,7 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -821,14 +821,14 @@ X-SMTPAPI Header
 		"example03@domain.com"
 	],
 	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"],
-		"-warm_welcome-": ["-greeting01-", "-greeting02-", "-greeting03-"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"],
+		"{{warm_welcome}}": ["{{greeting01}}", "{{greeting02}}", "{{greeting03}}"]
 	},
 	"section": {
-		"-greeting01-": "Welcome -first_name- -last_name-,",
-		"-greeting02-": "Hello -first_name- -last_name-,",
-		"-greeting03-": "Dear -first_name- -last_name-,"
+		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
+		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
+		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
 	}
 }
 {% endcodeblock %}
@@ -846,9 +846,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith",
-			"-warm_welcome-": "-greeting01-"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith",
+			"{{warm_welcome}}": "{{greeting01}}"
 		}
 	}, {
 		"to": [{
@@ -857,9 +857,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams",
-			"-warm_welcome-": "-greeting02-"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams",
+			"{{warm_welcome}}": "{{greeting02}}"
 		}
 	}, {
 		"to": [{
@@ -868,9 +868,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson",
-			"-warm_welcome-": "-greeting03-"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson",
+			"{{warm_welcome}}": "{{greeting03}}"
 		}
 	}],
 	"from": {
@@ -884,15 +884,15 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "-warm_welcome-"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"-greeting01-": "Welcome -first_name- -last_name-,",
-		"-greeting02-": "Hello -first_name- -last_name-,",
-		"-greeting03-": "Dear -first_name- -last_name-,"
+		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
+		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
+		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
 	}
 }
 {% endcodeblock %}
@@ -983,7 +983,7 @@ HTML
 Three Confirmation Sections and Substitutions
 {% endanchor %}
 
-This example will show you how to create three different sections for confirmation emails. We will be using the tags "-name-", "-confirmations-", "-confirmation_001-", "-confirmation_002-", "-confirmation_003-" and "-order_id-" in this example. In this example we have created three different confirmations using the section tag -confirmations-. The -confirmations- tag is replaced with either -confirmation_001-, -confirmation_002- or -confirmation_003- substitution. This will call one of the three sections. In each of these sections there is the -order_id- tag which will get replaced with the recipients order id.
+This example will show you how to create three different sections for confirmation emails. We will be using the tags "{{name}}", "{{confirmations}}", "{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}" and "{{order_id}}" in this example. In this example we have created three different confirmations using the section tag {{confirmations}}. The {{confirmations}} tag is replaced with either {{confirmation_001}}, {{confirmation_002}} or {{confirmation_003}} substitution. This will call one of the three sections. In each of these sections there is the {{order_id}} tag which will get replaced with the recipients order id.
 
 {% anchor h3 %}
 Email Content
@@ -994,8 +994,8 @@ Text
 {% endanchor %}
 
 {% codeblock %}
-Hello -name-,
--confirmations-
+Hello {{name}},
+{{confirmations}}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -1006,8 +1006,8 @@ HTML
 <html>
   <head></head>
   <body>
-    <p>Hello -name-,<br>
-	    -confirmations-
+    <p>Hello {{name}},<br>
+	    {{confirmations}}
     </p>
   </body>
 </html>
@@ -1021,14 +1021,14 @@ X-SMTPAPI Header
 {
 	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
 	"sub": {
-		"-name-": ["John", "Jane", "Matt"],
-		"-confirmations-": ["-confirmation_001-", "-confirmation_002-", "-confirmation_003-"],
-		"-order_id-": ["12345", "23456", "34567"]
+		"{{name}}": ["John", "Jane", "Matt"],
+		"{{confirmations}}": ["{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}"],
+		"{{order_id}}": ["12345", "23456", "34567"]
 	},
 	"section": {
-		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
-		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
+		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
 	}
 }
 {% endcodeblock %}
@@ -1046,9 +1046,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"-name-": "John",
-			"-order_id-": "12345",
-			"-confirmations-": "-confirmation_001-"
+			"{{name}}": "John",
+			"{{order_id}}": "12345",
+			"{{confirmations}}": "{{confirmation_001}}"
 		}
 	}, {
 		"to": [{
@@ -1057,9 +1057,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"-name-": "Jane",
-			"-order_id-": "23456",
-			"-confirmations-": "-confirmation_002-"
+			"{{name}}": "Jane",
+			"{{order_id}}": "23456",
+			"{{confirmations}}": "{{confirmation_002}}"
 		}
 	}, {
 		"to": [{
@@ -1068,9 +1068,9 @@ v3 Mail Send
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"-name-": "Matt",
-			"-order_id-": "34567",
-			"-confirmations-": "-confirmation_003-"
+			"{{name}}": "Matt",
+			"{{order_id}}": "34567",
+			"{{confirmations}}": "{{confirmation_003}}"
 		}
 	}],
 	"from": {
@@ -1084,15 +1084,15 @@ v3 Mail Send
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello -name-,\r\n-confirmations-"
+		"value": "Hello {{name}},\r\n{{confirmations}}"
 	}, {
 		"type": "text/html",
-		"value": "<p>Hello -name-,<br>-confirmations-"
+		"value": "<p>Hello {{name}},<br>{{confirmations}}"
 	}],
 	"sections": {
-		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
-		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
+		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
 	}
 }
 {% endcodeblock %}
