@@ -76,7 +76,7 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 {% endinfo %}
 
 {% warning %}
-Be sure your account is set to the correct time zone in order to ensure that your emails get sent at the time you intend
+Be sure your account is set to the correct time zone in order to ensure that your emails get sent at the time you intend.
 {% endwarning %}
 
 *To change your time zone:* 
