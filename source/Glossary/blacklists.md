@@ -82,17 +82,17 @@ Below are links to the delisting forms used by the more popular external blackli
 Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines
 {% endanchor %}
 
-[Gmail Email Sender Guidelines](https://support.google.com/mail/answer/81126)
-[Yahoo Email Sender Guidelines](https://help.yahoo.com/kb/mail-for-desktop/SLN3435.html?impressions=true)
-[Hotmail/Outlook/Live Bulk Email Sender Guidelines](https://mail.live.com/mail/policies.aspx)
-[AOL Bulk Email Sender Guidelines](https://postmaster.aol.com/best-practices)
+1. [Gmail Email Sender Guidelines](https://support.google.com/mail/answer/81126)
+1. [Yahoo Email Sender Guidelines](https://help.yahoo.com/kb/mail-for-desktop/SLN3435.html?impressions=true)
+1. [Hotmail/Outlook/Live Bulk Email Sender Guidelines](https://mail.live.com/mail/policies.aspx)
+1. [AOL Bulk Email Sender Guidelines](https://postmaster.aol.com/best-practices)
 
 If you are sending mail using these guidelines and still have problems to deliver email to those email providers, you can contact the ISP support by the following URL:
 
-[Gmail Bulk Sender Contact Form](https://support.google.com/mail/contact/bulk_send_new?visit_id=1-636427436775630765-3555263264&rd=1)
-[Yahoo Bulk Sender Contact Form](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
-[Hotmail Deliverability Issue Submission](https://mail.live.com/mail/services.aspx)
-[AOL Whitelisting Process](https://postmaster.aol.com/whitelist-request)
+1. [Gmail Bulk Sender Contact Form](https://support.google.com/mail/contact/bulk_send_new?visit_id=1-636427436775630765-3555263264&rd=1)
+1. [Yahoo Bulk Sender Contact Form](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
+1. [Hotmail Deliverability Issue Submission](https://mail.live.com/mail/services.aspx)
+1. [AOL Whitelisting Process](https://postmaster.aol.com/whitelist-request)
 
 {% warning %}
 If a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time or money trying to get your domain/IP delisted because these services are rarely, if ever, used by ISPs. 
