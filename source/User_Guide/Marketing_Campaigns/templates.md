@@ -50,7 +50,7 @@ You can only edit custom templates (templates that you have created yourself or 
 1. Navigate to the template you want to edit.  
 1. Click the **action menu** and select **Edit**.
 
-   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
+   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor. However, if you choose the design editor you'll still have HTML editing options, and with the code editor you'll enjoy convenient visual tools like side-by-side code and preview panes.
 
 {% anchor h3 %}
 Duplicating a SendGrid Template
