@@ -9,15 +9,15 @@ layout: page
 navigation:
   show: true
 ---
-- [Opt-In Email](#-Opt-In Email)
-- [Email opt-in types](#-Email-Opt-in-types) 
-- [Affiliate Lists & List Sharing](#-Affiliate Lists & List Sharing)
-- [Peer-Initiated Email Invitation Requirements](#-Peer-Initiated Email Invitation Requirements)
-- [Purchased Lists](#-Purchased Lists)
-- [Managing Your List](#-Managing Your List)
-- [Organizing Your List](#-Organizing Your List)
-- [Permission Reminders - Where Did You Get My Address?](#-Permission Reminders - Where Did You Get My Address?)
-- [Preference Centers: Giving Subscribers Control](#-Preference Centers: Giving Subscribers Control)
+- [Opt-In Email](#-Opt-In-Email)
+- [Email opt-in types](#-Email-Optin-types) 
+- [Affiliate Lists & List Sharing](#-Affiliate-Lists--List-Sharing)
+- [Peer-Initiated Email Invitation Requirements](#-Peer-Initiated-Email-Invitation-Requirements)
+- [Purchased Lists](#-Purchased-Lists)
+- [Managing Your List](#-Managing-Your-List)
+- [Organizing Your List](#-Organizing-Your-List)
+- [Permission Reminders - Where Did You Get My Address?](#-Permission-Reminders--Where-Did-You-Get-My-Address)
+- [Preference Centers: Giving Subscribers Control](#-Preference-Centers-Giving-Subscribers-Control)
 
 {% anchor h2 %}
 Opt-In Email
