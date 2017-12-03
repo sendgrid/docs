@@ -9,7 +9,7 @@ seo:
   override: true
   description: Optimize engagement of your campaigns with A/B testing, by sending different versions of your emails to a small subset of your contacts and measuring the engagement results.
 ---
-Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing allows you send different versions of your emails to small subsets of your contacts.
+Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing allows you to send different versions of your emails to small subsets of your contacts.
 
 When recipients interact with the A/B test emails, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
 
