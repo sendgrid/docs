@@ -823,8 +823,8 @@ Redirect 301 /Delivery_Metrics/metrics.html https://sendgrid.com/docs/User_Guide
 #
 #######
 
-Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/testing_your_connectivity_to_sendgrids_smtp_relay_using_telnet.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp
-Redirect 301 /Classroom/Basics/Email_Infrastructure/smtp_ports.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp
-Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp
-Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp
-Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/testing_your_connectivity_to_sendgrids_smtp_relay_using_telnet.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/smtp_ports.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
