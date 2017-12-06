@@ -4,7 +4,7 @@ seo:
   description: Use Telnet to send your first SMTP email
   keywords: telnet, ports, connection, smtp, send email, getting started
 title: How to Send an SMTP Email
-weight: 0
+weight: 960
 layout: page
 navigation:
   show: true
@@ -15,7 +15,9 @@ navigation:
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
 - [Sending an Email with SMTP](#-Sending-an-Email-using-SMTP)
-   - [Customizing Your Send](#-Customizing-Your-Send)
+   - [Ports](#-Ports)
+   - [Rate Limits](#-Rate-Limits)
+- [Customizing Your Send](#-Customizing-Your-Send)
    - [Filters](#-Filters)
    - [Scheduling Your Send](#-Scheduling-Your-Send)
    - [Substitution Tags](#-Substitution-Tags)
@@ -50,18 +52,12 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 *To send SMTP email using Telnet:*
 
-1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`. SendGrid accepts unencrypted and TLS connections on ports **25**, **467**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay.
-    {% info %}
-    We recommend port 587 to avoid any rate limiting that your server host may apply.
-    {% endinfo %}
-1. Once you successfully connect to the SendGrid, login to the server by typing `AUTH LOGIN`.
-    The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username.
-    {% info %}
-    If you receive this error: `"'telnet' is not recognized as an internal or external command, operable program or batch file."` you need to install Telnet on your machine. Telnet comes natively on most operating systems.
-    {% endinfo %}
-1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64.
-    The mail server responds with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
-1. Enter your Base64 converted API key in the next line as the password.`
+1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`. SendGrid accepts unencrypted and TLS connections on ports **25**, **467**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
+1. Once you successfully connect to the SendGrid, login to the server by typing `AUTH LOGIN`. 
+     The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username. If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
+1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64. 
+     The mail server responds with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
+1. Enter your Base64 converted API key in the next line as the password.
     The mail server responds with `235 Authentication successful`. Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open and that your API key is valid.
 1. Next, add the email that you’re sending from: `mail from:<<SENDER_EMAIL>`.
     The mail server responds with `250 Sender address accepted`.
@@ -88,8 +84,12 @@ Sending an email using SMTP
 3. Set your username to `apikey`.
 4. Set your password to the API key generated in step 1.
 5. Set the port to `587`.
-    * For unencrypted or [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
-    * For [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
+
+{% anchor h3 %}
+Ports
+{% endanchor %}
+    - For an unencrypted or a [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
+    - For a [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
 
 {% anchor h3 %}
 Rate Limits
@@ -145,20 +145,20 @@ Substitution Tags
 
 Substitution tags allow you to dynamically insert specific content relevant to each of your recipients, such as their first and last names.
 
-For example, to use a substitution tag to replace the first name of your recipient, insert the tag `-name-` in the HTML of your message:
+For example, to use a substitution tag to replace the first name of your recipient, insert the tag {% raw %}{{name}}{% endraw %} in the HTML of your message:
 
 {% codeblock lang:html %}
 <html>
   <head></head>
   <body>
-    <p>Hello -name-,<br>
+    <p>Hello {% raw %}{{name}}{% endraw %},<br>
         The body of your email would go here...
     </p>
   </body>
 </html>
 {% endcodeblock %}
 
-To define the value that will replace the `-name-` tag, define the following in your X-SMTPAPI header:
+To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, define the following in your X-SMTPAPI header:
 
 {% codeblock lang:json %}
 {
@@ -167,7 +167,7 @@ To define the value that will replace the `-name-` tag, define the following in 
     "example@example.com"
   ],
   "sub": {
-    "-name-": [
+    "{% raw %}{{name}}{% endraw %}": [
       "John",
       "Jane"
     ]
@@ -233,4 +233,4 @@ Additional Resources
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
-- [Using Substitution T({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+- [Using Substitution Tags]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
