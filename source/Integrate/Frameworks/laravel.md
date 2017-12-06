@@ -35,7 +35,7 @@ The `MAIL_FROM_NAME` field requires double quotes because there is a space in th
 {% endinfo %}
 
 {% info %}
-It is important to note, using SMTP, you can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
+You can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
 {% endinfo %}
 
 {% anchor h2 %}
