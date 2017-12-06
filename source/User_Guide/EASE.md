@@ -28,7 +28,7 @@ With the Email Activity feed you can:
 * Call all events by an email from the API with additional storage purchase.
 
 (% info %)
-SendGrid stores two days of Email Activity data for free. To increase your storage capability, see LINK
+SendGrid stores two days of Email Activity data for free. To increase your storage capability, you may purchase more storage (pricing coming soon!).
 (% endinfo %)
 
 (% anchor H2 %)
