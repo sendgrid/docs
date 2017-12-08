@@ -3,6 +3,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 * [Style](#style)
     * [Numbers](#numbers)
     * [About Additional Resources](#about-additional-resources)
+    * [Cross References] (#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -36,6 +37,13 @@ Use numerals instead of spelling them out. However, if a number leads off the se
 YES: “SendGrid offers 10 templates in Marketing Campaigns.”
 YES: “Ten templates are included in Marketing Campaigns.”
 
+<a name="cross references"></a>
+### Cross References
+
+When referring to other pages in the documentation, make sure your link text is descriptive. 
+
+YES: For more information, see [Event Webhook] documentation.
+NO: For more information, click [here].
 
 <a name="about-additional-resources"></a>
 ### About Additional Resources
@@ -130,3 +138,16 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 ### File format and naming:
 
 Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
+
+### Size and resolution:
+
+When possible, try to take screenshot at a size that is twice what it will need to be on the page. 
+
+### Alt text:
+
+As a best practice, all screenshots should have accompanying alt text. 
+
+Use the following format when inserting an image into the docs:
+
+`![alt text here]({{root_url}}/images/<image_name>.png)`
+

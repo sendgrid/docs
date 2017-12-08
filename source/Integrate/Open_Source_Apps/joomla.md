@@ -8,7 +8,10 @@ navigation:
 
 Joomla supports sending email over SMTP. To have Joomla relay email through SendGrid go to *Site \> Global Configuration* and change:
 
--   **SMTP Auth** - Yes
+-   **Mailer** – SMTP
+-   **SMTP Host** - smtp.sendgrid.net
+-   **SMTP Port** – 587
+-   **SMTP Security** – STARTTLS
+-   **SMTP Authentication** - Yes
 -   **SMTP User** - sendgrid_username
 -   **SMTP Pass** - sendgrid_password
--   **SMTP Host** - smtp.sendgrid.net

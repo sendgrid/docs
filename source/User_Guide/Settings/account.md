@@ -18,7 +18,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Last Name** - This is be the last name of the representative from your company who should receive contacts from SendGrid.
 
-**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications. This must be a valid and active email address that you routinely check.
+**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications such as billing notifications. This must be a valid and active email address that you routinely check.
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
@@ -47,8 +47,6 @@ If you find that your scheduled sends or stats seem like they are not quite corr
 **Website** - Your company’s website
 
 **Phone** - Your company’s phone number, where SendGrid can reach the representative that should be contacted.
-
-**Billing Email** - If this email is added, SendGrid will send all your billing notifications to this address. If you do not specify this address, SendGrid will send your billing notifications to your account email.
 
 {% anchor h2 %}
 Changing Your Password

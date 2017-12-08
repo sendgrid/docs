@@ -815,4 +815,24 @@ Redirect 301 /User_Guide/EASE.html https://sendgrid.com/docs/User_Guide/email_ac
 Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs//User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 
+
+#######
+#
+# Old docs redirects
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/dont_know_your_username.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html
 Redirect 301 /Delivery_Metrics/metrics.html https://sendgrid.com/docs/User_Guide/email_activity.html
+
+#######
+#
+#  SMTP Redirects
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/testing_your_connectivity_to_sendgrids_smtp_relay_using_telnet.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/smtp_ports.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
