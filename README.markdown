@@ -100,7 +100,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
 
-	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
+	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
 * Close and reopen your terminal window
 * Check your Ruby version:  

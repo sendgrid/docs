@@ -823,3 +823,4 @@ Redirect 301 /User_Guide/Marketing_Campaigns/overview.html https://sendgrid.com/
 #######
 
 Redirect 301 /Classroom/Troubleshooting/dont_know_your_username.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html
+Redirect 301 /Delivery_Metrics/metrics.html https://sendgrid.com/docs/User_Guide/email_activity.html

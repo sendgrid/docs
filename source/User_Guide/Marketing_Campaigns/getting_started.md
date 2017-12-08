@@ -66,12 +66,17 @@ Scheduling Your Campaign
 {% endanchor h3 %}
 
 *To schedule your campaign:*
+
 1. To send your campaign at a later time or date, toggle the **Send Immediately** button to **Off**. 
 1. Enter the date and time you want the campaign to be sent.
-1. Click **Schedule Campaign**. 
+1. Click **Schedule Campaign**.
+
+{% info %}
+If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+{% endinfo %}
 
 {% warning %}
-Be sure your account is set to the correct time zone in order to ensure that your emails get sent when you want them to.
+Be sure your account is set to the correct time zone in order to ensure that your emails get sent at the time you intend.
 {% endwarning %}
 
 *To change your time zone:* 
