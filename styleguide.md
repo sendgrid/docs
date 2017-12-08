@@ -149,5 +149,5 @@ As a best practice, all screenshots should have accompanying alt text.
 
 Use the following format when inserting an image into the docs:
 
-![alt text here]({{root_url}}/images/<image_name>.png)
+`![alt text here]({{root_url}}/images/<image_name>.png)`
 
