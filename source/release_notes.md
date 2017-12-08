@@ -12,6 +12,8 @@ navigation:
 ---
 ![]({{root_url}}/images/release_notes.png "release notes")
 
+If you are looking for SendGrids opererational status, see our [Status Page](http://status.sendgrid.com/).
+
 The following new features and changes to the service are available.
 
 <table class="table" style="table-layout:fixed">
