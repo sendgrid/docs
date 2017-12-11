@@ -10,6 +10,11 @@ navigation:
   show: true
 ---
 
+- [Response codes](#-Response-codes)
+- [Turning off click tracking](#-Turning-off-click-tracking)
+- [Invalid SMTP API Header](#-Invalid-SMTP-API-Hheader)
+- [Certificate verification failed for smtp.sendgrid.net](#-Certificate-verification-failed-for-smtp.sendgrid.net)
+
 {% anchor h3 %}
 Response codes
 {% endanchor %}
@@ -80,7 +85,26 @@ Each SMTP call you make returns a response. `200` responses are usually success 
 </table>
 
 {% anchor h2 %}
-Invalid SMTP API Header
+Turning off click tracking
+{% endanchor %}
+
+To turn off click tracking, add this to your X-SMTPAPI header:
+
+{% codeblock lang:json %}
+{
+  "filters": {
+    "clicktrack": {
+      "settings":
+        {
+          "enable": 0
+        }
+    }
+  }
+}
+{% endcodeblock %}
+
+{% anchor h2 %}
+Invalid SMTP API header
 {% endanchor %}
 
 When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue. If you need more help troubleshooting, you can log in to file a support ticket on our [support page](https://support.sendgrid.com/hc/en-us).
