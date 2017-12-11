@@ -47,8 +47,8 @@ Rate limits
 Additional Resources
 {% endanchor h2 %}
 
-- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started_smtp.html)
+- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started.html)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
 - [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
