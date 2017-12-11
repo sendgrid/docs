@@ -1,7 +1,7 @@
 ---
 seo:
   title: Errors and Troubleshooting
-  description: SMT Response codes and troubleshooting tips
+  description: SMTP Response codes and troubleshooting tips
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients
 title: Errors and Troubleshooting
 weight: 0
@@ -126,7 +126,7 @@ Certificate verification failed for smtp.sendgrid.net
 
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
- {% anchor h2 %}
+{% anchor h2 %}
 Additional Resources
 {% endanchor h2 %}
 

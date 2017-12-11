@@ -1,7 +1,11 @@
 ---
-layout: page
-weight: 0
+seo:
+  title: Unique Arguments
+  description: Add unique arguments to customize your SMTP emails event tracking
+  keywords: SMTP, unique arguments, email events, email activity
 title: Unique Arguments
+weight: 10
+layout: page
 navigation:
   show: true
 ---
@@ -43,7 +47,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 }
 {% endcodeblock %}
 
-{% warning %} There are a few cases where unique_args cannot be attached to the Event. Specifically Bounces that are returned via the Return-Path. Please keep this in mind when developing unique_args POST handling. {% endwarning %}
+{% warning %}Bounces returned with the Return-Path cause `unique_rgs not to be attached to an event. This can cause issues when developing unique_args POST handling. {% endwarning %}
 
 Unique Arguments will also be shown in the [Email Activity tab]({{site.app_url}}/email_activity) of your account.
 
@@ -62,3 +66,12 @@ To apply different unique arguments to individual emails, you may use [substitut
   }
 }
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
