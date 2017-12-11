@@ -72,7 +72,7 @@ Limitations
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="http://tools.ietf.org/html/rfc821"> RFC 821
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final e-mail. If your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
-- When sending Unicode characters via the SMTP API, you should escape these characters using the ```\u``` escape character. When you do this, Unicode characters like ``` á``` becomes ```\u00E1```. To see a list of Unicode characters in the Wikipedia's [Unicode Article](http://en.wikipedia.org/wiki/List_of_Unicode_characters).
+- When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`. To see a list of Unicode characters in the Wikipedia's [Unicode Article](http://en.wikipedia.org/wiki/List_of_Unicode_characters).
 
 {% anchor h2 %}
 Customizing Your Send (filters)
@@ -203,3 +203,13 @@ Unique Arguments
 Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/User_Guide/email_activity.html).
 
 For more information, see our [unique arguments documentation]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+- [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)

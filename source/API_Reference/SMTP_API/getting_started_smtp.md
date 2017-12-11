@@ -16,9 +16,6 @@ You can also send email with [the UI](https://sendgrid.com/docs/User_Guide/Marke
 
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
-- [Sending an Email with SMTP](#-Sending-an-Email-using-SMTP)
-   - [Ports](#-Ports)
-   - [Rate Limits](#-Rate-Limits)
 
 {% anchor h2 %}
 What is SMTP?
@@ -71,7 +68,7 @@ Telnet does not register backspaces correctly - so you have to type your command
     <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly, and your.
 1. Exit the Telnet connection with: `quit`.
 
-Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}//API_Reference/SMTP_API/getting_started_smtp.html).
+Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html).
 
 {% anchor h2 %}
 Additional Resources
@@ -80,5 +77,5 @@ Additional Resources
 - [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
-- [Using Substitution Tags]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+- [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)

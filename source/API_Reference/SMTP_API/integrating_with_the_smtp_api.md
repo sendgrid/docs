@@ -27,15 +27,28 @@ Integrating with Sendgrid
 4. Set your password to the API key generated in step 1.
 5. Set the port to `587`.
 
+Now that you've integrated, learn to [build SMTP email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html).
+
 {% anchor h3 %}
 SMTP Ports
 {% endanchor %}
-    - For an unencrypted or a [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
-    - For a [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
+
+- For an unencrypted or a [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
+- For a [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
 
 {% anchor h3 %}
 Rate limits
 {% endanchor %}
 
-* You may send up to **100 messages per SMTP connection**.
-* You may open up to **10 concurrent connections from a single server**.
+- You may send up to **100 messages per SMTP connection**.
+- You may open up to **10 concurrent connections from a single server**.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+- [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
