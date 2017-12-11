@@ -40,7 +40,7 @@ Other reasons for dropped emails:
 How to remove Drops
 {% endanchor %}
 
-If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. You can visit your suppression lists and removing an address from the bounces list. Then you will be able to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again.
+If you would like us to attempt to deliver messages to a specific address again, please delete that address from the suppression list. On the suppression list page, you can remove an address from the bounces list. Then you will be able to send future messages without us intervening on your behalf; you're essentially telling us that this address should be fine, but something went wrong and you'd like to try again.
 
 {% info %}
 NOTE: SendGrid cannot re-send messages that have been Dropped or appear on suppression lists, but will attempt future deliveries once the address has been removed from the list and is sent to again.
