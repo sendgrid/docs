@@ -2,7 +2,7 @@
 seo:
   title: How to Send an SMTP Email
   description: Use Telnet to send your first SMTP email
-  keywords: telnet, ports, connection, smtp, send email, getting started
+  keywords: telnet, ports, connection, SMTP, send email, getting started
 title: How to Send an SMTP Email
 weight: 960
 layout: page
@@ -24,11 +24,11 @@ You can also send email with [the UI](https://sendgrid.com/docs/User_Guide/Marke
 What is SMTP?
 {% endanchor %}
 
-[SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides a 3rd party SMTP service that allows you to deliver your email via our server instead of your own client or server.
+[SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
-SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail. This is accomplished through a header, X-SMTPAPI, that is inserted into the message. The header is a JSON encoded list of instructions and options for that email.
+SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
 
-The X-SMTPAPI headers that you add will be stripped from the final email, because they are instruction headers for how SendGrid will handle your email. So you can expect to not actually see these headers in the final email.
+The X-SMTPAPI headers that you add are stripped from the final email because they are instruction headers for how SendGrid will handle your email.
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 

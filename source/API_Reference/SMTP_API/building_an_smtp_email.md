@@ -95,7 +95,7 @@ For example, to send a blind carbon copy (BCC) of your email to the address exam
 }
 {% endcodeblock %}
 
-The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. This header can be added to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
+The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
 
 - [Scheduling Your Send](#-Scheduling-your-send)
 - [Substitution Tags](#-Substitution-tags)
@@ -108,7 +108,7 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 Scheduling Your Send
 {% endanchor %}
 
-Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) for when your mail should be sent.
+Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 {% codeblock lang:json %}
 {

@@ -2,7 +2,7 @@
 seo:
   title: Integrating with the SMTP API
   description: Set your systems up to use SendGrid SMTP API
-  keywords: ports, connection, smtp, send email, integrate, rate limits, setting up
+  keywords: ports, connection, SMTP, send email, integrate, rate limits, setting up
 title: Integrating with the SMTP API
 weight: 950
 layout: page
@@ -18,7 +18,7 @@ navigation:
 Integrating with Sendgrid
 {% endanchor %}
 
-*To send an email from your severs using SMTP:*
+*To integrate with SendGrids SMTP API:*
 
 1. [Create an API Key](https://app.sendgrid.com/settings/api_keys) with at least "Mail" permissions.
 2. Set the server host in your email client or application to `smtp.sendgrid.net`.
