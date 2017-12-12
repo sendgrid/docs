@@ -75,3 +75,11 @@ Why don't other ESPs require IP warmup?
 Many other email service providers do not offer dedicated IP addresses to their customers - they place all of their customers on shared IP groups by default. Warming up is not required for a shared IP group - SendGrid handles this automatically.
 
 Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Adding a dedicated IP]({{root_url}}/User_Guide/Settings/dedicated_ip_addresses.html)
+- [API IP Access Management]({{root_url}}/User_Guide/Settings/ip_access_management.html)
+- [SendGrid billing information]({{root_url}}/User_Guide/Settings/billing.html)

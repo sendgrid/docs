@@ -102,6 +102,6 @@ For more information on warming up an IP Address, see [Warming up IPS]().ß
 Additional Resources
 {% endanchor h2 %}
 
-- [IP Access Management](https://sendgrid.com/docs/User_Guide/Settings/ip_access_management.html)
-- [Billing Settings](https://sendgrid.com/docs/User_Guide/Settings/billing.html)
-- [Mail](https://sendgrid.com/docs/User_Guide/Settings/mail.html)
+- [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html)
+- [API IP Access Management]({{root_url}}/User_Guide/Settings/ip_access_management.html)
+- [SendGrid billing information]({{root_url}}/User_Guide/Settings/billing.html)
