@@ -62,26 +62,32 @@ Event POST Example
 {% codeblock lang:json %}
 [
   {
-    "sg_message_id":"sendgrid_internal_message_id",
-    "email": "john.doe@sendgrid.com",
+    "email":"john.doe@sendgrid.com",
     "timestamp": 1337197600,
-    "smtp-id": "<4FB4041F.6080505@sendgrid.com>",
+    "smtp-id":"<4FB4041F.6080505@sendgrid.com>",
+    "sg_event_id":"sendgrid_internal_event_id",
+    "sg_message_id":"sendgrid_internal_message_id",
     "event": "processed"
   },
   {
-    "sg_message_id":"sendgrid_internal_message_id",
-    "email": "john.doe@sendgrid.com",
+    "email":"john.doe@sendgrid.com",
     "timestamp": 1337966815,
-    "category": "newuser",
-    "event": "click",
-    "url": "https://sendgrid.com"
+    "ip":"X.XX.XXX.XX",
+    "sg_event_id":"sendgrid_internal_event_id",
+    "url":"https://sendgrid.com",
+    "sg_message_id":"sendgrid_internal_message_id",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
+    "event":"click"
   },
   {
+    "ip": "X.XX.XXX.XX",
+    "sg_user_id": 123,
+    "sg_event_id":"sendgrid_internal_event_id",
     "sg_message_id":"sendgrid_internal_message_id",
+    "useragent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36",
+    "event": "group_unsubscribe",
     "email": "john.doe@sendgrid.com",
     "timestamp": 1337969592,
-    "smtp-id": "<20120525181309.C1A9B40405B3@Example-Mac.local>",
-    "event": "group_unsubscribe",
     "asm_group_id": 42
   }
 ]
@@ -101,7 +107,11 @@ Duplicate Events
 
 **It is possible to see duplicate events in the data posted by the Event Webhook.**
 
-We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event.
+We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator, since this ID is unique for every event where `sg_event_id` is present.
+sg_event_id` comes in two different lengths. One that is 22 characaters long and a second that is 48 characters long. `sg_event_id` is actually a `UUID`. A `UUID` is 128 bit number that is usually presented as text.
+
+48 character `sg_event_id` is a `UUIDv4` encoded and `Base64` decoded string.
+22 character `sg_event_id` is a `Base64url` encoded string.
 
 {% anchor h2 %}
 Event Types
@@ -239,7 +249,7 @@ The following parameters are sent with engagement events: click, open, spamrepor
       </tr>
       <tr>
          <td>ip</td>
-         <td>Which IP address was used to send the email.</td>
+         <td>Which IP address cased the event.</td>
       </tr>
       <tr>
          <td>tls</td>
@@ -547,7 +557,7 @@ Bounce
          <td>Message recipient</td>
          <td>Status code string, e.g. 5.5.0</td>
          <td>Bounce reason from MTA</td>
-         <td>Bounce/Blocked/Expired</td>
+         <td><a href="{{root_url}}/Glossary/bounces.html">Bounce</a></li>/<a href="{{root_url}}/Glossary/blocks.html">Blocked</a>/<a href="{{root_url}}/Glossary/expired.html">Expired</a></td>
          <td>The category you assigned</td>
       </tr>
    </tbody>

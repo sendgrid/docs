@@ -10,8 +10,8 @@ You can add as many of the SMTP API methods as you want to a single large JSON s
 
 {% codeblock lang:json %}{
   "to": [
-    "ben@sendgrid.com",
-    "joe@sendgrid.com"
+    "example@example.com",
+    "example@example.com"
   ],
   "sub": {
     "%name%": [
@@ -57,7 +57,7 @@ You can add as many of the SMTP API methods as you want to a single large JSON s
 use strict;
 use JSON;
 
-my $header = { to => ['ben@sendgrid.com', 'joe@sendgrid.com'],
+my $header = { to => ['example@example.com', 'example@example.com'],
 sub => { '%name%' => [ 'Ben', 'Joe' ], '%role%' =>[ 'sellerSection', 'buyerSection' ] },
 section => { '%sellerSection%' => 'Seller information for: %name%', '%buyerSection%' => 'Buyer information for: %name%' },
 category => 'Orders',
@@ -78,7 +78,7 @@ Requirements and Limitations
 {% endanchor %}
 
 {% warning %}
-While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs to around 1,000 recipients, to better allow for the processing load to be distributed. Furthermore, if you have a large number of additional substitions or sections in the headers, it is best to split the send into even smaller groups.
+While there is a hard limit of 10,000 addresses that can be sent to in a multiple recipient e-mail, it is best to split up large jobs to around 1,000 recipients, to better allow for the processing load to be distributed. Furthermore, if you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
 {% endwarning %}
 
 <p>When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. 

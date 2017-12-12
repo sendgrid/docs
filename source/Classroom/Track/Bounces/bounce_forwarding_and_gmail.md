@@ -17,7 +17,7 @@ If you have [Bounce Forwarding](https://app.sendgrid.com/settings/mail_settings)
 
 Why is that? When Gmail receives one of our bounce forward messages, it has the tendency to get confused. Specifically, it doesn't see a corresponding message in the sent folder that relates to that bounce message. It may then decide that the bounce message isn't valid and send it to spam. 
 
-You can get around this by following the instructions below to create a filter that teaches Gmail to behave differently when receiving bounce forward messages from Sendgrid. 
+You can get around this by following the instructions below to create a filter that teaches Gmail to behave differently when receiving bounce forward messages from SendGrid.
 
  
 

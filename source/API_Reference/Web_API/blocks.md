@@ -28,34 +28,43 @@ Retrieve a list of Blocks with addresses and response codes, optionally with dat
     "status": "4.0.0",
     "created": "2012-09-02 00:12:12",
     "reason": "550 Access denied...04d52d35b93501d500a9bca895ddad5cddd1a9f8486c89ace8c5e959398198cd49cd58288c9d11313975284d852811... (throttled)",
-    "email": "example@juno.com"
+    "email": "example@example.com"
   },
   {
     "status": "4.0.0",
     "created": "2012-09-02 00:21:29",
     "reason": "Connection timed out",
-    "email": "example2@band.la"
+    "email": "example@example.com"
   },
   {
     "status": "4.0.0",
     "created": "2012-09-02 00:25:33",
     "reason": "Unable to resolve MX record for exampledomain.com: nxdomain",
-    "email": "example3@exampledomain.com"
+    "email": "example@example.com"
   }
 ]
   {% endresponse %}
   {% response xml %}
 <blocks>
    <block>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </block>
    <block>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
+      <email>example@example.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: example@example.com</reason>
+      <created>2009-06-10 12:40:30</created>
+   </block>
+   <block>
+      <email>example@example.com</email>
+      <status>5.1.1</status>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: example@example.com</reason>
       <created>2009-08-01 10:16:30</created>
    </block>
 </blocks>

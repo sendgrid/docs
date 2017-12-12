@@ -16,6 +16,16 @@ When a user unsubscribes from a type of email being sent to them at the sender a
 
 For example, if you had an outdated email list (not something we recommend by the way) and sent an email to that list, but a user on that list had previously unsubscribed from that type of email from you, they would not get the email because the email would never leave SendGrid. It would be suppressed from being sent. A contact’s emails will only be suppressed if they unsubscribe from that sender’s emails, unsubscribing from one sender’s list will have no effect on suppression lists owned by other senders.
 
+* [Overview](#Overview)
+* [Add An Unsubscribe Group](#-Add-An-Unsubscribe-Group)
+* [Default Groups](#-Default-Groups)
+* [Add Recipients to an Unsubscribe Group](#-Add-Recipients-to-an-Unsubscribe-Group)
+* [Upload a CSV To Add Unsubscribe Group Recipients](#-Upload-a-CSV-To-Add-Unsubscribe-Group-Recipients)
+* [Export an Unsubscribe Group List](#-Export-an-Unsubscribe-Group-List)
+* [Edit an Unsubscribe Group](#-Edit-an-Unsubscribe-Group)
+* [Delete an Unsubscribe Group](#-Delete-an-Unsubscribe-Group)
+* [Using the API](#-Using-the-API)
+
 {% anchor h2 %}
 Overview
 {% endanchor %}
@@ -46,7 +56,7 @@ Default Groups
 
 Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
 
-You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/API_Reference/SMTP_API/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API. 
+You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/API_Reference/SMTP_API/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
 
 {% anchor h2 %}
 Add Recipients to an Unsubscribe Group
@@ -101,3 +111,11 @@ Using the API
 {% endanchor %}
 
 When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Bounces]({{root_url}}/User_Guide/Suppressions/bounces.html)
+- [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)
+- [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html)

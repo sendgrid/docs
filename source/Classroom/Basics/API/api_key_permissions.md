@@ -120,9 +120,9 @@ Example Permissions for Common API Key Use Cases
   <li><a href="#-Read-Only-Access-for-Suppressions">Suppressions: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Suppressions">Suppressions: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Whitelabels">Whitelabels: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-Whitelables">Whitelabels: Full Access</a></li>
+  <li><a href="#-Full-Access-for-Whitelabels">Whitelabels: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-IP-Management">IP Management: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-IP-Manaagement">IP Management: Full Access</a></li>
+  <li><a href="#-Full-Access-for-IP-Management">IP Management: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Templates">Templates: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Templates">Templates: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Inbound-Parse">Inbound Parse: Read Only Access</a></li>
@@ -533,6 +533,10 @@ Below is a list of every scope included in an administrator level API Key.
   "suppression.unsubscribes.read",
   "suppression.unsubscribes.update",
   "suppression.update",
+  "teammates.create",
+  "teammates.delete",
+  "teammates.read",
+  "teammates.update",
   "templates.create",
   "templates.delete",
   "templates.read",
@@ -575,6 +579,7 @@ Below is a list of every scope included in an administrator level API Key.
   "user.settings.enforced_tls.read",
   "user.settings.enforced_tls.update",
   "user.timezone.read",
+  "user.timezone.update",
   "user.username.read",
   "user.username.update",
   "user.webhooks.event.settings.read",

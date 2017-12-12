@@ -40,7 +40,7 @@ For more information on getting started with the new editing experience, check o
     * [Editing the HTML Head]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Editing-the-HTML-Head)
     * [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
     * [Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag-&-Drop-Markup)
-    * [Drag & Drop Code Examples]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag-&-Drop-Code-Examples)
+    * [Drag & Drop Code Examples]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Drag--Drop-Code-Examples)
     * [Exporting HTML From the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Exporting-HTML-From-the-Design-Editor)
 * [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html)
     * [Getting Started with the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html#-Getting-Started-with-the-Code-Editor)
@@ -96,3 +96,11 @@ If you receive the error “We were unable to detect any drag & drop modules”,
 * Every drag & drop module must include the attribute `role=module`
 
 If you continue to receive an error, please refer to our [example HTML for building a drag & drop module]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML).
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html)
+- [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)
+- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)

@@ -22,7 +22,7 @@ Hostname: email.sendgrid.biz
 URL: https://sendgrid.com/email.php
 {% endcodeblock %}
 
- To test this scenario, we sent an email to isaac@email.sendgrid.biz and created the following form at https://sendgrid.com/email.php:
+ To test this scenario, we sent an email to example@example.com and created the following form at https://sendgrid.com/email.php:
 
 {% codeblock lang:php %}
 <?php

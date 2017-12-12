@@ -26,7 +26,7 @@ There are a few quick points worth highlighting before you dive into the whitela
 * The domain whitelabeling process requires you to create a subdomain of your root domain to whitelabel and send email from.
 * Your reputation is always attributed to your root domain, regardless of the subdomain you whitelabel, or even if you switch subdomains.
 
-If you have three different subdomains that you have whitelabled and send email from, they will all share the same reputation.
+If you have three different subdomains that you have whitelabeled and send email from, they will all share the same reputation.
 
 For example: **marketing.yourdomain.com**, **billing.yourdomain.com**, and **support.yourdomain.com** will all contribute to, and share the reputation of, **yourdomain.com**.
 
@@ -77,7 +77,7 @@ If you add a new default domain whitelabel for a domain that is already whitelab
 Your domain whitelabel will not affect your email link whitelabel and vice versa.
 {% endinfo %}
 
-The domain is the root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel subdomain.example.com, so the root domains match.
+The domain is the root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletteexampexample@example.com, then you should whitelabel subdomain.example.com, so the root domains match.
 
 {% anchor h3 %}
 Use New Domain
@@ -188,7 +188,7 @@ Deleting a Domain Whitelabel
 You cannot recover deleted domain whitelabels.
 {% endinfo %}
 
-To delete one of your domain whitelabels, navigate to your domain whitelabel settings and click the action cog next to the whitelabel you want to delete and click **Delete**. Alternatively, if you are already viewing the details for your domain whitelabel, click the **Delete** button in the bottom right hand corner.
+To delete one of your domain whitelabels, navigate to your domain whitelabel settings and click the action menu next to the whitelabel you want to delete and click **Delete**. Alternatively, if you are already viewing the details for your domain whitelabel, click the **Delete** button in the bottom right hand corner.
 
 {% info %}
 You can NOT delete the default domain whitelabel. You must replace it if you want to change it.

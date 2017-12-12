@@ -34,7 +34,7 @@ Return Path's Brand Monitor is one, and Agari is another.
 5. Escalate your DMARC policy tags from 'p=none' to 'p=quarantine' to 'p=reject' as you gain experience. 
 
 
-## 1. Deploy DKIM & SPF by Whitelabeling your Sendgrid IP
+## 1. Deploy DKIM & SPF by Whitelabeling your SendGrid IP
 
 Start by completing the Whitelabel process for your account. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
 For more information on completing this process, visit the documentation:   
@@ -64,7 +64,7 @@ The record explained:
 
 **p** =quarantine **;**   - Policy - Tell receiver to QUARANTINE unqualified mail, which generally means “send this directly to the spam folder”.
 
-**rua** = [mailto:dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com) Reporting URI of aggregate reports - Send aggregate reports to dmarc.rua [@customdomain.com](mailto:postmaster@whitelabeldomain.com), set this to an email address you control that is closely monitored.
+**rua** = [mailto:example@example.com](mailto:postmaster@whitelabeldomain.com) Reporting URI of aggregate reports - Send aggregate reports to dmarc.rua [@customdomain.com](mailto:postmaster@whitelabeldomain.com), set this to an email address you control that is closely monitored.
 
 Note: This example uses the p=quarantine policy, but always start out using the p=none policy at first.
 

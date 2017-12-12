@@ -64,7 +64,7 @@ Pointing to a Hostname and URL
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
-  The subdomain-domain combination must be unique. We recommend adding a subdomain such as "parse" to ensure that only emails sent to the @parse.example.com are parsed.
+  If you use the same subdomain as your Whitelabeled Domain, you must have Automatic Security disabled on the Domain Whitelabel. Otherwise, those messages will bounce due to an infinite CNAME>MX loop.
 
 {% info %}
 The URL must be accessible from the public web.
@@ -90,7 +90,7 @@ You have just finished configuring Inbound Parse!
 Testing
 {% endanchor %}
 
-To test if everything is working, send an email from your email account to anything@parse.yourdomain.com.
+To test if everything is working, send an email from your email account to example@example.com.
 
 {% info %}
 The local-part (i.e. anything before @) can be any word or combination because all email for the domain or subdomain will be processed.
@@ -99,7 +99,7 @@ The local-part (i.e. anything before @) can be any word or combination because a
 You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/API_Reference/Webhooks/debug.html).
 
 {% warning %}
-Remember to direct your incoming email to your hostname (e.g. anything@parse.yourdomain.com). If you do not, your incoming email will not be parsed.
+Remember to direct your incoming email to your hostname (e.g. example@example.com). If you do not, your incoming email will not be parsed.
 {% endwarning %}
 
 {% anchor h2 %}
@@ -179,8 +179,8 @@ Example Default Payload
 [Date] array(16) {
   ["headers"]=>
   string(1970) "Received: by mx0047p1mdw1.sendgrid.net with SMTP id 6WCVv7KAWn Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
-Received: from mail-io0-f169.google.com (mail-io0-f169.google.com [209.85.223.169]) by mx0047p1mdw1.sendgrid.net (Postfix) with ESMTPS id AA9FFA817F2 for <parse@parse.yourdomain.com>; Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
-Received: by mail-io0-f169.google.com with SMTP id b62so81593819iod.3 for <parse@parse.yourdomain.com>; Wed, 27 Jul 2016 13:53:06 -0700 (PDT)
+Received: from mail-io0-f169.google.com (mail-io0-f169.google.com [209.85.223.169]) by mx0047p1mdw1.sendgrid.net (Postfix) with ESMTPS id AA9FFA817F2 for <example@example.comom>; Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
+Received: by mail-io0-f169.google.com with SMTP id b62so81593819iod.3 for <example@example.comom>; Wed, 27 Jul 2016 13:53:06 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.com; s=ga1; h=mime-version:from:date:message-id:subject:to; bh=DpB1CYYeumytcPF3q0Upvx3Sq/oF4ZblEwnuVzFwqGI=; b=GH5YTxjt6r4HoTa+94w6ZGQszFQSgegF+Jlv69YV76OLycJI4Gxdwfh6Wlqfez5yID 5dsWuqaVJZQyMq/Dy/c2gHSqVo60BKG56YrynYeSrMPy8abE/6/muPilYxDoPoEyIr/c UXH5rhOKjmJ7nICKu1o99Tfl0cXyCskE7ERW0=
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=DpB1CYYeumytcPF3q0Upvx3Sq/oF4ZblEwnuVzFwqGI=; b=Sq6LVHbmywBdt3sTBn19U8VOmelfoJltz8IcnvcETZsYwk96RBxN+RKMN5fOZSKw4j 15HrgdIFfyDmp67YK0ygvOITlTvZ6XY5I0PtnvDtAQt79kS3tKjI3QKJoEp/ZjIjSzlL KG7agl6cxFgBbIN0yHWBOvy3O+ZXY8tZdom1yOvULjmjW1U9JkdOs+aJ6zq4qhZX/RM/ tIgLB461eJ5V95iQDDc5Ibj9Cvy4vJfXLQRO0nLVQAT2Yz58tkEO1bDZpWOPAyUNneIL yhIWp+SpbuqhMA68mq0krG1PjmWalUbpVcGJIGuOKB9mQFFo/MqdrUCjvYnyo1jPLPeX psdQ==
 X-Gm-Message-State: AEkoousvdxmDoxLlTUYJ1AOmCGJv77xRBBlfKv6YrthH0M2NueMwlOxUD6t8nidE9uonXbdJ/DQy/chmHUnN//a4
@@ -191,7 +191,7 @@ From: Sender Name <example@example.com>
 Date: Wed, 27 Jul 2016 14:53:05 -0600
 Message-ID: <CAN_P_JMvV7ZpAQhOnDienypLrJmuhN=LQWweu4yScw4jQyXY2w@mail.gmail.com>
 Subject: Different File Types
-To: parse@parse.yourdomain.com
+To: example@example.comom
 Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
 "
   ["dkim"]=>
@@ -199,7 +199,7 @@ Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
   ["content-ids"]=>
   string(37) "{"ii_1562e2169c132d83":"attachment1"}"
   ["to"]=>
-  string(26) "parse@parse.yourdomain.com"
+  string(26) "example@example.comom"
   ["html"]=>
   string(479) "<div dir="ltr">Here&#39;s an email with multiple attachments<div><br></div><div><img src="cid:ii_1562e2169c132d83" alt="Inline image 1" width="455" height="544"><br clear="all"><div><br></div>-- <br><div class="gmail_signature" data-smartmail="gmail_signature"><div dir="ltr"><img src="https://sendgrid.com/brand/sg-logo-email.png" width="96" height="17"><br><div><br></div></div></div>
 </div></div>
@@ -232,7 +232,7 @@ Content analysis details:   (2.6 points, 5.0 required)
 
 "
   ["envelope"]=>
-  string(66) "{"to":["parse@parse.yourdomain.com"],"from":"example@example.com"}"
+  string(66) "{"to":["example@example.comom"],"from":"example@example.com"}"
   ["attachments"]=>
   string(1) "2"
   ["subject"]=>
@@ -322,7 +322,7 @@ array(11) {
   ["email"]=>
   string(8879) "Received: by mx0032p1mdw1.sendgrid.net with SMTP id rOkt2xLLKV Tue, 19 Jul 2016 15:06:29 +0000 (UTC)
 Received: from mail-it0-f45.google.com (mail-it0-f45.google.com [209.85.214.45]) by mx0032p1mdw1.sendgrid.net (Postfix) with ESMTPS id 26D6080397 for <parse@parse.yourdomain>; Tue, 19 Jul 2016 15:06:22 +0000 (UTC)
-Received: by mail-it0-f45.google.com with SMTP id f6so93587860ith.1 for <parse@parse.yourdomain.com>; Tue, 19 Jul 2016 08:06:22 -0700 (PDT)
+Received: by mail-it0-f45.google.com with SMTP id f6so93587860ith.1 for <example@example.comom>; Tue, 19 Jul 2016 08:06:22 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.com; s=ga1; h=mime-version:from:date:message-id:subject:to; bh=UYWCIUKTVXyV9U41l+c9+qOlpoeQGcJkKpyOAatNr3Y=; b=c1I/LcqHEJklmAThWr9Z8NKlTPHUlE/8sDSpK382fJtIQcGdUtczG0pijnUHegrFVt FDr4NehtJDD9KFvXLXboLCtObsu5HTN99ckUCCZTibZseA+J8U3jjCqTdj1fmUage5C7 //Iwi0Ndioonzhm18J7KStap66yZ69ED7UxPk=
 X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20130820; h=x-gm-message-state:mime-version:from:date:message-id:subject:to; bh=UYWCIUKTVXyV9U41l+c9+qOlpoeQGcJkKpyOAatNr3Y=; b=lgmLXnmmpNcQMckjshsZsa2/8OjFZzntWYSG5XZo0fi32KHLuBLSHuNDFXn0V4ICp1 1xuT2fZCyhBSgNBiWNbjqFspdemzrBjaI1Tgm/Zz8Fv6wW2XdjpoANNQzJxfdhnecPd5 HvZ5P8+KTqjr4tAa9RmLthDc3UqhV9NRnCnhbW/AZaVQLB8eoJus92tD1GeXpBQml5XF m6vPUGrWGZWNugINkRKxIpk+2uECglAjNm4NpZIi9j7N94CxA18RC4NJ59WIsSybtIer hbCgT1Q13rvGEzvnp6FfFQVbE3DOibNqd0bh/EvZCagFVbnenNc/Q+qHtU9KqFlisSOp xh0w==
 X-Gm-Message-State: ALyK8tINVaZIP8YCgQbpg5ya8EnqQo76uxkXUPpDnM+kAyAQQzehFU10EgyuAe2fAmWf/muBiFDy0JDU74Eclp1/
@@ -333,7 +333,7 @@ From: Sender Name <example@example.com>
 Date: Tue, 19 Jul 2016 09:06:21 -0600
 Message-ID: <CAN_P_JNa25--hzm5=-ES9cnxgWa+h+E49OOAS7sPpV0gsoXCOw@mail.gmail.com>
 Subject: Hello
-To: parse@parse.yourdomain.com
+To: example@example.comom
 Content-Type: multipart/mixed; boundary=001a11447dc881e40f0537fe6d5a
 
 --001a11447dc881e40f0537fe6d5a
@@ -462,7 +462,7 @@ AFtDb250ZW50X1R5cGVzXS54bWxQSwUGAAAAAAgACAD/AQAAmw4AAAAA
 --001a11447dc881e40f0537fe6d5a--
 "
   ["to"]=>
-  string(22) "parse@parse.yourdomain.com"
+  string(22) "example@example.comom"
   ["from"]=>
   string(33) "Sender Name <example@example.com>"
   ["sender_ip"]=>
@@ -485,7 +485,7 @@ Content analysis details:   (0.4 points, 5.0 required)
 
 "
   ["envelope"]=>
-  string(73) "{"to":["parse@parse.yourdomain.com"],"from":"example@example.com"}"
+  string(73) "{"to":["example@example.comom"],"from":"example@example.com"}"
   ["subject"]=>
   string(5) "Hello"
   ["spam_score"]=>

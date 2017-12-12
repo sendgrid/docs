@@ -23,7 +23,7 @@ Depending on the _reason_ you may want to consider removing the address from you
 
 If messages to the recipient **Bounced** with any reason that indicates the account is no longer active or does not exist, you should consider removing the address from your master list. We will continue to Drop future sends to addresses that are on this list, but this still uses email credits.
 
-If the recipient **Unsusbcribed** or marked one of your messages as **Spam** , you should remove the address from your master list as the recipient has indicated they do not wish to receive further mailings. We will continue to Drop future sends to addresses that are on these lists, but this still uses email credits.
+If the recipient **Unsubscribed** or marked one of your messages as **Spam** , you should remove the address from your master list as the recipient has indicated they do not wish to receive further mailings. We will continue to Drop future sends to addresses that are on these lists, but this still uses email credits.
 
 If the address is **Invalid** you should remove it from your recipient list regardless, as more than likely it is a bogus domain or an inactive mailserver. 
 

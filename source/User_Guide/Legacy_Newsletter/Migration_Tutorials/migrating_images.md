@@ -52,3 +52,11 @@ You can select multiple images to upload at once.
 {% endinfo %}
 
 ![]({{root_url}}/images/upload_images.gif)
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Downloading Historical Statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
+- [Migrating Using API Calls]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)
+- [SendGrid Support]({{site.support_url}})

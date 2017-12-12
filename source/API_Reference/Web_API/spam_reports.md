@@ -32,7 +32,7 @@ get
   },
   {
     "ip": "74.63.202.105",
-    "email": "example2@yahoo.com",
+    "email": "example@example.com",
     "created": "2009-12-08 07:43:01"
   }
 ]
@@ -46,7 +46,7 @@ get
    </spamreport>
    <spamreport>
       <ip>74.63.202.105</ip>
-      <email>example2@yahoo.com</email>
+      <email>example@example.com</email>
       <created>2009-12-08 07:43:01</created>
    </spamreport>
 </spamreports>

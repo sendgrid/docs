@@ -413,7 +413,7 @@ The current breakdown of users who are using your IPs.
 
 ### Response
 
-{% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>user4@example.com</user></entry><entry><ip>255.255.254.0</ip><user>user4@example.com</user></entry></ips
+{% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>example@example.com</user></entry><entry><ip>255.255.254.0</ip><user>example@example.com</user></entry></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
       
@@ -429,7 +429,7 @@ The current breakdown of users who are using your IPs.
 
 <h3>Response: Success</h3>
 {% codeblock %}
-{"ip":"255.255.253.0","user":"user4@example.com"},{"ip":"255.255.254.0","user":"user4@example.com"}
+{"ip":"255.255.253.0","user":"example@example.com"},{"ip":"255.255.254.0","user":"example@example.com"}
 {% endcodeblock %}
 
 ### Response: Error

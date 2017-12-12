@@ -26,7 +26,7 @@ Imagine that a sender is a host at a party and all of the other guests are the r
 The “Handshake” Details and Results
 {% endanchor %}
 
-The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is person@customer.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
+The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is example@example.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
 
 * “Yes, I know who ‘person’ is and all is in order to deliver it to their inbox.”
 * “Yes, I know who ‘person’ is and all is in order to deliver the message but not to the inbox.”

@@ -109,7 +109,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param headers "object" No "" "An object allowing you to specify specific handling instructions for your email." 1 %}
     {% api_table_param substitutions "object" No "Max 100 substitutions, or 10K bytes, per personalization object." "An object following the pattern &#34;substitution_tag&#34;:&#34;value to substitute&#34;. All are assumed to be strings. These substitutions will apply to the content of your email, in addition to the <code>subject</code> and <code>reply-to</code> parameters. <br><br><strong>You may not include more than 100 substitutions per personalization object, and the total collective size of your substitutions may not exceed 10,000 bytes per personalization object.</strong>" 1 %}
     {% api_table_param custom_args "object" No "May not exceed 10,000 bytes" "These are values that are specific to this personalization that will be carried along with the email, activity data, and links. Substitutions will not be made on custom arguments. <code>personalizations[x].custom_args</code> will be merged with message level <code>custom_args</code>, overriding any conflicting keys. The combined total size of the resulting custom arguments, after merging, for each personalization may not exceed 10,000 bytes." 1 %}
-    {% api_table_param send_at integer No "Value in seconds (not ms)" "A unix timestamp allowing you to specify when you want your email to be sent from SendGrid. <b>This is not necessary if you want the email to be sent at the time of your API request.</b>" 1 %}
+    {% api_table_param send_at integer No "Value in seconds (not ms)" "A unix timestamp allowing you to specify when you want your email to be sent from SendGrid. If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail." 1 %}
   {% api_table_param from "object" Yes "May not include Unicode encoding." "An email object containing the email address and name of the sender. <strong>Unicode encoding is not supported for the <code>from</code> field</strong>." 0 %}
     {% api_table_param email string Yes "" "The email address of the sender." 1 %}
     {% api_table_param name string No "" "The name of the sender." 1 %}
@@ -157,7 +157,7 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
     {% api_table_param click_tracking object No "" "Allows you to track whether a recipient clicked a link in your email." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param enable_text boolean No "true or false" "Indicates if this setting should be included in the text/plain portion of your email." 2 %}
-    {% api_table_param open_tracking object No "" "Allows you to track whether the email was opened or not, but including a single pixel image in the body of the content. When the pixel is loaded, we can log that the email was opened." 1 %}
+    {% api_table_param open_tracking object No "" "Allows you to track whether the email was opened or not, by including a single pixel image in the body of the content. When the pixel is loaded, we can log that the email was opened." 1 %}
       {% api_table_param enable boolean No "true or false" "Indicates if this setting is enabled." 2 %}
       {% api_table_param substitution_tag string No "" "Allows you to specify a substitution tag that you can insert in the body of your email at a location that you desire. This tag will be replaced by the open tracking pixel." 2 %}
     {% api_table_param subscription_tracking object No "" "Allows you to insert a subscription management link at the bottom of the text and html bodies of your email. If you would like to specify the location of the link within your email, you may use the substitution_tag." 1 %}
@@ -173,3 +173,28 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
       {% api_table_param utm_content string No "" "Used to differentiate your campaign from advertisements." 2 %}
       {% api_table_param utm_campaign string No "" "The name of the campaign." 2 %}
 {% endapi_table %}
+{% anchor h2 %}
+Response Example
+{% endanchor %}
+
+{% codeblock %}
+Response Code: 202 Accepted
+Response Headers:
+    Access-Control-Allow-Headers →Authorization, Content-Type, On-behalf-of, x-sg-elas-acl
+    Access-Control-Allow-Methods →POST
+    Access-Control-Allow-Origin →https://sendgrid.api-docs.io
+    Access-Control-Max-Age →600
+    Connection →keep-alive
+    Content-Length →0
+    Content-Type →text/plain; charset=utf-8
+    Date →Mon, 23 Oct 2017 23:09:41 GMT
+    Server →nginx
+    X-Message-Id →kA5kcHA8SVGtVh5S9rAUew
+    X-No-CORS-Reason →https://sendgrid.com/docs/Classroom/Basics/API/cors.html
+Response Body:
+
+{% endcodeblock %}
+
+{% info %}
+If you are using the Event Webhook, it's best practice to store your [X-Message-ID](https://sendgrid.com/docs/Glossary/x_message_id.html) data help with deduplications in your webhook data.
+{% endinfo %}
