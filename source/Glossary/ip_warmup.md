@@ -5,7 +5,7 @@ title: IP Warmup
 navigation:
   show: false
 seo:
-  title: Warming up and IP
+  title: IP Warmup
   override: true
   description: Initially splitting up the email send requests from a new dedicated IP, so it doesn't get blocked.
   keywords: IP, warm, up, warmup, ramp, ramping

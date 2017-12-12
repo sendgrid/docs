@@ -836,3 +836,14 @@ Redirect 301 /Classroom/Basics/Email_Infrastructure/smtp_ports.html https://send
 Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+
+#######
+#
+#  IP Redirects
+#
+#######
+
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/ip_warmup_schedule.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+

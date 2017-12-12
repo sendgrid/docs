@@ -2,15 +2,16 @@
 seo:
   title: Warming Up an IP Address
   description: Learn how to warm up your new dedicated IP address and why it's important.
-  keywords: warm, up, warmup, auto, automatic, manual api, v3, ip, pool, warmup, pools
+  keywords: warm, up, warmup, auto, automatic, manual API, v3, ip, pool, warmup, pools
 title: Warming Up an IP Address
 weight: 0
 layout: page
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-When you add a new dedicated IP address to your account, you need to warm it up. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually send more emails over your new IP in order to establish a good [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html).
+When you add a new dedicated IP address to your account, you need to warm it up. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html).
 
 - [What is warming up an IP?]()
 - [Warmup types]()
@@ -27,7 +28,7 @@ IP warming is the practice of gradually increasing the volume of mail sent with 
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
 
-A gradual warm up does not always guarantee a perfect sending reputation. It is still important to follow sending [best practices](https://sendgrid.com/blog/10-tips-to-keep-email-out-of-the-spam-folder/).
+A gradual warm-up does not always guarantee a perfect sending reputation. It is still important to follow sending [best practices](https://sendgrid.com/blog/10-tips-to-keep-email-out-of-the-spam-folder/).
 
 {% info %}
 It is much easier to establish a positive reputation as a new sender, than it is to repair an existing reputation.
@@ -51,8 +52,8 @@ Automated IP warmup
 
 *To set up automated IP warmup in the UI:*
 
-1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses). 
-1. Click the action menu for the IP you want to warm up. 
+1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses).
+1. Click the action menu for the IP you want to warm up. This brings up the **Edit Your Dedicated IP Address** screen.
 1. Select **Use Automated IP warmup**.
 1. Save the **Edit Your Dedicated IP Address** screen.
 
@@ -71,6 +72,6 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 Why don't other ESPs require IP warmup?
 {% endanchor %}
 
-Many other email service providers, especially those focused on marketing email tools, may not offer dedicated IP addresses to their customers. Many ESPs place all of their customers on shared IP groups by default. When sending on a shared IP group, warming up is not usually required.
+Many other email service providers do not offer dedicated IP addresses to their customers - they place all of their customers on shared IP groups by default. Warming up is not required for a shared IP group - SendGrid handles this automatically.
 
-While it may be less cost effective and more technically complicated to provide dedicated IPs for our customers, we feel that it is important and empowering for our users to earn their own reputations. This also lets you completely control your own reputation, and prevents your sending from being impacted by the reputations of other SendGrid users.
+Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
