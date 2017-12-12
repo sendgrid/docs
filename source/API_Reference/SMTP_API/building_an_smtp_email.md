@@ -72,10 +72,10 @@ Limitations
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="http://tools.ietf.org/html/rfc821"> RFC 821
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final e-mail. If your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
-- When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`. To see a list of Unicode characters in the Wikipedia's [Unicode Article](http://en.wikipedia.org/wiki/List_of_Unicode_characters).
+- When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.
 
 {% anchor h2 %}
-Customizing Your Send (filters)
+Customizing your send (filters)
 {% endanchor %}
 
 You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
@@ -190,7 +190,7 @@ Categories allow you to track your emails according to broad topics that you def
 }
 {% endcodeblock %}
 
-For more information, see our categories documentation.
+For more information, see our [categories documentation]({{root_url}}/API_Reference/SMTP_API/categories.html)
 
 {% info %}
 Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
