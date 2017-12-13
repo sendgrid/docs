@@ -98,7 +98,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Image</td>
-    <td>Can contain a single image.Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
+    <td>Can contain a single image. Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
     <td>Image background, image margin, link url, alt text, alignment, responsive, height, width</td>
   </tr>
   <tr>
@@ -120,6 +120,11 @@ You can add the following drag & drop modules to your campaign:
     <td>Social</td>
     <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
+  </tr>
+  <tr>
+    <td>Unsubscribe</td>
+    <td>This module is pre-populated with your sender information and unsubscribe links which are required in order to be compliant with anti-spam laws.</td>
+    <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
 
@@ -222,32 +227,48 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code></td>
+   <td><code>[%email%]</code></td>
+   <td>The email address of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[%first_name%]</code></td>
+   <td>The first name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[%last_name%]</code></td>
+   <td>The last name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[Sender_Name]</code>*</td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code></td>
+   <td><code>[Sender_City]</code>*</td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code></td>
+   <td><code>[Sender_State]</code>*</td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code></td>
+   <td><code>[Sender_Zip]</code>*</td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code></td>
+   <td><code>[Unsubscribe]</code>*</td>
    <td>This tag will be replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code></td>
+   <td><code>[Unsubscribe_Preferences]</code>
+   *</td>
    <td>This tag will be replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
@@ -257,6 +278,7 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>Weblink</td>
  </tr>
 </table>
+*For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor. 
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
