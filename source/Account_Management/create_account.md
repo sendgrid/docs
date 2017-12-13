@@ -34,14 +34,6 @@ You will need to estimate your sending needs to determine what [kind of account]
 Make sure you have access to the email address you use to register the account. This is where you will receive any verification, password reset, or billing emails. 
 {% endinfo %}
 
-Once you're finished signing up, you need to select how you wish to send email.
-
-Select one of the following:
-
-* Integrate using our Web API or SMTP relay - 
-* Integrate with popular applications
-* Build and send using Marketing Campaigns
-
 {% anchor h3 %}
 Verify your account
 {% endanchor h3 %}
@@ -70,9 +62,17 @@ If the email does not make it into your inbox for some reason, you can resend it
 1. Click **Resend**. 
 1. Enter the email address associated with your SendGrid account, and then click **Send Confirmation Email**. 
 ![Resend Account Verification Email]({{root_url}}/images/setup_guide_email_verification.png)
+1. Once you've verified your email address, you need to verify your phone number by adding [two-factor authentication](https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html) to your account. 
 
+As a final step, SendGrid recommends setting up a [domain whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html) before sending your first email. 
 
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
 
+- [Creating Subusers](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
+- [Creating Teammates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+- [Resetting your username or password](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)
 
 
 
