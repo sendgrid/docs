@@ -36,6 +36,10 @@ You may choose from two different verification methods when using two-factor aut
 When authenticating via SMS message, you must have cellular service or you will not be able to log into your account.
 {% endwarning %}
 
+{% info %}
+You can create multiple configurations of Two-Factor Authentication, allowing you to use more than one mobile device to authenticate when logging into your account
+{% endinfo %}
+
 *To set up Two-Factor Authentication:*
 
 1. Navigate to **Settings**, and click **Two-Factor Authentication**. 
@@ -45,7 +49,7 @@ When authenticating via SMS message, you must have cellular service or you will 
 1. Enter your **country code** and **phone number**.
 
 {% info %}
-You can create multiple configurations of Two-Factor Authentication, allowing you to use more than one mobile device to authenticate when logging into your account
+Subusers and Teammates need to create their own Two-Factor Authentication settings in their account using the same steps. 
 {% endinfo %}
 
 {% anchor h2 %}
