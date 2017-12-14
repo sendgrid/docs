@@ -4,7 +4,7 @@ weight: 100
 title: Subusers
 seo:
   title: Subusers
-  description: Create and Manage your Subusers
+  description: Create and Manage Subusers
   keywords: Subuser settings, create Subuser, manage Subuser, delete Subuser
 navigation:
   show: true
@@ -88,7 +88,6 @@ We do not require this information for your Subusers, but we suggest that you fi
 
 **Company Website** - The website for your Subuser’s business.
 
-
 {% anchor h2 %}
 Allocating or removing credits from a Subuser
 {% endanchor %}
@@ -139,9 +138,9 @@ To make this easier, we’ve made it so you can impersonate a Subuser from your 
 1. Log into SendGrid. 
 2. Go to the top left corner of the portal screen and click on your name just above the navigation menu.
 3. Click **Switch User**. 
-4. Choose the Subuser you want to impersonate by clicking that Subuser’s name
+4. Choose the Subuser you want to impersonate by clicking that Subuser’s name.
 
-The page will refresh and you will notice a message at the top of the screen that says, “You're currently logged in as [Subuser name]”
+The page will refresh and you will notice a message at the top of the screen that says, “You're currently logged in as [Subuser name]”.
 
 If you have more than one Subuser you can also switch to another Subuser by clicking **Switch Subuser** in the top-right corner once you are impersonating any Subuser.
 
@@ -149,7 +148,7 @@ If you have more than one Subuser you can also switch to another Subuser by clic
 Switching back to your parent account
 {% endanchor %}
 
-Click the link at the top left that says “<- Back to Parent Account”. This will log you out of the Subuser account and take you back to your parent account portal.
+Click the link at the top left that says “Back to Parent Account”. This will log you out of the Subuser account and take you back to your parent account portal.
 
 
 {% anchor h2 %}
