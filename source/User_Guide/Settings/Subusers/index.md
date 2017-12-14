@@ -22,8 +22,6 @@ Subusers are SendGrid accounts that belong to a parent account. They have their 
 - [Optional Profile Information](#-Optional-Profile-Information)
 - [Export Subuser Information](#-Export-Subuser-Information)
 
-
-
 {% anchor h2 %}
 Create a Subuser
 {% endanchor %}
@@ -38,29 +36,19 @@ An account can have up to 15 subusers. If you need more, please contact [SendGri
 
 1. Navigate to **Settings** and select **Subuser Management**. 
 1. Click **Create New Subuser**. 
-1. Enter the following information into the corresponding fields:
+1. Enter the following required information into the corresponding fields:
+
  * Username - The username your subuser will use to send email and access the API.
  * Email Address - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a subuser, it is our policy to contact the    parent account email address at the same time.
  * Password - The password your subuser will use to access SendGrid.com.
  * Avatar - A [gravatar](http://gravatar.com) will load when an email address is entered, making it easier to identify your subusers in the subuser list.
 
-Email Monitor - By default, this feature is off. To turn it on, click the “off” button. You will be shown a form that allows you to set the frequency that SendGrid will test emails and the address to which these emails will be forwarded.
-
-{% warning %}
-One email credit will be charged for every monitor email that is sent.
-{% endwarning %}
-
-The “Collect Sample Rate” is the number of emails SendGrid will allow your account to send before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100, then you will receive a copy of every 100th email this subuser sends.
-
-{% info %}
-Keep in mind that the subusers assigned to an IP address will effect the sending reputation of that IP address. This can include both the parent account and other subuser accounts assigned to that IP. All account plans below Pro 100k share an IP address with other users on the same account level. Upgrading to Pro 100k plan or higher includes a dedicated IP address. This means that your account and subusers sending practices alone effect the sending reputation of the IP addresses assigned to your account.
-{% endinfo %}
-
-**IP Addresses**
-
-When you create a SendGrid account and select a Pro plan or higher, your account is assigned to a dedicated IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and assigned IP addresses to them or set up [IP Pools]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html).
-
-We give you the same functionality when you create your subusers. Simply select the IP address you would like this subuser to send from. We will show you which other users are assigned to the same IP address, so you can keep similar senders together.
+1. Select the IP Address you wish to associate with the Subuser account. 
+   When you create a SendGrid account and select a Pro plan or higher, your account is assigned to a dedicated IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and assigned IP addresses to them or set up [IP Pools]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html). You can see which other users are assigned to the same IP address, so you can keep similar senders together.
+   
+   {% info %}
+   Keep in mind that the subusers assigned to an IP address will effect the sending reputation of that IP address. This can include both the parent account and other subuser accounts assigned to that IP. All account plans below Pro 100k share an IP address with other users on the same account level. Upgrading to Pro 100k plan or higher includes a dedicated IP address. This means that your account and subusers sending practices alone effect the sending reputation of the IP addresses assigned to your account.
+   {% endinfo %}
 
 If you need more IP addresses, please contact [SendGrid support]({{site.support_url}}).
 
@@ -68,9 +56,12 @@ If you need more IP addresses, please contact [SendGrid support]({{site.support_
 Manage Subusers
 {% endanchor %}
 
-Subusers can be managed via [Subuser API](https://sendgrid.api-docs.io/v3.0/subusers-api) or by logging into your SendGrid account under Settings > Subuser Management.
+Subusers can be managed via [Subuser API](https://sendgrid.api-docs.io/v3.0/subusers-api) or by using the SendGrid app.
 
-To manage a Subuser, click the name of the Subuser. This will take you to the Subuser’s account and profile settings. From there, you can manage and update your Subuser Settings.
+*To manage a Subuser from the SendGrid app:*
+
+1. Navigate to **Settings** and select **Subuser Management**.
+1. Select the name of the Subuser. This takes you to the Subuser’s account and profile settings. From there, you can manage and update your Subuser Settings.
 
 {% anchor h2 %}
 Optional Profile Information
