@@ -92,6 +92,71 @@ We do not require this information for your subusers, but we suggest that you fi
 **Company Website** - The website for your subuser’s business.
 
 {% anchor h2 %}
+Allocating or Removing Credits From a Subuser
+{% endanchor %}
+
+{% warning %}
+This feature only makes changes to a subuser when the nonrecurring credit option is selected for this subuser.
+{% endwarning %}
+
+If your subuser has been allocated nonrecurring credits, then this feature will allow you to allocate credits to, or remove credits from this subuser account. Simply click **Change Credit Rules** and then choose whether to add or subtract credits for this subuser.
+
+{% anchor h2 %}
+Adding a whitelabel domain to a subuser account
+{% endanchor %}
+
+Using a domain whitelabel allows you to better authenticate the email that you send by removing the “sent via sendgrid.net” message that your recipients see on un-whitelabeled emails. This has the added benefit of giving you complete control over your sending reputation.
+
+{% info %}
+In order to add a domain whitelabel or whitelabel link to a subuser account, there must be one or more of these whitelabels set up in the parent account. 
+{% endinfo %}
+
+*To add a domain whitelabel to a subuser account:*
+
+1. Navigate to **Settings** and select **Subuser Management**. 
+1. Locate the subuser account you wish to delete and click on the name to view the account details. 
+1. On the *Account Settings* page, navigate to the Whitelabel Domain section and then click **Change Sending**. 
+1. From the drop-down menus that appear, select a whitelabel domain and/or a whitelabel link to associate with the subuser account. 
+1. Once you've made all of your selections, click **Save**. 
+
+{% anchor h2 %}
+Monitoring subuser email content
+{% endanchor %}
+
+This feature allows you to recieve a sample of a subuser's email content to help ensure that the content is not damaging your reputation. 
+
+{% warning %}
+One email credit will be charged for every monitor email that is sent
+{% endwarning %}
+
+The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this subuser sends.
+
+{% anchor h2 %}
+Impersonating a subuser
+{% endanchor %}
+
+When you set up subusers, it may be useful to see what the subuser’s settings are and to see what the subuser can see in the SendGrid UI.
+To make this easier, we’ve made it so you can impersonate a subuser from your parent account and then manage the subuser the same way as if you had logged in with that user’s credentials, without having to log out of your parent account.
+
+*To impersonate a subuser:*
+
+1. Log into SendGrid. 
+2. Go to the top left corner of the portal screen and click on your name just above the navigation menu.
+3. Click **Switch User**. 
+4. Choose the subuser you want to impersonate by clicking that subuser’s name
+
+The page will refresh and you will notice a message at the top of the screen that says, “You're currently logged in as [subuser name]”
+
+If you have more than one subuser you can also switch to another subuser by clicking **Switch Subuser** in the top-right corner once you are impersonating any subuser.
+
+{% anchor h3 %}
+Switching back to your parent account
+{% endanchor %}
+
+Click the link at the top left that says “<- Back to Parent Account”. This will log you out of the subuser account and take you back to your parent account portal.
+
+
+{% anchor h2 %}
 Export Subuser Information
 {% endanchor %}
 
@@ -103,6 +168,34 @@ If you would like to see how your subusers are performing in comparison to each 
 1. Click **Export Data**. 
 
  <br>This downloads a CSV file that will have each subuser’s reputation, number of requests each subuser made this month, and the number of requests each subuser made last month. 
+
+ {% anchor h2 %}
+Disabling a subuser account 
+{% endanchor %}
+
+*To turn off a subuser’s access to SendGrid temporarily:*
+
+1. Navigate to **Settings** and select **Subuser Management**.  
+1. Locate the subuser account you wish to disable and click on the name to view the account details. 
+click **Enable**.
+
+To re-enable a subuser’s account, simply click **Disabled**.
+
+{% anchor h2 %}
+Deleting a subuser account
+{% endanchor %}
+
+{% warning %}
+Deleting a subuser account cannot be undone. Please make sure that you are ready to delete this account before you delete it. All access for this subuser will immediately be revoked upon deletion.
+{% endwarning %}
+
+*To delete a subuser account:*
+
+1. Navigate to **Settings** and select **Subuser Management**. 
+1. Locate the subuser account you wish to delete and click on the name to view the account details. 
+1. On the *Account Settings* page, click **Delete**. 
+   A confirmation window appears. 
+1. Click **Confirm** to delete the subuser account.  
 
 {% anchor h2 %}
 Additional Resources
