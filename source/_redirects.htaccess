@@ -845,3 +845,5 @@ Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://send
 #######
 
 Redirect 301 /User_Guide/Settings/Subusers/profile.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
+Redirect 301 /User_Guide/Settings/Subusers/impersonation.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
+Redirect 301 /User_Guide/Settings/Subusers/settings.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
