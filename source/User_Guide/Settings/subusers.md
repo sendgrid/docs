@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 100
-title: Subusers Overview
+title: Subusers
 seo:
-  title: Create and Manage Subusers
+  title: Subusers
   description: Create and Manage your Subusers
   keywords: subuser settings, create subuser, manage subuser, delete subuser
 navigation:
@@ -20,7 +20,13 @@ Subusers are SendGrid accounts that belong to a parent account. They have their 
 - [Create a Subuser](#-Create-a-Subuser)
 - [Manage Subusers](#-Manage-Subusers)
 - [Optional Profile Information](#-Optional-Profile-Information)
+- [Allocating or Removing Credits From a Subuser](#-Allocating-or-Removing-Credits-From-a-Subuser)
+- [Adding a whitelabel domain to a subuser account](#-Adding-a-whitelabel-domain-to-a-subuser-account)
+- [Monitoring subuser email content](#-Monitoring-subuser-email-content)
+- [Impersonating a subuser](#-Impersonating-a-subuser)
 - [Export Subuser Information](#-Export-Subuser-Information)
+- [Disabling a subuser account](#-Disabling-subuser-account)
+- [Deleting a subuser account](#-Deleting-a-subuser-account)
 
 {% anchor h2 %}
 Create a Subuser
@@ -28,20 +34,16 @@ Create a Subuser
 
 New SendGrid accounts do not come with subusers and must be created by the parent account.
 
-{% info %}
-An account can have up to 15 subusers. If you need more, please contact [SendGrid support]({{site.support_url}}).
-{% endinfo %}
-
 *To create a subuser:*
 
 1. Navigate to **Settings** and select **Subuser Management**. 
 1. Click **Create New Subuser**. 
 1. Enter the following required information into the corresponding fields:
 
- * Username - The username your subuser will use to send email and access the API.
- * Email Address - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a subuser, it is our policy to contact the    parent account email address at the same time.
- * Password - The password your subuser will use to access SendGrid.com.
- * Avatar - A [gravatar](http://gravatar.com) will load when an email address is entered, making it easier to identify your subusers in the subuser list.
+    * Username - The username your subuser will use to send email and access the API.
+    * Email Address - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a subuser, it is our policy to contact the    parent account email address at the same time.
+    * Password - The password your subuser will use to access SendGrid.com.
+    * Avatar - A [gravatar](http://gravatar.com) will load when an email address is entered, making it easier to identify your subusers in the subuser list.
 
 1. Select the IP Address you wish to associate with the Subuser account. 
    When you create a SendGrid account and select a Pro plan or higher, your account is assigned to a dedicated IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and assigned IP addresses to them or set up [IP Pools]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html). You can see which other users are assigned to the same IP address, so you can keep similar senders together.
