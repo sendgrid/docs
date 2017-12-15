@@ -848,3 +848,11 @@ Redirect 301 /User_Guide/Settings/Subusers/profile.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Settings/Subusers/impersonation.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /User_Guide/Settings/Subusers/settings.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /User_Guide/Settings/Subusers/index.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+
+#######
+#
+#  Docs Reorg Redirects
+#
+#######
+
+Redirect 301 /Classroom/Basics/Account/how_can_i_cancel_my_account.html https://sendgrid.com/docs/User_Guide/Account_Management/cancel_account.html

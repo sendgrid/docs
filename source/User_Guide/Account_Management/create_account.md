@@ -15,7 +15,7 @@ When you sign up for a SendGrid account, there are a few steps that you must com
 
 Before you begin:
 
-You will need to estimate your sending needs to determine what [kind of account] (https://sendgrid.com/pricing/) you think you'll need. 
+You will need to estimate your sending needs to determine what [kind of account](https://sendgrid.com/pricing/) you think you'll need. 
 
 *To create an account:*
 
