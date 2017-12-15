@@ -30,6 +30,20 @@ The following new features and changes to the service are available.
     <td align="center">Price Update</td>
   </tr>
 </table>
+{% anchor h2 %}
+15 December 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Drag & Drop Unsubscribe Module
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>An unsubscribe drag & drop module has been added to the The Marketing Campaigns Design Editor to make adding unsubscribe links to your campaigns easier. For more information, see the <a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html">documentation</a>.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 1 November 2017
