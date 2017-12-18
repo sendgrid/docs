@@ -56,7 +56,7 @@ Changing your username
 
 1. From the homepage, select the drop-down in the top left corner and then select **Account Details** or navigate to **Settings** and then click   **Account Details**. 
 1. Click **Edit**. 
-1. Enter a new username and then click **Save**
+1. Enter a new username and then click **Save**.
 
 {% warning %}
 When you change your account username, your SMTP and API access will change as well. Make sure you update your account information on all systems and software.
