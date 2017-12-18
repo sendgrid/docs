@@ -38,7 +38,7 @@ It is much easier to establish a positive reputation as a new sender, than it is
 Warmup types
 {% endanchor %}
 
-There are three ways to warm up your IP. If you newly have a dedicated IP and you've never had one before, you need to warm up your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warm up your IP with the UI or the API.
+There are three ways to warm up your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warm up your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warm up your IP with the UI or the API.
 
 {% anchor h3 %}
 Manually warm up your IP
