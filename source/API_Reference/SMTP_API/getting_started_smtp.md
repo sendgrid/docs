@@ -2,7 +2,7 @@
 seo:
   title: How to Send an SMTP Email
   description: Use Telnet to send your first SMTP email
-  keywords: telnet, ports, connection, smtp, send email, getting started
+  keywords: telnet, ports, connection, SMTP, send email, getting started
 title: How to Send an SMTP Email
 weight: 960
 layout: page
@@ -16,23 +16,16 @@ You can also send email with [the UI](https://sendgrid.com/docs/User_Guide/Marke
 
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
-- [Sending an Email with SMTP](#-Sending-an-Email-using-SMTP)
-   - [Ports](#-Ports)
-   - [Rate Limits](#-Rate-Limits)
-- [Customizing Your Send](#-Customizing-Your-Send)
-   - [Filters](#-Filters)
-   - [Scheduling Your Send](#-Scheduling-Your-Send)
-   - [Substitution Tags](#-Substitution-Tags)
-   - [Section Tags](#-Section-Tags)
-   - [Suppression Groups](#-Suppression-Groups)
-   - [Categories](#-Categories)
-   - [Unique Arguments](#-Unique-Arguments)
 
 {% anchor h2 %}
 What is SMTP?
 {% endanchor %}
 
-[SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides a 3rd party SMTP service that allows you to deliver your email via our server instead of your own client or server.
+[SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
+
+SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
+
+The X-SMTPAPI headers that you add are stripped from the final email because they are instruction headers for how SendGrid will handle your email.
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
@@ -75,158 +68,7 @@ Telnet does not register backspaces correctly - so you have to type your command
     <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly, and your.
 1. Exit the Telnet connection with: `quit`.
 
-{% anchor h2 %}
-Sending an email using SMTP
-{% endanchor %}
-
-*To send an email from your severs using SMTP:*
-
-1. [Create an API Key](https://app.sendgrid.com/settings/api_keys) with at least "Mail" permissions.
-2. Set the server host in your email client or application to `smtp.sendgrid.net`.
-    * This setting is sometimes referred to as the _external SMTP server_ or the _SMTP relay_.
-3. Set your username to `apikey`.
-4. Set your password to the API key generated in step 1.
-5. Set the port to `587`.
-
-{% anchor h3 %}
-Ports
-{% endanchor %}
-    - For an unencrypted or a [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
-    - For a [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
-
-{% anchor h3 %}
-Rate Limits
-{% endanchor %}
-
-* You may send up to **100 messages per SMTP connection**.
-* You may open up to **10 concurrent connections from a single server**.
-
-{% anchor h2 %}
-Customizing Your Send
-{% endanchor %}
-
-{% anchor h3 %}
-Filters
-{% endanchor %}
-
-You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
-
-For example, to send a blind carbon copy (BCC) of your email to the address example@example.com, include the following in your X-SMTPAPI header:
-
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "bcc" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "example@example.com"
-      }
-    }
-  }
-}
-{% endcodeblock %}
-
-For a complete list of settings that can be enabled via the X-SMTPAPI header, see our [SMTP documentation]({{root_url}}/API_Reference/SMTP_API/apps.html).
-
-{% anchor h3 %}
-Scheduling Your Send
-{% endanchor %}
-
-Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time) for when your mail should be sent.
-
-{% codeblock lang:json %}
-{
-  "send_at": 1409348513
-}
-{% endcodeblock %}
-
-For more information, see our [scheduling parameters documentation]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html).
-
-{% anchor h3 %}
-Substitution Tags
-{% endanchor %}
-
-Substitution tags allow you to dynamically insert specific content relevant to each of your recipients, such as their first and last names.
-
-For example, to use a substitution tag to replace the first name of your recipient, insert the tag {% raw %}{{name}}{% endraw %} in the HTML of your message:
-
-{% codeblock lang:html %}
-<html>
-  <head></head>
-  <body>
-    <p>Hello {% raw %}{{name}}{% endraw %},<br>
-        The body of your email would go here...
-    </p>
-  </body>
-</html>
-{% endcodeblock %}
-
-To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, define the following in your X-SMTPAPI header:
-
-{% codeblock lang:json %}
-{
-  "to": [
-    "john.doeexampexample@example.com",
-    "example@example.com"
-  ],
-  "sub": {
-    "{% raw %}{{name}}{% endraw %}": [
-      "John",
-      "Jane"
-    ]
-  }
-}
-{% endcodeblock %}
-
-For more information, see our [substitution tags documentation]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html).
-
-{% anchor h3 %}
-Section Tags
-{% endanchor %}
-
-Section tags are similar to substitution tags, but rather than replace tags with content for each recipient; section tags allow you to replace a tag with more generic content— like a salutation.
-
-For more information, see our [section tags documentation]({{root_url}}/API_Reference/SMTP_API/section_tags.html).
-
-{% anchor h3 %}
-Suppression Groups
-{% endanchor %}
-
-You can easily specify an unsubscribe group for an email sent via SMTP by including the `asm_group_id` parameter in your X-SMTPAPI header. Simply set the value of `asm_group_id` to the numerical ID of the group you would like to use.
-
-{% codeblock lang:json %}
-{
-  "asm_group_id": 1
-}
-{% endcodeblock %}
-
-For more information, see our [suppression groups documentation]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
-
-{% anchor h3 %}
-Categories
-{% endanchor %}
-
-Categories allow you to track your emails according to broad topics that you define, like "Weekly Newsletter" or "Confirmation Email". Simply define the category by using the `category` parameter within your X-SMTPAPI header:
-
-{% codeblock lang:json %}
-{
-  "category": "Example Category"
-}
-{% endcodeblock %}
-
-For more information, see our categories documentation.
-
-{% info %}
-Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
-{% endinfo %}
-
-{% anchor h3 %}
-Unique Arguments
-{% endanchor %}
-
-Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/User_Guide/email_activity.html).
-
-For more information, see our [unique arguments documentation]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html).
 
 {% anchor h2 %}
 Additional Resources
@@ -235,5 +77,5 @@ Additional Resources
 - [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
-- [Using Substitution Tags]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+- [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
