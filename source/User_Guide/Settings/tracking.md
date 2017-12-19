@@ -82,7 +82,7 @@ You can customize the text attached to emails and customize the landing page. Th
 Settings
 {% endanchor %}
 
-**Replacement Tag** - Your custom defined tag for your templates. Use this to place your unsubscribe URL wherever you want in your template. IF you provide this, make sure you put it within an `<a href=` tag. If you don’t provide this, your default unsubscribe content will be automatically added to the bottom of your email.
+**Replacement Tag** - Your custom defined tag for your templates. Use this to place your unsubscribe URL wherever you want in your template. If you provide this, make sure you put it within an `<a href=` tag. If you don’t provide this, your default unsubscribe content will be automatically added to the bottom of your email.
 
 **HTML Unsubscribe Content** - The information and HTML for your unsubscribe link. In this HTML, you should include the link text you would like displayed in your email within the tag, like so:
 
