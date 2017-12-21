@@ -837,7 +837,6 @@ Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://se
 Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 
-
 #######
 #
 #  Subusers
@@ -856,3 +855,18 @@ Redirect 301 /User_Guide/Settings/Subusers/index.html https://sendgrid.com/docs/
 #######
 
 Redirect 301 /Classroom/Basics/Account/how_can_i_cancel_my_account.html https://sendgrid.com/docs/User_Guide/Account_Management/cancel_account.html
+Redirect 301 /API_Reference/SMTP_API/index.html https://sendgrid.com/docs/API_Reference/SMTP_API/building_an_smtp_email.html
+Redirect 301 /API_Reference/SMTP_API/using_the_smtp_api.html https://sendgrid.com/docs/API_Reference/SMTP_API/building_an_smtp_email.html
+Redirect 301 /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/certificate_verification_failed.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
+
+#######
+#
+#  IP Redirects
+#
+#######
+
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/ip_warmup_schedule.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
