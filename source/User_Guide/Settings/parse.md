@@ -30,7 +30,7 @@ When entering your host name (also referred to as the receiving domain), the sub
 
 **URL** - The URL for the Inbound Parse Webhook to POST all parsed email information.
 
-**Spam Check** - Inbound Parse will check incoming emails for spam and reject the emails that are obviously spam. Selecting this option will also include a spam report.
+**Spam Check** - Inbound Parse will check incoming emails for spam, then assign them a spam score and report. This will be reflected under `spam_score` and `spam_report` in your Parse Webhook post. The user can then determine how this score is interpreted and the severity.
 
 **Send Raw** - Select this option if you would prefer to receive the full MIME message.
 

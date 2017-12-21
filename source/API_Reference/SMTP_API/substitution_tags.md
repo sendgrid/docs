@@ -1,12 +1,16 @@
 ---
-layout: page
-weight: 0
+seo:
+  title: Substitution Tags
+  description: Section tags allow you to substitute in content for individual recipients in an SMTP message.
+  keywords: SMTP, send email, Substitution tags
 title: Substitution Tags
+weight: 10
+layout: page
 navigation:
   show: true
 ---
 
-<p>Substitution tags allow you to easily generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
+<p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
 
 {% codeblock lang:html %}
 "Dear -firstName-" 
@@ -28,11 +32,11 @@ Substitutions are limited to 10000 bytes per personalization block.
 {% endinfo %}
 
 {% info %}
-How you format your substitution tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense. It is best to avoid characters that have special meaning in html, such as <,>, and &. These might end up encoded and will not be properly substituted.
+How you format your substitution tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense. It is best to avoid characters that have special meaning in HTML, such as <,>, and &. These might end up encoded and will not be properly substituted.
 {% endinfo %}
 
 {% warning %}
-Do not use spaces inside your substitution tags, e.g. %first name%
+Do not use spaces inside your substitution tags, for example: `%first name%`
 {% endwarning %}
 
 {% warning %}
@@ -49,10 +53,7 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello -name-,<br>
-       Thank you for your interest in our products. I have set up an appointment
-             to call you at -time- EST to discuss your needs in more detail. If you would 
-             like to reschedule this call please visit the following link: 
-             <a href="http://example.com/reschedule?id=-customerID-">reschedule</a>
+       Thank you for your interest in our products. I have set up an appointment to call you at -time- EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: `<a href="http://example.com/reschedule?id=-customerID-">reschedule</a>`
  
                 Regards,
  
@@ -101,10 +102,8 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello John,<br>
-       Thank you for your interest in our products. I have set up an appointment
-             to call you at 3:00pm EST to discuss your needs in more detail. If you would 
-             like to reschedule this call please visit the following link: 
-             <a href="http://example.com/reschedule?id=1234">reschedule</a>
+       Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: 
+      <a href="http://example.com/reschedule?id=1234">reschedule</a>
  
                 Regards,
  
@@ -121,10 +120,8 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello Jane,<br>
-       Thank you for your interest in our products. I have set up an appointment
-             to call you at 5:15pm EST to discuss your needs in more detail. If you would 
-             like to reschedule this call please visit the following link: 
-             <a href="http://example.com/reschedule?id=5678">reschedule</a>
+       Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link: 
+   <a href="http://example.com/reschedule?id=5678">reschedule</a>
  
                 Regards,
  
@@ -138,9 +135,14 @@ Email HTML content:
 {% anchor h2 %}
 SendGrid Defined Substitution Tags
 {% endanchor %}
-While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags) that have been pre-defined for you. You can use these tags within the content of your email and you do not have to, and should not, define them.
+While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
 
-
-
-
+- [Section Tags]({{root_url}}/API_Reference/SMTP_API/section_tags.html)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
