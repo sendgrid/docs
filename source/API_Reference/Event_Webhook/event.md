@@ -692,6 +692,25 @@ SendGrid objects
 {% endanchor %}
 
 email
+timestamp
+event
+smtp-id
+useragent
+ip
+sg_event_id
+sg_message_id
+type
+reason
+status
+response
+tls
+url
+category
+asm_group_id
+unique_args
+marketing_campaign_id
+marketing_campaign_name
+attempt
 
 {% anchor h3 %}
 Custom objects
