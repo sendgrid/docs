@@ -161,13 +161,17 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
          <th>Example webhook response</th>
       </tr>
       <tr>
-         <td>Processed</td>
+         <td><a name="processed"></a>Processed</td>
          <td>Message has been received and is ready to be delivered.</td>
          <td>{% codeblock lang:json %}
 [  
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
+      "pool": {
+            "name": "new_MY_test",
+            "id": 210
+        },
       "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
       "event":"processed",
       "category":"cat facts",
@@ -393,7 +397,7 @@ Event objects
 <table class="table">
   <tr>
     <th></th>
-    <th>Processed</th>
+    <th><a href="#processed">Processed</a></th>
     <th>Dropped</th>
     <th>Delivered</th>
     <th>Deferred</th>
@@ -677,6 +681,20 @@ Event objects
     <td></td>
     <td></td>
     <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>pool</td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
