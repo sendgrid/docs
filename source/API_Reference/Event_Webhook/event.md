@@ -20,7 +20,7 @@ navigation:
     - [Bounce](#bounce)
 - [Engagement events](#-Engangement-events)
     - [Open](#open)
-    - [Click](click)
+    - [Click](#click)
     - [Spam Report](#spamreport)
     - [Unsubscribe](#unsubscribe)
     - [Group Unsubscribe](#groupunsubscribe)
