@@ -11,7 +11,7 @@ seo:
   keywords: IP, warm, up, warmup, ramp, ramping
 ---
 
-[IP warming]({{root_url}}/User_Guide/Settings/dedicated_ip_warmup.html) is the gradual process of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or “cold” (recently dormant) IP address, they will take notice and immediately begin evaluating the traffic coming from that IP.
+IP warming is the gradual process of establishing a reputation as a legitimate email sender in the eyes of ISPs (Internet Service Providers). When an ISP observes email suddenly coming from a new or “cold” (recently dormant) IP address, they will take notice and immediately begin evaluating the traffic coming from that IP.
 
 ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam. Because of this, we recommend that you begin sending a low to moderate volume ( up to 1 million emails/month), eventually working your way up to larger volumes (over 1 million emails/month). This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 

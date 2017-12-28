@@ -66,7 +66,7 @@ Storage integrations are infinitely flexible, but here are some popular options:
 - Several open source web libraries support SendGrids Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
 
 {% warning %}
-If your email traffic generates a lot of events, the incoming data can quickly overload a web server if not configured correctly. You can load test your endpoints with [loader.io](loader.io) for free.
+If your email traffic generates a lot of events, the incoming data can quickly overload a web server if not configured correctly. You can load test your endpoints with loader.io for free.
 {% endwarning %}
 
 {% anchor h3 %}

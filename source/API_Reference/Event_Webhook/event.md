@@ -438,7 +438,7 @@ Event objects
     <td>X</td>
   </tr>
   <tr>
-    <td><a href="event">event</a></td>
+    <td><a href="#event">event</a></td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
@@ -662,7 +662,7 @@ Event objects
     <td></td>
   </tr>
   <tr>
-    <td><a href="attempt">attempt</a></td>
+    <td><a href="#attempt">attempt</a></td>
     <td></td>
     <td></td>
     <td></td>
@@ -676,7 +676,7 @@ Event objects
     <td></td>
   </tr>
     <tr>
-    <td><a href="pool">pool</a></td>
+    <td><a href="#pool">pool</a></td>
     <td>X</td>
     <td></td>
     <td></td>
@@ -706,10 +706,10 @@ JSON objects
 - <a name="reason"></a>`reason` - Any sort of error response returned by the server that describes the reason this event type was triggered.
 - <a name="status"></a>`status` - Status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
 - <a name="response"></a>`response` - The full text of the HTTP response error returned from the server.
-- <a name="tls"></a>`tls` - Indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}Glossary/tls.html).
+- <a name="tls"></a>`tls` - Indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
 - <a name="url"></a>`url` - The URL where the event originates, unless it's a click event, and this is the URL clicked by the reciepient.
 - <a name="attempt"></a>`attempt` - The number of times the server has attempted to deliver this mail.
-- <a name="category"></a>`category` - [Categories]({{root_url}}Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+- <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 
 String categories:
 
