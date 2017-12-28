@@ -863,5 +863,6 @@ Redirect 301 /API_Reference/Webhooks/event_deprecated.html https://sendgrid.com/
 Redirect 301 /API_Reference/Webhooks/debug.html https://sendgrid.com/docs/API_Reference/Event_Webhook/troubleshooting.html
 Redirect 301 /API_Reference/Webhooks/index.html https://sendgrid.com/docs/API_Reference/Event_Webhook/getting_started_event_webhook.html
 Redirect 301 /API_Reference/Webhooks/inbound_email.html https://sendgrid.com/docs/API_Reference/Webhooks/inbound_email.html
+Redirect 301 /Classroom/Basics/API/why_event_api.html https://sendgrid.com/docs/API_Reference/Event_Webhook/getting_started_event_webhook.html
 
 

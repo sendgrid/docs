@@ -49,3 +49,13 @@ sg_event_id` comes in two different lengths. One that is 22 characters long and 
 {% anchor h3 %}
 Load handling
 {% endanchor %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Getting started with the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/getting_started_event_webhook.html)
+- [Event webhook reference]({{root_url}}/API_Reference/Event_Webhook/event.html)
+- [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
+- [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
+- [Getting started with Keen.io]({{root_url}}/Integrate/Tutorials/analytics_with_keen_io.html)

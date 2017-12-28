@@ -18,7 +18,7 @@ Email events are generated as email is processed by SendGrid and by the email se
 
 Here is a flow of when emails are processed:
 
-![]({{root_url}}/images/event_1.jpg "Event Flow")
+![event flow]({{root_url}}/images/email_event_flow.jpg "Event Flow")
 
 This is an example event response that includes all of the SendGrid generated events:
 
@@ -995,3 +995,13 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes will look 
     }
 ]
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Getting started with the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/getting_started_event_webhook.html)
+- [Troubleshooting the event webhook]({{root_url}}/API_Reference/Event_Webhook/troubleshooting.html)
+- [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
+- [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
+- [Getting started with Keen.io]({{root_url}}/Integrate/Tutorials/analytics_with_keen_io.html)
