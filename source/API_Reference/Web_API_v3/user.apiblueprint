@@ -20,16 +20,16 @@ Retrieve your current user profile details.
     + Body
 
             {
-              "address":"814 West Chapman Avenue",
-              "city":"Orange",
-              "company":"SendGrid",
+              "address":"1275 Halls Lane",
+              "city":"Hillsboro",
+              "company":"",
               "country":"US",
-              "first_name":"Test",
-              "last_name":"User",
-              "phone":"555-555-5555",
-              "state":"CA",
-              "website":"http://www.sendgrid.com",
-              "zip":"92868"
+              "first_name":"Zachary",
+              "last_name":"Daugherty",
+              "phone":"",
+              "state":"IL",
+              "website":"www.gmail.com",
+              "zip":"62049"
             }
 
 ### PATCH User Profile [PATCH]
@@ -40,7 +40,7 @@ Update your user profile.
     + Body
 
             {
-              "city": "Orange"
+              "city": ""
             }
 
 + Response 200 (application/json)
@@ -48,16 +48,16 @@ Update your user profile.
     + Body
 
             {
-              "address":"814 West Chapman Avenue",
-              "city":"Orange",
-              "company":"SendGrid",
-              "country":"US",
-              "first_name":"Test",
-              "last_name":"User",
-              "phone":"555-555-5555",
-              "state":"CA",
-              "website":"http://www.sendgrid.com",
-              "zip":"92868"
+              "address":"",
+              "city":"",
+              "company":"",
+              "country":"",
+              "first_name":"",
+              "last_name":"",
+              "phone":"",
+              "state":"",
+              "website":"",
+              "zip":""
             }
 
 ## User Account [/user/account]
@@ -85,7 +85,7 @@ Retrieve the email address on file for your account.
     + Body
 
             {
-              "email": "test@example.com"
+              "email": ""
             }
 
 
@@ -105,7 +105,7 @@ Update the email address on file for your account.
     + Body
 
             {
-              "email": "test@example.com"
+              "email": "m"
             }
 
 ## User Username [/user/username]
@@ -118,8 +118,8 @@ Retrieve your account username.
     + Body
 
             {
-              "username": "test_username",
-              "user_id": 1
+              "username": "",
+              "user_id": 
             }
 
 
@@ -131,7 +131,7 @@ Update your account username.
     + Body
 
             {
-              "username": "test_username"
+              "username": ""
             }
 
 
@@ -140,7 +140,7 @@ Update your account username.
     + Body
 
             {
-              "username": "test_username"
+              "username": ""
             }
 
 
@@ -173,7 +173,7 @@ Update the password for your account.
     + Body
 
             {
-              "new_password": "new_password",
+              "new_password": "ILoveYouZac",
               "old_password": "old_password"
             }
 
