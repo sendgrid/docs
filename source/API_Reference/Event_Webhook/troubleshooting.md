@@ -28,7 +28,7 @@ General troubleshooting
 curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"category":"newuser","event":"click","url":"https://sendgrid.com"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
 {% endcodeblock %}
 
-- If you're not getting a response from your server, follow the steps in [Getting started with the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/getting_started.html#-Getting-started) to test your SendGrid instance with RequestBin. You could also use tools like ngrok, or Runscope.
+- If you're not getting a response from your server, follow the steps in [Getting started with the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/getting_started_event_webhook.html) to test your SendGrid instance with RequestBin. You could also use tools like ngrok, or Runscope.
 
 {% anchor h2 %}
 Common issues
