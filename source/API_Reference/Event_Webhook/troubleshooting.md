@@ -22,6 +22,7 @@ General troubleshooting
 
 - Start by making sure your web server is returning a 2xx response to our servers. Any other response type will result in our server retrying a POST until we receive a 2xx response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs.
 - Next, make sure you are not blocking our IPs that are trying to POST to your server. Our IPs change often since we constantly add more machines.
+- http://httpresponder.com/ Is a helpful tool for debugging webhooks.
 - You can use the **Test Your Integration** button on the [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) page in the [SendGrid UI](https://app.sendgrid.com) to send simulated events to your callback URL. You can also send a POST from a shell using cURL - this will give you the full response your server is returning including the HTTP headers:
 
 {% codeblock lang:bash %}
