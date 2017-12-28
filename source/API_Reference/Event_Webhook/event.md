@@ -10,6 +10,42 @@ navigation:
   show: true
 ---
 
+- [Events](#-Events)
+- [Example Response](#-Example-response)
+- [Delivery events](#-Delivery-events)
+    - [Processed](#processed)
+    - [Dropped](#dropped)
+    - [Delivered](#delivered)
+    - [Deferred](#deferred)
+    - [Bounce](#bounce)
+- [Engagement events](#-Engangement-events)
+    - [Open](#open)
+    - [Click](click)
+    - [Spam Report](#spamreport)
+    - [Unsubscribe](#unsubscribe)
+    - [Group Unsubscribe](#groupunsubscribe)
+    - [Group Resubscribe](#groupresubscribe)
+- [Event JSON objects](#-Event-JSON-objects)
+    - [email](#email)
+    - [timestamp](#timestamp)
+    - [event](#event)
+    - [smtp-id](#smtpid)
+    - [useragent](#useragent)
+    - [IP](#ip)
+    - [sg_event_id](#sgeventid)
+    - [sg_message_id](#sgmessageid)
+    - [reason](#reason)
+    - [status](#status)
+    - [response](#response)
+    - [tls](#tls)
+    - [url](#url)
+    - [attempt](#attempt)
+    - [category](#category)
+    - [asm_group_id](#asmgroupid)
+    - [unique_args or custom_args](#uniqueargs)
+    - [marketing_campaign_id](#marketingcampaignid)
+    - [marketing_campaign_name](#marketingcampaignname)
+
 {% anchor h2 %}
 Events
 {% endanchor %}
