@@ -73,7 +73,7 @@ If your email traffic generates a lot of events, the incoming data can quickly o
 Integrating
 {% endanchor %}
 
-Once you choose a storage option, follow steps 3 through 8 above to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to the URL where you want your events to be sent, and make sure you've selected the events that you want to receive. The Event Webhook will not follow redirects, so use the correct URL, or POST will fail. If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
+Once you choose a storage option, follow steps 3 through 8 above to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive. The Event Webhook does not follow redirects. If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
 
 {% anchor h2 %}
 Additional Resources
