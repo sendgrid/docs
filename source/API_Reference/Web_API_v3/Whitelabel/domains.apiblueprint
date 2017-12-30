@@ -469,7 +469,7 @@ You may create up to a maximum of 1500 domain whitelabels.
         {
           "id": 1,
           "valid": true,
-          "validation_resuts": {
+          "validation_results": {
             "mail_cname": {
                 "valid": false,
                 "reason": "Expected your MX record to be \"mx.sendgrid.net\" but found \"example.com\"."
@@ -567,14 +567,14 @@ subuser management.
 ### Associate Domain [POST]
 
 + Attributes
-    + username jane@example.com (required, string) - Username to associate with the domain whitelabel.
+    + username janeexampexample@example.com (required, string) - Username to associate with the domain whitelabel.
 
 
 + Request
 
   + Body
         {
-            "username": "jane@example.com"
+            "username": "janeexampexample@example.com"
         }
 
 + Response 201 (application/json)

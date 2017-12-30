@@ -38,3 +38,11 @@ Individual Metrics Figures
 This table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared providers.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Mailbox Provider Stats]({{site.app_url}}/statistics/mailbox_provider)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Account Settings]({{root_url}}/User_Guide/Settings/account.html)

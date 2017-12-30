@@ -319,13 +319,13 @@ subuser management.
 ### Associate Link [POST]
 
 + Attributes
-    + username jane@example.com (required, string) - User to associate with the link whitelabel.
+    + username janeexampexample@example.com (required, string) - User to associate with the link whitelabel.
 
 + Request
 
   + Body
         {
-            "username": "jane@example.com"
+            "username": "janeexampexample@example.com"
         }
 
 + Response 201 (application/json)

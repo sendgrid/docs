@@ -15,7 +15,7 @@ seo:
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
 {% info %}
-You can create up to 60 custom fields; 20 of each type (text, date, or number).
+You can create up to 120 custom fields.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -64,7 +64,7 @@ Deleting a Custom Field
 1. Click **Confirm**.
 
 {% warning %}
-Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values NOT get replaced when you send the campaign. You cannot delete a custom field that is used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
+Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that is used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
 {% anchor h3 %}

@@ -128,6 +128,14 @@ If you have development resources and would like to use our API to migrate your 
 Replacing the Legacy Newsletter Subscription Widget
 {% endanchor %}
 
-The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17. 
+The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17.
 
 As you migrate to Marketing Campaigns, you can leverage any of the following best-in-class email list growth integrations to manage your recipient signups: [Privy](https://privy.com/sendgrid/), [WisePops](https://support.wisepops.com/integrations/connect-wisepops-with-sendgrid), [JustUno](https://www.justuno.com/sendgrid-integrations.html), or [SendGrid’s WordPress subscription widget](https://sendgrid.com/docs/Integrate/Tutorials/WordPress/subscription_widget.html?mc=email&mcd=Legacymigration&utm_medium=email&utm_source=nurture&cvosrc=email.nurture.Legacymigration&utm_campaign=Legacymigration).
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Migration Tutorials]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html)
+- [Migrating Unsubscribes]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html)
+- [SendGrid Support]({{site.support_url}})

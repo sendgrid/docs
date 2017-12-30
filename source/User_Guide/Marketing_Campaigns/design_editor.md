@@ -15,7 +15,7 @@ The design editor is where you build your templates and campaigns using drag & d
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
 * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-    * [Drag & Drop Module Descriptions and Styles](#-Drag-Drop-Module-Descriptions-and-Styles)
+* [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
 * [Using Global Styles](#-Using-Global-Styles)
 * [Editing Module HTML](#-Editing-Module-HTML)
 * [Code Modules](#-Code-Modules)
@@ -27,12 +27,13 @@ The design editor is where you build your templates and campaigns using drag & d
     * [Drag & Drop Markup](#-Drag--Drop-Markup)
     * [Drag & Drop Code Examples](#-Drag--Drop-Code-Examples)
 * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
+* [Creating Categories](#-Creating-Categories)
 
 {% anchor h3 %}
 Getting Started With the Design Editor
 {% endanchor h3 %}
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 1. Click **Create Campaign**.
    <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
 
@@ -56,8 +57,8 @@ Drag & drop editing helps you swiftly build your campaign using pre-built conten
 
    ![]({{root_url}}/images/design_editor_drag_drop.png)
 
-2. Find the module tile you want to add to your campaign and drag and drop it into your content area. 
-3. Edit the module settings and add your custom content to build your campaign.  
+2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
+3. Edit the module settings and add your custom content to build your campaign.
 
 
 {% anchor h3 %}
@@ -97,7 +98,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Image</td>
-    <td>Can contain a single image.Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
+    <td>Can contain a single image. Data attributes can be inserted directly in the &lt;img&gt; tag.</td>
     <td>Image background, image margin, link url, alt text, alignment, responsive, height, width</td>
   </tr>
   <tr>
@@ -120,6 +121,11 @@ You can add the following drag & drop modules to your campaign:
     <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
+  <tr>
+    <td>Unsubscribe</td>
+    <td>This module is pre-populated with your sender information and unsubscribe links which are required in order to be compliant with anti-spam laws.</td>
+    <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
+  </tr>
 </table>
 
 {% anchor h3 %}
@@ -135,7 +141,7 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
 <table class="table" style="table-layout:fixed">
 <tr>
     <th>Global Style</th>
-    <th>Style Options</th>  
+    <th>Style Options</th>
 </tr>
   <tr>
     <td><b>Email Body</b></td>
@@ -162,7 +168,7 @@ Editing Module HTML
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon.
 <br>A window opens where you can edit the module HTML.
-1. When you are finished editing the HTML, click **Update**. 
+1. When you are finished editing the HTML, click **Update**.
 
 {% info %}
 If you make any structural code changes, you need to convert the module to a code module.
@@ -186,31 +192,33 @@ Adding Images
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 1. Select the Images module, and drag and drop it into your content area.
-<br>This opens a window where you can upload images to your image library. 
+<br>This opens a window where you can upload images to your image library.
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Drag and drop the **Images** module into your content area. 
-   <br>A window opens where you can select images from the image library. 
+1. Drag and drop the **Images** module into your content area.
+   <br>A window opens where you can select images from the image library.
 1. Select the image you want to add to your campaign.
-   <br>The Image Details tab opens. 
+   <br>The Image Details tab opens.
 1. Insert your image in the campaign by clicking **Save Image**.
 
 {% anchor h3 %}
 Using Substitution Tags
 {% endanchor h3 %}
 
-Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients you can specify substitution tags specific to each recipient.
+Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your campaign.
 
 *To add a substitution tag to your campaign:*
 
-1. Navigate to the **Tags** tab. 
+1. Navigate to the **Tags** tab.
 1. Locate the tag you want to add to your campaign and click the **copy** icon.
 1. Paste the tag into the module.
 
-You can add the following substitution tags to your marketing campaign:
+Any custom fields you've created will appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
+
+You'll also see a number of System Fields that you can place in the body of your campaign to populate with your data. These include:
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -234,32 +242,33 @@ You can add the following substitution tags to your marketing campaign:
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code></td>
+   <td><code>[Sender_Name]</code>*</td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code></td>
+   <td><code>[Sender_City]</code>*</td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code></td>
+   <td><code>[Sender_State]</code>*</td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code></td>
+   <td><code>[Sender_Zip]</code>*</td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code></td>
+   <td><code>[Unsubscribe]</code>*</td>
    <td>This tag will be replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code></td>
+   <td><code>[Unsubscribe_Preferences]</code>
+   *</td>
    <td>This tag will be replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
@@ -269,6 +278,7 @@ You can add the following substitution tags to your marketing campaign:
    <td>Weblink</td>
  </tr>
 </table>
+*For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor. 
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
@@ -347,13 +357,13 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag-&-Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
 
 *To import custom HTML:*
 
 1. Navigate to the **Build** tab in the left-hand navigation.
-1. Scroll down and select the **Advanced** drop-down menu. 
-1. Expand the option titled **Import/Export**. 
+1. Scroll down and select the **Advanced** drop-down menu.
+1. Expand the option titled **Import/Export**.
 1. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
@@ -369,9 +379,9 @@ Any HTML that you import replaces all existing content in your campaign or templ
 Drag & Drop Markup
 {% endanchor h3 %}
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag-&-Drop-Code-Examples).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag--Drop-Code-Examples).
 
-  * First, we look for any HTML elements that contain the attribute `role="modules-container"`. 
+  * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
@@ -467,7 +477,7 @@ Drag & Drop Code Examples
   </tr>
 </table>
 {% endcodeblock %}</td>
-  </tr>  
+  </tr>
   <tr>
     <td>Text</td>
     <td>{% codeblock lang:html %}
@@ -528,7 +538,7 @@ Drag & Drop Code Examples
       </table>
     </td>
   </tr>
-</table>   
+</table>
 {% endcodeblock %}</td>
   </tr>
   <tr>
@@ -568,7 +578,7 @@ Drag & Drop Code Examples
     <table>
      <tbody>
       <tr>
-       [MODULE CONTENT]           
+       [MODULE CONTENT]
       </tr>
      </tbody>
     </table>
@@ -600,6 +610,18 @@ SendGrid hosts the images included in the pre-built templates and any images you
 1. Click **New Campaign**, and then select **Blank Template**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
+
+{% anchor h3 %}
+Creating Categories
+{% endanchor h3 %}
+
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: “Weekly Digest,” “Product Announcements.”
+
+*To add a category:*
+
+1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
+1. Find the *Categories* field.
+1. Enter the name of a new category or select a previously used category from the drop-down menu. 
 
 {% anchor h3 %}
 Additional Resources

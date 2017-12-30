@@ -64,7 +64,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=getavailable&method=apps&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -84,7 +84,7 @@ Note: The *name* entry is used in all the other API calls to identify a app.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;method=apps&amp;user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=getavailable&amp;method=apps&amp;user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -143,7 +143,7 @@ Activate App
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=activate&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -160,7 +160,7 @@ Activate App
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=activate&amp;user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -223,7 +223,7 @@ Deactivate App
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=deactivate&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -240,7 +240,7 @@ Deactivate App
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=deactivate&amp;user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -268,7 +268,7 @@ These API calls require that settings are passed using POST.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&name=twitter&method=apps&task=setup&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -299,7 +299,7 @@ This is returned if that filter has no settings or is not enabled.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;method=apps&amp;task=setup&amp;user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -336,7 +336,7 @@ Get Current Settings
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=customer@example.com&amp;method=app
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;name=twitter&amp;task=getsettings&amp;user=eexampexample@example.com&amp;method=app
   {% endrequestdata %}
 
 {% endrequestblock %}

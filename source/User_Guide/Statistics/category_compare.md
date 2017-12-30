@@ -55,3 +55,11 @@ You can remove individual categories from the list of categories you selected in
 To change this graph to see another metric, click the button inline with the graph title and choose another metric.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)

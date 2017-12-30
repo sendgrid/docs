@@ -24,7 +24,7 @@ You can create a new segment with multiple conditions based on the information y
 includes email, first_name, last_name, and all of the custom fields you have created before making this segment.
 
 {% info %}
-You can create up to 400 segments.
+You can create up to 200 segments.
 {% endinfo %}
 
 *To create a segment:*
@@ -130,10 +130,3 @@ Additional Resources
 
 - [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
 - [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
-
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
-- Contacts(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
-- Custom fields(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)

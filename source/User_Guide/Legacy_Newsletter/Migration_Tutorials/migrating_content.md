@@ -161,3 +161,11 @@ Technical
 {% endanchor %}
 
 A third and slightly more technical option for you to consider is using an application called [Postman](https://www.getpostman.com/) to leverage SendGrid's [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) and [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html) to pull content from Legacy Newsletter to be "posted" to Marketing Campaigns.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Migrating Images]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_images.html)
+- [Downloading Historical Statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
+- [SendGrid Support]({{site.support_url}})

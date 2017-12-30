@@ -1,2 +1,2 @@
 User-agent: *
-
+Disallow: /docs/User_Guide/email_activity_beta.html

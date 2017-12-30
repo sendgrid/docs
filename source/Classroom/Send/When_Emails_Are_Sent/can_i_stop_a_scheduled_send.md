@@ -85,6 +85,10 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
 
 {% endapiv3example %}
 
+{% info %}
+If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+{% endinfo %}
+
 {% anchor h4 %}
 3. Cancel or Pause Your Send
 {% endanchor %}
@@ -123,7 +127,7 @@ Canceling a Marketing Campaign
 Using the User Interface
 {% endanchor %}
 
-If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns) by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Campaigns**. Next to the campaign you want to unschedule, click the action cog and select **Unschedule**.
+If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns) by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Campaigns**. Next to the campaign you want to unschedule, click the action menu and select **Unschedule**.
 
 ![]({{root_url}}/images/unschedule_campaign.gif)
 

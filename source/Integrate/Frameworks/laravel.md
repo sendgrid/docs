@@ -34,6 +34,10 @@ MAIL_FROM_ADDRESS=from@example.com
 The `MAIL_FROM_NAME` field requires double quotes because there is a space in the string.
 {% endinfo %}
 
+{% info %}
+You can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
+{% endinfo %}
+
 {% anchor h2 %}
 Creating a Mailable
 {% endanchor %}
@@ -68,7 +72,7 @@ class TestEmail extends Mailable
 
     public function build()
     {
-        $address = 'jane@example.com';
+        $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
         
@@ -146,7 +150,7 @@ class TestEmail extends Mailable
 
     public function build()
     {
-        $address = 'jane@example.com';
+        $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
 

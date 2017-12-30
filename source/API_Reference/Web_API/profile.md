@@ -16,8 +16,8 @@ get
   {% response json %}
 [
   {
-    "username": "sampleuser@example.com",
-    "email": "sampleemail@example.com",
+    "username": "sampleuseexampexample@example.com",
+    "email": "example@example.com",
     "active": "true",
     "first_name": "john",
     "last_name": "doe",
@@ -34,8 +34,8 @@ get
   {% response xml %}
 <users>
    <user>
-      <username>sampleuser@example.com</username>
-      <email>sampleemail@example.com</email>
+      <username>sampleuseexampexample@example.com</username>
+      <email>example@example.com</email>
       <active>true</active>
       <first_name>john</first_name>
       <last_name>doe</last_name>

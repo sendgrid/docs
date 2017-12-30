@@ -161,7 +161,7 @@ HTTP/1.1 200
       "expiration_date": 1456424263
     },
     {
-      "email": "user2@example.com",
+      "email": "exampexample@example.comom",
       "scopes": [],
       "is_admin": true,
       "pending_id": "bcde234bcd",
@@ -288,7 +288,7 @@ HTTP/1.1 200
     },
     {
       "username": "teammate3",
-      "email": "teammate3@example.com",
+      "email": "example@example.com",
       "first_name": "Steve",
       "last_name": "Doe",
       "user_type": "admin",

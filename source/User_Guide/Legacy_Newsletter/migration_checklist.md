@@ -36,12 +36,12 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 &nbsp; &#x274f; Practice by creating a test campaign and sending it to yourself.
 
 {% anchor h3 %}
-2. Choose how you'd like to pay. 
+2. Choose how you'd like to pay.
 {% endanchor %}
 
 &nbsp; &#x274f; If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can choose how you’d like to pay. You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns.
 
-&nbsp; &#x274f; Estimate your per-email vs. per-contact cost using [the Marketing Campaigns pricing page]( https://app.sendgrid.com/settings/choose_how_you_pay). If that link does not work for you, log into the app, navigate to **Settings** then **Plan and Billing Details**, then scroll to Marketing Campaigns and click **Learn More**. 
+&nbsp; &#x274f; Estimate your per-email vs. per-contact cost using [the Marketing Campaigns pricing page]( https://app.sendgrid.com/settings/choose_how_you_pay). If that link does not work for you, log into the app, navigate to **Settings** then **Plan and Billing Details**, then scroll to Marketing Campaigns and click **Learn More**.
 
 {% anchor h3 %}
 3. Migrate your contacts.
@@ -96,3 +96,11 @@ If you are using the [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/
 &nbsp; &#x274f; [Migrate your Legacy Newsletter Unsubscribes to Marketing Campaigns.]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)
 
 &nbsp; &#x274f; [Download your Legacy Newsletter Statistics via the API.]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Legacy Newsletter Sunset]({{root_url}}/User_Guide/Legacy_Newsletter/index.html)
+- [Marketing Campaigns API Overview]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html)
+- [Marketing Email API Overview]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html)

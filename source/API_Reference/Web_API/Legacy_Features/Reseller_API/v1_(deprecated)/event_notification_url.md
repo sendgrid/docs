@@ -56,7 +56,7 @@ Retrieve
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=eexampexample@example.com&method=eventpostur
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -72,7 +72,7 @@ Retrieve
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
         
-  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=customer@example.com&amp;method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=eexampexample@example.com&amp;method=eventpostur
   {% endrequestdata %}
       
 {% endrequestblock %}
@@ -138,7 +138,7 @@ Update / Set URL
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=eexampexample@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -161,7 +161,7 @@ Update / Set URL
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=eexampexample@example.com&url=http://www.SubUserPostUrlHere.com&method=eventpostur
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -224,7 +224,7 @@ Delete
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=eexampexample@example.com&method=eventpostur
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -247,7 +247,7 @@ Delete
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventpostur
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=eexampexample@example.com&method=eventpostur
   {% endrequestdata %}
 
 {% endrequestblock %}
