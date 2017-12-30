@@ -29,7 +29,7 @@ With the Email Activity feed you can:
 * Call all events by an email from the API with additional storage purchase.
 
 {% info %}
-SendGrid stores two days of Email Activity data for free. To increase your storage capability, you may purchase more storage (pricing coming soon!).
+SendGrid stores two days of Email Activity data for free. To increase your storage capability, you may purchase more storage [here](https://app.sendgrid.com/settings/billing).
 {% endinfo %}
 
 {% anchor H2 %}
@@ -41,8 +41,12 @@ The Email Activity feed allows you to view specific information about messages s
 
 <table class="table" style="table-layout:fixed">
   <tr>
-    <th class="tg-031e">Processed</th>
-    <th class="tg-yw4l">Requests from your website, application, or mail client via SMTP Relay or the API that SendGrid processed.</th>
+  <th class="tg-031e">Event</th>
+    <th class="tg-yw4l">Description</th>
+    </tr>
+    <tr>
+    <td class="tg-031e">Processed</td>
+    <td class="tg-yw4l">Requests from your website, application, or mail client via SMTP Relay or the API that SendGrid processed.</td>
   </tr>
   <tr>
     <td class="tg-031e">Clicks</td>
@@ -82,11 +86,11 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
   <tr>
     <td class="tg-yw4l">Blocks</td>
-    <td class="tg-yw4l">Blocks - When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
+    <td class="tg-yw4l">When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
   </tr>
   <tr>
     <td class="tg-yw4l">Spam Reports</td>
-    <td class="tg-yw4l">Spam Reports - Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
+    <td class="tg-yw4l">Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
   </tr>
   <tr>
     <td class="tg-yw4l">Parse</td>
@@ -109,7 +113,7 @@ By default, the Activity Feed allows you to search by email address and event da
 
 {% anchor H3 %}
 Advanced Search
-(% endanchor %)
+{% endanchor %}
 
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
@@ -142,18 +146,18 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 {% endinfo %}
 
-(% anchor H2 %)
+{% anchor H2 %}
 Viewing Event History
-(% endanchor %)
+{% endanchor %}
 
 *To view event history:*
 
 1. Navigate to the event you wish to view and click on the entry. 
 1. When you have finished reviewing the data, click **close**. 
 
-(% anchor H2 %)
+{% anchor H2 %}
 Exporting a CSV
-(% endanchor %)
+{% endanchor %}
 
 *To export a CSV:*
 
