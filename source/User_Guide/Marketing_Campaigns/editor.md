@@ -93,7 +93,7 @@ Getting Started With The Code Editor
 2. Click **Create Campaign**.
 To create a campaign from one that has not yet been sent, find the version you want to use and click the **action menu** next to the campaign. Then, select **Edit** or **Duplicate**. To create a campaign from one that has already been sent, **Duplicate** will be the only option.
 3. Select the template that you want to use for your campaign.
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/docs/User_Guide/Marketing_Campaigns/templates.html).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
 4. Select **Code Editor**, and then click **Continue**.
 If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor. The code editor has predictive text completion, color-coded syntax highlighting, and detailed error messages.
 5. The Code Editor features a **Live Preview** in the content area. The preview will show changes to the HTML as they are made in real time. The default preview mode is in desktop format.
@@ -870,8 +870,8 @@ Additional Resources
 For more information on getting started with SendGrid's editors, check out:
 
 * [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
-* [A/B Testing]({{root_url}}/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
-* [Campaign Statistics]({{root_url}}/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+* [A/B Testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
+* [Campaign Statistics]({{root_url}}/User_Guide/Marketing_Campaigns/campaign_stats.html)
 * [Marketing Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
     * [Creating a New Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
     * [Editing an Existing Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)
