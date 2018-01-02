@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 60
-title: Creating and exporting segments
+title: Segmenting your Contacts
 navigation:
   show: true
 seo:
-  title: Creating and exporting segments
+  title: Segmenting your Contacts
   override: true
   description:
 ---
