@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 80
 title: Managing Contact Lists
 navigation:
   show: true

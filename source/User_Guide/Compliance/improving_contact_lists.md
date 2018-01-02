@@ -105,8 +105,6 @@ In your SendGrid Account there are different [Suppressions]({{root_url}}/User_Gu
 **Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses. 
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
 
-https://screencast.com/t/7jP6h45qu
-
 Sending to email addresses listed in the Bounce, invalid, Spam, and Unsubscribe list will be automatically dropped by SendGrid. Feel free to remove these addresses from your lists to save money and time.
 
 **Remove Repeat Addresses** 

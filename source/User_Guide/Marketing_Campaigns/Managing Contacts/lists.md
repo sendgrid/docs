@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 60
+weight: 70
 title: Segmenting your Contacts
 navigation:
   show: true

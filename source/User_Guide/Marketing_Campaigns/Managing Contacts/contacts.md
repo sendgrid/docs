@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 65
+weight: 90
 title: Adding Contacts
 navigation:
   show: true

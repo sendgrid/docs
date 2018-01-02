@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 65
+weight: 100
 title: Building your Contact list
 navigation:
   show: true
