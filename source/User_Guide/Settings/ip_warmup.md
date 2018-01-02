@@ -13,12 +13,12 @@ navigation:
 
 When you add a new dedicated IP address to your account, you need to warm it up. [Warming up your IP]({{root_url}}/Glossary/ip_warmup.html) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/Classroom/Basics/Misc/your_reputation_what_is_it.html).
 
-- [What is warming up an IP?]()
-- [Warmup types]()
-   - [Manually Warm Up your IP]()
-   - [Automated IP Warmup]()
-   - [Automated IP Warmup API]()
-   - [Why don't other ESPs require IP warmup?]()
+- [What is warming up an IP?](#-What-is-warming-up-an-IP)
+- [Warmup types](#-Warmup-types)
+   - [Manually Warm Up your IP](#-Manually-Warm-Up-your-IP)
+   - [Automated IP Warmup](#-Automated-IP-Warmup)
+   - [Automated IP Warmup API](#-Automated-IP-Warmup-API)
+   - [Why don't other ESPs require IP warmup?](#-Why-dont-other-ESPs-require-IP-warmup)
 
 {% anchor h2 %}
 What is warming up an IP?
