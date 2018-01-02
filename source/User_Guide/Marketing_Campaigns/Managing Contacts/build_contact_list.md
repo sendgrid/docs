@@ -8,8 +8,9 @@ seo:
   title: Building your Contact list
   override: true
   description: Directions on how to effectively build your Marketing Campaigns Contact list.
+---
 
-  {% anchor h2 %}
+{% anchor h2 %}
 Opt-In Email
 {% endanchor %}
 
@@ -19,9 +20,11 @@ Opt-in email refers to bulk email, such as a newsletter or advertisement, that i
 Email opt-in types
 {% endanchor %}
 
-- **Single Opt-in** refers to the practice of requesting permission to send a recipient email during, and only during, registration.
+-  **Single Opt-in** refers to the practice of requesting permission to send a recipient email during, and only during, registration.
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
+
+![]({{root_url}}/images/<image_name>.png "Alt text")
 
 ![]({{root_url}}/images/confirmed_optin.png "Confirmed Opt-in Screen")
 
