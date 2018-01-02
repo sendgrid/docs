@@ -14,8 +14,7 @@ navigation:
 If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management]({{site.app_url}}/settings/Subusers) page to request more.
 {% endinfo %}
 
-Subusers are SendGrid accounts that belong to a parent account. They have their own permissions and credit limits, which you assign as you create the Subusers. Subusers are provided in order to help you segment your email sending and API activity. We suggest our customers create Subusers for each of the different types of emails they send. This often means one Subuser for transactional emails and one for marketing emails; however some of our customers will break up their sending across multiple Subusers in order to segment the statistics for each type or function of email they send.
-
+Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Dubusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another from marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
 
 - [Create a Subuser](#-Create-a-Subuser)
 - [Manage Subusers](#-Manage-Subusers)
@@ -39,15 +38,13 @@ New SendGrid accounts do not come with Subusers and must be created by the paren
 1. Navigate to **Settings** and select **Subuser Management**. 
 1. Click **Create New Subuser**. 
 1. Enter the following required information into the corresponding fields:
-  * Username - The username your Subuser will use to send email and access the API.
-  * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the    parent account email address at the same time.
+  * Username - The username your Subuser will use to send emails and access the API.
+  * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
   * Password - The password your Subuser will use to access SendGrid.com.
-  * Avatar - A [gravatar](http://gravatar.com) will load when an email address is entered, making it easier to identify your Subusers in the Subuser list.
+  * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account. 
 
-1. Select the IP Address you wish to associate with the Subuser account. 
-   When you create a SendGrid account and select a Pro 100k plan or higher, your account is assigned to a dedicated IP address. All of your mail sent through SendGrid will show as originating from this IP address, unless you have purchased additional IPs and assigned IP addresses to them or set up [IP Pools]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html). You can see which other users are assigned to the same IP address, so you can keep similar senders together.
-   
-If you need more IP addresses, please contact [SendGrid support]({{site.support_url}}).
+1. Assign an IP Address to the Subuser account.
+  You are assigned a dedicated IP address when you create a Pro 100k plan or higher. If you send at a high volume, and you're using Subusers to separate out your sending traffic, it's best practice to purchase a separate IP for each sending type.
 
 {% anchor h2 %}
 Manage Subusers
@@ -65,6 +62,8 @@ Optional Profile Information
 {% endanchor %}
 
 We do not require this information for your Subusers, but we suggest that you fill out as much as possible to improve the deliverability for this Subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your Subuser directly if we notice anything on their account.
+
+The following fields in the Subuser profile are optional: 
 
 **First Name** - The first name of the person responsible for this Subuser.
 
@@ -93,19 +92,19 @@ Allocating or removing credits from a Subuser
 {% endanchor %}
 
 {% warning %}
-This feature only makes changes to a Subuser when the nonrecurring credit option is selected for this Subuser.
+You can only allocate credits by selecting the nonrecurring credit option.
 {% endwarning %}
 
-If your Subuser has been allocated nonrecurring credits, then this feature will allow you to allocate credits to, or remove credits from this Subuser account. Simply click **Change Credit Rules** and then choose whether to add or subtract credits for this Subuser.
+If your Subuser account has nonrecurring credits, you can allocate credits to, or remove credits from this Subuser account. On the Subuser's profile, click **Change Credit Rules** and then choose the appropriate credit amount for the Subuser. 
 
 {% anchor h2 %}
-Adding a whitelabel domain to a Subuser account
+Adding a Domain Whitelabel
 {% endanchor %}
 
-Using a domain whitelabel allows you to better authenticate the email that you send by removing the “sent via sendgrid.net” message that your recipients see on un-whitelabeled emails. This has the added benefit of giving you complete control over your sending reputation.
+Using a domain whitelabel removes the “sent via sendgrid.net” message that your recipients see by authenticating your domain. It also gives you complete control over your sending reputation.
 
 {% info %}
-In order to add a domain whitelabel or whitelabel link to a Subuser account, there must be one or more of these whitelabels set up in the parent account. 
+To add a domain whitelabel or whitelabel link to a Subuser account, there must be one or more of these whitelabels set up in the parent account. 
 {% endinfo %}
 
 *To add a domain whitelabel to a Subuser account:*
@@ -113,17 +112,18 @@ In order to add a domain whitelabel or whitelabel link to a Subuser account, the
 1. Navigate to **Settings** and select **Subuser Management**. 
 1. Locate the Subuser account you wish to delete and click on the name to view the account details. 
 1. On the *Account Settings* page, navigate to the Whitelabel Domain section and then click **Change Sending**. 
-1. From the drop-down menus that appear, select a whitelabel domain and/or a whitelabel link to associate with the Subuser account. 
+1. From the drop-down menus that appear, select a whitelabel domain and a whitelabel link to associate with the Subuser account. 
 1. Once you've made all of your selections, click **Save**. 
 
 {% anchor h2 %}
 Monitoring Subuser email content
 {% endanchor %}
 
-This feature allows you to recieve a sample of a Subuser's email content to help ensure that the content is not damaging your reputation. 
+This feature allows you to receive a sample of a Subuser's email content to help ensure that the content is not damaging your reputation. 
 {% warning %}
-One email credit will be charged for every monitor email that is sent
+Each monitor email costs one email credit.
 {% endwarning %}
+
 The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this Subuser sends.
 
 {% anchor h2 %}
@@ -140,9 +140,9 @@ To make this easier, we’ve made it so you can impersonate a Subuser from your 
 3. Click **Switch User**. 
 4. Choose the Subuser you want to impersonate by clicking that Subuser’s name.
 
-The page will refresh and you will notice a message at the top of the screen that says, “You're currently logged in as [Subuser name]”.
+The page will refresh, and you will notice a message at the top of the screen that says, “You're currently logged in as [Subuser name]”.
 
-If you have more than one Subuser you can also switch to another Subuser by clicking **Switch Subuser** in the top-right corner once you are impersonating any Subuser.
+If you have more than one Subuser, you can also switch to another Subuser by clicking **Switch Subuser** in the top-right corner once you are impersonating any Subuser.
 
 {% anchor h3 %}
 Switching back to your parent account
@@ -161,7 +161,7 @@ If you would like to see how your Subusers are performing in comparison to each 
 
 1. Navigate to **Settings** and select **Subuser Management**. 
 1. Click **Export Data**. 
- <br>This downloads a CSV file that will have each Subuser’s reputation, number of requests each Subuser made this month, and the number of requests each Subuser made last month. 
+ <br>This downloads a CSV file with each Subuser’s reputation, the number of requests they made this month, and the number of requests they made last month.
 
  {% anchor h2 %}
 Disabling a Subuser account 
@@ -171,9 +171,9 @@ Disabling a Subuser account
 
 1. Navigate to **Settings** and select **Subuser Management**.  
 1. Locate the Subuser account you wish to disable and click on the name to view the account details. 
-click **Enable**.
+1. Click **Enable**.
 
-To re-enable a Subuser’s account, simply click **Disabled**.
+To re-enable a Subuser’s account, click **Disable**.
 
 {% anchor h2 %}
 Deleting a Subuser account
