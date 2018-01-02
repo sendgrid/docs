@@ -277,7 +277,7 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrat
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_content.html
 Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
-Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html
+Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/remove_bounced_addresses.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html
 
 
@@ -814,6 +814,7 @@ Redirect 301 /User_Guide/EASE.html https://sendgrid.com/docs/User_Guide/email_ac
 
 Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs//User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 
 
 #######
