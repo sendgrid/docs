@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 50
+weight: 0
 title: Canceling your account
 navigation:
   show: true

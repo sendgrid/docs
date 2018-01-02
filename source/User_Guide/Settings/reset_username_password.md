@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 50
+weight: 0
 title: Resetting your username and password
 navigation:
   show: true

@@ -7,7 +7,7 @@ seo:
  description: Two-Factor Authentication gives you an extra layer of security to protect your SendGrid account.
  keywords: 2FA, two-factor authentication, authentication, security, authy
 title: Two-Factor Authentication
-weight: 90
+weight: 0
 layout: page
 navigation:
  show: true
@@ -43,7 +43,7 @@ You can create multiple configurations of Two-Factor Authentication, allowing yo
 *To set up Two-Factor Authentication:*
 
 1. Navigate to **Settings**, and click **Two-Factor Authentication**. 
- <br>From this page, you see an overview of your Two-Factor Authentication settings, along with any settings that you have created for Credentialed Users.
+ <br>From this page, you see an overview of your Two-Factor Authentication settings, along with any settings that you have created for credentialed users.
 1. Click **Add Two-Factor Authentication**.
 1. Select either the Authy App or text messages (SMS) as your means of authentication.
 1. Enter your **country code** and **phone number**.
