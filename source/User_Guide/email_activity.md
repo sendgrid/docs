@@ -5,7 +5,7 @@ title: Email Activity
 seo:
   title: SendGrid Email Activity
   description: Email activity allows you to see and search the email events on your account.
-  keywords: email activity, account events, email events
+  keywords: email activity, account events, email events, old email activity
 navigation:
   show: true
 ---
@@ -17,7 +17,12 @@ navigation:
 - [Subuser email activity](#-Subuser-email-activity)
 - [Email events](#-Email-events)
 - [Troubleshooting](#-Troubleshooting)
-    - [Emai]
+    - [Checking to see if a specific email was delivered](#-Checking-to-see-if-a-specific-email-was-delivered)
+    - [Deferrals](#-Deferrals)
+    - [Drops](#-Drops)
+    - [Bounces](#-Bounces)
+    - [Removing an email from a suppression list](#-Removing-an-email-from-a-suppression-list)
+    - [Setting up bounce forwarding](#-Setting-up-bounce-forwarding)
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account. These logs display all of your email events - filter by event type or search by email address.
 
@@ -123,16 +128,16 @@ Troubleshooting
 {% endanchor %}
 
 {% anchor h3 %}
-Checking to see if a specific email was delivered
+Checking delivery status of a  specific email
 {% endanchor %}
 
-You can check to see if an email was delivered in the Email Activity page, or by using the Event Webhook.
+You can check email delivery status by using the Email Activity page, or by using the Event Webhook.
 
-- Search in your Email Activity - if an email is successfully delivered then you will see a delivered event which when expanded will show a reason code of 250 OK. This means the receiving sever has accepted the message. Email Activity will also show you bounced, deferred and processed messages (click on search options and make sure these are checked).
+- For a successful delivery, the Email Activity page, or the Event Webhook shows a delivered event - expanding it shows a reason code of 250 OK. This means the receiving server has accepted the message. You can also check bounced, deferred and processed messages.
 
 - If you can't find an email on the Email Activity page, check your suppression lists; [bounces]({{root_url}}/User_Guide/Suppressions/bounces.html), [blocks]({{root_url}}/User_Guide/Suppressions/blocks.html), [spam reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html), [invalid email]({{root_url}}/User_Guide/Suppressions/invalid_emails.html).
 
-- Have the recepient check their spam folder.
+- Have the recipient check their spam folder.
 
 {% anchor h3 %}
 Deferrals
@@ -142,21 +147,21 @@ In your logs, you may see the following error message accompanying a deferral ev
 
 `Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
 
-This deferral is caused by going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/User_Guide/Settings/ip_warmup.html).
+This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/User_Guide/Settings/ip_warmup.html).
 
 In your logs, you may see the following error message accompanying a deferral event:
 
 `Email was deferred due to the following reason(s): ["IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]`
 
-This deferral created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as they want at once without impacting their deliverability.
+This deferral created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail, and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as you want at once, without impacting your deliverability.
 
 {% anchor h3 %}
 Drops
 {% endanchor %}
 
-A drop occurs when our systems identify that a message is sent to an email address that is already listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists mentioned above, our systems automatically drop the email in order to protect your Sender Reputation.
+A drop occurs when you try to send a message to an email address listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists, our systems automatically drop the email to protect your Sender Reputation.
 
-A message that was dropped cannot be resent automatically. However, if the intended recipient of the message that was dropped wishes to receive your content in the future, it is possible remove them from the above mentioned lists, recreate the dropped message, and resend the message to the intended recipients.
+A dropped message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
 {% anchor h3 %}
 Bounces
@@ -164,29 +169,29 @@ Bounces
 
 A bounce is a Drop event that occurs when a message to an address has previously Bounced.
 
-You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error reason code. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
+You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error reason code. Once an address is on this list, we do not attempt to deliver further messages to it; we drop the message to protect your external reputation.
 
-If you would like us to attempt to deliver messages to this address again, please delete the specific address from the Bounces list. We cannot redeliver messages that have been Dropped or appear on suppression lists, but we will attempt future messages once the address has been removed from the list.
+A bounced message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
 {% info %}
-A delayed bounce occurs when a message is accepted by a recipient server (Delivered) and then is promptly declined (Bounced). This is a very rare occurance, and SendGrid treats these messages as a bounce, and any future sends to this address are dropped, unless you remove the email from your bounce suppression list.
+A delayed bounce occurs when a recipient server accepts a message (Delivered) and then is promptly declined (Bounced). This is an infrequent occurrence, and SendGrid treats these messages as a bounce, and any future sends to this address are dropped, unless you remove the email from your bounce suppression list.
 {% endinfo %}
 
 {% anchor h3 %}
 Removing an email from a suppression list
 {% endanchor %}
 
-When an email is added to a supressions list, SendGrid automacally drops emails sent to those addresses. If you want to retry sending an email to an address that is on a suppressions list, you need to remove it from the list first.
+SendGrid automatically drops emails sent to addresses on suppression lists. If you want to retry sending an email to an address that is on a suppressions list, you need to remove it from the list first.
 
 {% warning %}
-Only remove emails from these lists if you're absolutely sure the recipeints want to receive the email. Otherwise, continuously sending to recipients who don't want your emails can negatively impact your sender reputation.
+Only remove emails from these lists if you're sure the recipients want to receive the email. Otherwise, continuously sending to recipients who don't want your emails can negatively impact your sender reputation.
 {% endwarning %}
 
 *To remove an email from a suppression list:*
 
-1. In the UI, under [Suppressions](https://app.sendgrid.com/suppressions/global_unsubscribes), navigate to the suppression list that you want to remove a recepient from: [Global Unsubscribes](https://app.sendgrid.com/suppressions/global_unsubscribes), [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes), [Bounces](https://app.sendgrid.com/suppressions/bounces), [Spam Reports](https://app.sendgrid.com/suppressions/spam_reports?), [Blocks](https://app.sendgrid.com/suppressions/blocks?), or [Invalid](https://app.sendgrid.com/suppressions/invalid_emails?).
+1. In the UI, under [Suppressions](https://app.sendgrid.com/suppressions/global_unsubscribes), navigate to the suppression list that you want to remove a recipient from: [Global Unsubscribes](https://app.sendgrid.com/suppressions/global_unsubscribes), [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes), [Bounces](https://app.sendgrid.com/suppressions/bounces), [Spam Reports](https://app.sendgrid.com/suppressions/spam_reports?), [Blocks](https://app.sendgrid.com/suppressions/blocks?), or [Invalid](https://app.sendgrid.com/suppressions/invalid_emails?).
 1. Select the email you want to remove.
-1. In the drop down menu on the top right of the screen, select **Remove selected emails**.
+1. In the drop-down menu on the top right of the screen, select **Remove selected emails**.
 
 {% anchor h3 %}
 Setting up bounce forwarding
@@ -194,14 +199,17 @@ Setting up bounce forwarding
 
 You can receive bounce notifications to a specific address by enabling the "Forward Bounces" feature in your account and defining the forwarding address. However, you can also set it to send any bounces back to the originating FROM address.
 
-To access this feature navigate to **[Mail Settings](https://app.sendgrid.com/settings/mail_settings)** --> **Forward Bounce**
+**To receive a bounce notification report to the FROM address on the email that bounced:**
 
-From there, toggle the slider to "on", then leave the "Use the from address" box ticked and the email address entry field blank. This setup allows you to receive a bounce notification report to the FROM address on the email that bounced.
+1. Navigate to **[Mail Settings](https://app.sendgrid.com/settings/mail_settings)** --> **Forward Bounce**.
+1. Toggle the slider to **on**
+1. Leave the "Use the from address" box ticked.
+1. Leave the **email address** entry field blank.
 
 {% info %}
 If you are sending bounce messages to a Gmail account, you need to set up an email filter in your inbox to tell Gmail not to send these messages to your spam folder.
 
-When Gmail  doesn’t see a corresponding message in the sent folder connecting the bounce message, it may decide that the bounce message isn’t valid and send it to spam.
+When Gmail doesn’t see a corresponding message in the sent folder connecting the bounce message, it may decide that the bounce message isn’t valid and send it to spam.
 
 One way to do this is in the filter, set up **From** `daemon` and **Has the words** `daemon`, and check the box **Never send it to Spam**.
 {% endinfo %}
