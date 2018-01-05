@@ -10,21 +10,16 @@ navigation:
   show: true
 ---
 
-When you create or upgrade to a paid account, you will put a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
+- [Invoices]()
+- [Billing frozen and billing warned]()
+- [Email credits]()
+- [Overages]()
+- [Changing Your Plan]()
+- [Cancel Account]()
 
-{% anchor h2 %}
-Billing Details
-{% endanchor %}
+You can update your plan and billing details on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the UIß.
 
-Your billing details show you what plan you have and how you will be billed by SendGrid.
-
-**Plan** - The plan you are currently using with SendGrid.
-
-**Price** - The price per month that you pay to use SendGrid.
-
-**Overage Price** - The price you pay per email when you send more emails than are available on your package.
-
-**Marketing** - The cost per marketing email when using [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
+When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
 {% anchor h2 %}
 Invoices
@@ -58,6 +53,3 @@ Additional Resources
 - [Subuser Impersonation]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html)
 - [Email Activity]({{root_url}}/User_Guide/email_activity.html)
 - [SendGrid Support]({{site.support_url}})
-
-
-
