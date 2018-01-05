@@ -249,7 +249,7 @@ Getting Started With the Design Editor
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates]({{root_url}}/docs/User_Guide/Marketing_Campaigns/templates.html).
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 
