@@ -153,7 +153,7 @@ In your logs, you may see the following error message accompanying a deferral ev
 
 `Email was deferred due to the following reason(s): ["IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]`
 
-This deferral created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail, and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as you want at once, without impacting your deliverability.
+This deferral is created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail, and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as you want at once, without impacting your deliverability.
 
 {% anchor h3 %}
 Drops
@@ -201,7 +201,7 @@ You can receive bounce notifications to a specific address by enabling the "Forw
 
 **To receive a bounce notification report to the FROM address on the email that bounced:**
 
-1. Navigate to **[Mail Settings](https://app.sendgrid.com/settings/mail_settings)** --> **Forward Bounce**.
+1. Navigate to **[Mail Settings](https://app.sendgrid.com/settings/mail_settings)** and select **Forward Bounce**.
 1. Toggle the slider to **on**
 1. Leave the "Use the from address" box ticked.
 1. Leave the **email address** entry field blank.
