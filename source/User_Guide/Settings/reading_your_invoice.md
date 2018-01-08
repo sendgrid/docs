@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Your SendGrid invoice contains a lot of information, which may be difficult to read, particularly if you've made changes to your account during the previous month. Here's information on how to read your invoice:
+Your SendGrid invoice contains a lot of information, which may be difficult to read, particularly if you've made changes to your account during the previous month. To see your invoice, see the [Plan & Billing details](https://app.sendgrid.com/settings/billing) page. Here's information on how to read your invoice:
 
 ![]({{root_url}}/images/invoice_legend.png)
 
