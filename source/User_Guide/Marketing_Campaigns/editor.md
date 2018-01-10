@@ -246,7 +246,7 @@ Getting Started With the Design Editor
 1. Click **Create Campaign**.
 <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
-![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
+![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
@@ -263,7 +263,7 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 
-   ![]({{root_url}}/images/design_editor_drag_drop.png)
+   ![]({{root_url}}/img/design_editor_drag_drop.png)
 
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
@@ -574,7 +574,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-   ![]({{root_url}}/images/import_custom_html.png)
+   ![]({{root_url}}/img/import_custom_html.png)
 
 5. Paste or enter the HTML you want to use, and then click **Import**.
 
