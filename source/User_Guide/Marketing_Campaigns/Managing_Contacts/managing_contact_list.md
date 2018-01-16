@@ -22,7 +22,7 @@ Managing contacts is an integral part of your marketing campaigns lifecycle. You
 
   {% anchor h3 %}
 Viewing a Contact
-{% endanchor %}
+{% endanchor h3 %}
 
 To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
@@ -35,7 +35,7 @@ To view any custom fields you have assigned to this contact, or to view any list
 
 {% anchor h3 %}
 Editing a Contact
-{% endanchor %}
+{% endanchor h3  %}
 
 When you are viewing a contact, click any of the Edit buttons to edit the contact's information within that section. This includes the SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
@@ -45,8 +45,9 @@ When you are viewing a contact, click any of the Edit buttons to edit the contac
 1. Enter or select the list you would like to use.
 1. Click **Add**.
 
+{% anchor h3 %}
 Managing Your List
-{% endanchor %}
+{% endanchor h3 %}
 
 Sending to a well-managed address list can drastically help improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
@@ -90,7 +91,7 @@ All of the above are key factors that influence how ESPs, ISPs, Reputation Monit
 
 {% anchor h2 %}
 Organizing Your List
-{% endanchor %}
+{% endanchor h2 %}
 
 **Segmentation**
 List segmentation refers to the practice of customizing a larger master address list into smaller sub-lists categorized based on certain criteria with the goal of enhancing the level of email customization for your recipients. This allows you to gain more analytical insight to a specific campaign’s performance or isolate the deliverability impact among different campaigns.
@@ -113,7 +114,7 @@ List segmentation is a great tool that can be used to power your email campaigns
 
 {% anchor h3 %}
 Delete a Specific Contact
-{% endanchor %}
+{% endanchor h3 %}
 
 *To remove one or more contacts from a list:*
 
@@ -123,7 +124,7 @@ Delete a Specific Contact
 
 {% anchor h3 %}
 Delete All Contacts
-{% endanchor %}
+{% endanchor h3 %}
 
 *To delete all of your contacts at once:*
 

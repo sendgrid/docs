@@ -121,23 +121,11 @@ Managing contacts is an integral part of your marketing campaigns lifecycle. You
 Creating a New List
 {% endanchor %}
 
-*To create a new list from your CSV:*
+*To create a new list:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Click **+Add to New List** and enter the name of the list you would like to create.
 1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#-Uploading-a-CSV).
-
-{% anchor h3 %}
-Add Contacts to a List
-{% endanchor %}
-
-*To manually add contacts to a list:*
-
-1. Navigate to **Marketing Campaigns** and then click **Contacts**.
-1. Locate the list you wish to edit and select the Action Menu next to the list name.
-1. Select **Edit**.
-1. Enter the information for the new contact.
-1. Click **Save**.
 
 {% info %}
 If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
