@@ -659,6 +659,9 @@ Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/do
 Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
 Redirect 301 /User_Guide/Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
+Redirect 301 /User_Guide/Marketing_Campaigns/design_editor.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/code_editor.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
 
 #######
 #
@@ -893,3 +896,4 @@ Redirect 301 /Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_ac
 Redirect 301 /Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /search.html https://sendgrid.com/docs

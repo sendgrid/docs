@@ -48,7 +48,7 @@ Telnet does not register backspaces correctly - so you have to type your command
 *To send SMTP email using Telnet:*
 
 1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`. 
-    <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **467**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
+    <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
 1. Once you successfully connect to the SendGrid, login to the server by typing `AUTH LOGIN`. 
     <br>The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username. If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
 1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64. 

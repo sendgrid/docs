@@ -1,17 +1,226 @@
 ---
 layout: page
-weight: 80
-title: Design Editor
+weight: 81
+title: Design & Code Editor
 navigation:
   show: true
 seo:
-  title: Design Editor
+  title: Design & Code Editor
   override: true
-  description:
+  description: SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible, drag-and-drop Design editor, or a robust HTML code editor.
 ---
+
+<iframe src="https://player.vimeo.com/video/249110555" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Marketing Campaigns is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new campaign, thanks to two distinct editing experiences.
+
+* **[Choosing The Right Editor](#-Choosing-The-Right-Editor)**
+* **[The Code Editor](#-The-Code-Editor)**
+  * [Code Editor Features](#-Code-Editor-Features)
+  * [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
+  * [Uploading Images](#-Uploading-Images)
+  * [Using Substitution Tags](#-Using-Substitution-Tags)
+  * [Adding Categories](#-Adding-Categories)
+* **[The Design Editor](#-The-Design-Editor)**
+  * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
+  * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
+  * [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
+  * [Using Global Styles](#-Using-Global-Styles)
+  * [Editing Module HTML](#-Editing-Module-HTML)
+  * [Code Modules](#-Code-Modules)
+  * [Adding Images](#-Adding-Images)
+  * [Using Substitution Tags](#-Using-Substitution-Tags)
+  * [Previewing Your Campaign](#-Previewing-Your-Campaign)
+  * [Editing the HTML Head](#-Editing-the-HTML-Head)
+  * [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup)
+    * [Drag & Drop Markup](#-Drag--Drop-Markup)
+    * [Drag & Drop Code Examples](#-Drag--Drop-Code-Examples)
+  * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
+  * [Creating Categories](#-Creating-Categories)
+
+
+{% anchor h2 %}
+Choosing The Right Editor
+{% endanchor %}
+
+The [**Code Editor**](#-The-Code-Editor) is perfect for users who are importing, creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
+
+The [**Design Editor**](#-The-Design-Editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your campaign, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
+
+{% info %}
+The [Design Editor](#-The-Design-Editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#-Editing-Module-HTML), [edit the HTML `head` of your message](#-Editing-the-HTML-Head), and even import complete code using our [Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup).
+{% endinfo %}
+
+{% anchor h2 %}
+The Code Editor
+{% endanchor %}
+
+SendGrid’s marketer-friendly code editor features a powerful, split screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
+
+* [Code Editor Features](#-Code-Editor-Features)
+* [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
+* [Uploading Images](#-Uploading-Images)
+* [Using Substitution Tags](#-Using-Substitution-Tags)
+* [Adding Categories](#-Adding-Categories)
+
+{% anchor h3 %}
+Code Editor Features
+{% endanchor %}
+
+**Live Template Preview** -
+See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
+
+**Code & Tag Completion** -
+As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore.  Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
+
+**Error Flagging** -
+If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.
+
+**Scroll Syncing** -
+Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line.
+
+**Syntax Highlighting** -
+As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate and edit code elements.
+
+{% anchor h3 %}
+Getting Started With The Code Editor
+{% endanchor %}
+
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
+2. Click **Create Campaign**.
+<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. 
+3. Then, select **Edit** or **Duplicate**. 
+4. Select **Code Editor**, and then click **Continue**.
+
+{% info %}
+You can only edit unsent campaigns.
+{% endinfo %}
+
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
+
+{% info %}
+When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
+{% endinfo %}
+
+If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.
+
+The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+
+{% warning %}
+Once you create a new campaign or template in the Code Editor, it cannot be edited using the Design Editor.
+{% endwarning %}
+
+{% anchor h3 %}
+Uploading Images
+{% endanchor %}
+
+1. Select the **images** icon above the HTML code. A window opens where you can upload images to your library.
+2. Select the image you want to add from your image library.
+3. Select the **image details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**.
+4. Paste this URL in an image source tag in your campaign or template's HTML.
+Example: `<img src="your image URL here">`
+
+{% anchor h3 %}
+Using Substitution Tags
+{% endanchor %}
+
+Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients, you can specify substitution tags specific to each recipient.
+
+**To add a substitution tag to your campaign:**
+
+1. Click the **Settings** tab on the left side of the editor.
+2. Click the **Tags** tab at the top of the Settings window.
+3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
+4. Paste the tag into the campaign.
+
+<table class="table" style="table-layout:fixed">
+ <tr>
+   <th>Substitution Tag</th>
+   <th>Description</th>
+   <th>Type</th>
+ </tr>
+ <tr>
+   <td><code>[%email%]</code></td>
+   <td>The email address of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[%first_name%]</code></td>
+   <td>The first name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[%last_name%]</code></td>
+   <td>The last name of the recipient</td>
+   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code>[Sender_Name]</code>* </td>
+   <td>The name of the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code>[Sender_City]</code>* </td>
+   <td>The city on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code>[Sender_State]</code>* </td>
+   <td>The state on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code>[Sender_Zip]</code>* </td>
+   <td>The zip code on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code>[Unsubscribe]</code>* </td>
+   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
+   <td>Unsubscribe</td>
+ </tr>
+ <tr>
+   <td><code>[Unsubscribe_Preferences]</code>
+   * </td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
+   <td>Unsubscribe</td>
+ </tr>
+ <tr>
+   <td><code>[Weblink]</code></td>
+   <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
+   <td>Weblink</td>
+ </tr>
+</table>
+&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
+
+{% info %}
+For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
+
+`[%first_name | Valued Customer%]`
+{% endinfo %}
+
+{% anchor h3 %}
+Adding Categories
+{% endanchor %}
+
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories may include: “Weekly Digest,” “Product Announcements.”
+
+1. Click the *Settings* panel located on the left-hand side of the window to expand it.
+1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
+1. Locate the *Categories* field under *Campaign Settings*.
+1. Select the *Add Categories* field. Type in the tag that you'd like to add, and press enter.
+
+{% info %}
+Currently, only 10 categories can be added to each campaign.
+{% endinfo %}
+
+{% anchor h2 %}
+The Design Editor
+{% endanchor %}
+
 <iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-The design editor is where you build your templates and campaigns using drag & drop WYSIWYG tools. You can use the design editor to make changes to the various modules like text, images, buttons, links, columns, or custom code that make up the content you include in your campaigns.
+SendGrid’s flexible design editor allows you to build your templates and campaigns using intuitive, drag and drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
 
 * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
 * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
@@ -31,35 +240,33 @@ The design editor is where you build your templates and campaigns using drag & d
 
 {% anchor h3 %}
 Getting Started With the Design Editor
-{% endanchor h3 %}
+{% endanchor %}
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 1. Click **Create Campaign**.
-   <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign and then select Edit or Duplicate.
+<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
-   ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
+![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
-1. Select the template that you want to use for your campaign.
-   <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
-
-1. Select **Design Editor**, and then click **Continue**.
-   <br>The Design Editor opens.
+3. Select the template that you want to use for your campaign.
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
+4. Select **Design Editor**, and then click **Continue**.
+<br>The Design Editor opens.
 
 {% anchor h3 %}
 Using Drag & Drop Modules
-{% endanchor h3 %}
+{% endanchor %}
 
-Drag & drop editing helps you swiftly build your campaign using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
+Drag & drop editing helps you swiftly build your campaign, using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
 
 *To add a drag & drop module:*
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 
-   ![]({{root_url}}/images/design_editor_drag_drop.png)
+   ![]({{root_url}}/img/design_editor_drag_drop.png)
 
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
-
 
 {% anchor h3 %}
 Drag & Drop Module Descriptions and Styles
@@ -108,7 +315,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Spacer</td>
-    <td>Allows you to insert spacing between other modules.To add spacing using this module, simply adjust the padding in the &lt;td&gt; tag. For example, the spacer module will add a spacing of 50 pixels.</td>
+    <td>Allows you to insert spacing between other modules.To add spacing using this module, simply adjust the padding in the &lt;td&gt; tag. For example, the spacer module adds a spacing of 50 pixels.</td>
     <td>Background color, spacing (padding-bottom)</td>
   </tr>
   <tr>
@@ -154,7 +361,7 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
   </tr>
   <tr>
     <td><b>Content Container</b></td>
-    <td><p><b>Width</b> - This is the width of the container for your entire campaign/template. Your modules will all be contained within these dimensions.</p>
+    <td><p><b>Width</b> - This is the width of the container for your entire campaign/template. Your modules are all contained within these dimensions.</p>
         <p><b>Background Color</b> - This is the color of the area containing your modules.</p>
         <p><b>Padding</b> - This is the amount of space that you want between your modules and the boundaries of the content container.</p></td>
   </tr>
@@ -216,7 +423,7 @@ Substitution tags allow you to use any custom field data you've added to Marketi
 1. Locate the tag you want to add to your campaign and click the **copy** icon.
 1. Paste the tag into the module.
 
-Any custom fields you've created will appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
+Any custom fields you've created appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
 
 You'll also see a number of System Fields that you can place in the body of your campaign to populate with your data. These include:
 
@@ -242,47 +449,47 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code>*</td>
+   <td><code>[Sender_Name]</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code>*</td>
+   <td><code>[Sender_City]</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code>*</td>
+   <td><code>[Sender_State]</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code>*</td>
+   <td><code>[Sender_Zip]</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code>*</td>
-   <td>This tag will be replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
+   <td><code>[Unsubscribe]</code>* </td>
+   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code>[Unsubscribe_Preferences]</code>
-   *</td>
-   <td>This tag will be replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
+   * </td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code>[Weblink]</code></td>
-   <td>This tag will be replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
+   <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
 </table>
-*For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor. 
+&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-<code>[%first_name | Valued Customer%]</code>
+`[%first_name | Valued Customer%]`
 
 {% anchor h3 %}
 Previewing Your Campaign
@@ -294,7 +501,7 @@ You can toggle between a mobile and desktop preview mode by clicking either the 
 
 To view a plain-text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
-When previewing a campaign, you will also see a preview of the From name, the Subject, and the preheader text that you have selected.
+When previewing a campaign, you also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
 {% anchor h3 %}
 Editing the HTML Head
@@ -357,19 +564,19 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 Importing Custom HTML With Drag & Drop Markup
 {% endanchor h3 %}
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code will be imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code is imported as a text module.
 
 *To import custom HTML:*
 
 1. Navigate to the **Build** tab in the left-hand navigation.
-1. Scroll down and select the **Advanced** drop-down menu.
-1. Expand the option titled **Import/Export**.
-1. Click **Import**.
+2. Scroll down and select the **Advanced** drop-down menu.
+3. Expand the option titled **Import/Export**.
+4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-   ![]({{root_url}}/images/import_custom_html.png)
+   ![]({{root_url}}/img/import_custom_html.png)
 
-1. Paste or enter the HTML you want to use, and then click **Import**.
+5. Paste or enter the HTML you want to use, and then click **Import**.
 
 {% warning %}
 Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#-Code-Modules).
@@ -387,14 +594,10 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
 {% warning %}
-Any HTML outside an element with the "modules-container" attribute will be discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) will be included.
+Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) are included.
 
-If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML will be imported as a single text module.
+If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML is imported as a single text module.
 {% endwarning %}
-
-If your HTML does contain drag & drop modules, then these modules will be imported into your campaign or template. This allows you to move and edit them as you normally would.
-
-However, if your custom HTML is not compatible with drag & drop  then your imported HTML will be imported as a text module.
 
 Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
 
@@ -595,14 +798,14 @@ Drag & Drop Code Examples
 Exporting HTML From the Design Editor
 {% endanchor h3 %}
 
-*To export the HTML of a template from the design editor:*
+*To export template HTML from the design editor:*
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.
 1. Expand the option titled **Import/Export**.
    <br>This starts the raw HTML download of the template, excluding images.
 
-SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag will remain valid.
+SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag remains valid.
 
 *To open exported HTML in the code editor:*
 
@@ -621,12 +824,19 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
 1. Find the *Categories* field.
-1. Enter the name of a new category or select a previously used category from the drop-down menu. 
+1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
-{% anchor h3 %}
+{% anchor h2 %}
 Additional Resources
-{% endanchor h3 %}
+{% endanchor %}
 
-- [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
-- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)
+* [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+* [A/B Testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
+* [Campaign Statistics]({{root_url}}/User_Guide/Marketing_Campaigns/campaign_stats.html)
+* [Marketing Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
+    * [Creating a New Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
+    * [Editing an Existing Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)
+    * [Duplicating a SendGrid Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-SendGrid-Template)
+    * [Duplicating a Custom Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-Custom-Template)
+    * [Creating a Template from a Campaign]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-Template-from-a-Campaign)
+
