@@ -21,13 +21,13 @@ navigation:
 
 {% anchor h2 %}
 Opt-In Email
-{% endanchor %}
+{% endanchor h2 %}
 
 Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively given you permission to send them email. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or be “bulked” by the receiving mailbox provider (i.e., delivered directly to the spam folder).
 
 {% anchor h3 %}
 Email opt-in types
-{% endanchor %}
+{% endanchor h3 %}
 
 - **Single Opt-in** refers to the practice of requesting permission to send a recipient email during, and only during, registration.
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
@@ -41,7 +41,7 @@ To avoid blocked emails, double check the spelling of the emails on your list. C
 
 {% anchor h2 %}
 Affiliate Lists & List Sharing
-{% endanchor %}
+{% endanchor h2 %}
 
 List sharing is one of the most common ways to run into trouble in the email marketing world. List sharing can be an easy way to expand your marketing base. However, it is essential to use extra caution with this practice to preserve your reputation as a sender over the long run.
 
@@ -59,7 +59,7 @@ Remember: the most transparent opt-in process will always return better recipien
 
 {% anchor h2 %}
 Peer-Initiated Email Invitation Requirements
-{% endanchor %}
+{% endanchor h2 %}
 
 A peer-initiated invitation system can help your subscribers spread the word about your service and grow your user base—if done well. An aggressive invitation system can backfire, and your invitations will be filtered or blocked. SendGrid customers who implement a peer-initiated invitation system must abide by the following requirements:
 
@@ -83,7 +83,7 @@ SendGrid strongly recommends:
 
 {% anchor h2 %}
 Purchased Lists
-{% endanchor %}
+{% endanchor h2 %}
 
 {% warning %}
 Sending to a purchased list gives your company a bad reputation. 
@@ -93,7 +93,7 @@ As an email service provider striving to provide our customers the highest level
 
 {% anchor h2 %}
 Managing Your List
-{% endanchor %}
+{% endanchor h2 %}
 
 Sending to a well-managed address list can drastically help improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
@@ -137,7 +137,7 @@ All of the above are key factors that influence how ESPs, ISPs, Reputation Monit
 
 {% anchor h2 %}
 Organizing Your List
-{% endanchor %}
+{% endanchor h2 %}
 
 **Segmentation**
 List segmentation refers to the practice of customizing a larger master address list into smaller sub-lists categorized based on certain criteria with the goal of enhancing the level of email customization for your recipients. This allows you to gain more analytical insight to a specific campaign’s performance or isolate the deliverability impact among different campaigns.
@@ -160,7 +160,7 @@ List segmentation is a great tool that can be used to power your email campaigns
 
 {% anchor h2 %}
 Permission Reminders - Where Did You Get My Address?
-{% endanchor %} 
+{% endanchor h2 %} 
 
 People often sign up to receive email and then forget about it. It begins with a customer giving you their email address so they can get that free appetizer, awesome coupon, or to create a free account for your service. Unfortunately, by the time your message reaches your customer’s inbox, the appetizer is long gone, and the recipient is left wondering how on earth you got their address.
 
@@ -187,7 +187,7 @@ Lastly, permission reminders can also include an unsubscribe link and a request 
 
 {% anchor h2 %}
 Preference Centers: Giving Subscribers Control
-{% endanchor %}
+{% endanchor h2%}
 
 Every subscriber is different. Giving subscribers the control over what they want to receive with preferences, will keep your recipients interested and continuously engaged. Some recipients may find weekly coupons conducive while others may only wish to receive a monthly newsletter. 
 
